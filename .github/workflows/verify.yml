@@ -1,0 +1,147 @@
+name: Verification
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  finite-controls:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - name: Verify archived evidence and pinned sources
+        run: python3 scripts/verify_archive.py
+      - name: Compile exact programs
+        run: |
+          mkdir -p build
+          g++ -O3 -std=c++17 -Wall -Wextra develop/grid_omega.cpp -o build/grid_omega
+          g++ -O3 -std=c++17 -Wall -Wextra develop/check_omega.cpp -o build/check_omega
+          g++ -O3 -std=c++17 -Wall -Wextra develop/graph_equality.cpp -o build/graph_equality
+      - name: Recompute small strips and all graphs through six vertices
+        run: |
+          for width in 1 2 3 4 5 6 7; do
+            python3 scripts/check_strip.py "$width"
+          done
+          for vertices in 1 2 3 4 5 6; do
+            build/graph_equality "$vertices" > "build/graph-equality-n${vertices}.txt"
+            cmp "build/graph-equality-n${vertices}.txt" "develop/results/graph-equality-n${vertices}.txt"
+          done
+      - name: Independent small, structural, and tree checks
+        working-directory: develop
+        run: |
+          python3 check_small.py
+          python3 check_structural.py
+          python3 tree_parameters.py
+      - name: Record exact commit
+        run: git rev-parse HEAD > build/commit.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: finite-controls
+          path: |
+            build/*.json
+            build/*.txt
+            develop/results/tree-parameters.json
+            develop/results/structural-checks.json
+            develop/results/small-exhaustive-check.json
+  grid-certificates:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        width: [8, 9, 10, 11]
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - name: Compile exact transfer implementations
+        run: |
+          mkdir -p build
+          g++ -O3 -std=c++17 -Wall -Wextra develop/grid_omega.cpp -o build/grid_omega
+          g++ -O3 -std=c++17 -Wall -Wextra develop/check_omega.cpp -o build/check_omega
+      - name: Regenerate finite values and complete certificate vectors
+        env:
+          STRIP_WIDTH: ${{ matrix.width }}
+        run: python3 scripts/check_strip.py "$STRIP_WIDTH"
+      - name: Record exact commit
+        run: git rev-parse HEAD > build/commit.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: grid-width-${{ matrix.width }}
+          path: |
+            build/check-width-*.json
+            build/commit.txt
+  lean:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    defaults:
+      run:
+        working-directory: formal
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - name: Inspect runner resources and active Lean processes
+        run: |
+          free -h
+          ps -eo pid,comm,rss | awk 'NR==1 {print; next} {n=split($2,a,"/"); if(a[n]=="lean" || a[n]=="lake") print}'
+      - name: Install pinned elan
+        run: |
+          curl -fLsS https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz -o /tmp/elan.tar.gz
+          tar -xzf /tmp/elan.tar.gz -C /tmp
+          /tmp/elan-init -y --default-toolchain none --no-modify-path
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned Mathlib cache
+        run: lake exe cache get
+      - name: Build hypercube proof and audit axioms
+        run: |
+          set -o pipefail
+          lake build 2>&1 | tee lean-build.log
+          lake env lean Audit.lean 2>&1 | tee lean-audit.log
+          python3 - <<'PY'
+          from pathlib import Path
+          text = Path('lean-audit.log').read_text()
+          assert 'subQuorumChromaticNumber_hypercube' in text
+          assert 'sorryAx' not in text
+          assert all(name in text for name in ('propext','Classical.choice','Quot.sound'))
+          PY
+          git rev-parse HEAD > commit.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lean-verification
+          path: |
+            formal/lean-build.log
+            formal/lean-audit.log
+            formal/commit.txt
+  manuscript:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - name: Install TeX dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-extra texlive-fonts-recommended texlive-pictures lmodern
+      - name: Compile exact manuscript source
+        working-directory: manuscript
+        run: |
+          mkdir -p output/pdf
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output/pdf paper.tex
+          pdflatex -interaction=nonstopmode -halt-on-error -output-directory=output/pdf paper.tex
+          python3 - <<'PY'
+          from pathlib import Path
+          text = Path('output/pdf/paper.log').read_text()
+          for issue in ('Overfull', 'undefined references', 'undefined citations', 'Label(s) may have changed'):
+              assert issue not in text, issue
+          PY
+          git rev-parse HEAD > output/pdf/commit.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: manuscript
+          path: |
+            manuscript/output/pdf/paper.pdf
+            manuscript/output/pdf/paper.log
+            manuscript/output/pdf/commit.txt

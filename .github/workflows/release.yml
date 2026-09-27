@@ -1,0 +1,40 @@
+name: Verified release
+
+on:
+  push:
+    tags: ['v*.*.*']
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    uses: ./.github/workflows/verify.yml
+    permissions:
+      contents: read
+  publish:
+    needs: verify
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          path: validation
+      - name: Package the exact verified tag
+        run: python3 scripts/package_release.py
+      - name: Publish release after all verification succeeds
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          if [[ -f "docs/releases/${RELEASE_TAG}.md" ]]; then
+            cp "docs/releases/${RELEASE_TAG}.md" /tmp/release-notes.md
+          else
+            printf 'Verified research artifact. See the attached manuscript and reproduction package.\n' > /tmp/release-notes.md
+          fi
+          printf '\nVerification run: %s/%s/actions/runs/%s\n' "$GITHUB_SERVER_URL" "$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" >> /tmp/release-notes.md
+          gh release create "$RELEASE_TAG" --verify-tag --title "Sub-quorum colorings: ${RELEASE_TAG}" --notes-file /tmp/release-notes.md dist/paper.pdf dist/latex-source.zip dist/research-package.zip dist/SHA256SUMS

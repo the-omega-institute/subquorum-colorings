@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "finite_grid_checks": 336,
+  "constructive_lower_bounds": "checked for every finite case",
+  "certificates": [
+    {
+      "width": 8,
+      "start": 9,
+      "period": 2,
+      "doubled_increment": 16,
+      "states": 40855
+    },
+    {
+      "width": 9,
+      "start": 15,
+      "period": 3,
+      "doubled_increment": 28,
+      "states": 148196
+    },
+    {
+      "width": 10,
+      "start": 12,
+      "period": 2,
+      "doubled_increment": 20,
+      "states": 537561
+    },
+    {
+      "width": 11,
+      "start": 16,
+      "period": 3,
+      "doubled_increment": 34,
+      "states": 1949930
+    }
+  ],
+  "independently_recomputed": true,
+  "small_exhaustive_check": "results/small-exhaustive-check.json",
+  "lean_formalized": false,
+  "scope": "Widths 8, 9, 10, 11 at all positive lengths via full-vector translation; arbitrary width remains open."
+}

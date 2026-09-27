@@ -1,0 +1,12 @@
+name = "subquorum"
+version = "0.1.0"
+defaultTargets = ["SubQuorumProof"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.0"
+
+[[lean_lib]]
+name = "SubQuorumProof"
+roots = ["D5.S3.Combinatorics.Graph.HypercubeSubQuorum"]
