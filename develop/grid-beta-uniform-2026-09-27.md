@@ -183,3 +183,416 @@ Proposed Lean order: path-neighborhood defect; finite integer level decompositio
 
 Earlier related literature to compare before any novelty claim:
 B. Bresar, M. Jakovac, J. Katrenic, G. Semanisin, A. Taranenko, *On the vertex k-path cover*, Discrete Applied Mathematics 161 (2013), 1943-1949; and M. Jakovac, A. Taranenko, *On the k-path vertex cover of some graph products*, Discrete Mathematics 313 (2013), 94-100. Bibliographic records were checked, but their full texts were inaccessible in this session. This note claims an explicit independent proof and reusable interface, not first discovery of a dissociation formula.
+
+## 8. Continuation: mixed-match ladder rigidity
+
+Continuation date: 2026-09-27. The upstream representative interface was
+rechecked at trureturing/dev `2eb9c73fb562e335e746bbeb596a2b93869c7ff6`;
+its relevant Blueprint blob is unchanged. All statements below are ordinary
+written proofs. The unrestricted rectangular psi_sq/Omega formula remains
+unproved. The ladder value is an existing benchmark; the strengthened
+Omega equality case is the interface used in the new arguments.
+
+In a feasible pair write P=V(M), B=V(G)\(T union P), and label vertices
+T, P, or B. On a two-row band, a column of type TP means either order of
+those two labels; likewise for PB. TT and BB mean both labels equal.
+
+**Theorem 8.1 (closed ladder, arbitrary matching directions).** For a
+feasible pair in G_(2,n),
+
+    |T|+|M| <= n                 if n is even,
+    |T|+|M| <= n+1               if n is odd.
+
+For odd n, equality n+1 forces M empty, TT in every odd column, and BB in
+every even column. In particular, there is no different mixed-match
+extremizer at that value.
+
+**Proof.** Write a,b,u,v for the numbers of TT, BB, TP, PB columns.
+All other column types contribute zero to |T|-|B|, so
+
+    |T|-|B| = 2(a-b)+u-v.                                      (8.1)
+
+The P vertex of a TP column cannot have a vertical matching partner.
+Its horizontal partner lies in an adjacent column. The T vertex already
+has its vertical P neighbor, so its horizontal neighbor in that adjacent
+column is B. The partner column is therefore PB. This maps TP columns
+injectively into PB columns: a PB column has only one P vertex and that
+vertex has only one matching partner. Consequently u<=v.
+
+A TT column already gives both T vertices their sole occupied neighbor.
+Every adjacent column is BB. Apply Lemma 3.1 to the independent set of TT
+indices in P_n. We have a<=b, except when n is odd, TT occupies every odd
+column, and BB occupies every even column. In that exception a=b+1 and no
+other column type occurs. Since
+
+    2(|T|+|M|)-2n = |T|-|B|,
+
+(8.1) proves both bounds and the complete odd equality case. The periodic
+TT/BB construction attains the bound. QED.
+
+This proof does not delete a same-colored neighbor from an arbitrary
+coloring and does not assume that a restriction of a coloring is valid.
+It operates directly on feasible representatives.
+
+**Corollary 8.2 (odd ladder color rigidity).** An (n+1)-color sub-quorum
+coloring of G_(2,n), for odd n, has exactly the odd-column support and
+assigns distinct colors to all its vertices.
+
+**Proof.** Apply the representative reduction, selecting an edge from
+every color class containing an edge. Theorem 8.1 forces the selected
+matching empty, so no color class contains an edge. Every colored vertex
+therefore has colored degree at most one. Its support is a dissociation
+set with at least n+1 vertices; Lemma 2.1 forces precisely the displayed
+support. Its n+1 colors on n+1 vertices are all distinct. QED.
+
+## 9. The full formula for one-direction representative matchings
+
+Let Omega_H(G_(m,n)) restrict the optimization to horizontal matching
+edges, allowing T to be arbitrary. Define Omega_V analogously.
+
+**Theorem 9.1.** For every positive m,n,
+
+    Omega_H(G_(m,n)) = Omega_V(G_(m,n)) = F(m,n).                 (9.1)
+
+**Proof.** For horizontal M, let c_i be the number of T vertices plus the
+number of matching edges in row i. Then sum c_i=|T|+|M|.
+
+First c_i<=ceil(2n/3). Restrict to that row, where all its matching edges
+remain. In any path, a matching edge uv can be removed while promoting u
+to T and deleting v from the occupied set. Old T vertices lose neighbors;
+u has at most one remaining neighbor because its path degree is at most
+two. The objective is unchanged. Iteration produces a dissociation set
+of size c_i in P_n, proving the bound.
+
+Next restrict to two adjacent rows. No matching edge is cut because all
+matching edges are horizontal. The restriction remains feasible and has
+objective c_i+c_(i+1). Theorem 8.1 gives at most n for even n. For odd n,
+it gives at most n except when both row counts equal (n+1)/2; that
+exception forces the TT/BB support and no matching edges in these rows.
+Three successive row counts cannot all equal (n+1)/2: the two forced
+ladder supports would create three consecutive vertical T vertices.
+
+For odd n, apply Theorem 4.1 to a_i=2c_i-n and A=g(n), exactly as in the
+proof of Theorem 5.1. For even n, pair adjacent row counts and use the
+single-row bound for a final unpaired row. In every case sum c_i<=F(m,n).
+The lower construction of Section 5 has M empty and gives equality.
+Transpose to obtain the vertical statement. QED.
+
+**Corollary 9.2 (quantitative mixed-direction necessity).** In an arbitrary
+sub-quorum coloring with k colors, let p_V count color classes containing
+an edge but no horizontal edge, and let p_H count color classes containing
+an edge but no vertical edge. Then
+
+    k <= F(m,n) + min(p_H,p_V).                                 (9.2)
+
+In particular, if k>=F(m,n)+d, there are at least d classes of each pure
+edge direction. Color classes containing both directions do not by
+themselves evade (9.1).
+
+**Proof.** Choose a horizontal representative edge wherever possible;
+only the p_V classes require a vertical one. Delete those p_V matching
+edges, including their endpoints, from the representative pair. The pair
+remains feasible, and its objective is k-p_V. Apply (9.1). Choosing vertical
+edges first instead gives k-p_H<=F. Edge-free classes are represented by
+single vertices in both arguments. QED.
+
+An optimal coloring may have its color classes taken connected: splitting
+a class into its induced connected components changes no same-color
+adjacency and preserves every local inequality. For such an optimum,
+the pure-direction classes in (9.2) are actual nontrivial vertical and
+horizontal monochromatic paths. This describes a necessary interaction
+in a counterexample, not a construction of one.
+
+## 10. Exact accounting on an open two-row band
+
+We retain matching edges crossing the band boundary as exposed endpoints;
+we do not silently discard their effect on T vertices.
+
+For a band of two adjacent rows, let e be the number of its P vertices
+whose matching partner is outside the band. Let i be the number of TP
+columns whose P partner is inside. The proof of Theorem 8.1 sends these i
+columns injectively to PB columns. Put
+
+    u = #(TP)-i,       v = #(PB)-i,       R=e-u,
+    delta = #(BB)-#(TT),
+    J = #(T in band) + #(matching edges entirely in band).
+
+Thus u counts the exposed P endpoints in TP columns, while v counts PB
+columns unused by the injection. In particular R,v>=0.
+
+**Theorem 10.1 (open-band identity).**
+
+    n-J = delta + (R+v)/2.                                    (10.1)
+
+The right-hand side is an integer. Moreover delta>=0 unless the entire
+band is the odd-width TT/BB alternating support; in that exception e=0
+and J=n+1.
+
+**Proof.** If t,p,b are the band vertex counts, then p=2|M_internal|+e
+and t+p+b=2n. Also t-b=2(#TT-#BB)+u-v, because the i matched pairs of
+column types cancel. Therefore
+
+    2J-2n = t-b-e = -2 delta -R-v.
+
+The assertion about delta is exactly Lemma 3.1 applied to TT columns,
+whose path neighbors are all BB. QED.
+
+Identity (10.1) gives explicit nonnegative boundary terms. It does not
+assert that exposed endpoints from all overlapping bands can be charged
+simultaneously. That compatibility issue is retained.
+
+## 11. A residual matching graph on even-by-even rectangles
+
+Throughout this section m,n are positive even integers and H=mn/2=F(m,n).
+Tile the rectangle by the aligned, disjoint 2-by-2 squares. For a tile Q
+let t_Q=|T intersection Q| and delta_Q=2-t_Q. Each t_Q<=2: three T
+vertices in a square would include a T with two occupied neighbors.
+Call a tile saturated when t_Q=2, and deficient otherwise.
+
+A saturated tile containing P must have two diagonally opposite T
+vertices, one P vertex, and one B vertex. If its T vertices are adjacent,
+they prohibit every other occupied vertex in that tile. In particular a
+saturated tile contains no internal matching edge and at most one P.
+
+**Lemma 11.1 (forced blank at an attachment).** If a matching edge joins
+a saturated tile to another tile, the companion corner of the receiving
+tile, along the shared side, is B. Consequently no matching edge joins
+two saturated tiles.
+
+**Proof.** The companion corner in the saturated tile is T. It already
+has its P neighbor within its tile, so the opposite corner across the
+shared side must be unoccupied. A saturated receiving tile would have
+T at that corner, which is impossible. The same reasoning shows that
+P vertices in two saturated tiles cannot be adjacent across their shared
+side, even if their adjacency is not the chosen matching edge. QED.
+
+For each deficient tile let h_Q count matching edges internal to Q and
+s_Q count matching edges from Q to saturated tiles. Each such attachment
+is counted only at its deficient end. Define
+
+    r_Q = delta_Q-h_Q-s_Q.
+
+Let Gamma be the finite multigraph on deficient tiles, with one edge for
+each remaining matching edge between two different deficient tiles.
+Parallel edges are kept; no loop is included. Write C=|E(Gamma)| and
+R=sum_Q r_Q.
+
+**Lemma 11.2 (local capacities).** Every r_Q is nonnegative. A tile with
+r_Q=0 has Gamma-degree at most one. A tile with r_Q>0 has Gamma-degree
+at most 2r_Q. Every residual-zero tile of positive Gamma-degree has
+s_Q>=1.
+
+**Proof.** If t_Q=1, its T corner allows at most one adjacent P and at
+most the opposite P, hence at most two P vertices. If both occur they
+are adjacent. One of the two P vertices then has T and P at its two
+neighboring corners, so by Lemma 11.1 it cannot be attached to a saturated
+tile. Thus h_Q+s_Q<=1. If r_Q=0 and h_Q=1, no external endpoint remains.
+If r_Q=0 and s_Q=1, at most one endpoint remains for Gamma. For r_Q=1,
+there are at most two Gamma endpoints.
+
+If t_Q=0, an attachment to a saturated tile needs a B corner adjacent to
+its endpoint. Three such attachment endpoints would leave at most one B;
+only two corners of a square are adjacent to that B. Thus three
+attachments are impossible. One internal matching edge and two
+attachments would occupy all four corners, leaving no required B.
+Two internal matching edges leave no external endpoint at all. This
+proves h_Q+s_Q<=2.
+
+For r_Q=2 there are at most four Gamma endpoints. For r_Q=1, either one
+internal edge uses two corners, or one attachment uses a P corner and
+requires a B corner; there are at most two remaining Gamma endpoints.
+For r_Q=0, the cases (h_Q,s_Q)=(2,0),(1,1) leave none, and (0,2) leaves
+at most one because some corner is B. Every residual-zero tile with a
+remaining endpoint therefore has an attachment. QED.
+
+**Lemma 11.3 (residual-zero leaves are independent).** No Gamma edge
+has two endpoints with residual capacity zero.
+
+**Proof.** By the preceding proof, a residual-zero tile incident to Gamma
+has exactly one of the following forms, up to square symmetries. A letter
+s denotes a P endpoint matched to a saturated tile, and c denotes its
+sole Gamma endpoint:
+
+    Type I:  T c          Type II:  B s
+             B s                    s c
+
+All corners neighboring c within its tile are occupied. Every such
+neighbor that is P is an s corner. An s corner has one neighboring B
+corner and one neighboring c corner, so Lemma 11.1 forces its attachment
+to leave through the unique side containing the B corner.
+
+Suppose two c corners are matched across the shared side of two such
+tiles. Consider their companion corners along that side. If either is
+T, that T has both its within-tile c neighbor and an occupied companion
+across the side, violating feasibility. Thus both companions are s.
+Their forced attachments leave on the same perpendicular side of the
+two tiles. The two receiving saturated tiles are adjacent and their P
+endpoints are adjacent across their shared side. This is prohibited by
+the last assertion of Lemma 11.1. The contradiction proves the lemma.
+Boundary cases introduce no exception: an asserted attachment must exist
+inside the original rectangle. QED.
+
+**Theorem 11.4 (exact residual reduction).** Put D=H-|T|=sum delta_Q and
+q=|T|+|M|-H. Then
+
+    q = C-R.                                                  (11.1)
+
+If every connected component of Gamma has at most one residual-zero
+vertex of degree one, then q<=0.
+
+**Proof.** Every matching edge is internal to a deficient tile, joins a
+saturated tile to a deficient tile, or is counted by Gamma. Hence
+|M|=sum h_Q+sum s_Q+C, which proves (11.1). In a component with at most
+one residual-zero leaf, Lemma 11.2 and the degree sum give
+2|E|<=2 sum r_Q+1. Both |E| and sum r_Q are integers, so |E|<=sum r_Q.
+Sum over components. QED.
+
+**Theorem 11.5 (three-quarter absorption).** For every feasible pair on
+an even-by-even rectangle,
+
+    |T| + (3/4)|M| <= mn/2,
+    equivalently 4|T|+3|M| <= 2mn.                            (11.2)
+
+If q=|T|+|M|-mn/2>0, then
+
+    mn/2-|T| >= 3q,             |M| >= 4q.                    (11.3)
+
+Consequently the full objective bound holds whenever |T|>=mn/2-2,
+or whenever |M|<=3.
+
+**Proof.** Let ell be the number of residual-zero vertices of positive
+Gamma-degree. They are leaves by Lemma 11.2. Summing degrees gives
+2C<=2R+ell, hence ell>=2q by (11.1). By Lemma 11.3 their incident edges
+are distinct, so C>=ell. Each such tile receives at least one saturated
+tile attachment, counted only there; therefore
+
+    D=R+sum h_Q+sum s_Q >= R+ell.
+
+If q>0, substitute R=C-q to obtain
+
+    D >= C-q+ell >= 2ell-q >= 3q.
+
+If q<=0 the same inequality D>=3q follows from D>=0. Substituting
+q=|M|-D yields 3|M|<=4D, proving (11.2). For q>0, |M|=D+q>=4q gives
+(11.3). The stated near-extremal consequences use that q is an integer.
+QED.
+
+**Corollary 11.6 (few edged color classes).** On an even-by-even rectangle,
+any sub-quorum coloring with at most three color classes containing an
+edge uses at most F(m,n) colors. More generally an excess of d colors
+requires at least 4d such classes and at least d classes of each pure
+edge direction.
+
+**Proof.** In the representative reduction, |M| is exactly the number
+of color classes containing an edge, and |T|+|M| is the color count.
+Apply (11.3) and Corollary 9.2. QED.
+
+The desired unrestricted bound replaces 3/4 in (11.2) by 1. This is a
+proved uniform stability estimate, not a proof of that stronger bound.
+A possible excess must survive the residual reduction in a component
+containing at least two nonadjacent residual-zero leaves. No such
+counterexample is asserted to exist.
+
+## 12. Exact even-width orientation criterion and a linear-time witness
+
+This result concerns arbitrary nonnegative integer data c_i,k_i, not
+only data already known to arise from a grid. Fix positive even n, set
+b=ceil(2n/3), and use k_0=k_m=0. For an interval [a,d] put
+
+    W(a,d)=sum_(i=a)^d c_i + sum_(i=a)^(d-1) k_i,
+    L_h=floor(h/2)n+(h mod 2)b = F(h,n).
+
+**Theorem 12.1.** There are integers 0<=u_i<=k_i for which
+
+    z_i=c_i+k_(i-1)-u_(i-1)+u_i,
+    z_i<=b,                   z_i+z_(i+1)<=n                 (12.1)
+
+if and only if
+
+    W(a,d)<=L_(d-a+1) for every contiguous interval.            (12.2)
+
+A satisfying orientation, or a violating interval, can be found in O(m)
+integer arithmetic operations.
+
+**Proof of necessity.** The load sum on [a,d] is W(a,d) plus the
+nonnegative incoming allocation k_(a-1)-u_(a-1)+u_d. Group the loads in
+adjacent pairs and, for odd length, one singleton. This gives (12.2).
+
+**Constructive sufficiency.** Put
+
+    S_0=0,
+    S_i=sum_(j=1)^i c_j + sum_(j=1)^(i-1) k_j,
+    U_i=S_i+k_i,                 U_0=0.
+
+Cumulative loads X_i=sum_(j=1)^i z_j equal S_i+u_i. They must lie between
+S_i and U_i, with X_0=0 and X_m=S_m. The upper constraints in (12.1) say
+X_i-X_(i-1)<=b and X_i-X_(i-2)<=n. Their componentwise largest candidate
+subject to X_i<=U_i is
+
+    Y_0=0,
+    Y_1=min(U_1,b),
+    Y_i=min(U_i,Y_(i-1)+b,Y_(i-2)+n)       for i>=2.            (12.3)
+
+Because 2b>=n, a shortest sequence of steps of length one and two, with
+costs b and n, covering h positions has cost L_h. Unrolling (12.3) gives
+
+    Y_i=min_(0<=j<=i) (U_j+L_(i-j)).                           (12.4)
+
+For j<i we have S_i-U_j=W(j+1,i). Condition (12.2) therefore gives
+Y_i>=S_i. Thus S_i<=Y_i<=U_i, and in particular Y_m=S_m. Set
+u_i=Y_i-S_i and z_i=Y_i-Y_(i-1). These satisfy (12.1). Nonnegativity of
+z_i also follows from Y_i>=S_i>=U_(i-1)>=Y_(i-1).
+
+The recursion uses a constant number of integer additions and comparisons
+per row. Track the originating j for each minimizing term. If a lower
+bound Y_i>=S_i first fails, that origin supplies an interval [j+1,i]
+violating (12.2). Storing the Y_i values reconstructs every u_i. QED.
+
+**Logical consequence for the research route.** On a geometric input,
+W(a,d) is exactly the objective of the feasible representative pair in
+the subrectangle consisting of rows a through d, after discarding
+matching edges crossing its boundary. Therefore, for any fixed even
+width, the universal row-orientation bridge is equivalent to the
+universal Omega bound for that width across all lengths. An orientation
+failure yields an actual smaller rectangular Omega counterexample.
+This equivalence prevents using the bridge as an unjustified shortcut.
+
+Odd widths still require the exceptional balanced pair and the exclusion
+of three consecutive high rows. The even-width criterion cannot simply
+be reused: for n=5, c=(4,2), k=(0), all interval totals meet F, but the
+only loads (4,2) violate the odd-width balanced-pair rule. This abstract
+profile is not claimed geometrically realizable; Theorem 8.1 excludes
+it on the closed two-row grid.
+
+## 13. Continuation verification, scope, and next obstruction
+
+The continuation verifier is `develop/verify_grid_directional_core.py`.
+It uses only the Python standard library and exact integers. Run
+
+    python3 develop/verify_grid_directional_core.py --output develop/results/grid-directional-core-verification.json
+
+The checked-in output records 288,804 exhaustive feasible pairs across
+ten listed rectangles, 120,680 arbitrary integer orientation profiles,
+and 1,200 seeded random geometric pairs across six sizes, including
+20-by-20. All listed checks passed. Every intermediate open-band and
+residual-capacity assertion is checked; the script checks residual-zero
+independence as well as the final coefficient 3/4. The finite runs do not
+replace any universal written proof.
+
+This continuation proves the one-direction formula at all dimensions,
+the exact exposed-endpoint ledger, the even-by-even three-quarter
+absorption estimate and near-extremal cases, and the exact constructive
+even-width interval criterion. It leaves the unrestricted mixed-direction
+Omega/psi_sq bound unproved. In the even-by-even case its remaining
+obstruction is an overloaded residual component as in (11.1), with at
+least two nonadjacent residual-zero leaves. The stronger coefficient-one
+absorption statement is a target, not an assumption in any proof above.
+
+No Lean, Scribe declaration, CI result, independent referee approval, or
+worldwide priority claim is asserted. The source-faithful reduction is
+reused from [S] and [T]; the ladder value is not presented as newly
+invented. The structural equality case and the subsequent paper proofs
+are the continuation's derived results. The inspected upstream source is
+`Blueprint/D5/S3/Combinatorics/Graph/HypercubeSubQuorum.md` at the dev
+snapshot stated at the start of Section 8. Earlier Sections 1--7 and their
+priority qualifications are retained.
