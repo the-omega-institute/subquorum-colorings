@@ -24,7 +24,7 @@ Here a subset S is even-gap when every maximal interval of its complement has ev
 
 The same path matching can tile a two-row ladder: every selected edge occupies a two-column horizontal domino pair, and every unmatched column carries a vertical domino. Reading the leftmost column shows that these are exactly its perfect matchings. Thus the no11 word is an exact encoding of a restricted one-dimensional matching choice, with all selected edges recoverable.
 
-The even-gap indexing sets of East, Johnson and Kambites [EJK], Definition 6.4, use n boundary points and have f_n elements with f_0=f_1=1. Therefore our X_6 corresponds to their SEVEN-point index set of size 21; their six-point index set has size 13. Their Theorem 6.14 is a faithful involutive representation of ordinary Temperley-Lieb diagrams over a nontrivial idempotent semiring, and does not preserve the ordinary tensor product. It does not by itself preserve the current graph's capacities, exposed matching obligations, or colored-support weights.
+The even-gap indexing sets of East, Johnson and Kambites [EJK], Definition 6.4 and Lemma 6.7, use n boundary points and have f_n elements with f_0=f_1=1. Therefore our X_6 corresponds to their SEVEN-point index set of size 21; their six-point index set has size 13. Their Theorem 6.14 is a faithful involutive representation of ordinary Temperley-Lieb diagrams over a nontrivial idempotent semiring, and does not preserve the ordinary tensor product. It does not by itself preserve the current graph's capacities, exposed matching obligations, or colored-support weights.
 
 For arbitrary real weights w_i, the maximum of sum w_i x_i over X_j obeys
 
@@ -189,11 +189,15 @@ The actual run checked all 2,025 normalized local cases: nine exit geometries, f
 
 All 32 realizable patches were embedded under eight square symmetries and nine even translations. The 2,304 resulting feasible rectangles each contain a three-edge LL path under the actual selected routing, and all satisfy the charging and five-sixths inequalities. Two earlier 4-by-6 fork examples additionally exercise f_2 and both companion types.
 
+A separate constructed family checks capacity-two routing: 2,568 corner/exit/leaf-shape candidates produce 548 feasible finite-grid patches. These include 64 full tiles with one leaf port and 32 full tiles with two leaf ports, together with partial tiles of residual degrees two and three. This exercises the disjoint companion prescriptions and slack-first choices. It is not claimed to enumerate all globally realizable capacity-two surroundings.
+
 The checker also ran through all 261,868 feasible pairs on 2x2,2x4,2x6,4x4 and 500 seeded random pairs across 4x6,6x6,8x10,12x14,20x20. Those bulk cases have no length-two or length-three LL paths; the non-vacuous planted tests above are therefore reported separately. The slack-paid branch is retained as a valid case in the proof; the planted three-step examples use internal-edge charges and are not claimed to test every possible slack-paid geometry.
 
-Finally the no11/even-gap bijection and inverse were checked on all binary words through length 14 and all boundary subsets through order 15, as well as weighted no11 optimization for all weights in {-2,-1,0,1,2} through length six. This validates the stated one-dimensional interface, not a weighted quotient of the entire grid transfer.
+Finally the no11/even-gap bijection and inverse were checked on all 32,767 binary words through length 14 and all 65,534 boundary subsets through order 15. Weighted no11 optimization was checked on 19,531 instances, using all weights in {-2,-1,0,1,2} through length six. This validates the stated one-dimensional interface, not a weighted quotient of the entire grid transfer.
 
-The result JSON contains executed script hashes and the exact counts. All listed checks passed. No Lean/Scribe or CI-success claim follows from these finite computations. Existing formal files, manuscript and width-specific certificates are unchanged.
+Executed main script SHA256: `c2aa8d5fe3ef90c61ef62a82678adbc6dd67f3c357ec24f5017af17cb308078b`; expected Git blob: `262a30c2acdff39fecd72fab91e6b568c313a9b4`. Executed classifier SHA256: `192e0f20fb1938c69e46bf1b7743e4a0a842105e38972e4ccdb40907db11a317`; expected Git blob: `4259a2232c13f2421ed893d4225dc2b6819154a7`.
+
+The result JSON contains the executed source hashes and exact counts. All listed checks passed. No Lean/Scribe or CI-success claim follows from these finite computations. Existing formal files, manuscript and width-specific certificates are unchanged.
 
 ## Sources and attribution
 
@@ -201,7 +205,7 @@ The result JSON contains executed script hashes and the exact counts. All listed
 
 [PS] trureturing, `D5/S1/Words/AdmissibleWords/PathStableSetPolytope.lean`, inspected blob `7b3a7abc40ee3678f93ab7eaf0712f4276902e58`, and its Blueprint. This supplies the existing path stable-set convex-hull interface.
 
-[EJK] J. East, M. Johnson, M. Kambites, *Faithful linear and relational representations of diagram categories and monoids*, arXiv:2605.04630v1, 6 May 2026, Definition 6.4, Lemma 6.6 and Theorem 6.14. The HTML was inspected. https://arxiv.org/html/2605.04630 . The diagram representation theorem is attributed to these authors. The new grid inequality is proved separately above.
+[EJK] J. East, M. Johnson, M. Kambites, *Faithful linear and relational representations of diagram categories and monoids*, arXiv:2605.04630v1, 6 May 2026, Definition 6.4, Lemma 6.7 and Theorem 6.14. The HTML was inspected. https://arxiv.org/html/2605.04630 . The diagram representation theorem is attributed to these authors. The new grid inequality is proved separately above.
 
 [G] This PR, `develop/grid-beta-uniform-2026-09-27.md` Sections 11-13 and `develop/grid-parity-transport-2026-09-27.md` Sections 1-6, pinned at `bee8bf429c0dc0ff53c75775496113c7782f9115`. These contain the residual input, companion exclusion, fork classification and short compensation used here.
 
