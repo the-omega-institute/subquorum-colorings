@@ -1,0 +1,93 @@
+{
+  "scope": "Exact finite regression checks; universal paper proofs are separate. No full conjecture, Lean, or CI claim.",
+  "no11": {
+    "all_words": 32767,
+    "all_boundary_subsets": 65534,
+    "counts_by_length": [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987],
+    "weighted_instances": 19531,
+    "six_bit_total": 64,
+    "six_bit_admissible": 21,
+    "six_bit_rejected": 43,
+    "seven_bit_admissible": 34
+  },
+  "exhaustive": [
+    {"m": 2, "n": 2, "pairs": 25, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 2, "n": 4, "pairs": 548, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 2, "n": 6, "pairs": 12179, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 4, "n": 4, "pairs": 249116, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}}
+  ],
+  "random": [
+    {"m": 4, "n": 6, "pairs": 100, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 6, "n": 6, "pairs": 100, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 8, "n": 10, "pairs": 100, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 12, "n": 14, "pairs": 100, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}},
+    {"m": 20, "n": 20, "pairs": 100, "path_counts": {"two_edge_paths": 0, "three_edge_paths": 0}}
+  ],
+  "random_seed": 2026092801,
+  "planted": {
+    "summary": {"cases": 2304, "three_edge_paths": 2304, "two_edge_paths": 0, "slack_charges": 0, "earlier_fork_cases": 2, "earlier_two_edge_paths": 2},
+    "local_cases": 2025,
+    "accepted_local_cases": 32,
+    "local_table": [
+      {"left_leaf_exit": "left", "right_leaf_exit": "right", "feasible_by_internal_edges": [0, 4, 4]},
+      {"left_leaf_exit": "left", "right_leaf_exit": "up", "feasible_by_internal_edges": [0, 0, 0]},
+      {"left_leaf_exit": "left", "right_leaf_exit": "down", "feasible_by_internal_edges": [0, 8, 4]},
+      {"left_leaf_exit": "up", "right_leaf_exit": "right", "feasible_by_internal_edges": [0, 0, 0]},
+      {"left_leaf_exit": "up", "right_leaf_exit": "up", "feasible_by_internal_edges": [0, 0, 0]},
+      {"left_leaf_exit": "up", "right_leaf_exit": "down", "feasible_by_internal_edges": [0, 0, 0]},
+      {"left_leaf_exit": "down", "right_leaf_exit": "right", "feasible_by_internal_edges": [0, 8, 4]},
+      {"left_leaf_exit": "down", "right_leaf_exit": "up", "feasible_by_internal_edges": [0, 0, 0]},
+      {"left_leaf_exit": "down", "right_leaf_exit": "down", "feasible_by_internal_edges": [0, 0, 0]}
+    ],
+    "local_rejections": {"T_degree": 1793, "tile_role": 200},
+    "examples": [
+      {
+        "m": 6, "n": 12,
+        "T": [0, 9, 13, 15, 28, 33, 41, 44],
+        "M": [[17, 29], [18, 19], [5, 6], [3, 4], [1, 2], [7, 8], [20, 32]],
+        "counts": {"q": -21, "D": 28, "a": 1, "b": 22, "c": 0, "f2": 0, "f3": 1, "h": 1, "slack_charges": 0}
+      },
+      {
+        "m": 6, "n": 14,
+        "T": [2, 11, 17, 19, 34, 39, 49, 52],
+        "M": [[21, 35], [22, 23], [7, 8], [5, 6], [3, 4], [9, 10], [24, 38]],
+        "counts": {"q": -27, "D": 34, "a": 1, "b": 28, "c": 0, "f2": 0, "f3": 1, "h": 1, "slack_charges": 0}
+      },
+      {
+        "m": 6, "n": 16,
+        "T": [4, 13, 21, 23, 40, 45, 57, 60],
+        "M": [[25, 41], [26, 27], [9, 10], [7, 8], [5, 6], [11, 12], [28, 44]],
+        "counts": {"q": -33, "D": 40, "a": 1, "b": 34, "c": 0, "f2": 0, "f3": 1, "h": 1, "slack_charges": 0}
+      },
+      {
+        "m": 4, "n": 6,
+        "T": [0, 5, 12, 17, 19, 22],
+        "M": [[1, 2], [3, 4], [7, 13], [10, 16], [8, 9]],
+        "counts": {"q": -1, "D": 6, "a": 1, "b": 2, "c": 0, "f2": 1, "f3": 0, "h": 1, "slack_charges": 0}
+      },
+      {
+        "m": 4, "n": 6,
+        "T": [0, 5, 12, 17, 19, 22],
+        "M": [[1, 2], [3, 4], [7, 13], [10, 16], [8, 9], [14, 15]],
+        "counts": {"q": 0, "D": 6, "a": 1, "b": 1, "c": 0, "f2": 1, "f3": 0, "h": 2, "slack_charges": 0}
+      }
+    ]
+  },
+  "capacity_two_patches": {
+    "summary": {"attempts": 2568, "rejected": 2020, "accepted": 548, "deg2_leaves1": 112, "f2": 0, "f3": 0, "slack_charges": 0, "deg2_leaves2": 76, "deg3_leaves1": 160, "deg3_leaves2": 104, "deg4_leaves1": 64, "deg4_leaves2": 32},
+    "examples": [
+      {"m": 8, "n": 8, "T": [18, 20, 29], "M": [[26, 34], [27, 28], [35, 36]], "center": 9, "degree": 2, "leaves": 1},
+      {"m": 10, "n": 8, "T": [18, 27, 36, 45], "M": [[42, 50], [26, 34], [43, 44], [51, 52]], "center": 13, "degree": 2, "leaves": 1},
+      {"m": 10, "n": 8, "T": [34, 50, 59], "M": [[35, 36], [43, 51], [29, 37]], "center": 10, "degree": 2, "leaves": 1}
+    ]
+  },
+  "script_sha256": "c2aa8d5fe3ef90c61ef62a82678adbc6dd67f3c357ec24f5017af17cb308078b",
+  "classifier_sha256": "192e0f20fb1938c69e46bf1b7743e4a0a842105e38972e4ccdb40907db11a317",
+  "limitations": [
+    "The small exhaustive and random cases have no two/three-edge LL paths; the planted cases test these nonvacuously.",
+    "The route is a specified auxiliary pairing, not enumeration of every possible pairing.",
+    "The slack-paid exceptional routing case is retained in the proof; these planted witnesses use internal-edge charges.",
+    "No weighted quotient of the full two-dimensional frontier into 21 states is claimed."
+  ],
+  "result": "ALL_LISTED_CHECKS_PASSED"
+}
