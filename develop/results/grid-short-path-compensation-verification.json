@@ -1,0 +1,28 @@
+{
+  "scope": "Finite exact regression checks for written lemmas, not a universal or Lean proof.",
+  "exhaustive": [
+    {"m": 2, "n": 2, "pairs": 25, "short_sources": 0},
+    {"m": 2, "n": 4, "pairs": 548, "short_sources": 0},
+    {"m": 2, "n": 6, "pairs": 12179, "short_sources": 0},
+    {"m": 4, "n": 4, "pairs": 249116, "short_sources": 0}
+  ],
+  "random": {
+    "seed": 2026092705,
+    "sizes": [[4,6],[6,6],[8,10],[12,14],[20,20]],
+    "pairs": 500
+  },
+  "normalization_witnesses": [
+    {
+      "T": [0,5,12,17,19,22],
+      "M": [[1,2],[3,4],[7,13],[10,16],[8,9]],
+      "result": {"sources": 1,"short": 1,"steps": 1,"promotions": 1,"flips": 0}
+    },
+    {
+      "T": [0,5,12,17,19,22],
+      "M": [[1,2],[3,4],[7,13],[10,16],[8,9],[14,15]],
+      "result": {"sources": 1,"short": 1,"steps": 1,"promotions": 0,"flips": 1}
+    }
+  ],
+  "script_sha256": "afaf0d1adb404472680e008f6a28fdcffeaab356b8bb0f78bc2322ee094027af",
+  "result": "ALL_LISTED_CHECKS_PASSED"
+}
