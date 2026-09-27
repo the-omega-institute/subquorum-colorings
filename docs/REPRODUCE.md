@@ -40,6 +40,33 @@ and checks grafting over all labelled base trees with 2..5 vertices.
 The grafting theorem itself applies to every finite nonempty base graph;
 its proof is in the paper and `develop/grafting-2026-09-27.md`.
 
+## Uniform grid arguments
+
+The row-profile, directional and mixed-direction proofs have exact integer
+regression checks. From the repository root:
+
+```sh
+mkdir -p validation/grid
+python3 develop/verify_rectangular_beta.py --output validation/grid/beta.json
+python3 develop/verify_grid_directional_core.py --output validation/grid/directional.json
+python3 develop/verify_grid_short_path_compensation.py --output validation/grid/short-path.json
+python3 develop/verify_grid_short_path_symmetries.py --output validation/grid/symmetries.json
+python3 develop/verify_grid_five_sixths.py --output validation/grid/five-sixths.json
+```
+
+The beta check includes 240 exact grid optimizations, 320 profile optimizations,
+ladder rigidity, path expansion and both lower constructions. The directional
+check includes 288,804 feasible pairs and 120,680 abstract orientation profiles.
+The five-sixths check includes 261,868 exhaustive pairs, 500 seeded random pairs,
+2,304 planted three-edge paths and 548 feasible capacity-two patches. The small
+exhaustive and random cases have no two- or three-edge leaf paths; the planted
+examples provide those tests. The slack-paid branch is proved geometrically;
+the planted three-edge witnesses use internal-edge charges.
+
+These checks are run separately from the existing hosted verification workflow.
+The universal results rest on the [row-profile proof](GRID_PROFILE_PROOF.md)
+and [residual-geometry proof](GRID_ABSORPTION_PROOF.md).
+
 ## Lean proof
 
 The modules are preserved byte-for-byte from the pinned source in
