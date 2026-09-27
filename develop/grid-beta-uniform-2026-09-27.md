@@ -146,7 +146,7 @@ z_i=c_i+k_{i-1}-u_{i-1}+u_i,\qquad\sum_i z_i=|T|+|M|. \tag{5}
 
 **Conditional implication, proved.** This bridge would prove Omega=psi_sq=beta_2=F for all full rectangles: apply Theorem 4.1 to a_i=2z_i-n for odd n; for even n pair adjacent loads and use the single-row bound if one row remains. Equation (5) then bounds every feasible objective by F.
 
-The bridge is sufficient, not established or asserted necessary. Its finite algorithm is supplied separately: dynamic programming over u_i, the preceding load and the consecutive-high-row flag.
+The bridge is sufficient, not established or asserted necessary. Its finite algorithm uses dynamic programming over u_i, the preceding load and the consecutive-high-row flag. The experimental orientation scripts are supplied in the companion research bundle, not in this branch.
 
 A fixed parity orientation fails already on 4-by-3. Use T={(1,1),(1,3),(4,1),(4,3)} and M={(1,2)-(2,2),(3,2)-(4,2)}. Then c=(2,0,0,2). Both matching units must point inward, giving (2,1,1,2). Uniformly pointing to odd rows or to even rows exceeds a boundary row's capacity.
 
@@ -158,7 +158,7 @@ This is feasible, but N_B(T)={2,5,8,10} has size four while |T|=5. Thus no T-to-
 
 ## 7. Verification and formalization scope
 
-Run `python3 verify_rectangular_beta.py --output results/grid-beta-uniform-verification.json` from develop. The standard-library integer checks cover:
+The checked-in verifier is `develop/verify_rectangular_beta.py`. From develop, run `python3 verify_rectangular_beta.py --output results/grid-beta-uniform-verification.json`. The standard-library integer checks cover:
 
 - all 46,365 independent path subsets through order 20;
 - all 101,634 admissible ladder subsets through width 10, including odd-width equality rigidity;
@@ -167,9 +167,9 @@ Run `python3 verify_rectangular_beta.py --output results/grid-beta-uniform-verif
 - exact row-frontier beta_2 computations on 240 rectangles, widths 1 through 8 and lengths 1 through 30;
 - the explicit boundary-matching counterexample and symbolic examples.
 
-All passed. The independent grid DP records the last row mask and the selected vertices already having a selected neighbor. Adding a row cannot create a second neighbor at such a vertex, or both a horizontal and preceding-row neighbor in the new row. Older rows have no future neighbors. Thus accepted histories are exactly dissociation sets.
+All passed in the local research run. The independent grid DP records the last row mask and the selected vertices already having a selected neighbor. Adding a row cannot create a second neighbor at such a vertex, or both a horizontal and preceding-row neighbor in the new row. Older rows have no future neighbors. Thus accepted histories are exactly dissociation sets. Execution outputs are included in the companion research bundle; this branch includes the proof and beta verifier, not the output JSON files.
 
-Separate finite orientation checks passed on 2x3,3x3,4x3,3x4,3x5,5x3,4x4, with 116; 1,145; 11,544; 11,544; 116,011; 116,011; 249,116 feasible pairs respectively. The seeded random search also passed 9,000 generated pairs across nine sizes up to 20x20. These are evidence for an UNPROVED bridge, not a proof of universal coloring equality. The scripts and outputs accompany this branch.
+Separate local orientation tests passed on 2x3,3x3,4x3,3x4,3x5,5x3,4x4, with 116; 1,145; 11,544; 11,544; 116,011; 116,011; 249,116 feasible pairs respectively. A seeded random search passed 9,000 generated pairs across nine sizes up to 20x20. These are evidence for an UNPROVED bridge, not a universal coloring proof. The orientation scripts and output records are in the companion research bundle and are not checked into this branch.
 
 Proposed Lean order: path-neighborhood defect; finite integer level decomposition and profile theorem; ladder rigidity; row-count conversion; parity normalization and lower construction. No Lean/Scribe or CI success is claimed here, and no existing formal declarations are changed.
 
