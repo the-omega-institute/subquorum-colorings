@@ -28,7 +28,7 @@
 \newcommand{\Om}{\Omega}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \DeclareMathOperator{\diag}{diag}
-\title{Sub-quorum colorings of hypercubes:\\boundary matchings and grid strips}
+\title{From hypercubes to grids:\\sub-quorum colorings and structural bounds}
 \author{Wenlin Zhang\thanks{Working draft prepared for discussion with Rafik Sahbi.
 The author list and contribution statement will be settled jointly.}\\
 \small National University of Singapore; The Omega Institute}
@@ -41,15 +41,17 @@ hypercube is $2^{n-1}$ for every $n\ge2$, resolving Sahbi's Conjecture~6.4.
 The proof combines a reduction to selected color representatives with
 Huang's signed adjacency matrix. An energy estimate yields an injective
 boundary map and, more strongly, a boundary matching covering all selected
-edge-free representatives. We extend the argument to bipartite graphs with
-an orthogonal signed adjacency matrix and to Cartesian products of such
-graphs. We also construct connected trees for which the gap between the
-sub-quorum coloring number and the $2$-independence number is arbitrarily
-large even when their maximum degree is three. For rectangular grids,
-exact integer transfer certificates establish
-Sahbi's proposed formula at widths $8$, $9$, $10$, and $11$ for every positive
-length. The hypercube equality is formalized in Lean~4; the strip extensions
-are verified by two implementations of the finite transfer computation.
+edge-free representatives. Starting from this solution, we pursue two
+directions: rectangular grids and the structural conditions for equality
+between the sub-quorum coloring number and the $2$-independence number.
+For grids, exact integer transfer certificates establish Sahbi's proposed
+formula at widths $8$, $9$, $10$, and $11$ for every positive length.
+For the structural question, we extend the boundary argument to bipartite
+graphs with an orthogonal signed adjacency matrix and their Cartesian
+products. An exact grafting formula also produces trees of maximum degree
+three on which the difference between the two parameters is arbitrarily
+large. The hypercube coloring-number equality is formalized in Lean~4;
+the grid certificates are checked by two implementations of the transfer.
 \end{abstract}
 
 \section{Introduction}
@@ -88,17 +90,21 @@ $(n-1)\norm{x}^2$ can lie on $A$. Consequently restriction to $B$ is
 injective. The same estimate applies to every subset of $T$ and proves the
 Hall inequalities for a matching from $T$ to $B$.
 
-The proof has two further consequences. First, the signed-matrix argument
-extends to a class of regular bipartite graphs, including suitable
-Cartesian products. Second, it pinpoints a difficulty for grids: their
-straight two-step paths prevent the same square-scalar signing. We pursue
-the grid problem through Sahbi's transfer method and obtain four additional
-widths, each with a proof valid for every length.
+The solved hypercube problem is the starting point for two further
+questions. The first concerns rectangular grids: can a boundary argument
+prove Sahbi's proposed formula for arbitrary width and length? Straight
+two-step paths prevent the square-scalar signing used for cubes. We use
+Sahbi's transfer method to establish four additional widths, each for
+every positive length. Their complete state-vector certificates give
+exact cases against which a uniform boundary inequality can be tested.
 
-The broader identity $\psq=\bii$ also needs structural qualifications.
-We give a connected tree family with an unbounded additive gap. This
-separates the equality question from bipartiteness or acyclicity alone and
-provides a concrete obstruction for future characterizations.
+The second question is structural: which graphs satisfy $\psq=\bii$?
+The hypercube proof supplies a sufficient condition for a class of
+regular bipartite graphs and their Cartesian products. In the other
+direction, an exact grafting formula gives trees of maximum degree three
+with an unbounded additive gap. Together with nonheredity of the equality
+class, these results identify both a mechanism for equality and constraints
+on a broader characterization.
 
 \section{Partial colorings and the matching reduction}\label{sec:reduction}
 
@@ -635,31 +641,33 @@ the version agreed by the collaborators.
 
 \section{Further questions}
 
-The hypercube conjecture is settled by a boundary injection that also
-produces a covering matching. The signed-matrix condition describes a
-family on which this mechanism persists. For grids, the transfer
-certificates establish additional exact strips, while the unique-common-
-neighbor obstruction explains why the same matrix identity is unavailable.
+The solution of the hypercube conjecture gives a concrete starting point
+for the grid and structural questions. Its boundary injection produces
+a covering matching. The next task is to understand how much of this
+mechanism can survive when the cube's signed-matrix identity is unavailable.
 
 \begin{question}
 Can the width-specific transfer certificates be replaced by a boundary
 inequality proving $\Om(G_{m,n})\le F(m,n)$ for arbitrary $m,n$?
 \end{question}
 
-An upper bound for $\Om$ would prove the proposed grid equality. A failure
-of that stronger bound would instead distinguish the matching reduction
-from the original coloring problem. The distinction is useful when
-interpreting future computations.
+An upper bound for $\Om$ would prove the proposed grid equality. The strip
+certificates provide exact extremal data for separating interior and
+boundary contributions and testing candidate inequalities across widths.
+A failure of the stronger $\Om$ bound would distinguish the matching
+reduction from the original coloring problem.
 
 \begin{question}
 Which global structural conditions imply $\psq(G)=\bii(G)$?
 \end{question}
 
-\Cref{thm:treegap,cor:nonhereditary} show that neither connectedness and
-acyclicity nor a general forbidden-induced-subgraph formulation can by
-itself describe the full equality class. The signed boundary method gives
-a sufficient class, and exact recurrences on trees provide a controlled
-setting in which to examine additional conditions.
+The signed boundary theorem supplies a sufficient condition, while
+\cref{thm:grafting,cor:subcubic,cor:nonhereditary} constrain possible
+characterizations: an unbounded gap already occurs on subcubic trees,
+and the full equality class is not hereditary. The exact tree recurrence
+provides a setting for identifying additional sufficient conditions and
+testing them against explicit obstructions. These two directions extend
+the study from a solved family to broader geometric and structural classes.
 
 \appendix
 \section{An exact recurrence on trees}\label{app:tree}

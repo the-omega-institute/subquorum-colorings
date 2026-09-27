@@ -2,15 +2,26 @@
 
 [![Verification](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml/badge.svg)](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml)
 
-Research sources and reproducibility materials for **Sub-quorum colorings of
-hypercubes: boundary matchings and grid strips**, a working draft by Wenlin
+Research sources and reproducibility materials for **From hypercubes to grids:
+sub-quorum colorings and structural bounds**, a working draft by Wenlin
 Zhang (National University of Singapore; The Omega Institute).
 
 The starting result resolves Conjecture 6.4 of Rafik Sahbi's
 [Sub-quorum colorings of graphs, arXiv:2609.25128v1](https://arxiv.org/abs/2609.25128v1):
 the sub-quorum coloring number of the n-dimensional hypercube is 2^(n-1)
-for **every n >= 2**. This is a dimension-independent Lean theorem, not a
-finite computation through dimension 10 or 11.
+for **every n >= 2**, with a dimension-independent Lean proof.
+
+Starting from this solved family, the project advances two research directions:
+
+1. **Rectangular grids:** use exact strip certificates and the boundary viewpoint
+   to seek a proof of Sahbi's formula at arbitrary width and length.
+2. **Structural characterization:** determine conditions for psi_sq=beta_2,
+   using the signed boundary theorem as a sufficient mechanism and the grafted
+   tree families as explicit obstructions.
+
+The [research agenda](docs/RESEARCH.md) connects current results to the next
+mathematical targets. The manuscript follows the same progression from the
+hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 

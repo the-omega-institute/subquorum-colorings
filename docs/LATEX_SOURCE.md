@@ -1,7 +1,7 @@
 # Editable LaTeX source
 
-This archive contains `paper.tex`, the working manuscript *Sub-quorum
-colorings of hypercubes: boundary matchings and grid strips*.
+This archive contains `paper.tex`, the working manuscript *From hypercubes
+to grids: sub-quorum colorings and structural bounds*.
 
 Compile from the extracted archive directory:
 
