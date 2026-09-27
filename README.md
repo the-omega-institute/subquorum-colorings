@@ -3,8 +3,15 @@
 [![Verification](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml/badge.svg)](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml)
 
 Research sources and reproducibility materials for **From hypercubes to grids:
-sub-quorum colorings and structural bounds**, a working draft by Wenlin
-Zhang (National University of Singapore; The Omega Institute).
+sub-quorum colorings and structural bounds**, with contributions by Wenlin
+Zhang (National University of Singapore; The Omega Institute) and Haobo Ma
+(ChronoAI Pte Ltd; The Omega Institute).
+
+**Start with the [current mathematical results](docs/GRID_RESULTS.md)**:
+the uniform grid dissociation formula, directional matching bounds, and the
+five-sixths estimate for mixed directions. This companion includes complete
+proofs and extends the earlier manuscript, which covers the hypercube,
+structural results and exact strip certificates.
 
 The starting result resolves Conjecture 6.4 of Rafik Sahbi's
 [Sub-quorum colorings of graphs, arXiv:2609.25128v1](https://arxiv.org/abs/2609.25128v1):
@@ -33,11 +40,15 @@ hypercube solution to these geometric and structural questions.
 | Exact grafting theorem | Every finite nonempty base graph F | Written proof; tree-DP cross-checks |
 | Unbounded gap on subcubic trees | R(P_k), every k>=1; gap floor(k/3) | Written proof; checks k=1..30 |
 | Rectangular grid formula | Widths 8,9,10,11 at every positive length | Exact full-vector certificates, independently recomputed |
+| Grid dissociation number beta_2=F | Every positive width and length | Written row-profile proof; exact finite checks |
+| Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
+| Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;
 beta_2 is not defined in the archived Lean module. The subsequent structural
-and grid results are not yet Lean formalized. Arbitrary-width grids remain open.
+and grid results are not yet Lean formalized. The unrestricted mixed-direction
+grid coloring formula remains open.
 
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
@@ -47,6 +58,7 @@ by Sahbi; the draft makes no historical priority claim about that work.
 ## Contents
 
 - `manuscript/paper.tex`: research draft, proofs and tree recurrence appendix.
+- `docs/GRID_RESULTS.md`: current grid results and links to their complete proofs.
 - `develop/`: two exact C++ transfer implementations, independent small controls,
   tree recurrence, and mathematical notes.
 - `develop/results/`: full integer state vectors, finite readouts and hashes.
