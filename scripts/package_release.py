@@ -28,10 +28,17 @@ if __name__ == '__main__':
     output.mkdir(exist_ok=True)
     pdf = ROOT/'validation/manuscript/paper.pdf'
     assert pdf.is_file()
+    commit = subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT).decode().strip()
+    required = ['manuscript','lean-verification','finite-controls']
+    required += [f'grid-width-{m}' for m in (8,9,10,11)]
+    for artifact in required:
+        receipts = list((ROOT/'validation'/artifact).rglob('commit.txt'))
+        assert receipts, f'missing verification receipt: {artifact}'
+        assert all(p.read_text().strip()==commit for p in receipts), artifact
     (output/'paper.pdf').write_bytes(pdf.read_bytes())
     package(output/'latex-source.zip', {'paper.tex':ROOT/'manuscript/paper.tex',
-                                       'REPRODUCE.md':ROOT/'docs/REPRODUCE.md',
-                                       'LICENSE':ROOT/'LICENSE'})
+                                       'README.md':ROOT/'docs/LATEX_SOURCE.md',
+                                       'LICENSE':ROOT/'LICENSE', 'NOTICE':ROOT/'NOTICE'})
     tracked = subprocess.check_output(['git','ls-files','-z'],cwd=ROOT).decode().split('\0')
     files = {name:ROOT/name for name in tracked if name}
     files.update({str(p.relative_to(ROOT)):p for p in (ROOT/'validation').rglob('*') if p.is_file()})
