@@ -55,6 +55,12 @@ positive residual components of arbitrary length and proves an objective-preserv
 replacement when the adjacent band is blank. It also records a bounded search
 for simple all-capacity-one paths without internal matching edges.
 
+The [boundary-aware compensation note](docs/CROSS_COMPONENT_COMPENSATION.md)
+proves a filled-corridor adjacent-band inequality, including occupied bands and
+capacity-two passages. An explicit family shows why outward attachments to
+saturated tiles require a boundary correction. Its written proof, sharp examples
+and coordinate verifier are separate from the current joint manuscript.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
