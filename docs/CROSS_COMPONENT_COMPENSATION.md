@@ -13,6 +13,11 @@ tiles. We also give a bent-path witness and a capacity-two route that revisits
 tiles, identifying two different ways a resource count can be overstated.
 The unrestricted coefficient-one inequality remains open.
 
+The [transport follow-up](COMPENSATION_TRANSPORT.md) proves compensation through
+arbitrarily many specified neutral bands and constructs equality examples whose
+only negative-excess component is arbitrarily far from the positive corridor.
+Thus bounded-radius charging of the initial residual deficits is insufficient.
+
 ## 1. What the existing argument leaves open
 
 Appendix B proves the five-sixths bound using its specified port routing.

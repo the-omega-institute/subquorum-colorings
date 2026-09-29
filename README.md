@@ -61,6 +61,11 @@ capacity-two passages. An explicit family shows why outward attachments to
 saturated tiles require a boundary correction. Its written proof, sharp examples
 and coordinate verifier are separate from the current joint manuscript.
 
+The [compensation transport follow-up](docs/COMPENSATION_TRANSPORT.md) proves a
+neutral-band propagation lemma and constructs fork-free equality configurations
+whose compensating component lies arbitrarily far from the positive component.
+It excludes fixed-radius charging of the initial negative residual contributions.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
