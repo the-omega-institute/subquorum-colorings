@@ -66,6 +66,13 @@ neutral-band propagation lemma and constructs fork-free equality configurations
 whose compensating component lies arbitrarily far from the positive component.
 It excludes fixed-radius charging of the initial negative residual contributions.
 
+The [pressure-band follow-up](docs/PRESSURE_BAND_BRANCHING.md) proves that every
+tile of a band under the specified full-P entrance has nonpositive charge,
+giving the sharp aggregate bound rho(S)<=min(0,-1+sigma/2). A feasible infinite
+family has arbitrarily many outgoing saturated attachments despite every band
+tile being neutral. Thus general neutral bands need an allocation rule beyond
+the two-exit transport case; shared terminal ownership remains open.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
