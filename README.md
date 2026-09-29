@@ -8,7 +8,7 @@ Zhang (National University of Singapore; The Omega Institute) and Haobo Ma
 (ChronoAI Pte Ltd; The Omega Institute).
 
 **Start with the [current mathematical results](docs/GRID_RESULTS.md)**:
-the uniform grid dissociation formula, directional matching bounds, and the
+the profile proof of the known grid dissociation formula, directional matching bounds, and the
 five-sixths estimate for mixed directions. This companion includes complete
 proofs and extends the earlier manuscript, which covers the hypercube,
 structural results and exact strip certificates.
@@ -40,7 +40,7 @@ hypercube solution to these geometric and structural questions.
 | Exact grafting theorem | Every finite nonempty base graph F | Written proof; tree-DP cross-checks |
 | Unbounded gap on subcubic trees | R(P_k), every k>=1; gap floor(k/3) | Written proof; checks k=1..30 |
 | Rectangular grid formula | Widths 8,9,10,11 at every positive length | Exact full-vector certificates, independently recomputed |
-| Grid dissociation number beta_2=F | Every positive width and length | Written row-profile proof; exact finite checks |
+| Known grid dissociation number beta_2=F | Every positive width and length | New row-profile proof with equality information; exact finite checks |
 | Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
 
@@ -49,6 +49,11 @@ was already established by Sahbi and also follows from the written proof;
 beta_2 is not defined in the archived Lean module. The subsequent structural
 and grid results are not yet Lean formalized. The unrestricted mixed-direction
 grid coloring formula remains open.
+
+The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
+positive residual components of arbitrary length and proves an objective-preserving
+replacement when the adjacent band is blank. It also records a bounded search
+for simple all-capacity-one paths without internal matching edges.
 
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result

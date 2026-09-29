@@ -2,6 +2,12 @@
 
 Mathematical companion to [the research overview](GRID_RESULTS.md).
 
+The grid dissociation value is known from the 2013 3-path vertex-cover
+literature cited in the overview, via beta_2=|V|-tau_3. The contribution here
+is a new profile proof and equality analysis, followed by its extension to
+directional representative matchings. The numerical dissociation formula is
+not claimed as a new result.
+
 ## 1. Definitions
 
 Let G_(m,n)=P_m square P_n. A dissociation set induces maximum degree at most one; beta_2 is its maximum size. A feasible pair (T,M) consists of a matching M and a disjoint set T, each of whose vertices has at most one neighbor in A=T union V(M). Omega is the maximum of |T|+|M|.
