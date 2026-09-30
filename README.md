@@ -73,6 +73,13 @@ family has arbitrarily many outgoing saturated attachments despite every band
 tile being neutral. Thus general neutral bands need an allocation rule beyond
 the two-exit transport case; shared terminal ownership remains open.
 
+The [mixed-neutral donor note](docs/MIXED_NEUTRAL_DONORS.md) proves that a single
+tile between the specified receiving caps supplies one unit without a P
+pressure row, and extends the interval forest to such mixed terminal leaves.
+It accounts for the 6-by-14 obstacle. A new feasible 6-by-20 configuration has
+a closed two-tile successor of zero charge and negative components outside
+that interval, identifying the next obstacle to interval-only allocation.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
