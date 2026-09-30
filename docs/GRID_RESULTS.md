@@ -116,6 +116,32 @@ every capacity-one fork, by a promotion or a matching flip.
 
 [Complete residual-geometry and five-sixths proof](GRID_ABSORPTION_PROOF.md).
 
+**Compensation through branching bands.** For a pressure band of zero charge
+whose own upper row consists entirely of matching endpoints, consecutive
+right-then-left saturated exits generate disjoint, strictly narrower child
+bands. Lower-row selected vertices and capacity-two passages are allowed.
+If this recursion forms a forest with K filled sources and D closed terminal
+bands, and the remaining tiles have nonpositive total charge, then
+
+$$
+|T|+|M|-mn/2\le K-D\le0.
+$$
+
+Thus the coefficient increases from 5/6 to 1 on this geometric class, with
+each terminal counted once. A 6-by-14 feasible configuration shows why a
+general neutral band cannot automatically supply the same successor geometry.
+[Successor lemma, forest theorem and obstruction](BRANCHING_INTERVAL_COMPENSATION.md).
+The existing uniform 5/6 theorem and full grid conjecture retain their scope.
+
+An [elementary global certificate bound](STAR_FORMING_CERTIFICATES.md) also
+shows that high-degree vertices in a minimal 2-star-forming set have disjoint
+outside certificate sets, without assuming bipartiteness. The double star
+has beta_2=SF_2=4<psi_sq=5, so a star-forming upper comparison for colorings
+requires a graph-class-specific proof.
+The [upper-domination comparison](GRID_PARAMETER_BRIDGES.md) gives its exact
+parity gap and all equality cases; it identifies the additional upper bound
+needed before domination can settle the grid coloring target.
+
 ## Exact strips and structural obstructions
 
 For widths 8, 9, 10 and 11, exact transfer certificates establish
