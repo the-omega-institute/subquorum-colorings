@@ -153,6 +153,30 @@ condition in an essential way. The coordinates, matching, and label checks
 are archived under `parent_label_relaxation` in
 `output/guarded-half-donors-controls.json`.
 
+## Neutral-frame MILP discovery
+
+To separate the relaxed obstacle from the neutral-band question, an optional
+SciPy/HiGHS MILP restricts every tile outside the designated parent row to one
+of the twelve locally neutral states. Tiles on the parent row may use any
+locally feasible state, while the displayed parent labels, matching endpoint
+incidence, and selected-vertex occupancy are imposed exactly. The resulting
+solutions are then rechecked by `direct_check` and `canonical`.
+
+For the width-four word on `6 x 12`, the MILP optimum is `|T|+|M|=34`, hence
+`q=-2`; its residual component excesses are `[-1,-1,0,0,0,0]`. For the
+width-five word on `6 x 14`, the optimum is `38`, hence `q=-4`, with four
+negative unit components and the rest zero. Thus these two neutral-frame
+models do not admit a `q=0` completion, even though the parent-label-only
+relaxation does.
+
+This is finite discovery evidence, not a general neutral-frame theorem. The
+model fixes two small parent words and treats the parent row more freely than
+an eventual geometric proof may allow; it also says nothing about arbitrary
+bends or larger frames. The complete MILP inputs, tile labels, matchings,
+component excesses, and script hash are archived in
+`output/neutral-frame-milp-controls.json`. The optional search is
+`develop/search_neutral_frame_milp.py` and is not required by CI.
+
 ## What this does and does not prove
 
 These fixed-`T` maximum completions establish a concrete obstruction to a
