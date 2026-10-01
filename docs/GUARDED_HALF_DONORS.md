@@ -65,6 +65,71 @@ for every subset X of sources. This is the capacitated Hall condition: source-to
 
 Under this Hall condition and rho(W)<=0, Proposition 3 gives q<=0, hence coefficient 1 in place of 5/6 on the stated covered class. This is a conditional improvement, not a new bound for arbitrary grids. The existence of enough donors, Hall for every source subset, and nonpositive remainder still need a general geometric argument. The incidence graph must come from justified reachability or an explicitly stated admissibility rule; local uniqueness alone does not supply it.
 
+### Boundary deficits as fractional donors
+
+The same argument applies when a compensator is an occupied adjacent band
+rather than a single certified tile. The following formulation keeps the
+boundary term visible.
+
+**Lemma 4 (weighted Hall compensation).** Let `A_1,...,A_K` be pairwise
+tile-disjoint source regions with `rho(A_i) <= 1`. Let `C_1,...,C_L` be
+pairwise tile-disjoint compensation regions, disjoint from the sources, and
+let `c_j` be a nonnegative half-integer satisfying
+
+```text
+rho(C_j) <= -c_j.
+```
+
+Let `N` be a disjoint neutral collection and `W` the remaining deficient
+tiles. Give source `A_i` an edge to `C_j` exactly when the proposed geometric
+routing permits `C_j` to pay that source. If every source subset `X` satisfies
+
+```text
+sum(c_j for j in N(X)) >= |X|,
+```
+
+then
+
+```text
+q <= K - sum(c_j for j=1,...,L) + rho(W) <= rho(W).
+```
+
+**Proof.** Sum the exact tile ledger over the disjoint regions. The sources
+contribute at most `K`, the compensation regions at most `-sum(c_j)`, the
+neutral collection contributes zero, and the remainder contributes `rho(W)`.
+This gives the first inequality. The displayed condition is the capacitated
+Hall condition; max-flow/min-cut, after multiplying all capacities by two,
+gives a fractional assignment paying one unit to every source. Taking `X` to
+be all sources gives `sum(c_j) >= K`, yielding the second inequality. Each
+compensation region occurs once in the ledger and its capacity is used at most
+once by the flow, so a boundary deficit cannot be reused by two sources. QED.
+
+For the boundary-aware adjacent-band identity,
+
+```text
+rho(S) = -Delta(S) + sigma(S)/2,
+```
+
+the admissible fractional capacity is therefore
+
+```text
+c(S) = Delta(S) - sigma(S)/2,
+```
+
+provided `c(S) >= 0`. A full donor has `c=1`, and a guarded half donor has
+`c=1/2`. If `sigma(S)/2 > Delta(S)`, the band has positive net charge and
+cannot be called a donor; it must remain in the remainder or be paired with a
+separately proved compensation region. This is the precise scope in which
+occupied bands can enter the same Hall allocation without silently spending
+an outward attachment twice.
+
+The lemma gives coefficient one on any class for which the source-to-region
+incidence graph is geometrically justified, the Hall condition holds, and
+`rho(W) <= 0`. It is a conditional improvement over the universal `5/6`
+estimate, not a proof that arbitrary mixed intervals satisfy Hall. The
+one-sided neutral-band certificate in `MIXED_RESIDUAL_DEFICIENCY.md` shows why
+the incidence and boundary hypotheses cannot be omitted.
+
 ## 5. The earlier 6x20 obstruction now has certified outside donors
 
 In the 6x20 witness of `MIXED_NEUTRAL_DONORS.md`, the parent exit word is R,R,L,L at tile columns 1,3,6,8. The width-two central R,L child, columns 4 and 5 below it, is saturated and contributes zero. The outside tiles at columns 2 and 7 are now guarded half donors: above them are respectively `PB/PT` and `BP/TP`, with occupied entry guards and deficient parent tiles. Their actual labels are `BB/BT` and `BB/TB`, each with charge -1, stronger than the certified -1/2.
