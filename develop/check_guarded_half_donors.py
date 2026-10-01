@@ -156,6 +156,68 @@ def first_l_predecessor_controls():
                 scope='Finite necessary-state predecessor classification; no global matching realizability inferred.')
 
 
+def mixed_budget_controls(max_width=8):
+    states = local_controls()['neutral_states']
+    transitions = [[second for second, candidate in enumerate(states)
+                    if compatible(first, candidate)] for first in states]
+    reports = []
+    for width in range(3, max_width+1):
+        counts = {}
+        examples = {}
+
+        def extend(word):
+            if len(word) < width:
+                options = transitions[word[-1]] if word else range(len(states))
+                for index in options:
+                    labels = states[index]['labels'].replace('/', '')
+                    if not word and (labels[0] == 'T' or labels[2] != 'B'):
+                        continue
+                    extend(word+[index])
+                return
+            labels = states[word[-1]]['labels'].replace('/', '')
+            if labels[1] == 'T' or labels[3] != 'B':
+                return
+            exits = [(position, 'R' if states[index]['exit_corners'] == [3] else 'L')
+                     for position, index in enumerate(word)
+                     if states[index]['exit_corners']]
+            if not exits or exits[0][1] != 'R' or exits[-1][1] != 'L':
+                return
+            known_twice = 0
+            mixed = 0
+            for (left, first), (right, second) in zip(exits, exits[1:]):
+                gap = [states[word[position]]['labels']
+                       for position in range(left+1, right)]
+                if not gap:
+                    continue
+                if first == 'R' and second == 'L':
+                    if len(gap) == 1 or all(label == 'PP/PP' for label in gap):
+                        known_twice += 2
+                    else:
+                        mixed += 1
+                elif first == second == 'R' and len(gap) == 1 \
+                        and gap[0] in ('PB/PT', 'PP/PP'):
+                    known_twice += 1
+                elif first == second == 'L' and len(gap) == 1 \
+                        and gap[0] in ('BP/TP', 'PP/PP'):
+                    known_twice += 1
+            key = (known_twice, mixed)
+            counts[key] = counts.get(key, 0)+1
+            examples.setdefault(key, [states[index]['labels'] for index in word])
+
+        extend([])
+        minimum = min(counts) if counts else None
+        reports.append(dict(tile_width=width, necessary_words=sum(counts.values()),
+                            budget_twice_and_mixed_counts={
+                                f'{budget}:{mixed}': count
+                                for (budget, mixed), count in sorted(counts.items())},
+                            lexicographically_first_minimum=minimum,
+                            example=examples.get(minimum)))
+    assert any(item['budget_twice_and_mixed_counts'].get('0:1', 0) for item in reports)
+    return dict(widths=reports,
+                interpretation='Known budget marks width-one/full-PP R-L donors as 2 and guarded same-direction donors as 1. Mixed intervals are unresolved.',
+                scope='Necessary local-state automaton only; no global matching realizability inferred.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -268,6 +330,7 @@ def main():
                   unguarded_middle=unguarded_middle_controls(),
                   unguarded_transitions=unguarded_transition_controls(),
                   first_l_predecessors=first_l_predecessor_controls(),
+                  mixed_budget=mixed_budget_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]

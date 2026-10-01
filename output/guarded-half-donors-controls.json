@@ -343,6 +343,138 @@
     "interpretation": "Every first L entry has one of these four local predecessors.",
     "scope": "Finite necessary-state predecessor classification; no global matching realizability inferred."
   },
+  "mixed_budget": {
+    "widths": [
+      {
+        "tile_width": 3,
+        "necessary_words": 1,
+        "budget_twice_and_mixed_counts": {
+          "2:0": 1
+        },
+        "lexicographically_first_minimum": [
+          2,
+          0
+        ],
+        "example": [
+          "PP/BP",
+          "PP/PP",
+          "PP/PB"
+        ]
+      },
+      {
+        "tile_width": 4,
+        "necessary_words": 5,
+        "budget_twice_and_mixed_counts": {
+          "0:1": 2,
+          "2:0": 3
+        },
+        "lexicographically_first_minimum": [
+          0,
+          1
+        ],
+        "example": [
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ]
+      },
+      {
+        "tile_width": 5,
+        "necessary_words": 27,
+        "budget_twice_and_mixed_counts": {
+          "0:1": 11,
+          "2:0": 8,
+          "3:0": 8
+        },
+        "lexicographically_first_minimum": [
+          0,
+          1
+        ],
+        "example": [
+          "PP/BT",
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ]
+      },
+      {
+        "tile_width": 6,
+        "necessary_words": 126,
+        "budget_twice_and_mixed_counts": {
+          "0:1": 44,
+          "1:1": 16,
+          "2:0": 44,
+          "3:0": 22
+        },
+        "lexicographically_first_minimum": [
+          0,
+          1
+        ],
+        "example": [
+          "PP/BT",
+          "PP/BT",
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ]
+      },
+      {
+        "tile_width": 7,
+        "necessary_words": 594,
+        "budget_twice_and_mixed_counts": {
+          "0:1": 201,
+          "1:1": 84,
+          "2:0": 182,
+          "3:0": 70,
+          "4:0": 57
+        },
+        "lexicographically_first_minimum": [
+          0,
+          1
+        ],
+        "example": [
+          "PP/BT",
+          "PP/BT",
+          "PP/BT",
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ]
+      },
+      {
+        "tile_width": 8,
+        "necessary_words": 2748,
+        "budget_twice_and_mixed_counts": {
+          "0:1": 879,
+          "1:1": 354,
+          "2:0": 696,
+          "2:1": 151,
+          "3:0": 440,
+          "4:0": 228
+        },
+        "lexicographically_first_minimum": [
+          0,
+          1
+        ],
+        "example": [
+          "PP/BT",
+          "PP/BT",
+          "PP/BT",
+          "PP/BT",
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ]
+      }
+    ],
+    "interpretation": "Known budget marks width-one/full-PP R-L donors as 2 and guarded same-direction donors as 1. Mixed intervals are unresolved.",
+    "scope": "Necessary local-state automaton only; no global matching realizability inferred."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -2165,8 +2297,8 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "63335a01111fa97265e8bd19dcbc73b8250bd416dc8b223fb493c8a2be7ca63a",
-    "docs/GUARDED_HALF_DONORS.md": "954a7a80600521b86cd145270141647e6639f29945026fe50df565a52db8600a",
+    "develop/check_guarded_half_donors.py": "214055f5e294491b77d42e75099e9110fad2cedaa826d718b3e1e0e64f702fc5",
+    "docs/GUARDED_HALF_DONORS.md": "e71329e0632faa277538effab1051eb029efbe53771a0e983417ce051a3ada5d",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
     "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",
