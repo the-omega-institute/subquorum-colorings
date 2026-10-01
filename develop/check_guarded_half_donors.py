@@ -144,6 +144,18 @@ def unguarded_transition_controls():
                 scope='Finite necessary-state transitions; no global matching realizability inferred.')
 
 
+def first_l_predecessor_controls():
+    states = local_controls()['neutral_states']
+    predecessors = sorted({state['labels'] for state in states
+                            if any(candidate['exit_corners'] == [2]
+                                   and compatible(state, candidate)
+                                   for candidate in states)})
+    assert predecessors == ['BP/TP', 'BT/TB', 'PP/PP', 'PP/TB', 'TB/BT']
+    return dict(predecessors=predecessors,
+                interpretation='Every first L entry has one of these four local predecessors.',
+                scope='Finite necessary-state predecessor classification; no global matching realizability inferred.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -255,6 +267,7 @@ def main():
                   certificate_uniqueness=certificate_controls(), neutral_gaps=neutral_gap_controls(),
                   unguarded_middle=unguarded_middle_controls(),
                   unguarded_transitions=unguarded_transition_controls(),
+                  first_l_predecessors=first_l_predecessor_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]

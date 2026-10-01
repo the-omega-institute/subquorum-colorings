@@ -332,6 +332,17 @@
     "interpretation": "PP/BT is a pure delay state; TB/BT can turn or continue.",
     "scope": "Finite necessary-state transitions; no global matching realizability inferred."
   },
+  "first_l_predecessors": {
+    "predecessors": [
+      "BP/TP",
+      "BT/TB",
+      "PP/PP",
+      "PP/TB",
+      "TB/BT"
+    ],
+    "interpretation": "Every first L entry has one of these four local predecessors.",
+    "scope": "Finite necessary-state predecessor classification; no global matching realizability inferred."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -2154,8 +2165,8 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "b64df1ff74a90da509dfc99e1384c7eefbd74782c51964a4f3b2107585b7363c",
-    "docs/GUARDED_HALF_DONORS.md": "e5b6c433f021b2c6c32bb0c6e48801ef72682a2567631e7c3280508e6c5b37ba",
+    "develop/check_guarded_half_donors.py": "63335a01111fa97265e8bd19dcbc73b8250bd416dc8b223fb493c8a2be7ca63a",
+    "docs/GUARDED_HALF_DONORS.md": "954a7a80600521b86cd145270141647e6639f29945026fe50df565a52db8600a",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
     "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",
