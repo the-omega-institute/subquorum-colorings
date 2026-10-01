@@ -66,6 +66,27 @@ the ledger and each flow arc spends at most its capacity, so a shared donor is
 never used twice. Crossing residual edges are already split into their two
 endpoint halves by the definition of `rho`. QED.
 
+The same proof gives a diagnostic when Hall does not hold. Define the weighted
+attachment deficiency
+
+```text
+delta_att = max_X (sum_{i in X} a_i
+                   - sum_{j in union(N_i for i in X)} c_j).
+```
+
+Max-flow/min-cut pays all but `delta_att` units of attachment debt, so the
+ledger always satisfies
+
+```text
+q <= delta_att + rho(W).
+```
+
+Thus `delta_att > 0` identifies a shortage in the proposed donor incidence
+rule. It does not by itself disprove the grid target: a remainder with charge
+at most `-delta_att` still proves `q <= 0`. Conversely, when the remainder is
+not controlled, the same number is an explicit unresolved gap rather than a
+silently reused donor.
+
 The lemma separates two obligations that are easy to conflate. The local
 band argument supplies the `+a_i` attachment debt, while a geometric theorem
 must certify negative regions and the Hall incidence. A saturated receiving

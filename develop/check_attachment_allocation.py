@@ -69,14 +69,20 @@ def deficiency(windows, demands, capacities):
     return greatest
 
 
-def verify(name, windows, demands, capacities, expected):
+def verify(name, windows, demands, capacities, expected, remainder=0,
+           expected_ledger=None):
     flow = max_flow(windows, demands, capacities)
     shortfall = deficiency(windows, demands, capacities)
     assert shortfall == sum(demands) - flow
     assert shortfall == expected
+    ledger_upper = shortfall + remainder
+    if expected_ledger is not None:
+        assert ledger_upper == expected_ledger
     return dict(name=name, windows=windows, doubled_demands=demands,
                 doubled_capacities=capacities, doubled_flow=flow,
                 doubled_shortfall=shortfall,
+                doubled_remainder=remainder,
+                doubled_ledger_upper_bound=ledger_upper,
                 allocation_exists=shortfall == 0)
 
 
@@ -86,7 +92,9 @@ def controls():
         verify('two_bands_separate_donors', ((0,), (1,)), (1, 1), (1, 1), 0),
         verify('two_half_demands_share_one_donor', ((0,), (0,)), (1, 1), (2,), 0),
         verify('shared_donor_reused_without_union_check', ((0,), (0,)),
-               (2, 2), (2,), 2),
+               (2, 2), (2,), 2, remainder=0, expected_ledger=2),
+        verify('shortage_paid_by_remainder', ((0,), (0,)), (2, 2), (2,), 2,
+               remainder=-2, expected_ledger=0),
         verify('nested_windows_with_enough_outer_capacity', ((0, 2), (1,)),
                (2, 2), (2, 2, 2), 0),
     ]

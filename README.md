@@ -118,7 +118,9 @@ same ledger to occupied bands with outward saturated attachments. It treats
 `sigma/2` as an explicit half-integral debt and requires a shared-capacity Hall
 allocation of certified negative donor regions. Its exact flow control includes
 the minimal shared-donor obstruction, so receiving saturated tiles are never
-counted as compensators or reused across components.
+counted as compensators or reused across components. When the incidence Hall
+condition fails, the same note records the exact attachment deficiency
+`delta_att` and the audited fallback `q <= delta_att + rho(W)`.
 
 ## Contents
 

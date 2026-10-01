@@ -19,6 +19,8 @@
       ],
       "doubled_flow": 2,
       "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
       "allocation_exists": true
     },
     {
@@ -41,6 +43,8 @@
       ],
       "doubled_flow": 2,
       "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
       "allocation_exists": true
     },
     {
@@ -62,6 +66,8 @@
       ],
       "doubled_flow": 2,
       "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
       "allocation_exists": true
     },
     {
@@ -83,6 +89,31 @@
       ],
       "doubled_flow": 2,
       "doubled_shortfall": 2,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 2,
+      "allocation_exists": false
+    },
+    {
+      "name": "shortage_paid_by_remainder",
+      "windows": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "doubled_demands": [
+        2,
+        2
+      ],
+      "doubled_capacities": [
+        2
+      ],
+      "doubled_flow": 2,
+      "doubled_shortfall": 2,
+      "doubled_remainder": -2,
+      "doubled_ledger_upper_bound": 0,
       "allocation_exists": false
     },
     {
@@ -107,9 +138,11 @@
       ],
       "doubled_flow": 4,
       "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
       "allocation_exists": true
     }
   ],
   "scope": "Half-integral attachment allocation only; no geometric incidence claim.",
-  "script_sha256": "903c087201f5abb06826c8b0a095234158589356c0943e6adef9a11dcbc17d95"
+  "script_sha256": "8bd9f588b04cfc9c116279ff6c26968b6cbf2104a414b8ca08d98f0b18f6fd01"
 }
