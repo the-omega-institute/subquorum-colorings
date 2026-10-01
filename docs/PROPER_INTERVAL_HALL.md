@@ -85,6 +85,41 @@ source's candidates has a nested window; checking only prefixes or local
 neighbors then misses a possible subset deficit. The properness requirement
 rules out exactly that failure mode while allowing overlapping windows.
 
+## A geometric sufficient condition
+
+The following criterion is the form that can be checked for a restricted
+single-bend family. Let `D_1,...,D_L` be donor tiles on one boundary row, in
+left-to-right order. For each source `A_i`, suppose the proposed route has a
+left connector and a right connector ending at donor tiles `D_{left_i}` and
+`D_{right_i}`. Assume:
+
+1. sources are ordered left-to-right, and the connectors start in that same
+   order on the source boundary;
+2. connectors of the same side are tile-disjoint, lie in the strip between
+   the source boundary and the donor row, and have no horizontal backtracking;
+3. left and right connectors do not cross one another or share a tile; and
+4. the admissible donor region for `A_i` is exactly the donor interval between
+   its two connector endpoints.
+
+The planar order of disjoint connectors is preserved from one boundary of the
+strip to the other. Hence
+
+```text
+left_1 < left_2 < ... < left_K,
+right_1 < right_2 < ... < right_K.
+```
+
+The endpoint inequalities are strict because a shared endpoint tile would
+violate the assumed tile-disjointness. Therefore this route family satisfies
+the proper-interval hypothesis, and its weighted Hall obligation reduces to
+the consecutive-block inequalities of the lemma above.
+
+This criterion isolates the remaining geometric work instead of hiding it in
+the word “interval”: one must prove that the candidate region is filled from
+the two endpoints, and separately check that a capacity-two passage or a turn
+does not make two connectors share a tile. If either property fails, the full
+weighted Hall test is still required.
+
 ## Scope and controls
 
 The result is a general combinatorial lemma, conditional on a geometric
