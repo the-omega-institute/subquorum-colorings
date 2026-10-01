@@ -126,6 +126,24 @@ def unguarded_middle_controls():
                 scope='Finite necessary-state classification; no global matching realizability inferred.')
 
 
+def unguarded_transition_controls():
+    states = local_controls()['neutral_states']
+    transitions = {}
+    for label in ('PP/BT', 'TB/BT'):
+        state = next(item for item in states if item['labels'] == label)
+        transitions[label] = sorted(
+            candidate['labels'] + ('/R' if candidate['exit_corners'] == [3]
+                                   else '/L' if candidate['exit_corners'] == [2] else '')
+            for candidate in states if compatible(state, candidate))
+    assert transitions['PP/BT'] == ['PP/BP/R', 'PP/BT']
+    assert transitions['TB/BT'] == [
+        'BT/PB/L', 'BT/TB', 'PB/PT', 'PP/BP/R', 'PP/BT',
+        'PP/PB/L', 'PP/PP', 'TB/BP/R', 'TB/BT']
+    return dict(successors=transitions,
+                interpretation='PP/BT is a pure delay state; TB/BT can turn or continue.',
+                scope='Finite necessary-state transitions; no global matching realizability inferred.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -236,6 +254,7 @@ def main():
     report = dict(status='ALL_CHECKS_PASSED', local_bound=local_bound_controls(),
                   certificate_uniqueness=certificate_controls(), neutral_gaps=neutral_gap_controls(),
                   unguarded_middle=unguarded_middle_controls(),
+                  unguarded_transitions=unguarded_transition_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]
