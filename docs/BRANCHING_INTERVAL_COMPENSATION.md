@@ -183,6 +183,13 @@ deficiency is exactly zero in all four cases. The coordinate remainder is still
 kept in the ledger; zero allocation deficiency does not by itself assert that
 the remainder is nonpositive for an arbitrary ambient configuration.
 
+The same four constructions are also checked after one and then all available
+internal square matching flips. These flips create capacity-two passages and
+can change residual route membership, but preserve the tile charges and the
+terminal-leaf incidence. The verifier still finds `delta=0` and the same `q`
+for every flipped case. Thus the allocation argument uses region ownership,
+not the number of residual visits through a passage.
+
 ## 4. A neutral band need not generate a P-pressure successor
 
 Here is a feasible 6-by-14 example outside Lemma 1. Rows and columns start

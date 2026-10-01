@@ -280,8 +280,20 @@ def main():
             first_terminal += branches
         allocation = verify_interval_allocation(windows, (2,) * first_terminal)
         assert allocation['doubled_deficiency'] == 0
+        flipped_allocations = []
+        for limit in (1, configuration[0]*configuration[1]):
+            changed, swaps = flip_internal_squares(configuration, limit)
+            assert swaps > 0
+            flipped_result = symmetry_controls(changed, regions, len(branch_counts), source_tiles)
+            assert flipped_result['q'] == result['q']
+            assert flipped_result['max_capacity'] == 2
+            flipped_allocation = verify_interval_allocation(windows, (2,) * first_terminal)
+            assert flipped_allocation['doubled_deficiency'] == 0
+            flipped_allocations.append(dict(swaps=swaps,
+                                            allocation=flipped_allocation))
         multiple.append(dict(branch_counts=branch_counts,
-                             interval_allocation=allocation, **result))
+                             interval_allocation=allocation,
+                             capacity_two_flips=flipped_allocations, **result))
         images += 8
     obstacle = mixed_neutral_obstacle()
     witness = witness_record('Neutral band without a P-pressure successor', obstacle,

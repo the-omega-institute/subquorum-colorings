@@ -1999,6 +1999,54 @@
         "disjoint_obstruction_intervals": [],
         "obstruction_sources": []
       },
+      "capacity_two_flips": [
+        {
+          "swaps": 1,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 4,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        },
+        {
+          "swaps": 8,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                1
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 4,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        }
+      ],
       "rows": 6,
       "columns": 24,
       "sources": 2,
@@ -2051,6 +2099,56 @@
         "disjoint_obstruction_intervals": [],
         "obstruction_sources": []
       },
+      "capacity_two_flips": [
+        {
+          "swaps": 1,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 4,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        },
+        {
+          "swaps": 13,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                2
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 4,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        }
+      ],
       "rows": 6,
       "columns": 32,
       "sources": 2,
@@ -2116,6 +2214,70 @@
         "disjoint_obstruction_intervals": [],
         "obstruction_sources": []
       },
+      "capacity_two_flips": [
+        {
+          "swaps": 1,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 6,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        },
+        {
+          "swaps": 27,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                1
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                5,
+                5
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 6,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        }
+      ],
       "rows": 6,
       "columns": 62,
       "sources": 3,
@@ -2211,6 +2373,86 @@
         "disjoint_obstruction_intervals": [],
         "obstruction_sources": []
       },
+      "capacity_two_flips": [
+        {
+          "swaps": 1,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                9
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 8,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        },
+        {
+          "swaps": 46,
+          "allocation": {
+            "windows": [
+              [
+                0,
+                3
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                9,
+                9
+              ]
+            ],
+            "doubled_capacities": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "doubled_deficiency": 0,
+            "doubled_max_flow": 8,
+            "disjoint_obstruction_intervals": [],
+            "obstruction_sources": []
+          }
+        }
+      ],
       "rows": 6,
       "columns": 100,
       "sources": 4,
@@ -2949,8 +3191,8 @@
     }
   },
   "sha256": {
-    "develop/check_branching_interval_compensation.py": "1b218bc75b37641d4f8c718ac28d74aac3ae5561ca97224b3755b45b14409911",
-    "docs/BRANCHING_INTERVAL_COMPENSATION.md": "2fb51d14cc356bfe12abef4d29f9e69958a88ee90a2bc8fb910988d1ed4fa153",
+    "develop/check_branching_interval_compensation.py": "8aaa1ba4023df3d22c86416d9911d5f37ee1d05ea782d99df3485c4169844384",
+    "docs/BRANCHING_INTERVAL_COMPENSATION.md": "e065f840acb9608396ff62bbf9faf049bf571c4641dbd62cbe9950fe0895ebb3",
     "develop/check_compensation_transport.py": "8cf6f30d9b3ce4646af8f6f7347af9ab2356edc888a2b989dc56e512746b5557",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
     "develop/check_interval_hall_deficiency.py": "0873b3b571c4b310eda648317ecd6e12a6666c94196c0acf358ae5435332837f",
