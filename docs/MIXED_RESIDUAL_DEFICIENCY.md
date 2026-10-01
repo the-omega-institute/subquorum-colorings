@@ -37,9 +37,11 @@ The parent exit word is
 PP/BP, BT/TB, BP/TP, PP/PB.
 ```
 
-An independently optimized, higher-cardinality feasible completion on a
-`6 x 12` rectangle has `|T|=7`, `|M|=26`, and `q=-3`. Its residual components
-are:
+The `6 x 12` rectangle has a feasible completion with `|T|=7`, `|M|=26`, and
+`q=-3`. For this fixed selected set, the checker supplies an upper-bound cover
+with 22 ordinary endpoint constraints and 4 selected-vertex occupancy
+constraints, so no completion with the same `T` can use more than 26 matching
+edges. Its residual components are:
 
 | component type | tile coordinates `(row,column)` | `e(C)` | `R(C)` | excess |
 | --- | --- | ---: | ---: | ---: |
@@ -61,8 +63,10 @@ The second word is
 PP/BT, PP/BP, BT/TB, BP/TP, PP/PB.
 ```
 
-An independently optimized, higher-cardinality feasible completion on a
-`6 x 14` rectangle has `|T|=8`, `|M|=31`, and again `q=-3`. Its components are:
+The `6 x 14` rectangle has a feasible completion with `|T|=8`, `|M|=31`, and
+again `q=-3`. For this fixed selected set, the checker supplies an upper-bound
+cover with 28 ordinary endpoint constraints and 3 selected-vertex occupancy
+constraints, proving that 31 is maximal for that `T`. Its components are:
 
 | component type | tile coordinates `(row,column)` | `e(C)` | `R(C)` | excess |
 | --- | --- | ---: | ---: | ---: |
@@ -77,7 +81,7 @@ the residual corridors without removing the negative remainder.
 
 ## What this does and does not prove
 
-These higher-cardinality completions establish a concrete obstruction to a
+These fixed-`T` maximum completions establish a concrete obstruction to a
 pure donor-budget proof: the shortest zero-budget mixed words are globally
 realizable, but their exact ledger contains three negative units outside the
 local certificate count. The right invariant is therefore a residual-demand

@@ -275,6 +275,56 @@ def realizable_obstacle_controls():
                 scope='Coordinate witnesses only; no universal claim.')
 
 
+def fixed_t_matching_upper_bound_controls():
+    covers = {
+        'width-four mixed word': dict(rows=6, columns=12,
+            vertices={(0, 0), (0, 2), (0, 4), (0, 6), (0, 8), (0, 10),
+                      (1, 1), (1, 3), (1, 5), (1, 7), (1, 9), (1, 11),
+                      (2, 0), (2, 2), (2, 8), (2, 10), (3, 1), (3, 11),
+                      (4, 0), (5, 1), (5, 5), (5, 11)},
+            selected={(3, 4), (3, 6), (4, 9), (5, 8)}),
+        'width-five mixed word': dict(rows=6, columns=14,
+            vertices={(0, 0), (0, 2), (0, 4), (0, 6), (0, 8), (0, 10), (0, 12),
+                      (1, 1), (1, 3), (1, 5), (1, 7), (1, 9), (1, 11), (1, 13),
+                      (2, 0), (2, 2), (2, 4), (2, 10), (2, 12),
+                      (3, 1), (3, 13), (4, 0), (4, 2),
+                      (5, 1), (5, 3), (5, 7), (5, 9), (5, 13)},
+            selected={(3, 6), (3, 8), (4, 11)})}
+    reports = []
+    for witness in realizable_obstacle_controls()['witnesses']:
+        rows, columns = (6, 12) if 'four' in witness['name'] else (6, 14)
+        selected = {tuple(vertex) for vertex in witness['selected']}
+        matching = [(tuple(first), tuple(second)) for first, second in witness['matching']]
+        cover = covers[witness['name']]
+        assert cover['vertices'].isdisjoint(selected)
+        assert cover['selected'] <= selected
+        assert all(1 - sum(int(abs(first[0] - second[0]) + abs(first[1] - second[1]) == 1)
+                            for second in selected) == 1
+                   for first in cover['selected'])
+        edges = []
+        for row in range(rows):
+            for column in range(columns):
+                for delta_row, delta_column in ((0, 1), (1, 0)):
+                    other = (row + delta_row, column + delta_column)
+                    vertex = (row, column)
+                    if other[0] < rows and other[1] < columns and vertex not in selected and other not in selected:
+                        edges.append((vertex, other))
+        def covered(edge):
+            return (set(edge) & cover['vertices']) or any(
+                any(abs(t[0] - endpoint[0]) + abs(t[1] - endpoint[1]) == 1 for endpoint in edge)
+                for t in cover['selected'])
+        assert all(covered(edge) for edge in edges)
+        assert len(matching) == len(cover['vertices']) + len(cover['selected'])
+        assert all(covered(edge) for edge in matching)
+        reports.append(dict(name=witness['name'], matching_edges=len(matching),
+                            vertex_constraints=len(cover['vertices']),
+                            selected_constraints=len(cover['selected']),
+                            upper_bound=len(cover['vertices']) + len(cover['selected']),
+                            maximum_for_fixed_selected_set=True))
+    return dict(witnesses=reports,
+                interpretation='Each listed matching reaches a finite edge-cover upper bound for its fixed selected set; this is a coordinate certificate, not a variable-T theorem.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -389,6 +439,7 @@ def main():
                   first_l_predecessors=first_l_predecessor_controls(),
                   mixed_budget=mixed_budget_controls(),
                   realizable_obstacles=realizable_obstacle_controls(),
+                  fixed_t_matching_upper_bounds=fixed_t_matching_upper_bound_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]

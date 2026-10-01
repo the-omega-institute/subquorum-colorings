@@ -1165,6 +1165,27 @@
     "interpretation": "Complete finite matchings realize the listed necessary words; higher-cardinality completions have three units of negative remainder and q=-3.",
     "scope": "Coordinate witnesses only; no universal claim."
   },
+  "fixed_t_matching_upper_bounds": {
+    "witnesses": [
+      {
+        "name": "width-four mixed word",
+        "matching_edges": 26,
+        "vertex_constraints": 22,
+        "selected_constraints": 4,
+        "upper_bound": 26,
+        "maximum_for_fixed_selected_set": true
+      },
+      {
+        "name": "width-five mixed word",
+        "matching_edges": 31,
+        "vertex_constraints": 28,
+        "selected_constraints": 3,
+        "upper_bound": 31,
+        "maximum_for_fixed_selected_set": true
+      }
+    ],
+    "interpretation": "Each listed matching reaches a finite edge-cover upper bound for its fixed selected set; this is a coordinate certificate, not a variable-T theorem."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -2987,7 +3008,7 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "bb7df6ce8b6ee3feed65c425d8224aa6f1659d10493963503e3c82abf26bc8ac",
+    "develop/check_guarded_half_donors.py": "17885c4e3b2486e9fda48c03e9066e564ec3c8ca681c95f94be2b49aa68be0ac",
     "docs/GUARDED_HALF_DONORS.md": "42702417ab80b7ebbbf036481feaa6ac88525bc729f5b291a363aaf2d57192a1",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
