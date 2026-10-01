@@ -339,3 +339,11 @@ candidate donors fill the interval between their endpoints, capacitated Hall
 reduces to consecutive source blocks. The 8x6 shared-promotion witness and the
 6x20 closed mixed successor show why the tile-disjointness and exact-interval
 hypotheses must be checked rather than assumed.
+
+When endpoint properness fails but each source's admissible donors are still
+intervals in one ordered donor list, use the
+[interval-deficiency note](INTERVAL_HALL_DEFICIENCY.md). Its containment tests
+allow nested and repeated windows, compute the exact allocation shortage
+`delta`, and replace the coefficient-one conclusion by the audited ledger
+bound `q <= delta + rho(W)`. Thus a failed local Hall allocation is quantified
+without treating shared donor capacity as multiple resources.
