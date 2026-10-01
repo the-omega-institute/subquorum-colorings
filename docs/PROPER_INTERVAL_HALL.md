@@ -120,6 +120,17 @@ the two endpoints, and separately check that a capacity-two passage or a turn
 does not make two connectors share a tile. If either property fails, the full
 weighted Hall test is still required.
 
+The existing controls show both failure modes concretely. In the `8 x 6`
+bent-path witness, deleting one internal matching edge permits promotions at
+`(2,3)` or `(3,3)`, but the two candidates are adjacent corners of the same
+tile. The tile has residual capacity two, yet both promotions cannot be used
+together; counting visits or raw capacity would therefore create a false
+second donor. In the `6 x 20` closed mixed-successor witness, the child interval
+itself has zero charge while the usable negative tiles lie outside it. Its
+compensation is consequently not the full interval between the child's exits.
+These are obstructions to the geometric hypotheses, not counterexamples to
+the weighted Hall lemma.
+
 ## Scope and controls
 
 The result is a general combinatorial lemma, conditional on a geometric
