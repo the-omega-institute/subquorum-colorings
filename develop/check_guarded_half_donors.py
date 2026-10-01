@@ -103,6 +103,29 @@ def neutral_gap_controls():
                 scope='Necessary pressure/label compatibility only; not full matching realizability.')
 
 
+def unguarded_middle_controls():
+    states = local_controls()['neutral_states']
+    transitions = [[second for second, candidate in enumerate(states)
+                    if compatible(first, candidate)] for first in states]
+    triples = []
+    for first, middle, last in itertools.product(range(len(states)), repeat=3):
+        if states[first]['exit_corners'] != [3] or states[last]['exit_corners'] != [3]:
+            continue
+        if states[middle]['exit_corners']:
+            continue
+        if middle not in transitions[first] or last not in transitions[middle]:
+            continue
+        labels = states[middle]['labels']
+        if labels not in ('PP/BT', 'TB/BT'):
+            continue
+        triples.append(dict(labels=labels, left=states[first]['labels'],
+                            right=states[last]['labels']))
+    assert {item['labels'] for item in triples} == {'PP/BT', 'TB/BT'}
+    return dict(width_one_unguarded_middle_states=sorted({item['labels'] for item in triples}),
+                compatible_triples=triples,
+                scope='Finite necessary-state classification; no global matching realizability inferred.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -212,6 +235,7 @@ def main():
     args = parser.parse_args()
     report = dict(status='ALL_CHECKS_PASSED', local_bound=local_bound_controls(),
                   certificate_uniqueness=certificate_controls(), neutral_gaps=neutral_gap_controls(),
+                  unguarded_middle=unguarded_middle_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]

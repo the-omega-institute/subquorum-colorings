@@ -282,6 +282,35 @@
     ],
     "scope": "Necessary pressure/label compatibility only; not full matching realizability."
   },
+  "unguarded_middle": {
+    "width_one_unguarded_middle_states": [
+      "PP/BT",
+      "TB/BT"
+    ],
+    "compatible_triples": [
+      {
+        "labels": "TB/BT",
+        "left": "TB/BP",
+        "right": "TB/BP"
+      },
+      {
+        "labels": "TB/BT",
+        "left": "TB/BP",
+        "right": "PP/BP"
+      },
+      {
+        "labels": "PP/BT",
+        "left": "TB/BP",
+        "right": "PP/BP"
+      },
+      {
+        "labels": "PP/BT",
+        "left": "PP/BP",
+        "right": "PP/BP"
+      }
+    ],
+    "scope": "Finite necessary-state classification; no global matching realizability inferred."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -2104,8 +2133,8 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "e0d2e7f28cd8c59175d9d90de76e1cfaf2a6add4b176b13366c4a55a49298a03",
-    "docs/GUARDED_HALF_DONORS.md": "42f21130eada654fa13977a4dceaf473a500679b48763babfe5c7138d7b2a245",
+    "develop/check_guarded_half_donors.py": "e52257943063d4b51cbd10ea924b223446c7d535dfc3f3ada3f8dc79c8197029",
+    "docs/GUARDED_HALF_DONORS.md": "8878bf0e8d7162f1db2bb910370aa7a2c1679a8b789e46f1e0e92e416abc0a1d",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
     "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",

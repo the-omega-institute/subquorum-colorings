@@ -71,7 +71,13 @@ In the 6x20 witness of `MIXED_NEUTRAL_DONORS.md`, the parent exit word is R,R,L,
 
 The disjoint partition has charges +1 (source), 0 (parent), 0 (central child), -1 and -1 (outside donors), and 0 (remainder). Thus q=-1 exactly. Two distinct half budgets suffice to pay the source even though its sole R,L child gives nothing. The source's admissible set can explicitly be these two neighboring same-direction-gap tiles; there is only one source, so Hall holds here. This is a genuine extension beyond the previous R,L-child forest, but it does not establish the necessary allocation for overlapping roots or bent paths.
 
-## 6. Verification and next proof obligation
+## 6. The unguarded same-direction classification
+
+The local neutral-state table gives a complete obstruction at a width-one R,R gap. If the entry guard above Q's upper-left corner is blank, the only compatible middle labels are `PP/BT` and `TB/BT`. The first is deficient with (t=1,p=2,s=0), hence (2\rho=0); the second is saturated and also has charge zero. Reflection gives `PP/TB` and `BT/TB` for L,L. Thus a width-one unguarded same-direction gap supplies no local negative charge at all. A finite compatibility enumeration through width 7 shows the same two states are the only unguarded one-tile middle states; wider intervals may contain these states mixed with neutral `PP/PP`, `PB/PT` or `BP/TP` tiles. This finite result is a discovery check, not a global realizability claim.
+
+Consequently the next geometric statement cannot be another local donor lemma of the same form. It must show that an unguarded `PP/BT` or `TB/BT` gap forces either a later guarded donor, a negative aggregate over the whole same-direction interval, or a transfer across a bend. The existing zero-charge counterexample shows that any such statement must use neighboring exits or residual routing, rather than Q alone.
+
+## 7. Verification and next proof obligation
 
 Run `python3 develop/check_guarded_half_donors.py --output output/guarded-half-donors-controls.json`. It checks the relaxed local bound, all twelve certificate cap patterns and guard exclusions, direct full-grid sharpness/obstacle witnesses under eight symmetries, guarded recognition of the 6x20 outside donors, and the exact disjoint ledger. It records full coordinates, component charges and input hashes. The arguments above establish the general lemmas; finite controls do not replace them. No new Lean formalization or validation is claimed.
 
