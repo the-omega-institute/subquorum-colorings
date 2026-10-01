@@ -332,3 +332,10 @@ disjoint regions, while retaining the corner constraints at bends. General
 bent paths without this filled frame and overlapping candidate bands remain
 unresolved. Any extension must preserve (1) or give an equally explicit
 injective resource allocation.
+
+The [proper-interval Hall note](PROPER_INTERVAL_HALL.md) gives one conditional
+route forward: for tile-disjoint, noncrossing single-bend connectors whose
+candidate donors fill the interval between their endpoints, capacitated Hall
+reduces to consecutive source blocks. The 8x6 shared-promotion witness and the
+6x20 closed mixed successor show why the tile-disjointness and exact-interval
+hypotheses must be checked rather than assumed.
