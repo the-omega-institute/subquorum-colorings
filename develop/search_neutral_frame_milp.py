@@ -145,6 +145,9 @@ def solve(columns):
         for index, coefficient in coefficients.items():
             matrix[row_number, index] = coefficient
     objective = np.zeros(variable_count)
+    for tile_number in range(tile_count):
+        for state, item in enumerate(states):
+            objective[state_index[tile_number, state]] = -sum(item[1])
     objective[edge_offset:] = -1
     result = milp(objective, integrality=np.ones(variable_count),
                   bounds=Bounds(np.zeros(variable_count), np.ones(variable_count)),
@@ -172,6 +175,7 @@ def solve(columns):
             matching.append((first, second))
 
     objective_value = direct_check(rows, columns, selected, matching)
+    assert abs(-result.fun - objective_value) < 1e-6
     route = canonical(rows, columns, *encode(rows, columns, selected, matching))
     _, components = graph_record(rows, columns, selected, matching)
     for (tile_row, tile_column), wanted in parent.items():

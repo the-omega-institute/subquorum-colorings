@@ -162,12 +162,18 @@ locally feasible state, while the displayed parent labels, matching endpoint
 incidence, and selected-vertex occupancy are imposed exactly. The resulting
 solutions are then rechecked by `direct_check` and `canonical`.
 
-For the width-four word on `6 x 12`, the MILP optimum is `|T|+|M|=34`, hence
-`q=-2`; its residual component excesses are `[-1,-1,0,0,0,0]`. For the
-width-five word on `6 x 14`, the optimum is `38`, hence `q=-4`, with four
-negative unit components and the rest zero. Thus these two neutral-frame
-models do not admit a `q=0` completion, even though the parent-label-only
-relaxation does.
+For the width-four word on `6 x 12`, the corrected MILP optimum is
+`|T|+|M|=35`, hence `q=-1`; its residual component excesses are
+`[-1,0,0,0,0,0]`. For the width-five word on `6 x 14`, the corrected optimum
+is `39`, hence `q=-3`, with three negative unit components and the rest zero.
+Thus these two neutral-frame models do not admit a `q=0` completion, even
+though the parent-label-only relaxation does.
+
+**Correction.** The first exploratory version of the optional script minimized
+only `|M|` and reported the superseded values `q=-2` and `q=-4`. The objective
+now includes both selected vertices and matching edges, and the archived
+output has been regenerated. The earlier values were never used by the
+required CI controls or a manuscript claim.
 
 This is finite discovery evidence, not a general neutral-frame theorem. The
 model fixes two small parent words and treats the parent row more freely than
