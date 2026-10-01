@@ -166,6 +166,25 @@ once by the flow. The result is coefficient one for this covered class; it
 does not assert that arbitrary bends have proper windows or nonpositive
 remainder.
 
+## Zero-capacity holes
+
+The exact-interval clause has a harmless relaxation. Let `I_i` be the proper
+interval supplied by the connector endpoints, and let the actual admissible
+set `N_i` omit some regions of `I_i`. If every omitted region has capacity
+zero, then
+
+```text
+sum(c_j for D_j in union(N_i for i in X))
+= sum(c_j for D_j in union(I_i for i in X))
+```
+
+for every source subset `X`. The proper-interval Hall reduction and the
+single-bend compensation theorem therefore remain valid. A capacity-two
+passage may skip zero-capacity tiles without invalidating the argument; what
+is forbidden is skipping a positive-capacity region or using a shared
+positive-capacity tile twice. This is the first relaxed condition to test for
+occupied bands whose geometric corridor contains neutral tiles.
+
 ## Scope and controls
 
 The result is a general combinatorial lemma, conditional on a geometric
