@@ -130,7 +130,8 @@ blank labels. The residual excesses are
 There is only one negative component, on tiles
 `(0,1),(0,2),(0,3),(0,4),(0,5),(1,1),(1,4),(1,5),(2,4)`.
 It has 10 residual edges and capacity 11. All other residual components have
-zero excess. Thus even a two-unit parent-word remainder floor is false.
+zero excess. Thus a two-unit parent-word remainder floor is false; the
+possibility of `q=0` remains open.
 
 ## What this does and does not prove
 
