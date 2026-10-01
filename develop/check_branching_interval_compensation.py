@@ -8,6 +8,7 @@ from pathlib import Path
 
 from check_compensation_transport import flip_internal_squares
 from check_cross_component_compensation import band_ledger, encode, witness_record
+from check_interval_hall_deficiency import verify as verify_interval_allocation
 from check_pressure_bands import branching_band, local_controls
 from check_residual_corridors import corridor, direct_check, graph_record, transformed
 from verify_grid_five_sixths import canonical
@@ -272,7 +273,15 @@ def main():
         result = symmetry_controls(configuration, regions, len(branch_counts), source_tiles)
         assert result['terminal_bands'] == sum(branch_counts)
         assert result['remainder_charge_twice'] == -24*(len(branch_counts)-1)
-        multiple.append(dict(branch_counts=branch_counts, **result))
+        windows = []
+        first_terminal = 0
+        for branches in branch_counts:
+            windows.append((first_terminal, first_terminal + branches - 1))
+            first_terminal += branches
+        allocation = verify_interval_allocation(windows, (2,) * first_terminal)
+        assert allocation['doubled_deficiency'] == 0
+        multiple.append(dict(branch_counts=branch_counts,
+                             interval_allocation=allocation, **result))
         images += 8
     obstacle = mixed_neutral_obstacle()
     witness = witness_record('Neutral band without a P-pressure successor', obstacle,
@@ -296,6 +305,7 @@ def main():
     sources = [Path(__file__), root/'docs/BRANCHING_INTERVAL_COMPENSATION.md']
     sources.extend(Path(__file__).with_name(name) for name in (
         'check_compensation_transport.py', 'check_cross_component_compensation.py',
+        'check_interval_hall_deficiency.py',
         'check_pressure_bands.py', 'check_residual_corridors.py',
         'verify_grid_five_sixths.py', 'verify_grid_short_path_compensation.py'))
     report = dict(status='ALL_CHECKS_PASSED', word_controls=words,

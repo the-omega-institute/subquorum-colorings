@@ -1979,6 +1979,26 @@
         1,
         1
       ],
+      "interval_allocation": {
+        "windows": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "doubled_capacities": [
+          2,
+          2
+        ],
+        "doubled_deficiency": 0,
+        "doubled_max_flow": 4,
+        "disjoint_obstruction_intervals": [],
+        "obstruction_sources": []
+      },
       "rows": 6,
       "columns": 24,
       "sources": 2,
@@ -2010,6 +2030,27 @@
         1,
         2
       ],
+      "interval_allocation": {
+        "windows": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "doubled_capacities": [
+          2,
+          2,
+          2
+        ],
+        "doubled_deficiency": 0,
+        "doubled_max_flow": 4,
+        "disjoint_obstruction_intervals": [],
+        "obstruction_sources": []
+      },
       "rows": 6,
       "columns": 32,
       "sources": 2,
@@ -2047,6 +2088,34 @@
         3,
         1
       ],
+      "interval_allocation": {
+        "windows": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "doubled_capacities": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "doubled_deficiency": 0,
+        "doubled_max_flow": 6,
+        "disjoint_obstruction_intervals": [],
+        "obstruction_sources": []
+      },
       "rows": 6,
       "columns": 62,
       "sources": 3,
@@ -2106,6 +2175,42 @@
         3,
         1
       ],
+      "interval_allocation": {
+        "windows": [
+          [
+            0,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "doubled_capacities": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "doubled_deficiency": 0,
+        "doubled_max_flow": 8,
+        "disjoint_obstruction_intervals": [],
+        "obstruction_sources": []
+      },
       "rows": 6,
       "columns": 100,
       "sources": 4,
@@ -2844,10 +2949,11 @@
     }
   },
   "sha256": {
-    "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
+    "develop/check_branching_interval_compensation.py": "1b218bc75b37641d4f8c718ac28d74aac3ae5561ca97224b3755b45b14409911",
     "docs/BRANCHING_INTERVAL_COMPENSATION.md": "2fb51d14cc356bfe12abef4d29f9e69958a88ee90a2bc8fb910988d1ed4fa153",
     "develop/check_compensation_transport.py": "8cf6f30d9b3ce4646af8f6f7347af9ab2356edc888a2b989dc56e512746b5557",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
+    "develop/check_interval_hall_deficiency.py": "0873b3b571c4b310eda648317ecd6e12a6666c94196c0acf358ae5435332837f",
     "develop/check_pressure_bands.py": "e94e6f7c511563101df4e18d0ef1a52b5e52c278b001dde517038205a0147659",
     "develop/check_residual_corridors.py": "0997ef4291d0110ebb0b984b7fcb3457c0dc9511f294169b74871c818a903c28",
     "develop/verify_grid_five_sixths.py": "c2aa8d5fe3ef90c61ef62a82678adbc6dd67f3c357ec24f5017af17cb308078b",

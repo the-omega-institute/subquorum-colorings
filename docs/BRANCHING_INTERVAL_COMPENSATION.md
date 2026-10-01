@@ -161,6 +161,28 @@ the theorem supplies no automatic ownership or continuation. Such regions
 must not be silently inserted into this forest. In particular the hypothesis
 rho(W)<=0 must be verified, rather than inferred from the selected chains.
 
+## 3a. Allocation interpretation of the forest
+
+The cross-component ownership in Theorem 2 can be stated with the interval
+deficiency tool. Order all terminal bands from left to right, and for each
+source root let `I_i` be the interval from its first to last terminal
+descendant. Distinct roots in the construction have disjoint terminal
+intervals, and every terminal band has capacity one. Thus every donor interval
+`J` contains at least as many terminal capacity units as it contains complete
+root windows `I_i`; the containment tests of
+[the interval-deficiency note](INTERVAL_HALL_DEFICIENCY.md) hold and
+`delta=0`. Internal successor intervals may be nested arbitrarily inside
+`I_i` without changing this conclusion, because they are not additional
+source demands and each terminal is counted once.
+
+This gives a second proof of the no-reuse part of Theorem 2: the geometric
+forest establishes disjoint leaf ownership, while interval Hall supplies the
+cross-root allocation. In the existing multiple-root coordinate controls with
+branch counts `(1,1)`, `(1,2)`, `(2,3,1)` and `(4,2,3,1)`, the interval
+deficiency is exactly zero in all four cases. The coordinate remainder is still
+kept in the ledger; zero allocation deficiency does not by itself assert that
+the remainder is nonpositive for an arbitrary ambient configuration.
+
 ## 4. A neutral band need not generate a P-pressure successor
 
 Here is a feasible 6-by-14 example outside Lemma 1. Rows and columns start
