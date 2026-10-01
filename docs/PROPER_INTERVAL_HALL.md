@@ -131,6 +131,41 @@ compensation is consequently not the full interval between the child's exits.
 These are obstructions to the geometric hypotheses, not counterexamples to
 the weighted Hall lemma.
 
+## The covered-class consequence
+
+Combining the interval reduction with the weighted ledger gives the following
+complete conditional statement.
+
+**Theorem (single-bend proper-interval compensation).** Let `A_1,...,A_K` be
+pairwise tile-disjoint source regions with `rho(A_i) <= 1`. Let `C_j` be
+pairwise tile-disjoint compensation regions, disjoint from the sources, with
+capacities `c_j >= 0` and `rho(C_j) <= -c_j`. Assume the single-bend connector
+hypotheses above, so each source has a proper donor window, and assume every
+consecutive source block has donor capacity at least its cardinality. Let `N`
+be a disjoint neutral collection and `W` the remaining deficient tiles. If
+`rho(W) <= 0`, then
+
+```text
+q <= 0.
+```
+
+**Proof.** The proper-interval Hall lemma upgrades the block inequalities to
+the capacitated Hall inequalities for every source subset. Max-flow/min-cut
+therefore assigns one unit of demand to each source without spending any
+donor capacity twice. The exact disjoint tile ledger contributes at most `K`
+from the sources, at most `-sum(c_j)` from the compensation regions, zero from
+`N`, and `rho(W)` from the remainder. Taking the all-source subset in Hall
+gives `sum(c_j) >= K`, so
+
+```text
+q <= K - sum(c_j) + rho(W) <= rho(W) <= 0.
+```
+
+Every region occurs once in the ledger and every capacity is consumed at most
+once by the flow. The result is coefficient one for this covered class; it
+does not assert that arbitrary bends have proper windows or nonpositive
+remainder.
+
 ## Scope and controls
 
 The result is a general combinatorial lemma, conditional on a geometric
