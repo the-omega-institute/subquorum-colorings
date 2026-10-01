@@ -164,6 +164,27 @@ interval deficiency theorem supplies the cross-root Hall step. A branch that
 turns, merges, shares a positive-capacity terminal, or leaves a root interval
 breaks one of these hypotheses and must be measured by `delta` instead.
 
+## Two-source overlap rule
+
+For two nonempty source windows `I_1` and `I_2`, the full interval test has a
+particularly transparent form. Let `U=I_1 union I_2`, which is the interval
+from the smaller left endpoint to the larger right endpoint. Then `delta=0`
+if and only if
+
+```text
+C(I_1) >= 1,
+C(I_2) >= 1,
+C(U) >= 2.
+```
+
+The first two inequalities pay the sources individually; the third prevents
+their overlapping portions from being spent twice. If the individual tests
+pass but `C(U)<2`, the exact shortage is `delta=2-C(U)`. In particular, two
+sources that can reach only one shared unit of donor capacity have `delta=1`,
+even though each source passes its own local test. This is the smallest
+cross-component shared-terminal obstruction and is independent of residual
+route names.
+
 ## Verification scope
 
 Run `python3 develop/check_interval_hall_deficiency.py --output /tmp/interval-hall.json`.

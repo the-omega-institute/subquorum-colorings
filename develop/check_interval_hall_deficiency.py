@@ -145,6 +145,12 @@ def controls():
         record = verify(windows, capacities)
         assert record['doubled_deficiency'] == 0
         forest_models.append(record)
+    overlap_examples = {
+        'overlap_with_two_units': verify(((0, 2), (1, 3)), (2, 0, 0, 2)),
+        'shared_one_unit': verify(((0, 2), (1, 3)), (0, 2, 0, 0)),
+    }
+    assert overlap_examples['overlap_with_two_units']['doubled_deficiency'] == 0
+    assert overlap_examples['shared_one_unit']['doubled_deficiency'] == 2
     hole_subsets = 0
     for capacities in itertools.product((0, 1, 2), repeat=5):
         windows = ((0, 2), (1, 3), (2, 4))
@@ -160,6 +166,7 @@ def controls():
     return dict(status='ALL_CHECKS_PASSED', exhaustive_models=count,
                 zero_capacity_hole_subsets=hole_subsets, examples=examples,
                 laminar_forest_models=forest_models,
+                overlap_examples=overlap_examples,
                 scope='Interval incidence and allocation only; no grid feasibility claim.',
                 script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
 

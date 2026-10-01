@@ -259,6 +259,60 @@
       "obstruction_sources": []
     }
   ],
+  "overlap_examples": {
+    "overlap_with_two_units": {
+      "windows": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "doubled_capacities": [
+        2,
+        0,
+        0,
+        2
+      ],
+      "doubled_deficiency": 0,
+      "doubled_max_flow": 4,
+      "disjoint_obstruction_intervals": [],
+      "obstruction_sources": []
+    },
+    "shared_one_unit": {
+      "windows": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "doubled_capacities": [
+        0,
+        2,
+        0,
+        0
+      ],
+      "doubled_deficiency": 2,
+      "doubled_max_flow": 2,
+      "disjoint_obstruction_intervals": [
+        [
+          0,
+          3
+        ]
+      ],
+      "obstruction_sources": [
+        0,
+        1
+      ]
+    }
+  },
   "scope": "Interval incidence and allocation only; no grid feasibility claim.",
-  "script_sha256": "0873b3b571c4b310eda648317ecd6e12a6666c94196c0acf358ae5435332837f"
+  "script_sha256": "f4a64cd7afc4ec3b60589a64fe77ecb78403610a1d10bcbc713329761e4cd256"
 }
