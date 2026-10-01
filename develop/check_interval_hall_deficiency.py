@@ -136,6 +136,15 @@ def controls():
     assert examples['empty_windows']['doubled_deficiency'] == 4
     assert examples['closed_child_only']['doubled_deficiency'] == 2
     assert examples['closed_child_with_outer_donors']['doubled_deficiency'] == 0
+    forest_models = []
+    for windows, capacities in (
+            (((0, 1), (3, 5), (7, 9)), (1, 1, 0, 1, 1, 1, 0, 1, 1, 1)),
+            (((0, 3), (5, 6)), (1, 1, 0, 0, 1, 2, 2)),
+            (((1, 2), (4, 7), (9, 9)), (0, 2, 2, 0, 1, 1, 0, 1, 0, 2)),
+    ):
+        record = verify(windows, capacities)
+        assert record['doubled_deficiency'] == 0
+        forest_models.append(record)
     hole_subsets = 0
     for capacities in itertools.product((0, 1, 2), repeat=5):
         windows = ((0, 2), (1, 3), (2, 4))
@@ -150,6 +159,7 @@ def controls():
             hole_subsets += 1
     return dict(status='ALL_CHECKS_PASSED', exhaustive_models=count,
                 zero_capacity_hole_subsets=hole_subsets, examples=examples,
+                laminar_forest_models=forest_models,
                 scope='Interval incidence and allocation only; no grid feasibility claim.',
                 script_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest())
 

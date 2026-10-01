@@ -139,6 +139,31 @@ those holes preserves every Hall union capacity. The same theorems apply to
 the filled intervals. Arbitrary positive-capacity holes need not be intervals
 and remain outside this reduction.
 
+## Laminar forest corollary
+
+The shrinking-band forest is a direct sufficient condition for `delta=0`.
+Index terminal bands on one ordered donor row. For each source root `A_i`, let
+`I_i` be the interval from its leftmost to rightmost terminal descendant, and
+assume:
+
+1. terminal descendants of different roots are tile-disjoint and their
+   intervals are disjoint;
+2. each terminal has a nonnegative capacity, and the total capacity below
+   every root is at least one; and
+3. all internal successor intervals stay inside their root interval and are
+   used only to identify descendants, not as additional source demands.
+
+For any donor interval `J`, the roots with `I_i` contained in `J` have disjoint
+terminal descendants. Their total terminal capacity is at least their number,
+and all those terminals lie in `J`. Hence `n(J) <= C(J)`. Theorem 1 gives
+`delta=0`, regardless of how deeply the internal successor intervals nest.
+
+This is the allocation form of the existing branching compensation theorem:
+the geometric forest proof supplies the disjoint leaf ownership, while the
+interval deficiency theorem supplies the cross-root Hall step. A branch that
+turns, merges, shares a positive-capacity terminal, or leaves a root interval
+breaks one of these hypotheses and must be measured by `delta` instead.
+
 ## Verification scope
 
 Run `python3 develop/check_interval_hall_deficiency.py --output /tmp/interval-hall.json`.
