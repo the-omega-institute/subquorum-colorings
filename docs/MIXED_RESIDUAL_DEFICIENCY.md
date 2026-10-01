@@ -109,18 +109,41 @@ with only two units of negative remainder, so the three-unit observation from
 the earlier two coordinate choices is not a lower bound at the parent-word
 level.
 
+## Near-saturated width-four word
+
+The same parent word admits a still closer `6 x 12` completion with
+
+```text
+T = {(0,11),(2,5),(3,4),(3,6),(4,3),(4,5),(5,4)}.
+```
+
+The archived matching has 28 edges, giving `q=-1`. Its fixed-`T` certificate
+uses 24 ordinary endpoint constraints, 3 selected-vertex occupancy constraints,
+and the one remaining edge `(5,5)--(5,6)` at capacity one. Every admissible edge
+is covered, so 28 is an upper bound for that selected set with the prescribed
+blank labels. The residual excesses are
+
+```text
+[-1,0,0,0,0,0,0].
+```
+
+There is only one negative component, on tiles
+`(0,1),(0,2),(0,3),(0,4),(0,5),(1,1),(1,4),(1,5),(2,4)`.
+It has 10 residual edges and capacity 11. All other residual components have
+zero excess. Thus even a two-unit parent-word remainder floor is false.
+
 ## What this does and does not prove
 
 These fixed-`T` maximum completions establish a concrete obstruction to a
 pure donor-budget proof: the shortest zero-budget mixed words are globally
-realizable, but their exact ledger can contain only two negative units outside
+realizable, but their exact ledger can contain only one negative unit outside
 the local certificate count. The right invariant is therefore a residual-demand
 quantity, not simply the number of guarded tiles or the parent word. A plausible
 future aggregate statement must use the surrounding boundary placement and
 turn-side capacity deficits, then prove that its assignments are disjoint under
 bends and capacity-two passages.
 
-The coordinate witnesses do not prove that every mixed interval has two units
+The coordinate witnesses do not prove that every mixed interval has one unit
 of negative excess, nor that the same decomposition survives arbitrary
 boundary placement, overlapping sources, or repeated capacity-two visits. They
 also do not produce a new Lean theorem. The general obligation remains to show

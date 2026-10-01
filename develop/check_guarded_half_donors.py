@@ -273,6 +273,23 @@ def realizable_obstacle_controls():
                        ((4, 11), (5, 11)), ((5, 3), (5, 4)),
                        ((5, 6), (5, 7))], expected_q=-2,
              parent_word=['PP/BP', 'BT/TB', 'BP/TP', 'PP/PB']),
+        dict(name='width-four near-saturated mixed word', rows=6, columns=12,
+             selected={(0, 11), (2, 5), (3, 4), (3, 6), (4, 3), (4, 5), (5, 4)},
+             matching=[((0, 0), (0, 1)), ((0, 2), (1, 2)),
+                       ((0, 3), (0, 4)), ((0, 5), (0, 6)),
+                       ((0, 7), (0, 8)), ((0, 9), (0, 10)),
+                       ((1, 0), (1, 1)), ((1, 3), (2, 3)),
+                       ((1, 4), (1, 5)), ((1, 6), (1, 7)),
+                       ((1, 8), (2, 8)), ((1, 9), (2, 9)),
+                       ((1, 10), (2, 10)), ((2, 0), (3, 0)),
+                       ((2, 1), (3, 1)), ((2, 2), (3, 2)),
+                       ((2, 7), (3, 7)), ((2, 11), (3, 11)),
+                       ((3, 8), (4, 8)), ((3, 9), (4, 9)),
+                       ((4, 0), (5, 0)), ((4, 1), (4, 2)),
+                       ((4, 7), (5, 7)), ((4, 10), (4, 11)),
+                       ((5, 1), (5, 2)), ((5, 5), (5, 6)),
+                       ((5, 8), (5, 9)), ((5, 10), (5, 11))], expected_q=-1,
+             parent_word=['PP/BP', 'BT/TB', 'BP/TP', 'PP/PB']),
     ]
     reports = []
     for witness in witnesses:
@@ -314,7 +331,17 @@ def fixed_t_matching_upper_bound_controls():
                       (3, 1), (4, 0), (4, 2), (4, 4), (4, 11),
                       (5, 1), (5, 3), (5, 5)},
             selected={(3, 6), (4, 9), (5, 8)},
-            forbidden={(2, 4), (2, 6), (3, 3), (3, 5), (3, 10)})}
+            forbidden={(2, 4), (2, 6), (3, 3), (3, 5), (3, 10)}),
+        'width-four near-saturated mixed word': dict(rows=6, columns=12,
+            vertices={(0, 0), (0, 2), (0, 4), (0, 6), (0, 8),
+                      (1, 1), (1, 3), (1, 5), (1, 7), (1, 9),
+                      (2, 0), (2, 2), (2, 8), (2, 10),
+                      (3, 1), (3, 9), (3, 11),
+                      (4, 0), (4, 8), (4, 10),
+                      (5, 1), (5, 7), (5, 9), (5, 11)},
+            selected={(0, 11), (3, 6), (4, 3)},
+            forbidden={(2, 4), (2, 6), (3, 3), (3, 5), (3, 10)},
+            free_edges={frozenset(((5, 5), (5, 6)))})}
     reports = []
     for witness in realizable_obstacle_controls()['witnesses']:
         rows, columns = (6, 12) if 'four' in witness['name'] else (6, 14)
@@ -335,16 +362,19 @@ def fixed_t_matching_upper_bound_controls():
                     if other[0] < rows and other[1] < columns and vertex not in selected and other not in selected:
                         edges.append((vertex, other))
         def covered(edge):
-            return (set(edge) & cover.get('forbidden', set())) or (set(edge) & cover['vertices']) or any(
+            return frozenset(edge) in cover.get('free_edges', set()) or (set(edge) & cover.get('forbidden', set())) or (set(edge) & cover['vertices']) or any(
                 any(abs(t[0] - endpoint[0]) + abs(t[1] - endpoint[1]) == 1 for endpoint in edge)
                 for t in cover['selected'])
         assert all(covered(edge) for edge in edges)
-        assert len(matching) == len(cover['vertices']) + len(cover['selected'])
+        cover_capacity = (len(cover['vertices']) + len(cover['selected'])
+                          + len(cover.get('free_edges', set())))
+        assert len(matching) == cover_capacity
         assert all(covered(edge) for edge in matching)
         reports.append(dict(name=witness['name'], matching_edges=len(matching),
                             vertex_constraints=len(cover['vertices']),
                             selected_constraints=len(cover['selected']),
-                            upper_bound=len(cover['vertices']) + len(cover['selected']),
+                            free_edge_constraints=len(cover.get('free_edges', set())),
+                            upper_bound=cover_capacity,
                             maximum_for_fixed_selected_set=True))
     return dict(witnesses=reports,
                 interpretation='Each listed matching reaches a finite edge-cover upper bound for its fixed selected set; this is a coordinate certificate, not a variable-T theorem.')
