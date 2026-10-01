@@ -92,6 +92,12 @@ signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
 by Sahbi; the draft makes no historical priority claim about that work.
 
+The guarded-donor controls also classify the remaining width-one same-direction
+obstruction: an unguarded R,R middle state is necessarily `PP/BT` or `TB/BT`,
+both of charge zero (with the reflected L,L states `PP/TB` and `BT/TB`). Any
+further compensation argument must therefore use a wider interval, a bend, or
+residual routing rather than another one-tile local bound.
+
 ## Contents
 
 - `manuscript/paper.tex`: research draft, proofs and tree recurrence appendix.
