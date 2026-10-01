@@ -105,6 +105,14 @@ source blocks. The properness hypothesis excludes nested or returning windows;
 the accompanying finite control records both the reduction and a shortest
 non-proper counterexample.
 
+The [interval-deficiency note](docs/INTERVAL_HALL_DEFICIENCY.md) removes that
+properness restriction at the allocation level. For arbitrary nested or
+repeated interval windows, Hall is equivalent to checking every donor interval
+`J` against the number of source windows contained in `J`. A disjoint-interval
+dynamic program computes the exact shortage `delta`; the ledger then gives
+`q <= delta + rho(W)`, while `delta=0` recovers coefficient one. The control
+compares exhaustive subsets, the dynamic program, and doubled-capacity max-flow.
+
 ## Contents
 
 - `manuscript/paper.tex`: research draft, proofs and tree recurrence appendix.

@@ -1,0 +1,126 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "exhaustive_models": 120150,
+  "zero_capacity_hole_subsets": 1944,
+  "examples": {
+    "nested_source_block_obstacle": {
+      "windows": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "doubled_capacities": [
+        2,
+        2,
+        2
+      ],
+      "doubled_deficiency": 2,
+      "doubled_max_flow": 4,
+      "disjoint_obstruction_intervals": [
+        [
+          0,
+          0
+        ]
+      ],
+      "obstruction_sources": [
+        0,
+        2
+      ]
+    },
+    "two_separated_shortages": {
+      "windows": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "doubled_capacities": [
+        2,
+        4,
+        2
+      ],
+      "doubled_deficiency": 4,
+      "doubled_max_flow": 4,
+      "disjoint_obstruction_intervals": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "obstruction_sources": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    "empty_windows": {
+      "windows": [
+        null,
+        null,
+        [
+          0,
+          1
+        ]
+      ],
+      "doubled_capacities": [
+        2,
+        2
+      ],
+      "doubled_deficiency": 4,
+      "doubled_max_flow": 2,
+      "disjoint_obstruction_intervals": [],
+      "obstruction_sources": [
+        0,
+        1
+      ]
+    },
+    "fractional_shared_donors": {
+      "windows": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "doubled_capacities": [
+        1,
+        3
+      ],
+      "doubled_deficiency": 0,
+      "doubled_max_flow": 4,
+      "disjoint_obstruction_intervals": [],
+      "obstruction_sources": []
+    }
+  },
+  "scope": "Interval incidence and allocation only; no grid feasibility claim.",
+  "script_sha256": "9a933f19df1271b2fda982d19ade8e0c13f63a28292b0a49e0623c889fb9e014"
+}
