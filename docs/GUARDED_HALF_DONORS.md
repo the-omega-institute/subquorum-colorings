@@ -73,6 +73,15 @@ The disjoint partition has charges +1 (source), 0 (parent), 0 (central child), -
 
 ## 6. The unguarded same-direction classification
 
+The adjacent-exit table is also restrictive. For an unguarded R,R middle tile, the necessary local possibilities are:
+
+    left R   middle   right R
+    PP/BP    PP/BT    PP/BP or TB/BP
+    TB/BP    PP/BT    PP/BP or TB/BP
+    TB/BP    TB/BT    PP/BP or TB/BP
+
+These are local label/compatibility conditions only; they do not assert global matching realizability. Reflection gives the corresponding L,L table.
+
 The local neutral-state table gives a complete obstruction at a width-one R,R gap. If the entry guard above Q's upper-left corner is blank, the only compatible middle labels are `PP/BT` and `TB/BT`. The first is deficient with (t=1,p=2,s=0), hence (2\rho=0); the second is saturated and also has charge zero. Reflection gives `PP/TB` and `BT/TB` for L,L. Thus a width-one unguarded same-direction gap supplies no local negative charge at all. A finite compatibility enumeration through width 7 shows the same two states are the only unguarded one-tile middle states; wider intervals may contain these states mixed with neutral `PP/PP`, `PB/PT` or `BP/TP` tiles. This finite result is a discovery check, not a global realizability claim.
 
 Consequently the next geometric statement cannot be another local donor lemma of the same form. It must show that an unguarded `PP/BT` or `TB/BT` gap forces either a later guarded donor, a negative aggregate over the whole same-direction interval, or a transfer across a bend. The existing zero-charge counterexample shows that any such statement must use neighboring exits or residual routing, rather than Q alone.
