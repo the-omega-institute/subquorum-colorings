@@ -475,6 +475,250 @@
     "interpretation": "Known budget marks width-one/full-PP R-L donors as 2 and guarded same-direction donors as 1. Mixed intervals are unresolved.",
     "scope": "Necessary local-state automaton only; no global matching realizability inferred."
   },
+  "realizable_obstacles": {
+    "witnesses": [
+      {
+        "name": "width-four mixed word",
+        "parent_word": [
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ],
+        "objective": 12,
+        "q": -24,
+        "component_excesses": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          0,
+          0,
+          0
+        ],
+        "selected": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        "matching": [
+          [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              2,
+              8
+            ],
+            [
+              2,
+              9
+            ]
+          ],
+          [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ]
+        ]
+      },
+      {
+        "name": "width-five mixed word",
+        "parent_word": [
+          "PP/BT",
+          "PP/BP",
+          "BT/TB",
+          "BP/TP",
+          "PP/PB"
+        ],
+        "objective": 14,
+        "q": -28,
+        "component_excesses": [
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "selected": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "matching": [
+          [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              2,
+              4
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          [
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          [
+            [
+              2,
+              10
+            ],
+            [
+              2,
+              11
+            ]
+          ],
+          [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          [
+            [
+              3,
+              10
+            ],
+            [
+              4,
+              10
+            ]
+          ]
+        ]
+      }
+    ],
+    "interpretation": "Complete finite matchings realize the listed necessary words; their large negative remainder preserves q<=0.",
+    "scope": "Coordinate witnesses only; no universal claim."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -2297,8 +2541,8 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "214055f5e294491b77d42e75099e9110fad2cedaa826d718b3e1e0e64f702fc5",
-    "docs/GUARDED_HALF_DONORS.md": "e71329e0632faa277538effab1051eb029efbe53771a0e983417ce051a3ada5d",
+    "develop/check_guarded_half_donors.py": "ae0e9295fda3f2512d82b3ee07d1e349b9ab28497886ae93ddc79c99757987a2",
+    "docs/GUARDED_HALF_DONORS.md": "31c2cb97fa933c98e1e8658a43bf3abc9ed07ea45ec735714396d30019ace849",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
     "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",

@@ -218,6 +218,40 @@ def mixed_budget_controls(max_width=8):
                 scope='Necessary local-state automaton only; no global matching realizability inferred.')
 
 
+def realizable_obstacle_controls():
+    witnesses = [
+        dict(name='width-four mixed word', rows=6, columns=12,
+             selected={(2, 5), (3, 4), (3, 6), (4, 2), (4, 9), (5, 3), (5, 8)},
+             matching=[((2, 2), (2, 3)), ((2, 7), (3, 7)),
+                       ((2, 8), (2, 9)), ((3, 3), (4, 3)),
+                       ((3, 8), (4, 8))], expected_q=-24,
+             parent_word=['PP/BP', 'BT/TB', 'BP/TP', 'PP/PB']),
+        dict(name='width-five mixed word', rows=6, columns=14,
+             selected={(2, 7), (3, 3), (3, 6), (3, 8), (4, 4), (4, 11),
+                       (5, 5), (5, 10)},
+             matching=[((2, 2), (2, 3)), ((2, 4), (2, 5)),
+                       ((2, 9), (3, 9)), ((2, 10), (2, 11)),
+                       ((3, 5), (4, 5)), ((3, 10), (4, 10))], expected_q=-28,
+             parent_word=['PP/BT', 'PP/BP', 'BT/TB', 'BP/TP', 'PP/PB']),
+    ]
+    reports = []
+    for witness in witnesses:
+        configuration = (witness['rows'], witness['columns'],
+                         witness['selected'], witness['matching'])
+        objective = direct_check(*configuration)
+        assert objective == len(witness['selected'])+len(witness['matching'])
+        assert objective-witness['rows']*witness['columns']//2 == witness['expected_q']
+        canonical(*configuration[:2], *encode(*configuration))
+        graph, components = graph_record(*configuration)
+        reports.append(dict(name=witness['name'], parent_word=witness['parent_word'],
+                            objective=objective, q=witness['expected_q'],
+                            component_excesses=sorted(item['excess'] for item in components),
+                            selected=sorted(witness['selected']), matching=witness['matching']))
+    return dict(witnesses=reports,
+                interpretation='Complete finite matchings realize the listed necessary words; their large negative remainder preserves q<=0.',
+                scope='Coordinate witnesses only; no universal claim.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -331,6 +365,7 @@ def main():
                   unguarded_transitions=unguarded_transition_controls(),
                   first_l_predecessors=first_l_predecessor_controls(),
                   mixed_budget=mixed_budget_controls(),
+                  realizable_obstacles=realizable_obstacle_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]

@@ -99,6 +99,8 @@ The local neutral-state table gives a complete obstruction at a width-one R,R ga
 
 Consequently the next geometric statement cannot be another local donor lemma of the same form. It must show that an unguarded `PP/BT` or `TB/BT` gap forces either a later guarded donor, a negative aggregate over the whole same-direction interval, or a transfer across a bend. The existing zero-charge counterexample shows that any such statement must use neighboring exits or residual routing, rather than Q alone.
 
+The two shortest zero-budget words above are not merely formal automaton paths. Complete finite matchings realize them in 6x12 and 6x14 rectangles, respectively. Their exact values are q=-24 and q=-28, with all remaining components nonpositive. Thus they are genuine mixed-interval configurations, but their large negative remainder keeps the target inequality true. They show precisely what a future aggregate lemma must recover: the negative remainder that is invisible in the local donor budget.
+
 ## 8. Verification and next proof obligation
 
 Run `python3 develop/check_guarded_half_donors.py --output output/guarded-half-donors-controls.json`. It checks the relaxed local bound, all twelve certificate cap patterns and guard exclusions, direct full-grid sharpness/obstacle witnesses under eight symmetries, guarded recognition of the 6x20 outside donors, and the exact disjoint ledger. It records full coordinates, component charges and input hashes. The arguments above establish the general lemmas; finite controls do not replace them. No new Lean formalization or validation is claimed.
