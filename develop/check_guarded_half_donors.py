@@ -300,6 +300,20 @@ def realizable_obstacle_controls():
         assert objective-witness['rows']*witness['columns']//2 == witness['expected_q']
         canonical(*configuration[:2], *encode(*configuration))
         graph, components = graph_record(*configuration)
+        parent_tiles = ({(1, 1): 'PP/PB', (1, 2): 'BT/TB',
+                         (1, 3): 'BP/TP', (1, 5): 'PP/BP'}
+                        if witness['columns'] == 12 else
+                        {(1, 1): 'PP/BT', (2, 3): 'PP/BP',
+                         (1, 3): 'BT/TB', (1, 4): 'BP/TP',
+                         (1, 5): 'PP/PB'})
+        endpoints = {vertex for edge in witness['matching'] for vertex in edge}
+        for (tile_row, tile_column), expected in parent_tiles.items():
+            vertices = [(2*tile_row+row, 2*tile_column+column)
+                        for row, column in itertools.product(range(2), repeat=2)]
+            actual = ''.join('T' if vertex in witness['selected']
+                             else 'P' if vertex in endpoints else 'B'
+                             for vertex in vertices)
+            assert actual[:2]+'/'+actual[2:] == expected
         reports.append(dict(name=witness['name'], parent_word=witness['parent_word'],
                             objective=objective, q=witness['expected_q'],
                             component_excesses=sorted(item['excess'] for item in components),
