@@ -443,7 +443,8 @@ def main():
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]
-    sources = [Path(__file__), root/'docs/GUARDED_HALF_DONORS.md']
+    sources = [Path(__file__), root/'docs/GUARDED_HALF_DONORS.md',
+               root/'docs/MIXED_RESIDUAL_DEFICIENCY.md']
     sources.extend(Path(__file__).with_name(name) for name in (
         'check_branching_interval_compensation.py', 'check_cross_component_compensation.py',
         'check_mixed_neutral_donors.py', 'check_pressure_bands.py', 'check_residual_corridors.py',
