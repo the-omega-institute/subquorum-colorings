@@ -29,6 +29,19 @@ def all_subsets(size):
         yield from itertools.combinations(range(size), cardinality)
 
 
+def zero_capacity_hole_control():
+    intervals = ((0, 3), (1, 4), (2, 5))
+    capacities = (0, 0.5, 0, 1, 0, 0.5)
+    checked = 0
+    for subset in all_subsets(len(intervals)):
+        full = sum(capacities[index] for index in donor_union(intervals, subset))
+        holed = sum(capacities[index] for index in donor_union(intervals, subset)
+                    if capacities[index] > 0)
+        assert full == holed
+        checked += 1
+    return checked
+
+
 def controls():
     capacities = (0, 1, 2)
     checked = 0
@@ -67,6 +80,7 @@ def controls():
                        tuple(range(left, right + 1)))
                for left in range(3) for right in range(left, 3))
     return {'status': 'ALL_CHECKS_PASSED', 'proper_families_checked': checked,
+            'zero_capacity_hole_subsets_checked': zero_capacity_hole_control(),
             'nonproper_counterexample': counterexample}
 
 
@@ -76,7 +90,9 @@ def main():
     output.parent.mkdir(exist_ok=True)
     output.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({'status': report['status'],
-                      'proper_families_checked': report['proper_families_checked']}))
+                      'proper_families_checked': report['proper_families_checked'],
+                      'zero_capacity_hole_subsets_checked':
+                      report['zero_capacity_hole_subsets_checked']}))
 
 
 if __name__ == '__main__':
