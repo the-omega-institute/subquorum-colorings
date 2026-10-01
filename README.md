@@ -80,6 +80,13 @@ It accounts for the 6-by-14 obstacle. A new feasible 6-by-20 configuration has
 a closed two-tile successor of zero charge and negative components outside
 that interval, identifying the next obstacle to interval-only allocation.
 
+The [guarded half-donor note](docs/GUARDED_HALF_DONORS.md) proves sharp
+half-unit compensation in same-direction gaps with two explicit guards,
+and unique geometric certificates for full and half donors. Two feasible
+6-by-6 witnesses show why those guards matter. The 6-by-20 outside donors
+now have certificates; multiple-source allocation requires the stated
+weighted Hall condition and remainder control.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited

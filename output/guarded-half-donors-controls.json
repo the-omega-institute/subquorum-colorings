@@ -1,0 +1,2119 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local_bound": {
+    "states": [
+      {
+        "labels": "BB/BB",
+        "downward_saturated_attachments": 0,
+        "charge_twice": -4
+      },
+      {
+        "labels": "BB/BP",
+        "downward_saturated_attachments": 0,
+        "charge_twice": -3
+      },
+      {
+        "labels": "BB/BP",
+        "downward_saturated_attachments": 1,
+        "charge_twice": -2
+      },
+      {
+        "labels": "BB/BT",
+        "downward_saturated_attachments": 0,
+        "charge_twice": -2
+      },
+      {
+        "labels": "PB/BB",
+        "downward_saturated_attachments": 0,
+        "charge_twice": -3
+      },
+      {
+        "labels": "PB/BP",
+        "downward_saturated_attachments": 0,
+        "charge_twice": -2
+      },
+      {
+        "labels": "PB/BP",
+        "downward_saturated_attachments": 1,
+        "charge_twice": -1
+      },
+      {
+        "labels": "PB/BT",
+        "downward_saturated_attachments": 0,
+        "charge_twice": -1
+      }
+    ],
+    "scope": "Necessary local possibilities; no global realizability inferred."
+  },
+  "certificate_uniqueness": {
+    "certificates": 12,
+    "distinct_pairs": 66,
+    "rejections": {
+      "matching": 16,
+      "state": 30,
+      "T_degree": 16,
+      "saturated_parent_with_P": 4
+    },
+    "compatible_caps_rejected_by_parent_guard": [
+      [
+        [
+          "RR",
+          0
+        ],
+        [
+          "LL",
+          1
+        ]
+      ],
+      [
+        [
+          "RR",
+          1
+        ],
+        [
+          "LL",
+          2
+        ]
+      ],
+      [
+        [
+          "RR",
+          2
+        ],
+        [
+          "LL",
+          3
+        ]
+      ],
+      [
+        [
+          "RR",
+          3
+        ],
+        [
+          "LL",
+          0
+        ]
+      ]
+    ]
+  },
+  "neutral_gaps": {
+    "necessary_triples": [
+      {
+        "orientation": "L",
+        "labels": [
+          "BT/PB",
+          "BT/TB",
+          "BT/PB"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "BT/PB",
+          "BP/TP",
+          "BT/PB"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "BT/PB",
+          "BP/TP",
+          "PP/PB"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "TB/BP",
+          "TB/BT",
+          "TB/BP"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "TB/BP",
+          "TB/BT",
+          "PP/BP"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "TB/BP",
+          "PB/PT",
+          "TB/BP"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "TB/BP",
+          "PB/PT",
+          "PP/BP"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "TB/BP",
+          "PP/BT",
+          "PP/BP"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "TB/BP",
+          "PP/PP",
+          "PP/BP"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "PP/BP",
+          "PB/PT",
+          "TB/BP"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "PP/BP",
+          "PB/PT",
+          "PP/BP"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "PP/BP",
+          "PP/BT",
+          "PP/BP"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "R",
+        "labels": [
+          "PP/BP",
+          "PP/PP",
+          "PP/BP"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "BT/TB",
+          "BT/PB"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "BP/TP",
+          "BT/PB"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "BP/TP",
+          "PP/PB"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "PP/TB",
+          "BT/PB"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "PP/TB",
+          "PP/PB"
+        ],
+        "occupied_guard": false
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "PP/PP",
+          "BT/PB"
+        ],
+        "occupied_guard": true
+      },
+      {
+        "orientation": "L",
+        "labels": [
+          "PP/PB",
+          "PP/PP",
+          "PP/PB"
+        ],
+        "occupied_guard": true
+      }
+    ],
+    "scope": "Necessary pressure/label compatibility only; not full matching realizability."
+  },
+  "coordinate_controls": {
+    "symmetry_images": 32,
+    "witnesses": [
+      {
+        "name": "sharp",
+        "rows": 6,
+        "columns": 6,
+        "selected": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "matching": [
+          [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        ],
+        "objective": 8,
+        "q": -10,
+        "components": [
+          {
+            "tiles": [
+              0
+            ],
+            "edges": 0,
+            "capacity": 2,
+            "excess": -2
+          },
+          {
+            "tiles": [
+              1
+            ],
+            "edges": 0,
+            "capacity": 2,
+            "excess": -2
+          },
+          {
+            "tiles": [
+              2
+            ],
+            "edges": 0,
+            "capacity": 2,
+            "excess": -2
+          },
+          {
+            "tiles": [
+              3
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              4,
+              7
+            ],
+            "edges": 1,
+            "capacity": 3,
+            "excess": -2
+          },
+          {
+            "tiles": [
+              5
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          }
+        ],
+        "routing": {
+          "a": 0,
+          "b": 10,
+          "c": 0,
+          "f2": 0,
+          "f3": 0,
+          "h": 0,
+          "paths": [
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                0
+              ],
+              "ends": [
+                0,
+                0
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                0
+              ],
+              "ends": [
+                0,
+                0
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                1
+              ],
+              "ends": [
+                1,
+                1
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                1
+              ],
+              "ends": [
+                1,
+                1
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                2
+              ],
+              "ends": [
+                2,
+                2
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                2
+              ],
+              "ends": [
+                2,
+                2
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                3
+              ],
+              "ends": [
+                3,
+                3
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                4
+              ],
+              "ends": [
+                4,
+                4
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 1,
+              "internal": [
+                4,
+                7
+              ],
+              "ends": [
+                4,
+                7
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                5
+              ],
+              "ends": [
+                5,
+                5
+              ]
+            }
+          ]
+        },
+        "tiles": [
+          {
+            "tile": 0,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 2,
+            "degree": 0
+          },
+          {
+            "tile": 1,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 2,
+            "degree": 0
+          },
+          {
+            "tile": 2,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 2,
+            "degree": 0
+          },
+          {
+            "tile": 3,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 4,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 2,
+            "degree": 1
+          },
+          {
+            "tile": 5,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 6,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 7,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 1
+          },
+          {
+            "tile": 8,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          }
+        ],
+        "band": {
+          "tiles": [
+            7
+          ],
+          "selected": 1,
+          "blanks": 2,
+          "internal_matching_edges": 0,
+          "crossing_matching_edges": 1,
+          "saturated_attachments": 0,
+          "charge_twice": -1,
+          "capacity_sum": 1,
+          "residual_degrees": [
+            1
+          ],
+          "components": [
+            {
+              "tiles": [
+                0
+              ],
+              "edges": 0,
+              "capacity": 2,
+              "excess": -2
+            },
+            {
+              "tiles": [
+                1
+              ],
+              "edges": 0,
+              "capacity": 2,
+              "excess": -2
+            },
+            {
+              "tiles": [
+                2
+              ],
+              "edges": 0,
+              "capacity": 2,
+              "excess": -2
+            },
+            {
+              "tiles": [
+                3
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            },
+            {
+              "tiles": [
+                4,
+                7
+              ],
+              "edges": 1,
+              "capacity": 3,
+              "excess": -2
+            },
+            {
+              "tiles": [
+                5
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            }
+          ]
+        }
+      },
+      {
+        "name": "blank_guard",
+        "rows": 6,
+        "columns": 6,
+        "selected": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "matching": [
+          [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ]
+        ],
+        "objective": 15,
+        "q": -3,
+        "components": [
+          {
+            "tiles": [
+              0
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              1
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              2
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              3
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              5
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          }
+        ],
+        "routing": {
+          "a": 0,
+          "b": 3,
+          "c": 0,
+          "f2": 0,
+          "f3": 0,
+          "h": 3,
+          "paths": [
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                0
+              ],
+              "ends": [
+                0,
+                0
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                1
+              ],
+              "ends": [
+                1,
+                1
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                2
+              ],
+              "ends": [
+                2,
+                2
+              ]
+            }
+          ]
+        },
+        "tiles": [
+          {
+            "tile": 0,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 1,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 2,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 3,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 4,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 5,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 6,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 7,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 8,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          }
+        ],
+        "band": {
+          "tiles": [
+            7
+          ],
+          "selected": 2,
+          "blanks": 2,
+          "internal_matching_edges": 0,
+          "crossing_matching_edges": 0,
+          "saturated_attachments": 0,
+          "charge_twice": 0,
+          "capacity_sum": 0,
+          "residual_degrees": [
+            0
+          ],
+          "components": [
+            {
+              "tiles": [
+                0
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            },
+            {
+              "tiles": [
+                1
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            },
+            {
+              "tiles": [
+                2
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            },
+            {
+              "tiles": [
+                3
+              ],
+              "edges": 0,
+              "capacity": 0,
+              "excess": 0
+            },
+            {
+              "tiles": [
+                5
+              ],
+              "edges": 0,
+              "capacity": 0,
+              "excess": 0
+            }
+          ]
+        }
+      },
+      {
+        "name": "saturated_parent",
+        "rows": 6,
+        "columns": 6,
+        "selected": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "matching": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        ],
+        "objective": 12,
+        "q": -6,
+        "components": [
+          {
+            "tiles": [
+              0
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              2
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              4
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              6
+            ],
+            "edges": 0,
+            "capacity": 2,
+            "excess": -2
+          },
+          {
+            "tiles": [
+              8
+            ],
+            "edges": 0,
+            "capacity": 2,
+            "excess": -2
+          }
+        ],
+        "routing": {
+          "a": 0,
+          "b": 6,
+          "c": 0,
+          "f2": 0,
+          "f3": 0,
+          "h": 0,
+          "paths": [
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                0
+              ],
+              "ends": [
+                0,
+                0
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                2
+              ],
+              "ends": [
+                2,
+                2
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                6
+              ],
+              "ends": [
+                6,
+                6
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                6
+              ],
+              "ends": [
+                6,
+                6
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                8
+              ],
+              "ends": [
+                8,
+                8
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                8
+              ],
+              "ends": [
+                8,
+                8
+              ]
+            }
+          ]
+        },
+        "tiles": [
+          {
+            "tile": 0,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 1,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 2,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 3,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 4,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 2,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 5,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 6,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 2,
+            "degree": 0
+          },
+          {
+            "tile": 7,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 8,
+            "selected": 0,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 2,
+            "degree": 0
+          }
+        ],
+        "band": {
+          "tiles": [
+            4
+          ],
+          "selected": 0,
+          "blanks": 2,
+          "internal_matching_edges": 0,
+          "crossing_matching_edges": 2,
+          "saturated_attachments": 2,
+          "charge_twice": 0,
+          "capacity_sum": 0,
+          "residual_degrees": [
+            0
+          ],
+          "components": [
+            {
+              "tiles": [
+                0
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            },
+            {
+              "tiles": [
+                2
+              ],
+              "edges": 0,
+              "capacity": 1,
+              "excess": -1
+            },
+            {
+              "tiles": [
+                4
+              ],
+              "edges": 0,
+              "capacity": 0,
+              "excess": 0
+            },
+            {
+              "tiles": [
+                6
+              ],
+              "edges": 0,
+              "capacity": 2,
+              "excess": -2
+            },
+            {
+              "tiles": [
+                8
+              ],
+              "edges": 0,
+              "capacity": 2,
+              "excess": -2
+            }
+          ]
+        }
+      },
+      {
+        "name": "6x20 guarded outside donors",
+        "rows": 6,
+        "columns": 20,
+        "selected": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            19
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            2,
+            19
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            3,
+            14
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            13
+          ],
+          [
+            4,
+            17
+          ],
+          [
+            4,
+            19
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            5,
+            14
+          ],
+          [
+            5,
+            16
+          ],
+          [
+            5,
+            18
+          ]
+        ],
+        "matching": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              8
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              0,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              0,
+              12
+            ]
+          ],
+          [
+            [
+              0,
+              13
+            ],
+            [
+              0,
+              14
+            ]
+          ],
+          [
+            [
+              0,
+              15
+            ],
+            [
+              0,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              17
+            ],
+            [
+              0,
+              18
+            ]
+          ],
+          [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          [
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              1,
+              8
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          [
+            [
+              1,
+              10
+            ],
+            [
+              1,
+              11
+            ]
+          ],
+          [
+            [
+              1,
+              12
+            ],
+            [
+              1,
+              13
+            ]
+          ],
+          [
+            [
+              1,
+              14
+            ],
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              1,
+              16
+            ],
+            [
+              1,
+              17
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              18
+            ],
+            [
+              2,
+              18
+            ]
+          ],
+          [
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          [
+            [
+              2,
+              15
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          [
+            [
+              2,
+              16
+            ],
+            [
+              2,
+              17
+            ]
+          ],
+          [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          [
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          [
+            [
+              3,
+              12
+            ],
+            [
+              4,
+              12
+            ]
+          ],
+          [
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              16
+            ]
+          ]
+        ],
+        "objective": 59,
+        "q": -1,
+        "components": [
+          {
+            "tiles": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "edges": 9,
+            "capacity": 8,
+            "excess": 1
+          },
+          {
+            "tiles": [
+              11
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              12
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              13
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              16
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              17
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              18
+            ],
+            "edges": 0,
+            "capacity": 0,
+            "excess": 0
+          },
+          {
+            "tiles": [
+              22
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          },
+          {
+            "tiles": [
+              27
+            ],
+            "edges": 0,
+            "capacity": 1,
+            "excess": -1
+          }
+        ],
+        "routing": {
+          "a": 1,
+          "b": 2,
+          "c": 0,
+          "f2": 0,
+          "f3": 0,
+          "h": 12,
+          "paths": [
+            {
+              "typ": "LL",
+              "length": 9,
+              "internal": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ],
+              "ends": [
+                0,
+                9
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                22
+              ],
+              "ends": [
+                22,
+                22
+              ]
+            },
+            {
+              "typ": "HH",
+              "length": 0,
+              "internal": [
+                27
+              ],
+              "ends": [
+                27,
+                27
+              ]
+            }
+          ]
+        },
+        "tiles": [
+          {
+            "tile": 0,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 1
+          },
+          {
+            "tile": 1,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 2,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 3,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 4,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 5,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 6,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 7,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 8,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 2
+          },
+          {
+            "tile": 9,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 1
+          },
+          {
+            "tile": 10,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 11,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 12,
+            "selected": 1,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 13,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 14,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 15,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 16,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 17,
+            "selected": 1,
+            "internal": 1,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 18,
+            "selected": 0,
+            "internal": 1,
+            "attachments": 1,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 19,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 20,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 21,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 22,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 23,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 24,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 25,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 26,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 27,
+            "selected": 1,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 1,
+            "degree": 0
+          },
+          {
+            "tile": 28,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          },
+          {
+            "tile": 29,
+            "selected": 2,
+            "internal": 0,
+            "attachments": 0,
+            "capacity": 0,
+            "degree": 0
+          }
+        ]
+      }
+    ],
+    "wide_partition_charge_twice": [
+      2,
+      0,
+      0,
+      -2,
+      -2
+    ],
+    "wide_remainder_charge_twice": 0,
+    "certified_half_budget": 1
+  },
+  "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
+  "sha256": {
+    "develop/check_guarded_half_donors.py": "e0d2e7f28cd8c59175d9d90de76e1cfaf2a6add4b176b13366c4a55a49298a03",
+    "docs/GUARDED_HALF_DONORS.md": "42f21130eada654fa13977a4dceaf473a500679b48763babfe5c7138d7b2a245",
+    "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
+    "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
+    "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",
+    "develop/check_pressure_bands.py": "e94e6f7c511563101df4e18d0ef1a52b5e52c278b001dde517038205a0147659",
+    "develop/check_residual_corridors.py": "0997ef4291d0110ebb0b984b7fcb3457c0dc9511f294169b74871c818a903c28",
+    "develop/grid_three_step_patterns.py": "192e0f20fb1938c69e46bf1b7743e4a0a842105e38972e4ccdb40907db11a317",
+    "develop/search_residual_paths.py": "578c38a8e72354075b5353d911a2d468bbe8128cece9a725731428b1eddd644f",
+    "develop/verify_grid_five_sixths.py": "c2aa8d5fe3ef90c61ef62a82678adbc6dd67f3c357ec24f5017af17cb308078b",
+    "develop/verify_grid_short_path_compensation.py": "afaf0d1adb404472680e008f6a28fdcffeaab356b8bb0f78bc2322ee094027af"
+  }
+}
