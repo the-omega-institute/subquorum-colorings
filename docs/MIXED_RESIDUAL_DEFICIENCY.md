@@ -79,18 +79,48 @@ Again the total excess is `-3`: two boundary/turn-connected units and one
 additional turn-side unit. The extra `PP/BT` delay state changes the shape of
 the residual corridors without removing the negative remainder.
 
+## Refined width-four word
+
+The width-four parent word also admits a closer completion with the same
+necessary labels:
+
+```text
+PP/BP, BT/TB, BP/TP, PP/PB.
+```
+
+On a `6 x 12` rectangle, take
+
+```text
+T = {(0,4),(2,5),(3,4),(3,6),(4,9),(5,8),(5,10)}.
+```
+
+The archived matching has `|M|=27`, hence `q=-2`. A fixed-`T` cover with 24
+ordinary endpoint constraints, 3 selected-vertex occupancy constraints, and
+the displayed B vertices forbidden certifies that no matching with this `T`
+can use more than 27 edges. Its only negative residual components are
+
+| tile coordinates | `e(C)` | `R(C)` | excess |
+| --- | ---: | ---: | ---: |
+| `(0,1),(1,0),(1,1)` | 3 | 4 | -1 |
+| `(1,3),(1,4),(1,5),(2,3)` | 3 | 4 | -1 |
+
+All other residual components have zero excess. This is a genuine mixed word
+with only two units of negative remainder, so the three-unit observation from
+the earlier two coordinate choices is not a lower bound at the parent-word
+level.
+
 ## What this does and does not prove
 
 These fixed-`T` maximum completions establish a concrete obstruction to a
 pure donor-budget proof: the shortest zero-budget mixed words are globally
-realizable, but their exact ledger contains three negative units outside the
-local certificate count. The right invariant is therefore a residual-demand
-quantity, not simply the number of guarded tiles. A plausible future aggregate
-statement would assign the observed negative remainder to boundary corridors
-and turn-side capacity deficits, then prove that these assignments are
-disjoint under bends and capacity-two passages.
+realizable, but their exact ledger can contain only two negative units outside
+the local certificate count. The right invariant is therefore a residual-demand
+quantity, not simply the number of guarded tiles or the parent word. A plausible
+future aggregate statement must use the surrounding boundary placement and
+turn-side capacity deficits, then prove that its assignments are disjoint under
+bends and capacity-two passages.
 
-The coordinate witnesses do not prove that every mixed interval has three units
+The coordinate witnesses do not prove that every mixed interval has two units
 of negative excess, nor that the same decomposition survives arbitrary
 boundary placement, overlapping sources, or repeated capacity-two visits. They
 also do not produce a new Lean theorem. The general obligation remains to show

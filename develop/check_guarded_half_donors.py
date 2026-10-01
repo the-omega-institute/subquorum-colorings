@@ -256,6 +256,23 @@ def realizable_obstacle_controls():
                        ((5, 3), (5, 4)), ((5, 7), (5, 8)),
                        ((5, 12), (5, 13))], expected_q=-3,
              parent_word=['PP/BT', 'PP/BP', 'BT/TB', 'BP/TP', 'PP/PB']),
+        dict(name='width-four refined mixed word', rows=6, columns=12,
+             selected={(0, 4), (2, 5), (3, 4), (3, 6), (4, 9), (5, 8), (5, 10)},
+             matching=[((0, 0), (0, 1)), ((0, 2), (1, 2)),
+                       ((0, 6), (1, 6)), ((0, 7), (0, 8)),
+                       ((0, 9), (1, 9)), ((0, 10), (0, 11)),
+                       ((1, 0), (1, 1)), ((1, 3), (2, 3)),
+                       ((1, 4), (1, 5)), ((1, 7), (1, 8)),
+                       ((1, 10), (1, 11)), ((2, 0), (3, 0)),
+                       ((2, 1), (2, 2)), ((2, 7), (2, 8)),
+                       ((2, 9), (2, 10)), ((2, 11), (3, 11)),
+                       ((3, 1), (3, 2)), ((3, 7), (4, 7)),
+                       ((3, 8), (3, 9)), ((4, 0), (5, 0)),
+                       ((4, 1), (5, 1)), ((4, 2), (5, 2)),
+                       ((4, 3), (4, 4)), ((4, 5), (5, 5)),
+                       ((4, 11), (5, 11)), ((5, 3), (5, 4)),
+                       ((5, 6), (5, 7))], expected_q=-2,
+             parent_word=['PP/BP', 'BT/TB', 'BP/TP', 'PP/PB']),
     ]
     reports = []
     for witness in witnesses:
@@ -271,7 +288,7 @@ def realizable_obstacle_controls():
                             component_excesses=sorted(item['excess'] for item in components),
                             selected=sorted(witness['selected']), matching=witness['matching']))
     return dict(witnesses=reports,
-                interpretation='Complete finite matchings realize the listed necessary words; higher-cardinality completions have three units of negative remainder and q=-3.',
+                interpretation='Complete finite matchings realize the listed necessary words; the refined width-four witness reaches q=-2.',
                 scope='Coordinate witnesses only; no universal claim.')
 
 
@@ -289,7 +306,15 @@ def fixed_t_matching_upper_bound_controls():
                       (2, 0), (2, 2), (2, 4), (2, 10), (2, 12),
                       (3, 1), (3, 13), (4, 0), (4, 2),
                       (5, 1), (5, 3), (5, 7), (5, 9), (5, 13)},
-            selected={(3, 6), (3, 8), (4, 11)})}
+            selected={(3, 6), (3, 8), (4, 11)}),
+        'width-four refined mixed word': dict(rows=6, columns=12,
+            vertices={(0, 0), (0, 2), (0, 6), (0, 8), (0, 10),
+                      (1, 1), (1, 3), (1, 5), (1, 7), (1, 9), (1, 11),
+                      (2, 0), (2, 2), (2, 8), (2, 10), (2, 11),
+                      (3, 1), (4, 0), (4, 2), (4, 4), (4, 11),
+                      (5, 1), (5, 3), (5, 5)},
+            selected={(3, 6), (4, 9), (5, 8)},
+            forbidden={(2, 4), (2, 6), (3, 3), (3, 5), (3, 10)})}
     reports = []
     for witness in realizable_obstacle_controls()['witnesses']:
         rows, columns = (6, 12) if 'four' in witness['name'] else (6, 14)
@@ -310,7 +335,7 @@ def fixed_t_matching_upper_bound_controls():
                     if other[0] < rows and other[1] < columns and vertex not in selected and other not in selected:
                         edges.append((vertex, other))
         def covered(edge):
-            return (set(edge) & cover['vertices']) or any(
+            return (set(edge) & cover.get('forbidden', set())) or (set(edge) & cover['vertices']) or any(
                 any(abs(t[0] - endpoint[0]) + abs(t[1] - endpoint[1]) == 1 for endpoint in edge)
                 for t in cover['selected'])
         assert all(covered(edge) for edge in edges)
