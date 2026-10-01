@@ -126,6 +126,14 @@ This removes nesting and shared-candidate ownership as obstacles to the
 allocation *test*, while preserving the need to prove interval incidence,
 certified negative charges, and control of the remainder.
 
+The `6 x 20` closed-successor witness illustrates the diagnostic role of
+`delta`. If the source is assigned only its central child interval, whose
+capacity is zero, the interval model has `delta=1`. If the two actual outer
+negative tiles are included in the source's ordered window, the intervening
+tiles are zero-capacity holes and the same model has `delta=0`. The latter is
+the correct incidence description for compensation; the former measures only
+the failure of the child-only charging rule.
+
 If an actual window omits only zero-capacity donors from an interval, filling
 those holes preserves every Hall union capacity. The same theorems apply to
 the filled intervals. Arbitrary positive-capacity holes need not be intervals

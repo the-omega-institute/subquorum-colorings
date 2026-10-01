@@ -127,11 +127,15 @@ def controls():
         'two_separated_shortages': verify(((0, 0), (0, 0), (2, 2), (2, 2)), (2, 4, 2)),
         'empty_windows': verify((None, None, (0, 1)), (2, 2)),
         'fractional_shared_donors': verify(((0, 1), (0, 1)), (1, 3)),
+        'closed_child_only': verify(((2, 3),), (2, 0, 0, 0, 0, 2)),
+        'closed_child_with_outer_donors': verify(((0, 5),), (2, 0, 0, 0, 0, 2)),
     }
     assert examples['nested_source_block_obstacle']['doubled_deficiency'] == 2
     assert examples['two_separated_shortages']['doubled_deficiency'] == 4
     assert examples['fractional_shared_donors']['doubled_deficiency'] == 0
     assert examples['empty_windows']['doubled_deficiency'] == 4
+    assert examples['closed_child_only']['doubled_deficiency'] == 2
+    assert examples['closed_child_with_outer_donors']['doubled_deficiency'] == 0
     hole_subsets = 0
     for capacities in itertools.product((0, 1, 2), repeat=5):
         windows = ((0, 2), (1, 3), (2, 4))
