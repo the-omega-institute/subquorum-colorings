@@ -133,6 +133,26 @@ It has 10 residual edges and capacity 11. All other residual components have
 zero excess. Thus a two-unit parent-word remainder floor is false; the
 possibility of `q=0` remains open.
 
+## Parent-label-only `q=0` relaxation
+
+The checker also records a separate `6 x 12` feasible configuration with
+`|T|=27`, `|M|=9`, and `q=0`, while fixing the same four parent labels
+
+```text
+PP/BP, BT/TB, BP/TP, PP/PB.
+```
+
+This is deliberately a relaxation: it constrains the parent tiles and the
+matching feasibility, but does not impose the neutral pressure-band labels on
+the surrounding tiles. The displayed completion has non-neutral tiles
+`(0,0) = TB/PP` and `(2,0) = TB/TB`. Consequently it is not a counterexample
+to the mixed-interval hypotheses. It does establish a precise obstruction to
+any aggregate lemma whose hypotheses mention only the parent word: the proof
+must use the neutral bands, boundary placement, or a component-routing
+condition in an essential way. The coordinates, matching, and label checks
+are archived under `parent_label_relaxation` in
+`output/guarded-half-donors-controls.json`.
+
 ## What this does and does not prove
 
 These fixed-`T` maximum completions establish a concrete obstruction to a

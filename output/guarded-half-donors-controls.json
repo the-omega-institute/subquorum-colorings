@@ -1862,6 +1862,225 @@
     ],
     "interpretation": "Each listed matching reaches a finite edge-cover upper bound for its fixed selected set; this is a coordinate certificate, not a variable-T theorem."
   },
+  "parent_label_relaxation": {
+    "rows": 6,
+    "columns": 12,
+    "objective": 36,
+    "q": 0,
+    "parent_labels": {
+      "1,1": "PP/PB",
+      "1,2": "BT/TB",
+      "1,3": "BP/TP",
+      "1,5": "PP/BP"
+    },
+    "nonneutral_tiles": {
+      "0,0": "TB/PP",
+      "2,0": "TB/TB"
+    },
+    "selected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        11
+      ]
+    ],
+    "matching": [
+      [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          9
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      [
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          11
+        ]
+      ]
+    ],
+    "interpretation": "Parent labels alone admit q=0, but the witness violates neutral pressure-band hypotheses; it is a relaxed-model obstacle, not a mixed-interval counterexample."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -3684,7 +3903,7 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "48a4ee5308828371c6792069055b836f6850ac7ae697ccc990bed997192dbba3",
+    "develop/check_guarded_half_donors.py": "a73be356a7f4343dbcac4c7a497e0e9823e464bcb2b6a4f0b2595b303f974a18",
     "docs/GUARDED_HALF_DONORS.md": "d5204de850e7e614b27958b308f6f336d23523dea6b6ce2dfaa559070bf6d6fb",
     "docs/MIXED_RESIDUAL_DEFICIENCY.md": "a58b1428ab1fb60ad61603e56c9904c3937af62d2b1391b2a6cd9f6bd6b215d3",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",

@@ -394,6 +394,47 @@ def fixed_t_matching_upper_bound_controls():
                 interpretation='Each listed matching reaches a finite edge-cover upper bound for its fixed selected set; this is a coordinate certificate, not a variable-T theorem.')
 
 
+def parent_label_relaxation_controls():
+    selected = {(0, 0), (0, 2), (0, 4), (0, 5), (0, 7), (0, 10),
+                (1, 6), (1, 9), (1, 11), (2, 0), (2, 5), (3, 1),
+                (3, 4), (3, 6), (3, 9), (4, 0), (4, 3), (4, 5),
+                (4, 7), (4, 10), (5, 0), (5, 2), (5, 4), (5, 6),
+                (5, 8), (5, 9), (5, 11)}
+    matching = [((0, 8), (0, 9)), ((1, 0), (1, 1)),
+                ((1, 2), (1, 3)), ((2, 2), (2, 3)),
+                ((2, 7), (2, 8)), ((2, 10), (2, 11)),
+                ((3, 2), (4, 2)), ((3, 7), (3, 8)),
+                ((3, 11), (4, 11))]
+    configuration = (6, 12, selected, matching)
+    assert direct_check(*configuration) == 36
+    canonical(*configuration[:2], *encode(*configuration))
+    endpoints = {vertex for edge in matching for vertex in edge}
+    parent_tiles = {(1, 1): 'PP/PB', (1, 2): 'BT/TB',
+                    (1, 3): 'BP/TP', (1, 5): 'PP/BP'}
+    labels = {}
+    for (tile_row, tile_column), expected in parent_tiles.items():
+        vertices = [(2*tile_row+row, 2*tile_column+column)
+                    for row, column in itertools.product(range(2), repeat=2)]
+        actual = ''.join('T' if vertex in selected else 'P' if vertex in endpoints else 'B'
+                         for vertex in vertices)
+        labels[f'{tile_row},{tile_column}'] = actual[:2]+'/'+actual[2:]
+        assert labels[f'{tile_row},{tile_column}'] == expected
+    def tile_label(tile_row, tile_column):
+        vertices = [(2*tile_row+row, 2*tile_column+column)
+                    for row, column in itertools.product(range(2), repeat=2)]
+        actual = ''.join('T' if vertex in selected else 'P' if vertex in endpoints else 'B'
+                         for vertex in vertices)
+        return actual[:2]+'/'+actual[2:]
+    neutral = {state['labels'] for state in local_controls()['neutral_states']}
+    assert tile_label(0, 0) not in neutral
+    assert tile_label(2, 0) not in neutral
+    return dict(rows=6, columns=12, objective=36, q=0,
+                parent_labels=labels,
+                nonneutral_tiles={'0,0': tile_label(0, 0), '2,0': tile_label(2, 0)},
+                selected=sorted(selected), matching=matching,
+                interpretation='Parent labels alone admit q=0, but the witness violates neutral pressure-band hypotheses; it is a relaxed-model obstacle, not a mixed-interval counterexample.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -509,6 +550,7 @@ def main():
                   mixed_budget=mixed_budget_controls(),
                   realizable_obstacles=realizable_obstacle_controls(),
                   fixed_t_matching_upper_bounds=fixed_t_matching_upper_bound_controls(),
+                  parent_label_relaxation=parent_label_relaxation_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]
