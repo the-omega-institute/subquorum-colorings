@@ -113,6 +113,13 @@ dynamic program computes the exact shortage `delta`; the ledger then gives
 `q <= delta + rho(W)`, while `delta=0` recovers coefficient one. The control
 compares exhaustive subsets, the dynamic program, and doubled-capacity max-flow.
 
+The [attachment-aware note](docs/ATTACHMENT_AWARE_COMPENSATION.md) applies the
+same ledger to occupied bands with outward saturated attachments. It treats
+`sigma/2` as an explicit half-integral debt and requires a shared-capacity Hall
+allocation of certified negative donor regions. Its exact flow control includes
+the minimal shared-donor obstruction, so receiving saturated tiles are never
+counted as compensators or reused across components.
+
 ## Contents
 
 - `manuscript/paper.tex`: research draft, proofs and tree recurrence appendix.
