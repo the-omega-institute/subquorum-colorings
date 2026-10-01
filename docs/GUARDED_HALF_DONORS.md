@@ -99,7 +99,7 @@ The local neutral-state table gives a complete obstruction at a width-one R,R ga
 
 Consequently the next geometric statement cannot be another local donor lemma of the same form. It must show that an unguarded `PP/BT` or `TB/BT` gap forces either a later guarded donor, a negative aggregate over the whole same-direction interval, or a transfer across a bend. The existing zero-charge counterexample shows that any such statement must use neighboring exits or residual routing, rather than Q alone.
 
-The two shortest zero-budget words above are not merely formal automaton paths. Complete finite matchings realize them in 6x12 and 6x14 rectangles, respectively. Their exact values are q=-24 and q=-28, with all remaining components nonpositive. Thus they are genuine mixed-interval configurations, but their large negative remainder keeps the target inequality true. They show precisely what a future aggregate lemma must recover: the negative remainder that is invisible in the local donor budget.
+The two shortest zero-budget words above are not merely formal automaton paths. Complete finite matchings realize them in 6x12 and 6x14 rectangles, respectively. A maximum matching completion gives q=-4 in both cases, with four units of negative residual excess and no positive component. Thus they are genuine mixed-interval configurations, but still satisfy the target inequality. They show precisely what a future aggregate lemma must recover: the negative remainder that is invisible in the local donor budget.
 
 ## 8. Verification and next proof obligation
 
