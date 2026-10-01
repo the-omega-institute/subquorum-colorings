@@ -98,6 +98,13 @@ both of charge zero (with the reflected L,L states `PP/TB` and `BT/TB`). Any
 further compensation argument must therefore use a wider interval, a bend, or
 residual routing rather than another one-tile local bound.
 
+The [proper-interval Hall note](docs/PROPER_INTERVAL_HALL.md) gives a
+conditional reduction for bent compensation: when source donor windows have
+strictly ordered endpoints, all weighted Hall checks reduce to consecutive
+source blocks. The properness hypothesis excludes nested or returning windows;
+the accompanying finite control records both the reduction and a shortest
+non-proper counterexample.
+
 ## Contents
 
 - `manuscript/paper.tex`: research draft, proofs and tree recurrence appendix.
