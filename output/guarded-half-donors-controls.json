@@ -2081,6 +2081,286 @@
     ],
     "interpretation": "Parent labels alone admit q=0, but the witness violates neutral pressure-band hypotheses; it is a relaxed-model obstacle, not a mixed-interval counterexample."
   },
+  "one_sided_neutral_obstacle": {
+    "rows": 6,
+    "columns": 12,
+    "objective": 36,
+    "q": 0,
+    "parent_labels": {
+      "1,1": "PP/PB",
+      "1,2": "BT/TB",
+      "1,3": "BP/TP",
+      "1,5": "PP/BP"
+    },
+    "upper_neutral_labels": {
+      "0": "PP/PP",
+      "1": "PP/PP",
+      "2": "BT/TB",
+      "3": "PP/TB",
+      "4": "BT/TB",
+      "5": "TB/BT"
+    },
+    "lower_labels": {
+      "0": "BT/TB",
+      "1": "PP/TB",
+      "2": "PT/TB",
+      "3": "BB/TP",
+      "4": "TB/PT",
+      "5": "TP/BT"
+    },
+    "selected": [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        9
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        11
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        11
+      ]
+    ],
+    "matching": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      [
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ]
+      ]
+    ],
+    "component_excesses": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "routing": {
+      "a": 0,
+      "b": 0,
+      "c": 1,
+      "f2": 0,
+      "f3": 0,
+      "h": 10
+    },
+    "interpretation": "A q=0 feasible witness with a neutral upper row but non-neutral lower row; one-sided neutral pressure is insufficient."
+  },
   "coordinate_controls": {
     "symmetry_images": 32,
     "witnesses": [
@@ -3903,9 +4183,9 @@
   },
   "scope": "General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.",
   "sha256": {
-    "develop/check_guarded_half_donors.py": "a73be356a7f4343dbcac4c7a497e0e9823e464bcb2b6a4f0b2595b303f974a18",
-    "docs/GUARDED_HALF_DONORS.md": "d5204de850e7e614b27958b308f6f336d23523dea6b6ce2dfaa559070bf6d6fb",
-    "docs/MIXED_RESIDUAL_DEFICIENCY.md": "a58b1428ab1fb60ad61603e56c9904c3937af62d2b1391b2a6cd9f6bd6b215d3",
+    "develop/check_guarded_half_donors.py": "93a486afd167463dd262752824cfcbd51649fae1fd5a595cc97ba8384d8e3006",
+    "docs/GUARDED_HALF_DONORS.md": "2cb7608119d0d914dac6cfaeb8af33e647a373494aac038bd9ea9d44404381c7",
+    "docs/MIXED_RESIDUAL_DEFICIENCY.md": "380b2b62121862f712bf21628281641979c4bd518e84ed6feb1bff49383f7bfa",
     "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
     "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
     "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",

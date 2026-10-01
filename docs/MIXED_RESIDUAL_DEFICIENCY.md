@@ -183,6 +183,26 @@ component excesses, and script hash are archived in
 `output/neutral-frame-milp-controls.json`. The optional search is
 `develop/search_neutral_frame_milp.py` and is not required by CI.
 
+## One-sided neutral-band obstacle
+
+The coordinate checker also records a different `6 x 12` feasible completion
+with `|T|+|M|=36` and `q=0`. It has the same four parent labels, and every tile
+in the upper adjacent row is neutral:
+
+```text
+PP/PP, PP/PP, BT/TB, PP/TB, BT/TB, TB/BT.
+```
+
+The lower adjacent row is unrestricted and contains the non-neutral labels
+`PT/TB`, `BB/TP`, `TB/PT`, and `TP/BT`. The full matching is feasible, the
+canonical routing check passes, and all nine residual component excesses are
+zero. Thus a compensation rule using only one neutral pressure side cannot
+force a negative remainder, even for this fixed parent word. The certificate
+is stored as `one_sided_neutral_obstacle` in
+`output/guarded-half-donors-controls.json`; it is an explicit coordinate
+obstacle, not a general counterexample to the two-sided mixed-interval
+hypotheses.
+
 ## What this does and does not prove
 
 These fixed-`T` maximum completions establish a concrete obstruction to a

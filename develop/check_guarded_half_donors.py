@@ -435,6 +435,52 @@ def parent_label_relaxation_controls():
                 interpretation='Parent labels alone admit q=0, but the witness violates neutral pressure-band hypotheses; it is a relaxed-model obstacle, not a mixed-interval counterexample.')
 
 
+def one_sided_neutral_obstacle_controls():
+    selected = {(0, 5), (0, 9), (0, 10), (1, 4), (1, 6), (1, 8),
+                (1, 11), (2, 5), (3, 0), (3, 4), (3, 6), (3, 9),
+                (4, 1), (4, 5), (4, 8), (4, 10), (5, 0), (5, 2),
+                (5, 4), (5, 6), (5, 9), (5, 11)}
+    matching = [((0, 0), (0, 1)), ((0, 2), (0, 3)),
+                ((0, 6), (0, 7)), ((1, 0), (1, 1)),
+                ((1, 2), (1, 3)), ((2, 0), (2, 1)),
+                ((2, 2), (2, 3)), ((2, 7), (3, 7)),
+                ((2, 8), (2, 9)), ((2, 10), (2, 11)),
+                ((3, 2), (4, 2)), ((3, 11), (4, 11)),
+                ((4, 3), (4, 4)), ((5, 7), (5, 8))]
+    configuration = (6, 12, selected, matching)
+    assert direct_check(*configuration) == 36
+    route = canonical(*configuration[:2], *encode(*configuration))
+    neutral = {state['labels'] for state in local_controls()['neutral_states']}
+    parent_tiles = {(1, 1): 'PP/PB', (1, 2): 'BT/TB',
+                    (1, 3): 'BP/TP', (1, 5): 'PP/BP'}
+    endpoints = {vertex for edge in matching for vertex in edge}
+
+    def tile_label(tile_row, tile_column):
+        vertices = [(2 * tile_row + row, 2 * tile_column + column)
+                    for row, column in itertools.product(range(2), repeat=2)]
+        flat = ''.join('T' if vertex in selected else
+                       'P' if vertex in endpoints else 'B'
+                       for vertex in vertices)
+        return flat[:2] + '/' + flat[2:]
+
+    upper_labels = {str(column): tile_label(0, column) for column in range(6)}
+    lower_labels = {str(column): tile_label(2, column) for column in range(6)}
+    assert all(label in neutral for label in upper_labels.values())
+    assert any(label not in neutral for label in lower_labels.values())
+    for (tile_row, tile_column), expected in parent_tiles.items():
+        assert tile_label(tile_row, tile_column) == expected
+    _, components = graph_record(*configuration)
+    assert sorted(item['excess'] for item in components) == [0] * len(components)
+    return dict(rows=6, columns=12, objective=36, q=0,
+                parent_labels={f'{row},{column}': label
+                               for (row, column), label in parent_tiles.items()},
+                upper_neutral_labels=upper_labels,
+                lower_labels=lower_labels, selected=sorted(selected),
+                matching=matching, component_excesses=sorted(item['excess'] for item in components),
+                routing={key: route[key] for key in ('a', 'b', 'c', 'f2', 'f3', 'h')},
+                interpretation='A q=0 feasible witness with a neutral upper row but non-neutral lower row; one-sided neutral pressure is insufficient.')
+
+
 def local_witness(kind):
     patch = Patch()
     states, edges = cap_pattern('RR', 0)
@@ -551,6 +597,7 @@ def main():
                   realizable_obstacles=realizable_obstacle_controls(),
                   fixed_t_matching_upper_bounds=fixed_t_matching_upper_bound_controls(),
                   parent_label_relaxation=parent_label_relaxation_controls(),
+                  one_sided_neutral_obstacle=one_sided_neutral_obstacle_controls(),
                   coordinate_controls=witness_controls(),
                   scope='General lemmas are written separately. No arbitrary-grid allocation proof or new Lean claim.')
     root = Path(__file__).resolve().parents[1]
