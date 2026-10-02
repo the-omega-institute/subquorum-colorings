@@ -168,6 +168,12 @@ The two shortest zero-budget words above are not merely formal automaton paths. 
 
 ## 8. Verification and next proof obligation
 
+The [same-direction capacity lemma](SAME_DIRECTION_CAPACITY_DONORS.md) gives a
+guard-free receiving-tile certificate when `r>0`: the cap geometry forces
+`d<=r`, so budget `r/2` is valid. It also classifies deficient zero-capacity
+relays, showing why deficiency alone cannot replace the guards. The parent-band
+states above remain separate from these receiving-tile states.
+
 Run `python3 develop/check_guarded_half_donors.py --output output/guarded-half-donors-controls.json`. It checks the relaxed local bound, all twelve certificate cap patterns and guard exclusions, direct full-grid sharpness/obstacle witnesses under eight symmetries, guarded recognition of the 6x20 outside donors, the exact disjoint ledger, the parent-label-only `q=0` relaxation, and the one-sided neutral-band obstacle. It records full coordinates, component charges and input hashes. The arguments above establish the general lemmas; finite controls do not replace them. No new Lean formalization or validation is claimed.
 
 Next isolate the unguarded `TB/BT` and `PP/BT` R,R gaps (and reflected L,L gaps), then show either a justified transfer to another certified donor or a residual aggregate inequality. For several sources the missing statement is precisely a weighted Hall inequality for every source subset, together with the remaining charge control. Arbitrary turns, capacity-two revisits and wider mixed intervals remain outside the general allocation proof.

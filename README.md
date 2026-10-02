@@ -87,6 +87,13 @@ and unique geometric certificates for full and half donors. Two feasible
 now have certificates; multiple-source allocation requires the stated
 weighted Hall condition and remainder control.
 
+The [same-direction capacity note](docs/SAME_DIRECTION_CAPACITY_DONORS.md)
+removes the entry guards when the receiving tile has positive residual
+capacity: the cap geometry proves `d<=r`, giving budget `r/2`. Sharp
+half-unit and capacity-two witnesses accompany a complete zero-charge
+classification. A deficient gap can still have zero capacity and zero charge;
+such neutral relays cannot be assigned a donor budget.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
