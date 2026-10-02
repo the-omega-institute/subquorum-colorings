@@ -116,6 +116,38 @@ every capacity-one fork, by a promotion or a matching flip.
 
 [Complete residual-geometry and five-sixths proof](GRID_ABSORPTION_PROOF.md).
 
+**Exact even-width orientation criterion.** For an even grid width `n`, let
+`c_i` be the row load before assigning vertical matching edges and let `k_i`
+be the number of vertical matching edges between rows `i` and `i+1`. There is
+an orientation of those edges whose row loads satisfy
+
+```text
+z_i <= ceil(2n/3),       z_i + z_(i+1) <= n
+```
+
+if and only if every contiguous row interval `[a,d]` obeys
+
+```text
+sum(c_i for i=a..d) + sum(k_i for i=a..d-1) <= F(d-a+1,n).
+```
+
+The constructive proof uses a two-step lower-envelope recurrence for cumulative
+loads, so it either returns all orientations in linear time or returns a
+specific violating interval. On a geometric feasible pair, the left side is
+exactly the objective retained in that subrectangle after deleting matching
+edges crossing its boundary. Thus a failed orientation is an explicit smaller
+rectangle witness against the desired `Omega` bound, while a successful
+orientation reduces the remaining argument to the already proved row-profile
+inequality. This criterion is an exact interface for the direct grid
+`psi_sq` route; it does not assume the unresolved universal interval bound.
+
+The finite checker `develop/verify_grid_directional_core.py` exercises the
+criterion on `288,804` exhaustive feasible pairs, `120,680` abstract integer
+profiles, and `1,200` seeded random geometric pairs (including `20 x 20`),
+with all listed checks passing. The residual-component compensation notes
+remain necessary for proving the interval inequalities in arbitrary mixed
+direction configurations.
+
 **Compensation through branching bands.** For a pressure band of zero charge
 whose own upper row consists entirely of matching endpoints, consecutive
 right-then-left saturated exits generate disjoint, strictly narrower child
