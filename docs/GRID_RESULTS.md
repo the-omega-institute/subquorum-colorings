@@ -55,11 +55,16 @@ $$
 
 This numerical formula is already determined by the exact 3-path vertex-cover
 results of Bresar et al. ([2013](https://doi.org/10.1016/j.dam.2013.02.024))
-and Jakovac--Taranenko ([2013](https://doi.org/10.1016/j.disc.2012.09.010)),
+and reproduced in Jakovac--Taranenko
+([2013](https://doi.org/10.1016/j.disc.2012.09.010), Theorem 2.1, p. 95),
 using beta_2(G)=|V(G)|-tau_3(G). The three parity formulas are also displayed
 in [Jesih's 2013 thesis](https://dk.um.si/IzpisGradiva.php?id=40050&lang=eng),
 Theorem 4.2, p. 28. Our new proof supplies equality information used in the
-directional extension.
+directional extension. The latter paper's Proposition 3.1 (p. 96) gives the
+corresponding construction and explicitly notes sharpness for `k=3`.
+The [verified source comparison](GRID_PATH_COVER_ATTRIBUTION.md) records
+the attribution, exact formulas, singleton boundaries and general algebraic
+agreement with `F`.
 
 Our independent proof uses the rigid equality case on a two-row ladder.
 For odd width, the row counts give an odd-integer profile. At each integer
@@ -229,5 +234,9 @@ proof, with reusable equality conditions. Its relationship with earlier
 path-cover results, particularly Bresar et al., *On the vertex k-path cover*,
 Discrete Applied Mathematics 161 (2013), 1943-1949, and Jakovac and Taranenko,
 *On the k-path vertex cover of some graph products*, Discrete Mathematics 313
-(2013), 94-100, still needs a full comparison. The tree results likewise
-require comparison with the earlier caterpillar work cited by Sahbi.
+(2013), 94-100, is recorded in the
+[verified grid source comparison](GRID_PATH_COVER_ATTRIBUTION.md).
+The exact numerical formula is an earlier result; the independent proof's
+equality conditions and directional extension are separate contributions.
+The tree results still require comparison with the earlier caterpillar work
+cited by Sahbi.
