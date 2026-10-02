@@ -99,6 +99,13 @@ full-grid completion containing this relay with every tile charge zero.
 Thus the relay alone forces no negative band or component; a transfer theorem
 must use additional positive-source or routing hypotheses.
 
+The [diagonal-relay normalization](docs/DIAGONAL_RELAY_NORMALIZATION.md)
+removes neutral relays by promoting their diagonal P endpoints and deleting
+the matching attachments. It preserves the objective, every tile charge and
+all nonzero residual components. In the normalized pair, every deficient
+same-direction capped gap supplies at least a half-unit; the remaining zero
+gaps are saturated. Cap certificates must be checked after the move.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
