@@ -138,6 +138,11 @@ their zero charge is compatible with this receiving-tile lemma.
 
 ## 6. Reproduction
 
+The [all-neutral relay completion](NEUTRAL_RELAY_OBSTACLE.md) shows that a
+zero-capacity relay does not unconditionally force any negative region, even
+in a complete finite grid. It leaves source-dependent transfer as the relevant
+next hypothesis.
+
 Run `python3 develop/check_same_direction_capacity_donors.py --output output/same-direction-capacity-controls.json`.
 The checker tests 16 necessary local algebraic models, full coordinate
 witnesses for sharpness and all zero types under eight symmetries, and the

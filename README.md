@@ -94,6 +94,11 @@ half-unit and capacity-two witnesses accompany a complete zero-charge
 classification. A deficient gap can still have zero capacity and zero charge;
 such neutral relays cannot be assigned a donor budget.
 
+The [neutral-relay obstacle](docs/NEUTRAL_RELAY_OBSTACLE.md) gives an 8-by-8
+full-grid completion containing this relay with every tile charge zero.
+Thus the relay alone forces no negative band or component; a transfer theorem
+must use additional positive-source or routing hypotheses.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
