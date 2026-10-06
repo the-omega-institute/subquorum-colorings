@@ -106,6 +106,15 @@ all nonzero residual components. In the normalized pair, every deficient
 same-direction capped gap supplies at least a half-unit; the remaining zero
 gaps are saturated. Cap certificates must be checked after the move.
 
+The [neutral-attachment normalization](docs/NEUTRAL_ATTACHMENT_NORMALIZATION.md)
+extends this move to adjacent occupied corners and three-P neutral tiles.
+An attachment endpoint can be promoted exactly when it has at most two occupied
+neighbors. All tile charges and residual edges and capacities remain fixed;
+the complete normalization is independent of processing order. In a normalized
+neutral pressure band every surviving exit is in a three-P tile and has an
+occupied lateral blocker. The 8-by-8 all-neutral example becomes fully saturated.
+This is a reduction of the remaining cases, not a proof of general compensation.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
