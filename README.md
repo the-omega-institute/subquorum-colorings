@@ -115,6 +115,17 @@ neutral pressure band every surviving exit is in a three-P tile and has an
 occupied lateral blocker. The 8-by-8 all-neutral example becomes fully saturated.
 This is a reduction of the remaining cases, not a proof of general compensation.
 
+The [mixed-successor boundary-debt note](docs/MIXED_BAND_BOUNDARY_DEBT.md)
+constructs an arbitrary-length normalized equality family, also with
+capacity-two passages, whose whole successor has charge `b/2-1` despite no
+outward saturated attachment. Residual exports carry compensation outside
+that region. Using the established all-length width-six Omega theorem, the
+note proves the corrected local bound `rho(C)<=-1+beta/2+tau`, with sharp
+residual-export coefficient one-half. Tile-disjoint patches and shared donor
+capacities give a precise conditional global ledger; arbitrary bent geometry
+and universal allocation remain open. Coordinate and boundary-role controls
+are separate from the preserved journal manuscript.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
