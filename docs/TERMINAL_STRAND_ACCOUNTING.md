@@ -95,9 +95,13 @@ boundary matching edges occur once. An SS strand and a reserve cannot claim
 the same token, and a strand cannot be claimed again through another route
 name. This is a single-use decomposition for the entire region.
 
-For the previous disjoint source patches, with every residual crossing an
-actual marked lower export into the deficient remainder, applying (2) to
-each maximal incident exterior component gives
+For the previous disjoint source patches, import the complete incidence
+hypotheses of Theorem 1 in EXTERIOR_COMPONENT_BUDGETS.md: every residual
+crossing out of their union is a marked lower export into the deficient
+remainder, every marked export ends in that remainder, there is no residual
+edge between patches, the D_j are its disjoint maximal incident components,
+and W_0 contains all other deficient tiles. In particular sum beta_i=sum p_j.
+Applying (2) to each D_j gives
 
     q <= sum_i tau_i
          +sum_j(n_LL,j+n_LP,j+n_PP,j-n_SS,j-c_j)
@@ -109,6 +113,9 @@ an exact refinement of the old component balance, not another budget added
 to it. Equation (4) retains the earlier source-patch geometry and width-six
 local lemma. Saturated attachments remain absorbed in tile capacities;
 tau exports and inter-patch edges still require separate treatment.
+For a more general disjoint accounting partition, retain the exact mismatch
+term `(sum beta_i-sum p_j)/2` in (4); see the
+[export-mismatch follow-up](TERMINAL_PRUNING_AND_COLOR_COMPENSATION.md).
 
 ## 3. Whole-grid and neutral-region consequences
 

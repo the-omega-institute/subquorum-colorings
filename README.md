@@ -209,6 +209,13 @@ upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
 # Terminal-strand follow-up
 
+The [terminal pruning and color compensation follow-up](docs/TERMINAL_PRUNING_AND_COLOR_COMPENSATION.md)
+proves complete terminal-free pruning even with negative reserves, and an
+injective compensator for components whose L/P terminals have one color.
+It also retains the export mismatch term for general disjoint accounting
+partitions. Written proofs and independent coordinate controls check the
+external review suggestions; mixed-color global allocation remains open.
+
 The [directed strand relay](docs/DIRECTED_STRAND_RELAY.md) extends the local
 switch through an arbitrary ordered chain of LS/PS strands. One SS donor
 travels along their S sides and cancels a terminal debt, with explicit
