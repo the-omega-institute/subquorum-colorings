@@ -209,6 +209,13 @@ upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
 # Terminal-strand follow-up
 
+The [strand-switch normal form](docs/STRAND_SWITCH_NORMAL_FORM.md) proves
+pairing-choice and checkerboard invariants, cancels debt and SS strands
+sharing a capacity-two tile, and assigns distinct reserves encountered by
+debt strands. The remaining debts share no tile with an SS donor and meet
+no reserve. This simplifies the geometry without changing the net shortage.
+Run `python3 develop/check_strand_switches.py --output output/strand-switch-controls.json`.
+
 The [terminal-strand accounting note](docs/TERMINAL_STRAND_ACCOUNTING.md)
 proves an exact single-use decomposition for arbitrary deficient regions,
 including capacity-two junctions and diagonal passages. It identifies
