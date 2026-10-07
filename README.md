@@ -135,6 +135,16 @@ length, raw capacity and route visits alone do not certify a donor. A second
 local corollary closes an eight- or ten-row source envelope using existing
 all-length strip theorems, even when the component condition is unavailable.
 
+The [cycle-pruning and parity note](docs/RESIDUAL_CYCLE_PRUNING.md)
+proves automatic half-unit compensation for any one-port region without
+positive zero-capacity leaves, allowing arbitrary bends and cycles. An
+alternating-circuit cancellation preserves occupation, objective, every tile
+charge and all boundary matching, including circuits visiting a capacity-two
+tile twice. After pruning, every remaining simple residual cycle has at least
+two diagonal capacity-two passages. An explicit irreducible cycle attains
+that count and still supplies negative compensation; a positive one-port
+leaf example shows why the parity lemma needs its leaf hypothesis.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
