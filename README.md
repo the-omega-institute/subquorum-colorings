@@ -126,6 +126,15 @@ capacities give a precise conditional global ledger; arbitrary bent geometry
 and universal allocation remain open. Coordinate and boundary-role controls
 are separate from the preserved journal manuscript.
 
+The [exterior-component follow-up](docs/EXTERIOR_COMPONENT_BUDGETS.md)
+computes the exact half-port budget from capacity-zero/two tiles and cycle
+rank. It proves single-use compensation when actual exterior components
+meet the stated balance condition, including bent trees and shared receivers.
+Arbitrarily long bent two-port paths and a parallel-edge cycle show why
+length, raw capacity and route visits alone do not certify a donor. A second
+local corollary closes an eight- or ten-row source envelope using existing
+all-length strip theorems, even when the component condition is unavailable.
+
 The grid extension uses Sahbi's Omega reduction and max-plus method. Huang's
 signed hypercube matrix is the key input to the hypercube proof. Tree-result
 priority is still to be compared with the earlier caterpillar work cited
