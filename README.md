@@ -209,6 +209,16 @@ upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
 # Terminal-strand follow-up
 
+The [mixed-color cut obstruction](docs/MIXED_COLOR_CUT_OBSTRUCTION.md) proves
+pairing-independent directed terminal cut bounds. Disjoint regions can sum
+bounds using one fixed endpoint color; black and white certificates may count
+the same strand and cannot be added. An explicit feasible 6-by-(8+2k) family
+has one connected region with zero shortage, one PP debt, one SS donor and
+one PS strand for every maximum pairing. No auxiliary switch sequence can
+cancel that debt despite numerical balance. This refutes a connectivity-based
+switch rule, while aggregate compensation and the grid target remain intact.
+Run `python3 develop/check_mixed_color_cuts.py --output output/mixed-color-cut-controls.json`.
+
 The [terminal pruning and color compensation follow-up](docs/TERMINAL_PRUNING_AND_COLOR_COMPENSATION.md)
 proves complete terminal-free pruning even with negative reserves, and an
 injective compensator for components whose L/P terminals have one color.
