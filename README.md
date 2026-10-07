@@ -209,6 +209,12 @@ upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
 # Terminal-strand follow-up
 
+The [directed strand relay](docs/DIRECTED_STRAND_RELAY.md) extends the local
+switch through an arbitrary ordered chain of LS/PS strands. One SS donor
+travels along their S sides and cancels a terminal debt, with explicit
+degree-four junction and order hypotheses. General reachability and disjoint
+relay packing remain open. Its checker tests abstract strand graphs only.
+
 The [strand-switch normal form](docs/STRAND_SWITCH_NORMAL_FORM.md) proves
 pairing-choice and checkerboard invariants, cancels debt and SS strands
 sharing a capacity-two tile, and assigns distinct reserves encountered by
