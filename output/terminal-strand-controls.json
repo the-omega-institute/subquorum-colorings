@@ -1,0 +1,4373 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local_pairing_controls": 30,
+  "exhaustive": [
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "feasible_pairs": 25,
+      "regions": 19,
+      "neutral_regions": 10,
+      "closed_neutral_regions": 10,
+      "alternating_cycles": 0,
+      "removed_matching_edges": 0,
+      "strands": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      }
+    },
+    {
+      "shape": [
+        2,
+        4
+      ],
+      "feasible_pairs": 548,
+      "regions": 1257,
+      "neutral_regions": 399,
+      "closed_neutral_regions": 375,
+      "alternating_cycles": 16,
+      "removed_matching_edges": 32,
+      "strands": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 32,
+        "PS": 132,
+        "SS": 66
+      }
+    },
+    {
+      "shape": [
+        4,
+        2
+      ],
+      "feasible_pairs": 548,
+      "regions": 1257,
+      "neutral_regions": 399,
+      "closed_neutral_regions": 375,
+      "alternating_cycles": 16,
+      "removed_matching_edges": 32,
+      "strands": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 32,
+        "PS": 132,
+        "SS": 66
+      }
+    },
+    {
+      "shape": [
+        2,
+        6
+      ],
+      "feasible_pairs": 12179,
+      "regions": 62915,
+      "neutral_regions": 13274,
+      "closed_neutral_regions": 12045,
+      "alternating_cycles": 1048,
+      "removed_matching_edges": 2128,
+      "strands": {
+        "LL": 0,
+        "LP": 16,
+        "LS": 16,
+        "PP": 2554,
+        "PS": 11836,
+        "SS": 5378
+      }
+    },
+    {
+      "shape": [
+        6,
+        2
+      ],
+      "feasible_pairs": 12179,
+      "regions": 62915,
+      "neutral_regions": 13274,
+      "closed_neutral_regions": 12045,
+      "alternating_cycles": 1096,
+      "removed_matching_edges": 2192,
+      "strands": {
+        "LL": 0,
+        "LP": 16,
+        "LS": 16,
+        "PP": 2554,
+        "PS": 11836,
+        "SS": 5378
+      }
+    }
+  ],
+  "symmetry_controls": [
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": false,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 0,
+        "SS": 2
+      },
+      "reserve": 0,
+      "shortage": -2,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 4
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 4
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 4
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 2,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 8
+    },
+    {
+      "fixture": "capacity-two figure-eight",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0,
+      "cycles": 1,
+      "removed": 4
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 0,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    },
+    {
+      "fixture": "diagonal ring",
+      "one_port": true,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "choice_index": 1,
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 1
+      },
+      "reserve": 0,
+      "shortage": -1,
+      "cycles": 0,
+      "removed": 0
+    }
+  ],
+  "length_controls": [
+    {
+      "length": 2,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 2,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 2,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 3,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 3,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 3,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 4,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 4,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 4,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 5,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 5,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 5,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 6,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 6,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 6,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 7,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 7,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 7,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 8,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 8,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 8,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 9,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 9,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 9,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 10,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 10,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 10,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 11,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 11,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 11,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 12,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 12,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 12,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 13,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 13,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 13,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 14,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 14,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 14,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 15,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 15,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 15,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 16,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 16,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 16,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 17,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 17,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 17,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 18,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 18,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 18,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 19,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 19,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 19,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 20,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 20,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 20,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 21,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 21,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 21,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 22,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 22,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 22,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 23,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 23,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 23,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 24,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 24,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 24,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 25,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 25,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 25,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 26,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 26,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 26,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 27,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 27,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 27,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 28,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 28,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 28,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 29,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 29,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 29,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 30,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 30,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 30,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 31,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 31,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 31,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 32,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 32,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 32,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 33,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 33,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 33,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 34,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 34,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 34,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 35,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 35,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 35,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 36,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 36,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 36,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 37,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 37,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 37,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 38,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 38,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 38,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 39,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 39,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 39,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    },
+    {
+      "length": 40,
+      "variation": "two_ports",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 1
+    },
+    {
+      "length": 40,
+      "variation": "capacity_two",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 1,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "shortage": 0
+    },
+    {
+      "length": 40,
+      "variation": "one_port",
+      "counts": {
+        "LL": 0,
+        "LP": 0,
+        "LS": 0,
+        "PP": 0,
+        "PS": 1,
+        "SS": 0
+      },
+      "reserve": 0,
+      "shortage": 0
+    }
+  ],
+  "length_range": [
+    2,
+    40
+  ],
+  "corridor_region_controls": 78,
+  "mixed_family_controls": [
+    {
+      "modules": 1,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 1,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 1,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 1,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 2,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 2,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 2,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 2,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 3,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 3,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 3,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 3,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 4,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 4,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 4,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 4,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 5,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 5,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 5,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 5,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 6,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 6,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 6,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 6,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 7,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 7,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 7,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 7,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 8,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 8,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 8,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 8,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 9,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 9,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 9,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 9,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 10,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 10,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 10,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 10,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 11,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 11,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 11,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 11,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 12,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 12,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 12,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 12,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 13,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 13,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 13,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 13,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 14,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 14,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 14,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 14,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 15,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 15,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 15,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 15,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 16,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 16,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 16,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 16,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 17,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 17,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 17,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 17,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 18,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 18,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 18,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 18,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 19,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 19,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 19,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 19,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 20,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 20,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 20,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 20,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 21,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 21,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 21,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 21,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 22,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 22,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 22,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 22,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 23,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 23,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 23,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 23,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 24,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 24,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 24,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 24,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 25,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 25,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 25,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 25,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 26,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 26,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 26,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 26,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 27,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 27,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 27,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 27,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 28,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 28,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 28,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 28,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 29,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 29,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 29,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 29,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 30,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 30,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 30,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 30,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 31,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 31,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 31,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 31,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 32,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 32,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 32,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 32,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 33,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 33,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 33,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 33,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 34,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 34,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 34,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 34,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 35,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 35,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 35,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 35,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 36,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 36,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 36,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 36,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 37,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 37,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 37,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 37,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 38,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 38,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 38,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 38,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 39,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 39,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 39,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 39,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    },
+    {
+      "modules": 40,
+      "capacity_two": false,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 40,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 1,
+      "removed": 2
+    },
+    {
+      "modules": 40,
+      "capacity_two": true,
+      "counts": {
+        "LL": 1,
+        "LP": 0,
+        "LS": 40,
+        "PP": 0,
+        "PS": 0,
+        "SS": 0
+      },
+      "reserve": 1,
+      "cycles": 2,
+      "removed": 4
+    }
+  ],
+  "sha256": {
+    "develop/check_terminal_strands.py": "3a1f0a4ce08885d9bce0fc5184311df7406b7be69ecfde5866b4c61c7e35455f",
+    "docs/TERMINAL_STRAND_ACCOUNTING.md": "73f414a794c8fba8c1e1aa258d191292b92a051d0aea89836f0accbac771f69f",
+    "develop/check_exterior_component_budgets.py": "a8b14ebab0823243fe7563f49657fa3c3fc88d36d4f9667f7638415da155df2f",
+    "develop/check_residual_cycle_pruning.py": "eb72304b6525c12f672a69a3515bb85d71129f07fd369cf7ce591ff6f7525de6",
+    "develop/check_residual_corridors.py": "0997ef4291d0110ebb0b984b7fcb3457c0dc9511f294169b74871c818a903c28",
+    "develop/verify_grid_short_path_compensation.py": "afaf0d1adb404472680e008f6a28fdcffeaab356b8bb0f78bc2322ee094027af",
+    "develop/check_mixed_band_boundary_obstacle.py": "dda4d8c31dd50a8331e12a6745e437033d23cf35a8b853caecaea517b33b735e"
+  },
+  "scope": "Finite controls of the general local pairing table and strand proofs. No universal donor allocation, new strip theorem or new Lean theorem."
+}

@@ -207,3 +207,12 @@ Original material and the imported trureturing modules are distributed under
 Apache-2.0; see `LICENSE` and `NOTICE`. External dependencies retain their
 upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
+# Terminal-strand follow-up
+
+The [terminal-strand accounting note](docs/TERMINAL_STRAND_ACCOUNTING.md)
+proves an exact single-use decomposition for arbitrary deficient regions,
+including capacity-two junctions and diagonal passages. It identifies
+LL/LP/PP debt, SS donors and unused-slot reserves, shows neutral receivers
+only pair ports, and completely prunes closed neutral regions. Run
+`python3 develop/check_terminal_strands.py --output output/terminal-strand-controls.json`.
+The universal donor-allocation inequality remains open.
