@@ -209,6 +209,16 @@ upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
 # Terminal-strand follow-up
 
+The [parity-enhanced band compensation](docs/PARITY_ENHANCED_BAND_COMPENSATION.md)
+proves that an even-length occupied band with an odd number of crossing
+matching edges has at least three more blanks than selected vertices.
+This pays a filled source even with one saturated export when its residual
+band-port count is even, extending the previous zero-export sufficient class.
+Two new Lean modules prove the all-length geometric surplus, its matching and
+charge consequences, and a global injective one-color endpoint allocation
+with component ownership. Full-grid geometry adapters remain explicit written
+interfaces. The protected manuscript is unchanged.
+
 The [mixed-color cut obstruction](docs/MIXED_COLOR_CUT_OBSTRUCTION.md) proves
 pairing-independent directed terminal cut bounds. Disjoint regions can sum
 bounds using one fixed endpoint color; black and white certificates may count

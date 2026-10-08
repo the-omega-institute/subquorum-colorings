@@ -6,6 +6,7 @@ import Mathlib.Tactic
 set_option autoImplicit false
 set_option maxRecDepth 100000
 set_option maxHeartbeats 10000000
+set_option backward.isDefEq.respectTransparency false
 
 namespace SubQuorum.BandCompensation
 
@@ -144,13 +145,20 @@ theorem potential_telescope (odd : Bool) (left current : Column)
       potential odd left current + weightSum rest := by
   induction rest generalizing odd left current with
   | nil =>
-      simpa [finalParity, weightSum] using
-        potential_finish odd left current hreach hvalid.1 hvalid.2
+      change (if odd then (1 : Int) else 2) ≤ potential odd left current + 0
+      exact (potential_finish odd left current hreach hvalid.1 hvalid.2).trans (by omega)
   | cons next rest inductionHypothesis =>
       obtain ⟨hnext, hstep⟩ := potential_step odd left current next hreach hvalid.1
       have hrest := inductionHypothesis (!odd) current next hnext hvalid.2
-      simp only [finalParity, weightSum, List.map_cons, List.sum_cons] at *
-      omega
+      change (if finalParity (!odd) rest then (1 : Int) else 2) ≤
+        potential odd left current + weightSum (next :: rest)
+      calc
+        _ ≤ potential (!odd) current next + weightSum rest := hrest
+        _ ≤ (potential odd left current + weight next) + weightSum rest :=
+          by omega
+        _ = potential odd left current + weightSum (next :: rest) := by
+          simp only [weightSum, List.map_cons, List.sum_cons]
+          omega
 
 theorem band_blank_surplus (first : Column) (rest : List Column)
     (hfirst : endpoint first) (hvalid : remainingValid 0 first rest) :
@@ -186,7 +194,49 @@ theorem matching_band_compensation
   have hsurplus := weightSum_eq_counts (first :: rest)
   omega
 
+theorem parity_matching_band_compensation
+    (first : Column) (rest : List Column)
+    (hfirst : endpoint first) (hvalid : remainingValid 0 first rest)
+    (heven : finalParity true rest = false)
+    (internal crossing : Nat)
+    (hvertices : (2 * (first :: rest).length : Nat) =
+      selectedCount (first :: rest) + blankCount (first :: rest) + 2*internal + crossing) :
+    (2*selectedCount (first :: rest) + 2*internal + crossing : Nat) + 2 + crossing % 2 ≤
+      2 * (first :: rest).length := by
+  have hbase := matching_band_compensation first rest hfirst hvalid heven internal crossing hvertices
+  omega
+
+theorem parity_charge_compensation
+    (first : Column) (rest : List Column)
+    (hfirst : endpoint first) (hvalid : remainingValid 0 first rest)
+    (heven : finalParity true rest = false)
+    (internal crossing saturatedExports : Nat) (chargeTwice : Int)
+    (hvertices : (2 * (first :: rest).length : Nat) =
+      selectedCount (first :: rest) + blankCount (first :: rest) + 2*internal + crossing)
+    (hcharge : chargeTwice = 2*(selectedCount (first :: rest) : Int) + 2*internal + crossing -
+      2*(first :: rest).length + saturatedExports) :
+    chargeTwice + 2 + crossing % 2 ≤ saturatedExports := by
+  have hband := parity_matching_band_compensation first rest hfirst hvalid heven internal crossing hvertices
+  omega
+
+theorem one_export_source_compensation
+    (first : Column) (rest : List Column)
+    (hfirst : endpoint first) (hvalid : remainingValid 0 first rest)
+    (heven : finalParity true rest = false)
+    (internal crossing saturatedExports : Nat) (bandChargeTwice : Int)
+    (hvertices : (2 * (first :: rest).length : Nat) =
+      selectedCount (first :: rest) + blankCount (first :: rest) + 2*internal + crossing)
+    (hcharge : bandChargeTwice = 2*(selectedCount (first :: rest) : Int) + 2*internal + crossing -
+      2*(first :: rest).length + saturatedExports)
+    (hbudget : saturatedExports ≤ crossing % 2) :
+    (2 : Int) + bandChargeTwice ≤ 0 := by
+  have hband := parity_charge_compensation first rest hfirst hvalid heven internal crossing
+    saturatedExports bandChargeTwice hvertices hcharge
+  omega
+
 #print axioms band_blank_surplus
 #print axioms matching_band_compensation
+#print axioms parity_charge_compensation
+#print axioms one_export_source_compensation
 
 end SubQuorum.BandCompensation

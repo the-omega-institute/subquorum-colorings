@@ -1,19 +1,19 @@
-import D5.S3.Combinatorics.Graph.HypercubeSubQuorum
 import SubQuorum.BandCompensation
 import SubQuorum.EndpointCompensation
 
-#check D5.S3.Combinatorics.Graph.HypercubeSubQuorum.subQuorumChromaticNumber_hypercube
-#print axioms D5.S3.Combinatorics.Graph.HypercubeSubQuorum.subQuorumChromaticNumber_hypercube
-
 #check SubQuorum.BandCompensation.band_blank_surplus
 #print axioms SubQuorum.BandCompensation.band_blank_surplus
-#check SubQuorum.BandCompensation.matching_band_compensation
-#print axioms SubQuorum.BandCompensation.matching_band_compensation
+#check SubQuorum.BandCompensation.parity_matching_band_compensation
+#print axioms SubQuorum.BandCompensation.parity_matching_band_compensation
+#check SubQuorum.BandCompensation.parity_charge_compensation
 #print axioms SubQuorum.BandCompensation.parity_charge_compensation
+#check SubQuorum.BandCompensation.one_export_source_compensation
 #print axioms SubQuorum.BandCompensation.one_export_source_compensation
-
 #check SubQuorum.EndpointCompensation.terminal_color_balance
 #print axioms SubQuorum.EndpointCompensation.terminal_color_balance
 #check SubQuorum.EndpointCompensation.one_color_injective_compensation
 #print axioms SubQuorum.EndpointCompensation.one_color_injective_compensation
+#check SubQuorum.EndpointCompensation.allocation_component
+#print axioms SubQuorum.EndpointCompensation.allocation_component
+#check SubQuorum.EndpointCompensation.allocation_injective
 #print axioms SubQuorum.EndpointCompensation.allocation_injective
