@@ -1,6 +1,7 @@
 import D5.S3.Combinatorics.Graph.HypercubeSubQuorum
 import SubQuorum.BandCompensation
 import SubQuorum.EndpointCompensation
+import SubQuorum.OpposedBandCompensation
 
 #check D5.S3.Combinatorics.Graph.HypercubeSubQuorum.subQuorumChromaticNumber_hypercube
 #print axioms D5.S3.Combinatorics.Graph.HypercubeSubQuorum.subQuorumChromaticNumber_hypercube
@@ -17,3 +18,9 @@ import SubQuorum.EndpointCompensation
 #check SubQuorum.EndpointCompensation.one_color_injective_compensation
 #print axioms SubQuorum.EndpointCompensation.one_color_injective_compensation
 #print axioms SubQuorum.EndpointCompensation.allocation_injective
+
+#check SubQuorum.OpposedBandCompensation.opposed_band_blank_surplus
+#print axioms SubQuorum.OpposedBandCompensation.opposed_band_blank_surplus
+#print axioms SubQuorum.OpposedBandCompensation.opposed_matching_compensation
+#print axioms SubQuorum.OpposedBandCompensation.opposed_charge_compensation
+#print axioms SubQuorum.OpposedBandCompensation.two_source_compensation

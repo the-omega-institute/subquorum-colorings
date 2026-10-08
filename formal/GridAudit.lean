@@ -1,5 +1,6 @@
 import SubQuorum.BandCompensation
 import SubQuorum.EndpointCompensation
+import SubQuorum.OpposedBandCompensation
 
 #check SubQuorum.BandCompensation.band_blank_surplus
 #print axioms SubQuorum.BandCompensation.band_blank_surplus
@@ -17,3 +18,12 @@ import SubQuorum.EndpointCompensation
 #print axioms SubQuorum.EndpointCompensation.allocation_component
 #check SubQuorum.EndpointCompensation.allocation_injective
 #print axioms SubQuorum.EndpointCompensation.allocation_injective
+
+#check SubQuorum.OpposedBandCompensation.opposed_band_blank_surplus
+#print axioms SubQuorum.OpposedBandCompensation.opposed_band_blank_surplus
+#check SubQuorum.OpposedBandCompensation.opposed_matching_compensation
+#print axioms SubQuorum.OpposedBandCompensation.opposed_matching_compensation
+#check SubQuorum.OpposedBandCompensation.opposed_charge_compensation
+#print axioms SubQuorum.OpposedBandCompensation.opposed_charge_compensation
+#check SubQuorum.OpposedBandCompensation.two_source_compensation
+#print axioms SubQuorum.OpposedBandCompensation.two_source_compensation

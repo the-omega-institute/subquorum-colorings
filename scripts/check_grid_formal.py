@@ -36,7 +36,8 @@ def main():
     build = root/'build/grid-formal'
     (build/'SubQuorum').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=':'.join([str(build), str(formal)]+paths))
-    modules = ['SubQuorum/BandCompensation.lean', 'SubQuorum/EndpointCompensation.lean']
+    modules = ['SubQuorum/BandCompensation.lean', 'SubQuorum/EndpointCompensation.lean',
+               'SubQuorum/OpposedBandCompensation.lean']
     checks = []
     for module in modules+['GridAudit.lean']:
         command = [str(executable), module]
@@ -53,7 +54,9 @@ def main():
     audit = checks[-1]['stdout']
     expected = ['band_blank_surplus', 'parity_matching_band_compensation', 'parity_charge_compensation',
                 'one_export_source_compensation', 'terminal_color_balance',
-                'one_color_injective_compensation', 'allocation_component', 'allocation_injective']
+                'one_color_injective_compensation', 'allocation_component', 'allocation_injective',
+                'opposed_band_blank_surplus', 'opposed_matching_compensation',
+                'opposed_charge_compensation', 'two_source_compensation']
     declarations = re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", audit, re.DOTALL)
     assert len(declarations) == len(expected), declarations
     axioms = {}
@@ -66,14 +69,14 @@ def main():
     sources = [formal/module for module in modules+['GridAudit.lean']]
     sources.extend([formal/'Audit.lean', formal/'lakefile.toml', formal/'lean-toolchain',
                     formal/'lake-manifest.json', Path(__file__)])
-    for source in sources[:3]:
+    for source in sources[:len(modules)+1]:
         assert not re.search(r'\b(sorry|admit|native_decide|axiom)\b', source.read_text()), source
     report = dict(status='LEAN_KERNEL_CHECKS_PASSED', checked_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                   lean_version=version, user_selected_execution='local_machine', concurrent_module_builds=1,
                   dependencies=dependencies, checks=checks, audited_axioms=axioms,
                   max_child_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
                   source_sha256={str(source.relative_to(root)):hashlib.sha256(source.read_bytes()).hexdigest() for source in sources},
-                  scope='All-length band labels/counting, boundary parity and conditional regional-charge consequences; endpoint involutions, per-component allocations and global no-reuse injection. Full-grid tiling/geometry adapters and unrestricted conjecture are not formalized.')
+                  scope='All-length one-sided and opposed-band labels/counting, boundary parity and conditional one/two-source regional-charge consequences; endpoint involutions, per-component allocations and global no-reuse injection. Full-grid tiling/geometry adapters and unrestricted conjecture are not formalized.')
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_theorems=len(axioms),

@@ -47,8 +47,9 @@ hypercube solution to these geometric and structural questions.
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;
 beta_2 is not defined in the archived Lean module. The subsequent structural
-and grid results are not yet Lean formalized. The unrestricted mixed-direction
-grid coloring formula remains open.
+and full-grid results are not yet Lean formalized. The conditional band and
+endpoint compensation lemmas below now have Lean proofs; the unrestricted
+mixed-direction grid coloring formula remains open.
 
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
@@ -208,6 +209,16 @@ Apache-2.0; see `LICENSE` and `NOTICE`. External dependencies retain their
 upstream licenses. Cite `CITATION.cff`; a DOI will be added only after Zenodo
 confirms an archival record for this repository.
 # Terminal-strand follow-up
+
+The [opposed-source compensation](docs/OPPOSED_SOURCE_COMPENSATION.md) proves
+that one occupied band with two occupied fronts and four forced endpoint
+blanks supplies two units. It pays two mixed-color sources while counting
+the receiver once, including actual source-to-band matching edges and
+capacity-two receiver tiles. A third Lean module checks the all-length
+surplus, boundary parity and two-source charge consequence. Sharp all-width
+grid families, small exhaustive receiver completions and independent
+coordinate/strand checks accompany the proof. Arbitrary bent and staggered
+source fronts remain open.
 
 The [parity-enhanced band compensation](docs/PARITY_ENHANCED_BAND_COMPENSATION.md)
 proves that an even-length occupied band with an odd number of crossing
