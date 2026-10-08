@@ -1,4 +1,10 @@
 import D5.S3.Combinatorics.Graph.HypercubeSubQuorum
+import SubQuorum.BandCompensation
 
 #check D5.S3.Combinatorics.Graph.HypercubeSubQuorum.subQuorumChromaticNumber_hypercube
 #print axioms D5.S3.Combinatorics.Graph.HypercubeSubQuorum.subQuorumChromaticNumber_hypercube
+
+#check SubQuorum.BandCompensation.band_blank_surplus
+#print axioms SubQuorum.BandCompensation.band_blank_surplus
+#check SubQuorum.BandCompensation.matching_band_compensation
+#print axioms SubQuorum.BandCompensation.matching_band_compensation
