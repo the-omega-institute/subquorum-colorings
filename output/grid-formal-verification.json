@@ -1,0 +1,95 @@
+{
+  "status": "LEAN_KERNEL_CHECKS_PASSED",
+  "checked_at": "2026-10-08T05:14:25.103561+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "user_selected_execution": "local_machine",
+  "concurrent_module_builds": 1,
+  "dependencies": {
+    "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BandCompensation.lean",
+      "exit_code": 0,
+      "seconds": 9.601,
+      "stdout": "'SubQuorum.BandCompensation.band_blank_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.BandCompensation.matching_band_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.BandCompensation.parity_charge_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.BandCompensation.one_export_source_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "SubQuorum/EndpointCompensation.lean",
+      "exit_code": 0,
+      "seconds": 2.729,
+      "stdout": "'SubQuorum.EndpointCompensation.terminal_color_balance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.EndpointCompensation.one_color_injective_compensation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.EndpointCompensation.allocation_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "module": "GridAudit.lean",
+      "exit_code": 0,
+      "seconds": 2.431,
+      "stdout": "SubQuorum.BandCompensation.band_blank_surplus (first : SubQuorum.BandCompensation.Column)\n  (rest : List SubQuorum.BandCompensation.Column) (hfirst : SubQuorum.BandCompensation.endpoint first)\n  (hvalid : SubQuorum.BandCompensation.remainingValid 0 first rest) :\n  (if SubQuorum.BandCompensation.finalParity true rest = true then 1 else 2) \u2264\n    SubQuorum.BandCompensation.weightSum (first :: rest)\n'SubQuorum.BandCompensation.band_blank_surplus' depends on axioms: [propext, Classical.choice, Quot.sound]\nSubQuorum.BandCompensation.parity_matching_band_compensation (first : SubQuorum.BandCompensation.Column)\n  (rest : List SubQuorum.BandCompensation.Column) (hfirst : SubQuorum.BandCompensation.endpoint first)\n  (hvalid : SubQuorum.BandCompensation.remainingValid 0 first rest)\n  (heven : SubQuorum.BandCompensation.finalParity true rest = false) (internal crossing : \u2115)\n  (hvertices :\n    2 * (first :: rest).length =\n      SubQuorum.BandCompensation.selectedCount (first :: rest) + SubQuorum.BandCompensation.blankCount (first :: rest) +\n          2 * internal +\n        crossing) :\n  2 * SubQuorum.BandCompensation.selectedCount (first :: rest) + 2 * internal + crossing + 2 + crossing % 2 \u2264\n    2 * (first :: rest).length\n'SubQuorum.BandCompensation.parity_matching_band_compensation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nSubQuorum.BandCompensation.parity_charge_compensation (first : SubQuorum.BandCompensation.Column)\n  (rest : List SubQuorum.BandCompensation.Column) (hfirst : SubQuorum.BandCompensation.endpoint first)\n  (hvalid : SubQuorum.BandCompensation.remainingValid 0 first rest)\n  (heven : SubQuorum.BandCompensation.finalParity true rest = false) (internal crossing saturatedExports : \u2115)\n  (chargeTwice : \u2124)\n  (hvertices :\n    2 * (first :: rest).length =\n      SubQuorum.BandCompensation.selectedCount (first :: rest) + SubQuorum.BandCompensation.blankCount (first :: rest) +\n          2 * internal +\n        crossing)\n  (hcharge :\n    chargeTwice =\n      2 * \u2191(SubQuorum.BandCompensation.selectedCount (first :: rest)) + 2 * \u2191internal + \u2191crossing -\n          2 * \u2191(first :: rest).length +\n        \u2191saturatedExports) :\n  chargeTwice + 2 + \u2191crossing % 2 \u2264 \u2191saturatedExports\n'SubQuorum.BandCompensation.parity_charge_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\nSubQuorum.BandCompensation.one_export_source_compensation (first : SubQuorum.BandCompensation.Column)\n  (rest : List SubQuorum.BandCompensation.Column) (hfirst : SubQuorum.BandCompensation.endpoint first)\n  (hvalid : SubQuorum.BandCompensation.remainingValid 0 first rest)\n  (heven : SubQuorum.BandCompensation.finalParity true rest = false) (internal crossing saturatedExports : \u2115)\n  (bandChargeTwice : \u2124)\n  (hvertices :\n    2 * (first :: rest).length =\n      SubQuorum.BandCompensation.selectedCount (first :: rest) + SubQuorum.BandCompensation.blankCount (first :: rest) +\n          2 * internal +\n        crossing)\n  (hcharge :\n    bandChargeTwice =\n      2 * \u2191(SubQuorum.BandCompensation.selectedCount (first :: rest)) + 2 * \u2191internal + \u2191crossing -\n          2 * \u2191(first :: rest).length +\n        \u2191saturatedExports)\n  (hbudget : saturatedExports \u2264 crossing % 2) : 2 + bandChargeTwice \u2264 0\n'SubQuorum.BandCompensation.one_export_source_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\nSubQuorum.EndpointCompensation.terminal_color_balance.{u_1, u_2} {Vertex : Type u_1} {Component : Type u_2}\n  [Fintype Vertex] (network : SubQuorum.EndpointCompensation.Network Vertex Component) (component : Component) :\n  (SubQuorum.EndpointCompensation.terminals network false component).card =\n    (SubQuorum.EndpointCompensation.terminals network true component).card\n'SubQuorum.EndpointCompensation.terminal_color_balance' depends on axioms: [propext, Classical.choice, Quot.sound]\nSubQuorum.EndpointCompensation.one_color_injective_compensation.{u_1, u_2} {Vertex : Type u_1} {Component : Type u_2}\n  [Fintype Vertex] (network : SubQuorum.EndpointCompensation.Network Vertex Component) (component : Component)\n  (hmono : SubQuorum.EndpointCompensation.MonochromaticDemands network component) :\n  Nonempty\n      (\u21a5(SubQuorum.EndpointCompensation.demands network false component) \u21aa\n        \u21a5(SubQuorum.EndpointCompensation.supplies network true component)) \u2227\n    Nonempty\n      (\u21a5(SubQuorum.EndpointCompensation.demands network true component) \u21aa\n        \u21a5(SubQuorum.EndpointCompensation.supplies network false component))\n'SubQuorum.EndpointCompensation.one_color_injective_compensation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nSubQuorum.EndpointCompensation.allocation_component.{u_1, u_2} {Vertex : Type u_1} {Component : Type u_2}\n  [Fintype Vertex] (network : SubQuorum.EndpointCompensation.Network Vertex Component)\n  (hmono : \u2200 (component : Component), SubQuorum.EndpointCompensation.MonochromaticDemands network component)\n  (vertex : SubQuorum.EndpointCompensation.DemandVertex network) :\n  network.component \u2191(SubQuorum.EndpointCompensation.allocation network hmono vertex) = network.component \u2191vertex\n'SubQuorum.EndpointCompensation.allocation_component' depends on axioms: [propext, Classical.choice, Quot.sound]\nSubQuorum.EndpointCompensation.allocation_injective.{u_1, u_2} {Vertex : Type u_1} {Component : Type u_2}\n  [Fintype Vertex] (network : SubQuorum.EndpointCompensation.Network Vertex Component)\n  (hmono : \u2200 (component : Component), SubQuorum.EndpointCompensation.MonochromaticDemands network component) :\n  Function.Injective (SubQuorum.EndpointCompensation.allocation network hmono)\n'SubQuorum.EndpointCompensation.allocation_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "audited_axioms": {
+    "SubQuorum.BandCompensation.band_blank_surplus": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.BandCompensation.parity_matching_band_compensation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.BandCompensation.parity_charge_compensation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.BandCompensation.one_export_source_compensation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.EndpointCompensation.terminal_color_balance": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.EndpointCompensation.one_color_injective_compensation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.EndpointCompensation.allocation_component": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "SubQuorum.EndpointCompensation.allocation_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "max_child_rss_bytes": 3224797184,
+  "source_sha256": {
+    "formal/SubQuorum/BandCompensation.lean": "6a8f8cf4f3e89f0a67360d8dbbc0ec51722b348eae343e97015330c6beac5248",
+    "formal/SubQuorum/EndpointCompensation.lean": "9dc063749bedbd1975d1f21b837b9b958086356ef4d01347aedc6dca65072f81",
+    "formal/GridAudit.lean": "67eac7ae0e31558cdf045892798ae73ab2da029f3a1c7c9b1ca7c05cba1f07bb",
+    "formal/Audit.lean": "b3229b8fc08822d51303172380d4c2d68e87c2b324fa0ba0bf8e408acb93de6a",
+    "formal/lakefile.toml": "de7253a5aecfdb24944d52ff31a086f7e4cb99ede3f542ffb039dc6d4e9d0808",
+    "formal/lean-toolchain": "302cd63c54178885b89e669f33b38f12f4dd7ae7e5cac537b3203e3768d8fb2b",
+    "formal/lake-manifest.json": "8e280ce9a66bbbc366b5db2bb9af00d89ebaf257279fdc33f7a135664fee43d7",
+    "scripts/check_grid_formal.py": "cb6bfc54d23bf140a2573b5f80b0aa76b7b6cbfbb5105d75b75149356a27e8af"
+  },
+  "scope": "All-length band labels/counting, boundary parity and conditional regional-charge consequences; endpoint involutions, per-component allocations and global no-reuse injection. Full-grid tiling/geometry adapters and unrestricted conjecture are not formalized."
+}

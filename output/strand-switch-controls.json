@@ -1,0 +1,836 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "exhaustive": [
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "feasible_pairs": 25,
+      "regions": 19,
+      "alternative_local_pairings": 0,
+      "switch_steps": 0,
+      "reserve_payments": 0
+    },
+    {
+      "shape": [
+        2,
+        4
+      ],
+      "feasible_pairs": 548,
+      "regions": 1257,
+      "alternative_local_pairings": 0,
+      "switch_steps": 0,
+      "reserve_payments": 8
+    },
+    {
+      "shape": [
+        4,
+        2
+      ],
+      "feasible_pairs": 548,
+      "regions": 1257,
+      "alternative_local_pairings": 0,
+      "switch_steps": 0,
+      "reserve_payments": 8
+    },
+    {
+      "shape": [
+        2,
+        6
+      ],
+      "feasible_pairs": 12179,
+      "regions": 62915,
+      "alternative_local_pairings": 448,
+      "switch_steps": 48,
+      "reserve_payments": 730
+    },
+    {
+      "shape": [
+        6,
+        2
+      ],
+      "feasible_pairs": 12179,
+      "regions": 62915,
+      "alternative_local_pairings": 448,
+      "switch_steps": 48,
+      "reserve_payments": 722
+    }
+  ],
+  "abstract_switch_controls": 486,
+  "coordinate_controls": [
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 3,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "initial_choice": 1,
+      "before": {
+        "SS": 1,
+        "PP": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "initial_choice": 0,
+      "before": {
+        "PS": 2
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 0
+    },
+    {
+      "degree": 4,
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "initial_choice": 1,
+      "before": {
+        "PP": 1,
+        "SS": 1
+      },
+      "after": {
+        "PS": 2
+      },
+      "steps": 1
+    }
+  ],
+  "bent_reserve_controls": [
+    {
+      "length": 2,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 3,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 4,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 5,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 6,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 7,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 8,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 9,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 10,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 11,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 12,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 13,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 14,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 15,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 16,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 17,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 18,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 19,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 20,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 21,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 22,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 23,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 24,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 25,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 26,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 27,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 28,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 29,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 30,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 31,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 32,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 33,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 34,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 35,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 36,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 37,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 38,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 39,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    },
+    {
+      "length": 40,
+      "paid": 1,
+      "remaining_debt": 0,
+      "remaining_reserve": 0
+    }
+  ],
+  "sha256": {
+    "develop/check_strand_switches.py": "bef1194ab1c5a2743ab9edd1544558a8ea6f407890ca1e89472d97a758ddac0e",
+    "docs/STRAND_SWITCH_NORMAL_FORM.md": "93d04ee583d1cdaa1325f79c8c86ca7c83b6e98202260a235fbcb76f5624a839",
+    "develop/check_terminal_strands.py": "3a1f0a4ce08885d9bce0fc5184311df7406b7be69ecfde5866b4c61c7e35455f",
+    "develop/check_residual_cycle_pruning.py": "eb72304b6525c12f672a69a3515bb85d71129f07fd369cf7ce591ff6f7525de6",
+    "develop/check_residual_corridors.py": "0997ef4291d0110ebb0b984b7fcb3457c0dc9511f294169b74871c818a903c28",
+    "develop/verify_grid_short_path_compensation.py": "afaf0d1adb404472680e008f6a28fdcffeaab356b8bb0f78bc2322ee094027af"
+  },
+  "scope": "Finite controls of the written auxiliary switch and pairing-choice invariant proofs; no physical rematching or universal donor allocation."
+}

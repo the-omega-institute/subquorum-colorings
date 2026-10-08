@@ -52,6 +52,7 @@ python3 develop/verify_grid_directional_core.py --output validation/grid/directi
 python3 develop/verify_grid_short_path_compensation.py --output validation/grid/short-path.json
 python3 develop/verify_grid_short_path_symmetries.py --output validation/grid/symmetries.json
 python3 develop/verify_grid_five_sixths.py --output validation/grid/five-sixths.json
+python3 develop/check_attachment_allocation.py --output validation/grid/attachment-aware.json
 ```
 
 The beta check includes 240 exact grid optimizations, 320 profile optimizations,

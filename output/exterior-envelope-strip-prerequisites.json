@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Fresh reproduction of the existing width-eight/ten all-length Omega prerequisites for the bounded-depth envelope lemma. All initial readouts and both indexed vectors match the archive byte-for-byte; independent checkers pass. All-length conclusions use the written exact recurrence and vector-translation induction, not finite readouts alone.",
+  "certificates": [
+    {
+      "status": "passed",
+      "width": 8,
+      "finite_lengths": 30,
+      "certificate": {
+        "width": 8,
+        "start": 9,
+        "period": 2,
+        "doubled_increment": 16,
+        "states": 40855
+      },
+      "from_initial_state": true,
+      "independent_check": "PASS width=8 start=9 period=2 doubled_increment=16 states=40855",
+      "source_hashes": {
+        "grid_omega.cpp": "2d5eda99a6572efaa70e7311626f807b69506df326eb6066328420b9c77e2af9",
+        "check_omega.cpp": "f790f19d51b3a5e8daa659d0bf43558353b91f6875ed8625530f3505f41706a1"
+      }
+    },
+    {
+      "status": "passed",
+      "width": 10,
+      "finite_lengths": 30,
+      "certificate": {
+        "width": 10,
+        "start": 12,
+        "period": 2,
+        "doubled_increment": 20,
+        "states": 537561
+      },
+      "from_initial_state": true,
+      "independent_check": "PASS width=10 start=12 period=2 doubled_increment=20 states=537561",
+      "source_hashes": {
+        "grid_omega.cpp": "2d5eda99a6572efaa70e7311626f807b69506df326eb6066328420b9c77e2af9",
+        "check_omega.cpp": "f790f19d51b3a5e8daa659d0bf43558353b91f6875ed8625530f3505f41706a1"
+      }
+    }
+  ]
+}
