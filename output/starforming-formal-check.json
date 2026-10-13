@@ -1,0 +1,23 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-13T15:42:11.178953+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checks": [
+    {
+      "module": "StarForming/Amplification.lean",
+      "seconds": 10.984,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarFormingAudit.lean",
+      "seconds": 1.003,
+      "exit_code": 0,
+      "stdout": "'StarForming.Amplification.literal_iff_local' depends on axioms: [propext]\n'StarForming.Amplification.minimal_of_deletion_failures' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Amplification.family_deletion_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Amplification.family_minimal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Amplification.chosen_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Amplification.family_bipartite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Amplification.cycle_minimal_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "maximum_rss_bytes": 1708638208,
+  "scope": "Literal/local equivalence, arbitrary-interface bipartiteness, minimal star formation, deletion witnesses and 6 times index count. Dissociation optimum and two-connectivity have written proofs only."
+}
