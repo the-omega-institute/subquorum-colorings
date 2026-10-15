@@ -1,0 +1,37 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-15T05:46:16.605074+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checks": [
+    {
+      "module": "StarForming/Amplification.lean",
+      "seconds": 11.589,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/Composition.lean",
+      "seconds": 33.087,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/ExactCard.lean",
+      "seconds": 3.834,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarFormingCompositionAudit.lean",
+      "seconds": 1.289,
+      "exit_code": 0,
+      "stdout": "'StarForming.Composition.forms_erase_of_local_replacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Composition.local_dense_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Composition.family_block_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Composition.card_eq_sum_blocks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Composition.family_card_upper' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Composition.exact_composition_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "maximum_rss_bytes": 1689976832,
+  "scope": "Arbitrary-interface per-block upper bound of six, total upper bound of six times the index count, and an attaining minimal set. Fixed-graph local certificates are checked by kernel reduction; the gluing and counting theorems quantify over arbitrary index types. The written note separately proves local redundancy by counting. Dissociation optimum and two-connectivity have written proofs only."
+}

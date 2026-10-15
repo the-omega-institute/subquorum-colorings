@@ -30,6 +30,13 @@ The [research agenda](docs/RESEARCH.md) connects current results to the next
 mathematical targets. The manuscript follows the same progression from the
 hypercube solution to these geometric and structural questions.
 
+The related [star-forming project](docs/EXACT_STAR_FORMING_COMPOSITION.md)
+has a separate composition theorem: joining r ten-vertex copies through
+arbitrary b1-to-a1 interfaces gives beta_2=5r and SF_2=6r. Cyclic interfaces
+give two-connected bipartite graphs of maximum degree four with exact gap
+|V|/10. The note contains the full local deletion proof and a three-page PDF;
+the general SF upper bound and an attaining minimal set are checked in Lean.
+
 ## Results and verification
 
 | Result | Scope | Verification |
@@ -43,6 +50,7 @@ hypercube solution to these geometric and structural questions.
 | Grid dissociation number beta_2=F | Every positive width and length | Written row-profile proof; exact finite checks |
 | Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
+| Exact star-forming composition | Every finite b1-to-a1 interface relation on the fixed ten-vertex copies; SF_2=6r and beta_2=5r | General written proof; Lean SF bound and attainment; local finite controls |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;

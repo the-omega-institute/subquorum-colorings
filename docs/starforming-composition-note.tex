@@ -1,0 +1,193 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=23mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newcommand{\SF}{\operatorname{SF}_2}
+\newcommand{\bb}{\beta_2}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\begin{document}
+\begin{center}
+{\Large Exact star formation under arbitrary interfaces}\\[4pt]
+Research note for discussion, 15 October 2026
+\end{center}
+
+For a finite simple graph, a set $S$ is \emph{2-star-forming} if every
+$x\notin S$ lies in a copy of $K_{1,2}$ in $G[S\cup\{x\}]$. Copies need not
+be induced. Write $\SF(G)$ for the largest size of an inclusion-minimal such
+set, and $\bb(G)$ for the largest size of a set inducing maximum degree at
+most one. If $d_S(x)=|N(x)\cap S|$, the exact local star test is
+\[
+ d_S(x)\ge2\quad\text{or}\quad
+ \exists u\in N(x)\cap S:\ d_S(u)\ge1. \tag{1}
+\]
+The alternatives make $x$ the centre or a leaf. Star formation is upward
+closed, so inclusion-minimality is equivalent to failure of all single
+deletions. The tested failure vertex may differ from the deleted vertex.
+
+\textbf{The fixed graph.} Let $H$ have parts $A=\{a_1,\ldots,a_5\}$ and
+$B=\{b_1,\ldots,b_5\}$, and cross-edge matrix
+\[
+\begin{pmatrix}
+1&1&0&0&1\\1&1&0&1&0\\0&0&0&1&1\\0&1&1&1&1\\1&0&1&1&1
+\end{pmatrix}.
+\]
+Degrees on both sides are $(3,3,2,4,4)$. Put
+$S_0=\{a_1,a_2,a_3,b_1,b_2,b_3\}$. Each outside vertex has two neighbours
+in $S_0$. The following single deletions fail (1).
+\begin{center}
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+Deleted & $a_1$ & $a_2$ & $a_3$ & $b_1$ & $b_2$ \\
+Failure & $b_5$ & $b_4$ & $a_3$ & $a_5$ & $a_4$ \\
+Remaining neighbours & $\{a_3\}$ & $\{a_3\}$ & $\varnothing$ & $\{b_3\}$ & $\{b_3\}$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Deleting $b_3$ fails at $b_3$, with no remaining selected neighbour.
+Vertices $a_3,b_3$ are isolated in $H[S_0]$, so the singleton neighbours
+in the table cannot act as centres. Thus $S_0$ is minimal and $\SF(H)\ge6$.
+
+\textbf{Dissociation bound.} The matrix is symmetric under exchanging
+$a_i,b_i$. A dissociation six-set has side split $(1,5)$, $(2,4)$ or $(3,3)$,
+up to this symmetry. The first split violates minimum degree two. In
+$(2,4)$, omitting one $B$ vertex can lower selected degree to at most one
+only for $a_3$, so two selected $A$ vertices are impossible. In $(3,3)$,
+the degree-four vertices $a_4,a_5$ are excluded, forcing $a_1,a_2,a_3$.
+Both $a_1,a_2$ then need their common pair $b_1,b_2$ omitted, leaving both
+$b_4,b_5$ adjacent to $a_3$. Thus $\bb(H)\le5$; the independent set $A$
+attains five.
+
+\begin{theorem}
+Let $I$ be any finite set and $R\subseteq I\times I$. Take disjoint copies
+$H_i$ and add $b_1^{(i)}a_1^{(j)}$ for every $(i,j)\in R$, obtaining $F_R$.
+Then $\bb(F_R)=5|I|$ and $\SF(F_R)=6|I|$.
+For a directed cycle on $r\ge2$ indices, $F_R$ is two-connected and
+bipartite, has maximum degree four, order $10r$, and gap exactly $r$.
+\end{theorem}
+The upper bound, including $\SF(H)\le6$, follows from the local argument
+on the next two pages. No enumeration is needed for these assertions.
+
+\newpage
+\textbf{A dense selection admits a safe internal deletion.}
+Only the ports $p=a_1,q=b_1$ may meet vertices outside a copy of $H$.
+
+\begin{lemma}
+For $T\subseteq V(H)$ with $|T|\ge6$, star formation is equivalent to
+domination: every vertex outside $T$ has a neighbour in $T$.
+\end{lemma}
+\begin{proof}
+Star formation implies domination. Conversely, suppose $x\notin T$ has
+the unique selected neighbour $u$, and $u$ has no neighbour in $T$. Then
+both $N(x)\setminus\{u\}$ and $N(u)$ lie in $Q=V(H)\setminus T$.
+They are disjoint by bipartiteness. Every edge $xu$ satisfies
+$d(x)+d(u)\ge6$: the degree-two vertices have only degree-four neighbours,
+and other endpoints have degree at least three. Consequently
+\[
+ |Q|\ge d(x)-1+d(u)\ge5,
+\]
+contradicting $|Q|\le4$. Thus every singleton neighbour can serve as a
+centre; vertices with two selected neighbours are themselves centres.
+\end{proof}
+
+The closed neighbourhoods of size at most four are precisely
+\begin{align*}
+ Z_{a_3}&=\{a_3,b_4,b_5\},& Z_{b_3}&=\{b_3,a_4,a_5\},\\
+ Z_{a_1}&=\{a_1,b_1,b_2,b_5\},& Z_{a_2}&=\{a_2,b_1,b_2,b_4\},\\
+ Z_{b_1}&=\{b_1,a_1,a_2,a_5\},& Z_{b_2}&=\{b_2,a_1,a_2,a_4\}.
+\end{align*}
+The two triples are disjoint, and any two distinct displayed quadruples
+intersect in at most two vertices. All other closed neighbourhoods have
+size five.
+
+\begin{lemma}
+If $U\subseteq V(H)$ dominates $H$ and $|U|\ge7$, there is
+$v\in U\setminus\{p,q\}$ such that $U\setminus\{v\}$ is star-forming
+inside $H$, and each selected port having a selected internal neighbour
+before deletion still has one afterwards.
+\end{lemma}
+\begin{proof}
+Put $W=V(H)\setminus U$, so $|W|\le3$. A candidate deletion $v$ destroys
+domination exactly when some $N[x]$ is contained in $W\cup\{v\}$.
+Since $U$ dominates, $v$ must be the unique element of $N[x]\setminus W$.
+
+At most one candidate completes one of the two triples: each requires two
+members of that triple already in $W$, whereas the triples are disjoint.
+At most one candidate completes a quadruple: this requires $|W|=3$ and
+$W$ contained in that quadruple, and two distinct quadruples cannot both
+contain the same three-element $W$. A size-five neighbourhood is too
+large. At most two candidates are therefore bad for domination.
+
+For each port, at most one further candidate destroys its internal
+selected-neighbour activity, namely its unique neighbour in $U$, if it
+has one. Thus at most four candidates are bad in total. There are at least
+$|U|-2\ge5$ candidates outside the ports, so a safe candidate remains.
+Its deletion preserves domination and leaves at least six vertices;
+Lemma 1 gives star formation. It also preserves port activity as required.
+\end{proof}
+
+The count is a union bound on bad deletion choices. Overlaps are harmless;
+no surplus or witness is assigned twice to justify different deletions.
+
+\newpage
+\textbf{The local bound in an arbitrary surrounding graph.}
+
+\begin{lemma}
+If $G$ contains an induced $H$ whose external edges touch only $p,q$, then
+every inclusion-minimal 2-star-forming set $S$ of $G$ satisfies
+$|S\cap V(H)|\le6$.
+\end{lemma}
+\begin{proof}
+Suppose $U=S\cap V(H)$ has size at least seven. First $U$ dominates $H$.
+Otherwise some $x\notin U$ has $N[x]\subseteq V(H)\setminus U$, a set of
+size at most three. The list of closed neighbourhoods forces $x=a_3$
+or $b_3$. These are not ports, so $x$ has no selected neighbour anywhere
+in $G$, contradicting star formation.
+
+Choose $v$ from Lemma 2 and set $S'=S\setminus\{v\}$. Every vertex of
+the copy outside $S'$ has a star entirely inside the copy. For a vertex
+$x$ outside the copy and outside $S'$, take its old witnessing star.
+If that star avoids $v$, it survives. Otherwise $x$ is not adjacent to the
+non-port $v$, so $v$ must be a leaf, the centre must be a selected port
+$u$, and the other leaf must be $x$. The port had the selected internal
+neighbour $v$, so after deletion it has some selected internal neighbour
+$w$. The star with centre $u$ and leaves $x,w$ survives. Thus $S'$ is
+star-forming, contradicting minimality.
+\end{proof}
+
+\textbf{Proof of the theorem.} Applying Lemma 3 to each copy bounds any
+minimal set by $6|I|$. The union of the sets $S_0$ attains this size and
+remains minimal: the outside vertices keep their two selected neighbours,
+and all six deletion witnesses from page 1 persist. Interfaces only meet
+$a_1,b_1$, so the possible singleton centres $a_3,b_3$ remain isolated.
+Upward closure then proves minimality. This gives $\SF(F_R)=6|I|$.
+
+Every dissociation set restricts to at most five vertices in each induced
+copy. The full $A$ part attains $5|I|$, since every interface joins $B$ to
+$A$. Hence $\bb(F_R)=5|I|$. Loops of $R$ only specify the already existing
+edge $b_1a_1$ and do not affect the argument.
+
+Each copy contains the Hamilton cycle
+\[
+ a_1,b_1,a_2,b_2,a_4,b_3,a_5,b_4,a_3,b_5,a_1.
+\]
+In the cyclic family, deleting a vertex leaves its copy connected and
+destroys at most one interface, because the two ports are distinct.
+The remaining interfaces still connect all copies. For $r=2$ at least one
+of the two distinct interfaces remains. Thus the graph is two-connected.
+The ports rise from degree three to four and all other degrees stay fixed.
+\hfill$\square$
+
+\textbf{Verification and scope.} Independent base enumeration returns
+$\bb(H)=5$, $\SF(H)=6$ and 37, 48, 1 minimal sets of sizes 4, 5, 6.
+Separate controls check all 174 dominating selections of size at least
+seven and 29,656 safe global deletions in 60 surrounding graphs. These
+finite controls check the argument; the all-size conclusion follows from
+the proofs above. The accompanying Lean sources check the literal/local
+definition, witness preservation and the general local-deletion argument;
+the precise completed declarations are listed with the source release.
+This note does not settle a sharp universal gap coefficient, computational
+complexity, or the rectangular-grid triple equality.
+\end{document}

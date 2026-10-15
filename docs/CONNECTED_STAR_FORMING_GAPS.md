@@ -1,5 +1,10 @@
 # Unbounded star-forming gaps in two-connected bipartite graphs
 
+**15 October update.** The [exact composition theorem](EXACT_STAR_FORMING_COMPOSITION.md)
+now proves SF_2(C_r)=6r, and the same exact value for every finite b1-to-a1
+interface relation. The lower-bound theorem below remains valid; the later
+note resolves its formerly open exact-SF question by a per-copy upper bound.
+
 13 October 2026. We prove the ten-vertex counterexample directly and amplify
 its gap in two-connected bipartite graphs of maximum degree four.
 Every conclusion below has a general proof; finite controls check the construction.

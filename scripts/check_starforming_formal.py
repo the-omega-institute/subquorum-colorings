@@ -15,6 +15,7 @@ def main():
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--package-cache', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--composition', action='store_true')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     formal = root / 'formal'
@@ -36,9 +37,13 @@ def main():
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=':'.join([str(build), str(formal)] + paths))
     checks = []
-    for module in ['StarForming/Amplification.lean', 'StarFormingAudit.lean']:
+    modules = ['StarForming/Amplification.lean', 'StarFormingAudit.lean']
+    if arguments.composition:
+        modules = ['StarForming/Amplification.lean', 'StarForming/Composition.lean',
+                   'StarForming/ExactCard.lean', 'StarFormingCompositionAudit.lean']
+    for module in modules:
         command = [str(executable), module]
-        if module != 'StarFormingAudit.lean':
+        if not module.endswith('Audit.lean'):
             command.extend(['-o', str((build / module).with_suffix('.olean'))])
         started = time.monotonic()
         result = subprocess.run(command, cwd=formal, env=environment,
@@ -54,7 +59,8 @@ def main():
                            stderr=result.stderr))
     declarations = re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]",
                               checks[-1]['stdout'])
-    if len(declarations) != 7:
+    expected_count = 6 if arguments.composition else 7
+    if len(declarations) != expected_count:
         raise RuntimeError('Missing declarations in axiom audit')
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     for declaration, axioms in declarations:
@@ -64,9 +70,16 @@ def main():
                    checked_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                    lean_version=version, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
-                   scope='Literal/local equivalence, arbitrary-interface bipartiteness, '
-                         'minimal star formation, deletion witnesses and 6 times index count. '
-                         'Dissociation optimum and two-connectivity have written proofs only.')
+                   scope=('Arbitrary-interface per-block upper bound of six, total upper '
+                          'bound of six times the index count, and an attaining minimal set. '
+                          'Fixed-graph local certificates are checked by kernel reduction; '
+                          'the gluing and counting theorems quantify over arbitrary index types. '
+                          'The written note separately proves local redundancy by counting. '
+                          'Dissociation optimum and two-connectivity have written proofs only.'
+                          if arguments.composition else
+                          'Literal/local equivalence, arbitrary-interface bipartiteness, '
+                          'minimal star formation, deletion witnesses and 6 times index count. '
+                          'Dissociation optimum and two-connectivity have written proofs only.'))
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
