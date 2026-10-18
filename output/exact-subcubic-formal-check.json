@@ -1,0 +1,30 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T18:30:28.404645+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checks": [
+    {
+      "module": "StarForming/SubcubicCertificate.lean",
+      "seconds": 34.976,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/SubcubicExact.lean",
+      "seconds": 30.875,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarFormingSubcubicExactAudit.lean",
+      "seconds": 2.586,
+      "exit_code": 0,
+      "stdout": "'StarForming.Subcubic.supported_deletion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Subcubic.dense_core_certificate' depends on axioms: [propext, Quot.sound]\n'StarForming.Subcubic.lift_core_star' depends on axioms: [propext, Quot.sound]\n'StarForming.Subcubic.ambient_core_cap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Subcubic.exact_core_accounting' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "maximum_rss_bytes": 3580739584,
+  "scope": "Std-only: generic supported deletion, fixed ten-vertex dense-core certificate, lifting through an induced embedding, per-core cap for arbitrary outside graphs attached only at labels3,11, and disjoint-core arithmetic accounting. Global J_r embedding, attainment and exact SF equality are written proofs, not asserted to be fully formalized here. The finite certificate supplements the analytic case proof."
+}

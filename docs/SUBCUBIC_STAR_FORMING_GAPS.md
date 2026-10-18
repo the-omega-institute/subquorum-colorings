@@ -21,15 +21,19 @@ graph J_r with 11r vertices, 14r edges, minimum degree two and maximum
 degree three such that
 
     Gamma(J_r) = alpha(J_r) = 11r/2,
-    beta_2(J_r) = 13r/2,       SF_2(J_r) >= 7r.
+    beta_2(J_r) = 13r/2,       SF_2(J_r) = 7r.
 
 Consequently
 
-    SF_2(J_r) - beta_2(J_r) >= r/2 = |V(J_r)|/22.
+    SF_2(J_r) - beta_2(J_r) = r/2 = |V(J_r)|/22.
 
-The SF value is a proved lower bound; no exact value for general r or
-optimality of the coefficient 1/22 is claimed. In particular, maximum degree
-three does not guarantee beta_2=SF_2, even with two-connectivity and no leaves.
+The construction below proves the lower bound. The subsequent
+[exact composition note](EXACT_SUBCUBIC_COMPOSITION.md) proves the matching
+upper bound: every inclusion-minimal set contains at most six vertices of
+each ten-vertex core, even in an arbitrary surrounding graph attached at
+labels 3 and 11. No optimality of the coefficient 1/22 among all subcubic
+graphs is claimed. Maximum degree three does not guarantee beta_2=SF_2,
+even with two-connectivity and no leaves.
 
 ## The twelve-vertex building block
 
@@ -361,10 +365,12 @@ in this paper have been disproved". References here to definitions and
 conjectures are specifically to v2. This status concerns the star-forming
 preprint2610.03785; it is distinct from the submitted sub-quorum paper
 2609.25128, whose public record is v4 and is not marked withdrawn.
-The exact SF_2(J_r), a sharp universal gap bound for subcubic
-bipartite graphs, cubic regular graphs, and rectangular-grid equality
-remain separate questions. No smallest-order or literature-priority claim
-is made. The original submitted sub-quorum manuscript is unchanged.
+The exact SF_2(J_r)=7r is now proved in the
+[composition note](EXACT_SUBCUBIC_COMPOSITION.md). A sharp universal gap
+bound for subcubic bipartite graphs, cubic regular graphs, and
+rectangular-grid equality remain separate questions. No smallest-order
+or literature-priority claim is made. The original submitted sub-quorum
+manuscript is unchanged.
 
 These graphs are not rectangular grids. A rectangular grid of maximum
 degree three and minimum degree two must be a two-row strip (up to

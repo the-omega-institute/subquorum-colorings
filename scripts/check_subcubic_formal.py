@@ -15,10 +15,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--exact', action='store_true')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     formal = root / 'formal'
-    build = root / 'build/subcubic-formal'
+    build = root / ('build/subcubic-exact-formal' if arguments.exact else 'build/subcubic-formal')
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     executable = arguments.lean.resolve()
     version = subprocess.check_output([str(executable), '--version'], text=True).strip()
@@ -26,7 +27,10 @@ def main():
         raise RuntimeError('Use the pinned Lean4.33.0 toolchain: ' + version)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
-    for module in ['StarForming/SubcubicCertificate.lean', 'StarFormingSubcubicAudit.lean']:
+    modules = ['StarForming/SubcubicCertificate.lean', 'StarForming/SubcubicExact.lean',
+               'StarFormingSubcubicExactAudit.lean'] if arguments.exact else [
+                   'StarForming/SubcubicCertificate.lean', 'StarFormingSubcubicAudit.lean']
+    for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
             command.extend(['-o', str((build / module).with_suffix('.olean'))])
@@ -43,7 +47,7 @@ def main():
                            exit_code=result.returncode, stdout=result.stdout, stderr=result.stderr))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != 10:
+    if len(declarations) != (5 if arguments.exact else 10):
         raise RuntimeError('Missing audit declarations')
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     for declaration, axioms in declarations:
@@ -54,6 +58,8 @@ def main():
                    lean_version=version, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
                    scope='Std-only: explicit base graph simplicity, local star predicate, deletion minimality, eight-set size, forced adjacent certificates and their failed simultaneous exchange, all4096mask dissociation port cap, four isolated-port attaining sets and general arithmetic double-counting bound. Cyclic gluing, exact global attainment, two-connectivity and global SF lower bound have written proofs; they are not asserted to be formalized here.')
+    if arguments.exact:
+        receipt['scope'] = 'Std-only: generic supported deletion, fixed ten-vertex dense-core certificate, lifting through an induced embedding, per-core cap for arbitrary outside graphs attached only at labels3,11, and disjoint-core arithmetic accounting. Global J_r embedding, attainment and exact SF equality are written proofs, not asserted to be fully formalized here. The finite certificate supplements the analytic case proof.'
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))

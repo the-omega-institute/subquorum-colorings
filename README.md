@@ -39,13 +39,18 @@ the general SF upper bound and an attaining minimal set are checked in Lean.
 
 A [subcubic construction](docs/SUBCUBIC_STAR_FORMING_GAPS.md) now gives
 two-connected bipartite graphs J_r of minimum degree two and maximum degree
-three, for every even r>=2, with order 11r, beta_2=13r/2 and SF_2>=7r.
-Thus their gap is at least |V|/22. Cycles have beta_2=SF_2=floor(2n/3),
+three, for every even r>=2, with order 11r, beta_2=13r/2 and SF_2=7r.
+The [exact upper-bound proof](docs/EXACT_SUBCUBIC_COMPOSITION.md) limits
+each ten-vertex core to six selected vertices in any outside graph
+attached only at its designated vertices. Thus their gap is exactly
+|V|/22. Cycles have beta_2=SF_2=floor(2n/3),
 so three is the first maximum-degree bound permitting a gap among
 two-connected bipartite graphs. An explicit perfect matching also gives
 Gamma=alpha=11r/2, separating all three parameters. The full proof tracks identified ports
 without double counting; base certificates and its arithmetic bound are
-checked with standalone Lean4.33.0.
+checked with standalone Lean4.33.0. Five further Lean audits check supported
+deletion, the dense-core certificate, its arbitrary-outside lift, the
+per-core cap and the new arithmetic accounting.
 
 ## Results and verification
 
@@ -61,7 +66,7 @@ checked with standalone Lean4.33.0.
 | Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
 | Exact star-forming composition | Every finite b1-to-a1 interface relation on the fixed ten-vertex copies; SF_2=6r and beta_2=5r | General written proof; Lean SF bound and attainment; local finite controls |
-| Subcubic star-forming gaps | Two-connected bipartite J_r, even r>=2; beta_2=13r/2, SF_2>=7r, gap>=order/22; cycle equality gives the degree threshold | General written proof; Std-only Lean base certificates and counting bound; full J_2 enumeration |
+| Subcubic star-forming gaps | Two-connected bipartite J_r, even r>=2; beta_2=13r/2, SF_2=7r, gap=order/22; arbitrary-outside core cap; cycle equality gives the degree threshold | General written proofs; standalone Lean certificates; independent deletion controls and full J_2 enumeration |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;
