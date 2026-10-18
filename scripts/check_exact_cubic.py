@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import random
 
-from check_cubic_starforming import base, dissociation, literal_stars, port_state, SELECTED, star_masks
+from check_cubic_starforming import base, dissociation, EIGHT, literal_stars, port_state, SELECTED, SEVEN, star_masks
 from check_starforming_gap import connected, forms
 
 
@@ -284,8 +284,30 @@ def boundary_controls():
     selected = set(range(14))
     assert forms(adjacency, selected)
     assert all(not forms(adjacency, selected - {deleted}) for deleted in selected)
+    broken = without_edge(base(), 0, 8)
+    branching = [{14 * block + neighbor for neighbor in broken[vertex]}
+                 for block in range(3) for vertex in range(14)]
+    interfaces = [(8, 14), (22, 0), (8, 28), (36, 0)]
+    for first, second in interfaces:
+        branching[first].add(second)
+        branching[second].add(first)
+    dissociation_witness = SEVEN | {14 * block + vertex for block in [1, 2] for vertex in EIGHT}
+    star_witness = {14 * block + vertex for block in range(3) for vertex in SELECTED}
+    assert len(dissociation_witness) == 23 and dissociation(branching, dissociation_witness)
+    assert len(star_witness) == 24 and forms(branching, star_witness)
+    assert all(not forms(branching, star_witness - {deleted}) for deleted in star_witness)
+    assert all(connected(branching, removed=vertex) for vertex in range(42))
+    assert max(map(len, branching)) == 4
+    assert all((vertex % 14 < 7) != (neighbor % 14 < 7)
+               for vertex, neighbors in enumerate(branching) for neighbor in neighbors)
     return dict(sharp_degree3_budgets=losses,
-                forbidden_nonport_attachments_allow_minimal_core_selection=14)
+                forbidden_nonport_attachments_allow_minimal_core_selection=14,
+                branching_obstacle=dict(order=42, maximum_degree=4, two_connected=True,
+                                        bipartite=True, dense_blocks=2, nondense_blocks=1,
+                                        interfaces=interfaces,
+                                        dissociation_witness=sorted(dissociation_witness),
+                                        minimal_star_witness=sorted(star_witness),
+                                        exact_gap_from_general_proof=1))
 
 
 def main():

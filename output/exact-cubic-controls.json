@@ -4050,7 +4050,85 @@
       4,
       2
     ],
-    "forbidden_nonport_attachments_allow_minimal_core_selection": 14
+    "forbidden_nonport_attachments_allow_minimal_core_selection": 14,
+    "branching_obstacle": {
+      "order": 42,
+      "maximum_degree": 4,
+      "two_connected": true,
+      "bipartite": true,
+      "dense_blocks": 2,
+      "nondense_blocks": 1,
+      "interfaces": [
+        [
+          8,
+          14
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          8,
+          28
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "dissociation_witness": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        10,
+        13,
+        14,
+        15,
+        16,
+        17,
+        21,
+        22,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        35,
+        36,
+        40,
+        41
+      ],
+      "minimal_star_witness": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        9,
+        10,
+        11,
+        15,
+        16,
+        17,
+        19,
+        21,
+        23,
+        24,
+        25,
+        29,
+        30,
+        31,
+        33,
+        35,
+        37,
+        38,
+        39
+      ],
+      "exact_gap_from_general_proof": 1
+    }
   },
   "scope": "Independent finite controls of the written Fano/perturbation proof. Exact global SF=8r follows from the general local cap and rewiring argument, not extrapolation from these checks."
 }

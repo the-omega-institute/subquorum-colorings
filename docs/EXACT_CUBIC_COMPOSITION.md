@@ -330,7 +330,15 @@ has no edge and no loop. Any nonempty port interface creates a strict gap.
 The cyclic family's interaction graph is a cycle for r>=3, one edge for
 r=2, and one loop for r=1, recovering the earlier formula in every case.
 
-**Corollary 5 (a two-connected realization of every interaction graph).**
+For clarity, in the cyclic Fano labeling write p_a for point a and ell_a
+for line a, where p_a is incident with ell_a,ell_(a+1),ell_(a+3), and delete
+p_0--ell_1. The matchings M_0={p_a--ell_a} and M_3={p_a--ell_(a+3)} both
+survive. Their union is a spanning cycle: following M_3 then M_0 moves
+point a to a+3 modulo seven, visiting every point and line. Thus B has
+a perfect matching and B minus any vertex is connected. Flag transitivity
+transports this certificate to any distinguished incidence.
+
+**Corollary 5 (a two-connected realization of every connected loopless interaction graph).**
 For any connected loopless simple Q of order r>=1, take r copies of B
 and, for each edge ij of Q, add both L_i--P_j and L_j--P_i. The resulting
 graph G_Q is two-connected and bipartite, with
@@ -357,6 +365,37 @@ This realizes a classical vertex-cover parameter as the exact star-forming
 gap in two-connected bipartite graphs. It is an algebraic construction;
 no new complexity-priority claim is made. It does not prove hardness of
 SF_2 on this class, where SF_2 is explicitly 8r.
+
+### A branching obstruction to reusing the cyclic injection
+
+Take Q=K_(1,t), with one center and t>=2 leaves, and use the reciprocal
+realization. Then r=t+1, alpha(Q)=t and tau(Q)=1, so
+
+    beta_2(G_Q)=8r-1,   SF_2(G_Q)=8r,   gap=1.
+
+An attaining dissociation set takes D_7 in the center block and D_8 in
+every leaf block. All t dense leaf blocks share the same nondense neighbor.
+Thus the rule "each dense block has a nondense neighbor, hence at most
+half of the blocks are dense" is false for branching interfaces. It
+silently reuses the center block t times. In the earlier cyclic proof the
+successor map was injective; there is no analogous injection here.
+
+Already t=2 gives a two-connected bipartite42-vertex graph of maximum
+degree four with Gamma=alpha=21, beta_2=23, SF_2=24 and gap1. Label the
+center block0 and leaves1,2. Its four interfaces are
+
+    8--14, 22--0, 8--28, 36--0,
+
+where each block uses the earlier0,...,13labels shifted by14times its
+index. Use D_7 in block0 and D_8 in blocks1,2 for the explicit23-set.
+The standard eight-set in every block attains24. The general local cap
+and saturation proofs supply the matching bounds.
+
+This is a counterexample to extending the cyclic charging rule to
+arbitrary port interfaces, not to the exact interaction formula or the
+cubic cyclic theorem. It identifies exactly where a shared compensating
+block would be counted repeatedly. In general the correct gap is tau(Q),
+which can stay one while the number of blocks grows.
 
 These interfaces also mark two structural limits of the construction.
 Every graph contains B as a subgraph. B is already nonplanar: it is
@@ -386,7 +425,8 @@ a general degree-three perturbation budget. Its
   feasible block port states agrees with7r+alpha_0(Q), including loops;
 -16larger arbitrary-interface minimal8r-sets and16reciprocal connected
   realizations, checking vertex deletion, bipartiteness and matching;
-- the sharp four-cycle budgets and the forbidden non-port pendant example.
+- the sharp four-cycle budgets, forbidden non-port pendant example, and
+  explicit42-vertex branching obstruction with its23- and24-set witnesses.
 
 The general proof is not inferred from this finite coverage.
 
@@ -396,10 +436,14 @@ Its [receipt](../output/exact-cubic-oracle-review.json) and
 [complete response](reviews/2026-10-19-exact-cubic-oracle-response.txt) preserve
 the actual model and scope. Its three requested exposition revisions are
 incorporated. The eight-set and earlier cyclic beta formula were supplied
-premises. The later interaction-graph beta formula and reciprocal realization
-have been submitted as a separate follow-up; they were not in that first
-review input; its [live receipt](../output/interaction-oracle-review.json)
-identifies the original request.
+premises. A separate follow-up accepted the interaction-graph beta formula,
+loop-aware vertex-cover identity and reciprocal two-connected realization
+without a substantive gap. Its requested heading clarification and explicit
+spanning-cycle/matching certificate are incorporated. Its
+[receipt](../output/interaction-oracle-review.json) and
+[complete response](reviews/2026-10-19-interaction-oracle-response.txt) preserve
+that distinct scope. The response also explains the star-interaction example;
+the explicit42-vertex labeling is a subsequent specialization checked below.
 
 Eight new local Lean4.33.0 audits pass. The
 [certificate source](../formal/StarForming/CubicDense.lean) proves Boolean

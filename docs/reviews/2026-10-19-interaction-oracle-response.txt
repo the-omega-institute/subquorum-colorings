@@ -1,0 +1,87 @@
+Referee verdictThe interaction formula and the reciprocal two-connected realization are correct under the supplied local dissociation premises. I find no hidden interaction cost, no double counting, and no counterexample satisfying the stated hypotheses.The decisive point is the availability of a seven-vertex dissociation set omitting both ports. Saturation of eight-blocks gives the upper bound; the port-free seven-set makes that bound attainable for every interaction graph, simultaneously handling all interface edges.All the reciprocal construction’s parameter, degree, bipartiteness, and two-connectivity claims also hold. I recommend only two exposition adjustments:Give a short explicit certificate for the broken block’s spanning cycle and surviving perfect matching, as below.Change the corollary heading to “a two-connected realization of every connected loopless interaction graph,” matching its actual quantifier.The distinction between the two  $r=1$  constructions is correct and should remain explicit: the reciprocal construction gives  $B$ , whereas the earlier cyclic construction restores the deleted edge and gives  $H$ .1. The exact interaction formulaWrite  $B_1,\ldots,B_r$  for the vertex-disjoint broken blocks. For any dissociation set  $D\subseteq V(G)$ , define
+$$D_i=D\cap V(B_i),\qquad
+I_D=\{i:|D_i|=8\}.$$
+A dissociation set means that its induced selected graph has maximum degree at most one.Restriction to a block is legitimate, including restored incidencesWhen applying the local lemma, consider  $D_i$  in the graph  $B_i$ , with all added interface edges removed, including a restored  $P_iL_i$ . Removing edges cannot increase selected degrees. Thus  $D_i$  is a dissociation set in  $B_i$ , and the supplied lemma gives
+$$|D_i|\le8.$$
+Whenever  $|D_i|=8$ , both ports are selected, and each already has a selected neighbor through an edge of  $B_i$ . These are internal degrees in the broken block, so the saturation statement remains useful even when the surrounding graph restores the deleted incidence.Eight-blocks form an independent set excluding looped verticesThere are two restrictions.A restored incidence excludes an eight-block. If  $i\in I_D$  and  $P_iL_i$  is restored, both endpoints are selected. Each already had internal selected degree one in  $B_i$ , so the restored edge raises its selected degree to at least two. This contradicts dissociation.An interface excludes two simultaneous eight-blocks. If  $i,j\in I_D$ , every port in both blocks is selected and internally saturated. Any interface edge between these blocks gives its endpoints a second selected neighbor. Therefore no such edge can exist.Consequently,
+$$I_D\text{ contains no looped vertex and no adjacent pair in }Q.$$
+Hence  $|I_D|\le\alpha_0(Q)$ , and
+$$\begin{aligned}
+|D|
+&=\sum_{i=1}^r |D_i|\\
+&\le8|I_D|+7(r-|I_D|)\\
+&=7r+|I_D|\\
+&\le7r+\alpha_0(Q).
+\end{aligned}
+\tag{1}$$
+This does not assume that the other blocks actually contribute seven vertices. Any smaller contribution only strengthens the bound.Nor does it assume that eight-blocks are the only source of interface restrictions. A particular selection in a seven-block could interact with a neighboring eight-block. Such additional restrictions cannot invalidate the upper bound; the attaining construction below avoids them altogether.The lower construction eliminates every interface conflictLet  $I$  attain  $\alpha_0(Q)$ . Choose: $D_8$  in each block indexed by  $I$ ;the supplied port-free  $D_7$  in every other block.Every local selected graph is a dissociation graph. It remains to check every possible added edge.For an edge between distinct blocks:if either block is outside  $I$ , its endpoint in that block is omitted;both blocks cannot belong to  $I$ , by independence in  $Q$ .For a restored incidence:its block cannot belong to  $I$ , because  $I$  excludes looped vertices;in a block outside  $I$ , both ports are omitted.Thus no added edge has two selected endpoints. The selected induced graph is exactly the disjoint union of the local witness graphs. Its size is
+$$8|I|+7(r-|I|)=7r+\alpha_0(Q).
+\tag{2}$$
+Combining (1) and (2) proves
+$$\boxed{\beta_2(G)=7r+\alpha_0(Q)}.$$
+Why collapsing multiple interfaces is safeSeveral port edges between the same pair of blocks all impose the same necessary prohibition: those two blocks cannot both contribute eight vertices.For attainment, choosing the port-free seven-set in either block disables all these edges simultaneously. Their number and their choices of port endpoints therefore introduce no further cost.This is also why there is no allocation or double-counting issue. A single seven-block can accommodate arbitrarily many neighboring eight-blocks: both of its ports are omitted, so every incident interface is harmless at once.The port-free  $D_7$  is essential to this conclusion. The saturated-port lemma alone would establish the upper bound, but would not by itself establish equality.2. Loops and the exact vertex-cover gapLet a vertex cover of  $Q$  mean a set meeting every edge, with a loop requiring its own vertex to be included.For every  $A\subseteq V(Q)$ ,
+$$A\text{ is independent and excludes looped vertices}
+\iff
+V(Q)\setminus A\text{ is a vertex cover}.
+\tag{3}$$
+For an ordinary edge, this is the usual complement relation. For a loop at  $i$ , the left side requires  $i\notin A$ , exactly equivalent to requiring  $i$  in the complementary cover.Taking extremal cardinalities in (3) gives
+$$\tau(Q)=r-\alpha_0(Q).$$
+No bipartiteness of  $Q$  is needed.Using the reviewed premise  $SF_2(G)=8r$ ,
+$$\boxed{SF_2(G)-\beta_2(G)=\tau(Q)}.$$
+A useful equivalent formulation makes the loop accounting explicit. If  $\Lambda$  is the set of looped vertices and  $Q_0=Q[V(Q)\setminus\Lambda]$ , then
+$$\alpha_0(Q)=\alpha(Q_0),
+\qquad
+\tau(Q)=|\Lambda|+\tau(Q_0).$$
+Edges incident with a looped vertex are already covered by that mandatory vertex. They create no extra separate charge.Equality and nonempty interfacesThe equality
+$$SF_2(G)=\beta_2(G)$$
+holds exactly when  $\alpha_0(Q)=r$ , which holds exactly when  $Q$  has no ordinary edge and no loop.Because each block has only two ports, an edge of the added simple port graph is either:an edge between distinct blocks, recorded as an ordinary edge of  $Q$ ; orthe restored incidence within one block, recorded as a loop.Therefore  $Q$  has no edges and no loops exactly when the actual added port graph is empty.Your strict-gap statement is correct. It asserts a positive gap for every nonempty interface; it does not assert a separate unit of gap for every interface edge. For example, an interaction star with many leaves has vertex-cover number one, and the construction attains gap one by using  $D_7$  in its center block and  $D_8$  in all leaf blocks.3. The cyclic cases are recovered correctlyThe small cases must be distinguished, as your text does:Number of blocksInteraction graph $\alpha_0(Q)$  $\beta_2(G)$ Gap $r=1$ One vertex with a loop $0$  $7$  $1$  $r=2$  $K_2$  $1$  $15$  $1$  $r\ge3$  $C_r$  $\lfloor r/2\rfloor$  $7r+\lfloor r/2\rfloor$  $\lceil r/2\rceil$ For  $r=2$ , the two distinct reciprocal port edges collapse to one adjacency in  $Q$ . They do not become parallel edges that need separate treatment.For  $r\ge3$ , an independent set in the cycle contains at most half the vertices: each selected vertex has an unselected successor, giving  $2|I|\le r$ . Alternating vertices attain  $\lfloor r/2\rfloor$ . Thus the recovery of the earlier formula requires no enumeration.4. An explicit local certificate supplies the structural premisesThe phrases “shift-zero matching” and “each block has a spanning cycle” are correct, but they depend on an incidence convention or an earlier structural lemma. Both can be made self-contained very briefly.Use the cyclic Fano model
+$$p_a\sim \ell_a,\ell_{a+1},\ell_{a+3},
+\qquad a\in\mathbb Z/7\mathbb Z.
+\tag{4}$$
+The difference set  $\{0,1,3\}$  has each nonzero residue modulo seven exactly once among its ordered nonzero differences, which gives the Fano incidence property.Take the distinguished incidence to be
+$$p_0\ell_1.$$
+For an arbitrary distinguished flag, flag transitivity transports the following construction to that flag.Define the two perfect matchings
+$$M_0=\{p_a\ell_a:a\in\mathbb Z/7\mathbb Z\},
+\qquad
+M_3=\{p_a\ell_{a+3}:a\in\mathbb Z/7\mathbb Z\}.$$
+Both avoid  $p_0\ell_1$ , so both survive in  $B$ . Their union is a spanning cycle: following an  $M_3$  edge and then an  $M_0$  edge moves
+$$p_a\longrightarrow\ell_{a+3}\longrightarrow p_{a+3}.$$
+Addition by three has order seven modulo seven. Hence this walk visits all seven points and all seven lines in a single cycle.It follows that: $B$  has a perfect matching; $B$  has a spanning fourteen-cycle; $B-z$  is connected for every vertex  $z$ , because deleting  $z$  from that cycle leaves a spanning path.This is a uniform constructive argument, not an enumeration of possible cycles.Compatibility with the supplied numerical witnessesUnder (4), with  $p_a=a$  and  $\ell_b=7+b$ , the removed incidence is exactly  $0--8$ .The selected edges of the supplied  $D_8$  are
+$$0--7,\qquad 1--8,\qquad 2--12,\qquad 3--13.$$
+Thus it induces four disjoint edges, with both ports selected and internally saturated.The selected edges of  $D_7$  are
+$$2--10,\qquad 4--7,\qquad 5--13,$$
+with selected vertex  $1$  isolated. It omits both ports and is a dissociation set.These witness checks are consistent with the stated local suppliers. If convention (4) is already fixed in the earlier note, no further label correction is needed. Otherwise, adding it removes the numerical-label dependency.5. Simplicity, bipartiteness, and degree of the reciprocal constructionFor each edge  $ij\in E(Q)$ , add
+$$L_iP_j,\qquad L_jP_i.$$
+Because  $Q$  is loopless, these edges join distinct blocks. The two edges belonging to one  $ij$  are distinct, and edges arising from different unordered pairs of block indices cannot coincide. Since  $Q$  is simple, no edge is duplicated.All original and added edges join a point vertex to a line vertex. Therefore  $G_Q$  is bipartite, with parts of size  $7r$ , and
+$$|V(G_Q)|=14r.$$
+Every non-port retains degree three. Each neighbor  $j$  of block  $i$  contributes exactly one new edge at  $P_i$  and exactly one at  $L_i$ . Consequently,
+$$d_{G_Q}(P_i)=d_{G_Q}(L_i)=2+d_Q(i).$$
+Hence
+$$\boxed{\Delta(G_Q)=\max\{3,\,2+\Delta(Q)\}}.$$
+The factor of two in the number of interfaces per edge of  $Q$  does not double an individual port’s degree increment. One interface uses each of the block’s two ports.For  $r=1$ ,  $Q=K_1$  and  $\Delta(Q)=0$ . The ports have degree two, the other vertices have degree three, and the same displayed formula gives maximum degree three. The singleton case needs no exception to the formula.6. The two-connectivity proof is valid even when  $Q$  has cut vertices or bridgesFix any vertex  $z\in V(G_Q)$ . For each block, consider its remaining vertex set after deleting  $z$ .An unaffected block remains connected.The affected block remains connected by its spanning cycle minus  $z$ .Every remaining block is nonempty.Now fix an edge  $ij\in E(Q)$ . Its reciprocal interfaces are
+$$L_iP_j,\qquad P_iL_j.$$
+They have four distinct endpoints. Thus a single vertex deletion cannot remove both. At least one edge still joins the surviving portions of blocks  $i$  and  $j$ .Contract the surviving connected portion of each block to one vertex. The resulting quotient retains an adjacency for every edge of the original connected graph  $Q$ . It is therefore connected, so  $G_Q-z$  is connected.Shared ports cause no failureIf  $z=P_i$ , then several interface edges incident with that port may disappear simultaneously. Nevertheless, for each neighbor  $j$  of  $i$ , the other edge  $L_iP_j$  survives.Those surviving edges can share  $L_i$ . Connectivity does not require their endpoints to be distinct across different neighboring blocks. The surviving block remains connected and connects all these interfaces.Likewise, a cut vertex of  $Q$  creates no difficulty: deleting one vertex inside the corresponding block does not remove that block from the quotient. Its remaining thirteen vertices still form a connected subgraph carrying a surviving interface for every incident quotient edge.Thus connectedness of  $Q$  is enough. Two-connectivity of  $Q$  is unnecessary.Since  $G_Q$  has at least fourteen vertices, connectivity after every single vertex deletion proves vertex two-connectivity.For  $r=1$ , this reduces exactly to the spanning-cycle argument for  $B$ .7. The independence and upper-domination claims holdIndependence numberThe union of the internal perfect matchings  $M_0$  is a perfect matching of  $G_Q$ , with  $7r$  edges. Added interfaces do not remove any of those edges.Every independent set contains at most one endpoint from each matching edge, so
+$$\alpha(G_Q)\le7r.$$
+The full point class is an independent set of size  $7r$ . Therefore
+$$\boxed{\alpha(G_Q)=7r}.$$
+This proof uses the surviving perfect matching and bipartition directly; it requires no regularity assumption.A direct proof of the bipartite identity  $\Gamma=\alpha$ The claimed identity is valid. It also follows from the classical independence–irredundance equality for bipartite graphs, but the following short argument proves exactly what is needed here. ScienceDirectLet a finite bipartite graph have parts  $A,B$ , and let  $D$  be an inclusion-minimal dominating set. Let
+$$B_0=\{b\in D\cap B:N(b)\cap D=\varnothing\}.$$
+For every  $b\in(D\cap B)\setminus B_0$ , minimality supplies a vertex that becomes undominated when  $b$  is deleted from  $D$ . That vertex cannot be  $b$ , because  $b$  has a neighbor in  $D$ , and cannot lie in  $D\setminus\{b\}$ . It is therefore an external private neighbor
+$$w_b\in A\setminus D,\qquad N(w_b)\cap D=\{b\}.$$
+Different  $b$ ’s have different private neighbors.Form
+$$J=(D\cap A)\ \cup\ B_0\
+\cup\ \{w_b:b\in(D\cap B)\setminus B_0\}.$$
+This set is independent: $D\cap A$  and all the  $w_b$  lie in the same bipartition class;vertices of  $B_0$  have no neighbors in  $D\cap A$ ;a vertex of  $B_0$  cannot be adjacent to  $w_b$ , because  $w_b$ ’s unique neighbor in  $D$  is its corresponding  $b\notin B_0$ .Also,
+$$|J|=|D|.$$
+Thus every minimal dominating set has size at most  $\alpha$ , proving  $\Gamma\le\alpha$ .Conversely, every maximum independent set is a maximal independent set, hence is dominating. It is a minimal dominating set because deleting one of its vertices leaves that vertex undominated. Therefore  $\Gamma\ge\alpha$ .Applying the identity gives
+$$\boxed{\Gamma(G_Q)=\alpha(G_Q)=7r}.$$
+8. Final parameter identities, boundary cases, and dispositionThe interaction graph of the reciprocal construction is exactly the original loopless  $Q$ . There are no additional adjacencies and no restored-incidence loops. Consequently,
+$$\boxed{
+\begin{aligned}
+|V(G_Q)|&=14r,\\
+\Gamma(G_Q)=\alpha(G_Q)&=7r,\\
+\beta_2(G_Q)&=7r+\alpha(Q),\\
+SF_2(G_Q)&=8r,\\
+SF_2(G_Q)-\beta_2(G_Q)&=\tau(Q).
+\end{aligned}}$$
+At  $r=1$ , the two constructions give:ConstructionGraphInteraction graph $\beta_2$  $SF_2$ GapReciprocal construction $B=H-PL$  $K_1$ , no loop $8$  $8$  $0$ Earlier cyclic construction $H$ One looped vertex $7$  $8$  $1$ There is no conflict between them.The heading “every interaction graph” is broader than the corollary’s stated class. An arbitrary disconnected interaction graph cannot have a connected composition with that same interaction graph: there is no edge between the corresponding groups of blocks. Renaming the heading to include “connected loopless” resolves this scope issue; the body of the corollary is already correctly quantified.Recommended disposition: accept the formula and reciprocal realization, with the short structural certificate and heading clarification above. The saturation lemma supplies the necessary restrictions, the port-free  $D_7$  supplies simultaneous attainment, and reciprocal pairs supply connectivity after every vertex deletion. The final complexity-scope statement is also accurate:  $SF_2$  is explicitly  $8r$  on this class, while the interaction-dependent quantity appears in  $\beta_2$  and the exact gap.
