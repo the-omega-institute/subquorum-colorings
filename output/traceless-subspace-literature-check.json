@@ -1,0 +1,14 @@
+{
+  "status": "PRIMARY_SOURCE_READ_AND_HYPOTHESES_MATCHED",
+  "author": "Clement de Seguins Pazzis",
+  "title": "Spaces of matrices with a sole eigenvalue",
+  "source": "https://arxiv.org/abs/1105.1872v3",
+  "pdf": "https://arxiv.org/pdf/1105.1872v3",
+  "locations": "Definition 1, printed page 2; Theorem 2, printed page 3",
+  "definition_quote": "We say that V is a 1-spec subspace when # Sp_K(M) <= 1 for every M in V.",
+  "theorem_quote_normalized": "Let V be a 1-spec subspace of M_n(K). If char(K)=2 and n=2, then dim V<=3. Otherwise dim V<=1+binomial(n,2).",
+  "application": "For W in sl_3(F_2) avoiding characteristic polynomial t^3+t, S=W+F_2 I has at most one eigenvalue in F_2 for every matrix. Apply Theorem 2 at n=3 to obtain dim S<=4, hence dim W<=3 since trace(I)=1.",
+  "exception_checked": "The characteristic-two exception is only n=2, so it does not affect n=3. The self-contained two-dimensional auxiliary lemma uses the stronger trivial-spectrum hypothesis.",
+  "attribution": "Existing matrix-space dimension theorem; no novelty claim for that theorem, the traceless corollary or its elementary proof. The present research uses it in a separately proved Heawood-cover density and star-forming gap consequence.",
+  "verification_scope": "Primary PDF text read with pdftotext; the original Oracle reference was not accepted without inspecting the source. No formalization of the source paper is claimed."
+}

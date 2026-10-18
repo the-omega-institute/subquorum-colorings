@@ -1,0 +1,78 @@
+The assertion is true, with the sharp threshold  $4$ . Here is a self-contained proof using rank-one operators, a seven-point incidence count, and rank–nullity.All vector spaces and matrices below are over  $\mathbb F_2$ .1. A two-dimensional lemmaLemma 1. If  $\mathcal R\leq \operatorname{End}(\mathbb F_2^2)$  is a linear subspace and no member of  $\mathcal R$  has eigenvalue  $1$ , then
+$$\dim\mathcal R\leq1.$$
+Proof. For every nonzero vector  $u$ , the linear subspace
+$$\mathcal R u=\{Au:A\in\mathcal R\}$$
+does not contain  $u$ . Consequently,  $\dim(\mathcal R u)\leq1$ .Suppose  $\dim\mathcal R\geq2$ , and choose a basis  $u,v$ . The evaluation maps at  $u$  and  $v$  each have a nonzero kernel. Thus there exist nonzero  $A,B\in\mathcal R$  with
+$$Au=0,\qquad Bv=0.$$
+A nonzero singular  $2\times2$  matrix without eigenvalue  $1$  is nilpotent, so its image equals its one-dimensional kernel. Over  $\mathbb F_2$ , this forces
+$$Av=u,\qquad Bu=v.$$
+Hence
+$$(A+B)(u+v)=u+v,$$
+contradicting the hypothesis.  $\square$ 2. The structural dimension bound in dimension threeLemma 2. Let  $\mathcal S\leq\operatorname{End}(E)$ , where  $E=\mathbb F_2^3$ . If no member of  $\mathcal S$  has both  $0$  and  $1$  as eigenvalues, then
+$$\dim\mathcal S\leq4.$$
+Find a direction supporting no rank-one memberWe first show that there exists  $x\in E\setminus\{0\}$  such that
+$$\{A\in\mathcal S:\operatorname{im}A\subseteq\mathbb F_2x\}=\{0\}.
+\tag{1}$$
+Suppose otherwise. For every nonzero  $x$ , choose a nonzero rank-one operator
+$$A_x=x\varphi_x\in\mathcal S,
+\qquad
+\varphi_x\in E^*\setminus\{0\},$$
+where  $x\varphi_x$  means  $z\mapsto\varphi_x(z)x$ .Because  $A_x$  is singular, it already has eigenvalue  $0$ . Thus it cannot fix  $x$ , which gives
+$$\varphi_x(x)=0.
+\tag{2}$$
+For distinct nonzero  $x,y$ , it is impossible that
+$$\varphi_x(y)=\varphi_y(x)=1.
+\tag{3}$$
+Indeed, in that case
+$$(A_x+A_y)x=y,\qquad (A_x+A_y)y=x,$$
+so  $A_x+A_y$  fixes the nonzero vector  $x+y$ . Its image is contained in  $\operatorname{span}\{x,y\}$ , so it is also singular. It would therefore have both eigenvalues  $0$  and  $1$ .Now count the ordered pairs
+$$(x,y)\quad\text{such that}\quad \varphi_x(y)=1.$$
+There are seven choices of nonzero  $x$ . Each nonzero covector  $\varphi_x$  takes the value  $1$  on exactly four vectors. By (2), these produce no loops  $x=y$ . Thus there are
+$$7\cdot4=28$$
+such ordered pairs.But (3) allows at most one orientation of each unordered pair of distinct nonzero vectors. Hence there can be at most
+$$\binom72=21$$
+ordered pairs—a contradiction. This proves (1).Evaluate at that direction and pass to a quotientFix  $x$  satisfying (1), and let
+$$\mathcal K=\{A\in\mathcal S:Ax=0\}.$$
+Every  $A\in\mathcal K$  induces an operator  $\overline A$  on the two-dimensional quotient  $E/\mathbb F_2x$ .The linear map
+$$\mathcal K\longrightarrow \operatorname{End}(E/\mathbb F_2x),
+\qquad A\longmapsto\overline A$$
+is injective: if  $\overline A=0$ , then  $\operatorname{im}A\subseteq\mathbb F_2x$ , and (1) gives  $A=0$ .Moreover, none of these quotient operators has eigenvalue  $1$ . In a basis beginning with  $x$ ,
+$$A=
+\begin{pmatrix}
+0&*\\
+0&\overline A
+\end{pmatrix},
+\qquad
+\chi_A(t)=t\,\chi_{\overline A}(t).$$
+An eigenvalue  $1$  of  $\overline A$  would give both eigenvalues  $0$  and  $1$  for  $A$ .Lemma 1 therefore implies  $\dim\mathcal K\leq1$ . Applying rank–nullity to evaluation at  $x$  gives
+$$\dim\mathcal S
+=
+\dim\mathcal K+\dim\{Ax:A\in\mathcal S\}
+\leq1+3=4.$$
+This proves Lemma 2.  $\square$ 3. Apply the bound to  $W$ Suppose that  $W\leq\mathfrak{sl}_3(\mathbb F_2)$  contains no singular matrix with  $q=1$ .For  $M\in W$ , its characteristic polynomial is
+$$\chi_M(t)=t^3+q(M)t+\det M.$$
+Therefore  $M$  has both  $0$  and  $1$  as eigenvalues precisely when
+$$\chi_M(0)=\chi_M(1)=0,$$
+which is equivalent to
+$$\det M=0,\qquad q(M)=1.
+\tag{4}$$
+Our assumption says that this never occurs.Adjoin the identity:
+$$\mathcal S=W+\mathbb F_2I_3.$$
+Adding  $I_3$  exchanges the eigenvalues  $0$  and  $1$ . Consequently, every member of  $\mathcal S$  still has at most one eigenvalue in  $\mathbb F_2$ . Lemma 2 yields
+$$\dim\mathcal S\leq4.$$
+On the other hand,
+$$\operatorname{tr}I_3=1
+\quad\text{in }\mathbb F_2,$$
+so  $I_3\notin W$  and
+$$\dim\mathcal S=\dim W+1.$$
+Thus
+$$\dim W\leq3.$$
+Taking the contrapositive proves
+$$\boxed{
+\dim W\geq4
+\ \Longrightarrow\
+\exists M\in W:\ \det M=0,\quad q(M)=1
+\ \Longrightarrow\
+\chi_M(t)=t^3+t.
+}$$
+The strictly upper-triangular matrices form a three-dimensional avoiding subspace, since all their characteristic polynomials are  $t^3$ . Hence the threshold is sharp.Published structural theoremThe bound in Lemma 2 is also the  $n=3,\ K=\mathbb F_2$  case of Clément de Seguins Pazzis, Spaces of matrices with a sole eigenvalue, Theorem 2, p. 3, arXiv:1105.1872v3. Its hypothesis concerns eigenvalues in the base field, allowing an empty spectrum there. It gives  $\dim\mathcal S\leq1+\binom n2$ , with an exception only for  $n=2$  in characteristic two. Thus adjoining  $I_3$  also gives a direct application of that established theorem. arxiv.org

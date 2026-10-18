@@ -772,6 +772,220 @@
   ],
   "total_covers": 96,
   "projection_checks": 17472,
+  "elementary_abelian_controls": [
+    {
+      "rank": 4,
+      "order": 224,
+      "character": 9,
+      "quotient_optimum": {
+        "beta": 16,
+        "witness": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          23,
+          26,
+          27
+        ],
+        "method": "exact_one_part_subset_and_private_neighbor_groups",
+        "left_subsets": 16384
+      },
+      "pulled_certificate_size": 128,
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "connected": true
+    },
+    {
+      "rank": 5,
+      "order": 448,
+      "character": 9,
+      "quotient_optimum": {
+        "beta": 16,
+        "witness": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          23,
+          26,
+          27
+        ],
+        "method": "exact_one_part_subset_and_private_neighbor_groups",
+        "left_subsets": 16384
+      },
+      "pulled_certificate_size": 256,
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "connected": true
+    },
+    {
+      "rank": 6,
+      "order": 896,
+      "character": 9,
+      "quotient_optimum": {
+        "beta": 16,
+        "witness": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          23,
+          26,
+          27
+        ],
+        "method": "exact_one_part_subset_and_private_neighbor_groups",
+        "left_subsets": 16384
+      },
+      "pulled_certificate_size": 512,
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "connected": true
+    },
+    {
+      "rank": 7,
+      "order": 1792,
+      "character": 9,
+      "quotient_optimum": {
+        "beta": 16,
+        "witness": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          23,
+          26,
+          27
+        ],
+        "method": "exact_one_part_subset_and_private_neighbor_groups",
+        "left_subsets": 16384
+      },
+      "pulled_certificate_size": 1024,
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "connected": true
+    },
+    {
+      "rank": 8,
+      "order": 3584,
+      "character": 9,
+      "quotient_optimum": {
+        "beta": 16,
+        "witness": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          20,
+          23,
+          26,
+          27
+        ],
+        "method": "exact_one_part_subset_and_private_neighbor_groups",
+        "left_subsets": 16384
+      },
+      "pulled_certificate_size": 2048,
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "connected": true
+    }
+  ],
+  "nonabelian_controls": [
+    {
+      "dihedral_order": 8,
+      "deck_group_order": 32,
+      "additional_binary_factors": 2,
+      "binary_character_rank": 4,
+      "character": 9,
+      "order": 448,
+      "pulled_certificate_size": 256,
+      "connected": true
+    },
+    {
+      "dihedral_order": 16,
+      "deck_group_order": 64,
+      "additional_binary_factors": 2,
+      "binary_character_rank": 4,
+      "character": 9,
+      "order": 896,
+      "pulled_certificate_size": 512,
+      "connected": true
+    },
+    {
+      "dihedral_order": 32,
+      "deck_group_order": 128,
+      "additional_binary_factors": 2,
+      "binary_character_rank": 4,
+      "character": 9,
+      "order": 1792,
+      "pulled_certificate_size": 1024,
+      "connected": true
+    }
+  ],
   "subspace_exploration": {
     "status": "DISCOVERY_ONLY_NOT_A_GENERAL_PROOF",
     "avoiding_subspace_counts": [
@@ -789,5 +1003,5 @@
     ],
     "permitted_nonzero_matrices": 143
   },
-  "scope": "Cover pullback controls support the separate general proof. Subspace threshold remains discovery until a structural proof is supplied. No exact higher-cover SF value is inferred."
+  "scope": "Cover pullback controls support the separate general proof. Subspace enumeration is discovery only; the threshold now has a separate structural proof. No exact higher-cover SF value is inferred."
 }

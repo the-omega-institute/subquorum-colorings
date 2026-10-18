@@ -123,7 +123,14 @@ now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
 through a connected Heawood double cover, including all connected regular
 Heawood covers with nontrivial finite2-group deck group. Two quotient
 types have explicit16-vertex certificates, checked in Lean, and improve
-that bound to floor(n/49). No exact higher-cover SF value is assumed.
+that bound to floor(n/49). A [sharp traceless-space threshold](docs/TRACELESS_SUBSPACE_THRESHOLD.md),
+derived from de Seguins Pazzis's existing matrix-space theorem with a
+self-contained binary proof, ensures such a quotient for every connected
+regular Heawood cover whose deck group has at least four independent
+binary characters. This includes nonabelian deck groups of unbounded
+order, as well as elementary abelian covers of rank at least four.
+These covers all satisfy the n/49gap bound. No exact higher-cover SF value
+is assumed, and the matrix-space theorem is attributed to its source.
 
 The [exact cover-stability criterion](docs/COVER_STABLE_MINIMAL_SELECTIONS.md)
 now removes the global triangle-free restriction: a fixed minimal selection
