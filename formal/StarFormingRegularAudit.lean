@@ -1,7 +1,9 @@
 import StarForming.RegularBound
 
+#print axioms StarForming.Regular.covered_deletion_has_failure
 #print axioms StarForming.Regular.high_has_failure
 #print axioms StarForming.Regular.adjacent_high_survives
+#print axioms StarForming.Regular.selected_leaf_has_private_witness
 #print axioms StarForming.Regular.failure_witnesses_disjoint
 #print axioms StarForming.Regular.witness_has_no_three_neighbors
 #print axioms StarForming.Regular.nonadjacent_witness_unique_neighbor

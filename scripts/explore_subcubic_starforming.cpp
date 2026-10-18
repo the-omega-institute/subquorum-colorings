@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
         int half = std::stoi(argv[2]);
         int first_shift = std::stoi(argv[3]);
         int second_shift = std::stoi(argv[4]);
-        if (half < 3 || half > 10 || first_shift <= 0 || first_shift >= half ||
+        if (half < 3 || half > 12 || first_shift <= 0 || first_shift >= half ||
             second_shift <= first_shift || second_shift >= half) return 2;
         std::vector<Mask> adjacency(2 * half);
         for (int row = 0; row < half; ++row) {

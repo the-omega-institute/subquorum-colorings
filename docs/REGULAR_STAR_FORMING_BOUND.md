@@ -4,6 +4,15 @@
 non-induced copies of K_{1,2} and inclusion-minimal star-forming sets.
 They do not require bipartiteness, connectivity, or finite enumeration.
 Literature priority is not asserted; see the source-specific literature note.
+Here beta_2 is the maximum size of a set inducing maximum degree at most
+one, and SF_2 is the maximum size of an inclusion-minimal forming set.
+
+Favaron's 2012 Theorem10 already gives SF_k<=n-delta+k-1 for k<=delta,
+and her Theorem13 characterizes its SF equality case for k>=2. For
+d-regular graphs at k=2, that bound is n-d+1. The degree-capacity bound
+below is strictly stronger when d>=2 and n>2d-1. These are different
+order bounds and equality problems; this specific comparison does not
+establish historical priority over all later literature.
 
 ## The bound
 
@@ -73,6 +82,21 @@ sum_{v in S}(deg_G(v)-1)+z. The right side is Delta|T|. This proves (1).
 Lower-bounding each deg_G(v) by delta proves (2), and setting delta=Delta=d
 proves (3). An edgeless graph satisfies (1) directly with S=V(G).
 
+There is an exact slack identity useful for stability questions. Put
+C_x=Delta-a(x) and q_v=C_{f(v)}-(a(v)-1), all nonnegative. Then
+
+    Delta|T| - [sum_{v in S}(deg_G(v)-1)+z]
+      = sum_{v in H}q_v + sum_{x in T minus f(H)}C_x.          (5a)
+
+For a d-regular graph this becomes
+
+    dn-(2d-1)|S|
+      = z + sum_{v in H}(d-a(f(v))-a(v)+1)
+          + sum_{x in T minus f(H)}(d-a(x)).                 (5b)
+
+Thus equality forces every displayed nonnegative term to vanish; there is
+no cancellation between different witnesses or unused vertices.
+
 ## Sharpness for every regular degree
 
 For d>=2, take four independent parts A,B,C,D of sizes d,d,d-1,d-1.
@@ -95,10 +119,11 @@ The examples are two-connected for d>=2. For d=2 the graph is C6.
 For d>=3, each complete bipartite piece stays connected after one deletion,
 and at least d-1 surviving matching edges join the pieces.
 
-## Equality structure in triangle-free regular graphs
+## Equality structure in all regular graphs
 
-Suppose d>=2, G is triangle-free and d-regular, and a minimal S attains
-(2d-1)|S|=dn. Then the following partition is forced.
+Suppose d>=2, G is a finite simple d-regular graph, and a minimal S attains
+(2d-1)|S|=dn. Then the following disjoint decomposition into five labeled
+classes is forced; some classes may be empty.
 
 - P consists of the vertices in selected K2 components.
 - H consists of selected vertices of selected degree d.
@@ -117,29 +142,41 @@ Here is the necessity proof, including the equality conditions in the budget.
 Equality in (3) forces z=0. It also forces equality at every term in (4),
 and forces every unused outside capacity Delta-a(x) to vanish.
 
-A high vertex cannot have an adjacent witness with a(x)=1: the outside
-edge gives a(v)<=d-1, making (4) strict. An adjacent witness with a(x)=2
-is also impossible. Its other selected neighbor u must be isolated after
-deleting v. Since z=0, u was adjacent to v, creating the triangle x,u,v.
-Thus every high vertex has a nonadjacent witness with a(x)=1; equality
-in (4) forces a(v)=d. Every outside vertex not chosen as a witness has
-a(x)=d. Hence |X|=|H| and there are no other selected degrees except 1,d.
+First, a selected leaf u adjacent to a high vertex h has a private outside
+witness x with N(x) intersect S={u}. Indeed, the newly omitted u remains
+covered through h, which retains another selected neighbor. An outside
+nonneighbor of u cannot fail: an affected star must use u as a leaf and
+h as its center, and h can replace u by another selected neighbor. An
+outside neighbor x with at least three selected neighbors also survives.
+If x has exactly two selected neighbors u,w, failure requires w to become
+selected-isolated. Since z=0, w had u as its sole selected neighbor; but
+u's only selected neighbor is h, contradicting a(h)>=2. Thus x has just u.
+
+Such an x has capacity d-1>0, so equality forces x=f(v) for a high v.
+It is nonadjacent to v, since u is its sole selected neighbor and is a leaf.
+Deleting v can uncover x only by deleting u's support h, hence v=h.
+Tightness in (4) now forces a(h)=d. We have proved that every high vertex
+adjacent to a selected leaf has full selected degree.
+
+A high v cannot have an adjacent chosen witness with a(x)=1: the outside
+edge gives a(v)<=d-1, making (4) strict. An adjacent chosen witness with
+a(x)=2 is also impossible. Its other selected neighbor u must become
+selected-isolated after deleting v. Since z=0, u was a selected leaf
+adjacent to v; the preceding paragraph forces a(v)=d, contradicting the
+outside edge vx. Thus all high witnesses are nonadjacent, a(v)=d for
+all high v, and their witnesses have a(x)=1. Every unused outside vertex
+has a(x)=d. Hence X=f(H), |X|=|H|, and the remaining selected degrees
+are one. This proof does not assume triangle-freeness.
 
 For x in X, let u be its sole selected neighbor. Loss of coverage after
 deleting its high witness v requires u to have v as its sole selected
 neighbor. Hence u is a selected leaf adjacent to v. Distinct v have
-distinct such leaves, so |U|>=|H|. Conversely, every u in U needs a
-single-deletion failure witness in X. The newly omitted u remains covered
-through its high neighbor, which still has d-1>=1 selected neighbors.
-The only possible outside failure is at an outside neighbor of u. Two
-selected neighbors there cannot fail: the other would have to be initially
-isolated or lose its sole selected support u; the first contradicts z=0,
-and the second contradicts u having just one selected neighbor, in H.
-Thus the witness has u as its sole selected neighbor and belongs to X.
+distinct such leaves, so |U|>=|H|. Conversely, the private-witness argument
+above assigns each u in U a witness in X having u as its sole selected neighbor.
 Different leaves cannot share it, so |U|<=|X|=|H|. Equality gives all
 claimed bijections. The remaining degree and neighborhood statements follow.
 
-Conversely, any triangle-free d-regular graph with this partition and these
+Conversely, any d-regular graph with this decomposition and these
 neighborhoods has S=P union H union U minimal star-forming: vertices of Y
 are centers, vertices of X are leaves supported by U--H; deleting a P
 vertex uncovers itself, deleting u in U uncovers its matched x, and
@@ -227,26 +264,58 @@ psi_sq<=SF_2. Neither that bridge nor beta_2=SF_2 on all grids is proved here.
 
 The arguments above are general proofs. The
 [independent controls](../scripts/check_regular_starforming.py) pass on
-1,300 graphs and 261,082 selections, including all labeled graphs through
+1,301 graphs and 262,106 selections, including all labeled graphs through
 order five and all regular labeled graphs of order six. They compare
-literal stars with the local test 1,667,081 times, check all-proper-subset
-minimality, 10,558 failure-witness budgets, and 540 triangle-free extremal
-sets, including 360 with nonempty H. Sixteen deterministic matching-union
+literal stars with the local test 1,672,201 times, check all-proper-subset
+minimality, 10,708 failure-witness budgets, and 638 regular extremal sets,
+including 540 triangle-free ones and 362 with nonempty H. Sixteen deterministic matching-union
 samples, the Heawood graph and twelve rectangles through 4x4 are included.
 Explicit witnesses check sharp
 degree-one-through-eight examples. A separate cubic bipartite 20-vertex
 example has an extremal 12-set consisting of a selected C6 with one leaf
 at every vertex; the matching exchange produces a dissociation 12-set.
+An additional nonbipartite cubic ten-vertex example has a selected triangle
+with one leaf at each vertex and an outside triangle; it exercises the
+all-regular extension with triangles inside H and X, and has beta_2=SF_2=6.
 These are verification controls, not proofs of the general statements.
 
 The pinned Lean4.33.0
 [symbolic source](../formal/StarForming/RegularBound.lean) proves failure
 witness existence and disjointness for arbitrary vertex types, the two
 structural witness-degree restrictions, and conditional degree/regular/cubic
-accounting. Ten audits pass with only standard axioms. The finite graph
+accounting, including the private-witness lemma for selected leaves that
+removes the triangle-free restriction. Twelve audits pass with only
+standard axioms. The finite graph
 cardinal summation, full graph-level bound, equality partition, exchange and
 grid corollary have written proofs; they are not claimed fully formalized.
 The [formal receipt](../output/regular-bound-formal-check.json) and
 [control receipt](../output/regular-bound-controls.json) record their scopes.
-Independent Oracle review was requested on the original stream; completion
-and any incorporated corrections are recorded separately when available.
+The [independent Oracle response](reviews/2026-10-19-regular-bound-oracle-response.txt)
+accepted the original proof without a substantive gap and supplied the
+all-regular equality strengthening above. Actual model gpt_6, effort pro;
+task d19a25da-c2d8-4dfb-a646-0fd307a6a26b completed on its original stream.
+It requested explicit definitions, possibly empty classes, and the detailed
+leaf-witness locality argument; all are incorporated. The later Gamma/grid
+corollaries and final verification inventory were outside that original input.
+
+## Next question: can the gap be charged to half the defect?
+
+For a cubic bipartite graph, let D=3n-5 SF_2(G). The theorem proves D>=0
+and characterizes D=0. A stronger stability candidate is
+
+    2(SF_2-beta_2) <= D,
+    equivalently 7 SF_2 <= 3n+2 beta_2.                       (10)
+
+This is **unproved**. If true, combining beta_2>=n/2 would yield the sharp
+all-cubic-bipartite gap bound SF_2-beta_2<=n/14, attained by the Heawood
+graph and its disjoint unions. Neither this gap bound nor (10) follows
+from the endpoint characterization alone.
+
+The [discovery script](../scripts/explore_cubic_stability.py) evaluates all
+120 circulant parameter choices through20vertices and six choices on22
+vertices, with exact beta and SF computed by subset evaluation. No candidate
+counterexample occurred among those126instances; six have a strict gap.
+Different parameters may give isomorphic or disconnected graphs. The
+[exploration receipt](../output/cubic-stability-exploration.json) records
+the graphs and witnesses. This finite evidence only motivates further
+proof work and counterexample search; it does not establish (10).

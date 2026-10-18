@@ -29,6 +29,26 @@ def Failure {Vertex : Type} (adjacency : Vertex → Vertex → Prop)
   ¬ selection outside ∧
     ¬ TwoAt adjacency (fun vertex => selection vertex ∧ vertex ≠ deleted) outside
 
+theorem covered_deletion_has_failure {Vertex : Type}
+    (adjacency : Vertex → Vertex → Prop) (selection : Vertex → Prop)
+    (hminimal : Minimal adjacency selection) (deleted : Vertex)
+    (hselected : selection deleted)
+    (hnew : TwoAt adjacency (fun vertex => selection vertex ∧ vertex ≠ deleted) deleted) :
+    ∃ outside, Failure adjacency selection deleted outside := by
+  classical
+  apply Classical.byContradiction
+  intro hnone
+  have hforms : Forms adjacency (fun vertex => selection vertex ∧ vertex ≠ deleted) := by
+    intro outside houtside
+    by_cases hequal : outside = deleted
+    · exact hequal ▸ hnew
+    · have hold : ¬ selection outside := fun hs => houtside ⟨hs, hequal⟩
+      apply Classical.byContradiction
+      intro hfailure
+      exact hnone ⟨outside, hold, hfailure⟩
+  exact hminimal.2 _ (fun _ hvertex => hvertex.1)
+    ⟨deleted, hselected, fun hvertex => hvertex.2 rfl⟩ hforms
+
 theorem high_has_failure {Vertex : Type}
     (adjacency : Vertex → Vertex → Prop) (selection : Vertex → Prop)
     (hirreflexive : ∀ vertex, ¬ adjacency vertex vertex)
@@ -70,6 +90,54 @@ theorem adjacent_high_survives {Vertex : Type}
   · have hsecond : second ≠ deleted := fun heq => hne (hfirst.trans heq.symm)
     exact Or.inr ⟨center, second, ⟨hhigh.1, hdifferent⟩, ⟨hs, hsecond⟩, hedge, hb⟩
   · exact Or.inr ⟨center, first, ⟨hhigh.1, hdifferent⟩, ⟨hf, hfirst⟩, hedge, ha⟩
+
+theorem selected_leaf_has_private_witness {Vertex : Type}
+    (adjacency : Vertex → Vertex → Prop) (selection : Vertex → Prop)
+    (hirreflexive : ∀ vertex, ¬ adjacency vertex vertex)
+    (hsymmetric : ∀ first second, adjacency first second → adjacency second first)
+    (hminimal : Minimal adjacency selection)
+    (hnoisolates : ∀ vertex, selection vertex → ∃ neighbor, selection neighbor ∧ adjacency vertex neighbor)
+    (leaf support : Vertex) (hleaf : selection leaf)
+    (hhigh : High adjacency selection support) (hsupport : adjacency leaf support)
+    (hunique : ∀ neighbor, selection neighbor → adjacency leaf neighbor → neighbor = support) :
+    ∃ outside, Failure adjacency selection leaf outside ∧ adjacency outside leaf ∧
+      ∀ neighbor, selection neighbor → adjacency outside neighbor → neighbor = leaf := by
+  classical
+  have hdifferent : support ≠ leaf := by
+    intro hequal
+    exact hirreflexive leaf (hequal ▸ hsupport)
+  have hnew := adjacent_high_survives adjacency selection support leaf leaf
+    hhigh hdifferent hsupport
+  obtain ⟨outside, hfailure⟩ :=
+    covered_deletion_has_failure adjacency selection hminimal leaf hleaf hnew
+  have hadjacent : adjacency outside leaf := by
+    apply Classical.byContradiction
+    intro hnonadjacent
+    apply hfailure.2
+    rcases hminimal.1 outside hfailure.1 with ⟨first, second, hf, hs, hne, ha, hb⟩ |
+      ⟨center, endpoint, hc, he, ha, hb⟩
+    · have hfirst : first ≠ leaf := fun heq => hnonadjacent (heq ▸ ha)
+      have hsecond : second ≠ leaf := fun heq => hnonadjacent (heq ▸ hb)
+      exact Or.inl ⟨first, second, ⟨hf, hfirst⟩, ⟨hs, hsecond⟩, hne, ha, hb⟩
+    · have hcenter : center ≠ leaf := fun heq => hnonadjacent (heq ▸ ha)
+      by_cases hendpoint : endpoint = leaf
+      · have hequal : center = support :=
+          hunique center hc (hsymmetric _ _ (hendpoint ▸ hb))
+        exact adjacent_high_survives adjacency selection support leaf outside
+          hhigh hdifferent (hequal ▸ ha)
+      · exact Or.inr ⟨center, endpoint, ⟨hc, hcenter⟩, ⟨he, hendpoint⟩, ha, hb⟩
+  refine ⟨outside, hfailure, hadjacent, ?_⟩
+  intro neighbor hneighbor hedge
+  apply Classical.byContradiction
+  intro hne
+  apply hfailure.2
+  obtain ⟨endpoint, he, ha⟩ := hnoisolates neighbor hneighbor
+  by_cases hendpoint : endpoint = leaf
+  · have hequal : neighbor = support :=
+      hunique neighbor hneighbor (hsymmetric _ _ (hendpoint ▸ ha))
+    exact adjacent_high_survives adjacency selection support leaf outside
+      hhigh hdifferent (hequal ▸ hedge)
+  · exact Or.inr ⟨neighbor, endpoint, ⟨hneighbor, hne⟩, ⟨he, hendpoint⟩, hedge, ha⟩
 
 theorem failure_witnesses_disjoint {Vertex : Type}
     (adjacency : Vertex → Vertex → Prop) (selection : Vertex → Prop)

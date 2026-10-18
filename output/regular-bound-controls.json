@@ -9,12 +9,13 @@
     "6": 172
   },
   "totals": {
-    "literal_local_tests": 1667081,
-    "minimal_sets": 11896,
-    "graphs": 1300,
-    "subsets": 261082,
-    "extremal_high_sets": 360,
-    "all_failure_witness_budgets": 10558,
+    "literal_local_tests": 1672201,
+    "minimal_sets": 11962,
+    "graphs": 1301,
+    "subsets": 262106,
+    "extremal_high_sets": 362,
+    "regular_equality_sets": 638,
+    "all_failure_witness_budgets": 10708,
     "triangle_free_equality_sets": 540
   },
   "deterministic_samples": [
@@ -249,6 +250,83 @@
       "minimal_sets": 375
     }
   ],
+  "equality_with_high_triangles": {
+    "order": 10,
+    "degree": 3,
+    "beta2": 6,
+    "SF2": 6,
+    "minimal_sets": 66,
+    "selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        8
+      ]
+    ]
+  },
   "sharp_examples": [
     {
       "degree": 1,
@@ -440,5 +518,5 @@
       ]
     ]
   },
-  "scope": "Literal K1,2 stars independently checked against local test. All proper-subset minimality tested dynamically for all labeled graphs through order5, all regular labeled graphs of order6,16 deterministic matching-union samples, Heawood and12 rectangular grids through4x4. Every high-vertex failure witness checked for disjointness and weighted capacity. Triangle-free equality partition and bipartite matching exchange checked. Degree1..8 sharp families and a non-dissociation 20-vertex extremal selection checked by explicit certificates, not exhaustive graph evaluation. General conclusions rely on written proofs."
+  "scope": "Literal K1,2 stars independently checked against local test. All proper-subset minimality tested dynamically for all labeled graphs through order5, all regular labeled graphs of order6,16 deterministic matching-union samples, Heawood and12 rectangular grids through4x4. Every high-vertex failure witness checked for disjointness and weighted capacity. Equality partition checked for all regular extremal selections, including triangles; bipartite matching exchange checked. Degree1..8 sharp families and a non-dissociation 20-vertex extremal selection checked by explicit certificates, not exhaustive graph evaluation. General conclusions rely on written proofs."
 }

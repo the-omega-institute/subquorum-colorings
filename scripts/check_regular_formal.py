@@ -49,7 +49,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != 10:
+    if len(declarations) != 12:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
         if set(filter(None, map(str.strip, axioms.split(',')))) - {
@@ -60,7 +60,7 @@ def main():
                    lean_version=version, active_lean_lake_before_run=active,
                    memory_before_run=memory, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
-                   scope='Symbolic, arbitrary-type proof: a high vertex of a minimal selection has an outside failure witness; witness sets for different high vertices are disjoint; a witness has no three selected neighbors and a nonadjacent witness has at most one; degree-capacity arithmetic, conditional cut accounting and all-degree regular/cubic/grid-boundary inequalities. Finite graph cardinal summation, the full graph-level order bound, equality partition, matching exchange and grid corollary have written proofs and independent controls; they are not claimed fully formalized here. No finite graph certificates or compiler-trust axioms used.')
+                   scope='Symbolic, arbitrary-type proof: a covered deletion in a minimal selection has an outside failure witness; a high vertex is such a deletion; witness sets for different high vertices are disjoint; without selected isolates a selected leaf adjacent to a high vertex has a private outside witness; a high witness has no three selected neighbors and a nonadjacent witness has at most one; degree-capacity arithmetic, conditional cut accounting and all-degree regular/cubic/grid-boundary inequalities. Finite graph cardinal summation, full graph-level order bound, complete regular equality partition, matching exchange and grid corollary have written proofs and independent controls; they are not claimed fully formalized here. No finite graph certificates or compiler-trust axioms used.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))

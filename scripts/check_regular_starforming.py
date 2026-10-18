@@ -137,9 +137,11 @@ def check_graph(adjacency, totals):
         assert (minimum + maximum - 1) * len(chosen) + isolated <= maximum * order
         if regular and maximum >= 1:
             assert (2 * maximum - 1) * len(chosen) + isolated <= maximum * order
-            if triangle_free and maximum >= 2 and (2 * maximum - 1) * len(chosen) == maximum * order:
+            if maximum >= 2 and (2 * maximum - 1) * len(chosen) == maximum * order:
                 extremal_high += equality_partition(adjacency, selected, maximum, colors)
-                totals['triangle_free_equality_sets'] += 1
+                totals['regular_equality_sets'] += 1
+                if triangle_free:
+                    totals['triangle_free_equality_sets'] += 1
         totals['minimal_sets'] += 1
     if regular and maximum >= 2 and colors is not None:
         assert ((2 * maximum - 1) * star_value == maximum * order) == (
@@ -177,6 +179,15 @@ def high_equality_example():
     edges += [(6 + vertex, 12 + vertex) for vertex in range(6)]
     edges += [(6 + vertex, 18 + vertex % 2) for vertex in range(6)]
     return graph_from_edges(20, edges), set(range(12))
+
+
+def triangular_equality_example():
+    edges = [(vertex, (vertex + 1) % 3) for vertex in range(3)]
+    edges += [(6 + vertex, 6 + (vertex + 1) % 3) for vertex in range(3)]
+    edges += [(vertex, 3 + vertex) for vertex in range(3)]
+    edges += [(3 + vertex, 6 + vertex) for vertex in range(3)]
+    edges += [(3 + vertex, 9) for vertex in range(3)]
+    return graph_from_edges(10, edges), set(range(6))
 
 
 def selected_certificate(adjacency, chosen):
@@ -221,6 +232,12 @@ def main():
             samples.append(check_graph(adjacency, totals))
     from check_cubic_starforming import base
     samples.append(check_graph(base(), totals))
+    triangle_adjacency, triangle_selection = triangular_equality_example()
+    triangle_result = check_graph(triangle_adjacency, totals)
+    assert triangle_result['SF2'] == triangle_result['beta2'] == 6
+    triangle_mask = selected_certificate(triangle_adjacency, triangle_selection)
+    assert bipartition(triangle_adjacency) is None
+    assert equality_partition(triangle_adjacency, triangle_mask, 3, None)
     grids = []
     for rows, columns in [(rows, columns) for rows in range(2, 5) for columns in range(2, 5)] + [
             (2, 5), (2, 6), (3, 5)]:
@@ -255,11 +272,14 @@ def main():
     result = dict(status='ALL_CHECKS_PASSED', exhaustive_labeled_graphs=labeled_counts,
                   totals=dict(totals), deterministic_samples=samples, seed=20261019,
                   rectangular_grids=grids,
+                  equality_with_high_triangles=dict(**triangle_result, selected=sorted(triangle_selection),
+                      edges=[[vertex, neighbor] for vertex, neighbors in enumerate(triangle_adjacency)
+                             for neighbor in sorted(neighbors) if vertex < neighbor]),
                   sharp_examples=sharp,
                   non_dissociation_extremal_selection=dict(order=20, SF2=12, beta2=12,
                       selected=sorted(chosen), edges=[[vertex, neighbor] for vertex, neighbors in
                           enumerate(adjacency) for neighbor in sorted(neighbors) if vertex < neighbor]),
-                  scope='Literal K1,2 stars independently checked against local test. All proper-subset minimality tested dynamically for all labeled graphs through order5, all regular labeled graphs of order6,16 deterministic matching-union samples, Heawood and12 rectangular grids through4x4. Every high-vertex failure witness checked for disjointness and weighted capacity. Triangle-free equality partition and bipartite matching exchange checked. Degree1..8 sharp families and a non-dissociation 20-vertex extremal selection checked by explicit certificates, not exhaustive graph evaluation. General conclusions rely on written proofs.')
+                  scope='Literal K1,2 stars independently checked against local test. All proper-subset minimality tested dynamically for all labeled graphs through order5, all regular labeled graphs of order6,16 deterministic matching-union samples, Heawood and12 rectangular grids through4x4. Every high-vertex failure witness checked for disjointness and weighted capacity. Equality partition checked for all regular extremal selections, including triangles; bipartite matching exchange checked. Degree1..8 sharp families and a non-dissociation 20-vertex extremal selection checked by explicit certificates, not exhaustive graph evaluation. General conclusions rely on written proofs.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(dict(status=result['status'], totals=dict(totals))))

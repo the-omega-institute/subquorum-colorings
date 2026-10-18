@@ -105,7 +105,7 @@ claim is made. Exact SF_2 of our Heawood-port family is now established in
 [degree-capacity theorem](REGULAR_STAR_FORMING_BOUND.md) gives the sharp
 order bound SF_2<=dn/(2d-1) for every d-regular graph, including the cubic
 bound 3n/5, with an irregular-degree version and a bipartite equality
-characterization. The optimal cubic gap coefficient and three-connectivity
+characterization and an equality partition for all regular graphs. The optimal cubic gap coefficient and three-connectivity
 remain research questions.
 
 ## Recheck for the degree-capacity theorem
@@ -132,3 +132,34 @@ not return a directly matching theorem; metadata search is not evidence
 that none exists. The scope and possible prior appearance of the general
 order bound and equality characterization remain to be checked against
 that earlier source and subsequent citing papers before making a novelty claim.
+
+## Favaron's 2012 upper-parameter paper: full-text comparison
+
+O. Favaron, *Bounds on the Upper k-Domination Number and the Upper
+k-Star-Forming Number of a Graph*, JCMCC80(2012),321–332:
+[publisher record](https://combinatorialpress.com/jcmcc-articles/volume-080/bounds-on-the-upper-k-domination-number-and-the-upper-k-star-forming-number-of-a-graph/),
+[original scanned article](https://combinatorialpress.com/article/jcmcc/Volume%20080/vol-080-paper%2022.pdf).
+The independent Oracle review identified this directly relevant source.
+We then retrieved the original, read all twelve pages through OCR, and
+visually checked page326 containing Theorem10 and its hypotheses.
+
+Theorem10 states SF_k(G)<=n-delta+k-1 and Gamma_k(G)<=n-delta+k-1 for
+1<=k<=delta. Theorem13 characterizes SF equality at n-delta+k-1 for
+2<=k<=delta through her family H_k: a (k-1)-regular selected set completely
+joined to its complement, with the remaining minimum-degree conditions.
+Theorems1–9 concern delta<=k<=Delta and the endpoint n-1; Theorems17–18
+describe the upper-k-domination endpoint. The final open question compares
+SF_k with Gamma_k for k<=delta; its Gamma_k is not the ordinary Gamma
+used in our bipartite comparison.
+
+For d-regular graphs at k=2, Theorem10 gives n-d+1. Our degree-capacity
+bound dn/(2d-1) is strictly smaller when d>=2 and n>2d-1:
+
+    (n-d+1)-dn/(2d-1)=(d-1)(n-2d+1)/(2d-1)>0.
+
+At n=2d-1 the two numerical bounds coincide; the endpoint problems should
+not be described as disjoint in that case. Our sharp bipartite examples
+have n=4d-2 and attain 2d, whereas the older bound is3d-1. No regular
+fractional-order bound or our five-class equality characterization appears
+in this inspected twelve-page article. This is a verified comparison with
+that specific source, not proof of priority over all subsequent work.

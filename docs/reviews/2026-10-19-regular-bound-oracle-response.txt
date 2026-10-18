@@ -1,0 +1,146 @@
+Verdict: the bounds (1)–(7), the sharpness construction, the stated equality characterization, and the bipartite replacement are correct under your conventions. I found no reuse of witness capacity, no missing deletion case, and no unwanted edge in the replacement.There is also a strengthening: the five-part equality characterization holds for all finite simple  $d$ -regular graphs with  $d\ge2$ . Triangle-freeness can be removed by using the selected-leaf minimality argument before excluding adjacent witnesses. Your triangle-free proof is valid as written; the stronger argument is given below.This is an analytic proof review. I did not use enumeration or Lean.1. The weighted witness budget is soundThe coverage criterion is exactly right. For  $x\notin S$ , coverage means either
+$$a(x)\ge2,$$
+or there are  $u,y\in S$  with edges  $xu,uy$ . These are precisely the possibilities in which  $x$  is the center or a leaf of a non-induced  $K_{1,2}$ .Upward closure also holds: enlarging the selection preserves every existing covering star for any vertex that remains outside. Consequently, failure of every single deletion is equivalent to inclusion-minimality.Witness existence and injectivityFor  $v\in H$ , deleting  $v$  leaves its at least two selected neighbors available. Thus the newly omitted  $v$  is covered as a center, and minimality must be witnessed by some original outside vertex  $x\in T$ .Your injectivity argument is valid, including in graphs with triangles. If  $x$  witnessed two distinct high vertices  $v,w$ , every covering star for  $x$  would have to contain both of them. Since a covering star has exactly two selected vertices, its vertex set would be  $\{x,v,w\}$ .At least one of  $v,w$ , say  $v$ , is adjacent to  $x$ . Because  $a(v)\ge2$ , there is  $y\in N(v)\cap S$  with  $y\ne w$ . Then the edges  $xv,vy$  give a covering star avoiding  $w$ , a contradiction.The non-induced convention is essential here: an additional edge  $xy$  does not invalidate this star. Thus the entire failure-witness sets of distinct high vertices are disjoint, and any choice of one witness per high vertex gives an injection.Each assigned witness pays the full weightFor  $x=f(v)$ , formation before deletion gives  $a(x)\ge1$ , while failure after deleting one vertex gives  $a(x)\le2$ .The two capacity cases are:
+$$\begin{array}{ll}
+xv\in E(G):
+&
+a(v)-1\le\Delta-2\le\Delta-a(x),\\[2mm]
+xv\notin E(G):
+&
+a(x)=1,\qquad
+a(v)-1\le\Delta-1=\Delta-a(x).
+\end{array}$$
+In the first case, the edge to the outside vertex  $x$  uses one of  $v$ 's degree slots. In the second, deletion does not change  $x$ 's selected-neighbor set, so two selected neighbors would keep  $x$  covered as a center.These are genuine weighted payments: one witness pays  $a(v)-1$ , which can exceed one. Injectivity ensures that the same capacity is never assigned twice.An exact slack identity verifies all the accountingFor any chosen injection, put
+$$C_x=\Delta-a(x),
+\qquad
+q_v=C_{f(v)}-(a(v)-1).$$
+The capacity argument gives  $C_x\ge0$  and  $q_v\ge0$ .The cut identity then yields the exact formula
+$$\boxed{
+\Delta|T|-
+\left[
+\sum_{v\in S}(\deg_G(v)-1)+z
+\right]
+=
+\sum_{v\in H}q_v+
+\sum_{x\in T\setminus f(H)}C_x.
+}
+\tag{8}$$
+To see the left-hand expression, combine
+$$e(S,T)=\sum_{v\in S}(\deg_G(v)-a(v))$$
+with the high-vertex weights:
+$$\sum_{v\in S}(\deg_G(v)-a(v))
++\sum_{v\in H}(a(v)-1)
+=
+\sum_{v\in S}(\deg_G(v)-1)+z.$$
+A vertex with selected degree zero contributes the extra one recorded by  $z$ ; selected degree one contributes no high-vertex weight.Every term on the right of (8) is nonnegative. This proves (1), and it also shows explicitly why slack cannot cancel elsewhere in the argument.For a  $d$ -regular graph, (8) becomes
+$$\boxed{
+dn-(2d-1)|S|
+=
+z+
+\sum_{v\in H}\bigl[d-a(f(v))-a(v)+1\bigr]
++
+\sum_{x\in T\setminus f(H)}(d-a(x)).
+}
+\tag{9}$$
+Thus the equality conditions used later follow exactly, for any chosen injective witness map.Lower-bounding the selected degrees by  $\delta$  proves (2), and regularity proves (3). The cases  $H=\varnothing$  and  $\Delta=0$  cause no problem. In an edgeless graph, the only forming set is  $V(G)$ , and the negative degree-minus-one terms are exactly canceled by  $z=n$ .2. The equality partition is necessary—and triangle-freeness is unnecessaryAssume  $d\ge2$  and
+$$(2d-1)|S|=dn.$$
+By (9),
+$$z=0,$$
+every chosen capacity inequality is tight, and every unused outside vertex has selected degree  $d$ .Your stated triangle-free argument is valid: an adjacent witness of selected degree one gives strict slack, while an adjacent witness of selected degree two produces the triangle you describe. The following leaf argument excludes the latter configuration even without triangle-freeness.A leaf adjacent to a high vertex must have an outside witness of selected degree oneLet  $u\in S$  satisfy
+$$N(u)\cap S=\{h\},
+\qquad a(h)\ge2.$$
+After deleting  $u$ , the newly omitted  $u$  remains covered through  $h$ , because  $h$  retains another selected neighbor.Minimality therefore supplies an original outside vertex  $x$  that loses coverage. We can classify all possibilities.If  $x$  is not adjacent to  $u$ , any covering star whose survival depended on  $u$  would have to be
+$$x-h-u.$$
+But another selected neighbor  $y\ne u$  of  $h$  gives the surviving star  $x-h-y$ . Hence such an  $x$  cannot fail.If  $x$  is adjacent to  $u$  and  $a(x)\ge3$ , it retains two selected neighbors and remains covered as a center.If  $a(x)=2$ , write
+$$N(x)\cap S=\{u,w\}.$$
+For  $x$  to become uncovered after deleting  $u$ , its remaining selected neighbor  $w$  must become selected-isolated. Since  $z=0$  initially, this forces
+$$N(w)\cap S=\{u\}.$$
+But  $u$ 's only selected neighbor is  $h$ , so  $w=h$ , contradicting  $a(h)\ge2$ .Therefore minimality forces
+$$\boxed{N(x)\cap S=\{u\}.}
+\tag{10}$$
+This argument includes  $d=2$ : retaining one selected neighbor at the high center is sufficient.Equality forces the high neighbor of every such leaf to have selected degree  $d$ The vertex  $x$  from (10) has capacity  $d-1>0$ . Consequently it cannot be unused by  $f$ , so
+$$x=f(v)$$
+for some  $v\in H$ .Since  $u$  is a selected leaf and  $v$  is high,  $v\ne u$ . As  $u$  is  $x$ 's only selected neighbor,  $xv\notin E(G)$ . Tightness of its payment gives
+$$a(v)-1=d-1,
+\qquad\text{hence}\qquad a(v)=d.$$
+For deleting  $v$  to uncover  $x$ , the vertex  $u$  must lose its sole selected support. That support was  $h$ , so  $v=h$ .We have proved:
+$$\boxed{
+\text{Every selected leaf adjacent to a high vertex has a high neighbor of selected degree }d.
+}
+\tag{11}$$
+Adjacent high-vertex witnesses are impossibleNow take a chosen witness  $x=f(h)$  adjacent to its high vertex  $h$ .If  $a(x)=1$ , then
+$$a(h)-1\le d-2<d-1=d-a(x),$$
+contradicting tightness.If  $a(x)=2$ , write
+$$N(x)\cap S=\{h,u\}.$$
+Failure after deleting  $h$ , together with  $z=0$ , forces
+$$N(u)\cap S=\{h\}.$$
+Thus  $u$  is a selected leaf adjacent to a high vertex. By (11),  $a(h)=d$ , contradicting the outside edge  $hx$ .Therefore all chosen high witnesses are nonadjacent. Tightness gives
+$$a(h)=d\quad(h\in H),
+\qquad
+a(f(h))=1.$$
+Every other outside vertex has selected degree  $d$ , so
+$$X=f(H),\qquad |X|=|H|.$$
+Since  $z=0$ , all selected vertices outside  $H$  have selected degree one.This establishes the same intermediate conclusion as your triangle-free proof, on arbitrary regular graphs.Both leaf counts are justifiedFor  $x=f(h)$ , let  $u$  be its sole selected neighbor. Initial coverage and failure after deleting  $h$  give
+$$N(u)\cap S=\{h\}.$$
+Distinct high vertices yield distinct leaves, because a selected leaf has only one selected neighbor. Hence
+$$|U|\ge |H|.$$
+Conversely, the leaf argument above assigns every  $u\in U$  an outside witness whose sole selected neighbor is  $u$ . Such a vertex belongs to  $X$ , and distinct leaves cannot share it. Thus
+$$|U|\le |X|=|H|.$$
+It follows that
+$$|H|=|U|=|X|.$$
+The adjacency map  $U\to H$  is surjective between equally sized finite sets, so every high vertex has exactly one selected leaf. Likewise every leaf has exactly one neighbor in  $X$ . This gives the two claimed bijections.The remaining neighborhoods are forcedA selected degree-one vertex outside  $U$  is adjacent to another selected degree-one vertex. These pairs are exactly the selected  $K_2$  components forming  $P$ .The full neighborhood structure is therefore:Vertex classAll neighbors $P$ Its mate in  $P$ , and  $d-1$  vertices of  $Y$  $H$ Its unique vertex of  $U$ , and  $d-1$  vertices of  $H$  $U$ Its unique vertex of  $H$ , its unique vertex of  $X$ , and  $d-2$  vertices of  $Y$  $X$ Its unique vertex of  $U$ , and  $d-1$  vertices of  $X$  $Y$  $d$  vertices of  $P\cup U$ In particular, a vertex of  $Y$  already has all its neighbors in  $S$ , so it has no outside neighbor. This forces the remaining neighbors of  $X$  to lie in  $X$ , proving that  $G[X]$  is  $(d-1)$ -regular. The corresponding statement for  $H$  follows from  $a(h)=d$  and its unique leaf.There are no additional edges that could interfere with the replacement.3. The partition is sufficient, with the claimed equality countSuppose the stated partition and full neighborhood conditions hold.Every  $y\in Y$  is covered as a center, since  $d\ge2$ . Every  $x\in X$  is covered by its corresponding star  $x-u-h$ . Thus
+$$S=P\cup H\cup U$$
+is star-forming.Each deletion has the claimed failure:Deleting  $p\in P$  leaves  $p$  with its mate as its only selected neighbor, and that mate becomes selected-isolated. Thus  $p$  is uncovered.Deleting  $u\in U$  leaves its matched  $x\in X$  with no selected neighbor.Deleting  $h\in H$  leaves its associated  $x\in X$  with sole selected neighbor  $u$ , whose selected degree has become zero.The other high vertices cannot restore coverage in the last case: none is a selected neighbor of  $x$ , and  $u$ 's sole selected neighbor was  $h$ .For the count, put
+$$p=|P|,\qquad h=|H|=|U|=|X|,\qquad y=|Y|.$$
+Counting edges incident with  $Y$  gives
+$$dy=(d-1)p+(d-2)h.$$
+Since
+$$|S|=p+2h,\qquad n=p+3h+y,$$
+we obtain
+$$\begin{aligned}
+dn
+&=dp+3dh+dy\\
+&=(2d-1)p+(4d-2)h\\
+&=(2d-1)|S|.
+\end{aligned}$$
+Thus sufficiency is exact. It also uses no triangle-free assumption.4. Sharpness and two-connectivity check outFor the four-part construction, every vertex of  $A$  or  $B$  has one matching neighbor and  $d-1$  neighbors in the specified complete bipartite piece. Every vertex of  $C$  or  $D$  has  $d$  neighbors. Hence the graph is simple, bipartite, and  $d$ -regular on
+$$n=4d-2.$$
+The selection  $A\cup B$  induces a matching and has size  $2d$ . Every outside vertex has  $d$  selected neighbors. Deleting any selected vertex uncovers that vertex, because its matching partner becomes selected-isolated. Thus the minimality argument is complete.For any dissociation set  $D'$  in a  $d$ -regular graph,
+$$(d-1)|D'|
+\le e(D',V\setminus D')
+\le d(n-|D'|),$$
+so
+$$\beta_2(G)\le \frac{dn}{2d-1}.$$
+The exhibited selection is itself a dissociation set and attains this bound. Together with (3),
+$$\beta_2(G)=\mathrm{SF}_2(G)=2d.$$
+The connectivity argument is also correct. For  $d\ge3$ , the two pieces
+$$G[A\cup D]\cong K_{d,d-1},
+\qquad
+G[B\cup C]\cong K_{d,d-1}$$
+remain connected after any single vertex deletion. At most one of the  $d$  joining matching edges is lost, leaving at least  $d-1$  surviving connections. The entire graph remains connected.For  $d=2$ , the construction is  $C_6$ . For  $d=1$ , any regular graph is a disjoint union of edges, has no  $K_{1,2}$ , and has both parameters equal to  $n$ .5. The bipartite replacement has no hidden interactionFor completeness, the general relation
+$$\beta_2(G)\le \mathrm{SF}_2(G)$$
+has a short self-contained proof under your definitions.Every inclusion-maximal dissociation set  $D'$  is star-forming: adding any outside vertex creates a  $K_{1,2}$ , which must contain that outside vertex because  $G[D']$  contains none. Moreover, deleting any  $v\in D'$  uncovers  $v$ : a covering star for  $v$  would have been a  $K_{1,2}$  inside  $G[D']$ . Thus every maximal dissociation set is a minimal star-forming set.Now consider your replacement
+$$D=P\cup U\cup(H\cap L)\cup(X\cap R).$$
+Each matched path  $h-u-x$  has  $h,x$  in the same bipartition class. Therefore exactly one of its endpoints  $h,x$  enters  $D$ , while  $u$  always enters. Each such triple contributes two vertices to  $D$ , just as it contributes two to  $S$ .The induced-degree verification is complete:Every  $u\in U$  has exactly one of its paired  $h,x$  selected; its  $Y$ -neighbors are omitted.Every chosen  $h\in H\cap L$  has its  $U$ -neighbor selected, while all its neighbors in  $H$  lie in  $H\cap R$  and are omitted.Every chosen  $x\in X\cap R$  has its  $U$ -neighbor selected, while all its neighbors in  $X$  lie in  $X\cap L$  and are omitted.Every  $p\in P$  retains its mate, while its other neighbors lie in the omitted class  $Y$ .Thus  $G[D]$  is a disjoint union of  $K_2$ 's. The potentially dangerous edges inside  $H$  and inside  $X$  are controlled by the choice of bipartition sides.The matching  $H\leftrightarrow X$  preserves sides, so explicitly
+$$|H\cap L|+|X\cap R|
+=
+|H\cap L|+|H\cap R|
+=
+|H|.$$
+Hence
+$$|D|=|P|+|U|+|H|=|S|.$$
+This proves the forward implication in (6). The reverse follows from  $\beta_2\le\mathrm{SF}_2$  and the regular upper bound.The endpoint here is correctly unrounded:
+$$\mathrm{SF}_2(G)=\frac{dn}{2d-1}.$$
+Merely attaining the floor does not make the slack in (9) vanish.The cubic gap arithmetic is correctWrite
+$$s=\mathrm{SF}_2(G),\qquad b=\beta_2(G).$$
+For a cubic bipartite graph,  $b\ge n/2$ , and  $s\le3n/5$ , giving
+$$s-b\le \frac n{10}.$$
+If  $s>b$ , (6) excludes  $5s=3n$ . Integrality gives
+$$5s\le3n-1.$$
+Consequently,
+$$10(s-b)
+\le 2(3n-1)-5n
+=n-2.$$
+There is no rounding error. Equivalently, for a positive gap,
+$$s-b\le\left\lfloor\frac{n-2}{10}\right\rfloor.$$
+These arguments establish the universal bounds; they make no optimality assertion about the coefficient.Necessary clarificationsI would add only the following for a standalone presentation:Allow empty partition classes explicitly. Write “a disjoint decomposition into five labeled classes, some possibly empty.” Your sharpness examples have  $H=U=X=\varnothing$ .Expand the leaf-witness locality sentence. An outside nonneighbor of a deleted selected leaf cannot lose coverage: any affected star would use its high neighbor as center, and that center retains another selected neighbor.Define the two parameters on first use, if this has not been done immediately beforehand:  $\mathrm{SF}_2$  is the maximum size of an inclusion-minimal forming set, and  $\beta_2$  is the maximum size of a set inducing maximum degree at most one. The short argument above supplies  $\beta_2\le\mathrm{SF}_2$  if needed.No correction to (1)–(7) is required. Removing triangle-freeness from the equality characterization is an available strengthening.The separate Heawood-family formula is not re-established by this audit; its construction is not included in the excerpt and it is not needed for any of the conclusions above.Literature: what I can identify and substantiateI made a limited source check. The references I can name concretely are:M. Chellali and O. Favaron, “On  $k$ -star-forming sets in graphs,” Journal of Combinatorial Mathematics and Combinatorial Computing 68 (2009), 205–214. I verified the bibliographic record in the publisher’s volume listing. I am not claiming a full-text comparison with your theorem here. Combinatorial PressO. Favaron, “Bounds on the Upper  $k$ -Domination Number and the Upper  $k$ -Star-Forming Number of a Graph,” Journal of Combinatorial Mathematics and Combinatorial Computing 80 (2012), 321–332. Its publisher abstract expressly concerns upper bounds for these parameters and the structure of graphs attaining them. This is directly relevant prior literature, but I have not verified whether a particular theorem there implies your degree-capacity bound or gives the same equality class. combinatorialpress.com+1R. Sahbi, “Upper  $k$ -Star-Forming Sets,  $k$ -Independence, and Upper Domination,” arXiv:2610.03785v2. I inspected §5: it contains local failure-certificate conditions and injectivity within one bipartition class. The current arXiv record marks the work as withdrawn in v3 on 12 October 2026, so any discussion of that material should identify the version. arxiv.org+1I do not have a verified priority comparison for your exact weighted inequality, complete equality partition, or bipartite endpoint replacement. The proof verdict above is independent of any priority claim.
