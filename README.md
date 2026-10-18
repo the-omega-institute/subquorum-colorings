@@ -81,6 +81,15 @@ proofs, twelve symbolic Lean audits and independent controls are available;
 the full equality characterization and finite cardinal summation have
 written proofs rather than complete Lean formalizations.
 
+The [cubic compensation theorem](docs/CUBIC_STABILITY_COMPENSATION.md)
+improves the universal cubic bipartite gap bound from n/10 to3n/34.
+For any minimal selection S of size s with z selected isolates and
+delta=3n-5s, two explicit dissociation exchanges prove
+2(s-beta_2)<=delta+2z<=3delta. If an attaining S has no isolates, the
+sharper stability candidate7SF_2<=3n+2beta_2 follows. The unrestricted
+candidate remains open. Eight symbolic Lean audits and independent
+literal-star/exchange controls pass; the graph-level counting proof is written.
+
 A [port-deficiency theorem and exact connected family](docs/CUBIC_STABILITY_PORTS.md)
 now identify a stability boundary: for every k>=1 there is a two-connected
 cubic bipartite graph on 14+20k vertices with SF_2=8+12k and

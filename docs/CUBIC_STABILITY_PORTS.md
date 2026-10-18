@@ -151,6 +151,12 @@ For G_k both sides of its first form are exactly two. Thus (3) gives
 arbitrarily large two-connected examples attaining this candidate.
 This does not prove (4) for other graphs.
 
+The subsequent [compensation proof](CUBIC_STABILITY_COMPENSATION.md)
+establishes (4) when an attaining selection has no selected isolates,
+and a weaker unconditional gap bound floor(3n/34). It identifies
+shared isolate incidences as the residual obstruction in its current
+exchange method; the general target (4) remains open.
+
 It does refute the stronger rule
 
     SF>beta implies SF<=4n/7,

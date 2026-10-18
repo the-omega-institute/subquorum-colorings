@@ -208,8 +208,13 @@ For cubic bipartite graphs, a positive gap therefore forces
     SF_2-beta_2 <= n/10,
     10(SF_2-beta_2) <= n-2  when the gap is positive.            (7)
 
-These are universal bounds, not a claim that the gap coefficient 1/10 is
-optimal. The exact Heawood family has gap ceil(r/2) on 14r vertices.
+These are consequences of this endpoint argument, not a claim that the
+gap coefficient 1/10 is optimal. The subsequent
+[compensation theorem](CUBIC_STABILITY_COMPENSATION.md) improves the
+universal cubic bipartite gap bound to floor(3n/34), and proves the
+sharper candidate7SF_2<=3n+2beta_2 when an attaining selection has no
+isolates. The unrestricted candidate remains open.
+The exact Heawood family has gap ceil(r/2) on 14r vertices.
 Its grid analogue, planar extremal cases, and the optimal cubic gap bound
 remain separate questions.
 

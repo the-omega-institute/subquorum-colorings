@@ -1,0 +1,32 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T20:27:33.604557+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3553.\nPages active:                                 239369.\nPages inactive:                               216480.\nPages speculative:                             22185.\nPages throttled:                                   0.\nPages wired down:                             246958.\nPages purgeable:                                1049.\n\"Translation faults\":                    15160084447.\nPages copy-on-write:                       924158220.\nPages zero filled:                        6257398556.\nPages reactivated:                        2819477918.\nPages purged:                              133562516.\nFile-backed pages:                            296725.\nAnonymous pages:                              181309.\nPages stored in compressor:                  1451707.\nPages occupied by compressor:                 278302.\nDecompressions:                           2230009951.\nCompressions:                             2641002507.\nPageins:                                  3833707935.\nPageouts:                                   10835154.\nSwapins:                                    25131555.\nSwapouts:                                   31439522.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 4.021,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CubicStability.lean",
+      "seconds": 0.495,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingCubicStabilityAudit.lean",
+      "seconds": 0.385,
+      "stdout": "'StarForming.CubicStability.leaf_has_adjacent_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.CubicStability.leaf_failure_other_neighbor_is_isolated' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'StarForming.CubicStability.high_adjacent_failure_other_neighbor_is_isolated' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'StarForming.CubicStability.isolation_residual_accounting' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicStability.two_exchange_accounting' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicStability.unconditional_cubic_stability' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicStability.cubic_gap_bound' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicStability.no_isolates_stability' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 687276032,
+  "scope": "Arbitrary-type symbolic leaf adjacent failure, leaf failure other neighbor isolation, triangle-free adjacent high failure other neighbor isolation; conditional residual accounting, two-exchange cardinal arithmetic, unconditional17s<=9n+2beta, gap3n/34 and no-isolate7s<=3n+2beta. Finite cardinal summation, injection counts and actual graph exchange construction retain full written proofs and independent controls; the graph-level theorem is not claimed fully Lean-formalized."
+}
