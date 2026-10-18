@@ -120,6 +120,32 @@ def surrounding_controls(dense):
                 allows_nonbipartite_outside_and_multiple_attachment_neighbors=True)
 
 
+def planarity_barrier_controls():
+    branch_parts = [{1, 10, 11}, {7, 2, 3}]
+    fixed_paths = [[1, 7], [1, 9, 2], [1, 8, 3], [10, 4, 7],
+                   [10, 2], [10, 3], [11, 5, 7], [11, 2]]
+    for outside_order in range(1, 9):
+        adjacency = {vertex: set(neighbors) for vertex, neighbors in ADJACENCY.items()}
+        outside = list(range(12, 12 + outside_order))
+        adjacency.update({vertex: set() for vertex in outside})
+        external_path = [11, *outside, 3]
+        for first, second in zip(external_path, external_path[1:]):
+            adjacency[first].add(second)
+            adjacency[second].add(first)
+        paths = [*fixed_paths, external_path]
+        assert {(path[0], path[-1]) for path in paths} == {
+            (first, second) for first in branch_parts[0] for second in branch_parts[1]}
+        interiors = set()
+        for path in paths:
+            assert len(path) == len(set(path))
+            assert not set(path[1:-1]) & (branch_parts[0] | branch_parts[1] | interiors)
+            assert all(second in adjacency[first] for first, second in zip(path, path[1:]))
+            interiors.update(path[1:-1])
+    return dict(external_path_internal_orders=list(range(1, 9)),
+                nine_K33_paths_and_disjoint_interiors_checked=True,
+                general_external_path_existence_has_written_two_connectivity_proof=True)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -127,6 +153,7 @@ def main():
     dense, local = local_controls()
     report = dict(status='ALL_CHECKS_PASSED', local=local,
                   surrounding=surrounding_controls(dense),
+                  planarity_barrier=planarity_barrier_controls(),
                   cyclic_attainment=[cycle_controls(copies) for copies in range(2, 34, 2)],
                   scope='Controls for the analytic local proof and arbitrary-outside deletion argument; finite surrounding graphs do not replace the general theorem.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)

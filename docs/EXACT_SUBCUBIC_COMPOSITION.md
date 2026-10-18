@@ -34,9 +34,9 @@ For C subset V(K), call v a robust deletion vertex if:
 
 1. v belongs to C minus A and has a neighbor in C;
 2. every selected neighbor u of v has another neighbor in C minus {v};
-3. every x outside C but adjacent to v has either at least three neighbors
-   in C, or exactly two neighbors in C, the other one u having a neighbor
-   in C.
+3. every x in V(K) minus C adjacent to v has either at least three
+   neighbors in C, or exactly two neighbors in C, the other one u having
+   a neighbor in C.
 
 All three conditions concern only K. In condition3 the other neighbor
 u remains active after deleting v: if its selected neighbor was v,
@@ -227,6 +227,34 @@ condition for attaining sets, not a complete classification of them.
 No surplus assigned to one core is needed by another: the local cap holds
 with arbitrary external edges, and each global vertex is counted once.
 
+## A planarity barrier for the same interface
+
+**Proposition.** A two-connected graph G containing this induced K, with
+at least one vertex outside K and external edges only at 3 and 11, is
+nonplanar.
+
+Take a component Q of G minus V(K). Its neighbors in K form a nonempty
+subset of {3,11}, since G is connected. If only one of these vertices
+has a neighbor in Q, deleting it separates Q from the remaining core,
+contrary to two-connectivity. Thus Q touches both. Since Q is connected,
+there is a simple path from 11 to 3 whose internal vertices all lie in Q.
+
+Use branch parts {1,10,11} and {7,2,3}. The following eight paths have
+pairwise disjoint interiors, all inside K:
+
+    1--7, 1--9--2, 1--8--3,
+    10--4--7, 10--2, 10--3,
+    11--5--7, 11--2.
+
+The external 11-to-3 path supplies the ninth branch pair. Their union is
+a subdivision of K_{3,3}, proving the proposition.
+
+Thus the restriction to labels 3 and 11 that makes the local cap reusable
+also excludes every nontrivial two-connected planar completion of this
+core. A planar two-connected gap construction would need another core or
+another attachment pattern. This extends the earlier nonplanarity argument
+from the cyclic family to every surrounding graph with this interface.
+
 ## Scope and next questions
 
 This settles the exact SF value left open in the earlier note and gives
@@ -264,6 +292,16 @@ with peak child RSS 3.58 GB.
 The finite certificate checks sufficient local deletion conditions directly,
 rather than reproducing the analytic choice table. The readable proof above
 derives that table from neighborhoods and proves upward closure.
+
+The controls also verify the nine subdivision paths for external paths
+with one through eight internal vertices. The proof that every nontrivial
+two-connected completion supplies such a path is the general component
+argument above; it does not depend on these examples.
+
+An [independent Oracle review](../output/exact-subcubic-oracle-review.json)
+of the new core-cap argument has been requested. Its receipt records the
+actual status and reviewed input; no approval is claimed while it is pending.
+The later general planarity barrier is outside that review input.
 
     python3 scripts/check_exact_subcubic.py --output output/exact-subcubic-controls.json
     python3 scripts/check_subcubic_formal.py --exact --lean /path/to/lean-4.33.0 --output output/exact-subcubic-formal-check.json
