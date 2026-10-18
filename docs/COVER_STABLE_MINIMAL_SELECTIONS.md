@@ -76,7 +76,7 @@ Indeed two selected neighbors of x would both survive; a covering selected
 edge at its unique neighbor can only have v as its other endpoint.
 Any other selected neighbor of u would also preserve coverage after deletion.
 Lift v-u-x from v_tilde. The lifted selected neighborhoods are the same
-singletons by local bijectivity. After deleting v_tilde, u_tilde is isolated
+singletons by local bijectivity. After deleting v_tilde, u_tilde is isolated in the remaining selected subgraph
 and x_tilde has this sole selected neighbor, so x_tilde fails.
 
 Every selected single deletion therefore fails. Formation is upward closed,
@@ -121,8 +121,8 @@ all covers to all two-sheeted covers, is immediate.
 
 If G is connected, minimality and coverage of v by T_v guarantee at least
 one old outside failure. Its triangle in (1) has exactly one crossed edge
-in the constructed lift. Going around that triangle changes sheets, so the
-two lifts of one vertex are connected. Lifting base paths then connects
+in the constructed lift. The explicit path v_0-x_1-u_1-v_1 connects
+the two lifts of v. Lifting base paths then connects
 both lifts of every vertex. The counter-cover is therefore connected.
 
 ## Consequences and the exact role of triangles
@@ -181,12 +181,16 @@ All22Lean declarations pass the standalone Lean4.33.0audit locally in
 4.650seconds total, with peak child RSS686,178,304bytes. The run checked
 memory and actual lean/lake process basenames before sequential compilation.
 The archived receipt is output/cover-pullback-formal-check.json.
-A separate Oracle review of the written criterion and connectedness
-argument is pending on its original stream; no acceptance is presumed.
+A separate Oracle review accepted the exact equivalence, canonical
+counter-cover and connectedness corollary. Its scope correction restores
+the inclusion-minimal forming qualifier in the concluding bipartite
+statement, and the two projection/connectedness clarifications above
+are incorporated. Full response and observed-model metadata are archived
+in output/cover-stability-oracle-review.json and its linked response.
 
 The theorem identifies exactly when this particular amplification mechanism
 preserves a minimal selection. It does not stop the cover's dissociation
 number from increasing, so it does not settle the connected cubic asymptotic
-gap or the rectangular-grid equality. For bipartite bases every selection
-already has safe certificates; that removes the minimality issue and isolates
+gap or the rectangular-grid equality. For bipartite bases every
+inclusion-minimal forming selection has safe certificates; that removes the minimality issue and isolates
 the dissociation gain as the remaining covering obstruction.

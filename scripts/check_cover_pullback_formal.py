@@ -15,6 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--audit', choices=('cover', 'dissociation'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -30,13 +31,17 @@ def main():
     version = subprocess.check_output([str(executable), '--version'], text=True).strip()
     if 'version 4.33.0' not in version:
         raise RuntimeError('Use pinned Lean4.33.0: ' + version)
-    build = root / 'build/cover-pullback-formal'
+    build = root / ('build/cover-pullback-formal' if arguments.audit == 'cover'
+                    else 'build/dissociation-cover-formal')
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
-    for module in ('StarForming/RegularBound.lean', 'StarForming/CoverPullback.lean',
-                   'StarForming/CoverStability.lean',
-                   'StarFormingCoverPullbackAudit.lean'):
+    modules = ('StarForming/RegularBound.lean', 'StarForming/CoverPullback.lean')
+    if arguments.audit == 'cover':
+        modules += ('StarForming/CoverStability.lean', 'StarFormingCoverPullbackAudit.lean')
+    else:
+        modules += ('StarForming/DissociationCover.lean', 'StarFormingDissociationCoverAudit.lean')
+    for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
             command += ['-o', str((build / module).with_suffix('.olean'))]
@@ -52,7 +57,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != 22:
+    if len(declarations) != (22 if arguments.audit == 'cover' else 5):
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
         if set(filter(None, map(str.strip, axioms.split(',')))) - {
@@ -64,6 +69,11 @@ def main():
                    memory_before_run=memory, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
                    scope='Full graph-level exact cover-stability criterion: safe certificates suffice for every locally bijective map; a missing certificate gives a canonical two-sheeted cover with an explicitly redundant selected lift. Includes local cover construction, deletion formation, nonminimality, exact equivalence for canonical tests, boundary-triangle-free and triangle-free corollaries. No finiteness assumption. Connectedness of the canonical counter-cover and cardinal SF corollaries retain written proofs.')
+    if arguments.audit == 'dissociation':
+        receipt['scope'] = ('General graph-level dissociation pullback and reflection through '
+                            'surjective locally bijective maps; local four-cycle exclusion and '
+                            'capacity two. Global fractional four-cycle summation and prism '
+                            'parameter/covering formulas retain written proofs.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

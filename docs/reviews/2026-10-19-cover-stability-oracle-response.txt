@@ -1,0 +1,56 @@
+ACCEPT for the exact equivalence, the canonical two-sheeted counter-cover, and the connectedness corollary. The construction covers every required case after deleting  $v_0$  from the selection. One concluding sentence needs a scope correction: the bipartite claim should say “every inclusion-minimal forming selection.”This verdict concerns the supplied mathematical argument. The Lean certification and axiom audit retain the verification status reported in the question.1. The failure structure in (1) is correctWrite
+$$N_S(a)=N_G(a)\cap S,\qquad T=S\setminus\{v\},$$
+and let
+$$D=\{x\in V(G)\setminus S:\neg F(T,x)\}$$
+be the set of old outside deletion failures.Assume  $v$  has no safe certificate. The absence of a self certificate gives
+$$F(T,v).$$
+Moreover,  $D$  is nonempty: inclusion-minimality says that  $T$  fails to form, and its outside vertices are precisely  $v$  together with the old outside vertices. Since  $v$  is covered, some old outside vertex must fail.For every  $x\in D$ , the absence of a safe outside certificate gives
+$$x\sim v,\qquad x\sim u,\qquad u\sim v$$
+for some  $u\in S$ . Simplicity gives  $u\ne v$ , hence  $u\in T$ .Both asserted neighborhood equalities follow:If  $x$  had a third selected neighbor  $w$ , then  $u,w\in T$  would be two distinct selected neighbors covering  $x$ .If  $u$  had a selected neighbor  $w\ne v$ , then  $x-u-w$  would cover  $x$  using  $T$ .Thus
+$$\boxed{N_S(x)=\{v,u\},\qquad N_S(u)=\{v\}.}
+\tag{1}$$
+The supporting  $u$  is unique because of the first equality. Different failure vertices may share this same  $u$ ; formation permits one selected edge to support several outside vertices.This establishes exactly the structure needed by the lift.2. The canonical construction is a genuine two-sheeted coverFor each base edge  $ab$ , define
+$$c(ab)=
+\begin{cases}
+1,&ab=vx\text{ for some }x\notin S,\\
+0,&\text{otherwise}.
+\end{cases}$$
+Put
+$$V(H)=V(G)\times\{0,1\},$$
+with adjacency
+$$(a,s)\sim_H(b,t)
+\quad\Longleftrightarrow\quad
+a\sim_G b\ \text{ and }\ t=s+c(ab)\pmod 2.$$
+This gives a simple undirected graph. For every  $a_s$  and every base neighbor  $b$  of  $a$ , there is exactly one neighbor of  $a_s$  over  $b$ , namely  $b_{s+c(ab)}$ . Consequently the projection is locally bijective, with exactly two vertices over every base vertex.Every selected-selected edge preserves sheets.Let
+$$\widetilde S=S\times\{0,1\},
+\qquad
+R=\widetilde S\setminus\{v_0\}.$$
+Here  $v_0$  remains a vertex of  $H$ ; its status changes to outside the selection.Complete audit of the vertices outside  $R$ A useful exhaustive partition is:Outside vertexCovering witness in  $R$  $v_0$ A witness for  $F(T,v)$ , lifted in sheet  $0$  $x_s$ , where  $x\notin S$  and  $F(T,x)$ A witness for  $F(T,x)$ , lifted in sheet  $s$  $x_0$ , where  $x\in D$ The two selected neighbors  $u_0,v_1$  $x_1$ , where  $x\in D$ The leaf star  $x_1-u_1-v_1$ Each row works for the following reasons.The new outside vertex  $v_0$ . A witness for  $F(T,v)$  consists entirely of edges between base vertices in  $S$ : either  $v$  has two neighbors in  $T$ , or there is a path  $v-a-b$  with  $a,b\in T$ . Every such edge preserves sheets. All selected vertices of the resulting witness belong to  $R$ .Every old outside vertex already covered by  $T$ . Its witness uses selected vertices different from  $v$ . Therefore every edge of the witness preserves sheets, including when  $x\sim v$ . Both lifts receive a witness in their respective sheets.This row includes every old outside vertex nonadjacent to  $v$ , since any failure there would be safe.A failure vertex  $x_0$ . Equation (1) supplies the retained neighbors
+$$u_0,\ v_1.$$
+The edge  $xu$  preserves sheets, while  $xv$  crosses. These neighbors are distinct and selected, so they form a centered star at  $x_0$ .A failure vertex  $x_1$ . Its edge to  $u_1$  preserves sheets, and the selected-selected edge  $u_1v_1$  also preserves sheets. Hence
+$$x_1-u_1-v_1$$
+is a valid covering leaf star with both selected vertices retained.These rows exhaust
+$$V(H)\setminus R=\{v_0\}\cup\bigl((V(G)\setminus S)\times\{0,1\}\bigr).$$
+Thus  $R$  forms. Since  $R\subsetneq\widetilde S$ , the full pullback fails inclusion-minimality.The text’s additional  $x_0$  subcase also checks outFor an arbitrary old outside neighbor  $x$  of  $v$ , every base selected neighbor is represented at  $x_0$ :  $v$  is represented by  $v_1$ , and each other selected neighbor  $a$  by  $a_0$ . Therefore two selected neighbors survive whenever the base has at least two.If  $N_S(x)=\{v\}$ , original formation supplies a selected neighbor  $w$  of  $v$ , giving the retained leaf star
+$$x_0-v_1-w_1.$$
+That local argument is correct.In fact, the singleton subcase is excluded by the no-safe-certificate hypothesis: such an  $x$  would fail after deleting  $v$ , and simplicity makes it a safe adjacent failure. Its inclusion in the supplied case analysis is harmless.3. The connectedness argument is completeThe key input is the nonemptiness of  $D$ , established using minimality and  $F(T,v)$ .Choose  $x\in D$  and its supporting  $u$ . In the triangle
+$$v-x-u-v,$$
+the crossing labels are exactly
+$$c(vx)=1,\qquad c(xu)=0,\qquad c(uv)=0.$$
+Therefore its lift contains the explicit path
+$$\boxed{v_0-x_1-u_1-v_1.}$$
+This connects the two lifts of  $v$ . The complete lifted triangle is the six-cycle
+$$v_0-x_1-u_1-v_1-x_0-u_0-v_0.$$
+Now suppose  $G$  is connected. For any base vertex  $w$ , choose a path from  $v$  to  $w$ . Lifting this same path from  $v_0$  and  $v_1$  reaches the two distinct lifts of  $w$ : at every step their sheet labels remain opposite. Since both starting vertices belong to one component, both lifts of every  $w$  belong to that component.Hence  $H$  is connected.This also proves the connected-testing formulation precisely:Safe certificates imply preservation under every cover, including every connected two-sheeted cover.Failure of the certificate condition produces the connected two-sheeted counter-cover above.Bases with no connected two-sheeted cover create no exceptional case: a certificate failure itself supplies the triangle and the connected counter-cover.4. Sufficiency and the stated scope are consistentThe three sufficiency cases correctly address the possible projection collisions.For a self failure, neighborhood injectivity at the selected center rules out a surviving selected endpoint projecting to the deleted base vertex. For an adjacent safe failure, neighborhood injectivity at the outside witness rules out a surviving selected neighbor over  $v$ , and the safe-triangle condition rules out a selected support endpoint over  $v$ .For a nonadjacent failure, formation before deletion and failure afterward force
+$$N_S(x)=\{u\},\qquad N_S(u)=\{v\}.$$
+Lifting  $v-u-x$  therefore provides exactly the required failure after deletion. For precision, the sentence saying that  $\widetilde u$  becomes “isolated” means isolated in the remaining selected subgraph.Finally, upward closure proves the passage from single-deletion failures to inclusion-minimality for arbitrary sets. If a proper subset  $A\subsetneq\widetilde S$  formed, choosing
+$$z\in\widetilde S\setminus A$$
+would give
+$$A\subseteq\widetilde S\setminus\{z\},$$
+so that single deletion would form too.The local witness paths also justify the asserted independence from global surjectivity and a common fiber cardinality. Every required witness is reached from the selected lift under consideration.As an additional scope observation, the written necessity and connectedness arguments use no finiteness either. The finite theorem is sound, and the same mathematical arguments support its arbitrary-vertex analogue for a fixed inclusion-minimal forming selection.5. The obstruction family and corollaries passExplicit obstruction familyThe proposed family forms because each  $y_j$  has selected neighbors  $u_j,i$ , and each  $x_j$  has selected neighbors  $v,u_j$ .Its minimality witnesses are exactly as claimed:Deleted selected vertexFailure witnessReason $u_j$  $y_j$ Its sole remaining selected neighbor is  $i$ , which has no selected neighbor $i$  $i$ All neighbors of  $i$  lie outside  $S$  $v$ Every  $x_j$ ,  $j\in J$ Its sole remaining selected neighbor is  $u_j$ , which loses its selected supportAfter deleting  $v$ , the vertex  $v$  itself remains covered by its  $k\ge2$  selected neighbors, and every  $y_j$  retains two selected neighbors. Thus its old outside failures are precisely the  $x_j$ , all unsafe triangles.Every  $u_j$  has the safe witness  $y_j$ , and  $i$  has a self certificate. Consequently the certificate condition fails exactly at  $v$ .The base is connected through the paths
+$$v-u_j-y_j-i.$$
+Its order is
+$$2k+|J|+2,$$
+giving seven vertices for  $k=2,\ |J|=1$ . Crossing the  $vx_j$  edges gives the asserted connected counter-cover.Triangle and selected-degree corollariesThe other consequences follow directly:Boundary-triangle condition: an unsafe outside failure would supply a triangle with exactly two selected vertices, contradicting that condition. $K_3$ : after deleting either vertex of a selected pair, the deleted vertex has only one selected neighbor, and that neighbor has no selected support. Each deletion has a self failure.Selected-degree condition: equation (1) forces a selected vertex  $u$  of selected degree exactly one. The stated condition excludes this structure. Selected isolates have self certificates.These deductions preserve the exact inclusion-minimality scope.6. Required wording correction and the parameter distinctionThe literal sentence“For bipartite bases every selection already has safe certificates”requires the minimality qualifier.A reproducible counterexample to that unrestricted wording is the path
+$$a-b-c,\qquad S=\{a,b,c\}.$$
+This  $S$  forms. Deleting  $b$  leaves  $\{a,c\}$ , which still forms because its sole outside vertex  $b$  has two selected neighbors. Thus  $b$  has no self failure, and there are no old outside vertices to supply another certificate.The example establishes the need for the minimality hypothesis in that sentence. Its selection lies outside the theorem’s hypotheses.The seven-vertex family establishes a different, correctly stated conclusion: a particular inclusion-minimal forming selection has a full pullback that admits a proper forming subselection. For its double cover, the eight selected lifts admit deletion of  $v_0$ , leaving a forming selection of size seven. Determining  $\mathrm{SF}_2(H)$  requires separate extremal information about the minimal forming selections of  $H$ ; the deletion argument supplies a failure of the full-pullback rule.Keep the theorem and canonical construction. Replace the final bipartite claim with “For bipartite bases, every inclusion-minimal forming selection has safe certificates,” and use the explicit path  $v_0-x_1-u_1-v_1$  in the connectedness formalization.

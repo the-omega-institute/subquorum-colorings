@@ -149,6 +149,9 @@ edges also preserve it. This proves two-connectivity without computation.
 ## Exact dissociation number of the construction
 
 Every G_d satisfies beta_2=2d+1. A whole part attains the lower bound.
+For d>=4, FRACTIONAL_SQUARE_GAP_OBSTRUCTION.md now gives a shorter
+independent upper-bound proof by explicit positive square weights. The
+case argument below remains valid and includes the square-free d=3 case.
 Here is an upper-bound proof; for d>=4 it even allows any(d-2)-regular
 X--Y graph in place of the specified one.
 

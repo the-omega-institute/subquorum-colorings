@@ -123,6 +123,24 @@ written proof. Independent controls check7,882minimal selections,
 25,724pullbacks and250canonical counter-covers. Thus covering minimality
 is fully resolved for a fixed selection; the dissociation gain in covers
 remains a distinct obstruction to connected cubic gap amplification.
+The written criterion, canonical counter-cover and connectedness corollary
+have now received Oracle ACCEPT, with a concluding minimality qualifier fixed.
+
+The [dissociation-cover budget](docs/DISSOCIATION_GAIN_IN_COVERS.md)
+identifies two limitations of this route. Full fiber transversals on one
+side of a cubic double cover cannot give a dissociation set larger than
+half the cover. Connected even-prism covers have exactly zero additional
+dissociation gain, proved by a fractional square-capacity certificate.
+The exact private-owner surplus records repeated private neighbors with
+their full multiplicity. Five further graph-level Lean declarations check
+dissociation pullback/reflection and the local square capacity; the
+global weighted count and all-prism formulas have complete written proofs.
+An [explicit square certificate](docs/FRACTIONAL_SQUARE_GAP_OBSTRUCTION.md)
+for every sharp G_d,d>=4 gives a shorter dissociation upper-bound proof.
+These graphs have exact fractional square covers yet SF_2=beta_2+1,
+so square capacity alone cannot establish the grid's proposed equality.
+The certificate has positive closed-form weights in every degree and
+is checked with exact rational arithmetic.
 
 The [sharp cubic bipartite compensation theorem](docs/SHARP_CUBIC_BIPARTITE_GAP.md)
 proves7SF_2<=3n+2beta_2 for all finite simple cubic bipartite graphs,

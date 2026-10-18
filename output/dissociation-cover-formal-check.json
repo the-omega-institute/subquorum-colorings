@@ -1,0 +1,46 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T21:51:31.874072+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3738.\nPages active:                                 239732.\nPages inactive:                               224373.\nPages speculative:                             13860.\nPages throttled:                                   0.\nPages wired down:                             258898.\nPages purgeable:                                  23.\n\"Translation faults\":                    15330471827.\nPages copy-on-write:                       933493995.\nPages zero filled:                        6317332379.\nPages reactivated:                        2864739439.\nPages purged:                              135097691.\nFile-backed pages:                            280592.\nAnonymous pages:                              197373.\nPages stored in compressor:                  1509551.\nPages occupied by compressor:                 266216.\nDecompressions:                           2291168963.\nCompressions:                             2708498453.\nPageins:                                  3949781443.\nPageouts:                                   11155492.\nSwapins:                                    25164291.\nSwapouts:                                   31484814.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 4.656,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.523,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/DissociationCover.lean",
+      "seconds": 0.567,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingDissociationCoverAudit.lean",
+      "seconds": 0.468,
+      "stdout": "'StarForming.DissociationCover.dissociates_pullback' does not depend on any axioms\n'StarForming.DissociationCover.dissociates_of_pullback' does not depend on any axioms\n'StarForming.DissociationCover.dissociates_pullback_iff' does not depend on any axioms\n'StarForming.DissociationCover.four_cycle_excludes_triples' does not depend on any axioms\n'StarForming.DissociationCover.four_cycle_capacity' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 691453952,
+  "scope": "General graph-level dissociation pullback and reflection through surjective locally bijective maps; local four-cycle exclusion and capacity two. Global fractional four-cycle summation and prism parameter/covering formulas retain written proofs.",
+  "default_cover_mode_regression": {
+    "status": "ALL_CHECKS_PASSED",
+    "checked_at": "2026-10-18T21:55:39.496980+00:00",
+    "audited_declarations": 22,
+    "module_seconds": 5.11,
+    "maximum_rss_bytes": 693043200
+  }
+}

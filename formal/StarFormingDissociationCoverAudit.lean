@@ -1,0 +1,7 @@
+import StarForming.DissociationCover
+
+#print axioms StarForming.DissociationCover.dissociates_pullback
+#print axioms StarForming.DissociationCover.dissociates_of_pullback
+#print axioms StarForming.DissociationCover.dissociates_pullback_iff
+#print axioms StarForming.DissociationCover.four_cycle_excludes_triples
+#print axioms StarForming.DissociationCover.four_cycle_capacity
