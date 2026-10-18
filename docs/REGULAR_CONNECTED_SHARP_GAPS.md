@@ -50,12 +50,10 @@ with equality only at x=y=3, epsilon=eta=0. This is exactly the aggregate
 bound used by the preceding proof. Notice that it is proved after the
 edge deletion, rather than inferred from the intact graph.
 
-For d>=5, the earlier count cases now apply verbatim: mixed high classes
-contribute at most four, a single high class at most d, and mixed outside
-classes with isolates at most six. Thus their totals are at most10 or
-d+6, respectively, both at most2d+1. With at most one outside class,
-the previous isolate and matching-port counts are unchanged and give
-the same upper bound. With no high class the bound is immediate.
+For d>=5 and mixed outside classes, the high classes together contribute
+at most d: a single class has at most d vertices, while two occupied
+classes have at most four. Their total with outside vertices and isolates
+is at most d+6<=2d+1. This includes an empty high part as well.
 
 For d=4, mixed high and outside classes could have size ten only when
 a=b=2 and x=y=3 without isolates, contradicting the unchanged matching
@@ -66,9 +64,15 @@ selected Y already has its A partner, so no selected X--Y edge is
 permitted. But among three selected X vertices at least two differ
 from x_0. Each has only two nonneighbors among Y and therefore meets
 the three chosen Y vertices, a contradiction. Interchanging the sides
-covers high class B. If at most one outside class is present, the old
-bound is9 when a+b<=3 and8 when a=b=2. With no high class it is at
-most six. This proves(1) for every d>=4.
+covers high class B. With no high class and mixed outside classes the
+bound is at most six.
+
+For every d>=4, the case with at most one outside class has a uniform
+bound, including the one-full-high-class cases a=d,b=0 or a=0,b=d.
+Put h=a+b<=d and assume y=0, by symmetry. If x>=2, then eta=0, so
+|D|=h+x+epsilon<=d+d+1=2d+1. If x<=1, then
+|D|<=h+1+2<=d+3<=2d+1. This also covers empty outside classes.
+It completes every count case and proves(1) for every d>=4.
 
 This local bound applies to the restriction of any dissociation set in
 an arbitrary surrounding graph, since internal edges of B_d remain.
@@ -154,5 +158,14 @@ continuation and does not cover the ring or broken-block lemma. A separate
 focused input is archived in
 `reviews/2026-10-19-regular-connected-gap-review-input.md`, explicitly
 treating the general regular compensation theorem as a hypothesis.
-Its original stream remains active, without a presumed verdict.
+Its original response requested one minor proof revision: the degree-four
+paragraph had not explicitly listed the one-full-high-class cases with
+at most one outside class. The uniform h+x+epsilon bound above now covers
+them in all degrees. The reviewer otherwise confirmed the local cap,
+connectivity, cubic obstruction and parameter consequences, conditional
+on the separately proved general theorem. Original response and repair
+status are preserved in the companion review receipt. The follow-up has
+now explicitly accepted the exact repair and the complete connected-ring
+theorem, with no further mathematical correction. Both original responses
+are preserved; the original REVISE verdict is not erased from provenance.
 This note is not a claim of full Lean graph formalization.

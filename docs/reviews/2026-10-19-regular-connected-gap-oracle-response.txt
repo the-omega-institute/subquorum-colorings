@@ -1,0 +1,102 @@
+REVISE — one minor omitted case in the written proofThe construction works for every  $d\ge4$  and  $r\ge1$ , and the claimed exact parameters follow from the stipulated universal inequality. The deleted-edge cap, the two-connectivity argument, and the cubic values are correct.The precise omission is in the degree-four paragraph with at most one outside class selected: its listed cases do not include
+$$(a,b)=(4,0)\quad\text{or}\quad(0,4).$$
+These cases occur—for example, the independent part  $A\cup X\cup\{p\}$  has counts  $(4,0,4,0,1,0)$ . A short uniform bound closes the omission. I give that repair and the remaining checks below. No finite enumeration is needed.1. The broken-block cap is correct, with the omitted case completedFor a dissociation set  $D\subseteq V(B_d)$ , write
+$$a=|D\cap A|,\quad b=|D\cap B|,\quad
+x=|D\cap X|,\quad y=|D\cap Y|,$$
+and
+$$\epsilon=\mathbf 1_{p\in D},\qquad
+\eta=\mathbf 1_{q\in D}.$$
+Put  $h=a+b$  and  $o=x+y+\epsilon+\eta$ .High-class restrictionsIf  $a,b>0$ , then  $a,b\le2$ : a selected high vertex has only one nonneighbor in the opposite high class, so three selected vertices there would give it at least two selected neighbors.Consequently,
+$$h\le d\qquad(d\ge4).
+\tag{2}$$
+If  $a=b=2$ , every selected high vertex already has a selected high neighbor. Its matching outside partner must therefore be absent. Hence
+$$x,y\le d-2.
+\tag{3}$$
+Deleting  $x_0y_0$  changes none of these facts.The mixed-outside bound really survives deletionSuppose  $x,y>0$  and  $y\ge4$ . Every  $x_i\ne x_0$  has only two nonneighbors in  $Y$ , so selecting it would give it at least two neighbors among the selected  $Y$ -vertices. Thus the only possible selected  $X$ -vertex is  $x_0$ , and  $x=1$ .The vertex  $x_0$  has exactly three nonneighbors in  $Y$  after deletion, so  $y\le4$ . Therefore  $y=4$ , and  $x_0$  has a selected  $Y$ -neighbor. This excludes both isolates: $p$  cannot be selected because it would have four selected neighbors. $q$  cannot be selected because  $x_0$  would then have two selected neighbors.Thus  $o=5$ . The argument when  $x\ge4$  is symmetric.Otherwise  $1\le x,y\le3$ . The unchanged implications
+$$\epsilon=1\Longrightarrow y\le1,\qquad
+\eta=1\Longrightarrow x\le1$$
+give
+$$o\le6,
+\tag{4}$$
+with equality only when
+$$x=y=3,\qquad \epsilon=\eta=0.
+\tag{5}$$
+This establishes the needed aggregate bound directly in  $B_d$ .For  $d\ge5$ , equations (2) and (4) already give the entire mixed-outside case:
+$$|D|\le d+6\le2d+1.$$
+Both exceptional mixed-outside cases at  $d=4$  are excluded correctlyAt  $d=4$ , equations (2) and (4) give  $|D|\le10$ . A violation of the desired bound  $9$  would therefore force  $h=4$  and the equality configuration (5).If both high classes occur, then  $a=b=2$ , contradicting  $x=y=3$  and (3).If exactly one high class occurs, assume it is  $A$ . All four  $A$ -vertices are selected, so every selected  $Y$ -vertex already has its matching selected  $A$ -neighbor. Consequently there can be no edge between the selected  $X$ - and  $Y$ -vertices. But among three selected  $X$ -vertices there is a vertex other than  $x_0$ . It has only two nonneighbors in  $Y$ , so it must meet the three selected  $Y$ -vertices. This is a contradiction. The case with  $B$  selected in full is symmetric.These two boundary arguments are sound.Exact repair: at most one outside classReplace the references to the “old” bounds by the following argument, valid uniformly for every  $d\ge4$ .Assume  $y=0$ ; the other case is symmetric. If  $x\ge2$ , then  $\eta=0$ , and (2) gives
+$$|D|=h+x+\epsilon\le d+d+1=2d+1.$$
+If  $x\le1$ , then
+$$|D|\le h+1+2\le d+3\le2d+1.$$
+This covers every case with at most one outside class, including the omitted degree-four cases with one full high class.A bipartition part is independent and has  $2d+1$  vertices. Therefore the completed argument proves
+$$\boxed{\beta_2(B_d)=2d+1\qquad(d\ge4).}$$
+The assertion about an arbitrary surrounding graph is also correct: if all internal edges of  $B_d$  remain, the restriction of any dissociation set is still a dissociation set in  $B_d$ . Additional edges cannot invalidate this upper-bound argument.2. Formation and minimality survive the switchThe relevant  $2$ -star-forming rule is that an outside vertex  $v$  is covered when either it has at least two selected neighbors, or it has a selected neighbor that itself has a selected neighbor. Thus having only one selected neighbor proves failure only when that remaining neighbor is isolated in the selected subgraph. publications.rwth-aachen.deYour witnesses satisfy this stronger requirement.For the displayed  $S$ , in every block,
+$$N(y_i)\cap S=\{a_i,p\},\qquad
+N(x_i)\cap S=\{b_i,q\}.$$
+Thus  $S$  is forming. After deleting a selected vertex:Deleting  $a_i$  leaves  $y_i$  with the sole selected neighbor  $p$ , which is isolated in  $G[S\setminus\{a_i\}]$ .Deleting  $b_i$  leaves  $x_i$  with the sole selected neighbor  $q$ , also isolated.Deleting  $p$  makes  $p$  an outside vertex with no selected neighbors.Deleting  $q$  does the same to  $q$ .Every single-vertex deletion therefore fails. Since the forming property is increasing under inclusion of selected sets, this proves minimality.All switched edges have both endpoints outside  $S$ , hence also outside every  $S\setminus\{s\}$ . They change neither the selected-neighbor sets nor the induced selected subgraphs involved in these tests. The preservation argument is therefore valid literally, block by block.It follows that
+$$SF_2(J_{d,r})\ge(2d+2)r.
+\tag{6}$$
+3. The ring is simple, regular, bipartite, and two-connectedBasic construction checksThe base degrees are correct: each high vertex has  $d-1$  crown neighbors and one matching outside neighbor; each outside vertex has  $d-2$  outside neighbors and two selected neighbors;  $p$  and  $q$  each have degree  $d$ .After deleting  $x_0y_0$ , only those two ports lose a degree. In the ring, each  $x_0^{(i)}$  receives one new edge and each  $y_0^{(i)}$  receives one new edge. Thus all degrees return to  $d$ .For  $r=1$ , the added edge restores the deleted edge. For  $r=2$ , the two added edges
+$$x_0^{(1)}y_0^{(2)},\qquad x_0^{(2)}y_0^{(1)}$$
+have different endpoint pairs, so they are not parallel edges. For larger  $r$ , simplicity is equally immediate. All new edges run from an  $X$ -vertex in the left part to a  $Y$ -vertex in the right part.The base two-connectivity proof is valid for every  $d\ge3$ The cycle
+$$a_0,b_2,a_1,b_3,\ldots,a_{d-1},b_1,a_0$$
+visits every crown vertex exactly once. Its edges have unequal high indices because  $1$  and  $2$  are nonzero modulo every  $d\ge3$ .Starting from that cycle, add the remaining crown edges and then the ears
+$$a_i-y_i-x_i-b_i.$$
+Each ear has distinct existing endpoints and new internal vertices. Its middle edge exists because the outside graph contains every diagonal  $x_i y_i$ . These additions preserve two-connectivity.Adding  $p$ , then  $q$ , also preserves two-connectivity: each has at least two distinct neighbors already present. Adding the remaining edges preserves it as well.Hence  $G_d$  is two-connected. In particular,  $x_0y_0$  is not a bridge, so  $B_d$  is connected.Every vertex-deletion case in the ring is coveredLet  $r\ge2$ , and let  $v$  lie in block  $i$ . The other  $r-1$  connected broken blocks, with their consecutive connecting edges, form a connected path. When  $r=2$ , this consists of the single other block.If  $v$  is a port, then
+$$B_d^{(i)}-v=G_d^{(i)}-v,$$
+because the omitted edge was incident with  $v$ . This graph is connected and attaches to the connected remainder through the surviving port.If  $v$  is not a port, then  $G_d^{(i)}-v$  is connected. Deleting its one edge  $x_0^{(i)}y_0^{(i)}$  either leaves it connected or produces exactly two components, one containing each port. A third component would remain disconnected even after that one edge was restored, contradicting the connectivity of  $G_d^{(i)}-v$ .The path through the other blocks connects the two ports externally. Thus every component of the affected block joins the same connected graph.For  $r=1$ , use the intact  $G_d$ . Therefore
+$$\boxed{J_{d,r}-v\text{ is connected for every vertex }v.}$$
+There is no gap in this part of the proof. Indeed, the connectivity argument itself also works at  $d=3$ .4. The cubic obstruction is exactThe displayed eight-vertex set is validAt  $d=3$ , the outside graph is precisely the diagonal matching. After deleting  $x_0y_0$ , the induced graph on
+$$A\cup Y\cup\{x_0,q\}$$
+has exactly the edges
+$$a_0y_0,\quad a_1y_1,\quad a_2y_2,\quad x_0q.$$
+Thus it is a dissociation set of size eight.The upper bound can be proved without the cited deficiency resultLet  $D$  be any dissociation set in  $B_3$ , put  $t=|D|$ , and let
+$$k=|D\cap\{x_0,y_0\}|\le2.$$
+Only the two ports have degree two; all other vertices have degree three. Since  $2e(D)\le t$ ,
+$$e(D,V\setminus D)
+=3t-k-2e(D)
+\ge2t-k.$$
+The total degree of the complement is
+$$3(14-t)-(2-k)=40-3t+k.$$
+Consequently,
+$$2t-k\le40-3t+k,
+\qquad
+5t\le40+2k\le44.$$
+Integrality gives  $t\le8$ , proving
+$$\boxed{\beta_2(B_3)=8.}$$
+The comparison  $\beta_2(G_3)=7$  also has a direct structural proofIn  $G_3$ ,
+$$N(a_i)=(B\setminus\{b_i\})\cup\{y_i\},\qquad
+N(x_i)=\{b_i,y_i,q\},\qquad
+N(p)=Y.$$
+These lists show that two distinct left vertices have at most one common neighbor, so  $G_3$  has no  $4$ -cycle.Consider a dissociation set  $D$ . If both parts contain at most three selected vertices, then  $|D|\le6$ . Otherwise choose a part with at least four selected vertices, and let  $m\le3$  be the number of its unselected vertices.Every selected vertex in the opposite part has degree three in  $G_3$  and at most one selected neighbor, so it has at least two neighbors among those  $m$  unselected vertices. Two such vertices cannot share an unordered pair of those neighbors, because that would create a  $4$ -cycle. Hence there are at most  $\binom m2$  selected vertices in the opposite part. Therefore
+$$|D|\le7-m+\binom m2
+=7+\frac{m(m-3)}2
+\le7.$$
+An entire part attains seven. Thus
+$$\boxed{\beta_2(B_3)=8>7=\beta_2(G_3).}$$
+This is precisely a local-cap failure. In particular, the displayed eight-vertex sets cannot simply be repeated around the ring: each selected port already has an internal selected neighbor, and a connecting edge between two such selected ports would violate dissociation.5. The exact connected-family consequences follow from the hypothesisThe block vertex sets partition  $V(J_{d,r})$ . Restricting a dissociation set to each block and applying the completed local cap gives
+$$\beta_2(J_{d,r})\le(2d+1)r.$$
+A whole bipartition part is independent and has exactly that size, so
+$$\boxed{\beta_2(J_{d,r})=(2d+1)r.}
+\tag{7}$$
+Now use, solely as the stipulated hypothesis,
+$$(2d+1)SF_2(G)\le d|V(G)|+2\beta_2(G).
+\tag{H}$$
+For  $J_{d,r}$ , equation (7) yields
+$$\begin{aligned}
+(2d+1)SF_2(J_{d,r})
+&\le d(4d+2)r+2(2d+1)r\\
+&=(2d+1)(2d+2)r.
+\end{aligned}$$
+Together with (6), this proves
+$$\boxed{SF_2(J_{d,r})=(2d+2)r}$$
+and hence
+$$\boxed{SF_2(J_{d,r})-\beta_2(J_{d,r})
+=r=\frac{n}{4d+2}.}$$
+The sharp-coefficient conclusion follows in the  $d$ -regular bipartite class. Every graph in that class has equal-sized bipartition parts, so  $\beta_2\ge n/2$ . Subtracting  $(2d+1)\beta_2$  from (H) gives
+$$\begin{aligned}
+(2d+1)(SF_2-\beta_2)
+&\le dn-(2d-1)\beta_2\\
+&\le dn-\frac{(2d-1)n}{2}
+=\frac n2.
+\end{aligned}$$
+Thus the conditional universal gap bound is  $n/(4d+2)$ , and your two-connected family attains it for every positive integer  $r$ .The required revision is the missing one-full-high-class case in the degree-four cap proof. The uniform one-outside-class argument above repairs it completely; the construction and all displayed parameter formulas can remain as stated.

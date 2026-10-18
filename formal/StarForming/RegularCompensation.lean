@@ -44,4 +44,20 @@ theorem regular_gap_bound
   simp only [Int.mul_assoc, Int.mul_left_comm degree 2] at hregular hscaled ⊢
   omega
 
+theorem linear_equality_residual_zero
+    (degree isolates unusedOne unusedTwo leafLoss defect : Nat)
+    (hdegree : 4 ≤ degree)
+    (hcapacity : isolates + (degree - 1) * unusedOne +
+      (degree - 2) * unusedTwo ≤ defect)
+    (hleaves : leafLoss ≤ unusedOne + unusedTwo)
+    (hequality : defect ≤ isolates + leafLoss) :
+    unusedOne = 0 ∧ unusedTwo = 0 ∧ leafLoss = 0 ∧ defect = isolates := by
+  have hfirst : 2 * unusedOne ≤ (degree - 1) * unusedOne := by
+    have hbound : 2 ≤ degree - 1 := by omega
+    exact Nat.mul_le_mul_right unusedOne hbound
+  have hsecond : 2 * unusedTwo ≤ (degree - 2) * unusedTwo := by
+    have hbound : 2 ≤ degree - 2 := by omega
+    exact Nat.mul_le_mul_right unusedTwo hbound
+  omega
+
 end StarForming.RegularCompensation

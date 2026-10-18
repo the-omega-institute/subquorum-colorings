@@ -1,13 +1,20 @@
 {
-  "status": "PENDING_ORIGINAL_STREAM_ACTIVE",
+  "task_id": "eb270fc9-e8a1-4761-82b3-e9489b6098f1",
+  "conversation_id": "conv_233dc52bf5fb4ce9",
   "pool": "chrono-chatgpt-pro-pool",
   "model_label": "chatgpt-6-pro",
-  "terminal_session_id": 24023,
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "chatgpt_url": "https://chatgpt.com/c/6ad53344-d0d8-83ec-80b2-ebd56a28a88c",
+  "usage_estimated": true,
+  "status": "COMPLETED_ACCEPTED",
   "input": "docs/reviews/2026-10-19-regular-compensation-review-input.md",
-  "request": "build/regular-compensation-oracle-request.json",
-  "stream": "build/regular-compensation-oracle-answer.sse",
-  "scope": "General weighted bipartite compensation, regular gap bound and uniform fixed-order attaining family. Later broken-block/ring continuation is outside this input.",
-  "verdict": null,
-  "observed_model_switcher": null,
-  "instruction": "Keep original streaming call; do not restart solely because it is slow."
+  "response": "docs/reviews/2026-10-19-regular-compensation-oracle-response.txt",
+  "verdict": "General exchange, weighted residual budget, all-regular sharp bounds, uniform exact family and two-connectivity accepted without substantive gap.",
+  "clarifications": [
+    "Added direct forming criterion and c(v) definition",
+    "Located regular order bound directly in nonnegative residual before use",
+    "Corrected degree>=5 case reference and stated hereditary exclusion"
+  ],
+  "scope": "General weighted theorem and fixed-order uniform attaining construction only. Later connected ring and regular equality structure outside this input."
 }

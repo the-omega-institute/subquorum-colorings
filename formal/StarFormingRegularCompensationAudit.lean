@@ -4,3 +4,4 @@ import StarForming.RegularCompensation
 #print axioms StarForming.RegularCompensation.weighted_compensation
 #print axioms StarForming.RegularCompensation.regular_compensation
 #print axioms StarForming.RegularCompensation.regular_gap_bound
+#print axioms StarForming.RegularCompensation.linear_equality_residual_zero

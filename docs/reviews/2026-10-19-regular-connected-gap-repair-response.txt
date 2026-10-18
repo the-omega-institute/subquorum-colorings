@@ -1,0 +1,27 @@
+ACCEPT. The exact replacement closes my sole omission. The broken-block cap and the complete connected-ring theorem can now be accepted, using the regular compensation inequality as the specified input. No later equality-structure or additional covering result is needed.Check of the repairFor every  $d\ge4$ ,
+$$h=a+b\le d:$$
+if at most one high class is selected, this is immediate; if both are selected, the crown restriction gives  $a,b\le2$ , hence  $h\le4\le d$ .When at most one outside class is selected, take  $y=0$ ; exchanging the two sides gives the other case.If  $x\ge2$ , selecting  $q$  would give  $q$  at least two neighbors in the dissociation set, so  $\eta=0$ . Therefore
+$$|D|=h+x+\epsilon\le d+d+1=2d+1.$$
+If  $x\le1$ , then
+$$|D|=h+x+\epsilon+\eta
+\le d+1+2
+=d+3
+\le2d+1.$$
+These cases include  $x=y=0$ , both formerly omitted full-high-class cases, and their boundary configurations. Together with the unchanged, audited mixed-outside argument, they exhaust all dissociation sets. The independent bipartition part supplies the matching lower bound, proving
+$$\boxed{\beta_2(B_d)=2d+1\qquad\text{for every }d\ge4.}$$
+Acceptance of the complete ring theoremThe remaining deductions use only the construction and the inputs already identified:Restriction to the disjoint block vertex sets, followed by the independent-part lower bound, gives
+$$\beta_2(J_{d,r})=(2d+1)r.$$
+The explicit surviving deletion witnesses prove that the displayed  $S$  is minimal forming, giving
+$$SF_2(J_{d,r})\ge(2d+2)r.$$
+The regular compensation inequality gives
+$$(2d+1)SF_2(J_{d,r})
+\le d(4d+2)r+2(2d+1)r
+=(2d+1)(2d+2)r,$$
+establishing equality.The previously checked vertex-deletion argument proves two-connectivity for every  $r\ge1$ , including  $r=1$ ,  $r=2$ , port deletions, and nonport deletions.Thus, for every integer  $d\ge4$  and  $r\ge1$ , the construction has
+$$\boxed{
+n=(4d+2)r,\qquad
+\beta_2=(2d+1)r,\qquad
+SF_2=(2d+2)r,\qquad
+SF_2-\beta_2=r=\frac{n}{4d+2}.
+}$$
+The cubic local-cap failure remains exactly as previously audited. No further mathematical correction is required in the supplied broken-block and connected-ring proof.

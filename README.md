@@ -92,9 +92,24 @@ attains the same coefficient at arbitrarily large orders and gaps:
 n=(4d+2)r, beta_2=(2d+1)r and SF_2=(2d+2)r. Its broken-block cap is
 proved and summed without interface compensation; an explicit eight-set
 explains why the identical cubic port argument fails. General proofs,
-four additional symbolic Lean audits, arbitrary bipartite controls and
-independent connected-instance optima are provided. Oracle reviews of
-the two new arguments remain pending at this checkpoint.
+five additional symbolic Lean audits, arbitrary bipartite controls and
+independent connected-instance optima are provided. Oracle accepted the
+general-degree theorem. Its connected-ring review requested one omitted
+degree-four count case; the uniform repair is incorporated, and the
+original conversation's follow-up now accepts the complete ring theorem.
+
+The [exact stability remainder](docs/REGULAR_COMPENSATION_EQUALITY.md)
+now characterizes the isolate-tight partition in every regular degree
+d>=3. For d>=4, linear compensation equality forces this partition,
+balanced selected isolates and maximum explicit exchange sets; the
+degree-two unused-witness coefficient explains why the same deduction
+does not follow from the cubic accounting alone. Five symbolic audits
+and independent partition controls support the general written proofs.
+A [covering pullback theorem](docs/COVERING_PULLBACK_AND_CUBIC_SEARCH.md)
+also shows that minimal forming sets pull back under graph covers of
+triangle-free bases. It proves exact SF_2=16 for every two-sheeted
+Heawood cover. Finite connected-cover discovery controls found beta_2
+15or16, rather than14; they do not settle arbitrary-order cubic sharpness.
 
 The [sharp cubic bipartite compensation theorem](docs/SHARP_CUBIC_BIPARTITE_GAP.md)
 proves7SF_2<=3n+2beta_2 for all finite simple cubic bipartite graphs,

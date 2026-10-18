@@ -1,0 +1,148 @@
+ACCEPTThe theorem, the general exchange, the weighted residual budget, and the uniform two-connected equality construction are mathematically sound. I found no counterexample or substantive gap in the four parts you asked to audit. In particular, the argument works in arbitrary finite simple bipartite graphs, and the dissociation calculation covers every integer  $d\ge3$ .A few definitions and dependencies should be made explicit in a standalone version. These are exposition corrections; they do not require changing the theorem or construction.PartFindingDecisive pointGeneral exchangeValid without a degree restrictionThe witness neighborhoods and bipartition eliminate all unwanted edgesWeighted theoremValid for every cap  $\Delta\ge3$ After assigning the high witnesses, each unused degree-two witness still contributes  $\Delta-2\ge1$ Exact  $\mathrm{SF}_2(G_d)$ ValidThe nonnegativity of the displayed residual  $B$  supplies the cardinality boundExact  $\beta_2(G_d)$ Valid in every  $d\ge3$ The large-degree cases are exhaustive; the separate  $d=4$  and  $d=3$  arguments close the exceptionsTwo-connectivityValid in every  $d\ge3$ The crown has the stated Hamilton cycle, and the added paths are valid open ears1. Definition and the exact covering criterionI use the direct forming condition: for every  $x\notin S$ , there are distinct  $s_1,s_2\in S$  such that the three vertices support a  $K_{1,2}$ , with extra edges permitted. This agrees with the standard definition of a  $k$ -star-forming set specialized to  $k=2$ . combinatorialpress.comWrite
+$$a_S(x)=|N(x)\cap S|$$
+for every vertex  $x$ , including outside vertices. Then an outside vertex  $x$  is covered exactly when
+$$a_S(x)\ge2
+\quad\text{or}\quad
+\exists y\in N(x)\cap S\text{ with }a_S(y)\ge1. \tag{C}$$
+The first alternative makes  $x$  the center; the second makes a selected neighbor  $y$  the center. Consequently, an outside vertex fails precisely when it has no selected neighbor, or has a unique selected neighbor that is isolated in the selected subgraph.This criterion validates the deletion arguments throughout the note. It also makes clear why selected isolates are allowed in a forming set: the condition is imposed on outside vertices.2. The general witness argument and exchange are correct2.1 High vertices have outside failure witnessesLet  $v\in H$ . After deleting  $v$ , the newly outside vertex  $v$  still has its original  $a_S(v)\ge2$  selected neighbors. Thus  $v$  itself remains covered.Since  $S$  is minimal, some old outside vertex  $x\in T$  must fail after the deletion.There are exactly the two types stated in the note.Nonadjacent case,  $xv\notin E$ . Deleting  $v$  does not change  $N(x)\cap S$ . By (C), failure requires
+$$N(x)\cap S=\{u\},
+\qquad
+N(u)\cap S=\{v\}.$$
+Thus  $u$  is a selected leaf whose unique support is  $v$ . In particular, the witness has selected degree one.Adjacent case,  $xv\in E$ . If  $a_S(x)\ge3$ , deleting  $v$  leaves at least two selected neighbors, so failure is impossible. Hence
+$$N(x)\cap S=\{v\}
+\quad\text{or}\quad
+N(x)\cap S=\{v,w\}.$$
+In the second case,  $w$  must be isolated after deleting  $v$ , so
+$$N(w)\cap S\subseteq\{v\}.$$
+But  $v$  and  $w$  both neighbor  $x$ , and therefore lie in the same bipartition class. They cannot be adjacent. It follows that  $w\in I$ .No cubic assumption enters either argument.2.2 Injectivity is justifiedThe witness classification itself gives a particularly clean proof that one outside vertex cannot witness two distinct high vertices.A selected-degree-two witness has selected neighborhood consisting of its high owner and an isolate, so its high owner is unique.For a selected-degree-one witness with selected neighborhood  $\{u\}$ , an adjacent high owner can only be  $u$  itself.A nonadjacent high owner must be the unique selected support of the leaf  $u$ .The last two possibilities cannot coexist:  $u$  cannot be both high and a selected leaf. Thus any choice of one witness for each high vertex produces an injective map  $f:H\to T$ .Your replacement-star explanation is valid, but this classification-based argument makes the injectivity especially transparent.One useful clarification is to define the labels relative to the chosen map:
+$$v\text{ is good}\iff vf(v)\notin E,
+\qquad
+v\text{ is bad}\iff vf(v)\in E.$$
+A high vertex can have unchosen witnesses of both types. That does not cause a problem; the proof only needs a fixed choice of  $f$ .2.3 The leaf witnesses give the claimed unused-witness countLet  $u\in U$ , with unique selected support  $v\in H$ .After deleting  $u$ , the vertex  $u$  remains covered: it is adjacent to  $v$ , and  $v$  still has another selected neighbor because  $a_S(v)\ge2$ . Therefore minimality supplies a failure witness in  $T$ .That witness must be adjacent to  $u$ . Indeed, a nonadjacent failure witness would require a selected neighbor whose entire selected neighborhood was  $\{u\}$ . Such a neighbor would have to be  $u$ 's unique selected neighbor  $v$ , contradicting  $a_S(v)\ge2$ .The adjacent classification gives
+$$N(x)\cap S=\{u\}
+\quad\text{or}\quad
+N(x)\cap S=\{u,w\},\qquad w\in I.$$
+Distinct leaves cannot have the same witness: the displayed neighborhoods contain exactly one selected leaf.Now compare a chosen leaf-witness map with  $f(H)$ .A degree-two leaf witness cannot belong to  $f(H)$ : its selected neighborhood is leaf-plus-isolate, whereas a degree-two high witness has high-plus-isolate.A degree-one leaf witness can coincide with  $f(v)$  only when  $v$  is the leaf’s unique good support.Thus there are at most  $g$  overlaps. Every good high vertex also has at least one supported leaf, and different good high vertices have different such leaves. Therefore
+$$g\le u,
+\qquad
+u-g\le r_1+r_2.$$
+This proves (1). In particular, the argument does not require exactly  $g$  overlaps. The upper bound on overlaps is sufficient.2.4 The two exchanged sets have no overlooked edgesFor clarity, put
+$$c(v)=|N(v)\cap U|.$$
+This quantity is used in the note but should be explicitly defined.Consider  $D_L$ . Bipartiteness locates the chosen witnesses as follows:A good vertex and its witness lie in the same part, because they are joined through the selected leaf.A bad vertex and its witness lie in opposite parts.The possible nontrivial components in  $D_L$  are consequently:Retained objectIts possible partnerA good high vertex in  $L$ Its one retained leafA bad high vertex in  $L$ Its adjacent witness in  $R$ A good witness in  $R$ Its unique selected leaf, whose high support in  $R$  was omittedA vertex of  $P$ Its original  $K_2$  partnerEvery potential interference is excluded:High–high edges disappear because only  $H\cap L$  is retained.A kept bad high vertex has all its selected leaves removed.A bad witness’s possible isolated selected neighbor lies in  $L$ , where isolates are omitted.A good witness has only its designated selected leaf as a selected neighbor.Two chosen good witnesses cannot attach to the same leaf: that leaf has a unique high support, and only one witness was chosen for that support.Witnesses cannot attach to  $P$ , by the witness classifications.All added witnesses lie in  $R$ , so they have no edges among themselves.The leaf adjacent to an added good witness has not been trimmed: its support is precisely a high vertex in the omitted class  $H\cap R$ .Hence  $G[D_L]$  has maximum degree at most one. The same argument applies to  $D_R$ .Before trimming, the sum of their sizes is
+$$2|P|+2u+z+2|H|=2s-z.$$
+Every leaf is trimmed only in the exchange that retains its unique support, so total trimming is
+$$\sum_{\text{good }v}(c(v)-1)
++\sum_{\text{bad }v}c(v)
+=u-g=K.$$
+Therefore
+$$|D_L|+|D_R|=2s-z-K.$$
+Since each exchanged set has size at most  $\beta_2(G)$ ,
+$$2(s-\beta_2(G))\le z+K\le z+r_1+r_2.$$
+There is no missing edge type or hidden degree restriction in this exchange.3. The weighted residual identity and budget are exactThe identity can be derived entirely within the note, without appealing to a previous degree-capacity proof.Let  $t=|T|$ . Counting the cut gives
+$$\sum_{v\in S}\deg_G(v)
+=
+\sum_{v\in S}a_S(v)+\sum_{x\in T}a_S(x).$$
+Thus
+$$\begin{aligned}
+B
+&=\Delta n-\sum_{v\in S}\bigl(\deg_G(v)+\Delta-1\bigr)\\
+&=s-\sum_{v\in S}a_S(v)
+  +\sum_{x\in T}\bigl(\Delta-a_S(x)\bigr).
+\end{aligned}$$
+The partition of  $S$  gives
+$$s-\sum_{v\in S}a_S(v)
+=
+z-\sum_{v\in H}(a_S(v)-1).$$
+Using injectivity of  $f$ , this becomes
+$$B
+=
+z+\sum_{v\in H}
+\left[\Delta-a_S(f(v))-(a_S(v)-1)\right]
++\sum_{x\in T\setminus f(H)}\bigl(\Delta-a_S(x)\bigr).$$
+This is exactly the stated formula. No internal-edge term, cut term, or unused degree slack is missing.The nonnegativity of the high residuals can be checked explicitly:Chosen high witnessConstraintResidual  $q_v$ Good, selected degree one $a_S(v)\le\Delta$  $\Delta-a_S(v)\ge0$ Bad, selected degree one $a_S(v)\le\Delta-1$  $\Delta-a_S(v)\ge1$ Bad, selected degree two $a_S(v)\le\Delta-1$  $\Delta-1-a_S(v)\ge0$ For a bad vertex, the bound  $a_S(v)\le\Delta-1$  follows because it has its adjacent outside witness in addition to its selected neighbors.Every unused outside vertex has nonnegative capacity. In particular, the unused selected-degree-one and selected-degree-two vertices contribute exactly  $\Delta-1$  and  $\Delta-2$ , respectively. Hence
+$$\begin{aligned}
+B
+&\ge z+(\Delta-1)r_1+(\Delta-2)r_2\\
+&\ge z+r_1+r_2\\
+&\ge z+K\\
+&\ge2(s-\beta_2(G)).
+\end{aligned}$$
+The second line is precisely where  $\Delta\ge3$  is used.Rearranging gives
+$$\sum_{v\in S}\bigl(\deg_G(v)+\Delta+1\bigr)
+\le\Delta n+2\beta_2(G).$$
+Thus the weighted theorem is correct, including for disconnected graphs and graphs with isolated vertices, provided the bipartite hypothesis is retained.The minimum-degree consequence follows by replacing every  $\deg_G(v)$  on the left by  $\delta$ . In the regular case, writing
+$$h=\mathrm{SF}_2(G)-\beta_2(G)$$
+gives
+$$(2d-1)\beta_2(G)+(2d+1)h\le dn.$$
+Using  $\beta_2(G)\ge n/2$ ,
+$$(2d+1)h\le \frac n2,$$
+and integrality gives the stated floor.The restriction concerning  $\Delta=2$  is correctly phrased: the presented budget no longer assigns a positive unit to an unused degree-two witness. Nothing in the proof silently applies that step at  $\Delta=2$ .4. The construction is regular and has the claimed forming numberAll degree counts are correct:Each  $a_i,b_i$  has  $d-1$  crown neighbors and one matching port.Each  $x_i,y_i$  has two selected neighbors and  $d-2$  outside neighbors.Each of  $p,q$  has degree  $d$ .The two excluded residues are distinct for every  $d\ge3$ , and residue zero is allowed. Therefore the specified outside graph is  $(d-2)$ -regular and contains every diagonal edge  $x_i y_i$ .For
+$$S=A\cup B\cup\{p,q\},$$
+the outside selected neighborhoods are
+$$N(y_i)\cap S=\{a_i,p\},
+\qquad
+N(x_i)\cap S=\{b_i,q\}.$$
+This establishes formation.After deleting  $a_i$ , the vertex  $y_i$  has unique selected neighbor  $p$ , and  $p$  is selected-isolated. Criterion (C) shows that  $y_i$  fails. The argument for deleting  $b_i$  is identical. After deleting  $p$  or  $q$ , the deleted vertex has no selected neighbor and therefore fails.So  $S$  is inclusion-minimal.The cardinality upper bound is already supplied by the residual identity: since  $B\ge0$ , a minimal forming set in a  $d$ -regular bipartite graph satisfies
+$$(2d-1)|S|\le dn.$$
+This is independent of the later calculation of  $\beta_2$ , so there is no circularity.At  $n=4d+2$ ,
+$$d(4d+2)=(2d-1)(2d+2)+2,
+\qquad
+2<2d-1.$$
+Consequently,
+$$\mathrm{SF}_2(G_d)
+\le
+\left\lfloor\frac{d(4d+2)}{2d-1}\right\rfloor
+=2d+2.$$
+The exhibited set attains it.5. The exact dissociation bound covers every degree5.1 The preliminary inequalities are validIf both high classes are represented, a selected  $A$ -vertex has at least  $b-1$  selected  $B$ -neighbors, and a selected  $B$ -vertex has at least  $a-1$  selected  $A$ -neighbors. Thus
+$$a,b\le2.$$
+If  $a=b=2$ , every chosen index on one side must also be chosen on the other. Otherwise a selected high vertex would see both chosen opposite high vertices. The two index sets therefore coincide, and the four selected high vertices form two matching edges. Their matching outside ports are forbidden, giving
+$$x,y\le d-2.$$
+If both outside classes are represented, each outside vertex has exactly two nonneighbors in the opposite outside class. A selected  $X$ -vertex therefore has at least  $y-2$  selected  $Y$ -neighbors, so  $y\le3$ , and symmetrically  $x\le3$ .Also,
+$$\epsilon=1\Longrightarrow y\le1,
+\qquad
+\eta=1\Longrightarrow x\le1.$$
+Therefore
+$$x+y+\epsilon+\eta\le6,$$
+with equality only at  $x=y=3$ ,  $\epsilon=\eta=0$ . With one selected isolate the bound is at most five, and with both it is at most four.These arguments use only the stipulated outside degree, so the advertised arbitrary-outside-graph extension is valid where it is claimed.5.2 Degrees  $d\ge5$ The case split is exhaustive. Its bounds can be organized as follows:High classes representedOutside classes representedBound usedBothBoth $4+6=10$ Exactly oneBoth $d+6$ BothAt most one $4+d+2=d+6$ NeitherBoth $6$ NeitherAt most one $d+2$ Every bound in this table is at most  $2d+1$  for  $d\ge5$ .For exactly one high class and at most one outside class, the remaining argument is also correct. For example, take  $b=0$ ,  $y=0$ :If  $\eta=0$ , then
+$$|D|=a+x+\epsilon\le2d+1.$$
+If  $\eta=1$ , then  $x\le1$ , so
+$$|D|\le d+3\le2d+1.$$
+When  $x=0$ , use  $\epsilon$  to restrict  $y$  in the same way.There is a small citation correction here: the first case uses  $a+b\le4$  and (7). It does not generally invoke (6), whose hypothesis is  $a+b=4$ .5.3 Degree  $d=4$ The preliminary bounds permit at most ten in the two difficult cases, and the proof correctly eliminates equality.If both high classes and both outside classes occur, a ten-set would require
+$$a=b=2,\qquad x=y=3,\qquad\epsilon=\eta=0.$$
+But  $a=b=2$  forces  $x,y\le d-2=2$ , a contradiction.If exactly one high class and both outside classes occur, a ten-set would require all four vertices of that high class and
+$$x=y=3,\qquad\epsilon=\eta=0.$$
+Suppose the high class is  $A$ . Every selected  $Y$ -vertex already has its selected  $A$ -partner. Hence there can be no selected  $X$ - $Y$  edge. Yet every selected  $X$ -vertex has at least
+$$y-2=1$$
+selected  $Y$ -neighbor, a contradiction.The cases with both high classes and at most one outside class are also correctly bounded:If  $a+b\le3$ , then  $|D|\le3+4+2=9$ .If  $a=b=2$ , the single outside class contributes at most two, giving  $|D|\le8$ .The other cases follow from the preceding estimates. Thus  $\beta_2\le9$ , including for every  $2$ -regular bipartite outside graph.5.4 Degree  $d=3$ Here the outside graph is exactly the identity matching.The listed neighborhoods show that every pair of distinct left vertices has at most one common right neighbor:Two  $a$ 's share one  $b$ .Two  $x$ 's share  $q$ . $a_i,x_i$  share  $y_i$ . $a_i,x_j$ ,  $i\ne j$ , share  $b_j$ .A pair involving  $p$  has only the appropriate  $y$  in common.Thus the whole graph is  $C_4$ -free.Assume a dissociation eight-set exists. Choose a part containing at least four selected vertices and write its selected size as  $7-k$ , where  $0\le k\le3$ . The other part then contains  $k+1$  selected vertices.Each of those  $k+1$  vertices has graph degree three but at most one selected neighbor, so it has at least two neighbors among the  $k$  omitted vertices. Choose one pair of omitted neighbors for each vertex. These pairs must be distinct, because a repeated pair creates a four-cycle. Hence
+$$k+1\le\binom{k}{2}.$$
+For  $k=0,1,2,3$ , the right sides are  $0,0,1,3$ , respectively, and are all smaller than  $k+1$ .The contradiction is valid. Since dissociation is hereditary, excluding an eight-set also excludes every larger set. Therefore  $\beta_2\le7$ .A whole bipartition part gives the matching lower bound in every degree, establishing
+$$\boxed{\beta_2(G_d)=2d+1\qquad(d\ge3).}$$
+6. The two-connectivity proof is valid, including  $d=3$ The crown cycle can be written unambiguously as
+$$a_0,b_2,a_1,b_3,\ldots,a_{d-1},b_1,a_0,$$
+with indices modulo  $d$ .Its two edge types are
+$$a_i b_{i+2},
+\qquad
+b_{i+2}a_{i+1}.$$
+Their index differences are  $2$  and  $1$ , both nonzero modulo every  $d\ge3$ . It visits every  $A$ - and  $B$ -vertex exactly once. Thus the crown is Hamiltonian and two-connected.For each  $i$ ,
+$$a_i-y_i-x_i-b_i$$
+is an open ear: its endpoints are distinct vertices already in the crown, and its two internal vertices are new. The edge  $x_i y_i$  is present. The different ears have disjoint internal vertices, so they may be added successively.The preservation claim can be verified directly by deleting a vertex. Deleting an old vertex leaves the old graph connected, and the remaining ear vertices stay attached through at least one endpoint. Deleting an internal ear vertex leaves the two remaining ear segments attached to the connected old graph. Thus no cut vertex is introduced.After the ears, all vertices of  $X\cup Y$  are present. Adding  $p$ , with at least two distinct existing neighbors, preserves two-connectivity: after deleting any one old vertex,  $p$  retains a neighbor in the connected remainder. The same argument applies to  $q$ . Adding the remaining edges preserves connectivity after every vertex deletion.There is no exceptional small degree or omitted endpoint case.7. Equality and the scope of sharpnessThe parameter values give
+$$\begin{aligned}
+(2d+1)\mathrm{SF}_2(G_d)
+&=(2d+1)(2d+2)\\
+&=d(4d+2)+2(2d+1)\\
+&=d|V(G_d)|+2\beta_2(G_d),
+\end{aligned}$$
+and
+$$\mathrm{SF}_2(G_d)-\beta_2(G_d)
+=1=\frac{|V(G_d)|}{4d+2}.$$
+Thus both inequalities in (5) are equalities.There is also a useful consistency check directly in the exchange budget. For the exhibited forming set,
+$$z=2,\qquad u=g=K=0.$$
+Choose
+$$f(a_i)=y_i,\qquad f(b_i)=x_i.$$
+All high vertices are bad, every outside vertex is used, and
+$$q_v=(d-2)-((d-1)-1)=0.$$
+Therefore
+$$B=z=2=2\bigl(|S|-\beta_2(G_d)\bigr).$$
+This shows explicitly where equality occurs in the compensation proof.Both parameters are additive over disjoint unions. Dissociation is componentwise, and formation and its inclusion-minimality are componentwise because every covering star lies within one component. Hence  $k$  disjoint copies give order  $k(4d+2)$  and gap  $k$ .The note correctly limits the connected conclusion: one two-connected equality example in each degree proves the coefficient sharp on that class. It does not establish arbitrarily large connected equality examples or unbounded connected equality gaps.Necessary corrections and clarificationsNo substantive mathematical correction is required. For a standalone manuscript, I recommend the following small edits:State the direct forming definition and repeat “bipartite” in the weighted theorem. This makes its scope explicit without relying on the preceding section.Define the bookkeeping completely:  $a_S(x)$  for every vertex,  $c(v)=|N(v)\cap U|$ , and “unused” as membership in  $T\setminus f(H)$ .Define good and bad relative to the fixed choice  $f$ . In the overlap argument, say “at most  $g$  overlaps”; equality is not required.Locate the construction’s cardinality bound: insert
+$$B\ge0\Longrightarrow(2d-1)|S|\le dn$$
+before its use.Correct the reference in the first  $d\ge5$  case to “ $a+b\le4$  and (7),” and optionally add the hereditary observation after the  $d=3$  eight-set contradiction.The ACCEPT verdict concerns the written mathematical proof. Its validity does not depend on the companion finite checks or the described formal-review receipts.

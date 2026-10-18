@@ -8,6 +8,11 @@ These are extensions of the cubic compensation theorem, with a uniform
 two-connected construction attaining the bound in every degree d>=3.
 Literature priority is not asserted by the proof or by finite checks.
 
+A selection S is two-star-forming when every outside vertex x has either
+two selected neighbors, or a selected neighbor which itself has a selected
+neighbor. Minimality means that every proper subset fails this property.
+The condition is upward closed, so testing all single deletions suffices.
+
 ## General exchange lemma
 
 Let G be bipartite, S minimal forming, s=|S|, and T=V minus S. Partition S
@@ -56,7 +61,8 @@ isolates in R have no selected neighbors. Thus both sets are dissociation
 sets. This checks all edge types, with no degree restriction.
 
 Each leaf is trimmed only at its unique support. Total trimming is
-sum_good(c(v)-1)+sum_bad c(v)=u-g. Every P/U vertex starts in both sets,
+sum_good(c(v)-1)+sum_bad c(v)=u-g, where c(v)=|N(v) intersect U|.
+Every P/U vertex starts in both sets,
 every isolate and high once, and every witness once. Consequently
 
     |D_L|+|D_R|=2s-z-K,
@@ -125,7 +131,9 @@ The set S=A union B union {p,q} has size2d+2. Each outside vertex has
 two selected neighbors, its high matching neighbor and one isolate.
 Deleting a_i uncovers y_i, deleting b_i uncovers x_i, and deleting
 p or q uncovers the deleted isolate itself. Hence S is minimal forming.
-The degree-capacity bound gives
+The nonnegativity B>=0 gives(2d-1)|S|<=dn for every minimal selection
+in a regular graph. Thus the degree-capacity bound, independently of
+the dissociation calculation below, gives
 
     SF_2 <= floor(d(4d+2)/(2d-1))=2d+2,
 
@@ -168,7 +176,7 @@ selected the left side is at most five, and if both are selected it
 is at most four.
 
 For d>=5, suppose first both high classes and both outside classes
-are nonempty. Bounds(6)--(7) give|D|<=10<=2d+1. If exactly one high
+are nonempty. The bound a+b<=4 and(7) give|D|<=10<=2d+1. If exactly one high
 class is nonempty and both outside classes are nonempty, then
 |D|<=d+6<=2d+1. If both high classes are empty, (7) suffices when
 both outside classes are nonempty; with only one outside class,
@@ -209,6 +217,7 @@ vertices. The other part has k+1 selected vertices, each adjacent to
 at least two omitted vertices. Their chosen omitted-neighbor pairs
 are distinct, since a repeated pair creates a four-cycle. This gives
 k+1<=binomial(k,2), impossible for0<=k<=3. Thus beta_2<=7.
+Any larger dissociation set would contain an eight-set, so it is also excluded.
 
 We have proved for every d>=3 that
 
@@ -234,9 +243,10 @@ Separate controls inspect the displayed attaining family for degrees3to16,
 560 vertex removals and693,407 forbidden-size subsets at degrees3,4,5.
 These cases are controls, not an exhaustive graph-class classification.
 
-Four additional symbolic Lean4.33.0 audits pass, covering unused capacities,
-weighted accounting, regular coefficient conversion, and variable-degree
-integer gap arithmetic, using only standard logical axioms. They ran
+Five additional symbolic Lean4.33.0 audits pass, covering unused capacities,
+weighted accounting, regular coefficient conversion, variable-degree
+integer gap arithmetic, and the later linear-equality residual vanishing
+lemma, using only standard logical axioms. They ran
 locally and sequentially after a memory and actual lean/lake preflight.
 The graph exchange, finite cardinal summation and construction upper-bound
 proof remain written. The complete graph theorem is not claimed fully
@@ -245,11 +255,15 @@ Lean-formalized. Reproduce the finite controls with
 The symbolic runner is `scripts/check_regular_compensation_formal.py`.
 
 The independent Oracle input is archived in
-`reviews/2026-10-19-regular-compensation-review-input.md`; its original
-stream is active at this checkpoint. It predates the subsequent connected
-ring proof, which has a separate focused review. Neither acceptance is
-presumed. General-degree literature comparison remains required before
-any priority claim or manuscript proposal.
+`reviews/2026-10-19-regular-compensation-review-input.md`. Its completed
+response accepts the general exchange, weighted theorem, all-degree
+sharpness and two-connectivity. The recommended definition and count-case
+clarifications are incorporated. The original response and scope are in
+`reviews/2026-10-19-regular-compensation-oracle-response.txt` and
+`../output/regular-compensation-oracle-review.json`. That input predates
+the connected ring, equality structure and covering pullback results;
+those are not attributed to its acceptance. General-degree literature
+comparison remains required before any priority claim or manuscript proposal.
 
 The rectangular-grid equality and psi_sq<=SF_2 bridge remain open. This
 note does not improve the existing5/6sub-quorum bound.

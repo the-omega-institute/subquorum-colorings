@@ -51,7 +51,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != 4:
+    if len(declarations) != 5:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
         if set(filter(None, map(str.strip, axioms.split(',')))) - {
@@ -62,7 +62,7 @@ def main():
                    lean_version=version, active_lean_lake_before_run=active,
                    memory_before_run=memory, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
-                   scope='Four symbolic lemmas: unused capacity for arbitrary maximum degree>=3, weighted deficit accounting, regular coefficient conversion and arbitrary-degree integer gap arithmetic. Graph exchange, finite cardinal summation, construction and dissociation cap retain complete written proofs and independent controls; no full Lean graph theorem claimed.')
+                   scope='Five symbolic lemmas: unused capacity for arbitrary maximum degree>=3, weighted deficit accounting, regular coefficient conversion, arbitrary-degree integer gap arithmetic, and vanishing residuals under linear equality for degree>=4. Graph exchange, finite cardinal summation, construction, dissociation cap and all-degree isolate-tight structural classification retain complete written proofs and independent controls; no full Lean graph theorem claimed.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 
