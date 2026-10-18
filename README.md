@@ -143,8 +143,21 @@ shared compensation when the cores are joined cyclically. The gap r
 attains isolate compensation with z=2r, so its1/2coefficient is sharp
 on connected cubic graphs with unbounded gaps. Seven new Lean audits,
 an exhaustive fixed-core port check and fifteen ring controls pass.
-This gives gap coefficient1/34 when all k_i=1; the earlier1/28family
-still supplies the better known asymptotic gap lower bound.
+This gives gap coefficient1/34 when all k_i=1. Its separate Oracle
+review returned ACCEPT for the full four-port and ring theorem.
+
+The [three-pair additive compensation lemma](docs/CUBIC_TRIPLE_PORT_COMPENSATION.md)
+now improves our connected cubic gap coefficient from1/28 to1/24.
+The fixed20-vertex six-port core satisfies |D|+m<=12, where m counts
+wholly omitted cut pairs. A general local case proof shows that two
+Heawood obstructions require two distinct losses in this same core.
+The resulting two-connected cubic bipartite graphs have n=48r,
+beta_2=26r and SF_2=28r for every r>=1, with gap n/24 and linear
+compensation equality. Eight conditional Lean count theorems and
+independent controls of every fixed-core subset and ten rings pass;
+the full graph theorem retains a written proof. Its separate Oracle
+review is pending. The connected asymptotic optimum is therefore
+between1/24 and1/14; neither optimality nor the grid bridge is settled.
 
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring

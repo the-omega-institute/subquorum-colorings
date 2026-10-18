@@ -1,0 +1,10 @@
+import StarForming.CubicTriplePorts
+
+#print axioms StarForming.CubicTriplePorts.six_port_deficiency
+#print axioms StarForming.CubicTriplePorts.hard_one_pair_case
+#print axioms StarForming.CubicTriplePorts.two_omitted_pairs_deficiency
+#print axioms StarForming.CubicTriplePorts.all_pairs_omitted_cap
+#print axioms StarForming.CubicTriplePorts.additive_omission_bound
+#print axioms StarForming.CubicTriplePorts.two_obstruction_module_cap
+#print axioms StarForming.CubicTriplePorts.ring_parameter_accounting
+#print axioms StarForming.CubicTriplePorts.compensation_matches_ring_upper

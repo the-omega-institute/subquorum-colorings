@@ -1,0 +1,100 @@
+ACCEPT. The four-port lemma holds for every  $k\ge1$ , and the ring construction proves
+$$\boxed{
+n=14r+20K,\qquad
+\beta_2=7r+12K,\qquad
+SF_2=8r+12K
+}$$
+for every  $r\ge1$  and every choice of positive integers  $k_1,\ldots,k_r$ , with  $K=\sum_i k_i$ . The resulting graph is simple, cubic, bipartite, and two-connected.The cut equalities, both signs of the weight contradiction, and the simultaneous ring interfaces all check out. The limiting statement can be made precise by requiring  $r\to\infty$  and  $K/r\to\infty$ .1. The deficiency identity and its equality consequencesLet  $D$  be a dissociation set in a graph  $F$  of maximum degree at most three, and put  $T=V(F)\setminus D$ . Since every nonisolated vertex of  $F[D]$  belongs to an isolated edge,
+$$2e(F[D])=|D|-i_D.$$
+Consequently,
+$$e(D,T)
+=3|D|-R_D-2e(F[D])
+=2|D|-R_D+i_D.$$
+Counting from  $T$  gives
+$$e(D,T)
+=3(N-|D|)-(R-R_D)-2e_T.$$
+Equating these expressions yields exactly
+$$\boxed{3N-5|D|-R+2R_D=i_D+2e_T.}$$
+For  $Q_k$ , the four distinct ports each have degree deficit one. Thus  $R=4$ ,  $R_D=p$ , and
+$$5|D|\le60k-4+2p\le60k+4.$$
+Integrality gives  $|D|\le12k$ .Now suppose  $x_0,x_1\notin D$  and  $|D|=12k$ . There are only two remaining ports, so  $p\le2$ , while the identity gives
+$$2p-4=i_D+2e_T\ge0.$$
+Therefore, simultaneously,
+$$p=2,\qquad i_D=0,\qquad e_T=0.$$
+This proves all three required conclusions: $x_2,x_3\in D$ ;every vertex of  $D$  has exactly one neighbor in  $D$  inside  $Q_k$ ; $T$  is independent inside  $Q_k$ .The same deductions hold with the two cut pairs exchanged. The equality argument uses the actual four vertex deficits exactly once.2. The periodic weight certificate is correctFor the proposed weights, the neighbor-weight sums in the uncut core, listed by residue modulo six, are:Vertex classNeighbor-weight sums $H$  $(-2,0,0,2,-4,4)$  $U$  $(0,2,-2,0,2,-2)$  $X$  $(2,-4,4,-2,0,0)$ Each row is exactly  $-2$  times its corresponding weight row.At the two  $Y$ -vertices in each block, the sums are
+$$w(u_0)+w(u_2)+w(u_4)=0+1-1=0,$$
+
+$$w(u_1)+w(u_3)+w(u_5)=-1+0+1=0.$$
+Each of the three length-six weight rows also sums to zero. Hence
+$$\sum_{v\in N(a)}w(v)+2w(a)=0
+\quad\text{for every }a,
+\qquad
+\sum_a w(a)=0.$$
+The wraparound is valid for every  $k$ , including  $k=1$ , because the cycle length  $6k$  is divisible by six.Restoring the cuts: all vertex casesUnder the equality consequences with  $x_0,x_1$  omitted:At  $x_0,x_1$ , both remaining  $Q_k$ -neighbors belong to  $D$ . Restoring their mutual edge adds an omitted neighbor, so the selected-neighbor count remains two.At  $x_2,x_3$ , the internal selected-neighbor count rises from one to two when their edge is restored.Every other selected vertex retains one selected neighbor.Every other omitted vertex has all three neighbors selected, since  $T$  was independent in  $Q_k$ .Thus the stated equation is correct:
+$$|N_{C_k}(a)\cap D|+2d(a)
+=
+3-\mathbf1_{\{x_0,x_1\}}(a)
++\mathbf1_{\{x_2,x_3\}}(a).$$
+Multiplying by  $w(a)$  and summing gives zero on the left:
+$$\begin{aligned}
+&\sum_a w(a)\left(\sum_{v\in N(a)}d(v)+2d(a)\right)\\
+&\qquad=
+\sum_v d(v)\left(\sum_{a\in N(v)}w(a)+2w(v)\right)=0.
+\end{aligned}$$
+On the right, the two endpoint sums are
+$$w(x_0)+w(x_1)=1,\qquad
+w(x_2)+w(x_3)=-1,$$
+so the result is  $-2$ , a contradiction.When  $x_2,x_3$  are omitted, the restored equation has the two endpoint indicators reversed. Its weighted sum is
+$$1-(-1)=2,$$
+again a contradiction. Both directions of the strict-loss lemma are therefore proved.An additional local check on strictnessThe equality configuration also admits a short local contradiction, which independently confirms the weight argument.Suppose  $x_0,x_1$  are omitted and  $x_2,x_3$  selected. Since  $x_2$  has only  $x_1,u_2$  as neighbors in  $Q_k$ , it must pair with  $u_2$ . Hence  $h_2$  is omitted. Independence of the complement then forces  $h_1$  into  $D$ ; omission of  $x_1$  forces  $u_1$  into  $D$ . Their pairing forces  $h_0$  to be omitted. Omission of  $x_0$  forces  $u_0$  into  $D$ , and its only possible selected partner is the even  $Y$ -vertex. That vertex also neighbors the selected  $u_2$ , producing a conflict.For the reverse case,  $x_1$  pairs with  $u_1$ , forcing  $h_1$  omitted, then  $h_2,u_2$  selected and paired, then  $h_3$  omitted. The selected  $u_3$  must pair with the odd  $Y$ -vertex, which also neighbors the selected  $u_1$ . This yields the corresponding conflict.The periodic certificate is already a complete proof; this local argument supplies a second structural verification.3. The ring interfaces preserve the dissociation boundsAll interfaces have the correct colors:New edgeEndpoint colors $\mathrm{point}\,0_i-x_{1,i}$ point color–opposite color $\mathrm{line}\,8_i-x_{0,i}$ line color–opposite color $x_{2,i}-x_{3,i+1}$ even–oddEvery deficient port receives exactly one edge.For  $r=1$ , the last edge restores the deleted  $x_2x_3$ . For  $r=2$ , the two cross-core edges
+$$x_{2,1}x_{3,2},\qquad x_{2,2}x_{3,1}$$
+are distinct. For larger  $r$ , the cyclic interfaces likewise join distinct copies through distinct ports. Simplicity, cubicity, and bipartiteness follow.The upper bound uses independent block pairsFor any dissociation set  $D$  of the ring, fix  $i$ .If
+$$|D\cap B_i|\le7,$$
+the unconditional core bound gives
+$$|D\cap(B_i\cup Q_{k_i})|\le7+12k_i.$$
+If  $|D\cap B_i|=8$ , the saturated-port lemma forces both Heawood ports to be selected and internally saturated. The new incident edges therefore force
+$$x_{0,i},x_{1,i}\notin D.$$
+The strict four-port bound then gives
+$$|D\cap Q_{k_i}|\le12k_i-1,$$
+and again
+$$|D\cap(B_i\cup Q_{k_i})|\le7+12k_i.$$
+The bound for this pair of blocks permits every choice at the core’s other cut pair. Thus summing over the disjoint vertex pairs is valid:
+$$\beta_2(R)\le7r+12K.$$
+At  $r=1$ , the actual core has its second cut restored. A dissociation set in that graph remains dissociating after deleting the restored edge, so the  $Q_k$  lemma applies unchanged.The Heawood saturation input is soundThe stated Heawood lemma has an elementary structural justification.First,  $\beta_2(\mathrm{Heawood})=7$ . If a dissociation set contains  $a\ge4$  points, its  $q=7-a\le3$  omitted points must supply at least two points to every selected line. Distinct selected lines determine distinct pairs of omitted points, so their number is at most
+$$\binom q2\le q.$$
+The dual argument treats four or more selected lines; if both classes contain at most three vertices, the total is at most six. All seven points attain seven.Deleting one endpoint from a dissociation set in the broken block gives a dissociation set in the restored Heawood graph. Hence the broken-block cap is eight. An eight-set must contain both ports, since otherwise restoring the edge would preserve it.Suppose the point port  $p$  were internally isolated. If the line port  $\ell$  were also isolated, restoring their edge would preserve dissociation. Otherwise  $\ell$  is paired with another selected point  $q$ , and its third point  $r$  is omitted. Every other selected line avoids  $p,q$ , so it meets  $\ell$  at  $r$ . Each such line requires another omitted point, and those further omitted points are distinct because the lines meet only at  $r$ . Thus the number of omitted points is at least the number of selected lines, giving total size at most seven. Duality proves saturation of the line port as well.The proposed attainment set is feasibleIn each core,
+$$U\cup H_{\mathrm{odd}}\cup X_{\mathrm{even}}$$
+has  $12k_i$  vertices. Its induced edges are exactly
+$$u_jh_j\quad(j\text{ odd}),\qquad
+u_jx_j\quad(j\text{ even}).$$
+Taking all seven Heawood points adds independent vertices.Every interface has an omitted endpoint:  $x_1$  is omitted, the Heawood line port is omitted, and  $x_3$  is omitted. Therefore the union is dissociating and has size  $7r+12K$ . This proves
+$$\boxed{\beta_2(R)=7r+12K.}$$
+4. Minimality survives, and compensation gives exact  $SF_2$ The outside-edge invariance argument is exact.For every  $A\subseteq S$ , the predicate  $F(A,x)$  uses only edges with an endpoint in  $A$ . Thus changing edges wholly inside  $V\setminus S$  preserves  $F(A,x)$  for every  $A\subseteq S$  and every  $x$ . It consequently preserves both formation and inclusion-minimality.This includes deletion tests  $A=S\setminus\{v\}$ : although  $v$  becomes an outside vertex for that test, it still belongs to the original  $S$ , so every edge incident with it remains unchanged.The core selection  $H\cup U$  is directly minimal: deleting  $h_i$  leaves  $x_i$  with sole selected neighbor  $u_i$ , which has become isolated; deleting  $u_i$  leaves  $x_i$  without a selected neighbor.The required Heawood eight-set can also be displayed explicitly. For a basis  $a,b,c$  of  $\mathbb F_2^3$ , let  $t=a+b+c$ . Select the points
+$$a,b,c,t$$
+and the lines
+$$\{a,b,a+b\},\quad
+\{b,c,b+c\},\quad
+\{c,a,c+a\},\quad
+\{a+b,b+c,c+a\}.$$
+This induces a six-cycle and two selected isolates. The adjacent outside pair
+$$p=a+b,\qquad \ell=\{a+b,c,t\}$$
+can be labeled point  $0$  and line  $8$ . Each selected cycle vertex has an adjacent failure witness whose other selected neighbor is an isolate; deleting a selected isolate fails at that vertex itself.Thus the ring has a minimal forming selection of size
+$$s=8r+12K.$$
+The established cubic compensation bound gives
+$$7SF_2(R)
+\le3n+2\beta_2(R)
+=56r+84K
+=7(8r+12K).$$
+The displayed selection attains this upper bound:
+$$\boxed{SF_2(R)=8r+12K.}$$
+5. Two-connectivity holds for every ring lengthThe connectivity argument is a valid instance of the following general lemma.Ring lemma. Let  $G_1,\ldots,G_r$  be disjoint two-connected graphs, with distinguished edges  $a_ib_i$ . Delete these edges and add  $a_ib_{i+1}$  cyclically. The resulting graph is two-connected.For  $r=1$ , the operation restores the deleted edge.For  $r\ge2$ , each  $F_i=G_i-a_ib_i$  is connected. Delete a vertex  $v\in G_j$ .If  $v$  is neither port,  $G_j-v$  is connected. Removing  $a_jb_j$  leaves at most two components, with the two ports in different components if a split occurs. The other  $r-1$  connected blocks and the ring interfaces supply an external path from  $a_j$  to  $b_j$ , reconnecting those pieces.If  $v=a_j$ , the surviving part of its block is exactly  $G_j-a_j$ , which is connected. The remaining ring interfaces form a chain through the other blocks attached to  $b_j$ .Deleting  $b_j$  gives the symmetric case.For  $r=2$ , the external path in the first case runs through the single other block, and the port-deletion cases retain one connecting interface. Thus the proof explicitly includes  $r=2$ .The first Heawood/core edge swap is this lemma with two graphs. The final operation applies it to the resulting  $G_i$ .The needed two-connectivity of  $C_k$  also follows directly from its definition. The two cycles and the paths  $h_i-u_i-x_i$  remain connected after deleting any one vertex. Each added  $Y$ -vertex has three distinct neighbors in that graph; adjoining a vertex with at least two distinct neighbors preserves two-connectivity. This covers  $k=1$  as well.6. Parameters, limits, and presentationThe remaining identities follow:
+$$SF_2-\beta_2=r,\qquad
+7SF_2=3n+2\beta_2.$$
+The stated regular bipartite comparison gives
+$$\Gamma=\alpha=\frac n2=7r+10K.$$
+When every  $k_i=1$ ,
+$$n=34r,\qquad \beta_2=19r,\qquad SF_2=20r,$$
+so the gap is exactly  $n/34$ .For the limiting statement, the exact expression is
+$$\frac{SF_2}{n}
+=\frac35-\frac{2r}{5(14r+20K)}.$$
+Thus  $r\to\infty$  gives unbounded gap, and  $K/r\to\infty$  gives  $SF_2/n\to3/5$ .For a standalone version of the note, include the explicit Heawood eight-set or its six-cycle-plus-two-isolates description, and state the limiting condition as  $r\to\infty,\ K/r\to\infty$ . The four-port lemma and all finite-family theorem statements can remain as written.

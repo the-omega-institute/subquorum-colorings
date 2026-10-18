@@ -4,8 +4,9 @@
 star formation is non-induced and minimality is by inclusion. This
 extends the [single-obstruction padding construction](CUBIC_STABILITY_PORTS.md)
 from a fixed gap of one to unbounded gaps while preserving equality in
-7SF_2<=3n+2beta_2. It does not improve the best already constructed
-asymptotic cubic gap coefficient1/28. No priority claim is made.
+7SF_2<=3n+2beta_2. Its coefficient1/34 does not improve the earlier
+1/28 construction. The subsequent [three-pair compensation theorem](CUBIC_TRIPLE_PORT_COMPENSATION.md)
+improves the connected coefficient to1/24. No priority claim is made.
 
 ## A two-parameter exact family
 
@@ -20,7 +21,7 @@ two-connected cubic bipartite graph R with, writing K=sum_i k_i,
 
 Also Gamma(R)=alpha(R)=n/2 by the established regular bipartite
 comparison. For k_i=1 this gives gap n/34 and unbounded gaps at linear
-compensation equality. Letting both r and the k_i grow gives unbounded
+compensation equality. Taking r->infinity and K/r->infinity gives unbounded
 gap while SF_2/n tends to3/5. The previous padding family had the
 latter limiting ratio with gap fixed at one.
 
@@ -157,7 +158,12 @@ the exact beta_2 value in (1).
 ## Minimality, the exact SF value and connectivity
 
 In every Heawood block use its established eight-vertex minimal
-selection, and in every core select H_i union U_i. All removed and
+selection, and in every core select H_i union U_i. Explicitly, for a
+basis a,b,c of the Fano plane, put t=a+b+c and select the points
+a,b,c,t and the four lines {a,b,a+b}, {b,c,b+c}, {c,a,c+a},
+{a+b,b+c,c+a}. This induces a six-cycle and two selected isolates.
+The adjacent outside point a+b and line {a+b,c,t} are the ports
+point0 and line8. All removed and
 added edges have endpoints outside this selection. A covering two-star
 for any subset of S uses at most one vertex outside that subset;
 an edge with both endpoints outside S cannot occur in it. Hence the
@@ -219,7 +225,8 @@ not used to prove the periodic identity, strict loss, or global bounds.
 The new construction remains on the cycle stratum of the equality
 classification. It demonstrates unbounded gap on that stratum but
 does not determine the best connected cubic gap coefficient, which
-is still between1/28 and1/14. Rectangular-grid equality remains open.
+is now between1/24 and1/14 by the subsequent three-pair theorem.
+Rectangular-grid equality remains open.
 
 The [Lean source](../formal/StarForming/CubicPaddingRings.lean) has seven
 audited declarations. Kernel decision checks the displayed six-periodic
@@ -257,5 +264,9 @@ Run `python3 scripts/check_cubic_padding_rings.py --output output/cubic-padding-
 The proof has a separate
 [Oracle review request](reviews/2026-10-19-cubic-padding-ring-review-question.md)
 and [status receipt](../output/cubic-padding-ring-oracle-review.json).
-The accepted augmented-isolate review predates this construction and
-does not by itself review the new four-port lemma or ring theorem.
+The separate four-port review returned ACCEPT, covering the strict-loss
+lemma, exact ring parameters, minimality and two-connectivity. Its
+[response](reviews/2026-10-19-cubic-padding-ring-review-response.txt)
+was checked against the proof. The two presentation suggestions above
+make the limiting condition and the Heawood selection explicit. The
+later endpoint-core threshold remains outside the submitted input.
