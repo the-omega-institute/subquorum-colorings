@@ -1,0 +1,24 @@
+import StarForming.CoverStability
+
+#print axioms StarForming.CoverPullback.twoAt_mono
+#print axioms StarForming.CoverPullback.forms_mono
+#print axioms StarForming.CoverPullback.minimal_of_single_deletions
+#print axioms StarForming.CoverPullback.twoAt_pullback
+#print axioms StarForming.CoverPullback.forms_pullback
+#print axioms StarForming.CoverPullback.self_deletion_projects
+#print axioms StarForming.CoverPullback.adjacent_deletion_projects
+#print axioms StarForming.CoverPullback.nonadjacent_failure_private_path
+#print axioms StarForming.CoverPullback.private_path_deletion_fails
+#print axioms StarForming.CoverPullback.minimal_pullback_of_safe_certificates
+#print axioms StarForming.CoverPullback.safe_certificates_of_boundary_triangle_free
+#print axioms StarForming.CoverPullback.minimal_pullback_of_boundary_triangle_free
+#print axioms StarForming.CoverPullback.minimal_pullback
+#print axioms StarForming.CoverPullback.canonical_symmetric
+#print axioms StarForming.CoverPullback.canonical_cover
+#print axioms StarForming.CoverPullback.canonical_selected_edge
+#print axioms StarForming.CoverPullback.canonical_retained_edge
+#print axioms StarForming.CoverPullback.twoAt_canonical_after_deletion
+#print axioms StarForming.CoverPullback.canonical_deletion_forms_of_missing_certificate
+#print axioms StarForming.CoverPullback.canonical_nonminimal_of_missing_certificate
+#print axioms StarForming.CoverPullback.safe_certificates_iff_canonical_minimal
+#print axioms StarForming.CoverPullback.safe_certificates_iff_all_covers

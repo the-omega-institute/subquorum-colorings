@@ -60,6 +60,14 @@ minimal S and count its fibers to obtain the SF inequality. The theorem
 asserts triangle-freeness as a sufficient hypothesis, not as a necessary
 condition for every cover to preserve minimality.
 
+The stronger exact selection-dependent criterion is now proved in
+COVER_STABLE_MINIMAL_SELECTIONS.md. Every-cover preservation is equivalent
+to a safe certificate at each selected deletion, and to passing one
+canonical two-sheeted-cover test per selected vertex. The full equivalence,
+including explicit counter-cover necessity, is checked in
+formal/StarForming/CoverStability.lean. The triangle-free theorem itself is
+the corollary `StarForming.CoverPullback.minimal_pullback` in CoverPullback.lean.
+
 The proof does not assert that dissociation optima pull back: preimages
 of a dissociation set do give the lower bound beta_2(H)>=k beta_2(G),
 but new dissociation sets can be larger. That additional gain is exactly
@@ -159,3 +167,5 @@ subset optima on576small bipartite graphs. These controls do not replace
 the general covering and one-part arguments above.
 This covering theorem and exploration were derived after the regular
 compensation and connected-ring Oracle inputs and are outside those reviews.
+The later exact-criterion review is recorded separately; its acceptance
+must not be inferred from the regular compensation reviews.

@@ -111,6 +111,19 @@ triangle-free bases. It proves exact SF_2=16 for every two-sheeted
 Heawood cover. Finite connected-cover discovery controls found beta_2
 15or16, rather than14; they do not settle arbitrary-order cubic sharpness.
 
+The [exact cover-stability criterion](docs/COVER_STABLE_MINIMAL_SELECTIONS.md)
+now removes the global triangle-free restriction: a fixed minimal selection
+is preserved by every graph cover exactly when every selected deletion
+has a safe self or outside failure certificate. A missing certificate
+constructs a two-sheeted cover with an explicitly redundant selected lift.
+Both directions, the canonical cover and boundary/triangle-free corollaries
+are checked in [Lean](formal/StarForming/CoverStability.lean), with22axiom
+audits. For connected bases the counter-cover is connected by a separate
+written proof. Independent controls check7,882minimal selections,
+25,724pullbacks and250canonical counter-covers. Thus covering minimality
+is fully resolved for a fixed selection; the dissociation gain in covers
+remains a distinct obstruction to connected cubic gap amplification.
+
 The [sharp cubic bipartite compensation theorem](docs/SHARP_CUBIC_BIPARTITE_GAP.md)
 proves7SF_2<=3n+2beta_2 for all finite simple cubic bipartite graphs,
 and the sharp gap bound SF_2-beta_2<=floor(n/14). Two explicit dissociation
