@@ -46,6 +46,13 @@ def base_controls():
     assert SELECTED in minimal
     for deleted, outside in WITNESSES.items():
         assert not local_condition(adjacency, SELECTED - {deleted}, outside)
+    for deleted, unique in [(1, 2), (7, 10)]:
+        reduced = SELECTED - {deleted}
+        assert [outside for outside in range(12)
+                if outside not in reduced and not local_condition(adjacency, reduced, outside)] == [unique]
+    exchanged = (SELECTED - {1, 7}) | {2, 10}
+    assert len(exchanged) == 8 and not dissociation(adjacency, exchanged)
+    assert all(second in adjacency[first] for first, second in [(9, 2), (2, 10), (10, 4)])
     dissociation_sets = [selected for selected in subsets if dissociation(adjacency, selected)]
     assert max(map(len, dissociation_sets)) == 7
     port_states = []
@@ -64,6 +71,7 @@ def base_controls():
     return dict(order=12, beta_2=7, SF_2=8,
                 minimal_set_counts=dict(Counter(map(len, minimal))),
                 all_subsets_literal_predicate_and_all_proper_minimality_checked=True,
+                forced_adjacent_certificates=[2, 10], failed_exchange_path=[9, 2, 10, 4],
                 port_states=port_states)
 
 
@@ -110,6 +118,8 @@ def cycle_controls(copies):
     assert sorted(vertex for edge in matching for vertex in edge) == list(range(11 * copies))
     assert all(second in adjacency[first] for first, second in matching)
     assert forms(adjacency, selected)
+    assert Counter(len(adjacency[vertex] & selected) for vertex in selected) == {
+        0: copies, 1: 4 * copies, 3: 2 * copies}
     for image in images:
         for deleted, outside in WITNESSES.items():
             assert not local_condition(adjacency, selected - {image[deleted]}, image[outside])
@@ -120,6 +130,25 @@ def cycle_controls(copies):
         attaining.update(image[vertex] for vertex in PORT_WITNESSES[state])
     assert len(attaining) == 13 * copies // 2
     assert dissociation(adjacency, attaining)
+    paths = [[images[0][vertex] for vertex in path] for path in [
+        [1, 7], [1, 9, 2], [1, 8, 3], [10, 4, 7],
+        [10, 2], [10, 3], [11, 5, 7], [11, 2]]]
+    external = [images[0][3]]
+    for block in range(1, copies):
+        external.append(10 * copies + block - 1)
+        external.extend(images[block][vertex] for vertex in [11, 2, 10, 3])
+    external.extend([10 * copies + copies - 1, images[0][11]])
+    paths.append(list(reversed(external)))
+    first_part = {images[0][vertex] for vertex in [1, 10, 11]}
+    second_part = {images[0][vertex] for vertex in [7, 2, 3]}
+    assert {(path[0], path[-1]) for path in paths} == {
+        (first, second) for first in first_part for second in second_part}
+    interiors = set()
+    for path in paths:
+        assert len(path) == len(set(path))
+        assert not set(path[1:-1]) & (first_part | second_part | interiors)
+        assert all(second in adjacency[first] for first, second in zip(path, path[1:]))
+        interiors.update(path[1:-1])
     for port_mask in range(1 << min(copies, 12)) if copies <= 12 else []:
         chosen = {block for block in range(copies) if port_mask >> block & 1}
         touched = {block for block in range(copies)
@@ -127,6 +156,7 @@ def cycle_controls(copies):
         assert len(touched) - len(chosen) <= copies // 2
     return dict(copies=copies, order=11 * copies, edges=14 * copies,
                 perfect_matching_size=len(matching), independence_number=11 * copies // 2,
+                nonplanarity_K33_subdivision_checked=True,
                 beta_attaining_size=len(attaining), minimal_star_set_size=len(selected),
                 gap_lower_bound=copies // 2, two_connected=True, bipartite=True,
                 minimum_degree=2, maximum_degree=3)

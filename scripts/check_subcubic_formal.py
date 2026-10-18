@@ -43,7 +43,7 @@ def main():
                            exit_code=result.returncode, stdout=result.stdout, stderr=result.stderr))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != 8:
+    if len(declarations) != 10:
         raise RuntimeError('Missing audit declarations')
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     for declaration, axioms in declarations:
@@ -53,7 +53,7 @@ def main():
                    checked_at=datetime.datetime.now(datetime.timezone.utc).isoformat(),
                    lean_version=version, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
-                   scope='Std-only: explicit base graph simplicity, local star predicate, deletion minimality, eight-set size, all4096mask dissociation port cap, four isolated-port attaining sets and general arithmetic double-counting bound. Cyclic gluing, exact global attainment, two-connectivity and global SF lower bound have written proofs; they are not asserted to be formalized here.')
+                   scope='Std-only: explicit base graph simplicity, local star predicate, deletion minimality, eight-set size, forced adjacent certificates and their failed simultaneous exchange, all4096mask dissociation port cap, four isolated-port attaining sets and general arithmetic double-counting bound. Cyclic gluing, exact global attainment, two-connectivity and global SF lower bound have written proofs; they are not asserted to be formalized here.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))

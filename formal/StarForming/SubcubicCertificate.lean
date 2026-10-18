@@ -95,6 +95,16 @@ theorem base_minimal : Minimal Adj selected := by
   intro deleted hselected
   exact ⟨failure deleted, base_deletion_failures deleted hselected⟩
 
+set_option synthInstance.maxSize 2048 in
+set_option maxSynthPendingDepth 64 in
+theorem forced_certificates :
+    (∀ outside : Fin 12, ¬ (selected outside ∧ outside ≠ 1) →
+      (¬ TwoAt Adj (fun vertex => selected vertex ∧ vertex ≠ 1) outside ↔ outside = 2)) ∧
+    (∀ outside : Fin 12, ¬ (selected outside ∧ outside ≠ 7) →
+      (¬ TwoAt Adj (fun vertex => selected vertex ∧ vertex ≠ 7) outside ↔ outside = 10)) := by
+  unfold TwoAt Adj selected neighbors
+  decide +kernel
+
 theorem selected_card :
     ((List.finRange 12).filter (fun vertex => decide (selected vertex))).length = 8 := by
   decide +kernel
@@ -108,6 +118,13 @@ def card (mask : Fin 4096) : Nat :=
 def Dissociation (mask : Fin 4096) : Prop :=
   ∀ vertex : Fin 12, membership mask vertex = true →
     ((neighbors vertex).filter (membership mask)).length ≤ 1
+
+theorem exchange_collision :
+    (∀ vertex : Fin 12, membership 1909 vertex = true ↔
+      (selected vertex ∧ vertex ≠ 1 ∧ vertex ≠ 7) ∨ vertex = 2 ∨ vertex = 10) ∧
+    card 1909 = 8 ∧ ¬ Dissociation 1909 := by
+  unfold Dissociation card membership neighbors selected
+  decide +kernel
 
 set_option maxRecDepth 200000 in
 set_option maxHeartbeats 0 in

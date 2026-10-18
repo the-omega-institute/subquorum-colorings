@@ -143,6 +143,30 @@ no selected neighbor in each set:
 This proves the lemma by a readable case argument, not by enumeration.
 It also proves beta_2(H)=7 and hence a strict subcubic gap in the block.
 
+### The obstruction to independent certificate replacement
+
+The high-degree selected vertices are precisely 1 and 7. After deleting
+1, the only failing outside vertex is 2; after deleting 7, the only failing
+outside vertex is 10, as the local star test directly shows. Both are
+same-side, leaf-mediated certificates of the source paper's type (T2).
+These forced certificates are adjacent to each other.
+
+The natural simultaneous exchange
+
+    (S minus {1,7}) union {2,10}
+
+has eight vertices but contains the selected path 9--2--10--4. It is not
+a dissociation set. The certificate injection therefore cannot be treated
+as a supply of independently usable replacements, even at maximum degree
+three. The exact beta_2(H)=7 proof shows more than failure of this exchange:
+no dissociation set of size eight exists anywhere in the block. This is
+an obstruction to a general equality claim, not a rectangular-grid example.
+
+The displayed minimal star-forming set induces a forest: one six-vertex
+double star and two isolates. In J_r the corresponding set induces r
+disjoint double stars and r isolates. Thus a strict gap does not require
+a cycle in the selected subgraph or an unbounded selected component.
+
 ## Cyclic identification and degree control
 
 Take r copies H_i, indexed cyclically. Identify port 6 of H_i with port 0
@@ -303,6 +327,23 @@ threshold, not a smallest-order assertion.
 
 ## Research boundary
 
+The block is planar, but the cyclic family is nonplanar. This identifies
+a specific obstacle to using this port identification for grids. In core
+K_0 take branch parts {1,10,11} and {7,2,3}. Eight of the nine required
+K_{3,3} paths are already present:
+
+    1--7,      1--9--2,    1--8--3,
+    10--4--7,  10--2,      10--3,
+    11--5--7,  11--2.
+
+The missing path from 11 to 3 goes through the other blocks around the
+quotient cycle. In each other core use 11--2--10--3 and the shared-port
+connections. This path has no internal vertex in K_0 and is disjoint from
+all other path interiors. These nine paths form a subdivision of K_{3,3}.
+Thus J_r is nonplanar, also for r=2. More generally, adding an external
+path between the two port-neighbors of this core creates this obstruction.
+The theorem does not settle equality on two-connected planar subcubic graphs.
+
 This construction resolves the maximum-degree-three feasibility question
 and amplifies its gap within two-connected bipartite graphs of minimum
 degree two. The source paper arXiv:2610.03785v2 was reread on October19:
@@ -341,9 +382,10 @@ The standalone Lean4.33.0 module uses only Std, independently of Mathlib
 caches. It verifies base simplicity, the local star predicate, deletion
 minimality and size eight, the dissociation port cap over all 4,096 masks,
 all four isolated-port attaining witnesses, and the general arithmetic
-inequality excluding double counting. Eight declarations passed the
+inequality excluding double counting. The two forced certificates and
+failure of their simultaneous exchange are verified as well. Ten declarations passed the
 axiom audit using only propext and Quot.sound. Local sequential verification
-took about 31 seconds with peak child RSS 3.75 GB. Its star definition is
+took about 31 seconds with peak child RSS 3.73 GB. Its star definition is
 the center-or-leaf local characterization used in this note. The existing
 [literal/local equivalence](../formal/StarForming/Amplification.lean) separately
 relates that characterization to literal two-leaf stars. There is no new
