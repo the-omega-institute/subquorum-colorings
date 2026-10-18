@@ -1,0 +1,96 @@
+The claim is true. There is a structural proof using an exact matrix model of the switching classes, the rational canonical forms of traceless  $3\times3$  binary matrices, and six explicit dissociation sets.The proof also gives the proposed rigidity statement:
+$$\boxed{\beta_2(H)=14\quad\Longleftrightarrow\quad
+\text{the signing is switch-trivial}.}$$
+1. Switching classes are traceless binary matricesPut  $V=\mathbb F_2^3$ . Represent a Fano point by a nonzero column  $p\in V$ , and a Fano line by a nonzero row  $\ell\in V^*$ . Incidence means
+$$\ell p=0.$$
+This is precisely the given Fano plane: the three nonzero points in  $\ker\ell$  form a triple  $\{a,b,a+b\}$ .For an edge signing  $\sigma$ , define
+$$\Phi(\sigma)=
+\sum_{\ell p=0}\sigma(p,\ell)\,p\ell
+\in\operatorname{End}(V).$$
+Here  $p\ell$  is the rank-one operator  $v\mapsto\ell(v)p$ . Since
+$$\operatorname{tr}(p\ell)=\ell p=0,$$
+the image lies in the eight-dimensional space
+$$\mathfrak{sl}_3(\mathbb F_2)
+=\{M:\operatorname{tr}M=0\}.$$
+Lemma 1. The map  $\Phi$  induces an isomorphism
+$$\mathbb F_2^{E}/\{\text{vertex-switching signatures}\}
+\;\cong\;\mathfrak{sl}_3(\mathbb F_2).$$
+Proof. Switching at a point  $p$  changes  $\Phi$  by
+$$p\left(\sum_{\substack{\ell\ne0\\\ell p=0}}\ell\right)=0.$$
+The sum vanishes because the three nonzero vectors in a two-dimensional binary vector space sum to zero. Switching at a line similarly changes  $\Phi$  by
+$$\left(\sum_{\substack{p\ne0\\\ell p=0}}p\right)\ell=0.$$
+Thus  $\Phi$  annihilates the switching space.It is also surjective. Writing  $E_{ij}$  for the matrix units, the single flag  $(e_i,e_j^*)$ , for  $i\ne j$ , maps to  $E_{ij}$ . Moreover,
+$$(e_i+e_j)(e_i^*+e_j^*)+E_{ij}+E_{ji}
+=E_{ii}+E_{jj}.$$
+These give all six off-diagonal directions and the two independent traceless diagonal directions.Therefore
+$$\dim\ker\Phi=21-8=13.$$
+The switching space has dimension  $14-1=13$ : the kernel of the vertex-to-edge coboundary map consists of the constant vertex assignments, since the Heawood graph is connected. Consequently,
+$$\ker\Phi=\{\text{switch-trivial signings}\}.
+\qquad\square$$
+A coordinate change  $g\in GL_3(\mathbb F_2)$  acts on flags by
+$$(p,\ell)\longmapsto(gp,\ell g^{-1}),$$
+and transports the invariant according to
+$$\Phi(g\cdot\sigma)=g\Phi(\sigma)g^{-1}.$$
+It follows that signings whose matrices are conjugate give isomorphic covering graphs, after a Fano coordinate change and vertex sheet switching.In particular, connected two-sheeted covers correspond to nonzero matrices under  $\Phi$ .2. A complete algebraic reduction to six representativesA traceless  $3\times3$  binary matrix has characteristic polynomial
+$$\chi_M(t)=t^3+at+b,\qquad a,b\in\mathbb F_2.$$
+The following argument proves the completeness of the six cases. $\chi_M(t)=t^3$ . Cayley–Hamilton gives  $M^3=0$ . If  $M\ne0$  and  $M^2=0$ , then  $\operatorname{im}M\subseteq\ker M$  forces rank one, giving the nilpotent type  $2+1$ . If  $M^2\ne0$ , a vector  $v$  with  $M^2v\ne0$  gives the basis  $(M^2v,Mv,v)$ , hence the nilpotent type  $3$ . $\chi_M(t)=t^3+t=t(t+1)^2$ . Primary decomposition gives a one-dimensional zero block and a two-dimensional eigenvalue-one block. The latter is either  $I_2$  or  $J_2(1)$ . $\chi_M(t)=t^3+1=(t+1)(t^2+t+1)$ . The coprime primary factors give one linear block and the unique irreducible quadratic block, hence one similarity type. $\chi_M(t)=t^3+t+1$ . This polynomial has no root in  $\mathbb F_2$ , so it is irreducible. Every nonzero vector is cyclic, giving its companion matrix.Thus the six nonzero similarity types have the following representatives. In this table, label vectors and covectors by binary integers:
+$$1=e_1,\quad2=e_2,\quad4=e_3,$$
+with  $3=e_1+e_2$ , and so forth. A pair  $(p,\ell)$  in the last column means that precisely that incidence has sign one; every omitted sign is zero.TypeMatrix representativeCharacteristic polynomialTwisted incidences $N_1$  $E_{12}$  $t^3$  $(1,2)$  $N_2$  $E_{12}+E_{23}$  $t^3$  $(1,2),(2,4)$  $S$  $\operatorname{diag}(1,1,0)$  $t^3+t$  $(3,3),(1,2),(2,1)$  $J$  $S+E_{12}$  $t^3+t$  $(3,3),(2,1)$  $C$  $E_{13}+E_{21}+E_{32}$  $t^3+1$  $(1,4),(2,1),(4,2)$  $K$  $C+E_{23}$  $t^3+t+1$  $(1,4),(2,1),(4,2),(2,4)$ The listed signatures have the stated  $\Phi$ -values by direct outer-product summation. For example,
+$$3\,3^*
+=(e_1+e_2)(e_1^*+e_2^*)
+=E_{11}+E_{12}+E_{21}+E_{22},$$
+which verifies the rows  $S$  and  $J$ .To spell out why this reduction covers every connected lift, let its signing be  $\sigma$ . Choose  $g$  conjugating  $\Phi(\sigma)$  to one of the displayed matrices  $M$ , and let  $\tau$  be the displayed signing for  $M$ . Then
+$$\Phi(g\cdot\sigma+\tau)=0.$$
+Lemma 1 says that  $g\cdot\sigma+\tau$  is a vertex-switching signature. Hence the original cover is isomorphic to the displayed representative cover.3. Explicit local certificates for all six formsWrite  $p_i$  for point  $p$  on sheet  $i$ , and  $\ell_j$  for line  $\ell$  on sheet  $j$ . Adjacency is
+$$p_i\sim\ell_j
+\quad\Longleftrightarrow\quad
+\ell p=0
+\ \text{ and }\ 
+i+j=\sigma(p,\ell).$$
+The seven base line triples in these coordinates are:Line  $\ell$ Incident points  $T_\ell$  $1$  $2,4,6$  $2$  $1,4,5$  $3$  $3,4,7$  $4$  $1,2,3$  $5$  $2,5,7$  $6$  $1,6,7$  $7$  $3,5,6$ Here is a certificate format that records the entire selected induced graph.Take ordered lists  $U$  of point vertices and  $Q$  of line vertices of equal length, together with additional point vertices  $W$  and line vertices  $Z$ . Put
+$$A=U\cup W,\qquad D=A\cup Q\cup Z.$$
+The certificate conditions are
+$$N(Q_r)\cap A=\{U_r\}\quad\text{for every position }r,
+\qquad
+N(z)\cap A=\varnothing\quad(z\in Z).
+\tag{1}$$
+With all vertices distinct within each part, these conditions say that  $H[D]$  consists exactly of the matching edges  $U_rQ_r$ , together with the isolated vertices  $W\cup Z$ .In the following table, the column heading determines whether a label such as  $1_0$  denotes a point or a line. The lists  $U,Q$  are paired in their displayed order.Type $U$ : matched points, ordered $Q$ : matched lines, same order $W$ : isolated points $Z$ : isolated lines $N_1$  $1_0,2_0,2_1,3_0,4_0,4_1,5_1$  $6_0,5_0,4_1,7_0,2_0,3_1,7_1$  $\varnothing$  $6_1$  $N_2$  $1_0,1_1,2_0,3_1,4_0,4_1,6_0$  $4_0,6_1,5_0,7_1,3_0,1_1,7_0$  $\varnothing$  $5_1$  $S$  $6_0,2_0,5_0,1_0,7_0,3_0$  $1_0,1_1,2_0,2_1,3_0,3_1$  $\varnothing$  $4_1,5_1,6_1$  $J$  $6_0,2_0,7_0,3_0$  $1_0,1_1,3_0,3_1$  $1_0,5_0$  $2_1,4_1,5_1,6_1,7_1$  $C$  $1_0,2_0,4_1,6_0,7_0$  $4_1,4_0,3_1,1_0,3_0$  $5_0$  $2_1,5_1,6_1,7_1$  $K$  $2_0,3_0,3_1,4_0,5_0,5_1,7_0$  $1_1,4_0,3_1,1_0,2_0,5_1,6_0$  $\varnothing$  $6_1$ Verification of the certificatesEvery entry follows from the displayed line triples and this exact rule:
+$$N(\ell_j)\cap A
+=
+\left\{
+p_i\in A:
+p\in T_\ell,\ 
+i=j+\mathbf1_{\{(p,\ell)\text{ is twisted}\}}
+\right\}.
+\tag{2}$$
+Applying (2) to each line in the  $Q$ -column gives, in order, the corresponding singleton in the  $U$ -column. Applying it to each line in the  $Z$ -column gives the empty set. Thus the table explicitly supplies all the identities in (1).For illustration, in row  $N_1$ ,
+$$A=\{1_0,2_0,2_1,3_0,4_0,4_1,5_1\},$$
+and the sole twisted incidence is  $(1,2)$ . Since  $T_2=\{1,4,5\}$ , one obtains
+$$N(2_0)\cap A=\{4_0\}.$$
+Indeed, the selected  $1_0$  is sent to line  $2_1$ , and the selected  $5_1$  also meets line  $2_1$ . Since  $T_6=\{1,6,7\}$ , one also obtains
+$$N(6_0)\cap A=\{1_0\},\qquad
+N(6_1)\cap A=\varnothing.$$
+These are the corresponding matching edge and isolated line recorded in the table.The  $J$ -row gives another transparent check. Its selected point set is
+$$A=\{1_0,2_0,3_0,5_0,6_0,7_0\},$$
+with twists  $(3,3),(2,1)$ . The four selected matching-line neighborhoods are exactly
+$$\begin{aligned}
+N(1_0)\cap A&=\{6_0\},&
+N(1_1)\cap A&=\{2_0\},\\
+N(3_0)\cap A&=\{7_0\},&
+N(3_1)\cap A&=\{3_0\}.
+\end{aligned}$$
+All five lines in its  $Z$ -column have empty selected neighborhoods. The two remaining selected points  $1_0,5_0$  are therefore isolated.The sizes of the six induced subgraphs are:TypeMatching edgesIsolated verticesTotal vertices $N_1$  $7$  $1$  $15$  $N_2$  $7$  $1$  $15$  $S$  $6$  $3$  $15$  $J$  $4$  $7$  $15$  $C$  $5$  $5$  $15$  $K$  $7$  $1$  $15$ This proves  $\beta_2\ge15$  for each representative. Section 2 transfers the bound to every connected two-sheeted Heawood cover.  $\square$ 4. The rigidity statement and the requested gapIf the signing is switch-trivial, the cover is the disjoint union of two Heawood graphs, so its dissociation number is  $7+7=14$ . Every nontrivial switching class has one of the six certificates above. Hence
+$$\boxed{
+\beta_2(H)=14
+\iff
+\Phi(\sigma)=0
+\iff
+\sigma\text{ is switch-trivial}.
+}$$
+For completeness, a dissociation set  $D$  in a cubic graph on  $28$  vertices satisfies
+$$2|D|\le e(D,V\setminus D)\le3(28-|D|),$$
+because every selected vertex has at least two neighbors outside  $D$ . Therefore
+$$\beta_2(H)\le\left\lfloor\frac{84}{5}\right\rfloor=16.$$
+The connected two-sheeted covers consequently satisfy
+$$\beta_2(H)\in\{15,16\}.$$
+Using your established  $SF_2(H)=16$ , their  $SF_2-\beta_2$  gap is  $0$  or  $1$ .For a written proof, retain the quotient-map lemma, the characteristic-polynomial classification, and the explicit certificate table as three separate lemmas.

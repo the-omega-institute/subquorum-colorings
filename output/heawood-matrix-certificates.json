@@ -1,0 +1,498 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "flags": 21,
+  "image_rank": 8,
+  "switching_rank": 13,
+  "certificates": [
+    {
+      "type": "N1",
+      "twists": [
+        [
+          1,
+          2
+        ]
+      ],
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected_points": [
+        10,
+        20,
+        21,
+        30,
+        40,
+        41,
+        51
+      ],
+      "selected_lines": [
+        20,
+        31,
+        41,
+        50,
+        60,
+        61,
+        70,
+        71
+      ],
+      "matched_edges": 7,
+      "isolated_vertices": 1,
+      "line_neighborhoods": {
+        "20": [
+          40
+        ],
+        "31": [
+          41
+        ],
+        "41": [
+          21
+        ],
+        "50": [
+          20
+        ],
+        "60": [
+          10
+        ],
+        "61": [],
+        "70": [
+          30
+        ],
+        "71": [
+          51
+        ]
+      }
+    },
+    {
+      "type": "N2",
+      "twists": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "matrix": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "selected_points": [
+        10,
+        11,
+        20,
+        31,
+        40,
+        41,
+        60
+      ],
+      "selected_lines": [
+        11,
+        30,
+        40,
+        50,
+        51,
+        61,
+        70,
+        71
+      ],
+      "matched_edges": 7,
+      "isolated_vertices": 1,
+      "line_neighborhoods": {
+        "11": [
+          41
+        ],
+        "30": [
+          40
+        ],
+        "40": [
+          10
+        ],
+        "50": [
+          20
+        ],
+        "51": [],
+        "61": [
+          11
+        ],
+        "70": [
+          60
+        ],
+        "71": [
+          31
+        ]
+      }
+    },
+    {
+      "type": "S",
+      "twists": [
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "selected_points": [
+        10,
+        20,
+        30,
+        50,
+        60,
+        70
+      ],
+      "selected_lines": [
+        10,
+        11,
+        20,
+        21,
+        30,
+        31,
+        41,
+        51,
+        61
+      ],
+      "matched_edges": 6,
+      "isolated_vertices": 3,
+      "line_neighborhoods": {
+        "10": [
+          60
+        ],
+        "11": [
+          20
+        ],
+        "20": [
+          50
+        ],
+        "21": [
+          10
+        ],
+        "30": [
+          70
+        ],
+        "31": [
+          30
+        ],
+        "41": [],
+        "51": [],
+        "61": []
+      }
+    },
+    {
+      "type": "J",
+      "twists": [
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "selected_points": [
+        10,
+        20,
+        30,
+        50,
+        60,
+        70
+      ],
+      "selected_lines": [
+        10,
+        11,
+        21,
+        30,
+        31,
+        41,
+        51,
+        61,
+        71
+      ],
+      "matched_edges": 4,
+      "isolated_vertices": 7,
+      "line_neighborhoods": {
+        "10": [
+          60
+        ],
+        "11": [
+          20
+        ],
+        "21": [],
+        "30": [
+          70
+        ],
+        "31": [
+          30
+        ],
+        "41": [],
+        "51": [],
+        "61": [],
+        "71": []
+      }
+    },
+    {
+      "type": "C",
+      "twists": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "selected_points": [
+        10,
+        20,
+        41,
+        50,
+        60,
+        70
+      ],
+      "selected_lines": [
+        10,
+        21,
+        30,
+        31,
+        40,
+        41,
+        51,
+        61,
+        71
+      ],
+      "matched_edges": 5,
+      "isolated_vertices": 5,
+      "line_neighborhoods": {
+        "10": [
+          60
+        ],
+        "21": [],
+        "30": [
+          70
+        ],
+        "31": [
+          41
+        ],
+        "40": [
+          20
+        ],
+        "41": [
+          10
+        ],
+        "51": [],
+        "61": [],
+        "71": []
+      }
+    },
+    {
+      "type": "K",
+      "twists": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "matrix": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "selected_points": [
+        20,
+        30,
+        31,
+        40,
+        50,
+        51,
+        70
+      ],
+      "selected_lines": [
+        10,
+        11,
+        20,
+        31,
+        40,
+        51,
+        60,
+        61
+      ],
+      "matched_edges": 7,
+      "isolated_vertices": 1,
+      "line_neighborhoods": {
+        "10": [
+          40
+        ],
+        "11": [
+          20
+        ],
+        "20": [
+          50
+        ],
+        "31": [
+          31
+        ],
+        "40": [
+          30
+        ],
+        "51": [
+          51
+        ],
+        "60": [
+          70
+        ],
+        "61": []
+      }
+    }
+  ],
+  "scope": "Local quotient-map and six explicit 15-vertex certificates only. Algebraic completeness and transfer to all covers have written proofs; no solver or enumeration of all 255 signings is used here. No new Lean claim."
+}

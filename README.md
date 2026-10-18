@@ -109,7 +109,14 @@ A [covering pullback theorem](docs/COVERING_PULLBACK_AND_CUBIC_SEARCH.md)
 also shows that minimal forming sets pull back under graph covers of
 triangle-free bases. It proves exact SF_2=16 for every two-sheeted
 Heawood cover. Finite connected-cover discovery controls found beta_2
-15or16, rather than14; they do not settle arbitrary-order cubic sharpness.
+15or16, rather than14. A new [structural proof](docs/HEAWOOD_DOUBLE_COVER_GAIN.md)
+establishes this without the255-signature search: switching classes are
+traceless3-by-3binary matrices, their six nonzero similarity types have
+explicit fifteen-vertex dissociation certificates. Hence beta_2=14
+holds exactly for the disconnected double cover; connected double covers
+have SF_2-beta_2 at most one. The classification and transfer are written
+proofs, with independently checked local certificates, not a new Lean
+formalization. Arbitrary-order connected cubic sharpness remains open.
 
 The [exact cover-stability criterion](docs/COVER_STABLE_MINIMAL_SELECTIONS.md)
 now removes the global triangle-free restriction: a fixed minimal selection

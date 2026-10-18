@@ -1,11 +1,21 @@
 {
-  "status": "PENDING_ORIGINAL_STREAM_ACTIVE",
+  "status": "COMPLETED_STRUCTURAL_PROOF_PROPOSED_AND_LOCALLY_CHECKED",
   "pool": "chrono-chatgpt-pro-pool",
   "terminal_session_id": 99656,
   "input": "docs/reviews/2026-10-19-heawood-cover-gain-question.md",
-  "request": "build/heawood-cover-gain-oracle-request.json",
-  "stream": "build/heawood-cover-gain-oracle-answer.sse",
-  "scope": "Research question: non-enumerative proof or reproducible counterexample to beta_2>=15 for every connected two-sheeted Heawood cover. Prior 255-signature enumeration is discovery evidence only. No higher-sheeted conclusion requested.",
+  "response": "docs/reviews/2026-10-19-heawood-cover-gain-response.txt",
+  "completion": {
+    "task_id": "e9b8ab7d-1017-4781-ba9a-e2280758b0a4",
+    "conversation_id": "conv_f1316a0127acdc7d",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6ad53f35-5fa4-83ec-9ed5-d66f9f563ede",
+    "usage_estimated": true
+  },
+  "result": "Every connected two-sheeted Heawood cover has beta_2 in {15,16}, SF_2=16; beta_2=14 iff switch-trivial/disconnected.",
+  "verification": "Expanded written quotient-map/classification/transfer proof; six explicit matching-with-isolate certificates and ranks independently checked in output/heawood-matrix-certificates.json. No new Lean proof and no second independent review. No higher-sheeted conclusion.",
   "verdict": null,
-  "instruction": "Preserve original stream; do not restart solely because it is slow."
+  "verdict_scope": "This was a research question, not an acceptance review of a pre-existing proof."
 }
