@@ -1,12 +1,21 @@
 {
-  "status": "PENDING_ORIGINAL_STREAM_ACTIVE",
-  "pool": "chrono-chatgpt-pro-pool",
+  "task_id": "3884c41b-7cd1-46b6-8f28-7208a716dfbb",
   "conversation_id": "conv_233dc52bf5fb4ce9",
-  "terminal_session_id": 18238,
+  "pool": "chrono-chatgpt-pro-pool",
+  "model_label": "chatgpt-6-pro",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "chatgpt_url": "https://chatgpt.com/c/6ad53344-d0d8-83ec-80b2-ebd56a28a88c",
+  "usage_estimated": true,
+  "status": "COMPLETED_ACCEPTED",
   "input": "docs/reviews/2026-10-19-regular-equality-review-input.md",
-  "request": "build/regular-equality-oracle-request.json",
-  "stream": "build/regular-equality-oracle-answer.sse",
-  "scope": "Exact remainder, all-degree isolate-tight structure, higher-degree linear-equality necessity and isolate imbalance. Later covering lemma is not in this input.",
-  "verdict": null,
-  "instruction": "Preserve original stream; do not restart solely because it is slow."
+  "response": "docs/reviews/2026-10-19-regular-equality-oracle-response.txt",
+  "verdict": "ACCEPT: exact remainder, all-degree isolate-tight partition, balance and higher-degree equality implication; no substantive gap identified.",
+  "revisions": [
+    "Explicitly account for isolated Y vertices in cubic outside graph.",
+    "Replace maximality with maximum cardinality.",
+    "Identify separately reviewed ring dependency.",
+    "Add exact isolate-deficit identity, balanced-partition counterexample and componentwise imbalance bound with written proofs."
+  ],
+  "scope": "Regular equality structure. Connected ring proof and covering theorem are outside this review."
 }

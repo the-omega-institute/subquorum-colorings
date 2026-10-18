@@ -65,6 +65,35 @@ of a dissociation set do give the lower bound beta_2(H)>=k beta_2(G),
 but new dissociation sets can be larger. That additional gain is exactly
 the issue in attempting to amplify a sharp SF-beta gap by connected covers.
 
+## Why a triangle-containing base can fail
+
+The triangle-free assumption cannot simply be dropped from the theorem.
+Take the seven-vertex base with vertices v,u,t,i,x,y,z (labels0through6)
+and edges
+
+    vu, vt, vx, ux, uy, iy, tz, iz.
+
+Let S={v,u,t,i}. Its outside vertices x,y,z each have two selected
+neighbors, so it forms. Deleting v,u,t,i respectively uncovers x,y,z,i:
+after deleting v the sole selected neighbor of x is the now-isolated u;
+after deleting u or t, the corresponding y or z has only the isolate i;
+deleting i leaves itself uncovered. Upward closure proves minimality.
+
+Construct a two-sheeted cover with every edge preserving sheets except
+vx, which crosses sheets. Write subscripts0,1for sheet labels. The full
+pullback has eight vertices. Delete v_0. It still forms: v_0 has two
+selected neighbors u_0,t_0; x_0 has v_1,u_0; x_1 has only u_1, but u_1
+has the selected neighbor v_1. Both y copies retain u,i and both z
+copies retain t,i. These are all outside vertices after the deletion.
+Thus the full pullback is not minimal. The base triangle v-u-x is
+precisely what lets the surviving lift u_1 keep support from v_1.
+
+This is a counterexample to the unrestricted pullback rule. It does not
+refute the triangle-free theorem or any asserted SF inequality for these
+two particular graphs. The explicit argument above proves the obstruction;
+`scripts/check_cover_triangle_obstacle.py` additionally checks all proper
+base subsets, local bijectivity and literal non-induced-star witnesses.
+
 ## Consequence for two-sheeted Heawood covers
 
 The Heawood graph has a minimal forming eight-set. Every two-sheeted

@@ -55,6 +55,8 @@ def structure_control(adjacency, selected, totals, exact_beta=None):
     assert sorted(control['exchange_sizes']) == sorted(len(selected) - count for count in isolate_counts)
     if exact_beta is not None:
         assert linear >= abs(isolate_counts[0] - isolate_counts[1])
+        assert linear == abs(isolate_counts[0] - isolate_counts[1]) + 2 * (
+            exact_beta - max(control['exchange_sizes']))
     totals['isolate_tight_selections'] += 1
     totals['tight_with_high_leaves'] += bool(full)
     totals['tight_with_matching'] += bool(paired)
@@ -109,6 +111,7 @@ def main():
             adjacency, selected = builder(degree)
             graphs.append(exhaustive_control(adjacency, totals))
     examples = []
+    balanced_obstacles = []
     for degree in range(3, 11):
         for name, builder, beta in [('isolated_crown', sharp_family, 2 * degree + 1),
                                     ('matching_equality', sharp_graph, 2 * degree),
@@ -116,8 +119,19 @@ def main():
             adjacency, selected = builder(degree)
             structure_control(adjacency, selected, totals, beta)
             examples.append(dict(degree=degree, family=name, order=len(adjacency), selected=len(selected)))
+        edges = [(offset + first, offset + degree + second)
+                 for offset in (0, 2 * degree)
+                 for first in range(degree) for second in range(degree)]
+        adjacency = graph_from_edges(4 * degree, edges)
+        selected = set(range(degree)) | set(range(3 * degree, 4 * degree))
+        structure_control(adjacency, selected, totals, 2 * degree)
+        balanced_obstacles.append(dict(degree=degree, order=4 * degree,
+                                       beta=2 * degree, linear_slack=2 * degree,
+                                       global_isolate_imbalance=0,
+                                       componentwise_isolate_imbalance=2 * degree))
     report = dict(scope='Literal-star and exact-small-instance controls for the all-degree isolate-tight partition, high-class balances, isolate imbalance margin and higher-degree linear-equality necessity. General proofs are separate.',
-                  totals=dict(totals), exact_graphs=graphs, displayed_selections=examples)
+                  totals=dict(totals), exact_graphs=graphs, displayed_selections=examples,
+                  balanced_partition_obstacles=balanced_obstacles)
     arguments.output.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report['totals']))
 

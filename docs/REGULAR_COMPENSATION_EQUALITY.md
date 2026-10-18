@@ -99,8 +99,9 @@ Write b=|A|, h=|C|=|U|=|X1|, p=|P|, y=|Y|. Then
     n=z+p+2b+3h+y.
 
 Substitution gives dn-(2d-1)s=z. This proves sufficiency and exact
-accounting. At d=3 the outside graph consists of X1 cycles and paths
-with endpoints in X2, recovering the previous complete cubic theorem.
+accounting. At d=3, G[X1 union X2] consists of cycles contained in X1
+and paths with endpoints in X2. Every Y vertex is isolated in the full
+outside graph G[T], recovering the previous complete cubic theorem.
 
 ## Forced bipartition balance
 
@@ -127,9 +128,15 @@ On this partition the exchanges perform no trimming. Their sizes are
     |D_L|=s-|I intersect L|,
     |D_R|=s-|I intersect R|.
 
-Consequently every isolate-tight selection satisfies
+Put z_L=|I intersect L|, z_R=|I intersect R| and
+M=max(|D_L|,|D_R|)=s-min(z_L,z_R). The exact identity is
 
-    W>=abs(|I intersect L|-|I intersect R|).                (4)
+    W=abs(z_L-z_R)+2(beta-M).                              (4)
+
+Indeed W=z_L+z_R-2s+2beta; substitute the expression for M.
+Both terms are nonnegative. Consequently every isolate-tight selection satisfies
+
+    W>=abs(|I intersect L|-|I intersect R|).
 
 Indeed beta is at least the larger exchange, while W=z-2(s-beta).
 For d>=4, every linear equality selection W=0 must therefore have the
@@ -137,17 +144,44 @@ complete partition above and equally many isolates in the two parts.
 Moreover both explicit exchanges are maximum dissociation sets.
 
 Conversely, the partition with balanced isolates and maximum explicit
-exchanges gives W=0 directly. The maximality condition is essential:
+exchanges gives W=0 directly. The maximum-cardinality condition is essential:
 the partition by itself is not asserted to characterize equality of
 the graph invariants. The uniform attaining families satisfy it by their
 separate exact dissociation proofs.
+
+Balanced isolates alone are insufficient. For any d>=3 take two disjoint
+copies of K_(d,d), and select the left part of the first and the right
+part of the second. Every selected vertex is isolated, so deleting it
+uncovers itself; every outside vertex has d selected neighbors. Thus S
+is minimal and the partition holds with only I,Y nonempty. Here
+n=4d, s=z=2d, z_L=z_R=d, and B=z. A dissociation set in K_(d,d) either
+lies in one part or has at most one vertex in each part, so beta=2d
+in the disjoint union. But both explicit exchanges have size d, hence
+W=2d>0. This refutes the rule that balanced isolate-tight partitions
+alone force linear equality, while confirming the theorem's additional
+maximum-cardinality condition.
+
+There is also a componentwise strengthening. Restrict an isolate-tight
+selection to each connected component Q. It is minimal there, and each
+component has nonnegative B_Q-z_Q. Their sum is zero, so every component
+is isolate-tight. The dissociation number and W are additive across
+components, so applying (4) componentwise gives
+
+    W>=sum_Q abs(|I intersect L intersect V(Q)|
+                 -|I intersect R intersect V(Q)|).         (5)
+
+In particular, zero slack forces isolate balance in each connected
+component; global cancellation cannot conceal opposite component debts.
 
 ## Relation to the connected sharp constructions
 
 In the degree-d attaining graph and its d>=4 connected rings, C,U,P,Y
 are empty. The class A is the selected high crown or its disjoint union,
 X2 is all outside vertices, and every isolate uses all d edges at X2.
-The exact local caps establish maximality of the two exchange sets.
+The construction and exact dissociation calculations are given separately
+in REGULAR_CONNECTED_SHARP_GAPS.md (the connected ring theorem) and
+SHARP_REGULAR_BIPARTITE_GAP.md (the single-block attaining graph).
+Their exact local caps establish that both exchanges have maximum cardinality.
 Thus these families meet every zero term in(1), including isolate balance.
 
 The conclusion does not classify every graph with beta=n/2, nor every
@@ -160,15 +194,24 @@ problem still requires an additional argument.
 
 The proof above is general. Independent controls inspect4,019 minimal
 selections and8,038 exchanges, with295,936subsets in four exact graph
-instances plus24displayed regular-family selections. They check63
+instances plus24displayed regular-family selections. The added eight
+balanced-partition obstacles bring the totals to4,027minimal selections,
+8,054exchanges and71isolate-tight selections. The original controls check63
 isolate-tight selections and23higher-degree linear-equality selections,
 including high leaves, selected matching components and bad high vertices.
+All exact-beta isolate-tight controls also check identity (4); the eight
+obstacles check global balance together with positive componentwise debt.
 The updated five-lemma symbolic Lean audit proves residual vanishing
 for degree>=4 as well as the earlier general arithmetic. The full
 partition and finite cardinal summations remain written proofs.
 Reproduce using `python3 scripts/check_regular_equality.py --output output/regular-equality-controls.json`.
 The symbolic receipt is `../output/regular-compensation-formal-check.json`.
 This theorem was derived after both general-degree and connected-ring
-Oracle inputs and is outside their original reviews. A follow-up in the
-accepted general-degree conversation now reviews this specific note;
-its original stream remains active and acceptance is not presumed.
+Oracle inputs and is outside their original reviews. Its separate follow-up
+received ACCEPT: the exact remainder, isolate-tight equivalence, balances
+and equality implication have no identified substantive gap. This revision
+clarifies the isolated Y vertices and maximum cardinality, adds the exact
+identity (4), the balanced-partition obstacle and componentwise bound (5),
+and identifies the separate ring dependency. The review does not independently
+re-establish the ring theorem, whose own repaired proof has a separate ACCEPT.
+See output/regular-equality-oracle-review.json and the archived full response.

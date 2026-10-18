@@ -1,0 +1,149 @@
+ACCEPTThe structural theorem is correct. The exact remainder, the  $d\ge4$  equality implication, the all-degree isolate-tight partition equivalence, and the bipartition and isolate-imbalance conclusions all follow from the accepted exchange and capacity identities. I found no substantive mathematical gap or counterexample.Two wording corrections are needed:The cubic description should specify  $G[X_1\cup X_2]$ , or also mention that  $Y$  consists of isolated vertices in the full outside graph.“Maximality” should be replaced by “maximum cardinality.” The extra condition concerns attainment of  $\beta_2$ , not inclusion-maximality.The connected-ring application invokes a construction and local dissociation bounds that are not supplied here. Its application is conditional on those separate results; the structural theorem does not depend on them.1. The exact nonnegative remainder is correctLet
+$$e_L=\beta-|D_L|,\qquad e_R=\beta-|D_R|,\qquad
+Q=\sum_{v\in H}q_v.$$
+The accepted exchange identity gives
+$$e_L+e_R
+=2\beta-2s+z+K.$$
+The capacity identity is
+$$B=z+Q+\sum_{j=1}^{d-1}(d-j)r_j.$$
+There is no missing  $r_d$  term: unused vertices of selected degree  $d$  have zero capacity.Since  $W=B-2s+2\beta$ , substitution yields
+$$\begin{aligned}
+W
+&=e_L+e_R+Q+\sum_{j=1}^{d-1}(d-j)r_j-K\\
+&=e_L+e_R+Q
+ +(d-2)r_1+(d-3)r_2\\
+&\qquad+\sum_{j=3}^{d-1}(d-j)r_j
+ +(r_1+r_2-K).
+\end{aligned}$$
+This is exactly (1). The isolate term cancels correctly; it has not been discarded.Every term is nonnegative: $e_L,e_R\ge0$ , because the exchanges are dissociation sets. $q_v\ge0$ , by the accepted witness-capacity argument.All displayed coefficients are nonnegative for  $d\ge3$ . $r_1+r_2-K\ge0$ , by the injective leaf-witness budget.At  $d=3$ , the sum from  $j=3$  to  $d-1$  is empty.Thus the identity does give quantitative residual control. For example,
+$$\beta-|D_L|\le W,\qquad
+\beta-|D_R|\le W,\qquad
+\sum_Hq_v\le W,$$
+and the weighted counts of unused positive-capacity vertices are bounded by  $W$ . No finite computation is needed for this interpretation.The  $d\ge4$  zero-slack implicationIf  $d\ge4$  and  $W=0$ , each nonnegative summand vanishes. In particular,
+$$r_1=r_2=0,
+\qquad
+r_j=0\quad(3\le j\le d-1),
+\qquad
+q_v=0\quad(v\in H).$$
+The last summand then gives  $K=0$ , and
+$$e_L=e_R=0.$$
+Consequently,
+$$B=z,\qquad |D_L|=|D_R|=\beta.$$
+This establishes (2) exactly as stated.The degree threshold is also correctly identified. At  $d=3$ , the same identity gives only
+$$r_1=0,\qquad r_2=K,\qquad Q=0,\qquad e_L=e_R=0,$$
+and therefore
+$$B=z+r_2.$$
+So the accounting alone does not imply  $B=z$  in the cubic case. The maximum-exchange conclusion still follows at  $d=3$ ; it is the isolate-tight conclusion that needs the additional argument.There is no dependence problem involving the chosen witness map. The residual identity holds for every allowable choice of  $f$ , so a zero value of  $W$ , or of  $B-z$ , forces the corresponding zero terms for any such choice.2. The isolate-tight partition is necessary in every  $d\ge3$ Suppose  $B=z$ . Then
+$$0=\sum_Hq_v+
+\sum_{x\in T\setminus f(H)}(d-a(x)).$$
+All summands are nonnegative, so every high surplus and every unused capacity is zero.2.1 The two high types are forcedThe possibilities are:Witness typeSurplusConsequence of zero surplusNonadjacent, selected degree one $d-a(v)$  $a(v)=d$ Adjacent, selected degree one $d-a(v)\ge1$ ImpossibleAdjacent, selected degree two $d-1-a(v)$  $a(v)=d-1$ Thus the good vertices are exactly the class  $C$  of selected degree  $d$ , and the bad vertices form the class  $A$  of selected degree  $d-1$ .A vertex of  $C$  has no outside neighbor. A vertex of  $A$  has exactly one outside neighbor, namely its adjacent witness.Every unused outside vertex has selected degree  $d$ . Because  $d\ge3$ , selected degrees one and two have positive capacity and cannot occur among unused vertices. Hence: $X_1=f(C)$  is the set of all outside vertices of selected degree one. $X_2=f(A)$  is the set of all outside vertices of selected degree two.The remaining outside vertices form  $Y$ , each of selected degree  $d$ .The accepted witness classification gives the selected neighborhoods of  $X_1$  and  $X_2$ : an  $X_1$ -vertex neighbors a leaf supported by its  $C$ -owner, and an  $X_2$ -vertex neighbors its  $A$ -owner and one selected isolate.2.2 The leaf argument forces genuine bijectionsThis is the most consequential step in the partition proof, and it is valid.Every selected leaf has a distinct failure witness of selected degree one or two. A degree-two leaf witness cannot belong to  $f(H)$ . It would therefore be an unused vertex with positive capacity, contradicting  $B=z$ .Thus every leaf has a witness in  $X_1$ . The overlap classification says that its owner must be the leaf’s unique good support. This gives an injection
+$$U\longrightarrow X_1.$$
+Conversely, each chosen good witness identifies a selected leaf supported by its owner. Distinct good owners cannot identify the same leaf, because a selected leaf has a unique selected support. Hence there is an injection
+$$C\longrightarrow U.$$
+Since  $f$  already gives  $|X_1|=|C|$ , the two injections force
+$$|C|=|U|=|X_1|.$$
+This establishes more than a count:Every  $C$ -vertex has exactly one selected leaf.Every selected leaf is supported by a  $C$ -vertex.Every leaf has exactly one  $X_1$ -neighbor.The paths  $c-u-x$  exhaust  $C,U,X_1$ .No  $A$ -vertex supports a selected leaf.There cannot be an additional  $X_1$ -neighbor at a leaf: all of  $X_1$  is already exhausted by the bijection, and any such neighbor would have the same unique good owner.2.3 Every remaining neighborhood statement followsEach  $C$ -vertex has selected degree  $d$ , of which exactly one edge goes to its leaf. Its other  $d-1$  selected neighbors lie in  $H$ .Each  $A$ -vertex has selected degree  $d-1$  and has no selected leaf. A selected isolate cannot neighbor it, and a selected matching vertex has only its matching mate as a selected neighbor. Thus all  $d-1$  selected neighbors of an  $A$ -vertex lie in  $H$ .Therefore
+$$G[H]\quad\text{is }(d-1)\text{-regular}.$$
+The other statements now follow from regularity and the classified selected neighborhoods:Each  $u\in U$  has its  $C$ -neighbor and its  $X_1$ -neighbor. It cannot neighbor an  $X_2$ -vertex, so its remaining  $d-2$  neighbors lie in  $Y$ .Each  $A$ -vertex has exactly one outside neighbor, giving the edge bijection  $A\leftrightarrow X_2$ .Selected isolates have outside neighbors only in  $X_2\cup Y$ .Each  $P$ -vertex has its matching mate, and its other  $d-1$  neighbors must lie in  $Y$ .A  $Y$ -vertex has selected degree equal to its full degree  $d$ , so it has no outside neighbor. It cannot neighbor  $A$  or  $C$ , whose degrees are already exhausted. Its neighbors lie in  $I\cup P\cup U$ .An  $X_1$ -vertex has outside degree  $d-1$ , and an  $X_2$ -vertex has outside degree  $d-2$ . All those outside neighbors lie in  $X_1\cup X_2$ .Thus the entire displayed partition is necessary. Empty classes create no exception.3. The partition is sufficient, including minimality and accountingAssume the displayed partition exists in a finite simple  $d$ -regular bipartite graph.Formation follows directly:An  $X_1$ -vertex is covered by its path  $x-u-c$ .An  $X_2$ -vertex has two selected neighbors.A  $Y$ -vertex has  $d$  selected neighbors.Every type of selected vertex has a valid deletion obstruction:Deleted vertexVertex that becomes uncovered $i\in I$  $i$  itself, with no selected neighbor $v\in P$  $v$  itself; its matching mate becomes selected-isolated $a\in A$ Its  $X_2$ -partner, whose only remaining selected neighbor is an isolate $c\in C$ Its associated  $X_1$ -vertex, whose selected neighbor  $u$  becomes isolated $u\in U$ Its associated  $X_1$ -vertex, which loses its only selected neighborThese checks prove inclusion-minimality.The counting identity for  $Y$  is also exact. Its incident edges come from: $U$ :  $(d-2)h$  edges; $P$ :  $(d-1)p$  edges; $I$ :  $dz-b$  edges, since exactly one isolate incidence is used by each of the  $b$  vertices of  $X_2$ .Hence
+$$dy=(d-2)h+(d-1)p+dz-b.$$
+Also,
+$$s=z+p+b+2h,\qquad
+n=z+p+2b+3h+y.$$
+Substitution gives
+$$\begin{aligned}
+dn-(2d-1)s
+&=-(d-1)z-(d-1)p+b+(2-d)h+dy\\
+&=z.
+\end{aligned}$$
+This proves sufficiency and establishes the claimed equivalence:
+$$\boxed{B=z\iff\text{the displayed isolate-tight partition exists}.}$$
+Exact correction to the cubic sentenceAt  $d=3$ , vertices of  $X_1$  have degree two and vertices of  $X_2$  have degree one inside  $G[X_1\cup X_2]$ . Therefore that induced graph consists of cycles contained in  $X_1$ , and paths whose endpoints lie in  $X_2$ .The full outside graph additionally contains the isolated vertices of  $Y$ . Replace the current sentence by:At  $d=3$ ,  $G[X_1\cup X_2]$  consists of cycles contained in  $X_1$  and paths with endpoints in  $X_2$ ; every vertex of  $Y$  is isolated in  $G[T]$ .If “the outside graph” currently means all of  $G[T]$ , the omission is literal. For example, choosing one whole bipartition part as  $S$  in a cubic regular bipartite graph gives  $S=I$ ,  $T=Y$ , and an outside graph consisting entirely of isolated vertices. The classification itself already handles this correctly.4. The bipartition balances and isolate incidence bound are correctThe orientations of the witness correspondences matter here, and they have been used correctly.A path  $c-u-x_1$  puts  $c$  and  $x_1$  in the same part. An edge  $a-x_2$  puts  $a$  and  $x_2$  in opposite parts. Thus
+$$\begin{array}{ll}
+|X_1\cap L|=h_L,& |X_1\cap R|=h_R,\\[2mm]
+|X_2\cap L|=b_R,& |X_2\cap R|=b_L.
+\end{array}$$
+The regular high graph gives
+$$b_L+h_L=b_R+h_R.$$
+Counting the degrees on the two sides of the outside graph gives
+$$(d-1)h_L+(d-2)b_R
+=
+(d-1)h_R+(d-2)b_L.$$
+Set
+$$\Delta b=b_L-b_R,\qquad \Delta h=h_L-h_R.$$
+The equations become
+$$\Delta b+\Delta h=0,
+\qquad
+(d-1)\Delta h-(d-2)\Delta b=0.$$
+Eliminating  $\Delta h$  gives
+$$(2d-3)\Delta b=0.$$
+Since  $d\ge3$ ,
+$$b_L=b_R,\qquad h_L=h_R.$$
+This remains valid for disconnected graphs and empty high classes.For the isolate incidence bound, each vertex of  $X_2\cap R$  has exactly one neighbor in  $I\cap L$ . Therefore
+$$b_L=|X_2\cap R|\le d|I\cap L|.$$
+Similarly,
+$$b_R\le d|I\cap R|.$$
+Using  $b_L=b_R=b/2$ ,
+$$\boxed{b\le2d\min\{|I\cap L|,|I\cap R|\}.}$$
+This is a degree-capacity count. It correctly permits several  $X_2$ -vertices to use the same isolate, up to that isolate’s degree  $d$ . No injection into the isolate set is being assumed.The balances of  $A$  and  $C$  do not force the isolates themselves to balance. The  $Y$ -vertices can compensate for their imbalance. Indeed, the full bipartition counts give
+$$|Y\cap L|-|Y\cap R|
+=
+|I\cap R|-|I\cap L|.$$
+This is consistent with the later need for a separate isolate-balance conclusion under  $W=0$ .5. The exchange sizes and imbalance bound are correctWrite
+$$z_L=|I\cap L|,\qquad z_R=|I\cap R|.$$
+There is no trimming on the isolate-tight partition: every good high vertex has exactly one leaf, and every bad high vertex has none.The  $R$ -side witness set consists of  $X_1\cap R$  and  $X_2\cap R$ , so
+$$\begin{aligned}
+|D_L|
+&=p+h+z_R+(b_L+h_L)+(h_R+b_L)\\
+&=p+2h+z_R+2b_L\\
+&=s-z_L.
+\end{aligned}$$
+The final equality uses the already proved balance  $b_L=b_R$ . Symmetrically,
+$$|D_R|=s-z_R.$$
+Thus the individual size claims are justified, not merely their sum.There is an exact form of your imbalance inequality. Put
+$$M=\max\{|D_L|,|D_R|\}=s-\min(z_L,z_R).$$
+Since  $B=z=z_L+z_R$ ,
+$$\boxed{
+W=|z_L-z_R|+2(\beta-M).
+} \tag{*}$$
+Both terms are nonnegative. This proves (4) and identifies precisely the additional obstruction beyond isolate imbalance.In particular, within the isolate-tight class, for every  $d\ge3$ ,
+$$W=0
+\iff
+z_L=z_R
+\quad\text{and}\quad
+\beta=M.$$
+When isolates balance, the two exchanges have the same size, so it suffices that one be maximum; then both are maximum.Combining this with the remainder argument gives the stated  $d\ge4$  equivalence for a minimal selection:
+$$\boxed{
+W=0
+\iff
+\begin{array}{l}
+\text{the isolate-tight partition holds,}\\
+z_L=z_R,\ \text{and the explicit exchanges attain }\beta_2(G).
+\end{array}
+}$$
+The partition remains a structural reduction. The requirement that an explicit exchange attain  $\beta_2(G)$  is a further extremal condition.There is also no missing step between equality for a selection and equality of the graph invariants. If a minimal  $S$  satisfies  $W=0$ , then the accepted compensation theorem gives
+$$(2d+1)\mathrm{SF}_2(G)
+\le dn+2\beta
+=(2d+1)s.$$
+Since  $s\le\mathrm{SF}_2(G)$ , equality follows and  $s=\mathrm{SF}_2(G)$ .6. Balanced isolate-tight partitions alone do not imply equalityThe extra maximum-dissociation condition is genuinely indispensable. A simple written example confirms the distinction.Take
+$$G=K_{d,d}\sqcup K_{d,d},\qquad d\ge3,$$
+with a fixed global bipartition  $L,R$ . Choose  $S$  to be the  $L$ -part of the first component and the  $R$ -part of the second.Then only  $I$  and  $Y$  are nonempty. Every bullet of the isolate-tight partition holds, and
+$$z_L=z_R=d,\qquad s=z=2d,\qquad n=4d.$$
+The residual is
+$$B=4d^2-(2d-1)2d=2d=z.$$
+For  $K_{d,d}$ , a dissociation set meeting both parts can contain at most one vertex from each part. Otherwise it lies in one part. Hence
+$$\beta_2(K_{d,d})=d
+\quad(d\ge3),$$
+and therefore  $\beta_2(G)=2d$ .But the explicit exchanges have sizes
+$$|D_L|=s-z_L=d,\qquad |D_R|=s-z_R=d.$$
+Consequently,
+$$W=2d>0.$$
+So even the full partition plus balanced isolates is insufficient. This example supports the note’s qualification; it does not contradict the theorem.For disconnected graphs, the accounting can also be applied componentwise. It yields the stronger bound
+$$W\ge
+\sum_Q
+\left|
+|I\cap L\cap V(Q)|-|I\cap R\cap V(Q)|
+\right|,$$
+where  $Q$  ranges over connected components. Thus zero slack forces isolate balance in every component. Your global inequality is correct, though weaker.7. Application scope and exact editsFor the previously supplied attaining graph, the application is verified by the earlier proof. In the continuation’s notation,
+$$C=U=P=Y=\varnothing,\qquad
+b=2d,\qquad z_L=z_R=1,$$
+and every outside vertex belongs to  $X_2$ . The earlier exact dissociation calculation supplies the maximum-exchange condition. All remainder terms vanish.The connected rings and their “exact local caps” are not defined in the supplied continuation or the preceding audited construction. Therefore the structural theorem applies to them once their stated partition and maximum-dissociation results are supplied by the separate ring proof. This audit does not independently establish those ring results.The exact revisions I recommend are:Correct the cubic outside-graph sentence as quoted above, accounting for isolated  $Y$ -vertices.Replace “the maximality condition is essential” by “the maximum-cardinality condition is essential.”Replace “the exact local caps establish maximality” by “the exact local caps establish that both exchanges have maximum cardinality.”Identify the separate construction and dissociation result supporting the connected-ring application. This is a dependency of that application, not a gap in the structural theorem.Optionally replace the proof of (4) with the exact identity  $(*)$ . It expresses the isolate-imbalance contribution and the remaining maximum-dissociation deficit in one formula.The mathematical verdict is ACCEPT. The stated distinction between the necessary partition and the additional maximum-dissociation condition is correct and should be retained explicitly.
