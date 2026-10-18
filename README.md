@@ -171,8 +171,20 @@ any two disjoint Heawood incidences still gives beta_2=8, but an explicit
 such a second cut: its local dissociation count is20rather than19.
 The uncharged obligation moves to its new interface. Nine new Lean
 audits and all168cut choices/44interface controls pass; the general
-incidence and interface proofs remain written. This extension has a
-separate pending review.
+incidence and interface proofs remain written. The separate review returned
+ACCEPT. All density-equality interfaces in this architecture have a cyclic
+quotient, including the two-module parallel-edge quotient.
+
+The [long-core A/B obstruction](docs/LONG_CORE_WORD_OBSTRUCTION.md)
+now disproves additive omission charging beyond the fixed core. A general
+cyclic word construction gives F(k)>=12k+floor(k/2), including an explicit
+forty-vertex score25counterexample to the proposed24cap. Attaching all3k
+Heawood blocks gives beta_2>=33k+floor(k/2) on62kvertices, and therefore
+7(SF_2-beta_2)+5floor(k/2)<=21k. This excludes the proposed3/62gap target
+for this family when k>=2; it does not yet exclude improving1/24.
+The general word dissociation theorem and eight supporting declarations
+pass Lean. The corrected sharp upper bound remains open; finite solver
+probes are recorded only as discovery evidence, with a live Oracle question.
 
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring

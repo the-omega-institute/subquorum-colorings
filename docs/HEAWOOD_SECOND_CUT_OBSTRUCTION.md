@@ -149,7 +149,17 @@ at least two. Thus a_j<=2, and b<=2c. Equation(1) gives
 
 because this last inequality is exactly b<=2c. The existing cyclic
 family attains the bound. This limits the exact gap for every allowed
-interface in this architecture. For c=1, three attachments are possible and give
+interface in this architecture.
+
+More precisely, if ell_j matching edges join remaining ports inside
+module j, its edge cut has size6-2a_j-2ell_j. Thus a_j+ell_j<=2.
+At b=2c every module consequently has exactly two attachments, no
+internal port edge and exactly two edges leaving it. The connected
+quotient by modules is a cycle. For c=2 its two quotient edges are
+parallel but their actual core endpoints are distinct. This classifies
+all density-equality interfaces within the stated architecture.
+
+For c=1, three attachments are possible and give
 the isolated62-vertex construction with beta33,SF36,gap3; disjoint
 copies do not give a connected asymptotic improvement.
 
@@ -184,4 +194,7 @@ records nine local Lean4.33.0audits with standard axioms only. The
 general incidence and graph-interface proofs remain written; no finite
 enumeration replaces them. The submitted manuscript and upstream are
 unchanged. A [separate review receipt](../output/heawood-multiport-oracle-review.json)
-tracks this extension independently of the accepted triple-port theorem.
+records ACCEPT for this extension independently of the accepted triple-port
+theorem. The [response](reviews/2026-10-19-heawood-multiport-review-response.txt)
+also checks internal matching edges in the cut count and the equality-cycle
+classification above. No mathematical repair was requested.

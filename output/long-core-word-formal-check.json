@@ -1,0 +1,46 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T23:40:43.516057+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3764.\nPages active:                                 216325.\nPages inactive:                               201248.\nPages speculative:                             14286.\nPages throttled:                                   0.\nPages wired down:                             249889.\nPages purgeable:                                   2.\n\"Translation faults\":                    15515252036.\nPages copy-on-write:                       946941575.\nPages zero filled:                        6377639492.\nPages reactivated:                        2909387437.\nPages purged:                              136154640.\nFile-backed pages:                            289726.\nAnonymous pages:                              142133.\nPages stored in compressor:                  1628630.\nPages occupied by compressor:                 321306.\nDecompressions:                           2341812574.\nCompressions:                             2766737731.\nPageins:                                  4098324375.\nPageouts:                                   11517158.\nSwapins:                                    25198999.\nSwapouts:                                   31527666.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 2.204,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.41,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/DissociationCover.lean",
+      "seconds": 0.486,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/LongCoreWord.lean",
+      "seconds": 4.968,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingLongCoreWordAudit.lean",
+      "seconds": 0.381,
+      "stdout": "'StarForming.LongCoreWord.inside_dissociates' depends on axioms: [propext]\n'StarForming.LongCoreWord.pattern_counts' does not depend on any axioms\n'StarForming.LongCoreWord.forward_selected_forces_A' does not depend on any axioms\n'StarForming.LongCoreWord.selected_edge_internal' depends on axioms: [propext]\n'StarForming.LongCoreWord.word_dissociates' depends on axioms: [propext]\n'StarForming.LongCoreWord.word_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.LongCoreWord.phase_slack' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreWord.cubic_gap' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreWord.even_phase_excludes_target' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 1353793536,
+  "scope": "General graph-level dissociation theorem for any successor-indexed word in the two local patterns with no adjacent A: every selected edge is internal to a block, and local dissociation gives global dissociation. Local pattern counts and boundary implication are kernel checked. Four conditional count implications check core/full word cardinalities, compulsory slack, cubic gap and exclusion of the proposed density. Cyclic word cardinal summation, full Heawood attachment and all-k upper-bound conjecture are not formalized here."
+}

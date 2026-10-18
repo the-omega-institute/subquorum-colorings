@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -37,7 +37,8 @@ def main():
                     'cubic-paths': 'build/cubic-path-accounting-formal',
                     'padding-rings': 'build/cubic-padding-ring-formal',
                     'triple-ports': 'build/cubic-triple-port-formal',
-                    'multi-ports': 'build/heawood-multiport-formal'}[arguments.audit]
+                    'multi-ports': 'build/heawood-multiport-formal',
+                    'long-core': 'build/long-core-word-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -57,9 +58,12 @@ def main():
         modules += ('StarForming/CubicPaddingRings.lean', 'StarFormingCubicPaddingRingsAudit.lean')
     elif arguments.audit == 'triple-ports':
         modules += ('StarForming/CubicTriplePorts.lean', 'StarFormingCubicTriplePortsAudit.lean')
-    else:
+    elif arguments.audit == 'multi-ports':
         modules += ('StarForming/DissociationCover.lean', 'StarForming/HeawoodMultiport.lean',
                     'StarFormingHeawoodMultiportAudit.lean')
+    else:
+        modules += ('StarForming/DissociationCover.lean', 'StarForming/LongCoreWord.lean',
+                    'StarFormingLongCoreWordAudit.lean')
     for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -77,7 +81,7 @@ def main():
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
-                'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9}
+                'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -132,6 +136,15 @@ def main():
                             'equality, arbitrary-interface exact parameters and architecture density. '
                             'The all-disjoint-cut Fano cap, general block interfaces, minimality, '
                             'connectedness and the architecture cut count retain written proofs.')
+    if arguments.audit == 'long-core':
+        receipt['scope'] = ('General graph-level dissociation theorem for any successor-indexed '
+                            'word in the two local patterns with no adjacent A: every selected edge '
+                            'is internal to a block, and local dissociation gives global '
+                            'dissociation. Local pattern counts and boundary implication are '
+                            'kernel checked. Four conditional count implications check core/full '
+                            'word cardinalities, compulsory slack, cubic gap and exclusion of '
+                            'the proposed density. Cyclic word cardinal summation, full Heawood '
+                            'attachment and all-k upper-bound conjecture are not formalized here.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

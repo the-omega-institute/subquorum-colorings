@@ -1,0 +1,111 @@
+ACCEPT. The two-cut Fano cap, the explicit failure of the local charge, the arbitrary-interface equalities, and the connected architecture bound all follow from the written arguments and the established inputs.The exact-interface claim needs the architecture stated in the note: one-cut Heawood blocks, each attached bijectively to its own original cut pair in one core, with the remaining core ports completed by a matching that produces a finite simple cubic bipartite graph. The isolate theorem must apply to the fixed inclusion-minimal forming selection, without requiring that selection to be known optimal in advance. With those hypotheses, no compatible alternating dissociation witness and no connectedness assumption are needed for the exact numerical equalities.1. The cap holds for every pair of disjoint Fano cutsThe disjointness hypothesis ensures there are exactly four degree-two ports, with every other vertex still of degree three. Thus the stated identity is correct:
+$$38-5t+2p=i+2e.$$
+Since  $p\le4$  and the right side is nonnegative,
+$$5t\le46,$$
+so  $t\le9$ . If  $t=9$ , then
+$$-7+2p=i+2e\ge0,$$
+which forces  $p=4$ , and consequently
+$$i+2e=1.$$
+Hence
+$$p=4,\qquad i=1,\qquad e=0.$$
+In particular, both cut points and both cut lines are selected.Let  $a$  and  $d$  count omitted points and omitted lines, respectively. Then  $a+d=5$ .If  $a=0$ , all seven points are selected. Each selected cut-port line retains two incident point neighbors, both selected, contradicting dissociation.If  $a=1$ , three lines are selected. At least one is a non-port line and therefore retains all three incidences. With only one omitted point, it has at least two selected neighbors.By duality,  $d=0,1$  are also impossible.Thus only
+$$(a,d)=(2,3)\quad\text{or}\quad(3,2)$$
+remain.In the first case, four lines are selected, at least two of them non-port lines. Each such line must contain both omitted points; otherwise it has at least two selected point neighbors. Two distinct lines cannot both contain the same two distinct Fano points. The other case is dual.Therefore  $t=9$  is impossible, proving  $\beta_2(B)\le8$ . Applying the established one-cut lemma to either deleted edge supplies an eight-set, and deleting the second edge preserves dissociation. Hence
+$$\boxed{\beta_2(B)=8}.$$
+This proof covers all choices of two vertex-disjoint incidence edges. It does not depend on classifying those choices by enumeration.2. The displayed Heawood eight-set has exactly the claimed port behaviorUsing the supplied incidence rule, the relevant selected lines have the following neighbors after deleting  $0\!-\!8$  and  $4\!-\!12$ :Selected lineRemaining incident pointsIntersection with the selected points  $\{0,2,4,6\}$  $8$  $\{1,5\}$  $\varnothing$  $11$  $\{4,3,1\}$  $\{4\}$  $12$  $\{5,2\}$  $\{2\}$  $13$  $\{6,5,3\}$  $\{6\}$ Therefore the selected graph on
+$$D_B=\{0,2,4,6,8,11,12,13\}$$
+has exactly the three edges
+$$2\!-\!12,\qquad4\!-\!11,\qquad6\!-\!13.$$
+Its isolated selected vertices are precisely  $0,8$ .Thus the original pair has two selected, internally unsaturated ports, while the second pair  $4,12$  has two selected, internally saturated ports. This directly disproves the attempted inference
+$$|D_B|=8
+\Longrightarrow
+\text{the original two ports are internally saturated}$$
+for twice-cut blocks.The scope is correct: the cap is universal over disjoint cuts, while the saturation failure is demonstrated by the explicit configuration. No claim that every twice-cut maximum set has this same port profile is needed.3. The twenty-set survives both attachment edgesTranslate the displayed core set into the core classes:
+$$\begin{aligned}
+D_Q\cap H&=\{h_0,h_1,h_3,h_4\},\\
+D_Q\cap U&=\{u_2,u_5\},\\
+D_Q\cap X&=\{x_0,x_1,x_3,x_4\},\\
+D_Q\cap Y&=\{y_0,y_1\}.
+\end{aligned}$$
+Its induced edges are exactly
+$$h_0h_1,\quad h_3h_4,\quad u_2y_0,\quad u_5y_1,\quad x_3x_4.$$
+The isolated selected vertices are  $x_0,x_1$ , or  $12_Q,13_Q$  in the numerical labels.The two attachment edges are
+$$0_B\,13_Q,\qquad8_B\,12_Q.$$
+Their four endpoints are distinct selected isolates before attachment. Adding these edges converts those four isolates into two selected matching edges.Consequently, the combined twenty-set induces exactly:five core matching edges;three Heawood matching edges;two attachment matching edges.These are ten pairwise vertex-disjoint edges covering all twenty selected vertices. Thus the union is dissociating.For the upper bound, the restriction of any dissociation set in this module to the original  $Q$  is dissociating in  $Q$ , and its restriction to  $B$  is dissociating in  $B$ . The two established local caps give
+$$|D|\le12+8=20.$$
+The displayed witness attains this, so the module has
+$$\boxed{\beta_2=20}.$$
+The proposed local bound  $19$  is therefore genuinely false for this twice-cut attachment.4. The remaining-port accounting correctly limits the counterexample’s scopeAfter the two attachments, the remaining deficient vertices are exactly
+$$\{14,15,16,17,24,32\}.$$
+Their states in the displayed twenty-set are:Remaining portSelected state $14_Q=x_2$ Omitted $17_Q=x_5$ Omitted $15_Q=x_3$ Selected, paired with  $16_Q$  $16_Q=x_4$ Selected, paired with  $15_Q$  $24=4_B$ Selected, paired with  $31=11_B$  $32=12_B$ Selected, paired with  $22=2_B$ Thus four of the six remaining ports are selected and already internally saturated, and only two are omitted.For a completion obtained solely by adding edges on these same 34 vertices, every added edge must join deficient ports: all other vertices already have degree three. Each deficient port needs one additional edge, so the added edges must constitute a perfect matching of the six ports.To preserve the twenty-set, each of its four saturated selected ports would need an omitted partner. A port can be used only once, and only two omitted ports are available. Therefore no such completion preserves this particular twenty-set.This correctly separates the conclusions:The 34-vertex graph is subcubic, with six degree-two vertices.Its twenty-set disproves the proposed local charging rule.The argument does not exhibit a cubic counterexample to a global compensation inequality.Adding further vertices introduces additional capacity that must be accounted for separately.The “transferred obligation” is explicitly visible in this witness: the second Heawood pair is now saturated. The note does not need, and does not prove, a universal saturation-transfer theorem for arbitrary twice-cut states.5. The exact arbitrary-interface theorem has sufficient hypothesesThe exact claim is valid under the following graph construction conditions.The base pieces are disjoint copies of  $Q$  and one-cut Heawood blocks.Each Heawood block’s two ports attach to the two endpoints of one original core cut pair.Different attached blocks use distinct core cut pairs.Every remaining core port receives exactly one edge from a matching of the remaining ports. Edges within a core module are allowed.These are the only modifications, and the resulting graph is finite, simple, cubic, and bipartite.Connectedness is unnecessary for the exact values. The twice-cut block from the counterexample is outside this theorem’s hypotheses.Upper dissociation boundFor core  $j$ , let  $a_j$  be its number of attached blocks, and let  $b_j$  count those whose restrictions have size eight.Each of those  $b_j$  restrictions satisfies the established one-cut saturated-port lemma. Its two attached core vertices must therefore be omitted.Because the attached pairs are distinct, the core has at least  $b_j$  wholly omitted original cut pairs. The triple-pair omission lemma gives a core contribution at most
+$$12-b_j.$$
+The attached Heawood restrictions contribute at most
+$$8b_j+7(a_j-b_j)=7a_j+b_j.$$
+Thus the module contributes at most
+$$(12-b_j)+(7a_j+b_j)=12+7a_j.$$
+Summing and using  $\sum_j a_j=b$  yields
+$$\beta_2\le12c+7b.$$
+An additional edge between two ports of the same core does not invalidate this argument. The restriction of a full-graph dissociation set remains dissociating after that additional edge is deleted, so the lemma for the original  $Q$  still applies.The fixed selection remains inclusion-minimalTake the established core selections  $H\cup U$  and the established Heawood eight-selections.Every deleted or added interface edge has both endpoints outside their union  $S$ . For any  $A\subseteq S$ , a two-star witnessing formation from  $A$  has at least two of its three vertices in  $A$ . It therefore cannot use an edge with both endpoints outside  $S$ .It follows that the interface changes preserve formation by  $S$  and preserve failure of formation by every  $S\setminus\{s\}$ . This proves survival of inclusion-minimality, including for interfaces internal to a module.The size is
+$$s=|S|=12c+8b.$$
+The selected graph in each core has no isolates. In the displayed Heawood labeling, the selected graph is the six-cycle
+$$1-9-2-10-3-11-1$$
+together with isolated selected vertices  $5,7$ . Since no interface changes an edge of the selected graph, the global selected isolate count is exactly
+$$z=2b.$$
+Lower dissociation bound without an alternating witnessThe required form of the accepted isolate theorem is
+$$2|S|\le2\beta_2(G)+i(G[S])$$
+for the fixed inclusion-minimal forming selection  $S$ , without requiring  $S$  to attain  $SF_2$  beforehand.Applying that theorem here gives
+$$2(12c+8b)\le2\beta_2+2b,$$
+and hence
+$$\beta_2\ge12c+7b.$$
+Together with the upper bound,
+$$\boxed{\beta_2=12c+7b}.$$
+There is no circularity: this application occurs before proving  $SF_2=s$ . There is also no assumption that an alternating core witness fits the chosen matching. The accepted theorem supplies the lower bound; finiteness ensures that the dissociation maximum is attained.Exact formation numberThe surviving minimal selection gives
+$$SF_2\ge s=12c+8b.$$
+The cubic compensation theorem then gives
+$$\begin{aligned}
+7SF_2
+&\le3n+2\beta_2\\
+&=3(20c+14b)+2(12c+7b)\\
+&=84c+56b\\
+&=7(12c+8b).
+\end{aligned}$$
+Therefore
+$$\boxed{SF_2=12c+8b}.$$
+All the asserted parameter identities follow:
+$$\boxed{
+n=20c+14b,\qquad
+\beta_2=12c+7b,\qquad
+SF_2=12c+8b,\qquad
+SF_2-\beta_2=b.
+}$$
+They hold for every permitted interface, including disconnected completions.6. An internal port edge consumes two stubs and contributes zero to the cutLet  $M_j$  consist of core  $j$  and all its attached Heawood blocks. After its  $a_j$  attachments, it has
+$$6-2a_j$$
+remaining core ports.Let  $\ell_j$  count matching edges joining two of those remaining ports within  $M_j$ . Then the exact boundary formula is
+$$\boxed{
+|\delta(M_j)|=6-2a_j-2\ell_j.
+}$$
+Each internal matching edge:uses two remaining port stubs;contributes no edge to  $\delta(M_j)$ .Each matching edge to another module uses one stub of  $M_j$  and contributes one boundary edge. This proves the formula and the asserted evenness.For example, if  $a_j=2$ , there are two remaining ports. Joining those ports to each other gives
+$$|\delta(M_j)|=2-2=0.$$
+That module is detached from all others. Counting such an internal edge as one boundary edge would be incorrect; the note’s parity argument correctly counts it as zero.7. Connectedness with  $c\ge2$  forces  $b\le2c$ If the completed graph is connected and  $c\ge2$ , every  $M_j$  is a nonempty proper vertex subset. Hence
+$$|\delta(M_j)|>0.$$
+The exact boundary formula shows that this number is even, so
+$$2\le6-2a_j-2\ell_j.$$
+Equivalently,
+$$a_j+\ell_j\le2.$$
+In particular  $a_j\le2$ , and summing gives
+$$\boxed{b\le2c}.$$
+Thus the proof actually yields the slightly stronger local constraint  $a_j+\ell_j\le2$ .Using the exact gap and order,
+$$\frac{SF_2-\beta_2}{n}
+=
+\frac{b}{20c+14b}.$$
+Since the denominator is positive,
+$$\frac{b}{20c+14b}\le\frac1{24}
+\iff
+24b\le20c+14b
+\iff
+b\le2c.$$
+Therefore the architecture bound is correct and sharp:
+$$\boxed{\frac{SF_2-\beta_2}{n}\le\frac1{24}}$$
+for connected members with at least two cores. The accepted cyclic family attains equality.There is also a useful equality consequence. If  $b=2c$ , every module has  $a_j=2$ ,  $\ell_j=0$ , and exactly two boundary edges. The connected quotient by modules is therefore a cycle; for  $c=2$ , it consists of two parallel quotient edges whose actual endpoints are distinct core ports. This is compatible with a simple completed graph.The single-core exception is correctly excludedFor  $c=1,b=3$ , no remaining core ports exist, and the exact formulas give
+$$n=62,\qquad \beta_2=33,\qquad SF_2=36,\qquad \text{gap}=3.$$
+This is a connected single-module construction with no available interface ports. It is exempt from the proper-module cut argument because its sole module is the whole graph.Disjoint copies preserve its ratio but lose connectedness. Joining copies requires a modification outside the stated architecture. Thus the  $c=1$  exception does not undermine the connected asymptotic limit.No repair to the mathematical argument is needed. The essential scope conditions are the one-cut, distinct-pair attachment architecture for the exact theorem, and the fixed-selection form of the accepted isolate inequality. The explicit twice-cut example is correctly confined to failure of the local saturated-port charge.
