@@ -68,9 +68,17 @@ every isolate and high once, and every witness once. Consequently
     |D_L|+|D_R|=2s-z-K,
     2(s-beta_2(G)) <= z+K <= z+r1+r2.                       (2)
 
-This is the general bipartite exchange lemma. In particular, selected
+This is the original general bipartite exchange lemma. In particular, selected
 isolates are paid once across the two alternative sets, and leaf demand
 never reuses an already chosen high witness.
+
+The later [augmented exchange theorem](AUGMENTED_ISOLATE_COMPENSATION.md)
+adds each unreserved leaf's unused witness to the exchange retaining
+that leaf as an isolate. These additions are compatible and restore
+the entire K loss. Hence the stronger general statement is
+2(s-beta_2)<=z, with two explicit augmented sets of total size2s-z.
+It also resolves the cubic equality structure left open by the original
+capacity accounting, without changing the sharp order coefficient.
 
 ## Weighted theorem
 

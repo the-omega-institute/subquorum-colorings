@@ -118,6 +118,21 @@ have SF_2-beta_2 at most one. The classification and transfer are written
 proofs, with independently checked local certificates, not a new Lean
 formalization. Arbitrary-order connected cubic sharpness remains open.
 
+The [augmented isolate compensation](docs/AUGMENTED_ISOLATE_COMPENSATION.md)
+now proves 2|S|<=2beta_2+z for every minimal forming selection in every
+bipartite graph, where z counts its selected isolates. Each unreserved
+leaf contributes an actual unused witness to one of two compatible
+matching augmentations. This completes the regular equality reduction
+also in degree three: linear equality forces the isolate-tight partition.
+In the [cubic path normal form](docs/CUBIC_EQUALITY_PATH_NORMAL_FORM.md),
+the slack is at least twice the number of high paths, with an additional
+componentwise signed-debt bound. Thus actual equality excludes high
+paths altogether. An explicit connected28-vertex example explains why
+the original unaugmented balance rule was insufficient. Two graph
+lemmas and ten conditional arithmetic lemmas pass Lean;19,550augmented
+exchanges and347path/established controls pass finite checks. The
+connected cubic asymptotic optimum and grid bridge remain open.
+
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
 through a connected Heawood double cover, including all connected regular

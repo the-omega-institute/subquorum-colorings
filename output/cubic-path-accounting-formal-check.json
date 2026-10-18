@@ -1,0 +1,53 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T22:39:24.784183+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3553.\nPages active:                                 229350.\nPages inactive:                               218027.\nPages speculative:                             20302.\nPages throttled:                                   0.\nPages wired down:                             248505.\nPages purgeable:                                 759.\n\"Translation faults\":                    15430108232.\nPages copy-on-write:                       941992601.\nPages zero filled:                        6350464373.\nPages reactivated:                        2887320965.\nPages purged:                              135664347.\nFile-backed pages:                            301455.\nAnonymous pages:                              166239.\nPages stored in compressor:                  1522910.\nPages occupied by compressor:                 287087.\nDecompressions:                           2320003968.\nCompressions:                             2741966948.\nPageins:                                  4016021470.\nPageouts:                                   11312085.\nSwapins:                                    25180913.\nSwapouts:                                   31488950.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 4.115,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.438,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CubicStability.lean",
+      "seconds": 0.563,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/DissociationCover.lean",
+      "seconds": 0.488,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CubicPathAccounting.lean",
+      "seconds": 0.603,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingCubicPathAccountingAudit.lean",
+      "seconds": 0.358,
+      "stdout": "'StarForming.CubicPathAccounting.extra_leaf_failure_is_unused' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'StarForming.CubicPathAccounting.endpoint_count' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPathAccounting.high_outside_color_balance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.CubicPathAccounting.at_most_two_paths_balanced' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.CubicPathAccounting.exchange_signed_debt' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPathAccounting.signed_debt_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.CubicPathAccounting.zero_slack_forces_debt_balance' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'StarForming.CubicPathAccounting.equality_gap' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPathAccounting.augment_isolated_pairs' does not depend on any axioms\n'StarForming.CubicPathAccounting.augmented_isolate_compensation' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPathAccounting.augmented_capacity_lower_bound' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPathAccounting.augmented_path_slack' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 705249280,
+  "scope": "Two general graph lemmas: exclusion of extra-leaf failure witnesses from the chosen high-witness image and simultaneous isolated-pair augmentation preserving dissociation. Ten conditional arithmetic lemmas for path endpoint counts, quantized bipartition balance, exchange debt and equality gap, isolate compensation and positive path slack. Full finite normal-form characterization, cardinal path decomposition and component summation have written proofs."
+}

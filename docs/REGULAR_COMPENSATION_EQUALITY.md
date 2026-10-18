@@ -7,6 +7,13 @@ bipartite; forming sets are inclusion-minimal, with non-induced two-stars.
 The complete exchange and degree-capacity proofs appear in
 SHARP_REGULAR_BIPARTITE_GAP.md. No literature-priority claim is made.
 
+Update: the later [augmented exchange theorem](AUGMENTED_ISOLATE_COMPENSATION.md)
+proves 2s<=2beta+z in every bipartite graph. Its exact regular remainder
+shows that linear equality forces the isolate-tight partition for every
+d>=3, including the cubic case left open by the original accounting
+below. The stronger deduction uses compatible additions to the exchanges;
+it does not change the zero coefficient in the original identity (1).
+
 ## An exact nonnegative remainder
 
 Fix a minimal selection S in a d-regular graph, d>=3. Use the chosen
@@ -188,7 +195,13 @@ The conclusion does not classify every graph with beta=n/2, nor every
 possible equality graph up to isomorphism. It supplies the complete
 isolate-tight partition and the necessary structural reduction for
 linear equality in degrees at least four. The cubic connected extremal
-problem still requires an additional argument.
+problem still requires an additional argument. The later
+[cubic path normal form](CUBIC_EQUALITY_PATH_NORMAL_FORM.md) characterizes
+zero accounting remainder even when r_2=K>0, proves a two-distinct-witness
+cost per high path and an exact componentwise signed-debt identity,
+and gives an explicit obstruction to inferring equality from that form
+and balance alone. Its subsequent augmented exchanges now rule out
+high paths at actual equality and complete the cubic reduction.
 
 ## Verification scope
 

@@ -1,0 +1,70 @@
+TRUE. An extra leaf allows a strict augmentation of one of the two exchanges. Consequently, equality forces every high vertex to have exactly two high neighbors. The argument also applies to disconnected graphs.The same augmentation proves the stronger bound
+$$\boxed{3n+2\beta-7s\ge 2c}$$
+throughout the supplied zero-combinatorial-remainder normal form, where  $c$  is the number of high path components.1. The witness structure under equalityFix a bipartition  $V(G)=L\sqcup R$ , and put
+$$T=V(G)\setminus S,\qquad F=f(H).$$
+By the established nonnegative-remainder identity, the assumed equality gives
+$$|D_L|=|D_R|=\beta,\qquad q_v=0\quad(v\in H),\qquad r_1=0,\qquad r_2=K.$$
+Since
+$$q_v=4-a(f(v))-a(v),$$
+the used witnesses have the following structure:High vertexUsed witnessSelected neighbors of the witness $h\in H_2$  $a(f(h))=2$ , adjacent to  $h$  $h$  and an isolate $h\in H_3$  $a(f(h))=1$ , nonadjacent to  $h$ A single leaf  $g_h$  supported by  $h$ For the second row, cubicity implies that  $h\in H_3$  has all its neighbors in  $S$ , so its witness is nonadjacent. Reserve the leaf  $g_h$  at each  $h\in H_3$ , and write
+$$U_{\mathrm{extra}}
+=
+U\setminus\{g_h:h\in H_3\}.$$
+Thus  $|U_{\mathrm{extra}}|=K$ .A crucial consequence of the table is
+$$\boxed{N(u)\cap F=\varnothing
+\qquad\text{for every }u\in U_{\mathrm{extra}}.}
+\tag{1}$$
+Indeed, a used degree-two witness has a high vertex and an isolate as its selected neighbors. A used degree-one witness has its designated reserved leaf as its sole selected neighbor. These exhaust  $F$ .Now take an extra leaf  $u$ . By the established leaf-witness property, it has an adjacent deletion-failure witness  $x_u$  of selected degree one or two. Equation (1) makes this witness unused by  $f$ , and  $r_1=0$  therefore forces selected degree two. Consequently,
+$$N(x_u)=\{u,i_u,w_u\},
+\qquad i_u\in I,\qquad w_u\in T.
+\tag{2}$$
+The witnesses  $x_u$  for distinct extra leaves are distinct.2. An extra leaf augments the exchange that retains itSuppose  $u\in U_{\mathrm{extra}}\cap L$ , and let  $h_u$  be its unique selected neighbor. Bipartiteness and (2) give
+$$h_u,x_u\in R,\qquad i_u,w_u\in L.$$
+Consider  $D_L$ . Its construction retains the highs in  $L$ , the selected isolates in  $R$ , and the used outside witnesses in  $R$ :
+$$D_L\cap H=H\cap L,\qquad
+D_L\cap I=I\cap R,\qquad
+D_L\cap T=F\cap R.
+\tag{3}$$
+The extra leaf  $u$  is retained and isolated in  $G[D_L]$ . Its support  $h_u\in R$  is omitted, so  $u$  survives the trimming, which acts only at retained highs. Its only selected neighbor is  $h_u$ , and (1) excludes adjacency to every retained outside vertex. Hence
+$$u\in D_L,\qquad N(u)\cap D_L=\varnothing.
+\tag{4}$$
+Its witness  $x_u$  has exactly one neighbor in  $D_L$ . The witness itself is absent because it is unused by  $f$ . Of its three neighbors in (2): $u$  belongs to  $D_L$ ; $i_u\in I\cap L$  is omitted; $w_u\in T\cap L$  is omitted.Thus
+$$x_u\notin D_L,\qquad N(x_u)\cap D_L=\{u\}.
+\tag{5}$$
+Equations (4)–(5) show that adding  $x_u$  turns the isolated vertex  $u$  into an isolated edge:
+$$G[D_L\cup\{x_u\}]
+=
+G[D_L\setminus\{u\}]
+\;\sqcup\;
+K_2[\{u,x_u\}].$$
+Therefore  $D_L\cup\{x_u\}$  is a dissociation set. Under equality, this yields
+$$\beta\ge |D_L|+1=\beta+1,$$
+a contradiction.An extra leaf in  $R$  gives the identical augmentation of  $D_R$ . We conclude that
+$$\boxed{U_{\mathrm{extra}}=\varnothing,\qquad K=0.}$$
+This argument uses only the classification of the used witnesses to establish (1). The fuller description of a leaf’s remaining outside neighbor as a  $Y$ -vertex is available, but the augmentation already follows from (1).3. Every high component is a cycleEach  $H_2$ -vertex has two selected neighbors. With all extra leaves eliminated, both neighbors are high.Each  $H_3$ -vertex has three selected neighbors, exactly one of which is its reserved leaf. Its other two selected neighbors are high.Hence
+$$d_{G[H]}(h)=2\qquad(h\in H).$$
+A finite simple  $2$ -regular graph is a disjoint union of cycles; here every cycle is even because  $G$  is bipartite. The case  $H=\varnothing$  gives the empty union. This proves the assertion.  $\square$ 4. The quantitative path obstructionThe augmentation works throughout the zero-combinatorial-remainder normal form, before assuming that either exchange is maximum.Define
+$$D_L^+
+=
+D_L\cup\{x_u:u\in U_{\mathrm{extra}}\cap L\},$$
+
+$$D_R^+
+=
+D_R\cup\{x_u:u\in U_{\mathrm{extra}}\cap R\}.$$
+Each is a dissociation set. Within either augmentation, the added witnesses lie in one bipartition class, have distinct leaf partners, and each meets its original exchange precisely in its previously isolated partner. Thus all these additions are compatible.Their total size is
+$$|D_L^+|+|D_R^+|
+=
+|D_L|+|D_R|+K
+=
+2s-z.$$
+It follows that
+$$\boxed{\beta\ge \left\lceil s-\frac z2\right\rceil.}
+\tag{6}$$
+In the zero-combinatorial-remainder form, the original identity reads
+$$W=2\beta-\bigl(|D_L|+|D_R|\bigr).$$
+The augmented sets therefore give
+$$\boxed{W\ge K=2c.}
+\tag{7}$$
+For the stated  $28$ -vertex construction,  $s=16$  and  $z=2$ , so (6) gives
+$$\boxed{\beta\ge15}$$
+for every admissible outside wiring. Use the augmented exchanges  $D_L^+,D_R^+$  to record the structural obstruction: together they gain exactly one vertex per extra leaf, or two vertices per high path component.

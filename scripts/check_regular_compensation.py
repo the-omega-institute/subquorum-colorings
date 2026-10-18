@@ -55,7 +55,12 @@ def exchange_control(adjacency, selected, totals, exact_beta=None):
     residual_two = sum(counts[vertex] == 2 for vertex in unused)
     leaf_loss = len(leaves) - len(good)
     assert 0 <= leaf_loss <= residual_one + residual_two
+    reserved = {vertex: next(iter(adjacency[witnesses[vertex]] & selected)) for vertex in good}
+    extra_leaves = leaves - set(reserved.values())
+    assert len(extra_leaves) == leaf_loss
+    assert all(not adjacency[leaf] & set(witnesses.values()) for leaf in extra_leaves)
     candidates = []
+    augmented = []
     for color in (0, 1):
         candidate = selected - isolated - high
         candidate |= {vertex for vertex in isolated if colors[vertex] != color}
@@ -63,11 +68,25 @@ def exchange_control(adjacency, selected, totals, exact_beta=None):
         candidate |= {image for image in witnesses.values() if colors[image] != color}
         for vertex in high:
             if colors[vertex] == color:
-                ordered = sorted(adjacency[vertex] & leaves)
-                candidate -= set(ordered[1:] if vertex in good else ordered)
+                removed = adjacency[vertex] & leaves
+                if vertex in good:
+                    removed -= {reserved[vertex]}
+                candidate -= removed
         assert all(len(adjacency[vertex] & candidate) <= 1 for vertex in candidate)
         candidates.append(candidate)
+        additions = {leaf_witnesses[leaf] for leaf in extra_leaves if colors[leaf] == color}
+        for leaf in extra_leaves:
+            if colors[leaf] == color:
+                assert leaf in candidate and not adjacency[leaf] & candidate
+                assert leaf_witnesses[leaf] not in candidate
+                assert adjacency[leaf_witnesses[leaf]] & candidate == {leaf}
+        enhanced = candidate | additions
+        assert len(enhanced) == len(candidate) + len(additions)
+        assert all(len(adjacency[vertex] & enhanced) <= 1 for vertex in enhanced)
+        augmented.append(enhanced)
     assert sum(map(len, candidates)) == 2 * len(selected) - len(isolated) - leaf_loss
+    assert sum(map(len, augmented)) == 2 * len(selected) - len(isolated)
+    assert 2 * (len(selected) - max(map(len, augmented))) <= len(isolated)
     maximum = max(3, max(map(len, adjacency), default=0))
     weighted_base = sum(len(adjacency[vertex]) + maximum - 1 for vertex in selected)
     defect = maximum * len(vertices) - weighted_base
@@ -80,13 +99,17 @@ def exchange_control(adjacency, selected, totals, exact_beta=None):
     assert 2 * (len(selected) - max(map(len, candidates))) <= defect
     if exact_beta is not None:
         assert weighted_base + 2 * len(selected) <= maximum * len(vertices) + 2 * exact_beta
+        assert 2 * (len(selected) - exact_beta) <= len(isolated)
     totals['minimal_selections'] += 1
     totals['exchanges'] += 2
+    totals['augmented_exchanges'] += 2
+    totals['extra_leaf_additions'] += leaf_loss
     totals['high_witnesses'] += len(high)
     totals['leaf_witnesses'] += len(leaves)
     totals['selections_with_isolates'] += bool(isolated)
     return dict(size=len(selected), isolates=len(isolated), leaf_loss=leaf_loss,
-                defect=defect, exchange_sizes=list(map(len, candidates)))
+                defect=defect, exchange_sizes=list(map(len, candidates)),
+                augmented_exchange_sizes=list(map(len, augmented)))
 
 
 def exhaustive_graph(adjacency, totals):

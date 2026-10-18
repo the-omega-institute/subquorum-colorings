@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -33,7 +33,8 @@ def main():
         raise RuntimeError('Use pinned Lean4.33.0: ' + version)
     build = root / {'cover': 'build/cover-pullback-formal',
                     'dissociation': 'build/dissociation-cover-formal',
-                    'heawood': 'build/heawood-certificates-formal'}[arguments.audit]
+                    'heawood': 'build/heawood-certificates-formal',
+                    'cubic-paths': 'build/cubic-path-accounting-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -42,9 +43,13 @@ def main():
         modules += ('StarForming/CoverStability.lean', 'StarFormingCoverPullbackAudit.lean')
     elif arguments.audit == 'dissociation':
         modules += ('StarForming/DissociationCover.lean', 'StarFormingDissociationCoverAudit.lean')
-    else:
+    elif arguments.audit == 'heawood':
         modules += ('StarForming/DissociationCover.lean', 'StarForming/HeawoodCertificates.lean',
                     'StarFormingHeawoodCertificatesAudit.lean')
+    else:
+        modules += ('StarForming/CubicStability.lean', 'StarForming/DissociationCover.lean',
+                    'StarForming/CubicPathAccounting.lean',
+                    'StarFormingCubicPathAccountingAudit.lean')
     for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -61,7 +66,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != {'cover': 22, 'dissociation': 5, 'heawood': 6}[arguments.audit]:
+    if len(declarations) != {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12}[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
         if set(filter(None, map(str.strip, axioms.split(',')))) - {
@@ -83,6 +88,14 @@ def main():
                             'Heawood double covers, their cardinalities, and two conditional '
                             'gap-density arithmetic implications. Matrix classification, '
                             'higher-cover factorization and finite-fiber counting retain written proofs.')
+    if arguments.audit == 'cubic-paths':
+        receipt['scope'] = ('Two general graph lemmas: exclusion of extra-leaf failure witnesses '
+                            'from the chosen high-witness image and simultaneous isolated-pair '
+                            'augmentation preserving dissociation. Ten conditional arithmetic lemmas for '
+                            'path endpoint counts, quantized bipartition balance, exchange debt '
+                            'and equality gap, isolate compensation and positive path slack. '
+                            'Full finite normal-form characterization, '
+                            'cardinal path decomposition and component summation have written proofs.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

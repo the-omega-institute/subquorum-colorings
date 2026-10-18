@@ -1,0 +1,14 @@
+import StarForming.CubicPathAccounting
+
+#print axioms StarForming.CubicPathAccounting.extra_leaf_failure_is_unused
+#print axioms StarForming.CubicPathAccounting.endpoint_count
+#print axioms StarForming.CubicPathAccounting.high_outside_color_balance
+#print axioms StarForming.CubicPathAccounting.at_most_two_paths_balanced
+#print axioms StarForming.CubicPathAccounting.exchange_signed_debt
+#print axioms StarForming.CubicPathAccounting.signed_debt_lower_bound
+#print axioms StarForming.CubicPathAccounting.zero_slack_forces_debt_balance
+#print axioms StarForming.CubicPathAccounting.equality_gap
+#print axioms StarForming.CubicPathAccounting.augment_isolated_pairs
+#print axioms StarForming.CubicPathAccounting.augmented_isolate_compensation
+#print axioms StarForming.CubicPathAccounting.augmented_capacity_lower_bound
+#print axioms StarForming.CubicPathAccounting.augmented_path_slack
