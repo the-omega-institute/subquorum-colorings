@@ -1,5 +1,10 @@
 # Long cores: a general obstruction to additive omission charging
 
+The matching upper bound has now been proved in
+[sharp long-core omission](LONG_CORE_SHARP_OMISSION.md). Thus F(k) and
+beta_2(L_k) below are exact. This note gives the original lower construction
+and the failure of the proposed additive rule.
+
 ## Statement and scope
 
 The fixed six-port inequality in
@@ -120,8 +125,8 @@ The resulting full dissociation set has size
 Conversely, the established one-cut Heawood cap says each attached block
 contributes at most eight vertices, and an eight-set saturates both
 ports. Its core pair must then be wholly omitted in a full dissociation
-set. Thus beta_2(L_k) <= 21k+F(k). This upper reduction is valid; an
-all-k upper bound F(k) <= 12k+floor(k/2) is still a conjecture.
+set. Thus beta_2(L_k) <= 21k+F(k). The matching all-k upper bound
+F(k) <= 12k+floor(k/2) is now proved in the linked sharp-omission note.
 
 ## The forming witness and compulsory slack
 
@@ -169,9 +174,8 @@ k=1,...,10 returned F(k)=12k+floor(k/2); the
 [discovery receipt](../output/long-core-omission-discovery.json) records
 these observations without treating them as a proof.
 
-The next research question is the sharp all-k upper bound
-F(k)<=12k+floor(k/2), ideally via an explicit boundary potential or
-structural charging argument. A pending
-[Oracle research question](reviews/2026-10-19-long-core-omission-research-question.md)
-asks for a proof or counterexample. Even a proof of that corrected core
-bound would determine beta_2(L_k), not automatically SF_2(L_k).
+The [Oracle research question](reviews/2026-10-19-long-core-omission-research-question.md)
+has now yielded a structural upper proof, independently checked and written
+in the linked sharp-omission note. It determines beta_2(L_k) exactly and
+gives 36k<=SF_2(L_k)<=36k+floor(2floor(k/2)/7), hence exact SF=36k
+for k<=7. SF for larger k and improving the1/24family remain open.

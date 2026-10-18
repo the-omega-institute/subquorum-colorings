@@ -1,0 +1,53 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T23:50:15.255672+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     6838.\nPages active:                                 223126.\nPages inactive:                               217832.\nPages speculative:                              6172.\nPages throttled:                                   0.\nPages wired down:                             232107.\nPages purgeable:                                1309.\n\"Translation faults\":                    15548631682.\nPages copy-on-write:                       947987002.\nPages zero filled:                        6391819360.\nPages reactivated:                        2914086539.\nPages purged:                              136389931.\nFile-backed pages:                            244772.\nAnonymous pages:                              202358.\nPages stored in compressor:                  1719453.\nPages occupied by compressor:                 320918.\nDecompressions:                           2346122798.\nCompressions:                             2772005499.\nPageins:                                  4111507306.\nPageouts:                                   11555413.\nSwapins:                                    25216917.\nSwapouts:                                   31638594.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 3.724,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.453,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/DissociationCover.lean",
+      "seconds": 0.495,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/LongCoreWord.lean",
+      "seconds": 4.615,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/LongCoreUpper.lean",
+      "seconds": 0.845,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingLongCoreUpperAudit.lean",
+      "seconds": 0.365,
+      "stdout": "'StarForming.LongCoreUpper.cell_cap' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreUpper.one_hub_tight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.LongCoreUpper.two_hub_tight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.LongCoreUpper.one_hub_next_cut' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.LongCoreUpper.one_hub_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.LongCoreUpper.two_hub_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.LongCoreUpper.singleton_score' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreUpper.cyclic_upper' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreUpper.exact_beta' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreUpper.sf_interval' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 1251590144,
+  "scope": "Ten conditional count declarations: two-index cell cap, one-hub and two-hub tight-cell classification, exclusion of a selected cut after two tight one-hub cells, sharp one-hub and two-hub block counts, singleton-normalization score, cyclic aggregate bound, exact-beta and SF interval arithmetic. Necessary cell/star inequalities are explicit hypotheses. Graph-to-count extraction, odd-hub reflection, full exceptional pattern identification, cyclic summation and Heawood attachment are written proofs, not claimed as fully formalized."
+}

@@ -1,10 +1,15 @@
 {
-  "status": "STREAMING_PENDING",
+  "status": "COMPLETED_RESEARCH_ANSWER_INDEPENDENTLY_CHECKED",
   "pool": "chrono-chatgpt-pro-pool",
   "conversation_id": "conv_2b4aa8e1344ce47a",
   "terminal_session_id": 54614,
   "input": "docs/reviews/2026-10-19-long-core-omission-research-question.md",
-  "request": "build/long-core-omission-oracle-request.json",
-  "stream": "build/long-core-omission-oracle-answer.sse",
-  "scope": "Research question: prove the corrected sharp all-k upper bound F(k)<=12k+floor(k/2), or supply a counterexample. The written A/B construction proves the opposite lower bound. No general upper bound, exact SF value or review verdict is presumed."
+  "response": "docs/reviews/2026-10-19-long-core-omission-research-response.txt",
+  "task_id": "6b478b70-55c8-4c76-bbee-2f159759c5a5",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "material": "docs/LONG_CORE_SHARP_OMISSION.md",
+  "result": "General proof F(k)=12k+floor(k/2), hence beta(L_k)=33k+floor(k/2). SF lies between36k and36k+floor(2floor(k/2)/7), exact36k for1<=k<=7.",
+  "assessment": "Normalization preserves the score. Necessary cell constraints and hub cases give local score<=12 except the unique normalized A pattern of score13. Saturated H boundaries prohibit adjacent A, including the self seam at k1. Independently checked graph reasoning and ten new conditional Lean declarations; no finite optimization is a proof premise.",
+  "scope": "Research answer supplying a proof, not an independent ACCEPT verdict on our subsequent writeup. Graph-to-count extraction, reflection, exceptional-pattern identification, cyclic summation and Heawood attachment have written proofs."
 }

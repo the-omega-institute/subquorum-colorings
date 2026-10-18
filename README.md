@@ -183,8 +183,14 @@ Heawood blocks gives beta_2>=33k+floor(k/2) on62kvertices, and therefore
 7(SF_2-beta_2)+5floor(k/2)<=21k. This excludes the proposed3/62gap target
 for this family when k>=2; it does not yet exclude improving1/24.
 The general word dissociation theorem and eight supporting declarations
-pass Lean. The corrected sharp upper bound remains open; finite solver
-probes are recorded only as discovery evidence, with a live Oracle question.
+pass Lean. The [matching all-k upper bound](docs/LONG_CORE_SHARP_OMISSION.md)
+is now proved by score-preserving normalization, a two-index cell inequality
+and the exclusion of adjacent exceptional blocks. Hence F(k)=12k+floor(k/2)
+and beta_2=33k+floor(k/2) exactly. Ten further conditional cell/count Lean
+declarations pass. The forming parameter lies between36k and
+36k+floor(2floor(k/2)/7), so SF_2=36k for k<=7; larger k remain open.
+The completed Oracle supplied the structural upper proof; its answer was
+independently checked. Finite optimization is discovery evidence only.
 
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring

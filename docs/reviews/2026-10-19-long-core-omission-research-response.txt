@@ -1,0 +1,165 @@
+The proposed equality is true for every  $k\ge1$ . There is a structural proof based on the following local fact:After a score-preserving normalization of the  $X$ -vertices, every open six-index block has score at most  $12$ , except for exactly the supplied type  $A$ , which has score  $13$ .The two  $H$ -boundary vertices of an exceptional block are selected and already internally matched. Therefore two exceptional blocks cannot be adjacent. This supplies the necessary boundary control without a state table.I prove the local statement and its cyclic consequence below.1. A score-preserving normalizationWrite
+$$F(D)=|D|+m(D).$$
+Consider an original deleted pair
+$$P_j=\{x_{2j},x_{2j+1}\}.$$
+If exactly one endpoint of  $P_j$  belongs to  $D$ , remove that endpoint. This preserves dissociation. It decreases  $|D|$  by one and increases  $m(D)$  by one, so it preserves  $F(D)$ .Applying this operation to every such pair, we may therefore assume that every original deleted pair is either wholly selected or wholly omitted. Write
+$$z_j=
+\begin{cases}
+1,&P_j\subseteq D,\\
+0,&P_j\cap D=\varnothing.
+\end{cases}$$
+For a normalized pair, its contribution to  $|D\cap X|+m(D)$  is
+$$2z_j+(1-z_j)=1+z_j.$$
+Consequently,
+$$F(D)
+=
+3k+|D\cap(H\cup U\cup Y)|+\sum_{j=0}^{3k-1}z_j.
+\tag{1}$$
+The normalization preserves the objective globally and separately within each six-index block, since every original deleted pair lies wholly within one block.2. Open blocks and a two-index cell inequalityOpen all six-index blocks by deleting the interblock edges in  $H$  and  $X$ . A restriction of a global dissociation set remains dissociating in the resulting open block.For one block, suppress the global offset and use local indices  $0,\ldots,5$ . Its remaining internal  $X$ -edges are
+$$x_1x_2,\qquad x_3x_4,$$
+and its  $H$ -vertices form the path  $h_0,\ldots,h_5$ .Let
+$$a_i=\mathbf 1_{\{h_i\in D\}},
+\qquad
+v_i=\mathbf 1_{\{u_i\in D\}},$$
+and let  $q\in\{0,1,2\}$  count the selected hubs. For its three two-index cells, define
+$$C_j=a_{2j}+a_{2j+1}+v_{2j}+v_{2j+1}+z_j,
+\qquad j=0,1,2.$$
+The block’s score is
+$$\sigma
+=
+|D\cap V(\text{block})|
++\#\{\text{its wholly omitted original deleted pairs}\}
+=
+3+C_0+C_1+C_2+q.
+\tag{2}$$
+Only the three original deleted pairs are counted here. Opening the seam edges introduces no additional terms in  $m$ .Cell lemmaFor every cell,
+$$C_j\le3.
+\tag{3}$$
+Moreover, the following equality descriptions hold:If  $z_j=0$  and  $C_j=3$ , both  $U$ -vertices and exactly one of the two  $H$ -vertices are selected.If  $z_j=1$  and  $C_j=3$ , exactly one of  $h_i,u_i$  is selected at each of its two coordinates.Proof. If  $z_j=0$ , the four relevant  $H,U$ -vertices contain the path
+$$u_{2j}-h_{2j}-h_{2j+1}-u_{2j+1}.$$
+All four cannot be selected. Furthermore, if both  $H$ -vertices are selected, neither  $U$ -vertex can be selected, because each  $H$ -vertex already meets its selected  $H$ -neighbor. Thus a selected three-set must consist of both  $U$ -vertices and exactly one  $H$ -vertex.If  $z_j=1$ , both  $X$ -vertices are selected. At either coordinate, selecting both  $h_i$  and  $u_i$  would give  $u_i$  two selected neighbors, namely  $h_i,x_i$ . Hence
+$$a_i+v_i\le1$$
+at both coordinates, proving  $C_j\le3$  and the stated equality condition.  $\square$ Call a cell tight when  $C_j=3$ .3. The sharp open-block lemmaI will prove
+$$\boxed{\sigma\le12+\mathbf 1_{\{\text{the normalized block is type }A\}}.}
+\tag{4}$$
+The proof splits only according to the number of selected hubs.Case  $q=0$ : score at most  $12$ The three cell inequalities immediately give
+$$\sigma
+=
+3+C_0+C_1+C_2
+\le3+9=12.
+\tag{5}$$
+Case  $q=1$ : score at most  $12$ It suffices to assume that the even hub is selected. Indeed, the reflection
+$$i\longmapsto5-i$$
+preserves the open block and exchanges the two hubs. It reverses the  $H$ -path, exchanges the internal  $X$ -edges  $x_1x_2$  and  $x_3x_4$ , and permutes the three original deleted pairs. No global symmetry of the closed graph is needed.Suppose, towards a contradiction, that all three cells are tight.The cell lemma then gives two consequences.For a tight cell with  $z_j=0$ : both  $U$ -vertices are selected. Since the even  $U$ -vertex already meets the selected even hub, its  $H$ -partner must be omitted. Thus
+$$v_{2j}=v_{2j+1}=1,\qquad
+a_{2j}=0,\qquad a_{2j+1}=1.
+\tag{6}$$
+For a tight cell with  $z_j=1$ : the even  $U$ -vertex must be omitted, since its  $X$ -partner and its hub are both selected. Tightness therefore forces
+$$v_{2j}=0,\qquad a_{2j}=1,
+\qquad a_{2j+1}+v_{2j+1}=1.
+\tag{7}$$
+Now consider two consecutive tight cells within the open block. The second cannot have  $z=1$ . To prove this, consider its predecessor.If the predecessor has  $z=0$ , equation (6) says its odd  $H$ -vertex is selected and already matched to its selected  $U$ -partner. The second cell, by (7), has its even  $H$ -vertex selected. The  $H$ -edge between these cells gives the predecessor’s odd  $H$ -vertex a second selected neighbor.If the predecessor also has  $z=1$ , the remaining  $X$ -edge between the cells joins two selected  $X$ -vertices. It therefore forces the predecessor’s odd  $U$ -vertex to be omitted. Tightness then forces its odd  $H$ -vertex to be selected. Its even  $H$ -vertex is also selected by (7), as is the second cell’s even  $H$ -vertex. Again, the predecessor’s odd  $H$ -vertex has two selected neighbors.Both possibilities are impossible.Apply this observation to cells  $0,1$  and to cells  $1,2$ . Under the assumption that all three cells are tight, we obtain
+$$z_1=z_2=0.$$
+Equation (6) then selects both  $u_2$  and  $u_4$ . These are two selected neighbors of the selected even hub, a contradiction.Therefore at least one cell is not tight. Since the cell weights are integers,
+$$C_0+C_1+C_2\le8,$$
+and hence
+$$\sigma=3+C_0+C_1+C_2+1\le12.
+\tag{8}$$
+Case  $q=2$ : score at most  $13$ , with equality only for  $A$ First observe that a tight cell cannot have  $z_j=0$ . Such a cell would select both  $U$ -vertices and one  $H$ -vertex. That selected  $H$ -vertex’s  $U$ -partner would meet both its selected hub and its selected  $H$ -partner, contradicting dissociation.Thus every tight cell has  $z_j=1$ . Because both hubs are selected, both  $U$ -vertices of such a cell are omitted. Tightness then forces both  $H$ -vertices selected.Consequently, two consecutive tight cells are impossible: they would select four consecutive  $H$ -vertices. In particular, among the three cells there are at most two tight ones. Using  $C_j\le3$ , this gives
+$$C_0+C_1+C_2\le8,$$
+so
+$$\sigma=3+C_0+C_1+C_2+2\le13.
+\tag{9}$$
+Suppose equality holds. Then
+$$C_0+C_1+C_2=8.$$
+There must be exactly two tight cells, with the remaining cell having weight two. Since the tight cells cannot be consecutive, they must be the outer cells:
+$$C_0=C_2=3,\qquad C_1=2.$$
+The outer tight cells force
+$$z_0=z_2=1,$$
+
+$$h_0,h_1,h_4,h_5\in D,
+\qquad
+u_0,u_1,u_4,u_5\notin D.$$
+Because  $h_1$  already meets selected  $h_0$ , it forces  $h_2\notin D$ . Similarly, the selected edge  $h_4h_5$  forces  $h_3\notin D$ .If  $z_1=1$ , both middle  $U$ -vertices would be omitted, because their hubs and  $X$ -partners are selected. With  $h_2,h_3$  already omitted, this would give  $C_1=1$ , contrary to  $C_1=2$ .Therefore  $z_1=0$ , and  $C_1=2$  forces
+$$u_2,u_3\in D.$$
+The block is consequently exactly
+$$\begin{aligned}
+D\cap H&=\{h_0,h_1,h_4,h_5\},\\
+D\cap U&=\{u_2,u_3\},\\
+D\cap X&=\{x_0,x_1,x_4,x_5\},\\
+D\cap Y&=\{y_0,y_1\}.
+\end{aligned}$$
+This is type  $A$ .Conversely, this type is valid in the open block: its selected edges are exactly
+$$h_0h_1,\qquad h_4h_5,\qquad u_2y_0,\qquad u_3y_1,$$
+and its four selected  $X$ -vertices are isolated there. It has twelve selected vertices and one wholly omitted original pair, so its score is  $13$ .This proves the open-block lemma (4).4. The boundary inequality and the all- $k$  upper boundReturn to a normalized dissociation set in the closed graph  $Q_k$ . Let
+$$\alpha_b=
+\begin{cases}
+1,&\text{block }b\text{ is type }A,\\
+0,&\text{otherwise}.
+\end{cases}$$
+The open-block lemma gives
+$$\sigma_b\le12+\alpha_b.
+\tag{10}$$
+In a type- $A$  block, both  $h_0$  and  $h_5$  are selected and already internally matched:
+$$h_0h_1,\qquad h_4h_5.$$
+If blocks  $b$  and  $b+1$  were both type  $A$ , the original seam
+$$h_{6b+5}h_{6(b+1)}$$
+would give its endpoints a second selected neighbor. Therefore, with block indices cyclically interpreted,
+$$\alpha_b+\alpha_{b+1}\le1.
+\tag{11}$$
+Equations (10)–(11) give the explicit boundary-controlled inequality
+$$\boxed{\sigma_b+\sigma_{b+1}\le25.}
+\tag{12}$$
+Equivalently, summing (11) shows
+$$2\sum_{b=0}^{k-1}\alpha_b\le k,
+\qquad
+\sum_{b=0}^{k-1}\alpha_b\le\left\lfloor\frac{k}{2}\right\rfloor.$$
+Because the block scores add to the original objective,
+$$\begin{aligned}
+|D|+m(D)
+&=\sum_{b=0}^{k-1}\sigma_b\\
+&\le12k+\sum_{b=0}^{k-1}\alpha_b\\
+&\le12k+\left\lfloor\frac{k}{2}\right\rfloor.
+\end{aligned}
+\tag{13}$$
+The same reasoning includes the small cases:For  $k=1$ , the seam joins  $h_5$  to  $h_0$  of the same block. Type  $A$  is impossible, so  $\alpha_0=0$ . In (11), this is  $2\alpha_0\le1$ .For  $k=2$ , both blocks cannot be type  $A$ , giving at most one exceptional block.Finally, the normalization preserved  $|D|+m(D)$ . Thus (13) holds for every original dissociation set, including those with singleton selected  $X$ -endpoints.5. Attainment and the exact valueYour supplied construction attains the bound.Type  $A$  contributes score  $13$ , and type  $B$  contributes score  $12$ . Every cyclic word in these types with no adjacent  $A$  gives a dissociation set, because every restored seam then has an omitted endpoint.For even  $k=2r$ , use
+$$(AB)^r.$$
+For odd  $k=2r+1$ , use
+$$(AB)^rB.$$
+These words contain exactly  $\lfloor k/2\rfloor$  copies of  $A$ , giving
+$$13\left\lfloor\frac{k}{2}\right\rfloor
++
+12\left(k-\left\lfloor\frac{k}{2}\right\rfloor\right)
+=
+12k+\left\lfloor\frac{k}{2}\right\rfloor.$$
+Together with the upper bound,
+$$\boxed{
+\max_{D\text{ dissociating in }Q_k}
+\bigl(|D|+m(D)\bigr)
+=
+12k+\left\lfloor\frac{k}{2}\right\rfloor
+\qquad(k\ge1).
+}$$
+The proof uses only normalization, the two-index cell inequality, its elementary equality conditions, and the actual  $H$ -seams. No enumeration or optimization result is a premise.6. Consequence for the attached Heawood familyLet  $G_k$  denote the described graph with one broken Heawood block attached at each of the  $3k$  original deleted pairs. The established saturated-port charge and the proved core bound give
+$$\beta_2(G_k)
+\le21k+\max_D\bigl(|D|+m(D)\bigr)
+=
+33k+\left\lfloor\frac{k}{2}\right\rfloor.$$
+Together with the full-graph lower construction stated in the question, this yields
+$$\boxed{\beta_2(G_k)=33k+\left\lfloor\frac{k}{2}\right\rfloor.}$$
+The distinction concerning  $SF_2$  remains essential. The literal forming selection gives  $SF_2(G_k)\ge36k$ , while cubic compensation gives only
+$$7SF_2(G_k)
+\le
+3(62k)+2\left(33k+\left\lfloor\frac{k}{2}\right\rfloor\right)
+=
+252k+2\left\lfloor\frac{k}{2}\right\rfloor.$$
+Thus the resulting conclusion is
+$$\boxed{
+36k\le SF_2(G_k)
+\le
+36k+
+\left\lfloor
+\frac{2\lfloor k/2\rfloor}{7}
+\right\rfloor.
+}$$
+The core theorem settles the exact dissociation number; it does not establish  $SF_2(G_k)=36k$  for all  $k$ .
