@@ -81,6 +81,15 @@ proofs, twelve symbolic Lean audits and independent controls are available;
 the full equality characterization and finite cardinal summation have
 written proofs rather than complete Lean formalizations.
 
+A [port-deficiency theorem and exact connected family](docs/CUBIC_STABILITY_PORTS.md)
+now identify a stability boundary: for every k>=1 there is a two-connected
+cubic bipartite graph on 14+20k vertices with SF_2=8+12k and
+beta_2=7+12k. These graphs attain the unproved general candidate
+7SF_2<=3n+2beta_2. Their positive gap stays one while SF_2/n tends to3/5,
+so positive gap alone permits no uniformly smaller order coefficient.
+The proof counts port deficiencies once; literal-star controls and three
+independent integer-optimization checks support the general written proof.
+
 ## Results and verification
 
 | Result | Scope | Verification |

@@ -213,6 +213,13 @@ optimal. The exact Heawood family has gap ceil(r/2) on 14r vertices.
 Its grid analogue, planar extremal cases, and the optimal cubic gap bound
 remain separate questions.
 
+The [subsequent port-deficiency construction](CUBIC_STABILITY_PORTS.md)
+gives two-connected cubic bipartite graphs on14+20kvertices with
+SF_2=8+12k and beta_2=7+12k. They have positive gap and regular slack two,
+and their SF_2/n ratio approaches3/5. Thus the positive-gap endpoint
+exclusion does not imply any uniformly smaller order coefficient. They
+attain, but do not prove, the general stability candidate7SF_2<=3n+2beta_2.
+
 ## A sharp comparison with upper domination
 
 For every nonempty d-regular bipartite graph, d>=1,
