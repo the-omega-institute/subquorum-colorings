@@ -1,0 +1,39 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T21:00:49.077994+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3936.\nPages active:                                 249417.\nPages inactive:                               245273.\nPages speculative:                              3114.\nPages throttled:                                   0.\nPages wired down:                             239366.\nPages purgeable:                                1253.\n\"Translation faults\":                    15248625180.\nPages copy-on-write:                       930149632.\nPages zero filled:                        6288402417.\nPages reactivated:                        2839785432.\nPages purged:                              134580634.\nFile-backed pages:                            205500.\nAnonymous pages:                              292304.\nPages stored in compressor:                  1516211.\nPages occupied by compressor:                 265793.\nDecompressions:                           2257372732.\nCompressions:                             2671658375.\nPageins:                                  3879403177.\nPageouts:                                   10949024.\nSwapins:                                    25147519.\nSwapouts:                                   31484550.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 3.695,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CubicStability.lean",
+      "seconds": 0.628,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/RegularCompensation.lean",
+      "seconds": 0.746,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingRegularCompensationAudit.lean",
+      "seconds": 0.392,
+      "stdout": "'StarForming.RegularCompensation.unused_capacity_pays_leaf_loss' depends on axioms: [propext, Quot.sound]\n'StarForming.RegularCompensation.weighted_compensation' depends on axioms: [propext, Quot.sound]\n'StarForming.RegularCompensation.regular_compensation' depends on axioms: [propext, Quot.sound]\n'StarForming.RegularCompensation.regular_gap_bound' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 703004672,
+  "scope": "Four symbolic lemmas: unused capacity for arbitrary maximum degree>=3, weighted deficit accounting, regular coefficient conversion and arbitrary-degree integer gap arithmetic. Graph exchange, finite cardinal summation, construction and dissociation cap retain complete written proofs and independent controls; no full Lean graph theorem claimed."
+}

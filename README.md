@@ -81,12 +81,28 @@ proofs, twelve symbolic Lean audits and independent controls are available;
 the full equality characterization and finite cardinal summation have
 written proofs rather than complete Lean formalizations.
 
+The [general bipartite compensation theorem](docs/SHARP_REGULAR_BIPARTITE_GAP.md)
+proves sum_(v in S)(deg(v)+Delta+1)<=Delta n+2beta_2 for every minimal
+forming set in every bipartite graph with maximum degree at most Delta>=3.
+For d-regular bipartite graphs it gives(2d+1)SF_2<=dn+2beta_2 and the
+sharp gap bound floor(n/(4d+2)), for every d>=3. An explicit two-connected
+graph of order4d+2 attains both. For every d>=4, the
+[connected sharp-gap construction](docs/REGULAR_CONNECTED_SHARP_GAPS.md)
+attains the same coefficient at arbitrarily large orders and gaps:
+n=(4d+2)r, beta_2=(2d+1)r and SF_2=(2d+2)r. Its broken-block cap is
+proved and summed without interface compensation; an explicit eight-set
+explains why the identical cubic port argument fails. General proofs,
+four additional symbolic Lean audits, arbitrary bipartite controls and
+independent connected-instance optima are provided. Oracle reviews of
+the two new arguments remain pending at this checkpoint.
+
 The [sharp cubic bipartite compensation theorem](docs/SHARP_CUBIC_BIPARTITE_GAP.md)
 proves7SF_2<=3n+2beta_2 for all finite simple cubic bipartite graphs,
 and the sharp gap bound SF_2-beta_2<=floor(n/14). Two explicit dissociation
 exchanges pay2(|S|-beta_2) from3n-5|S| for every minimal selection,
 including selected isolates. Heawood and its disjoint unions attain the
-gap coefficient. Thirteen symbolic Lean audits and31,790corrected
+gap coefficient. Its focused Oracle review has accepted the complete
+universal argument. Thirteen symbolic Lean audits and31,790corrected
 exchange controls pass; the graph-level cardinal proof is written.
 The [earlier weaker compensation proof](docs/CUBIC_STABILITY_COMPENSATION.md)
 and its3n/34bound remain available as intermediate results.

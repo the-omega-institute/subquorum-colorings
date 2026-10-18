@@ -20,7 +20,7 @@ Consequently
 The coefficient1/14 is sharp, attained by the Heawood graph and every
 disjoint union of its copies. The linear inequality is also attained by
 arbitrarily large two-connected cubic bipartite graphs from the earlier
-port construction. The optimal asymptotic gap coefficient specifically
+[port construction](CUBIC_STABILITY_PORTS.md). The optimal asymptotic gap coefficient specifically
 within the two-connected class is not determined here.
 
 A two-star-forming set covers every outside vertex x by a non-induced
@@ -44,6 +44,7 @@ contain both high vertices v,w. At least one, say v, is adjacent to x;
 a selected neighbor of v other than w gives a covering star avoiding w,
 a contradiction. Choose an injective high witness map f:H->T.
 
+Every outside vertex has at least one selected neighbor, by formation.
 Every witness has selected degree one or two, since three selected
 neighbors would preserve a centered star after a single deletion.
 
@@ -209,5 +210,9 @@ same sharp theorem. Its response and scope are preserved in
 `reviews/2026-10-19-cubic-compensation-oracle-response.txt` and
 `../output/cubic-compensation-oracle-review.json`. The local variant above
 had already been written and submitted for a separate focused review
-before that response was read. That focused review remains active at
-this checkpoint; its acceptance is not presumed.
+before that response was read. The focused review has now also accepted
+the local variant, its full universal inequality and Heawood sharpness.
+Its response and precise scope are recorded in
+`reviews/2026-10-19-sharp-cubic-gap-oracle-response.txt` and
+`../output/sharp-cubic-gap-oracle-review.json`. The earlier connected-family
+proofs were outside that review input and remain separately referenced.

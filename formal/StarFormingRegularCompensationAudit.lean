@@ -1,0 +1,6 @@
+import StarForming.RegularCompensation
+
+#print axioms StarForming.RegularCompensation.unused_capacity_pays_leaf_loss
+#print axioms StarForming.RegularCompensation.weighted_compensation
+#print axioms StarForming.RegularCompensation.regular_compensation
+#print axioms StarForming.RegularCompensation.regular_gap_bound

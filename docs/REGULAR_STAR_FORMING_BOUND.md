@@ -214,6 +214,12 @@ gap coefficient 1/10 is optimal. The subsequent
 7SF_2<=3n+2beta_2 for all cubic bipartite graphs and improves the gap
 bound to the sharp floor(n/14), including selections with isolates.
 The exact Heawood family has gap ceil(r/2) on 14r vertices.
+The later [general bipartite exchange](SHARP_REGULAR_BIPARTITE_GAP.md)
+proves(2d+1)SF_2<=dn+2beta_2 and the sharp gap floor(n/(4d+2)) for every
+d>=3. Its weighted form holds in arbitrary bipartite graphs. For d>=4,
+[connected rings](REGULAR_CONNECTED_SHARP_GAPS.md) attain that coefficient
+at unbounded orders and gaps; the cubic port deletion has a distinct
+local obstruction and does not inherit that ring proof.
 Its grid analogue, planar extremal cases, and the optimal asymptotic gap
 specifically under two-connectivity remain separate questions.
 
