@@ -1,0 +1,4056 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local": {
+    "nine_sets": 2002,
+    "all_flag_perturbations": 42042,
+    "line_perturbations": 5145,
+    "dense_sets": 3473,
+    "upward_closure_deletions": 70796,
+    "full_graph_candidate_counts": [
+      {
+        "points": 2,
+        "robust": 5,
+        "count": 21
+      },
+      {
+        "points": 3,
+        "robust": 4,
+        "count": 168
+      },
+      {
+        "points": 3,
+        "robust": 6,
+        "count": 77
+      },
+      {
+        "points": 4,
+        "robust": 5,
+        "count": 672
+      },
+      {
+        "points": 4,
+        "robust": 8,
+        "count": 63
+      },
+      {
+        "points": 5,
+        "robust": 5,
+        "count": 672
+      },
+      {
+        "points": 5,
+        "robust": 8,
+        "count": 63
+      },
+      {
+        "points": 6,
+        "robust": 4,
+        "count": 168
+      },
+      {
+        "points": 6,
+        "robust": 6,
+        "count": 77
+      },
+      {
+        "points": 7,
+        "robust": 5,
+        "count": 21
+      }
+    ],
+    "broken_block_minimal_counts": {
+      "7": 262,
+      "6": 45,
+      "8": 68
+    },
+    "broken_block_SF2_finite_exact": 8
+  },
+  "ambient": {
+    "graphs": 32,
+    "core_and_outside_selections": 18144,
+    "safe_deletions_checked_with_literal_stars": 50661,
+    "arbitrary_external_edges": true,
+    "restored_incidence_allowed": true
+  },
+  "interfaces": [
+    {
+      "copies": 1,
+      "port_edges": 0,
+      "minimal_set_size": 8
+    },
+    {
+      "copies": 2,
+      "port_edges": 2,
+      "minimal_set_size": 16
+    },
+    {
+      "copies": 3,
+      "port_edges": 6,
+      "minimal_set_size": 24
+    },
+    {
+      "copies": 4,
+      "port_edges": 10,
+      "minimal_set_size": 32
+    },
+    {
+      "copies": 5,
+      "port_edges": 14,
+      "minimal_set_size": 40
+    },
+    {
+      "copies": 6,
+      "port_edges": 23,
+      "minimal_set_size": 48
+    },
+    {
+      "copies": 7,
+      "port_edges": 28,
+      "minimal_set_size": 56
+    },
+    {
+      "copies": 8,
+      "port_edges": 50,
+      "minimal_set_size": 64
+    },
+    {
+      "copies": 9,
+      "port_edges": 63,
+      "minimal_set_size": 72
+    },
+    {
+      "copies": 10,
+      "port_edges": 76,
+      "minimal_set_size": 80
+    },
+    {
+      "copies": 11,
+      "port_edges": 100,
+      "minimal_set_size": 88
+    },
+    {
+      "copies": 12,
+      "port_edges": 109,
+      "minimal_set_size": 96
+    },
+    {
+      "copies": 13,
+      "port_edges": 111,
+      "minimal_set_size": 104
+    },
+    {
+      "copies": 14,
+      "port_edges": 143,
+      "minimal_set_size": 112
+    },
+    {
+      "copies": 15,
+      "port_edges": 169,
+      "minimal_set_size": 120
+    },
+    {
+      "copies": 16,
+      "port_edges": 181,
+      "minimal_set_size": 128
+    }
+  ],
+  "general_degree3": {
+    "labeled_graphs": 842,
+    "maximum_order": 5,
+    "perturbations": 112292
+  },
+  "interaction_formulas": [
+    {
+      "copies": 1,
+      "port_edges": [],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 8,
+      "exact_gap": 0
+    },
+    {
+      "copies": 1,
+      "port_edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 7,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [],
+      "loop_aware_independence": 2,
+      "exact_port_optimization": 16,
+      "exact_gap": 0
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 15,
+      "exact_gap": 1
+    },
+    {
+      "copies": 2,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 14,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 21,
+      "exact_gap": 3
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 21,
+      "exact_gap": 3
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "loop_aware_independence": 2,
+      "exact_port_optimization": 23,
+      "exact_gap": 1
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 2,
+      "exact_port_optimization": 23,
+      "exact_gap": 1
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 21,
+      "exact_gap": 3
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 21,
+      "exact_gap": 3
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 21,
+      "exact_gap": 3
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 21,
+      "exact_gap": 3
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 3,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 22,
+      "exact_gap": 2
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "loop_aware_independence": 2,
+      "exact_port_optimization": 30,
+      "exact_gap": 2
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 28,
+      "exact_gap": 4
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "loop_aware_independence": 1,
+      "exact_port_optimization": 29,
+      "exact_gap": 3
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "loop_aware_independence": 0,
+      "exact_port_optimization": 28,
+      "exact_gap": 4
+    },
+    {
+      "copies": 4,
+      "port_edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "loop_aware_independence": 2,
+      "exact_port_optimization": 30,
+      "exact_gap": 2
+    }
+  ],
+  "reciprocal_realizations": [
+    {
+      "copies": 1,
+      "interaction_edges": 0,
+      "interaction_independence": 1,
+      "exact_gap": 0,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 7
+    },
+    {
+      "copies": 2,
+      "interaction_edges": 1,
+      "interaction_independence": 1,
+      "exact_gap": 1,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 14
+    },
+    {
+      "copies": 3,
+      "interaction_edges": 2,
+      "interaction_independence": 2,
+      "exact_gap": 1,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 21
+    },
+    {
+      "copies": 4,
+      "interaction_edges": 3,
+      "interaction_independence": 2,
+      "exact_gap": 2,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 28
+    },
+    {
+      "copies": 5,
+      "interaction_edges": 4,
+      "interaction_independence": 3,
+      "exact_gap": 2,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 35
+    },
+    {
+      "copies": 6,
+      "interaction_edges": 9,
+      "interaction_independence": 2,
+      "exact_gap": 4,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 42
+    },
+    {
+      "copies": 7,
+      "interaction_edges": 10,
+      "interaction_independence": 3,
+      "exact_gap": 4,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 49
+    },
+    {
+      "copies": 8,
+      "interaction_edges": 13,
+      "interaction_independence": 4,
+      "exact_gap": 4,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 56
+    },
+    {
+      "copies": 9,
+      "interaction_edges": 15,
+      "interaction_independence": 4,
+      "exact_gap": 5,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 63
+    },
+    {
+      "copies": 10,
+      "interaction_edges": 20,
+      "interaction_independence": 4,
+      "exact_gap": 6,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 70
+    },
+    {
+      "copies": 11,
+      "interaction_edges": 21,
+      "interaction_independence": 4,
+      "exact_gap": 7,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 77
+    },
+    {
+      "copies": 12,
+      "interaction_edges": 23,
+      "interaction_independence": 5,
+      "exact_gap": 7,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 84
+    },
+    {
+      "copies": 13,
+      "interaction_edges": 29,
+      "interaction_independence": 5,
+      "exact_gap": 8,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 91
+    },
+    {
+      "copies": 14,
+      "interaction_edges": 35,
+      "interaction_independence": 5,
+      "exact_gap": 9,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 98
+    },
+    {
+      "copies": 15,
+      "interaction_edges": 39,
+      "interaction_independence": 6,
+      "exact_gap": 9,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 105
+    },
+    {
+      "copies": 16,
+      "interaction_edges": 41,
+      "interaction_independence": 6,
+      "exact_gap": 10,
+      "two_connected": true,
+      "bipartite": true,
+      "matching_size": 112
+    }
+  ],
+  "hypothesis_and_sharpness": {
+    "sharp_degree3_budgets": [
+      4,
+      2
+    ],
+    "forbidden_nonport_attachments_allow_minimal_core_selection": 14
+  },
+  "scope": "Independent finite controls of the written Fano/perturbation proof. Exact global SF=8r follows from the general local cap and rewiring argument, not extrapolation from these checks."
+}

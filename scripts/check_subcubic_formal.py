@@ -17,12 +17,14 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--exact', action='store_true')
     parser.add_argument('--cubic', action='store_true')
+    parser.add_argument('--cubic-exact', action='store_true')
     arguments = parser.parse_args()
-    if arguments.exact and arguments.cubic:
+    if sum([arguments.exact, arguments.cubic, arguments.cubic_exact]) > 1:
         parser.error('Choose one certificate extension per run.')
     root = Path(__file__).resolve().parents[1]
     formal = root / 'formal'
-    build = root / ('build/cubic-formal' if arguments.cubic else
+    build = root / ('build/cubic-exact-formal' if arguments.cubic_exact else
+                    'build/cubic-formal' if arguments.cubic else
                     'build/subcubic-exact-formal' if arguments.exact else 'build/subcubic-formal')
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     executable = arguments.lean.resolve()
@@ -37,6 +39,10 @@ def main():
     if arguments.cubic:
         modules = ['StarForming/SubcubicCertificate.lean', 'StarForming/CubicCertificate.lean',
                    'StarFormingCubicAudit.lean']
+    if arguments.cubic_exact:
+        modules = ['StarForming/SubcubicCertificate.lean', 'StarForming/SubcubicExact.lean',
+                   'StarForming/CubicCertificate.lean', 'StarForming/CubicDense.lean',
+                   'StarForming/CubicExact.lean', 'StarFormingCubicExactAudit.lean']
     for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -54,7 +60,8 @@ def main():
                            exit_code=result.returncode, stdout=result.stdout, stderr=result.stderr))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != (9 if arguments.cubic else 5 if arguments.exact else 10):
+    if len(declarations) != (8 if arguments.cubic_exact else 9 if arguments.cubic else
+                             5 if arguments.exact else 10):
         raise RuntimeError('Missing audit declarations')
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     for declaration, axioms in declarations:
@@ -69,6 +76,8 @@ def main():
         receipt['scope'] = 'Std-only: generic supported deletion, fixed ten-vertex dense-core certificate, lifting through an induced embedding, per-core cap for arbitrary outside graphs attached only at labels3,11, and disjoint-core arithmetic accounting. Global J_r embedding, attainment and exact SF equality are written proofs, not asserted to be fully formalized here. The finite certificate supplements the analytic case proof.'
     if arguments.cubic:
         receipt['scope'] = 'Std-only: generic star-formation and inclusion-minimality invariance under arbitrary rewiring of edges outside a fixed selection; explicit Heawood graph simplicity/cubic degree, eight-set formation, deletion failures, minimality and cardinality; conditional dense-block and gap arithmetic. Fano dissociation geometry, saturated-port lemma, cyclic composition, connectivity, girth and global attainment have written proofs, not full new Lean formalizations.'
+    if arguments.cubic_exact:
+        receipt['scope'] = 'Std-only: broken Heawood simplicity, efficient Boolean star reflection and supported-deletion reflection, all16384mask dense-core certificate split into64 kernel-checked chunks, lifting local stars through an embedding, arbitrary-outside eight-vertex cap with unrestricted port edges, disjoint-block accounting and exact gap arithmetic. The analytic Fano/degree-three perturbation proof is independent of the finite certificate. Concrete all-block embedding, global SF attainment and exact composition identity have written proofs; those full graph-level statements are not claimed fully newly formalized.'
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))

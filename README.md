@@ -55,11 +55,14 @@ per-core cap and the new arithmetic accounting.
 The [cubic construction](docs/CUBIC_STAR_FORMING_GAPS.md) strengthens the
 regularity restriction: for every r>=1 there is a two-connected cubic
 bipartite graph F_r of girth six and order 14r with Gamma=alpha=7r,
-beta_2=7r+floor(r/2), and SF_2>=8r. Thus its gap is at least order/28.
+beta_2=7r+floor(r/2), and SF_2=8r. Its exact gap is ceil(r/2), at least order/28.
 A Fano-plane saturated-port lemma gives the exact dissociation count, and
 rewiring only outside the fixed selected set preserves its minimality.
-Full written proofs, independent controls and nine further Lean audits
-are available; exact SF_2 for the family is not claimed. The
+The [exact composition theorem](docs/EXACT_CUBIC_COMPOSITION.md) supplies
+the matching upper bound even for arbitrary port interfaces, and an
+interaction graph Q gives beta_2=7r+alpha_0(Q), where looped vertices are
+excluded from independent sets. The exact gap is its vertex-cover number.
+Written proofs and independent controls are available. The
 [literature check](docs/STAR_FORMING_LITERATURE_20261019.md) also identifies
 Bhattacharjee's external bipartite/planar-bipartite complexity theorem,
 which narrows the remaining complexity agenda to additional restrictions.
@@ -79,7 +82,8 @@ which narrows the remaining complexity agenda to additional restrictions.
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
 | Exact star-forming composition | Every finite b1-to-a1 interface relation on the fixed ten-vertex copies; SF_2=6r and beta_2=5r | General written proof; Lean SF bound and attainment; local finite controls |
 | Subcubic star-forming gaps | Two-connected bipartite J_r, even r>=2; beta_2=13r/2, SF_2=7r, gap=order/22; arbitrary-outside core cap; cycle equality gives the degree threshold | General written proofs; standalone Lean certificates; independent deletion controls and full J_2 enumeration |
-| Cubic star-forming gaps | Two-connected cubic bipartite F_r, every r>=1; girth six, beta_2=7r+floor(r/2), SF_2>=8r, gap>=order/28 | General Fano and interface proofs; Lean rewiring invariance and base minimality; independent base enumeration and r=1..32 controls |
+| Exact Heawood-port composition | Arbitrary simple graph on the ports of r broken Heawood blocks; SF_2=8r, beta_2=7r+alpha_0(Q), gap=the interaction graph's vertex-cover number | General geometric and saturation proofs; Lean arbitrary-outside cap; independent local, ambient and port-state controls |
+| Cubic star-forming gaps | Two-connected cubic bipartite F_r, every r>=1; girth six, beta_2=7r+floor(r/2), SF_2=8r, exact gap=ceil(r/2) | General Fano and interface proofs; standalone Lean certificates; independent base and family controls |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;

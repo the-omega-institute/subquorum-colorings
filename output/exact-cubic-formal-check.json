@@ -1,0 +1,51 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T19:23:36.277146+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checks": [
+    {
+      "module": "StarForming/SubcubicCertificate.lean",
+      "seconds": 81.268,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/SubcubicExact.lean",
+      "seconds": 43.837,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/CubicCertificate.lean",
+      "seconds": 4.19,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/CubicDense.lean",
+      "seconds": 34.454,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/CubicExact.lean",
+      "seconds": 2.526,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarFormingCubicExactAudit.lean",
+      "seconds": 0.368,
+      "exit_code": 0,
+      "stdout": "'StarForming.Cubic.broken_simple' depends on axioms: [propext]\n'StarForming.Cubic.starBool_correct' depends on axioms: [propext, Quot.sound]\n'StarForming.Cubic.safeBool_correct' depends on axioms: [propext, Quot.sound]\n'StarForming.Cubic.dense_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Cubic.lift_broken_star' depends on axioms: [propext]\n'StarForming.Cubic.ambient_heawood_cap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.Cubic.arbitrary_interface_accounting' depends on axioms: [propext, Quot.sound]\n'StarForming.Cubic.exact_cubic_gap' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "maximum_rss_bytes": 3335733248,
+  "scope": "Std-only: broken Heawood simplicity, efficient Boolean star reflection and supported-deletion reflection, all16384mask dense-core certificate split into64 kernel-checked chunks, lifting local stars through an embedding, arbitrary-outside eight-vertex cap with unrestricted port edges, disjoint-block accounting and exact gap arithmetic. The analytic Fano/degree-three perturbation proof is independent of the finite certificate. Concrete all-block embedding, global SF attainment and exact composition identity have written proofs; those full graph-level statements are not claimed fully newly formalized."
+}

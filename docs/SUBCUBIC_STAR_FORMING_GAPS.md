@@ -370,7 +370,8 @@ The exact SF_2(J_r)=7r is now proved in the
 bound for subcubic bipartite graphs and rectangular-grid equality remain
 separate questions. The later [cubic construction](CUBIC_STAR_FORMING_GAPS.md)
 now proves unbounded gaps in two-connected cubic bipartite graphs of girth
-six; its exact SF value and sharp universal cubic bounds remain open.
+six; its [exact SF value](EXACT_CUBIC_COMPOSITION.md) is now proved, while
+sharp universal cubic bounds remain open.
 No smallest-order
 or literature-priority claim is made. The original submitted sub-quorum
 manuscript is unchanged.

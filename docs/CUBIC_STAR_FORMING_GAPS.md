@@ -15,13 +15,17 @@ graph F_r, of order 14r and girth six, such that
 
     Gamma(F_r)=alpha(F_r)=7r,
     beta_2(F_r)=7r+floor(r/2),
-    SF_2(F_r)>=8r.
+    SF_2(F_r)=8r.
 
 Consequently
 
-    SF_2(F_r)-beta_2(F_r)>=ceil(r/2)>=|V(F_r)|/28.
+    SF_2(F_r)-beta_2(F_r)=ceil(r/2)>=|V(F_r)|/28.
 
-The exact SF value for the whole family is not needed or claimed here.
+The [exact-composition proof](EXACT_CUBIC_COMPOSITION.md) now supplies the
+matching SF upper bound. It proves at most eight selected vertices per
+broken-incidence block in every outside graph attached only at its ports,
+and exact SF=8r for arbitrary port interfaces. The original lower-bound
+argument below and dissociation calculation are unchanged.
 The coefficient 1/28 is not claimed optimal among cubic bipartite graphs.
 This result complements the earlier nonregular subcubic family; it does
 not improve that family's coefficient 1/22.
@@ -275,8 +279,8 @@ least six has at most 3(|V|-2)/2 edges, whereas F_r has 3|V|/2.
 This settles the existence of connected, indeed two-connected, cubic
 bipartite graphs with unbounded star-forming gaps, even with girth six.
 It supplies full general proofs of the saturation rule and interface
-accounting. Exact SF for this family, a sharp universal cubic gap bound,
-unbounded gaps under three-connectivity and rectangular-grid equality
+accounting. A sharp universal cubic gap bound, the full description of
+attaining minimal sets, unbounded gaps under three-connectivity and rectangular-grid equality
 remain separate questions. General bipartite and planar-bipartite threshold
 complexity is addressed by Bhattacharjee's external October 14 work;
 complexity restricted to cubic or two-connected graphs is not settled here.
