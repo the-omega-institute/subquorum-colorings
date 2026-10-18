@@ -67,6 +67,20 @@ Written proofs and independent controls are available. The
 Bhattacharjee's external bipartite/planar-bipartite complexity theorem,
 which narrows the remaining complexity agenda to additional restrictions.
 
+The [degree-capacity theorem](docs/REGULAR_STAR_FORMING_BOUND.md) now gives
+a sharp order bound for every d-regular graph: SF_2<=floor(dn/(2d-1)),
+including SF_2<=floor(3n/5) for all cubic graphs. Its general version tracks
+the degrees of selected vertices and charges pairwise disjoint failure
+witnesses. Triangle-free extremal sets have an explicit five-part structure;
+for bipartite regular graphs, attaining this bound forces beta_2=SF_2.
+It also gives the sharp comparison SF_2<=6 Gamma/5 for cubic bipartite graphs.
+The same weighted argument gives the rectangular-grid star-forming bound
+SF_2(P_m square P_l)<=floor((4ml+2m+2l)/7), for m,l>=2. This does not
+establish the separate bridge to sub-quorum colorings. General written
+proofs, ten symbolic Lean audits and independent controls are available;
+the full equality characterization and finite cardinal summation have
+written proofs rather than complete Lean formalizations.
+
 ## Results and verification
 
 | Result | Scope | Verification |
@@ -84,6 +98,7 @@ which narrows the remaining complexity agenda to additional restrictions.
 | Subcubic star-forming gaps | Two-connected bipartite J_r, even r>=2; beta_2=13r/2, SF_2=7r, gap=order/22; arbitrary-outside core cap; cycle equality gives the degree threshold | General written proofs; standalone Lean certificates; independent deletion controls and full J_2 enumeration |
 | Exact Heawood-port composition | Arbitrary simple graph on the ports of r broken Heawood blocks; SF_2=8r, beta_2=7r+alpha_0(Q), gap=the interaction graph's vertex-cover number | General geometric and saturation proofs; Lean arbitrary-outside cap; independent local, ambient and port-state controls |
 | Cubic star-forming gaps | Two-connected cubic bipartite F_r, every r>=1; girth six, beta_2=7r+floor(r/2), SF_2=8r, exact gap=ceil(r/2) | General Fano and interface proofs; standalone Lean certificates; independent base and family controls |
+| Sharp regular star-forming order bound | All d-regular graphs, d>=1: SF_2<=floor(dn/(2d-1)); exact triangle-free extremal structure; bipartite attainment forces beta_2=SF_2; weighted grid corollary | General injective witness-capacity proof; ten symbolic Lean audits; 1,300 finite graph controls |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;

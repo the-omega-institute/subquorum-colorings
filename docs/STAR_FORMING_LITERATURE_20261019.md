@@ -100,5 +100,35 @@ bipartite graphs of girth six and unbounded linear gap, with exact beta_2,
 and remains mathematically distinct from the equality gadget used for
 complexity. The original 2009 article and this external work do not constitute
 a complete literature search for that theorem. No first, smallest, or sharpest
-claim is made. Sharp universal cubic bounds, exact SF_2 of our family, and
-three-connectivity remain research questions.
+claim is made. Exact SF_2 of our Heawood-port family is now established in
+[the composition note](EXACT_CUBIC_COMPOSITION.md). The
+[degree-capacity theorem](REGULAR_STAR_FORMING_BOUND.md) gives the sharp
+order bound SF_2<=dn/(2d-1) for every d-regular graph, including the cubic
+bound 3n/5, with an irregular-degree version and a bipartite equality
+characterization. The optimal cubic gap coefficient and three-connectivity
+remain research questions.
+
+## Recheck for the degree-capacity theorem
+
+The original 2009 article was downloaded again and OCR inspected across
+all ten pages. Page208 was also inspected visually. Theorem2.3 is a
+minimum-degree upper bound for the lower parameter sf_k, not the upper
+parameter SF_k. It therefore does not supply or contradict the regular
+upper-SF bound. The article's final k-star-irredundance definition is relevant
+background for deletion witnesses but contains no stated regular upper-SF
+theorem. No historical priority is inferred from this source-specific check.
+
+Crossref identifies the earlier *H-forming sets in graphs* as
+[DOI10.1016/S0012-365X(02)00496-X](https://doi.org/10.1016/S0012-365X(02)00496-X).
+OpenAlex reports a bronze-open-access DOI landing page but no repository
+full-text location or direct PDF. The initial Crossref-provided Elsevier
+content route failed with HTTP400. The corrected `/article/pii/` route
+returned metadata confirming open-archive status, but its FULL view returned
+an authentication error; PDF content negotiation was restricted and the
+ScienceDirect PDF route returned HTTP403. The full 2003 text therefore
+remains uninspected. Crossref searches for
+upper star formation, P3-forming degree bounds and star irredundance did
+not return a directly matching theorem; metadata search is not evidence
+that none exists. The scope and possible prior appearance of the general
+order bound and equality characterization remain to be checked against
+that earlier source and subsequent citing papers before making a novelty claim.
