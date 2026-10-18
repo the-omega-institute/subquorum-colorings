@@ -47,7 +47,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != 8:
+    if len(declarations) != 13:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
         if set(filter(None, map(str.strip, axioms.split(',')))) - {
@@ -58,7 +58,7 @@ def main():
                    lean_version=version, active_lean_lake_before_run=active,
                    memory_before_run=memory, checks=checks,
                    maximum_rss_bytes=resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss,
-                   scope='Arbitrary-type symbolic leaf adjacent failure, leaf failure other neighbor isolation, triangle-free adjacent high failure other neighbor isolation; conditional residual accounting, two-exchange cardinal arithmetic, unconditional17s<=9n+2beta, gap3n/34 and no-isolate7s<=3n+2beta. Finite cardinal summation, injection counts and actual graph exchange construction retain full written proofs and independent controls; the graph-level theorem is not claimed fully Lean-formalized.')
+                   scope='Arbitrary-type symbolic leaf adjacent failure, leaf failure other neighbor isolation, triangle-free adjacent high failure other neighbor isolation, shared leaf/high witness has its unique good support as owner; conditional residual accounting and two-exchange cardinal arithmetic, including corrected sharp leaf budget and exchange accounting,7s<=3n+2beta and gap n/14. Prior17s/3n-over34 arithmetic retained. Finite cardinal summation, injection counts and actual graph exchange construction retain full written proofs and independent controls; the graph-level theorem is not claimed fully Lean-formalized.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

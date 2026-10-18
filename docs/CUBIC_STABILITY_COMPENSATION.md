@@ -1,10 +1,11 @@
 # Cubic bipartite compensation and the isolated-vertex residual
 
-19 October 2026. The sharp candidate `7SF_2<=3n+2beta_2` remains open in
-general. This note proves it whenever a maximum minimal star-forming set
-has no selected-isolated vertices, and proves a weaker unconditional
-stability inequality and a gap bound `3n/34` for all cubic bipartite graphs.
-The arguments are general; finite controls only check them.
+19 October 2026. The subsequent [sharp exchange theorem](SHARP_CUBIC_BIPARTITE_GAP.md)
+now proves `7SF_2<=3n+2beta_2` and the sharp gap bound `n/14` without
+restricting selected isolates. This note retains the earlier weaker
+`3n/34` argument, its correct isolate-incidence accounting and the
+obstruction that motivated the corrected exchange. These are general
+proofs; finite controls only check them.
 
 ## Statement
 
@@ -25,8 +26,9 @@ If some maximum-cardinality minimal set has z=0, then
 
 The coefficient `3/34` in (2) is an improved universal upper bound relative
 to the earlier `n/10` consequence of the regular order bound; it is not
-claimed sharp. The unrestricted candidate (3), which would yield n/14,
-is not settled here. These are bounds on SF_2, not sub-quorum improvements.
+claimed sharp. The unrestricted inequality (3) and gap n/14 are now
+proved by the separate corrected exchange. These are bounds on SF_2,
+not sub-quorum improvements.
 
 ## Failure witnesses and exact slack
 
@@ -172,11 +174,12 @@ balanced parts, so beta>=n/2. With gap=s-beta this gives
 
 If an attaining set has z=0, the first inequality in (1) instead gives
 7s<=3n+2beta, proving (3) under that explicit structural hypothesis.
-The general remaining difficulty is the isolate-incidence budget (6):
+The limitation of this original exchange is the isolate-incidence budget (6):
 up to three different high failures can use the edges at one isolate.
 Replacing `3z` by `z` is false even in the Heawood example. A proof of the
-unrestricted candidate must improve the exchange or track those joint
-configurations; it cannot assert that (6) has an injective map to I.
+unrestricted inequality requires another exchange; it cannot assert
+that (6) has an injective map to I. The corrected exchange in the
+sharp note resolves this by retaining only one isolate side.
 
 More generally, the full candidate follows whenever the chosen degree-two
 high and leaf witness incidences use at most z edges at I: replace (6)
@@ -189,8 +192,9 @@ The subsequent [isolate-tight structure theorem](CUBIC_ISOLATE_TIGHT_STRUCTURE.m
 characterizes every minimal selection with delta=z. Its selected high
 vertices form even cycles, possibly mixing degrees two and three, and
 its private outside vertices form a path/cycle system with endpoints
-at the degree-two high witnesses. This explicitly describes a remaining
-sharp-case class; it does not prove the full candidate for that class.
+at the degree-two high witnesses. This describes the residual class
+encountered in the original proof. The corrected exchange now covers
+that entire class and all other cubic bipartite selections.
 
 ## Validation scope
 
@@ -221,8 +225,9 @@ target inequality is attained by Heawood and is not refuted. This also
 explains why replacing the isolate-incidence count by an injection to I
 would be invalid.
 
-Eight symbolic Lean4.33.0 audits pass in4.901seconds, with peak child RSS
-687,276,032bytes. They prove arbitrary-type adjacent leaf failure,
+The initial eight symbolic Lean4.33.0 audits passed in4.901seconds, with
+peak child RSS687,276,032bytes; the current receipt extends them to
+thirteen audits including the sharp exchange accounting. They prove arbitrary-type adjacent leaf failure,
 isolation of the other neighbor in leaf/high failure configurations,
 residual and exchange arithmetic, and the conditional numerical corollaries.
 The complete finite graph exchange and counting proof remains written.
@@ -238,3 +243,10 @@ literal minimality. Their integer optima are respectively beta19or20,
 interleaved selected-degree-two/three cycles; no all-instance theorem
 is inferred. Inputs and representative witnesses are preserved in
 `output/cubic-tight-slack-exploration.json`.
+
+The [completed original Oracle audit](../output/cubic-compensation-oracle-review.json)
+accepts this proof and independently supplies a closely related sharp
+exchange variant proving7SF_2<=3n+2beta_2 and gap n/14. Its original
+response is archived. That response does not audit the later isolate-tight
+classification; the current local sharp exchange variant has a separate
+focused review request.

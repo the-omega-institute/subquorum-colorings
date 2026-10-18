@@ -81,25 +81,26 @@ proofs, twelve symbolic Lean audits and independent controls are available;
 the full equality characterization and finite cardinal summation have
 written proofs rather than complete Lean formalizations.
 
-The [cubic compensation theorem](docs/CUBIC_STABILITY_COMPENSATION.md)
-improves the universal cubic bipartite gap bound from n/10 to3n/34.
-For any minimal selection S of size s with z selected isolates and
-delta=3n-5s, two explicit dissociation exchanges prove
-2(s-beta_2)<=delta+2z<=3delta. If an attaining S has no isolates, the
-sharper stability candidate7SF_2<=3n+2beta_2 follows. The unrestricted
-candidate remains open. Eight symbolic Lean audits and independent
-literal-star/exchange controls pass; the graph-level counting proof is written.
+The [sharp cubic bipartite compensation theorem](docs/SHARP_CUBIC_BIPARTITE_GAP.md)
+proves7SF_2<=3n+2beta_2 for all finite simple cubic bipartite graphs,
+and the sharp gap bound SF_2-beta_2<=floor(n/14). Two explicit dissociation
+exchanges pay2(|S|-beta_2) from3n-5|S| for every minimal selection,
+including selected isolates. Heawood and its disjoint unions attain the
+gap coefficient. Thirteen symbolic Lean audits and31,790corrected
+exchange controls pass; the graph-level cardinal proof is written.
+The [earlier weaker compensation proof](docs/CUBIC_STABILITY_COMPENSATION.md)
+and its3n/34bound remain available as intermediate results.
 The [exact isolate-tight structure](docs/CUBIC_ISOLATE_TIGHT_STRUCTURE.md)
 reduces every case with delta=z to mixed selected even cycles and an
 outside path/cycle system. Degree balance forces both high classes to
 balance across the bipartition; a strict gap there needs selected isolates
-on both sides. This classification is a written theorem and does not
-settle the sharp exchange on all such systems.
+on both sides. The corrected exchange now covers all such systems as
+part of the full theorem.
 
 A [port-deficiency theorem and exact connected family](docs/CUBIC_STABILITY_PORTS.md)
 now identify a stability boundary: for every k>=1 there is a two-connected
 cubic bipartite graph on 14+20k vertices with SF_2=8+12k and
-beta_2=7+12k. These graphs attain the unproved general candidate
+beta_2=7+12k. These graphs attain the proved general inequality
 7SF_2<=3n+2beta_2. Their positive gap stays one while SF_2/n tends to3/5,
 so positive gap alone permits no uniformly smaller order coefficient.
 The proof counts port deficiencies once; literal-star controls and three

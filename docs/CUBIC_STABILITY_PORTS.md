@@ -143,19 +143,18 @@ the private-neighbor proof of the first fact. This completes (3). QED.
 
 ## Consequences for the stability programme
 
-The still-open proposed inequality for all cubic bipartite graphs is
+The subsequent sharp theorem for all cubic bipartite graphs is
 
     2(SF-beta)<=3n-5SF, equivalently 7SF<=3n+2beta.            (4)
 
 For G_k both sides of its first form are exactly two. Thus (3) gives
-arbitrarily large two-connected examples attaining this candidate.
-This does not prove (4) for other graphs.
+arbitrarily large two-connected examples attaining this inequality.
+Its general proof requires the separate corrected exchange.
 
-The subsequent [compensation proof](CUBIC_STABILITY_COMPENSATION.md)
-establishes (4) when an attaining selection has no selected isolates,
-and a weaker unconditional gap bound floor(3n/34). It identifies
-shared isolate incidences as the residual obstruction in its current
-exchange method; the general target (4) remains open.
+The [sharp compensation proof](SHARP_CUBIC_BIPARTITE_GAP.md)
+establishes (4) with no selected-isolate restriction and the sharp
+unconditional gap bound floor(n/14). It replaces the earlier exchange
+that was obstructed by shared isolate incidences.
 
 It does refute the stronger rule
 

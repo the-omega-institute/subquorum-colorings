@@ -115,4 +115,60 @@ theorem no_isolates_stability
     7 * size ≤ 3 * order + 2 * beta := by
   omega
 
+theorem shared_leaf_high_witness_has_good_support_owner {Vertex : Type}
+    (adjacency : Vertex → Vertex → Prop) (selection : Vertex → Prop)
+    (htrianglefree : ∀ outside first second, adjacency outside first →
+      adjacency outside second → adjacency first second → False)
+    (leaf support deleted outside : Vertex)
+    (hleaf : selection leaf) (hsupport : selection support)
+    (hleafedge : adjacency leaf support) (houtsideedge : adjacency outside leaf)
+    (hunique : ∀ neighbor, selection neighbor → adjacency leaf neighbor → neighbor = support)
+    (hhigh : High adjacency selection deleted)
+    (hfailure : Failure adjacency selection deleted outside) :
+    deleted = support ∧ ¬ adjacency outside deleted := by
+  classical
+  have hnotleaf : deleted ≠ leaf := by
+    intro hequal
+    subst deleted
+    obtain ⟨first, second, hf, hs, hne, ha, hb⟩ := hhigh.2
+    exact hne ((hunique first hf ha).trans (hunique second hs hb).symm)
+  have howner : deleted = support := by
+    apply Classical.byContradiction
+    intro hdifferent
+    exact hfailure.2 (Or.inr ⟨leaf, support,
+      ⟨hleaf, fun hequal => hnotleaf hequal.symm⟩,
+      ⟨hsupport, fun hequal => hdifferent hequal.symm⟩, houtsideedge, hleafedge⟩)
+  refine ⟨howner, ?_⟩
+  intro hedge
+  exact htrianglefree outside leaf support houtsideedge (howner ▸ hedge) hleafedge
+
+theorem sharp_leaf_budget
+    (leaves good unusedOne unusedTwo : Nat)
+    (hcount : leaves ≤ good + unusedOne + unusedTwo) :
+    leaves - good ≤ unusedOne + unusedTwo := by
+  omega
+
+theorem sharp_exchange_accounting
+    (size firstSize secondSize isolates leafLoss unusedOne unusedTwo defect beta : Nat)
+    (hsizes : 2 * size = firstSize + secondSize + isolates + leafLoss)
+    (hfirst : firstSize ≤ beta) (hsecond : secondSize ≤ beta)
+    (hleaves : leafLoss ≤ unusedOne + unusedTwo)
+    (hcapacity : isolates + 2 * unusedOne + unusedTwo ≤ defect) :
+    2 * size ≤ 2 * beta + defect := by
+  omega
+
+theorem sharp_cubic_stability
+    (order size beta defect : Nat)
+    (hdefect : 3 * order = 5 * size + defect)
+    (hcompensation : 2 * size ≤ 2 * beta + defect) :
+    7 * size ≤ 3 * order + 2 * beta := by
+  omega
+
+theorem sharp_cubic_gap_bound
+    (order size beta : Nat)
+    (hstability : 7 * size ≤ 3 * order + 2 * beta)
+    (hbalanced : order ≤ 2 * beta) :
+    14 * (size - beta) ≤ order := by
+  omega
+
 end StarForming.CubicStability

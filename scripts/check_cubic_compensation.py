@@ -110,10 +110,33 @@ def selection_control(adjacency, selected, totals, exact_beta=None):
         candidates.append(candidate)
     assert sum(map(len, candidates)) == 2 * len(selected) - len(bad_one) - len(bad_two) - excess
     assert 2 * (len(selected) - max(map(len, candidates))) <= defect + 2 * len(isolated)
+    leaf_loss = len(leaves) - len(good)
+    assert 0 <= leaf_loss <= residual_one + len(leaf_two) <= residual_one + residual_two
+    sharp_candidates = []
+    trimming = 0
+    for color in range(2):
+        candidate = selected - high - isolated
+        candidate |= {vertex for vertex in isolated if colors[vertex] != color}
+        candidate |= {vertex for vertex in high if colors[vertex] == color}
+        candidate |= {image for image in witness.values() if colors[image] != color}
+        for vertex in high:
+            if colors[vertex] != color:
+                continue
+            ordered_leaves = sorted(adjacency[vertex] & leaves)
+            removed_leaves = ordered_leaves[1:] if vertex in good else ordered_leaves
+            candidate -= set(removed_leaves)
+            trimming += len(removed_leaves)
+        assert dissociation(adjacency, candidate)
+        sharp_candidates.append(candidate)
+    assert trimming == leaf_loss
+    assert sum(map(len, sharp_candidates)) == 2 * len(selected) - len(isolated) - leaf_loss
+    assert 2 * (len(selected) - max(map(len, sharp_candidates))) <= defect
     if exact_beta is not None:
         assert 2 * (len(selected) - exact_beta) <= defect + 2 * len(isolated) <= 3 * defect
+        assert 7 * len(selected) <= 3 * len(vertices) + 2 * exact_beta
     totals['minimal_selections'] += 1
     totals['exchanges'] += 2
+    totals['sharp_exchanges'] += 2
     totals['no_isolate_selections'] += not isolated
     totals['selected_isolates'] += len(isolated)
     totals['high_witnesses'] += len(high)
@@ -121,7 +144,10 @@ def selection_control(adjacency, selected, totals, exact_beta=None):
     return dict(order=len(vertices), selected=len(selected), isolates=len(isolated),
                 defect=defect, adjacent_one=len(bad_one), adjacent_two=len(bad_two),
                 leaf_excess=excess, candidate_sizes=list(map(len, candidates)),
-                candidates=[sorted(candidate) for candidate in candidates])
+                candidates=[sorted(candidate) for candidate in candidates],
+                sharp_leaf_loss=leaf_loss,
+                sharp_candidate_sizes=list(map(len, sharp_candidates)),
+                sharp_candidates=[sorted(candidate) for candidate in sharp_candidates])
 
 
 def enumerate_graph(adjacency, totals):
@@ -147,6 +173,8 @@ def enumerate_graph(adjacency, totals):
     star_value = max(map(len, minimal))
     assert 17 * star_value <= 9 * order + 2 * beta
     assert 34 * (star_value - beta) <= 3 * order
+    assert 7 * star_value <= 3 * order + 2 * beta
+    assert 14 * (star_value - beta) <= order
     totals['graphs'] += 1
     totals['subsets'] += 1 << order
     return dict(order=order, beta=beta, SF=star_value, minimal_count=len(minimal))
@@ -196,6 +224,7 @@ def main():
                   graphs=[enumerate_graph(graph, totals) for graph in graphs])
     report['heawood_obstacle'] = selection_control(base(), SELECTED, totals, 7)
     assert report['heawood_obstacle']['candidate_sizes'] == [5, 5]
+    assert report['heawood_obstacle']['sharp_candidate_sizes'] == [7, 7]
     report['larger_family_selections'] = []
     for copies in range(1, 9):
         graph, selected, attaining = construction(copies)

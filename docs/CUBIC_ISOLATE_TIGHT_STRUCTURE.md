@@ -3,8 +3,9 @@
 19 October 2026. The [compensation theorem](CUBIC_STABILITY_COMPENSATION.md)
 reduces the gap problem to interactions involving selected isolates. This
 note characterizes the entire zero-residual-capacity stratum, rather than
-only the separated-block examples. No general sharp stability theorem is
-claimed.
+only the separated-block examples. The subsequently corrected exchange
+now proves the [sharp stability theorem](SHARP_CUBIC_BIPARTITE_GAP.md)
+for this entire stratum and for all cubic bipartite minimal selections.
 
 ## Characterization
 
@@ -112,15 +113,25 @@ the two exchanges already attain |S|; having |S|>beta_2 in this stratum
 requires isolates in both parts. This is a general balance argument,
 not an inference from the 300 sampled instances.
 
-## Why this is the next sharp case
+## The corrected sharp exchange on this stratum
 
-On this entire stratum the desired sharp exchange would construct a
-dissociation set of size at least |S|-z/2. The present two exchanges
-guarantee only |S|-b/2, with b<=3z. The selected high cycles can mix
+On this entire stratum the corrected sharp exchange constructs a
+dissociation set of size at least |S|-z/2. The original two exchanges
+guaranteed only |S|-b/2, with b<=3z. The selected high cycles can mix
 H2 and H3 arbitrarily subject to the displayed neighborhoods; the
 outside components can independently be paths or cycles. Treating the
 Heawood and regular equality cores as disjoint selected components
-therefore omits genuine residual configurations.
+therefore omits genuine residual configurations, all now covered by
+the corrected exchange.
+
+Explicitly, take P union U union(H intersect L) union((X1 union X2)
+intersect R) union(I intersect R), or reverse the two sides. Each
+selection induces a matching plus its retained isolates: H2 in L pairs
+with X2 in R; H3 in L pairs with its U neighbor; the remaining U
+vertices pair with X1 in R. All other possible selected edges are
+excluded by the displayed neighborhoods. Using the forced class balance,
+their sizes are |S|-|I intersect L| and |S|-|I intersect R|. Their
+average is |S|-z/2, proving sharp compensation on every path/cycle system.
 
 The 300 mixed-cycle discovery controls instantiate the case z=2,b=6,
 p=0,h=6k,y=2k with one mixed high cycle. Their recorded integer

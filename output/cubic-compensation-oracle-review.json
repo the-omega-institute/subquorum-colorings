@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED_ACCEPTED_WITH_SHARP_STRENGTHENING",
+  "checked_at": "2026-10-18T20:46:11.372986+00:00",
+  "task_id": "00ce22a7-4941-4e3d-8fa2-ab0c3b17bbc3",
+  "conversation_id": "conv_1e39f5c8e0dde503",
+  "pool": "chrono-chatgpt-pro-pool",
+  "model_label": "chatgpt-6-pro",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "chatgpt_url": "https://chatgpt.com/c/6ad52b56-c49c-83ec-ab07-c3d2fbefbcae",
+  "usage_estimated": true,
+  "input": "docs/reviews/2026-10-19-cubic-compensation-review-input.md",
+  "response": "docs/reviews/2026-10-19-cubic-compensation-oracle-response.txt",
+  "verdict": "Original weaker proof accepted; independently supplies a modified exchange proving full7SF<=3n+2beta and sharp gap n/14, plus nonnegative remainder refinement.",
+  "scope": "Original compensation audit and its supplied strengthening. Later isolate-tight classification was not in original input. Current local sharp exchange proof is a closely related variant under separate focused review.",
+  "local_sharp_variant_prepared_and_submitted_before_this_response_was_read": true,
+  "variant_difference": "Oracle augments the old exchange only at bad high vertices with no selected leaves; the local variant pairs all kept bad high vertices with their witnesses and trims all their selected leaves. Both summed trimming losses equal U-good."
+}

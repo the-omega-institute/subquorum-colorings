@@ -1,0 +1,162 @@
+Verdict: the stated inequalities and the supplied proof are valid. I find no error in the classifications, cardinalities, or witness accounting. There is, however, a stronger conclusion: a short modification of the two dissociation exchanges proves
+$$\boxed{2(s-\beta)\le \delta}$$
+for every inclusion-minimal forming set in a finite simple cubic bipartite graph, without any restriction on  $z$ . Consequently,
+$$\boxed{7SF_2(G)\le 3n+2\beta_2(G)}
+\qquad\text{and}\qquad
+\boxed{SF_2(G)-\beta_2(G)\le \left\lfloor\frac n{14}\right\rfloor.}$$
+The stronger bound is sharp, as an explicit Heawood incidence argument below verifies. Thus the note’s statement that the unrestricted cubic bipartite case remains unresolved should be revised. The isolate-incidence estimate  $B+g_2\le 3z$  is correct, including its warning against replacing  $3z$  by  $z$ ; the stronger exchange does not need that estimate.1. Audit of the high witnesses and their classificationThe partition  $S=I\sqcup U\sqcup P\sqcup H$  is exhaustive and disjoint. A vertex of selected degree one either has a selected neighbor of degree one, in which case the two form a selected  $K_2$  component, or has a high selected neighbor, in which case it belongs to  $U$ .Every outside vertex has at least one selected neighbor, because it is covered. Thus the possible selected degrees of outside vertices are exactly among  $1,2,3$ ; no outside vertices of selected degree zero have been omitted from the capacity accounting.Existence and disjointness of high failure witnessesIf  $v\in H$ , then after deleting  $v$ , the newly outside vertex  $v$  is covered by two of its selected neighbors. Minimality therefore forces an old outside vertex to fail.The supplied disjointness proof is correct. Suppose an old outside vertex  $x$  failed after deleting either of two distinct high vertices  $v,w$ . Every covering star for  $x$  before either deletion would have to contain both  $v$  and  $w$ , and hence would have vertex set  $\{x,v,w\}$ . At least one of  $v,w$ , say  $v$ , is adjacent to  $x$ . Since  $v$  has at least two selected neighbors, it has a selected neighbor  $y\ne w$ . The star centered at  $v$  on  $\{x,v,y\}$  covers  $x$  after deletion of  $w$ , a contradiction.This proves disjointness of the entire failure sets, so any choice of one failure witness for each high vertex is injective.Nonadjacent witnessesIf  $x=f(v)$  is nonadjacent to  $v$ , then  $x$  cannot have two selected neighbors: they would remain after deletion of  $v$  and would cover  $x$  as a center. Hence  $x$  has one selected neighbor  $u$ .For  $x$  to be covered before deletion but fail afterwards,  $u$  must have  $v$  as its unique selected neighbor. Therefore  $u\in U$ , its unique high support is  $v$ , and  $c(v)\ge1$ . The path  $x-u-v$  also shows that  $x$  and  $v$  lie in the same bipartition class.Adjacent witnessesIf  $x=f(v)$  is adjacent to  $v$ , cubicity forces  $a(v)=2$ .A failure witness cannot have three selected neighbors, since two would remain after deleting  $v$ . If  $a(x)=2$ , write its selected neighbors as  $v,w$ . Failure requires
+$$N(w)\cap (S\setminus\{v\})=\varnothing.$$
+Thus either  $w$  is isolated in  $G[S]$ , or its only selected neighbor is  $v$ . The latter possibility creates the triangle  $xvw$ , which bipartiteness excludes. Consequently  $w\in I$ .The resulting classification is therefore exact:Class $a(v)$ Relation between  $v$  and  $f(v)$ Original selected neighbors of  $f(v)$  $A$  $2$ AdjacentOnly  $v$  $B$  $2$ Adjacent $v$  and one vertex of  $I$  $C$  $2$ NonadjacentOne vertex  $u\in U$ , supported by  $v$  $H_3$  $3$ NonadjacentOne vertex  $u\in U$ , supported by  $v$ A vertex of  $H_3$  has no outside neighbor at all, so its witness is necessarily nonadjacent. There is no missing fifth case.2. Audit of the exact slack identityThe capacity calculation can be checked directly without assuming any further result from the earlier theorem.Let
+$$m=e(S,T),\qquad
+D_H=\sum_{v\in H}(a(v)-1).$$
+The selected isolates contribute  $-1$  each to  $\sum_{v\in S}(a(v)-1)$ , and selected vertices of degree one contribute zero. Hence
+$$D_H=\sum_{v\in S}a(v)-s+z.$$
+The cut identity gives
+$$m=3s-\sum_{v\in S}a(v).$$
+It follows that
+$$\begin{aligned}
+\sum_{x\in T}(3-a(x))-D_H
+&=3(n-s)-m-D_H\\
+&=3n-5s-z\\
+&=\delta-z.
+\end{aligned}$$
+Now use injectivity of  $f$  to account for each chosen witness once:Class of its ownerWitness capacity  $3-a(f(v))$ High demand  $a(v)-1$ Surplus $A$  $2$  $1$  $1$  $B$  $1$  $1$  $0$  $C$  $2$  $1$  $1$  $H_3$  $2$  $2$  $0$ Unused outside vertices contribute  $2r_1+r_2$ . Unused vertices of selected degree three contribute zero, so their absence from the notation is harmless. Therefore
+$$\boxed{\delta=z+A+C+2r_1+r_2.}$$
+In particular,  $z\le\delta$ , as claimed.3. Audit of the leaf witnesses and resource accountingLet  $u\in U$ , with high support  $v$ . After deleting  $u$ , the newly outside vertex  $u$  remains covered through  $v$ , since  $v$  retains another selected neighbor. Minimality therefore supplies an old outside failure witness.Why the witness must be adjacent to  $u$ If an affected outside vertex  $x$  were nonadjacent to  $u$ , a covering star involving  $u$  would have to be centered at  $u$ ’s selected support  $v$ . Another selected neighbor of  $v$  could replace  $u$ . Thus  $x$  would remain covered, a contradiction.Hence  $g(u)$  is adjacent to  $u$ .Its possible selected neighborsA leaf witness cannot have three selected neighbors, because two would survive deletion of  $u$ .If it has exactly two selected neighbors,  $u,w$ , failure requires  $w$  to have no selected neighbor after deletion of  $u$ . If  $w$  were not originally isolated, its sole selected neighbor would have to be  $u$ . But  $u$ ’s unique selected neighbor is its high support  $v$ , so  $w=v$ ; that high vertex retains another selected neighbor. This is impossible.Thus  $g(u)$  has either:only  $u$  as a selected neighbor; orexactly  $u$  and one selected isolate.Distinctness and overlapsThe chosen  $g(u)$  are distinct. A witness of selected degree one identifies its unique leaf neighbor. A witness of selected degree two identifies its unique leaf neighbor among its leaf–isolate pair.A degree-two leaf witness cannot belong to  $f(H)$ . The only chosen high witnesses of selected degree two are those of class  $B$ , whose selected neighbors are a high vertex and an isolate, not a leaf and an isolate. Hence
+$$g_2\le r_2.$$
+A degree-one leaf witness can overlap  $f(H)$  only in  $f(C\cup H_3)$ . Therefore at most  $|C|+|H_3|$  chosen leaf witnesses are already used by  $f$ , and
+$$\boxed{|U|-(|C|+|H_3|)\le r_1+g_2.}$$
+Every leaf has one high support, so
+$$\sum_{v\in H}c(v)=|U|.$$
+Since every vertex of  $C\cup H_3$  has a leaf,
+$$E\le |U|-(|C|+|H_3|),$$
+which proves (5).The isolate-incidence budgetEvery chosen  $B$ -witness has exactly one selected isolate neighbor. Every degree-two leaf witness also has exactly one selected isolate neighbor. These are distinct outside vertices, so the corresponding incidences with  $I$  are distinct edges.Every selected isolate has precisely three incident edges, all going outside  $S$ . Thus
+$$\boxed{B+g_2\le3z.}$$
+This is an edge-incidence count, and all its non-reuse claims are correct. In particular,
+$$\begin{aligned}
+A+B+E
+&\le A+B+r_1+g_2\\
+&\le A+3z+r_1\\
+&=\delta+2z-C-r_1-r_2\\
+&\le\delta+2z.
+\end{aligned}$$
+So (7) is valid, with the displayed nonnegative remainder already available.4. Audit of the original dissociation exchangesWrite
+$$K=C\cup H_3,\qquad
+E_L=\sum_{v\in H\cap L}(c(v)-1)_+,
+\qquad
+E_R=\sum_{v\in H\cap R}(c(v)-1)_+.$$
+Consider  $D_L$ .All retained high vertices lie in  $L$ , so no two are adjacent. Their selected neighbors outside  $H$  belong to  $U$ , and trimming leaves each retained high vertex with at most one such neighbor.For each added  $f(v)$ , where  $v\in K\cap R$ , its sole original selected neighbor is a leaf  $u$  supported by  $v$ . This leaf lies in  $L$ , its support in  $R$  has been omitted, and it is not removed by the trimming step: trimming affects leaves supported by retained high vertices in  $L$ .Two distinct added witnesses cannot share their associated leaf. Such a leaf would then have two different high supports. The possibility of using the same high support twice is excluded because one witness was chosen per high vertex.All added witnesses lie in  $R$ , so there are no edges among them. Their unique original selected neighbors lie in  $U$ , which excludes edges from them to retained high vertices, selected isolates, or vertices of  $P$ . Each retained  $P$ -vertex keeps only its mate.Thus  $D_L$  is a dissociation set. The reversed argument proves the same for  $D_R$ .The cardinalities are exact:
+$$\begin{aligned}
+|D_L|
+&=s-|H\cap R|+|K\cap R|-E_L\\
+&=s-|(A\cup B)\cap R|-E_L,
+\end{aligned}$$
+and symmetrically
+$$|D_R|=s-|(A\cup B)\cap L|-E_R.$$
+The removed high vertices and trimmed leaves are disjoint, while the additions are distinct outside vertices. Hence
+$$|D_L|+|D_R|=2s-A-B-E,$$
+and consequently
+$$2(s-\beta)\le A+B+E.$$
+This verifies (8), and therefore the entire displayed chain
+$$2(s-\beta)\le\delta+2z\le3\delta.$$
+The original parameter algebra is also correct. For an attaining set,
+$$2(s-\beta)\le3(3n-5s)
+\quad\Longrightarrow\quad
+17s\le9n+2\beta.$$
+Cubic bipartiteness gives
+$$3|L|=e(G)=3|R|,$$
+so either part is an independent set of size  $n/2$ , and  $\beta\ge n/2$ . Writing  $g=s-\beta$ ,
+$$17g+15\beta\le9n
+\quad\Longrightarrow\quad
+34g\le3n.$$
+Integrality gives the stated floor. The  $z=0$  consequence follows exactly as written.5. The exchange augmentation that removes the isolate residualThe stronger result uses the same chosen witnesses  $f$  and  $g$ . No optimization or special reselection of witnesses is needed.Define
+$$q=\bigl|\{v\in A\cup B:c(v)>0\}\bigr|$$
+and
+$$K_0=\{v\in A\cup B:c(v)=0\}.$$
+Thus
+$$|K_0|=A+B-q.$$
+Retain the exact leaf countEvery good high vertex has at least one leaf. Since every leaf has a unique high support,
+$$\begin{aligned}
+E
+&=\sum_{v\in H}(c(v)-1)_+\\
+&=\sum_{v\in H}c(v)-|\{v\in H:c(v)>0\}|\\
+&=|U|-(|C|+|H_3|)-q.
+\end{aligned}$$
+The already proved leaf-witness count therefore gives the stronger form
+$$\boxed{E+q\le r_1+g_2\le r_1+r_2.} \tag{9}$$
+The extra term  $q$  records exactly the vertices of  $A\cup B$  that have a selected leaf.Modify the two dissociation setsStarting from the original  $D_L$ , define
+$$\boxed{
+\widehat D_L
+=
+\bigl(D_L\setminus(I\cap L)\bigr)
+\cup f(K_0\cap L).
+}$$
+Define  $\widehat D_R$  by reversing  $L$  and  $R$ .Thus, on each orientation, remove the selected isolates in the part containing the retained high vertices, and add the adjacent witnesses of retained high vertices that have no selected leaves.Why every new addition is safeFix  $v\in K_0\cap L$ .First,  $v$  is isolated in the original  $D_L$ . It has selected degree two and no selected leaf neighbors. Therefore both of its original selected neighbors are high vertices in  $R$ , and both have been omitted. Moreover, none of the original outside additions is adjacent to  $v$ , because every such addition has its sole original selected neighbor in  $U$ .If  $v\in A$ , its witness  $f(v)$  has only  $v$  as an original selected neighbor.If  $v\in B$ , its witness has original selected neighbors  $v$  and an isolate  $i$ . Both  $v$  and  $i$  lie in  $L$ , since they share the neighbor  $f(v)$ . The isolate  $i$  has just been removed.Consequently, in either case, the new witness has precisely  $v$  as a neighbor among the retained original selected vertices.Every new witness lies in  $R$ , because it is adjacent to its owner in  $L$ . Every witness already added to  $D_L$  also lies in  $R$ . Thus there are no edges between any two outside additions, including between old and new additions.Finally, injectivity of  $f$  makes all the new witnesses distinct and separates them from the original additions. Each new witness forms one matching edge with its previously isolated high owner. It has no edge to a retained leaf, a vertex of  $P$ , another retained high vertex, or a remaining isolate.Therefore  $\widehat D_L$  is a dissociation set. The same proof applies to  $\widehat D_R$ .Exact cardinalitiesAll vertices of  $I\cap L$  were present in  $D_L$ , and all vertices of  $f(K_0\cap L)$  are new. Hence
+$$|\widehat D_L|
+=
+|D_L|-|I\cap L|+|K_0\cap L|,$$
+and similarly
+$$|\widehat D_R|
+=
+|D_R|-|I\cap R|+|K_0\cap R|.$$
+Adding,
+$$\begin{aligned}
+|\widehat D_L|+|\widehat D_R|
+&=(2s-A-B-E)-z+(A+B-q)\\
+&=\boxed{2s-z-E-q}.
+\end{aligned}$$
+Since each set has size at most  $\beta$ ,
+$$2(s-\beta)\le z+E+q.$$
+Using (9) and the exact slack identity now yields
+$$\boxed{
+\begin{aligned}
+2(s-\beta)
+&\le z+E+q\\
+&\le z+r_1+g_2\\
+&=\delta-A-C-r_1-(r_2-g_2)\\
+&\le\delta.
+\end{aligned}
+} \tag{10}$$
+Every subtracted term in the penultimate line is nonnegative.This proves the unrestricted candidate, and actually retains the refinement
+$$\boxed{
+7s+A+C+r_1+(r_2-g_2)\le3n+2\beta.
+}$$
+The isolate-incidence estimate (6) does not enter this proof. The total cost of deleting isolates across the two alternative exchanges is  $z$ . Those deletions allow the eligible adjacent high witnesses to be added, and the  $A+B$  terms cancel in the summed cardinality.6. Stronger parameter consequencesTaking  $s=SF_2(G)$  in (10) gives
+$$7SF_2(G)\le3n+2\beta_2(G)$$
+for all finite simple cubic bipartite graphs.For the gap  $g=SF_2(G)-\beta_2(G)$ ,
+$$7g+5\beta_2(G)\le3n.$$
+Since  $\beta_2(G)\ge n/2$ ,
+$$7g\le\frac n2,$$
+and therefore
+$$\boxed{SF_2(G)-\beta_2(G)\le\left\lfloor\frac n{14}\right\rfloor.}$$
+Thus the no-selected-isolates hypothesis is unnecessary for both the candidate inequality and its  $n/14$  gap consequence.7. Exact Heawood sharpness and the isolate-budget warningThe same example can establish both sharpness of the stronger theorem and correctness of the warning about (6), using an incidence proof.Take points  $0,\ldots,6$  and line vertices
+$$L_i=\{i,i+1,i+3\}\pmod7,$$
+with incidence defining adjacency. This is the Heawood graph.Each line contains three points, and each point belongs to three lines. The six ordered nonzero differences between elements of  $\{0,1,3\}$  are exactly the six nonzero residues modulo seven. Hence every pair of distinct points lies on exactly one line, and the incidence graph has no  $4$ -cycle.Choose
+$$S=\{0,3,5,6,L_1,L_2,L_3,L_5\}.$$
+Its selected isolates are  $0,L_1$ . Its other six selected vertices induce the cycle
+$$3-L_2-5-L_5-6-L_3-3.$$
+The outside vertices have the following selected neighbors:Outside vertexSelected isolate neighborSelected high neighbor $1$  $L_1$  $L_5$  $2$  $L_1$  $L_2$  $4$  $L_1$  $L_3$  $L_0$  $0$  $3$  $L_4$  $0$  $5$  $L_6$  $0$  $6$ Every outside vertex is covered by its two selected neighbors. Deleting a selected cycle vertex makes its unique outside neighbor fail, because that outside vertex is left with only a selected isolate as a selected neighbor. Deleting either selected isolate leaves that newly outside vertex with no selected neighbor. Thus  $S$  is inclusion-minimal.In this example,
+$$s=8,\qquad z=2,\qquad B=6,\qquad g_2=0,$$
+and all the other high classes and leaf counts vanish. In particular,
+$$B+g_2=6=3z.$$
+So replacing  $3z$  by  $z$  in the isolate-incidence budget is indeed false.Dissociation numberEither whole bipartition class is an independent seven-set, so  $\beta_2\ge7$ .Suppose there were a dissociation set of size eight. Choose the bipartition class  $X$  containing at least four selected vertices, and put
+$$p=|D\cap X|,
+\qquad
+k=|X\setminus D|=7-p\le3.$$
+There are
+$$|D\cap Y|=8-p=k+1$$
+selected vertices in the other class.Each selected vertex in  $Y$  has degree three in the graph and at most one selected neighbor. It therefore has at least two neighbors among the  $k$  omitted vertices of  $X$ . Choose one such unordered neighbor pair for each selected vertex in  $Y$ .Different selected vertices in  $Y$  must receive different pairs, because a shared pair would create a  $4$ -cycle. Consequently
+$$k+1\le\binom{k}{2}.$$
+But for  $0\le k\le3$ ,
+$$\binom{k}{2}\le k,$$
+a contradiction. No dissociation eight-set exists, and any larger dissociation set would contain one. Hence
+$$\beta_2=7.$$
+The explicit minimal forming eight-set gives  $SF_2\ge8$ . The already proved order bound  $5SF_2\le3n=42$  gives  $SF_2\le8$ . Therefore
+$$SF_2=8,\qquad \beta_2=7.$$
+Both stronger bounds are attained:
+$$7SF_2=56=3\cdot14+2\cdot7,
+\qquad
+SF_2-\beta_2=1=\frac{14}{14}.$$
+Both parameters are additive over disjoint components: forming, minimality, and dissociation are all determined componentwise. Thus  $r$  disjoint Heawood graphs have
+$$n=14r,\qquad SF_2=8r,\qquad\beta_2=7r,$$
+and attain the strengthened inequalities for every  $r\ge1$ .

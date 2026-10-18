@@ -210,20 +210,20 @@ For cubic bipartite graphs, a positive gap therefore forces
 
 These are consequences of this endpoint argument, not a claim that the
 gap coefficient 1/10 is optimal. The subsequent
-[compensation theorem](CUBIC_STABILITY_COMPENSATION.md) improves the
-universal cubic bipartite gap bound to floor(3n/34), and proves the
-sharper candidate7SF_2<=3n+2beta_2 when an attaining selection has no
-isolates. The unrestricted candidate remains open.
+[sharp compensation theorem](SHARP_CUBIC_BIPARTITE_GAP.md) proves
+7SF_2<=3n+2beta_2 for all cubic bipartite graphs and improves the gap
+bound to the sharp floor(n/14), including selections with isolates.
 The exact Heawood family has gap ceil(r/2) on 14r vertices.
-Its grid analogue, planar extremal cases, and the optimal cubic gap bound
-remain separate questions.
+Its grid analogue, planar extremal cases, and the optimal asymptotic gap
+specifically under two-connectivity remain separate questions.
 
 The [subsequent port-deficiency construction](CUBIC_STABILITY_PORTS.md)
 gives two-connected cubic bipartite graphs on14+20kvertices with
 SF_2=8+12k and beta_2=7+12k. They have positive gap and regular slack two,
 and their SF_2/n ratio approaches3/5. Thus the positive-gap endpoint
 exclusion does not imply any uniformly smaller order coefficient. They
-attain, but do not prove, the general stability candidate7SF_2<=3n+2beta_2.
+attain the general stability inequality7SF_2<=3n+2beta_2 now proved
+in the subsequent sharp compensation note.
 
 ## A sharp comparison with upper domination
 
@@ -310,7 +310,7 @@ It requested explicit definitions, possibly empty classes, and the detailed
 leaf-witness locality argument; all are incorporated. The later Gamma/grid
 corollaries and final verification inventory were outside that original input.
 
-## Next question: can the gap be charged to half the defect?
+## Stability question, now resolved by the corrected exchange
 
 For a cubic bipartite graph, let D=3n-5 SF_2(G). The theorem proves D>=0
 and characterizes D=0. A stronger stability candidate is
@@ -318,10 +318,13 @@ and characterizes D=0. A stronger stability candidate is
     2(SF_2-beta_2) <= D,
     equivalently 7 SF_2 <= 3n+2 beta_2.                       (10)
 
-This is **unproved**. If true, combining beta_2>=n/2 would yield the sharp
-all-cubic-bipartite gap bound SF_2-beta_2<=n/14, attained by the Heawood
-graph and its disjoint unions. Neither this gap bound nor (10) follows
-from the endpoint characterization alone.
+The subsequent [sharp exchange proof](SHARP_CUBIC_BIPARTITE_GAP.md)
+establishes (10), including selected isolates, by pairing retained high
+vertices with adjacent witnesses while removing only one isolate side.
+It gives the sharp all-cubic-bipartite gap bound SF_2-beta_2<=n/14,
+attained by Heawood and its disjoint unions. This requires the new
+exchange argument; it does not follow from the endpoint characterization
+alone.
 
 The [discovery script](../scripts/explore_cubic_stability.py) evaluates all
 120 circulant parameter choices through20vertices and six choices on22
@@ -329,5 +332,5 @@ vertices, with exact beta and SF computed by subset evaluation. No candidate
 counterexample occurred among those126instances; six have a strict gap.
 Different parameters may give isomorphic or disconnected graphs. The
 [exploration receipt](../output/cubic-stability-exploration.json) records
-the graphs and witnesses. This finite evidence only motivates further
-proof work and counterexample search; it does not establish (10).
+the graphs and witnesses. This finite evidence preceded the general
+proof and does not establish (10) by itself.

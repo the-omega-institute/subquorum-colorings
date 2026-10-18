@@ -8,3 +8,8 @@ import StarForming.CubicStability
 #print axioms StarForming.CubicStability.unconditional_cubic_stability
 #print axioms StarForming.CubicStability.cubic_gap_bound
 #print axioms StarForming.CubicStability.no_isolates_stability
+#print axioms StarForming.CubicStability.shared_leaf_high_witness_has_good_support_owner
+#print axioms StarForming.CubicStability.sharp_leaf_budget
+#print axioms StarForming.CubicStability.sharp_exchange_accounting
+#print axioms StarForming.CubicStability.sharp_cubic_stability
+#print axioms StarForming.CubicStability.sharp_cubic_gap_bound
