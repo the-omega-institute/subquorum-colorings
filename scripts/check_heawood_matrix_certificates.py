@@ -14,6 +14,13 @@ CASES = [
     ('K', [(1, 4), (2, 1), (4, 2), (2, 4)], [20, 30, 31, 40, 50, 51, 70], [11, 40, 31, 10, 20, 51, 60], [], [61]),
 ]
 
+STRONG_CASES = [
+    ('S', [(3, 3), (1, 2), (2, 1)], [60, 20, 50, 10, 70, 30],
+     [10, 11, 20, 21, 30, 31], [], [41, 51, 61, 71]),
+    ('J', [(3, 3), (2, 1)], [40, 41, 20, 31, 51, 70, 61, 50],
+     [10, 31, 40, 41, 51, 60, 61, 70], [], []),
+]
+
 
 def outer(point, line):
     return sum(((point >> row & 1) * (line >> column & 1)) << (3 * row + column)
@@ -87,7 +94,7 @@ def main():
                             'S': [1, 0, 1, 0], 'J': [1, 0, 1, 0],
                             'C': [1, 0, 0, 1], 'K': [1, 0, 1, 1]}
     records = []
-    for name, twisted, matched_points, matched_lines, isolated_points, isolated_lines in CASES:
+    for name, twisted, matched_points, matched_lines, isolated_points, isolated_lines in CASES + STRONG_CASES:
         twists = set(twisted)
         assert twists <= set(flags)
         matrix = 0
@@ -100,7 +107,8 @@ def main():
         assert len(selected_points) == len(matched_points) + len(isolated_points)
         assert len(selected_lines) == len(matched_lines) + len(isolated_lines)
         assert len(matched_points) == len(matched_lines)
-        assert len(selected_points) + len(selected_lines) == 15
+        certificate_size = len(selected_points) + len(selected_lines)
+        assert certificate_size == (15 if len(records) < len(CASES) else 16)
         neighborhoods = {line: sorted(point for point in selected_points if adjacent(point, line, twists))
                          for line in sorted(selected_lines)}
         for point, line in zip(matched_points, matched_lines):
@@ -109,7 +117,7 @@ def main():
             assert neighborhoods[line] == []
         assert all(sum(adjacent(point, line, twists) for line in selected_lines) <= 1
                    for point in selected_points)
-        records.append(dict(type=name, twists=twisted, matrix=matrix_rows(matrix),
+        records.append(dict(type=name, size=certificate_size, twists=twisted, matrix=matrix_rows(matrix),
                             characteristic_polynomial=expected_polynomials[name],
                             selected_points=sorted(selected_points), selected_lines=sorted(selected_lines),
                             matched_edges=len(matched_points),
@@ -117,9 +125,11 @@ def main():
                             line_neighborhoods=neighborhoods))
     report = dict(status='ALL_CHECKS_PASSED', flags=len(flags), image_rank=image_rank,
                   switching_rank=switching_rank, certificates=records,
-                  scope='Local quotient-map and six explicit 15-vertex certificates only. '
+                  scope='Local quotient-map, six explicit 15-vertex certificates and two 16-vertex certificates. '
                   'Algebraic completeness and transfer to all covers have written proofs; '
-                  'no solver or enumeration of all 255 signings is used here. No new Lean claim.')
+                  'no solver or enumeration of all 255 signings is used here. '
+                  'The two 16-vertex certificates additionally have a separate Lean audit; '
+                  'this Python receipt does not certify that formal run.')
     arguments.output.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps({key: value for key, value in report.items() if key != 'certificates'}, indent=2))
 

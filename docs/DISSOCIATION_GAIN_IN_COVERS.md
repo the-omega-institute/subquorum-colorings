@@ -150,13 +150,15 @@ with p=8,r_1=8,r_2=2, surplus 6 and beta_2=16. The checker records literal
 attaining sets and independently recomputes these two optima. These are
 examples, not a proof for all signatures.
 
-The outstanding structural implication is now precise: in a connected
-Heawood double cover, find some A with p-2e-r_2>=3. Proving that the
-absence of such A forces every cycle sign switch-trivial would suffice.
-The previous255-signature computations and the general covering-minimality
-theorem do not establish this implication. A focused Oracle research
-question is pending on its original stream; it requests a geometric or
-linear-algebraic proof rather than a signature table.
+The structural implication is now proved in HEAWOOD_DOUBLE_COVER_GAIN.md:
+binary switching classes identify with traceless3-by-3matrices, a complete
+algebraic classification gives six nonzero types, and explicit fifteen-sets
+prove strict gain for all connected double covers. The original Oracle
+research question completed; its proposed argument was independently
+expanded and the six local certificates checked. The previous255-signature
+computations are not used as a proof premise. HEAWOOD_HIGHER_COVER_BOUNDS.md
+further transfers this density to arbitrary covers admitting such a quotient;
+two explicit sixteen-sets give a stronger bound for two quotient types.
 
 ## Verification
 
@@ -168,7 +170,7 @@ Use
 The formal audit checks dissociation pullback, reflection, equivalence,
 four-cycle triple exclusions and capacity two. It does not claim a Lean
 proof of the global fractional summation, prism parameter formulas or
-the still-open Heawood strict-gain implication. All general conclusions
+the subsequent matrix classification. All general conclusions
 above have written proofs independent of the finite controls.
 
 The recorded controls pass 11,894 full-pullback/reflection selections

@@ -1,0 +1,8 @@
+import StarForming.HeawoodCertificates
+
+#print axioms StarForming.HeawoodCertificates.scalar_dissociates
+#print axioms StarForming.HeawoodCertificates.jordan_dissociates
+#print axioms StarForming.HeawoodCertificates.scalar_card
+#print axioms StarForming.HeawoodCertificates.jordan_card
+#print axioms StarForming.HeawoodCertificates.double_quotient_gap
+#print axioms StarForming.HeawoodCertificates.strong_double_quotient_gap

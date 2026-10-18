@@ -6,6 +6,7 @@
   "certificates": [
     {
       "type": "N1",
+      "size": 15,
       "twists": [
         [
           1,
@@ -83,6 +84,7 @@
     },
     {
       "type": "N2",
+      "size": 15,
       "twists": [
         [
           1,
@@ -164,6 +166,7 @@
     },
     {
       "type": "S",
+      "size": 15,
       "twists": [
         [
           3,
@@ -248,6 +251,7 @@
     },
     {
       "type": "J",
+      "size": 15,
       "twists": [
         [
           3,
@@ -324,6 +328,7 @@
     },
     {
       "type": "C",
+      "size": 15,
       "twists": [
         [
           1,
@@ -406,6 +411,7 @@
     },
     {
       "type": "K",
+      "size": 15,
       "twists": [
         [
           1,
@@ -492,7 +498,179 @@
         ],
         "61": []
       }
+    },
+    {
+      "type": "S",
+      "size": 16,
+      "twists": [
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "selected_points": [
+        10,
+        20,
+        30,
+        50,
+        60,
+        70
+      ],
+      "selected_lines": [
+        10,
+        11,
+        20,
+        21,
+        30,
+        31,
+        41,
+        51,
+        61,
+        71
+      ],
+      "matched_edges": 6,
+      "isolated_vertices": 4,
+      "line_neighborhoods": {
+        "10": [
+          60
+        ],
+        "11": [
+          20
+        ],
+        "20": [
+          50
+        ],
+        "21": [
+          10
+        ],
+        "30": [
+          70
+        ],
+        "31": [
+          30
+        ],
+        "41": [],
+        "51": [],
+        "61": [],
+        "71": []
+      }
+    },
+    {
+      "type": "J",
+      "size": 16,
+      "twists": [
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "matrix": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "characteristic_polynomial": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "selected_points": [
+        20,
+        31,
+        40,
+        41,
+        50,
+        51,
+        61,
+        70
+      ],
+      "selected_lines": [
+        10,
+        31,
+        40,
+        41,
+        51,
+        60,
+        61,
+        70
+      ],
+      "matched_edges": 8,
+      "isolated_vertices": 0,
+      "line_neighborhoods": {
+        "10": [
+          40
+        ],
+        "31": [
+          41
+        ],
+        "40": [
+          20
+        ],
+        "41": [
+          31
+        ],
+        "51": [
+          51
+        ],
+        "60": [
+          70
+        ],
+        "61": [
+          61
+        ],
+        "70": [
+          50
+        ]
+      }
     }
   ],
-  "scope": "Local quotient-map and six explicit 15-vertex certificates only. Algebraic completeness and transfer to all covers have written proofs; no solver or enumeration of all 255 signings is used here. No new Lean claim."
+  "scope": "Local quotient-map, six explicit 15-vertex certificates and two 16-vertex certificates. Algebraic completeness and transfer to all covers have written proofs; no solver or enumeration of all 255 signings is used here. The two 16-vertex certificates additionally have a separate Lean audit; this Python receipt does not certify that formal run."
 }

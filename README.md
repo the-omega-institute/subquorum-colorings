@@ -118,6 +118,13 @@ have SF_2-beta_2 at most one. The classification and transfer are written
 proofs, with independently checked local certificates, not a new Lean
 formalization. Arbitrary-order connected cubic sharpness remains open.
 
+The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
+now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
+through a connected Heawood double cover, including all connected regular
+Heawood covers with nontrivial finite2-group deck group. Two quotient
+types have explicit16-vertex certificates, checked in Lean, and improve
+that bound to floor(n/49). No exact higher-cover SF value is assumed.
+
 The [exact cover-stability criterion](docs/COVER_STABLE_MINIMAL_SELECTIONS.md)
 now removes the global triangle-free restriction: a fixed minimal selection
 is preserved by every graph cover exactly when every selected deletion
