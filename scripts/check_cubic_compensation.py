@@ -65,6 +65,34 @@ def selection_control(adjacency, selected, totals, exact_beta=None):
     assert excess <= residual_one + len(leaf_two)
     assert len(bad_two) + len(leaf_two) <= 3 * len(isolated)
     assert len(bad_one) + len(bad_two) + excess <= defect + 2 * len(isolated)
+    if defect == len(isolated):
+        assert not bad_one and good_two == residual_one == residual_two == excess == 0
+        high_three = {vertex for vertex in high if counts[vertex] == 3}
+        high_two = high - high_three
+        private = {vertex for vertex in outside if counts[vertex] == 1}
+        paired = {vertex for vertex in outside if counts[vertex] == 2}
+        full = outside - private - paired
+        matching = selected - isolated - high - leaves
+        assert len(high_three) == len(leaves) == len(private)
+        assert len(high_two) == len(paired)
+        assert sum(colors[vertex] == 0 for vertex in high_two) * 2 == len(high_two)
+        assert sum(colors[vertex] == 0 for vertex in high_three) * 2 == len(high_three)
+        assert len(high_two) <= 6 * min(sum(colors[vertex] == color for vertex in isolated)
+                                       for color in range(2))
+        assert all(len(adjacency[vertex] & high) == 2 for vertex in high)
+        assert all(len(adjacency[vertex] & high_three) ==
+                   len(adjacency[vertex] & private) ==
+                   len(adjacency[vertex] & full) == 1 for vertex in leaves)
+        assert all(len(adjacency[vertex] & leaves) == 1 for vertex in high_three | private)
+        assert all(len(adjacency[vertex] & high_two) ==
+                   len(adjacency[vertex] & isolated) == 1 for vertex in paired)
+        assert all(len(adjacency[vertex] & paired) == 1 for vertex in high_two)
+        assert all(adjacency[vertex] <= paired | full for vertex in isolated)
+        assert all(len(adjacency[vertex] & matching) == 1 and
+                   len(adjacency[vertex] & full) == 2 for vertex in matching)
+        assert all(adjacency[vertex] <= isolated | matching | leaves for vertex in full)
+        assert 3 * len(full) == len(high_three) + 2 * len(matching) + 3 * len(isolated) - len(high_two)
+        totals['isolate_tight_structures'] += 1
     candidates = []
     for color in range(2):
         candidate = (selected - high) | {vertex for vertex in high if colors[vertex] == color}

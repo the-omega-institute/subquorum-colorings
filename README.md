@@ -89,6 +89,12 @@ delta=3n-5s, two explicit dissociation exchanges prove
 sharper stability candidate7SF_2<=3n+2beta_2 follows. The unrestricted
 candidate remains open. Eight symbolic Lean audits and independent
 literal-star/exchange controls pass; the graph-level counting proof is written.
+The [exact isolate-tight structure](docs/CUBIC_ISOLATE_TIGHT_STRUCTURE.md)
+reduces every case with delta=z to mixed selected even cycles and an
+outside path/cycle system. Degree balance forces both high classes to
+balance across the bipartition; a strict gap there needs selected isolates
+on both sides. This classification is a written theorem and does not
+settle the sharp exchange on all such systems.
 
 A [port-deficiency theorem and exact connected family](docs/CUBIC_STABILITY_PORTS.md)
 now identify a stability boundary: for every k>=1 there is a two-connected

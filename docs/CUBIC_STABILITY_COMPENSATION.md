@@ -178,6 +178,20 @@ Replacing `3z` by `z` is false even in the Heawood example. A proof of the
 unrestricted candidate must improve the exchange or track those joint
 configurations; it cannot assert that (6) has an injective map to I.
 
+More generally, the full candidate follows whenever the chosen degree-two
+high and leaf witness incidences use at most z edges at I: replace (6)
+by B+g2<=z in the same proof. A sufficient graph-level condition is
+that every selected isolate has at most one outside neighbor of selected
+degree two. This condition permits selected isolates; it does not hold
+in the Heawood obstruction.
+
+The subsequent [isolate-tight structure theorem](CUBIC_ISOLATE_TIGHT_STRUCTURE.md)
+characterizes every minimal selection with delta=z. Its selected high
+vertices form even cycles, possibly mixing degrees two and three, and
+its private outside vertices form a path/cycle system with endpoints
+at the degree-two high witnesses. This explicitly describes a remaining
+sharp-case class; it does not prove the full candidate for that class.
+
 ## Validation scope
 
 The proofs above do not use enumeration. The checker, formal sources and
@@ -197,6 +211,8 @@ The finite graph list includes all labeled cubic bipartite graphs with
 fixed equal parts at orders six and eight, selected circulants through
 order14, deterministic regular samples, and Heawood. Instances can be
 isomorphic or disconnected; no isomorphism-class census is claimed.
+The extended controls also check the complete isolate-tight structural
+partition and its forced high-class balance in all 380 cases with delta=z.
 
 For the Heawood eight-set, z=delta=2 and B=6. The two exchanges here
 both have size five, although beta=7. Thus the current exchange method
