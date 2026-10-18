@@ -1,0 +1,30 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T18:51:47.039233+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checks": [
+    {
+      "module": "StarForming/SubcubicCertificate.lean",
+      "seconds": 40.966,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarForming/CubicCertificate.lean",
+      "seconds": 3.504,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarFormingCubicAudit.lean",
+      "seconds": 0.414,
+      "exit_code": 0,
+      "stdout": "'StarForming.Cubic.forms_rewiring' does not depend on any axioms\n'StarForming.Cubic.minimal_rewiring_forward' does not depend on any axioms\n'StarForming.Cubic.minimal_rewiring' does not depend on any axioms\n'StarForming.Cubic.fano_simple_cubic' depends on axioms: [propext]\n'StarForming.Cubic.fano_forms' depends on axioms: [propext, Quot.sound]\n'StarForming.Cubic.fano_deletion_failures' depends on axioms: [propext, Quot.sound]\n'StarForming.Cubic.fano_minimal' depends on axioms: [propext, Quot.sound]\n'StarForming.Cubic.fano_selected_card' depends on axioms: [propext]\n'StarForming.Cubic.cubic_gap_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "maximum_rss_bytes": 3599564800,
+  "scope": "Std-only: generic star-formation and inclusion-minimality invariance under arbitrary rewiring of edges outside a fixed selection; explicit Heawood graph simplicity/cubic degree, eight-set formation, deletion failures, minimality and cardinality; conditional dense-block and gap arithmetic. Fano dissociation geometry, saturated-port lemma, cyclic composition, connectivity, girth and global attainment have written proofs, not full new Lean formalizations."
+}

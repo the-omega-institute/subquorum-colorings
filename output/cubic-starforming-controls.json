@@ -1,0 +1,617 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "base": {
+    "order": 14,
+    "beta2": 7,
+    "SF2_finite_exact": 8,
+    "minimal_set_counts": {
+      "7": 226,
+      "6": 91,
+      "8": 28
+    },
+    "literal_local_tests": 114688,
+    "all_proper_subset_minimality_checked": true,
+    "broken_flag_eight_sets": [
+      [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      [
+        0,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8,
+        12,
+        13
+      ],
+      [
+        0,
+        1,
+        4,
+        6,
+        8,
+        10,
+        12,
+        13
+      ]
+    ],
+    "port_states": [
+      {
+        "state": [
+          [
+            false,
+            0
+          ],
+          [
+            false,
+            0
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            false,
+            0
+          ],
+          [
+            true,
+            0
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            false,
+            0
+          ],
+          [
+            true,
+            1
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            true,
+            0
+          ],
+          [
+            false,
+            0
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            true,
+            0
+          ],
+          [
+            true,
+            0
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            true,
+            0
+          ],
+          [
+            true,
+            1
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            true,
+            1
+          ],
+          [
+            false,
+            0
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            true,
+            1
+          ],
+          [
+            true,
+            0
+          ]
+        ],
+        "maximum": 7
+      },
+      {
+        "state": [
+          [
+            true,
+            1
+          ],
+          [
+            true,
+            1
+          ]
+        ],
+        "maximum": 8
+      }
+    ]
+  },
+  "families": [
+    {
+      "copies": 1,
+      "order": 14,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 7,
+      "beta2": 7,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 8,
+      "gap_lower_bound": 1
+    },
+    {
+      "copies": 2,
+      "order": 28,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 14,
+      "beta2": 15,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 16,
+      "gap_lower_bound": 1
+    },
+    {
+      "copies": 3,
+      "order": 42,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 21,
+      "beta2": 22,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 24,
+      "gap_lower_bound": 2
+    },
+    {
+      "copies": 4,
+      "order": 56,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 28,
+      "beta2": 30,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 32,
+      "gap_lower_bound": 2
+    },
+    {
+      "copies": 5,
+      "order": 70,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 35,
+      "beta2": 37,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 40,
+      "gap_lower_bound": 3
+    },
+    {
+      "copies": 6,
+      "order": 84,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 42,
+      "beta2": 45,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 48,
+      "gap_lower_bound": 3
+    },
+    {
+      "copies": 7,
+      "order": 98,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 49,
+      "beta2": 52,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 56,
+      "gap_lower_bound": 4
+    },
+    {
+      "copies": 8,
+      "order": 112,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 56,
+      "beta2": 60,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 64,
+      "gap_lower_bound": 4
+    },
+    {
+      "copies": 9,
+      "order": 126,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 63,
+      "beta2": 67,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 72,
+      "gap_lower_bound": 5
+    },
+    {
+      "copies": 10,
+      "order": 140,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 70,
+      "beta2": 75,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 80,
+      "gap_lower_bound": 5
+    },
+    {
+      "copies": 11,
+      "order": 154,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 77,
+      "beta2": 82,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 88,
+      "gap_lower_bound": 6
+    },
+    {
+      "copies": 12,
+      "order": 168,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 84,
+      "beta2": 90,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 96,
+      "gap_lower_bound": 6
+    },
+    {
+      "copies": 13,
+      "order": 182,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 91,
+      "beta2": 97,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 104,
+      "gap_lower_bound": 7
+    },
+    {
+      "copies": 14,
+      "order": 196,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 98,
+      "beta2": 105,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 112,
+      "gap_lower_bound": 7
+    },
+    {
+      "copies": 15,
+      "order": 210,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 105,
+      "beta2": 112,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 120,
+      "gap_lower_bound": 8
+    },
+    {
+      "copies": 16,
+      "order": 224,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 112,
+      "beta2": 120,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 128,
+      "gap_lower_bound": 8
+    },
+    {
+      "copies": 17,
+      "order": 238,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 119,
+      "beta2": 127,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 136,
+      "gap_lower_bound": 9
+    },
+    {
+      "copies": 18,
+      "order": 252,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 126,
+      "beta2": 135,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 144,
+      "gap_lower_bound": 9
+    },
+    {
+      "copies": 19,
+      "order": 266,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 133,
+      "beta2": 142,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 152,
+      "gap_lower_bound": 10
+    },
+    {
+      "copies": 20,
+      "order": 280,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 140,
+      "beta2": 150,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 160,
+      "gap_lower_bound": 10
+    },
+    {
+      "copies": 21,
+      "order": 294,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 147,
+      "beta2": 157,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 168,
+      "gap_lower_bound": 11
+    },
+    {
+      "copies": 22,
+      "order": 308,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 154,
+      "beta2": 165,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 176,
+      "gap_lower_bound": 11
+    },
+    {
+      "copies": 23,
+      "order": 322,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 161,
+      "beta2": 172,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 184,
+      "gap_lower_bound": 12
+    },
+    {
+      "copies": 24,
+      "order": 336,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 168,
+      "beta2": 180,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 192,
+      "gap_lower_bound": 12
+    },
+    {
+      "copies": 25,
+      "order": 350,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 175,
+      "beta2": 187,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 200,
+      "gap_lower_bound": 13
+    },
+    {
+      "copies": 26,
+      "order": 364,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 182,
+      "beta2": 195,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 208,
+      "gap_lower_bound": 13
+    },
+    {
+      "copies": 27,
+      "order": 378,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 189,
+      "beta2": 202,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 216,
+      "gap_lower_bound": 14
+    },
+    {
+      "copies": 28,
+      "order": 392,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 196,
+      "beta2": 210,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 224,
+      "gap_lower_bound": 14
+    },
+    {
+      "copies": 29,
+      "order": 406,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 203,
+      "beta2": 217,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 232,
+      "gap_lower_bound": 15
+    },
+    {
+      "copies": 30,
+      "order": 420,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 210,
+      "beta2": 225,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 240,
+      "gap_lower_bound": 15
+    },
+    {
+      "copies": 31,
+      "order": 434,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 217,
+      "beta2": 232,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 248,
+      "gap_lower_bound": 16
+    },
+    {
+      "copies": 32,
+      "order": 448,
+      "cubic": true,
+      "bipartite": true,
+      "two_connected": true,
+      "girth": 6,
+      "perfect_matching_size": 224,
+      "beta2": 240,
+      "transfer_and_attainment_agree": true,
+      "minimal_star_set_size": 256,
+      "gap_lower_bound": 16
+    }
+  ],
+  "scope": "Finite controls support the Fano incidence proof, saturated-port lemma and all-r composition argument. Exact SF8 is computed only for the base; the general theorem claims SF>=8r.",
+  "independent_cpp_base": {
+    "beta": 7,
+    "SF": 8,
+    "beta_mask": 127,
+    "star_mask": 3758,
+    "adjacency": [
+      1408,
+      2816,
+      5632,
+      11264,
+      6272,
+      12544,
+      8832,
+      81,
+      35,
+      70,
+      13,
+      26,
+      52,
+      104
+    ]
+  }
+}

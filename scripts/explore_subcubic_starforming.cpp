@@ -59,6 +59,23 @@ bool check(const std::vector<Mask>& adjacency, bool report = false) {
 }
 
 int main(int argc, char** argv) {
+    if (argc == 5 && std::string(argv[1]) == "--circulant") {
+        int half = std::stoi(argv[2]);
+        int first_shift = std::stoi(argv[3]);
+        int second_shift = std::stoi(argv[4]);
+        if (half < 3 || half > 10 || first_shift <= 0 || first_shift >= half ||
+            second_shift <= first_shift || second_shift >= half) return 2;
+        std::vector<Mask> adjacency(2 * half);
+        for (int row = 0; row < half; ++row) {
+            for (int shift : {0, first_shift, second_shift}) {
+                int neighbor = half + (row + shift) % half;
+                adjacency[row] |= Mask{1} << neighbor;
+                adjacency[neighbor] |= Mask{1} << row;
+            }
+        }
+        check(adjacency, true);
+        return 0;
+    }
     if (argc > 1 && std::string(argv[1]) == "--two-block-cycle") {
         std::vector<Mask> adjacency(22);
         std::vector<Mask> base = {2048,896,3584,1344,1152,2176,8,50,10,6,28,37};

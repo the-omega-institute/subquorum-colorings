@@ -44,7 +44,7 @@ condition2 supplies a replacement. This distinction is needed; merely
 having two selected neighbors at x does not always make deletion safe.
 
 **Lemma 1 (upward closure).** If v satisfies these conditions for C, it
-satisfies them for every C' containing C.
+satisfies them for every C' with C subset C' subset V(K).
 
 The first condition persists. A selected neighbor already in C keeps its
 replacement from condition2. A newly selected neighbor u of v was outside
@@ -145,6 +145,9 @@ The last row is the image of this one under the automorphism.
 Every listed vertex is selected and avoids A. The preceding neighbor
 checks verify conditions2and3; the chosen vertex also has a selected
 neighbor, proving condition1.
+Whenever an omitted vertex retains two selected neighbors after deletion,
+it had at least three beforehand, so the first alternative of condition3
+applies; those two surviving neighbors need not themselves be active.
 
 ### Three branch vertices omitted: t=3
 
@@ -156,6 +159,10 @@ neighbor on the other length-three subdivided edge, whose next vertex
 is also selected. Thus the new outside vertex and the previously omitted
 neighbor both have the required star. No selected neighbor loses its last
 selected neighbor. This proves all three conditions and finishes Lemma2.
+
+Explicitly, for surviving branches 1,2,7,10, respectively, the selected
+neighbor retains 8,11,5,3. The adjacent omitted branch is covered after
+deletion by the respective paths 2--11--5, 1--8--3, 10--3--8, 7--5--11.
 
 This proof partitions the omissions by branch membership and derives
 each rule from neighborhoods. The accompanying finite checks test the
@@ -186,7 +193,8 @@ If x is not adjacent to v, take its former witnessing star. A star not
 using v survives. A star using v must have v as a leaf and a selected
 center u adjacent to v. Since v has no external neighbors, u lies in C.
 Condition2 supplies another selected core neighbor of u, which replaces
-v as the other leaf. Thus x is still covered.
+v as the other leaf. The replacement differs from x because it belongs
+to C subset S, whereas x does not belong to S. Thus x is still covered.
 
 Every outside vertex is covered, so S' is star-forming, contradicting
 inclusion-minimality. This proves the local cap independently of the
@@ -299,9 +307,13 @@ two-connected completion supplies such a path is the general component
 argument above; it does not depend on these examples.
 
 An [independent Oracle review](../output/exact-subcubic-oracle-review.json)
-of the new core-cap argument has been requested. Its receipt records the
-actual status and reviewed input; no approval is claimed while it is pending.
-The later general planarity barrier is outside that review input.
+accepted the new core-cap argument after checking every case directly from
+the neighborhoods, without relying on computations or Lean. Its clarifications
+about the domain of upward closure, surviving neighbor counts, distinctness
+of the replacement leaf and the four final-case witnesses are incorporated.
+The receipt preserves the actual reviewed input and full response. The
+later general composition corollary and planarity barrier are outside that
+review input. The previous cyclic attainment was assumed in this review.
 
     python3 scripts/check_exact_subcubic.py --output output/exact-subcubic-controls.json
     python3 scripts/check_subcubic_formal.py --exact --lean /path/to/lean-4.33.0 --output output/exact-subcubic-formal-check.json

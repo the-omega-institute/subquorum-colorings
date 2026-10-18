@@ -1,5 +1,5 @@
 {
-  "status": "dispatched_awaiting_response",
+  "status": "completed_no_substantive_gap_clarifications_applied",
   "pool": "chrono-chatgpt-pro-pool",
   "task_id": "0c407cf2-b346-45ad-8b0d-09e151e5418b",
   "conversation_id": "conv_6a3ff75f7f7d02e2",
@@ -7,8 +7,16 @@
   "input": "docs/reviews/2026-10-19-exact-subcubic-review-input.md",
   "requested_scope": "Robust deletion, upward closure, analytic case table, arbitrary-outside cap and exact cyclic SF upper bound assuming previously proved attainment.",
   "not_in_input": "Later general q-core composition corollary, exact base SF corollary and general planar two-connected completion obstruction; formal Lean source and finite controls were not supplied as evidence.",
-  "observed_model_switcher": null,
-  "observed_model_effort": null,
-  "review_approval_claimed": false,
-  "transport": "one live streaming NyxID oracle-broker request; do not restart solely because it is slow"
+  "response": "docs/reviews/2026-10-19-exact-subcubic-oracle-response.txt",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "chatgpt_url": "https://chatgpt.com/c/6ad50f78-dc80-83ec-bcd9-cdb832c96196",
+  "review_approval_claimed": true,
+  "clarifications_applied": [
+    "Explicitly restrict upward closure to subsets of the core.",
+    "Explain that an omitted vertex retaining two selected neighbors had at least three before deletion.",
+    "Explain why an internal replacement leaf cannot equal an old outside vertex.",
+    "List all four final-case witnesses explicitly."
+  ],
+  "transport": "original single streaming NyxID oracle-broker request completed; no duplicate submitted"
 }
