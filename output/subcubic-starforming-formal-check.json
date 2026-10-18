@@ -1,0 +1,23 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T17:55:36.994023+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checks": [
+    {
+      "module": "StarForming/SubcubicCertificate.lean",
+      "seconds": 28.655,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "module": "StarFormingSubcubicAudit.lean",
+      "seconds": 2.606,
+      "exit_code": 0,
+      "stdout": "'StarForming.Subcubic.adjacency_simple' depends on axioms: [propext]\n'StarForming.Subcubic.base_forms' depends on axioms: [propext, Quot.sound]\n'StarForming.Subcubic.base_deletion_failures' depends on axioms: [propext, Quot.sound]\n'StarForming.Subcubic.base_minimal' depends on axioms: [propext, Quot.sound]\n'StarForming.Subcubic.selected_card' depends on axioms: [propext]\n'StarForming.Subcubic.dissociation_port_cap' depends on axioms: [propext]\n'StarForming.Subcubic.port_attainment' depends on axioms: [propext]\n'StarForming.Subcubic.no_double_counting_bound' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "maximum_rss_bytes": 3752280064,
+  "scope": "Std-only: explicit base graph simplicity, local star predicate, deletion minimality, eight-set size, all4096mask dissociation port cap, four isolated-port attaining sets and general arithmetic double-counting bound. Cyclic gluing, exact global attainment, two-connectivity and global SF lower bound have written proofs; they are not asserted to be formalized here."
+}
