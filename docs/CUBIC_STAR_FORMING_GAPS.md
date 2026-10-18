@@ -146,8 +146,10 @@ The selected points are
     a+b, a+c, b+c, n=a+b+c.
 
 The three selected pair-lines meet these four points at a+b,a+c,b+c,
-respectively. Since L has at most two selected points in the original
-plane, it meets U; since L is not one of the three pair-lines, it meets
+respectively. Both ports belong to D, so restoring PL increases L's
+selected degree by exactly one: deg_(H[D])(L)=deg_(B[D])(L)+1<=2.
+Thus L has at most two selected points in the original
+plane and meets U; since L is not one of the three pair-lines, it meets
 U exactly once. Relabeling a,b,c, we have L={a,b+c,n}.
 
 The port P is therefore b+c or n. If P=n, then b+c is adjacent in B[D]
@@ -249,8 +251,11 @@ For r=1 the spanning cycle proves the same assertion.
 
 The base has girth six. Any path inside B between its ports has length
 at least five: a shorter odd path, together with PL, would give a
-four-cycle in H. A cycle using interfaces must use all r interfaces;
-within each traversed copy it joins the two ports. For r>=2 it therefore
+four-cycle in H. For r>=2 every block has exactly two interface edges in
+its edge boundary, and a cycle crosses any vertex-set boundary an even
+number of times. Using one interface therefore forces the other, and
+propagation around the ring forces all r interfaces. Within each
+traversed copy the cycle joins the two ports. It therefore
 has length at least 6r. The selected six-cycle in every copy survives,
 so F_r has girth exactly six.
 
@@ -304,9 +309,14 @@ compiler-trust certificate is used. The Fano dissociation geometry, Lemma 2,
 global cyclic embedding, exact beta attainment, connectivity and girth have
 written proofs here; they are not claimed fully Lean formalized.
 
-An independent Oracle review of this written proof is pending. Its
-[receipt](../output/cubic-starforming-oracle-review.json) preserves the
-original request and live handle; no approval is claimed before a response.
+An independent Oracle review accepted the complete all-r written proof
+without a substantive gap. The two requested clarifications, on L's
+selected degree before edge removal and cut parity in the girth argument,
+are incorporated above. The
+[receipt](../output/cubic-starforming-oracle-review.json) identifies the
+actual model and scope; the
+[complete response](reviews/2026-10-19-cubic-oracle-response.txt) is preserved.
+The review is additional scrutiny, not a substitute for the displayed proof.
 
 Reproduce the controls with Python 3 and the optional C++20 enumerator:
 

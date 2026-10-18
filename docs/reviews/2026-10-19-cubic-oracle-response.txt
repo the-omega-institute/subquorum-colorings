@@ -1,0 +1,107 @@
+Referee verdictThe stated theorem is correct for every positive integer  $r$ , under the supplied definition of 2-star formation. I found no counterexample or substantive logical gap. The deleted-incidence saturation lemma is valid, the cyclic accounting gives the exact dissociation number, and the construction preserves minimal star formation, cubic degree, two-connectivity, and girth six.In particular, the proof establishes precisely
+$$\boxed{
+\Gamma(F_r)=\alpha(F_r)=7r,\qquad
+\beta_2(F_r)=7r+\lfloor r/2\rfloor,\qquad
+SF_2(F_r)\ge 8r.
+}$$
+It does not require an exact value of  $SF_2(F_r)$ .My checks below use the incidence axioms, ordinary combinatorial arguments, and direct substitution for the displayed witnesses. No enumeration or Lean result is used as proof evidence. There are two implicit steps worth making explicit in the manuscript: the selected degree of  $L$  before deleting its incidence, and the cut-parity justification for a cycle using all interfaces.1. The Fano-plane proof of  $\beta_2(H)=7$  is soundEither bipartition class is an independent set of size seven, giving the lower bound.The dissociation property is hereditary under taking subsets, so reducing any hypothetical larger dissociation set to one of size exactly eight is legitimate. The point and line incidence axioms are symmetric, so one can arrange  $p\le q$ , hence  $p\le4$ .The exclusions are all correct: $p=0$ : there are only seven lines. $p=1,q=7$ : the selected point has three selected neighbors. $p=2,q=6$ : only one line is omitted, so each selected point has at least two selected neighbors. $p=3,q=5$ : a selected point needs at least two of its three incident lines omitted. Since exactly two lines are omitted, every selected point lies on both. Two distinct selected points would therefore have two common lines, contradicting uniqueness of their joining line. $p=q=4$ : every selected line contains at least two omitted points. There are only three pairs of omitted points, and each pair determines one line. Thus at most three distinct lines can have the required property, whereas four were selected.The last argument does not assume that the three omitted points are noncollinear. If they are collinear, the number of eligible lines is even smaller.Therefore
+$$\beta_2(H)=7.$$
+2. The eight-set is star-forming and inclusion-minimalThe geometric description is consistentThree distinct noncollinear Fano points  $a,b,c$  are linearly independent in  $\mathbf F_2^3$ . Consequently,
+$$a,\ b,\ c,\ a+b,\ a+c,\ b+c,\ n=a+b+c$$
+are seven distinct nonzero vectors.The selected side lines  $ab,ac,bc$ , together with  $a,b,c$ , induce exactly the stated six-cycle. The selected point  $n$  belongs to none of those side lines or to  $E$ . The selected line
+$$E=\{a+b,a+c,b+c\}$$
+contains no selected point. Thus  $n$  and  $E$  are indeed isolated in  $H[S]$ .The remaining three lines are exactly
+$$M_a=\{a,b+c,n\},\qquad
+M_b=\{b,a+c,n\},\qquad
+M_c=\{c,a+b,n\}.$$
+Every omitted vertex has two selected neighbors:Each omitted point  $a+b,a+c,b+c$  is adjacent to its selected side line and to  $E$ .Each omitted line  $M_a,M_b,M_c$  is adjacent to its corresponding triangle point and to  $n$ .This proves star formation using the first alternative in the definition alone.Every proposed deletion witness really failsThe distinction between “one selected neighbor” and “one selected neighbor which is isolated in the selection” is essential here, and the proof handles it correctly.Deleting  $n$  leaves  $n$  itself outside the selection with no selected neighbor. The same holds for deleting  $E$ .After deleting  $a$ , the outside line  $M_a$  has only  $n$  as a selected neighbor. Since  $n$  remains isolated in the selected induced graph, neither alternative in the definition holds for  $M_a$ . The arguments for deleting  $b$  and  $c$  are identical.After deleting  $ab$ , the outside point  $a+b$  has only  $E$  as a selected neighbor. Since  $E$  remains isolated in the selection, that point fails the condition. The other two side-line deletions work in the same way.The upward-closure argument is also valid. If  $T$  is star-forming and  $T\subseteq T'$ , then every vertex outside  $T'$  retains its witnessing star from  $T\cup\{x\}$ . Therefore, if a proper subset of  $S$  were star-forming, a single-deletion set containing it would be star-forming too. Failure after every single deletion proves inclusion-minimality.The numerical witnesses agree with the incidence formulaFor the chosen triangle  $1,2,3$ , the side lines are  $L_2,L_3,L_4$ , the point  $n$  is  $5$ , and  $E=L_0$ . Thus
+$$S=\{1,2,3,5,7,9,10,11\}$$
+is correctly labeled.The complete stated deletion list checks as follows:Deleted vertexFailing vertexIts selected neighbors after deletion $1$  $8=L_1$ Only  $5=n$ , which is isolated $2$  $12=L_5$ Only  $5=n$ , which is isolated $3$  $13=L_6$ Only  $5=n$ , which is isolated $5=n$  $5$ None $7=E$  $7$ None $9=L_2$  $6$ Only  $7=E$ , which is isolated $10=L_3$  $0$ Only  $7=E$ , which is isolated $11=L_4$  $4$ Only  $7=E$ , which is isolatedHence the local conclusion  $SF_2(H)\ge8$  is fully established.3. The deleted-incidence saturation lemma is correctThis is the main structural ingredient, and its proof does establish the required conclusion for every incident pair  $P,L$ .Size eight forces both ports to be selectedFor any dissociation set  $D$  in  $B=H-PL$ ,
+$$D\setminus\{P\}$$
+is a dissociation set in  $H$ : the only edge restored when passing from  $B$  to  $H$  has an endpoint outside this set. Therefore
+$$|D|\le8.$$
+If  $|D|=8$  and either  $P$  or  $L$  were omitted, then  $H[D]=B[D]$ . That would contradict  $\beta_2(H)=7$ . Thus both ports belong to every eight-set.The argument forcing  $p=q=4$  does not require an unjustified symmetryFor  $p=1$ , the selected point must be  $P$ , and both its remaining incident lines are selected.For  $p=2$ , the selected point other than  $P$  retains all three incidences in  $B$ ; since only one line is omitted, it has at least two selected neighbors.For  $p=3$ , the two selected points other than  $P$  must each lie on both omitted lines, contradicting uniqueness of the line through two points.The line-side argument uses the same reasoning with the unique degree-two line  $L$ . For example, if  $q=3$ , the two selected lines other than  $L$  must each contain both omitted points, which is impossible. No automorphism fixing the deleted flag is being assumed.Since  $p+q=8$ , it follows that  $p=q=4$ .The omitted-point classification is forcedLet  $U$  be the three omitted points. The three selected lines other than  $L$  have all their original incidences, so each contains at least two members of  $U$ .There are at most three lines determined by pairs from  $U$ . Since three distinct selected lines have this property: $U$  must be noncollinear; otherwise its three pairs would determine only one line.The selected lines other than  $L$  are exactly the three pair-lines of  $U$ .Write  $U=\{a,b,c\}$ . The selected points are then
+$$a+b,\quad a+c,\quad b+c,\quad n=a+b+c,$$
+and the three selected pair-lines meet them respectively at  $a+b,a+c,b+c$ .The manuscript’s next inference is correct, but I would display its justification:
+$$\deg_{H[D]}(L)
+=
+\deg_{B[D]}(L)+1
+\le2.
+\tag{1}$$
+The equality uses the already established fact that both endpoints of the deleted incidence belong to  $D$ .Equation (1) says that  $L$  contains at least one omitted point. Since  $L$  is distinct from the three selected pair-lines, it cannot contain two omitted points. Hence it contains exactly one.Relabel so that this point is  $a$ . Of the three lines through  $a$ , two are the selected pair-lines  $ab$  and  $ac$ ; the remaining one is
+$$L=\{a,b+c,n\}.$$
+Both ports are saturatedBecause  $P$  is selected and incident with  $L$ ,
+$$P\in\{b+c,n\}.$$
+If  $P=n$ , deleting  $PL$  removes  $nL$ , leaving  $b+c$  adjacent to both selected lines  $bc$  and  $L$ . That gives selected degree two, a contradiction.Therefore  $P=b+c$ . The selected edge from  $P$  to  $bc$  remains, while its edge to  $L$  is removed. The line  $L$  retains its selected neighbor  $n$ . Thus
+$$\deg_{B[D]}(P)=\deg_{B[D]}(L)=1.$$
+In fact, the classification proves that every such eight-set induces four disjoint edges. The weaker port-saturation conclusion is exactly what the global argument needs.4. The cyclic replacement preserves cubic degree and minimal star formationWrite  $p_i,\ell_i$  for the two ports in block  $B_i$ , to distinguish block indices from the original line labels. The interfaces are
+$$\ell_i p_{i+1}.$$
+Degree, simplicity, and bipartitenessEach port loses one edge when its block is formed and receives exactly one interface edge. Every other vertex retains its three original edges.For  $r=1$ , the interface restores the deleted incidence.For  $r\ge2$ , interfaces join different blocks. In particular, when  $r=2$ , the two interfaces are
+$$\ell_0p_1,\qquad \ell_1p_0.$$
+They have different endpoint pairs, so the resulting graph is simple; there are no parallel edges in  $F_2$ .Every interface joins a line vertex to a point vertex. Therefore  $F_r$  is cubic and bipartite, with
+$$|V(F_r)|=14r,\qquad |E(F_r)|=21r.$$
+Lemma 3 preserves minimality, not merely star formationFor every  $T\subseteq S$  and  $x\notin T$ , the set  $T\cup\{x\}$  contains at most one vertex outside  $S$ . Thus an edge whose two endpoints lie outside  $S$  cannot occur in the graph induced on  $T\cup\{x\}$ .Consequently,
+$$G[T\cup\{x\}]=G'[T\cup\{x\}]$$
+whenever  $G,G'$  differ only in edges outside  $S$ . This proves equality of the star-forming condition for every  $T\subseteq S$ , including all possible deletion sets.That last point handles a possible concern: some of the deletion witnesses are themselves ports. Rewiring their neighbors outside  $S$  cannot give them a permitted star, because the other vertices of that star must belong to the remaining selection.Here the deleted edge is indeed  $0L_1$ , since
+$$L_1=\{1,0,5\},$$
+and both  $0$  and  $L_1=8$  are omitted by the numerical  $S$ . Every removed or added interface edge therefore has both endpoints outside  $S_r$ .The union of the local minimal sets is minimal in the disjoint union, and Lemma 3 transfers that fact to  $F_r$ . Hence
+$$SF_2(F_r)\ge8r.$$
+5. The exact dissociation formula follows without double-countingUpper boundLet  $D$  be any dissociation set in  $F_r$ , and define
+$$d_i=|D\cap V(B_i)|,\qquad
+I=\{i:d_i=8\},\qquad t=|I|.$$
+Restriction to a block gives a dissociation set in that block, so Lemma 2 yields
+$$|D|
+=\sum_i d_i
+\le 8t+7(r-t)
+=7r+t.
+\tag{2}$$
+If  $i\in I$ , then  $\ell_i$  is selected and already has selected degree one inside  $B_i$ . The interface  $\ell_i p_{i+1}$  forces
+$$p_{i+1}\notin D.$$
+An eight-set in the next block would have to contain both ports, so  $i+1\notin I$ .The successor map is injective and sends  $I$  into its complement. Therefore
+$$t\le r-t,\qquad t\le\lfloor r/2\rfloor.
+\tag{3}$$
+This is valid accounting: each block contributes at most one unit above seven, and each eight-block has a distinct successor which is not an eight-block. No seven-block is charged twice.For  $r=2$ , the same argument gives  $t\le1$ .For  $r=1$ , an eight-set in  $B_1$  contains both saturated ports, so restoring their edge gives selected degree two. Thus  $t=0$ .Combining (2) and (3) proves
+$$\beta_2(F_r)\le7r+\lfloor r/2\rfloor.$$
+The displayed sets give the matching lower boundThe adjacency lists are complete, not just lists of some induced edges.For
+$$D_8=\{0,1,2,3,7,8,12,13\},$$
+the selected lines are  $L_0,L_1,L_5,L_6$ . Their intersections with the selected point set  $\{0,1,2,3\}$ , after removing  $0L_1$ , are respectively
+$$\{0\},\quad\{1\},\quad\{2\},\quad\{3\}.$$
+Thus  $B[D_8]$  consists exactly of
+$$0\!-\!7,\quad1\!-\!8,\quad2\!-\!12,\quad3\!-\!13.$$
+For
+$$D_7=\{1,2,4,5,7,10,13\},$$
+the selected lines  $L_0,L_3,L_6$  meet its selected points in  $\{4\},\{2\},\{5\}$ , respectively. Its induced edges are exactly
+$$4\!-\!7,\quad2\!-\!10,\quad5\!-\!13,$$
+and  $1$  is isolated. Both ports are omitted.Place  $D_8$  on  $\lfloor r/2\rfloor$  nonadjacent cyclic positions and  $D_7$  elsewhere. Every interface has an omitted endpoint, so no interface contributes an edge to the selected induced graph.For  $r=1$ , this prescription simply uses  $D_7$ , which is unaffected by restoring the port edge.The resulting dissociation set has size
+$$8\lfloor r/2\rfloor+7\bigl(r-\lfloor r/2\rfloor\bigr)
+=7r+\lfloor r/2\rfloor.$$
+Therefore
+$$\boxed{\beta_2(F_r)=7r+\lfloor r/2\rfloor.}$$
+6. Two-connectivity and girth six hold, including the small casesTwo-connectivityThe union of the shift-zero and shift-three edges is a spanning cycle. Indeed,
+$$i\longrightarrow L_{i+3}\longrightarrow i+3$$
+advances the point label by three, and addition by three cycles through all seven residues.The removed edge  $0L_1$  has shift one, so this spanning cycle survives in  $B$ . Hence  $B-v$  is connected for every vertex  $v$ : the spanning cycle with  $v$  deleted supplies a spanning path.Now delete a vertex from  $F_r$ . The affected block remains connected, and every other block remains connected. Since the two ports of a block are distinct and each is incident with only one interface, this deletion destroys at most one interface.For  $r\ge3$ , the ring of connected blocks remains connected after losing at most one joining edge. For  $r=2$ , at least one of its two distinct interfaces survives. For  $r=1$ , the surviving spanning cycle already proves the assertion.Thus  $F_r-v$  is connected for every vertex  $v$ , and  $F_r$  is two-connected.The port-to-port distance boundA path in  $B$  from  $P$  to  $L$  has odd length because the ports lie in opposite bipartition classes.Length one is excluded by deletion of  $PL$ . A length-three path, together with  $PL$  in  $H$ , would form a four-cycle. Therefore every such path has length at least five.Why an interface cycle uses every interfaceThis is the second place where I recommend adding one explicit justification.For  $r\ge2$ , the edge boundary of every block consists of its two interfaces. A cycle crosses any vertex-set boundary an even number of times. Thus if it uses one interface of a block, it must use the other. Propagating this condition around the ring forces it to use all  $r$  interfaces.A simple cycle using those interfaces has, in every block, a path joining the two ports. Its length is therefore at least
+$$r+\sum_{i=1}^{r}5=6r.$$
+This argument includes  $r=2$ , where a cycle using interfaces has length at least twelve.Cycles wholly inside a block have length at least six, since the block is a subgraph of  $H$ . Meanwhile the selected six-cycle survives in every block. Thus
+$$\boxed{\operatorname{girth}(F_r)=6.}$$
+7. Independence, upper domination, and the final gapIndependence numberThe shift-zero edges remain a perfect matching with  $7r$  edges. Every independent set contains at most one endpoint of each matching edge, so
+$$\alpha(F_r)\le7r.$$
+Either bipartition class attains that size. Hence
+$$\alpha(F_r)=7r.$$
+The upper-domination identity can be checked directlyThe cited bibliographic reference is E. J. Cockayne, O. Favaron, C. Payan and A. G. Thomason, “Contributions to the theory of domination, independence and irredundance in graphs,” Discrete Mathematics 33(3) (1981), 249–258. ScienceDirectFor this review, the needed identity has a short direct proof. Let  $M$  be a minimal dominating set in a bipartite graph with parts  $A,B$ , and let  $J$  be the vertices isolated in  $G[M]$ .Every  $v\in(M\cap B)\setminus J$  has an external private neighbor  $u_v\in A\setminus M$ : minimality supplies a vertex undominated after deleting  $v$ , and that vertex cannot be  $v$ , because  $v$  has a neighbor in  $M$ . Thus
+$$N(u_v)\cap M=\{v\}.$$
+These private neighbors are distinct.Now
+$$(M\cap A)\ \cup\ (J\cap B)\
+\cup\ \{u_v:v\in(M\cap B)\setminus J\}$$
+is independent and has size  $|M|$ . Independence follows from bipartiteness, isolation of  $J$  in  $G[M]$ , and the private-neighbor property. Therefore  $\Gamma\le\alpha$ .Conversely, a maximum independent set is a minimal dominating set, so  $\alpha\le\Gamma$ . Hence  $\Gamma=\alpha$ , giving
+$$\Gamma(F_r)=7r.$$
+The claimed gap follows exactly as statedThe verified lower bound and exact dissociation value give
+$$\begin{aligned}
+SF_2(F_r)-\beta_2(F_r)
+&\ge 8r-\bigl(7r+\lfloor r/2\rfloor\bigr)\\
+&=\lceil r/2\rceil\\
+&\ge r/2\\
+&=\frac{|V(F_r)|}{28}.
+\end{aligned}$$
+The nonplanarity conclusion also follows. If this two-connected graph were planar, every face boundary would have length at least six. Euler’s formula and  $2m\ge6f$  would imply
+$$m\le\frac32(n-2),$$
+contradicting cubicity  $m=3n/2$ .I would accept the all- $r$  mathematical claim. The two suggested additions—equation (1) in the saturation proof and the even-cut argument in the girth proof—make existing valid inferences explicit. They require no change to the theorem, and the conclusion remains a lower bound  $SF_2(F_r)\ge8r$ , exactly as claimed.
