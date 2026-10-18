@@ -122,6 +122,7 @@ Write x=11 and y=3 for their neighbors. There are four cases.
 * If x,y are absent, the remaining core candidates
   L={1,2,4,5,7,8,9,10} induce a six-cycle 1--7--4--10--2--9--1 with
   pendants 8 at 1 and 5 at 7. We show that at most five can be selected.
+  Dissociation is hereditary, so it suffices to exclude six-element subsets.
   If both 1 and 7 are omitted, all six remaining candidates would include
   the path 9--2--10--4. If 1 is selected in a six-set, its degree-three
   neighborhood forces both omissions to be two of {7,8,9}. Omitting
@@ -186,7 +187,9 @@ For even r, reverse the original bipartition in alternating copies.
 The two ports being identified then belong to the same global part.
 Every edge still crosses the global bipartition, so J_r is bipartite.
 
-Each core has its spanning ten-cycle. Deleting a core vertex leaves that
+Contracting each core while retaining the shared vertices gives the
+ordinary cycle C_{2r}; for r=2 this is a four-cycle. Each core has its
+spanning ten-cycle. Deleting a core vertex leaves that
 core connected and can destroy at most one inter-core connection, since
 its two port-neighbors 3 and 11 are distinct. Deleting a shared vertex
 destroys exactly one inter-core connection. The cyclic quotient of cores
@@ -283,7 +286,9 @@ For completeness, every cycle C_n, n>=3, satisfies
 
     SF_2(C_n) = beta_2(C_n) = floor(2n/3).
 
-Here is a direct upper-bound argument. In a minimal star-forming selection
+Here is a direct upper-bound argument. The empty selection is not star-forming,
+and the full selection is not minimal because any deleted vertex still
+has two selected neighbors. Thus in a minimal star-forming selection
 there is at least one selected and one omitted vertex. Split the cyclic
 word into maximal selected runs and omitted gaps. Every gap has length one
 or two, since the middle of three consecutive omitted vertices has no
@@ -349,7 +354,14 @@ and amplifies its gap within two-connected bipartite graphs of minimum
 degree two. The source paper arXiv:2610.03785v2 was reread on October19:
 its bipartite and triangle-free equality conjectures are the relevant
 context; no subcubic or cycle specialization was found there. This is not
-a complete literature-priority search. The exact SF_2(J_r), a sharp universal gap bound for subcubic
+a complete literature-priority search. The current
+[arXiv record](https://arxiv.org/abs/2610.03785) was independently checked:
+v3, dated12October2026, is withdrawn, with the comment "Some conjectures
+in this paper have been disproved". References here to definitions and
+conjectures are specifically to v2. This status concerns the star-forming
+preprint2610.03785; it is distinct from the submitted sub-quorum paper
+2609.25128, whose public record is v4 and is not marked withdrawn.
+The exact SF_2(J_r), a sharp universal gap bound for subcubic
 bipartite graphs, cubic regular graphs, and rectangular-grid equality
 remain separate questions. No smallest-order or literature-priority claim
 is made. The original submitted sub-quorum manuscript is unchanged.
@@ -361,6 +373,14 @@ Thus this result supplies a structural obstruction without settling the
 rectangular-grid equality question.
 
 ## Reproduction and verification scope
+
+The [Oracle proof review](../output/subcubic-oracle-review.json) independently
+accepted the core all-even-r argument and cycle equality, without relying
+on computations or Lean. Its three clarity suggestions are incorporated.
+The exact reviewed snapshot and full response are preserved in docs/reviews.
+The later perfect-matching calculation, certificate exchange and nonplanarity
+additions have separate written proofs and controls; they were not included
+in that Oracle request. No literature-priority claim follows from the review.
 
 Run the independent literal-star and proper-subset checks, port-state
 enumeration and cyclic controls with

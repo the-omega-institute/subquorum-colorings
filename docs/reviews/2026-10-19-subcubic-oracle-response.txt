@@ -1,0 +1,112 @@
+VerdictYes. Under the stated definitions, this is a valid general construction of unbounded  $SF_2-\beta_2$  gaps in finite simple, two-connected, subcubic bipartite graphs. The written argument establishes, for every even  $r\ge2$ ,
+$$|V(J_r)|=11r,\qquad |E(J_r)|=14r,\qquad
+\beta_2(J_r)=\frac{13r}{2},\qquad SF_2(J_r)\ge7r.$$
+I found no false mathematical claim or substantive proof gap in the four-case block bound, cyclic identification, global counting, global minimality, or cycle equality argument. There are a few elementary implicit steps worth making explicit, particularly in the fourth block case and the  $r=2$  connectivity discussion.My conclusion follows from the supplied adjacency list and written reasoning. It does not use the reported computations or Lean checks. There is also a bibliographic status update worth adding, discussed separately below.1. The block dissociation proof is correctThe preliminary reductions are legitimateThe matrix, adjacency list, fourteen-edge count, spanning ten-cycle, and two additional core edges agree.For any dissociation set  $D\subseteq V(K)$ , every three consecutive vertices of the spanning ten-cycle contain at most two vertices of  $D$ . Summing the ten inequalities gives
+$$3|D|\le20,$$
+hence  $|D|\le6$ . Additional core edges can only impose further restrictions. This proves the upper bound for port state  $00$ .The leaf replacement argument also works. If a leaf is absent and its neighbor is selected, removing that neighbor and adding the leaf preserves cardinality and leaves the newly selected leaf isolated. If both are absent, adding the leaf increases cardinality and again adds an isolated vertex. Deleting a vertex cannot increase an induced degree.The two operations can be performed successively because the leaf neighbors are distinct non-leaves.One distinction is worth recording: this normalization does not preserve prescribed port states, but the proof does not require it to. It establishes the unrestricted upper bound seven. That upper bound then applies to all three nonzero port states, while the  $00$  state has its separate upper bound six.The first three cases have the stated capsWith both ports selected and  $x=11,\ y=3$ , the calculations are:Selected among  $x,y$ Forced absencesObstruction on the remaining candidatesTotal upper boundBoth $2,5,8,10$  $4-7-1-9$ , which permits at most three selected vertices $2+2+3=7$ Only  $y$  $8,10$ , with  $x$  absentDisjoint paths  $4-7-5$  and  $1-9-2$ , each permitting at most two $2+1+4=7$ Only  $x$  $2,5$ , with  $y$  absentDisjoint paths  $8-1-9$  and  $7-4-10$ , each permitting at most two $2+1+4=7$ All the asserted path edges exist. The paths in the second and third cases are vertex-disjoint, so adding their two-vertex caps is justified. Edges between the two paths do not weaken these upper bounds.The fourth case is exhaustiveWhen  $x,y$  are both absent, the eight remaining candidates induce exactly the graph described:
+$$1-7-4-10-2-9-1,$$
+with pendant  $8$  at  $1$  and pendant  $5$  at  $7$ .To prove its dissociation number is at most five, it suffices to exclude six-element dissociation sets: every larger dissociation set would contain one. This hereditary reduction is implicit in the note and is valid.Now suppose a six-set were selected. Exactly two vertices of  $L$  are omitted.If both  $1$  and  $7$  are omitted, the selected vertices include  $9-2-10-4$ , which violates dissociation.If  $1$  is selected, at least two of its three neighbors  $7,8,9$  must be omitted. Because there are exactly two omissions overall, these are the only possibilities:
+$$\begin{array}{c|c}
+\text{Omitted pair}&\text{Selected three-vertex path}\\
+\hline
+\{7,8\}&2-10-4\\
+\{7,9\}&2-10-4\\
+\{8,9\}&4-7-5
+\end{array}$$
+Every possibility fails.The remaining situation, in which  $1$  is omitted and  $7$  is selected, is covered by the stated automorphism
+$$(1\ 7)(9\ 4)(2\ 10)(8\ 5).$$
+This permutation really does preserve the six-cycle and exchange the two pendant attachments.These possibilities exhaust all six-sets. Thus at most five core candidates can be selected in this case, and adding the two ports gives at most seven.Classification: the fourth case is correct. Its only implicit step is the elementary reduction to six-element subsets; it does not conceal an unproved enumeration claim.All four attaining sets workA direct check of the selected edges in the displayed witnesses gives:Port stateEdges induced by the displayed witnessSelected-port behavior $00$  $2-9,\ 3-8$ No selected ports $01$  $1-8,\ 4-10,\ 5-11$  $6$  is isolated $10$  $2-9,\ 3-8$  $0$  is isolated $11$  $1-8$ Both ports are isolatedEvery other selected vertex in each row is isolated. Therefore the exact port-state maxima are indeed
+$$(6,7,7,7).$$
+The isolation property is particularly important: it supplies the compatibility needed for global attainment after identification.The block eight-set is minimal star-formingFor
+$$S=\{0,1,4,5,6,7,8,9\},$$
+the selected edges are exactly
+$$1-7,\quad1-8,\quad1-9,\quad7-4,\quad7-5.$$
+Thus the double-star description and isolation of both ports are correct.The four outside-vertex checks and all eight deletion witnesses are correct. For example, deleting  $5$  leaves  $11$  with only the isolated selected neighbor  $0$ , and deleting  $8$  leaves  $3$  with only the isolated selected neighbor  $6$ . These are also the two local witnesses that require the most care when passing to the global graph.Upward closure justifies the use of single deletions to establish inclusion-minimality. Hence the written block argument proves
+$$\beta_2(H)=7,\qquad SF_2(H)\ge8.$$
+2. Cyclic identification works, including  $r=2$ Write  $v_i$  for vertex  $v$  in copy  $H_i$ . The identified vertices are precisely
+$$w_i=\{6_i,0_{i+1}\},
+\qquad i\in\mathbb Z/r\mathbb Z.$$
+These pairs are disjoint: every  $6_i$  occurs in one pair and every  $0_i$  occurs in one pair. There is no transitive chain of identifications that merges different  $w_i$ 's.The image of  $H_i$  contains its ten core vertices together with
+$$0_i=w_{i-1},\qquad 6_i=w_i.$$
+These two shared vertices are distinct for every  $r\ge2$ .The two-block caseFor  $r=2$ , the classes are
+$$w_0=\{6_0,0_1\},\qquad
+w_1=\{6_1,0_0\}.$$
+Both block images contain both shared vertices, but their cores are disjoint. That two-vertex intersection causes no difficulty: each shared vertex still belongs to exactly two block images.The connecting paths are
+$$3_0-w_0-11_1,\qquad
+3_1-w_1-11_0.$$
+They are distinct and use different attachment vertices in each core.Simplicity, counts, and degreesNo loops arise because every original edge has a core endpoint, and core vertices are never identified.No edges merge. Core-to-core edges are unchanged, and the two edges at any shared vertex have distinct core endpoints:
+$$N(w_i)=\{3_i,11_{i+1}\}.$$
+Thus
+$$|V(J_r)|=12r-r=11r,\qquad |E(J_r)|=14r.$$
+All core degrees are preserved, while every shared vertex has degree two. More explicitly, there are  $6r$  vertices of degree three and  $5r$  vertices of degree two, giving the consistent degree sum
+$$3(6r)+2(5r)=28r=2|E(J_r)|.$$
+BipartitenessReversing the original bipartition in alternating copies makes  $6_i$  and  $0_{i+1}$  have the same global color. The wraparound identification is consistent precisely because  $r$  is even. Every original edge continues to join opposite global colors.Vertex two-connectivityThe note’s deletion proof is valid. A particularly explicit version, which also removes any possible ambiguity about a “two-vertex cycle,” is this:Contract each connected core to one vertex, but retain the shared vertices  $w_i$ . The resulting skeleton is
+$$K_0,w_0,K_1,w_1,\ldots,K_{r-1},w_{r-1},K_0,$$
+a cycle  $C_{2r}$ . For  $r=2$ , this is an ordinary four-cycle.Now delete one vertex of  $J_r$ .If it is a shared vertex  $w_i$ , the skeleton loses one vertex and becomes a connected path.If it is a core vertex  $v\in K_i$ , the surviving core  $K_i-v$  remains connected because its spanning ten-cycle becomes a spanning path. Only deleting  $3_i$  or  $11_i$  can remove an edge connecting this core to a shared vertex. Since these attachment vertices are distinct, at most one skeleton edge disappears.A cycle with at most one edge removed remains connected. This argument also includes the surviving shared vertex on a partially broken connection: it remains attached at its other end.Thus deleting any vertex leaves  $J_r$  connected. This proves vertex two-connectivity, including for  $r=2$ .Classification: correct. Calling the suppressed quotient a multigraph with two parallel connections when  $r=2$ , or using the  $C_{2r}$  skeleton above, would improve precision.3. The global dissociation calculation has no double-counting errorLet  $D$  be a global dissociation set. Its restriction to each block image is a dissociation set in that copy of  $H$ , so the local caps apply.Let  $k$  count selected shared vertices, and let  $c$  count blocks containing at least one selected shared vertex. Then
+$$\sum_i |D\cap H_i|
+\le 6(r-c)+7c
+=6r+c.$$
+The multiplicities are exactly as stated:Each selected core vertex contributes once.Each selected shared vertex contributes twice.Consequently
+$$|D|=\sum_i|D\cap H_i|-k
+\le6r+c-k.$$
+This identity remains valid when  $r=2$ , even though both shared vertices lie in both block images.Each selected shared vertex is incident with two blocks, giving  $c\le2k$ , and there are only  $r$  blocks, giving  $c\le r$ . Therefore
+$$c-k\le k,\qquad c-k\le r-k,$$
+and hence
+$$|D|
+\le6r+\min(k,r-k)
+\le6r+\left\lfloor\frac r2\right\rfloor.$$
+There is no assumed independence between the local restrictions. The argument uses necessary local bounds for an upper bound; any additional global compatibility restrictions would only strengthen it.For  $r=2$ , the possibilities make the accounting especially transparent:
+$$(k,c)=(0,0),\ (1,2),\ (2,2),$$
+giving respective upper bounds
+$$12,\quad13,\quad12.$$
+Selecting both shared vertices does not produce a spurious bound of fourteen.Global attainment is compatibleFor even  $r$ , select alternating shared vertices. Each block then contains exactly one selected port.If  $w_i$  is selected, block  $H_i$  uses the  $01$  witness, which omits  $3_i$ , while block  $H_{i+1}$  uses the  $10$  witness, which omits  $11_{i+1}$ . Thus both neighbors of  $w_i$  are omitted:
+$$N(w_i)\cap D=\varnothing.$$
+Every selected shared vertex is therefore isolated globally. Selected core vertices have no extra neighbors outside the ports already included in their local block checks. The union is a dissociation set.Its size can be counted directly as
+$$6r\ \text{selected core vertices}
++\frac r2\ \text{selected shared vertices}
+=\frac{13r}{2}.$$
+Equivalently,  $7r-r/2$  subtracts exactly the extra local count of each selected shared vertex.This also works for  $r=2$ : take state  $01$  in  $H_0$ , state  $10$  in  $H_1$ , and select only  $w_0$ .Therefore the exact general formula
+$$\boxed{\beta_2(J_r)=\frac{13r}{2}}$$
+is proved.4. Global deletion minimality survives identificationThe selected core vertices in each block are
+$$\{1_i,4_i,5_i,7_i,8_i,9_i\},$$
+and all shared vertices are selected. Thus
+$$|S_r|=6r+r=7r.$$
+For every  $i$ ,
+$$N(w_i)=\{3_i,11_{i+1}\}\subseteq V(J_r)\setminus S_r,$$
+so every shared vertex is isolated in the selected subgraph.Every outside vertex is one of  $2_i,3_i,10_i,11_i$ , and the original local star remains available. For example, the relevant paths or stars use
+$$2_i-9_i-1_i,\qquad
+10_i-4_i-7_i,$$
+and the pairs of selected neighbors
+$$N(3_i)\cap S_r=\{w_i,8_i\},\qquad
+N(11_i)\cap S_r=\{w_{i-1},5_i\}.$$
+For minimality, the global deletion checks are:Deleted vertexFailing outside vertexReason in the global graph $1_i$  $2_i$ Its only selected neighbor is  $9_i$ , now isolated. $4_i$  $10_i$ It has no selected neighbor. $5_i$  $11_i$ Its only selected neighbor is  $w_{i-1}$ , which remains isolated. $7_i$  $10_i$ Its only selected neighbor is  $4_i$ , now isolated. $8_i$  $3_i$ Its only selected neighbor is  $w_i$ , which remains isolated. $9_i$  $2_i$ It has no selected neighbor. $w_i$  $w_i$ Both its core neighbors remain outside the selection.The potentially dangerous cases are exactly deletion of  $5_i$  and  $8_i$ :After deleting  $5_i$ , the other neighbor of  $w_{i-1}$  is  $3_{i-1}$ , which is outside  $S_r$ .After deleting  $8_i$ , the other neighbor of  $w_i$  is  $11_{i+1}$ , which is outside  $S_r$ .Thus neither port acquires a selected neighbor from the adjacent block. There is no new star that rescues these witnesses. This remains true for  $r=2$ .Finally, suppose some proper subset  $T\subsetneq S_r$  were star-forming. Choose  $v\in S_r\setminus T$ . Upward closure would imply that the superset  $S_r\setminus\{v\}$  is star-forming, contradicting the corresponding deletion witness.Hence  $S_r$  is inclusion-minimal and
+$$\boxed{SF_2(J_r)\ge7r}.$$
+Combining this with the exact dissociation number gives
+$$SF_2(J_r)-\beta_2(J_r)
+\ge\frac r2
+=\frac{|V(J_r)|}{22}.$$
+Taking  $r=2m$  gives a gap at least  $m$ , so unboundedness follows directly.5. The separate cycle equality proof is also validThe run decomposition is justifiedFor  $n\ge3$ , the empty selection is not star-forming. The full selection is not inclusion-minimal: deleting any vertex leaves that vertex with its two distinct cycle neighbors selected.Therefore every minimal star-forming selection is nonempty and proper, and its cyclic word has selected runs and omitted gaps. This supplies a short justification for the note’s initial assertion.A gap cannot have length at least three: the middle of three consecutive omitted vertices has no selected neighbor.All three safe-deletion arguments workWrite a selected run as  $v_1,\ldots,v_\ell$ .Runs of length at least five. Delete  $v_3$ . The newly omitted vertex has the two selected neighbors  $v_2,v_4$ . They retain selected neighbors  $v_1,v_5$ , respectively. No old outside vertex loses a selected neighbor, because  $v_3$  was internal to the selected run, and the selected-neighbor activity needed at the run boundaries is preserved. Thus the deletion is safe and minimality forces  $\ell\le4$ .Runs of length three. Suppose both adjacent gaps have length one and delete  $v_2$ . The new outside vertex has two selected neighbors. The boundary vertices  $v_1,v_3$  can lose their selected-neighbor activity, but each adjacent old outside vertex still has two selected neighbors because its gap has length one. Every other old outside vertex is unaffected.This includes the one-run case in  $C_4$ : the two adjacent gap occurrences represent the same omitted vertex, but that vertex still has the two distinct selected neighbors  $v_1,v_3$ .Thus a length-three run must have at least one adjacent length-two gap.Runs of length four. If the left gap has length one, delete  $v_2$ . The new outside vertex has selected neighbors  $v_1,v_3$ . At the left boundary,  $v_1$  loses its selected neighbor, but the adjacent omitted vertex still has two selected neighbors. At the right boundary,  $v_4$  retains the selected neighbor  $v_3$ .The symmetric deletion of  $v_3$  works if the right gap has length one. Therefore both adjacent gaps must have length two.These are necessary restrictions, which is all the upper-bound argument needs.The gap-incidence count is correctLet  $t$  be the number of runs,  $q$  the number of length-two gaps, and  $s$  the number of selected vertices. There are  $t$  gaps in total, so
+$$n-s=t+q.$$
+For run  $i$ , let  $a_i$  count its end incidences with length-two gaps, with multiplicity. The established restrictions give
+$$\ell_i-2\le a_i.$$
+This is automatic for  $\ell_i\le2$ ; a run of length three requires one such incidence, and a run of length four requires two.Every length-two gap has exactly two ends, hence
+$$\sum_i a_i=2q.$$
+This remains true when both ends meet the same run. For example, the word  $111100$  on  $C_6$  has one run of length four and one length-two gap, and that gap legitimately contributes both end incidences.Summing gives
+$$s-2t\le2q,$$
+so
+$$s\le2(t+q)=2(n-s).$$
+Therefore
+$$SF_2(C_n)\le\left\lfloor\frac{2n}{3}\right\rfloor.$$
+There is no improper reuse of gap compensation.The dissociation lower bound and attaining words workSumming the  $n$  cyclic consecutive-triple inequalities gives
+$$3|D|\le2n.$$
+For  $n=3$ , the indexed triples happen to have the same underlying vertex set; summing them three times is legitimate.The displayed words have the required sizes:LengthWordSelected cardinality $3a$  $(110)^a$  $2a$  $3a+1$  $(110)^a0$  $2a$  $3a+2$  $(110)^a10$  $2a+1$ They contain no cyclic run of three selected vertices. Each ends in  $0$ , so the cyclic join creates no extra selected run. Consequently
+$$\beta_2(C_n)=\left\lfloor\frac{2n}{3}\right\rfloor.$$
+The use of non-induced stars matters for the stated inclusion of  $C_3$ , and it is handled consistently: an outside vertex with two selected neighbors is covered even when all three vertices form a triangle.The maximal-dissociation implication is correct in generalThere is a concise direct proof of the note’s final step.Let  $D$  be an inclusion-maximal dissociation set in any finite simple graph.For any  $x\notin D$ , maximality says that  $G[D\cup\{x\}]$  contains a vertex of degree at least two, hence a non-induced  $K_{1,2}$ . That star must contain  $x$ , since  $G[D]$  contains no such star. Therefore  $D$  is star-forming.For any  $v\in D$ , after deleting  $v$ , the graph in which a star through the newly outside vertex  $v$  would have to occur is
+$$G[(D\setminus\{v\})\cup\{v\}]=G[D].$$
+It has no  $K_{1,2}$  at all. Thus every selected-vertex deletion fails, and upward closure proves inclusion-minimality.In particular,
+$$SF_2(G)\ge\beta_2(G).$$
+Combining the two cycle bounds proves the asserted equality for every  $n\ge3$ .The degree threshold followsUnder the standard convention that a two-connected graph has at least three vertices, a finite simple two-connected graph has minimum degree at least two. If its maximum degree is at most two, it is connected and 2-regular, hence a cycle.Thus equality holds throughout the two-connected class of maximum degree at most two. The construction at  $r=2$  already proves, without enumeration,
+$$|V(J_2)|=22,\qquad \beta_2(J_2)=13,\qquad SF_2(J_2)\ge14,$$
+with maximum degree three.Accordingly, the claimed maximum-degree threshold is valid. It yields neither a smallest-order result nor a result for cubic regular graphs.6. Recommended clarifications and scope of the verdictMathematical clarificationsI would add three short explanations:Before the fourth block case’s six-set argument: “Dissociation is hereditary, so excluding six-element subsets also excludes larger subsets.”In the connectivity proof: Describe the quotient with shared vertices retained as  $C_{2r}$ , or explicitly describe the suppressed quotient as having two parallel connections when  $r=2$ .At the start of the cycle proof: Explain that the empty selection fails and the full selection admits a single deletion.These make valid reasoning more explicit. They do not repair false assertions.Bibliographic clarificationThe cited v2 uses the same star-forming definition and local characterization in Definition 2.1 and Lemma 2.2. Its Conjectures 4.1 and 4.2 state the bipartite equality claims, and Conjecture 7.2 states the triangle-free  $k=2$  equality claim. Thus the mathematical relationship to those version-specific statements is correctly identified. arxiv.org arxiv.orgThe current arXiv record, however, lists v3 dated 12 October 2026 as withdrawn, with a comment that some conjectures in the paper have been disproved. A note dated 19 October should preferably acknowledge that status while continuing to cite v2 for the precise statements. This is a source-status clarification; it does not affect the graph proof or establish anything about priority. arxiv.orgComputational and formal claimsThe written proof establishes the general theorem and cycle equality. It establishes only
+$$SF_2(H)\ge8,\qquad SF_2(J_2)\ge14$$
+for those particular star-forming values. The exact equalities  $SF_2(H)=8$  and  $SF_2(J_2)=14$  remain reported computational results in the supplied note, and I have not independently verified those computations or the Lean module.The note appropriately distinguishes those claims from the general written proof. No mathematical correction to the construction or its stated all-even- $r$  conclusion is required.

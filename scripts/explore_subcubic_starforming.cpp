@@ -81,7 +81,9 @@ int main(int argc, char** argv) {
     }
     int half = argc > 1 ? std::stoi(argv[1]) : 6;
     int trials = argc > 2 ? std::stoi(argv[2]) : 10000;
-    if (half < 1 || half > 10 || trials < 1) return 2;
+    int minimum = argc > 3 ? std::stoi(argv[3]) : 0;
+    if (half < 1 || half > 10 || trials < 1 || minimum < 0 || minimum > 3) return 2;
+    int checked = 0;
     std::mt19937 generator(20261019);
     std::vector<int> permutation(half);
     std::iota(permutation.begin(), permutation.end(), 0);
@@ -96,10 +98,16 @@ int main(int argc, char** argv) {
                 adjacency[neighbor] |= Mask{1} << row;
             }
         }
+        if (std::any_of(adjacency.begin(), adjacency.end(), [minimum](Mask neighbors) {
+            return std::popcount(neighbors) < minimum;
+        })) continue;
+        ++checked;
         if (check(adjacency)) {
             std::cerr << "seed=20261019 trial=" << trial << " half=" << half << '\n';
             return 0;
         }
     }
-    std::cout << "{\"searched\":" << trials << ",\"half\":" << half << ",\"seed\":20261019,\"counterexample_found\":false}" << std::endl;
+    std::cout << "{\"generated\":" << trials << ",\"checked\":" << checked
+              << ",\"minimum_degree\":" << minimum << ",\"half\":" << half
+              << ",\"seed\":20261019,\"counterexample_found\":false}" << std::endl;
 }
