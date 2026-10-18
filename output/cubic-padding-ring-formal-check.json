@@ -1,0 +1,39 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T22:57:35.234886+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    22050.\nPages active:                                 194664.\nPages inactive:                               186458.\nPages speculative:                             11210.\nPages throttled:                                   0.\nPages wired down:                             246182.\nPages purgeable:                                2978.\n\"Translation faults\":                    15452311953.\nPages copy-on-write:                       943185396.\nPages zero filled:                        6356865156.\nPages reactivated:                        2893703922.\nPages purged:                              135811138.\nFile-backed pages:                            254812.\nAnonymous pages:                              137520.\nPages stored in compressor:                  1585775.\nPages occupied by compressor:                 346254.\nDecompressions:                           2326245763.\nCompressions:                             2749016096.\nPageins:                                  4040888703.\nPageouts:                                   11368235.\nSwapins:                                    25187213.\nSwapouts:                                   31488962.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 4.082,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.43,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CubicPaddingRings.lean",
+      "seconds": 2.528,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingCubicPaddingRingsAudit.lean",
+      "seconds": 0.367,
+      "stdout": "'StarForming.CubicPaddingRings.periodic_weight_rows' depends on axioms: [propext]\n'StarForming.CubicPaddingRings.cut_pair_weights' depends on axioms: [propext]\n'StarForming.CubicPaddingRings.periodic_balance_forces_zero_flux' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPaddingRings.four_port_deficiency' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.CubicPaddingRings.ring_parameter_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.CubicPaddingRings.compensation_matches_ring_upper' depends on axioms: [propext, Quot.sound]\n'StarForming.CubicPaddingRings.endpoint_padding_order' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 914849792,
+  "scope": "Seven declarations: finite six-periodic weight identities and cut-pair weights by kernel decision; a general conditional Int-count theorem forcing zero transferred flux from all twenty periodic balance equations; four-port deficiency equality, ring parameter identity and conditional SF upper arithmetic and the conditional endpoint-padding order threshold. The graph deficiency count, all-k aggregation, ring construction, exact-beta proof, minimality and connectivity are written proofs."
+}

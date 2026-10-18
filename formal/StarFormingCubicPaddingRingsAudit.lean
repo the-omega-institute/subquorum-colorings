@@ -1,0 +1,9 @@
+import StarForming.CubicPaddingRings
+
+#print axioms StarForming.CubicPaddingRings.periodic_weight_rows
+#print axioms StarForming.CubicPaddingRings.cut_pair_weights
+#print axioms StarForming.CubicPaddingRings.periodic_balance_forces_zero_flux
+#print axioms StarForming.CubicPaddingRings.four_port_deficiency
+#print axioms StarForming.CubicPaddingRings.ring_parameter_accounting
+#print axioms StarForming.CubicPaddingRings.compensation_matches_ring_upper
+#print axioms StarForming.CubicPaddingRings.endpoint_padding_order

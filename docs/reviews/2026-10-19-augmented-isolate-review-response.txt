@@ -1,0 +1,120 @@
+ACCEPT. The general isolate-compensation theorem, the exact regular remainder, the equality reduction, and the signed componentwise debt are valid. The general augmentation uses the stated witness classifications and bipartiteness throughout; the zero-accounting assumptions enter only in the later cubic specialization.The degree-one unused-witness case works at arbitrary degree. Shared isolates and shared outside neighbors remain excluded from the relevant exchange. All simultaneous additions create distinct isolated edges.1. The witness argument works without accounting assumptionsWrite  $a(v)=|N(v)\cap S|$ . The witness classifications used in the note follow directly from minimality and bipartiteness.If  $h\in H$  is deleted,  $h$  itself remains formed: its at least two selected neighbors survive. Therefore a deletion failure occurs at a vertex  $x$  outside the original  $S$ .If  $x$  is adjacent to  $h$ , failure after deleting  $h$  forces
+$$N(x)\cap S=\{h\}
+\quad\text{or}\quad
+N(x)\cap S=\{h,i\}.$$
+In the second case,  $i$  must have no selected neighbor after the deletion. Both  $h$  and  $i$  lie opposite  $x$ , so bipartiteness makes them nonadjacent. Consequently  $i$  was already a selected isolate.If  $x$  is nonadjacent to  $h$ , its selected-neighbor set is unchanged by deleting  $h$ . Failure therefore requires
+$$N(x)\cap S=\{g_h\},
+\qquad
+N(g_h)\cap S=\{h\}.$$
+Thus  $g_h$  is a leaf supported by  $h$ .These descriptions also justify injectivity: a high-failure witness determines its high owner uniquely. In the adjacent cases its selected neighborhood identifies the high owner; in the nonadjacent case its sole selected neighbor identifies its unique high support.The corresponding leaf statement also holds at arbitrary degree. If  $u\in U$  has high support  $h$ , deleting  $u$  leaves  $u$  formed through  $h$ , because  $h$  retains another selected neighbor. A failure therefore occurs outside the original  $S$ . A nonadjacent failure would require a selected vertex whose sole selected neighbor is  $u$ . The only selected neighbor of  $u$  is its high support  $h$ , which has at least two selected neighbors. Hence the failure witness is adjacent, with
+$$N(x_u)\cap S=\{u\}
+\quad\text{or}\quad
+N(x_u)\cap S=\{u,i_u\},
+\qquad i_u\in I.$$
+Such a witness identifies its leaf uniquely, so distinct leaves have distinct witnesses.None of these deductions uses regularity, a maximum-degree bound, or a vanishing remainder.Extra leaves have no adjacency to the chosen high witnessesFor the chosen map  $f$ , every  $f(h)$  has one of precisely these selected neighborhoods:
+$$\{h\},\qquad \{h,i\},\qquad \{g_h\},$$
+where  $i\in I$  and  $g_h$  is the leaf reserved for that chosen nonadjacent witness.Therefore
+$$\boxed{N(u)\cap F=\varnothing\qquad(u\in U_e).}$$
+This holds for the entire chosen image  $F=f(H)$ . It immediately implies that every chosen extra-leaf witness  $x_u$  is unused by  $f$ .2. The simultaneous additions are compatibleTake  $u\in U_e\cap L$ . Its support lies in  $R$ , so it is omitted from  $D_L$ , and  $u$  survives trimming. Since  $u$  has only its support as a selected neighbor and has no neighbor in  $F$ ,
+$$u\in D_L,\qquad N(u)\cap D_L=\varnothing.$$
+Its witness  $x_u$  lies in  $R$  and is absent from  $D_L$ . The exchange contains outside vertices only in  $F\cap R$ .There are two witness cases:If  $N(x_u)\cap S=\{u\}$ , every remaining neighbor of  $x_u$  is an outside vertex in  $L$ , hence is omitted from  $D_L$ .If  $N(x_u)\cap S=\{u,i_u\}$ , the isolate  $i_u\in I\cap L$  is omitted, and every outside neighbor again lies in the omitted class  $T\cap L$ .Thus in both cases,
+$$\boxed{N(x_u)\cap D_L=\{u\}.}$$
+This checks the degree-one case even when  $x_u$  has arbitrarily many outside neighbors.For simultaneous additions, the witnesses are distinct and all lie in  $R$ , so they have no edges among themselves. Each meets the old exchange exactly at its own previously isolated leaf. In particular, an added witness cannot meet another added witness’s leaf partner: that partner already belongs to the old exchange.Repeated isolate neighbors cause no conflict. A shared isolate belongs to  $I\cap L$ , which remains omitted. Shared outside neighbors likewise belong to  $T\cap L$ , which remains omitted. No injective assignment to isolates is needed.The symmetric reasoning proves feasibility of  $E_R$ .The finite cardinal sum is exactLet
+$$p=|P|,\qquad h=|H|,\qquad g=\text{number of good highs}.$$
+There are  $g$  reserved leaves and  $K$  extra leaves, so
+$$s=z+p+h+g+K.$$
+Across  $D_L,D_R$ , counted with multiplicity:ClassTotal contributionSelected isolates $z$ Selected  $K_2$  vertices $2p$ High vertices $h$ Reserved leaves $2g$ Extra leaves $K$ Chosen high witnesses $h$ Consequently,
+$$|D_L|+|D_R|
+=z+2p+2h+2g+K
+=2s-z-K.$$
+The extra-leaf witnesses are distinct, are outside  $S\cup F$ , and each is added to exactly one exchange. Hence
+$$|E_L|+|E_R|=2s-z,$$
+and
+$$\boxed{\beta_2(G)\ge
+\left\lceil s-\frac z2\right\rceil
+=s-\left\lfloor\frac z2\right\rfloor.}$$
+Empty classes and disconnected graphs are covered by the same argument. The two exchanges may overlap; their cardinalities are being added with the intended multiplicity.3. The exact regular remainder checks outFor clarity, the regular definition of the high-witness slack is
+$$q_h=d-a(f(h))-(a(h)-1).$$
+The selected-degree sum is
+$$\sum_{v\in S}a(v)
+=s-z+\sum_{h\in H}(a(h)-1).$$
+Counting edges between  $S$  and  $T$  gives
+$$\sum_{x\in T}(d-a(x))
+=B-z+\sum_{h\in H}(a(h)-1).$$
+Injectivity of  $f$  then yields exactly
+$$B-z
+=\sum_{h\in H}q_h
++\sum_{x\in T\setminus F}(d-a(x)).$$
+Every term is nonnegative. The high-witness cases are:Witness typeConstraintSlackAdjacent, selected degree  $1$  $a(h)\le d-1$  $q_h=d-a(h)\ge1$ Adjacent, selected degree  $2$  $a(h)\le d-1$  $q_h=d-1-a(h)\ge0$ Nonadjacent, selected degree  $1$  $a(h)\le d$  $q_h=d-a(h)\ge0$ Using  $W=B+2\beta_2-2s$  and the augmented size sum gives
+$$\boxed{
+W=(\beta_2-|E_L|)+(\beta_2-|E_R|)+(B-z).
+}$$
+This is the asserted exact nonnegative identity.In particular, for an arbitrary cubic instance the identity becomes
+$$W
+=(\beta_2-|E_L|)+(\beta_2-|E_R|)
++\sum_{h\in H}q_h+2r_1+r_2.$$
+The positive  $r_2$  coefficient is now justified by the general graph augmentation.4. The equality reduction is valid in degree three and higherSuppose  $d\ge3$  and  $W=0$ . The nonnegative decomposition forces
+$$B=z,\qquad |E_L|=|E_R|=\beta_2.$$
+The capacity identity further gives
+$$q_h=0\quad(h\in H),\qquad
+a(x)=d\quad(x\in T\setminus F).$$
+An extra leaf would have an unused witness with selected degree at most two. Since  $d\ge3$ , this contradicts the latter condition. Thus
+$$K=0,\qquad E_L=D_L,\qquad E_R=D_R.$$
+The zero-slack witness table leaves exactly two high types:An adjacent witness of selected degree two, with owner in  $H_{d-1}$ .A nonadjacent witness of selected degree one, with owner in  $H_d$ .With  $K=0$ , the first type has no selected leaves; the second has exactly its reserved leaf. Therefore every high vertex has  $d-1$  high neighbors.The remaining incidences in the stated partition also follow: unused outside vertices have all their neighbors in  $S$ ; a reserved leaf has its support, its chosen witness, and  $d-2$  unused outside neighbors; selected matching vertices have their partner and  $d-1$  unused outside neighbors.The balance claims hold within each connected componentFix a connected component  $Q$ . Write  $b_\sigma$  and  $g_\sigma$  for the numbers of  $H_{d-1}$  and  $H_d$  vertices of color  $\sigma$  in  $Q$ , and let
+$$\Delta b=b_L-b_R,\qquad \Delta g=g_L-g_R.$$
+Counting the ends of high edges gives
+$$\Delta b+\Delta g=0.$$
+All outside edges have both endpoints in  $F$ . Bad witnesses lie opposite their owners and have outside degree  $d-2$ ; good witnesses have their owners’ colors and outside degree  $d-1$ . Counting outside edge ends gives
+$$(d-1)\Delta g-(d-2)\Delta b=0.$$
+Together these imply
+$$\Delta b=\Delta g=0.$$
+With  $K=0$ , the local exchange-size difference is
+$$|D_L\cap Q|-|D_R\cap Q|
+=-\Delta z_Q+2\Delta b
+=-\Delta z_Q.$$
+Both global exchanges are maximum. Each restriction to  $Q$  must consequently be maximum in  $Q$ , since an improvement in one component would improve the global set. Their local cardinalities are therefore equal, proving
+$$z_{L,Q}=z_{R,Q}.$$
+This supplies the componentwise justification for the isolate-balance claim.The converse is also correct: the stated partition gives  $B=z$ , and maximum exchanges give  $2\beta_2=2s-z$ , hence  $W=0$ . Explicit isolate balance is redundant in that converse when both exchanges are already assumed maximum, but its inclusion is harmless.For  $d=3$ , the high graph is  $2$ -regular and therefore a union of even cycles.5. The refined debt has the correct color signsHere the notation should explicitly be
+$$b_\sigma=|H_2\cap \sigma|,\qquad
+h_\sigma=|H_3\cap \sigma|,\qquad
+\Delta t=t_L-t_R.$$
+The  $t_\sigma$  count leaves by their supports’ colors.In the zero-accounting cubic normal form, high-degree counting gives
+$$2(b_L+h_L)-t_L
+=
+2(b_R+h_R)-t_R,$$
+or
+$$2\Delta b+2\Delta h-\Delta t=0.
+\tag{7}$$
+For outside edges, the relevant counts are:Outside typeNumber in  $L$ Number in  $R$ Outside degree $X_1$  $h_L$  $h_R$  $2$  $X_{2,\mathrm{bad}}$  $b_R$  $b_L$  $1$  $X_{2,\mathrm{extra}}$  $t_L$  $t_R$  $1$ Thus
+$$2h_L+b_R+t_L=2h_R+b_L+t_R,$$
+or
+$$2\Delta h-\Delta b+\Delta t=0.
+\tag{8}$$
+Solving (7)–(8) gives precisely
+$$\boxed{\Delta b=-4\Delta h,\qquad \Delta t=-6\Delta h.}$$
+The original exchange sizes are
+$$|D_L|=s-z_L-t_L+\Delta b,\qquad
+|D_R|=s-z_R-t_R-\Delta b.$$
+The actual extra leaves in  $L$  have supports in  $R$ , so the  $L$  augmentation adds  $t_R$ , and the  $R$  augmentation adds  $t_L$ . Hence
+$$|E_L|=s-z_L+\Delta b-\Delta t=s-z_L+2\Delta h,$$
+
+$$|E_R|=s-z_R-\Delta b+\Delta t=s-z_R-2\Delta h.$$
+Therefore
+$$|E_L|-|E_R|=-\Delta z+4\Delta h,$$
+as claimed.Writing  $M^+=\max(|E_L|,|E_R|)$ ,
+$$2M^+=2s-z+|\Delta z-4\Delta h|.$$
+Since this normal form has  $B-z=K=2c$ , substitution gives
+$$\boxed{
+W=2c+|\Delta z-4\Delta h|
++2(\beta_2-M^+).
+}$$
+Thus equation (5) is exact.The componentwise refinement is also validFor each connected component  $Q$ , let
+$$M_Q^+=\max(|E_L\cap Q|,|E_R\cap Q|).$$
+Additivity of the dissociation number gives the stronger exact identity
+$$\boxed{
+W
+=
+2c+\sum_Q|\Delta z_Q-4\Delta h_Q|
++2\left(\beta_2(G)-\sum_Q M_Q^+\right).
+}$$
+The final term is nonnegative: choose the larger local exchange independently in each component and take their union. This proves equation (6). Reversing a component’s bipartition changes both signed differences by a minus sign and preserves its absolute debt.Recommended additions to the noteThe written mathematics supports acceptance independently of the reported finite controls and Lean arithmetic. The linked receipts and research-status statements remain separate provenance claims.For a standalone presentation, make three small additions:Define  $a(x)$  and the regular  $q_h=d-a(f(h))-(a(h)-1)$  where the capacity identity first appears.Define  $b_\sigma=|H_2\cap\sigma|$ ,  $\Delta b=b_L-b_R$ , and  $\Delta t=t_L-t_R$  before the signed-debt formulas.Include the two componentwise handshaking equations and the maximum-set restriction argument establishing isolate balance.The theorem statements and displayed inequalities can remain as written.

@@ -75,9 +75,17 @@ counted twice within an augmentation, and no selected isolate is added
 in place of several demands. The two exchanges are alternative feasible
 sets, whose sizes are averaged; they are not asserted to be disjoint.
 
+The subsequent [four-port padding rings](CUBIC_EQUALITY_PADDING_RINGS.md)
+attain (1) on two-connected cubic bipartite graphs with z=2r and gap r
+for arbitrarily large r. Thus the isolate coefficient1/2 is sharp even
+with connectedness, cubic regularity and unbounded gap. That construction
+has its own written proof and separate review scope; it was developed
+after the accepted review of the present compensation theorem.
+
 ## A stronger exact regular remainder
 
-For d-regular bipartite G, d>=3, put
+For d-regular bipartite G, d>=3, put a(v)=|N(v) intersect S| and
+q_h=d-a(f(h))-(a(h)-1), and define
 
     B=dn-(2d-1)s,
     W=dn+2beta_2(G)-(2d+1)s.
@@ -103,6 +111,19 @@ the two high classes have balanced colors, and selected isolates must
 be balanced in each connected component. Conversely that partition,
 balanced isolates and maximum explicit exchanges imply W=0.
 
+Here is the componentwise balance justification. In a connected component
+Q let b_L,b_R count high vertices of selected degree d-1, and g_L,g_R
+those of selected degree d. With Delta b=b_L-b_R and Delta g=g_L-g_R,
+handshaking in the high and outside graphs gives respectively
+
+    Delta b+Delta g=0,
+    (d-1)Delta g-(d-2)Delta b=0.
+
+Thus both differences vanish. The local exchanges then have sizes
+s_Q-z_L and s_Q-z_R. If both global exchanges are maximum, each
+restriction is maximum in Q, since a better local set would improve
+the corresponding global set. Their local sizes are equal, so z_L=z_R.
+
 For cubic graphs the high graph is therefore a union of even cycles.
 There can be no high path, including an isolated high vertex, at linear
 equality. This completes the equality-structure reduction, with the
@@ -123,7 +144,8 @@ independent of the finite control histogram.
 
 There is also an exact refinement of the signed debt identity. Let
 Delta z=z_L-z_R and Delta h=|H3 intersect L|-|H3 intersect R|. Let
-t_L,t_R count extra leaves by their high support's color. The normal
+t_L,t_R count extra leaves by their high support's color. Write b_L,b_R
+for the H2 counts, Delta b=b_L-b_R and Delta t=t_L-t_R. The normal
 form gives Delta b=-4Delta h and Delta t=-6Delta h. The original
 exchange sizes are s-z_L-t_L+Delta b and s-z_R-t_R-Delta b. The L
 augmentation adds t_R vertices, and the R augmentation adds t_L.
@@ -141,6 +163,16 @@ Applying this within each connected component Q gives
 
     W>=2c+sum_Q |Delta z_Q-4Delta h_Q|.                    (6)
 
+More precisely, put Mplus_Q=max(|E_L intersect Q|,|E_R intersect Q|).
+The componentwise exact identity is
+
+    W=2c+sum_Q |Delta z_Q-4Delta h_Q|
+       +2(beta_2(G)-sum_Q Mplus_Q).
+
+The final term is nonnegative because choosing the larger exchange
+independently in each connected component gives a dissociation set
+of size sum_Q Mplus_Q in G.
+
 The path witnesses are distinct globally, their matching augmentations
 are compatible locally, and the componentwise absolute values exclude
 cancellation of opposite color debts across graph components. These
@@ -155,8 +187,12 @@ form and the inequality W>=2c. Its graph argument was independently
 checked against every edge type above. The extension to arbitrary
 bipartite graphs in (1), the regular remainder (3) and the refined
 component debt (5)--(6) were derived locally after that response.
-They are outside the original response's scope. A follow-up review
-uses the same conversation; its verdict is tracked separately.
+They are outside the original response's scope. The follow-up review
+in the same conversation returned ACCEPT for the general theorem,
+regular remainder, equality reduction and component debt, independently
+of finite controls or Lean arithmetic. Its three requested presentation
+clarifications, concerning a,q,b,Delta t and componentwise balance,
+are incorporated above. No substantive mathematical gap was identified.
 
 - [Original response](reviews/2026-10-19-cubic-equality-path-response.txt)
   and [provenance receipt](../output/cubic-equality-path-oracle-question.json).

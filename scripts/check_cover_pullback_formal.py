@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -34,7 +34,8 @@ def main():
     build = root / {'cover': 'build/cover-pullback-formal',
                     'dissociation': 'build/dissociation-cover-formal',
                     'heawood': 'build/heawood-certificates-formal',
-                    'cubic-paths': 'build/cubic-path-accounting-formal'}[arguments.audit]
+                    'cubic-paths': 'build/cubic-path-accounting-formal',
+                    'padding-rings': 'build/cubic-padding-ring-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -46,10 +47,12 @@ def main():
     elif arguments.audit == 'heawood':
         modules += ('StarForming/DissociationCover.lean', 'StarForming/HeawoodCertificates.lean',
                     'StarFormingHeawoodCertificatesAudit.lean')
-    else:
+    elif arguments.audit == 'cubic-paths':
         modules += ('StarForming/CubicStability.lean', 'StarForming/DissociationCover.lean',
                     'StarForming/CubicPathAccounting.lean',
                     'StarFormingCubicPathAccountingAudit.lean')
+    else:
+        modules += ('StarForming/CubicPaddingRings.lean', 'StarFormingCubicPaddingRingsAudit.lean')
     for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -66,7 +69,8 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    if len(declarations) != {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12}[arguments.audit]:
+    expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12, 'padding-rings': 7}
+    if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
         if set(filter(None, map(str.strip, axioms.split(',')))) - {
@@ -96,6 +100,14 @@ def main():
                             'and equality gap, isolate compensation and positive path slack. '
                             'Full finite normal-form characterization, '
                             'cardinal path decomposition and component summation have written proofs.')
+    if arguments.audit == 'padding-rings':
+        receipt['scope'] = ('Seven declarations: finite six-periodic weight identities and cut-pair '
+                            'weights by kernel decision; a general conditional Int-count theorem '
+                            'forcing zero transferred flux from all twenty periodic balance equations; '
+                            'four-port deficiency equality, ring parameter identity and conditional '
+                            'SF upper arithmetic and the conditional endpoint-padding order threshold. '
+                            'The graph deficiency count, all-k aggregation, '
+                            'ring construction, exact-beta proof, minimality and connectivity are written proofs.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

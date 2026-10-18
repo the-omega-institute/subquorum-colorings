@@ -133,6 +133,19 @@ lemmas and ten conditional arithmetic lemmas pass Lean;19,550augmented
 exchanges and347path/established controls pass finite checks. The
 connected cubic asymptotic optimum and grid bridge remain open.
 
+The [four-port padding rings](docs/CUBIC_EQUALITY_PADDING_RINGS.md)
+now realize unbounded gap on the cubic linear-equality stratum itself.
+For any r>=1 and positive k_i, put K=sum k_i. The two-connected graphs
+have n=14r+20K, beta_2=7r+12K and SF_2=8r+12K. A six-periodic integer
+weight proves that omitting either pair of a core's four ports costs
+one vertex, even when its other pair is freely used. This prevents
+shared compensation when the cores are joined cyclically. The gap r
+attains isolate compensation with z=2r, so its1/2coefficient is sharp
+on connected cubic graphs with unbounded gaps. Seven new Lean audits,
+an exhaustive fixed-core port check and fifteen ring controls pass.
+This gives gap coefficient1/34 when all k_i=1; the earlier1/28family
+still supplies the better known asymptotic gap lower bound.
+
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
 through a connected Heawood double cover, including all connected regular
