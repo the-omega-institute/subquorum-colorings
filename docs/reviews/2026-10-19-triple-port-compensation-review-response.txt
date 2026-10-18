@@ -1,0 +1,147 @@
+ACCEPT. Taking the established Heawood saturated-port lemma and cubic compensation theorem as the inputs specified in the question, the new omission lemma and all the claimed properties of  $T_r$  follow. I find no substantive gap.The restoration step is valid, the stated symmetries preserve the fixed core, the  $p=4$  branch is exhausted by the three  $Y$ -occupancy cases, and the  $m=2$  equality does force all six  $U$ -vertices. In fact, that last case admits an immediate additional contradiction that shortens its conclusion.This verdict concerns the new three-cut-pair theorem. I check the four-port weight argument as its dependency. No enumeration, reported test result, or conditional Lean declaration is used below.1. The four-port strict-loss dependency is validWrite  $A$  for the adjacency matrix of the uncut  $C_k$ , and let  $w$  be the displayed periodic weight vector.The table satisfies the claimed identities. If  $a_j,b_j,c_j$  denote its  $H,U,X$  rows, respectively, the required equations are
+$$\begin{aligned}
+a_{j-1}+a_{j+1}+b_j+2a_j&=0,\\
+a_j+c_j+2b_j&=0,\\
+c_{j-1}+c_{j+1}+b_j+2c_j&=0.
+\end{aligned}$$
+Substituting the six entries gives zero in every coordinate. The two hub equations are
+$$b_0+b_2+b_4=0+1-1=0,
+\qquad
+b_1+b_3+b_5=-1+0+1=0.$$
+Each of the three displayed rows also sums to zero. Because the cycles have length  $6k$ , their wraparound respects these same equations. Thus, for every positive  $k$ ,
+$$(A+2I)w=0,
+\qquad
+\sum_v w(v)=0.$$
+Now suppose a dissociation set in the four-port core has size  $12k$  and omits both  $e_0$ -ports. Its deficiency identity gives
+$$2p-4=i_D+2e_T.$$
+Here  $p\le2$ , so equality forces all of the following simultaneously:
+$$p=2,\qquad i_D=0,\qquad e_T=0.$$
+Consequently, the  $e_2$ -ports are selected, the selected graph is a perfect matching, and the complement is independent.After restoring both cut edges, the indicator  $d$  therefore satisfies exactly
+$$(A+2I)d
+=
+3\mathbf 1-\mathbf 1_{\partial e_0}
++\mathbf 1_{\partial e_2}.$$
+In particular:An omitted  $e_0$ -port has two selected neighbors after restoration.A selected  $e_2$ -port has two selected neighbors after restoration, giving  $2+2d=4$ .Every other vertex gives  $3$ .Taking the inner product with  $w$ , symmetry of  $A$  makes the left side zero. But the cut-pair weights are
+$$w(x_0)+w(x_1)=1,\qquad
+w(x_2)+w(x_3)=-1,$$
+so the right side is  $-2$ . Reversing which cut pair is omitted gives  $+2$ . Both are contradictions.Thus the four-port strict-loss statement used by the new proof is established by the periodic algebra itself.2. The fixed-core symmetries are genuine automorphismsFor the 20-vertex core, define
+$$R:i\longmapsto i+2\pmod6$$
+on  $H,U,X$ , fixing both  $Y$ -vertices. It preserves parity and cyclic adjacency, and cyclically permutes the cut pairs:
+$$e_0\longmapsto e_2\longmapsto e_4\longmapsto e_0.$$
+It also permutes the remaining  $X$ -matching edges. Hence  $R$  is an automorphism of  $Q$ , and its action is transitive on the three unordered choices of two cut pairs.The reflection
+$$F:i\longmapsto1-i\pmod6$$
+on  $H,U,X$ , accompanied by  $y_0\leftrightarrow y_1$ , also preserves  $Q$ . It fixes  $e_0$ , exchanges  $e_2,e_4$ , and exchanges parity. Thus it preserves the  $U$ -to- $Y$  incidences.These statements concern the fixed  $C_1$  and  $Q$ . The argument does not require a rotation by two to preserve the hub blocks of an arbitrary  $C_k$ .There is one useful detail in applying the four-port lemma through rotation: the rotation may carry the wholly omitted pair to either of the two missing pairs. The dependency proves strict loss for either missing pair, so this causes no problem.3. The three-cut-pair omission lemma is provedThe deficiency identityIn  $Q$ , the six  $X$ -vertices have degree two and the other fourteen vertices have degree three. Therefore the total degree deficiency is six, and the selected degree deficiency is  $p=|D\cap X|$ .Counting the cut from the selected side gives
+$$|\delta(D)|=2t-p+i_D.$$
+Counting it from the complement gives
+$$|\delta(D)|=54-3t+p-2e_T.$$
+Equating them yields exactly
+$$54-5t+2p=i_D+2e_T.
+\tag{2}$$
+All later uses have the correct signs and constants.Unconditional bound:  $t\le12$ Since  $p\le6$ , equation (2) gives
+$$5t\le66,$$
+so  $t\le13$ . If  $t=13$ , nonnegativity in (2) forces  $p=6$ .Every  $X$ -vertex is then selected and already matched to its partner in the remaining  $X$ -matching. Thus all six  $U$ -vertices are omitted.A dissociation set contains at most four vertices of the  $H$ -cycle: each cyclic triple contains at most two selected vertices, and summing the six constraints gives
+$$3|D\cap H|\le12.$$
+There are only two  $Y$ -vertices, so
+$$t\le6+4+2=12,$$
+a contradiction. The unconditional cap is correct.One omitted pair: the restoration is safeBy rotation, suppose  $x_0,x_1\notin D$ .If at most one of  $e_2,e_4$  has both endpoints selected, then at least one of those two edges has at most one selected endpoint. Restore that edge.This is the correct edge to restore:It adds no edge to the graph induced by  $D$ .It leaves  $e_0$  deleted.The resulting graph is  $C_1$  with two of  $e_0,e_2,e_4$  deleted.A rotation identifies those two cuts with the four-port configuration.One of its deleted pairs remains wholly omitted.The strict-loss dependency therefore gives  $t\le11$ .Restoring  $e_0$  itself would not establish this particular implication; the note correctly restores a suitable other cut edge.The remaining  $p=4$  branch and its  $Y$ -cases are exhaustiveFailure of the restoration branch means that both other cut pairs are fully selected. Thus
+$$D\cap X=\{x_2,x_3,x_4,x_5\},$$
+so  $p=4$ , and there are no additional  $X$ -patterns to consider in this branch.The selected edge  $x_3x_4$  forces  $u_3,u_4\notin D$ . If  $t=12$ , put
+$$a=|D\cap H|,\qquad u=|D\cap U|,\qquad q=|D\cap Y|.$$
+Then
+$$a+u+q=8,\qquad a\le4,\qquad u\le4.$$
+The possibilities  $q=0,1,2$  exhaust  $Y$ -occupancy.If  $q=0$ : necessarily  $a=u=4$ . All available  $U$ -vertices,
+$$u_0,u_1,u_2,u_5,$$
+are selected. The selected  $x_2,x_5$  force  $h_2,h_5$  omitted, leaving exactly
+$$h_0,h_1,h_3,h_4$$
+as the four selected  $H$ -vertices. But  $h_0$  has both  $h_1$  and  $u_0$  selected as neighbors.If  $q=1$ : the verified reflection permits  $y_0\in D$ . The vertices  $u_2,u_4$  cannot be selected because each would have both its  $X$ -partner and  $y_0$  selected. Together with the earlier exclusions, only
+$$u_0,u_1,u_5$$
+are available. Hence  $u=3,a=4$ . The selected neighbors  $y_0$  of  $u_0$  and  $x_5$  of  $u_5$  force  $h_0,h_5$  omitted. The four remaining  $H$ -vertices induce  $P_4$ , so they cannot all be selected.If  $q=2$ : every  $u_i$  with selected  $x_i$  is excluded, leaving only  $u_0,u_1$ . Thus  $u=2,a=4$ . Both  $h_0,h_1$  are omitted because their  $U$ -partners already meet selected  $Y$ -vertices. Again, the remaining four  $H$ -vertices induce  $P_4$ .All three cases contradict  $t=12$ . Therefore any wholly omitted cut pair forces  $t\le11$ .Two omitted pairs: all six  $U$ -vertices really are forcedRotate the omitted pairs to  $e_0,e_2$ . Then  $p\le2$ , and the complement contains  $x_1x_2$ , so  $e_T\ge1$ .The preceding result already excludes  $t\ge12$ . If  $t=11$ , equation (2) becomes
+$$-1+2p=i_D+2e_T.$$
+The left side is at most three, while the right side is at least two. Integrality gives precisely
+$$p=2,\qquad e_T=1,\qquad i_D=1.$$
+Thus  $x_4,x_5\in D$ , and  $x_1x_2$  is the only complement edge.Because  $x_0,x_1,x_2,x_3$  are omitted, the edges  $x_j u_j$  force
+$$u_0,u_1,u_2,u_3\in D;$$
+otherwise there would be a second complement edge.Now  $y_0$  has two selected neighbors  $u_0,u_2$ , and  $y_1$  has two selected neighbors  $u_1,u_3$ . Both  $Y$ -vertices must be omitted. Since no further complement edge is allowed, the edges
+$$y_0u_4,\qquad y_1u_5$$
+then force  $u_4,u_5\in D$ . This establishes the claimed forcing of all six  $U$ -vertices.The note’s subsequent independent-set argument on  $h_0,h_1,h_2,h_3$  is correct. There is also an earlier contradiction: because  $u_4,u_5$  already meet selected  $x_4,x_5$ , both  $h_4,h_5$  are omitted. But  $h_4h_5$  is an intact  $H$ -cycle edge, giving a second complement edge.So  $t\le10$ . This shortcut is an optional simplification, not a repair.Three omitted pairsHere  $p=0$ , and the three remaining  $X$ -matching edges all lie in the complement. Thus  $e_T\ge3$ .If  $t\ge10$ , equation (2) would give
+$$i_D+2e_T=54-5t\le4,$$
+whereas  $i_D+2e_T\ge6$ . Hence  $t\le9$ .The four cases establish
+$$\boxed{|D|+m\le12}.$$
+4. The composition charges each obstruction separatelyFor module  $i$ , let
+$$m_i=\#\{\text{wholly omitted core cut pairs}\},$$
+and let  $b_i\in\{0,1,2\}$  count its Heawood restrictions of size eight.For each eight-vertex restriction, the saturated-port lemma says both Heawood ports are selected and already internally matched. Their attached core neighbors must therefore both be omitted.The two Heawood blocks attach to different pairs,  $e_0$  and  $e_2$ . Consequently,
+$$m_i\ge b_i.$$
+The local omission lemma gives a core contribution at most  $12-m_i$ . The two Heawood restrictions contribute at most  $14+b_i$ , because every restriction not of size eight has size at most seven. Therefore
+$$\begin{aligned}
+|D\cap V(\text{module }i)|
+&\le (12-m_i)+(14+b_i)\\
+&=26-(m_i-b_i)\\
+&\le26.
+\end{aligned}$$
+This calculation explicitly prevents reuse of a core loss. Two eight-vertex restrictions force two distinct omissions and hence two units of loss.No condition on the third interface pair is consumed. Omitting that pair could only strengthen the local bound.For  $r=1$ , the actual graph has the restored  $e_4$  inside the module. A dissociation set in that graph remains dissociating after deleting  $e_4$ , so applying the bound in the auxiliary  $Q$  remains valid.Summing over the disjoint module vertex sets gives
+$$\beta_2(T_r)\le26r.$$
+5. The dissociation witness attains  $26r$ In each core select
+$$D_Q=U\cup H_{\mathrm{odd}}\cup X_{\mathrm{even}}.$$
+Its twelve vertices induce exactly six independent edges:
+$$h_1u_1,\ h_3u_3,\ h_5u_5,\qquad
+u_0x_0,\ u_2x_2,\ u_4x_4.$$
+In each Heawood block select all seven points. These form an independent set.Every attachment has an omitted endpoint: $\mathrm{point0}-x_1$  and  $\mathrm{point0}-x_3$  meet omitted odd  $X$ -vertices. $\mathrm{line8}-x_0$  and  $\mathrm{line8}-x_2$  meet the omitted line port.Every cyclic edge  $x_{4,i}x_{5,i+1}$  meets an omitted  $x_5$ .This also checks the restored edge when  $r=1$ . Hence the union is dissociating and has
+$$12r+2(7r)=26r$$
+vertices. Therefore
+$$\boxed{\beta_2(T_r)=26r}.$$
+6. Formation, inclusion-minimality, and the isolate countWhy changing outside edges preserves the required witnessesLet  $S$  be the proposed selection in the original disjoint union, and let  $A\subseteq S$ . A two-star witnessing formation from  $A$  has at least two of its three vertices in  $A$ .Such a star cannot use an edge whose two endpoints lie outside  $S$ : that would leave at most one vertex of the star in  $A$ .Therefore changes confined to edges with both endpoints outside  $S$  preserve the relevant two-star witnesses for every  $A\subseteq S$ . In particular, they preserve:
+$$\text{formation by }S
+\quad\text{and}\quad
+\text{failure of formation by each }S\setminus\{s\}.$$
+The latter is the essential minimality check. It rules out an interface creating a replacement witness after a selected vertex is deleted.The core selectionFor  $S_Q=H\cup U$ , each  $x_i$  is formed through
+$$x_i-u_i-h_i,$$
+and each  $Y$ -vertex has three selected  $U$ -neighbors.Deleting either  $u_i$  or  $h_i$  makes  $x_i$  a failure witness:After deleting  $u_i$ ,  $x_i$  has no selected neighbor.After deleting  $h_i$ , its only selected neighbor is  $u_i$ , and  $u_i$  has no other selected neighbor.Thus  $H\cup U$  is inclusion-minimal. Its selected graph is the  $H$ -cycle with one selected leaf  $u_i$  at each  $h_i$ , so it has no selected isolates.The needed Heawood eight-set properties can be checked directlyThe established eight-set must have both cut ports outside it and two selected isolates. These properties have a direct Fano-plane realization.Take independent vectors  $a,b,c\in\mathbf F_2^3$ , put  $d=a+b+c$ , and select the four points
+$$a,b,c,d$$
+and the four lines
+$$L_{ab},L_{ac},L_{bc},L_0,$$
+where
+$$\begin{aligned}
+L_{ab}&=\{a,b,a+b\},\\
+L_{ac}&=\{a,c,a+c\},\\
+L_{bc}&=\{b,c,b+c\},\\
+L_0&=\{a+b,a+c,b+c\}.
+\end{aligned}$$
+The selected graph is a six-cycle together with the two isolated selected vertices  $d,L_0$ .The omitted points are  $a+b,a+c,b+c$ . The omitted lines are
+$$M_a=\{a,d,b+c\},\quad
+M_b=\{b,d,a+c\},\quad
+M_c=\{c,d,a+b\}.$$
+Their induced graph is a three-edge matching. Each omitted vertex has two selected neighbors, so formation holds.For minimality:Deleting  $a$ ,  $b$ , or  $c$  leaves the corresponding  $M$ -line with only the isolated selected point  $d$  as a selected neighbor.Deleting a triangle line  $L_{ab},L_{ac},L_{bc}$  leaves its corresponding omitted point with only the isolated selected line  $L_0$  as a selected neighbor.Deleting  $d$  or  $L_0$  leaves that vertex with no selected neighbor.These give all eight deletion witnesses.Moreover, any prescribed incidence edge can be one of the omitted matching edges. For an incident point-line pair  $p\in L$ , choose  $c\in L\setminus\{p\}$ , choose  $a\notin L$ , and put  $b=p+a$ . Then  $a,b,c$  are independent and
+$$p=a+b,\qquad L=M_c.$$
+Thus the specified point0–line8 cut can have both endpoints outside such a selection.All the construction’s removed and added edges consequently have both endpoints outside the global forming selection. Its minimality survives, and its size is
+$$|S|=12r+2(8r)=28r.$$
+Its selected isolates number exactly
+$$i(S)=2(2r)=4r.$$
+In particular,
+$$5|S|+i(S)=140r+4r=144r=3n,$$
+which is the claimed isolate equality.7. The exact  $SF_2$  implication has the correct directionThe exhibited inclusion-minimal forming selection proves
+$$SF_2(T_r)\ge28r.$$
+Using the established cubic compensation theorem and the now-proved exact dissociation number,
+$$\begin{aligned}
+7SF_2(T_r)
+&\le3n+2\beta_2(T_r)\\
+&=3(48r)+2(26r)\\
+&=196r\\
+&=7(28r).
+\end{aligned}$$
+Therefore
+$$\boxed{SF_2(T_r)=28r}.$$
+Consequently,
+$$SF_2(T_r)-\beta_2(T_r)=2r=\frac n{24},$$
+and the compensation inequality is attained exactly. Also,
+$$2\bigl(SF_2(T_r)-\beta_2(T_r)\bigr)=4r=i(S).$$
+8. Simplicity, bipartiteness, and two-connectivity—including  $r=1,2$ The order is
+$$r(20+14+14)=48r.$$
+Every port receives exactly one new edge, so the graph is cubic.The stated core bipartition works. Give Heawood points color zero and lines color one. Then point ports attach to odd  $X$ -vertices, line ports attach to even  $X$ -vertices, and every cyclic edge joins an even  $X$ -vertex to an odd one.For simplicity:At  $r=1$ ,  $x_4x_5$  was deleted and is restored exactly once.At  $r=2$ , the two cross edges are
+$$x_{4,0}x_{5,1},\qquad x_{4,1}x_{5,0},$$
+which have different endpoint pairs.For larger  $r$ , interfaces join distinct modules through distinct ports.For two-connectivity, the edge-swap reasoning is sound. If two two-connected graphs have an edge deleted in each and their endpoints joined by two cross edges, deletion of a non-port vertex can split its original graph, after the edge deletion, into at most two pieces containing the two ports. The other graph reconnects those pieces. Deletion of a port leaves its original graph connected and leaves the other cross edge available.Apply this twice to join  $C_1$  to its two Heawood blocks, obtaining a two-connected module  $G_i$  in which  $e_4$  remains present.Now remove  $e_4$  in each  $G_i$  and perform the cyclic joins.For  $r\ge2$ , after deleting a vertex  $v$ :If  $v$  is a non-port in  $G_i$ , then  $(G_i-v)-e_4$  is connected or has two components containing the two ports. The chain through all other modules reconnects those ports.If  $v$  is a port, then  $G_i-v$  is connected. One cyclic interface is lost, and the remaining interfaces connect the modules along a path.For  $r=2$ , that outside chain consists of the other module, and the same proof applies. For  $r=1$ , the edge is restored, so the final graph is exactly the already two-connected  $G_0$ .Thus every  $T_r$  is two-connected.Finally, the stated general upper coefficient follows from the supplied compensation theorem: a cubic bipartite graph has equal bipartition classes, so  $\beta_2\ge n/2$ . Hence
+$$7(SF_2-\beta_2)
+\le3n-5\beta_2
+\le\frac n2,$$
+giving
+$$SF_2-\beta_2\le\frac n{14}.$$
+The new family supplies the lower coefficient  $1/24$ , which improves the preceding project coefficient  $1/28$  while leaving the optimum between  $1/24$  and  $1/14$ .

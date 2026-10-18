@@ -156,8 +156,23 @@ beta_2=26r and SF_2=28r for every r>=1, with gap n/24 and linear
 compensation equality. Eight conditional Lean count theorems and
 independent controls of every fixed-core subset and ten rings pass;
 the full graph theorem retains a written proof. Its separate Oracle
-review is pending. The connected asymptotic optimum is therefore
+review returned ACCEPT. The connected asymptotic optimum is therefore
 between1/24 and1/14; neither optimality nor the grid bridge is settled.
+
+The [arbitrary core interfaces and second-cut obstruction](docs/HEAWOOD_SECOND_CUT_OBSTRUCTION.md)
+now extend those exact values to every allowed simple bipartite cubic
+matching between c six-port cores and b pendant one-cut Heawood blocks:
+n=20c+14b,beta_2=12c+7b,SF_2=12c+8b. Isolate compensation gives
+attainment without restricting the remaining core matching. For c>=2,
+connectedness forces b<=2c, so this entire architecture cannot beat
+the asymptotic1/24coefficient. A general Fano proof shows that deleting
+any two disjoint Heawood incidences still gives beta_2=8, but an explicit
+34-vertex module disproves extending the old saturated-port charge to
+such a second cut: its local dissociation count is20rather than19.
+The uncharged obligation moves to its new interface. Nine new Lean
+audits and all168cut choices/44interface controls pass; the general
+incidence and interface proofs remain written. This extension has a
+separate pending review.
 
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring

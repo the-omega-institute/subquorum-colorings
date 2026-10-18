@@ -132,6 +132,9 @@ set in a four-vertex path, of size at most two. This is a contradiction.
 Hence t<=10. Any two of the three cut pairs have the same relation
 under the stated rotations.
 
+An equivalent shorter end to this case is that omitted h_4,h_5 create
+the second complement edge h_4--h_5, directly contradicting e_T=1.
+
 ## All three pairs omitted: at most nine
 
 Here p=0 and the complement contains all three remaining X matching
@@ -164,6 +167,10 @@ The two Heawood blocks contribute at most14+b. The entire module
 contributes at most26, independent of its interface ports. Summing
 over disjoint modules proves beta_2(T_r)<=26r, with every dense block's
 gain charged once to its own distinct cut pair.
+
+For r=1, first delete the restored e4 when restricting to the auxiliary
+core Q. A dissociation set remains dissociating after deleting an edge,
+so the same bound applies without consuming another interface condition.
 
 For attainment, choose all seven points in each Heawood block, and
 U union H_odd union X_even in each Q. The latter has twelve vertices
@@ -223,6 +230,11 @@ labels cite the written composition proof, not independent optimization.
 Run `python3 scripts/check_cubic_triple_ports.py --output output/cubic-triple-port-controls.json`.
 The [independent review request](reviews/2026-10-19-triple-port-compensation-review-question.md)
 includes this proof and its complete four-port dependency. Its
-[receipt](../output/cubic-triple-port-oracle-review.json) records the
-original live stream; no verdict is inferred from the completed review
-of the preceding four-port theorem.
+[receipt](../output/cubic-triple-port-oracle-review.json) records ACCEPT
+for the full new omission lemma and exact all-r graph theorem. The
+[response](reviews/2026-10-19-triple-port-compensation-review-response.txt)
+rechecks the four-port dependency, restoration and symmetry arguments,
+all tight cases, separate module charges, attainment and connectivity.
+Its optional shorter m=2 contradiction and explicit r=1 restriction
+clarification are incorporated above. The established Heawood saturation
+and cubic compensation theorems are specified inputs to that review.

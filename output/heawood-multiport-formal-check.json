@@ -1,0 +1,46 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-18T23:25:28.931941+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3505.\nPages active:                                 220523.\nPages inactive:                               204696.\nPages speculative:                             15183.\nPages throttled:                                   0.\nPages wired down:                             254250.\nPages purgeable:                                 474.\n\"Translation faults\":                    15491178281.\nPages copy-on-write:                       945290654.\nPages zero filled:                        6369995303.\nPages reactivated:                        2903625947.\nPages purged:                              135997448.\nFile-backed pages:                            279042.\nAnonymous pages:                              161360.\nPages stored in compressor:                  1577222.\nPages occupied by compressor:                 308699.\nDecompressions:                           2337026490.\nCompressions:                             2760999701.\nPageins:                                  4077846144.\nPageouts:                                   11460099.\nSwapins:                                    25194181.\nSwapouts:                                   31527334.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 3.98,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.44,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/DissociationCover.lean",
+      "seconds": 0.481,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/HeawoodMultiport.lean",
+      "seconds": 12.307,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingHeawoodMultiportAudit.lean",
+      "seconds": 2.13,
+      "stdout": "'StarForming.HeawoodMultiport.witness_dissociates' depends on axioms: [propext]\n'StarForming.HeawoodMultiport.witness_cardinality' does not depend on any axioms\n'StarForming.HeawoodMultiport.simple_subcubic' depends on axioms: [propext]\n'StarForming.HeawoodMultiport.bipartite' depends on axioms: [propext]\n'StarForming.HeawoodMultiport.attachment_isolates' depends on axioms: [propext]\n'StarForming.HeawoodMultiport.external_port_profile' depends on axioms: [propext]\n'StarForming.HeawoodMultiport.two_cut_deficiency_equality' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.HeawoodMultiport.arbitrary_interface_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.HeawoodMultiport.architecture_density' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 1699610624,
+  "scope": "Six fixed graph certificates for the explicit34vertex second-cut obstruction: dissociation, cardinality, simple subcubic adjacency, bipartition, preattachment isolated ports and remaining saturated ports. Three conditional count declarations check the two-cut deficiency equality, arbitrary-interface exact parameters and architecture density. The all-disjoint-cut Fano cap, general block interfaces, minimality, connectedness and the architecture cut count retain written proofs."
+}

@@ -1,0 +1,11 @@
+import StarForming.HeawoodMultiport
+
+#print axioms StarForming.HeawoodMultiport.witness_dissociates
+#print axioms StarForming.HeawoodMultiport.witness_cardinality
+#print axioms StarForming.HeawoodMultiport.simple_subcubic
+#print axioms StarForming.HeawoodMultiport.bipartite
+#print axioms StarForming.HeawoodMultiport.attachment_isolates
+#print axioms StarForming.HeawoodMultiport.external_port_profile
+#print axioms StarForming.HeawoodMultiport.two_cut_deficiency_equality
+#print axioms StarForming.HeawoodMultiport.arbitrary_interface_parameters
+#print axioms StarForming.HeawoodMultiport.architecture_density
