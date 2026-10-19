@@ -183,6 +183,13 @@ stronger edge-or-corner tile-neighborhood obstruction above. No search result
 is used to prove a universal claim. No minimality or smallest-radius
 optimality is claimed, and no blank-padded symmetry conclusion is asserted.
 
+The earlier [sparse-end locality obstruction](FROZEN_END_LOCALITY_OBSTACLE.md)
+already makes donors arbitrarily distant from a specified unmatched sparse
+end. It explicitly leaves open donors near other portions of its long
+source. The obstruction here concerns the neighborhood of the ENTIRE
+positive receiver and excludes every immediately neighboring resource.
+It does not prove arbitrarily large distances from a whole receiver.
+
 Together with the unbounded degree-three two-leg family, this changes the
 next general research question: enlarging local corner patterns to ALL
 immediate neighboring tiles still does not suffice. A general compensation
