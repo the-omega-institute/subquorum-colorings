@@ -197,6 +197,15 @@ def controls():
         assert moved['source_phase'] == record['source_phase']
         assert moved['comb_flux'] == record['comb_flux']
         symmetry_images += 1
+    for record in records:
+        record['channel'] = {key: value for key, value in record['channel'].items()
+                             if key != 'positive_donors'}
+        for key in ('resources', 'baseline_resources'):
+            if key in record:
+                resources = record[key]
+                record[key] = dict(resources, original_ledger={
+                    name: value for name, value in resources['original_ledger'].items()
+                    if name != 'strips_data'})
     return dict(status='ALL_CHECKS_PASSED', physical_cases=len(records), symmetry_images=symmetry_images,
                 records=records, smallest_occupied_witness=witness,
                 scope='Physical checks of the general written whole-channel identity and residual '
