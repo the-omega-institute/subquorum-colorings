@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-19T22:33:26.326210+00:00",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "actual_lean_lake_preflight": [],
+  "memory_pressure_free_percent": 43,
+  "parallel_jobs": 1,
+  "source": "formal/SubQuorum/MinusOneJointCompensation.lean",
+  "declaration_count": 14,
+  "declarations": [
+    "ring_size",
+    "core_size",
+    "core_inside_ring",
+    "core_images_overlap",
+    "core_images_overlap_twice",
+    "tip_predecessor_continuation",
+    "tip_only_adjacent_blank",
+    "blank_gate_excludes_tip_event",
+    "four_disjoint_slots",
+    "joint_tax_bound",
+    "joint_slack_bound",
+    "residual_sufficient",
+    "density_sufficient",
+    "objective_bound"
+  ],
+  "build_seconds": 5.07,
+  "axiom_audit_seconds": 0.376,
+  "audit_stdout": "'SubQuorum.MinusOneJointCompensation.ring_size' does not depend on any axioms\n'SubQuorum.MinusOneJointCompensation.core_size' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.core_inside_ring' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.core_images_overlap' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.core_images_overlap_twice' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.tip_predecessor_continuation' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.tip_only_adjacent_blank' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.blank_gate_excludes_tip_event' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.four_disjoint_slots' depends on axioms: [propext]\n'SubQuorum.MinusOneJointCompensation.joint_tax_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MinusOneJointCompensation.joint_slack_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MinusOneJointCompensation.residual_sufficient' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MinusOneJointCompensation.density_sufficient' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MinusOneJointCompensation.objective_bound' depends on axioms: [propext, Quot.sound]\n",
+  "audit_stderr": "",
+  "scope": "Complete eight-orientation seven-core ring interfaces and all64 pair overlaps; terminal-tip predecessor continuation; exact local tip/gate exclusion; disjoint four-slot capacity; scalar joint tax, slack and sufficient criteria. General module boundary classification, coordinate adapters and actual global marked-side injection remain written. Std-only; no Mathlib/shared CI changes."
+}

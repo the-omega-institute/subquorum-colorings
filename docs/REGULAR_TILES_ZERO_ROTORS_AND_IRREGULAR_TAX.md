@@ -113,6 +113,24 @@ following exhaustive reference-phase catalogue. Transport the physical
 tiling back to the original constructor to define each effective source
 phase, including reflected or transposed modules.
 
+For clarity, the actual two-leg constructor used here and in
+develop/check_two_leg_corner_obstruction.py has endpoints
+
+    P=({0,1} x {1,...,w}) union ({2,...,a} x {1})
+      union ({2,...,b} x {w}),
+
+and its COMPLETE selection set is
+
+    {(r,0): r=0,2,...,a} union {(r,w+1): r=0,2,...,b}
+    union {(r,2): r=3,5,...,a-1}
+    union {(r,w-1): r=3,5,...,b-1}
+    union {(a+1,1),(b+1,w)}.
+
+In particular |T|=2n+2. The entire alternating inward lists are essential:
+using only the last inward support on each leg gives degree-two endpoints
+on longer legs and is NOT this constructor. The original construction
+note TWO_LEG_DEGREE_THREE_COVERAGE_OBSTRUCTION.md already gives these lists.
+
 | Module/phase | Receiver profiles and counts | rho | Maximum irregular tails |
 |---|---|---:|---:|
 | Two-leg (0,0) | 4P: (w-2)/2; 2P1T: n; 1P2T: 2 | 1 | 0 |
@@ -328,8 +346,23 @@ output/regular-tile-compensation-formal-check.json for the precise scope.
 The previous all-positive two-leg theorem's independent review completed
 ACCEPT, but does not cover the present extensions. This note has a separate
 same-conversation review cd57f384-c7e4-4dc9-bb68-7849b67e4ee8, original
-stream execution 64375. At this checkpoint it is live with no verdict;
-preserve that task and stream. Its actual status is tracked in
-output/regular-tile-compensation-review-live.json.
+stream execution 64375. It failed terminally at browser input after four
+attempts, with infrastructure_retry_exhausted/cdp_disconnected@typing and
+no mathematical verdict. Its original stream and terminal record are
+preserved. One replacement attachment submission, task
+7bafeabd-1b51-442f-b8d8-7fd9b7b5c962, original stream execution 13128,
+conversation conv_41bd3b909f5810e1, completed REVISE. Its hand-written
+context omitted all but the final inward support on each leg. The reviewer
+correctly identified degree-two endpoints in that literal packet and
+specified the complete alternating lists above. The repository's actual
+constructor and original construction note already had those lists; no
+constructor code change was needed. The fixed rotor barrier, regular-tile
+capacity and all-length rotor chain were accepted independently. The
+corrected definition has follow-up task b8cb8a7a-0a70-47e5-96b1-ac21292c0881,
+original stream execution 51837, currently live with no verdict. REVISE
+is not ACCEPT. Preserve this task and its original stream.
+See output/regular-tile-compensation-file-review-live.json and the
+separate review assessment. The newer
+MINUS_ONE_JOINT_WITNESS_COMPENSATION.md is outside this review's input.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

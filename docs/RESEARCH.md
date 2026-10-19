@@ -95,6 +95,27 @@ The remaining target is the coupled payment of irregular 1P1T/2P0T events
 and marked positive sides, without reusing negative mass or full-tile credit.
 General decomposition and unrestricted grid/triple equality remain open.
 
+The [minus-one joint witness theorem](MINUS_ONE_JOINT_WITNESS_COMPENSATION.md)
+puts irregular tip events and marked donor sides into distinct tip and
+bar-corner slots of charge-minus-one two-leg modules. A seven-of-twelve
+outer-ring packing argument proves even the LOST original canonical donor
+tiles are distinct. Even minus-one tips retain endpoint continuation;
+marked sides arise exactly from upper bar corners invading donor gates.
+Thus G<=2B_minus, with no reuse of irregular tip slots. If all two-leg
+modules have charge +1 or -1, with B_minus negative ones and R_minus
+negative rotors, this gives K_irregular+G<=4B_minus+4R_minus and
+sigma>=N-3B_minus-2R_minus+C_regular. Thus N+C_regular>=3B_minus+2R_minus
+is sufficient. The all-parameter assignment remains written; 28 scoped
+Lean declarations, 224 boundary images and twenty-one physical
+controls pass. An explicit seven-module fusion loses both positive donors,
+refuting G=0 in the enlarged class while retaining finer budget five.
+Fourteen of the Lean declarations verify that actual seven-module
+configuration, including feasibility, original charges, both consumed
+donors, zero intratile defect and exact final slack69. Its failure of
+the density test does not refute compensation. No irregular
+tip event was found in the controls; a bounded UNSAT search is not a
+general exclusion. The full residual inequality remains open.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.
