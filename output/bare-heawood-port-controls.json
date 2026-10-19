@@ -1,0 +1,426 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "scope": "The bare-port deficit and all-r phase compensation have general written proofs. Finite enumeration is independent verification only. The explicit core phase refutes a pure core certificate cap, not the conjectured full SF bound.",
+  "local": {
+    "totals": {
+      "all_subsets": 16384,
+      "forced_robust_deletion_cases": 3810,
+      "bare_0_deletion_cases": 3339,
+      "bare_1_deletion_cases": 462,
+      "bare_2_deletion_cases": 9
+    },
+    "maximum_without_robust_nonport": {
+      "2": 6,
+      "1": 7,
+      "0": 8
+    },
+    "attaining_local_no_robust_examples": {
+      "0": [
+        0,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "1": [
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "2": [
+        3,
+        6,
+        9,
+        11,
+        12,
+        13
+      ]
+    },
+    "scope": "Finite tests of the written Fano proof. Local no-robust examples are not claimed to be globally minimal in an ambient graph."
+  },
+  "phases": {
+    "instances": [
+      {
+        "k": 2,
+        "repeats": 1,
+        "core_selected_size": 25,
+        "unsupported_nonports": [
+          22
+        ],
+        "unique_selected_port_witnesses": {
+          "22": 34
+        },
+        "forced_distinct_Heawood_losses": 1,
+        "conditional_full_selection_upper": 72
+      },
+      {
+        "k": 4,
+        "repeats": 2,
+        "core_selected_size": 50,
+        "unsupported_nonports": [
+          34,
+          46
+        ],
+        "unique_selected_port_witnesses": {
+          "34": 58,
+          "46": 70
+        },
+        "forced_distinct_Heawood_losses": 2,
+        "conditional_full_selection_upper": 144
+      },
+      {
+        "k": 6,
+        "repeats": 3,
+        "core_selected_size": 75,
+        "unsupported_nonports": [
+          46,
+          58,
+          70
+        ],
+        "unique_selected_port_witnesses": {
+          "70": 106,
+          "58": 94,
+          "46": 82
+        },
+        "forced_distinct_Heawood_losses": 3,
+        "conditional_full_selection_upper": 216
+      },
+      {
+        "k": 8,
+        "repeats": 4,
+        "core_selected_size": 100,
+        "unsupported_nonports": [
+          58,
+          70,
+          82,
+          94
+        ],
+        "unique_selected_port_witnesses": {
+          "94": 142,
+          "58": 106,
+          "82": 130,
+          "70": 118
+        },
+        "forced_distinct_Heawood_losses": 4,
+        "conditional_full_selection_upper": 288
+      },
+      {
+        "k": 10,
+        "repeats": 5,
+        "core_selected_size": 125,
+        "unsupported_nonports": [
+          70,
+          82,
+          94,
+          106,
+          118
+        ],
+        "unique_selected_port_witnesses": {
+          "70": 130,
+          "106": 166,
+          "82": 142,
+          "118": 178,
+          "94": 154
+        },
+        "forced_distinct_Heawood_losses": 5,
+        "conditional_full_selection_upper": 360
+      },
+      {
+        "k": 12,
+        "repeats": 6,
+        "core_selected_size": 150,
+        "unsupported_nonports": [
+          82,
+          94,
+          106,
+          118,
+          130,
+          142
+        ],
+        "unique_selected_port_witnesses": {
+          "130": 202,
+          "106": 178,
+          "142": 214,
+          "82": 154,
+          "118": 190,
+          "94": 166
+        },
+        "forced_distinct_Heawood_losses": 6,
+        "conditional_full_selection_upper": 432
+      },
+      {
+        "k": 14,
+        "repeats": 7,
+        "core_selected_size": 175,
+        "unsupported_nonports": [
+          94,
+          106,
+          118,
+          130,
+          142,
+          154,
+          166
+        ],
+        "unique_selected_port_witnesses": {
+          "130": 214,
+          "166": 250,
+          "106": 190,
+          "142": 226,
+          "118": 202,
+          "154": 238,
+          "94": 178
+        },
+        "forced_distinct_Heawood_losses": 7,
+        "conditional_full_selection_upper": 504
+      },
+      {
+        "k": 16,
+        "repeats": 8,
+        "core_selected_size": 200,
+        "unsupported_nonports": [
+          106,
+          118,
+          130,
+          142,
+          154,
+          166,
+          178,
+          190
+        ],
+        "unique_selected_port_witnesses": {
+          "130": 226,
+          "166": 262,
+          "106": 202,
+          "142": 238,
+          "178": 274,
+          "118": 214,
+          "154": 250,
+          "190": 286
+        },
+        "forced_distinct_Heawood_losses": 8,
+        "conditional_full_selection_upper": 576
+      },
+      {
+        "k": 18,
+        "repeats": 9,
+        "core_selected_size": 225,
+        "unsupported_nonports": [
+          118,
+          130,
+          142,
+          154,
+          166,
+          178,
+          190,
+          202,
+          214
+        ],
+        "unique_selected_port_witnesses": {
+          "130": 238,
+          "166": 274,
+          "202": 310,
+          "142": 250,
+          "178": 286,
+          "118": 226,
+          "214": 322,
+          "154": 262,
+          "190": 298
+        },
+        "forced_distinct_Heawood_losses": 9,
+        "conditional_full_selection_upper": 648
+      },
+      {
+        "k": 20,
+        "repeats": 10,
+        "core_selected_size": 250,
+        "unsupported_nonports": [
+          130,
+          142,
+          154,
+          166,
+          178,
+          190,
+          202,
+          214,
+          226,
+          238
+        ],
+        "unique_selected_port_witnesses": {
+          "130": 250,
+          "226": 346,
+          "166": 286,
+          "202": 322,
+          "142": 262,
+          "238": 358,
+          "178": 298,
+          "214": 334,
+          "154": 274,
+          "190": 310
+        },
+        "forced_distinct_Heawood_losses": 10,
+        "conditional_full_selection_upper": 720
+      },
+      {
+        "k": 22,
+        "repeats": 11,
+        "core_selected_size": 275,
+        "unsupported_nonports": [
+          142,
+          154,
+          166,
+          178,
+          190,
+          202,
+          214,
+          226,
+          238,
+          250,
+          262
+        ],
+        "unique_selected_port_witnesses": {
+          "226": 358,
+          "166": 298,
+          "262": 394,
+          "202": 334,
+          "250": 382,
+          "142": 274,
+          "238": 370,
+          "178": 310,
+          "214": 346,
+          "154": 286,
+          "190": 322
+        },
+        "forced_distinct_Heawood_losses": 11,
+        "conditional_full_selection_upper": 792
+      },
+      {
+        "k": 24,
+        "repeats": 12,
+        "core_selected_size": 300,
+        "unsupported_nonports": [
+          154,
+          166,
+          178,
+          190,
+          202,
+          214,
+          226,
+          238,
+          250,
+          262,
+          274,
+          286
+        ],
+        "unique_selected_port_witnesses": {
+          "226": 370,
+          "166": 310,
+          "262": 406,
+          "202": 346,
+          "250": 394,
+          "238": 382,
+          "178": 322,
+          "274": 418,
+          "214": 358,
+          "154": 298,
+          "190": 334,
+          "286": 430
+        },
+        "forced_distinct_Heawood_losses": 12,
+        "conditional_full_selection_upper": 864
+      }
+    ],
+    "nonvacuous_ambient_witness": {
+      "order": 124,
+      "selected": [
+        0,
+        7,
+        10,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        34,
+        35,
+        36,
+        37,
+        41,
+        42,
+        43,
+        46,
+        50,
+        52,
+        53,
+        60,
+        62,
+        63,
+        64,
+        65,
+        66,
+        72,
+        73,
+        74,
+        77,
+        78,
+        79,
+        89,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        109,
+        114,
+        119,
+        120,
+        121,
+        122,
+        123
+      ],
+      "selected_size": 62,
+      "literal_deletion_checks": 62,
+      "block_sizes": [
+        7,
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "bare_counts": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "exact_SF_claimed": false
+    }
+  }
+}

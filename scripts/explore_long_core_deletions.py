@@ -4,10 +4,6 @@ import argparse
 import json
 from pathlib import Path
 
-import numpy as np
-from scipy.optimize import Bounds, LinearConstraint, milp
-from scipy.sparse import coo_matrix
-
 from check_long_core_words import word_control
 from check_starforming_gap import local_condition
 from explore_long_core_SF import clauses
@@ -32,6 +28,10 @@ def safe_deletions(adjacency, selected, ports):
 
 
 def main():
+    import numpy as np
+    from scipy.optimize import Bounds, LinearConstraint, milp
+    from scipy.sparse import coo_matrix
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--k', type=int, required=True)
     parser.add_argument('--seconds', type=float, default=30)

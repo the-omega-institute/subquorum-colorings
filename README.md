@@ -203,6 +203,19 @@ the older robust-deletion shortcut is insufficient, even though H0remains
 safely deletable. Finite solver timeouts settle no new SF value; the exact
 all-k SF question remains live.
 
+The [bare Heawood port lemma](docs/BARE_HEAWOOD_PORT_COMPENSATION.md)
+now proves |C|+t<=8 for the restriction of any ambient minimal forming
+set to a broken Heawood block, where t counts ports omitted together
+with both internal neighbors. Two bare ports cost two selected vertices,
+preventing repeated use of one deficit. A 25r-vertex core phase in Q_(2r)
+disproves a core-only certificate cap, but forces r distinct attached
+blocks to lose a vertex; consequently every minimal set with that phase
+has size at most 72r=36k. The local Fano proof and all-r phase argument
+are written proofs. Four Lean declarations check the general boundary
+inference and conditional accounting; all 16,384 local selections,
+twelve phase lengths and a literal 62-vertex ambient witness pass finite
+controls. This does not settle the unrestricted all-k SF question.
+
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
 through a connected Heawood double cover, including all connected regular

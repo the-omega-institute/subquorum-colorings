@@ -5,10 +5,6 @@ import json
 from pathlib import Path
 import time
 
-import numpy as np
-from scipy.optimize import Bounds, LinearConstraint, milp
-from scipy.sparse import coo_matrix
-
 from check_cubic_padding_rings import core, edge
 from check_cubic_starforming import SELECTED, base, star_masks
 from check_starforming_gap import forms
@@ -62,6 +58,10 @@ def verify_literal(adjacency, selected):
 
 
 def main():
+    import numpy as np
+    from scipy.optimize import Bounds, LinearConstraint, milp
+    from scipy.sparse import coo_matrix
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--k', type=int, required=True)
     parser.add_argument('--seconds', type=float, default=60)

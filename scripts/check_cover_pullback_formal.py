@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -40,7 +40,8 @@ def main():
                     'multi-ports': 'build/heawood-multiport-formal',
                     'long-core': 'build/long-core-word-formal',
                     'long-core-upper': 'build/long-core-upper-formal',
-                    'private-clauses': 'build/private-clauses-formal'}[arguments.audit]
+                    'private-clauses': 'build/private-clauses-formal',
+                    'bare-ports': 'build/bare-ports-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -69,6 +70,8 @@ def main():
     elif arguments.audit == 'long-core-upper':
         modules += ('StarForming/DissociationCover.lean', 'StarForming/LongCoreWord.lean',
                     'StarForming/LongCoreUpper.lean', 'StarFormingLongCoreUpperAudit.lean')
+    elif arguments.audit == 'bare-ports':
+        modules += ('StarForming/BareHeawoodPorts.lean', 'StarFormingBareHeawoodPortsAudit.lean')
     else:
         modules += ('StarForming/PrivateClauses.lean', 'StarFormingPrivateClausesAudit.lean')
     for module in modules:
@@ -89,7 +92,7 @@ def main():
                               checks[-1]['stdout'])
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
-                'long-core-upper': 10, 'private-clauses': 5}
+                'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -174,6 +177,17 @@ def main():
                             'clause or is the sole selected core neighbor of a selected port. '
                             'The finite binary optimization model and bounded-size clause '
                             'count follow by the written cardinal/count argument.')
+    if arguments.audit == 'bare-ports':
+        receipt['scope'] = ('Two general graph-level statements: if deleting a selected vertex '
+                            'covers the newly omitted vertex and every old omitted vertex except '
+                            'one port, minimality forces that port to be omitted and its only '
+                            'selected neighbor to be its retained external support; therefore '
+                            'all internal neighbors are omitted. Two conditional list/count '
+                            'theorems sum additive per-port losses without reusing a block '
+                            'deficit and yield the periodic-phase upper bound. The Fano '
+                            'local loss proof, periodic certificate table and graph-to-count '
+                            'instantiation retain written proofs; the full Heawood inequality '
+                            'and all-k SF conjecture are not formalized or settled here.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

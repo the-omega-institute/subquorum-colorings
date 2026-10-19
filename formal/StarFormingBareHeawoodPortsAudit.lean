@@ -1,0 +1,6 @@
+import StarForming.BareHeawoodPorts
+
+#print axioms StarForming.BarePorts.only_failure_forces_bare_boundary
+#print axioms StarForming.BarePorts.internal_neighbors_omitted
+#print axioms StarForming.BarePorts.additive_block_losses
+#print axioms StarForming.BarePorts.periodic_phase_bound
