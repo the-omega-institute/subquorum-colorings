@@ -125,6 +125,21 @@ its follow-up completed ACCEPT; the separate new-mechanism review is pending. Ge
 existence of sufficient distant capacity and arbitrary bent-source coverage
 remain open; these are written geometric theorems with scoped formal support.
 
+The [whole-cavity theorem](docs/CLOSED_SOURCE_CAVITY_COMPENSATION.md) pays
+even when a negative-comb pair's saturated-tip rung is occupied. Complete
+comb exits contribute an [exact signed boundary flux](docs/CAVITY_BOUNDARY_FLUX_AND_COMPENSATION.md).
+The [mixed-direction extension](docs/MIXED_DIRECTION_CAVITY_COMPENSATION.md)
+proves that every fully enclosed perpendicular positive source has phase
+gain at least two, sharply, by pairing its chamber-flank sites. Enclosed
+source orientations are therefore unrestricted. Actual physical donor
+incidence controls overlap between cavities; shifted squares are counting
+devices only. The new extension has 69 physical controls, eight symmetry
+images and 117 scoped local Lean declarations in the cumulative audit.
+Full geometry remains written; partial foreign sources, adequate cavity
+coverage and the universal grid theorem remain open. The earlier cavity
+review returned REVISE; its wording and proof-detail corrections are
+[recorded explicitly](docs/reviews/2026-10-19-closed-cavity-assessment.md).
+
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees
 under explicit occupied-face and blank-cap assumptions. Each distinct leaf

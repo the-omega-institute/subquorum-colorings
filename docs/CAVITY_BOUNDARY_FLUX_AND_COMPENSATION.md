@@ -8,6 +8,11 @@ on that term or a universal grid theorem.
 
 ## 1. Hypotheses and physical end membership
 
+The later `MIXED_DIRECTION_CAVITY_COMPENSATION.md` permits fully enclosed
+positive sources of arbitrary tile-preserving orientations. Each
+perpendicular source adds a nonnegative phase slack to the exact identity;
+all sufficient capacity/flux inequalities below continue to hold.
+
 Use the original whole-receiver ledger
 
     Delta=-B+D_all+E,        E>=0,                    (1)

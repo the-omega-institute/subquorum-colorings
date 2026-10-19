@@ -28,11 +28,19 @@ Its closed inner cavity is the physical rectangle
 
     C={2,...,r+1} x {1,...,w-2}.                       (2)
 
-The root source has no endpoints in C. Require that every complete endpoint
-component meeting C is contained in C, and is either a complete straight
+The root source has no endpoints in C. Require that every endpoint
+component meeting C, without exception for unlisted components, is contained
+in C and is either a complete straight
 comb or one of n additional prescribed positive long sources with horizontal
 chambers. The enclosed sources may open up or down; positive physical
-alignment, matching and supports are retained. Horizontal and vertical combs
+alignment, matching and supports are retained. Precisely, in the root's
+relative frame a down-opening chamber begins at an even row and an even
+column. Translations have even coordinates. Up-opening sources are images
+under row reflections row -> odd_constant-row; these preserve both row
+pairings. Column reflections column -> odd_constant-column also preserve
+both column partitions as sets of pairs. A one-column translation or an
+even-constant row reflection is not an allowed change of source phase.
+Horizontal and vertical combs
 may occur together, with arbitrary lengths and relative positions subject
 to feasibility. No endpoint-free internal band or pairing hypothesis is used.
 
@@ -53,10 +61,14 @@ The shifted squares are only a counting device, not additional physical donors.
     D_C=2+2n+D'_C >= 2(n+1).                           (3)
 
 Proof. On either extreme column of C, exactly the h inside supports in
-rows 3,5,...,r-1 are selected. Every other site is blank: at an intervening
-even row a neighboring retained support already sees its arm endpoint;
-the final two sites are excluded by the last inside support and axial
-support. This also covers the first row using the support in row 3.
+rows 3,5,...,r-1 are selected. At even row 2 the next inside support in
+row 3 is already adjacent to its arm endpoint; any occupied site in row 2
+on this column would give that selected support a second occupied neighbor.
+At every even row 4,...,r use the preceding inside support in row q-1
+instead. This excludes both selections and endpoints, including row r.
+At row r+1 the axial support in the adjacent arm column already sees the
+tip in row r, and again excludes any occupied site. These cases exhaust
+the column, including the first row and final two rows.
 Deleting the two columns therefore removes 2h selections and no endpoints.
 
 The original partition has (h+1)(w-2)/2 tiles; the shifted partition has
@@ -70,8 +82,13 @@ the two partitions. Counting vertices gives
     D_C-D'_C=2+E_C-E'_C.                              (4)
 
 Component closure and absence of boundary endpoints ensure that the entire
-receiver of every enclosed component is present in both partitions. In
-particular, trimming cannot leave only one raw end of a comb.
+receiver of every enclosed component is present in both partitions. Indeed,
+C is a union of complete physical squares and retains the same complete
+row pairs after trimming. Every remaining endpoint lies in one of the
+shifted column pairs partitioning the trimmed interval, so its entire
+shifted square lies in C. A support outside C can still force a label
+inside C; containment of such a support is not needed for this argument.
+In particular, trimming cannot leave only one raw end of a comb.
 
 Each complete comb has whole raw sum zero in either tiling. An aligned comb
 has only (p,t)=(2,1) tiles. A misaligned comb has those middle tiles and two
@@ -85,9 +102,17 @@ fits whole four-endpoint squares; nonterminal arm tiles have (2,1); and
 each of its two last arm squares has (1,1), not (1,2). The axial support is
 in the shifted last square, while its other inside sites are forced blank
 by the preceding inside and axial supports. The outer side support lies in
-the other column phase. Thus each tip contributes -1/2. Reflecting vertically
-preserves these counts. All relevant receiver labels are fixed in arbitrary
-feasible completions retaining the prescribed data.
+the other column phase. Thus each tip contributes -1/2. The phase-preserving
+vertical reflection specified in Section 1 preserves these counts.
+In source-relative coordinates the shifted label table is: chamber
+squares (p,t)=(4,0), nonterminal arm squares (2,1), tip squares (1,1).
+For a left tip square {r,r+1} x {0,1}, vertices (r,0),(r+1,0) are the
+endpoint and axial support. Corner (r,1) is blank because the inside
+support (r-1,1) already sees its endpoint; (r+1,1) is blank because the
+axial support already sees the tip. The right tip is symmetric. The same
+preceding/next inside-support test fixes the nonterminal corners. These
+tests apply even if a forcing support is outside the cavity. Thus all
+labels contributing to the shifted count are fixed in retaining completions.
 
 Tile ownership prevents different endpoint components sharing a square.
 Consequently E_C=n and E'_C=-n. Substitute in (4). Every shifted square
@@ -132,8 +157,10 @@ exempted tile remains deficit zero. This is a single use of (1), not an
 addition of the original mouth and doubled-averaging ledgers.
 
 For an initial-pair formulation, impose closure using the prescribed complete
-frozen sources and combs initially. Normalization only promotes existing
-endpoints; it never adds endpoints. Every endpoint in C is frozen, so it
+frozen sources and combs initially. Each normalization step promotes an
+existing endpoint to a selection and deletes its matching mate from the
+endpoint set; it creates no endpoint and retains all old selections.
+Every endpoint in C is frozen, so it
 cannot be promoted, and no exterior endpoint can be promoted into C. Original
 selections remain selected. Thus all labels in C, its closed components and
 the two-partition hypotheses persist. Alternatively impose the hypotheses
@@ -186,9 +213,11 @@ remote-rung normal form, but their saturated-tip rung is the image of
     {6,7} x {10,...,21},
 
 which contains all endpoints of H. It fails the endpoint-free rung condition.
-There is no second horizontal comb to provide another pair. This refutes
-the sufficiency of the existing endpoint-free pair criterion for this family;
-it does not refute the coefficient-one target. The closed-cavity identity
+There is no second horizontal comb to provide another pair. This shows
+that the saturated-tip endpoint-free pair criterion does not cover this
+family; its sufficiency is unaffected. The lower sparse-tip mouth corridor
+is not the saturated-tip resource required by that lemma. This does not
+refute the coefficient-one target. The closed-cavity identity
 applies and yields D_C=2+D'_C and Delta>=1.
 
 For a general feasibility proof, all vertical comb endpoints are at least
@@ -241,12 +270,43 @@ interior chamber vertex, so the potential facing-support adjacency does not
 occur. Each horizontal comb is four columns from its two associated vertical
 combs and four rows above the next source chamber. Other prescribed pieces
 have endpoint distance at least four, which separates one-step supports.
+For completeness the following bounds exhaust interfaces between pieces
+with different indices. Distances refer to endpoint vertices before adding
+their one-step supports; the two exceptional distance-three interfaces
+are treated in the preceding paragraph.
+
+| Interface | Uniform bound or exceptional case |
+| --- | --- |
+| Source i, source j, i!=j | Chambers have row distance at least seven; corresponding arms have column distance at least eight. An earlier arm is at least eight columns from a later chamber, and later arms begin at least nine rows below the earlier chamber. |
+| Vertical comb i, source j!=i | For j=i+1 the nearest foreign arm has column distance five; farther arms have distance at least eleven. For j<=i the chamber is at least four rows above the comb's first endpoint; for j>i its column interval is at least five columns away. |
+| Horizontal comb i, source j!=i | The next chamber is four rows below and earlier chambers are at least eleven rows above. Arms with j<=i are at least seven columns outside the comb interval; later arms start at least six rows below it. |
+| Two vertical combs | Distinct lanes on the same side differ by at least eight columns; opposite-side lanes differ by at least 41+e columns. |
+| Two horizontal combs | Distinct rows differ by at least eight. |
+| Vertical comb i, horizontal comb j | For j>=i the horizontal endpoint intervals are at least four columns away; for j<i the horizontal row is at least nine rows above the vertical path. |
+
+At endpoint distance at least four, supports of different pieces are at
+distance at least two and cannot be adjacent; no support sees a foreign
+endpoint. Within a piece the prescribed alternating pattern supplies
+exactly its own endpoint as each support's occupied neighbor. The
+distance-three exceptions have no facing supports, as checked above.
+Adjacent endpoints cannot join different pieces. Diagonal endpoints in a
+shared physical square would also have distance two, excluded here.
+All supplied matching edges are internal to their prescribed pieces.
+The endpoint formulas place every nonroot piece in rows 4,...,y+1 and
+columns 4,...,w+1; the supplied axial/side supports fit in the ambient
+rectangle with rows 0,...,y+3 and columns 0,...,w+7. Source translations
+have coordinates (8i,8i), so all retain the exact positive phase.
 These uniform margins prove feasibility and distinct complete components
 for every a,e,d. Sources and combs remain frozen under feasible completions.
 No subset of the nested cavity donors is charged separately without applying
 the explicit incidence rule in Section 3.
 
 ## 6. Evidence and remaining work
+
+The later `MIXED_DIRECTION_CAVITY_COMPENSATION.md` removes the parallel
+restriction for fully enclosed prescribed positive sources. Its exact
+identity retains an additional nonnegative phase slack; the parallel
+identity (3) above remains exact with zero such slack.
 
 `develop/check_closed_source_cavities.py` checks 48 physical configurations
 and eight symmetries, including 16 explicit zero-mouth/occupied-rung instances,

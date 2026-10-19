@@ -20,6 +20,7 @@ import SubQuorum.AdaptiveStripCompensation
 import SubQuorum.CapacityAwareStrips
 import SubQuorum.RemoteCombRungs
 import SubQuorum.ClosedSourceCavities
+import SubQuorum.MixedCavitySources
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -134,3 +135,7 @@ import SubQuorum.ClosedSourceCavities
 #print axioms SubQuorum.ClosedSourceCavities.cavity_boundary_flux_partition
 #print axioms SubQuorum.ClosedSourceCavities.disjoint_cavity_boundary_compensation
 #print axioms SubQuorum.ClosedSourceCavities.twofold_cavity_boundary_compensation
+#print axioms SubQuorum.MixedCavitySources.adjacent_flank_capacity
+#print axioms SubQuorum.MixedCavitySources.flank_pair_sum_bound
+#print axioms SubQuorum.MixedCavitySources.perpendicular_source_phase_bound
+#print axioms SubQuorum.MixedCavitySources.mixed_cavity_partition

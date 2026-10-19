@@ -56,6 +56,7 @@ def main():
                    'SubQuorum/CapacityAwareStrips.lean',
                    'SubQuorum/RemoteCombRungs.lean',
                    'SubQuorum/ClosedSourceCavities.lean',
+                   'SubQuorum/MixedCavitySources.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -72,7 +73,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 113
+    assert len(declarations) == 117
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -84,7 +85,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 106 scoped declarations plus complete-component phase sums, conditional closed and boundary-flux cavity partitions, arbitrary finite donor multiplicity, closed multiplicity-two cover compensation and disjoint/twofold signed-flux compensation. Full geometry, source/comb phase adapters, closure preservation, constructions and universal existence remain written proofs or open as stated in the notes.')
+                  scope='Previous 113 scoped declarations plus adjacent chamber-flank capacity, finite flank pair sums, the sharp perpendicular-source phase bound from flank counts and the conditional mixed-direction cavity partition. Full geometric phase adapters, closure/normalization preservation, coordinate constructions and universal source/cavity existence remain written proofs or open as stated in the notes.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)
