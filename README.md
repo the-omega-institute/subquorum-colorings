@@ -85,6 +85,13 @@ oriented bundle while retaining positive central charge. Its earlier core/frozen
 package received an independent ACCEPT and full CI; the later donor geometry,
 tight completion and newest classification are reviewed separately.
 
+The [frozen capacity-two cross](docs/FROZEN_CAPACITY_TWO_CROSS.md) treats a
+terminal square component with four pendant matching branches. Its four
+side tiles are forced half-donors with exclusive matching ownership, giving
+charge-2 without assuming disjoint nine-tile collars. An all-size connected
+family attains this budget. These geometric proofs and physical controls
+are outside the current classification review and full Lean geometry.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search

@@ -12,7 +12,7 @@ from check_pressured_collar_compensation import region_vertices
 from check_promotion_cores import (
     all_oriented_bundles, anchored_diamonds, color_data, frozen_certificate, normalize, peel,
 )
-from check_residual_corridors import direct_check, transformed
+from check_residual_corridors import direct_check, graph_record, transformed
 from verify_grid_five_sixths import bits, pairs
 
 if not __debug__:
@@ -273,6 +273,99 @@ def shared_donor_control():
                 bundle_terminality_claimed=False)
 
 
+def capacity_cross(size):
+    selected = {(0, 0), (0, 2), (0, 5), (1, 1), (1, 4), (2, 5),
+                (3, 0), (4, 1), (4, 4), (5, 0), (5, 3), (5, 5)}
+    matching = [((2, 2), (1, 2)), ((2, 3), (2, 4)),
+                ((3, 3), (4, 3)), ((3, 2), (3, 1))]
+    chosen = {(row+6*index, column) for index in range(size) for row, column in selected}
+    edges = [tuple((row+6*index, column) for row, column in edge)
+             for index in range(size) for edge in matching]
+    tiles = {(3*index+row, column) for index in range(size)
+             for row, column in ((0, 1), (1, 0), (1, 1), (1, 2), (2, 1))}
+    return (6*size, 6, chosen, edges), tiles
+
+
+def capacity_cross_controls():
+    records = []
+    for size in range(1, 33):
+        current, tiles = capacity_cross(size)
+        assert direct_check(*current) == 16*size
+        assert set(occupied_degrees(current).values()) == {3}
+        endpoints, adjacency, squares = endpoint_data(current)
+        assert len(squares) == size and max(map(len, adjacency.values())) == 3
+        frozen, layers = frozen_certificate(current)
+        assert frozen == endpoints and [len(layer) for layer in layers] == [4*size, 4*size]
+        assert len(tiles) == 5*size
+        reached = {min(tiles)}
+        while True:
+            extended = reached | {adjacent for tile in reached for adjacent in neighbors(tile) if adjacent in tiles}
+            if extended == reached:
+                break
+            reached = extended
+        assert reached == tiles
+        graph, _ = graph_record(*current)
+        for index in range(size):
+            center = (3*index+1, 1)
+            center_index = center[0]*3+center[1]
+            assert graph['r'][center_index] == 2 and graph['deg'][center_index] == 4
+            assert witness_record(current, {center}, [])['regional']['charge_twice'] == 0
+            for donor in set(neighbors(center)):
+                assert witness_record(current, {donor}, [])['regional']['charge_twice'] == -1
+        assert witness_record(current, tiles, [])['regional']['charge_twice'] == -4*size
+        assert witness_record(current, {(row, column) for row in range(3*size) for column in range(3)}-tiles,
+                              [])['regional']['charge_twice'] == 0
+        for symmetry in itertools.product((False, True), repeat=3):
+            shape, selected, matching = transformed(*current, *symmetry)
+            moved = transformed(*current[:2], region_vertices(tiles), [], *symmetry)[1]
+            moved_tiles = {(row//2, column//2) for row, column in moved}
+            assert direct_check(*shape, selected, matching) == 16*size
+            assert witness_record((*shape, selected, matching), moved_tiles, [])['regional']['charge_twice'] == -4*size
+        records.append(dict(copies=size, tiles=5*size, charge_twice=-4*size,
+                            selected=12*size, matching=4*size, frozen_rounds=2))
+    current, tiles = capacity_cross(1)
+    assert all_oriented_bundles(current) == (80, 0)
+    corners = {(0, 0), (0, 5), (5, 0), (5, 5)}
+    base = (*current[:2], current[2]-corners, current[3])
+    occupied = base[2] | {endpoint for edge in base[3] for endpoint in edge}
+    available = set()
+    for vertex in itertools.product(range(6), repeat=2):
+        if vertex in occupied:
+            continue
+        try:
+            direct_check(*base[:2], base[2] | {vertex}, base[3])
+        except AssertionError:
+            continue
+        available.add(vertex)
+    assert available == corners
+    for mask in range(16):
+        chosen = base[2] | {vertex for index, vertex in enumerate(sorted(corners)) if mask >> index & 1}
+        assert direct_check(*base[:2], chosen, base[3]) == len(chosen)+4
+    corner_options = []
+    for label, endpoints in (('B', 0), ('T', 0), ('P', 1)):
+        chosen = 1+int(label == 'T')
+        for saturated in range(endpoints+1):
+            charge = 0 if chosen == 2 else 2*chosen+endpoints+saturated-4
+            assert charge <= 0
+            corner_options.append(dict(corner=label, saturated=saturated, charge_twice=charge))
+    shift = lambda vertex: (vertex[0]+2, vertex[1]+2)
+    selected = {shift(vertex) for vertex in current[2]-{(0, 0)}} | {(0, 2), (1, 3)}
+    matching = [tuple(shift(vertex) for vertex in edge) for edge in current[3]]
+    matching.append(((2, 2), (1, 2)))
+    boundary = 10, 10, selected, matching
+    direct_check(*boundary)
+    patch = {(row, column) for row in range(1, 4) for column in range(1, 4)}
+    boundary_record = witness_record(boundary, patch, [])['regional']
+    assert boundary_record['charge_twice'] == -4
+    assert boundary_record['outgoing_saturated_attachments'] == 1
+    assert witness_record(boundary, {(1, 1)}, [])['regional']['charge_twice'] == 0
+    return dict(family=records, symmetry_images=256, base_nonempty_bundles=80, feasible_bundles=0,
+                single_vertex_extension_candidates=sorted(corners), all_retained_extensions=16,
+                corner_boundary_cases=corner_options,
+                saturated_corner_boundary=dict(shape=boundary[:2], selected=sorted(selected),
+                                                matching=matching, regional=boundary_record))
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -282,10 +375,14 @@ def main():
                   symmetry_images=8*len(family), removable_squares=squares,
                   exhaustive=exhaustive_controls(), packing=packing_controls(),
                   shared_donor=shared_donor_control(),
+                  capacity_two_cross=capacity_cross_controls(),
                   scope='Finite controls for separate general written proofs; no universal grid inequality, full geometric Lean formalization or external novelty claim.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
-    print(json.dumps({key: value for key, value in report.items() if key != 'family'}))
+    summary = {key: value for key, value in report.items() if key not in {'family', 'capacity_two_cross'}}
+    summary['capacity_two_cross'] = {key: value for key, value in report['capacity_two_cross'].items()
+                                     if key != 'family'}
+    print(json.dumps(summary))
 
 
 if __name__ == '__main__':

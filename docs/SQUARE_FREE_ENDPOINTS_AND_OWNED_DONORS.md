@@ -271,4 +271,8 @@ test whether interacting positive sources admit enough low-occupancy donors
 under exclusive endpoint ownership. General rectangular-grid equality,
 the unrestricted triple equality and external priority remain open.
 
+FROZEN_CAPACITY_TWO_CROSS.md now treats one concrete square-with-branches
+class and proves an exclusive four-half-donor budget and all-size receiving
+family. The general P-square/branch case and donor coverage are still open.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
