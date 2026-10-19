@@ -1,0 +1,2282 @@
+{
+  "status": "PASS",
+  "abstract_controls": {
+    "capacity_multigraphs": 729,
+    "requested_subsets": 23328,
+    "one_unit_reservation_transitions": 2916
+  },
+  "physical_cases": 96,
+  "mixed_controls": [
+    {
+      "reserve": false,
+      "components": 2,
+      "runs": 50,
+      "certified_high_capacity_runs": 45,
+      "reserved": 0,
+      "rank": 47,
+      "total_capacity": 213,
+      "incidence_tree_components": 1
+    },
+    {
+      "reserve": true,
+      "components": 2,
+      "runs": 50,
+      "certified_high_capacity_runs": 45,
+      "reserved": 0,
+      "rank": 47,
+      "total_capacity": 213,
+      "incidence_tree_components": 1
+    },
+    {
+      "reserve": false,
+      "components": 3,
+      "runs": 67,
+      "certified_high_capacity_runs": 61,
+      "reserved": 0,
+      "rank": 63,
+      "total_capacity": 301,
+      "incidence_tree_components": 1
+    },
+    {
+      "reserve": true,
+      "components": 3,
+      "runs": 67,
+      "certified_high_capacity_runs": 61,
+      "reserved": 0,
+      "rank": 63,
+      "total_capacity": 301,
+      "incidence_tree_components": 1
+    },
+    {
+      "reserve": false,
+      "components": 4,
+      "runs": 83,
+      "certified_high_capacity_runs": 77,
+      "reserved": 0,
+      "rank": 79,
+      "total_capacity": 376,
+      "incidence_tree_components": 1
+    },
+    {
+      "reserve": true,
+      "components": 4,
+      "runs": 83,
+      "certified_high_capacity_runs": 76,
+      "reserved": 2,
+      "rank": 78,
+      "total_capacity": 376,
+      "incidence_tree_components": 1
+    }
+  ],
+  "obstruction": {
+    "shape": [
+      8,
+      10
+    ],
+    "endpoints": 32,
+    "selected": 22,
+    "matching_edges": 16,
+    "receiver": {
+      "endpoints": 32,
+      "tiles": 14,
+      "selected": 13,
+      "charge_twice": 2,
+      "straight": false,
+      "saturated_endpoints": 3,
+      "transfers": 3
+    },
+    "objective": 38,
+    "half_area": 40,
+    "total_capacity": 3,
+    "capacity_two_run_credits": 0,
+    "all_four_corner_credits": 0,
+    "exact_incidence_rank": 3,
+    "positive_tiles": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "degree_histogram": {
+      "3": 24,
+      "4": 8
+    },
+    "runs": [
+      {
+        "orientation": "horizontal",
+        "tiles": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "length": 3,
+        "sealed": false,
+        "selected_boundary": 1,
+        "capacity": 1,
+        "residual_capacity": 1,
+        "boundary_owners": [
+          0,
+          null
+        ],
+        "owner": null
+      },
+      {
+        "orientation": "horizontal",
+        "tiles": [
+          [
+            1,
+            3
+          ]
+        ],
+        "length": 1,
+        "sealed": false,
+        "selected_boundary": 1,
+        "capacity": 1,
+        "residual_capacity": 1,
+        "boundary_owners": [
+          0,
+          0
+        ],
+        "owner": 0
+      },
+      {
+        "orientation": "horizontal",
+        "tiles": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "length": 2,
+        "sealed": false,
+        "selected_boundary": 2,
+        "capacity": 1,
+        "residual_capacity": 1,
+        "boundary_owners": [
+          0,
+          0
+        ],
+        "owner": 0
+      },
+      {
+        "orientation": "vertical",
+        "tiles": [
+          [
+            0,
+            2
+          ]
+        ],
+        "length": 1,
+        "sealed": false,
+        "selected_boundary": 1,
+        "capacity": 1,
+        "residual_capacity": 1,
+        "boundary_owners": [
+          null,
+          0
+        ],
+        "owner": null
+      },
+      {
+        "orientation": "vertical",
+        "tiles": [
+          [
+            2,
+            2
+          ]
+        ],
+        "length": 1,
+        "sealed": false,
+        "selected_boundary": 1,
+        "capacity": 1,
+        "residual_capacity": 1,
+        "boundary_owners": [
+          0,
+          0
+        ],
+        "owner": 0
+      },
+      {
+        "orientation": "vertical",
+        "tiles": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "length": 3,
+        "sealed": false,
+        "selected_boundary": 2,
+        "capacity": 1,
+        "residual_capacity": 1,
+        "boundary_owners": [
+          null,
+          0
+        ],
+        "owner": null
+      },
+      {
+        "orientation": "vertical",
+        "tiles": [
+          [
+            0,
+            4
+          ]
+        ],
+        "length": 1,
+        "sealed": false,
+        "selected_boundary": 2,
+        "capacity": 0,
+        "residual_capacity": 0,
+        "boundary_owners": [
+          null,
+          0
+        ],
+        "owner": null
+      }
+    ],
+    "capped_candidates": [
+      {
+        "tile": [
+          0,
+          1
+        ],
+        "orientation": 2,
+        "tip": [
+          1,
+          1
+        ],
+        "support": [
+          0,
+          1
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": true,
+        "excluded_endpoints": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "tile": [
+          0,
+          1
+        ],
+        "orientation": 3,
+        "tip": [
+          1,
+          4
+        ],
+        "support": [
+          0,
+          4
+        ],
+        "tip_is_endpoint": false,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "tile": [
+          1,
+          0
+        ],
+        "orientation": 6,
+        "tip": [
+          1,
+          1
+        ],
+        "support": [
+          1,
+          0
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": true,
+        "excluded_endpoints": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "tile": [
+          1,
+          0
+        ],
+        "orientation": 7,
+        "tip": [
+          4,
+          1
+        ],
+        "support": [
+          4,
+          0
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "tile": [
+          1,
+          1
+        ],
+        "orientation": 4,
+        "tip": [
+          1,
+          2
+        ],
+        "support": [
+          1,
+          3
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "tile": [
+          1,
+          1
+        ],
+        "orientation": 5,
+        "tip": [
+          4,
+          2
+        ],
+        "support": [
+          4,
+          3
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": true,
+        "excluded_endpoints": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          0
+        ],
+        "orientation": 6,
+        "tip": [
+          3,
+          1
+        ],
+        "support": [
+          3,
+          0
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": true,
+        "excluded_endpoints": [
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          0
+        ],
+        "orientation": 7,
+        "tip": [
+          6,
+          1
+        ],
+        "support": [
+          6,
+          0
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          1
+        ],
+        "orientation": 2,
+        "tip": [
+          5,
+          1
+        ],
+        "support": [
+          4,
+          1
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          1
+        ],
+        "orientation": 3,
+        "tip": [
+          5,
+          4
+        ],
+        "support": [
+          4,
+          4
+        ],
+        "tip_is_endpoint": false,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          1
+        ],
+        "orientation": 4,
+        "tip": [
+          3,
+          2
+        ],
+        "support": [
+          3,
+          3
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          1
+        ],
+        "orientation": 5,
+        "tip": [
+          6,
+          2
+        ],
+        "support": [
+          6,
+          3
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "tile": [
+          2,
+          2
+        ],
+        "orientation": 2,
+        "tip": [
+          5,
+          3
+        ],
+        "support": [
+          4,
+          3
+        ],
+        "tip_is_endpoint": false,
+        "support_is_selected": true,
+        "excluded_endpoints": []
+      },
+      {
+        "tile": [
+          2,
+          2
+        ],
+        "orientation": 3,
+        "tip": [
+          5,
+          6
+        ],
+        "support": [
+          4,
+          6
+        ],
+        "tip_is_endpoint": false,
+        "support_is_selected": false,
+        "excluded_endpoints": []
+      },
+      {
+        "tile": [
+          2,
+          3
+        ],
+        "orientation": 2,
+        "tip": [
+          5,
+          5
+        ],
+        "support": [
+          4,
+          5
+        ],
+        "tip_is_endpoint": false,
+        "support_is_selected": false,
+        "excluded_endpoints": []
+      },
+      {
+        "tile": [
+          2,
+          3
+        ],
+        "orientation": 3,
+        "tip": [
+          5,
+          8
+        ],
+        "support": [
+          4,
+          8
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": []
+      },
+      {
+        "tile": [
+          2,
+          3
+        ],
+        "orientation": 6,
+        "tip": [
+          3,
+          7
+        ],
+        "support": [
+          3,
+          6
+        ],
+        "tip_is_endpoint": false,
+        "support_is_selected": true,
+        "excluded_endpoints": []
+      },
+      {
+        "tile": [
+          2,
+          3
+        ],
+        "orientation": 7,
+        "tip": [
+          6,
+          7
+        ],
+        "support": [
+          6,
+          6
+        ],
+        "tip_is_endpoint": true,
+        "support_is_selected": false,
+        "excluded_endpoints": []
+      }
+    ],
+    "anchored_selected_corners": [
+      {
+        "selected": [
+          4,
+          7
+        ],
+        "opposite": [
+          5,
+          6
+        ],
+        "exterior_endpoints": [
+          [
+            6,
+            6
+          ]
+        ],
+        "exterior_selections": []
+      },
+      {
+        "selected": [
+          5,
+          6
+        ],
+        "opposite": [
+          4,
+          7
+        ],
+        "exterior_endpoints": [
+          [
+            4,
+            8
+          ]
+        ],
+        "exterior_selections": []
+      },
+      {
+        "selected": [
+          5,
+          4
+        ],
+        "opposite": [
+          4,
+          5
+        ],
+        "exterior_endpoints": [],
+        "exterior_selections": []
+      }
+    ],
+    "ordered_freezing_steps": 32
+  },
+  "physical": [
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "new32",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 7,
+      "certified_high_capacity_runs": 0,
+      "reserved": 0,
+      "rank": 3,
+      "total_capacity": 3,
+      "incidence_tree_components": 3
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "remote28",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 8,
+      "certified_high_capacity_runs": 2,
+      "reserved": 0,
+      "rank": 2,
+      "total_capacity": 2,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 13,
+      "certified_high_capacity_runs": 10,
+      "reserved": 0,
+      "rank": 12,
+      "total_capacity": 16,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 6,
+      "reserved": 0,
+      "rank": 6,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 6,
+      "certified_high_capacity_runs": 5,
+      "reserved": 2,
+      "rank": 5,
+      "total_capacity": 11,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring3",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 18,
+      "certified_high_capacity_runs": 14,
+      "reserved": 0,
+      "rank": 18,
+      "total_capacity": 30,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": false,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    },
+    {
+      "name": "ring6",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve": true,
+      "components": 1,
+      "runs": 36,
+      "certified_high_capacity_runs": 32,
+      "reserved": 0,
+      "rank": 36,
+      "total_capacity": 84,
+      "incidence_tree_components": 0
+    }
+  ],
+  "scope": "Exhaustive finite checks of the separately written exact incidence allocation theorem and reservation monotonicity; explicit fully frozen 32-endpoint counterexample to four-corner-plus-capacity-two-run coverage. No universal grid conclusion or Lean execution is inferred."
+}

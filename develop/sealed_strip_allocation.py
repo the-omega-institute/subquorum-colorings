@@ -5,7 +5,7 @@ import itertools
 from check_component_receivers import endpoint_components, vertices_of
 
 
-def sealed_strips(current, reserved=None):
+def maximal_strips(current, reserved=None, sealed_only=False):
     rows, columns, selected, _ = current
     reserved = {} if reserved is None else reserved
     components = endpoint_components(current)
@@ -46,17 +46,24 @@ def sealed_strips(current, reserved=None):
                 else:
                     boundary = {(row, 2*band+local) for local in (0, 1)
                                 for row in (2*start, 2*stop-1)}
-                if boundary & (selected | endpoints):
+                sealed = not boundary & (selected | endpoints)
+                if sealed_only and not sealed:
                     continue
                 capacity = sum(deficits[tile] for tile in strip)
-                assert capacity >= 2
+                if sealed:
+                    assert capacity >= 2
                 left_owner = tile_owner.get(tile_at(start-1)) if start > 0 else None
                 right_owner = tile_owner.get(tile_at(stop)) if stop < length else None
                 owner = left_owner if left_owner is not None and left_owner == right_owner else None
                 records.append(dict(orientation=orientation, tiles=strip, length=len(strip),
+                                    sealed=sealed, selected_boundary=len(boundary & selected),
                                     capacity=capacity, residual_capacity=sum(residual[tile] for tile in strip),
                                     boundary_owners=[left_owner, right_owner], owner=owner))
     return records, deficits, residual
+
+
+def sealed_strips(current, reserved=None):
+    return maximal_strips(current, reserved, sealed_only=True)
 
 
 def allocate_units(records, residual):

@@ -1,0 +1,293 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19 18:42:28 UTC",
+  "execution_location": "Local Mac explicitly selected by user in this session",
+  "lean_version": "4.33.0",
+  "platform": "arm64-apple-darwin24.6.0",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure_free_percent": 45,
+    "actual_lean_lake_processes": [],
+    "process_check": "Compared basename of ps comm field to lean/lake, including bare names and full toolchain paths."
+  },
+  "source_files": [
+    "formal/SubQuorum/CapacityOneStripObstruction.lean"
+  ],
+  "theorem_declarations": 46,
+  "compile_exit_codes": {
+    "FrozenPromotion": 0,
+    "CapacityOneStripObstruction": 0,
+    "stdin_axiom_audit": 0
+  },
+  "axiom_audits": [
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.coordinates_inside",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.coordinates_injective",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.matching_involution",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.matching_endpoint",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.selected_feasible",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.endpoints_terminal",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_00",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_01",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_02",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_03",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_04",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_05",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_06",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_07",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_08",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_09",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_10",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_11",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_12",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_13",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_14",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_15",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_16",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_17",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_18",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_19",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_20",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_21",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_22",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_23",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_24",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_25",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_26",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_27",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_28",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_29",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_30",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.frozen_31",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.all_endpoints_frozen",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.no_feasible_bundle",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.original_corrected_receiver_charge",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.receiver_inventory",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.all_horizontal_capacities_small",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.all_vertical_capacities_small",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.outside_capacity",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.CapacityOneStripObstruction.original_objective",
+      "axioms": []
+    }
+  ],
+  "reproduction": [
+    "From formal/, create task-owned empty cache and its SubQuorum/ subdirectory.",
+    "lean -o <cache>/SubQuorum/FrozenPromotion.olean SubQuorum/FrozenPromotion.lean",
+    "LEAN_PATH=<cache> lean -o <cache>/SubQuorum/CapacityOneStripObstruction.olean SubQuorum/CapacityOneStripObstruction.lean",
+    "Import SubQuorum.CapacityOneStripObstruction with LEAN_PATH=<cache> and run #print axioms for all 46 named theorem declarations."
+  ],
+  "scope": "Exact occupied-grid coordinates, original selection feasibility, actual matching involution and adjacency, endpoint terminality, all 32 ordered freezing steps and exclusion of arbitrary mixed simultaneous promotion bundles; original corrected receiver tile sum, receiver inventory, all horizontal/vertical maximal no-endpoint runs capacity at most one, outside deficit three and objective below half area. Four-corner exclusion, symmetry/connectedness adapter and general incidence-rank/reservation theorems are written and independently checked, not formalized in this file. No sorry or native_decide; axiom audit explicit. Submitted manuscripts and shared CI unchanged."
+}

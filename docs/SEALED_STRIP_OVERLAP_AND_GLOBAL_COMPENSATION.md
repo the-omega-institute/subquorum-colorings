@@ -17,11 +17,12 @@ units where only two exist. Crediting one unit to each is exact.
 
 Let (T,M) be feasible on an even-by-even rectangle. Put P=V(M). Use the
 original fixed disjoint2-by2tiling and let Z be its endpoint-free tiles.
+Selected means membership in T; blank means membership in neither T nor P.
 For Q in Z write
 
     d_Q=2-|T intersect Q|.
 
-Every unit square contains at most two selected vertices: any three have
+Every unit square contains at most two T-vertices: any three have
 a selected corner adjacent to the other two. Thus d_Q is a nonnegative
 integer. The entire available budget is D=sum_(Q in Z)d_Q.
 
@@ -95,8 +96,9 @@ configuration is asserted; this is a deficit allocation.
 ## 4. Reserve previous credits before adding strip credits
 
 To combine this with earlier corner or component arguments, first reserve
-integer amounts a_Q with0<=a_Q<=d_Q at physical tiles, each amount assigned
-at most once. Let B=sum_Q a_Q and r_Q=d_Q-a_Q. A strip may be used in the
+integer amounts a_Q with0<=a_Q<=d_Q at physical tiles Q in Z. Each a_Q
+counts distinct actual unit slots already assigned; prior assignments must
+not reuse any slot. Let B=sum_Q a_Q and r_Q=d_Q-a_Q. A strip may be used in the
 residual argument only if its actual residual capacity satisfies
 
     sum_(Q in s)r_Q>=2.                                  (3)
@@ -113,19 +115,29 @@ capacity, not the residual capacity after earlier reservations. Keeping
 a strip merely because it was originally sealed would be unjustified if
 those reservations removed its needed units.
 
-An exact weighted variant is also available: for any distinct maximal
-runs with residual capacities C_s, the subset sum gives
+An exact weighted variant is also available. Define the exact residual
+capacity C_s=sum_(Q in s)r_Q and c_s=floor(C_s/2). For any set Y of request
+copies, let A be its support set of distinct maximal runs. Then
+
+    |Y| <= sum_(s in A)c_s <= (1/2)sum_(s in A)C_s
+        <= sum_(Q in U(A))r_Q = |N(Y)|.
+
+The multiplicity-two bound applies to A before duplication; the copies
+themselves need not have multiplicity two. Thus Hall applies to c_s
+identical unit requests for each strip. In particular
 
     sum_s floor(C_s/2) <= sum_Q r_Q.
 
-Replace each strip by floor(C_s/2) identical requests and apply the same
-slot argument; each subcollection of requests is dominated by the subset
-inequality for its support strips. The one-unit statement is sufficient
-for the examples here.
+The one-unit statement is sufficient for the examples here.
 
 ## 5. Consequence for the original complete-receiver ledger
 
-Now assume single terminality. The established tile-ownership lemma makes
+Now assume single terminality and use the complete receiver convention
+
+    R_H={physical tiles containing an endpoint of component H}.
+
+Thus each R_H is disjoint from Z, and Z is the complement of their union.
+The established tile-ownership lemma makes
 the complete endpoint-component receivers disjoint, and the original
 corrected ledger is
 
@@ -147,14 +159,17 @@ local owner identification is used. QED.
 
 This replaces the earlier demand for disjoint individual corner donors by
 a general overlapping-strip budget. For configurations satisfying(5), it
-proves the half-area bound, hence the existing lower bound identifies the
-grid coloring value in the corresponding optimization argument. It does
+proves the half-area bound. An optimization equality additionally requires
+the external lower bound and the appropriate representative argument;
+neither follows from strip capacity alone. It does
 not improve the unrestricted five-sixths bound: proving(5)for all relevant
 representatives remains open. An arbitrary feasible pair meeting(5)alone
 does not imply that every optimum has such a representative.
 
 ## 6. Optional ownership from planarity
 
+Use exactly the endpoint-bearing receiver convention in Section5, with
+R_H disjoint from Z; padded receiver neighborhoods are not allowed here.
 For a run bounded on both ends by receiver tiles of the same component H,
 call that run H-enclosed. Its endpoints are the immediately preceding and
 following tiles, not arbitrary distant anchors. The following owner fact
@@ -174,8 +189,11 @@ Together with the straight path through the horizontal run this forms a
 simple polygonal cycle: the interior run tiles contain no endpoints and
 cannot occur on the R_H path. The vertical run, extended by its two K
 bounding tiles, meets this cycle exactly once, transversely at the common
-tile center. Its other interior tiles are endpoint-free, and its K
-endpoints are outside R_H, so no further intersection is possible.
+tile center. Its other interior tiles lie in Z and therefore avoid R_H;
+the two straight axis runs intersect only at the common tile. Its K
+bounding tiles lie in R_K, avoiding both R_H and the horizontal Z run.
+In the planar square-lattice center embedding edges cross only at common
+vertices. These facts exclude every other intersection with the cycle.
 
 The two K bounding tiles therefore lie on opposite sides of the cycle.
 A tile path within connected R_K would join them without intersecting the
@@ -189,11 +207,15 @@ eligible enclosed strips after its reserved credits, the same one-unit
 allocation can be carried out separately within H. The global theorem
 does not need this optional owner condition and also permits runs whose
 two bounding components differ or which meet the ambient boundary.
+Here positive rho_H is integral: its expression is |T in R_H|+|H|/2-2|R_H|,
+and the matching covers H, making |H| even.
 
 ## 7. A frozen equality example rules out two credits per strip
 
 In the28endpoint frozen configuration from
-REMOTE_DEFICIT_FROZEN_OBSTRUCTION.md, the relevant sealed maximal runs are
+[the complete coordinate and ordered-certificate note](REMOTE_DEFICIT_FROZEN_OBSTRUCTION.md),
+Sections1-4, and its [exact labels and actual matching](../develop/remote_deficit_frozen_obstruction.json),
+the relevant sealed maximal runs are
 
     horizontal: Q_(3,1),Q_(3,2),Q_(3,3);
     vertical:   Q_(2,2),Q_(3,2).
@@ -212,9 +234,23 @@ the slot allocator gives the two different units of Q_(3,2)to the two
 strips. Since rho_H=1, even one of these valid credits pays the positive
 receiver, with one unit left.
 
-The selected-border completion makes all endpoints interior and retains
-these two runs and their local capacities. It has extra resources elsewhere;
-the original uncompleted example supplies equality for the total budget.
+The source note lists every label, actual matching edge and all28freezing
+rows, and computes original receiver charge1and objective39. For direct
+maximality checks, the horizontal run is bounded by endpoint tiles
+Q_(3,0),Q_(3,4); the vertical run is bounded above by endpoint tile Q_(1,2)
+and below by the ambient boundary. Horizontal outer columns2and7in rows6,7
+are blank; vertical outer rows4and7in columns4,5are blank. Equality here
+means |S|=D=2in the overlap-capacity budget, not equality in the final grid
+bound: its final deficit is40-39=1.
+
+The selected-border completion in Section6of that source makes every
+endpoint interior, but CHANGES the vertical maximal run. After translation
+by(2,2), the horizontal run is Q_(4,2..4), still capacity2. The vertical
+maximal run is now Q_(3,3),Q_(4,3),Q_(5,3), capacity4; the new endpoint-free
+bottom tile extends it. Both remain sealed; their lengths and capacities
+are not both preserved. Exact completion labels and matching are given in
+the cited note and JSON. This completion has D=6and objective79<84; only
+the original example supplies |S|=D=2. No arbitrary-padding claim is made.
 
 ## 8. Verification and limits
 
@@ -239,13 +275,20 @@ capacity, and two arithmetic budget lemmas. Their axioms are recorded
 explicitly in output/sealed-strip-formal-check.json. Full physical maximal-run
 classification, planar owner geometry, double-counting adapter and Hall
 allocation remain written proofs, not claimed formalized by these six
-statements. No sorry/native_decide is used. No Oracle review of this new
-strip theorem has yet been obtained.
+statements. No sorry/native_decide is used. The first Oracle review returned
+REVISE: it found the core capacity/Hall/reservation proof sound, requested
+explicit definitions and the full example dependency, and correctly flagged
+the false claim that both maximal runs survive border completion unchanged.
+These repairs are incorporated above; a same-conversation follow-up is
+pending. This is not a final acceptance. See the
+[review assessment](reviews/2026-10-20-sealed-strip-assessment.md).
 
-The open task is structural sufficiency: enough reserved capacity and
-eligible maximal strips must cover the total corrected receiver charge,
-or a new representative transformation must supply that property. The
-non-reuse issue for any such strip collection is resolved by(1)-(4);
-the unrestricted coverage problem and grid triple equality remain open.
+Universal coverage by the four old corner rules plus capacity-at-least-two
+runs is now FALSE: the [32-endpoint capacity-one obstruction](STRIP_INCIDENCE_ALLOCATION_AND_CAPACITY_ONE_OBSTRUCTION.md)
+has positive receiver charge, zero corner supply and all maximal runs of
+capacity at most one. This does not contradict any conditional theorem here.
+The newer exact incidence criterion can safely include degree-one runs;
+its general geometric coverage and the grid triple equality remain open.
+Non-reuse for the strip collections in this note is resolved by(1)-(4).
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

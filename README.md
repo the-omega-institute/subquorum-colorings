@@ -32,6 +32,21 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [strip incidence theorem and capacity-one obstruction](docs/STRIP_INCIDENCE_ALLOCATION_AND_CAPACITY_ONE_OBSTRUCTION.md)
+replace the capacity-two threshold by an exact physical-slot criterion: a
+chosen set of runs is payable precisely when it contains no whole tree
+component of the horizontal/vertical incidence multigraph. The maximum
+one-unit-per-run credit is the sum of min(vertices,edges) over components;
+reserving additional distinct old credits cannot worsen the combined score.
+A fully frozen 32-endpoint example has positive receiver charge, no donor
+from any of the four corner rules, and every maximal run has capacity at most
+one. It refutes universal corner-plus-capacity-two coverage while the exact
+incidence allocation pays it. All 729 small capacity multigraphs, 23328 request
+subsets, 2916 reservation steps and 96 physical cases pass. Forty-six local
+Lean declarations verify the finite freezing and original charge/strip
+obstruction; the general graph theorem has a written proof. Universal grid
+coverage remains open.
+
 The [sealed-strip compensation theorem](docs/SEALED_STRIP_OVERLAP_AND_GLOBAL_COMPENSATION.md)
 handles overlapping horizontal and vertical maximal endpoint-free runs of any
 length. Blank outer columns or rows force at least two units of actual strip
