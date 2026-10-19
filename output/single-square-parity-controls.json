@@ -440,5 +440,133 @@
     "low_occupancy_endpoint_donors": 0,
     "refuted_rule": "Alignment-free strictly negative budget per frozen single-square component; target global inequality holds with equality."
   },
+  "two_square_obstacle": {
+    "shape": [
+      6,
+      6
+    ],
+    "labels": [
+      "TBTBTB",
+      "BTPBPT",
+      "TBPPPB",
+      "TBPPPB",
+      "BTPBPT",
+      "TBTBTB"
+    ],
+    "selected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "matching": [
+      [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    ],
+    "objective": 17,
+    "total_charge_twice": -2,
+    "saturated_attachment_count": 2,
+    "frozen_layers": [
+      4,
+      2,
+      4
+    ],
+    "symmetry_images": 8,
+    "nonempty_bundles_checked": 242,
+    "feasible_bundles": 0,
+    "refuted_rule": "Two-unit payment per frozen component containing an aligned P-square without uniqueness, or independent payments for overlapping squares."
+  },
   "scope": "Finite controls of general written structural/parity/budget proofs; complete geometry is not Lean formalized and multi-square/source coverage remains open."
 }

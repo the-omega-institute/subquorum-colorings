@@ -113,7 +113,11 @@ receivers at every odd arm length. A fully neutral8-by8completion disproves
 alignment-free strict payment even with arbitrary exterior resources, attaining
 the target inequality with equality. The general proof,1806cases/14448images,
 41scoped Lean declarations and exact seven-theorem finite obstacle certificate
-pass. Independent written-proof review122da19b is live, no verdict yet.
+pass. A6-by6component with two overlapping P-squares freezes in three rounds
+but pays only one unit, with saturated attachments neutralizing the two-P
+core tile. This excludes independent square-by-square payments. Independent
+written-proof review122da19b is live; the later two-square and neutral-family
+extensions are outside its input, and no verdict is inferred.
 Multi-square geometry and source coverage remain open.
 
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free

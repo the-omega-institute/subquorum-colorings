@@ -12,6 +12,12 @@ terminality: every P has at least three neighbors in A. Let H be an
 endpoint component containing exactly one all-P unit square Q, counting
 all unit squares regardless of their alignment with a tiling.
 
+Throughout, use the full original tile ledger: for a deficient tile,
+r=2-t-h-s, where h is the number of internal matching edges and s counts
+endpoints matched to saturated tiles. Then rho=d/2-r=(t-b+s)/2. Saturated
+tiles have charge zero. The single-square receivers below have s=0;
+the two-square example in Section5requires the s term.
+
 **Single-square parity theorem.** The occupied external incidences of Q
 have one of the two pinwheel orientations. H consists of Q and four straight
 outward rays, of lengths l_N,l_E,l_S,l_W>=0. A zero length means the
@@ -217,6 +223,52 @@ tiles may be used. It does not disprove the desired global nonpositive-charge
 inequality, which holds with equality here. A general proof must allow these
 neutral frozen components or use a different normalization/resource.
 
+## 5. Two overlapping squares do not supply two independent budgets
+
+The unique-square hypothesis also cannot be removed from the fixed two-unit
+payment. Consider the following complete6-by6configuration:
+
+    T B T B T B
+    B T P B P T
+    T B P P P B
+    T B P P P B
+    B T P B P T
+    T B T B T B.
+
+Its five matching edges are
+
+    (2,2)--(1,2),  (2,4)--(1,4),
+    (3,2)--(4,2),  (3,4)--(4,4),  (2,3)--(3,3).
+
+The endpoint component consists of a2-by3rectangle and four pendant mates.
+Its only P-squares have upper-left corners (2,2),(2,3), sharing the central
+vertical edge. Every P has occupied degree three. The four pendant P have
+two selected neighbors each and freeze first, retaining all four corner P.
+The two middle-column P now have two retained horizontal neighbors and freeze
+next, retaining each other. The four corners then each have two retained core
+neighbors and freeze. These4,2,4layers exclude every oriented bundle, also
+in the presence of other components. Direct inspection verifies feasibility.
+
+The north/south left donors (0,1),(2,1) each have t=p=1,s=0 and charge-1/2.
+The north/south right tiles (0,2),(2,2) have t=2,p=1 and are saturated.
+The all-P core tile (1,1) has h=1,s=0,r=1,d=2 and is neutral. The other
+core tile (1,2) has t=0,p=2,h=0,s=2,r=0,d=0 and is also neutral: both
+of its matching mates lie in the two saturated right tiles. The remaining
+three left tiles all have t=2 and charge zero. Thus the only negative charge
+in the entire configuration is the two left half-donors, giving
+
+    T=12, P=10, B=14, |M|=5, objective17=6*6/2-1,
+    rho(whole grid)=-1.
+
+Dropping the saturated-attachment correction would incorrectly charge the
+two-P core tile -1. Its actual original charge is zero. The full fixture
+therefore refutes a two-unit negative budget for every frozen component
+containing an aligned square once additional squares are allowed, even if
+the entire exterior may be charged. It also precludes adding the one-square
+budgets independently over overlapping P-squares. The global target remains
+valid, strictly, here. The general geometry of several-square components is
+still unclassified; this is an exact obstacle to that proposed extension.
+
 ## Verification and scope
 
 The first two sections are general proofs. The companion checker enumerates
@@ -231,6 +283,8 @@ for small frozen family members and all80nonempty bundles of the explicit
 include arm lengths16/17and asymmetric lengths through31.
 All258four-odd-arm cases also pass after an odd/odd tile-phase shift, checking
 that every matching edge becomes internal and every P tile has zero charge.
+The two-square fixture is checked under eight symmetries, including the full
+saturated-attachment ledger and all242nonempty oriented bundles, none feasible.
 
 All41local/general Lean declarations pass sequentially on the authorized
 local machine. Two new statements verify the seven central matching
@@ -247,6 +301,11 @@ conversationconv_e03faff81c763d9b, original streaming terminal79338.
 It reviews the written classification, parity budget, dichotomy and finite
 obstacle, including the local lemmas. The subsequently added finite Lean
 source and all-length neutral misalignment corollary are outside its input.
+The later two-square fixture and the explicit general-ledger clarification
+are also outside that input. The original request's background sentence
+omitted -s from r; this does not affect the reviewed single-square results,
+which all have s=0. A correction is prepared in the review notes; keep the
+original running task and deliver the erratum when that turn terminates.
 No verdict is inferred.
 Multi-square components and full source coverage remain open.
 

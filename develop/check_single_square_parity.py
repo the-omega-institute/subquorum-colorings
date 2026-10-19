@@ -172,6 +172,37 @@ def neutral_obstacle():
                 refuted_rule='Alignment-free strictly negative budget per frozen single-square component; target global inequality holds with equality.')
 
 
+def two_square_obstacle():
+    labels = ['TBTBTB', 'BTPBPT', 'TBPPPB', 'TBPPPB', 'BTPBPT', 'TBTBTB']
+    selected = {(row, column) for row, line in enumerate(labels)
+                for column, label in enumerate(line) if label == 'T'}
+    matching = [((2, 2), (1, 2)), ((2, 4), (1, 4)), ((3, 2), (4, 2)),
+                ((3, 4), (4, 4)), ((2, 3), (3, 3))]
+    original = 6, 6, selected, matching
+    assert all_oriented_bundles(original) == (242, 0)
+    for symmetry in itertools.product((False, True), repeat=3):
+        shape, chosen, edges = transformed(*original, *symmetry)
+        current = *shape, chosen, edges
+        assert direct_check(*current) == 17
+        endpoints, _, squares = endpoint_data(current)
+        assert len(endpoints) == 10 and len(squares) == 2
+        assert frozen_certificate(current)[0] == endpoints
+        assert [len(layer) for layer in frozen_certificate(current)[1]] == [4, 2, 4]
+        assert set(occupied_degrees(current).values()) == {3}
+        graph, _ = graph_record(*current)
+        charges = [degree-2*capacity for degree, capacity in zip(graph['deg'], graph['r'])]
+        assert sorted(charges) == [-1, -1]+[0]*7
+        attachment_tiles = [index for index, attached in enumerate(graph['s']) if attached]
+        assert len(attachment_tiles) == 1
+        index = attachment_tiles[0]
+        assert tuple(graph[key][index] for key in ('t', 'h', 's', 'r', 'deg')) == (0, 0, 2, 0, 0)
+    return dict(shape=[6, 6], labels=labels, selected=sorted(selected), matching=matching,
+                objective=17, total_charge_twice=-2, saturated_attachment_count=2,
+                frozen_layers=[4, 2, 4], symmetry_images=8,
+                nonempty_bundles_checked=242, feasible_bundles=0,
+                refuted_rule='Two-unit payment per frozen component containing an aligned P-square without uniqueness, or independent payments for overlapping squares.')
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -205,10 +236,11 @@ def main():
                 examples.append(record)
     report = dict(status='ALL_CHECKS_PASSED', central_patterns=patterns, **totals,
                   representative_cases=examples, neutral_misalignment_obstacle=neutral_obstacle(),
+                  two_square_obstacle=two_square_obstacle(),
                   scope='Finite controls of general written structural/parity/budget proofs; complete geometry is not Lean formalized and multi-square/source coverage remains open.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
-    print(json.dumps({key:value for key,value in report.items() if key not in ('representative_cases','neutral_misalignment_obstacle')}))
+    print(json.dumps({key:value for key,value in report.items() if key not in ('representative_cases','neutral_misalignment_obstacle','two_square_obstacle')}))
 
 
 if __name__ == '__main__':
