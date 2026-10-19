@@ -51,10 +51,12 @@ z_0=p_1^0, and set z_j=(0,j-1) for odd j and (1,j-1) for even j,
 1<=j<=w. The first chamber vertex sees (0,-1) and m(z_0).
 Each later z_(j+2) sees the distinct retained neighbors m(z_j),m(z_(j+1)).
 Reflection in the chamber's vertical midpoint preserves the matching and
-supports and supplies the other checkerboard-color wave. Finally p_2^c
-sees its inside support and the retained mate of p_1^c, namely (1,c).
-Ascending through even j, p_j^c sees its inside support and
-m(p_(j-1)^c)=p_(j-2)^c. These three finite inductions freeze all H.
+supports and supplies the other checkerboard-color wave. The frozen chamber
+endpoint (1,c) has retained mate p_1^c, adjacent to p_2^c. Together with
+the inside support this freezes p_2^c. For even j>=4, the already frozen
+p_(j-2)^c has retained mate m(p_(j-2)^c)=p_(j-1)^c, adjacent to p_j^c.
+That neighbor and the inside support freeze p_j^c. These three finite
+inductions freeze all H.
 They apply to any fixed simultaneous bundle, so exterior promotions cannot
 evade the argument. QED.
 
@@ -118,9 +120,12 @@ leaves charge exactly +1.
 
 Choose h>=k in the preceding construction. This is an arbitrary-width,
 arbitrary-depth construction and proof, not extrapolation from enumeration.
-It refutes extending the unit-tail canonical donor unchanged, and refutes
-every rule that always pays the receiver using a fixed number of complete
-inward bands. The unit-tail proof used T(3,0); that vertex is now P, so its
+It refutes extending the unit-tail canonical donor unchanged. For every fixed
+k, a rule restricted to the first k complete nonterminal inward bands cannot
+guarantee payment. In fact no selection of the defined B_0,...,B_(h-1)
+supplies any deficit. This does not exclude selecting a band farther away
+at a position depending on the arm length. The unit-tail proof used T(3,0);
+that vertex is now P, so its
 sparsity hypothesis is absent. This does not refute the earlier theorem,
 the global coefficient-one target, other exterior donors, or every bounded
 radius method. In particular the next section finds a remote payment.
@@ -218,6 +223,8 @@ Suppose every complete initial endpoint component is thin, has at most one
 P-square, or is one of B prescribed long sources of Section 1 in a positive
 tile-preserving position, with its actual matching and all its selected
 supports. Require that each prescribed source's F_H initially has no P.
+Here thin means contained in two consecutive rows or two consecutive columns;
+B counts distinct complete initial endpoint components.
 Then
 
     |T_0|+|M_0| <= mn/2-B.                            (4)
@@ -226,6 +233,8 @@ Proof. Apply objective-preserving feasible bundles until terminal. The long
 sources are frozen in arbitrary exteriors, so survive with their actual
 matching, supports and complete components. Other endpoint components can
 only shrink; the thin/one-square alternatives pass to their final components.
+Indeed endpoint deletion preserves containment in the same two rows/columns,
+and cannot create a new all-P unit square.
 No operation adds P, so every prescribed terminal strip stays endpoint-free.
 Each nonprescribed final receiver has charge <=0 by the existing all-phase
 thin/one-square theorem. Every prescribed receiver has charge +1 by (1).

@@ -13,6 +13,7 @@ import SubQuorum.ComponentReceivers
 import SubQuorum.ThinComponents
 import SubQuorum.BentReceiverCompensation
 import SubQuorum.LongBentTerminalStrips
+import SubQuorum.TransverseCombMouths
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -92,3 +93,6 @@ import SubQuorum.LongBentTerminalStrips
 #print axioms SubQuorum.LongBentTerminalStrips.shifted_strip_budget
 #print axioms SubQuorum.LongBentTerminalStrips.parallel_interval_overlap
 #print axioms SubQuorum.LongBentTerminalStrips.paid_strip_sum
+#print axioms SubQuorum.TransverseCombMouths.even_arm_frozen
+#print axioms SubQuorum.TransverseCombMouths.transverse_square_capacity
+#print axioms SubQuorum.TransverseCombMouths.neutral_crossing_removal

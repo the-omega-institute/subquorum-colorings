@@ -95,7 +95,7 @@ def main():
                   smallest=dict(shape=smallest[:2], selected=sorted(smallest[2]), matching=smallest[3],
                                 saturated_inward_band=sorted(bands)),
                   refuted_rules=['The unit-tail canonical donor still pays one after both tails are extended.',
-                                 'A fixed number of complete inward bands always compensates a positive bent receiver.'],
+                                 'The first k nonterminal inward bands always compensate for some fixed k.'],
                   global_coefficient_one_refuted=False,
                   scope='Finite controls for the independent all-width/all-depth written construction and freezing/count proof. No exclusion of alternative exterior donors or general compensation rules is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)

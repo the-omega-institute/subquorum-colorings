@@ -48,6 +48,7 @@ def main():
                    'SubQuorum/ThinComponents.lean',
                    'SubQuorum/BentReceiverCompensation.lean',
                    'SubQuorum/LongBentTerminalStrips.lean',
+                   'SubQuorum/TransverseCombMouths.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -64,7 +65,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 78
+    assert len(declarations) == 81
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -76,7 +77,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 73 scoped declarations plus five long-bent strip statements: physical selected-square capacity and forced blank boundary column; conditional shifted-square sum and paid-strip aggregation; integer interval-overlap alternatives. Full long-arm feasibility/freezing, support counts, receiver counts, physical shifted partition and cardinality adapters, perpendicular separator argument, component-to-interval adapters and mixed initial-pair theorem retain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification or universal source coverage is claimed.')
+                  scope='Previous 78 scoped declarations plus physical all-length even-arm freezing from a frozen chamber corner under the explicit correct mate identities, physical transverse-square selected capacity, and conditional neutral-crossing removal arithmetic. Full inward odd-arm/chamber freezing adapters, prescribed mate identities, full crossing-comb geometry/cardinalities, shifted partition adapters, perpendicular separation and both initial-pair theorems retain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification or universal source coverage is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)
