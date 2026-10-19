@@ -47,6 +47,7 @@ def main():
                    'SubQuorum/ComponentReceivers.lean',
                    'SubQuorum/ThinComponents.lean',
                    'SubQuorum/BentReceiverCompensation.lean',
+                   'SubQuorum/LongBentTerminalStrips.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -63,7 +64,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 73
+    assert len(declarations) == 78
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -75,7 +76,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Earlier 65 scoped declarations, four thin-component statements and four bent-compensation statements. New physical results: attached-column extension, canonical donor sparsity and terminal exclusion of its only possible external endpoint. A fixed eight-orientation footprint lemma checks six overlap cases; the two half-turn infeasibilities retain written proofs. Conditional counts cover chamber exits, optional-support budget, two-step ledger invariance and sparse payment. Full shape classification, matching/chamber adapters, odd-path parity, support cardinalities, all-length counts, bent freezing/charge, component ownership/injectivity adapters and both global covered-class theorems remain written; universal source coverage remains open. No full geometric Lean verification is claimed.')
+                  scope='Previous 73 scoped declarations plus five long-bent strip statements: physical selected-square capacity and forced blank boundary column; conditional shifted-square sum and paid-strip aggregation; integer interval-overlap alternatives. Full long-arm feasibility/freezing, support counts, receiver counts, physical shifted partition and cardinality adapters, perpendicular separator argument, component-to-interval adapters and mixed initial-pair theorem retain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification or universal source coverage is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

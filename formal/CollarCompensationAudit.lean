@@ -12,6 +12,7 @@ import SubQuorum.BipartitePromotion
 import SubQuorum.ComponentReceivers
 import SubQuorum.ThinComponents
 import SubQuorum.BentReceiverCompensation
+import SubQuorum.LongBentTerminalStrips
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -86,3 +87,8 @@ import SubQuorum.BentReceiverCompensation
 #print axioms SubQuorum.BentReceiverCompensation.sparse_tile_compensation
 #print axioms SubQuorum.BentReceiverCompensation.canonical_far_not_endpoint
 #print axioms SubQuorum.BentReceiverCompensation.shared_donor_orientation
+#print axioms SubQuorum.LongBentTerminalStrips.selected_square_capacity
+#print axioms SubQuorum.LongBentTerminalStrips.terminal_supports_force_boundary
+#print axioms SubQuorum.LongBentTerminalStrips.shifted_strip_budget
+#print axioms SubQuorum.LongBentTerminalStrips.parallel_interval_overlap
+#print axioms SubQuorum.LongBentTerminalStrips.paid_strip_sum
