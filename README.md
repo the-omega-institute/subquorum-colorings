@@ -121,7 +121,7 @@ the integral consequence F>=-1 implies coefficient one in the retained
 class. There are 45 capacity-aware and 54 remote physical controls, with
 106 scoped local Lean declarations. The first exclusive-note review found
 a chamber-distance proof gap, now repaired with actual support formulas;
-its follow-up and the separate new-mechanism review are pending. General
+its follow-up completed ACCEPT; the separate new-mechanism review is pending. General
 existence of sufficient distant capacity and arbitrary bent-source coverage
 remain open; these are written geometric theorems with scoped formal support.
 

@@ -26,7 +26,13 @@ O,J use union end membership; optional edge deletions need uniform vanishing
 for a uniform claim; feasible flow witnesses, in addition to cut and
 independent-set witnesses, certify exact optimization.
 
-Follow-up c91ffe7a-1550-4fe1-94b7-087d8bc51f8b is dispatched in the same
-conversation conv_b78981283a599e89, original stream 32679. No final ACCEPT
-is inferred. This review predates the capacity-aware and remote-rung notes,
+Follow-up c91ffe7a-1550-4fe1-94b7-087d8bc51f8b completed ACCEPT at
+2026-10-19T12:10:24.468Z, observed gpt_6/pro, in the same conversation
+conv_b78981283a599e89, original stream 32679. It explicitly checks the
+support-template repair, all-p/all-k geometry, completion scope, physical
+allocation and flow optimality witness. No further geometric repair is
+requested. The final response is archived in
+`output/adaptive-strip-repair-review-response.json`.
+
+This completed review predates the capacity-aware and remote-rung notes,
 which have their own separate live review.

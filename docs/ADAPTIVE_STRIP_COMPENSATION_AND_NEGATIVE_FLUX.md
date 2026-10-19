@@ -312,8 +312,11 @@ REVISE at 11:57:14 UTC. It accepts the compensation lemma, weighted cut
 and relaxed optimum, but correctly rejects the first input's distance-four
 argument. The explicit support-interface repair above, completion quantifier,
 O/J definitions and exact flow witness address its requested revisions.
-Follow-up c91ffe7a-1550-4fe1-94b7-087d8bc51f8b is live in conversation
-conv_b78981283a599e89, original stream 32679; no final ACCEPT is inferred.
+Follow-up c91ffe7a-1550-4fe1-94b7-087d8bc51f8b completed ACCEPT at
+12:10:24 UTC. It checks the explicit support-interface repair, original
+all-p/all-k coordinates, uniform completion class, actual resource ownership
+and exact flow witness. The response is archived in
+`output/adaptive-strip-repair-review-response.json`.
 The initial stream 81531 ended with a TLS observation error, but the same
 task's completed response was retrieved and archived without restarting it.
 
