@@ -1,0 +1,140 @@
+ACCEPTThe theorem is mathematically correct under the established inputs (i)–(iv). The construction gives, for every integer  $r\ge1$ , a finite simple two-connected cubic bipartite graph satisfying
+$$|V(Z_r)|=62r,\qquad
+\beta_2(Z_r)=33r,\qquad
+SF_2(Z_r)=36r.$$
+Consequently,
+$$SF_2(Z_r)-\beta_2(Z_r)=3r=\frac{3}{62}|V(Z_r)|,
+\qquad
+7SF_2(Z_r)=3|V(Z_r)|+2\beta_2(Z_r).$$
+I audited    closed-high-cycle-theorem.txt. The proof below uses the four permitted inputs and direct graph arguments. No enumeration is needed, and no step uses the pending general Heawood capacity-ledger theorem.The particularly important point passes: every  $H$ -six-cycle remains closed. The one-hub argument uses only the two retained internal  $X$ -edges; the two-hub argument uses the intact  $H$ -cycle, including  $h_5h_0$ . Neither argument consumes a selection condition from another module.1. The graph construction is valid for every  $r\ge1$ Each core has  $20$  vertices, and each of its three broken Heawood blocks contributes  $14$  fresh vertices. Attachments identify no vertices, so
+$$|V(Z_r)|=r(20+3\cdot14)=62r.$$
+The degree calculation is exact:Vertex typeDegree in the finished graphCore  $H,U,Y$  vertices $3$ , unchangedCore  $x_1,x_2,x_3,x_4$  $2$  in  $R$ , plus one block attachmentCore  $x_0,x_5$  $1$  in  $R$ , plus one block attachment and one ring edgeHeawood ports  $0,8$  $2$  internally, plus one attachmentOther Heawood vertices $3$ , unchangedThus  $Z_r$  is cubic.The proposed coloring is consistent. Give  $h_k,x_k$  color  $k\bmod2$ , give  $u_k$  the opposite color, and give  $y_j$  color  $j$ . Give Heawood points color  $0$  and lines color  $1$ . Then:All retained core edges cross colors.Point  $0$  attaches to an odd  $X$ -vertex.Line  $8$  attaches to an even  $X$ -vertex.Every ring edge joins  $x_{0,i}$  to  $x_{5,i+1}$ , hence crosses colors.Each core has ten vertices of each color, and each block has seven of each, giving bipartition sizes  $31r,31r$ .Simplicity also holds. Block vertices are fresh, and attachment edges have distinct endpoint pairs. At  $r=1$ , the ring edge restores the previously deleted  $x_0x_5$ ; it creates neither a loop nor a duplicate. At  $r=2$ , the ring edges are
+$$x_{0,0}x_{5,1}
+\quad\text{and}\quad
+x_{0,1}x_{5,0}.$$
+Their unordered endpoint pairs are different, even though they connect the same two modules.Throughout this construction, the only deleted core edges are  $X$ -edges. In particular, every  $H$ -cycle edge survives.2. The closed-high-cycle omission lemma is correctWrite
+$$P_j=\{x_{2j},x_{2j+1}\},\qquad j=0,1,2.$$
+For a dissociation set  $D\subseteq V(R)$ , let  $m(D)$  count the pairs  $P_j$  disjoint from  $D$ . We must prove
+$$|D|+m(D)\le12. \tag{1}$$
+Here a dissociation set means that the induced selected graph has maximum degree at most one.2.1 Normalization preserves the score exactlyIf a designated pair contains exactly one selected endpoint, remove that endpoint. This operation:Preserves dissociation, because it only deletes a selected vertex.Decreases  $|D|$  by one.Increases  $m(D)$  by one.Leaves the status of every other designated pair unchanged, since the pairs are disjoint.Thus the score  $|D|+m(D)$  is unchanged.After normalization, each designated pair is either wholly selected or wholly omitted. Let its common indicator be  $z_j\in\{0,1\}$ . Let  $a_k,v_k$  indicate selection of  $h_k,u_k$ , and let  $q$  be the number of selected hubs.For this normalized set,
+$$|D|=\sum_{k=0}^{5}(a_k+v_k)+2\sum_{j=0}^{2}z_j+q,
+\qquad
+m(D)=3-\sum_{j=0}^{2}z_j.$$
+Therefore
+$$|D|+m(D)=3+\sum_{j=0}^{2}c_j+q,$$
+where
+$$c_j=a_{2j}+a_{2j+1}+v_{2j}+v_{2j+1}+z_j. \tag{2}$$
+This proves the displayed score identity without assuming anything about either interface vertex.2.2 The cell bound and its equality cases are validFor every cell,
+$$c_j\le3.$$
+If  $z_j=0$ , the four relevant  $H/U$ -vertices induce the path
+$$u_{2j}-h_{2j}-h_{2j+1}-u_{2j+1}.$$
+All four cannot be selected. A three-vertex selection on this path is dissociating only if it contains both endpoints and exactly one internal vertex. Hence equality requires both  $U$ -vertices and exactly one  $H$ -vertex.If  $z_j=1$ , both corresponding  $X$ -vertices are selected. At either index  $k$  in the cell, selecting both  $h_k$  and  $u_k$  would give selected  $u_k$  the two selected neighbors  $h_k,x_k$ . Thus
+$$a_k+v_k\le1.$$
+Summing over the two indices and adding  $z_j=1$  gives  $c_j\le3$ . Equality requires exactly one of  $h_k,u_k$  at each index.These are necessary equality conditions. The proof never incorrectly treats them as sufficient in the presence of the other edges.2.3 Zero selected hubsWhen  $q=0$ , equation (2) immediately yields
+$$|D|+m(D)\le3+3+3+3=12.$$
+2.4 The reflection is legitimateThe map
+$$h_k\mapsto h_{5-k},\qquad
+u_k\mapsto u_{5-k},\qquad
+x_k\mapsto x_{5-k},\qquad
+y_0\leftrightarrow y_1$$
+is an automorphism of  $R$ .It preserves the  $H$ -cycle and the paths  $h_k-u_k-x_k$ . It preserves hub incidence because  $5-k$  has parity opposite to  $k$ . It exchanges the two retained  $X$ -edges:
+$$x_1x_2\longleftrightarrow x_4x_3.$$
+It exchanges designated cells  $0,2$ , preserves cell  $1$ , and sends the absent interface edge  $x_0x_5$  to itself.It also preserves  $m(D)$ . Consequently, in the one-hub case, assuming that the selected hub is  $y_0$  is valid.This symmetry is used only inside  $R$ . It need not extend to the block attachments or to the ring.2.5 One selected hubAssume  $y_0$  is selected. Call a cell tight when  $c_j=3$ .The equality conditions sharpen as follows:Tight-cell stateNecessary selected/omitted indicators $z_j=0$  $v_{2j}=v_{2j+1}=1,\ a_{2j}=0,\ a_{2j+1}=1$  $z_j=1$  $v_{2j}=0,\ a_{2j}=1,\ a_{2j+1}+v_{2j+1}=1$ For the first row, selecting the even  $H$ -vertex would give its selected  $U$ -partner both  $y_0$  and that  $H$ -vertex as selected neighbors. For the second row, selecting the even  $U$ -vertex would give it both  $y_0$  and its selected  $X$ -vertex as selected neighbors.Now suppose cells  $j,j+1$  are both tight, for  $j=0$  or  $1$ , and suppose  $z_{j+1}=1$ .If  $z_j=0$ , then  $h_{2j+1}$  and  $u_{2j+1}$  are selected, and tightness of the next cell selects  $h_{2j+2}$ . Thus  $h_{2j+1}$  has two selected neighbors.If  $z_j=1$ , the retained edge
+$$x_{2j+1}x_{2j+2}$$
+has both endpoints selected. Therefore  $u_{2j+1}$  must be omitted. Tightness selects  $h_{2j+1}$ , which then has the two selected neighbors  $h_{2j}$  and  $h_{2j+2}$ .Both cases contradict dissociation. Hence two consecutive tight cells force  $z_{j+1}=0$ .If all three cells were tight, applying this to  $j=0,1$  would give  $z_1=z_2=0$ . Then  $u_2,u_4$  would both be selected neighbors of selected  $y_0$ , another contradiction.Therefore at least one cell is not tight. Since the cell scores are integers,
+$$\sum_j c_j\le8,$$
+and
+$$|D|+m(D)\le3+8+1=12.$$
+The only  $X$ -edges used are  $x_1x_2$  and  $x_3x_4$ . Neither an interface edge nor a neighboring-module condition enters this argument.2.6 Both selected hubsA tight cell cannot have  $z_j=0$ . Such a cell selects both  $U$ -vertices and one  $H$ -vertex, giving the selected  $U$ -partner of that  $H$ -vertex two selected neighbors: its hub and its  $H$ -partner.For a tight cell with  $z_j=1$ , both  $U$ -vertices must be omitted, since either would otherwise see its selected hub and its selected  $X$ -partner. Tightness therefore selects both  $H$ -vertices.Any two distinct cells are adjacent around the three-cell decomposition of the intact  $H$ -cycle. Selecting both  $H$ -vertices in two cells selects four consecutive  $H$ -vertices, which violates dissociation. For cells  $0$  and  $2$ , the connecting edge is specifically
+$$h_5h_0.$$
+Thus at most one cell is tight, and
+$$\sum_j c_j\le3+2+2=7.$$
+It follows that
+$$|D|+m(D)\le3+7+2=12.$$
+Together, the three hub cases prove (1) for normalized sets. Exact preservation of the score proves it for every original  $D$ .2.7 An exact check that the closed  $H$ -seam is doing essential workThe claimed failure boundary can be verified directly. If one additionally deleted  $h_5h_0$ , consider
+$$\begin{aligned}
+D\cap H&=\{h_0,h_1,h_4,h_5\},\\
+D\cap U&=\{u_2,u_3\},\\
+D\cap X&=\{x_0,x_1,x_4,x_5\},\\
+D\cap Y&=\{y_0,y_1\}.
+\end{aligned}$$
+In that modified graph, the selected edges are exactly
+$$h_0h_1,\quad h_4h_5,\quad u_2y_0,\quad u_3y_1,$$
+and the four selected  $X$ -vertices are isolated. Therefore this is a dissociation set with
+$$|D|=12,\qquad m(D)=1,\qquad |D|+m(D)=13.$$
+In the actual  $R$ , the retained edge  $h_5h_0$  gives both  $h_0$  and  $h_5$  a second selected neighbor. The pattern is excluded within the same core.This verifies the precise mechanism claimed in the note: keeping the  $H$ -cycle closed supplies the needed local constraint.3. The dissociation upper bound has no double chargingLet  $D$  be any dissociation set in  $Z_r$ , and let
+$$D_i=D\cap V(R_i).$$
+This is dissociating in  $R_i$ .At  $r=1$ , the actual core has the additional restored edge  $x_0x_5$ , but this causes no problem: deleting an edge preserves dissociation, so the restriction still satisfies the lemma on  $R_i$ .Write
+$$t_{ij}=|D\cap V(B_{i,j})|,
+\qquad
+b_i=\#\{j:t_{ij}=8\}.$$
+The admitted block cap gives  $t_{ij}\le8$ , hence
+$$\sum_{j=0}^{2}t_{ij}
+\le 8b_i+7(3-b_i)=21+b_i. \tag{3}$$
+If  $t_{ij}=8$ , the saturation input says that both block ports are selected and that each already has a selected internal neighbor. Its adjacent core vertex must therefore be omitted. Both endpoints of the corresponding designated pair are omitted.Each block is attached to its own distinct pair, so this is an injection from size-eight blocks to wholly omitted designated pairs:
+$$b_i\le m(D_i). \tag{4}$$
+Combining (1), (3), and (4),
+$$\begin{aligned}
+|D\cap V(\text{module }i)|
+&\le |D_i|+21+b_i\\
+&\le |D_i|+21+m(D_i)\\
+&\le33.
+\end{aligned}$$
+The module vertex sets partition  $V(Z_r)$ , so
+$$|D|\le33r.$$
+There is no reused deficit:Each size-eight surplus is associated with one distinct designated pair.Each vertex is counted in one module.The inequality is applied to the original  $D_i$ .Normalization is only the proof of the universal local inequality; it does not manufacture additional block credits.The cyclic edges impose additional constraints on a global dissociation set, while the upper bound remains valid without using them.4. The displayed dissociation selection attains  $33r$ In every core select
+$$D_C=U\cup H_{\mathrm{odd}}\cup X_{\mathrm{even}}.$$
+Its  $12$  vertices induce exactly the six disjoint edges
+$$u_kh_k\quad(k\text{ odd}),\qquad
+u_kx_k\quad(k\text{ even}).$$
+The selected odd  $H$ -vertices are separated on the  $H$ -cycle, every retained  $X$ -edge has an omitted odd endpoint, and both hubs are omitted.In every block select all seven points. These vertices are independent. Point  $0$  is selected and line  $8$  is omitted, so both kinds of attachment are harmless:Point  $0$  attaches to an omitted odd  $X$ -vertex.The selected even  $X$ -vertex attaches to omitted line  $8$ .Every cyclic edge has an omitted  $x_5$ -endpoint, including at  $r=1,2$ .The full selection therefore consists of the core matching edges and isolated selected block points. Its size is
+$$12r+3r\cdot7=33r.$$
+Together with the upper bound,
+$$\boxed{\beta_2(Z_r)=33r}.$$
+5. The forming selection remains inclusion-minimal after rewiringThis part is correct, including the potentially delicate case in which a formerly selected vertex becomes omitted during a deletion test.5.1 The core twelve-set is minimal formingFor a selection  $T$  and omitted vertex  $x$ , the definition gives the following exact criterion:
+$$\begin{aligned}
+x\text{ is covered}
+\iff {}&
+|N(x)\cap T|\ge2\\
+&\text{or there exists }u\in N(x)\cap T
+\text{ with }N(u)\cap T\ne\varnothing.
+\end{aligned} \tag{5}$$
+The first alternative makes  $x$  the center; the second makes a selected neighbor  $u$  the center.Set
+$$S_C=H\cup U.$$
+Each omitted  $x_k$  is covered by the star
+$$x_k-u_k-h_k,$$
+and each omitted  $y_j$  has three selected  $U$ -neighbors.Every selected vertex is essential:After removing  $h_k$ , the omitted  $x_k$  has exactly one selected neighbor,  $u_k$ , and  $u_k$  has no selected neighbor. Both alternatives in (5) fail.After removing  $u_k$ , the omitted  $x_k$  has no selected neighbor, so it is uncovered.Formation is upward monotone: enlarging a forming selection retains the two selected vertices in every witness needed by a still-omitted vertex. Thus failure of every single deletion proves inclusion-minimality. Indeed, a forming proper subset would imply that some single deletion also forms.5.2 The exact rewiring lemmaThe appropriate statement is slightly stronger than preservation of formation alone.Rewiring lemma. Suppose  $G,G'$  have the same vertex set, and every changed edge has both endpoints in  $V\setminus S$ . Then, for every  $T\subseteq S$ ,  $T$  is forming in  $G$  if and only if it is forming in  $G'$ .Proof. A covering star for an omitted vertex  $x\notin T$  uses  $x$  and two vertices of  $T$ . Every required edge therefore has at least one endpoint in  $T\subseteq S$ . None can be a changed edge. Every covering witness is consequently preserved in both directions. ∎In particular this applies to
+$$T=S\setminus\{s\}.$$
+Although  $s$  is now omitted, it belonged to the original  $S$ , so no changed edge is incident to it. All changed edges still join two vertices outside the tested selection.Therefore rewiring cannot repair a deletion failure, either at the newly omitted  $s$  or at another omitted witness vertex.5.3 Application to  $Z_r$ Start with the disjoint union of the  $C_1$  cores and the broken Heawood blocks. In each core select  $H\cup U$ ; in each block select the admitted eight-set
+$$\{1,2,3,5,7,9,10,11\}.$$
+The union  $S$  is minimal forming in this disjoint union, because every component selection is minimal forming.Every construction change has both endpoints outside  $S$ :All removed  $X$ -edges join omitted  $X$ -vertices.Every block attachment joins an omitted port to an omitted  $X$ -vertex.Every cyclic edge joins omitted  $X$ -vertices.If one instead starts from full Heawood graphs, removing  $0\,8$  also satisfies the same condition, since both ports are omitted.The rewiring lemma therefore preserves formation and all deletion failures throughout the construction. Hence  $S$  is inclusion-minimal forming in  $Z_r$ , with
+$$|S|=12r+3r\cdot8=36r.$$
+Thus
+$$SF_2(Z_r)\ge36r.$$
+5.4 Exact SF value and selected isolatesUsing the established compensation inequality and the already proved dissociation number,
+$$7SF_2(Z_r)
+\le3(62r)+2(33r)
+=252r.$$
+Therefore
+$$SF_2(Z_r)\le36r,$$
+and the constructed set attains it:
+$$\boxed{SF_2(Z_r)=36r}.$$
+No surgery changes the induced graph on  $S$ . The core selection has no isolates, while every block contributes its admitted two selected isolates. There are exactly  $6r$  selected isolates.Their color balance can also be checked without relying on numeric labels. In one block, consider either color class. The selected six-cycle contains three vertices of that color. Its three opposite-color cycle vertices each have a third neighbor off the cycle: they are selected non-port vertices, so retain degree three. Those three third neighbors are distinct, since otherwise two cycle vertices would share two neighbors, creating a four-cycle in the Fano incidence graph. Of the four vertices of the given color outside the cycle, at most one can therefore be isolated from the selected cycle.Since there are two selected isolates in total, one must lie in each color class. Consequently the final selection has  $3r$  selected isolates of each color.6. Two-connectivity, including  $r=1,2$ The note’s compressed connectivity argument is valid. Here are its full hypotheses and cases.6.1 Joining two two-connected graphs by an edge swapLet  $A,B$  be disjoint two-connected graphs, with edges  $ab\in E(A)$  and  $cd\in E(B)$ . Form
+$$J=(A-ab)\cup(B-cd)+ad+bc.$$
+Then  $J$  is two-connected.First,  $A-ab$  and  $B-cd$  are connected because two-connected graphs have no bridges. Thus  $J$  is connected.Now delete a vertex  $v\in A$ .If  $v\notin\{a,b\}$ , then  $A-v$  is connected. Deleting  $ab$  either leaves it connected or splits it into exactly two components, one containing  $a$ , the other containing  $b$ . The connected graph  $B-cd$ , together with the new edges, provides a route between those endpoints and reconnects the possible two pieces.If  $v=a$ , then  $A-a$  is connected, deletion of  $ab$  has no further effect, and the surviving edge  $bc$  joins it to  $B-cd$ . The case  $v=b$  is symmetric. Deleting a vertex of  $B$  is handled identically.Thus  $J-v$  is connected for every vertex  $v$ , proving the claim.Apply this successively to the three designated core edges and three fresh Heawood graphs. The permitted two-connectivity input supplies the starting graphs. Every not-yet-used designated edge survives until its own swap.The resulting full  $62$ -vertex module  $M_i$  is therefore two-connected, and its edge
+$$e_i=p_iq_i,\qquad p_i=x_{0,i},\quad q_i=x_{5,i},$$
+has survived.6.2 Opening the  $X$ -edge and forming the ringFor  $r\ge2$ , the construction removes each  $e_i$  and adds
+$$p_iq_{i+1}.$$
+Every  $M_i-e_i$  is connected, so the ring is connected.Delete a vertex  $v\in M_i$ .If  $v\notin\{p_i,q_i\}$ : The graph  $M_i-v$  is connected. Removing  $e_i$  either preserves connectivity or creates two components containing  $p_i,q_i$ , respectively. The other opened modules give a route from  $p_i$ , through modules  $i+1,i+2,\ldots,i-1$ , back to  $q_i$ . This route avoids  $v$ , reconnects the possible pieces, and connects all remaining modules to them.If  $v=p_i$ : The graph  $M_i-p_i$  is connected. Its surviving port  $q_i$  remains attached to  $p_{i-1}$ , and the other modules form a connected chain. All remaining vertices are connected. The case  $v=q_i$  is symmetric.These cases include deletion of a vertex inside any attached Heawood block; the argument uses two-connectivity of the entire  $M_i$ .For  $r=2$ , the route through the other modules simply traverses the single other module:
+$$p_i\;-\;q_j
+\quad\text{followed by a path in }M_j-e_j\text{ to }p_j
+\quad\text{followed by }p_j\;-\;q_i.$$
+Both intermodule edges exist and are distinct. In a port-deletion case, the other edge survives and connects the two remaining connected pieces.For  $r=1$ , the deleted interface edge is restored, leaving exactly  $M_1$ , already proved two-connected.Thus
+$$\boxed{Z_r\text{ is two-connected for every }r\ge1}.$$
+7. Mathematical usefulness and scopeRelative to the project baseline stated in the question, the improvement is strict:
+$$\frac3{62}-\frac1{24}=\frac5{744}>0.$$
+Because the ratio is attained for every  $r$ , this supplies an arbitrarily large family with coefficient  $3/62$ , already within the two-connected class.The result is useful for three concrete reasons:The numerical invariants are exact. Both lower bounds have explicit attaining selections, and both upper bounds have proofs.The compensation inequality is attained throughout an infinite two-connected family.The local omission proof tolerates arbitrary choices at the exposed  $X$ -ports. This makes the cyclic assembly rigorous without a neighbor-dependent accounting argument.The general upper coefficient remains larger. A bipartition class is independent and hence dissociating, so  $\beta_2(G)\ge n/2$ . The admitted inequality consequently gives
+$$SF_2(G)-\beta_2(G)
+\le\frac{3n-5\beta_2(G)}7
+\le\frac n{14}.$$
+The new family establishes the lower coefficient  $3/62$ ; it does not close the interval up to  $1/14$ .No substantive revision is required. Expanding the rewiring statement to “for every  $T\subseteq S$ ” and spelling out the edge-swap lemma would make the note more self-contained, but the existing mathematical argument is sound.   closed-high-cycle-theorem.txtDocumentOpen file

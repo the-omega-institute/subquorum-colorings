@@ -161,11 +161,15 @@ In every Heawood graph use its established eight-set
 {1,2,3,5,7,9,10,11}, with ports0,8 omitted. It is minimal forming,
 induces a six-cycle and two isolates, and has explicit deletion witnesses.
 All cut and newly added edges in the construction have both endpoints
-outside the union S of these fixed selections. Formation and every
-deletion failure are invariant under such rewiring: a covering two-star
-uses at most one vertex outside the tested selection, including when
-testing S minus a selected vertex. Therefore S is minimal in Z_r and
-has12r+8(3r)=36r vertices.
+outside the union S of these fixed selections. More generally, if two
+graphs differ only on edges within V minus S, then every T subset S is
+forming in one exactly when it is forming in the other. A covering
+two-star for an omitted vertex uses that vertex and two vertices of T;
+every required edge has an endpoint in T and is therefore unchanged.
+This also applies to T=S minus a selected vertex: no changed edge meets
+that removed vertex, since it belonged to the original S. Formation
+and every deletion failure are preserved. Therefore S is minimal in
+Z_r and has12r+8(3r)=36r vertices.
 
 The established general cubic bipartite inequality yields
 
@@ -173,6 +177,15 @@ The established general cubic bipartite inequality yields
 
 so SF_2(Z_r)<=36r. This proves the exact value. This upper proof does
 not depend on the newer Heawood block-capacity theorem pending review.
+
+For the edge-swap fact, let A,B be disjoint two-connected graphs with
+edges ab,cd. Replacing those edges by ad,bc preserves two-connectivity.
+Both graphs remain connected after their edge is removed. If a vertex
+v of A other than a,b is deleted, A-v is connected and cutting ab can
+only separate a from b; the connected B-cd supplies the bypass. If
+v=a or b, the surviving cross-edge joins the connected A-v to B-cd.
+The argument for a vertex of B is symmetric. Thus every vertex deletion
+leaves the joined graph connected.
 
 For connectivity, start with C_1 and three separate Heawood graphs.
 Perform three successive two-edge swaps, each joining one Heawood graph
@@ -266,15 +279,18 @@ cores and every permitted block count, check the architecture's explicit
 dissociation lower bound and8,640selected deletion failures for its
 unchanged forming witnesses. Their beta/SF values are not optimized.
 
-A [new independent review](../output/closed-high-cycle-oracle-review.json)
-has been dispatched for this distinct theorem, with the written proof
-attached. The later architecture-bound corollary was not in that input
-and is a separate written deduction with a conditional Lean count.
-No verdict is yet available. Preserve its original client
-and task. The separate general block-ledger review returned REVISE;
-its same-conversation [follow-up](../output/heawood-block-compensation-followup.json)
-after proof clarifications is pending. Neither is a premise of this
-construction or its architecture bound.
+The [independent Oracle review](../output/closed-high-cycle-oracle-review.json)
+completed ACCEPT on19October at02:06UTC, with observed model gpt_6 and
+effort pro. Its [exact response](reviews/2026-10-19-closed-high-cycle-review-response.txt)
+accepts the all-r construction, local omission lemma, distinct surplus
+charges, exact beta/SF attainment and two-connectivity, including r=1,2.
+The optional all-T rewiring statement and edge-swap exposition are now
+explicit above. The later architecture-bound corollary was not in that
+input and remains a separate written deduction with a conditional Lean
+count. The separate general block-ledger review returned REVISE; its
+same-conversation [follow-up](../output/heawood-block-compensation-followup.json)
+is dispatched and awaiting its response after proof clarifications.
+Neither review is a premise of this construction or its architecture bound.
 
 Reproduce:
 
