@@ -245,3 +245,5 @@ mixed P-state transitions, or whether a further physical obstruction
 survives. Degree-four endpoints and interactions between selected-corner
 orientations remain outside the homogeneous run bound. General grid
 equality and a universal improvement of 5/6 remain open.
+
+Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
