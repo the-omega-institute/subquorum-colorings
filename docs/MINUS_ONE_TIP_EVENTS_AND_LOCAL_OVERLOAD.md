@@ -182,12 +182,14 @@ and their individual axiom audits pass under local Lean 4.33.0, using
 kernel decide with no sorryAx or native_decide. It does not formalize
 a general decomposition, freezing theorem or compensating injection.
 
-Next: determine whether unused regular credit can always be transported
-to minus-one tip events without conflicting with marked-side payment.
-The donor corner and tip pools remain distinct, as already proved. A
-successful lemma must permit a tile with three events while preserving
-K_reg<=2J and using each remaining unit only once. The separate Oracle
-review of the preceding joint theorem does not include these later
-examples unless they are explicitly supplied in a subsequent turn.
+The subsequent [fully frozen zero-credit family](FROZEN_ZERO_CREDIT_TIP_FAMILY.md)
+settles the pure-credit transport question negatively: a connected
+three-module family has K_minus_one=1 and C=0 even when every endpoint
+is frozen. Separated copies make this deficit unbounded. Negative-module
+mass still pays these events, so the global compensation target survives.
+Next study joint allocation of S+C-G, preserving K_reg<=2J, the distinct
+corner and tip pools, and single use of every unit. The separate Oracle
+review of the preceding joint theorem covers neither these later
+examples nor the new parameter-family freezing proof.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

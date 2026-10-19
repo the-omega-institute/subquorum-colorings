@@ -161,7 +161,8 @@ is reused by two sides. This is where survival-only donor distinctness
 would have been insufficient. Since C_i lies in an original full bar
 tile, an assigned gate makes all of Q foreign endpoints. Conversely a
 gate endpoint raises the occupied degrees of both adjacent positive
-protectors, marking the side. With a blank gate the same argument
+endpoints, including the canonical protector (2,1), marking the side.
+With a blank gate the same argument
 excludes x,z endpoints, and feasibility then excludes v; the donor
 survives. This proves exact donor-failure classification and G<=2B_minus.
 
@@ -267,7 +268,11 @@ donor profiles, their full consumption, final receiver charge -5 and
 actual slack69. Its separate compilation and individual axiom audit pass,
 with no sorryAx/native_decide. Together the two sources have 28 checked
 declarations. This does not assert complete freezing or formalize the
-all-parameter module adapter. No prior Oracle verdict covers this extension.
+all-parameter module adapter. Its separate written-proof review subsequently
+completed ACCEPT, with the protector terminology clarified above. See
+[the assessment](reviews/2026-10-20-minus-one-joint-witness-assessment.md)
+for the exact scope. This does not inherit execution verification from the
+review or cover later extensions.
 
 The subsequent [tip-event and local-overload note](MINUS_ONE_TIP_EVENTS_AND_LOCAL_OVERLOAD.md)
 answers the possibility question with two actual feasible fusions: both
@@ -276,8 +281,13 @@ regular events plus one irregular event. The latter defeats payment only
 from that same tile's unused regular credit. Both global finer budgets
 remain positive. Seventeen additional Lean declarations verify the actual
 examples. They are not fully frozen and are outside this note's review
-input. Next determine whether remaining credit can be transported to tip
-events without duplicate use, while retaining marked-side payment.
+input. The further [fully frozen zero-credit family](FROZEN_ZERO_CREDIT_TIP_FAMILY.md)
+has one tip event with C=0 throughout a connected parameter family.
+Separated copies give unbounded pure-credit deficits. Therefore even
+global square-credit transport alone cannot pay every tip. Next study
+joint allocation of negative-module mass S, remaining credit C and
+marked-side loss G without duplicate use. This new family and its uniform
+freezing proof are outside the preceding ACCEPT's input.
 Finite pair searches cannot classify pairs inside larger feasible unions.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

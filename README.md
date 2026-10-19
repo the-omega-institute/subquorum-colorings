@@ -667,3 +667,15 @@ refutes tip exclusion and payment only from that same tile's remaining
 credit; both global compensation budgets stay positive. Sixteen symmetry
 images and seventeen actual-coordinate Lean declarations pass. The
 examples are not fully frozen; unrestricted grid equality remains open.
+
+The [fully frozen zero-credit tip family](docs/FROZEN_ZERO_CREDIT_TIP_FAMILY.md)
+strengthens that obstruction: a connected three-module parameter family
+has one irregular tip event with J=K_regular=C=0, and every endpoint is
+frozen under matching promotion. Thus even globally transported square
+credit cannot pay every tip event. Separated copies give arbitrarily
+large pure-credit deficits, while negative-module mass keeps the finer
+compensation budget positive. The note gives a uniform geometric and
+freezing proof; 144 parameter controls, eight symmetry images and six
+copy controls pass. Twenty-three Lean declarations verify the reference
+coordinates, its complete 76-step freezing certificate and separate
+scalar consequences. General joint allocation of S+C-G remains open.
