@@ -234,4 +234,5 @@ The assessment is in docs/reviews/2026-10-19-blank-witness-assessment.md.
 The same-reviewer follow-up also examines DIAGONAL_WITNESS_CHAINS.md,
 which proves that actual shared-blank components are straight chains
 and the abstract cycle resources reduce to distinct parallel pairs.
-No acceptance of that follow-up is presumed.
+That original follow-up completed ACCEPT at03:59:29UTC, observedgpt_6/pro;
+see output/diagonal-witness-oracle-review.json for its exact scope.
