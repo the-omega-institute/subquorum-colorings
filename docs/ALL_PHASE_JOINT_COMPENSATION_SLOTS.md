@@ -290,8 +290,14 @@ v=(4,2), adjacent to the old endpoint (4,1), cannot be newly selected.
 These make the intended fusion model and the marked-side argument explicit;
 the source construction, slot capacities and computed theorem are unchanged.
 The original REVISE and [independent assessment](reviews/2026-10-20-all-phase-joint-slot-assessment.md)
-are preserved. No final
-ACCEPT of this revised extension is claimed pending the follow-up review.
+are preserved. The follow-up task14d9250f-204f-419b-bb0b-3caaae274b7a
+completed ACCEPT, observed gpt_6/pro, for the repaired source-fusion theorem
+conditional on the explicitly established ledger, rotor barrier, donor-ring
+injectivity and rotor-slot inputs. The original stream29217 ended with DONE
+and exactly matches the terminal response. It separately confirms the
+general boundary table, foreign-source side assignment, shared-slot
+inactivity and resulting sufficient condition; kernel receipts remain
+separate execution evidence. No unrestricted grid conclusion follows.
 
 The next question remains whether the ACTUAL demand Kirregular+G can be
 paid from N+S+C in every admissible fusion, without first replacing it by

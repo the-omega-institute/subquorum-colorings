@@ -699,4 +699,7 @@ defines all exceptions source-locally and gives the exact event trigger.
 Its complete marked-side proof clarifies foreign ownership of consumed
 supports and the old protector adjacent to v. The original review and
 [assessment](docs/reviews/2026-10-20-all-phase-joint-slot-assessment.md)
-are retained; a follow-up review is live, with no final ACCEPT claimed.
+are retained. The follow-up completed ACCEPT for the repaired source-fusion
+theorem, conditional on its expressly established ledger, rotor barrier,
+donor-ring injectivity and rotor-slot inputs. Original stream DONE exactly
+matches the terminal review; execution checks remain separate evidence.

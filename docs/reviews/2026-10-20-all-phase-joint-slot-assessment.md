@@ -45,3 +45,15 @@ not become ACCEPT merely because we disagree with a reading.
 The 896 boundary/512 physical controls and25 local Lean declarations are
 separate execution evidence. They do not authenticate the general adapter
 or substitute for a completed proof review.
+
+The original follow-up task14d9250f-204f-419b-bb0b-3caaae274b7a has now
+completed ACCEPT, observed gpt_6/pro. Original stream29217 exited0 with
+DONE; all response characters exactly match its terminal archive. The
+review explicitly accepts the source-local boundary table, occupied- and
+blank-gate assignments, original foreign endpoint ownership, disjoint
+actual endpoint slots and the resulting sufficient-density theorem. Its
+scope treats the previously established exact ledger, rotor barrier,
+donor-ring injectivity and rotor-slot counts as inputs. Those inputs have
+their own preceding proofs/reviews; the new ACCEPT does not authenticate
+kernel execution or unrestricted grid compensation. No live job remains
+for this follow-up. The initial REVISE stays archived unchanged.
