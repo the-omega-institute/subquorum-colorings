@@ -24,7 +24,7 @@ import SubQuorum.MixedCavitySources
 import SubQuorum.OpenSourceCavities
 import SubQuorum.CombChannels
 import SubQuorum.ElbowSources
-import SubQuorum.ElbowOwnedDonors
+import SubQuorum.GuardedSteppedArms
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -155,3 +155,7 @@ import SubQuorum.ElbowOwnedDonors
 #print axioms SubQuorum.ElbowSources.extra_source_residual_compensation
 #print axioms SubQuorum.ElbowOwnedDonors.capped_corner_unit_deficit
 #print axioms SubQuorum.ElbowOwnedDonors.opposite_run_incompatible
+#print axioms SubQuorum.GuardedSteppedArms.guarded_corner_exact
+#print axioms SubQuorum.GuardedSteppedArms.distinct_anchor_neighbors_impossible
+#print axioms SubQuorum.GuardedSteppedArms.old_lower_corner_guard_impossible
+#print axioms SubQuorum.GuardedSteppedArms.stepped_receiver_charge

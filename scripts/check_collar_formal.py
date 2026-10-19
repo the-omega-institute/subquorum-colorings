@@ -61,6 +61,7 @@ def main():
                    'SubQuorum/CombChannels.lean',
                    'SubQuorum/ElbowSources.lean',
                    'SubQuorum/ElbowOwnedDonors.lean',
+                   'SubQuorum/GuardedSteppedArms.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -77,7 +78,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 129
+    assert len(declarations) == 133
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -89,7 +90,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 127 scoped declarations plus actual grid-label capped-corner unit deficit and opposite-run infeasibility. Full witness-to-component ownership, coordinate maps and global receiver adapter remain written proofs; arbitrary positive bends and unrestricted grid equality remain open.')
+                  scope='Previous 129 scoped declarations plus actual grid-label guarded-corner exact labels, distinct anchor-neighbor exclusion, old lower-corner guard exclusion and exact stepped receiver count. Complete all-k freezing geometry, full coordinate maps, arbitrary-orientation mixed ownership and global receiver adapter remain written proofs; unrestricted grid equality remains open.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)
