@@ -23,6 +23,7 @@ import SubQuorum.ClosedSourceCavities
 import SubQuorum.MixedCavitySources
 import SubQuorum.OpenSourceCavities
 import SubQuorum.CombChannels
+import SubQuorum.ElbowSources
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -147,3 +148,7 @@ import SubQuorum.CombChannels
 #print axioms SubQuorum.CombChannels.whole_channel_partition
 #print axioms SubQuorum.CombChannels.aligned_unequal_weighted_payment
 #print axioms SubQuorum.CombChannels.residual_channel_compensation
+#print axioms SubQuorum.ElbowSources.retained_mate_zigzag
+#print axioms SubQuorum.ElbowSources.three_endpoint_junction_blank
+#print axioms SubQuorum.ElbowSources.transition_band_gain
+#print axioms SubQuorum.ElbowSources.extra_source_residual_compensation
