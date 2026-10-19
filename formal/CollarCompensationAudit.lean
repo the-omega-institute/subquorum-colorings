@@ -131,3 +131,6 @@ import SubQuorum.ClosedSourceCavities
 #print axioms SubQuorum.ClosedSourceCavities.closed_cavity_partition
 #print axioms SubQuorum.ClosedSourceCavities.donor_multiplicity_budget
 #print axioms SubQuorum.ClosedSourceCavities.twofold_cavity_cover_compensation
+#print axioms SubQuorum.ClosedSourceCavities.cavity_boundary_flux_partition
+#print axioms SubQuorum.ClosedSourceCavities.disjoint_cavity_boundary_compensation
+#print axioms SubQuorum.ClosedSourceCavities.twofold_cavity_boundary_compensation

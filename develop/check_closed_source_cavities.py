@@ -69,7 +69,7 @@ def nested_cavities(count, extra_depth=0, extra_width=0):
     return (*current[:2], selected, matching), sources, cavity
 
 
-def cavity_record(current, sources, cavity):
+def cavity_record(current, sources, cavity, allow_open=False):
     checked = verify_terminal(current)
     endpoints = endpoint_data(current)[0]
     assert frozen_certificate(current)[0] == endpoints
@@ -77,7 +77,8 @@ def cavity_record(current, sources, cavity):
     root = sources[0]
     assert not cavity & root['endpoints']
     assert all(component <= cavity for component in components
-               if component != root['endpoints'])
+               if component != root['endpoints'] and component & cavity
+               and (not allow_open or component in [source['endpoints'] for source in sources]))
     tiles = {(row//2, column//2) for row, column in cavity}
     assert vertices_of(tiles) == cavity
     rows = sorted({row for row, column in cavity})
@@ -111,16 +112,31 @@ def cavity_record(current, sources, cavity):
 
     first, second = partition_record(physical), partition_record(shifted)
     source_sets = [source['endpoints'] for source in sources[1:]]
+    flux = 0
     for index, component in enumerate(components):
-        expected = 2 if component in source_sets else 0
-        assert first['component_excess_twice'][index] == expected
-        assert second['component_excess_twice'][index] == -expected
-    assert first['payment'] == 2*len(sources)+second['payment']
-    assert checked['area']//2-checked['objective'] >= len(sources)
+        if component in source_sets:
+            assert first['component_excess_twice'][index] == 2
+            assert second['component_excess_twice'][index] == -2
+            continue
+        local_flux = 0
+        if component != root['endpoints']:
+            for tile in {(row//2, column//2) for row, column in component}:
+                cells = vertices_of({tile})
+                if len(cells & component) == 1 and cells <= cavity:
+                    count = len(cells & current[2])
+                    assert count in (1, 2)
+                    local_flux += 1 if count == 2 else -1
+        assert first['component_excess_twice'][index]-second['component_excess_twice'][index] == 2*local_flux
+        if not allow_open:
+            assert local_flux == first['component_excess_twice'][index] == second['component_excess_twice'][index] == 0
+        flux += local_flux
+    assert first['payment'] == 2*len(sources)+flux+second['payment']
+    assert checked['area']//2-checked['objective'] >= len(sources)+flux
     ledger = inspect(current, sources)
     return dict(source_count=len(sources), enclosed_combs=len(components)-len(sources),
                 shape=current[:2], physical_tiles=len(physical), shifted_squares=len(shifted),
-                removed_selected=len(boundary & current[2]), physical=first, shifted=second,
+                removed_selected=len(boundary & current[2]), cavity_comb_flux=flux,
+                physical=first, shifted=second,
                 ledger=ledger)
 
 

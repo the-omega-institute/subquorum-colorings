@@ -72,4 +72,38 @@ theorem twofold_cavity_cover_compensation
     objective ≤ capacity := by
   omega
 
+theorem cavity_boundary_flux_partition
+    (physicalTiles shiftedSquares selected endpoints boundarySelected depth
+      originalExcessTwice shiftedExcessTwice physicalDeficit shiftedDeficit
+      enclosedSources flux : Int)
+    (hphysical : 2*physicalDeficit =
+      4*physicalTiles-2*selected-endpoints+originalExcessTwice)
+    (hshifted : 2*shiftedDeficit =
+      4*shiftedSquares-2*(selected-boundarySelected)-endpoints+shiftedExcessTwice)
+    (htiles : physicalTiles-shiftedSquares = depth+1)
+    (hboundary : boundarySelected = 2*depth)
+    (hphase : originalExcessTwice-shiftedExcessTwice = 4*enclosedSources+2*flux) :
+    physicalDeficit = 2*(enclosedSources+1)+flux+shiftedDeficit := by
+  omega
+
+theorem disjoint_cavity_boundary_compensation
+    (capacity objective sources covered donorPayment totalCavityPayment flux slack : Int)
+    (hledger : capacity-objective = -sources+donorPayment+slack)
+    (hslack : 0 ≤ slack) (hcoverage : sources ≤ covered)
+    (hlocal : 2*covered+flux ≤ totalCavityPayment)
+    (husage : totalCavityPayment ≤ donorPayment)
+    (hflux : -sources ≤ flux) :
+    objective ≤ capacity := by
+  omega
+
+theorem twofold_cavity_boundary_compensation
+    (capacity objective sources covered donorPayment totalCavityPayment flux slack : Int)
+    (hledger : capacity-objective = -sources+donorPayment+slack)
+    (hslack : 0 ≤ slack) (hcoverage : sources ≤ covered)
+    (hlocal : 2*covered+flux ≤ totalCavityPayment)
+    (husage : totalCavityPayment ≤ 2*donorPayment)
+    (hflux : -1 ≤ flux) :
+    objective ≤ capacity := by
+  omega
+
 end SubQuorum.ClosedSourceCavities
