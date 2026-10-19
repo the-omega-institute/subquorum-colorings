@@ -123,7 +123,8 @@ def inspect(current, sources, cavity):
     return dict(sources=len(sources), partial_sources=sum(record['touches'] and not record['contained']
                 for record in source_records), source_records=source_records,
                 source_phase=phase, comb_flux=flux, physical_payment=payment,
-                shifted_payment=shifted_payment, positive_donors=positive_donors,
+                shifted_payment=shifted_payment, positive_donor_count=len(positive_donors),
+                positive_donors=positive_donors if len(positive_donors) <= 16 else None,
                 half_area_deficit=deficit)
 
 
