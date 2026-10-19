@@ -32,6 +32,14 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [remote-deficit frozen obstruction](docs/REMOTE_DEFICIT_FROZEN_OBSTRUCTION.md)
+has charge one, yet every endpoint-free physical tile sharing an edge or corner
+with its receiver has deficit zero. Its only positive resource is a blank tile
+at tile distance two. The complete 28-step certificate and all eight physical
+symmetries pass independent checks. Thus even all immediate neighboring tiles
+cannot universally supply compensation; the global bound still holds here
+with deficit one. No new Lean or blank-padding invariance is claimed for it.
+
 The [two-leg degree-three obstruction](docs/TWO_LEG_DEGREE_THREE_COVERAGE_OBSTRUCTION.md)
 refutes three-rule corner coverage even when every endpoint has occupied
 degree exactly three. A written proof covers all even bar widths at least six
