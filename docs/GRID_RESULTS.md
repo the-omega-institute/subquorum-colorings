@@ -121,6 +121,23 @@ every capacity-one fork, by a promotion or a matching flip.
 
 [Complete residual-geometry and five-sixths proof](GRID_ABSORPTION_PROOF.md).
 
+**Coefficient one for square-free endpoint configurations.** On every
+even-by-even rectangle, if the graph induced by P=V(M) has no all-P unit
+square, then |T|+|M|<=mn/2. The initial pair need not be terminal, its
+matching can use both directions, and components need not align with tiles.
+Objective-preserving singles reach terminal straight combs. A general tile
+ownership lemma makes their endpoint-tile receivers disjoint, and the actual
+saturated-transfer ledger gives each entire comb receiver charge zero in
+every alignment. The deficit is exactly the sum of 2-t over all no-P tiles
+of the resulting pair. This removes the |M|/6 loss on that geometric class.
+
+The same bound holds when every initial component is square-free or a full
+two-row/two-column rectangle, using the prior rectangle reduction. Allowing
+L prescribed tile-aligned capped components gives |T|+|M|<=mn/2-L on the
+stated mixed class. Their negative units are counted once per whole component.
+This is a covered-class theorem, not the unrestricted grid formula.
+[Complete hypotheses, general proofs, exact deficit and verification scope](COMPONENT_RECEIVERS_AND_SQUARE_FREE_BOUND.md).
+
 **Exact even-width orientation criterion.** For an even grid width `n`, let
 `c_i` be the row load before assigning vertical matching edges and let `k_i`
 be the number of vertical matching edges between rows `i` and `i+1`. There is

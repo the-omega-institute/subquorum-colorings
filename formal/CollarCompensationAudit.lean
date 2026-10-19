@@ -9,6 +9,7 @@ import SubQuorum.SingleSquareObstacle
 import SubQuorum.LadderReduction
 import SubQuorum.CompatibleBundles
 import SubQuorum.BipartitePromotion
+import SubQuorum.ComponentReceivers
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -71,3 +72,7 @@ import SubQuorum.BipartitePromotion
 #print axioms SubQuorum.BipartitePromotion.color_restriction_bundle
 #print axioms SubQuorum.BipartitePromotion.terminal_iff_all_frozen
 #print axioms SubQuorum.BipartitePromotion.two_step_frozen_chain
+#print axioms SubQuorum.ComponentReceivers.diagonal_endpoint_bridge
+#print axioms SubQuorum.ComponentReceivers.diagonal_endpoint_owner
+#print axioms SubQuorum.ComponentReceivers.aligned_comb_receiver
+#print axioms SubQuorum.ComponentReceivers.misaligned_comb_receiver
