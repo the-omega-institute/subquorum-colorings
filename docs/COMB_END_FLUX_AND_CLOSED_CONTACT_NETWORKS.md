@@ -220,7 +220,11 @@ the initial-pair theorem remain written proofs. The receipt is
 The task-owned reproducible cache was removed after preserving the receipt
 and confirming no actual lean/lake executable was active.
 
-The previous transverse-comb ACCEPT and the pending exact-debt review concern
+The previous transverse-comb ACCEPT and the completed exact-debt ACCEPT concern
 earlier input. This closed-network extension requires its own review; no
 previous verdict is inherited. The explicit all-k construction in Section 5
-was added after that new review request and is outside its submitted input.
+was added after the first new review request. That first attempt ended
+`no_assistant_output` without a mathematical answer; its failed response is
+archived. Recovery task 654715c2-648a-4321-a5fe-e110049c355c uses the completed
+exact-debt conversation and includes all of Sections 1-5, including the all-k
+construction. Retain that original recovery handle; no verdict is inferred.

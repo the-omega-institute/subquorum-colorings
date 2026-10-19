@@ -82,6 +82,8 @@ one sparse end, even across several mouths. Hence the broader covered class
 satisfies |T|+|M|<=mn/2-B+S_total, giving coefficient one when S_total<=B.
 There is a general written proof and 696 optimized controls; this later
 extension is outside the previous ACCEPT and has no new Lean claim.
+Its own exact-debt written-proof review subsequently completed ACCEPT;
+the later closed-network theorem below is reviewed separately.
 
 The [two-tiling end-flux theorem](docs/COMB_END_FLUX_AND_CLOSED_CONTACT_NETWORKS.md)
 identifies the saturated-end payment hidden in that slack: D=2-S+U+D',

@@ -28,6 +28,11 @@ are also fully frozen. Thus all these endpoints, matching edges and supports
 persist through objective-preserving normalization; other P can only disappear.
 Every mouth still contains endpoints of prescribed perpendicular combs only.
 
+In fact all mouth labels are invariant: a promotion can select only an
+endpoint, every endpoint initially in a mouth is frozen, and original T and
+blank sites otherwise persist. Thus all local counts below are determined by
+the initial pair, independently of the terminal normalization sequence.
+
 Each whole comb receiver has original charge zero. No mouth contains P of
 another prescribed long source. The earlier parallel/perpendicular separator
 argument therefore still makes the physical mouths pairwise disjoint, even
@@ -112,6 +117,13 @@ accounted exactly. The coefficient one is necessary: the earlier one-end
 fixture has S=1,A=0,D_F=1, and the two-ending-comb fixture has S=2,A=0,D_F=0.
 These are physical witnesses to the sharp coefficient, not an enumeration
 argument for the all-length identity.
+
+The one-end witness also follows directly from the explicit two-ending-comb
+configuration: remove the column-7 comb and its selected supports outside the
+mouth, but retain its two selected mouth vertices. Occupied-vertex deletion
+preserves feasibility. The long source and column-4 comb retain their supports
+and remain frozen. There are still eight T in the width-twelve mouth, no full
+P column and one sparse end, giving A=12-4-8=0 and D=1.
 
 All assigned donors remain actual no-P tiles, whose original charge is t-2.
 No original partial comb charge is used in (2), and no matching transfer is
@@ -203,6 +215,13 @@ These are controls of the written general proof, not its replacement. No new
 Lean statement is asserted for (2)-(5); the previous 81-declaration scoped
 audit remains separate. The completed transverse-comb ACCEPT covers the
 previous theorem and ending-contact obstacle, not this later extension.
+
+Independent written-proof review 682064c4-d924-4324-b918-709bbdad3033
+completed ACCEPT at 09:52:51 UTC on 19 October 2026, observed gpt_6/pro.
+It covers this exact-debt identity, ownership, normalization and initial-pair
+theorem under the stated dependencies. Its exact response and assessment
+are archived. It does not review code execution, full Lean, priority or the
+subsequent two-tiling/closed-network extension.
 
 The subsequent `COMB_END_FLUX_AND_CLOSED_CONTACT_NETWORKS.md` proves the
 stronger identity A=U+D' by swapping end types in the shifted tiling. It
