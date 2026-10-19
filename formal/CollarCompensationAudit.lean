@@ -10,6 +10,8 @@ import SubQuorum.LadderReduction
 import SubQuorum.CompatibleBundles
 import SubQuorum.BipartitePromotion
 import SubQuorum.ComponentReceivers
+import SubQuorum.ThinComponents
+import SubQuorum.BentReceiverCompensation
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -76,3 +78,11 @@ import SubQuorum.ComponentReceivers
 #print axioms SubQuorum.ComponentReceivers.diagonal_endpoint_owner
 #print axioms SubQuorum.ComponentReceivers.aligned_comb_receiver
 #print axioms SubQuorum.ComponentReceivers.misaligned_comb_receiver
+#print axioms SubQuorum.ThinComponents.attached_column_extends
+#print axioms SubQuorum.ThinComponents.single_chamber_exit_count
+#print axioms SubQuorum.ThinComponents.receiver_budget
+#print axioms SubQuorum.ThinComponents.two_step_receiver_invariant
+#print axioms SubQuorum.BentReceiverCompensation.canonical_tile_sparse
+#print axioms SubQuorum.BentReceiverCompensation.sparse_tile_compensation
+#print axioms SubQuorum.BentReceiverCompensation.canonical_far_not_endpoint
+#print axioms SubQuorum.BentReceiverCompensation.shared_donor_orientation

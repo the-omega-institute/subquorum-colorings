@@ -43,7 +43,7 @@ hypercube solution to these geometric and structural questions.
 | Known grid dissociation number beta_2=F | Every positive width and length | New row-profile proof with equality information; exact finite checks |
 | Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
-| Mixed matching bound with coefficient 1 | Even-by-even grids with at most one P-square per endpoint component; also the stated pure-rectangle and capped-component class | General receiver-partition and arm-extension proofs; all alignments checked; four scoped Lean statements for the square-free core |
+| Mixed matching bound with coefficient 1 | Even-by-even grids whose endpoint components are thin, have at most one P-square, or are prescribed positive bent caps with their forced matching/supports | General thin classification, all-alignment receiver budgets and injective no-P donor compensation; scoped Lean interfaces and exact controls |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;
@@ -51,6 +51,20 @@ beta_2 is not defined in the archived Lean module. The subsequent structural
 and full-grid results are not yet Lean formalized. The conditional band and
 endpoint compensation lemmas below now have Lean proofs; the unrestricted
 mixed-direction grid coloring formula remains open.
+
+The [thin-component theorem](docs/THIN_COMPONENT_CLASSIFICATION_AND_BOUND.md)
+classifies every bundle-terminal component contained in two rows or columns,
+including arbitrary odd tails and optional degree-four supports. Whole receivers
+are nonpositive in every alignment. The
+[bent-source compensation theorem](docs/POSITIVE_BENT_RECEIVERS_AND_SPARSE_COMPENSATION.md)
+then handles an all-width three-row family whose complete receiver has charge
+positive one: terminality makes its canonical donor a no-P tile, and eight
+explicit relative-orientation witnesses prove donor injectivity. The exact
+aggregate formula spends each tile once; width-four bent sources supply one
+strict deficit unit. Both are written general proofs with precisely scoped
+Lean support. Their independent reviews are tracked separately from the
+previous accepted one-square theorem. Arbitrary multi-square source coverage
+and the universal coefficient-one bound remain open.
 
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees

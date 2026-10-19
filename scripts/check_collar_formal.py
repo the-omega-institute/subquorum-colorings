@@ -45,6 +45,8 @@ def main():
                    'SubQuorum/LadderReduction.lean', 'SubQuorum/CompatibleBundles.lean',
                    'SubQuorum/BipartitePromotion.lean',
                    'SubQuorum/ComponentReceivers.lean',
+                   'SubQuorum/ThinComponents.lean',
+                   'SubQuorum/BentReceiverCompensation.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -61,7 +63,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 65
+    assert len(declarations) == 73
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -73,7 +75,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Earlier 61 tile/count, frozen, single-square, finite8x8, guard/mixed-color, compatible-bundle and graph-level complete-freezing declarations. Four new statements: physical integer-coordinate diagonal endpoint bridge, diagonal owner equality under adjacency ownership, and two conditional comb count identities. Full tile-component partition, component-to-ledger saturated transfer, all-length comb geometry, normalization and the covered-class coefficient-one theorem remain written proofs; no full geometric Lean verification is claimed.')
+                  scope='Earlier 65 scoped declarations, four thin-component statements and four bent-compensation statements. New physical results: attached-column extension, canonical donor sparsity and terminal exclusion of its only possible external endpoint. A fixed eight-orientation footprint lemma checks six overlap cases; the two half-turn infeasibilities retain written proofs. Conditional counts cover chamber exits, optional-support budget, two-step ledger invariance and sparse payment. Full shape classification, matching/chamber adapters, odd-path parity, support cardinalities, all-length counts, bent freezing/charge, component ownership/injectivity adapters and both global covered-class theorems remain written; universal source coverage remains open. No full geometric Lean verification is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)
