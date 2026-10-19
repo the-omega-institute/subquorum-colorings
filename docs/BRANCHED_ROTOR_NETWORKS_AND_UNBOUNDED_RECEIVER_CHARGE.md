@@ -164,14 +164,23 @@ w>=6, by these affine maps on (row,column), in the order north/east/south/west:
 Keep the union matching and remove supports occupied by another module's
 endpoints. Each attached module has charge +1; the rotor has charge -2.
 There are exactly four intratile splices. One splice and its retained support
-pattern can be read off at the rotor port (1,2) and the attached port (0,2);
-the other three are its quarter-turn images about (2.5,2.5). Away from the
-rotor, the four two-row bars lie on four sides of the central gap, and their
-legs run toward the rotor along the two ends of their bar. The nonincident
-arms have no endpoint contacts or coincident/adjacent surviving supports;
-their separation is smallest at w=6, and increasing w extends the bars away
-from one another. Equivalently these facts follow by substituting the four
-displayed maps into the bar/leg coordinate formulas in two_leg_case.
+pattern can be read off at the rotor port (1,2) and the attached port (0,2).
+The mutually consumed supports are precisely those two sites; the retained
+perpendicular supports are (1,1) and (0,3). The other three junctions are
+their quarter-turn images about (2.5,2.5).
+
+For completeness, no arm-arm occupied contact is hidden in this description.
+The north arm has occupied columns at most three; its sites in column three
+are selected, at rows -4,-2,0. The east arm has occupied columns at least four;
+its column-four sites are selected, at rows 3-w and two. A contact between
+these arms would require equality of one of those row coordinates. But 3-w
+is odd for even w, and row two is not -4,-2 or zero. Thus even their selected
+supports are neither coincident nor adjacent. North and south occupied row
+supports end at one and start at four, respectively, so they also cannot
+interact. Quarter-turn symmetry covers all remaining arm pairs. Substitution
+of the displayed maps into the rotor's sixteen occupied sites leaves exactly
+the four listed rotor-arm splices and their mutually replaced supports.
+This proves physical admissibility for every even w>=6.
 
 The star has
 

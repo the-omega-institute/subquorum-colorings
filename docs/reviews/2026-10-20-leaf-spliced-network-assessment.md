@@ -7,8 +7,8 @@ The authoritative same-task terminal response is archived in
 output/leaf-spliced-network-review.json.
 
 The original streaming execution 81548 ended with exit one: unexpected EOF
-while reading the connection. Its original SSE file contains keepalives but
-no answer text and no DONE event; it is preserved unchanged. Accordingly
+while reading the connection. Its original SSE file is empty, containing
+no answer text or DONE event; it is preserved unchanged. Accordingly
 there is no claim of stream/terminal equality. The completed answer was
 retrieved from the existing task; no duplicate question was submitted.
 
