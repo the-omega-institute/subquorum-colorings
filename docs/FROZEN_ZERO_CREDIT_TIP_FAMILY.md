@@ -52,6 +52,14 @@ The exact cardinalities are
     |P| = 2|M|,
     |T| = a+b+h+2k+1.                           (3)
 
+Here B_minus counts charge-minus-one U modules, R_minus counts negative
+rotors, and K_minus_one counts irregular events sourced from the former.
+There are no rotors in this family. Write sigma=mn/2-|T|-|M| and let D
+be the sum of 2 minus the selection count over endpoint-free physical
+tiles. Every selection retains its endpoint anchor, so final feasibility
+excludes adjacent selections and D>=0. Splitting all tiles gives the
+exact identity sigma=D-rho_final.
+
 The reference W=w=6,a=10,b=4,h=12,k=4 lies in an 18-by-16 rectangle
 with |P|=76, |M|=38, |T|=35 and actual half-area slack71.
 
@@ -150,12 +158,18 @@ Then freeze (0,W), followed by the alternating bar walk
 
 Each bar step has the two kept adjacent mates created by the preceding
 alternating steps; the starting corner also has its exterior support.
+More explicitly, writing t_c=(0,c), b_c=(1,c), its order is
+t_(2j), b_(2j-1) for j=W/2,...,1. After the first corner, t_(2j)
+uses kept t_(2j+1), b_(2j), and b_(2j-1) uses kept t_(2j-1), b_(2j).
 Now freeze the odd long-leg endpoints (3,1),(5,1),...,(a-1,1), using
 their inward support and the kept even predecessor. This freezes one
 endpoint of every matching edge along that long leg, so all their
 even mates, including the long tip, are kept. After the long tip can
 itself be frozen, the even long-leg return wave reaches the bar; the
 reverse alternating bar walk and the odd short-leg wave complete the U.
+The reverse bar order is t_(2j-1), b_(2j) for j=1,...,W/2.
+The initial t_1 uses its exterior support and kept b_1; later top steps
+use t_(2j-2), b_(2j-1), and bottom steps use t_(2j), b_(2j-1).
 This description works at minimum dimensions as well as larger ones.
 
 Apply its first half to H_1 and H_2. Their short-tip supports, short-leg
@@ -175,6 +189,10 @@ only q's inward support was consumed. In particular (-2,0) is kept,
 and p is frozen. Since z is now kept, q has the two kept neighbors
 (-2,0),z and freezes. Consequently p is kept as q's mate. The site q
 was already kept as p's mate.
+
+In this A schedule the odd long-leg wave stops at original row a-3,
+before q, until z is independently kept by H_2's first half. Since
+a>=w+4>=10, that predecessor step exists at every allowed parameter.
 
 Freeze H_2's tip z using the kept sites q and v. Freeze H_1's tip v
 using the kept sites p and z. These steps do not require the opposite
@@ -238,6 +256,15 @@ the stronger full-freezing claim and parameter extension were checked
 here. No finite control, reviewer verdict or kernel receipt substitutes
 for the general geometric proof. General grid decomposition and triple
 equality remain open.
+
+The separate review of THIS parameter-family and freezing proof has now
+completed ACCEPT, task b4761670-eb2a-42aa-af31-9d7b8a1c271e, observed
+gpt_6/pro. Its original stream ended with DONE and exactly matches the
+17213-character terminal response. The reviewer independently reconstructs
+the support lists, receiver counts, full forcing schedule and separated-copy
+argument. The auxiliary notation and bar-walk clarifications above implement
+its presentation suggestions. This verdict does not cover the later
+all-phase joint-slot extension; execution receipts remain separate evidence.
 
 Next study joint allocation of S, remaining square credit and marked-side
 loss, rather than attempting K_irregular<=C. A valid transport mechanism

@@ -679,3 +679,17 @@ freezing proof; 144 parameter controls, eight symmetry images and six
 copy controls pass. Twenty-three Lean declarations verify the reference
 coordinates, its complete 76-step freezing certificate and separate
 scalar consequences. General joint allocation of S+C-G remains open.
+
+The [all-phase joint-slot theorem](docs/ALL_PHASE_JOINT_COMPENSATION_SLOTS.md)
+now covers both row-shifted U phases as well, with arbitrary rotor phases.
+Its complete boundary classification assigns marked donor sides and
+irregular events to distinct actual slots, including an inactive-event
+rule at their shared upper-corner candidates. It proves
+K_irregular+G<=2S+2B01+2B10, hence the explicit sufficient condition
+N+C>=S+2B01+2B10 for the coefficient-one bound. The condition depends on
+source widths but not leg heights. All 896 boundary images, 512 complete
+physical images and 25 scoped Lean declarations/audits pass. An existing
+fully frozen opposed band explains why the old minus-one-only gate
+classification cannot be extended unchanged. Universal residual payment
+remains open. The preceding zero-credit family's separate review has
+completed ACCEPT; it does not cover this later all-phase theorem.

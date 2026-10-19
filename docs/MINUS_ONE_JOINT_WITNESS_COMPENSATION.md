@@ -290,4 +290,12 @@ marked-side loss G without duplicate use. This new family and its uniform
 freezing proof are outside the preceding ACCEPT's input.
 Finite pair searches cannot classify pairs inside larger feasible unions.
 
+The later [all-phase joint-slot theorem](ALL_PHASE_JOINT_COMPENSATION_SLOTS.md)
+extends this theorem to row-shifted sources, with
+K_irregular+G<=2S+2B01+2B10. Its marked-side witnesses can be row-shifted
+terminal tips, and its phase-(1,1) upper corners are shared candidates
+whose actual irregular event is excluded by a blank gate. Thus the
+minus-one-only gate classification above retains its original hypotheses;
+it is not asserted for the larger source class.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
