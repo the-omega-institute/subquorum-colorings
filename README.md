@@ -32,6 +32,14 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [frozen corner-coverage obstruction and repair](docs/CORNER_FREE_FROZEN_RECEIVER_AND_ENDPOINT_GUARDS.md)
+has occupied degree exactly three, charge one, and no capped or selected-guarded
+donor in any direction. An explicit20-step freezing proof excludes every mixed
+bundle. A new same-component two-endpoint guard pays the missing unit; its
+local lemma and compatibility with both old ownership rules extend the weighted
+criterion without donor reuse. The finite graph/charge proof and local guard
+lemma pass35new local Lean declarations. General coverage remains open.
+
 The [charge-two frozen receiver](docs/CHARGE_TWO_FROZEN_RECEIVER.md) refutes
 the proposed universal receiver ceiling rho_H<=1. Its complete 14-by-10
 physical configuration has 38 endpoints; an explicit acyclic certificate

@@ -213,7 +213,10 @@ distinct witness tiles per positive component, since every such tile has
 deficit at least one. The example satisfies this with room to spare.
 This establishes a usable criterion and compensation for the obstruction,
 not its universal coverage. Whether every frozen positive component
-admits sufficient owned capacity remains open.
+admits sufficient owned capacity from the two old corner rules has since been
+refuted, even in occupied degree three. See the
+[corner-coverage obstruction and compatible endpoint guard](CORNER_FREE_FROZEN_RECEIVER_AND_ENDPOINT_GUARDS.md).
+Coverage by the enlarged three-rule collection remains open.
 
 ## 5. Verification and next research
 

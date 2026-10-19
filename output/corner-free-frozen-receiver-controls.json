@@ -1,0 +1,64 @@
+{
+  "shape": [
+    8,
+    8
+  ],
+  "objective": 22,
+  "endpoints": 20,
+  "selected": 12,
+  "matching_edges": 10,
+  "receiver_tiles": 9,
+  "selected_in_receiver": 9,
+  "blanks_in_receiver": 7,
+  "original_corrected_charge_twice": 2,
+  "occupied_degree": 3,
+  "freezing_layer_sizes": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "original_owned_capacity": 0,
+  "extended_donors": [
+    {
+      "tile": [
+        2,
+        1
+      ],
+      "deficit": 1,
+      "owner": 0,
+      "capped": false,
+      "guarded": false,
+      "endpoint_guarded": true
+    }
+  ],
+  "no_endpoint_deficit": 11,
+  "whole_grid_deficit": 10,
+  "receiver_inventory": [
+    {
+      "endpoints": 1,
+      "selected": 2,
+      "tiles": 2
+    },
+    {
+      "endpoints": 2,
+      "selected": 1,
+      "tiles": 5
+    },
+    {
+      "endpoints": 4,
+      "selected": 0,
+      "tiles": 2
+    }
+  ],
+  "status": "PASS",
+  "physical_symmetries": 8,
+  "padded_symmetries": 8,
+  "scope": "Explicit frozen occupied-degree-three counterexample to universal coverage by capped and selected-guarded corners. A same-component two-endpoint guard supplies a distinct unit here; universal extended coverage and the global grid target are not proved."
+}
