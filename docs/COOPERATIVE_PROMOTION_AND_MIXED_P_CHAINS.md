@@ -8,7 +8,8 @@ unrestricted grid inequality or a new universal coefficient in the 5/6 bound.
 
 ## 1. Objective-preserving promotions on any finite graph
 
-A feasible pair consists of a vertex set T and a matching M disjoint from T,
+A finite simple undirected graph has a feasible pair consisting of a vertex
+set T and a matching M disjoint from T,
 such that every vertex of T has at most one neighbor in the occupied set
 A=T union V(M). Its objective is |T|+|M|. Write deg_A for occupied degree.
 
@@ -67,7 +68,7 @@ Consequently an objective maximizer chosen to maximize |T| already has
 this stronger condition. A terminal point for single moves alone need
 not have it. No confluence or order independence is asserted. Recomputing
 degrees and running a linear directed-cycle search after each move gives
-O(|M| (|V|+|E|)) time and O(|V|+|E|) storage. On a bounded-degree grid this
+O((|M|+1) (|V|+|E|)) time and O(|V|+|E|) storage. On a bounded-degree grid this
 is quadratic time. The supplied checker independently validates every
 resulting feasible pair, rather than relying on a cycle-search assertion.
 
@@ -124,8 +125,10 @@ configuration ledger 2rho(R)=-D+k+sigma gives
 For a homogeneous chain this is rho(R)<=1-v/2+(sigma-eta)/2.
 For instance, v>=4 and sigma<=eta supply at least one unit of negative
 charge, enough for tile-disjoint sources with total original charge at
-most one. If disjoint cores of this kind cover every positive source and
-the remainder has nonpositive charge, the usual additive ledger proves
+most one. Each receiver must be tile-disjoint from its assigned sources,
+and the combined receiver-plus-source cores must be pairwise tile-disjoint.
+If those cores cover every positive source and all remaining tiles have
+nonpositive total charge, the usual additive ledger proves
 coefficient one for that class. Tile disjointness, the source allowance
 and the boundary imbalance are essential hypotheses, not conclusions
 of the normalization theorem. No resource is reused: (2) sums actual
@@ -187,14 +190,20 @@ Include the four central tiles of every block and, between consecutive
 blocks, add tile (4i+3,1) and tile (4i+4,1). This tile-connected receiver
 R_r has 6r-2 tiles. It is not claimed residual-connected. Each first
 bridge tile has t=1,b=1 and charge zero; each second bridge tile has
-t=1,b=2 and charge -1/2. Its P is matched inside the two-tile bridge.
-Thus the bridge pairs introduce no saturated attachments. Directly,
+t=1,b=2 and charge -1/2. Every matching endpoint in these tiles has its mate
+in a deficient tile, so there are no saturated attachments. In particular,
+the second bridge tile's P is matched outside the receiver. The first
+bridge tile internalizes one former boundary crossing and introduces one
+new crossing; the second introduces another. The net increase in j per
+bridge pair is therefore one. Directly,
 
     D=r-1, k=Q=2r, sigma=eta=0,
     j=2r+(r-1)=3r-1, rho(R_r)=(r+1)/2.
 
-The added crossing in each bridge pair is the edge from the second
-bridge tile's P to the omitted tile in column zero. Each second bridge
+The second bridge tile's crossing goes to the omitted tile in column zero.
+The other new crossing goes from the first bridge tile's upper-left P to
+its omitted neighbor in column zero; its upper-right P is matched to the
+included central tile above it. Each second bridge
 has one free blank, adjacent to exactly one neighboring owner. Hence H
 has 2r isolated owners, p=r-1 private blanks, d=u=0. The exact witness
 ledger is again 2rho=2r-(r-1)=r+1. The remainder has charge -(r+1)/2.
@@ -210,8 +219,9 @@ be promoted singly, removing (2,0). In the bottom half, simultaneously
 promote (5,2),(6,1) and remove (5,1),(6,2); then promote (6,3), removing
 (5,3). These are the 180-degree reflected moves.
 
-All moves occur strictly inside a block, so perform them independently
-in every block. The final pair has no matching edges and 16r selected
+No move crosses a block interface, and the facing boundary rows stay
+unchanged. Perform this displayed sequence independently in every block.
+The final pair has no matching edges and 16r selected
 vertices, retains the original 10r selected vertices, and preserves the
 objective. This proves for every r that the displayed obstacle is
 eliminated by the stronger normalization. It does not prove that every
@@ -237,13 +247,19 @@ charge bound by integer arithmetic. The bridge from actual occupied degrees
 to the local predicates, the disjoint-link geometry, the graph normalization
 theorem and the all-r family remain written proofs. The combined audit now
 contains 22 declarations; it does not claim full formalization of this note.
-External review and priority for this new note are pending.
+Independent review0204a4ca completed REVISE: the all-size formulas and
+main arguments survive, while the bridge-mate description and crossing
+explanation above are corrected. Internal-owner conventions, source
+packing, simple-graph conventions and the empty-matching runtime are
+made explicit. The exact response and independent assessment are archived.
+No ACCEPT is claimed for this revision; external priority remains open.
 
-The next precise question is whether acyclicity of both degree-three
-dependency digraphs forces enough private/exterior compensation at
-mixed P-state transitions, or whether a further physical obstruction
-survives. Degree-four endpoints and interactions between selected-corner
-orientations remain outside the homogeneous run bound. General grid
-equality and a universal improvement of 5/6 remain open.
+The follow-up PROMOTION_CORES_AND_ANCHORED_OBSTRUCTIONS.md now gives a
+physical obstruction surviving even every oriented endpoint-promotion
+bundle. It also gives an exact fixed-side threshold-core algorithm that
+handles degree-four endpoints. The remaining task is an actual exterior
+compensation or more general selected-vertex exchange argument; degree-four
+and mixed selected-corner geometry remain outside the homogeneous run
+bound. General grid equality and a universal improvement of 5/6 remain open.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

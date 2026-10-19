@@ -11,7 +11,13 @@ resources are parallel pairs.
 
 Keep the feasible pair, tile region, marked caps, reserved internal blanks,
 free deficient blanks F and saturated attachment owners A of the preceding
-note. Tile coordinates are integers; a tile (r,c) has corner coordinates
+note. Specifically, A contains only saturated tiles whose P is matched to
+a deficient tile inside R, so |A|=k, not Q=k+eta. Reserve exactly one
+internal blank for each deficient T and two additional disjoint blanks
+for every marked cap. F contains every remaining deficient blank,
+including those with no owner. If instead all Q owners were used, the
+charge formula would require an additional -eta term. Tile coordinates
+are integers; a tile (r,c) has corner coordinates
 (2r,2c),(2r,2c+1),(2r+1,2c),(2r+1,2c+1), in TL,TR,BL,BR order.
 
 Let a free blank z have two distinct owners S and S'. Both selected

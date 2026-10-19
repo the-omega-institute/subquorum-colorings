@@ -38,7 +38,8 @@ def main():
                    'SubQuorum/AttachmentCollarCompensation.lean',
                    'SubQuorum/BlankWitnessCompensation.lean',
                    'SubQuorum/DiagonalWitnessChains.lean',
-                   'SubQuorum/MixedPChainCompensation.lean', 'CollarCompensationAudit.lean'):
+                   'SubQuorum/MixedPChainCompensation.lean',
+                   'SubQuorum/FrozenPromotion.lean', 'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
             command += ['-o', str((build/module).with_suffix('.olean'))]
@@ -54,7 +55,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 22
+    assert len(declarations) == 23
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -66,7 +67,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Finite pressured/unpressured/mixed-P gap tile facts, arbitrary-list surplus, integer-coordinate shared-corner displacement and orientation, conditional collar/shared-blank/diagonal-chain/transition counts and parity; full graph adapters, normalization, path classification and constructive allocation have written proofs.')
+                  scope='General inductive frozen-endpoint exclusion logic; finite pressured/unpressured/mixed-P gap tile facts, arbitrary-list surplus, integer-coordinate shared-corner displacement and orientation, conditional collar/shared-blank/diagonal-chain/transition counts and parity; physical graph adapters, normalization algorithms, path classification and constructive allocation have written proofs.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

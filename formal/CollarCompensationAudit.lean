@@ -3,6 +3,7 @@ import SubQuorum.AttachmentCollarCompensation
 import SubQuorum.BlankWitnessCompensation
 import SubQuorum.DiagonalWitnessChains
 import SubQuorum.MixedPChainCompensation
+import SubQuorum.FrozenPromotion
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -26,3 +27,4 @@ import SubQuorum.MixedPChainCompensation
 #print axioms SubQuorum.MixedPChainCompensation.blank_exterior_gap
 #print axioms SubQuorum.MixedPChainCompensation.occupied_exterior_gap
 #print axioms SubQuorum.MixedPChainCompensation.transition_charge
+#print axioms SubQuorum.FrozenPromotion.frozen_exclusion
