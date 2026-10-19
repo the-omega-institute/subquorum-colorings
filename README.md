@@ -135,10 +135,21 @@ source orientations are therefore unrestricted. Actual physical donor
 incidence controls overlap between cavities; shifted squares are counting
 devices only. The new extension has 69 physical controls, eight symmetry
 images and 117 scoped local Lean declarations in the cumulative audit.
-Full geometry remains written; partial foreign sources, adequate cavity
-coverage and the universal grid theorem remain open. The earlier cavity
+Full geometry remains written; adequate cavity coverage and the universal
+grid theorem remain open. The earlier cavity
 review returned REVISE; its wording and proof-detail corrections are
 [recorded explicitly](docs/reviews/2026-10-19-closed-cavity-assessment.md).
+
+That repaired complete-source theorem has now received
+[independent ACCEPT](docs/reviews/2026-10-19-mixed-cavity-assessment.md).
+The later [open-source cavity extension](docs/OPEN_SOURCE_CAVITY_COMPENSATION.md)
+also permits prescribed sources to escape the cavity: all their raw phase
+contributions are nonnegative, with parallel contacts counted by actual
+tip membership. A sharp all-a family has a partial sources in one cavity
+but physical deficit exactly two. It disproves crediting two units per
+touching source, with unbounded overclaim, while staying inside the proved
+source-only global class. The new extension has separate controls and
+review; neither ACCEPT nor a universal grid conclusion is inherited.
 
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees

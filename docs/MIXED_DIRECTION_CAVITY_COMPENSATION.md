@@ -214,3 +214,9 @@ The result resolves the fully contained perpendicular-source obstruction
 left by the earlier cavity notes. Partial foreign sources, uncontrolled
 signed comb exits, insufficient unique donor capacity, arbitrary positive
 bent components and the unrestricted grid/triple equality remain open.
+
+The subsequent `OPEN_SOURCE_CAVITY_COMPENSATION.md` removes the partial
+contact restriction for prescribed long sources by aggregating their
+nonnegative row-band phases. It also proves that two-unit credit for
+each merely touching source is false with unbounded overclaim. General
+positive bent components and sufficient global capacity remain open.

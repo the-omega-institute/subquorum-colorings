@@ -21,6 +21,7 @@ import SubQuorum.CapacityAwareStrips
 import SubQuorum.RemoteCombRungs
 import SubQuorum.ClosedSourceCavities
 import SubQuorum.MixedCavitySources
+import SubQuorum.OpenSourceCavities
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -139,3 +140,6 @@ import SubQuorum.MixedCavitySources
 #print axioms SubQuorum.MixedCavitySources.flank_pair_sum_bound
 #print axioms SubQuorum.MixedCavitySources.perpendicular_source_phase_bound
 #print axioms SubQuorum.MixedCavitySources.mixed_cavity_partition
+#print axioms SubQuorum.OpenSourceCavities.partial_band_sum_nonnegative
+#print axioms SubQuorum.OpenSourceCavities.open_source_cavity_partition
+#print axioms SubQuorum.OpenSourceCavities.twofold_open_source_compensation
