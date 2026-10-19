@@ -203,3 +203,8 @@ These are controls of the written general proof, not its replacement. No new
 Lean statement is asserted for (2)-(5); the previous 81-declaration scoped
 audit remains separate. The completed transverse-comb ACCEPT covers the
 previous theorem and ending-contact obstacle, not this later extension.
+
+The subsequent `COMB_END_FLUX_AND_CLOSED_CONTACT_NETWORKS.md` proves the
+stronger identity A=U+D' by swapping end types in the shifted tiling. It
+cancels internal comb connections and replaces the coarse S_total criterion
+by a boundary count. Its proof and verification scope are recorded separately.

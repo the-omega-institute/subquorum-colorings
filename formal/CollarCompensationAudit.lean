@@ -13,7 +13,7 @@ import SubQuorum.ComponentReceivers
 import SubQuorum.ThinComponents
 import SubQuorum.BentReceiverCompensation
 import SubQuorum.LongBentTerminalStrips
-import SubQuorum.TransverseCombMouths
+import SubQuorum.CombEndFlux
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -96,3 +96,7 @@ import SubQuorum.TransverseCombMouths
 #print axioms SubQuorum.TransverseCombMouths.even_arm_frozen
 #print axioms SubQuorum.TransverseCombMouths.transverse_square_capacity
 #print axioms SubQuorum.TransverseCombMouths.neutral_crossing_removal
+#print axioms SubQuorum.CombEndFlux.saturated_end_shifted_count
+#print axioms SubQuorum.CombEndFlux.two_tiling_flux
+#print axioms SubQuorum.CombEndFlux.end_contact_conservation
+#print axioms SubQuorum.CombEndFlux.boundary_flux_bound

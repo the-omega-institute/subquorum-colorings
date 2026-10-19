@@ -83,6 +83,17 @@ satisfies |T|+|M|<=mn/2-B+S_total, giving coefficient one when S_total<=B.
 There is a general written proof and 696 optimized controls; this later
 extension is outside the previous ACCEPT and has no new Lean claim.
 
+The [two-tiling end-flux theorem](docs/COMB_END_FLUX_AND_CLOSED_CONTACT_NETWORKS.md)
+identifies the saturated-end payment hidden in that slack: D=2-S+U+D',
+where D'>=0 is an auxiliary shifted no-P count. Internal complete-comb
+connections cancel, leaving only unmatched sparse/saturated ends O,J on the
+boundary of the mouth collection. The covered initial class satisfies
+|T|+|M|<=mn/2-B+O-J; if every sparse contact has its opposite saturated end
+in a mouth, the strict mn/2-B bound holds regardless of the number of internal
+connections. General proofs, 696 contact/138 bridge controls and 85 scoped
+local Lean declarations are available; unmatched exterior compensation and
+the universal grid bound remain open.
+
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees
 under explicit occupied-face and blank-cap assumptions. Each distinct leaf
