@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership', 'port-return', 'block-ledger', 'closed-high-cycle'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership', 'port-return', 'block-ledger', 'closed-high-cycle', 'c4-representatives'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -46,7 +46,8 @@ def main():
                     'port-ownership': 'build/port-clause-ownership-formal',
                     'port-return': 'build/port-return-formal',
                     'block-ledger': 'build/heawood-block-ledger-formal',
-                    'closed-high-cycle': 'build/closed-high-cycle-formal'}[arguments.audit]
+                    'closed-high-cycle': 'build/closed-high-cycle-formal',
+                    'c4-representatives': 'build/c4-representatives-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -91,6 +92,9 @@ def main():
         modules += ('StarForming/DissociationCover.lean', 'StarForming/LongCoreWord.lean',
                     'StarForming/LongCoreUpper.lean', 'StarForming/ClosedHighCycle.lean',
                     'StarFormingClosedHighCycleAudit.lean')
+    elif arguments.audit == 'c4-representatives':
+        modules = ('StarForming/C4FreeRepresentatives.lean',
+                   'SubquorumC4FreeRepresentativesAudit.lean')
     else:
         modules += ('StarForming/PrivateClauses.lean', 'StarFormingPrivateClausesAudit.lean')
     for module in modules:
@@ -112,7 +116,8 @@ def main():
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
                 'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2,
-                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4, 'closed-high-cycle': 11}
+                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4, 'closed-high-cycle': 11,
+                'c4-representatives': 4}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -260,6 +265,15 @@ def main():
                             'extraction, odd-hub reflection, Heawood saturation, arbitrary-r '
                             'construction, attainment and connectivity retain written proofs; '
                             'the full graph theorem is not claimed Lean-formalized.')
+    if arguments.audit == 'c4-representatives':
+        receipt['scope'] = ('One graph-level theorem: an unordered pair has at most one '
+                            'common-neighbor owner under the explicit no-four-cycle '
+                            'hypothesis and four-vertex distinctness premises. Three '
+                            'conditional integer-count theorems prove the packing threshold '
+                            'and exclude positive excess below it. Finite cardinal pair '
+                            'summation, representative reduction, projective-plane '
+                            'instantiation and full parameter equalities retain written '
+                            'proofs; they are not claimed fully formalized.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

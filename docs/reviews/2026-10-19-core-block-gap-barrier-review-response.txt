@@ -1,0 +1,118 @@
+ACCEPTThe architecture-barrier theorem is correct for the stated class. Both dissociation witnesses survive every permitted repetition of  $X$ -attachments, high-cycle change, hub regrouping, and  $X\!-\!X$  completion. The averaging has no double counting, the coefficient  $3/62$  is correct, and the stated equality necessities and quantitative deficits follow.I use only the stipulated cubic bipartite inequality
+$$7\mathrm{SF}_2(G)\le 3n+2\beta_2(G)$$
+as a general theorem. The established  $Z_r$  examples enter only when concluding sharpness. The ancillary minimal-forming-set claim can also be proved directly from the supplied incidence rule, as detailed below.1. Construction and color hypothesesThe core counts in the    attached note are consistent:ClassVertices of each colorTotal $H$  $3r$  $6r$  $U$  $3r$  $6r$  $X$  $3r$  $6r$  $Y$  $r$  $2r$ Thus the core has  $20r$  vertices, and
+$$n=20r+14b.$$
+Every  $h$  has two neighbors in its simple bipartite two-factor and its private neighbor  $u_h$ , giving degree three. Every  $u_h$  has its private neighbors  $h,x_h$  and one hub neighbor. Partitioning the  $3r$  vertices of each  $U$ -color into triples and assigning those triples to the  $r$  opposite-color hubs gives degree three at every  $Y$ .Each  $X$  starts with its one private  $U$ -neighbor, leaving two available incidences. There are  $2b$  block ports, so
+$$2b\le 2|X|=12r,\qquad b\le 6r.$$
+More precisely, every block supplies one port of each global color. Hence there are  $b$  attachment incidences into each  $X$ -color class, and any admissible completion has exactly  $6r-b$  edges between  $X$ -vertices.Two qualifications are correctly handled by the construction requirements:Ports sharing an  $X$  must have the same global color. In particular, the two opposite-color ports of a single block cannot share one  $X$ .Capacity alone need not guarantee a simple  $X\!-\!X$  completion. The theorem explicitly requires the completed graph to be simple, cubic, and bipartite; it makes no claim about preliminary attachment assignments that fail this requirement.No connectivity assumption is needed in the proof.2. Both dissociation witnesses are validThe eight-set incidence certificateWrite line  $7+j$  as line residue  $j\in\mathbb Z/7\mathbb Z$ . The rule says that point  $i$  meets residues  $i,i+1,i+3$ .For
+$$B_8=\{0,1,2,3,7,8,12,13\},$$
+the selected points are  $0,1,2,3$ , and the selected line residues are  $0,1,5,6$ . Direct incidence gives:Selected pointNeighbors in the full Heawood graphSelected neighbors after removing  $0\!-\!8$  $0$  $7,8,10$  $7$  $1$  $8,9,11$  $8$  $2$  $9,10,12$  $12$  $3$  $10,11,13$  $13$ There are no point–point or line–line edges. Consequently, this table exhausts every possible induced edge on  $B_8$ , and its induced graph is exactly
+$$0\!-\!7,\qquad 1\!-\!8,\qquad 2\!-\!12,\qquad 3\!-\!13.$$
+The four line endpoints are distinct, so all eight selected vertices have selected degree one. Both ports are selected.This is a complete graph certificate. No optimization or saturation lemma is required.First global witnessChoose one consistent global bipartition, called even and odd, and let
+$$D_1=U\cup H_{\mathrm{odd}}\cup X_{\mathrm{even}}
+ \cup\{\text{even-color vertices of every block}\}.$$
+The selected core edges are precisely: $h\!-\!u_h$  for the  $3r$  odd vertices  $h$ ; $u_h\!-\!x_h$  for the  $3r$  even vertices  $h$ .These  $6r$  edges are pairwise vertex-disjoint. Every  $U$ -vertex occurs in exactly one of them. No high-cycle edge has two selected endpoints, and every  $Y$ -vertex is omitted.Every remaining edge also behaves as claimed:A selected even  $X$  can attach only to an odd, omitted block port.A selected even block port can attach only to an odd, omitted  $X$ .Every  $X\!-\!X$  edge has an odd, omitted endpoint.Within each block, its seven selected vertices lie in one color class and are independent.These statements hold for each edge separately. Several attachments meeting one  $X$  therefore cause no change in the selected induced graph.Thus  $D_1$  consists of a matching on  $12r$  core vertices and  $7b$  isolated block vertices:
+$$|D_1|=12r+7b.$$
+Second global witnessNow let
+$$D_2=U\cup H_{\mathrm{odd}}\cup\bigcup_{\text{blocks}}B_8.$$
+Its core consists of  $3r$  private  $H_{\mathrm{odd}}\!-\!U$  edges and  $3r$  isolated  $U$ -vertices. All  $X$  and  $Y$  vertices are omitted. Each block contributes the explicitly verified four-edge matching.Every block attachment has an omitted  $X$ -endpoint, regardless of attachment repetition. Distinct blocks have no direct edges. Therefore
+$$|D_2|=9r+8b,$$
+and  $D_2$  is dissociating.This establishes, in each individual admissible graph,
+$$\boxed{\beta\ge \max(12r+7b,\;9r+8b).}$$
+3. Averaging and the  $3/62$  boundSet
+$$L_1=12r+7b,\qquad L_2=9r+8b.$$
+The weighted calculation is exact:
+$$\begin{aligned}
+31\beta
+&\ge 17L_1+14L_2\\
+&=330r+231b\\
+&=\frac{33}{2}(20r+14b)
+=\frac{33}{2}n.
+\end{aligned}$$
+Hence
+$$\boxed{62\beta\ge33n.}$$
+There is no double counting. The precise slack identity is
+$$31\beta-\frac{33}{2}n
+=
+17(\beta-L_1)+14(\beta-L_2).$$
+Both terms on the right are nonnegative lower-bound slacks for the same maximum  $\beta$ . No union of the two witnesses is being asserted.With  $g=\mathrm{SF}_2-\beta$ , the accepted compensation inequality gives
+$$7g\le3n-5\beta.$$
+Substituting the two witnesses separately yields
+$$\begin{aligned}
+7g
+&\le3(20r+14b)-5(12r+7b)=7b,\\
+7g
+&\le3(20r+14b)-5(9r+8b)=15r+2b.
+\end{aligned}$$
+Since  $g$  is an integer,
+$$\boxed{
+g\le\min\left\{b,\left\lfloor\frac{15r+2b}{7}\right\rfloor\right\}.
+}$$
+Alternatively, using the density inequality,
+$$7g\le3n-\frac{165n}{62}
+=\frac{21n}{62},$$
+so
+$$\boxed{62g\le3n.}$$
+Every coefficient in these deductions is correct.4. Equality necessities and quantitative deficitsSuppose  $62g=3n$ . Compensation implies
+$$\frac{21n}{62}=7g\le3n-5\beta,$$
+hence  $\beta\le33n/62$ . The density inequality gives the reverse inequality, so
+$$\beta=\frac{33n}{62}.$$
+The positive-weight slack identity then forces
+$$\beta=L_1=L_2.$$
+Therefore
+$$12r+7b=9r+8b,\qquad b=3r.$$
+Substitution gives exactly
+$$\boxed{
+b=3r,\quad n=62r,\quad
+\beta=33r,\quad g=3r,\quad \mathrm{SF}_2=36r.
+}$$
+Equality also necessarily saturates compensation:
+$$7\mathrm{SF}_2=3n+2\beta.$$
+In particular, both displayed dissociation witnesses are maximum in an equality graph.These are necessary numerical conditions. The argument does not establish that the balance  $b=3r$  alone makes every gluing extremal, and it does not classify equality graphs.A complete check of the deficit constantsAll the slack can be recorded in one identity. Define
+$$M=\max(L_1,L_2),\qquad
+e=\beta-M\ge0,\qquad
+c=3n+2\beta-7\mathrm{SF}_2\ge0,$$
+and
+$$\Delta=3n-62g.$$
+Then
+$$7\Delta=5(62\beta-33n)+62c.$$
+Since  $L_1-L_2=3r-b$ , expanding the right side gives
+$$\boxed{
+7\Delta=
+\begin{cases}
+140(3r-b)+310e+62c,&b\le3r,\\[2mm]
+170(b-3r)+310e+62c,&b\ge3r.
+\end{cases}
+}$$
+The asserted deficits follow immediately:
+$$\boxed{
+\begin{aligned}
+b\le3r&\implies 3n-62g\ge20(3r-b),\\
+b\ge3r&\implies 7(3n-62g)\ge170(b-3r).
+\end{aligned}
+}$$
+This also identifies three distinct sources of loss: an unbalanced block/core ratio, a dissociation number larger than the displayed lower bound, and slack in compensation.The “more blocks” conclusion concerns the upper bound as a function of the ratio. Writing  $t=b/r$ ,
+$$\frac gn\le
+\begin{cases}
+\dfrac{t}{20+14t},&0\le t\le3,\\[3mm]
+\dfrac{15+2t}{7(20+14t)},&3\le t\le6.
+\end{cases}$$
+The first branch increases toward  $t=3$ ; the second decreases beyond it. Their common maximum is  $3/62$ . This does not assert that the actual gap ratio of every particular gluing decreases whenever a block is added.5. The ancillary minimal-forming-set claim also holdsThe main upper bound does not need this paragraph, but its local premise can be supplied explicitly without importing the cited older Heawood proof.In the broken block, take
+$$A_8=\{1,2,3,5,7,10,12,13\}.$$
+Both ports  $0,8$  are omitted. Its induced graph is the six-cycle
+$$2-10-3-13-5-12-2$$
+together with isolated vertices  $1,7$ .The six outside vertices have these selected neighborhoods:Outside vertex  $v$  $N(v)\cap A_8$  $0$  $\{7,10\}$  $4$  $\{7,12\}$  $6$  $\{7,13\}$  $8$  $\{1,5\}$  $9$  $\{1,2\}$  $11$  $\{1,3\}$ Thus each outside vertex is the center of a two-star whose two leaves are selected.For minimality, in each row delete the selected neighbor other than  $1$  or  $7$ . The outside vertex is left with exactly one selected neighbor, which is isolated in the remaining selected graph. It consequently cannot be covered either as a center or as a leaf of an allowed two-star. These six rows certify deletion of all six cycle vertices.Deleting  $1$  or  $7$  leaves the deleted vertex itself without any selected neighbor. This handles the other two deletions. Since formation is upward closed under enlarging the selected set, failure after every single deletion proves inclusion-minimality.For the full graph, use
+$$S=H\cup U\cup\bigcup_{\text{blocks}}A_8.$$
+Its size is  $12r+8b$ . It is forming because:Every  $x_h$  belongs to the two-star on  $x_h,u_h,h$ .Every  $Y$ -vertex has three selected  $U$ -neighbors.Every outside block vertex has the two selected neighbors in the table.The claimed core deletion witnesses also work throughout the enlarged architecture:Deleting  $h$  leaves  $x_h$  with its sole selected neighbor  $u_h$ , which has become isolated.Deleting  $u_h$  leaves  $x_h$  without a selected neighbor.All port– $X$  and  $X\!-\!X$  edges have both endpoints outside this fixed  $S$ . For every  $T\subseteq S$ , a two-star having its other two vertices in  $T$  cannot use an edge with both endpoints outside  $S$ : its two selected vertices lie in  $S$ , leaving room for at most one vertex outside  $S$ . Therefore those interface edges cannot repair any block deletion failure, including a failure at a port.The high-cycle and hub changes are handled by the direct core witnesses above; the argument about edges with both endpoints outside  $S$  is needed only for the interface edges.Thus
+$$\boxed{\mathrm{SF}_2(G)\ge12r+8b}$$
+is valid for every graph in the class.This supplies one further numerical equality consequence:
+$$\boxed{
+62g=3n
+\quad\Longleftrightarrow\quad
+b=3r\ \text{and}\ \beta=33r
+}$$
+within this architecture. For the converse, these conditions give  $n=62r$ , the forming witness gives  $\mathrm{SF}_2\ge36r$ , and compensation gives  $\mathrm{SF}_2\le36r$ . This remains a numerical criterion; determining which gluings have  $\beta=33r$  is a separate question.6. Exactly which escape routes are excludedThe theorem excludes obtaining a coefficient greater than  $3/62$  by any combination of the following changes while retaining the stated hypotheses:Candidate changeWhy the two lower bounds surviveReusing  $X$ -attachment vertices within cubic capacityIn  $D_1$ , each attachment has an omitted endpoint by color; in  $D_2$ , every  $X$  is omitted.Reassigning ports among compatible  $X$ -vertices, including across blocksThe attachment argument is edgewise and requires no injectivity.Changing high-cycle lengths, using mixed even lengths, or using a single long high cycleOnly one  $H$ -color is selected in either dissociation witness.Regrouping the color-compatible  $U$ -triples at the hubsAll  $Y$ -vertices are omitted in both witnesses.Changing the permissible  $X\!-\!X$  completion $D_1$  selects only one  $X$ -color;  $D_2$  selects no  $X$ .Varying  $b$  throughout the feasible rangeThe two bounds meet at  $b=3r$ , with the stated losses away from that ratio.Changing connectivity or component arrangement while staying in the classThe proof applies without a connectivity assumption.The conclusion is specifically about improving the coefficient. It does not show that shared attachments force a strict deficit, that high-cycle or hub changes prevent equality, or that  $Z_r$  exhausts the equality cases.An effective escape must invalidate an ingredient of the argument: the vertex-count relation, one of the two dissociation lower bounds, or applicability of cubic bipartite compensation. Merely changing a construction hypothesis is not enough if the resulting graphs still satisfy
+$$n=20r+14b,\qquad
+\beta\ge12r+7b,\qquad
+\beta\ge9r+8b.$$
+Those same inequalities reproduce the barrier.7. Sharpness and presentationUnder your stipulated acceptance of the attaining  $Z_r$  family, its membership in the class and attainment of the displayed values establish that  $3/62$  is optimal in this enlarged architecture. None of that example’s properties is needed for the upper-bound proof.I find no concrete gap or counterexample to the theorem. Two presentation improvements would make the note more precise:Include the explicit  $A_8$  certificate above so the ancillary forming-set paragraph is self-contained.Qualify the closing phrase “universal cubic ceiling” as referring to the general cubic bipartite setting. This architecture theorem supports no universal claim for arbitrary cubic graphs.The graph-to-count steps are established by the explicit incidence and deletion proofs above. The reported finite controls and conditional Lean arithmetic are auxiliary, and no novelty claim or bound beyond this architecture is part of this acceptance.   core-block-gap-barrier.txtDocumentOpen file

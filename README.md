@@ -30,6 +30,14 @@ The [research agenda](docs/RESEARCH.md) connects current results to the next
 mathematical targets. The manuscript follows the same progression from the
 hypercube solution to these geometric and structural questions.
 
+The [C4-free pair-packing theorem](docs/C4_FREE_REPRESENTATIVE_EQUALITY.md)
+gives beta_2=psi_sq=Omega=N for D-regular bipartite graphs with N vertices
+per side, D>=3, no four-cycle and N<=2(D-1)(D-2)+4. In particular every
+finite projective plane of order q>=2 has incidence-graph sub-quorum
+number q^2+q+1. The Heawood case gives beta_2=psi_sq=7<SF_2=8, linking
+the two research directions without settling the grid equality. The
+proof is general; external priority of this specialization is not claimed.
+
 The new [closed-high-cycle construction](docs/CLOSED_HIGH_CYCLE_COMPENSATION.md)
 improves this project's connected cubic gap coefficient from1/24 to
 **3/62**. For every r>=1 it gives a two-connected cubic bipartite graph
@@ -46,7 +54,7 @@ permits reused core X attachments, arbitrary bipartite high cycles and
 regrouped hub triples: beta>=max(12r+7b,9r+8b)>=33n/62 still forces
 gap<=3n/62. Equality requires b=3r; the wrong block/core ratio has an
 explicit deficit. Eleven conditional Lean counts and285actual-gluing
-controls pass. This later theorem was outside the Z_r review input.
+controls pass. Its own separate independent review now completed ACCEPT.
 The general upper coefficient1/14 and the rectangular-grid bridge remain open.
 
 The preceding [block compensation theorem](docs/HEAWOOD_BLOCK_COMPENSATION.md)

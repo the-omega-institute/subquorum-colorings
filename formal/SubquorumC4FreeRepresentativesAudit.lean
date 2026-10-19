@@ -1,0 +1,6 @@
+import StarForming.C4FreeRepresentatives
+
+#print axioms Subquorum.C4FreeRepresentatives.neighbor_pair_unique_owner
+#print axioms Subquorum.C4FreeRepresentatives.packing_forces_many_unused
+#print axioms Subquorum.C4FreeRepresentatives.positive_excess_size_threshold
+#print axioms Subquorum.C4FreeRepresentatives.no_positive_excess_below_threshold

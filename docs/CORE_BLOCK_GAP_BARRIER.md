@@ -5,7 +5,7 @@ assumed distinct core attachment vertices. The following theorem removes
 that assumption and also allows arbitrary bipartite high cycles and hub
 regrouping. It rules out two apparent ways of improving the3/62coefficient:
 reusing a core X vertex, or changing only the selected high cycles.
-It is independent of the pending general Heawood block-ledger proof.
+It is independent of the separately accepted general Heawood block-ledger proof.
 
 ## Construction class and theorem
 
@@ -150,6 +150,31 @@ all-subselection rewiring argument preserves its minimality. This
 attaining witness is not needed for the upper-bound argument, and no
 exact SF or beta value is asserted for arbitrary gluings.
 
+For a self-contained local certificate, use the existing checker selection
+{1,2,3,5,7,9,10,11}. Its selected six-cycle is
+1--9--2--10--3--11--1, and5,7 are isolated. Outside selected neighborhoods
+are0:{7,10},4:{7,11},6:{7,9},8:{1,5},12:{2,5},13:{3,5}.
+Deleting a cycle vertex leaves one displayed outside witness with only
+an isolated selected neighbor. Deleting5 or7 leaves that vertex itself
+without a selected neighbor. This proves formation and all eight deletion
+failures without a new optimization premise. Both ports0,8 are omitted.
+
+Let L1=12r+7b,L2=9r+8b, e=beta-max(L1,L2)>=0,
+c=3n+2beta-7star>=0, and Delta=3n-62g. Exact expansion gives
+
+    if b<=3r:  7Delta=140(3r-b)+310e+62c,
+    if b>=3r:  7Delta=170(b-3r)+310e+62c.
+
+The imbalance, extra dissociation capacity and compensation slack are
+distinct nonnegative terms. The lower forming witness and compensation
+also give the numerical equivalence
+
+    62g=3n  iff  b=3r and beta=33r.
+
+This does not classify which gluings have beta=33r. These supplementary
+identities have written algebraic proofs; the eleven-declaration formal
+audit retains its original scope.
+
 ## Verification and scope
 
 The four new declarations in [ClosedHighCycle.lean](../formal/StarForming/ClosedHighCycle.lean)
@@ -169,8 +194,11 @@ are not premises of the theorem.
 
 The earlier Z_r Oracle ACCEPT predates this enlarged theorem and does
 not constitute its review. Its own [independent review](../output/core-block-gap-barrier-oracle-review.json)
-is dispatched, with no verdict yet; retain the original live task.
-The universal cubic ceiling remains1/14;
+now completed ACCEPT, covering both witnesses, repeated attachments,
+arbitrary high cycles, all counting steps and equality necessities.
+The exact response is archived; its supplementary identities and a
+self-contained local certificate are included above.
+The general cubic bipartite ceiling remains1/14;
 this theorem identifies a larger class that cannot approach it. To
 improve3/62one must change a hypothesis affecting the two witnesses,
 such as the blocks or the core's H/U/X/Y incidence pattern. Arbitrary
