@@ -150,6 +150,9 @@ is already excluded, while the three remaining first-q5 motifs have only
 three or four positive tiles. This conclusion uses the same previously proved
 first-failure classification as the leaf-spliced path theorem. It is not a
 general allocation theorem for larger q or for arbitrary endpoint geometry.
+The slots and first-failure classification here are global. This does not
+restrict every receiver demand to donors owned by that receiver, or prove
+a receiver-labelled Hall or flow condition.
 
 ## 4. A fixed charge-two star of occupied degree three
 

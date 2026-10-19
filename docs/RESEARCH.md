@@ -42,6 +42,17 @@ events. A physical count criterion therefore proves coefficient one with
 controlled degree-four contacts, including an all-width fully frozen pair of
 occupied adjacent bands. General decomposition into covered modules is open.
 
+The [opposed-band theorem](OPPOSED_BANDS_AND_HARMLESS_DEGREE_FOUR_CONTACTS.md)
+rules out automatic validity of the coarse degree-four criterion. For every
+even width w>=6 and height h>=4 it gives a fully frozen physical fusion with
+S=w-1, J=K_in=0, L=1 and d4=2h+4. The finer compensation credit is w-2
+and the exact half-area slack is h(w-4)/2+2. Thus harmless intertile contacts
+can grow without bound while the actual tax stays one. All four alignment
+phases satisfy the finer criterion. Twenty parameter pairs,80alignment checks,
+640symmetry images and67scoped Lean declarations pass, including actual
+mixed-bundle exclusion for the8-by10configuration. General geometry has its
+own written all-parameter proof; the broad d4 rule cannot be a universal bridge.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.

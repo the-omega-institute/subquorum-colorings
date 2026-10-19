@@ -469,14 +469,26 @@ Finite local kernel reduction is not an extrapolation of global sample grids.
 There is no sorryAx or native_decide; only the standard logical axioms occur.
 The scope and execution record is output/degree-three-fusion-formal-check.json.
 
-The prior branching review e9e3e3ea remains the original live task; it does
-not cover this later general fusion theorem. Its separate review request is
-prepared for the same conversation, to submit after that response; no
-independent verdict on this new theorem is claimed.
+The prior branching review e9e3e3ea completed ACCEPT, archived with its exact
+original stream/terminal agreement and a separate scope assessment. It does
+not cover this later general fusion theorem. The prepared same-conversation
+followup c3f68d99 failed terminally with a browser input disconnect after
+four broker attempts; it produced no mathematical verdict. One replacement
+file-attachment audit e43c257c, original stream66765, now covers this theorem
+and the later opposed-band result. Preserve that original task and stream.
+No independent verdict on this new theorem is yet claimed.
+
+The [opposed-band theorem](OPPOSED_BANDS_AND_HARMLESS_DEGREE_FOUR_CONTACTS.md)
+now proves that the COARSE sufficient condition d4<=S+2J is not automatic:
+fixed-width fully frozen physical fusions have unbounded d4 but K_in=J=0
+and L=1. Their finer criterion holds in every alignment. This is a failure
+of the proposed universal coarse rule, not of the compensation target.
 
 The remaining question is whether general occupied-degree-three frozen
 straight-chamber networks admit a useful decomposition with certified protected
 donors, or whether genuinely different contacts need new compensation. This
-note does not assume such a decomposition. Submitted manuscripts are unchanged.
+note does not assume such a decomposition. The degree-four extension must
+retain K_in+L or recover actual lost donors; replacing it by all of d4 is
+too coarse for a universal argument. Submitted manuscripts are unchanged.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
