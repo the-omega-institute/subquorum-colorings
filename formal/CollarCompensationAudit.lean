@@ -2,6 +2,7 @@ import SubQuorum.CollarCompensation
 import SubQuorum.AttachmentCollarCompensation
 import SubQuorum.BlankWitnessCompensation
 import SubQuorum.DiagonalWitnessChains
+import SubQuorum.MixedPChainCompensation
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -22,3 +23,6 @@ import SubQuorum.DiagonalWitnessChains
 #print axioms SubQuorum.DiagonalWitnessChains.orientation_propagation
 #print axioms SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks
 #print axioms SubQuorum.DiagonalWitnessChains.double_link_charge
+#print axioms SubQuorum.MixedPChainCompensation.blank_exterior_gap
+#print axioms SubQuorum.MixedPChainCompensation.occupied_exterior_gap
+#print axioms SubQuorum.MixedPChainCompensation.transition_charge
