@@ -188,9 +188,9 @@ in the original physical ledger and using normalization gives
                  <= mn/2-B+O-J+2X.                 (8)
 
 In particular K+O<=B+J implies coefficient one; the purely combinatorial
-condition 2X+O<=B+J is sufficient. This removes the entire |M_0|/6 loss
-in the existing universal |T_0|+(5/6)|M_0|<=mn/2 bound for this stated
-class. For source-only configurations paired into crossing pairs, with
+condition 2X+O<=B+J is sufficient. For the subclass satisfying K+O<=B+J,
+this removes the entire |M_0|/6 loss in the existing universal
+|T_0|+(5/6)|M_0|<=mn/2 bound. For source-only configurations paired into crossing pairs, with
 no further mouth intersections, B=2r and X=r, so the coarse criterion
 already yields coefficient one. Isolated sources are allowed too.
 
@@ -207,6 +207,59 @@ When X=0, this recovers the earlier bound while admitting perpendicular
 source contacts that had previously been excluded. With arbitrary crossings
 the exact K criterion can be stronger than its 2X simplification. No bound
 on X or K valid for every prescribed-source configuration is asserted.
+
+### Directional averaging removes the crossing restriction for source-only mouths
+
+There is a stronger consequence that does not bound X at all. Let F be the
+sum of comb end fluxes over individual strips, with multiplicity: each
+saturated end contributes its number of containing strips and each sparse
+end subtracts that number. Thus
+
+    F=sum_i(U_i-S_i).
+
+Let D_1 be the physical deficit on no-P tiles of G covered by exactly one
+strip; let D_2 be the deficit on those covered by two strips. These are
+disjoint actual physical tile sets. Therefore
+
+    sum_i D_i=D_1+2D_2,
+    D_G=D_1+D_2,
+    2D_G=sum_i D_i+D_1.                              (10)
+
+Summing (3),(4) gives sum_i D_i=2B+F+A+sum_i D'_i. Substitute this and
+(10) in the original whole-receiver ledger, with the same R as in (7):
+
+    2(mn/2-|T_0|-|M_0|)=F+A+sum_i D'_i+D_1+2R.     (11)
+
+This is an exact alternative identity for the same physical resources.
+In particular F>=0 implies coefficient one for arbitrary source directions
+and arbitrarily many mouth crossings. A sufficient end condition is that
+every comb's saturated end belongs to at least as many strips as its sparse
+end; aggregate nonnegative F is enough. Union closure O=0 by itself does
+not impose this multiplicity condition and is not claimed sufficient here.
+
+**Source-only mouth theorem.** Retain all Section 1 coverage hypotheses and
+require each endpoint in any source mouth to belong to a prescribed source.
+Then
+
+    |T_0|+|M_0| <= mn/2
+
+for every number of prescribed sources, at arbitrary positive tile-preserving
+orientations, with unrestricted source contacts and mouth intersections.
+
+Proof. No contact-comb endpoint occurs in any strip, so F=0. All other
+terms on the right of (11) are nonnegative. QED. Complete combs outside
+the mouths and all the previously allowed nonprescribed outside components
+remain permitted. This is a general geometric compensation theorem for its
+stated source class; arbitrary positive bent components are not prescribed
+sources automatically.
+
+Equivalently, assign each strip only half its no-P deficit. A donor in one
+strip is used by one half, and a donor in two is used by two halves. Total
+use never exceeds its actual physical deficit. Equations (3),(4) supply at
+least B in these half claims when F>=0, covering the B whole source charges.
+This explains why many crossings do not obstruct this theorem. The crossing
+loss and averaging estimates are alternatives; their resources cannot be
+added as two independent compensation supplies.
 
 ## 6. An explicit all-width obstacle to the unchanged strict payment
 
@@ -282,7 +335,7 @@ only discovered its selected pattern. Written arbitrary-width and arbitrary
 configuration arguments supply the proofs. The archived finite receipt and
 any scoped formal audit must be read with their own stated scopes.
 
-The archived receipt `output/orthogonal-source-mouth-controls.json` passes
+At milestone619acdc the archived receipt `output/orthogonal-source-mouth-controls.json` passes
 442 configurations and 40 symmetry images. It includes explicit filled
 obstacles through width200, pair clusters through eight pairs, one source
 meeting twelve perpendicular mouths, both perpendicular contact cases,
@@ -290,7 +343,7 @@ and sparse/saturated comb ends counted in two crossing strips. The generator
 for the many-crossings controls is only finite validation evidence here;
 the general theorem uses no assertion about that generator at arbitrary size.
 
-The local Lean 4.33.0 audit passes 95 scoped declarations, with source hashes
+At that milestone the local Lean 4.33.0 audit passes 95 scoped declarations, with source hashes
 in `output/orthogonal-source-mouth-formal-check.json`. Its five new declarations
 in `formal/SubQuorum/OrthogonalMouthFlux.lean` prove actual local feasible-label
 flank capacity and the cap selected count, crossing-loss bounds for an
@@ -299,18 +352,29 @@ bound from the stated ledger. Classification of entire source contacts,
 geometric/counting adapters and equation (7) remain written proofs. There
 is no claim that Lean checks the full geometric theorem.
 
-Independent review task d54c5a35-91a6-4a9c-b795-680d3f013063 is running in
-conversation conv_d54fcca063697f6b, original streaming session39855. Its input
-contains the full source definition, the proposed theorem and explicit
-all-width obstacle, granting the prior receiver/freezing/parallel-phase
-dependencies. No verdict is inferred while it is live. The previous
-mixed-contact review's infrastructure failure is a separate terminal task.
+The subsequent directional-averaging extension has its own current controls
+and 97-declaration audit in `output/directional-averaging-controls.json` and
+`output/directional-averaging-formal-check.json`; see
+`DIRECTIONAL_AVERAGING_SOURCE_COMPENSATION.md` for its stronger source-only
+theorem without a crossing restriction. The historical receipts above
+retain their original source revision and scope.
+
+Independent review task d54c5a35-91a6-4a9c-b795-680d3f013063 completed
+ACCEPT at 11:21:06 UTC, observed gpt_6/pro. The full source definition,
+crossing-loss theorem and explicit all-width obstacle were in its input,
+granting the prior receiver/freezing/parallel-phase dependencies. Its one
+scope-wording clarification above is incorporated. The exact response and
+independent assessment are archived in `output/orthogonal-source-mouth-review-response.json`
+and `docs/reviews/2026-10-19-orthogonal-mouth-assessment.md`.
+The later directional averaging theorem was outside that input and receives
+a separate follow-up review. The previous mixed-contact review's infrastructure
+failure is a separate terminal task.
 
 Reproduce the controls and scoped formal audit with:
 
 ```sh
-python3 develop/check_orthogonal_source_mouths.py --output output/orthogonal-source-mouth-controls.json
-python3 scripts/check_collar_formal.py --lean /path/to/lean-4.33.0 --output output/orthogonal-source-mouth-formal-check.json
+python3 develop/check_orthogonal_source_mouths.py --output output/directional-averaging-controls.json
+python3 scripts/check_collar_formal.py --lean /path/to/lean-4.33.0 --output output/directional-averaging-formal-check.json
 ```
 
 The remaining task is to control K using the nonnegative phase gains A,

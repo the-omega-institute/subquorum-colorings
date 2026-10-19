@@ -56,12 +56,15 @@ def feasible(current):
 def fill_greedily(current, sources, seed):
     selected = set(current[2])
     endpoints = endpoint_data(current)[0]
+    occupied = selected | endpoints
     choices = sorted(set().union(*(source['mouth'] for source in sources))-selected-endpoints)
     random.Random(seed).shuffle(choices)
     for point in choices:
-        candidate = (*current[:2], selected | {point}, current[3])
-        if feasible(candidate):
+        adjacent = set(neighbors(point))
+        if len(adjacent & occupied) <= 1 and all(
+                not set(neighbors(target)) & occupied for target in adjacent & selected):
             selected.add(point)
+            occupied.add(point)
     return *current[:2], selected, current[3]
 
 
@@ -163,6 +166,11 @@ def inspect(current, sources):
     assert crossing_loss <= 2*len(crossing_tiles)
     payment = sum(2-len(vertices_of({tile}) & current[2]) for tile in union
                   if not vertices_of({tile}) & endpoints)
+    single_payment = sum(2-len(vertices_of({tile}) & current[2]) for tile in union
+                         if multiplicities[tile] == 1 and not vertices_of({tile}) & endpoints)
+    individual_payment = sum(record['physical_payment'] for record in records)
+    weighted_comb_flux = sum(record['comb_flux'] for record in records)
+    assert 2*payment == individual_payment+single_payment
     shifted = sum(record['shifted_payment'] for record in records)
     phase_gain = sum(record['perpendicular_gain'] for record in records)
     assert payment == 2*len(sources)+inward-outward-crossing_loss+shifted+phase_gain
@@ -171,12 +179,18 @@ def inspect(current, sources):
     remainder = sum(2-len(vertices_of({tile}) & current[2]) for tile in all_tiles-union-receiver_tiles)
     deficit = checked['area']//2-checked['objective']
     assert deficit == len(sources)+inward-outward-crossing_loss+shifted+phase_gain+remainder
+    assert 2*deficit == weighted_comb_flux+phase_gain+shifted+single_payment+2*remainder
+    if weighted_comb_flux >= 0:
+        assert deficit >= 0
+    if not combs:
+        assert weighted_comb_flux == 0 and payment >= len(sources)
     assert deficit >= len(sources)+inward-outward-2*len(crossing_tiles)
-    return dict(sources=len(sources), strips=len(strips), crossing_tiles=len(crossing_tiles),
+    return dict(sources=len(sources), combs=len(combs), strips=len(strips), crossing_tiles=len(crossing_tiles),
                 outward=outward, inward=inward, duplicate_sparse=duplicate_sparse,
                 duplicate_saturated=duplicate_saturated, crossing_deficit=crossing_deficit,
                 effective_crossing_loss=crossing_loss, physical_union_payment=payment,
-                individual_strip_payment=sum(record['physical_payment'] for record in records),
+                individual_strip_payment=individual_payment, single_covered_payment=single_payment,
+                weighted_comb_flux=weighted_comb_flux,
                 shifted_payment=shifted, perpendicular_phase_gain=phase_gain,
                 half_area_deficit=deficit, outside_remainder=remainder, strips_data=records)
 
@@ -215,6 +229,18 @@ def many_crossings(count):
     return assemble(8*count+20, 4*count+32, sources), sources
 
 
+def crossing_grid(horizontal_count, vertical_count):
+    width = 8*horizontal_count+12*vertical_count+8
+    sources = [move_source(source_with_chamber(width-8*index, 4*horizontal_count+2),
+                           lambda point, index=index: (point[0]+4*index, point[1]+4*index))
+               for index in range(horizontal_count)]
+    sources.extend(move_source(source_with_chamber(8*horizontal_count+6, 2),
+                   lambda point, index=index: (point[1]+4*horizontal_count+2,
+                                               point[0]+4*horizontal_count+4+12*index))
+                   for index in range(vertical_count))
+    return assemble(12*horizontal_count+18, width+10, sources), sources
+
+
 def controls():
     records, images = [], 0
     for width in (*range(22, 63, 2), 100, 200):
@@ -248,6 +274,18 @@ def controls():
         assert record['physical_union_payment'] == 3*count
         assert record['effective_crossing_loss'] == count
         records.append(dict(kind='paired_crossing_compensation', count=count, result=record))
+    for horizontal_count, vertical_count in itertools.product((1, 2, 3, 5), repeat=2):
+        current, sources = crossing_grid(horizontal_count, vertical_count)
+        current = fill_greedily(current, sources, 100*horizontal_count+vertical_count)
+        record = inspect(current, sources)
+        assert record['sources'] == horizontal_count+vertical_count
+        assert record['crossing_tiles'] == horizontal_count*vertical_count
+        assert record['weighted_comb_flux'] == 0 and record['combs'] == 0
+        assert record['physical_union_payment'] >= len(sources)
+        records.append(dict(kind='dense_source_only_crossing_grid', horizontal=horizontal_count,
+                            vertical=vertical_count, result=record))
+        if (horizontal_count, vertical_count) in ((2, 3), (5, 5)):
+            images += symmetries(current, sources)
     for start, finish, phase in itertools.product((11, 12), (16, 17), (-1, 1)):
         if (finish-start+1) % 2:
             continue
@@ -282,10 +320,12 @@ def controls():
     assert any(record['result']['duplicate_sparse'] for record in records)
     assert any(record['result']['duplicate_saturated'] for record in records)
     return dict(status='ALL_CHECKS_PASSED', cases=len(records), symmetry_images=images,
+                source_only_cases=sum(record['result']['combs'] == 0 for record in records),
+                maximum_crossings=max(record['result']['crossing_tiles'] for record in records),
                 perpendicular_contact_types=dict(contact_types), records=records,
                 witness=dict(shape=witness[:2], selected=sorted(witness[2]), matching=witness[3],
                              result=inspect(witness, sources)),
-                scope='Finite controls for the general written crossing-loss theorem and explicit all-width obstacle. No enumeration replaces proof; no universal grid or complete Lean claim.')
+                scope='Finite controls for the general written crossing-loss and directional-averaging theorems, arbitrary-orientation source-only compensation, and explicit all-width obstacle. Dense crossing grids test the removal of X restrictions. No enumeration replaces proof; no universal grid or complete Lean claim.')
 
 
 def main():

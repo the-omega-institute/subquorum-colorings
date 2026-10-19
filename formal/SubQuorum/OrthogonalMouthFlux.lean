@@ -71,4 +71,33 @@ theorem crossing_boundary_bound
   have hcrossings := crossing_loss_sum_bounds tiles
   omega
 
+def incidencePayment (payment : Nat × Bool) : Nat :=
+  if payment.2 then 2*payment.1 else payment.1
+
+def singlePayment (payment : Nat × Bool) : Nat :=
+  if payment.2 then 0 else payment.1
+
+theorem physical_union_incidence_identity (payments : List (Nat × Bool)) :
+    (payments.map incidencePayment).sum+(payments.map singlePayment).sum =
+      2*(payments.map Prod.fst).sum := by
+  induction payments with
+  | nil => simp
+  | cons payment rest inductionHypothesis =>
+      rcases payment with ⟨value, crossing⟩
+      cases crossing <;>
+        simp_all [incidencePayment, singlePayment] <;> omega
+
+theorem directional_averaging_identity
+    (capacity objective sources unionPayment stripPayment singleCovered
+      combFlux phaseGain shiftedDeficit remainder : Int)
+    (hledger : capacity-objective = -sources+unionPayment+remainder)
+    (hstrips : stripPayment = 2*sources+combFlux+phaseGain+shiftedDeficit)
+    (hincidence : 2*unionPayment = stripPayment+singleCovered)
+    (hcomb : 0 ≤ combFlux) (hphase : 0 ≤ phaseGain)
+    (hshifted : 0 ≤ shiftedDeficit) (hsingle : 0 ≤ singleCovered)
+    (hremainder : 0 ≤ remainder) :
+    2*(capacity-objective) = combFlux+phaseGain+shiftedDeficit+singleCovered+2*remainder ∧
+      objective ≤ capacity := by
+  omega
+
 end SubQuorum.OrthogonalMouthFlux

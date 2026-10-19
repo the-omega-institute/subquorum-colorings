@@ -68,7 +68,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 95
+    assert len(declarations) == 97
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -80,7 +80,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 90 scoped declarations plus actual local feasible-label chamber-flank capacity and arm-cap selected counts; crossing-loss bounds for an arbitrary finite list of declared physical crossing types; and the resulting conditional initial-objective bound from the exact ledger. Global source contact classification, strip/union adapters, coalesced tip cardinalities and the arbitrary-orientation crossing-loss theorem remain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification, unmatched exterior compensation or universal source coverage is claimed.')
+                  scope='Previous 95 scoped declarations plus the exact physical union incidence identity for arbitrary finite lists of nonnegative donor weights and crossing flags, and directional averaging with a conditional objective consequence from the three ledger equalities. The source-only arbitrary-orientation theorem, source contact classification, geometric/counting adapters and exact global ledger remain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification, negative external comb flux control or universal source coverage is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

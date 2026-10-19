@@ -112,3 +112,5 @@ import SubQuorum.OrthogonalMouthFlux
 #print axioms SubQuorum.OrthogonalMouthFlux.crossing_tile_loss_bounds
 #print axioms SubQuorum.OrthogonalMouthFlux.crossing_loss_sum_bounds
 #print axioms SubQuorum.OrthogonalMouthFlux.crossing_boundary_bound
+#print axioms SubQuorum.OrthogonalMouthFlux.physical_union_incidence_identity
+#print axioms SubQuorum.OrthogonalMouthFlux.directional_averaging_identity
