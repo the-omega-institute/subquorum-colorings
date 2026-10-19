@@ -47,6 +47,17 @@ def mobius_kantor():
         vertex for vertex in colors if colors[vertex] == 1}
 
 
+def pappus():
+    adjacency = [set() for vertex in range(18)]
+    steps = [5, 7, -7, 7, -7, -5] * 3
+    for vertex, step in enumerate(steps):
+        for neighbor in ((vertex + 1) % 18, (vertex + step) % 18):
+            adjacency[vertex].add(neighbor)
+            adjacency[neighbor].add(vertex)
+    assert all((vertex + 1) % 18 in adjacency[vertex] for vertex in range(18))
+    return adjacency, set(range(0, 18, 2)), set(range(1, 18, 2))
+
+
 def structural_control(adjacency, left, right, degree):
     assert left.isdisjoint(right) and left | right == set(range(len(adjacency)))
     assert len(left) == len(right)
@@ -190,6 +201,23 @@ def main():
     structural_control(adjacency, left, right, 3)
     exact = exact_representatives(adjacency)
     assert exact['omega'] == exact['beta'] == len(left) == 8
+    adjacency, left, right = pappus()
+    structural_control(adjacency, left, right, 3)
+    pappus_exact = exact_representatives(adjacency)
+    assert pappus_exact['omega'] == pappus_exact['beta'] == 10
+    pappus_exact['odd_vertex_neighborhoods'] = {
+        str(vertex): sorted(adjacency[vertex]) for vertex in sorted(right)}
+    adjacency, left, right = projective_plane(2)
+    mixed_singletons = {1, 2, 3, 11, 12, 13}
+    mixed_matching = (0, 8)
+    occupied = mixed_singletons | set(mixed_matching)
+    assert mixed_matching[1] in adjacency[mixed_matching[0]]
+    assert mixed_singletons.isdisjoint(mixed_matching)
+    assert all(len(adjacency[vertex] & occupied) <= 1 for vertex in mixed_singletons)
+    assert len(mixed_singletons & left) == len(mixed_singletons & right) == 3
+    assert len(mixed_singletons) + 1 == 7
+    mixed_witness = dict(singletons=sorted(mixed_singletons), matching=[list(mixed_matching)],
+                         objective=7, scope='q=2 exception to the q>=3 one-side rigidity')
     arithmetic_cases = 0
     for capacity in range(1, 41):
         for unused in range(100):
@@ -198,6 +226,7 @@ def main():
                     assert unused >= capacity + 2
                 arithmetic_cases += 1
     receipt = dict(status='ALL_CHECKS_PASSED', planes=planes, mobius_kantor=exact,
+                   pappus=pappus_exact, heawood_mixed_optimum=mixed_witness,
                    arithmetic_cases=arithmetic_cases,
                    scope='Finite controls only. Exact Omega exhausts occupied sets and minimizes internal matching size covering every occupied vertex of induced degree at least two; unmatched vertices are T. General pair-packing and all-projective-plane theorems have written proofs, not enumeration premises.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')

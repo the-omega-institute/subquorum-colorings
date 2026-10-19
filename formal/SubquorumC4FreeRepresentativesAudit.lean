@@ -4,3 +4,9 @@ import StarForming.C4FreeRepresentatives
 #print axioms Subquorum.C4FreeRepresentatives.packing_forces_many_unused
 #print axioms Subquorum.C4FreeRepresentatives.positive_excess_size_threshold
 #print axioms Subquorum.C4FreeRepresentatives.no_positive_excess_below_threshold
+#print axioms Subquorum.C4FreeRepresentatives.positive_excess_matching_budget
+#print axioms Subquorum.C4FreeRepresentatives.zero_excess_packing
+#print axioms Subquorum.C4FreeRepresentatives.optimal_support_one_side
+#print axioms Subquorum.C4FreeRepresentatives.pappus_regular_bipartite_certificate
+#print axioms Subquorum.C4FreeRepresentatives.pappus_no_four_cycle_certificate
+#print axioms Subquorum.C4FreeRepresentatives.pappus_dissociation_certificate

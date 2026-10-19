@@ -1,25 +1,25 @@
 {
   "status": "ALL_CHECKS_PASSED",
-  "checked_at": "2026-10-19T02:42:09.636082+00:00",
+  "checked_at": "2026-10-19T02:49:26.707247+00:00",
   "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
   "active_lean_lake_before_run": [],
-  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3874.\nPages active:                                 248588.\nPages inactive:                               224472.\nPages speculative:                             23404.\nPages throttled:                                   0.\nPages wired down:                             250433.\nPages purgeable:                                 343.\n\"Translation faults\":                    15879549963.\nPages copy-on-write:                       972787812.\nPages zero filled:                        6507233087.\nPages reactivated:                        2977926348.\nPages purged:                              137663814.\nFile-backed pages:                            284346.\nAnonymous pages:                              212118.\nPages stored in compressor:                  1576178.\nPages occupied by compressor:                 256005.\nDecompressions:                           2399705584.\nCompressions:                             2836769075.\nPageins:                                  4341382894.\nPageouts:                                   12124252.\nSwapins:                                    25443505.\nSwapouts:                                   31841656.\n",
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3608.\nPages active:                                 276913.\nPages inactive:                               249759.\nPages speculative:                             26411.\nPages throttled:                                   0.\nPages wired down:                             254910.\nPages purgeable:                                 670.\n\"Translation faults\":                    15886330608.\nPages copy-on-write:                       973198591.\nPages zero filled:                        6509465781.\nPages reactivated:                        2978687803.\nPages purged:                              137714947.\nFile-backed pages:                            341342.\nAnonymous pages:                              211741.\nPages stored in compressor:                  1626955.\nPages occupied by compressor:                 195373.\nDecompressions:                           2400383645.\nCompressions:                             2837648969.\nPageins:                                  4350733750.\nPageouts:                                   12134845.\nSwapins:                                    25461421.\nSwapouts:                                   31964504.\n",
   "checks": [
     {
       "module": "StarForming/C4FreeRepresentatives.lean",
-      "seconds": 4.17,
+      "seconds": 3.749,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "SubquorumC4FreeRepresentativesAudit.lean",
-      "seconds": 0.398,
-      "stdout": "'Subquorum.C4FreeRepresentatives.neighbor_pair_unique_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Subquorum.C4FreeRepresentatives.packing_forces_many_unused' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Subquorum.C4FreeRepresentatives.positive_excess_size_threshold' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Subquorum.C4FreeRepresentatives.no_positive_excess_below_threshold' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "seconds": 0.377,
+      "stdout": "'Subquorum.C4FreeRepresentatives.neighbor_pair_unique_owner' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Subquorum.C4FreeRepresentatives.packing_forces_many_unused' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Subquorum.C4FreeRepresentatives.positive_excess_size_threshold' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Subquorum.C4FreeRepresentatives.no_positive_excess_below_threshold' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Subquorum.C4FreeRepresentatives.positive_excess_matching_budget' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'Subquorum.C4FreeRepresentatives.zero_excess_packing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Subquorum.C4FreeRepresentatives.optimal_support_one_side' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Subquorum.C4FreeRepresentatives.pappus_regular_bipartite_certificate' depends on axioms: [propext, Quot.sound]\n'Subquorum.C4FreeRepresentatives.pappus_no_four_cycle_certificate' does not depend on any axioms\n'Subquorum.C4FreeRepresentatives.pappus_dissociation_certificate' depends on axioms: [propext, Quot.sound]\n",
       "stderr": "",
       "exit_code": 0
     }
   ],
-  "maximum_rss_bytes": 677494784,
-  "scope": "One graph-level theorem: an unordered pair has at most one common-neighbor owner under the explicit no-four-cycle hypothesis and four-vertex distinctness premises. Three conditional integer-count theorems prove the packing threshold and exclude positive excess below it. Finite cardinal pair summation, representative reduction, projective-plane instantiation and full parameter equalities retain written proofs; they are not claimed fully formalized."
+  "maximum_rss_bytes": 764608512,
+  "scope": "One graph-level theorem: an unordered pair has at most one common-neighbor owner under the explicit no-four-cycle hypothesis and four-vertex distinctness premises. Six conditional integer-count theorems prove the packing threshold, matching/excess budget and one-side optimal-support rigidity. Three kernel-decided finite Pappus certificates check simple cubic bipartiteness, no repeated common-neighbor pair and a ten-vertex dissociation set. Finite cardinal pair summation, representative reduction, projective-plane instantiation and full parameter equalities retain written proofs; they are not claimed fully formalized."
 }

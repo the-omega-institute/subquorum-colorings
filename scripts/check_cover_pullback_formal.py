@@ -117,7 +117,7 @@ def main():
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
                 'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2,
                 'port-ownership': 2, 'port-return': 5, 'block-ledger': 4, 'closed-high-cycle': 11,
-                'c4-representatives': 4}
+                'c4-representatives': 10}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -268,9 +268,12 @@ def main():
     if arguments.audit == 'c4-representatives':
         receipt['scope'] = ('One graph-level theorem: an unordered pair has at most one '
                             'common-neighbor owner under the explicit no-four-cycle '
-                            'hypothesis and four-vertex distinctness premises. Three '
-                            'conditional integer-count theorems prove the packing threshold '
-                            'and exclude positive excess below it. Finite cardinal pair '
+                            'hypothesis and four-vertex distinctness premises. Six '
+                            'conditional integer-count theorems prove the packing threshold, '
+                            'matching/excess budget and one-side optimal-support rigidity. '
+                            'Three kernel-decided finite Pappus certificates check simple '
+                            'cubic bipartiteness, no repeated common-neighbor pair and a '
+                            'ten-vertex dissociation set. Finite cardinal pair '
                             'summation, representative reduction, projective-plane '
                             'instantiation and full parameter equalities retain written '
                             'proofs; they are not claimed fully formalized.')

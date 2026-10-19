@@ -83,6 +83,93 @@
     },
     "cover_states": 168907
   },
+  "pappus": {
+    "order": 18,
+    "occupied_sets": 262144,
+    "beta": 10,
+    "omega": 10,
+    "witness": {
+      "singletons": [
+        0,
+        1,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12,
+        13,
+        15
+      ],
+      "matching": []
+    },
+    "cover_states": 687235,
+    "odd_vertex_neighborhoods": {
+      "1": [
+        0,
+        2,
+        8
+      ],
+      "3": [
+        2,
+        4,
+        10
+      ],
+      "5": [
+        0,
+        4,
+        6
+      ],
+      "7": [
+        6,
+        8,
+        14
+      ],
+      "9": [
+        8,
+        10,
+        16
+      ],
+      "11": [
+        6,
+        10,
+        12
+      ],
+      "13": [
+        2,
+        12,
+        14
+      ],
+      "15": [
+        4,
+        14,
+        16
+      ],
+      "17": [
+        0,
+        12,
+        16
+      ]
+    }
+  },
+  "heawood_mixed_optimum": {
+    "singletons": [
+      1,
+      2,
+      3,
+      11,
+      12,
+      13
+    ],
+    "matching": [
+      [
+        0,
+        8
+      ]
+    ],
+    "objective": 7,
+    "scope": "q=2 exception to the q>=3 one-side rigidity"
+  },
   "arithmetic_cases": 40000,
   "scope": "Finite controls only. Exact Omega exhausts occupied sets and minimizes internal matching size covering every occupied vertex of induced degree at least two; unmatched vertices are T. General pair-packing and all-projective-plane theorems have written proofs, not enumeration premises."
 }

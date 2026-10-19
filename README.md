@@ -37,6 +37,12 @@ finite projective plane of order q>=2 has incidence-graph sub-quorum
 number q^2+q+1. The Heawood case gives beta_2=psi_sq=7<SF_2=8, linking
 the two research directions without settling the grid equality. The
 proof is general; external priority of this specialization is not claimed.
+Every optimal representative pair in a plane of order q>=3 has all
+singleton representatives in one bipartition class. The eighteen-vertex
+Pappus graph has exact beta_2=psi_sq=Omega=10, showing the cubic
+sixteen-vertex equality threshold is sharp. Its optimal representative
+pairs have no matching edges. Ten scoped Lean declarations, including
+three finite Pappus certificates, and independent controls pass.
 
 The new [closed-high-cycle construction](docs/CLOSED_HIGH_CYCLE_COMPENSATION.md)
 improves this project's connected cubic gap coefficient from1/24 to
