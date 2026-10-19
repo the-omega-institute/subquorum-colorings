@@ -133,7 +133,9 @@ blanks, and
 This is the original corrected charge of the complete receiver. Raw tile
 excesses need not equal individual corrected charges: the two bottom
 saturated endpoint tiles each transfer their half unit to the tile of
-their actual mate. All mates belong to H, so both transfers stay in R_H
+their actual mate. All mates belong to H. Specifically the transfers go
+from Q_(a/2,0) to Q_(a/2-1,0) and from Q_(b/2,w/2) to
+Q_(b/2-1,w/2), each with weight one half. Thus both transfers stay in R_H
 and cancel in its sum. The independent checker also computes the corrected
 graph ledger and checks this equality directly.
 
@@ -163,7 +165,11 @@ is then the next endpoint down that same leg, not a selection. For a leg
 column, the physically aligned tile is toward the interior of the two-leg
 shape. A required transverse P tip can occur only in bar row 1; its required
 support is then another interior bar endpoint, again not a selection.
-All remaining tips are blank. This excludes every cap orientation.
+All remaining candidate tips are not endpoints; they are blank or selected.
+For example, when (w,a,b)=(6,6,4), Q_(2,1) has the extended west endpoint
+side (3,1),...,(6,1), but its upper transverse tip (3,2) is selected, not
+an endpoint. This excludes that orientation before the other cap conditions.
+The same non-endpoint exclusion covers every remaining cap orientation.
 
 For either guard rule, the selected corner must have its unique occupied
 neighbor outside its physical tile. The upper supports, even-row exterior
@@ -216,7 +222,8 @@ are both endpoints of the cap's component. The new q must be one of them,
 and is required to belong to H. Thus the owners coincide in this case too.
 The same argument compares with both earlier selected-corner guard rules.
 
-Consequently, if each positive complete receiver H has a set W_H of these
+Consequently, in a feasible single-terminal even-by-even grid, if each
+positive complete receiver H has a set W_H of these
 four kinds of witnesses with total actual capacity at least rho_H, then
 
     sum_(rho_H>0)rho_H <= sum_H sum_(Q in W_H)d_Q <= D_all.
@@ -275,7 +282,13 @@ conjecture. The next structural target is a whole-network resource allocation
 or an objective-preserving normalization that goes beyond endpoint promotion.
 Any candidate must handle this bar with two independent legs and must prevent
 capacity shared between components or routes from being spent twice. The
-unrestricted grid bound and triple equality remain open. No Oracle review
-of this new theorem has been obtained in this milestone.
+unrestricted grid bound and triple equality remain open. The original Oracle
+review baa7b7d4 returned REVISE on 20 October Singapore: it found the
+all-parameter construction, freezing, exact charge, local lemma and mixed
+ownership sound, but corrected the non-endpoint-tip sentence in Section 4
+and requested the omitted 22-endpoint dependency. The sentence is repaired
+above and the complete dependency is supplied in the follow-up review.
+This is not a final acceptance, and the later remote-deficit result is
+outside that review's scope.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

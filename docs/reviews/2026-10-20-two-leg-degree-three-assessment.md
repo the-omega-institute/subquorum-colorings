@@ -1,0 +1,49 @@
+# Two-leg theorem review: substantive proof checked, narrow revisions repaired
+
+20 October 2026 Singapore. Original task
+baa7b7d4-2c95-47b8-9539-a382a0d4a85c completed at 18:09:45 UTC on
+19 October, observed model gpt_6 with effort pro. The original streaming
+answer agrees exactly with the terminal server response archived in
+`output/two-leg-degree-three-review-response.json`. Its verdict is REVISE,
+not ACCEPT.
+
+The reviewer checked the unbounded construction, actual matching and
+feasibility for unequal even legs, the complete two-wave freezing order
+against arbitrary mixed bundles, original corrected receiver charge with
+both actual transfer destinations, exhaustive old-rule absence, the new
+degree-sensitive local lemma, and compatibility of the four ownership types.
+It found those substantive statements sound and identified no change needed
+to their parameter range, charge, matching, local lemma or ownership theorem.
+
+One descriptive sentence was false: not all remaining cap candidate tips
+are blank. For (w,a,b)=(6,6,4), the west extended side of Q_(2,1) has an
+upper tip (3,2) which is selected. It still fails the required endpoint
+condition. The corrected text states that every remaining candidate tip
+is a non-endpoint, either blank or selected, and includes this exact case.
+The actual verifier already checks membership in the endpoint set and had
+no corresponding error; the 39-case controls include these parameters.
+
+The second request concerned an omitted review dependency. The original
+package described the preceding 22-endpoint example's fourth-rule failure
+but did not include its full source note and exhaustive four-anchor table.
+The reviewer confirmed the two displayed local exclusions, while declining
+to certify that the list was exhaustive without the missing data. The
+follow-up now supplies the complete existing 22-endpoint note, including
+all T/M coordinates, charge, cap enumeration and selected-corner table.
+This is a repair to review completeness, not a newly discovered counterexample
+to the existing mathematical claim.
+
+We also supplied explicit corrected-transfer destinations and restated the
+ambient feasibility, single terminality and even-grid assumptions before
+the conditional weighted criterion. No source-code or Lean statement changed
+as a result of the review. The two local Lean checks, their standard axiom
+audits, 39 parameter cases, 624 physical/padded images and mixed ownership
+controls retain independent execution receipts. The reviewer did not run
+them, and its reasoning is not represented as execution evidence.
+
+A follow-up has been submitted to the same conversation
+conv_82a24f8f89797e93, original streaming execution 77181. It asks only for
+the repaired original theorem package, with no verdict yet. The subsequent
+remote-deficit obstruction, its interior completion and the three-tile
+compensation lemma are outside both the first and follow-up review scopes.
+No acceptance is inherited for those results.
