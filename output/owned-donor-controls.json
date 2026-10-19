@@ -1,0 +1,491 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local": {
+    "turn_models": 2,
+    "branch_models": 7,
+    "two_side_exclusions": 3,
+    "donor_budget_models": 15
+  },
+  "family": [
+    {
+      "matching": 1,
+      "endpoints": 2,
+      "selected": 4,
+      "frozen_rounds": 1
+    },
+    {
+      "matching": 2,
+      "endpoints": 4,
+      "selected": 6,
+      "frozen_rounds": 2
+    },
+    {
+      "matching": 3,
+      "endpoints": 6,
+      "selected": 8,
+      "frozen_rounds": 3
+    },
+    {
+      "matching": 4,
+      "endpoints": 8,
+      "selected": 10,
+      "frozen_rounds": 4
+    },
+    {
+      "matching": 5,
+      "endpoints": 10,
+      "selected": 12,
+      "frozen_rounds": 5
+    },
+    {
+      "matching": 6,
+      "endpoints": 12,
+      "selected": 14,
+      "frozen_rounds": 6
+    },
+    {
+      "matching": 7,
+      "endpoints": 14,
+      "selected": 16,
+      "frozen_rounds": 7
+    },
+    {
+      "matching": 8,
+      "endpoints": 16,
+      "selected": 18,
+      "frozen_rounds": 8
+    },
+    {
+      "matching": 9,
+      "endpoints": 18,
+      "selected": 20,
+      "frozen_rounds": 9
+    },
+    {
+      "matching": 10,
+      "endpoints": 20,
+      "selected": 22,
+      "frozen_rounds": 10
+    },
+    {
+      "matching": 11,
+      "endpoints": 22,
+      "selected": 24,
+      "frozen_rounds": 11
+    },
+    {
+      "matching": 12,
+      "endpoints": 24,
+      "selected": 26,
+      "frozen_rounds": 12
+    },
+    {
+      "matching": 13,
+      "endpoints": 26,
+      "selected": 28,
+      "frozen_rounds": 13
+    },
+    {
+      "matching": 14,
+      "endpoints": 28,
+      "selected": 30,
+      "frozen_rounds": 14
+    },
+    {
+      "matching": 15,
+      "endpoints": 30,
+      "selected": 32,
+      "frozen_rounds": 15
+    },
+    {
+      "matching": 16,
+      "endpoints": 32,
+      "selected": 34,
+      "frozen_rounds": 16
+    },
+    {
+      "matching": 17,
+      "endpoints": 34,
+      "selected": 36,
+      "frozen_rounds": 17
+    },
+    {
+      "matching": 18,
+      "endpoints": 36,
+      "selected": 38,
+      "frozen_rounds": 18
+    },
+    {
+      "matching": 19,
+      "endpoints": 38,
+      "selected": 40,
+      "frozen_rounds": 19
+    },
+    {
+      "matching": 20,
+      "endpoints": 40,
+      "selected": 42,
+      "frozen_rounds": 20
+    },
+    {
+      "matching": 21,
+      "endpoints": 42,
+      "selected": 44,
+      "frozen_rounds": 21
+    },
+    {
+      "matching": 22,
+      "endpoints": 44,
+      "selected": 46,
+      "frozen_rounds": 22
+    },
+    {
+      "matching": 23,
+      "endpoints": 46,
+      "selected": 48,
+      "frozen_rounds": 23
+    },
+    {
+      "matching": 24,
+      "endpoints": 48,
+      "selected": 50,
+      "frozen_rounds": 24
+    },
+    {
+      "matching": 25,
+      "endpoints": 50,
+      "selected": 52,
+      "frozen_rounds": 25
+    },
+    {
+      "matching": 26,
+      "endpoints": 52,
+      "selected": 54,
+      "frozen_rounds": 26
+    },
+    {
+      "matching": 27,
+      "endpoints": 54,
+      "selected": 56,
+      "frozen_rounds": 27
+    },
+    {
+      "matching": 28,
+      "endpoints": 56,
+      "selected": 58,
+      "frozen_rounds": 28
+    },
+    {
+      "matching": 29,
+      "endpoints": 58,
+      "selected": 60,
+      "frozen_rounds": 29
+    },
+    {
+      "matching": 30,
+      "endpoints": 60,
+      "selected": 62,
+      "frozen_rounds": 30
+    },
+    {
+      "matching": 31,
+      "endpoints": 62,
+      "selected": 64,
+      "frozen_rounds": 31
+    },
+    {
+      "matching": 32,
+      "endpoints": 64,
+      "selected": 66,
+      "frozen_rounds": 32
+    }
+  ],
+  "symmetry_images": 256,
+  "removable_squares": [
+    {
+      "origin": [
+        1,
+        1
+      ],
+      "two_edge_core": true
+    },
+    {
+      "origin": [
+        2,
+        2
+      ],
+      "two_edge_core": true
+    }
+  ],
+  "exhaustive": [
+    {
+      "shape": [
+        2,
+        4
+      ],
+      "feasible_pairs": 548,
+      "square_free_terminal": 98,
+      "nonempty_terminal": 0,
+      "degree_two_normalized": 548
+    },
+    {
+      "shape": [
+        2,
+        6
+      ],
+      "feasible_pairs": 12179,
+      "square_free_terminal": 865,
+      "nonempty_terminal": 0,
+      "degree_two_normalized": 12179
+    },
+    {
+      "shape": [
+        3,
+        4
+      ],
+      "feasible_pairs": 11544,
+      "square_free_terminal": 805,
+      "nonempty_terminal": 2,
+      "degree_two_normalized": 11544
+    }
+  ],
+  "packing": {
+    "pair_placements": 648,
+    "disjoint_core_placements": 576,
+    "overlapping_patch_attempts": 72,
+    "feasible_disjoint_core_pairs": 392,
+    "feasible_overlapping_patches": 0
+  },
+  "shared_donor": {
+    "shape": [
+      8,
+      14
+    ],
+    "selected": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        13
+      ]
+    ],
+    "matching": [
+      [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      [
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      [
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      [
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    ],
+    "cores": [
+      [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    ],
+    "donors": [
+      {
+        "tile": [
+          1,
+          3
+        ],
+        "selected": 0,
+        "endpoints": 2,
+        "claim_owners": [
+          1,
+          0
+        ],
+        "charge_twice": -2
+      },
+      {
+        "tile": [
+          2,
+          0
+        ],
+        "selected": 1,
+        "endpoints": 1,
+        "claim_owners": [
+          1
+        ],
+        "charge_twice": -1
+      },
+      {
+        "tile": [
+          2,
+          6
+        ],
+        "selected": 1,
+        "endpoints": 1,
+        "claim_owners": [
+          0
+        ],
+        "charge_twice": -1
+      }
+    ],
+    "core_claims": [
+      2,
+      2
+    ],
+    "patch_tiles": 11,
+    "patch_charge_twice": 0,
+    "symmetry_images": 8,
+    "bundle_terminality_claimed": false
+  },
+  "scope": "Finite controls for separate general written proofs; no universal grid inequality, full geometric Lean formalization or external novelty claim."
+}

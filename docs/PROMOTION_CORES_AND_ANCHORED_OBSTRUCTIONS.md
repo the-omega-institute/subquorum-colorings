@@ -91,6 +91,11 @@ delete original matching edges, promote one of their endpoints and retain
 all original T. It does not forbid reassigning matching edges, exchanging
 original T vertices, or adding different vertices.
 
+For the abstract Lean statement, a sound physical domain is the original
+occupied set A, with the matching involution on P extended by identity on T.
+Its universal retained-mate hypothesis must not be applied to original blanks.
+This adapter is a written interpretation, not a completed geometric Lean proof.
+
 ## 3. An anchored four-endpoint path
 
 Consider four consecutive matching endpoints p0,p1,p2,p3 in an induced

@@ -4,6 +4,7 @@ import SubQuorum.BlankWitnessCompensation
 import SubQuorum.DiagonalWitnessChains
 import SubQuorum.MixedPChainCompensation
 import SubQuorum.FrozenPromotion
+import SubQuorum.OwnedDonorCompensation
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -28,3 +29,10 @@ import SubQuorum.FrozenPromotion
 #print axioms SubQuorum.MixedPChainCompensation.occupied_exterior_gap
 #print axioms SubQuorum.MixedPChainCompensation.transition_charge
 #print axioms SubQuorum.FrozenPromotion.frozen_exclusion
+#print axioms SubQuorum.OwnedDonorCompensation.turn_forces_square
+#print axioms SubQuorum.OwnedDonorCompensation.branch_forces_square
+#print axioms SubQuorum.OwnedDonorCompensation.two_side_supports_impossible
+#print axioms SubQuorum.OwnedDonorCompensation.frozen_chain
+#print axioms SubQuorum.OwnedDonorCompensation.single_endpoint_donor_unique
+#print axioms SubQuorum.OwnedDonorCompensation.owned_donor_budget
+#print axioms SubQuorum.OwnedDonorCompensation.owned_aggregate

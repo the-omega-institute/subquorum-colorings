@@ -69,6 +69,22 @@ Four additional Lean declarations pass; arbitrary internal-debt compensation
 and overlapping ownership remain open. The original pressured theorem now
 has an independent ACCEPT; this later extension is reviewed separately.
 
+The [square-free endpoint and owned-donor theorem](docs/SQUARE_FREE_ENDPOINTS_AND_OWNED_DONORS.md)
+classifies single-terminal endpoint graphs without an all-P unit square:
+their components are straight even paths with alternating selected supports,
+and every endpoint freezes. A separate allocation theorem uses actual matching
+endpoints to assign half-payments from tiles with at most two occupied vertices,
+including a physical two-source patch sharing a two-endpoint donor. Anchored
+diamond donors are automatically exclusive when their central cores are disjoint.
+Seven new standalone Lean declarations pass; the full graph classification
+and geometric allocation have written proofs. General coverage remains open.
+
+The [exact promotion-core and frozen-obstacle note](docs/PROMOTION_CORES_AND_ANCHORED_OBSTRUCTIONS.md)
+gives a greatest fixed-side promotion core and an8-by8obstacle excluding every
+oriented bundle while retaining positive central charge. Its earlier core/frozen
+package received an independent ACCEPT and full CI; the later donor geometry,
+tight completion and newest classification are reviewed separately.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search
