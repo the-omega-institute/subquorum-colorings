@@ -110,6 +110,12 @@ restriction. The theorem itself does not prove(4)'s coverage hypothesis
 for every grid configuration. No unrestricted five-sixths improvement or
 grid triple equality is asserted.
 
+The reservation failure below now has an exact parity/surplus accounting
+and a safe order for its two actual donors. See
+[Safe reservations and cross-component parity compensation](SAFE_RESERVATIONS_AND_CROSS_COMPONENT_PARITY.md).
+That follow-up also proves a batch criterion and excludes double use
+of parity changes from rank-branch components.
+
 ## 4. First possible separating failure moves to residual charge five
 
 **Theorem2.** If F(r)<q but the target survives, sigma=R-q>=0, then

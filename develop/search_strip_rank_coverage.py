@@ -9,6 +9,7 @@ import time
 import z3
 
 from check_two_leg_corner_obstruction import saturated_endpoint_donors
+from component_strip_certificates import mixed_component_allocation
 from owned_corner_witnesses import physical_donors
 from sealed_strip_allocation import maximal_strips
 from search_frozen_receiver_ceiling import count, encoding, verify
@@ -77,8 +78,40 @@ def first_balanced_shape(solver, selected, endpoints, rows, columns):
     solver.add(z3.Or(shared))
 
 
+def first_mixed_shape(solver, selected, endpoints, rows, columns):
+    tiles = list(itertools.product(range(rows//2), range(columns//2)))
+    occupied = {}
+    capacities = {}
+    for tile in tiles:
+        cells = [(2*tile[0]+local_row, 2*tile[1]+local_column)
+                 for local_row, local_column in itertools.product((0, 1), repeat=2)]
+        occupied[tile] = z3.Or([endpoints[point] for point in cells])
+        capacities[tile] = z3.If(occupied[tile], 0,
+                                 2-count(selected[point] for point in cells))
+    active = []
+    weighted = []
+    for horizontal in (True, False):
+        bands, length = (rows//2, columns//2) if horizontal else (columns//2, rows//2)
+        for band in range(bands):
+            tile_at = lambda index: (band, index) if horizontal else (index, band)
+            for start in range(length):
+                for stop in range(start+1, length+1):
+                    actual = [z3.Not(occupied[tile_at(index)]) for index in range(start, stop)]
+                    if start:
+                        actual.append(occupied[tile_at(start-1)])
+                    if stop < length:
+                        actual.append(occupied[tile_at(stop)])
+                    maximal = z3.And(actual)
+                    capacity = z3.Sum([capacities[tile_at(index)] for index in range(start, stop)])
+                    active.append(z3.And(maximal, capacity > 0))
+                    weighted.append(z3.If(maximal, capacity/2, 0))
+    total = z3.Sum(list(capacities.values()))
+    solver.add(total >= 5, total <= 6, count(active) == 4, z3.Sum(weighted) <= 4)
+
+
 def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
-           first_balanced_obstruction=False):
+           first_balanced_obstruction=False, first_mixed_obstruction=False):
+    assert not (first_balanced_obstruction and first_mixed_obstruction)
     actual_endpoints = None
     if fixed_geometry is not None:
         rows, columns = fixed_geometry['shape']
@@ -101,6 +134,10 @@ def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
         first_balanced_shape(solver, selected, endpoints, rows, columns)
         solver.add(charge == 4)
         cover = z3.IntVal(3)
+    elif first_mixed_obstruction:
+        first_mixed_shape(solver, selected, endpoints, rows, columns)
+        solver.add(charge == 5)
+        cover = z3.IntVal(4)
     else:
         cover = rank_cover(solver, selected, endpoints, rows, columns)
     solver.add(cover < charge)
@@ -110,7 +147,9 @@ def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
                   fixed_endpoint_geometry=actual_endpoints is not None,
                   require_frozen=require_frozen,
                   first_balanced_obstruction=first_balanced_obstruction,
+                  first_mixed_obstruction=first_mixed_obstruction,
                   rank_encoding='exact_two_doubled_tiles_shape' if first_balanced_obstruction
+                                else 'four_active_runs_odd_degree_shape' if first_mixed_obstruction
                                 else 'run_slot_vertex_cover',
                   seconds=round(time.monotonic()-started, 3), z3_version=z3.get_version_string(),
                   scope='Finite discovery only. One connected single-terminal endpoint component '
@@ -142,6 +181,13 @@ def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
             positive = [tile for tile, capacity in residual.items() if capacity]
             assert len(positive) == 2 and all(residual[tile] == 2 for tile in positive)
             assert any(set(positive) <= set(record['tiles']) for record in records)
+        if first_mixed_obstruction:
+            mixed = mixed_component_allocation(records, residual)
+            assert checked['receiver_charge'] == 5 and rank == mixed['credits'] == 4
+            assert sum(residual.values()) in (5, 6)
+            assert len(mixed['components']) == 1
+            assert len(mixed['components'][0]['vertices']) == 4
+            report['mixed_certificate'] = mixed
         report.update(selected=sorted(actual_selected), matching=actual_matching, checked=checked,
                       exact_rank=rank, vertex_cover=cover_value)
     elif status == z3.unknown:
@@ -156,13 +202,16 @@ def main():
     parser.add_argument('--timeout', type=int, default=60)
     parser.add_argument('--fixed-geometry', type=Path)
     parser.add_argument('--single-terminal-only', action='store_true')
-    parser.add_argument('--first-balanced-obstruction', action='store_true')
+    first_modes = parser.add_mutually_exclusive_group()
+    first_modes.add_argument('--first-balanced-obstruction', action='store_true')
+    first_modes.add_argument('--first-mixed-obstruction', action='store_true')
     parser.add_argument('--output', type=Path, required=True)
     arguments = parser.parse_args()
     fixed = json.loads(arguments.fixed_geometry.read_text()) if arguments.fixed_geometry else None
     report = search(arguments.rows, arguments.columns, arguments.timeout, fixed,
                     require_frozen=not arguments.single_terminal_only,
-                    first_balanced_obstruction=arguments.first_balanced_obstruction)
+                    first_balanced_obstruction=arguments.first_balanced_obstruction,
+                    first_mixed_obstruction=arguments.first_mixed_obstruction)
     if arguments.fixed_geometry:
         report['fixed_geometry_source'] = str(arguments.fixed_geometry)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
