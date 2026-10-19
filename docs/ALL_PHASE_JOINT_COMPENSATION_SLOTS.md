@@ -206,8 +206,12 @@ G<=2B01 or the assertion that every consumed gate belongs to an original
 full foreign bar tile to all source phases is FALSE.
 
 This is a new use of the existing opposed-band construction, not a new
-claim about that family's origin. Its finer budget is N+S-G=4 and its
-actual slack is 26. The new sufficient lower bound (3) is -4 there:
+claim about that family's origin. Its finer budget is N+S-G=4. In the
+original 8-by-10 rectangle it has 44 endpoints, 22 matching edges and
+12 selections, hence actual slack 6. The checker also tests an even
+translation into a padded 10-by-12 rectangle with slack 26; this changes
+the ambient deficit, not the source slots or finer budget. The new
+sufficient lower bound (3) is -4 there:
 the criterion is not necessary and must not be presented as automatic
 compensation for every admissible fusion. The fully frozen zero-credit
 tip family from the preceding note supplies a different obstruction to
