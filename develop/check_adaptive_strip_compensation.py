@@ -21,20 +21,23 @@ if not __debug__:
     raise RuntimeError('Run without -O: verification uses assertions.')
 
 
-def maximum_independent_certificate(weights, horizontal, edges):
+def maximum_strip_certificate(weights, horizontal, edges, capacities=None):
     count = len(weights)
     source, sink = count, count+1
     residual = [[0]*(count+2) for _ in range(count+2)]
     infinite = sum(weights)+1
+    if capacities is None:
+        capacities = [infinite]*len(edges)
+    assert len(capacities) == len(edges) and all(capacity >= 0 for capacity in capacities)
     for index, weight in enumerate(weights):
         assert weight >= 0
         if horizontal[index]:
             residual[source][index] = weight
         else:
             residual[index][sink] = weight
-    for first, second in edges:
+    for (first, second), capacity in zip(edges, capacities):
         assert horizontal[first] and not horizontal[second]
-        residual[first][second] = infinite
+        residual[first][second] = capacity
     flow = 0
     while True:
         parents = {source: None}
@@ -61,18 +64,28 @@ def maximum_independent_certificate(weights, horizontal, edges):
         flow += amount
     chosen = {index for index in range(count)
               if (index in parents) == horizontal[index]}
-    cover = set(range(count))-chosen
-    assert all(first not in chosen or second not in chosen for first, second in edges)
-    assert all(first in cover or second in cover for first, second in edges)
-    assert sum(weights[index] for index in cover) == flow
-    value = sum(weights[index] for index in chosen)
+    penalty = sum(capacity for (first, second), capacity in zip(edges, capacities)
+                  if first in chosen and second in chosen)
+    value = sum(weights[index] for index in chosen)-penalty
     assert value == sum(weights)-flow
     shared_flow = [(first, second, residual[second][first]) for first, second in edges
                    if residual[second][first]]
     assert sum(amount for first, second, amount in shared_flow) == flow
+    assert all(residual[second][first] <= capacity
+               for (first, second), capacity in zip(edges, capacities))
     for index, weight in enumerate(weights):
         assert sum(amount for first, second, amount in shared_flow
                    if index in (first, second)) <= weight
+    return value, chosen, shared_flow
+
+
+def maximum_independent_certificate(weights, horizontal, edges):
+    value, chosen, shared_flow = maximum_strip_certificate(weights, horizontal, edges)
+    cover = set(range(len(weights)))-chosen
+    assert all(first not in chosen or second not in chosen for first, second in edges)
+    assert all(first in cover or second in cover for first, second in edges)
+    assert value == sum(weights[index] for index in chosen)
+    assert sum(weights[index] for index in cover) == sum(amount for _, _, amount in shared_flow)
     return value, chosen, shared_flow
 
 

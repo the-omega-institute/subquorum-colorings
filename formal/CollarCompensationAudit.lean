@@ -17,6 +17,8 @@ import SubQuorum.CombEndFlux
 import SubQuorum.ParallelCombFlux
 import SubQuorum.OrthogonalMouthFlux
 import SubQuorum.AdaptiveStripCompensation
+import SubQuorum.CapacityAwareStrips
+import SubQuorum.RemoteCombRungs
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -118,3 +120,9 @@ import SubQuorum.AdaptiveStripCompensation
 #print axioms SubQuorum.AdaptiveStripCompensation.exclusive_donor_budget
 #print axioms SubQuorum.AdaptiveStripCompensation.independent_strip_compensation
 #print axioms SubQuorum.AdaptiveStripCompensation.negative_star_budget
+#print axioms SubQuorum.CapacityAwareStrips.capped_donor_budget
+#print axioms SubQuorum.CapacityAwareStrips.capacity_two_pair_compensation
+#print axioms SubQuorum.RemoteCombRungs.continuing_comb_boundary
+#print axioms SubQuorum.RemoteCombRungs.remote_strip_partition
+#print axioms SubQuorum.RemoteCombRungs.weighted_rung_capacity
+#print axioms SubQuorum.RemoteCombRungs.integral_flux_compensation

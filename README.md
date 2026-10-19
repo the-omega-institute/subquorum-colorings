@@ -109,6 +109,22 @@ still open. There are 70 physical controls, 32 symmetry images, 1,024
 abstract graph controls and 100 scoped local Lean declarations; the
 geometric adapter and all-k proof remain written.
 
+The [capacity-aware extension](docs/CAPACITY_AWARE_STRIP_COMPENSATION.md)
+permits overlapping selected strips, deducting at most two units per shared
+physical tile. An all-even-width family has eight sources, flux -4 and
+exclusive weight only six, but a capped certificate of eight, strengthened
+to nine by a retained support. The
+[remote-rung theorem](docs/REMOTE_COMB_RUNG_COMPENSATION.md) then pays negative
+flux from distant endpoint-free physical strips, including unequal comb
+lengths and the existing zero-mouth-payment locality examples. It includes
+the integral consequence F>=-1 implies coefficient one in the retained
+class. There are 45 capacity-aware and 54 remote physical controls, with
+106 scoped local Lean declarations. The first exclusive-note review found
+a chamber-distance proof gap, now repaired with actual support formulas;
+its follow-up and the separate new-mechanism review are pending. General
+existence of sufficient distant capacity and arbitrary bent-source coverage
+remain open; these are written geometric theorems with scoped formal support.
+
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees
 under explicit occupied-face and blank-cap assumptions. Each distinct leaf

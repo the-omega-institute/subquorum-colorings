@@ -24,12 +24,13 @@ and D_i its original physical no-P deficit. Then
     D_i=2b_i+f_i+a_i+d'_i,       a_i,d'_i>=0.          (1)
 
 Indeed the accepted strip identity is D_i=2+L_i+f_i+a_i+d'_i. The coalescing
-argument gives L_i=2b_i-2 individually: the 2b_i distinct parallel tip tiles
-have exactly two extreme tiles outside this strip. Any parallel tip in
-the strip has its owner's mouth in this same merged interval, since its
-adjacent mouth would otherwise make two intervals adjacent and hence merged.
-Perpendicular tips are counted by a_i, not by L_i. Thus (1) holds per strip,
-not merely after global summation. Also sum_i b_i=B.
+argument gives L_i=2b_i-2 individually. Any parallel tip in the strip has
+its owner's mouth in this same merged interval, since its adjacent mouth
+would otherwise make two intervals adjacent and hence merged. At least two
+member tips are outside, at the two extreme ends, so L_i<=2b_i-2. The
+accepted global conservation sum L_i=2B-2C=sum(2b_i-2) forces every one
+of these inequalities to be an equality. Perpendicular tips are counted
+by a_i, not by L_i. Also sum_i b_i=B.
 
 Define the conservative, integral strip weight
 
@@ -45,6 +46,8 @@ so H is bipartite, with horizontal and vertical sides. Endpoint-containing
 and zero-deficit intersections may be retained as edges: this conservative
 choice depends only on the prescribed mouth geometry. Removing an edge is
 valid only after verifying that its shared tiles contribute no actual donor.
+For a uniform completion-class certificate, that exclusion must hold in
+every allowed completion, not just in an observed baseline.
 
 ## 2. General exclusive-strip compensation lemma
 
@@ -92,8 +95,10 @@ and taking complements gives
 
 The standard integral max-flow/min-cut theorem supplies the cut and an
 independent-set witness. The checker separately verifies their weights,
-the cover property and exclusive physical ownership; no trust in a solver
-status is needed for the resulting lower bound.
+the cover property and exclusive physical ownership. It also saves a
+feasible edge-flow witness and checks its capacities and vertex totals;
+its value equals the cut weight. The latter equality certifies optimality,
+whereas an independent-set witness alone certifies only the lower bound.
 
 There is an exact limitation statement for these scalar data. Relax physical
 resources to permit one unbounded shared resource on every graph edge and
@@ -156,11 +161,27 @@ even rectangle (12p+18)-by-(8p+30). These are exactly the coordinates in
 `negative_star(p)` in `develop/check_adaptive_strip_compensation.py`.
 
 **General feasibility and completeness proof.** Endpoint sets of distinct
-H_i have Manhattan distance at least four: successive chamber rows and arm
-columns differ by four, and later chambers lie strictly between earlier
-arms. Their prescribed supports are each one step from their own endpoint,
-so supports of distinct H_i have distance at least two and see no foreign
-endpoint. Source K and all its supports lie strictly inside the H_i arms
+H_i have Manhattan distance at least three. The distance-three pairs occur
+only between the lower chamber row R_i+1 of H_i and the upper chamber row
+R_i+4 of H_(i+1), where R_i=2+4i; arm-to-arm and arm-to-chamber separations
+are at least four. Three steps prevent a prescribed support from seeing a
+foreign endpoint, but do not alone exclude support-to-support adjacency.
+Here is the missing interface check. In origin-(R,x) coordinates a source's
+supports are precisely
+
+    (R,x-1),(R,x+w);
+    (R+2j,x-1),(R+2j,x+w) for j=1,...,h+1;
+    (R+2j+1,x+1),(R+2j+1,x+w-2) for j=1,...,h;
+    (R+2h+3,x),(R+2h+3,x+w-1).
+
+In particular there is no support above row R. If supports assigned to
+two distance-three chamber endpoints were adjacent, they would have to
+occupy rows R_i+2 and R_i+3 in a common column. But H_(i+1) has no support
+at R_i+3, since its origin row is R_i+4. Such adjacency is impossible.
+All other endpoint separations are at least four and hence give support
+distance at least two. This proves compatibility for the original coordinates;
+it does not use the incorrect distance-four assertion in the first review
+input. Source K and all its supports lie strictly inside the H_i arms
 and below all H_i chambers, with endpoint separation at least four. For
 example its top chamber endpoint row is 4p+5, while all H_i chamber rows
 are at most 4p-1; its chamber column is at least six beyond the innermost
@@ -213,6 +234,16 @@ a genuinely negative-flux application. In the explicit baseline the earlier
 crossing criterion fails: K_loss+O=2p+1>B+J=p+1. Extra slack may give other
 ways to certify a particular completion; the comparison here concerns the
 stated structural criteria, not every possible use of the exact ledger.
+
+Here and in Section 5, a completion retains the listed sources and combs as
+complete endpoint components, with their matching and selected supports, and
+has no additional endpoint component meeting the mouth union G. Additional
+feasible selections and allowed nonpositive components outside G are permitted.
+This fixes the end incidences used by the displayed weights. The more general
+lemma in Section 2 allows other mouth combs, but recomputes their actual f_i.
+For the old-criterion comparison, O counts complete combs whose sparse end
+belongs to G and saturated end does not; J counts the reverse membership.
+Both use union membership, rather than strip multiplicity.
 
 ## 5. Arbitrarily negative flux and why componentwise choices matter
 
@@ -276,13 +307,21 @@ As in the prior work, the full geometric
 adapter, coalescing, graph construction, maximum-flow theorem and explicit
 grid family remain written proofs. No full geometric Lean theorem is claimed.
 
-An independent Oracle review of the new lemma, scalar optimality argument
-and complete all-p/all-k construction is live as task
-fcb4aa67-e6d9-4f74-af8d-c0c33fcd2160, conversation conv_b78981283a599e89.
-Its observed broker phase is waiting_response on worker y729qv24tg-go-1;
-no verdict is inferred. The separate broader negative-flux research question
-continues in task f8af741f-8551-49e5-a249-db603145f9ea, conversation
-conv_d54fcca063697f6b. Its original streaming connection is retained too.
+The first independent review fcb4aa67-e6d9-4f74-af8d-c0c33fcd2160 completed
+REVISE at 11:57:14 UTC. It accepts the compensation lemma, weighted cut
+and relaxed optimum, but correctly rejects the first input's distance-four
+argument. The explicit support-interface repair above, completion quantifier,
+O/J definitions and exact flow witness address its requested revisions.
+Follow-up c91ffe7a-1550-4fe1-94b7-087d8bc51f8b is live in conversation
+conv_b78981283a599e89, original stream 32679; no final ACCEPT is inferred.
+The initial stream 81531 ended with a TLS observation error, but the same
+task's completed response was retrieved and archived without restarting it.
+
+The broader research task f8af741f completed at 11:58:11 UTC; its proposal
+is developed separately in `REMOTE_COMB_RUNG_COMPENSATION.md`. The later
+`CAPACITY_AWARE_STRIP_COMPENSATION.md` also improves this note's conservative
+exclusive certificate. Both extensions have a separate live review and are
+not covered by the first exclusive-note assessment.
 
 The existing all-radius frozen-end locality construction has one mouth with
 two sparse ends, b=1 and f=-2, so q=0 and W=0<B=1. This identifies a real
