@@ -21,12 +21,12 @@ if not __debug__:
     raise RuntimeError('Run without -O: verification uses assertions.')
 
 
-def inspect(current, sources, cavity):
-    if len({row for row, column in sources[0]['chamber']}) != 2:
+def region_record(current, sources, cavity, base_payment=2, horizontal=True):
+    if not horizontal:
         shape, selected, matching = transformed(*current, True, False, False)
-        return inspect((*shape, selected, matching),
-                       [move_source(source, lambda point: (point[1], point[0])) for source in sources],
-                       {(column, row) for row, column in cavity})
+        return region_record((*shape, selected, matching),
+                             [move_source(source, lambda point: (point[1], point[0])) for source in sources],
+                             {(column, row) for row, column in cavity}, base_payment)
     assert feasible(current)
     checked = verify_terminal(current)
     endpoints = endpoint_data(current)[0]
@@ -35,12 +35,11 @@ def inspect(current, sources, cavity):
     assert all(source['endpoints'] in components for source in sources)
     assert sorted(receiver['charge_twice'] for receiver in checked['receivers']) == [0]*(
         len(components)-len(sources))+[2]*len(sources)
-    assert not sources[0]['endpoints'] & cavity
     rows = sorted({row for row, column in cavity})
     columns = sorted({column for row, column in cavity})
     boundary = set(itertools.product(rows, (columns[0], columns[-1])))
     assert not boundary & endpoints
-    assert len(boundary & current[2]) == len(rows)-2
+    assert len(boundary & current[2]) == len(rows)-base_payment
     tiles = {(row//2, column//2) for row, column in cavity}
     assert vertices_of(tiles) == cavity
     owner = {point: index for index, component in enumerate(components) for point in component}
@@ -61,11 +60,11 @@ def inspect(current, sources, cavity):
     source_components = [source['endpoints'] for source in sources]
     for index, component in enumerate(components):
         gain = sum(band_gains[index, upper] for upper in rows[::2])
+        if not component & cavity:
+            assert gain == 0
+            continue
         if component in source_components:
             source = sources[source_components.index(component)]
-            if source is sources[0]:
-                assert gain == 0
-                continue
             parallel = len({row for row, column in source['chamber']}) == 2
             tip_tiles = {(row//2, column//2) for row, column in source['tips']}
             tip_count = len(tip_tiles & tiles)
@@ -114,7 +113,7 @@ def inspect(current, sources, cavity):
             flux += membership
     payment = sum(2-record['selected'] for record in physical if not record['endpoints'])
     shifted_payment = sum(2-record['selected'] for record in shifted if not record['endpoints'])
-    assert payment == 2+phase+flux+shifted_payment
+    assert payment == base_payment+phase+flux+shifted_payment
     deficit = checked['area']//2-checked['objective']
     assert deficit >= payment-len(sources)
     positive_donors = [dict(tile=tile, deficit=2-len(vertices_of({tile}) & current[2]))
@@ -126,6 +125,12 @@ def inspect(current, sources, cavity):
                 shifted_payment=shifted_payment, positive_donor_count=len(positive_donors),
                 positive_donors=positive_donors if len(positive_donors) <= 16 else None,
                 half_area_deficit=deficit)
+
+
+def inspect(current, sources, cavity):
+    assert not sources[0]['endpoints'] & cavity
+    horizontal = len({row for row, column in sources[0]['chamber']}) == 2
+    return region_record(current, sources, cavity, horizontal=horizontal)
 
 
 def escaping_source_family(count, width, depth, foreign_width):

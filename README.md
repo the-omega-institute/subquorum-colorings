@@ -32,6 +32,19 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [whole-channel compensation theorem](docs/COMB_CHANNEL_COMPENSATION.md)
+allows a remote terminal band to contain matching endpoints. Its exact
+boundary payment is two for aligned comb ends and one for unequal heights,
+plus actual source phase and signed complete-comb end flux. Pointwise
+residual capacity combines it with the original mouth ledger without donor
+reuse. Uniform zero-mouth families include an occupied terminal comb and
+a contained perpendicular source; actual source phase repairs an otherwise
+invalid weight-two allocation. There are 194 physical controls, eight
+symmetry images and three additional conditional Lean statements, with
+123 scoped declarations audited cumulatively. General channel existence
+and unrestricted grid equality remain open; the new written proof has a
+separate pending review.
+
 | Result | Scope | Verification |
 | --- | --- | --- |
 | Hypercube coloring number | All dimensions n >= 2 | Lean 4, pinned Mathlib; original modules from trureturing |

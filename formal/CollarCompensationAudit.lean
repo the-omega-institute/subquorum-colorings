@@ -22,6 +22,7 @@ import SubQuorum.RemoteCombRungs
 import SubQuorum.ClosedSourceCavities
 import SubQuorum.MixedCavitySources
 import SubQuorum.OpenSourceCavities
+import SubQuorum.CombChannels
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -143,3 +144,6 @@ import SubQuorum.OpenSourceCavities
 #print axioms SubQuorum.OpenSourceCavities.partial_band_sum_nonnegative
 #print axioms SubQuorum.OpenSourceCavities.open_source_cavity_partition
 #print axioms SubQuorum.OpenSourceCavities.twofold_open_source_compensation
+#print axioms SubQuorum.CombChannels.whole_channel_partition
+#print axioms SubQuorum.CombChannels.aligned_unequal_weighted_payment
+#print axioms SubQuorum.CombChannels.residual_channel_compensation
