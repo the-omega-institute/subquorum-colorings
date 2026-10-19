@@ -223,7 +223,8 @@ receiver classification, donor ownership and whole-grid application remain
 written. Execution receipts and independent-review status are recorded
 separately. The first independent assessment returned REVISE for a missing
 local ledger justification and end-tile wording; both are addressed in
-Section 3. A same-conversation repair assessment is pending.
+Section 3. The same-conversation repair assessment completed ACCEPT for
+the written mathematics under these stated hypotheses.
 
 Executed controls pass for 464 independent top-selection words, 36 larger
 parameter cases through rail length 128, four multi-rail cases through eight
@@ -248,8 +249,12 @@ output/frozen-rail-elbow-review-response.json. It confirms the freezing,
 charge formula and non-reuse ledger; the generic terminal-ownership citation
 is now replaced by the explicit local closed-receiver argument above.
 The parity wording is clarified without adopting the review's impossible
-odd-start endpoint at w-1. A new repair turn retains the original follow-up
-stream; no terminal ACCEPT has yet returned. Metadata and independent scope
+odd-start endpoint at w-1. Repair task 5ba5f6de-e82e-44fc-99f1-0f6ca39f4887
+completed ACCEPT at 2026-10-19T16:24:20.229+00:00, observed gpt_6/pro. Its
+exact answer matches both the original follow-up stream and terminal server
+response, archived in output/frozen-rail-elbow-repair-review-response.json.
+It confirms the parity correction and the local saturated/deficient bijection
+without requiring ambient terminality. Metadata and independent scope
 are in output/frozen-rail-elbow-review.json. Older phase-review quota rejections
 are different requests and are not restarted or counted as this assessment.
 

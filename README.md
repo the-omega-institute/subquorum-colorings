@@ -40,6 +40,8 @@ exact charge t-ell-2epsilon<=0, so the old owned corner pays the enlarged
 receiver without reusing a donor or counting the rail loss twice. This
 extends the explicit coefficient-one class and obstructs a generalization
 of stepped-core isolation, while leaving arbitrary grid configurations open.
+The repaired written proof has independent ACCEPT; 141 scoped local Lean
+declarations and the physical controls have separate passing receipts.
 
 The [stepped-patch isolation theorem](docs/STEPPED_PATCH_ISOLATION.md) removes
 the completeness assumption from prescribed arbitrary-length stepped cores.

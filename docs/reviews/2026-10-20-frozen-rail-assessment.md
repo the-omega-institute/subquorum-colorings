@@ -25,7 +25,16 @@ objection to the actual parity formula.
 
 A same-conversation repair turn was submitted with the explicit local proof
 and parity explanation, task5ba5f6de-e82e-44fc-99f1-0f6ca39f4887 using
-original streaming handle47722. Its result
-is pending. The original REVISE is not converted to ACCEPT by local repair.
+original streaming handle47722. It completed ACCEPT at
+2026-10-19T16:24:20.229+00:00, observed gpt_6/pro. The response in
+output/frozen-rail-elbow-repair-review-response.json exactly equals both
+the concatenated original SSE content and the terminal server response.
+It confirms the local closed-receiver proof, actual parity split, freezing,
+positive extraction obstruction and non-reuse ledger. This is an actual
+returned acceptance after a new review turn, with the original REVISE retained.
+
+The accepted response refers once to side supports at (-1,-1),(-1,w);
+the prescribed supports in the source are (0,-1),(0,w), whose upper neighbors
+are those blank sites. The source's correct coordinates are retained.
 Code and Lean execution are separately supported by their receipts; neither
 assessment claims to certify those executions.
