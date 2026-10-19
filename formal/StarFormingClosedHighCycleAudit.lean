@@ -7,3 +7,7 @@ import StarForming.ClosedHighCycle
 #print axioms StarForming.ClosedHighCycle.sum_module_caps
 #print axioms StarForming.ClosedHighCycle.exact_parameters
 #print axioms StarForming.ClosedHighCycle.architecture_gap_bound
+#print axioms StarForming.ClosedHighCycle.two_witness_density
+#print axioms StarForming.ClosedHighCycle.shared_port_gap_bound
+#print axioms StarForming.ClosedHighCycle.architecture_equality_balance
+#print axioms StarForming.ClosedHighCycle.architecture_imbalance_deficit

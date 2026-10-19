@@ -1,60 +1,66 @@
 {
   "status": "ALL_CHECKS_PASSED",
-  "checked_at": "2026-10-19T01:56:58.881614+00:00",
+  "checked_at": "2026-10-19T02:20:39.338982+00:00",
   "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
-  "active_lean_lake_before_run": [],
-  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3729.\nPages active:                                 236279.\nPages inactive:                               218758.\nPages speculative:                             16536.\nPages throttled:                                   0.\nPages wired down:                             253223.\nPages purgeable:                                 566.\n\"Translation faults\":                    15810360490.\nPages copy-on-write:                       967956239.\nPages zero filled:                        6485043960.\nPages reactivated:                        2960394226.\nPages purged:                              137334123.\nFile-backed pages:                            289167.\nAnonymous pages:                              182406.\nPages stored in compressor:                  1635083.\nPages occupied by compressor:                 278034.\nDecompressions:                           2386356259.\nCompressions:                             2821063383.\nPageins:                                  4281437239.\nPageouts:                                   11963488.\nSwapins:                                    25409095.\nSwapouts:                                   31835422.\n",
+  "active_lean_lake_before_run": [
+    {
+      "pid": 39570,
+      "executable": "lean",
+      "rss_kib": 1306272
+    }
+  ],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3568.\nPages active:                                 212807.\nPages inactive:                               194665.\nPages speculative:                             16559.\nPages throttled:                                   0.\nPages wired down:                             274284.\nPages purgeable:                                 228.\n\"Translation faults\":                    15840585723.\nPages copy-on-write:                       969143294.\nPages zero filled:                        6496374760.\nPages reactivated:                        2967984235.\nPages purged:                              137489420.\nFile-backed pages:                            297014.\nAnonymous pages:                              127017.\nPages stored in compressor:                  1675402.\nPages occupied by compressor:                 305006.\nDecompressions:                           2392361092.\nCompressions:                             2828230259.\nPageins:                                  4311706408.\nPageouts:                                   12060309.\nSwapins:                                    25434077.\nSwapouts:                                   31840560.\n",
   "checks": [
     {
       "module": "StarForming/RegularBound.lean",
-      "seconds": 4.727,
+      "seconds": 4.766,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "StarForming/CoverPullback.lean",
-      "seconds": 0.475,
+      "seconds": 0.502,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "StarForming/DissociationCover.lean",
-      "seconds": 0.489,
+      "seconds": 0.488,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "StarForming/LongCoreWord.lean",
-      "seconds": 5.038,
+      "seconds": 4.983,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "StarForming/LongCoreUpper.lean",
-      "seconds": 0.801,
+      "seconds": 3.283,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "StarForming/ClosedHighCycle.lean",
-      "seconds": 0.474,
+      "seconds": 0.842,
       "stdout": "",
       "stderr": "",
       "exit_code": 0
     },
     {
       "module": "StarFormingClosedHighCycleAudit.lean",
-      "seconds": 0.352,
-      "stdout": "'StarForming.ClosedHighCycle.zero_hub_score' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreUpper.one_hub_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.closed_two_hub_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.module_cap' depends on axioms: [propext, Quot.sound]\n'StarForming.ClosedHighCycle.sum_module_caps' depends on axioms: [propext, Quot.sound]\n'StarForming.ClosedHighCycle.exact_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.architecture_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "seconds": 0.376,
+      "stdout": "'StarForming.ClosedHighCycle.zero_hub_score' depends on axioms: [propext, Quot.sound]\n'StarForming.LongCoreUpper.one_hub_block' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.closed_two_hub_score' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.module_cap' depends on axioms: [propext, Quot.sound]\n'StarForming.ClosedHighCycle.sum_module_caps' depends on axioms: [propext, Quot.sound]\n'StarForming.ClosedHighCycle.exact_parameters' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.architecture_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.two_witness_density' depends on axioms: [propext, Quot.sound]\n'StarForming.ClosedHighCycle.shared_port_gap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.architecture_equality_balance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.ClosedHighCycle.architecture_imbalance_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
       "stderr": "",
       "exit_code": 0
     }
   ],
-  "maximum_rss_bytes": 1287471104,
-  "scope": "Seven conditional count declarations, including the existing one-hub lemma: zero-hub bound, closed-high-seam exclusion of the two-hub exception, disjoint three-block module cap, arbitrary finite-list sum, exact beta/SF/gap arithmetic and the3/62 architecture barrier from distinct attachment and explicit dissociation lower bound. Binary cell and star inequalities are explicit premises. Normalization, graph-to-count extraction, odd-hub reflection, Heawood saturation, arbitrary-r construction, attainment and connectivity retain written proofs; the full graph theorem is not claimed Lean-formalized."
+  "maximum_rss_bytes": 1207402496,
+  "scope": "Eleven conditional count declarations, including the existing one-hub lemma: zero-hub bound, closed-high-seam exclusion of the two-hub exception, disjoint three-block module cap, arbitrary finite-list sum, exact beta/SF/gap arithmetic and the3/62 architecture barrier from distinct attachment and explicit dissociation lower bound; two-witness beta density, the extended barrier allowing shared core ports, necessary equality balance and the block/core imbalance deficit. Both dissociation witness cardinalities are explicit premises. Binary cell and star inequalities are explicit premises. Normalization, graph-to-count extraction, odd-hub reflection, Heawood saturation, arbitrary-r construction, attainment and connectivity retain written proofs; the full graph theorem is not claimed Lean-formalized."
 }

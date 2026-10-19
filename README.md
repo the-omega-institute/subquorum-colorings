@@ -40,8 +40,14 @@ Heawood blocks independently. The coefficient3/62 is also optimal within
 the distinct-port C_1/Heawood architecture under arbitrary X-only gluing.
 Seven conditional Lean counts and fixed-core/actual-ring controls pass.
 The independent Oracle review accepts the all-r Z_r theorem; the later
-architecture corollary was outside its input. The general upper
-coefficient1/14 and the rectangular-grid bridge remain open.
+architecture corollary was outside its input. A stronger
+[two-witness architecture theorem](docs/CORE_BLOCK_GAP_BARRIER.md) now
+permits reused core X attachments, arbitrary bipartite high cycles and
+regrouped hub triples: beta>=max(12r+7b,9r+8b)>=33n/62 still forces
+gap<=3n/62. Equality requires b=3r; the wrong block/core ratio has an
+explicit deficit. Eleven conditional Lean counts and285actual-gluing
+controls pass. This later theorem was outside the Z_r review input.
+The general upper coefficient1/14 and the rectangular-grid bridge remain open.
 
 The preceding [block compensation theorem](docs/HEAWOOD_BLOCK_COMPENSATION.md)
 proves **SF_2(L_k)=36k for every k>=1**. More generally b disjoint broken

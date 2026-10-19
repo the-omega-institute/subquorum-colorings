@@ -237,11 +237,13 @@ Hence g<=b. Since b<=3r,
 
 This proves(3), independently of the pending general block ledger.
 The conclusion is restricted to the stated architecture, not a universal
-cubic bound. To beat it one must leave this class, for example by
-changing the cores or obstruction blocks, permitting reused core
-attachment vertices, or modifying selected high edges. The earlier
-long-core result already shows that modifying high edges can also
-increase beta and reduce the intended gap.
+cubic bound. A subsequent [two-witness theorem](CORE_BLOCK_GAP_BARRIER.md)
+removes the distinct-attachment assumption and permits arbitrary bipartite
+high two-factors and hub regrouping, while preserving the3/62ceiling.
+Thus reusing core attachment vertices or changing high cycles alone does
+not escape the bound. Improving the coefficient requires changing other
+core incidences or obstruction blocks. The earlier long-core result also
+shows how modifying high edges can increase beta and reduce the gap.
 
 ## Evidence and scope
 
@@ -271,8 +273,9 @@ nine interface degree patterns, all with maximum score12. Normalization,
 hub cases and reflection pass. Ten actual rings give1,980literal
 selected-deletion checks and3,410vertex-deletion connectivity checks.
 The [Lean receipt](../output/closed-high-cycle-formal-check.json) records
-seven declarations, one reused from the previous one-hub proof, with only
-standard logical axioms. Local validation ran sequentially on the
+the seven original declarations, one reused from the previous one-hub
+proof, and four later counts for the enlarged two-witness architecture
+bound. All eleven use only standard logical axioms. Local validation ran sequentially on the
 authorized machine after memory and lean/lake basename preflight.
 One hundred additional arbitrary X-gluing instances, with one to five
 cores and every permitted block count, check the architecture's explicit

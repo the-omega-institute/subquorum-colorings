@@ -64,4 +64,48 @@ theorem architecture_gap_bound (cores blocks order beta star gap : Nat)
     gap ≤ blocks ∧ 62 * gap ≤ 3 * order := by
   omega
 
+theorem two_witness_density (cores blocks order beta : Nat)
+    (horder : order = 20 * cores + 14 * blocks)
+    (hfirst : 12 * cores + 7 * blocks ≤ beta)
+    (hsecond : 9 * cores + 8 * blocks ≤ beta) :
+    33 * order ≤ 62 * beta := by
+  omega
+
+theorem shared_port_gap_bound (cores blocks order beta star gap : Nat)
+    (horder : order = 20 * cores + 14 * blocks)
+    (hfirst : 12 * cores + 7 * blocks ≤ beta)
+    (hsecond : 9 * cores + 8 * blocks ≤ beta)
+    (hgap : star = beta + gap)
+    (hcompensation : 7 * star ≤ 3 * order + 2 * beta) :
+    gap ≤ blocks ∧ 7 * gap ≤ 15 * cores + 2 * blocks ∧
+      62 * gap ≤ 3 * order := by
+  have hdensity := two_witness_density cores blocks order beta horder hfirst hsecond
+  omega
+
+theorem architecture_equality_balance (cores blocks order beta star gap : Nat)
+    (horder : order = 20 * cores + 14 * blocks)
+    (hfirst : 12 * cores + 7 * blocks ≤ beta)
+    (hsecond : 9 * cores + 8 * blocks ≤ beta)
+    (hgap : star = beta + gap)
+    (hcompensation : 7 * star ≤ 3 * order + 2 * beta)
+    (hequality : 62 * gap = 3 * order) :
+    blocks = 3 * cores ∧ beta = 33 * cores ∧ star = 36 * cores ∧
+      order = 62 * cores := by
+  have hbounds := shared_port_gap_bound cores blocks order beta star gap
+    horder hfirst hsecond hgap hcompensation
+  omega
+
+theorem architecture_imbalance_deficit (cores blocks order beta star gap : Nat)
+    (horder : order = 20 * cores + 14 * blocks)
+    (hfirst : 12 * cores + 7 * blocks ≤ beta)
+    (hsecond : 9 * cores + 8 * blocks ≤ beta)
+    (hgap : star = beta + gap)
+    (hcompensation : 7 * star ≤ 3 * order + 2 * beta) :
+    (blocks ≤ 3 * cores → 62 * gap + 20 * (3 * cores - blocks) ≤ 3 * order) ∧
+    (3 * cores ≤ blocks → 170 * (blocks - 3 * cores) ≤
+      7 * (3 * order - 62 * gap)) := by
+  have hbounds := shared_port_gap_bound cores blocks order beta star gap
+    horder hfirst hsecond hgap hcompensation
+  omega
+
 end StarForming.ClosedHighCycle

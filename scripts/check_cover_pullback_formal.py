@@ -112,7 +112,7 @@ def main():
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
                 'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2,
-                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4, 'closed-high-cycle': 7}
+                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4, 'closed-high-cycle': 11}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -248,11 +248,14 @@ def main():
                             'core-isolate ownership and attainment have complete written '
                             'proofs, not a claimed full formalization of SF(L_k)=36k.')
     if arguments.audit == 'closed-high-cycle':
-        receipt['scope'] = ('Seven conditional count declarations, including the existing one-hub '
+        receipt['scope'] = ('Eleven conditional count declarations, including the existing one-hub '
                             'lemma: zero-hub bound, closed-high-seam exclusion of the two-hub '
                             'exception, disjoint three-block module cap, arbitrary finite-list '
                             'sum, exact beta/SF/gap arithmetic and the3/62 architecture barrier '
-                            'from distinct attachment and explicit dissociation lower bound. Binary cell and star '
+                            'from distinct attachment and explicit dissociation lower bound; '
+                            'two-witness beta density, the extended barrier allowing shared core ports, '
+                            'necessary equality balance and the block/core imbalance deficit. '
+                            'Both dissociation witness cardinalities are explicit premises. Binary cell and star '
                             'inequalities are explicit premises. Normalization, graph-to-count '
                             'extraction, odd-hub reflection, Heawood saturation, arbitrary-r '
                             'construction, attainment and connectivity retain written proofs; '
