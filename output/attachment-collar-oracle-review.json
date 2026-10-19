@@ -1,11 +1,11 @@
 {
   "task_id": "2e81689f-ebdb-4ef9-902c-0c3af27da282",
   "pool_id": "bc0a6e6f-6efa-42f9-9298-3cfcccba0cd4",
-  "status": "dispatched",
+  "status": "completed",
   "attempts": 1,
   "retry_count": 0,
   "max_retries": 3,
-  "phase": "sent",
+  "phase": "waiting_response",
   "phase_detail": "selected=Pro",
   "conversation_id": "conv_f19cec54d4cba0dc",
   "is_followup": true,
@@ -14,8 +14,8 @@
   "assigned_worker": "y729qv24tg-go-2",
   "chatgpt_url": "https://chatgpt.com/c/6ad58a42-682c-83ec-91e8-ac3109bde562",
   "failure_detail": null,
-  "observed_model_switcher": null,
-  "observed_model_effort": null,
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
   "require_model_match": true,
   "reroute_count": 0,
   "created_at": "2026-10-19T03:24:42.493+00:00",
@@ -25,7 +25,11 @@
   "stream": "build/attachment-collar-review.sse",
   "terminal_session": 1551,
   "prompt_identity_confirmed_via_session_api": true,
-  "verdict": null,
+  "verdict": "ACCEPT",
   "scope": "Unmarked pressure removal, arbitrary receiver geometry, internal attachment debt, saturated-endpoint parity correction, exact physical obstacles and arbitrary-length bent debt path; no universal grid improvement.",
-  "continuation": "Keep this original follow-up and stream; earlier b202768d ACCEPT covers only the pressured theorem."
+  "continuation": "Completed original request; no resubmission. The later blank-witness theorem is outside this review.",
+  "completed_at": "2026-10-19T03:31:45.545+00:00",
+  "response_chars": 11717,
+  "response": "output/attachment-collar-oracle-response.json",
+  "assessment": "docs/reviews/2026-10-19-attachment-collar-assessment.md"
 }

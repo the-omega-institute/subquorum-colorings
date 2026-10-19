@@ -88,6 +88,16 @@ Incoming saturated endpoints do not create a free deficit or an extra
 resource; their count cancels eta exactly. Internal saturated attachments
 remain as actual debt.
 
+For a boundary check, let j_DD count matching crossings whose two tiles
+are deficient. Then j=j_DD+sigma+eta, so j+Q has the same parity as
+j_DD+sigma+k. Incoming endpoints do not independently create parity slack.
+
+The written proof and explicit all-length constructions received an
+independent ACCEPT; see docs/reviews/2026-10-19-attachment-collar-assessment.md.
+The later BLANK_WITNESS_COMPENSATION.md supplies a geometric certificate
+that can pay nonzero internal attachment debt using distinct free blanks.
+That later theorem is outside this accepted review.
+
 ## Uniform compensation and the pressure-free sufficient class
 
 For pairwise tile-disjoint source regions U_i, disjoint from R, assume
