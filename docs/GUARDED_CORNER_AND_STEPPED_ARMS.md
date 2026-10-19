@@ -160,9 +160,10 @@ grid-adjacent. This proves full freezing for arbitrary k and feasible exterior.
 
 ## 4. Exact receiver charge, absent old witness, and actual payment
 
-Every nonendpoint receiver corner is forced blank by a prescribed selection
-already incident to P or by its two endpoint neighbors. Thus arbitrary feasible
-exterior data cannot change the following complete receiver counts.
+Every receiver corner not prescribed as an endpoint in (3) or as a selection
+in (4) is forced blank by a prescribed selection already incident to P.
+Thus arbitrary feasible exterior data cannot change the following complete
+receiver labels and counts. Prescribed selections remain occupied.
 
 | Receiver part | Physical tiles | Endpoints | Selections |
 | --- | --- | --- | --- |
@@ -251,8 +252,16 @@ model; unknown/timeout means no conclusion at all. A fresh run may time out
 rather than rediscover the saved model. The proof in Sections 1–4 is independent
 of these solver outcomes.
 
-Complete written review a0dc3807-ee9f-4825-b320-d17c57392ef1 is dispatched
-in conv_573957299e557343, original stream 78367. Its attachment predates only
-this execution-record paragraph. No verdict is claimed while it is live.
+Complete written review a0dc3807-ee9f-4825-b320-d17c57392ef1 completed REVISE
+in conv_573957299e557343 at 2026-10-19T15:22:33.672+00:00, observed gpt_6/pro.
+It identified the false blanket sentence that every nonendpoint receiver
+corner is blank; prescribed selections remain occupied. Section 4 now
+excludes both prescribed endpoints and selections from that assertion.
+The review found no further substantive gap, but its conditional acceptance
+wording is not recorded as a terminal ACCEPT. Exact response and scope are
+archived in `docs/reviews/2026-10-19-guarded-stepped-assessment.md` and the
+linked response JSON. The companion `STEPPED_ARM_PHASE_AND_CHANNELS.md`
+develops new phase tables, charge-aware channels and a translated negative-charge
+obstruction; those additions were outside this completed review's input.
 The earlier, separate charge-ceiling research request failed with no assistant
 output; it produced no mathematical evidence for or against that conjecture.
