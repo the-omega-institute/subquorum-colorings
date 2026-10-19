@@ -112,10 +112,19 @@ adjacent to H. Thus extra exterior data cannot change the receiver labels.
 
 ## 3. Exact two-direction band tables
 
-For a union C of complete physical squares let E_C(H) be the sum of
+Throughout this section C is an admissible rectangular union of complete
+physical squares. For a horizontal shift its extreme columns must be
+endpoint-free, and for a vertical shift its extreme rows must be endpoint-free.
+Trim those columns or rows, respectively, in the shifted partition. Only
+complete physical bands are retained. The band paths encountered below must
+be contained in full; the endpoint-free extremes imply this path-completeness
+condition by the connected-path arguments given below. No statement here
+is made for arbitrary nonrectangular square unions or a cut transition path.
+
+For such a rectangle C let E_C(H) be the sum of
 t+p/2-2 over its squares containing H endpoints. Define E'_C(H) using the
-partition shifted one site in the strip direction, with endpoint-free
-extreme columns trimmed. Only squares containing actual H endpoints are
+partition shifted one site in the strip direction, with the corresponding
+endpoint-free extreme columns or rows trimmed. Only squares containing actual H endpoints are
 included. Set Gamma_C(H)=E_C(H)-E'_C(H). These are raw excesses, not
 corrected partial matching charges or additional donor supplies.
 
@@ -158,7 +167,7 @@ full band table applies even if H escapes C through its other boundaries.
 Each encountered gain is nonnegative. In particular,
 
     Gamma_C(H)>=0;
-    Gamma_C(H)>=1 if C meets the transition-band endpoint path. (5)
+    Gamma_C(H)>=1 if C meets the full transition-band endpoint path. (5)
 
 The transition rectangle with relative rows -2,...,h+1 and columns
 w-3,w-2 contains neither actual physical tip tile, yet satisfies the latter

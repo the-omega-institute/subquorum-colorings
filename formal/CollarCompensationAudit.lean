@@ -24,6 +24,7 @@ import SubQuorum.MixedCavitySources
 import SubQuorum.OpenSourceCavities
 import SubQuorum.CombChannels
 import SubQuorum.ElbowSources
+import SubQuorum.ElbowOwnedDonors
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -152,3 +153,5 @@ import SubQuorum.ElbowSources
 #print axioms SubQuorum.ElbowSources.three_endpoint_junction_blank
 #print axioms SubQuorum.ElbowSources.transition_band_gain
 #print axioms SubQuorum.ElbowSources.extra_source_residual_compensation
+#print axioms SubQuorum.ElbowOwnedDonors.capped_corner_unit_deficit
+#print axioms SubQuorum.ElbowOwnedDonors.opposite_run_incompatible
