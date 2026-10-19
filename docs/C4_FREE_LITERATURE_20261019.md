@@ -32,3 +32,12 @@ eighteen-vertex sharpness certificate stand independently of that
 priority assessment. The graph is the classical Pappus graph; it is
 used to establish the sharpness of the current cubic size threshold,
 without asserting that its dissociation number was previously unknown.
+
+The completed independent review identifies an exact overlap with the
+existing manuscript: Ma--Sahbi--Zhang, arXiv:2609.25128v4, Corollary 3.4,
+already bounds psi_sq by 3n/5 in cubic graphs. Together with the explicit
+Pappus ten-set, this proves beta_2=psi_sq=10. Cubic degree counting alone
+also gives Omega<=10 on eighteen vertices. The C4-free argument's additional
+content here is the empty matching in every optimal representative, the
+resulting coloring support rigidity, and sharpness of its size threshold.
+This is an overlap assessment, not a novelty claim for those stronger results.

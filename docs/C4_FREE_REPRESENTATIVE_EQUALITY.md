@@ -98,7 +98,7 @@ For any representative pair with objective N+delta>N, (1),(2) imply
     m+delta <= N-2a-4,              a=(D-1)(D-2).        (3)
 
 Indeed both unused counts are at least a+2, and (1) is an equality.
-In particular Omega<=max(N,2N-2a-4). At the first possible order
+In particular Omega<=max(N,2N-2a-4). At the first order not excluded by (3),
 N=2a+5, the upper bound is N+1; attaining N+1 forces m=0. Any first-order
 excess is therefore already a dissociation set, without matching edges.
 
@@ -117,8 +117,10 @@ of an optimum. It does not require the matching itself to be empty.
 
 For a projective plane, N<=2a+1 is equivalent to q(q-3)>=0. Consequently
 **every optimum in every projective plane of order q>=3 has this one-side
-singleton support.** The q=2 exception is necessary. In the normalized
-F_2 triple labeling used by the controls, T={1,2,3,11,12,13} and
+singleton support.** The q=2 exception is necessary. Label points 0,...,6
+by 001,010,011,100,101,110,111 in this order. Label lines 7,...,13 by
+the same ordered normal vectors; incidence is zero dot product over F_2.
+In this labeling, T={1,2,3,11,12,13} and
 M={{0,8}} form a feasible Heawood optimum of objective7, with three
 singletons on each side. This labeling is separate from the cyclic
 Heawood labels used in the star-forming notes.
@@ -158,13 +160,22 @@ Every maximum representative pair has M empty. Furthermore every
 ten-color sub-quorum coloring has a ten-vertex dissociation support and
 uses a different color at every support vertex: an edge-containing class
 would contribute a matching representative, which was just ruled out;
-all classes are therefore edge-free, so each colored vertex has at most
-one colored neighbor. Its support is a dissociation set of size at most
+all classes are therefore edge-free. At a colored vertex v the same-color
+closed-neighborhood count is then exactly one, even if its class initially
+contains other nonadjacent vertices. The sub-quorum condition gives
+1>=(1+d_colored(v))/2, so each colored vertex has at most one colored
+neighbor. Its support is a dissociation set of size at most
 ten and has at least ten vertices to represent its ten colors.
 
 The upper bound is the general counting proof, not the exact optimizer.
 The finite table and ten-set are independently kernel-checked in Lean.
-No novel claim about the Pappus dissociation value is made.
+No novel claim about the Pappus dissociation value is made. In fact the
+existing cubic bound psi_sq<=3n/5 in Ma--Sahbi--Zhang,
+arXiv:2609.25128v4, Corollary 3.4, already gives beta_2=psi_sq=10 from
+this ten-set. Independently, cubic degree counting gives 2t<=3b for
+b=18-t-2m, hence 5(t+m)+m<=54 and Omega<=10. These older or elementary
+value bounds do not force m=0 at objective ten; the C4-free pair packing
+supplies that stronger representative restriction and the coloring consequence.
 
 ## Verification and limits
 
@@ -203,6 +214,9 @@ established before making a manuscript novelty claim. The
 the relevant degree and subcubic results in Sahbi v4 and the concrete
 limits of the external search. A separate
 [independent proof audit](../output/c4-free-representative-oracle-review.json)
-has been requested; its verdict is not presumed by the written proof.
+completed with ACCEPT. Its exact response and our assessment are in the
+[review record](reviews/2026-10-19-c4-free-review-assessment.md). It checks
+the written mathematics and supplied adjacency data, not an execution of
+the linked code or Lean audit. Its literature observations establish no priority.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
