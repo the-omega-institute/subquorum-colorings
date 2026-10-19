@@ -53,6 +53,18 @@ phases satisfy the finer criterion. Twenty parameter pairs,80alignment checks,
 mixed-bundle exclusion for the8-by10configuration. General geometry has its
 own written all-parameter proof; the broad d4 rule cannot be a universal bridge.
 
+The [two-guard surplus theorem](DUAL_GUARDS_AND_CROSS_COMPONENT_SURPLUS.md)
+retains two distinct actual unit donors per positive two-leg module. If N
+positive covered modules have G marked sides and additional supported modules
+have total old charge tau, it proves D>=2N-G, K_in+G<=d4 and
+sigma>=N+S+2J-K_in-G-tau. The credit gains one unit per unmarked right side
+over the previous canonical-left budget. Four-way cycles and rotor stars now
+have guaranteed slack six, and k-star chains have slack at least 7k-1.
+An explicit three-component assignment pays an external charge two without
+reusing a tile. General geometry has a written proof; 57 cases, 288 phase
+images and 19 scoped Lean declarations pass. This improves the surplus in
+the stated module class, without a universal grid or ownership-flow claim.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.

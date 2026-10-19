@@ -369,7 +369,9 @@ Condition (4) is stated in physical counts, with no donor allocation oracle
 or unproved Hall hypothesis. Each new square and each module charge occurs
 once, and (2) prevents counting the same local loss twice.
 
-The reservation-aware first-q<=5 conclusion also survives under the finer
+Conditional on the established GLOBAL residual-slot first-failure
+classification, with its original definitions and valid unit reservations,
+the reservation-aware first-q<=5 conclusion also survives under the finer
 criterion: (1) then gives rho_final<=N_+-L, paid by those actual unmarked
 unit donor tiles. After any B distinct valid reservations, at most B of
 these units are lost, leaving at least rho_final-B=q different positive
@@ -378,6 +380,8 @@ q<=4, and its three remaining q=5 motifs have only three or four positive
 tiles, contradicting five survivors. Here the new full squares are counted
 only through the original charge correction; they are not claimed as extra
 endpoint-free donor tiles or spent a second time as reservation units.
+This transfers that classification; it is neither a self-contained proof
+of the classification nor a receiver-labelled Hall or ownership-flow theorem.
 
 ## 9. Fully frozen occupied adjacent bands with degree-four endpoints
 
@@ -475,8 +479,14 @@ not cover this later general fusion theorem. The prepared same-conversation
 followup c3f68d99 failed terminally with a browser input disconnect after
 four broker attempts; it produced no mathematical verdict. One replacement
 file-attachment audit e43c257c, original stream66765, now covers this theorem
-and the later opposed-band result. Preserve that original task and stream.
-No independent verdict on this new theorem is yet claimed.
+and the later opposed-band result. It completed ACCEPT at
+2026-10-19T21:33:17.256UTC, observed gpt_6/pro; the original stream completed
+with DONE and its 24202-character response exactly matches the terminal
+archive. The independent assessment is
+reviews/2026-10-20-physical-fusion-opposed-bands-assessment.md. It records a
+reviewer-only intermediate indexing slip and the conditional reservation
+scope; neither changes the reviewed physical proofs. This verdict does not
+cover the later two-guard surplus theorem. Preserve the original stream.
 
 The [opposed-band theorem](OPPOSED_BANDS_AND_HARMLESS_DEGREE_FOUR_CONTACTS.md)
 now proves that the COARSE sufficient condition d4<=S+2J is not automatic:

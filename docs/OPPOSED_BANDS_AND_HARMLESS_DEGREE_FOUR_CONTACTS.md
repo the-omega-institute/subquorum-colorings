@@ -236,9 +236,14 @@ See output/degree-four-overcount-formal-check.json for the separate receipt.
 
 The previous branched rotor review has completed ACCEPT, with exact original
 SSE/terminal agreement, and is archived separately. It covers the older
-once-used-port theorem. The later physical fusion theorem has its own review
-task; neither review covers this still later opposed-band theorem. No new
-external novelty or general grid/triple-equality claim is made.
+once-used-port theorem. The separate physical fusion/opposed-band review
+e43c257c completed ACCEPT at 2026-10-19T21:33:17.256UTC, observed gpt_6/pro.
+Its original stream ended with DONE and exactly matches the archived
+24202-character response. The independent assessment is
+reviews/2026-10-20-physical-fusion-opposed-bands-assessment.md; its reviewer-only
+intermediate indexing slip is not imported into the source proof. The later
+two-guard surplus theorem is outside that review. No new external novelty
+or general grid/triple-equality claim is made.
 
 This changes the next proof target. Automatic d4<=S+2J is false, even on
 fully frozen physical template fusions, so it cannot be a universal bridge.

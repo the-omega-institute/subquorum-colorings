@@ -1,7 +1,7 @@
 {
   "task_id": "e43c257c-a716-4046-8b1b-4591cff56e4e",
   "pool_id": "bc0a6e6f-6efa-42f9-9298-3cfcccba0cd4",
-  "status": "dispatched",
+  "status": "completed",
   "attempts": 1,
   "retry_count": 0,
   "max_retries": 3,
@@ -14,8 +14,8 @@
   "assigned_worker": "ny743dhk0f-go-2",
   "chatgpt_url": "https://chatgpt.com/c/6ad689b8-0d6c-83ec-9e75-a2f20a3e40be",
   "failure_detail": null,
-  "observed_model_switcher": null,
-  "observed_model_effort": null,
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
   "require_model_match": true,
   "reroute_count": 0,
   "created_at": "2026-10-19T21:20:51.248+00:00",
@@ -24,5 +24,12 @@
   "request": "output/physical-fusion-opposed-bands-review-request.json",
   "packet": "output/physical-fusion-opposed-bands-review-packet.txt",
   "replaces_terminal_failed_task": "c3f68d99-b6da-4093-82ba-790aef5b907a",
-  "verdict": null
+  "verdict": "ACCEPT",
+  "completed_at": "2026-10-19T21:33:17.256+00:00",
+  "terminal": "output/physical-fusion-opposed-bands-review.json",
+  "response_chars": 24202,
+  "original_stream_terminal_equal": true,
+  "original_stream_completed_with_done": true,
+  "assessment": "docs/reviews/2026-10-20-physical-fusion-opposed-bands-assessment.md",
+  "scope": "General physical fusion, one-guard protection and opposed-band proofs; later dual-guard theorem excluded."
 }
