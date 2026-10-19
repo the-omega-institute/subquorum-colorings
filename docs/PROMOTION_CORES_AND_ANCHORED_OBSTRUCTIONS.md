@@ -47,8 +47,9 @@ most the original |M| moves, preserving the objective and retaining T.
 The result has no nonempty one-side bundle. It includes all single and
 degree-three-cycle normalizations: a degree-at-most-two endpoint is a
 feasible singleton, and a degree-three cycle meets threshold one. This
-does not assert confluence of the resulting feasible pair, nor absence
-of bundles mixing the two sides.
+does not assert confluence of the resulting feasible pair. The subsequent
+BIPARTITE_PROMOTION_COMPLETENESS.md proves that absence of both one-side
+bundles also excludes every bundle mixing the two sides.
 
 On grids, degree-three endpoints need one outgoing neighbor and
 degree-four endpoints need two. The method genuinely treats the latter,
@@ -85,8 +86,10 @@ two distinct such neighbors violates the selected-degree-at-most-one
 condition. This proves the next freeze, and induction proves the claim.
 QED.
 
-This is a sufficient certificate. No converse or decision algorithm for
-arbitrary mixed-side bundles is claimed. It constrains only bundles that
+The subsequent BIPARTITE_PROMOTION_COMPLETENESS.md proves the converse in
+bipartite graphs: every unfrozen endpoint belongs to a feasible one-color
+bundle, and the closure is a complete linear-time existence test. This
+strengthening constrains only bundles that
 delete original matching edges, promote one of their endpoints and retain
 all original T. It does not forbid reassigning matching edges, exchanging
 original T vertices, or adding different vertices.

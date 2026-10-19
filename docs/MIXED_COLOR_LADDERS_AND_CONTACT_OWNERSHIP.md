@@ -31,6 +31,8 @@ its restriction to each connected component H of the graph induced by P
 is feasible. In particular, other components cannot rescue an infeasible
 local promotion by deleting additional endpoints.
 
+Empty restrictions are feasible identity moves throughout.
+
 Proof. Every matching edge stays inside one H. Every endpoint neighbor of a
 promoted vertex in H also belongs to H; original T stays occupied and
 original blanks stay blank. Thus the promoted vertex has exactly the same
@@ -72,6 +74,12 @@ negative tile charge. Diagonal T in one saturated tile can be exclusive
 contacts of different components while the tile has charge zero. Therefore
 this vertex count cannot itself be spent as a compensation budget.
 
+Here and below the original ledger gives every saturated tile charge zero.
+For a deficient tile with selected, endpoint and blank counts t,p,b, and
+s endpoints matched to saturated tiles, 2rho=t-b+s. See Section 4 of
+SQUARE_FREE_ENDPOINTS_AND_OWNED_DONORS.md. A tile with two T and no P is
+saturated and therefore has charge zero under this convention.
+
 Here is a complete frozen example of this last obstruction. Take matching
 edges (-2,0)--(-1,0) and (2,1)--(3,1), with selected vertices
 
@@ -104,6 +112,17 @@ All other vertices are blank. Translate into a sufficiently large even
 rectangle with blank padding. The same arguments permit any feasible
 exterior that retains this complete endpoint component and its supports.
 
+Indeed, every unprescribed perpendicular contact site is at an odd column
+and adjacent to a prescribed even-column T support. That T already has
+its occupied endpoint neighbor, so the unprescribed site is blank. The
+two unused lateral sites (1,-1) and (0,W) are similarly forced blank by
+the adjacent prescribed lateral T. Additional P contacts would violate
+completeness of the component. Thus every endpoint has exactly the same
+occupied exterior neighbors in every such feasible extension. Numerical
+counts of bundles and increases below refer to bundles supported on C,
+or the restrictions of global bundles to C. Global T and objective counts
+refer to the displayed baseline, which has no other matching edges.
+
 The matching consists of:
 
 1. The horizontal edge (r,2i)--(r,2i+1) for r=0,1 and 0<=i<k.
@@ -126,8 +145,8 @@ There are exactly W-1 endpoint squares.
   form a feasible promotion bundle U using all noncentral matching edges.
   It removes every endpoint square and leaves precisely the central edge.
 - Every feasible bundle restricted to C is oriented on a subset of U. Consequently U is
-  the unique largest feasible bundle, of size W-1; the maximum attainable
-  increase in selected vertices is W-1.
+  the unique largest feasible bundle supported on C, of size W-1; the
+  maximum attainable increase contributed by C is W-1.
 - Any bundle confined to color0 leaves all 2k left-and-center squares;
   any bundle confined to color1 leaves all 2l right-and-center squares.
   Hence every bundle that removes all squares must use both colors.
@@ -221,23 +240,25 @@ any common initial segment satisfies (1)--(2).
 
 Thus the left restriction of every feasible bundle deletes exactly the first
 i complete horizontal blocks in both rows, for a unique i in0,...,k.
-Reflection across the central column and interchange of the rows gives the
-right restriction: exactly the last j complete blocks, for j in0,...,l.
+The map (r,c) -> (1-r,W-1-c) takes parameters (k,l) to (l,k),
+interchanging the two ends. Applying the left argument to this exchanged
+instance gives the right restriction: exactly the last j complete blocks,
+for j in0,...,l. This does not assert a symmetry of one instance when k!=l.
 Deletions in either half cannot affect neighbors in the other half, since
 the central column stays occupied. The pair (i,j) therefore parametrizes
 all feasible bundles, including the empty pair (0,0).
 
 It follows, without enumeration, that there are exactly
 
-    (k+1)(l+1)-1 nonempty feasible bundles.
+    (k+1)(l+1)-1 nonempty feasible bundles supported on C.
 
 The bundle (i,j) deletes2(i+j)matching edges and leaves precisely
 
     2(k-i)+2(l-j)
 
 endpoint squares, in the central remaining rectangle. In particular the
-mixed bundle U=(k,l) is the unique square-removing bundle, not only the
-unique largest one. The feasible-bundle poset is the product of the two
+mixed bundle U=(k,l) is the unique square-removing bundle supported on C,
+not only the unique largest local one. The local feasible-bundle poset is the product of the two
 finite chains, with its empty element removed when requiring a nonempty
 bundle. This exact classification explains why the two fixed-color maximal
 cores each leave squares, whereas their compatible mixed union succeeds.
@@ -253,10 +274,15 @@ edge. The Oracle input supplying that block argument does not review this
 later family classification or its implementation. That general theorem
 rests on its own proof, not on the bounded search.
 
-Independent review of the present note was submitted as follow-up
-0fa8059e-eff7-45b9-87e4-8d6ce8f2f66b in the same conversation, original
-stream91355. The response is pending when this milestone is prepared; no
-verdict is inferred. Its scope is this note's proofs, not execution.
+Independent review of the present note, task
+0fa8059e-eff7-45b9-87e4-8d6ce8f2f66b, completed ACCEPT at 06:51:53 UTC,
+observed gpt_6/pro. We independently assessed its arguments and incorporated
+its local-scope, forced-blank, unequal-half reflection, empty-move and
+charge-definition clarifications. Its scope is this note's written proofs,
+not code or Lean execution, later implementation or the new general
+complete-freezing theorem. See the exact response and assessment in
+output/mixed-color-ladder-review-response.json and
+docs/reviews/2026-10-19-mixed-color-ladder-assessment.md.
 
 The family controls pass144parameter pairs,1152symmetry images and63660
 exact nonempty oriented bundles in six small instances. They independently

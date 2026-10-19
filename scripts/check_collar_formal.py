@@ -43,6 +43,7 @@ def main():
                    'SubQuorum/OwnedDonorCompensation.lean',
                    'SubQuorum/SingleSquareObstacle.lean',
                    'SubQuorum/LadderReduction.lean', 'SubQuorum/CompatibleBundles.lean',
+                   'SubQuorum/BipartitePromotion.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -59,7 +60,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 51
+    assert len(declarations) == 61
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -71,7 +72,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Earlier tile/count, frozen, single-square and finite8x8 declarations; arbitrary-width active-guard and all-length mixed-color promoted-neighbor geometry; abstract compatible-union feasibility/retention and occupied-contact ownership; arbitrary-length paired-prefix implication lemmas; arbitrary-length blank-block existence; sharp three-column full-promotion numerical contradiction. Full matching block decomposition and geometric switch construction, mixed-family freezing and exact bundle adapters/counts, component factorization, grid classification and compensation allocation remain written proofs.')
+                  scope='Earlier tile/count, frozen, single-square and finite8x8 declarations; arbitrary-width guard/mixed-color geometry and compatible-union/prefix/blank-switch statements. New graph-level occupied-pair structure, monochromatic restriction, feasible full unfrozen color sets, exact universal frozen exclusion, greatest one-color bundles and terminal-iff-all-frozen. Physical occupied-subtype construction, finite queue closure/running time, matching block/switch and mixed-family adapters, component factorization, grid classification and compensation allocation remain written proofs.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

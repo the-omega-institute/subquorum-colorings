@@ -85,6 +85,17 @@ oriented bundle while retaining positive central charge. Its earlier core/frozen
 package received an independent ACCEPT and full CI; the later donor geometry,
 tight completion and newest classification are reviewed separately.
 
+The [complete bipartite promotion theorem](docs/BIPARTITE_PROMOTION_COMPLETENESS.md)
+now proves the converse to the frozen certificate. In every finite bipartite
+graph, the closure is exactly the universally unpromotable endpoint set;
+each color's entire unfrozen complement is a feasible greatest one-color
+bundle. Empty cores on both sides therefore exclude arbitrary mixed bundles.
+The graph-level equivalences and an unbounded freezing induction are checked
+in ten new Lean statements, with 61 declarations passing the combined audit.
+Independent controls exhaust all 512 labeled three-by-three bipartite graphs,
+55,924 feasible configurations and 169,048 oriented choices. This decides
+promotion existence, not an optimal global mixed bundle or the grid bound.
+
 The [frozen capacity-two cross](docs/FROZEN_CAPACITY_TWO_CROSS.md) treats a
 terminal square component with four pendant matching branches. Its four
 side tiles are forced half-donors with exclusive matching ownership, giving
@@ -157,6 +168,19 @@ distinct components have unique vertex ownership, but a checked pair of
 fully frozen components has two contacts in one zero-charge saturated tile.
 Thus vertex exclusivity alone does not supply tile compensation. The full
 graph-level proofs, finite controls and scoped Lean interfaces are separate.
+Its independent written-proof review completed ACCEPT; requested local-scope
+and ledger clarifications are incorporated, without claiming execution review.
+
+The [frozen capped-ladder family](docs/FROZEN_TWO_ROW_CAPPED_LADDERS.md)
+shows exactly why the pure-rectangle theorem cannot extend to every endpoint
+component contained in two rows. For every width w>=3, two horizontal caps
+freeze the entire component by acyclic retained-mate waves. There are w-1
+endpoint squares but the complete endpoint-tile receiver has charge exactly
+-1 at every width. Even arbitrarily many aligned P-squares therefore do not
+provide a proportional compensation budget. The smallest displayed instance
+has eight endpoints; every one of its 80 nonempty orientations fails. The
+general proof, 62 family cases and 496 symmetry images are supplied. This
+refutes the shape-extension and per-square payment rules, not the global target.
 
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving

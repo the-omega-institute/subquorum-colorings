@@ -8,6 +8,7 @@ import SubQuorum.OwnedDonorCompensation
 import SubQuorum.SingleSquareObstacle
 import SubQuorum.LadderReduction
 import SubQuorum.CompatibleBundles
+import SubQuorum.BipartitePromotion
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -60,3 +61,13 @@ import SubQuorum.CompatibleBundles
 #print axioms SubQuorum.CompatibleBundles.lower_prefix
 #print axioms SubQuorum.CompatibleBundles.blank_block_exists
 #print axioms SubQuorum.CompatibleBundles.sharp_three_full_promotion_impossible
+#print axioms SubQuorum.BipartitePromotion.neighbor_mate_color
+#print axioms SubQuorum.BipartitePromotion.fixed_neighbors_unique
+#print axioms SubQuorum.BipartitePromotion.available_neighbor_fixed
+#print axioms SubQuorum.BipartitePromotion.available_bundle
+#print axioms SubQuorum.BipartitePromotion.frozen_excludes_bundle
+#print axioms SubQuorum.BipartitePromotion.frozen_iff_unpromotable
+#print axioms SubQuorum.BipartitePromotion.available_greatest
+#print axioms SubQuorum.BipartitePromotion.color_restriction_bundle
+#print axioms SubQuorum.BipartitePromotion.terminal_iff_all_frozen
+#print axioms SubQuorum.BipartitePromotion.two_step_frozen_chain
