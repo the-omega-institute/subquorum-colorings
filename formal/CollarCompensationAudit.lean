@@ -19,6 +19,7 @@ import SubQuorum.OrthogonalMouthFlux
 import SubQuorum.AdaptiveStripCompensation
 import SubQuorum.CapacityAwareStrips
 import SubQuorum.RemoteCombRungs
+import SubQuorum.ClosedSourceCavities
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -126,3 +127,7 @@ import SubQuorum.RemoteCombRungs
 #print axioms SubQuorum.RemoteCombRungs.remote_strip_partition
 #print axioms SubQuorum.RemoteCombRungs.weighted_rung_capacity
 #print axioms SubQuorum.RemoteCombRungs.integral_flux_compensation
+#print axioms SubQuorum.ClosedSourceCavities.complete_component_phase_sum
+#print axioms SubQuorum.ClosedSourceCavities.closed_cavity_partition
+#print axioms SubQuorum.ClosedSourceCavities.donor_multiplicity_budget
+#print axioms SubQuorum.ClosedSourceCavities.twofold_cavity_cover_compensation

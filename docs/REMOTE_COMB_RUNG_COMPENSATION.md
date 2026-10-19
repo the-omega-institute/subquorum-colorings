@@ -249,13 +249,19 @@ Run:
 The remaining step is a general existence-and-capacity theorem: negative
 combs may lack a compatible partner or overlapping axial range; prospective
 rungs may contain foreign endpoints or compete for already allocated donors.
-The current hypotheses do not exclude these cases. A proposed whole-source
-cavity closure is separately recorded in the Oracle response and is not
-claimed as a checked result here. Arbitrary positive bent components,
+The current hypotheses do not exclude these cases. The subsequent note
+`CLOSED_SOURCE_CAVITY_COMPENSATION.md` proves complete-component cavity
+closure, including nested parallel sources and a zero-mouth family whose
+only negative-pair rung is occupied. General cavity closure remains an
+additional hypothesis. Arbitrary positive bent components,
 the universal coefficient-one grid bound and triple equality remain open.
 Submitted manuscripts are preserved.
 
-A separate independent review of this note and the capacity-aware extension
-is live as task 75dcde82-64ab-4958-bedc-86b704d8f719, conversation
-conv_d93c64a01f45169f, original stream 76055. No verdict is inferred from
-the proposing Oracle response or the earlier accepted source-only theorem.
+A separate independent review of this note and the capacity-aware extension,
+task 75dcde82-64ab-4958-bedc-86b704d8f719, completed ACCEPT at
+2026-10-19T12:20:17.053Z, observed gpt_6/pro. It checks the written geometry
+and allocation under their stated hypotheses, not execution of controls or
+Lean. Its response and scope are archived in
+`output/capacity-and-remote-review-response.json` and
+`docs/reviews/2026-10-19-capacity-and-remote-assessment.md`.
+That verdict predates the subsequent closed-cavity note.

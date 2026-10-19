@@ -55,6 +55,7 @@ def main():
                    'SubQuorum/AdaptiveStripCompensation.lean',
                    'SubQuorum/CapacityAwareStrips.lean',
                    'SubQuorum/RemoteCombRungs.lean',
+                   'SubQuorum/ClosedSourceCavities.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -71,7 +72,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 106
+    assert len(declarations) == 110
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -83,7 +84,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 102 scoped declarations plus continuing-comb boundary exclusion, the remote physical/shifted strip identity, arbitrary finite weighted donor capacity, and the integral flux compensation consequence. Full rung geometry, flux membership classification, existence/pairing, grid constructions and optimization adapters remain written proofs. No universal negative-flux control, full geometric Lean theorem or universal source coverage is claimed.')
+                  scope='Previous 106 scoped declarations plus complete-component phase sums, the conditional closed-cavity partition, arbitrary finite donor multiplicity and multiplicity-two cavity-cover compensation. Full cavity geometry, source phase adapters, closure preservation, constructions, existence/pairing and the universal grid theorem remain written proofs or open as stated in the notes.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

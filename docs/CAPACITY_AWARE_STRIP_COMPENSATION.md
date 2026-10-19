@@ -241,6 +241,9 @@ or larger-region information. Submitted manuscripts are preserved.
 
 The complementary `REMOTE_COMB_RUNG_COMPENSATION.md` supplies such exterior
 payment for the explicit locality family and for general compatible rung
-pairs. A joint independent review of these two new notes is live as task
-75dcde82-64ab-4958-bedc-86b704d8f719, conversation conv_d93c64a01f45169f,
-original stream 76055. No final ACCEPT is claimed.
+pairs. Joint independent review75dcde82-64ab-4958-bedc-86b704d8f719 completed
+ACCEPT at2026-10-19T12:20:17.053Z, observedgpt_6/pro. The written-proof scope
+and actual response are archived in
+`docs/reviews/2026-10-19-capacity-and-remote-assessment.md` and
+`output/capacity-and-remote-review-response.json`. This review predates the
+subsequent complete-component cavity extension.
