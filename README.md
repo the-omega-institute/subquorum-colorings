@@ -59,6 +59,16 @@ parity correction and a single-use aggregate source budget. Six standalone
 Lean declarations and physical matching controls cover the local/counting
 interfaces; arbitrary overlapping or thick receivers remain open.
 
+The [attachment-corrected extension](docs/ATTACHMENT_CORRECTED_COLLAR_COMPENSATION.md)
+removes pressure on all unmarked tiles and allows thick regions. Its exact
+ledger retains internal saturated attachments as debt and corrects parity
+for incoming saturated endpoints. Zero internal debt and zero saturated
+export suffice for arbitrary receiver geometry. A connected arbitrary-length
+bent path shows that internal debt cannot be paid merely by route length.
+Four additional Lean declarations pass; arbitrary internal-debt compensation
+and overlapping ownership remain open. The original pressured theorem now
+has an independent ACCEPT; this later extension is reviewed separately.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search

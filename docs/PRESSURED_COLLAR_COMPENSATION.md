@@ -33,7 +33,7 @@ has an occupied external neighbor, forcing its two internal neighbors blank.
 This also proves that t=2 leaves no matching endpoint. Finally suppose one
 face is BB and both perpendicular faces are pressured. The remaining two
 corners are adjacent and each already has an occupied external neighbor.
-They cannot both be T; if one is T, its partner must be B. Thus they contribute
+They cannot both be T; if one is T, the other remaining corner must be B. Thus they contribute
 nonnegative b-t in addition to the two cap blanks. QED.
 
 The lemma is a direct argument about the square, including capacity-two
@@ -147,7 +147,7 @@ It does not formalize arbitrary rectangular grids end to end.
 
 The controls pass 396 feasible pressured label/mask states, 24 oriented
 terminal states, 25 physical receiver configurations and 192 symmetry
-images. The standalone local Lean 4.33.0 audit passes six declarations;
+images. The original local Lean 4.33.0 audit passes six declarations;
 all axiom sets are contained in {propext, Quot.sound}. No sorry,
 native_decide, compiler trust or new axiom is used. The geometry and
 regional identity remain the explicit written interfaces described above.
@@ -159,9 +159,16 @@ python3 scripts/check_collar_formal.py --lean /path/to/lean4.33.0/bin/lean --out
 
 Exact receipts are `output/pressured-collar-controls.json` and
 `output/pressured-collar-formal-check.json`. The independent Oracle review
-is pending under task b202768d-c3d3-4717-bcec-899be37ac2ae; retain its
-original stream. The accepted C4-free review concerns a different theorem
-and does not cover this result. Current review evidence is in
+b202768d-c3d3-4717-bcec-899be37ac2ae completed ACCEPT, with observed model
+gpt_6 and effort pro. It checks the written argument, including exact
+boundary accounting and no reuse; it did not execute the code or Lean.
+The exact response and assessment are linked from
 `output/pressured-collar-oracle-review.json`.
+
+The later [attachment-corrected theorem](ATTACHMENT_CORRECTED_COLLAR_COMPENSATION.md)
+removes pressure on unmarked tiles and the tree/degree condition at the cost
+of an explicit internal attachment debt and changed parity. That extension
+is outside the preceding review input. The current combined local Lean
+runner audits ten declarations, six original and four for that extension.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
