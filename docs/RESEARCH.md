@@ -65,6 +65,19 @@ reusing a tile. General geometry has a written proof; 57 cases, 288 phase
 images and 19 scoped Lean declarations pass. This improves the surplus in
 the stated module class, without a universal grid or ownership-flow claim.
 
+The [positive-phase fusion theorem](POSITIVE_PHASE_FUSIONS_AND_TILE_DEFECT_CANCELLATION.md)
+makes the finer budget automatic when every original two-leg module has
+positive phase: both donors survive, G=0 and K<=2J, so sigma>=N. Its proof
+uses the thirteen receiver-tile profiles and two boundary properties, without
+decomposing a large feasible fusion into feasible pairs. A four-way cycle
+explicitly has no feasible two-module subset. In mixed two-leg/rotor fusions,
+positive-source intratile tails still use at most two correction units per
+new full tile. Setting C=2J-K_positive>=0 gives
+sigma>=N+S+C-K_nonpositive-G, isolating the remaining tax without reusing
+tile credits. Controls pass 240 module images, 57 all-positive and 306 mixed
+fusions, including 76 with actual positive-source events; 14 scoped Lean
+declarations pass. Full mixed coverage and general decomposition remain open.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.

@@ -90,7 +90,8 @@ even if more than one of its protectors acquires degree four.
           >= N+S+2J-d4-tau.                        (6)
 
 In particular K+G+tau<=N+S+2J is sufficient for the coefficient-one half-area
-bound. If tau=K=G=0, the guaranteed strict slack is N+S+2J.
+bound. If tau=K=G=0, then sigma>=N+S+2J. This is strictly positive when
+N+S+2J>0, in particular if at least one positive covered module is present.
 
 Proof of(4). Consider an unmarked side. At the anchor p, the two opposite
 old endpoint neighbors a,b retain occupied degree three. Thus their old
@@ -106,7 +107,9 @@ are distinct by Section2. If tiles from two different modules coincided,
 their sole selected sites would coincide. That retained selection would
 then touch two different old endpoint anchors, which persist and belong to
 disjoint original endpoint sets, violating final feasibility. Thus ALL
-2N-G tiles are distinct. Their unit deficits are counted once in D, proving(4).
+2N-G tiles are distinct. All other endpoint-free tiles have nonnegative
+deficit: three selected corners would give a selection two occupied
+neighbors. Their unit deficits are counted once in D, proving(4).
 No claim about additional surviving donors is needed.
 
 Proof of(5). Choose one degree-four protecting endpoint for each marked
@@ -140,7 +143,8 @@ unrestricted configuration failing the old sufficient condition is now
 covered. That broader coverage question remains open.
 
 For degree-three fusions, G=K=0. We now retain TWO distinct actual unit
-donors per positive module and certify strict slack at least N+S+2J.
+donors per positive module and certify slack at least N+S+2J, strictly
+positive whenever this bound is positive.
 Concrete all-parameter consequences are:
 
 | Family | N | S | J | New guaranteed slack | Previous slack |
@@ -164,8 +168,9 @@ or the general grid triple equality.
 
 Equation(6) allows the covered modules' surplus to pay the TOTAL charge tau
 of additional receivers, provided their presence satisfies all physical
-hypotheses and the final protected-side checks. Each side remains one actual
-physical unit. A demand assignment must use each such tile at most once.
+hypotheses and the final protected-side checks. Each unmarked side contributes
+one distinct actual endpoint-free unit-deficit tile. A demand assignment
+must use each such tile at most once.
 This is a global closed-receiver counting statement. It does not impose
 receiver-owned adjacency constraints or establish a receiver-labelled Hall
 or flow theorem.
@@ -232,14 +237,20 @@ sources and receipts. No universal claim is inferred from either search.
 The preceding general fusion/opposed-band packet has now received its own
 ACCEPT review. The present two-guard theorem was developed later and is
 outside that review's input. Its separate same-conversation followup
-6660d0c2-5beb-4e53-a33c-a544835ae700 was submitted with this complete
-written argument; original stream 82701 is retained. At the current
-checkpoint it is dispatched, attempt one, selected Pro, with no verdict.
-See output/dual-guard-compensation-review-live.json for its separate scope.
+6660d0c2-5beb-4e53-a33c-a544835ae700 completed ACCEPT at
+2026-10-19T21:51:49.657UTC, observed gpt_6/pro. Original stream 82701
+ended successfully with DONE and exactly the terminal response's 19131
+characters. We applied its two prose qualifications: strict positivity
+requires a positive lower bound, and only unmarked sides supply guaranteed
+physical units. Its assessment is
+reviews/2026-10-20-dual-guard-compensation-assessment.md. This review does
+not cover the later automatic positive-phase fusion theorem.
 
-Next: use the two-side count in the search for a genuine finer-rule failure
-or a general geometric inequality. Analyze the intratile defect after mixed
-full-square cancellation and the ways BOTH side protectors can be affected.
-General grid decomposition and external priority remain open.
+The later positive-phase fusion theorem now proves automatic protection and
+K<=2J when all modules are positive, and localizes mixed-phase intratile
+costs to nonpositive source modules after using each full-square credit once.
+See POSITIVE_PHASE_FUSIONS_AND_TILE_DEFECT_CANCELLATION.md. Next: control
+that remaining nonpositive-source tax and affected sides, or produce a
+genuine fine-rule failure. General decomposition and external priority remain open.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
