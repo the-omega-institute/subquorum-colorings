@@ -1,0 +1,39 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-19T00:03:49.541823+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3719.\nPages active:                                 261452.\nPages inactive:                               239753.\nPages speculative:                             21056.\nPages throttled:                                   0.\nPages wired down:                             242209.\nPages purgeable:                                  55.\n\"Translation faults\":                    15586713751.\nPages copy-on-write:                       950812812.\nPages zero filled:                        6405268546.\nPages reactivated:                        2921989792.\nPages purged:                              136505272.\nFile-backed pages:                            315051.\nAnonymous pages:                              207210.\nPages stored in compressor:                  1553466.\nPages occupied by compressor:                 238500.\nDecompressions:                           2352274182.\nCompressions:                             2779319074.\nPageins:                                  4130927492.\nPageouts:                                   11597085.\nSwapins:                                    25238464.\nSwapouts:                                   31638682.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 4.358,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.544,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/PrivateClauses.lean",
+      "seconds": 0.49,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingPrivateClausesAudit.lean",
+      "seconds": 0.44,
+      "stdout": "'StarForming.PrivateClauses.forms_iff_hits' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.PrivateClauses.minimal_iff_private' depends on axioms: [propext, Classical.choice, Quot.sound]\n'StarForming.PrivateClauses.private_owner_unique' does not depend on any axioms\n'StarForming.PrivateClauses.support_mono' does not depend on any axioms\n'StarForming.PrivateClauses.boundary_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 693157888,
+  "scope": "Five general graph-level theorems, without finiteness or degree assumptions: star formation is equivalent to hitting closed-neighborhood and oriented-edge clauses; inclusion-minimal formation is equivalent to each selected vertex owning a private clause; one clause cannot have two selected private owners; clause support is monotone under edge addition; and every selected non-port in an attached core has an internal private clause or is the sole selected core neighbor of a selected port. The finite binary optimization model and bounded-size clause count follow by the written cardinal/count argument."
+}

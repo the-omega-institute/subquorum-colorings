@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -39,7 +39,8 @@ def main():
                     'triple-ports': 'build/cubic-triple-port-formal',
                     'multi-ports': 'build/heawood-multiport-formal',
                     'long-core': 'build/long-core-word-formal',
-                    'long-core-upper': 'build/long-core-upper-formal'}[arguments.audit]
+                    'long-core-upper': 'build/long-core-upper-formal',
+                    'private-clauses': 'build/private-clauses-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -65,9 +66,11 @@ def main():
     elif arguments.audit == 'long-core':
         modules += ('StarForming/DissociationCover.lean', 'StarForming/LongCoreWord.lean',
                     'StarFormingLongCoreWordAudit.lean')
-    else:
+    elif arguments.audit == 'long-core-upper':
         modules += ('StarForming/DissociationCover.lean', 'StarForming/LongCoreWord.lean',
                     'StarForming/LongCoreUpper.lean', 'StarFormingLongCoreUpperAudit.lean')
+    else:
+        modules += ('StarForming/PrivateClauses.lean', 'StarFormingPrivateClausesAudit.lean')
     for module in modules:
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -86,7 +89,7 @@ def main():
                               checks[-1]['stdout'])
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
-                'long-core-upper': 10}
+                'long-core-upper': 10, 'private-clauses': 5}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -160,6 +163,17 @@ def main():
                             'Graph-to-count extraction, odd-hub reflection, full exceptional '
                             'pattern identification, cyclic summation and Heawood attachment '
                             'are written proofs, not claimed as fully formalized.')
+    if arguments.audit == 'private-clauses':
+        receipt['scope'] = ('Five general graph-level theorems, without finiteness or '
+                            'degree assumptions: star formation is equivalent to hitting '
+                            'closed-neighborhood and oriented-edge clauses; inclusion-minimal '
+                            'formation is equivalent to each selected vertex owning a private '
+                            'clause; one clause cannot have two selected private owners; '
+                            'clause support is monotone under edge addition; and every '
+                            'selected non-port in an attached core has an internal private '
+                            'clause or is the sole selected core neighbor of a selected port. '
+                            'The finite binary optimization model and bounded-size clause '
+                            'count follow by the written cardinal/count argument.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

@@ -1,0 +1,25 @@
+{
+  "status": "INCONCLUSIVE_FINITE_DISCOVERY",
+  "scope": "Both original solver calls terminated at their explicit time limits without a feasible incumbent. No infeasibility, optimality, exact SF value or all-k bound follows.",
+  "model_note": "docs/PRIVATE_CLAUSES_AND_BOUNDARY_ACCOUNTING.md",
+  "runs": [
+    {
+      "k": 8,
+      "order": 496,
+      "clauses": 1984,
+      "variables": 2480,
+      "constraints": 4489,
+      "target": 289,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "seconds": 45.015,
+      "scope": "Finite discovery only; timeout is inconclusive and infeasibility is not an all-k proof. Binary x selects vertices. Binary p marks a clause with exactly one selected member. Every selected vertex must lie in a marked clause, giving a private witness. The exact general clause equivalence and minimality argument have written proofs."
+    },
+    {
+      "k": 2,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "scope": "Finite discovery of a core selection larger than12k with no non-port deletion preserving the local clauses and selected-port activity. No ambient formation or global minimality is presumed. Timeout is inconclusive."
+    }
+  ]
+}

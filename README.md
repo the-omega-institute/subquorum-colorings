@@ -192,6 +192,17 @@ declarations pass. The forming parameter lies between36k and
 The completed Oracle supplied the structural upper proof; its answer was
 independently checked. Finite optimization is discovery evidence only.
 
+The [private-clause and boundary certificate](docs/PRIVATE_CLAUSES_AND_BOUNDARY_ACCOUNTING.md)
+now gives an exact graph-level tool for the remaining SF question. Formation
+is equivalent to hitting at most4nclauses of size at most5in subcubic graphs;
+minimality means every selected vertex owns a private clause. Under port-only
+attachments, each selected non-port owns an internal private clause or is
+the sole selected core neighbor of a selected port, whose charge cannot
+be reused. Five general Lean theorems pass. A13kcore selection shows why
+the older robust-deletion shortcut is insufficient, even though H0remains
+safely deletable. Finite solver timeouts settle no new SF value; the exact
+all-k SF question remains live.
+
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
 through a connected Heawood double cover, including all connected regular
