@@ -98,7 +98,8 @@ Subtracting and using (2) gives
 
 The accepted partial-source row-band calculation applies to this rectangle:
 it needs complete physical row pairs and endpoint-free extreme columns,
-rather than a root source. A parallel source contributes the number of its
+rather than a root source. A source with horizontal chamber in the chosen
+channel coordinates contributes the number of its
 actual physical tip tiles in C, zero, one or two. A perpendicular interior
 chamber band contributes 2-ell-q>=0, since each two-site flank has at most
 one selection. An end-arm band contributes 1-optional_selection>=0.
@@ -106,6 +107,15 @@ Any encountered horizontal arm path is complete between the endpoint-free
 extreme columns; otherwise its connected endpoint path would cross a
 forbidden boundary endpoint. These cases cover every intersecting source
 band. Thus G_C>=0, and a fully enclosed source still contributes at least two.
+
+Each endpoint square has a unique component owner. Endpoints from distinct
+components in the same square could only be opposite corners, since adjacent
+endpoints join their components. In a prescribed singleton occurrence, the
+retained arm or axial support in that square is adjacent both to its endpoint
+and to the opposite corner. It already sees its endpoint, so feasibility
+excludes a foreign endpoint at that corner. An adjacent endpoint pair likewise
+excludes any distinct component in the square. Thus component raw-square
+contributions can be summed without duplicating a square.
 
 For a complete straight comb, the established raw phase table gives exactly
 its physical saturated-minus-sparse singleton-end membership. A matching
