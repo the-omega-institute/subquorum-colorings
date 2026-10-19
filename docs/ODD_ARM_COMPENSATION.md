@@ -101,7 +101,9 @@ Each of the first a_N arm tiles has labels PT/PB in TL,TR/BL,BR order:
 the two P lie on the arm, the upper-right T is the forced support, and
 the lower-right vertex is blank because that T already sees a P.
 The last tile has TB/PB: the top-left T is the axial tip support, and
-both right positions are forced blank by already used T supports.
+the upper-right position is forced blank by its axial T. The lower-right
+position is the unused external face incidence if this arm has length one;
+otherwise the preceding perpendicular selected support forces it blank.
 Rotation gives the other arms. The center is all P. In particular every
 tile's full P set belongs to H, and no extra exterior T or P can alter
 these labels. Every M mate in R lies in R and in a deficient tile, so s=0.

@@ -566,7 +566,56 @@
     "symmetry_images": 8,
     "nonempty_bundles_checked": 242,
     "feasible_bundles": 0,
-    "refuted_rule": "Two-unit payment per frozen component containing an aligned P-square without uniqueness, or independent payments for overlapping squares."
+    "refuted_rule": "Two-unit payment based solely on freezing and the presence of an aligned P-square, or independent one-unit payments for these two overlapping squares.",
+    "aligned_square_outward_corners": 2,
+    "uniqueness_relaxation_retaining_four_outward_mates": "UNRESOLVED_BY_THIS_FIXTURE"
+  },
+  "corrected_ledger_fixture": {
+    "shape": [
+      4,
+      4
+    ],
+    "selected": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "matching": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    ],
+    "deficient_tile": [
+      0,
+      1
+    ],
+    "selected_count": 1,
+    "endpoints_count": 1,
+    "saturated_attachments": 1,
+    "adjusted_capacity": 0,
+    "charge_twice": 0,
+    "unadjusted_capacity": 1,
+    "incorrect_unadjusted_charge_twice": -2
   },
   "scope": "Finite controls of general written structural/parity/budget proofs; complete geometry is not Lean formalized and multi-square/source coverage remains open."
 }

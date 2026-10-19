@@ -116,9 +116,26 @@ the target inequality with equality. The general proof,1806cases/14448images,
 pass. A6-by6component with two overlapping P-squares freezes in three rounds
 but pays only one unit, with saturated attachments neutralizing the two-P
 core tile. This excludes independent square-by-square payments. Independent
-written-proof review122da19b is live; the later two-square and neutral-family
-extensions are outside its input, and no verdict is inferred.
+written-proof reviews122da19b andfc9e74ce completed REVISE: corrected
+capacity and the later neutral-family/fixture calculations are confirmed;
+the fixture refutes a broad payment rule, not removal of uniqueness while
+retaining four outward mates. All requested scope clarifications are applied;
+no overall ACCEPT is inferred.
 Multi-square geometry and source coverage remain open.
+
+The [exact ladder guard criterion](docs/FOUR_GUARD_LADDER_REDUCTION.md)
+now treats genuine multi-square strips. In a full-P two-row strip of width
+at least four whose strict interior is closed under matching, promoting
+one interior grid color is feasible exactly when its two opposite-color
+boundary guards are blank. The move preserves the objective and removes all
+strip squares, for arbitrary mixed matching directions and exterior labels.
+Four straight nonempty corner arms with outward corner mates force those
+guards blank, so this entire long-core class reduces to square-free paths.
+A bundle-terminal strip with closed interior instead needs at least two
+occupied guards, one of each color. This is a necessary obstruction, not a
+sufficient terminality test. Width three is sharply exceptional. The general
+written proof, independent physical controls and scoped arbitrary-width Lean
+neighbor geometry are included; this later result was outside both reviews.
 
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving

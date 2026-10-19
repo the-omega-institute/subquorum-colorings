@@ -6,6 +6,7 @@ import SubQuorum.MixedPChainCompensation
 import SubQuorum.FrozenPromotion
 import SubQuorum.OwnedDonorCompensation
 import SubQuorum.SingleSquareObstacle
+import SubQuorum.LadderReduction
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -48,3 +49,5 @@ import SubQuorum.SingleSquareObstacle
 #print axioms SubQuorum.SingleSquareObstacle.neutral_tiles
 #print axioms SubQuorum.SingleSquareObstacle.exact_objective
 #print axioms SubQuorum.SingleSquareObstacle.all_frozen
+#print axioms SubQuorum.LadderReduction.promoted_unique_neighbor
+#print axioms SubQuorum.LadderReduction.width_three_failure

@@ -24,7 +24,7 @@ The endpoint structure theorems themselves do not require even side lengths.
 
 **Local turn lemma.** In a single-terminal configuration, if a vertex of
 the endpoint graph has exactly two endpoint neighbors and they are
-perpendicular, then its endpoint component contains a P-square.
+perpendicular, then that vertex belongs to a P-square.
 
 Proof. Translate and rotate so the corner is o=(0,0), with endpoint
 neighbors w=(0,-1) and s=(1,0). Its other neighbors are not P. At least

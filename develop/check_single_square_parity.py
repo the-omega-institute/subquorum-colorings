@@ -200,7 +200,22 @@ def two_square_obstacle():
                 objective=17, total_charge_twice=-2, saturated_attachment_count=2,
                 frozen_layers=[4, 2, 4], symmetry_images=8,
                 nonempty_bundles_checked=242, feasible_bundles=0,
-                refuted_rule='Two-unit payment per frozen component containing an aligned P-square without uniqueness, or independent payments for overlapping squares.')
+                refuted_rule='Two-unit payment based solely on freezing and the presence of an aligned P-square, or independent one-unit payments for these two overlapping squares.',
+                aligned_square_outward_corners=2,
+                uniqueness_relaxation_retaining_four_outward_mates='UNRESOLVED_BY_THIS_FIXTURE')
+
+
+def corrected_ledger_fixture():
+    current = 4, 4, {(0, 2), (1, 1), (2, 3), (3, 2)}, [((1, 2), (2, 2))]
+    assert direct_check(*current) == 5
+    assert set(occupied_degrees(current).values()) == {3}
+    graph, _ = graph_record(*current)
+    assert tuple(graph[key][1] for key in ('t', 'h', 's', 'r', 'deg')) == (1, 0, 1, 0, 0)
+    assert graph['deg'][1]-2*graph['r'][1] == 0
+    return dict(shape=[4, 4], selected=sorted(current[2]), matching=current[3],
+                deficient_tile=[0, 1], selected_count=1, endpoints_count=1,
+                saturated_attachments=1, adjusted_capacity=0, charge_twice=0,
+                unadjusted_capacity=1, incorrect_unadjusted_charge_twice=-2)
 
 
 def main():
@@ -237,10 +252,11 @@ def main():
     report = dict(status='ALL_CHECKS_PASSED', central_patterns=patterns, **totals,
                   representative_cases=examples, neutral_misalignment_obstacle=neutral_obstacle(),
                   two_square_obstacle=two_square_obstacle(),
+                  corrected_ledger_fixture=corrected_ledger_fixture(),
                   scope='Finite controls of general written structural/parity/budget proofs; complete geometry is not Lean formalized and multi-square/source coverage remains open.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
-    print(json.dumps({key:value for key,value in report.items() if key not in ('representative_cases','neutral_misalignment_obstacle','two_square_obstacle')}))
+    print(json.dumps({key:value for key,value in report.items() if key not in ('representative_cases','neutral_misalignment_obstacle','two_square_obstacle','corrected_ledger_fixture')}))
 
 
 if __name__ == '__main__':

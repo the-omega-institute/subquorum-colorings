@@ -3,6 +3,7 @@
 19 October 2026. This extends ODD_ARM_COMPENSATION.md by removing its
 four-outward-mates hypothesis and identifies why tile alignment is necessary
 for a strict negative budget. The submitted manuscript is unchanged.
+All vertex coordinates and tile indices are zero-based.
 
 ## 1. Classification without a matching-direction assumption
 
@@ -83,8 +84,11 @@ paired tile on the ray has PT/PB labels. For an odd arm, the last unpaired
 endpoint and the axial T form the terminal TB/PB half-donor. For an even
 arm, the last pair already fills its last P tile; its axial T lies in the
 next tile, outside R. With l=0 there is no arm tile. Rotation gives all
-four directions. The forced selected supports force each remaining vertex
-of these tiles blank, so no exterior attachment changes their full labels.
+four directions. The selected supports and unused external face incidences
+force the remaining tile vertices blank. In particular, the blank beside
+p_1 on a length-one arm is its unused central face incidence; on a longer
+odd arm the preceding selected support forces it blank. Thus no exterior
+attachment changes their full labels.
 All matching mates are in H and all receiver tiles are deficient, hence s=0.
 An even arm's neutral tiles contain their internal matching edges; an odd
 arm's neutral tiles carry crossing pairs. Either way their original charge
@@ -225,8 +229,10 @@ neutral frozen components or use a different normalization/resource.
 
 ## 5. Two overlapping squares do not supply two independent budgets
 
-The unique-square hypothesis also cannot be removed from the fixed two-unit
-payment. Consider the following complete6-by6configuration:
+A frozen component containing an aligned P-square can have exactly one unit
+of available negative tile charge. The following two-square fixture rules
+out a universal two-unit payment based solely on freezing and the presence
+of an aligned square. Consider the following complete6-by6configuration:
 
     T B T B T B
     B T P B P T
@@ -260,12 +266,17 @@ in the entire configuration is the two left half-donors, giving
     T=12, P=10, B=14, |M|=5, objective17=6*6/2-1,
     rho(whole grid)=-1.
 
-Dropping the saturated-attachment correction would incorrectly charge the
-two-P core tile -1. Its actual original charge is zero. The full fixture
+The raw occupancy term of the two-P core tile is (t-b)/2=-1; its
+saturated-endpoint contribution s/2=1 gives the actual charge zero. The full fixture
 therefore refutes a two-unit negative budget for every frozen component
 containing an aligned square once additional squares are allowed, even if
-the entire exterior may be charged. It also precludes adding the one-square
-budgets independently over overlapping P-squares. The global target remains
+the entire exterior may be charged. It also precludes assigning one physical
+unit independently to each of these two overlapping P-squares under this
+ledger. Exactly one of these squares is aligned, and each has two outward
+matching edges and one internal matching edge: o=2, not o=4. Consequently this
+example does not settle whether the original four-outward-matched two-unit
+theorem extends when uniqueness alone is removed. Distinct aligned unit
+squares are disjoint tiles. The global target remains
 valid, strictly, here. The general geometry of several-square components is
 still unclassified; this is an exact obstacle to that proposed extension.
 
@@ -296,17 +307,27 @@ reduction and ordinary logical axioms, with no sorry or compiler-reduction
 axioms. The geometric charge adapter, infinite structural classification and
 general parity dichotomy remain written proofs.
 
-The new Oracle review122da19b-19c8-48d8-bbd2-29fcfcf1d961 is dispatched;
-conversationconv_e03faff81c763d9b, original streaming terminal79338.
-It reviews the written classification, parity budget, dichotomy and finite
-obstacle, including the local lemmas. The subsequently added finite Lean
-source and all-length neutral misalignment corollary are outside its input.
-The later two-square fixture and the explicit general-ledger clarification
-are also outside that input. The original request's background sentence
-omitted -s from r; this does not affect the reviewed single-square results,
-which all have s=0. A correction is prepared in the review notes; keep the
-original running task and deliver the erratum when that turn terminates.
-No verdict is inferred.
+Oracle review122da19b-19c8-48d8-bbd2-29fcfcf1d961 completed REVISE with
+observedgpt_6/pro. It confirms all supplied mathematical results after
+correcting the original request's background omission of-s from r. Every
+supplied receiver has s=0, so its claims are unchanged; the source verifier
+always used r=2-t-h-s. The turning-vertex statement, length-one face blank
+and zero-based indices are now explicit as requested. The review's4x4
+saturated-attachment example is also independently checked with actual r0,
+rho0, rather than unadjusted r1and incorrect rho-1.
+
+Follow-upfc9e74ce-9a65-4ad8-a9d1-e3aec3bf50df in the same conversation
+conv_e03faff81c763d9b, original stream62212, supplies the actual adjusted
+capacity, clarifications, all-length neutral family and6x6two-square fixture.
+It completed REVISE at06:09:07UTC with observedgpt_6/pro. The reviewer accepts
+the corrected original theorem, all-length neutral family and complete6x6
+certificate, but points out that the fixture changes both uniqueness and
+the four-outward condition. Section5now states exactly the broader payment
+rule it refutes; the extension retaining four outward mates stays open.
+The saturated-endpoint term is also displayed explicitly. No overall ACCEPT
+is inferred. Finite Lean execution and the subsequent colorwise ladder
+criterion are outside the review input. Both full responses and assessments
+are archived.
 Multi-square components and full source coverage remain open.
 
     python3 develop/check_single_square_parity.py --output output/single-square-parity-controls.json
