@@ -113,6 +113,12 @@ pay several requests at a high-capacity run. One may choose the larger of
 the two valid residual totals; their totals must not be added on the same
 slots. No claim that K dominates that multi-request rule is made.
 
+The later [component mixing theorem](COMPONENT_MIXED_STRIP_COMPENSATION.md)
+chooses the better rule separately on disjoint incidence components. It
+can strictly improve on the global maximum without sharing slots. Its
+reservation score is NOT monotone, even for a genuine owned donor in a
+fully frozen example; the pure Kmonotonicity proved here remains valid.
+
 **Unused capacity and a dual formula.** Define
 
     E(r) = sum_C max(0,e_C-v_C).
