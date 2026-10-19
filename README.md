@@ -32,13 +32,22 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [charge-two frozen receiver](docs/CHARGE_TWO_FROZEN_RECEIVER.md) refutes
+the proposed universal receiver ceiling rho_H<=1. Its complete 14-by-10
+physical configuration has 38 endpoints; an explicit acyclic certificate
+excludes all mixed-direction promotion bundles. Original corrected charges
+and all eight physical symmetries pass independent checks. Four distinct
+owned donor tiles are present, and two unit deficits pay its charge without
+reuse. The note extends the old owned-witness criterion to multiple donor
+tiles per component; universal weighted coverage and the grid target remain open.
+
 The [straight-chamber network reduction](docs/DEGREE_THREE_CHAMBER_NETWORKS.md)
 handles arbitrary terminal endpoint geometry of maximum endpoint degree three.
 Its P-face chambers are straight ladders joined by straight paths; when
 occupied degree is exactly three and bundles are impossible, long chambers
 have exactly two forced matching exits. General face turns can be localized
 at degree-four P vertices. The proof and finite controls are separate from
-the still-open receiver charge ceiling. A [punctured-receiver family](docs/PUNCTURED_RECEIVER_EULER_OBSTRUCTION.md)
+the refuted universal receiver ceiling. A [punctured-receiver family](docs/PUNCTURED_RECEIVER_EULER_OBSTRUCTION.md)
 also disproves an uncorrected Euler charge bound under single terminality;
 explicit color bundles exclude the fully frozen hypothesis.
 

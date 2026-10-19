@@ -3,8 +3,8 @@
 20 October 2026. This is a structural reduction for arbitrary endpoint
 components, rather than a prescribed drawing. It separates the degree-three
 case from the junctions created by degree-four endpoints. The whole-receiver
-ceiling and its compensation coverage remain open. Submitted manuscripts are
-unchanged.
+ceiling has since been refuted by a fully frozen charge-two receiver; general
+compensation coverage remains open. Submitted manuscripts are unchanged.
 
 ## 1. Setting and square chambers
 
@@ -28,6 +28,11 @@ P neighbors also lies in a P-face. Those local lemmas and the promotion
 cycle criterion are prior ingredients, not new claims of this note.
 
 ## 2. General geometry when endpoint degree is at most three
+
+Here w counts vertex columns: a chamber is {0,1} x {0,...,w-1}, with
+w>=2; a single P-face has w=2. Put U=P minus all chamber vertices.
+A contact is a P-edge between U and a chamber, or between two different
+chambers. It need not be a matching edge. Selected neighbors are not contacts.
 
 **Straight-chamber network theorem.** Suppose deg_P(p)<=3 for every p in P.
 Then:
@@ -76,18 +81,36 @@ must not be used without proof.
 
 ## 3. Exact matching exits in the occupied-degree-three frozen case
 
-Now assume every P has deg_A(p)=3 and the pair is bundle-terminal. The
-existing cycle criterion implies that M is the unique perfect matching of
-G[P]. Indeed, two different perfect matchings have an alternating cycle;
-promoting all its endpoints of one color removes two occupied neighbors
-from each degree-three promoted vertex, giving a feasible nonempty bundle.
-Conversely, in the degree-three single-terminal case a nonempty one-color
-bundle has a directed cycle in its matching dependency graph. Thus uniqueness
-is also sufficient for bundle terminality by bipartite promotion completeness.
-This equivalence is an immediate consequence of the earlier promotion results.
+Now assume every P has deg_A(p)=3. Bundle-terminal means that there is no
+nonempty feasible simultaneous promotion of distinct matching edges, allowing
+an arbitrary promoted endpoint on each edge, including mixed colors.
+
+**Matching uniqueness criterion.** In this setting M is the unique perfect
+matching of G[P] if and only if the pair is bundle-terminal.
+
+Proof. Suppose a feasible nonempty bundle promotes x_i and removes its mate
+y_i on distinct matching edges. Put Y={y_i}. Each x_i starts with three
+occupied neighbors and has at most one in A minus Y after promotion. In
+addition to y_i, at least one other neighbor y_j is removed, with j different
+from i. On the finitely many chosen edges draw i->j whenever x_i is adjacent
+to y_j. Every vertex has positive outdegree, so a simple directed cycle exists.
+Replace the actual matching edges on that cycle by x_i--y_j along its arcs.
+The new edges have disjoint endpoints and cover precisely the same vertices,
+producing a second perfect matching of G[P]. This proves that uniqueness
+excludes every mixed bundle. In the bipartite grid, x_i and x_j have the same
+color along each arc, since both are adjacent to y_j. The cycle itself is
+therefore one-color, without having assumed that of the original bundle.
+
+Conversely, two different perfect matchings have an alternating cycle. Promote
+its endpoints of one grid color, removing their actual mates on the cycle.
+Each promoted vertex loses two occupied neighbors and has at most one left.
+Original selections remain selected and can only lose occupied neighbors;
+the occupied set only shrinks. Thus this is a feasible nonempty bundle. QED.
 
 For a chamber C let an exit mean an actual matching edge with exactly one
-endpoint in C. Every exit is at one of its four corners by Section 2.
+endpoint in C. Every exit is at one of its four corners by Section 2. An
+external P-edge not in M is a contact but not an exit. A direct chamber-to-
+chamber matching edge is an exit of each chamber.
 
 **Matching-exit theorem.** In the occupied-degree-three bundle-terminal case,
 each chamber has two or four exits. More precisely, write its rectangle as
@@ -95,7 +118,8 @@ each chamber has two or four exits. More precisely, write its rectangle as
 
 - For w>=4 it has exactly two exits, one at each longitudinal end. If the
   left corner row is r, the right corner row is r+w modulo 2.
-- For w=3 it has either the same two-end pattern, or all four corners exit.
+- For w=3 it has either one exit in each longitudinal end column with
+  opposite exit rows, or all four corners exit.
 - For w=2 it has either two adjacent exiting corners of its square, or all
   four corners exit.
 
@@ -141,7 +165,8 @@ alternating-cycle promotion, so uniqueness of M is no longer forced.
 
 ## 4. Locate all geometric turns in the general case
 
-Allow degree-four P vertices and put
+Retain feasibility and single terminality, allow degree-four P vertices,
+and put
 
     J={p in P: deg_P(p)=4}.
 
@@ -178,12 +203,13 @@ by Section4 when degree four is present. This supplies structural variables
 for a general counting argument instead of assuming that a whole component
 is a thin ladder, a particular elbow, or an extractable core.
 
-It does not yet prove rho_H<=1. In particular, physical receiver tiles can
+The universal claim rho_H<=1 is false, by the complete frozen example in
+[the charge-two obstruction](CHARGE_TWO_FROZEN_RECEIVER.md). Physical receiver tiles can
 meet different pieces of the same network, so adding separate chamber or
 path charges would risk double counting. A future network ledger must sum
 each original tile once, retain the saturated-mate transfers, and account
-for junctions and nonunit holes. Donor coverage remains a further question
-even after a receiver ceiling is proved.
+for junctions and nonunit holes. Donor coverage must pay the actual component
+charge; one unit per positive component is insufficient in general.
 
 The [punctured-receiver obstruction](PUNCTURED_RECEIVER_EULER_OBSTRUCTION.md)
 separately explains why an uncorrected Euler characteristic is insufficient
@@ -206,16 +232,19 @@ fixtures and768symmetry images check the network, exits and original
 receiver charge, including positive bent caps and four-exit crosses.
 These controls test the general proofs rather than replace them.
 
-The independent written-proof review is pending on original stream13282;
-the request includes this note before the validation addition and the prior
-turn/branch and promotion-cycle proofs. No new Lean execution or independent
-acceptance is inferred for this note.
+The original written-proof review completed REVISE. It requested an explicit
+mixed-orientation dependency proof and the terminology clarifications now
+included in Sections 2--4. The original stream matches the terminal response
+exactly; see output/degree-three-chamber-review-response.json. These repairs
+have not received a second independent verdict. No new Lean execution or
+independent acceptance is inferred for this note.
 
 The separate general-ceiling Oracle question remains task
 eb07cc29-ff20-402b-aa9b-2a7d2ef567a9, conversation conv_4073388056c31250,
-worker lt4r7693kj-go-1, original stream77285. Its last authoritative state
-was dispatched/waiting_response, with no answer or verdict observed. It has
-not been restarted. This is a different question from the chamber proof audit.
+worker lt4r7693kj-go-1, original stream77285. It completed with an explicit
+fully frozen charge-two counterexample, independently checked in
+develop/check_charge_two_frozen_receiver.py. Its original stream matches the
+terminal response exactly. This is a different question from the chamber audit.
 
 The optional Z3 discovery sources are
 develop/search_frozen_receiver_ceiling.py and
