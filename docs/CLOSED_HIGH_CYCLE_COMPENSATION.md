@@ -290,9 +290,9 @@ charges, exact beta/SF attainment and two-connectivity, including r=1,2.
 The optional all-T rewiring statement and edge-swap exposition are now
 explicit above. The later architecture-bound corollary was not in that
 input and remains a separate written deduction with a conditional Lean
-count. The separate general block-ledger review returned REVISE; its
-same-conversation [follow-up](../output/heawood-block-compensation-followup.json)
-is dispatched and awaiting its response after proof clarifications.
+count. The separate general block-ledger review initially returned REVISE;
+its same-conversation [follow-up](../output/heawood-block-compensation-followup.json)
+now accepts the clarified general theorem and all-k SF consequence.
 Neither review is a premise of this construction or its architecture bound.
 
 Reproduce:

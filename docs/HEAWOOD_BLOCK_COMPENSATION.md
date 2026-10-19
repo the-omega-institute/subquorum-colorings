@@ -22,6 +22,9 @@ not be connected or regular as an induced subgraph.
 Throughout, beta_2 is the maximum cardinality of a dissociation set,
 equivalently a selected set inducing maximum degree at most one. It is
 not the minimum forming-set cardinality.
+An active selected vertex has at least one selected neighbor; a high
+has at least two. The block ports P,L are distinct from their adjacent
+core attachment vertices a,b.
 
 **Theorem.** Every minimal forming selection S satisfies
 
@@ -185,7 +188,8 @@ We need one structural consequence of established general inequalities.
 is one selected six-cycle plus two isolates. Each omitted vertex has
 exactly one selected cycle neighbor and one selected isolate neighbor.
 
-**Proof.** beta_2(H)=7 is established by the Fano saturation proof.
+**Proof.** The maximum dissociation cardinality beta_2(H)=7 is established
+by the Fano saturation proof.
 The [bipartite isolate inequality](AUGMENTED_ISOLATE_COMPENSATION.md)
 gives16<=14+i, while (1) gives40+i<=42. Hence i=2 and W=0.
 
@@ -259,6 +263,8 @@ pi with a selected. H1 excludes a one-neighbor resource there; the only
 export is one unit through a two-neighbor resource with an internal
 isolate. H3 forces an opposite import of at least one, so F_B<=0.
 This is exactly q_B-p_B=0.
+If b is selected and a omitted instead, pi cannot export and H2 excludes
+export through lambda, again giving F_B<=0.
 
 Suppose p_B=2. If a is isolated, neither interface exports: a cannot
 be a high or a leaf of a high, and H2 excludes export through lambda.
@@ -306,7 +312,8 @@ cannot create one. Its old internal failure witness therefore still fails.
 Thus lambda remains essential too.
 
 We have proved the claim. The closed classification now gives a six-cycle
-and two isolates. If lambda lies on the cycle, it has no internal witness:
+and two isolates. If lambda lies on the cycle, it has no witness internal
+to the detached block B before restoration:
 both its internal neighbors are highs, and it has no internal omitted
 neighbor. It must import, contradicting I_B=0. If lambda is an isolate,
 activation through b destroys the private two-neighbor resources of the
@@ -388,8 +395,14 @@ Those passages are expanded above. Two conditional concerns do not
 apply: beta_2 is maximum dissociation cardinality, and L is selected
 in the bare-port p3/M=L branch. Both definitions are now explicit.
 The [same-conversation follow-up](../output/heawood-block-compensation-followup.json)
-supplies the revised passages and full certificate argument; its verdict
-is pending. It is distinct from the completed research response above.
+completed ACCEPT at02:23UTC on19October, observed gpt_6 with effort pro.
+Its [exact response](reviews/2026-10-19-heawood-block-compensation-followup-response.txt)
+accepts the complete revised general theorem under the explicit dependencies,
+all attachment/restoration branches, no-reuse summation and the all-k
+SF_2(L_k)=36k consequence. The remaining terminology and symmetric-case
+suggestions are now explicit. This is a separate independent review,
+distinct from the original research response above. It does not cover
+the later shared-port architecture theorem, which has its own review.
 
 Reproduction:
 

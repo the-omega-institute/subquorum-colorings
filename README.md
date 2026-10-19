@@ -54,7 +54,8 @@ proves **SF_2(L_k)=36k for every k>=1**. More generally b disjoint broken
 Heawood blocks attached to distinct core ports force5|S|+2b<=3n in cubic
 bipartite graphs. Actual isolates and unused witness capacity pay each
 block once. Complete written proofs and conditional Lean ledger checks
-are provided. The [return theorem and obstruction](docs/DIRECTIONAL_RETURN_AND_CORE_DEFICIT.md)
+are provided. Its independent review now accepts the revised general
+theorem and all-k consequence. The [return theorem and obstruction](docs/DIRECTIONAL_RETURN_AND_CORE_DEFICIT.md)
 add four general graph Lean proofs and an all-k minimal34k family with
 k directional signals but zero block losses. The earlier
 [eight-template classification](docs/SATURATED_HEAWOOD_TRANSFER.md) supplies

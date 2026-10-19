@@ -183,3 +183,5 @@ Reproduce the controls and conditional formal audit with:
 python3 scripts/check_core_block_gap_barrier.py --output output/core-block-gap-barrier-controls.json
 python3 scripts/check_cover_pullback_formal.py --lean /path/to/lean4.33.0/bin/lean --audit closed-high-cycle --output output/closed-high-cycle-formal-check.json
 ```
+
+Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
