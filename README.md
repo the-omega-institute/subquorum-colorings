@@ -693,3 +693,10 @@ fully frozen opposed band explains why the old minus-one-only gate
 classification cannot be extended unchanged. Universal residual payment
 remains open. The preceding zero-credit family's separate review has
 completed ACCEPT; it does not cover this later all-phase theorem.
+The all-phase review returned REVISE: the standalone statement now
+explicitly fixes final endpoints and matching to the original unions,
+defines all exceptions source-locally and gives the exact event trigger.
+Its complete marked-side proof clarifies foreign ownership of consumed
+supports and the old protector adjacent to v. The original review and
+[assessment](docs/reviews/2026-10-20-all-phase-joint-slot-assessment.md)
+are retained; a follow-up review is live, with no final ACCEPT claimed.

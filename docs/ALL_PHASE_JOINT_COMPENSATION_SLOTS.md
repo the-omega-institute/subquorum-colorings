@@ -17,7 +17,16 @@ the standard eight-endpoint rotor are allowed. Endpoint sets of original
 modules are pairwise disjoint; every original endpoint has occupied degree
 three and every original selection a unique original endpoint anchor.
 Retain the union of all supports except those becoming endpoints, and
-require the complete final union to be feasible. Optional selections are
+require the complete final union to be feasible. Precisely, define
+
+    P = union_i P_i, M = union_i M_i,
+    T = (union_i T_i) minus P.
+
+Every final endpoint is therefore an ORIGINAL endpoint of one source,
+with its original matching edge. There is no additional endpoint creation
+or matching alteration. An old selection x of source j may be consumed
+because x belongs to a DIFFERENT source's original P_i. It never becomes
+an endpoint of source j by reclassification. Optional selections are
 outside all original receivers and have no endpoint neighbor.
 
 There is no prescribed contact graph, pair-feasibility, port, freezing or
@@ -68,14 +77,28 @@ bar corners and two terminal tips by
     A={(s,1+t),(s,w+t)},
     F={(a+s,1+t),(b+s,w+t)}.
 
-For each original endpoint p, call it an exterior exception if it has no
-original endpoint neighbor OUTSIDE its physical tile. Call p a continuation
-exception if some adjacent intratile ORIGINAL blank v has other intratile
-neighbor u such that 2p-u is not an original endpoint. Let E be the first
-exception set, X the second. Let I be the endpoints with an adjacent
-intratile original blank and irregular receiver profile (1P1T or 2P0T).
-Every irregular event uses one distinct endpoint in I, since its original
-occupied degree is three.
+All three sets below are SOURCE-LOCAL. Fix i and p in P_i. Define
+
+    E_i = {p in P_i: (neighbors(p) minus tile(p)) intersect P_i is empty}.
+
+For each intratile neighbor v of p outside P_i union T_i, let u be
+the OTHER intratile neighbor OF p, distinct from v. Define X_i to contain
+p if 2p-u is not in P_i for at least one such v. In particular u is a
+neighbor of p, not the other neighbor of v. Let I_i be the p in P_i
+with such an adjacent intratile blank and original receiver profile
+(1P1T or 2P0T). The sets E,X,I in the table mean E_i,X_i,I_i for that
+one source. Endpoints of any other original source do not enter these tests.
+
+For precision, since p has original occupied degree exactly three, there
+is one grid neighbor delta_i(p) outside P_i union T_i. An event owned by
+(i,p) occurs EXACTLY when delta_i(p) is in the final P and has the same
+physical tile as p. It is irregular exactly when p is in I_i. Thus
+
+    Kirregular = sum_i |{p in I_i: delta_i(p) in P}|.
+
+There is at most one event per original endpoint. Foreign contacts at
+old selections, contacts across tile boundaries, and selections themselves
+do not create any additional event in this original-owner ledger.
 
 The complete catalogue is
 
@@ -135,6 +158,12 @@ Normalize any positive left side as
 The canonical protectors have old blank neighbors u, v=(4,2), z.
 Every new occupied old blank adjacent to an old endpoint is a foreign
 endpoint, by persistent occupancy and final selected feasibility.
+In particular v IS adjacent to the old protector (4,1), an endpoint
+present even at minimum leg height four. More explicitly, if an old
+blank b adjacent to a fixed source endpoint were a retained selection
+of another source, its distinct original endpoint anchor would persist
+too, giving b two occupied neighbors. Optional selections have no endpoint
+neighbor. Hence every newly occupied u,v,z is an endpoint in the fixed P.
 
 If the side is marked and u is an endpoint, let its original owner be i.
 It cannot have an original endpoint neighbor outside Q: the two possible
@@ -148,7 +177,12 @@ outside positive neighbors persist. Therefore u is finally blank, and was
 originally blank in EVERY source. A marked side has v or z an endpoint.
 If v is an endpoint, x cannot remain selected, because p and v would both
 be its occupied neighbors. Thus at least one of x,z is an endpoint.
-Choose one, denoted t, and its original owner i. If t had continuation
+Choose one, denoted t. Both x and z are outside the fixed positive P_j:
+x was selected, and z was blank. Since t belongs to final P=union_i P_i,
+it has an original owner i distinct from j. In particular, consuming x
+places it in another source's original endpoint set; it does not promote
+it into the positive source's endpoint set. The original matching of
+source i already covers t. If t had continuation
 across the other intratile neighbor, the original endpoint 2t-other
 would be p or q. Those belong to the fixed positive owner. Therefore
 t belongs to X_i. The rotor x/z barrier with blank gate again excludes
@@ -177,7 +211,9 @@ UPPER bar corner. Such a corner is not in E, so Section 3 can assign it
 only in the BLANK-GATE case. Its adjacent intratile original blank is
 exactly that gate u. Original occupied degree three leaves only this one
 blank neighbor. Since u remains blank, this corner incurs NO irregular
-event. Consequently actual side assignments and actual irregular tails
+event: its delta_i(p) is exactly u, and Section 2 gives the exact event
+trigger delta_i(p) in P. No other contact can trigger a second event at
+this source endpoint. Consequently actual side assignments and actual irregular tails
 are disjoint even in this shared candidate pool.
 
 Rotors have no side assignments; negative rotors supply their four
@@ -244,6 +280,18 @@ scope is recorded separately in output/all-phase-joint-slot-formal-check.json;
 the general geometric adapter and arbitrary-fusion injection remain written.
 The preceding review of the zero-credit tip family does not cover this
 later all-phase extension.
+
+The first separate all-phase review returned REVISE. The published revision
+now explicitly fixes P=union_i P_i and M=union_i M_i, defines E_i,X_i,I_i
+source-locally, specifies that the second neighbor in X_i belongs to p,
+and states the exact one-blank event trigger. It also spells out why an
+occupied old selection x has a FOREIGN original endpoint owner and why
+v=(4,2), adjacent to the old endpoint (4,1), cannot be newly selected.
+These make the intended fusion model and the marked-side argument explicit;
+the source construction, slot capacities and computed theorem are unchanged.
+The original REVISE and [independent assessment](reviews/2026-10-20-all-phase-joint-slot-assessment.md)
+are preserved. No final
+ACCEPT of this revised extension is claimed pending the follow-up review.
 
 The next question remains whether the ACTUAL demand Kirregular+G can be
 paid from N+S+C in every admissible fusion, without first replacing it by
