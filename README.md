@@ -32,6 +32,16 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [straight-chamber network reduction](docs/DEGREE_THREE_CHAMBER_NETWORKS.md)
+handles arbitrary terminal endpoint geometry of maximum endpoint degree three.
+Its P-face chambers are straight ladders joined by straight paths; when
+occupied degree is exactly three and bundles are impossible, long chambers
+have exactly two forced matching exits. General face turns can be localized
+at degree-four P vertices. The proof and finite controls are separate from
+the still-open receiver charge ceiling. A [punctured-receiver family](docs/PUNCTURED_RECEIVER_EULER_OBSTRUCTION.md)
+also disproves an uncorrected Euler charge bound under single terminality;
+explicit color bundles exclude the fully frozen hypothesis.
+
 The [frozen rail extension theorem](docs/FROZEN_RAIL_ELBOW_EXTENSIONS.md)
 adds arbitrary even occupied rails to thick elbows. Two anchored freezing
 waves show that no endpoint-promotion bundle can extract the original elbow;

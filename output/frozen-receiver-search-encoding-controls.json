@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "z3_version": "5.3.1",
+  "controls": [
+    {
+      "name": "positive_bent",
+      "require_frozen": true,
+      "status": "sat",
+      "charge": 1,
+      "independently_frozen": true
+    },
+    {
+      "name": "positive_elbow",
+      "require_frozen": true,
+      "status": "sat",
+      "charge": 1,
+      "independently_frozen": true
+    },
+    {
+      "name": "positive_occupied_rail",
+      "require_frozen": true,
+      "status": "sat",
+      "charge": 1,
+      "independently_frozen": true
+    },
+    {
+      "name": "degree_four_promotable_patch",
+      "require_frozen": true,
+      "status": "unsat",
+      "charge": -4,
+      "independently_frozen": false
+    },
+    {
+      "name": "degree_four_promotable_patch",
+      "require_frozen": false,
+      "status": "sat",
+      "charge": -4,
+      "independently_frozen": false
+    },
+    {
+      "name": "degree_three_alternating_square",
+      "require_frozen": true,
+      "status": "unsat",
+      "charge": 0,
+      "independently_frozen": false
+    },
+    {
+      "name": "degree_three_alternating_square",
+      "require_frozen": false,
+      "status": "sat",
+      "charge": 0,
+      "independently_frozen": false
+    }
+  ],
+  "scope": "Fixed known physical configurations test strict-rank freezing, connectivity and exact charge in the discovery encoding. No unrestricted ceiling conclusion is inferred."
+}
