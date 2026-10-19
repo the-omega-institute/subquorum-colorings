@@ -38,8 +38,11 @@ Proof. Every endpoint column lies in both partitions because the deleted
 boundary columns are blank. For each fixed endpoint column the adjacent
 column paired to it changes to the opposite side under a shift by one.
 The mouth row pair stays fixed, so full and partial columns stay full and
-partial. Terminal tile ownership excludes a second complete comb from the
-same shifted square, including an opposite-corner pair.
+partial. A physical or shifted square cannot contain two different comb
+columns: adjacent endpoints would join the complete components. If the only
+endpoints were diagonal, both would be partial-column ends; the axial selected
+support of either end would then be adjacent to both endpoints, contradicting
+feasibility. This establishes ownership in the shifted tiling directly.
 
 In a full column the alternating side supports put exactly one T in either
 choice of paired neighboring column. That T forbids the other corner.
