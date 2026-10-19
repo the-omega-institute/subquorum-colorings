@@ -18,6 +18,13 @@ strengthen this coefficient to one by controlling longer residual paths and
 their global compensation, then account for odd-side boundaries. Exact
 frontier states and constructed geometric examples test these arguments.
 
+The [local-quota cut theorem](LOCAL_QUOTA_CUTS_AND_FROZEN_BATCH_OBSTRUCTION.md)
+strengthens the two strip-allocation rules and reduces the first possible
+charge-five resource failures to three leaf-free motifs. It also gives
+an unbounded fully frozen family where every nonempty batch of the four
+current corner-rule donors lowers the budget. Safe donor ordering or
+reserving all donors cannot be assumed in the remaining coverage proof.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.

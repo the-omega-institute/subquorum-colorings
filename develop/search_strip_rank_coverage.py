@@ -10,6 +10,7 @@ import z3
 
 from check_two_leg_corner_obstruction import saturated_endpoint_donors
 from component_strip_certificates import mixed_component_allocation
+from local_quota_strip_allocation import local_quota_allocation
 from owned_corner_witnesses import physical_donors
 from sealed_strip_allocation import maximal_strips
 from search_frozen_receiver_ceiling import count, encoding, verify
@@ -78,7 +79,7 @@ def first_balanced_shape(solver, selected, endpoints, rows, columns):
     solver.add(z3.Or(shared))
 
 
-def first_mixed_shape(solver, selected, endpoints, rows, columns):
+def first_mixed_shape(solver, selected, endpoints, rows, columns, exclude_leaves=False):
     tiles = list(itertools.product(range(rows//2), range(columns//2)))
     occupied = {}
     capacities = {}
@@ -103,6 +104,8 @@ def first_mixed_shape(solver, selected, endpoints, rows, columns):
                         actual.append(occupied[tile_at(stop)])
                     maximal = z3.And(actual)
                     capacity = z3.Sum([capacities[tile_at(index)] for index in range(start, stop)])
+                    if exclude_leaves:
+                        solver.add(z3.Implies(maximal, capacity != 1))
                     active.append(z3.And(maximal, capacity > 0))
                     weighted.append(z3.If(maximal, capacity/2, 0))
     total = z3.Sum(list(capacities.values()))
@@ -110,8 +113,10 @@ def first_mixed_shape(solver, selected, endpoints, rows, columns):
 
 
 def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
-           first_balanced_obstruction=False, first_mixed_obstruction=False):
-    assert not (first_balanced_obstruction and first_mixed_obstruction)
+           first_balanced_obstruction=False, first_mixed_obstruction=False,
+           first_local_quota_obstruction=False):
+    assert sum((first_balanced_obstruction, first_mixed_obstruction,
+                first_local_quota_obstruction)) <= 1
     actual_endpoints = None
     if fixed_geometry is not None:
         rows, columns = fixed_geometry['shape']
@@ -134,8 +139,9 @@ def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
         first_balanced_shape(solver, selected, endpoints, rows, columns)
         solver.add(charge == 4)
         cover = z3.IntVal(3)
-    elif first_mixed_obstruction:
-        first_mixed_shape(solver, selected, endpoints, rows, columns)
+    elif first_mixed_obstruction or first_local_quota_obstruction:
+        first_mixed_shape(solver, selected, endpoints, rows, columns,
+                          exclude_leaves=first_local_quota_obstruction)
         solver.add(charge == 5)
         cover = z3.IntVal(4)
     else:
@@ -148,7 +154,9 @@ def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
                   require_frozen=require_frozen,
                   first_balanced_obstruction=first_balanced_obstruction,
                   first_mixed_obstruction=first_mixed_obstruction,
+                  first_local_quota_obstruction=first_local_quota_obstruction,
                   rank_encoding='exact_two_doubled_tiles_shape' if first_balanced_obstruction
+                                else 'four_active_leaf_free_runs_shape' if first_local_quota_obstruction
                                 else 'four_active_runs_odd_degree_shape' if first_mixed_obstruction
                                 else 'run_slot_vertex_cover',
                   seconds=round(time.monotonic()-started, 3), z3_version=z3.get_version_string(),
@@ -181,13 +189,18 @@ def search(rows, columns, timeout, fixed_geometry=None, require_frozen=True,
             positive = [tile for tile, capacity in residual.items() if capacity]
             assert len(positive) == 2 and all(residual[tile] == 2 for tile in positive)
             assert any(set(positive) <= set(record['tiles']) for record in records)
-        if first_mixed_obstruction:
+        if first_mixed_obstruction or first_local_quota_obstruction:
             mixed = mixed_component_allocation(records, residual)
             assert checked['receiver_charge'] == 5 and rank == mixed['credits'] == 4
             assert sum(residual.values()) in (5, 6)
             assert len(mixed['components']) == 1
             assert len(mixed['components'][0]['vertices']) == 4
             report['mixed_certificate'] = mixed
+            if first_local_quota_obstruction:
+                local = local_quota_allocation(records, residual)
+                assert local['credits'] == 4
+                assert all(degree >= 2 for _, degree in local['degrees'])
+                report['local_quota_certificate'] = local
         report.update(selected=sorted(actual_selected), matching=actual_matching, checked=checked,
                       exact_rank=rank, vertex_cover=cover_value)
     elif status == z3.unknown:
@@ -205,13 +218,15 @@ def main():
     first_modes = parser.add_mutually_exclusive_group()
     first_modes.add_argument('--first-balanced-obstruction', action='store_true')
     first_modes.add_argument('--first-mixed-obstruction', action='store_true')
+    first_modes.add_argument('--first-local-quota-obstruction', action='store_true')
     parser.add_argument('--output', type=Path, required=True)
     arguments = parser.parse_args()
     fixed = json.loads(arguments.fixed_geometry.read_text()) if arguments.fixed_geometry else None
     report = search(arguments.rows, arguments.columns, arguments.timeout, fixed,
                     require_frozen=not arguments.single_terminal_only,
                     first_balanced_obstruction=arguments.first_balanced_obstruction,
-                    first_mixed_obstruction=arguments.first_mixed_obstruction)
+                    first_mixed_obstruction=arguments.first_mixed_obstruction,
+                    first_local_quota_obstruction=arguments.first_local_quota_obstruction)
     if arguments.fixed_geometry:
         report['fixed_geometry_source'] = str(arguments.fixed_geometry)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')

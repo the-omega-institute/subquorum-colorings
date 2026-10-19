@@ -12,6 +12,7 @@ from search_strip_coverage import exclude_certificates
 from search_strip_rank_coverage import first_balanced_shape, first_mixed_shape
 from check_low_charge_rank_barrier import array_records
 from component_strip_certificates import mixed_component_allocation
+from local_quota_strip_allocation import local_quota_allocation
 from strip_incidence_allocation import maximum_run_allocation
 
 
@@ -52,6 +53,7 @@ def main():
     shape_patterns = 0
     shape_accepted = 0
     mixed_shape_accepted = 0
+    local_shape_accepted = 0
     for capacities in itertools.product(range(3), repeat=len(tiles)):
         residual = dict(zip(tiles, capacities))
         chosen = {(2*row, 2*column+offset) for (row, column), capacity in residual.items()
@@ -74,11 +76,20 @@ def main():
         mixed = mixed_component_allocation(runs, residual)
         assert (mixed_status == z3.sat) == (5 <= sum(capacities) <= 6 and mixed['credits'] == 4)
         mixed_shape_accepted += mixed_status == z3.sat
+        local_solver = z3.Solver()
+        first_mixed_shape(local_solver, selected, endpoints, 4, 6, exclude_leaves=True)
+        local_status = local_solver.check()
+        assert local_status in (z3.sat, z3.unsat)
+        local = local_quota_allocation(runs, residual)
+        assert (local_status == z3.sat) == (5 <= sum(capacities) <= 6 and local['credits'] == 4)
+        local_shape_accepted += local_status == z3.sat
     assert shape_accepted == 9
     assert mixed_shape_accepted == 60
+    assert local_shape_accepted == 30
     report = dict(status='PASS', z3_version=z3.get_version_string(), positive_controls=records,
                   shape_encoding_patterns=shape_patterns, accepted_resource_shapes=shape_accepted,
                   accepted_first_mixed_resource_shapes=mixed_shape_accepted,
+                  accepted_first_local_quota_resource_shapes=local_shape_accepted,
                   scope='Both known fully frozen no-four-corner fixtures satisfy the '
                         'base SMT constraints with their exact T/P/matching labels. '
                         'The encoded charge equals the independently checked original '
@@ -88,6 +99,8 @@ def main():
                         'rank and capacity on all729abstract patterns, accepting exactly nine. '
                         'The new first-mixed encoding agrees with the independently allocated '
                         'mixed score on those same patterns, accepting exactly60. '
+                        'Excluding degree-one runs agrees with exact local-quota allocation '
+                        'on the same patterns, accepting exactly30 remaining shapes. '
                         'These patterns test resource algebra, not physical feasibility. '
                         'This does not establish full search completeness or general coverage.')
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')

@@ -7,6 +7,12 @@ donors in the previous frozen example, and refutes a tempting stronger
 rule that counts parity gains from every component. It preserves an
 existing coverage certificate; universal grid coverage remains open.
 
+The later [local-quota and frozen-batch note](LOCAL_QUOTA_CUTS_AND_FROZEN_BATCH_OBSTRUCTION.md)
+shows why the safe order in Section5cannot be generalized: a wider
+fully frozen two-leg family has exactly two current donors, and every
+nonempty subset, including the complete batch, lowers the mixed score.
+The sufficient theorem below remains valid with its explicit hypotheses.
+
 ## 1. Fixed physical resources and assumptions
 
 Use the original endpoint-free tiles of the disjoint 2-by-2 tiling of a

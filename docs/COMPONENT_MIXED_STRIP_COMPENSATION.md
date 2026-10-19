@@ -209,7 +209,7 @@ runs degrees2,5,4. The residual incidence graph is connected, giving
 
 At tile Q_(1,2), selected vertex(3,5)has endpoint anchor(3,6). The
 opposite corner is(2,4), with guard(1,4): that guard is an endpoint
-of occupied degree three, all its neighbors are endpoints, and it has
+of occupied degree three, all its occupied neighbors are endpoints, and it has
 the same endpoint-component owner as the anchor. This is a valid fourth
 saturated-endpoint donor with actual capacity1, as verified by the
 existing general donor theorem and the independent physical checker.
