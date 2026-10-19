@@ -183,7 +183,12 @@ For each c=c_i make these local changes to those rows:
 - every odd row 9,...,y+1: remove c+1,c+3 and add c+2,c+4.
 
 Take the union with the prescribed supports and complete sharp flanks;
-no prescribed selection is deleted. The entire construction fits in
+no prescribed selection is deleted. In the even-row patches, the removed
+sites c,c+2,c+4 are optional filler sites, not prescribed source supports.
+The upper-arm supports in row 6 at c,c+2,c+4 and in row 8 at c+3 are
+retained. Every unlisted vertex is blank; outside C the only selected
+vertices are prescribed source supports and the listed sharp-flank sites.
+The entire construction fits in
 (V+12) by (W+8), with vertices indexed from zero.
 
 ### Uniform feasibility and count proof
@@ -251,3 +256,10 @@ sources. Arbitrary positive bent components, uncontrolled negative comb
 flux and existence of enough low-multiplicity cavity capacity remain open.
 Future routing must earn actual Gamma or physical capacity; simply charging
 two to every component that enters a region fails by the unbounded family.
+
+The completed review 112a9b99-7049-43d8-929a-c3a9f9019b35 accepts the
+partial-source theorem and sharp family under these hypotheses. Its two
+requested configuration clarifications are incorporated above. The exact
+response and assessment are recorded in
+`output/open-source-cavity-review-response.json` and
+`docs/reviews/2026-10-19-open-source-cavity-assessment.md`.
