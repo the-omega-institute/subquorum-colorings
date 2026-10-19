@@ -1,6 +1,7 @@
 import SubQuorum.CollarCompensation
 import SubQuorum.AttachmentCollarCompensation
 import SubQuorum.BlankWitnessCompensation
+import SubQuorum.DiagonalWitnessChains
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -17,3 +18,7 @@ import SubQuorum.BlankWitnessCompensation
 #print axioms SubQuorum.BlankWitnessCompensation.shared_blank_source_compensation
 #print axioms SubQuorum.BlankWitnessCompensation.two_witness_payment
 #print axioms SubQuorum.BlankWitnessCompensation.paid_attachment_parity
+#print axioms SubQuorum.DiagonalWitnessChains.shared_corner_displacement
+#print axioms SubQuorum.DiagonalWitnessChains.orientation_propagation
+#print axioms SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks
+#print axioms SubQuorum.DiagonalWitnessChains.double_link_charge

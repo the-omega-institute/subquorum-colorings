@@ -13,15 +13,18 @@ as in `ATTACHMENT_CORRECTED_COLLAR_COMPENSATION.md`, so
 
     2rho(R)=-D+k+sigma,       D>=2L.
 
-Reserve one internal blank neighbor of the T in every deficient tile with
-t=1. Such a neighbor exists by feasibility. In a marked tile with t=1,
-reserve the other noncap corner: the pressure condition forces it blank.
-Reserve the two cap blanks in every marked tile as well. These reservations
-are disjoint. Let F be all remaining blanks in deficient tiles of R. Then
+Choose exactly one baseline blank in each deficient tile with t=1.
+In an unmarked tile, choose any internal blank neighbor of its T;
+such a neighbor exists by feasibility. In a marked tile, the single
+baseline reservation must be the other noncap corner, which pressure
+forces blank. This is that tile's baseline reservation, not an extra one.
+Also reserve the two cap blanks in each marked tile. The baseline and
+cap sets are disjoint, and distinct tiles have disjoint vertices.
+Let F be all remaining blanks in deficient tiles of R. Then
 
     |F|=D-2L.                                             (1)
 
-Any such choice of the noncap T reservations is permitted. A reservation
+Any baseline choice satisfying this policy is permitted. A reservation
 policy is part of a certificate, and is fixed before assigning debt witnesses.
 Saturated-tile blanks are excluded from F.
 
@@ -59,8 +62,10 @@ else an augmenting path increases the matching. Their matched left partners
 belong to X excluding its initially unmatched root. Thus |N(X)|<=|X|-1,
 contradicting the incidence count. The matching covers A. Every assigned
 blank is a distinct member of F, proving (2) using (1) and the exact ledger.
-This derives the required allocation condition from grid geometry; no Hall
-inequality is assumed as an extra premise. QED.
+Geometry supplies the upper bound of two owners per blank. The lower
+bound of two available witnesses per owner is an explicit hypothesis
+of this sufficient theorem, not a consequence for arbitrary regions.
+Together they prove Hall's condition rather than assuming it. QED.
 
 For disjoint source regions of total charge at most L, sigma=0 now pays
 them even with arbitrarily many internal attachments. If the boundary
@@ -76,7 +81,8 @@ per residual passage through a capacity-two tile.
 The two-witness condition is sufficient and can be weakened completely.
 Replace every blank of witness degree two by an edge between its two owners;
 keep parallel edges when two distinct blanks have the same owner pair.
-Call the resulting multigraph H on A the shared-blank graph. A degree-one
+Call the resulting loop-free multigraph H on A the shared-blank graph:
+its two owners occupy different tiles, so loops cannot arise. A degree-one
 blank is a private blank at its unique owner. Degree-zero free blanks remain
 unused by this witness incidence.
 
@@ -113,6 +119,17 @@ charge at most L satisfy
 
     2rho(R union sources)<=sigma+c-mu-p-u.               (5)
 
+Precisely, let U_1,...,U_m be pairwise tile-disjoint source regions,
+each disjoint from R, with sum rho(U_i)<=L. Each charge is measured in
+the original full configuration, including edges crossing between
+these sets. The witness graph, reservations and all symbols on the
+right side of (5) belong only to R. By additivity over this tile partition,
+2rho(R union sources)=2rho(R)+2sum rho(U_i); substituting (4) proves
+(5). No source is given a second witness allocation or a share of F.
+Crossing matching edges are permitted; recomputing R's certificate on
+the union is neither needed nor asserted. When combining several such
+cores, require the entire cores to be pairwise tile-disjoint.
+
 The checkable condition mu+p+u>=c+sigma proves aggregate compensation,
 including cancellation between component balances. Each blank has one
 identity in this sum; a private blank or a cycle is never separately reused
@@ -123,7 +140,9 @@ components is needed for the additive charge inequality.
 
 For any integer a>=2 use a (2a+4)-by-(2a+6) rectangle. Let saturated tiles
 S_i=(1+i,a-i), 0<=i<a, and deficient tiles W_i=(2+i,a-i), 0<=i<a-1,
-where these are tile coordinates. R consists of these 2a-1 tiles, an induced
+where the first tile coordinate is the row and the second is the column.
+Increasing a row moves down; increasing a column moves right.
+R consists of these 2a-1 tiles, an induced
 staircase tile path. In every S_i select the TR and BL corners and make BR
 a matching endpoint; TL is blank. In every W_i only TL is blank, with its
 other three corners matching endpoints. Prescribe matching edges:
@@ -154,6 +173,13 @@ Two local repairs pay all a internal debts, with L=0:
    immediate upper external neighbor. Its BR blank is shared by S_0,S_1.
    It creates a second distinct edge between these two owners, giving
    mu=1,p=0 and rho(R union V)=0.
+
+For clarity, in repair 1 the new edges are
+(0,2a)--(1,2a) and (0,2a+1)--(0,2a+2).
+The new blank V.BR=(1,2a+1) neighbors S_0.TR=(2,2a+1).
+V is above S_0, not to its left; the rightward matching endpoint
+(0,2a+2) is neither S_0.TL=(2,2a) nor another vertex of S_0.
+This explicit row/column convention is essential to checking feasibility.
 
 The added endpoints do not touch any T or an existing matching endpoint.
 Each repair adds one free blank and a tile of charge -1/2. These formulas
@@ -200,3 +226,12 @@ new witness theorem. The universal 5/6 bound, arbitrary overlapping cores,
 and proving the certificate for every grid configuration remain open.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
+
+Review update, 19 October: the first distinct-blank audit returned REVISE.
+The baseline-reservation and source-domain prose is clarified above;
+the private repair is unchanged and now has explicit row/column vertices.
+The assessment is in docs/reviews/2026-10-19-blank-witness-assessment.md.
+The same-reviewer follow-up also examines DIAGONAL_WITNESS_CHAINS.md,
+which proves that actual shared-blank components are straight chains
+and the abstract cycle resources reduce to distinct parallel pairs.
+No acceptance of that follow-up is presumed.
