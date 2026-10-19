@@ -138,6 +138,11 @@ Every other tile has no P and charge t-2<=0. Equation (3) now proves (4)
 for the terminal pair, and objective preservation proves it for the initial
 pair. QED.
 
+The receiver partition, saturation labels and charges are recomputed at the
+terminal representative. Individual tile charges need not be invariant during
+the preceding single promotions; only feasibility, objective and absence of
+new P-squares are preserved by that normalization.
+
 For any such terminal representative the exact deficit is
 
     mn/2-|T|-|M| = sum_(Q in Z)(2-t_Q).                     (5)
@@ -180,6 +185,13 @@ First reduce the pure rectangles, then perform singles on every remaining
 component that admits them. None of these operations changes any prescribed
 capped component or its six supports: its endpoints are universally frozen,
 other components never add endpoints, and the original T is preserved.
+The complete receiver of a prescribed cap cannot initially contain another component's
+endpoint either: the diagonal-pair argument would contradict terminality of
+the capped endpoint itself, without requiring global terminality. Thus every
+tile in that receiver is unchanged by other component reductions, which alter
+only their own endpoints. All cap labels, saturation data and actual matching
+transfers are preserved throughout normalization.
+
 Every other final component is a square-free straight comb. The complete
 terminal endpoint receivers are disjoint by Section 2. Each comb contributes
 zero and each capped receiver contributes exactly -1 by its proved original
@@ -223,8 +235,12 @@ no real lean or lake executable remained active.
 python3 develop/check_component_receivers.py --output output/component-receiver-controls.json
 ```
 
-An independent written-proof review has been submitted through the Oracle
-broker. It includes the earlier turn/branch/comb and pure-rectangle proofs;
-no verdict is inferred while the original stream remains live.
+Independent written-proof review eb7442b9-c9d2-4192-8b71-41c5d1d9c21d
+completed ACCEPT at 07:56:06 UTC, observed gpt_6/pro. It checks the earlier
+turn/branch/comb and pure-rectangle proofs as well as this note's receiver,
+normalization and capped-extension arguments. Its exact response and scoped
+assessment are archived. The final-representative and initial capped-ownership
+clarifications above are incorporated. It is not execution or priority review,
+and does not cover the subsequent all-alignment one-square extension.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

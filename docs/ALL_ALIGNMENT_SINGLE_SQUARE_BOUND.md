@@ -142,6 +142,17 @@ budgets depend on alignment; there is no positive payment per odd arm without
 that alignment condition. Neutral misaligned frozen crosses agree with the
 earlier obstacle. The two-step identity is an arbitrary-length proof.
 
+Equivalently, put eta=o/2. The base table gives
+
+    R_0=(1+u)(1+v)+eta(2-u-v),
+    T_0=2u+2v+eta(2-u-v).
+
+Substituting these expressions in (1) and (3) yields the compact identity
+
+    rho(R_H)=eta(u+v-1)-2uv.
+
+This is zero for the two mixed phases and nonpositive for both equal phases.
+
 ## 4. A coefficient-one theorem allowing branched components
 
 **At-most-one-square component theorem.** If every initial endpoint component
@@ -209,5 +220,12 @@ and conditional comb counts used by the preceding receiver note. The new
 all-length arm-extension geometry, base counts and one-square global bound
 here are written proofs, not new Lean claims. Independent review of this
 extension is separate from the earlier square-free receiver submission.
+
+Both independent written-proof reviews have now completed ACCEPT: the
+receiver/square-free review at 07:56:06 UTC and the separate one-square
+extension at 07:59:41 UTC on 19 October. Exact receipts and assessments are
+archived under output/ and docs/reviews/. These are proof assessments, not
+execution or priority reviews. Existing CI at ee0fdf8 completed successfully;
+the standalone receiver controls and scoped Lean audit remain local evidence.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
