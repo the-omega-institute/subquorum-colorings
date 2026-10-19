@@ -113,6 +113,34 @@ pay several requests at a high-capacity run. One may choose the larger of
 the two valid residual totals; their totals must not be added on the same
 slots. No claim that K dominates that multi-request rule is made.
 
+**Unused capacity and a dual formula.** Define
+
+    E(r) = sum_C max(0,e_C-v_C).
+
+Since every slot belongs to one component, equation(1) gives
+
+    sum_Q r_Q-K(r) = E(r),    B+K(d-a) = D-E(d-a).              (4a)
+
+Trees and components with exactly one cycle lose no slot in this count.
+Only components with more edges than vertices contribute unused capacity.
+Here this is a loss of the one-request-per-run certificate, not a physical
+loss of the remaining slots. Parallel edges count separately throughout.
+
+There is also an exact dual formula. For a set U of run vertices, put
+
+    L(U) = |U| + sum_{Q: {h(Q),v(Q)} is not a subset of U} r_Q.
+
+Then K(r)=min_U L(U). To prove this, form the bipartite incidence graph
+with runs on one side and individual physical slots on the other. Its
+maximum matching is precisely the allocation defining K. In any vertex
+cover whose chosen run vertices are U, a slot must be chosen unless BOTH
+its incident runs lie in U. Choosing exactly those forced slots produces
+a cover of size L(U), and every cover with run part U has at least that
+size. The bipartite matching/vertex-cover theorem gives the formula.
+Zero-capacity tiles and isolated runs cause no exception. Thus an SMT
+assignment with L(U)<sum rho_H is a checkable obstruction to this exact
+certificate; a search timeout gives no such conclusion.
+
 ## 4. Conditional cross-component consequence
 
 Now assume single terminality and complete receivers
@@ -137,6 +165,26 @@ required a particular receiver to be paid only by particular runs.
 This is a structural reduction, not a universal coverage theorem. Proving
 (5)for all relevant grid representatives remains open. The unrestricted
 five-sixths bound and grid triple equality are not improved here.
+
+More precisely, if sigma=mn/2-|T|-|M| denotes the actual grid slack,
+the original ledger and(4a)show that(5)is equivalent to
+
+    sigma >= E(d-a).                                          (5a)
+
+This identifies the additional burden of the exact rank certificate:
+the target bound alone asks sigma>=0, while this certificate asks that
+slack also cover the unused excess of the residual incidence components.
+A counterexample to(5a)with sigma>=0would refute the certificate, not the
+grid bound. For the32-endpoint example below, E=0and sigma=2.
+
+The dual encoding in develop/search_strip_rank_coverage.py is checked
+against independent physical matchings by develop/check_strip_rank_cover.py.
+The fixed-capacity controls include all729multiplicity0/1/2patterns on a
+2-by-3tile array, six physical fixtures in eight symmetries, and separated
+two/three/four-component cases. Abstract capacity patterns test the dual
+algebra without asserting grid feasibility. These controls do not establish
+completeness of the full frozen-receiver discovery encoding. Its8-by-10
+45-second search returned UNKNOWN(timeout), not UNSAT and not a theorem.
 
 ## 5. A fully frozen32-endpoint obstruction
 

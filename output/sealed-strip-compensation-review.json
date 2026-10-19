@@ -1,5 +1,5 @@
 {
-  "status": "COMPLETED_REVISE_REPAIRED_FOLLOWUP_LIVE",
+  "status": "COMPLETED_REVISE_REPAIRED_FOLLOWUP_INFRASTRUCTURE_FAILED",
   "task_id": "ec8a5457-e24e-4930-8128-cd7a5ef14d5e",
   "conversation_id": "conv_1170ac196c13e56e",
   "worker": "vpq6w6rcxy-go-2",
@@ -17,7 +17,12 @@
   ],
   "followup": {
     "task_id": "ca162658-b9dd-43af-a2df-f378e6e88a3f",
-    "status": "DISPATCHED_NO_VERDICT",
+    "status": "FAILED_INFRASTRUCTURE_NO_MATHEMATICAL_VERDICT",
+    "completed_at_utc": "2026-10-19T18:47:50.874+00:00",
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "attempts": 4,
+    "terminal_response_file": "output/sealed-strip-compensation-repair-review-response.json",
     "original_exec_session": 18941,
     "request_local_file": "output/sealed-strip-compensation-repair-review-request.json",
     "stream_local_file": "output/sealed-strip-compensation-repair-review-stream.sse"

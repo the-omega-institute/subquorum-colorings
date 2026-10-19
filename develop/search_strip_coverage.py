@@ -49,6 +49,8 @@ def exclude_certificates(solver, selected, endpoints, rows, columns, certificate
             forbidden.append(count(endpoints[point] for point in exterior) == 2)
             solver.add(z3.Not(z3.And(z3.Not(occupied_tile[tile]), selected[chosen],
                                      anchor, z3.Or(forbidden))))
+    if certificate is None:
+        return 0
     intervals = 0
     for horizontal in (True, False):
         bands, length = (rows//2, columns//2) if horizontal else (columns//2, rows//2)

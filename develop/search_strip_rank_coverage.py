@@ -1,0 +1,104 @@
+"""Finite discovery of a frozen receiver exceeding the exact strip incidence rank."""
+
+import argparse
+import itertools
+import json
+from pathlib import Path
+import time
+
+import z3
+
+from check_two_leg_corner_obstruction import saturated_endpoint_donors
+from owned_corner_witnesses import physical_donors
+from sealed_strip_allocation import maximal_strips
+from search_frozen_receiver_ceiling import count, encoding, verify
+from search_strip_coverage import exclude_certificates
+from strip_incidence_allocation import maximum_run_allocation
+
+
+if not __debug__:
+    raise RuntimeError('Run without -O: verification uses assertions.')
+
+
+def rank_cover(solver, selected, endpoints, rows, columns):
+    tiles = list(itertools.product(range(rows//2), range(columns//2)))
+    cells = {tile: {(2*tile[0]+first, 2*tile[1]+second)
+                    for first, second in itertools.product((0, 1), repeat=2)} for tile in tiles}
+    occupied = {tile: z3.Or([endpoints[point] for point in cells[tile]]) for tile in tiles}
+    residual = {tile: z3.If(occupied[tile], 0, 2-count(selected[point] for point in cells[tile]))
+                for tile in tiles}
+    covered_by_axis = [{tile: [] for tile in tiles} for _ in range(2)]
+    run_cost = []
+    for axis, horizontal in enumerate((True, False)):
+        bands, length = (rows//2, columns//2) if horizontal else (columns//2, rows//2)
+        for band in range(bands):
+            tile_at = lambda index: (band, index) if horizontal else (index, band)
+            for start in range(length):
+                for stop in range(start+1, length+1):
+                    actual = [z3.Not(occupied[tile_at(index)]) for index in range(start, stop)]
+                    if start:
+                        actual.append(occupied[tile_at(start-1)])
+                    if stop < length:
+                        actual.append(occupied[tile_at(stop)])
+                    covered = z3.Bool('covered_%d_%d_%d_%d' % (axis, band, start, stop))
+                    solver.add(z3.Implies(covered, z3.And(actual)))
+                    run_cost.append(covered)
+                    for index in range(start, stop):
+                        covered_by_axis[axis][tile_at(index)].append(covered)
+    uncovered_slots = []
+    for tile in tiles:
+        both_runs = z3.And([z3.Or(covered_by_axis[axis][tile]) for axis in range(2)])
+        uncovered_slots.append(z3.If(both_runs, 0, residual[tile]))
+    return count(run_cost)+z3.Sum(uncovered_slots)
+
+
+def search(rows, columns, timeout):
+    solver, selected, endpoints, matching, _, charge = encoding(
+        rows, columns, 1, timeout, (2, 2), require_frozen=True)
+    exclude_certificates(solver, selected, endpoints, rows, columns, certificate=None)
+    cover = rank_cover(solver, selected, endpoints, rows, columns)
+    solver.add(cover < charge)
+    started = time.monotonic()
+    status = solver.check()
+    report = dict(status=str(status), shape=[rows, columns], timeout_seconds=timeout,
+                  seconds=round(time.monotonic()-started, 3), z3_version=z3.get_version_string(),
+                  scope='Finite discovery only. One connected fully frozen endpoint component '
+                        'through (2,2), no four-corner donors, and a run-slot bipartite vertex '
+                        'cover smaller than the original corrected receiver charge. The cover '
+                        'upper-bounds exact one-unit-per-run matching rank. Unknown is not unsat.')
+    if status == z3.sat:
+        model = solver.model()
+        actual_selected = {point for point, variable in selected.items()
+                           if z3.is_true(model.eval(variable))}
+        actual_matching = [edge for edge, variable in matching.items()
+                           if z3.is_true(model.eval(variable))]
+        current = rows, columns, actual_selected, actual_matching
+        checked = verify(current)
+        assert not physical_donors(current, include_endpoint_guard=True)
+        assert not saturated_endpoint_donors(current)
+        records, _, residual = maximal_strips(current)
+        rank = maximum_run_allocation(records, residual)['rank']
+        cover_value = model.eval(cover).as_long()
+        assert rank <= cover_value < checked['receiver_charge']
+        report.update(selected=sorted(actual_selected), matching=actual_matching, checked=checked,
+                      exact_rank=rank, vertex_cover=cover_value)
+    elif status == z3.unknown:
+        report['reason_unknown'] = solver.reason_unknown()
+    return report
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--rows', type=int, default=8)
+    parser.add_argument('--columns', type=int, default=10)
+    parser.add_argument('--timeout', type=int, default=60)
+    parser.add_argument('--output', type=Path, required=True)
+    arguments = parser.parse_args()
+    report = search(arguments.rows, arguments.columns, arguments.timeout)
+    arguments.output.write_text(json.dumps(report, indent=2)+'\n')
+    print(json.dumps({key: value for key, value in report.items()
+                      if key not in ('selected', 'matching', 'checked')}), flush=True)
+
+
+if __name__ == '__main__':
+    main()

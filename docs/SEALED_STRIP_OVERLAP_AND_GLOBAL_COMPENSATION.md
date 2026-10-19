@@ -279,8 +279,9 @@ statements. No sorry/native_decide is used. The first Oracle review returned
 REVISE: it found the core capacity/Hall/reservation proof sound, requested
 explicit definitions and the full example dependency, and correctly flagged
 the false claim that both maximal runs survive border completion unchanged.
-These repairs are incorporated above; a same-conversation follow-up is
-pending. This is not a final acceptance. See the
+These repairs are incorporated above. The same-conversation follow-up
+terminated with an infrastructure failure after four attempts, without a
+mathematical response; it is no longer pending. There is no final acceptance. See the
 [review assessment](reviews/2026-10-20-sealed-strip-assessment.md).
 
 Universal coverage by the four old corner rules plus capacity-at-least-two

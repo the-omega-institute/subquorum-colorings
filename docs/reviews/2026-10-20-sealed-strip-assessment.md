@@ -30,8 +30,12 @@ A follow-up ca162658-b9dd-43af-a2df-f378e6e88a3f on the same conversation
 conv_1170ac196c13e56e uses original streaming execution18941and supplies
 all requested dependencies. Its request
 and stream are preserved as output/sealed-strip-compensation-repair-review-*
-files. A live request is not ACCEPT; record its terminal verdict separately.
-The reviewer did not execute checkers or Lean.
+files. It terminated FAILED at18:47:50.874UTC on19October after four
+attempts, with infrastructure_retry_exhausted and cdp_disconnected@typing.
+The original stream ends with the same error; the authoritative terminal
+record is output/sealed-strip-compensation-repair-review-response.json.
+There is no mathematical response or final ACCEPT from this repair task.
+It is no longer live. The reviewer did not execute checkers or Lean.
 
 The subsequently developed incidence-rank theorem, reservation monotonicity
 and new32-endpoint counterexample are outside both review scopes. They have
