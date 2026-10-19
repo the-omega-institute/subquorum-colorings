@@ -33,6 +33,15 @@ frozen occupied-degree-three family has receiver charge k+1, disproving any
 constant ceiling in that setting while still satisfying compensation. This
 separates the false receiver-ceiling rule from the open universal inequality.
 
+The [physical fusion theorem](DEGREE_THREE_FUSION_AND_PROTECTED_DONORS.md)
+removes prescribed ports and once-used-port restrictions. Actual receiver
+charges add with an exact minus-two correction per new aligned full endpoint
+square, plus the intratile new-neighbor defect if degree four appears.
+Protected donor loss and this latter defect use disjoint degree-four endpoint
+events. A physical count criterion therefore proves coefficient one with
+controlled degree-four contacts, including an all-width fully frozen pair of
+occupied adjacent bands. General decomposition into covered modules is open.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.
