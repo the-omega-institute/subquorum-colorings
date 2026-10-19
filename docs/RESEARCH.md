@@ -25,6 +25,14 @@ an unbounded fully frozen family where every nonempty batch of the four
 current corner-rule donors lowers the budget. Safe donor ordering or
 reserving all donors cannot be assumed in the remaining coverage proof.
 
+The [branched rotor theorem](BRANCHED_ROTOR_NETWORKS_AND_UNBOUNDED_RECEIVER_CHARGE.md)
+extends coefficient-one compensation to admissible networks of two-leg and
+four-port rotor modules. It assigns a distinct actual unit donor to every
+positive module, even within the same receiver. An arbitrary-length fully
+frozen occupied-degree-three family has receiver charge k+1, disproving any
+constant ceiling in that setting while still satisfying compensation. This
+separates the false receiver-ceiling rule from the open universal inequality.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.

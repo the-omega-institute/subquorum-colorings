@@ -1,1 +1,15 @@
-{"task_id":"f8082c0a-3c2d-4ea7-97f6-5ec40678db16","pool_id":"bc0a6e6f-6efa-42f9-9298-3cfcccba0cd4","status":"dispatched","attempts":1,"retry_count":0,"max_retries":3,"phase":"waiting_response","phase_detail":"selected=Pro","conversation_id":"conv_6b2cadf34fbc51fe","is_followup":true,"model":"chatgpt-6-pro","queue_position":0,"assigned_worker":"vpq6w6rcxy-go-1","chatgpt_url":"https://chatgpt.com/c/6ad66c41-6170-83ec-9e07-49516a448fbd","failure_detail":null,"observed_model_switcher":null,"observed_model_effort":null,"require_model_match":true,"reroute_count":0,"created_at":"2026-10-19T20:14:59.395+00:00","dispatched_at":"2026-10-19T20:14:59.927+00:00"}
+{
+  "task_id": "f8082c0a-3c2d-4ea7-97f6-5ec40678db16",
+  "status": "completed",
+  "completed_at": "2026-10-19T20:27:09.579+00:00",
+  "verdict": "ACCEPT",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "terminal_response": "output/leaf-spliced-network-review.json",
+  "original_stream": "output/leaf-spliced-network-review-stream.sse",
+  "original_execution": 81548,
+  "original_execution_exit_code": 1,
+  "original_stream_contains_response": false,
+  "original_stream_equals_terminal_response": false,
+  "transport_note": "Original SSE connection ended with unexpected EOF before any response text. Terminal response recovered from the same original task by authoritative GET; no replacement review dispatched."
+}

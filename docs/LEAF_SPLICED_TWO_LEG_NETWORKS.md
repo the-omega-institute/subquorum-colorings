@@ -203,7 +203,10 @@ opposing bars are separated; at a splice their retained perpendicular
 supports lie on opposite sides. Hence the resulting configuration is feasible
 with occupied endpoint degrees exactly three.
 
-Every module matching is unique. Each intermodule edge is a bridge of the
+Every module matching is unique: the uniform two-leg frozen theorem and
+the occupied-degree-three uniqueness criterion in
+DEGREE_THREE_CHAMBER_NETWORKS.md, Section 3, imply this for every base
+module, and grid isometries preserve it. Each intermodule edge is a bridge of the
 endpoint graph, connecting modules of even order, so no perfect matching can
 use that bridge: either side contains an even number of vertices. Inductively
 the union matching is the unique perfect matching. The degree-three matching
@@ -234,7 +237,12 @@ the axioms are standard propext/Quot.sound, with Classical.choice additionally
 in the adjacent-module case split. The full geometric adapter and cycle
 summation retain written proofs. The original local-quota/batch review
 f96f7cd4 completed ACCEPT; it does not cover this later theorem. Its own
-review f8082c0a-3c2d-4ea7-97f6-5ec40678db16, original streaming execution81548,
-is waiting_response, attempt1, without a verdict.
+review f8082c0a-3c2d-4ea7-97f6-5ec40678db16 completed ACCEPT. The original
+streaming execution81548lost its connection before receiving the answer;
+the authoritative response was recovered from that same task. The assessment
+in docs/reviews/2026-10-20-leaf-spliced-network-assessment.md records its
+scope and dependencies. Exclusion of other donor rules after splicing is
+not needed: the proof requires one surviving actual donor, not completeness
+of the donor list.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
