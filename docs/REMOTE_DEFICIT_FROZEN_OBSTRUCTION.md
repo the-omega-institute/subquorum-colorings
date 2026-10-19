@@ -244,4 +244,56 @@ eight physical images, preservation of the original labels, the shifted
 capacity. This establishes that having endpoint vertices on the ambient
 boundary is not necessary for the neighboring-resource obstruction.
 
+## 7. A block ledger explains why this template stops at radius two
+
+The fixed endpoint/support template also gives a positive compensation
+statement, independent of any finite solver result. Preserve the four
+selected-support/endpoint pairs
+
+    (5,2)--(5,1), (7,1)--(6,1),
+    (5,7)--(5,8), (7,8)--(6,8),
+
+where each first vertex is selected and each second is its occupied anchor.
+Assume the three original physical tiles Q_(3,1),Q_(3,2),Q_(3,3) contain
+no endpoints. The rest of the feasible configuration may vary in an
+arbitrarily large rectangle, including its selections inside these tiles.
+
+**Three-tile compensation lemma.** Under these hypotheses the sum of
+actual deficits of those three tiles is at least two.
+
+Proof. The four selected supports already have their occupied anchor.
+Feasibility therefore forces (6,2),(7,2),(6,7),(7,7) blank. All selections
+in the three tiles lie in {6,7} x {3,4,5,6}. Partition these eight sites
+into the disjoint unit squares on columns {3,4} and {5,6}. Any three
+selected corners of a unit square give one of them two selected neighbors,
+contrary to feasibility. Each square has at most two selections, so the
+three original physical tiles have at most four selections in total.
+Their actual deficit sum is at least 3*2-4=2. QED.
+
+These two auxiliary squares are shifted relative to the physical tiling.
+They serve only to bound the total number of selections. No auxiliary
+square is counted as an additional resource: the ledger spends the actual
+capacities of the three original tiles once each. In the displayed example
+the outer two deficits are zero, so the entire guaranteed capacity two
+is forced into the middle, non-neighboring tile. One of those two units
+pays rho_H=1. In a multi-component application, this block must be reserved
+globally before its capacity is spent; the lemma asserts no unique owner
+for arbitrary overlapping blocks.
+
+The argument is the elementary shifted-face counting mechanism used in the
+earlier band work, applied to this precise remote-resource template. It is
+not claimed as a new general extremal bound for unit squares. It proves
+that every such template-preserving completion has a positive donor within
+tile distance at most two of the receiver. The original example attains
+distance two. Consequently the finite radius-two/three completion searches
+recorded in output/remote-deficit-radius-two-discovery.json and
+output/remote-deficit-radius-three-discovery.json have a general local
+explanation: all three block tiles cannot simultaneously have deficit zero.
+Their UNSAT results are not used in place of this proof. The optional
+regeneration source is develop/search_remote_deficit_radius.py.
+
+This does not establish any uniform radius for other endpoint templates.
+The global transport question, overlapping-block reservation and the
+unrestricted grid inequality remain open.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

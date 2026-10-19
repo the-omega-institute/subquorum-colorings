@@ -76,6 +76,12 @@ def inspect(current, certificate=None):
     assert sum(record['deficit'] for record in records if record['corner_tile_distance'] == 1) == 0
     assert physical_donors(current, include_endpoint_guard=True) == []
     assert saturated_endpoint_donors(current) == []
+    if certificate is not None:
+        block = {(3, 1), (3, 2), (3, 3)}
+        cells = vertices_of(block)
+        assert not cells & endpoints
+        assert not {(6, 2), (7, 2), (6, 7), (7, 7)} & (endpoints | current[2])
+        assert 2*len(block)-len(cells & current[2]) == 2
     return dict(receiver=receiver, objective=39, half_area=40, total_deficit=1,
                 no_endpoint_deficit=2, adjacent_or_corner_touching_capacity=0,
                 all_four_corner_rule_capacity=0, occupied_degrees={3: 23, 4: 5},
