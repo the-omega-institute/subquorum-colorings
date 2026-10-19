@@ -66,6 +66,23 @@ Lean support. Their independent reviews are tracked separately from the
 previous accepted one-square theorem. Arbitrary multi-square source coverage
 and the universal coefficient-one bound remain open.
 
+The [long-arm occupied-mouth theorem](docs/TRANSVERSE_COMBS_AND_OCCUPIED_MOUTH_COMPENSATION.md)
+allows any number of prescribed complete perpendicular combs to cross a
+positive long source's terminal mouth. Distinct actual no-P tiles pay at
+least two units per mouth, giving |T|+|M|<=mn/2-B in the covered class.
+The corrected long-arm proof and this extension have a completed independent
+ACCEPT. A fully frozen two-ending-comb fixture instead makes that mouth
+payment zero, refuting the unrestricted mouth-only rule, not the grid target.
+
+The [exact comb-end ledger](docs/COMB_END_DEBT_AND_EXACT_MOUTH_LEDGER.md)
+now allows prescribed complete combs to start or stop within mouths. Each
+mouth has no-P deficit D=2-S+A, with S the number of sparse end tiles and A
+a nonnegative integer shifted-square slack. Each complete comb owns at most
+one sparse end, even across several mouths. Hence the broader covered class
+satisfies |T|+|M|<=mn/2-B+S_total, giving coefficient one when S_total<=B.
+There is a general written proof and 696 optimized controls; this later
+extension is outside the previous ACCEPT and has no new Lean claim.
+
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees
 under explicit occupied-face and blank-cap assumptions. Each distinct leaf
