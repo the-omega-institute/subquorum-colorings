@@ -165,9 +165,11 @@ standard logical axioms, no sorry or compiler-reduction axioms. The earlier
 Oracle packet does not include this result; its taskd3705dc5 ended with
 no_assistant_output and provides no mathematical verdict. Full preceding
 CI39203601140 at9aa88b3completed success; this milestone's CI is separate.
-General multi-square
-components, nonaligned squares, source coverage and the rectangular-grid triple
-equality remain open.
+SINGLE_SQUARE_PARITY_AND_ALIGNMENT.md subsequently removes the outward-mate
+restriction and classifies all central matchings. It also gives a fully
+neutral misaligned8-by8frozen fixture, explaining why strict payment needs
+alignment. General multi-square components, nonaligned classification,
+source coverage and the rectangular-grid triple equality remain open.
 
     python3 develop/check_odd_arm_compensation.py --output output/odd-arm-controls.json
 

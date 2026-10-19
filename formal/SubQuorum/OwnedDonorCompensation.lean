@@ -42,6 +42,25 @@ theorem pinwheel_incidence (northLeft northRight eastTop eastBottom
      southLeft = 1 ∧ southRight = 0 ∧ westTop = 1 ∧ westBottom = 0) := by
   omega
 
+theorem central_matching_patterns (top right bottom left : Nat)
+    (htopLeft : top+left ≤ 1) (htopRight : top+right ≤ 1)
+    (hbottomRight : bottom+right ≤ 1) (hbottomLeft : bottom+left ≤ 1) :
+    (top = 0 ∧ right = 0 ∧ bottom = 0 ∧ left = 0) ∨
+    (top = 1 ∧ right = 0 ∧ bottom = 0 ∧ left = 0) ∨
+    (top = 0 ∧ right = 1 ∧ bottom = 0 ∧ left = 0) ∨
+    (top = 0 ∧ right = 0 ∧ bottom = 1 ∧ left = 0) ∨
+    (top = 0 ∧ right = 0 ∧ bottom = 0 ∧ left = 1) ∨
+    (top = 1 ∧ right = 0 ∧ bottom = 1 ∧ left = 0) ∨
+    (top = 0 ∧ right = 1 ∧ bottom = 0 ∧ left = 1) := by
+  omega
+
+theorem central_parity_ledger (outward internal capacity degree : Nat)
+    (hmatching : outward+2*internal = 4)
+    (hcapacity : capacity+internal = 2) (hdegree : degree = outward) :
+    (outward = 0 ∨ outward = 2 ∨ outward = 4) ∧
+    (degree : Int)-2*capacity = 0 := by
+  omega
+
 theorem turn_forces_square (state : Int → Int → Label)
     (hcenter : state 0 0 = .endpoint) (hwest : state 0 (-1) = .endpoint)
     (hsouth : state 1 0 = .endpoint) (hnorth : state (-1) 0 = .selected)

@@ -40,7 +40,8 @@ def main():
                    'SubQuorum/DiagonalWitnessChains.lean',
                    'SubQuorum/MixedPChainCompensation.lean',
                    'SubQuorum/FrozenPromotion.lean',
-                   'SubQuorum/OwnedDonorCompensation.lean', 'CollarCompensationAudit.lean'):
+                   'SubQuorum/OwnedDonorCompensation.lean',
+                   'SubQuorum/SingleSquareObstacle.lean', 'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
             command += ['-o', str((build/module).with_suffix('.olean'))]
@@ -56,7 +57,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 32
+    assert len(declarations) == 41
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -68,7 +69,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='General frozen exclusion and finite-chain propagation; integer-grid local turn/branch/sides implications; face-pair exclusion and pinwheel incidence; unique endpoint ownership and conditional donor arithmetic; earlier tile/count declarations. Full graph classification, odd-arm transport, geometry-to-count adapters, allocation sums and physical embeddings have written proofs.')
+                  scope='General frozen exclusion and finite-chain propagation; integer-grid local turn/branch/sides implications; face-pair exclusion, pinwheel incidence, central matching alternatives and parity ledger; unique endpoint ownership and conditional donor arithmetic; exact finite8x8matching/feasibility/terminality/unique_square/neutral_tile_counts/objective/frozen certificate; earlier tile/count declarations. Full graph classification, single-square parity dichotomy, odd-arm transport, geometry-to-count adapters and allocation sums have written proofs.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

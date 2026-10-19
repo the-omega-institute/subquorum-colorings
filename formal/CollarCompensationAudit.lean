@@ -5,6 +5,7 @@ import SubQuorum.DiagonalWitnessChains
 import SubQuorum.MixedPChainCompensation
 import SubQuorum.FrozenPromotion
 import SubQuorum.OwnedDonorCompensation
+import SubQuorum.SingleSquareObstacle
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -31,6 +32,8 @@ import SubQuorum.OwnedDonorCompensation
 #print axioms SubQuorum.FrozenPromotion.frozen_exclusion
 #print axioms SubQuorum.OwnedDonorCompensation.face_pair_exclusion
 #print axioms SubQuorum.OwnedDonorCompensation.pinwheel_incidence
+#print axioms SubQuorum.OwnedDonorCompensation.central_matching_patterns
+#print axioms SubQuorum.OwnedDonorCompensation.central_parity_ledger
 #print axioms SubQuorum.OwnedDonorCompensation.turn_forces_square
 #print axioms SubQuorum.OwnedDonorCompensation.branch_forces_square
 #print axioms SubQuorum.OwnedDonorCompensation.two_side_supports_impossible
@@ -38,3 +41,10 @@ import SubQuorum.OwnedDonorCompensation
 #print axioms SubQuorum.OwnedDonorCompensation.single_endpoint_donor_unique
 #print axioms SubQuorum.OwnedDonorCompensation.owned_donor_budget
 #print axioms SubQuorum.OwnedDonorCompensation.owned_aggregate
+#print axioms SubQuorum.SingleSquareObstacle.valid_matching
+#print axioms SubQuorum.SingleSquareObstacle.feasible_selected
+#print axioms SubQuorum.SingleSquareObstacle.endpoint_terminal
+#print axioms SubQuorum.SingleSquareObstacle.unique_square
+#print axioms SubQuorum.SingleSquareObstacle.neutral_tiles
+#print axioms SubQuorum.SingleSquareObstacle.exact_objective
+#print axioms SubQuorum.SingleSquareObstacle.all_frozen

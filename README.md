@@ -104,6 +104,18 @@ cases/2168symmetry images and32scoped Lean declarations pass. Source coverage
 and multi-square components remain open. Reviewd3705dc5 ended with no assistant
 output, hence no mathematical verdict; the new transport was outside its input.
 
+The [complete single-square classification](docs/SINGLE_SQUARE_PARITY_AND_ALIGNMENT.md)
+removes the four-outward-mates restriction. Seven central matching patterns
+force zero, two adjacent, or four odd arms. The all-even case has a feasible
+central two-point promotion; the other cases freeze and aligned receivers
+pay one or two units exactly. A second alignment phase gives neutral frozen
+receivers at every odd arm length. A fully neutral8-by8completion disproves
+alignment-free strict payment even with arbitrary exterior resources, attaining
+the target inequality with equality. The general proof,1806cases/14448images,
+41scoped Lean declarations and exact seven-theorem finite obstacle certificate
+pass. Independent written-proof review122da19b is live, no verdict yet.
+Multi-square geometry and source coverage remain open.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search
