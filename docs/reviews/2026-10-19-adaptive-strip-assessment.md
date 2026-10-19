@@ -35,4 +35,5 @@ requested. The final response is archived in
 `output/adaptive-strip-repair-review-response.json`.
 
 This completed review predates the capacity-aware and remote-rung notes,
-which have their own separate live review.
+which have their own separate completed ACCEPT, assessed in
+`2026-10-19-capacity-and-remote-assessment.md`.
