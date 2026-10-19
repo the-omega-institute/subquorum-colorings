@@ -1,0 +1,113 @@
+data: {"id":"chatcmpl_f96f7cd4-812d-4a90-b37e-ab1d3ff3b22e","object":"chat.completion.chunk","created":1792439565,"model":"oracle/chrono-chatgpt-pro-pool","choices":[{"index":0,"delta":{"role":"assistant"},"finish_reason":null}]}
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+: keep-alive
+
+data: {"id":"chatcmpl_f96f7cd4-812d-4a90-b37e-ab1d3ff3b22e","object":"chat.completion.chunk","created":1792439565,"model":"oracle/chrono-chatgpt-pro-pool","choices":[{"index":0,"delta":{"content":"VERDICT: ACCEPTThe local-quota cut theorem and the unbounded frozen no-safe-donor-batch construction are correct under the stated inherited two-leg exclusion for the first three donor rules. I did not find a counterexample in the general arguments or in the supplied  $w=8$  witness.The only qualification is logical scope: the claim that the two displayed donors are all donors still uses the previously established two-leg lemma for the first three corner rules. The extension should state explicitly that this lemma applies uniformly to the present strip for every even  $w\\ge8$ . Once that dependency is admitted, the extension is sound.1. Exact local-quota dualLet each edge-slot be a left vertex and each quota copy of a run be a right vertex. An edge-slot is adjacent to all quota copies at its two incident runs. Then  $A(G)$  is exactly the maximum matching size in this expanded incidence graph.The standard matching deficiency formula is\n$$R-A\n=\n\\max_{S\\subseteq E}\n\\left(\n|S|-\\sum_{v\\in N(S)}b(v)\n\\right).$$\nThis reduces to the stated vertex-cut formula. For  $U=N(S)$ , every slot in  $S$  has both endpoints in  $U$ , so  $S\\subseteq E(U)$ , and therefore\n$$|S|-\\sum_{v\\in N(S)}b(v)\n\\le\n|E(U)|-\\sum_{v\\in U}b(v).$$\nConversely, choosing  $S=E(U)$ , after removing any vertices of  $U$  that are incident to no internal edge, gives the reverse inequality. Thus\n$$L(G):=R-A(G)\n=\n\\max_{U\\subseteq V}\n\\left(\n|E(U)|-\\sum_{v\\in U}b(v)\n\\right).$$\nThe alternating-reachability proof in the extension is also valid. Starting from every unmatched edge-slot and alternating through incidence edges and matched quota edges, an unmatched reached quota copy would give an augmenting path. Hence every reached quota copy is matched. If  $U$  is the set of reached runs, the reached slots are exactly  $E(U)$ :an unmatched internal slot is a root and is reached;a matched internal slot is reached through the quota copy to which it is matched;any reached slot exposes both endpoint runs, so no reached slot lies outside  $E(U)$ .Therefore\n$$|E(U)|\n=\n\\#\\{\\text{unmatched slots}\\}\n+\n\\sum_{v\\in U}b(v),$$\nwhich attains the cut deficiency.The convention  $b(v)=1$  for positive degree-one runs causes no problem. It is exactly what lets a degree-one slot be assigned, while isolated runs have  $b=0$  and contribute nothing.2. Odd-core formulaFor  $U\\subseteq V$ , let  $c(U)$  be the number of slots with exactly one endpoint in  $U$ . Then\n$$\\sum_{v\\in U}d(v)\n=\n2|E(U)|+c(U).$$\nFor each vertex,\n$$d(v)-2b(v)\n=\n\\begin{cases}\n-1,\u0026d(v)=1,\\\\\n0,\u0026d(v)=0\\text{ or }d(v)\\text{ even},\\\\\n1,\u0026d(v)\\ge3\\text{ odd}.\n\\end{cases}$$\nConsequently,\n$$2\\left(|E(U)|-\\sum_{v\\in U}b(v)\\right)\n=\na(U)-l(U)-c(U),$$\nwhere  $a(U)$  counts odd-degree vertices of degree at least three and  $l(U)$  counts degree-one vertices. Therefore\n$$L(G)\n=\n\\frac12\n\\max_{U\\subseteq V}\n\\bigl(a(U)-l(U)-c(U)\\bigr).$$\nThe bracket is always even because it equals twice an integer.Since the resource graph is a disjoint union of components, both the cut expression and the maximum deficiency split additively over components. This is compatible with the physical non-reuse condition: different components have disjoint slot sets.The reservation identity is also exact. Since\n$$A(G)=R-L(G),\\qquad R=D-B,$$\nwe have\n$$B+A(G)=D-L(G).$$\nAfter  $t$  distinct reservations,\n$$B'+A(G')-(B+A(G))\n=\nL(G)-L(G').$$\nLikewise, with  $q=\\rho-B$  and  $\\sigma=D-\\rho$ ,\n$$q\\le A(G)\n\\iff\n\\rho-B\\le D-B-L(G)\n\\iff\n\\sigma\\ge L(G).$$\nThus the cut deficiency is exactly the amount of global slack needed by this local-quota certificate.3. The  $q=5$  motifsIf  $A\u003cq$ , then  $F\\le A\u003cq$ , so the previously established mixed-certificate threshold applies. Hence  $q\\ge5$ , and at  $q=5$  there is exactly one positive-capacity four-vertex component with  $e=5$  or  $e=6$ .The quota corrections are correct.For the  $1$ -by- $3$  star with edge multiplicities  $(2,2,1)$ , the central degree is  $5$ , so its quota is  $2$ , while the three leaves have quota  $1$  each. The five slots can all be assigned: each leaf takes one appropriate edge and the central run takes the remaining two.For\n$$\\begin{pmatrix}\n2\u00262\\\\\n1\u00260\n\\end{pmatrix},$$\nthe row degrees are  $4,1$ , and the column degrees are  $3,2$ , so the quotas are  $2,1,1,1$ . All five slots can be assigned: the degree-one row takes its sole edge, the degree-four row takes one slot from each doubled pair, and the two columns take the remaining doubled slots.The remaining  $e=5$  matrices,\n$$\\begin{pmatrix}\n1\u00262\\\\\n2\u00260\n\\end{pmatrix},\n\\qquad\n\\begin{pmatrix}\n2\u00261\\\\\n1\u00261\n\\end{pmatrix},$$\nhave all four quotas equal to  $1$ , so the total quota is  $4$  against five slots. Their exact incidence rank  $4$  is attainable, hence  $A=4$ .For  $e=6$ ,\n$$\\begin{pmatrix}\n2\u00261\\\\\n1\u00262\n\\end{pmatrix}$$\nhas four degree-three vertices, each with quota  $1$ , so again  $A=4$ . Thus the two displayed  $e=5$  motifs and the displayed  $e=6$  motif are exactly the remaining resource-level charge-five failures.No physical frozen realization of these resource shapes is asserted, so there is no overclaim here.4. General all-width frozen constructionFor  $w=2k\\ge8$ , the endpoint set has\n$$|P|=2w+10,$$\nthe matching has\n$$|M|=w+5,$$\nand the selected set has\n$$|T|=14.$$\nThe matching description covers every  $P$ -endpoint exactly once:row  $0$  contributes  $w/2$  horizontal edges;row  $1$  contributes  $(w-2)/2$  horizontal edges;the three odd vertical levels contribute six vertical edges.Thus\n$$2|M|=w+5\\text{ times }2=2w+10=|P|,$$\nand the matching is disjoint from  $T$ .Every selected vertex has exactly one occupied nearest neighbor in  $P$ . For example: $(0,0)$  sees only  $(0,1)$ ;an even left leg selection  $(r,0)$  sees only  $(r,1)$ ;an odd left leg selection  $(r,2)$  sees only  $(r,1)$ ;the reflected right-side cases are symmetric; $(7,1)$  sees only  $(6,1)$ .Every  $P$ -endpoint has occupied cardinal degree three. The top bar endpoints have two bar neighbors and one transverse neighbor or selected tip; the leg endpoints have the corresponding bar/leg and selected-tip pattern. The endpoint graph is connected through the two top rows and both legs.The supplied  $w=8$  certificate is internally consistent. Its twenty-six first coordinates are exactly the twenty-six  $P$ -endpoints, each once. Each triple supplies two cardinal-adjacent occupied witnesses. In the ordered induction, each  $P$ -witness is either a selected  $T$ -vertex or a  $P$ -vertex whose matching mate appears at an earlier stage. Hence the retained-mate/earliest-promotion argument excludes a nonempty simultaneous promotion bundle.The same wave pattern generalizes uniformly:freeze the even leg levels  $6,4,2$  on both sides;propagate the alternating wave through the top two rows;reverse through the remaining top-row endpoints;finish with the odd leg levels  $3,5$  on both sides.Thus the frozen obstruction is genuinely unbounded in  $w$ , rather than a finite-width artifact.The receiver and target accounting is consistent:\n$$|T|+|M|=14+(w+5)=w+19,$$\nwhile\n$$\\frac{\\text{area}}2\n=\n\\frac{8(w+2)}2\n=\n4w+8.$$\nTherefore\n$$\\sigma=4w+8-(w+19)=3w-11\u003e0.$$\nThe endpoint-free resource deficit is  $D=6k-10=3w-10$ , so the corrected receiver charge is\n$$\\rho=D-\\sigma=1.$$\n5. Resource matrix and donor-batch lossThe endpoint-free tiles are exactly the  $3\\times(k-1)$  interior tile rectangle. Its capacity matrix is\n$$\\begin{pmatrix}\n1\u00262\u0026\\cdots\u00262\u00261\\\\\n1\u00262\u0026\\cdots\u00262\u00261\\\\\n2\u00262\u0026\\cdots\u00262\u00262\n\\end{pmatrix}.$$\nHence\n$$R=D=6k-10.$$\nThe three horizontal degrees are\n$$2k-4,\\qquad 2k-4,\\qquad 2k-2,$$\nand the vertical degrees are\n$$4,\\underbrace{6,\\ldots,6}_{k-3\\text{ interior columns}},4.$$\nAll are even and at least four, so the half-capacity rule uses every slot:\n$$F=A=R.$$\nThe two claimed donor slots are in the first horizontal run and the two distinct outer vertical runs.After reserving one donor slot: $e'=R-1$ ;the first horizontal degree and one outer vertical degree become odd;there are exactly two odd vertices;no degree-one vertex appears.The whole-vertex cut has deficiency  $1$ . Any proper cut has at least one boundary slot, so its odd-core bracket cannot exceed the whole-graph value. Hence\n$$L(G')=1,\\qquad\nA(G')=R-"},"finish_reason":null}]}
+
+data: {"id":"chatcmpl_f96f7cd4-812d-4a90-b37e-ab1d3ff3b22e","object":"chat.completion.chunk","created":1792439565,"model":"oracle/chrono-chatgpt-pro-pool","choices":[{"index":0,"delta":{"content":"1-1=R-2.$$\nThe half-capacity allocation reaches the same value, so\n$$F(G')=A(G')=R-2.$$\nWith  $B'=1$ ,\n$$B'+F(G')=1+(R-2)=R-1.$$\nAfter reserving both donor slots: $e''=R-2$ ;the first horizontal degree remains even and at least  $2$ ;the two outer vertical degrees become odd degree  $3$ ;the graph remains connected for  $k\\ge4$ .Again the whole graph has odd-core deficiency  $1$ , and no proper cut has larger deficiency. Thus\n$$L(G'')=1,\\qquad\nA(G'')=R-2-1=R-3.$$\nThe half-capacity rule attains this, so\n$$F(G'')=A(G'')=R-3.$$\nWith  $B''=2$ ,\n$$B''+F(G'')=2+(R-3)=R-1.$$\nTherefore:\n$$\\begin{array}{c|c}\n\\text{reserved donor subset} \u0026 B+F=B+A\\\\\n\\hline\n\\varnothing \u0026 R\\\\\n\\text{either one donor} \u0026 R-1\\\\\n\\text{both donors} \u0026 R-1\n\\end{array}$$\nEvery nonempty donor subset lowers the score by exactly one. The obstruction is stronger than a one-step example: neither donor can be reserved first without lowering the score, and reserving both simultaneously also lowers it.6. Donor completenessThe four-rule restriction is important.The fourth rule has exactly the claimed two donors. The only selected vertices whose anchor lies outside their own tile are\n$$(3,2),\\quad (5,2)$$\nand their right reflections.For  $(3,2)$ , the opposite corner is  $(2,3)$ . Its exterior candidates are  $(1,3)$ , which is a  $P$ -endpoint, and  $(2,4)$ , which is blank. The guard  $(1,3)$  has occupied neighbors  $(0,3),(1,2),(1,4)$ , all  $P$ -endpoints, and degree three. The reflected site is symmetric.For  $(5,2)$ , the exterior candidates at the opposite corner are both blank. The reflected  $(5,w-1)$  case is likewise invalid. Thus the fourth rule supplies exactly two unit donors.The exclusions for the first three rules follow from the stated established two-leg lemma: the only possible long  $P$ -runs are the top bars and side legs, and the selected support geometry does not supply a valid donor for those rules. The extension should make explicit that this prior lemma is being imported uniformly for all even  $w\\ge8$ ; the finite and Lean checks cannot substitute for that general lemma.Subject to that stated dependency, the extension is correct."},"finish_reason":null}]}
+
+data: {"id":"chatcmpl_f96f7cd4-812d-4a90-b37e-ab1d3ff3b22e","object":"chat.completion.chunk","created":1792439565,"model":"oracle/chrono-chatgpt-pro-pool","choices":[{"index":0,"delta":{},"finish_reason":"stop"}],"usage":{"prompt_tokens":2181,"completion_tokens":2585,"total_tokens":4766},"oracle":{"task_id":"f96f7cd4-812d-4a90-b37e-ab1d3ff3b22e","conversation_id":"conv_6b2cadf34fbc51fe","pool":"chrono-chatgpt-pro-pool","model_label":"chatgpt-6-pro","observed_model_switcher":"gpt_6","observed_model_effort":"pro","chatgpt_url":"https://chatgpt.com/c/6ad66c41-6170-83ec-9e07-49516a448fbd","usage_estimated":true}}
+
+data: [DONE]
+
+

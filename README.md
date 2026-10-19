@@ -32,6 +32,18 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [leaf-spliced network theorem](docs/LEAF_SPLICED_TWO_LEG_NETWORKS.md)
+proves exact corrected-charge additivity for arbitrarily many differently
+oriented two-leg modules joined at their tail ports. Positive modules cannot
+be neighbors, so path receivers have charge at most one and cycle receivers
+have nonpositive charge. Distinct physical unit guards pay all positive
+networks, proving the coefficient-one bound on this explicit geometric class.
+The three first-charge-five resource motifs are excluded in the class even
+after valid reservations. An all-length frozen zigzag makes the path charge
+bound sharp. The geometry has a written proof;17scoped Lean declarations
+check path induction, splice arithmetic and the donor/reservation interfaces.
+The unrestricted grid bound remains open.
+
 The [strip incidence theorem and capacity-one obstruction](docs/STRIP_INCIDENCE_ALLOCATION_AND_CAPACITY_ONE_OBSTRUCTION.md)
 replace the capacity-two threshold by an exact physical-slot criterion: a
 chosen set of runs is payable precisely when it contains no whole tree

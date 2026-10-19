@@ -166,8 +166,12 @@ waves, the two opposite bar waves and final odd leg waves freeze every
 endpoint. The earliest promoted endpoint in that order retains two
 occupied witnesses, ruling out every simultaneous mixed promotion bundle.
 
-The general two-leg theorem proves that the three older corner rules
-have no donors. For the fourth rule, the selected corner must have its
+Section 4 of TWO_LEG_DEGREE_THREE_COVERAGE_OBSTRUCTION.md proves uniformly
+for every even w>=6 and both even leg heights at least four that the three
+older corner rules have no donors. Apply that written theorem with a=b=6
+to every even w>=8 here; the donor-completeness dependency is general and
+is not inferred from the finite or Lean controls. For the fourth rule,
+the selected corner must have its
 unique occupied anchor outside its tile. The only eligible selections
 are the odd-row inner supports, at rows3and5. On the left, their opposite
 corners are respectively(2,3)and(4,3). The exterior neighbors of the first
