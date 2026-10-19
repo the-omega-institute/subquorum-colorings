@@ -137,6 +137,27 @@ sufficient terminality test. Width three is sharply exceptional. The general
 written proof, independent physical controls and scoped arbitrary-width Lean
 neighbor geometry are included; this later result was outside both reviews.
 
+The [pure two-row component theorem](docs/PURE_TWO_ROW_COMPONENT_REDUCTION.md)
+now removes the blank-guard and interior-closure hypotheses altogether when
+the entire endpoint component is a full two-row rectangle. For every width
+at least two and arbitrary mixed matching, a constructive switch of grid
+color leaves at most one matching edge and preserves the objective. No
+single-terminality or alignment assumption is needed. Matching blocks and
+an arbitrary-length blank-switch argument give the general proof;1211616
+complete small cases and larger controls verify its implementation. A
+three-column example proves that one remaining edge can be necessary.
+
+The [mixed-color and ownership follow-up](docs/MIXED_COLOR_LADDERS_AND_CONTACT_OWNERSHIP.md)
+also gives an all-length family in which every square-removing bundle must
+use both colors. Its complete feasible-bundle family consists of independent
+left prefixes and right suffixes, with exactly(k+1)(l+1)-1nonempty choices
+and a unique square-removing maximum. Compatible edge-disjoint bundles
+compose safely; endpoint components factor exactly. Occupied contacts of
+distinct components have unique vertex ownership, but a checked pair of
+fully frozen components has two contacts in one zero-charge saturated tile.
+Thus vertex exclusivity alone does not supply tile compensation. The full
+graph-level proofs, finite controls and scoped Lean interfaces are separate.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search

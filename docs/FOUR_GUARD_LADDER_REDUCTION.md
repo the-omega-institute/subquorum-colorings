@@ -161,9 +161,11 @@ The combined local sequential Lean4.33.0audit passes43declarations, including
 the two new ladder statements; no sorry or new/compilation-reduction axioms.
 
 Occupied guards are obstructions to this reduction, not compensation tokens.
-Different strips can refer to the same exterior vertex, so the necessary
-two-guard count cannot be summed across components without an explicit
-ownership or incidence bound. This theorem uses no donor budget, and its
+Strips in the same endpoint component can share exterior vertices. The later
+occupied-contact ownership lemma proves that occupied guards of distinct
+endpoint components are exclusive as vertices, but their aligned tiles can
+still coincide and be saturated. Thus even that exclusive vertex count is
+not a compensation budget. This theorem uses no donor budget, and its
 objective-preserving moves are sequentially safe: occupied labels only
 decrease, but a later strip must still satisfy its own matching closure.
 
@@ -172,6 +174,10 @@ exposition and counterexample-scope corrections have been applied. This
 later ladder reduction is outside those review inputs. Source coverage,
 general occupied-guard compensation, escaping interior matchings, branching
 multi-square cores and the unrestricted grid/triple equality remain open.
+
+The later PURE_TWO_ROW_COMPONENT_REDUCTION.md removes the closure, blank-
+guard and width>=4conditions for a full strip that is the entire endpoint
+component. Extra endpoint attachments remain outside that later theorem.
 
     python3 develop/check_ladder_reduction.py --output output/ladder-reduction-controls.json
 

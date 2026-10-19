@@ -7,6 +7,7 @@ import SubQuorum.FrozenPromotion
 import SubQuorum.OwnedDonorCompensation
 import SubQuorum.SingleSquareObstacle
 import SubQuorum.LadderReduction
+import SubQuorum.CompatibleBundles
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -51,3 +52,11 @@ import SubQuorum.LadderReduction
 #print axioms SubQuorum.SingleSquareObstacle.all_frozen
 #print axioms SubQuorum.LadderReduction.promoted_unique_neighbor
 #print axioms SubQuorum.LadderReduction.width_three_failure
+#print axioms SubQuorum.LadderReduction.mixed_promoted_unique_neighbor
+#print axioms SubQuorum.CompatibleBundles.compatible_union_feasible
+#print axioms SubQuorum.CompatibleBundles.compatible_union_keeps_promoted
+#print axioms SubQuorum.CompatibleBundles.occupied_contact_owner_unique
+#print axioms SubQuorum.CompatibleBundles.upper_lower_equivalence
+#print axioms SubQuorum.CompatibleBundles.lower_prefix
+#print axioms SubQuorum.CompatibleBundles.blank_block_exists
+#print axioms SubQuorum.CompatibleBundles.sharp_three_full_promotion_impossible
