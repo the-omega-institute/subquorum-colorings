@@ -269,11 +269,15 @@ with no sorryAx/native_decide. Together the two sources have 28 checked
 declarations. This does not assert complete freezing or formalize the
 all-parameter module adapter. No prior Oracle verdict covers this extension.
 
-Next determine whether feasible fusions in this phase class can have
-irregular-tip demands, and whether the geometry forces
-the full residual inequality K_irregular+G<=N+S+C even below (3).
-If a candidate sharper rule fails, give a feasible physical witness and
-distinguish failure of that rule from failure of the target. Finite pair
-searches cannot classify the pairs inside larger feasible unions.
+The subsequent [tip-event and local-overload note](MINUS_ONE_TIP_EVENTS_AND_LOCAL_OVERLOAD.md)
+answers the possibility question with two actual feasible fusions: both
+tips of one minus-one source can gain, and a full 3+1 tile can have two
+regular events plus one irregular event. The latter defeats payment only
+from that same tile's unused regular credit. Both global finer budgets
+remain positive. Seventeen additional Lean declarations verify the actual
+examples. They are not fully frozen and are outside this note's review
+input. Next determine whether remaining credit can be transported to tip
+events without duplicate use, while retaining marked-side payment.
+Finite pair searches cannot classify pairs inside larger feasible unions.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

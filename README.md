@@ -657,3 +657,13 @@ LL/LP/PP debt, SS donors and unused-slot reserves, shows neutral receivers
 only pair ports, and completely prunes closed neutral regions. Run
 `python3 develop/check_terminal_strands.py --output output/terminal-strand-controls.json`.
 The universal donor-allocation inequality remains open.
+
+The [minus-one tip obstructions](docs/MINUS_ONE_TIP_EVENTS_AND_LOCAL_OVERLOAD.md)
+give actual feasible seven- and nine-module fusions. Both tips of one
+negative two-leg module gain even with no negative rotors. A full tile
+with endpoint partition 3+1 has two regular events and one irregular
+event, so its own two correction units cannot pay all three. This
+refutes tip exclusion and payment only from that same tile's remaining
+credit; both global compensation budgets stay positive. Sixteen symmetry
+images and seventeen actual-coordinate Lean declarations pass. The
+examples are not fully frozen; unrestricted grid equality remains open.
