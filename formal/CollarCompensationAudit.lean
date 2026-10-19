@@ -29,6 +29,8 @@ import SubQuorum.OwnedDonorCompensation
 #print axioms SubQuorum.MixedPChainCompensation.occupied_exterior_gap
 #print axioms SubQuorum.MixedPChainCompensation.transition_charge
 #print axioms SubQuorum.FrozenPromotion.frozen_exclusion
+#print axioms SubQuorum.OwnedDonorCompensation.face_pair_exclusion
+#print axioms SubQuorum.OwnedDonorCompensation.pinwheel_incidence
 #print axioms SubQuorum.OwnedDonorCompensation.turn_forces_square
 #print axioms SubQuorum.OwnedDonorCompensation.branch_forces_square
 #print axioms SubQuorum.OwnedDonorCompensation.two_side_supports_impossible

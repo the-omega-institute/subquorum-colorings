@@ -19,6 +19,29 @@ def degree (state : Int → Int → Label) (row column : Int) : Nat :=
 def feasibleAt (state : Int → Int → Label) (row column : Int) : Prop :=
   state row column = .selected → degree state row column ≤ 1
 
+theorem face_pair_exclusion (first second : Label)
+    (hfirst : first = .selected → 1+occupied second ≤ 1)
+    (hsecond : second = .selected → 1+occupied first ≤ 1)
+    (hsquare : ¬(first = .endpoint ∧ second = .endpoint)) :
+    occupied first+occupied second ≤ 1 := by
+  cases first <;> cases second <;> simp_all [occupied]
+
+theorem pinwheel_incidence (northLeft northRight eastTop eastBottom
+    southLeft southRight westTop westBottom : Nat)
+    (hnorth : northLeft+northRight ≤ 1)
+    (heast : eastTop+eastBottom ≤ 1)
+    (hsouth : southLeft+southRight ≤ 1)
+    (hwest : westTop+westBottom ≤ 1)
+    (htopLeft : 1 ≤ northLeft+westTop)
+    (htopRight : 1 ≤ northRight+eastTop)
+    (hbottomRight : 1 ≤ eastBottom+southRight)
+    (hbottomLeft : 1 ≤ southLeft+westBottom) :
+    (northLeft = 1 ∧ northRight = 0 ∧ eastTop = 1 ∧ eastBottom = 0 ∧
+     southLeft = 0 ∧ southRight = 1 ∧ westTop = 0 ∧ westBottom = 1) ∨
+    (northLeft = 0 ∧ northRight = 1 ∧ eastTop = 0 ∧ eastBottom = 1 ∧
+     southLeft = 1 ∧ southRight = 0 ∧ westTop = 1 ∧ westBottom = 0) := by
+  omega
+
 theorem turn_forces_square (state : Int → Int → Label)
     (hcenter : state 0 0 = .endpoint) (hwest : state 0 (-1) = .endpoint)
     (hsouth : state 1 0 = .endpoint) (hnorth : state (-1) 0 = .selected)

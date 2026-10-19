@@ -92,6 +92,18 @@ charge-2 without assuming disjoint nine-tile collars. An all-size connected
 family attains this budget. These geometric proofs and physical controls
 are outside the current classification review and full Lean geometry.
 
+The [odd-arm transport theorem](docs/ODD_ARM_COMPENSATION.md) removes the
+fixed selected anchors for single-terminal components containing exactly one
+aligned P-square whose four corners are matched outward. Such a component is
+necessarily a pinwheel of four odd straight arms. Intermediate arm tiles are
+neutral and four terminal half-donors pay exactly two units at arbitrary
+distance; receivers from distinct components are automatically disjoint.
+This disproves adjacent-only payment under these weaker hypotheses while
+preserving the enlarged receiver inequality. The general proof,271physical
+cases/2168symmetry images and32scoped Lean declarations pass. Source coverage
+and multi-square components remain open. Reviewd3705dc5 ended with no assistant
+output, hence no mathematical verdict; the new transport was outside its input.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search

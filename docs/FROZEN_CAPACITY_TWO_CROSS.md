@@ -151,6 +151,11 @@ That task subsequently failed with cdp_disconnected@typing. A fresh complete
 file review d3705dc5 includes this note and is dispatched/sent; its exact
 attachment and handle are in output/owned-donor-file-review.json. No mathematical
 verdict from that task is available at this milestone.
+Subsequently that file review ended with no_assistant_output and no
+mathematical verdict; see output/owned-donor-file-review-failed-response.json.
+ODD_ARM_COMPENSATION.md now replaces the eight fixed selected anchors by
+single terminality, uniqueness/alignment of the square and four outward mates.
+It proves arbitrary odd-arm transport and explains when adjacent donors disappear.
 General coverage, the unrestricted grid/triple equality and external priority
 remain open.
 
