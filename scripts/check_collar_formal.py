@@ -63,6 +63,7 @@ def main():
                    'SubQuorum/ElbowOwnedDonors.lean',
                    'SubQuorum/GuardedSteppedArms.lean',
                    'SubQuorum/SteppedPatchIsolation.lean',
+                   'SubQuorum/FrozenRailElbows.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -79,7 +80,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 137
+    assert len(declarations) == 141
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -91,7 +92,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 133 scoped declarations plus physical port degree bound, actual-matching boundary exclusion, endpoint-path closure, and post-removal port feasibility. Full all-k boundary classification, isolation cardinality and multi-core safety remain written proofs; unrestricted grid equality and universal receiver ceiling remain open.')
+                  scope='Previous 137 scoped declarations plus anchored rail freezing induction, exact nonpositive rail cost, positive receiver rigidity, and the owned rail ledger with equality. Full coordinate rail adapter, receiver geometry, donor ownership and global application remain written proofs; unrestricted grid equality and universal receiver ceiling remain open.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)

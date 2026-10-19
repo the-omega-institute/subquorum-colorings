@@ -26,6 +26,7 @@ import SubQuorum.CombChannels
 import SubQuorum.ElbowSources
 import SubQuorum.GuardedSteppedArms
 import SubQuorum.SteppedPatchIsolation
+import SubQuorum.FrozenRailElbows
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -164,3 +165,7 @@ import SubQuorum.SteppedPatchIsolation
 #print axioms SubQuorum.SteppedPatchIsolation.matched_boundary_exclusion
 #print axioms SubQuorum.SteppedPatchIsolation.reachable_stays_in_core
 #print axioms SubQuorum.SteppedPatchIsolation.promoted_port_feasible
+#print axioms SubQuorum.FrozenRailElbows.anchored_frozen_chain
+#print axioms SubQuorum.FrozenRailElbows.rail_charge_bound
+#print axioms SubQuorum.FrozenRailElbows.positive_charge_rigidity
+#print axioms SubQuorum.FrozenRailElbows.owned_rail_ledger

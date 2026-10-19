@@ -32,6 +32,15 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [frozen rail extension theorem](docs/FROZEN_RAIL_ELBOW_EXTENSIONS.md)
+adds arbitrary even occupied rails to thick elbows. Two anchored freezing
+waves show that no endpoint-promotion bundle can extract the original elbow;
+positive examples retain whole charge one. Each added rail nevertheless has
+exact charge t-ell-2epsilon<=0, so the old owned corner pays the enlarged
+receiver without reusing a donor or counting the rail loss twice. This
+extends the explicit coefficient-one class and obstructs a generalization
+of stepped-core isolation, while leaving arbitrary grid configurations open.
+
 The [stepped-patch isolation theorem](docs/STEPPED_PATCH_ISOLATION.md) removes
 the completeness assumption from prescribed arbitrary-length stepped cores.
 At most one single promotion per core isolates them, preserving the objective
