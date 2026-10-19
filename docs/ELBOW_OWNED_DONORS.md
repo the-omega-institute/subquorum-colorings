@@ -9,8 +9,18 @@ not be prescribed straight combs. The argument assigns an actual no-endpoint
 physical square to each positive component and proves these assignments
 injective. No source phase is added as a second resource.
 
-This result was developed after the phase-note review was submitted. It is
-outside that review's input until separately assessed.
+The canonical corner donor and its ownership mechanism already appear for
+the short two-tip bent family in Sections 3–6 of
+`POSITIVE_BENT_RECEIVERS_AND_SPARSE_COMPENSATION.md`. The present result
+abstracts those local hypotheses, proves their application to thick elbows,
+and permits arbitrary nonpositive remaining receivers. The injectivity
+mechanism itself is not a new discovery here.
+
+The combined owned-donor and repaired-phase written-proof review completed
+ACCEPT on 19 October 2026. Its exact response and scope are archived in
+`output/elbow-owned-donor-review-response.json` and
+`docs/reviews/2026-10-19-elbow-owned-donor-assessment.md`; it does not certify
+checker or Lean execution, which have their own receipts.
 
 ## 1. The local witness and deficit lemma
 

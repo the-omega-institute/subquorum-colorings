@@ -87,7 +87,8 @@ T_(w-1)=mate(T_(w-2)), B_(w-2)=mate(B_(w-3)). They too are frozen.
 
 For odd r=3,5,...,h-1, A_r sees selected (r,w-3) and R_r=mate(R_(r+1)),
 so these A_r are frozen. A_2 sees B_(w-2)=mate(B_(w-3)) and
-R_2=mate(B_(w-1)), and is frozen. Now R_3 sees R_2 and A_3=mate(A_2),
+R_2=mate(B_(w-1)), and is frozen. Now R_3 sees
+R_2=mate(B_(w-1)) and A_3=mate(A_2),
 so is frozen. For h>4 continue the zigzag
 A_4,R_5,A_6,R_7,...,A_(h-2),R_(h-1); for h=4 the two seeds finish the leg.
 At A_(2i+2), the retained neighbors are A_(2i+1)=mate(A_(2i)) and
