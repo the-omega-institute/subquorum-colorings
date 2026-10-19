@@ -1,5 +1,10 @@
 # Three cut pairs pay independently: cubic gaps of order one twenty-fourth
 
+Subsequent improvement: the [closed-high-cycle construction](CLOSED_HIGH_CYCLE_COMPENSATION.md)
+attains gap3n/62 in two-connected cubic bipartite graphs of unbounded
+order, improving the coefficient1/24 established below. Its local
+omission proof keeps H closed and uses only X edges for the interface.
+
 19 October 2026. Finite simple graphs, non-induced two-stars and
 inclusion-minimal forming selections are used throughout. The local
 proof below strengthens the [four-port padding lemma](CUBIC_EQUALITY_PADDING_RINGS.md)

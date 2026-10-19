@@ -30,7 +30,17 @@ The [research agenda](docs/RESEARCH.md) connects current results to the next
 mathematical targets. The manuscript follows the same progression from the
 hypercube solution to these geometric and structural questions.
 
-The latest [block compensation theorem](docs/HEAWOOD_BLOCK_COMPENSATION.md)
+The new [closed-high-cycle construction](docs/CLOSED_HIGH_CYCLE_COMPENSATION.md)
+improves this project's connected cubic gap coefficient from1/24 to
+**3/62**. For every r>=1 it gives a two-connected cubic bipartite graph
+Z_r of order62r with **beta_2=33r and SF_2=36r**. Keeping each H six-cycle
+closed, while connecting only through X edges, prevents the former
+exceptional local gain. A general omission proof charges all three
+Heawood blocks independently. Six conditional Lean counts and fixed-core/
+actual-ring controls pass; an independent review is pending. The general
+upper coefficient1/14 and the rectangular-grid bridge remain open.
+
+The preceding [block compensation theorem](docs/HEAWOOD_BLOCK_COMPENSATION.md)
 proves **SF_2(L_k)=36k for every k>=1**. More generally b disjoint broken
 Heawood blocks attached to distinct core ports force5|S|+2b<=3n in cubic
 bipartite graphs. Actual isolates and unused witness capacity pay each

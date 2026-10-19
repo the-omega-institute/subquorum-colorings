@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership', 'port-return', 'block-ledger'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership', 'port-return', 'block-ledger', 'closed-high-cycle'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -45,7 +45,8 @@ def main():
                     'boundary-loss': 'build/boundary-loss-formal',
                     'port-ownership': 'build/port-clause-ownership-formal',
                     'port-return': 'build/port-return-formal',
-                    'block-ledger': 'build/heawood-block-ledger-formal'}[arguments.audit]
+                    'block-ledger': 'build/heawood-block-ledger-formal',
+                    'closed-high-cycle': 'build/closed-high-cycle-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -86,6 +87,10 @@ def main():
         modules += ('StarForming/PortReturn.lean', 'StarFormingPortReturnAudit.lean')
     elif arguments.audit == 'block-ledger':
         modules += ('StarForming/HeawoodBlockLedger.lean', 'StarFormingHeawoodBlockLedgerAudit.lean')
+    elif arguments.audit == 'closed-high-cycle':
+        modules += ('StarForming/DissociationCover.lean', 'StarForming/LongCoreWord.lean',
+                    'StarForming/LongCoreUpper.lean', 'StarForming/ClosedHighCycle.lean',
+                    'StarFormingClosedHighCycleAudit.lean')
     else:
         modules += ('StarForming/PrivateClauses.lean', 'StarFormingPrivateClausesAudit.lean')
     for module in modules:
@@ -107,7 +112,7 @@ def main():
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
                 'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2,
-                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4}
+                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4, 'closed-high-cycle': 6}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -242,6 +247,15 @@ def main():
                             'to a closed Heawood block, graph-to-ledger extraction, unique '
                             'core-isolate ownership and attainment have complete written '
                             'proofs, not a claimed full formalization of SF(L_k)=36k.')
+    if arguments.audit == 'closed-high-cycle':
+        receipt['scope'] = ('Six conditional count declarations, including the existing one-hub '
+                            'lemma: zero-hub bound, closed-high-seam exclusion of the two-hub '
+                            'exception, disjoint three-block module cap, arbitrary finite-list '
+                            'sum and exact beta/SF/gap arithmetic. Binary cell and star '
+                            'inequalities are explicit premises. Normalization, graph-to-count '
+                            'extraction, odd-hub reflection, Heawood saturation, arbitrary-r '
+                            'construction, attainment and connectivity retain written proofs; '
+                            'the full graph theorem is not claimed Lean-formalized.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

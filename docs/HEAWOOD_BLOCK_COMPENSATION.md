@@ -360,8 +360,12 @@ Reproduction:
     python3 scripts/check_heawood_block_ledger.py --output output/heawood-block-ledger-controls.json
     python3 scripts/check_cover_pullback_formal.py --audit block-ledger --lean /path/to/lean-4.33.0 --output output/heawood-block-ledger-formal-check.json
 
-The next extremal task is to improve on the separate1/24 connected cubic
-family or tighten the universal1/14 ceiling. The rectangular-grid bridge
+The subsequent [closed-high-cycle theorem](CLOSED_HIGH_CYCLE_COMPENSATION.md)
+improves the connected cubic coefficient from1/24 to3/62 by preserving
+each H six-cycle and joining only through X. Its SF upper proof uses
+the established cubic compensation inequality, independently of this
+block ledger. The next extremal task is to improve3/62 or tighten the
+universal1/14 ceiling. The rectangular-grid bridge
 and its mixed-direction geometry remain separate open work. No change to
 the submitted DMGT revision is implied by the present result.
 
