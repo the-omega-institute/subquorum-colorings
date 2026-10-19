@@ -140,7 +140,38 @@ Whenever O<=B+J, (5) removes the entire |M_0|/6 loss in the universal bound
 margin B+J in (6). We do not extend this improvement to arbitrary endpoint
 components or arbitrary nonperpendicular mouth contacts.
 
-## 5. Boundary obstruction and what remains open
+## 5. Unbounded closed networks and the remaining boundary obstruction
+
+The extension beyond S_total<=B occurs in an explicit all-size family,
+not only among the finite controls. Fix k>=1, put w=4k+10, and use a
+32-by-(w+8) rectangle with physical tile origins at even coordinates.
+Place the prescribed depth-two downward source with chamber rows 2,3,
+columns 3,...,w+2, and arm endpoints in rows 4,...,8 at columns 3,w+2.
+Use its prescribed matching and supports. Obtain a second source by the
+tile-preserving reflection (row,column) -> (23-row,w+5-column). Its chamber
+is in rows 20,21 and its tips are in row 15. The mouths are rows 8,9 and
+14,15, both on columns 4,...,w+1.
+
+For each index 0<=i<k, set c_i=8+4i and put a complete vertical comb in
+column c_i, rows 9,...,14, with matching pairs (9,10),(11,12),(13,14).
+Select axial supports (8,c_i),(15,c_i), and side supports
+(row,c_i-1) at odd rows and (row,c_i+1) at even rows. Leave every unlisted
+site blank. Every selected support has exactly its intended endpoint as
+occupied neighbor. Consecutive comb supports on alternating sides are at
+distance three, and different comb centers are four apart, so their selected
+supports are nonadjacent. All combs and their supports stay at least four
+columns from the source arms; the two source chambers are far from the combs.
+There is no new endpoint edge joining different prescribed components.
+Thus the pair is feasible, complete, and fully frozen by the general source
+and comb waves. The placement and its reflected source lie in the stated
+even rectangle for every k.
+
+Each first-mouth endpoint is a sparse singleton end, since its column is
+even and its side support is on the left. Its opposite second-mouth end
+is saturated. Hence B=2,I=k,O=J=0,S_total=U_total=k. The closed-network
+theorem gives |T|+|M|<=mn/2-2 for every k, including all k>=3 where the old
+sparse-count criterion fails. Extra feasible mouth selections are allowed
+by the theorem; the all-k existence proof does not rely on optimizing them.
 
 The two-ending-comb obstacle has one source, O=2,J=0, no internal contacts,
 and D'=0 in its mouth. Hence (4) assigns mouth-plus-source balance -1, as
@@ -191,4 +222,5 @@ and confirming no actual lean/lake executable was active.
 
 The previous transverse-comb ACCEPT and the pending exact-debt review concern
 earlier input. This closed-network extension requires its own review; no
-previous verdict is inherited.
+previous verdict is inherited. The explicit all-k construction in Section 5
+was added after that new review request and is outside its submitted input.
