@@ -216,7 +216,8 @@ not its universal coverage. Whether every frozen positive component
 admits sufficient owned capacity from the two old corner rules has since been
 refuted, even in occupied degree three. See the
 [corner-coverage obstruction and compatible endpoint guard](CORNER_FREE_FROZEN_RECEIVER_AND_ENDPOINT_GUARDS.md).
-Coverage by the enlarged three-rule collection remains open.
+General coverage by that enlarged three-rule collection is also false; see
+[the second frozen obstruction](THREE_RULE_FROZEN_COVERAGE_OBSTRUCTION.md).
 
 ## 5. Verification and next research
 

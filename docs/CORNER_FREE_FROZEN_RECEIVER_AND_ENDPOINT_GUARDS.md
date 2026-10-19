@@ -9,8 +9,9 @@ does not result from clipping a witness at the rectangle boundary.
 A third local rule, with two same-component endpoint guards, supplies its
 missing unit. Its deficit lemma and mixed ownership proof hold for arbitrary
 single-terminal configurations, not just this drawing. They extend the
-conditional coefficient-one class. Coverage by all three rules for every
-positive frozen component remains unproved.
+conditional coefficient-one class. General coverage by all three rules has
+since been refuted by a [second frozen example](THREE_RULE_FROZEN_COVERAGE_OBSTRUCTION.md).
+The all-occupied-degree-three restriction remains unresolved.
 
 ## 1. Complete explicit configuration
 
@@ -267,9 +268,10 @@ selected labels violating old coverage, a finite UNSAT result only. The
 unrestricted8-by10search found the present obstruction; its explicit proof
 does not depend on that solver or on its UNSAT result.
 
-Next: derive coverage on arbitrary matching-constrained chamber networks
-with this larger set of owned resources, retaining junction, link and hole
-costs exactly once. The old two-rule universal claim is now false. Coverage
-by three rules and the unrestricted grid inequalities remain open.
+Next: derive a ledger on matching-constrained chamber networks retaining
+junction, link and hole costs exactly once. Both the old two-rule universal
+claim and the general three-rule claim are now false. The three-rule
+occupied-degree-three restriction and the unrestricted grid inequalities
+remain open. Additional resource mechanisms are needed in general.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
