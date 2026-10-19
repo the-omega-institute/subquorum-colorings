@@ -42,7 +42,8 @@ controls retain independent execution receipts. The reviewer did not run
 them, and its reasoning is not represented as execution evidence.
 
 A follow-up has been submitted to the same conversation
-conv_82a24f8f89797e93, original streaming execution 77181. It asks only for
+conv_82a24f8f89797e93, task82a21aa0-7a36-4278-b14c-847541ce4b23,
+original streaming execution 77181. It asks only for
 the repaired original theorem package, with no verdict yet. The subsequent
 remote-deficit obstruction, its interior completion and the three-tile
 compensation lemma are outside both the first and follow-up review scopes.
