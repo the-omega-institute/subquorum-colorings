@@ -19,18 +19,22 @@ from explore_long_core_SF import clauses, graph, verify_literal
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--k', required=True, type=int)
-    parser.add_argument('--mode', choices=['core', 'full'], required=True)
+    parser.add_argument('--mode', choices=['core', 'internal', 'full'], required=True)
     parser.add_argument('--seconds', default=45, type=float)
     parser.add_argument('--target', type=int)
     parser.add_argument('--fixed-phase', action='store_true')
+    parser.add_argument('--fixed-core', type=Path)
+    parser.add_argument('--no-bare-ports', action='store_true')
+    parser.add_argument('--require-core-forms', action='store_true')
     parser.add_argument('--output', required=True, type=Path)
     arguments = parser.parse_args()
     copies = arguments.k
-    if arguments.mode == 'core':
+    if arguments.mode in {'core', 'internal'}:
         adjacency, pairs, _, _ = word_control('B' * copies)
         ports = {vertex for pair in pairs for vertex in pair}
         family = [(clause, None) for clause in clauses(adjacency)]
-        family += [(frozenset(adjacency[port]), port) for port in sorted(ports)]
+        if arguments.mode == 'core':
+            family += [(frozenset(adjacency[port]), port) for port in sorted(ports)]
         required_owners = set(range(len(adjacency))) - ports
         target = 12 * copies + 1
     else:
@@ -49,7 +53,7 @@ def main():
         formula.extend([[-marker, -first, -second] for first, second in combinations(members, 2)])
         if condition is not None:
             formula.append([-marker, condition + 1])
-        if arguments.mode == 'full':
+        if arguments.mode == 'full' or (arguments.require_core_forms and condition is None):
             formula.append(members)
         for vertex in clause:
             incident[vertex].append(marker)
@@ -69,12 +73,23 @@ def main():
         for vertex in range(20 * copies):
             formula.append([vertex + 1 if vertex in fixed else -(vertex + 1)])
     if arguments.mode == 'full':
+        if arguments.fixed_core:
+            fixed = set(json.loads(arguments.fixed_core.read_text())['selected'])
+            assert fixed <= set(range(20 * copies))
+            for vertex in range(20 * copies):
+                formula.append([vertex + 1 if vertex in fixed else -(vertex + 1)])
         upper = 36 * copies + (2 * (copies // 2)) // 7
         formula.extend(CardEnc.atmost(list(range(1, order + 1)), bound=upper,
                                      vpool=pool, encoding=encoding).clauses)
         for block in range(3 * copies):
             members = [20 * copies + 14 * block + vertex + 1 for vertex in range(14)]
             formula.extend(CardEnc.atmost(members, bound=8, vpool=pool, encoding=encoding).clauses)
+            if arguments.no_bare_ports:
+                offset = 20 * copies + 14 * block
+                for port in [0, 8]:
+                    internal = {neighbor for neighbor in adjacency[offset + port]
+                                if offset <= neighbor < offset + 14}
+                    formula.append([vertex + 1 for vertex in {offset + port} | internal])
     started = time.monotonic()
     with Solver(name='glucose4', bootstrap_with=formula.clauses) as solver:
         deadline = Timer(arguments.seconds, solver.interrupt)
@@ -89,6 +104,9 @@ def main():
                       seconds=round(time.monotonic() - started, 3),
                       binary_variables=pool.top, clauses=len(formula.clauses),
                       solver='glucose4', fixed_phase=arguments.fixed_phase,
+                      fixed_core=str(arguments.fixed_core) if arguments.fixed_core else None,
+                      no_bare_ports=arguments.no_bare_ports,
+                      require_core_forms=arguments.require_core_forms,
                       statistics=solver.accum_stats(),
                       scope='Finite discovery only. Interrupted is inconclusive. UNSAT is a finite solver report without an independently checked proof certificate, not an all-k mathematical proof.')
         if result is True:
@@ -100,6 +118,10 @@ def main():
             if arguments.mode == 'core':
                 assert not safe_deletions(adjacency, selected, ports)
                 record['safe_nonport_deletions'] = []
+            elif arguments.mode == 'internal':
+                for vertex in selected - ports:
+                    assert any(clause & selected == {vertex} for clause, _ in family)
+                record['all_selected_nonports_have_internal_private_clauses'] = True
             else:
                 record['literal_deletion_checks'] = verify_literal(adjacency, selected)
     arguments.output.write_text(json.dumps(record, indent=2) + '\n')

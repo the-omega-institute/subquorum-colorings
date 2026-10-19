@@ -1,0 +1,96 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "small_graphs": {
+    "totals": {
+      "graphs": 1100,
+      "minimal_sets": 5774,
+      "core_selection_instances": 180779,
+      "exported_owners": 120
+    },
+    "first_nonvacuous_example": {
+      "adjacency": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1
+        ],
+        [
+          0
+        ]
+      ],
+      "selected": [
+        0,
+        1,
+        2
+      ],
+      "core": [
+        0,
+        1,
+        2
+      ],
+      "ports": [
+        0,
+        1
+      ],
+      "exports": {
+        "2": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      }
+    },
+    "scope": "All simple labeled graphs of order at most five, every induced core and every inclusion-minimal forming selection. The general proof also permits added port-to-port edges; this finite family does not exhaust those internal edge omissions."
+  },
+  "fixed_core_private_budget": {
+    "k": 1,
+    "conceptual_subsets": 1048576,
+    "maximum_selected_ports_plus_private_nonports": 12,
+    "attaining_selected": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "pruning": "Selections of cardinality at most current maximum cannot improve the score.",
+    "all_k_extension": "Refuted at k2, even with an internally forming core; see output/bare-port-only-obstruction.json.",
+    "scope": "Finite discovery only. No all-k partial private-owner cap is inferred."
+  },
+  "nonvacuous_long_core": {
+    "order": 124,
+    "selected_size": 62,
+    "core_size": 25,
+    "exports": {
+      "22": [
+        [
+          34,
+          118
+        ]
+      ]
+    }
+  },
+  "scope": "Finite independent controls of the general written and Lean export and unique-ownership theorems. The k1 core budget is only a discovery lead."
+}

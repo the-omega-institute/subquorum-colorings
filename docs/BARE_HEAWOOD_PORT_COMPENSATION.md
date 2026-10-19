@@ -263,6 +263,14 @@ be counted twice.
 
 ## Verification, scope and next question
 
+**Subsequent result:** the sufficient rule |C_0|-12k<=T proposed here
+fails even for actual ambient minimal sets with internally forming
+cores. The [export and obstruction note](EXPORTED_BOUNDARY_AND_BARE_ONLY_OBSTRUCTION.md)
+gives a general export theorem and an explicit infinite family with
+core excess r and zero bare ports. The local additive loss theorem
+and the phase theorem in this note remain valid. Further uniform
+compensation must also account for non-bare block losses.
+
 The [independent checker](../scripts/check_bare_heawood_ports.py) tests
 all 16,384 selections of B. All 3,810 selections violating |C|+t<=8
 have a robust non-port deletion; the respective counts for t=0,1,2

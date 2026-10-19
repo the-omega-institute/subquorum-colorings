@@ -216,6 +216,20 @@ inference and conditional accounting; all 16,384 local selections,
 twelve phase lengths and a literal 62-vertex ambient witness pass finite
 controls. This does not settle the unrestricted all-k SF question.
 
+The [general export theorem and bare-only obstruction](docs/EXPORTED_BOUNDARY_AND_BARE_ONLY_OBSTRUCTION.md)
+now sharpen that picture. Any selected core non-port without a private
+internal clause exports through a selected core port to an omitted
+external vertex with exactly that selected neighbor; different owners
+cannot share that vertex. Both general graph statements pass Lean.
+However the stronger bare-only compensation rule is false: for every
+r>=1 an explicit minimal set in L_(2r) selects25r core vertices and
+62r vertices in total, with no bare Heawood ports at all. Its core
+restriction itself forms, and its fourteen selected non-ports in the
+base example all own internal clauses. A general triangle-free cover
+pullback proves the all-r family; explicit base stars and62deletion
+certificates are independently checked. Actual non-bare block losses
+total11r, so this refutes the candidate rule, not the desired36k cap.
+
 The [higher-cover density transfer](docs/HEAWOOD_HIGHER_COVER_BOUNDS.md)
 now gives SF_2-beta_2<=floor(9n/196) for every graph cover factoring
 through a connected Heawood double cover, including all connected regular

@@ -1,10 +1,16 @@
 {
-  "status": "STREAMING_PENDING",
+  "status": "ORIGINAL_TASK_DISPATCHED_WAITING_RESPONSE_STREAM_DISCONNECTED",
   "pool": "chrono-chatgpt-pro-pool",
   "conversation_id": "conv_2b4aa8e1344ce47a",
   "terminal_session_id": 23220,
+  "task_id": "17d001d6-cfd9-492a-b3ad-8e350fab834e",
+  "terminal_result": "Client exited1 with unexpected EOF during chunk size line; empty SSE file. Original task recovered through conversation and direct task API, not resubmitted.",
+  "last_observed_task_status": "dispatched",
+  "last_observed_task_phase": "waiting_response",
+  "assigned_worker": "ld6ld63tkg-go-1",
+  "recovery_receipt": "output/long-core-SF-oracle-recovery.json",
   "input": "docs/reviews/2026-10-19-long-core-SF-research-question.md",
   "request": "build/long-core-SF-oracle-request.json",
   "stream": "build/long-core-SF-oracle-answer.sse",
-  "scope": "Research question: prove SF_2(L_k)=36k for all k, or give a larger fully verified minimal forming witness. Existing exact-beta and SF interval are inputs. The later private-clause/boundary-certificate lemma is outside this input. No verdict or exact SF value beyond k7 is presumed."
+  "scope": "Research question: prove SF_2(L_k)=36k for all k, or give a larger fully verified minimal forming witness. Existing exact-beta and SF interval are inputs. The later private-clause, boundary export, bare-port and bare-only obstruction results are outside this input. No verdict or exact SF value beyond k7 is presumed."
 }

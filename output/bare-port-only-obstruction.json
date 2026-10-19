@@ -1,0 +1,1389 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "base": {
+    "order": 124,
+    "selected": [
+      1,
+      5,
+      7,
+      10,
+      12,
+      14,
+      15,
+      17,
+      19,
+      21,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      41,
+      44,
+      46,
+      50,
+      52,
+      53,
+      57,
+      58,
+      60,
+      61,
+      62,
+      66,
+      67,
+      68,
+      69,
+      72,
+      74,
+      80,
+      81,
+      86,
+      90,
+      91,
+      92,
+      94,
+      95,
+      99,
+      103,
+      104,
+      105,
+      108,
+      109,
+      111,
+      114,
+      116,
+      120,
+      122,
+      123
+    ],
+    "selected_size": 62,
+    "core_selected": [
+      1,
+      5,
+      7,
+      10,
+      12,
+      14,
+      15,
+      17,
+      19,
+      21,
+      23,
+      24,
+      25,
+      26,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "core_selected_size": 25,
+    "core_forms": true,
+    "selected_core_ports": 11,
+    "selected_core_nonports": 14,
+    "all_selected_core_nonports_have_internal_private_clauses": true,
+    "explicit_core_private_certificates": {
+      "1": [
+        "A",
+        1
+      ],
+      "5": [
+        "A",
+        4
+      ],
+      "7": [
+        "A",
+        8
+      ],
+      "10": [
+        "A",
+        10
+      ],
+      "12": [
+        "B",
+        0,
+        1
+      ],
+      "14": [
+        "B",
+        2,
+        1
+      ],
+      "15": [
+        "A",
+        3
+      ],
+      "17": [
+        "B",
+        4,
+        5
+      ],
+      "19": [
+        "B",
+        8,
+        7
+      ],
+      "21": [
+        "B",
+        9,
+        10
+      ],
+      "23": [
+        "B",
+        11,
+        10
+      ],
+      "36": [
+        "B",
+        16,
+        28
+      ],
+      "37": [
+        "B",
+        3,
+        15
+      ],
+      "38": [
+        "A",
+        38
+      ]
+    },
+    "core_patterns": [
+      [
+        1,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17,
+        18,
+        19
+      ],
+      [
+        1,
+        4,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    ],
+    "block_patterns": [
+      [
+        1,
+        4,
+        6,
+        10,
+        12,
+        13
+      ],
+      [
+        3,
+        4,
+        6,
+        7,
+        8,
+        12,
+        13
+      ],
+      [
+        0,
+        1,
+        4,
+        6,
+        12,
+        13
+      ],
+      [
+        4,
+        8,
+        9,
+        10,
+        12,
+        13
+      ],
+      [
+        3,
+        7,
+        8,
+        9,
+        12,
+        13
+      ],
+      [
+        1,
+        4,
+        6,
+        10,
+        12,
+        13
+      ]
+    ],
+    "formation_single_neighbor_stars": [
+      [
+        3,
+        15,
+        37
+      ],
+      [
+        4,
+        5,
+        17
+      ],
+      [
+        8,
+        7,
+        19
+      ],
+      [
+        54,
+        61,
+        58
+      ],
+      [
+        55,
+        62,
+        26
+      ],
+      [
+        56,
+        66,
+        58
+      ],
+      [
+        63,
+        60,
+        61
+      ],
+      [
+        64,
+        57,
+        67
+      ],
+      [
+        70,
+        80,
+        72
+      ],
+      [
+        71,
+        81,
+        74
+      ],
+      [
+        78,
+        68,
+        29
+      ],
+      [
+        89,
+        86,
+        94
+      ],
+      [
+        93,
+        86,
+        94
+      ],
+      [
+        106,
+        99,
+        109
+      ],
+      [
+        107,
+        99,
+        109
+      ]
+    ],
+    "other_outside_vertices_have_two_selected_neighbors": true,
+    "explicit_deletion_certificates": [
+      {
+        "deleted": 1,
+        "failed_outside": 1,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 5,
+        "failed_outside": 4,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 7,
+        "failed_outside": 8,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 10,
+        "failed_outside": 10,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 12,
+        "failed_outside": 0,
+        "retained_selected_neighbors": [
+          1
+        ]
+      },
+      {
+        "deleted": 14,
+        "failed_outside": 2,
+        "retained_selected_neighbors": [
+          1
+        ]
+      },
+      {
+        "deleted": 15,
+        "failed_outside": 3,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 17,
+        "failed_outside": 4,
+        "retained_selected_neighbors": [
+          5
+        ]
+      },
+      {
+        "deleted": 19,
+        "failed_outside": 8,
+        "retained_selected_neighbors": [
+          7
+        ]
+      },
+      {
+        "deleted": 21,
+        "failed_outside": 9,
+        "retained_selected_neighbors": [
+          10
+        ]
+      },
+      {
+        "deleted": 23,
+        "failed_outside": 11,
+        "retained_selected_neighbors": [
+          10
+        ]
+      },
+      {
+        "deleted": 24,
+        "failed_outside": 48,
+        "retained_selected_neighbors": [
+          41
+        ]
+      },
+      {
+        "deleted": 25,
+        "failed_outside": 40,
+        "retained_selected_neighbors": [
+          50
+        ]
+      },
+      {
+        "deleted": 26,
+        "failed_outside": 55,
+        "retained_selected_neighbors": [
+          62
+        ]
+      },
+      {
+        "deleted": 28,
+        "failed_outside": 28,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 29,
+        "failed_outside": 78,
+        "retained_selected_neighbors": [
+          68
+        ]
+      },
+      {
+        "deleted": 30,
+        "failed_outside": 18,
+        "retained_selected_neighbors": [
+          38
+        ]
+      },
+      {
+        "deleted": 31,
+        "failed_outside": 82,
+        "retained_selected_neighbors": [
+          92
+        ]
+      },
+      {
+        "deleted": 32,
+        "failed_outside": 20,
+        "retained_selected_neighbors": [
+          38
+        ]
+      },
+      {
+        "deleted": 33,
+        "failed_outside": 96,
+        "retained_selected_neighbors": [
+          103
+        ]
+      },
+      {
+        "deleted": 34,
+        "failed_outside": 118,
+        "retained_selected_neighbors": [
+          111
+        ]
+      },
+      {
+        "deleted": 35,
+        "failed_outside": 110,
+        "retained_selected_neighbors": [
+          120
+        ]
+      },
+      {
+        "deleted": 36,
+        "failed_outside": 16,
+        "retained_selected_neighbors": [
+          28
+        ]
+      },
+      {
+        "deleted": 37,
+        "failed_outside": 3,
+        "retained_selected_neighbors": [
+          15
+        ]
+      },
+      {
+        "deleted": 38,
+        "failed_outside": 38,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 41,
+        "failed_outside": 41,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 44,
+        "failed_outside": 44,
+        "retained_selected_neighbors": [
+          52
+        ]
+      },
+      {
+        "deleted": 46,
+        "failed_outside": 46,
+        "retained_selected_neighbors": [
+          53
+        ]
+      },
+      {
+        "deleted": 50,
+        "failed_outside": 50,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 52,
+        "failed_outside": 42,
+        "retained_selected_neighbors": [
+          50
+        ]
+      },
+      {
+        "deleted": 53,
+        "failed_outside": 43,
+        "retained_selected_neighbors": [
+          50
+        ]
+      },
+      {
+        "deleted": 57,
+        "failed_outside": 64,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 58,
+        "failed_outside": 56,
+        "retained_selected_neighbors": [
+          66
+        ]
+      },
+      {
+        "deleted": 60,
+        "failed_outside": 63,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 61,
+        "failed_outside": 54,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 62,
+        "failed_outside": 55,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 66,
+        "failed_outside": 56,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 67,
+        "failed_outside": 64,
+        "retained_selected_neighbors": [
+          57
+        ]
+      },
+      {
+        "deleted": 68,
+        "failed_outside": 78,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 69,
+        "failed_outside": 69,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 72,
+        "failed_outside": 70,
+        "retained_selected_neighbors": [
+          80
+        ]
+      },
+      {
+        "deleted": 74,
+        "failed_outside": 71,
+        "retained_selected_neighbors": [
+          81
+        ]
+      },
+      {
+        "deleted": 80,
+        "failed_outside": 70,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 81,
+        "failed_outside": 71,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 86,
+        "failed_outside": 86,
+        "retained_selected_neighbors": [
+          94
+        ]
+      },
+      {
+        "deleted": 90,
+        "failed_outside": 83,
+        "retained_selected_neighbors": [
+          91
+        ]
+      },
+      {
+        "deleted": 91,
+        "failed_outside": 88,
+        "retained_selected_neighbors": [
+          95
+        ]
+      },
+      {
+        "deleted": 92,
+        "failed_outside": 85,
+        "retained_selected_neighbors": [
+          95
+        ]
+      },
+      {
+        "deleted": 94,
+        "failed_outside": 89,
+        "retained_selected_neighbors": [
+          86
+        ]
+      },
+      {
+        "deleted": 95,
+        "failed_outside": 85,
+        "retained_selected_neighbors": [
+          92
+        ]
+      },
+      {
+        "deleted": 99,
+        "failed_outside": 99,
+        "retained_selected_neighbors": [
+          109
+        ]
+      },
+      {
+        "deleted": 103,
+        "failed_outside": 100,
+        "retained_selected_neighbors": [
+          108
+        ]
+      },
+      {
+        "deleted": 104,
+        "failed_outside": 97,
+        "retained_selected_neighbors": [
+          105
+        ]
+      },
+      {
+        "deleted": 105,
+        "failed_outside": 98,
+        "retained_selected_neighbors": [
+          108
+        ]
+      },
+      {
+        "deleted": 108,
+        "failed_outside": 98,
+        "retained_selected_neighbors": [
+          105
+        ]
+      },
+      {
+        "deleted": 109,
+        "failed_outside": 106,
+        "retained_selected_neighbors": [
+          99
+        ]
+      },
+      {
+        "deleted": 111,
+        "failed_outside": 111,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 114,
+        "failed_outside": 114,
+        "retained_selected_neighbors": [
+          122
+        ]
+      },
+      {
+        "deleted": 116,
+        "failed_outside": 116,
+        "retained_selected_neighbors": [
+          123
+        ]
+      },
+      {
+        "deleted": 120,
+        "failed_outside": 120,
+        "retained_selected_neighbors": []
+      },
+      {
+        "deleted": 122,
+        "failed_outside": 112,
+        "retained_selected_neighbors": [
+          120
+        ]
+      },
+      {
+        "deleted": 123,
+        "failed_outside": 113,
+        "retained_selected_neighbors": [
+          120
+        ]
+      }
+    ],
+    "literal_deletion_checks": 62
+  },
+  "finite_cover_controls": [
+    {
+      "repeats": 1,
+      "k": 2,
+      "order": 124,
+      "selected_size": 62,
+      "core_selected_size": 25,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 1,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 11,
+      "target_36k": 72,
+      "target_violated": false
+    },
+    {
+      "repeats": 2,
+      "k": 4,
+      "order": 248,
+      "selected_size": 124,
+      "core_selected_size": 50,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 2,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 22,
+      "target_36k": 144,
+      "target_violated": false
+    },
+    {
+      "repeats": 3,
+      "k": 6,
+      "order": 372,
+      "selected_size": 186,
+      "core_selected_size": 75,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 3,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 33,
+      "target_36k": 216,
+      "target_violated": false
+    },
+    {
+      "repeats": 4,
+      "k": 8,
+      "order": 496,
+      "selected_size": 248,
+      "core_selected_size": 100,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 4,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 44,
+      "target_36k": 288,
+      "target_violated": false
+    },
+    {
+      "repeats": 5,
+      "k": 10,
+      "order": 620,
+      "selected_size": 310,
+      "core_selected_size": 125,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 5,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 55,
+      "target_36k": 360,
+      "target_violated": false
+    },
+    {
+      "repeats": 6,
+      "k": 12,
+      "order": 744,
+      "selected_size": 372,
+      "core_selected_size": 150,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 6,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 66,
+      "target_36k": 432,
+      "target_violated": false
+    },
+    {
+      "repeats": 7,
+      "k": 14,
+      "order": 868,
+      "selected_size": 434,
+      "core_selected_size": 175,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 7,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 77,
+      "target_36k": 504,
+      "target_violated": false
+    },
+    {
+      "repeats": 8,
+      "k": 16,
+      "order": 992,
+      "selected_size": 496,
+      "core_selected_size": 200,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 8,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 88,
+      "target_36k": 576,
+      "target_violated": false
+    },
+    {
+      "repeats": 9,
+      "k": 18,
+      "order": 1116,
+      "selected_size": 558,
+      "core_selected_size": 225,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 9,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 99,
+      "target_36k": 648,
+      "target_violated": false
+    },
+    {
+      "repeats": 10,
+      "k": 20,
+      "order": 1240,
+      "selected_size": 620,
+      "core_selected_size": 250,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 10,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 110,
+      "target_36k": 720,
+      "target_violated": false
+    },
+    {
+      "repeats": 11,
+      "k": 22,
+      "order": 1364,
+      "selected_size": 682,
+      "core_selected_size": 275,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 11,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 121,
+      "target_36k": 792,
+      "target_violated": false
+    },
+    {
+      "repeats": 12,
+      "k": 24,
+      "order": 1488,
+      "selected_size": 744,
+      "core_selected_size": 300,
+      "covering_locally_bijective": true,
+      "full_minimality_private_owners_checked": true,
+      "total_bare_ports": 0,
+      "core_excess_over_12k": 12,
+      "block_sizes": [
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        7,
+        6,
+        6,
+        6,
+        6
+      ],
+      "total_actual_block_loss": 132,
+      "target_36k": 864,
+      "target_violated": false
+    }
+  ],
+  "scope": "The explicit base set and deletion witnesses, together with the general triangle-free covering pullback theorem and written covering map, prove the all-r obstruction. Finite cover checks are verification only. The rule core_excess<=bare_ports is false even for an internally forming core; SF(L_k)<=36k is not refuted."
+}
