@@ -25,6 +25,7 @@ import SubQuorum.OpenSourceCavities
 import SubQuorum.CombChannels
 import SubQuorum.ElbowSources
 import SubQuorum.GuardedSteppedArms
+import SubQuorum.SteppedPatchIsolation
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -159,3 +160,7 @@ import SubQuorum.GuardedSteppedArms
 #print axioms SubQuorum.GuardedSteppedArms.distinct_anchor_neighbors_impossible
 #print axioms SubQuorum.GuardedSteppedArms.old_lower_corner_guard_impossible
 #print axioms SubQuorum.GuardedSteppedArms.stepped_receiver_charge
+#print axioms SubQuorum.SteppedPatchIsolation.port_degree_at_most_two
+#print axioms SubQuorum.SteppedPatchIsolation.matched_boundary_exclusion
+#print axioms SubQuorum.SteppedPatchIsolation.reachable_stays_in_core
+#print axioms SubQuorum.SteppedPatchIsolation.promoted_port_feasible

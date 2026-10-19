@@ -32,6 +32,19 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [stepped-patch isolation theorem](docs/STEPPED_PATCH_ISOLATION.md) removes
+the completeness assumption from prescribed arbitrary-length stepped cores.
+At most one single promotion per core isolates them, preserving the objective
+and their frozen certificates. If all other initial endpoints are square-free,
+distinct guarded unit donors give coefficient one with an exact deficit
+decomposition. The all-length boundary and multi-core proof is written;
+137 scoped Lean declarations pass, including four matching/path/port interfaces.
+The [phase and channel note](docs/STEPPED_ARM_PHASE_AND_CHANNELS.md) separately
+proves sharp two-direction phase bounds and a translated all-length obstruction
+to paying every negative phase from the component's negative charge alone.
+Neither note proves the universal grid inequality; their new written assessments
+are outstanding while Oracle's task quota is occupied.
+
 The [whole-channel compensation theorem](docs/COMB_CHANNEL_COMPENSATION.md)
 allows a remote terminal band to contain matching endpoints. Its exact
 boundary payment is two for aligned comb ends and one for unequal heights,
@@ -42,8 +55,8 @@ a contained perpendicular source; actual source phase repairs an otherwise
 invalid weight-two allocation. There are 194 physical controls, eight
 symmetry images and three additional conditional Lean statements, with
 123 scoped declarations audited cumulatively. General channel existence
-and unrestricted grid equality remain open; the new written proof has a
-separate pending review.
+and unrestricted grid equality remain open. Its independent written review
+completed ACCEPT; physical and Lean execution have separate receipts.
 
 | Result | Scope | Verification |
 | --- | --- | --- |
@@ -57,6 +70,7 @@ separate pending review.
 | Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
 | Mixed matching bound with coefficient 1 | Even-by-even grids whose endpoint components are thin, have at most one P-square, or are prescribed positive bent caps with their forced matching/supports | General thin classification, all-alignment receiver budgets and injective no-P donor compensation; scoped Lean interfaces and exact controls |
+| Attached stepped cores with coefficient 1 | Prescribed positive-phase stepped matchings/supports; all other initial endpoints square-free; no initial completeness or terminality | All-length intrinsic boundary, sequential isolation and exact distinct-donor proof; physical controls and four scoped Lean interfaces |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;
