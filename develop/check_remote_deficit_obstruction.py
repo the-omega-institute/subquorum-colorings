@@ -27,6 +27,25 @@ def fixture():
     return current, certificate
 
 
+def tile_resources(current):
+    endpoints = endpoint_data(current)[0]
+    receiver_tiles = {(row//2, column//2) for row, column in endpoints}
+    no_endpoint_tiles = set(itertools.product(range(current[0]//2), range(current[1]//2)))-receiver_tiles
+    records = []
+    for tile in sorted(no_endpoint_tiles):
+        cells = vertices_of({tile})
+        edge_distance = min(sum(abs(first-second) for first, second in zip(tile, other))
+                            for other in receiver_tiles)
+        corner_distance = min(max(abs(first-second) for first, second in zip(tile, other))
+                              for other in receiver_tiles)
+        vertex_distance = min(sum(abs(first-second) for first, second in zip(point, endpoint))
+                              for point in cells for endpoint in endpoints)
+        records.append(dict(tile=tile, deficit=2-len(cells & current[2]),
+                            edge_tile_distance=edge_distance, corner_tile_distance=corner_distance,
+                            vertex_distance=vertex_distance))
+    return records
+
+
 def inspect(current, certificate=None):
     endpoints = endpoint_data(current)[0]
     assert endpoint_components(current) == [endpoints]
@@ -49,20 +68,7 @@ def inspect(current, certificate=None):
     assert (receiver['tiles'], receiver['selected'], receiver['charge_twice']) == (12, 11, 2)
     assert (ledger['objective'], ledger['empty_deficit']) == (39, 2)
     assert Counter(occupied_degrees(current).values()) == {3: 23, 4: 5}
-    receiver_tiles = {(row//2, column//2) for row, column in endpoints}
-    no_endpoint_tiles = set(itertools.product(range(current[0]//2), range(current[1]//2)))-receiver_tiles
-    records = []
-    for tile in sorted(no_endpoint_tiles):
-        cells = vertices_of({tile})
-        edge_distance = min(sum(abs(first-second) for first, second in zip(tile, other))
-                            for other in receiver_tiles)
-        corner_distance = min(max(abs(first-second) for first, second in zip(tile, other))
-                              for other in receiver_tiles)
-        vertex_distance = min(sum(abs(first-second) for first, second in zip(point, endpoint))
-                              for point in cells for endpoint in endpoints)
-        records.append(dict(tile=tile, deficit=2-len(cells & current[2]),
-                            edge_tile_distance=edge_distance, corner_tile_distance=corner_distance,
-                            vertex_distance=vertex_distance))
+    records = tile_resources(current)
     positive = [record for record in records if record['deficit'] > 0]
     assert len(positive) == 1 and positive[0]['deficit'] == 2
     assert (positive[0]['edge_tile_distance'], positive[0]['corner_tile_distance'],
@@ -77,6 +83,50 @@ def inspect(current, certificate=None):
                 no_endpoint_tiles=records)
 
 
+def extension_controls():
+    original, certificate = fixture()
+    source = json.loads(Path(__file__).with_name('remote_deficit_frozen_obstruction.json').read_text())
+    extension = source['interior_extension']
+    current = (*extension['shape'], {tuple(point) for point in extension['selected']},
+               [tuple(tuple(point) for point in edge) for edge in extension['matching']])
+    move = lambda point: (point[0]+2, point[1]+2)
+    assert current[3] == [tuple(move(point) for point in edge) for edge in original[3]]
+    original_domain = {(row+2, column+2) for row in range(original[0]) for column in range(original[1])}
+    assert current[2] & original_domain == {move(point) for point in original[2]}
+    endpoints = endpoint_data(current)[0]
+    mates = {point: partner for edge in current[3] for point, partner in (edge, edge[::-1])}
+    earlier = set()
+    for vertex, first, second in certificate:
+        vertex, first, second = move(vertex), move(first), move(second)
+        assert vertex not in earlier and first != second
+        assert {first, second} <= set(neighbors(vertex))
+        assert all(point in current[2] or point in mates and mates[point] in earlier
+                   for point in (first, second))
+        earlier.add(vertex)
+    assert earlier == endpoints
+    for symmetry in itertools.product((False, True), repeat=3):
+        shape, selected, matching = transformed(*current, *symmetry)
+        image = *shape, selected, matching
+        paired = endpoint_data(image)[0]
+        assert endpoint_components(image) == [paired]
+        assert frozen_certificate(image)[0] == paired
+        ledger = verify_terminal(image)
+        assert (ledger['objective'], ledger['empty_deficit']) == (79, 6)
+        assert ledger['receivers'][0]['charge_twice'] == 2
+        records = tile_resources(image)
+        assert sum(record['deficit'] for record in records if record['corner_tile_distance'] == 1) == 0
+        assert all(record['deficit'] >= 0 for record in records)
+        assert min(record['corner_tile_distance'] for record in records if record['deficit'] > 0) == 2
+        assert all(min(row, column, shape[0]-row-1, shape[1]-column-1) >= 2 for row, column in paired)
+        assert physical_donors(image, include_endpoint_guard=True) == []
+        assert saturated_endpoint_donors(image) == []
+    return dict(shape=current[:2], selected=len(current[2]), endpoints=len(endpoints),
+                matching_edges=len(current[3]), receiver_charge=1, neighboring_capacity=0,
+                no_endpoint_deficit=6, objective=79, half_area=84, total_deficit=5,
+                endpoint_boundary_distance_at_least=2, physical_symmetries=8,
+                original_label_restriction_and_shifted_certificate='PASS')
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -86,12 +136,14 @@ def main():
     for symmetry in itertools.product((False, True), repeat=3):
         shape, selected, matching = transformed(*current, *symmetry)
         inspect((*shape, selected, matching))
-    report.update(status='PASS', physical_symmetries=8,
+    report.update(status='PASS', physical_symmetries=8, interior_extension=extension_controls(),
                   scope='Explicit frozen 8-by-10 counterexample to compensation using only '
                         'endpoint-free tiles sharing an edge or corner with the receiver. '
                         'The sole positive deficit tile is at physical tile distance two. '
-                        'The global bound holds with deficit one. Boundary is part of this '
-                        'instance; no blank-padding invariance or new Lean verification claimed.')
+                        'The global bound holds with deficit one. A selected-border extension '
+                        'moves all endpoints into the interior and preserves zero neighboring '
+                        'capacity; all eight images pass. No unchanged blank-padding invariance '
+                        'or new Lean verification claimed.')
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps({key: value for key, value in report.items() if key != 'no_endpoint_tiles'}))
 

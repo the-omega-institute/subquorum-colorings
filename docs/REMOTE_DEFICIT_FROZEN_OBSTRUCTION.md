@@ -6,11 +6,13 @@ allowing every endpoint-free neighboring tile to donate. The explicit frozen
 endpoint-free tile sharing an edge OR a corner with its receiver has deficit
 zero. Its only positive resource is a physical tile at tile distance two.
 
-This refutes the proposed neighboring-resource coverage inequality even for
+This refutes the neighboring-resource coverage inequality even for
 one complete component, where competition between owners is absent. It does
 not refute the full grid target: its objective is 39, below half-area 40.
-The example includes boundary vertices. No invariance under blank padding
-and no new Lean formalization are claimed.
+The first drawing includes boundary vertices; the selected-border extension
+below puts every endpoint strictly inside a larger rectangle and retains the
+obstruction. No invariance under unchanged blank padding and no new Lean
+formalization are claimed.
 
 ## 1. Exact configuration
 
@@ -168,8 +170,11 @@ It checks feasibility, matching, complete connectedness, every row of the
 28-step certificate, an independently calculated freezing closure, the
 original corrected receiver ledger and saturated transfers, all eight
 endpoint-free tile capacities and distances, and all four local donor scans.
-All eight physical symmetries pass. The exact JSON source includes the
-full certificate; it can be checked without a solver.
+All eight physical symmetries pass. The selected-border extension below
+also passes all eight symmetries, including restriction to the original
+labels and the translated full freezing certificate. The exact JSON source
+includes both configurations and the certificate; they can be checked
+without a solver.
 
 Discovery used Z3 5.3.1 in the original 8-by-10 rectangle with a connected
 fully frozen positive receiver and a strict deficit in its endpoint-adjacent
@@ -186,5 +191,50 @@ tiles, or use a stronger objective-preserving normalization. The allocation
 must reserve each donor capacity globally across all components. A universal
 bound on transport distance remains unproved, as do the full grid bound and
 triple equality.
+
+## 6. The obstruction persists with every endpoint in the interior
+
+Translate the entire original configuration by (2,2) into a 12-by-14
+rectangle, preserve every label in the original subrectangle, and add only
+the selected sites displayed outside it below. The matching is exactly the
+translated original matching. All unmarked sites are blank.
+
+```text
+..T.TT.TT.TT.T
+...T..T..T..T.
+T.T.TPPPPPPT.T
+.T.T.PPPPPP.T.
+T.TPPPP.T.PT.T
+.T.PPPPT.TP.T.
+T.TP.T..T.PT.T
+.T.PT.TT.TP.T.
+T.TP.T..T.PT.T
+.T.T.T..T.T.T.
+T.T......T.T.T
+T.T.TT..T.T..T
+```
+
+There are 65 selections and the same 28 endpoints and 14 matching edges.
+Every endpoint is at least two grid edges from the boundary. Feasibility
+can be checked directly from the displayed labels; no selected vertex has
+more than one occupied neighbor. All original retained witnesses remain,
+so the identical ordered freezing proof translates unchanged. The receiver
+inventory and corrected charge remain 12 tiles, 11 selections, nine blanks
+and rho=1.
+
+Every endpoint-free tile at edge-or-corner distance one from the translated
+receiver still contains exactly two selections. Thus its entire immediate
+neighborhood has capacity zero. The closest positive deficit tiles have
+tile distance two. The full outside deficit is six and the objective is
+65+14=79, below half-area 84, leaving deficit five. The added selections
+change the border, so this is a selected-border completion, not a claim
+that an unchanged blank border preserves neighboring capacities.
+
+The precise larger selected set, matching and translation are included in
+the JSON field interior_extension. The independent checker verifies all
+eight physical images, preservation of the original labels, the shifted
+28-step certificate, the original corrected ledger and zero neighboring
+capacity. This establishes that having endpoint vertices on the ambient
+boundary is not necessary for the neighboring-resource obstruction.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

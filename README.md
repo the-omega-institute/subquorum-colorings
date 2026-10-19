@@ -38,7 +38,9 @@ with its receiver has deficit zero. Its only positive resource is a blank tile
 at tile distance two. The complete 28-step certificate and all eight physical
 symmetries pass independent checks. Thus even all immediate neighboring tiles
 cannot universally supply compensation; the global bound still holds here
-with deficit one. No new Lean or blank-padding invariance is claimed for it.
+with deficit one. A selected-border completion preserves the obstruction
+with all endpoints in the interior; all eight images pass. No new Lean or
+unchanged blank-padding invariance is claimed for it.
 
 The [two-leg degree-three obstruction](docs/TWO_LEG_DEGREE_THREE_COVERAGE_OBSTRUCTION.md)
 refutes three-rule corner coverage even when every endpoint has occupied

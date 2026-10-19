@@ -118,5 +118,23 @@
   ],
   "status": "PASS",
   "physical_symmetries": 8,
-  "scope": "Explicit frozen 8-by-10 counterexample to compensation using only endpoint-free tiles sharing an edge or corner with the receiver. The sole positive deficit tile is at physical tile distance two. The global bound holds with deficit one. Boundary is part of this instance; no blank-padding invariance or new Lean verification claimed."
+  "interior_extension": {
+    "shape": [
+      12,
+      14
+    ],
+    "selected": 65,
+    "endpoints": 28,
+    "matching_edges": 14,
+    "receiver_charge": 1,
+    "neighboring_capacity": 0,
+    "no_endpoint_deficit": 6,
+    "objective": 79,
+    "half_area": 84,
+    "total_deficit": 5,
+    "endpoint_boundary_distance_at_least": 2,
+    "physical_symmetries": 8,
+    "original_label_restriction_and_shifted_certificate": "PASS"
+  },
+  "scope": "Explicit frozen 8-by-10 counterexample to compensation using only endpoint-free tiles sharing an edge or corner with the receiver. The sole positive deficit tile is at physical tile distance two. The global bound holds with deficit one. A selected-border extension moves all endpoints into the interior and preserves zero neighboring capacity; all eight images pass. No unchanged blank-padding invariance or new Lean verification claimed."
 }
