@@ -703,3 +703,19 @@ are retained. The follow-up completed ACCEPT for the repaired source-fusion
 theorem, conditional on its expressly established ledger, rotor barrier,
 donor-ring injectivity and rotor-slot inputs. Original stream DONE exactly
 matches the terminal review; execution checks remain separate evidence.
+
+The [separated-negative-receiver theorem](docs/SEPARATED_NEGATIVE_RECEIVER_COMPENSATION.md)
+removes that density hypothesis when no physical receiver tile contains
+endpoints of two negative sources. For arbitrary U widths, independent
+leg heights and all phases it proves sigma>=|N-B|+2R, where B counts
+negative U sources and R negative rotors. Zero-charge rotors are permitted
+in the 2P1T-only phase. Actual irregular events force a full tile with
+one unused correction unit; the only remaining bar cost and an upper
+corner side assignment use the same one-unit reservation exclusively.
+Counting the remaining marked sides by both positive and negative
+sources closes the inequality without a density condition. All13 local
+states,344 physical images and10 scoped Lean declarations/audits pass;
+296 images outside the hypotheses are excluded explicitly. General
+negative-receiver overlap and zero-rotor3P0T payment remain open.
+The new independent review is dispatched, not yet ACCEPT; prior reviews
+do not cover this theorem.
