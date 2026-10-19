@@ -96,6 +96,19 @@ connections. General proofs, 696 contact/138 bridge controls and 85 scoped
 local Lean declarations are available; unmatched exterior compensation and
 the universal grid bound remain open.
 
+The [directional averaging theorem](docs/DIRECTIONAL_AVERAGING_SOURCE_COMPENSATION.md)
+removes all crossing restrictions for prescribed source-only mouths, and
+more generally for nonnegative multiplicity-weighted comb flux. The
+[adaptive strip certificate](docs/ADAPTIVE_STRIP_COMPENSATION_AND_NEGATIVE_FLUX.md)
+now permits negative flux: choose a maximum-weight independent collection
+of coalesced strips, using a classical bipartite cut. Original donor tiles
+are used once. An explicit all-k family has 3k sources, flux -k and an
+exclusive certificate of weight 3k, beyond the earlier nonnegative-flux
+and exact crossing-loss criteria. General negative-flux compensation is
+still open. There are 70 physical controls, 32 symmetry images, 1,024
+abstract graph controls and 100 scoped local Lean declarations; the
+geometric adapter and all-k proof remain written.
+
 The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
 straight shared receivers to arbitrary bent paths and branching tile trees
 under explicit occupied-face and blank-cap assumptions. Each distinct leaf

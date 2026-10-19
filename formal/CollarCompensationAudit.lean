@@ -16,6 +16,7 @@ import SubQuorum.LongBentTerminalStrips
 import SubQuorum.CombEndFlux
 import SubQuorum.ParallelCombFlux
 import SubQuorum.OrthogonalMouthFlux
+import SubQuorum.AdaptiveStripCompensation
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -114,3 +115,6 @@ import SubQuorum.OrthogonalMouthFlux
 #print axioms SubQuorum.OrthogonalMouthFlux.crossing_boundary_bound
 #print axioms SubQuorum.OrthogonalMouthFlux.physical_union_incidence_identity
 #print axioms SubQuorum.OrthogonalMouthFlux.directional_averaging_identity
+#print axioms SubQuorum.AdaptiveStripCompensation.exclusive_donor_budget
+#print axioms SubQuorum.AdaptiveStripCompensation.independent_strip_compensation
+#print axioms SubQuorum.AdaptiveStripCompensation.negative_star_budget

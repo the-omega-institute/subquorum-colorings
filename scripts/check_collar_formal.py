@@ -52,6 +52,7 @@ def main():
                    'SubQuorum/CombEndFlux.lean',
                    'SubQuorum/ParallelCombFlux.lean',
                    'SubQuorum/OrthogonalMouthFlux.lean',
+                   'SubQuorum/AdaptiveStripCompensation.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -68,7 +69,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 97
+    assert len(declarations) == 100
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -80,7 +81,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 95 scoped declarations plus the exact physical union incidence identity for arbitrary finite lists of nonnegative donor weights and crossing flags, and directional averaging with a conditional objective consequence from the three ledger equalities. The source-only arbitrary-orientation theorem, source contact classification, geometric/counting adapters and exact global ledger remain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification, negative external comb flux control or universal source coverage is claimed.')
+                  scope='Previous 97 scoped declarations plus exclusive physical donor sums, the conditional independent-strip objective consequence, and arbitrary-size negative-star arithmetic. Full geometric adapters, the grid constructions and bipartite max-flow optimization remain written proofs. Adaptive strip certificates cover the explicit arbitrarily negative-flux family; no universal negative-flux control, full geometric Lean theorem or universal source coverage is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)
