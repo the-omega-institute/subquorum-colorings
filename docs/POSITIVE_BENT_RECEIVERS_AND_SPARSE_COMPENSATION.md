@@ -6,6 +6,10 @@ nonpositive. It also proves a local compensation inequality in arbitrary
 feasible exteriors. It does not refute the grid coefficient-one target.
 Submitted manuscripts are unchanged.
 
+A promotion bundle uses any subset of actual matching edges, promotes one
+endpoint on each chosen edge and deletes its mate; original T remains selected.
+All promoted vertices must be feasible in the resulting occupied set.
+
 ## 1. An all-width fully frozen bent component
 
 For even w>=4, let
@@ -255,7 +259,11 @@ The local payment review is task 9a6895af-214a-4439-b79a-9c1e03f9a909,
 conversation conv_65f1d5aa3e20f514, original stream 38980. The separate full
 injective-payment review is task 4a9d8625-be7a-4eb0-a47b-c6ccde5112ea,
 conversation conv_b6e03602f9701743, original stream 62345. Both pending handles
-are preserved without inferring acceptance. These reviews do not execute Lean
-or code and do not establish priority.
+are preserved. The local review completed ACCEPT at 08:30:37 UTC on 19 October,
+observed gpt_6/pro, with exact response and scope assessment archived in
+output/bent-compensation-review-response.json and
+docs/reviews/2026-10-19-bent-compensation-assessment.md. The separate full
+injective-payment review is still pending; the local ACCEPT does not cover
+Sections 4--6. These reviews do not execute Lean or code or establish priority.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
