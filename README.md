@@ -43,7 +43,7 @@ hypercube solution to these geometric and structural questions.
 | Known grid dissociation number beta_2=F | Every positive width and length | New row-profile proof with equality information; exact finite checks |
 | Directional Omega_H=Omega_V=F | Every positive width and length | Written ladder-rigidity argument; exact finite checks |
 | Mixed matching bound with coefficient 5/6 | Every positive even-by-even rectangle | Written residual-geometry proof; exhaustive and constructed controls |
-| Mixed matching bound with coefficient 1 | Even-by-even grids with square-free endpoint graphs; also the stated pure-rectangle and capped-component class | General receiver-partition proof; all comb alignments checked; four scoped Lean statements |
+| Mixed matching bound with coefficient 1 | Even-by-even grids with at most one P-square per endpoint component; also the stated pure-rectangle and capped-component class | General receiver-partition and arm-extension proofs; all alignments checked; four scoped Lean statements for the square-free core |
 
 The Lean theorem explicitly states psi_sq(Q_n)=2^(n-1). The beta_2 identity
 was already established by Sahbi and also follows from the written proof;
@@ -99,6 +99,17 @@ statements and 24,296 finite configurations support the written proof, with
 65 declarations passing the combined local audit. Full component partition,
 normalization and all-length geometry remain written. General square-bearing
 component coverage and the unrestricted grid theorem remain open.
+
+The [all-alignment one-square extension](docs/ALL_ALIGNMENT_SINGLE_SQUARE_BOUND.md)
+also permits a P-square and four straight arms in each component, with arbitrary
+alignment. Extending an arm by two adds one receiver tile, one selected vertex
+and two endpoints, so its charge is unchanged. Explicit parity base shapes
+give only zero or negative receiver charges in every phase. Hence coefficient
+one holds whenever every initial endpoint component contains at most one
+P-square, allowing branches and both matching directions. An exact deficit
+identity and a frozen equality example accompany the proof. New controls cover
+2,380 family cases and 22,217 small qualifying pairs; the general geometric
+extension remains written rather than a new Lean theorem.
 
 The [complete bipartite promotion theorem](docs/BIPARTITE_PROMOTION_COMPLETENESS.md)
 now proves the converse to the frozen certificate. In every finite bipartite

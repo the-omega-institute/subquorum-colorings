@@ -138,6 +138,17 @@ stated mixed class. Their negative units are counted once per whole component.
 This is a covered-class theorem, not the unrestricted grid formula.
 [Complete hypotheses, general proofs, exact deficit and verification scope](COMPONENT_RECEIVERS_AND_SQUARE_FREE_BOUND.md).
 
+**One-square component extension, with every alignment.** The coefficient-one
+bound also holds when each initial endpoint component has at most one P-square.
+In a terminal one-square component the four arms have a proved pinwheel form.
+Extending any arm by two leaves the whole receiver charge unchanged; explicit
+parity-only base shapes have nonpositive charges in all four alignment phases.
+Thus each whole receiver pays for its own incidences, including all saturated
+transfers. Pure rectangles and the prescribed capped components can be included
+as in the preceding theorem. This covers branched components but leaves general
+interacting multi-square shapes open.
+[All-length proof, exact phase table and sharp equality case](ALL_ALIGNMENT_SINGLE_SQUARE_BOUND.md).
+
 **Exact even-width orientation criterion.** For an even grid width `n`, let
 `c_i` be the row load before assigning vertical matching edges and let `k_i`
 be the number of vertical matching edges between rows `i` and `i+1`. There is
