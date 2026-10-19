@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19 18:24:34 UTC",
+  "execution_location": "Local Mac, explicitly authorized by user in this session",
+  "lean_version": "4.33.0",
+  "platform": "arm64-apple-darwin24.6.0",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure_free_percent": 39,
+    "actual_lean_lake_processes": [],
+    "process_check": "Compared basename of ps comm field to lean/lake, including bare names and full paths."
+  },
+  "source_files": [
+    "formal/SubQuorum/SealedStripCompensation.lean"
+  ],
+  "theorem_declarations": 6,
+  "compile_exit_codes": {
+    "SealedStripCompensation": 0,
+    "stdin_axiom_audit": 0
+  },
+  "axiom_audits": [
+    {
+      "theorem": "SubQuorum.SealedStripCompensation.unit_square_selection_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SealedStripCompensation.shifted_pair_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SealedStripCompensation.pair_sum_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SealedStripCompensation.sealed_strip_capacity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SealedStripCompensation.congestion_two_nonreuse",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SealedStripCompensation.reserved_strip_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "reproduction": [
+    "From formal/, create a task-owned empty cache directory containing SubQuorum/.",
+    "lean -o <cache>/SubQuorum/SealedStripCompensation.olean SubQuorum/SealedStripCompensation.lean",
+    "With LEAN_PATH=<cache>, import SubQuorum.SealedStripCompensation in lean --stdin and run #print axioms for the six fully qualified names above."
+  ],
+  "scope": "Six Std-only local and arithmetic statements: unit-square selection cap, all-length shifted-pair identity and cap, sealed-strip capacity, congestion-two non-reuse and reserved budget. The geometric maximal-run adapter, incidence double count, Hall allocation, planar crossing-owner lemma and universal coverage are not formalized by this file. Written proofs and physical controls have separate evidence. No sorry or native_decide; standard axioms explicitly listed. No manuscript or shared CI changes."
+}

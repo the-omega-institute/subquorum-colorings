@@ -32,6 +32,18 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [sealed-strip compensation theorem](docs/SEALED_STRIP_OVERLAP_AND_GLOBAL_COMPENSATION.md)
+handles overlapping horizontal and vertical maximal endpoint-free runs of any
+length. Blank outer columns or rows force at least two units of actual strip
+capacity. Since a physical tile belongs to at most two runs, every subset of
+strips has enough distinct capacity slots to allocate one unit per strip.
+Earlier credits are reserved first and eligibility uses residual capacity.
+A fully frozen example makes the one-unit guarantee sharp: two strips share
+the same capacity-two tile, so two units per strip would double-count it.
+144 physical cases and six mixed-component controls pass; six local Lean
+statements compile with explicit axiom audits. Enough-strip coverage for
+arbitrary representatives and the unrestricted grid bound remain open.
+
 The [remote-deficit frozen obstruction](docs/REMOTE_DEFICIT_FROZEN_OBSTRUCTION.md)
 has charge one, yet every endpoint-free physical tile sharing an edge or corner
 with its receiver has deficit zero. Its only positive resource is a blank tile

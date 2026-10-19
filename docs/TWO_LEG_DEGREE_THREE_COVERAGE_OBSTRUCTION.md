@@ -288,7 +288,11 @@ all-parameter construction, freezing, exact charge, local lemma and mixed
 ownership sound, but corrected the non-endpoint-tip sentence in Section 4
 and requested the omitted 22-endpoint dependency. The sentence is repaired
 above and the complete dependency is supplied in the follow-up review.
-This is not a final acceptance, and the later remote-deficit result is
-outside that review's scope.
+The repaired package subsequently received ACCEPT in task82a21aa0-7a36-4278-b14c-847541ce4b23
+at18:18:44.619UTC on19October, observed gpt_6/pro; the exact original
+stream matches the archived terminal response. Acceptance includes the
+all-parameter theorem, degree-sensitive guard/mixed ownership and old22
+four-rule counterexample. The later remote-deficit and sealed-strip results
+are outside its scope. Code and Lean execution retain separate receipts.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

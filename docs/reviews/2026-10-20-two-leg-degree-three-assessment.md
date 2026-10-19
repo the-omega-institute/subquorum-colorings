@@ -1,4 +1,4 @@
-# Two-leg theorem review: substantive proof checked, narrow revisions repaired
+# Two-leg theorem review: repaired package accepted
 
 20 October 2026 Singapore. Original task
 baa7b7d4-2c95-47b8-9539-a382a0d4a85c completed at 18:09:45 UTC on
@@ -41,10 +41,21 @@ audits, 39 parameter cases, 624 physical/padded images and mixed ownership
 controls retain independent execution receipts. The reviewer did not run
 them, and its reasoning is not represented as execution evidence.
 
-A follow-up has been submitted to the same conversation
-conv_82a24f8f89797e93, task82a21aa0-7a36-4278-b14c-847541ce4b23,
-original streaming execution 77181. It asks only for
-the repaired original theorem package, with no verdict yet. The subsequent
-remote-deficit obstruction, its interior completion and the three-tile
-compensation lemma are outside both the first and follow-up review scopes.
+The follow-up in the same conversation conv_82a24f8f89797e93,
+task82a21aa0-7a36-4278-b14c-847541ce4b23, completed ACCEPT at
+18:18:44.619 UTC on 19 October (20 October Singapore), worker
+ny743dhk0f-go-1, observed model gpt_6 with effort pro. The terminal response
+agrees exactly with the original stream from execution 77181 and is archived
+in `output/two-leg-degree-three-repair-review-response.json`.
+
+The reviewer accepts the repaired all-parameter two-leg construction,
+degree-sensitive guard, mixed ownership and old22 counterexample to
+unrestricted four-rule coverage. It explicitly checks the missing example's
+feasibility, all 22 freezing rows, original charge and three transfers,
+14 cap candidates and all four eligible selected corners. It requests no
+further mathematical revision to that package. This is written-proof review;
+the reviewer did not execute our checkers or Lean.
+
+The subsequent remote-deficit obstruction, interior completion, three-tile
+compensation lemma and sealed-strip theorem are outside both review scopes.
 No acceptance is inherited for those results.
