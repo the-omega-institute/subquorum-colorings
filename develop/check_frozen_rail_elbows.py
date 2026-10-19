@@ -11,7 +11,7 @@ from check_cooperative_promotion import neighbors, occupied_degrees
 from check_elbow_sources import elbow
 from check_owned_donors import endpoint_data
 from check_promotion_cores import frozen_certificate
-from check_residual_corridors import direct_check, transformed
+from check_residual_corridors import direct_check, graph_record, transformed
 from check_stepped_patch_isolation import embedded
 
 
@@ -148,6 +148,28 @@ def packing_controls():
     return records
 
 
+def nonterminal_exterior_controls():
+    records = []
+    for length, start in itertools.product((4, 6, 8, 16, 32, 64), (0, 1)):
+        current, certificate = rail_elbow(length+2, 4, [(start, length, sharp_word(length))])
+        receiver = {(row//2, column//2) for row, column in endpoint_data(current)[0]}
+        changed = *current[:3], current[3]+[((0, 0), (0, 1))]
+        assert direct_check(*changed) == direct_check(*current)+1
+        assert min(occupied_degrees(changed).values()) == 1
+        assert certificate['root'] <= frozen_certificate(changed)[0]
+        graph, _ = graph_record(*changed)
+        charge_twice = sum(graph['deg'][row*(changed[1]//2)+column]
+                           - 2*graph['r'][row*(changed[1]//2)+column]
+                           for row, column in receiver
+                           if graph['t'][row*(changed[1]//2)+column] < 2)
+        raw = 2*len(changed[2] & vertices_of(receiver))
+        raw += len(endpoint_data(changed)[0] & vertices_of(receiver))-4*len(receiver)
+        assert charge_twice == raw == 2*(1-2*int(start % 2 == 0))
+        records.append(dict(length=length, start=start, ambient_single_terminal=False,
+                            receiver_charge_twice=charge_twice))
+    return records
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -171,7 +193,8 @@ def main():
                   large_parameter_cases=len(large), large_parameters=large,
                   multiple_rail_cases=len(multiple), multiple_rails=multiple,
                   symmetry_images=sum(record['symmetry_images'] for record in large+multiple),
-                  packs=packing_controls(), positive_isolation_obstacle=dict(
+                  packs=packing_controls(), nonterminal_exteriors=nonterminal_exterior_controls(),
+                  positive_isolation_obstacle=dict(
                       shape=current[:2], selected=sorted(current[2]), matching=current[3],
                       prescribed_root=sorted(certificate['root']), donor=sorted(certificate['donor']),
                       charge=1, **exhaustive),

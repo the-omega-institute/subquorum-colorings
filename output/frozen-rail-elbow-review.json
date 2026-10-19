@@ -1,5 +1,5 @@
 {
-  "status": "DISPATCHED_NO_VERDICT",
+  "status": "COMPLETED_REVISE_REPAIRED_FOLLOWUP_PENDING",
   "created_at_utc": "2026-10-19T16:16:19.736+00:00",
   "task_id": "cebf5747-94ef-4a06-b9ad-0bdb6ed16a26",
   "conversation_id": "conv_d2e686fef1f9355a",
@@ -16,7 +16,14 @@
     "formal/SubQuorum/FrozenRailElbows.lean"
   ],
   "scope": "One all-parameter written-proof audit of frozen adjacent rails, whole-receiver charge, the extraction obstruction and non-reuse compensation. Code and Lean execution have separate receipts. Later execution-status paragraphs were not in the submitted mathematical attachment.",
-  "observed_model_switcher": null,
-  "observed_model_effort": null,
-  "verdict": null
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "verdict": "REVISE",
+  "response": "output/frozen-rail-elbow-review-response.json",
+  "repairs": "Explicit local closed-receiver proof preserves arbitrary feasible exterior without invoking terminal ownership. Partial end-tile argument restricted to even-start case. Odd-start endpoint at w-1 suggested by reviewer is impossible under even w and even interval length; not adopted.",
+  "followup_original_stream_exec_session": 47722,
+  "followup_task_id": "5ba5f6de-e82e-44fc-99f1-0f6ca39f4887",
+  "followup_status": "DISPATCHED_NO_VERDICT",
+  "followup_request_preserved_locally": "output/frozen-rail-elbow-repair-review-request.json",
+  "followup_stream_preserved_locally": "output/frozen-rail-elbow-repair-review-stream.sse"
 }

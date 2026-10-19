@@ -85,8 +85,30 @@ rails. The obstruction affects mixed bundles as well as single promotions.
 
 Assume now that H is the complete endpoint component. Let rho_H be its
 original corrected whole receiver charge, as defined in
-COMPONENT_RECEIVERS_AND_SQUARE_FREE_BOUND.md. Its actual matching is closed,
-so saturated-tile transfers cancel inside the whole receiver, giving
+COMPONENT_RECEIVERS_AND_SQUARE_FREE_BOUND.md. That note's generic ownership
+theorem assumes single-terminality. The following local closed-receiver
+argument proves the present identity without that ambient assumption.
+
+For a tile Q write t_Q,p_Q for its selected and endpoint counts, and
+e_Q=t_Q+p_Q/2-2 for its raw excess. Feasibility implies t_Q<=2. The local
+saturated-tile lemma of GRID_ABSORPTION_PROOF.md applies to every feasible
+pair: if t_Q=2, then p_Q<=1, and any endpoint there is matched to a deficient
+tile. Its corrected charge is zero. A deficient tile's corrected charge
+is e_Q+s_Q/2, where s_Q counts its endpoints matched to saturated tiles.
+
+Let U be any finite union of full physical tiles such that every endpoint
+in U has its actual mate in U. For each saturated endpoint in U its mate
+is in a deficient tile of U. Conversely every deficient endpoint of U
+counted by s_Q has its saturated mate in U. The matching therefore gives
+a bijection between these two counted sets. The raw excess of a saturated
+tile is exactly p_Q/2; thus its omitted raw excess equals the sum of the
+deficient corrections in U. Consequently
+
+    sum_(Q in U) rho(Q)=sum_(Q in U) e_Q.
+
+For our geometry the following exhaustive labels show that all endpoints
+in the receiver belong to H. Its prescribed matching is closed on H, so
+this local lemma applies. It gives
 
     rho_H=|T intersect V(receiver)|+|H|/2-2|receiver|.
 
@@ -106,13 +128,19 @@ If a_i is odd, the rail occupies ell_i complete physical column pairs,
 so its receiver has ell_i tiles. If a_i is even, its first and last
 columns occupy separate end tiles and its interior occupies ell_i-1
 full pairs, giving ell_i+1 tiles. The two unprescribed sites in each
-end tile are blank: its upper outside site is forced blank by the cap;
+partial end tile in this even-start case are blank: its upper outside site is forced blank by the cap;
 the lower outside site cannot be P by completeness, and cannot be T since
 it sees a rail endpoint and an underlying chamber endpoint. At the extreme
 columns -1,w, the original side support instead forces that lower site blank.
 There are no other selected sites in these rail tiles beyond the counted
 t_i. This is an exhaustive receiver-label argument, not a blank-exterior
 assumption.
+
+In the odd-start case each end tile instead has two rail endpoints, its
+selected upper cap and one upper blank forced by that cap. No lower outside
+site occurs. Since w is even, an odd start plus an even interval length
+ends at an even column, at most w-2; it cannot be clipped at w-1. These
+parity facts also cover intervals adjacent to either chamber boundary.
 
 Adjacent top selections would each see their own endpoint and each other,
 so are infeasible. Pairing the 2ell_i top sites in consecutive pairs gives
@@ -193,11 +221,15 @@ charge identity and bound, positive-charge rigidity, and the conditional
 aggregate ledger with its equality case. Its coordinate adapter, physical
 receiver classification, donor ownership and whole-grid application remain
 written. Execution receipts and independent-review status are recorded
-separately; this note has not yet received an independent written assessment.
+separately. The first independent assessment returned REVISE for a missing
+local ledger justification and end-tile wording; both are addressed in
+Section 3. A same-conversation repair assessment is pending.
 
 Executed controls pass for 464 independent top-selection words, 36 larger
 parameter cases through rail length 128, four multi-rail cases through eight
-rails, 320 symmetry images and three mixed-component packs. The concrete
+rails, 320 symmetry images and three mixed-component packs. Twelve extra
+fixtures have a nonterminal exterior matching edge and verify the local
+closed-receiver formula directly without a terminal ambient pair. The concrete
 11-edge example passes all 177147 oriented choices; only the empty choice
 is feasible. The physical receipt is output/frozen-rail-elbow-controls.json.
 
@@ -210,10 +242,15 @@ axioms occur. The task-owned reproducible formal cache was removed after
 confirming no actual lean/lake executable remained.
 
 A full written-proof audit with the complete elbow and ownership dependencies
-is dispatched as task cebf5747-94ef-4a06-b9ad-0bdb6ed16a26, conversation
-conv_d2e686fef1f9355a. Its original streaming handle remains live; no verdict
-or model observation is inferred from dispatch. Metadata is recorded separately
-in output/frozen-rail-elbow-review.json. Older phase-review quota rejections
+completed REVISE as task cebf5747-94ef-4a06-b9ad-0bdb6ed16a26, conversation
+conv_d2e686fef1f9355a, observed gpt_6/pro. The exact response is archived in
+output/frozen-rail-elbow-review-response.json. It confirms the freezing,
+charge formula and non-reuse ledger; the generic terminal-ownership citation
+is now replaced by the explicit local closed-receiver argument above.
+The parity wording is clarified without adopting the review's impossible
+odd-start endpoint at w-1. A new repair turn retains the original follow-up
+stream; no terminal ACCEPT has yet returned. Metadata and independent scope
+are in output/frozen-rail-elbow-review.json. Older phase-review quota rejections
 are different requests and are not restarted or counted as this assessment.
 
     python3 develop/check_frozen_rail_elbows.py --output output/frozen-rail-elbow-controls.json
