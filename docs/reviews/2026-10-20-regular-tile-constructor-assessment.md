@@ -29,3 +29,7 @@ all-length degree-four rotor chain, and explains why the remaining
 budgets follow with the complete selection lists. A new verdict remains
 separate. The subsequent minus-one joint classification and gate witness
 were outside the reviewed input.
+
+The correction follow-up subsequently completed ACCEPT. See the separate
+[assessment](2026-10-20-regular-tile-correction-accepted.md) for its scope
+and original-stream evidence. The earlier REVISE remains preserved above.

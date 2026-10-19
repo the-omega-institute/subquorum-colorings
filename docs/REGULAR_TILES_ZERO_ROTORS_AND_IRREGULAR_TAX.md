@@ -359,8 +359,12 @@ constructor and original construction note already had those lists; no
 constructor code change was needed. The fixed rotor barrier, regular-tile
 capacity and all-length rotor chain were accepted independently. The
 corrected definition has follow-up task b8cb8a7a-0a70-47e5-96b1-ac21292c0881,
-original stream execution 51837, currently live with no verdict. REVISE
-is not ACCEPT. Preserve this task and its original stream.
+original stream execution 51837, completed ACCEPT at
+2026-10-19T22:44:21.181UTC, observed model gpt_6/pro. The original stream
+completed with DONE and exactly matches the terminal response. The earlier
+REVISE remains the verdict on the incomplete submitted context. The
+[follow-up assessment](reviews/2026-10-20-regular-tile-correction-accepted.md)
+records the accepted scope; computational and Lean receipts remain separate.
 See output/regular-tile-compensation-file-review-live.json and the
 separate review assessment. The newer
 MINUS_ONE_JOINT_WITNESS_COMPENSATION.md is outside this review's input.
