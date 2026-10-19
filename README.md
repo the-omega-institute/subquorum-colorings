@@ -51,6 +51,14 @@ and full-grid results are not yet Lean formalized. The conditional band and
 endpoint compensation lemmas below now have Lean proofs; the unrestricted
 mixed-direction grid coloring formula remains open.
 
+The [pressured-collar theorem](docs/PRESSURED_COLLAR_COMPENSATION.md) extends
+straight shared receivers to arbitrary bent paths and branching tile trees
+under explicit occupied-face and blank-cap assumptions. Each distinct leaf
+contributes one unit of charge compensation, with the complete boundary
+parity correction and a single-use aggregate source budget. Six standalone
+Lean declarations and physical matching controls cover the local/counting
+interfaces; arbitrary overlapping or thick receivers remain open.
+
 The [long-corridor follow-up](docs/RESIDUAL_CORRIDORS.md) constructs fork-free
 positive residual components of arbitrary length and proves an objective-preserving
 replacement when the adjacent band is blank. It also records a bounded search

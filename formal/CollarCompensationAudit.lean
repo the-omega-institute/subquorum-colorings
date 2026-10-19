@@ -1,0 +1,8 @@
+import SubQuorum.CollarCompensation
+
+#print axioms SubQuorum.CollarCompensation.pressured_tile
+#print axioms SubQuorum.CollarCompensation.terminal_tile
+#print axioms SubQuorum.CollarCompensation.disjoint_tile_surplus
+#print axioms SubQuorum.CollarCompensation.collar_parity_charge
+#print axioms SubQuorum.CollarCompensation.aggregate_source_compensation
+#print axioms SubQuorum.CollarCompensation.compensated_core_nonpositive

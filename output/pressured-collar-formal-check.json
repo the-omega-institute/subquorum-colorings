@@ -1,0 +1,38 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checked_at": "2026-10-19T03:08:10.095005+00:00",
+  "active_lean_lake_before": [],
+  "memory_before": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3936.\nPages active:                                 260560.\nPages inactive:                               253867.\nPages speculative:                              5671.\nPages throttled:                                   0.\nPages wired down:                             234247.\nPages purgeable:                                9997.\n\"Translation faults\":                    15906282489.\nPages copy-on-write:                       973988810.\nPages zero filled:                        6518202421.\nPages reactivated:                        2984377884.\nPages purged:                              137835720.\nFile-backed pages:                            308261.\nAnonymous pages:                              211837.\nPages stored in compressor:                  1669460.\nPages occupied by compressor:                 248651.\nDecompressions:                           2404107914.\nCompressions:                             2843061382.\nPageins:                                  4374970325.\nPageouts:                                   12186991.\nSwapins:                                    25481954.\nSwapouts:                                   31970716.\n",
+  "peak_child_rss": 855212032,
+  "peak_child_rss_unit": "bytes on macOS; KiB on Linux",
+  "checks": [
+    {
+      "module": "SubQuorum/CollarCompensation.lean",
+      "seconds": 4.464,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "CollarCompensationAudit.lean",
+      "seconds": 0.406,
+      "stdout": "'SubQuorum.CollarCompensation.pressured_tile' does not depend on any axioms\n'SubQuorum.CollarCompensation.terminal_tile' depends on axioms: [propext]\n'SubQuorum.CollarCompensation.disjoint_tile_surplus' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.collar_parity_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.aggregate_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.compensated_core_nonpositive' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "audited_declarations": [
+    "SubQuorum.CollarCompensation.pressured_tile",
+    "SubQuorum.CollarCompensation.terminal_tile",
+    "SubQuorum.CollarCompensation.disjoint_tile_surplus",
+    "SubQuorum.CollarCompensation.collar_parity_charge",
+    "SubQuorum.CollarCompensation.aggregate_source_compensation",
+    "SubQuorum.CollarCompensation.compensated_core_nonpositive"
+  ],
+  "sha256": {
+    "formal/SubQuorum/CollarCompensation.lean": "d47dfc9778320a50a5b011606de904a7bffe3e3a1441891074660999fbaf6e3c",
+    "formal/CollarCompensationAudit.lean": "7dc458b2f55ed08a9c553af6d123b33272f7310d1c3e51598a24e8d92e461def"
+  },
+  "scope": "Finite local tile implications, arbitrary-list surplus, conditional parity/charge/source counts; geometric and regional-ledger adapters have written proofs."
+}
