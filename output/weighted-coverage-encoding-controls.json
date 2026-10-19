@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "z3_version": "5.3.1",
-  "physical_symbolic_cases": 24,
+  "physical_symbolic_cases": 80,
   "controls": [
     {
       "name": "charge_two",
@@ -11,6 +11,18 @@
         false
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -21,6 +33,18 @@
         true
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -31,6 +55,18 @@
         false
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -41,6 +77,18 @@
         true
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -51,6 +99,18 @@
         false
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -61,6 +121,18 @@
         true
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -71,6 +143,18 @@
         false
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -81,6 +165,18 @@
         true
       ],
       "actual_capacity": 5,
+      "include_endpoint_guard": false,
+      "expected_capacity": 5
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 5,
+      "include_endpoint_guard": true,
       "expected_capacity": 5
     },
     {
@@ -91,7 +187,19 @@
         false
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -101,7 +209,19 @@
         true
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -111,7 +231,19 @@
         false
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -121,7 +253,19 @@
         true
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -131,7 +275,19 @@
         false
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -141,7 +297,19 @@
         true
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -151,7 +319,19 @@
         false
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
     },
     {
       "name": "corner_free",
@@ -161,9 +341,21 @@
         true
       ],
       "actual_capacity": 0,
+      "include_endpoint_guard": false,
       "expected_capacity": 0
     },
     {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 1,
+      "include_endpoint_guard": true,
+      "expected_capacity": 1
+    },
+    {
       "name": "selected_guard",
       "symmetry": [
         false,
@@ -171,7 +363,19 @@
         false
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -181,7 +385,19 @@
         true
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -191,7 +407,19 @@
         false
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -201,7 +429,19 @@
         true
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -211,7 +451,19 @@
         false
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -221,7 +473,19 @@
         true
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -231,7 +495,19 @@
         false
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
     },
     {
       "name": "selected_guard",
@@ -241,8 +517,372 @@
         true
       ],
       "actual_capacity": 1,
+      "include_endpoint_guard": false,
       "expected_capacity": 1
+    },
+    {
+      "name": "selected_guard",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 2,
+      "include_endpoint_guard": true,
+      "expected_capacity": 2
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "three_rule_obstruction",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": false,
+      "expected_capacity": 0
+    },
+    {
+      "name": "degree_three_two_leg",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "actual_capacity": 0,
+      "include_endpoint_guard": true,
+      "expected_capacity": 0
     }
   ],
-  "scope": "Independent physical witness scanner compared to simplified symbolic expressions for both original rules and every physical symmetry. No universal coverage conclusion follows from these fixed controls."
+  "scope": "Independent physical witness scanner compared to simplified symbolic expressions for both original rules and the optional same-component endpoint guard in connected fixtures and every physical symmetry. No universal coverage conclusion follows from these fixed controls."
 }

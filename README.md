@@ -32,6 +32,17 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [two-leg degree-three obstruction](docs/TWO_LEG_DEGREE_THREE_COVERAGE_OBSTRUCTION.md)
+refutes three-rule corner coverage even when every endpoint has occupied
+degree exactly three. A written proof covers all even bar widths at least six
+and independently chosen even leg heights at least four: every member is
+fully frozen, has corrected charge one and zero old-rule capacity. A new
+degree-sensitive guard pays the charge without reuse. 39 parameter cases and
+624 physical/padded images pass; two local Lean statements verify the local
+guard and receiver arithmetic, with the full geometry and ownership written.
+The previous 22-endpoint example also defeats unrestricted four-rule coverage;
+four-rule coverage within occupied degree three and the grid target remain open.
+
 The [three-rule coverage obstruction](docs/THREE_RULE_FROZEN_COVERAGE_OBSTRUCTION.md)
 is fully frozen with charge one and no donor of any of the three local corner
 types. Its22-step certificate and original corrected charge pass independent
@@ -46,8 +57,8 @@ bundle. A new same-component two-endpoint guard pays the missing unit; its
 local lemma and compatibility with both old ownership rules extend the weighted
 criterion without donor reuse. The finite graph/charge proof and local guard
 lemma pass35new local Lean declarations. The separate22endpoint example
-refutes general three-rule coverage; its occupied-degree-three restriction
-remains open.
+refutes general three-rule coverage; the newer two-leg family also refutes
+its occupied-degree-three restriction.
 
 The [charge-two frozen receiver](docs/CHARGE_TWO_FROZEN_RECEIVER.md) refutes
 the proposed universal receiver ceiling rho_H<=1. Its complete 14-by-10

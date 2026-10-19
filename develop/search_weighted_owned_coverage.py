@@ -1,4 +1,4 @@
-"""Discover frozen receivers not covered by distinct capped and guarded donors."""
+"""Discover frozen receivers not covered by distinct physical corner donors."""
 
 import argparse
 import itertools
@@ -8,7 +8,7 @@ import time
 
 import z3
 
-from check_component_receivers import vertices_of
+from check_component_receivers import endpoint_components, vertices_of
 from check_cooperative_promotion import neighbors
 from check_owned_donors import endpoint_data
 from owned_corner_witnesses import physical_donors
@@ -20,7 +20,7 @@ if not __debug__:
     raise RuntimeError('Run without -O: verification uses assertions.')
 
 
-def symbolic_donors(rows, columns, selected, endpoints):
+def symbolic_donors(rows, columns, selected, endpoints, include_endpoint_guard=False):
     domain = set(selected)
     capacities = []
     donated = {}
@@ -38,6 +38,10 @@ def symbolic_donors(rows, columns, selected, endpoints):
             anchors = (set(neighbors(chosen))-cells) & domain
             opposite = tuple(4*coordinate+1-value for coordinate, value in zip(tile, chosen))
             guards = (set(neighbors(opposite))-cells) & domain
+            if include_endpoint_guard and len(guards) == 2:
+                patterns.append(z3.And(selected[chosen],
+                    z3.Or([endpoints[point] for point in sorted(anchors)]),
+                    *[endpoints[point] for point in sorted(guards)]))
             for guard in sorted(guards):
                 supports = (set(neighbors(guard))-{opposite}) & domain
                 patterns.append(z3.And(selected[chosen],
@@ -54,25 +58,33 @@ def fixture_from_file(path):
             [tuple(tuple(point) for point in edge) for edge in source['matching']])
 
 
-def fixed_expression_control(current):
+def fixed_expression_control(current, include_endpoint_guard=False):
     rows, columns, actual_selected, _ = current
     actual_endpoints = endpoint_data(current)[0]
     domain = set(itertools.product(range(rows), range(columns)))
     selected = {point: z3.BoolVal(point in actual_selected) for point in domain}
     endpoints = {point: z3.BoolVal(point in actual_endpoints) for point in domain}
-    donated, capacity = symbolic_donors(rows, columns, selected, endpoints)
-    records = physical_donors(current)
+    if include_endpoint_guard:
+        assert len(endpoint_components(current)) == 1
+    donated, capacity = symbolic_donors(rows, columns, selected, endpoints, include_endpoint_guard)
+    records = physical_donors(current, include_endpoint_guard)
     assert {tile for tile, expression in donated.items() if z3.is_true(z3.simplify(expression))} == {
         tuple(record['tile']) for record in records}
     assert z3.simplify(capacity).as_long() == sum(record['deficit'] for record in records)
     return records
 
 
-def search(rows, columns, root, timeout, fixed=None):
+def search(rows, columns, root, timeout, fixed=None, include_endpoint_guard=False,
+           occupied_degree_three=False):
     solver, selected, paired, matching, rank, charge = encoding(
         rows, columns, 1, timeout, root, require_frozen=True)
-    donated, capacity = symbolic_donors(rows, columns, selected, paired)
+    donated, capacity = symbolic_donors(rows, columns, selected, paired, include_endpoint_guard)
     solver.add(capacity < charge)
+    if occupied_degree_three:
+        for point in sorted(paired):
+            adjacent = set(neighbors(point)) & set(paired)
+            solver.add(z3.Implies(paired[point], count(
+                z3.Or(selected[other], paired[other]) for other in adjacent) == 3))
     if fixed is not None:
         endpoints = endpoint_data(fixed)[0]
         edges = {tuple(sorted(edge)) for edge in fixed[3]}
@@ -84,12 +96,16 @@ def search(rows, columns, root, timeout, fixed=None):
     status = solver.check()
     report = dict(status=str(status), shape=[rows, columns], root=root,
                   fixed_endpoints_and_matching=fixed is not None,
+                  include_endpoint_guard=include_endpoint_guard,
+                  occupied_degree_three=occupied_degree_three,
                   seconds=round(time.monotonic()-started, 3), timeout_seconds=timeout,
                   z3_version=z3.get_version_string(),
                   scope='Discovery in one even rectangle with one connected endpoint component '
-                        'and strict acyclic freeze ranks. Both capped and guarded rules use '
+                        'and strict acyclic freeze ranks. All enabled corner rules use '
                         'all orientations and actual physical tile identities. Optional fixed '
                         'endpoints and matching leave only selected labels free. '
+                        'The optional endpoint guard uses the single connected component; '
+                        'optional occupied degree three counts both selected and endpoint neighbors. '
                         'Unknown is not unsat; finite unsat is not a general coverage proof.')
     if status == z3.sat:
         model = solver.model()
@@ -99,7 +115,11 @@ def search(rows, columns, root, timeout, fixed=None):
                            if z3.is_true(model.eval(variable))]
         current = rows, columns, actual_selected, actual_matching
         checked = verify(current)
-        donors = fixed_expression_control(current)
+        donors = fixed_expression_control(current, include_endpoint_guard)
+        if occupied_degree_three:
+            occupied = actual_selected | endpoint_data(current)[0]
+            assert all(len(set(neighbors(point)) & occupied) == 3
+                       for point in endpoint_data(current)[0])
         actual_capacity = sum(record['deficit'] for record in donors)
         assert checked['receiver_charge'] == model.eval(charge).as_long()
         assert actual_capacity == model.eval(capacity).as_long() < checked['receiver_charge']
@@ -119,13 +139,16 @@ def main():
     parser.add_argument('--columns', type=int, default=10)
     parser.add_argument('--root', type=int, nargs=2, default=(2, 2))
     parser.add_argument('--fixed-fixture', type=Path)
+    parser.add_argument('--include-endpoint-guard', action='store_true')
+    parser.add_argument('--occupied-degree-three', action='store_true')
     parser.add_argument('--timeout', type=int, default=60)
     parser.add_argument('--output', type=Path, required=True)
     arguments = parser.parse_args()
     fixed = fixture_from_file(arguments.fixed_fixture) if arguments.fixed_fixture else None
     rows, columns = fixed[:2] if fixed else (arguments.rows, arguments.columns)
     root = min(endpoint_data(fixed)[0]) if fixed else tuple(arguments.root)
-    report = search(rows, columns, root, arguments.timeout, fixed)
+    report = search(rows, columns, root, arguments.timeout, fixed,
+                    arguments.include_endpoint_guard, arguments.occupied_degree_three)
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps({key: value for key, value in report.items()

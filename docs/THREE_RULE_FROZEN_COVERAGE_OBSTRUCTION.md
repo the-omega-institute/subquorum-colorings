@@ -182,7 +182,8 @@ The current distinction is:
 - universal coverage by the two old rules: false even in occupied degree3;
 - universal coverage by the enlarged three rules: false in general here;
 - the proved conditional weighted compensation criteria: still valid;
-- coverage restricted to all occupied-degree3networks: still unresolved;
+- coverage restricted to all occupied-degree3networks: also false by the
+  newer [unbounded two-leg family](TWO_LEG_DEGREE_THREE_COVERAGE_OBSTRUCTION.md);
 - the general grid bound and triple equality: still unresolved.
 
 The next proof must account for original physical deficits beyond these
