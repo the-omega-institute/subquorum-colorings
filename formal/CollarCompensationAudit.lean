@@ -15,6 +15,7 @@ import SubQuorum.BentReceiverCompensation
 import SubQuorum.LongBentTerminalStrips
 import SubQuorum.CombEndFlux
 import SubQuorum.ParallelCombFlux
+import SubQuorum.OrthogonalMouthFlux
 
 #print axioms SubQuorum.CollarCompensation.pressured_tile
 #print axioms SubQuorum.CollarCompensation.terminal_tile
@@ -106,3 +107,8 @@ import SubQuorum.ParallelCombFlux
 #print axioms SubQuorum.ParallelCombFlux.last_shifted_tile_counts
 #print axioms SubQuorum.ParallelCombFlux.middle_shifted_tile_counts
 #print axioms SubQuorum.ParallelCombFlux.whole_parallel_comb_balance
+#print axioms SubQuorum.OrthogonalMouthFlux.chamber_flank_capacity
+#print axioms SubQuorum.OrthogonalMouthFlux.arm_cap_selected_count
+#print axioms SubQuorum.OrthogonalMouthFlux.crossing_tile_loss_bounds
+#print axioms SubQuorum.OrthogonalMouthFlux.crossing_loss_sum_bounds
+#print axioms SubQuorum.OrthogonalMouthFlux.crossing_boundary_bound

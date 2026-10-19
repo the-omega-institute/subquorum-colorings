@@ -51,6 +51,7 @@ def main():
                    'SubQuorum/TransverseCombMouths.lean',
                    'SubQuorum/CombEndFlux.lean',
                    'SubQuorum/ParallelCombFlux.lean',
+                   'SubQuorum/OrthogonalMouthFlux.lean',
                    'CollarCompensationAudit.lean'):
         command = [str(executable), module]
         if not module.endswith('Audit.lean'):
@@ -67,7 +68,7 @@ def main():
                            stdout=result.stdout, stderr=result.stderr, exit_code=result.returncode))
     declarations = re.findall(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)",
                               checks[-1]['stdout'])
-    assert len(declarations) == 90
+    assert len(declarations) == 95
     allowed = {'propext', 'Classical.choice', 'Quot.sound'}
     assert all({name.strip() for name in axioms.split(',') if name.strip()} <= allowed
                for _, axioms in declarations)
@@ -79,7 +80,7 @@ def main():
                   audited_declarations=[name for name, _ in declarations],
                   sha256={str(Path('formal')/record['module']): hashlib.sha256(
                       (root/'formal'/record['module']).read_bytes()).hexdigest() for record in checks},
-                  scope='Previous 85 scoped declarations plus four exact physical/shifted tile-count formulas for an explicitly labeled horizontal comb of arbitrary positive even endpoint length, and its unconditional finite-sum raw receiver neutrality in both phases. Global source/comb contact geometry, coalesced interval/source-tip counts, normalization adapters and the mixed-contact initial-pair theorem remain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification, unmatched exterior compensation or universal source coverage is claimed.')
+                  scope='Previous 90 scoped declarations plus actual local feasible-label chamber-flank capacity and arm-cap selected counts; crossing-loss bounds for an arbitrary finite list of declared physical crossing types; and the resulting conditional initial-objective bound from the exact ledger. Global source contact classification, strip/union adapters, coalesced tip cardinalities and the arbitrary-orientation crossing-loss theorem remain written proofs. Earlier geometric scope limitations still apply. No full geometric Lean verification, unmatched exterior compensation or universal source coverage is claimed.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(dict(status=report['status'], audited_declarations=len(declarations))), flush=True)
