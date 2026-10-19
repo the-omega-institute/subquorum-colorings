@@ -1,0 +1,46 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-19T00:59:51.370732+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3719.\nPages active:                                 257455.\nPages inactive:                               235141.\nPages speculative:                             21468.\nPages throttled:                                   0.\nPages wired down:                             250087.\nPages purgeable:                                 362.\n\"Translation faults\":                    15737549729.\nPages copy-on-write:                       962245542.\nPages zero filled:                        6460235348.\nPages reactivated:                        2944269004.\nPages purged:                              136969932.\nFile-backed pages:                            313229.\nAnonymous pages:                              200835.\nPages stored in compressor:                  1590977.\nPages occupied by compressor:                 238992.\nDecompressions:                           2372090694.\nCompressions:                             2803614184.\nPageins:                                  4205260538.\nPageouts:                                   11768420.\nSwapins:                                    25348573.\nSwapouts:                                   31763354.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 3.727,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.442,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/PrivateClauses.lean",
+      "seconds": 0.451,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/PortClauseOwnership.lean",
+      "seconds": 0.366,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingPortClauseOwnershipAudit.lean",
+      "seconds": 0.363,
+      "stdout": "'StarForming.PortClauseOwnership.external_neighbor_in_support' does not depend on any axioms\n'StarForming.PortClauseOwnership.outside_neighbors_unique' does not depend on any axioms\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 693682176,
+  "scope": "Two general graph-level statements. Every external neighbor of a port belongs to any closed port clause or oriented clause on an edge from that port to an internal vertex. If such a clause is private, all selected external neighbors of the port equal its owner, preventing different outside owners from sharing that port. Fano geometry, the eight-selection directional classification, the two-owner six-vertex cap and joint loss accounting retain written proofs and are not claimed fully formalized."
+}

@@ -30,6 +30,15 @@ The [research agenda](docs/RESEARCH.md) connects current results to the next
 mathematical targets. The manuscript follows the same progression from the
 hypercube solution to these geometric and structural questions.
 
+The latest [Heawood transfer theorem](docs/SATURATED_HEAWOOD_TRANSFER.md)
+proves that two distinct outside owners of internal private clauses cost
+two block vertices. A zero-loss owner forces one of eight directional
+patterns, including an opposite selected port with two selected internal
+neighbors. Three actual minimal ambient examples show sharpness and why
+bare-port and ownership losses cannot be added. General Fano proofs,
+independent controls and two graph-level Lean ownership lemmas are provided;
+the full long-core upper bound and rectangular-grid bridge remain open.
+
 The related [star-forming project](docs/EXACT_STAR_FORMING_COMPOSITION.md)
 has a separate composition theorem: joining r ten-vertex copies through
 arbitrary b1-to-a1 interfaces gives beta_2=5r and SF_2=6r. Cyclic interfaces

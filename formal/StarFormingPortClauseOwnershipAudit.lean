@@ -1,0 +1,4 @@
+import StarForming.PortClauseOwnership
+
+#print axioms StarForming.PortClauseOwnership.external_neighbor_in_support
+#print axioms StarForming.PortClauseOwnership.outside_neighbors_unique

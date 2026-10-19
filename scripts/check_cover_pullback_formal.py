@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -42,7 +42,8 @@ def main():
                     'long-core-upper': 'build/long-core-upper-formal',
                     'private-clauses': 'build/private-clauses-formal',
                     'bare-ports': 'build/bare-ports-formal',
-                    'boundary-loss': 'build/boundary-loss-formal'}[arguments.audit]
+                    'boundary-loss': 'build/boundary-loss-formal',
+                    'port-ownership': 'build/port-clause-ownership-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -76,6 +77,9 @@ def main():
     elif arguments.audit == 'boundary-loss':
         modules += ('StarForming/PrivateClauses.lean', 'StarForming/BoundaryLoss.lean',
                     'StarFormingBoundaryLossAudit.lean')
+    elif arguments.audit == 'port-ownership':
+        modules += ('StarForming/PrivateClauses.lean', 'StarForming/PortClauseOwnership.lean',
+                    'StarFormingPortClauseOwnershipAudit.lean')
     else:
         modules += ('StarForming/PrivateClauses.lean', 'StarFormingPrivateClausesAudit.lean')
     for module in modules:
@@ -96,7 +100,8 @@ def main():
                               checks[-1]['stdout'])
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
-                'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2}
+                'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2,
+                'port-ownership': 2}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -203,6 +208,15 @@ def main():
                             'hypothesis. Finite cardinal injection, Heawood block accounting '
                             'and any long-core partial private-owner cap are written '
                             'deductions or separate open questions, not proved here.')
+    if arguments.audit == 'port-ownership':
+        receipt['scope'] = ('Two general graph-level statements. Every external neighbor of a '
+                            'port belongs to any closed port clause or oriented clause on an '
+                            'edge from that port to an internal vertex. If such a clause is '
+                            'private, all selected external neighbors of the port equal its '
+                            'owner, preventing different outside owners from sharing that '
+                            'port. Fano geometry, the eight-selection directional classification, '
+                            'the two-owner six-vertex cap and joint loss accounting retain '
+                            'written proofs and are not claimed fully formalized.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

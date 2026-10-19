@@ -266,6 +266,13 @@ ownership or a local potential preventing repeated use. The present
 results neither establish that theorem nor refute its equivalent
 target |S|<=36k.
 
+The subsequent [saturated transfer theorem](SATURATED_HEAWOOD_TRANSFER.md)
+proves a two-owner loss of two and classifies zero-loss imports into
+eight directional templates. It also supplies an actual minimal ambient
+example where bare-port and import loss coincide, ruling out adding
+these certificates. The next global step must track directional signals,
+actual deficits and the remaining core evidence together.
+
 Reproduction:
 
     python3 scripts/check_boundary_loss.py --output output/boundary-loss-controls.json

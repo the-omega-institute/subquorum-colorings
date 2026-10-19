@@ -1,0 +1,383 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local": {
+    "totals": {
+      "subsets": 16384,
+      "subsets_without_robust_nonport": 8696,
+      "two_owner_states": 940,
+      "saturated_directional_states": 16
+    },
+    "templates": [
+      {
+        "omitted_port": 8,
+        "signal_port": 0,
+        "selected": [
+          0,
+          1,
+          2,
+          4,
+          7,
+          10,
+          12,
+          13
+        ],
+        "isolated_neighbor": 1,
+        "second_isolate": 13
+      },
+      {
+        "omitted_port": 8,
+        "signal_port": 0,
+        "selected": [
+          0,
+          1,
+          3,
+          6,
+          7,
+          10,
+          12,
+          13
+        ],
+        "isolated_neighbor": 1,
+        "second_isolate": 12
+      },
+      {
+        "omitted_port": 8,
+        "signal_port": 0,
+        "selected": [
+          0,
+          2,
+          5,
+          6,
+          7,
+          9,
+          10,
+          11
+        ],
+        "isolated_neighbor": 5,
+        "second_isolate": 11
+      },
+      {
+        "omitted_port": 8,
+        "signal_port": 0,
+        "selected": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          9,
+          10,
+          11
+        ],
+        "isolated_neighbor": 5,
+        "second_isolate": 9
+      },
+      {
+        "omitted_port": 0,
+        "signal_port": 8,
+        "selected": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8,
+          9,
+          12
+        ],
+        "isolated_neighbor": 7,
+        "second_isolate": 3
+      },
+      {
+        "omitted_port": 0,
+        "signal_port": 8,
+        "selected": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          8,
+          11,
+          13
+        ],
+        "isolated_neighbor": 7,
+        "second_isolate": 2
+      },
+      {
+        "omitted_port": 0,
+        "signal_port": 8,
+        "selected": [
+          1,
+          4,
+          5,
+          6,
+          8,
+          10,
+          11,
+          12
+        ],
+        "isolated_neighbor": 10,
+        "second_isolate": 6
+      },
+      {
+        "omitted_port": 0,
+        "signal_port": 8,
+        "selected": [
+          1,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          13
+        ],
+        "isolated_neighbor": 10,
+        "second_isolate": 4
+      }
+    ],
+    "maxima_by_bare_ports_and_external_owners": [
+      {
+        "bare": 0,
+        "owners": 0,
+        "maximum": 8
+      },
+      {
+        "bare": 0,
+        "owners": 1,
+        "maximum": 8
+      },
+      {
+        "bare": 0,
+        "owners": 2,
+        "maximum": 6
+      },
+      {
+        "bare": 1,
+        "owners": 0,
+        "maximum": 7
+      },
+      {
+        "bare": 1,
+        "owners": 1,
+        "maximum": 7
+      },
+      {
+        "bare": 1,
+        "owners": 2,
+        "maximum": 6
+      },
+      {
+        "bare": 2,
+        "owners": 0,
+        "maximum": 6
+      },
+      {
+        "bare": 2,
+        "owners": 1,
+        "maximum": 6
+      },
+      {
+        "bare": 2,
+        "owners": 2,
+        "maximum": 6
+      }
+    ],
+    "scope": "All local subsets and four selected-parent patterns under the necessary absence of robust non-port deletions. These controls verify the general written incidence proofs; they do not assert every state extends to an ambient minimal set."
+  },
+  "paired_empty_clauses": {
+    "clause_pairs": 25,
+    "seven_selection_robust_checks": 16
+  },
+  "ambient_examples": [
+    {
+      "name": "free_directional_import",
+      "order": 16,
+      "extra_edges": [
+        [
+          0,
+          14
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "selected": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11,
+        15
+      ],
+      "block_selected": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10,
+        11
+      ],
+      "bare_ports": 0,
+      "external_owners": {
+        "15": [
+          {
+            "port": 8,
+            "clause": [
+              "B",
+              8,
+              5
+            ]
+          }
+        ]
+      },
+      "deficit": 0,
+      "literal_deletion_checks": 9,
+      "deletion_failures": {
+        "0": 14,
+        "3": 13,
+        "4": 12,
+        "5": 5,
+        "7": 6,
+        "9": 9,
+        "10": 2,
+        "11": 1,
+        "15": 8
+      }
+    },
+    {
+      "name": "two_nonbare_imports_cost_two",
+      "order": 16,
+      "extra_edges": [
+        [
+          0,
+          14
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "selected": [
+        0,
+        2,
+        3,
+        5,
+        9,
+        11,
+        14,
+        15
+      ],
+      "block_selected": [
+        0,
+        2,
+        3,
+        5,
+        9,
+        11
+      ],
+      "bare_ports": 0,
+      "external_owners": {
+        "14": [
+          {
+            "port": 0,
+            "clause": [
+              "B",
+              7,
+              0
+            ]
+          }
+        ],
+        "15": [
+          {
+            "port": 8,
+            "clause": [
+              "B",
+              8,
+              5
+            ]
+          }
+        ]
+      },
+      "deficit": 2,
+      "literal_deletion_checks": 8,
+      "deletion_failures": {
+        "0": 0,
+        "2": 2,
+        "3": 3,
+        "5": 5,
+        "9": 6,
+        "11": 4,
+        "14": 7,
+        "15": 8
+      }
+    },
+    {
+      "name": "bare_and_import_share_one_loss",
+      "order": 16,
+      "extra_edges": [
+        [
+          0,
+          14
+        ],
+        [
+          14,
+          15
+        ]
+      ],
+      "selected": [
+        1,
+        2,
+        4,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "block_selected": [
+        1,
+        2,
+        4,
+        9,
+        11,
+        12,
+        13
+      ],
+      "bare_ports": 1,
+      "external_owners": {
+        "14": [
+          {
+            "port": 0,
+            "clause": [
+              "A",
+              0
+            ]
+          }
+        ]
+      },
+      "deficit": 1,
+      "literal_deletion_checks": 9,
+      "deletion_failures": {
+        "1": 8,
+        "2": 10,
+        "4": 7,
+        "9": 6,
+        "11": 3,
+        "12": 5,
+        "13": 13,
+        "14": 0,
+        "15": 0
+      }
+    }
+  ],
+  "scope": "General written Fano proofs classify saturated external private evidence and prove that two different outside owners force at most six block selections. Finite tests check those proofs and three actual minimal ambient sets. General SF(L_k)=36k and the grid bridge remain open."
+}
