@@ -2,10 +2,16 @@
   "task_id": "c9c582db-aa9b-440a-8334-fcb958d84650",
   "conversation_id": "conv_7bbc210a3b3c3b09",
   "created_at": "2026-10-19T07:14:49.713+00:00",
-  "status": "dispatched",
+  "status": "completed",
   "terminal_session": 65678,
   "request_local": "output/capped-ladder-review-request.json",
   "stream_local": "output/capped-ladder-review-stream.sse",
   "scope": "Independent written-proof review of the all-width capped-ladder family, two-step freezing, forced exact original receiver charge under arbitrary feasible exteriors, and automatic cross-component packing/conditional source compensation. Not execution review of Lean or code. A subsequent explicit display of the existing t,p,b,h,s,r,d charge definitions clarifies the same ledger without changing the claim.",
-  "verdict": null
+  "verdict": "REVISE: supply original charge definitions and global objective identity; geometry, freezing and packing confirmed",
+  "completed_at": "2026-10-19T07:24:57.195+00:00",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "response": "output/capped-ladder-review-response.json",
+  "assessment": "docs/reviews/2026-10-19-capped-ladder-assessment.md",
+  "repair_status": "Definitions and corrected full-ledger objective identity independently checked and supplied; boundary and arbitrary-exterior scope clarified. No subsequent ACCEPT or implementation audit claimed."
 }

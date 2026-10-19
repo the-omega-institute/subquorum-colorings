@@ -25,7 +25,8 @@ Take precisely these six selected supports:
        (out(q),w),(q,w+1),(out(1-q),w-1)}.
 
 Translation by (2,2) embeds the configuration in a rectangle of height six
-and even width W=w+4 for even w, W=w+5 for odd w, with blank padding.
+and even width W=w+4 for even w, W=w+5 for odd w. Unlisted sites are blank;
+the axial supports can lie on the left and right ambient boundaries.
 It preserves the even alignment of the central ladder.
 The endpoint graph has one complete component H. Every selected support
 has exactly its intended endpoint neighbor and no selected neighbor: the
@@ -73,9 +74,11 @@ J(r,c)=(1-r,w-1-c). This map preserves T and the matching and exchanges
 the two grid colors in both cases. It gives a second wave containing
 exactly all even-color endpoints. The waves are disjoint and exhaust H.
 Therefore every endpoint is universally frozen. No nonempty feasible
-promotion bundle exists, even with mixed orientations. Adding other
-endpoint components cannot help; the same permanent-neighbor certificate
-works for global bundles.
+promotion bundle exists in the displayed baseline, even with mixed orientations.
+In arbitrary feasible exterior completions retaining H, its matching and
+the six supports, no global bundle can use an edge of H. Other components
+can still admit their own promotions. The reflection need preserve only
+the prescribed matching-and-support pattern, not the completed exterior.
 
 The displayed baseline has no matching edges outside H, so no sequence
 of nonempty promotions can even start. Thus square-eliminating
@@ -92,10 +95,29 @@ floor(w/2) central full-P tiles and two end tiles.
 
 For clarity, t,p,b count selected, endpoint and blank sites in a tile;
 h counts its internal matching edges; s counts its endpoints whose mates
-are in saturated tiles. The residual degree d counts its matching incidences
-to other deficient tiles and r=2-t-h-s. A deficient tile has
-rho=d/2-r=(t-b+s)/2; a saturated tile has charge zero. All receiver tiles
-below are deficient. Charges are measured in the full original configuration.
+are in saturated tiles. A tile is saturated when t=2, and deficient when
+t<=1. The residual degree d counts matching incidences to other deficient
+tiles and r=2-t-h-s. Since p=2h+s+d, a deficient tile has
+
+    rho=d/2-r=t+p/2-2+s/2=(t-b+s)/2.
+
+A saturated tile has charge zero. Charges are always measured in the full
+original configuration, and rho(U) is their sum over the physical tiles
+in U. In particular the correction s/2 must not be dropped in a general
+region. All receiver tiles below are deficient and have s=0.
+
+For completeness, this is the original global ledger, not the raw physical
+excess assigned independently to every tile. Let a be the number of
+saturated tiles containing a matching endpoint. Such a tile has exactly one
+P, no internal matching edge, and its mate lies in a deficient tile, by
+Lemma A.1 of GRID_ABSORPTION_PROOF.md. Hence sum_deficient s=a. Summing
+the raw quantity t+p/2-2 over saturated tiles gives a/2, exactly the
+correction transferred to deficient tiles. On an even-by-even rectangle,
+
+    rho(grid)=sum_all_tiles(t+p/2-2)=|T|+|M|-mn/2.
+
+This proves both the global objective identity and additivity on disjoint
+tile regions while retaining every saturated attachment correction.
 
 Each central tile contains one internal lower horizontal matching edge.
 Its two upper endpoints are matched across tile boundaries, including
@@ -207,6 +229,18 @@ checked. The response also independently confirms the general bipartite
 color-factorization and complete-freezing arguments. The all-width family,
 constant receiver budget, code and Lean induction are subsequent work;
 they were not reviewed in that response.
+
+The subsequent written-proof review c9c582db-aa9b-440a-8334-fcb958d84650
+completed at 07:24:57 UTC, observed gpt_6/pro. Its verdict is REVISE solely
+for missing ledger definitions and the global objective identity in the
+submitted excerpt; it confirms the all-width construction, both freezing
+waves, odd-width geometry, forced labels and receiver packing. The exact
+response is archived in output/capped-ladder-review-response.json. Section 3
+now supplies the actual corrected ledger and its objective identity; the
+reviewer's proposed raw per-tile excess is used only where s=0, not substituted
+for the original ledger on arbitrary regions. The boundary and exterior-scope
+clarifications are incorporated above. These repairs were independently
+checked; no subsequent ACCEPT or code/Lean execution review is claimed.
 
 ```sh
 python3 develop/check_frozen_two_row_caps.py --output output/frozen-two-row-caps-controls.json
