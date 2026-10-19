@@ -366,9 +366,10 @@ granting the prior receiver/freezing/parallel-phase dependencies. Its one
 scope-wording clarification above is incorporated. The exact response and
 independent assessment are archived in `output/orthogonal-source-mouth-review-response.json`
 and `docs/reviews/2026-10-19-orthogonal-mouth-assessment.md`.
-The later directional averaging theorem was outside that input and receives
-a separate follow-up review. The previous mixed-contact review's infrastructure
-failure is a separate terminal task.
+The later directional averaging theorem was outside that input. Its separate
+follow-up52a612fb completed ACCEPT at 11:27:18 UTC; see
+`DIRECTIONAL_AVERAGING_SOURCE_COMPENSATION.md` and its review assessment.
+The previous mixed-contact review's infrastructure failure is a separate terminal task.
 
 Reproduce the controls and scoped formal audit with:
 

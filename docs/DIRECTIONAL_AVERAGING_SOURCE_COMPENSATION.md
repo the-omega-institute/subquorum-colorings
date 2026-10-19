@@ -101,10 +101,23 @@ require every endpoint in G to belong to a prescribed source. Then
     |T_0|+|M_0|<=mn/2.
 
 There is no restriction on the number, orientation or crossing pattern of
-the sources. Complete combs outside G and the other allowed outside endpoint
-components remain permitted.
+the sources. Complete combs whose endpoints lie outside G and the other
+allowed outside endpoint components remain permitted. Such a comb's selected
+supports may enter G; they are already included in the actual t_Q counts.
 
 Proof. No comb end contributes to any strip, so F=0. Apply (4). QED.
+
+The exact source-only formula is
+
+    Delta=(A+D'+D_1)/2+R.
+
+It also characterizes equality within this class: Delta=0 if and only if
+A=D'=D_1=R=0, since all four are nonnegative. In particular every singly
+covered physical no-P donor tile must contain two selected vertices at
+equality; all shifted no-P squares and all physical no-P tiles outside G
+must also attain their selected capacity, and every outside nonprescribed
+receiver must have charge zero. This is a direct consequence of the same
+identity, not an equality classification for arbitrary grid configurations.
 
 This removes the entire matching loss in the universal bound
 |T_0|+(5/6)|M_0|<=mn/2 for the stated source-only class. The earlier crossing
@@ -143,8 +156,13 @@ theorem as a complete graph statement remain written proofs.
 
 The earlier independent review d54c5a35 accepted the strip identities,
 crossing-loss theorem and all-width obstacle. Its input predates directional
-averaging. A separate follow-up in conv_d54fcca063697f6b reviews this exact
-deduction; no inherited verdict is asserted.
+averaging. Follow-up52a612fb-b9af-4b00-af5a-a6f848d77415 completed ACCEPT at
+11:27:18 UTC, observed gpt_6/pro, separately checking the averaging identity,
+unrestricted source-only theorem and weighted comb criterion. Its clarification
+about outside comb endpoints versus selected supports is incorporated above.
+The response and independent assessment are archived in
+`output/directional-averaging-review-response.json` and
+`docs/reviews/2026-10-19-directional-averaging-assessment.md`.
 
 Reproduce with:
 
