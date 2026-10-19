@@ -36,7 +36,9 @@ improves this project's connected cubic gap coefficient from1/24 to
 Z_r of order62r with **beta_2=33r and SF_2=36r**. Keeping each H six-cycle
 closed, while connecting only through X edges, prevents the former
 exceptional local gain. A general omission proof charges all three
-Heawood blocks independently. Six conditional Lean counts and fixed-core/
+Heawood blocks independently. The coefficient3/62 is also optimal within
+the distinct-port C_1/Heawood architecture under arbitrary X-only gluing.
+Seven conditional Lean counts and fixed-core/
 actual-ring controls pass; an independent review is pending. The general
 upper coefficient1/14 and the rectangular-grid bridge remain open.
 

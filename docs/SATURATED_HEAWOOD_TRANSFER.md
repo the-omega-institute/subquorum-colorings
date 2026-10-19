@@ -195,8 +195,14 @@ selected line is active and robust. To check both assertions, each
 selected non-isolated point has two selected lines; an omitted point
 off L has two active selected lines, while the omitted R has two
 selected lines avoiding T, each meeting a or b or P. Consequently a
-non-port selected line could be deleted. Only intersection R remains,
-which is exactly the stated construction with M=ab.
+non-port selected line could be deleted. Only intersection R remains.
+Then M=ab is one of the two lines through R other than L; the selected
+points are exactly P,T,a,b and the selected lines are exactly the four
+avoiding T. The points P,a,b and their three joining lines form the
+selected six-cycle. Point T is isolated, as is the fourth selected line
+through none of P,a,b. The opposite port P lies on that cycle and has
+its two internal cycle neighbors selected. This is precisely the
+stated directional template.
 
 If p=5, consider the selection first in H before deleting PL. The
 three selected lines cover at least six points, so T is its only

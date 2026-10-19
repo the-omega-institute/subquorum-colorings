@@ -19,6 +19,10 @@ at most one block. In particular the two core neighbors of a block are
 distinct, and their remaining neighbors lie in K. The core itself need
 not be connected or regular as an induced subgraph.
 
+Throughout, beta_2 is the maximum cardinality of a dissociation set,
+equivalently a selected set inducing maximum degree at most one. It is
+not the minimum forming-set cardinality.
+
 **Theorem.** Every minimal forming selection S satisfies
 
     5|S|+2b <= 3|V(G)|.
@@ -192,12 +196,18 @@ positive unused capacity. Thus every such leaf has a one-neighbor
 resource, which must pay its parent high. That parent has degree three;
 degree two would leave one unused unit. It has exactly one leaf: two
 leaves would have distinct one-neighbor resources but only one can pay
-their common high, again leaving unused capacity. Every degree-three
-high needs such a leaf, and degree-two highs have none.
+their common high, again leaving unused capacity. Conversely a
+degree-three high has all its graph neighbors selected, so no adjacent
+omitted witness is available. Its failure witness must be the third
+type in the exact classification, through a selected leaf whose sole
+selected support is that high. Thus every degree-three high has
+exactly one leaf, and every degree-two high has none.
 
 The graph induced by highs is consequently two-regular. It is nonempty,
-since otherwise the eight-selection would dissociate, contradicting
-beta_2(H)=7. Girth six and only six selected nonisolates force exactly
+since otherwise every selected vertex would have selected degree at
+most one. The eight-selection would itself be a dissociation set,
+contradicting the maximum dissociation cardinality beta_2(H)=7.
+Girth six and only six selected nonisolates force exactly
 one high six-cycle and no leaves or matching components. Each high
 needs a distinct resource; all six omitted vertices are therefore
 two-neighbor resources, with that high and an isolate selected. QED.
@@ -206,11 +216,25 @@ two-neighbor resources, with that high and an isolate selected. QED.
 
 If q_B=2, H2 excludes all exports: a selected port can mediate an export
 only as an internally isolated selected leaf with an internal one-neighbor
-resource. Hence E_B=0 and F_B<=0<=q_B-p_B+t_B, proving (3).
+resource. A resource with two selected neighbors cannot fail when the
+external core high is deleted: both its selected block neighbors remain.
+It therefore cannot export through a selected port. The one-neighbor
+resource must be supported only by that port, whose selected activity
+comes only from the external high; H2 excludes precisely this case.
+Hence E_B=0 and F_B<=0<=q_B-p_B+t_B, proving (3).
 
-If q_B=0, first restrict to B. A selected non-port owns an internal
-private clause, by the established attachment certificate theorem: an
-unsupported non-port would need a selected block port, and there are none.
+If q_B=0, first restrict to B. The exact
+[attachment certificate](PRIVATE_CLAUSES_AND_BOUNDARY_ACCOUNTING.md)
+states: whenever an inside graph retains all its edges in the ambient
+graph and every non-port has exactly its inside neighbors, each selected
+non-port of an ambient minimal set either owns a private inside clause,
+or is the sole selected inside neighbor of a selected port. There is no
+inside-formation hypothesis and no restriction on the ambient core's
+selection or edges. It is also the general graph-level theorem
+[boundary_certificate](../formal/StarForming/PrivateClauses.lean).
+Apply it with inside graph B and its two ports. The second alternative
+is impossible because both ports are omitted. Thus every selected
+vertex of B has an internal private clause.
 Formation also holds internally. A port with no selected internal neighbor
 is excluded by H1. A port with just one internally isolated selected
 neighbor would either fail global formation if its external neighbor
@@ -263,9 +287,10 @@ are outside B. A clause based at pi on an original edge contains selected
 a; a closed clause there also contains a. A clause based at lambda either
 contains selected lambda, or, in the reversed orientation, selected b.
 None can be private to v. On an interface edge, the only orientation not
-immediately blocked by a selected center is B_(pi,a). But a is active
-through a selected core neighbor, since pi is omitted; that neighbor also
-belongs to the clause and is different from v. Thus it is blocked too.
+immediately blocked by a selected center is B_(pi,a). In this branch a
+is active by assumption. Its only block neighbor pi is omitted, so a
+has a selected neighbor in the core. That neighbor also belongs to
+B_(pi,a) and is different from v. Thus this clause is blocked too.
 
 The private clause must have its closed center or both edge endpoints
 among the non-ports. Their neighborhoods are unchanged by the restoration.
@@ -303,6 +328,10 @@ block. Therefore
 Unused core capacity and uncharged core isolates are nonnegative. Using
 (1) proves5|S|+2b<=3n. No capacity is used by two high owners, no block
 resource is counted in two blocks, and no core isolate pays two blocks.
+
+Selected isolates support the private clauses; they are not omitted
+capacity resources. An isolate can appear in several clauses, but its
+vertex contributes only once to i_B or to its uniquely owned t_B.
 
 For L_k, select all core H,U and in every block select
 {1,2,3,5,7,9,10,11}. The core contributes12k and blocks24k. Every
@@ -351,9 +380,16 @@ signals. That obstruction explains why the present ledger uses residual
 capacity rather than charging every signal to lost block vertices.
 
 A separate [independent review](../output/heawood-block-compensation-review.json)
-is now dispatched on original task507dce65 in a new conversation, with
-this proof and both earlier Fano proofs attached. Its verdict is pending;
-it is distinct from the completed research response above.
+completed on original task507dce65, observed gpt_6 with effort pro,
+with verdict REVISE. Its [exact response](reviews/2026-10-19-heawood-block-compensation-review-response.txt)
+accepted the ledger signs and no-reuse mechanism but requested explicit
+leaf forcing, attachment-certificate scope and restoration details.
+Those passages are expanded above. Two conditional concerns do not
+apply: beta_2 is maximum dissociation cardinality, and L is selected
+in the bare-port p3/M=L branch. Both definitions are now explicit.
+The [same-conversation follow-up](../output/heawood-block-compensation-followup.json)
+supplies the revised passages and full certificate argument; its verdict
+is pending. It is distinct from the completed research response above.
 
 Reproduction:
 

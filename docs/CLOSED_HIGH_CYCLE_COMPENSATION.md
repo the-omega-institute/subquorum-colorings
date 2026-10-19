@@ -189,6 +189,47 @@ and the remaining modules form an attached chain. Other modules with
 one edge removed stay connected. This covers r>=2, including r=2;
 at r=1 the interface edge is restored. Thus Z_r is two-connected.
 
+## The coefficient is optimal within the distinct-port C_1 architecture
+
+The following later deduction applies to a broader class than the rings.
+Take r copies of C_1 and b broken Heawood blocks. Preserve every core
+edge incident to H,U,Y and every internal broken-block edge. Attach
+each block's two ports to two core X vertices, with all2b attachment
+vertices distinct. Choose the remaining edges arbitrarily among core
+X vertices, subject to simplicity, cubic degree and the standard
+bipartition. No other interface edges are allowed. Connectivity is
+not needed for this corollary; every Z_r is in this class with b=3r.
+
+**Architecture bound.** Every resulting graph G satisfies
+
+    SF_2(G)-beta_2(G)<=b,
+    62(SF_2(G)-beta_2(G))<=3|V(G)|.                       (3)
+
+In particular no X-only gluing within this entire class improves3/62.
+
+**Proof.** The core has6r X vertices, so distinct attachment gives
+2b<=6r. In every core take U union H_odd union X_even. In every
+Heawood block take its seven vertices in the global even color class.
+The selected core edges form a matching. Every additional X edge or
+block-to-core edge has an omitted endpoint: its odd X endpoint is
+omitted, or its odd block endpoint is omitted. This gives a dissociation
+set of size12r+7b, for every allowed X gluing. Thus beta>=12r+7b.
+Writing n=20r+14b and g=SF_2-beta, the established cubic inequality gives
+
+    7g<=3n-5beta<=3(20r+14b)-5(12r+7b)=7b.
+
+Hence g<=b. Since b<=3r,
+
+    62g<=62b<=60r+42b=3n.
+
+This proves(3), independently of the pending general block ledger.
+The conclusion is restricted to the stated architecture, not a universal
+cubic bound. To beat it one must leave this class, for example by
+changing the cores or obstruction blocks, permitting reused core
+attachment vertices, or modifying selected high edges. The earlier
+long-core result already shows that modifying high edges can also
+increase beta and reduce the intended gap.
+
 ## Evidence and scope
 
 The proof of(1), its graph-to-count extraction, block charging, all-r
@@ -217,14 +258,23 @@ nine interface degree patterns, all with maximum score12. Normalization,
 hub cases and reflection pass. Ten actual rings give1,980literal
 selected-deletion checks and3,410vertex-deletion connectivity checks.
 The [Lean receipt](../output/closed-high-cycle-formal-check.json) records
-six declarations, one reused from the previous one-hub proof, with only
+seven declarations, one reused from the previous one-hub proof, with only
 standard logical axioms. Local validation ran sequentially on the
 authorized machine after memory and lean/lake basename preflight.
+One hundred additional arbitrary X-gluing instances, with one to five
+cores and every permitted block count, check the architecture's explicit
+dissociation lower bound and8,640selected deletion failures for its
+unchanged forming witnesses. Their beta/SF values are not optimized.
 
 A [new independent review](../output/closed-high-cycle-oracle-review.json)
 has been dispatched for this distinct theorem, with the written proof
-attached. No verdict is yet available. Preserve its original client
-and task; the separate general block-ledger review also remains live.
+attached. The later architecture-bound corollary was not in that input
+and is a separate written deduction with a conditional Lean count.
+No verdict is yet available. Preserve its original client
+and task. The separate general block-ledger review returned REVISE;
+its same-conversation [follow-up](../output/heawood-block-compensation-followup.json)
+after proof clarifications is pending. Neither is a premise of this
+construction or its architecture bound.
 
 Reproduce:
 

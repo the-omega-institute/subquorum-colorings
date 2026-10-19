@@ -6,3 +6,4 @@ import StarForming.ClosedHighCycle
 #print axioms StarForming.ClosedHighCycle.module_cap
 #print axioms StarForming.ClosedHighCycle.sum_module_caps
 #print axioms StarForming.ClosedHighCycle.exact_parameters
+#print axioms StarForming.ClosedHighCycle.architecture_gap_bound

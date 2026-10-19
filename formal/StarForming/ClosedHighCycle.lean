@@ -55,4 +55,13 @@ theorem exact_parameters (copies beta star : Nat)
     beta = 33 * copies ∧ star = 36 * copies ∧ star - beta = 3 * copies := by
   omega
 
+theorem architecture_gap_bound (cores blocks order beta star gap : Nat)
+    (horder : order = 20 * cores + 14 * blocks)
+    (hports : 2 * blocks ≤ 6 * cores)
+    (hbeta : 12 * cores + 7 * blocks ≤ beta)
+    (hgap : star = beta + gap)
+    (hcompensation : 7 * star ≤ 3 * order + 2 * beta) :
+    gap ≤ blocks ∧ 62 * gap ≤ 3 * order := by
+  omega
+
 end StarForming.ClosedHighCycle

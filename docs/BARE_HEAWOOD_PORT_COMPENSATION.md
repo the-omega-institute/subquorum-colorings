@@ -73,8 +73,11 @@ line at it is active.
 
 If the selected points are noncollinear, exactly one Fano line M misses
 them. If M is omitted, all selected lines are active and the same argument
-works. If M=L, its intersections with non-port lines lie on L and have
-selected degree three; points off L are not incident with M. Thus M
+works. If M=L, the line L is selected but inactive: it is one of the
+five allowed selected lines and has no selected point. Its intersections
+with non-port lines are different from P and have three selected incident
+lines in B. Deleting PL changes only P's degree, not theirs. Points
+off L are not incident with M. Thus M
 cannot block a non-port candidate. Finally, if M is a selected non-port
 line, there are three active non-port line candidates. The inactive M
 can block them only at its intersections with A or B', at most two

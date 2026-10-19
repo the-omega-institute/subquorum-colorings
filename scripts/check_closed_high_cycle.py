@@ -4,12 +4,13 @@ import argparse
 from collections import Counter
 import json
 from pathlib import Path
+import random
 
-from check_cubic_padding_rings import edge
-from check_cubic_path_accounting import inspect
+from check_cubic_padding_rings import core, edge
+from check_cubic_path_accounting import inspect, pair_stubs
 from check_cubic_starforming import SELECTED, base, dissociation
 from check_cubic_triple_ports import PAIRS, triple_core
-from check_regular_starforming import bipartition, masks
+from check_regular_starforming import bipartition, covered, masks, star_lists
 from check_starforming_gap import connected
 
 
@@ -133,22 +134,79 @@ def ring_control(copies):
                 accounting=accounting)
 
 
+def arbitrary_gluing_control(cores, blocks, generator):
+    adjacency = []
+    selected = set()
+    attaining = set()
+    left = []
+    right = []
+    for module in range(cores):
+        offset = len(adjacency)
+        local = core(1)
+        for vertex in range(12, 18):
+            local[vertex] -= set(range(12, 18))
+        adjacency.extend({offset + neighbor for neighbor in neighbors} for neighbors in local)
+        selected |= set(range(offset, offset + 12))
+        attaining |= {offset + vertex for vertex in [1, 3, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16]}
+        left.extend(offset + vertex for vertex in (12, 14, 16))
+        right.extend(offset + vertex for vertex in (13, 15, 17))
+    left_ports = generator.sample(left, blocks)
+    right_ports = generator.sample(right, blocks)
+    for index in range(blocks):
+        offset = len(adjacency)
+        heawood = base()
+        heawood[0].remove(8)
+        heawood[8].remove(0)
+        adjacency.extend({offset + neighbor for neighbor in neighbors} for neighbors in heawood)
+        edge(adjacency, offset, right_ports[index])
+        edge(adjacency, offset + 8, left_ports[index])
+        selected |= {offset + vertex for vertex in SELECTED}
+        attaining |= set(range(offset, offset + 7))
+    left_stubs = [vertex for vertex in left for stub in range(3 - len(adjacency[vertex]))]
+    right_stubs = [vertex for vertex in right for stub in range(3 - len(adjacency[vertex]))]
+    pair_stubs(adjacency, left_stubs, right_stubs, generator)
+    assert len(adjacency) == 20 * cores + 14 * blocks
+    assert bipartition(adjacency) is not None
+    assert all(len(neighbors) == 3 for neighbors in adjacency)
+    assert len(attaining) == 12 * cores + 7 * blocks
+    assert dissociation(adjacency, attaining)
+    stars = star_lists(adjacency)
+    mask = sum(1 << vertex for vertex in selected)
+    assert all(covered(stars, mask, vertex) for vertex in set(range(len(adjacency))) - selected)
+    for deleted in selected:
+        smaller = mask ^ (1 << deleted)
+        assert any(not covered(stars, smaller, vertex)
+                   for vertex in set(range(len(adjacency))) - (selected - {deleted}))
+    return dict(cores=cores, blocks=blocks, order=len(adjacency),
+                dissociation_lower_bound=len(attaining),
+                minimal_forming_witness_size=len(selected),
+                selected_deletion_checks=len(selected),
+                exact_beta_or_SF_independently_optimized=False)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
     arguments = parser.parse_args()
     fixed = fixed_core_control()
     records = [ring_control(copies) for copies in range(1, 11)]
+    generator = random.Random(20261019)
+    arbitrary = [arbitrary_gluing_control(cores, blocks, generator)
+                 for cores in range(1, 6) for blocks in range(3 * cores + 1)
+                 for sample in range(2)]
     adjacency, selected, attaining = ring(1)
     report = dict(status='ALL_CHECKS_PASSED', fixed_core=fixed, rings=records,
+                  architecture_controls=arbitrary,
                   example=dict(adjacency=[sorted(neighbors) for neighbors in adjacency],
                                selection=sorted(selected), dissociation_witness=sorted(attaining)),
                   totals=dict(fixed_core_subsets=1 << 20,
                               fixed_core_dissociation_sets=fixed['totals']['dissociation_sets'],
                               port_patterns=len(fixed['port_profiles']), rings=len(records),
                               selected_deletion_checks=sum(record['selected_deletion_checks'] for record in records),
-                              vertex_deletion_checks=sum(record['vertex_deletion_checks'] for record in records)),
-                  scope='Independent fixed-core enumeration, normalization and hub cases; actual ring formation/deletion, dissociation attainment and every vertex-deletion connectivity. All-r exact parameters require the written proof; no solver optimum is used as its premise.')
+                              vertex_deletion_checks=sum(record['vertex_deletion_checks'] for record in records),
+                              arbitrary_gluing_instances=len(arbitrary),
+                              arbitrary_gluing_selected_deletion_checks=sum(record['selected_deletion_checks'] for record in arbitrary)),
+                  scope='Independent fixed-core enumeration, normalization and hub cases; actual ring formation/deletion, dissociation attainment and every vertex-deletion connectivity. Random arbitrary-gluing controls test the architecture lower bound and minimal forming selection, without claiming optimized parameters. All-r exact parameters and architecture upper bound require the written proof; no solver optimum is used as a premise.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)
     arguments.output.write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(dict(status=report['status'], totals=report['totals'])))
