@@ -1,0 +1,417 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "cubic_capacity": {
+    "cubic_graphs_order_six": 70,
+    "minimal_selections": 770,
+    "strict_direct_corrections": 120,
+    "bipartite_minimal_selections": 110
+  },
+  "all_saturated_obstruction": {
+    "base_selected": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      20,
+      23,
+      24,
+      25,
+      27,
+      29,
+      30,
+      31,
+      35,
+      36,
+      37,
+      39,
+      41,
+      43,
+      44,
+      45,
+      49,
+      50,
+      51,
+      53,
+      55,
+      57,
+      58,
+      59
+    ],
+    "base_core_selected": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "literal_base_deletions": 34,
+    "deletion_certificates": [
+      {
+        "deleted": 1,
+        "failing_vertex": 7
+      },
+      {
+        "deleted": 2,
+        "failing_vertex": 7
+      },
+      {
+        "deleted": 3,
+        "failing_vertex": 15
+      },
+      {
+        "deleted": 4,
+        "failing_vertex": 5
+      },
+      {
+        "deleted": 6,
+        "failing_vertex": 6
+      },
+      {
+        "deleted": 8,
+        "failing_vertex": 14
+      },
+      {
+        "deleted": 9,
+        "failing_vertex": 15
+      },
+      {
+        "deleted": 10,
+        "failing_vertex": 16
+      },
+      {
+        "deleted": 11,
+        "failing_vertex": 11
+      },
+      {
+        "deleted": 12,
+        "failing_vertex": 12
+      },
+      {
+        "deleted": 20,
+        "failing_vertex": 13
+      },
+      {
+        "deleted": 23,
+        "failing_vertex": 33
+      },
+      {
+        "deleted": 24,
+        "failing_vertex": 32
+      },
+      {
+        "deleted": 25,
+        "failing_vertex": 25
+      },
+      {
+        "deleted": 27,
+        "failing_vertex": 26
+      },
+      {
+        "deleted": 29,
+        "failing_vertex": 29
+      },
+      {
+        "deleted": 30,
+        "failing_vertex": 22
+      },
+      {
+        "deleted": 31,
+        "failing_vertex": 21
+      },
+      {
+        "deleted": 35,
+        "failing_vertex": 42
+      },
+      {
+        "deleted": 36,
+        "failing_vertex": 46
+      },
+      {
+        "deleted": 37,
+        "failing_vertex": 47
+      },
+      {
+        "deleted": 39,
+        "failing_vertex": 39
+      },
+      {
+        "deleted": 41,
+        "failing_vertex": 41
+      },
+      {
+        "deleted": 43,
+        "failing_vertex": 40
+      },
+      {
+        "deleted": 44,
+        "failing_vertex": 34
+      },
+      {
+        "deleted": 45,
+        "failing_vertex": 38
+      },
+      {
+        "deleted": 49,
+        "failing_vertex": 56
+      },
+      {
+        "deleted": 50,
+        "failing_vertex": 60
+      },
+      {
+        "deleted": 51,
+        "failing_vertex": 61
+      },
+      {
+        "deleted": 53,
+        "failing_vertex": 53
+      },
+      {
+        "deleted": 55,
+        "failing_vertex": 55
+      },
+      {
+        "deleted": 57,
+        "failing_vertex": 54
+      },
+      {
+        "deleted": 58,
+        "failing_vertex": 48
+      },
+      {
+        "deleted": 59,
+        "failing_vertex": 52
+      }
+    ],
+    "finite_cover_controls": [
+      {
+        "k": 1,
+        "order": 62,
+        "selected_size": 34,
+        "core_selected_size": 10,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 1,
+        "direct_returns": 1,
+        "core_deficit_below_12k": 2,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 7,
+        "direct_degree_two_roots": 1,
+        "refined_capacity_slack": 9,
+        "linear_slack": 14
+      },
+      {
+        "k": 2,
+        "order": 124,
+        "selected_size": 68,
+        "core_selected_size": 20,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 2,
+        "direct_returns": 2,
+        "core_deficit_below_12k": 4,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 14,
+        "direct_degree_two_roots": 2,
+        "refined_capacity_slack": 18,
+        "linear_slack": 30
+      },
+      {
+        "k": 3,
+        "order": 186,
+        "selected_size": 102,
+        "core_selected_size": 30,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 3,
+        "direct_returns": 3,
+        "core_deficit_below_12k": 6,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 21,
+        "direct_degree_two_roots": 3,
+        "refined_capacity_slack": 27,
+        "linear_slack": 44
+      },
+      {
+        "k": 4,
+        "order": 248,
+        "selected_size": 136,
+        "core_selected_size": 40,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 4,
+        "direct_returns": 4,
+        "core_deficit_below_12k": 8,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 28,
+        "direct_degree_two_roots": 4,
+        "refined_capacity_slack": 36,
+        "linear_slack": 60
+      },
+      {
+        "k": 5,
+        "order": 310,
+        "selected_size": 170,
+        "core_selected_size": 50,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 5,
+        "direct_returns": 5,
+        "core_deficit_below_12k": 10,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 35,
+        "direct_degree_two_roots": 5,
+        "refined_capacity_slack": 45,
+        "linear_slack": 74
+      },
+      {
+        "k": 6,
+        "order": 372,
+        "selected_size": 204,
+        "core_selected_size": 60,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 6,
+        "direct_returns": 6,
+        "core_deficit_below_12k": 12,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 42,
+        "direct_degree_two_roots": 6,
+        "refined_capacity_slack": 54,
+        "linear_slack": 90
+      },
+      {
+        "k": 7,
+        "order": 434,
+        "selected_size": 238,
+        "core_selected_size": 70,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 7,
+        "direct_returns": 7,
+        "core_deficit_below_12k": 14,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 49,
+        "direct_degree_two_roots": 7,
+        "refined_capacity_slack": 63,
+        "linear_slack": 104
+      },
+      {
+        "k": 8,
+        "order": 496,
+        "selected_size": 272,
+        "core_selected_size": 80,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 8,
+        "direct_returns": 8,
+        "core_deficit_below_12k": 16,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 56,
+        "direct_degree_two_roots": 8,
+        "refined_capacity_slack": 72,
+        "linear_slack": 120
+      },
+      {
+        "k": 9,
+        "order": 558,
+        "selected_size": 306,
+        "core_selected_size": 90,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 9,
+        "direct_returns": 9,
+        "core_deficit_below_12k": 18,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 63,
+        "direct_degree_two_roots": 9,
+        "refined_capacity_slack": 81,
+        "linear_slack": 134
+      },
+      {
+        "k": 10,
+        "order": 620,
+        "selected_size": 340,
+        "core_selected_size": 100,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 10,
+        "direct_returns": 10,
+        "core_deficit_below_12k": 20,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 70,
+        "direct_degree_two_roots": 10,
+        "refined_capacity_slack": 90,
+        "linear_slack": 150
+      },
+      {
+        "k": 11,
+        "order": 682,
+        "selected_size": 374,
+        "core_selected_size": 110,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 11,
+        "direct_returns": 11,
+        "core_deficit_below_12k": 22,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 77,
+        "direct_degree_two_roots": 11,
+        "refined_capacity_slack": 99,
+        "linear_slack": 164
+      },
+      {
+        "k": 12,
+        "order": 744,
+        "selected_size": 408,
+        "core_selected_size": 120,
+        "all_block_sizes_eight": true,
+        "total_actual_block_loss": 0,
+        "total_bare_ports": 0,
+        "saturated_directional_imports": 12,
+        "direct_returns": 12,
+        "core_deficit_below_12k": 24,
+        "neighborhood_cover_checked": true,
+        "private_minimality_checked": true,
+        "isolates": 84,
+        "direct_degree_two_roots": 12,
+        "refined_capacity_slack": 108,
+        "linear_slack": 180
+      }
+    ]
+  },
+  "scope": "Written general capacity identity proves the direct-return slack. The explicit base certificate and triangle-free covering theorem prove an all-k minimal family with 34k selections, 10k core vertices, k directional signals and zero actual block loss. Finite controls do not replace these proofs or refute SF(L_k)<=36k."
+}

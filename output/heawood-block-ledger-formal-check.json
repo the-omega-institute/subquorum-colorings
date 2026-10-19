@@ -1,0 +1,39 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "checked_at": "2026-10-19T01:28:24.543833+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "active_lean_lake_before_run": [],
+  "memory_before_run": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    15907.\nPages active:                                 214602.\nPages inactive:                               202641.\nPages speculative:                             10743.\nPages throttled:                                   0.\nPages wired down:                             245360.\nPages purgeable:                                 628.\n\"Translation faults\":                    15783024109.\nPages copy-on-write:                       966620612.\nPages zero filled:                        6475324125.\nPages reactivated:                        2952536063.\nPages purged:                              137211572.\nFile-backed pages:                            273856.\nAnonymous pages:                              154130.\nPages stored in compressor:                  1691606.\nPages occupied by compressor:                 317495.\nDecompressions:                           2379527899.\nCompressions:                             2813307111.\nPageins:                                  4243755531.\nPageouts:                                   11849880.\nSwapins:                                    25394183.\nSwapouts:                                   31827330.\n",
+  "checks": [
+    {
+      "module": "StarForming/RegularBound.lean",
+      "seconds": 3.338,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/CoverPullback.lean",
+      "seconds": 0.424,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarForming/HeawoodBlockLedger.lean",
+      "seconds": 0.465,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "StarFormingHeawoodBlockLedgerAudit.lean",
+      "seconds": 0.409,
+      "stdout": "'StarForming.HeawoodBlockLedger.local_block_credit' depends on axioms: [propext, Quot.sound]\n'StarForming.HeawoodBlockLedger.sum_block_credit' depends on axioms: [propext, Quot.sound]\n'StarForming.HeawoodBlockLedger.global_block_cap' depends on axioms: [propext, Quot.sound]\n'StarForming.HeawoodBlockLedger.long_core_upper' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "maximum_rss_bytes": 693174272,
+  "scope": "Four conditional counting statements: the per-block capacity/flux identity implies two units of credit; those credits sum over any finite list; global no-reuse implies the cubic block cap; the 62k-order application gives size<=36k. Fano geometry, restoration to a closed Heawood block, graph-to-ledger extraction, unique core-isolate ownership and attainment have complete written proofs, not a claimed full formalization of SF(L_k)=36k."
+}

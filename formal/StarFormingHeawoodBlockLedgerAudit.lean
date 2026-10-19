@@ -1,0 +1,6 @@
+import StarForming.HeawoodBlockLedger
+
+#print axioms StarForming.HeawoodBlockLedger.local_block_credit
+#print axioms StarForming.HeawoodBlockLedger.sum_block_credit
+#print axioms StarForming.HeawoodBlockLedger.global_block_cap
+#print axioms StarForming.HeawoodBlockLedger.long_core_upper

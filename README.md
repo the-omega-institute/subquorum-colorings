@@ -30,14 +30,16 @@ The [research agenda](docs/RESEARCH.md) connects current results to the next
 mathematical targets. The manuscript follows the same progression from the
 hypercube solution to these geometric and structural questions.
 
-The latest [Heawood transfer theorem](docs/SATURATED_HEAWOOD_TRANSFER.md)
-proves that two distinct outside owners of internal private clauses cost
-two block vertices. A zero-loss owner forces one of eight directional
-patterns, including an opposite selected port with two selected internal
-neighbors. Three actual minimal ambient examples show sharpness and why
-bare-port and ownership losses cannot be added. General Fano proofs,
-independent controls and two graph-level Lean ownership lemmas are provided;
-the full long-core upper bound and rectangular-grid bridge remain open.
+The latest [block compensation theorem](docs/HEAWOOD_BLOCK_COMPENSATION.md)
+proves **SF_2(L_k)=36k for every k>=1**. More generally b disjoint broken
+Heawood blocks attached to distinct core ports force5|S|+2b<=3n in cubic
+bipartite graphs. Actual isolates and unused witness capacity pay each
+block once. Complete written proofs and conditional Lean ledger checks
+are provided. The [return theorem and obstruction](docs/DIRECTIONAL_RETURN_AND_CORE_DEFICIT.md)
+add four general graph Lean proofs and an all-k minimal34k family with
+k directional signals but zero block losses. The earlier
+[eight-template classification](docs/SATURATED_HEAWOOD_TRANSFER.md) supplies
+the local geometry. The separate rectangular-grid bridge remains open.
 
 The related [star-forming project](docs/EXACT_STAR_FORMING_COMPOSITION.md)
 has a separate composition theorem: joining r ten-vertex copies through
@@ -190,19 +192,22 @@ cyclic word construction gives F(k)>=12k+floor(k/2), including an explicit
 forty-vertex score25counterexample to the proposed24cap. Attaching all3k
 Heawood blocks gives beta_2>=33k+floor(k/2) on62kvertices, and therefore
 7(SF_2-beta_2)+5floor(k/2)<=21k. This excludes the proposed3/62gap target
-for this family when k>=2; it does not yet exclude improving1/24.
+for this family when k>=2. The exact SF theorem below also fixes its
+asymptotic gap coefficient at5/124, below1/24.
 The general word dissociation theorem and eight supporting declarations
 pass Lean. The [matching all-k upper bound](docs/LONG_CORE_SHARP_OMISSION.md)
 is now proved by score-preserving normalization, a two-index cell inequality
 and the exclusion of adjacent exceptional blocks. Hence F(k)=12k+floor(k/2)
 and beta_2=33k+floor(k/2) exactly. Ten further conditional cell/count Lean
-declarations pass. The forming parameter lies between36k and
-36k+floor(2floor(k/2)/7), so SF_2=36k for k<=7; larger k remain open.
-The completed Oracle supplied the structural upper proof; its answer was
-independently checked. Finite optimization is discovery evidence only.
+declarations pass. The subsequent
+[block-capacity proof](docs/HEAWOOD_BLOCK_COMPENSATION.md) closes the full
+forming interval: SF_2=36k for all k, with gap3k-floor(k/2).
+The original Oracle responses supplied the structural upper argument and
+new block ledger; both were independently checked and developed into
+written proofs. Finite optimization is discovery evidence only.
 
 The [private-clause and boundary certificate](docs/PRIVATE_CLAUSES_AND_BOUNDARY_ACCOUNTING.md)
-now gives an exact graph-level tool for the remaining SF question. Formation
+gives an exact graph-level tool used in the completed SF proof. Formation
 is equivalent to hitting at most4nclauses of size at most5in subcubic graphs;
 minimality means every selected vertex owns a private clause. Under port-only
 attachments, each selected non-port owns an internal private clause or is

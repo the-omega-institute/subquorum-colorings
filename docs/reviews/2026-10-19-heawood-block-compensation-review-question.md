@@ -1,0 +1,7 @@
+# Independent review of the completed Heawood block ledger
+
+Original research task17d001d6 completed. This is a new, independent review of the rewritten proof and its existing local lemmas, not a duplicate research submission.
+
+Independently review the attached mathematical proof, including the two supplied prior Fano lemmas. The proposed theorem is: in any finite simple cubic bipartite graph partitioned into a core and b disjoint one-edge-deleted Heawood blocks, with two port-to-core attachment edges per block and at most one such edge per core vertex, every inclusion-minimal two-star-forming S satisfies 5|S|+2b<=3n. This would give SF_2(L_k)=36k for all k. Check the signs, witness-capacity locality, eight-selection restoration branches, especially exactly one selected port with both core neighbors active and no imports, and whether core-isolate or witness capacity can be used twice. Check the closed-Heawood classification too. Finite enumeration and conditional Lean counting checks are validation only, never general-proof premises. Please return ACCEPT or REVISE for the mathematical claim, with precise gaps or a counterexample if any; distinguish cosmetic clarifications from substantive gaps. This is one proof-review task, not a request to start another research direction.
+
+Attached text contains docs/HEAWOOD_BLOCK_COMPENSATION.md, docs/SATURATED_HEAWOOD_TRANSFER.md and the bare-port proof through its two-port theorem. The exact streamed request is preserved under build/heawood-block-compensation-review-request.json.

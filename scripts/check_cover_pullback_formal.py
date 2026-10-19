@@ -15,7 +15,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lean', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
-    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership'), default='cover')
+    parser.add_argument('--audit', choices=('cover', 'dissociation', 'heawood', 'cubic-paths', 'padding-rings', 'triple-ports', 'multi-ports', 'long-core', 'long-core-upper', 'private-clauses', 'bare-ports', 'boundary-loss', 'port-ownership', 'port-return', 'block-ledger'), default='cover')
     arguments = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     processes = subprocess.check_output(['ps', '-axo', 'pid=,comm=,rss='], text=True)
@@ -43,7 +43,9 @@ def main():
                     'private-clauses': 'build/private-clauses-formal',
                     'bare-ports': 'build/bare-ports-formal',
                     'boundary-loss': 'build/boundary-loss-formal',
-                    'port-ownership': 'build/port-clause-ownership-formal'}[arguments.audit]
+                    'port-ownership': 'build/port-clause-ownership-formal',
+                    'port-return': 'build/port-return-formal',
+                    'block-ledger': 'build/heawood-block-ledger-formal'}[arguments.audit]
     (build / 'StarForming').mkdir(parents=True, exist_ok=True)
     environment = dict(os.environ, LEAN_PATH=str(build))
     checks = []
@@ -80,6 +82,10 @@ def main():
     elif arguments.audit == 'port-ownership':
         modules += ('StarForming/PrivateClauses.lean', 'StarForming/PortClauseOwnership.lean',
                     'StarFormingPortClauseOwnershipAudit.lean')
+    elif arguments.audit == 'port-return':
+        modules += ('StarForming/PortReturn.lean', 'StarFormingPortReturnAudit.lean')
+    elif arguments.audit == 'block-ledger':
+        modules += ('StarForming/HeawoodBlockLedger.lean', 'StarFormingHeawoodBlockLedgerAudit.lean')
     else:
         modules += ('StarForming/PrivateClauses.lean', 'StarFormingPrivateClausesAudit.lean')
     for module in modules:
@@ -101,7 +107,7 @@ def main():
     expected = {'cover': 22, 'dissociation': 5, 'heawood': 6, 'cubic-paths': 12,
                 'padding-rings': 7, 'triple-ports': 8, 'multi-ports': 9, 'long-core': 9,
                 'long-core-upper': 10, 'private-clauses': 5, 'bare-ports': 4, 'boundary-loss': 2,
-                'port-ownership': 2}
+                'port-ownership': 2, 'port-return': 5, 'block-ledger': 4}
     if len(declarations) != expected[arguments.audit]:
         raise RuntimeError('Missing audit declarations')
     for declaration, axioms in declarations:
@@ -217,6 +223,25 @@ def main():
                             'port. Fano geometry, the eight-selection directional classification, '
                             'the two-owner six-vertex cap and joint loss accounting retain '
                             'written proofs and are not claimed fully formalized.')
+    if arguments.audit == 'port-return':
+        receipt['scope'] = ('Four general graph-level statements: exact three-case characterization '
+                            'of failure after a selected deletion; localization of a high protected '
+                            'port failure to a core across its unique exit, directly or through a '
+                            'selected leaf; uniqueness of a failed witness for different high '
+                            'ports; exclusion of an edge from a failed witness to any other '
+                            'selected high vertex. No finiteness or degree bound is imposed. '
+                            'One conditional arithmetic statement combines the refined cubic '
+                            'capacity premise with isolate compensation. Fano instantiation, '
+                            'the direct-return capacity margin and infinite all-saturated '
+                            'long-core obstruction retain written proofs.')
+    if arguments.audit == 'block-ledger':
+        receipt['scope'] = ('Four conditional counting statements: the per-block capacity/flux '
+                            'identity implies two units of credit; those credits sum over any '
+                            'finite list; global no-reuse implies the cubic block cap; the '
+                            '62k-order application gives size<=36k. Fano geometry, restoration '
+                            'to a closed Heawood block, graph-to-ledger extraction, unique '
+                            'core-isolate ownership and attainment have complete written '
+                            'proofs, not a claimed full formalization of SF(L_k)=36k.')
     arguments.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(dict(status=receipt['status'], audited_declarations=len(declarations))))
 

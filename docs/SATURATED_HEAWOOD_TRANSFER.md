@@ -1,5 +1,9 @@
 # External private evidence in a saturated Heawood block
 
+Subsequent completion: the [block compensation proof](HEAWOOD_BLOCK_COMPENSATION.md)
+uses this classification to prove SF_2(L_k)=36k for all k. The open-target
+language below records the state at this earlier local milestone.
+
 19 October 2026. Two different outside owners force two units of actual
 block loss. One outside owner can instead have zero loss, but then the
 block has one of eight explicit directional patterns. Bare-port loss

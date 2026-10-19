@@ -1,5 +1,9 @@
 # Sharp omission compensation on every long core
 
+Subsequent completion: [Heawood block compensation](HEAWOOD_BLOCK_COMPENSATION.md)
+proves the exact SF value36k for all k, closing the larger-k question left
+by the interval in this note. The exact beta proof below is unchanged.
+
 ## Theorem
 
 Use the graphs Q_k and L_k, labeling, omission count m(D), and local
