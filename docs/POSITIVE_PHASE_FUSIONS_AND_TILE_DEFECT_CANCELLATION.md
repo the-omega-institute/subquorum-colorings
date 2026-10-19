@@ -229,13 +229,21 @@ The preceding dual-guard review completed ACCEPT with its two valid prose
 qualifications applied. The present all-positive theorem has a separate
 same-conversation review e423b1d5-d4ce-4a95-a7da-c315931443a3, original
 stream 20573. Its input includes Sections 1-6 and the earlier verification
-scope, before the later mixed-phase corollary was appended. At this checkpoint
-it is live with no verdict. The mixed-phase corollary does not inherit a
-review of the earlier input. Preserve the original task and stream.
+scope, before the later mixed-phase corollary was appended. It completed
+ACCEPT at 2026-10-19T22:03:47.780UTC, gpt_6/pro. The original stream ended
+with DONE and its 19306-character answer matches the terminal response.
+Its sole readability suggestion, explicitly stating persistence of original
+occupancy, was already applied in Section 3. No mathematical correction is
+needed. See reviews/2026-10-20-positive-phase-fusion-assessment.md. The
+mixed-phase corollary does not inherit a review of the earlier input.
 
 This proves automatic finer compensation for the stated all-positive class.
-Mixed positive/nonpositive phase fusions, rotors, a general endpoint-component
-decomposition, the unrestricted grid bound and external priority remain open.
+The subsequent REGULAR_TILES_ZERO_ROTORS_AND_IRREGULAR_TAX.md extends
+automatic compensation to arbitrary zero-charge rotors and isolates a
+height-independent irregular tax for mixed phases. Its new results have
+separate evidence and review scope. Full mixed-phase coverage, a general
+endpoint-component decomposition, the unrestricted grid bound and external
+priority remain open.
 An actual all-positive degree-four example would test the strict coverage
 gain; no such example is asserted here.
 

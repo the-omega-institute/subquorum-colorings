@@ -78,6 +78,23 @@ tile credits. Controls pass 240 module images, 57 all-positive and 306 mixed
 fusions, including 76 with actual positive-source events; 14 scoped Lean
 declarations pass. Full mixed coverage and general decomposition remain open.
 
+The [regular-tile and rotor barrier theorem](REGULAR_TILES_ZERO_ROTORS_AND_IRREGULAR_TAX.md)
+extends automatic compensation to positive two-leg modules with arbitrary
+zero-charge rotors: G=0, D>=2N, K<=2J and sigma>=N. In fact rotors of any
+phase preserve both positive donors. For arbitrary module phases, the
+seventeen regular tile profiles pay K_regular<=2J; the remaining irregular
+profiles have total capacity exactly 2S-2H, independent of leg heights,
+where H counts effective source phase (1,1) two-leg modules. Thus
+sigma>=N-S+2H+(2J-K_regular)-G. With only positive two-leg modules and
+R_minus negative rotors this gives sigma>=N-2R_minus+(2J-K_regular).
+An actual all-length feasible zero-rotor chain has K_regular=4(k-1) and
+J=2(k-1), testing unbounded degree-four defects at equality; full freezing
+is not asserted. Controls pass 112 phase cases, 48 rotor barrier cases,
+296 mixed fusions and seven chains; 22 scoped local Lean declarations pass.
+The remaining target is the coupled payment of irregular 1P1T/2P0T events
+and marked positive sides, without reusing negative mass or full-tile credit.
+General decomposition and unrestricted grid/triple equality remain open.
+
 A proof of Omega(G_mn)<=F(m,n) would settle the grid coloring conjecture.
 A counterexample to that stronger Omega bound would require revisiting the
 reduction's sharpness; it would not by itself refute the coloring conjecture.
