@@ -28,6 +28,8 @@ the other zero-rotor type has neither. No other source contributes a
 regular singleton. These catalogue facts and the rotor support bridge
 are proved in the preceding notes and are inputs here.
 
+Define K:=Kirregular=sum_Q k_Q, the irregular-event count throughout this
+note; total regular-plus-irregular events are a different quantity.
 Let R=S+C-K be event reserve, not rotor count; N is the number of positive
 sources and G the number of marked positive sides. Keep the exact half-slot
 identity and the source ledger:
@@ -241,8 +243,12 @@ with sequential dependency/source/audit runs and no sorryAx/native_decide.
 Individual axiom audits pass. See output/exact-event-reserve-formal-check.json
 and output/exact-event-reserve-controls.json for execution and control scope.
 Of the640 physical images,24 have zero reserve; all24 are unmarked rotor
-fixtures. A new independent review is on original stream67887, without an
-observed verdict. The earlier a6ac6319 ACCEPT covers the preceding
-singleton/gate pipeline, not this new exact identity.
+fixtures. Independent task2bf0d5dd on original stream67887 completed ACCEPT
+for the exact identity, local classification, simultaneous incidence
+cancellation, saturation equivalence and single-positive consequence under
+the stipulated catalogue and ledger. It did not execute controls or Lean.
+Its sole notation clarification, K:=Kirregular=sum_Q k_Q, is incorporated
+above. See output/exact-event-reserve-review.json. Earlier a6ac6319 ACCEPT
+is separate and covers the preceding singleton/gate pipeline.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
