@@ -32,6 +32,17 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [D-interior two-corner enhancement](docs/BACKFILL_D_INTERIOR_TWO_CORNER_COMPENSATION.md)
+exposes one additional typed singleton/activation per D-interior event, using
+an enlarged complement in the SAME original negative pool. The joint all-route
+inequality gains +d, with no reuse of cap fills, terminal activations or stops.
+In the specified saturated AA residual, the incoming source also excludes the
+positive second-corner branches of BOTH C and D, including recurring owners.
+Sixteen scoped local Lean declarations and axiom checks pass. The new written
+extension is under review on original stream59583; the preceding complete
+B/D+A/all-four-route theorem has ACCEPT. Source/mark census control, complete
+critical U10 realizability and the full allocation/grid equality remain open.
+
 The [backfill corner routing theorem](docs/BACKFILL_CORNER_ROUTING_AND_SHALLOW_BARRIER.md)
 classifies the original owner of a critical U10 backfill corner into four U
 roles and excludes rotors. Complete bars force strict dimension drops:
