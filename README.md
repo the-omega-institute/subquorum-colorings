@@ -41,7 +41,8 @@ using complete U/rotor ownership beyond endpoint tags. External exits and
 closed full-bar returns now have an exact joint endpoint ledger with one
 shared H pool. Nineteen new scoped Lean/axiom checks pass;112 complete
 images include216 critical returns and104 two-return owners. The general
-family has a written source/row-table proof. Independent audits are live.
+family has a written source/row-table proof and independent ACCEPT.
+The later ALL-critical theorem's separate audit is live.
 Original full tiles are not fresh reserve; unrestricted allocation remains open.
 
 The [all-first/LONG receiver theorem](docs/FULL_FIRST_AND_LONG_RECEIVER_INJECTION.md)

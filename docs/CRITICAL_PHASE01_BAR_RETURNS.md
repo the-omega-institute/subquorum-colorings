@@ -167,6 +167,23 @@ legs; G supplies the central bar rows2,3 and stems8,W-5; Hsource supplies
 the central rows7,8 and stems9,W-6. Bleft/Bright supply the remaining lower
 bars and legs. These descriptions also directly distinguish all sources.
 
+For completeness, the full labelled endpoint refinement is:
+
+| Source | Rows | Columns |
+|---|---|---|
+| O | 0,1 | [2,W+1] |
+| O | 2 through12 | 2,W+1 |
+| Fleft | 2,11 | [3,7] |
+| Fleft | 3 through10 | 3,4 |
+| Fright | Same rows as Fleft | Column reflection rho of Fleft |
+| Bleft | 12,17 | [3,7] |
+| Bleft | 13 through16 | 6,7 |
+| Bright | Same rows as Bleft | Column reflection rho of Bleft |
+| G | 2,3 | [8,W-5] |
+| G | 4 through8 | 8,W-5 |
+| Hsource | 7,8 | [9,W-6] |
+| Hsource | 4,5,6 | 9,W-6 |
+
 The union of mandatory original supports minus P is T=Tleft union rho(Tleft),
 where rho acts only on the column and Tleft has these22 points:
 
@@ -192,6 +209,18 @@ no additional opposite-side neighbor at the minimum W=20. This proves
 support retention and complete feasibility for EVERY even W>=20, without
 using a finite width cutoff. All vertices are within the stated grid.
 
+An explicit support check can retain the source labels as well. O contributes
+(r,1) for r=0,2,...,12 and(13,2), with anchors(r,2) and(12,2).
+Fleft contributes(3,6),(10,6),(11,8), anchored respectively at(2,6),(11,6),
+(11,7). Bleft contributes(13,4),(16,4),(17,2),(18,3),(18,5),(18,7), with
+anchors(12,4),(17,4),(17,3),(17,3),(17,5),(17,7). G contributes(r,7) for
+r=4,6,8 and(9,8), anchored at(r,8) and(8,8). Hsource contributes(5,10),
+anchored at(5,9). Reflection supplies the other22 points. Every omitted
+original support is consumed: O's odd inner supports by Fleft/Fright;
+each F's remaining supports by O, its B and G; each B's remaining supports
+by its F and O; G's outer bar supports by the two F's and its odd inner
+supports by Hsource; Hsource's remaining eight supports by G.
+
 The union matching has3W+37 edges and6W+74 distinct endpoints. Since |T|=44,
 
     |M|+|T|=3W+81,   half-area-(|M|+|T|)=7W-41>0.             (5)
@@ -216,14 +245,19 @@ Ten new scoped Lean declarations compile, and all ten axiom prints pass.
 Together with the later ALL-critical proof, the combined validation receipt
 records19 declarations in
 [the formal receipt](../output/critical-bar-regular-separation-formal-check.json).
-Independent review a2e3a2cb-b711-454f-be21-c1467e16cc48 is live; it audits
-this note and the complete family, not the later ALL-critical extension.
-Its current state is in
+Independent review a2e3a2cb-b711-454f-be21-c1467e16cc48 completed ACCEPT
+at10:44:18 UTC. Its19,102-character answer matches the original exit0/DONE
+stream exactly, observed gpt_6/pro. It independently reconstructs the role
+proof, labelled endpoints, consumed/retained support and anchor tables,
+minimum width, matching counts and closed parallel contacts for ALL even
+W>=20. Inherited injections/census/AA remain explicit inputs. It does not
+certify local executions or novelty, or review the later ALL-critical
+extension. Its record is in
 [the review receipt](../output/critical-phase01-bar-returns-review.json).
 
 The [reproducible controls](../develop/check_critical_phase01_bar_returns.py)
 pass1,984 phase01 original endpoint images with96 surviving bar-corner
-roles. Thirteen family widths20 through40 by2, plus60 and100, and the
+roles. The13 family widths are20 through40 by2, plus60 and100; with the
 preceding six-source fixture give112 complete partition-preserving images:
 216 critical returns,216 distinct original full bar tiles and104 cases
 using both corners of one receiving owner. There are432 regular additional
