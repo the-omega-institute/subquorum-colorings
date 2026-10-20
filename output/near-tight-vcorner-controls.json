@@ -1,0 +1,254 @@
+{
+  "status": "PASS",
+  "rotors": {
+    "anchored_footprints": 4,
+    "south_adjacent_tip_pairs": 4,
+    "rotor_followed_by_terminal_collisions": 2,
+    "terminal_followed_by_rotor_collisions": 2
+  },
+  "boundary": {
+    "anchored_U_boundary_roles": 23040,
+    "forced_endcap_and_inner_support_stencils": 32,
+    "surviving_left_south_terminal_roles": 1266
+  },
+  "chains": {
+    "counts": {
+      "disjoint_five_source_PARTIAL_chains": 364
+    },
+    "examples": [
+      [
+        [
+          [
+            14,
+            18,
+            4
+          ],
+          [
+            true,
+            true,
+            false
+          ],
+          [
+            1,
+            20
+          ]
+        ],
+        [
+          [
+            6,
+            12,
+            4
+          ],
+          [
+            true,
+            false,
+            false
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            6,
+            6,
+            4
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            9,
+            17
+          ]
+        ],
+        [
+          [
+            8,
+            8,
+            4
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            11,
+            18
+          ]
+        ],
+        [
+          [
+            10,
+            10,
+            4
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            13,
+            19
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            14,
+            18,
+            4
+          ],
+          [
+            true,
+            true,
+            false
+          ],
+          [
+            1,
+            20
+          ]
+        ],
+        [
+          [
+            6,
+            12,
+            6
+          ],
+          [
+            true,
+            false,
+            false
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            6,
+            6,
+            4
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            9,
+            17
+          ]
+        ],
+        [
+          [
+            8,
+            8,
+            4
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            11,
+            18
+          ]
+        ],
+        [
+          [
+            10,
+            10,
+            4
+          ],
+          [
+            false,
+            true,
+            true
+          ],
+          [
+            13,
+            19
+          ]
+        ]
+      ]
+    ],
+    "scope": "Endpoint-disjoint original C/X/Q1/D/Q2 chains only; no complete extension claimed."
+  },
+  "prior_targets": {
+    "S_collision_and_self_exclusion": 48,
+    "P_collision_and_self_exclusion": 48,
+    "Ecomp_collision_and_self_exclusion": 48,
+    "Scomp_collision_and_self_exclusion": 48
+  },
+  "repeated_owner": {
+    "middle_is_original_B": true,
+    "endpoints_supports_and_matching_identical": true,
+    "scope": "Endpoint-disjoint PARTIAL C/X/Q1/B/Q2 control, not a complete witness."
+  },
+  "integer_controls": 1701,
+  "next_gap": {
+    "gap": 8,
+    "east_terminal_role_survives_endpoint_constraints": true,
+    "specifications": [
+      [
+        [
+          18,
+          18,
+          8
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      [
+        [
+          6,
+          10,
+          4
+        ],
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          6,
+          4,
+          4
+        ],
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          2,
+          18
+        ]
+      ]
+    ],
+    "scope": "PARTIAL only; explains failure of the gap-six boundary-role proof to cover gap eight. Not a complete-fusion counterexample to double activation or allocation."
+  },
+  "scope": "Finite discovery/verification supplements the general written proof. Original-source role exhaustion, labelled reconstruction and global joint injection are not replaced by these controls."
+}

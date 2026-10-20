@@ -137,8 +137,12 @@ jointly without reusing the old short-H pair pool. Complete connected
 eleven-source families realize every even b>=6. The later
 [tight-Vcorner activation theorem](TIGHT_VCORNER_ACTIVATION_TRANSFER.md)
 resolves a=h-4 into new joint activation targets, with its own verification
-and independent-review scope. Wider and other unmatched H, nontight
-Vcorner and universal coverage remain open.
+and independent-review scope. The later
+[near-tight double-activation theorem](NEAR_TIGHT_VCORNER_DOUBLE_ACTIVATION.md)
+resolves a=h-6 with two jointly distinct activation targets per claim,
+giving an integer-certificate gain of one per claim. Its verification and
+written review have separate scopes. Wider and other unmatched H,
+Vcorner a<=h-8 and universal coverage remain open.
 
 ## 3. A stronger obstruction: south incident length four is impossible
 
