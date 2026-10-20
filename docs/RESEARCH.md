@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [feasible contact-hull localization](CONTACT_HULL_LOCALIZATION_AND_RAW_CONTACT_OBSTRUCTION.md)
+identifies each component collection's UNIQUE least old contact carrier by exact
+Horn closure. All R/N/G/mu increments localize to that complete feasible core;
+aggregate losing groups use its reserve once. Raw endpoint neighbors alone can
+be infeasible: an explicit J24 support forces a third old owner with no direct
+new contact. Four NEW source-level Lean declarations,704images383680contact
+subextensions and a60-endpoint/26-selection counterexample certificate pass.
+Written review088ddf2e accepts the result with the empty-core convention now
+made explicit. Contact-core standalone reserve is not uncommitted margin;
+FULL allocation and rectangular-grid equality remain open.
+
 21 October: [exact component loss and the marked-demand gap](COMPONENT_LOSS_AND_THE_MARKED_DEMAND_GAP.md)
 give a general simultaneous loss bound for every complete feasible mixed-source
 extension: all new-endpoint component subunions are legal and R/N/G/mu are affine.
