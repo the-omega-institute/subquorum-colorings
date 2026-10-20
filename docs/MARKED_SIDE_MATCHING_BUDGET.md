@@ -84,7 +84,8 @@ This is a genuine matching-size budget, not an allocation of fresh
 geometric defect units. One source's matching is summed ONCE irrespective
 of how many sides it witnesses; each assigned side is counted ONCE by
 the original-endpoint injection. No U0,H,X,A or full-tile resource is
-spent again. Rotors contribute no marks and their matching can be ignored.
+spent again. No assigned marked-side endpoint is rotor-owned; rotor
+matching edges can be left in the nonnegative unused remainder.
 
 ## 3. Combine the positive and marked-side budgets
 
@@ -143,7 +144,8 @@ The exact integer form is54|T|+52|M|<=27mn. Its gain over5/6 is
 
 The assignment, original boundary-role table, original matching partition
 and exact physical ledger are written dependencies. New universal Lean
-declarations check the phase capacity, 9G<=4Mneg, combined budget, signed
+declarations check arithmetic consequences of the supplied phase capacities,
+including 9G<=4Mneg, the combined budget, signed
 margin deductions and exact integer coefficients. These are not an
 end-to-end formalization of arbitrary physical source fusions.
 
@@ -161,7 +163,15 @@ nonexceptional budgets. All192 physical controls distinguish G from S.
 No new complete AA fixture is claimed. See
 output/marked-side-matching-budget-formal-check.json and
 output/marked-side-matching-budget-controls.json. Independent audit
-f8df3fbb/conv_2d53deaff3d58a74/original15195 is live; no acceptance yet.
+f8df3fbb completed ACCEPT at2026-10-20T06:35:51.861UTC, observed gpt_6/pro,
+19988characters. Original stream15195 exits0/DONE and exactly matches the
+same task's terminal response. The audit reconstructs the physical mark
+injection, source-only2/2/4 capacities, source-level matching nonreuse and
+both coefficients. It treats the established complete rotor barriers and
+support catalogue as identified geometric dependencies; it does not
+independently rerun their omitted role enumeration or certify executions.
+Its refinements about supplied Lean premises and rotor-owned assignments
+are incorporated here. See output/marked-side-matching-budget-review.json.
 
 This quantitative step does not resolve the two width-six negative-source
 boundary routes or exclude a complete finite cycle. Continue those routes
