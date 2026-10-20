@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac, user-selected",
+  "lean_version": "4.33.0",
+  "sources": [
+    "formal/SubQuorum/NeutralPhaseElevenExit.lean",
+    "formal/SubQuorum/NeutralPhaseElevenInjection.lean"
+  ],
+  "total_theorem_declarations": 16,
+  "total_helper_definitions": 1,
+  "total_named_declarations": 17,
+  "source_checks": [
+    {
+      "source": "formal/SubQuorum/NeutralPhaseElevenExit.lean",
+      "original_exec_session": 80987,
+      "exit_code": 0,
+      "memory_free_percent": 70,
+      "warnings": "Two unused minimum-leg-height binders in tagged-stencil theorem; no proof failures."
+    },
+    {
+      "source": "formal/SubQuorum/NeutralPhaseElevenInjection.lean",
+      "original_exec_session": 82953,
+      "exit_code": 0,
+      "memory_free_percent": 42
+    }
+  ],
+  "dependency_build": {
+    "source": "formal/SubQuorum/NeutralSupportInjection.lean",
+    "original_exec_session": 53419,
+    "exit_code": 0,
+    "memory_free_percent": 45
+  },
+  "axiom_audit": {
+    "original_exec_session": 70200,
+    "exit_code": 0,
+    "memory_free_percent": 67
+  },
+  "process_preflights": "Both ordinary and -c macOS ps compared exact comm basename lean/lake before every invocation. No real lean/lake active before final builds or audit. One invocation at a time.",
+  "declarations": [
+    {
+      "name": "NeutralPhaseElevenExit.phase_eleven_parity_of_receiver_origin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.phase_eleven_forced_owner_role",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.west_facing_north_terminal_hits_active_source",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.physical_phase_eleven_owner_is_corner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.phase_eleven_corner_exit_geometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.phase_eleven_corner_width_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.original_corner_disjointness_implies_width_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.passive_source_excludes_second_forced_point",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.shortest_legs_exclude_phase_eleven",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.long_corner_continuation_geometry",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenExit.long_corner_has_tagged_endpoint_stencil",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenInjection.second_forced_frame_is_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenInjection.first_and_second_forced_stencils_are_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenInjection.second_forced_points_are_injective",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenInjection.first_and_second_point_sets_are_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "NeutralPhaseElevenInjection.combined_forced_points_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Arbitrary-dimension physical phase11 role/parity/ownership adapters, terminal collision, corner/triple/support geometry, width bound from original disjointness, short-leg exclusion, second-force stencils; exact cardinal-frame tag exhaustion, owner/width recovery, global second-point injection and first/second separation. Physical tag construction and contact geometry are written adapters. No completed coefficient-one allocation, mixed-chain termination or grid theorem."
+}
