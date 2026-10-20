@@ -121,9 +121,12 @@ More generally, if k assigned subtotals d_j have o odd entries, then
 
     sum_j ceil(d_j/2) = (sum_j d_j+o)/2.            (7)
 
-For an even total, global reserve is only (sum_j d_j)/2. Separate rounding
-adds o/2 units that have not been supplied. This defect persists even
-when the assigned underlying defect occurrences are disjoint.
+When these subtotals partition the whole defect budget, sum_j d_j=D,
+global reserve is (sum_j d_j)/2. Separate rounding then adds o/2 units
+that have not been supplied, even when the assigned underlying defect
+occurrences are disjoint. If E=D-sum_j d_j>=0 remains unassigned, the
+rounded demand minus actual reserve is instead (o-E)/2; unused capacity
+can cover some or all of the rounding surcharge.
 
 The two-source numbers are an exact counterexample to the inference
 "one distinct defect per double mark plus global parity pays every double
@@ -171,9 +174,14 @@ not a review verdict for this new multiple-positive deduction.
 The first new audit8194bfbd terminated with infrastructure_retry_exhausted
 after four browser-typing connection failures and no mathematical answer.
 Only after that terminal state, a standalone replacement82dc60f9 was
-dispatched in conv_68f343f25e429e97 on stream95972. Its verdict remains
-pending; see output/multiple-positive-saturation-review-live.json. Original
-general researchc112d2fe remains live and was not resubmitted.
+dispatched in conv_68f343f25e429e97 on stream95972. It completed ACCEPT
+at03:05:35.933UTC, observed gpt_6/pro, for the written arbitrary-N theorem,
+width-six arbitrary heights, source injection, exact demand and limited
+arithmetic obstruction. The reviewer did not execute code or Lean.
+Its requested exhaustion/unused-capacity clarification in Section4 is
+incorporated. See output/multiple-positive-saturation-review.json and
+output/multiple-positive-saturation-review-live.json. Original general
+researchc112d2fe remains live and was not resubmitted.
 
 The unrestricted mixed joint allocation, physical low-defect demand
 classification, and arbitrary-grid triple equality remain open.
