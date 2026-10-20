@@ -14,8 +14,12 @@ hull. Every legal restriction's margin can only decrease, by half the
 deleted nonnegative tile defect. Thus every hypothetical negative-margin
 counterexample has this bounded geometric representative, for arbitrary n.
 Three seam-level Lean lemmas and 6,480 physical compression steps pass;
-general catalogue, reverse-clause and counting adapters are written, with
-independent review pending. The full allocation inequality remains open.
+general catalogue, reverse-clause and counting adapters are written.
+Independent review accepted the substantive argument under the stated ledger,
+but required restricting descent to internal strips. That correction is now
+explicit, with strict span decrease checked at every operation; the review
+verdict remains REVISE pending confirmation. The full allocation inequality
+remains open.
 
 21 October: [canonical gate consumption](MARKED_SIDE_GATE_CONSUMPTION.md)
 identifies every actual positive-side mark with one fixed support consumer.

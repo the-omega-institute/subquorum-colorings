@@ -118,7 +118,7 @@ def cut_at(modules):
     forbidden = {coordinate+step for coordinate in features for step in range(-4, 5)}
     occupied_rows = [row for module in modules
                      for row, _ in module['endpoints'] | module['selected']]
-    return next((row for row in range(min(occupied_rows), max(occupied_rows))
+    return next((row for row in range(min(occupied_rows)+1, max(occupied_rows)-1)
                  if row % 2 == 0 and row not in forbidden and row+1 not in forbidden), None)
 
 
@@ -135,6 +135,10 @@ def canonical_demand_hull(modules, clauses):
 
 
 def compress_once(modules, cut):
+    old_rows = [row for module in modules
+                for row, _ in module['endpoints'] | module['selected']]
+    assert min(old_rows) < cut and cut+1 < max(old_rows)
+
     def move(point):
         row, column = point
         assert row not in (cut, cut+1)
@@ -160,6 +164,9 @@ def compress_once(modules, cut):
             current = rebuilt_u(current)
         assert current['charge'] > 0 if module['charge'] > 0 else current['charge'] <= 0
         transformed.append(current)
+    new_rows = [row for module in transformed
+                for row, _ in module['endpoints'] | module['selected']]
+    assert max(new_rows)-min(new_rows) == max(old_rows)-min(old_rows)-2
     whole = frozenset(range(len(modules)))
     assert feasible(modules, whole) and feasible(transformed, whole)
     assert set(implications(modules)[0]) == set(implications(transformed)[0])

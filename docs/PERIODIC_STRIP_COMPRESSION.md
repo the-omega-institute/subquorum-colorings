@@ -178,15 +178,22 @@ The operation shortens geometry; it is not source deletion or legal union.
 
 ## 6. Termination and the linear coordinate bound
 
-Every permitted deletion reduces the total occupied row span by two;
-the global extremal occupied rows occur among the source interval ends
-and are protected. Repeat until no permitted even q exists.
+For descent, consider only permitted deletions strictly inside the current
+occupied bounding interval. If its extremal rows are ell and u, require
+ell<q and q+1<u in addition to the protection condition in Section 3.
+The extremal occupied rows occur among the source interval ends and are
+protected. Each permitted internal deletion leaves occupied points on both
+sides and reduces the occupied row span by exactly two. Repeat until no
+permitted internal even q exists. This terminates by strict descent of a
+nonnegative integer. Strips outside the occupied interval are irrelevant
+to this procedure, even when they satisfy the local protection condition.
 
 With K<=40n distinguished row coordinates, their distance-four protective
 intervals contain at most 9K integer rows and have at most K components.
-Between these intervals every remaining unprotected run has length at most
-two. A run of length at least three contains an aligned even-starting pair,
-which would permit another deletion. There are at most K+1 such runs.
+Within the occupied bounding interval, every remaining unprotected run has
+length at most two. A run of length at least three contains an aligned
+even-starting pair, which would permit another internal deletion because
+the extremal rows are protected. There are at most K+1 such runs.
 Thus the occupied row span is at most
 
     9K+2(K+1)=11K+2 <= 440n+2 <= 512n+2.
