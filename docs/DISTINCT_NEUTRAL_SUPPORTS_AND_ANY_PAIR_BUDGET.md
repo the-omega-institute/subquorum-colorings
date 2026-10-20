@@ -137,8 +137,9 @@ for the same source collection gives
 
     4ell+M10+2J01 <= M01+4A+2H.                     (2)
 
-In AA all these nonfull stops are absent; the remaining forced receivers are
-full and their next points still require a genuinely nonreused continuation.
+Within the fixed AA full endpoint component c, H_c=0, so D_c=C0_c=J01_c=0.
+The remaining forced receivers in c are full and their next points still
+require a nonreused continuation.
 
 ## 5. Reserve U singleton slots beside ANY exact original pair
 
@@ -198,8 +199,9 @@ constraints, not a new uniform coefficient replacing the accepted complete-sourc
 
 The Lean companion proves normalized direction-tag uniqueness over all eight
 frames, the exact finite orientation catalogue, the conditional support-retention
-contradiction, arbitrary-list cap/pair nonreuse, and conditional count/shared
-budget deductions. The lattice normalization, source tag construction, global
+contradiction, arbitrary-list capacity conditional on cap/pair separation and
+pool inclusion, and conditional count/shared budget deductions. The lattice
+normalization, source tag construction, global
 forced-point injection adapter, source-role exclusion and actual stop separation
 are written physical arguments. They are not replaced by arithmetic premises.
 
@@ -212,6 +214,13 @@ contacts force eight distinct endpoints; all eight are nonfull regular stops
 and Pneg reservations. Complete full-stop/AA coverage is ZERO. The original
 eight-frame classification is exhaustive because all cardinal orientations
 are included; arbitrary dimensions enter through the proven minimum stencil.
-Execution and independent-review receipts are recorded separately.
+Execution and independent-review receipts are recorded separately. Independent
+review6b3c685f completed ACCEPT, observed gpt_6/pro, for the injection, whole
+closed01 owner exclusion, J01/D/C0 shared stop budget, any-pair cap reservation
+and exact unused-slot identity. Its two precision edits to component scope and
+conditional list capacity are incorporated above. The original stream92159
+completed successfully with DONE and its19206-character answer exactly matches
+the same-task terminal response. This is written-proof review, not execution
+certification, and excludes the later closed-receiver separation theorem.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
