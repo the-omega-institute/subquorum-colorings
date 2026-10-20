@@ -168,6 +168,12 @@ See output/multiple-positive-saturation-controls.json and
 output/multiple-positive-saturation-formal-check.json. The preceding
 source-local geometry revieweb184fae completed ACCEPT separately; it is
 not a review verdict for this new multiple-positive deduction.
+The first new audit8194bfbd terminated with infrastructure_retry_exhausted
+after four browser-typing connection failures and no mathematical answer.
+Only after that terminal state, a standalone replacement82dc60f9 was
+dispatched in conv_68f343f25e429e97 on stream95972. Its verdict remains
+pending; see output/multiple-positive-saturation-review-live.json. Original
+general researchc112d2fe remains live and was not resubmitted.
 
 The unrestricted mixed joint allocation, physical low-defect demand
 classification, and arbitrary-grid triple equality remain open.
