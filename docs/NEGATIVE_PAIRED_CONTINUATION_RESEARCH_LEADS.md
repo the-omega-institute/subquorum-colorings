@@ -10,6 +10,15 @@ U-only singleton pool and fixing the AA equation reference, now applied.
 Negative rotor singletons are excluded from that sharp count. The all-owner path classification
 and global split-transfer closure below still remain unverified leads.
 
+Further update: PASSIVE_CORNERS_AND_NEUTRAL_OWNERSHIP_CYCLES.md proves the
+passive-corner B budget and AA other-corner-full result, review3361b134 ACCEPT.
+NEUTRAL_U_PORT_TURNING_AND_SHARED_BUDGET.md reconstructs the closed neutral U
+turning argument with explicit passive10 cost and cross-component nonreuse.
+Its11 scoped Lean checks pass and independent reviewbb9caa70 is pending.
+Open paths, full/rotor exits and the full finite closure remain unresolved.
+The original proposed cap/count descriptions below are historical research
+leads; use the subsequent proof notes for the corrected established scope.
+
 20 October 2026. This records proposals from completed Oracle research
 3b29a40b, not new independently established theorems. The complete response
 is output/negative-bottom-cycle-research.json,23142characters, observed

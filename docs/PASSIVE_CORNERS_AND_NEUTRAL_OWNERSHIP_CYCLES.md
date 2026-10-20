@@ -24,7 +24,7 @@ Keep A,U0,Z0,H,R and mu from EXACT_GEOMETRIC_EVENT_RESERVE.md:
 
 G counts marked positive sides, not original negative charge.
 
-Let B count original phase10 outer-corner singleton occurrences whose actual
+Let B count original phase10 U outer-corner singleton occurrences whose actual
 receiver is nonfull2P1T, whose original support is consumed, and whose original
 blank is not an endpoint. Count each original corner once. The theorem is
 
@@ -34,11 +34,12 @@ blank is not an endpoint. Count each original corner once. The theorem is
 In the established nonexceptional failingR1 AA component, the stronger
 conclusions are
 
-    B <= A=2,
+    B_c <= A_c=2,
     a phase10 owner with one B corner has its other corner receiver full. (2)
 
 The AA census and all its consequences below concern the SAME endpoint
 component. Other components may have additional positive activations.
+Here B_c and A_c are B and A restricted to that AA endpoint component.
 
 ## 2. A passive corner either stops at H or reaches a positive source
 
@@ -176,6 +177,8 @@ constraint and is not an additional ledger payment.
 The broad rule “a finite ownership cycle forces a positive reserve or
 A/X/U0/Z0/H contribution” is false. This does not refute a rule retaining
 the special negative-U and AA-core hypotheses.
+In both the four-rotor example and the rectangular family take Topt empty;
+the exact selected-set and ambient-slack formulas use no optional selections.
 
 The smallest control here has four reference rotors translated by
 
@@ -232,9 +235,10 @@ fits in the even square of side2(h+j)+4, where the actual ambient slack is
 
 An invariant based only on the existence or number of arbitrary ownership
 cycles cannot prove the desired compensation. It must retain the negative-U
-roles or their actual defect/activation transfers. The neutral-port turning
-proposal from the original research response has not been reconstructed or
-used as a theorem in this note.
+roles or their actual defect/activation transfers. The separate reconstruction
+NEUTRAL_U_PORT_TURNING_AND_SHARED_BUDGET.md now retains these roles in closed
+two-port U curves, with an explicit passive10 cost. That result is not used
+in the passive-corner or rotor-family proofs here.
 
 ## 6. Validation scope and next missing transfer
 
@@ -261,9 +265,13 @@ have separate nonvacuous physical controls. No complete AA fixture is claimed.
 Controls PASS640 complete feasible images with136 counted corners, all on
 the direct H branch;32 phase images of the four-rotor cycle; and8 rectangular
 family sizes, up to cycle rank49. These are discovery/verification controls,
-not substitutes for the general proofs above. Independent review is running
-in conversation conv_58f8d949019f143a, original stream session20374; no accepted
-review verdict is claimed yet.
+not substitutes for the general proofs above. Independent review3361b134
+completed ACCEPT at07:40:40.666UTC, observed gpt_6/pro. It checks the physical
+role classification, C0 injection, simultaneous defect capacity, both AA
+corner exclusions and the all-size rotor family under the stated dependencies.
+It does not certify execution. The explicit U type, component subscripts and
+empty optional-selection clarification it requested are incorporated above.
+See the independent review receipt for original-stream transport status.
 
 The missing step is to force a relevant negative-source continuation to
 reach these chargeable corners, or to handle its full-receiver/phase01/rotor
