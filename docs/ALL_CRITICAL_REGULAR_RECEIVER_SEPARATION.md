@@ -137,8 +137,9 @@ Use the SAME B+J<=2A+H ledger once. Equations(3)--(4) yield respectively
     |X union Ye|+2A+H >= 2(C01+L11)+Ke+B,
     |X union Ye union Vc|+2A+H >= 2(C01+L11)+Ke+4Kc+B.          (5)
 
-All terms use their actual, jointly chosen physical families. No receiving
-owner is counted more than its two labelled bar corners. No H or cap/singleton
+All terms use their actual, jointly chosen physical families. Each owner in
+C contributes to Vc through at most its two labelled upper outer bar corners.
+No H or cap/singleton
 reservation is spent twice, and neither Vc nor a critical point is declared
 a reserve payment.
 
@@ -165,10 +166,15 @@ exactly3 tag-compatible remaining cases. They also check14,400 original U
 endpoint images,144 downward terminal survivors and all16 rotor translations
 owning the origin, with2 three-blocker survivors. See
 [the control receipt](../output/all-critical-regular-separation.json).
-Independent review13288890-8893-4d75-ae5a-c48f772e87c3 is live and has
-[its own receipt](../output/all-critical-regular-separation-review.json).
-Acceptance of a predecessor or the separate phase01-family audit does
-not establish acceptance of this new theorem.
+Independent review13288890-8893-4d75-ae5a-c48f772e87c3 completed ACCEPT
+on20 October at10:49:47 UTC, observed gpt_6/pro. It checked this new theorem,
+the original-owner/profile/parity adapters and equations(3)--(6) under the
+explicit inherited hypotheses. See [its own receipt](../output/all-critical-regular-separation-review.json)
+and [full response](../output/all-critical-regular-separation-review-response.txt).
+Its suggested clarification restricts the two-bar-corner wording to owners
+in C, as now stated above. This is independent mathematical/source review,
+not execution certification, a seven-source-family audit or a proof of the
+remaining unrestricted allocation.
 
 [`CriticalRegularReceiverSeparation.lean`](../formal/SubQuorum/CriticalRegularReceiverSeparation.lean)
 formalizes the exhaustive normalized three-case catalogue, arbitrary legal
