@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-20T01:27:51.108Z",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/ShortTipCapObstruction.lean",
+  "validation_mode": "Full current source followed by individual #print axioms; unchanged imported dependency freshly compiled",
+  "dependency": "formal/SubQuorum/WidthEightUCapObstruction.lean",
+  "dependency_exec": 45795,
+  "dependency_exit_code": 0,
+  "dependency_preflight_memory_free_percent": 40,
+  "previous_partial_source_exec_15_declarations": 56905,
+  "full_current_source_and_audit_exec": 51126,
+  "source_and_audit_exit_code": 0,
+  "actual_lean_lake_preflight": [],
+  "memory_pressure_free_percent": 42,
+  "parallel_jobs": 1,
+  "declaration_count": 17,
+  "declarations": [
+    "flexible_four_site_stencil",
+    "short_tip_forces_inner_support_and_bar",
+    "core_endpoint_disjointness",
+    "first_support_forcing",
+    "short_tip_blockers_present",
+    "first_rotor_owner",
+    "rotor_branch_endpoint_disjointness",
+    "rotor_branch_forced_support",
+    "rotor_branch_no_rotor_owner",
+    "rotor_branch_barrier_present",
+    "inner_support_has_two_neighbors",
+    "inner_support_no_rotor_owner",
+    "reflected_three_blockers_present",
+    "bounded_even_cap_tip",
+    "long_tip_requires_wide_cap",
+    "arbitrary_cap_covers_bar",
+    "arbitrary_cap_covers_right_stem"
+  ],
+  "individual_axiom_audit": {
+    "flexible_four_site_stencil": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "short_tip_forces_inner_support_and_bar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "core_endpoint_disjointness": [],
+    "first_support_forcing": [],
+    "short_tip_blockers_present": [],
+    "first_rotor_owner": [],
+    "rotor_branch_endpoint_disjointness": [],
+    "rotor_branch_forced_support": [],
+    "rotor_branch_no_rotor_owner": [],
+    "rotor_branch_barrier_present": [],
+    "inner_support_has_two_neighbors": [],
+    "inner_support_no_rotor_owner": [],
+    "reflected_three_blockers_present": [],
+    "bounded_even_cap_tip": [
+      "propext",
+      "Quot.sound"
+    ],
+    "long_tip_requires_wide_cap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "arbitrary_cap_covers_bar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "arbitrary_cap_covers_right_stem": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Universal distance1..4 four-site U stencil; universal short even tip<=6 implies inward original support and bar endpoint at one of two specified offsets, with arbitrary independent opposite height and width and all8isometries;43endpoint mask,3complete16role owner tables, forcing/blocker geometry; conditional even cap-wall/width arithmetic; universal cap bar/right-stem inclusion. Imports unchanged width8 terminal/ray lemmas. Original-source image/support adapters, physical back-ray wall bound, W6 arbitrary-left-height cavity transfer and admission theorem assembly remain written. No whole arbitrary-extension Lean theorem and no sorryAx/native_decide.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-shorttip-check/SubQuorum",
+    "lean -o /tmp/subquorum-shorttip-check/SubQuorum/WidthEightUCapObstruction.olean formal/SubQuorum/WidthEightUCapObstruction.lean",
+    "LEAN_PATH=/tmp/subquorum-shorttip-check lean formal/SubQuorum/ShortTipCapObstruction.lean"
+  ]
+}

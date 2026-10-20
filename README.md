@@ -803,4 +803,21 @@ The new six-site corridor exclusion applies to all U dimensions and
 isometries.30 dimension/240 isometry controls check8768 endpoints.
 Its16 universal coordinate/local declarations and individual axiom audits
 pass locally. The general source-image/support adapter and noncompletion
-assembly remain written. This later theorem is outside previous ACCEPTs.
+assembly remain written. Its separate reviewfd908a7c completed ACCEPT for
+both ownership branches and the full-support/source-image adapters;
+see the [assessment](docs/reviews/2026-10-20-width-eight-U-cap-accepted-assessment.md).
+
+The [arbitrary-width admission barrier](docs/SHORT_TIP_CAP_ADMISSION_BARRIER.md)
+now treats caps U(W,A,4)+(-4,-W) with every even W>=6 and A>=4.
+Any complete extension needs W>=12 and an incoming leftward U terminal
+of height8<=h<=W-4, with its bar downward. A fixed43-endpoint mask excludes
+rotor ownership; short U tips create an inward support with no permitted
+owner. This eliminates widths6,8,10 for every independent cap left height,
+while leaving all longer incoming legs explicitly open. General mixed
+joint compensation and arbitrary grids remain open.
+The new17 scoped Lean declarations/individual axiom audits pass, including
+the distance-parametrized stencil, arbitrary opposite-height support
+consequence, mask geometry and all-parameter cap inclusions.30 source
+dimensions/240 isometries check8768 endpoints;24 independent cap parameters
+and4 width-six left heights check the geometric adapters. The full
+admission theorem assembly and physical wall argument remain written.

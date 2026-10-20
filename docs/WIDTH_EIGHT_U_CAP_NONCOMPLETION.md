@@ -166,8 +166,15 @@ for this cap. That result alone excludes only that finite search. The
 proof above permits all U dimensions and all source counts and does not
 depend on that UNSAT conclusion.
 
-This width-eight theorem is later than the accepted width-six review;
-no earlier ACCEPT covers it. Arbitrary wider caps and the general mixed
+Separate reviewfd908a7c-bc8e-4aeb-8391-3d1eb4babc77 completed ACCEPT at
+01:23:01.667UTC, observed gpt_6/pro. Original stream30074 exits0/DONE and
+matches all16760 terminal response characters. It accepts both ownership
+branches, the full-support exclusion of q from its original owner, all
+source-image adapters and the three exact rotor tables. Execution evidence
+is separate. In particular the rotor-branch four-site presence declaration
+checks geometry; its universal U exclusion is the written role argument in
+Section4. Later arbitrary-width short-tip work is outside this ACCEPT.
+Arbitrary wider caps and the general mixed
 U/rotor compensation inequality remain open. No email, draft or submitted
 manuscript action is part of this result.
 
