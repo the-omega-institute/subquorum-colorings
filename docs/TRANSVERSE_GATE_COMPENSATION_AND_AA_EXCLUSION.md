@@ -237,12 +237,19 @@ explicit dimension-classification dependency before the final both-width6
 conclusion. The inherited definition of e and nonexceptional dimensions,
 and the applicable accepted four-stem core result, are now stated above.
 This is an exposition/dependency repair, not a new dimension restriction.
-A follow-up must assess that repair before a whole-note ACCEPT is claimed.
 See output/transverse-gate-compensation-initial-review.json.
 
-Follow-up174c0a0f-d9ce-442b-8519-e1ec096aac2c is dispatched in the
-same conversation, original stream62098. It asks specifically whether
-the explicit inherited e=0 dimension partition and applicable four-stem
-core theorem close the reported dependency gap. Preserve that handle.
+Follow-up174c0a0f-d9ce-442b-8519-e1ec096aac2c completed ACCEPT at
+2026-10-20T05:21:21.176UTC, observed gpt_6/pro,2339characters. Original
+stream62098 exits0/DONE and exactly matches the terminal response.
+It accepts the repaired theorem under its stated accepted dependencies:
+e=0 places the actual doubles in the nonexceptional dimension class,
+transverse compensation excludes short8/10, and the applicable four-stem
+theorem gives height difference at least10 for each surviving width6
+double. It imposes no dimension restriction on one-mark or unmarked
+positives. The verdict does not certify executions or review provenance;
+finite width-six closure and the unrestricted target remain OPEN.
+See output/transverse-gate-compensation-review.json and
+output/transverse-gate-compensation-review-live.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
