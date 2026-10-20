@@ -209,8 +209,12 @@ infrastructure_retry_exhausted/cdp_disconnected@typing after four broker
 attempts, with no mathematical answer. Its failure is archived. After
 that terminal state, a fresh combined review of this proof and
 OCCUPIED_GATE_ACTIVATION_AND_WIDTH_SIX.md was submitted on original
-stream28290 with one text attachment. It is live without a verdict;
-no earlier ACCEPT covers either proof.
+stream28290 with one text attachment. Its transport ended with EOF, but
+the original broker task a6ac6319 completed ACCEPT on 20 October at
+02:12:26 UTC. The verdict covers the two written proofs under the
+supplied source catalogue and ledger. The reviewer did not execute the
+controls or Lean, and did not certify end-to-end source adapters. See
+output/occupied-gate-compensation-review.json for the full response.
 
 The support-routing idea originated in exploratory Oracle task
 ef7e27ea-8c3f-4cdc-8b5d-721df8e896c6. This note reconstructs the

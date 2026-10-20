@@ -185,7 +185,13 @@ the final source/audit commands. No sorryAx/native_decide occurs. See
 output/occupied-gate-activation-formal-check.json for exact scope and
 reproduction. The earlier singleton review failed terminally with
 browser infrastructure errors and no mathematical answer; a fresh
-combined proof review is live on original stream28290, without a verdict.
+combined proof review on original stream28290 completed ACCEPT as broker
+task a6ac6319 at 02:12:26 UTC on 20 October. The original stream ended
+with EOF; authoritative task retrieval recovered the completed answer
+without resubmission. Acceptance covers the written support, collision,
+incidence and parity proofs under the supplied source catalogue and
+ledger, not execution or end-to-end Lean source adapters. See
+output/occupied-gate-compensation-review.json for the full response.
 
 Outside width six, unactivated occupied marks may still have a phase01
 upper-corner or phase11 terminal owner. Phase10 no longer contributes
