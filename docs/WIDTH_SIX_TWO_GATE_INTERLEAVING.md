@@ -52,6 +52,10 @@ blank marked canonical tile exactly an original phase11 upper-corner
     u=(2,2), x=(3,2), zeta=(2,3), y=(3,3),
     positive anchor (3,1), positive protector (1,3).
 
+The accepted pointwise X_i argument identifies each occupied x or zeta
+as its owner's A_i upper corner after excluding the F_i terminal role.
+Thus x or zeta itself is the corner; y is not an additional corner case.
+
 The pair is either{x,y} or{zeta,y}, and its other two corners are not
 original endpoints of that owner. If the upper corner is x, its bar must
 run right and its near stem down: the blank u excludes the other signs.
@@ -122,6 +126,12 @@ phase11 gate has incident h=a-2. The incoming original bar corner tile is
     p=(a,2), t=(a,3), q=(a+1,2).
 
 Its original profile is exactly{p,t},2P0T, without original support.
+The positive also has no original support in Q at arbitrary height:
+its terminal z=(a,1) already has predecessor(a-1,1) and its prescribed
+supports(a,0),(a+1,1), so p=(a,2) cannot be another original support.
+The other three corners of Q have no adjacent original positive endpoint;
+the opposite leg is in column w>=6 and the positive bar is in rows0,1.
+Unique original endpoint anchoring excludes their being positive supports.
 The positive's retained tip support(a+1,1) makes q finally blank.
 The fourth corner is blank or a foreign endpoint: a finally selected
 support there would need an original anchor, which either differs from t
@@ -182,13 +192,14 @@ positive widths remain part of the unrestricted objective.
 
 ## 6. Sharper geometry of the connected A+A residual
 
-In a nonexceptional failing R1 component, the preceding theorem gives
+In a nonexceptional failing R1 component, the accepted two-slot R1 reduction gives
 n0=z=t=0,s=2,A=2,H=U0=Z0=0. Inequality(1) now forces r=0.
 
 For either double of width6, its unactivated side is longer by at least
 four, by(3). Equality4 would give a tight witness and r>=1, impossible.
 Evenness therefore makes the height difference at least SIX. The opposite
-gate has a distinct phase10 owner and the intermediate heights obey(3).
+gate has a distinct phase10 owner; non-tightness sharpens(3) to
+b<=k<=h-2<=a-6.
 
 For either double of width8/10 with heights4/6, the unactivated gate must
 be occupied. The accepted short-side support argument excludes phase01;
@@ -228,9 +239,14 @@ and interleaving occurrences are BOTH ZERO. Separate role controls pass
 checks and24 arbitrary-height corner profiles. Those pairs are not complete
 feasible fusions. The general proof is Sections2--5, not this enumeration.
 
-Independent follow-up task7def602b-459c-44c6-a58b-01e75e356708 is dispatched
-in conversation conv_6e1ca1bc5c0d8141 via original stream61113. It specifically
-reviews this extension; no verdict is inherited from the earlier ACCEPT.
+Independent follow-up task7def602b-459c-44c6-a58b-01e75e356708 completed
+ACCEPT at04:22:52UTC, observed gpt_6/pro,19387characters. Original stream61113
+ended exit0. Acceptance covers the new written interleaving, general-height
+tight witness, simultaneous non-reuse, shared count and all-reserve class
+under the supplied complete-source catalogue and ledger. It does not
+execute code/Lean or establish a complete two-gate fixture. Its three
+exposition clarifications are incorporated above; no earlier verdict was
+inherited. See output/width-six-interleaving-review.json.
 See output/width-six-interleaving-formal-check.json,
 output/width-six-interleaving-controls.json and
 output/width-six-interleaving-review-live.json for scope and task identity.

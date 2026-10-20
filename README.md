@@ -32,6 +32,20 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [support-chain common-pool theorem](docs/SUPPORT_CHAIN_COMPENSATION_AND_RESIDUAL_SATURATION.md)
+adds payments from broken phase11 terminal-gate chains J and unactivated
+positive exterior chains X. Their original regular pairs cannot coincide
+with any old irregular-pair witness, proving U0+H >= 2z+r+J+X and
+sigma >= n0-e-floor((s-r-J-X)/2), with signed integer floor. Component
+rounding strengthens this by floor(o/2) when o components have odd
+residuals. Twelve scoped local Lean declarations/audits and769 physical
+controls pass;65 images improve the earlier bound. Broken-gate L3 stops
+after full caps have no complete fixture here; their propagation proof
+is written. A failing nonexceptional R1 component must have every
+phase11-U receiver full and no consumed exterior support on any
+unactivated positive leg. New independent review is pending. The coupled
+full-chain obstruction and unrestricted grid theorem remain open.
+
 The [width-six interleaving theorem](docs/WIDTH_SIX_TWO_GATE_INTERLEAVING.md)
 proves joint allocation at every reserve when all positive U sources have
 width six and even leg-height difference at most four, with arbitrarily
@@ -44,7 +58,8 @@ provide exclusive witnesses, so no slot is reused. Seventeen scoped local
 Lean declarations and individual axiom audits pass;771 physical images
 include142 tight marked-side occurrences, while complete paid-single-double
 and interleaving fixture coverage is zero. The general geometric adapters
-remain written; the new independent review is pending. The remaining
+remain written; independent review accepts the written extension under
+its stated complete-source dependencies. The remaining
 nonexceptional A+A candidate needs width-six height gaps at least six or
 short width-eight/ten transverse gates. Unrestricted mixed allocation and
 arbitrary-grid equality remain open.

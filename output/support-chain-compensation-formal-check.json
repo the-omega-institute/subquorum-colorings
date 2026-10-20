@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "execution_location": "Local Mac selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/SupportChainCompensation.lean",
+  "successful_source_check": {
+    "exec_session": 14007,
+    "exit_code": 0,
+    "memory_free_percent": 40
+  },
+  "successful_object_build": {
+    "exec_session": 61126,
+    "exit_code": 0,
+    "memory_free_percent": 42
+  },
+  "individual_audit": {
+    "exec_session": 75096,
+    "exit_code": 0,
+    "memory_free_percent": 44
+  },
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 12,
+  "declarations": [
+    "propagate_to_end",
+    "unactivated_chain_has_stop",
+    "no_stopping_defect_fills_chain",
+    "two_pairs_cannot_share_nonfull_square",
+    "separate_slot_lists",
+    "shared_chain_reserve",
+    "joint_from_chain_budget",
+    "signed_chain_margin",
+    "two_extra_units_improve_bound",
+    "signed_remainder_sum",
+    "component_parity_gain",
+    "first_reserve_failure_has_no_chain_payments"
+  ],
+  "individual_axiom_audit": {
+    "propagate_to_end": [
+      "propext",
+      "Quot.sound"
+    ],
+    "unactivated_chain_has_stop": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_stopping_defect_fills_chain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "two_pairs_cannot_share_nonfull_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "separate_slot_lists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "shared_chain_reserve": [
+      "propext",
+      "Quot.sound"
+    ],
+    "joint_from_chain_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "signed_chain_margin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "two_extra_units_improve_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "signed_remainder_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "component_parity_gain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "first_reserve_failure_has_no_chain_payments": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sorry": false,
+  "native_decide": false,
+  "scope": "Finite support-chain induction, first stop before unactivated terminal, endpoint-pair cardinality obstruction, separated finite-slot lists, conditional shared integer allocation margin, signed list-remainder/component parity and R1 failure census. Physical source/role/profile/chain/witness adapters remain written; not an end-to-end arbitrary-grid proof."
+}
