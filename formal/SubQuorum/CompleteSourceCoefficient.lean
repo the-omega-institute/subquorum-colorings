@@ -45,26 +45,26 @@ theorem negative_U_matching_covers_charge (width leftHeight rightHeight matching
     (hcharge : charge ≤ width-1) (hwidth : 6 ≤ width) :
     charge+4 ≤ matching := by omega
 
-theorem combined_source_matching_budget (positive exceptional matching negativeCharge : Nat)
-    (hcost : 9*positive+4*exceptional+negativeCharge ≤ matching)
+theorem combined_source_matching_budget (positive exceptional matching markedSides : Nat)
+    (hcost : 9*positive+4*exceptional+markedSides ≤ matching)
     (reserve : Nat) (margin : Int)
-    (hledger : margin = (positive : Int)+reserve-negativeCharge) :
+    (hledger : margin = (positive : Int)+reserve-markedSides) :
     (10*positive+4*exceptional+reserve : Int)-margin ≤ matching := by omega
 
 theorem universal_charge_scaled_margin
-    (positive exceptional single reserve matching negativeCharge : Nat) (margin slack : Int)
+    (positive exceptional single reserve matching markedSides : Nat) (margin slack : Int)
     (hpartition : exceptional+single ≤ positive)
-    (hcost : 9*positive+4*exceptional+negativeCharge ≤ matching)
-    (hledger : margin = (positive : Int)+reserve-negativeCharge)
+    (hcost : 9*positive+4*exceptional+markedSides ≤ matching)
+    (hledger : margin = (positive : Int)+reserve-markedSides)
     (hcompensation : -(exceptional : Int)-(single : Int)/2 ≤ margin)
     (hslack : margin ≤ slack) :
     0 ≤ 15*slack+matching := by omega
 
 theorem nonexceptional_charge_scaled_margin
-    (positive single reserve matching negativeCharge : Nat) (margin slack : Int)
+    (positive single reserve matching markedSides : Nat) (margin slack : Int)
     (hpartition : single ≤ positive)
-    (hcost : 9*positive+negativeCharge ≤ matching)
-    (hledger : margin = (positive : Int)+reserve-negativeCharge)
+    (hcost : 9*positive+markedSides ≤ matching)
+    (hledger : margin = (positive : Int)+reserve-markedSides)
     (hactivation : single ≤ 2*reserve)
     (hcompensation : -((single : Int)/2) ≤ margin)
     (hslack : margin ≤ slack) :

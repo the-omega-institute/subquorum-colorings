@@ -1,7 +1,9 @@
 # Uniform twelve-thirteenths bound for complete U/rotor fusions
 
 The later CHARGE_AWARE_COMPLETE_SOURCE_COEFFICIENT.md strengthens these
-constants to14/15 and21/22 by including original negative matching costs.
+constants to14/15 and21/22 by counting original marked-side owners' matchings;
+its original G/S notation error is corrected there. The newer
+MARKED_SIDE_MATCHING_BUDGET.md further gives33/35 and26/27.
 The proof below remains a valid earlier deduction.
 
 20 October 2026. The accepted two-slot compensation theorem implies a

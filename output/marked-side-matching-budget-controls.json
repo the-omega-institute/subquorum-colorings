@@ -1,0 +1,3494 @@
+{
+  "status": "PASS",
+  "parameter_controls": 28,
+  "U_source_image_controls": {
+    "(0, 0)": 224,
+    "(0, 1)": 224,
+    "(1, 0)": 224,
+    "(1, 1)": 224
+  },
+  "physical_images": 192,
+  "marked_physical_images": 32,
+  "distinct_charge_mark_images": 192,
+  "example_distinct_charge_mark": {
+    "fixture": "marked_gate",
+    "symmetry": [
+      false,
+      false,
+      false
+    ],
+    "phase": [
+      0,
+      0
+    ],
+    "positive": 1,
+    "marked_sides": 2,
+    "negative_original_charge": 6,
+    "negative_U_matching": 54,
+    "positive_U_matching": 17,
+    "matching": 71
+  },
+  "signed_budget_controls": 57199,
+  "negative_margin_controls": 23580,
+  "nonexceptional_budget_controls": 4093,
+  "new_complete_physical_fixture_coverage": 0,
+  "scope": "Reconstructs source-local mark capacities separately from irregular event pools, actual physical mark assignments and matching sums ONCE per original owner in existing feasible fixtures. Distinguishes G marked sides from S original negative charge. Signed budget enumeration supplements universal written/Lean deductions; no new complete AA fixture or arbitrary-grid decomposition.",
+  "physical": [
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 6,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 17,
+      "positive_U_matching": 54,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 43,
+      "negative_U_matching": 71,
+      "positive_U_matching": 0,
+      "matching": 71
+    },
+    {
+      "fixture": "marked_gate",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 6,
+      "negative_U_matching": 54,
+      "positive_U_matching": 17,
+      "matching": 71
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 19,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 38,
+      "negative_U_matching": 68,
+      "positive_U_matching": 0,
+      "matching": 72
+    },
+    {
+      "fixture": "two_tips",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 1,
+      "negative_U_matching": 19,
+      "positive_U_matching": 49,
+      "matching": 72
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 3,
+      "marked_sides": 2,
+      "negative_original_charge": 7,
+      "negative_U_matching": 49,
+      "positive_U_matching": 39,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 48,
+      "negative_U_matching": 88,
+      "positive_U_matching": 0,
+      "matching": 92
+    },
+    {
+      "fixture": "overloaded",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 5,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 39,
+      "positive_U_matching": 49,
+      "matching": 92
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 15,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 10,
+      "negative_U_matching": 26,
+      "positive_U_matching": 12,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 2,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 12,
+      "positive_U_matching": 26,
+      "matching": 38
+    },
+    {
+      "fixture": "zero_credit",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 3,
+      "negative_U_matching": 38,
+      "positive_U_matching": 0,
+      "matching": 38
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 7,
+      "negative_U_matching": 13,
+      "positive_U_matching": 9,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 8,
+      "negative_U_matching": 22,
+      "positive_U_matching": 0,
+      "matching": 22
+    },
+    {
+      "fixture": "opposed",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 2,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 13,
+      "matching": 22
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "positive": 0,
+      "marked_sides": 0,
+      "negative_original_charge": 6,
+      "negative_U_matching": 18,
+      "positive_U_matching": 0,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    },
+    {
+      "fixture": "occupied",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "positive": 1,
+      "marked_sides": 0,
+      "negative_original_charge": 5,
+      "negative_U_matching": 9,
+      "positive_U_matching": 9,
+      "matching": 18
+    }
+  ]
+}

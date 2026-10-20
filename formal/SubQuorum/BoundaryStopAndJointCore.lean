@@ -90,7 +90,7 @@ theorem both_core_tip_predecessors_point_down (incident far width : Int) :
 theorem near_far_core_bar_directions (incident width : Int) :
     coreMove incident (0,2) = (incident+2,3) ∧
     coreMove incident (0,width-1) = (incident+2,width) := by
-  simp [coreMove, Prod.mk.injEq]
+  simp [coreMove]
 
 def rotorT : List Point :=
   [(0,2),(1,1),(2,5),(1,4),(5,3),(4,4),(3,0),(4,1)]
@@ -155,8 +155,8 @@ theorem mutual_near_tip_identification
 
 theorem two_cores_cannot_supply_both_stops
     (firstStop secondStop firstPort secondPort secondAnchorRow secondAnchorColumn : Int)
-    (hfirstLong : 13 ≤ firstStop) (_hfirstPort : firstPort = 2 ∨ firstPort = 4)
-    (hsecondPort : secondPort = 2 ∨ secondPort = 4)
+    (hfirstLong : 13 ≤ firstStop) (_hfirstPort : firstPort ≤ 4)
+    (hsecondPort : secondPort ≤ 4)
     (hfirstRow : firstStop = secondAnchorRow+secondPort)
     (_hfirstColumn : 1 = secondAnchorColumn+2)
     (hsecondRow : secondAnchorRow+1 = 2)

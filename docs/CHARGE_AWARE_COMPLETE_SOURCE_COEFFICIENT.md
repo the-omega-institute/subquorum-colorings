@@ -1,12 +1,16 @@
-# Counting negative-source matching costs improves the uniform bound
+# Counting marked-side owners' matching costs improves the uniform bound
 
 20 October 2026. In the entire permitted finite complete U/rotor model,
 the matching coefficient improves from12/13 to14/15. If every actual
 double-marked positive is nonexceptional, the coefficient improves from
-17/18 to21/22. The improvement counts the matching cost of the original
-negative-source charge, which the previous argument discarded. It uses
+17/18 to21/22. The corrected improvement counts the matching cost of the
+original negative U owners assigned marked positive sides. It uses
 the existing two-slot compensation theorem and exact source ledger,
-not a new defect injection or an arbitrary-grid decomposition.
+not a new defect injection or an arbitrary-grid decomposition. The newer
+MARKED_SIDE_MATCHING_BUDGET.md proves stronger33/35 and26/27 coefficients.
+This note originally conflated marked sides G with negative original charge S;
+the replacement bridge in Section2 is essential. The original review and
+formal arithmetic were conditional on that previously unjustified bridge.
 
 ## 1. Exact hypotheses and conclusion
 
@@ -21,9 +25,10 @@ ambient even-by-even rectangle/source-ledger assumptions. In particular
     mu>=n0-e-floor(s/2), R>=0,
     2R=A+U0+Z0+H, A>=s.
 
-N counts ALL positive charge-one U sources. G is the sum of absolute
-negative original source charges. Original charge-zero rotors contribute
-neither to N nor G. e counts actual exceptional double-marked positives;
+N counts ALL positive charge-one U sources. G counts marked original
+canonical positive sides. The sum S of absolute original negative charges
+is a DIFFERENT quantity, entering reserve R=S+C-Kirregular. No rotor owns
+a marked-side assignment. e counts actual exceptional double-marked positives;
 s counts nonexceptional doubles with exactly one activated terminal.
 They are disjoint positive-source lists, so N>=e+s. Other one-mark and
 unmarked positives remain unrestricted. Nonexceptional dimensions are
@@ -44,7 +49,7 @@ OPEN. Relative to5/6 on the same configurations, the gains are |M|/10
 and4|M|/33, respectively. The gains over12/13 and17/18 are2|M|/195
 and|M|/99, respectively.
 
-## 2. Every original negative charge has a matching cost
+## 2. Every marked side has an original negative U owner
 
 An original U(w,a,b) has matching size
 
@@ -52,24 +57,25 @@ An original U(w,a,b) has matching size
 
 Every positive U has m>=9, and each positive counted by e has m>=13.
 Thus all positive original matchings together cost at least9N+4e.
-For an original negative U, its absolute charge is either1 or w-1,
-according to its phase. In either case
+The established all-phase marked-side assignment injects actual marked
+sides into original endpoints of negative U sources. A phase01 source has
+at most two eligible upper corners, phase10 at most two terminal tips,
+and phase11 at most those four endpoints. Rotor owners are excluded.
+If B is the negative U count and Mneg their original matching size, then
 
-    m >= absolute_charge+4.
+    G<=4B, Mneg>=9B, hence 9G<=4Mneg and Mneg>=G.
 
-An original negative rotor has charge-2 and exactly four matching edges,
-also at least its absolute charge. A charge-zero rotor has nonnegative
-matching size. Therefore all remaining original matchings cost at least G.
+This is a matching-size argument counted ONCE per original source. It
+does not identify negative original charge with marked sides, and does
+not spend a geometric defect or an activation a second time.
 Original endpoint disjointness and unchanged matching ownership give
 
     |M|>=9N+4e+G
        =10N+4e+R-mu.                             (3)
 
-The source charges here are ORIGINAL charges. No claim is made that a
-negative source contributes that charge unchanged after fusion. Its
-matching edges do remain original, and the exact ledger uses their
-original charge G with the fusion correction R. This distinction is why
-(3) is compatible with consumed supports and shared receiver tiles.
+G in(3) is the actual marked-side count used in mu=N+R-G. Original
+matching ownership, rather than a charge identification, supplies its
+cost. The stronger9G<=4Mneg budget is used in the newer note.
 
 ## 3. Universal coefficient fourteen-fifteenths
 
@@ -131,12 +137,16 @@ rotor images,83583 signed universal budgets (37908 negative margins)
 and4602 nonexceptional budgets.
 See output/charge-aware-source-coefficient-formal-check.json and
 output/charge-aware-source-coefficient-controls.json.
-Independent audit a20e87ca completed ACCEPT at2026-10-20T05:51:15.164UTC,
+Historical independent audit a20e87ca completed ACCEPT at2026-10-20T05:51:15.164UTC,
 observed gpt_6/pro,5073characters. Original stream32411 exits0/DONE and
-exactly matches the terminal response. It accepts the additive original
-matching budget, signed inequalities, both constants and numerical gains,
-and the actual-double-marked meaning of e=0 under the stated complete-source
-inputs. It does not certify executions or arbitrary-grid decomposition.
+exactly matches the terminal response. Its supplied inputs mislabeled G
+as original negative charge while also supplying mu=N+R-G. Thus that
+verdict supports conditional arithmetic, not the missing physical bridge.
+Section2 now supplies a different bridge from the existing actual side
+assignment; the newer note's independent audit is separate. The original
+source/charge controls and signed budgets did not verify G=S and must
+not be presented as doing so. New controls reconstruct actual marked
+assignments and keep G,S separate. No arbitrary-grid decomposition follows.
 See output/charge-aware-source-coefficient-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

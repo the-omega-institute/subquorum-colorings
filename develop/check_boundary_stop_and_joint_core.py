@@ -94,7 +94,7 @@ def main():
         assert first_down != scale(-1, second_inside)
         assert second_down != scale(-1, first_inside)
         for first_port, second_port, first_row, second_row in itertools.product(
-                (2, 4), (2, 4), range(1, 30), range(1, 30)):
+                (1, 2, 3, 4), (1, 2, 3, 4), range(1, 30), range(1, 30)):
             first_stop = plus(scale(first_row, first_down), first_inside)
             second_anchor = plus(first_stop,
                                  scale(-1, plus(scale(2, second_down), scale(second_port, second_inside))))
@@ -105,7 +105,7 @@ def main():
             assert first_row == second_port+1 and second_row == first_port+1
             assert first_row <= 5 and second_row <= 5
             coordinate_cases += 1
-    assert mutual_orientations == 8 and coordinate_cases == 32
+    assert mutual_orientations == 8 and coordinate_cases == 128
     result = dict(status='PASS', parameter_controls=len(parameters), U_controls=dict(counts),
                   exact_rotor_roles=16, surviving_rotor_owners=rotor_survivors,
                   orthogonal_frames=len(frames), mutual_predecessor_frames=mutual_orientations,

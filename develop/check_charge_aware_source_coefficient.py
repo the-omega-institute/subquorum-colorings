@@ -48,10 +48,10 @@ def main():
     for exceptional, single, extra_positive, reserve in itertools.product(range(9), repeat=4):
         positive = exceptional+single+extra_positive
         for margin in range(-exceptional-single//2, 7):
-            negative_charge = positive+reserve-margin
-            if negative_charge < 0:
+            marked_sides = positive+reserve-margin
+            if marked_sides < 0:
                 continue
-            matching = 9*positive+4*exceptional+negative_charge
+            matching = 9*positive+4*exceptional+marked_sides
             assert 15*margin+matching >= 0
             universal_cases += 1
             negative_margin_cases += margin < 0
@@ -65,7 +65,7 @@ def main():
                   negative_margin_cases=negative_margin_cases,
                   nonexceptional_signed_budget_cases=nonexceptional_cases,
                   new_complete_physical_fixture_coverage=0,
-                  scope='Reconstructed original U/rotor matching cardinalities and charges over representative arbitrary images, and signed aggregate budgets. Universal deductions are written and Lean-checked; no finite cutoff is part of either theorem.')
+                  scope='Reconstructed original U/rotor matching cardinalities and charges over representative arbitrary images, and signed aggregate budgets. Aggregate marked-side budget is an assumed arithmetic input here; its physical bridge is the separate MARKED_SIDE_MATCHING_BUDGET.md and check_marked_side_matching_budget.py. Original negative charge is checked separately and is not identified with marked sides. No finite cutoff is part of either theorem.')
     arguments.output.write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result))
 

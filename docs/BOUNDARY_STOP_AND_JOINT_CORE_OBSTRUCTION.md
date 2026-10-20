@@ -16,11 +16,18 @@ endpoint sets are disjoint, their union is P, every original support outside
 P remains selected, and every final selected vertex has occupied degree at
 most one. Every U has even width at least six and independent even incident
 heights at least four. All lattice isometries and translations are allowed.
+Final selections are the retained original supports together with any
+permitted optional selections outside every original receiver and without
+an endpoint neighbor. In particular no arbitrary unanchored selection
+may be added inside a source receiver. Positive-source normalizations
+transport the FIXED physical partition; they do not reset it after a
+translation or reflection. The later affine origin for vector arithmetic
+is chosen only after the physical parity comparisons.
 
 Consider the actual nonexceptional R=1 AA residual: exactly two double-marked
 positive sources, both width six, each with one activated terminal. Its exact
 ledger has A=2 and U0=Z0=H=0. The accepted common pool then also gives
-r=J=X=Y=0. Arbitrarily many one-mark positive and negative sources remain
+r=J=X=0. Arbitrarily many one-mark positive and negative sources remain
 allowed. An original owner may belong to both four-stem cores through
 different tips; this possibility is explicitly allowed throughout.
 
@@ -46,6 +53,12 @@ Zero H forces each original 2P0T pair receiver to be full: otherwise its
 tile is an L2bar defect or a mixed L3 defect. Zero U0,H forces each
 original endpoint-containing phase11 U receiver to be full. These are
 the existing physical saturation results, not new independent payments.
+For the first implication, each unfilled corner neighbors an original
+endpoint of the pair owner. A foreign retained support there would have
+its own different persistent original anchor, hence two occupied neighbors.
+The pair owner contributes no support in this tile and optional selections
+are excluded there. Thus no vacant corner is selected; a nonfull tile
+has the original adjacent pair (L2bar) or a mixed triple (L3).
 
 ## 2. A finite last point gives three possible stop roles
 
@@ -134,28 +147,25 @@ arbitrarily large gaps or give a descent invariant.
 For the two positive doubles let C_i={L_i,V_i,W_i,R_i}. These sets may
 overlap. Choose the boundary stop B_i as above for each double.
 
-First B_i lies outside its OWN C_i. A rotor is not a U owner. An odd
-corner's bar thickness is contained in a canonical aligned pair, whereas
-every core owner's thickness straddles such pairs. This physical property
-is intrinsic to that original source and survives changing coordinates.
-Finally a terminal stop has predecessor in the positive double's inward
-direction e_i; every original terminal of its own core owners has
-predecessor along the long-leg direction d_i. These perpendicular
-directions cannot agree.
+First B_i lies outside its OWN C_i. Every original endpoint of a core
+owner lies at long-leg coordinate at most m+2<=h_i+2, from its displayed
+map and nonnegative original source row. But the stop coordinate is
+rho_i>=h_i+3. This includes both original tips, however long the far leg.
 
 Assume for contradiction that both B_i belong to C_1 union C_2. Each
 must then be in the OTHER core. Rotor and odd-corner roles are impossible
-there for the same type and intrinsic-parity reasons. The surviving
-terminal stop has no original triple caps, so its other-core owner is
-V or R, not L or W. This uses the original physical cap count of the
-same source, without treating its two tips as different owners.
+there: a rotor is not a U, while an odd corner's physical bar thickness
+is aligned and every core owner's thickness straddles aligned pairs.
+That comparison uses the same fixed physical partition in both frames.
+Thus both identifications must be terminal roles. We allow ALL four
+core offsets below; no cap-count reduction to V/R is necessary.
 
 Let A_i be the outer top bar endpoint of O_i adjoining its long leg.
 Let d_i point along that leg and e_i inward toward the opposite leg.
-Then the boundary stop and the two possible near core tips are
+Then the boundary stop and all possible near core tips are
 
     S_i=A_i+rho_i*d_i+e_i,             rho_i>=h_i+3>=13,
-    near core tip=A_i+2*d_i+t_i*e_i,  t_i in {2,4}.
+    near core tip=A_i+2*d_i+t_i*e_i,  t_i in {1,2,3,4}.
 
 Both near and far tips of a core owner have predecessor +d_i. Both
 boundary stops have predecessor +e_i. Mutual identification therefore
@@ -173,7 +183,7 @@ gives exactly
     u+1=2,         v+rho_2=t_1.
 
 Hence u=1, v=-1, rho_1=t_2+1 and rho_2=t_1+1. Both stop rows would lie
-in {3,5}, contradicting rho_i>=13. Therefore at least one boundary
+between two and five, contradicting rho_i>=13. Therefore at least one boundary
 stop has an original owner outside C_1 union C_2.
 
 This is an owner requirement, not a fresh defect or activation. The same
@@ -196,24 +206,30 @@ independently spendable defect payment.
 
 The boundary route was proposed in Oracle research follow-up54d0581e;
 the local reconstruction supplies the last-point and retention proof.
-No independent acceptance of the boundary or joint theorem is claimed.
+Independent audit2e5c473e accepts the written boundary and joint theorem,
+under the explicit complete-source support and physical-partition rules.
 The unrestricted negative-source cycle problem remains the next target.
 
 All fourteen declarations in formal/SubQuorum/BoundaryStopAndJointCore.lean
 compile, build and pass individual axiom audits on the user-selected local
 Mac with Lean4.33.0. The exact rotor tables and retention/logical lemmas
 use no axioms; other declarations use only propext, Classical.choice and
-Quot.sound as applicable. No sorry or native_decide is used. Source checking
-has one harmless unused-simp-argument warning. The universal U role proof
+Quot.sound as applicable. No sorry or native_decide is used. The universal U role proof
 first classifies endpoint-only roles and then excludes the exterior-support
 roles; this avoids the original monolithic simplification timeout.
 
 Finite controls pass29 dimension triples/15904 U roles,116 exact even-stop
 receiver profiles, all16 rotor roles, all8 orthogonal physical frames and
-32 conditional mutual-tip coordinate solutions, all with stop rows at
+128 conditional mutual-tip coordinate solutions, all with stop rows at
 most five. These controls do not enumerate complete AA configurations.
 See output/boundary-stop-joint-core-controls.json and
 output/boundary-stop-joint-core-formal-check.json. Independent audit
-2e5c473e/conv_bef1c33590c28b3d/original83291 is dispatched; no verdict yet.
+2e5c473e completed ACCEPT at2026-10-20T06:27:48.824UTC, observed gpt_6/pro,
+21233characters. Original83291 exits0/DONE and exactly matches terminal
+response. Its support/partition clarifications and the unnecessary-Y
+removal are incorporated; its simplification allows all four offsets,
+with the coordinate hypothesis weakened to t_i<=4. The audit is a written
+proof review, not certification of Lean/Python execution. See
+output/boundary-stop-joint-core-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
