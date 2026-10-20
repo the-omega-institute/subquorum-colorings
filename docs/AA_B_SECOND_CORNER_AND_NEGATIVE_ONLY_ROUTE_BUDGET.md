@@ -18,7 +18,10 @@ R=1, A=2, U0=Z0=H=0, exactly two doubly marked width6 positives, whose only
 activated terminals are their short tips. Other unactivated positives and
 arbitrarily many negative sources/rotors are permitted. The accepted incoming-
 owner normalization and Fpos=0 come from the four-stem/cap-continuation proofs.
-Use the D note's new AA consequence Cplus=Dplus=0 as a stated dependency.
+Section5's census uses the D note's AA consequence Cplus=Dplus=0 as a stated
+dependency. The standalone no-B proof in Sections1--4 does not use it.
+The letter b in those sections denotes a legal short height, not the old
+B-interior event count; that event count is zero by the theorem below.
 
 Every B event is interior: its cap case injects into Fpos=0. In its original
 band normalization, the positive owner O and companion F have
@@ -184,8 +187,15 @@ roles,34partial B stencils,81equal-height companion collisions,162opposite
 incoming collisions (54upper equal-height boundaries),405final stem/bar
 crossings and990conditional AA ledger identities. Complete feasible critical
 U10 and AA coverage remains ZERO. These collisions test impossibility adapters,
-not feasible combined examples. The new B theorem requires its own review;
-the preceding D/AA review cannot be cited as accepting it.
+not feasible combined examples. The new B theorem has its own completed
+[independent ACCEPT](../output/aa-b-second-corner-review.json), task491d89ef,
+completed20October14:06:15UTC, observedgpt6/pro. Its19793-character answer
+matches the original completed stream exactly. No must-fix mathematical issue
+was found. The verdict is a mathematical/static-source review, not certification
+of compilation, controls or the unrestricted target. The census acceptance
+retains inherited occurrence/cap identities and the earlier C grouped-stencil
+adapter as explicit dependencies; that C source was absent from this packet.
+The preceding D/AA review cannot substitute for this separate B verdict.
 
 This is a new necessary condition for the unresolved AA branch, not an exclusion
 of all AA fusions. No proof yet forces its left side to exceed the available
