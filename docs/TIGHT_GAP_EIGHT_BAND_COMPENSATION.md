@@ -8,6 +8,10 @@ continuation. The theorem is conditional on the actual consumer role. It does
 not resolve all gap-eight configurations, unrestricted allocation, or
 rectangular-grid equality.
 
+The subsequent [old-pair return identity](GAP_EIGHT_SUCCESSOR_OLD_PAIR_RETURN.md)
+proves that the tight negative branch's positive successor can reuse an old P
+target only when f=j+2. This is not yet a new global compensation certificate.
+
 ## 1. Complete-source hypotheses and the two-role reduction
 
 Use exactly the finite complete original U/rotor model, fixed aligned physical
