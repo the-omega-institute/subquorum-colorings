@@ -15,7 +15,13 @@ unique original anchor as its sole occupied neighbor. Use a lattice rectangle
 Its strict interior has FOUR columns c+1,...,c+4. Suppose a collection of
 fixed original owners occupies every boundary vertex except possibly the
 bottom-right corner (u,c+5), and those fixed owners have no endpoint on the
-first interior column c+1. They may have endpoints elsewhere in the interior.
+STRICT-INTERIOR segment of the first interior column:
+
+    F intersect ({l+1,...,u-1} x {c+1}) = empty,
+
+where F is their endpoint union. The top and bottom boundary points on that
+coordinate column are permitted and required. The fixed owners may have
+endpoints elsewhere in the interior.
 
 **Barrier lemma.** No OTHER original source has an endpoint strictly
 inside D, in any complete extension retaining those boundary owners.
@@ -113,8 +119,12 @@ as the earlier long-H theorem. No new receipt pool or numerical term is
 created by the exclusion proof itself. Wrong return lengths are impossible
 configurations, not extra unmarked-owner bonuses or extra reserve.
 
-H with wider returning sources, H with unmatched near length or shorter
-far leg, Vcorner, occupied corridors, vertical exits and universal residual
+The new [maximal-return rigidity corollary](MAXIMAL_H_RETURN_RIGIDITY.md)
+uses the reflected barrier to force H's near leg when B's far leg is
+maximal, without first assuming those lengths match. That corollary has
+a separate verification and review scope. H with wider returning sources,
+other unmatched near or shorter far legs, Vcorner, occupied corridors,
+vertical exits and universal residual
 coverage remain open. Neither this barrier nor the preceding channel lemma
 establishes unrestricted allocation or the grid triple equality.
 
@@ -123,7 +133,10 @@ adjacent-tip collisions, rectangle barriers and mandatory wrong-return
 support stencils at independent lengths. These finite checks supplement
 the explicit all-dimensional proof above. Source-to-rotor classification
 and physical counting adapters remain written where noted by the separate
-Lean receipt. This addendum requires its own independent review scope.
+Lean receipt. The separate written review191f56c9 ACCEPTS both the barrier
+and forced-return conclusion under the stated source/support model. Its
+strict-interior column clarification is incorporated above. The review does
+not certify checker/Lean execution or establish unrestricted allocation.
 
 All twelve declarations in FourColumnCornerBarrier.lean pass local
 Lean4.33.0 source and individual axiom audits, session71687 exit0. The
