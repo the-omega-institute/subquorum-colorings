@@ -182,7 +182,10 @@ See [the control receipt](../output/full-neutral-receivers-controls.json).
 
 Oracle task9b95cb72-5264-46ce-bea9-cd2b283fc736 continues the accepted phase11
 conversation and reviews this proof together with the critical and shared-H
-extensions. Its verdict is PENDING. The preceding larger task88c8a838 ended
-with terminal typing infrastructure failure and no mathematical answer.
+extensions. It ended with a terminal typing infrastructure failure and no
+mathematical verdict, as did preceding task88c8a838. After these terminal
+failures, a fresh independent audit uploads a single complete context file;
+its status is recorded in full-receivers-independent-review.json. The failed
+tasks provide no mathematical acceptance or rejection.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
