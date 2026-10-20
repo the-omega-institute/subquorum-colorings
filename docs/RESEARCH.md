@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: the [five-endpoint cap and gate-consumer restriction](FIVE_ENDPOINT_CAP_AND_POSITIVE_GATE_CONSUMERS.md)
+exclude an unfillable support from EVERY U/rotor extension. A gate consumer
+having the upper intratile support forces a transverse NEGATIVE U tip with
+4<=h<=w-4. Width-six actual gate consumers must therefore be negative U
+sources; all positive and rotor consumer roles are excluded. A positive
+regular singleton consumer gives one distinct activated terminal occurrence,
+already within A, with no duplicate payment. Nine scoped Lean declarations
+and 49,152 U endpoint-role / 672 complete-image controls pass. Initial review
+accepted the cap but requested semantic/role clarifications. After two explicit
+repair rounds, final review c71bb9e1 ACCEPTS the written package, including the
+new transverse/rotor consequences, under the inherited source model and ledger. Full
+allocation and grid equality remain open.
+
 21 October: [periodic strip compression](PERIODIC_STRIP_COMPRESSION.md)
 reduces ANY n-source complete feasible family to coordinate spans at most
 512n+2, with the identical legal-owner Horn lattice and canonical demand
