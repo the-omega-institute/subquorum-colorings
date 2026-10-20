@@ -32,6 +32,18 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [phase10 descent and complete full-pair exit](docs/NEUTRAL_PHASE10_DESCENT_AND_FULL_PAIR_EXIT.md)
+classify a phase10 owner of a neutral01 forced endpoint as a terminal with
+incident height at least four shorter than the active leg. A dimension-independent
+Lean role proof excludes this branch at active height four or six. A complete
+three-source family attains the four-step gap and has full forced receivers
+whose forced point lies outside the U-only singleton reservation pool. Thus the
+unconditional full-receiver-to-singleton-slot rule fails. Six new scoped Lean
+checks and384complete images pass, including96full forced receivers; the fixed
+18x18 witness has78frozen endpoints and positive source/ambient slack. Complete
+closed01 and AA coverage remain zero. The local descent is not a global mixed
+chain termination rule, and full allocation/grid equality remain open.
+
 The [closed neutral receiver theorem](docs/CLOSED_NEUTRAL_RECEIVER_SEPARATION.md)
 proves that closed phase01 contacts force distinct physical receiving tiles,
 including full ones. Both opposite endpoints of each full receiver avoid all
@@ -42,7 +54,9 @@ share owners and do not become fresh reserve. Eleven scoped Lean declarations
 and640complete controls pass; those controls have zero complete closed01-contact
 coverage, recorded explicitly. The endpoint-disjoint four01 partial polygon has
 four distinct receivers/eight prescribed positions but is infeasible. General
-finite allocation and grid equality remain open; independent review is separate.
+finite allocation and grid equality remain open. Its separate written-proof
+review completed ACCEPT; closed-union scope is explicit and the general
+open-component formula includes unused port incidences.
 
 The [neutral-support injection and any-pair budget](docs/DISTINCT_NEUTRAL_SUPPORTS_AND_ANY_PAIR_BUDGET.md)
 prove that distinct neutral phase01 contacts force distinct original endpoint
@@ -53,8 +67,9 @@ beside both exact original pair types, with an exact unused-slot identity to
 prevent repeated payment. Eleven scoped Lean declarations and641 complete
 feasible controls pass;97 images obtain a strictly stronger cap constraint.
 The U-port turning theorem and this injection/budget extension each have a
-separate independent ACCEPT review. Complete AA/full
-receiver coverage remains zero. General coefficient one and grid equality
+separate independent ACCEPT review. The initial controls have zero AA/full
+receiver coverage; the later phase10 family above supplies complete full exits.
+General coefficient one and grid equality
 remain open, with full receiver, rotor and open-path exits still unresolved.
 
 The [charge-aware matching budget](docs/CHARGE_AWARE_COMPLETE_SOURCE_COEFFICIENT.md)

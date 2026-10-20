@@ -223,4 +223,10 @@ completed successfully with DONE and its19206-character answer exactly matches
 the same-task terminal response. This is written-proof review, not execution
 certification, and excludes the later closed-receiver separation theorem.
 
+The later [phase10 full-pair family](NEUTRAL_PHASE10_DESCENT_AND_FULL_PAIR_EXIT.md)
+provides complete full forced receivers with no Pneg reservation at the forced
+point, and proves a strict incident-height descent for that owner class. Its
+384 complete images include96 full forced receivers, while complete closed01
+and AA coverage remain zero. This later work is outside the review above.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

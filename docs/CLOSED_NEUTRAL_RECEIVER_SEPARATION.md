@@ -88,13 +88,21 @@ Combining the EXACT count in(1) with(2) yields
 
 This is one inequality derived from a common H pool. It is not an additional
 payment to add to a reserve estimate, and a full receiver creates no H unit.
-For arbitrary port graphs, edge-incidence counting gives
+For any chosen union of closed components of the specified port graph, without
+imposing AA, edge-incidence counting gives
 
     C01-C10 = M01-M10,                                           (4)
 
 where C10 counts neutral edges with two phase10 owners. Both contact types
 count edges, including legitimate parallel edges, once. Mixed edges cancel
 when subtracting total phase incidences. Equation(4) is valid without AA.
+For a general degree-at-most-two port graph that includes open components,
+let U01,U10 count unused ports of the two phases. The corresponding identity is
+
+    2*(C01-C10)=2*(M01-M10)-(U01-U10).
+
+It follows by subtracting2*M01=2*C01+Cmix+U01 and its phase10 counterpart.
+An isolated phase01 owner already shows why its unused ports cannot be omitted.
 
 In ONE fixed full endpoint component satisfying the established nonexceptional
 AA hypotheses, every phase10 owner on a closed port component is double-active.
@@ -129,5 +137,14 @@ The remaining full finite closure must bound these outside endpoint resources
 using original owners and the same reserve ledger, allowing owner recurrence,
 full2+2 receivers and rotor exits. No arbitrary-grid bound or uniform coefficient
 improvement follows solely from the new endpoint count.
+
+Independent reviewff4d49b9 completed ACCEPT at08:29:24.752UTC, observed gpt_6/pro,
+for the closed-component receiver theorem and its same-component AA consequence.
+The scope correction from arbitrary port graphs to chosen closed unions is
+incorporated above, with the exact unused-port formula for open components.
+The review independently checks the needed support-injection/whole-owner
+dependency; it does not certify executions or later phase10 exit results.
+Its original stream15913 transport and same-task response comparison are
+recorded in the separate review receipt.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
