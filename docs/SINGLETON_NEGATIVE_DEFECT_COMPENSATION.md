@@ -153,10 +153,13 @@ original selected neighbors at the other two corners; these adjacent
 supports must both become endpoints by final feasibility. If they are
 opposite, either original selected neighbor is adjacent to both final
 endpoints and hence must become an endpoint. If one additional endpoint
-leaves a three-endpoint tile, the missing corner is adjacent to both
-negative singletons; either singleton event would require that corner
-as its old selected neighbor and force it into P. Thus a partial tile
-has k_Q<=1.
+leaves a three-endpoint tile, its owner is a nonnegative1P2T singleton.
+It must occupy the elbow of the L: at an outer vertex, one of its two
+original selections would be the missing corner, which sees two endpoints
+and would be forced into P. The negative singletons are therefore the
+outer vertices. Each selects the elbow and has its blank at the missing
+corner, so neither incurs an event. Thus a partial tile has k_Q<=1
+(and this three-endpoint case has k_Q=0).
 
 In a full tile, the other two endpoints are a negative2P0T pair, a
 regular2P1T pair, or two nonnegative1P2T singletons. The corresponding
@@ -212,5 +215,13 @@ The remaining problem is to pay O+F+H from |N-B|+2R, or to give a
 complete feasible obstruction to this sufficient rule and distinguish
 it from a counterexample to the target. No change to a submitted
 manuscript or email is part of this note.
+
+Review5005a44b-4be2-40b3-a689-18c97389128a completed ACCEPT for this
+written bound and its all-bar corollary, alongside repaired Section6
+and the half-slot note. Its h_Q=2 elbow clarification is implemented
+above. Original stream23629 exits0/DONE and matches all18005 terminal
+response characters, observed gpt_6/pro. Established geometric ledger,
+source catalogue, marked-side injection and rotor barrier remain inputs.
+The separate rotor-only theorem is outside that accepted scope.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

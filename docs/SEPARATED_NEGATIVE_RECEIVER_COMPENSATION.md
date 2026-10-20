@@ -290,7 +290,11 @@ ac50f553-63c2-455d-8856-7f5402b7547a on original stream34424 completed
 REVISE, narrowly requesting the exhaustive zero-rotor catalogue (Z).
 It found the reservation, defect accounting and algebra correct under (Z).
 The explicit catalogue and fundamental-domain proof above repair that
-omission; no new ACCEPT is implied. The terminal9739-character response
+omission. The original REVISE is retained. Later review5005a44b completed
+ACCEPT for the repaired Section6, the singleton refinement and half-slot
+deductions, from the stated established inputs; it excludes the separate
+rotor-only theorem. Its stream23629 exits0/DONE and matches18005 response
+characters exactly. The original terminal9739-character response
 exactly matches the completed original stream. General-defect physical controls and abstract accounting
 are recorded separately from the accepted review's scope.
 

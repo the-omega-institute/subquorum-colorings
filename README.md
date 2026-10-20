@@ -756,7 +756,24 @@ two new sufficient bounds complement one another.
 Seventeen additional Lean declarations and individual axiom audits pass
 locally, covering local profile reduction, all four rotor phase catalogues
 and conditional global arithmetic. The full geometric adapter remains
-written. A fresh same-conversation review covers the repaired general
-bound and both refinements; its status is recorded separately. The proposed
-rotor-only propagation theorem is still unverified. Unrestricted mixed
-source payment and the rectangular-grid triple equality remain open.
+written. Same-conversation review5005a44b completed ACCEPT for the repaired
+general bound, both refinements, automatic subclasses and remaining exact
+identity. Its L-elbow clarification is implemented; original stream DONE
+matches all18005 response characters. The later rotor-only result has a
+separate review scope.
+
+The [rotor-only reserve theorem](docs/ROTOR_ONLY_RESERVE_AND_RECTANGULAR_COMPONENTS.md)
+proves S+C-Kirregular>=2cminus and sigma>=2cminus for every finite complete
+rotor fusion, with arbitrary phases, chiralities and contacts. Exact
+sixteen-role ownership and finite support propagation exclude irregular
+contacts with zero rotors. Negative contact components are Cartesian
+rectangles in rotated tile coordinates. Distinct full tiles pay the
+excess events by a vertex-edge-face identity, leaving two units per
+component. All-negative fusions attain equality in reserve; a complete
+all-parameter family shows why source mass alone is insufficient.
+Six owner tables, eight all-index support-role calculations,59 physical
+controls and18scoped Lean declarations/axiom audits pass. Finite descent,
+the general rectangle proof and geometric adapters remain written.
+Independent reviewd8ed1445 is dispatched for this theorem; it is outside
+the earlier ACCEPT. Unrestricted mixed-source payment and the
+rectangular-grid triple equality remain open.
