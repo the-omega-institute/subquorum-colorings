@@ -32,15 +32,24 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [AA B-exit exclusion](docs/AA_B_SECOND_CORNER_AND_NEGATIVE_ONLY_ROUTE_BUDGET.md)
+rules out the positive-corner occupied-band branch throughout the specified
+saturated AA component. An actual incoming endpoint removes the two otherwise
+surviving rotor roles; opposite incoming owners exclude a positive terminal,
+and a stem/bar crossing excludes the remaining negative terminal. The AA
+all-route census consequently has an exact negative-only form, without the
+previous right-hand A=2. Ten further scoped Lean/axiom checks pass. This later
+proof has its own pending review; it does not exclude all AA configurations.
+
 The [D-interior two-corner enhancement](docs/BACKFILL_D_INTERIOR_TWO_CORNER_COMPENSATION.md)
 exposes one additional typed singleton/activation per D-interior event, using
 an enlarged complement in the SAME original negative pool. The joint all-route
 inequality gains +d, with no reuse of cap fills, terminal activations or stops.
 In the specified saturated AA residual, the incoming source also excludes the
 positive second-corner branches of BOTH C and D, including recurring owners.
-Sixteen scoped local Lean declarations and axiom checks pass. The new written
-extension is under review on original stream59583; the preceding complete
-B/D+A/all-four-route theorem has ACCEPT. Source/mark census control, complete
+Sixteen scoped local Lean declarations and axiom checks pass. The D/AA written
+extension has ACCEPT, as does the preceding complete
+B/D+A/all-four-route theorem. Source/mark census control, complete
 critical U10 realizability and the full allocation/grid equality remain open.
 
 The [backfill corner routing theorem](docs/BACKFILL_CORNER_ROUTING_AND_SHALLOW_BARRIER.md)

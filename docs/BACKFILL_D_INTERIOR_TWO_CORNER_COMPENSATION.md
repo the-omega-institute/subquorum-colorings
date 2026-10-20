@@ -257,11 +257,16 @@ final passing run by preserving the actual odd-row/even-column corner.
 
 These conditional counts are not complete geometric fusions. Complete critical
 U10 realization coverage remains ZERO. No existence or sharpness follows.
-The new written D enhancement AND AA C/D-positive exclusion are under review,
-taskb870fb3d-4321-48cd-b702-308ed642c5d5 on original stream59583. The earlier
-accepted combined B/D+A proof does not cover this extension; no acceptance is
-inferred from submission. Physical singleton/phase, global occurrence injection
-and AA-applicability adapters remain written, not end-to-end formalized.
+The new written D enhancement AND AA C/D-positive exclusion have ACCEPT,
+taskb870fb3d-4321-48cd-b702-308ed642c5d5, completed13:52:51UTC on20October.
+Original59583 exited0/DONE and exactly matches all18756response characters;
+observedgpt6/pro. No missing hypothesis or must-fix issue was identified under
+the established inputs. See the [review receipt](../output/backfill-d-interior-two-corner-review.json)
+and [full response](../output/backfill-d-interior-two-corner-review-response.txt).
+The verdict does not certify execution, realizability, full allocation or grid
+equality; it excludes the later AA B-exit theorem. Physical singleton/phase,
+global occurrence injection and AA-applicability adapters remain written,
+not end-to-end formalized.
 
 This strengthens the simultaneous retained term for D-interior events and
 records exactly where the extra contribution comes from. It leaves the term

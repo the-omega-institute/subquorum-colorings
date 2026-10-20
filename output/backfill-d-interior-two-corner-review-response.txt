@@ -1,0 +1,235 @@
+ACCEPTThe D-interior second-corner enhancement and its stated AA corollary are valid under the supplied complete-source hypotheses and established inputs. I find no additional missing hypothesis in the two new files.The enhancement exposes exactly one additional unit per D-interior event in the retained expression for  $2R$ :
+$$\boxed{
+(A-F_{\rm pos}-C_+-b)+L_{\rm old}
+=
+S_{\rm new}+L_{\rm new}+d.
+}$$
+The AA exclusion also survives recurring ownership. Its decisive step is that the transported stencil forces one original owner to contain both  $p$  and  $q_{\rm west}$ , while the actual incoming owner contains  $p$  and excludes  $q_{\rm west}$ . A collision at  $p$  alone would not establish the contradiction.The audit below treats the previously accepted four-route theorem and the designated AA documents as inputs within their stated scopes. It assesses the written mathematics and the mathematical statements in the new Lean file, without certifying execution.1. The new D-interior stencil is supplied by complete original sourcesUse the normalization in BACKFILL_D_INTERIOR_TWO_CORNER_COMPENSATION.md, §1:
+$$F(r,c)=(c-1,r-h-1),\qquad
+H(r,c)=(c,r-a-1),$$
+where  $F$  is  $U(v,h,f)$ ,  $H$  is  $U(w,a,b)$ , and
+$$4\le a\le h-4.$$
+The widths and heights retain their stated evenness and independent lower bounds.Put
+$$m:=h-a.$$
+Then
+$$4\le m\le h-4.$$
+F’s four endpoints include the boundary caseThe points
+$$(0,-a-4),\ (0,-a-3),\ (0,-a-2),\ (0,-a-1)$$
+pull back under  $F$  to
+$$(m-3,1),\ (m-2,1),\ (m-1,1),\ (m,1).$$
+Their canonical row coordinates lie in  $[1,h-4]$ . Row  $1$  belongs to the original bar; rows  $2,\ldots,h-4$  belong to the original first stem.In particular, at the tight boundary  $h=a+4$ , these are exactly
+$$(1,1),(2,1),(3,1),(4,1).$$
+Thus the first point remains present at that boundary. The proof does not require a stem point below its defined range.H’s three endpoints come from its original barThe points
+$$(1,-a-1),\quad(2,-a-1),\quad(3,-a-1)$$
+pull back under  $H$  to
+$$(0,1),\quad(0,2),\quad(0,3).$$
+All three are original bar endpoints for every legal  $w\ge6$ .Neither calculation uses the independent far heights  $f,b$ . These are mandatory subsets of the complete sources for all allowed dimensions.The stencil is exactly the established C stencilWith
+$$y=(1,-a-2),$$
+the seven points just verified have relative coordinates
+$$\mathcal B=
+\{(-1,-2),(-1,-1),(-1,0),(-1,1),
+(0,1),(1,1),(2,1)\}.$$
+The four points with first coordinate  $-1$  belong to  $F$ ; the three points with second coordinate  $1$  belong to  $H$ .The accepted occupied-band theorem gives a unique original owner  $J$  for  $y$ , with  $J\ne F,H$ . Therefore every point of  $\mathcal B$  is foreign to  $J$ . This is exactly the hypothesis needed to apply the established sixteen-role rotor exclusion from the C two-corner proof.The reuse of that catalogue is legitimate: the new proof supplies the same actual foreign endpoint stencil, and the catalogue already covers both chiralities, all anchored endpoint roles, and the transported signed coordinate permutations. Hence  $J$  cannot be a rotor.2. The singleton, phase, support, and parity adapters are correctThe physical output tile is
+$$T=\{0,1\}\times\{-a-2,-a-1\}.$$
+Since  $a$  is even, its origin  $(0,-a-2)$  has even coordinates. Thus  $T$  belongs to the fixed transported partition, with  $y$  its bottom-left corner.This parity statement locates  $y$  in its physical tile. The phase of its original owner  $J$  is then determined by the original source profile catalogue, with that same partition pulled back to  $J$ .The original profiles remain exact after consumptionThe accepted band profile can also be read directly from the canonical definitions:
+$$\begin{aligned}
+P_F\cap T&=\{(0,-a-2),(0,-a-1)\},\\
+S_F\cap T&=\{y\},\\
+P_H\cap T&=\{x\},\qquad x=(1,-a-1).
+\end{aligned}$$
+For example,
+$$F^{-1}(y)=(m-1,2).$$
+Its row is odd and at least  $3$ , so it is an original inward support. By contrast,
+$$H^{-1}(x)=(0,1),$$
+the phase10 outer-corner singleton already reserved by the previous theorem.If  $y\notin P$ , mandatory retention would leave it selected with the two distinct persistent endpoint neighbors
+$$N(y)=(0,-a-2)\in P_F,\qquad
+E(y)=x\in P_H.$$
+That contradicts the selected-point occupied-degree bound. Thus  $y\in P$ .The other three corners already have owners  $F,F,H$ . Consequently  $J$  has the exact original singleton profile  $\{y\}$  in  $T$ .The original  $F$ -support at  $y$  remains in  $S_F$  even after consumption. Its original profile is still regular  $2P1T$ .The new dichotomy is exhaustiveAfter rotor exclusion, the established U singleton catalogue gives:Original phase and role of  $J$ Original profile in  $T$ New occurrenceU01 terminal $1P1T$ Negative singletonU10 outer corner $1P1T$ Negative singletonU00 terminal $1P2T$ Positive terminal activationU11No singleton possibleExcludedTherefore
+$$D_-+D_+=d$$
+is an exhaustive partition of the D-interior events.For  $J$  of phase00, the canonical terminal has two original intratile supports in the two orthogonal directions toward its tile’s adjacent corners. Since  $y$  is the bottom-left corner, these supports are exactly
+$$N(y),\qquad E(y).$$
+Both are already endpoints, owned by  $F,H$ . Thus  $D_+$  counts actual activated original terminals. No activation is inferred merely from the positivity of  $J$ .The restriction to the interior case is essential and correctly stated. When  $a=h-2$ ,  $y$  is an original  $F$ -endpoint in its cap triple, so this third-owner singleton argument does not apply.3. The additional occurrences are globally disjoint from the previous selectionsThe previous four-route audit established joint injection of all B/D interior output tiles and their separation from every ordinary, critical, and backfill receiving tile. The new proof uses exactly those statements.Negative second cornersThe old  $d$  occurrences are the  $x$ -points. The new  $D_-$  occurrences are selected  $y$ -points.Within one event,  $x\ne y$ . Between different events, equality of either endpoint occurrence would force equality of its physical tile, contradicting output-tile injection. Thus
+$$\{\text{D-}x\}\cap\{\text{D-negative-}y\}=\varnothing,$$
+and both families inject individually.The other exclusions are also valid:Previous selected familyWhy a new D-negative- $y$  cannot coincide $E_{1,\rm old}$ Its tile would be an old ordinary or critical receiving tile.Route-C  $q/r$  occurrencesIts tile would be a backfill tile.Negative cap fillersIts tile would contain an original phase11 triple, incompatible with the exact  $2,1,1$  endpoint-owner profile. $E_0$ Its required foreign pair is exact original  $2P0T$ ; the only owner with two endpoints here is  $F$ , whose original profile is  $2P1T$ .The  $E_0$  exclusion does not require assuming that all  $E_0$  points lie in old receiver tiles. Its original-profile argument applies directly.These facts place every new  $D_-$  occurrence in the old complement of the selected negative union.Positive second cornersThe  $D_+$  terminal occurrences inject by the same tile argument. They avoid:
+$$F_{\rm pos},\qquad E_{\rm term},\qquad C_+,\qquad b.$$
+The first two exclusions use the original triple-versus-pair and irregular-versus-regular distinctions. The  $C_+$  exclusion uses backfill-tile separation. The exclusion from  $b$  uses joint B/D interior-output injection.For the last comparison, both occurrences may belong to positive sources, including the same positive source. The proof does not require different source phases or owners. Reusing the same original terminal would reuse its physical tile; different terminals remain distinct occurrences.This handles recurrence across all source components. No injectivity of the map from events to owners is assumed.4. There is one updated negative complement and one reduced activation remainderLet
+$$n_{\rm neg}:=2(K_{01}+K_{10}),
+\qquad
+e:=|E_0|+|E_{1,\rm old}|.$$
+All  $K_{ij}$  here remain original U source counts.Let  $\mathcal U_{\rm old}$  denote the old selected negative union. The geometry above proves that the new D-negative- $y$  set is contained in
+$$P_{\rm neg}\setminus\mathcal U_{\rm old}.$$
+The enlarged union is therefore a disjoint union, giving
+$$\boxed{
+F_{\rm neg}+e+K_C+C_-+d+D_-+L_{\rm new}
+=n_{\rm neg}.
+}
+\tag{1}$$
+Moreover,
+$$\boxed{
+L_{\rm old}=D_-+L_{\rm new}.
+}
+\tag{2}$$
+The existing  $d$  family occurs exactly once in (1). The additional negative summand is  $D_-$ , which need not equal  $d$  outside AA.On the positive side, the joint occurrence separation gives
+$$\boxed{
+E_{\rm term}+F_{\rm pos}+C_++b+D_+\le A.
+}
+\tag{3}$$
+Thus
+$$S_{\rm new}:=A-F_{\rm pos}-C_+-b-D_+
+\ge E_{\rm term}\ge0.$$
+The old activation remainder satisfies
+$$A-F_{\rm pos}-C_+-b=S_{\rm new}+D_+.$$
+Combining this with (2) and  $D_-+D_+=d$  proves
+$$\boxed{
+(A-F_{\rm pos}-C_+-b)+L_{\rm old}
+=S_{\rm new}+L_{\rm new}+d.
+}
+\tag{4}$$
+Equation (4) identifies the improvement precisely. The second corner exposes one unit that was previously within the two old remainders. It does not change  $R$ , and neither old remainder is subsequently added again.The use of  $E_{1,\rm old}$  remains essential. The full  $E_{1,\rm reg}$  already contains both negative D corners whenever they have the specified original types; adding that full set to (1) would invalidate the disjoint-union count.5. The enhanced general and all-route equations are exactRetain the established identities
+$$C_-+C_+=K_C,\qquad D_-+D_+=d,$$
+
+$$F_{\rm neg}+F_{\rm pos}+U_0=2K_{11},$$
+
+$$2R=A+U_0+Z_0+H.$$
+Here  $H$  is the defect count.Adding (1), the decomposition of  $A$  from (3), and  $U_0$ , then using the cap partition, gives the useful master identity
+$$\boxed{
+n_{\rm neg}+A+U_0
+=
+2K_{11}+e+2K_C+2d+b
++S_{\rm new}+L_{\rm new}.
+}
+\tag{5}$$
+In detail, the two sign decompositions combine
+$$K_C+C_-+C_+=2K_C,$$
+and
+$$d+D_-+D_+=2d.$$
+This explains why the total coefficient is  $2d$ , although the negative pool itself contains only  $d+D_-$ .Using the reserve identity in (5) yields
+$$\boxed{
+2R=
+2(K_{11}-K_{01}-K_{10})
++e+2K_C+2d+b
++S_{\rm new}+Z_0+H+L_{\rm new}.
+}$$
+The proposed capacity inequality has exact slack
+$$\boxed{
+n_{\rm neg}+A+U_0
+-\bigl(2K_{11}+e+2K_C+2d+b\bigr)
+=S_{\rm new}+L_{\rm new}\ge0.
+}$$
+The accepted cap selection remains unchangedThe new second-corner classification changes neither the original cap universe nor the accepted selected-cap families. Therefore the same identity remains available:
+$$2K_{11}=K_A+K_{B,\rm cap}+K_{D,\rm cap}+Q.$$
+With
+$$K_B=K_{B,\rm cap}+b,\qquad
+K_D=K_{D,\rm cap}+d,$$
+one has
+$$2K_{11}+2K_C+2d+b
+=
+K_{\rm back}+K_C+d+Q.$$
+Substitution gives exactly
+$$\boxed{
+2R=
+K_{\rm back}+K_C+d-n_{\rm neg}+e+Q
++S_{\rm new}+Z_0+H+L_{\rm new}.
+}
+\tag{6}$$
+Consequently,
+$$\boxed{
+K_{\rm back}+K_C+d+e+Q
+\le n_{\rm neg}+A+U_0,
+}$$
+and
+$$\boxed{
+2R\ge
+K_{\rm back}+K_C+d-n_{\rm neg}+e+Q+Z_0+H.
+}$$
+Both have the advertised additional  $d$ . The signed subtraction by the original negative-source census is preserved.The complement  $Q$  continues to count unselected original caps. It is neither reduced by the new interior occurrences nor treated as additional unused reserve.6. The shared-stop substitution uses the same joint budgetWrite
+$$W:=F_{\rm pos}+C_++b+D_+.$$
+The new terminal bound is
+$$E_{\rm term}+W\le A.$$
+Using the established passive partition and stop bounds,
+$$\begin{aligned}
+&B_{\rm pass}+J_{\rm stop}+T_{\rm crit}+W+U_0\\
+&=(D_{\rm stop}+C_0+J_{\rm stop})
++C_1
++(E_{\rm term}+W)
++T_{\rm crit}+U_0\\
+&\le H+A+A+Z_0+U_0\\
+&=2R+A.
+\end{aligned}
+\tag{7}$$
+This uses the established corner-claim and terminal-claim capacities once each. The  $H$  and  $Z_0$  stop families also enter once.The expression substituted into (7) is an equality:
+$$\begin{aligned}
+W+U_0
+&=2K_{11}-n_{\rm neg}+e+2K_C+2d+b+L_{\rm new}\\
+&=K_{\rm back}+K_C+d-n_{\rm neg}+e+Q+L_{\rm new}.
+\end{aligned}$$
+Hence
+$$\boxed{
+B_{\rm pass}+J_{\rm stop}+T_{\rm crit}
++K_{\rm back}+K_C+d-n_{\rm neg}+e+Q+L_{\rm new}
+\le2R+A.
+}$$
+This is the claimed enhanced shared-stop form. No additional  $S_{\rm new}$  belongs in its substituted charge, and the note correctly omits it.7. The AA support-frame argument is exhaustive and handles the recurring ownerThis part requires the designated AA component. Its established activation census identifies the only possible sites of a positive second corner.Normalize either of those activated short tips as
+$$O=U(6,\lambda,\beta),\qquad
+\lambda>\beta,\qquad
+z=(\beta,6).$$
+The actual incoming owner is
+$$R_{\rm owner}(r,c)=(k+2-r,c+4)
+\quad\text{on }U(v,k,f),
+\qquad k\ge\beta.$$
+Define
+$$p=(\beta+1,5),\qquad
+q_{\rm west}=(\beta+1,4).$$
+The incoming owner contains  $p$  and excludes  $q_{\rm west}$ Their inverse coordinates are
+$$R_{\rm owner}^{-1}(p)=(k-\beta+1,1),$$
+
+$$R_{\rm owner}^{-1}(q_{\rm west})=(k-\beta+1,0).$$
+For the first point,
+$$1\le k-\beta+1\le k.$$
+At  $k=\beta$ , it is the bar endpoint  $(1,1)$ . At larger values it is on the first stem. Thus
+$$p\in P_{R_{\rm owner}}.$$
+The canonical endpoint predicate never contains a point in column  $0$ , so
+$$q_{\rm west}\notin P_{R_{\rm owner}}.$$
+This is a complete-source absence statement, valid at the boundary and for every independent far height.The support directions leave exactly two transformationsSuppose  $z$  were a C-positive or D-positive second corner.In either second-corner normalization, the positive singleton is at the bottom-left corner of its physical tile. Its two own original intratile supports point north and east.Original endpoint uniqueness identifies that positive source with  $O$  when the physical endpoint is  $z$ . In the AA normalization,  $O$ ’s two own original supports at  $z$  are
+$$z+S=(\beta+1,6),\qquad
+z+E=(\beta,7).$$
+Therefore the linear part  $T$  of the transformation between the two normalizations must satisfy
+$$T\{N,E\}=\{S,E\}.$$
+There are exactly two signed coordinate permutations:Direction assignmentLinear map on offsetsSame-owner stencil pair used $N\mapsto S,\ E\mapsto E$  $T_1(r,c)=(-r,c)$  $F$ :  $(-1,-1),(-1,-2)$  $N\mapsto E,\ E\mapsto S$  $T_2(r,c)=(c,-r)$  $H$ :  $(1,1),(2,1)$ In the first case,
+$$T_1(-1,-1)=(1,-1),\qquad
+T_1(-1,-2)=(1,-2).$$
+In the second,
+$$T_2(1,1)=(1,-1),\qquad
+T_2(2,1)=(1,-2).$$
+After translating the corner to  $z$ , these are  $p,q_{\rm west}$ .Thus either frame forces a single original stencil owner  $V$  to contain both points:
+$$p,q_{\rm west}\in P_V.$$
+This uses the original support set of the same positive source. Original supports may be consumed into global  $P$ ; the proof does not assume that original supports are globally disjoint from all endpoints.The missing point resolves recurrenceSince  $q_{\rm west}\in P_V$  but
+$$q_{\rm west}\notin P_{R_{\rm owner}},$$
+the two original owners are distinct:
+$$V\ne R_{\rm owner}.$$
+Their common endpoint  $p$  then contradicts original endpoint uniqueness.This excludes the case in which the stencil owner might otherwise have been the incoming owner. The argument does not assume freshness, infer a contradiction merely from a shared point, or rely on a phase distinction between  $V$  and  $R_{\rm owner}$ .Both the C and D stencils supply the required same-owner pairs. Therefore neither type of positive second corner can occur at either AA short tip.8. The component restriction and AA substitutions are applicableTo use the AA activation census, the second corners must belong to the same endpoint component as their events. That condition is satisfied.For a D-interior output,  $y$  is adjacent to original endpoints of  $F$  and  $H$ . The complete original sources retain their endpoints, and the companion is connected to the critical event through its terminal. Thus the new owner and activation belong to that event’s endpoint component.The C second corner has the corresponding backfill-tile connection. Cap fillers and the selected cap occurrences likewise remain in the component of their source and contact. This agrees with the established complete-source restriction to endpoint components.Accordingly, restrict all event counts, source counts, cap complements, and negative complements to the designated AA component before applying its identities.Within that component:Every  $C_+$  or  $D_+$  is an actual terminal activation.The established AA census allows activations only at its two short tips.The new geometric argument excludes both tips.Hence
+$$\boxed{C_+=D_+=0.}$$
+The consequences are
+$$C_-=K_C,\qquad D_-=d,\qquad
+L_{\rm old}=d+L_{\rm new}.$$
+Using the established AA values
+$$F_{\rm pos}=0,\qquad A=2,\qquad U_0=Z_0=H=0$$
+in the joint terminal bound gives
+$$\boxed{E_{\rm term}+b\le2.}$$
+The enhanced all-route capacity gives
+$$\boxed{
+K_{\rm back}+K_C+d+e+Q
+\le2(K_{01}+K_{10})+2.
+}$$
+A useful exact check is available directly in AA. The negative pool becomes
+$$\boxed{
+n_{\rm neg}
+=
+2K_{11}+e+2K_C+2d+L_{\rm new},
+}$$
+because  $F_{\rm neg}=2K_{11}$ . Equivalently,
+$$K_{\rm back}+K_C+d+e+Q+L_{\rm new}
+=n_{\rm neg}+b.$$
+Together with  $b\le2$ , this reproduces the reported AA inequality without any second use of a remainder.Here  $e$  still means  $|E_0|+|E_{1,\rm old}|$ . It is distinct from the exceptional-double count denoted by  $e$  in the support-chain document; nonexceptionality does not set this reservation count to zero.9. The new source statements match the written proof’s scopeThe new Lean file separates the relevant mathematical steps appropriately:Complete endpoint supply and the fixed rotor stencil.Tile parity.The two possible support-frame transformations.Incoming-owner membership at  $p$  and absence at  $q_{\rm west}$ .The ownership contradiction that excludes recurrence.Remainder transfer and the enhanced general, all-route, and shared-stop arithmetic.The signed ledger parameters are explicitly Int, so the negative source-census terms use the signed subtraction required by the proof.The AA arithmetic declaration takes  $C_+=D_+=0$  as premises. That is consistent with its scope: the written §5 supplies their geometric justification through the support-frame and missing-point argument audited above. The arithmetic declaration alone would not establish those geometric facts.No revision is needed for the stated enhancement or AA corollary. The result strengthens the simultaneous retained budget by  $d$ , while retaining the original negative-source census and the existing activation and stop capacities. It does not establish the full marked-side allocation
+$$\mu=N+R-G=n_0+R-n_2\ge0,$$
+where  $G$  counts marked positive sides, nor rectangular-grid equality. The proof makes no claim of a complete critical U10 or AA realization, and this verdict supplies no execution certification.
