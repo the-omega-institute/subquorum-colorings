@@ -134,7 +134,10 @@ companion, not a positive terminal or rotor companion.
 The later [long horizontal channel theorem](LONG_HORIZONTAL_CORNER_CHANNEL.md)
 pays the unbounded H subclass W=6, a=e=b-2 with a permanent lower pair,
 jointly without reusing the old short-H pair pool. Complete connected
-eleven-source families realize every even b>=6. Wider and unmatched H,
+eleven-source families realize every even b>=6. The later
+[tight-Vcorner activation theorem](TIGHT_VCORNER_ACTIVATION_TRANSFER.md)
+resolves a=h-4 into new joint activation targets, with its own verification
+and independent-review scope. Wider and other unmatched H, nontight
 Vcorner and universal coverage remain open.
 
 ## 3. A stronger obstruction: south incident length four is impossible

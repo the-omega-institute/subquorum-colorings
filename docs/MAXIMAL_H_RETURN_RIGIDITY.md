@@ -70,6 +70,52 @@ and Q contains exactly H's lower-bar pair (4,4),(4,5), as claimed.
 
 ## Counting and residual scope
 
+The counting dependency is the **long-H payment theorem**, Sections1--2 of
+[A permanent pair for arbitrarily long negative H companions](LONG_HORIZONTAL_CORNER_CHANNEL.md),
+not the width-six-H consequence in the four-column note. Its exact source
+range is B=U(6,b,e), H=U(d,b-2,k), b>=6,d>=6,k>=4,e>=b-2 in the frames
+used here, with the same complete source model. It was independently
+accepted in review5a0cae69. Our equality a=b-2 and prescribed e=b-2 satisfy
+ALL its hypotheses for every independent d,k allowed in this note. No
+assumption d=6 or k>=b-2 is imported from the other barrier application.
+
+For clarity, a claim is an actual labelled marked side (positive original
+owner, intrinsic leg index), not one copy of each certificate detecting
+it. Normalize that side as in the all-length companion theorem: A is its
+positive producer, B consumes t=(3,2), C consumes p=(2,2), and H consumes
+y=(3,3) as its outer upper corner. The physical receipt Q identifies H
+by unique endpoint ownership. Its first lower-bar pair identifies the
+bar end and upper corner y; the first pairs at opposite ends have columns
+{4,5} and {d,d+1}, distinct even when d=6. At that y, its west endpoint
+t is the actual B terminal and its north endpoint is C's straight-leg
+point. B also owns (4,2), leaving (3,1) as the only possible external
+positive-producer anchor at t. Unique ownership and canonical-gate
+uniqueness recover the labelled original side. The argument is uniform
+in d,k and b. A collision with an old short-H assignment identifies the
+same side; in particular its b cannot simultaneously equal6 and exceed6.
+
+The old corridor lower pairs need not all have assigned claims; they
+still supply actual physical receipts. If a pair already assigned to a
+claim is encountered again, reconstruction identifies that SAME claim.
+It cannot pay an additional distinct side. Thus taking both the claim
+union and physical receipt union preserves the injection, rather than
+assuming that set union alone establishes it.
+
+The other old resources cannot reuse Q. An upper-bar pair of H lies on
+its different intrinsic bar row, and a different original owner cannot
+own Q's two endpoints. Caps and m8 have three endpoints; Q has exactly
+two. Q has no original terminal, ruling out any terminal occurrence
+receipt there. It has no positive canonical-gate support: at either occupied
+corner, both potential external anchors are H endpoints on the adjacent
+upper/lower bar rows, so neither can belong to a positive producer. Any
+original support at a permanently blank corner would have to remain selected,
+a contradiction. Hence it
+is the sole-owner lower irregular-bar-pair term of the exact defect
+identity, distinct from upper pairs, triples, mutual pairs and activation
+occurrences. The n0 contribution comes from the separate 2N-G estimate,
+not a second use of a tile in 2R. These are the nonreuse interfaces of
+the cited long-H payment theorem, restated for the present parameter range.
+
 For an actual marked H claim, assign Q using the accepted reconstruction
 from its unique original owner, first lower-bar pair and adjacent corner.
 This is the SAME assignment as the long-H theorem after the forced
@@ -113,7 +159,15 @@ sorry or native reduction. Preflight measured59% free memory and no real
 lean/lake comm basename. Coordinate controls pass512 two-owner patterns,
 432 impossible-short-near stencils,80 matched pair profiles and five
 instances of the complete unbounded eleven-source family, through b=66.
-An independent written corollary review has been submitted separately;
-its original streaming session85537 is retained.
+The first independent written corollary review da2e66b8 confirms the geometry
+but requests an explicit counting dependency. The exact long-H theorem,
+claim reconstruction and cross-class nonreuse are now supplied above.
+The directional phrase in its older packet has also been replaced by
+the coordinate statement that the forced point's row is less than b+2.
+Its original streaming session85537 is retained. Follow-up3519bcb2
+ACCEPTS the repaired corollary and counting transfer, including all
+independent d,k. Its8526-character response matches originalstream29030
+exactly, exit0, observedgpt_6/pro. It does not certify program execution,
+the separately referenced family construction or unrestricted allocation.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
