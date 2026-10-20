@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "user-selected local Mac",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/BackfillFourRouteBudget.lean",
+  "theorem_declarations": 8,
+  "theorems": [
+    "route_A_companion_candidate_meets_original_root_wall",
+    "south_companion_at_even_odd_corner_has_east_active_direction",
+    "route_A_terminal_reuse_contradicts_original_phase_tag",
+    "disjoint_selected_caps_joint_capacity",
+    "all_routes_exact_single_pool_identity",
+    "all_routes_cap_activation_inequality",
+    "all_routes_retained_compensation",
+    "all_routes_shared_stop_compensation"
+  ],
+  "source_check": {
+    "original_exec_session": 46978,
+    "exit_code": 0,
+    "memory_free_percent": 68,
+    "warnings": false
+  },
+  "axiom_audit": {
+    "original_exec_session": 43235,
+    "exit_code": 0,
+    "memory_free_percent": 68,
+    "declarations": 8,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "additional_axioms": false,
+    "sorry": false,
+    "native_decide": false
+  },
+  "dependency_build": {
+    "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+    "original_exec_session": 51179,
+    "exit_code": 0,
+    "memory_free_percent": 49
+  },
+  "preflights": "Memory and actual ps comm executable basenames lean/lake were checked before each invocation; dependency, source and audit sequential. Initial check26315 compiled with an unused width premise warning; removed that premise before final clean run.",
+  "scope": "Normalized A root-wall endpoint, transported critical opposite-corner frame and phase-tag contradiction; conditional jointly typed selected-cap capacity, all-route exact identity, cap/activation inequality and retained/shared-stop arithmetic. Physical source/phase/partition adapters, original cap/leg/event injection and global selected-cap complement remain written. Complete critical U10 control coverageZERO. Not full allocation, end-to-end source-model formalization or grid equality."
+}

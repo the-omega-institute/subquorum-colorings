@@ -225,13 +225,16 @@ B cap bands, no complete D cap band in this sample, and11664joint ledger
 instances,9936with negative source census. They do not turn the zero
 critical-event/interior-realization coverage into an existence theorem.
 
-Independent same-conversation review of the NEW theorem is live on original
-stream89333. Its packet includes the complete new proof and initial13-
-statement Lean snapshot. The later explicit activation corollary(6a) and
-fourteenth Lean statement are direct arithmetic consequences of(4),(6),
-whose hypotheses and geometric argument are already in that packet.
+Independent initial B/D audit8b3b2d3b ended with a terminal browser
+infrastructure failure cdp_disconnected@typing, not a mathematical verdict.
+Its stream89333 exited0/DONE but contains an error, so that transport status
+does not establish acceptance. See the [failure receipt](../output/backfill-band-outputs-review.json).
+Only after confirming that terminal failure, a NEW combined proof audit
+was submitted on original stream96627 in a new conversation. Its packet
+includes this complete theorem/final14-statement source and the later
+[A-cap nonreuse/four-route extension](BACKFILL_FOUR_ROUTE_SINGLE_POOL_BUDGET.md).
 The distinct prior shared-stop audit7ea29eb0 completed ACCEPT; it does not
-cover this later B/D theorem. No independent verdict is inferred here.
+cover either new theorem. The combined mathematical review is pending.
 
 This routes B and D into the same original occurrence ledger used by A's
 caps and C's two corners. It does not prove that those resources suffice
