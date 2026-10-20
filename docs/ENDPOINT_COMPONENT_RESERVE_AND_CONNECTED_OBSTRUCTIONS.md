@@ -204,9 +204,13 @@ and every individual axiom audit passes without sorryAx/native_decide.
 See output/endpoint-component-reserve-controls.json and
 output/endpoint-component-reserve-formal-check.json. The preceding
 multiple-positive review82dc60f9 completed ACCEPT; this new restriction
-and nonzero-reserve theorem has its own pending independent review,
-original taskc04f8615 in conv_68f343f25e429e97 on stream77960. The
-preceding acceptance is not inherited as a verdict for this theorem.
+and nonzero-reserve theorem had its own independent review,
+original taskc04f8615 in conv_68f343f25e429e97 on stream77960. The broker
+marked it cancelled at03:28:22.770UTC before any attempt or mathematical
+response. The preceding acceptance is not inherited as a verdict for this
+theorem. See the updated live record. The subsequent short-leg injection
+in SHORT_LEG_DEFECT_INJECTION.md has a separate review and eliminates
+fourteen of the seventeen symbolic D2 patterns in the nonexceptional class.
 
 Unrestricted mixed allocation, connected two-demand low-defect geometry,
 and arbitrary rectangular-grid triple equality remain open.

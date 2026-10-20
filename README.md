@@ -32,6 +32,16 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [short-leg defect injection](docs/SHORT_LEG_DEFECT_INJECTION.md) assigns
+every nonexceptional doubly marked positive source a distinct activated
+terminal occurrence or irregular-pair/mixed-triple defect tile. Original pair-corner ownership
+and an eight-orientation exclusion prevent sharing a forced tile with a
+blank-gate mark. The weighted consequence excludes fourteen of the seventeen
+defect patterns in a one-reserve allocation failure, leaving three connected
+alternatives. Eleven scoped Lean declarations and664 physical controls pass;
+the full geometric adapters are written. Unrestricted joint allocation and
+rectangular-grid triple equality remain open.
+
 The [leaf-spliced network theorem](docs/LEAF_SPLICED_TWO_LEG_NETWORKS.md)
 proves exact corrected-charge additivity for arbitrarily many differently
 oriented two-leg modules joined at their tail ports. Positive modules cannot
