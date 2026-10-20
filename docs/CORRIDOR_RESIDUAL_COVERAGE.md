@@ -32,7 +32,8 @@ cap capacity is discarded, never counted twice. Consequently
         >=m8-t+2u+2p,
 
 where the first inequality uses q<=A and the second uses
-q+c+t=G<=2N. Integer rounding yields the explicit result
+q+c+t=G<=2N. The established exact reserve definition R=S+C-K is integral;
+therefore mu=N+R-G is integral as well. Integer rounding yields the result
 
     mu>=p+u+ceil((m8-t)/2).                           (1)
 
@@ -46,7 +47,7 @@ original negative charge, or reserve from a separate component enters
 this argument. The u strips are counted once per original owner, including
 when both corners certify different marked sides.
 
-If each counted strip owner has at least one selected cap, then u>=c
+If the counted strip owners include every selected cap's owner, then u>=c
 because each owner has at most two selected cap claims and at least two
 upper pairs. Taking p=m8=0 gives the convenient weaker sufficient condition
 t<=2c+1. For c=0 this recovers the established at-most-one-negative-consumer
@@ -74,6 +75,10 @@ formal/SubQuorum/PersistentCorridorCapacity.lean prove the integer implication
 hypotheses. The physical adapters remain the written theorems cited above.
 The original corridor review request preceded this corollary and terminated
 with a broker browser failure, not a mathematical response. A fresh independent
-request includes BOTH notes; its separate receipt tracks the actual outcome.
+request includes BOTH notes. Its e2d1db08 response requested one corrected
+endpoint/support sentence in the corridor cap injection and explicit reserve
+integrality here. Those repairs are applied. Same-conversation cc4dd625
+rechecks them separately from the new short-negative-singleton theorem;
+the receipts track the actual outcomes.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

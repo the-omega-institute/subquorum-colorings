@@ -7,6 +7,26 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [short negative-singleton endings](SHORT_NEGATIVE_SINGLETON_ENDINGS.md)
+exclude incident length four in arbitrary complete U/rotor extensions.
+At length six, the forced next owner is one of E/S/H: the positive cases
+inject into actual activations jointly with ALL S/P/R targets, while the
+negative case injects into existing protected lower pairs. East requires
+w>=W+8>=14; south requires d<=min(h-2,W-2) and its DISTINCT owner stays
+unmarked. Counting each capacity once gives
+mu>=n0+u+ceil((p+m8-t)/2). Longer negative singleton endings remain open.
+A fixed three-source tight-return stencil has no arbitrary U/rotor completion;
+increasing the transverse width gives a complete connected eleven-source
+H witness with278endpoints,139matching edges,62selected supports and
+POSITIVE margin27. This is not an allocation counterexample. Twelve scoped
+general Lean declarations and independent role/count/32image controls PASS;
+the separate concrete eight-declaration kernel certificate and axiom audit
+also PASS locally, with NO axioms.
+Independent audit cc4dd625/original13551 is live. It separately rechecks the
+previous corridor note's repaired endpoint/support ownership sentence and
+explicit reserve integrality after e2d1db08 returned REVISE. Full unrestricted
+allocation, universal coverage and rectangular-grid triple equality stay OPEN.
+
 21 October: [permanent corridors and single-use strip compensation](PERSISTENT_CORRIDOR_AND_STRIP_CAPACITY.md)
 prove a complete corridor dichotomy for arbitrary U/rotor extensions. When
 v>=d-4, a mixed cap and the whole upper-bar strip are permanent. Distinct
@@ -25,7 +45,9 @@ mu>=p+u+ceil((m8-t)/2), where t counts still-uncertified negative-U gates.
 Thus t<=2(p+u)+m8+1 suffices for coefficient one in covered source families.
 This deduction postdates the initial corridor review request, which failed
 with a terminal broker browser error. A fresh independent review includes
-BOTH notes; no mathematical verdict is inferred from the infrastructure failure.
+BOTH notes. That reviewe2d1db08 completed REVISE: one endpoint/support
+ownership sentence is corrected and reserve integrality is explicit.
+Same-conversation re-reviewcc4dd625 is live; no full-target result follows.
 
 21 October: [full-bar clearance and an unactivated exit](FULL_BAR_UNACTIVATED_EXIT_OBSTRUCTION.md)
 classify the two full-bar gate forms at all dimensions. A complete connected

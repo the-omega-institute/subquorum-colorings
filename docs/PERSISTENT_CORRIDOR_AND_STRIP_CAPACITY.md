@@ -143,8 +143,9 @@ enclosures, not the sum over potentially repeated descriptions.
 Define z as the number of distinct cap tiles in Section 2. If caps are
 assigned to actual marked-side claims, the assignment is injective. The
 unique two-endpoint owner of a cap identifies B; its first internal leg
-pair fixes the incident leg and the bar end. The gate is then B's original
-support (3,2). Of its two external anchor positions, (4,2) already belongs
+pair fixes the incident leg and the bar end, hence the consumed gate (3,2).
+This is B's original endpoint, and the positive producer's original support.
+Of its two external anchor positions, (4,2) already belongs
 to B, so a positive producer must own (3,1). Unique endpoint ownership and
 the canonical-gate uniqueness theorem identify that original positive side.
 Thus distinct marked-side claims cannot receive the same cap.

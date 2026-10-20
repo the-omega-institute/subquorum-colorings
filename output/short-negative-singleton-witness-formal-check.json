@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/ShortNegativeSingletonWitness.lean",
+  "lean_version": "4.33.0",
+  "execution_machine": "User-selected local Mac",
+  "final_compile_and_axiom_session": 82522,
+  "exit_code": 0,
+  "available_memory_percent": 40,
+  "real_lean_lake_basename_preflight": "No active actual lean/lake executables before invocation; comm basename includes bare names and full paths",
+  "method": "Whole final source fed to lean --stdin followed by #print axioms for all eight declarations; ordinary kernel decide",
+  "declarations": [
+    "every_original_source_is_feasible",
+    "endpoint_ownership_is_disjoint",
+    "unchanged_matching_is_a_lattice_matching",
+    "every_retained_support_has_one_occupied_neighbor",
+    "every_endpoint_has_at_least_three_occupied_neighbors",
+    "the_marked_gate_has_a_negative_singleton_consumer",
+    "the_actual_transverse_and_upper_corner_chain_is_present",
+    "the_first_lower_pair_is_original_irregular_and_finally_nonfull"
+  ],
+  "axioms_used": [],
+  "sorryAx": false,
+  "native_decide": false,
+  "scope": "Concrete complete eleven-source original feasibility, endpoint ownership, unchanged matching, final retained-support and endpoint degrees, actual marked-gate singleton/transverse/corner chain and lower-pair profile. Connectedness, Horn closure and global reserve ledger are independently checked Python, not these Lean theorems. No source-minimality or full allocation/grid claim."
+}

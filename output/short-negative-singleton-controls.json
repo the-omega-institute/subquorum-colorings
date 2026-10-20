@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "shortest_disjoint_enclosures": 32,
+  "length_six_role_controls": {
+    "disjoint_fixed_patterns": 72,
+    "negative_upper": 225,
+    "positive_east": 461,
+    "positive_south": 42,
+    "anchored_U_role_candidates": 480,
+    "rotor_tip_roles_excluded": 4
+  },
+  "algebra": {
+    "pair_transfer_self_collision_controls": 60,
+    "exact_integer_allocation_controls": 9312
+  },
+  "complete_witness": {
+    "images": 32,
+    "b6_negative_branch_images": 8,
+    "exact_connected_report": {
+      "owners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "endpoints": 278,
+      "matching": 139,
+      "selected": 62,
+      "endpoint_components": 1,
+      "shape": [
+        28,
+        28
+      ],
+      "ambient_slack": 191,
+      "positive": 3,
+      "marked": 2,
+      "activated_positive": 4,
+      "unused_u_triples": 2,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 5,
+      "sole_irregular_pair": 19,
+      "mutual_non_event": 0,
+      "mixed_three": 3,
+      "boundary_cost": 46,
+      "event_reserve": 26,
+      "exact_joint_margin": 27
+    },
+    "least_feasible_seed_hull": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source_count_minimality_claim": false,
+    "scope": "Complete actual negative H branch, every original support and matching retained. Connectedness and Horn closure checked independently; positive margin27, not an allocation counterexample."
+  },
+  "tight_return_obstruction": {
+    "prescribed_owners": 3,
+    "forced_support": [
+      8,
+      8
+    ],
+    "foreign_neighbors": [
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        7
+      ],
+      [
+        8,
+        9
+      ]
+    ],
+    "forbidden_U_stem_point": [
+      11,
+      8
+    ],
+    "forbidden_rotor_points": [
+      [
+        10,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "scope": "The fixed stencil and two rotor roles are checked here; the written minimum-leg argument excludes ALL U dimensions and arbitrary complete U/rotor extensions, not just a finite library."
+  },
+  "scope": "Original matching/support reconstructions and endpoint-disjoint PARTIAL role patterns, not complete realizations. The proof for unbounded dimensions and arbitrary added U/rotor sources is written. The separate eleven-source manifest realizes only the H channel; no unrestricted allocation or grid theorem is claimed."
+}
