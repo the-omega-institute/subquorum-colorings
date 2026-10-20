@@ -53,6 +53,14 @@ $$
 \beta_2(P_m\square P_n)=F(m,n).
 $$
 
+This numerical formula is already determined by the exact 3-path vertex-cover
+results of Bresar et al. ([2013](https://doi.org/10.1016/j.dam.2013.02.024))
+and Jakovac--Taranenko ([2013](https://doi.org/10.1016/j.disc.2012.09.010)),
+using beta_2(G)=|V(G)|-tau_3(G). The three parity formulas are also displayed
+in [Jesih's 2013 thesis](https://dk.um.si/IzpisGradiva.php?id=40050&lang=eng),
+Theorem 4.2, p. 28. Our new proof supplies equality information used in the
+directional extension.
+
 Our independent proof uses the rigid equality case on a two-row ladder.
 For odd width, the row counts give an odd-integer profile. At each integer
 level, path-neighborhood expansion controls its positive entries; the only
