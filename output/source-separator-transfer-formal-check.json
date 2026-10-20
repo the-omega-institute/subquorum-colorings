@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/SourceSeparatorTransfer.lean",
+  "lean_version": "4.33.0",
+  "theorems": [
+    "separator_side_is_feasible",
+    "directed_event_lies_on_a_separator_side",
+    "separator_sides_have_disjoint_directed_events"
+  ],
+  "source_build": {
+    "exec_session": 88876,
+    "exit_code": 0,
+    "preflight_free_memory_percent": 46,
+    "real_comm_basename_lean_lake_processes": [],
+    "warnings": []
+  },
+  "individual_axiom_audit": {
+    "exec_session": 91194,
+    "exit_code": 0,
+    "preflight_free_memory_percent": 73,
+    "real_comm_basename_lean_lake_processes": [],
+    "axioms_by_theorem": {
+      "separator_side_is_feasible": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "directed_event_lies_on_a_separator_side": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "separator_sides_have_disjoint_directed_events": []
+    }
+  },
+  "dependency_build": {
+    "source": "SubQuorum/SourceRetentionClosure.lean",
+    "exec_session": 75367,
+    "exit_code": 0,
+    "preflight_free_memory_percent": 40
+  },
+  "initial_attempts": {
+    "lake_sessions": [
+      37276,
+      49097
+    ],
+    "lake_outcome": "Both task-owned Lake invocations attempted an unnecessary mathlib clone and were stopped with their own descendant processes. No successful validation claimed for these attempts. Final verification used the direct Lean4.33 executable and Std only.",
+    "initial_source": 63476,
+    "initial_source_outcome": "Failed at an equality rewrite after subst; replaced by explicit transport. Not evidence for final source.",
+    "intermediate_source": 49850,
+    "intermediate_source_outcome": "Compiled, with unused separator-retention hypothesis warning; removed unnecessary hypothesis and recompiled final source."
+  },
+  "scope": "Three source-level statements using actual abstract endpoint/support/anchor/adjacency/directed-event predicates: legal restriction with no cross endpoint edge, event cover, and event disjointness. Full feasibility, intrinsic anchors and endpoint uniqueness are hypotheses. Physical connected-profile/full-tile valuation, finite count ledger, canonical-mark adapter and allocation-margin reductions remain written. No end-to-end reserve or full allocation formalization.",
+  "reproduction": {
+    "cwd": "formal",
+    "commands": [
+      "lean -o SubQuorum/SourceRetentionClosure.olean SubQuorum/SourceRetentionClosure.lean",
+      "LEAN_PATH=. lean -o SubQuorum/SourceSeparatorTransfer.olean SubQuorum/SourceSeparatorTransfer.lean"
+    ],
+    "toolchain": "leanprover/lean4:v4.33.0"
+  }
+}
