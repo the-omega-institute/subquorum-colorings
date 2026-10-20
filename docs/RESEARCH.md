@@ -7,6 +7,25 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [permanent corridors and single-use strip compensation](PERSISTENT_CORRIDOR_AND_STRIP_CAPACITY.md)
+prove a complete corridor dichotomy for arbitrary U/rotor extensions. When
+v>=d-4, a mixed cap and the whole upper-bar strip are permanent. Distinct
+physical caps, once-per-owner strips and enclosed lower pairs are disjoint
+from prior m8 receipts, giving L<=R(I)-p-u-ceil((A(I)+m8(I)+z)/2) in ONE
+family attaining all component losses. A complete all-parameter I/J/K
+family realizes both opposite caps on ONE strip; taller legal extensions
+fill every lower pair and lose exactly one reserve. Twelve scoped local Lean
+declarations,960phase/isometry images,480component subunions and an actual
+two-loss certificate PASS. The new written theorem is submitted separately
+for independent review; the original full-bar obstruction review5a86d678
+has completed ACCEPT. Filled corridors/vertical regular exits and universal
+demand coverage remain OPEN; no universal5/6 improvement or manuscript change.
+The later [residual-coverage corollary](CORRIDOR_RESIDUAL_COVERAGE.md) proves
+mu>=p+u+ceil((m8-t)/2), where t counts still-uncertified negative-U gates.
+Thus t<=2(p+u)+m8+1 suffices for coefficient one in covered source families.
+This deduction postdates the new corridor review request and is not within
+that request's review scope.
+
 21 October: [full-bar clearance and an unactivated exit](FULL_BAR_UNACTIVATED_EXIT_OBSTRUCTION.md)
 classify the two full-bar gate forms at all dimensions. A complete connected
 eight-source certificate refutes both full-bar-implies-producer-activation
@@ -16,7 +35,8 @@ all32phase/isometry controls and eight kernel-only Lean declarations PASS,
 with no axioms. Its margin is POSITIVE19; full allocation/grid OPEN.
 The earlier PS/PR addendum2b910319 now ACCEPTS both written exclusions,
 9355chars exactstream/API. Full-targetb90c01ca also completed with26023chars
-of corridor/persistent-strip and short-ending research leads, not yet adopted.
+of research leads. The corridor/strip and I/J/K parts are reconstructed in
+the later note above; short negative-singleton branches remain unadopted.
 
 21 October: [rotor activation transfer and negative-U path endings](ROTOR_TRANSFER_AND_NEGATIVE_U_PATH_ENDINGS.md)
 extend the physical activation injection to ALL positive/rotor gate consumers.

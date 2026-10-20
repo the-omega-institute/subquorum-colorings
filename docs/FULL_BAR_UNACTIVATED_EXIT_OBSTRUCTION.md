@@ -147,11 +147,17 @@ library returned UNSAT; that excluded only that bounded library and is
 superseded as a lead by this complete witness. No general obstruction was
 inferred from it.
 
-Next: analyze longer negative-U/full-bar continuations and actual persistent
-caps/strips. A complete Oracle research response proposes such a corridor
-theorem and parameterized families; it is archived as an unadopted research
-lead until its geometry and nonreuse are independently reconstructed. Keep
-the exact residual obligation Bbad<=C+Sunmarked and do not count a forced
-regular pair as new capacity.
+The separate written audit5a86d678 has completed ACCEPT,15154characters
+observed gpt_6/pro, with exact stream/API agreement and independent reading.
+It accepts the general catalogue/clearance and concrete source, support,
+matching, Horn/connectedness and regular-exit/global-ledger proof; it does
+not certify executions, the full target or the later corridor theorem.
+
+The [later corridor note](PERSISTENT_CORRIDOR_AND_STRIP_CAPACITY.md) now
+reconstructs permanent caps/strips, their nonreuse and the all-parameter
+I/J/K families from the completed research response. Short-singleton leads
+remain unadopted. Continue longer negative-U/full-bar continuations and
+retain the exact residual obligation Bbad<=C+Sunmarked; a forced regular
+pair is not new capacity.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
