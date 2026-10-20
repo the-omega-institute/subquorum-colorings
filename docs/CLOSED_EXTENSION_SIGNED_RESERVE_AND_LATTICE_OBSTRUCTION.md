@@ -1,5 +1,14 @@
 # Signed reserve transfer on legal extensions; the reserve is not a lattice rank
 
+21 October update: the later connected nine-source construction in
+[the demand-hull obstruction](DEMAND_HULL_RESERVE_COMPARISON_OBSTRUCTION.md)
+refutes even comparison with the actual canonical least demand-preserving
+hull. The historical open comparison below is therefore settled negatively.
+[Periodic strip compression](PERIODIC_STRIP_COMPRESSION.md) supplies a
+different descent: it shortens geometry, preserving the legal-owner lattice
+and demand, while every legal subfamily's margin can only decrease. It does
+not assert monotonicity when owners are added or removed.
+
 20 October 2026. For arbitrary nested COMPLETE FEASIBLE source subfamilies
 I contained in J of the fixed U/rotor family, the exact reserve change is
 

@@ -7,6 +7,16 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [periodic strip compression](PERIODIC_STRIP_COMPRESSION.md)
+reduces ANY n-source complete feasible family to coordinate spans at most
+512n+2, with the identical legal-owner Horn lattice and canonical demand
+hull. Every legal restriction's margin can only decrease, by half the
+deleted nonnegative tile defect. Thus every hypothetical negative-margin
+counterexample has this bounded geometric representative, for arbitrary n.
+Three seam-level Lean lemmas and 6,480 physical compression steps pass;
+general catalogue, reverse-clause and counting adapters are written, with
+independent review pending. The full allocation inequality remains open.
+
 21 October: [canonical gate consumption](MARKED_SIDE_GATE_CONSUMPTION.md)
 identifies every actual positive-side mark with one fixed support consumer.
 It gives a unique least demand-preserving Horn hull and eliminates duplicate

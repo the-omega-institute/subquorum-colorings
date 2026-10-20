@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21",
+  "status": "PASS_SCOPED_SEAM_LEMMAS",
+  "machine": "User-authorized local Mac",
+  "lean": "Lean 4.33.0",
+  "source": "formal/SubQuorum/PeriodicStripCompression.lean",
+  "compile": {
+    "session": 2160,
+    "exit_code": 0
+  },
+  "audit": {
+    "session": 67118,
+    "exit_code": 0,
+    "statements": [
+      "periodic_splice_preserves_occupied_degree",
+      "periodic_splice_preserves_selected_feasibility",
+      "periodic_splice_preserves_endpoint_degree"
+    ],
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "no_sorryAx": true,
+    "no_native_decide_axiom": true
+  },
+  "resources": {
+    "preflight": "memory_pressure -Q and lean/lake comm-basename process check before every Lean invocation",
+    "free_percentages": [
+      29,
+      29,
+      30,
+      29
+    ],
+    "concurrency": "Small seam proof and audit run sequentially alongside preserved fixed six-source numeric session27530. No heavy job duplication/restart; unrelated Lean tasks preserved."
+  },
+  "scope": "Exact four-neighbor degree preservation across a two-row splice, and forward selected-feasibility/endpoint-degree preservation under explicit periodic occupancy equalities. Catalogue reconstruction, reverse Horn-clause transport, exact mark/defect transport, feature count, iteration and linear counterexample bound remain written proofs. No end-to-end Lean claim for compression, allocation or grid equality.",
+  "initial_elaboration_failures": "First attempt had Prod.ext inference failure; second had dependent Bool rewrite motive failure. Final proof uses simp only for the supplied Boolean equalities and compiles exit0.",
+  "independent_review": {
+    "task_id": "056dcbfb-4760-4df8-a966-ff7eda142d4d",
+    "conversation_id": "conv_27ea1687d9e26dab",
+    "status": "dispatched",
+    "original_stream_session": 93570
+  }
+}
