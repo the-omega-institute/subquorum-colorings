@@ -185,8 +185,10 @@ only propext/Quot.sound where needed; region-label uniqueness is axioms-free.
 The controls include8462 mixed words,6927 words with10-to-10 contacts,
 5033 requiring the passive01 correction,59401 conditional budgets and
 765620 shared-reserve substitutions. No complete mixed-cycle realization was
-added. Independent reviewf2dcd705 is pending; the previous ACCEPT39cc covers
-the pure-cycle/incoming/C-phase package only. See the scoped
+added. Independent reviewf2dcd705 completed with ACCEPT: the written mixed-cycle
+extension has no must-fix mathematical gap under its inherited hypotheses.
+The previous ACCEPT39cc covers the pure-cycle/incoming/C-phase package.
+Neither review certifies execution, novelty or the full allocation target. See the scoped
 [formal receipt](../output/mixed-cycle-external-absorbers-formal-check.json),
 [controls](../output/mixed-cycle-external-absorbers-controls.json) and
 [review handle](../output/mixed-cycle-external-absorbers-review.json).
