@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [rotor activation transfer and negative-U path endings](ROTOR_TRANSFER_AND_NEGATIVE_U_PATH_ENDINGS.md)
+extend the physical activation injection to ALL positive/rotor gate consumers.
+An explicit single-use path allocation gives2mu=C+Sunmarked-Bbad, retaining
+isolated bad negative-U endings. Consecutive P transfers drop width by at
+least8 every two edges; P->S is impossible at any dimensions. A P->R exit
+requires companion leg>=6 and intermediate width>=14.16scoped localLean,
+31904legal restrictions and3166abstract path controls PASS; actual complete
+S/R/PP/PR examples are absent from this fixture library. Written review3f49db6b
+LIVE covers the initial proof; the later stronger two exclusions need addendum
+review. No full demand payment or grid equality follows from acyclicity.
+
 21 October: [positive pair transfers and protected defects](PAIR_GATE_TRANSFERS_AND_PROTECTED_DEFECTS.md)
 inject ALL positive gate consumers into distinct activated terminals. Marked
 height-six recipients with forced height-eight transverse owners protect
