@@ -12,7 +12,7 @@
   "verdict": "REVISE",
   "response_file": "output/periodic-strip-compression-review-response.md",
   "required_correction": "Restrict descent to strips strictly inside the current occupied bounding interval; external protected strips do not decrease span.",
-  "correction_status": "Applied in Section6 and made explicit in checker; strict two-row span descent asserted at every operation. Corrected text has not yet received a final independent ACCEPT.",
+  "correction_status": "Applied in Section6 and made explicit in checker; strict two-row span descent asserted at every operation. Same-conversation re-review4f57c33a completed ACCEPT; see correction_re_review. Original REVISE verdict retained as history.",
   "validation_after_correction": "PASS: existing 800 images, 6480 compression steps, 1680 strict reserve decreases and 18488 legal restriction controls reproduced exactly. Every step additionally asserts an internal strip and occupied span decrease by exactly two. No Lean source changed or new Lean execution claimed.",
   "correction_re_review": "output/periodic-strip-compression-revision-review.json",
   "scope": "Written-proof audit accepts unrestricted source reconstruction, identical Horn keys, every legal subfamily reserve/margin decrease and linear bound conditional on the stated reserve ledger; requires internal-strip termination correction. Not execution certification, end-to-end Lean or a full allocation/grid equality proof."
