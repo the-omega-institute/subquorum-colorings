@@ -5,23 +5,23 @@
   "lean_version": "4.33.0",
   "source": "formal/SubQuorum/NeutralPhaseTenDescent.lean",
   "source_check_and_object_build_exit_code": 0,
-  "source_build_original_exec_session": 82966,
+  "source_build_original_exec_session": 26901,
   "axiom_audit_exit_code": 0,
-  "axiom_audit_original_exec_session": 98048,
-  "total_file_declarations": 6,
+  "axiom_audit_original_exec_session": 69155,
+  "total_file_declarations": 14,
   "dependency_object_build": {
     "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
     "exit_code": 0,
-    "original_exec_session": 44466
+    "original_exec_session": 58865
   },
   "preflight": {
-    "memory_free_percent_before_dependency": 39,
-    "memory_free_percent_before_final_object": 48,
-    "memory_free_percent_before_audit": 52,
+    "memory_free_percent_before_dependency": 43,
+    "memory_free_percent_before_final_object": 44,
+    "memory_free_percent_before_audit": 38,
     "active_lean_lake_before_dependency": [],
     "active_lean_lake_before_object": [],
     "active_lean_lake_before_audit": [],
-    "process_enumeration": "Ordinary and -c macOS ps, comparing exact comm basename lean/lake."
+    "process_enumeration": "Both ordinary and -c macOS ps, exact comm basename lean/lake."
   },
   "declarations": [
     {
@@ -68,7 +68,72 @@
         "propext",
         "Quot.sound"
       ]
+    },
+    {
+      "name": "pulled_receiver_tile_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "phase_ten_parity_of_receiver_origin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "original_owner_excludes_foreign_endpoints",
+      "axioms": []
+    },
+    {
+      "name": "physical_phase_ten_owner_is_north_terminal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "north_terminal_full_run_and_east_bar",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "original_disjointness_implies_height_descent",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
     }
   ],
-  "scope": "Universal integer-dimension endpoint-role classification using transported phase10 parity and four original foreign endpoint exclusions; next corner, conditional bar/stem collision height descent, short active-leg exclusion, and arithmetic sequence bound. Partition/coordinate adapters, all-parameter complete-family feasibility and any proposed mixed-chain iteration remain written or unproved as stated; no full grid theorem."
+  "scope": "Twelve theorem declarations and two helper definitions. New tile-coordinate equivalence, physical phase-origin parity adapter, foreign blockers from unique original ownership, assembled physical owner role, full endpoint run/east bar, and actual original-disjointness collision adapter. Arbitrary dimensions; exact source endpoint predicate. Original forced-point/contact normalization and source-isometry model remain explicit geometric inputs; complete-family feasibility is a written all-parameter proof. No global mixed-chain termination or grid theorem.",
+  "prior_six_theorem_validation": {
+    "source_build_original_exec_session": 82966,
+    "axiom_audit_original_exec_session": 98048,
+    "dependency_object_build": {
+      "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+      "exit_code": 0,
+      "original_exec_session": 44466
+    },
+    "preflight": {
+      "memory_free_percent_before_dependency": 39,
+      "memory_free_percent_before_final_object": 48,
+      "memory_free_percent_before_audit": 52,
+      "active_lean_lake_before_dependency": [],
+      "active_lean_lake_before_object": [],
+      "active_lean_lake_before_audit": [],
+      "process_enumeration": "Ordinary and -c macOS ps, comparing exact comm basename lean/lake."
+    }
+  },
+  "total_theorem_declarations": 12,
+  "total_helper_definitions": 2,
+  "new_theorem_declarations_this_repair": 6
 }

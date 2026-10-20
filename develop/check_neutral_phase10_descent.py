@@ -30,9 +30,27 @@ def family(active, incoming):
             transform_module(source(6, incoming, 4), (False, False, False), (1-incoming, 0))]
 
 
+def support_range_controls(active, incoming):
+    modules = [transform_module(module, (False, False, False), (-1, -1))
+               for module in family(active, incoming)]
+    expected = [
+        {(1-active, -2), (1-active, 13), (2, -1), (6-active, 12),
+         (3-active, 13), (5-active, 13), (4-active, 11)}
+        | {(row, -2) for row in range(3-active, 2, 2)}
+        | {(row, 0) for row in range(4-active, 1, 2)},
+        {(0, 4), (7, 4), (1, -1), (6, -1), (0, 2),
+         (0, 0), (2, 1), (7, 2), (7, 0), (5, 1)},
+        {(-incoming, -1), (-incoming, 6), (1, 0), (5-incoming, 5),
+         (2-incoming, 6), (4-incoming, 6), (3-incoming, 4)}
+        | {(row, -1) for row in range(2-incoming, 1, 2)}
+        | {(row, 1) for row in range(3-incoming, 0, 2)}]
+    assert [module['selected'] for module in modules] == expected
+    return sum(map(len, expected))
+
+
 def local_role_controls():
     fixed = {(2, 0), (1, 0), (0, 0), (2, 1), (2, 2)}
-    candidates = surviving = 0
+    candidates = surviving = tile_adapters = 0
     for dimensions in ((6, 4, 4), (8, 6, 12), (14, 12, 4), (20, 4, 16),
                        (40, 30, 16), (6, 100, 4)):
         width, left, right = dimensions
@@ -42,6 +60,20 @@ def local_role_controls():
                 root = affine(anchor, symmetry)
                 offset = 1-root[0], 1-root[1]
                 module = transform_module(base, symmetry, offset)
+                transpose, flip_row, flip_column = symmetry
+                canonical_cells = set()
+                for row, column in vertices_of({(0, 0)}):
+                    delta = (column-1, row-1) if transpose else (row-1, column-1)
+                    canonical_cells.add((anchor[0]+(-delta[0] if flip_row else delta[0]),
+                                         anchor[1]+(-delta[1] if flip_column else delta[1])))
+                origin = (min(point[0] for point in canonical_cells),
+                          min(point[1] for point in canonical_cells))
+                assert canonical_cells == {(origin[0]+row, origin[1]+column)
+                                           for row, column in itertools.product((0, 1), repeat=2)}
+                assert origin == (anchor[0]-(0 if flip_row else 1),
+                                  anchor[1]-(0 if flip_column else 1))
+                assert (phase_of(module) == '10') == (origin[0] % 2 == 1 and origin[1] % 2 == 0)
+                tile_adapters += 1
                 if phase_of(module) != '10':
                     continue
                 candidates += 1
@@ -69,7 +101,8 @@ def local_role_controls():
             assert parent['endpoints'] & child['endpoints']
             collisions.append(dict(active=active, incoming=incoming,
                                    collision=min(parent['endpoints'] & child['endpoints'])))
-    return dict(phase10_endpoint_candidates=candidates, surviving_north_terminal_roles=surviving,
+    return dict(transported_tile_adapter_images=tile_adapters,
+                phase10_endpoint_candidates=candidates, surviving_north_terminal_roles=surviving,
                 height_collision_cases=len(collisions), collisions=collisions)
 
 
@@ -108,9 +141,11 @@ def main():
     parser.add_argument('--output', type=Path, required=True)
     arguments = parser.parse_args()
     physical = []
+    support_coordinates = 0
     for incoming, gap in itertools.product((6, 8, 12, 20), (4, 6, 10)):
         active = incoming+gap
         modules = family(active, incoming)
+        support_coordinates += support_range_controls(active, incoming)
         for symmetry, phase, _, current, moved in phase_images(modules):
             joint = inspect_joint(current, moved)
             curves = inspect_curves(current, moved)
@@ -127,6 +162,7 @@ def main():
                                  complete_feasible=True))
     summary = dict(parameter_cases=12, complete_feasible_images=len(physical),
                    full_forced_receivers=sum(row['full_forced_receivers'] for row in physical),
+                   independently_reconstructed_original_support_coordinates=support_coordinates,
                    complete_closed01_contact_coverage=0, complete_AA_coverage=0)
     result = dict(status='PASS', summary=summary, roles=local_role_controls(),
                   explicit_witness=fixed_witness(), physical=physical,
