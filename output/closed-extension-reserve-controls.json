@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": "marked_gate",
+      "owners": 7,
+      "distinct_legal_subfamilies": 21,
+      "legal_extension_pairs": 75,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 42,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "two_tips",
+      "owners": 7,
+      "distinct_legal_subfamilies": 25,
+      "legal_extension_pairs": 111,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 23,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "overloaded",
+      "owners": 9,
+      "distinct_legal_subfamilies": 16,
+      "legal_extension_pairs": 43,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 7,
+      "exhaustive_closed_sets": false
+    },
+    {
+      "fixture": "zero_credit",
+      "owners": 3,
+      "distinct_legal_subfamilies": 5,
+      "legal_extension_pairs": 7,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 7,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "rotor",
+      "owners": 1,
+      "distinct_legal_subfamilies": 2,
+      "legal_extension_pairs": 1,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 1,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "four_way_8",
+      "owners": 4,
+      "distinct_legal_subfamilies": 6,
+      "legal_extension_pairs": 9,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 0,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "four_way_14",
+      "owners": 4,
+      "distinct_legal_subfamilies": 6,
+      "legal_extension_pairs": 9,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 0,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "star_6",
+      "owners": 5,
+      "distinct_legal_subfamilies": 32,
+      "legal_extension_pairs": 211,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 16,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "star_14",
+      "owners": 5,
+      "distinct_legal_subfamilies": 32,
+      "legal_extension_pairs": 211,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 16,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "chain_1",
+      "owners": 5,
+      "distinct_legal_subfamilies": 32,
+      "legal_extension_pairs": 211,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 16,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "chain_2",
+      "owners": 11,
+      "distinct_legal_subfamilies": 136,
+      "legal_extension_pairs": 1516,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 26,
+      "exhaustive_closed_sets": false
+    },
+    {
+      "fixture": "chain_3",
+      "owners": 17,
+      "distinct_legal_subfamilies": 146,
+      "legal_extension_pairs": 1456,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 6,
+      "exhaustive_closed_sets": false
+    },
+    {
+      "fixture": "opposed_6",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "occupied_6",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "opposed_8",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "occupied_8",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "opposed_14",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "occupied_14",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "opposed_40",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    },
+    {
+      "fixture": "occupied_40",
+      "owners": 2,
+      "distinct_legal_subfamilies": 4,
+      "legal_extension_pairs": 5,
+      "falling_reserve_pairs": 0,
+      "nonpositive_only_extensions": 2,
+      "exhaustive_closed_sets": true
+    }
+  ],
+  "legal_extension_pairs": 3900,
+  "lattice_counterexample": {
+    "records": [
+      {
+        "added_negative_owners": [],
+        "reserve": 6,
+        "positive": 1,
+        "marked": 2,
+        "allocation_margin": 5
+      },
+      {
+        "added_negative_owners": [
+          1
+        ],
+        "reserve": 7,
+        "positive": 1,
+        "marked": 2,
+        "allocation_margin": 6
+      },
+      {
+        "added_negative_owners": [
+          2
+        ],
+        "reserve": 7,
+        "positive": 1,
+        "marked": 2,
+        "allocation_margin": 6
+      },
+      {
+        "added_negative_owners": [
+          3
+        ],
+        "reserve": 7,
+        "positive": 1,
+        "marked": 2,
+        "allocation_margin": 6
+      },
+      {
+        "added_negative_owners": [
+          4
+        ],
+        "reserve": 11,
+        "positive": 1,
+        "marked": 2,
+        "allocation_margin": 10
+      },
+      {
+        "added_negative_owners": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "reserve": 9,
+        "positive": 1,
+        "marked": 2,
+        "allocation_margin": 8
+      }
+    ],
+    "submodularity_failure": {
+      "left": 14,
+      "right": 15
+    },
+    "supermodularity_failure": {
+      "left": 18,
+      "right": 15
+    },
+    "scope": "Meet is intersection, join is the exact feasible Horn hull of the union. Same fixed complete family and N1,G2 throughout. Examples use a separate negative endpoint component; no connected-example or allocation-counterexample claim."
+  },
+  "scope": "Exact complete-source directed events and actual new mixed full tiles on legal extensions. Exhaustive closure sets through seven owners only; larger fixtures use sampled hulls. General signed-transfer identity and lattice obstructions are written proofs. No signed-transfer bound, reserve comparison with the least marked hull, or full allocation is inferred."
+}

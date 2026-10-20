@@ -199,6 +199,14 @@ audit. Only propext, Classical.choice and Quot.sound appear as applicable;
 six order/closure statements are axioms-free. See the
 [formal receipt](../output/source-retention-closure-formal-check.json) and
 [physical controls](../output/source-retention-closure-controls.json).
-Independent written-proof review67bbc41f is in progress on its original task;
-earlier mixed-cycle acceptance is not inherited. The separate full-target
-research573e88ad is also in progress and predates this Horn correction.
+Independent written-proof review67bbc41f completed with ACCEPT. Its original
+stream completed successfully and all21279 response characters match the task
+response. This acceptance covers the written retention theorem, not independent
+coordinate reconstruction of the examples. The physical three-owner reduction,
+finite compression, constructor/mark adapters and finite iteration are written
+proofs beyond the abstract Lean module. See the
+[review](../output/source-retention-closure-review-response.md).
+The separate full-target research573e88ad also completed and independently
+recovered the Horn correction. Its connected source-cut proposal is independently
+checked in the subsequent connected-obstruction note; it is not a proof of full
+allocation or of a signed reserve bound.
