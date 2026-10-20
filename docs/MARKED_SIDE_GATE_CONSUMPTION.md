@@ -57,6 +57,10 @@ endpoint ownership give
 
     side s marked in I  iff  j(s) belongs to I.                 (1)
 
+No sign condition on j(s) is used or follows: a gate consumer can itself
+be a positive source. It need not be the owner of an earlier assigned
+negative marked-side endpoint; those are different geometric roles.
+
 An unmarked full-family side cannot become marked on restriction, since its
 protector occupancy only decreases. Hence G(I) is exactly the number of
 labelled incidences (i,s,j(s)) with both owners retained. Different sides
@@ -87,7 +91,8 @@ zero for actual complete-source configurations, without a minimum-
 counterexample assumption.
 
 Under the no-exclusive-cross-endpoint-edge hypothesis of
-[feasible-core gluing](FEASIBLE_CORE_SEPARATOR_TRANSFER.md), every mark
+[feasible-core gluing](FEASIBLE_CORE_SEPARATOR_TRANSFER.md), and assuming
+the ordinary union F=L union K is itself complete feasible, every mark
 incidence of F=L union K lies in at least one side. Indeed i and j(s)
 have adjacent endpoints a(t(s)) and t(s); they cannot lie in opposite
 exclusive parts. Their overlap is precisely the incidences inside C. Thus
@@ -119,7 +124,9 @@ This statement concerns G only. The existing physical failures of reserve
 and margin submodularity/supermodularity are unaffected.
 
 In a source-minimal negative-margin allocation counterexample all proper
-legal branches have nonnegative margin. Equation (3) therefore requires
+legal branches have nonnegative margin. To apply this to (3), assume at
+least TWO exclusive A_t are nonempty, so every counted branch C union A_t
+is proper. The valuation itself permits empty parts. Equation (3) then requires
 (r-1)mu(C)>=1 for every such separator. A feasible zero-margin shared core
 is excluded. A positive core margin may still be counted across several
 branches, so this reduction does not supply the full compensation proof.

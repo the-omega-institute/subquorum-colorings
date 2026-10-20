@@ -176,7 +176,11 @@ unique branch. Every original core event/full tile is counted r times in
 the branch sum and corrected r-1 times, leaving it once.
 
 Suppose a genuine negative-margin allocation counterexample exists and has
-the smallest number of original sources. Every proper legal branch has
+the smallest number of original sources. For the following inference assume
+at least TWO exclusive sets A_t are nonempty, equivalently every counted
+branch I_t=C union A_t is a proper subfamily of F. (The valuation identities
+above do not require this extra condition and remain valid with empty parts.)
+Every proper legal branch has
 nonnegative margin. Since the margin is integral, equation(5) forces
 
     (r-1)mu(C)>=D_r+1.                              (6)
