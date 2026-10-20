@@ -152,6 +152,12 @@ a coincidence. These are compatible partial stencils, not complete feasible
 configurations or counterexamples to a stronger geometric statement. One
 cannot add the critical-point count to |X| using the present proof.
 
+A subsequent [complete six-source certificate](CRITICAL_CLOSED_OWNER_COUNTEREXAMPLE.md)
+shows a different, stronger obstruction to blanket critical closed-owner
+exclusion: a critical second point can be an original full-bar corner of
+a phase01 owner on a closed neutral component. This does not establish the
+other-corner coincidence above and does not affect the LONG restriction here.
+
 The unrestricted finite complete-source coefficient-one allocation and
 rectangular-grid triple equality remain OPEN. The next step is to account for
 these disjoint physical receivers through original owners and the existing
@@ -185,7 +191,11 @@ conversation and reviews this proof together with the critical and shared-H
 extensions. It ended with a terminal typing infrastructure failure and no
 mathematical verdict, as did preceding task88c8a838. After these terminal
 failures, a fresh independent audit uploads a single complete context file;
-its status is recorded in full-receivers-independent-review.json. The failed
-tasks provide no mathematical acceptance or rejection.
+it completed with ACCEPT, with the inherited census/reserve/AA hypotheses
+retained. See [the assessment](FULL_RECEIVERS_INDEPENDENT_REVIEW_ASSESSMENT.md)
+and full-receivers-independent-review.json. Its nonfull generic Tile adapter
+uses the subtype of nonfull physical tiles. The failed tasks provide no
+mathematical acceptance or rejection. The later complete critical fixture
+was not in the audit packet.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

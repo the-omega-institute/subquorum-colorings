@@ -32,6 +32,17 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [all-first/LONG receiver theorem](docs/FULL_FIRST_AND_LONG_RECEIVER_INJECTION.md)
+now has independent written-proof ACCEPT: distinct physical receivers, including
+full ones, give an exact joint endpoint count and share the existing H pool.
+The [new complete critical obstruction](docs/CRITICAL_CLOSED_OWNER_COUNTEREXAMPLE.md)
+shows why its LONG restriction matters. Six original U sources in a 20 by 30
+grid place a critical second point in a closed phase01 owner's original full
+bar. Six concrete Lean declarations and eight partition-preserving Python
+images pass. This refutes blanket critical closed-owner exclusion; it is not
+a coefficient-one counterexample, and unrestricted allocation/grid equality
+remain open. The new fixture was not in the preceding independent audit.
+
 The [phase10 descent and complete full-pair exit](docs/NEUTRAL_PHASE10_DESCENT_AND_FULL_PAIR_EXIT.md)
 classify a phase10 owner of a neutral01 forced endpoint as a terminal with
 incident height at least four shorter than the active leg. A dimension-independent
