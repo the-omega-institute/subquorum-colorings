@@ -131,6 +131,12 @@ positive-companion roles are now resolved at arbitrary incident length.
 An unresolved negative-singleton gate must have a negative H or Vcorner
 companion, not a positive terminal or rotor companion.
 
+The later [long horizontal channel theorem](LONG_HORIZONTAL_CORNER_CHANNEL.md)
+pays the unbounded H subclass W=6, a=e=b-2 with a permanent lower pair,
+jointly without reusing the old short-H pair pool. Complete connected
+eleven-source families realize every even b>=6. Wider and unmatched H,
+Vcorner and universal coverage remain open.
+
 ## 3. A stronger obstruction: south incident length four is impossible
 
 If the south companion has g=4, the alternative g>=V is impossible because

@@ -104,13 +104,16 @@ def certificates(modules):
                     assert upper_owners[strip_owner] == pairs
                 upper_owners[strip_owner] = pairs
         for (width, near, far), move in frames(bar, (3, 2)):
-            if near != 4:
-                continue
             inverse = inverse_of(move)
             for return_owner, returning in enumerate(modules):
                 if return_owner == bar_owner or returning['guard'] is None:
                     continue
                 current = local_module(returning, inverse)
+                if original_matches(current, (6, near+2, near),
+                                    (False, True, False), (near+5, 1)):
+                    lower.add(tile_of({move(point) for point in vertices_of({(2, 2)})}))
+                if near != 4:
+                    continue
                 points = current['endpoints']
                 return_width = max(column for _, column in points)-1
                 if not any(column == 2 for _, column in points):
