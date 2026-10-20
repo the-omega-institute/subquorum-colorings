@@ -21,6 +21,14 @@ rotor phases are allowed. Keep the accepted ledger and counts:
     2R=A+U0+Z0+H, A>=s+2t,
     U0+H>=2z+r+J+X.
 
+Here the inherited partition is explicit: a positive U is nonexceptional
+exactly when w=6 at arbitrary permitted heights, or w in{8,10} with
+both heights in{4,6}. The count e is the number of ACTUAL double-marked
+positive sources outside this dimension class, as in the accepted two-slot
+theorem. Thus e=0 says every double belongs to one of those two classes;
+it does not restrict the dimensions of one-mark or unmarked positives.
+The phrase nonexceptional R1 residual below means precisely e=0 and R=1.
+
 J is the chain-route count. Define Y to count actual marked gates on
 unactivated positive legs of height4/6 whose original owner is a
 transverse phase11 U terminal of incident height6 and whose complete
@@ -169,8 +177,12 @@ No full-tile credit, A occurrence or defect slot is paid twice.
 
 ## 6. Remove the short-width branch of the AA residual
 
-In a failing nonexceptional R1 component the accepted census forces
-n0=z=t=0,s=2,A=2,U0=Z0=H=0,r=J=X=0. If one double has width8/10
+In a failing e=0,R=1 component the accepted census forces
+n0=z=t=0,s=2,A=2,U0=Z0=H=0,r=J=X=0. By the explicit dimension
+partition above, each double has width6, or width8/10 with both
+heights4/6. Widths>=12 and width8/10 doubles of larger height would
+contribute to e and are excluded by e=0, not by the census alone.
+If one double has width8/10
 and both heights4/6, its unactivated gate is necessarily transverse
 phase11. Its incident height h satisfies h+2<w to avoid the opposite
 positive endpoint(2,w); evenness gives h<=w-4.
@@ -178,8 +190,12 @@ positive endpoint(2,w); evenness gives h<=w-4.
 For w=8 this leaves h=4; for w=10 it leaves h=4 or6. Section3 gives
 J>=1 in the first case. Section4 gives J>=1 or Y>=1 in the second.
 Each contradicts U0=H=0 by(1). Thus BOTH surviving doubles must have
-width6. The four-stem theorem then gives height difference at least10
-for each. Other sources and their dimensions/phases are still unrestricted.
+width6. Apply the core result in WIDTH_SIX_FOUR_STEM_COMPENSATION.md:
+an unpaid width-six single-activation double with a full incoming
+phase11 chain has height difference at least10. Here r=0 makes both
+doubles unpaid and J=0 makes both qualifying chains full, so each
+double has height difference at least10. Other sources and their
+dimensions/phases are still unrestricted.
 This does not exclude finite closure of those two width-six staircases.
 
 ## 7. Verification and provenance scope
@@ -212,9 +228,21 @@ output/transverse-gate-compensation-controls.json. Reproduce with:
 python3 develop/check_transverse_gate_compensation.py --output output/transverse-gate-compensation-controls.json
 ```
 
-Independent review e45d6be7-2e1a-4ef9-a37a-2b71437a2893 remains
-dispatched in conv_c4bba27bb36e48a2, original stream51789. It assesses
-the new owner/support argument, actual Y injection, maximum pool and
-AA exclusion. No verdict is inherited from the research response.
+Initial independent review e45d6be7-2e1a-4ef9-a37a-2b71437a2893
+completed at2026-10-20T05:18:17.292UTC, observed gpt_6/pro,
+6098characters, original stream51789 exit0/DONE/exact terminal match.
+It accepts the local owner/support proofs, Y injection, maximum pool,
+signed bound and short-width branch exclusion, but identifies a missing
+explicit dimension-classification dependency before the final both-width6
+conclusion. The inherited definition of e and nonexceptional dimensions,
+and the applicable accepted four-stem core result, are now stated above.
+This is an exposition/dependency repair, not a new dimension restriction.
+A follow-up must assess that repair before a whole-note ACCEPT is claimed.
+See output/transverse-gate-compensation-initial-review.json.
+
+Follow-up174c0a0f-d9ce-442b-8519-e1ec096aac2c is dispatched in the
+same conversation, original stream62098. It asks specifically whether
+the explicit inherited e=0 dimension partition and applicable four-stem
+core theorem close the reported dependency gap. Preserve that handle.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
