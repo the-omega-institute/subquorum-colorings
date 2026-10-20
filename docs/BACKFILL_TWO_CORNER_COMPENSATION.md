@@ -214,9 +214,16 @@ arithmetic statements, both compiled and axiom-audited in the final
 six-statement run. Its written review scope remains separate from the
 first four-statement packet.
 
-A new same-conversation follow-up for exactly(8)--(10) is submitted on
-original stream96016. It includes the complete passive-corner and critical
-shared-stop source notes and the final six-statement Lean source. Its
-written review is pending; the initial ACCEPT is not evidence for it.
+The distinct same-conversation follow-up for exactly(8)--(10), task
+7ea29eb0-1eee-4164-8f8f-2e170581c38e, completed ACCEPT at12:45:02 UTC,
+observedgpt_6/pro, with no must-fix issue. Original stream96016 ended with
+unexpected EOF; the SAME task's completed11658-character response was
+recovered from the broker API. No complete-stream or exact-match claim
+is made. See its [receipt](../output/backfill-shared-stop-review.json) and
+[full written review](../output/backfill-shared-stop-review-response.txt).
+The packet includes the complete passive-corner and critical shared-stop
+source notes and final six-statement Lean source. This independent ACCEPT
+covers the later geometric adapter and shared ledger, not execution or the
+subsequent [B/D occupied-band outputs](BACKFILL_OCCUPIED_BAND_OUTPUTS.md).
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
