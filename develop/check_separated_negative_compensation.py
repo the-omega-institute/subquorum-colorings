@@ -148,6 +148,67 @@ def inspect_separated(current, modules):
                 actual_slack=physical['half_area']-physical['objective'])
 
 
+def inspect_general_defect(current, modules):
+    slots = inspect_slots(current, modules)
+    physical = inspect(current, modules, require_frozen=False)
+    endpoints = set.union(set(), *(module['endpoints'] for module in modules))
+    represented = {tile: [index for index, module in enumerate(modules) if tile in module['receiver']]
+                   for module in modules for tile in module['receiver']}
+    negative_u = sum(module['charge'] < 0 and len(module['endpoints']) != 8 for module in modules)
+    negative_rotors = sum(module['charge'] == -2 for module in modules)
+    irregular = Counter()
+    regular = Counter()
+    corner_assignments = Counter()
+    for module in modules:
+        old = module['endpoints'] | module['selected']
+        candidates = boundary(module)[2]
+        for point in module['endpoints']:
+            for other in (set(neighbors(point)) & endpoints)-old:
+                if tile_of(point) == tile_of(other):
+                    (irregular if point in candidates else regular)[tile_of(point)] += 1
+    for record in slots['marked_assignments']:
+        _, failures, candidates = boundary(modules[record['owner']])
+        witness = tuple(record['witness'])
+        if witness in failures & candidates:
+            corner_assignments[tile_of(witness)] += 1
+    assert all(amount <= 1 for amount in corner_assignments.values())
+    bar_reservations = 0
+    overlap_tax = 0
+    zero_corner_tax = 0
+    for tile, owners in represented.items():
+        cells = vertices_of({tile})
+        negative = [index for index in owners if modules[index]['charge'] < 0]
+        profiles = {index: (len(cells & modules[index]['endpoints']),
+                            len(cells & modules[index]['selected'])) for index in owners}
+        reservation = sum(profiles[index] == (2, 0) for index in negative)
+        bar_reservations += reservation
+        overlap = 0
+        zero_corner = 0
+        if len(negative) >= 2:
+            overlap = sum(profiles[index] in {(1, 1), (2, 0)} for index in negative)
+            overlap_tax += overlap
+        elif len(negative) == 1 and profiles[negative[0]] == (1, 1):
+            exceptional = [index for index in owners if modules[index]['charge'] == 0 and
+                           profiles[index] == (3, 0)]
+            if exceptional:
+                assert cells <= endpoints and len(exceptional) == 1
+                zero_corner_tax += 1
+                zero_corner = 1
+        new_full = cells <= endpoints and not any(cells <= module['endpoints'] for module in modules)
+        correction = 2*int(new_full)-regular[tile]
+        assert correction >= 0
+        assert irregular[tile]+corner_assignments[tile] <= correction+reservation+overlap+zero_corner
+    assert slots['negative_mass'] == bar_reservations+negative_u+2*negative_rotors
+    lower_bound = abs(slots['positive']-negative_u)+2*negative_rotors-overlap_tax-zero_corner_tax
+    assert physical['two_guard_credit'] >= lower_bound
+    assert physical['half_area']-physical['objective'] >= lower_bound
+    return dict(positive=slots['positive'], negative_u=negative_u, negative_rotors=negative_rotors,
+                overlap_incidence_tax=overlap_tax, zero_corner_tax=zero_corner_tax,
+                bar_reservations=bar_reservations, guaranteed_slack=lower_bound,
+                finer_slack=physical['two_guard_credit'],
+                actual_slack=physical['half_area']-physical['objective'])
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
@@ -162,9 +223,12 @@ def main():
         fixtures.append(('opposed_%d' % width, opposed_bands(width, 4)[1]))
         fixtures.append(('occupied_%d' % width, occupied_bands(width)[1]))
     physical = []
+    general = []
     excluded = []
     for name, modules in fixtures:
         for symmetry, phase, offset, current, moved in phase_images(modules):
+            general.append(dict(fixture=name, symmetry=symmetry, phase=phase,
+                                **inspect_general_defect(current, moved)))
             negative_tiles = [module['receiver'] for module in moved if module['charge'] < 0]
             shared = sum(map(len, negative_tiles)) != len(set.union(set(), *negative_tiles))
             zero_corners = any(profile_counts(module)[3, 0] for module in moved if module['charge'] == 0)
@@ -175,6 +239,10 @@ def main():
             physical.append(dict(fixture=name, symmetry=symmetry, phase=phase,
                                  **inspect_separated(current, moved)))
     summary = dict(local_cases=len(local), physical_images=len(physical), excluded_images=len(excluded),
+                   general_defect_images=len(general),
+                   general_with_overlap=sum(record['overlap_incidence_tax'] > 0 for record in general),
+                   general_with_zero_corner=sum(record['zero_corner_tax'] > 0 for record in general),
+                   general_nonnegative_bound=sum(record['guaranteed_slack'] >= 0 for record in general),
                    actual_irregular_images=sum(record['irregular_events'] > 0 for record in physical),
                    actual_marked_images=sum(record['marked_sides'] > 0 for record in physical),
                    actual_corner_assignment_images=sum(record['corner_assignments'] > 0 for record in physical),
@@ -182,8 +250,8 @@ def main():
     assert summary['actual_irregular_images'] and summary['actual_marked_images']
     assert summary['improved_density_images']
     arguments.output.write_text(json.dumps(dict(status='PASS', summary=summary, local=local,
-        physical=physical, excluded=excluded,
-        scope='Finite normalized local-profile controls and complete physical fusion checks. General isometry/source-profile adapter, tilewise proof and arbitrary-parameter theorem are written separately. Excluded cases do not satisfy this theorem and are not target counterexamples.'), indent=2)+'\n')
+        physical=physical, excluded=excluded, general_defect_physical=general,
+        scope='Finite normalized local-profile controls and complete physical fusion checks. General isometry/source-profile adapter, tilewise proof and arbitrary-parameter theorem are written separately. Excluded cases do not satisfy the zero-tax theorem; all fixtures are separately checked against the general overlap/zero-corner defect inequality. No unrestricted nonnegative compensation claim.'), indent=2)+'\n')
     print(json.dumps(dict(status='PASS', **summary)))
 
 

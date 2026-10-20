@@ -172,8 +172,8 @@ while the new bound is nonnegative. No physical upper-corner side
 assignment is claimed in these fixtures; that case has the written
 blank-gate proof and finite local reservation checks.
 
-Ten scoped Lean declarations and individual axiom audits pass on the
-user-selected local Mac with Lean4.33.0, one job and50% free memory at
+Fourteen scoped Lean declarations and individual axiom audits pass on the
+user-selected local Mac with Lean4.33.0, one job and42% free memory at
 preflight. They include exhaustive normalized tile completion/payment
 checks, the excluded 3P0T role, arbitrary-list tile-payment summation and
 the abstract arbitrary-count accounting. No sorryAx/native_decide is used.
@@ -192,8 +192,83 @@ UNKNOWN at120 seconds, which supplies no exclusion or proof.
     python3 develop/check_separated_negative_compensation.py \
       --output output/separated-negative-compensation-controls.json
 
-The remaining global problem is to handle tiles shared by negative
-sources and the excluded zero-rotor 3P0T roles, with actual single-use
-compensation. No change to a submitted manuscript is part of this note.
+## 6. An explicit defect inequality for arbitrary source fusions
+
+The same argument gives a uniform bound WITHOUT (H) and with arbitrary
+rotor phases, if the two exceptional roles are charged explicitly.
+For each physical receiver tile Q let r_Q count its negative original
+endpoint owners and v_Q count those owners whose original profile is
+1P1T or2P0T. Define
+
+    D = sum_{Q:r_Q>=2} v_Q,
+    H = number of Q with exactly one negative 1P1T owner
+        and a zero-charge 3P0T owner at the other three corners.
+
+All owners and profiles remain ORIGINAL; neither quantity is a count
+of final connected components. In the full complete-source fusion class,
+
+    sigma >= |N-B|+2R-D-H.                                  (6)
+
+Thus D+H<=|N-B|+2R is another sufficient condition for coefficient one,
+now expressed by actual overlap roles instead of source widths. Formula
+(1) is its D=H=0 case. No claim that this new condition is necessary or
+automatic is made.
+
+Here is the proof. Let l_Q count negative owners having profile2P0T
+in Q, with multiplicity if different owners use the same tile. Let A_Q
+count the upper-corner marked assignments already used in Section3.
+Each negative owner with an irregular profile contributes at most one to
+
+    its irregular events + its A assignments - its bar reservation.
+
+For1P1T the event count is at most one and there is no bar assignment.
+For2P0T it is at most two, and if there is a marked upper corner that
+corner's event is absent; hence events plus its assignment are still
+at most two. Subtract its one reservation. Other negative profiles
+contribute zero: they have no irregular event, A assignment or bar
+reservation. A_Q assignments are distinct
+by the existing original donor-tile injection.
+
+Consequently if r_Q>=2,
+
+    Kirregular(Q)+A_Q <= l_Q+v_Q <= c_Q+l_Q+v_Q,
+
+where the established tilewise c_Q>=0 is used. If r_Q=0 there is no
+irregular event, bar assignment or reservation. If r_Q=1, Sections2-3
+apply unless another owner has3P0T. Such an owner must be a zero rotor
+and its three endpoints leave room only for a singleton negative1P1T
+owner. The tile is full, with exactly one irregular and two regular
+events; c_Q=0, A_Q=l_Q=0. Charge precisely its one H unit. This gives
+the tilewise inequality
+
+    Kirregular(Q)+A_Q <= c_Q+l_Q
+                         +v_Q indicator(r_Q>=2)+indicator(Q counted by H).
+
+Summing pays each tile once and yields Kirregular+A<=C+L+D+H. The
+same S=L+B+2R identity and E<=2N,2B now prove (6). This is a general
+written defect bound; its nonnegative conclusion still needs the stated
+coverage condition. It does not settle the unrestricted target.
+
+In particular D<=2 sum_Q max(r_Q-1,0), since v_Q<=r_Q and
+r_Q<=2(r_Q-1) on a shared tile. The finer v_Q count avoids charging
+negative owners with only regular profiles in that tile.
+
+The independent task70a45736 was submitted before Section6 and reviews
+Sections1-5 only; its status must not be used as acceptance of this
+extension. General-defect physical controls and abstract accounting are
+recorded separately from that review's scope.
+
+All640 complete physical images also pass the general tilewise defect
+inequality and global bound, including192 images with a nonzero shared
+negative-owner tax and8 with the zero-rotor3P0T tax. The resulting lower
+bound is nonnegative in496 images; its failure to certify the other144
+is not a counterexample to the target. Four added Lean declarations
+check the single-owner reservation arithmetic, overlap-excess comparison,
+general defect accounting and coverage consequence. General geometry
+and the source-to-tile adapter are still written.
+
+The remaining global problem is to pay the two explicit defect terms
+without reusing source mass or correction units. No change to a
+submitted manuscript is part of this note.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

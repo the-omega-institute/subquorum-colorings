@@ -714,8 +714,17 @@ one unused correction unit; the only remaining bar cost and an upper
 corner side assignment use the same one-unit reservation exclusively.
 Counting the remaining marked sides by both positive and negative
 sources closes the inequality without a density condition. All13 local
-states,344 physical images and10 scoped Lean declarations/audits pass;
+states,344 physical images and14 scoped Lean declarations/audits pass;
 296 images outside the hypotheses are excluded explicitly. General
 negative-receiver overlap and zero-rotor3P0T payment remain open.
 The new independent review is dispatched, not yet ACCEPT; prior reviews
 do not cover this theorem.
+
+A separate extension in Section6 removes receiver separation and allows
+all rotor phases at the cost of two explicit local defects. It proves
+sigma>=|N-B|+2R-D-H, where D counts vulnerable negative owners in tiles
+shared by negative sources and H counts the negative1P1T/zero3P0T role.
+All640 complete physical images pass both the tilewise and global
+inequalities;496 give a nonnegative lower bound. The new sufficient
+condition is D+H<=|N-B|+2R. This extension is outside the scope of the
+pending Sections1-5 review, and does not settle unrestricted compensation.

@@ -119,4 +119,31 @@ theorem single_negative_u (halfArea objective positive : Int)
   simp only [Int.max_def] at hslack
   split at hslack <;> omega
 
+theorem double_owner_reservation (irregular corner : Int)
+    (hcorner : 0 ≤ corner) (honeCorner : corner ≤ 1) (htwo : irregular ≤ 2)
+    (hmarked : 0 < corner → irregular ≤ 1) : irregular+corner-1 ≤ 1 := by
+  by_cases marked : 0 < corner
+  · have := hmarked marked
+    omega
+  · omega
+
+theorem overlap_excess_bound (owners : Int) (hshared : 2 ≤ owners) :
+    owners ≤ 2*(owners-1) := by omega
+
+theorem general_defect_bound
+    (slack positive mass credit irregular corner exceptional barReservations negativeU negativeRotors overlap zeroCorner : Int)
+    (hledger : positive+mass+credit-irregular-(corner+exceptional) ≤ slack)
+    (hlocal : irregular+corner ≤ credit+barReservations+overlap+zeroCorner)
+    (hmass : mass = barReservations+negativeU+2*negativeRotors)
+    (hpositive : exceptional ≤ 2*positive) (hnegative : exceptional ≤ 2*negativeU) :
+    max (positive-negativeU) (negativeU-positive)+2*negativeRotors-overlap-zeroCorner ≤ slack := by
+  simp only [Int.max_def]
+  split <;> omega
+
+theorem defect_coverage_sufficient
+    (halfArea objective positive negativeU negativeRotors overlap zeroCorner : Int)
+    (hslack : max (positive-negativeU) (negativeU-positive)+2*negativeRotors-overlap-zeroCorner ≤ halfArea-objective)
+    (hcoverage : overlap+zeroCorner ≤ max (positive-negativeU) (negativeU-positive)+2*negativeRotors) :
+    objective ≤ halfArea := by omega
+
 end SubQuorum.SeparatedNegativeCompensation

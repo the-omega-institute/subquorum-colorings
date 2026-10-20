@@ -1,14 +1,14 @@
 {
   "status": "PASS",
-  "recorded_at_utc": "2026-10-19T23:54:28.823110+00:00",
+  "recorded_at_utc": "2026-10-20T00:00:59.034835+00:00",
   "execution_location": "local Mac explicitly selected by user",
   "lean_version": "4.33.0",
   "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
   "actual_lean_lake_preflight": [],
-  "memory_pressure_free_percent": 50,
+  "memory_pressure_free_percent": 42,
   "parallel_jobs": 1,
   "source": "formal/SubQuorum/SeparatedNegativeCompensation.lean",
-  "declaration_count": 10,
+  "declaration_count": 14,
   "declarations": [
     "singleton_tile_completion_and_payment",
     "double_tile_completion_and_payment",
@@ -19,10 +19,14 @@
     "actual_demand_bound",
     "imbalance_bound",
     "coefficient_one",
-    "single_negative_u"
+    "single_negative_u",
+    "double_owner_reservation",
+    "overlap_excess_bound",
+    "general_defect_bound",
+    "defect_coverage_sufficient"
   ],
-  "audit_seconds": 7.264,
-  "audit_stdout": "'SubQuorum.SeparatedNegativeCompensation.singleton_tile_completion_and_payment' does not depend on any axioms\n'SubQuorum.SeparatedNegativeCompensation.double_tile_completion_and_payment' does not depend on any axioms\n'SubQuorum.SeparatedNegativeCompensation.excluded_three_endpoint_role' depends on axioms: [propext]\n'SubQuorum.SeparatedNegativeCompensation.sum_tile_payments' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.blank_bar_reservation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.source_mass_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.actual_demand_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.imbalance_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.coefficient_one' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.single_negative_u' depends on axioms: [propext, Quot.sound]\n",
+  "audit_seconds": 8.475,
+  "audit_stdout": "'SubQuorum.SeparatedNegativeCompensation.singleton_tile_completion_and_payment' does not depend on any axioms\n'SubQuorum.SeparatedNegativeCompensation.double_tile_completion_and_payment' does not depend on any axioms\n'SubQuorum.SeparatedNegativeCompensation.excluded_three_endpoint_role' depends on axioms: [propext]\n'SubQuorum.SeparatedNegativeCompensation.sum_tile_payments' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.blank_bar_reservation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.source_mass_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.actual_demand_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.imbalance_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.coefficient_one' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.single_negative_u' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.double_owner_reservation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.overlap_excess_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.general_defect_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SeparatedNegativeCompensation.defect_coverage_sufficient' depends on axioms: [propext, Quot.sound]\n",
   "audit_stderr": "",
-  "scope": "Kernel decides all normalized singleton 1P1T and double 2P0T negative tile profiles against three independently chosen good/empty foreign profiles, filtering original endpoint overlap and retained intratile selection infeasibility. Also checks the excluded 3P0T local role. Arbitrary-list tile-payment summation, one-use blank-bar reservation, source mass and actual-demand arithmetic, imbalance bound and coefficient-one/single-negative consequences. General source/isometry adapter, receiver separation, global geometric marked-side injection and exact ledger remain written/input results; no full Lean proof of arbitrary source fusions. No sorryAx/native_decide."
+  "scope": "Kernel decides all normalized singleton 1P1T and double 2P0T negative tile profiles against three independently chosen good/empty foreign profiles, filtering original endpoint overlap and retained intratile selection infeasibility; checks excluded 3P0T local role. Arbitrary-list tile-payment summation, one-use blank-bar reservation, source mass/actual-demand arithmetic, imbalance bound and coefficient-one consequences. Added owner reservation, overlap-excess comparison, general defect arithmetic and defect-coverage sufficient condition. General source/isometry adapter, actual overlap/vulnerable-owner catalogue and geometric marked-side injection/ledger remain written/input results. No full Lean proof of arbitrary source fusions, no sorryAx/native_decide."
 }
