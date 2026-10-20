@@ -1,10 +1,16 @@
 {
-  "status": "dispatched",
-  "recorded_at_utc": "2026-10-20T02:38:48Z",
+  "status": "completed",
+  "verdict": "ACCEPT",
   "task_id": "eb184fae-0ad9-48bb-8fdc-b662eda15d40",
   "conversation_id": "conv_277eeb9175275d72",
+  "completed_at": "2026-10-20T02:49:47.507+00:00",
   "original_exec_session": 42410,
-  "request_path": "output/saturated-gate-geometry-review-request.json",
-  "stream_path": "output/saturated-gate-geometry-review-stream.sse",
-  "scope": "New saturated two-gate normal forms, strict clearance, shorter-side width descent and single-positive dimension obstruction. Prior exact-reserve ACCEPT is an input, not a verdict for this new geometry. No new verdict observed."
+  "original_stream_exit_code": 0,
+  "original_stream_done": true,
+  "original_stream_response_matches_terminal": true,
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "response_chars": 15510,
+  "response_path": "output/saturated-gate-geometry-review.json",
+  "scope": "Accepted written saturated geometry, exact complete-support shared-owner normal forms, strict clearance/width descent and single-positive consequence. Explicitly confirms source-local geometry in arbitrary zero-reserve fusions. Reviewer did not execute controls or Lean; multiple-positive theorem is a new deduction requiring its own review."
 }

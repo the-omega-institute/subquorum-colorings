@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "execution_location": "Local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/MultiplePositiveSaturation.lean",
+  "successful_source_check": {
+    "exec_session": 91887,
+    "exit_code": 0,
+    "memory_free_percent": 40
+  },
+  "successful_object_build": {
+    "exec_session": 33063,
+    "exit_code": 0,
+    "memory_free_percent": 44
+  },
+  "individual_audit": {
+    "exec_session": 90031,
+    "exit_code": 0,
+    "memory_free_percent": 42
+  },
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 15,
+  "declarations": [
+    "source_census",
+    "marked_census",
+    "exact_demand_margin",
+    "joint_iff_shared_defect_count",
+    "failure_iff_double_excess",
+    "small_dimensions_not_exceptional",
+    "saturated_double_count_bound",
+    "no_exceptional_sources",
+    "saturated_slack_bound",
+    "saturated_joint_if_exceptional_paid",
+    "unmarked_count_nonnegative",
+    "saturated_small_dimensions_joint",
+    "saturated_failure_needs_many_exceptional",
+    "separate_rounding_overcharge",
+    "distinct_single_defects_do_not_pay_two_double_marks"
+  ],
+  "individual_axiom_audit": {
+    "source_census": [
+      "propext",
+      "Quot.sound"
+    ],
+    "marked_census": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_demand_margin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "joint_iff_shared_defect_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "failure_iff_double_excess": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "small_dimensions_not_exceptional": [
+      "propext",
+      "Quot.sound"
+    ],
+    "saturated_double_count_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "no_exceptional_sources": [
+      "propext",
+      "Quot.sound"
+    ],
+    "saturated_slack_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "saturated_joint_if_exceptional_paid": [
+      "propext",
+      "Quot.sound"
+    ],
+    "unmarked_count_nonnegative": [
+      "propext",
+      "Quot.sound"
+    ],
+    "saturated_small_dimensions_joint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "saturated_failure_needs_many_exceptional": [
+      "propext",
+      "Quot.sound"
+    ],
+    "separate_rounding_overcharge": [
+      "propext",
+      "Quot.sound"
+    ],
+    "distinct_single_defects_do_not_pay_two_double_marks": []
+  },
+  "scope": "Finite-list source census and exact net demand, conditional source-local exceptional-dimension injection, arbitrary-N zero-reserve bounds and small-dimension consequence, exact failure criterion, and conditional parity-rounding overcharge/arithmetic inference counterexample. Physical saturation, normalized source role geometry, and support-retention adapters remain written. Not an end-to-end theorem about arbitrary physical fusions.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-multiple-positive-check/SubQuorum",
+    "lean -o /tmp/subquorum-multiple-positive-check/SubQuorum/MultiplePositiveSaturation.olean formal/SubQuorum/MultiplePositiveSaturation.lean",
+    "Import SubQuorum.MultiplePositiveSaturation in a temporary Audit.lean and #print axioms for every declaration above with LEAN_PATH=/tmp/subquorum-multiple-positive-check; no sorryAx/native_decide."
+  ]
+}

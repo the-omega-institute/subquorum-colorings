@@ -91,6 +91,10 @@ Its outside bar tile is
 This has exactly the original pair{(h+2,2),(h+2,3)} and no original
 selection: reference row0 is in the bar, while reference row-1 has no
 endpoint or support at columns1,2. Thus it is 2P0T and must be full.
+Equivalently the forward map F(r,c)=(h+2-r,c+1) factors as
+F(r,c)=g(r+1,c+1), where g(r',c')=(h+3-r',c'). The odd reflection
+constant h+3 makes g tiling-preserving; it takes the established phase11
+upper-corner 2P0T tile{0,1}x{2,3} to Q, including its zero-support profile.
 If h=a-2, fullness places q=(h+3,2) in P, again contradicting (4).
 Parity now sharpens the clearance to h<=a-4, proving (1). In particular
 any longitudinal unactivated gate in a zero-reserve fusion has side
@@ -194,8 +198,13 @@ shorter-side width descents,2390 transverse tips,1472 corners,36 upright
 and36 inverted common-owner cases, and219086 transverse pair comparisons.
 These counts remain role controls, not complete source-fusion realizations.
 See output/saturated-gate-geometry-controls.json and
-output/saturated-gate-geometry-formal-check.json. Independent review is
-original taskeb184fae/stream42410, dispatched without an observed verdict.
+output/saturated-gate-geometry-formal-check.json. Original independent task
+eb184fae completed ACCEPT at02:49:47UTC, observed gpt_6/pro, for the written
+saturation, complete-support clearance, AA/AF/FF classification, width
+descent and N1 consequence. It explicitly confirms that the local geometry
+also applies to a chosen positive in arbitrary zero-reserve fusions. It
+did not execute controls/Lean. Its optional outside-pair exposition is
+incorporated above. See output/saturated-gate-geometry-review.json.
 The preceding exact-reserve task2bf0d5dd completed ACCEPT separately.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
