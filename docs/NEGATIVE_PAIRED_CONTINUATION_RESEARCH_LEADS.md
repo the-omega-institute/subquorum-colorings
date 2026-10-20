@@ -1,5 +1,13 @@
 # Unverified paired-continuation and cap-count leads
 
+Update20October: the cap assignment, positive-cap exclusion in AA and
+typed-continuation simultaneous count are now reconstructed in
+CAP_CONTINUATION_ORIGINAL_OCCURRENCE_BUDGET.md, with15 scoped Lean checks
+and641 feasible controls. Its all-contact Epair form is stronger than the
+initial motif count. Independent initial review760d11e0 is running; the
+later Epair extension needs follow-up. The all-owner path classification
+and global split-transfer closure below still remain unverified leads.
+
 20 October 2026. This records proposals from completed Oracle research
 3b29a40b, not new independently established theorems. The complete response
 is output/negative-bottom-cycle-research.json,23142characters, observed
