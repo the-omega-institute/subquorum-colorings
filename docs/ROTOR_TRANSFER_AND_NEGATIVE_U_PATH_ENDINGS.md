@@ -320,9 +320,19 @@ above. See the [review receipt](../output/rotor-transfer-path-review.json)
 and [response](../output/rotor-transfer-path-review-response.md). This is
 a written mathematical review, not code/Lean execution or a novelty certificate.
 The stronger universal P->S exclusion and small-companion P->R obstruction
-were derived later. Same-conversation addendum2b910319, original81788, is
-LIVE; no verdict inferred. See the [addendum status](../output/rotor-transfer-path-addendum-review.json).
-Original full-target taskb90c01ca/original91743 is also live and preserved.
-No later-addendum verdict, full allocation or universal grid result is inferred.
+were derived later. Same-conversation addendum2b910319, original81788,
+COMPLETED ACCEPT,9355response characters, observed gpt_6/pro. The original
+stream exited0/DONE and matches the terminal API exactly. Its full proof
+audit explicitly checks equality witnesses, both wall intervals, the same
+rotor's unchanged support/matching cycles and the two distinct transverse
+heights. The response was read independently. See the [addendum receipt](../output/rotor-transfer-path-addendum-review.json)
+and [full response](../output/rotor-transfer-path-addendum-review-response.md).
+Original full-target taskb90c01ca/original91743 also completed,26023chars
+exactstream/API, with proposed corridor and persistent-strip results.
+Those proposals remain unadopted research leads pending reconstruction;
+see [the research response](../output/protected-defect-full-margin-research-response.md).
+The [complete full-bar exit obstruction](FULL_BAR_UNACTIVATED_EXIT_OBSTRUCTION.md)
+now shows why forcing another endpoint does not itself pay a negative-U
+ending. No full allocation or universal grid result is inferred.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [full-bar clearance and an unactivated exit](FULL_BAR_UNACTIVATED_EXIT_OBSTRUCTION.md)
+classify the two full-bar gate forms at all dimensions. A complete connected
+eight-source certificate refutes both full-bar-implies-producer-activation
+and forced-exit-implies-positive-local-defect: the forced exit is an actual
+regular2P1T pair with zero defect.184endpoints/92matching/40selected supports,
+all32phase/isometry controls and eight kernel-only Lean declarations PASS,
+with no axioms. Its margin is POSITIVE19; full allocation/grid OPEN.
+The earlier PS/PR addendum2b910319 now ACCEPTS both written exclusions,
+9355chars exactstream/API. Full-targetb90c01ca also completed with26023chars
+of corridor/persistent-strip and short-ending research leads, not yet adopted.
+
 21 October: [rotor activation transfer and negative-U path endings](ROTOR_TRANSFER_AND_NEGATIVE_U_PATH_ENDINGS.md)
 extend the physical activation injection to ALL positive/rotor gate consumers.
 An explicit single-use path allocation gives2mu=C+Sunmarked-Bbad, retaining
@@ -16,8 +27,8 @@ requires companion leg>=6 and intermediate width>=14.16scoped localLean,
 31904legal restrictions and3166abstract path controls PASS; actual complete
 S/R/PP/PR examples are absent from this fixture library. Written review3f49db6b
 ACCEPTS the initial proof; companion north-bar/self-producer explanations
-are explicit. Same-conversation addendum2b910319 is LIVE on the later stronger
-two exclusions. No full demand payment or grid equality follows from acyclicity.
+are explicit. Same-conversation addendum2b910319 now ACCEPTS the later stronger
+two exclusions,9355chars exactstream/API. No full demand payment or grid equality follows from acyclicity.
 
 21 October: [positive pair transfers and protected defects](PAIR_GATE_TRANSFERS_AND_PROTECTED_DEFECTS.md)
 inject ALL positive gate consumers into distinct activated terminals. Marked
