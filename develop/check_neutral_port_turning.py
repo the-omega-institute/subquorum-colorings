@@ -14,6 +14,7 @@ from check_degree_three_fusion import phase_images
 from check_exact_event_reserve import fixtures, inspect_exact
 from check_minus_one_tip_obstructions import source
 from check_occupied_gate_activation import positive_dimensions
+from check_passive_corner_transfers import inspect_transfers
 from check_short_leg_defect_injection import inverse_affine
 from rotor_networks import combine, transform_module
 
@@ -68,6 +69,10 @@ def inspect_curves(current, modules, require_complete=True):
     exact = inspect_exact(current, modules) if require_complete else None
     network = combine(modules)
     endpoints, selected = network['endpoints'], network['selected']
+    if require_complete:
+        assert set(current[2]) == selected
+        assert {frozenset(edge) for edge in current[3]} == {
+            frozenset(edge) for edge in network['matching']}
     data = {owner: result for owner, module in enumerate(modules)
             if (result := port_data(module)) is not None}
     port_at = {port['point']: (owner, index) for owner, row in data.items()
@@ -108,6 +113,7 @@ def inspect_curves(current, modules, require_complete=True):
                     assert forced in endpoints
     visited = set()
     cycles = []
+    passive_corner_keys = set()
     for root in data:
         if root in visited:
             continue
@@ -146,6 +152,9 @@ def inspect_curves(current, modules, require_complete=True):
         second = len(component)-first
         passive = sum(not active[owner, index] for owner in component
                       if data[owner]['phase'] == '10' for index in (0, 1))
+        passive_corner_keys.update((owner, index) for owner in component
+                                   if data[owner]['phase'] == '10' for index in (0, 1)
+                                   if not active[owner, index])
         sinks = sum(data[owner]['phase'] == '01' and
                     active[owner, 0]+active[owner, 1] == 0 for owner in component)
         phase01_edges = sum(data[key[0]]['phase'] == data[target[0]]['phase'] == '01'
@@ -158,11 +167,17 @@ def inspect_curves(current, modules, require_complete=True):
                            curve_vertices=len(curve), turns=turns))
     total_passive = sum(row['passive10'] for row in cycles)
     if require_complete:
+        transfers = inspect_transfers(current, modules)
+        counted_corner_keys = {(row['owner'], int(row['reflected'])) for row in transfers['records']}
+        assert len(counted_corner_keys) == transfers['counted']
+        assert passive_corner_keys <= counted_corner_keys
         assert total_passive <= 2*exact['activated_positive']+exact['boundary_cost']
     assert sum(row['phase01']-row['phase10'] for row in cycles)+2*total_passive >= 4*len(cycles)
     return dict(eligible_sources=len(data), neutral_edges=len(contacts)//2,
                 neutral01_forced_contacts=len(forced01_points),
                 neutral01_forced_points=len(set(forced01_points)),
+                closed_passive_corner_occurrences=len(passive_corner_keys),
+                original_corner_subset_verified=require_complete,
                 closed_components=cycles)
 
 
@@ -242,6 +257,8 @@ def main():
     summary = dict(complete_feasible_images=len(physical),
                    neutral_edges=sum(row['neutral_edges'] for row in physical),
                    neutral01_forced_contacts=sum(row['neutral01_forced_contacts'] for row in physical),
+                   original_corner_subset_occurrences=sum(row['closed_passive_corner_occurrences']
+                                                          for row in physical),
                    closed_components=sum(len(row['closed_components']) for row in physical))
     report = dict(status='PASS', summary=summary, roles=role_controls(),
                   signed=signed_controls(), physical=physical, partial_sink_loop=partial_sink_loop(),

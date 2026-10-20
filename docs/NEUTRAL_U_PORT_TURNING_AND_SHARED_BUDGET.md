@@ -32,16 +32,21 @@ may share both ports, giving a legitimate two-vertex/two-edge cycle.
 All other contacts of a source remain allowed. In particular a closed component
 here need not be a component of the full endpoint-ownership contact graph.
 
-Let C be the union of all closed components of this specified port graph,
+Let the collection of all closed components of this specified port graph be
+denoted by \(\mathcal C\),
 and let ell be their number. Count original owners only once:
 
-    M01, M10: phase01 and phase10 owners in C;
-    B10: passive phase10 ports in C;
-    Q01: phase01 owners in C with both ports passive.
+    M01, M10: phase01 and phase10 owners in this collection;
+    B10: passive phase10 ports in this collection;
+    Q01: phase01 owners in this collection with both ports passive.
 
 Every port counted by B10 is a B occurrence from the passive-corner theorem.
 Original owners and port occurrences do not recur across these components,
 so B10<=B. Counts are over the same source collection as any budget used below.
+The inclusion is the identity on original (owner, corner_index) keys; an owner
+belongs to only one specified component. The checker now reconstructs these
+two occurrence sets and verifies the subset directly, as well as the numerical
+budget. The symbol C in the reserve ledger remains the numerical credit.
 
 ## 2. Main closed-curve inequalities
 
@@ -161,8 +166,10 @@ Substitution B10<=B<=2A+H gives(2), and the exact reserve identity gives(3).
 
 ## 5. AA: closed neutral components need excess01 owners and two sinks
 
-In the established same-component nonexceptional AA residual, a phase10 owner
-with one B corner has its other corner receiver full. A phase10 owner in a
+Fix one full endpoint component c satisfying the established nonexceptional AA
+residual hypotheses. Every curve and every count in this section is restricted
+to c. A phase10 owner with one B corner has its other corner receiver full.
+A phase10 owner in a
 closed neutral component has BOTH port receivers nonfull. It therefore has
 no passive port, giving B10=0. The resulting necessary restrictions are
 
@@ -191,10 +198,12 @@ or a new owner distinct from all other sources in the curve.
 In AA no neutral edge joins two phase10 owners, since both would be active.
 Counting the two incidences at every phase10 owner shows that the number
 of neutral01-to-01 edges is exactly M01-M10, hence at least4ell. Consequently
-each closed component has at least four distinct CONTACTS with this forced
-endpoint requirement. Their forced points z have not been proved distinct;
-they may already belong to other original owners in the same curve or outside
-it. Do not turn this contact count into four independent compensation units.
+each closed component has at least four distinct contacts with this forced
+endpoint requirement. The later direction-tag injection in
+DISTINCT_NEUTRAL_SUPPORTS_AND_ANY_PAIR_BUDGET.md proves their forced points
+globally distinct, even across port components. It also excludes their ownership
+by any phase01 source on a closed port component. They may still share other
+original owners and are not independent compensation units.
 This continuation corollary is a later written addition, outside the initial
 turning-review snapshot and its11 scoped Lean declarations.
 
@@ -240,8 +249,15 @@ axiom audits, using only propext, Classical.choice and Quot.sound as applicable.
 The list moment bound is proved by arbitrary-list induction; the subsequent
 count deductions retain their stated physical/topological premises.
 See output/neutral-port-turning-formal-check.json. Independent review uses
-taskbb9caa70, original streaming session7500 and is pending; it is separate from the accepted
-passive-corner review3361b134. The original latter stream failed with EOF and
-its completed answer was recovered from the same task API.
+taskbb9caa70, original streaming session7500, completed ACCEPT at07:57:45.327UTC,
+observed gpt_6/pro. The review accepts the physical polygon/sign proof, both
+counts, original occurrence inclusion and same-component AA deduction under
+the accepted dependencies, not executions. Its requested explicit AA component
+restriction and separate curve/credit notation are incorporated above; its
+suggested direct occurrence-set check is also implemented. The later forced01
+continuation/injection/any-pair extension is outside that initial review snapshot.
+See the review receipt for original-stream transport status. The passive-corner
+review3361b134 is separate and its completed answer was recovered from its same
+task API after original stream failure.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

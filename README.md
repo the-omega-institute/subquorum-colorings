@@ -32,6 +32,19 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [neutral-support injection and any-pair budget](docs/DISTINCT_NEUTRAL_SUPPORTS_AND_ANY_PAIR_BUDGET.md)
+prove that distinct neutral phase01 contacts force distinct original endpoint
+positions, even across different port components. Those endpoints avoid every
+closed phase01 owner. Nonfull regular stops share one defect pool with passive
+corner stops, giving B+J01<=2A+H. The cap reservation pool now includes endpoints
+beside both exact original pair types, with an exact unused-slot identity to
+prevent repeated payment. Eleven scoped Lean declarations and641 complete
+feasible controls pass;97 images obtain a strictly stronger cap constraint.
+The preceding U-port turning theorem has an independent ACCEPT review; this
+later injection and budget extension is reviewed separately. Complete AA/full
+receiver coverage remains zero. General coefficient one and grid equality
+remain open, with full receiver, rotor and open-path exits still unresolved.
+
 The [charge-aware matching budget](docs/CHARGE_AWARE_COMPLETE_SOURCE_COEFFICIENT.md)
 improves the complete-source coefficient from12/13 to14/15, and from17/18
 to21/22 when no actual double-marked positive is exceptional. Original

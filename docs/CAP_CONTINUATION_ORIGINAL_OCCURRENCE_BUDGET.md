@@ -68,6 +68,11 @@ the existing exact identity gives the more informative consequence
 
     2R >= 2Dsrc+(A-Fpos)+Z0+H.                     (3)
 
+The later [any-pair extension](DISTINCT_NEUTRAL_SUPPORTS_AND_ANY_PAIR_BUDGET.md)
+also reserves U singleton endpoints beside exact original regular2P1T pairs.
+It retains the Epair set defined here as E0, and proves a simultaneous count
+using the same endpoint pool and an exact unused-slot identity.
+
 There is a stronger source-wide form. Define Epair as the cardinality of the
 set of endpoints q in Pneg whose physical tile also contains another original
 owner's EXACT 2P0T profile. Here Pneg contains only original phase01 U terminal
