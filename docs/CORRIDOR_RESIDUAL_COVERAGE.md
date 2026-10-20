@@ -72,7 +72,8 @@ The final two declarations in
 formal/SubQuorum/PersistentCorridorCapacity.lean prove the integer implication
 (1)-(2) with explicit mark-partition, activation-injection and reserve-floor
 hypotheses. The physical adapters remain the written theorems cited above.
-The original pending corridor review request preceded this corollary:
-its eventual verdict must not be reported as a review of this later deduction.
+The original corridor review request preceded this corollary and terminated
+with a broker browser failure, not a mathematical response. A fresh independent
+request includes BOTH notes; its separate receipt tracks the actual outcome.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

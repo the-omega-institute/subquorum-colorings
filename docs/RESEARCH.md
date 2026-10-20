@@ -23,8 +23,9 @@ demand coverage remain OPEN; no universal5/6 improvement or manuscript change.
 The later [residual-coverage corollary](CORRIDOR_RESIDUAL_COVERAGE.md) proves
 mu>=p+u+ceil((m8-t)/2), where t counts still-uncertified negative-U gates.
 Thus t<=2(p+u)+m8+1 suffices for coefficient one in covered source families.
-This deduction postdates the new corridor review request and is not within
-that request's review scope.
+This deduction postdates the initial corridor review request, which failed
+with a terminal broker browser error. A fresh independent review includes
+BOTH notes; no mathematical verdict is inferred from the infrastructure failure.
 
 21 October: [full-bar clearance and an unactivated exit](FULL_BAR_UNACTIVATED_EXIT_OBSTRUCTION.md)
 classify the two full-bar gate forms at all dimensions. A complete connected
