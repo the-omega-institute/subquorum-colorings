@@ -32,6 +32,25 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [four-stem compensation theorem](docs/WIDTH_SIX_FOUR_STEM_COMPENSATION.md)
+extends the all-reserve coefficient-one class to positive width-six U
+sources with leg-height difference at most eight, leaving all negative
+dimensions and phases unrestricted. A full unpaid incoming chain forces
+two additional original U tips, hence four strictly ordered incident
+heights and positive height difference at least ten. Their far legs
+also impose an exact height-width budget; at positive gaps ten/twelve
+the four incoming widths are at least(12,10,8,6).
+The [transverse-gate theorem](docs/TRANSVERSE_GATE_COMPENSATION_AND_AA_EXCLUSION.md)
+provides new distinct irregular-pair payments Y, proves
+U0+H>=J+X+max(2z+r,Y), and excludes the short width-eight/ten branch
+of the nonexceptional one-reserve AA obstruction. A maximum avoids
+assuming non-reuse against the older irregular-pair witnesses.
+Thirty new scoped Lean/axiom checks and local role/support controls
+pass; complete physical coverage of the new branches is zero and
+geometric adapters remain written. Two new independent reviews are
+pending. The remaining finite width-six closure and arbitrary grids
+are open; no complete allocation counterexample is supplied.
+
 The [uniform complete-source coefficient](docs/COMPLETE_SOURCE_UNIFORM_COEFFICIENT.md)
 improves five-sixths to12/13 for every permitted finite complete U/rotor
 fusion, with arbitrary source counts, dimensions, phases and contacts.
