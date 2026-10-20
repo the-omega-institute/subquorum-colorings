@@ -5,6 +5,8 @@ import json
 
 from check_demand_hull_reserve_obstruction import independent_source
 from check_cooperative_promotion import neighbors
+from check_pair_transfer_protected_defects import original
+from rotor_networks import affine
 
 
 if not __debug__:
@@ -73,6 +75,66 @@ def partial_pattern():
                 scope='PARTIAL ONLY: not a complete-family witness or compensation counterexample.')
 
 
+def nonmatched_target_controls():
+    frame_cases = 0
+    profile_cases = 0
+    nonmatched = 0
+    for width, height, far, incident, old_near, old_far in itertools.product(
+            (10, 18, 26), (12, 18), (4, 10, 18), (8, 12, 20), (4, 10), (4, 12)):
+        cross = independent_source((width, height, far),
+                                   (True, True, False), (1, height+2))[0]
+        terminal = original((8, incident, 4),
+                            (True, False, True), (width+1, height-incident))
+        point = (width, height)
+        assert point in terminal['endpoints']
+        assert terminal['charge'] == 1
+        assert {(width, height+1), (width+1, height)} <= terminal['selected'] & cross
+        axial_neighbors = set(neighbors((width, height+1))) & cross
+        assert axial_neighbors == {(width-1, height+1), (width+1, height+1),
+                                    (width, height+2)}
+        lateral_neighbors = set(neighbors((width+1, height))) & cross
+        assert lateral_neighbors == {(width+1, height-1), (width+1, height+1)}
+        old_cross = independent_source((width, height, far),
+                                       (False, False, False), (0, 0))[0]
+        assert set(neighbors((2, 1))) & old_cross == {(1, 1), (3, 1)}
+        profile_cases += 1
+        nonmatched += far != incident+2
+        rows = [
+            ((True, True, False), (width-2, height+3), (1, 1), (0, 1),
+             lambda row, column: (incident+3-row, 3-column)),
+            ((False, True, True), (width+3, height+3), (2, 1), (0, 1),
+             lambda row, column: (column+2, incident+3-row)),
+            ((True, True, True), (width+3, height+3), (1, 2), (0, 1),
+             lambda row, column: (incident+3-row, column+2))]
+        for symmetry, offset, witness, outside, frame in rows:
+            producer = independent_source((10, old_near, old_far), symmetry, offset)[0]
+            assert affine(witness, symmetry, offset) in producer & cross
+            assert affine(outside, symmetry, offset) in producer-cross
+            for test in ((0, 1), (1, 1), (incident, 1), (4, 8), (0, 9)):
+                assert affine(frame(*test), symmetry, offset) == (
+                    width+1-test[1], test[0]+height-incident)
+            frame_cases += 1
+    return dict(target_profile_cases=profile_cases, nonmatched_profile_cases=nonmatched,
+                three_old_channel_frame_collision_self_exclusions=frame_cases,
+                scope='Coordinate and original-source controls only; no complete occurrence claimed.')
+
+
+def ledger_controls():
+    cases = 0
+    ceil_half = lambda value: -((-value)//2)
+    for base, previous, added in itertools.product(range(-24, 25), range(7), range(7)):
+        old = ceil_half(base+previous)
+        new = ceil_half(base+previous+added)
+        assert new-old in {added//2, (added+1)//2}
+        assert ceil_half(base+previous+added+2)-new == 1
+        if base+previous+added >= -1:
+            assert new >= 0
+        cases += 1
+    return dict(integer_parity_and_two_claim_gain_cases=cases)
+
+
 if __name__ == '__main__':
     print(json.dumps(dict(status='PASS', controls=interval_controls(),
-                          matched_partial=partial_pattern()), indent=2))
+                          matched_partial=partial_pattern(),
+                          nonmatched_targets=nonmatched_target_controls(),
+                          ledger=ledger_controls()), indent=2))

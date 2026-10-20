@@ -76,17 +76,29 @@ matched identification.
 
 This is a PARTIAL pattern. The remaining original supports have not been
 completed or validated as a complete family. It is not a counterexample to
-any complete-family compensation rule or to mu>=0. The outstanding question
-is whether a complete extension exists or a further general obstruction
-excludes it.
+any complete-family compensation rule or to mu>=0. The subsequent maximal-band
+theorem now excludes a complete extension of this particular pattern; other
+matched patterns remain unresolved.
 
 ## Verification scope and next step
+
+The subsequent [maximal-band obstruction](MAXIMAL_VCORNER_BAND_OBSTRUCTION.md)
+proves that this PARTICULAR eight-source matched pattern cannot have any
+complete U/rotor extension: its B/X pair forces an impossible consumer at
+(9,3). This does not exclude all matched f=j+2 configurations or invalidate
+the local identity/stencil controls above.
+
+The later [nonmatched successor transfer](GAP_EIGHT_NONMATCHED_SUCCESSOR_TRANSFER.md)
+adds the remaining old-target exclusions, reconstruction and joint ledger for
+f!=j+2. The limited proof and partial-pattern scope of this note are unchanged.
 
 Run `python3 develop/check_gap_eight_successor_return.py`. Independent
 endpoint/support/matching construction checks the partial pattern and finite
 controls of the interval argument. The universal argument is the written
 proof above; finite controls do not replace it. The standalone Lean file
 `formal/SubQuorum/GapEightSuccessorReturn.lean` checks the coordinate-level
-endpoint implication and return-length identity. It does not formalize the
-old-channel geometry or a global injection. No independent written audit has
-yet been obtained for this note. No numerical compensation gain is claimed.
+endpoint implication and return-length identity, and now has14 declarations
+including the later transfer's neighbor profiles and joint ledger. Old-channel
+geometry and global injection remain written. Review95c8bb05 ACCEPTS the
+nonmatched transfer together with this return-identity dependency. The return
+identity alone supplies no independent receipt or numerical gain.

@@ -1,0 +1,45 @@
+{
+  "status": "sat",
+  "candidates": 41,
+  "seconds": 0.05,
+  "lower": [
+    -2,
+    -2
+  ],
+  "upper": [
+    8,
+    8
+  ],
+  "maximum_width": 6,
+  "maximum_leg": 4,
+  "maximum_additions": 0,
+  "seed_json": "output/completion-verifier-rotor-fixture.json",
+  "include_rotors": true,
+  "source": "Finite bounded discovery; UNSAT excludes this candidate library only, not arbitrary U/rotor extensions.",
+  "specifications": [
+    [
+      "rotor",
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  ],
+  "independent_direct_verification": {
+    "status": "PASS",
+    "sources": 1,
+    "endpoints": 8,
+    "matching_edges": 4,
+    "selected": 8,
+    "retained_unconsumed_supports": true,
+    "original_matchings_unchanged": true,
+    "selected_degree_one": true,
+    "endpoint_degree_at_least_three": true
+  },
+  "process_exit_code": 0
+}

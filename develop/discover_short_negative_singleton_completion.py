@@ -8,6 +8,35 @@ from pathlib import Path
 import z3
 from check_demand_hull_reserve_obstruction import independent_source
 from check_cooperative_promotion import neighbors
+from rotor_networks import rotor, transform_module
+
+
+def source_record(specification):
+    parameters, symmetry, offset = specification
+    if parameters != 'rotor':
+        return independent_source(parameters, symmetry, offset)
+    module = transform_module(rotor(), symmetry, offset)
+    return (module['endpoints'], module['selected'],
+            {tuple(sorted(edge)) for edge in module['matching']})
+
+
+def verify_completion(specifications):
+    records = [source_record(specification) for specification in specifications]
+    endpoints = set().union(*(record[0] for record in records))
+    assert len(endpoints) == sum(len(record[0]) for record in records)
+    matching = set().union(*(record[2] for record in records))
+    assert len(matching) == sum(len(record[2]) for record in records)
+    assert len(endpoints) == 2*len(matching)
+    assert {point for edge in matching for point in edge} == endpoints
+    assert all(second in neighbors(first) for first, second in matching)
+    supports = set().union(*(record[1] for record in records))-endpoints
+    occupied = endpoints | supports
+    assert all(len(set(neighbors(point)) & occupied) == 1 for point in supports)
+    assert all(len(set(neighbors(point)) & occupied) >= 3 for point in endpoints)
+    return dict(status='PASS', sources=len(records), endpoints=len(endpoints),
+                matching_edges=len(matching), selected=len(supports),
+                retained_unconsumed_supports=True, original_matchings_unchanged=True,
+                selected_degree_one=True, endpoint_degree_at_least_three=True)
 
 started = time.monotonic()
 parser = argparse.ArgumentParser()
@@ -18,6 +47,7 @@ parser.add_argument('--maximum-width', type=int, default=12)
 parser.add_argument('--maximum-leg', type=int, default=8)
 parser.add_argument('--maximum-additions', type=int, default=10)
 parser.add_argument('--seed-json')
+parser.add_argument('--include-rotors', action='store_true')
 parser.add_argument('--lower-row', type=int, default=-6)
 parser.add_argument('--lower-column', type=int, default=-6)
 parser.add_argument('--upper-column', type=int, default=22)
@@ -42,7 +72,7 @@ else:
                       ((6, 4, 4), *companion_frame)]
 if arguments.seed_json:
     specifications = json.loads(Path(arguments.seed_json).read_text())['specifications']
-seed = [independent_source(*specification) for specification in specifications]
+seed = [source_record(specification) for specification in specifications]
 fixed = set().union(*(record[0] for record in seed))
 assert len(fixed) == sum(len(record[0]) for record in seed)
 lower = (arguments.lower_row, arguments.lower_column)
@@ -51,11 +81,14 @@ assert all(lower[axis] <= point[axis] <= upper[axis]
            for record in seed for point in record[0] | record[1] for axis in (0, 1))
 library = []
 seen = set()
-for dimensions in itertools.product(range(6, arguments.maximum_width+1, 2),
-                                    range(4, arguments.maximum_leg+1, 2),
-                                    range(4, arguments.maximum_leg+1, 2)):
+parameters = list(itertools.product(range(6, arguments.maximum_width+1, 2),
+                                   range(4, arguments.maximum_leg+1, 2),
+                                   range(4, arguments.maximum_leg+1, 2)))
+if arguments.include_rotors:
+    parameters.append('rotor')
+for dimensions in parameters:
     for symmetry in itertools.product((False, True), repeat=3):
-        endpoints, supports, matching = independent_source(dimensions, symmetry, (0, 0))
+        endpoints, supports, matching = source_record((dimensions, symmetry, (0, 0)))
         occupied = endpoints | supports
         minimum = tuple(min(point[axis] for point in occupied) for axis in (0, 1))
         maximum = tuple(max(point[axis] for point in occupied) for axis in (0, 1))
@@ -97,10 +130,12 @@ result = dict(status=str(status), candidates=len(library), seconds=round(time.mo
               lower=lower, upper=upper, maximum_width=arguments.maximum_width,
               maximum_leg=arguments.maximum_leg, maximum_additions=arguments.maximum_additions,
               seed_json=arguments.seed_json,
-              source='Finite U-only discovery; UNSAT excludes this bounded library only, not arbitrary U/rotor extensions.')
+              include_rotors=arguments.include_rotors,
+              source='Finite bounded discovery; UNSAT excludes this candidate library only, not arbitrary U/rotor extensions.')
 if status == z3.sat:
     model = solver.model()
     selected = [specification for choice, (specification, _, _) in zip(chosen, library)
                 if z3.is_true(model.eval(choice))]
     result['specifications'] = specifications+selected
+    result['independent_direct_verification'] = verify_completion(result['specifications'])
 print(json.dumps(result), flush=True)

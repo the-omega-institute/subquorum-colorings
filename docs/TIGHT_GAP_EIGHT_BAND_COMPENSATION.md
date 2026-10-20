@@ -8,6 +8,11 @@ continuation. The theorem is conditional on the actual consumer role. It does
 not resolve all gap-eight configurations, unrestricted allocation, or
 rectangular-grid equality.
 
+The later [nonmatched successor theorem](GAP_EIGHT_NONMATCHED_SUCCESSOR_TRANSFER.md)
+adds the positive up successor when f!=j+2, jointly with the entire D/L union.
+The [maximal-band obstruction](MAXIMAL_VCORNER_BAND_OBSTRUCTION.md) excludes
+d=b-2,k>=W-4, including the displayed matched-return partial seed.
+
 The subsequent [old-pair return identity](GAP_EIGHT_SUCCESSOR_OLD_PAIR_RETURN.md)
 proves that the tight negative branch's positive successor can reuse an old P
 target only when f=j+2. This is not yet a new global compensation certificate.
@@ -197,6 +202,10 @@ frame comparison with the old P channel need not produce the C collision
 used for D. No claim of reuse or nonreuse in COMPLETE configurations is
 made without that additional analysis. The down alternative remains open.
 Neither branch is included in K_D or added to rho.
+
+This is the baseline of the present note. The subsequent nonmatched successor
+theorem credits the up branch under f!=j+2 in a separate simultaneous extension;
+it does not include the down branch or matched f=j+2 cases.
 
 Negative consumers at other omega values, the matched-return pair, other gap-eight consumer
 roles, wider H, vertical exits, universal residual coverage and an arbitrary
