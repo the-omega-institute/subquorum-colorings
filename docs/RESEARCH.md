@@ -7,6 +7,16 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [canonical gate consumption](MARKED_SIDE_GATE_CONSUMPTION.md)
+identifies every actual positive-side mark with one fixed support consumer.
+It gives a unique least demand-preserving Horn hull and eliminates duplicate
+mark corrections in [feasible shared-core gluing](FEASIBLE_CORE_SEPARATOR_TRANSFER.md):
+mu(F)=mu(L)+mu(K)-mu(C), subtracting actual core reserve once. Six scoped
+source-level Lean declarations and geometric controls pass; catalogue/count
+adapters have written proofs. Canonical hull reserve loss remains unbounded
+in the connected nine-source family. Full allocation and grid equality remain
+open; the next target is loss controlled by the existing hull margin.
+
 The target is Sahbi's formula for arbitrary rectangular grids. Widths
 8,9,10,11 are now proved at all positive lengths using exact full-vector
 certificates and the existing periodic lower-bound constructions.

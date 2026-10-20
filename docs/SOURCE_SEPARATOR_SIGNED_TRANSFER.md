@@ -1,5 +1,15 @@
 # Exact signed gluing across a shared original source
 
+21 October sharpening: the [canonical gate-consumption theorem](MARKED_SIDE_GATE_CONSUMPTION.md)
+proves that the duplicate count d_s below is identically zero in actual
+complete-source configurations. A marked positive side has a single fixed
+gate consumer; marking it in both branches would place that consumer in
+their one-source intersection, which cannot consume its own original
+support. Thus the physical margin identity is
+mu(F)=mu(L)+mu(Right)-N_s-S_s. The earlier OR-count proof remains below;
+the independent review of its reserve dependency/deletion criterion does
+not cover this subsequent sharpening.
+
 20 October 2026. A complete feasible U/rotor family can be split legally at
 a single original source whenever its exclusive sides have no endpoint edge
 between them. Unlike endpoint-component additivity, the two restrictions now
