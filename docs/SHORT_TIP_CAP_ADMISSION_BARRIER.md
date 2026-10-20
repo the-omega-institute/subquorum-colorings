@@ -27,8 +27,8 @@ that terminal's reference height, then
 
     8 <= h <= W-4.                                  (2)
 
-The incoming U's bar extends physically downward. Its width and its
-other leg height remain unbounded. Thus widths6,8,10 admit no complete
+The incoming U's bar extends physically downward. This argument imposes
+no upper bounds on its width or other leg height. Thus widths6,8,10 admit no complete
 extension for ANY permitted A. For W>=12, (2) is necessary only; we do
 not assert that any of its values gives a feasible completion.
 
@@ -144,7 +144,8 @@ The unique possible rotor owner produces the same closed two-site
 cavity as POSITIVE_U_CAP_NONCOMPLETION_OBSTRUCTION.md. That proof
 uses the cap's bar/right stem and only reference rows2,3,4 of its
 left stem, plus original rotor supports. All these endpoint sites
-persist for arbitrary A>=4; q and both cavity sites remain outside
+persist for arbitrary A>=4; the width-six cavity support q6=(-2,-4)
+and both cavity sites remain outside
 the extended left stem. Thus the same contradiction covers W=6
 with arbitrary left height. No support of a truncated U is assumed.
 
@@ -170,8 +171,12 @@ for scope and reproduction commands. Full source
 isometry/support adapters, the physical wall argument and theorem assembly
 remain written. We do not claim the whole admission theorem is in Lean.
 
-This theorem is later than the width-eight ACCEPT and is reviewed
-separately. It excludes all short incoming terminals in this cap family;
+Separate review eed8fc36 completed ACCEPT on 20 October at01:38:31.661UTC,
+observed gpt_6/pro. Original stream48139 exited0/DONE and matches all18338
+terminal response characters exactly. It accepts the written arbitrary-width
+admission proof, including original-support exclusion, physical wall and
+width-six arbitrary-A transfer; execution evidence remains separate.
+It excludes all short incoming terminals in this cap family;
 it does not exclude long terminals satisfying (2), other cap orientations
 or positions, or feasible mixed sources generally. The remaining joint
 allocation is still2G+BU+BR<=2N+2B11+Lambda, with every original slot and
