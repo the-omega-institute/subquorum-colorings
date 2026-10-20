@@ -204,8 +204,13 @@ in eight. All10 scoped Lean declarations and individual axiom audits
 pass locally with Lean4.33.0, one job, no sorryAx/native_decide. See
 output/activated-singleton-budget-controls.json and
 output/activated-singleton-budget-formal-check.json for exact scope and
-reproduction. A separate written-proof review is live on original
-stream75421, without a verdict; no earlier ACCEPT covers this note.
+reproduction. Review2d57a5d5 on original stream75421 terminated with
+infrastructure_retry_exhausted/cdp_disconnected@typing after four broker
+attempts, with no mathematical answer. Its failure is archived. After
+that terminal state, a fresh combined review of this proof and
+OCCUPIED_GATE_ACTIVATION_AND_WIDTH_SIX.md was submitted on original
+stream28290 with one text attachment. It is live without a verdict;
+no earlier ACCEPT covers either proof.
 
 The support-routing idea originated in exploratory Oracle task
 ef7e27ea-8c3f-4cdc-8b5d-721df8e896c6. This note reconstructs the
