@@ -195,7 +195,11 @@ two-periodic internal pattern; z is even, so parity agrees at both ends.
 All unchanged regions are translated copies of the feasible F_0 regions.
 This proves selected-degree feasibility for ALL z. Original-source interval
 disjointness follows from the same columns and the translated old endpoints.
-Their original matchings are therefore disjoint unit-edge matchings.
+Each F_z uses its sources' canonical original matchings for the displayed
+new dimensions, so they are disjoint unit-edge matchings. The point-set
+insertion identity does not assert that an F_0 matching edge crossing the
+cut is translated as a single edge: the longer original constructor uses
+its consecutive canonical pairing through that region.
 Every endpoint keeps all three original occupied neighbors, since each
 original support remains occupied. Thus this is a complete feasible family.
 
@@ -208,6 +212,17 @@ negative-singleton gate, C consumes p, H consumes y, and (1) applies with
 b=6+z, a=e=4+z. These are complete actual long-H occurrences for every
 even b>=6, not merely endpoint-disjoint partial roles.
 
+More explicitly, original row7 has exactly the slab endpoint columns and
+the sole retained selection(7,-5), with the displayed ownership. Thus the
+first inserted odd row reproduces that complete row. Old row6 has selected
+columns4,6,21, all blank in the new row7, while row6 has no occupied point
+at column-5. At the lower interface an even slab row meets translated old
+row7, giving the same even/odd compatibility as internally. Every old
+endpoint edge crossing rows6/7 has both ends in one of the eight slab
+columns and both ends of the same original owner. In F_z each such edge
+is replaced by an endpoint path THROUGH THAT SAME OWNER, which proves
+connectedness without assuming that an arbitrary original edge persists.
+
 Exactly eight endpoints occur per new row, with five selected points per
 two-row period. Consequently
 
@@ -215,13 +230,24 @@ two-row period. Consequently
 
 The aligned physical tile ledger is also explicit. Every old tile with
 first row>=8 is translated down by z, and old tiles at first row<=6 keep
-the same endpoint/support profiles. Each extra two-row block beginning at
+the same endpoint and FINAL SELECTED-point profiles. Original consumed
+support provenance can change: for example M's consumed support at(7,8)
+moves to(7+z,8), while H still owns(7,8). Each extra two-row block beginning at
 row8,10,...,6+z has exactly one nonzero NEW defect: C's exposed bar pair
 in columns10,11 is irregular2P0T and contributes2. All other new receiver
 tiles have regular or full profiles. Aactivation=4, U0=2 and Z0=0 remain
 unchanged. The exact defect identity therefore gives
 
     N=3, G=2, R=26+z/2, mu=27+z/2.                 (6)
+
+The source-specific assertions do not follow just from final occupancy.
+Even z preserves all aligned phases. The positive sources A,F,K and ALL
+their original endpoints/supports lie in rows<=5; their radius-one
+neighborhoods lie in rows<=6 and are unchanged. Thus their marks and
+terminal activations stay fixed. Only C and E have the both-shifted phase
+with U triples: their original end-cap tiles persist or translate, with
+the same fullness, while the new C bar tiles are pairs, not new caps.
+This proves U0=2 separately. There are no rotors, so Z0=0.
 
 Thus long H is genuinely realizable without any upper length bound.
 These examples have POSITIVE margin and refute neither allocation nor
@@ -236,6 +262,8 @@ support formulas, local defect translation and complete-family ledgers.
 It checks80 endpoint-disjoint two-owner patterns and256 phase/isometry images
 of eight complete families, including b=66. Those controls supplement the
 unbounded proofs in Sections1--3 and do not prove them by enumeration.
+Among those images,64 preserve the physical tile partition; all64 new pair
+certificates are also detected in the existing common lower-pair union.
 The existing persistent-corridor certificate detector now recognizes the
 long-channel first pair in the SAME deduplicated lower-pair set. Its old
 short certificates and strip/cap counts retain their original definitions.
@@ -256,5 +284,13 @@ Vcorner, filled corridors and vertical regular exits. The long-channel
 lemma narrows the remaining claim set and supplies an actual permanent
 receipt, but does not establish the universal coverage condition in (4).
 Submitted manuscripts are unchanged.
+
+Independent written review5a0cae69 completed ACCEPT for the initial channel,
+joint nonreuse and all-parameter realization. Its11,900-character response
+matches original stream51636 exactly, exit0, observed gpt_6/pro. The
+interface, matching and source-provenance clarifications above incorporate
+its recommendations. It does not certify execution. The subsequent
+[four-column rotor barrier](FOUR_COLUMN_CORNER_BARRIER.md), which forces
+the return length in a wider subclass, has a separate review scope.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

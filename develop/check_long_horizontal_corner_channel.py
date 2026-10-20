@@ -69,6 +69,7 @@ def family_controls():
     slab_columns = {-4, 1, 2, 3, 7, 8, 9, 10}
     examples = []
     images = 0
+    aligned_pair_images = 0
     for stretch in (0, 2, 4, 6, 10, 18, 32, 60):
         modules = [original(*specification) for specification in specifications(stretch)]
         network = combine(modules)
@@ -97,6 +98,11 @@ def family_controls():
                 occupied = endpoints | set().union(*(module['selected'] for module in moved))
                 move = lambda point: affine(point, symmetry, phase)
                 cells = {move(point) for point in vertices_of({(2, 2)})}
+                key = tuple(value//2 for value in next(iter(cells)))
+                if cells == vertices_of({key}):
+                    _, _, moved_lower, _ = certificates(moved)
+                    assert key in moved_lower
+                    aligned_pair_images += 1
                 assert {move((4, 4)), move((4, 5))} == cells & endpoints
                 assert not {move((5, 4)), move((5, 5))} & occupied
                 assert all(len(set(neighbors(point)) & occupied) == 1 for point in occupied-endpoints)
@@ -114,7 +120,9 @@ def family_controls():
                              selected=len(network['selected']), reserve=reserve,
                              allocation_margin=exact['exact_joint_margin'],
                              activated=values[0]))
-    return dict(complete_family_images=images, examples=examples)
+    assert aligned_pair_images == 64
+    return dict(complete_family_images=images, aligned_pair_certificate_images=aligned_pair_images,
+                examples=examples)
 
 
 if __name__ == '__main__':
