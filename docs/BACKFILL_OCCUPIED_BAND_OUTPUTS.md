@@ -234,7 +234,14 @@ was submitted on original stream96627 in a new conversation. Its packet
 includes this complete theorem/final14-statement source and the later
 [A-cap nonreuse/four-route extension](BACKFILL_FOUR_ROUTE_SINGLE_POOL_BUDGET.md).
 The distinct prior shared-stop audit7ea29eb0 completed ACCEPT; it does not
-cover either new theorem. The combined mathematical review is pending.
+cover either new theorem. The combined audit29f4d714 completed ACCEPT at
+13:18:39UTC on20October, with20394response characters and observedgpt6/pro.
+Original96627 exited0; the DONE stream and archived terminal response match
+exactly. It checks this complete written theorem and the A-cap/all-route
+extension, with no must-fix issue. It does not certify Lean execution or
+finite controls, complete critical U10 realizability, full allocation or
+grid equality. See the [review receipt](../output/backfill-four-route-budget-review.json)
+and [full response](../output/backfill-four-route-budget-review-response.txt).
 
 This routes B and D into the same original occurrence ledger used by A's
 caps and C's two corners. It does not prove that those resources suffice

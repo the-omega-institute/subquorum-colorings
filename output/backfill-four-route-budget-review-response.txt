@@ -1,0 +1,211 @@
+ACCEPTThe combined four-route single-pool compensation theorem is valid under the complete-source hypotheses and the explicitly established inputs in your packet. I find no missing mathematical hypothesis in the supplied combined statement.This verdict includes independent checking of both new ingredients:The B/D occupied-band theorem: its incident bound, exact original profiles, support forcing, global output injection, receiver separation, and actual activation bound for every B event.The A-cap extension: the exclusion of its selected leg from any critical-companion use, the resulting joint cap selection, and the all-route substitutions.The failed earlier B/D review supplies no mathematical input to this verdict. The audit below concerns the written mathematics; it does not certify the reported Lean execution or finite controls.1. The B/D normalization has the correct source and phase adaptersWork in the normalization of BACKFILL_OCCUPIED_BAND_OUTPUTS.md, §1. All sources and the physical partition are transported together. The companion and the two possible  $q$ -owners are
+$$\begin{aligned}
+F(r,c)&=(c-1,r-h-1), &&F\text{ is }U(v,h,f),\\
+H_B(r,c)&=(c,-r-1), &&H_B\text{ is }U(w,a,b),\\
+H_D(r,c)&=(c,r-a-1), &&H_D\text{ is }U(w,a,b).
+\end{aligned}$$
+The independent heights  $f,b$  remain unrestricted beyond their stated legality.The new B incident bound is justified by complete endpointsFor both  $H_B$  and  $H_D$ , the canonical first stem together with its bar endpoints gives the entire original run
+$$(1,c)\in P_H
+\qquad(-a-1\le c\le-1).$$
+The point  $(1,-h)$  is an original  $F$ -bar endpoint: its canonical  $F$ -coordinate is  $(1,2)$ .If  $a+1\ge h$ , then
+$$-a-1\le-h\le-1,$$
+so this point also belongs to  $P_H$ . The original owners  $F,H$  are distinct, making this an endpoint-uniqueness contradiction. Therefore
+$$h>a+1,\qquad a\le h-2.$$
+This proves the new B bound and the repeated D bound. It uses the full incident run and the companion’s actual bar. It does not identify either source’s two heights.In particular,  $h=4$  admits neither B nor D, since  $a\ge4$ . There is no omitted shallow boundary case.The output tile uses the transported partitionWrite
+$$\begin{aligned}
+z&=(0,-a-2),& n&=(0,-a-1),\\
+y&=(1,-a-2),& x&=(1,-a-1),
+\end{aligned}
+\qquad
+T_x=\{z,n,y,x\}.$$
+Because  $a$  is even, the physical origin  $(0,-a-2)$  has both coordinates even. Thus  $T_x$  is a tile of the already fixed partition.Put  $m=h-a$ . The inverse coordinates of its four points are:Physical pointCanonical  $F$ -coordinateCanonical  $H_B$ -coordinateCanonical  $H_D$ -coordinate $z$  $(m-1,1)$  $(a+1,0)$  $(-1,0)$  $n$  $(m,1)$  $(a,0)$  $(0,0)$  $y$  $(m-1,2)$  $(a+1,1)$  $(-1,1)$  $x$  $(m,2)$  $(a,1)$  $(0,1)$ These coordinates also verify the phase adapter. The pulled-back tile origins are respectively
+$$(m-1,1),\qquad(a,0),\qquad(-1,0).$$
+Since  $m,a$  are even, their phase parities are  $11,00,10$ , as asserted.These are original source phases obtained by pulling back the physical partition. A subsequent event normalization transports that same partition and preserves those source phases. This is the fixed-phase fact needed in the global owner comparisons below.2. The cap/interior profiles and actual support forcing are exactThe supplied endpoint and support definitions in WidthSixBottomOwner.lean give the following original source-local profiles.Source and caseOriginal endpoints in  $T_x$ Original supports in  $T_x$  $H_B$  $\{x\}$  $\{n,y\}$  $H_D$  $\{x\}$  $\{n\}$  $F$ ,  $a=h-2$  $\{z,n,y\}$  $\varnothing$  $F$ ,  $a\le h-4$  $\{z,n\}$  $\{y\}$ The width bounds exclude interference from the opposite stems or their supports: the relevant canonical columns in the table are only  $0,1,2$ , while the opposite-side endpoint and support columns are separated from these by  $v,w\ge6$ .B and D output different original singleton rolesFor B,  $x$  pulls back to  $(a,1)$ , the actual terminal of the incident leg. Evenness of  $a$  gives the outward side support  $(a,0)$ , while  $(a+1,1)$  is the terminal support. These map to  $n,y$ . Thus this is exactly the positive terminal  $1P2T$  occurrence required for activation accounting.For D,  $x$  pulls back to  $(0,1)$ , an upper outer bar corner. Its sole intratile support is  $(0,0)$ , mapping to  $n$ . Thus the new D occurrence is an original phase10 outer-corner singleton, distinct in role from the terminal  $q$  that initiated route D.That distinction matters: the  $d$  contribution comes from the newly identified singleton  $x$ , not from recounting the original  $q$ -terminal.Cap caseEvenness and  $a\le h-2$  give exactly the alternatives
+$$a=h-2
+\quad\text{or}\quad
+a\le h-4.$$
+In the cap case  $m=2$ , the three  $F$ -endpoints have canonical coordinates
+$$(1,1),\quad(2,1),\quad(1,2).$$
+They are precisely the original phase11 cap triple. The fourth point  $x$  is already an  $H$ -endpoint. Hence:B supplies an actual positive cap-filling terminal activation.D supplies an actual negative cap-filling singleton.These belong to the existing  $F_{\rm pos}$  and  $F_{\rm neg}$  families.Interior caseHere
+$$4\le m=h-a\le h-4.$$
+Therefore the  $F$ -endpoints at canonical positions
+$$(m-1,1),\qquad(m,1)$$
+are strictly inside the first stem. Neither is a bar endpoint or an original terminal. The other terminal lies on the other canonical column and is also absent.Since  $m-1$  is odd, the canonical inward support  $(m-1,2)$  exists and maps to  $y$ . This proves the exact regular  $2P1T$  profile.If  $y\notin P$ , mandatory retention requires retaining this original support. But  $y$  has the two distinct persistent endpoint neighbors
+$$z\in P_F,\qquad x\in P_H.$$
+Its occupied degree would be at least two, contradicting the retained-support degree bound. Consequently
+$$y\in P.$$
+The exact original profiles exclude  $y$  from both  $F$  and  $H$ . It therefore has a third original owner  $J$ , distinct from both. No classification of  $J$  as U or rotor is needed.The final endpoint ownership in an interior output tile is thusLeft columnRight columnTop row $F$  $F$ Bottom row $J$  $H$ In particular,  $F$  is the only original owner with at least two endpoints in this tile.Every B event now has an actual activated terminal: in the cap case both  $n,y$  are  $F$ -endpoints; in the interior case  $n$  belongs to  $F$  and  $y$  to  $J$ . Thus both original intratile supports of the positive terminal  $x$  are consumed in either case.3. Output injection and receiver separation hold globallyThe arguments in BACKFILL_OCCUPIED_BAND_OUTPUTS.md, §3, survive recurring owners and arbitrary event frames because they compare exact original profiles in one physical tile.Joint injection of B/D outputsSuppose two interior outputs have the same physical tile.The second companion must own an exact original pair there. The ownership table above shows that only  $F$  can do so. Hence the two outputs have the same original companion.Equivalently, a different U11 companion would need both points outside  $F$ ’s pair, one of which is  $x$ , already owned by  $H$  of fixed phase00 or phase10.The common exact interior pair identifies one original leg of  $F$ . The two legs are separated by  $v-1\ge5$ , so no opposite-leg ambiguity is possible. That leg identifies its unique original terminal. Applying the established companion-terminal/event injection identifies the event.The cap case has the same conclusion. Different original owners cannot both supply cap triples in a four-point tile. For the same owner, the original cap determines its leg and terminal, hence its event.An interior output cannot coincide with a cap output:Different companion owners would require a disjoint pair and triple, hence at least five original endpoints.The same companion cannot have both an exact two-point and an exact three-point original endpoint profile in one tile.Thus the B/D outputs are jointly injective across both routes and both output types. Their singleton occurrences are injective as well, since equality of endpoint occurrences fixes the physical tile.This allows a source to recur as  $F$  or as  $H$ . It also allows its different terminals to participate in different events. The proof identifies an event through a particular original leg and terminal; it does not require an injective owner map.Separation from all required receiver familiesFor an interior output tile, the “only  $F$  owns at least two endpoints” conclusion gives a uniform way to check the exclusions:Competing useReason coincidence is impossibleOrdinary first/LONG receiverIts established exact original pair has a phase01 owner. The only possible pair owner here is phase11  $F$ .Critical receiverIts original root owner has at least two endpoints, hence would be  $F$ . The established U11 critical-owner classification requires an original terminal, absent from this interior pair.Any original backfill tileIts U11 companion pair includes an original terminal. The only possible companion here is  $F$ , whose pair contains none.Any original cap tripleNo owner has three endpoints in this tile.An  $E_0$  irregular-pair occurrenceIts foreign exact  $2P0T$  pair cannot be  $F$ ’s exact original  $2P1T$  pair; no other owner can supply a pair.An  $E_{\rm term}$  terminal claimIts producing source supplies an exact original irregular  $2P0T$  pair, again impossible here.The regular/irregular distinction concerns original supports. Although  $y$  is consumed in the final fusion, it remains an element of the original support set  $S_F$ . Its consumption does not turn  $F$ ’s original  $2P1T$  profile into an original  $2P0T$  profile.Consequently:Each new D singleton belongs to  $E_{1,\rm reg}$ .It avoids  $E_{1,\rm old}$ , since its tile avoids all ordinary and critical receivers.It avoids  $E_0$ , every negative cap filler, and all route-C  $q/r$  occurrences.Each new B terminal activation avoids every positive cap filler, every  $E_{\rm term}$  claim, and every  $C_+$  activation.The  $C_+$  and route-C exclusions follow from avoiding all backfill tiles. These are global statements, not comparisons restricted to the event’s own component.4. A’s selected leg cannot be any critical companionThe new argument in BACKFILL_FOUR_ROUTE_SINGLE_POOL_BUDGET.md, §2, is valid. Its decisive step is the actual opposite corner of the transported physical tile.For the normalized A event, the original phase10 owner  $G$  owns
+$$(r,0)\qquad(0\le r\le g).$$
+The phase11  $q$ -owner  $V$  has the selected cap
+$$\{(2,-2),(2,-1),(3,-1)\},$$
+and the corresponding original right-leg terminal is
+$$f=(a+1,-1),
+\qquad
+4\le a\le g-4,
+\qquad a\text{ even}.$$
+The cap-to-leg adapter is correct: this is the lower cap adjacent to the bar at that original stem, and its terminal is obtained by following that same stem. The independent opposite height is irrelevant.Suppose this leg were the original U11 companion leg at another critical event. Its outward direction is south, so
+$$d'=(1,0),\qquad
+t'=f+d'=(a+2,-1).$$
+The physical tile containing  $t'$  is exactly
+$$\{a+2,a+3\}\times\{-2,-1\}.$$
+Thus  $t'$  is its top-right corner and its physical opposite corner is  $(a+3,-2)$ . The displacement is
+$$(1,-1).$$
+Applying the established critical opposite-corner rule in these same coordinates gives
+$$-s'+d'=(1,-1).$$
+With  $d'=(1,0)$ , this forces
+$$s'=(0,1).$$
+Therefore the prospective active original phase01 source must own
+$$t'+s'=(a+2,0).$$
+But
+$$0<a+2\le g-2<g,$$
+so  $G$  already owns this endpoint. In canonical  $G$ -coordinates it is the right-stem point  $(g-a-2,u)$ , with  $2\le g-a-2\le g$ .The active source cannot be  $G$ : their fixed original phases are  $01$  and  $10$ . Endpoint uniqueness is contradicted.This establishes exactly the required universal exclusion:The original leg belonging to an A-selected cap cannot serve as the original U11 companion leg of any critical event in the same source fusion.The argument keeps the first event’s physical partition throughout. It derives the hypothetical second frame from the actual opposite corner; it does not choose a convenient new tiling or assume a compatible turn.It also uses only the original  $G$ -wall and the incident inequality  $a\le g-4$ . There is no descent through dimensions belonging to unrelated owners. Recurrence through other legs remains permitted.5. The joint selected-cap complement  $Q$  is legitimateLet  $\mathcal C_{11}$  be the set of original phase11 cap occurrences, indexed by original owner and original leg. The established source census gives
+$$|\mathcal C_{11}|=2K_{11}.$$
+The cap identities used here are unambiguous:Different owners cannot have cap triples in the same physical tile, by endpoint uniqueness and  $3+3>4$ .The two caps of one owner are distinct by the complete original cap profiles and the width bound.The same-owner justification uses cap separation; endpoint uniqueness alone would not establish it.A-selected caps inject by the established A-cap argument. B/D cap outputs jointly inject by §3 above. If an A-selected cap coincided with a B/D cap output, it would identify the same original owner and cap, hence the same original leg. That leg would then be a critical companion, contradicting §4.Therefore
+$$\mathcal C_{\rm sel}
+=
+\mathcal C_A
+\;\dot\cup\;
+\mathcal C_{B,\rm cap}
+\;\dot\cup\;
+\mathcal C_{D,\rm cap},$$
+and
+$$|\mathcal C_{\rm sel}|=K_A+K_{B,\rm cap}+K_{D,\rm cap}.$$
+Defining
+$$Q:=|\mathcal C_{11}\setminus\mathcal C_{\rm sel}|$$
+gives the exact identity
+$$\boxed{
+2K_{11}=K_A+K_{B,\rm cap}+K_{D,\rm cap}+Q.
+}$$
+The typed filling certificate is also correct:
+$$K_A=A_u+A_n+A_p,$$
+
+$$A_u\le U_0,\qquad
+A_n+K_{D,\rm cap}\le F_{\rm neg},\qquad
+A_p+K_{B,\rm cap}\le F_{\rm pos}.$$
+These follow from jointly disjoint cap subfamilies of the specified filling types.Crucially, the selection partition and the filled/unfilled partition are two partitions of the same original cap set. A cap counted by  $Q$  may already be filled and counted in  $F_{\rm neg}$  or  $F_{\rm pos}$ . The proof needs only the displayed equality and  $Q\ge0$ ; it makes no inference that  $Q$  is unused reserve.All original cap triples also avoid B/D interior output tiles, by the pair/triple argument already checked.6. The negative and activation pools are assembled without reuseWrite
+$$n:=2(K_{01}+K_{10}),
+\qquad
+e:=|E_0|+|E_{1,\rm old}|.$$
+The new geometry gives disjoint occurrence sets in the one original negative-singleton pool:
+$$F_{\rm negSet},\quad E_0,\quad E_{1,\rm old},
+\quad\{\text{route-C }q\},
+\quad\{\text{negative route-C }r\},
+\quad\{\text{D interior }x\}.$$
+With  $L$  defined as the complement of precisely this union,
+$$\boxed{
+F_{\rm neg}+e+K_C+C_-+d+L=n,
+\qquad L\ge0.
+}$$
+This is the correct complement. In particular, the  $d$  occurrences already belong to the full  $E_{1,\rm reg}$  set. Replacing  $E_{1,\rm old}$  here by that full set would destroy the displayed disjoint-union interpretation.On the positive side, the new B interior activations are distinct and avoid all three established terminal families. Hence
+$$\boxed{
+E_{\rm term}+F_{\rm pos}+C_++b\le A.
+}$$
+Define the activation remainder
+$$S:=A-F_{\rm pos}-C_+-b.$$
+Then
+$$S\ge E_{\rm term}\ge0.$$
+The activation bound covers every B eventThe cap-output map gives an actual subfamily of positive cap-filling activations:
+$$K_{B,\rm cap}\le F_{\rm pos}.$$
+Using  $K_B=K_{B,\rm cap}+b$ ,
+$$\begin{aligned}
+E_{\rm term}+C_++K_B
+&=E_{\rm term}+C_++K_{B,\rm cap}+b\\
+&\le E_{\rm term}+C_++F_{\rm pos}+b\\
+&\le A.
+\end{aligned}$$
+Thus
+$$\boxed{E_{\rm term}+C_++K_B\le A,\qquad K_B\le A.}$$
+This is an injection-based bound on actual terminal activations. B’s original outer corner merely identifies the leg; the endpoint/support proof establishes the activation at its terminal.7. The single-pool and all-route equations check exactlyUse the established identities
+$$C_-+C_+=K_C,$$
+
+$$F_{\rm neg}+F_{\rm pos}+U_0=2K_{11},$$
+
+$$2R=A+U_0+Z_0+H.$$
+Here  $H$  denotes the defect count.A useful intermediate equality, obtained from the one negative-pool partition, is
+$$\boxed{
+2K_{11}-n+e+2K_C+d+b+L
+=
+F_{\rm pos}+C_++b+U_0.
+}
+\tag{1}$$
+Indeed, substituting the negative-pool equality into the left side leaves
+$$2K_{11}-F_{\rm neg}+K_C-C_-+b
+=
+F_{\rm pos}+U_0+C_++b.$$
+Adding  $S+Z_0+H$  to (1) gives exactly
+$$\boxed{
+2R=
+2(K_{11}-K_{01}-K_{10})
++e+2K_C+d+b
++S+Z_0+H+L.
+}$$
+This is the occupied-band exact reserve identity.Its capacity inequality has the exact slack
+$$\boxed{
+n+A+U_0-
+\bigl(2K_{11}+e+2K_C+d+b\bigr)
+=S+L\ge0.
+}
+\tag{2}$$
+Thus the claimed occupied-band capacity and retained-reserve inequalities follow directly.Substituting the selected-cap identity onceThe route partitions and the definition of  $Q$  give
+$$\begin{aligned}
+2K_{11}+2K_C+d+b
+&=K_A+K_{B,\rm cap}+K_{D,\rm cap}+Q+2K_C+d+b\\
+&=K_{\rm back}+K_C+Q.
+\end{aligned}$$
+Substitution yields
+$$\boxed{
+2R=
+K_{\rm back}+K_C
+-2(K_{01}+K_{10})
++e+Q
++\bigl(A-F_{\rm pos}-C_+-b\bigr)
++Z_0+H+L.
+}$$
+This is exactly the proposed all-route identity.Equation (2) becomes
+$$\boxed{
+2(K_{01}+K_{10})+A+U_0
+-\bigl(K_{\rm back}+K_C+e+Q\bigr)
+=S+L\ge0.
+}$$
+Therefore
+$$\boxed{
+K_{\rm back}+K_C+e+Q
+\le2(K_{01}+K_{10})+A+U_0,
+}$$
+and dropping only  $S,L\ge0$  from the exact reserve identity gives
+$$\boxed{
+2R\ge
+K_{\rm back}+K_C-2(K_{01}+K_{10})
++e+Q+Z_0+H.
+}$$
+The negative original-source term is retained with the correct sign and scope. In particular,
+$$K_{\rm back}+K_C-2(K_{01}+K_{10})+e+Q$$
+is an integer balance, not a cardinality asserted to be nonnegative. The proof never needs it to be nonnegative.The filled selected caps cause no second expenditure: their cap contribution is already represented in  $2K_{11}$ , and the selected-cap identity replaces that term rather than adding another copy.8. The shared-stop substitution also uses the same budgetTo distinguish the old passive class from route D, write its count as  $D_{\rm stop}$ . The established premises are
+$$B_{\rm pass}=D_{\rm stop}+C_0+C_1+E_{\rm term},$$
+
+$$D_{\rm stop}+C_0+J\le H,\qquad
+C_1\le A,\qquad
+T_{\rm crit}\le Z_0.$$
+Together with the enlarged terminal-family bound,
+$$\begin{aligned}
+&B_{\rm pass}+J+T_{\rm crit}
++F_{\rm pos}+C_++b+U_0\\
+&=(D_{\rm stop}+C_0+J)
++C_1
++(E_{\rm term}+F_{\rm pos}+C_++b)
++T_{\rm crit}+U_0\\
+&\le H+A+A+Z_0+U_0\\
+&=2R+A.
+\end{aligned}
+\tag{3}$$
+The two appearances of activation capacity are explicit: one bounds the established corner claims  $C_1$ , and one bounds the jointly disjoint terminal claims. A leg may support one claim of each kind, exactly within the established two-claim capacity.The  $H$ -stop families are jointly packed once, and  $T_{\rm crit}$  enters through  $Z_0$  once.Substitute (1) into (3), then substitute the selected-cap identity. This gives
+$$\boxed{
+B_{\rm pass}+J+T_{\rm crit}
++K_{\rm back}+K_C-2(K_{01}+K_{10})
++e+Q+L
+\le2R+A.
+}$$
+This is the proposed all-route shared-stop inequality. It follows by replacing the already budgeted cap/activation expression; no independently available reserve bounds are added.Similarly,  $K_{B,\rm cap}\le F_{\rm pos}$  and  $K_B=K_{B,\rm cap}+b$  give
+$$B_{\rm pass}+J+T_{\rm crit}+K_B+C_++U_0
+\le2R+A,$$
+so the shared bound includes every B event as claimed.Audit boundaryThere is no must-fix mathematical issue in the combined theorem as supplied. The important distinctions are all maintained:Complete original profiles remain distinct from profiles after support consumption.Original owner recurrence is handled through physical tiles, legs, terminals, and occurrences. $Q$  is the complement of the joint selected-cap set. $L$  is one complement in the original negative-singleton pool.Positive cap fillers and B interior activations belong to one joint terminal family.The original negative source counts remain in the final equations.The conditional Lean statements are consistent with the local geometry and arithmetic checked above. The mathematical justification for their application is supplied by the written transport, forcing, injection, and pool arguments audited here.ACCEPT applies to this all-four-route compensation theorem. It supplies the stated simultaneous signed budget, with coefficient one for every backfill event and an additional coefficient one for C. Complete critical U10 realizability, unrestricted marked-side allocation, and rectangular-grid equality remain outside this verdict.

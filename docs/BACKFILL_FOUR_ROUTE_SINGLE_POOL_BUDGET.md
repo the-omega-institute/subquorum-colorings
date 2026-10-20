@@ -182,13 +182,21 @@ all8 cardinal frames, and6723conditional all-route identity instances,
 including4698positive cap complements. These pairs/identities are partial
 geometry/algebra, not complete critical events or realizability evidence.
 
-Independent combined review of BOTH this proof and the B/D band-output
-theorem is pending on original stream96627. Its packet includes both full
-written proofs, final14-statement band source and this8-statement source.
-The earlier B/D audit failed terminally on browser typing infrastructure;
-no mathematical verdict was returned. The already accepted prior shared-stop
-extension does not cover either of these new theorems. Keep the original
-combined streaming handle; no acceptance is inferred from submission.
+The combined Oracle review of BOTH this proof and the B/D band-output
+theorem completed ACCEPT at13:18:39UTC on20October, task29f4d714, with
+20394response characters and observedgpt6/pro. Original stream96627 exited0
+and reached DONE; its answer matches the terminal task response exactly.
+The review checks the written source/phase adapters, original profiles,
+global output injections and receiver separation, A-leg nonreuse, joint
+cap/singleton/activation pools and exact all-route/shared-stop substitutions.
+It identifies no must-fix mathematical issue. See the
+[review receipt](../output/backfill-four-route-budget-review.json) and
+[full response](../output/backfill-four-route-budget-review-response.txt).
+The verdict does not certify reported Lean execution or finite controls,
+complete critical U10 realizability, unrestricted allocation or grid equality.
+The earlier failed B/D audit and accepted prior shared-stop review retain
+their separate scopes. Any subsequent D-second-corner enhancement is outside
+this combined review.
 
 Complete critical U10 realizations still have ZERO control coverage. Finite
 parameter/frame and arithmetic checks can test the formulas; they cannot
