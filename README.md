@@ -41,7 +41,7 @@ Phase01 exits enter the existing singleton pool without reusing old receiver
 reservations; phase11 exits identify actual existing cap occurrences.
 Twenty-three scoped local Lean/axiom checks pass. Complete U10 critical
 witness coverage is zero; the general proof is geometric. Initial written
-audit is live and excludes the later height12 strengthening. No fresh
+audit ACCEPT excludes the later height12 strengthening, separately under review. No fresh
 reserve or full coefficient-one/grid equality is claimed.
 
 The [critical return theorem](docs/CRITICAL_PHASE01_BAR_RETURNS.md) replaces

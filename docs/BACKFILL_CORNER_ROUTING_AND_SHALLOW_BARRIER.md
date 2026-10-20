@@ -141,7 +141,7 @@ requires a+1<g-b; in particular g>=12.
 For B, its bottom arm contains(w,-5) because its independent bottom
 incident height is at least4. For D, a<=h-2=4 forces a=4, and its bar
 likewise contains(w,-5). In both cases w<=g-2: this is the B bound, and
-for D the alternative u<=a would assert6<=4. Avoiding (7) now requires
+for D the alternative u<=a would assert6<=4. Avoiding (4a) now requires
 w<g-b. Since w>=6 and b>=4, g>=11, and even g gives g>=12.
 
 Thus no complete feasible critical U10 event has u=h=6 and g<=10,
@@ -226,8 +226,18 @@ Classical.choice; the exact rotor catalogue is axioms-free. No sorry,
 native_decide or additional axioms. See the
 [formal source](../formal/SubQuorum/BackfillCornerRouting.lean) and
 [execution/scope receipt](../output/backfill-corner-routing-formal-check.json).
-The initial four-route written audit is live on original streaming process
-54235; its packet excludes the later width-six height12 strengthening.
+The [initial four-route written audit](../output/backfill-corner-routing-review.json)
+completed ACCEPT at12:17:40 UTC, observed gpt_6/pro, with no must-fix issue.
+Original streaming process54235 exited0/DONE and its16628-character answer
+exactly matches the terminal broker response. The
+[full response](../output/backfill-corner-routing-review-response.txt) checks
+complete source/partition adapters, all original roles/phases, rotor and
+wrong-turn exclusions, the initial strict bounds and shallow obstruction,
+and actual singleton/cap injections with recurring owners. It does not
+certify execution, complete U10 realization or the allocation/grid target.
+Its packet excludes the later extra A/C width bounds and width-six height12
+strengthening. Those are a DISTINCT live audit6d9a713e-928d-4dfa-a470-c5730cb1c390,
+conversation conv_84c5e796eb61addb, original streaming process93766.
 
 The next allocation task remains to join these four routes to ONE actual
 cap/singleton/marked-side ledger, treating recurring owners and other full
