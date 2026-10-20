@@ -123,7 +123,7 @@ constraint, not by itself a global termination theorem.
 There are two additional necessary bounds in the table: role A has
 w<=h-2; role C has w<=h-2 OR v<=a. For A, w>=h would put(1,-h)
 on both its horizontal bar and F's vertical bar. For C, the same collision
-at(a,-h) occurs if w>=h and a<=v-1. The even widths turn w<h into
+at(a,-h) occurs if w>=h and a<=v-1. Evenness of w and h turns w<h into
 w<=h-2. These use F's full bar, rather than only its local terminal pair.
 
 ### The narrow equal-band case forces g>=12
@@ -236,8 +236,16 @@ wrong-turn exclusions, the initial strict bounds and shallow obstruction,
 and actual singleton/cap injections with recurring owners. It does not
 certify execution, complete U10 realization or the allocation/grid target.
 Its packet excludes the later extra A/C width bounds and width-six height12
-strengthening. Those are a DISTINCT live audit6d9a713e-928d-4dfa-a470-c5730cb1c390,
-conversation conv_84c5e796eb61addb, original streaming process93766.
+strengthening. The DISTINCT
+[extension audit6d9a713e](../output/backfill-width-six-barrier-review.json)
+also completed ACCEPT, observed gpt_6/pro. Original streaming process93766
+exited0/DONE and its9529-character answer exactly matches the terminal
+response. It checks all A/B/C/D cases of the extra bounds and height12
+conclusion, conditional on the separately accepted four-route theorem.
+Its two nonblocking cross-reference/parity wording corrections are applied.
+Neither audit includes the later
+[two-corner compensation theorem](BACKFILL_TWO_CORNER_COMPENSATION.md),
+which has a separate same-conversation review.
 
 The next allocation task remains to join these four routes to ONE actual
 cap/singleton/marked-side ledger, treating recurring owners and other full

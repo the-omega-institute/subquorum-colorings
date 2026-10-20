@@ -58,11 +58,11 @@ def images(dimensions):
             yield dimensions, symmetry, anchor, module, role, incident
 
 
-def rotor_catalogue():
-    endpoints = {frozenset(transform_module(module, (False, False, False), CORNER)['endpoints'])
+def rotor_catalogue(corner=CORNER, blockers=MINIMUM):
+    endpoints = {frozenset(transform_module(module, (False, False, False), corner)['endpoints'])
                  for _, module in anchored_images(rotor())}
     assert len(endpoints) == 16
-    assert all(points & MINIMUM for points in endpoints)
+    assert all(points & blockers for points in endpoints)
     return dict(exact_anchored_roles=len(endpoints), survivors=0)
 
 
@@ -134,7 +134,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--output', type=Path, required=True)
     arguments = parser.parse_args()
-    result = dict(status='PASS', rotor_catalogue=rotor_catalogue(), source_controls=source_controls(),
+    second_blockers = {(0, column) for column in range(-4, 0)} | {
+        (row, -1) for row in range(1, 4)}
+    result = dict(status='PASS', rotor_catalogue=rotor_catalogue(),
+                  second_corner_rotor_catalogue=rotor_catalogue((1, -2), second_blockers),
+                  source_controls=source_controls(),
                   complete_critical_U10_witnesses=0,
                   scope='The 16-root rotor catalogue is exhaustive. U dimension and barrier samples '
                         'are partial geometric controls only; arbitrary-dimension classification and '

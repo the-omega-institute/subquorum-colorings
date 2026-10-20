@@ -41,8 +41,17 @@ Phase01 exits enter the existing singleton pool without reusing old receiver
 reservations; phase11 exits identify actual existing cap occurrences.
 Twenty-three scoped local Lean/axiom checks pass. Complete U10 critical
 witness coverage is zero; the general proof is geometric. Initial written
-audit ACCEPT excludes the later height12 strengthening, separately under review. No fresh
-reserve or full coefficient-one/grid equality is claimed.
+audit ACCEPT is joined by a separate ACCEPT for the height12 strengthening.
+The [later two-corner compensation lemma](docs/BACKFILL_TWO_CORNER_COMPENSATION.md)
+uses the second phase01-exit corner as either another negative singleton
+reservation or a positive terminal activation separate from all cap fillers.
+Its exact single-pool identity retains2KC in2R with the signed source
+census and remaining defects; it does not assert R>=KC unconditionally.
+Its later shared-stop extension reserves positive cap/backfill activations
+beside the existing passive-corner, ordinary and critical stops in ONE
+H/Z0 ledger. Six further scoped Lean/axiom checks pass; written two-corner
+review is live and excludes that later shared-stop extension.
+Full coefficient-one allocation and grid equality remain open.
 
 The [critical return theorem](docs/CRITICAL_PHASE01_BAR_RETURNS.md) replaces
 blanket freshness with two original bar slots per phase01 owner, attained
