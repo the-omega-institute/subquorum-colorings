@@ -47,8 +47,9 @@ of the nonexceptional one-reserve AA obstruction. A maximum avoids
 assuming non-reuse against the older irregular-pair witnesses.
 Thirty new scoped Lean/axiom checks and local role/support controls
 pass; complete physical coverage of the new branches is zero and
-geometric adapters remain written. Two new independent reviews are
-pending. The remaining finite width-six closure and arbitrary grids
+geometric adapters remain written. Independent review accepts the
+four-stem core theorem; its later height-width additions are outside
+that review. The transverse review is pending. The remaining finite width-six closure and arbitrary grids
 are open; no complete allocation counterexample is supplied.
 
 The [uniform complete-source coefficient](docs/COMPLETE_SOURCE_UNIFORM_COEFFICIENT.md)

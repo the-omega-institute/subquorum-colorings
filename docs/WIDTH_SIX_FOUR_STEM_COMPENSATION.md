@@ -77,8 +77,23 @@ endpoint-disjoint owner against B. Matching zeta to a rotor role fixes
 the translation, so this is exhaustion over ALL translations, not a
 bounded search. The executable and Lean tables are supplied separately.
 
+Here is the rotor exclusion directly. Normalize its central square as
+C={0,1}x{0,1}. The two endpoint forms are
+C union{(-1,0),(0,2),(2,1),(1,-1)} and
+C union{(-1,1),(1,2),(2,0),(0,-1)}, up to translation.
+Quarter-turns preserve each form and reflection interchanges them.
+A central rotor point has three original endpoint neighbors, so cannot
+fit at zeta with up and left blocked. An outer tip with central neighbor
+right has its central square in columns4,5 and contains(2,5).
+With central neighbor down, a square in columns2,3 hits(3,2).
+A square in columns3,4 and rows3,4 must have its north tip on the
+upper-left corner; that pinwheel form has its east tip at(3,5).
+Each is a foreign original endpoint. These alternatives exhaust the
+two rotor forms. At eta below, only a downward central neighbor is
+available, and its central square hits(3,3) or(3,5).
+
 For a U owner, up and left from zeta are foreign endpoints. Every
-interior bar point has at least three own endpoint neighbors, and each
+interior bar point and lower bar corner has three own endpoint neighbors, and each
 nonterminal stem point has opposite own endpoint neighbors; both roles
 are excluded. At an upper bar corner only right and down can be its two
 own directions. A rightward bar collides with (2,5). A downward bar has
@@ -104,10 +119,14 @@ source consumes V's original supports later.
 
 ## 4. Mandatory support forces a second intermediate U
 
-R's original terminal has exterior support eta=(2,4). This is an
+R's original terminal has exterior support eta=G_k(k,0)=(2,4). This is an
 original selection of R and not an endpoint of O,L,R,V. It neighbors
 R's tip(2,5) and V's tip(2,3), two persistent endpoints. Complete support
 retention therefore forces eta into final P. Let W be its original owner.
+None of O,L,R has an endpoint at eta by its displayed stems and bar.
+V has near stem in column3, far stem in column v+2>=8 and bar in
+rows d+1,d+2, so it also does not own eta. Thus W differs from all
+four already identified sources before any endpoint-disjointness argument.
 
 The three sites above, left and right of eta are foreign endpoints:
 (1,4) belongs to O, (2,3) to V, and (2,5) to R. A U endpoint with only
@@ -221,9 +240,14 @@ output/four-stem-compensation-controls.json. Reproduce controls with:
 python3 develop/check_four_stem_compensation.py --output output/four-stem-compensation-controls.json
 ```
 
-Independent core review fdbb068e-1440-4879-9155-f0d6effb6a0a remains
-dispatched in conv_6e1ca1bc5c0d8141, original stream40409. The later
-height-width additions are outside that request. No verdict is inherited
-from the accepted support-chain theorem.
+Independent core review fdbb068e-1440-4879-9155-f0d6effb6a0a completed
+ACCEPT at2026-10-20T05:14:02.450UTC, observed gpt_6/pro. Original
+stream40409 exits0/DONE and exactly matches the14541-character terminal
+response. It accepts the written four-owner/support forcing, J>=u8,
+all-reserve gap-eight class and gap-ten residual under the supplied
+complete-source dependencies. Its self-contained rotor and owner/support
+exposition clarifications are incorporated above. It does not certify
+executions or physical realizability. Later height-width additions remain
+outside that request. See output/four-stem-compensation-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
