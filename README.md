@@ -772,8 +772,22 @@ excess events by a vertex-edge-face identity, leaving two units per
 component. All-negative fusions attain equality in reserve; a complete
 all-parameter family shows why source mass alone is insufficient.
 Six owner tables, eight all-index support-role calculations,59 physical
-controls and18scoped Lean declarations/axiom audits pass. Finite descent,
+controls and19scoped Lean declarations/axiom audits pass. Finite descent,
 the general rectangle proof and geometric adapters remain written.
-Independent reviewd8ed1445 is dispatched for this theorem; it is outside
-the earlier ACCEPT. Unrestricted mixed-source payment and the
+Independent reviewd8ed1445 completed ACCEPT for this written theorem;
+event, optional-selection and proof-dependency clarifications are implemented.
+The exact reserve is 2cminus+Cother, with nonnegative other-tile credit.
+See the [review assessment](docs/reviews/2026-10-20-rotor-only-reserve-accepted-assessment.md).
+Unrestricted mixed-source payment and the
 rectangular-grid triple equality remain open.
+
+A [positive U cap obstruction](docs/POSITIVE_U_CAP_NONCOMPLETION_OBSTRUCTION.md)
+excludes one specific attempted termination of the forbidden rotor chain,
+even with arbitrarily many further U sources of any permitted dimensions
+and arbitrary rotor images. A universal four-site stencil blocks every U
+owner; the unique remaining rotor closes a two-site cavity which cannot
+contain a complete new source. The general noncompletion proof is written;
+13 scoped Lean declarations and individual axiom audits pass, including
+the all-dimension/eight-orientation U stencil theorem. Exact geometry and
+27 dimension/216 isometry controls pass. This excludes that partial seed,
+not every cap or the mixed-source target. It has a separate review scope.

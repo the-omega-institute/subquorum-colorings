@@ -179,6 +179,13 @@ theorem all_negative_exact_reserve (mass credit irregular vertices edges faces c
     (heuler : vertices-edges+faces = components) :
     mass+credit-irregular = 2*components := by omega
 
+theorem exact_other_credit (mass credit irregular vertices edges faces components otherCredit : Int)
+    (hmass : mass = 2*vertices)
+    (hevents : irregular = 2*edges)
+    (hcredit : credit = 2*faces+otherCredit)
+    (heuler : vertices-edges+faces = components) :
+    mass+credit-irregular = 2*components+otherCredit := by omega
+
 theorem ambient_slack (slack mass credit irregular components : Int)
     (hledger : mass+credit-irregular ≤ slack)
     (hreserve : 2*components ≤ mass+credit-irregular) :

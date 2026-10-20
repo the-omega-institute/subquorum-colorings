@@ -19,10 +19,14 @@ The original four matching edges join each outer endpoint to its adjacent
 central endpoint, as in develop/rotor_networks.py. All lattice isometries,
 integer translations, effective phases and both chiralities are allowed.
 Original endpoint sets are pairwise disjoint. Final P and M are exactly
-the original unions; final T is the union of all original selections
-minus P. The complete final retained-support union is feasible. Optional
-selections are outside every original receiver and have no endpoint
-neighbor. All sources and the ambient even-by-even rectangle are finite.
+the original unions. Write
+
+    T=(union_i T_i minus P) union Topt,
+
+where optional Topt is outside every original receiver and has no endpoint
+neighbor. Require this complete final retained-support union to be feasible.
+The admitted ledger below applies to this final T, including Topt. All
+sources and the ambient even-by-even rectangle are finite.
 
 A rotor has charge-2 or zero. Each negative rotor has a unique aligned
 full central tile. Form a graph on the negative rotors, joining two when
@@ -34,7 +38,8 @@ established original-owner notation, S=2Rminus, G=N=0 and
 
 We prove
 
-    S+C-Kirregular >= 2cminus,
+    S+C-Kirregular = 2cminus+Cother >= 2cminus,
+    Cother=sum_{Q not a negative-component face} c_Q >=0,
     sigma=mn/2-|T|-|M| >= 2cminus.                    (1)
 
 If every source is negative, equality holds in the first line. The
@@ -43,6 +48,12 @@ This proves coefficient one, improving5/6 by |M|/6 in this class,
 without restricting the zero-rotor phases or the number of negative
 rotors. It does not settle arbitrary mixed U/rotor fusions or the
 rectangular-grid triple equality.
+
+Every event retains its ORIGINAL endpoint tail. It records that tail's
+unique original intratile blank becoming a foreign original endpoint.
+An irregular event has original1P1T profile; Kregular(Q) uses the original
+endpoint-bearing regular profiles in Q. Extra source selections consumed
+inside Q do not create another endpoint owner or another regular event.
 
 ## 2. Complete sixteen-role ownership, with no translation cutoff
 
@@ -116,8 +127,8 @@ Hence every actual irregular event is owned at its other end by a
 negative rotor of the SAME chirality with diagonally adjacent central
 tile. In particular a negative1P1T/zero3P0T full contact cannot occur:
 it would give exactly such an event with a zero-rotor owner. Thus BR=0
-for every rotor-only fusion, already sufficient for reserve by the
-half-slot theorem. The next steps prove the stronger component bound.
+for every rotor-only fusion. Sections4-5 prove reserve directly from the
+three stated established inputs, without using the half-slot theorem.
 
 ## 4. Complete supports force rectangular negative components
 
@@ -206,12 +217,18 @@ uniquely, and their diagonal adjacencies put them in one component.
 All other tiles have nonnegative residual c_Q by the established
 regular-tile theorem. Thus
 
+    C=2Fcount+Cother, Cother>=0,
     C>=2Fcount.                                     (5)
 
 No regular payment or another face uses these same two units. Since
 S=2V, (3)-(5) yield
 
     S+C-Kirregular >=2V+2Fcount-2Ecount=2cminus.
+
+Keeping Cother gives the exact identity
+
+    S+C-Kirregular=2V+2Fcount+Cother-2Ecount
+                 =2cminus+Cother.
 
 The established ledger gives the second part of (1). If all sources
 are negative, every new mixed full tile must consist of four ports;
@@ -236,6 +253,8 @@ set is described as follows, with coordinates translated by h(i,j).
 |(3,0),(4,1)|j=b-1|(3,1)|
 
 These formulas have an exact finite-role proof for all integer indices.
+This explicit family uses Topt=empty; its cardinality and ambient-slack
+formulas below include exactly the retained original supports.
 A displacement(row,column) equals h(delta_i,delta_j) precisely when
 row+column and row-column are divisible by4; its indices are then
 ((row+column)/4,(row-column)/4). Differences E-E and T-T give no
@@ -279,8 +298,8 @@ components with zero rotors and a genuine negative/zero support contact.
 The finite fixture sizes do not prove the universal theorem; Sections2-6
 give its ownership, finiteness, rectangle and arbitrary-parameter proofs.
 The underlying ledger and tilewise regular payment are established inputs.
-Eighteen Lean declarations and individual axiom audits pass locally with
-Lean4.33.0, one job and47% free memory at audit preflight. They check the
+Nineteen Lean declarations and individual axiom audits pass locally with
+Lean4.33.0, one job and44% free memory at the current audit preflight. They check the
 six complete16-role tables and forced-support obligations, original degrees,
 quarter invariance, port geometry, diagonal event counts, exact support-role
 displacements and conditional Euler/reserve/slack arithmetic. No
@@ -294,8 +313,12 @@ The candidate argument originated in exploratory taskf629ba4e. This note
 reconstructs and checks its missing ownership, support and rectangle steps.
 It is outside the earlier separated, general-defect and half-slot review
 scopes; no previous ACCEPT is claimed to cover it. Independent review
-d8ed1445-df3a-4a57-af3c-c685f6d3eef3 inconv_8ea87be5d39c5eaa is
-dispatched on original stream35800; no verdict is claimed while it is live.
+d8ed1445-df3a-4a57-af3c-c685f6d3eef3 inconv_8ea87be5d39c5eaa completed
+ACCEPT at00:43:51.859UTC, observed gpt_6/pro. Original stream35800 exits0,
+ends DONE and matches all17864 terminal response characters exactly.
+Its standalone event-definition, unused half-slot dependency and optional
+selection clarifications are implemented above. Execution checks remain
+separate; normalization/descent/rectangle/event-face geometry are written.
 The unrestricted U/rotor joint
 allocation and general rectangular-grid problem remain open.
 
