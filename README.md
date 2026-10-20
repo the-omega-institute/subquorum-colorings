@@ -32,6 +32,23 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [charge-aware matching budget](docs/CHARGE_AWARE_COMPLETE_SOURCE_COEFFICIENT.md)
+improves the complete-source coefficient from12/13 to14/15, and from17/18
+to21/22 when no actual double-marked positive is exceptional. Original
+negative matchings cost at least their original total charge G, giving
+|M|>=9N+4e+G=10N+4e+R-mu. This counts every source once and reuses no
+defect witness. Six new scoped Lean arithmetic declarations and source/
+signed-budget controls pass; independent review is pending.
+
+The [bottom-owner lemma](docs/WIDTH_SIX_BOTTOM_OWNER_AND_WRAPPING_OBSTRUCTION.md)
+forces a sixth original owner at every unpaid full-chain width-six double.
+At clearance four/six it is a horizontal terminal; a universal all-image U
+role proof is checked in Lean. Upward wrapping is locally possible, but
+zero-defect saturation excludes it at clearance four, leaving a phase10
+continuation. Six scoped Lean declarations and local role controls pass;
+independent review is pending. These results do not settle the coupled
+finite closure, unrestricted coefficient one or arbitrary-grid equality.
+
 The [four-stem compensation theorem](docs/WIDTH_SIX_FOUR_STEM_COMPENSATION.md)
 extends the all-reserve coefficient-one class to positive width-six U
 sources with leg-height difference at most eight, leaving all negative
