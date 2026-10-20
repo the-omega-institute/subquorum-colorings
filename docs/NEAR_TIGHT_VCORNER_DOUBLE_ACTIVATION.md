@@ -325,4 +325,10 @@ See the [initial review](../output/near-tight-vcorner-review-response.md),
 [accepted repair](../output/near-tight-vcorner-repair-response.md) and
 [final receipt](../output/near-tight-vcorner-repair-review.json).
 
+A subsequent [gap-eight adjacent-band note](GAP_EIGHT_ADJACENT_BAND_EXITS.md)
+proves further endpoint consumption in the east-terminal branch, including
+simultaneous consumption of two adjacent supports at a matched return.
+That propagation result has its own written/finite-control scope; the reviews
+above do not cover it, and it adds no activation or reserve to this ledger.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
