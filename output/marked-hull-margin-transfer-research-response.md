@@ -201,4 +201,3 @@ $$2\mu(J)
 -\sum\ell+\sum g.
 \tag{22}$$
 No source or demand class has been excluded from the unresolved step.I therefore do not claim that these results prove the target. Nor did the exploratory physical completion work produce a complete negative-margin family; finite exclusions and a stalled completion attempt supply no unrestricted verdict.The advances justified here are the full-family component theorem, its one-use reserve-loss bound, the universal vanishing of  $d_s$ , and exact physical compression of long interfaces. A proof that the remaining capacities pay marked demand once—or a complete compressed configuration with  $\mu<0$ —is still needed. Even the latter would be an allocation counterexample; a grid counterexample would additionally require actual negative ambient slack, which these reductions do not establish.
-
