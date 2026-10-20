@@ -4,8 +4,10 @@ Update20October: the cap assignment, positive-cap exclusion in AA and
 typed-continuation simultaneous count are now reconstructed in
 CAP_CONTINUATION_ORIGINAL_OCCURRENCE_BUDGET.md, with15 scoped Lean checks
 and641 feasible controls. Its all-contact Epair form is stronger than the
-initial motif count. Independent initial review760d11e0 is running; the
-later Epair extension needs follow-up. The all-owner path classification
+initial motif count. Initial review760d11e0 ACCEPTS; follow-upf8944cd2
+accepts the extension after explicitly restricting Epair to the original
+U-only singleton pool and fixing the AA equation reference, now applied.
+Negative rotor singletons are excluded from that sharp count. The all-owner path classification
 and global split-transfer closure below still remain unverified leads.
 
 20 October 2026. This records proposals from completed Oracle research

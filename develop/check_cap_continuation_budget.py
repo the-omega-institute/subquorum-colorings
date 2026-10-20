@@ -1,4 +1,4 @@
-"""Original-occurrence controls for cap fills and paired continuations."""
+"""Original U singleton-pool controls for cap fills and paired continuations."""
 
 import argparse
 from collections import Counter

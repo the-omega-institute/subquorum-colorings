@@ -41,13 +41,14 @@ Both tips and corners below refer to their original owners.
 
       (r,col) -> (D+2-r,col+1) on U(w-2,D,D),
 
-  for an even D>=4. The full source, not just its two points, is required.
+  for an even D>=4, so w>=8. The full source, not just its two points, is required.
 - i counts those same parents for which the points (2,3),(2,w-2) are the
   outer bar corners of a common phase10 source
 
       (r,col) -> (r+2,col+2) on U(w-4,a',b'),
 
-  with legal independent heights. Thus i<=c. Parents can have arbitrary
+  with legal independent heights, so w>=10. Thus i<=c. Count each original
+  parent once in each applicable count. Parents can have arbitrary
   other contacts; the intermediate or child owners are not assumed fresh.
 
 These definitions count the proposed outer and indirect motifs precisely.
@@ -67,10 +68,12 @@ the existing exact identity gives the more informative consequence
 
     2R >= 2Dsrc+(A-Fpos)+Z0+H.                     (3)
 
-There is a stronger source-wide form. Define Epair as the number of original
-negative singleton endpoints whose physical tile also contains an ORIGINAL
-2P0T pair of another source. Count each endpoint once, including endpoints
-at splits and contacts outside the typed motifs. Then
+There is a stronger source-wide form. Define Epair as the cardinality of the
+set of endpoints q in Pneg whose physical tile also contains another original
+owner's EXACT 2P0T profile. Here Pneg contains only original phase01 U terminal
+endpoints and phase10 U outer-corner endpoints. Negative rotor singleton
+endpoints are excluded. Count each endpoint once, including endpoints at
+splits and contacts outside the typed motifs. Then
 
     Epair>=2c+2i,
     2K11+Epair <= 2K10+2K01+Fpos+U0,               (4)
@@ -130,10 +133,11 @@ classification. It is not a search over a bounded set of translations.
 Reflection handles the other cap, and transporting the physical partition
 handles every source orientation.
 
-## 3. One pool for all negative singleton uses
+## 3. One pool for all negative U singleton uses
 
 Let Pneg be the set of original phase10 outer-corner endpoints and original
-phase01 terminal endpoints. Original endpoint disjointness gives
+phase01 U terminal endpoints; phase10 corners are also U-owned. Original
+endpoint disjointness gives
 
     |Pneg|=2K10+2K01.
 
@@ -186,7 +190,13 @@ Epair>=2c+2i. Consequently
 Here Epair reserves original endpoint slots; it does not count defect units.
 Its definition also permits a nonfull mixed triple tile. The H contribution
 of that tile remains in the existing exact identity, with no new deficit
-assigned to Epair. Substituting the cap identity proves(4)-(5).
+assigned to Epair. More explicitly, let L=|Pneg\(FnegSet union EpairSet)|.
+The disjointness just proved gives |Pneg|=Fneg+Epair+L, so the cap identity
+and exact reserve identity give
+
+    2R=2(K11-K10-K01)+Epair+(A-Fpos)+Z0+H+L.
+
+Dropping L>=0 proves(4)-(5), even when Epair and H describe the same tile.
 
 In particular negative cap fillers, the2c intermediate tips and the2i indirect
 corners are simultaneously distinct members of Pneg. With Fneg denoting
@@ -233,15 +243,17 @@ the legal minima is supplied as a conclusion premise.
 C cannot equal Rowner, since C owns(b,7) and Rowner does not. Thus their
 shared p contradicts disjoint original endpoints. Neither of the only
 two activated positive terminals can fill a phase11 cap. Consequently
-Fpos=0 throughout AA. Substituting U0=0 in the stronger first part of(1)
+Fpos=0 throughout AA. All counts and the activation census here concern the
+same endpoint component. Substituting U0=0 in(4) and then using Epair>=2c+2i
 gives the simultaneous necessary condition
 
     Epair <= 2(K10+K01-K11),
     K11+c+i <= K10+K01.                            (6)
 
 If Delta=K10+K01-K11, then c+i<=Delta and2i<=Delta. Delta=0 excludes
-every paired phase01 intermediate; Delta=1 excludes every indirect
-phase10 child. This is a census restriction, not a complete AA exclusion.
+every typed paired phase01 intermediate counted by c; Delta=1 excludes
+every typed indirect phase10 child counted by i. These exclusions do not
+classify arbitrary other contacts. This is not a complete AA exclusion.
 
 ## 5. Verification boundaries and the remaining closure
 
@@ -276,11 +288,15 @@ all have infeasible retained supports. The universal triple-arm proof has
 orbit has16 cases and incoming-stem coordinates have54 controls. None of
 these is a complete feasible AA realization.
 
-Independent review760d11e0/conv_bb89101779bbe7ba/originalstream83433 is
-running for the initial cap/typed-continuation proof and12-declaration
-snapshot. The later all-contact Epair extension and its three additional
-Lean declarations are outside that initial request; do not describe them
-as independently reviewed before a follow-up has checked them.
+Independent review760d11e0 ACCEPTS the initial cap/typed-continuation proof
+and12-declaration snapshot. Its original stream83433 failed with EOF;
+the completed response was recovered from the same task API. No successful
+stream completion is claimed. The later reviewf8944cd2 accepts the all-contact
+extension after explicitly restricting Epair to the U-only Pneg pool and
+correcting the AA equation reference; both repairs are incorporated above.
+It also supplies the exact unused-slot identity with L. Its original
+stream40411 contains DONE and matches the completed response. Neither
+review certifies local execution. See the two separate review receipts.
 
 This theorem makes the previously proposed cap count and one simultaneous
 nonreuse constraint concrete. The unrestricted compensation goal is still
