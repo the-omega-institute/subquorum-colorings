@@ -32,6 +32,17 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [uniform complete-source coefficient](docs/COMPLETE_SOURCE_UNIFORM_COEFFICIENT.md)
+improves five-sixths to12/13 for every permitted finite complete U/rotor
+fusion, with arbitrary source counts, dimensions, phases and contacts.
+When all positive dimensions are nonexceptional it improves to17/18.
+The accepted residual loss e+floor(s/2) costs at least13 matching edges
+per unit in aggregate, since exceptional doubles cost at least13 and
+other single-activation doubles at least9. This is a general written
+deduction with seven scoped Lean arithmetic checks; finite constructor
+and budget controls supplement the proof. No arbitrary-grid decomposition
+or coefficient-one theorem is claimed.
+
 The [support-chain common-pool theorem](docs/SUPPORT_CHAIN_COMPENSATION_AND_RESIDUAL_SATURATION.md)
 adds payments from broken phase11 terminal-gate chains J and unactivated
 positive exterior chains X. Their original regular pairs cannot coincide
@@ -42,8 +53,9 @@ residuals. Twelve scoped local Lean declarations/audits and769 physical
 controls pass;65 images improve the earlier bound. Broken-gate L3 stops
 after full caps have no complete fixture here; their propagation proof
 is written. A failing nonexceptional R1 component must have every
-phase11-U receiver full and no consumed exterior support on any
-unactivated positive leg. New independent review is pending. The coupled
+original endpoint-containing phase11-U receiver full and no consumed exterior support on any
+unactivated positive leg. Independent review accepts this written extension
+under its stated dependencies; all seven checks on revision374c3b7 pass. The coupled
 full-chain obstruction and unrestricted grid theorem remain open.
 
 The [width-six interleaving theorem](docs/WIDTH_SIX_TWO_GATE_INTERLEAVING.md)

@@ -196,12 +196,12 @@ has n0=z=t=0,s=2,A=2,U0=Z0=H=0. Equation(1) now forces
 So every marked phase11 gate in the entire component, including those
 on one-mark positives, has a completely full cap-to-tip chain. Also no
 positive leg with an unactivated terminal can have a consumed exterior
-regular selection. Any consumed exterior chain must reach one of the
+regular selection. Any consumed positive exterior receiver chain must reach one of the
 two already activated positive terminals. The width-six long-side gap
 >=6 and width8/10 transverse-gate restrictions still apply.
 
 A stronger source-wide consequence holds whenever U0=H=0: EVERY
-original phase11-U receiver is full. Caps are full by U0=0. Each cap
+original endpoint-containing phase11-U receiver is full. Caps are full by U0=0. Each cap
 then propagates down its complete regular leg; any nonfull stop would
 be an L3 defect, contrary to H=0. Original 2P0T bar receivers are full
 as well, because a nonfull such receiver would be L2bar or mixed L3.
@@ -255,10 +255,16 @@ review request; their proof and final receipt are public with this note.
 See output/support-chain-compensation-formal-check.json and
 output/support-chain-compensation-controls.json for the execution scope.
 
-Independent follow-upab02ff19-7f1b-4572-b1fe-653df665e06c is dispatched
-in conv_6e1ca1bc5c0d8141 through original stream14965. It assesses the
-new written chain, non-reuse, signed/component-budget and saturation
-claims; no verdict is inherited from the accepted width-six result.
+Independent follow-up ab02ff19-7f1b-4572-b1fe-653df665e06c completed
+ACCEPT at 2026-10-20T04:43:56.814UTC, observed gpt_6/pro. Original
+stream14965 ended successfully with DONE and its18458-character answer
+matches the terminal response. The review accepts the written chain,
+non-reuse, signed/component-budget and saturation claims under the
+stated complete-source dependencies. It does not certify code execution
+or an end-to-end physical formalization. A full cap starts propagation;
+when it is full, the definition of J guarantees the first nonfull receiver
+on a counted broken chain, and H=0 excludes that stopping alternative
+in the saturation consequence. See output/support-chain-compensation-review.json.
 
 An ancillary exact endpoint-cover search excludes only the10x12 rectangle;
 12x16 and20x20 returned UNKNOWN by timeout. These latter results exclude
@@ -275,7 +281,7 @@ The chain idea was proposed in exploratory Oracle taskc112d2fe. This
 note reconstructs its support propagation under the current exact
 geometric defect identity, and adds the disjoint combination with the
 accepted irregular-pair witnesses, the J/X shared budget and component
-rounding. A new review must assess these additions; previous ACCEPT
-verdicts do not cover them.
+rounding. The independent follow-up above assesses these additions;
+previous ACCEPT verdicts alone do not cover them.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
