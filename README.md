@@ -790,4 +790,17 @@ contain a complete new source. The general noncompletion proof is written;
 13 scoped Lean declarations and individual axiom audits pass, including
 the all-dimension/eight-orientation U stencil theorem. Exact geometry and
 27 dimension/216 isometry controls pass. This excludes that partial seed,
-not every cap or the mixed-source target. It has a separate review scope.
+not every cap or the mixed-source target. Separate review9a35516b completed
+ACCEPT for the all-parameter written noncompletion proof and its adapters;
+see the [assessment](docs/reviews/2026-10-20-positive-U-cap-accepted-assessment.md).
+
+The later [width-eight cap theorem](docs/WIDTH_EIGHT_U_CAP_NONCOMPLETION.md)
+also rules out a cap for which a U owner DOES fit at the first forced
+support. A general endpoint-role lemma forces that owner's four-step
+stem and a further original support. Both the U and rotor ownership
+branches then force the same second site, which has no permitted owner.
+The new six-site corridor exclusion applies to all U dimensions and
+isometries.30 dimension/240 isometry controls check8768 endpoints.
+Its16 universal coordinate/local declarations and individual axiom audits
+pass locally. The general source-image/support adapter and noncompletion
+assembly remain written. This later theorem is outside previous ACCEPTs.

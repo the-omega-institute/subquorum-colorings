@@ -139,8 +139,8 @@ and independently checked here. Its completed response is archived in
 output/actual-joint-reserve-research.json. The separate rotor-only
 propagation theorem has now been reconstructed in
 ROTOR_ONLY_RESERVE_AND_RECTANGULAR_COMPONENTS.md, with exact owner/support
-checks and18scoped Lean declarations. It is outside this note's review
-scope and needs its own independent assessment. No manuscript,
+checks and19scoped Lean declarations. Its separate written-proof review
+d8ed1445 completed ACCEPT; that scope is distinct from this note. No manuscript,
 email or draft is changed by this research update.
 
 Review5005a44b completed ACCEPT for this note's written half-slot proof,

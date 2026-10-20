@@ -98,7 +98,7 @@ role. Hence every purported feasible extension contains(3).
 ## 4. A closed cavity excludes every further source
 
 After adjoining the forced rotor(3), the original endpoint union has50
-sites, still disjoint. Its old selection q=(-2,-4) has persistent endpoint
+sites, still disjoint. The original selection q=(-2,-4) of that rotor has persistent endpoint
 neighbors(-3,-4) and(-2,-3), so q must also become a foreign endpoint.
 
 But q belongs to the two-site set
@@ -117,6 +117,10 @@ removed. This is a local separating barrier; no ambient search box is
 involved.
 
 The original endpoint set of any permitted new source is connected.
+For a rotor the four central endpoints form a square and each outer
+endpoint touches that square. For a U the two-row bar is connected and
+each stem is a path attached to its lower bar corner. Isometries preserve
+this nearest-neighbor endpoint connectivity.
 If it contained q and an endpoint outside H, a path in that source's
 own endpoint set would have a first step leaving H. That step meets one
 of the six known foreign endpoints, contradicting original endpoint
@@ -166,8 +170,19 @@ joint allocation or coefficient one: no feasible extension of this seed
 exists at all. The remaining mixed-source research must find a different
 complete cap or prove that all such caps pay the joint budget.
 
-This new obstruction is outside the completed rotor-only review scope.
-No prior ACCEPT covers its additional U argument. No manuscript, email,
+For the coordinate adapter, write an arbitrary image as f(x)=t+Ax. If
+p=f(e), then f-inverse(p+delta)=e+A-inverse(delta). The rootOffset Boolean
+triples enumerate every signed coordinate permutation, including A-inverse;
+therefore the universal stencil theorem applies to every physical owner.
+
+Separate review9a35516b-c22c-4bae-9f36-3b92bfc10ca1 completed ACCEPT at
+01:05:16.727UTC, observed gpt_6/pro. Original stream89345 exits0/DONE and
+matches all15399 terminal response characters. It accepts the unbounded
+extension theorem, complete owner exhaustion, optional-selection argument
+and the written isometry/connectivity/cardinality adapters. Its two minor
+presentation suggestions are implemented above. Execution checks remain
+separate. Later width-eight cap work and the mixed joint target are outside
+this ACCEPT. No manuscript, email,
 draft or shared CI change is part of the result.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
