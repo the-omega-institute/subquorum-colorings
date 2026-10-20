@@ -32,6 +32,18 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [closed neutral receiver theorem](docs/CLOSED_NEUTRAL_RECEIVER_SEPARATION.md)
+proves that closed phase01 contacts force distinct physical receiving tiles,
+including full ones. Both opposite endpoints of each full receiver avoid all
+closed phase01 owners and remain in the same full endpoint component. The exact
+outside count is2*C01-Jc; the same-component AA specialization requires at least
+eight distinct outside endpoint positions per closed curve. These positions may
+share owners and do not become fresh reserve. Eleven scoped Lean declarations
+and640complete controls pass; those controls have zero complete closed01-contact
+coverage, recorded explicitly. The endpoint-disjoint four01 partial polygon has
+four distinct receivers/eight prescribed positions but is infeasible. General
+finite allocation and grid equality remain open; independent review is separate.
+
 The [neutral-support injection and any-pair budget](docs/DISTINCT_NEUTRAL_SUPPORTS_AND_ANY_PAIR_BUDGET.md)
 prove that distinct neutral phase01 contacts force distinct original endpoint
 positions, even across different port components. Those endpoints avoid every

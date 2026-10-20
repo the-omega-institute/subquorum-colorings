@@ -182,6 +182,13 @@ ensures these reservations do not repeat across neutral contacts or components.
 Not every forced z belongs to Pneg, and different original owners of the same
 type are not automatically new budget resources. Those exits remain to classify.
 
+The later [closed-receiver separation theorem](CLOSED_NEUTRAL_RECEIVER_SEPARATION.md)
+proves that the forced physical receivers of closed-component contacts are also
+distinct, even when full. A full receiver's other opposite endpoint likewise
+avoids every closed phase01 owner, yielding at least eight outside endpoint
+positions per AA closed component. That later result has separate validation
+and is outside this note's initial independent-review snapshot.
+
 Equation(4) is stronger than the earlier cap inequality by exactly |E1reg| in
 the lower bound for2R with the other terms retained. It supplies configuration
 constraints, not a new uniform coefficient replacing the accepted complete-source
