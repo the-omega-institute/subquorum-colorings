@@ -152,6 +152,14 @@ a coincidence. These are compatible partial stencils, not complete feasible
 configurations or counterexamples to a stronger geometric statement. One
 cannot add the critical-point count to |X| using the present proof.
 
+The later [complete original-owner argument](ALL_CRITICAL_REGULAR_RECEIVER_SEPARATION.md)
+now excludes the apparent coincidence for ALL critical owners, including
+rotors. It proves that critical receiving tiles avoid ALL first/LONG
+receivers, while not claiming critical-to-critical tile injection. Its
+independent review and formal validation are recorded separately. Its new
+exact ledger separates critical exits outside chosen closed owners from
+returns through their original full bar tiles.
+
 A subsequent [complete six-source certificate](CRITICAL_CLOSED_OWNER_COUNTEREXAMPLE.md)
 shows a different, stronger obstruction to blanket critical closed-owner
 exclusion: a critical second point can be an original full-bar corner of

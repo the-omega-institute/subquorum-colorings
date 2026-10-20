@@ -32,6 +32,18 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [critical return theorem](docs/CRITICAL_PHASE01_BAR_RETURNS.md) replaces
+blanket freshness with two original bar slots per phase01 owner, attained
+by a complete seven-source family with two returns into ONE closed owner.
+The [ALL-critical separation proof](docs/ALL_CRITICAL_REGULAR_RECEIVER_SEPARATION.md)
+then excludes every critical point from every first/LONG receiving tile,
+using complete U/rotor ownership beyond endpoint tags. External exits and
+closed full-bar returns now have an exact joint endpoint ledger with one
+shared H pool. Nineteen new scoped Lean/axiom checks pass;112 complete
+images include216 critical returns and104 two-return owners. The general
+family has a written source/row-table proof. Independent audits are live.
+Original full tiles are not fresh reserve; unrestricted allocation remains open.
+
 The [all-first/LONG receiver theorem](docs/FULL_FIRST_AND_LONG_RECEIVER_INJECTION.md)
 now has independent written-proof ACCEPT: distinct physical receivers, including
 full ones, give an exact joint endpoint count and share the existing H pool.

@@ -121,6 +121,14 @@ not decided by this configuration.
 
 ## 5. Verification and coverage
 
+The subsequent [critical return theorem](CRITICAL_PHASE01_BAR_RETURNS.md)
+identifies every phase01 return as an original outer bar corner, with two
+distinct physical slots per original owner. A complete seven-source family
+uses BOTH slots of the same closed owner for every even ambient width
+W>=20 in its stated parameterization. The correct replacement permits
+returning owners and tracks their labelled slots; it does not restore the
+false blanket exclusion refuted here.
+
 [`check_critical_closed_owner_counterexample.py`](../develop/check_critical_closed_owner_counterexample.py)
 reconstructs the six existing source constructors and independently compares
 them to the explicit matching/support formulas above. It checks feasibility,
