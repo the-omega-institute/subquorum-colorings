@@ -163,8 +163,10 @@ with Lean4.33.0. Together with the seven shared-budget theorems, all25 scoped
 axiom prints pass using only propext, Quot.sound and, where reported,
 Classical.choice. The execution receipt is
 [`phase11-critical-shared-budget-formal-check.json`](../output/phase11-critical-shared-budget-formal-check.json).
-Independent same-conversation review task88c8a838-d1cb-407b-a50f-6ef7ef3f9492
-is pending; it is not yet independent acceptance of this extension.
+Independent review task88c8a838-d1cb-407b-a50f-6ef7ef3f9492 ended with a terminal
+typing infrastructure failure and no mathematical verdict. A shorter replacement
+in the same conversation includes [the full-receiver extension](FULL_FIRST_AND_LONG_RECEIVER_INJECTION.md);
+its review status is recorded separately. No acceptance is inferred from failure.
 
 `NeutralPhaseElevenCritical.lean` proves the opposite-leg profile, critical
 far-stem collision/height bound, active bar stencil and blank, degree-one

@@ -114,10 +114,11 @@ endpoint component as their original contact: their active pair lies on the
 same connected original phase01 source, and y is adjacent to that pair.
 This forces further original endpoints; it does not create extra H reserve.
 
-No claim is made here that all FULL first and second receivers are distinct.
-That would require a whole-owner exclusion for these second points analogous
-to the closed-first-receiver theorem. The nonfull proof above alone cannot
-justify that stronger statement.
+The nonfull proof above alone does not prove full receiver separation.
+The later [four-endpoint argument](FULL_FIRST_AND_LONG_RECEIVER_INJECTION.md)
+does establish it for ALL first and LONG second receivers, and extends the
+whole-owner exclusion. Critical second points remain outside that receiver
+injection and cannot simply be added to its opposite-endpoint count.
 
 ## 5. Validation and scope
 
@@ -125,8 +126,10 @@ All seven scoped theorems compile locally with Lean4.33.0 and their axiom
 prints pass; the combined25-theorem receipt is
 [`phase11-critical-shared-budget-formal-check.json`](../output/phase11-critical-shared-budget-formal-check.json).
 The AA formal statement uses the direct H pool, preserving A and B.
-Independent same-conversation review task88c8a838-d1cb-407b-a50f-6ef7ef3f9492
-is pending; local validation does not imply independent acceptance.
+Independent review task88c8a838-d1cb-407b-a50f-6ef7ef3f9492 ended with a terminal
+typing infrastructure failure and no mathematical verdict. A shorter same-conversation
+replacement includes the later full-receiver extension. Local validation does
+not imply independent acceptance.
 
 `formal/SubQuorum/NeutralSecondStopBudget.lean` proves the exact nonfull-pair
 owner catalogue, receiver injection using original support uniqueness,
