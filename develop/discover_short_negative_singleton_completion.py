@@ -3,6 +3,7 @@ import itertools
 import json
 import time
 from collections import defaultdict
+from pathlib import Path
 
 import z3
 from check_demand_hull_reserve_obstruction import independent_source
@@ -16,6 +17,11 @@ parser.add_argument('--companion', choices=['H', 'E', 'S', 'S6'], default='H')
 parser.add_argument('--maximum-width', type=int, default=12)
 parser.add_argument('--maximum-leg', type=int, default=8)
 parser.add_argument('--maximum-additions', type=int, default=10)
+parser.add_argument('--seed-json')
+parser.add_argument('--lower-row', type=int, default=-6)
+parser.add_argument('--lower-column', type=int, default=-6)
+parser.add_argument('--upper-column', type=int, default=22)
+parser.add_argument('--timeout-seconds', type=int, default=90)
 arguments = parser.parse_args()
 if arguments.companion == 'H':
     specifications = [((12, 4, 4), (False, False, False), (0, 0)),
@@ -34,11 +40,15 @@ else:
                       ((8, 8, 4), (False, True, False), (11, 1)),
                       ((arguments.cross_width, 10, 4), (True, True, False), (1, 12)),
                       ((6, 4, 4), *companion_frame)]
+if arguments.seed_json:
+    specifications = json.loads(Path(arguments.seed_json).read_text())['specifications']
 seed = [independent_source(*specification) for specification in specifications]
 fixed = set().union(*(record[0] for record in seed))
 assert len(fixed) == sum(len(record[0]) for record in seed)
-lower = (-6, -6)
-upper = (arguments.upper_row, 22)
+lower = (arguments.lower_row, arguments.lower_column)
+upper = (arguments.upper_row, arguments.upper_column)
+assert all(lower[axis] <= point[axis] <= upper[axis]
+           for record in seed for point in record[0] | record[1] for axis in (0, 1))
 library = []
 seen = set()
 for dimensions in itertools.product(range(6, arguments.maximum_width+1, 2),
@@ -74,7 +84,7 @@ for index, (_, endpoints, supports) in enumerate(library):
 endpoint = {point: z3.Or(point in fixed, *endpoint_cover[point]) for point in points}
 occupied = {point: z3.Or(point in fixed_occupied, *occupied_cover[point]) for point in points}
 solver = z3.Solver()
-solver.set(timeout=90000)
+solver.set(timeout=1000*arguments.timeout_seconds)
 solver.add(z3.PbLe([(choice, 1) for choice in chosen], arguments.maximum_additions))
 for point in points:
     if endpoint_cover[point]:
@@ -84,7 +94,10 @@ for point in points:
 print('solving', round(time.monotonic()-started, 2), flush=True)
 status = solver.check()
 result = dict(status=str(status), candidates=len(library), seconds=round(time.monotonic()-started, 2),
-              source='Finite discovery only; UNSAT excludes this bounded library only.')
+              lower=lower, upper=upper, maximum_width=arguments.maximum_width,
+              maximum_leg=arguments.maximum_leg, maximum_additions=arguments.maximum_additions,
+              seed_json=arguments.seed_json,
+              source='Finite U-only discovery; UNSAT excludes this bounded library only, not arbitrary U/rotor extensions.')
 if status == z3.sat:
     model = solver.model()
     selected = [specification for choice, (specification, _, _) in zip(chosen, library)

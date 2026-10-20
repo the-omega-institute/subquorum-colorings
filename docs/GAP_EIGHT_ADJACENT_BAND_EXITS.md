@@ -121,4 +121,9 @@ selected/endpoint assignments; only simultaneous consumption survives this
 two-support test. The receipt is
 [gap-eight-adjacent-band-controls.json](../output/gap-eight-adjacent-band-controls.json).
 
+The later [tight-band compensation and general-width extension](TIGHT_GAP_EIGHT_BAND_COMPENSATION.md)
+classifies the omega=V-4 exit and supplies a joint activation transfer for
+two positive terminal roles at all omega<=V-4. Its validation and review have
+separate scopes; this propagation lemma alone does not establish those credits.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

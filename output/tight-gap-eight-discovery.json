@@ -1,0 +1,30 @@
+{
+  "status": "BOUNDED_UNSAT",
+  "command": "uv run --with z3-solver python develop/discover_short_negative_singleton_completion.py 18 32 --seed-json output/tight-gap-eight-discovery-seed.json --lower-row -8 --lower-column -8 --upper-column 30 --maximum-width 10 --maximum-leg 8 --maximum-additions 16 --timeout-seconds 90",
+  "execution_session": 99451,
+  "exit_code": 0,
+  "candidate_generation_seconds": 1.57,
+  "encoding_and_generation_seconds": 41.73,
+  "solver_timeout_seconds": 90,
+  "result": {
+    "status": "unsat",
+    "candidates": 36137,
+    "seconds": 41.75,
+    "lower": [
+      -8,
+      -8
+    ],
+    "upper": [
+      32,
+      30
+    ],
+    "maximum_width": 10,
+    "maximum_leg": 8,
+    "maximum_additions": 16,
+    "seed_json": "output/tight-gap-eight-discovery-seed.json",
+    "source": "Finite U-only discovery; UNSAT excludes this bounded library only, not arbitrary U/rotor extensions."
+  },
+  "seed_scope": "Six fixed endpoint-disjoint original A/B/C/X/E/D sources; complete extension NOT established.",
+  "meaning": "No completion in this bounded U-only candidate library. Does not exclude arbitrary U dimensions,rotors,larger windows or more added sources; cannot establish general nonexistence or vacuity.",
+  "environment": "Initial plain python3 invocation failed because z3 was absent; reran with temporary uv z3-solver dependency. No shared environment or repository dependency changes."
+}
