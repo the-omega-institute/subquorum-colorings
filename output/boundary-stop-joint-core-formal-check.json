@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac selected by user",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/BoundaryStopAndJointCore.lean",
+  "source_check_and_object_build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "total_file_declarations": 14,
+  "preflight": {
+    "memory_free_percent_before_object": 42,
+    "memory_free_percent_before_audit": 39,
+    "active_lean_lake_before_object": [],
+    "active_lean_lake_before_audit": [],
+    "process_enumeration": "Both ordinary and -c macOS ps comm, using exact basename lean/lake; ordinary output may truncate toolchain paths."
+  },
+  "declarations": [
+    {"name": "U_endpoint_stop_roles", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"name": "U_boundary_stop_roles", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"name": "corner_even_tile_profile", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"name": "both_core_tip_predecessors_point_down", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"name": "near_far_core_bar_directions", "axioms": ["propext"]},
+    {"name": "unique_rotor_stop", "axioms": []},
+    {"name": "rotor_stop_has_consumable_lower_support", "axioms": []},
+    {"name": "rotor_stop_original_triple", "axioms": []},
+    {"name": "last_point_south_is_not_original_support", "axioms": []},
+    {"name": "rotor_stop_must_reach_terminal", "axioms": ["propext", "Quot.sound"]},
+    {"name": "even_stop_is_rotor", "axioms": []},
+    {"name": "odd_corner_incident_clearance", "axioms": ["propext", "Quot.sound"]},
+    {"name": "mutual_near_tip_identification", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"name": "two_cores_cannot_supply_both_stops", "axioms": ["propext", "Quot.sound"]}
+  ],
+  "forbidden_axioms_absent": true,
+  "warning": "One unused Prod.mk.injEq simp argument in near_far_core_bar_directions; no errors.",
+  "scope": "Universal U role classification from endpoint/support predicates, corner profile, core predecessor/bar coordinates, exact16-role rotor catalogue, retention implication and conditional integer/coordinate deductions. Physical maximum existence, phase/saturation and cross-core near/far ownership adapters remain written. No complete AA fixture or global closure theorem."
+}

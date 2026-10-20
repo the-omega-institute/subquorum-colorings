@@ -164,7 +164,11 @@ forced exterior selections; all248 parity-compatible activation/pool budgets
 give R>=2. No complete feasible new physical fixture is claimed.
 See output/positive-bottom-owner-reserve-formal-check.json and
 output/positive-bottom-owner-reserve-controls.json. Independent audit
-a7e79d96/conv_0c83fc4e281c2a91/original83141 is live; no ACCEPT verdict
-for this additional theorem is claimed yet.
+a7e79d96 completed ACCEPT at2026-10-20T06:06:04.856UTC, observed gpt_6/pro,
+12875characters. Original stream83141 exited0 with DONE and exactly matches
+the same task's terminal response. The audit accepts the unbounded geometry,
+the distinct original-leg A/X occurrences and R>=2 under the stated
+complete-source/common-pool hypotheses. It does not certify executions or
+negative-source finite closure. See output/positive-bottom-owner-reserve-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
