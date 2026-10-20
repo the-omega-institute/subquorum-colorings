@@ -66,13 +66,13 @@ The site 3 cannot remain selected beside endpoints 1 and 2, so it also
 is an endpoint. A foreign 2P1T profile at 2 must have its other endpoint
 at 3: the alternative adjacent corner 0 has the negative owner. This
 again forces selection 1 to become an endpoint. A foreign 4P0T profile
-would overlap corner 0 and is impossible. Thus Q is full.
+would overlap corner 0 and is impossible. Thus Q is a new mixed full tile.
 
 For 2P0T normalize the negative endpoints to 0,1 and an event target to
 2. A foreign 1P2T profile at 2 occupies corner 3 as an original selection;
 it cannot remain selected because it sees the two distinct endpoints 1
 and 2. A foreign 2P1T profile must have its other endpoint at 3, while
-4P0T again overlaps the negative owner. Q is full in every case.
+4P0T again overlaps the negative owner. Q is new mixed full in every case.
 
 These arguments use persistent occupancy of every original selection,
 including a selection consumed by an endpoint. They do not assume that
@@ -88,8 +88,9 @@ Use the established original-owner ledger
 The last inequality is tilewise by the regular-tile theorem. In an
 irregular-event tile, (H) leaves either one or two negative endpoints.
 The remaining endpoint owners are GOOD. An owner with a singleton
-1P2T profile has no original intratile blank and contributes no regular
-event. There can be at most one owner with a 2P1T profile in the remaining
+1P2T profile has no original intratile blank adjacent to its endpoint:
+its only blank is diagonal, so it contributes no regular event.
+There can be at most one owner with a 2P1T profile in the remaining
 corners, and it contributes at most one regular event. A 4P0T owner
 cannot coexist with the negative endpoint. Consequently Kregular(Q)<=1
 and c_Q>=1 whenever an irregular event occurs in Q.
@@ -112,8 +113,9 @@ unit, independent of the number of endpoints or possible event slots.
 Let A count marked-side assignments to phase-(1,1) upper bar corners.
 The all-phase injection proves that the corresponding gate stays blank,
 so that tile is not full. Section 2 then excludes every irregular event
-there. There is at most one such upper corner per 2P0T bar tile, and
-distinct marked sides have distinct original donor tiles. Therefore a
+there. There is at most one such upper corner per 2P0T bar tile.
+Endpoint injection prevents corner reuse, and (H) separates upper
+corners belonging to different negative owners. Therefore a
 bar tile used for an A assignment costs one reservation unit and no
 irregular-event unit. In a bar tile without an A assignment use (3).
 Summing (2)-(3) and these mutually exclusive uses gives
@@ -182,9 +184,14 @@ See output/separated-negative-compensation-formal-check.json and
 output/separated-negative-compensation-controls.json for execution scope.
 
 Independent review task70a45736-9bc5-4b3b-ba71-38215e198023 in
-conversation conv_7a76379ee5f4fe05 is dispatched on original stream79182.
-No final ACCEPT is claimed while it is live. The earlier all-phase ACCEPT
-is an input result, not a review of this new theorem. A separate exploratory
+conversation conv_7a76379ee5f4fe05 completed ACCEPT for Sections1-5,
+observed gpt_6/pro. Original stream79182 exited0 with DONE and exactly
+matches all11921 terminal response characters. Its diagonal-blank,
+new-mixed-fullness and per-owner reservation wording clarifications are
+implemented. It accepts the written deduction from the established
+ledger/profile/injection inputs; execution evidence remains separate.
+The earlier all-phase ACCEPT is an input result, not the review of this
+new theorem. A separate exploratory
 Oracle taskf629ba4e asks about unrestricted reserve payment; it has no
 completed result yet. A scoped one-negative-rotor SAT discovery returned
 UNKNOWN at120 seconds, which supplies no exclusion or proof.
@@ -226,8 +233,10 @@ For2P0T it is at most two, and if there is a marked upper corner that
 corner's event is absent; hence events plus its assignment are still
 at most two. Subtract its one reservation. Other negative profiles
 contribute zero: they have no irregular event, A assignment or bar
-reservation. A_Q assignments are distinct
-by the existing original donor-tile injection.
+reservation. Within one negative owner, at most one upper-corner
+assignment uses a given bar tile: the two corners lie in different
+tiles and endpoint injection prevents corner reuse. This argument
+does not need all donor tiles to be distinct across owners.
 
 Consequently if r_Q>=2,
 
@@ -253,10 +262,11 @@ In particular D<=2 sum_Q max(r_Q-1,0), since v_Q<=r_Q and
 r_Q<=2(r_Q-1) on a shared tile. The finer v_Q count avoids charging
 negative owners with only regular profiles in that tile.
 
-The independent task70a45736 was submitted before Section6 and reviews
-Sections1-5 only; its status must not be used as acceptance of this
-extension. General-defect physical controls and abstract accounting are
-recorded separately from that review's scope.
+The independent ACCEPT70a45736 covers Sections1-5 only. Follow-up
+ac50f553-63c2-455d-8856-7f5402b7547a on original stream34424 is
+dispatched specifically to review Section6; no ACCEPT of this extension
+is claimed yet. General-defect physical controls and abstract accounting
+are recorded separately from the accepted review's scope.
 
 All640 complete physical images also pass the general tilewise defect
 inequality and global bound, including192 images with a nonzero shared

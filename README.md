@@ -717,8 +717,10 @@ sources closes the inequality without a density condition. All13 local
 states,344 physical images and14 scoped Lean declarations/audits pass;
 296 images outside the hypotheses are excluded explicitly. General
 negative-receiver overlap and zero-rotor3P0T payment remain open.
-The new independent review is dispatched, not yet ACCEPT; prior reviews
-do not cover this theorem.
+The independent Sections1-5 review completed ACCEPT for the written
+deduction from the established inputs. Its diagonal-blank and reservation
+wording clarifications are implemented; original stream DONE matches
+all11921 terminal response characters. Execution evidence is separate.
 
 A separate extension in Section6 removes receiver separation and allows
 all rotor phases at the cost of two explicit local defects. It proves
@@ -727,4 +729,5 @@ shared by negative sources and H counts the negative1P1T/zero3P0T role.
 All640 complete physical images pass both the tilewise and global
 inequalities;496 give a nonnegative lower bound. The new sufficient
 condition is D+H<=|N-B|+2R. This extension is outside the scope of the
-pending Sections1-5 review, and does not settle unrestricted compensation.
+accepted Sections1-5 review. Its separate follow-up review is dispatched;
+it does not settle unrestricted compensation.
