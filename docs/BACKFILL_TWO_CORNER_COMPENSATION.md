@@ -199,15 +199,24 @@ rotor catalogue is axioms-free. No sorry/native_decide/additional axioms.
 See the [source](../formal/SubQuorum/BackfillTwoCornerBudget.lean),
 [execution/scope receipt](../output/backfill-two-corner-formal-check.json),
 and [two fixed rotor catalogues](../output/backfill-corner-routing.json).
-The independent same-conversation follow-up audit is live on original
-stream25217, task0d801149-95fe-4c94-80d3-b941c4e74d47 in
-conv_befbb4414446045a. The accepted initial four-route
-and separate height12 reviews do not include this later compensation lemma.
+The independent same-conversation two-corner audit completed ACCEPT at
+12:33:41 UTC, task0d801149-95fe-4c94-80d3-b941c4e74d47 in
+conv_befbb4414446045a. Original stream25217 exited0/DONE and matches
+all14227 response characters exactly; observed model gpt_6/pro. No must-fix
+mathematical issue was found. The review covers the written source/activation
+argument and equations(2)--(7), not execution or complete U10 realizability.
+See the [review receipt](../output/backfill-two-corner-review.json) and
+[full response](../output/backfill-two-corner-review-response.txt).
 The initial two-corner packet likewise excludes the LATER shared-stop
 extension (8)--(10); its new geometric input is the exact-profile separation
 of Eterm from both Fpos and Cplus. That extension has two further scoped
 arithmetic statements, both compiled and axiom-audited in the final
 six-statement run. Its written review scope remains separate from the
 first four-statement packet.
+
+A new same-conversation follow-up for exactly(8)--(10) is submitted on
+original stream96016. It includes the complete passive-corner and critical
+shared-stop source notes and the final six-statement Lean source. Its
+written review is pending; the initial ACCEPT is not evidence for it.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
