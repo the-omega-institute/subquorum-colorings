@@ -241,6 +241,14 @@ These are partial source stencils, not complete feasible configurations.
 Complete phase11-exit, closed01-contact and AA coverage are all zero in these
 controls. No graph counterexample or full allocation claim is based on them.
 
+Independent Oracle audit97f5486d in the existing conversation accepts the local
+theorem, physical tag adapters, width-independent owner recovery and exact
+joint endpoint count. The original stream completed with DONE, exit0, and
+12937 response characters exactly matching the same-task terminal response.
+This is an audit of the written arguments and formal statements; local Lean
+execution and finite controls have separate receipts. The initial phase10
+REVISE and its repaired ACCEPT are preserved separately.
+
 The remaining unrestricted problem is to handle these corner/triple exits
 and second forced points together with long phase10, positive, phase01 and
 rotor branches using one consistent count. Equation(3) resolves duplication
