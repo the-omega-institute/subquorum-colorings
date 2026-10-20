@@ -1,0 +1,37 @@
+{
+  "status": "RUNNING_NOT_YET_LEAN_VERIFIED",
+  "lean_version": "4.33.0",
+  "user_selected_execution": "local_machine",
+  "concurrent_task_module_builds": 1,
+  "source": "formal/SubQuorum/DemandHullReserveObstruction.lean",
+  "final_source_exec_session": 27530,
+  "source_preflight": {
+    "memory_free_percentage": 64,
+    "real_lean_lake_processes": [],
+    "process_detection": "basename of comm field"
+  },
+  "dependency_compile": {
+    "source": "formal/SubQuorum/CriticalClosedOwnerCounterexample.lean",
+    "exec_session": 56327,
+    "exit_code": 0,
+    "preflight_memory_free_percentage": 71
+  },
+  "initial_failed_source": {
+    "exec_session": 29476,
+    "exit_code": 1,
+    "errors": [
+      "deriving Decidable failed on the Prop definition",
+      "Decidable (completeFeasible core and completeFeasible restricted) unavailable"
+    ],
+    "correction": "Remove deriving; explicitly unfold completeFeasible before decide"
+  },
+  "intended_declarations": [
+    "original_source_dimensions_and_charges",
+    "full_and_restricted_complete_feasibility",
+    "exact_source_endpoint_matching_and_support_counts",
+    "adjacent_positive_supports_have_the_same_forced_consumer",
+    "exact_original_source_event_and_tile_reserve_drop"
+  ],
+  "axiom_audit_status": "NOT_YET_RUN; audit scratch prepared; wait for original27530, do not launch another source build",
+  "scope": "Six-source concrete core k=h20 ONLY: original dimension/charges, full and restricted occupied feasibility, exact matching/support counts, adjacent positive-support consumer facts, direct source-event reserve5 versus13. Source build and axiom audit remain pending. No claim for nine-source or eighteen-source full family, actual marks/hull, connectivity, general parameter theorem, full allocation or grid equality."
+}

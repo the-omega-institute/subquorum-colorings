@@ -1,0 +1,238 @@
+{
+  "status": "PASS",
+  "witness": {
+    "length": 20,
+    "width": 20,
+    "full": {
+      "owners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "endpoints": 620,
+      "matching": 310,
+      "selected": 112,
+      "endpoint_components": 1,
+      "shape": [
+        74,
+        40
+      ],
+      "ambient_slack": 1058,
+      "positive": 5,
+      "marked": 6,
+      "activated_positive": 5,
+      "unused_u_triples": 15,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 2,
+      "sole_irregular_pair": 39,
+      "mutual_non_event": 0,
+      "mixed_three": 0,
+      "boundary_cost": 80,
+      "event_reserve": 50,
+      "exact_joint_margin": 49
+    },
+    "least_marked_hull": {
+      "owners": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "endpoints": 426,
+      "matching": 213,
+      "selected": 117,
+      "endpoint_components": 4,
+      "shape": [
+        74,
+        40
+      ],
+      "ambient_slack": 1150,
+      "positive": 5,
+      "marked": 6,
+      "activated_positive": 5,
+      "unused_u_triples": 15,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 2,
+      "sole_irregular_pair": 47,
+      "mutual_non_event": 0,
+      "mixed_three": 0,
+      "boundary_cost": 96,
+      "event_reserve": 58,
+      "exact_joint_margin": 57
+    },
+    "n0": 2,
+    "n1": 0,
+    "n2": 3,
+    "seed_owners": [
+      5,
+      6,
+      7,
+      10,
+      11,
+      14,
+      15,
+      18
+    ],
+    "actual_mark_witness_owners": [
+      {
+        "positive_owner": 7,
+        "side": 0,
+        "witness_owners": [
+          10
+        ]
+      },
+      {
+        "positive_owner": 7,
+        "side": 1,
+        "witness_owners": [
+          10
+        ]
+      },
+      {
+        "positive_owner": 11,
+        "side": 0,
+        "witness_owners": [
+          14
+        ]
+      },
+      {
+        "positive_owner": 11,
+        "side": 1,
+        "witness_owners": [
+          14
+        ]
+      },
+      {
+        "positive_owner": 15,
+        "side": 0,
+        "witness_owners": [
+          18
+        ]
+      },
+      {
+        "positive_owner": 15,
+        "side": 1,
+        "witness_owners": [
+          18
+        ]
+      }
+    ],
+    "all_witness_choices_same_owner_seed": true,
+    "reserve_drop": 8,
+    "refutes_least_marked_hull_reserve_comparison": true,
+    "refutes_full_allocation": false
+  },
+  "parameter_controls": [
+    {
+      "length": 18,
+      "width": 20,
+      "full_reserve": 50,
+      "hull_reserve": 58,
+      "reserve_drop": 8
+    },
+    {
+      "length": 18,
+      "width": 24,
+      "full_reserve": 52,
+      "hull_reserve": 62,
+      "reserve_drop": 10
+    },
+    {
+      "length": 18,
+      "width": 40,
+      "full_reserve": 60,
+      "hull_reserve": 78,
+      "reserve_drop": 18
+    },
+    {
+      "length": 18,
+      "width": 100,
+      "full_reserve": 90,
+      "hull_reserve": 138,
+      "reserve_drop": 48
+    },
+    {
+      "length": 20,
+      "width": 20,
+      "full_reserve": 50,
+      "hull_reserve": 58,
+      "reserve_drop": 8
+    },
+    {
+      "length": 20,
+      "width": 24,
+      "full_reserve": 52,
+      "hull_reserve": 62,
+      "reserve_drop": 10
+    },
+    {
+      "length": 20,
+      "width": 40,
+      "full_reserve": 60,
+      "hull_reserve": 78,
+      "reserve_drop": 18
+    },
+    {
+      "length": 20,
+      "width": 100,
+      "full_reserve": 90,
+      "hull_reserve": 138,
+      "reserve_drop": 48
+    },
+    {
+      "length": 40,
+      "width": 20,
+      "full_reserve": 50,
+      "hull_reserve": 58,
+      "reserve_drop": 8
+    },
+    {
+      "length": 40,
+      "width": 24,
+      "full_reserve": 52,
+      "hull_reserve": 62,
+      "reserve_drop": 10
+    },
+    {
+      "length": 40,
+      "width": 40,
+      "full_reserve": 60,
+      "hull_reserve": 78,
+      "reserve_drop": 18
+    },
+    {
+      "length": 40,
+      "width": 100,
+      "full_reserve": 90,
+      "hull_reserve": 138,
+      "reserve_drop": 48
+    }
+  ],
+  "scope": "Explicit complete18source reconstruction, independent matching/support formulas and exact geometric reserve, actual marks and unique witness-owner seeds. Full endpoint graph connected, N5G6 with n2>n0; least marked hull has four endpoint components. Refutes universal least-marked-hull reserve comparison for connected ambient families, not a theorem additionally requiring connected hull, not full allocation or grid equality. General parameter theorem for this eighteen-source family is not claimed here; finite controls do not prove one. The separate nine-source family has a written all-parameter insertion proof."
+}

@@ -160,6 +160,19 @@ of a counterexample is asserted. Choose a negative-margin complete source
 family with the least possible number of original sources, if one exists.
 The established endpoint-component restriction first lets it be connected.
 
+We also use the independently established
+[exact geometric reserve theorem](EXACT_GEOMETRIC_EVENT_RESERVE.md), Sections1--3:
+every complete feasible restriction J in this same fixed-source U/rotor
+catalogue satisfies
+
+    2R(J)=A(J)+U0(J)+Z0(J)+L1(J)+2L2bar(J)+2L2mutual(J)+L3(J)>=0.
+
+Section2 above proves that both separator restrictions meet that theorem's
+complete-source and occupied-neighbor hypotheses; the original catalogue and
+physical tile partition are unchanged. This supplies R(J)>=0 without assuming
+allocation mu(J)>=0. Nonnegativity does not follow merely from the signed
+definition S+2|Fmix|-|E|, or from minimum-counterexample reasoning.
+
 * It has no zero-charge articulation source. For such s, N_s=S_s=d_s=0,
   so mu(F)=mu(L)+mu(Right). A negative full margin would give a smaller
   negative-margin complete fusion. All zero-charge sources here are rotor
@@ -176,9 +189,19 @@ The established endpoint-component restriction first lets it be connected.
 * At a negative articulation, individual nonnegative branch margins do NOT
   automatically suffice. The exact criterion is
   mu(L)+mu(Right)>=S_s. In particular, a branch without positive sources
-  can be safely removed for a counterexample reduction only when its
-  R(branch)>=S_s. Proving this additional bound for demand-irrelevant
-  branches is a real geometric obligation, not a consequence of legality.
+  can be removed without increasing the margin whenever R(branch)>=S_s.
+  More exactly, if J is that branch and K its complement sharing s, then
+  mu(K)=mu(F)+S_s-R(J). For a particular known negative full margin, K
+  remains a counterexample exactly when R(J)>S_s+mu(F). The stronger
+  R(J)>=S_s gives a uniform guarantee from negativity alone. Proving such
+  a shared-mass bound is a geometric obligation, not a consequence of legality.
+
+The later [connected marked-hull construction](DEMAND_HULL_RESERVE_COMPARISON_OBSTRUCTION.md)
+shows that this stronger shared-mass bound is false for arbitrary positive-free
+branches: its separator V3 has S_s=k+7, while the complete connected branch
+with no positives has R=k/2+18. For even k>=24 that branch cannot be deleted
+without increasing the margin. The exact gluing and margin-dependent criterion
+remain valid; a general pruning proof cannot assume universal branch coverage.
 
 Thus a proposed proof by splitting along source articulations has an exact
 shared-resource requirement. It cannot sum existing per-branch allocation
@@ -218,3 +241,10 @@ argument for full tiles, finite count valuation and canonical-mark adapter
 remain written. No end-to-end Lean proof of(1),(2) or full allocation is
 claimed. See the scoped execution receipt for the final build and axiom audit.
 The previous Horn ACCEPT does not cover this new separator theorem.
+
+Independent review e39795ea returned REVISE on21October: it accepted the
+restriction and exact identities under the catalogue/mark hypotheses, but
+requested the explicit R(J)>=0 dependency and corrected negative-deletion
+wording. Both changes are supplied in Section5 above; they have not yet
+received a subsequent independent verdict. The first review4633dbbd ended
+in infrastructure_retry_exhausted and supplied no mathematical verdict.

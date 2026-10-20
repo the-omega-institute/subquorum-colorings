@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+21 October research checkpoint: a complete nine-source family refutes
+least-marked-hull reserve comparison even when BOTH endpoint graphs are
+connected. The hull has R=k/2+13 and the full extension has R=24, with
+fixed added negative mass17 and unchanged actual demand N1G2. The full
+margin remains23, so unrestricted allocation and grid equality stay OPEN.
+See the [construction, general insertion proof and exact signed loss](docs/DEMAND_HULL_RESERVE_COMPARISON_OBSTRUCTION.md).
+The [shared-source separator theorem](docs/SOURCE_SEPARATOR_SIGNED_TRANSFER.md)
+also now states its inherited R>=0 dependency and exact deletion criterion;
+its initial independent REVISE verdict and subsequent corrections are tracked.
+
 [![Verification](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml/badge.svg)](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml)
 
 Research sources and reproducibility materials for **From hypercubes to grids:
