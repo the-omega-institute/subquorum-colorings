@@ -78,7 +78,9 @@ with a broker browser failure, not a mathematical response. A fresh independent
 request includes BOTH notes. Its e2d1db08 response requested one corrected
 endpoint/support sentence in the corridor cap injection and explicit reserve
 integrality here. Those repairs are applied. Same-conversation cc4dd625
-rechecks them separately from the new short-negative-singleton theorem;
-the receipts track the actual outcomes.
+has ACCEPTED these repairs separately from the short-negative-singleton
+theorem. Its completed verdict A is archived in
+output/short-negative-singleton-review.json; the new all-length theorem is
+outside that review's supplied packet.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

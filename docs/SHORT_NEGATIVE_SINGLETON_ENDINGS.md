@@ -18,8 +18,12 @@ retain their original endpoints and matchings in every complete extension.
 
 Normalize a positive producer A=U(w,L,K), its marked gate t=(3,2), and
 Q={2,3}x{2,3}. Suppose t's actual consumer is an ORIGINAL negative-U
-singleton. Its own endpoint neighbor is outside Q. The west position is
-A's endpoint (3,1), so its own neighbor is south. A U singleton is a terminal.
+singleton. Every own endpoint neighbor of t is outside Q. The west position
+is A's endpoint (3,1), leaving only south. The original endpoint graph has
+no isolated endpoints, so that south neighbor exists. Thus this particular
+gate consumer has own endpoint degree one and is a U terminal. An arbitrary
+original tile singleton need not be a terminal: an upper bar corner can
+also be a tile singleton, but cannot fit at this gate.
 The leftward-bar terminal orientation has the positive regular1P2T profile;
 the negative orientation is therefore exactly
 
@@ -327,6 +331,14 @@ clarification, now applied to the previous notes. Its response does not
 review this new theorem. Follow-up cc4dd625, original stream13551, separately
 reviews those repairs and this entire note; its actual verdict is tracked
 in output/short-negative-singleton-review.json.
+
+The subsequent [all-length companion theorem](ALL_LENGTH_SINGLETON_COMPANION_INJECTION.md)
+extends the E/S activation injection to arbitrary incident lengths. It also
+finds a mandatory C support INSIDE the displayed S enclosure, proving that
+S with incident leg four has NO complete extension. Thus the unmarked-owner
+implication here is valid but vacuous on complete S4 families; the partial
+S controls are not actual examples. At b=6 only E or H can occur in a
+complete family. This later exclusion is not part of the original review packet.
 
 Longer negative singleton consumers, filled-corridor continuation and
 vertical regular exits remain unresolved. Finite completion searches,

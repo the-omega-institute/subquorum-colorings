@@ -7,6 +7,26 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [all-length terminal-companion injection](ALL_LENGTH_SINGLETON_COMPANION_INJECTION.md)
+extends the joint E/S versus S/P/R activation assignment to arbitrary negative
+singleton incident length b. The exhaustive next-owner roles are E,S,H and
+Vcorner; the last is a genuinely additional role beyond b=6. Exact dimension
+disjunctions replace short-case bounds that cannot be extrapolated.
+A NEW mandatory C support lies INSIDE the old shortest-south enclosure,
+so the TWO prescribed owners have NO arbitrary complete U/rotor extension.
+The old unmarked S4 implication is vacuous, not a realized capacity bonus;
+at b=6 only E/H survive. Retaining actual s gives the sharper conditional
+floor mu>=n0+u+p+ceil((m8-s-t)/2), without losing unused lower pairs.
+E/S terminal branches of EVERY length leave the unresolved t count.
+The C=U(V,6,4),g>=V south subclass also has no complete extension, by a
+separate THREE-COLUMN mandatory-support enclosure.23scoped local Lean
+declarations and independent110fixed/6180partial-role plus101narrow-enclosure
+controls PASS. Full allocation/grid equality remain OPEN. The prior corridor
+and residual notes are now independently ACCEPTED; the short-note audit
+requested a gate-specific singleton/terminal wording repair, applied.
+A separate all-length audit also rechecks that repair; its packet predates
+the later three-column obstruction, which requires a separate addendum.
+
 21 October: [short negative-singleton endings](SHORT_NEGATIVE_SINGLETON_ENDINGS.md)
 exclude incident length four in arbitrary complete U/rotor extensions.
 At length six, the forced next owner is one of E/S/H: the positive cases

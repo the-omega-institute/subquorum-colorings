@@ -1,0 +1,91 @@
+{
+  "scope": "Finite U-only discovery. All runs UNSAT for their specified libraries only. The later S4 support/enclosure proof separately excludes arbitrary U/rotor completion for these S seeds. No such unrestricted conclusion is inferred for E.",
+  "seed_specification": "A=U(14,4,4); B=U(8,8,4), frame(11-r,c+1); C=U(14,10,4), frame(c+1,12-r); D=U(6,4,4), E frame(c+2,7-r) or S frame(7-r,c+2)",
+  "window_lower": [
+    -6,
+    -6
+  ],
+  "window_upper": [
+    24,
+    22
+  ],
+  "rotors_in_candidate_library": false,
+  "timeout_ms": 90000,
+  "later_S6_run": {
+    "command": "python3 develop/discover_short_negative_singleton_completion.py 6 24 --companion S6 --maximum-width 14 --maximum-leg 10 --maximum-additions 14",
+    "seed": "A=U(10,4,4); B=U(10,8,4), frame(11-r,c+1); C=U(6,6,4), frame(c+1,8-r); S=U(8,6,4), frame(9-r,c+2)",
+    "candidates": 41713,
+    "status": "unsat",
+    "seconds": 66.43,
+    "execution_session": 1474,
+    "exit_code": 0,
+    "meaning": "Bounded library exclusion only. The separate new three-column enclosure proof excludes arbitrary U/rotor extensions for this subclass; it postdates the c1605aa3 packet."
+  },
+  "runs": [
+    {
+      "companion": "E",
+      "command": "python3 develop/discover_short_negative_singleton_completion.py 14 24 --companion E",
+      "candidate_widths": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "candidate_legs": [
+        4,
+        6,
+        8
+      ],
+      "maximum_additions": 10,
+      "candidates": 14876,
+      "status": "unsat",
+      "seconds": 20.4,
+      "execution_session": 44020,
+      "exit_code": 0
+    },
+    {
+      "companion": "S",
+      "command": "python3 develop/discover_short_negative_singleton_completion.py 14 24 --companion S",
+      "candidate_widths": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "candidate_legs": [
+        4,
+        6,
+        8
+      ],
+      "maximum_additions": 10,
+      "candidates": 14876,
+      "status": "unsat",
+      "seconds": 20.22,
+      "execution_session": 82273,
+      "exit_code": 0
+    },
+    {
+      "companion": "S",
+      "command": "python3 develop/discover_short_negative_singleton_completion.py 14 24 --companion S --maximum-width 14 --maximum-leg 10 --maximum-additions 14",
+      "candidate_widths": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "candidate_legs": [
+        4,
+        6,
+        8,
+        10
+      ],
+      "maximum_additions": 14,
+      "candidates": 23479,
+      "status": "unsat",
+      "seconds": 35.24,
+      "execution_session": 23822,
+      "exit_code": 0
+    }
+  ]
+}
