@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "user-selected local Mac",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/CSecondCornerPhase.lean",
+  "theorem_declarations": 6,
+  "theorems": [
+    "north_terminal_must_cross_route_c",
+    "east_terminal_must_cross_companion",
+    "both_phase01_terminal_shapes_are_excluded",
+    "phase_typed_pools_recover_the_single_pool",
+    "phase10_capacity_keeps_all_competing_claims",
+    "aa_typed_capacity"
+  ],
+  "source_check": {
+    "original_exec_session": 6461,
+    "exit_code": 0,
+    "memory_free_percent": 43,
+    "warnings": false
+  },
+  "axiom_audit": {
+    "original_exec_session": 48824,
+    "exit_code": 0,
+    "memory_free_percent": 46,
+    "declarations": 6,
+    "allowed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+    "additional_axioms": false,
+    "sorry": false,
+    "native_decide": false
+  },
+  "dependency": {
+    "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+    "original_exec_session": 94459,
+    "exit_code": 0,
+    "memory_free_percent": 48
+  },
+  "preflights": "Before each sequential Lean invocation: memory_pressure -Q and ps comm basename checks, including bare lean/lake; no real lean/lake active at each check.",
+  "scope": "Two unbounded endpoint crossing witnesses and their disjointness contradiction, followed by three conditional phase-specific singleton-pool identities/inequalities. Physical phase/orientation classification and global occurrence partitions remain written adapters. No full source-fusion, unrestricted allocation or rectangular-grid equality theorem.",
+  "independent_review": "Not yet submitted for this extension. Prior D review does not certify this result; existing B and full-target tasks remain live.",
+  "controls": "output/c-second-corner-phase-controls.json"
+}
