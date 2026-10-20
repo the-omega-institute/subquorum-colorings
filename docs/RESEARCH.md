@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [exact component loss and the marked-demand gap](COMPONENT_LOSS_AND_THE_MARKED_DEMAND_GAP.md)
+give a general simultaneous loss bound for every complete feasible mixed-source
+extension: all new-endpoint component subunions are legal and R/N/G/mu are affine.
+Selecting all reserve-losing groups once proves2L<=2R(I)-A(I). A single old
+owner can have TWO simultaneously losing groups, each with unbounded loss;
+the nine-source all-k family supplies the explicit obstruction to loss
+exclusivity. Six finite-list Lean declarations and704physical images pass.
+Independent written reviewb4910cb9 ACCEPT. The full target is still the
+stronger L<=mu(H) for the canonical demand hull, including the H=J core case;
+the persistent activation floor alone does not pay all marked demand.
+
 21 October: the [five-endpoint cap and gate-consumer restriction](FIVE_ENDPOINT_CAP_AND_POSITIVE_GATE_CONSUMERS.md)
 exclude an unfillable support from EVERY U/rotor extension. A gate consumer
 having the upper intratile support forces a transverse NEGATIVE U tip with
