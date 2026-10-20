@@ -66,7 +66,12 @@ This U-role statement holds for arbitrary width and independent heights,
 not only the dimensions used in executable controls. The Lean theorem
 blocked_vertical_owner_is_horizontal_tip proves it directly from the
 original endpoint predicate and all eight lattice isometries; the
-forbidden distance can also be one, used in the next section.
+forbidden distance can also be one, used in the next section. Its final
+signature needs only the immediately upper and left endpoint exclusions,
+not the entire nine-point rotor stencil. This makes its application at
+the second point literal. The endpoint-role theorem needs only minimum
+dimensions; support-direction and phase assertions below additionally use
+the model's legal even widths and heights.
 
 The bar direction is NOT yet determined. If d is the incident height,
 v the width and f the far height, the two exact forms, after naming the
@@ -172,8 +177,21 @@ role tests with100 downward and13 upward survivors at EACH clearance4/6,
 and32896 second-owner role tests with200 forced downward-U11 profiles.
 See output/width-six-bottom-owner-formal-check.json and
 output/width-six-bottom-owner-controls.json. Independent audit f3131137
-is live; no ACCEPT verdict is claimed. Research follow-up54d0581e remains
-live under its original task after its streaming observation ended with
-unexpected EOF; the broker task was rechecked as dispatched/waiting_response.
+completed ACCEPT at2026-10-20T05:53:49.100UTC, observed gpt_6/pro,
+16263characters. Original stream19690 exits0/DONE and exactly matches
+the terminal response. It accepts the structural argument under the
+accepted inputs, not executions/provenance. Its requested distinction
+between parity-free endpoint roles and even-dimension phase/support claims
+is explicit above. Following its suggested weaker adapter, the Lean
+classifier now requires only the upper/left exclusions actually used in
+its proof, so the second-point application no longer needs the extra
+nine-blocker premise. The later positive-owner reserve addition is outside
+that review. See output/width-six-bottom-owner-review.json.
+
+Research follow-up54d0581e completed at05:50:36.725UTC, observed gpt_6/pro,
+20781characters; its terminal response was recovered from the original
+task after stream EOF, with no complete-stream equality claim. It proposes
+the further positive-owner reserve obstruction and other boundary/cross-core
+leads. Those leads are not established by this note or by this ACCEPT verdict.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

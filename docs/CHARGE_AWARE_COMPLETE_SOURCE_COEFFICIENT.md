@@ -131,6 +131,12 @@ rotor images,83583 signed universal budgets (37908 negative margins)
 and4602 nonexceptional budgets.
 See output/charge-aware-source-coefficient-formal-check.json and
 output/charge-aware-source-coefficient-controls.json.
-Independent audit a20e87ca is live; no ACCEPT verdict is claimed yet.
+Independent audit a20e87ca completed ACCEPT at2026-10-20T05:51:15.164UTC,
+observed gpt_6/pro,5073characters. Original stream32411 exits0/DONE and
+exactly matches the terminal response. It accepts the additive original
+matching budget, signed inequalities, both constants and numerical gains,
+and the actual-double-marked meaning of e=0 under the stated complete-source
+inputs. It does not certify executions or arbitrary-grid decomposition.
+See output/charge-aware-source-coefficient-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

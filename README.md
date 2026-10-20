@@ -38,7 +38,8 @@ to21/22 when no actual double-marked positive is exceptional. Original
 negative matchings cost at least their original total charge G, giving
 |M|>=9N+4e+G=10N+4e+R-mu. This counts every source once and reuses no
 defect witness. Six new scoped Lean arithmetic declarations and source/
-signed-budget controls pass; independent review is pending.
+signed-budget controls pass; independent review accepts both deductions
+under the stated complete-source ownership and ledger hypotheses.
 
 The [bottom-owner lemma](docs/WIDTH_SIX_BOTTOM_OWNER_AND_WRAPPING_OBSTRUCTION.md)
 forces a sixth original owner at every unpaid full-chain width-six double.
@@ -46,7 +47,9 @@ At clearance four/six it is a horizontal terminal; a universal all-image U
 role proof is checked in Lean. Upward wrapping is locally possible, but
 zero-defect saturation excludes it at clearance four, leaving a phase10
 continuation. Six scoped Lean declarations and local role controls pass;
-independent review is pending. These results do not settle the coupled
+independent review accepts this structural argument, with a clarified
+two-neighbor premise and explicit even-dimension phase dependencies.
+These results do not settle the coupled
 finite closure, unrestricted coefficient one or arbitrary-grid equality.
 
 The [four-stem compensation theorem](docs/WIDTH_SIX_FOUR_STEM_COMPENSATION.md)
@@ -70,6 +73,16 @@ that review. The repaired transverse theorem also passed independent review,
 including its explicit dimension partition and four-stem dependency.
 The remaining finite width-six closure and arbitrary grids
 are open; no complete allocation counterexample is supplied.
+
+The [positive bottom-owner obstruction](docs/POSITIVE_BOTTOM_OWNER_RESERVE_OBSTRUCTION.md)
+works at arbitrary clearance: a positive owner of the forced bottom point
+consumes both of its original exterior bar-end supports. Its two distinct
+legs each supply an activation or an accepted exterior-chain occurrence.
+Together with the original double's opposite activation this gives A+X>=3
+and R>=2. Thus the R1 residual cannot close this point with any positive
+source, including arbitrary one-mark positives. Five further scoped Lean
+declarations and representative role/support controls pass; independent
+review is pending. Closure through further negative owners remains open.
 
 The [uniform complete-source coefficient](docs/COMPLETE_SOURCE_UNIFORM_COEFFICIENT.md)
 improves five-sixths to12/13 for every permitted finite complete U/rotor

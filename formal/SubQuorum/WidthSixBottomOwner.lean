@@ -38,17 +38,15 @@ theorem blocked_vertical_owner_is_horizontal_tip
     (hwidth : 6 ≤ width) (hleft : 4 ≤ left) (hright : 4 ≤ right)
     (hdistance : distance = 1 ∨ distance = 2 ∨ distance = 4)
     (hroot : endpoint width left right anchor)
-    (hblock : ∀ point ∈ blockers,
-      ¬ endpoint width left right (pull transpose flipRow flipColumn anchor point))
+    (hup : ¬ endpoint width left right (pull transpose flipRow flipColumn anchor (-1,0)))
+    (hleftward : ¬ endpoint width left right
+      (pull transpose flipRow flipColumn anchor (0,-1)))
     (hblank : ¬ endpoint width left right
       (pull transpose flipRow flipColumn anchor (distance,0))) :
     transpose = true ∧ flipRow = true ∧
     ((anchor.1 = left ∧ anchor.2 = 1) ∨
      (anchor.1 = right ∧ anchor.2 = width)) := by
   rcases anchor with ⟨row,column⟩
-  have hup := hblock (-1,0) (by simp [blockers])
-  have hleftward := hblock (0,-1) (by simp [blockers])
-  clear hblock
   rcases hroot with hbar | hnear | hfar
   all_goals
     rcases hdistance with rfl | rfl | rfl <;>
@@ -123,5 +121,73 @@ theorem clearance_four_last_receiver_hits_forbidden_point (long outer : Int)
     (outer+5,2) = (long+1,2) := by
   congr 1
   omega
+
+def positiveParity (transpose flipRow flipColumn : Bool) (anchor : Point) : Prop :=
+  anchor.1%2 = (if transpose then (if flipRow then 1 else 0)
+    else (if flipRow then 0 else 1)) ∧
+  anchor.2%2 = (if transpose then (if flipColumn then 0 else 1)
+    else (if flipColumn then 1 else 0))
+
+set_option maxHeartbeats 1000000 in
+theorem positive_bottom_role_catalogue
+    (width left right : Int) (anchor : Point)
+    (transpose flipRow flipColumn : Bool)
+    (hwidth : 6 ≤ width) (hleft : 4 ≤ left) (hright : 4 ≤ right)
+    (hevenWidth : width%2 = 0) (hevenLeft : left%2 = 0) (hevenRight : right%2 = 0)
+    (hroot : endpoint width left right anchor)
+    (hup : ¬ endpoint width left right (pull transpose flipRow flipColumn anchor (-1,0)))
+    (hwest : ¬ endpoint width left right (pull transpose flipRow flipColumn anchor (0,-1)))
+    (hphase : positiveParity transpose flipRow flipColumn anchor) :
+    (transpose = true ∧ flipRow = false ∧
+      ((flipColumn = false ∧ anchor = (0,1)) ∨
+       (flipColumn = true ∧ anchor = (0,width)))) ∨
+    (transpose = false ∧ flipRow = true ∧
+      ((flipColumn = true ∧ anchor = (left,1)) ∨
+       (flipColumn = false ∧ anchor = (right,width)))) := by
+  rcases anchor with ⟨row,column⟩
+  rcases hroot with hbar | hnear | hfar
+  all_goals
+    cases transpose <;> cases flipRow <;> cases flipColumn <;>
+      simp [pull, endpoint, positiveParity, Prod.mk.injEq] at hup hwest hphase ⊢ <;> omega
+
+theorem westward_terminal_cannot_fit
+    (width incident far clearance : Int)
+    (hwidth : 6 ≤ width) (hincident : 4 ≤ incident) (hclearance : 4 ≤ clearance)
+    (hevenIncident : incident%2 = 0) (hevenClearance : clearance%2 = 0)
+    (hblank : ¬ endpoint width incident far (incident-(clearance-2),1))
+    (hwall : ∀ row, 0 ≤ row → row ≤ clearance-3 →
+      ¬ endpoint width incident far (incident-row,2)) : False := by
+  have hfit : incident ≤ clearance-4 := by
+    simp [endpoint] at hblank
+    omega
+  have hcollision := hwall (incident-1) (by omega) (by omega)
+  apply hcollision
+  simp [endpoint]
+  omega
+
+theorem positive_vertical_bar_fits_clearance
+    (width left right clearance : Int)
+    (hwidth : 6 ≤ width) (hclearance : 4 ≤ clearance)
+    (hevenWidth : width%2 = 0) (hevenClearance : clearance%2 = 0)
+    (hblankEndpoint : ¬ endpoint width left right (0,clearance-1))
+    (hblankSupport : ¬ support width left right (0,clearance-1)) :
+    width ≤ clearance-4 := by
+  simp [endpoint] at hblankEndpoint
+  simp [support] at hblankSupport
+  omega
+
+theorem two_positive_legs_pay_distinct_occurrences
+    (nearActivated farActivated : Bool) (activation exterior : Nat)
+    (hactivation : (if nearActivated then 1 else 0)+(if farActivated then 1 else 0)+1 ≤ activation)
+    (hexterior : (if nearActivated then 0 else 1)+(if farActivated then 0 else 1) ≤ exterior) :
+    3 ≤ activation+exterior := by
+  cases nearActivated <;> cases farActivated <;> simp_all <;> omega
+
+theorem positive_bottom_owner_needs_two_reserves
+    (activation exterior unfilled boundary rotor reserve : Nat)
+    (hoccurrences : 3 ≤ activation+exterior)
+    (hpool : exterior ≤ unfilled+boundary)
+    (hidentity : 2*reserve = activation+unfilled+rotor+boundary) :
+    2 ≤ reserve := by omega
 
 end SubQuorum.WidthSixBottomOwner
