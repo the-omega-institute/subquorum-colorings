@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "orientation_controls": {
+    "counts": {
+      "ordinary_frame_point_cases": 32,
+      "critical_same_tile_cases": 8,
+      "ordinary_same_tile_cases": 8,
+      "backfill_frame_root_cases": 64,
+      "backfill_same_tile_cases": 8
+    },
+    "critical_candidates": [
+      [
+        [
+          0,
+          -2
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          -2
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      ],
+      [
+        [
+          0,
+          -1
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      ],
+      [
+        [
+          1,
+          -2
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            -1,
+            0
+          ]
+        ]
+      ],
+      [
+        [
+          1,
+          -2
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    ],
+    "distinct_companion_backfill_candidates": [
+      [
+        [
+          1,
+          -3
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    ]
+  },
+  "source_geometry_controls": {
+    "anchored_U_images": 14400,
+    "two_blocker_U_roles": 432,
+    "phase10_south_terminal_roles": 72,
+    "phase11_companion_terminal_roles": 72,
+    "two_blocker_rotor_roles": 4
+  },
+  "complete_controls": {
+    "critical_phase10_events": 0,
+    "complete_feasible_images": 216,
+    "critical_events": 96
+  },
+  "scope": "General backfill/receiver separation and original-owner arguments are written and normalized primitives formalized. Fixed direction/rotor catalogue is exhaustive; U dimension samples are controls only. Complete phase10 critical coverage must be read from the recorded count and is not inferred from local roles. No backfill sharpness, fresh reserve, full allocation or grid equality claim."
+}

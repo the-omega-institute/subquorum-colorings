@@ -1,0 +1,154 @@
+ACCEPTThe four-source certificate is correct, and it establishes the claimed local obstruction. The original matchings and endpoint labels, mandatory supports—including consumed supports—the 28 retained supports, the critical continuation through F, and the geometric reserve census all check.The obstruction must retain its stated scope: the receiving tile of a critical U terminal need not have at least three final endpoints or qualify for the existing H/Z₀ stop rule. This example does not establish failure of the target allocation, or impossibility of a different continuation or reservation argument.I reviewed    critical-neutral-terminal-review-packet.md. I have not re-audited the general theorem accepted under task61a86e8f. The two rotor additions are assessed below as finite source assertions, with an explicit boundary concerning their imported definitions; no Python or Lean execution is certified.1. Original endpoints and matchingsFor the supplied canonical source  $U(w,l,r)$ , its endpoint set is exactly
+$$P(w,l,r)
+=
+\bigl(\{0,1\}\times[1,w]\bigr)
+\cup\bigl([2,l]\times\{1\}\bigr)
+\cup\bigl([2,r]\times\{w\}\bigr),$$
+where the intervals contain integers.The four matching families therefore give
+$$|M(w,l,r)|
+=\frac w2+\left(\frac w2-1\right)+\frac l2+\frac r2
+=w+\frac{l+r}{2}-1,$$
+and
+$$|P(w,l,r)|=2w+l+r-2.$$
+Applying the stated affine maps to these endpoint and matching formulas reproduces the packet’s labelled endpoint table.OwnerOriginal matching edgesOriginal endpointsOriginal support occurrencesConsumed support occurrencesRetained supportsO336618513F13261073B9181046G9181046Total64128482028The endpoint sets are disjoint. In particular, below O’s bar:O occupies its columns  $2$  and  $27$ .F occupies columns  $3,\ldots,7$ , in rows  $2,\ldots,11$ .B occupies columns  $3,\ldots,7$ , starting at row  $12$ .G occupies columns  $8,\ldots,12$ , in rows  $2,\ldots,7$ .The source matchings remain the original mapped canonical matchings. The O/B contact is an additional adjacency between endpoints whose original matched partners are
+$$(12,2)_O\longleftrightarrow(11,2)_O,
+\qquad
+(12,3)_B\longleftrightarrow(12,4)_B.$$
+At the eventual receiver, G’s original matching contains
+$$(2,8)_G\longleftrightarrow(2,9)_G.$$
+The original phases  $01,11,01,11$  also agree with the maps and the fixed  $2\times2$  partition. In checking B and G, the reversal of the canonical row coordinate must be included in the phase calculation.2. All mandatory supports are accounted forLet  $S_X$  denote owner  $X$ ’s original support, let  $P$  be the endpoint union, and let
+$$T=(S_O\cup S_F\cup S_B\cup S_G)\setminus P.$$
+The complete consumed-support accounting is as follows.Original support ownerConsuming endpoint ownerConsumed support sitesOF $(3,3),(5,3),(7,3),(9,3),(11,3)$ FO $(1,3),(1,5),(1,7)$ FB $(12,3),(12,5),(12,7)$ FG $(2,8)$ BF $(11,3),(11,5),(11,7)$ BO $(12,2)$ GO $(1,8),(1,10),(1,12)$ GF $(2,7)$ This verifies that every omitted mandatory support is consumed by an actual, source-labelled endpoint.The shared original support at  $(11,3)$ There is one important distinction between labelled occurrences and distinct sites:
+$$(11,3)\in S_O\cap S_B,
+\qquad
+(11,3)\in P_F.$$
+Consequently, there are: $48$  original support occurrences, but  $47$  distinct original support sites; $20$  consumed support occurrences, but  $19$  distinct consumed sites.Both counts give the same retained set:
+$$48-20=47-19=28.$$
+The packet does not falsely claim that all original support sets are disjoint. Its retained-support table is exactly the required set  $T$ .The 28 sole-neighbor claimsEvery support-anchor pair in the packet’s table is correct. For each  $s\in T$ ,
+$$\bigl|N_1(s)\cap(P\cup T)\bigr|=1,$$
+and the unique neighbor belongs to  $P$ . There are no adjacent retained supports.Here “unique occupied anchor” is pointwise uniqueness, as expressed by the packet’s “sole occupied neighbor” column. The anchoring map is not injective:Retained supports sharing an anchorCommon anchor $(4,28),(5,27)$  $(4,27)$  $(12,1),(13,2)$  $(12,2)$  $(7,7),(8,8)$  $(7,8)$  $(17,2),(18,3)$  $(17,3)$ Thus there are  $24$  distinct anchors for  $28$  retained supports. This is consistent with the actual certificate.All endpoints and retained supports lie in
+$$\{0,\ldots,19\}\times\{0,\ldots,29\}.$$
+3. The actual O/B contact and critical continuation through FWrite
+$$x=(12,2),\qquad b=(12,3),$$
+and use O’s incident directions
+$$e_{\mathrm{in}}=(-1,0),
+\qquad
+e_{\mathrm{ext}}=(0,1).$$
+The contact has the required source-labelled structure: $x$  is O’s original terminal. $b=x+e_{\mathrm{ext}}$  is B’s original terminal.B’s original terminal support at  $x$  is consumed by O.O’s terminal support  $(13,2)$  is retained, with sole occupied neighbor  $x$ .First forced pointThe first forced site is
+$$s=x+e_{\mathrm{in}}+e_{\mathrm{ext}}=(11,3).$$
+It is an original support of both O and B. It has the occupied neighbors
+$$(11,2)\in P_O,
+\qquad
+(12,3)\in P_B.$$
+It therefore cannot remain a retained support. In the certificate it is indeed consumed:
+$$s\in P_F.$$
+Critical, rather than long, continuationO’s incident height is  $12$ , while F’s width is  $10$ :
+$$12=10+2.$$
+This is exactly the critical branch.Following F’s width from  $s$  reaches
+$$u=s+(10-1)e_{\mathrm{in}}=(2,3).$$
+F’s opposite leg runs from column  $3$  through column  $7$ , so its far displacement from  $u$  is  $4$ . The next forced site is consequently
+$$t=u+(4+1)e_{\mathrm{ext}}=(2,8).$$
+The source labels agree with this calculation:
+$$t\in S_F\cap P_G.$$
+Moreover,  $t$  has the two occupied neighbors
+$$(2,7)\in P_F,
+\qquad
+(1,8)\in P_O,$$
+which independently explains why this mandatory F support must be consumed.This is an actual complete-source continuation. O supplies the full relevant bar and wall:
+$$\{(1,c):8\le c\le27\}
+\cup
+\{(r,27):r=2,3,4\}.$$
+In the normalized frame at  $t$ , the clearance is  $19$ .G is the terminal ownerUnder G’s map,
+$$(4,1)\longmapsto(2,8)=t.$$
+Thus  $t$  is G’s original left terminal. Its original matching partner is  $(2,9)$ .The associated mandatory supports have also been respected:G’s terminal support  $(2,7)$  is consumed by F.G’s original support  $(1,8)$  is consumed by O.G’s diagonal original support  $(3,9)$  remains live.There is no omitted support obligation at this receiver.4. The receiver is exactly neutral  $2P1T$ The actual receiving tile is
+$$Q=Q_{1,4}
+=\{(2,8),(2,9),(3,8),(3,9)\}.$$
+Directly from the labelled source sets and retained-support set,
+$$P\cap Q=\{(2,8),(2,9)\},
+\qquad
+T\cap Q=\{(3,9)\}.$$
+For the diagonal support,
+$$N_1(3,9)=\{(2,9),(4,9),(3,8),(3,10)\},$$
+and only  $(2,9)$  belongs to  $P\cup T$ . Hence the diagonal support is genuinely retained.The receiver therefore has:exactly two final endpoints;one retained diagonal support;one empty corner;original owner G of phase  $11$ .Its local capacity deficit is
+$$2-\frac{|P\cap Q|}{2}-|T\cap Q|
+=2-1-1=0.$$
+It contributes no  $H$  cost, and this all-U fixture has no rotor  $Z_0$  contribution.This establishes the advertised obstruction to extending the eligible-stop rule to this U11 terminal.5. Exact tile census and reserveLet
+$$Q_{ij}=\{2i,2i+1\}\times\{2j,2j+1\}.$$
+The complete final tile census is:Final tile profileNumber $4P0T$ 21 $3P0T$ 4 $2P1T$ 8 $2P0T$ 7 $1P1T$ 2 $0P1T$ 18Empty90Total150This independently recovers both cardinalities:
+$$|P|=4(21)+3(4)+2(8)+2(7)+2=128,$$
+
+$$|T|=8+2+18=28.$$
+The ownership information needed for the finer reserve census is also correct.Four unused U triplesThe four  $3P0T$  tiles are original single-owner triples:
+$$\begin{array}{c|c}
+\text{Owner}&\text{Tiles}\\ \hline
+F&Q_{1,2},\,Q_{5,2}\\
+G&Q_{1,5},\,Q_{3,5}
+\end{array}$$
+None is a mixed triple. This gives
+$$U_0=4.$$
+Seven bare pair tiles and two lone irregular tilesThe seven  $2P0T$  tiles are
+$$\begin{aligned}
+F:&\quad Q_{2,2},Q_{3,2},Q_{4,2},\\
+G:&\quad Q_{1,6},Q_{2,5},Q_{2,6},Q_{3,6}.
+\end{aligned}$$
+The two  $1P1T$  tiles are
+$$Q_{2,13}\quad\text{from O},
+\qquad
+Q_{8,1}\quad\text{from B}.$$
+Thus the stated boundary contribution is
+$$H=2+2\cdot7=16.$$
+No additional mutual non-event or mixed tripleThe only tile containing two distinct singleton endpoint owners is
+$$Q_{6,1},$$
+with
+$$P\cap Q_{6,1}=\{(12,2)_O,(12,3)_B\},
+\qquad
+T\cap Q_{6,1}=\{(13,2)\}.$$
+This is precisely the actual O/B neutral contact already counted as an event. It creates no additional mutual non-event.The five mixed full tiles are
+$$Q_{i,1},\qquad 1\le i\le5,$$
+each containing two O endpoints and two F endpoints. There are no mixed three-endpoint tiles.These facts support the detailed census
+$$\texttt{lone\_irregular}=2,\quad
+\texttt{sole\_irregular\_pair}=7,\quad
+\texttt{mutual\_non\_event}=0,\quad
+\texttt{mixed\_three}=0.$$
+Reserve and ambient slackThere are  $42$  endpoint-containing tiles, and exactly  $10$  retained supports lie in those tiles. Their reserve is
+$$R=2(42)-\frac{128}{2}-10=10.$$
+Equivalently,
+$$R=\frac12(4)+7+\frac12(2)=10.$$
+There is no positive U00 owner and no rotor owner, giving
+$$A=Z_0=0.$$
+The reserve identity is therefore numerically exact:
+$$2R=A+U_0+Z_0+H
+=0+4+0+16=20.$$
+The objective and whole-grid slack are
+$$|M|+|T|=64+28=92,$$
+
+$$\frac{20\cdot30}{2}=300,
+\qquad
+300-92=208.$$
+The tile census provides a second derivation:
+$$208
+=\underbrace{10}_{\text{endpoint-tile reserve}}
++\underbrace{18}_{\text{support-only tiles}}
++\underbrace{2\cdot90}_{\text{empty tiles}}.$$
+I found no correction needed to this geometric census. The imported implementation of inspect_exact, including the separate meaning of its exact_joint_margin field, is not supplied; I do not certify that implementation merely from the displayed expected dictionary.The eight symmetry images are also justified mathematically. Reflections
+$$r\mapsto19-r,\qquad c\mapsto29-c$$
+and transposition preserve adjacency, the mapped original matchings, support degrees, and the  $2\times2$  partition, with rectangle dimensions transposed when appropriate. They preserve this critical branch and its neutral receiver.6. Precisely what is refutedThe certificate supplies a counterexample to the local universal assertion
+$$\text{Every critical U-terminal receiver has at least three final endpoints,
+or is an eligible }H/Z_0\text{ stop}.$$
+Here the critical receiver has exactly  $2P1T$ , and its diagonal support remains live.The following claims are not refuted:The accepted eligible-owner statement. Its U10/rotor domain explicitly excludes this U11 owner.The target allocation inequality. The example exhibits no allocation failure and has  $R=10$ .Every possible further continuation or remote reservation rule. Failure of the stated receiver-based rule does not prove that all alternative rules fail.An AA or extremal assertion. This fixture has substantial reserve and ambient slack.The packet’s explicit distinction between failure of this stop-rule extension and failure of the target allocation is therefore essential and correct.7. The two added finite rotor assertionsZero original chargeThe declarationevery_critical_rotor_has_zero_original_chargehas the correct original-data scope. It tests
+$$q
+=
+\#\{\text{original rotor supports in endpoint-containing tiles}\}
++4
+-2\#\{\text{endpoint-containing tiles}\}$$
+over the two-blocker rooted catalogue.The use of deduplicated receiver tiles is appropriate. The statement concerns the entire original rotor’s tile accounting; zero charge does not follow merely from the profile in the root square. It also does not assert zero final charge after support consumption and fusion.Paired singleton profileThe declarationcritical_rotor_triple_has_the_stated_paired_singletontests that a surviving original triple has, in
+$$Q'=\{(0,2),(1,2),(0,3),(1,3)\},$$
+the exact original profiles
+$$P_{\mathrm{rotor}}\cap Q'=\{(1,2)\},
+\qquad
+S_{\mathrm{rotor}}\cap Q'=\{(0,2),(1,3)\}.$$
+The filter-list orders agree with the displayed equalities.Two scope distinctions matter:The declaration states this coordinate profile. Identifying that tile with the established canonical pairing uses the pre-existing pairing convention. The Python assertion explicitly calls rotor_pairs; this Lean declaration does not mention a pairing function.The two displayed supports are original supports. In an actual full-bar contact,  $(0,2)$  is adjacent to both the rotor endpoint  $(1,2)$  and the active-bar endpoint  $(-1,2)$ . It must therefore be consumed. The statement must not be paraphrased as a retained final  $1P2T$  tile.Manual arithmetic check and source boundaryThe packet supplies rotorT, but imports rotorP, rotorMove, and rotorOwners without their definitions. I could not independently retrieve those imported bodies.For the standard four-edge rotor
+$$P_0=\{(1,2),(2,2),(2,3),(2,4),(3,1),(3,2),(3,3),(4,3)\},$$
+with the packet’s displayed support list, a direct hand enumeration confirms both assertions. Writing  $\tau(r,c)=(c,r)$ , the two-blocker survivors are:Rooted placementOriginal endpoints in the root squareOriginal supports there $P_0-(1,2)$  $\{(0,0),(1,0),(1,1)\}$  $\varnothing$  $P_0-(3,1)$  $\{(0,0),(0,1)\}$  $\{(1,0)\}$  $\tau P_0-(2,1)$  $\{(0,0),(0,1),(1,1)\}$  $\varnothing$  $\tau P_0-(1,3)$  $\{(0,0),(1,0)\}$  $\{(0,1)\}$ Each placement has four endpoint-containing tiles and four original supports in those tiles, hence
+$$q=4+4-2\cdot4=0.$$
+The extra full-bar blockers remove the second and third rows. In the surviving triple placement,  $Q'$  has precisely the singleton and two original supports stated above.This is a conditional mathematical check of the intended rotor catalogue, not a claim that I inspected the missing imported definition or evaluated the Lean declarations. The two additions have the intended finite formulations; neither supplies a new complete critical rotor-stop witness or a global allocation result.   critical-neutral-terminal-review-packet.mdDocumentOpen file

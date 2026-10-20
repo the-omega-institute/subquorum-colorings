@@ -328,7 +328,17 @@ The [receipt](../output/critical-owner-profiles-review.json) and
 [complete response](../output/critical-owner-profiles-review-response.txt)
 cover Sections1--4 and the initial15-declaration source snapshot. The
 review does not certify execution or cover the later Section5 certificate
-and two additional rotor statements. These have a distinct live audit,
-c2e80e20-cd66-4f49-84f8-c5413e10a5b9; its verdict must be recorded separately.
+and two additional rotor statements. Distinct
+[audit c2e80e20](../output/critical-neutral-terminal-review.json) completed
+ACCEPT at11:26:36 UTC, observed gpt_6/pro; its original stream94698 ended0
+with DONE and exactly matches the terminal response. It independently
+checks the complete four-source fixture and geometric census. Its two
+rotor checks are conditional on the intended standard template because
+the packet omitted imported rotor definitions. It certifies neither
+execution nor any later continuation theorem. The
+[full response](../output/critical-neutral-terminal-review-response.txt)
+also distinguishes pointwise unique support anchors from an injective
+anchoring map:28 retained supports have24 distinct anchors. No anchor
+injection is used here.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
