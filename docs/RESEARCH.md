@@ -24,8 +24,10 @@ declarations and independent110fixed/6180partial-role plus101narrow-enclosure
 controls PASS. Full allocation/grid equality remain OPEN. The prior corridor
 and residual notes are now independently ACCEPTED; the short-note audit
 requested a gate-specific singleton/terminal wording repair, applied.
-A separate all-length audit also rechecks that repair; its packet predates
-the later three-column obstruction, which requires a separate addendum.
+The separate all-length auditc1605aa3 ACCEPTS that repair and the complete
+initial all-length/S4/retained-s theorem,15929chars exactstream/API,
+original76340exit0. Its packet predates the later three-column obstruction;
+a separate addendum audits that result.
 
 21 October: [short negative-singleton endings](SHORT_NEGATIVE_SINGLETON_ENDINGS.md)
 exclude incident length four in arbitrary complete U/rotor extensions.

@@ -219,6 +219,10 @@ claims once. Eliminating s using s<=p recovers the convenient weaker bound
 mu>=n0+u+ceil((p+m8-t)/2) and its threshold
 t<=2n0+2u+p+m8+1. Unlike immediately substituting s<=p, (2) retains the
 extra lower capacity whenever p>s. Neither bound allocates p a second time.
+Its lower bound on 2mu and its permitted residual threshold improve by
+exactly p-s. The rounded lower bound on mu can tie the weaker one when
+p-s=1, depending on parity; no strict rounded improvement is asserted in
+every instance.
 
 Here t now excludes E/S companions of EVERY length. Every old certificate
 is retained; no short negative-corner pair is extrapolated to a taller
@@ -253,7 +257,11 @@ with ordinary propext/Classical.choice/Quot.sound, NO sorry or native_decide.
 The all-source role catalogue, reconstruction, joint physical injection and
 unmarked-owner/count adapters are written proofs, not end-to-end Lean claims.
 The earlier residual integer lemmas apply unchanged with the new q,t,n0.
-Independent review of this later all-length extension must be separate from
-cc4dd625, whose supplied packet predates it.
+Independent reviewc1605aa3 completed ACCEPT for the all-length classification,
+joint transfer, S4 exclusion and retained-s bound, and separately ACCEPTED
+the repaired short-note wording. Its15929character response matches the
+original stream exactly. This is a written-proof review, not execution
+certification. The later three-column obstruction has its own pending
+addendum request, tracked in output/narrow-south-obstruction-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
