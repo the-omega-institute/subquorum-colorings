@@ -32,6 +32,23 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [width-six interleaving theorem](docs/WIDTH_SIX_TWO_GATE_INTERLEAVING.md)
+proves joint allocation at every reserve when all positive U sources have
+width six and even leg-height difference at most four, with arbitrarily
+many positives and unrestricted negative U/rotor dimensions and phases.
+This improves the matching coefficient from five-sixths to one on this
+complete-source class. A common pool pays zero-activation doubles with
+two distinct defect slots and certain single-activation doubles with one:
+H >= 2z+r and sigma >= n0-e-floor((s-r)/2). Tight longitudinal gates
+provide exclusive witnesses, so no slot is reused. Seventeen scoped local
+Lean declarations and individual axiom audits pass;771 physical images
+include142 tight marked-side occurrences, while complete paid-single-double
+and interleaving fixture coverage is zero. The general geometric adapters
+remain written; the new independent review is pending. The remaining
+nonexceptional A+A candidate needs width-six height gaps at least six or
+short width-eight/ten transverse gates. Unrestricted mixed allocation and
+arbitrary-grid equality remain open.
+
 The [two-slot compensation theorem](docs/TWO_SLOT_COMPENSATION_FOR_UNACTIVATED_DOUBLES.md)
 pays every unactivated nonexceptional double-marked positive from distinct
 actual defect slots, without sharing resources between sources or witness
@@ -43,7 +60,8 @@ s<=1 are covered. The first nonexceptional one-reserve failure now has
 only the A+A census, with no nonfull defect tiles. Sixteen scoped Lean
 declarations and664 physical controls pass; complete-image fixtures do not
 exercise blank/single-activation branches, whose geometry remains written.
-The stronger theorem has a separate pending review. Unrestricted mixed
+The two-slot written theorem has an independent ACCEPT review under its
+stated catalogue and ledger dependencies. Unrestricted mixed
 allocation and arbitrary-grid equality remain open.
 
 The [short-leg defect injection](docs/SHORT_LEG_DEFECT_INJECTION.md) assigns

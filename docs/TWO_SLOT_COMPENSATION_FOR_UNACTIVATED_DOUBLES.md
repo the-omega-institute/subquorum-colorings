@@ -158,18 +158,18 @@ different actual slots, not two roundings of one defect subtotal.
 ## 5. A common physical pool and the count
 
 Let B count all blank-gate marked sides, including sides of other positive
-sources. Let C count the z sources with both gates occupied. Section2
+sources. Let Cocc count the z sources with both gates occupied. Section2
 gives B distinct L2bar tiles, each with its two actual slots. Section4
-gives two distinct forced tiles for each of the C sources. All2C tiles
+gives two distinct forced tiles for each of the Cocc sources. All2Cocc tiles
 are distinct across their original positive owners and avoid every one
 of those B tiles, by the preceding geometric non-reuse lemmas. Reserve
 one slot in each forced tile; its actual weight is at least one. Hence
 
-    H>=2B+2C.                                     (5)
+    H>=2B+2Cocc.                                     (5)
 
-Every one of the remaining z-C sources has at least one blank marked
+Every one of the remaining z-Cocc sources has at least one blank marked
 side, and different such sources choose different canonical tiles. Thus
-z-C<=B, so(5) proves H>=2z. This pays each zero-activation double once
+z-Cocc<=B, so(5) proves H>=2z. This pays each zero-activation double once
 with two units. It does not allocate the same L2bar's second slot to an
 unrelated source or spend regular full-tile credit again.
 
@@ -238,8 +238,14 @@ these branches are supported by the universal written arguments, not by
 an unexercised test. The remaining A+A census is arithmetic, not a
 physical realization or an impossibility proof.
 
-Independent review of this stronger theorem is submitted on original
-stream68434, with both the new note and the exact dependency texts. No
-verdict is inherited from the accepted preceding three-pattern theorem.
+Independent taskd0553d32 completed ACCEPT at04:06:57UTC, observed
+gpt_6/pro,18634 characters, for the written blank-gate rigidity,
+occupied-gate classification, two-witness non-reuse, all-reserve criterion
+and only-A+A reduction under the supplied source/ledger/component
+dependencies. Its original stream68434 ended with DONE and exit0 and
+matches the task API response exactly. It did not execute code or Lean;
+complete physical adapters remain written. The suggested count rename
+Cocc distinguishes occupied-gate doubles from ledger credit C. See
+output/unactivated-double-compensation-review.json.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
