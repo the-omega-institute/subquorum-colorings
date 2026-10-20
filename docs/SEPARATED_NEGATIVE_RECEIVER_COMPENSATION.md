@@ -192,8 +192,10 @@ implemented. It accepts the written deduction from the established
 ledger/profile/injection inputs; execution evidence remains separate.
 The earlier all-phase ACCEPT is an input result, not the review of this
 new theorem. A separate exploratory
-Oracle taskf629ba4e asks about unrestricted reserve payment; it has no
-completed result yet. A scoped one-negative-rotor SAT discovery returned
+Oracle taskf629ba4e completed with proposed half-slot and rotor-only
+arguments. The half-slot argument is checked in
+ACTUAL_IRREGULAR_HALF_SLOT_BUDGET.md; the rotor-only propagation argument
+still requires independent verification. A scoped one-negative-rotor SAT discovery returned
 UNKNOWN at120 seconds, which supplies no exclusion or proof.
 
     python3 develop/check_separated_negative_compensation.py \
@@ -203,6 +205,27 @@ UNKNOWN at120 seconds, which supplies no exclusion or proof.
 
 The same argument gives a uniform bound WITHOUT (H) and with arbitrary
 rotor phases, if the two exceptional roles are charged explicitly.
+For completeness, the exhaustive rotor catalogue is
+
+| Effective phase | Original receiver profiles |
+|---|---|
+| (0,0), charge -2 | one4P0T and four1P1T |
+| (0,1), charge zero | two1P2T and two3P0T |
+| (1,0), charge zero | two1P2T and two3P0T |
+| (1,1), charge zero | four2P1T |
+
+Thus every zero-rotor receiver is GOOD (1P2T or2P1T), or3P0T.
+This exhaustiveness is the catalogue input (Z) needed below. Directly
+intersect the eight original endpoints and eight original selections
+with aligned2x2 tiles to obtain the four rows. Every integer translation
+is one of these four shifts followed by an even translation, which
+merely relabels tiles. Every square-lattice isometry can be written as
+a tiling-preserving isometry after one of these shifts; transporting the
+tiling preserves endpoint/support incidence and the displayed profiles.
+This fundamental-domain argument covers all translations and isometries.
+The four coordinate counts are also checked by kernel reduction in
+formal/SubQuorum/SingletonNegativeDefects.lean.
+
 For each physical receiver tile Q let r_Q count its negative original
 endpoint owners and v_Q count those owners whose original profile is
 1P1T or2P0T. Define
@@ -263,9 +286,12 @@ r_Q<=2(r_Q-1) on a shared tile. The finer v_Q count avoids charging
 negative owners with only regular profiles in that tile.
 
 The independent ACCEPT70a45736 covers Sections1-5 only. Follow-up
-ac50f553-63c2-455d-8856-7f5402b7547a on original stream34424 is
-dispatched specifically to review Section6; no ACCEPT of this extension
-is claimed yet. General-defect physical controls and abstract accounting
+ac50f553-63c2-455d-8856-7f5402b7547a on original stream34424 completed
+REVISE, narrowly requesting the exhaustive zero-rotor catalogue (Z).
+It found the reservation, defect accounting and algebra correct under (Z).
+The explicit catalogue and fundamental-domain proof above repair that
+omission; no new ACCEPT is implied. The terminal9739-character response
+exactly matches the completed original stream. General-defect physical controls and abstract accounting
 are recorded separately from the accepted review's scope.
 
 All640 complete physical images also pass the general tilewise defect

@@ -729,5 +729,34 @@ shared by negative sources and H counts the negative1P1T/zero3P0T role.
 All640 complete physical images pass both the tilewise and global
 inequalities;496 give a nonnegative lower bound. The new sufficient
 condition is D+H<=|N-B|+2R. This extension is outside the scope of the
-accepted Sections1-5 review. Its separate follow-up review is dispatched;
-it does not settle unrestricted compensation.
+accepted Sections1-5 review. Its separate review returned REVISE, narrowly
+requesting the exhaustive zero-rotor catalogue. Section6 now states that
+catalogue and proves the four-phase reduction explicitly; the review is
+archived without relabelling its verdict.
+
+The [singleton-defect refinement](docs/SINGLETON_NEGATIVE_DEFECT_COMPENSATION.md)
+proves sigma>=|N-B|+2R-O-F-H. Shared bar profiles pay themselves; O counts
+shared tiles with a negative1P1T owner, while F is the extra unit when
+all four owners are negative1P1T. Thus positive U sources, negative
+phase11 U sources and arbitrary zero rotors satisfy coefficient one
+with unrestricted receiver overlap. All434 feasible signed local packings
+pass; the refined bound is nonnegative on all640 physical controls,
+strictly improving the old D+H bound on160 of them.
+
+The [actual-demand half-slot theorem](docs/ACTUAL_IRREGULAR_HALF_SLOT_BUDGET.md)
+proves Kirregular<=S+C+floor(BR/2), with BR counting actual zero-rotor
+3P0T/negative1P1T contacts. It gives sigma>=N-G-floor(BR/2) and removes
+the rotor-count restriction when all U sources are positive and zero
+rotors have only2P1T profiles. With no positive U, arbitrary negative
+U phases and negative rotors also satisfy reserve when zero rotors have
+only2P1T profiles. Local credits are used after regular expenditure.
+The half-slot bound is nonnegative in592 of640 physical controls; the
+two new sufficient bounds complement one another.
+
+Seventeen additional Lean declarations and individual axiom audits pass
+locally, covering local profile reduction, all four rotor phase catalogues
+and conditional global arithmetic. The full geometric adapter remains
+written. A fresh same-conversation review covers the repaired general
+bound and both refinements; its status is recorded separately. The proposed
+rotor-only propagation theorem is still unverified. Unrestricted mixed
+source payment and the rectangular-grid triple equality remain open.

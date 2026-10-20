@@ -175,12 +175,23 @@ def inspect_general_defect(current, modules):
     bar_reservations = 0
     overlap_tax = 0
     zero_corner_tax = 0
+    singleton_overlap_tax = 0
+    quadruple_singleton_tax = 0
+    irregular_slots = 0
+    exceptional_u = 0
+    exceptional_rotor = 0
+    half_slot_remainder = 0
     for tile, owners in represented.items():
         cells = vertices_of({tile})
         negative = [index for index in owners if modules[index]['charge'] < 0]
         profiles = {index: (len(cells & modules[index]['endpoints']),
                             len(cells & modules[index]['selected'])) for index in owners}
         reservation = sum(profiles[index] == (2, 0) for index in negative)
+        singletons = sum(profiles[index] == (1, 1) for index in negative)
+        singleton_overlap = int(len(negative) >= 2 and singletons > 0)
+        quadruple_singleton = int(singletons == 4)
+        singleton_overlap_tax += singleton_overlap
+        quadruple_singleton_tax += quadruple_singleton
         bar_reservations += reservation
         overlap = 0
         zero_corner = 0
@@ -196,14 +207,52 @@ def inspect_general_defect(current, modules):
                 zero_corner = 1
         new_full = cells <= endpoints and not any(cells <= module['endpoints'] for module in modules)
         correction = 2*int(new_full)-regular[tile]
+        local_slots = sum(len(cells & boundary(modules[index])[2]) for index in owners)
+        three_owners = [index for index in owners if profiles[index] == (3, 0)]
+        exceptional_three = int(new_full and singletons == 1 and bool(three_owners))
+        if exceptional_three:
+            assert len(three_owners) == 1
+            if len(modules[three_owners[0]]['endpoints']) == 8:
+                exceptional_rotor += 1
+            else:
+                exceptional_u += 1
+        local_remainder = local_slots+exceptional_three-2*(irregular[tile]-correction)
+        assert local_remainder >= 0
+        irregular_slots += local_slots
+        half_slot_remainder += local_remainder
         assert correction >= 0
         assert irregular[tile]+corner_assignments[tile] <= correction+reservation+overlap+zero_corner
+        assert irregular[tile]+corner_assignments[tile] <= (
+            correction+reservation+singleton_overlap+quadruple_singleton+zero_corner)
     assert slots['negative_mass'] == bar_reservations+negative_u+2*negative_rotors
+    assert irregular_slots == 2*slots['negative_mass']-2*slots['diagonal_phase']
+    assert exceptional_u <= 2*slots['diagonal_phase']
+    assert exceptional_rotor == zero_corner_tax
+    correction_total = physical['residual_square_credit']
+    irregular_total = sum(irregular.values())
+    assert irregular_total <= (slots['negative_mass']-slots['diagonal_phase']+
+                              correction_total+(exceptional_u+exceptional_rotor)//2)
+    assert irregular_total <= slots['negative_mass']+correction_total+exceptional_rotor//2
+    half_slot_bound = slots['positive']-slots['marked_sides']-exceptional_rotor//2
+    assert physical['two_guard_credit'] >= half_slot_bound
+    assert (2*(slots['negative_mass']+correction_total-irregular_total-slots['marked_sides']) ==
+            2*slots['diagonal_phase']-exceptional_u-exceptional_rotor+
+            half_slot_remainder-2*slots['marked_sides'])
     lower_bound = abs(slots['positive']-negative_u)+2*negative_rotors-overlap_tax-zero_corner_tax
+    singleton_bound = (abs(slots['positive']-negative_u)+2*negative_rotors-
+                       singleton_overlap_tax-quadruple_singleton_tax-zero_corner_tax)
+    assert singleton_bound >= lower_bound
+    assert physical['two_guard_credit'] >= singleton_bound
     assert physical['two_guard_credit'] >= lower_bound
     assert physical['half_area']-physical['objective'] >= lower_bound
     return dict(positive=slots['positive'], negative_u=negative_u, negative_rotors=negative_rotors,
                 overlap_incidence_tax=overlap_tax, zero_corner_tax=zero_corner_tax,
+                singleton_overlap_tax=singleton_overlap_tax,
+                quadruple_singleton_tax=quadruple_singleton_tax,
+                singleton_guaranteed_slack=singleton_bound,
+                irregular_slots=irregular_slots, exceptional_u=exceptional_u,
+                exceptional_rotor=exceptional_rotor, half_slot_remainder=half_slot_remainder,
+                half_slot_guaranteed_slack=half_slot_bound,
                 bar_reservations=bar_reservations, guaranteed_slack=lower_bound,
                 finer_slack=physical['two_guard_credit'],
                 actual_slack=physical['half_area']-physical['objective'])
@@ -243,6 +292,12 @@ def main():
                    general_with_overlap=sum(record['overlap_incidence_tax'] > 0 for record in general),
                    general_with_zero_corner=sum(record['zero_corner_tax'] > 0 for record in general),
                    general_nonnegative_bound=sum(record['guaranteed_slack'] >= 0 for record in general),
+                   singleton_nonnegative_bound=sum(record['singleton_guaranteed_slack'] >= 0 for record in general),
+                   singleton_strict_improvement=sum(record['singleton_guaranteed_slack'] > record['guaranteed_slack']
+                                                    for record in general),
+                   half_slot_nonnegative_bound=sum(record['half_slot_guaranteed_slack'] >= 0 for record in general),
+                   half_slot_strict_improvement=sum(record['half_slot_guaranteed_slack'] > record['guaranteed_slack']
+                                                    for record in general),
                    actual_irregular_images=sum(record['irregular_events'] > 0 for record in physical),
                    actual_marked_images=sum(record['marked_sides'] > 0 for record in physical),
                    actual_corner_assignment_images=sum(record['corner_assignments'] > 0 for record in physical),
