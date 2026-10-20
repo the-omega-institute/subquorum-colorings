@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+21 October: [positive pair transfers and protected defects](PAIR_GATE_TRANSFERS_AND_PROTECTED_DEFECTS.md)
+inject ALL positive gate consumers into distinct activated terminals. Marked
+height-six recipients with forced height-eight transverse owners protect
+distinct permanent U0/L3 occurrences, m8<=U0+L3. Counting all losing groups
+ONCE strengthens the loss bound to2L<=2R(H)-A(H)-m8(H). Two complete connected
+five-source examples increase the persistent integer floor from1to2.
+12scoped Lean declarations,832images33728legal restrictions2024component
+subextensions PASS; independent written reviewcc5ab6b7 ACCEPT with endpoint
+wording and marked-label preservation clarified. General source/count adapters
+remain written. Arbitrary negative-U endings/full-bar channels and FULL
+allocation/grid equality remain OPEN; no universal coefficient improvement.
+
 21 October: [feasible contact-hull localization](CONTACT_HULL_LOCALIZATION_AND_RAW_CONTACT_OBSTRUCTION.md)
 identifies each component collection's UNIQUE least old contact carrier by exact
 Horn closure. All R/N/G/mu increments localize to that complete feasible core;
