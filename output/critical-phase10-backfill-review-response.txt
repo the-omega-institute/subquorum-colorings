@@ -1,0 +1,115 @@
+ACCEPTThe new backfill theorem is sound as a general conditional theorem under the stated complete original-source hypotheses and the inherited critical owner-profile theorem. The two successive consumptions, separation from every first/LONG and critical receiver, mutual backfill-tile injection, and the stated endpoint counts all follow. Recurring original owners cause no gap.The formal scope is narrower: the supplied Lean file states normalized geometric and ownership implications, finite orientation catalogues, and arithmetic consequences. The assembly over actual source families, transported physical tiles, event families, and finite endpoint unions remains in the written proof. I found the necessary mathematical adapters available from the supplied definitions and inherited hypotheses; I did not find an additional hypothesis needed to make the written theorem valid.    critical-phase10-backfill-revie…1. The imported definitions support the same-owner two-step stencilI checked the new stencil against both supplied imports, including endpoint, support, pull, rotorP, rotorMove, rotorOwners, and the eight-element frames definition.Use
+$$N=(-1,0),\quad S=(1,0),\quad E=(0,1),\quad W=(0,-1).$$
+For a critical root normalized to  $0$  with frame  $(N,E)$ , the north and west neighbors are foreign original endpoints. Its original owner must therefore avoid both.U ownersThe supplied endpoint predicate consists of the two-row bar
+$$\{0,1\}\times\{1,\ldots,w\}$$
+and the two stems in columns  $1,w$ .The possible root roles can be checked directly:An interior bar endpoint or lower bar corner has three own cardinal neighbors, so it cannot avoid both north and west.A nonterminal stem endpoint has two opposite own neighbors. Every opposite cardinal pair includes north or west.An upper outer bar corner or terminal remains.At an upper outer corner, the original bar supplies two successive endpoints along an available direction. At a terminal, its incident stem supplies the two successive endpoints. The legal bounds  $w\ge6$  and incident height at least  $4$  cover the minimum dimensions.Thus one single original owner contains either
+$$(1,0),(2,0)
+\qquad\text{or}\qquad
+(0,1),(0,2).$$
+Transporting back gives exactly
+$$t-s,t-2s\in P_G
+\qquad\text{or}\qquad
+t+d,t+2d\in P_G.$$
+No phase assumption is needed for this preliminary statement.Rotor ownersThe displayed rotorP has central square
+$$\{(2,2),(2,3),(3,2),(3,3)\}$$
+and tips
+$$(1,2),(2,4),(3,1),(4,3).$$
+Each central endpoint has three own neighbors. A root avoiding north and west must consequently be a tip. Every tip has two successive inward endpoints through the central square.The endpoint template is invariant under the affine quarter-turn
+$$(r,c)\longmapsto(c,5-r).$$
+Therefore its arbitrary signed-coordinate images reduce, up to translation, to the two chiralities used by rotorMove. Anchoring every original endpoint at the root and filtering the north/west exclusions covers the relevant roles.This supplies the general-placement interpretation of the fixed rotorOwners statement. The new two-step stencil is therefore valid for both permitted owner types, with the same owner retained throughout the run.2. The transported U10 and U11 terminal geometry is correctThe distinction between a source’s actual effective phase and a phase obtained by resetting the partition is essential here. The supplied argument uses the actual transported partition correctly.The U10 root owner  $G$ The inherited classification and bar/wall exclusion make a U10 critical root a south terminal. Its inverse coordinate map has the form
+$$(r,c)\longmapsto(h-r,a+\varepsilon c),$$
+where  $(h,a)$  is either  $(\mathrm{left},1)$  or  $(\mathrm{right},w)$ , and  $\varepsilon$  records the column flip.The actual critical tile is  $Q=\{0,1\}^2$ . Its canonical lower corner is
+$$\bigl(h-1,\ a-\mathbf1_{\mathrm{flipColumn}}\bigr).$$
+Since  $h$  is even, its first parity is  $1$ . The actual phase10 condition forces:TerminalRequired column flip $(\mathrm{left},1)$ true $(\mathrm{right},w)$ falseThese are precisely the two cases selected by hphase in phase_ten_south_terminal_backfill_stencil.Consequently,
+$$(0,0),(1,0),(2,0)\in P_G,$$
+while
+$$q=(1,-1)\in S_G,
+\qquad
+q,\ r=(1,-2),\ (1,1)\notin P_G.$$
+In canonical coordinates,  $q$  is the odd-row inward support at  $(h-1,2)$  or  $(h-1,w-1)$ . The bounds  $h\ge4,w\ge6$  keep the stated nonendpoints away from the bar and the other stem. They also show that  $(1,0)$  is neither original terminal of  $G$ .The phase11 companion  $F$ The companion-role hypothesis in the new Lean lemma follows from the supplied inherited continuation geometry.At the first forced point, the two inherited inverse maps have anchors  $(0,v)$  and  $(0,1)$ . Moving the origin to the critical point
+$$t=(1-v,h+1)$$
+changes these anchors to
+$$(h+1,1)
+\quad\text{or}\quad
+(h+1,v),$$
+with exactly the transpose and flip choices stated in hrole.For example, the first resulting map sends
+$$(0,-1),(0,-2),(0,-3)$$
+to
+$$(h,1),(h-1,1),(h-2,1).$$
+All three are original endpoints, including when  $h=4$ . It sends  $r=(1,-2)$  to the odd-row inward support, whereas  $q=(1,-1)$  becomes an even-row inward nonendpoint and nonsupport.Thus the exact claimed profile is correct:
+$$P_F\cap Q_b=\{(0,-2),(0,-1)\},
+\qquad
+S_F\cap Q_b=\{(1,-2)\}.$$
+The Lean lemma explicitly supplies the needed endpoint memberships, support membership, and endpoint exclusions. Its conclusion does not literally state the complete support intersection, but the remaining support exclusions follow directly from the supplied support predicate.The physical backfill tileThe coordinate-free identity is
+$$Q(e)=t+\{0,-s,d,-s+d\},
+\qquad
+B(e)=Q(e)-2d.$$
+Hence, after normalization,
+$$B(e)=Q_b=\{0,1\}\times\{-2,-1\}.$$
+Translation by the even lattice step  $-2d$  preserves the aligned tile partition. Therefore  $Q_b$  is an actual distinct tile of the same transported physical partition. No independent parity choice for the backfill tile or the second event is needed.3. The two mandatory consumptions are successive and noncircularHere the required physical interpretation is
+$$P=\bigcup_{\text{original owners }H}P_H.$$
+The proof establishes membership in this existing original endpoint union. It does not modify the matching or construct new endpoints.The degree condition used is the condition on a retained selected site: it cannot have two distinct occupied endpoint neighbors.First consumption.The original support  $q=(1,-1)\in S_G$  has distinct persistent endpoint neighbors
+$$(1,0)\in P_G,\qquad (0,-1)\in P_F.$$
+If  $q\notin P$ , mandatory retention would select it, contradicting that degree condition. Thus  $q\in P$ .Second consumption.Now  $r=(1,-2)\in S_F$  has distinct endpoint neighbors
+$$q\in P,\qquad (0,-2)\in P_F.$$
+The same argument gives  $r\in P$ .Together with the two original  $F$  endpoints, this fills  $Q_b$ .The exact profiles establish that both  $q$  and  $r$  belong to neither  $F$  nor  $G$ . Their owners may recur elsewhere, and the two points may have the same other owner. Neither possibility affects the argument.4. Separation from all first/LONG receivers is completeFor an ordinary receiver rooted at  $x$ , its actual tile is
+$$x+\{0,s',-d',s'-d'\},$$
+and its four active endpoints are
+$$x-s'-d',\quad x-d',\quad x+s'-d',\quad x+2s'-d'.$$
+Each must have tag  $\operatorname{some}(s')$ .Write
+$$A=(0,-2),\quad B=(0,-1),\quad C=(1,-2),\quad D=(1,-1).$$
+For the ordinary tile to equal  $Q_b$ , the directions  $s'$  and  $-d'$  must be the two inward directions at its root. This gives exactly eight possibilities.Every contradiction point below has known tag none, from the original  $F$  or  $G$  owner:RootFrame  $(s',d')$ Active endpoint with incompatible tag $A$  $(S,W)$  $B$  $A$  $(E,N)$  $(1,0)$  $B$  $(S,E)$  $A$  $B$  $(W,N)$  $(1,0)$  $C$  $(N,W)$  $B$  $C$  $(E,S)$  $A$  $D$  $(N,E)$  $A$  $D$  $(W,S)$  $B$ The case
+$$x=A,\qquad(s',d')=(E,N)$$
+uses specifically
+$$x+2s'-d'=(1,0).$$
+Thus the fourth active endpoint is genuinely needed for the supplied exclusion. It is present in activeOrdinary.This proof applies uniformly to first and LONG receivers, whether full or nonfull, on any component, with recurring owners allowed.5. Separation from all critical receivers: all five cases checkFor a critical receiver, the actual tile is
+$$x+\{0,-s',d',-s'+d'\}.$$
+Again there are eight same-tile placements. Three fail immediately through the known  $G$  tags:Excluded placementCritical active endpoint already tagged none $x=B,\ (s',d')=(E,S)$  $(0,0)$  $x=D,\ (s',d')=(S,W)$  $(2,0)$  $x=D,\ (s',d')=(E,N)$  $(1,0)$ The other five are exactly the supplied catalogue.Case 1:  $x=(0,-2)$ , frame  $(N,E)$ The root’s original owner is  $F$ . Its same-owner two-step run must be south or east.The south run requires  $(1,-2)\in P_F$ , contradicting the exact  $F$  profile.The east run requires  $(0,0)\in P_F$ , contradicting its original ownership by  $G\neq F$ .Case 2:  $x=(0,-2)$ , frame  $(W,S)$ The two alternatives are east and south, in the reverse order. The same two contradictions apply.Case 3:  $x=(0,-1)$ , frame  $(N,W)$ The second event’s original phase11 U companion owns
+$$x-d'=(0,0).$$
+Original endpoint uniqueness identifies that companion with  $G$ , whose fixed original type and phase are U10. This is impossible.This step requires phaseEleven to mean the actual original U11 property under the fixed transported partition. The supplied inherited setting provides that interpretation. Recomputing phase after independently resetting a local partition would invalidate the argument, but that is not what the note does.Case 4:  $x=(1,-2)$ , frame  $(S,E)$ Let its original owner be  $H$ . The exact profiles give
+$$H\neq F,\qquad H\neq G.$$
+Its two-step run is north or east.The north run immediately reaches  $(0,-2)\in P_F$ .The east run reaches  $(1,0)\in P_G$  on its second step.Both violate original endpoint uniqueness.Case 5:  $x=(1,-2)$ , frame  $(W,N)$ The alternatives are the same east and north runs, in reverse order. Both fail as above.These exclusions use original ownership and fixed source properties. They never require every source appearing in the two events to be globally distinct.Finally, every critical root lies in its actual receiving tile. Because all these tiles belong to one partition, a critical root in  $Q_b$  would have receiving tile  $Q_b$ . Conversely, equality with  $Q_b$  puts its root there. The local exclusions therefore separate the backfill from every critical receiving tile, and partition disjointness upgrades inequality of tiles to disjointness of their endpoint positions.6. Mutual backfill-tile injection permits recurring companionsThe proof correctly separates two situations.The same original companion  $F$ A fixed phase11 U has only two original terminals. Their canonical columns differ by  $w-1\ge5$ . A signed coordinate permutation preserves the existence of a coordinate difference at least  $5$ , whereas a physical tile has coordinate spans only  $1$ . Thus a single  $Q_b$  contains at most one of those terminals.The terminal
+$$f=t-d$$
+has a unique incident direction in  $P_F$ , namely  $-d$ . It therefore determines  $d$ , then
+$$t=f+d.$$
+The inherited critical-point injection identifies the event.This proves injectivity of  $e\mapsto(F(e),B(e))$  while allowing  $F$  to recur in other events and tiles.Different original companions  $F,F'$ If their backfill tiles coincide, their original companion pairs are disjoint. After normalizing the first pair to the top row of  $Q_b$ , the second pair must be its bottom row.The second terminal is one endpoint of that bottom pair, and its incident endpoint is the other. The backfill extends north of the pair. Consequently the only possibilities are
+$$t'=(1,0),\quad(s',d')=(S,E),$$
+or
+$$t'=(1,-3),\quad(s',d')=(S,W).$$
+Both contradictions are valid:First possibility:  $t'=(1,0)$  belongs to the first  $G$ . Original uniqueness makes it the second event’s root owner as well. Since the second event belongs to the U10 subfamily, the inherited classification makes  $t'$  a terminal of that owner. But the new U10 stencil proves that  $(1,0)$  is neither terminal of  $G$ .Second possibility:  $f'=(1,-2)$ , and the  $F'$  terminal run points east. The legal incident height supplies  $(1,0)\in P_{F'}$  two steps inward. That point belongs to  $G$ . The U11/U10 distinction gives  $F'\neq G$ , so original uniqueness fails. Alternatively,  $f'\in P_{F'}$  and  $f'\notin P_G$  already establish their distinction.Thus the backfill tiles are globally injective. This conclusion does not assume injection of companion owners or injection of critical receiving tiles.7. The joint full and external counts are correctLet  $K_{10}$  count critical events whose original root owner is a U of effective phase10, within the consistently selected event family.Backfill injection and fullness give
+$$W_b=\bigsqcup_{e\in\mathcal E_{10}}B(e),
+\qquad
+|W_b|=4K_{10}.$$
+Separation from all ordinary and critical receiving tiles makes  $W_b$  disjoint from  $X,V_e,V_c$ . The inherited profile theorem supplies the remaining disjointness and profile masses. Hence
+$$\boxed{
+|X\cup V_e\cup V_c\cup W_b|+J
+=
+2(C_{01}+L_{11})
++2K_e+K_{e3}+2K_{e4}+4K_c+4K_{10}.
+}$$
+The additional outside-owner contribution is correctly limited to  $2K_{10}$ .For each backfill, its companion pair
+$$D(e)=\{t-d,t-2d\}$$
+belongs to an original U11 owner. If  $C$  consists of chosen closed U01 owners, original endpoint uniqueness implies
+$$D(e)\cap P_C=\varnothing.$$
+Distinct backfill tiles make these pairs disjoint even when their companion owner recurs. Therefore their union contributes exactly  $2K_{10}$  guaranteed external positions.The two consumed corners may belong to  $C$ . The proof does not justify counting all  $4K_{10}$  positions externally, and the note does not do so.Before AA specialization, the resulting valid bound is
+$$|P\setminus P_C|+J
+\ge
+2(C_{01}+L_{11})
++2K_e+K_{e3}+2K_{e4}+2K_{10}.$$
+There is no  $4K_c$  term in this outside count.The same-component AA qualificationAll four backfill endpoints are in the root’s full cardinal endpoint component. In normalized coordinates, the following endpoint adjacencies suffice:
+$$t\sim(0,-1),\qquad
+(0,-1)\sim(0,-2),\qquad
+(0,-1)\sim q,\qquad
+q\sim r.$$
+For the qualifying chosen family in one AA endpoint component, the inherited hypotheses supply
+$$J=0,\qquad C_{01}\ge4\ell.$$
+Restricting every count to that same family and component yields
+$$\boxed{
+|P_{\mathrm{component}}\setminus P_C|
+\ge
+8\ell+2L_{11}
++2K_e+K_{e3}+2K_{e4}+2K_{10}.
+}$$
+The argument does not transfer an AA census from one component to another, and it does not use the false implication that AA forces  $A=0$ .No fresh reserveThe new terms count original endpoint positions. Full backfill tiles create no new nonfull  $H$  occurrence and no established independent  $R$  or  $Z_0$  payment.Likewise, an original full U01 critical return supplies its original profile mass; if its owner lies in  $C$ , that mass is internal to  $P_C$ . Its presence does not create fresh reserve.The existing compensation identity and reservation ledger therefore remain unchanged. The note correctly leaves the unrestricted allocation and grid equality open.8. What the Lean statements cover—and which adapters remain writtenThe normalized Lean statements have appropriate mathematical content, but their scope must be stated accurately.    critical-phase10-backfill-revie…Statement groupActual scopeU and rotor two-step lemmasCanonical U predicates and a fixed rooted rotor catalogue; general physical use requires source-coordinate transport.U10 terminal stencilAssumes the south-terminal role, specified inverse map, and actual-phase parity hypothesis.Companion terminal profileAssumes hrole; it does not itself derive that role from a critical event.Two support consumptionsArbitrary originalSupport, occupied, and selected predicates; concludes occupancy of the fixed four-point list.Ordinary exclusion and critical catalogueAssume a consistent tag function, frame membership, and translated tile-membership hypotheses.Five-candidate owner contradictionAn arbitrary owner type with uniqueness, phase predicates, endpoint facts, and a supplied same-owner run.Shared-backfill catalogueAssumes membership in possibleBackRoots and disjoint companion points; returns the two placements.Joint count and AA requirementArithmetic consequences of supplied mass identities, additivity, and an outside-count bound.The indispensable adapters are as follows:Owner and type interpretation: owns H p means  $p\in P_H$ ; phaseEleven H means an original U11 source. The distinguished root owner is an original U10 source.Phase transport: source phases refer to the fixed transported physical partition. The derived canonical lower-corner parity supplies hphase.Companion role: translating the inherited critical geometry supplies hrole.Occupancy: occupied is the union of original endpoint sets; mandatory retention and the selected-site degree condition supply the abstract consumption hypotheses.Tags: unique original ownership makes the phase01-only tag globally consistent; directions and coordinates are transported together.Physical tiles: the inherited receiver formulas and  $B(e)=Q(e)-2d$  supply the normalized membership hypotheses and partition disjointness.Mutual injection: equal backfill tiles place a root one step beyond an edge terminal, giving the eight possibleBackRoots. The written bottom-pair argument derives the two surviving placements directly. Same-companion recovery and elimination of both survivors remain written arguments.Counting and components: finite disjoint unions and the endpoint adjacency paths supply the cardinality and same-component hypotheses used by the arithmetic lemmas.These adapters are supplied in substance by the written proof and inherited setting. There is no assembled Lean theorem in this file quantifying over actual physical source configurations and proving global backfill injection and the resulting endpoint census. Acceptance here does not enlarge that formal scope.9. Controls and audit boundariesThe supplied record reports
+$$\texttt{critical\_phase10\_events}=0$$
+among 216 complete images containing 96 critical events. Inspection of complete_controls confirms that the new event-specific backfill assertions occur only after the phase10 filter. Thus the reported complete controls exercise none of those U10-specific branches. The local U samples and rotor/orientation controls establish neither complete U10 realizability nor sharpness.    critical-phase10-backfill-revie…For this audit, I inspected the new written theorem, its Lean statements, both supplied imports, the relevant inherited interfaces, and the checker logic. I checked the general geometry and finite orientation cases by ordinary mathematical reasoning. I treated the prior accepted owner-profile theorem as inherited input.I did not execute Lean, Python, tests, or enumerations; certify compilation or axiom receipts; validate unsupplied fixture constructors; or infer existence of a complete phase10 critical configuration.VERDICT: ACCEPT.
