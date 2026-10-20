@@ -32,6 +32,18 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [backfill corner routing theorem](docs/BACKFILL_CORNER_ROUTING_AND_SHALLOW_BARRIER.md)
+classifies the original owner of a critical U10 backfill corner into four U
+roles and excludes rotors. Complete bars force strict dimension drops:
+incident height4 or6 requires the companion leg to exceed the root width
+by at least2; when both widths are6, root incident height is at least12.
+Phase01 exits enter the existing singleton pool without reusing old receiver
+reservations; phase11 exits identify actual existing cap occurrences.
+Twenty-three scoped local Lean/axiom checks pass. Complete U10 critical
+witness coverage is zero; the general proof is geometric. Initial written
+audit is live and excludes the later height12 strengthening. No fresh
+reserve or full coefficient-one/grid equality is claimed.
+
 The [critical return theorem](docs/CRITICAL_PHASE01_BAR_RETURNS.md) replaces
 blanket freshness with two original bar slots per phase01 owner, attained
 by a complete seven-source family with two returns into ONE closed owner.
