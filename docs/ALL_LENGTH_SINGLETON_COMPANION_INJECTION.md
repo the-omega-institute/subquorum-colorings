@@ -187,8 +187,13 @@ consumed inside that forbidden interior, a contradiction.
 
 This proof explains the larger-leg S6 discovery failure below. It excludes
 this transverse-height-six/far-length-four subclass, not all longer south
-companions. This subsection was added AFTER the c1605aa3 review packet;
-that review must not be credited as checking it without a later addendum.
+companions. This subsection was added AFTER the c1605aa3 review packet.
+The separate bdb9f975 review ACCEPTED this written obstruction, including
+independence from the far-leg length k; its 5,349-character response matches
+the original stream exactly. This does not enlarge the earlier review's
+scope or certify program execution or end-to-end formalization. See
+[the independent response](../output/narrow-south-obstruction-review-response.md)
+and [receipt](../output/narrow-south-obstruction-review.json).
 
 ## 4. Effect on the conditional allocation and remaining obstruction
 
