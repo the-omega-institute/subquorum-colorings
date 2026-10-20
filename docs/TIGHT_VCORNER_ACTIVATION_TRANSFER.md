@@ -166,8 +166,12 @@ recurring source roles. No per-component activation pool is introduced.
 
 Let q0 count old S/P/R claims and qT all all-length E/S claims. Let kappa
 count the tight-Vcorner claims. Their original gate consumers are negative
-singletons, so these are disjoint classes of labelled demands. The above
-physical joint injection proves
+singletons, distinguishing them from the old S/P/R gate classes. Their
+uniquely normalized companion at y has the actual negative Vcorner role,
+distinguishing them from the E/S companion classes. The kappa claims are
+reclassified from the former uncertified remainder, so these are disjoint
+classes of labelled demands. This demand classification is separate from
+target nonreuse. The above physical joint injection proves
 
     q=q0+qT+kappa <= Aactivation.                  (2)
 
@@ -221,7 +225,14 @@ measured47% free memory and no real lean/lake comm basename. Controls pass
 288 disjoint C/X patterns,3020 disjoint C/X/Q partial patterns,123 small-
 width no-consumer controls, both rotor tip footprints and48 collisions
 against each old S/P producer frame. They do not establish completeness
-of the partial examples. Separate written audit2c96d3ca, original
-stream71377, is live and does not certify these executions.
+of the partial examples. Separate written audit2c96d3ca ACCEPTS the general
+forcing, dimensions, labelled-claim injection, all supplied target exclusions
+and conditional ledger. Its 15,028-character response matches original
+stream71377 exactly, with [DONE], exit0 and observed gpt_6/pro. Section6
+incorporates its clarification distinguishing demand classification from
+target nonreuse. This review does not certify finite controls or Lean
+execution, complete-extension existence, universal coverage or grid equality.
+See the [full response](../output/tight-vcorner-review-response.md) and
+[receipt](../output/tight-vcorner-review.json).
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
