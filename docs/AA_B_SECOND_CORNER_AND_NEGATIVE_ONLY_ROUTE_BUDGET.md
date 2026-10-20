@@ -134,7 +134,7 @@ Either case violates endpoint uniqueness: J differs from F by the original
 singleton/pair profiles in the output tile. Independent far heights and all
 legal widths are unrestricted. Consequently
 
-    KB=b=0 in the specified AA endpoint component.          (6)
+    KB=Binterior=0 in the specified AA endpoint component.  (6)
 
 This final crossing proof is unbounded and does not extrapolate from a finite
 search. Combined with Sections2--3 it excludes every possible owner of y.
