@@ -15,8 +15,9 @@ least8 every two edges; P->S is impossible at any dimensions. A P->R exit
 requires companion leg>=6 and intermediate width>=14.16scoped localLean,
 31904legal restrictions and3166abstract path controls PASS; actual complete
 S/R/PP/PR examples are absent from this fixture library. Written review3f49db6b
-LIVE covers the initial proof; the later stronger two exclusions need addendum
-review. No full demand payment or grid equality follows from acyclicity.
+ACCEPTS the initial proof; companion north-bar/self-producer explanations
+are explicit. Same-conversation addendum2b910319 is LIVE on the later stronger
+two exclusions. No full demand payment or grid equality follows from acyclicity.
 
 21 October: [positive pair transfers and protected defects](PAIR_GATE_TRANSFERS_AND_PROTECTED_DEFECTS.md)
 inject ALL positive gate consumers into distinct activated terminals. Marked

@@ -94,8 +94,10 @@ endpoints. The new owner's only possible own endpoint neighbor is east.
 It is a terminal. The two east-pointing rotor-tip footprints meet (2,4)
 of C0 or (4,4) of B0. Therefore it is a U terminal pointing east.
 
-Its north-directed bar is impossible: avoiding A's far stem first forces
-its bar columns inside A's width, and the bar would cross A's top row.
+Its row-three endpoint interval is columns3 through g+3. Avoiding A's
+far stem (3,w) forces g+3<w. A north-directed bar occupies columns g+2,g+3
+and reaches row1 because its width is at least6. Both columns lie in A's
+top-bar interval, so this direction is impossible.
 The remaining frame is Vg. Its row-three stem must avoid C0's bar at
 columns h+1,h+2, so g+3<h+1, hence g<=h-4 by evenness. This proves (4)
 and w>=12. The frame preserves physical tiles and gives a positive source.
@@ -115,6 +117,9 @@ do not repeat.
 An R target cannot also be an S target. At y the two possible producer
 anchors outside its physical tile are (3,4), owned by its companion, and
 (4,3), owned by the rotor. Neither can belong to a different positive owner.
+The companion cannot itself supply that S producer: y is its original
+terminal endpoint, whereas its own canonical gate is an original support,
+disjoint from its original endpoints. Thus there is no self-producer case.
 
 An R target cannot also be a P target. A P target determines its recipient
 incident frame and hence its hypothetical preceding producer frame. Here it
@@ -307,12 +312,17 @@ catalogue, global physical injection and graph/count adapters remain written.
 The [execution receipt](../output/rotor-transfer-path-formal-check.json)
 records the initial missing width hypothesis and simp-name correction.
 
-Independent written review3f49db6b, original7745, remains LIVE. Its submitted
-snapshot includes the initial rotor/injection/path proof, PP descent and
-weaker P->S gap. The stronger universal P->S exclusion and small-companion
-P->R obstruction above were derived later and require addendum review after
-the current answer. See the [review status](../output/rotor-transfer-path-review.json).
+Independent written review3f49db6b ACCEPTS the initial rotor/injection/path
+proof, PP descent and weaker P->S gap. Original7745 exited0/DONE; all17386
+response characters match the terminal API. Its two suggested explanations
+of the companion's north bar and R/S self-producer exclusion are explicit
+above. See the [review receipt](../output/rotor-transfer-path-review.json)
+and [response](../output/rotor-transfer-path-review-response.md). This is
+a written mathematical review, not code/Lean execution or a novelty certificate.
+The stronger universal P->S exclusion and small-companion P->R obstruction
+were derived later. Same-conversation addendum2b910319, original81788, is
+LIVE; no verdict inferred. See the [addendum status](../output/rotor-transfer-path-addendum-review.json).
 Original full-target taskb90c01ca/original91743 is also live and preserved.
-No review verdict, full allocation or universal grid result is inferred.
+No later-addendum verdict, full allocation or universal grid result is inferred.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
