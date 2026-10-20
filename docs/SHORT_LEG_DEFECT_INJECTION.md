@@ -68,6 +68,13 @@ It has either just that pair, contributing one L2bar tile, or the third
 endpoint(7,3), contributing one L3 tile. It is therefore in F. The chosen
 positive has NO original endpoint or support anywhere in Q.
 
+The fourth corner r=(7,3) cannot be finally selected. If it were a
+retained support, its original anchor is occupied. An anchor different
+from t=(6,3) would give r two occupied neighbors. An anchor equal to t
+would identify its source with the incoming pair owner by endpoint
+disjointness, but that owner has no original support in Q. Thus r is
+blank or an endpoint, as required by the two final profiles above.
+
 Translate this configuration so p=(6,2) becomes(0,0). Its fixed local data
 are an original negative pair at p=(0,0),t=(0,1), original negative
 endpoints(-1,0),(-1,1),(0,2), a positive endpoint z=(0,-1), and a finally
@@ -140,7 +147,9 @@ the preceding notes. Since n2<=d+L, (1) also gives
 
 The result holds independently on each actual endpoint component, because
 the complete-source restriction preserves these marks and geometric counts.
-For L=0, a failing component must therefore satisfy
+The reserve R=S+C-Kirregular is integral by its original source ledger;
+the identity D=2R alone would give only half-integrality. With that
+ledger integrality, a failing component with L=0 satisfies
 
     n0+R+1 <= n2 <= 2R-E.                   (3)
 
@@ -150,8 +159,9 @@ exactly three symbolic possibilities:
 
     A+A, A+L3, L3+L3.
 
-Each notation means two unit occurrences, not necessarily different types
-or geometric locations. The two weight-two alternatives and every pair
+Each notation means two distinct resources. In L3+L3 they are necessarily
+different physical tiles. Separately labelled A occurrences, or an A
+occurrence and a tile, may have coincident coordinates. The two weight-two alternatives and every pair
 involving U0, Z0 or L1 are excluded by the universal injection, not enumeration.
 The three remaining patterns are necessary alternatives, not realized fusions.
 Every L3 tile used by this injection has a pair-plus-singleton original
@@ -188,8 +198,10 @@ tiles, rather than just those selected for the proof.
 If a nonactivated double has both gates occupied, it is a width8/10,
 height4/6 positive. Each longitudinal gate gives the forced tile of Section2.
 If both gates were longitudinal, their tiles would be distinct: otherwise
-the same original corner and bar direction reconstructed in Section3 would
-give the same gate, whereas the two gates differ. Each tile can serve only
+the same original corner p and incoming stem direction s reconstructed
+in Section3 give the same gate u=p+4s, because the incident height is4.
+In the normalization p=(6,2), s=(-1,0), so u=(2,2). The two gates differ.
+Each tile can serve only
 this positive among forced witnesses, and neither can be a blank witness.
 One would therefore remain unused. Thus exactly one gate is longitudinal
 and the other transverse, and their original owners are distinct. In
@@ -225,13 +237,15 @@ All eight cross-type donor orientations and48 original corner controls
 pass. The seventeen symbolic D2 patterns leave three under the proved bound.
 All eleven scoped Lean declarations compile locally with Lean4.33.0 and their
 individual axiom audits pass without sorryAx/native_decide. See the controls
-and formal-check JSON receipts. Independent review0b750ade, original
-stream93950 in conv_1a4711a82720f3c1, is dispatched for the earlier weaker
-six-pattern version. The present sharpening also uses the explicit
-blank-gate pair profile and has its own review0cd69c94, original stream91113.
-It is dispatched separately to worker ny743dhk0f-go-2; the broker reports
-is_followup=false while the earlier turn is still pending, so prior review
-context is not assumed. The full updated note is in its prompt. No verdict
-is claimed for either version. See both review-live records.
+and formal-check JSON receipts. Independent review0b750ade completed
+ACCEPT for the earlier weaker six-pattern version; review0cd69c94
+completed ACCEPT for the current three-pattern bound and the saturation
+consequences, conditional on the stated complete-source dependencies.
+Their original streams ended with DONE and match the task API responses
+exactly. Both reviews concern written arguments; neither executed Lean
+or the checker or freshly retrieved every dependency. The present note
+includes the requested reserve-integrality, retained-support and gate-
+reconstruction clarifications. The stronger two-slot theorem has a
+separate review and does not inherit these verdicts.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

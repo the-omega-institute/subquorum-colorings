@@ -32,6 +32,20 @@ hypercube solution to these geometric and structural questions.
 
 ## Results and verification
 
+The [two-slot compensation theorem](docs/TWO_SLOT_COMPENSATION_FOR_UNACTIVATED_DOUBLES.md)
+pays every unactivated nonexceptional double-marked positive from distinct
+actual defect slots, without sharing resources between sources or witness
+types. If s doubles have exactly one activated terminal, e actual doubles
+are exceptional, and n0 positives are unmarked, the source ledger gives
+sigma >= n0-e-floor(s/2). Thus e+floor(s/2)<=n0 guarantees joint allocation
+at every reserve value; in particular all nonexceptional sources with
+s<=1 are covered. The first nonexceptional one-reserve failure now has
+only the A+A census, with no nonfull defect tiles. Sixteen scoped Lean
+declarations and664 physical controls pass; complete-image fixtures do not
+exercise blank/single-activation branches, whose geometry remains written.
+The stronger theorem has a separate pending review. Unrestricted mixed
+allocation and arbitrary-grid equality remain open.
+
 The [short-leg defect injection](docs/SHORT_LEG_DEFECT_INJECTION.md) assigns
 every nonexceptional doubly marked positive source a distinct activated
 terminal occurrence or irregular-pair/mixed-triple defect tile. Original pair-corner ownership
