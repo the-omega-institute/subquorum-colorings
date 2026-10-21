@@ -123,6 +123,12 @@ points and the unchanged partial-inventory accounting across both
 residual families, signed translations and long far legs. Enumeration
 is a control of the written all-parameter proof.
 
+The [continuation review](../output/secondary-ten-depth-eight-review.json)
+returned ACCEPT for this all-parameter exclusion and the excess3 corollary,
+including every collision coordinate and the old receipt interpretation.
+It is a written mathematical audit, rather than an independent execution
+check of the Lean source or finite controls.
+
 Different residual packages may still select the same actual compensator.
 The next question is whether their terminal claims can be assigned once
 per physical terminal and whether all remaining inter-package directed

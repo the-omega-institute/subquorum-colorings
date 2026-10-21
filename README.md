@@ -5,7 +5,8 @@ theorem for the two prescribed residual families has an ACCEPT written
 review. A new complete-extension exclusion removes the depth-eight
 upper-left U branch and strengthens distinct-owner baseline excess from1
 to3. Ten additional local Lean declarations and explicit collision controls
-pass. See the [exclusion proof and scope](docs/SECONDARY_TEN_DEPTH_EIGHT_COMPLETE_EXCLUSION.md).
+pass; the exclusion and stronger bound also have an ACCEPT written review.
+See the [exclusion proof and scope](docs/SECONDARY_TEN_DEPTH_EIGHT_COMPLETE_EXCLUSION.md).
 Global owner-budget nonreuse and exterior signed contacts remain open.
 
 21 October research checkpoint: a complete nine-source family refutes
