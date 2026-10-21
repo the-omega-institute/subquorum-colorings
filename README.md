@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest actual-staircase checkpoint: a [general receipt partition](docs/SECONDARY_TEN_ROOT_ACTUAL_STAIRCASE.md)
+gives DeltaPhi>=L/2-1>=2 for ANY endpoint-disjoint actual dimensions in
+the forced four-row staircase, conditional on the explicit full-U/rotor
+model and retained H3+B+R+A. Two possible P1 contacts share ONE width
+budget; staircase-pair tiles and old-boundary receipts are assigned once.
+113 reproducible exact-set samples, simultaneous-contact and long-chain
+controls, and11 scoped local Lean theorems pass. The geometric proof has
+a separate new independent review; no verdict yet. This is a selected-union
+compensation lemma, not complete-family allocation or a global grid bound.
+
 Latest forced-chain checkpoint: the fourth owner forces THREE further
 distinct west-terminal U's, forming a four-row support staircase. A
 [general depth-height tradeoff and geometric frontier](docs/SECONDARY_TEN_ROOT_SUPPORT_STAIRCASE.md)
@@ -7,8 +17,9 @@ force L<=v or L=v+2,f<=z-12. Explicit witnesses prove the geometric
 converse; their exact seven-owner ledger is v/2+L/2+10-3epsilon>=19,
 including the tight P1 contact debit. Arbitrary actual staircases need
 not be these witnesses.1280full-original witnesses,130exact-set controls
-and20scoped local Lean declarations pass; this new conditional review
-is live, while the fourth/reflected review completed ACCEPT. Complete-family
+and20scoped local Lean declarations pass. Its original independent review
+terminated with no_assistant_output and no mathematical verdict;
+the fourth/reflected review completed ACCEPT. Complete-family
 allocation and the global grid targets remain OPEN.
 
 Latest fourth-owner checkpoint: after the reflected cavity exclusions,
