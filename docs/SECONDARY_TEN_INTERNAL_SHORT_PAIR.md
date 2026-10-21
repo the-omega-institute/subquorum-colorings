@@ -185,5 +185,12 @@ single-pair receipt sets. Four nonuniform simultaneous groups with 2,5,11,23
 pairs have exact gains 16,44,96,206 and disjoint new full-tile/event sets.
 Local standalone Lean passes 32 declarations, including 25 theorems, with
 individual ordinary-axiom reports and no warnings/sorry/native axioms.
-The independent audit is running; no verdict is claimed. See the
+Independent audit52f81a04 completed ACCEPT of the entire ordinary theorem,
+including coupling, next-B window, exact receipts, renewed support and
+arbitrary-subset compensation. Original stream37600 exited0; its full
+15,218-character response exactly matches the terminal task response,
+and the original prompt matches the conversation. Observed gpt_6/pro.
+The reviewer did not execute the verifier or Lean; those local results
+are separate evidence. The arbitrary-far strengthening has its own audit.
+See the
 [validation record](../output/secondary-ten-internal-short-pair-validation.json).
