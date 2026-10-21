@@ -26,6 +26,8 @@ def baseline(width, old_far, length, other, root_bar, root_width, root_far):
 
 
 def allowed(width, length, other, root_bar, root_width, bar, breadth, far, west):
+    if bar > 18 or bar % 2 or breadth < 6 or breadth % 2 or far < 4 or far % 2:
+        return False
     terminal = bar+far
     if not west:
         if bar > root_bar-2:
@@ -138,6 +140,7 @@ def receipt_controls():
         assert phi_from(with_root, before)-phi_from(records, initial) == 1-old_delta
         root_owner, owner = len(records), len(with_root)
         bars = {18, root_bar-2, root_bar-4, root_bar-6, top-3, top-5, -50}
+        bars = {bar for bar in bars if bar <= 18 and bar % 2 == 0}
         breadths = {6, 8, root_width, root_width+2, root_width+4, 40}
         breadths |= {column-value for value in (old_terminal, old_terminal-2, -33, -35)}
         breadths = {value for value in breadths if value >= 6 and value % 2 == 0}

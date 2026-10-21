@@ -99,6 +99,11 @@ The far column is C+B-1, even. If B>=8 it lies at least C+7,
 across an aligned physical tile boundary from every H endpoint,
 whose maximum column is C+6. There is no far restriction.
 
+The bar itself is also disjoint: at both possible bar rows t,t+1<=23,
+H has no endpoint in columns C through C+6. This row-local emptiness
+follows from the recursive source records, in addition to the global
+maximum-column bound. Endpoints in those columns start below these rows.
+
 If B=6, the far column is C+5. Its first old endpoint is K's
 bar at row25, so the exact restriction is v<=24. All earlier rows
 in this column are empty, and there are no later contacts before this
@@ -240,6 +245,10 @@ axiom audit pass without warnings, sorry or native evaluation. The adapter
 from complete original U/rotor records to these witnesses, exact far-frontier
 geometry and source-labelled receipt sets remain written proofs.
 
-An independent review of this theorem, the short-return dependency and the
-full recursive source constructors has been submitted on a retained single
-stream. Its verdict is pending; see the companion validation record.
+Independent review of this theorem, the short-return dependency and the
+full recursive source constructors completed ACCEPT on task
+869ec698-79c3-4567-8474-3f33a12fdb32, original stream92280.
+Its full response exactly matches the terminal receipt. The row-local bar
+emptiness above is made explicit following that review. Terminal row30
+uses complete extendibility and is not implied by endpoint disjointness
+of a partial owner alone. See the companion validation record.

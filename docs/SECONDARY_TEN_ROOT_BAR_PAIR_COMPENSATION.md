@@ -228,7 +228,7 @@ Finite controls supplement the all-parameter written proof.
 
 Run `PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_root_bar_pair_compensation.py`.
 The final controls pass256 U roles,110 equalities of complete normalized
-records,8 rotor exclusions,2529 complete new tile/event sets,2121 collisions
+records,8 rotor exclusions,2509 complete new tile/event sets,2085 collisions
 and4 large width/height/far controls. They include8 negative second marginals,
 19 zero joint increments and6 essential three-owner corrections.
 
@@ -238,10 +238,14 @@ individually axiom-audited and no warnings, sorry or native evaluation.
 It checks the three blocked neighbours, forced north matching, rotor-fork
 contradiction, parity/bar frontiers and exact joint budget arithmetic.
 The complete original-record/terminal adapter, far-frontier geometry and
-receipt-set enumeration are written proofs. The original review stream for
-this new joint theorem is65748 and remains pending. Its packet includes
-the recursive source constructors and the earlier short-return dependency;
-the separate earlier root review remains on its original stream92280.
+receipt-set enumeration are written proofs. Independent review completed
+ACCEPT on task623a2234-8c76-4b42-b66c-12f513ae8fd6, original stream65748.
+Its full response exactly matches the terminal receipt. It checked the
+recursive prerequisites independently. A nonblocking checker issue is now
+fixed: candidate bars are restricted to s<=18, excluding incident depth2
+outside the model. The updated in-scope counts above replace2529/2121;
+the formulas, negative marginals and sharp example are unchanged.
+The earlier root review also completed ACCEPT on its original stream92280.
 
 The remaining branches include nonmaximal D, west root owners, later forced
 supports and nonreusing budgets across multiple return groups. Arbitrary
