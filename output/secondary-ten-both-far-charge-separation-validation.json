@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_BOTH_FAR_CHARGE_SEPARATION.md",
+  "verifier": "develop/check_secondary_ten_both_far_charge_separation.py",
+  "python_exit_code": 0,
+  "receiver_exact_count_controls": 144,
+  "consumer_exact_count_controls": 144,
+  "earlier_original_separation_controls": 3096,
+  "source_counts": "R: L+4+f/2 matching; L/2+5+f/2 endpointTiles;5+f/2 insideSupports; charge-1. T: M+1+g/2 matching; M+2+g/2 endpointTiles;4+g/2 insideSupports;charge1-M. Pair massM;positiveCount0.",
+  "review_response": "Original REVISE780b9242 mistakenly includes both R bar-end supports outside endpoint tiles. R71/45/18 and Rsharp65/41/16 both charge-1. Earlier-block column prose repaired with complete earlier B/P/Z/X/root row-column split. Original E and pair validators rerun PASS unchanged.",
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenBothFarChargeSeparation.lean",
+    "exit_code": 0,
+    "theorems": 9,
+    "preflight_memory_free_percent": 42,
+    "real_lean_lake_processes": [],
+    "scope": "Conditional count algebra and integer physical tile separation, individual ordinary-axiom audit; no warnings/sorry/native. Full source-set count and chart exhaustion written."
+  },
+  "independent_final_acceptance": false,
+  "followup_stream": 31558
+}

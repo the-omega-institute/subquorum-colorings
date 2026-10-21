@@ -123,3 +123,10 @@ three new full tiles and all ten owner-labelled events, the charge
 counts, both increments, and the next missing support. Finite controls
 supplement the all-g proof. No separate Lean or independent review of
 this later obstruction is claimed; it lies outside review780b9242's input.
+
+A subsequent [second-return theorem](SECONDARY_TEN_UNBOUNDED_SECOND_RETURN.md)
+allows arbitrary first-block width h>=12. A positive owner consumes z
+but has marginal-h/2-2, giving total selected increment-h/2-1 and
+leaving the next support q=(23,h+13) forced. Complete extendibility
+remains open; this stronger partial-family obstruction does not refute
+the global inequality.

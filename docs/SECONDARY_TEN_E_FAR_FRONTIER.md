@@ -58,11 +58,23 @@ endpoint. If k exists, minimality and even parity give
 
     s_k-4<=F<=s_(k-1)-6.
 
-Every block before k is separated by the same tile-column argument.
-The R bar is above its own P bar and above all later blocks; earlier
-blocks are to its right. Its fixed near leg has the same four-full-
-tile/eight-event receipt as in the short-pair theorem. Extending its
-far leg therefore changes only the strip at {F,F+1}.
+Every block before k is separated from the far strip by the same
+tile-column argument. Separation of the fixed bar and near leg needs
+a different argument. Write B_j for the nine base originals, P_j for
+the added U repair, Z_j for the west rotor and X_j for the south U.
+For j<i, every B_j endpoint has column at least s_j+2, hence at least
+s_(i-1)+2=C_i+1. The root original has minimum column s_0+w_0+14,
+also at least C_i+1. R has maximum column C_i; since C_i is odd, these
+sets lie across a physical tile-column boundary. Earlier P_j,Z_j,X_j
+need not lie to the right: instead their maximum endpoint rows are at
+most a_j+2<=a_i-16. R starts at the even row a_i-11, so their physical
+tile rows are strictly above every R endpoint. This proves separation
+from ALL earlier originals, including unbounded earlier base stems.
+
+The R bar is above its own P bar and every later block. Its fixed
+near leg has the same four-full-tile/eight-event receipt as in the
+short-pair theorem; the own-block calculation is unchanged by f.
+Extending its far leg therefore changes only the strip at {F,F+1}.
 
 Substitution in the full original charts of block k gives the first
 same-column endpoint and the relevant partner-column profile:
@@ -97,7 +109,18 @@ excluded from directed events even if another owner consumes them.
 
 The near receipt has four new mixed full tiles and eight new directed
 events, hence signed value zero. R has charge -1 and adds negative
-mass one. The far receipt is disjoint from these near tiles.
+mass one. For clarity, the direct original-source counts are
+
+    matching(R)=L+4+f/2,
+    endpointTiles(R)=L/2+5+f/2,
+    originalSupportsInside(R)=5+f/2.
+
+Both supports at the ends of the aligned bar, chart(0,0) and
+chart(0,L+1), lie OUTSIDE its endpoint tile footprint. The two leg
+axial supports lie inside; the lateral supports inside number
+10/2-1 and f/2-1. Thus the inside count is 2+4+(f/2-1)=5+f/2,
+not 7+f/2, and the charge is exactly -1. The far receipt is disjoint
+from these near tiles.
 
 At F=s_k-4, even the last legal terminal b=a_k-3 creates no event:
 R's downward target is its original axial support, and X_k's upward

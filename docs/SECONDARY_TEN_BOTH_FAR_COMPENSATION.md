@@ -239,6 +239,17 @@ in the final run. See the
 The previously accepted short-pair audit and earlier arbitrary-t-far
 audit do not cover this new theorem or its new E-frontier dependency.
 No independent ACCEPT is claimed without a separate completed review.
+The first both-far audit780b9242 returned REVISE. Its proposed change
+to R's charge is contradicted by the original-source sets: it included
+both aligned-bar end supports outside the endpoint tile footprint.
+The correct inside count is 5+f/2, so R still has charge-1 and adds
+negative mass one. T has charge1-M; hence the existing pair mass M
+and exact gain identity are unchanged. The companion
+[charge/separation note](SECONDARY_TEN_BOTH_FAR_CHARGE_SEPARATION.md)
+records concrete source counts and the corrected general argument.
+The audit also identified an overbroad earlier-column sentence in the
+E-frontier proof; that sentence has been replaced by explicit row/column
+separation for every earlier original. No final acceptance is yet claimed.
 The submitted 11 October manuscript and primary star-forming results
 are preserved; full-family allocation and the global grid targets remain
 open.
