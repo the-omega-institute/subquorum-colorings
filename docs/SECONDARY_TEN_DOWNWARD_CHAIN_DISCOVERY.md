@@ -1,5 +1,10 @@
 # A candidate five-step east chain in the secondary-ten downward branch
 
+Subsequent development: the [general downward double-activation theorem](SECONDARY_TEN_DOWNWARD_DOUBLE_ACTIVATION.md)
+proves arbitrary-dimension forcing and joint nonreuse of the FIRST and
+LAST targets. The original finite discovery below remains a discovery
+record; it supplies no independent extra credit beyond that theorem.
+
 21 October 2026. This is preparation for the NEXT residual class after
 the [tight upward transfer](SECONDARY_TEN_TIGHT_ACTIVATION_TRANSFER.md)
 and its separate short-parent corollary receive written ACCEPT reviews.
