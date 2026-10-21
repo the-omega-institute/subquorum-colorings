@@ -263,3 +263,9 @@ Focused controls check371 preceding-block/repair column pairs and12
 cases where the preceding body reaches the repair's first bar row.
 It does not stand in for either execution check; see the
 [review receipt](../output/secondary-ten-internal-consumer-review.json).
+
+The [renewed-support continuation](SECONDARY_TEN_RENEWED_SUPPORT_ESCAPE.md)
+proves two further simultaneous zero-gain stages, excludes the long positive
+escape in interior blocks, gives its exact negative tail debit, and constructs
+a specified-owner compensation for the full chain. Its validation and written
+review have separate scopes and records.
