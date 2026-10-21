@@ -236,7 +236,7 @@ with individual ordinary-axiom reports and no warnings/sorry/native axioms
 in the final run. See the
 [validation record](../output/secondary-ten-both-far-compensation-validation.json).
 
-The previously accepted short-pair audit and active arbitrary-t-far
+The previously accepted short-pair audit and earlier arbitrary-t-far
 audit do not cover this new theorem or its new E-frontier dependency.
 No independent ACCEPT is claimed without a separate completed review.
 The submitted 11 October manuscript and primary star-forming results

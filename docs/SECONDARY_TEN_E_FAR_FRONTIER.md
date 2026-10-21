@@ -172,8 +172,10 @@ set comparisons, with all four frontier phases and far depths up to 2000.
 Local standalone Lean passed 18 declarations, including 17 theorems;
 individual axiom reports contain only ordinary axioms, with no warnings,
 sorry or native axioms. No independent review of this new frontier theorem
-has been submitted or accepted. The earlier arbitrary-t-far audit continues
-under its own original task; it does not review this new note.
+has been submitted or accepted as a standalone question. This frontier IS
+included as a necessary dependency in the separate both-far audit780b9242.
+The earlier arbitrary-t-far audit ended in infrastructure failure with no
+mathematical verdict and did not include this frontier.
 See the [validation record](../output/secondary-ten-e-far-frontier-validation.json).
 
 The global 5/6 improvement, full-family allocation and rectangular-grid

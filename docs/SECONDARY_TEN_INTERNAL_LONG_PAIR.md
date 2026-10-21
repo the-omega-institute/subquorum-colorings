@@ -157,8 +157,11 @@ the all-parameter proof. See the
 [validation record](../output/secondary-ten-internal-long-pair-validation.json).
 
 This strengthening was written after the short-pair audit input; no
-independent ACCEPT for it is claimed. Its separate audit runs in the accepted
-barrier conversation, on retained original stream65504. The submitted 11 October manuscript
+independent ACCEPT for it is claimed. Its original audit b6e54ed2 ended
+with infrastructure_retry_exhausted/cdp_disconnected@typing after four
+attempts, without an assistant review. Stream65504 exited0 but carried
+an explicit server_error; this is not acceptance or a mathematical rejection.
+The terminal task record is archived. The submitted 11 October manuscript
 and the primary star-forming/C4-free results are preserved.
 
 The subsequent [E far-frontier theorem](SECONDARY_TEN_E_FAR_FRONTIER.md)
