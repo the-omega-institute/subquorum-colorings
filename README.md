@@ -1,12 +1,22 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest root triple checkpoint: the actual t0 owner, conditional on the
+specified deep B and arbitrary forced E owner R, has an all-parameter
+left-U classification with incident depth4/6/8 and explicit breadth/far
+bounds. The [single joint ledger](docs/SECONDARY_TEN_ROOT_DEEP_TRIPLE.md)
+gives gain>=46. The depth8 partial branch has marginal-3 or-2, so adding
+a previously positive one-owner receipt would double-count occupied-band
+resources.33984classification/1152exact-set controls and29scoped local
+Lean declarations pass; independent triple audit is running. The prior
+root pair audit completed ACCEPT. Full global allocation remains OPEN.
+
 Latest surviving-depth checkpoint in the full U/rotor model: the specified
 first/root right B with incident depth z+4 and far depth4 forces its actual
 E-support owner to be a RIGHT U(L,8,f), every even L>=h+2,f>=4. Its
 original charge is+1 and exact marginal+1, giving selected-pair gain
 u+v+25>=49. The [general classification and physical receipts](docs/SECONDARY_TEN_ROOT_DEEP_PAIR.md)
 count an essential three-owner bottom tile once.22scoped local Lean
-declarations and exact-set controls pass; independent review is running.
+declarations and exact-set controls pass; independent written review ACCEPT.
 Complete extendibility and global bounds are not asserted.
 
 Latest complete-extension checkpoint within the full U/rotor model:

@@ -1,0 +1,82 @@
+{
+  "status": "GENERAL_WRITTEN_PROOF_EXACT_AND_SCOPED_LOCAL_LEAN_PASS_REVIEW_RUNNING",
+  "date": "2026-10-21",
+  "python": {
+    "execution_session": 31379,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_root_deep_triple.py",
+    "classification_decisions": 33984,
+    "surviving": 2016,
+    "exact_full_set_controls": 1152,
+    "incident_controls": {
+      "4": 256,
+      "6": 384,
+      "8": 512
+    },
+    "full_north_terminal_roles": 102,
+    "role_parameter_triples": 27,
+    "rotor_exclusions": 2,
+    "long_chain_controls": 24,
+    "long_chain_sizes": [
+      5,
+      24
+    ],
+    "receiver_far_values": [
+      4,
+      2000
+    ],
+    "insertion_order_controls": "All six orders on six long-chain cases and the explicit negative-marginal witness. Stable owner relabeling gives identical complete event sets.",
+    "negative_marginal_witness": {
+      "origin": 31,
+      "offset": 0,
+      "widths": [
+        12,
+        12
+      ],
+      "depths": [
+        24,
+        24
+      ],
+      "root_breadth": 6,
+      "R": [
+        8,
+        8,
+        4
+      ],
+      "A": [
+        6,
+        8,
+        4
+      ],
+      "pair_gain": 49,
+      "joint_gain": 46,
+      "marginal": -3,
+      "complete_extendibility": "NOT_ASSERTED"
+    }
+  },
+  "lean": {
+    "execution_session": 7410,
+    "exit_code": 0,
+    "source": "formal/SubQuorum/SecondaryTenRootDeepTriple.lean",
+    "declarations": 29,
+    "theorems": 22,
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "memory_free_percent": 45,
+    "active_lean_lake_before": [],
+    "axiom_audit": "Each declaration individually printed; only ordinary propext, Classical.choice and Quot.sound where needed; no warnings, sorryAx or native axioms.",
+    "scope": "Explicit all-depth and right-role blockers, width/far constraints, B/R/nextP geometric separations and conditional receipt arithmetic. Original catalogue/completeness adapters, own-block geometric separations and exact set exhaustion remain written."
+  },
+  "review": {
+    "status": "running_no_verdict",
+    "conversation_id": "conv_fb28a06da07d30e5",
+    "original_execution_session": 64559,
+    "request": "output/secondary-ten-root-deep-triple-review-request.json",
+    "stream": "output/secondary-ten-root-deep-triple-review-stream.sse"
+  },
+  "limitations": [
+    "Explicit every-actual-original full even U or standard rotor model, not arbitrary-grid exhaustion.",
+    "Specified first root B; actual R and A parameters classified.",
+    "Geometric sufficiency not complete extendibility; negative marginal is a partial-inventory rule obstacle, not a global target counterexample.",
+    "Arbitrary extra originals, other deep phases, global5/6 and grid triple equality OPEN."
+  ]
+}
