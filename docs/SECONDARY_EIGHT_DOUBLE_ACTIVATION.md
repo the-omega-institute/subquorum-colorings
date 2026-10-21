@@ -329,6 +329,12 @@ Parent j10 coverage means its ell6 branch has one activation and its ell8
 branch has two. It is not an extra demand class, a uniform two-activation
 statement, or a uniform unit integer gain over that whole parent class.
 
+The next-length [first-consumer theorem](SECONDARY_TEN_FIRST_CONSUMER.md)
+classifies secondary length10 into four necessary forms. It isolates a
+negative north-terminal branch of charge1-width and a positive corner
+activation whose global nonreuse remains open. The double-activation
+rule is not extrapolated to that class.
+
 Finite enumeration is discovery and validation only. Secondary lengths
 ell>=10, complete actual-chain
 realizability, other return dimensions, nonmaximal corners and occupied
