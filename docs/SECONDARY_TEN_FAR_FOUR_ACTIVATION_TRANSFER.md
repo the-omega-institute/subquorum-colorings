@@ -167,6 +167,12 @@ the proof above avoids assuming that E1 points down or has negative sign.
 Neither that positive E1 terminal nor a second global activation is
 credited here.
 
+In particular, this example's g0=6 violates the stronger inherited actual
+B/Q fence g0>=WB-4>=8. It therefore supplies no complete actual marked-
+chain realization; its role is limited to the stated local endpoint and
+support checks. The proof covers either next orientation conditionally
+without asserting complete realizability of either one.
+
 ## 5. One certificate for all four secondary10 compensation classes
 
 For a simultaneous comparison, take the old residual t0 BEFORE assigning
@@ -238,9 +244,16 @@ Catalogue/orientation adapters, intrinsic-bar transport, actual labelled
 reconstruction and simultaneous nonreuse remain written. These finite
 patterns are not complete actual marked-chain realizations.
 
-Independent written review is [pending](../output/secondary-ten-far-four-transfer-review.json) in a fresh broker conversation,
-with original stream23590 retained. No verdict is inferred before it
-returns; no execution or priority certification is claimed.
+Independent written review [COMPLETED with ACCEPT](../output/secondary-ten-far-four-transfer-review.json),
+requiring no mathematical repair. Original stream23590 exits0/DONE with
+no errors; its17287-character response exactly equals the completed-task
+API, observed gpt_6/pro. It accepts the arbitrary-dimension forcing,
+actual-label union injection, old-target nonreuse and exact same-inventory
+single-activation gain. The [complete response](../output/secondary-ten-far-four-transfer-review-response.md)
+also notes the partial example's stronger-fence exclusion stated above.
+The later section5 unified algebra is outside this review's supplied input.
+Execution, full formalization, complete realizability and novelty are not
+certified by this written review. No live review remains for this theorem.
 
 All positive secondary10 first-consumer forms now have a written
 single-activation rule: the entire outer-corner branch and the entire
