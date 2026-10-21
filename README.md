@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest forced-chain checkpoint: the fourth owner forces THREE further
+distinct west-terminal U's, forming a four-row support staircase. A
+[general depth-height tradeoff and geometric frontier](docs/SECONDARY_TEN_ROOT_SUPPORT_STAIRCASE.md)
+force L<=v or L=v+2,f<=z-12. Explicit witnesses prove the geometric
+converse; their exact seven-owner ledger is v/2+L/2+10-3epsilon>=19,
+including the tight P1 contact debit. Arbitrary actual staircases need
+not be these witnesses.1280full-original witnesses,130exact-set controls
+and20scoped local Lean declarations pass; this new conditional review
+and the preceding fourth/reflected review are both live. Complete-family
+allocation and the global grid targets remain OPEN.
+
 Latest fourth-owner checkpoint: after the reflected cavity exclusions,
 R's missing support forces a fresh west-terminal U with a downward bar.
 The [full parameter classification and exact four-owner ledger](docs/SECONDARY_TEN_ROOT_FOURTH_CONSUMER.md)
