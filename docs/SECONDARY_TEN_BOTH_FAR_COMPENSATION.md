@@ -242,3 +242,9 @@ No independent ACCEPT is claimed without a separate completed review.
 The submitted 11 October manuscript and primary star-forming results
 are preserved; full-family allocation and the global grid targets remain
 open.
+
+A subsequent [sharpness construction](SECONDARY_TEN_BOTH_FAR_SHARPNESS.md)
+attains4m for arbitrary pair count and arbitrarily long BOTH far legs
+under these selected-union hypotheses. It does not assert complete
+extendibility. That corollary was written after this theorem's independent
+review input and has its own explicit verification scope.
