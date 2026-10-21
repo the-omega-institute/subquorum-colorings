@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest old-chain exterior checkpoint: one arbitrary actual LEFT consumer
+has exact gain H-1-delta against the entire old renewed-support chain,
+where delta is0or1 and the latter requires H>=28. Thus the gain is at
+least5, with equality exactly at H6. The
+[unbounded classification and physical-set proof](docs/SECONDARY_TEN_LEFT_CHAIN_EXTERIOR.md)
+has a separate ACCEPT review after explicit parity/frontier clarifications;
+130302collision and64164exact-set controls through24blocks and24local
+Lean declarations pass. Interactions among multiple new consumers and
+the global complete-family bounds remain OPEN.
+
 Latest arbitrary-consumer checkpoint: every actual renewed-support consumer
 in the prescribed single block has local gain at least1, with all unbounded
 U parameters classified and the equality cases identified. An explicit

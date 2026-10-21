@@ -1,0 +1,75 @@
+{
+  "status": "EXACT_AND_LOCAL_LEAN_PASS_CORRECTED_THEOREM_ACCEPT",
+  "date": "2026-10-21",
+  "python": {
+    "original_execution_session": 1818,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_left_chain_exterior.py",
+    "status": "PASS",
+    "exit_code": 0,
+    "scope": "Exact collision classifications and full ORIGINAL mixed full-tile and owner-labelled directed-event sets, including nonuniform and 24-block controls.",
+    "earlier_draft_correction": "Column s_k+1 first meets P at a_k-8, not Z. Corrected before this execution began.",
+    "collision_classification_controls": 130302,
+    "exact_set_controls": 64164,
+    "full_receipt": "output/secondary-ten-left-chain-exact-controls.json"
+  },
+  "lean": {
+    "original_execution_session": 96292,
+    "exit_code": 0,
+    "source": "formal/SubQuorum/SecondaryTenLeftChainExterior.lean",
+    "declarations": 24,
+    "theorems": 18,
+    "memory_free_percent_before": 48,
+    "active_lean_lake_before": [],
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "axiom_audit": "Every declaration printed individually; only ordinary propext, Classical.choice and Quot.sound where needed; no sorryAx/native axioms or warnings.",
+    "scope": "Explicit first-contact endpoints/collisions, strip and parity bounds and conditional gain arithmetic. Complete geometric partition remains an ordinary proof."
+  },
+  "review": {
+    "task_id": "48cc2411-e036-4f14-a96f-58d2d11e743e",
+    "conversation_id": "conv_fd8a29606417c41c",
+    "original_execution_session": 51045,
+    "status": "completed",
+    "phase": "waiting_response",
+    "dispatched_at": "2026-10-21T13:08:15.872+00:00",
+    "request": "output/secondary-ten-left-chain-review-request.json",
+    "verdict": "REVISE",
+    "completed_at": "2026-10-21T13:42:41.126+00:00",
+    "original_stream_exit_code": 1,
+    "original_stream_failure": "Transport unexpected EOF during chunk size line; terminal task completed, response recovered via original task API, no duplicate request.",
+    "terminal_response_chars": 9757,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "response": "output/secondary-ten-left-chain-review-initial-response.md",
+    "repairs_applied": [
+      "Explicit ALL-EVEN H,d,f and0<=i<n; odd leg depths illegal.",
+      "Partner column may have a same-row P endpoint but none above frontier; only reached tile rows matter.",
+      "Apply later-block separation only after legal y<=a_k, handle last-block and no-k cases explicitly."
+    ]
+  },
+  "limitations": [
+    "One arbitrary LEFT consumer against the entire old chain; not arbitrary simultaneous consumers.",
+    "No complete extension exists by assertion; global allocation and 5/6 improvement remain open.",
+    "Keep original live execution handles; do not restart merely because they are slow."
+  ],
+  "followup_review": {
+    "conversation_id": "conv_fd8a29606417c41c",
+    "original_execution_session": 43916,
+    "status": "completed",
+    "request": "output/secondary-ten-left-chain-revision-review-request.json",
+    "verdict": "ACCEPT",
+    "scope": "Entire corrected left-chain theorem; all-even formulas unchanged.",
+    "task_id": "11e2fbbf-af20-4a2a-9ea8-ea86df2df955",
+    "completed_at": "2026-10-21T13:55:12.715+00:00",
+    "original_exit_code": 0,
+    "original_stream_done": true,
+    "original_stream_matches_terminal": true,
+    "response_chars": 7831,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "response": "output/secondary-ten-left-chain-review-response.md",
+    "optional_refinements_applied": [
+      "Restrict m0/1 definition explicitly to activated y>=a_k-2 cases.",
+      "Specify FIXED NEAR terminal in near-stem later-block sentence."
+    ]
+  }
+}
