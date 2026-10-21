@@ -146,8 +146,10 @@ or full-tile credit is reused.
 ## Boundary controls and limitations
 
 The former equality family has cavity width1 and cannot be complete.
-Reducing its D3 and G3 each by2 gives width3 and exact joint L/2+5;
-that family also cannot be complete. Reducing each by4 gives width5:
+Reducing its D3 and G3 each by2, with6<=L<=v-2, gives width3 and
+exact joint L/2+5; that family also cannot be complete. The narrower
+range is necessary: at L=v the modified J3 and J2 bars collide.
+Reducing each by4 gives width5:
 
     J3=(z-2,u+v+18,v+6),
 
@@ -175,3 +177,8 @@ classification are stated in the written proof; verification scopes are
 recorded separately. Other additional-owner interactions, global allocation,
 arbitrary-grid catalogue exhaustion, global5/6 improvement and rectangular-grid
 triple equality remain OPEN.
+
+The subsequent [width5 stack theorem](SECONDARY_TEN_WIDTH_FIVE_STACK.md)
+classifies and accounts for every actual owner in that cavity. It closes
+the cavity's support obligations, while global complete extendibility and
+allocation among overlapping selected groups remain open.

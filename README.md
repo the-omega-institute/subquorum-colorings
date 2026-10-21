@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest width5 checkpoint: a [general forced-stack theorem](docs/SECONDARY_TEN_WIDTH_FIVE_STACK.md)
+classifies every actual cavity owner in a complete extension as a left-bar
+U(H,4,4), with even heights>=6 partitioning N=z-2. A right-bar owner
+would force a further original into a sealed width3 notch and is excluded.
+The whole stack has exact increment N/2-k-4>=4; the width5 enlarged
+group has gain>=L/2+11>=14. Across the stated staircase branches a
+specified single group has gain>=L/2+9>=12.248 exact controls including
+32 nonuniform staircases and30 scoped Lean declarations PASS. New independent
+review is pending; the preceding sealed-cavity/>=10 theorem is ACCEPT.
+Allocation among overlapping groups and the global grid targets remain OPEN.
+
 Latest complete-prefix checkpoint: a [general sealed-cavity proof](docs/SECONDARY_TEN_SEALED_ROOT_CAVITY.md)
 excludes width1/3 trapped-support prefixes from every complete extension in
 the explicit full-U/rotor model. For the stated actual four-row staircase,
@@ -7,7 +18,8 @@ complete extendibility therefore strengthens the selected-union bound to
 DeltaPhi>=L/2+7>=10. The earlier six-unit equality family remains a correct
 geometric calculation but cannot extend to a complete configuration.
 192 exact cavity controls,216 U/8 rotor orientation controls and28 scoped
-Lean declarations pass. Independent review is pending. A width5 geometric
+Lean declarations pass. Independent review completed ACCEPT; its width3
+control-range correction6<=L<=v-2 is implemented. A width5 geometric
 control attains10; its complete extendibility and global allocation remain OPEN.
 
 Latest sharp-staircase checkpoint: a [general all-parameter proof](docs/SECONDARY_TEN_ROOT_SHARP_STAIRCASE.md)

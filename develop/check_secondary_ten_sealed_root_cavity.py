@@ -136,6 +136,19 @@ def cavity_controls():
     return cases
 
 
+def width_three_boundary_control():
+    dimensions = sharp_dimensions(12, 12, 24, 12)
+    dimensions[3][1] -= 2
+    dimensions[3][2] -= 2
+    second = horizontal(31, 0, 12, 2, *dimensions[2])
+    third = horizontal(31, 0, 12, 3, *dimensions[3])
+    collision = (20, -20)
+    assert dimensions[2][1] == dimensions[3][1] == 44
+    assert collision in second[0] & third[0]
+    return dict(excluded_unrestricted_boundary='L=v', collision=collision,
+                admissible_width_three_range='6<=L<=v-2')
+
+
 if __name__ == '__main__':
     projections = projection_controls()
     cavities = cavity_controls()
@@ -151,6 +164,7 @@ if __name__ == '__main__':
                                root_breadth=40, receiver_far=2000)
     print(json.dumps(dict(status='PASS', projection_controls=projections,
         exact_cavity_controls=len(cavities),
+        width_three_boundary=width_three_boundary_control(),
         excluded_width_one=sum(case['cavity_width'] == 1 for case in cavities),
         excluded_width_three=sum(case['cavity_width'] == 3 for case in cavities),
         width_five_controls=sum(case['cavity_width'] == 5 for case in cavities),
