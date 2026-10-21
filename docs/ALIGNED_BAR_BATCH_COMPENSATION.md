@@ -170,7 +170,8 @@ intervals [t_i,t_i+4] are separated by ten rows. The long far stem of V_0
 is at X+1 and ends at2, so it passes outside the root bars, meeting the
 physical far tiles of every O_i but none of their endpoint columns.
 For i>=1, V_i's far stem ends at t_i-2; its bar begins four rows after
-the preceding root far tip. These facts also exclude every new/new endpoint
+the preceding root bar top, at that root's far-tip row but strictly left
+of X. These facts also exclude every new/new endpoint
 collision. They give a general endpoint-disjointness proof for every n.
 
 The only foreign contacts are O_i/V_0, i>=1. Write j for half the length
