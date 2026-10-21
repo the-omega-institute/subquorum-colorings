@@ -15,9 +15,10 @@ if not __debug__:
     raise RuntimeError('Run without -O: verification uses assertions.')
 
 
-def check_case(origin, offset, widths, depths, breadth, consumer_far, dimensions, receiver_far=4):
+def check_case(origin, offset, widths, depths, breadth, consumer_far, dimensions,
+               receiver_far=4, root_breadth=6, receiver_breadth=8):
     old_width, width, depth = widths[0], widths[1], depths[0]
-    fixed, additions, sites = originals(origin, offset, widths, depths, 6, 8,
+    fixed, additions, sites = originals(origin, offset, widths, depths, root_breadth, receiver_breadth,
                                         receiver_far, breadth, consumer_far)
     stairs = [horizontal(origin, offset, old_width, index, *parameters)
               for index, parameters in enumerate(dimensions)]

@@ -47,7 +47,11 @@ The full mixed tile minima in the three upper physical tile rows are
     (a-13,c), c=b3,b3+2,...,P.
 
 Their counts are nu/2,D1/2+1,D3/2+1. The first row's events number
-3nu/2 as in the fourth-owner theorem. In the second tile row, the
+3nu/2 as in the fourth-owner theorem. This includes the A->J0 event
+(a-8,s+1-L)->(a-9,s+1-L) in the NONFULL boundary tile with minimum
+(a-9,s-L). The displayed full-tile list is not a list of all tiles
+carrying events; that boundary event receives no full-tile credit.
+In the second tile row, the
 vertical J2/J1 directions alternate, giving D1+1 events; B->J1 at
 (a-10,C)->(a-10,P) gives one further event. In the third tile row,
 B->J3 occurs at every column b3..P, J3->B at odd columns, and B's
@@ -214,7 +218,11 @@ inventory, not a complete-family or target counterexample.
 The [scoped Lean source](../formal/SubQuorum/SecondaryTenRootActualStaircase.lean)
 verifies the interval-packing arithmetic, overlap debit,
 source-phase arithmetic and final inequality in eleven theorems; geometric/event exhaustion
-remains the written proof above. Independent review of this new theorem
-is separate from the accepted fourth-owner result. Other forced supports,
+remains the written proof above. Independent task523658e0-2938-4254-b39d-edcc533e5c3c
+completed ACCEPT for this conditional theorem, with streamed response exactly
+equal to the terminal API response, observed gpt_6/pro. Its requested boundary
+event clarification is incorporated above. This is separate from both the
+accepted fourth-owner result and the later sharp-bound strengthening.
+Other forced supports,
 interactions with additional originals, arbitrary-grid catalogue exhaustion,
 global5/6 improvement and rectangular-grid triple equality remain OPEN.

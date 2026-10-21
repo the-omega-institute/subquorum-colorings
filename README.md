@@ -1,13 +1,24 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest sharp-staircase checkpoint: a [general all-parameter proof](docs/SECONDARY_TEN_ROOT_SHARP_STAIRCASE.md)
+improves the actual-staircase selected-union bound to DeltaPhi>=L/2+3>=6.
+Only J1/J2 can have a far-pair receipt, and the owners debited by A and
+P1 are disjoint. An unbounded geometrically admissible family attains
+L/2+3 for every even6<=L<=v; complete extendibility is not asserted.
+128 equality-family controls,70 nonuniform controls, targeted boundaries
+and13 scoped local Lean declarations pass. The earlier >=2 theorem has
+independent ACCEPT; the new sharp theorem has a separate follow-up audit.
+Full-family allocation and the global grid targets remain OPEN.
+
 Latest actual-staircase checkpoint: a [general receipt partition](docs/SECONDARY_TEN_ROOT_ACTUAL_STAIRCASE.md)
 gives DeltaPhi>=L/2-1>=2 for ANY endpoint-disjoint actual dimensions in
 the forced four-row staircase, conditional on the explicit full-U/rotor
 model and retained H3+B+R+A. Two possible P1 contacts share ONE width
 budget; staircase-pair tiles and old-boundary receipts are assigned once.
 113 reproducible exact-set samples, simultaneous-contact and long-chain
-controls, and11 scoped local Lean theorems pass. The geometric proof has
-a separate new independent review; no verdict yet. This is a selected-union
+controls, and11 scoped local Lean theorems pass. Its independent geometric
+review completed ACCEPT; the nonfull upper boundary event is clarified.
+This is a selected-union
 compensation lemma, not complete-family allocation or a global grid bound.
 
 Latest forced-chain checkpoint: the fourth owner forces THREE further
