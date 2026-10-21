@@ -99,6 +99,75 @@ well, but an arbitrarily wide left return is not covered by (2).
 
 ## Two further forced returns: a sharp failure of per-consumer credit
 
+The following escaped-left classification was derived AFTER the initial
+independent review request. That initial verdict, when available, does
+not by itself cover this strengthening.
+
+### Complete escaped-left local count
+
+For Vleft with k>=w+8 put f=w+12-k<=4 and d=a+2-ell. Its
+endpoints are disjoint from all seven fixed owners exactly when
+
+    ell>=8, and if f=4 then d+z<=a+8.        (3)
+
+If ell>=10, its exact increment is
+
+    DeltaPhi=k-2-[f=4 and d+z>=a-4]
+                  -[f=2 and d+z>=a+10].     (4)
+
+At most one bracket is1, so this is at least k-3>=w+5>=17.
+If ell=8, the exact increments are instead
+
+    k=w+8:   DeltaPhi=1, with 4<=z<=14;
+    k=w+10:  DeltaPhi=2-[z>=16];
+    k>=w+12: DeltaPhi=k-w-8>=4.              (5)
+
+Thus, after T0 and this NEXT consumer, the displayed package remains
+below Q/D/W only for ell=8 with k=w+8 (any legal z<=14), or k=w+10
+and z>=16. Its remaining difference is exactly-1 in both cases.
+The small-z k=w+10 branch is neutral; every other right/interior-left/
+escaped-left branch above repairs with positive margin. This classifies
+the remaining LOCAL obstruction for every dimension of V. It does not
+classify every possible third consumer before the prescribed T0, nor
+arbitrary external owners or complete realizations.
+
+Proof. The ell=4,6 bar positions collide with T0 even when f<=4.
+For ell>=8 the bar is above T0 and the near leg is in the adjacent
+column, leaving only the far leg's possible collision with Q. If f=4
+that leg meets Q's horizontal near stem at row a+10 when d+z>=a+10.
+Since the last row is odd, avoidance is exactly d+z<=a+8. For f<=2
+there is no far-column endpoint collision with any fixed owner. This
+proves (3), including all directions of the disjointness criterion.
+
+For ell>=10 the near-leg seam is exactly the F3,Ev7 seam in (2).
+If f=4 and the far leg reaches row a-4, the top contact tile(a-5,4)
+contains T0's upper corner and two V far-leg endpoints, adding F0,Ev1.
+Each subsequent contact tile(a-3,4),(a-1,4), if reached, adds F1,Ev2,
+which cancels. There is no Q contact in this case because (3) leaves
+one tile row before its near stem. If f=2, the only possible far-leg
+contact is Q's tip at(a+10,3) in tile(a+9,2), reached exactly when
+d+z>=a+10. It adds F0,Ev1: Q's reverse event meets its original
+axial support. For f<=0 there is no far-column tile contact. Neither
+far-column case shares any near-leg tile. This proves (4).
+
+For ell=8 the lower bar at a-5 meets T0's upper bar at a-4. In the
+central tiles with columns6,8,...,w+8 there are F1,Ev4 each. The
+near end tile(a-5,w+10) adds F1,Ev3, and the three lower near-leg
+tiles add F1,Ev2 each. If f=4, the far end tile(a-5,4) adds F1,Ev3,
+the next far tile(a-3,4) adds F1,Ev2, and the final far tile(a-1,4)
+adds F1,Ev2 exactly when z>=6. Thus
+
+    Delta F=w/2+8+[z>=6], Delta Ev=2w+22+2[z>=6].
+
+If f<=2 the far end tile(a-5,4) instead contains two V bar endpoints
+and T0's upper corner, adding F0,Ev2. Its far leg is in a different
+tile column. This gives Delta F=w/2+6 and Delta Ev=2w+19, plus
+the one Q event exactly when f=2 and z>=16. Substituting the original
+mass k-1 proves (5). Every shared tile is in the displayed partition;
+there is no omitted width-dependent contact or separate rounding credit.
+
+### An explicit chain through the narrow residual branch
+
 For j=0,1,2 define the exact originals
 
     Tj=U(w+6+2j,6+2j,4),
@@ -169,7 +238,8 @@ is finite corroboration, not an all-parameter proof. The separate
 formalizes the unbounded nested/fixed endpoint separation, pending-support
 absence and anchors, pre-consumed terminal and fourth-pattern collision.
 It does NOT formalize the full U/rotor classification or event/tile counts.
-Its scope and actual execution are recorded in the formal receipt.
+Its scope and actual execution are recorded in the
+[formal receipt](../output/secondary-ten-north-return-closure-formal-check.json).
 This source was added after the independent review request; that review
 does not establish Lean execution. Earlier ACCEPTs do not cover this note.
 

@@ -173,6 +173,59 @@ def nested_controls():
                 forced_supports_still_missing=4, complete_realization_asserted=False)
 
 
+def escaped_left_controls():
+    accepted = rejected = residual = 0
+    for bottom, width, gap, incident, far in itertools.product(
+            (-24, 40), (12, 20, 50), (8, 10, 12, 20),
+            (4, 6, 8, 10, 12, 20, 50), (4, 6, 14, 16, 40, 200)):
+        origin = bottom-9
+        breadth = width+gap
+        far_column = 12-gap
+        last = origin+2-incident+far
+        base = sources(bottom, width)+[returning(bottom, width, 0)]
+        current = continuation(bottom, width, breadth, incident, far, False)
+        disjoint = not any(current[0] & record[0] for record in base)
+        assert disjoint == (incident >= 8 and (far_column != 4 or last <= origin+8))
+        if not disjoint:
+            rejected += 1
+            continue
+        before = inventory(base)
+        after = inventory(base+[current])
+        if incident == 8:
+            if far_column == 4:
+                full = width//2+8+int(far >= 6)
+                events = 2*width+22+2*int(far >= 6)
+                expected = 1
+            elif far_column == 2:
+                full = width//2+6
+                events = 2*width+19+int(far >= 16)
+                expected = 2-int(far >= 16)
+            else:
+                full = width//2+6
+                events = 2*width+19
+                expected = breadth-width-8
+        else:
+            extra_full = int(far_column == 4 and last >= origin-2)+int(far_column == 4 and last >= origin)
+            debit = int(far_column == 4 and last >= origin-4)+int(far_column == 2 and last >= origin+10)
+            full = 3+extra_full
+            events = 7+2*extra_full+debit
+            expected = breadth-2-debit
+        assert charge(current) == 1-breadth
+        assert len(after['full'])-len(before['full']) == full
+        assert len(after['events'])-len(before['events']) == events
+        assert after['raw_reserve']-before['raw_reserve'] == expected
+        assert expected >= 1
+        remains_negative = phi(base+[current]) < phi(base[:2]+base[5:6])
+        assert remains_negative == (incident == 8 and (
+            gap == 8 or (gap == 10 and far >= 16)))
+        residual += remains_negative
+        accepted += 1
+    return dict(endpoint_disjoint_cases=accepted, collision_cases=rejected,
+                residual_negative_package_cases=residual,
+                exact_all_parameter_formula_controls=True,
+                mathematical_scope='General written tile partition added AFTER initial review input')
+
+
 def double_site_rotor_controls():
     count = 0
     for bottom, width in itertools.product((-24, 40, 100), (12, 14, 20, 50, 200)):
@@ -214,6 +267,7 @@ def double_site_rotor_controls():
 if __name__ == '__main__':
     print(json.dumps(dict(status='PASS', branching=branching_controls(),
                          repairs=repair_controls(), nested=nested_controls(),
+                         escaped_left=escaped_left_controls(),
                          double_site_rotor=double_site_rotor_controls(),
                          scope='Finite corroboration of written general original-owner '
                          'catalogue and tile proofs; not complete feasibility, new Lean '
