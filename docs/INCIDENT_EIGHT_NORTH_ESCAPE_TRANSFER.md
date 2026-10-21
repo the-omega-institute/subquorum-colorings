@@ -290,7 +290,12 @@ The argument is general; finite controls only check coordinates and role claims.
   [Receipt](../output/short-secondary-transfer-followup-review.json) and
   [full response](../output/short-secondary-transfer-followup-review-response.md).
 
-Secondary lengths ell>=8, complete actual-chain realizability,
+The [secondary-eight double-activation theorem](SECONDARY_EIGHT_DOUBLE_ACTIVATION.md)
+now pays ell8 with two jointly unused positive terminals, disjoint from
+this note's ell6 targets. Parent j10 has only ell6/8 and is covered by
+their union. Each ell8 claim improves the same integer certificate by one.
+
+Secondary lengths ell>=10, complete actual-chain realizability,
 other return widths, nonmaximal corners, occupied adjacent bands and the full
 allocation/grid target remain OPEN. Submitted DMGT and primary star-forming
 results are preserved. This research turn has no mail or draft action.

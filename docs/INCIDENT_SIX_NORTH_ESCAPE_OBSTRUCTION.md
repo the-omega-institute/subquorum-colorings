@@ -210,8 +210,10 @@ The proofs are general; finite controls only check them.
 The [short-secondary transfer](INCIDENT_EIGHT_NORTH_ESCAPE_TRANSFER.md)
 now covers every actual j>=8 escape whose secondary north leg has length6;
 j=8 forces this length automatically. It gives one jointly unused positive
-activation per eligible residual claim. Secondary legs of length at least8
-remain unresolved.
+activation per eligible residual claim. The
+[secondary-eight theorem](SECONDARY_EIGHT_DOUBLE_ACTIVATION.md) further pays
+ell8 with two jointly unused activations; parent j10 is therefore covered
+by the ell6/8 union. Secondary legs of length at least10 remain unresolved.
 
 The unrestricted allocation and rectangular-grid
 triple equality, actual Vcorner realizations, longer secondary escapes, other
