@@ -104,7 +104,11 @@ proved permanent lower pairs for Q=U(6,8,4), k in {4,6}, b in {8,10}.
 Its k=4 subcase is now known to have no complete instance; that conditional
 pair theorem remains true, but does not create a resource in a realized
 family. Its previous necessary north-terminal escape at b>=12 is now
-relevant only to k=6 in this short-return class.
+relevant only to k=6 in this short-return class. The subsequent
+[six-step escape theorem](INCIDENT_SIX_NORTH_ESCAPE_OBSTRUCTION.md)
+excludes its j=6 case, giving j>=8 and b>=14. That note also constructs
+a complete X_far6/Q two-source family for all even b>=10 and a>=4;
+it does not supply the actual A/B/C gates or a marked Vcorner realization.
 
 No reserve unit, positive activation, demand or physical pair is added for
 the excluded k=4 occurrences. Existing H/W10/short-saturated joint resource

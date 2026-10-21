@@ -216,8 +216,11 @@ The subsequent [short-return rotor-cavity theorem](SHORT_RETURN_ROTOR_CAVITY_OBS
 excludes this entire actual k=4 return class at every b: Q's forced
 near-leg support has one rotor consumer, whose single-row cavity with Q
 prevents completion. The conditional k4 pair corollary above therefore has
-no complete instances; it creates no extra resource. For k=6 and b>=12,
-the north-terminal H escape remains OPEN. No claim that the
+no complete instances; it creates no extra resource. The subsequent
+[six-step escape obstruction](INCIDENT_SIX_NORTH_ESCAPE_OBSTRUCTION.md)
+excludes j=6 for k=6 as well, strengthens the necessary conditions to
+8<=j<=b-6 and b>=14, and certifies the actual b12 lower pair using the
+same joint physical-pair union. Longer north escapes remain OPEN. No claim that the
 entire short-leg class is impossible or permanently protected is made.
 Other return widths, nonmaximal corners and saturated adjacent bands
 also remain unresolved. There is still no complete Vcorner realization.
