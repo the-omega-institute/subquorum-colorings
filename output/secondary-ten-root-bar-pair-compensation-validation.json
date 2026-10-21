@@ -1,0 +1,71 @@
+{
+  "status": "PASS_LOCAL_VALIDATION_INDEPENDENT_REVIEW_PENDING",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_ROOT_BAR_PAIR_COMPENSATION.md",
+  "verifier": "develop/check_secondary_ten_root_bar_pair_compensation.py",
+  "python_exit_code": 0,
+  "controls": {
+    "status": "PASS",
+    "roles": {
+      "U_roles": 256,
+      "exact_record_normalizations": 110,
+      "rotor_exclusions": 8
+    },
+    "receipts": {
+      "exact_set_controls": 2529,
+      "collisions": 2121,
+      "negative_marginals": 8,
+      "zero_joint_pairs": 19,
+      "three_owner_corrections": 6,
+      "marginals": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "receipt_profiles": 5
+    },
+    "sharp": {
+      "selected_Phi": [
+        40,
+        41,
+        40
+      ],
+      "root_marginal": 1,
+      "receiver_marginal": -1,
+      "joint_marginal": 0,
+      "complete_extension_existence": "NOT_ASSERTED"
+    },
+    "large": {
+      "large_width_height_far_controls": 4
+    },
+    "scope": "Finite exact-set controls supplement the general two-owner compensation proof after a maximal short upward return. No complete-extension existence, arbitrary-group allocation or global bound."
+  },
+  "theorem": "For maximal short upward return D=h+4 and every actual EAST root O, support x22_Cminus1 forces a distinct north-terminal U V. Every legal V is EAST or WEST with exact frontiers. EAST marginal=1-eta-kappa+2chi;WEST=2. chi=kappa*delta0,root marginal1-delta0,so joint>=0;WESTjoint>=2. All parameters unbounded under explicit full-even-U/rotor MODEL.",
+  "nonreuse": "Exact genuinely NEW physical tiles and source-labelled directed events relative one immutable H+O inventory. Near and far tile columns distinct. Three-owner lower far tile contributes+2chi once; cap vertical event distinct; old K-to-O event stays old. The root's own new credit pays the possible -1; no H3/A reserve reallocated.",
+  "sharp_obstacle": "All even h>=12,g>=4,L>=6,F>=4 with maximalD:O=U6_12_4 chart18plusR_Cminus1plusC;V=U8_6_8 chart16plusR_Cminus2plusC. Endpoint-disjoint exact root+1,next-1,pair0. h12totals40_41_40. Refutes endpoint-only individual monotonicity; complete-extension existence NOT_ASSERTED, so not a counterexample to stronger actual-extendible rule or target inequality.",
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenRootBarPairCompensation.lean",
+    "version": "4.33.0",
+    "exit_code": 0,
+    "explicit_declarations": 18,
+    "theorems": 15,
+    "final_session": 63297,
+    "preflight_memory_free_percent": 42,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "All18 declarations ordinary propext/Classical.choice/Quot.sound only. Final corrected invocation clean, no warning/sorry/native. Initial conjunction simplification corrected before clean run.",
+    "scope": "Three blocked support neighbours, matching north, rotor fork exclusion, even terminal/bar bounds, necessary near-bar frontiers, exact receipt/joint indicator arithmetic and sharp counts. Source-record/terminal adapter, far geometry and complete receipt sets remain written."
+  },
+  "review": {
+    "status": "SUBMITTED_RETAINED_SINGLE_STREAM",
+    "original_stream_session": 65748,
+    "request": "output/secondary-ten-root-bar-pair-compensation-review-request.json",
+    "prompt_characters": 72480,
+    "scope": "New full all-parameter joint theorem, exact frontier and receipts, sharp partial obstacle, complete recursive constructors and prior short-return dependency. No verdict; no duplicate submission."
+  },
+  "dependency_review": {
+    "original_stream_session": 92280,
+    "status": "RETAINED_LIVE_NO_VERDICT"
+  },
+  "open": "NonmaximalD, WEST root owners, later forced supports, overlapping group allocation, complete extension existence, global5/6 improvement and rectangular-grid triple equality."
+}
