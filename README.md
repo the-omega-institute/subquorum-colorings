@@ -9,7 +9,8 @@ adjacent-band losses exhaust their mass. The inventories are explicitly
 incomplete and do not refute a complete-model bound. See the
 [general construction, fresh-owner lemma and exact receipts](docs/SECONDARY_TEN_INTERNAL_CONSUMER_CHAINS.md).
 Thirty-four local Lean declarations and exact chain/isometry controls pass.
-The new written proof has a live independent review. The earlier packed
+The new written proof has an ACCEPT independent review, with preceding
+blocks separated by columns even where their row ranges meet. The earlier packed
 batch theorem and reflected complete-exclusion/classification both now
 have separate ACCEPT written reviews.
 

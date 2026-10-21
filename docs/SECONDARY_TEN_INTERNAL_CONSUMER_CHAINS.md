@@ -113,10 +113,11 @@ their negative mass, counted once per actual owner, is
     M=sum_i(H_i-1)>=5n.                             (2)
 
 **Proof.** The point p_i is V_i's ORIGINAL support(8,0). It is absent
-from B_i and its rotor. Every preceding non-V body ends at or above
-a_i-14, and every preceding V far stem has column at least x_i, while
-p_i is two columns to the left. Every later body starts at or below
-a_i+12. The root has columns at least x_0. Hence p_i is absent from H_0.
+from B_i and its rotor. Every preceding block has minimum endpoint column
+s_j+2=x_(j+1)>=x_i, while p_i has column x_i-2. Every later block
+starts at row at least a_i+12. The root has columns at least x_0>=x_i.
+Hence p_i is absent from H_0. The preceding body row maximum is only
+bounded by a_i-8 when z_(i-1)=24; no stronger row separation is used.
 Its three foreign endpoint neighbors are
 
     west:  V_i:(a_i+2,x_i-3),
@@ -195,10 +196,11 @@ The total increment is exactly
     (w_i+11)+2*(k_i/2+1)-(2*k_i+3)=0.
 
 These contacts cannot overlap different i. P_i^0 ends at row a_i+2;
-P_(i+1)^0 starts at row a_i+z_i-14>=a_i+10. Earlier bodies are above
-it, and the preceding V far stem is two columns beyond its near stem,
-in a different tile column. Later bodies are below it. Nonadjacent
-blocks are separated horizontally as above. P_i^0's far stem is in
+P_(i+1)^0 starts at row a_i+z_i-14>=a_i+10. Every preceding B_j has
+minimum endpoint column at least x_i, while P_i^0 has maximum endpoint
+column x_i-2. Thus its entire preceding inventory is separated by at
+least two columns, even when the endpoint row ranges meet. Later blocks
+start at row at least a_i+12. P_i^0's far stem is in
 column s_i+1, immediately left of V_i's column s_i+2, but those two
 columns belong to different tiles; its only band contact is the one
 already counted. The root is also two columns beyond P_0^0's near
@@ -255,5 +257,7 @@ All34 declarations, including24 theorems, in
 pass locally with every individual axiom list checked, no warnings and
 no sorry/native axioms. The [control receipt](../output/secondary-ten-internal-consumer-controls.json)
 and [Lean receipt](../output/secondary-ten-internal-consumer-lean-validation.json)
-record their precise scope. A separate written-proof review is running;
-it does not stand in for either execution check.
+record their precise scope. A separate written-proof review is ACCEPT,
+with the preceding-block column-separation justification now explicit.
+It does not stand in for either execution check; see the
+[review receipt](../output/secondary-ten-internal-consumer-review.json).
