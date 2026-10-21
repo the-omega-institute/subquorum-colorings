@@ -14,6 +14,12 @@ It does not assert a complete feasible extension and does not refute
 the global inequality or the selected-pair theorem. Its enlarged
 family still has a forced support requiring another owner.
 
+Subsequent result: the
+[four-original local obstruction](SECONDARY_TEN_FOUR_ORIGINAL_RETURN_OBSTRUCTION.md)
+now excludes ALL complete extensions of this entire two-parameter
+family in the full even-U/rotor model. Its partial-union identities
+below remain valid; this is not an actual complete-family loss.
+
 ## Two independent even parameters
 
 Let h>=12 and g>=4 be even. Construct H3 with two blocks,

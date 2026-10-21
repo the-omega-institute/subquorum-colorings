@@ -156,8 +156,8 @@ and A_up its lower-right. The only new directed events are
     V:(22,h+14)->A_up:(23,h+14).                   (7)
 
 The other vertical directions are excluded by immutable original
-supports. The P_0-to-V event already present at column h+12 is not
-counted again. The near signed contribution is2*2-3=1; together
+supports. BOTH P_0-to-V and V-to-P_0 events at column h+12 already
+existed before A_up and are not counted again. The near signed contribution is2*2-3=1; together
 with new negative mass1 it gives2 before the far receipt.
 
 If L=6, the far leg is row18. V has endpoints there exactly in
@@ -250,7 +250,7 @@ has column h+12 only through row33; Z_0/X_0 are farther left. P_1's
 bar and stem have maximum0 only through row g+51, while Z_1/X_1
 are farther left. The root affects row28 and is dominated afterwards.
 R's near/bar endpoints have maximum1 only while the first long stem
-at2 is present; its far column is-30. T's near leg has column-23,
+at2 is present; its far column is-30. T's near leg has column-24,
 its far leg-29. W's rightmost column6 occurs only at row22, its
 far-return short leg has maximum-30 and ends at row2g+41, and its
 bar is at-34,-33. The second long stem at-22 dominates these later
@@ -318,5 +318,14 @@ the blocked-neighbour contradictions, integer parity frontiers and
 receipt inequalities. Every declaration was individually axiom-audited
 under Lean4.33.0; the final run is clean. It does not formalize the
 whole original-model classification or the source-chart event adapter.
-The theorem has been submitted for independent Oracle review; no
-independent verdict on this new theorem is claimed yet.
+Independent Oracle task909d4e88-7bac-4788-80a6-4bbb77f678f5 accepts
+the written theorem and repaired second-return dependency. Its two
+nonblocking prose clarifications (T's near column and both old near
+directions) are incorporated above. The pre-/post-V event assertion
+is in the separate second-return checker, not this next-owner checker.
+
+The subsequent
+[four-original obstruction](SECONDARY_TEN_FOUR_ORIGINAL_RETURN_OBSTRUCTION.md)
+proves that this particular H has NO complete extension in the stated
+model. Thus the exact upward/downward partial-union receipts remain
+valid, while their application to actual complete H-extensions is vacuous.

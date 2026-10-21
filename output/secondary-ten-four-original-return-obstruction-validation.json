@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_FOUR_ORIGINAL_RETURN_OBSTRUCTION.md",
+  "verifier": "develop/check_secondary_ten_four_original_return_obstruction.py",
+  "python_exit_code": 0,
+  "controls": {
+    "status": "PASS",
+    "roles": {
+      "eligible_U_roles": 6912,
+      "colliding_U_roles": 6848,
+      "exact_corner_normalizations": 64,
+      "distinct_corner_records": 32,
+      "excluded_rotor_placements": 16,
+      "rotor_patterns": 4
+    },
+    "gates": {
+      "exact_corner_second_support_controls": 72,
+      "three_neighbour_gates": 36,
+      "four_neighbour_gates": 36,
+      "south_rotor_exclusions": 72
+    },
+    "applications": {
+      "full_four_original_subfamilies": 4,
+      "exact_H3_family_inclusions": 16,
+      "isometric_applications": 96
+    },
+    "short_returns": {
+      "exact_short_return_receipts": 90,
+      "excluded_reaching_return_controls": 72
+    },
+    "scope": "Finite controls supplement the general four-original no-complete-extension proof in the full even-U/rotor model. No global inequality or catalogue exhaustion is claimed."
+  },
+  "local_lemma": "Full even-U/rotor model with immutable originals and degree-one unconsumed supports. Fixed baseline contains left columnC-1 rows23..33,rightC+1 rows25..31,caps22_C/31_C; holes25_C,28_C,30_C absent;25_C original support. Every complete extension impossible. Any added hole-owner is distinct from all baseline owners; classification forces corner with d4/6, both impossible by sealed next support.",
+  "application": "Four explicit original U records K6_6_4, P_hplus12_10_4,D6_4_4,V6_4_hplus8 are endpoint-disjoint and realize lemma for ALL even h>=12. These records are exactly indices18/19/4/28 of earlier family; thus ALL even h>=12,g>=4 second-return family has no complete extension. No negative mass or event resource is used.",
+  "short_return_corollary": "Actual upward east-terminal z22_7 owner U(L,D,F),chart23minusC_7plusDminusR, can only have D<=h+4. Larger even D supplies forbidden cap22_hplus13. For4<=D<=h+4 exact newFullD/2+1,newEvents3D/2+1,charge+1,marginal2-D/2,totalAfterPairW3-D/2. Shorter branch complete extendibility and joint root-owner budget OPEN.",
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenFourOriginalReturnObstruction.lean",
+    "exit_code": 0,
+    "explicit_declarations": 16,
+    "theorems": 12,
+    "final_session": 94309,
+    "preflight_memory_free_percent": 45,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "All16 explicit declarations; ordinary propext/Classical.choice/Quot.sound only. Final corrected run no warnings/sorry/native. Earlier core-library tactic/name errors corrected before this clean run.",
+    "scope": "All-parameter vertical-leg normalization from actual continuous-stem and bar-neighbour witnesses; cap, rotor-fork, matching and sealed-owner contradictions; parity reach bound and receipt arithmetic. Complete source-role adapter and extension/ownership logic remain written proofs."
+  },
+  "review": {
+    "status": "SUBMITTED_LIVE_STREAM",
+    "original_stream_session": 74722,
+    "request": "output/secondary-ten-four-original-return-obstruction-review-request.json",
+    "scope": "Local obstruction and four-original application. Later short-return reach/receipt corollary outside first packet. No independent verdict yet."
+  },
+  "open": "Other actual returns, root-support owner budget, arbitrary family allocation, deeper E branches, global5/6 improvement and grid triple equality."
+}
