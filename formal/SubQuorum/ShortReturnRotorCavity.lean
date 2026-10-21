@@ -180,15 +180,15 @@ theorem an_avoiding_unit_walk_stays_inside
       hprevious (hsteps length (by omega)) (havoid (length+1) (by omega))
 
 theorem no_foreign_source_can_consume_the_cavity_support
-    (leg : Int) (belongs : Point → Prop)
-    (hconnected : connectedEndpoints belongs) (hseed : belongs (leg-3,9))
+    (leg column : Int) (belongs : Point → Prop) (hcolumn : 7 < column ∧ column < 10)
+    (hconnected : connectedEndpoints belongs) (hseed : belongs (leg-3,column))
     (havoid : ∀ point, belongs point → ¬boundary leg point)
     (hextent : ∃ point next, belongs point ∧ belongs next ∧ point.1+3 ≤ next.1) : False := by
-  have hinside : inside leg (leg-3,9) := by unfold inside; dsimp; omega
+  have hinside : inside leg (leg-3,column) := by unfold inside; dsimp; omega
   have hall : ∀ point, belongs point → inside leg point := by
     intro point hpoint
     obtain ⟨length,path,hstart,hend,hbelongs,hsteps⟩ :=
-      hconnected (leg-3,9) point hseed hpoint
+      hconnected (leg-3,column) point hseed hpoint
     have hresult := an_avoiding_unit_walk_stays_inside leg length path
       (hstart ▸ hinside) hsteps
       (fun index hindex => havoid (path index) (hbelongs index hindex))
@@ -209,28 +209,28 @@ theorem the_return_and_rotor_have_no_complete_endpoint_family
     (hextent : ∀ owner, ∃ point next,
       belongs owner point ∧ belongs owner next ∧ point.1+3 ≤ next.1)
     (hoccupied : ∀ owner point, belongs owner point → occupied point)
-    (hretain : (¬∃ owner, belongs owner (leg-3,9)) →
-      ∀ point, adjacent (leg-3,9) point → occupied point → point = (leg-2,9)) : False := by
-  have hconsumer : ∃ owner, belongs owner (leg-3,9) := by
+    (hretain : (¬∃ owner, belongs owner (leg-3,8)) →
+      ∀ point, adjacent (leg-3,8) point → occupied point → point = (leg-4,8)) : False := by
+  have hconsumer : ∃ owner, belongs owner (leg-3,8) := by
     apply Classical.byContradiction
     intro hnot
-    have hfixed := (the_rotor_support_and_both_anchors_are_exact leg).2.2
-    have hequal := hretain hnot (leg-4,9)
+    have hfixed := (the_other_cavity_point_is_a_return_support leg).2
+    have hequal := hretain hnot (leg-3,7)
       (by unfold adjacent; dsimp; omega)
-      (hoccupied returnOwner (leg-4,9) ((hreturn (leg-4,9)).mpr hfixed))
+      (hoccupied rotorOwner (leg-3,7) ((hrotor (leg-3,7)).mpr hfixed))
     have hrows := congrArg Prod.fst hequal
     dsimp at hrows
     omega
   obtain ⟨consumer,hconsumer⟩ := hconsumer
-  have hinside : inside leg (leg-3,9) := by unfold inside; dsimp; omega
-  have hfixed := neither_fixed_source_has_an_interior_endpoint leg (leg-3,9) hinside
+  have hinside : inside leg (leg-3,8) := by unfold inside; dsimp; omega
+  have hfixed := neither_fixed_source_has_an_interior_endpoint leg (leg-3,8) hinside
   have hnotReturn : consumer ≠ returnOwner := by
     intro hequal
-    exact hfixed.1 ((hreturn (leg-3,9)).mp (hequal ▸ hconsumer))
+    exact hfixed.1 ((hreturn (leg-3,8)).mp (hequal ▸ hconsumer))
   have hnotRotor : consumer ≠ rotorOwner := by
     intro hequal
-    exact hfixed.2 ((hrotor (leg-3,9)).mp (hequal ▸ hconsumer))
-  apply no_foreign_source_can_consume_the_cavity_support leg (belongs consumer)
+    exact hfixed.2 ((hrotor (leg-3,8)).mp (hequal ▸ hconsumer))
+  apply no_foreign_source_can_consume_the_cavity_support leg 8 (belongs consumer) (by omega)
     (hconnected consumer) hconsumer ?_ (hextent consumer)
   intro point hpoint hboundary
   rcases the_cavity_boundary_is_owned leg point hboundary with hreturnPoint | hrotorPoint
@@ -287,10 +287,8 @@ theorem the_corner_and_return_have_no_complete_endpoint_family
     (hoccupied : ∀ owner point, belongs owner point → occupied point)
     (hretainReturn : (¬∃ owner, belongs owner (leg,8)) →
       ∀ point, adjacent (leg,8) point → occupied point → point = (leg+1,8))
-    (hretainRotor : ∀ rotorOwner,
-      (∀ point, belongs rotorOwner point ↔ rotorEndpoint leg point) →
-      (¬∃ owner, belongs owner (leg-3,9)) →
-      ∀ point, adjacent (leg-3,9) point → occupied point → point = (leg-2,9))
+    (hretainReturnInner : (¬∃ owner, belongs owner (leg-3,8)) →
+      ∀ point, adjacent (leg-3,8) point → occupied point → point = (leg-4,8))
     (hcatalogue : ∀ consumer, belongs consumer (leg,8) →
       ¬belongs consumer (leg,7) → ¬belongs consumer (leg+1,8) →
       belongs consumer (leg-4,8) ∨ belongs consumer (leg,10) ∨
@@ -319,6 +317,6 @@ theorem the_corner_and_return_have_no_complete_endpoint_family
     belongs leg hnotReturn hreturn hunique (hcatalogue consumer hconsumer hnotWest hnotSouth)
   exact the_return_and_rotor_have_no_complete_endpoint_family Owner returnOwner consumer
     belongs occupied leg hreturn hrotor hunique hconnected hextent hoccupied
-    (hretainRotor consumer hrotor)
+    hretainReturnInner
 
 end SubQuorum.ShortReturnRotorCavity

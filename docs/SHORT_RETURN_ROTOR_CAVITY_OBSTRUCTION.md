@@ -83,11 +83,12 @@ right corner and the left except its Q-owned top corner. Neither source
 has an endpoint strictly inside. The strict interior consists of only
 (b-3,8) and (b-3,9), on ONE row.
 
-For example, p=(b-3,9) is an original R support, with its original anchor
-(b-2,9). Q owns its north neighbor (b-4,9). Hence p must be consumed.
-Alternatively Q's original far-leg support (b-3,8), intrinsic (3,5), has
-anchor (b-4,8) and the additional R neighbor (b-3,7), so it too must be
-consumed. Neither Q nor R originally owns either point.
+Use Q's original far-leg support q=(b-3,8), intrinsic (3,5), with anchor
+(b-4,8) and the additional R neighbor (b-3,7). Hence q must be consumed.
+Neither Q nor R originally owns q. This uses only Q's original support
+rule and R's displayed endpoint set; no rotor support convention is needed.
+As an additional check, p=(b-3,9) is also an original R support, with anchor
+(b-2,9) and the additional Q neighbor (b-4,9), but it is not needed.
 
 Any foreign source entering this strict interior is confined by its
 connected unit-edge endpoint graph: a path leaving must pass through an
@@ -133,21 +134,29 @@ The bounded U role library stops at18 and does not replace the written
 unbounded catalogue proof. See the [control receipt](../output/short-return-rotor-cavity-controls.json),
 session37329 exit0.
 
-All22 standalone Lean4.33.0 declarations PASS, finalsession12920 exit0.
+All22 standalone Lean4.33.0 declarations PASS, finalsession5748 exit0.
 Before invocation the authorized local Mac had45% free memory and no
 actual lean/lake executable by comm basename. Individual axioms are only
 propext, Classical.choice and Quot.sound, no sorry/native. The first run's
 two tactic/unfolding issues were repaired before this complete check;
 the failed run is not validation. The [formal source](../formal/SubQuorum/ShortReturnRotorCavity.lean)
-proves the Q/R contradiction over an arbitrary owner family, as well as
-the X/Q composition under explicit catalogue and support-retention adapters.
+proves the Q/R contradiction over an arbitrary owner family using only Q's
+support retention, as well as the X/Q composition under explicit endpoint
+catalogue and Q-support-retention adapters.
 Actual orientation adaptation to that catalogue remains written. See the
 [formal receipt](../output/short-return-rotor-cavity-formal-check.json).
 
-The original independent written review task6f8a1da8, conversation
-conv_629fa1d8c097ab6d, is live; no verdict is yet claimed. Its
-[receipt](../output/short-return-rotor-cavity-review.json) will be updated
-from the original stream and completed task response. No duplicate review
-is dispatched merely because a response takes time.
+Independent written audit6f8a1da8 ACCEPTS the full arbitrary-dimension X/Q
+theorem, standalone Q/R cavity, all endpoint roles, repeated-owner exclusions
+and k6/accounting limitations. The13233-character answer exactly matches
+originalstream85949 exit0 and the completed API, [DONE], no errors, observed
+gpt_6/pro. The reviewer could not retrieve the relatively linked earlier
+note, so distinguished the rotor support catalogue from endpoint geometry;
+the accepted Q-support witness makes that catalogue unnecessary. This
+editorial strengthening is now in both the written and formal proofs,
+followed by the complete22-declaration Lean recheck. Execution, historical
+ledger dependencies, realizability and the full target are not certified.
+See the [full response](../output/short-return-rotor-cavity-review-response.md)
+and [review receipt](../output/short-return-rotor-cavity-review.json).
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
