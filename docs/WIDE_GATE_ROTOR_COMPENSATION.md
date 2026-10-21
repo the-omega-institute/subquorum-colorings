@@ -59,11 +59,10 @@ bar is in column1+k within [1,W]. An upward bar of breadth at least6
 reaches rowa_i; a downward bar reaches rowa_i+8. Both hit retained bars.
 This excludes every full U at p_i without any dimension cutoff.
 
-The only endpoint-graph roles for a rotor with available directions
-east/south are an east/south corner or an east or south terminal.
-Inspection of the standard eight-endpoint rotor, under its eight lattice
-isometries, excludes its corner and south-terminal roles by wall or
-next-bar collisions. The two surviving east-terminal records are listed
+The standard rotor's endpoint graph has degrees one or three. With only
+east/south available, its owner must therefore be an east or south terminal.
+Inspection under the eight lattice isometries excludes its south-terminal
+roles by wall or next-bar collisions. The two surviving east-terminal records are listed
 in full below. This is a check of the fixed rotor's finite role list;
 no bounded U search supplies the preceding all-depth argument.
 The right-gate argument is the reflection c -> W+1-c.
@@ -159,9 +158,13 @@ native evaluation. Source-role completeness, the complete-extension
 adapter and the exact inventory partition above remain written proofs.
 The entire original-source model is not claimed fully formalized.
 
-Independent review of this new wide-gate result has not been requested.
-The predecessor contact-ledger review remains on its original live
-stream; that request does not contain this result.
+Independent review of this result and the subsequent escape-pair theorem
+has been submitted as task4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2,
+conversationconv_ed4025a182e9f9d9, original stream15686. It is pending.
+The predecessor contact-ledger review completed with ACCEPT on its original
+stream25032, with an exact11448-character stream/terminal match. That
+request does not contain this result; its receipt is
+`output/even-bar-contact-ledger-review-terminal.json`.
 
 ## Next question
 

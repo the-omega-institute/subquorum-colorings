@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_LOCAL_WRITTEN_EXACT_SET_AND_SCOPED_LEAN_REVIEW_NOT_SUBMITTED",
+  "status": "PASS_LOCAL_WRITTEN_EXACT_SET_AND_SCOPED_LEAN_REVIEW_PENDING",
   "proof": "docs/WIDE_GATE_ROTOR_COMPENSATION.md",
   "verifier": "develop/check_wide_gate_rotor_compensation.py",
   "python": {
@@ -27,10 +27,17 @@
     "scope": "All-depth east-terminal collision; canonical rotor geometry, opposite separation and immutable middle supports; inter-gap tile-row separation; gate injection and budget arithmetic. Exact original-source inventory and complete-extension/role adapters are WRITTEN."
   },
   "claim": "Even W>=8,a>=2,n>=2, even D/F>=a+8(n-1)+4. Retain A=U(W+2,D,F) chart(r,c-1), B_i=U(W,4,4) chart(a+8i+r,c). Any complete full-U/standard-rotor extension forces2(n-1) distinct gate rotors. Selected retained+gate-owner inventory Phi=3(n-1)+upperCount.",
-  "limitations": "Selected-inventory theorem only. Lower-only partial equality is not complete-family sharpness. No complete extension existence or arbitrary-baseline monotonicity. No independent review yet for this new theorem. Global5/6, full-family allocation and grid triple equality OPEN.",
+  "limitations": "Selected-inventory theorem only. Lower-only partial equality is not complete-family sharpness. No complete extension existence or arbitrary-baseline monotonicity. Independent review submitted, no verdict yet. Global5/6, full-family allocation and grid triple equality OPEN.",
   "predecessor_review": {
     "task_id": "e5552d8e-bcac-46bf-96c4-181121a74210",
     "original_stream_session": 25032,
-    "last_observed": "Original process still running; no new output or verdict. Not restarted. Packet predates this wide-gate theorem."
+    "last_observed": "COMPLETED_ACCEPT original25032exit0;11448chars exactSSEterminalMatch gpt6/pro; receipt even-bar-contact-ledger-review-terminal.json."
+  },
+  "review": {
+    "task_id": "4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2",
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "original_stream_session": 15686,
+    "status": "SUBMITTED_DISPATCHED_NO_VERDICT",
+    "scope": "Self-contained review includes this first layer and escape-pair addendum."
   }
 }

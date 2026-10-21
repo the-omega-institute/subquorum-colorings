@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_LOCAL_WRITTEN_EXACT_AND_SCOPED_LEAN_REVIEW_PENDING",
+  "proof": "docs/WIDE_GATE_ESCAPE_PAIR_COMPENSATION.md",
+  "verifier": "develop/check_wide_gate_escape_compensation.py",
+  "python": {
+    "final_session": 26006,
+    "exit_code": 0,
+    "north_gate_U_roles": 4644,
+    "rotor_roles_excluded": 392,
+    "east_terminal_U_roles": 1800,
+    "normalized_records": 31,
+    "single_escape_inventories": 114,
+    "single_boundary_debits": 29,
+    "pair_inventories": 421,
+    "tight_pairs": 170,
+    "simultaneous_and_large_batches": 38,
+    "correction": "Single4 rule refuted at k=W-6 by extra source-labelled event; exact gain4-indicator. Actual pair constraint forces each k<=W-10, so exception absent in theorem."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WideGateEscapeCompensation.lean",
+    "version": "4.33.0",
+    "final_session": 30420,
+    "exit_code": 0,
+    "explicit_declarations": 22,
+    "local_theorems": 17,
+    "preflight_memory_free_percent": 44,
+    "real_lean_lake_processes": [],
+    "axioms": "Individual audits: ordinary propext/Classical.choice/Quot.sound only. Final no warnings/sorry/native. Initial endpoint-bound lemma needed explicit depth lower bound, corrected before final PASS.",
+    "scope": "Normalized endpoint/support geometry and finite adapter controls, terminal collision template, minimum depth and width frontiers, opposite endpoint disjointness and boundary avoidance, tight-bar cross-direction support exclusion, gap tile-row separation, charge and budget arithmetic. Source-role/completeness and exact inventory exhaustion WRITTEN."
+  },
+  "theorem": "Same explicit full-even-U/standard-rotor complete-extension model as predecessor: evenW>=8,n>=2,a>=2,D/F>=a+8(n-1)+4. Lower gate rotors impossible; all upper selectedPhi5g. Next actual receivers are distinct rotated U6 with evenk>=6,4<=f<=k-2,pair kL+kR<=W-4. HenceW>=16; W8/10/12/14 cannot completely extend. Selected old+rotors+escapes Phi=13g-6t>=7g, t=tightPairs<=g.",
+  "review": {
+    "status": "SUBMITTED_DISPATCHED_NO_VERDICT",
+    "task_id": "4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2",
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "original_stream_session": 15686,
+    "request": "output/wide-gate-escape-pair-review-request.json",
+    "scope": "Both first-layer forced-rotor and second-layer forced-escape proofs, source constructors and immutable inventory supplied. Live pool26workers/0queued before submission."
+  },
+  "predecessor_review": {
+    "task_id": "e5552d8e-bcac-46bf-96c4-181121a74210",
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_session": 25032,
+    "exit_code": 0,
+    "response_chars": 11448,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/even-bar-contact-ledger-review-terminal.json"
+  },
+  "limitations": "Selected inventory only; no complete extension existence or complete-family sharpness, arbitrary-new monotonicity or global5/6/gridEquality. Further far axial support ownership open."
+}
