@@ -160,3 +160,9 @@ This strengthening was written after the short-pair audit input; no
 independent ACCEPT for it is claimed. Its separate audit runs in the accepted
 barrier conversation, on retained original stream65504. The submitted 11 October manuscript
 and the primary star-forming/C4-free results are preserved.
+
+The subsequent [E far-frontier theorem](SECONDARY_TEN_E_FAR_FRONTIER.md)
+classifies every old-chain contact for incident-ten E owners with arbitrary
+far legs. Their exact one-owner gain is 1-d with 0<=d<=2, and -1 is
+attained. That theorem addresses H3 alone; losses involving additional
+new T owners remain to be controlled before removing far4 from (1).

@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_E_FAR_FRONTIER.md",
+  "python": {
+    "session": 48574,
+    "exit_code": 0,
+    "collision_controls": 19712,
+    "exact_full_and_event_set_controls": 10482,
+    "status": "PASS",
+    "cases": [
+      {
+        "blocks": 6,
+        "collision_controls": 3653,
+        "exact_full_and_event_set_controls": 2003,
+        "minimum_gain": -1,
+        "phases": {
+          "P_bar:deduction0": 1022,
+          "P_bar:deduction1": 70,
+          "P_far:deduction0": 156,
+          "P_far:deduction2": 20,
+          "X:deduction0": 186,
+          "Z:deduction0": 176,
+          "Z:deduction1": 10,
+          "outside:deduction0": 363
+        }
+      },
+      {
+        "blocks": 6,
+        "collision_controls": 3653,
+        "exact_full_and_event_set_controls": 2003,
+        "minimum_gain": -1,
+        "phases": {
+          "P_bar:deduction0": 1022,
+          "P_bar:deduction1": 70,
+          "P_far:deduction0": 156,
+          "P_far:deduction2": 20,
+          "X:deduction0": 186,
+          "Z:deduction0": 176,
+          "Z:deduction1": 10,
+          "outside:deduction0": 363
+        }
+      },
+      {
+        "blocks": 12,
+        "collision_controls": 12406,
+        "exact_full_and_event_set_controls": 6476,
+        "minimum_gain": -1,
+        "phases": {
+          "P_bar:deduction0": 4025,
+          "P_bar:deduction1": 105,
+          "P_far:deduction0": 590,
+          "P_far:deduction2": 30,
+          "X:deduction0": 635,
+          "Z:deduction0": 620,
+          "Z:deduction1": 15,
+          "outside:deduction0": 456
+        }
+      }
+    ],
+    "sharp_local_witness": {
+      "origin": 31,
+      "offset": 0,
+      "widths": [
+        12,
+        12,
+        12
+      ],
+      "depths": [
+        24,
+        24,
+        24
+      ],
+      "index": 1,
+      "receiver_dimensions": [
+        50,
+        10,
+        22
+      ],
+      "receiver_chart_origin": [
+        38,
+        2
+      ],
+      "far_column": -48,
+      "terminal_row": 60,
+      "new_full": 4,
+      "new_events": 10,
+      "exact_gain": -1,
+      "complete_extendibility": "not asserted"
+    },
+    "scope": "Exact OLD H3 frontier and full receipt SETS for one arbitrary-far internal E incident-ten original. General geometric proof is written. No arbitrary-both-far simultaneous theorem or complete-extension claim."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenEFarFrontier.lean",
+    "session": 71345,
+    "exit_code": 0,
+    "declarations": 18,
+    "theorems": 17,
+    "execution": "Local Mac, standalone leanprover/lean4:v4.33.0 --stdin",
+    "preflight": {
+      "memory_free_percent": 44,
+      "real_lean_lake_processes": []
+    },
+    "axiom_audit": "Every declaration individually printed; ordinary propext/Classical.choice/Quot.sound only where needed, no warnings/sorry/native axioms.",
+    "scope": "Frontier parity, collision-to-terminal inequalities, later-block tile separation, conditional ledger and sharpness arithmetic. Full original geometric exhaustion remains written."
+  },
+  "review": {
+    "status": "NOT_SUBMITTED",
+    "scope": "New arbitrary-E-far OLD-chain frontier lies outside all prior accepted audits and outside live arbitrary-t-far task b6e54ed2. No independent acceptance claimed."
+  },
+  "discovery": {
+    "session": 91889,
+    "exit_code": 0,
+    "controls": 18111,
+    "minimum_R_marginal": -1,
+    "scope": "Exploratory H3-plus-selected-T tests only; no general simultaneous theorem or reproducible-verifier claim for this discovery run."
+  },
+  "open": "General R marginal against H3 plus arbitrary selected actual T; arbitrary-both-far simultaneous pair compensation; deeper E incident legs; full-family allocation; global5/6 improvement and rectangular-grid triple equality."
+}
