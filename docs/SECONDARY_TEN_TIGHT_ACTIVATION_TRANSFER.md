@@ -214,8 +214,9 @@ to rho, and no old secondary8 extra target is spent a second time.
 
 ## 6. The two shortest parent lengths are impossible
 
-In this tight upward subclass a complete actual occurrence must in fact
-satisfy j>=16 and b>=22. This does not exclude the OTHER secondary10
+Retain the inherited ACTUAL-chain bound12<=j<=b-6. In this tight upward
+subclass a complete actual occurrence must in fact satisfy j>=16 and
+b>=22. This does not exclude the OTHER secondary10
 first-consumer forms at parent12 or14, and supplies no reserve for the
 impossible occurrences.
 
@@ -262,8 +263,8 @@ complete marked-chain realization or a general proof by enumeration.
 [Output](../output/secondary-ten-tight-transfer-controls.json).
 
 [Scoped Lean source](../formal/SubQuorum/SecondaryTenTightActivationTransfer.lean)
-passes26 declarations with individual axiom audits, final local execution
-7110 exit0, with no warnings or sorry/native extensions. The source proves
+passes27 declarations with individual axiom audits, final local execution
+1261 exit0, with no warnings or sorry/native extensions. The source proves
 exact intrinsic-bar recovery, arbitrary-depth distance and depth separation, metric isometry identities,
 old frames and mandatory endpoint witnesses, the two-owner contradiction,
 parent12/14 intersection and disjointness impossibility, and same-inventory
@@ -285,8 +286,14 @@ universal improvement or novelty.
 [Review receipt](../output/secondary-ten-tight-transfer-review.json)
 and [full response](../output/secondary-ten-tight-transfer-review-response.md).
 
-The later parent12/14 corollary is under a separate follow-up review and
-does not inherit the first verdict. The [downward five-step discovery](SECONDARY_TEN_DOWNWARD_CHAIN_DISCOVERY.md)
+The parent12/14 corollary receives a separate **ACCEPT** from follow-up
+de769c8d. All original endpoint memberships, self-owner exclusions and
+parity steps are accepted, with the inherited bound12<=j<=b-6 explicit
+as above. Original stream69081 exits0/DONE without errors; the4973-character
+response exactly matches the completed task, observed gpt_6/pro.
+[Separate receipt](../output/secondary-ten-short-parent-review.json)
+and [response](../output/secondary-ten-short-parent-review-response.md).
+The [downward five-step discovery](SECONDARY_TEN_DOWNWARD_CHAIN_DISCOVERY.md)
 is also outside both requests and receives no additional ledger credit.
 
 Other secondary10 branches, larger even-B windows, secondary lengths>=12,

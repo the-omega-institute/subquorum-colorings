@@ -1,8 +1,9 @@
 # A candidate five-step east chain in the secondary-ten downward branch
 
-21 October 2026. This is preparation for the NEXT residual class while
+21 October 2026. This is preparation for the NEXT residual class after
 the [tight upward transfer](SECONDARY_TEN_TIGHT_ACTIVATION_TRANSFER.md)
-has its separate short-parent follow-up review in progress. No additional global credit is
+and its separate short-parent corollary receive written ACCEPT reviews.
+No additional global credit is
 claimed in this note. Keep the two branch hypotheses separate.
 
 ## Scoped discovery

@@ -310,6 +310,11 @@ theorem neither_parent_twelve_nor_fourteen_has_disjoint_prescribed_sources
         bottom width parentWidth parentFar upwardBreadth upwardFar hwidth hlargeNext hupward
       exact hdisjointE _ hcollision.1 hcollision.2
 
+theorem the_actual_chain_requires_parent_sixteen_and_bottom_twenty_two
+    (bottom incident : Int) (hlower : 12 ≤ incident) (hupper : incident ≤ bottom-6)
+    (heven : incident % 2 = 0) (hnotTwelve : incident ≠ 12) (hnotFourteen : incident ≠ 14) :
+    16 ≤ incident ∧ 22 ≤ bottom := by omega
+
 def ceilHalf (value : Int) : Int := (value+1)/2
 
 theorem the_same_inventory_single_activation_bound
