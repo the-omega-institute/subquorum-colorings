@@ -49,6 +49,12 @@ The new work here is the forced Q at arbitrary b,
 the automatic assignment of Vcorner claims, and joint nonreuse with H.
 It does not introduce a new kind of defect or a second count of that strip.
 
+The subsequent [short saturated return theorem](SHORT_SATURATED_RETURN_PAIR.md)
+extends the same demand assignment to Q=U(6,g,g-2) at arbitrary even g,
+including the width-twelve g8 branch. Its four-row rotor argument differs
+from the three-column enclosure here. Both Vcorner demand sets and all
+their physical pair certificates are combined by union, never addition.
+
 Assignments of these actual claims to J are injective, jointly with all
 previous short-H and [long-H](LONG_HORIZONTAL_CORNER_CHANNEL.md)
 claim-to-lower-pair assignments. Enlarge the
