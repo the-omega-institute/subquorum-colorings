@@ -307,4 +307,3 @@ extension has g4. This is a genuine complete-extension obstruction, not
 a counterexample to the target inequality and not a proof that g4 has
 an extension. The matching argument is written and independently audited;
 the current Lean source certifies the earlier explicitly stated scope.
-

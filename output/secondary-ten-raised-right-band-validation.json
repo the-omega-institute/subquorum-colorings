@@ -1,0 +1,35 @@
+{
+  "status": "EXACT_AND_SCOPED_LOCAL_LEAN_PASS_INDEPENDENT_REVIEW_RUNNING",
+  "review": {
+    "original_execution_session": 89724,
+    "status": "running_no_verdict",
+    "request": "output/secondary-ten-raised-right-band-review-request.json",
+    "stream": "output/secondary-ten-raised-right-band-review-stream.sse",
+    "identity": "Await original final oracle metadata; do not infer from latest session lists."
+  },
+  "date": "2026-10-21",
+  "python": {
+    "execution_session": 57009,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_raised_right_band.py",
+    "receipt": "output/secondary-ten-raised-right-band-exact-controls.json"
+  },
+  "lean": {
+    "execution_session": 34982,
+    "exit_code": 0,
+    "source": "formal/SubQuorum/SecondaryTenRaisedRightBand.lean",
+    "declarations": 31,
+    "theorems": 22,
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "memory_free_percent": 39,
+    "active_lean_lake_before": [],
+    "axiom_audit": "Every declaration individually printed; only propext, Classical.choice, Quot.sound where needed; no warnings, sorryAx or native axioms.",
+    "scope": "Explicit local collision witnesses, predecessor phase restrictions, missing old three-owner cell, conditional receipt arithmetic and arbitrary-list budget. Geometric catalogue and cardinalities remain ordinary proofs."
+  },
+  "limitations": [
+    "Specified breadth and incident-depth branch only.",
+    "No complete-extension existence or monotonicity under arbitrary additional owners.",
+    "Outside the accepted unraised theorem and its separate far-leg review.",
+    "Global 5/6 improvement and rectangular-grid triple equality OPEN."
+  ]
+}
