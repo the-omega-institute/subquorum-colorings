@@ -1,5 +1,14 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest surviving-depth checkpoint in the full U/rotor model: the specified
+first/root right B with incident depth z+4 and far depth4 forces its actual
+E-support owner to be a RIGHT U(L,8,f), every even L>=h+2,f>=4. Its
+original charge is+1 and exact marginal+1, giving selected-pair gain
+u+v+25>=49. The [general classification and physical receipts](docs/SECONDARY_TEN_ROOT_DEEP_PAIR.md)
+count an essential three-owner bottom tile once.22scoped local Lean
+declarations and exact-set controls pass; independent review is running.
+Complete extendibility and global bounds are not asserted.
+
 Latest complete-extension checkpoint within the full U/rotor model:
 each old E support forces a fresh
 north-terminal U owner containing nine consecutive specified endpoints.
@@ -15,7 +24,7 @@ The earlier claim that every fresh owner has negative mass>=5 is withdrawn.
 34scoped local Lean declarations and exact controls, including5040physical
 phase charge counts, pass. Initial written review confirmed the geometry
 but required this charge correction and explicit global U/rotor premise;
-corrected follow-up is running. No net global bound or general-grid
+corrected follow-up completed ACCEPT. No net global bound or general-grid
 catalogue exhaustion follows. Global5/6 and grid equality remain OPEN.
 
 Latest mixed-direction checkpoint: a prescribed right-band owner has

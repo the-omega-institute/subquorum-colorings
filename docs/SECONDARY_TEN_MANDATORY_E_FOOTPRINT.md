@@ -202,7 +202,8 @@ initial independent review returned REVISE: the geometric footprint and
 dichotomy were confirmed subject to the global catalogue, but the original
 mass claim was incorrect. The explicit standing catalogue hypothesis and
 correct physical-phase charge calculation above repair those two issues;
-the corrected package has its own follow-up review. See the
+the corrected follow-up completed ACCEPT, covering the full corrected
+ordinary theorem and its exact immutable N+S inventory. See the
 [validation record](../output/secondary-ten-mandatory-e-footprint-validation.json).
 The earlier unraised/raised receipts do not establish this
 new footprint theorem. Arbitrary-depth surviving phases, actual complete
