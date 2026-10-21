@@ -112,6 +112,12 @@ endpoint sets. The consumer at q has charge 1-w, arbitrarily negative.
 Thus endpoint disjointness alone does not imply a positive first consumer
 or a uniformly bounded isolated deficit at secondary length ten.
 
+The subsequent [support-closure theorem](SECONDARY_TEN_SUPPORT_CLOSURE.md)
+excludes w=6 in the complete model for every far leg, and excludes the
+entire upward g=m case. Upward branches force a U bar in an explicit
+integer window; at g=m+2 the successor is positive and activated, with
+width at most w-2. Its global target nonreuse remains open.
+
 This is a partial stencil. Its unconsumed original supports may force
 further owners, so it is NOT a counterexample to a theorem about complete
 extensions, the desired compensation inequality or rectangular grids.
