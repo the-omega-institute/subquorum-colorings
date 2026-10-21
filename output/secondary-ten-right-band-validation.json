@@ -1,0 +1,62 @@
+{
+  "status": "EXACT_AND_LOCAL_LEAN_PASS_BASE_THEOREM_ACCEPT_FAR_COROLLARY_PENDING_REVIEW",
+  "date": "2026-10-21",
+  "python": {
+    "original_execution_session": 70975,
+    "final_execution_session": 93206,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_right_band_predecessor.py",
+    "receipt": "output/secondary-ten-right-band-exact-controls.json",
+    "pair_exact_set_controls": 288,
+    "boundary_controls": 96,
+    "interior_full_chain_controls": 8,
+    "far_phase_exact_set_controls": 48,
+    "far_collision_controls": 120,
+    "full_source_predecessor_classification_controls": 2800,
+    "paired_batch_blocks": [
+      2,
+      4,
+      8,
+      24
+    ],
+    "largest_tested_exterior_loss": 213,
+    "scope": "Full ORIGINAL source charge/collision and exact physical mixed full-tile and owner-labelled event SETS. Three-owner corner is separately assigned. Finite controls do not replace general proofs."
+  },
+  "lean": {
+    "initial_execution_session": 78946,
+    "final_execution_session": 49360,
+    "exit_code": 0,
+    "source": "formal/SubQuorum/SecondaryTenRightBandPredecessor.lean",
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "declarations": 41,
+    "theorems": 31,
+    "memory_free_percent_before_final": 45,
+    "active_lean_lake_before_final": [],
+    "axiom_audit": "Every declaration individually printed; only propext, Classical.choice, Quot.sound where needed; no sorryAx/native axioms or warnings.",
+    "scope": "Explicit blocker collisions/separations and three-owner corner cells; conditional receipt/gain arithmetic, arbitrary-list pair compensation, far-leg exclusion and arithmetic. Full geometric catalogue/cardinality/event partition remains ordinary proofs."
+  },
+  "review": {
+    "task_id": "081bf8bd-59aa-4fa6-b7f7-b18c761af6e1",
+    "conversation_id": "conv_fb28a06da07d30e5",
+    "original_execution_session": 58099,
+    "status": "completed",
+    "verdict": "ACCEPT",
+    "completed_at": "2026-10-21T13:50:44.339+00:00",
+    "original_exit_code": 0,
+    "original_stream_done": true,
+    "original_stream_matches_terminal": true,
+    "request_matches_session_prompt": true,
+    "response_chars": 18911,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "request": "output/secondary-ten-right-band-review-request.json",
+    "response": "output/secondary-ten-right-band-review-response.md",
+    "scope": "Entire initial g4 theorem, forced actual predecessor classification, three-owner corner and arbitrary paired chain. Later g6/g8 corollary OUTSIDE initial input.",
+    "metadata_correction": "The earlier guessed task9d59d9d8/conv_a766 belonged to another concurrent project. Correct identity established from original stream and exact stored request/session prompt equality. No action taken on the other task."
+  },
+  "limitations": [
+    "Specified right breadth/incident-depth family, arbitrary actual predecessor; not all right owners.",
+    "Complete extensions not asserted; selected-union inequality has no arbitrary-extension monotonicity.",
+    "Global5/6 improvement and rectangular-grid triple equality OPEN."
+  ]
+}
