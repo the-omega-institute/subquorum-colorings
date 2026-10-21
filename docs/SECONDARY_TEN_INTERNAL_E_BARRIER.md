@@ -70,7 +70,7 @@ at rows a_(j-1)-2,...,a_(j-1)+2, equivalently
 
     a_j-z_(j-1)+4,...,a_j-z_(j-1)+8.                     (4)
 
-Since z_(j-1)>=24, the top row a_j-z_(j-1)+8 is above y_j.
+Since z_(j-1)>=24, the maximum row a_j-z_(j-1)+8 is above y_j.
 The incident interval, which ends at y_j, can avoid (4) only by starting
 strictly below that top row:
 
@@ -146,9 +146,14 @@ There are 6,492 sampled old-disjoint left owners; 1,008 old-disjoint B
 candidates fail the mandatory footprint, including 60 first-deep examples.
 The displayed uniform example is checked separately. Standalone local
 Lean passes 22 declarations, including 16 theorems, with individual axiom
-reports, no warnings and no sorry/native axioms. The independent review
-is running in the existing cavity/stack conversation; no verdict is
-claimed. See the [validation record](../output/secondary-ten-internal-e-barrier-validation.json).
+reports, no warnings and no sorry/native axioms. Independent review132e9691
+completed ACCEPT, observed gpt_6/pro. The original stream exited1 after a
+transport EOF; the completed response was recovered from the SAME task,
+and its original prompt and full response match the conversation record.
+No duplicate request was submitted. Its sole terminology clarification
+(maximum row of the predecessor segment, not top row) is applied above;
+the inequalities and theorem are unchanged. See the
+[validation record](../output/secondary-ten-internal-e-barrier-validation.json).
 
 Next: classify the surviving internal LEFT E owners and their exact
 joint receipts, including renewed support obligations. Any bulk allocation
