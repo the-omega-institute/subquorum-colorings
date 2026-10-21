@@ -112,9 +112,45 @@ def retained_controls():
                 retained_guard_endpoint_memberships=guard_sites)
 
 
+def reflected_receiver_controls():
+    cases = guard_sites = 0
+    phases = dict(incident_six=0, tight_incident_four=0)
+    for origin, offset, old_width, width, depth, count in itertools.product(
+            (-33, 31), (-100, 200), (12, 50), (12, 20), (24, 80), (2, 7)):
+        widths = [old_width, width]+[12]*(count-2)
+        depths = [depth]+[24]*(count-1)
+        fixed, bases, repairs, sites = old_chain(origin, offset, widths, depths, 40)
+        current_origin, unused, current_offset = sites[1]
+        column = offset+old_width+13
+        parent = north_U(current_origin, current_offset, old_width+width+26, depth+4, 4, False)
+        receiver = north_U(origin+3, column, 42, 8, 2000, False)
+        for incident, breadth in ((6, 6), (6, width+12), (4, width+12)):
+            for far in (4, depth+incident-12):
+                consumer = north_U(origin, offset, breadth, incident, far, True)
+                records = fixed+[parent, receiver, consumer]
+                endpoints = set.union(*(source[0] for source in records))
+                assert len(endpoints) == sum(len(source[0]) for source in records)
+                point = origin-9, column-1
+                assert point in receiver[1] and point not in endpoints
+                assert (point[0], point[1]+1) in receiver[0]
+                assert (point[0]+1, point[1]) in repairs[0][0]
+                assert set(neighbors(point))-endpoints == {
+                    (point[0]-1, point[1]), (point[0], point[1]-1)}
+                cavity_width = old_width+12 if incident == 6 else old_width+width+24
+                guard = {(point[0]-row, point[1]-column)
+                         for row, column in guards(cavity_width)}
+                assert guard <= parent[0] | receiver[0] | consumer[0] | repairs[0][0]
+                phases['incident_six' if incident == 6 else 'tight_incident_four'] += 1
+                cases += 1
+                guard_sites += len(guard)
+    return dict(endpoint_disjoint_prefixes=cases, phases=phases,
+                absent_receiver_support_and_two_foreign_neighbors=cases,
+                reflected_guard_endpoint_memberships=guard_sites)
+
+
 if __name__ == '__main__':
     print(json.dumps(dict(status='PASS', U_roles=U_controls(), rotors=rotor_controls(),
-        retained=retained_controls(),
+        retained=retained_controls(), reflected_receiver=reflected_receiver_controls(),
         scope='Controls of a separate all-parameter cavity proof. The U cases use arbitrary '
               'dimensions in the written proof; their finite sample is not catalogue '
               'exhaustion. The rotor table is finite and exhausts its fixed isometries. '

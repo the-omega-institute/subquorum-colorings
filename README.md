@@ -1,13 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
-Latest complete-root checkpoint: a new [two-direction cavity lemma](docs/SECONDARY_TEN_ROOT_CAVITY_EXCLUSION.md)
-excludes EVERY depth8 t0 owner from a complete extension of the specified
-first deep root B. All U dimensions and all four fixed rotor roles hit
-retained guards. Only depths4/6 survive, improving the conditional joint
-selected-union bound from46 to54 without new credits.32scoped local Lean
-declarations and full-original controls pass. Triple-ledger review64559
-and separate cavity review22819 remain live; neither has a verdict yet.
-This is an exclusion and conditional local compensation, not a global bound.
+Latest complete-root checkpoint: the [two-direction cavity lemma](docs/SECONDARY_TEN_ROOT_CAVITY_EXCLUSION.md)
+excludes depth8 and, by reflection at R's missing support, ALL depth6 and
+tight-width depth4 t0 owners. Conditional on the specified first deep B,
+actual t0 owners must have incident4, even breadth6..v+10 and far4..z-8.
+Their exact triple gain is u+v+L+24>=54, counted in one nonreused ledger.
+40scoped local Lean declarations and full-original controls pass. The
+original triple review failed in infrastructure; one fresh-worker retry
+is active. The initial cavity task is still dispatched despite a broken
+stream; reflected applications await separate independent review. No
+complete extension or global bound is asserted.
 
 Latest root triple checkpoint: the actual t0 owner, conditional on the
 specified deep B and arbitrary forced E owner R, has an all-parameter

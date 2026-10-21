@@ -193,4 +193,128 @@ theorem stronger_joint_lower_bound (oldWidth width breadth tight : Int)
 
 theorem conditional_improvement : (54 : Int)-46 = 8 := by decide
 
+def shallowConsumer (origin offset breadth incident far : Int) (point : Point) : Prop :=
+  endpoint breadth incident far
+    (point.1-origin+4+incident,offset+1-point.2)
+
+def receiver (origin offset oldWidth breadth far : Int) (point : Point) : Prop :=
+  endpoint breadth 8 far (point.1-origin+9,point.2-offset-oldWidth-12)
+
+def reflectedBlockedAt (origin offset oldWidth width : Int) (point : Point) : Prop :=
+  guard width (origin-9-point.1,offset+oldWidth+12-point.2)
+
+theorem reflected_six_guards_retained (origin offset oldWidth width depth breadth far receiverBreadth receiverFar : Int)
+    (point : Point) (hold : 12 ≤ oldWidth) (hwidth : 12 ≤ width)
+    (hbreadth : 6 ≤ breadth) (hreceiver : 6 ≤ receiverBreadth)
+    (hguard : reflectedBlockedAt origin offset oldWidth (oldWidth+12) point) :
+    parent origin offset oldWidth width depth point ∨ oldP origin offset oldWidth point ∨
+    shallowConsumer origin offset breadth 6 far point ∨
+    receiver origin offset oldWidth receiverBreadth receiverFar point := by
+  unfold reflectedBlockedAt guard at hguard
+  dsimp at hguard
+  rcases hguard with hnorth | heast | hsouth | hwest
+  · by_cases hcolumn : point.2 = offset
+    · right
+      right
+      left
+      unfold shallowConsumer endpoint
+      dsimp
+      omega
+    · right
+      left
+      unfold oldP endpoint
+      dsimp
+      omega
+  · right
+    right
+    left
+    unfold shallowConsumer endpoint
+    dsimp
+    omega
+  · left
+    unfold parent endpoint
+    dsimp
+    omega
+  · by_cases hrow : point.1 = origin-9
+    · right
+      right
+      right
+      unfold receiver endpoint
+      dsimp
+      omega
+    · left
+      unfold parent endpoint
+      dsimp
+      omega
+
+theorem reflected_tight_four_guards_retained (origin offset oldWidth width depth far receiverBreadth receiverFar : Int)
+    (point : Point) (hold : 12 ≤ oldWidth) (hwidth : 12 ≤ width) (hdepth : 24 ≤ depth)
+    (hreceiver : 6 ≤ receiverBreadth)
+    (hguard : reflectedBlockedAt origin offset oldWidth (oldWidth+width+24) point) :
+    parent origin offset oldWidth width depth point ∨ oldP origin offset oldWidth point ∨
+    shallowConsumer origin offset (width+12) 4 far point ∨
+    receiver origin offset oldWidth receiverBreadth receiverFar point := by
+  unfold reflectedBlockedAt guard at hguard
+  dsimp at hguard
+  rcases hguard with hnorth | heast | hsouth | hwest
+  · by_cases hcolumn : point.2 = offset-width-12
+    · left
+      unfold parent endpoint
+      dsimp
+      omega
+    · by_cases hleft : point.2 ≤ offset
+      · right
+        right
+        left
+        unfold shallowConsumer endpoint
+        dsimp
+        omega
+      · right
+        left
+        unfold oldP endpoint
+        dsimp
+        omega
+  · left
+    unfold parent endpoint
+    dsimp
+    omega
+  · left
+    unfold parent endpoint
+    dsimp
+    omega
+  · by_cases hrow : point.1 = origin-9
+    · right
+      right
+      right
+      unfold receiver endpoint
+      dsimp
+      omega
+    · left
+      unfold parent endpoint
+      dsimp
+      omega
+
+theorem receiver_support_two_foreign_neighbors (origin offset oldWidth breadth far : Int)
+    (hold : 12 ≤ oldWidth) (hbreadth : 6 ≤ breadth) :
+    receiver origin offset oldWidth breadth far (origin-9,offset+oldWidth+13) ∧
+    oldP origin offset oldWidth (origin-8,offset+oldWidth+12) := by
+  unfold receiver oldP endpoint
+  dsimp
+  omega
+
+theorem receiver_support_avoids_new_owners (origin offset oldWidth width depth breadth incident far receiverBreadth receiverFar : Int)
+    (hold : 12 ≤ oldWidth) (hwidth : 12 ≤ width) (hbreadth : 6 ≤ breadth) :
+    ¬parent origin offset oldWidth width depth (origin-9,offset+oldWidth+12) ∧
+    ¬shallowConsumer origin offset breadth incident far (origin-9,offset+oldWidth+12) ∧
+    ¬receiver origin offset oldWidth receiverBreadth receiverFar (origin-9,offset+oldWidth+12) := by
+  unfold parent shallowConsumer receiver endpoint
+  dsimp
+  omega
+
+theorem remaining_width_bound (breadth width : Int)
+    (hbreadth : breadth % 2 = 0) (hwidth : width % 2 = 0)
+    (hupper : breadth ≤ width+12) (hnontight : breadth ≠ width+12) :
+    breadth ≤ width+10 := by
+  omega
+
 end SubQuorum.SecondaryTenRootCavityExclusion

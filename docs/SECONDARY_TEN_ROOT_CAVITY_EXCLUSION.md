@@ -132,6 +132,50 @@ tiles and events. The cavity proof creates no additional source credit;
 it excludes impossible parameter values. The bound54 is not asserted
 sharp among complete extensions, whose existence is not proved here.
 
+## The reflected R-support cavity removes two more branches
+
+The same geometric lemma also applies at a different missing support,
+without changing the root-triple ledger. This additional deduction was
+made AFTER the cavity audit request; that request does not cover it.
+
+Let p=(a-9,C-1), R's original row0 bar-exterior support. It is absent:
+R begins at column C, A ends at column s<C-1, old H3 begins at row a-8,
+and B has only its two stem columns at row a-9. Its east neighbor is an
+R endpoint and its south neighbor is P0's row0 endpoint. A consuming
+original can only have own neighbors north/west. Reflect both relative
+coordinate axes in the geometric lemma, so these become east/south.
+
+If A has d6, choose q=u+12. The reflected north strip is row a-8,
+columns s through C-1: P0 supplies s+1,...,C-1 and A's near stem
+supplies column s. The reflected east wall is(a-9,s), in A's lower
+bar row. The reflected south strip is row a-13, columns s+1 through
+C-1, in B's lower bar. The reflected west guards are column C at rows
+a-9,a-10,a-11: R supplies the first and B its other two far-stem points.
+All guards are retained endpoints, independent of A's L and f and R's
+parameters. The missing support p is forced to be consumed, but the
+reflected cavity forbids every permitted consumer. Thus ALL d6 actual
+t0-owner branches also have no complete extension.
+
+If A has d4 and tight breadth L=v+12, choose q=u+v+24=C-1-s1. Its
+reflected north strip is row a-8, columns s1 through C-1. B's near
+stem supplies s1, A's row0 bar supplies s1+1 through s, and P0's
+row0 bar supplies s+1 through C-1. The reflected east wall(a-9,s1)
+is in B's near stem. The reflected south strip is B's lower bar at
+row a-13, columns s1+1 through C-1. The same three C-column R/B
+points supply the reflected west guards. This again forces the cavity
+contradiction, excluding EVERY tight d4 branch at all far lengths.
+
+Consequently, conditional on a complete extension containing the specified
+first deep B, the actual t0 owner necessarily has
+
+    d=4, 6<=L<=v+10, 4<=f<=z-8, all even.
+
+Only geometric necessity is asserted; complete extendibility of these
+remaining prefixes is OPEN. Since epsilon0, its exact marginal is L-1
+and the joint gain is u+v+L+24>=u+v+30>=54. The strengthened bound is
+unchanged, while the residual actual-owner classification is narrower.
+The two reflected exclusions add no source credit or physical receipt.
+
 ## Evidence and remaining scope
 
 - [Full-original controls](../develop/check_secondary_ten_root_cavity_exclusion.py).
@@ -146,10 +190,14 @@ Scoped Lean establishes the explicit cavity collisions, guard transfer and
 conditional stronger arithmetic; the catalogue/completeness adapter is
 an ordinary written proof. The independent triple audit submitted before
 this deduction does NOT cover the cavity exclusion or the bound54.
+The initial cavity audit itself covers the general cavity and first d8
+application, not the subsequent two reflected applications. Those have
+their own written coordinate proof, full-original controls and scoped
+Lean guard-transfer checks; independent follow-up is still needed.
 
 Further actual owners may still have negative signed interactions. No
 global monotonicity, packing of overlapping root triples, arbitrary-grid
 catalogue exhaustion, global5/6 improvement or grid equality is claimed.
-Next study the remaining d4/d6 owners and their newly forced supports
+Next study the remaining nontight d4 owners and their newly forced supports
 or a single full-family nonreused allocation. The submitted manuscript
 is preserved.
