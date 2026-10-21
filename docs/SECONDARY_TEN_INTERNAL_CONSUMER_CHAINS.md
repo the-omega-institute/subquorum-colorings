@@ -259,5 +259,7 @@ no sorry/native axioms. The [control receipt](../output/secondary-ten-internal-c
 and [Lean receipt](../output/secondary-ten-internal-consumer-lean-validation.json)
 record their precise scope. A separate written-proof review is ACCEPT,
 with the preceding-block column-separation justification now explicit.
+Focused controls check371 preceding-block/repair column pairs and12
+cases where the preceding body reaches the repair's first bar row.
 It does not stand in for either execution check; see the
 [review receipt](../output/secondary-ten-internal-consumer-review.json).

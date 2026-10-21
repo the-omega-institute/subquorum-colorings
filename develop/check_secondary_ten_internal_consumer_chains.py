@@ -180,6 +180,31 @@ def parity_and_role_controls():
                 full_original_north_tip_rotor_collision_controls=rotor_controls)
 
 
+def preceding_column_controls():
+    checks = boundary_equalities = 0
+    for amount, uniform, depth in ((2, True, 24), (8, True, 24),
+                                   (12, False, 26), (24, False, 24)):
+        widths = [12 if uniform else 12+2*(index % 7) for index in range(amount)]
+        depths = [depth if uniform else 24+2*(index % 11) for index in range(amount)]
+        bases, root, repairs, sites = chain(31, 0, widths, depths)
+        for index, (origin, east_column, offset) in enumerate(sites):
+            repair_max = max(column for row, column in repairs[index][0])
+            assert repair_max == east_column-2
+            for previous in range(index):
+                base_min = min(column for record in bases[previous] for row, column in record[0])
+                assert repair_max+2 <= base_min
+                checks += 1
+            if index and depths[index-1] == 24:
+                body_max = max(row for record in bases[index-1][:7] for row, column in record[0])
+                repair_min = min(row for row, column in repairs[index][0])
+                assert body_max == repair_min == origin-8
+                boundary_equalities += 1
+    return dict(status='PASS', preceding_block_repair_column_pairs=checks,
+                actual_row_boundary_equalities=boundary_equalities, chains=4,
+                scope='Focused post-review check: preceding bodies may reach repair bar row; '
+                      'full column separation still excludes every contact.')
+
+
 def controls():
     count = 0
     for origin, width, depth, amount in itertools.product(
@@ -207,7 +232,8 @@ def controls():
         symmetry_controls += 1
     witness = verify_chain(31, 0, [12]*8, [24]*8)
     assert witness['relative_excess'] == -3 and witness['phi'] > 0
-    return dict(status='PASS', exact_chain_and_zero_gain_set_controls=count,
+    return dict(status='PASS', post_review_column_separation=preceding_column_controls(),
+                exact_chain_and_zero_gain_set_controls=count,
                 nonuniform_controls=nonuniform, tile_preserving_isometry_controls=symmetry_controls,
                 role_and_parity=parity_and_role_controls(), witness=witness,
                 scope='Finite corroboration of general written chain obstruction, fresh-owner '
