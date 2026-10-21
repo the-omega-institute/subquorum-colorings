@@ -165,6 +165,14 @@ for this first negative successor. This localizes the remaining
 width-dependent negative branch rather than bounding it by a finite
 search. Its original support closure is the next task.
 
+The subsequent [all-upward theorem](SECONDARY_TEN_ALL_UPWARD_ACTIVATION_TRANSFER.md)
+resolves that task for every gap: extending the top obstruction to column
+m+4 and checking T8 separately forces B-h=7, so B is odd and the positive
+terminal is fixed at (b-6,7). All even-B candidates in this local window
+are therefore excluded by a general two-stage original-support proof.
+Global actual-labelled compensation requires the stronger full actual
+chain stated there; it is not inferred from this note's bare window.
+
 ## 4. Resource scope and verification
 
 The north-width-six and upward-zero-gap exclusions remove impossible

@@ -331,7 +331,7 @@ The secondary10 coverage is therefore:
 | East down, D far4 | [Far4 theorem](SECONDARY_TEN_FAR_FOUR_ACTIVATION_TRANSFER.md): one jointly unused target; next consumer may turn upward | Further bend compensation and complete actual-chain realizability |
 | East up, gap0 | No complete extension | None for this excluded class; no credit |
 | East up, gap2 | Tight-up theorem: one jointly unused activation, parity-dependent gain | Complete actual-chain realizability |
-| East up, larger gaps | General bar window and local phase restrictions | Negative continuation closure and global nonreuse |
+| East up, larger gaps | [All-upward theorem](SECONDARY_TEN_ALL_UPWARD_ACTIVATION_TRANSFER.md): terminal column7, no even-B successor, one jointly unused activation | Independent written review and complete actual-chain realizability |
 
 All four compensated secondary10 subclasses share the single certificate
 in [the far4 note, section5](SECONDARY_TEN_FAR_FOUR_ACTIVATION_TRANSFER.md#5-one-certificate-for-all-four-secondary10-compensation-classes).

@@ -133,8 +133,12 @@ all four secondary10 classes in one certificate with one shared ceiling.
 This is a partial stencil. Its unconsumed original supports may force
 further owners, so it is NOT a counterexample to a theorem about complete
 extensions, the desired compensation inequality or rectangular grids.
-The remaining task is the support closure or compensation of the negative
-north branch and the larger-gap upward east branch. The later positive
+The [all-upward transfer](SECONDARY_TEN_ALL_UPWARD_ACTIVATION_TRANSFER.md)
+subsequently extends the same positive target to every upward gap, with
+one injection on their union. Its two-stage support proof also excludes
+all even-B successors. Its written review remains separately tracked.
+The remaining secondary10 task is the support closure or compensation
+of the negative north branch. The later positive
 branch theorems add only their proved jointly unused targets to the one
 existing inventory; this catalogue alone adds no credit.
 
