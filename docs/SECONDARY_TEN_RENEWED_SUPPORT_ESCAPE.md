@@ -66,7 +66,7 @@ last r, has charge+1, and its EXACT increment relative to their union is
 
     DeltaN=1, DeltaS=0, DeltaF=2, DeltaE=9, DeltaPhi=-4. (4)
 
-Thus the union with J in place of the last L has
+Thus the union with J in place of the last X has
 
     Phi=sum_i(w_i+9)+h-1-n-4.                         (5)
 
@@ -335,7 +335,7 @@ insufficient: the right frame first clears V at d=z-2>=22, changes charge
 phase, and can lose four units through the already occupied W band.
 The interior-chain exclusion is a new necessary condition, not a claim
 that arbitrary left consumers have zero marginal contribution. Only the
-explicit L family has that conclusion.
+explicit X family has that conclusion.
 
 The global question still needs a common allocation and control of all
 remaining mandatory support consumers. Before the specified Y_i are adjoined,

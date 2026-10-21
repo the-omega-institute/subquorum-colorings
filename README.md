@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest arbitrary-consumer checkpoint: every actual renewed-support consumer
+in the prescribed single block has local gain at least1, with all unbounded
+U parameters classified and the equality cases identified. An explicit
+arbitrary-length nested family has exact joint gain H_0-3n+2 even though
+every insertion after the first has marginal gain-3. Its forced outer
+breadth pays the losses using each source mass once. The
+[general proofs and scope](docs/SECONDARY_TEN_ARBITRARY_T_CONSUMERS.md)
+have an ACCEPT written review;48local Lean declarations and exact
+full-original controls pass. Arbitrary multi-block consumers, global5/6
+improvement and rectangular-grid triple equality remain OPEN.
+
 Latest internal-owner checkpoint: arbitrarily long acyclic consumer paths
 have zero signed exterior remainder but lose one unit per block against
 the summed baselines. Completeness forces one fresh negative U per block,
