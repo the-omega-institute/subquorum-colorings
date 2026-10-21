@@ -28,7 +28,7 @@ This uses source-labelled events, not unlabelled adjacency pairs. Retain
     A=U(W+2,D,F), chart(r,c-1),
     B_i=U(W,4,4), chart(a_i+r,c), 0<=i<n,
 
-where W>=6, every a_i>=2, D and F are even, n>=2, all a_i are even,
+where W>=6 is even, every a_i>=2, D and F are even, n>=2, all a_i are even,
 a_(i+1)-a_i>=10, and D,F>=a_(n-1)+4. Let g=n-1 and let m count the gaps
 equal to ten. For each gap select the ACTUAL owner of
 
@@ -105,6 +105,19 @@ to the previous D_b,U_b,V_b list. At s=12 the new rotated sources have
 breadth exactly6, but their horizontal depths need not be equal.
 
 ## Exact single-owner receipts
+
+The original charges can also be derived directly at arbitrary dimensions.
+Put t=(d+e)/2. The canonical matching has b-1+t edges. In the canonical
+alignment its endpoint tiles number b/2+1+t and its original supports
+inside those tiles number4+t, so its charge is1. In the D alignment the
+corresponding counts are b+t and2+t, giving charge1-b. In the outer-wall
+alignment (r,c-1) the counts are b/2+t and t, giving charge-1. These counts
+come from the two bar rows, the two disjoint stem tile columns, and their
+alternating lateral supports; axial terminal supports lie inside precisely
+in the canonical and wall alignments. The U/E charts are tile-preserving
+images of the canonical alignment, and R is a tile-preserving image of D.
+For H/L the edge/tile/inside-support counts are4/5/4 and4/4/4, yielding
+charges-2 and0. Thus the charge column below does not depend on sampling.
 
 Take the marginal against the entire retained old inventory, not just one
 wall. Put I=I[b=W] and J=I[e=d]. The complete old/new mixed-tile/event
@@ -253,9 +266,20 @@ A distinct independent audit of this new general theorem was submitted
 through the oracle broker, original streaming process11740, after checking
 the live pool. The packet includes this proof, exact canonical T/H/M and
 inventory definitions, the verifier/Lean sources and the prerequisite
-spacing-ten/lower-L proofs. It has no verdict yet. Earlier original71332
-has now completed with ACCEPT,18842 response characters exactly matching
+spacing-ten/lower-L proofs. It completed ACCEPT as task42c0656c-b9d1-4444-a380-ea1e09349eab,
+conversation conv_e18bcaa504addda4: original11740exit0/DONE,20944 response
+characters exactly matching the terminal API, observed gpt_6/pro. The
+audit independently reconstructs the all-parameter catalogue, charge
+alignments, complete receipt sets and nonreuse, and directly verifies the
+lower-L prerequisite and residual augmentation. It reports eleven targeted
+reconstructed set comparisons and reviews the Lean declarations without
+rerunning Lean. No mathematical correction was requested; this revision
+makes W even explicit and adds the suggested charge-count derivation.
+See `output/all-even-gap-axial-review-terminal.json` for the full receipt.
+Earlier original71332 completed with ACCEPT,18842 response characters exactly matching
 the terminal API, observed gpt_6/pro. That earlier written audit covers
 spacing-ten classification/receipts/nonreuse and the gap6/minimum10
 corollary; it does not cover this general-gap result or the lower-L proof.
-Its receipt is archived separately; no request was restarted.
+Its receipt is archived separately; no request was restarted. The later
+`SEALED_CHAMBER_LOCALIZATION_AND_REPAIR.md` was not in either review's
+initial packet and is not covered by these acceptances.

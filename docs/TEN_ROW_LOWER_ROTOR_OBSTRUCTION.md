@@ -232,5 +232,8 @@ are the next frontier. The new theorem is outside original71332's packet.
 Original71332 has subsequently completed ACCEPT for its original
 spacing-ten classification and gap6/minimum10 packet:18842 characters,
 exact original-stream/terminal match, observed gpt_6/pro. That acceptance
-does not cover this lower-L obstruction. The distinct new general-gap
-review11740 includes this prerequisite proof but has no verdict yet.
+does not cover this lower-L obstruction. The distinct general-gap
+review11740 has now completed ACCEPT,20944 characters exactly matching
+the terminal API, observed gpt_6/pro. It directly verifies this lower-L
+obstruction, the stronger gap10 joint bound and the all-even-gap theorem.
+It does not cover later sealed-chamber localization or R/Z/N repair.
