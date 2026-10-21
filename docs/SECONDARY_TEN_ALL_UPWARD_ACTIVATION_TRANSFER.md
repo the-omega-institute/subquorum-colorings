@@ -46,10 +46,11 @@ Thus every such actual C is positive and its near terminal is
 
 **General compensation.** Assign each actual upward labelled claim to
 this positive original terminal occurrence. This is ONE injective map
-on the UNION of all upward gaps. It jointly avoids the entire previously
-established target union, including the corner and both downward rules.
-Select larger-gap claims only from the residual AFTER the old gap2 rule;
-their targets are not a second credit for gap2 claims.
+on the UNION of all upward gaps. It extends the old gap2 assignment and
+avoids every OTHER previously established target family, including corner
+and both downward rules. Its restriction to residual claims of gap>=4
+also avoids the old gap2 image, since both restrictions belong to the
+same injective map. Old gap2 claims are not counted a second time.
 
 No lower bound omega>=8 is claimed for every larger gap. The old
 omega>=8, w>=10 and parent12/14 exclusions retain their proved tight-gap
@@ -155,8 +156,8 @@ All roles are excluded, so T>=8 is impossible. Consequently T=7.
 Even h makes B=h+7 odd; the established phase table gives charge(C)=+1.
 The bar-window bounds yield m<=h<=g-2. Both terminal supports are
 consumed by the stated distinct D/E owners. This proves the local result
-for every upward gap, including all even-B candidates: none of those
-candidates can occur in a complete configuration satisfying the H premise.
+for every upward gap. Every even-B candidate is impossible under the
+stated local hypotheses; H is not needed.
 
 ## 4. Actual labelled recovery and global nonreuse
 
@@ -261,16 +262,25 @@ The full catalogue adaptations, original rotor support transport,
 actual labelled reconstruction and global nonreuse remain WRITTEN.
 [Formal scope receipt](../output/secondary-ten-all-upward-transfer-formal-check.json).
 
-Independent written review is [PENDING](../output/secondary-ten-all-upward-transfer-review.json)
-on current task0454c5d0-044e-4f4a-8dc9-0cb87674a604, fresh conversation
-conv_5ce01eed6774aaf1 and original stream17146. Its request includes the
-D-only boundary proof, with no H premise for LOCAL rigidity. The first
+Independent written review [COMPLETED with ACCEPT](../output/secondary-ten-all-upward-transfer-review.json)
+on task0454c5d0-044e-4f4a-8dc9-0cb87674a604, conversation
+conv_5ce01eed6774aaf1. Original stream17146 exits0/DONE with no errors;
+its16944-character response exactly equals the completed-task API,
+observed gpt_6/pro. The review accepts the H-free arbitrary-gap rigidity,
+actual-labelled union injection, all-current-target exclusions and exact
+same-inventory arithmetic, including the unified baseline interpretation.
+Two wording corrections are incorporated: the all-upward map extends
+old gap2 rather than avoiding its own image, and local rigidity has no
+H premise. No mathematical hypothesis or accounting repair was needed.
+See the [complete response](../output/secondary-ten-all-upward-transfer-review-response.md).
+The separate later north-contact note is outside this audit. The first
 task e8946d42 ended FAILED with no_assistant_output and supplied no
 mathematical verdict; its original stream23754 exits0/DONE but contains
 that structured error. The failed attempt is preserved, not counted as
 an audit or retried merely because it was slow. GLOBAL compensation
 retains the full actual-chain premises independently of the local step.
-No verdict, complete realization or full global formalization is inferred.
+No complete realization, execution, full global formalization or novelty
+is certified by the written review. No live review remains for this theorem.
 No new mail check, draft edit or send is made in this research turn.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
