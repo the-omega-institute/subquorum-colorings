@@ -170,7 +170,7 @@ def nested_controls():
     return dict(exact_shared_tile_and_event_controls=count,
                 translations=3, widths=[12, 14, 20, 50, 200],
                 successive_increment=[1, 1, 0], remaining_package_difference=-1,
-                forced_supports_still_missing=4, complete_realization_asserted=False)
+                return_related_endpoint_forced_sites=4, complete_realization_asserted=False)
 
 
 def escaped_left_controls():
@@ -238,6 +238,7 @@ def double_site_rotor_controls():
         second_site = origin+1, width+14
         assert first_site in base[4][1] & current[0]
         assert second_site in base[3][1] & current[0]
+        assert (origin, width+14) in base[4][1] & current[0]
         assert charge(current) == -2
         tiles = endpoint_tiles(current)
         assert len(tiles) == 5 and len(current[2]) == 4
@@ -259,9 +260,61 @@ def double_site_rotor_controls():
         assert (pending[0]+1, pending[1]) in current[0]
         count += 1
     return dict(exact_rotor_shared_tile_and_event_set_controls=count,
-                original_charge=-2, two_sites_one_owner=True, exact_increment=2,
+                original_charge=-2, three_sites_one_owner=True, exact_increment=2,
                 complete_model_or_unique_consumer_claim=False,
                 outside_initial_review_input=True)
+
+
+def forced_supports(records, all_mandatory):
+    endpoints = set.union(*(record[0] for record in records))
+    supports = set.union(*(record[1] for record in records))
+    occupied = endpoints | supports if all_mandatory else endpoints
+    return {point for point in supports-endpoints
+            if len(set(neighbors(point)) & occupied) >= 2}
+
+
+def mandatory_support_controls():
+    count = 0
+    for bottom, width in itertools.product((-24, 40, 100), (12, 14, 20, 50, 200)):
+        origin = bottom-9
+        persistent = {(origin, width+14), (origin+1, width+14),
+                      (origin+3, width+4), (origin+3, width+5),
+                      (origin+7, width+6), (origin+9, 6)}
+        endpoint_persistent = persistent-{(origin, width+14), (origin+3, width+4)}
+        axial = [(origin+1-2*stage, 5-stage) for stage in range(3)]
+        lateral = [(origin+2-2*stage, 5-stage) for stage in range(3)]
+        first_site = origin-1, width+13
+        first_companion = origin-2, width+13
+        middle = {(origin, width+12), (origin+1, width+12), (origin+2, width+12)}
+        expected_mandatory = [
+            persistent | {(origin+2, width+10)},
+            persistent | {axial[0], lateral[0], (origin+2, width+11)},
+            persistent | set(axial[:2]+lateral[:2]) | middle,
+            persistent | set(axial+lateral) | {first_site, first_companion},
+            persistent-{(origin, width+14), (origin+1, width+14)} |
+            set(axial+lateral) | {first_companion}]
+        expected_endpoint = [
+            endpoint_persistent | {(origin+2, width+10)},
+            endpoint_persistent | {axial[0], (origin+2, width+11)},
+            endpoint_persistent | set(axial[:2]) | middle,
+            endpoint_persistent | set(axial) | {first_site},
+            endpoint_persistent-{(origin+1, width+14)} | set(axial) | {first_companion}]
+        records = sources(bottom, width)
+        for stage in range(5):
+            if stage in (1, 2, 3):
+                records.append(returning(bottom, width, stage-1))
+            if stage == 4:
+                module = transform_module(rotor(), (False, True, False), (origin+2, width+12))
+                records.append((module['endpoints'], module['selected'], set(module['matching'])))
+            assert forced_supports(records, True) == expected_mandatory[stage]
+            assert forced_supports(records, False) == expected_endpoint[stage]
+            count += 1
+    return dict(exact_full_support_set_controls=count,
+                full_mandatory_occupied_counts=[7, 9, 13, 14, 11],
+                endpoint_only_counts=[5, 6, 9, 8, 7],
+                rotor_consumes_three_preexisting_forced_sites=True,
+                preexisting_support_identity_preserved=True,
+                scope='Exact forced-by-prescribed-occupancy sites; later actual consumers may add demands')
 
 
 if __name__ == '__main__':
@@ -269,6 +322,7 @@ if __name__ == '__main__':
                          repairs=repair_controls(), nested=nested_controls(),
                          escaped_left=escaped_left_controls(),
                          double_site_rotor=double_site_rotor_controls(),
+                         mandatory_supports=mandatory_support_controls(),
                          scope='Finite corroboration of written general original-owner '
                          'catalogue and tile proofs; not complete feasibility, new Lean '
                          'verification, or unrestricted global allocation.'), indent=2))

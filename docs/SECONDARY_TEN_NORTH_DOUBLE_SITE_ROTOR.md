@@ -1,4 +1,4 @@
-# One negative rotor consumes two forced sites and repairs the remaining loss
+# One negative rotor consumes three forced sites and repairs the remaining loss
 
 21 October 2026. Owners: Haobo Ma and Wenlin Zhang. This conditional
 construction is subsequent to, and OUTSIDE, the initial independent
@@ -13,7 +13,10 @@ below Q/D/W. The two missing right-side original supports are
 
 They each have two occupied endpoint neighbors: T2 west/E south for y,
 and E west/C south for z. Therefore both must be consumed in a complete
-extension. They need NOT have distinct consumers.
+extension. They need NOT have distinct consumers. In addition,
+e=(a,w+14) is E's original far lateral support, adjacent to z.
+Both remain occupied as mandatory original supports; hence e must also
+be consumed. The rotor below consumes e as well as y,z.
 
 ## Explicit same-owner repair for every width
 
@@ -41,7 +44,7 @@ Equivalently transform the standard rotor by negating its intrinsic row,
 then translating by (a+2,w+12). This identifies Z as an allowed original
 source, not just an arbitrary eight-point set.
 
-Z is endpoint-disjoint from all nine fixed owners and consumes BOTH y,z.
+Z is endpoint-disjoint from all nine fixed owners and consumes ALL y,z,e.
 Its original charge is -2, so it contributes no positive original owner.
 Its exact insertion into the common inventory gives
 
@@ -85,9 +88,14 @@ original owner can repair a loss without increasing N.
 
 ## Remaining closure and verification scope
 
-The three far-side supports(a+1,5),(a-1,4),(a-3,3) are still absent.
-Z also has the absent original support(a-2,w+13), with T2 west and
-Z south, so further actual closure remains necessary. This is a partial
+The three far-side support PAIRS and four persistent left/lower sites
+remain absent. Z also has the absent original support(a-2,w+13), with
+T2 west and Z south. That point was already T2's original support and
+forced by adjacency to E's support y before Z was inserted; Z does not
+create a fresh demand there. There are exactly11 missing supports forced
+by this ten-owner family's full mandatory occupied set, of which7 are
+forced by endpoints alone. The checker records the complete sets.
+Further actual closure remains necessary. This is a partial
 source family, not a target counterexample or a proof of full equality.
 
 The return-closure checker reconstructs this actual rotor, all endpoint

@@ -22,6 +22,20 @@ original owner's endpoint is not a fresh owner or a second credit.
 
 ## Necessary next-consumer forms
 
+The original-source catalogue here is explicit: a rotor is any lattice
+translation and square-lattice rotation/reflection of the rotor in
+[rotor_networks.py](../develop/rotor_networks.py), transporting endpoints,
+ORIGINAL supports and matching together. Its endpoint set is
+{(1,2),(2,2),(2,3),(2,4),(3,1),(3,2),(3,3),(4,3)};
+its original supports are {(0,2),(1,1),(2,5),(1,4),(5,3),(4,4),(3,0),(4,1)}.
+Its matching is (1,2)--(2,2), (2,3)--(2,4), (3,3)--(4,3),
+(3,1)--(3,2). These images exhaust the allowed rotor sources in the
+fixed U/rotor fusion model. Quarter-turn invariance leaves two handed
+translation forms; these are the two forms mentioned in the argument.
+This is a source-catalogue hypothesis, not a new classification of every
+possible grid endpoint configuration. It is consistent with the established
+[all-phase source catalogue](ALL_PHASE_JOINT_COMPENSATION_SLOTS.md).
+
 Every actual consumer V of x is a north-terminal U, in one of the
 two frames, with legal even k>=6, ell,z>=4:
 
@@ -226,6 +240,57 @@ its own Tj endpoint north and a preceding owner's endpoint east.
 These four obligations must be resolved in any complete extension.
 They do not imply four distinct owners or four independent credits.
 
+### Full mandatory-support inventory, including persistent obligations
+
+The four sites just displayed are the return-related endpoint-triggered
+obligations, not the whole closure inventory. For any prescribed source
+family I, let P be its endpoint union, A its ORIGINAL support union,
+and O=P union A. The identity O=union_i(P_i union A_i) holds even if a
+support is later consumed: it remains occupied. Therefore every x in A-P
+with at least two neighbors in O must be consumed in any complete extension
+retaining the prescribed sources. This is the established
+[mandatory-support closure rule](SOURCE_RETENTION_HORN_CLOSURE.md).
+Endpoint-only testing against P can miss adjacent original supports.
+
+Let the persistent six-site set be
+
+    B={(a,w+14),(a+1,w+14),(a+3,w+4),(a+3,w+5),
+       (a+7,w+6),(a+9,6)}.
+
+The first pair consists of E's far lateral support and C's far axial
+support. They are adjacent and each keeps its own endpoint anchor.
+The second pair consists of W's near lateral support and L's far lateral
+support, with the same property. The final two sites have two distinct
+original endpoint anchors (L/W and D/Q respectively). All six persist
+through T0,T1,T2. Of these, only four are forced by endpoints alone.
+
+For j=0,1,2 put qj=(a+1-2j,5-j) and rj=(a+2-2j,5-j).
+qj is Tj's far axial support. r0 is D's near lateral support; r1 and
+r2 are the preceding returning owner's far lateral support. qj and rj
+are adjacent, so BOTH must be consumed. The complete set of missing
+supports forced by the PRESCRIBED occupied set evolves as follows:
+
+| Inventory | Missing supports with at least two mandatory occupied neighbors | Count |
+| --- | --- | ---: |
+| Six fixed owners | B union {(a+2,w+10)} | 7 |
+| Plus T0 | B union {q0,r0,(a+2,w+11)} | 9 |
+| Plus T1 | B union {q0,r0,q1,r1,(a,w+12),(a+1,w+12),(a+2,w+12)} | 13 |
+| Plus T2 | B union {q0,r0,q1,r1,q2,r2,y,(a-2,w+13)} | 14 |
+
+The last extra point (a-2,w+13) is T2's original near lateral support;
+it is adjacent to E's y, so it is already forced BEFORE any later rotor
+is inserted. T2 consumes all THREE displayed right-column obligations
+at the preceding stage. These counts are counts of physical sites,
+not original support incidences, consumers, positive owners or reserve.
+They are not an assertion of the closure after all later consumers:
+new actual sources may create further obligations.
+
+The inventory table follows uniformly from the finite original support
+lists (all nine leg lengths are fixed), checking their affine coordinates
+against the endpoint/bar intervals and the adjacent support pairs. The
+checker verifies both the endpoint-only sets, of sizes5,6,9,8, and the
+full mandatory-occupied sets7,9,13,14 at translated and large widths.
+
 ## Scope and next step
 
 The branching lemma and exact counts are general written arguments.
@@ -243,8 +308,9 @@ Its scope and actual execution are recorded in the
 This source was added after the independent review request; that review
 does not establish Lean execution. Earlier ACCEPTs do not cover this note.
 
-The remaining task is to resolve the actual consumers of y and the
-far-side supports in one signed inventory, or prove a stronger
+The remaining task is to resolve all14 current actual-consumer obligations,
+including the persistent B sites, y and its adjacent support, and the
+far-side pairs, in one signed inventory, or prove a stronger
 complete-family restriction. Arbitrary additional owners can add signed
 external interactions and cannot be dropped. The unrestricted allocation
 and rectangular-grid triple equality remain OPEN. The submitted manuscript
