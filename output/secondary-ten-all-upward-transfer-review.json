@@ -2,16 +2,35 @@
   "status": "PENDING",
   "verdict": null,
   "pool": "chrono-chatgpt-pro-pool",
-  "task_id": "e8946d42-e2da-42d1-8ce1-89589e737093",
-  "conversation_id": "conv_d8131cfd8fad5feb",
-  "original_stream_session": 23754,
-  "created_at": "2026-10-21T05:59:12.407+00:00",
+  "task_id": "0454c5d0-044e-4f4a-8dc9-0cb87674a604",
+  "conversation_id": "conv_5ce01eed6774aaf1",
+  "original_stream_session": 17146,
+  "created_at": "2026-10-21T06:08:01.838+00:00",
   "review_scope": [
-    "All-gap terminal rigidity with enlarged top interval and original H blocker at the left boundary",
+    "All-gap terminal rigidity with enlarged top interval and original D blocker at the left boundary; local Q/D/E model without H",
     "All-upward actual-labelled union injection including old gap2 claims",
     "Arbitrary h whole-recipient frame comparisons and all-current-target nonreuse",
     "Same-inventory one-activation gain and threshold"
   ],
-  "later_change_requiring_separate_review_scope": "The T=8 west-B rotor has the additional mandatory endpoint (-2,-1) landing on D(3,1). This replaces the original H blocker and removes H from LOCAL rigidity only. The original full actual-chain assumptions for GLOBAL compensation remain unchanged. This local-hypothesis strengthening is outside the initial request.",
-  "not_certified": ["Execution", "Complete realizability", "Full global formalization", "Unrestricted allocation or grid equality", "Novelty"]
+  "not_certified": [
+    "Execution",
+    "Complete realizability",
+    "Full global formalization",
+    "Unrestricted allocation or grid equality",
+    "Novelty"
+  ],
+  "first_attempt": {
+    "task_id": "e8946d42-e2da-42d1-8ce1-89589e737093",
+    "conversation_id": "conv_d8131cfd8fad5feb",
+    "original_stream_session": 23754,
+    "status": "FAILED",
+    "failure_reason": "no_assistant_output",
+    "failure_detail": "no_assistant_output@waiting_response",
+    "completed_at": "2026-10-21T06:06:34.955+00:00",
+    "original_execution_exit": 0,
+    "done_marker": true,
+    "structured_stream_error": true,
+    "mathematical_verdict": null
+  },
+  "retry_reason": "First original task authoritatively FAILED with no_assistant_output and no mathematical verdict. Fresh request contains the final D-only boundary proof and scoped validation record."
 }

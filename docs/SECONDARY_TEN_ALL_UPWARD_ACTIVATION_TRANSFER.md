@@ -260,10 +260,14 @@ actual labelled reconstruction and global nonreuse remain WRITTEN.
 [Formal scope receipt](../output/secondary-ten-all-upward-transfer-formal-check.json).
 
 Independent written review is [PENDING](../output/secondary-ten-all-upward-transfer-review.json)
-on original task e8946d42-e2da-42d1-8ce1-89589e737093 and stream23754.
-The initial request retains the H endpoint as the T8 west-B blocker.
-The later replacement D blocker removes H from LOCAL rigidity; it does
-not weaken the actual full-chain premises of the GLOBAL compensation.
+on current task0454c5d0-044e-4f4a-8dc9-0cb87674a604, fresh conversation
+conv_5ce01eed6774aaf1 and original stream17146. Its request includes the
+D-only boundary proof, with no H premise for LOCAL rigidity. The first
+task e8946d42 ended FAILED with no_assistant_output and supplied no
+mathematical verdict; its original stream23754 exits0/DONE but contains
+that structured error. The failed attempt is preserved, not counted as
+an audit or retried merely because it was slow. GLOBAL compensation
+retains the full actual-chain premises independently of the local step.
 No verdict, complete realization or full global formalization is inferred.
 No new mail check, draft edit or send is made in this research turn.
 
