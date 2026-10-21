@@ -9,8 +9,10 @@ the offsets s_j are even, and
     a_(j+1)=a_j+z_j-6, s_(j+1)=s_j-w_(j+1)-12.
 
 This note removes the E far-leg cutoff for ONE original against H3.
-It does not yet add arbitrary other new owners. The proposed arbitrary-
-both-far simultaneous compensation theorem remains open.
+It does not add arbitrary other new owners. The subsequent
+[both-far compensation theorem](SECONDARY_TEN_BOTH_FAR_COMPENSATION.md)
+uses this frontier and the paired width coupling to prove simultaneous
+compensation for arbitrary selected incident-ten pairs.
 
 ## Statement
 
@@ -150,11 +152,13 @@ The witness alone is not a complete configuration or a counterexample
 to simultaneous pair gain >=4m.
 
 The frontier theorem proves that a long R can lose at most two units
-to the OLD chain. Extending it to H3 plus all selected new T owners
-requires showing that their terminal losses cannot stack on that same
-R terminal. A discovery run checked 18,111 such marginals with minimum
--1, but this is evidence for that extension, not its proof. The
-simultaneous arbitrary-both-far inequality is not asserted here.
+to the OLD chain. A discovery run checked 18,111 marginals against
+H3 plus selected new T owners with minimum -1; this finite observation
+is not a proof of joint compensation. The subsequent both-far theorem
+proves the necessary nonstacking using the coupled frontiers and gives
+an aligned-bar argument separating entire pairs. Its general proof and
+separate validation, rather than this discovery run, establish that
+selected-union strengthening.
 
 The companion verifier checks exact collision decisions and complete
 mixed-full-tile and owner-labelled-event SETS at every frontier phase,

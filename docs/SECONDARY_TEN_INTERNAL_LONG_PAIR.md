@@ -164,5 +164,7 @@ and the primary star-forming/C4-free results are preserved.
 The subsequent [E far-frontier theorem](SECONDARY_TEN_E_FAR_FRONTIER.md)
 classifies every old-chain contact for incident-ten E owners with arbitrary
 far legs. Their exact one-owner gain is 1-d with 0<=d<=2, and -1 is
-attained. That theorem addresses H3 alone; losses involving additional
-new T owners remain to be controlled before removing far4 from (1).
+attained. The further [both-far theorem](SECONDARY_TEN_BOTH_FAR_COMPENSATION.md)
+combines this with nonstacking and an aligned-bar separation argument to
+remove far4 as well. It has a separate proof, validation and live review;
+the present audit does not cover that later input.
