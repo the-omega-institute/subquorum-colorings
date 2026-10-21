@@ -62,22 +62,43 @@ def U_controls():
 
 def rotor_controls():
     roles = {}
+    matching_roles = {}
     for symmetry in itertools.product((False, True), repeat=3):
         module = transform_module(rotor(), symmetry)
         source = module['endpoints'], module['selected'], {
             tuple(sorted(edge)) for edge in module['matching']}
         for anchor in source[0]:
+            partner = next(second if first == anchor else first
+                           for first, second in source[2] if anchor in (first, second))
+            direction = partner[0]-anchor[0], partner[1]-anchor[1]
+            if direction in {(0, 1), (1, 0)}:
+                normalized = shift(source, (-anchor[0], -anchor[1]))
+                matching_roles[key(normalized)] = normalized
             adjacent = {(row-anchor[0], column-anchor[1])
                         for row, column in set(neighbors(anchor)) & source[0]}
             if adjacent <= {(0, 1), (1, 0)}:
                 moved = shift(source, (-anchor[0], -anchor[1]))
                 roles[key(moved)] = moved
     assert len(roles) == 4
+    assert len(matching_roles) == 8
+    tips = non_tips = 0
+    for source in matching_roles.values():
+        adjacent = set(neighbors((0, 0))) & source[0]
+        if len(adjacent) == 1:
+            assert not adjacent & {(-1, 0), (0, -1)}
+            tips += 1
+        else:
+            assert len(adjacent) == 3
+            assert adjacent & {(-1, 0), (0, -1)}
+            non_tips += 1
+    assert tips == non_tips == 4
     controls = 0
     for width, source in itertools.product((24, 62, 500), roles.values()):
         assert source[0] & {(2, -1), (1, -1), (-1, 1), (-1, 2)} & guards(width)
         controls += 1
-    return dict(exhaustive_fixed_rotor_roles=len(roles), collision_controls=controls)
+    return dict(exhaustive_fixed_rotor_roles=len(roles), collision_controls=controls,
+                normalized_matching_placements=len(matching_roles),
+                degree_one_survivors=tips, degree_three_immediate_exclusions=non_tips)
 
 
 def retained_controls():

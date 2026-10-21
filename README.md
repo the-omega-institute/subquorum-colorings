@@ -1,14 +1,25 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest fourth-owner checkpoint: after the reflected cavity exclusions,
+R's missing support forces a fresh west-terminal U with a downward bar.
+The [full parameter classification and exact four-owner ledger](docs/SECONDARY_TEN_ROOT_FOURTH_CONSUMER.md)
+give joint gain u/2+v+L/2+19>=40, with TWO three-owner full tiles each
+counted once. The fourth marginal is 1-(u+L+12)/2 and can be arbitrarily
+negative. Geometric feasibility also forces L<=v+6 or L=v+8,f<=z-10.
+76608classification/1376exact-set controls and25scoped local Lean
+declarations pass; reflected/fourth independent follow-up is running.
+Geometric compatibility is not complete extendibility or a global bound.
+
 Latest complete-root checkpoint: the [two-direction cavity lemma](docs/SECONDARY_TEN_ROOT_CAVITY_EXCLUSION.md)
 excludes depth8 and, by reflection at R's missing support, ALL depth6 and
 tight-width depth4 t0 owners. Conditional on the specified first deep B,
 actual t0 owners must have incident4, even breadth6..v+10 and far4..z-8.
 Their exact triple gain is u+v+L+24>=54, counted in one nonreused ledger.
 40scoped local Lean declarations and full-original controls pass. The
-original triple review failed in infrastructure; one fresh-worker retry
-is active. The initial cavity task is still dispatched despite a broken
-stream; reflected applications await separate independent review. No
+fresh triple retry and initial generic-cavity/d8 audit both completed
+ACCEPT. Coordinate wording and the eight rotor matching placements
+(four non-tips, four tips) are clarified. Reflected applications are in
+the fourth-owner independent follow-up, with no verdict yet. No
 complete extension or global bound is asserted.
 
 Latest root triple checkpoint: the actual t0 owner, conditional on the
@@ -18,7 +29,7 @@ bounds. The [single joint ledger](docs/SECONDARY_TEN_ROOT_DEEP_TRIPLE.md)
 gives gain>=46. The depth8 partial branch has marginal-3 or-2, so adding
 a previously positive one-owner receipt would double-count occupied-band
 resources.33984classification/1152exact-set controls and29scoped local
-Lean declarations pass; independent triple audit is running. The prior
+Lean declarations pass; independent triple audit completed ACCEPT. The prior
 root pair audit completed ACCEPT. Full global allocation remains OPEN.
 
 Latest surviving-depth checkpoint in the full U/rotor model: the specified

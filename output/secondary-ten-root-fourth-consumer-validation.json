@@ -1,0 +1,87 @@
+{
+  "status": "GENERAL_WRITTEN_CLASSIFICATION_AND_JOINT_GE40_EXACT_SETS_SCOPED_LOCAL_LEAN_PASS_REVIEW_RUNNING",
+  "date": "2026-10-21",
+  "owner": "Wenlin Zhang and Haobo Ma",
+  "source": "docs/SECONDARY_TEN_ROOT_FOURTH_CONSUMER.md",
+  "python": {
+    "execution_session": 22683,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_root_fourth_consumer.py",
+    "classification_decisions": 76608,
+    "surviving": 3008,
+    "exact_set_controls": 1376,
+    "far_regimes": {
+      "below_A_far": 640,
+      "beyond_A_before_X": 256,
+      "beyond_A_before_V": 480
+    },
+    "north_terminal_and_corner_collisions": 108,
+    "fixed_guard_compatible_rotor_roles": 4,
+    "geometric_existence_frontier_controls": 176,
+    "long_chain_controls": 8,
+    "chain_sizes": [
+      5,
+      24
+    ],
+    "R_far": [
+      4,
+      2000
+    ],
+    "insertion_order_controls": 24,
+    "explicit_partial_witness": {
+      "a": 31,
+      "s": 0,
+      "u": 12,
+      "v": 12,
+      "z": 24,
+      "A": [
+        6,
+        4,
+        4
+      ],
+      "J": [
+        8,
+        34,
+        4
+      ],
+      "triple_gain": 54,
+      "J_marginal": -14,
+      "joint_gain": 40,
+      "complete_extendibility": "NOT_ASSERTED"
+    }
+  },
+  "lean": {
+    "initial_execution_session": 77099,
+    "initial_result": "All proofs passed; seven unused-hypothesis warnings. Removed unnecessary hypotheses without disabling linter.",
+    "final_execution_session": 74350,
+    "exit_code": 0,
+    "source": "formal/SubQuorum/SecondaryTenRootFourthConsumer.lean",
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "declarations": 25,
+    "theorems": 16,
+    "preflight_free_percent": 45,
+    "active_real_lean_lake": [],
+    "axiom_audit": "Individual #print axioms for every declaration; only ordinary propext, Classical.choice and Quot.sound, no warnings/sorryAx/native axioms.",
+    "scope": "Explicit parent/old-bar/nextP/X/V coordinate collisions, even dimension boundaries, necessary existence frontier, explicit witness inequalities, phase-charge and exact ledger arithmetic. Catalogue, full sufficiency, support counting and physical receipt-set exhaustion remain written."
+  },
+  "review": {
+    "status": "stream_running_no_verdict",
+    "original_execution_session": 24380,
+    "conversation_id": "conv_ce737b98a623dce4",
+    "request": "output/secondary-ten-root-fourth-consumer-review-request.json",
+    "stream": "output/secondary-ten-root-fourth-consumer-review-stream.sse",
+    "pool_before": {
+      "queued": 0,
+      "dispatched": 6,
+      "ready": 19
+    },
+    "scope": "Reflected cavity applications plus fourth-owner classification, existence frontier and exact nonreused ledger; not covered by earlier ACCEPTs."
+  },
+  "limitations": [
+    "Every-original full U/rotor is an explicit model assumption, not arbitrary-grid catalogue exhaustion.",
+    "Specified deep B; all original supports immutable; full H3 retained.",
+    "Geometric witnesses and negative marginal example do not assert complete extendibility.",
+    "Joint gain>=40 is a selected-union ledger, not a global constant or global5/6 improvement.",
+    "Arbitrary further originals, arbitrary complete-family allocation and rectangular-grid equality remain OPEN."
+  ]
+}

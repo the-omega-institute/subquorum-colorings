@@ -1,5 +1,5 @@
 {
-  "status": "GENERAL_WRITTEN_EXCLUSION_AND_CONDITIONAL_GE54_EXACT_SCOPED_LOCAL_LEAN_PASS_REVIEW_RUNNING",
+  "status": "GENERAL_CAVITY_D8_INDEPENDENT_ACCEPT_REFLECTED_WRITTEN_EXACT_SCOPED_LEAN_PASS_FOLLOWUP_RUNNING",
   "date": "2026-10-21",
   "python": {
     "execution_session": "ba0cce tool receipt",
@@ -27,6 +27,13 @@
       "tight_incident_four": 128,
       "missing_receiver_support_and_two_neighbors": 384,
       "reflected_guard_endpoint_memberships": 42112
+    },
+    "rotor_matching_normalization": {
+      "execution_receipt": "67865f",
+      "exit_code": 0,
+      "normalized_matching_placements": 8,
+      "degree_three_immediate_exclusions": 4,
+      "degree_one_survivors": 4
     }
   },
   "lean": {
@@ -49,7 +56,7 @@
     "base_theorems": 18
   },
   "review": {
-    "status": "dispatched_confirmed_by_original_task_API_after_stream_EOF",
+    "status": "completed_ACCEPT",
     "conversation_id": "conv_ce737b98a623dce4",
     "original_execution_session": 22819,
     "request": "output/secondary-ten-root-cavity-exclusion-review-request.json",
@@ -65,7 +72,12 @@
     "original_stream_bytes": 0,
     "observation_error": "unexpected EOF during chunk size line",
     "identity_recovery": "Exact complete prompt equality to exactly one session turn, not an inference from latest-session ordering.",
-    "last_authoritative_status": "dispatched"
+    "last_authoritative_status": "completed",
+    "response_archive": "output/secondary-ten-root-cavity-exclusion-review-response.md",
+    "terminal_archive": "output/secondary-ten-root-cavity-exclusion-review-terminal.json",
+    "session_terminal_response_match": true,
+    "stream_terminal_response_match": "NOT_ASSERTED_EMPTY_STREAM",
+    "clarifications": "Explicit v>=12,s1=s-v-12 and B chart restored. Review wording eight tips corrected to eight matching placements: four degree3 immediately excluded, four degree1 surviving."
   },
   "conclusions": [
     "Explicit full-U/rotor model only; no arbitrary-grid exhaustion.",
@@ -76,7 +88,11 @@
     "Reflected cavity excludes ALLd6 and tightd4 complete prefixes; every actual t0 owner now necessarily d4,6<=L<=v+10,4<=f<=z-8, with exact gainu+v+L+24>=54. Geometric sufficiency of this remaining family is not complete extendibility."
   ],
   "reflected_applications_review": {
-    "status": "not_yet_submitted",
-    "scope": "d6 and tightd4 exclusions using reflected R-support cavity; written and exact/scoped Lean checked, outside both live reviews."
+    "status": "followup_stream_running_no_verdict",
+    "original_execution_session": 24380,
+    "conversation_id": "conv_ce737b98a623dce4",
+    "request": "output/secondary-ten-root-fourth-consumer-review-request.json",
+    "stream": "output/secondary-ten-root-fourth-consumer-review-stream.sse",
+    "scope": "Reflected d6/tightd4 cavity applications and the fourth owner classification/ledger."
   }
 }

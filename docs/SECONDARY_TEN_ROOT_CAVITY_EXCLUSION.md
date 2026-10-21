@@ -52,9 +52,11 @@ cannot have all own neighbors in {east,south}. Rigid motions and exchanging
 near/far legs give precisely the roles above and preserve the full set.
 The actual matching can only impose further restrictions.
 
-For the fixed standard rotor there are precisely four allowed translated
-and reflected endpoint shapes at x. Listing their full endpoint sets
-relative to x makes the finite catalogue transparent:
+For the fixed standard rotor, normalization of matching directions east
+or south gives eight distinct matching placements: four degree-three
+non-tip placements already meet the immediate north or west guard, and
+four degree-one tip placements survive those immediate guards. They are
+precisely the following translated/reflected endpoint shapes at x:
 
 | Matching direction | Endpoint set | Collision in(G) |
 |---|---|---|
@@ -77,7 +79,11 @@ independent-positive-receipt assumption occurs in this argument.
 
 ## Application to every depth-eight A of the root triple
 
-Retain the full H3 chain and specified first deep B, arbitrary actual
+Retain n>=2, odd a, even s, even u,v>=12 and z>=24, put
+s1=s-v-12 and C=s+u+13, and retain the full H3 chain with the specified
+first deep B=U(u+v+26,z+4,4), chart(a-14+r,s1-1+c).
+In particular s1 differs from s+1, and B's row-one bar contains the whole
+interval from s+1 to C. Retain arbitrary actual
 E-owner R of the accepted pair theorem, and any geometrically admissible
 depth-eight t0 owner
 
@@ -190,10 +196,16 @@ Scoped Lean establishes the explicit cavity collisions, guard transfer and
 conditional stronger arithmetic; the catalogue/completeness adapter is
 an ordinary written proof. The independent triple audit submitted before
 this deduction does NOT cover the cavity exclusion or the bound54.
-The initial cavity audit itself covers the general cavity and first d8
+The initial cavity audit completed ACCEPT and covers the general cavity and first d8
 application, not the subsequent two reflected applications. Those have
 their own written coordinate proof, full-original controls and scoped
 Lean guard-transfer checks; independent follow-up is still needed.
+
+The review's phrase "eight normalized tip placements" is a literal error:
+the eight normalized matching placements contain four non-tip roles and
+four tips, as the fixed-rotor controls verify. The raw review is preserved;
+the theorem and four surviving shapes are unchanged. Its requested B
+coordinate and inherited v>=12 hypotheses are explicit above.
 
 Further actual owners may still have negative signed interactions. No
 global monotonicity, packing of overlapping root triples, arbitrary-grid

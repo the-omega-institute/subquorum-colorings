@@ -91,9 +91,11 @@ q<=a+z-16. This proves every necessary condition in(1).
 For sufficiency, A's top bar rows are a-4-d,a-3-d and its near endpoint
 is t0. Against its own old block, every full left consumer is admissible
 as in the accepted entire-chain one-left-consumer proof. Its far column
-is left of that block's minimum endpoint column s-4; the bar is above
-all old first-block endpoints and the near stem is in the forced terminal
-gap. The column bound F>=s1+1 puts the far stem in P1's first-contact
+is left of that block's minimum endpoint column s-4. For d6/8 the bar is
+above all first-block endpoints. For d4 it shares rows a-8,a-7 with P0,
+but their column intervals [F,s] and [s+1,s+u+12] are disjoint; every
+other first-block original starts lower. The near stem is in the forced
+terminal gap. The column bound F>=s1+1 puts the far stem in P1's first-contact
 interval. The entire bar and both legs stop above the first P1 endpoints:
 the far terminal is at most a+z-16, whereas P1 starts at a+z-14.
 All other later originals start still lower. This also excludes any
