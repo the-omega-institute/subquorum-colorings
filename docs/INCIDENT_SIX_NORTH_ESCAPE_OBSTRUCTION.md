@@ -207,8 +207,14 @@ The proofs are general; finite controls only check them.
   [Receipt](../output/incident-six-north-escape-review.json) and
   [full response](../output/incident-six-north-escape-review-response.md).
 
+The [short-secondary transfer](INCIDENT_EIGHT_NORTH_ESCAPE_TRANSFER.md)
+now covers every actual j>=8 escape whose secondary north leg has length6;
+j=8 forces this length automatically. It gives one jointly unused positive
+activation per eligible residual claim. Secondary legs of length at least8
+remain unresolved.
+
 The unrestricted allocation and rectangular-grid
-triple equality, actual Vcorner realizations, longer north escapes, other
+triple equality, actual Vcorner realizations, longer secondary escapes, other
 return dimensions, nonmaximal corners and occupied adjacent bands remain OPEN.
 Submitted DMGT and primary star-forming/C4-free results are preserved.
 
