@@ -1,0 +1,39 @@
+{
+  "status": "WRITTEN_GENERAL_PROOF_EXACT_AND_SCOPED_LOCAL_LEAN_PASS_REVIEW_RUNNING",
+  "date": "2026-10-21",
+  "python": {
+    "execution_session": 58944,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_mandatory_e_footprint.py",
+    "receipt": "output/secondary-ten-mandatory-e-footprint-exact-controls.json"
+  },
+  "lean": {
+    "initial_execution_session": 65220,
+    "initial_result": "Failed: unavailable by_contra tactic and one unused assumption. Replaced with Classical.byContradiction and removed unused assumption.",
+    "final_execution_session": 76562,
+    "exit_code": 0,
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "source": "formal/SubQuorum/SecondaryTenMandatoryEFootprint.lean",
+    "declarations": 25,
+    "theorems": 19,
+    "memory_free_percent": 40,
+    "active_lean_lake_before": [],
+    "axiom_audit": "Every declaration individually printed. Final output contains only ordinary propext, Classical.choice, Quot.sound where needed; no warnings, sorryAx or native axioms.",
+    "scope": "Full-original U collision/footprint coordinates, root/earlier-V blocker coordinates, conditional depth and interval dichotomy arithmetic, terminal parity. Actual-owner catalogue, completeness-to-owner adapter, 2n distinct-owner count and final geometric theorem remain ordinary proofs."
+  },
+  "review": {
+    "status": "running_no_verdict",
+    "conversation_id": "conv_fb28a06da07d30e5",
+    "original_execution_session": 81636,
+    "request": "output/secondary-ten-mandatory-e-footprint-review-request.json",
+    "stream": "output/secondary-ten-mandatory-e-footprint-review-stream.sse",
+    "identity": "Await final ORIGINAL stream metadata; do not use other concurrent tasks."
+  },
+  "consequence": "Both specified unraised and raised right-band actual-owner branches have no complete extension. Their exact selected-union receipt identities remain correct but cannot be counted as nonempty complete-family compensation cases.",
+  "limitations": [
+    "General proof under independent review.",
+    "Necessary depth dichotomy only, not sufficiency or a complete surviving-family classification.",
+    "2n immutable source masses are not a net global Phi bound.",
+    "Global 5/6 improvement and rectangular-grid triple equality OPEN."
+  ]
+}

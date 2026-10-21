@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest complete-extension checkpoint: each old E support forces a fresh
+north-terminal U owner containing nine consecutive specified endpoints.
+The [general mandatory-footprint proof](docs/SECONDARY_TEN_MANDATORY_E_FOOTPRINT.md)
+excludes BOTH recent unraised/raised right-band families, including their
+shortest far legs. Their exact joint receipts remain correct for partial
+inventories; they have no complete-family instances. Arbitrary right
+incident depth D/far g in the same breadth frame must satisfy D<=z-12
+or D-g>=z. Also2n same-color forced terminals need2n distinct fresh
+owners; their masses alone do not give a net global bound.25scoped local
+Lean declarations and exact controls pass; a separate written audit is
+running. Global5/6 improvement and rectangular-grid equality remain OPEN.
+
 Latest mixed-direction checkpoint: a prescribed right-band owner has
 unbounded exterior debit -(u+13), yet its forced actual predecessor is
 completely classified and their exact joint gain is v+10+epsilon>=22.

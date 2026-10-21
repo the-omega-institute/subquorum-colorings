@@ -1,5 +1,12 @@
 # A right occupied-band consumer forces a compensating predecessor
 
+Subsequent complete-family restriction: the new
+[mandatory E-owner footprint](SECONDARY_TEN_MANDATORY_E_FOOTPRINT.md)
+excludes EVERY far-depth choice of the specified B from complete
+extensions, including g4. The all-parameter selected-union receipts below
+remain correct; their complete-family branch is empty. The stronger
+footprint theorem has local checks and a separate pending written audit.
+
 21 October 2026. Use the full ORIGINAL H3 chain of the
 [renewed-support note](SECONDARY_TEN_RENEWED_SUPPORT_ESCAPE.md).
 This is a mixed-direction theorem with an arbitrary actual predecessor

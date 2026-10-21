@@ -1,5 +1,13 @@
 # Raising the right band: two forced predecessor phases
 
+Subsequent complete-family restriction: the new
+[mandatory E-owner footprint](SECONDARY_TEN_MANDATORY_E_FOOTPRINT.md)
+excludes EVERY specified raised B from complete extensions. The exact
+selected-union formulas below remain valid for partial inventories;
+the conditional complete-family branch is empty. The footprint theorem
+has its own local checks and pending independent review, separate from
+the original raised-band receipt audit.
+
 21 October2026. Retain every original of the H3 chain, with all widths,
 depths and root breadth even, w_j>=12,z_j>=24,h>=6, odd a_0,even s_0,
 and the original recurrence. This is a further branch of the
@@ -160,7 +168,9 @@ The standalone local Lean module passed31declarations/22theorems with
 individual ordinary-axiom reports and no warnings. Its scope is explicit
 local collisions, missing old corner cell and conditional arithmetic/list
 budget; catalogue and physical-set cardinalities remain ordinary proofs.
-A separate independent written review is running, without a verdict;
+The separate receipt review ended in infrastructure failure
+(no_assistant_output), without a mathematical verdict. The stronger
+mandatory-footprint theorem has its own live independent review;
 see the [validation record](../output/secondary-ten-raised-right-band-validation.json).
 Finite enumeration does not replace the unbounded proof.
 The raised-depth theorem is outside the earlier unraised theorem's
