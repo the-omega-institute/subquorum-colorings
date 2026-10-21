@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_INTERNAL_SHORT_PAIR.md",
+  "python": {
+    "status": "PASS",
+    "classification": {
+      "actual_role_decisions": 7200,
+      "old_disjoint_receivers": 80,
+      "pair_disjoint_survivors": 240,
+      "tight_breadth_mandatory_collisions": 1440,
+      "next_deep_window_decisions": 3648
+    },
+    "exact_single_pair_set_controls": 128,
+    "nonuniform_simultaneous_groups": [
+      {
+        "blocks": 3,
+        "pairs": 2,
+        "gain": 16,
+        "new_full": 12,
+        "new_events": 26
+      },
+      {
+        "blocks": 6,
+        "pairs": 5,
+        "gain": 44,
+        "new_full": 30,
+        "new_events": 66
+      },
+      {
+        "blocks": 12,
+        "pairs": 11,
+        "gain": 96,
+        "new_full": 66,
+        "new_events": 144
+      },
+      {
+        "blocks": 24,
+        "pairs": 23,
+        "gain": 206,
+        "new_full": 138,
+        "new_events": 300
+      }
+    ],
+    "scope": "General written actual-owner coupling plus exact selected-union compensation for both far legs4, with disjoint physical tile row footprints. No complete extension existence or arbitrary exterior marginal/global inequality inferred.",
+    "session": 40596,
+    "exit_code": 0
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenInternalShortPair.lean",
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "execution": "local Mac, standalone --stdin",
+    "session": 22594,
+    "preflight": {
+      "memory_free_percent": 43,
+      "real_lean_lake_processes": []
+    },
+    "exit_code": 0,
+    "declarations": 32,
+    "theorems": 25,
+    "stdout": "'SubQuorum.SecondaryTenInternalShortPair.Point' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.endpoint' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.northAt' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.oldP' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.narrow_receiver_hits_P' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.receiver_bar_contains_t_column' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.deep_t_hits_receiver_bar' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.t_incident_locked' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.right_four_hits_P' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.insufficient_width_hits_t_bar' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.coupled_width_lower' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.shortest_width_lower' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.tight_general_depth_hits_t_footprint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.tight_general_far_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.next_B_far_collision' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.next_B_forces_ten' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.next_B_near_collision' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.next_B_receiver_upper' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.next_B_consumer_width' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.pair_original_mass' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.pairGain' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.pair_receipt_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.pair_gain_lower' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.R_endpoint_row_footprint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.T_endpoint_row_footprint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.endpoint_tile_row_footprint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.row_footprints_separated' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.row_footprints_disjoint' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.tight_new_support' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalShortPair.totalGain' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.validPairs' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalShortPair.simultaneous_lower' depends on axioms: [propext, Quot.sound]\n",
+    "stderr": "",
+    "individual_axioms_audited": true,
+    "scope": "Coordinate endpoint collisions, t depth lock, width coupling, next-B window, conditional charge/receipt arithmetic, row footprints and arbitrary-list compensation induction. Actual-owner normalization and full geometric receipt exhaustion remain written."
+  },
+  "review": {
+    "status": "RUNNING",
+    "task_id": "52f81a04-b25b-4683-8559-61314c10262f",
+    "conversation_id": "conv_9afe799461c653cb",
+    "original_stream_session": 37600,
+    "request": "output/secondary-ten-internal-short-pair-review-request.json",
+    "scope": "New actual-owner coupling, next-B window, exact short-pair receipts and simultaneous nonreuse theorem.",
+    "post_submission_clarification": "The conservative west-rotor row lower bound was clarified to exact rows>=a-4; proof and separation unchanged."
+  },
+  "prior_barrier_review": {
+    "task_id": "132e9691-dd33-4559-8c71-54f17788d834",
+    "conversation_id": "conv_0ac3ea2fea0b7c23",
+    "status": "LIVE_SERVICE_WAITING_RESPONSE",
+    "original_stream_session": 77849,
+    "original_stream_exit_code": 1,
+    "transport_failure": "unexpected EOF during chunk size line",
+    "duplicate_submission": false
+  },
+  "scope": "Selected-union compensation for actual internal short pairs in the explicit full-original U/rotor model. Arbitrary far legs/exterior consumers, global5/6 improvement, full-family allocation and grid triple equality remain OPEN."
+}
