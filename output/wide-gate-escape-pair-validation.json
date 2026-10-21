@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_LOCAL_WRITTEN_EXACT_AND_SCOPED_LEAN_REVIEW_PENDING",
+  "status": "PASS_LOCAL_WRITTEN_EXACT_SCOPED_LEAN_ORIGINAL_REVIEW_ACCEPT_SEED_NOW_EXCLUDED",
   "proof": "docs/WIDE_GATE_ESCAPE_PAIR_COMPENSATION.md",
   "verifier": "develop/check_wide_gate_escape_compensation.py",
   "python": {
@@ -34,15 +34,20 @@
   },
   "theorem": "Same explicit full-even-U/standard-rotor complete-extension model as predecessor: evenW>=8,n>=2,a>=2,D/F>=a+8(n-1)+4. Lower gate rotors impossible; all upper selectedPhi5g. Next actual receivers are distinct rotated U6 with evenk>=6,4<=f<=k-2,pair kL+kR<=W-4. HenceW>=16; W8/10/12/14 cannot completely extend. Selected old+rotors+escapes Phi=13g-6t>=7g, t=tightPairs<=g.",
   "review": {
-    "status": "SUBMITTED_DISPATCHED_NO_VERDICT",
+    "status": "COMPLETED_ACCEPT",
     "task_id": "4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2",
     "conversation_id": "conv_ed4025a182e9f9d9",
     "original_stream_session": 15686,
     "request": "output/wide-gate-escape-pair-review-request.json",
-    "scope": "Both first-layer forced-rotor and second-layer forced-escape proofs, source constructors and immutable inventory supplied. Live pool26workers/0queued before submission.",
-    "verified_phase": "waiting_response",
+    "scope": "Original BOTH wide layers accepted, not post-submission far-offset or subsequent all-width closure; written audit, no independent execution. Two coordinate wording fixes applied.",
+    "verified_phase": "completed",
     "attempts": 1,
-    "retry_count": 0
+    "retry_count": 0,
+    "original_stream_exit_code": 0,
+    "response_chars": 19396,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/wide-gate-escape-pair-review-terminal.json"
   },
   "predecessor_review": {
     "task_id": "e5552d8e-bcac-46bf-96c4-181121a74210",
@@ -59,5 +64,10 @@
     "claim": "Actual f<=k-4,k>=8,W>=20: f=k-2 forces support(7,3) with onlyWEST free; all U collide(7,0),both rotors collide(8,1). Excludes W16/18 also.",
     "validation": "23controls2484Uroles184rotorroles;3extra localLean theorems, final25decl20theorems6021PASS",
     "review_scope": "ADDED_AFTER4ea2ca1dSUBMISSION_notInInitialPacket"
+  },
+  "subsequent_disposition": {
+    "proof": "docs/ALL_WIDTH_NESTED_SEED_NONEXTENSION.md",
+    "status": "WRITTEN_AND_LOCAL_PASS_NEW_REVIEW_PENDING",
+    "claim": "ALL evenW>=6 nested seed NOcompleteExtension; earlier selected partial formulas stayexact, complete-owner implicationsforTHISseed vacuous, not global bound."
   }
 }

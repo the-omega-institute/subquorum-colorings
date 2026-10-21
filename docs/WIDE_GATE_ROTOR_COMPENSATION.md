@@ -1,5 +1,10 @@
 # Wide-gate forced-rotor compensation
 
+Subsequent disposition: `ALL_WIDTH_NESTED_SEED_NONEXTENSION.md` excludes
+complete extensions of this nested seed at every even width. The partial
+inventory identities here remain exact; their complete-extension owner
+implications do not supply a bound for a realizable complete family.
+
 22 October 2026. Authors: Haobo Ma and Wenlin Zhang.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
@@ -67,7 +72,8 @@ in full below. This is a check of the fixed rotor's finite role list;
 no bounded U search supplies the preceding all-depth argument.
 The right-gate argument is the reflection c -> W+1-c.
 
-All gates have different owners. A rotor spans at most three columns,
+All gates have different owners. A rotor has column-coordinate diameter
+three and occupies at most four columns,
 whereas opposite gates differ by W-1>=7. Its row span is at most four,
 whereas gates in different gaps differ by at least eight rows. Full U
 owners have already been excluded separately at every gate.
@@ -159,8 +165,12 @@ adapter and the exact inventory partition above remain written proofs.
 The entire original-source model is not claimed fully formalized.
 
 Independent review of this result and the subsequent escape-pair theorem
-has been submitted as task4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2,
-conversationconv_ed4025a182e9f9d9, original stream15686. It is pending.
+completed with ACCEPT as task4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2,
+conversationconv_ed4025a182e9f9d9, original stream15686 exit0. Its19396
+characters match the terminal receipt exactly; the review checks written
+proofs and does not independently execute code/Lean. Two coordinate-wording
+corrections have been applied. The later far-offset exclusion and all-width
+closure were outside that packet.
 The predecessor contact-ledger review completed with ACCEPT on its original
 stream25032, with an exact11448-character stream/terminal match. That
 request does not contain this result; its receipt is

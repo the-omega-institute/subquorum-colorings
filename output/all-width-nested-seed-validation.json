@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_LOCAL_WRITTEN_EXACT_AND_SCOPED_LEAN_REVIEW_PENDING",
+  "proof": "docs/ALL_WIDTH_NESTED_SEED_NONEXTENSION.md",
+  "verifier": "develop/check_wide_gate_sealed_return_obstruction.py",
+  "theorem": "Explicit complete full-even-U/standard-rotor model, even W>=6,a>=2,D/F>=a+12. THREE retained originals A=U(W+2,D,F)chart(r,c-1),B=U(W,4,4)chart(a+r,c),C=U(W,4,4)chart(a+8+r,c) have NO complete extension in ANY lattice orientations. Hence ALL n>=2 nested even-bar negative partial families excluded, at every even W.",
+  "python": {
+    "session": 89822,
+    "exit_code": 0,
+    "normalized_cases": 18,
+    "normalized_U": 62,
+    "normalized_rotors": 33,
+    "full_short_U_shapes": 156,
+    "sealed_gates": 189,
+    "excluded_U_roles": 364800,
+    "excluded_rotor_roles": 3024,
+    "reflection_and_even_translation_controls": "PASS",
+    "large_controls": [
+      {"W":200,"k":100,"f":40,"sealed_gates":54,"U_roles":54784,"rotor_roles":864},
+      {"W":2000,"k":1000,"f":900,"sealed_gates":94,"U_roles":85504,"rotor_roles":1504}
+    ]
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WideGateSealedReturnObstruction.lean",
+    "version": "4.33.0",
+    "session": 94747,
+    "exit_code": 0,
+    "explicit_declarations": 15,
+    "local_theorems": 10,
+    "preflight_memory_free_percent": 39,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "Every declaration ordinary propext/Classical.choice/Quot.sound only. Final no warnings/sorry/native. Initial simplification arithmetic and unavailable Int lemma corrected.",
+    "scope": "Normalized top/bottom/side geometry, all-bar-column horizontalU collision, all horizontal rotor directions, gate bounds, east-terminal/south-stem/south-bar/south-rotor collisions and frontier arithmetic. Full original-source-to-role/support and complete-extension assembly WRITTEN."
+  },
+  "predecessor_review": {
+    "task_id": "4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2",
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_session": 15686,
+    "exit_code": 0,
+    "response_chars": 19396,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/wide-gate-escape-pair-review-terminal.json",
+    "scope": "Original BOTH wide layers only, not far-offset addendum or all-width closure. Two coordinate-wording corrections applied. Written review, no independent execution."
+  },
+  "review": {
+    "task_id": "da0dcf4e-7214-4c46-bd46-1749adde75db",
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "original_stream_session": 89055,
+    "status": "SUBMITTED_DISPATCHED_NO_VERDICT",
+    "request": "output/all-width-nested-seed-review-request.json",
+    "scope": "New all-width closure plus earlier post-submission far-offset exclusion. Retained conversation, no duplicate."
+  },
+  "interpretation": "Earlier selected-inventory formulas remain exact, but their actual-owner complete-extension implications for THIS seed are now vacuous. No global compensation improvement or target counterexample follows.",
+  "open": "Unequal/deeper inner sources, other multicyclic contacts, mixed-direction complete families and unified allocation, global5/6 and rectangular-grid triple equality. Leave now-excluded seed."
+}

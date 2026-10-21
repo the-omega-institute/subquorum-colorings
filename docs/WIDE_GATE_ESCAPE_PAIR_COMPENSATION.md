@@ -1,5 +1,10 @@
 # Forced escape pairs and their shared-band correction
 
+Subsequent disposition: `ALL_WIDTH_NESTED_SEED_NONEXTENSION.md` excludes
+complete extensions of this seed for every even width. The selected
+partial-inventory identities remain exact, but cannot improve a global
+bound through complete extensions of this now-excluded family.
+
 22 October 2026. Authors: Haobo Ma and Wenlin Zhang.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
@@ -155,7 +160,7 @@ By (3), every actual selected pair avoids this boundary exception.
 
 For an actual selected pair, each U individually gains4 against the
 same retained-plus-upper-rotor baseline. If k_L+k_R<W-4, even parity
-leaves at least three columns between their nearest outer-bar endpoints.
+puts the nearest outer-bar columns at coordinate difference at least three.
 Their physical tile footprints are disjoint, so the joint gain is8.
 
 If k_L+k_R=W-4, put C=k_L+2, an even column. The two outer bars are
@@ -212,10 +217,12 @@ has no warnings or sorry/native axioms, with each declaration audited.
 Execution used the user-selected local Mac after44% free-memory and
 comm-basename process checks confirmed no active Lean/lake invocation.
 
-Independent review task4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2 runs on
-original stream15686, conversationconv_ed4025a182e9f9d9. Its self-contained
-packet includes both wide-gate proofs, full constructors and immutable
-inventory definitions. No verdict is yet claimed. The older contact-ledger
+Independent review task4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2 completed
+with ACCEPT on original stream15686 exit0, conversationconv_ed4025a182e9f9d9.
+Its19396-character stream/terminal match and gpt6/pro identity are verified.
+The self-contained packet includes both wide-gate proofs, full constructors
+and immutable inventory definitions. It does not include the subsequent
+far-offset addendum or all-width closure. The older contact-ledger
 and width-six three-original obstruction review completed with ACCEPT;
 its11448-character original stream exactly matches its terminal receipt.
 
