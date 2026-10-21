@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest batch checkpoint: packed distinct-owner repairs admit a two-terminal
+injection and a single-owner budget, with an exact signed exterior remainder.
+The reflected shared-consumer family has a full breadth classification:
+small breadths overlap, breadth16 has no complete extension, and every
+actual complete extension with breadth>=18 has selected-subinventory excess
+h-3>=15. Twenty-seven new scoped Lean declarations and full-source controls
+pass. See the [batch budget](docs/SECONDARY_TEN_BATCH_TERMINAL_BUDGET.md) and
+[complete exclusion and reflected-pair compensation](docs/SECONDARY_TEN_OPPOSING_BATCH_COMPLETE_EXCLUSION.md).
+Universal packing and complete-model exterior control remain open.
+
 Latest residual checkpoint: the all-actual-consumer local compensation
 theorem for the two prescribed residual families has an ACCEPT written
 review. A new complete-extension exclusion removes the depth-eight
