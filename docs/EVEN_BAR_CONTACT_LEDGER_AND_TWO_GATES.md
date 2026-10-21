@@ -93,6 +93,27 @@ the positive bar's top row. Two negatives on the same positive boundary
 would own that same cell. There is at most one negative per boundary,
 proving degree<=2. This bounds contacts per POSITIVE, not per negative.
 
+### Exact old/new boundary term within this restricted family
+
+Partition such an inventory into retained originals B and new originals S.
+Let e(S) count contact edges with both ends in S, and e(S,B) those crossing
+the partition, retaining parallel bands. Subtracting (1) for B from (1)
+for B+S gives the exact marginal
+
+    DeltaPhi(S | B)=|S|-e(S)-e(S,B).                         (1a)
+
+Thus the old/new adjustment in this family is exactly minus the number
+of old/new positive/negative contact bands, with no unknown full-tile
+correction. This uses the even-bar own-predecessor property for EVERY old
+original as well as every new one; it does not apply to arbitrary old
+rotated, odd-bar or rotor inventories in the earlier root-pair theorem.
+If S is a union of whole contact components of B+S, the boundary term
+vanishes. Every selected tree component then contributes1 and every selected
+unicyclic component0. Such a selection has nonnegative marginal whenever
+each selected component has cycle rank at most one. This is a sufficient
+nonreusing compensation rule; the nonextension lemma below excludes one
+specific family that violates its cycle-rank condition.
+
 ## A nested multicyclic family, and why its negative budget is not actual
 
 For every n>=1 take the negative outer source
