@@ -61,6 +61,15 @@ the two-column bar is at c,c+1, or at c+3,c+4. Both have complete
 five-point stems at rows Y,Q. The argument uses actual projections and
 the extremal corner; it does not impose an enumeration cutoff.
 
+These normal forms preserve the full immutable data. For even H, reversing
+the canonical long axis by column -> H+1-column preserves U(H,4,4).
+Each row-zero matching pair starting at odd column j maps to one starting
+at odd H-j; each internal row-one pair starting at even j maps to one
+starting at even H-j. The two equal stems and their matching edges are
+exchanged. The two bar-exterior supports, two axial supports, and each
+even/odd lateral-support pair are likewise exchanged. Thus long-axis
+reversal introduces no additional matching or original-support phase.
+
 ### The right-bar form is impossible
 
 Suppose the bar is at c+3,c+4. Its empty inner notch is
@@ -150,6 +159,9 @@ exact inventories yields
 No old charge changes, no previously credited tile is used again, and
 each new tile/event is included in exactly one group. This is a joint
 ledger, independent of the order in which stack originals are added.
+In particular its top tile row also occurs in the preceding upper ledger,
+but its three tile columns lie strictly left of b3=c+5. All its counted
+new tiles contain a previously empty cavity site and were nonfull before.
 
 Since N>=22 is even and 6k<=N, (1) is at least4. The width5 selected
 prefix already has DeltaPhi>=L/2+7, so its enlargement by the forced
@@ -180,6 +192,10 @@ root groups remains OPEN; a forced stack cannot automatically be credited
 to two groups. No claim is made that arbitrary additional originals have
 nonnegative marginals or that a whole complete family satisfies (3).
 Global5/6 improvement and rectangular-grid triple equality remain OPEN.
+
+The quantifiers fix a complete extension first, then select its actual
+forced stack in the width5 case. The height partition can depend on that
+extension; no single predetermined stack is required in every extension.
 
 ## Simultaneous cavity compensation without reusing credits
 

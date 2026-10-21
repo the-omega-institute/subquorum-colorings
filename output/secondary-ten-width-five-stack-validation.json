@@ -1,11 +1,11 @@
 {
   "date": "2026-10-22",
-  "status": "GENERAL_WRITTEN_STACK_CLASSIFICATION_AND_LEDGER_EXACT_AND_SCOPED_LEAN_PASS_REVIEW_PENDING",
+  "status": "GENERAL_STACK_CLASSIFICATION_LEDGER_AND_SELECTABLE_GROUP_INDEPENDENT_ACCEPT_EXACT_SCOPED_LEAN_PASS_SIMULTANEOUS_COROLLARY_NOT_REVIEWED",
   "model": "Explicit full-even-U/standard-rotor model, actual four-row staircase and sealed width5 cavity; no arbitrary-grid catalogue exhaustion.",
   "python": {
     "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_width_five_stack.py",
     "initial_execution_session": 12811,
-    "final_execution_session": 27757,
+    "final_execution_session": 33745,
     "exit_code": 0,
     "exact_stack_controls": 248,
     "nonuniform_actual_staircases": 32,
@@ -50,7 +50,8 @@
         "new_full_tiles": 120,
         "new_directed_events": 325
       }
-    ]
+    ],
+    "corner_data_scope": "All normalized corner placements compare the complete endpoint, immutable original-support and matching sets, not endpoints alone; long-axis reversal introduces no extra phase."
   },
   "lean": {
     "source": "formal/SubQuorum/SecondaryTenWidthFiveStack.lean",
@@ -66,7 +67,7 @@
     "initial_execution_session": 42217
   },
   "review": {
-    "status": "streaming_original_handle_retained_noVerdict",
+    "status": "completed_ACCEPT",
     "original_execution_session": 44381,
     "conversation_id": "conv_0ac3ea2fea0b7c23",
     "pool_before_dispatch": {
@@ -78,7 +79,15 @@
     "stream": "output/secondary-ten-width-five-stack-review-stream.sse",
     "scope": "New all-parameter width5 classification, cavity support closure, exact joint ledger and single selectable-group >=12 consequence; no global allocation claim.",
     "task_id": "9876cdfa-4c95-43b2-9d1f-3e6ef76fe22f",
-    "identity_evidence": "Exact complete original prompt matches exactly one turn in the preserved conversation; status dispatched. No verdict yet."
+    "identity_evidence": "Final SSE task metadata equals the preserved exact-complete-prompt task; full16802-character response exactly equals the authoritative terminal API response.",
+    "stream_exit_code": 0,
+    "stream_terminal_response_match": true,
+    "response_chars": 16802,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "response_archive": "output/secondary-ten-width-five-stack-review-response.md",
+    "terminal_archive": "output/secondary-ten-width-five-stack-review-terminal.json",
+    "clarifications": "Long-axis reversal preserves matching AND original supports for every evenH; explicit pair/support argument added and full-data corner controls strengthened. Select actual stack in each fixed complete extension; partition need not be uniform across extensions. No theorem/hypothesis change."
   },
   "conclusions": [
     "Every complete extension must fill the width5 cavity with left-bar U(H_j,4,4), H_j even>=6, sum H_j=N=z-2; no rotor/right-bar or additional notch owner can occur.",

@@ -153,9 +153,9 @@ def corner_and_right_controls():
                     shift = (bottom-endpoint[0], left-endpoint[1])
                     source = independent_source((height, 4, 4), symmetry, shift)
                     if source[0] <= cavity:
-                        seen.add(frozenset(source[0]))
-            expected = {frozenset(independent_source((height, 4, 4), symmetry,
-                         (bottom-height, column))[0])
+                        seen.add(tuple(frozenset(part) for part in source))
+            expected = {tuple(frozenset(part) for part in independent_source((height, 4, 4), symmetry,
+                         (bottom-height, column)))
                         for symmetry, column in (((True, False, False), left),
                                                   ((True, True, False), left+4))}
             assert seen == expected and len(seen) == 2

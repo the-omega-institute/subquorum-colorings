@@ -9,8 +9,11 @@ group has gain>=L/2+11>=14. Across the stated staircase branches a
 specified single group has gain>=L/2+9>=12.248 exact controls including
 32 nonuniform staircases and34 scoped Lean declarations PASS. For pairwise
 disjoint physical tile footprints, the new stack increments add exactly and
-give >=4 per cavity; the OLD prefix reserves still need allocation. New independent
-review is pending; the preceding sealed-cavity/>=10 theorem is ACCEPT.
+give >=4 per cavity; the OLD prefix reserves still need allocation. Independent
+review ACCEPTS the stack classification/ledger and single-group theorem;
+the simultaneous corollary is outside that input. Full immutable data under
+long-axis reversal and the extension-dependent selection are explicit.
+The preceding sealed-cavity/>=10 theorem is also ACCEPT.
 Allocation among overlapping groups and the global grid targets remain OPEN.
 
 Latest complete-prefix checkpoint: a [general sealed-cavity proof](docs/SECONDARY_TEN_SEALED_ROOT_CAVITY.md)
