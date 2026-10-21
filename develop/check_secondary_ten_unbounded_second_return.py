@@ -52,6 +52,14 @@ def main():
         assert after['full']-before['full'] == full and len(full) == width//2+3
         assert after['events']-before['events'] == events and len(events) == 3*width//2+9
         assert before['full'] <= after['full'] and before['events'] <= after['events']
+        old_corner_events = {
+            (19, moved((23, 6)), moved((22, 6))),
+            (len(base)-1, moved((22, 6)), moved((23, 6)))}
+        assert old_corner_events <= before['events'] & after['events']
+        corner_cells = {moved((row, column)) for row in (22, 23) for column in (6, 7)}
+        corner_new_events = {event for event in after['events']-before['events']
+                             if event[1] in corner_cells and event[2] in corner_cells}
+        assert corner_new_events == {(19, moved((23, 7)), moved((22, 7)))}
         assert phi_from(base+[second], after)-phi_from(base, before) == -width//2-2
         assert phi_from(base+[second], after)-phi_from(fixed, old) == -width//2-1
         occupied = set.union(*(record[0] for record in base+[second]))

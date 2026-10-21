@@ -95,9 +95,13 @@ The first row contributes h+6 events and the second h/2+3, for
 3h/2+9 altogether. The downward directions from odd V columns are
 excluded by V's immutable original lateral supports. The two horizontal
 W/V directions between (22,6) and z are excluded by their respective
-axial supports. The P_0 upward event at column6 already existed before
-V; it is not counted a second time. There are no other foreign endpoints
-in V's physical endpoint tiles. Consequently (3) and (4) give
+axial supports. Before V, the tile at (22,6) already carried BOTH
+P_0:(23,6)->W:(22,6) and W:(22,6)->P_0:(23,6). Neither old event
+is counted again. After V the sole new event in this three-owner tile
+is P_0:(23,7)->V:(22,7), already the c=7 member of (4); the reverse
+is excluded by V's original lateral support. There are no further
+unaccounted new foreign-endpoint events in V's physical endpoint tiles.
+Consequently (3) and (4) give
 
     1+2(h/2+3)-(3h/2+9) = -h/2-2,
 
@@ -148,3 +152,9 @@ under even translations. The
 scoped Lean module proves the conditional receipt arithmetic and
 unboundedness. Neither replaces the written source-chart proof.
 This later result is outside the both-far main-theorem review input.
+
+The next step is now covered by
+[the actual-next-owner classification and compensation theorem](SECONDARY_TEN_NEXT_SUPPORT_EAST_TERMINAL.md):
+in every complete extension the q-owner must be an east-terminal U,
+with exact marginal at least1 upwards and at least2 downwards.
+This does not by itself repay the width-dependent loss in (2).

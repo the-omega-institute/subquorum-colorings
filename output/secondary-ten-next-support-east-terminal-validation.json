@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_NEXT_SUPPORT_EAST_TERMINAL.md",
+  "verifier": "develop/check_secondary_ten_next_support_east_terminal.py",
+  "python_exit_code": 0,
+  "controls": {
+    "status": "PASS",
+    "roles": {
+      "eligible_U_roles": 576,
+      "south_terminal_exclusions": 192,
+      "feasible_corner_normalizations": 42,
+      "east_terminal_normalizations": 106
+    },
+    "corners": {
+      "exact_corner_receipt_and_nonextension_controls": 144,
+      "three_neighbour_gate_rotor_exclusions": 144
+    },
+    "upward": {
+      "exact_upward_full_event_set_controls": 134,
+      "collision_controls": 26,
+      "exceptional_far_receipts": 26,
+      "far_profiles": [
+        "oneEvent",
+        "oneFull",
+        "outside",
+        "twoFull"
+      ]
+    },
+    "downward": {
+      "exact_row_frontier_controls": 2110,
+      "exact_downward_full_event_set_controls": 831,
+      "collision_controls": 909,
+      "far_deductions": [
+        0,
+        1
+      ]
+    },
+    "scope": "Finite controls supplement general written actual-east-terminal classification, arbitrary-corner complete nonextension and exact all-parameter upward/downward marginal>=1/>=2. Joint allocation and full-family/global compensation remain OPEN."
+  },
+  "general_theorem": "For all even h>=12,g>=4, in every complete extension of the stated H3+R+T+W+V partial family in the full even-U/rotor model, q=(23,h+13) is owned by an east-terminal U. Every feasible rightward corner has no complete extension. Upward exact marginal2-eta>=1; downward exact marginal3-delta>=2, eta/delta0or1. No width/depth cutoff.",
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenNextSupportEastTerminal.lean",
+    "exit_code": 0,
+    "explicit_declarations": 31,
+    "theorems": 29,
+    "preflight_memory_free_percent": 39,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "All31explicit declarations audited; ordinary propext/Classical.choice/Quot.sound only. Final run40670 no warnings/sorry/native.",
+    "scope": "Blocked-neighbour, continuous-stem and rotor-fork contradictions; parity frontiers, physical separation, conditional source/receipt arithmetic and positive marginal. Original chart normalization, row-frontier table and exhaustive event identification remain written proofs."
+  },
+  "review": {
+    "status": "SUBMITTED_LIVE_STREAM",
+    "original_stream_session": 50867,
+    "request": "output/secondary-ten-next-support-east-terminal-review-request.json",
+    "scope": "New actual-q-owner classification, corner complete nonextension, both all-parameter marginal identities; corrected two-old-event second-return dependency. No verdict yet."
+  },
+  "open": "Whole old-band allocation; no full extension existence, full-family compensation, global5/6 improvement or rectangular-grid triple equality asserted."
+}
