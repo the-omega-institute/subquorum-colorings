@@ -234,14 +234,68 @@ def stack_controls():
     return cases, nonuniform
 
 
+def simultaneous_controls():
+    results = []
+    for count in (2, 3, 5):
+        pieces, stacks, footprints = [], [], []
+        for index in range(count):
+            depth, offset = 24+2*index, 2000*index
+            dimensions = sharp_dimensions(12, 12, depth, 6)
+            dimensions[3][1] -= 4
+            dimensions[3][2] -= 4
+            fixed, additions, records = make_prefix(31, offset, [12, 12], [depth, 24],
+                                                    6, 6, dimensions)
+            amount = (depth-2)//6
+            heights = [6]*(amount-1)+[depth-2-6*(amount-1)]
+            bottom, left = 31+depth-15, offset-23
+            current_stack = []
+            for height in heights:
+                current_stack.append(independent_source((height, 4, 4),
+                                      (True, False, False), (bottom-height, left)))
+                bottom -= height
+            cavity = rectangle(19, 31+depth-15, left, left+4)
+            footprint = {(row//2, column//2) for row, column in cavity}
+            assert all(not footprint & previous for previous in footprints)
+            assert {(row//2, column//2) for source in current_stack
+                    for row, column in source[0]} <= footprint
+            pieces.append(records)
+            stacks.append(current_stack)
+            footprints.append(footprint)
+        retained = [source for piece in pieces for source in piece]
+        fresh = [source for stack in stacks for source in stack]
+        before, after = inventory(retained), inventory(retained+fresh)
+        expected_full, expected_events = set(), set()
+        old_offset, new_offset = 0, len(retained)
+        expected_gain = 0
+        for piece, stack in zip(pieces, stacks):
+            local_before, local_after = inventory(piece), inventory(piece+stack)
+            current_full = local_after['full']-local_before['full']
+            assert not current_full & expected_full
+            expected_full |= current_full
+            for owner, point, target in local_after['events']-local_before['events']:
+                global_owner = old_offset+owner if owner < len(piece) else new_offset+owner-len(piece)
+                expected_events.add((global_owner, point, target))
+            expected_gain += phi_from(piece+stack, local_after)-phi_from(piece, local_before)
+            old_offset += len(piece)
+            new_offset += len(stack)
+        assert after['full']-before['full'] == expected_full
+        assert after['events']-before['events'] == expected_events
+        actual_gain = phi_from(retained+fresh, after)-phi_from(retained, before)
+        assert actual_gain == expected_gain >= 4*count
+        results.append(dict(cavities=count, exact_gain=actual_gain,
+                            full_tiles=len(expected_full), directed_events=len(expected_events)))
+    return results
+
+
 if __name__ == '__main__':
     corners = corner_and_right_controls()
     cases, nonuniform = stack_controls()
     print(json.dumps(dict(status='PASS', corner_controls=corners,
         exact_stack_controls=len(cases), nonuniform_actual_staircases=nonuniform,
+        simultaneous_cavity_controls=simultaneous_controls(),
         minimum_stack_gain=min(case['stack_gain'] for case in cases),
         minimum_enlarged_gain=min(case['enlarged_gain'] for case in cases),
         extremal_controls=[case for case in cases if case['stack_gain'] == 4][:4],
         scope='Finite full-original controls supplement the general corner, recursive-trapping '
               'and joint-receipt proof. Exact cavity support closure is checked; no complete '
-              'global extension, cross-group allocation or global grid bound is asserted.'), indent=2))
+              'global extension, allocation of old prefix reserves or global grid bound is asserted.'), indent=2))

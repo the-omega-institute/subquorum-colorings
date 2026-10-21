@@ -161,4 +161,28 @@ theorem selectable_group_ge_twelve (breadth gain : Int)
     (hwidth : 6 ≤ breadth) (hgain : breadth/2+9 ≤ gain) :
     12 ≤ gain := by omega
 
+theorem root_column_separation (left nextLeft width : Int)
+    (hwidth : 12 ≤ width) (hnext : nextLeft = left-width-12) :
+    nextLeft+3 < left-1 := by omega
+
+theorem no_shared_tile_column (left nextLeft tile : Int)
+    (hseparated : nextLeft+3 < left-1)
+    (hnextTile : 2*tile ≤ nextLeft+3) (hthisTile : left-1 ≤ 2*tile) :
+    False := by omega
+
+inductive Batch : Int → Int → Prop where
+  | empty : Batch 0 0
+  | push (size stackCount previousGain previousCount : Int)
+      (hsize : 22 ≤ size) (hstack : Stack size stackCount)
+      (previous : Batch previousGain previousCount) :
+      Batch (previousGain+(size/2-stackCount-4)) (previousCount+1)
+
+theorem simultaneous_stack_gain (gain count : Int) (hbatch : Batch gain count) :
+    4*count ≤ gain := by
+  induction hbatch with
+  | empty => omega
+  | push size stackCount previousGain previousCount hsize hstack previous ih =>
+      have hgain := complete_stack_gain_ge_four size stackCount hsize hstack
+      omega
+
 end SubQuorum.SecondaryTenWidthFiveStack

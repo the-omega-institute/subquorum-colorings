@@ -7,7 +7,9 @@ would force a further original into a sealed width3 notch and is excluded.
 The whole stack has exact increment N/2-k-4>=4; the width5 enlarged
 group has gain>=L/2+11>=14. Across the stated staircase branches a
 specified single group has gain>=L/2+9>=12.248 exact controls including
-32 nonuniform staircases and30 scoped Lean declarations PASS. New independent
+32 nonuniform staircases and34 scoped Lean declarations PASS. For pairwise
+disjoint physical tile footprints, the new stack increments add exactly and
+give >=4 per cavity; the OLD prefix reserves still need allocation. New independent
 review is pending; the preceding sealed-cavity/>=10 theorem is ACCEPT.
 Allocation among overlapping groups and the global grid targets remain OPEN.
 

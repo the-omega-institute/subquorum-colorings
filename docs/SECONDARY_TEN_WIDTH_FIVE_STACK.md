@@ -181,6 +181,44 @@ to two groups. No claim is made that arbitrary additional originals have
 nonnegative marginals or that a whole complete family satisfies (3).
 Global5/6 improvement and rectangular-grid triple equality remain OPEN.
 
+## Simultaneous cavity compensation without reusing credits
+
+There is also a precise sufficient condition for allocating the NEW stack
+contributions among multiple groups. Suppose a single retained endpoint
+inventory S contains m cavities satisfying the hypotheses above, and their
+physical tile footprints are pairwise disjoint. For a cavity with top T,
+bottom Q and left c, that footprint is the integer tile rectangle
+
+    [(T-1)/2,Q/2] x [(c-1)/2,(c+3)/2].
+
+Every added endpoint, every new source's endpoint tile, every new full tile
+and every new directed event lies in its own cavity's footprint. Every
+outside cell in a tile meeting the cavity is an already occupied retained
+wall cell; hence other retained originals cannot change the local receipt
+partition. Disjoint footprints preclude a shared new tile or a same-tile
+event between different stacks. The source charges are immutable and the
+fresh originals are disjoint. Consequently, for the actual forced stacks
+K_j in any complete extension,
+
+    Phi(S union all K_j)-Phi(S)
+      =sum_j (N_j/2-k_j-4) >=4m.                (4)
+
+No disjointness between the OLD boundary-owner lists is needed beyond the
+stated hypotheses: an old owner may supply several walls, but its charge
+is not credited anew and its events belong to distinct physical tiles.
+This gives a simultaneous inequality for the stack contributions; it does
+not add the overlapping original-prefix lower bounds from (3).
+
+For cavities attached to distinct eligible roots of the retained H3 chain,
+c_j=s_(j+1)+1. Since s_(j+2)=s_(j+1)-w_(j+2)-12 and w>=12, consecutive
+left coordinates decrease by at least24. Their three-column physical tile
+footprints are therefore disjoint regardless of overlapping row ranges.
+The same separation holds for nonconsecutive roots. This is a separation
+certificate conditional on those eligible root configurations coexisting;
+their coexistence and the allocation of the OLD prefix reserves are not
+asserted. The independent stack review input predates this simultaneous
+corollary; its review status is recorded separately.
+
 ## Local support closure and remaining obligations
 
 For any such height partition, the stack leaves exactly two unconsumed

@@ -5,7 +5,7 @@
   "python": {
     "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_width_five_stack.py",
     "initial_execution_session": 12811,
-    "final_execution_session": 10523,
+    "final_execution_session": 27757,
     "exit_code": 0,
     "exact_stack_controls": 248,
     "nonuniform_actual_staircases": 32,
@@ -30,19 +30,40 @@
       "new_full_tiles": 20,
       "new_directed_events": 55,
       "remaining_inside_supports": 6
-    }
+    },
+    "simultaneous_cavity_controls": [
+      {
+        "cavities": 2,
+        "exact_gain": 8,
+        "new_full_tiles": 43,
+        "new_directed_events": 117
+      },
+      {
+        "cavities": 3,
+        "exact_gain": 13,
+        "new_full_tiles": 67,
+        "new_directed_events": 182
+      },
+      {
+        "cavities": 5,
+        "exact_gain": 25,
+        "new_full_tiles": 120,
+        "new_directed_events": 325
+      }
+    ]
   },
   "lean": {
     "source": "formal/SubQuorum/SecondaryTenWidthFiveStack.lean",
-    "execution_session": 42217,
+    "execution_session": 28106,
     "exit_code": 0,
     "toolchain": "leanprover--lean4---v4.33.0",
-    "declarations": 30,
-    "theorems": 24,
-    "memory_free_percent": 40,
+    "declarations": 34,
+    "theorems": 27,
+    "memory_free_percent": 39,
     "active_lean_lake_before": [],
     "axiom_audit": "Every declaration individually printed; no warnings, sorryAx or native axioms; only ordinary propext, Classical.choice and Quot.sound where needed.",
-    "scope": "Width5 leg lock, exact canonical left/right endpoint forms, rotor bounding-corner exclusion, right/left notch coordinates, support/remainder phase, abstract stack induction, physical receipt arithmetic and >=4/>=12 consequences. Actual-owner normalization, connectivity/trapping, geometric induction and event exhaustion remain written."
+    "scope": "Width5 leg lock, exact canonical left/right endpoint forms, rotor bounding-corner exclusion, right/left notch coordinates, support/remainder phase, abstract stack induction, physical receipt arithmetic and >=4/>=12 consequences. Actual-owner normalization, connectivity/trapping, geometric induction and event exhaustion remain written. Added root-column/physical-tile separation and abstract Batch induction proving simultaneous >=4 per cavity; geometric receipt-disjointness adapter remains written.",
+    "initial_execution_session": 42217
   },
   "review": {
     "status": "streaming_original_handle_retained_noVerdict",
@@ -55,7 +76,9 @@
     },
     "request": "output/secondary-ten-width-five-stack-review-request.json",
     "stream": "output/secondary-ten-width-five-stack-review-stream.sse",
-    "scope": "New all-parameter width5 classification, cavity support closure, exact joint ledger and single selectable-group >=12 consequence; no global allocation claim."
+    "scope": "New all-parameter width5 classification, cavity support closure, exact joint ledger and single selectable-group >=12 consequence; no global allocation claim.",
+    "task_id": "9876cdfa-4c95-43b2-9d1f-3e6ef76fe22f",
+    "identity_evidence": "Exact complete original prompt matches exactly one turn in the preserved conversation; status dispatched. No verdict yet."
   },
   "conclusions": [
     "Every complete extension must fill the width5 cavity with left-bar U(H_j,4,4), H_j even>=6, sum H_j=N=z-2; no rotor/right-bar or additional notch owner can occur.",
@@ -65,5 +88,11 @@
     "The explicit stack closes support obligations inside the cavity and introduces no exterior violations, while existing exterior obligations can remain.",
     "Local partial right-bar marginal<0 controls are excluded from complete extensions; no arbitrary-added-owner monotonicity is claimed.",
     "Cross-group allocation, complete global extension existence, arbitrary-grid exhaustion, global5/6 and rectangular-grid triple equality remain OPEN."
-  ]
+  ],
+  "simultaneous_corollary": {
+    "status": "general_written_proof_exact_controls_and_scoped_Lean_PASS",
+    "claim": "Pairwise disjoint physical tile footprints imply exact additivity of forced-stack increments, hence >=4m for m cavities, including shared old boundary owners. Eligible H3 root columns decrease by >=24, giving a disjointness certificate conditional on coexistence.",
+    "scope": "Stack increments only; overlapping OLD prefix reserves are not added. Global allocation remains OPEN.",
+    "review_status": "OUTSIDE original new-stack review input; no independent ACCEPT claimed for this corollary."
+  }
 }
