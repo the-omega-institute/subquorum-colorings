@@ -325,7 +325,7 @@ The secondary10 coverage is therefore:
 | Actual first-consumer subclass | Completed conclusion | Remaining obligation |
 |---|---|---|
 | North terminal, width6 | No complete extension | None for this excluded class; no credit |
-| North terminal, width>=8 | Necessary chart; charge1-width | Complete closure or compensation of the width-dependent deficit |
+| North terminal, width>=8 | [Exact internal pair debit](SECONDARY_TEN_NORTH_CONTACT_DEBIT.md):1/2 independent of width, plus explicit signed external-contact term | Complete closure and joint control of external contacts; no free isolated-mass payment |
 | Outer corner | [Corner theorem](SECONDARY_TEN_CORNER_ACTIVATION_TRANSFER.md): one jointly unused target for all legal independent legs/widths | Complete actual-chain realizability |
 | East down, D far>=6 | This note: first/last joint activations, exact gain1 per selected residual claim | Complete actual-chain realizability and coverage of other classes |
 | East down, D far4 | [Far4 theorem](SECONDARY_TEN_FAR_FOUR_ACTIVATION_TRANSFER.md): one jointly unused target; next consumer may turn upward | Further bend compensation and complete actual-chain realizability |

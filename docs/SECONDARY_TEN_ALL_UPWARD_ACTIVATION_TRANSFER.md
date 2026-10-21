@@ -228,7 +228,9 @@ per-class rounded pool. Equivalently the existing unified certificate
 allows Ksingle to include ALL upward gaps, replacing its tight-only count.
 
 This extends actual compensation coverage to every east-terminal branch
-at secondary10. The negative north width>=8 branch, secondary>=12,
+at secondary10. The [north contact identity](SECONDARY_TEN_NORTH_CONTACT_DEBIT.md)
+separately identifies its exact internal debit and remaining external
+signed term. The negative north width>=8 branch, secondary>=12,
 complete realizability, unrestricted allocation and rectangular-grid
 triple equality remain OPEN. No universal improvement of5/6 or historical
 novelty is claimed. Submitted DMGT and primary C4-free work are preserved.

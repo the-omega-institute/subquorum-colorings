@@ -104,6 +104,13 @@ matching+inside-2*tiles gives 1-w, +1, +1, -1 respectively.
 In particular the north branch cannot be treated as an activation of a
 positive owner. It has a width-dependent isolated deficit.
 
+The later [north contact calculation](SECONDARY_TEN_NORTH_CONTACT_DEBIT.md)
+shows why isolated mass is not a separate resource: exact D/L directed
+events and mixed-full tiles leave an INTERNAL net reserve debit of1
+or2 independent of width. External source contacts add a separate signed
+term; a displayed endpoint-disjoint partial triple refutes its automatic
+nonnegativity, without refuting a complete-model allocation theorem.
+
 ## What an endpoint-only rule fails to prove
 
 For every even w>=6, choose m=w+2, t=4 and the north terminal U(w,4,4)
