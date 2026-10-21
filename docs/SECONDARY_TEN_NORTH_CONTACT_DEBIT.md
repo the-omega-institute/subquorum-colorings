@@ -156,6 +156,14 @@ complete extension; they cannot be silently discarded or assumed helpful.
 
 ## 4. Verification and remaining scope
 
+The subsequent [gap-four package theorem](SECONDARY_TEN_NORTH_GAP_FOUR_PACKAGE.md)
+classifies the actual consumer when m=w+4 and proves exact local neutrality
+of an outward positive package, with a stronger external-sign obstruction.
+Its [cavity continuation](SECONDARY_TEN_NORTH_OUTWARD_CAVITY.md) forces a
+second, negative actual owner, excludes h=t and bounds the tight h=t+2 case.
+Those are separate proof and validation milestones; no global credit is
+inferred from the isolated package.
+
 The table and endpoint separation above are the all-parameter proof.
 A [separate checker](../develop/check_secondary_ten_north_contact_debit.py)
 directly reconstructs original matchings/supports, all shared tiles and
