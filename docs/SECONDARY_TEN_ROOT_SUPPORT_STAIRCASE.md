@@ -147,7 +147,7 @@ prove the geometric converse without a bounded enumeration.
 
 ## Exact seven-owner compensation for the explicit family
 
-Use precisely (4), write N=u+L+12, D1=u+v+18, D3=u+v+22,
+Use precisely (4), write nu=u+L+12, D1=u+v+18, D3=u+v+22,
 and keep the ORIGINAL support sets when counting directed foreign
 intratile events. Charges of J_0,J_1,J_2,J_3 are -1,+1,-1,+1:
 translating the incident row by one changes its physical tile phase;
@@ -159,7 +159,7 @@ The complete incremental physical receipt counts are
 
 | New owner | New full mixed tiles | New directed events | Phi marginal |
 |---|---|---|---|
-| J_0 | N/2 | 3N/2 | 1-N/2 |
+| J_0 | nu/2 | 3nu/2 | 1-nu/2 |
 | J_1 | 0 | 1 | 0 |
 | J_2 | D1/2+2 | D1+4 | 1 |
 | J_3 | D3/2+1+2epsilon | 3D3/2+2+7epsilon | 1-D3/2-3epsilon |
@@ -213,8 +213,8 @@ original charge, physical tile and labelled event is used once. Adding
 the preceding exact triple ledger gives
 
     DeltaS=u+v+L+26, DeltaN=3,
-    DeltaF=11+(N+D1+D3)/2+2epsilon,
-    DeltaE=24+3N/2+D1+3D3/2+7epsilon.
+    DeltaF=11+(nu+D1+D3)/2+2epsilon,
+    DeltaE=24+3nu/2+D1+3D3/2+7epsilon.
 
 Substitution proves (5). If epsilon0, v>=12,L>=6 give at least19.
 If epsilon1, L=v+2 gives v+8>=20. This proves the uniform19 lower

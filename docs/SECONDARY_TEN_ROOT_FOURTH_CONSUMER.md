@@ -35,13 +35,14 @@ Conversely these conditions give endpoint-disjointness from ALL retained
 H3,B,R,A, uniformly in K,g and the later blocks. This is geometric
 sufficiency; existence of a complete extension is not asserted.
 
-Put N=u+L+12. Relative to H3 alone the single selected-union ledger is
+Put nu=u+L+12, distinct from the global N counting positive-charge
+originals. Relative to H3 alone the single selected-union ledger is
 
     DeltaS=u+v+L+25, DeltaN=1,
-    DeltaF=8+N/2, DeltaE=17+3N/2,
+    DeltaF=8+nu/2, DeltaE=17+3N/2,
     DeltaPhi=u/2+v+L/2+19>=40.                    (3)
 
-J has immutable charge -1 and marginal 1-N/2. Thus even a remaining
+J has immutable charge -1 and marginal 1-nu/2. Thus even a remaining
 actual-owner branch cannot be handled by assuming nonnegative insertion
 marginals. Neither (3) nor the triple's bound54 is monotone under arbitrary
 further additions. Both are exact statements about specified unions.
@@ -132,7 +133,7 @@ further necessary condition for any complete extension of the prefix.
 
 ## Immutable charge and exact physical receipts
 
-For t=(D+G)/2, J has H+t-1 matching edges. Its horizontal two-column
+For t=(D+G)/2, J has H+t-1 matching edges. Its two-column
 bar is aligned to a physical tile column and meets H/2 tiles; its two
 odd-ended horizontal stems add t tiles. Thus T=H/2+t. Its two axial
 supports lie in endpoint tiles, its two bar-exterior supports do not,
@@ -148,10 +149,10 @@ the source's ORIGINAL support set. New full tile minima are exactly
 
     (a-9,c), c=s+2-L,s+4-L,...,s+u+12,            (5)
 
-giving N/2 tiles. New owner-labelled events are exactly
+giving nu/2 tiles. New owner-labelled events are exactly
 
     J:(a-9,c) -> old:(a-8,c),
-      c=s+2-L,s+4-L,...,s+u+12;                 N/2 events;
+      c=s+2-L,s+4-L,...,s+u+12;                 nu/2 events;
     A:(a-8,c) -> J:(a-9,c), c=s+1-L,...,s;      L events;
     P0:(a-8,c) -> J:(a-9,c), c=s+1,...,s+u+12; u+12 events.
 
@@ -182,8 +183,8 @@ cooperative completions involving several older owners, and events.
 Every new tile in (5) contains an endpoint of J absent from the previous
 union; each new event has J as an endpoint owner. The new objects are
 disjoint from prior receipt sets, and old events persist because supports
-are immutable. Adding the new mass1, full tiles N/2 and events3N/2 gives
-marginal 1-N/2. Adding this once to the exact triple gain u+v+L+24
+are immutable. Adding the new mass1, full tiles nu/2 and events3N/2 gives
+marginal 1-nu/2. Adding this once to the exact triple gain u+v+L+24
 gives (3). There is no reuse of any old mass or physical receipt.
 
 ## Reproducible witness and verification scope
@@ -203,7 +204,8 @@ all24 insertion orders of the explicit witness with stable owner labels.
 Finite controls supplement the general proof above. Scoped Lean checks
 coordinate obstructions, the frontier arithmetic and exact ledger algebra;
 the catalogue, geometric sufficiency and physical receipt exhaustion
-remain written. Independent review of this extension is tracked separately
-from the accepted triple and generic cavity. Arbitrary complete-family
+remain written. Independent review of this extension and the reflected applications
+completed ACCEPT; the local nu parameter and global N are distinct.
+The later support staircase is outside this review. Arbitrary complete-family
 allocation, arbitrary-grid exhaustion, global5/6 improvement and rectangular
 grid triple equality remain OPEN.

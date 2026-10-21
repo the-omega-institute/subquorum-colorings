@@ -151,7 +151,7 @@ R endpoint and its south neighbor is P0's row0 endpoint. A consuming
 original can only have own neighbors north/west. Reflect both relative
 coordinate axes in the geometric lemma, so these become east/south.
 
-If A has d6, choose q=u+12. The reflected north strip is row a-8,
+For d6 use A=U(L,6,f), chart(a-10+r,s+1-c), and choose q=u+12. The reflected north strip is row a-8,
 columns s through C-1: P0 supplies s+1,...,C-1 and A's near stem
 supplies column s. The reflected east wall is(a-9,s), in A's lower
 bar row. The reflected south strip is row a-13, columns s+1 through
@@ -199,7 +199,8 @@ this deduction does NOT cover the cavity exclusion or the bound54.
 The initial cavity audit completed ACCEPT and covers the general cavity and first d8
 application, not the subsequent two reflected applications. Those have
 their own written coordinate proof, full-original controls and scoped
-Lean guard-transfer checks; independent follow-up is still needed.
+Lean guard-transfer checks; independent follow-up completed ACCEPT, together with the fourth-owner
+classification and ledger. The d6 chart above is explicit as requested.
 
 The review's phrase "eight normalized tip placements" is a literal error:
 the eight normalized matching placements contain four non-tip roles and
