@@ -1,5 +1,14 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest complete-root checkpoint: a new [two-direction cavity lemma](docs/SECONDARY_TEN_ROOT_CAVITY_EXCLUSION.md)
+excludes EVERY depth8 t0 owner from a complete extension of the specified
+first deep root B. All U dimensions and all four fixed rotor roles hit
+retained guards. Only depths4/6 survive, improving the conditional joint
+selected-union bound from46 to54 without new credits.32scoped local Lean
+declarations and full-original controls pass. Triple-ledger review64559
+and separate cavity review22819 remain live; neither has a verdict yet.
+This is an exclusion and conditional local compensation, not a global bound.
+
 Latest root triple checkpoint: the actual t0 owner, conditional on the
 specified deep B and arbitrary forced E owner R, has an all-parameter
 left-U classification with incident depth4/6/8 and explicit breadth/far

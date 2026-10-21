@@ -8,6 +8,12 @@ actual E-owner classification have independent written-review ACCEPT.
 This note extends that pair to EVERY actual owner of the root t0 support.
 No exhaustive component catalogue for arbitrary grids is assumed proved.
 
+A subsequent [two-direction cavity exclusion](SECONDARY_TEN_ROOT_CAVITY_EXCLUSION.md)
+removes d8 from every COMPLETE extension of this prefix and strengthens
+the conditional bound to54. The full d8 geometric receipt controls below
+remain valid; their negative marginals occur only in partial inventories.
+The triple audit does not cover that subsequent exclusion.
+
 ## Statement
 
 Let n>=2, odd a=a0, even s=s0, even widths wj>=12, depths zj>=24 and
