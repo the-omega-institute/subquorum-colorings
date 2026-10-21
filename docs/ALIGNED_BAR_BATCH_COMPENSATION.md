@@ -65,7 +65,8 @@ disjointness still requires the geometric arguments below.
 
 ## Aligned-bar packing
 
-Lemma. A full U whose bar top is even, left column even and right column odd
+Lemma. A downward full U in the displayed EAST phase whose bar top is even,
+left column even and right column odd
 has its whole endpoint-tile footprint inside the aligned interval of its bar
 columns. Two endpoint-disjoint U originals in this phase have disjoint entire
 endpoint-tile footprints, regardless of their widths, depths or translations.
@@ -135,6 +136,15 @@ incomplete, giving -1, or completed by old endpoints, giving +1. Thus the
 entire contact contributes at least -1. A tile cannot belong to two foreign
 contacts: O/O and V/V tile overlap have already been excluded. Charging this
 single possible loss to the contacted root proves (1) without reusing credit.
+
+More exactly, let epsilon_ij indicate that B completes the terminal tile of
+foreign contact (i,j), and let C be the set of such contacts. Then
+
+    C_new/new = -|C|+2*sum_(i,j in C) epsilon_ij.
+
+The old/new events in a terminal tile already belong to the individual
+gains g_i; this correction counts only new/new directions and cooperative
+full tiles. It cannot spend an old completion or event twice.
 
 For completeness, define F_i as the full tiles newly created by B+P_i.
 The sets F_i are disjoint: any missing baseline cell in a tile in F_i must
@@ -207,8 +217,13 @@ root-anchor uniqueness, the bar-precedence implication, near-column full
 coverage, the eligible-root credit bound and the final ledger arithmetic.
 The source-role adapter, event partition, one-contact geometry, and the
 unbounded family's source construction remain general written proofs.
-The finite controls supplement those proofs. This new batch theorem has
-not yet received independent Oracle review; the two prerequisite root/pair
+The finite controls supplement those proofs. Independent review completed
+ACCEPT on task45fdc881-9773-411e-b97b-a12394f1aa51, original stream51950,
+observed gpt_6/pro. Its16469-character response exactly matches the terminal
+receipt. The relative-bar-row sentence was corrected before the verdict;
+the downward EAST scope of the packing lemma is now explicit. The review
+also derives the exact terminal-completion correction above. It did not
+independently execute the checker or Lean. The two prerequisite root/pair
 proofs have completed ACCEPT reviews, with the pair checker domain corrected.
 
 The next mathematical task is to bound the external old adjustments a_i

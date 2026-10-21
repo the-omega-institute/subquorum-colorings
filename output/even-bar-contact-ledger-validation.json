@@ -1,0 +1,80 @@
+{
+  "status": "PASS_LOCAL_VALIDATION_INDEPENDENT_REVIEW_PENDING",
+  "date": "2026-10-22",
+  "written_proof": "docs/EVEN_BAR_CONTACT_LEDGER_AND_TWO_GATES.md",
+  "verifier": "develop/check_even_bar_contact_ledger.py",
+  "python": {
+    "exit_code": 0,
+    "disjoint_pairs": 1006,
+    "deterministic_greedy_batches": 40,
+    "nested": [
+      {
+        "sources": 2,
+        "contacts": 2,
+        "components": 1,
+        "cycle_rank": 1,
+        "Phi": 0
+      },
+      {
+        "sources": 3,
+        "contacts": 4,
+        "components": 1,
+        "cycle_rank": 2,
+        "Phi": -1
+      },
+      {
+        "sources": 4,
+        "contacts": 6,
+        "components": 1,
+        "cycle_rank": 3,
+        "Phi": -2
+      },
+      {
+        "sources": 7,
+        "contacts": 12,
+        "components": 1,
+        "cycle_rank": 6,
+        "Phi": -5
+      },
+      {
+        "sources": 13,
+        "contacts": 24,
+        "components": 1,
+        "cycle_rank": 12,
+        "Phi": -11
+      }
+    ],
+    "obstruction": {
+      "U_roles_excluded": 648,
+      "rotor_roles": 32,
+      "surviving_rotor_shapes_per_gate": [
+        2,
+        2
+      ],
+      "all_gate_pairs_collide": 4,
+      "large_parameter_controls": 3
+    }
+  },
+  "theorem": "All endpoint-disjoint south-going full even-U originals with EVEN bar top rows, either column phase: exact Phi=numberSources-numberPNcontactBands=components-cycleRank. Contact multigraph permits parallel edges, positive degree<=2. No arbitrary extra old baseline or mixed orientations in ledger.",
+  "nonextension": "THREE fixed full originals A=U8_D_F chart(r,c-1), B=U6_4_4 chart(a+r,c), C=U6_d_f chart(a+8+r,c), evena>=2,D/F>=a+6,d/f>=4. Two original axial supports(a+5,1/6) forced by two old neighbors; ALL full U roles and south-terminal rotors excluded; remaining2east/west-terminal rotors per gate all4pairs collide. No complete full-U/rotor extension in ANY orientation. Additional retained originals cannot repair.",
+  "consequence": "All-n negative nested partial family Phi=1-n remains exact; n>=2 has NO complete extension by the three-source theorem. Does not refute global target and does not exclude arbitrary multicyclic contact components.",
+  "lean": {
+    "source": "formal/SubQuorum/EvenBarContactObstruction.lean",
+    "version": "4.33.0",
+    "final_session": 69494,
+    "exit_code": 0,
+    "explicit_declarations": 16,
+    "local_theorems": 11,
+    "preflight_memory_free_percent": 41,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "All16 declarations ordinary propext/Classical.choice/Quot.sound only. Final corrected invocation no warnings/sorry/native. Earlier predicate unfolding and unused simp arguments corrected.",
+    "scope": "Normalized old blocked geometry/reflection, missing gates and old neighbors, all-parameter U corner/terminal collision templates, south-rotor collisions, all4remaining rotor pairs, source/cycle arithmetic. Source-role completeness, force/ownership adapters, exact event bands and multigraph partition WRITTEN."
+  },
+  "review": {
+    "status": "SUBMITTED_RETAINED_LIVE_STREAM_NO_VERDICT",
+    "original_stream_session": 25032,
+    "request": "output/even-bar-contact-ledger-review-request.json",
+    "scope": "Fresh self-contained packet with canonical full-U/rotor constructors, source counts, immutable inventory and formal packing dependency; no duplicate submission."
+  },
+  "open": "Other multicyclic components; odd-bar/rotated compensation; external-old adjustments in original root batches; full-family allocation/global5/6/gridEquality."
+}
