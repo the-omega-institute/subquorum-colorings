@@ -118,6 +118,11 @@ entire upward g=m case. Upward branches force a U bar in an explicit
 integer window; at g=m+2 the successor is positive and activated, with
 width at most w-2. Its global target nonreuse remains open.
 
+The later [tight upward transfer](SECONDARY_TEN_TIGHT_ACTIVATION_TRANSFER.md)
+proves that nonreuse for the gap2 subclass under the full actual marked
+chain, with one jointly unused activation and an exact ceiling gain.
+The remaining first-consumer forms are not covered by that result.
+
 This is a partial stencil. Its unconsumed original supports may force
 further owners, so it is NOT a counterexample to a theorem about complete
 extensions, the desired compensation inequality or rectangular grids.

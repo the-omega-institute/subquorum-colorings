@@ -167,4 +167,12 @@ here. Complete actual-chain existence and the full allocation/grid
 objective remain OPEN. Submitted manuscripts and the primary C4-free
 result are preserved.
 
+The subsequent [tight activation transfer](SECONDARY_TEN_TIGHT_ACTIVATION_TRANSFER.md)
+supplies the missing global labelled injection and ALL-old-target nonreuse
+under the FULL actual A/B/C0/X/Q/H chain and canonical-gate premises.
+It yields one jointly unused terminal activation per eligible residual
+claim, with the exact parity-dependent same-ledger gain. Those stronger
+premises are essential; they are not inferred from this local theorem's
+four-source data. Complete realizability and the unrestricted target remain OPEN.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

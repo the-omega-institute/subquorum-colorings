@@ -153,6 +153,11 @@ in a complete tight-gap instance h=m, so the positive near terminal is
 fixed at (b-6,7), with supports owned by D and E. Global target nonreuse
 remains a separate obligation.
 
+That obligation is subsequently resolved by the [tight activation transfer](SECONDARY_TEN_TIGHT_ACTIVATION_TRANSFER.md)
+for actual labelled residual claims with the full marked-side chain.
+The general odd-B bar-window activation, without those additional
+actual-chain and tight-gap hypotheses, is not globally credited here.
+
 The first possible even B occurs at g=m+4 and is B=m+8. In this case
 omega=6 would put C's far leg at (b-11,m+4), intrinsic (4,6), which
 also belongs to D's upper bar. Thus omega>=8. By (3a), w>=10 is necessary
