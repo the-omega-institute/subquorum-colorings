@@ -212,7 +212,12 @@ this new class that includes the actual A/B/C/X/Q premises, particularly
 C's blocking endpoint (2,5); retaining X/Q alone does not suffice. Impossible
 two-source intruders do not create a second resource.
 
-For b>=12 the north-terminal H escape remains OPEN. No claim that the
+The subsequent [short-return rotor-cavity theorem](SHORT_RETURN_ROTOR_CAVITY_OBSTRUCTION.md)
+excludes this entire actual k=4 return class at every b: Q's forced
+near-leg support has one rotor consumer, whose single-row cavity with Q
+prevents completion. The conditional k4 pair corollary above therefore has
+no complete instances; it creates no extra resource. For k=6 and b>=12,
+the north-terminal H escape remains OPEN. No claim that the
 entire short-leg class is impossible or permanently protected is made.
 Other return widths, nonmaximal corners and saturated adjacent bands
 also remain unresolved. There is still no complete Vcorner realization.

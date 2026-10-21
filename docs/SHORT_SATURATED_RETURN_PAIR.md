@@ -222,6 +222,11 @@ repair that separate obstruction. The same new theorem classifies a
 different north-terminal escape for any actual lower-corner intrusion;
 those surviving escapes require b>=12 and remain unresolved.
 
+The later [rotor-cavity theorem](SHORT_RETURN_ROTOR_CAVITY_OBSTRUCTION.md)
+also rules out the entire maximal X far-leg4/Q6_8_4 class, independently
+of any D or H escape. Its actual k6 branch remains unresolved. Neither
+noncompletion theorem allocates reserve for a nonexistent occurrence.
+
 These claims are explicit all-parameter endpoint calculations. D's bar
 occupies rows b-6 through b-1 in columns5,6, its two stems are on rows
 b-6 and b-1 and end at column9. At (b-5,7), Q supplies the south endpoint
