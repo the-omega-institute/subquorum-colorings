@@ -79,7 +79,7 @@ uses the explicit full D4 catalogue, not a bounded U census.
 | Horizontal bar corner of breadth h | h-2>=4 | None |
 | Vertical bar corner | 1 | None |
 | Left north terminal, outside its two zero boundaries | 1 | None |
-| Left north terminal, on either zero boundary | 0 | Actual consumer L at p, gain at least4 |
+| Left north terminal, on either zero boundary | 0 | Actual consumer R at p, gain at least4 |
 
 The right-terminal and rotor receipts were proved in the
 [persistent-pair note](SECONDARY_TEN_PERSISTENT_PAIR_COMPENSATION.md).
@@ -89,12 +89,12 @@ leg lengths, is proved in the
 Its only zeros are the V-bar contact m=ell-8 when g=w+15-s lies in V's
 bar, and the escaped Q-tip contact g=3 in the first residual, m=ell+8.
 They force the absent support p=(a+2,w+12) to be consumed by a further
-actual original L. The exact L criterion is
+actual original R. The exact R criterion is
 
-    L=U(h,d,f), (r,c)->(a+2-d+r,w+13-c),
+    R=U(h,d,f), (r,c)->(a+2-d+r,w+13-c),
     6<=h<=s-4, 14<=d<=ell-2, 4<=f<=d-10.
 
-It gives DeltaPhi(L|A+J)=h-2>=4. The source L differs from every original
+It gives DeltaPhi(R|A+J)=h-2>=4. The source R differs from every original
 of A and from J, since p is an endpoint of none of them. Additional originals
 of F cannot remove the forcing condition or a fixed endpoint collision.
 
@@ -138,15 +138,15 @@ tile are excluded. Thus DeltaN=1,DeltaS=DeltaF=DeltaEv=0, giving1.
 
 The complete role classification puts actual J in one table row. In every
 nonzero row retain I=A+J. Its increment is at least1 and repairs the old
-deficit1. In a zero row, completeness forces the actual additional L,
-and retain I=A+J+L. The two increments are0 and at least4, so this joint
+deficit1. In a zero row, completeness forces the actual additional R,
+and retain I=A+J+R. The two increments are0 and at least4, so this joint
 subinventory is at least3 above the baseline. This proves the lemma.
 
 There is one receipt per inserted ORIGINAL, using original support exclusions
 even after consumption. J may consume e,t and other outstanding supports;
 none of these sites supplies a separate credit. In a zero row J's positive
-owner unit and its unique V/Q contact debit are kept in the prefix when L
-is inserted. L's three events and single new full tile are counted once.
+owner unit and its unique V/Q contact debit are kept in the prefix when R
+is inserted. R's three events and single new full tile are counted once.
 No compensation is borrowed from a different hypothetical consumer or tile
 inventory. Repeated support incidences do not create additional owners.
 
@@ -159,5 +159,16 @@ and arbitrary signed exterior contributions remain explicit global obligations.
 Finite controls reconstruct both corner source phases and all exact events,
 and corroborate the complete joint role classification with the full bounded
 endpoint-role library and explicit rotor orbit. The all-parameter proof is
-the role and interval argument above. The north-terminal proof has a separate ACCEPT verdict. A followup review
-of this final joint-role theorem is pending; no verdict for it is presumed.
+the role and interval argument above. Both the north-terminal proof and this full joint-role theorem received
+ACCEPT in separate written mathematical audits. See the
+[full-joint review receipt](../output/secondary-ten-full-joint-review.json).
+The additional consumer is named R to distinguish it from the fixed original L.
+The reviewer did not execute finite controls or Lean.
+
+## Subsequent removal of the common-consumer hypothesis
+
+The [unconditional residual compensation theorem](SECONDARY_TEN_UNCONDITIONAL_RESIDUAL_COMPENSATION.md)
+now handles distinct actual consumers too. The result still concerns one
+prescribed residual package and does not supply global owner-budget disjointness
+or a signed exterior bound. The earlier theorem and its audit retain their
+original common-consumer scope.

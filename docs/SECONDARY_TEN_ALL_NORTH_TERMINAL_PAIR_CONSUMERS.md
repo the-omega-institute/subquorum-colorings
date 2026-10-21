@@ -149,10 +149,10 @@ assumed. A complete-family global inequality still requires its own proof.
 
 Finite controls reconstruct the exact disjointness conditions and contact
 sets, including both zero boundaries and arbitrarily long sampled far legs.
-They corroborate the general role/interval/counting proof above. The currently
-running tight-cap Oracle review was submitted before this extension; its
-verdict cannot be claimed to cover this all-width/far-leg theorem. Lean
-geometry and execution receipts likewise specify their actual scope.
+They corroborate the general role/interval/counting proof above. The initial
+tight-cap review predated this extension; the subsequent separate review
+accepted this all-width/far-leg theorem, as recorded below. Lean geometry
+and execution receipts specify their actual scope.
 
 ## Review and extension
 
