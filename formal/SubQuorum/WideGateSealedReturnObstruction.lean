@@ -133,4 +133,41 @@ theorem north_stem_depth_four (depth : Int) (hmin : 4 ≤ depth)
 theorem all_width_nested_seed_has_three_sources (amount : Nat) (hamount : 2 ≤ amount) :
     1 < amount ∧ 3 ≤ amount+1 := by omega
 
+def sixRowBlocked (width : Int) (point : Point) : Prop :=
+  ((point.1 = 0 ∨ point.1 = 6) ∧ 1 ≤ point.2 ∧ point.2 ≤ width) ∨
+  ((point.2 = 0 ∨ point.2 = width+1) ∧ 0 ≤ point.1 ∧ point.1 ≤ 10)
+
+theorem six_row_east_terminal_collision
+    (occupied : Point → Prop) (width depth breadth : Int)
+    (hwidth : 6 ≤ width) (hdepth : 4 ≤ depth) (hbreadth : 6 ≤ breadth)
+    (hstem : ∀ step : Int, 0 ≤ step → step ≤ depth → occupied (5,1+step))
+    (hbar : (∀ row : Int, 6-breadth ≤ row → row ≤ 5 → occupied (row,1+depth)) ∨
+      (∀ row : Int, 5 ≤ row → row ≤ 4+breadth → occupied (row,1+depth))) :
+    ∃ point, occupied point ∧ sixRowBlocked width point := by
+  by_cases hlong : width ≤ depth
+  · refine ⟨(5,width+1),?_,?_⟩
+    · simpa [Int.add_comm] using hstem width (by omega) hlong
+    · simp [sixRowBlocked]
+  · rcases hbar with hup | hdown
+    · refine ⟨(0,1+depth),hup 0 (by omega) (by omega),?_⟩
+      dsimp [sixRowBlocked]
+      omega
+    · refine ⟨(6,1+depth),hdown 6 (by omega) (by omega),?_⟩
+      dsimp [sixRowBlocked]
+      omega
+
+def sixRowRotor (upper : Bool) (point : Point) : Prop :=
+  horizontalRotor true upper 1 (point.1-2,point.2)
+
+theorem six_row_rotor_collision (width : Int) (upper : Bool) (hwidth : 6 ≤ width) :
+    sixRowRotor upper (6,3) ∧ sixRowBlocked width (6,3) := by
+  constructor
+  · cases upper <;> simp [sixRowRotor,horizontalRotor] <;> omega
+  · dsimp [sixRowBlocked]
+    omega
+
+theorem minimum_even_bar_spacing (spacing : Int)
+    (hdisjoint : 6 ≤ spacing) (heven : spacing % 2 = 0)
+    (hsix : spacing ≠ 6) (height : spacing ≠ 8) : 10 ≤ spacing := by omega
+
 end SubQuorum.WideGateSealedReturnObstruction

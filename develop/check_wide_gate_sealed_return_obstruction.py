@@ -112,6 +112,22 @@ def check_case(width, depth, far, U_records, rotor_records, moved=False):
                 excluded_U_roles=U_roles, excluded_rotor_roles=rotor_roles)
 
 
+def six_row_controls():
+    U_records, rotor_records = libraries()
+    U_roles = rotor_roles = 0
+    for width in (6, 8, 20, 100):
+        records = [independent_source((width+2, 20, 20), (False, False, False), (0, -1)),
+                   independent_source((width, 4, 4), (False, False, False), (2, 0)),
+                   independent_source((width, 4, 4), (False, False, False), (8, 0))]
+        counts = exclude_gate(records, (7, 1), {(0, 1)}, U_records, rotor_records)
+        U_roles += counts[0]
+        rotor_roles += counts[1]
+    return dict(cases=4, excluded_U_roles=U_roles, excluded_rotor_roles=rotor_roles,
+                consequence='Together with the all-width gap8 theorem, successive '
+                            'coextensive depth4 positive U bar rows in a complete '
+                            'extension must differ by at least10. Post-review-submission corollary.')
+
+
 def run():
     U_records, rotor_records = libraries()
     totals = dict(cases=0, normalized_U=0, normalized_rotors=0, full_short_U_shapes=0,
@@ -128,6 +144,7 @@ def run():
         result = check_case(width, depth, far, U_records, rotor_records)
         large.append(dict(width=width, near=depth, far=far, **result))
     return dict(status='PASS', controls=totals, large_controls=large,
+                six_row=six_row_controls(),
                 scope='General written all-width three-original nonextension; finite '
                       'role controls validate the exhaustive source-to-gate argument. '
                       'Does not exclude arbitrary multicyclic contact components or '

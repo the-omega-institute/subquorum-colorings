@@ -208,3 +208,38 @@ other multicyclic contact components, mixed orientations, full-family
 allocation, the global5/6 improvement and rectangular-grid triple equality.
 The next research step should leave this now-excluded nested seed rather
 than accumulate further conditional compensation layers for it.
+
+## Post-submission corollary: minimum spacing ten
+
+There is also a shorter obstruction at bar spacing6. Retain A as above,
+B=U(W,4,4) at even rowa>=2, and C=U(W,4,4) at rowa+6, with even
+D,F>=a+10. The original support p=(a+5,1) has retained north, west
+and south neighbours, so its owner can only be an east terminal.
+For a full U of near depth k, k>=W crosses A's opposite wall. Otherwise
+its perpendicular bar is within columns1..W. An upward bar of breadth
+at least6 hits B's rowa, and a downward bar hits C's rowa+6. The two
+standard east-terminal rotors both contain (a+6,3), on C. No owner
+can exist, so spacing6 cannot completely extend either.
+
+Consequently, suppose a complete extension contains A and n coextensive
+positive U(W,4,4) originals with even bar rows
+
+    2<=a_0<a_1<...<a_(n-1), D,F>=a_(n-1)+4.
+
+Endpoint disjointness requires each even gap to be at least6. The preceding
+short argument excludes6, and the all-width theorem excludes8. Therefore
+
+    a_(i+1)-a_i>=10, and a_(n-1)-a_0>=10(n-1).             (6)
+
+This is a necessary spacing condition for complete extensions, not for
+arbitrary endpoint-disjoint partial inventories. It does not exclude
+spacing10 or prove a global budget bound. Spacing10, unequal legs and
+different contact components are the appropriate next cases.
+
+This corollary was added after taskda0dcf4e was submitted and is outside
+its initial review scope. Four further source controls at W=6,8,20,100
+exclude1024 U roles and32 rotor roles. They were run separately after the
+previous complete verifier passed. The final Lean file adds the general
+spacing-six U collision, the translated rotor collision and even-spacing
+frontier; it has20 declarations/13 local theorems. The complete source
+adapters and the finite-sequence summation in (6) remain written arguments.
