@@ -305,13 +305,18 @@ Catalogue/orientation adapters, charge geometry, intrinsic-bar transport,
 complete labelled reconstruction and the joint injection remain written.
 [Scope receipt](../output/secondary-ten-downward-double-formal-check.json).
 
-Independent written review is **PENDING**, not accepted. The first
-attempt0a4445c6 ended with infrastructure_retry_exhausted and no
-mathematical response; its stream30467 exited1 with unexpected EOF.
-Fresh-conversation retry9ee5b1ed retains original stream30819 and is
-still dispatched. No review verdict, execution audit or novelty
-certification is inferred. Preserve that task rather than restarting
-solely because it is slow. [Live review record](../output/secondary-ten-downward-double-review.json).
+Independent written review9ee5b1ed **ACCEPTS**, with no mathematical
+repair required. It checks the unbounded forcing, both actual-labelled
+injections, the complete old-union exclusions, equal-leg reconstruction,
+both equal-h10 old-X contradictions and exact same-inventory gain.
+Original stream30819 exits0 with DONE/no errors; its19585-character
+response exactly matches the completed-task API, observed gpt_6/pro.
+The original failed attempt0a4445c6 is retained as an infrastructure
+failure, not a mathematical verdict. The acceptance takes the named old
+union and canonical-gate results as dependencies; it does not certify
+execution, full formalization, complete realizability or novelty.
+[Review receipt](../output/secondary-ten-downward-double-review.json) and
+[full response](../output/secondary-ten-downward-double-review-response.md).
 
 No complete actual marked-chain realization is claimed.
 
