@@ -223,15 +223,23 @@ three-owner corner. The final far-phase extension adds48exact-set and
 passed41declarations,31theorems with individual ordinary-axiom audits and
 no warnings. Its scope is explicit local collisions/corner cells and the
 conditional arithmetic/list budget; geometric cardinality partitions
-remain ordinary proofs. The initial g4 written review completed ACCEPT; see the
+remain ordinary proofs. Both the initial g4 written review and the separate
+far-phase corollary review completed ACCEPT; see the
 [validation record](../output/secondary-ten-right-band-validation.json).
 Finite controls do not establish the general classification. The theorem is
 separate from the accepted single-block/nested and arbitrary-left exterior
-reviews. The later far-leg corollary has its own live review. General right frames, arbitrary interactions
+reviews. The far-phase review also supplied the complete-extension
+obstructions proved in Section7; these are ordinary proofs, outside the
+local Lean module. General right frames, arbitrary interactions
 between new owners, global allocation and rectangular-grid triple equality
 remain open. The submitted11October manuscript is unchanged.
 
 ## 6. Full far-leg phase, subsequent to the initial review input
+
+The endpoint-disjoint depths are4,6,8. Section7 shows that an actual B
+in a complete feasible extension must have depth4: depths6and8 cannot
+be completed. This section classifies geometric receipts, without
+asserting complete extendibility at any depth.
 
 The fixed far depth4 in(1) can be removed. Fix B's breadth u+v+26 and
 incident depth z, but allow any even far depth g>=4. Its far column remains
@@ -260,5 +268,43 @@ Both gains(2),(4) and the arbitrary-length paired-chain theorem remain
 identical, independently for any choices of g_j in{4,6,8}. All added
 far endpoints end by row a-2, still above the respective current block
 and the next pair. The original review request covers the g4 theorem;
-this subsequent far-leg corollary requires its own review before being
-described as independently accepted.
+this subsequent far-leg corollary has a separate ACCEPT review.
+
+## 7. Matching obstructions exclude actual far depths6and8
+
+The separate far-phase review supplied a stronger consequence of the
+original matching and completeness axioms. Put R=s+u+12,C=R+1. The
+original E axial support y=(a-1,C) has retained endpoint neighbors
+west in P at(a-1,R), south in E at(a,C), and east at(a-1,C+1).
+The eastern endpoint belongs to the root when i=1, or the earlier
+V_(i-2) far leg when i>1. In both cases that eastern stem occupies
+all rows a-3 through a-1: the root near stem runs from a-5 to a,
+and the earlier V far leg ends at a. P's near stem occupies these
+rows too. These are full-original endpoints, retained in any extension.
+
+For g8, B's far terminal(a-2,C) is y's north neighbor. All four
+neighbors of the original support y are retained endpoints. Completeness
+forces y to be consumed, since otherwise its occupied degree would be4
+rather than1. But an original consuming y needs an adjacent matching
+partner in that same original, and every adjacent endpoint already
+belongs to a retained different original. This is impossible.
+
+For g6, B ends at(a-4,C). Its original terminal support x=(a-3,C)
+has retained endpoint neighbors north in B, west in P and east in the
+same root/earlier-V stem. The original E support y still has its three
+retained neighbors. Thus completeness forces both x and y to be consumed.
+Their only possible matching partner is the SAME site m=(a-2,C): south
+of x, north of y. If their owners are distinct, both would contain m,
+violating endpoint disjointness. If their owner is the same, its matching
+would contain both xm and ym, violating the matching condition. Neither
+case is possible. No further shape catalogue or finite cutoff is needed.
+
+Hence H3 together with B6 or B8 has NO complete feasible extension.
+The exact geometric receipts of Section6 remain valid for those partial
+inventories; their positivity never implied extendibility. Within this
+specified breadth/incident-depth family, every actual B in a complete
+extension has g4. This is a genuine complete-extension obstruction, not
+a counterexample to the target inequality and not a proof that g4 has
+an extension. The matching argument is written and independently audited;
+the current Lean source certifies the earlier explicitly stated scope.
+

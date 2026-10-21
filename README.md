@@ -7,8 +7,10 @@ An essential three-owner full tile contributes+2; each physical receipt
 and original source mass is used once across arbitrary paired chains.
 The [general proof](docs/SECONDARY_TEN_RIGHT_BAND_FORCED_PREDECESSOR.md)
 has an ACCEPT audit for far depth4, with41scoped local Lean declarations
-and exact-set controls passing. The far-depth6/8 corollary has a separate
-pending audit. Arbitrary right owners and global bounds remain OPEN.
+and exact-set controls passing. The geometric far-depth6/8 corollary also
+has an ACCEPT audit; an additional matching argument excludes those two
+depths from every complete extension. Thus actual owners in this specified
+family have far depth4. Arbitrary right owners and global bounds remain OPEN.
 
 Latest old-chain exterior checkpoint: one arbitrary actual LEFT consumer
 has exact gain H-1-delta against the entire old renewed-support chain,
