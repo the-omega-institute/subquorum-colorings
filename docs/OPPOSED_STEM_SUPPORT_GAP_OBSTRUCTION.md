@@ -182,7 +182,10 @@ neither v nor u is an endpoint. Neither can be selected: each has a west
 X endpoint but is not an original X support, at intrinsic coordinates
 (2,b-3),(2,b-4). Optional selected vertices cannot have endpoint neighbors.
 Thus J={b-2,b-1} x {4,5} is permanently X's irregular 2P0T pair in this
-entire actual-chain class. Its Q has the shorter far leg4, so it is not
+entire actual-chain class. If either were a retained original support, its
+west X endpoint would have to be its sole occupied anchor; unique endpoint
+ownership then identifies the support owner as X, contrary to the stated
+intrinsic coordinates. Its Q has the shorter far leg4, so it is not
 covered by the prior short saturated Q=U(6,8,6) theorem.
 
 The demand reconstruction and old-H nonreuse in the previous notes depend
@@ -204,7 +207,9 @@ the full allocation and grid decomposition are not proved. Holding other
 certificate quantities fixed, the floor gain is exactly the number of
 new physical pair tiles absent from Pold. The cross-component loss floor
 still applies once in the intermediate family containing all losing
-components, using certificates whose owners are retained. Impossible
+components, using certificates whose supporting owners are retained. For
+this new class that includes the actual A/B/C/X/Q premises, particularly
+C's blocking endpoint (2,5); retaining X/Q alone does not suffice. Impossible
 two-source intruders do not create a second resource.
 
 For b>=12 the north-terminal H escape remains OPEN. No claim that the
@@ -236,12 +241,17 @@ adaptation for every U/rotor and the complete corner-role/global joint
 injection arguments remain written. See the [direct Lean source](../formal/SubQuorum/OpposedStemSupportGap.lean)
 and [formal receipt](../output/opposed-stem-gap-formal-check.json).
 
-Independent written review task c65b8358-40ac-4394-a40a-bbc4489e6b4c,
-conversation conv_06e13fa1a071fe95, remains dispatched/waiting_response;
-no verdict is claimed. The original streaming request is retained without
-duplicate dispatch. General proofs are given above; bounded controls do
-not replace them. The first intruder and shared-consumer stencils retain
-their previous endpoint-only validity and now have a general noncompletion
-proof.
+Independent written review c65b8358 ACCEPTS the full conditional obstruction,
+corner-role classification, escape form, small-b pair corollary and inherited
+joint accounting. Its15675-character response exactly matches original
+stream62943 exit0 and the completed task API, with [DONE], no stream errors
+and observed gpt_6/pro. The review's original-support ownership explanation
+and retained C blocking premise are explicit above. It does not certify
+execution, complete realizability or the unrestricted target. See the
+[full review](../output/opposed-stem-gap-review-response.md) and
+[receipt](../output/opposed-stem-gap-review.json). General proofs are given
+above; bounded controls do not replace them. The first intruder and
+shared-consumer stencils retain their previous endpoint-only validity and
+now have a general noncompletion proof.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
