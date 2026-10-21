@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest complete-prefix checkpoint: a [general sealed-cavity proof](docs/SECONDARY_TEN_SEALED_ROOT_CAVITY.md)
+excludes width1/3 trapped-support prefixes from every complete extension in
+the explicit full-U/rotor model. For the stated actual four-row staircase,
+complete extendibility therefore strengthens the selected-union bound to
+DeltaPhi>=L/2+7>=10. The earlier six-unit equality family remains a correct
+geometric calculation but cannot extend to a complete configuration.
+192 exact cavity controls,216 U/8 rotor orientation controls and28 scoped
+Lean declarations pass. Independent review is pending. A width5 geometric
+control attains10; its complete extendibility and global allocation remain OPEN.
+
 Latest sharp-staircase checkpoint: a [general all-parameter proof](docs/SECONDARY_TEN_ROOT_SHARP_STAIRCASE.md)
 improves the actual-staircase selected-union bound to DeltaPhi>=L/2+3>=6.
 Only J1/J2 can have a far-pair receipt, and the owners debited by A and

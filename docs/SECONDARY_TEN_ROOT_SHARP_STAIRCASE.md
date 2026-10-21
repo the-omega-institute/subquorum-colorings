@@ -29,6 +29,12 @@ admissible selected unions: an explicit family attains it for every even
 u,v>=12, z>=24 and6<=L<=v. The family is not claimed to extend to a
 complete configuration. Thus sharpness here is not a global obstruction.
 
+The subsequent [sealed-cavity theorem](SECONDARY_TEN_SEALED_ROOT_CAVITY.md)
+excludes every complete extension of this geometric equality family and
+strengthens the bound to L/2+7>=10 for complete-extension prefixes in
+the same staircase branch. It preserves the geometric sharpness statement
+above; complete-family sharpness and global allocation remain open.
+
 ## Only J1 and J2 can have a far-pair receipt
 
 Write b_i=P-D_i and y_i=a-10-i+H_i. The far endpoints of J_i form
