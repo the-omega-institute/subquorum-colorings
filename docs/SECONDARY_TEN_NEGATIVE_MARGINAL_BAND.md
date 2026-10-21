@@ -118,17 +118,22 @@ lower bound on this partial-inventory marginal.
 
 The support (a+9,6), shared by Q and D, is still missing as an endpoint.
 Its north and south neighbors remain D and Q endpoints. Neither K nor H
-consumes it. The displayed family is therefore NOT complete. No complete
-extension is asserted or ruled out by this theorem. In particular, its
+consumes it. The displayed family is therefore NOT complete. The marginal-count
+theorem alone does not decide complete extendibility. The subsequent
+[narrow-cap noncompletion lemma](SECONDARY_TEN_NARROW_CAP_NONCOMPLETION.md)
+now proves that A+K already has NO complete feasible U/rotor extension,
+before H is inserted. The negative-marginal family is thus excluded from
+the complete model. In particular, its
 absolute Phi is positive, and the negative difference from a baseline is
 not the target inequality.
 
 The failed rule is that every successive forced-support consumer supplies a
 nonnegative (or uniformly bounded-below) independent reserve receipt in any
 prescribed partial inventory. Here a positive owner's unit is overwhelmed by
-the exact signed contribution of an occupied adjacent band. A correct global
-proof must either exclude this branch using complete-family constraints or
-account jointly for further owners and their boundary contributions. Counting
+the exact signed contribution of an occupied adjacent band. A complete-model
+proof can now discard this specific branch by the cited noncompletion lemma.
+Other branches still require complete-family exclusions or joint accounting
+of further owners and their boundary contributions. Counting
 rho, or either previously consumed persistent support, as another credit
 would miss these directed contacts.
 

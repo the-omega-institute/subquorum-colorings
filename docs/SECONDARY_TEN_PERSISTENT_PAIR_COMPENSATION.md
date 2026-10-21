@@ -165,8 +165,12 @@ r=(a-7,w+8) is absent, with its own K endpoint east and V endpoint
 south. It must be consumed in any complete extension. The failed
 joint-pair rule therefore transfers a precise remaining obligation
 to the already occupied band; it does not defeat a complete-family
-compensation theorem. Its next actual consumer and the persistent
-left/lower obligations must be counted together.
+compensation theorem. The subsequent
+[narrow-cap exclusion](SECONDARY_TEN_NARROW_CAP_NONCOMPLETION.md) now proves
+that this entire K family has NO complete feasible U/rotor extension:
+a different forced support p=(a+2,w+12) has no allowed original consumer.
+The exact zero increment remains a partial-inventory rule obstruction,
+but this particular family cannot occur in the complete model.
 
 ## Evidence, remaining assumptions and next action
 
