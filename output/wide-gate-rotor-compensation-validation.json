@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_LOCAL_WRITTEN_EXACT_SET_AND_SCOPED_LEAN_REVIEW_NOT_SUBMITTED",
+  "proof": "docs/WIDE_GATE_ROTOR_COMPENSATION.md",
+  "verifier": "develop/check_wide_gate_rotor_compensation.py",
+  "python": {
+    "session": 79851,
+    "exit_code": 0,
+    "U_roles_excluded": 2592,
+    "rotor_roles": 128,
+    "exact_full_event_batches": 1360,
+    "lower_only_partial_equality_cases": 16,
+    "large_controls": 4,
+    "largest_width": 2000,
+    "largest_inner_source_count": 12
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WideGateRotorCompensation.lean",
+    "version": "4.33.0",
+    "session": 43962,
+    "exit_code": 0,
+    "explicit_declarations": 15,
+    "local_theorems": 9,
+    "preflight_memory_free_percent": 45,
+    "real_lean_lake_processes": [],
+    "axioms": "Every explicit declaration audited individually; ordinary propext/Classical.choice/Quot.sound only. Final run no warnings/sorry/native. Earlier right-reflection type mismatch corrected.",
+    "scope": "All-depth east-terminal collision; canonical rotor geometry, opposite separation and immutable middle supports; inter-gap tile-row separation; gate injection and budget arithmetic. Exact original-source inventory and complete-extension/role adapters are WRITTEN."
+  },
+  "claim": "Even W>=8,a>=2,n>=2, even D/F>=a+8(n-1)+4. Retain A=U(W+2,D,F) chart(r,c-1), B_i=U(W,4,4) chart(a+8i+r,c). Any complete full-U/standard-rotor extension forces2(n-1) distinct gate rotors. Selected retained+gate-owner inventory Phi=3(n-1)+upperCount.",
+  "limitations": "Selected-inventory theorem only. Lower-only partial equality is not complete-family sharpness. No complete extension existence or arbitrary-baseline monotonicity. No independent review yet for this new theorem. Global5/6, full-family allocation and grid triple equality OPEN.",
+  "predecessor_review": {
+    "task_id": "e5552d8e-bcac-46bf-96c4-181121a74210",
+    "original_stream_session": 25032,
+    "last_observed": "Original process still running; no new output or verdict. Not restarted. Packet predates this wide-gate theorem."
+  }
+}
