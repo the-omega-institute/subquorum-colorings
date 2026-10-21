@@ -247,3 +247,11 @@ the subsequent opposing-prefix exclusion and reflected-pair classification.
 Original review75530 covers the batch theorem, partial exterior obstruction
 and initial16 declarations; the later complete exclusion and breadth
 classification are OUTSIDE that input and require their own review.
+
+Review update: the initial batch theorem and the subsequent complete-prefix
+exclusion/reflected classification now each have a separate ACCEPT written
+review; see the corresponding output receipts. Neither audit certifies
+execution or arbitrary global allocation. The
+[internal-consumer chain note](SECONDARY_TEN_INTERNAL_CONSUMER_CHAINS.md)
+now gives an all-length obstruction to dropping the outside-bases
+hypothesis, even for acyclic dependencies with zero exterior remainder.

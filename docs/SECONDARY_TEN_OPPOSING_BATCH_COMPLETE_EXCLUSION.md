@@ -170,3 +170,8 @@ does not assert that every displayed prefix has a complete extension;
 it applies to any actual complete extension when one exists, and the
 exact partial-inventory identity holds regardless of extendibility.
 Further insertions may change Phi, so no bound on Phi(G) is inferred.
+
+The complete exclusion and this all-breadth classification received a
+separate ACCEPT written review, task d0d63bb8-2ccd-4ae4-8f1b-fbfd4cccdc5f.
+The original stream and terminal API agree exactly. Execution and the
+later internal-consumer chain results are outside that audit's scope.

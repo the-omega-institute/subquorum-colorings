@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest internal-owner checkpoint: arbitrarily long acyclic consumer paths
+have zero signed exterior remainder but lose one unit per block against
+the summed baselines. Completeness forces one fresh negative U per block,
+all distinct by terminal checkerboard color. A simultaneous full-original
+choice of those consumers still has exactly zero gain, because occupied
+adjacent-band losses exhaust their mass. The inventories are explicitly
+incomplete and do not refute a complete-model bound. See the
+[general construction, fresh-owner lemma and exact receipts](docs/SECONDARY_TEN_INTERNAL_CONSUMER_CHAINS.md).
+Thirty-four local Lean declarations and exact chain/isometry controls pass.
+The new written proof has a live independent review. The earlier packed
+batch theorem and reflected complete-exclusion/classification both now
+have separate ACCEPT written reviews.
+
 Latest batch checkpoint: packed distinct-owner repairs admit a two-terminal
 injection and a single-owner budget, with an exact signed exterior remainder.
 The reflected shared-consumer family has a full breadth classification:
