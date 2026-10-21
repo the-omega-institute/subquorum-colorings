@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_GENERAL_WRITTEN_EXACT_FULL_RECORD_AND_SCOPED_LOCAL_LEAN_REVIEW_PENDING",
+  "proof": "docs/ALL_EVEN_GAP_AXIAL_COMPENSATION.md",
+  "verifier": "develop/check_even_gap_axial_compensation.py",
+  "theorem": "Explicit full-even-U/standard-rotor model; nested equal-breadth U(W,4,4), arbitrary even bar gaps>=10, outer walls cover all tips. Exhaustive actual left axial owner list: D(b,d,e), U(b,d,e), rotated cornerR(b,d,e), east terminalE(b,d,e), H/L. Every single-owner marginal>=2. Across g gaps select one actual left owner; also select right actual owner only at m gap10, shared spanning owner once. Exact common-baseline partition yields selectedPhi>=g+3m, no density condition or owner/tile/event/surplus reuse.",
+  "residual_disposition": "Earlier explicit 4-r endpoint-disjoint partial inventory remains exact. Complete extension requires r additional distinct left axial owners at its twelve-row gaps, each gain>=2, hence selected augmentationPhi>=4+r. R=U(6,4,4) per gap attains equality as a PARTIAL inventory only. No complete extension existence or whole-family sharpness asserted.",
+  "python": {
+    "session": 81720,
+    "exit_code": 0,
+    "role_patterns": 16,
+    "U_roles": 12288,
+    "rotor_roles": 256,
+    "normalized_survivors": 490,
+    "exact_receipts": 2459,
+    "receipt_modes": {"D": 750, "U": 597, "R": 680, "E": 400, "H": 16, "L": 16},
+    "one_owner_batches": 256,
+    "mixed_10_both_gate_batches": 256,
+    "tile_preserving_isometries": 128,
+    "exact_residual_repairs": 12,
+    "large_width_gap_pairs": [[6, 2000], [2000, 12], [2000, 2000]],
+    "scope": "Canonical full T/H/M, both inclusion directions of bounded orientation/role catalogue, exact mixed physical-tile and source-labelled event SETS for all2459receipts, heterogeneous multi-gap event/tile partition, arbitrary checked compatible gap10 pairs with lowerLexcluded, eight tile-preserving isometries/even translations, residual4-r to4+r, four source types at each large pair. Finite controls check separate general written proofs."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/EvenGapAxialCompensation.lean",
+    "version": "4.33.0",
+    "session": 78572,
+    "exit_code": 0,
+    "explicit_definitions_theorems": 27,
+    "local_theorems": 18,
+    "additional_audited_type": "Mode",
+    "preflight_memory_free_percent": 43,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "Each explicit def/theorem plus Mode audited individually; only ordinary propext/Classical.choice/Quot.sound or none. No warnings/sorry/native.",
+    "scope": "All six exact receipt arithmetic identities and gain>=2, unbounded parity/dimension frontiers, rotated modes absent atgap10 andbreadth6atgap12, arbitrary ordered-gap endpoint/tile separation, owner distinctness, simultaneous g+3m and residual selected4+r. Full source-role/chart adapters, geometric receipt sets and actual complete-extension selection remain WRITTEN."
+  },
+  "review": {
+    "status": "SUBMITTED_DISTINCT_NEW_GENERAL_THEOREM_NO_VERDICT",
+    "original_stream_session": 11740,
+    "request": "output/all-even-gap-axial-review-request.json",
+    "stream": "output/all-even-gap-axial-review-stream.sse",
+    "pool": "chrono-chatgpt-pro-pool",
+    "preflight_pool": {"ready": 16, "busy": 9, "needs_attention": 1, "queued": 1, "dispatched": 10},
+    "earlier_stream_session": 71332,
+    "scope": "New independent general-gap theorem audit, not duplicate of earlier live gap10 classification review71332. New packet contains general proof, full canonical source/inventory definitions, exact verifier/Lean and prior gap10/lowerL proofs. No acceptance inferred. Keep both original live requests."
+  },
+  "limitations": "No universal grid-source decomposition, complete-extension existence, monotonicity under arbitrary additional sources, bound for unselected actual-source signed marginal, complete-family sharpness, global5/6 improvement or rectangular-grid triple equality. Submitted manuscript/main/primaryC4/CI preserved; no Mail."
+}

@@ -214,3 +214,17 @@ inspection found no active Lean/lake process. The preceding check75747
 already passed the initial obstruction and uniform bound before the two
 nonuniform arithmetic theorems were added. No whole-model formalization or
 independent-review acceptance is inferred from these scoped local checks.
+
+## Subsequent all-even-gap compensation
+
+`ALL_EVEN_GAP_AXIAL_COMPENSATION.md` now classifies the actual left axial
+owner for EVERY even gap>=10 into four U families and H/L. Every such
+owner has exact marginal>=2. This supplies the missing selected owners
+at wider gaps: the general mixed selected bound is g+3m, with g gaps and
+m gaps10, without the earlier density condition. The exact partial4-r
+family above is necessarily supplemented in any complete extension by
+r distinct left owners, yielding selectedPhi>=4+r. The old partial4-r
+calculation and failure of arbitrary endpoint-only monotonicity remain
+valid; neither the old nor the augmented partial family asserts complete
+existence or a whole-family bound. Unselected actual-source signed terms
+are the next frontier. The new theorem is outside original71332's packet.
