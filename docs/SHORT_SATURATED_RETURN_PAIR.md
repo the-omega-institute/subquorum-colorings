@@ -214,6 +214,14 @@ one cannot derive impossibility by assigning those adjacent supports to
 distinct owners. Further continuations or a different compensation rule
 are required. No finite partial stencil here is a complete-family witness.
 
+The subsequent [opposed-stem gap theorem](OPPOSED_STEM_SUPPORT_GAP_OBSTRUCTION.md)
+now proves that these D/Q sources alone have NO arbitrary complete
+extension: their facing inner supports conflict inside a sealed two-row
+chamber. The shared P remains a correct partial continuation but cannot
+repair that separate obstruction. The same new theorem classifies a
+different north-terminal escape for any actual lower-corner intrusion;
+those surviving escapes require b>=12 and remain unresolved.
+
 These claims are explicit all-parameter endpoint calculations. D's bar
 occupies rows b-6 through b-1 in columns5,6, its two stems are on rows
 b-6 and b-1 and end at column9. At (b-5,7), Q supplies the south endpoint
