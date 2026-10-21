@@ -4,7 +4,7 @@ import itertools
 import json
 
 from check_cooperative_promotion import neighbors
-from check_incident_eight_north_transfer import shift
+from check_incident_eight_north_transfer import charge, shift
 from check_secondary_ten_arbitrary_t_consumers import north_U, old_chain
 from rotor_networks import rotor, transform_module
 
@@ -29,7 +29,7 @@ def rotor_forms(target):
 
 
 def main():
-    old_controls = rotor_controls = shallow_controls = footprint_controls = 0
+    old_controls = rotor_controls = shallow_controls = footprint_controls = phase_charge_controls = 0
     right_decisions = geometrically_legal = excluded_geometric = 0
     branch_obstructions = 0
     examples = []
@@ -58,6 +58,15 @@ def main():
                     (6, 14, 80), (4, 6, 8, 10, 24, 82, 102), (4, 10, 80), (False, True)):
                 candidate = north_U(anchor+3, column, breadth, incident, far, left)
                 assert target in candidate[0]
+                half_legs = (incident+far)//2
+                endpoint_tiles = {(row//2, lateral//2) for row, lateral in candidate[0]}
+                inside_supports = {point for point in candidate[1]
+                                   if (point[0]//2, point[1]//2) in endpoint_tiles}
+                assert len(candidate[2]) == breadth+half_legs-1
+                assert len(endpoint_tiles) == breadth//2+half_legs+int(not left)
+                assert len(inside_supports) == half_legs+4*int(not left)
+                assert charge(candidate) == (-1 if left else 1)
+                phase_charge_controls += 1
                 if incident >= 8:
                     assert footprint <= candidate[0]
                     footprint_controls += 1
@@ -94,6 +103,7 @@ def main():
         assert {sum(point) % 2 for point in all_sites} == {1}
     print(json.dumps(dict(status='PASS', old_original_geometry_controls=old_controls,
         rotor_collision_controls=rotor_controls, shallow_U_collision_controls=shallow_controls,
+        full_original_physical_phase_charge_controls=phase_charge_controls,
         mandatory_nine_endpoint_controls=footprint_controls,
         arbitrary_depth_far_decisions=right_decisions,
         geometrically_legal_candidates=geometrically_legal,

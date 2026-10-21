@@ -150,4 +150,49 @@ theorem canonical_terminals_opposite (breadth incident far : Int)
     (hfar : far % 2 = 0) : (incident+1) % 2 ≠ (far+breadth) % 2 := by
   omega
 
+theorem left_original_charge (breadthHalf legHalf : Int) :
+    (2*breadthHalf+legHalf-1)+legHalf-2*(breadthHalf+legHalf) = -1 := by
+  omega
+
+theorem right_original_charge (breadthHalf legHalf : Int) :
+    (2*breadthHalf+legHalf-1)+(legHalf+4)-2*(breadthHalf+1+legHalf) = 1 := by
+  omega
+
+def originalValue (charge : Int) : Int :=
+  (if 0 < charge then 1 else 0)+max 0 (-charge)
+
+theorem each_E_owner_value (left : Bool) :
+    originalValue (if left then -1 else 1) = 1 := by
+  cases left <;> decide
+
+def terminalMass : List Int → Int
+  | [] => 0
+  | breadth :: remaining => breadth-1+terminalMass remaining
+
+def ownerValue : List Int → Int
+  | [] => 0
+  | breadth :: remaining => breadth+ownerValue remaining
+
+def breadthsValid : List Int → Prop
+  | [] => True
+  | breadth :: remaining => 6 ≤ breadth ∧ breadthsValid remaining
+
+theorem immutable_owner_inventory (breadths : List Int) :
+    ownerValue breadths = terminalMass breadths+(breadths.length : Int) := by
+  induction breadths with
+  | nil => simp [ownerValue, terminalMass]
+  | cons breadth remaining inductionHypothesis =>
+    simp only [ownerValue, terminalMass, List.length_cons]
+    omega
+
+theorem immutable_owner_lower_bound (breadths : List Int) (hvalid : breadthsValid breadths) :
+    6*(breadths.length : Int) ≤ ownerValue breadths := by
+  induction breadths with
+  | nil => simp [ownerValue]
+  | cons breadth remaining inductionHypothesis =>
+    simp only [breadthsValid] at hvalid
+    have hremaining := inductionHypothesis hvalid.2
+    simp only [ownerValue, List.length_cons]
+    omega
+
 end SubQuorum.SecondaryTenMandatoryEFootprint

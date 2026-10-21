@@ -9,6 +9,15 @@ partial inventories; the specified actual-owner hypotheses are impossible.
 
 ## Statement
 
+Standing model hypothesis: EVERY actual original in the extension is a
+lattice-isometric image of a FULL permitted U(L,d,f), with L,d,f all
+even, L>=6,d,f>=4, or of the standard rotor. Every original retains its
+complete endpoint, matching and original-support sets. The endpoint sets
+are pairwise disjoint and every unconsumed original support has occupied
+degree1. This is explicitly a complete feasible U/rotor-family theorem.
+It does not assert that an arbitrary grid configuration has such a global
+catalogue; an application beyond this model needs its own exhaustion proof.
+
 For every old block j, write a=a_j,s=s_j,u=w_j and C=s+u+13. In ANY
 complete feasible extension retaining H3, the original E_j support
 
@@ -147,9 +156,33 @@ full even U have OPPOSITE lattice colors: canonical(d,1) is odd and
 The t_j columns s_j strictly decrease. The y_j columns C_j also strictly
 decrease, since C_j-C_(j+1)=w_j+12; moreover every t column is even and
 every y column odd. Thus the 2n sites are distinct. Completeness requires at least2n distinct
-fresh originals, each with original negative mass L-1>=5. This is an
-owner count and immutable mass inventory, not a net global Phi bound:
-their mutual/exterior signed receipts still require joint control.
+fresh originals. Their physical-tile phases differ: t owners have odd
+terminal row/even column, while y owners have even row/odd column.
+Same checkerboard color does NOT imply the same original charge.
+
+For a y owner put p=(d+f)/2. Its matching-edge count is L+p-1 in either
+frame. In the left frame the bar occupies L/2 endpoint tiles and the
+legs p more. The inward odd-row lateral supports contribute p-2, and
+both axial supports lie in terminal endpoint tiles, giving p original
+supports inside endpoint tiles. Thus charge=(L+p-1)+p-2*(L/2+p)=-1.
+
+In the right frame the bar spans L/2+1 physical tile columns. The legs
+add p tiles. The even-row lateral supports contribute p inside supports,
+both axial supports contribute2 and both bar-exterior supports contribute2.
+Thus charge=(L+p-1)+(p+4)-2*(L/2+1+p)=+1. These are FULL original
+support counts, unchanged by consumption. Neither charge is1-L.
+
+Let n_L,n_R count the y owners in the two frames. Then n_L+n_R=n,
+DeltaS=sum_j(L_j^(t)-1)+n_L and DeltaN=n_R. Consequently the exact
+immutable owner inventory is
+
+    Delta(N+S)=sum_j(L_j^(t)-1)+n>=6n.
+
+Every y owner contributes exactly1 to N+S; it contributes negative mass1
+in the left frame or positive-owner count1 in the right frame. The earlier
+claim that all2n owners have negative mass>=5 was a physical-phase error
+and is withdrawn. This owner inventory is not a net global Phi bound:
+mutual/exterior full-tile and directed-event receipts still need control.
 
 ## Validation and remaining task
 
@@ -158,12 +191,18 @@ geometries,80rotor collisions,2736shallow-U collisions,3600footprint
 cases and7248arbitrary-depth/far decisions. Of976old-endpoint-disjoint
 candidates,448are excluded by the necessary footprint;384controls also
 verify the earlier two band branches' explicit shared endpoint.
-The standalone local Lean module passes25declarations/19theorems with
+The corrected checker additionally passes5040full-original physical-phase
+charge controls. The standalone local Lean module passes34declarations/24theorems with
 individual ordinary-axiom reports and no warnings. Its scope is coordinate
-collision/footprint lemmas, conditional interval/depth arithmetic and
-terminal parity. The actual-owner catalogue/completeness adapters and
+collision/footprint lemmas, conditional interval/depth arithmetic,
+terminal parity, corrected charge arithmetic and arbitrary-list immutable
+owner inventory. The actual-owner catalogue/completeness adapters and
 the final distinct-owner count remain ordinary proofs. A separate
-independent review is running; see the
+initial independent review returned REVISE: the geometric footprint and
+dichotomy were confirmed subject to the global catalogue, but the original
+mass claim was incorrect. The explicit standing catalogue hypothesis and
+correct physical-phase charge calculation above repair those two issues;
+the corrected package has its own follow-up review. See the
 [validation record](../output/secondary-ten-mandatory-e-footprint-validation.json).
 The earlier unraised/raised receipts do not establish this
 new footprint theorem. Arbitrary-depth surviving phases, actual complete

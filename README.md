@@ -1,6 +1,7 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
-Latest complete-extension checkpoint: each old E support forces a fresh
+Latest complete-extension checkpoint within the full U/rotor model:
+each old E support forces a fresh
 north-terminal U owner containing nine consecutive specified endpoints.
 The [general mandatory-footprint proof](docs/SECONDARY_TEN_MANDATORY_E_FOOTPRINT.md)
 excludes BOTH recent unraised/raised right-band families, including their
@@ -8,9 +9,14 @@ shortest far legs. Their exact joint receipts remain correct for partial
 inventories; they have no complete-family instances. Arbitrary right
 incident depth D/far g in the same breadth frame must satisfy D<=z-12
 or D-g>=z. Also2n same-color forced terminals need2n distinct fresh
-owners; their masses alone do not give a net global bound.25scoped local
-Lean declarations and exact controls pass; a separate written audit is
-running. Global5/6 improvement and rectangular-grid equality remain OPEN.
+owners. E-owner original charges are-1left/+1right, each contributing1
+to N+S, so the selected-owner inventory is sum(t breadth-1)+n>=6n.
+The earlier claim that every fresh owner has negative mass>=5 is withdrawn.
+34scoped local Lean declarations and exact controls, including5040physical
+phase charge counts, pass. Initial written review confirmed the geometry
+but required this charge correction and explicit global U/rotor premise;
+corrected follow-up is running. No net global bound or general-grid
+catalogue exhaustion follows. Global5/6 and grid equality remain OPEN.
 
 Latest mixed-direction checkpoint: a prescribed right-band owner has
 unbounded exterior debit -(u+13), yet its forced actual predecessor is
