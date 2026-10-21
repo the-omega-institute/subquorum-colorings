@@ -235,6 +235,14 @@ their coexistence and the allocation of the OLD prefix reserves are not
 asserted. The independent stack review input predates this simultaneous
 corollary; its review status is recorded separately.
 
+The subsequent [internal E-barrier theorem](SECONDARY_TEN_INTERNAL_E_BARRIER.md)
+shows that the first-root configuration used here cannot simply be cloned
+at internal H3 blocks: the retained predecessor X forces an eleven-point
+E-owner footprint, excluding the first-deep B incident depth z+4 there.
+Thus the separation certificate above is conditional; it supplies no
+instances at those internal blocks. The abstract disjoint-footprint
+additivity and the first-root theorem are unchanged.
+
 ## Local support closure and remaining obligations
 
 For any such height partition, the stack leaves exactly two unconsumed
