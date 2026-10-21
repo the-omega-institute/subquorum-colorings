@@ -230,7 +230,7 @@ g+3m bound. Whole-source role adapters, actual-owner selection, geometric
 receipt assembly and complete-extension semantics remain written proofs.
 
 No independent acceptance of this new theorem is inferred from earlier
-reviews or the pending original spacing-ten stream71332. The next issue
+reviews, including the now accepted original spacing-ten stream71332. The next issue
 is the signed marginal of UNSELECTED actual originals and a uniform
 whole-family allocation; selecting an already compensated subinventory
 does not settle that issue. General mixed geometries and the global grid
@@ -254,4 +254,8 @@ through the oracle broker, original streaming process11740, after checking
 the live pool. The packet includes this proof, exact canonical T/H/M and
 inventory definitions, the verifier/Lean sources and the prerequisite
 spacing-ten/lower-L proofs. It has no verdict yet. Earlier original71332
-remains live for its earlier, different packet; it was not restarted.
+has now completed with ACCEPT,18842 response characters exactly matching
+the terminal API, observed gpt_6/pro. That earlier written audit covers
+spacing-ten classification/receipts/nonreuse and the gap6/minimum10
+corollary; it does not cover this general-gap result or the lower-L proof.
+Its receipt is archived separately; no request was restarted.

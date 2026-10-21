@@ -13,12 +13,32 @@
     "rotor_roles": 256,
     "normalized_survivors": 490,
     "exact_receipts": 2459,
-    "receipt_modes": {"D": 750, "U": 597, "R": 680, "E": 400, "H": 16, "L": 16},
+    "receipt_modes": {
+      "D": 750,
+      "U": 597,
+      "R": 680,
+      "E": 400,
+      "H": 16,
+      "L": 16
+    },
     "one_owner_batches": 256,
     "mixed_10_both_gate_batches": 256,
     "tile_preserving_isometries": 128,
     "exact_residual_repairs": 12,
-    "large_width_gap_pairs": [[6, 2000], [2000, 12], [2000, 2000]],
+    "large_width_gap_pairs": [
+      [
+        6,
+        2000
+      ],
+      [
+        2000,
+        12
+      ],
+      [
+        2000,
+        2000
+      ]
+    ],
     "scope": "Canonical full T/H/M, both inclusion directions of bounded orientation/role catalogue, exact mixed physical-tile and source-labelled event SETS for all2459receipts, heterogeneous multi-gap event/tile partition, arbitrary checked compatible gap10 pairs with lowerLexcluded, eight tile-preserving isometries/even translations, residual4-r to4+r, four source types at each large pair. Finite controls check separate general written proofs."
   },
   "lean": {
@@ -40,9 +60,28 @@
     "request": "output/all-even-gap-axial-review-request.json",
     "stream": "output/all-even-gap-axial-review-stream.sse",
     "pool": "chrono-chatgpt-pro-pool",
-    "preflight_pool": {"ready": 16, "busy": 9, "needs_attention": 1, "queued": 1, "dispatched": 10},
+    "preflight_pool": {
+      "ready": 16,
+      "busy": 9,
+      "needs_attention": 1,
+      "queued": 1,
+      "dispatched": 10
+    },
     "earlier_stream_session": 71332,
-    "scope": "New independent general-gap theorem audit, not duplicate of earlier live gap10 classification review71332. New packet contains general proof, full canonical source/inventory definitions, exact verifier/Lean and prior gap10/lowerL proofs. No acceptance inferred. Keep both original live requests."
+    "scope": "New independent general-gap theorem audit11740, not duplicate of earlier original71332. Earlier71332now completed ACCEPT for spacing10 classification and gap6/minimum10 only. New packet contains general proof, full canonical source/inventory definitions, exact verifier/Lean and prior gap10/lowerL proofs. No acceptance of new general or lowerL theorem inferred. Preserve original11740.",
+    "earlier_accepted_review": {
+      "status": "COMPLETED_ACCEPT",
+      "task_id": "911ea32a-c561-423c-aaae-7964d86cc45f",
+      "original_stream_session": 71332,
+      "exit_code": 0,
+      "DONE": true,
+      "exact_terminal_response_match": true,
+      "response_chars": 18842,
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "receipt": "output/ten-row-gate-compensation-review-terminal.json",
+      "scope": "Written audit of original spacing10 exhaustive classification/shared-owner/packing/exact receipts/tight corrections/common-baseline nonreuse, plus gap6/minimum10 spacing corollary. Did not run Python/Lean. Subsequent lowerL exclusion, stronger all-width bound, density/residual and general even-gap theorem NOT included."
+    }
   },
   "limitations": "No universal grid-source decomposition, complete-extension existence, monotonicity under arbitrary additional sources, bound for unselected actual-source signed marginal, complete-family sharpness, global5/6 improvement or rectangular-grid triple equality. Submitted manuscript/main/primaryC4/CI preserved; no Mail."
 }

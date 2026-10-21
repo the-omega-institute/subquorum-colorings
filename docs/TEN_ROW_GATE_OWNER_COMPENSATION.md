@@ -235,12 +235,18 @@ process95784 exited0:27 explicit declarations/19 local theorems individually
 audited, ordinary axioms only, no warnings/sorry/native. Preflight46%
 memory free; comm-basename inspection found no active Lean/lake process.
 
-Independent review is submitted through the existing conversation
-conv_ed4025a182e9f9d9, original streaming process71332, without a verdict.
-It includes this theorem and the earlier unreviewed spacing-six corollary.
-The preceding all-width spacing-eight theorem has separately received
-ACCEPT (18509-character exact original-stream/terminal match); that verdict
-is not attributed to this new result.
+Independent review of this theorem and the spacing-six/minimum-ten
+corollary has completed with ACCEPT: task911ea32a-c561-423c-aaae-7964d86cc45f,
+conversation conv_ed4025a182e9f9d9. Original stream71332 exited0 with DONE;
+the18842-character response exactly matches the terminal API, observed
+gpt_6/pro. The audit explicitly checks full-record orientation/role
+exhaustion, exact charges, shared-owner and packing cases, every tight
+correction, the common-baseline nonreuse sum and the spacing corollary.
+It did not independently execute Python/Lean. The full receipt is archived
+in `output/ten-row-gate-compensation-review-terminal.json`. The subsequent
+lower-L exclusion and all-even-gap theorem were not in that initial
+packet and are not covered by this acceptance. The earlier spacing-eight
+ACCEPT remains separately scoped.
 
 ## Subsequent stronger complete-extension restriction
 

@@ -12,16 +12,34 @@
     "obstruction_cases": 64,
     "U_roles_excluded": 475136,
     "rotor_roles_excluded": 1024,
-    "large_width_2000": {"U_roles": 7424, "rotor_roles": 16},
+    "large_width_2000": {
+      "U_roles": 7424,
+      "rotor_roles": 16
+    },
     "full_immutable_rotor_chart": "Canonical chart(r,c)=(3+r,5-c),H(4,4)->(7,1),T(4,3)->(7,2),T(2,4)->(5,1). Complete endpoint/support/matching equality PASS.",
-    "compatible_pairs_without_L": {"6": 2, "8": 3, "10": 9, "12": 24, "14": 48, "20": 174, "30": 564},
+    "compatible_pairs_without_L": {
+      "6": 2,
+      "8": 3,
+      "10": 9,
+      "12": 24,
+      "14": 48,
+      "20": 174,
+      "30": 564
+    },
     "mixed_uniform_batches": 384,
     "shared_spanning_partial_equality": 64,
     "nonuniform_cases": 832,
     "density_criterion_cases": 560,
     "exact_neutral_nonuniform_cases": 16,
     "residual_cases": 24,
-    "residual_r_values": [0, 1, 4, 5, 20, 40],
+    "residual_r_values": [
+      0,
+      1,
+      4,
+      5,
+      20,
+      40
+    ],
     "scope": "All sampled orientations/anchors, unbounded-stem structural check per role, all4 vertical rotor records, reflection/even translations, exact uniform/nonuniform whole-source inventories, explicit residual values. Finite controls verify the separate general written proofs."
   },
   "lean": {
@@ -37,10 +55,24 @@
     "scope": "Immutable lower support/endpoint lists; arbitrary whole vertical stem interval collision without dimension upper bound; all4 north/south rotor wall collisions; shared/distinct actual-owner joint lower bound>=5; simultaneous and nonuniform density arithmetic. Full source-role/chart-to-record assembly, exact geometric receipts and complete-extension selection WRITTEN; residual unbounded exact inventory proof WRITTEN."
   },
   "review": {
-    "status": "ADDED_AFTER_PENDING_71332_SUBMISSION_NOT_IN_INITIAL_PACKET",
+    "status": "OUTSIDE_COMPLETED_71332_ACCEPT_INITIAL_PACKET_NEW11740_INCLUDES_PROOF_NO_VERDICT",
     "earlier_stream_session": 71332,
     "conversation_id": "conv_ed4025a182e9f9d9",
-    "scope": "Existing review covers preceding spacing10 classification/receipt theorem and spacing6 corollary, not this lower-rotor obstruction, stronger bound, nonuniform criterion or residual family. Keep original stream, no duplicate submission."
+    "scope": "Earlier71332 ACCEPT covers preceding spacing10 classification/receipt theorem and gap6/minimum10, NOTthis lowerL obstruction/stronger bound/density/residual. New distinct general-gap review11740 includes this proof as prerequisite, no verdict.",
+    "earlier_accepted_review": {
+      "status": "COMPLETED_ACCEPT",
+      "task_id": "911ea32a-c561-423c-aaae-7964d86cc45f",
+      "original_stream_session": 71332,
+      "exit_code": 0,
+      "DONE": true,
+      "exact_terminal_response_match": true,
+      "response_chars": 18842,
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "receipt": "output/ten-row-gate-compensation-review-terminal.json",
+      "scope": "Written audit of original spacing10 exhaustive classification/shared-owner/packing/exact receipts/tight corrections/common-baseline nonreuse, plus gap6/minimum10 spacing corollary. Did not run Python/Lean. Subsequent lowerL exclusion, stronger all-width bound, density/residual and general even-gap theorem NOT included."
+    },
+    "new_original_stream_session": 11740
   },
   "limitations": "No universal source decomposition, complete-extension existence, arbitrary baseline monotonicity, nonnegative unselected actual-source marginal, complete-family sharpness, global5/6 improvement or rectangular-grid triple equality. Partial negative residual refutes only the stated endpoint-only inference."
 }

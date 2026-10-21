@@ -228,3 +228,9 @@ calculation and failure of arbitrary endpoint-only monotonicity remain
 valid; neither the old nor the augmented partial family asserts complete
 existence or a whole-family bound. Unselected actual-source signed terms
 are the next frontier. The new theorem is outside original71332's packet.
+
+Original71332 has subsequently completed ACCEPT for its original
+spacing-ten classification and gap6/minimum10 packet:18842 characters,
+exact original-stream/terminal match, observed gpt_6/pro. That acceptance
+does not cover this lower-L obstruction. The distinct new general-gap
+review11740 includes this prerequisite proof but has no verdict yet.
