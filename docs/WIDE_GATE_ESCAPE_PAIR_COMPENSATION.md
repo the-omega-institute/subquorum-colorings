@@ -207,7 +207,7 @@ The completed controls are4644 north-gate U roles,392 rotor roles,1800
 east-terminal U roles with31 normalized survivor records,114 single-U
 inventories including29 exceptional boundary debits,421 pair inventories
 including170 tight pairs, and38 multi-gap/large controls. The local Lean
-file has22 explicit declarations and17 theorems; final run30420 exit0
+file before the addendum below has22 explicit declarations and17 theorems; run30420 exit0
 has no warnings or sorry/native axioms, with each declaration audited.
 Execution used the user-selected local Mac after44% free-memory and
 comm-basename process checks confirmed no active Lean/lake invocation.
@@ -223,3 +223,39 @@ The next problem is to classify owners of the far axial supports of
 these rotated U's and incorporate all subsequent contributions without
 reusing the current positive budget. General full-family allocation,
 the global5/6 improvement and rectangular-grid triple equality remain open.
+
+## Post-submission addendum: the shortest far offset is impossible
+
+The following deduction was made after the independent-review packet was
+submitted and is not part of task4ea2ca1d's initial scope.
+
+In a complete extension, the stronger necessary conditions are
+
+    f<=k-4, k>=8 on both sides, and W>=20.                  (5)
+
+To prove this, normalize a_i=0 on the left and suppose f=k-2. The
+escape U's original far axial support is z'=(7,3). Its north neighbour
+(6,3) belongs to the upper rotor, east neighbour (7,4) to this escape,
+and south neighbour (8,3) to B_(i+1). It must be occupied, with only
+west available internally. Thus every U/rotor owner is a west terminal.
+A U's minimum depth4 contains (7,0) after three steps, hitting A.
+The two standard west-terminal rotor endpoint sets are
+
+    {(6,1),(7,1),(7,2),(7,3),(8,0),(8,1),(8,2),(9,2)},
+    {(5,2),(6,0),(6,1),(6,2),(7,1),(7,2),(7,3),(8,1)}.
+
+Both contain (8,1), on B_(i+1). No owner exists, a contradiction.
+Reflection proves the right exclusion. Combining f!=k-2 with the even
+parity and prior f<=k-2 yields f<=k-4. Then f>=4 implies k>=8;
+k_L+k_R<=W-4 implies W>=20. Thus W=16 and18 are excluded as complete
+extensions too. The7g identity for selected inventories is unchanged.
+
+The checker adds23 full-source controls, excluding2484 U roles and184
+rotor roles at the new forced support. Final Python run42722 exits0
+with all earlier receipt controls still passing. Three additional local
+Lean theorems formalize the west-terminal collision, even-parity gap and
+new width frontier. Final Lean run6021 exits0 with25 declarations/20
+theorems individually audited, no warnings/sorry/native; preflight43%
+free memory and no real Lean/lake process. The role adapters remain
+written. The next open far-offset case has f<=k-4; it is not excluded
+by the west-only argument just given.

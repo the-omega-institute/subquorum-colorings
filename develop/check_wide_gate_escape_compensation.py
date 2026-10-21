@@ -205,8 +205,34 @@ def receipt_controls():
                 narrow_complete_extension_exclusion='All even W=8,10,12,14 by necessary depth pair sum')
 
 
+def short_far_controls():
+    cases = U_roles = rotor_roles = 0
+    for width in (16, 20, 40):
+        for depth in range(6, width-5, 2):
+            records = retained(width, 2, 2)+[escape(depth, depth-2, 2)]
+            occupied = set.union(*(record[0] for record in records))
+            point = (9, 3)
+            assert point in records[-1][1] and point not in occupied
+            assert set(neighbors(point)) & occupied == {(8, 3), (9, 4), (10, 3)}
+            dimensions = itertools.product((6, 8, 14), (4, 6, 20), (4, 8, 24))
+            for size, symmetry in itertools.product(dimensions, itertools.product((False, True), repeat=3)):
+                record = independent_source(size, symmetry, (0, 0))
+                for moved in anchor_records(record, point, {(0, -1)}):
+                    assert moved[0] & occupied
+                    U_roles += 1
+            for symmetry in itertools.product((False, True), repeat=3):
+                for moved in anchor_records(rotor_record(symmetry), point, {(0, -1)}):
+                    assert moved[0] & occupied
+                    rotor_roles += 1
+            cases += 1
+    return dict(cases=cases, U_roles_excluded=U_roles, rotor_roles_excluded=rotor_roles,
+                consequence='Actual f<=k-4, k>=8 and W>=20; W16/18 also excluded. '
+                            'Post-submission addendum, not in initial oracle packet.')
+
+
 if __name__ == '__main__':
     print(json.dumps(dict(status='PASS', owners=owner_controls(), receipts=receipt_controls(),
+        short_far=short_far_controls(),
         scope='Finite original-source controls supplement general role, support and '
               'nonreuse proofs. Selected-family Phi>=7g, no arbitrary-extension '
               'monotonicity, complete-family existence or global bound claimed.'), indent=2))

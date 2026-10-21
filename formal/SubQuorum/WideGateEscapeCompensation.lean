@@ -127,4 +127,21 @@ theorem simultaneous_selected_budget (gaps tightCount total : Int)
 theorem tight_selected_equality (gaps total : Int)
     (hledger : total = 13*gaps-6*gaps) : total = 7*gaps := by omega
 
+theorem west_terminal_collision (occupied : Point → Prop) (depth : Int)
+    (hdepth : 4 ≤ depth)
+    (hstem : ∀ step : Int, 0 ≤ step → step ≤ depth → occupied (7,3-step)) :
+    occupied (7,0) := by
+  exact hstem 3 (by omega) (by omega)
+
+theorem strict_far_frontier (depth far : Int)
+    (hdepthEven : depth % 2 = 0) (hfarEven : far % 2 = 0)
+    (hprevious : far ≤ depth-2) (hexclusion : far ≠ depth-2) :
+    far ≤ depth-4 := by omega
+
+theorem strengthened_pair_width (width leftDepth leftFar rightDepth rightFar : Int)
+    (hleftFar : 4 ≤ leftFar) (hrightFar : 4 ≤ rightFar)
+    (hleft : leftFar ≤ leftDepth-4) (hright : rightFar ≤ rightDepth-4)
+    (hseparation : leftDepth+rightDepth ≤ width-4) :
+    8 ≤ leftDepth ∧ 8 ≤ rightDepth ∧ 20 ≤ width := by omega
+
 end SubQuorum.WideGateEscapeCompensation
