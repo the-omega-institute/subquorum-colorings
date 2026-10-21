@@ -8,6 +8,13 @@ for the supplied original-source constructor. The proof-text objection
 about earlier blocks is valid and has been repaired in the E-frontier
 note. No independent acceptance is inferred from this response.
 
+Follow-up dd9cdf7b explicitly withdrew the earlier R charge objection
+and confirmed the exhaustive earlier-original separation. It found one
+local error in this supplement's original T support partition, with
+the correct total unchanged. The partition below is corrected and the
+verifier now checks the entire inside-support set. Final confirmation
+has been requested in the same conversation; no final ACCEPT is claimed.
+
 ## Direct source counts
 
 For R=U(L,10,f) at chart(a-11+r,C+1-c), a and C are odd and all
@@ -40,9 +47,14 @@ Its corresponding counts are
 
 The bar occupies M/2+1 physical tile columns and two physical tile
 rows; its leg additions give the displayed endpoint-tile count.
-Both original bar-end supports are now inside. The near and far
-lateral supports contribute1 and g/2-1, and both axial supports
-are inside. Hence the inside count is2+1+(g/2-1)+2=4+g/2.
+Both original bar-end supports are now inside. The near lateral
+supports at intrinsic even rows2,4 contribute2; the far lateral
+supports at even rows2,4,...,g contribute g/2. Both axial supports
+at intrinsic rows5 and g+1 lie in the next physical tile row beyond
+their stem terminals and OUTSIDE the entire endpoint tile footprint.
+Hence the inside count is2+2+g/2=4+g/2. The companion verifier
+compares the complete predicted inside-support SET in both phases,
+including every axial and bar-end inclusion or exclusion.
 
 Both charges are negative. One pair contributes negative mass
 1+(M-1)=M and no positive-owner count. The exact selected-pair

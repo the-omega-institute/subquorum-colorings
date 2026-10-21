@@ -27,6 +27,12 @@ def main():
         assert counts(receiver) == (breadth+4+far//2,
                                    breadth//2+5+far//2, 5+far//2)
         tiles = {(row//2, value//2) for row, value in receiver[0]}
+        moved = lambda point: (anchor-11+point[0], column+1-point[1])
+        expected_inside = {moved((row, 2)) for row in range(3, 10, 2)}
+        expected_inside |= {moved((row, breadth-1)) for row in range(3, far, 2)}
+        expected_inside |= {moved((11, 1)), moved((far+1, breadth))}
+        assert {point for point in receiver[1]
+                if (point[0]//2, point[1]//2) in tiles} == expected_inside
         assert all((point[0]//2, point[1]//2) not in tiles
                    for point in ((anchor-11, column+1), (anchor-11, column-breadth)))
         assert charge(receiver) == -1
@@ -36,6 +42,14 @@ def main():
         assert counts(consumer) == (breadth+1+far//2,
                                    breadth+2+far//2, 4+far//2)
         tiles = {(row//2, value//2) for row, value in consumer[0]}
+        moved = lambda point: (anchor-8+point[0], column-point[1])
+        expected_inside = {moved((0, 0)), moved((0, breadth+1))}
+        expected_inside |= {moved((row, 0)) for row in (2, 4)}
+        expected_inside |= {moved((row, breadth+1)) for row in range(2, far+1, 2)}
+        assert {point for point in consumer[1]
+                if (point[0]//2, point[1]//2) in tiles} == expected_inside
+        assert all((point[0]//2, point[1]//2) not in tiles
+                   for point in (moved((5, 1)), moved((far+1, breadth))))
         assert all((point[0]//2, point[1]//2) in tiles
                    for point in ((anchor-8, column), (anchor-8, column-breadth-1)))
         assert charge(consumer) == 1-breadth

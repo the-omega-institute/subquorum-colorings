@@ -249,7 +249,13 @@ and exact gain identity are unchanged. The companion
 records concrete source counts and the corrected general argument.
 The audit also identified an overbroad earlier-column sentence in the
 E-frontier proof; that sentence has been replaced by explicit row/column
-separation for every earlier original. No final acceptance is yet claimed.
+separation for every earlier original. Follow-up dd9cdf7b withdrew the
+charge objection and approved the repaired separation, but required one
+local T support-classification correction: its inside lateral supports
+are the even-row supports and both axial supports are outside. That
+explanation is now corrected, and full inside-support SET comparisons
+pass for both phases. Final confirmation is pending; no final acceptance
+is yet claimed.
 The submitted 11 October manuscript and primary star-forming results
 are preserved; full-family allocation and the global grid targets remain
 open.
