@@ -71,7 +71,19 @@ south. South rotor A contains u2+(2,-1), and south B contains u2+(1,-1),
 both on C_L's near stem (h>=v+2>=6). Only a south-terminal U remains.
 A right bar must pass below D's far stem, giving h2>=t as before.
 A left bar must pass below C_L's entire near stem, so h2>=h+2.
-The column parity has changed, interchanging the +1/-1 phases.
+The column parity has changed, interchanging the +1/-1 phases. Explicitly,
+write lambda=(h+f)/2 and retain the ORIGINAL support count in touched tiles:
+
+| Physical phase | Matching edges | Touched tiles | Original supports inside | Original full bar tiles | Charge |
+|---|---|---|---|---|---|
+| C_R; left-pointing C2 | k-1+lambda | k/2+1+lambda | 4+lambda | k/2-1 | +1 |
+| C_L; right-pointing C2 | k-1+lambda | k/2+lambda | lambda | k/2 | -1 |
+
+The first phase has two bar-end supports, two axial terminal supports
+and lambda even-row lateral supports inside touched tiles. The second
+has two axial terminal supports and lambda-2 odd-row lateral supports.
+Substitution into matching+inside-2*tiles gives the charges directly.
+The independent review reconstructs this same all-dimension phase table.
 No positivity of C2 is presumed; the two consecutive consumers can both
 have negative charge at the endpoint-disjoint level.
 
