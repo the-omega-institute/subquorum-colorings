@@ -158,4 +158,114 @@ theorem east_U_repairs_deficit (breadth : Int) (hbreadth : 6 ≤ breadth) :
     3 ≤ -1+(breadth-2) := by
   omega
 
+def upperDepthEight (origin width breadth far : Int) (point : Point) : Prop :=
+  endpoint breadth 8 far (point.1-origin+8,width+15-point.2)
+
+def gapNorthU (right : Bool) (origin width breadth depth far : Int) (point : Point) : Prop :=
+  endpoint breadth depth far (point.1-origin-2+depth,
+    if right then point.2-width-11 else width+13-point.2)
+
+def retainedSix (origin width : Int) (point : Point) : Prop :=
+  endpoint 6 8 4 (11-point.2,origin+11-point.1) ∨
+  endpoint (width+4) 10 4 (point.1-origin+2,point.2-5) ∨
+  endpoint width 4 6 (point.1-origin,point.2-6) ∨
+  endpoint 8 6 4 (origin+6-point.1,point.2-width-6) ∨
+  cavity origin width point ∨
+  endpoint 6 4 4 (point.2-width-1,point.1-origin-1)
+
+def retainedReturn (origin width : Int) (point : Point) : Prop :=
+  endpoint (width+6) 6 4 (point.1-origin+4,width+11-point.2)
+
+theorem depth_eight_gap_original_support (breadth far : Int) :
+    support breadth 8 far (8,0) := by
+  unfold support
+  omega
+
+theorem depth_eight_gap_absent
+    (origin width oldBreadth oldFar breadth far : Int)
+    (hwidth : 12 ≤ width) (hold : 6 ≤ oldBreadth) (hbreadth : 6 ≤ breadth) :
+    ¬(retainedSix origin width (origin+2,width+12) ∨
+      retainedReturn origin width (origin+2,width+12) ∨
+      residual origin width oldBreadth oldFar (origin+2,width+12) ∨
+      upperDepthEight origin width breadth far (origin+2,width+12)) := by
+  unfold retainedSix retainedReturn residual upperDepthEight cavity endpoint
+  dsimp
+  omega
+
+theorem depth_eight_gap_three_foreign_neighbors (origin width oldBreadth oldFar : Int) :
+    residual origin width oldBreadth oldFar (origin+2,width+11) ∧
+      cavity origin width (origin+2,width+13) ∧
+      cavity origin width (origin+3,width+12) := by
+  unfold residual cavity endpoint
+  dsimp
+  omega
+
+theorem depth_eight_long_consumer_collision
+    (right : Bool) (origin width capBreadth capFar breadth depth far : Int)
+    (hcap : 6 ≤ capBreadth) (hbreadth : 6 ≤ breadth) (hdepth : 10 ≤ depth) :
+    gapNorthU right origin width breadth depth far (origin-7,width+12) ∧
+      upperDepthEight origin width capBreadth capFar (origin-7,width+12) := by
+  cases right <;> unfold gapNorthU upperDepthEight endpoint <;> dsimp <;> omega
+
+theorem depth_eight_short_right_collision
+    (origin width capBreadth capFar breadth depth far : Int)
+    (hcap : 6 ≤ capBreadth) (hbreadth : 6 ≤ breadth)
+    (hmin : 4 ≤ depth) (hmax : depth ≤ 8) :
+    gapNorthU true origin width breadth depth far (origin+3-depth,width+14) ∧
+      upperDepthEight origin width capBreadth capFar (origin+3-depth,width+14) := by
+  unfold gapNorthU upperDepthEight endpoint
+  dsimp
+  omega
+
+theorem depth_eight_short_left_collision
+    (origin width oldBreadth oldFar breadth depth far : Int)
+    (hold : 6 ≤ oldBreadth) (hbreadth : 6 ≤ breadth)
+    (hmin : 4 ≤ depth) (hmax : depth ≤ 8) :
+    gapNorthU false origin width breadth depth far (origin+3-depth,width+11) ∧
+      residual origin width oldBreadth oldFar (origin+3-depth,width+11) := by
+  unfold gapNorthU residual endpoint
+  dsimp
+  omega
+
+theorem depth_eight_every_north_U_blocked
+    (right : Bool) (origin width capBreadth capFar oldBreadth oldFar breadth depth far : Int)
+    (hcap : 6 ≤ capBreadth) (hold : 6 ≤ oldBreadth)
+    (hbreadth : 6 ≤ breadth) (hmin : 4 ≤ depth) (heven : depth % 2 = 0) :
+    ∃ point, gapNorthU right origin width breadth depth far point ∧
+      (upperDepthEight origin width capBreadth capFar point ∨
+        residual origin width oldBreadth oldFar point) := by
+  by_cases hlong : 10 ≤ depth
+  · exact ⟨(origin-7,width+12),
+      (depth_eight_long_consumer_collision right origin width capBreadth capFar
+        breadth depth far hcap hbreadth hlong).1,
+      Or.inl (depth_eight_long_consumer_collision right origin width capBreadth capFar
+        breadth depth far hcap hbreadth hlong).2⟩
+  · have hshort : depth ≤ 8 := by omega
+    cases right with
+    | false =>
+      have hhit := depth_eight_short_left_collision origin width oldBreadth oldFar
+        breadth depth far hold hbreadth hmin hshort
+      exact ⟨(origin+3-depth,width+11), hhit.1, Or.inr hhit.2⟩
+    | true =>
+      have hhit := depth_eight_short_right_collision origin width capBreadth capFar
+        breadth depth far hcap hbreadth hmin hshort
+      exact ⟨(origin+3-depth,width+14), hhit.1, Or.inl hhit.2⟩
+
+theorem depth_eight_north_rotor_blocked (handed : Bool) (origin width : Int) :
+    northTip handed (origin+2) (width+12) (origin,width+13) ∧
+      cavity origin width (origin,width+13) := by
+  cases handed <;> simp only [northTip, Bool.false_eq_true, ite_false, ite_true,
+    List.mem_cons, Prod.mk.injEq, cavity, endpoint] <;> omega
+
+theorem complete_upper_gain (right : Bool) (breadth depth oldBreadth : Int)
+    (hbreadth : 6 ≤ breadth) (hcomplete : ¬(right = false ∧ depth = 8)) :
+    5 ≤ breadth-1-(if right = false ∧ depth = 8 then oldBreadth else 0) := by
+  simp only [if_neg hcomplete]
+  omega
+
+theorem complete_rotor_pair_excess (rotorGain upperGain : Int)
+    (hrotor : -1 ≤ rotorGain) (hupper : 5 ≤ upperGain) :
+    3 ≤ -1+rotorGain+upperGain := by
+  omega
+
 end SubQuorum.SecondaryTenDistinctConsumers

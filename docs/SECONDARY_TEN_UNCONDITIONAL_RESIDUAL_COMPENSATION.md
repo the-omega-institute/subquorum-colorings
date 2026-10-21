@@ -29,7 +29,10 @@ there is an actual-original subinventory I with
 
 There is no assumption that the persistent supports e=(a,w+14) and
 t=(a+1,w+14) have the same actual original consumer. On the distinct-owner
-branch one can in fact choose I with Phi(I)>=Phi(Q,D,W)+1.
+branch one can in fact choose I with Phi(I)>=Phi(Q,D,W)+3, by the
+[subsequent depth-eight exclusion](SECONDARY_TEN_DEPTH_EIGHT_COMPLETE_EXCLUSION.md).
+The original proof below establishes the weaker excess1 directly; the
+addendum rules out its exceptional depth-eight prefix in every complete family.
 The conclusion does not assert completeness of I or monotonicity of Phi
 under further insertions.
 
@@ -222,7 +225,10 @@ residual, take k=w+8,z=4, R_S at t and K_L=U(w+12,8,4).
 This endpoint-disjoint partial inventory has DeltaPhi(K_L|A+R_S)=3
 and total DeltaPhi(R_S,K_L|A)=2, hence Phi(A+R_S+K_L) is exactly
 one above baseline. This is a receipt witness, not a claim of complete
-extendibility. The false simpler formula h-1 would overestimate its
+extendibility. The subsequent depth-eight exclusion proves that this
+entire prefix has no complete extension in the stated model. It therefore
+does not establish sharpness of the complete-family bound. The false
+simpler formula h-1 would overestimate its
 increment by k; counting all four directed events per V tile repairs it.
 
 ## Proof of the theorem and remaining global obligations
@@ -259,5 +265,8 @@ records10560+27072 disjointness controls and7980+18840 exact source/tile/event
 sets,48 rotor receipts,48 blocker certificates and3714 full-source role controls.
 The [Lean receipt](../output/secondary-ten-distinct-consumer-lean-validation.json)
 records14 clean declarations with individual ordinary axioms. The earlier
-common-consumer theorem has ACCEPT; this new extension has its own
-[pending written review](../output/secondary-ten-unconditional-review.json).
+common-consumer theorem and this extension each have an
+[ACCEPT written review](../output/secondary-ten-unconditional-review.json).
+That review covers the original excess1 bound and explicitly excludes
+independent execution certification. The subsequent depth-eight exclusion
+and excess3 strengthening have separate local verification and review.

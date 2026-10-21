@@ -1,5 +1,13 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest residual checkpoint: the all-actual-consumer local compensation
+theorem for the two prescribed residual families has an ACCEPT written
+review. A new complete-extension exclusion removes the depth-eight
+upper-left U branch and strengthens distinct-owner baseline excess from1
+to3. Ten additional local Lean declarations and explicit collision controls
+pass. See the [exclusion proof and scope](docs/SECONDARY_TEN_DEPTH_EIGHT_COMPLETE_EXCLUSION.md).
+Global owner-budget nonreuse and exterior signed contacts remain open.
+
 21 October research checkpoint: a complete nine-source family refutes
 least-marked-hull reserve comparison even when BOTH endpoint graphs are
 connected. The hull has R=k/2+13 and the full extension has R=24, with
