@@ -186,3 +186,13 @@ sharpness. Rotated U receivers and their possible mutual contact bands
 must be charged in one joint inventory. The global5/6 improvement,
 general full-family allocation and rectangular-grid triple equality
 remain open.
+
+## Subsequent disposition
+
+The later `ALL_WIDTH_NESTED_SEED_NONEXTENSION.md` excludes this entire
+spacing-eight seed at every even width; its written proof has separately
+received ACCEPT as taskda0dcf4e. The exact partial receipts above remain
+valid. Actual-owner implications for complete extensions of this seed
+now have empty hypotheses, so they do not establish a bound for a realizable
+complete family. `TEN_ROW_GATE_OWNER_COMPENSATION.md` studies a different,
+spacing-ten seed without presuming complete-extension existence.

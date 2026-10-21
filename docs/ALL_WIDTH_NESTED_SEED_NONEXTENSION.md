@@ -197,11 +197,14 @@ ordinary axioms only, no warnings/sorry/native. Preflight39% memory free
 and comm-basename process inspection found no active Lean/lake invocation.
 
 Independent continuation reviewda0dcf4e-7214-4c46-bd46-1749adde75db,
-original stream89055, conversationconv_ed4025a182e9f9d9, is dispatched.
-It includes both the post-submission far-offset exclusion and this new
-all-width closure. There is no verdict yet. The predecessor's two-layer
-compensation proof was independently ACCEPTED, with19396-character exact
-stream/terminal match; that acceptance is not attributed to this new proof.
+original stream89055, conversationconv_ed4025a182e9f9d9, completed ACCEPT.
+Its18509-character answer exactly matches the terminal receipt and the
+original stream, which exited0; observed modelgpt6/pro. The review covers
+both the far-offset exclusion and this all-width closure, including the
+immutable support adapters, every dimension/orientation and additional
+retained originals. It is a written audit, without independent execution
+of Python or Lean. The spacing corollary below was outside this review.
+The predecessor's two-layer proof also remains independently ACCEPTED.
 
 The broader research targets remain open: unequal/deeper inner sources,
 other multicyclic contact components, mixed orientations, full-family

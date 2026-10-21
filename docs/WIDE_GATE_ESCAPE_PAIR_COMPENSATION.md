@@ -264,5 +264,16 @@ Lean theorems formalize the west-terminal collision, even-parity gap and
 new width frontier. Final Lean run6021 exits0 with25 declarations/20
 theorems individually audited, no warnings/sorry/native; preflight43%
 free memory and no real Lean/lake process. The role adapters remain
-written. The next open far-offset case has f<=k-4; it is not excluded
-by the west-only argument just given.
+written. The west-only argument alone does not exclude f<=k-4.
+
+## Subsequent disposition
+
+The remaining far-owner cases have now been excluded by the general proof
+in `ALL_WIDTH_NESTED_SEED_NONEXTENSION.md`, independently ACCEPTED as
+taskda0dcf4e (18509-character exact stream/terminal match, written audit).
+This closes the entire spacing-eight nested seed at every even width.
+The exact selected-inventory identities above remain valid, but their
+complete-extension owner implications for this seed now have empty
+hypotheses and supply no global bound improvement. The new spacing-ten
+family and its actual owners are studied separately in
+`TEN_ROW_GATE_OWNER_COMPENSATION.md`.
