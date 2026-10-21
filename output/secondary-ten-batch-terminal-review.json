@@ -1,12 +1,16 @@
 {
-  "status": "LIVE",
-  "pool": "chrono-chatgpt-pro-pool",
-  "ready_workers_at_dispatch": 21,
+  "status": "dispatched",
+  "last_verified_status": "dispatched",
+  "task_id": "de7523a0-ffd3-4bfc-8d67-0da6306c1f74",
   "conversation_id": "conv_7f9be46ffdcf5c51",
+  "pool": "chrono-chatgpt-pro-pool",
   "original_stream_session": 75530,
-  "request": "secondary-ten-batch-terminal-review-request.json",
-  "response_stream": "/tmp/secondary-ten-batch-terminal-review-stream.sse",
-  "scope": "Conditional packed distinct-owner terminal budget and exact one-ledger exterior partition; unbounded INCOMPLETE shared-consumer opposing-bar obstruction. No unrestricted allocation claim.",
+  "original_stream_exit_code": 1,
+  "stream_transport_error": "unexpected EOF during chunk size line",
+  "current_api_wait_session": 77195,
+  "current_api_response": "/tmp/secondary-ten-batch-terminal-task-current.json",
+  "task_status_source": "GET sessions/conv_7f9be46ffdcf5c51 turns includes original task with status dispatched; connection loss is not task termination.",
+  "scope": "Original packed budget and incomplete debit family plus16Lean; later complete exclusion and reflected classification outside input.",
   "verdict": null,
-  "next_action": "Keep original75530; collect terminal mathematical audit without restarting due delay."
+  "next_action": "Poll original task de7523a0 via task API; never resubmit due transport EOF. Submit the prepared opposing-prefix continuation only after this task is terminal."
 }
