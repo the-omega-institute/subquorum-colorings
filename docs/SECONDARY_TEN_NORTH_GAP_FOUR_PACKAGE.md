@@ -136,7 +136,7 @@ between P and W. Then
     Phi(Q/D/W/P)-Phi(Q/D/W)=2Fextra-E(P,W).       (3)
 
 Every internal full tile contains an L or C_R endpoint absent from the
-base, so it is necessarily new; W cannot occupy it. All new events split
+base, so it is necessarily new; W cannot have an endpoint in it. All new events split
 uniquely into internal events and events with an external endpoint owner.
 The negative source mass and positive owner count are additive on the
 actual source sets. Applying (2) yields (3). No tile, event, owner or
@@ -172,7 +172,8 @@ The accompanying checker independently constructs original matchings,
 support sets, tiles and directed events. It checks every bounded U/rotor
 role at both forced points, exact all-parameter formulas over separated
 large test dimensions, source phases and the explicit package obstruction.
-These finite checks validate the written general argument, not replace it.
+These finite checks corroborate the formulas on the tested instances;
+the catalogue exhaustion and tile partition establish the general statements.
 
 Scoped Lean verifies blocker coordinates, geometric collision implications,
 forced-site absence, parity bounds and exact ledger algebra. Catalogue
@@ -182,8 +183,11 @@ See the [independent checker](../develop/check_secondary_ten_north_gap_four_pack
 [controls and exact witness events](../output/secondary-ten-north-gap-four-package-controls.json),
 [scoped Lean source](../formal/SubQuorum/SecondaryTenNorthGapFourPackage.lean)
 and [formal scope receipt](../output/secondary-ten-north-gap-four-package-formal-check.json).
-The initial written [review status](../output/secondary-ten-north-gap-four-package-review.json)
-is tracked separately; no pending verdict is treated as acceptance.
+The initial written [review](../output/secondary-ten-north-gap-four-package-review.json)
+COMPLETED with ACCEPT, no mathematical hypothesis or accounting repair.
+Two wording clarifications distinguish external endpoints from original
+supports and finite corroboration from the general proof. The subsequent
+cavity theorem and six-source family are outside that audit's input.
 
 The remaining task is to control the signed external term using COMPLETE
 support closure, or prove a general rule for the two negative-consumer branch.
