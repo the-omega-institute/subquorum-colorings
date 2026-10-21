@@ -86,6 +86,46 @@ This contradicts original endpoint disjointness. Evenness gives J<=K-2
 and legal J>=6 gives K>=8. Its stated original support owners follow
 by evaluating E(g+1,1) and E(g,0).
 
+## A stronger external-sign obstruction after consuming the cavity support
+
+The endpoint-only external-sign rule still fails even after (1)'s tight
+negative consumer is included. For every even b and even w>=12, retain
+Q,D,L with t=4,v=6, and set
+
+    C=U(8,6,4), C(r,c)=(a+6-r,w+6+c),
+    E=U(6,4,4), E(r,c)=(a+4-r,w+7+c),
+    W=U(6,4,4), W(r,c)=(a+1+c,w+1+r).
+
+All six original endpoint sets are disjoint. The package P={L,C,E}
+consumes BOTH first forced sites (a,w+7) and (a+1,w+8), and satisfies
+the complete-model necessary bounds h=t+2 and K>=8. Its internal Phi
+change relative to Q/D is still exactly0. Indeed the preceding note
+accounts for L/C; adding E has Delta S=1, Delta F=2, Delta E=5,
+hence Delta Rraw=0 and Delta N=0.
+
+Here E has exactly two shared endpoint tiles, both with D, with lower
+coordinates (a-1,w+8) and (a+1,w+8). The first has three D endpoints
+and E's terminal, contributing one full tile and three directed events;
+the second has two endpoints of each, contributing one full tile and
+two events. E/C contact lies across tile boundaries, and L/Q have no
+endpoint tile in common with E. Thus these counts prove neutrality for
+every b,w in the stated range, without finite enumeration as a substitute.
+
+W interacts with L exactly as in the earlier translated witness: two
+extra full tiles, seven directed events. Its maximum column w+5 is
+in a different tile pair from C's minimum w+7 and E's minimum w+8.
+Its minimum column w+1>=13 also avoids every Q endpoint tile. Hence
+
+    Phi(Q/D/W/P)-Phi(Q/D/W)=4-7=-3.
+
+This is an all-width family refuting endpoint-only external nonnegativity
+after TWO forced consumers, including the strict cavity window, have
+been supplied. It remains explicitly incomplete: D's original support
+(a+2,w+10) is absent from all six endpoint sets but sees its west anchor
+(a+2,w+9) and E's south endpoint (a+3,w+10). Thus further ACTUAL
+support closure and its signed contribution remain necessary. This does
+not refute a complete-family compensation theorem or the target inequality.
+
 ## Scope and verification
 
 The direct checker includes bounded role exhaustion at s, every relevant

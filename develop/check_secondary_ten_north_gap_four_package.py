@@ -181,6 +181,47 @@ def cavity_controls():
                 all_endpoint_anchors_included=True)
 
 
+def repaired_cavity_obstruction_controls():
+    patterns = 0
+    example = None
+    for bottom, width in itertools.product((-24, 40), (12, 14, 50, 200)):
+        fixed = fixed_sources(bottom, width, 4, 6)
+        outward = consumer(bottom, width, 8, 6, 4, True)
+        second = independent_source((6, 4, 4), (False, True, False), (bottom-5, width+7))
+        external = independent_source((6, 4, 4), (True, False, False), (bottom-8, width+1))
+        records = fixed+[outward, second, external]
+        assert all(not first[0] & other[0] for first, other in itertools.combinations(records, 2))
+        before = inventory(fixed+[outward])
+        after = inventory(fixed+[outward, second])
+        assert after['mass']-before['mass'] == 1
+        assert len(after['full'])-len(before['full']) == 2
+        assert len(after['events'])-len(before['events']) == 5
+        assert after['raw_reserve'] == before['raw_reserve']
+        base = inventory(fixed[:2]+[external])
+        joined = inventory(records)
+        assert 1+joined['raw_reserve']-base['raw_reserve'] == -3
+        endpoints = set.union(*(record[0] for record in records))
+        assert (bottom-9, width+7) in outward[0]
+        assert (bottom-8, width+8) in second[0]
+        missing = bottom-7, width+10
+        assert missing in fixed[1][1] and missing not in endpoints
+        assert (bottom-7, width+9) in fixed[1][0] and (bottom-6, width+10) in second[0]
+        patterns += 1
+        if bottom == 40 and width == 12:
+            example = dict(bottom=bottom, width=width, endpoint_disjoint_sources=6,
+                           consumed_forced_sites=[[31, 19], [32, 20]],
+                           C=[8, 6, 4], C_frame='(37-r,18+c)',
+                           E=[6, 4, 4], E_frame='(35-r,19+c)',
+                           W=[6, 4, 4], W_frame='(32+c,13+r)',
+                           negative_E_charge=charge(second), internal_package_delta_phi=0,
+                           external_delta_phi=-3, next_missing_original_support=missing,
+                           missing_support_anchors=[[33, 21], [34, 22]],
+                           complete_family=False, refutes_target=False)
+    assert example is not None
+    return dict(parameter_controls=patterns, widths=[12, 14, 50, 200], witness=example,
+                written_all_width_family=True)
+
+
 def obstruction_control():
     fixed = fixed_sources(40, 12, 4, 6)
     outward = consumer(40, 12, 6, 4, 4, True)
@@ -225,6 +266,7 @@ def obstruction_control():
 if __name__ == '__main__':
     print(json.dumps(dict(status='PASS', roles=role_controls(), package=package_controls(),
                          cavity=cavity_controls(), obstruction=obstruction_control(),
+                         repaired_cavity_obstruction=repaired_cavity_obstruction_controls(),
                          scope='Finite independent controls of a separately written general '
                          'consumer dichotomy, exact neutral raw-potential package, and '
                          'subsequent negative cavity consumer/window. The '
