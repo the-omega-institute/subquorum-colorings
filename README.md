@@ -6,8 +6,8 @@ Only J1/J2 can have a far-pair receipt, and the owners debited by A and
 P1 are disjoint. An unbounded geometrically admissible family attains
 L/2+3 for every even6<=L<=v; complete extendibility is not asserted.
 128 equality-family controls,70 nonuniform controls, targeted boundaries
-and13 scoped local Lean declarations pass. The earlier >=2 theorem has
-independent ACCEPT; the new sharp theorem has a separate follow-up audit.
+and13 scoped local Lean declarations pass. Both the earlier >=2 theorem
+and the new sharp theorem/equality family have independent ACCEPT.
 Full-family allocation and the global grid targets remain OPEN.
 
 Latest actual-staircase checkpoint: a [general receipt partition](docs/SECONDARY_TEN_ROOT_ACTUAL_STAIRCASE.md)

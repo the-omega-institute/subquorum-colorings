@@ -144,6 +144,8 @@ strictly to the right. H3's early P0 endpoints are to the right of A;
 at the remaining early rows its west rotor and X0 also lie strictly
 right of the first three ray endpoints (L>=6). On J3's far row,
 those short originals are above it, while V0 starts at column s+2.
+At z24, Q0 can still occupy the last physical tile row, but its minimum
+column s+3 excludes it by column separation; it is not assumed to be above.
 Every later old original starts below that row; P1 is the next row.
 These column and row separations prove disjointness from every full old
 original and from each other, independent of n,h,K,g_R.
@@ -152,7 +154,22 @@ The only far-pair overlap is J1/J2 on rows a-3,a-2, over columns
 s-L-6 through s-L-4. Its one full tile and three events give-1.
 Only J1 has an A boundary event, giving-1. Only J3 meets P1, with
 G3=v+10, signed receipt -(v+10)/2-1. There is no neutral rotor
-corner or additional cooperative tile. Therefore
+corner or additional cooperative tile.
+
+For completeness, outside the upper rows the exact new mixed full-tile
+minima are
+
+    {(a-3,s-L-6)} union
+    {(t,s-v-10+2k): 0<=k<(v+10)/2}.
+
+Only the physical rows with minima a-5,a-3,t contain far endpoints;
+other staircase endpoints lie in wholly owned continuing bar tiles.
+In row a-5, J0's A-adjacent tile has only three endpoints. In row a-3,
+the pair gives the listed single full tile, while J1's A-adjacent tile
+also has only three endpoints. In row t, the last tile at column s
+has only its two column-s endpoints. These facts exclude omitted
+cooperative full tiles and justify equality, not just a lower bound.
+The residual event count is3+1+(v+10)+1+(v+10)/2. Thus
 
     eta = -1-1-(v+10)/2-1 = -v/2-8,
     DeltaPhi=v/2+L/2+11+eta=L/2+3.
@@ -177,7 +194,12 @@ exclusive debit arithmetic and final sharp ledger. Full event exhaustion,
 global component exhaustion and the equality-family geometric adapter remain
 written. Independent review of the earlier weaker theorem completed ACCEPT
 in task523658e0-2938-4254-b39d-edcc533e5c3c. That verdict does not review
-this strengthening, which has a separate follow-up audit.
+this strengthening. Follow-up30eabe1f-f849-41fd-9df6-276c1603764c also
+completed ACCEPT for the sharp theorem and unbounded equality family.
+Its complete streamed response equals the terminal API response, observed
+gpt_6/pro. The exact residual full-tile list and the Q0 column-separation
+clarification above incorporate the review's symbolic checks. The raw
+response and terminal record are archived separately.
 
 The next issue is whether additional actual originals can consume these
 receipts or source units when overlapping selected groups are combined.
