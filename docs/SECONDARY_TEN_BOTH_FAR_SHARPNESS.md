@@ -134,3 +134,9 @@ formalization of this sharpness construction is claimed.
 This corollary was written AFTER the independent review input780b9242
 was submitted. That input covers the main both-far theorem and its
 E-frontier dependency, not this additional sharpness construction.
+
+A further [explicit return family](SECONDARY_TEN_SHARP_RETURN_DEBIT.md)
+shows why counting the forced new owners does not give a nonnegative
+closure increment: one endpoint-disjoint consumer of x has marginal-3
+for every even g and leaves a new forced site at the FIRST old block.
+Complete extendibility remains open; the selected-pair theorem is intact.
