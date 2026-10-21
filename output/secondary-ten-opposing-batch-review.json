@@ -1,8 +1,10 @@
 {
-  "status": "PREPARED_NOT_SUBMITTED",
+  "status": "DELIVERY_UNCONFIRMED_HTTP500",
+  "submission_attempt_at": "2026-10-21T19:07:00+08:00",
+  "submission_result": "CLI returned HTTP500; subsequent session API showed only the three completed prior turns and no new task. No mathematical verdict and no confirmed new task handle. Do not infer acceptance or automatically duplicate the request.",
   "request": "secondary-ten-opposing-batch-review-request.json",
   "depends_on_terminal_task": "de7523a0-ffd3-4bfc-8d67-0da6306c1f74",
   "scope": "New complete opposing-prefix exclusion and all-breadth reflected-pair compensation; outside initial batch review.",
   "verdict": null,
-  "next_action": "After original initial-batch task is terminal, send this single continuation in the same conversation."
+  "next_action": "Initial batch task is completed ACCEPT. Reconcile the failed continuation delivery with the existing conversation before any retry; the exclusion and classification remain written and locally checked, without an independent review verdict."
 }

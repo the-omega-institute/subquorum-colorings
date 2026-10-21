@@ -1,6 +1,6 @@
 {
-  "status": "dispatched",
-  "last_verified_status": "dispatched",
+  "status": "COMPLETED_ACCEPT",
+  "last_verified_status": "completed",
   "task_id": "de7523a0-ffd3-4bfc-8d67-0da6306c1f74",
   "conversation_id": "conv_7f9be46ffdcf5c51",
   "pool": "chrono-chatgpt-pro-pool",
@@ -9,8 +9,13 @@
   "stream_transport_error": "unexpected EOF during chunk size line",
   "current_api_wait_session": 77195,
   "current_api_response": "/tmp/secondary-ten-batch-terminal-task-current.json",
-  "task_status_source": "GET sessions/conv_7f9be46ffdcf5c51 turns includes original task with status dispatched; connection loss is not task termination.",
+  "task_status_source": "Original task recovered through session turns; terminal task API response collected after stream transport EOF.",
   "scope": "Original packed budget and incomplete debit family plus16Lean; later complete exclusion and reflected classification outside input.",
-  "verdict": null,
-  "next_action": "Poll original task de7523a0 via task API; never resubmit due transport EOF. Submit the prepared opposing-prefix continuation only after this task is terminal."
+  "verdict": "ACCEPT",
+  "next_action": "Review the prepared complete opposing-prefix exclusion and reflected classification in the same conversation; global exterior and packing obligations remain open.",
+  "completed_at": "2026-10-21T11:02:58.933+00:00",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "response_chars": 15570,
+  "response_file": "secondary-ten-batch-terminal-review-response.md"
 }
