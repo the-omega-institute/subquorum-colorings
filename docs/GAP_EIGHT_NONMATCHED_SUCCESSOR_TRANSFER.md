@@ -201,7 +201,9 @@ violations and is NOT a complete counterexample. The f=j+2 case needs a
 complete extension, a general obstruction or a different unused resource.
 The later [maximal-band theorem](MAXIMAL_VCORNER_BAND_OBSTRUCTION.md) supplies
 such an obstruction for the displayed eight-source pattern and, generally,
-for d=b-2,k>=W-4; other matched geometries remain open.
+for d=b-2,k>=W-4. A separate [six-source theorem](WIDE_MATCHED_RETURN_OBSTRUCTION.md)
+also excludes the displayed W10,k4 matched seed despite k<=W-6; this prescribed
+motif is not all such configurations. Other matched geometries remain open.
 Negative downward successors and saturated bands remain unpaid. Submitted
 manuscripts, public main, primary star-forming results and shared CI remain
 unchanged.

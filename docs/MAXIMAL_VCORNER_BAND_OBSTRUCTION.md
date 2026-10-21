@@ -136,7 +136,10 @@ Result files are `output/completion-verifier-U-fixture-result.json` and
 A second matched partial seed with W10,k4 satisfies the necessary k<=W-6
 bound and avoids this obstruction. A51096-candidate U/rotor bounded run
 within[-8,34]x[-8,34], widths6..10, legs4..8, at most32 additions is
-also UNSAT. No general noncompletion is inferred for that seed. See
-`output/matched-successor-wide-return-discovery.json`.
+also UNSAT. A later, separate [six-source obstruction](WIDE_MATCHED_RETURN_OBSTRUCTION.md)
+now proves this prescribed seed noncompletable at arbitrary additional
+dimensions and source count. This does not exclude every W10,k4 configuration.
+See `output/matched-successor-wide-return-discovery.json` for the original
+bounded discovery, which is not used as the general proof.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
