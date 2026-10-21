@@ -125,6 +125,14 @@ every external source's OWN signed contribution and the common initial
 margin once. No monotone reserve theorem, independent per-owner surplus,
 or counterexample to the full allocation inequality is inferred.
 
+There is a concrete next closure site when m>=w+4: L's original upper
+bar-end support u=(b-9,w+7) is absent from D,L,Q but has its L anchor
+(b-9,w+6) immediately west and D's lower-bar endpoint (b-10,w+7)
+immediately north. Any complete extension must therefore consume u.
+It may already be consumed by an actual external owner; no fresh-owner
+claim is made. When m=w+2, the same point is already D(2,m), so it is
+not a new consumer demand and must not be credited again.
+
 For a concrete obstruction to the ENDPOINT-ONLY rule 2Fextra>=E(L,W),
 take b=40, D=U(12,10,4), L=U(8,4,6) in the displayed charts, and
 
@@ -160,7 +168,7 @@ external-source stencils satisfy(2);205 have positive external owners,
 minimum -3. The explicit witness, seven original directed events and
 its missing forced support are reconstructed independently. Finite checks
 do not establish complete realizability or the missing external bound.
-This note is outside the currently running all-upward proof review.
+This note is outside the separate completed all-upward proof review.
 
 Unrestricted mixed allocation and rectangular-grid equality remain OPEN.
 N continues to count positive ORIGINAL owners only. Submitted DMGT and

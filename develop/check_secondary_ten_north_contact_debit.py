@@ -41,15 +41,21 @@ def pair_controls():
         secondary = current[1]
         northern = independent_source((width, 4, other), (False, False, False), (bottom-9, 6))
         assert charge(northern) == 1-width
+        next_support = bottom-9, width+7
+        assert next_support in northern[1]
+        assert (bottom-9, width+6) in northern[0]
+        assert (bottom-10, width+7) in secondary[0]
         base = inventory([secondary])
         joined = inventory([secondary, northern])
         if gap == 2:
+            assert next_support in secondary[0]
             overlap = min(far-2, other)//2
             assert len(joined['full']) == width//2+3+overlap
             assert len(joined['events']) == 2*width+6+2*overlap
             assert joined['raw_reserve']-base['raw_reserve'] == -1
             tight += 1
         else:
+            assert next_support not in secondary[0] | northern[0] | current[0][0]
             assert len(joined['full']) == width//2+2
             assert len(joined['events']) == 2*width+5
             assert joined['raw_reserve']-base['raw_reserve'] == -2

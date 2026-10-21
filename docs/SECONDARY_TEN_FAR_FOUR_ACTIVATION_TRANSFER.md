@@ -210,6 +210,11 @@ them. No class receives its own separately rounded surplus. Neither
 Ksingle nor Kdouble is also put in rho. All targets are original
 terminal occurrences; the argument makes no injection into owners.
 
+The subsequent [all-upward transfer](SECONDARY_TEN_ALL_UPWARD_ACTIVATION_TRANSFER.md)
+extends k_up from gap2 to ALL upward gaps on this same before-secondary10
+baseline. Gap2 is a restriction of the extended map, not another summand.
+Its accepted written review also verifies this unified interpretation.
+
 The algebraic consequence (3)--(4) is added after the main far4 audit
 request and separately checked by the last two Lean declarations below.
 It is not represented as an additional independently reviewed theorem.
