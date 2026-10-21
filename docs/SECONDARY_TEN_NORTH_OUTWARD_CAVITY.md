@@ -5,6 +5,11 @@ initial independent review input for the [neutral gap-four package](SECONDARY_TE
 It removes the nominal h=t boundary from COMPLETE outward instances and
 describes the next actual consumer. The endpoint-disjoint partial package
 and its exact algebraic identity remain valid at that boundary.
+The separate continuation [review](../output/secondary-ten-north-gap-four-package-review.json)
+COMPLETED with ACCEPT and independently supplies the even-B exclusion
+incorporated below. Its [full response](../output/secondary-ten-north-cavity-review-response.md)
+also verifies the all-width six-source family. The later third-right repair
+theorem is outside that review's input.
 
 ## General theorem
 
@@ -37,6 +42,16 @@ B is an integer, not assumed odd. The existing U phase table gives
 
 Thus the next forced consumer is negative in BOTH phases. It supplies
 no new positive owner or activation credit.
+
+**Complete-family sharpening.** The even-B coordinate phase is impossible
+under full original-support closure. Therefore every ACTUAL E in a complete
+family has
+
+    B odd, g=B-a, t<=g<=h-2, charge(E)=-1.
+
+The endpoint-disjoint phase formulas above remain valid algebraically;
+they do not assert complete realizability of both phases. In the actual
+surviving phase s is a straight near-leg interior, not E's terminal.
 
 If h=t+2, the bar window and parity force
 
@@ -76,7 +91,17 @@ column through row a+t-2, so B>=a+t. The incident stem at w+8 cannot
 reach C's bar row a+h-1, hence B<=a+h-2. Its terminal row B-g is at
 least a, since it cannot meet D's lower bar; and the owned point s has
 intrinsic coordinates (B-a-1,1), hence g>=B-a-1. This proves (1),(2).
-Evenness of g leaves exactly the two terminal/charge cases stated above.
+Evenness of g leaves exactly the two endpoint-level terminal/charge cases
+stated above. To exclude even B in a COMPLETE family, suppose that phase
+occurs. Its beyond-near-tip original support is p=(a,w+8), with original
+anchor E at s. It is absent from Q/D/L/C/E. Its north and east neighbors
+are D endpoints (a-1,w+8),(a,w+9), its west neighbor is C's terminal
+(a,w+7), and its south neighbor is E's terminal s. All four neighbors
+are therefore occupied by known foreign original owners. It cannot remain
+a retained support, so completeness requires a consumer at p. Every legal
+U/rotor endpoint has an adjacent endpoint of its OWN original owner,
+but all four neighbors have fixed different original owners. No consumer
+is possible, a contradiction. Thus B is odd, g=B-a and t<=g<=h-2.
 
 At h=t+2 the interval for B is a singleton, B=a+t, which is odd because
 a is odd and t even. Thus g=t. Suppose J>=K. C's endpoint C(2,K)
@@ -146,5 +171,10 @@ No complete-model rule or target inequality is refuted. The next task
 is to account for E and its further actual support closure jointly with
 external source mass and events, without spending the neutral package
 as surplus or counting E as a positive owner.
+
+The subsequent [third-right repair theorem](SECONDARY_TEN_NORTH_THIRD_RIGHT_REPAIR.md)
+does this for one continuation of the displayed six-source family: a
+right-pointing next consumer adds at least3 reserve and repairs its
+external loss. The other orientation and arbitrary extra owners remain open.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

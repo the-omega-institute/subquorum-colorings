@@ -131,7 +131,7 @@ def package_controls():
 
 def cavity_controls():
     library, rotors = axial_library({(-1, 0), (1, 0)})
-    patterns = surviving = rotor_exclusions = empty = tight = 0
+    patterns = surviving = rotor_exclusions = empty = tight = excluded_even = 0
     phases = Counter()
     for bottom, width, far, extra, breadth, leg in itertools.product(
             (-24, 40), (8, 12, 50), (4, 10), (0, 2, 4, 6, 10), (6, 8, 12), (4, 10)):
@@ -160,6 +160,14 @@ def cavity_controls():
             assert incident >= far+2
             assert charge(record) == (-1 if bar % 2 else 1-span)
             assert bar-near == (bottom-9 if bar % 2 else bottom-8)
+            if bar % 2 == 0:
+                closed_point = bottom-9, width+8
+                assert closed_point in record[1] and closed_point not in record[0] | blocked
+                assert set(neighbors(closed_point)) <= record[0] | blocked
+                assert set(neighbors(closed_point)) & record[0] == {point}
+                excluded_even += 1
+            else:
+                assert near == bar-(bottom-9) and far <= near <= incident-2
             if extra == 2:
                 assert bar == bottom-9+far and near == far
                 assert span <= breadth-2 and breadth >= 8
@@ -177,6 +185,8 @@ def cavity_controls():
     assert set(phases) == {'minus_one', 'negative_width'} and tight
     return dict(patterns=patterns, surviving_U_roles=surviving, phases=dict(phases),
                 rotor_exclusions=rotor_exclusions, equal_incident_noncompletion_patterns=empty,
+                even_phase_forced_four_foreign_neighbors=excluded_even,
+                complete_family_phase='odd_B_charge_minus_one_only',
                 tight_negative_consumer_controls=tight, U_dimensions_bounded_by=18,
                 all_endpoint_anchors_included=True)
 
@@ -220,6 +230,45 @@ def repaired_cavity_obstruction_controls():
     assert example is not None
     return dict(parameter_controls=patterns, widths=[12, 14, 50, 200], witness=example,
                 written_all_width_family=True)
+
+
+def third_right_repair_controls():
+    patterns = 0
+    minimum = None
+    for bottom, width in itertools.product((-24, 40), (12, 14, 50, 200)):
+        fixed = fixed_sources(bottom, width, 4, 6)
+        fixed.append(consumer(bottom, width, 8, 6, 4, True))
+        fixed.append(independent_source((6, 4, 4), (False, True, False), (bottom-5, width+7)))
+        external = independent_source((6, 4, 4), (True, False, False), (bottom-8, width+1))
+        before = inventory(fixed)
+        external_before = inventory(fixed+[external])
+        for breadth, near, far in itertools.product((6, 8, 12, 50), (4, 6, 10, 40), (4, 6, 12, 50)):
+            third = independent_source((breadth, near, far), (False, False, False),
+                                       (bottom-7-near, width+9))
+            assert all(not third[0] & record[0] for record in fixed+[external])
+            assert charge(third) == 1-breadth
+            assert (bottom-7, width+10) in third[0]
+            assert {(bottom-7, width+9), (bottom-6, width+10)} <= third[1]
+            after = inventory(fixed+[third])
+            first = int(near == 4)
+            second = int(breadth == 6 and far >= near)
+            full = int(breadth == 6 and far >= near+2)+int(breadth == 6 and far >= near+4)
+            assert after['mass']-before['mass'] == breadth-1
+            assert len(after['full'])-len(before['full']) == full
+            assert len(after['events'])-len(before['events']) == first+second+2*full
+            delta = after['raw_reserve']-before['raw_reserve']
+            assert delta == breadth-1-first-second and delta >= 3
+            with_external = inventory(fixed+[external, third])
+            assert with_external['raw_reserve']-external_before['raw_reserve'] == delta
+            base = inventory(fixed[:2]+[external])
+            assert with_external['raw_reserve']+1 >= base['raw_reserve']
+            patterns += 1
+            minimum = delta if minimum is None else min(minimum, delta)
+    return dict(parameter_patterns=patterns, widths=[12, 14, 50, 200],
+                arbitrary_dimension_test_max=50, minimum_reserve_gain=minimum,
+                exact_tile_event_partition=True, W_neutral=True,
+                repairs_displayed_external_loss=True, other_orientation='OPEN',
+                arbitrary_additional_sources='OPEN', full_allocation='OPEN')
 
 
 def obstruction_control():
@@ -267,6 +316,7 @@ if __name__ == '__main__':
     print(json.dumps(dict(status='PASS', roles=role_controls(), package=package_controls(),
                          cavity=cavity_controls(), obstruction=obstruction_control(),
                          repaired_cavity_obstruction=repaired_cavity_obstruction_controls(),
+                         third_right_repair=third_right_repair_controls(),
                          scope='Finite independent controls of a separately written general '
                          'consumer dichotomy, exact neutral raw-potential package, and '
                          'subsequent negative cavity consumer/window. The '

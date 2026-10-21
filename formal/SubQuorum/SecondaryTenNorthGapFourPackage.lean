@@ -42,6 +42,9 @@ def secondRight (bottom width breadth near far : Int) (point : Point) : Prop :=
 def secondLeft (bottom width breadth near far : Int) (point : Point) : Prop :=
   endpoint breadth near far (bottom-9+near-point.1,width+9-point.2)
 
+def cavity (width breadth near far bar : Int) (point : Point) : Prop :=
+  endpoint breadth near far (bar-point.1,point.2-(width+7))
+
 theorem first_site_absent (bottom width far other : Int) (hwidth : 8 ≤ width) :
     ¬returning bottom (bottom-9,width+7) ∧
       ¬secondary bottom width far (bottom-9,width+7) ∧
@@ -251,6 +254,80 @@ theorem cavity_tight_width_bound (breadth nextBreadth : Int)
     (hnext : 6 ≤ nextBreadth) (heven : breadth % 2 = 0)
     (hnextEven : nextBreadth % 2 = 0) (hcollision : ¬breadth ≤ nextBreadth) :
     nextBreadth ≤ breadth-2 ∧ 8 ≤ breadth := by
+  omega
+
+theorem third_right_reserve_identity (width first second full delta : Int)
+    (hdelta : delta = width-1+2*full-(first+second+2*full)) :
+    delta = width-1-first-second := by
+  omega
+
+theorem third_right_minimum (width first second delta : Int)
+    (hwidth : 6 ≤ width) (hfirst : first ≤ 1) (hsecond : second ≤ 1)
+    (hdelta : delta = width-1-first-second) : 3 ≤ delta := by
+  omega
+
+theorem third_right_pays_external_loss (before current repaired delta : Int)
+    (hloss : current = before-3) (hincrement : repaired = current+delta)
+    (hgain : 3 ≤ delta) : before ≤ repaired := by
+  omega
+
+theorem even_cavity_axial_support (base width breadth near far bar : Int)
+    (hnear : 4 ≤ near) (hphase : near = bar-base-1) :
+    cavity width breadth near far bar (base+1,width+8) ∧
+      support breadth near far (near+1,1) ∧
+      (bar-(near+1),width+7+1) = (base,width+8) := by
+  refine ⟨?_, ?_, ?_⟩
+  · unfold cavity endpoint
+    dsimp
+    omega
+  · unfold support
+    dsimp
+    omega
+  · apply Prod.ext <;> dsimp <;> omega
+
+theorem even_cavity_support_absent (bottom width breadth near far other incident bar : Int)
+    (hwidth : 8 ≤ width) (hbreadth : 6 ≤ breadth) (hincident : 4 ≤ incident)
+    (hnear : 4 ≤ near) (hphase : near = bar-(bottom-9)-1) :
+    ¬returning bottom (bottom-9,width+8) ∧
+      ¬secondary bottom width far (bottom-9,width+8) ∧
+      ¬northern bottom width other (bottom-9,width+8) ∧
+      ¬outward bottom width breadth incident far (bottom-9,width+8) ∧
+      ¬cavity width breadth near far bar (bottom-9,width+8) := by
+  unfold returning secondary northern outward cavity endpoint
+  dsimp
+  omega
+
+theorem even_cavity_foreign_neighbors (bottom width breadth near far bar : Int)
+    (hwidth : 8 ≤ width) (hfar : 4 ≤ far) (hnear : 4 ≤ near)
+    (hphase : near = bar-(bottom-9)-1) :
+    secondary bottom width far (bottom-10,width+8) ∧
+      secondary bottom width far (bottom-9,width+9) ∧
+      outward bottom width breadth near far (bottom-9,width+7) ∧
+      cavity width breadth near far bar (bottom-8,width+8) := by
+  unfold secondary outward cavity endpoint
+  dsimp
+  omega
+
+theorem four_foreign_neighbors_exclude_consumer (owned : Point → Prop) (base width : Int)
+    (hneighbor : owned (base,width+8) →
+      owned (base-1,width+8) ∨ owned (base+1,width+8) ∨
+      owned (base,width+7) ∨ owned (base,width+9))
+    (hnorth : ¬owned (base-1,width+8)) (hsouth : ¬owned (base+1,width+8))
+    (hwest : ¬owned (base,width+7)) (heast : ¬owned (base,width+9)) :
+    ¬owned (base,width+8) := by
+  intro hpoint
+  rcases hneighbor hpoint with hn | hs | hw | he
+  · exact hnorth hn
+  · exact hsouth hs
+  · exact hwest hw
+  · exact heast he
+
+theorem complete_cavity_odd_bounds (base bar near far incident : Int)
+    (hbase : base % 2 = 1) (heven : near % 2 = 0)
+    (hnoEven : ¬bar % 2 = 0) (hbarLower : base+far ≤ bar)
+    (hbarUpper : bar ≤ base+incident-2)
+    (hnearLower : bar-base-1 ≤ near) (hnearUpper : near ≤ bar-base) :
+    bar % 2 = 1 ∧ near = bar-base ∧ far ≤ near ∧ near ≤ incident-2 := by
   omega
 
 end SubQuorum.SecondaryTenNorthGapFourPackage

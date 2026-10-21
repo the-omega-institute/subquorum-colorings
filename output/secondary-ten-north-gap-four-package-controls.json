@@ -39,6 +39,8 @@
     },
     "rotor_exclusions": 1440,
     "equal_incident_noncompletion_patterns": 72,
+    "even_phase_forced_four_foreign_neighbors": 11904,
+    "complete_family_phase": "odd_B_charge_minus_one_only",
     "tight_negative_consumer_controls": 768,
     "U_dimensions_bounded_by": 18,
     "all_endpoint_anchors_included": true
@@ -253,6 +255,23 @@
       "refutes_target": false
     },
     "written_all_width_family": true
+  },
+  "third_right_repair": {
+    "parameter_patterns": 512,
+    "widths": [
+      12,
+      14,
+      50,
+      200
+    ],
+    "arbitrary_dimension_test_max": 50,
+    "minimum_reserve_gain": 3,
+    "exact_tile_event_partition": true,
+    "W_neutral": true,
+    "repairs_displayed_external_loss": true,
+    "other_orientation": "OPEN",
+    "arbitrary_additional_sources": "OPEN",
+    "full_allocation": "OPEN"
   },
   "scope": "Finite independent controls of a separately written general consumer dichotomy, exact neutral raw-potential package, and subsequent negative cavity consumer/window. The external-sign obstruction is partial, not complete-model or allocation refutation. No global target credit is claimed."
 }
