@@ -219,7 +219,8 @@ nonnegative in arbitrary complete even-bar inventories.
 `develop/check_even_bar_contact_ledger.py` verifies1006 disjoint source
 pairs,40 deterministic greedy batches and five nested families through n12.
 It compares exact full/event partitions, two-owner tile occupancy, contact
-multigraphs, positive degrees and cycle ranks. The obstruction checks648 U
+multigraphs, positive degrees and cycle ranks, plus2102 retained/new
+partitions for the exact boundary marginal (1a). The obstruction checks648 U
 roles across every symmetry,32 rotor roles, exactly two surviving shapes
 per gate and all four unavoidable collision pairs, plus three controls
 with large outer depths and distant vertical translations of the local gate.

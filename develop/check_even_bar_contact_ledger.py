@@ -61,6 +61,12 @@ def ledger(records):
     components = len({representative(owner) for owner in range(len(records))})
     cycles = len(edges)-len(records)+components
     assert phi_from(records, receipt) == components-cycles
+    for retained in (set(range(0, len(records), 2)), set(range(1, len(records), 2))):
+        old = [record for owner, record in enumerate(records) if owner in retained]
+        old_phi = phi_from(old, inventory(old)) if old else 0
+        incident = sum(first not in retained or second not in retained
+                       for first, second, column in edges)
+        assert phi_from(records, receipt)-old_phi == len(records)-len(retained)-incident
     return dict(sources=len(records), contacts=len(edges), components=components,
                 cycle_rank=cycles, Phi=phi_from(records, receipt))
 
@@ -95,7 +101,8 @@ def contact_controls():
         batches += 1
     nested_results = [ledger(nested(amount)) for amount in (1, 2, 3, 6, 12)]
     assert all(row['Phi'] == 2-row['sources'] for row in nested_results)
-    return dict(disjoint_pairs=pairs, greedy_batches=batches, nested=nested_results)
+    return dict(disjoint_pairs=pairs, greedy_batches=batches,
+                retained_new_partitions=2*(pairs+batches+len(nested_results)), nested=nested_results)
 
 
 def rotor_record(symmetry):
