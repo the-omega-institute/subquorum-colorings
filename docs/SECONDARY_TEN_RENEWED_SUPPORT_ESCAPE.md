@@ -24,13 +24,13 @@ Let R be the standard eight-endpoint rotor of the source catalogue. Adjoin
 the following FULL originals, not just their local endpoints:
 
     Z_i=R,            chart(a_i-5+r,s_i-3+c),
-    L_i=U(6,4,4),     chart(a_i+2-r,s_i+2-c),
+    X_i=U(6,4,4),     chart(a_i+2-r,s_i+2-c),
     H2=H1 union {Z_i:0<=i<n},
-    H3=H2 union {L_i:0<=i<n}.
+    H3=H2 union {X_i:0<=i<n}.
 
 **Zero-gain closure theorem.** These originals are pairwise endpoint-disjoint.
 Every Z_i consumes q_i and has charge0, no new mixed full tile and no new
-directed event. Every L_i consumes r_i, has charge-1 and adds exactly one
+directed event. Every X_i consumes r_i, has charge-1 and adds exactly one
 mixed full tile and three directed events. The increments hold simultaneously:
 
     Phi(H3)=Phi(H2)=Phi(H1)=sum_i(w_i+9)+h-1-n.       (1)
@@ -61,7 +61,7 @@ z=z_(n-1). For ANY even d>=z-2, the FULL original
 
     J=U(w,d,d-6), chart(a+d-2-r,s+c)                    (3)
 
-is endpoint-disjoint from H2 and from all L_i with i<n-1. It consumes the
+is endpoint-disjoint from H2 and from all X_i with i<n-1. It consumes the
 last r, has charge+1, and its EXACT increment relative to their union is
 
     DeltaN=1, DeltaS=0, DeltaF=2, DeltaE=9, DeltaPhi=-4. (4)
@@ -96,31 +96,31 @@ tile-row boundary; the second crosses a tile-column boundary. There is no
 new intratile adjacency and no new mixed full tile. In particular no new
 directed event is being discarded merely because its target became occupied.
 
-The endpoints of L_i have near stem column s_i+1 and far stem column
+The endpoints of X_i have near stem column s_i+1 and far stem column
 s_i-4, between rows a_i-2 and a_i+2, and the two bar rows a_i+1,a_i+2.
 The stems stop above at row a_i-2. They avoid Z and H1. The only new
 mixed full tile is
 
     {a_i-3,a_i-2} x {s_i,s_i+1}.
 
-Its three old cells are in Z_i, and its fourth is r_i in L_i. The exact
+Its three old cells are in Z_i, and its fourth is r_i in X_i. The exact
 three new directed events are
 
-    Z_i:(a_i-3,s_i+1) -> L_i:(a_i-2,s_i+1),
-    Z_i:(a_i-2,s_i)   -> L_i:(a_i-2,s_i+1),
-    L_i:(a_i-2,s_i+1) -> Z_i:(a_i-2,s_i).
+    Z_i:(a_i-3,s_i+1) -> X_i:(a_i-2,s_i+1),
+    Z_i:(a_i-2,s_i)   -> X_i:(a_i-2,s_i+1),
+    X_i:(a_i-2,s_i+1) -> Z_i:(a_i-2,s_i).
 
-The reverse event from r_i to q_i is excluded because q_i is L_i's
+The reverse event from r_i to q_i is excluded because q_i is X_i's
 original axial support. At (a_i-1,s_i+1), the west Z endpoint is an
-original L support, so it supplies no extra event. The far L stem has
+original X support, so it supplies no extra event. The far X stem has
 column s_i-4, at least two columns left of every Z endpoint. Contacts
 with V_i's column s_i+2 cross tile columns. Thus the lists are exhaustive.
-The phase of L gives charge-1; its increment is1+2-3=0.
+The phase of X gives charge-1; its increment is1+2-3=0.
 
 These local partitions persist in the full chain. All preceding B_j
 have minimum column at least x_i=s_i+w_i+14. Preceding P_j^0 have
-minimum column at least s_i+w_i+13. They are separated from Z_i and L_i
-by columns. The root lies still farther right. For j>i, the body of B_j
+minimum column at least s_i+w_i+13. They are separated from Z_i and X_i
+by columns. The root lies still farther right. For j>i, P_j^0 starts at row a_j-8>=a_i+10, and the body of B_j
 starts at row at least a_i+12; its long stem starts no earlier than that
 body's lower row bound. The new endpoints have maximum row a_i+2.
 For new originals at adjacent indices, their row ranges are separated
@@ -192,14 +192,15 @@ in different tile rows. For larger d they are farther separated.
 
 The near stem avoids P^0, whose far terminal is at a-4; its other
 old endpoints in the same tile column belong to Z. The far stem starts
-below the Q/D/L/T0/V bars; Q has columns at most s+11<s+w. All C/E
+below the D/L/T0/V bars. Q has columns at most s+11<s+w; at w=12,
+its last tile column ends at s+11, before the J far column s+12. All C/E
 stems have columns greater than s+w. W has its left bar column at
 s+w+1, so it is adjacent to, and disjoint from, the J far stem.
 All other potential old contacts cross tile boundaries or are separated.
 
 For j<n-1, every B_j has minimum column at least s+w+14;
 P_j^0 has minimum column at least s+w+13; Z_j has minimum column
-at least s+w+10, and L_j at least s+w+8. J's maximum column is s+w.
+at least s+w+10, and X_j at least s+w+8. J's maximum column is s+w.
 These bounds give at least two columns of separation, even when J's long
 legs overlap preceding row ranges. Thus no preceding owner contributes
 to the new full-tile/event sets. There is no following block at the tail.
@@ -210,7 +211,7 @@ The three near-stem events are
     Z:(a-2,s)   -> J:(a-2,s+1),
     J:(a-1,s+1) -> Z:(a-1,s).
 
-The same three-old/one-new tile as in Section2 becomes full. Unlike L,
+The same three-old/one-new tile as in Section2 becomes full. Unlike X,
 J's original side support at r is the west point, so its outgoing
 event there is excluded; the third event is at the next stem endpoint.
 
@@ -220,9 +221,9 @@ The far-stem contacts with W give exactly the events
     J:(a+j,s+w)   -> W:(a+j,s+w+1), j=5,7.
 
 The two reverse events at j=4,6 are excluded by J's ORIGINAL side
-supports. None of the four J targets is a W original support: that W
-bar has an original support one column west only in its first row
-a+2, outside this overlap. The only new full tile in this band is
+supports. Each J target in this band has intrinsic W-row -1, so none belongs
+to W's original-support set. This also holds at row a+2; there is no
+exceptional west original support there. The only new full tile in this band is
 
     {a+5,a+6} x {s+w,s+w+1}.
 
@@ -233,9 +234,6 @@ increment0. Thus1+2*2-9=-4, proving(4) and(5). The t_i blockers from
 Section2 persist, so neither tail family is complete.
 
 ## 5. A simultaneous specified-owner compensation lemma
-
-This section was added after submission of the initial review request; its
-review scope must be tracked separately.
 
 There is a full-original choice for all t_i-consumers that compensates the
 original chain deficit, even with the negative tail. Set
@@ -252,7 +250,7 @@ increment relative to the whole simultaneous union is
 Consequently the exact two joint ledgers are
 
     Phi(H3 union all Y_i)=sum_i(w_i+9)+h-1,
-    Phi(H2 union {L_i:i<n-1} union {J} union all Y_i)
+    Phi(H2 union {X_i:i<n-1} union {J} union all Y_i)
                          =sum_i(w_i+9)+h-5.         (7)
 
 The second has at least one unit beyond the sum of baselines because h>=6.
@@ -300,11 +298,11 @@ columns s_i+w_i+11 and s_i+w_i+10, respectively, to its left. D and Q
 also lie to its left. Thus no local B endpoint shares an intratile edge
 with Y. Z has no intratile adjacency to its tip t: Z's west neighbor
 crosses a tile-column boundary and its south neighbor crosses a tile-row
-boundary. L begins two rows below Y's last endpoint.
+boundary. X begins two rows below Y's last endpoint.
 
 Preceding B_j have columns at least x_i=s_i+w_i+14, which is even;
 Y's maximum column x_i-1 is in the preceding tile column. The root
-also lies beyond that boundary. Preceding P^0/Z/L originals have maximum
+also lies beyond that boundary. Preceding P^0/Z/X originals have maximum
 row at most a_i-16, whereas Y starts at a_i-10. Subsequent originals
 start below Y's last row a_i-4. Adjacent Y bar starts differ by at
 least18, with a gap of at least12 between the previous Y's last endpoint
@@ -340,8 +338,9 @@ that arbitrary left consumers have zero marginal contribution. Only the
 explicit L family has that conclusion.
 
 The global question still needs a common allocation and control of all
-remaining mandatory support consumers. In particular t_i supplies a
-specific next obligation for both families. No finite catalogue substitutes
+remaining mandatory support consumers. Before the specified Y_i are adjoined,
+t_i supplies a specific next obligation for both families; after compensation
+the displayed remaining obligation is u. No finite catalogue substitutes
 for the general arguments above. The submitted11October DMGT manuscript,
 the primary star-forming results and the global5/6 target are unchanged.
 
@@ -368,6 +367,11 @@ pass locally with every individual axiom list inspected, no warnings and no
 sorry/native axioms. The [exact-set receipt](../output/secondary-ten-renewed-support-controls.json)
 and [Lean receipt](../output/secondary-ten-renewed-support-lean-validation.json)
 record their execution scopes. The first written-review task failed during
-typing with infrastructure_retry_exhausted and no mathematical review. A fresh
-self-contained review including Section5 is pending; execution checks do not
-imply its acceptance.
+typing with infrastructure_retry_exhausted and no mathematical review. The
+fresh self-contained written review, INCLUDING Section5, completed ACCEPT.
+Two geometric descriptions are corrected: Q is excluded by tile columns
+and every W target has intrinsic row -1. No hypothesis, formula or event
+list changes. Focused controls check24 Q/J disjoint tile sets, including
+eight width12 boundaries, and120 W targets at intrinsic row -1; the
+[review receipt](../output/secondary-ten-renewed-support-review.json) records
+the accepted ordinary-proof scope separately from execution.

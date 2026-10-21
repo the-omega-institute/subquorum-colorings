@@ -290,6 +290,31 @@ def isometry_controls():
     return controls
 
 
+def audit_boundary_controls():
+    parameters = target_checks = width_twelve_boundaries = 0
+    for origin, offset, width, tail_depth in itertools.product(
+            (-33, 31), (-100, 0), (12, 14, 50), (22, 60)):
+        bases, root, repairs, sites = chain(origin, offset, [width], [24])
+        west = bases[0][5]
+        first = bases[0][0]
+        candidate = south_U(origin, offset, width, tail_depth, tail_depth-6, False)
+        assert max(column//2 for row, column in first[0]) < (offset+width)//2
+        assert min(column for row, column in first[0]) > offset+1
+        assert max(row for row, column in first[0]) < origin+tail_depth-3
+        assert not {(row//2, column//2) for row, column in first[0]} & {
+            (row//2, column//2) for row, column in candidate[0]}
+        for extra in (2, 4, 5, 6, 7):
+            target = origin+extra, offset+width
+            intrinsic_row = target[1]-width-1-offset
+            assert intrinsic_row == -1 and target not in west[1]
+            target_checks += 1
+        width_twelve_boundaries += width == 12
+        parameters += 1
+    return dict(parameter_controls=parameters, W_negative_intrinsic_row_targets=target_checks,
+                Q_J_disjoint_endpoint_tiles=parameters,
+                width_twelve_adjacent_tile_column_boundaries=width_twelve_boundaries)
+
+
 def main():
     receipts = []
     for origin, offset, width, depth, extra in itertools.product(
@@ -303,6 +328,7 @@ def main():
     print(json.dumps(dict(status='PASS', single_block_parameter_controls=len(receipts),
                          roles_and_phases=role_and_charge_controls(),
                          tile_preserving_isometries=isometry_controls(),
+                         accepted_audit_boundary_controls=audit_boundary_controls(),
                          nonuniform_and_long_chains=chains,
                          minimum_example=receipts[0],
                          scope='Exact full-original endpoint, support, matching, physical-tile '
