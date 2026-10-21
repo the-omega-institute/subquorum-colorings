@@ -122,14 +122,21 @@ The later [tight upward transfer](SECONDARY_TEN_TIGHT_ACTIVATION_TRANSFER.md)
 proves that nonreuse for the gap2 subclass under the full actual marked
 chain, with one jointly unused activation and an exact ceiling gain.
 The remaining first-consumer forms are not covered by that result.
+The subsequent [outer-corner transfer](SECONDARY_TEN_CORNER_ACTIVATION_TRANSFER.md)
+proves actual labelled injection and joint nonreuse for the entire positive
+corner branch. The [downward theorem](SECONDARY_TEN_DOWNWARD_DOUBLE_ACTIVATION.md)
+gives two targets when D's far leg is at least6, and the
+[far4 extension](SECONDARY_TEN_FAR_FOUR_ACTIVATION_TRANSFER.md)
+gives one for the remaining downward branch. The latter note also combines
+all four secondary10 classes in one certificate with one shared ceiling.
 
 This is a partial stencil. Its unconsumed original supports may force
 further owners, so it is NOT a counterexample to a theorem about complete
 extensions, the desired compensation inequality or rectangular grids.
-The next task is the support closure of this negative north branch and
-the upward east branch, together with a global injection for the corner
-activation into the one existing inventory. No credit is added to the
-old ledger at this stage.
+The remaining task is the support closure or compensation of the negative
+north branch and the larger-gap upward east branch. The later positive
+branch theorems add only their proved jointly unused targets to the one
+existing inventory; this catalogue alone adds no credit.
 
 ## Verification scope
 

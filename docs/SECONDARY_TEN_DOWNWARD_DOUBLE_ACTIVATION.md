@@ -326,12 +326,17 @@ The secondary10 coverage is therefore:
 |---|---|---|
 | North terminal, width6 | No complete extension | None for this excluded class; no credit |
 | North terminal, width>=8 | Necessary chart; charge1-width | Complete closure or compensation of the width-dependent deficit |
-| Outer corner | Positive owner with one locally activated terminal | Actual labelled injection and joint old-target nonreuse |
+| Outer corner | [Corner theorem](SECONDARY_TEN_CORNER_ACTIVATION_TRANSFER.md): one jointly unused target for all legal independent legs/widths | Complete actual-chain realizability |
 | East down, D far>=6 | This note: first/last joint activations, exact gain1 per selected residual claim | Complete actual-chain realizability and coverage of other classes |
-| East down, D far4 | Necessary first-consumer chart | Continuation, possible turns and global compensation |
+| East down, D far4 | [Far4 theorem](SECONDARY_TEN_FAR_FOUR_ACTIVATION_TRANSFER.md): one jointly unused target; next consumer may turn upward | Further bend compensation and complete actual-chain realizability |
 | East up, gap0 | No complete extension | None for this excluded class; no credit |
 | East up, gap2 | Tight-up theorem: one jointly unused activation, parity-dependent gain | Complete actual-chain realizability |
 | East up, larger gaps | General bar window and local phase restrictions | Negative continuation closure and global nonreuse |
+
+All four compensated secondary10 subclasses share the single certificate
+in [the far4 note, section5](SECONDARY_TEN_FAR_FOUR_ACTIVATION_TRANSFER.md#5-one-certificate-for-all-four-secondary10-compensation-classes).
+Its single-activation classes share one ceiling; the double class gains
+one exact unit per claim. No previously counted surplus is added again.
 
 This is a coverage table of necessary forms and conditional theorems,
 not an assertion that every remaining row is realizable. Secondary
