@@ -204,6 +204,12 @@ such an obstruction for the displayed eight-source pattern and, generally,
 for d=b-2,k>=W-4. A separate [six-source theorem](WIDE_MATCHED_RETURN_OBSTRUCTION.md)
 also excludes the displayed W10,k4 matched seed despite k<=W-6; this prescribed
 motif is not all such configurations. Other matched geometries remain open.
+The subsequent [width-ten pair theorem](MAXIMAL_WIDTH_TEN_CORNER_PAIR.md)
+pays residual maximal W10,k4 claims through existing lower-strip pairs,
+regardless of the successor return identity. Claims already in the joint
+activation assignment are not assigned a second demand label; physical
+pair tiles are counted once. This does not cover all larger W or nonmaximal
+corners.
 Negative downward successors and saturated bands remain unpaid. Submitted
 manuscripts, public main, primary star-forming results and shared CI remain
 unchanged.

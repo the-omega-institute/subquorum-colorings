@@ -182,6 +182,13 @@ The proof asserts no source-count minimality and excludes neither all matched
 f=j+2 returns nor all maximal-width Vcorner configurations. It supplies no
 extra activation or reserve; impossible claims contribute zero.
 
+The later [width-ten pair certificate](MAXIMAL_WIDTH_TEN_CORNER_PAIR.md)
+applies to arbitrary maximal W10 Vcorner occurrences, without the particular
+six-source continuation above. It forces a negative Q and injects the
+Vcorner demand into EXISTING lower-strip capacity, jointly with old H.
+It does not turn this impossible motif into a complete realization or count
+the same strip as new reserve.
+
 Finite role controls PASS: the six fixed sources have 200 distinct endpoints;
 the successive U role catalogues have 1, 7 and then 0/2/0 shapes, with no
 rotor consumers. Both final enclosure cases pass. Widths 6..26 and independent

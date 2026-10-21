@@ -97,7 +97,14 @@ is proved by the independent role and collision argument above, without a
 bound on added source sizes. It is not an extrapolation of finite UNSAT.
 
 Matched f=j+2 configurations with d<=b-4, or maximal d=b-2 but k<=W-6,
-remain unresolved. Impossible claims contribute zero to the demand count;
+are not excluded by this obstruction. The subsequent
+[width-ten pair theorem](MAXIMAL_WIDTH_TEN_CORNER_PAIR.md) gives a different
+resolution when W=10: completeness forces k=4 and a negative return
+Q=U(s,6,4), whose existing lower-strip capacity receives the Vcorner claim
+injectively and jointly with old H claims. This is compensation rather than
+a general noncompletion claim, and does not count the old strip twice.
+Other maximal and nonmaximal configurations remain unresolved.
+Impossible claims contribute zero to the demand count;
 they do not create a compensating reserve or an extra activation receipt.
 
 ## Validation scope

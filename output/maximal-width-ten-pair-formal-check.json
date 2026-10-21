@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date_singapore": "2026-10-21",
+  "machine": "User-authorized local Mac",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "source": "formal/SubQuorum/MaximalWidthTenCornerPair.lean",
+  "method": "Source through lean --stdin and individual #print axioms",
+  "process_session_id": 60173,
+  "exit_code": 0,
+  "memory_free_percentage_before": 39,
+  "real_lean_lake_processes_before": [],
+  "declarations": 16,
+  "axioms_union": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorry_or_native_axioms": false,
+  "prior_runs": "Initial92138 failed one missing positive cross-width hypothesis; corrected34463 passed14 declarations. Final60173 passes16 including automatic coverage corollary.",
+  "scope": "General support/endpoint geometry, boundary, connected unit-walk trapping, span exclusion, missing-corner support exclusions, old-H frame blocker and integer/coverage consequences. Catalogue adaptation, source-extent catalogue, global claim reconstruction and joint injection remain written."
+}
