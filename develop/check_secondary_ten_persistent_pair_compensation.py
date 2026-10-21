@@ -86,10 +86,23 @@ def controls():
         assert phi(records+[next_return, current])-phi(records+[next_return]) == 2
         assert phi(records+[current, next_return])-phi(records+[current]) == 1
         assert phi(records+[current, next_return]) == phi(records+[next_return, current])
+        before, after_return, _ = tile_signature(records, next_return)
+        _, after_rotor, _ = tile_signature(records, current)
+        _, after_both, _ = tile_signature(records+[next_return], current)
+        assert charge(next_return) == -width-9
+        assert len(after_return['full'])-len(before['full']) == width//2+5
+        assert len(after_return['events'])-len(before['events']) == 2*width+19
+        normalized_rotor_events = {(9 if owner == 8 else owner, endpoint, target)
+                                   for owner, endpoint, target in after_rotor['events']}
+        assert after_both['events']-(after_return['events'] | normalized_rotor_events) == {
+            (8, (origin-1, width+12), (origin-1, width+13))}
+        assert after_both['full']-(after_return['full'] | after_rotor['full']) == {
+            ((origin-1)//2, (width+12)//2)}
         order_count += 1
     return dict(U_source_phase_and_exact_set_controls=U_count,
                 rotor_exact_set_controls=rotor_count,
                 joint_insertion_order_controls=order_count,
+                joint_full_tile_and_cross_event_identity_controls=order_count,
                 positive_joint_consumer_zero_increment_controls=positive_obstacles,
                 residual_families_both_covered=True,
                 complete_or_unrestricted_result=False)

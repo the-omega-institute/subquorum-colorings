@@ -20,6 +20,14 @@ def cavity (origin width : Int) (point : Point) : Prop :=
 def cap (origin width breadth height : Int) (point : Point) : Prop :=
   endpoint breadth height (height-8) (point.1-origin-1+height,width+15-point.2)
 
+def leftCap (origin width breadth height far : Int) (point : Point) : Prop :=
+  endpoint breadth height far (point.1-origin-1+height,width+15-point.2)
+
+def leftCapRegion (width oldBreadth breadth height far : Int) : Prop :=
+  (breadth ≤ oldBreadth+2 ∧ 12 ≤ height ∧ far ≤ height-8) ∨
+  (oldBreadth = width+8 ∧ breadth = width+12 ∧ 10 ≤ height ∧ far ≤ height+8) ∨
+  (width+14 ≤ breadth ∧ 10 ≤ height)
+
 def rightU (origin width breadth height far : Int) (point : Point) : Prop :=
   endpoint breadth height far (point.1-origin-2+height,point.2-width-11)
 
@@ -217,6 +225,151 @@ theorem tight_left_disjointness_necessary
     have hwide : capBreadth-2 ≤ breadth := by omega
     have hhit := left_bar_spanning_cap_far_column origin width capBreadth height breadth depth far
       hcapMin hwide hten hbelow
+    exact hdisjoint _ ⟨hhit.1,Or.inr hhit.2⟩
+  have hshortFar : far ≤ depth-10 := by
+    apply Classical.byContradiction
+    intro hnot
+    have hreach : depth-8 ≤ far := by omega
+    have hinside : breadth-1 ≤ oldBreadth := by omega
+    have hhit := left_far_leg_reaching_residual origin width oldBreadth oldFar breadth depth far
+      hbreadth hinside hten hreach
+    exact hdisjoint _ ⟨hhit.1,Or.inl hhit.2⟩
+  omega
+
+theorem all_left_cap_avoids_retained_endpoints
+    (origin width oldBreadth oldFar breadth height far : Int) (point : Point)
+    (hwidth : 12 ≤ width) (hbreadth : 6 ≤ breadth)
+    (hold : oldBreadth = width+8 ∨ oldBreadth = width+10)
+    (hregion : leftCapRegion width oldBreadth breadth height far) :
+    ¬(leftCap origin width breadth height far point ∧
+      (fixed origin width point ∨ firstReturn origin width point ∨
+        residual origin width oldBreadth oldFar point)) := by
+  unfold leftCapRegion at hregion
+  unfold leftCap fixed firstReturn residual cavity endpoint
+  dsimp
+  omega
+
+theorem all_left_cap_disjointness_necessary
+    (origin width oldBreadth oldFar breadth height far : Int)
+    (hwidth : 12 ≤ width) (hbreadth : 6 ≤ breadth)
+    (hheight : 4 ≤ height) (hfar : 4 ≤ far)
+    (hwidthEven : width % 2 = 0) (hbreadthEven : breadth % 2 = 0)
+    (hheightEven : height % 2 = 0)
+    (hold : oldBreadth = width+8 ∨ oldBreadth = width+10)
+    (hdisjoint : ∀ point : Point,
+      ¬(leftCap origin width breadth height far point ∧
+        (fixed origin width point ∨ residual origin width oldBreadth oldFar point))) :
+    leftCapRegion width oldBreadth breadth height far := by
+  have hten : 10 ≤ height := by
+    apply Classical.byContradiction
+    intro hnot
+    have hhit : leftCap origin width breadth height far (origin+2-height,width+11) ∧
+        residual origin width oldBreadth oldFar (origin+2-height,width+11) := by
+      unfold leftCap residual endpoint
+      dsimp
+      omega
+    exact hdisjoint _ ⟨hhit.1,Or.inr hhit.2⟩
+  by_cases hband : breadth ≤ oldBreadth+2
+  · have hbound : far ≤ height-8 := by
+      apply Classical.byContradiction
+      intro hnot
+      have hhit : leftCap origin width breadth height far (origin-6,width+15-breadth) ∧
+          residual origin width oldBreadth oldFar (origin-6,width+15-breadth) := by
+        unfold leftCap residual endpoint
+        dsimp
+        omega
+      exact hdisjoint _ ⟨hhit.1,Or.inr hhit.2⟩
+    exact Or.inl ⟨hband,by omega,hbound⟩
+  · by_cases htip : oldBreadth = width+8 ∧ breadth = width+12
+    · have hbound : far ≤ height+8 := by
+        apply Classical.byContradiction
+        intro hnot
+        have hhit : leftCap origin width breadth height far (origin+10,3) ∧
+            fixed origin width (origin+10,3) := by
+          constructor
+          · unfold leftCap endpoint
+            dsimp
+            omega
+          · unfold fixed
+            apply Or.inl
+            unfold endpoint
+            dsimp
+            omega
+        exact hdisjoint _ ⟨hhit.1,Or.inl hhit.2⟩
+      exact Or.inr (Or.inl ⟨htip.1,htip.2,hten,hbound⟩)
+    · exact Or.inr (Or.inr ⟨by omega,hten⟩)
+
+theorem all_left_cap_blocks_right_consumer
+    (origin width capBreadth height capFar breadth depth far : Int)
+    (hcap : 6 ≤ capBreadth) (hheight : 10 ≤ height)
+    (hbreadth : 6 ≤ breadth) (hdepth : 4 ≤ depth) :
+    ∃ point : Point, rightU origin width breadth depth far point ∧
+      leftCap origin width capBreadth height capFar point := by
+  by_cases hbelow : depth < height
+  · refine ⟨(origin+3-depth,width+14),?_⟩
+    unfold rightU leftCap endpoint
+    dsimp
+    omega
+  · refine ⟨(origin+2-height,width+12),?_⟩
+    unfold rightU leftCap endpoint
+    dsimp
+    omega
+
+theorem all_zero_cap_left_consumer_sufficient
+    (origin width oldBreadth oldFar capBreadth height capFar breadth depth far : Int)
+    (point : Point) (hwidth : 12 ≤ width)
+    (hold : oldBreadth = width+8 ∨ oldBreadth = width+10)
+    (hcapMin : 6 ≤ capBreadth)
+    (hbreadthMin : 6 ≤ breadth) (hbreadthMax : breadth ≤ capBreadth-4)
+    (hdepthMin : 14 ≤ depth) (hdepthMax : depth ≤ height-2)
+    (hfarMax : far ≤ depth-10) :
+    ¬(leftU origin width breadth depth far point ∧
+      (fixed origin width point ∨ firstReturn origin width point ∨
+        residual origin width oldBreadth oldFar point ∨
+        leftCap origin width capBreadth height capFar point)) := by
+  unfold leftU fixed firstReturn residual leftCap cavity endpoint
+  dsimp
+  omega
+
+theorem all_zero_cap_left_consumer_necessary
+    (origin width oldBreadth oldFar capBreadth height capFar breadth depth far : Int)
+    (hwidth : 12 ≤ width) (hold : width+8 ≤ oldBreadth)
+    (hcapMin : 6 ≤ capBreadth) (hcapMax : capBreadth ≤ width+12)
+    (hheight : 10 ≤ height) (hcapFar : height-8 ≤ capFar)
+    (hbreadth : 6 ≤ breadth) (hdepth : 4 ≤ depth) (hfar : 4 ≤ far)
+    (hcapEven : capBreadth % 2 = 0) (hheightEven : height % 2 = 0)
+    (hbreadthEven : breadth % 2 = 0) (hdepthEven : depth % 2 = 0)
+    (hfarEven : far % 2 = 0)
+    (hdisjoint : ∀ point : Point,
+      ¬(leftU origin width breadth depth far point ∧
+        (residual origin width oldBreadth oldFar point ∨
+          leftCap origin width capBreadth height capFar point))) :
+    breadth ≤ capBreadth-4 ∧ 14 ≤ depth ∧ depth ≤ height-2 ∧ far ≤ depth-10 := by
+  have hbelow : depth < height := by
+    apply Classical.byContradiction
+    intro hnot
+    have hhit : leftU origin width breadth depth far (origin+2-height,width+12) ∧
+        leftCap origin width capBreadth height capFar (origin+2-height,width+12) := by
+      unfold leftU leftCap endpoint
+      dsimp
+      omega
+    exact hdisjoint _ ⟨hhit.1,Or.inr hhit.2⟩
+  have hten : 10 ≤ depth := by
+    apply Classical.byContradiction
+    intro hnot
+    have hshort : depth ≤ 8 := by omega
+    have holdMin : 6 ≤ oldBreadth := by omega
+    have hhit := short_left_bar_hits_residual origin width oldBreadth oldFar breadth depth far
+      holdMin hbreadth hdepth hshort
+    exact hdisjoint _ ⟨hhit.1,Or.inl hhit.2⟩
+  have hspan : breadth ≤ capBreadth-4 := by
+    apply Classical.byContradiction
+    intro hnot
+    have hhit : leftU origin width breadth depth far (origin+3-depth,width+15-capBreadth) ∧
+        leftCap origin width capBreadth height capFar (origin+3-depth,width+15-capBreadth) := by
+      unfold leftU leftCap endpoint
+      dsimp
+      omega
     exact hdisjoint _ ⟨hhit.1,Or.inr hhit.2⟩
   have hshortFar : far ≤ depth-10 := by
     apply Classical.byContradiction

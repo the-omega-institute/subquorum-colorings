@@ -38,8 +38,12 @@ Condition on the actual original consumer at t being either:
 
        J(r,c)=(a+1-ell+r,w+13+c); or
 
-2. The reflected standard rotor Z at translation(a+2,w+12), explicitly
-   given in the [three-site rotor note](SECONDARY_TEN_NORTH_DOUBLE_SITE_ROTOR.md).
+2. The reflected standard rotor Z with map
+
+       Z(r,c)=(a+2-r,w+12+c),
+
+   applied to the standard rotor, also given in the
+   [three-site rotor note](SECONDARY_TEN_NORTH_DOUBLE_SITE_ROTOR.md).
 
 In EITHER case the SAME source also consumes e, its endpoints are
 disjoint from A, and the exact insertion gives
@@ -104,7 +108,13 @@ stage; consuming it is allowed and is not counted as another credit.
 ## A useful insertion-order identity
 
 In the smallest first residual branch V=T1=U(w+8,8,4), also retain
-the specific T2=U(w+10,10,4) of the return note. The two originals
+T2=U(w+10,10,4), placed explicitly by
+
+    T2(r,c)=(a-8+r,w+13-c).
+
+Its original charge is -(w+9), and its insertion into A adds
+w/2+5 mixed full tiles and 2w+19 directed events, hence gain0.
+The two originals
 T2 and Z are endpoint-disjoint. The exact conditional increments are:
 
 | Insertion | Exact DeltaPhi |
@@ -116,7 +126,9 @@ T2 and Z are endpoint-disjoint. The exact conditional increments are:
 
 The joint insertion of T2 and Z is2 in either order. The additional
 one-unit interaction is from tile(a-1,w+12): only their joint presence
-fills it. Equivalently the mixed second difference of Phi is1.
+fills it, and they create one additional directed event
+T2:(a-1,w+12)->Z:(a-1,w+13). Its reverse targets Z's original support
+and is excluded. Thus the mixed second difference is2*1-1=1.
 This is an exact finite-set identity, not an additive per-source budget.
 Do not claim both Z's later two-unit receipt and a separate full-tile
 receipt, or presume T2's marginal stays zero after Z has been inserted.
@@ -189,3 +201,10 @@ closure, and arbitrary external sources retain their signed contributions.
 The unrestricted allocation and rectangular-grid triple equality remain OPEN.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
+
+## Subsequent complete joint-role classification
+
+The [joint-consumer compensation lemma](SECONDARY_TEN_JOINT_PAIR_COMPENSATION.md)
+covers every actual joint consumer of e,t, including outer corners and
+all left north-terminal dimensions. Its zero cases use the distinct actual
+consumer at p. Separate consumers and a global bound remain open.

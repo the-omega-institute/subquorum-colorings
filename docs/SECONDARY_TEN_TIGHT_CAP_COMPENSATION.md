@@ -139,3 +139,11 @@ separately; no verdict is presumed. The local Lean file verifies both necessary
 inequalities and sufficient endpoint disjointness in arbitrary dimensions,
 in addition to the narrow collision facts. It does not formalize source-cardinality
 or directed-event counts, the catalogue role argument or the global source model.
+
+## Subsequent generalization
+
+The [all-north-terminal classification](SECONDARY_TEN_ALL_NORTH_TERMINAL_PAIR_CONSUMERS.md)
+removes the internal-width and tight-far-leg restrictions. The
+[joint-consumer lemma](SECONDARY_TEN_JOINT_PAIR_COMPENSATION.md) includes
+all actual joint U/rotor roles at the persistent pair. These are local
+subinventory conclusions; signed exterior control is still required.
