@@ -241,3 +241,17 @@ It includes this theorem and the earlier unreviewed spacing-six corollary.
 The preceding all-width spacing-eight theorem has separately received
 ACCEPT (18509-character exact original-stream/terminal match); that verdict
 is not attributed to this new result.
+
+## Subsequent stronger complete-extension restriction
+
+`TEN_ROW_LOWER_ROTOR_OBSTRUCTION.md` now excludes L from any complete
+extension by a three-original vertical-gate obstruction; B_i is not needed
+for that exclusion. Consequently actual J>=5 at every even width, and
+the selected bound improves to Phi>=4(n-1). The original exhaustive
+endpoint-disjoint candidate list and exact receipt table above remain
+unchanged. Its two-L partial J=4 equality cannot completely extend.
+The new note also proves the nonuniform criterion Phi>=5m-(n-1) and
+an exact partial residual family4-r for twelve-row gaps, distinguishing
+failure of endpoint-only extension monotonicity from the open target.
+These additions were made after review stream71332 was submitted and
+are outside its initial scope.

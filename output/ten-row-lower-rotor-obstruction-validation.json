@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_EXACT_AND_SCOPED_LEAN_OUTSIDE_PENDING_REVIEW_PACKET",
+  "proof": "docs/TEN_ROW_LOWER_ROTOR_OBSTRUCTION.md",
+  "verifier": "develop/check_ten_row_lower_rotor_obstruction.py",
+  "theorem": "Full-even-U/standard-rotor model. THREE retained originals A=outerU(W+2,D,F), C=U(W,4,4)atbarRowa+10, L=lower east-terminal rotorat(a+5,1), evenW>=6,a>=2,D/F>=a+14, cannot completely extend. L originalsupport(a+7,1) is forced vertical-only; every full U whole stem has>=5points and hits retained(a+5,1)or(a+10,1); all4 vertical rotor forms hitwall. Earlier B atrowa is unnecessary. Reflection excludes right L. Actual gap10 joint marginal>=5 ALL evenW, selectedPhi>=4(n-1).",
+  "nonuniform_spacing_corollary": "For any even bar rows with successive gaps>=10, m gaps equal10: select actual both-gate owners only at those gaps, shared spanning source countedonce. ExactPhi=1-n+sumJ >=5m-(n-1), hence nonnegative if5m>=n-1. Same common-old baseline, no owner/tile/event/surplus reuse. Unknown wider-gap and unselected-owner contributions remainOPEN.",
+  "residual_family": "For everyr>=0, barsa and a+10+12j,j=0..r, plusone shared spanning U_W atfirstgap, outerwallscoverAllTips: exact partialPhi=4-r. Firstnegative r5 gives-1, lossunbounded. Refutes arbitrary endpoint-disjoint extension nonnegativity/monotonicity of compensated core, NOT complete-family target; complete extension existence not asserted.",
+  "python": {
+    "session": 40515,
+    "exit_code": 0,
+    "obstruction_cases": 64,
+    "U_roles_excluded": 475136,
+    "rotor_roles_excluded": 1024,
+    "large_width_2000": {"U_roles": 7424, "rotor_roles": 16},
+    "full_immutable_rotor_chart": "Canonical chart(r,c)=(3+r,5-c),H(4,4)->(7,1),T(4,3)->(7,2),T(2,4)->(5,1). Complete endpoint/support/matching equality PASS.",
+    "compatible_pairs_without_L": {"6": 2, "8": 3, "10": 9, "12": 24, "14": 48, "20": 174, "30": 564},
+    "mixed_uniform_batches": 384,
+    "shared_spanning_partial_equality": 64,
+    "nonuniform_cases": 832,
+    "density_criterion_cases": 560,
+    "exact_neutral_nonuniform_cases": 16,
+    "residual_cases": 24,
+    "residual_r_values": [0, 1, 4, 5, 20, 40],
+    "scope": "All sampled orientations/anchors, unbounded-stem structural check per role, all4 vertical rotor records, reflection/even translations, exact uniform/nonuniform whole-source inventories, explicit residual values. Finite controls verify the separate general written proofs."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/TenRowLowerRotorObstruction.lean",
+    "version": "4.33.0",
+    "session": 57168,
+    "exit_code": 0,
+    "explicit_audited_abbrev_def_theorem": 20,
+    "local_theorems": 12,
+    "preflight_memory_free_percent": 45,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "All explicit abbrev/def/theorem declarations audited separately, ordinary propext/Quot.sound only or axiom-free. No warnings/sorry/native.",
+    "scope": "Immutable lower support/endpoint lists; arbitrary whole vertical stem interval collision without dimension upper bound; all4 north/south rotor wall collisions; shared/distinct actual-owner joint lower bound>=5; simultaneous and nonuniform density arithmetic. Full source-role/chart-to-record assembly, exact geometric receipts and complete-extension selection WRITTEN; residual unbounded exact inventory proof WRITTEN."
+  },
+  "review": {
+    "status": "ADDED_AFTER_PENDING_71332_SUBMISSION_NOT_IN_INITIAL_PACKET",
+    "earlier_stream_session": 71332,
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "scope": "Existing review covers preceding spacing10 classification/receipt theorem and spacing6 corollary, not this lower-rotor obstruction, stronger bound, nonuniform criterion or residual family. Keep original stream, no duplicate submission."
+  },
+  "limitations": "No universal source decomposition, complete-extension existence, arbitrary baseline monotonicity, nonnegative unselected actual-source marginal, complete-family sharpness, global5/6 improvement or rectangular-grid triple equality. Partial negative residual refutes only the stated endpoint-only inference."
+}
