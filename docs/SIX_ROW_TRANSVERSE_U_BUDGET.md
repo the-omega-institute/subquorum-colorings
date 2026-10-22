@@ -156,6 +156,41 @@ parallel-source family with unequal legs, not just a fixed six-row example.
 The singleton-completeness argument below additionally uses the particular
 old supports of the six-row pocket and is stated only for that pocket.
 
+## A coefficient-one consequence for complete homogeneous fusions
+
+There is a distinct global consequence WHEN the entire original-source
+family, not merely a pocket subset, consists of these common-height
+transverse U originals. Impose the complete retained-support fusion
+hypotheses of `ALL_PHASE_JOINT_COMPENSATION_SLOTS.md` in an even-by-even
+ambient m-by-n rectangle. An even translation may place the common aligned
+strip and its supports inside the rectangle. Optional selections must obey
+the existing ledger's outside-receiver/no-endpoint-neighbour requirements.
+
+All charges are negative, so that ledger has no positive sources or marked
+positive sides: N_positive=G=0. Its S is a+(h-1)b_odd. With J the mixed
+full-tile count, K the entire labelled-event count and C=2J-K_regular,
+the established complete-fusion inequality gives
+
+    sigma=mn/2-|T|-|M| >= S+C-K_irregular
+                              = S+2J-K = Phi(Y).
+
+The new theorem therefore yields the concrete bound
+
+    |T|+|M| <= mn/2-a-(h/2-1)b_odd.                     (4)
+
+For this specified COMPLETE class, the coefficient of |M| increases from
+5/6 to1, with additional guaranteed slack a+(h/2-1)b_odd. Equivalently,
+the old left-hand expression has a stronger upper bound by
+|M|/6+a+(h/2-1)b_odd. No empirical enumeration is used in this deduction.
+The coefficient sharpness examples for the endpoint-disjoint theorem are
+not asserted to be feasible complete fusions or equality cases of(4).
+
+This global corollary does NOT apply automatically to a transverse-only
+pocket inside the nested old seed: the old seed contains other source
+orientations, and its exterior still contributes. A positive pocket
+inventory cannot replace or pay that exterior budget without a further
+proof. The unrestricted grid problem is unchanged.
+
 ## A complete pocket cannot contain exactly one transverse original
 
 Normalize the aligned pocket to [0,5] x [0,N-1], where N=W-2 is even.
@@ -221,7 +256,7 @@ event classification, general-height extension or completeness assembly.
 Those parts have separate written proofs. The first Lean attempt exposed
 two already simplified True goals and was corrected before the passing run.
 
-Final exact-record verifier8b6ce5 exited0:27782 disjoint pairs,100 greedy
+The pre-corollary exact-record verifier8b6ce5 exited0:27782 disjoint pairs,100 greedy
 simultaneous families,46 opposed-pair/local complete controls,135 arbitrary
 common-height controls through height2000, and1116 actual old-core singleton
 obstructions. All three ordinary-event cardinalities0/1/2 and the full
@@ -231,6 +266,13 @@ contains every theorem/proof and final Lean, canonical definitions and the
 verifier before the extra1116 singleton controls; those extra controls are
 not claimed independently reviewed. Pool preflight17ready/8busy/1attention/
 0queued. No service-worker settings were changed or live request duplicated.
+The coefficient-one corollary(4) was added afterwards by substitution into
+the established complete ledger; it is outside that submitted review's
+scope, and is not claimed covered by its eventual verdict.
+Final augmented verifierc9722e exited0 with the same suite and9 additional
+whole ambient complete fusions. Those directly check every retained-support
+degree, every endpoint's occupied degree, and actual area slack againstPhi.
+No extra Lean run is claimed for the written corollary or those controls.
 
 Finite six-row discovery has additionally found no rotor-containing
 complete state at W8,10,12,14,16,20; W24 andW30 timed out at their specified

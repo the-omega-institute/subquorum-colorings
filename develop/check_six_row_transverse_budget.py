@@ -156,6 +156,30 @@ def singleton_controls():
     return checked
 
 
+def ambient_controls():
+    checked = 0
+    for height, depth in itertools.product((6, 8, 20), (4, 10, 40)):
+        specifications = [(0, 1, depth, depth+2), (2*depth+12, -1, depth+4, depth),
+                          (4*depth+31, 1, depth+2, depth+6)]
+        result = inspect(specifications, height)
+        records = [shift(transverse(*specification, height=height), (2, 2))
+                   for specification in specifications]
+        endpoints = set.union(*(record[0] for record in records))
+        supports = set.union(*(record[1] for record in records))-endpoints
+        occupied = endpoints | supports
+        assert all(len(set(neighbors(point)) & occupied) == 1 for point in supports)
+        assert all(len(set(neighbors(point)) & occupied) >= 3 for point in endpoints)
+        columns = max(column for row, column in occupied)+2
+        columns += columns % 2
+        rows = height+4
+        assert all(0 <= row < rows and 0 <= column < columns for row, column in occupied)
+        matching = sum(len(record[2]) for record in records)
+        slack = rows*columns//2-len(supports)-matching
+        assert slack >= result['Phi'] >= result['aligned']+(height//2-1)*result['unaligned']
+        checked += 1
+    return checked
+
+
 def main():
     candidates = [(bar, direction, near, far)
                   for bar, direction, near, far in itertools.product(
@@ -188,6 +212,7 @@ def main():
                          complete_opposed_pair_controls=complete_controls(),
                          parallel_even_height_controls=parallel_height_controls(),
                          forbidden_singleton_controls=singleton_controls(),
+                         complete_ambient_controls=ambient_controls(),
                          sharp_unaligned_pair=inspect(sharp_unaligned),
                          scope='Exact full-record original charge, mixed-tile and labelled-event sets. '
                          'Unbounded theorem separately written. All new sources are full-height '
