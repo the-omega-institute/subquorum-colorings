@@ -145,8 +145,8 @@ c-colored endpoint x when at least two of its neighbors lie in
     T union N(E).
 
 Frozen endpoints cannot be promoted in any c-colored feasible bundle:
-inductively their two witnesses cannot both be deleted by such a
-bundle. At the fixed point the remaining c-colored endpoints S form
+inductively each of their two witnesses persists and neither can be
+deleted by such a bundle. At the fixed point the remaining c-colored endpoints S form
 a feasible promotion bundle if nonempty. Indeed, deleting N(S) leaves
 as occupied neighbors precisely those in T union N(E), and every
 remaining endpoint has at most one such neighbor.
@@ -172,7 +172,7 @@ For a black x this gives an outgoing condensation edge; for a white x
 it gives an incoming edge.
 
 This proves the assertion for every block and either color, under any
-matching and any valid sequential freezing order. Choosing these two
+matching and any completed valid sequential freezing order. Choosing these two
 entries in each flexible block gives 2f distinct degree-four endpoints,
 so 2f<=j. In particular if every endpoint has occupied degree three,
 there are no flexible blocks and the matching is unique, recovering
@@ -219,5 +219,9 @@ fixed-matching charge-two obstruction (which is not exchange-terminal),
 the exchange-terminal nonunique core, its positive grafts and elbow
 controls, with all eight grid symmetries. A stated small endpoint-box
 domain is also exhausted. Enumeration is validation of these written
-general proofs, not their substitute. This note has not yet received
-a separate Oracle review or Lean formalization.
+general proofs, not their substitute. Independent Oracle review
+f4f435f5-d469-4cba-a870-9ffe8b81e992 accepted the written proof, including
+the per-block entry injection. Its wording clarifications on persistence
+of BOTH witnesses and completed freezing orders are applied above.
+The review did not execute Python or Lean. This note has not received
+Lean formalization.
