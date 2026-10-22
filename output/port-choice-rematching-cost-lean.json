@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/PortalRematchingCost.lean",
+  "preflight": {
+    "memory_free_percent": 45,
+    "real_lean_lake_processes_by_comm_basename": []
+  },
+  "execution": {
+    "session_id": 26911,
+    "final_chunk": "0245ed",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "audited_theorem_count": 7,
+  "axioms": {
+    "all_seven_statements": ["propext", "Quot.sound"],
+    "sorryAx": false,
+    "native_evaluation": false,
+    "new_axioms": false
+  },
+  "scope": "All-length quotient-walk telescoping with zero-displacement auxiliary steps and unit grid steps; three portal-tail cost lower bounds, the two-target minimum and its unbounded parameter specialization. Physical incidence, candidate-gap isolation, symmetric-difference construction, freezing, unique matching and coherent attainment remain written proofs and separate physical checks."
+}
