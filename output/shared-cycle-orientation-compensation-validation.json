@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "totals": {
+    "coherent_orientation_certificates": 3127,
+    "signed_orientation_controls": 38427,
+    "low_cycle_rank_complete_repairs": 1452,
+    "parity_forest_and_rank_controls": 13958,
+    "augmentations_with_distinct_source_and_donor": 3195,
+    "arbitrary_balanced_auxiliary_replacements": 5422,
+    "incoherent_certificate_but_no_residual_alpha": 915,
+    "cyclic_word_family_controls": 8536
+  },
+  "examples": [
+    {
+      "length": 2,
+      "word": "00",
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 2,
+      "minimum_orientation_budget": 0,
+      "full_actual_endpoints": 12
+    },
+    {
+      "length": 2,
+      "word": "01",
+      "alpha": 1,
+      "beta": 1,
+      "mixed": 0,
+      "minimum_orientation_budget": 1,
+      "full_actual_endpoints": 12
+    },
+    {
+      "length": 6,
+      "word": "000111",
+      "alpha": 1,
+      "beta": 1,
+      "mixed": 4,
+      "minimum_orientation_budget": 3,
+      "full_actual_endpoints": 36
+    },
+    {
+      "length": 128,
+      "word": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 128,
+      "minimum_orientation_budget": 0,
+      "full_actual_endpoints": 768
+    },
+    {
+      "length": 128,
+      "word": "01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101",
+      "alpha": 64,
+      "beta": 64,
+      "mixed": 0,
+      "minimum_orientation_budget": 64,
+      "full_actual_endpoints": 768
+    },
+    {
+      "length": 128,
+      "word": "00000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111",
+      "alpha": 1,
+      "beta": 1,
+      "mixed": 126,
+      "minimum_orientation_budget": 64,
+      "full_actual_endpoints": 768
+    }
+  ],
+  "scope": "All perfect auxiliary replacements on reduced models with 1..3 sources, 0..3 cycle pairs and at most ten reduced vertices, with all partitions into original cycles and all cycle colour flips. All binary words length 2..12 and three word families length 13..128. Independent full-tail reconstruction for the word family. No frozen grid embedding, universal geometric existence or finite-to-infinite inference."
+}

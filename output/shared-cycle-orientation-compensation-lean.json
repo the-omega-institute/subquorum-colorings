@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/SharedCycleOrientation.lean",
+  "preflight": {
+    "memory_free_percent": 52,
+    "real_lean_lake_processes_by_comm_basename": []
+  },
+  "execution": {
+    "session_id": 42019,
+    "final_chunk": "594b5a",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "audited_theorems": [
+    "walk_charge",
+    "signed_edge_count",
+    "route_orientation_identity",
+    "alpha_requires_negative_edge",
+    "beta_requires_positive_edge",
+    "finite_alpha_nonreuse_bound",
+    "finite_beta_nonreuse_bound",
+    "coherent_routes_have_no_alpha",
+    "coherent_routes_have_no_beta",
+    "forest_rank_controls_residual_alpha"
+  ],
+  "axioms": {
+    "walk_charge": ["propext"],
+    "other_nine_theorems": ["propext", "Quot.sound"],
+    "sorryAx": false,
+    "native_evaluation": false,
+    "new_axioms": false
+  },
+  "scope": "Arbitrary finite supplied alternating walks and route lists, signed-edge identities and summed budgets; graph realization, component edge disjointness, cycle colourings, forest-error bound and physical grid availability are supplied by written proofs and separate graph checks. Does not formalize those geometric or graph-construction steps."
+}
