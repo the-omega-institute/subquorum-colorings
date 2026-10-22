@@ -54,8 +54,9 @@ In the full packet,
 
     alpha_N=k-r+a, beta_N=b-r+a, mixed_N=g+r-2a.         (3)
 
-In particular if every new N edge crosses the prescribed signs, all r
-selected alpha/beta pairs disappear. Internal mixed relays and closed
+In particular if every new N edge crosses the prescribed signs, the full
+alpha and beta counts each decrease by r. This does not prescribe which
+selected tails become connected. Internal mixed relays and closed
 cycles may be shared by arbitrarily many surgeries as long as the single
 complete N is a matching satisfying the coverage assumptions. No new
 PP free ends or cut debt occur. Original interval identities and all
@@ -177,7 +178,8 @@ edge sets. Finite controls test the written general proof, not replace it.
 
 The local run passes 24,413 general mixed-relay replacements, plus the
 two explicit bad/good controls, with 59,581 signed-colouring controls
-and 24,415 independent full-tail and parity/rank reconstructions. It
+and 24,415 separate full-tail and parity/rank reconstructions using the
+same component and inventory helpers. It
 includes 8,235 coherent certificates and 5,435 low-rank complete repairs.
 The 20,221 replacements whose A union N path components are TP--BP may
 also contain independent alternating-cycle exchanges; no pure-path-only
@@ -185,7 +187,7 @@ classification is inferred. Occurrences of a retained single-M mixed
 path with no N edge are also checked explicitly.
 
 The Lean source proves the endpoint-incidence identity from a supplied
-permutation of vertex occurrences, verifies the opposite-edge actual
+permutation of vertex-sign occurrences, verifies the opposite-edge actual
 matching contribution is zero, and derives the compulsory same-sign
 edge witnesses for alpha and beta components. Graph component existence,
 incidence permutations, disjoint edge identities and geometric availability
@@ -202,5 +204,14 @@ alpha or beta strands, and geometric existence of enough admissible
 replacements. Actual closed-cycle normalization and fixed mixed-relay
 colouring address different parts of that problem. Universal grid
 compensation, the universal 5/6 improvement and triple equality remain open.
+
+Independent source-level review 931b4321 returned ACCEPT of the mixed
+extension, endpoint sign reversal, nonreuse and forest budget, and the
+eight-endpoint obstruction including unique actual matching. The full
+assessment is archived in `output/mixed-relay-orientation-oracle.json`.
+The reporting clarifications above distinguish count cancellation from
+prescribed source--donor pairing and shared-helper reconstructions from
+independently implemented verifiers. The review did not execute Lean or
+Python and does not cover the later paid-terminal marker extension.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
