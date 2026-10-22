@@ -9,13 +9,14 @@ from pathlib import Path
 from check_component_isolated_auxiliary_compensation import inventory
 from check_full_domain_marker_compensation import full_signs
 from check_interval_connector_cycles_and_missing_ports import whole_bands
-from check_joint_port_selection_matching import edge_set, lift
+from check_joint_port_selection_matching import build_graph, edge_set, lift
 from check_mixed_relay_orientation import forest_budget
 from check_native_guard_compensation import force_matching
 from check_port_choice_rematching_cost import candidate_graph
 from check_residual_corridors import direct_check
 from check_terminal_cancellation_and_stranded_demand import (
-    components, direct_family, terminal_data, uniform_certificates,
+    cancel_pairs, components, direct_family, extended_ports, terminal_data,
+    uniform_certificates,
 )
 
 
@@ -65,6 +66,24 @@ def family(width, depth, copies):
     return (2*copies*spacing, 2*depth+20, selected, actual), blocks, routes
 
 
+def component_sizes(vertices, edges):
+    adjacency = {point: set() for point in vertices}
+    for first, second in map(tuple, edges):
+        adjacency[first].add(second)
+        adjacency[second].add(first)
+    remaining, sizes = set(vertices), []
+    while remaining:
+        root = next(iter(remaining))
+        reached, pending = {root}, [root]
+        while pending:
+            added = adjacency[pending.pop()]-reached
+            reached.update(added)
+            pending.extend(added)
+        sizes.append(len(reached))
+        remaining -= reached
+    return sizes
+
+
 def check(width, depth, copies, totals):
     current, blocks, routes = family(width, depth, copies)
     direct_check(*current)
@@ -74,7 +93,7 @@ def check(width, depth, copies, totals):
     uniform_certificates(direct_family(width, 4), width, 4, totals)
     vertices = set().union(*blocks)
     bands = whole_bands(current)
-    original, labels, intervals, _, kinds, pairs, _ = terminal_data(current, bands)
+    original, labels, intervals, interval_owner, kinds, pairs, direct_ports = terminal_data(current, bands)
     assert (original['alpha'], original['beta'], original['gamma']) == (2*copies, 2*copies, 12*copies)
     unmarked_intervals = len(intervals)-original['boundary_budget']
     assert unmarked_intervals == copies*((2*depth+14)*width+24*depth+232)
@@ -96,6 +115,42 @@ def check(width, depth, copies, totals):
         local_resources = [pair for pair in resources if set(pair) <= block]
         assert (len(local_sources), len(local_resources)) == ((0, 2) if index % 2 else (2, 0))
         assert all(not set(pair) & block or set(pair) <= block for pair in relays)
+    access = extended_ports(current, bands, labels, intervals, interval_owner,
+                            kinds, direct_ports, totals)
+    cancellations, payment_endpoints = [], []
+    offset = 2*depth+4
+    for index in range(copies):
+        row = 5+2*index*(width+16)
+        cancellations.extend([((row, 7), (row, 6)), ((row, 5), (row, 4)),
+                              ((row, offset+3), (row, offset+4)),
+                              ((row, offset+5), (row, offset+6))])
+        payment_endpoints.extend([((row, 3), (row//2, 1)),
+                                  ((row, offset+7), (row//2, offset+9))])
+    reduced, after_cancel, _ = cancel_pairs(kinds, pairs, cancellations, totals)
+    assert len(cancellations) == 4*copies
+    assert edge_set(cancellations) <= candidates
+    units = set()
+    paid = set()
+    for endpoint, column in payment_endpoints:
+        assert column in access[endpoint]
+        unit = interval_owner[column]
+        assert unit not in units and intervals[unit]['first'] > 0
+        assert intervals[unit]['last'] < current[1]-1
+        units.add(unit)
+        final_alpha = next(pair for pair in reduced if endpoint in pair)
+        assert all(kinds[point] == 'TP' for point in final_alpha)
+        assert frozenset(final_alpha) not in paid
+        paid.add(frozenset(final_alpha))
+    assert len(units) == len(paid) == after_cancel['TP', 'TP'] == 2*copies
+    assert after_cancel['BP', 'BP'] == 2*copies
+    assert after_cancel['BP', 'TP'] == 8*copies
+    totals['complete_distinct_interval_repairs'] += 1
+    totals['different_original_interval_payments'] += len(units)
+    for selected in range(1, 2*copies, 2):
+        graph_vertices, graph_edges = build_graph(internal, sources, resources, relays, candidates, selected)
+        sizes = component_sizes(graph_vertices, graph_edges)
+        assert sum(size % 2 for size in sizes) >= 2
+        totals['odd_selector_empty_cut_tutte_witnesses'] += 1
     for active in range(copies+1):
         used_routes = routes[:2*active]
         added = [edge for route in used_routes for edge in zip(route[::2], route[1::2])]
@@ -112,6 +167,26 @@ def check(width, depth, copies, totals):
         colours, cycles, _ = full_signs(vertices, current[3], auxiliary, kinds, chosen, payments)
         errors, rank = forest_budget(following, colours, cycles, {'alpha': 0})
         assert errors == rank == 2*active
+        signs = dict(colours)
+        for index in range(active):
+            row = 6+(2*index+1)*(width+16)
+            for column in (7, 2*depth+7):
+                cycle = next(cycle for cycle in cycles if (row, column) in cycle)
+                assert cycle == {(row, column), (row+1, column)}
+                if signs[row, column] != 1:
+                    signs.update({point: -signs[point] for point in cycle})
+        negative = sum(signs[first] == signs[second] == -1 for first, second in following)
+        positive = sum(signs[first] == signs[second] == 1 for first, second in following)
+        assert negative == positive == active
+        for block in blocks:
+            selected_sources = sum(len(set(pair) & chosen) for pair in sources if set(pair) <= block)
+            selected_resources = sum(len(set(pair) & chosen) for pair in resources if set(pair) <= block)
+            local_negative = sum(first in block and signs[first] == signs[second] == -1
+                                 for first, second in following)
+            local_positive = sum(first in block and signs[first] == signs[second] == 1
+                                 for first, second in following)
+            assert selected_sources-selected_resources == 2*(local_negative-local_positive)
+            totals['explicit_signed_block_identities'] += 1
         final = inventory(components(vertices, current[3]+following),
                           {point: kind for point, kind in kinds.items() if point not in chosen})
         assert (final['alpha'], final['beta'], final['mixed']) == (2*copies-active, 2*copies-active, 12*copies)
@@ -159,8 +234,10 @@ def main():
     report = dict(status='PASS', totals=dict(totals), examples=examples,
                   scope='Real feasible frozen uniquely matched rectangular-grid packets with '
                         'all endpoint grid edges and every all-BT gap edge; explicit even-r '
-                        'coverage witnesses, selector lifts, exact sign certificates and positive '
-                        'packet ledgers. General parity exclusion, half-progress lower bound '
+                        'coverage witnesses, selector lifts, actual odd-r empty-set Tutte witnesses, '
+                        'explicit signed block identities and positive packet ledgers; complete '
+                        'repairs by distinct old interval units through two mixed relays per source. '
+                        'General parity exclusion, half-progress lower bound '
                         'and arbitrary mixed activation are written proofs. No general grid '
                         'inequality counterexample and no new Lean validation.')
     arguments.output.parent.mkdir(parents=True, exist_ok=True)

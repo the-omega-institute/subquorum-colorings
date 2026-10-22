@@ -269,12 +269,66 @@ source and beta groups, even with complete mixed-pair activation, is
 insufficient. Equations (3)--(4) expose the geometric capacity obligation;
 they do not settle its sufficiency or the general grid problem.
 
+### A complete interval repair of this same family
+
+The original interval interface gives an explicit positive repair, not just
+the scalar positivity check. In every alpha pair block use these four
+terminal TP--BP links, with that block's row translation understood:
+
+    (5,7)--(5,6),       (5,5)--(5,4),
+    (5,L+3)--(5,L+4),   (5,L+5)--(5,L+6).                (11)
+
+The reflected copy's original upper mixed strands are
+(5,6)--(5,5) and (5,4)--(5,3); the ordinary copy's are
+(5,L+4)--(5,L+5) and (5,L+6)--(5,L+7). Thus each selected upper source
+end continues through exactly two different old mixed strands. Its final
+alpha retains the old lower source end and ends at (5,3) on the left or
+(5,L+7) on the right. The four links are occupied horizontal grid edges,
+and different branches have disjoint terminals and old mixed owners.
+
+The left final tip has the selected cap (5,2) in a BT column and a BB
+column at column1 beyond it; the right tip similarly has selected cap
+(5,L+8) and BB column L+9. These are exactly the existing selected-cap
+access certificates: the cap is in the tip's row and the target column
+is BB. The accessed original units are the singleton BB intervals
+
+    (upper band,column1), (upper band,column L+9).
+
+They are different, contain neither boundary column, and are different
+again in different translated alpha blocks. Both witnessing tips remain
+free of cancellation. Pay each of the 2q final alphas by its specified
+unit. No old beta is consumed; no opened cycle or mixed path supplies a
+credit. After the 4q links, the terminal inventory is
+
+    alpha'=2q, beta'=2q, mixed'=8q,
+
+and every final alpha has a different original interval payment. Hence
+the exact terminal-cancellation/allocation compensation value is 2q,
+the maximum possible. The number of unpaid alphas is zero.
+
+This uses the already proved cancellation and selected-cap access
+interfaces, and gives an all-parameter geometric assignment. It does not
+claim physical auxiliary coverage of the payment tips: those tips remain
+free and witness interval payments. If the intervals are instead represented
+by formal beta groups, their original units must be removed from the old
+ledger before applying the accounting selector construction. Either view
+changes the beta-only coverage problem of Sections3--4, so there is no
+contradiction with its parity holes or unavoidable same-sign error.
+
+This positive repair was added after the parity-hole review was dispatched.
+It has the direct argument above and finite checks; that pending review
+does not cover this additional subsection.
+
 ## 6. Reproducibility and scope
 
 The checker passes 36 complete feasible/frozen/unique-matching families,
 108 explicit even-size replacement witnesses with selector lifts and exact
 forest error certificates, 144 independent even-vertex blocks and 720 full
 candidate portal edges. It separately checks 4706 abstract block selections.
+Additional controls construct 72 actual odd-r selector graphs and verify
+their empty-set Tutte witnesses, 480 exact signed block identities, and
+36 complete interval repairs using 144 different original payments over
+288 terminal links. No old beta is consumed in those interval repairs.
 Odd-size impossibility, arbitrary-mixed-activation robustness and the
 all-size lower bounds follow from the written proofs, not exhaustive
 enumeration of physical replacements.
