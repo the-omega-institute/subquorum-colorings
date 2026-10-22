@@ -269,7 +269,14 @@ remain written, whereas the arbitrary connected-walk and physical-tile
 confinement lemmas themselves are formalized.
 
 A distinct follow-up containing this complete note, full-record verifier
-and Lean source has been submitted in conversation conv_e18bcaa504addda4,
-original stream73515. Pool preflight:19 ready,6 busy,1 needs_attention,
-no queued tasks. The original request remains live, without a verdict;
-the predecessor's ACCEPT is not used as acceptance of this follow-up.
+and Lean source completed ACCEPT as taskf5f62488-ec57-4023-826f-0a1a3e1bbfe5,
+conversation conv_e18bcaa504addda4. Original73515 exited0/DONE with19028
+response characters exactly matching the terminal API, observed gpt_6/pro.
+The fresh audit confirms all-source confinement, tile/exterior separation,
+inherited support locality, exact common-baseline set partitions, complete
+R/Z receipts, actual N catalogue, W8 nonextension and simultaneous repair.
+It requests no mathematical correction and reports fresh canonical-record
+set computations plus a heterogeneous partition control. It did not rerun
+Lean. See `output/sealed-chamber-negative-repair-review-terminal.json`.
+The later `TEN_ROW_COMPLETE_CHAMBER_CLASSIFICATION.md` is outside this
+review's scope, and no arbitrary chamber or exterior sign is inferred.
