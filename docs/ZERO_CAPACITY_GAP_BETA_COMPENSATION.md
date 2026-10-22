@@ -280,7 +280,7 @@ paths of M union N satisfy
     S_J-B=|I|+beta_N-alpha_N.                            (9)
 
 In particular alpha_N=0 implies S_J>=B. More generally, an injective
-allocation of original interval units to every remaining alpha also
+allocation of original unmarked interval units I to every remaining alpha also
 implies that bound. The new auxiliary edges need declared geometric
 witnesses; no assertion that such N exists in every frozen grid is made.
 
@@ -347,8 +347,9 @@ The debt interpretation agrees. Opening the PP cycle and cutting the
 adjacent beta path first creates two units of apparent signed credit.
 The corridor TP--BP join preserves signed charge. The two subsequent
 BP--BP reconnections each remove one unit, repaying both cut units.
-The complete replacement has net debt zero. Keeping the opening while
-omitting either repayment would give an incorrect ledger.
+The complete replacement has net debt zero. Omitting either repayment
+leaves one unit of signed debt, which must still be subtracted from the
+final ledger.
 
 ## 6. Validation and remaining question
 
@@ -403,7 +404,11 @@ opening their auxiliary edges. The first combined Oracle submission includes
 Sections 1--3 and the preceding endpoint-free gap theorem. The reflected
 variant and PP-cut correction in Section 4, the auxiliary rematching
 lemma/repair in Section 5, and the nine Lean statements were developed
-after that submission and are outside that review input. The general grid inequality,
+after that submission. Their separate follow-up review 882e293b completed
+with ACCEPT; its full source-level assessment is archived in
+output/pp-auxiliary-rematching-oracle.json. It did not independently execute
+the checker or Lean. The subsequent component-isolated simultaneous
+compensation theorem is outside both review inputs. The general grid inequality,
 universal 5/6 improvement and triple equality remain open. No new Lean
 verification of the geometric construction is claimed.
 
