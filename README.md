@@ -9,8 +9,9 @@ COMPLETE source/representative-ledger domain. Twelve scoped Lean theorems and
 three definitions pass15individual axiom audits. Exact checks cover864complete
 images,152fired corner occurrences and151875conditional budgets; complete
 cost-fifteen bad cases occur ZERO times, so those branches rely on the general
-written proof. Independent review13e74748 is running; it also receives the
-previous tight-clearance supplement. No arbitrary-grid theorem is claimed.
+written proof. Independent review13e74748 ACCEPTS this theorem and the
+previous tight-clearance supplement under enumerated established dependencies.
+No arbitrary-grid theorem is claimed.
 
 New [cost-fourteen compensation theorem](docs/COST_FOURTEEN_GEOMETRY_AND_37_39.md):
 U(8,6,8) forces a protected pair tile; an uncompensated U(8,4,10) forces a
@@ -26,7 +27,7 @@ the enumerated dependencies, with the same-tile gate bridge explicit. The earlie
 Section7 gives a later arbitrary-height tight-terminal pair lemma, strengthening
 the shared reserve to2R>=2z+s+2t+p and expanding the26/27 actual-double class;
 three more Lean lemmas and1408local masks pass. This supplemental extension is
-OUTSIDE that completed review; it is included in the new39/41 review.
+OUTSIDE that completed review; the later39/41 review independently ACCEPTS it.
 
 New general complete-source coefficient:
 [the low-cost double obstruction](docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md)

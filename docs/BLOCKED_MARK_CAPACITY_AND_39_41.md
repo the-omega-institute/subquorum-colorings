@@ -238,6 +238,10 @@ The blocked-slot constraint (3) does not spend an H resource. Its event may
 already be included in R's exact original ledger; we do not add it to R.
 We use only its logically independent exclusion of that endpoint from the
 mark capacity. Matching sizes are likewise constraints, not a second reserve.
+In particular, a fired event in a chosen H tile never produces a second
+allocation of that tile: original pair reconstruction still assigns each
+physical H slot at most once. The blocked endpoint is used only to exclude
+a mark assignment; no extra H credit or disjoint reserve pool is asserted.
 
 ## 9. Close the universal counting inequality
 
@@ -292,7 +296,11 @@ dimension triples,151875conditional budgets and1224anchored roles from102
 incoming dimensions. Complete new cost15 doubles, bad sources and newly
 covered width10 doubles each occur ZERO times; partial role/event-premise
 checks exercise the new geometries but do not assert complete realizability.
-Independent review13e74748-d920-447c-bbc0-58111351c318 is running on original
-stream87569 in conv_bebdfd886f431153, including the earlier tight-clearance
-supplement. This new theorem is not yet independently accepted. See
-output/blocked-mark-39-41-validation.json for exact scope and handles.
+Independent review13e74748-d920-447c-bbc0-58111351c318 completed ACCEPT
+under the enumerated established dependencies on original stream87569 in
+conv_bebdfd886f431153, including the earlier tight-clearance supplement.
+The18479-character response, original DONE stream, task and session agree
+exactly, as does the original request prompt and session; actualgpt6/pro.
+The reviewer did not execute code or Lean. Its reminder about geometric H
+allocation versus blocked mark endpoints is explicit above. See
+output/blocked-mark-39-41-review-terminal.json and the validation receipt.

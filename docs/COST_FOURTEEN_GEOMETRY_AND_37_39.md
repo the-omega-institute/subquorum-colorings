@@ -371,5 +371,7 @@ Here q=0 allows every actual double whose dimensions belong to C* or to any
 of the four cost-fourteen shapes; one-mark and unmarked positive sources remain
 unrestricted. The new source TightTerminalWitness.lean checks the row identity,
 stronger margin and universal26/27 arithmetic. The geometric witness injection
-and ledger adapters remain written. This extension has no independent review
-yet and does not prove coefficient one for arbitrary source fusions or grids.
+and ledger adapters remain written. This extension was independently checked
+and ACCEPTED in later review13e74748 under the enumerated source/dependency
+assumptions; see output/blocked-mark-39-41-review-terminal.json. It does not
+prove coefficient one for arbitrary source fusions or grids.

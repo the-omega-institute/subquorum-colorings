@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "GENERAL_WRITTEN_SOURCE_MODEL_THEOREM_SCOPED_LEAN_PASS_INDEPENDENT_REVIEW_RUNNING",
+  "status": "GENERAL_WRITTEN_SOURCE_MODEL_THEOREM_SCOPED_LEAN_PASS_INDEPENDENT_ACCEPT_UNDER_ENUMERATED_DEPENDENCIES",
   "note": "docs/BLOCKED_MARK_CAPACITY_AND_39_41.md",
   "claims": {
     "capacity": "G+K_A<=2B01+2B10+4B11. Fired original phase11 upper corners are excluded from mark slots, not added to H reserve.",
@@ -62,11 +62,19 @@
     "task_id": "13e74748-d920-447c-bbc0-58111351c318",
     "conversation_id": "conv_bebdfd886f431153",
     "original_stream_session": 87569,
-    "status": "DISPATCHED_WAITING_RESPONSE",
+    "status": "COMPLETED_ACCEPT_UNDER_ENUMERATED_ESTABLISHED_DEPENDENCIES",
+    "receipt": "output/blocked-mark-39-41-review-terminal.json",
+    "response_chars": 18479,
+    "request_prompt_matches_session": true,
+    "response_matches_original_stream_and_task_and_session": true,
+    "stream_done": true,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "reviewer_executed_code_or_lean": false,
     "request": "output/blocked-mark-39-41-review-request.json",
     "stream": "output/blocked-mark-39-41-review-stream.sse",
     "scope": "Full new mathematical note, source/mark dependencies, initial scalar Lean and prior tight-clearance Section7. Final dimension Lean and executed physical checker were not supplied as executed evidence.",
-    "terminal_exact_prompt_and_response_audit": "PENDING. Task handle recovered from pool worker and confirmed as same conversation/followup with matching dispatch time; do not claim terminal acceptance before exact original-prompt/session and SSE/task/session comparison."
+    "terminal_exact_prompt_and_response_audit": "PASS. Exact original request prompt equals session turn; original DONE SSE answer equals task and session response, with task/conversation IDs matched."
   },
   "previous_37_39_review": "output/cost-fourteen-37-39-review-terminal.json:ACCEPT Sections1--6 under enumerated established dependencies; later tight-clearance Section7 outside that input.",
   "open": ["arbitrary-grid source/representative bridge", "sharp exterior constant", "cost16 residual geometry", "complete physical fixtures for new cost15 bad types"],
