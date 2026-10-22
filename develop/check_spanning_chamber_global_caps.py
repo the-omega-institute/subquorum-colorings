@@ -77,17 +77,28 @@ def negative_marginal_controls():
                               for specification in horizontals]
         before = core+vertical_records
         after = before+horizontal_records
-        before_value = phi_from(before, inventory(before))
+        before_value = verify_whole(before)
         after_value = verify_whole(after)
+        before_endpoints = set.union(*(record[0] for record in before))
+        before_supports = set.union(*(record[1] for record in before))-before_endpoints
+        expected_inside = {(row+4, column+2+index*(breadth+34))
+                           for index in range(amount) for row in (1, 4)
+                           for column in (3, 8, 11, 13, breadth+20, breadth+25,
+                                          breadth+28, breadth+30)}
+        pocket_supports = {point for point in before_supports
+                           if 4 <= point[0] <= 9 and 2 <= point[1] < width}
+        assert pocket_supports == expected_inside
         assert before_value == 9+16*amount
         assert after_value == 9+(breadth+9)*amount
         assert after_value-before_value == amount*(breadth-7)
         if breadth == 6 and amount == 1 and not upward:
             witness = dict(width=width, old_sources=len(core), added_V=len(verticals),
                            added_H=len(horizontals), before_Phi=before_value,
-                           after_Phi=after_value, all_after_supports_degree_one=True)
+                           after_Phi=after_value, all_before_supports_degree_one=True,
+                           all_after_supports_degree_one=True)
         checked += 1
-    return dict(whole_complete_families=checked, sharp_complete_witness=witness)
+    return dict(whole_complete_families=checked, both_complete_families=checked,
+                exact_before_support_lists=checked, sharp_complete_witness=witness)
 
 
 def sharp_pocket_controls():
@@ -113,7 +124,9 @@ def main():
                          scope='All original retained supports checked globally, not only a pocket; '
                          'endpoint degrees and disjoint matching coverage checked, with even ambient '
                          'embedding and exact full inventory. Separate all-parameter cap/gluing proof '
-                         'does not rely on finite enumeration. Before deleting H is not asserted complete.'), indent=2))
+                         'does not rely on finite enumeration. Both BEFORE and AFTER are verified '
+                         'complete for every negative-marginal control; the exact BEFORE pocket '
+                         'support list is checked separately.'), indent=2))
 
 
 if __name__ == '__main__':

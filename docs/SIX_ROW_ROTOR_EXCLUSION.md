@@ -312,3 +312,10 @@ Exact Python own-neighbour checks and three additional local Lean lemmas
 have passed; the final Lean file has14 theorems and16 individual axiom
 audits, no warnings/errors/sorry/native. The corrected text is submitted
 for a separate follow-up verdict; the original REVISE is retained.
+
+Follow-up task df617349-a30d-4324-8c51-554d1a60f00e returned ACCEPT
+on22October. It independently accepts the corrected four-case table,
+direct singleton parity argument, complete boundary-owner classification
+and whole-pocket budget in the explicit full-even-U/standard-rotor model.
+It did not execute Python or Lean. Its terminal response is archived in
+`output/six-row-rotor-exclusion-followup-review-terminal.json`.

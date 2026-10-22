@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_WRITTEN_GENERAL_EXCLUSION_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_PENDING",
+  "status": "PASS_WRITTEN_GENERAL_EXCLUSION_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_ACCEPT",
   "proof": "docs/SIX_ROW_ROTOR_EXCLUSION.md",
   "verifier": "develop/check_six_row_rotor_exclusion.py",
   "controls": "output/six-row-rotor-exclusion-controls.json",
@@ -15,7 +15,12 @@
     "full_record_reflections": 2,
     "boundary_anchor_roles": 6,
     "lower_upper_support_roles": 6,
-    "lower_survivors": [[false, 2]],
+    "lower_survivors": [
+      [
+        false,
+        2
+      ]
+    ],
     "middle_corner_roles": 8,
     "closed_top_gap_pairs": 142,
     "forbidden_right_tip_controls": 16,
@@ -39,7 +44,7 @@
     "initial_attempt": "Boundary tactic heartbeat timeout and unsimplified Boolean goal in lower classification; explicit top=0/corner cases and goal simplification fixed before final clean passing run. Failed run is not validation evidence."
   },
   "review": {
-    "status": "COMPLETED_REVISE_CORRECTED_FOLLOWUP_PENDING",
+    "status": "COMPLETED_REVISE_CORRECTED_FOLLOWUP_ACCEPT",
     "task_id": "0c67255e-f5fe-46ec-bac6-4dfe871c3feb",
     "conversation_id": "conv_ac836c5b3d584878",
     "original_stream_session": 63963,
@@ -50,21 +55,35 @@
     "stream_terminal_exact_match": true,
     "required_revision": "Middle own rotor neighbour is row2 for A/right and B/left, not always row1. Corrected four-case table; Python exact own-neighbour checks and new local Lean lemma added. Recommended direct single-even-V parity proof replaces stronger old-core singleton import. General theorem unchanged; followup required before ACCEPT.",
     "followup": {
-      "status": "DISPATCHED_ORIGINAL_STREAM_LIVE",
+      "status": "COMPLETED_ACCEPT",
       "task_id": "df617349-a30d-4324-8c51-554d1a60f00e",
       "conversation_id": "conv_ac836c5b3d584878",
       "original_stream_session": 37649,
       "request": "output/six-row-rotor-exclusion-followup-request.json",
       "stream": "output/six-row-rotor-exclusion-followup-stream.sse",
       "original_prompt_match_verified": true,
-      "pool_preflight": {"ready": 22, "busy": 3, "needs_attention": 1, "queued": 0},
-      "scope": "Corrected4case neighbour table, direct even-singleton corollary, final14scopedLean/16audits and exact own-neighbour controls. Separate verdict pending; original REVISE retained."
+      "pool_preflight": {
+        "ready": 22,
+        "busy": 3,
+        "needs_attention": 1,
+        "queued": 0
+      },
+      "scope": "Corrected written proof and whole-pocket consequence ACCEPT within explicit source model. Reviewer did not execute Python or Lean. Original REVISE retained.",
+      "terminal": "output/six-row-rotor-exclusion-followup-review-terminal.json",
+      "response_chars": 9937,
+      "observed_model": "gpt_6/pro",
+      "stream_terminal_exact_match": true
     },
     "request": "output/six-row-rotor-exclusion-review-request.json",
     "stream": "output/six-row-rotor-exclusion-review-stream.sse",
     "original_prompt_match_verified": true,
     "post_submission_controls": "Added exhaustive8image/two-reflection FULL endpoint/support/matching checks and reran final verifier1003be. Mathematical proof unchanged; no reviewer execution of these additional controls is presumed.",
-    "pool_preflight": {"ready": 23, "busy": 2, "needs_attention": 1, "queued": 0},
+    "pool_preflight": {
+      "ready": 23,
+      "busy": 2,
+      "needs_attention": 1,
+      "queued": 0
+    },
     "scope": "New no-rotor theorem and unconditional-within-model whole-pocket consequence; not covered by prior all-phase audit. Reviewer code execution is not presumed."
   },
   "limitations": "Explicit full-U/rotor source decomposition remains assumed. Other wider-gate/chamber branches, exterior sign, unrestricted global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged. No Mail action."

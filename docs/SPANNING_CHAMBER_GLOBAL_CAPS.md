@@ -152,7 +152,8 @@ Summing against the single old baseline gives
     -g+(W+1)d+5(g-d)+5=4g+(W-4)d+5.
 
 Every pocket begins at even row/column and ends at odd row/column, so
-its tiles are entirely inside it and disjoint from the old core. The
+its tiles are entirely inside it and disjoint from old-core endpoint
+footprints, although inherited old supports can lie inside the pocket. The
 same established inventory separation adds exactly its phi_i. There is
 no event or full mixed tile shared by pockets, chambers or the cap.
 This proves (1),(2), including simultaneous nonreuse.
@@ -163,7 +164,7 @@ Use g=1, select U_0 and the bottom cap, and put k blocks of the odd-H
 family from `SIX_ROW_ALL_PHASE_HORIZONTAL_BUDGET.md` in P_0. For any
 even B>=6 set W=k(B+34)+2. The local AFTER state has k H and6k V, with
 Phi=k(B+9); the local V-only BEFORE inventory is16k. The gluing theorem
-proves that the entire AFTER fusion is now complete, with
+proves that the entire BEFORE and AFTER fusions are complete, with
 
     Phi_before=9+16k,
     Phi_after=9+k(B+9),
@@ -171,10 +172,43 @@ proves that the entire AFTER fusion is now complete, with
 
 At B=6 this is25 to24 for k=1, and marginal-k for arbitrary k. This
 strengthens the earlier locally complete obstruction to an explicit
-whole finite retained-support realization. The BEFORE fusion is NOT
-asserted complete. The example refutes nonnegative H marginal when
-the AFTER configuration is complete; it does not refute a claim that
-requires BOTH before and after to be complete, nor the target inequality.
+whole finite retained-support realization. The example refutes nonnegative
+H marginal even when BOTH before and after are complete. It does not
+refute the target inequality, since both displayed total budgets are
+positive. No general completeness-preserving deletion principle is used.
+
+Here is a direct all-parameter completeness proof for BEFORE. Normalize
+one block to P=[0,5] x [0,N-1], N=B+34. Its six V specifications
+(bar,direction,bottom depth,top depth) are
+
+    (0,+1,4,4), (5,+1,4,4), (15,-1,6,6),
+    (B+17,+1,4,4), (B+22,+1,4,4), (B+32,-1,6,6).
+
+Their endpoint union on each extreme row0,5 is
+
+    [0,16] union [B+17,B+33].
+
+The interior-row endpoints occur only in the two-column bars. The
+immutable support lists leave exactly the following V supports inside P:
+
+    {1,4} x {3,8,11,13,B+20,B+25,B+28,B+30}.            (3)
+
+Every other V support either lies on the occupied exterior boundary or
+is consumed by a neighbouring bar or facing stem. The inherited old
+supports {1,4} x {0,N-1} are consumed by the extreme bars. Each support
+in (3) has exactly its endpoint neighbour on row0 or5; no horizontal
+neighbour is an endpoint or a retained support. The two support rows
+are separated by3. Thus the V-only state is locally complete.
+
+The H projection [17,B+16] contains none of these retained supports or
+inherited old supports. Its two additional retained supports lie at
+(4,18),(4,B+15) for H4, or their row reflections for H1. Each has only
+its own side-leg neighbour, so AFTER is locally complete as well.
+At a block interface N is even: no physical tile crosses the interface,
+and the nearest retained support columns from different blocks differ
+by7. The two complete local states therefore juxtapose for every k>=1.
+Applying the gluing theorem separately to each state proves the claimed
+whole completeness of both configurations, with no deletion inference.
 
 The cap also realizes the two-V sharp nonempty pocket states within a
 whole complete finite fusion. Therefore those local sharpness statements
@@ -191,6 +225,18 @@ realized negative-H families. The preceding coordinate and locality proof
 establishes the all-parameter theorem independently of finite controls.
 No new Lean theorem is claimed for this gluing result. Prior local Lean
 scopes do not certify its complete source-to-ambient assembly.
+
+Initial independent review task954ec124-3bdf-47a5-b087-dd0c9aa4e473
+returned REVISE: it accepted the cap/gluing proof and inventory, but
+found that the explicit BEFORE is complete too, contrary to the original
+categorical scope exclusion. The direct support proof (3) and both-state
+whole checks above implement the stronger correction. The final local
+run passes170 capped cores,18 both-complete negative-marginal families
+with exact BEFORE support lists, and12 sharp pocket embeddings.
+Follow-up task4248a536-93ef-48dd-bde7-613344d1ee0e in the same review
+conversation is pending. The original REVISE is retained in
+`output/spanning-chamber-global-cap-review-terminal.json`; it is not
+recorded as a final ACCEPT of the corrected note.
 
 This construction produces a positive exterior increment5. It does NOT
 bound the exterior increment of an arbitrary complete extension from
