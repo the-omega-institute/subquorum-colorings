@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [blocked-mark capacity theorem](docs/BLOCKED_MARK_CAPACITY_AND_39_41.md):
+forced original corner events exclude mark slots instead of creating another
+reserve pool. A terminal-to-corner injection prevents reuse across the three
+residual types, including occupied adjacent bands. Together with the complete
+cost-fifteen classification this gives coefficient39/41 on the SAME specified
+COMPLETE source/representative-ledger domain. Twelve scoped Lean theorems and
+three definitions pass15individual axiom audits. Exact checks cover864complete
+images,152fired corner occurrences and151875conditional budgets; complete
+cost-fifteen bad cases occur ZERO times, so those branches rely on the general
+written proof. Independent review13e74748 is running; it also receives the
+previous tight-clearance supplement. No arbitrary-grid theorem is claimed.
+
 New [cost-fourteen compensation theorem](docs/COST_FOURTEEN_GEOMETRY_AND_37_39.md):
 U(8,6,8) forces a protected pair tile; an uncompensated U(8,4,10) forces a
 distinct original negative height-eight leg. Their shared physical injection
@@ -8,12 +20,13 @@ source model under the existing representative ledger. Nine new geometry
 Lean lemmas complement the six previously checked counting lemmas. Exact
 controls allocate256actual defect slots in832complete images, with ZERO new
 cost-fourteen double occurrences; those branches rely on the written
-all-parameter proof. New independent review is pending. The earlier
+all-parameter proof. Independent reviewacdb2fae ACCEPTS Sections1--6 under
+the enumerated dependencies, with the same-tile gate bridge explicit. The earlier
 [conditional reduction](docs/COST_FOURTEEN_COMPENSATION_REDUCTION.md) is preserved.
 Section7 gives a later arbitrary-height tight-terminal pair lemma, strengthening
 the shared reserve to2R>=2z+s+2t+p and expanding the26/27 actual-double class;
 three more Lean lemmas and1408local masks pass. This supplemental extension is
-OUTSIDE the current independent review input.
+OUTSIDE that completed review; it is included in the new39/41 review.
 
 New general complete-source coefficient:
 [the low-cost double obstruction](docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md)

@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "WRITTEN_GENERAL_37_39_PROOF_SCOPED_CHECKS_PASS_REVIEW_RUNNING",
+  "status": "WRITTEN_GENERAL_37_39_PROOF_SCOPED_CHECKS_PASS_INDEPENDENT_ACCEPT_SECTIONS_1_TO_6",
   "note": "docs/COST_FOURTEEN_GEOMETRY_AND_37_39.md",
   "claims": {
     "Y": "U(8,6,8) and reflection, zero activations and both gates occupied, force the common inverted U(6,4,4) and one protected original pair tile.",
@@ -61,7 +61,15 @@
     "original_stream_session": 38528,
     "request": "output/cost-fourteen-37-39-review-request.json",
     "stream": "output/cost-fourteen-37-39-review-stream.sse",
-    "status": "DISPATCHED_WAITING_RESPONSE",
+    "status": "COMPLETED_ACCEPT_UNDER_ENUMERATED_DEPENDENCIES",
+    "receipt": "output/cost-fourteen-37-39-review-terminal.json",
+    "response_chars": 14630,
+    "request_prompt_matches_session": true,
+    "response_matches_original_stream_and_task_and_session": true,
+    "stream_done": true,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "same_tile_bridge": "Gate(2,2) and original selected corner(3,2) lie in the same normalized donor tile; reflected sides and whole-tile isometries preserve this fact.",
     "created_after_prior_review_terminal": true,
     "scope": "New full written geometry, joint nonreuse and long-leg matching injection. Later physical checker not supplied as executed evidence."
   },

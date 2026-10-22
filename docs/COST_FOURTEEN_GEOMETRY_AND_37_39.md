@@ -52,8 +52,8 @@ where Mminus counts original negative U matching edges ONCE. Consequently
 This improves the previously established 35/37 coefficient by 4|M|/1443,
 and 5/6 by 3|M|/26, strictly when |M|>0, on the SAME admitted complete-source
 domain. No geometric sharpness, arbitrary-grid improvement or coefficient-one
-theorem is asserted. Independent review of this new theorem is separate
-from the accepted 35/37 theorem and will be recorded below.
+theorem is asserted. Independent review of Sections1--6 accepts this theorem
+under the enumerated established dependencies; its receipt is recorded below.
 
 ## 1. Common normalization and exact gate roles
 
@@ -203,6 +203,13 @@ as that canonical side, irrespective of which endpoint the usual marked-side
 assignment selected as its witness. We use that gate endpoint, not the
 different consumed support that characterizes marking.
 
+The same-tile clause follows directly from the normalized original donor:
+the gate is (2,2), the original selected corner is (3,2), and both lie in
+{2,3}x{2,3}. The right side has the corresponding reflected tile. Every
+allowed tiling-preserving isometry carries the whole tile to one physical
+tile. Thus the existing donor-tile injection applies to the gate endpoint
+even when the mark assignment chooses another endpoint of that tile.
+
 The global canonical donor-tile theorem says different source/side labels
 have different physical donor tiles. Since an endpoint lies in exactly one
 tile of the fixed partition, the chosen gate endpoints are distinct. Each
@@ -291,10 +298,14 @@ two long legs on one original. The complete fixtures have ZERO cost-fourteen
 actual doubles and ZERO special X sources; the new branches rest on the
 written universal proofs and local masks, not claimed complete realizations.
 
-Independent reviewacdb2fae-c8c7-4eee-8b53-9a3b9d2c5031 is dispatched in
-conv_bebdfd886f431153 on original stream38528. It was submitted only AFTER
-the preceding35/37 review terminated ACCEPT. The new theorem is not yet
-independently accepted. See output/cost-fourteen-37-39-validation.json.
+Independent reviewacdb2fae-c8c7-4eee-8b53-9a3b9d2c5031 completed ACCEPT
+under its enumerated established dependencies in conv_bebdfd886f431153,
+original stream38528. The exact original prompt matches the session, and
+the14630-character answer matches the original DONE stream, task and session;
+observed modelgpt6/pro. The same-physical-donor-tile clause highlighted by
+the reviewer is justified directly in Section5. The reviewer did not execute
+code or Lean. Its scope is Sections1--6, excluding Section7. See
+output/cost-fourteen-37-39-review-terminal.json and the validation receipt.
 
 ## 7. Supplemental tight-clearance witness and stronger reserve
 
