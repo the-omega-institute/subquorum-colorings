@@ -91,7 +91,7 @@ alpha owner simply contributes min(1,0)=0.
 
 This constructs an allocation of exactly R ORIGINAL alpha demands to R
 DISTINCT ORIGINAL beta path resources, each along one chosen original
-injection link. It is maximal within those links, since each component
+injection link. It has maximum cardinality within those links, since each component
 has only d demands and b resources. Remaining beta owners, alpha demands
 and all BB--TT interval components retain separate identities. In
 particular two TP demands linked to opposite terminals of the same beta
@@ -306,7 +306,11 @@ physical packet
     J_*={4,...,W+5} times {0,...,H+5}.
 
 It contains ALL selected vertices, ALL matching endpoints and their complete
-original 2-by-2 receiver tiles. Its dimensions are (W+2)-by-(H+6), both even;
+original 2-by-2 receiver tiles. Indeed every endpoint lies in rows5..W+4
+and columns3..H+3; even a unit square containing it extends by at most one
+row or column, staying within J_*. The crop begins at even coordinates
+and ends at odd coordinates, so it is a union of whole original tiles.
+Its dimensions are (W+2)-by-(H+6), both even;
 its first and last columns are BB in every band. Thus B_*=W+2 and, exactly,
 
     S_*=(WH)/2+2W-H-3,
@@ -389,7 +393,8 @@ extended connectors. No vertical actual-mate assumption for a virtual
 terminal is used. In particular the explicit sufficient compensation lemma
 is: if every virtual alpha strand has chosen extended accesses and their
 connector graph has no twice-marked path, then S>=B. More generally an
-allocation of h^cap_2 demands to distinct h^cap_0/beta' resources suffices.
+allocation of h^cap_2 demands to distinct h^cap_0/beta' resources suffices
+when u_cap=0; with partial coverage the demand count is h^cap_2+u_cap.
 The outside receiver ledger and coefficient-one corollary in Section2
 apply with the same unchanged physical ownership hypotheses. This does not
 establish the availability of extended access for arbitrary configurations.
@@ -480,5 +485,25 @@ These disjoint forced edges exhaust all endpoints, proving uniqueness for
 every W,H. The checker verifies the template for all 4576 matching edges
 in the parameter controls, independently of its generic leaf-elimination
 and freezing algorithms.
+
+## 9. Independent review
+
+The initial review 9f873d31-77a5-4422-8e3b-51e15dc8866d completed ACCEPT at
+15:06:52 UTC. The final follow-up 1730792d-c0a6-47d3-af60-634fa8c294f4
+completed ACCEPT at 15:26:29 UTC, actual gpt_6/pro. It independently accepts
+the common drop and explicit original-link allocation, closed-row obstruction
+for all horizontal matchings, cropped physical receiver closure, selected-cap
+ownership and compensation, the H=4 right-boundary debit, and the uniform
+written freezing/unique-matching schedules. It also confirms the stated
+limited scope of the Lean development. This is not execution certification.
+
+The final 40633-character request matches the recorded conversation exactly;
+the complete 18985-character response agrees across the original DONE stream,
+completed task and session. Original stream session52326 exits0. The full
+response is in output/terminal-cancellation-and-stranded-demand-followup-oracle.json.
+Minor clarifications now specify maximum cardinality for the owner matching,
+retain u_cap=0 when only boundary-collision demands are allocated, and spell
+out the coordinate enclosure proving physical receiver closure. No owned
+review remains live. General grid compensation remains open.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
