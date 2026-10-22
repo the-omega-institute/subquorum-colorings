@@ -3,7 +3,8 @@
 22 October 2026. Written all-parameter proof with finite checks and a scoped
 Lean walk formalization. This extends the selected-cap mechanism in
 [terminal cancellation](TERMINAL_CANCELLATION_AND_STRANDED_DEMAND.md).
-The new grid construction has not received a separate external review.
+The written construction received an independent ACCEPT review on23 October;
+the archived review distinguishes proof checking from reported code execution.
 
 ## Statement
 
@@ -15,8 +16,8 @@ graph, and a physically receiver-closed aligned packet of dimensions
 
 It has exactly one original TP--TP demand, no BP--BP credit, and H+1+s mixed
 paths. Initially its demand has neither direct BB access nor selected-cap
-TP--BT--BB access. Among ALL matchings of horizontal opposite-kind terminal
-links, the minimum number of links exposing direct-or-cap access at both free
+TP--BT--BB access. Among ALL matchings of unit horizontal adjacencies between
+opposite-kind original terminals, the minimum number of links exposing direct-or-cap access at both free
 ends of its remaining TP--TP path is exactly
 
     min(p,2)+min(q,H/2).                                      (1)
@@ -194,3 +195,9 @@ frozen residual demand reaches a suitable interval, nor that multiple demands
 can allocate those intervals without collision. The general target
 h2_cap+u_cap<=h0_cap+beta' and the outside overlap correction2N_out remain open.
 No universal improvement of5/6 or triple grid equality is claimed.
+
+Independent mathematical review3be86c00-4cd7-4f9c-8a8d-91a2432ebee9 gives
+ACCEPT for the full written construction and exact access minimum. Its sole
+wording recommendation, explicitly stating unit horizontal original-terminal
+adjacencies, is incorporated above. The review does not certify Python or Lean
+execution. See output/arbitrary-depth-cap-relays-oracle.json.
