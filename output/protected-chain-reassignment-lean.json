@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/ProtectedChainReassignment.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "execution_location": "local Mac selected by the user in this conversation",
+  "preflight_memory_free_percent": 56,
+  "preflight_real_lean_lake_processes": [],
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/ProtectedChainReassignment.lean",
+  "execution": {"session_id": 48126, "final_chunk": "b7608e", "exit_code": 0},
+  "theorems": ["full_path_allocation_forced_right", "every_old_assignment_changes"],
+  "axiom_audits": 2,
+  "axioms_used": ["propext", "Quot.sound"],
+  "scope": "General induction forcing every path-edge resource to its right demand when the root is separately paid and assignment is injective. Therefore every old left-end assignment changes. Physical freezing, route/cost classification, arbitrary protected cores and the two-link construction remain written proofs."
+}

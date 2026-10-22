@@ -59,7 +59,9 @@ is the minimum number |C| of links among pairs with maximum p(C,F).
 
 ## 2. The directed network
 
-Use one source node for each alpha owner. A mixed owner has an entry node and
+Use a directed multigraph retaining the specific terminal witness on every
+link and access arc; different witnesses with the same owner-level endpoints
+remain separate arcs. Use one source node for each alpha owner. A mixed owner has an entry node and
 an exit node joined by an arc of capacity one. A beta owner is one sink
 resource, with capacity one regardless of which BP terminal is entered.
 Each interval is also one sink resource of capacity one. Add a super-source
@@ -79,7 +81,8 @@ cost one; every other arc has cost zero. The capacity k+1 is just a finite
 replacement for infinity: an optimal cut has capacity at most k and never
 needs to cut one of these arcs.
 
-Let nu be the maximum integral flow value and c its minimum cost.
+Let nu be the maximum integral flow value and c the minimum cost among
+integral flows of value nu.
 
 **Theorem.** The largest compensation value in (1) is nu. The minimum number
 of additional links attaining that largest compensation is exactly c.
@@ -298,9 +301,12 @@ both through their single shared resource. Hence in the four continuation
 states the exact costs of full compensation are 2,1,1,1.
 
 For the arbitrary-length shared chain, all r demands are similarly paid with
-one additional link, retaining the earlier explicit root repair. The flow
-checker also verifies a protected-core version with the old r-1 assignments
-held fixed. For fixed-height relay_family(8,4,L,L), maximum compensation is
+one additional link, retaining the earlier explicit root repair. The protected
+repair uses the specific old allocation assigning the shared interval between
+demands i and i+1 to demand i+1, leaving demand 0 unpaid. The checker explicitly
+identifies this root-0 allocation before protecting it. Other old maximum
+allocations need not admit a protected repair. For
+fixed-height relay_family(8,4,L,L), maximum compensation is
 one and its minimum link cost is L, recovering the all-length distance theorem.
 
 ## 7. Verification scope
@@ -341,7 +347,8 @@ not a general route-existence theorem or part of the original review input.
     PYTHONDONTWRITEBYTECODE=1 python3 develop/check_compensation_flow_geometry_frontier.py --output output/compensation-flow-geometry-frontier.json
 
 The separate standalone Lean source formalizes the route uniqueness and finite
-separator-counting interface, the disjoint protected-core combination, and the
+separator-counting interface, uniqueness of reserved and newly used resource
+lists under supplied disjointness assumptions, and the
 exact resource ledger. The full alternating-component normalization, integral
 flow theorem, minimum-cost argument and grid geometry remain written proofs.
 The submitted manuscript is preserved; this is a research note for a later

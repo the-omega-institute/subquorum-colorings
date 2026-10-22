@@ -287,7 +287,8 @@ def abstract_controls(totals):
     return dict(shared_mixed_bottleneck=bottleneck, four_owner_beta=result)
 
 
-def physical(current, bands, fixed, totals, enumerate_links=False, protected=False):
+def physical(current, bands, fixed, totals, enumerate_links=False, protected=False,
+             protected_assignment=None):
     original, labels, intervals, owners, kinds, pairs, ports = terminal_data(current, bands)
     extended = extended_ports(current, bands, labels, intervals, owners, kinds, ports, Counter())
     reduced, inventory, _ = cancel_pairs(kinds, pairs, fixed, Counter())
@@ -304,7 +305,10 @@ def physical(current, bands, fixed, totals, enumerate_links=False, protected=Fal
         incidence = {resource: {index for index, pair in enumerate(alpha_pairs)
                                 if any(resource in access[point] for point in pair)}
                      for resource in resources}
-        assignment = allocate(len(alpha_pairs), incidence)['assignment']
+        assignment = (allocate(len(alpha_pairs), incidence)['assignment']
+                      if protected_assignment is None else dict(protected_assignment))
+        assert all(demand in incidence[resource] for demand, resource in assignment.items())
+        assert len(set(assignment.values())) == len(assignment)
         excluded = {point for index in assignment for point in alpha_pairs[index]}
         reduced = [pair for pair in reduced if not set(pair) & excluded]
         kinds = {point: kind for point, kind in kinds.items() if point not in excluded}
@@ -320,6 +324,8 @@ def physical(current, bands, fixed, totals, enumerate_links=False, protected=Fal
         unused = len(resources)+inventory['BP', 'BP']-result['value']
         assert original['surplus_twice']-2*original['boundary_budget'] == 2*(unused-result['deficit'])
     totals['physical_flow_models'] += 1
+    if protected:
+        result['protected_assignment'] = sorted(assignment.items())
     return result
 
 
@@ -342,6 +348,14 @@ def physical_controls(totals):
         assert result['value'] == count and result['cost'] == 1
         core = physical(current, bands, fixed, totals, protected=True)
         assert core['value'] == 1 and core['cost'] == 1
+        _, _, _, owners, kinds, pairs, _ = terminal_data(current, bands)
+        reduced, _, _ = cancel_pairs(kinds, pairs, fixed, Counter())
+        alphas = [pair for pair in reduced if all(kinds[point] == 'TP' for point in pair)]
+        assert all(all(8*index+3 <= point[1] <= 8*index+7 for point in pair)
+                   for index, pair in enumerate(alphas))
+        expected = [(index+1, owners[0 if index % 2 == 0 else len(bands)-1, 9+8*index])
+                    for index in range(count-1)]
+        assert core['protected_assignment'] == expected
         examples.append(dict(family='shared_chain', width=width, count=count,
                              value=result['value'], cost=result['cost'], protected_cost=core['cost']))
     for width in (8, 12, 24):
