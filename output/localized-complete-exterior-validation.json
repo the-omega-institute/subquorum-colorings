@@ -9,24 +9,25 @@
     "crossing": "Independent unbounded b,e,f short-wall two-U complete family has exact exterior6.",
     "prior_results": "Global Phi>=P and the global2g+2+P_new consequence follow from existing activated-singleton reserve theorem; not claimed as novel.",
     "general_cut": "2Delta_Q>=2P_Q-b_Q-2B_Q if no added source crosses the cut AND every relevant old rotor singleton keeps its paired triple in Q; disjoint cuts do not reuse physical capacity.",
-    "missing_mate_counterexample": "Complete zero-charge rotor O=K, no additions, Q upper negative singleton: marginal0 but missing-mate rule would demand0>=1 in doubled units."
+    "missing_mate_counterexample": "Complete zero-charge rotor O=K, no additions, Q upper negative singleton: marginal0 but missing-mate rule would demand0>=1 in doubled units.",
+    "width_six_coefficient_one": "With the established source-to-grid ledger sigma>=Phi-G, G<=2N and N=2g+1-d+P_out: sigma>=4d-P_out. Thus P_out<=4d gives |T_sel|+|M|<=mn/2-(4d-P_out), coefficient1 in this explicit source subclass. No unrestricted grid claim."
   },
   "python": {
     "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_localized_exterior_tile_budget.py",
     "exit_code": 0,
-    "terminal_chunk": "99d0f0",
+    "terminal_chunk": "d16e04",
     "controls": "output/localized-complete-exterior-controls.json"
   },
   "lean": {
     "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/LocalizedExteriorBudget.lean",
     "location": "user-selected local Mac",
     "version": "4.33.0",
-    "memory_free_percent": 52,
+    "memory_free_percent": 50,
     "active_lean_lake_before": 0,
     "exit_code": 0,
-    "terminal_chunk": "b813dd",
-    "theorems": 17,
-    "individual_axiom_audits": 30,
+    "terminal_chunk": "e4512b",
+    "theorems": 18,
+    "individual_axiom_audits": 31,
     "warnings": 0,
     "errors": 0,
     "sorryAx": false,
@@ -37,7 +38,7 @@
       "Quot.sound"
     ],
     "axiom_free_complete_local_table": true,
-    "scope": "Universal four-corner table, exact event algebra, general charge formulas, boundary arithmetic and conditional regional/global conclusions. Geometric source adapters, rotor injection, region localization and global summation remain written."
+    "scope": "Universal four-corner table, exact event algebra, charge formulas, boundary arithmetic, conditional cut/regional/global inequalities and width6 actual-mark-density corollary. Geometric adapters, rotor injection, regional partition/global summation and source-to-grid ledger remain written/dependencies."
   },
   "research_oracle": {
     "task_id": "49a148fa-80db-4645-8283-fb7aed214e4d",
@@ -62,13 +63,14 @@
     "terminal": "output/localized-complete-exterior-failed-review-terminal.json",
     "final_version_followup": {
       "status": "RUNNING",
-      "task_id": "d8adad0c-7715-4c48-8241-9bfc6c9022f4",
       "conversation_id": "conv_37f5b6b1df38ee24",
-      "original_prompt_exact_match": true,
       "original_stream_session": 64687,
       "request": "output/localized-complete-exterior-final-review-request.json",
       "stream": "output/localized-complete-exterior-final-review-stream.sse",
-      "scope": "Updated whole localized theorem including general cut and essential old-rotor mate counterexample; prior cdc1a744 failed terminally, no duplicate live task."
+      "scope": "Updated whole localized theorem including general cut and essential old-rotor mate counterexample; prior cdc1a744 failed terminally, no duplicate live task.",
+      "task_id": "d8adad0c-7715-4c48-8241-9bfc6c9022f4",
+      "original_prompt_exact_match": true,
+      "outside_input": "Later explicit width6 all-mark bound sigma>=4d-P_out and coefficient1 condition P_out<=4d need separate followup/confirmation; source-to-grid ledger remains an existing dependency."
     }
   },
   "open": "Sharp exterior minimum2..5; all wider chambers without prescribed spanning source; general source decomposition and marked-side joint allocation; unrestricted5/6 improvement and rectangular-grid triple equality.",

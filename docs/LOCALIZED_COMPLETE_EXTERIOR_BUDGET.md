@@ -326,6 +326,40 @@ bounds yield
 All other spanning-U pockets may be empty. The single exterior term in
 (10) is paid once, independently of how many chambers are present.
 
+### A concrete coefficient-one subclass
+
+To connect the source inventory to the original matching inequality, use
+the established dual-guard ledger of `ALL_PHASE_JOINT_COMPENSATION_SLOTS.md`.
+For an admitted feasible representative pair in an even m-by-n rectangle,
+write T_sel for its selected vertices, M for its matching, N for its total
+charge-+1 source count, and G for its ACTUAL marked positive sides. Then
+
+    sigma=mn/2-|T_sel|-|M|>=Phi-G,   G<=2N.             (12)
+
+These are hypotheses supplied by that existing source-to-grid ledger;
+they are not a decomposition theorem for arbitrary representative pairs.
+At W=6 and gap10 every chamber is exactly D_6 or U_6, with no additional
+source there. Hence
+
+    N=(g+1)+(g-d)+P_out=2g+1-d+P_out.
+
+Combine (9) and (12), paying ALL marked sides from the SAME inventory:
+
+    sigma>=Phi-2N>=4d-P_out.                           (13)
+
+Therefore whenever P_out<=4d this full class satisfies
+
+    |T_sel|+|M|<=mn/2-(4d-P_out)<=mn/2.                (14)
+
+This improves the established five-sixths coefficient to one in the
+explicitly stated subclass, with additional slack4d-P_out. At the same
+matching size the objective bound improves by |M|/6+4d-P_out relative
+to the five-sixths theorem. The number, dimensions and orientations of
+exterior negative/zero-charge sources are unrestricted; they have already
+been included in Delta_out. No separate exterior budget is spent a second
+time to pay G. If P_out>4d, (13) remains a valid lower bound but does not
+establish coefficient one. The unrestricted grid inequality remains open.
+
 There are genuine complete wall-tip crossings beyond the one-source cap.
 Choose a_i=2+10i, fill earlier gaps by spanning U, set L=a_g+4,
 D=L,F>=L+6, and add
@@ -359,8 +393,8 @@ integrality forces value4, N_out=4 and R_out=0. Extendibility of those
 remaining patterns is open. Negative marginal examples21->20 and25->24
 are compatible with the new AGGREGATE bound.
 
-No general grid source decomposition, control of every actual marked-side
-demand, unrestricted5/6 improvement or rectangular-grid triple equality
+No general grid source decomposition, payment of marked-side demands
+outside the stated subclass, unrestricted5/6 improvement or rectangular-grid triple equality
 is claimed. The11October submitted manuscript remains unchanged.
 
 ## Validation and provenance
@@ -390,7 +424,7 @@ the general cut inequality and its missing-mate counterexample. No ACCEPT
 is yet claimed for this new localized theorem.
 
 The local Lean file `formal/SubQuorum/LocalizedExteriorBudget.lean` passed
-17theorems and30individual declaration axiom audits without warnings,
+18theorems and31individual declaration axiom audits without warnings,
 errors,sorry or native evaluation. It proves the complete four-corner
 occupancy table by kernel reduction over the81possible ternary states,
 the exact local event cancellation, four general charge formulas, both

@@ -337,11 +337,44 @@ def incomplete_controls():
     return checked
 
 
+def width_six_controls():
+    checked = qualifying = 0
+    for gaps in range(5):
+        rows = tuple(2+10*index for index in range(gaps+1))
+        for modes, extra_positive in itertools.product(
+                itertools.product((False, True), repeat=gaps), range(4)):
+            old = old_family(6, rows, rows[-1]+10, rows[-1]+14)
+            additions = [spanning(6, upper, lower, mode)
+                         for upper, lower, mode in zip(rows, rows[1:], modes)]
+            additions.append(cap(6, 4, rows[-1]))
+            additions += [independent_source((6, 4, 4), (False, False, False),
+                                             (100+20*index, 100))
+                          for index in range(extra_positive)]
+            additions.append(independent_source((6, 4, 4), (False, False, False), (220, 101)))
+            additions.append(shift(normalized(False), (240, 100)))
+            result = localized_certificate(old, additions, 6, rows)
+            downward = sum(modes)
+            exterior_positive = result['exterior_positive']
+            positive = sum(charge(record) == 1 for record in old+additions)
+            assert exterior_positive == 1+extra_positive
+            assert positive == 2*gaps+1-downward+exterior_positive
+            assert result['Phi']-2*positive >= 4*downward-exterior_positive
+            qualifying += exterior_positive <= 4*downward
+            checked += 1
+    return dict(whole_complete_width_six_families=checked,
+                positive_count_and_all_marks_budget_controls=checked,
+                sufficient_coefficient_one_controls=qualifying,
+                scope='Checks source counts and Phi-2N lower bound. The source-to-grid '
+                      'ledger and general inequality are separately written; actual '
+                      'marked sides are not recomputed by this control.')
+
+
 def main():
     print(json.dumps(dict(status='PASS', local=local_controls(), source_images=source_controls(),
         cuts=cut_controls(),
         physical=physical_controls(), incomplete_inventories=incomplete_controls(),
         chambers=chamber_controls(), wall_crossings=crossing_controls(),
+        width_six=width_six_controls(),
         scope='Exact source-labelled event identity with original support multiplicity; '
               'complete tile table and injective rotor pairing; independent localized '
               'marginals on complete nonuniform and finite-wall crossing families. '

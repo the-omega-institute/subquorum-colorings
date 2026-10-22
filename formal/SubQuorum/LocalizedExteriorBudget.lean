@@ -139,6 +139,14 @@ theorem subfive_two_positive_saturation
     (hidentity : 2*delta = 12-negativeU+residual) (hbelow : delta < 5) :
     delta = 4 ∧ negativeU = 4 ∧ residual = 0 := by omega
 
+theorem width_six_marked_slack
+    (slack potential marked positive gaps downward exteriorPositive : Int)
+    (hledger : potential-marked ≤ slack) (hmarks : marked ≤ 2*positive)
+    (hpositive : positive = 2*gaps+1-downward+exteriorPositive)
+    (hbudget : 4*gaps+2*downward+2+exteriorPositive ≤ potential) :
+    4*downward-exteriorPositive ≤ slack ∧
+      (exteriorPositive ≤ 4*downward → 0 ≤ slack) := by omega
+
 #print axioms corners
 #print axioms adjacent
 #print axioms endpoint
@@ -169,5 +177,6 @@ theorem subfive_two_positive_saturation
 #print axioms complete_global_bound
 #print axioms width_six_complete_bound
 #print axioms subfive_two_positive_saturation
+#print axioms width_six_marked_slack
 
 end SubQuorum.LocalizedExteriorBudget
