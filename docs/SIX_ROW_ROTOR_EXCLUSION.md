@@ -221,7 +221,16 @@ stem reaching t from a bar strictly to the left must also cover column0;
 a left-facing stem from a bar to the right must also cover column3.
 In the first case the rotor's corner support (1,0), and in the second
 (1,3), has two endpoint neighbours: the row0 V endpoint above and its
-own adjacent rotor endpoint on row1. The support must be consumed.
+own adjacent rotor endpoint. The precise latter neighbour is:
+
+| Current shape | Corner support | Own endpoint neighbour |
+|---|---|---|
+| A | (1,0) | (1,1) |
+| A | (1,3) | (2,3) |
+| B | (1,0) | (2,0) |
+| B | (1,3) | (1,2) |
+
+In every case the two neighbours are distinct. The support must be consumed.
 
 It is at an interior row and rotor projection column, so the only
 possible consumer is another rotor. Every rotor now has top1. If its
@@ -248,9 +257,17 @@ does not remove endpoints and then assume completeness; it proves that
 there were no rotors in the original complete pocket in the first place.
 Thus the completeness premises used by the H/V theorem are intact.
 
-If any H occurs, its mass B-1>=5 makes Phi>=5. If H is absent, every
-source is transverse V and the accepted singleton exclusion forces at
-least two sources in any nonempty complete pocket, giving Phi>=2.
+If any H occurs, its mass B-1>=5 makes Phi>=5. Otherwise the budget
+gives Phi>=2 as soon as a+2b>=2. The only remaining nonempty case would
+be a single even-start V. Facing right, its top tip is even, whereas
+the last pocket column N-1 is odd; its beyond-tip support is therefore
+inside P. Facing left, its top tip is odd and at least1, so its preceding
+beyond-tip support is again inside P. Either support has its own tip
+neighbour and the old top boundary neighbour and cannot be consumed by
+another source. This excludes the single even-start case and proves
+Phi>=2 directly from the stated boundary and even-width hypotheses.
+The stronger earlier exclusion of every singleton additionally uses the
+specific inherited old-core side supports and is not needed here.
 The actual two-V complete local families attain2 at every even N>=10.
 The established chamber identity Delta=5+Phi then gives the stated5/7/10
 bounds. These cover arbitrary numbers of all-source additions and remove
@@ -284,3 +301,14 @@ and the source-to-inventory assembly remain written proofs.
 Execution and independent review are recorded in
 `output/six-row-rotor-exclusion-validation.json`. The older all-phase
 budget audit does not cover this new rotor exclusion.
+
+The first independent task0c67255e-f5fe-46ec-bac6-4dfe871c3feb returned
+REVISE,15849 characters matching its original stream and terminal API,
+observed gpt_6/pro. It confirmed the all-width argument but correctly
+flagged an inaccurate row description of two middle-corner neighbours.
+The four-case table now gives the exact coordinates. It also recommended
+the direct even-singleton argument now used in the nonempty corollary.
+Exact Python own-neighbour checks and three additional local Lean lemmas
+have passed; the final Lean file has14 theorems and16 individual axiom
+audits, no warnings/errors/sorry/native. The corrected text is submitted
+for a separate follow-up verdict; the original REVISE is retained.

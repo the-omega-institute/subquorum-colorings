@@ -57,6 +57,9 @@ def shape_roles():
         current = normalized(reflected, 1)
         point = 1, side
         assert point in current[1]
+        own_neighbor = {(False, 0): (1, 1), (False, 3): (2, 3),
+                        (True, 0): (2, 0), (True, 3): (1, 2)}[reflected, side]
+        assert set(neighbors(point)) & current[0] == {own_neighbor}
         for record in anchored(normalized(other_reflected), point):
             if min(row for row, column in record[0]) != 1:
                 continue

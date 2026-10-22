@@ -74,6 +74,26 @@ theorem left_bottom_tip_even (bar topDepth bottomDepth : Int)
     (hbottomEven : bottomDepth % 2 = 0) : (bar+bottomDepth) % 2 = 0 := by
   omega
 
+theorem middle_corner_has_own_neighbor (reflected : Bool) (column : Int)
+    (hcolumn : column = 0 ∨ column = 3) :
+    ∃ row currentColumn, rotorEndpoint reflected 1 0 row currentColumn ∧
+      ((row = 1 ∧ (currentColumn = column-1 ∨ currentColumn = column+1)) ∨
+       (currentColumn = column ∧ row = 2)) := by
+  cases reflected <;> rcases hcolumn with hcolumn | hcolumn <;> subst column
+  · exact ⟨1, 1, by simp [rotorEndpoint], by decide⟩
+  · exact ⟨2, 3, by simp [rotorEndpoint], by decide⟩
+  · exact ⟨2, 0, by simp [rotorEndpoint], by decide⟩
+  · exact ⟨1, 2, by simp [rotorEndpoint], by decide⟩
+
+theorem singleton_even_right_support_inside (tip width : Int)
+    (htip : 0 ≤ tip) (hbound : tip < width)
+    (htipEven : tip % 2 = 0) (hwidthEven : width % 2 = 0) :
+    0 ≤ tip+1 ∧ tip+1 < width := by omega
+
+theorem singleton_even_left_support_inside (tip width : Int)
+    (htip : 0 ≤ tip) (hbound : tip < width) (htipOdd : tip % 2 = 1) :
+    0 ≤ tip-1 ∧ tip-1 < width := by omega
+
 theorem right_bottom_tip_even (bar topDepth bottomDepth : Int)
     (htop : bar+1-topDepth = 2) (htopEven : topDepth % 2 = 0)
     (hbottomEven : bottomDepth % 2 = 0) : (bar+1-bottomDepth) % 2 = 0 := by
@@ -109,6 +129,9 @@ end SubQuorum.SixRowRotorExclusion
 #print axioms SubQuorum.SixRowRotorExclusion.unique_bottom_endpoint
 #print axioms SubQuorum.SixRowRotorExclusion.middle_corner_blocked
 #print axioms SubQuorum.SixRowRotorExclusion.left_bottom_tip_even
+#print axioms SubQuorum.SixRowRotorExclusion.middle_corner_has_own_neighbor
+#print axioms SubQuorum.SixRowRotorExclusion.singleton_even_right_support_inside
+#print axioms SubQuorum.SixRowRotorExclusion.singleton_even_left_support_inside
 #print axioms SubQuorum.SixRowRotorExclusion.right_bottom_tip_even
 #print axioms SubQuorum.SixRowRotorExclusion.forced_bottom_gap
 #print axioms SubQuorum.SixRowRotorExclusion.closed_top_row_forbids_new_top_rotor
