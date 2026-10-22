@@ -213,10 +213,14 @@ the physical records remain written/dependencies; this is not end-to-end Lean.
 
 The earlier localized theorem has independent ACCEPTd8adad0c. That acceptance
 does not include this later arbitrary-cut extension. Same-conversation audit
-96e3f47c-6327-4f7b-a21d-7826061da91a is running on the conservation proof
-and separate later width6 marked-slack corollary. The elementary separate-
+96e3f47c-6327-4f7b-a21d-7826061da91a completed ACCEPT on the conservation proof
+and separate later width6 marked-slack corollary, with14469characters as observed
+gpt6/pro. The original prompt matches the session, and the task/session/stream
+responses agree exactly. The reviewer did not execute code or Lean; see
+output/arbitrary-tile-flux-and-marked-corollary-review-terminal.json.
+The elementary separate-
 rounding diagnostic was added after that audit input and is checked directly
-and by kernel reduction. No ACCEPT is yet claimed for
-these two extensions. Separately, research task8b95f828-f11e-4975-b7c3-6c958fa7b60c
-is investigating whether the universal exterior bound can be sharpened to5;
-it is a distinct research question, not a second review of this note.
+and by kernel reduction; it was not submitted as part of that review.
+Separately, research task8b95f828-f11e-4975-b7c3-6c958fa7b60c
+terminated with no assistant output and supplies no result on sharp exterior5.
+That mathematical question remains open.

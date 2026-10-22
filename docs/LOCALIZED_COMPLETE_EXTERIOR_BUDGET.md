@@ -431,14 +431,15 @@ Its scope clarifications are incorporated: every a_i is even, the
 occupied boundary is the boundary of C_i, disjoint cuts count each source
 at most once unless exhaustive, and the six-row arbitrary-width pocket
 corollary retains gap10. The later marked-slack/coefficient-one corollary
-was outside that audit input and requires separate review. See
+was outside that audit input; subsequent audit96e3f47c accepted it. See
 output/localized-complete-exterior-final-review-terminal.json.
 
 The subsequent note ARBITRARY_TILE_CUTS_AND_SIGNED_ROTOR_FLUX.md removes
 source-footprint and old-mate containment from local ACCOUNTING cuts by
 physically allocating new terminal credits and retaining signed rotor
 boundary transfers. A source-crossing cut is not an addition marginal.
-This later extension is not covered by the above ACCEPT.
+This later extension is not covered by the above ACCEPT, but has its own
+ACCEPT from96e3f47c; see output/arbitrary-tile-flux-and-marked-corollary-review-terminal.json.
 
 The local Lean file `formal/SubQuorum/LocalizedExteriorBudget.lean` passed
 18theorems and31individual declaration axiom audits without warnings,

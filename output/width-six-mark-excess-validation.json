@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-22",
+  "status": "WRITTEN_UNMARKED_CORE_PROOF_SCOPED_CHECKS_PASS_INDEPENDENT_REVIEW_RUNNING",
+  "note": "docs/WIDTH_SIX_CORE_UNMARKED_AND_EXTERIOR_MARK_EXCESS.md",
+  "hypotheses": "Canonical full-even-U/standard-rotor immutable model; complete retained nested core W6, every gap10, even a_i, finite even outer D,F>=a_g+4; accepted complete chamber classification and existing source-to-grid ledger explicitly assumed.",
+  "claims": {
+    "geometry": "All old B_i for i<g and positive chamber U6 sources are unmarked; only last B_g and exterior positives contribute actual marks.",
+    "exact": "G=h+N1+2N2; sigma>=4g+2d+2-h+N0-N2, 0<=h<=2.",
+    "sufficient": "N2<=N0+4g+2d implies |T_sel|+|M|<=mn/2.",
+    "scope": "No unrestricted grid decomposition or universal coefficient-one theorem. Existing singleton-flow credits are not spent a second time."
+  },
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_width_six_actual_mark_excess.py",
+    "exit_code": 0,
+    "original_session": 47212,
+    "terminal_chunk": "bfebd0",
+    "controls": "output/width-six-actual-mark-excess-controls.json",
+    "source_side_reconstructions": 40,
+    "complete_physical_images": 640,
+    "whole_complete_families": 150,
+    "qualifying": 143,
+    "beyond_previous_Pout_le_4d": 73,
+    "beyond_coarse_G_le_N": 16,
+    "singly_marked_positive_occurrences": 0,
+    "limitation": "No nonvacuous singly-marked fixture; arbitrary N1 covered analytically."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WidthSixMarkExcess.lean",
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/WidthSixMarkExcess.lean",
+    "location": "user-selected local Mac",
+    "memory_free_percent": 58,
+    "active_real_lean_lake_before": 0,
+    "exit_code": 0,
+    "original_session": 78437,
+    "terminal_chunk": "33e4d1",
+    "theorems": 13,
+    "individual_declaration_axiom_audits": 17,
+    "warnings": 0,
+    "errors": 0,
+    "sorryAx": false,
+    "native_decide": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Coordinate witness exclusions and conditional marked-slack arithmetic; source normalization, chamber localization/classification and source-to-grid adapter remain written/dependencies."
+  },
+  "independent_review": {
+    "task_id": "e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3",
+    "conversation_id": "conv_37f5b6b1df38ee24",
+    "status": "DISPATCHED",
+    "original_stream_session": 50054,
+    "request": "output/width-six-mark-excess-review-request.json",
+    "stream": "output/width-six-mark-excess-review-stream.sse",
+    "scope": "New unmarked-core geometry and actual-mark-excess corollary only; prior96e3 ACCEPT does not cover this extension."
+  }
+}

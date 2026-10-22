@@ -7,14 +7,23 @@ including finite unequal/coincident wall tips and detached exterior sources.
 The original support-incidence multiplicity is retained at the incomplete old
 boundary.18 scoped Lean theorems and exact controls pass. Its later width6
 marked-slack consequence sigma>=4d-P_out improves5/6 to1 when P_out<=4d,
-under the existing source-to-grid ledger; that later corollary is under separate
-review. The new [arbitrary tile-cut identity](docs/ARBITRARY_TILE_CUTS_AND_SIGNED_ROTOR_FLUX.md)
+under the existing source-to-grid ledger; that corollary now has independent
+ACCEPT. The new [arbitrary tile-cut identity](docs/ARBITRARY_TILE_CUTS_AND_SIGNED_ROTOR_FLUX.md)
 allows cuts through added U/rotor sources by assigning physical terminal credits
 and conserving signed rotor transfers.122572 cuts through736 complete inventories
-and13 scoped Lean theorems pass; independent review is running. Source-crossing
+and13 scoped Lean theorems pass; independent written review ACCEPTS it. Source-crossing
 regional accounting terms are not source-addition marginals. Sharp exterior5,
 arbitrary grid decomposition/marked allocation and the global grid targets remain
 OPEN. The11October submitted manuscript is unchanged.
+
+The [actual-mark refinement](docs/WIDTH_SIX_CORE_UNMARKED_AND_EXTERIOR_MARK_EXCESS.md)
+proves that earlier old B sources and positive chamber sources are unmarked.
+For width6 and all gaps10, coefficient one therefore follows when the number
+of doubly marked exterior positives minus unmarked exterior positives is at
+most4g+2d. This removes an upper bound on the total exterior-positive count.
+The written proof,640 physical images,150 whole families and13 scoped Lean
+theorems pass; its separate independent review is pending. The controls have
+no singly marked exterior examples; that case is covered analytically.
 
 Latest width5 checkpoint: a [general forced-stack theorem](docs/SECONDARY_TEN_WIDTH_FIVE_STACK.md)
 classifies every actual cavity owner in a complete extension as a left-bar
