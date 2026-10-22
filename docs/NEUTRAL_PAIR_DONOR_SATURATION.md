@@ -171,7 +171,9 @@ R payment and original counts over a stated finite range and all eight
 tile-preserving symmetries. Scoped Lean lemmas separately check local
 geometry, pair exchange exclusion and count identities. Neither replaces
 the all-parameter geometric proof above. The earlier native-guard theorem
-has an independent accepted written review; this later construction has
-not yet received a separate external review.
+and this construction now have separate independent accepted written
+reviews; see output/neutral-pair-donor-saturation-review-accepted.json for
+the latter. The subsequent arbitrary-exterior corridor theorem and its
+different accepted review are in NEUTRAL_PORTAL_STRIP_COMPENSATION.md.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
