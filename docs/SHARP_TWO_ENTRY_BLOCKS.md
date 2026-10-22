@@ -140,8 +140,13 @@ no search exhaustion or solver-completeness claim enters the proof.
 
 The final proof is the explicit matching classification and the two
 retained-neighbor tables, not a finite-enumeration argument for a general
-inequality. This new sharpness witness has not received a separate Oracle
-review or Lean formalization. The accepted entry theorem and independently
-accepted matching-block tile ledger retain their own scopes. The universal
+inequality. A subsequent connected all-k extension is proved in
+CONNECTED_SHARP_ENTRY_CHAINS.md and independently ACCEPTED by Oracle; its k=1
+case covers this core with replacement complete freezing tables. Local Lean
+verification covers those tables, core degrees and generic certificate induction,
+with physical geometry and matching-classification adapters remaining written.
+The bounded-height extension and unbounded exact freezing depth are developed
+separately in BOUNDED_HEIGHT_SHARP_ENTRY_CHAINS.md. The accepted entry theorem
+and independently accepted matching-block tile ledger retain their scopes. The universal
 missing compensation inequality remains X<=D+B+2J. The submitted manuscript
 and public main are unchanged.
