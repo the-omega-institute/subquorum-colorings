@@ -279,6 +279,10 @@ event or mixed full tile occurs; the listed retained supports and their
 degrees are unchanged. With B=6 the batch inventories are16k and15k,
 with H marginal -k. There is no universal lower bound on that marginal.
 
+More precisely, if h is the number of H sources, c<=2h in (1) and every
+B_H>=6 give total H marginal at least -h. The B=6 batches attain -h,
+so this per-H lower bound is sharp even in locally complete pockets.
+
 These are locally complete states of the actual old chamber pocket;
 the executable also reconstructs the old core and checks its chamber
 increment5+Phi. No whole-grid complete extension is asserted. Moreover,
@@ -308,6 +312,12 @@ formalization is claimed. The final local Lean run has no warnings,
 errors, sorry axioms or native evaluation.
 
 The validation record is `output/six-row-all-phase-horizontal-validation.json`.
-Independent review is recorded there when returned. Next: the genuinely
+Independent task5f43eca8-5c22-4450-a0a0-429c39e2b1e6 returned ACCEPT,
+observed gpt_6/pro, with18343 response characters matching the original
+stream and terminal API exactly. It checked the full written geometry,
+source cases, tile/event multiplicities, distinct-owner payments and
+all-parameter support proof; it did not rerun Lean or Python. No
+mathematical revision was required. It also observed the sharp per-H
+marginal bound -h recorded above. Next: the genuinely
 mixed V/rotor residual budget, followed by exterior contributions and a
 general source decomposition. The submitted manuscript is unchanged.

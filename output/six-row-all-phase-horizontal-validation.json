@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_WRITTEN_GENERAL_PROOF_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_PENDING",
+  "status": "PASS_WRITTEN_GENERAL_PROOF_EXACT_CONTROLS_SCOPED_LEAN_INDEPENDENT_ACCEPT",
   "proof": "docs/SIX_ROW_ALL_PHASE_HORIZONTAL_BUDGET.md",
   "verifier": "develop/check_six_row_all_phase_horizontal.py",
   "controls": "output/six-row-all-phase-horizontal-controls.json",
@@ -35,14 +35,20 @@
     "initial_attempt": "Passed with two linter warnings; unused simp argument removed and implicit-use hypothesis prefixed before final clean run."
   },
   "review": {
-    "status": "DISPATCHED_ORIGINAL_STREAM_LIVE",
+    "status": "COMPLETED_ACCEPT",
     "task_id": "5f43eca8-5c22-4450-a0a0-429c39e2b1e6",
     "conversation_id": "conv_99e66ccc09169914",
     "original_stream_session": 96615,
+    "final_stream_execution_chunk": "305d11",
+    "response_chars": 18343,
+    "observed_model": "gpt_6/pro",
+    "terminal": "output/six-row-all-phase-horizontal-review-terminal.json",
+    "stream_terminal_exact_match": true,
+    "mathematical_revisions_required": false,
     "request": "output/six-row-all-phase-horizontal-review-request.json",
     "stream": "output/six-row-all-phase-horizontal-review-stream.sse",
     "pool_preflight": {"ready": 24, "busy": 1, "needs_attention": 1, "queued": 0},
-    "scope": "Full written all-phase theorem, no rotor/H contact, exhaustive band counts, distinct V payment and sharp locally complete negative-marginal family. Reviewer execution of code is not presumed."
+    "scope": "Full written all-phase theorem, no rotor/H contact, exhaustive band counts, distinct V payment and sharp locally complete negative-marginal family ACCEPT. Reviewer did not rerun Python or Lean. Additional sharp per-H marginal>=-h follows directly from c<=2h and is recorded in proof. No V/rotor residual sign or global target claimed."
   },
   "limitations": "General V/rotor residual sign, universal decomposition, exterior sign, unrestricted global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged."
 }
