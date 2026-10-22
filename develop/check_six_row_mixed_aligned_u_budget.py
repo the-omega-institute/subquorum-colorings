@@ -87,6 +87,7 @@ def audit(verticals, horizontals, complete=False):
         if complete:
             assert partial == 0
             assert debit <= width//2+1
+            assert debit == 0
         footprint = {(row//2, column//2) for row, column in record[0]}
         actual_full = (after['full']-before['full']) & footprint
         actual_events = {event for event in after['events']-before['events']

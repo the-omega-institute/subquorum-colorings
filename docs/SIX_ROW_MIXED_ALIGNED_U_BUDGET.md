@@ -14,7 +14,13 @@ i is (i,p,z), with p its endpoint, z a foreign endpoint in the same tile,
 p,z adjacent, and z NOT an original support of i. Consumed supports remain
 original supports for this definition. Let
 
+    q_i=M_i-2T_i+S_i,
+
     Phi(Y)=sum_i max(0,-q_i)+2J(Y)-K(Y).
+
+Here M_i counts original matching edges, T_i counts original endpoint
+tiles, and S_i counts original supports inside those tiles. This is the
+existing executable charge definition in `check_incident_eight_north_transfer.py`.
 
 Consider any finite family of pairwise endpoint-disjoint full sources in
 rows0..5 of the following two types:
@@ -140,9 +146,10 @@ Combining (3),(4) with the established Phi(V)>=a+2b proves (1).
 
 ## Completeness removes every partial column
 
-For a Down H, suppose a visiting V top stem terminates strictly inside
-I and the next point in its direction is uncovered. That point is its
-original beyond-tip support, still strictly inside I. It already has
+For a Down H, suppose there is a visiting V top-stem terminal whose column
+lies in I and whose next point in its direction also has column in I and
+is uncovered. That point is its original beyond-tip support. This uses
+the closed interval, including either endpoint of I. It already has
 two distinct occupied neighbours: its own terminal on row0 and the
 old top boundary endpoint on row-1. It therefore cannot remain a
 retained support; completeness forces an actual endpoint there.
@@ -208,8 +215,23 @@ support degrees. Oppositely oriented adjacent H blocks are not
 assumed locally complete: they can leave conflicting side supports.
 
 The arbitrary-parameter proofs above do not follow from enumeration.
-This new mixed theorem has no new Lean verification and has not yet
-received an independent review verdict. The earlier transverse
+This new mixed theorem has no new Lean verification. The first independent
+audit, task a74020f7-d2d8-409c-a74f-9fa0a23a5c58, returned REVISE because
+the audit packet's appended reconstruction block mistakenly printed
+q=M-T-S. The repository implementation and proof charge tables have always
+used q=M-2T+S, as explicitly stated above. Under the mistaken packet
+definition the reviewer correctly supplied counterexamples; they do not
+apply to the actual charge. The review independently confirmed the mixed
+geometry, debit partition and sharpness mechanisms, and requested the
+closed-interval wording now used above. The corrective follow-up, task
+64c81712-6bf4-487b-acaf-b9b0d345a609 in the same conversation, returned
+ACCEPT and explicitly withdrew the counterexamples under the retracted
+formula. Its7739-character answer exactly matches the archived terminal
+API response. The original stream81542 ended in a transport EOF; the
+original task was recovered through session metadata, not resubmitted.
+The new ceiling-descent exclusion and exact H peeling in
+`SIX_ROW_CEILING_DESCENT.md` are outside this accepted audit's scope.
+The earlier transverse
 geometry/arithmetic Lean file retains its narrower documented scope.
 Boundary-phase H, odd-L alignment, rotors, exterior signed budgets,
 universal source decomposition and the unrestricted global5/6 and

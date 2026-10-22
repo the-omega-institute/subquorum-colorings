@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_WRITTEN_GENERAL_PROOF_EXACT_CONTROLS_REVIEW_PENDING",
+  "status": "PASS_WRITTEN_GENERAL_PROOF_EXACT_CONTROLS_INDEPENDENT_ACCEPT_AFTER_PACKET_CORRECTION",
   "proof": "docs/SIX_ROW_MIXED_ALIGNED_U_BUDGET.md",
   "verifier": "develop/check_six_row_mixed_aligned_u_budget.py",
   "controls": "output/six-row-mixed-aligned-u-controls.json",
@@ -20,12 +20,30 @@
   },
   "lean": "No new Lean for this mixed theorem. Prior transverse local Lean scope unchanged; full mixed geometry and inventory proof written.",
   "review": {
-    "status": "LIVE_NO_VERDICT",
+    "status": "COMPLETED_REVISE_THEN_CORRECTED_ACCEPT",
     "original_stream_session": 81542,
     "request": "output/six-row-mixed-aligned-u-review-request.json",
     "stream": "output/six-row-mixed-aligned-u-review-stream.sse",
-    "pool_preflight": {"ready": 19, "busy": 6, "needs_attention": 1, "queued": 0},
-    "scope": "Self-contained exact canonical definitions, mixed proof, accepted transverse prerequisite, final verifier and passing controls. No worker changes or duplicate live task."
+    "pool_preflight": {
+      "ready": 19,
+      "busy": 6,
+      "needs_attention": 1,
+      "queued": 0
+    },
+    "scope": "Self-contained exact canonical definitions, mixed proof, accepted transverse prerequisite, final verifier and passing controls. No worker changes or duplicate live task.",
+    "original_task_id": "a74020f7-d2d8-409c-a74f-9fa0a23a5c58",
+    "original_terminal": "output/six-row-mixed-aligned-u-review-terminal.json",
+    "original_verdict": "REVISE: packet appended charge line mistakenly M-T-S, although authoritative executable and proof used M-2T+S; endpoint wording needed closed intervals.",
+    "original_transport": "stream81542 ended EOF, original task recovered from session listing, no resubmission",
+    "corrected_task_id": "64c81712-6bf4-487b-acaf-b9b0d345a609",
+    "corrected_original_stream_session": 93159,
+    "corrected_terminal": "output/six-row-mixed-aligned-u-corrected-review-terminal.json",
+    "corrected_response_chars": 7739,
+    "corrected_stream_matches_terminal": true,
+    "observed_model": "gpt_6/pro",
+    "corrected_verdict": "ACCEPT, prior wrong-charge counterexamples explicitly withdrawn. Source definition unchanged; manuscript now explicitly states M-2T+S and closed interval endpoint case.",
+    "execution_scope": "Independent written argument/model audit, not another Lean execution. Later ceiling descent and exact H peeling OUTSIDE this audit scope."
   },
-  "limitations": "Boundary-phase horizontal U, odd horizontal starts, rotors, unrestricted mixed families, exterior signed budget, universal source decomposition, global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged."
+  "limitations": "Boundary-phase horizontal U, odd horizontal starts, rotors, unrestricted mixed families, exterior signed budget, universal source decomposition, global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged.",
+  "followup": "SIX_ROW_CEILING_DESCENT.md separately proves boundary H exclusion and exact B-1 aligned interior-H peeling under completeness, allows rotors in geometric exclusion; separate review pending. Latest complete-control verifier adds exact zero-debit assertion outside this earlier audit input."
 }
