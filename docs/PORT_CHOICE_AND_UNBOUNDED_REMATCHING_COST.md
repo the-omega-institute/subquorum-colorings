@@ -33,8 +33,9 @@ its aligned band, and j=1,...,2d, select
     (r if j odd else r*, 7+j).
 
 Changing H only extends the reflected flank away from the central copy.
-No new occupied-neighbour contact between copies is introduced. The new
-corridor selections are isolated and leave all old degrees unchanged.
+No new occupied-neighbour contact between copies is introduced. Genuinely
+new interior corridor selections are isolated and leave all old degrees
+unchanged; the eight already present boundary entries need not be isolated.
 The all-V,K serial certificates therefore replay separately, and the
 original endpoint graphs stay disjoint and uniquely matched. Thus this
 family is feasible, completely frozen, and uniquely matched for every
@@ -233,7 +234,10 @@ Enumeration supports the coordinate proof; it does not replace it.
 The standalone Lean development compiles all seven named audited statements
 in Lean 4.33.0, using only propext and Quot.sound, with no sorry, native
 evaluation or new axioms. It verifies quotient-step telescoping and its
-cost consequences from supplied coordinate-walk hypotheses. It does not
+cost consequences from supplied coordinate-walk hypotheses. Its formal
+potentials are one-sided linear drops; the upper-source corollary packages
+the upper-target branch, while the lower-target branch follows from
+column_drop and H>=4. It does not
 formalize the physical construction or matching symmetric difference.
 Execution records are `output/port-choice-rematching-cost-validation.json`
 and `output/port-choice-rematching-cost-lean.json`.
