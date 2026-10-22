@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_WRITTEN_GENERAL_EXCLUSION_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_PENDING",
+  "status": "PASS_WRITTEN_GENERAL_EXCLUSION_EXACT_CONTROLS_SCOPED_LEAN_INDEPENDENT_ACCEPT",
   "proof": "docs/SIX_ROW_CEILING_DESCENT.md",
   "verifier": "develop/check_six_row_ceiling_descent.py",
   "controls": "output/six-row-ceiling-descent-controls.json",
@@ -40,12 +40,23 @@
     "initial_attempt": "Unknown Nat.strong_induction_on core name; replaced by Nat.strongRecOn before final clean passing audit. Failed attempt is not counted as validation."
   },
   "review": {
-    "status": "LIVE_NO_VERDICT",
+    "status": "COMPLETED_ACCEPT",
     "original_stream_session": 27595,
     "request": "output/six-row-ceiling-descent-review-request.json",
     "stream": "output/six-row-ceiling-descent-review-stream.sse",
-    "pool_preflight": {"ready": 20, "busy": 5, "needs_attention": 1, "queued": 0},
-    "scope": "Separate self-contained new proof, exact source/charge/inventory code, final scoped Lean, final verifier and controls. Earlier mixed debit ACCEPT does not cover this theorem. No duplicate live task or worker changes."
+    "pool_preflight": {
+      "ready": 20,
+      "busy": 5,
+      "needs_attention": 1,
+      "queued": 0
+    },
+    "scope": "Independent full written classification, actual source confinement, noncircular bounded descent, boundary H0/H5 exclusion, interior H/rotor separation, exact aligned-H peeling and no-rotor withH chamber>=10 corollary. No Python or Lean rerun by reviewer; source decomposition remains explicit, V/rotor residual and global goals open.",
+    "task_id": "2a3b4f9e-f29d-42dc-aa8e-2901bb8e7f1c",
+    "conversation_id": "conv_1b43f64ccd85f367",
+    "terminal": "output/six-row-ceiling-descent-review-terminal.json",
+    "response_chars": 16326,
+    "observed_model": "gpt_6/pro",
+    "transport": "Original27595 EOF; recovered same dispatched task through verified matching session prompt, then terminal task API. No streamed response available for byte comparison; no resubmission."
   },
   "limitations": "General V/rotor residual budget, odd-start H shared tile bands, arbitrary source decomposition, exterior sign, unrestricted global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged; no mail actions."
 }
