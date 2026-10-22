@@ -328,6 +328,18 @@ Run:
 
     PYTHONDONTWRITEBYTECODE=1 python3 develop/check_compensation_flow_normal_form.py --output output/compensation-flow-normal-form-validation.json
 
+A later geometric probe checks 432 completely frozen images: both actual
+matchings of the bent fixture, four tile alignments under all eight grid
+symmetries, occupied bands, capacity-two rotors, branched stars, and connected
+branched chains through eight modules of stars. Of these images, 206 have
+nonempty alpha demand; all of them have full allocation at zero additional
+link cost. Thus this probe supplies no new obstruction requiring mixed relay
+transport. A separate degree-four control is not completely frozen and its
+32 images are excluded explicitly. These are finite geometric controls,
+not a general route-existence theorem or part of the original review input.
+
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_compensation_flow_geometry_frontier.py --output output/compensation-flow-geometry-frontier.json
+
 The separate standalone Lean source formalizes the route uniqueness and finite
 separator-counting interface, the disjoint protected-core combination, and the
 exact resource ledger. The full alternating-component normalization, integral
