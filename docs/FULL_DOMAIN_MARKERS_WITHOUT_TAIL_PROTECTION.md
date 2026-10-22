@@ -221,9 +221,11 @@ statements already described.
 
 The checker reconstructs signs on the complete original graph, rather
 than restoring contracted one-edge tails. It passes 253,924 abstract
-complete replacements on at most eight N-covered vertices, both chosen
-ends, selected source/donor paths individually through two PP pairs,
-paid alpha/beta/mixed relays and cycles through two pairs. There are
+complete replacements on at most eight N-covered vertices and both chosen
+ends. Selected source/donor paths individually have up to two PP pairs.
+Optional individual alpha/beta/mixed relays have zero or one PP pair;
+there is also the specified size-zero alpha/beta relay-pair option.
+There is at most one abstract old cycle, with one or two PP pairs. There are
 342,448 exhaustive abstract sign controls, 81,316 coherent certificates
 and 212,528 replacements that change an old auxiliary edge inside a
 selected source/donor path. It checks (2) with vertex identities before
