@@ -245,13 +245,17 @@ Run the permanent finite controls with
 The original PP note's initial review was REVISE, because of the global scope
 defect repaired by Sections1--2. Its local results and phase computations were
 confirmed, not rejected. There is no final ACCEPT inferred from that initial
-answer. Further review status is recorded separately.
-The original follow-up task is aa9e1dd1-aab2-4a8a-b5cb-7b59bb23d3fe in
-conversation conv_7d6fdd1e46228804, original streaming session35550. Its
-29605-character prompt agrees exactly with the service session. It covers
-the corrected prior note and this complete new general proof, not execution.
-It remains dispatched/waiting_response at this record; no new verdict is
-inferred. See output/receiver-overlap-and-pp-source-collision-review-live.json.
+answer. The original follow-up task aa9e1dd1-aab2-4a8a-b5cb-7b59bb23d3fe
+completed ACCEPT at 13:12:11 UTC, actual gpt_6/pro. It explicitly accepts the
+corrected earlier PP note independently and also accepts this complete new
+general proof and all-parameter family. The original 29605-character prompt
+agrees exactly with the service session, and the complete 20001-character
+answer agrees exactly across the original DONE stream, terminal task and
+session. The original streaming session35550 exits0. The review does not
+certify finite-verifier or Lean execution. Its full answer is archived in
+output/receiver-overlap-and-pp-source-collision-oracle.json, and the terminal
+receipt in output/receiver-overlap-and-pp-source-collision-review-live.json.
+No owned review for these results remains live.
 
 The next problem is to charge source collisions and any possible connector
 cycles to disjoint ORIGINAL interior interval or BP--BP reserves, with the

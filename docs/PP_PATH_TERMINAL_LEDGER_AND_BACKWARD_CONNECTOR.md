@@ -290,7 +290,11 @@ The initial independent written review returned REVISE: it confirmed the
 local results and all-parameter constructions, but identified the missing
 single-terminal/additive-receiver scope in the global paragraph. That scope
 is now explicit above. The full response is archived in
-output/pp-path-terminal-ledger-initial-review.json. This is not a final ACCEPT.
+output/pp-path-terminal-ledger-initial-review.json. That initial verdict remains
+REVISE as a historical record. Follow-up aa9e1dd1 completed ACCEPT and explicitly
+accepted this corrected note independently of its new companion; see
+output/receiver-overlap-and-pp-source-collision-oracle.json for the complete
+written review and its exact scope. Neither review certifies code execution.
 
 The remaining research problem is a geometric proof of (4), or a more precise
 counterexample to a proposed ownership rule, for arbitrary retained-support
