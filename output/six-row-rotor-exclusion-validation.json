@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_GENERAL_EXCLUSION_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_PENDING",
+  "proof": "docs/SIX_ROW_ROTOR_EXCLUSION.md",
+  "verifier": "develop/check_six_row_rotor_exclusion.py",
+  "controls": "output/six-row-rotor-exclusion-controls.json",
+  "theorem": "No standard rotor occurs in a complete retained-support six-row pocket at arbitrary even width under the explicit full-even-U/standard-rotor source decomposition. Uses accepted ceiling H projection exclusion; top rotor forces two V walls, full top row, unique possible lower rotor at(2,2), even bottom tips and unconsumable odd beyond-tip support. Reflections exclude top2; remaining middle rotor forces an impossible same-phase corner consumer.",
+  "whole_pocket_consequence": "Previous accepted all-phase budget now covers ALL sources in this complete pocket model, with no extra no-rotor assumption: Phi>=a+2b+sum(B-1)+u; empty/nonempty/withH pocket bounds0/2/5 and spanning-upward chamber bounds5/7/10. Nonempty2/7 sharp in established local two-V families at all even W>=12. Exterior and global applicability remain open.",
+  "python": {
+    "exit_code": 0,
+    "execution_chunk": "8a3ac5",
+    "boundary_anchor_roles": 6,
+    "lower_upper_support_roles": 6,
+    "lower_survivors": [[false, 2]],
+    "middle_corner_roles": 8,
+    "closed_top_gap_pairs": 142,
+    "forbidden_right_tip_controls": 16,
+    "middle_stem_controls": 36,
+    "largest_top_depth": 2000,
+    "scope": "Exact canonical rotor shape identities, V interval/parity and renewed support controls. General actual-owner classification, walls, completeness and all-width exclusion are the separate written proof."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SixRowRotorExclusion.lean",
+    "version": "4.33.0",
+    "exit_code": 0,
+    "original_session": 21198,
+    "final_execution_chunk": "f17c24",
+    "local_theorems": 11,
+    "individual_declaration_axiom_audits": 13,
+    "axioms": "Only ordinary propext/Classical.choice/Quot.sound or none; final run has no warnings/errors/sorry/native.",
+    "preflight_memory_free_percent": 54,
+    "real_lean_lake_processes_before_run": [],
+    "scope": "Explicit arbitrary-translation rotor predicates; all boundary anchor collisions, unique lower role, all middle-corner collisions, top endpoint below neighbour, even V bottom tips, odd renewed support gap and numerical consequences. Canonical support adapters, connected confinement, actual-owner completeness and full inventory assembly remain written.",
+    "initial_attempt": "Boundary tactic heartbeat timeout and unsimplified Boolean goal in lower classification; explicit top=0/corner cases and goal simplification fixed before final clean passing run. Failed run is not validation evidence."
+  },
+  "review": {
+    "status": "DISPATCHED_ORIGINAL_STREAM_LIVE",
+    "task_id": "0c67255e-f5fe-46ec-bac6-4dfe871c3feb",
+    "conversation_id": "conv_ac836c5b3d584878",
+    "original_stream_session": 63963,
+    "request": "output/six-row-rotor-exclusion-review-request.json",
+    "stream": "output/six-row-rotor-exclusion-review-stream.sse",
+    "original_prompt_match_verified": true,
+    "pool_preflight": {"ready": 23, "busy": 2, "needs_attention": 1, "queued": 0},
+    "scope": "New no-rotor theorem and unconditional-within-model whole-pocket consequence; not covered by prior all-phase audit. Reviewer code execution is not presumed."
+  },
+  "limitations": "Explicit full-U/rotor source decomposition remains assumed. Other wider-gate/chamber branches, exterior sign, unrestricted global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged. No Mail action."
+}
