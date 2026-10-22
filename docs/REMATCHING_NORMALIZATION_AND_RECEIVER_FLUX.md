@@ -307,3 +307,10 @@ The immutable-source39/41 ledger is not automatically inherited after a
 matching exchange changes source ownership. This note uses the physical
 whole-receiver ledger; applying a source-labelled bound afterwards requires
 reestablishing its own hypotheses.
+
+Further structural reduction: exchange terminality does not imply a unique
+perfect matching, even for a positive connected receiver. The explicit
+fourteen-endpoint obstruction and all-even positive elbow graft in
+EXCHANGE_TERMINAL_NONUNIQUE_MATCHINGS.md have exactly two perfect matchings,
+both frozen. Thus the general compensation target must retain flexible
+matching blocks rather than identifying exchange terminality with uniqueness.

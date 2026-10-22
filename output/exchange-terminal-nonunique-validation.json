@@ -1,0 +1,5745 @@
+{
+  "status": "PASS",
+  "base_shape": [
+    6,
+    8
+  ],
+  "base_selected": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      3
+    ]
+  ],
+  "base_matching": [
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ]
+  ],
+  "forced_matching_order": [
+    [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    [
+      [
+        4,
+        1
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    [
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ]
+  ],
+  "base_ledger": {
+    "receivers": [
+      {
+        "endpoints": 14,
+        "tiles": 7,
+        "selected": 7,
+        "charge_twice": 0,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      }
+    ],
+    "no_endpoint_tiles": 5,
+    "empty_deficit": 8,
+    "objective": 16,
+    "area": 48
+  },
+  "both_matching_certificates": [
+    {
+      "matching": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "layers": [
+        [
+          {
+            "endpoint": [
+              1,
+              1
+            ],
+            "kept_neighbors": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              5
+            ],
+            "kept_neighbors": [
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              4,
+              1
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                0
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              1,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              4,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              2,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                4
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              2,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              2,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              1,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                5
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              4,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              1,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "matching": [
+        [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        [
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        [
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      ],
+      "layers": [
+        [
+          {
+            "endpoint": [
+              1,
+              1
+            ],
+            "kept_neighbors": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              5
+            ],
+            "kept_neighbors": [
+              [
+                3,
+                6
+              ],
+              [
+                4,
+                5
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              4,
+              1
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                0
+              ],
+              [
+                5,
+                1
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              1,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              4,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              2,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              2,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              3,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              2,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              4,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              1,
+              2
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              1,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                1,
+                3
+              ],
+              [
+                1,
+                5
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              3,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                3
+              ]
+            ]
+          }
+        ]
+      ]
+    }
+  ],
+  "base_symmetry_controls": 8,
+  "positive_family_parameters": 72,
+  "all_phase_graft_controls": 288,
+  "phase_charges": {
+    "(0, 0)": [
+      1
+    ],
+    "(0, 1)": [
+      -3
+    ],
+    "(1, 0)": [
+      -22,
+      -20,
+      -18,
+      -16,
+      -14,
+      -12,
+      -10,
+      -8,
+      -6
+    ],
+    "(1, 1)": [
+      -22,
+      -20,
+      -18,
+      -16,
+      -14,
+      -12,
+      -10,
+      -8,
+      -6
+    ]
+  },
+  "positive_graft_symmetry_controls": 24,
+  "scope": "Finite controls of the separate general forcing, freeze-transcript and positive all-even-parameter graft proofs. No universal compensation or coefficient improvement follows from the counterexample.",
+  "graft_records": [
+    {
+      "width": 6,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 14,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 13,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 15,
+        "selected": 8,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 12,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 16,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 14,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 17,
+        "selected": 10,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 13,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 18,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 15,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 19,
+        "selected": 12,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 14,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 20,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 16,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 21,
+        "selected": 14,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 15,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 22,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 17,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 23,
+        "selected": 16,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 16,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 24,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 25,
+        "selected": 18,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 17,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 26,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 20,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 18,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 6,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 28,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 6,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 22,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 6,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 19,
+        "selected": 2,
+        "charge_twice": -12,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 15,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 14,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 17,
+        "selected": 8,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 14,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 17,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 15,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 19,
+        "selected": 10,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 15,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 19,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 16,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 21,
+        "selected": 12,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 16,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 21,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 17,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 23,
+        "selected": 14,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 17,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 23,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 25,
+        "selected": 16,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 25,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 18,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 27,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 20,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 8,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 29,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 8,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 22,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 8,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 2,
+        "charge_twice": -16,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 16,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 15,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 19,
+        "selected": 8,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 16,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 18,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 16,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 21,
+        "selected": 10,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 17,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 20,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 17,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 23,
+        "selected": 12,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 18,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 22,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 25,
+        "selected": 14,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 19,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 24,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 16,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 20,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 26,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 18,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 21,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 28,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 20,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 22,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 10,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 30,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 10,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 22,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 10,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 23,
+        "selected": 2,
+        "charge_twice": -20,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 17,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 16,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 21,
+        "selected": 8,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 18,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 19,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 17,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 23,
+        "selected": 10,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 19,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 21,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 25,
+        "selected": 12,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 20,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 23,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 14,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 21,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 25,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 16,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 22,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 27,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 18,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 23,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 29,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 20,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 24,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 12,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 31,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 12,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 23,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 35,
+        "selected": 22,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 12,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 25,
+        "selected": 2,
+        "charge_twice": -24,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 18,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 17,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 23,
+        "selected": 8,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 20,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 20,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 25,
+        "selected": 10,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 21,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 22,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 12,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 22,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 24,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 14,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 23,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 26,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 16,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 24,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 28,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 18,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 25,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 30,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 23,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 35,
+        "selected": 20,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 26,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 14,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 32,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 14,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 24,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 37,
+        "selected": 22,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 14,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 27,
+        "selected": 2,
+        "charge_twice": -28,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 19,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 18,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 25,
+        "selected": 8,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 52,
+        "tiles": 22,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 21,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 10,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 23,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 23,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 12,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 24,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 25,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 14,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 25,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 27,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 16,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 26,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 29,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 23,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 35,
+        "selected": 18,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 27,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 31,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 24,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 37,
+        "selected": 20,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 28,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 16,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 33,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 16,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 25,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 39,
+        "selected": 22,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 16,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 29,
+        "selected": 2,
+        "charge_twice": -32,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 20,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 19,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 27,
+        "selected": 8,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 56,
+        "tiles": 24,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 22,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 10,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 25,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 24,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 12,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 26,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 26,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 14,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 27,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 28,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 23,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 35,
+        "selected": 16,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 28,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 30,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 24,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 37,
+        "selected": 18,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 29,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 32,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 25,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 39,
+        "selected": 20,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 30,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 18,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 34,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 18,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 26,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 41,
+        "selected": 22,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 18,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 31,
+        "selected": 2,
+        "charge_twice": -36,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 21,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 20,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 29,
+        "selected": 8,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 60,
+        "tiles": 26,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 23,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 10,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 27,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 25,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 12,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 28,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 27,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 23,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 35,
+        "selected": 14,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 29,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 29,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 24,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 37,
+        "selected": 16,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 30,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 31,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 25,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 39,
+        "selected": 18,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 31,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 33,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 26,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 41,
+        "selected": 20,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 32,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 20,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 35,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 20,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 27,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 43,
+        "selected": 22,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 20,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 33,
+        "selected": 2,
+        "charge_twice": -40,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 4,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 22,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 4,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 21,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 4,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 31,
+        "selected": 8,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 4,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 64,
+        "tiles": 28,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 6,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 24,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 6,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 22,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 6,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 33,
+        "selected": 10,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 6,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 68,
+        "tiles": 29,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 8,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 26,
+        "selected": 17,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 8,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 23,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 8,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 35,
+        "selected": 12,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 8,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 72,
+        "tiles": 30,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 10,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 28,
+        "selected": 19,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 10,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 24,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 10,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 37,
+        "selected": 14,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 10,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 76,
+        "tiles": 31,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 12,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 30,
+        "selected": 21,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 12,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 25,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 12,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 39,
+        "selected": 16,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 12,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 80,
+        "tiles": 32,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 14,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 32,
+        "selected": 23,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 14,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 26,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 14,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 41,
+        "selected": 18,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 14,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 84,
+        "tiles": 33,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 16,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 34,
+        "selected": 25,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 16,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 27,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 16,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 43,
+        "selected": 20,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 16,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 88,
+        "tiles": 34,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    },
+    {
+      "width": 22,
+      "height": 18,
+      "phase": [
+        0,
+        0
+      ],
+      "receiver": {
+        "endpoints": 92,
+        "tiles": 36,
+        "selected": 27,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 4,
+        "transfers": 4
+      }
+    },
+    {
+      "width": 22,
+      "height": 18,
+      "phase": [
+        0,
+        1
+      ],
+      "receiver": {
+        "endpoints": 92,
+        "tiles": 28,
+        "selected": 7,
+        "charge_twice": -6,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 18,
+      "phase": [
+        1,
+        0
+      ],
+      "receiver": {
+        "endpoints": 92,
+        "tiles": 45,
+        "selected": 22,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    },
+    {
+      "width": 22,
+      "height": 18,
+      "phase": [
+        1,
+        1
+      ],
+      "receiver": {
+        "endpoints": 92,
+        "tiles": 35,
+        "selected": 2,
+        "charge_twice": -44,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      }
+    }
+  ]
+}
