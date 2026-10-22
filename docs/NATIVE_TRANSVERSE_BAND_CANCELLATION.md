@@ -279,11 +279,18 @@ adapter, actual interval-edge uniqueness, boundary source/sink ownership,
 and explicit coordinate constructions remain written proofs. The execution
 receipt is output/native-transverse-band-cancellation-lean.json.
 
-The new independent written review receives Sections 1--5 and the complete
-occupied-strip dependency. The later positive-source coordinate application
-and following residual witness were added after dispatch and are not claimed
-as covered by that review. Their permanent finite controls pass separately.
-The earlier occupied-strip review does not cover this new theorem.
+The new independent written review completed ACCEPT for Sections 1--5 and
+the complete occupied-strip dependency. Its original request agrees exactly
+with the recorded session prompt, and its original DONE-stream answer agrees
+exactly with both terminal task and session. The full 15463-character answer
+is archived in output/native-transverse-band-cancellation-oracle.json,
+actual gpt_6/pro, task083d42b8. This is a written mathematical review, not
+certification of verifier or Lean execution.
+
+The later positive-source coordinate application and following residual
+witness were added after dispatch and are not claimed as covered by that
+review. Their permanent finite controls pass separately. No review job for
+the native transverse theorem remains live.
 
 The genuinely residual exits are those whose endpoints cannot both exhibit
 two original selected neighbors, including longer endpoint components that
