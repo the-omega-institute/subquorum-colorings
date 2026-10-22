@@ -176,8 +176,9 @@ is exhaustive and nonoverlapping. A cyclic binary word has equally many
 (3) follows. The unchanged original tails preserve all endpoint labels.
 QED.
 
-Uniform epsilon gives zero residual alpha and r mixed paths. Alternating
-epsilon gives c_10=floor(r/2), the maximum possible value: each 1->0
+Uniform epsilon gives zero residual alpha and r mixed paths. Taking
+epsilon_i=i mod 2, with one equal wraparound pair when r is odd, gives
+c_10=floor(r/2), the maximum possible value: each 1->0
 transition uses a distinct 1 and a distinct 0, so c_10<=min(#0,#1)<=r/2.
 Thus distinct donors and vertex-disjoint augmentations can still leave
 an arbitrarily large number of alphas. The failed rule is simultaneous
@@ -186,7 +187,7 @@ example is abstract endpoint accounting; no frozen grid embedding or
 counterexample to the target inequality is claimed. Signed charge remains
 zero for every word.
 
-The smallest r=2 obstruction has 12 endpoints. Take epsilon=(0,1):
+The smallest member of this family, at r=2, has 12 endpoints. Take epsilon=(0,1):
 the final inventory is alpha=beta=1 and mixed=0, although both source
 and donor choices were distinct. For the same graph, epsilon=(0,0)
 gives alpha=beta=0 and mixed=2. The distinction is the direction of the
@@ -207,8 +208,12 @@ global orientation budget, the exact family formula (3), valid vertex
 disjoint augmentations and distinct original donors. Finite controls
 support the written all-r and arbitrary-replacement proofs.
 
-The local run passes 5,422 arbitrary balanced replacements (3,195 also
-decompose into distinct-source/distinct-donor TP--BP augmentations), 8,536
+The local run passes 5,422 arbitrary balanced replacements. Of these,
+3,195 have only TP--BP path components in A union N; their symmetric
+differences consist of augmenting paths with distinct original sources
+and donors, possibly together with alternating-cycle exchanges. It also
+separately verifies 2,853 pure-augmentation replacements, with only
+unchanged doubled A edges as cycle components. It also passes 8,536
 cyclic-word controls, 38,427 signed colourings and 13,958 parity/rank
 certificates. Among these, 1,452 low-rank replacements completely repair
 the sources. Another 915 cases have no coherent orientation certificate
@@ -222,6 +227,9 @@ alpha/beta paths, and summed nonreuse bounds for arbitrary finite lists
 of supplied routes. Its interface does not construct graph components,
 prove they are disjoint, or certify physical grid availability. Those
 steps belong to the written proof and graph reconstruction checks.
+The formal budgets count edge-list occurrences. Identifying those
+occurrences with distinct matching edges uses the component-disjointness
+proved in the written graph argument.
 Ten main statements and their individual axiom audits pass locally in
 Lean 4.33.0 using only propext and, except for the walk identity,
 Quot.sound. The rank theorem consumes the separately proved forest-error
@@ -235,5 +243,12 @@ repair remains covered by the previous theorem, rather than automatically
 falling under this cycle-only extension. Universal grid compensation,
 the universal 5/6 improvement and triple equality remain open. The global
 outside-overlap correction is still retained once where applicable.
+
+Independent source-level review 2197a406 returned ACCEPT of the written
+results and identified the optional-cycle-exchange reporting correction
+above. Its full assessment is archived in
+output/shared-cycle-orientation-oracle.json. It did not independently
+execute the checker or Lean. Actual PP-cycle normalization was developed
+after that review input and is reviewed separately.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

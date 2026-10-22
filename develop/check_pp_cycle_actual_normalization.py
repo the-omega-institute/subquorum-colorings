@@ -70,7 +70,9 @@ def abstract_controls(totals):
                                for record in operations):
                         continue
                     compensate(vertices, actual, auxiliary, replacement, kinds, totals)
-                    totals['small_distinct_donor_augmentation_controls'] += 1
+                    totals['small_tp_bp_path_and_optional_cycle_controls'] += 1
+                    if all(record['ends'] or len(record['vertices']) == 2 for record in operations):
+                        totals['small_pure_augmentation_controls'] += 1
 
 
 def word_control(word, totals):

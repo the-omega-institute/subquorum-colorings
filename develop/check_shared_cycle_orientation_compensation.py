@@ -127,7 +127,9 @@ def exhaustive_controls(totals):
                     if all(not record['ends'] or
                            {kinds[point] for point in record['ends']} == {'TP', 'BP'}
                            for record in operations):
-                        totals['augmentations_with_distinct_source_and_donor'] += 1
+                        totals['tp_bp_paths_with_optional_cycle_exchanges'] += 1
+                        if all(record['ends'] or len(record['vertices']) == 2 for record in operations):
+                            totals['pure_distinct_source_donor_augmentation_replacements'] += 1
                     totals['arbitrary_balanced_auxiliary_replacements'] += 1
 
 

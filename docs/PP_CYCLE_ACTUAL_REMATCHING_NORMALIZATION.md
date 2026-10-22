@@ -88,6 +88,11 @@ cycle. Other cycles and unselected open strands are unchanged. This
 proves (2) and the old-certificate assertion. Coverage and equal removal
 of signs prove the zero-debt ledger. QED.
 
+The same inventory conclusion permits additional disjoint auxiliary
+alternating-cycle exchanges on unused cycle vertices. After normalization
+their union with M*=A consists only of closed alternating cycles, so
+they neither create free ends nor change any of the mixed paths.
+
 Unlike the fixed-M coherent-orientation theorem, this statement permits
 arbitrarily conflicting directions through the same original cycle.
 It handles that conflict by changing the actual matching on the cycle.
@@ -125,12 +130,16 @@ checking feasible grid edges and complete freezing before and after the
 exchange. These controls do not establish a general existence theorem.
 
 The local run passes 11,731 complete simultaneous-compensation controls:
-3,195 qualifying small replacements and 8,536 cyclic-word repairs, including
+3,195 small replacements whose A union N path components are TP--BP
+(possibly with independent alternating-cycle exchanges), and 8,536 cyclic-word repairs, including
 alternating words through length 128. It also checks 320 physical instances
 (the core and nine grafts, eight symmetries, four phases); 80 change the
 actual matching. Every physical instance is feasible and completely frozen
 both before and after this particular exchange. There are 12,051 total
 normalization controls and 10,549 nontrivial cycles normalized across them.
+Of the 3,195 small replacements, 2,853 use only augmentations, with no
+nontrivial independent alternating-cycle exchange. The separate count
+clarifies the original classifier rather than changing its test domain.
 
 The associated Lean source proves the normalization involution, absence
 of fixed points, preservation of permitted adjacency, equality to A on
