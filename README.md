@@ -1,10 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
-Next-step [matching-cost-fourteen reduction](docs/COST_FOURTEEN_COMPENSATION_REDUCTION.md):
-the two remaining low-cost shapes suggest a defect witness or a negative long-leg
-matching credit. Six scoped Lean lemmas and 69,120 signed budget controls prove
-the CONDITIONAL 37/39 arithmetic. Arbitrary-dimension geometry and the combined
-physical injections are explicitly OPEN; 37/39 is not an established bound.
+New [cost-fourteen compensation theorem](docs/COST_FOURTEEN_GEOMETRY_AND_37_39.md):
+U(8,6,8) forces a protected pair tile; an uncompensated U(8,4,10) forces a
+distinct original negative height-eight leg. Their shared physical injection
+and original matching budget give coefficient37/39 for the specified COMPLETE
+source model under the existing representative ledger. Nine new geometry
+Lean lemmas complement the six previously checked counting lemmas. Exact
+controls allocate256actual defect slots in832complete images, with ZERO new
+cost-fourteen double occurrences; those branches rely on the written
+all-parameter proof. New independent review is pending. The earlier
+[conditional reduction](docs/COST_FOURTEEN_COMPENSATION_REDUCTION.md) is preserved.
+Section7 gives a later arbitrary-height tight-terminal pair lemma, strengthening
+the shared reserve to2R>=2z+s+2t+p and expanding the26/27 actual-double class;
+three more Lean lemmas and1408local masks pass. This supplemental extension is
+OUTSIDE the current independent review input.
 
 New general complete-source coefficient:
 [the low-cost double obstruction](docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md)
@@ -13,7 +22,7 @@ Adding these shapes to the single-use two-slot class raises the remaining
 exceptional matching cost from13to14, giving35/37 instead of33/35 for every
 complete-source fusion under the existing representative ledger.15scoped Lean
 theorems/16audits,323role collisions,704complete physical images and19691signed
-budgets pass; independent review is pending. No newly covered double shape
+budgets pass; independent written review ACCEPTS this35/37 theorem. No newly covered double shape
 occurs in the physical fixtures, and arbitrary-grid decomposition remains OPEN.
 
 Latest complete-exterior checkpoint: the [localized general theorem](docs/LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md)
@@ -38,7 +47,7 @@ For width6 and all gaps10, coefficient one therefore follows when the number
 of doubly marked exterior positives minus unmarked exterior positives is at
 most4g+2d. This removes an upper bound on the total exterior-positive count.
 The written proof,640 physical images,150 whole families and13 scoped Lean
-theorems pass; its separate independent review is pending. The initial controls
+theorems pass; its separate independent written review ACCEPTS this theorem. The initial controls
 have no singly marked exterior examples;20supplemental complete families now
 exercise90such occurrences and realize unbounded single-mark counts.
 

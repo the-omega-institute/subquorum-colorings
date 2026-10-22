@@ -32,7 +32,7 @@ from33/35 to35/37 for EVERY complete-source fusion under the stated ledger:
     |T_sel|+(35/37)|M| <= mn/2,
     equivalently 74|T_sel|+70|M| <= 37mn.             (1)
 
-This is a strict improvement of4|M|/1295 over33/35 and25|M|/222 over5/6 on
+This improves by4|M|/1295 over33/35 and25|M|/222 over5/6, strictly for |M|>0, on
 the SAME admitted configurations. No sharpness of35/37 is asserted.
 
 ## The two occupied gates cannot coexist without activation
@@ -73,7 +73,7 @@ other leg, all even. Its exact chart from the canonical U(v,h,e) is
 Its near stem runs along row2, columns2 through h+2. The positive producer
 already owns (2,8), so h+2<8; evenness gives h=4. Consequently L has
 
-    {2,...,v+1} x {5,6} as its bar,    v>=6,          (3)
+    {(r,c): 2<=r<=v+1, c in {5,6}} as its bar, v>=6. (3)
 
 and has no endpoint in a column greater than6. In particular it does not
 own the right gate (2,7); the right owner is a different original.
@@ -89,7 +89,8 @@ from column7 by a breadth at least6. Hence it contains
     (k+1,6), with k+1 in {5,7}.                     (4)
 
 Both alternatives belong to L's bar (3), since v+1>=7. The two originals
-therefore overlap, a contradiction. The other incident and far leg lengths
+therefore own the SAME original endpoint at (5,6) or (7,6), contradicting
+original endpoint disjointness. The other incident and far leg lengths
 were unrestricted throughout. Reflection in column9-c proves the exchanged
 positive dimensions, and tiling-preserving isometries transport the proof.
 This is an arbitrary-dimension obstruction, not a finite role search.
@@ -116,7 +117,10 @@ TWO_SLOT_COMPENSATION_FOR_UNACTIVATED_DOUBLES.md, Sections2--5.
 Every zero-activation double newly added to C* has a blank gate by the new
 obstruction. It therefore uses one blank canonical tile's two slots. Assign
 one such tile to each zero-activation double having a blank gate; the source
-and side labels make this injective. The remaining zero-activation doubles
+and side labels are injective into PHYSICAL tiles by the inherited global
+canonical donor-tile theorem. Let Bzero be this pool of compensated
+zero-activation doubles with a blank gate and Cocc its complement, so
+z=|Bzero|+|Cocc|. The remaining zero-activation doubles
 are in the old class with both gates occupied and use their old distinct
 witness tiles. These two pools are physically disjoint by the inherited
 cross-type injection. Thus, in the SAME exact defect pool,
@@ -125,7 +129,8 @@ cross-type injection. Thus, in the SAME exact defect pool,
     2R>=2z+s+2t.                                    (5)
 
 No extra use of A, full-tile credit or original source charge is made.
-Because R is integer and G-N=(z+s+t+e)-n0, (5) yields
+If n1 counts one-mark positives, N=n0+n1+z+s+t+e and
+G=n1+2(z+s+t+e), so G-N=(z+s+t+e)-n0. Because R is integer, (5) yields
 
     mu=n0+R-z-s-t-e >= n0-e-floor(s/2).              (6)
 
@@ -199,7 +204,12 @@ All15scoped Lean theorems and16individual declaration axiom audits passed on
 the user-selected local Mac, with50percent free memory and no real lean/lake
 before the final invocation. No warning, error, sorry or native evaluation
 occurs; only ordinary propext, Classical.choice and Quot.sound axioms or none.
-Independent audit43ac52be-e334-492c-9794-7bd17b5c31ad is dispatched in
-conv_bebdfd886f431153 on original stream38214. The review is pending and is
-distinct from prior accepted compensation theorems. See
+Independent audit43ac52be-e334-492c-9794-7bd17b5c31ad completed ACCEPT at
+05:12:20UTC, observed gpt_6/pro, 11648 characters. Original prompt matches
+the session; original stream38214 ended DONE and its response exactly matches
+the task and session. The audit accepts the written proof under the explicit
+gate catalogue, physical two-slot injection and marked-side budget dependencies;
+it did not execute code or Lean. Its coordinate, source-census, physical-pool
+and strictness clarifications are incorporated above. See
+output/35-37-and-mark-excess-independent-reviews.json and
 output/low-cost-exceptional-35-37-validation.json for commands and scope.

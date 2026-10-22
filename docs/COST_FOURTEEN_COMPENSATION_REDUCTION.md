@@ -6,6 +6,12 @@ Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofrea
 
 ## Status and inherited scope
 
+Historical checkpoint: the conditional reduction below predates the completed
+written geometry in COST_FOURTEEN_GEOMETRY_AND_37_39.md. That follow-on note
+closes the two obligations stated here, with its own validation and independent
+review status. The previous 35/37 theorem has since received independent ACCEPT.
+The remainder of this document preserves the original conditional checkpoint.
+
 This is a research reduction, not a completed improvement theorem. The written
 complete-source coefficient remains 35/37, with its independent review pending.
 Use exactly the finite COMPLETE immutable full-even-U/standard-rotor model and

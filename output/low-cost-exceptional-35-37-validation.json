@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "WRITTEN_GENERAL_LOW_COST_OBSTRUCTION_AND_35_37_PROOF_SCOPED_CHECKS_PASS_REVIEW_RUNNING",
+  "status": "WRITTEN_GENERAL_LOW_COST_OBSTRUCTION_AND_35_37_PROOF_SCOPED_CHECKS_PASS_REVIEW_ACCEPTED",
   "note": "docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md",
   "claims": {
     "obstruction": "Positive U(8,4,8) and its reflected shape cannot have both gates occupied while both original terminal occurrences are unactivated; exact forced crossbar intersection for arbitrary legal incoming dimensions.",
@@ -74,10 +74,16 @@
   "independent_review": {
     "task_id": "43ac52be-e334-492c-9794-7bd17b5c31ad",
     "conversation_id": "conv_bebdfd886f431153",
-    "status": "DISPATCHED",
+    "status": "COMPLETED_ACCEPT_UNDER_EXPLICIT_DEPENDENCIES",
     "original_stream_session": 38214,
     "request": "output/low-cost-exceptional-35-37-review-request.json",
-    "stream": "output/low-cost-exceptional-35-37-review-stream.sse"
+    "stream": "output/low-cost-exceptional-35-37-review-stream.sse",
+    "receipt": "output/35-37-and-mark-excess-independent-reviews.json",
+    "prompt_matches_session": true,
+    "response_matches_stream_and_session": true,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "reviewer_executed_code_or_lean": false
   },
   "previous_mark_excess_review": {
     "failed_task": "e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3",
@@ -86,7 +92,7 @@
     "replacement_task": "7fd0661d-40ab-4c29-893f-0e32f98fb5f8",
     "conversation_id": "conv_4d5ca236606b7743",
     "original_stream_session": 59944,
-    "status": "DISPATCHED"
+    "status": "COMPLETED_ACCEPT"
   },
   "sharp_exterior_research": {
     "task_id": "728c56ac-b37e-49e6-9633-ce160e6d50d6",

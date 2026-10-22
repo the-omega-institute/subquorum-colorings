@@ -14,6 +14,13 @@ Let K be any finite COMPLETE extension in the immutable full-even-U/standard-
 rotor model. No extra width, orientation, leg equality, source-count or
 connectivity restriction is imposed on the EXTERIOR originals.
 
+Use the established dual-guard definition with exactly two canonical sides
+per positive U. Every finally occupied witness is an endpoint or an
+unconsumed original support; a consumed support is occupied as an endpoint.
+Optional selections not adjacent to a protector cannot change its degree.
+Arbitrary extra occupied selections adjacent to protectors are not allowed
+by this immutable-source model.
+
 Use the accepted complete width-six chamber classification: each of the g
 chambers contains exactly one spanning D6 or U6 and no other added original.
 Let d be the number of D chambers. Use the established source-to-grid ledger
@@ -186,8 +193,14 @@ classification/localization and the source-to-grid adapter remain written.
 Independent same-conversation audit e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3
 ended with infrastructure_retry_exhausted/cdp_disconnected@typing,
 without a mathematical verdict. Its failed receipt is preserved. After that
-terminal state, fresh independent audit7fd0661d-40ab-4c29-893f-0e32f98fb5f8 was
-dispatched in conv_4d5ca236606b7743 on original stream59944. Prior audit96e3f47c
+terminal state, fresh independent audit7fd0661d-40ab-4c29-893f-0e32f98fb5f8
+completed ACCEPT in conv_4d5ca236606b7743, observed gpt_6/pro, 14752 characters.
+The original prompt equals the session turn, and stream59944 ended DONE with
+response exactly equal to the task and session. The audit confirms the written
+geometry and mark-excess corollary under the explicit chamber/ledger/dual-guard
+dependencies; its requested occupancy convention is stated in the model above.
+It did not execute code or Lean. See
+output/35-37-and-mark-excess-independent-reviews.json. Prior audit96e3f47c
 ACCEPT covers the arbitrary cut conservation and previous coarse marked-slack
 corollary only. See output/width-six-mark-excess-validation.json for commands
 and original handles.
