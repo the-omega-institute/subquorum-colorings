@@ -130,6 +130,12 @@ Such a continuation must prove its own multiplicity and termination bound;
 new terminals must not be silently assumed to have BB ports. That continuation
 and the unified inequality h_2+u<=h_0+beta remain open.
 
+The follow-up TERMINAL_CANCELLATION_AND_STRANDED_DEMAND.md proves exact
+whole-path credit conservation and partial beta-resource ownership, gives
+an obstruction to every horizontal direct-port continuation on the frozen
+family, and proves a selected-cap access lemma that compensates that family
+using real interval reserves. The universal inequality remains open.
+
 ## 5. Degree-three terminality alone does not suffice
 
 On a 4-by-10 board, take actual vertical matching edges
