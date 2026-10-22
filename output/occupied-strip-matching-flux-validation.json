@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "controls": {
+    "regional_models": 1168,
+    "mixed_export_models": 198,
+    "only_nonmixed_export_models": 280,
+    "sealed_even_models": 281,
+    "independent_forced_matching_edges": 10123,
+    "unique_frozen_pairs": 292,
+    "sharp_counterfamily_parameters": 98,
+    "counterfamily_symmetries": 48,
+    "odd_sealed_parity_obstructions": 15,
+    "receiver_closed_occupied_models": 194,
+    "occupied_parameter_triples": 54,
+    "occupied_selection_extensions": 108,
+    "occupied_symmetries": 32
+  },
+  "exhaustive_census": [
+    {
+      "columns": 2,
+      "feasible_matchings": 5,
+      "closed": 3,
+      "with_exports": 2
+    },
+    {
+      "columns": 3,
+      "feasible_matchings": 48,
+      "closed": 17,
+      "with_exports": 31
+    },
+    {
+      "columns": 4,
+      "feasible_matchings": 380,
+      "closed": 81,
+      "with_exports": 299
+    },
+    {
+      "columns": 5,
+      "feasible_matchings": 380,
+      "closed": 380
+    }
+  ],
+  "counterexamples": [
+    {
+      "columns": 4,
+      "sealed": false,
+      "surplus_twice": 1,
+      "delta": 1,
+      "mixed_exports": 1,
+      "all_exports": 1,
+      "forest_components": 1,
+      "unused_bp": 0,
+      "internal_matching_edges": 0
+    },
+    {
+      "columns": 4,
+      "sealed": true,
+      "surplus_twice": 3,
+      "delta": 2,
+      "mixed_exports": 1,
+      "all_exports": 1,
+      "forest_components": 2,
+      "unused_bp": 0,
+      "internal_matching_edges": 0
+    },
+    {
+      "columns": 20,
+      "sealed": false,
+      "surplus_twice": 1,
+      "delta": 1,
+      "mixed_exports": 1,
+      "all_exports": 1,
+      "forest_components": 1,
+      "unused_bp": 0,
+      "internal_matching_edges": 0
+    },
+    {
+      "columns": 20,
+      "sealed": true,
+      "surplus_twice": 3,
+      "delta": 2,
+      "mixed_exports": 1,
+      "all_exports": 1,
+      "forest_components": 2,
+      "unused_bp": 0,
+      "internal_matching_edges": 0
+    },
+    {
+      "columns": 100,
+      "sealed": false,
+      "surplus_twice": 1,
+      "delta": 1,
+      "mixed_exports": 1,
+      "all_exports": 1,
+      "forest_components": 1,
+      "unused_bp": 0,
+      "internal_matching_edges": 0
+    },
+    {
+      "columns": 100,
+      "sealed": true,
+      "surplus_twice": 3,
+      "delta": 2,
+      "mixed_exports": 1,
+      "all_exports": 1,
+      "forest_components": 2,
+      "unused_bp": 0,
+      "internal_matching_edges": 0
+    }
+  ],
+  "occupied_examples": [
+    {
+      "width": 22,
+      "height": 4,
+      "pairs": 1,
+      "surplus_twice": 32,
+      "delta": 2,
+      "mixed_exports": 0,
+      "all_exports": 0,
+      "forest_components": 16,
+      "unused_bp": 0,
+      "internal_matching_edges": 1
+    },
+    {
+      "width": 22,
+      "height": 10,
+      "pairs": 1,
+      "surplus_twice": 28,
+      "delta": 2,
+      "mixed_exports": 0,
+      "all_exports": 0,
+      "forest_components": 14,
+      "unused_bp": 0,
+      "internal_matching_edges": 1
+    },
+    {
+      "width": 52,
+      "height": 4,
+      "pairs": 6,
+      "surplus_twice": 52,
+      "delta": 2,
+      "mixed_exports": 0,
+      "all_exports": 0,
+      "forest_components": 26,
+      "unused_bp": 0,
+      "internal_matching_edges": 6
+    },
+    {
+      "width": 52,
+      "height": 10,
+      "pairs": 6,
+      "surplus_twice": 48,
+      "delta": 2,
+      "mixed_exports": 0,
+      "all_exports": 0,
+      "forest_components": 24,
+      "unused_bp": 0,
+      "internal_matching_edges": 6
+    }
+  ],
+  "scope": "Finite controls for the general written matching injection and boundary-forest proof. All partial matchings with transverse completion on strips of lengths 2..4; all closed matchings at length 5. Explicit terminal counterfamilies and receiver-closed occupied neutral families, symmetries and feasible extensions. No unrestricted coverage, crossing allocation or global target counterexample claimed."
+}
