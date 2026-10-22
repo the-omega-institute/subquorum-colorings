@@ -316,8 +316,11 @@ changes the beta-only coverage problem of Sections3--4, so there is no
 contradiction with its parity holes or unavoidable same-sign error.
 
 This positive repair was added after the parity-hole review was dispatched.
-It has the direct argument above and finite checks; that pending review
-does not cover this additional subsection.
+That first task, ef2bd5ff-d074-43cb-b1d2-81d185cc755e, subsequently ended in
+`infrastructure_retry_exhausted / cdp_disconnected@typing` without a
+mathematical answer. Its failure is archived separately. The full version,
+including this repair, is now under independent review in fresh task
+ad20d68a-f6be-4046-abd2-fec554a524b3. No acceptance is claimed in advance.
 
 ## 6. Reproducibility and scope
 

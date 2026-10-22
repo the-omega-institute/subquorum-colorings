@@ -1,0 +1,30 @@
+{
+  "task": {
+    "task_id": "ef2bd5ff-d074-43cb-b1d2-81d185cc755e",
+    "pool_id": "bc0a6e6f-6efa-42f9-9298-3cfcccba0cd4",
+    "status": "failed",
+    "attempts": 4,
+    "retry_count": 3,
+    "max_retries": 3,
+    "phase": "infrastructure_retry_exhausted",
+    "phase_detail": "selected=Pro",
+    "conversation_id": "conv_93f48f594d5d2de2",
+    "is_followup": true,
+    "model": "chatgpt-6-pro",
+    "queue_position": 0,
+    "response": "ERROR: infrastructure_retry_exhausted",
+    "response_chars": 37,
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "require_model_match": true,
+    "reroute_count": 0,
+    "created_at": "2026-10-22T21:32:32.366+00:00",
+    "completed_at": "2026-10-22T21:38:05.125+00:00"
+  },
+  "prompt_chars": 35878,
+  "stream_exit_code": 0,
+  "mathematical_verdict": null,
+  "scope": "Terminal broker infrastructure failure cdp_disconnected@typing after four attempts; no mathematical answer. A later complete review will use a fresh conversation and include the interval-repair supplement."
+}
