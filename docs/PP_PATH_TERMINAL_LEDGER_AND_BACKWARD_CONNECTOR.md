@@ -16,7 +16,7 @@ to the packet inequality or the grid conjecture.
 
 Let (T,M) be any feasible configuration, with P the actual matching endpoints.
 Selections and endpoints are disjoint and every selection has at most one
-neighbor in T union P. Partition a region J into disjoint two-cell columns.
+neighbor in T union P. Partition a finite region J into disjoint two-cell columns.
 For the geometric corollary these are the columns of k aligned adjacent
 two-row bands of length n. The contraction identity itself requires neither
 alignment, boundary conditions, nor freezing.
@@ -115,8 +115,14 @@ bound, without any original two-selected-neighbor condition and regardless
 of PP chain length, bends or cycles. This is a sufficient structural class;
 it does not prove that every frozen packet belongs to that class.
 
-For disjoint physical-tile packets whose full original receiver regions lie
-inside their respective unions, the original ledger is
+For the following global corollary, return to the original SINGLE-TERMINAL
+setting: every matching endpoint has at least three neighbors in T union P.
+Let the packets be disjoint unions of original physical tiles, and require
+every original endpoint-component receiver meeting a packet to lie wholly
+inside that packet. In this setting the outside component receivers are
+pairwise disjoint. Indeed, two distinct endpoint components in one tile
+would occupy opposite corners; the other corners would be blank, giving
+each endpoint occupied degree at most two. The original ledger is then
 
     margin = sum_packets S_J + D_out - q + R_out.
 
@@ -252,7 +258,7 @@ general existence theorem for a favorable phase is asserted.
 
 ## 7. Verification scope
 
-The general proofs are Sections 1--5. The companion permanent checker is
+The general proofs are Sections 1--6. The companion permanent checker is
 develop/check_pp_path_terminal_ledger.py; it preserves loops, parallel edges,
 exterior terminals and edge ownership. Its short complete label/matching
 controls include models outside the native support hypothesis. It also
@@ -272,6 +278,12 @@ choices, 266 neutral parameters in both phases, 320 native sharp parameters,
 edges and all six terminal types. Local Lean4.33.0 passes 17 scoped theorems
 and individual ordinary-axiom audits, without errors, warnings, sorry or native
 evaluation. These execution results are not substitutes for the general proofs.
+
+The initial independent written review returned REVISE: it confirmed the
+local results and all-parameter constructions, but identified the missing
+single-terminal/additive-receiver scope in the global paragraph. That scope
+is now explicit above. The full response is archived in
+output/pp-path-terminal-ledger-initial-review.json. This is not a final ACCEPT.
 
 The remaining research problem is a geometric proof of (4), or a more precise
 counterexample to a proposed ownership rule, for arbitrary retained-support
