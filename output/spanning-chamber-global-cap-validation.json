@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_GENERAL_CAP_GLUING_EXACT_WHOLE_CONTROLS_REVIEW_PENDING",
+  "proof": "docs/SPANNING_CHAMBER_GLOBAL_CAPS.md",
+  "verifier": "develop/check_spanning_chamber_global_caps.py",
+  "controls": "output/spanning-chamber-global-cap-controls.json",
+  "theorem": "For every even W>=6 and g>=0, old A/B bars at2+10i, arbitrary spanning D/U chamber choices and one bottom upward-U cap give a whole finite retained-support complete canonical fusion, for even outer depths>=lastBar+10. Any finite locally complete U-pocket states glue simultaneously. All matching endpoints remain degree>=3 and disjoint original matching covers them; even ambient embedding clips no support.",
+  "exact_inventory": "Phi=4g+(W-4)d+5+sum(localPocketPhi). The exterior cap contributes exactly5 once, against a single old baseline-g. Construction-specific exterior value, not a lower bound for arbitrary exterior extensions.",
+  "obstruction": "At W=k(B+34)+2, one U chamber plus cap and k odd-H blocks give whole-complete AFTER Phi=9+k(B+9), BEFORE Phi=9+16k. B6,k1 gives25->24; general marginal-k. BEFORE is not asserted complete; rule obstruction not target inequality, and not a both-before-and-after-complete counterexample.",
+  "python": {
+    "exit_code": 0,
+    "original_session": 36926,
+    "final_execution_chunk": "f67076",
+    "plain_capped_cores": 170,
+    "whole_complete_negative_marginal_families": 18,
+    "sharp_nonempty_pocket_realizations": 12,
+    "largest_original_width": 2000,
+    "largest_gap_count": 20,
+    "scope": "Every retained support in entire fusion has occupied degree1; every matching endpoint degree>=3; endpoint disjointness and matching coverage; even rectangle contains every original support; exact full inventory and even-translation invariance. General coordinate/support list and gluing proof are separate from finite controls."
+  },
+  "lean": {"new_theorems": 0, "scope": "No Lean certification of the full cap/gluing assembly is claimed; earlier local theorem scopes unchanged."},
+  "review": {
+    "status": "DISPATCHED_ORIGINAL_STREAM_LIVE",
+    "task_id": "954ec124-3bdf-47a5-b087-dd0c9aa4e473",
+    "conversation_id": "conv_c5f5e13736b4f292",
+    "original_stream_session": 55804,
+    "request": "output/spanning-chamber-global-cap-review-request.json",
+    "stream": "output/spanning-chamber-global-cap-review-stream.sse",
+    "original_prompt_match_verified": true,
+    "pool_preflight": {"ready": 21, "busy": 4, "needs_attention": 1, "queued": 0},
+    "scope": "Independent new whole-fusion cap/gluing theorem, exact inventory and fully realized marginal obstruction. Independent of the pending no-rotor theorem; reviewer code execution is not presumed."
+  },
+  "limitations": "Only explicit canonical retained-support/matching fusion model. No universal source decomposition, arbitrary exterior lower bound, other gate classification, global5/6 improvement or rectangular-grid equality. Submitted manuscript/main unchanged. No Mail action."
+}
