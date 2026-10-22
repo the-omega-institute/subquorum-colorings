@@ -22,7 +22,28 @@
     "beyond_previous_Pout_le_4d": 73,
     "beyond_coarse_G_le_N": 16,
     "singly_marked_positive_occurrences": 0,
-    "limitation": "No nonvacuous singly-marked fixture; arbitrary N1 covered analytically."
+    "limitation": "Original640physical/150whole-family controls have no singly marked positive. Later20whole-family controls have90singly-marked exterior occurrences.",
+    "supplemental_single_mark_families": {
+      "complete_families": 20,
+      "singly_marked_exterior_occurrences": 90,
+      "witness": {
+        "gaps": 0,
+        "downward": 0,
+        "blocks": 10,
+        "positive_out": 31,
+        "unmarked": 11,
+        "single_marked": 10,
+        "double_marked": 10,
+        "Phi": 225,
+        "actual_marks": 30,
+        "certified_slack": 3,
+        "exact_Phi_minus_marks": 195
+      },
+      "scope": "Additional complete families exercise N1 nonvacuously, outside the submitted review input.",
+      "original_session": 74679,
+      "terminal_chunk": "47b580",
+      "exit_code": 0
+    }
   },
   "lean": {
     "source": "formal/SubQuorum/WidthSixMarkExcess.lean",
@@ -47,12 +68,15 @@
     "scope": "Coordinate witness exclusions and conditional marked-slack arithmetic; source normalization, chamber localization/classification and source-to-grid adapter remain written/dependencies."
   },
   "independent_review": {
-    "task_id": "e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3",
-    "conversation_id": "conv_37f5b6b1df38ee24",
+    "task_id": "7fd0661d-40ab-4c29-893f-0e32f98fb5f8",
+    "conversation_id": "conv_4d5ca236606b7743",
     "status": "DISPATCHED",
-    "original_stream_session": 50054,
-    "request": "output/width-six-mark-excess-review-request.json",
-    "stream": "output/width-six-mark-excess-review-stream.sse",
-    "scope": "New unmarked-core geometry and actual-mark-excess corollary only; prior96e3 ACCEPT does not cover this extension."
+    "original_stream_session": 59944,
+    "request": "output/width-six-mark-excess-final-review-request.json",
+    "stream": "output/width-six-mark-excess-final-review-stream.sse",
+    "scope": "New unmarked-core geometry and original actual-mark theorem. Later supplemental single-mark fixtures were added after this review input.",
+    "previous_failed_task": "e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3",
+    "previous_failure": "infrastructure_retry_exhausted/cdp_disconnected@typing",
+    "previous_terminal": "output/width-six-mark-excess-review-failed-terminal.json"
   }
 }

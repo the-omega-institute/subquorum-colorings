@@ -8,6 +8,7 @@ from check_activated_singleton_budget import phase_images
 from check_cooperative_promotion import neighbors
 from check_demand_hull_reserve_obstruction import independent_source
 from check_exact_event_reserve import fixtures
+from check_fullbar_unactivated_obstruction import witness_modules
 from check_incident_eight_north_transfer import charge, shift
 from check_localized_exterior_tile_budget import (
     cells_of, complete_certificate, old_family, spanning, tile_of)
@@ -189,12 +190,57 @@ def family_controls():
         singly_marked_exterior_in_these_families=0, witness=witness)
 
 
+def singly_marked_family_controls():
+    block = records_of(witness_modules())
+    _, block_potential, _, _ = complete_certificate(block)
+    assert block_potential == 22
+    assert Counter(actual_marks(block).values()) == Counter({0: 1, 1: 1, 2: 1})
+    checked = one_mark_occurrences = 0
+    witness = None
+    for gaps, amount in itertools.product((0, 1, 4), (1, 2, 5, 10)):
+        rows = tuple(2+10*index for index in range(gaps+1))
+        last = rows[-1]+4
+        for modes in {tuple(False for _ in range(gaps)),
+                      tuple(index % 2 == 0 for index in range(gaps))}:
+            old = old_family(6, rows, last+10, last+14)
+            chambers = [spanning(6, upper, lower, downward)
+                        for upper, lower, downward in zip(rows, rows[1:], modes)]
+            exterior = [cap(6, 4, rows[-1])]
+            exterior += [shift(record, (200+80*index, 200))
+                         for index in range(amount) for record in block]
+            records = old+chambers+exterior
+            _, potential, _, _ = complete_certificate(records)
+            marks = actual_marks(records)
+            start = len(old)+len(chambers)
+            counts = Counter(marked for index, marked in marks.items() if index >= start)
+            assert counts == Counter({0: amount+1, 1: amount, 2: amount})
+            assert marks[gaps+1] == 0
+            downward = sum(modes)
+            assert potential == 4*gaps+2*downward+5+22*amount
+            assert potential-sum(marks.values()) == 4*gaps+2*downward+5+19*amount
+            assert counts[2] <= counts[0]+4*gaps+2*downward
+            assert 4*gaps+2*downward+2+counts[0]-counts[2] == 4*gaps+2*downward+3
+            one_mark_occurrences += counts[1]
+            if gaps == 0 and amount == 10:
+                witness = dict(gaps=gaps, downward=downward, blocks=amount,
+                    positive_out=sum(counts.values()), unmarked=counts[0],
+                    single_marked=counts[1], double_marked=counts[2],
+                    Phi=potential, actual_marks=sum(marks.values()),
+                    certified_slack=3, exact_Phi_minus_marks=potential-sum(marks.values()))
+            checked += 1
+    assert witness is not None and one_mark_occurrences > 0
+    return dict(complete_families=checked,
+                singly_marked_exterior_occurrences=one_mark_occurrences,
+                witness=witness,
+                scope='Additional complete eight-source blocks exercise N1 nonvacuously. Repeating well-separated copies proves unbounded realizable N1; the initial 150-family controls still have no N1.')
+
+
 def main():
     source_images = source_controls()
     physical = physical_controls()
     families = family_controls()
     print(json.dumps(dict(status='PASS', source_side_reconstructions=source_images,
-        **physical, **families,
+        **physical, **families, supplemental_single_mark_families=singly_marked_family_controls(),
         scope='Direct actual dual-guard mark counts and complete immutable-source controls '
               'for a written general unmarked-core theorem. Source-to-grid ledger remains '
               'an explicit dependency. Neither finite enumeration nor these controls '

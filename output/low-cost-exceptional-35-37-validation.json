@@ -1,0 +1,99 @@
+{
+  "date": "2026-10-22",
+  "status": "WRITTEN_GENERAL_LOW_COST_OBSTRUCTION_AND_35_37_PROOF_SCOPED_CHECKS_PASS_REVIEW_RUNNING",
+  "note": "docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md",
+  "claims": {
+    "obstruction": "Positive U(8,4,8) and its reflected shape cannot have both gates occupied while both original terminal occurrences are unactivated; exact forced crossbar intersection for arbitrary legal incoming dimensions.",
+    "compensation": "Expand compensated actual doubles by these dimensions. The SAME blank-gate two-slot pool and inherited occupied witness injection yield H>=2z, hence mu>=n0-e-floor(s/2).",
+    "matching": "All remaining exceptional doubles cost>=14 original matching edges, Mplus>=9N+5e and9G<=4Mminus imply4M>=36N+20e+9G.",
+    "coefficient": "sigma>=-2M/37, equivalently74|T_sel|+70|M|<=37mn, under the existing complete-source representative ledger. Improves33/35 by4M/1295 and5/6 by25M/222 on the same configurations.",
+    "scope": "No arbitrary grid decomposition, unrestricted grid improvement, physical realization of abstract extremal census, or geometric sharpness asserted."
+  },
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_low_cost_exceptional_doubles.py",
+    "exit_code": 0,
+    "original_session": 55682,
+    "terminal_chunk": "c8bce3",
+    "controls": "output/low-cost-exceptional-35-37-controls.json",
+    "roles": {
+      "incoming_dimension_triples": 29,
+      "anchored_catalogue_roles": 348,
+      "surviving_left_roles": 17,
+      "surviving_right_roles": 19,
+      "left_forms": {
+        "transverse_phase11_height4": 17
+      },
+      "right_forms": {
+        "corner_or_transverse": 13,
+        "longitudinal_height6": 6
+      },
+      "distinct_owner_collisions": 323,
+      "symmetry_collision_images": 2584,
+      "scope": "Exact anchored role masks; arbitrary incoming dimensions are covered by the written coordinate argument, not this finite library."
+    },
+    "dimensions": {
+      "positive_dimension_controls": 2548,
+      "new_dimension_shapes": 2,
+      "minimum_remaining_exceptional_matching": 14
+    },
+    "physical": {
+      "complete_physical_images": 704,
+      "marked_images": 72,
+      "negative_matching_capacity_checks": 704,
+      "single_marked_positive_occurrences": 16,
+      "newly_compensated_double_occurrences": 0,
+      "scope": "Complete physical original-source checks. Newly compensated double shapes, if absent, are covered by the general obstruction and role masks rather than claimed as exercised physical branches."
+    },
+    "arithmetic": {
+      "signed_budget_controls": 19691,
+      "negative_margin_controls": 2515
+    }
+  },
+  "lean": {
+    "source": "formal/SubQuorum/LowCostExceptionalDoubles.lean",
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/LowCostExceptionalDoubles.lean",
+    "location": "user-selected local Mac",
+    "memory_free_percent": 50,
+    "active_real_lean_lake_before": 0,
+    "original_session": 33608,
+    "terminal_chunk": "b874b1",
+    "exit_code": 0,
+    "theorems": 15,
+    "individual_declaration_axiom_audits": 16,
+    "warnings": 0,
+    "errors": 0,
+    "sorryAx": false,
+    "native_decide": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Universal coordinate bounds/collisions, exact low-matching dimension classification and conditional compensation/matching/coefficient arithmetic. Complete source-role normalization, geometric injections and representative ledger remain written/dependencies."
+  },
+  "independent_review": {
+    "task_id": "43ac52be-e334-492c-9794-7bd17b5c31ad",
+    "conversation_id": "conv_bebdfd886f431153",
+    "status": "DISPATCHED",
+    "original_stream_session": 38214,
+    "request": "output/low-cost-exceptional-35-37-review-request.json",
+    "stream": "output/low-cost-exceptional-35-37-review-stream.sse"
+  },
+  "previous_mark_excess_review": {
+    "failed_task": "e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3",
+    "failure": "infrastructure_retry_exhausted/cdp_disconnected@typing; no mathematical verdict",
+    "failed_terminal": "output/width-six-mark-excess-review-failed-terminal.json",
+    "replacement_task": "7fd0661d-40ab-4c29-893f-0e32f98fb5f8",
+    "conversation_id": "conv_4d5ca236606b7743",
+    "original_stream_session": 59944,
+    "status": "DISPATCHED"
+  },
+  "sharp_exterior_research": {
+    "task_id": "728c56ac-b37e-49e6-9633-ce160e6d50d6",
+    "conversation_id": "conv_eb71baec2b2f8748",
+    "original_stream_session": 18998,
+    "status": "DISPATCHED_WAITING_RESPONSE",
+    "scope": "After8b95 terminal no_assistant_output, new narrower question targets saturated Pout2/Delta4 complete extensions with arbitrary nonpositive original counts."
+  },
+  "preserved": "11October submitted manuscript, public main, sharedCI, star-forming/C4-free results. No Mail check/draft/send in this research continuation."
+}

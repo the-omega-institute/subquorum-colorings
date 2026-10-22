@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New general complete-source coefficient:
+[the low-cost double obstruction](docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md)
+excludes two occupied, unactivated gates for U(8,4,8) and its reflection.
+Adding these shapes to the single-use two-slot class raises the remaining
+exceptional matching cost from13to14, giving35/37 instead of33/35 for every
+complete-source fusion under the existing representative ledger.15scoped Lean
+theorems/16audits,323role collisions,704complete physical images and19691signed
+budgets pass; independent review is pending. No newly covered double shape
+occurs in the physical fixtures, and arbitrary-grid decomposition remains OPEN.
+
 Latest complete-exterior checkpoint: the [localized general theorem](docs/LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md)
 now has independent ACCEPT: every complete extension of the specified canonical
 nested core has exterior marginal>=2+P_out and chamber marginal>=3+P_i,
@@ -22,8 +32,9 @@ For width6 and all gaps10, coefficient one therefore follows when the number
 of doubly marked exterior positives minus unmarked exterior positives is at
 most4g+2d. This removes an upper bound on the total exterior-positive count.
 The written proof,640 physical images,150 whole families and13 scoped Lean
-theorems pass; its separate independent review is pending. The controls have
-no singly marked exterior examples; that case is covered analytically.
+theorems pass; its separate independent review is pending. The initial controls
+have no singly marked exterior examples;20supplemental complete families now
+exercise90such occurrences and realize unbounded single-mark counts.
 
 Latest width5 checkpoint: a [general forced-stack theorem](docs/SECONDARY_TEN_WIDTH_FIVE_STACK.md)
 classifies every actual cavity owner in a complete extension as a left-bar

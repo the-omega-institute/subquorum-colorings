@@ -183,7 +183,28 @@ warnings, errors, sorry or native evaluation. Coordinate witness exclusions and
 conditional arithmetic are formalized; geometric normalization, completeness,
 classification/localization and the source-to-grid adapter remain written.
 
-Independent same-conversation audit e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3 is
-dispatched on this new extension. Prior audit96e3f47c ACCEPT covers the arbitrary
-cut conservation and previous coarse marked-slack corollary only. See
-output/width-six-mark-excess-validation.json for commands and original handles.
+Independent same-conversation audit e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3
+ended with infrastructure_retry_exhausted/cdp_disconnected@typing,
+without a mathematical verdict. Its failed receipt is preserved. After that
+terminal state, fresh independent audit7fd0661d-40ab-4c29-893f-0e32f98fb5f8 was
+dispatched in conv_4d5ca236606b7743 on original stream59944. Prior audit96e3f47c
+ACCEPT covers the arbitrary cut conservation and previous coarse marked-slack
+corollary only. See output/width-six-mark-excess-validation.json for commands
+and original handles.
+
+Later supplemental controls exercise N_1 nonvacuously:20complete whole-core
+families contain90singly marked exterior positive occurrences. They use the
+complete eight-source full-bar-exit block, whose positive mark counts are2,1,0
+and whose Phi is22. Place k copies far apart from the capped g=0 core and from
+one another. The fixed block's occupied bounding box is[-1,19]x[-3,21],
+so translations by(200+80i,200),0<=i<k, suffice for the g=0 capped core.
+Original endpoint/support sets are separated, so completeness,
+Phi and marks add exactly. This realizes every k>=1 with
+
+    P_out=1+3k, N_0=1+k, N_1=k, N_2=k, h=0,
+    Phi=5+22k, G=3k, certified slack>=3.
+
+The copies introduce no new marks on the fixed core or each other. Thus the
+unbounded N_1 statement has actual complete realizations; the original640/150
+controls still have no such occurrence. These supplemental fixtures were added
+after the current independent review input and are not covered by its scope.
