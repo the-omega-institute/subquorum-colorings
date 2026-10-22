@@ -55,6 +55,12 @@ column segment from that terminal to the chosen interval. This is a
 counting allocation, not a claim to change the actual matching or to
 promote an endpoint through selected vertices.
 
+Use the abstract cancellation theorem with this enlarged fixed access
+relation on original physical terminals and interval identities. This
+extends its earlier physical adapter. Disjointness concerns strand owners,
+terminal use and resource units, not physical transport through disjoint
+grid paths.
+
 There are at most two such terminal candidates: one at either boundary
 column of G. A TP column has exactly one endpoint. Consequently each
 original interval unit has at most two candidate terminals, and hence
@@ -164,8 +170,8 @@ reachable TP has no direct/single-cap access. The old network has
 
     nu=0, delta=1, Z empty, Q=L-B,
 
-for every d, even when arbitrary additional terminal matching links
-are permitted. Pre-linking mixed owners cannot create an exit missing
+for every d, even when every matching of the permitted ordinary horizontal
+TP--BP links is allowed. Pre-linking mixed owners cannot create an exit missing
 from the full directed reachability graph. This is an unrestricted
 access-model obstruction, not a protected-core obstruction.
 
@@ -233,6 +239,15 @@ controls, not distinct physical resources across different configurations.
 This gap theorem has a written proof and these finite controls. It is not
 part of the earlier Oracle acceptance of the augmentation theorem, and no
 new Lean verification of the physical gap adapter is claimed.
+
+Independent combined review b374e96c-be4a-42a3-90d7-453d93f6b389 accepts
+this entire gap theorem and family, together with the unreflected
+zero-capacity corridor extension. The full 20,762-character mathematical
+answer is archived in output/zero-capacity-gap-beta-compensation-oracle.json.
+The reviewer did not execute Python or Lean. The ordinary-link scope and
+abstract-versus-physical adapter distinctions above implement its requested
+clarifications. The later reflected PP and auxiliary-rematching results
+are separately reviewed; this acceptance does not cover them.
 
 Run:
 
