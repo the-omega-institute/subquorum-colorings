@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "totals": {
+    "exact_residual_ledgers": 2431332,
+    "coherent_progress_controls": 289936,
+    "backing_and_sign_controls": 1215666,
+    "complete_replacements": 334825,
+    "activated_mixed_pairs": 150582,
+    "independent_forced_matching_edges": 11284,
+    "unique_frozen_pairs": 127,
+    "uniform_serial_freezing_events": 22568,
+    "uniform_forced_template_edges": 11284,
+    "frozen_physical_seven_edge_repairs": 127
+  },
+  "abstract_totals": {
+    "exact_residual_ledgers": 2431078,
+    "coherent_progress_controls": 289809,
+    "backing_and_sign_controls": 1215539,
+    "complete_replacements": 334698,
+    "activated_mixed_pairs": 150328
+  },
+  "examples": [
+    {
+      "width": 6,
+      "depth": 1,
+      "tail": 4,
+      "old_prescribed_port_minimum": 5,
+      "new_cost": 7,
+      "removed": 4,
+      "activated_mixed": 2,
+      "final_inventory": {
+        "alpha": 0,
+        "beta": 1,
+        "mixed": 6,
+        "cycle": 12
+      }
+    },
+    {
+      "width": 32,
+      "depth": 1,
+      "tail": 16,
+      "old_prescribed_port_minimum": 17,
+      "new_cost": 7,
+      "removed": 4,
+      "activated_mixed": 2,
+      "final_inventory": {
+        "alpha": 0,
+        "beta": 1,
+        "mixed": 6,
+        "cycle": 51
+      }
+    },
+    {
+      "width": 64,
+      "depth": 5,
+      "tail": 32,
+      "old_prescribed_port_minimum": 33,
+      "new_cost": 7,
+      "removed": 4,
+      "activated_mixed": 2,
+      "final_inventory": {
+        "alpha": 0,
+        "beta": 1,
+        "mixed": 6,
+        "cycle": 99
+      }
+    }
+  ],
+  "scope": "Finite controls for balanced whole-mixed-port activation, arbitrary complete auxiliary replacements, injective partial-payment witnesses and exact costs. All-parameter seven-edge physical construction follows from written coordinates. No seven-edge optimality, universal grid bound or global Lean claim."
+}
