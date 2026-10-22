@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "totals": {
+    "coherent_payment_transport_certificates": 7916,
+    "signed_marker_controls": 45608,
+    "low_rank_all_final_alphas_paid": 7088,
+    "general_paid_marker_replacements": 24128,
+    "final_alpha_payments_transported": 14868,
+    "unpaid_alpha_distinct_error_witnesses": 14184
+  },
+  "misplaced_marker": {
+    "status": "CHECKED",
+    "actual_endpoints": 8,
+    "coherent_for_wrong_marker": true,
+    "original_paid_endpoint_leaves_final_alpha": true,
+    "failure": "Moving the sign defect away from the actual paid terminal does not transport its access certificate."
+  },
+  "scope": "All complete N replacements with 1..2 selected alpha/beta pairs; 1..2 internal alpha/beta/mixed relays, 0..1 PP pair per relay, both paid end choices, 0..1 cycle pair, at most ten N-covered vertices. All cycle flips, incidence counts, full tails, actual marker identities, endpoint-based old-unit transport, distinct error edges and parity rank. No physical interval access or grid embedding is asserted by this abstract checker."
+}

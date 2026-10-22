@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/MixedRelayEndpointAccounting.lean",
+  "preflight": {
+    "memory_free_percent": 50,
+    "real_lean_lake_processes_by_comm_basename": []
+  },
+  "execution": {
+    "session_id": 85599,
+    "final_chunk": "6dc812",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "audited_theorems": [
+    "neutral_actual_endpoint_sum",
+    "signed_auxiliary_edge_count",
+    "mixed_relay_component_identity",
+    "alpha_requires_negative_edge",
+    "beta_requires_positive_edge",
+    "coherent_component_has_zero_boundary"
+  ],
+  "axioms": {
+    "neutral_actual_endpoint_sum": ["propext"],
+    "other_five_theorems": ["propext", "Quot.sound"],
+    "sorryAx": false,
+    "native_evaluation": false,
+    "new_axioms": false
+  },
+  "scope": "Signed endpoint-incidence identity and compulsory same-sign-edge witnesses under a supplied sign-occurrence permutation and opposite-sign actual-edge certificate. Does not encode graph components, geometric availability, distinct edge identities, incidence construction or matching uniqueness. These are written proofs and separate graph reconstruction checks."
+}

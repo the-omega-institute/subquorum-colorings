@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "totals": {
+    "signed_mixed_relay_controls": 59581,
+    "mixed_parity_rank_controls": 24415,
+    "full_tail_reconstructions": 24415,
+    "coherent_mixed_relay_certificates": 8235,
+    "low_rank_complete_mixed_repairs": 5435,
+    "retained_mixed_paths_without_auxiliary_edges": 31176,
+    "tp_bp_augmentation_paths_with_optional_cycle_exchanges": 20221,
+    "arbitrary_mixed_relay_replacements": 24413
+  },
+  "obstruction": {
+    "actual_endpoints": 8,
+    "actual_perfect_matchings": 1,
+    "bad": {
+      "alpha": 1,
+      "beta": 1,
+      "mixed": 0,
+      "orientation_budget": 1,
+      "parity_rank": 2
+    },
+    "good": {
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 2,
+      "orientation_budget": 0,
+      "parity_rank": 0
+    }
+  },
+  "scope": "All perfect N replacements in reduced models with 1..2 source/donor pairs, 1..2 mixed relays with 0..2 internal PP pairs each, 0..2 cycle PP pairs in all partitions, at most ten N-covered vertices. All cycle flips, per-component incidence multiplicities, fixed mixed boundary colours, forest rank, full tails and explicit eight-point matching uniqueness. No frozen-grid embedding or universal geometric existence."
+}

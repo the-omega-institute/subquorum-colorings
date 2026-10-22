@@ -112,8 +112,10 @@ normalization does not itself improve its numerical value.
 
 For every cyclic word in SHARED_CYCLE_ORIENTATION_AND_COMPENSATION.md,
 normalize the one original cycle. The r augmenting paths in that
-construction meet all the theorem's hypotheses, regardless of the word.
-All r original alpha/beta pairs therefore become mixed. The fixed-M
+construction satisfy the theorem's combinatorial hypotheses, regardless
+of the word. All r original alpha/beta pairs therefore become mixed in
+that abstract model. Any realization satisfying actual grid-edge legality
+and stable geometric-witness hypotheses inherits the same exchange. The fixed-M
 loss floor(r/2) for alternating words disappears completely after this
 legal actual matching exchange. The obstruction refutes the fixed-M
 counting rule, rather than the possibility of compensation after rematching.
@@ -141,7 +143,7 @@ Of the 3,195 small replacements, 2,853 use only augmentations, with no
 nontrivial independent alternating-cycle exchange. The separate count
 clarifies the original classifier rather than changing its test domain.
 
-The associated Lean source proves the normalization involution, absence
+The associated Lean source proves involutivity of the normalized mate, absence
 of fixed points, preservation of permitted adjacency, equality to A on
 the closed region and equality to M elsewhere, under the stated closure
 and matching hypotheses. It does not formalize finite graph component
@@ -158,5 +160,12 @@ exists for enough demands. Shared cycle orientation alone cannot be a
 permanent obstruction when the legal actual exchange is available.
 Universal grid compensation, the universal 5/6 improvement and triple
 equality remain open. Keep the outside-overlap correction once.
+
+Independent source-level review c0e61385 returned ACCEPT of the actual
+normalization and cycle-only compensation statements, with the abstract
+realization and optional-cycle-switch qualifications now explicit above.
+The full assessment is archived in output/pp-cycle-actual-normalization-oracle.json.
+It did not independently execute the checker or Lean. The later internal
+mixed-relay extension is outside that review input.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
