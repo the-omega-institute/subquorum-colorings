@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_GENERAL_PROOF_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_PENDING",
+  "proof": "docs/SIX_ROW_ALL_PHASE_HORIZONTAL_BUDGET.md",
+  "verifier": "develop/check_six_row_all_phase_horizontal.py",
+  "controls": "output/six-row-all-phase-horizontal-controls.json",
+  "theorem": "Complete retained-support six-row pocket under explicit full-even-U/standard-rotor decomposition, no H alignment restriction: rotors cannot touch an H exterior column; adjacent H have the same orientation; Phi(all)=Phi(V+rotors)+sum(B-1)-3c. No residual sign assumed with rotors.",
+  "rotor_free_budget": "Contact bands inject into distinct odd V bars disjoint from adjacent-V pairs and from all remaining V-event emitters. With u=b-2p-c>=0 and e<=2u, Phi(all)>=a+2b+sum(B-1)+u. Any H implies pocket>=5 and chamber>=10, now allowing odd-L H.",
+  "obstruction": "For every even B>=6 an explicitly pocket-locally complete six-V/one-H family attains Phi(V)=16 and Phi(full)=B+9; B6 has marginal-1. k blocks have marginal-k. This refutes nonnegative H marginal monotonicity, not the target global inequality; whole-grid extendibility is not asserted.",
+  "python": {
+    "exit_code": 0,
+    "original_session": 15768,
+    "final_execution_chunk": "cc162b",
+    "exact_band_controls": 56,
+    "locally_complete_families": 48,
+    "boundary_rotor_configurations": 48,
+    "impossible_forced_owner_roles": 2272,
+    "opposite_neighbor_obstructions": 24,
+    "largest_H_width": 2000,
+    "largest_batch": 5,
+    "scope": "Exact canonical full-record tile/event partitions and actual old-core retained support degrees. Finite controls, not a general proof. Generic inventory controls are rotor-free; rotor-edge roles are checked separately."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SixRowHorizontalBands.lean",
+    "version": "4.33.0",
+    "exit_code": 0,
+    "original_session": 64163,
+    "final_execution_chunk": "e8a973",
+    "local_theorems": 10,
+    "individual_declaration_axiom_audits": 14,
+    "axioms": "Only ordinary propext/Classical.choice/Quot.sound or none; final run has no warnings/errors/sorry/native.",
+    "preflight_memory_free_percent": 63,
+    "real_lean_lake_processes_before_run": [],
+    "scope": "Explicit normalized rotor endpoint predicates, unique right tip, west neighbour, parity-selected forced H support, second-rotor collision; simultaneous budget and sharp marginal arithmetic. Canonical adapters, full source classification, completeness, tile/event ledger and owner injection remain written.",
+    "initial_attempt": "Passed with two linter warnings; unused simp argument removed and implicit-use hypothesis prefixed before final clean run."
+  },
+  "review": {
+    "status": "DISPATCHED_ORIGINAL_STREAM_LIVE",
+    "task_id": "5f43eca8-5c22-4450-a0a0-429c39e2b1e6",
+    "conversation_id": "conv_99e66ccc09169914",
+    "original_stream_session": 96615,
+    "request": "output/six-row-all-phase-horizontal-review-request.json",
+    "stream": "output/six-row-all-phase-horizontal-review-stream.sse",
+    "pool_preflight": {"ready": 24, "busy": 1, "needs_attention": 1, "queued": 0},
+    "scope": "Full written all-phase theorem, no rotor/H contact, exhaustive band counts, distinct V payment and sharp locally complete negative-marginal family. Reviewer execution of code is not presumed."
+  },
+  "limitations": "General V/rotor residual sign, universal decomposition, exterior sign, unrestricted global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged."
+}
