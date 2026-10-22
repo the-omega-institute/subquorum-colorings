@@ -185,11 +185,18 @@ and even when surgery passes through them or through old paid paths.
 The forest assignment gives delta_N<=delta_old-r+floor(q/2). This
 preserves a progress measure rather than a fixed path-owner assignment.
 
-If f_N payments are actually transported, define
+Let f_N be the size of the constructed assignment: one transported payment
+for every final alpha containing a backed marker. Define
 
     Q_N=|I|-f_N+beta_N, delta_N=alpha_N-f_N.
 
-The exact residual ledger is still S_J-B=Q_N-delta_N. The old payments
+The exact residual ledger is still S_J-B=Q_N-delta_N. With
+Q_old=|I|-f+b it also gives Q_N-Q_old=delta_N-delta_old: a reduction
+in certified demand accompanies an equal reduction in this residual
+quantity, so the scalar margin is unchanged. The forest parameter q is
+the number of constraints outside a spanning forest of the grounded
+constraint multigraph, retaining impossible loops and parallel constraints.
+The old payments
 are replaced by the new assignment, not retained as additional charges;
 unbacked markers never enter |I| or Q_N. This extension does not already
 assume the target inequality: k=2,b=1,|I|=f=0,r=1 with one selected
@@ -200,9 +207,13 @@ That abstract signed example is not a grid counterexample. General grid
 donor availability and route existence remain to be established.
 
 This partial-payment extension was developed after submitting the
-39356-character full-domain review request. It is outside that review
-input until separately audited; no acceptance of it is inferred from
-the earlier paid-marker review.
+39356-character full-domain review request. It received a separate
+source-level mathematical ACCEPT, archived in
+`output/partial-payment-full-domain-progress-oracle.json`. The original
+full-domain theorem's separate ACCEPT is archived in
+`output/full-domain-marker-compensation-oracle.json`. Neither review
+independently executed the checker; the partial-payment review did not
+inspect the Lean source or compilation records.
 
 The partial-payment checker passes 210,096 complete replacements,
 569,712 choices of backed-marker subsets and 781,020 sign controls.
