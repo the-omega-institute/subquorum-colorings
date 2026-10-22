@@ -71,7 +71,10 @@ demand can access every resource in Q.
 Use a matching-closed aligned two-row packet J, actual matching M and selected
 set T as in the terminal-cancellation note. The first column in each band is
 BB and the last has a blank. Let L be its number of BB--TT interval vertices,
-B its distinct boundary marks, and S its exact surplus. For any permitted
+B the number of distinct interval resources carrying boundary marks, and S its
+exact surplus. Multiple boundary marks on one interval exclude that resource
+only once. The displayed frozen families have distinct interval resources
+for their boundary marks. For any permitted
 opposite-label terminal matching C, let alpha',beta' be the virtual inventories.
 The established identity is
 
@@ -119,8 +122,11 @@ intervals from different tiling alignments.
 There is also a unified version BEFORE cancellation. Use original alpha paths
 as demands, and the disjoint union of unmarked intervals and ORIGINAL beta
 paths as resources. Every interval has the same at-most-two owner property.
-For each beta resource specify at most two distinct original alpha owners,
-each with a certified original TP--BP horizontal link into that beta path.
+For each beta resource declare a witnessed subrelation with at most two distinct
+original alpha owners, each with a certified original TP--BP horizontal link
+into that beta path. Every incidence records both terminal witnesses. Candidate
+links need not all be mutually disjoint: the injective allocation selects at
+most one link per alpha owner and per whole beta resource.
 A fixed matching of such terminal links is one sufficient way to supply this
 list. Do not include all possible beta neighbours without checking this degree
 condition: two BP terminals alone do not imply at most two candidate owners
@@ -225,14 +231,16 @@ Its exact minimum costs are:
 
     two-ended direct-or-cap access:                    4;
     allocation to one accessible unmarked interval:    L;
-    two-ended access with no twice-marked connector:   L+2.
+    two-ended access with h2=0 (no twice-marked connector): L+2.
 
-Proof. Each right exit is two gates away, so four links expose both endpoints;
+Proof. Every interior TP tip has BP neighbours on both sides, so it has neither
+direct nor selected-cap access. The only cap exits are the two far tips of
+each relay row. Each right exit is two gates away, so four links expose both endpoints;
 the resulting connector has two marks and no unmarked paying neighbour.
 To reach any unmarked interval, at least one row must reach its left exit,
 which requires L links by the established simple-chain argument. Moving only
 one endpoint left attains that cost and pays the demand, although its other
-endpoint remains unported. For a two-ended collision-free connector, at
+endpoint remains unported. For a two-ended connector with h2=0, at
 least one end must go left and the other must reach either exit; L+2 is a
 lower bound and is attained by one left route and the other right route.
 
@@ -273,7 +281,9 @@ Run:
 The universal question is now whether residual deficient demand trees can
 always gain distinct usable resources, possibly by further mixed-path
 cancellation, without losing existing assignments or sharing a beta owner.
-One extra resource suffices for one connected deficient tree, but we have not
+One additional incident resource suffices in the abstract model for one
+connected deficient tree. In the frozen chain, the extra link instead exposes
+an existing unused interval by changing its ownership incidence. We have not
 proved that different trees can acquire different resources in arbitrary
 frozen grids. General grid equality, computational complexity and a universal
 improvement of5/6 remain open. The submitted manuscript is unchanged.
