@@ -88,6 +88,15 @@ def negative_marginal_controls():
         pocket_supports = {point for point in before_supports
                            if 4 <= point[0] <= 9 and 2 <= point[1] < width}
         assert pocket_supports == expected_inside
+        after_endpoints = set.union(*(record[0] for record in after))
+        after_supports = set.union(*(record[1] for record in after))-after_endpoints
+        expected_horizontal = {((1 if upward else 4)+4,
+                                column+2+index*(breadth+34))
+                               for index in range(amount)
+                               for column in (18, breadth+15)}
+        after_pocket_supports = {point for point in after_supports
+                                 if 4 <= point[0] <= 9 and 2 <= point[1] < width}
+        assert after_pocket_supports == expected_inside | expected_horizontal
         assert before_value == 9+16*amount
         assert after_value == 9+(breadth+9)*amount
         assert after_value-before_value == amount*(breadth-7)
@@ -98,7 +107,8 @@ def negative_marginal_controls():
                            all_after_supports_degree_one=True)
         checked += 1
     return dict(whole_complete_families=checked, both_complete_families=checked,
-                exact_before_support_lists=checked, sharp_complete_witness=witness)
+                exact_before_support_lists=checked, exact_after_support_lists=checked,
+                sharp_complete_witness=witness)
 
 
 def sharp_pocket_controls():

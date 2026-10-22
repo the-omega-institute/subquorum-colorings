@@ -202,7 +202,8 @@ are separated by3. Thus the V-only state is locally complete.
 
 The H projection [17,B+16] contains none of these retained supports or
 inherited old supports. Its two additional retained supports lie at
-(4,18),(4,B+15) for H4, or their row reflections for H1. Each has only
+(4,18),(4,B+15) for H1, or their row reflections
+(1,18),(1,B+15) for H4. Each has only
 its own side-leg neighbour, so AFTER is locally complete as well.
 At a block interface N is even: no physical tile crosses the interface,
 and the nearest retained support columns from different blocks differ
@@ -233,10 +234,25 @@ categorical scope exclusion. The direct support proof (3) and both-state
 whole checks above implement the stronger correction. The final local
 run passes170 capped cores,18 both-complete negative-marginal families
 with exact BEFORE support lists, and12 sharp pocket embeddings.
-Follow-up task4248a536-93ef-48dd-bde7-613344d1ee0e in the same review
-conversation is pending. The original REVISE is retained in
+Follow-up task4248a536-93ef-48dd-bde7-613344d1ee0e confirmed the new
+BEFORE support list, interfaces and both-complete obstruction, but
+returned REVISE for a transposition of the H1/H4 orientation labels in
+the new support paragraph. Those labels are now corrected explicitly:
+H1 supports lie on row4, H4 supports on row1. The checker additionally
+compares each complete AFTER pocket support set to the exact V-plus-H
+list in both orientations. The original REVISE is retained in
 `output/spanning-chamber-global-cap-review-terminal.json`; it is not
-recorded as a final ACCEPT of the corrected note.
+recorded as a final ACCEPT of the corrected note; follow-up REVISE is in
+`output/spanning-chamber-global-cap-followup-review-terminal.json`.
+
+Final follow-up47746304-ac4e-4b34-a29c-b9ae9f97245c returned ACCEPT
+after the orientation-label correction. It accepts the full cap/gluing
+construction, both-complete negative marginal and exact support lists
+within the stated canonical model. The1732-character answer matches
+the completed original stream and terminal API, observed gpt_6/pro.
+It assessed the written argument and assertion logic without executing
+the checker. Both earlier REVISE receipts are retained; the final receipt
+is `output/spanning-chamber-global-cap-final-review-terminal.json`.
 
 This construction produces a positive exterior increment5. It does NOT
 bound the exterior increment of an arbitrary complete extension from

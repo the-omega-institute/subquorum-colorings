@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "PASS_WRITTEN_GENERAL_CAP_GLUING_BOTH_COMPLETE_CONTROLS_REVISE_CORRECTED",
+  "status": "PASS_WRITTEN_GENERAL_CAP_GLUING_BOTH_COMPLETE_CONTROLS_FINAL_REVIEW_ACCEPT",
   "proof": "docs/SPANNING_CHAMBER_GLOBAL_CAPS.md",
   "verifier": "develop/check_spanning_chamber_global_caps.py",
   "controls": "output/spanning-chamber-global-cap-controls.json",
@@ -9,8 +9,8 @@
   "obstruction": "Both BEFORE and AFTER complete: W=k(B+34)+2, Phi_before=9+16k, Phi_after=9+k(B+9). B6,k1 gives25->24, marginal-k for arbitrary k. Separate general retained-support proof for BEFORE, not a deletion principle. Refutes nonnegative-H-marginal even under both-complete hypotheses; does not refute target inequality.",
   "python": {
     "exit_code": 0,
-    "original_session": 4272,
-    "final_execution_chunk": "9f23e5",
+    "original_session": 24189,
+    "final_execution_chunk": "5b20ec",
     "plain_capped_cores": 170,
     "whole_complete_negative_marginal_families": 18,
     "sharp_nonempty_pocket_realizations": 12,
@@ -18,21 +18,27 @@
     "largest_gap_count": 20,
     "scope": "Every retained support in entire fusion has occupied degree1; every matching endpoint degree>=3; endpoint disjointness and matching coverage; even rectangle contains every original support; exact full inventory and even-translation invariance. General coordinate/support list and gluing proof are separate from finite controls.",
     "both_complete_negative_marginal_families": 18,
-    "exact_before_support_lists": 18
+    "exact_before_support_lists": 18,
+    "exact_after_support_lists": 18
   },
   "lean": {
     "new_theorems": 0,
     "scope": "No Lean certification of the full cap/gluing assembly is claimed; earlier local theorem scopes unchanged."
   },
   "review": {
-    "status": "COMPLETED_REVISE_CORRECTED_FOLLOWUP_PENDING",
+    "status": "COMPLETED_REVISE_CORRECTED_FINAL_FOLLOWUP_ACCEPT",
     "followup": {
-      "status": "DISPATCHED",
+      "status": "COMPLETED_REVISE_LABEL_CORRECTED",
       "task_id": "4248a536-93ef-48dd-bde7-613344d1ee0e",
       "conversation_id": "conv_c5f5e13736b4f292",
       "original_stream_session": 39301,
       "request": "output/spanning-chamber-global-cap-followup-request.json",
-      "stream": "output/spanning-chamber-global-cap-followup-stream.sse"
+      "stream": "output/spanning-chamber-global-cap-followup-stream.sse",
+      "terminal": "output/spanning-chamber-global-cap-followup-review-terminal.json",
+      "response_chars": 4652,
+      "observed_model": "gpt_6/pro",
+      "stream_terminal_exact_match": true,
+      "required_revision": "BEFORE proof and both-state obstruction pass. H1/H4 labels were transposed in new support paragraph; now H1row4/H4row1. Added exact AFTER support-set assertions in both orientations and reran entire checker successfully."
     },
     "task_id": "954ec124-3bdf-47a5-b087-dd0c9aa4e473",
     "conversation_id": "conv_c5f5e13736b4f292",
@@ -51,7 +57,20 @@
     "response_chars": 13787,
     "observed_model": "gpt_6/pro",
     "stream_terminal_exact_match": true,
-    "required_revision": "Cap/gluing theorem and inventory pass. BEFORE also complete; removed incorrect categorical exclusion and added general exact support-list proof plus both-state whole checks. Original REVISE retained; no final ACCEPT claimed."
+    "required_revision": "Cap/gluing theorem and inventory pass. BEFORE also complete; removed incorrect categorical exclusion and added general exact support-list proof plus both-state whole checks. Original REVISE retained; no final ACCEPT claimed.",
+    "final_followup": {
+      "status": "COMPLETED_ACCEPT",
+      "task_id": "47746304-ac4e-4b34-a29c-b9ae9f97245c",
+      "conversation_id": "conv_c5f5e13736b4f292",
+      "original_stream_session": 41559,
+      "request": "output/spanning-chamber-global-cap-final-request.json",
+      "stream": "output/spanning-chamber-global-cap-final-stream.sse",
+      "scope": "Corrected full cap/gluing theorem, exact before/after support lists, block interfaces and both-complete marginal obstruction ACCEPT in explicit canonical model. Reviewer did not execute checker.",
+      "terminal": "output/spanning-chamber-global-cap-final-review-terminal.json",
+      "response_chars": 1732,
+      "observed_model": "gpt_6/pro",
+      "stream_terminal_exact_match": true
+    }
   },
   "limitations": "Only explicit canonical retained-support/matching fusion model. No universal source decomposition, arbitrary exterior lower bound, other gate classification, global5/6 improvement or rectangular-grid equality. Submitted manuscript/main unchanged. No Mail action."
 }
