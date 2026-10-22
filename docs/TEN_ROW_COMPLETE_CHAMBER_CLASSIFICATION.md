@@ -266,10 +266,17 @@ obstructions, fixed six-rotor witnesses/closure, gate collision, terminal
 continuation and the exact arithmetic. Actual source-role/connectivity
 adapters, geometric inventory assembly and completeness remain written.
 
-A distinct review of the new complete-chamber/chain proposition is live
-on originalstream58738 in conversationconv_e18bcaa504addda4, after pool
-preflight17ready/8busy/1needs_attention/0queued. The request contained the
-proof and verifier before the final explicit W12 witness paragraph/check
-was added; that addition is not claimed reviewed. The Lean statements were
-supplied with their local validation still pending; the final role proof
-was then refactored and kernel-checked. No new verdict is yet inferred.
+A distinct initial review on originalstream58738 in conversation
+conv_e18bcaa504addda4 ended in infrastructure failure, task16339926-3da9-4a9a-b251-fcfc442c54aa.
+The original stream exited0/DONE with an explicit server error and NO
+assistant text; terminalAPI confirms four attempts/three retries,
+infrastructure_retry_exhausted and cdp_disconnected@typing. Its ERROR text
+is not a mathematical verdict. The failed receipt is archived separately.
+
+After that authoritative terminal failure, a fresh self-contained review
+was submitted as a new conversation on originalstream92013. Pool preflight
+20ready/5busy/1needs_attention/0queued. One text attachment includes the
+complete final proof, explicit W12 witness, final full-record verifier,
+kernel-checked Lean and all prerequisite notes/canonical definitions.
+The new original stream remains live without a verdict; no service-worker
+configuration was changed, and no active request was duplicated.
