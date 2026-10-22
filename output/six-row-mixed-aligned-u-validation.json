@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_GENERAL_PROOF_EXACT_CONTROLS_REVIEW_PENDING",
+  "proof": "docs/SIX_ROW_MIXED_ALIGNED_U_BUDGET.md",
+  "verifier": "develop/check_six_row_mixed_aligned_u_budget.py",
+  "controls": "output/six-row-mixed-aligned-u-controls.json",
+  "theorem": "Pairwise endpoint-disjoint transverse U(6,d,f), arbitrary independent even depths>=4, and horizontal U(B,4,4), even B>=6 with even-start projections and interior bar phase: Phi(V+H)>=Phi(V)+sum(B/2-3)>=a+2b+sum(B/2-3)>=0. No completeness required. Exact simultaneous footprint partition prevents resource reuse.",
+  "complete_pocket": "Inherited occupied old boundary and full retained supports; all sources in this mixed class: overflying coverage is empty or full per H projection, so each Delta_H>=B/2-2>=1. Phi>=source count; every nonempty complete pocketPhi>=2, entire chamberDelta>=7. Local sharpness inherited from opposed transverse pairs; no complete per-H marginal sharpness or global extension claim.",
+  "rule_obstruction": "For every even B>=6, L>=6 even, H_down(L,B) plus transverse sources(0,+1,4,L+B-4),(L+B+4,-1,4,6) has exact H marginal B/2-3. Thus B6 marginal0 refutes unconditional one-unit-per-H rule. Endpoint-only partial family, not a counterexample to complete-pocket or global target.",
+  "python": {
+    "exit_code": 0,
+    "execution_chunk": "b8dc62",
+    "simultaneous_families": 160,
+    "genuinely_mixed_families": 131,
+    "sharp_partial_families": 16,
+    "locally_complete_families": 23,
+    "genuinely_mixed_complete_families": 14,
+    "largest_horizontal_width": 2000,
+    "scope": "Canonical full matching/endpoint/support records, exact new mixed tiles and directed emitter-labelled event sets, simultaneous no-reuse partition, retained pocket support degrees in actual old core. Exact computations support separate arbitrary-parameter proof; do not replace it."
+  },
+  "lean": "No new Lean for this mixed theorem. Prior transverse local Lean scope unchanged; full mixed geometry and inventory proof written.",
+  "review": {
+    "status": "LIVE_NO_VERDICT",
+    "original_stream_session": 81542,
+    "request": "output/six-row-mixed-aligned-u-review-request.json",
+    "stream": "output/six-row-mixed-aligned-u-review-stream.sse",
+    "pool_preflight": {"ready": 19, "busy": 6, "needs_attention": 1, "queued": 0},
+    "scope": "Self-contained exact canonical definitions, mixed proof, accepted transverse prerequisite, final verifier and passing controls. No worker changes or duplicate live task."
+  },
+  "limitations": "Boundary-phase horizontal U, odd horizontal starts, rotors, unrestricted mixed families, exterior signed budget, universal source decomposition, global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged."
+}

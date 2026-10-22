@@ -56,9 +56,11 @@ direction:
 
 For even b the bar occupies three whole tiles and each stem adds its
 depth/2 tiles beyond the bar. For odd b the bar occupies six partial tiles,
-and each stem adds depth/2-1 more. The alternating inner lateral supports
-give respectively t or t-2 supports inside the footprint; beyond-tip and
-above/below supports account for the excluded ones. These disjoint interval
+and each stem adds depth/2-1 more. The inner lateral supports contribute
+t-2 inside supports in either parity. For even b the two beyond-tip
+supports ALSO lie inside the terminal tiles, giving t in total; for odd b
+they lie outside the footprint, leaving t-2. All above/below supports lie
+outside the footprint. These disjoint interval
 counts prove the table at every depth, rather than fitting sample values.
 All charges are negative, so their total source mass in Phi is a+5b_odd.
 
@@ -160,10 +162,13 @@ old supports of the six-row pocket and is stated only for that pocket.
 
 There is a distinct global consequence WHEN the entire original-source
 family, not merely a pocket subset, consists of these common-height
-transverse U originals. Impose the complete retained-support fusion
+pairwise endpoint-disjoint transverse U originals. Impose the complete retained-support fusion
 hypotheses of `ALL_PHASE_JOINT_COMPENSATION_SLOTS.md` in an even-by-even
 ambient m-by-n rectangle. An even translation may place the common aligned
-strip and its supports inside the rectangle. Optional selections must obey
+strip and all original supports inside the rectangle, using the same physical
+tile partition throughout and without clipping boundary supports. The object T
+is the one in the established ledger, not the original endpoint union.
+Optional selections must obey
 the existing ledger's outside-receiver/no-endpoint-neighbour requirements.
 
 All charges are negative, so that ledger has no positive sources or marked
@@ -261,14 +266,22 @@ simultaneous families,46 opposed-pair/local complete controls,135 arbitrary
 common-height controls through height2000, and1116 actual old-core singleton
 obstructions. All three ordinary-event cardinalities0/1/2 and the full
 odd-bar adjacent-pair event sets are exercised. An independent self-contained
-audit is running on originalstream84340, with no verdict yet. Its attachment
+audit completed on originalstream84340: ACCEPT with one explanatory correction.
+Task97e42b24-fba2-4e91-8e66-253ed2444051 independently accepted the general-height
+budget, singleton exclusion, sharp complete local pairs, and corrected earlier
+baseline. The support-count explanation above now correctly includes the two
+beyond-tip supports inside even-bar terminal tiles. The displayed charge table
+and all conclusions were already correct. Its attachment
 contains every theorem/proof and final Lean, canonical definitions and the
 verifier before the extra1116 singleton controls; those extra controls are
 not claimed independently reviewed. Pool preflight17ready/8busy/1attention/
 0queued. No service-worker settings were changed or live request duplicated.
-The coefficient-one corollary(4) was added afterwards by substitution into
-the established complete ledger; it is outside that submitted review's
-scope, and is not claimed covered by its eventual verdict.
+The coefficient-one corollary(4) was added afterwards and reviewed separately
+in task779e215f-7f40-4cd7-8042-14ed23ac9601, originalstream35113: ACCEPT.
+That review confirms the exact substitution into the established ledger and
+requires retaining endpoint-disjointness, common physical tile phase, and full
+support containment explicitly, as stated above. Both terminal responses are
+archived in output; neither reviewer ran Lean or the submitted verifier.
 Final augmented verifierc9722e exited0 with the same suite and9 additional
 whole ambient complete fusions. Those directly check every retained-support
 degree, every endpoint's occupied degree, and actual area slack againstPhi.
@@ -282,4 +295,6 @@ statement proves rotor exclusion or a general complete-pocket inequality.
 The new theorem controls the entire transverse-U subfamily at arbitrary
 width, not the horizontal-U/rotor interactions with that family. The
 exterior sign, universal decomposition and global5/6/grid targets remain
-open. The submitted manuscript and shared infrastructure are unchanged.
+open. A subsequent mixed aligned-horizontal/transverse extension is proved
+separately in `SIX_ROW_MIXED_ALIGNED_U_BUDGET.md`; it is outside both review
+scopes above. The submitted manuscript and shared infrastructure are unchanged.

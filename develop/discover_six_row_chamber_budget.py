@@ -50,7 +50,8 @@ def sum_truth(conditions):
     return z3.Sum([z3.If(condition, 1, 0) for condition in conditions])
 
 
-def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
+def search(width, timeout, threshold, exclude_spanning, require_rotor=False,
+           horizontal=None, interior_u_only=False, endpoint_only=False):
     started = time.monotonic()
     fixed = baseline(width, (2, 12), 20)+[
         shift(make_source('U', width, 4, 4), (2, 0))]
@@ -58,6 +59,11 @@ def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
     fixed_occupied = set.union(*(record[0] | record[1] for record in fixed))
     library = [(shift(record, (4, 2)), specification)
                for record, specification in source_library(6, width-2)]
+    if interior_u_only:
+        library = [(record, specification) for record, specification in library
+                   if specification['kind'] == 'U'
+                   and (specification['symmetry'][0]
+                        or specification['offset'][0] in (1, 4))]
     choices = [z3.Bool('pocket_source_'+str(index)) for index in range(len(library))]
     pocket = {(row, column) for row in range(4, 10) for column in range(2, width)}
     points = pocket | {other for point in pocket for other in neighbors(point)}
@@ -77,8 +83,9 @@ def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
     for point in pocket:
         if len(endpoint_cover[point]) > 1:
             solver.add(z3.AtMost(*endpoint_cover[point], 1))
-        solver.add(z3.Implies(z3.And(occupied[point], z3.Not(endpoint[point])),
-                              sum_truth(occupied[other] for other in neighbors(point)) == 1))
+        if not endpoint_only:
+            solver.add(z3.Implies(z3.And(occupied[point], z3.Not(endpoint[point])),
+                                  sum_truth(occupied[other] for other in neighbors(point)) == 1))
     mixed_tiles = []
     for row, column in itertools.product(range(2, 5), range(1, width//2)):
         cells = {(2*row+vertical, 2*column+horizontal)
@@ -101,6 +108,12 @@ def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
     if require_rotor:
         solver.add(z3.Or(*[choice for choice, (_, specification) in zip(choices, library)
                            if specification['kind'] == 'rotor']))
+    if horizontal is not None:
+        outer_rows = (0, 5) if horizontal == 'boundary' else (1, 4)
+        solver.add(z3.Or(*[choice for choice, (_, specification) in zip(choices, library)
+                           if specification['kind'] == 'U'
+                           and not specification['symmetry'][0]
+                           and specification['offset'][0] in outer_rows]))
     if threshold is not None:
         solver.add(potential <= threshold)
     if exclude_spanning:
@@ -114,6 +127,8 @@ def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
     result = dict(width=width, candidates=len(library), status=str(verdict),
                   threshold=threshold, exclude_spanning=exclude_spanning,
                   require_rotor=require_rotor,
+                  required_horizontal_phase=horizontal,
+                  interior_u_only=interior_u_only, endpoint_only=endpoint_only,
                   seconds=round(time.monotonic()-started, 3), z3_version=z3.get_version_string(),
                   scope='Finite sealed-pocket discovery only; no unbounded theorem inferred.')
     if verdict == z3.sat:
@@ -125,11 +140,15 @@ def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
         endpoints = set.union(*(record[0] for record in records))
         support = set.union(*(record[1] for record in records))-endpoints
         actual_occupied = endpoints | support
-        assert all(len(set(neighbors(point)) & actual_occupied) == 1 for point in support & pocket)
+        violations = [point for point in sorted(support & pocket)
+                      if len(set(neighbors(point)) & actual_occupied) != 1]
+        if not endpoint_only:
+            assert not violations
         increment = phi_from(records, receipt)-phi_from(fixed, inventory(fixed))
         assert increment == model.eval(potential).as_long()
         result.update(increment=increment, sources=[dict(specification, charge=charge(record))
-                                                   for record, specification in chosen])
+                                                   for record, specification in chosen],
+                      retained_support_violations=violations)
     elif verdict == z3.unknown:
         result['reason'] = solver.reason_unknown()
     return result
@@ -142,11 +161,16 @@ def main():
     parser.add_argument('--threshold', type=int)
     parser.add_argument('--exclude-spanning', action='store_true')
     parser.add_argument('--require-rotor', action='store_true')
+    parser.add_argument('--horizontal', choices=('boundary', 'interior'))
+    parser.add_argument('--interior-u-only', action='store_true')
+    parser.add_argument('--endpoint-only', action='store_true')
     arguments = parser.parse_args()
     for width in arguments.widths:
         assert width >= 6 and width % 2 == 0
         print(json.dumps(search(width, arguments.timeout, arguments.threshold,
-                                arguments.exclude_spanning, arguments.require_rotor)), flush=True)
+                                arguments.exclude_spanning, arguments.require_rotor,
+                                arguments.horizontal, arguments.interior_u_only,
+                                arguments.endpoint_only)), flush=True)
 
 
 if __name__ == '__main__':
