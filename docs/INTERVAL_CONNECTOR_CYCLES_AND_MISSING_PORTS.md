@@ -351,7 +351,13 @@ output/interval-connector-cycles-and-missing-ports-oracle.json. The original
 stream ended with an EOF and exit1; the completed task and service session
 were recovered and their full answers agree exactly. The original prompt
 also agrees with the session. No successful DONE stream is claimed.
-The initial input predates the local port-degree and adjacent-BP additions;
-those additions require the separate follow-up, not inferred acceptance.
+The initial input predates the local port-degree and adjacent-BP additions.
+Separate follow-up45fb9297-002f-4008-a22d-e942edca9c41 completed ACCEPT at
+14:14:22 UTC, actual gpt_6/pro, explicitly accepting these additions and
+the new frozen distinct-BP-terminal injection companion. Its complete
+16078-character answer agrees across the original DONE stream, completed
+task and session; the49645-character prompt agrees with the session, and
+exec93192 exits0. Its full answer is archived separately. No execution
+certification or universal allocation theorem is inferred.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

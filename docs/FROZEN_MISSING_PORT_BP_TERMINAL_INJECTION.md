@@ -183,10 +183,15 @@ ordinary-axiom audits, with no errors, warnings, sorry or native evaluation;
 execution is recorded in output/frozen-missing-port-bp-injection-lean.json.
 This verifies the strict-descent mechanism, not the whole grid injection.
 
-Independent follow-up 45fb9297-002f-4008-a22d-e942edca9c41 in conversation
-conv_9a8ee0adac356fe3 reviews this complete new theorem and the local
+Independent follow-up 45fb9297-002f-4008-a22d-e942edca9c41 completed ACCEPT
+at 14:14:22 UTC, actual gpt_6/pro. It independently accepts this complete new
+theorem, including arbitrary exterior certificate support, and the local
 port-degree/adjacent-BP additions to the preceding note. The original
-49645-character request is live; acceptance is not inferred from the
-earlier partial-connector review.
+49645-character prompt agrees with conversation conv_9a8ee0adac356fe3;
+the complete 16078-character answer agrees exactly across the original
+DONE stream, completed task and session. Original exec93192 exits0. The
+full answer is in output/frozen-missing-port-bp-injection-oracle.json.
+The review certifies written mathematics, not program or Lean execution.
+No owned review remains live. Universal resource compensation remains open.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
