@@ -249,6 +249,9 @@ passes locally on Lean4.33.0, with10theorems and10individual axiom audits,
 using only propext and Quot.sound; there are no errors, warnings, sorry or
 native evaluation. The receipt is output/exchange-terminal-nonunique-formal-check.json.
 Independent review4eb5ea4d is running on the complete written argument and
-its inherited dependencies, original stream11859. A separate earlier
-research question8d529046 about uniqueness remains live on stream91419;
-neither pending task is an acceptance of this note.
+its inherited dependencies, original stream11859. The separate earlier
+research question8d529046 completed with partial structural lemmas, leaving
+the uniqueness question unresolved in that response. Our counterexample
+settles that question negatively. The research response is archived in
+output/exchange-terminal-uniqueness-research-response.json, with exact
+original stream/task/session comparisons. It is not a review of this note.
