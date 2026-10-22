@@ -190,6 +190,16 @@ same interface correction appears on both sides of the proposed payment:
 
     X_H-B_H=(X_L-B_L)+(X_R-B_R).                              (2)
 
+There is also a direct raw-buffer check. The contribution of a tile to
+sum_C gamma_C is m_Q(t_Q-2), with the FULL selected count repeated in every
+block summand meeting that tile. With two endpoints its original value is
+-2; the two completed singleton values sum to -1. With three endpoints
+the original value is -2(2+h), and the completed values sum to -(2+h).
+The endpoint terms add. Negating gives exactly the same chi for B, without
+depending on the recalled receiver identity. An anchor determines which
+completed side retains a native selection; it does not restrict the raw
+block summands in which that selection is counted.
+
 Consequently chi is zero for an intertile cut and belongs to {1,2,3} for
 an intratile cut. All three positive values have full finite-model witnesses.
 The correction is not a new donor and must not be spent in addition to B.
@@ -213,6 +223,10 @@ Repeated application of Sections 2--4 proves feasibility, degree preservation,
 independent perfect-matching choices, terminality equivalence and
 
     rho(H)=sum_K rho(completed K).                            (3)
+
+One original endpoint may become a selected support of several different
+completed pieces. The sequential proof permits this multiplicity and keeps
+each completed pair feasible; it does not assert a partition of supports.
 
 This also establishes that restored supports in one piece cannot conflict;
 no additional compatibility assumption on the original pieces is required.
@@ -290,5 +304,13 @@ payment implication. The general graph matching bijection, exchange
 restriction argument, geometric bridge classification and all-cut adapters
 remain written proofs. No full formalization of the global conjecture or
 general graph decomposition is claimed.
+
+Independent written review67c5658f completed ACCEPT at10:16:21UTC on
+22October, observedgpt_6/pro. The complete18492-character answer agrees
+exactly across the original DONE stream, terminal task and conversation;
+the submitted prompt also agrees. Its suggested direct raw-buffer calculation
+and support-multiplicity clarification are recorded above. See
+output/even-bridge-support-completion-review-accepted.json. This is review
+of the written mathematics, not reviewer execution of Python or Lean.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
