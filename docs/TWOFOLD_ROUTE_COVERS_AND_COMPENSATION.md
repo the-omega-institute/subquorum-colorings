@@ -78,8 +78,9 @@ Repeat. The m=1 case is F itself. This produces m integral value-k layers
 whose sum is F before cycle removal.
 
 Keep all circulation cycles during peeling so that the residual induction
-continues to apply. Afterwards remove directed cycles in each layer and
-decompose the remaining flow into k source-to-sink paths. Each source arc
+continues to apply. Afterwards discard the auxiliary return arc, remove
+directed cycles in the original network, and decompose the remaining flow
+into k source-to-sink paths. Each source arc
 has capacity one, so every source occurs. Mixed owners and resource sinks
 also have capacity one, giving a legal route packing. Cycle removal only
 decreases the combined arc uses and total nonnegative link cost.
@@ -183,8 +184,9 @@ columns. Every selected mediator lies in the accessed terminal's row.
 
 To see that this lists all routes, trace the horizontal neighbors of the
 alpha tips and of the two successive exposed mixed TP terminals in each
-band. At each step the only opposite-kind terminal continuation is the one
-displayed. Access first becomes available after the second link, at the
+band. At each step the only opposite-kind terminal continuation, after
+discarding mixed-owner self-links, is the one displayed. Access first becomes
+available after the second link, at the
 exterior cap. The intervening all-BT corridor connects TP to TP in this
 placement, hence supplies no horizontal TP--BP link. Different pair packets
 are separated by blank rows. No alpha route can enter a beta pair packet or
@@ -205,7 +207,7 @@ branches survives. Since different branches share no capacity units, choose
 any surviving branch independently for every such source. Every route costs
 exactly two, proving the first two lines. Every blocked source requires two
 different excluded units, one in each branch, and different sources require
-different units, giving the last line. Excluding the two interval endpoints
+different units, giving the last line. Excluding the two interval units
 of each of s chosen sources attains delta=s with |F|=2s for every 0<=s<=k.
 In particular any single unavailable mixed owner or interval unit leaves
 full compensation possible at the exact cost 4q. QED.
