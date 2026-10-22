@@ -138,8 +138,9 @@ def exhaustive_controls():
                    for gate in gates):
                 assert quota == flow
                 totals['source_separated_controls'] += 1
+                totals['source_separated_exact'] += int(quota == flow)
     assert totals['quota_overstates_flow'] > 0
-    assert totals['source_separated_controls'] == totals['source_separated_exact'] if 'source_separated_exact' in totals else True
+    assert totals['source_separated_controls'] == totals['source_separated_exact']
     return dict(totals=totals, gap_examples=gap_examples)
 
 

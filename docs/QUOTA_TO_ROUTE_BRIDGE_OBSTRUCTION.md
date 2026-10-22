@@ -64,11 +64,13 @@ separation.
 
 ## 3. Exhaustive small controls
 
-The verifier enumerates every nonempty two-source network with two gates and
-two resources. It compares the exact gate-disjoint route packing with the
-source-resource projection. Among 225 networks, the projection is exact in
-211 and strictly overstates route flow in 14. The source-separated condition
-is checked in 120 cases, and every one of those cases has equality.
+The verifier enumerates all 225 labeled three-layer networks
+`{A,B} -> {g0,g1} -> {R0,R1}`, with edges only between consecutive layers
+and both edge layers nonempty. It compares the exact gate-disjoint route
+packing with the source-resource projection. Among these 225 networks, the
+projection is exact in 211 and strictly overstates route flow in 14. The
+source-separated condition is checked in 120 cases, and every one of those
+cases has equality.
 
 The minimal obstruction and the separated control are checked directly, and
 the exhaustive enumeration is only a finite sanity check. It does not replace
