@@ -24,6 +24,16 @@ def normalized(reflected, top=0, left=0):
 
 def shape_roles():
     base = normalized(False)
+    expected = [base, normalized(True)]
+    for symmetry in itertools.product((False, True), repeat=3):
+        record = rotor_record(symmetry)
+        minimum_row = min(row for row, column in record[0])
+        minimum_column = min(column for row, column in record[0])
+        record = transform(record, lambda point: (
+            point[0]-minimum_row, point[1]-minimum_column))
+        assert record in expected
+    assert transform(base, lambda point: (point[0], 3-point[1])) == expected[1]
+    assert transform(base, lambda point: (3-point[0], point[1])) == expected[1]
     corner_roles = upper_roles = middle_roles = 0
     for point, reflected in itertools.product(((0, 0), (0, 2), (0, 3)), (False, True)):
         for record in anchored(normalized(reflected), point):
@@ -60,7 +70,8 @@ def shape_roles():
         if top == 2:
             point = 1, 2 if reflected else 1
             assert point in record[1] and (2, point[1]) in record[0]
-    return dict(boundary_anchor_roles=corner_roles, lower_upper_support_roles=upper_roles,
+    return dict(full_record_dihedral_images=8, full_record_reflections=2,
+                boundary_anchor_roles=corner_roles, lower_upper_support_roles=upper_roles,
                 lower_survivors=survivors, middle_corner_roles=middle_roles)
 
 

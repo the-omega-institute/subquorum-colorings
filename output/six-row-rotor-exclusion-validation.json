@@ -8,7 +8,10 @@
   "whole_pocket_consequence": "Previous accepted all-phase budget now covers ALL sources in this complete pocket model, with no extra no-rotor assumption: Phi>=a+2b+sum(B-1)+u; empty/nonempty/withH pocket bounds0/2/5 and spanning-upward chamber bounds5/7/10. Nonempty2/7 sharp in established local two-V families at all even W>=12. Exterior and global applicability remain open.",
   "python": {
     "exit_code": 0,
-    "execution_chunk": "8a3ac5",
+    "execution_chunk": "1003be",
+    "initial_execution_chunk": "8a3ac5",
+    "full_record_dihedral_images": 8,
+    "full_record_reflections": 2,
     "boundary_anchor_roles": 6,
     "lower_upper_support_roles": 6,
     "lower_survivors": [[false, 2]],
@@ -41,6 +44,7 @@
     "request": "output/six-row-rotor-exclusion-review-request.json",
     "stream": "output/six-row-rotor-exclusion-review-stream.sse",
     "original_prompt_match_verified": true,
+    "post_submission_controls": "Added exhaustive8image/two-reflection FULL endpoint/support/matching checks and reran final verifier1003be. Mathematical proof unchanged; no reviewer execution of these additional controls is presumed.",
     "pool_preflight": {"ready": 23, "busy": 2, "needs_attention": 1, "queued": 0},
     "scope": "New no-rotor theorem and unconditional-within-model whole-pocket consequence; not covered by prior all-phase audit. Reviewer code execution is not presumed."
   },

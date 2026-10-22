@@ -270,6 +270,9 @@ support roles and their unique survivor, all eight middle-corner roles,
 142 disjoint closed-top V pairs,16 wrong-tip controls and36 middle-stem
 controls, including depth2000. These are controls of the explicit shape
 identities and interval reasoning, not finite-width proof of the theorem.
+The final verifier also checks all eight normalized FULL original records
+and both reflections, including supports and matching edges. These extra
+controls were added after audit submission, without changing the proof.
 
 `formal/SubQuorum/SixRowRotorExclusion.lean` checks normalized shape
 collisions at arbitrary integer translations, the unique lower role,
