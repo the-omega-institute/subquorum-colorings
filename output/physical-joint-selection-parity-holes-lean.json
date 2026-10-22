@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/JointSelectionBlockBalance.lean",
+  "machine": "Local Mac selected in the current user session",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean SubQuorum/JointSelectionBlockBalance.lean",
+  "working_directory": "formal",
+  "preflight": {
+    "memory_free_percentage": 49,
+    "lean_lake_processes": [],
+    "process_check": "Compare basename of ps comm against exactly lean or lake; both full paths and bare names included"
+  },
+  "execution_session_id": 35475,
+  "final_tool_chunk": "36b853",
+  "exit_code": 0,
+  "theorems": 11,
+  "axiom_audits": 11,
+  "axioms": {
+    "ten_theorems": ["propext", "Quot.sound"],
+    "cut_flux_capacity": ["propext", "Classical.choice", "Quot.sound"]
+  },
+  "scope": "Endpoint-list cardinality from supplied domain permutations; even source/resource selection in closed blocks; signed block balance and summed error without reuse; conditional cut capacity; source-block endpoint half-progress, transfer error and odd-slot obstruction. Does not formalize the physical family, frozen/unique matching geometry, selector graph, actual incidence transport, or the whole grid theorem.",
+  "no_sorry_native_or_new_axioms": true
+}
