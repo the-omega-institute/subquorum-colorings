@@ -1,6 +1,6 @@
 {
   "date": "2026-10-22",
-  "status": "LOCAL_CHECKS_PASS_INDEPENDENT_WRITTEN_REVIEW_PENDING",
+  "status": "COMPLETED_ACCEPT_LOCAL_CHECKS_PASS",
   "note": "docs/TERMINAL_EXTERIOR_SINGLE_SOURCE_AND_GLOBAL_REDUCTION.md",
   "claims": [
     "One-original exterior completion is exactly a full-width equal-leg upward U; marginal5; exists iff min(D,F)>=a+10.",
@@ -63,20 +63,35 @@
     }
   ],
   "independent_review": {
-    "status": "RUNNING_NO_ACCEPT_CLAIM",
+    "status": "COMPLETED_REVISE_PROMPT_NORMALIZATION_CORRECTED",
     "task_id": "2a869582-424a-4c0a-a071-908363b5ffd8",
     "conversation_id": "conv_37f5b6b1df38ee24",
     "original_stream_session": 77166,
     "request": "output/terminal-exterior-closure-review-request.json",
     "stream": "output/terminal-exterior-closure-review-stream.sse",
     "original_prompt_match": true,
-    "prompt_erratum": "The review prompt transcribed the charge with a missing factor2. The actual authoritative charge is q=|M|+|original supports inside endpoint tiles|-2*|endpoint tiles|, as in check_incident_eight_north_transfer.py. Correct this in the same conversation before treating any verdict as applying to the actual model; original request preserved."
+    "prompt_erratum": "The review prompt transcribed the charge with a missing factor2. The actual authoritative charge is q=|M|+|original supports inside endpoint tiles|-2*|endpoint tiles|, as in check_incident_eight_north_transfer.py. Correct this in the same conversation before treating any verdict as applying to the actual model; original request preserved.",
+    "terminal": "output/terminal-exterior-closure-review-terminal.json",
+    "response_chars": 18682,
+    "final_followup": {
+      "status": "COMPLETED_ACCEPT",
+      "task_id": "3a0e1918-c434-47be-a3cb-24c71dd0271a",
+      "conversation_id": "conv_37f5b6b1df38ee24",
+      "response_chars": 6110,
+      "observed_model": "gpt_6/pro",
+      "stream_terminal_session_response_exact_match": true,
+      "terminal": "output/terminal-exterior-closure-charge-correction-terminal.json",
+      "request": "output/terminal-exterior-closure-charge-correction-request.json",
+      "stream": "output/terminal-exterior-closure-charge-correction-stream.sse",
+      "scope": "All three written claims accepted under actual factor2 charge; source and inventory unchanged. Original REVISE retained for prompt transcription correction. Reviewer did not execute code."
+    }
   },
   "original_research": {
-    "status": "RUNNING_RETAIN_ORIGINAL",
+    "status": "COMPLETED_NEW_EXTERIOR_SIGN_ARGUMENT_RECEIVED",
     "task_id": "49a148fa-80db-4645-8283-fb7aed214e4d",
     "conversation_id": "conv_bdfde13335de93f1",
-    "original_stream_session": 83112
+    "original_stream_session": 83112,
+    "terminal": "output/arbitrary-exterior-compensation-research-terminal.json"
   },
-  "limitations": "Explicit canonical U/rotor fusion only. No negative complete detached fusion exhibited; no arbitrary exterior sign, universal decomposition, unrestricted5/6 improvement or rectangular-grid triple equality. Submitted manuscript and public main unchanged."
+  "limitations": "Canonical source model only. One-source/classification/amplification/anchored monotonicity note ACCEPT. Later localized exterior-sign general written theorem in LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md passes own controls/scoped Lean; independent final review pending. Sharp exterior minimum, general grid decomposition/marked allocation/unrestricted5/6/triple equality remain OPEN."
 }

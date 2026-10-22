@@ -1,0 +1,76 @@
+{
+  "date": "2026-10-22",
+  "status": "GENERAL_WRITTEN_PROOF_LOCAL_CHECKS_PASS_INDEPENDENT_REVIEW_PENDING",
+  "note": "docs/LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md",
+  "claims": {
+    "exterior": "Every complete finite canonical extension of nested old core, arbitrary even gaps>=10 and D,F>=a_last+4: Delta_out>=2+P_out, all actual exterior originals included; finite unequal or coincident wall tips and detached sources allowed.",
+    "chambers": "Every sealed chamber Delta_i>=3+P_i. Physical tiles, event directions, support incidences and rotor mates counted once.",
+    "width_six": "All spacing10 width6 complete extensions: Phi=4g+2d+Delta_out>=4g+2d+2+P_out.",
+    "crossing": "Independent unbounded b,e,f short-wall two-U complete family has exact exterior6.",
+    "prior_results": "Global Phi>=P and the global2g+2+P_new consequence follow from existing activated-singleton reserve theorem; not claimed as novel.",
+    "general_cut": "2Delta_Q>=2P_Q-b_Q-2B_Q if no added source crosses the cut AND every relevant old rotor singleton keeps its paired triple in Q; disjoint cuts do not reuse physical capacity.",
+    "missing_mate_counterexample": "Complete zero-charge rotor O=K, no additions, Q upper negative singleton: marginal0 but missing-mate rule would demand0>=1 in doubled units."
+  },
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_localized_exterior_tile_budget.py",
+    "exit_code": 0,
+    "terminal_chunk": "99d0f0",
+    "controls": "output/localized-complete-exterior-controls.json"
+  },
+  "lean": {
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/LocalizedExteriorBudget.lean",
+    "location": "user-selected local Mac",
+    "version": "4.33.0",
+    "memory_free_percent": 52,
+    "active_lean_lake_before": 0,
+    "exit_code": 0,
+    "terminal_chunk": "b813dd",
+    "theorems": 17,
+    "individual_axiom_audits": 30,
+    "warnings": 0,
+    "errors": 0,
+    "sorryAx": false,
+    "native_decide": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "axiom_free_complete_local_table": true,
+    "scope": "Universal four-corner table, exact event algebra, general charge formulas, boundary arithmetic and conditional regional/global conclusions. Geometric source adapters, rotor injection, region localization and global summation remain written."
+  },
+  "research_oracle": {
+    "task_id": "49a148fa-80db-4645-8283-fb7aed214e4d",
+    "conversation_id": "conv_bdfde13335de93f1",
+    "status": "COMPLETED_RESEARCH_SUGGESTION_NOT_REVIEW",
+    "response_chars": 22888,
+    "observed_model": "gpt_6/pro",
+    "task_session_response_exact_match": true,
+    "original_prompt_exact_match": true,
+    "terminal": "output/arbitrary-exterior-compensation-research-terminal.json"
+  },
+  "independent_review": {
+    "task_id": "cdc1a744-ee8c-4f1a-a87f-1f31c8e264ef",
+    "conversation_id": "conv_8ac705d45532e254",
+    "status": "TERMINAL_FAILED_NO_MATHEMATICAL_VERDICT",
+    "original_stream_session": 22255,
+    "original_prompt_exact_match": true,
+    "request": "output/localized-complete-exterior-review-request.json",
+    "stream": "output/localized-complete-exterior-review-stream.sse",
+    "scope": "Full new localized theorem, event cancellation/multiplicity, rotor injection, finite-wall baselines and unbounded complete crossing; width6 classification used as accepted dependency.",
+    "failure_reason": "no_assistant_output",
+    "terminal": "output/localized-complete-exterior-failed-review-terminal.json",
+    "final_version_followup": {
+      "status": "RUNNING",
+      "task_id": "d8adad0c-7715-4c48-8241-9bfc6c9022f4",
+      "conversation_id": "conv_37f5b6b1df38ee24",
+      "original_prompt_exact_match": true,
+      "original_stream_session": 64687,
+      "request": "output/localized-complete-exterior-final-review-request.json",
+      "stream": "output/localized-complete-exterior-final-review-stream.sse",
+      "scope": "Updated whole localized theorem including general cut and essential old-rotor mate counterexample; prior cdc1a744 failed terminally, no duplicate live task."
+    }
+  },
+  "open": "Sharp exterior minimum2..5; all wider chambers without prescribed spanning source; general source decomposition and marked-side joint allocation; unrestricted5/6 improvement and rectangular-grid triple equality.",
+  "preserved": "11October submitted manuscript, public main, star-forming/C4-free results, shared CI. No Mail check/draft/send this automatic research turn."
+}

@@ -1,5 +1,13 @@
 # Terminal exterior closure: one-source classification and two obstructions
 
+Later22October development: `LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md` now
+supplies a general written proof of Delta_out>=2+P_out, including all
+multi-original and detached exterior sources, with exact local controls
+and scoped Lean checks. Its independent audit is pending. Thus the earlier
+open exterior-sign discussion below is historical; sharpness at5 and the
+general grid/marked-demand problems remain open. The amplification and
+nonmonotonicity statements themselves remain valid.
+
 22 October 2026. Authors: Haobo Ma and Wenlin Zhang.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
@@ -64,7 +72,7 @@ The last B has immutable beyond-tip supports
 
 At p its own endpoint (a+4,1) and A's endpoint (a+5,0) are occupied;
 the symmetric two neighbours are occupied at q. The depth assumption
-D,F>=a+6 supplies both wall neighbours. Neither point belongs to K.
+D,F>=a+6 supplies both wall neighbours. Neither point is an endpoint of K.
 Completeness forces their consumption. Earlier chamber sources cannot
 own these points, by sealed-chamber localization. Hence C contains both.
 
@@ -233,7 +241,12 @@ unchanged; no unrestricted grid theorem is asserted.
 
 ## Validation and review status
 
-The general arguments above are written proofs awaiting independent review.
+The three general arguments above now have final independent ACCEPT under
+the authoritative factor2 charge, task3a0e1918. The original2a869582 REVISE
+identified a missing factor2 solely in the review prompt; the actual code
+and inventory were unchanged. The endpoint wording at the two gates is now
+explicit. Original and corrected verdicts are retained separately. Reviewer
+execution of the controls or Lean is not asserted.
 The source-level checker passed on22October:6048 endpoint-disjoint gate
 candidates,152 complete single caps,5184 excluded downward candidates,
 80 short-tail controls,108 exact cap receipts,18 both-complete connected
@@ -249,4 +262,4 @@ A contained-source18x12 discovery window has no exterior inventory below5
 (437candidates, known cap SAT). The24x24 search timed out with UNKNOWN
 (52859candidates); it excludes nothing. Neither search proves a general
 exterior bound. See `output/terminal-exterior-closure-validation.json` and
-the separate controls record for commands, scope and pending review handles.
+the separate controls record for commands, scope and review receipts.
