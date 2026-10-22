@@ -16,6 +16,12 @@ form through a two-demand boundary example. Here we give the all-length
 classification and reassignment tradeoff. The grid target remains strictly
 positive throughout; the obstruction concerns the protected extension rule.
 
+The independent mathematical review of Theorems 1--3 completed with ACCEPT
+on 23 October 2026 at 01:36:04 Singapore. Its complete response is archived in
+output/protected-chain-reassignment-oracle.json. It inspected the supplied
+proofs and source without executing Python or Lean. The later Theorem 4 below
+has a separate review request and is outside that earlier acceptance scope.
+
 ## 1. Physical family, current strands and old allocations
 
 Let W>=6 be even and r>=2. Use the r translated direct_family(W,4) copies
@@ -140,7 +146,9 @@ in column 8r+1, the marked right boundary. The left endpoint's intermediate
 tip has no access, and the middle endpoint has no reverse continuation because
 its left BP is already used in C0. By the complete route geometry there is no
 other exit. The last root therefore cannot reach any unreserved unmarked
-interval. There is no beta resource. Arbitrarily many further terminal links
+interval. In the residual network after protection and removal of marked
+intervals, the separator certificate is Z empty. There is no beta resource.
+Arbitrarily many further terminal links
 cannot produce full compensation while the protected core is fixed. This
 proves (3).
 
@@ -186,8 +194,9 @@ Originally every g_i paid d_i. All r-1 assignments therefore change. QED.
 Since r is arbitrary, no bound independent of r controls the number of old
 assignments changed by a repair using the fewest additional links. This is an
 allocation statement; the physical resources and the scalar surplus are not
-created or multiplied. A safe implementation first assigns h_0 to d_0, freeing
-g_0, then successively transfers g_i to d_(i+1), freeing the next resource.
+created or multiplied. A safe implementation first replaces d_0's old payment
+by h_0, freeing g_0, then successively replaces each subsequent paid demand's
+old payment by the freed preceding resource, finally paying the last demand.
 It can record each resource's current owner at every step without double use.
 
 ## 4. Two links with one old resource reassigned
@@ -212,17 +221,70 @@ The cost pairs exhibited are therefore
 
     (new links, changed old assignments) = (1,r-1) and (2,1).
 
-They separate a purely monotone protected extension, an optimum in link count,
-and an extension preserving most old assignments. We do not assert that these
-pairs classify all multiobjective possibilities for arbitrary configurations.
+The one-link repair physically modifies only d_0; its other changes are
+resource reassignments. The two-link repair physically modifies only d_(r-2).
 
-## 5. Verification and remaining geometric problem
+They separate a purely monotone protected extension, an optimum in link count,
+and an extension preserving most old assignments.
+
+## 5. Exact Pareto frontier for this family
+
+The following deduction is subsequent to the accepted review of Theorems 1--3.
+It is not included in that review's acceptance scope.
+
+**Theorem 4.** Start from F_(r-1), keep C0 fixed, and allow arbitrary additional
+permitted links and interval reassignments. Every full repair must reassign
+g_(r-2) to d_(r-1). Consequently its number of changed old assignments is at
+least one, regardless of its link budget. The nondominated cost pairs are
+exactly
+
+    {(1,1)}                   if r=2,
+    {(1,r-1),(2,1)}            if r>=3.
+
+Both coordinates are minimized; the second counts old physical resources
+now allocated to a different demand, as before. This classification is for
+this family and this starting allocation, not arbitrary configurations.
+
+Proof. Use the unrestricted residual network, without protecting any paid
+owner or old resource. By Section 2's complete route geometry, the last
+alpha can access the unmarked g_(r-2) from its left tip, while every other
+possible exit is either unported or marked. Removing only g_(r-2) therefore
+blocks that source even in the unrestricted network. There is no beta credit.
+Any full compensation, normalized using the general flow theorem, must route
+the last source to g_(r-2).
+
+For clarity, normalization does not conceal a different payment in the
+original full repair. There are initially no beta owners. In any terminal
+matching component containing d alpha owners, the excess of TP over BP
+terminals is 2d. An alternating path has at most two free terminals, and a
+cycle none. Hence a component containing an alpha contains exactly one and
+remains alpha. Its two possible endpoint continuations are exactly those
+listed in Section 2. Thus every actual full allocation pays the last demand
+with g_(r-2), which originally paid d_(r-2). At least this old assignment
+changes.
+
+Zero links are impossible. By Theorem 2, one link forces r-1 changes and
+attains that pair. For r>=3 Theorem 3 attains (2,1). Any other feasible
+pair with at least two links has at least one change and is dominated by
+(2,1). Neither displayed pair dominates the other, since r-1>1. For r=2,
+(1,1) dominates every feasible pair. This proves the exact frontier. QED.
+
+The subsequent augmentation checker independently deletes only g_(r-2) in
+the unrestricted network in 69 physical parameter cases and checks that the
+last source is blocked. For W=6 and r=2,3 it additionally enumerates every
+additional terminal matching and every injective full interval allocation,
+recovering the displayed frontiers. These controls are separate from the
+earlier single-link loop and from its accepted review.
+
+## 6. Verification and remaining geometric problem
 
 The permanent checker accepts externally specified protected allocations,
 checks their actual incidences and distinct resource ownership, and checks
 every possible old root. It also exhausts all single additional links in the
-physical family, confirms the unique one-link extension and its forced full
-allocation, and validates the explicit two-link/one-reassignment construction.
+physical family, confirms the unique one-link extension, and checks a computed
+maximum allocation against the forced form. It does not enumerate all interval
+allocations: uniqueness follows from the written argument and Lean interface.
+It also validates the explicit two-link/one-reassignment construction.
 
 The recorded run covers W in {6,8,12}, r=2..24: 69 completely frozen uniquely
 matched grids, 11,362 independently forced matching edges, 897 externally

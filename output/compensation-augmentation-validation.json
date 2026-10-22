@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_terminal_matchings": 34304,
+    "initial_packings": 48523,
+    "exhaustive_models": 4608,
+    "verified_augmentations": 32334,
+    "reverse_access_steps": 1367,
+    "reverse_link_steps": 3637,
+    "reverse_mixed_steps": 13,
+    "random_models": 160,
+    "fixed_selected_link_obstructions": 1,
+    "unrestricted_cost_incompatible_with_old_support": 1,
+    "unrestricted_last_resource_separator_certificates": 69,
+    "independent_arbitrary_chain_link_matchings": 4896,
+    "independent_full_interval_allocations": 1140,
+    "exhaustive_physical_pareto_frontiers": 2,
+    "physical_last_root_augmentations": 138,
+    "physical_last_root_chains": 69
+  },
+  "reverse_link_example": {
+    "value": 2,
+    "routes": [
+      [
+        [
+          "source",
+          0
+        ],
+        [
+          "access",
+          1,
+          1
+        ],
+        [
+          "interval",
+          1
+        ]
+      ],
+      [
+        [
+          "source",
+          1
+        ],
+        [
+          "link",
+          2,
+          4
+        ],
+        [
+          "mixed",
+          2
+        ],
+        [
+          "access",
+          5,
+          0
+        ],
+        [
+          "interval",
+          0
+        ]
+      ]
+    ],
+    "reverse": {
+      "link": 1
+    }
+  },
+  "physical_examples": [
+    {
+      "width": 6,
+      "count": 2,
+      "exact_enumerated_frontier": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "width": 6,
+      "count": 2,
+      "mode": "all_links",
+      "reversed_old_accesses": 1,
+      "final_value": 2
+    },
+    {
+      "width": 6,
+      "count": 2,
+      "mode": "root_link_only",
+      "reversed_old_accesses": 1,
+      "final_value": 2
+    },
+    {
+      "width": 6,
+      "count": 3,
+      "exact_enumerated_frontier": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "width": 8,
+      "count": 3,
+      "mode": "all_links",
+      "reversed_old_accesses": 1,
+      "final_value": 3
+    },
+    {
+      "width": 8,
+      "count": 3,
+      "mode": "root_link_only",
+      "reversed_old_accesses": 2,
+      "final_value": 3
+    },
+    {
+      "width": 12,
+      "count": 24,
+      "mode": "all_links",
+      "reversed_old_accesses": 1,
+      "final_value": 24
+    },
+    {
+      "width": 12,
+      "count": 24,
+      "mode": "root_link_only",
+      "reversed_old_accesses": 23,
+      "final_value": 24
+    }
+  ],
+  "scope": "Finite validation of arbitrary-initial-packing augmentation, nested paid-source/resource supports, actual terminal matching and single resource use. General theorem is written; no universal grid budget claim."
+}
