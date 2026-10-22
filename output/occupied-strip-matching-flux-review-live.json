@@ -1,6 +1,6 @@
 {
-  "status": "initial_review_completed_corrected_followup_queued",
-  "phase": "corrected_followup_queued",
+  "status": "initial_review_completed_corrected_followup_cancelled_without_execution",
+  "phase": "terminal",
   "task_id": "cbda05f2-edd3-4ec2-b412-0f36669002eb",
   "conversation_id": "conv_79dfee85cc1c5e3b",
   "assigned_worker": "lt4r7693kj-go-2",
@@ -9,7 +9,7 @@
   "original_stream": "/tmp/sahbi-occupied-strip-review.sse",
   "created_at": "2026-10-22T11:34:02.122+00:00",
   "observed_model_switcher": null,
-  "verdict": "Initial review requests exactly the independently corrected alternating phase and explicitly verifies all results with that correction; final corrected-note ACCEPT remains pending.",
+  "verdict": "Initial review requests exactly the independently corrected alternating phase and explicitly verifies all results with that correction; the extra corrected-note follow-up was cancelled without execution and provides no additional verdict.",
   "scope": "Independent written audit of the general occupied-strip matching-flux theorem, original physical ledger and receiver-closed occupied neutral family; not code or Lean execution.",
   "initial_review_archive": "output/occupied-strip-matching-flux-initial-review.json",
   "initial_stream_done": true,
@@ -19,7 +19,11 @@
   "corrected_followup_request": "/tmp/sahbi-occupied-strip-corrected-review-request.json",
   "corrected_followup_stream": "/tmp/sahbi-occupied-strip-corrected-review.sse",
   "corrected_followup_stream_exit_code": 1,
-  "corrected_followup_stream_error": "Unexpected EOF during chunk size line; task remains queued and is retained without resubmission.",
+  "corrected_followup_stream_error": "Unexpected EOF during chunk size line; original task was retained until an authoritative terminal cancellation was observed.",
+  "corrected_followup_status": "cancelled",
+  "corrected_followup_attempts": 0,
+  "corrected_followup_completed_at": "2026-10-22T12:02:52.949+00:00",
+  "corrected_followup_cancellation_reason": null,
   "input_correction": "The current complete note uses 1-(j mod2), explicit root receiver disjointness and even W. Initial review independently identifies the same phase correction and checks the corrected family. Complete corrected note submitted for final confirmation.",
-  "next_action": "Retain corrected follow-up task4fab9c67 and inspect its terminal response/session without resubmission despite the transport EOF. General geometric coverage remains open."
+  "next_action": "No review job remains live in this conversation. Preserve the initial full review and its explicit verification with the corrected row phase. The corrected strip proof is supplied in full as dependency to the separate native transverse theorem review. Do not infer an extra ACCEPT from a cancelled task."
 }

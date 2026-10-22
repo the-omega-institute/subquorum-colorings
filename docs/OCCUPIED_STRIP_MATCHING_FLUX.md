@@ -269,10 +269,12 @@ verifier or Lean execution. The original review independently identified
 the same alternating-phase error, explicitly verified the corrected family,
 and confirmed the general theorem and receiver-closed application. Its full
 response and exact request/stream/task/session checks are archived in
-output/occupied-strip-matching-flux-initial-review.json. A follow-up receives
-the current corrected complete note, including the explicit root receiver
-separation and even-width assumptions, for final confirmation. Its retained
-task is tracked in output/occupied-strip-matching-flux-review-live.json;
-transport interruption is not a reason to duplicate the queued review.
+output/occupied-strip-matching-flux-initial-review.json. The extra follow-up
+with the corrected complete note was cancelled by the service without any
+execution or answer; no extra acceptance is inferred. Its original handle
+was retained until authoritative terminal status, as recorded in
+output/occupied-strip-matching-flux-review-live.json. The corrected proof
+is also supplied in full as a dependency to the separate native transverse
+band theorem review.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
