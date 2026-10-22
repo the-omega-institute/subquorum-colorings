@@ -45,8 +45,8 @@ For an extremal proof this stronger condition costs nothing: choose a feasible
 pair maximizing |T|+|M|, and then maximizing |T| among those maximizers.
 A matching replacement followed by a nonempty bundle would preserve the
 first quantity and increase the second, a contradiction. The same argument
-applies to a pair of maximum |T| among counterexamples to the half-area bound,
-if a counterexample exists. Thus a valid local exchange obstruction can be
+applies to a pair of maximum |T| among counterexamples to the half-area bound
+on a fixed finite board, if a counterexample exists on that board. Thus a valid local exchange obstruction can be
 excluded from a general-grid extremal argument, not just from a prescribed
 source family.
 
@@ -169,8 +169,10 @@ the elementary counterexample.
 The rule is algorithmic on arbitrary finite grids. For each of the linearly
 many placements and eight orientations, test the required labels and find a
 bipartite perfect matching of P minus S. If it exists, reconstruct the complete
-matching, perform the exchange and promote the five endpoints. Repeat, with
-ordinary promotions if desired. Each accepted step deletes matching edges, so
+matching, perform the exchange and promote the five endpoints. Repeat the full
+motif search after each change. Ordinary single-edge promotions, found by
+scanning endpoints, may be interleaved with the same repeated search.
+Each accepted step deletes matching edges, so
 the process terminates and uses polynomial time with a standard polynomial
 bipartite-matching algorithm. This specific normalizer excludes this motif;
 it does not decide exchange terminality for every possible bundle or establish
@@ -288,8 +290,13 @@ proof mechanisms but correctly identified the unqualified degree-four
 description of (6,4). This is corrected and the sparse control added.
 The review also requested explicit disjointness, signed-scalar scope and
 the endpoint-only source-exclusion dependency, now supplied. It did not
-execute code or Lean. The same conversation has a follow-up audit of the
-revised full note and added matching-independent rule; its verdict is pending.
+execute code or Lean. Follow-up bc36dde9 completed ACCEPT at06:49UTC, covering
+the revised full note, matching-independent rule and polynomial normalizer,
+final forcing certificate, pinwheel control and full endpoint-only source
+exclusion. The original prompt equals its session prompt, and the original
+completed stream, terminal task and session responses agree exactly. The
+observed model was gpt_6/pro. This is an independent mathematical review of
+the written arguments and coordinates, not execution of code or Lean.
 
 The open next step is a geometric compensation bound for exchange-terminal
 components, using actual physical donors and the flux ledger. The new move

@@ -115,5 +115,8 @@ controls pass for 72 feasible frozen base elbows, 2,304 endpoint images,
 1,584 full-square checks and 288 positive search controls over 72 oriented
 templates, with zero contained sources. See the validation receipts in output/.
 
-No submitted manuscript is changed. This result has not yet undergone an
-independent external mathematical review.
+No submitted manuscript is changed. Independent mathematical review bc36dde9
+completed ACCEPT on22October at06:49UTC, including the full endpoint-only
+source exclusion and its use in the matching-exchange persistence argument.
+See output/rematching-receiver-flux-review-accepted.json. This review concerns
+the written proof and coordinates, not execution of code or Lean.
