@@ -190,7 +190,7 @@ all occupied vertices have column at least 5. Its unique TP--TP path lies
 in column 5, with terminal bands 2 and W/2+2. Its unique ports are column 4
 in those bands, belonging to BB2--TT3--BB4. The other adjacent column 6 is BP.
 
-Take two images of this ENTIRE block under
+Take two images of this entire OCCUPIED CONFIGURATION under
 
     right: (row,col) -> (row,col+H+2),
     left:  (row,col) -> (row,H+8-col).
@@ -202,8 +202,8 @@ have column at least H+7 and those of the left image at most H+3. The
 shared selections see only their paired selection and are separated from
 both occupied cores by blank columns. Consequently there are no new
 occupied adjacencies; both endpoint cores, unique matchings and full
-freezing certificates persist. The smallest occupied column is 1 and
-the largest is at most 2H+9, so the whole board has blank end columns and
+freezing certificates persist. All occupied columns lie between 2 and
+2H+8 inclusive, so the whole board has blank end columns and
 is an aligned, matching-closed physical packet containing every receiver.
 
 The two TP--TP paths are at columns H+7 and H+3. In each of their two
@@ -342,9 +342,16 @@ inventory/corollary proofs use the ordinary axioms listed in
 output/interval-connector-cycles-and-missing-ports-lean.json. The actual grid
 and coordinate adapters remain written, including the adjacent-BP lemma.
 
-Independent review 37c00120-f31d-4521-8718-2046d884cfc8 is dispatched in
-conversation conv_9a8ee0adac356fe3. Its initial input predates the local
-port-degree and adjacent-BP additions above. No acceptance of either the
-initial note or those additions is inferred while the task is live.
+Independent review 37c00120-f31d-4521-8718-2046d884cfc8 completed ACCEPT
+at 13:52:19 UTC, actual gpt_6/pro, with a complete 17991-character response.
+It identified the nonblocking occupied-column minimum error corrected in
+Section4 above, and clarified that the images are of occupied configurations,
+with blank padding. The complete answer is archived in
+output/interval-connector-cycles-and-missing-ports-oracle.json. The original
+stream ended with an EOF and exit1; the completed task and service session
+were recovered and their full answers agree exactly. The original prompt
+also agrees with the session. No successful DONE stream is claimed.
+The initial input predates the local port-degree and adjacent-BP additions;
+those additions require the separate follow-up, not inferred acceptance.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

@@ -1,6 +1,6 @@
 {
-  "status": "dispatched",
-  "phase": "waiting_response",
+  "status": "completed",
+  "phase": "terminal",
   "task_id": "37c00120-f31d-4521-8718-2046d884cfc8",
   "conversation_id": "conv_9a8ee0adac356fe3",
   "original_exec_session": 15429,
@@ -8,7 +8,17 @@
   "original_stream": "/tmp/sahbi-interval-cycle-review.sse",
   "created_at": "2026-10-22T13:40:41.905+00:00",
   "prompt_chars": 76439,
-  "verdict": null,
-  "scope": "Initial complete partial-connector/cycle/missing-port note and dependencies. Later local port-degree and adjacent-BP additions are not in initial input and need separate review. No execution certification inferred.",
-  "next_action": "Keep original task and stream. Review the answer and submit local additions in the same conversation after the original task is terminal; no restart for slow response."
+  "verdict": "ACCEPT",
+  "completed_at": "2026-10-22T13:52:19.280+00:00",
+  "response_chars": 17991,
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "original_stream_exit_code": 1,
+  "stream_done": false,
+  "transport_note": "Unexpected EOF; completed answer recovered from authoritative task and session without resubmission.",
+  "original_prompt_session_equal": true,
+  "task_session_response_equal": true,
+  "response_archive": "output/interval-connector-cycles-and-missing-ports-oracle.json",
+  "scope": "Initial complete partial-connector/cycle/missing-port proof accepted with nonblocking occupied-column minimum correction, now fixed. Later local port-degree and adjacent-BP additions and new terminal injection are assigned to follow-up45fb9297; not inferred accepted by initial verdict. No execution certification.",
+  "followup_task": "45fb9297-002f-4008-a22d-e942edca9c41"
 }
