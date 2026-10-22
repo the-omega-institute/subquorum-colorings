@@ -71,7 +71,7 @@ arc. The last enters t along a previously unused original resource arc.
 All boundary capacities are one, so exactly one source and one resource are
 added and every previously used boundary arc remains saturated.
 
-Remove any directed positive-flow cycles and decompose the remaining flow
+Remove any directed positive-flow cycles in the original network and decompose the remaining flow
 into simple s--t routes. No original directed cycle contains s or t, hence
 cycle removal preserves all boundary flows and the two support sets. Each
 mixed owner's split arc has capacity one, so distinct routes cannot share it;
@@ -138,7 +138,11 @@ The independent augmentation checker starts from arbitrary feasible packings,
 including nonoptimal ones, uses residual BFS with reverse witnessed arcs,
 and checks capacities, conservation and both nested support sets after each
 augmentation. It reconstructs the actual terminal matching and payment
-incidences. Small strand systems are compared with exhaustive terminal-link
+incidences and compensation value. Source and resource identity inclusion is
+checked on flow boundary tags, rather than independently reconstructed
+component identities. A separate feasible-flow fixture contains a nonzero
+internal circulation; normalization discards it while preserving both boundary
+supports. Small strand systems are compared with exhaustive terminal-link
 matchings; larger controls are compared with the accepted maximum-flow solver.
 The replacement example forces a reverse link. Physical shared chains are
 checked both with all permitted links and with only the known root-0 repair

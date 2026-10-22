@@ -289,6 +289,24 @@ def finite_frontier(kinds, pairs, links, access, shared, count, totals):
     return sorted(frontier)
 
 
+def circulation_control(totals):
+    kinds, pairs, _ = abstract(('alpha', 'mixed', 'mixed'))
+    network = Network(kinds, pairs, [(3, 4), (5, 2)], {0: {0}}, {0})
+    flow = [0]*len(network.edges)
+    tags = [('source', 0), ('access', 0, 0), ('interval', 0),
+            ('mixed', 1), ('link', 3, 4), ('mixed', 2), ('link', 5, 2)]
+    for tag in tags:
+        flow[network.by_tag[tag]] = 1
+    network.feasible(flow)
+    normalized, routes = network.certificate(flow)
+    assert network.supports(normalized) == network.supports(flow)
+    assert len(routes) == 1
+    assert sum(flow)-sum(normalized) == 4
+    assert all(normalized[network.by_tag[tag]] == 0 for tag in tags[3:])
+    totals['nonzero_circulation_cleanup_fixtures'] += 1
+    totals['circulation_arc_units_discarded'] += 4
+
+
 def physical_controls(totals):
     examples = []
     for width, count in itertools.product((6, 8, 12), range(2, 25)):
@@ -308,6 +326,9 @@ def physical_controls(totals):
         root_link = ((width+4, 5), (width+4, 6))
         assert root_link in links
         _, alpha_owners, _, _ = owner_data(kinds, reduced)
+        assert len(alpha_owners) == count
+        assert all(all(8*index+3 <= point[1] <= 8*index+7 for point in reduced[owner])
+                   for index, owner in enumerate(sorted(alpha_owners)))
         last_owner = max(alpha_owners)
         last_shared = owners[0 if (count-2) % 2 == 0 else len(bands)-1, 9+8*(count-2)]
         assert last_owner not in blocked_sources(kinds, reduced, links, access, resources, set())
@@ -350,6 +371,7 @@ def main():
     abstract_controls(totals)
     replacement = replacement_control(totals)
     cost_control(totals)
+    circulation_control(totals)
     examples = physical_controls(totals)
     record = dict(status='PASS', totals=dict(totals), reverse_link_example=replacement,
                   physical_examples=examples, scope='Finite validation of arbitrary-initial-packing '

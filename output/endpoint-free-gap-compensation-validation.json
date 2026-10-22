@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_forced_matching_edges": 1984,
+    "unique_frozen_pairs": 128,
+    "flow_models": 128,
+    "witness_routes": 0,
+    "physical_flow_models": 128,
+    "tt_columns_in_gaps": 8,
+    "endpoint_free_gaps": 6938,
+    "gap_unit_resources": 54792,
+    "gap_adapters": 578,
+    "fully_frozen_blocked_families": 128,
+    "old_unrestricted_flow_deficits": 128,
+    "finite_radius_obstructions": 128,
+    "zero_link_gap_repairs": 128,
+    "exact_gap_allocation_controls": 449,
+    "fixed_single_link_gap_controls": 288,
+    "gap_geometry_bent": 64,
+    "gap_geometry_rotor": 32,
+    "gap_geometry_occupied": 32,
+    "gap_geometry_tt_forest": 32,
+    "two_port_capacity_two_gap_controls": 1
+  },
+  "examples": [
+    {
+      "width": 6,
+      "depth": 1,
+      "selected": 17,
+      "matching": 10,
+      "packet_shape": [
+        8,
+        12
+      ],
+      "margin": 13,
+      "unmarked_resources": 14,
+      "old_maximum": 0,
+      "old_deficit": 1,
+      "minimum_gap_distance": 3,
+      "new_maximum": 1,
+      "minimum_new_links": 0,
+      "near_gap_capacities": [
+        {
+          "band": 0,
+          "first": 0,
+          "last": 3,
+          "raw_capacity": 2,
+          "reserved": 1,
+          "available_capacity": 1,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 0,
+          "first": 9,
+          "last": 11,
+          "raw_capacity": 1,
+          "reserved": 1,
+          "available_capacity": 0,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 2,
+          "first": 8,
+          "last": 11,
+          "raw_capacity": 4,
+          "reserved": 1,
+          "available_capacity": 3,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 3,
+          "first": 0,
+          "last": 3,
+          "raw_capacity": 2,
+          "reserved": 1,
+          "available_capacity": 1,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 3,
+          "first": 9,
+          "last": 11,
+          "raw_capacity": 1,
+          "reserved": 1,
+          "available_capacity": 0,
+          "candidate_terminals": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "selected": 45,
+      "matching": 12,
+      "packet_shape": [
+        10,
+        26
+      ],
+      "margin": 63,
+      "unmarked_resources": 64,
+      "old_maximum": 0,
+      "old_deficit": 1,
+      "minimum_gap_distance": 10,
+      "new_maximum": 1,
+      "minimum_new_links": 0,
+      "near_gap_capacities": [
+        {
+          "band": 0,
+          "first": 0,
+          "last": 10,
+          "raw_capacity": 2,
+          "reserved": 1,
+          "available_capacity": 1,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 0,
+          "first": 16,
+          "last": 25,
+          "raw_capacity": 1,
+          "reserved": 1,
+          "available_capacity": 0,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 3,
+          "first": 15,
+          "last": 25,
+          "raw_capacity": 11,
+          "reserved": 1,
+          "available_capacity": 10,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 4,
+          "first": 0,
+          "last": 10,
+          "raw_capacity": 2,
+          "reserved": 1,
+          "available_capacity": 1,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 4,
+          "first": 16,
+          "last": 25,
+          "raw_capacity": 1,
+          "reserved": 1,
+          "available_capacity": 0,
+          "candidate_terminals": 1
+        }
+      ]
+    },
+    {
+      "width": 20,
+      "depth": 32,
+      "selected": 141,
+      "matching": 24,
+      "packet_shape": [
+        22,
+        74
+      ],
+      "margin": 627,
+      "unmarked_resources": 628,
+      "old_maximum": 0,
+      "old_deficit": 1,
+      "minimum_gap_distance": 34,
+      "new_maximum": 1,
+      "minimum_new_links": 0,
+      "near_gap_capacities": [
+        {
+          "band": 0,
+          "first": 0,
+          "last": 34,
+          "raw_capacity": 2,
+          "reserved": 1,
+          "available_capacity": 1,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 0,
+          "first": 40,
+          "last": 73,
+          "raw_capacity": 1,
+          "reserved": 1,
+          "available_capacity": 0,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 9,
+          "first": 39,
+          "last": 73,
+          "raw_capacity": 35,
+          "reserved": 1,
+          "available_capacity": 34,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 10,
+          "first": 0,
+          "last": 34,
+          "raw_capacity": 2,
+          "reserved": 1,
+          "available_capacity": 1,
+          "candidate_terminals": 1
+        },
+        {
+          "band": 10,
+          "first": 40,
+          "last": 73,
+          "raw_capacity": 1,
+          "reserved": 1,
+          "available_capacity": 0,
+          "candidate_terminals": 1
+        }
+      ]
+    }
+  ],
+  "scope": "Finite controls for the written arbitrary-length fully frozen unrouteable family under direct/single-cap access, the failure of every fixed endpoint-free access radius, and zero-link compensation via exact capacities of maximal endpoint-free gaps. No universal grid inequality is asserted."
+}
