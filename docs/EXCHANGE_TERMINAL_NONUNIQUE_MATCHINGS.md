@@ -108,9 +108,12 @@ bundle, its first promoted endpoint in the appropriate list retains the two
 distinct listed neighbors, contradicting feasibility. Together with Section1,
 this excludes bundles for EVERY perfect matching: the core is exchange-terminal.
 Any sequence of rematching and promotion cannot start a promotion either.
-The same conclusion holds in any feasible exterior preserving this complete
-endpoint component and its selected supports. The completeness assumption
-excludes new cross-matching edges to exterior endpoints.
+In any feasible exterior preserving this complete endpoint component and its
+selected supports, no bundle can contain an endpoint of the protected
+component, including a bundle also involving exterior endpoints. Promotions
+confined to unrelated components are allowed. The completeness assumption
+excludes new cross-matching edges to exterior endpoints, and the certificate
+excludes a first promotion touching the protected component in any sequence.
 
 Its receiver has7physical tiles,7selections and7matching edges, hence charge0.
 The objective is16, half-area24 and total no-endpoint deficit8. Thus this
@@ -207,8 +210,11 @@ before translation. It contains no endpoints or selections, so has actual
 deficit2. Its capped witness is unchanged: the consumed support p is not
 among that witness's support sites. After translation its tile index is
 (h/2,4). The old unique-owner lemma therefore applies and assigns Q_E to
-the combined component. This single physical tile pays its whole charge1,
-with one unit left. In particular this is a counterexample to uniqueness,
+the combined component. In this canonical blank-exterior construction its
+deficit is exactly2, paying the whole charge1 with one unit left. In a general
+feasible terminal exterior retaining the capped witness, its deficit is
+guaranteed only to be at least1: selecting g(2,2)=(-1,7) can reduce it to1.
+Both amounts still pay this family's charge. In particular this is a counterexample to uniqueness,
 not to compensation or the target inequality.
 
 ## 4. What this rules out and what remains
@@ -235,7 +241,8 @@ discovery evidence only, with no general minimality claim.
 
 The standard-library verifier checks both exact core matchings, their freeze
 transcripts, all8core symmetries,72parameter pairs,288phase applications and
-24positive-family symmetry applications. Every graft application has exactly
+24positive-family symmetry applications, and72sharp-flank controls reducing
+the canonical donor deficit from2to1. Every graft application has exactly
 two matchings and both are frozen. Only the designated physical phase is
 claimed positive in the general theorem; other phase counts are controls.
 
@@ -248,8 +255,13 @@ the final charge arithmetic has a separate scoped Lean theorem. Execution
 passes locally on Lean4.33.0, with10theorems and10individual axiom audits,
 using only propext and Quot.sound; there are no errors, warnings, sorry or
 native evaluation. The receipt is output/exchange-terminal-nonunique-formal-check.json.
-Independent review4eb5ea4d is running on the complete written argument and
-its inherited dependencies, original stream11859. The separate earlier
+Independent review4eb5ea4d completed ACCEPT at07:27UTC, covering the complete
+written argument and inherited dependencies. It requested the explicit
+protected-component exterior scope and canonical-versus-general donor capacity
+distinction now stated above. Its exact original completed stream, terminal
+task and session responses agree; the observed model was gpt_6/pro. It did
+not execute the checker or Lean. The accepted response is archived in
+output/exchange-terminal-nonunique-review-accepted.json. The separate earlier
 research question8d529046 completed with partial structural lemmas, leaving
 the uniqueness question unresolved in that response. Our counterexample
 settles that question negatively. The research response is archived in

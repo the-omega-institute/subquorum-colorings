@@ -100,6 +100,7 @@ def main():
         inspect((*shape, selected, matching))
         base_images += 1
     graft_records = []
+    sharp_controls = 0
     phase_charges = {}
     for width in range(6, 23, 2):
         for height in range(4, 19, 2):
@@ -120,6 +121,13 @@ def main():
                     donors = physical_donors(current, True)
                     assert any(tuple(record['tile']) == donor and record['deficit'] == 2
                                for record in donors)
+                    sharp = (*current[:2], current[2] | {(height+1, 9)}, current[3])
+                    sharp_ledger = inspect(sharp)
+                    assert sharp_ledger['receivers'][0]['charge_twice'] == 2
+                    sharp_donors = physical_donors(sharp, True)
+                    assert any(tuple(record['tile']) == donor and record['deficit'] == 1
+                               for record in sharp_donors)
+                    sharp_controls += 1
                 graft_records.append(dict(width=width, height=height, phase=phase,
                                           receiver=receiver))
     symmetry_grafts = 0
@@ -137,6 +145,7 @@ def main():
                   all_phase_graft_controls=len(graft_records),
                   phase_charges={key: sorted(value) for key, value in phase_charges.items()},
                   positive_graft_symmetry_controls=symmetry_grafts,
+                  sharp_flank_capacity_one_controls=sharp_controls,
                   scope='Finite controls of the separate general forcing, freeze-transcript '
                         'and positive all-even-parameter graft proofs. No universal compensation '
                         'or coefficient improvement follows from the counterexample.',
