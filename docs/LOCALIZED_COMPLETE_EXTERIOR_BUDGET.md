@@ -29,7 +29,8 @@ Retain the old nested family O:
     A=U(W+2,D,F), chart(r,c)=(r,c-1),
     B_i=U(W,4,4), chart(r,c)=(a_i+r,c), 0<=i<=g,
 
-where W>=6, a_i>=2,D,F are even, a_(i+1)-a_i>=10, and
+where W>=6 is even, EVERY a_i>=2 is even, D,F are even,
+a_(i+1)-a_i>=10, and
 D,F>=a_g+4. In particular a wall may end EXACTLY at the last inner tip,
 the two depths need not agree, and added sources may pass around either
 wall tip or lie outside A. Suppose K=O union Y is any finite complete
@@ -213,7 +214,9 @@ entire endpoint footprint inside Q or outside it, and it is vacuous in
 the nested A/B application. It cannot be omitted for an arbitrary cut.
 For a disjoint collection of admissible cuts, every physical tile and
 rotor mate is counted in at most one cut; every added source weight
-belongs to exactly one class; each old terminal debit is assigned once.
+belongs to at most one class; each old terminal debit is assigned at most once.
+Added-source weights occur at most once for nonexhaustive disjoint cuts,
+and exactly once when the cuts partition all relevant source footprints.
 Their inequalities therefore sum without reusing a surplus or pair.
 This is an aggregate inequality, not source-addition monotonicity.
 
@@ -232,7 +235,7 @@ The physical footprint Q_i of C_i is exactly
 
     [a_i+2,a_(i+1)-1]x[0,W+1].
 
-Its outside one-step boundary is filled with retained endpoints. A connected
+The outside one-step boundary of C_i is filled with retained endpoints. A connected
 new endpoint set meeting C_i cannot leave it without hitting such an old
 endpoint. Every site of Q_i outside C_i is an old wall endpoint. Thus
 every new original has ALL its endpoint tiles in one Q_i, or ALL in the
@@ -313,7 +316,8 @@ extension retaining O
     Phi(K)=4g+2d+Delta_out>=4g+2d+2+P_out.              (9)
 
 The previous exact identity no longer carries an unresolved exterior sign.
-For arbitrary W, the same applies when each chamber has a spanning D or U,
+Still assuming ALL GAPS ARE TEN, for arbitrary W the same applies when
+each chamber has a spanning D or U,
 using the accepted complete-six-row pocket budget for each U chamber.
 No classification of all wider chambers without a spanning source is asserted.
 
@@ -414,14 +418,27 @@ These finite controls corroborate the general proof above. The original
 research Oracle task49a148fa returned the exterior argument as actual
 gpt6/pro, with exact task/session response and original prompt matches.
 The region-by-region chamber inequality and relation to prior global
-theorems are further deductions here. Independent audit of this final
-localized theorem is still required; a research suggestion is not review
-acceptance. Formal checks and final audit status are recorded separately.
+theorems are further deductions here. A research suggestion is not review
+acceptance; the separate independent audit is recorded below.
 The first independent audit taskcdc1a744 terminated with no assistant
 output and supplied no mathematical verdict. Final-version auditd8adad0c
-in the existing independent review conversation is live and also covers
-the general cut inequality and its missing-mate counterexample. No ACCEPT
-is yet claimed for this new localized theorem.
+in the existing independent review conversation completed ACCEPT with
+19518characters as observedgpt6/pro. The original prompt and full response
+match the task, session and original stream exactly. It covers the localized
+theorem, general cut with old-mate closure, missing-mate counterexample and
+complete short-wall receipt6; the reviewer did not execute code or Lean.
+Its scope clarifications are incorporated: every a_i is even, the
+occupied boundary is the boundary of C_i, disjoint cuts count each source
+at most once unless exhaustive, and the six-row arbitrary-width pocket
+corollary retains gap10. The later marked-slack/coefficient-one corollary
+was outside that audit input and requires separate review. See
+output/localized-complete-exterior-final-review-terminal.json.
+
+The subsequent note ARBITRARY_TILE_CUTS_AND_SIGNED_ROTOR_FLUX.md removes
+source-footprint and old-mate containment from local ACCOUNTING cuts by
+physically allocating new terminal credits and retaining signed rotor
+boundary transfers. A source-crossing cut is not an addition marginal.
+This later extension is not covered by the above ACCEPT.
 
 The local Lean file `formal/SubQuorum/LocalizedExteriorBudget.lean` passed
 18theorems and31individual declaration axiom audits without warnings,

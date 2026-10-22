@@ -1,5 +1,21 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Latest complete-exterior checkpoint: the [localized general theorem](docs/LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md)
+now has independent ACCEPT: every complete extension of the specified canonical
+nested core has exterior marginal>=2+P_out and chamber marginal>=3+P_i,
+including finite unequal/coincident wall tips and detached exterior sources.
+The original support-incidence multiplicity is retained at the incomplete old
+boundary.18 scoped Lean theorems and exact controls pass. Its later width6
+marked-slack consequence sigma>=4d-P_out improves5/6 to1 when P_out<=4d,
+under the existing source-to-grid ledger; that later corollary is under separate
+review. The new [arbitrary tile-cut identity](docs/ARBITRARY_TILE_CUTS_AND_SIGNED_ROTOR_FLUX.md)
+allows cuts through added U/rotor sources by assigning physical terminal credits
+and conserving signed rotor transfers.122572 cuts through736 complete inventories
+and13 scoped Lean theorems pass; independent review is running. Source-crossing
+regional accounting terms are not source-addition marginals. Sharp exterior5,
+arbitrary grid decomposition/marked allocation and the global grid targets remain
+OPEN. The11October submitted manuscript is unchanged.
+
 Latest width5 checkpoint: a [general forced-stack theorem](docs/SECONDARY_TEN_WIDTH_FIVE_STACK.md)
 classifies every actual cavity owner in a complete extension as a left-bar
 U(H,4,4), with even heights>=6 partitioning N=z-2. A right-bar owner
