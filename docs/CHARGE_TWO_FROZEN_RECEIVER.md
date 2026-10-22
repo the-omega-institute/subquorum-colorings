@@ -221,6 +221,15 @@ General coverage by that enlarged three-rule collection is also false; see
 
 ## 5. Verification and next research
 
+22 October update: the original fixed-matching freezing certificate remains
+valid, but this fixture is not terminal under matching replacement followed
+by promotion. One square exchange unlocks a five-edge bundle and splits it
+into two uniquely matched, fully frozen charge1 components. All three freed
+tiles are saturated, so total receiver charge stays2 and no deficit is
+created. See [the general exchange and flux lemma](REMATCHING_NORMALIZATION_AND_RECEIVER_FLUX.md).
+This strengthens the normal form available for future extremal arguments;
+it does not change the original counterexample's fixed-matching scope.
+
 Run:
 
     python3 develop/check_charge_two_frozen_receiver.py --output output/charge-two-frozen-receiver-controls.json
