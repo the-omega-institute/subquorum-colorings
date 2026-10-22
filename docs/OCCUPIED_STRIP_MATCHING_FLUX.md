@@ -265,8 +265,14 @@ physical receiver ownership and coordinate examples remain written proofs.
 The execution receipt is output/occupied-strip-matching-flux-lean.json.
 
 The independent written review is tracked separately; it does not certify
-verifier or Lean execution. The original review input predates the alternating
-phase correction just described and must not be described as acceptance of
-the corrected construction without a follow-up review.
+verifier or Lean execution. The original review independently identified
+the same alternating-phase error, explicitly verified the corrected family,
+and confirmed the general theorem and receiver-closed application. Its full
+response and exact request/stream/task/session checks are archived in
+output/occupied-strip-matching-flux-initial-review.json. A follow-up receives
+the current corrected complete note, including the explicit root receiver
+separation and even-width assumptions, for final confirmation. Its retained
+task is tracked in output/occupied-strip-matching-flux-review-live.json;
+transport interruption is not a reason to duplicate the queued review.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
