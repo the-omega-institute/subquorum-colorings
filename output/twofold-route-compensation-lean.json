@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/RouteCoverAccounting.lean",
+  "machine": "Local Mac selected in the current user session",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean SubQuorum/RouteCoverAccounting.lean",
+  "working_directory": "formal",
+  "preflight": {
+    "memory_free_percentage": 48,
+    "lean_lake_processes": [],
+    "process_check": "Exact lean/lake basename comparison of ps comm, including bare executable names and full paths"
+  },
+  "execution_session_id": 24310,
+  "final_tool_chunk": "33da5f",
+  "exit_code": 0,
+  "theorems": 6,
+  "axiom_audits": 6,
+  "axioms": ["propext", "Quot.sound"],
+  "linter_warnings": "Two unused premises bounded/unitCapacity in integral_layer_remainder; no errors",
+  "no_sorry_native_or_new_axioms": true,
+  "scope": "Local twofold load-sum accounting, conditional attaining-separator deficit, subcritical excess, layer residual capacity, saturated boundary and two-layer mean cost. Does not formalize integral circulation existence, full graph-flow decomposition, transport of route incidences to separator hypotheses or physical grid geometry."
+}

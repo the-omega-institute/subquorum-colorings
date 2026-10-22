@@ -7,7 +7,9 @@ frozen rectangular-grid packets with a unique actual matching, its feasible
 selection sizes need not form an initial interval. We construct an all-size
 family with exactly the feasible sizes 0,2,...,2q. At each positive feasible
 size r, every admissible replacement leaves at least 2q-r/2 alphas, and the
-smallest possible sign-error count is exactly r/2. These bounds permit
+smallest possible negative same-sign edge count h=h_minus is exactly r/2.
+At the sharp witness h_plus=r/2 as well, so the total same-sign count is r.
+These bounds permit
 arbitrary internal rematching, joint source/resource endpoint choices and
 activation of any collection of complete original mixed pairs.
 
