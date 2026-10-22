@@ -74,7 +74,18 @@ def main():
         control('branched_chain_'+str(amount), current, (False, False, False), offset, totals, records)
     assert totals['fully_frozen_frontier_models'] > 0
     assert totals['not_fully_frozen_excluded_degree_four_control'] == 32
-    record = dict(status='PASS', totals=dict(totals), cases=records,
+    families = []
+    for name in sorted({record['family'] for record in records}):
+        images = [record for record in records if record['family'] == name]
+        outcomes = Counter((record['alpha'], record['routed'], record['deficit'],
+                            record['minimum_link_cost']) for record in images)
+        families.append(dict(family=name, images=len(images),
+                             nonempty=sum(record['alpha'] > 0 for record in images),
+                             outcomes=[dict(alpha=key[0], routed=key[1], deficit=key[2],
+                                            minimum_link_cost=key[3], count=value)
+                                       for key, value in sorted(outcomes.items())]))
+    record = dict(status='PASS', totals=dict(totals), families=families,
+                  deficient_examples=[record for record in records if record['deficit']],
                   scope='Finite discovery with full feasibility/freezing checks and explicit '
                   'flow/cut certificates. Includes both actual matchings of the bent fixture, '
                   'capacity-two rotors, occupied bands and connected branched networks. '
