@@ -129,7 +129,8 @@ TP/BP pairs reduce the total number of open components by r. Together
 with (3) for h=0 these facts prove (4). Additional old alpha/beta pairs
 may cancel; no loss of a payment follows from their disappearance.
 
-After the paid-terminal markers are fixed, a relay's vertex colours are
+After all open-strand marker locations and designated endpoints are
+fixed, a relay's vertex colours are
 fixed by its designated free end and marker location. Only closed-cycle
 flips remain variable. The same XOR constraint graph can test coherence
 of a supplied N. If its forest assignment has q nonforest constraints,
@@ -176,6 +177,10 @@ payments only through marker-adjacent surviving endpoints, checks their
 unit identities and nonreuse, and bounds the unmatched alphas by the
 distinct same-sign N-edge witnesses. These are finite checks for the
 general proof, not evidence of universal geometric availability.
+Unit identities in these models are distinct abstract indices representing
+the assumed injective original payment map. Selected tails are restored
+as one-edge representatives of the contracted paths; the written proof
+permits arbitrary unchanged tail lengths.
 
 The general endpoint identity and marker-or-error witness inequality are
 verified in the supplied Lean source from a sign-occurrence incidence
@@ -189,6 +194,13 @@ The nine audited endpoint-accounting statements in
 4.33.0. The three added marker statements and execution scope are
 recorded in `output/paid-terminal-marker-compensation-lean.json`.
 The earlier six-statement mixed-relay review input does not include
-this extension; independent review of the present result is separate.
+this extension. Separate independent review 04e51f70 returned ACCEPT
+of the conditional transfer theorem, its nonreuse and error budget, the
+misplaced-marker obstruction and all stated counts. It confirms that
+the scalar bound already follows from the original hypotheses. The
+full response is archived in
+`output/paid-terminal-marker-compensation-oracle.json`. The review is
+source-level mathematics and does not independently execute the checker
+or Lean. Its optional wording clarifications are applied above.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

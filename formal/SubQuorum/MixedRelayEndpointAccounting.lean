@@ -153,6 +153,37 @@ theorem coherent_alpha_has_actual_marker (actual auxiliary : List Edge)
     incidence physicalEnds
   omega
 
+theorem full_domain_component_identity (actual auxiliary : List Edge)
+    (free : List Kind)
+    (incidence : List.Perm (ends auxiliary ++ free) (ends actual)) :
+    2*(((positive auxiliary : Int)-(negative auxiliary : Int))-
+      ((positive actual : Int)-(negative actual : Int))) = -signed free := by
+  have partition := permutation_signed incidence
+  have actualSum := signed_auxiliary_edge_count actual
+  have auxiliarySum := signed_auxiliary_edge_count auxiliary
+  rw [signed_append] at partition
+  omega
+
+theorem full_domain_alpha_has_marker_or_error (actual auxiliary : List Edge)
+    (free : List Kind)
+    (incidence : List.Perm (ends auxiliary ++ free) (ends actual))
+    (physicalEnds : free.map flip = [.minus, .minus]) :
+    1 ≤ positive actual + negative auxiliary := by
+  have identity := full_domain_component_identity actual auxiliary free incidence
+  have reversal := signed_flip free
+  rw [physicalEnds] at reversal
+  simp only [signed, sign] at reversal
+  omega
+
+theorem full_domain_coherent_alpha_marker (actual auxiliary : List Edge)
+    (free : List Kind)
+    (incidence : List.Perm (ends auxiliary ++ free) (ends actual))
+    (physicalEnds : free.map flip = [.minus, .minus])
+    (noNegative : negative auxiliary = 0) :
+    1 ≤ positive actual := by
+  have witness := full_domain_alpha_has_marker_or_error actual auxiliary free incidence physicalEnds
+  omega
+
 end SubQuorum.MixedRelayEndpointAccounting
 
 #print axioms SubQuorum.MixedRelayEndpointAccounting.neutral_actual_endpoint_sum
@@ -164,3 +195,6 @@ end SubQuorum.MixedRelayEndpointAccounting
 #print axioms SubQuorum.MixedRelayEndpointAccounting.general_component_endpoint_identity
 #print axioms SubQuorum.MixedRelayEndpointAccounting.alpha_has_marker_or_negative_auxiliary_edge
 #print axioms SubQuorum.MixedRelayEndpointAccounting.coherent_alpha_has_actual_marker
+#print axioms SubQuorum.MixedRelayEndpointAccounting.full_domain_component_identity
+#print axioms SubQuorum.MixedRelayEndpointAccounting.full_domain_alpha_has_marker_or_error
+#print axioms SubQuorum.MixedRelayEndpointAccounting.full_domain_coherent_alpha_marker
