@@ -225,3 +225,10 @@ the per-block entry injection. Its wording clarifications on persistence
 of BOTH witnesses and completed freezing orders are applied above.
 The review did not execute Python or Lean. This note has not received
 Lean formalization.
+
+The subsequent `MATCHING_BLOCK_TILE_LEDGER.md` proves an exact physical
+interface formula for these actual blocks, with its own accepted review.
+`SHARP_TWO_ENTRY_BLOCKS.md` gives a separately checked16-endpoint witness
+with f=1,j=2 and no degree-four forced endpoint. Its explicit certificates
+show that the entry coefficient2 is sharp; that later witness has not
+received separate Oracle review or Lean formalization.

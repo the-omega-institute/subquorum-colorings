@@ -108,6 +108,8 @@ Put B_i=-gamma_i>=0 and B=sum_i B_i. Flexible-block summands are
 nonpositive tile by tile. A forced block can instead have a positive
 half-unit at one endpoint tile, cancelled by its mate's tile. Thus a
 forced block's nonnegative B_i must not be asserted tile by tile.
+Different raw B_i may involve the same physical tile. They are not
+disjoint donor capacities; the interface correction below is essential.
 
 Another consequence is that every positive WHOLE-TILE charge
 t_Q+|P intersect Q|/2-2 occurs at a singleton endpoint with two selections.
@@ -123,7 +125,8 @@ Let J count full endpoint tiles meeting at least two blocks. Define
 
     X=sum_(Q in R) (2-t_Q)e_Q.
 
-Every edge is counted in its ONE physical tile. A tile with at least two
+Every intratile interface edge occurring in X is counted in its unique
+physical tile; edges crossing tile boundaries do not occur in X. A tile with at least two
 endpoints has t_Q<=1, so every interface edge carries weight one or two.
 These are actual tile counts, not spare copies of donor capacity.
 
@@ -187,6 +190,40 @@ matching leave one flexible square; the sole bridge belongs to no
 perfect matching. Thus there are14forced blocks and one flexible block.
 The existing proof freezes both matchings, including mixed bundles.
 
+For a self-contained numerical check, the actual selections are
+
+    (2,12),(3,13),(4,7),(4,10),(5,6),(5,13),(6,3),(6,5),
+    (7,2),(7,13),(9,8),(10,2),(10,7),(11,3),(11,5).
+
+The forced blocks, with their raw charges, are
+
+| Forced block | gamma_i |
+|---|---|
+| (3,12)--(4,12) | 0 |
+| (4,11)--(5,11) | 0 |
+| (5,7)--(6,7) | -1 |
+| (5,12)--(6,12) | -1 |
+| (6,8)--(6,9) | -1 |
+| (6,10)--(6,11) | -1 |
+| (7,3)--(7,4) | 0 |
+| (7,7)--(7,8) | -3 |
+| (7,9)--(7,10) | -3 |
+| (7,11)--(7,12) | -2 |
+| (8,4)--(9,4) | -1 |
+| (9,5)--(10,5) | -2 |
+| (9,6)--(9,7) | -1 |
+| (10,3)--(10,4) | 0 |
+
+The remaining flexible square is {(7,5),(7,6),(8,5),(8,6)}, with its
+two square matchings and raw charge -5. These blocks specify all endpoints.
+The mixed-tile profiles (n_Q,t_Q,m_Q,e_Q), with multiplicities, are
+
+    4 times (2,1,2,1), 1 time (3,0,2,1),
+    1 time (3,0,3,2), 3 times (4,0,3,3).
+
+All other endpoint tiles meet one block. The table and profiles therefore
+give the following integers directly from the specified coordinates.
+
 Its independently reconstructed block charges and interfaces are
 
     sum_i gamma_i=-21,   X=28,   J=3,
@@ -213,6 +250,15 @@ and consume the mutual selected supports. The prior all-width proof
 establishes feasibility, degree at least three, and complete fixed-matching
 freezing. Here we establish uniqueness of the endpoint matching, which
 upgrades that conclusion to exchange terminality.
+
+Explicitly, P_U={0,1} times [1,w] union {2,3,4} times {1,w}, and
+
+    T_U={(0,0),(0,w+1),(5,1),(5,w),(2,0),(3,2),(4,0),
+         (2,w+1),(3,w-1),(4,w+1)}.
+
+The final selections are (T_U union H(T_U)) outside the endpoint union.
+The original U matching pairs odd-start columns in row0, even-start
+columns2throughw-2 in row1, and rows1--2 and3--4 in each leg.
 
 All endpoint contacts between the two sources lie on the five rungs
 (r,0)--(r,1), 0<=r<=4. First remove these forced pairs in U's free arm:
@@ -273,6 +319,11 @@ selected support formulas give the listed t_Q; the two bar parity
 patterns give the matching-block multiplicities. Thus the table is an
 all-width coordinate count, not an extrapolated fit.
 
+Equivalently let q_Q count matching edges wholly within Q. Since every
+block here is a forced pair, m_Q=n_Q-q_Q and
+e_Q=|E(G[P intersect Q])|-q_Q. The seven table rows have q_Q respectively
+0,0,1,0,1,0,1, which exposes each multiplicity directly.
+
 For each row, the sum of raw block charges within its tile is
 n_Q/2+m_Q(t_Q-2). Substituting the table yields
 
@@ -313,6 +364,16 @@ preflight and execution receipt are in
 does not include the general matching-block geometry or all-width
 forcing proof. The prior entry reduction has a separate accepted review
 in `output/flexible-block-entry-review-accepted.json`.
+
+Independent written-proof review7db29017-53a3-4abf-aa1d-665005c3449f
+ACCEPTS the block geometry, actual-support nonpositivity, exact ledger,
+counterexample mechanism and all-width band forcing/inventory, under the
+stated dependencies. Its two optional wording/inventory clarifications
+are applied above. The reviewer checked the illustrative graft integers
+for consistency but had not been supplied its coordinates; the explicit
+coordinate and charge tables above were added after that review. These
+fixed numerical counts have separate local verification. The reviewer
+did not execute Python or Lean.
 
 This gives an explicit obstacle to independent block payment and a usable
 physical interface formula. It does not prove the remaining inequality
