@@ -1,5 +1,11 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+Next-step [matching-cost-fourteen reduction](docs/COST_FOURTEEN_COMPENSATION_REDUCTION.md):
+the two remaining low-cost shapes suggest a defect witness or a negative long-leg
+matching credit. Six scoped Lean lemmas and 69,120 signed budget controls prove
+the CONDITIONAL 37/39 arithmetic. Arbitrary-dimension geometry and the combined
+physical injections are explicitly OPEN; 37/39 is not an established bound.
+
 New general complete-source coefficient:
 [the low-cost double obstruction](docs/LOW_COST_EXCEPTIONAL_DOUBLES_AND_35_37.md)
 excludes two occupied, unactivated gates for U(8,4,8) and its reflection.
