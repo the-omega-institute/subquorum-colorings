@@ -6,6 +6,12 @@ This note combines the even-bridge reduction with an original-board physical
 payment lemma, then shows why its native-support hypothesis matters. General
 proofs are provided; finite controls and scoped Lean results are auxiliary.
 
+The complete written theorem and two-elbow obstruction received an independent
+ACCEPT; see output/native-guard-compensation-oracle.json. A subsequent, separate
+construction in NEUTRAL_PAIR_DONOR_SATURATION.md shows that a zero-charge
+neighbor can also erase a local unit donor by saturation. That later result
+is outside this accepted review's scope.
+
 ## 1. Completed pieces and original selections
 
 Use the setting and all-even-bridge decomposition of
