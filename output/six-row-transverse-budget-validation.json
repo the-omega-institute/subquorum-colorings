@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_UNBOUNDED_THEOREM_EXACT_CONTROLS_SCOPED_LEAN_REVIEW_NOT_YET_RETURNED",
+  "proof": "docs/SIX_ROW_TRANSVERSE_U_BUDGET.md",
+  "verifier": "develop/check_six_row_transverse_budget.py",
+  "full_controls": "output/six-row-transverse-budget-controls.json",
+  "theorem": "Any finite endpoint-disjoint family of full transverse U(h,d,f) in common aligned even height h>=6, arbitrary even independent depths d,f>=4 and integer bar starts, either direction: Phi=a+(h-1)b-hp-e, p a matching of odd adjacent bars, 0<=e<=2(b-2p). Hence Phi>=a+(h/2-1)b>=a+2b>=numberSources. No completeness required. Coefficients sharp.",
+  "complete_six_row_corollary": "In the spanning-upward-U pocket, if ALL extra sources are transverse U, their whole budget is at least source count. Completeness excludes exactly one source via forced terminal support and old side support. Nonempty pocketPhi>=2, chamberDelta>=7. Explicit opposite-bar pairs with unequal complementary even depths attain2 for every evenW>=12, locally complete only; global extension not asserted.",
+  "python": {
+    "exit_code": 0,
+    "final_execution_chunk": "8b6ce5",
+    "disjoint_pair_controls": 27782,
+    "greedy_batches": 100,
+    "complete_opposed_pair_controls": 46,
+    "parallel_even_height_controls": 135,
+    "forbidden_singleton_controls": 1116,
+    "largest_height_or_pocket_width": 2000,
+    "scope": "Independent canonical full T/H/M reconstruction; exact mixed tiles and emitting-owner event sets, both directions/parities, all e=0/1/2 interface kinds, adjacent-bar matching, unequal-leg local complete witnesses and batches. Separate written arbitrary-parameter proof; controls not used as an unbounded proof."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SixRowTransverseBudget.lean",
+    "version": "4.33.0",
+    "final_execution_chunk": "595c3b",
+    "exit_code": 0,
+    "local_theorems": 17,
+    "individual_declaration_axiom_audits": 24,
+    "axioms": "Only ordinary propext/Classical.choice/Quot.sound or none. No warnings/sorry/native.",
+    "preflight_memory_free_percent": 65,
+    "real_lean_lake_processes_before_run": [],
+    "scope": "Six-row endpoint/bar predicate; bar clearance, touching bars face away and cannot chain, no vertical foreign adjacency, original tip/support exclusions, singleton under explicitly stated inherited-completeness conditions, exact budget and pair arithmetic. Full original source adapters, charge and event classification, finite matching count, general-height extension and complete occupied-set assembly remain written.",
+    "initial_run": "1207 failed two proof goals simplified to True; corrected to True.intro before final passing run."
+  },
+  "finite_discovery": {
+    "require_rotor": "UNSAT W8,10,12,14,16,20; UNKNOWN timeout W24,30. No universal rotor exclusion inferred.",
+    "nonempty_budget_at_most_one": "UNSAT W8,10,12,14,16,20,24. No unrestricted all-width bound inferred.",
+    "source": "develop/discover_six_row_chamber_budget.py"
+  },
+  "review": {
+    "status": "LIVE_NO_VERDICT",
+    "original_stream_session": 84340,
+    "request": "output/six-row-transverse-budget-review-request.json",
+    "stream": "output/six-row-transverse-budget-review-stream.sse",
+    "pool_preflight": {"ready": 17, "busy": 8, "needs_attention": 1, "queued": 0},
+    "scope": "Self-contained attachment with complete new six-row/general-height proof, verifier before additional singleton controls, final kernel-checked Lean, corrected predecessor chain formula, full chamber/localization/axial prerequisites and exact canonical source/affine/charge/inventory definitions. All mathematical claims and singleton proof included; added1116 computational singleton controls not claimed reviewed. No worker changes or duplicate live task."
+  },
+  "limitations": "Remaining horizontal-U/rotor interactions, unrestricted complete-pocket budget, exterior sign, global complete extension existence, universal source decomposition, global5/6 improvement and rectangular-grid triple equality remain OPEN. Submitted manuscript/main/C4/sharedCI unchanged. No mail actions."
+}

@@ -263,6 +263,11 @@ theorem spanning_downward_gain (width : Int) :
 
 theorem excluded_rotor_chain_value (amount : Int) : 4-(amount-1) = 5-amount := by omega
 
+theorem general_rotor_chain_value (gaps amount : Int) :
+    -gaps+5-(amount-1) = 6-gaps-amount := by omega
+
+theorem rotor_chain_chamber_marginal (amount : Int) : 5-(amount-1) = 6-amount := by omega
+
 end SubQuorum.TenRowCompleteChambers
 
 #print axioms SubQuorum.TenRowCompleteChambers.Point
@@ -304,3 +309,5 @@ end SubQuorum.TenRowCompleteChambers
 #print axioms SubQuorum.TenRowCompleteChambers.complete_width_six_budget
 #print axioms SubQuorum.TenRowCompleteChambers.spanning_downward_gain
 #print axioms SubQuorum.TenRowCompleteChambers.excluded_rotor_chain_value
+#print axioms SubQuorum.TenRowCompleteChambers.general_rotor_chain_value
+#print axioms SubQuorum.TenRowCompleteChambers.rotor_chain_chamber_marginal

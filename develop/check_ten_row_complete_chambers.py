@@ -186,6 +186,22 @@ def terminal_controls():
     return checked
 
 
+def multigap_chain_controls():
+    checked = 0
+    rotor = pocket_rotors()[0]
+    for gaps, amount, top in itertools.product((1, 2, 5), (1, 2, 8), (2, 40)):
+        width = 3*amount+3+(3*amount+3) % 2
+        rows = [top+10*index for index in range(gaps+1)]
+        old = baseline(width, rows, 20)
+        core = old+[shift(make_source('U', width, 4, 4), (top, 0))]
+        records = core+[shift(rotor, (top+2, 2+3*index)) for index in range(amount)]
+        assert phi_from(old, inventory(old)) == -gaps
+        assert phi_from(records, inventory(records)) == 6-gaps-amount
+        assert phi_from(records, inventory(records))-phi_from(old, inventory(old)) == 6-amount
+        checked += 1
+    return checked
+
+
 def nonempty_upward_pocket_control():
     width, top = 12, 2
     fixed = baseline(width, (top, top+10), 20)+[
@@ -211,6 +227,7 @@ def main():
     print(json.dumps(dict(status='PASS', source_spans=source_span_controls(),
                          width_six_pocket=pocket_controls(), complete_core_states=chamber_controls(),
                          simultaneous_full_chambers=batch_controls(), negative_chain=rotor_chain_controls(),
+                         multigap_chain_baselines=multigap_chain_controls(),
                          terminal_continuations=terminal_controls(),
                          nonempty_upward_pocket=nonempty_upward_pocket_control(),
                          scope='Exact canonical T/H/M controls of separately written unbounded spanning-D '

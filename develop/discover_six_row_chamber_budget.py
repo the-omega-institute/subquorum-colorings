@@ -50,7 +50,7 @@ def sum_truth(conditions):
     return z3.Sum([z3.If(condition, 1, 0) for condition in conditions])
 
 
-def search(width, timeout, threshold, exclude_spanning):
+def search(width, timeout, threshold, exclude_spanning, require_rotor=False):
     started = time.monotonic()
     fixed = baseline(width, (2, 12), 20)+[
         shift(make_source('U', width, 4, 4), (2, 0))]
@@ -98,6 +98,9 @@ def search(width, timeout, threshold, exclude_spanning):
                         for choice, (record, specification) in zip(choices, library)])
     potential += 2*sum_truth(mixed_tiles)-sum_truth(event_terms)
     solver.add(z3.Or(*choices))
+    if require_rotor:
+        solver.add(z3.Or(*[choice for choice, (_, specification) in zip(choices, library)
+                           if specification['kind'] == 'rotor']))
     if threshold is not None:
         solver.add(potential <= threshold)
     if exclude_spanning:
@@ -110,6 +113,7 @@ def search(width, timeout, threshold, exclude_spanning):
     verdict = solver.check()
     result = dict(width=width, candidates=len(library), status=str(verdict),
                   threshold=threshold, exclude_spanning=exclude_spanning,
+                  require_rotor=require_rotor,
                   seconds=round(time.monotonic()-started, 3), z3_version=z3.get_version_string(),
                   scope='Finite sealed-pocket discovery only; no unbounded theorem inferred.')
     if verdict == z3.sat:
@@ -137,11 +141,12 @@ def main():
     parser.add_argument('--timeout', type=int, default=30)
     parser.add_argument('--threshold', type=int)
     parser.add_argument('--exclude-spanning', action='store_true')
+    parser.add_argument('--require-rotor', action='store_true')
     arguments = parser.parse_args()
     for width in arguments.widths:
         assert width >= 6 and width % 2 == 0
         print(json.dumps(search(width, arguments.timeout, arguments.threshold,
-                                arguments.exclude_spanning)), flush=True)
+                                arguments.exclude_spanning, arguments.require_rotor)), flush=True)
 
 
 if __name__ == '__main__':

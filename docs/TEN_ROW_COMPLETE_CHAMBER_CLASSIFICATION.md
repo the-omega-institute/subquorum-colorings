@@ -41,7 +41,8 @@ chambers, including all originally unselected sources.
 
 For contrast, after a spanning U_W is selected at a ten-row gap of arbitrary
 width, endpoint-disjoint additions can still drive Phi to minus infinity.
-The explicit zero-rotor chain below gives Phi=5-k for k added rotors. Its
+The explicit zero-rotor chain below gives chamber marginal6-k for k>=1
+added rotors, hence absolutePhi=6-g-k, or5-k when g=1. Its
 first two rotors cannot completely extend. This rules out the endpoint-only
 nonnegativity shortcut without contradicting the complete-chamber conjecture.
 
@@ -165,7 +166,7 @@ known exact contribution W+1 in the whole-family identity.
 ## An unbounded partial obstruction in the upward pocket
 
 Use the A rotor in (4), with its full original support and matching record.
-At any even W>=3k+3 put k copies A_j at pocket coordinates (0,3j),
+For k>=1 and any even W>=3k+3 put k copies A_j at pocket coordinates (0,3j),
 0<=j<k, in the spanning-U_W chamber. Their endpoint sets are disjoint.
 Every charge is0: direct tile counts give4 edges,4 endpoint tiles and4
 inside-tile supports at either horizontal parity. Each individual
@@ -186,10 +187,16 @@ tiles have only three endpoints, so no new mixed full tile occurs. Sources
 two or more positions apart have no adjacent endpoints or shared tiles.
 Thus the complete exact added sets have |F|=0, |E|=k-1, and
 
-    Phi(O+U_W+all A_j)=4-(k-1)=5-k.                     (5)
+    Delta_i=5-(k-1)=6-k,
+    Phi(O+U_W+all A_j)=-g+5-(k-1)=6-g-k.               (5)
+
+In particular the absolute inventory is5-k for the one-gap baseline g=1.
+For k=0 the marginal is5 and the absolute inventory5-g; the k-1 event
+count above is used only for k>=1.
 
 This defeats any nonnegative-marginal rule for arbitrary extra originals
-even in a fully compensated ten-row chamber; its loss has no fixed bound.
+even in a fully compensated ten-row chamber; its loss has no uniform bound
+as the width increases. A fixed finite pocket still has finite capacity.
 
 It does NOT give a complete-chamber counterexample. For any consecutive
 pair, z=(0,3j+3) is an original support of A_j and is not occupied by any
@@ -278,5 +285,27 @@ was submitted as a new conversation on originalstream92013. Pool preflight
 20ready/5busy/1needs_attention/0queued. One text attachment includes the
 complete final proof, explicit W12 witness, final full-record verifier,
 kernel-checked Lean and all prerequisite notes/canonical definitions.
-The new original stream remains live without a verdict; no service-worker
-configuration was changed, and no active request was duplicated.
+That original stream has now completed, exit0/DONE, task
+0ff72e81-9a8b-40bc-a971-45f615d7b291, conversationconv_ae92ebf7063a4281.
+Its19777-character answer exactly matches the terminal API, observed
+gpt_6/pro. Verdict REVISE: the main chamber geometry, support locality,
+nonreuse, chain event/nonextension proof and W12 witness withstand audit,
+but the absolute chain formula needs its old-gap baseline retained.
+Equation(5) above is corrected to6-g-k for k>=1, marginal6-k;5-k is stated
+only for g=1. This correction does not change the unbounded growing-width
+obstruction. No service-worker configuration changed or live request was
+duplicated. The reviewer did not independently rerun Lean.
+
+Corrected complete verifier141963 exited0, including18 extra general-gap
+baseline controls and the previous exact-set suite. Added two explicit
+general-chain arithmetic theorems; corrected Lean invocation9603b6, original
+37419, exited0 with41 individual audits including22 local theorems, only
+ordinary axioms or none and no warnings/sorry/native. Preflight63% memory
+free and no real lean/lake by comm-basename inspection. The prior39-audit
+record remains historical; it did not formalize the omitted g dependence.
+
+The next whole-family subcase is proved separately in
+`SIX_ROW_TRANSVERSE_U_BUDGET.md`: arbitrary many transverse U sources have
+a positive nonreusing budget at every common even height. In the complete
+six-row pocket its nonempty contribution is at least2, sharply. This is
+not a proof for the remaining horizontal-U/rotor mixed configurations.
