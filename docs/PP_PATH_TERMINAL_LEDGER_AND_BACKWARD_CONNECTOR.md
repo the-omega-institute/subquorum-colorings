@@ -134,6 +134,13 @@ receivers and paths cannot also be credited as outside resources; packets
 must not overlap in physical tiles. This is a conditional improvement of the
 5/6 coefficient on the stated class, not a new universal bound.
 
+For arbitrary feasible configurations outside that single-terminal setting,
+the exact global ledger has an additional -2N_out term for physical tiles
+shared by distinct outside endpoint components. The complete correction and
+a separate acyclic boundary-source collision family are proved in
+RECEIVER_OVERLAP_AND_PP_BOUNDARY_SOURCE_COLLISION.md. The local identities
+and target equivalence in this note are unchanged.
+
 Equation (5) is a reduction, not a proof of its right-hand reserve being
 large enough in general. Any future allocation must assign the L-k-t interval
 reserve and beta BP--BP paths without reuse. The native transverse theorem

@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "machine": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "command": "lean --stdin < formal/SubQuorum/ReceiverOverlapAndPPSourceCollision.lean",
+  "preflight": {
+    "chunk": "969d28",
+    "memory_free_percent": 46,
+    "active_real_lean_lake_comm_basename": "none"
+  },
+  "execution": {
+    "session_id": 68028,
+    "result_chunk": "6eaa61",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "theorems": 14,
+  "individual_axiom_audits": [
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.disconnected_tile_has_two_blanks",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.feasible_tile_has_at_most_two_selections",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.shared_tile_excluded_by_native_degree",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.exact_arbitrary_receiver_overlap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.exact_global_packet_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.coefficient_one_with_overlap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.uncorrected_ledger_excess",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.arbitrary_boundary_source_inventory",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.exact_source_component_loss",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.source_injection_fails_with_a_collision",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.both_boundary_component_inventory",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.all_matching_edges_accounted",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.unused_interior_reserve",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ReceiverOverlapAndPPSourceCollision.collision_family_unit_target_holds",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "sorry": false,
+  "native_evaluation": false,
+  "scope": "All 81 local tile profiles establish diagonal blanks and selection cap; arbitrary receiver inventory overlap sum; exact global ledger and conditional coefficient; arbitrary finite boundary-source collision inventory, loss, both-boundary arithmetic, all matching-edge count and positive unit-family reserve. Actual global-component-to-local-profile and grid/forest/unique-matching/freezing coordinate adapters remain written proofs."
+}

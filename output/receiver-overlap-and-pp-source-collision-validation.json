@@ -1,0 +1,115 @@
+{
+  "status": "PASS",
+  "controls": {
+    "receiver_models": 6589,
+    "receiver_overlap_models": 66,
+    "outside_shared_tiles": 69,
+    "inside_shared_tiles": 1,
+    "local_diagonal_same_global_component_tiles": 3,
+    "models": 425,
+    "matching_edges_owned": 39320,
+    "pp_columns": 19292,
+    "paths_TP_TP": 2150,
+    "paths_BP_TP": 17878,
+    "pp_cycles": 9646,
+    "open_packets": 0,
+    "independent_forced_matching_edges": 39320,
+    "unique_frozen_pairs": 425,
+    "source_collision_packets": 425,
+    "source_collisions": 2150,
+    "single_terminal_disjoint_receiver_models": 1137,
+    "physical_receiver_closed_collision_packets": 351,
+    "collision_symmetry_images": 24,
+    "unbounded_collision_parameters": 50
+  },
+  "reviewer_counterexample": {
+    "margin_twice": 26,
+    "packet_surplus_twice": 6,
+    "outside_deficit": 6,
+    "outside_positive": 0,
+    "outside_negative": 6,
+    "outside_shared_tiles": [
+      [
+        1,
+        0
+      ]
+    ],
+    "uncorrected_margin_twice": 30,
+    "charges": [
+      -3,
+      -3,
+      -3
+    ]
+  },
+  "collision_samples": [
+    {
+      "width": 6,
+      "height": 4,
+      "copies": 1,
+      "bands": 9,
+      "alpha": 1,
+      "beta": 0,
+      "gamma": 5,
+      "forest_intervals": 66,
+      "joint_components": 65,
+      "first_boundary_components": 8,
+      "final_boundary_components": 9,
+      "boundary_components": 17,
+      "interior_components": 48,
+      "surplus": 65,
+      "target": 18,
+      "connector_cycle_count": 0
+    },
+    {
+      "width": 12,
+      "height": 8,
+      "copies": 2,
+      "bands": 24,
+      "alpha": 2,
+      "beta": 0,
+      "gamma": 18,
+      "forest_intervals": 260,
+      "joint_components": 258,
+      "first_boundary_components": 22,
+      "final_boundary_components": 24,
+      "boundary_components": 46,
+      "interior_components": 212,
+      "surplus": 258,
+      "target": 48,
+      "connector_cycle_count": 0
+    },
+    {
+      "width": 30,
+      "height": 20,
+      "copies": 4,
+      "bands": 84,
+      "alpha": 4,
+      "beta": 0,
+      "gamma": 84,
+      "forest_intervals": 1864,
+      "joint_components": 1860,
+      "first_boundary_components": 80,
+      "final_boundary_components": 84,
+      "boundary_components": 164,
+      "interior_components": 1696,
+      "surplus": 1860,
+      "target": 168,
+      "connector_cycle_count": 0
+    }
+  ],
+  "short_census": [
+    {
+      "columns": 2,
+      "actual_matchings": 10
+    },
+    {
+      "columns": 3,
+      "actual_matchings": 274
+    },
+    {
+      "columns": 4,
+      "actual_matchings": 5927
+    }
+  ],
+  "scope": "Finite checks of written general diagonal-overlap correction, global physical-packet ledger, and arbitrary-parameter frozen/unique-matching boundary-source collision family. Acyclic connector source injection fails; target inequalities do not fail. General compensation open."
+}
