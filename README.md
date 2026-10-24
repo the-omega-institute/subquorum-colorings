@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [guarded pockets and monotone fork replacement](docs/GUARDED_POCKETS_AND_MONOTONE_FORK_REPLACEMENT.md):
+a general two-column pocket in an occupied adjacent-band pattern either
+retains private interval credit or becomes one forced beta accessible only
+from its old alpha root. Any fork rooted there, including bent mixed arms,
+has an ordinary replacement preserving every outside certificate and not
+increasing links. Tertiary fork minimization gives full ordinary exactness
+when all feasible forks meet guarded roots. All-q base stacks with arbitrary
+pocket insertions have exact value 3q and minimum links q+|S|. Checks pass
+224 frozen boards/308 replacements and four scoped local Lean audits.
+The filled case can tie link cost; not every optimal fork is excluded.
+General grids and the 5/6 improvement remain open.
+
 New [joint allocation exchange and exact terminal-fork defects](docs/FORK_ALLOCATION_EXCHANGE_AND_CLOSED_TREES.md):
 ordinary interval assignments may reroute while preserving every old paid
 ordinary source and every old used interval identity. With h forks, m interval

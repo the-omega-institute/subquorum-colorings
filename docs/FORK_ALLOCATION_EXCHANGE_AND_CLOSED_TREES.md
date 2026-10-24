@@ -1,5 +1,11 @@
 # Fork allocation exchange and closed ordinary blocking trees
 
+**Geometric continuation:** [guarded pockets and monotone fork replacement](GUARDED_POCKETS_AND_MONOTONE_FORK_REPLACEMENT.md)
+proves that arbitrary feasible additions around the current C pocket either
+leave private interval credit or force an exclusive beta exit. Forks rooted
+at C can therefore be eliminated without increasing links, including bent
+C arms. The joint fixed-route formulas below keep their stated scope.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 An arm unit occupied by an ordinary interval stem need not be permanently
