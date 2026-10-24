@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [extreme-interval compression theorem](docs/BT_CORRIDOR_PORTS_AND_BOUNDED_ACCESS_OBSTRUCTION.md):
+every full endpoint-free-gap interval payment can be moved to one available
+extreme per candidate terminal while preserving the paid virtual alphas,
+paying terminals and all chosen links. Maximum compensation and minimum link
+cost are unchanged, including arbitrary fixed reservations when available
+extremes are recomputed. With boundary reservations alone these are exactly
+first-BB accesses through BT corridors, at most two targets per terminal.
+The proof retains each original interval as one unit. Checks pass 1,840
+optimization/transport controls and 9,727 reserved local transports; 16 scoped
+Lean theorem audits pass locally. A smaller frozen access obstruction has
+exact one-sided cost 2, two-ended cost 2+H/2 and positive packet margin;
+the general impossibility of bounded-radius access was already established
+in the earlier gap note. Universal grid compensation remains open.
+
 New [blocked-mark capacity theorem](docs/BLOCKED_MARK_CAPACITY_AND_39_41.md):
 forced original corner events exclude mark slots instead of creating another
 reserve pool. A terminal-to-corner injection prevents reuse across the three
