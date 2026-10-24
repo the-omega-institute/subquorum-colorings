@@ -8,6 +8,12 @@ after exterior routes, and lifts every reduced route certificate to an actual
 terminal matching. A reserve component supplies exactly one extra beta unit.
 The reduced network can be strictly weaker than the unrestricted network.
 
+The subsequent
+[exact exchange-gate reduction](EXACT_BETA_EXCHANGE_GATES_AND_MULTIPORT_PATHS.md)
+retains reversible internal payments as unit gates with all original ports.
+That larger network has exact maximum compensation and permits multiple
+compatible transfers through the same balanced component.
+
 Dependencies are the original-terminal normal form in
 [COMPENSATION_FLOW_NORMAL_FORM.md](COMPENSATION_FLOW_NORMAL_FORM.md), the
 cancellation ledger in
