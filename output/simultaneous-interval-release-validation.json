@@ -1,0 +1,1261 @@
+{
+  "status": "PASS",
+  "totals": {
+    "initially_deficient_models": 205,
+    "abstract_independent_packing_comparisons": 546,
+    "abstract_deleted_flow_models": 3244,
+    "canonical_single_release_checks": 786,
+    "exact_release_rank_comparisons": 3244,
+    "minimal_release_obstructions": 359,
+    "abstract_fixed_paid_systems": 320,
+    "physical_base_deletion_models": 2048,
+    "physical_independent_packing_comparisons": 2048,
+    "physical_all_candidate_value_and_cost_rank_checks": 2048,
+    "physical_stack_deletion_models": 112,
+    "stack_independent_packing_comparisons": 21,
+    "reselected_band_phase_models": 32
+  },
+  "abstract_obstruction_examples": [
+    {
+      "model": 0,
+      "paid_sources": 3,
+      "minimal_obstructions": [
+        [
+          0
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    {
+      "model": 2,
+      "paid_sources": 3,
+      "minimal_obstructions": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "model": 3,
+      "paid_sources": 1,
+      "minimal_obstructions": [
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "model": 4,
+      "paid_sources": 2,
+      "minimal_obstructions": [
+        [
+          1
+        ]
+      ]
+    }
+  ],
+  "physical_base": {
+    "shape": [
+      16,
+      14
+    ],
+    "selected": 21,
+    "actual_endpoints": 66,
+    "original_intervals": 43,
+    "candidate_intervals": [
+      13,
+      14,
+      15,
+      16,
+      21,
+      33,
+      34,
+      35,
+      36,
+      43,
+      44
+    ],
+    "coordinates": {
+      "A": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "C": [
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "B": [
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          10
+        ]
+      ]
+    },
+    "release_capacity": 10,
+    "release_capacity_at_original_minimum_links": 9,
+    "minimally_nonreleasable_set_size": 11,
+    "original_cut_capacity": 13,
+    "all_proper_deletions_feasible": 2047,
+    "original_cost_preserving_deletions": 1488,
+    "outcomes": [
+      {
+        "value": 2,
+        "minimum_links": 2,
+        "count": 1
+      },
+      {
+        "value": 3,
+        "minimum_links": 1,
+        "count": 1488
+      },
+      {
+        "value": 3,
+        "minimum_links": 2,
+        "count": 544
+      },
+      {
+        "value": 3,
+        "minimum_links": 3,
+        "count": 15
+      }
+    ],
+    "selected_deletions": [
+      {
+        "deleted": [],
+        "value": 3,
+        "minimum_links": 1,
+        "certificates": [
+          {
+            "kind": "interval",
+            "owners": [
+              0
+            ],
+            "links": [],
+            "interval": 13,
+            "value": 1,
+            "witness": 0
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              4
+            ],
+            "links": [],
+            "interval": 43,
+            "value": 1,
+            "witness": 4
+          },
+          {
+            "kind": "beta",
+            "owners": [
+              1,
+              3
+            ],
+            "links": [
+              [
+                [
+                  7,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 1
+          }
+        ]
+      },
+      {
+        "deleted": [
+          43
+        ],
+        "value": 3,
+        "minimum_links": 1,
+        "certificates": [
+          {
+            "kind": "interval",
+            "owners": [
+              0
+            ],
+            "links": [],
+            "interval": 13,
+            "value": 1,
+            "witness": 0
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              4
+            ],
+            "links": [],
+            "interval": 44,
+            "value": 1,
+            "witness": 4
+          },
+          {
+            "kind": "beta",
+            "owners": [
+              1,
+              3
+            ],
+            "links": [
+              [
+                [
+                  7,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 1
+          }
+        ]
+      },
+      {
+        "deleted": [
+          44
+        ],
+        "value": 3,
+        "minimum_links": 1,
+        "certificates": [
+          {
+            "kind": "interval",
+            "owners": [
+              0
+            ],
+            "links": [],
+            "interval": 13,
+            "value": 1,
+            "witness": 0
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              4
+            ],
+            "links": [],
+            "interval": 43,
+            "value": 1,
+            "witness": 4
+          },
+          {
+            "kind": "beta",
+            "owners": [
+              1,
+              3
+            ],
+            "links": [
+              [
+                [
+                  7,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 1
+          }
+        ]
+      },
+      {
+        "deleted": [
+          43,
+          44
+        ],
+        "value": 3,
+        "minimum_links": 2,
+        "certificates": [
+          {
+            "kind": "interval",
+            "owners": [
+              0
+            ],
+            "links": [],
+            "interval": 13,
+            "value": 1,
+            "witness": 0
+          },
+          {
+            "kind": "beta",
+            "owners": [
+              1,
+              3
+            ],
+            "links": [
+              [
+                [
+                  7,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 1
+          },
+          {
+            "kind": "beta",
+            "owners": [
+              2,
+              4
+            ],
+            "links": [
+              [
+                [
+                  12,
+                  5
+                ],
+                [
+                  12,
+                  6
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 2
+          }
+        ]
+      },
+      {
+        "deleted": [
+          13,
+          14,
+          15,
+          16,
+          21,
+          33,
+          34,
+          35,
+          36,
+          43,
+          44
+        ],
+        "value": 2,
+        "minimum_links": 2,
+        "certificates": [
+          {
+            "kind": "beta",
+            "owners": [
+              0,
+              2
+            ],
+            "links": [
+              [
+                [
+                  5,
+                  5
+                ],
+                [
+                  5,
+                  6
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 2
+          },
+          {
+            "kind": "beta",
+            "owners": [
+              1,
+              3
+            ],
+            "links": [
+              [
+                [
+                  7,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            ],
+            "interval": null,
+            "value": 1,
+            "beta": 1
+          }
+        ]
+      }
+    ]
+  },
+  "physical_stacks": [
+    {
+      "copies": 1,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 3,
+      "minimum_links": 1
+    },
+    {
+      "copies": 1,
+      "pattern": "all_C",
+      "removed_intervals": 2,
+      "value": 3,
+      "minimum_links": 2
+    },
+    {
+      "copies": 1,
+      "pattern": "all_F",
+      "removed_intervals": 11,
+      "value": 2,
+      "minimum_links": 2
+    },
+    {
+      "copies": 1,
+      "pattern": "all_A_C",
+      "removed_intervals": 7,
+      "value": 3,
+      "minimum_links": 3
+    },
+    {
+      "copies": 1,
+      "pattern": "one_A_left",
+      "removed_intervals": 10,
+      "value": 3,
+      "minimum_links": 2
+    },
+    {
+      "copies": 1,
+      "pattern": "one_B_left",
+      "removed_intervals": 10,
+      "value": 3,
+      "minimum_links": 3
+    },
+    {
+      "copies": 1,
+      "pattern": "random",
+      "removed_intervals": 3,
+      "value": 3,
+      "minimum_links": 1
+    },
+    {
+      "copies": 2,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 6,
+      "minimum_links": 2
+    },
+    {
+      "copies": 2,
+      "pattern": "all_C",
+      "removed_intervals": 4,
+      "value": 6,
+      "minimum_links": 4
+    },
+    {
+      "copies": 2,
+      "pattern": "all_F",
+      "removed_intervals": 22,
+      "value": 4,
+      "minimum_links": 4
+    },
+    {
+      "copies": 2,
+      "pattern": "all_A_C",
+      "removed_intervals": 14,
+      "value": 6,
+      "minimum_links": 6
+    },
+    {
+      "copies": 2,
+      "pattern": "one_A_left",
+      "removed_intervals": 20,
+      "value": 6,
+      "minimum_links": 4
+    },
+    {
+      "copies": 2,
+      "pattern": "one_B_left",
+      "removed_intervals": 20,
+      "value": 6,
+      "minimum_links": 6
+    },
+    {
+      "copies": 2,
+      "pattern": "random",
+      "removed_intervals": 9,
+      "value": 6,
+      "minimum_links": 2
+    },
+    {
+      "copies": 3,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 9,
+      "minimum_links": 3
+    },
+    {
+      "copies": 3,
+      "pattern": "all_C",
+      "removed_intervals": 6,
+      "value": 9,
+      "minimum_links": 6
+    },
+    {
+      "copies": 3,
+      "pattern": "all_F",
+      "removed_intervals": 33,
+      "value": 6,
+      "minimum_links": 6
+    },
+    {
+      "copies": 3,
+      "pattern": "all_A_C",
+      "removed_intervals": 21,
+      "value": 9,
+      "minimum_links": 9
+    },
+    {
+      "copies": 3,
+      "pattern": "one_A_left",
+      "removed_intervals": 30,
+      "value": 9,
+      "minimum_links": 6
+    },
+    {
+      "copies": 3,
+      "pattern": "one_B_left",
+      "removed_intervals": 30,
+      "value": 9,
+      "minimum_links": 9
+    },
+    {
+      "copies": 3,
+      "pattern": "random",
+      "removed_intervals": 17,
+      "value": 9,
+      "minimum_links": 5
+    },
+    {
+      "copies": 4,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 12,
+      "minimum_links": 4
+    },
+    {
+      "copies": 4,
+      "pattern": "all_C",
+      "removed_intervals": 8,
+      "value": 12,
+      "minimum_links": 8
+    },
+    {
+      "copies": 4,
+      "pattern": "all_F",
+      "removed_intervals": 44,
+      "value": 8,
+      "minimum_links": 8
+    },
+    {
+      "copies": 4,
+      "pattern": "all_A_C",
+      "removed_intervals": 28,
+      "value": 12,
+      "minimum_links": 12
+    },
+    {
+      "copies": 4,
+      "pattern": "one_A_left",
+      "removed_intervals": 40,
+      "value": 12,
+      "minimum_links": 8
+    },
+    {
+      "copies": 4,
+      "pattern": "one_B_left",
+      "removed_intervals": 40,
+      "value": 12,
+      "minimum_links": 12
+    },
+    {
+      "copies": 4,
+      "pattern": "random",
+      "removed_intervals": 24,
+      "value": 12,
+      "minimum_links": 5
+    },
+    {
+      "copies": 5,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 15,
+      "minimum_links": 5
+    },
+    {
+      "copies": 5,
+      "pattern": "all_C",
+      "removed_intervals": 10,
+      "value": 15,
+      "minimum_links": 10
+    },
+    {
+      "copies": 5,
+      "pattern": "all_F",
+      "removed_intervals": 55,
+      "value": 10,
+      "minimum_links": 10
+    },
+    {
+      "copies": 5,
+      "pattern": "all_A_C",
+      "removed_intervals": 35,
+      "value": 15,
+      "minimum_links": 15
+    },
+    {
+      "copies": 5,
+      "pattern": "one_A_left",
+      "removed_intervals": 50,
+      "value": 15,
+      "minimum_links": 10
+    },
+    {
+      "copies": 5,
+      "pattern": "one_B_left",
+      "removed_intervals": 50,
+      "value": 15,
+      "minimum_links": 15
+    },
+    {
+      "copies": 5,
+      "pattern": "random",
+      "removed_intervals": 26,
+      "value": 15,
+      "minimum_links": 7
+    },
+    {
+      "copies": 6,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 18,
+      "minimum_links": 6
+    },
+    {
+      "copies": 6,
+      "pattern": "all_C",
+      "removed_intervals": 12,
+      "value": 18,
+      "minimum_links": 12
+    },
+    {
+      "copies": 6,
+      "pattern": "all_F",
+      "removed_intervals": 66,
+      "value": 12,
+      "minimum_links": 12
+    },
+    {
+      "copies": 6,
+      "pattern": "all_A_C",
+      "removed_intervals": 42,
+      "value": 18,
+      "minimum_links": 18
+    },
+    {
+      "copies": 6,
+      "pattern": "one_A_left",
+      "removed_intervals": 60,
+      "value": 18,
+      "minimum_links": 12
+    },
+    {
+      "copies": 6,
+      "pattern": "one_B_left",
+      "removed_intervals": 60,
+      "value": 18,
+      "minimum_links": 18
+    },
+    {
+      "copies": 6,
+      "pattern": "random",
+      "removed_intervals": 39,
+      "value": 18,
+      "minimum_links": 10
+    },
+    {
+      "copies": 7,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 21,
+      "minimum_links": 7
+    },
+    {
+      "copies": 7,
+      "pattern": "all_C",
+      "removed_intervals": 14,
+      "value": 21,
+      "minimum_links": 14
+    },
+    {
+      "copies": 7,
+      "pattern": "all_F",
+      "removed_intervals": 77,
+      "value": 14,
+      "minimum_links": 14
+    },
+    {
+      "copies": 7,
+      "pattern": "all_A_C",
+      "removed_intervals": 49,
+      "value": 21,
+      "minimum_links": 21
+    },
+    {
+      "copies": 7,
+      "pattern": "one_A_left",
+      "removed_intervals": 70,
+      "value": 21,
+      "minimum_links": 14
+    },
+    {
+      "copies": 7,
+      "pattern": "one_B_left",
+      "removed_intervals": 70,
+      "value": 21,
+      "minimum_links": 21
+    },
+    {
+      "copies": 7,
+      "pattern": "random",
+      "removed_intervals": 45,
+      "value": 21,
+      "minimum_links": 10
+    },
+    {
+      "copies": 8,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 24,
+      "minimum_links": 8
+    },
+    {
+      "copies": 8,
+      "pattern": "all_C",
+      "removed_intervals": 16,
+      "value": 24,
+      "minimum_links": 16
+    },
+    {
+      "copies": 8,
+      "pattern": "all_F",
+      "removed_intervals": 88,
+      "value": 16,
+      "minimum_links": 16
+    },
+    {
+      "copies": 8,
+      "pattern": "all_A_C",
+      "removed_intervals": 56,
+      "value": 24,
+      "minimum_links": 24
+    },
+    {
+      "copies": 8,
+      "pattern": "one_A_left",
+      "removed_intervals": 80,
+      "value": 24,
+      "minimum_links": 16
+    },
+    {
+      "copies": 8,
+      "pattern": "one_B_left",
+      "removed_intervals": 80,
+      "value": 24,
+      "minimum_links": 24
+    },
+    {
+      "copies": 8,
+      "pattern": "random",
+      "removed_intervals": 44,
+      "value": 23,
+      "minimum_links": 10
+    },
+    {
+      "copies": 9,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 27,
+      "minimum_links": 9
+    },
+    {
+      "copies": 9,
+      "pattern": "all_C",
+      "removed_intervals": 18,
+      "value": 27,
+      "minimum_links": 18
+    },
+    {
+      "copies": 9,
+      "pattern": "all_F",
+      "removed_intervals": 99,
+      "value": 18,
+      "minimum_links": 18
+    },
+    {
+      "copies": 9,
+      "pattern": "all_A_C",
+      "removed_intervals": 63,
+      "value": 27,
+      "minimum_links": 27
+    },
+    {
+      "copies": 9,
+      "pattern": "one_A_left",
+      "removed_intervals": 90,
+      "value": 27,
+      "minimum_links": 18
+    },
+    {
+      "copies": 9,
+      "pattern": "one_B_left",
+      "removed_intervals": 90,
+      "value": 27,
+      "minimum_links": 27
+    },
+    {
+      "copies": 9,
+      "pattern": "random",
+      "removed_intervals": 44,
+      "value": 27,
+      "minimum_links": 11
+    },
+    {
+      "copies": 10,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 30,
+      "minimum_links": 10
+    },
+    {
+      "copies": 10,
+      "pattern": "all_C",
+      "removed_intervals": 20,
+      "value": 30,
+      "minimum_links": 20
+    },
+    {
+      "copies": 10,
+      "pattern": "all_F",
+      "removed_intervals": 110,
+      "value": 20,
+      "minimum_links": 20
+    },
+    {
+      "copies": 10,
+      "pattern": "all_A_C",
+      "removed_intervals": 70,
+      "value": 30,
+      "minimum_links": 30
+    },
+    {
+      "copies": 10,
+      "pattern": "one_A_left",
+      "removed_intervals": 100,
+      "value": 30,
+      "minimum_links": 20
+    },
+    {
+      "copies": 10,
+      "pattern": "one_B_left",
+      "removed_intervals": 100,
+      "value": 30,
+      "minimum_links": 30
+    },
+    {
+      "copies": 10,
+      "pattern": "random",
+      "removed_intervals": 56,
+      "value": 30,
+      "minimum_links": 13
+    },
+    {
+      "copies": 11,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 33,
+      "minimum_links": 11
+    },
+    {
+      "copies": 11,
+      "pattern": "all_C",
+      "removed_intervals": 22,
+      "value": 33,
+      "minimum_links": 22
+    },
+    {
+      "copies": 11,
+      "pattern": "all_F",
+      "removed_intervals": 121,
+      "value": 22,
+      "minimum_links": 22
+    },
+    {
+      "copies": 11,
+      "pattern": "all_A_C",
+      "removed_intervals": 77,
+      "value": 33,
+      "minimum_links": 33
+    },
+    {
+      "copies": 11,
+      "pattern": "one_A_left",
+      "removed_intervals": 110,
+      "value": 33,
+      "minimum_links": 22
+    },
+    {
+      "copies": 11,
+      "pattern": "one_B_left",
+      "removed_intervals": 110,
+      "value": 33,
+      "minimum_links": 33
+    },
+    {
+      "copies": 11,
+      "pattern": "random",
+      "removed_intervals": 57,
+      "value": 33,
+      "minimum_links": 13
+    },
+    {
+      "copies": 12,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 36,
+      "minimum_links": 12
+    },
+    {
+      "copies": 12,
+      "pattern": "all_C",
+      "removed_intervals": 24,
+      "value": 36,
+      "minimum_links": 24
+    },
+    {
+      "copies": 12,
+      "pattern": "all_F",
+      "removed_intervals": 132,
+      "value": 24,
+      "minimum_links": 24
+    },
+    {
+      "copies": 12,
+      "pattern": "all_A_C",
+      "removed_intervals": 84,
+      "value": 36,
+      "minimum_links": 36
+    },
+    {
+      "copies": 12,
+      "pattern": "one_A_left",
+      "removed_intervals": 120,
+      "value": 36,
+      "minimum_links": 24
+    },
+    {
+      "copies": 12,
+      "pattern": "one_B_left",
+      "removed_intervals": 120,
+      "value": 36,
+      "minimum_links": 36
+    },
+    {
+      "copies": 12,
+      "pattern": "random",
+      "removed_intervals": 73,
+      "value": 36,
+      "minimum_links": 17
+    },
+    {
+      "copies": 13,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 39,
+      "minimum_links": 13
+    },
+    {
+      "copies": 13,
+      "pattern": "all_C",
+      "removed_intervals": 26,
+      "value": 39,
+      "minimum_links": 26
+    },
+    {
+      "copies": 13,
+      "pattern": "all_F",
+      "removed_intervals": 143,
+      "value": 26,
+      "minimum_links": 26
+    },
+    {
+      "copies": 13,
+      "pattern": "all_A_C",
+      "removed_intervals": 91,
+      "value": 39,
+      "minimum_links": 39
+    },
+    {
+      "copies": 13,
+      "pattern": "one_A_left",
+      "removed_intervals": 130,
+      "value": 39,
+      "minimum_links": 26
+    },
+    {
+      "copies": 13,
+      "pattern": "one_B_left",
+      "removed_intervals": 130,
+      "value": 39,
+      "minimum_links": 39
+    },
+    {
+      "copies": 13,
+      "pattern": "random",
+      "removed_intervals": 62,
+      "value": 39,
+      "minimum_links": 17
+    },
+    {
+      "copies": 14,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 42,
+      "minimum_links": 14
+    },
+    {
+      "copies": 14,
+      "pattern": "all_C",
+      "removed_intervals": 28,
+      "value": 42,
+      "minimum_links": 28
+    },
+    {
+      "copies": 14,
+      "pattern": "all_F",
+      "removed_intervals": 154,
+      "value": 28,
+      "minimum_links": 28
+    },
+    {
+      "copies": 14,
+      "pattern": "all_A_C",
+      "removed_intervals": 98,
+      "value": 42,
+      "minimum_links": 42
+    },
+    {
+      "copies": 14,
+      "pattern": "one_A_left",
+      "removed_intervals": 140,
+      "value": 42,
+      "minimum_links": 28
+    },
+    {
+      "copies": 14,
+      "pattern": "one_B_left",
+      "removed_intervals": 140,
+      "value": 42,
+      "minimum_links": 42
+    },
+    {
+      "copies": 14,
+      "pattern": "random",
+      "removed_intervals": 78,
+      "value": 42,
+      "minimum_links": 21
+    },
+    {
+      "copies": 15,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 45,
+      "minimum_links": 15
+    },
+    {
+      "copies": 15,
+      "pattern": "all_C",
+      "removed_intervals": 30,
+      "value": 45,
+      "minimum_links": 30
+    },
+    {
+      "copies": 15,
+      "pattern": "all_F",
+      "removed_intervals": 165,
+      "value": 30,
+      "minimum_links": 30
+    },
+    {
+      "copies": 15,
+      "pattern": "all_A_C",
+      "removed_intervals": 105,
+      "value": 45,
+      "minimum_links": 45
+    },
+    {
+      "copies": 15,
+      "pattern": "one_A_left",
+      "removed_intervals": 150,
+      "value": 45,
+      "minimum_links": 30
+    },
+    {
+      "copies": 15,
+      "pattern": "one_B_left",
+      "removed_intervals": 150,
+      "value": 45,
+      "minimum_links": 45
+    },
+    {
+      "copies": 15,
+      "pattern": "random",
+      "removed_intervals": 71,
+      "value": 45,
+      "minimum_links": 20
+    },
+    {
+      "copies": 16,
+      "pattern": "none",
+      "removed_intervals": 0,
+      "value": 48,
+      "minimum_links": 16
+    },
+    {
+      "copies": 16,
+      "pattern": "all_C",
+      "removed_intervals": 32,
+      "value": 48,
+      "minimum_links": 32
+    },
+    {
+      "copies": 16,
+      "pattern": "all_F",
+      "removed_intervals": 176,
+      "value": 32,
+      "minimum_links": 32
+    },
+    {
+      "copies": 16,
+      "pattern": "all_A_C",
+      "removed_intervals": 112,
+      "value": 48,
+      "minimum_links": 48
+    },
+    {
+      "copies": 16,
+      "pattern": "one_A_left",
+      "removed_intervals": 160,
+      "value": 48,
+      "minimum_links": 32
+    },
+    {
+      "copies": 16,
+      "pattern": "one_B_left",
+      "removed_intervals": 160,
+      "value": 48,
+      "minimum_links": 48
+    },
+    {
+      "copies": 16,
+      "pattern": "random",
+      "removed_intervals": 95,
+      "value": 48,
+      "minimum_links": 24
+    }
+  ],
+  "reselected_band_phases": [
+    {
+      "transposed": false,
+      "row_offset_parity": 0,
+      "value": 3,
+      "minimum_links": 0,
+      "count": 8
+    },
+    {
+      "transposed": false,
+      "row_offset_parity": 1,
+      "value": 0,
+      "minimum_links": 0,
+      "count": 8
+    },
+    {
+      "transposed": true,
+      "row_offset_parity": 0,
+      "value": 0,
+      "minimum_links": 0,
+      "count": 8
+    },
+    {
+      "transposed": true,
+      "row_offset_parity": 1,
+      "value": 2,
+      "minimum_links": 0,
+      "count": 8
+    }
+  ],
+  "scope": "Written exact simultaneous-release formula retaining prescribed paid sources; all 2048 reservations of the physical eleven-unit sector independently optimized; arbitrary-copy formula has a separation proof, finite stack checks are controls; two C units obstruct simultaneous release at unchanged minimum link cost only. Resource reservations do not edit the physical grid or its scalar ledger. No unrestricted full-compensation or target-inequality counterexample claimed."
+}

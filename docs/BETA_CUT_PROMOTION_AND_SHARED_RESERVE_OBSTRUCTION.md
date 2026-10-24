@@ -1,5 +1,9 @@
 # Beta-body promotion, surplus Hall witnesses and shared reserve
 
+**Continuation:** [actual simultaneous release](SIMULTANEOUS_INTERVAL_RELEASE_AND_PHYSICAL_CIRCUITS.md)
+distinguishes individually releasable far-side witnesses from jointly unused
+resources, with an exact all-cut criterion and real frozen-board obstructions.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 We sharpen the BP-aware flow separator with a simultaneous beta-body

@@ -1,5 +1,11 @@
 # Whole-support forks: one exact flow and a resource-cut criterion
 
+**Actual reserve continuation:** [simultaneous interval release and physical
+circuits](SIMULTANEOUS_INTERVAL_RELEASE_AND_PHYSICAL_CIRCUITS.md) gives the exact
+number of intervals that can be unused while preserving a fixed paid-source
+set, including an eleven-unit physical release obstruction and a two-unit
+obstruction at unchanged minimum link cost.
+
 **Canonical-cut continuation:** [beta-body promotion and shared reserve](BETA_CUT_PROMOTION_AND_SHARED_RESERVE_OBSTRUCTION.md)
 sharpens the separator to a strict simultaneous promotion inequality, giving
 deletion-robust Hall witnesses for double BP entry cuts. These far-side units
