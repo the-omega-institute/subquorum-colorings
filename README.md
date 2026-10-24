@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact mixed-extension component reserves](docs/MIXED_SUPPORT_COMPONENT_MERGE_ACCOUNTING.md):
+for every monotone interval-incidence extension retaining at most two owners
+per original unit, each resulting component gains exactly min(d,S) payments,
+where d counts its old deficient components and S its OLD unused original
+units. An already used interval is not fresh credit; distinct continuations
+to the same unused unit still share one reserve. Augmentation preserves the
+old paid-owner set and used-unit set, adding exactly the actual payment gain
+in different old unused units. Checks pass13,265 models, including4,005 physical
+whole-support batches and85 explicitly terminal/cap collision transitions;
+these whole-support controls have no cross-component merges. Eleven scoped
+Lean audits pass. Finding generally sufficient legal mixed continuations
+remains open; the submitted manuscript is unchanged.
+
 New [sharp physical beta Hall defects and mixed repair](docs/BETA_CLOSING_AND_SHARP_MIXED_DEFECT.md):
 one safe selection changes a beta into a mixed strand while preserving all
 freezing certificates, original interval identities and alpha supports.

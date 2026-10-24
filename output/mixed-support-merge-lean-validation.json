@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T19:47:44.480596+00:00",
+  "execution": "Explicitly selected local executable; sequential dependency and new module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/MixedSupportComponentMerges.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/MixedSupportComponentMerges.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.MixedSupportComponentMerges.augment_keeps_old_paid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.MixedSupportComponentMerges.augment_keeps_old_units' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.MixedSupportComponentMerges.augment_new_pair_functional' does not depend on any axioms",
+        "'SubQuorum.MixedSupportComponentMerges.augment_units_not_reused' does not depend on any axioms",
+        "'SubQuorum.MixedSupportComponentMerges.augment_uses_one_new_unit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.MixedSupportComponentMerges.new_root_was_unpaid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.MixedSupportComponentMerges.cluster_deficiency_iff' depends on axioms: [propext,",
+        "'SubQuorum.MixedSupportComponentMerges.cluster_gain' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.MixedSupportComponentMerges.cluster_unpaid_at_most_one' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.MixedSupportComponentMerges.cluster_consumes_distinct_reserves' depends on axioms: [propext]",
+        "'SubQuorum.MixedSupportComponentMerges.constant_ledger' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Arbitrary-length indexed alternating augmentation preserves old paid owners and used resource identities, pays the new root with one new unit and has no owner or unit reuse; signed component deficit and min(d,s) gain arithmetic; constant ledger.",
+  "not_formalized": [
+    "General finite component partition and reserve cardinalities",
+    "Existence of augmenting paths and full allocation optimum",
+    "Whole-support mixed extension adapter and physical controls"
+  ],
+  "sorry": false,
+  "native_decide": false
+}
