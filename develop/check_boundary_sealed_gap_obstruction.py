@@ -50,7 +50,7 @@ def family(width, height, columns):
     return current, crop, added
 
 
-def support_allocation(current, bands, data, meta, fixed, totals):
+def support_allocation(current, bands, data, meta, fixed, totals, *, return_model=False):
     """Intervals can see the full support of a virtual alpha, not only its tips.
 
     This is an additional COUNTING access model, not terminal route equivalence.
@@ -122,10 +122,14 @@ def support_allocation(current, bands, data, meta, fixed, totals):
     totals['support_deficient_controls'] += bool(defect)
     totals['support_deficient_tree_occurrences'] += defect
     totals['two_alpha_interval_occurrences'] += sum(len(users) == 2 for users in incidence.values())
-    return dict(alpha=len(alphas), beta=inventory['BP', 'BP'], paid=optimum,
+    report = dict(alpha=len(alphas), beta=inventory['BP', 'BP'], paid=optimum,
                 terminal_paid=terminal_paid, defect=defect, spare=spare, margin=margin,
                 payments=[dict(alpha=a, interval=j, **witness[a, j])
                           for a, j in sorted(result['assignment'].items())])
+    if return_model:
+        return report, dict(alphas=alphas, reduced=reduced, incidence=incidence,
+                            witness=witness, baseline=result, records=records)
+    return report
 
 
 def control(current, bands, totals, exhaustive=False):

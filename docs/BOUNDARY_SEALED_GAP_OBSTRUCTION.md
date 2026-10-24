@@ -2,6 +2,11 @@
 
 25 October 2026. Authors: Haobo Ma and Wenlin Zhang.
 
+Follow-up: [joint support-tree / whole-beta compensation](JOINT_TREE_BETA_COMPENSATION.md)
+now gives an exact direct-interface optimum and a minimum-disturbance rerooting
+theorem. It repairs the t=2 frozen interval-only negative control using distinct
+whole betas; universal geometric Hall expansion remains open.
+
 **Complete freezing does not force full compensation even in the FULL
 endpoint-free-gap terminal network.** We prove an all-parameter, uniquely
 matched frozen family with one alpha, no beta, no reachable unmarked interval,

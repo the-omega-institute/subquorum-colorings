@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [joint support-tree / whole-beta compensation](docs/JOINT_TREE_BETA_COMPENSATION.md):
+after any fixed cancellation, match deficient interval trees to distinct whole
+virtual betas, then choose the unpaid tree roots at the witnessed beta links.
+The exact direct-interface optimum is k-t+mu, with exactly mu extra beta links,
+while preserving all previously paid demand owners and used original interval
+identities. A minimum-weight maximum matching gives the exact minimum number
+of old interval assignments changed, using tree-distance rerooting costs.
+Checks pass 5,413 exhaustive and 7,544 independent flat optimization comparisons,
+491 physical fixed-cancellation lifts, and 14 scoped local Lean theorem audits.
+Actual frozen controls repair 56 tree occurrences but contain only singleton
+deficient support trees; nontrivial physical rerooting and geometric Hall
+expansion remain open. General written proofs are distinguished from the
+scoped formal checks. The submitted manuscript is unchanged.
+
 New [full-gap obstruction and whole-support compensation](docs/BOUNDARY_SEALED_GAP_OBSTRUCTION.md):
 complete freezing and a unique actual matching do not force compensation
 even in the full endpoint-free-gap terminal network. An all-parameter family
