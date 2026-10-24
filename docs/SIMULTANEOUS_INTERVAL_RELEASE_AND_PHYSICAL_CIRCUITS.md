@@ -1,5 +1,9 @@
 # Simultaneous interval release: exact capacity and physical circuits
 
+**Cost continuation:** [residual exchange and exact reserve cost](RESIDUAL_EXCHANGE_AND_EXACT_RESERVE_COST.md)
+computes the minimum additional links at every reserve target, and the exact
+zero-additional-link capacity from a reduced-cost residual cut.
+
 25 October 2026. Wenlin Zhang and Haobo Ma.
 
 We give an exact criterion for original intervals to be simultaneously
