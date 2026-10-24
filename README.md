@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [interior frozen caps and external-witness bound](docs/INTERIOR_SUPPORT_TREE_CAPS_AND_EXTERNAL_WITNESSES.md):
+an explicit all-length PP cap seals the earlier two-owner support tree's boundary
+exits without adding beta credit. Its interval defect survives arbitrary blank
+right padding; distinct direct-beta and mixed repairs retain exact resource
+ledgers. For original alphas before cancellation, every deficient support tree
+has two external terminal witnesses. Whole-beta capacity2 and mixed/mark
+capacity1 imply t-mu <= floor((q+h)/2), with identities counted globally once.
+This sharpens the remaining obstruction rather than proving full compensation.
+Checks cover96 cap/isometry/padding boards,36 stacks,59 physical token models,
+1,847 abstract models and24,619 subset inequalities. Eight scoped local Lean
+audits pass; the general geometric and matching adapters remain written proofs.
+No physical beta Hall failure or universal5/6 improvement is claimed.
+
 New [actual frozen support-tree rerooting](docs/FROZEN_SUPPORT_TREE_AND_FORCED_REROOT.md):
 a 12-by-18 grid with 46 completely frozen matching endpoints has two alpha
 owners sharing exactly one unmarked original interval, and one beta directly
@@ -22,9 +35,10 @@ identities. A minimum-weight maximum matching gives the exact minimum number
 of old interval assignments changed, using tree-distance rerooting costs.
 Checks pass 5,413 exhaustive and 7,544 independent flat optimization comparisons,
 491 physical fixed-cancellation lifts, and 14 scoped local Lean theorem audits.
-Actual frozen controls repair 56 tree occurrences but contain only singleton
-deficient support trees; nontrivial physical rerooting and geometric Hall
-expansion remain open. General written proofs are distinguished from the
+Those original frozen controls repair 56 tree occurrences but contain only
+singleton deficient support trees; the later constructions above supply
+nontrivial physical rerooting. Geometric beta Hall expansion remains open.
+General written proofs are distinguished from the
 scoped formal checks. The submitted manuscript is unchanged.
 
 New [full-gap obstruction and whole-support compensation](docs/BOUNDARY_SEALED_GAP_OBSTRUCTION.md):
