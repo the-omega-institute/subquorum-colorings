@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact fork deficits and wide-arm-gap exclusion](docs/FORK_REPLACEMENT_DEFICIENCY.md):
+fixed fork arms have ordinary value h+mu=2h-delta, with delta the Hall defect;
+under two-owner supports delta counts deficient substitute trees. In a
+maximum-payment minimum-link packing, every pre-beta arm unit must be blocked
+by a different outside certificate and, under the physical two-owner condition,
+a different unique outside owner. Thus an arm gap with two available original
+units excludes that fork from an optimum. Fork interval dependencies are
+acyclic and end at an ordinary-blocked sink or empty arm support. An all-length
+abstract chain has full value2q+1 versus ordinary2q; physical realization
+remains open. Checks pass985 replacement systems,251 full networks,1506 physical
+token inequalities and12 new scoped Lean audits. Exact beta-retaining cost is
+distinguished from unrestricted ordinary cost; the submitted paper is preserved.
+
 New [completely frozen beta fork and exact arm-replacement criterion](docs/FROZEN_BETA_SUPPORT_FORK_AND_RESERVED_RESOURCE_GAIN.md):
 an explicit16-by14 board with66 frozen endpoints refutes universal beta-fork
 exclusion. Two different alpha arms enter different tips of one beta and

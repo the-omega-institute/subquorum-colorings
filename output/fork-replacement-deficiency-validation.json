@@ -1,0 +1,190 @@
+{
+  "status": "PASS",
+  "totals": {
+    "systems": 985,
+    "positive_defects": 198,
+    "defect_sum": 269,
+    "two_owner_tree_systems": 754,
+    "deficient_tree_components": 203,
+    "independent_prefix_cost_enumerations": 760,
+    "beta_retaining_assignments": 787,
+    "cheaper_unrestricted_ordinary_costs": 413,
+    "whole_network_pack_bounds": 251,
+    "whole_network_optima_with_forks": 21,
+    "strict_unrestricted_gaps": 20,
+    "positive_fixed_pack_bound_but_no_value_gap": 1,
+    "two_owner_optimal_fork_injections": 42,
+    "optimal_fork_DAGs": 27,
+    "ordinary_blocked_sink_forks": 27,
+    "capacity_two_or_larger_exclusions": 12,
+    "private_arm_unit_exclusions": 1,
+    "independent_chain_optima": 6,
+    "abstract_blocking_chains": 12,
+    "direct_fork_physical_token_inequalities": 1506,
+    "positive_direct_fork_blocked_defects": 502,
+    "physical_stack_lifts": 8
+  },
+  "physical_lifts": [
+    {
+      "copies": 1,
+      "full_arm_matching": 1,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 1
+    },
+    {
+      "copies": 2,
+      "full_arm_matching": 2,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 2
+    },
+    {
+      "copies": 3,
+      "full_arm_matching": 3,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 3
+    },
+    {
+      "copies": 4,
+      "full_arm_matching": 4,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 4
+    },
+    {
+      "copies": 5,
+      "full_arm_matching": 5,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 5
+    },
+    {
+      "copies": 6,
+      "full_arm_matching": 6,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 6
+    },
+    {
+      "copies": 7,
+      "full_arm_matching": 7,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 7
+    },
+    {
+      "copies": 8,
+      "full_arm_matching": 8,
+      "full_arm_defect": 0,
+      "reserved_arm_matching": 0,
+      "reserved_arm_defect": 8
+    }
+  ],
+  "abstract_blocking_chains": [
+    {
+      "forks": 1,
+      "ordinary_value": 2,
+      "ordinary_min_links": 1,
+      "full_value": 3,
+      "full_min_links": 2,
+      "global_gap": 1
+    },
+    {
+      "forks": 2,
+      "ordinary_value": 4,
+      "ordinary_min_links": 2,
+      "full_value": 5,
+      "full_min_links": 4,
+      "global_gap": 1
+    },
+    {
+      "forks": 3,
+      "ordinary_value": 6,
+      "ordinary_min_links": 3,
+      "full_value": 7,
+      "full_min_links": 6,
+      "global_gap": 1
+    },
+    {
+      "forks": 4,
+      "ordinary_value": 8,
+      "ordinary_min_links": 4,
+      "full_value": 9,
+      "full_min_links": 8,
+      "global_gap": 1
+    },
+    {
+      "forks": 5,
+      "ordinary_value": 10,
+      "ordinary_min_links": 5,
+      "full_value": 11,
+      "full_min_links": 10,
+      "global_gap": 1
+    },
+    {
+      "forks": 6,
+      "ordinary_value": 12,
+      "ordinary_min_links": 6,
+      "full_value": 13,
+      "full_min_links": 12,
+      "global_gap": 1
+    },
+    {
+      "forks": 7,
+      "ordinary_value": 14,
+      "ordinary_min_links": 7,
+      "full_value": 15,
+      "full_min_links": 14,
+      "global_gap": 1
+    },
+    {
+      "forks": 8,
+      "ordinary_value": 16,
+      "ordinary_min_links": 8,
+      "full_value": 17,
+      "full_min_links": 16,
+      "global_gap": 1
+    },
+    {
+      "forks": 9,
+      "ordinary_value": 18,
+      "ordinary_min_links": 9,
+      "full_value": 19,
+      "full_min_links": 18,
+      "global_gap": 1
+    },
+    {
+      "forks": 10,
+      "ordinary_value": 20,
+      "ordinary_min_links": 10,
+      "full_value": 21,
+      "full_min_links": 20,
+      "global_gap": 1
+    },
+    {
+      "forks": 11,
+      "ordinary_value": 22,
+      "ordinary_min_links": 11,
+      "full_value": 23,
+      "full_min_links": 22,
+      "global_gap": 1
+    },
+    {
+      "forks": 12,
+      "ordinary_value": 24,
+      "ordinary_min_links": 12,
+      "full_value": 25,
+      "full_min_links": 24,
+      "global_gap": 1
+    }
+  ],
+  "old_fork_interval_swap_control": "PASS_twoForks_reuseReleasedIdentitiesInjectively",
+  "cost_scope_control": {
+    "ordinary_value": 2,
+    "ordinary_min_links": 0,
+    "beta_retaining_min_links": 1
+  },
+  "scope": "General exact fixed-arm deficit and two-owner tree proof written; beta-retaining full-replacement assignment cost only, not unrestricted mincost. Whole-network bound, optimal fork DAG and unique external-owner blocking injection tested on maximum-value minimum-link packings. Physical frozen copies checked in full and declared reserved interfaces; no unrestricted physical strict gain or general5of6 improvement claimed."
+}

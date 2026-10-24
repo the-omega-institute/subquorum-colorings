@@ -21,6 +21,13 @@ question without reusing a shared reserve.
 The 11 October submitted manuscript, public main and PR #3 merge state are
 unchanged. This is a research note, not an amendment of the submitted paper.
 
+**Later25 October refinement:** [exact fork deficiency and arm-gap exclusion](FORK_REPLACEMENT_DEFICIENCY.md)
+give fixed-arm ordinary value h+mu, a sharp Hall/tree defect, and necessary
+blocking/DAG structure for a minimum-link maximum packing. In particular a
+pre-beta arm gap with at least two available units excludes that fork from
+such an optimum. This does not exclude the feasible frozen fork constructed
+here or a multiunit gap witnessed only by its beta body.
+
 ## 1. Conventions and explicit board
 
 Use rows 0..15, columns 0..13 and the original bands(2b,2b+1), b=0..7.
