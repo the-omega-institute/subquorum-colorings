@@ -1,5 +1,11 @@
 # Two-slot terminal certificates: sufficient, sharp, and not necessary
 
+**Continuation:** [partial-certificate compensation and safe pruning](PARTIAL_TIP_COMPENSATION_AND_SAFE_PRUNING.md)
+shows that complete tip coverage is unnecessary: one unmatched TP per original
+interaction component still guarantees full ordinary compensation. It proves
+the exact component parity bound and safe mixed graph pruning; the concrete
+counterexample below retains one impossible alpha end even after that pruning.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Research branch only.
 
 The proposed endpoint assignment has a valid general implication: assigning

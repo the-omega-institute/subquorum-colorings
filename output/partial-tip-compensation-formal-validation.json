@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "machine": "local, authorized in this session",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_pressure_free_percent": 44,
+    "lean_lake_processes_by_comm_basename": 0,
+    "concurrency": 1
+  },
+  "command": "lean SubQuorum/PartialTipCompensation.lean",
+  "axiom_report": "'SubQuorum.PartialTipCompensation.distinct_slots_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.PartialTipCompensation.subset_hole_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.PartialTipCompensation.component_parity_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PartialTipCompensation.component_bound_le_global' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PartialTipCompensation.one_hole_per_component' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PartialTipCompensation.merging_two_odd_counts' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PartialTipCompensation.cancellation_payment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "scope": "Generic actual distinct slot-list cardinality bound for arbitrary resource types; partial two-end/hole inequality; list component parity and rounding; one-hole arithmetic; odd-count merge; exact cancellation-payment ledger. Hall existence, normalization, safe pruning and grid adapter remain written proof and independent controls, not fully Lean."
+}

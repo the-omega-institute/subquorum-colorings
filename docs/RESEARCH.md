@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [partial tip compensation and safe mixed pruning](PARTIAL_TIP_COMPENSATION_AND_SAFE_PRUNING.md)
+strengthens the two-slot test: a partial injective assignment leaves at most
+sum floor(h_C/2) unpaid alphas, counting holes separately in final-alpha
+components joined by original assigned intervals. Original interaction-component
+matching defects h_D similarly give sum min(a_D,floor(h_D/2)); one hole per
+component is harmless. The bound is sharp with two owners per original resource.
+Deleting mixed owners off all alpha-to-resource routes preserves ordinary/full
+payment and link optima, but the physical PP-sealed board still has one impossible
+alpha end after deletion. All q separated copies nevertheless have deficit zero
+by the new criterion. Written proofs, independent controls and scoped local Lean
+pass; general frozen geometry and the universal 5/6 improvement remain open.
+
 25 October: [two-slot sufficiency and a frozen internal Hall obstruction](FROZEN_TIP_SLOT_OBSTRUCTION.md)
 prove that a complete TP-to-BP/two-interval-slot assignment suffices for full
 ordinary whole-support compensation; three slots are already unsound. Complete
