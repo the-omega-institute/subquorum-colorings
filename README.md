@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [actual frozen support-tree rerooting](docs/FROZEN_SUPPORT_TREE_AND_FORCED_REROOT.md):
+a 12-by-18 grid with 46 completely frozen matching endpoints has two alpha
+owners sharing exactly one unmarked original interval, and one beta directly
+reachable by only one alpha. A specified maximum interval baseline therefore
+requires one old assignment change for full direct beta compensation.
+Disjoint stacking gives any number of simultaneous physical tree rerootings.
+An explicit mixed repair instead adds a new interval and keeps the old
+assignment; right blank padding releases two marked exits and removes the
+tree defect. Checks cover all 1,980 fixed terminal matchings, including 504
+nonsingleton positive reroot controls, eight isometries, sixteen stacks and
+sixteen padding controls. Thirteen new scoped Lean audits pass locally.
+Interior Hall obstructions and a universal grid bound remain open.
+
 New [joint support-tree / whole-beta compensation](docs/JOINT_TREE_BETA_COMPENSATION.md):
 after any fixed cancellation, match deficient interval trees to distinct whole
 virtual betas, then choose the unpaid tree roots at the witnessed beta links.

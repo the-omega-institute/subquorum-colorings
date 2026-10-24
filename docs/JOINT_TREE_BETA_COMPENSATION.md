@@ -26,6 +26,12 @@ establish a universal improvement of the grid's 5/6 bound.
 
 ## 1. Hypotheses and units
 
+Subsequent physical result: [a frozen two-vertex support tree](FROZEN_SUPPORT_TREE_AND_FORCED_REROOT.md)
+now realizes positive reroot cost at a specified maximum baseline, with an
+all-q disjoint physical stacking proof. It also exhibits a wider mixed repair
+and verifies that blank right padding releases its marked exits. The zero
+nonsingleton count in Section 6 describes this note's original controls only.
+
 Fix a valid horizontal cancellation matching C0. Its virtual strands have
 pairwise disjoint supports. Let A be its k virtual alpha strands and B its b
 virtual beta strands. Each **whole current beta** supplies one unit, regardless
