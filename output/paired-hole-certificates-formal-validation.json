@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "machine": "local; authorized in this session",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_pressure_free_percent": 42,
+    "lean_lake_processes_by_comm_basename": 0,
+    "concurrency": 1
+  },
+  "command": "lean SubQuorum/PairedHoleCertificates.lean",
+  "exit_code": 0,
+  "axioms": {
+    "connected_component_exact": "[propext, Classical.choice, Quot.sound]",
+    "budget_counts_two_hole_components": "[propext, Quot.sound]",
+    "direct_join_does_not_increase": "[propext]",
+    "closing_mixed_does_not_increase": "[propext]",
+    "joins_with_unchanged_components": "[propext, Quot.sound]"
+  },
+  "scope": "Connected incidence arithmetic implies at most two holes and exact truncated deficit; budget counts two-hole components; admissible endpoint-type joins do not increase alpha count, with unchanged components. General graph classification, optimization completeness, greedy termination and all-parameter physical construction remain written proofs and finite checks. No new external review obtained."
+}

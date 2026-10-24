@@ -1,5 +1,11 @@
 # Partial terminal certificates: component parity and safe mixed pruning
 
+Continuation: [paired holes and certificate optimization](PAIRED_HOLES_AND_CERTIFICATE_OPTIMIZATION.md)
+proves the fine certificate budget is exact and every assigned-incidence
+component has at most two holes. It gives an unbounded unique-maximum
+abstract trap and a fully frozen paired-hole example with bad and repaired
+maximum certificates after safe pruning.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Research branch only.
 
 The [two-slot certificate](FROZEN_TIP_SLOT_OBSTRUCTION.md) need not cover

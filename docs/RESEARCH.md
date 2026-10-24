@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [paired holes and certificate optimization](PAIRED_HOLES_AND_CERTIFICATE_OPTIMIZATION.md)
+make the fine partial-certificate budget exact: each assigned-incidence component
+has at most two holes and loses one payment exactly when it has two. Minimizing
+this budget over all partial certificates equals the ordinary compensation
+deficit; direct unused-target additions preserve an optimum. Maximum cardinality
+does not: a unique-maximum abstract trap has an unbounded copywise payment loss.
+A completely frozen mirrored 10x30 board has two holes in one interaction
+component even after safe pruning, with both bad and repaired maximum
+certificates. Reassigning one slot to a distinct original interval repairs the
+bad certificate at unchanged links and coverage; restricting both resource and
+link pools creates a real restricted deficit, while full original beta links
+still pay both alphas. General written proofs, 80 physical systems and scoped
+Lean pass; the universal 5/6 bound is not improved.
+
 25 October: [partial tip compensation and safe mixed pruning](PARTIAL_TIP_COMPENSATION_AND_SAFE_PRUNING.md)
 strengthens the two-slot test: a partial injective assignment leaves at most
 sum floor(h_C/2) unpaid alphas, counting holes separately in final-alpha
