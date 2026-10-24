@@ -330,4 +330,13 @@ terminal-only full-gap completeness is automatic. The terminal-only
 automatic cut implication is now ruled out; the universal grid bound and
 5/6 improvement remain open.
 
+Reproduce the finite checks and scoped kernel audit from the research root:
+
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_boundary_sealed_gap_obstruction.py --output output/boundary-sealed-gap-validation.json
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_boundary_sealed_gap_formal.py --lean ~/.elan/bin/lean --output output/boundary-sealed-gap-lean-validation.json
+
+The second command explicitly selects the local Lean executable, measures
+memory and real Lean/Lake processes, builds only the one imported core/Omega
+dependency and checks the new module sequentially. It adds no CI dependency.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
