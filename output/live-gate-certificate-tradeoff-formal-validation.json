@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "command": "lean SubQuorum/LiveGateCertificateTradeoff.lean",
+  "exit_code": 0,
+  "lean_version": "Lean 4.33.0, arm64-apple-darwin24.6.0",
+  "machine": "local; authorized in this session",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_pressure_free_percent": 39,
+    "active_lean_lake_by_comm_basename": 0,
+    "concurrency": 1
+  },
+  "axioms": {
+    "local_matching_capacity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "local_group_capacity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "unique_gate_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "global_assignment_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "frontier_upper_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "every_maximum_pays_at_most_one": [
+      "propext",
+      "Quot.sound"
+    ],
+    "full_payment_cardinality_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_frontier_arithmetic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "full_payment_exact_gap": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Nine declarations: actual legal local three-edge matching capacity; summation over arbitrary local groups; injection into one original gate; global assignment and frontier bounds; every maximum pays at most one; full-payment maximum size; exact frontier/gap arithmetic. Directed tree tracing, packing adapter, constructive attainability and physical extension survey remain written proofs and finite checks. No frozen realization or new external review."
+}

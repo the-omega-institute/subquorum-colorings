@@ -1,5 +1,12 @@
 # Paired holes: exact certificate deficit and maximum-matching traps
 
+Continuation: [the all-live shared-gate tradeoff](LIVE_GATE_CERTIFICATE_TRADEOFF.md)
+resolves the remaining ABSTRACT existence question negatively: even after
+safe pruning, every maximum certificate can lose q-1 payments, at terminal
+degree two. It proves the exact coverage/payment frontier. Frozen realization
+remains open; 576 existing physical systems have explicit optimum maximum
+certificates.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Research branch only.
 
 The [partial-certificate theorem](PARTIAL_TIP_COMPENSATION_AND_SAFE_PRUNING.md)
@@ -300,3 +307,6 @@ all legitimate distinct interval substitutions and productive mixed routes,
 with earlier reservations fixed. A bad maximum matching alone cannot supply
 that obstruction. Whether safely pruned physical systems always have SOME
 maximum certificate attaining the ordinary optimum also remains open here.
+
+The continuation linked above settles this question for general safely pruned
+abstract systems; the frozen-grid restriction is still open.

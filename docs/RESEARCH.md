@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [all-live shared-gate certificate tradeoff](LIVE_GATE_CERTIFICATE_TRADEOFF.md)
+settles the abstract maximum-certificate question even after safe pruning.
+Any two full binary merge/split trees sharing one mixed root give q alpha
+sources, all mixed owners live and terminal degree at most two. Every maximum
+certificate has 4q-2 assignments and pays only one alpha, whereas q direct
+beta links pay all q. The largest certificate paying at least p has exactly
+4q-1-p assignments; full payment must sacrifice q-1 assignments from maximum
+coverage. No frozen realization is claimed. On 576 existing actual frozen
+boards, explicit maximum certificates attain ordinary optimum. General written
+proofs, exhaustive named small cases and nine scoped Lean declarations pass;
+the universal geometric question and 5/6 bound remain open.
+
 25 October: [paired holes and certificate optimization](PAIRED_HOLES_AND_CERTIFICATE_OPTIMIZATION.md)
 make the fine partial-certificate budget exact: each assigned-incidence component
 has at most two holes and loses one payment exactly when it has two. Minimizing
