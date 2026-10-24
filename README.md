@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [actual whole-support donor collision and frozen PP seals](docs/WHOLE_SUPPORT_DONOR_COLLISION_AND_FROZEN_PP_SEALS.md):
+an all-even-height frozen family has two genuinely deficient whole-support
+components. Distinct legal mixed continuations each pay one separately, yet
+together expose the same original interval and pay only one (d=2,S=1).
+Adding the second route after the first also realizes d=1,S=0, gain0.
+Pure PP seals remove the old internal-support bypass; arbitrary blank right
+padding preserves the collision and separated stacks give residual defectq.
+Different lower original intervals repair all copies, with exact further-link
+costs and positive target margin. Checks pass84 boards/420 transitions/24
+stacks, plus10 new scoped Lean audits. Full mixed compensation and a universal
+5/6 improvement remain open; the submitted manuscript is unchanged.
+
 New [exact mixed-extension component reserves](docs/MIXED_SUPPORT_COMPONENT_MERGE_ACCOUNTING.md):
 for every monotone interval-incidence extension retaining at most two owners
 per original unit, each resulting component gains exactly min(d,S) payments,

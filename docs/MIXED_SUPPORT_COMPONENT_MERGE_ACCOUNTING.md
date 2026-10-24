@@ -2,6 +2,12 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
+Subsequent result: [frozen PP seals and actual whole-support collision](WHOLE_SUPPORT_DONOR_COLLISION_AND_FROZEN_PP_SEALS.md)
+now realize both d=2,S=1 and d=1,S=0 in the complete support interface,
+at every even height W>=8 and in arbitrary separated stacks. The finite
+zero-merge counts below describe this note's original controls only.
+
+
 An actual mixed extension can reach an interval already paying another alpha.
 That does not create a new unit: the unpaid root may merely move into the
 previously paid component. Two extensions can also reach the same previously
