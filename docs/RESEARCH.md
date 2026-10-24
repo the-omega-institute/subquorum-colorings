@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [protected singleton reserves](PROTECTED_SINGLETON_RESERVES.md)
+settles a positive completion class left by the sealed escape-cycle example.
+A fixed selected guard and three old matched neighbors force a private
+original BB singleton to survive every feasible monotone extension. For q
+such sources, ordinary/full-fork optima obey V=q+V_res and c=c_res, with
+source and resource removed together. A new frozen one-support variant has
+exact reservation cost r for any r reserved protected units. General written
+proofs, 26,568 value/cost comparisons, 13,061 independent primitive packs,
+160 physical extensions and three scoped Lean declarations pass. No claim
+that every fork has this reserve, or that 5/6 improves.
+
 25 October: [frozen beta-fork escape geometry](FROZEN_BETA_FORK_ESCAPE.md)
 proves a forced diagonal P, strict rank dependencies, an outward actual mate,
 and an injection of escape sites. A pure two-point escape cycle can serve at

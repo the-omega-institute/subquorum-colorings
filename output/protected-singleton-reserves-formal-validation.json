@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "command": "lean SubQuorum/ProtectedSingletonReserve.lean",
+  "exit_code": 0,
+  "machine": "local; authorized in this session",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_pressure_free_percent": 43,
+    "active_lean_lake_by_comm_basename": 0,
+    "concurrency": 1
+  },
+  "axioms": {
+    "retained_mate_excludes_blank": [],
+    "protected_singleton": [
+      "propext",
+      "Quot.sound"
+    ],
+    "private_choice_injective": []
+  },
+  "scope": "Actual integer-grid feasibility/mate-involution proof of both blank vertices, old-mate retention exclusion and private-choice injection. Original-strand/cycle persistence, exact ordinary/full-fork value/minimum-cost elimination, all-q sharp reservation family are written proofs and independent finite controls, not fully Lean. No general compensation or 5/6 improvement.",
+  "lean_version": "Lean 4.33.0, arm64-apple-darwin24.6.0"
+}

@@ -241,3 +241,13 @@ subtracting previously used original intervals. Site injection and even the
 stronger two-point-cycle owner bound alone do not provide this reserve.
 The universal compensation statement and 5/6 bound remain open. This research
 branch preserves the submitted 11 October version and makes no mail changes.
+
+## Positive completion, 25 October
+
+[Protected singleton reserves](PROTECTED_SINGLETON_RESERVES.md) proves that
+a different original unit beside the alpha's far tip cannot be sealed by
+any feasible extension retaining the old selections and actual matching.
+It is private to that source and can be eliminated with it at zero links.
+A sharpened frozen variant has exactly one alpha-support unit; reserving
+r such units across q copies has exact minimum link cost r, using distinct
+whole betas. This does not make the local escape cycle itself a resource.
