@@ -1,5 +1,12 @@
 # Exact fork replacement deficits and exclusion of wide arm gaps
 
+**Extension (25 October):** [joint allocation exchange and closed ordinary trees](FORK_ALLOCATION_EXCHANGE_AND_CLOSED_TREES.md)
+allows ordinary stems to change assignments, preserving all old paid ordinary
+sources and old used interval identities. Under the optimum and two-owner
+hypotheses its exact joint defect counts terminal forks, including ordinary
+intermediate dependencies. The fixed-assignment formulas below keep their
+stated scope and give upper bounds on this sharper defect.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 The [completely frozen beta fork](FROZEN_BETA_SUPPORT_FORK_AND_RESERVED_RESOURCE_GAIN.md)

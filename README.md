@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [joint allocation exchange and exact terminal-fork defects](docs/FORK_ALLOCATION_EXCHANGE_AND_CLOSED_TREES.md):
+ordinary interval assignments may reroute while preserving every old paid
+ordinary source and every old used interval identity. With h forks, m interval
+stems and joint matching number mu, the exact fixed-route ordinary value is
+t+h+mu. In a minimum-link maximum packing with two-owner supports, each
+terminal fork sees disjoint closed ordinary trees with one private entrance
+each, and the joint defect is exactly the number of terminal forks. An
+arbitrary-length abstract chain reduces the fixed-assignment defect q to 1.
+Selected-only shielding of the known C gap is impossible; inserting a matching
+edge instead creates an ordinary beta resource. Checks pass 714 exchanges,
+638 exact terminal-defect identities, 12 frozen lifts, the 68-endpoint insertion
+and 13 scoped local Lean audits. Full-network geometric sufficiency and a
+universal 5/6 improvement remain open.
+
 New [exact fork deficits and wide-arm-gap exclusion](docs/FORK_REPLACEMENT_DEFICIENCY.md):
 fixed fork arms have ordinary value h+mu=2h-delta, with delta the Hall defect;
 under two-owner supports delta counts deficient substitute trees. In a
