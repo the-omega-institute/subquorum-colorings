@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-22",
+  "status": "CONDITIONAL_REDUCTION_VERIFIED_GEOMETRIC_OBLIGATIONS_OPEN",
+  "note": "docs/COST_FOURTEEN_COMPENSATION_REDUCTION.md",
+  "established_written_coefficient": "35/37, independent review pending",
+  "candidate_coefficient": "37/39, conditional on shared physical injection and distinct negative long-leg injection",
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_cost_fourteen_reduction.py",
+    "exit_code": 0,
+    "terminal_chunk": "7bf164",
+    "incoming_dimension_triples": 29,
+    "anchored_roles": 348,
+    "Y_roles": {
+      "positive_dimensions": [8, 6, 8],
+      "left": 13,
+      "right": 9,
+      "distinct_owner_collisions": 116,
+      "common_inverted_owner": 1
+    },
+    "X_roles": {
+      "positive_dimensions": [8, 4, 10],
+      "left": 17,
+      "right": 31,
+      "distinct_owner_collisions": 512,
+      "long_negative_terminal_pairs": 15
+    },
+    "positive_dimensions": 2548,
+    "conditional_signed_budgets": 69120,
+    "negative_margin_budgets": 47952,
+    "new_complete_physical_realizations_claimed": false
+  },
+  "lean": {
+    "machine": "user-selected local Mac",
+    "version": "v4.33.0",
+    "source": "formal/SubQuorum/CostFourteenBudget.lean",
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/CostFourteenBudget.lean",
+    "final_session": 25675,
+    "terminal_chunk": "48be48",
+    "exit_code": 0,
+    "preflight_free_memory_percent": 52,
+    "preflight_real_lean_lake_processes": [],
+    "theorems": 6,
+    "individual_axiom_audits": 6,
+    "axioms": ["propext", "Classical.choice", "Quot.sound"],
+    "warnings_errors_sorry_native": false,
+    "scope": "Conditional scalar implications and original long-leg matching sizes only. Geometry and source-to-grid adapters are not formalized."
+  },
+  "independent_review": "No independent review of this candidate reduction yet; existing three live tasks preserved."
+}

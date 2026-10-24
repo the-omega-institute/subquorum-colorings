@@ -1,0 +1,148 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "exhaustive_models": 79758,
+  "examples": [
+    {
+      "name": "one_band_two_attachments",
+      "windows": [
+        [
+          0,
+          1
+        ]
+      ],
+      "doubled_demands": [
+        2
+      ],
+      "doubled_capacities": [
+        2,
+        0
+      ],
+      "doubled_flow": 2,
+      "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
+      "allocation_exists": true
+    },
+    {
+      "name": "two_bands_separate_donors",
+      "windows": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "doubled_demands": [
+        1,
+        1
+      ],
+      "doubled_capacities": [
+        1,
+        1
+      ],
+      "doubled_flow": 2,
+      "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
+      "allocation_exists": true
+    },
+    {
+      "name": "two_half_demands_share_one_donor",
+      "windows": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "doubled_demands": [
+        1,
+        1
+      ],
+      "doubled_capacities": [
+        2
+      ],
+      "doubled_flow": 2,
+      "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
+      "allocation_exists": true
+    },
+    {
+      "name": "shared_donor_reused_without_union_check",
+      "windows": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "doubled_demands": [
+        2,
+        2
+      ],
+      "doubled_capacities": [
+        2
+      ],
+      "doubled_flow": 2,
+      "doubled_shortfall": 2,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 2,
+      "allocation_exists": false
+    },
+    {
+      "name": "shortage_paid_by_remainder",
+      "windows": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "doubled_demands": [
+        2,
+        2
+      ],
+      "doubled_capacities": [
+        2
+      ],
+      "doubled_flow": 2,
+      "doubled_shortfall": 2,
+      "doubled_remainder": -2,
+      "doubled_ledger_upper_bound": 0,
+      "allocation_exists": false
+    },
+    {
+      "name": "nested_windows_with_enough_outer_capacity",
+      "windows": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "doubled_demands": [
+        2,
+        2
+      ],
+      "doubled_capacities": [
+        2,
+        2,
+        2
+      ],
+      "doubled_flow": 4,
+      "doubled_shortfall": 0,
+      "doubled_remainder": 0,
+      "doubled_ledger_upper_bound": 0,
+      "allocation_exists": true
+    }
+  ],
+  "scope": "Half-integral attachment allocation only; no geometric incidence claim.",
+  "script_sha256": "8bd9f588b04cfc9c116279ff6c26968b6cbf2104a414b8ca08d98f0b18f6fd01"
+}

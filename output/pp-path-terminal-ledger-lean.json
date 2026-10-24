@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "machine": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "command": "lean --stdin < formal/SubQuorum/PPPathTerminalLedger.lean",
+  "preflight": {
+    "chunk": "e588ea",
+    "memory_free_percent": 43,
+    "active_lean_lake_basename_check": "none"
+  },
+  "execution": {
+    "session_id": 28961,
+    "result_chunk": "8e5045",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "theorems": 17,
+  "individual_axiom_audits": [
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.tp_terminal_inventory",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.bp_terminal_inventory",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.external_terminal_inventory",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.exact_path_debit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.arbitrary_pp_chain_size",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.exact_column_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.exact_packet_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.exact_target_equivalence",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.closed_packet_no_tp_pairs",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.closed_packet_owned_reserve",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.external_external_has_zero_debit",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.neutral_path_and_loop_partition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.neutral_backward_connector",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.neutral_connector_changes_column_parity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.exact_margin_after_one_tp_path",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.alternate_phase_balance_shift",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.PPPathTerminalLedger.alternate_phase_closed_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Arbitrary finite classified path inventories and arbitrary PP-chain size; exact column/path ledger arithmetic, reserve equivalence, conditional bounds, neutral backward/parity/count and alternate-phase arithmetic. Actual grid-to-multigraph classification, uniqueness/ownership adapter and geometry are written proofs.",
+  "sorry": false,
+  "native_evaluation": false
+}

@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_EXACT_SETS_AND_SCOPED_LEAN_INDEPENDENT_REVIEW_SUBMITTED",
+  "proof": "docs/TEN_ROW_GATE_OWNER_COMPENSATION.md",
+  "verifier": "develop/check_ten_row_gate_compensation.py",
+  "theorem": "Explicit full-even-U/standard-rotor complete-extension model. One outer U(W+2,D,F) contains n>=2 coextensive U(W,4,4) at even bar rows a+10i, walls cover all tips. Actual owners of BOTH axial gates per gap belong to exhaustive D_b/U_b/V_b/H/L list. Shared spanning U counts once. Exact per-gap joint marginal>=4, or>=5 atW6. Selected baseline+owners Phi>=3(n-1), or>=4(n-1) atW6. No cross-gap owner/tile/event/surplus reuse.",
+  "python": {
+    "session": 84755,
+    "exit_code": 0,
+    "U_roles": 7500,
+    "rotor_roles": 80,
+    "normalized_U_records": 34,
+    "joint_choices_by_width": {
+      "6": 2,
+      "8": 6,
+      "10": 18,
+      "12": 39,
+      "14": 69,
+      "20": 213,
+      "30": 633
+    },
+    "joint_choices_total": 980,
+    "mixed_batches": 384,
+    "large_controls": [
+      {
+        "width": 100,
+        "gaps": 11,
+        "shared_spanning_owners": 11,
+        "Phi": 44
+      },
+      {
+        "width": 2000,
+        "gaps": 11,
+        "shared_spanning_owners": 11,
+        "Phi": 44
+      }
+    ],
+    "scope": "Full immutable T/H/M records; all sampled orientations/endpoint roles; exact source-labelled single receipts; shared-owner identity; distinct-owner packing iff; all25 tight type pairs; exact common-baseline across-gap receipt partitions; even translations. Finite controls, not general proof or complete-extension witnesses."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/TenRowGateCompensation.lean",
+    "version": "4.33.0",
+    "session": 95784,
+    "exit_code": 0,
+    "explicit_audited_abbrev_def_theorem": 27,
+    "local_theorems": 19,
+    "preflight_memory_free_percent": 46,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "All explicit abbrev/def/theorem declarations audited individually; propext/Quot.sound only or axiom-free. No warnings, sorry or native_decide.",
+    "scope": "Depth/breadth constraints; exact single receipt algebra; exhaustive five-mode joint budget; U/U and U/rotor overlap geometry; explicit four width-six rotor collisions; cross-gap owner/tile row separation; list-sum simultaneous bound. Full source-role adapters, geometric receipt table and complete-extension selection are WRITTEN."
+  },
+  "predecessor_review": {
+    "task_id": "da0dcf4e-7214-4c46-bd46-1749adde75db",
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_session": 89055,
+    "exit_code": 0,
+    "response_chars": 18509,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/all-width-nested-seed-review-terminal.json",
+    "scope": "Previous spacing-eight all-width exclusion and far-offset addendum only, NOT this new spacing-ten theorem or earlier spacing-six corollary."
+  },
+  "review": {
+    "original_stream_session": 71332,
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "request": "output/ten-row-gate-compensation-review-request.json",
+    "status": "COMPLETED_ACCEPT",
+    "scope": "Written audit of original spacing10 exhaustive classification/shared-owner/packing/exact receipts/tight corrections/common-baseline nonreuse, plus gap6/minimum10 spacing corollary. Did not run Python/Lean. Subsequent lowerL exclusion, stronger all-width bound, density/residual and general even-gap theorem NOT included.",
+    "task_id": "911ea32a-c561-423c-aaae-7964d86cc45f",
+    "exit_code": 0,
+    "DONE": true,
+    "exact_terminal_response_match": true,
+    "response_chars": 18842,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "receipt": "output/ten-row-gate-compensation-review-terminal.json"
+  },
+  "limitations": "Selected baseline inventory only. No complete-extension existence, arbitrary extra old baseline, nonnegative marginal for unselected extension originals, universal original-source classification, global5/6 improvement or rectangular-grid triple equality. Partial equality is not complete-family sharpness.",
+  "post_submission_addendum": {
+    "proof": "docs/TEN_ROW_LOWER_ROTOR_OBSTRUCTION.md",
+    "validation": "output/ten-row-lower-rotor-obstruction-validation.json",
+    "status": "PASS_LOCAL_NOT_IN_INITIAL_71332_PACKET",
+    "claim": "Three-original vertical-gate obstruction excludes L; actualjoint>=5 ALLwidths, selectedPhi>=4g. Nonuniformm gaps10 gives>=5m-g. Explicit wider-gap partial extension hasPhi4-r, refuting endpoint-only monotonicity, not complete-family target."
+  }
+}

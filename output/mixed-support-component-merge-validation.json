@@ -1,0 +1,275 @@
+{
+  "status": "PASS",
+  "totals": {
+    "post_component_identities": 23302,
+    "multiple_deficient_merge_controls": 1862,
+    "shared_reserve_loss_controls": 428,
+    "tight_paid_component_transfer_controls": 575,
+    "monotone_extension_models": 13265,
+    "positive_payment_gain_models": 9007,
+    "noncanonical_maximum_baseline_controls": 357,
+    "physical_whole_support_nonsingleton_merge_clusters": 0,
+    "physical_mixed_batch_controls": 4005,
+    "physical_terminal_cap_merge_transitions": 85
+  },
+  "examples": [
+    {
+      "kind": "abstract",
+      "old": {
+        "0": []
+      },
+      "new": {
+        "0": [
+          0,
+          1
+        ]
+      },
+      "gain": 1,
+      "old_defect": 2,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 2,
+          "old_deficient": 2,
+          "old_unused": 1,
+          "activated_loose": 1,
+          "post_defect": 1,
+          "payment_gain": 1,
+          "owners": [
+            0,
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "0": 0
+      }
+    },
+    {
+      "kind": "abstract",
+      "old": {
+        "0": [
+          1
+        ]
+      },
+      "new": {
+        "0": [
+          0,
+          1
+        ]
+      },
+      "gain": 0,
+      "old_defect": 1,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 2,
+          "old_deficient": 1,
+          "old_unused": 0,
+          "activated_loose": 0,
+          "post_defect": 1,
+          "payment_gain": 0,
+          "owners": [
+            0,
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "1": 0
+      }
+    },
+    {
+      "kind": "abstract",
+      "old": {
+        "0": [
+          1
+        ],
+        "1": [
+          1
+        ]
+      },
+      "new": {
+        "0": [
+          0,
+          1
+        ],
+        "1": [
+          1
+        ]
+      },
+      "gain": 1,
+      "old_defect": 1,
+      "new_defect": 0,
+      "clusters": [
+        {
+          "old_components": 2,
+          "old_deficient": 1,
+          "old_unused": 1,
+          "activated_loose": 0,
+          "post_defect": 0,
+          "payment_gain": 1,
+          "owners": [
+            0,
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "1": 1,
+        "0": 0
+      }
+    },
+    {
+      "kind": "archived-physical-terminal-cap",
+      "width": 8,
+      "before": "initial",
+      "after": "left",
+      "gain": 1,
+      "old_defect": 2,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 1,
+          "old_deficient": 1,
+          "old_unused": 1,
+          "activated_loose": 1,
+          "post_defect": 0,
+          "payment_gain": 1,
+          "owners": [
+            0
+          ]
+        },
+        {
+          "old_components": 1,
+          "old_deficient": 1,
+          "old_unused": 0,
+          "activated_loose": 0,
+          "post_defect": 1,
+          "payment_gain": 0,
+          "owners": [
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "0": 2
+      }
+    },
+    {
+      "kind": "archived-physical-terminal-cap",
+      "width": 8,
+      "before": "initial",
+      "after": "right",
+      "gain": 1,
+      "old_defect": 2,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 1,
+          "old_deficient": 1,
+          "old_unused": 0,
+          "activated_loose": 0,
+          "post_defect": 1,
+          "payment_gain": 0,
+          "owners": [
+            0
+          ]
+        },
+        {
+          "old_components": 1,
+          "old_deficient": 1,
+          "old_unused": 1,
+          "activated_loose": 1,
+          "post_defect": 0,
+          "payment_gain": 1,
+          "owners": [
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "1": 2
+      }
+    },
+    {
+      "kind": "archived-physical-terminal-cap",
+      "width": 8,
+      "before": "initial",
+      "after": "both",
+      "gain": 1,
+      "old_defect": 2,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 2,
+          "old_deficient": 2,
+          "old_unused": 1,
+          "activated_loose": 1,
+          "post_defect": 1,
+          "payment_gain": 1,
+          "owners": [
+            0,
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "0": 2
+      }
+    },
+    {
+      "kind": "archived-physical-terminal-cap",
+      "width": 8,
+      "before": "left",
+      "after": "both",
+      "gain": 0,
+      "old_defect": 1,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 2,
+          "old_deficient": 1,
+          "old_unused": 0,
+          "activated_loose": 0,
+          "post_defect": 1,
+          "payment_gain": 0,
+          "owners": [
+            0,
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "0": 2
+      }
+    },
+    {
+      "kind": "archived-physical-terminal-cap",
+      "width": 8,
+      "before": "right",
+      "after": "both",
+      "gain": 0,
+      "old_defect": 1,
+      "new_defect": 1,
+      "clusters": [
+        {
+          "old_components": 2,
+          "old_deficient": 1,
+          "old_unused": 0,
+          "activated_loose": 0,
+          "post_defect": 1,
+          "payment_gain": 0,
+          "owners": [
+            0,
+            1
+          ]
+        }
+      ],
+      "extended": {
+        "1": 2
+      }
+    }
+  ],
+  "scope": "All finite monotone incidence extensions with <=2 owners per original unit: post-component gain=min(oldDeficientTrees,oldUnusedOriginalUnitsInCluster); maximum old paid-owner set and used-unit set can be preserved by augmentation. Physical legal mixed-only batches checked with stable alpha IDs; archived terminal-cap collision supplies nontrivial merge controls, while these whole-support batches have no cross-component merges. Written general proof, not enumeration, establishes the theorem; counting whole-support access is not asserted to equal terminal route access."
+}

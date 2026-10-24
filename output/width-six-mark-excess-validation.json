@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-22",
+  "status": "WRITTEN_UNMARKED_CORE_PROOF_SCOPED_CHECKS_PASS_INDEPENDENT_REVIEW_ACCEPTED",
+  "note": "docs/WIDTH_SIX_CORE_UNMARKED_AND_EXTERIOR_MARK_EXCESS.md",
+  "hypotheses": "Canonical full-even-U/standard-rotor immutable model; complete retained nested core W6, every gap10, even a_i, finite even outer D,F>=a_g+4; accepted complete chamber classification and existing source-to-grid ledger explicitly assumed. Established dual guard has exactly two sides; occupied witness is endpoint or retained original support, consumed supports are endpoints; arbitrary additional occupied selections adjacent to protectors are excluded.",
+  "claims": {
+    "geometry": "All old B_i for i<g and positive chamber U6 sources are unmarked; only last B_g and exterior positives contribute actual marks.",
+    "exact": "G=h+N1+2N2; sigma>=4g+2d+2-h+N0-N2, 0<=h<=2.",
+    "sufficient": "N2<=N0+4g+2d implies |T_sel|+|M|<=mn/2.",
+    "scope": "No unrestricted grid decomposition or universal coefficient-one theorem. Existing singleton-flow credits are not spent a second time."
+  },
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_width_six_actual_mark_excess.py",
+    "exit_code": 0,
+    "original_session": 47212,
+    "terminal_chunk": "bfebd0",
+    "controls": "output/width-six-actual-mark-excess-controls.json",
+    "source_side_reconstructions": 40,
+    "complete_physical_images": 640,
+    "whole_complete_families": 150,
+    "qualifying": 143,
+    "beyond_previous_Pout_le_4d": 73,
+    "beyond_coarse_G_le_N": 16,
+    "singly_marked_positive_occurrences": 0,
+    "limitation": "Original640physical/150whole-family controls have no singly marked positive. Later20whole-family controls have90singly-marked exterior occurrences.",
+    "supplemental_single_mark_families": {
+      "complete_families": 20,
+      "singly_marked_exterior_occurrences": 90,
+      "witness": {
+        "gaps": 0,
+        "downward": 0,
+        "blocks": 10,
+        "positive_out": 31,
+        "unmarked": 11,
+        "single_marked": 10,
+        "double_marked": 10,
+        "Phi": 225,
+        "actual_marks": 30,
+        "certified_slack": 3,
+        "exact_Phi_minus_marks": 195
+      },
+      "scope": "Additional complete families exercise N1 nonvacuously, outside the submitted review input.",
+      "original_session": 74679,
+      "terminal_chunk": "47b580",
+      "exit_code": 0
+    }
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WidthSixMarkExcess.lean",
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/WidthSixMarkExcess.lean",
+    "location": "user-selected local Mac",
+    "memory_free_percent": 58,
+    "active_real_lean_lake_before": 0,
+    "exit_code": 0,
+    "original_session": 78437,
+    "terminal_chunk": "33e4d1",
+    "theorems": 13,
+    "individual_declaration_axiom_audits": 17,
+    "warnings": 0,
+    "errors": 0,
+    "sorryAx": false,
+    "native_decide": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Coordinate witness exclusions and conditional marked-slack arithmetic; source normalization, chamber localization/classification and source-to-grid adapter remain written/dependencies."
+  },
+  "independent_review": {
+    "task_id": "7fd0661d-40ab-4c29-893f-0e32f98fb5f8",
+    "conversation_id": "conv_4d5ca236606b7743",
+    "status": "COMPLETED_ACCEPT_UNDER_EXPLICIT_DEPENDENCIES",
+    "original_stream_session": 59944,
+    "request": "output/width-six-mark-excess-final-review-request.json",
+    "stream": "output/width-six-mark-excess-final-review-stream.sse",
+    "scope": "New unmarked-core geometry and original actual-mark theorem. Later supplemental single-mark fixtures were added after this review input.",
+    "previous_failed_task": "e748b41d-22d2-4c00-aa1a-c66f4bf3e2b3",
+    "previous_failure": "infrastructure_retry_exhausted/cdp_disconnected@typing",
+    "previous_terminal": "output/width-six-mark-excess-review-failed-terminal.json",
+    "receipt": "output/35-37-and-mark-excess-independent-reviews.json",
+    "prompt_matches_session": true,
+    "response_matches_stream_and_session": true,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "reviewer_executed_code_or_lean": false
+  }
+}

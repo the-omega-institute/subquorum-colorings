@@ -1,0 +1,393 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_minimum_mixed_controls": 1550,
+    "tip_subset_controls": 1550,
+    "surplus_row_components": 271,
+    "weighted_owner_hall_controls": 1047,
+    "optimized_beta_deficit_controls": 400,
+    "complete_beta_only_class_controls": 273,
+    "nonempty_complete_beta_only_controls": 9,
+    "frozen_geometries": 859,
+    "forks": 18,
+    "carried_physical_geometries": 480
+  },
+  "unported_fixture": {
+    "missing": [
+      [
+        3,
+        6
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        10,
+        11
+      ]
+    ],
+    "targets": [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        10,
+        12
+      ]
+    ],
+    "c": 3,
+    "q": 3,
+    "c_m": 3,
+    "minimum_mixed": 0,
+    "assignment": [
+      [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      [
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      [
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      [
+        [
+          10,
+          11
+        ],
+        [
+          10,
+          10
+        ]
+      ]
+    ],
+    "row_components": [
+      {
+        "alpha_tips": [
+          [
+            3,
+            6
+          ]
+        ],
+        "bp_tips": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "owners": [
+          0,
+          2
+        ],
+        "surplus": 1
+      },
+      {
+        "alpha_tips": [
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            11
+          ]
+        ],
+        "bp_tips": [
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "owners": [
+          2,
+          3,
+          5
+        ],
+        "surplus": 1
+      },
+      {
+        "alpha_tips": [
+          [
+            10,
+            11
+          ]
+        ],
+        "bp_tips": [
+          [
+            10,
+            10
+          ],
+          [
+            10,
+            12
+          ]
+        ],
+        "owners": [
+          8,
+          9
+        ],
+        "surplus": 1
+      }
+    ],
+    "optimized_beta_payments": 2,
+    "beta_only_certificate": {
+      "alpha": 2,
+      "beta": 5,
+      "distinct_beta_owners": [
+        2,
+        5
+      ],
+      "links": [
+        [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        [
+          [
+            5,
+            11
+          ],
+          [
+            5,
+            12
+          ]
+        ]
+      ],
+      "compensation": 2,
+      "remaining_alpha": 0
+    }
+  },
+  "shared_beta_fixture": {
+    "missing": [
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        11
+      ]
+    ],
+    "targets": [
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ]
+    ],
+    "c": 1,
+    "q": 0,
+    "c_m": 0,
+    "minimum_mixed": 0,
+    "assignment": [
+      [
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      [
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          12
+        ]
+      ]
+    ],
+    "row_components": [
+      {
+        "alpha_tips": [
+          [
+            5,
+            9
+          ],
+          [
+            5,
+            11
+          ]
+        ],
+        "bp_tips": [
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "owners": [
+          2,
+          3,
+          0
+        ],
+        "surplus": 1
+      }
+    ],
+    "exchange_replay": {
+      "full_value": 2,
+      "protected_value": 2,
+      "used_exchange_gates": 0
+    }
+  },
+  "nonfrozen_control": {
+    "shape": [
+      8,
+      8
+    ],
+    "selected": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "matching": [
+      [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    ],
+    "blocked": [
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ]
+    ],
+    "frozen": [
+      [
+        3,
+        2
+      ]
+    ],
+    "scope": "Feasible degree-three fork with outer T; not fully frozen. Not a target-bound counterexample."
+  },
+  "scope": "Written general fork exclusion and exact missing-tip row surplus; finite geometry and independent minimum-cost injection controls. No universal grid bound or route coverage claimed."
+}

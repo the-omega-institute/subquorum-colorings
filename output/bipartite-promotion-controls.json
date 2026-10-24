@@ -1,0 +1,173 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "exhaustive": {
+    "graphs": 512,
+    "graph_matching_pairs": 5504,
+    "feasible_configurations": 55924,
+    "oriented_choices": 169048,
+    "feasible_choices": 162136,
+    "terminal_configurations": 23419,
+    "maximum_freeze_layers": 1
+  },
+  "physical": [
+    {
+      "shape": [
+        8,
+        8
+      ],
+      "matching_edges": 4,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 81,
+      "feasible_choices": 1,
+      "frozen": 8,
+      "layers": 2,
+      "terminal": true,
+      "available": [
+        0,
+        0
+      ]
+    },
+    {
+      "shape": [
+        14,
+        8
+      ],
+      "matching_edges": 8,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 6561,
+      "feasible_choices": 1,
+      "frozen": 16,
+      "layers": 2,
+      "terminal": true,
+      "available": [
+        0,
+        0
+      ]
+    },
+    {
+      "shape": [
+        8,
+        8
+      ],
+      "matching_edges": 13,
+      "all_orientations_enumerated": false,
+      "oriented_choices": null,
+      "feasible_choices": null,
+      "frozen": 1,
+      "layers": 1,
+      "terminal": false,
+      "available": [
+        13,
+        12
+      ]
+    },
+    {
+      "shape": [
+        8,
+        8
+      ],
+      "matching_edges": 4,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 81,
+      "feasible_choices": 1,
+      "frozen": 8,
+      "layers": 2,
+      "terminal": true,
+      "available": [
+        0,
+        0
+      ]
+    },
+    {
+      "shape": [
+        8,
+        8
+      ],
+      "matching_edges": 4,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 81,
+      "feasible_choices": 1,
+      "frozen": 8,
+      "layers": 2,
+      "terminal": true,
+      "available": [
+        0,
+        0
+      ]
+    },
+    {
+      "shape": [
+        6,
+        8
+      ],
+      "matching_edges": 5,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 243,
+      "feasible_choices": 4,
+      "frozen": 6,
+      "layers": 3,
+      "terminal": false,
+      "available": [
+        2,
+        2
+      ]
+    },
+    {
+      "shape": [
+        6,
+        10
+      ],
+      "matching_edges": 7,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 2187,
+      "feasible_choices": 6,
+      "frozen": 8,
+      "layers": 5,
+      "terminal": false,
+      "available": [
+        4,
+        2
+      ]
+    },
+    {
+      "shape": [
+        6,
+        10
+      ],
+      "matching_edges": 7,
+      "all_orientations_enumerated": true,
+      "oriented_choices": 2187,
+      "feasible_choices": 6,
+      "frozen": 8,
+      "layers": 5,
+      "terminal": false,
+      "available": [
+        2,
+        4
+      ]
+    }
+  ],
+  "nonbipartite_obstacle": {
+    "graph": "K6",
+    "matching": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "selected": [],
+    "frozen": [],
+    "nonempty_oriented_bundles": 26,
+    "feasible_nonempty_bundles": 0,
+    "conclusion": "Bipartiteness is essential: empty freeze closure need not imply a promotion in a general graph."
+  },
+  "scope": "All bipartite graphs with labeled parts of size three, every matching and feasible selected subset; all oriented bundles including empty. Graph-level general proof is independent of these finite checks."
+}

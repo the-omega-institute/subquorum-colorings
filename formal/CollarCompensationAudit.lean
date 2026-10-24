@@ -1,0 +1,171 @@
+import SubQuorum.CollarCompensation
+import SubQuorum.AttachmentCollarCompensation
+import SubQuorum.BlankWitnessCompensation
+import SubQuorum.DiagonalWitnessChains
+import SubQuorum.MixedPChainCompensation
+import SubQuorum.FrozenPromotion
+import SubQuorum.OwnedDonorCompensation
+import SubQuorum.SingleSquareObstacle
+import SubQuorum.LadderReduction
+import SubQuorum.CompatibleBundles
+import SubQuorum.BipartitePromotion
+import SubQuorum.ComponentReceivers
+import SubQuorum.ThinComponents
+import SubQuorum.BentReceiverCompensation
+import SubQuorum.LongBentTerminalStrips
+import SubQuorum.CombEndFlux
+import SubQuorum.ParallelCombFlux
+import SubQuorum.OrthogonalMouthFlux
+import SubQuorum.AdaptiveStripCompensation
+import SubQuorum.CapacityAwareStrips
+import SubQuorum.RemoteCombRungs
+import SubQuorum.ClosedSourceCavities
+import SubQuorum.MixedCavitySources
+import SubQuorum.OpenSourceCavities
+import SubQuorum.CombChannels
+import SubQuorum.ElbowSources
+import SubQuorum.GuardedSteppedArms
+import SubQuorum.SteppedPatchIsolation
+import SubQuorum.FrozenRailElbows
+
+#print axioms SubQuorum.CollarCompensation.pressured_tile
+#print axioms SubQuorum.CollarCompensation.terminal_tile
+#print axioms SubQuorum.CollarCompensation.disjoint_tile_surplus
+#print axioms SubQuorum.CollarCompensation.collar_parity_charge
+#print axioms SubQuorum.CollarCompensation.aggregate_source_compensation
+#print axioms SubQuorum.CollarCompensation.compensated_core_nonpositive
+#print axioms SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile
+#print axioms SubQuorum.AttachmentCollarCompensation.saturated_endpoints
+#print axioms SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge
+#print axioms SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation
+#print axioms SubQuorum.BlankWitnessCompensation.corner_two_exterior_faces
+#print axioms SubQuorum.BlankWitnessCompensation.shared_blank_ledger
+#print axioms SubQuorum.BlankWitnessCompensation.shared_blank_source_compensation
+#print axioms SubQuorum.BlankWitnessCompensation.two_witness_payment
+#print axioms SubQuorum.BlankWitnessCompensation.paid_attachment_parity
+#print axioms SubQuorum.DiagonalWitnessChains.shared_corner_displacement
+#print axioms SubQuorum.DiagonalWitnessChains.orientation_propagation
+#print axioms SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks
+#print axioms SubQuorum.DiagonalWitnessChains.double_link_charge
+#print axioms SubQuorum.MixedPChainCompensation.blank_exterior_gap
+#print axioms SubQuorum.MixedPChainCompensation.occupied_exterior_gap
+#print axioms SubQuorum.MixedPChainCompensation.transition_charge
+#print axioms SubQuorum.FrozenPromotion.frozen_exclusion
+#print axioms SubQuorum.OwnedDonorCompensation.face_pair_exclusion
+#print axioms SubQuorum.OwnedDonorCompensation.pinwheel_incidence
+#print axioms SubQuorum.OwnedDonorCompensation.central_matching_patterns
+#print axioms SubQuorum.OwnedDonorCompensation.central_parity_ledger
+#print axioms SubQuorum.OwnedDonorCompensation.turn_forces_square
+#print axioms SubQuorum.OwnedDonorCompensation.branch_forces_square
+#print axioms SubQuorum.OwnedDonorCompensation.two_side_supports_impossible
+#print axioms SubQuorum.OwnedDonorCompensation.frozen_chain
+#print axioms SubQuorum.OwnedDonorCompensation.single_endpoint_donor_unique
+#print axioms SubQuorum.OwnedDonorCompensation.owned_donor_budget
+#print axioms SubQuorum.OwnedDonorCompensation.owned_aggregate
+#print axioms SubQuorum.SingleSquareObstacle.valid_matching
+#print axioms SubQuorum.SingleSquareObstacle.feasible_selected
+#print axioms SubQuorum.SingleSquareObstacle.endpoint_terminal
+#print axioms SubQuorum.SingleSquareObstacle.unique_square
+#print axioms SubQuorum.SingleSquareObstacle.neutral_tiles
+#print axioms SubQuorum.SingleSquareObstacle.exact_objective
+#print axioms SubQuorum.SingleSquareObstacle.all_frozen
+#print axioms SubQuorum.LadderReduction.promoted_unique_neighbor
+#print axioms SubQuorum.LadderReduction.width_three_failure
+#print axioms SubQuorum.LadderReduction.mixed_promoted_unique_neighbor
+#print axioms SubQuorum.CompatibleBundles.compatible_union_feasible
+#print axioms SubQuorum.CompatibleBundles.compatible_union_keeps_promoted
+#print axioms SubQuorum.CompatibleBundles.occupied_contact_owner_unique
+#print axioms SubQuorum.CompatibleBundles.upper_lower_equivalence
+#print axioms SubQuorum.CompatibleBundles.lower_prefix
+#print axioms SubQuorum.CompatibleBundles.blank_block_exists
+#print axioms SubQuorum.CompatibleBundles.sharp_three_full_promotion_impossible
+#print axioms SubQuorum.BipartitePromotion.neighbor_mate_color
+#print axioms SubQuorum.BipartitePromotion.fixed_neighbors_unique
+#print axioms SubQuorum.BipartitePromotion.available_neighbor_fixed
+#print axioms SubQuorum.BipartitePromotion.available_bundle
+#print axioms SubQuorum.BipartitePromotion.frozen_excludes_bundle
+#print axioms SubQuorum.BipartitePromotion.frozen_iff_unpromotable
+#print axioms SubQuorum.BipartitePromotion.available_greatest
+#print axioms SubQuorum.BipartitePromotion.color_restriction_bundle
+#print axioms SubQuorum.BipartitePromotion.terminal_iff_all_frozen
+#print axioms SubQuorum.BipartitePromotion.two_step_frozen_chain
+#print axioms SubQuorum.ComponentReceivers.diagonal_endpoint_bridge
+#print axioms SubQuorum.ComponentReceivers.diagonal_endpoint_owner
+#print axioms SubQuorum.ComponentReceivers.aligned_comb_receiver
+#print axioms SubQuorum.ComponentReceivers.misaligned_comb_receiver
+#print axioms SubQuorum.ThinComponents.attached_column_extends
+#print axioms SubQuorum.ThinComponents.single_chamber_exit_count
+#print axioms SubQuorum.ThinComponents.receiver_budget
+#print axioms SubQuorum.ThinComponents.two_step_receiver_invariant
+#print axioms SubQuorum.BentReceiverCompensation.canonical_tile_sparse
+#print axioms SubQuorum.BentReceiverCompensation.sparse_tile_compensation
+#print axioms SubQuorum.BentReceiverCompensation.canonical_far_not_endpoint
+#print axioms SubQuorum.BentReceiverCompensation.shared_donor_orientation
+#print axioms SubQuorum.LongBentTerminalStrips.selected_square_capacity
+#print axioms SubQuorum.LongBentTerminalStrips.terminal_supports_force_boundary
+#print axioms SubQuorum.LongBentTerminalStrips.shifted_strip_budget
+#print axioms SubQuorum.LongBentTerminalStrips.parallel_interval_overlap
+#print axioms SubQuorum.LongBentTerminalStrips.paid_strip_sum
+#print axioms SubQuorum.TransverseCombMouths.even_arm_frozen
+#print axioms SubQuorum.TransverseCombMouths.transverse_square_capacity
+#print axioms SubQuorum.TransverseCombMouths.neutral_crossing_removal
+#print axioms SubQuorum.CombEndFlux.saturated_end_shifted_count
+#print axioms SubQuorum.CombEndFlux.two_tiling_flux
+#print axioms SubQuorum.CombEndFlux.end_contact_conservation
+#print axioms SubQuorum.CombEndFlux.boundary_flux_bound
+#print axioms SubQuorum.ParallelCombFlux.aligned_tile_counts
+#print axioms SubQuorum.ParallelCombFlux.first_shifted_tile_counts
+#print axioms SubQuorum.ParallelCombFlux.last_shifted_tile_counts
+#print axioms SubQuorum.ParallelCombFlux.middle_shifted_tile_counts
+#print axioms SubQuorum.ParallelCombFlux.whole_parallel_comb_balance
+#print axioms SubQuorum.OrthogonalMouthFlux.chamber_flank_capacity
+#print axioms SubQuorum.OrthogonalMouthFlux.arm_cap_selected_count
+#print axioms SubQuorum.OrthogonalMouthFlux.crossing_tile_loss_bounds
+#print axioms SubQuorum.OrthogonalMouthFlux.crossing_loss_sum_bounds
+#print axioms SubQuorum.OrthogonalMouthFlux.crossing_boundary_bound
+#print axioms SubQuorum.OrthogonalMouthFlux.physical_union_incidence_identity
+#print axioms SubQuorum.OrthogonalMouthFlux.directional_averaging_identity
+#print axioms SubQuorum.AdaptiveStripCompensation.exclusive_donor_budget
+#print axioms SubQuorum.AdaptiveStripCompensation.independent_strip_compensation
+#print axioms SubQuorum.AdaptiveStripCompensation.negative_star_budget
+#print axioms SubQuorum.CapacityAwareStrips.capped_donor_budget
+#print axioms SubQuorum.CapacityAwareStrips.capacity_two_pair_compensation
+#print axioms SubQuorum.RemoteCombRungs.continuing_comb_boundary
+#print axioms SubQuorum.RemoteCombRungs.remote_strip_partition
+#print axioms SubQuorum.RemoteCombRungs.weighted_rung_capacity
+#print axioms SubQuorum.RemoteCombRungs.integral_flux_compensation
+#print axioms SubQuorum.ClosedSourceCavities.complete_component_phase_sum
+#print axioms SubQuorum.ClosedSourceCavities.closed_cavity_partition
+#print axioms SubQuorum.ClosedSourceCavities.donor_multiplicity_budget
+#print axioms SubQuorum.ClosedSourceCavities.twofold_cavity_cover_compensation
+#print axioms SubQuorum.ClosedSourceCavities.cavity_boundary_flux_partition
+#print axioms SubQuorum.ClosedSourceCavities.disjoint_cavity_boundary_compensation
+#print axioms SubQuorum.ClosedSourceCavities.twofold_cavity_boundary_compensation
+#print axioms SubQuorum.MixedCavitySources.adjacent_flank_capacity
+#print axioms SubQuorum.MixedCavitySources.flank_pair_sum_bound
+#print axioms SubQuorum.MixedCavitySources.perpendicular_source_phase_bound
+#print axioms SubQuorum.MixedCavitySources.mixed_cavity_partition
+#print axioms SubQuorum.OpenSourceCavities.partial_band_sum_nonnegative
+#print axioms SubQuorum.OpenSourceCavities.open_source_cavity_partition
+#print axioms SubQuorum.OpenSourceCavities.twofold_open_source_compensation
+#print axioms SubQuorum.CombChannels.whole_channel_partition
+#print axioms SubQuorum.CombChannels.aligned_unequal_weighted_payment
+#print axioms SubQuorum.CombChannels.residual_channel_compensation
+#print axioms SubQuorum.ElbowSources.retained_mate_zigzag
+#print axioms SubQuorum.ElbowSources.three_endpoint_junction_blank
+#print axioms SubQuorum.ElbowSources.transition_band_gain
+#print axioms SubQuorum.ElbowSources.extra_source_residual_compensation
+#print axioms SubQuorum.ElbowOwnedDonors.capped_corner_unit_deficit
+#print axioms SubQuorum.ElbowOwnedDonors.opposite_run_incompatible
+#print axioms SubQuorum.GuardedSteppedArms.guarded_corner_exact
+#print axioms SubQuorum.GuardedSteppedArms.distinct_anchor_neighbors_impossible
+#print axioms SubQuorum.GuardedSteppedArms.old_lower_corner_guard_impossible
+#print axioms SubQuorum.GuardedSteppedArms.stepped_receiver_charge
+#print axioms SubQuorum.SteppedPatchIsolation.port_degree_at_most_two
+#print axioms SubQuorum.SteppedPatchIsolation.matched_boundary_exclusion
+#print axioms SubQuorum.SteppedPatchIsolation.reachable_stays_in_core
+#print axioms SubQuorum.SteppedPatchIsolation.promoted_port_feasible
+#print axioms SubQuorum.FrozenRailElbows.anchored_frozen_chain
+#print axioms SubQuorum.FrozenRailElbows.rail_charge_bound
+#print axioms SubQuorum.FrozenRailElbows.positive_charge_rigidity
+#print axioms SubQuorum.FrozenRailElbows.owned_rail_ledger

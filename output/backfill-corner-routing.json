@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "rotor_catalogue": {
+    "exact_anchored_roles": 16,
+    "survivors": 0
+  },
+  "second_corner_rotor_catalogue": {
+    "exact_anchored_roles": 16,
+    "survivors": 0
+  },
+  "source_controls": {
+    "counts": {
+      "two_blocker_U_images": 432,
+      "incompatible_original_barrier_pairs": 110,
+      "disjoint_barrier_pairs": 130
+    },
+    "surviving_role_counts": {
+      "C_phase01_south_terminal": 664,
+      "D_phase10_west_terminal": 794,
+      "B_positive_vertical_bar": 665,
+      "A_phase11_horizontal_bar": 1002
+    },
+    "shallow_excluded_barrier_parameter_sets": 4,
+    "equal_width_six_excluded_barrier_parameter_sets": 8,
+    "partial_examples": {
+      "C_phase01_south_terminal": {
+        "barrier_parameters": [
+          6,
+          4,
+          6,
+          12,
+          4
+        ],
+        "owner_dimensions": [
+          6,
+          6,
+          4
+        ],
+        "symmetry": [
+          false,
+          true,
+          true
+        ],
+        "anchor": [
+          6,
+          1
+        ],
+        "incident": 6
+      },
+      "D_phase10_west_terminal": {
+        "barrier_parameters": [
+          6,
+          6,
+          6,
+          12,
+          4
+        ],
+        "owner_dimensions": [
+          6,
+          4,
+          4
+        ],
+        "symmetry": [
+          true,
+          false,
+          false
+        ],
+        "anchor": [
+          4,
+          1
+        ],
+        "incident": 4
+      },
+      "B_positive_vertical_bar": {
+        "barrier_parameters": [
+          6,
+          6,
+          6,
+          12,
+          4
+        ],
+        "owner_dimensions": [
+          6,
+          4,
+          4
+        ],
+        "symmetry": [
+          true,
+          true,
+          false
+        ],
+        "anchor": [
+          0,
+          1
+        ],
+        "incident": 4
+      },
+      "A_phase11_horizontal_bar": {
+        "barrier_parameters": [
+          6,
+          8,
+          6,
+          8,
+          4
+        ],
+        "owner_dimensions": [
+          6,
+          4,
+          4
+        ],
+        "symmetry": [
+          false,
+          false,
+          false
+        ],
+        "anchor": [
+          0,
+          6
+        ],
+        "incident": 4
+      }
+    }
+  },
+  "complete_critical_U10_witnesses": 0,
+  "scope": "The 16-root rotor catalogue is exhaustive. U dimension and barrier samples are partial geometric controls only; arbitrary-dimension classification and barrier inequalities have written proofs with scoped Lean primitives. No complete U10 realization, fresh reserve, full allocation or grid equality."
+}

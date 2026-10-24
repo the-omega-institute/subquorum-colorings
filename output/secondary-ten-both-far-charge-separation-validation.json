@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_BOTH_FAR_CHARGE_SEPARATION.md",
+  "verifier": "develop/check_secondary_ten_both_far_charge_separation.py",
+  "python_exit_code": 0,
+  "receiver_exact_count_controls": 144,
+  "consumer_exact_count_controls": 144,
+  "earlier_original_separation_controls": 3096,
+  "source_counts": "R: L+4+f/2 matching; L/2+5+f/2 endpointTiles;5+f/2 insideSupports; charge-1. T: M+1+g/2 matching; M+2+g/2 endpointTiles;4+g/2 insideSupports;charge1-M. Pair massM;positiveCount0.",
+  "review_response": "Original REVISE780b9242 mistakenly includes both R bar-end supports outside endpoint tiles. R71/45/18 and Rsharp65/41/16 both charge-1. Earlier-block column prose repaired with complete earlier B/P/Z/X/root row-column split. Original E and pair validators rerun PASS unchanged.",
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenBothFarChargeSeparation.lean",
+    "exit_code": 0,
+    "theorems": 9,
+    "preflight_memory_free_percent": 42,
+    "real_lean_lake_processes": [],
+    "scope": "Conditional count algebra and integer physical tile separation, individual ordinary-axiom audit; no warnings/sorry/native. Full source-set count and chart exhaustion written."
+  },
+  "independent_final_acceptance": true,
+  "followup_stream": 31558,
+  "support_partition_sets": "PASS144R144TcompletePredictedInsideSupportSETS;RbarEndsOUT_axialsIN_oddLateralRowsIN;TbarEndsIN_axialsOUT_evenLateralRowsIN;countAndChargeUnchanged",
+  "latest_followup": {
+    "status": "SECOND_REVISE_LOCAL_T_PARTITION_FIXED_FINAL_CONFIRMATION_SUBMITTED",
+    "task_id": "dd9cdf7b-c87b-4830-b469-08ed31a4a97f",
+    "observed_model": "gpt_6",
+    "observed_effort": "pro",
+    "original_stream_session": 31558,
+    "original_stream_exit_code": 0,
+    "stream_terminal_response_exact_match": true,
+    "terminal_record": "output/secondary-ten-both-far-charge-revision-review-terminal.json",
+    "assessment": "Reviewer withdrew erroneous R charge objection and confirmed repaired exhaustive earlier-original separation and main geometry. Sole remaining local T support partition corrected: two bar ends+two near even laterals+g/2 far even laterals inside; both axial supports outside. Counts, charges and theorem unchanged. Full R/T inside-support SET assertions added and144/144 controls rerun PASS.",
+    "final_request": "output/secondary-ten-both-far-charge-final-review-request.json",
+    "final_original_stream_session": 75561,
+    "final_status": "COMPLETED_ACCEPT_8a46ce13; original stream75561 completed exit0; exact10596character SSE/terminal agreement; gpt6/pro. Source partition corrections accepted; all-parameter main geometry and automatic full-footprint separation accepted."
+  },
+  "final_acceptance": {
+    "status": "COMPLETED_ACCEPT",
+    "task_id": "8a46ce13-fdcd-4b54-a430-2607bb821813",
+    "conversation_id": "conv_b2437cfb41cccc53",
+    "observed_model": "gpt_6",
+    "observed_effort": "pro",
+    "original_stream_session": 75561,
+    "stream_terminal_response_exact_match": true,
+    "response_characters": 10596,
+    "scope": "Selected-union arbitrary-both-far >=4m, repaired E frontier, corrected original charges, exact nonreuse and full footprint separation. Later return debit, actual next owner and global targets outside review."
+  }
+}

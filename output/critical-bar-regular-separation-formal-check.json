@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac, user-selected",
+  "lean_version": "4.33.0",
+  "theorem_declarations": 19,
+  "sources": [
+    "formal/SubQuorum/CriticalPhaseOneBarReturns.lean",
+    "formal/SubQuorum/CriticalRegularReceiverSeparation.lean"
+  ],
+  "source_checks": [
+    {"source": "CriticalPhaseOneBarReturns.lean", "original_exec_session": 99392, "exit_code": 0, "memory_free_percent": 67},
+    {"source": "CriticalRegularReceiverSeparation.lean", "original_exec_session": 64639, "exit_code": 0, "memory_free_percent": 60}
+  ],
+  "axiom_audits": [
+    {"namespace": "SubQuorum.CriticalPhaseOneBarReturns", "original_exec_session": 64133, "exit_code": 0, "memory_free_percent": 58, "declarations": 10},
+    {"namespace": "SubQuorum.CriticalRegularReceiverSeparation", "original_exec_session": 18214, "exit_code": 0, "memory_free_percent": 57, "declarations": 9}
+  ],
+  "dependency_builds": [
+    {"source": "WidthSixBottomOwner.lean", "original_exec_session": 47184, "exit_code": 0, "memory_free_percent": 73},
+    {"source": "NeutralSupportInjection.lean", "original_exec_session": 21022, "exit_code": 0, "memory_free_percent": 61},
+    {"source": "NeutralFullReceiverInjection.lean", "original_exec_session": 51160, "exit_code": 0, "memory_free_percent": 63}
+  ],
+  "declarations": [
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "phase_zero_one_critical_owner_is_outer_bar_corner", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "critical_outer_bar_tile_is_originally_full", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "distinct_outer_corners_cannot_share_a_tile", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "full_bar_return_receivers_are_injective", "axioms": []},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "originally_full_returns_avoid_regular_receivers", "axioms": []},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "corner_pool_has_two_positions_per_owner", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "critical_bar_returns_use_at_most_two_positions_per_owner", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "joint_regular_and_original_full_bar_endpoint_count", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "joint_bar_returns_in_the_existing_shared_budget", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalPhaseOneBarReturns", "name": "AA_joint_bar_return_endpoint_requirement", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "critical_regular_shared_tile_catalogue", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "U_owner_avoiding_three_neighbors_has_two_step_terminal_stencil", "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "three_neighbor_rotor_owner_contains_second_south_point", "axioms": []},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "U_terminal_stencil_conflicts_with_a_foreign_U_pair", "axioms": []},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "rotor_step_conflicts_with_a_U_companion", "axioms": []},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "outside_critical_joint_endpoint_count", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "outside_and_closed_bar_joint_endpoint_count", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "joint_critical_count_uses_the_existing_H_pool", "axioms": ["propext", "Quot.sound"]},
+    {"namespace": "CriticalRegularReceiverSeparation", "name": "AA_outside_critical_endpoint_requirement", "axioms": ["propext", "Quot.sound"]}
+  ],
+  "preflights": "Memory pressure and ordinary/-c ps exact comm basenames lean/lake checked before every invocation; no other real lean/lake observed; serial source/dependency builds.",
+  "scope": "Arbitrary-dimension critical phase01 owner role and original full tile, two-corner width separation, generic return-to-tile injection and regular/full original-profile separation, two-slot pool. ALL-critical normalized same-tile catalogue, arbitrary-dimension U terminal two-step stencil, complete rotor-root table and U/rotor ownership collisions. Joint endpoint/shared-H/conditional AA arithmetic. Physical source tags, transported partition, companion U type, exact profiles and normalization/axis-exchange adapters are written. The seven-source family's general proof is by explicit source/row tables; no general Lean family or unrestricted allocation theorem claimed.",
+  "initial_corrected_compile": "The ALL-critical file initially had an ambiguous imported Point abbreviation. Added a local abbreviation and reran successfully; no failed or elaborator-placeholder output is claimed as verification."
+}

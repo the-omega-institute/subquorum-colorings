@@ -1,0 +1,1733 @@
+{
+  "status": "PASS",
+  "summary": {
+    "exact_owner_tables": 6,
+    "exact_family_support_roles": 8,
+    "physical_fusions": 59,
+    "negative_rectangle_parameters": 25,
+    "nonnegative_reserve": 59
+  },
+  "owner_roles": [
+    {
+      "target": [
+        1,
+        3
+      ],
+      "existing": [
+        [
+          false,
+          0,
+          0
+        ]
+      ],
+      "owners": [
+        [
+          false,
+          -3,
+          0
+        ],
+        [
+          false,
+          -2,
+          2
+        ],
+        [
+          true,
+          -3,
+          6
+        ]
+      ],
+      "persistent_neighbors": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "forced_support": false
+    },
+    {
+      "target": [
+        1,
+        1
+      ],
+      "existing": [
+        [
+          false,
+          0,
+          0
+        ],
+        [
+          false,
+          -3,
+          0
+        ]
+      ],
+      "owners": [
+        [
+          false,
+          -1,
+          -3
+        ],
+        [
+          true,
+          -2,
+          2
+        ]
+      ],
+      "persistent_neighbors": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "forced_support": true
+    },
+    {
+      "target": [
+        2,
+        1
+      ],
+      "existing": [
+        [
+          false,
+          0,
+          0
+        ],
+        [
+          false,
+          -3,
+          0
+        ],
+        [
+          true,
+          -2,
+          2
+        ]
+      ],
+      "owners": [],
+      "persistent_neighbors": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "forced_support": true
+    },
+    {
+      "target": [
+        0,
+        0
+      ],
+      "existing": [
+        [
+          false,
+          0,
+          0
+        ],
+        [
+          false,
+          -3,
+          0
+        ],
+        [
+          false,
+          -1,
+          -3
+        ]
+      ],
+      "owners": [
+        [
+          false,
+          -4,
+          -3
+        ]
+      ],
+      "persistent_neighbors": [
+        [
+          0,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "forced_support": true
+    },
+    {
+      "target": [
+        1,
+        4
+      ],
+      "existing": [
+        [
+          false,
+          0,
+          0
+        ],
+        [
+          true,
+          -3,
+          6
+        ]
+      ],
+      "owners": [
+        [
+          true,
+          -1,
+          8
+        ]
+      ],
+      "persistent_neighbors": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "forced_support": true
+    },
+    {
+      "target": [
+        3,
+        4
+      ],
+      "existing": [
+        [
+          false,
+          0,
+          0
+        ],
+        [
+          true,
+          -3,
+          6
+        ],
+        [
+          true,
+          -1,
+          8
+        ]
+      ],
+      "owners": [
+        [
+          false,
+          2,
+          2
+        ]
+      ],
+      "persistent_neighbors": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "forced_support": true
+    }
+  ],
+  "family_support_roles": [
+    {
+      "support": [
+        0,
+        2
+      ],
+      "anchor": [
+        1,
+        2
+      ],
+      "consumers": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      "outward_axis": 0,
+      "outward_direction": -1
+    },
+    {
+      "support": [
+        1,
+        1
+      ],
+      "anchor": [
+        1,
+        2
+      ],
+      "consumers": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          -1,
+          1
+        ]
+      ],
+      "outward_axis": 0,
+      "outward_direction": -1
+    },
+    {
+      "support": [
+        1,
+        4
+      ],
+      "anchor": [
+        2,
+        4
+      ],
+      "consumers": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          -1,
+          -1
+        ],
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "outward_axis": 1,
+      "outward_direction": -1
+    },
+    {
+      "support": [
+        2,
+        5
+      ],
+      "anchor": [
+        2,
+        4
+      ],
+      "consumers": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "outward_axis": 1,
+      "outward_direction": -1
+    },
+    {
+      "support": [
+        3,
+        0
+      ],
+      "anchor": [
+        3,
+        1
+      ],
+      "consumers": [
+        [
+          0,
+          1
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "outward_axis": 1,
+      "outward_direction": 1
+    },
+    {
+      "support": [
+        4,
+        1
+      ],
+      "anchor": [
+        3,
+        1
+      ],
+      "consumers": [
+        [
+          0,
+          1
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "outward_axis": 1,
+      "outward_direction": 1
+    },
+    {
+      "support": [
+        4,
+        4
+      ],
+      "anchor": [
+        4,
+        3
+      ],
+      "consumers": [
+        [
+          1,
+          0
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "outward_axis": 0,
+      "outward_direction": 1
+    },
+    {
+      "support": [
+        5,
+        3
+      ],
+      "anchor": [
+        4,
+        3
+      ],
+      "consumers": [
+        [
+          1,
+          0
+        ]
+      ],
+      "possible_extra_neighbor_sources": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "outward_axis": 0,
+      "outward_direction": 1
+    }
+  ],
+  "physical": [
+    {
+      "kind": "negative_rectangle",
+      "first": 1,
+      "second": 1,
+      "negative_rotors": 1,
+      "zero_rotors": 0,
+      "components": [
+        [
+          1,
+          1
+        ]
+      ],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 20
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 1,
+      "second": 2,
+      "negative_rotors": 2,
+      "zero_rotors": 0,
+      "components": [
+        [
+          1,
+          2
+        ]
+      ],
+      "edges": 1,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 2,
+      "credit": 0,
+      "actual_slack": 30
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 1,
+      "second": 3,
+      "negative_rotors": 3,
+      "zero_rotors": 0,
+      "components": [
+        [
+          1,
+          3
+        ]
+      ],
+      "edges": 2,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 4,
+      "credit": 0,
+      "actual_slack": 44
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 1,
+      "second": 5,
+      "negative_rotors": 5,
+      "zero_rotors": 0,
+      "components": [
+        [
+          1,
+          5
+        ]
+      ],
+      "edges": 4,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 8,
+      "credit": 0,
+      "actual_slack": 84
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 1,
+      "second": 8,
+      "negative_rotors": 8,
+      "zero_rotors": 0,
+      "components": [
+        [
+          1,
+          8
+        ]
+      ],
+      "edges": 7,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 14,
+      "credit": 0,
+      "actual_slack": 174
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 2,
+      "second": 1,
+      "negative_rotors": 2,
+      "zero_rotors": 0,
+      "components": [
+        [
+          2,
+          1
+        ]
+      ],
+      "edges": 1,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 2,
+      "credit": 0,
+      "actual_slack": 30
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 2,
+      "second": 2,
+      "negative_rotors": 4,
+      "zero_rotors": 0,
+      "components": [
+        [
+          2,
+          2
+        ]
+      ],
+      "edges": 4,
+      "faces": 1,
+      "reserve": 2,
+      "irregular": 8,
+      "credit": 2,
+      "actual_slack": 40
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 2,
+      "second": 3,
+      "negative_rotors": 6,
+      "zero_rotors": 0,
+      "components": [
+        [
+          2,
+          3
+        ]
+      ],
+      "edges": 7,
+      "faces": 2,
+      "reserve": 2,
+      "irregular": 14,
+      "credit": 4,
+      "actual_slack": 54
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 2,
+      "second": 5,
+      "negative_rotors": 10,
+      "zero_rotors": 0,
+      "components": [
+        [
+          2,
+          5
+        ]
+      ],
+      "edges": 13,
+      "faces": 4,
+      "reserve": 2,
+      "irregular": 26,
+      "credit": 8,
+      "actual_slack": 94
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 2,
+      "second": 8,
+      "negative_rotors": 16,
+      "zero_rotors": 0,
+      "components": [
+        [
+          2,
+          8
+        ]
+      ],
+      "edges": 22,
+      "faces": 7,
+      "reserve": 2,
+      "irregular": 44,
+      "credit": 14,
+      "actual_slack": 184
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 3,
+      "second": 1,
+      "negative_rotors": 3,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          1
+        ]
+      ],
+      "edges": 2,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 4,
+      "credit": 0,
+      "actual_slack": 44
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 3,
+      "second": 2,
+      "negative_rotors": 6,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          2
+        ]
+      ],
+      "edges": 7,
+      "faces": 2,
+      "reserve": 2,
+      "irregular": 14,
+      "credit": 4,
+      "actual_slack": 54
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 3,
+      "second": 3,
+      "negative_rotors": 9,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          3
+        ]
+      ],
+      "edges": 12,
+      "faces": 4,
+      "reserve": 2,
+      "irregular": 24,
+      "credit": 8,
+      "actual_slack": 68
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 3,
+      "second": 5,
+      "negative_rotors": 15,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          5
+        ]
+      ],
+      "edges": 22,
+      "faces": 8,
+      "reserve": 2,
+      "irregular": 44,
+      "credit": 16,
+      "actual_slack": 108
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 3,
+      "second": 8,
+      "negative_rotors": 24,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          8
+        ]
+      ],
+      "edges": 37,
+      "faces": 14,
+      "reserve": 2,
+      "irregular": 74,
+      "credit": 28,
+      "actual_slack": 198
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 5,
+      "second": 1,
+      "negative_rotors": 5,
+      "zero_rotors": 0,
+      "components": [
+        [
+          5,
+          1
+        ]
+      ],
+      "edges": 4,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 8,
+      "credit": 0,
+      "actual_slack": 84
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 5,
+      "second": 2,
+      "negative_rotors": 10,
+      "zero_rotors": 0,
+      "components": [
+        [
+          5,
+          2
+        ]
+      ],
+      "edges": 13,
+      "faces": 4,
+      "reserve": 2,
+      "irregular": 26,
+      "credit": 8,
+      "actual_slack": 94
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 5,
+      "second": 3,
+      "negative_rotors": 15,
+      "zero_rotors": 0,
+      "components": [
+        [
+          5,
+          3
+        ]
+      ],
+      "edges": 22,
+      "faces": 8,
+      "reserve": 2,
+      "irregular": 44,
+      "credit": 16,
+      "actual_slack": 108
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 5,
+      "second": 5,
+      "negative_rotors": 25,
+      "zero_rotors": 0,
+      "components": [
+        [
+          5,
+          5
+        ]
+      ],
+      "edges": 40,
+      "faces": 16,
+      "reserve": 2,
+      "irregular": 80,
+      "credit": 32,
+      "actual_slack": 148
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 5,
+      "second": 8,
+      "negative_rotors": 40,
+      "zero_rotors": 0,
+      "components": [
+        [
+          5,
+          8
+        ]
+      ],
+      "edges": 67,
+      "faces": 28,
+      "reserve": 2,
+      "irregular": 134,
+      "credit": 56,
+      "actual_slack": 238
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 8,
+      "second": 1,
+      "negative_rotors": 8,
+      "zero_rotors": 0,
+      "components": [
+        [
+          8,
+          1
+        ]
+      ],
+      "edges": 7,
+      "faces": 0,
+      "reserve": 2,
+      "irregular": 14,
+      "credit": 0,
+      "actual_slack": 174
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 8,
+      "second": 2,
+      "negative_rotors": 16,
+      "zero_rotors": 0,
+      "components": [
+        [
+          8,
+          2
+        ]
+      ],
+      "edges": 22,
+      "faces": 7,
+      "reserve": 2,
+      "irregular": 44,
+      "credit": 14,
+      "actual_slack": 184
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 8,
+      "second": 3,
+      "negative_rotors": 24,
+      "zero_rotors": 0,
+      "components": [
+        [
+          8,
+          3
+        ]
+      ],
+      "edges": 37,
+      "faces": 14,
+      "reserve": 2,
+      "irregular": 74,
+      "credit": 28,
+      "actual_slack": 198
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 8,
+      "second": 5,
+      "negative_rotors": 40,
+      "zero_rotors": 0,
+      "components": [
+        [
+          8,
+          5
+        ]
+      ],
+      "edges": 67,
+      "faces": 28,
+      "reserve": 2,
+      "irregular": 134,
+      "credit": 56,
+      "actual_slack": 238
+    },
+    {
+      "kind": "negative_rectangle",
+      "first": 8,
+      "second": 8,
+      "negative_rotors": 64,
+      "zero_rotors": 0,
+      "components": [
+        [
+          8,
+          8
+        ]
+      ],
+      "edges": 112,
+      "faces": 49,
+      "reserve": 2,
+      "irregular": 224,
+      "credit": 98,
+      "actual_slack": 328
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          4
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          4,
+          3
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          4,
+          3
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          4
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          4
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          4,
+          3
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          4,
+          3
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        0,
+        1
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        0
+      ],
+      "negative_rotors": 0,
+      "zero_rotors": 12,
+      "components": [],
+      "edges": 0,
+      "faces": 0,
+      "reserve": 0,
+      "irregular": 0,
+      "credit": 0,
+      "actual_slack": 86
+    },
+    {
+      "kind": "all_isometries_phases",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "phase": [
+        1,
+        1
+      ],
+      "negative_rotors": 12,
+      "zero_rotors": 0,
+      "components": [
+        [
+          3,
+          4
+        ]
+      ],
+      "edges": 17,
+      "faces": 6,
+      "reserve": 2,
+      "irregular": 34,
+      "credit": 12,
+      "actual_slack": 86
+    },
+    {
+      "kind": "separated_mixed_components",
+      "negative_rotors": 7,
+      "zero_rotors": 3,
+      "components": [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "edges": 7,
+      "faces": 2,
+      "reserve": 4,
+      "irregular": 14,
+      "credit": 4,
+      "actual_slack": 6292
+    },
+    {
+      "kind": "actual_negative_zero_support_contact",
+      "negative_rotors": 6,
+      "zero_rotors": 1,
+      "components": [
+        [
+          2,
+          3
+        ]
+      ],
+      "edges": 7,
+      "faces": 2,
+      "reserve": 2,
+      "irregular": 14,
+      "credit": 4,
+      "actual_slack": 72
+    }
+  ],
+  "scope": "Six complete16-role classifications and exact all-index family support-role differences. Physical fixtures control the written finite-propagation/rectangle theorem; their bounded sizes do not prove it."
+}

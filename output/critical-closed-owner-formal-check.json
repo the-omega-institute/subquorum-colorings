@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac, user-selected",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/CriticalClosedOwnerCounterexample.lean",
+  "source_check": {
+    "original_exec_session": 50267,
+    "exit_code": 0,
+    "memory_free_percent": 52
+  },
+  "axiom_audit": {
+    "original_exec_session": 92026,
+    "exit_code": 0,
+    "memory_free_percent": 72,
+    "theorems_printed": 6
+  },
+  "declarations": [
+    {"name": "source_dimensions_and_charges", "axioms": []},
+    {"name": "complete_matching_and_retained_support_feasibility", "axioms": []},
+    {"name": "exact_cardinalities", "axioms": []},
+    {"name": "first_neutral_contact_and_phase_eleven_owner", "axioms": ["propext"]},
+    {"name": "critical_point_is_an_original_closed_owner_bar_corner", "axioms": ["propext"]},
+    {"name": "both_phase_zero_one_terminals_have_neutral_contacts", "axioms": ["propext"]}
+  ],
+  "namespace": "SubQuorum.CriticalClosedOwnerCounterexample",
+  "preflights": "Memory pressure and both ordinary/-c ps exact comm basenames lean/lake checked before every invocation; no other real lean/lake observed.",
+  "scope": "Concrete six-source construction with original matching/support formulas, selected-degree feasibility, dimensions/charges, cardinalities and exact contact/owner profiles. Closed-port component and identification as the critical continuation follow from the explicit written adapters. Not a general formal allocation theorem or a target inequality counterexample.",
+  "independent_oracle_review": "Not submitted; preceding f601c27c ACCEPT predates this fixture."
+}

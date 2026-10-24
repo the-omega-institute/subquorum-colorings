@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac, user-selected",
+  "lean_version": "4.33.0",
+  "total_theorem_declarations": 25,
+  "total_helper_definitions": 6,
+  "source_checks": [
+    {
+      "source": "formal/SubQuorum/NeutralPhaseElevenCritical.lean",
+      "original_exec_session": 3308,
+      "exit_code": 0,
+      "memory_free_percent": 39
+    },
+    {
+      "source": "formal/SubQuorum/NeutralPhaseElevenCriticalInjection.lean",
+      "original_exec_session": 90087,
+      "exit_code": 0,
+      "memory_free_percent": 49
+    },
+    {
+      "source": "formal/SubQuorum/NeutralSecondStopBudget.lean",
+      "original_exec_session": 40695,
+      "exit_code": 0,
+      "memory_free_percent": 47
+    }
+  ],
+  "dependency_build": {
+    "source": "formal/SubQuorum/ClosedNeutralReceivers.lean",
+    "original_exec_session": 57960,
+    "exit_code": 0,
+    "memory_free_percent": 46
+  },
+  "axiom_audit": {
+    "source": "formal/PhaseElevenCriticalScopedAudit.lean (temporary)",
+    "exit_code": 0,
+    "memory_free_percent": 46,
+    "theorems_printed": 25
+  },
+  "declarations": [
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.critical_frame_is_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.critical_and_first_stencils_are_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.critical_and_long_stencils_are_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.critical_forced_points_are_injective",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.critical_and_first_point_sets_are_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.critical_and_long_point_sets_are_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.three_forced_point_sets_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCriticalInjection.all_phase_eleven_endpoint_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.original_pairs_in_nonfull_tile_have_same_owner",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.nonfull_first_and_second_receivers_are_injective",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.different_original_pair_owners_separate_nonfull_stops",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.second_stops_share_the_corner_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.closed_turns_with_first_and_second_stops",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.shared_stops_in_existing_reserve",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralSecondStopBudget.AA_first_and_second_stops_vanish",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.canonical_terminal_height_is_unique",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.phase_eleven_opposite_leg_profile",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.active_far_stem_at_critical_corner",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.original_disjointness_bounds_opposite_leg",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.critical_active_bar_stencil_and_blank",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.critical_support_forces_occupied",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.critical_passive_source_exclusion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.critical_partition_corner",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.ordinary_partition_corner",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralPhaseElevenCritical.even_phase_eleven_cases",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "process_preflights": "Before every invocation: memory_pressure and both ordinary and -c ps; compare real comm basename lean/lake. Serial local invocations. Earlier dependency builds coexisted with other sessions; no other real lean/lake appeared before final builds/audit.",
+  "repairs": "Critical injection tactic continuation repaired; four-corner Fin equality made explicit. AA deduction uses the direct H pool with H=0; it does not assume A=0 or conclude B=0.",
+  "scope": "General canonical geometry, normalized partition parity, exact eight-frame stencils, conditional global injections and finite-set count, nonfull receiver packing and shared-budget algebra. Physical source-to-tag/diagonal/support adapters are written in the notes. Partial controls have ZERO complete critical/closed01/AA coverage. No full coefficient-one allocation, mixed-chain termination or rectangular-grid theorem."
+}

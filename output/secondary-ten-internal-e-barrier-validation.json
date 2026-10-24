@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_INTERNAL_E_BARRIER.md",
+  "python": {
+    "status": "PASS",
+    "predecessor_guards": 84,
+    "full_original_U_role_controls": 37800,
+    "old_disjoint_left_survivors": 6492,
+    "eleven_endpoint_controls": 16632,
+    "internal_depth_gap_decisions": 13536,
+    "old_disjoint_candidates_excluded_by_footprint": 1008,
+    "old_disjoint_first_deep_obstructions": 60,
+    "canonical_uniform_example": {
+      "target": [
+        48,
+        1
+      ],
+      "parent_dimensions": [
+        50,
+        28,
+        4
+      ],
+      "parent_chart_origin": [
+        35,
+        -49
+      ],
+      "old_endpoint_collisions": 0,
+      "forced_shared_endpoint": [
+        39,
+        1
+      ]
+    },
+    "examples": [
+      {
+        "index": 1,
+        "target": [
+          48,
+          1
+        ],
+        "predecessor_guard": [
+          [
+            29,
+            1
+          ],
+          [
+            30,
+            1
+          ],
+          [
+            31,
+            1
+          ],
+          [
+            32,
+            1
+          ],
+          [
+            33,
+            1
+          ]
+        ],
+        "mandatory_footprint": [
+          [
+            38,
+            1
+          ],
+          [
+            39,
+            1
+          ],
+          [
+            40,
+            1
+          ],
+          [
+            41,
+            1
+          ],
+          [
+            42,
+            1
+          ],
+          [
+            43,
+            1
+          ],
+          [
+            44,
+            1
+          ],
+          [
+            45,
+            1
+          ],
+          [
+            46,
+            1
+          ],
+          [
+            47,
+            1
+          ],
+          [
+            48,
+            1
+          ]
+        ],
+        "parent_dimensions": [
+          68,
+          50,
+          4
+        ],
+        "old_endpoint_collisions": 0,
+        "forced_shared_endpoint": [
+          39,
+          1
+        ]
+      }
+    ],
+    "scope": "Necessary conditions and an explicit nonextendibility obstruction in the complete full-U/rotor model; finite controls do not replace general proofs or establish complete extensions or a global bound.",
+    "session": 91807,
+    "exit_code": 0
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenInternalEBarrier.lean",
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "execution": "local Mac, standalone --stdin",
+    "session": 48387,
+    "preflight": {
+      "memory_free_percent": 41,
+      "real_lean_lake_processes": []
+    },
+    "exit_code": 0,
+    "declarations": 22,
+    "theorems": 16,
+    "stdout": "'SubQuorum.SecondaryTenInternalEBarrier.Point' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalEBarrier.endpoint' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalEBarrier.northAt' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalEBarrier.earlierX' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalEBarrier.earlierV' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalEBarrier.predecessor_column' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.predecessor_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.predecessor_guard_recurrence' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.predecessor_collision' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.incident_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.right_bar_collision' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.internal_orientation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.eleven_endpoint_footprint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.refined_interval_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.internal_first_deep_excluded' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.internal_next_deep' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.internal_next_far' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.first_deep_shared_endpoint' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.internal_left_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SecondaryTenInternalEBarrier.positiveCount' does not depend on any axioms\n'SubQuorum.SecondaryTenInternalEBarrier.all_left_zero_positive' depends on axioms: [propext]\n'SubQuorum.SecondaryTenInternalEBarrier.at_most_root_positive' depends on axioms: [propext, Quot.sound]\n",
+    "stderr": "",
+    "individual_axioms_audited": true,
+    "scope": "Coordinate predecessor guard/collision, incident upper bound, orientation exclusion, eleven endpoints, refined interval dichotomy, first-deep exclusion, next-depth arithmetic and conditional list phase count. Actual-owner normalization and full charge counts use the written theorem."
+  },
+  "review": {
+    "status": "COMPLETED",
+    "task_id": "132e9691-dd33-4559-8c71-54f17788d834",
+    "original_stream_session": 77849,
+    "original_stream_exit_code": 1,
+    "transport_failure": "unexpected EOF during chunk size line",
+    "service_state_after_transport_failure": "Same task132e9691 confirmed dispatched/waiting_response, attempt3; no duplicate submission.",
+    "conversation_id": "conv_0ac3ea2fea0b7c23",
+    "request": "output/secondary-ten-internal-e-barrier-review-request.json",
+    "verdict": "ACCEPT",
+    "completed_at": "2026-10-21T18:25:13.761+00:00",
+    "response": "output/secondary-ten-internal-e-barrier-review-response.md",
+    "terminal": "output/secondary-ten-internal-e-barrier-review-terminal.json",
+    "response_chars": 15086,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "original_prompt_matches_conversation": true,
+    "terminal_response_matches_conversation": true,
+    "stream_response_match": "NOT_AVAILABLE_original_transport_failed_before_response",
+    "terminology_clarification": "Use maximum/bottommost predecessor row, not top row; theorem and inequalities unchanged."
+  },
+  "scope": "Necessary internal-owner conditions and an explicit nonextendibility obstruction in the full-original U/rotor model. No arbitrary-grid catalogue exhaustion, complete-family allocation, global 5/6 improvement or grid triple equality."
+}

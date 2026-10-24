@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-21",
+  "status": "PASS_SCOPED_SOURCE_LEVEL",
+  "machine": "Local Mac; user-authorized local validation",
+  "lean": "Lean 4.33.0",
+  "modules": [
+    {
+      "source": "formal/SubQuorum/MarkedSideGateConsumption.lean",
+      "final_compile_session": 32754,
+      "exit_code": 0,
+      "statements": {
+        "canonical_mark_iff_gate_endpoint": [
+          "propext",
+          "Quot.sound"
+        ],
+        "a_foreign_occupied_blank_at_a_protector_is_endpoint": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "retained_gate_iff_original_consumer_retained": []
+      }
+    },
+    {
+      "source": "formal/SubQuorum/FeasibleCoreSeparator.lean",
+      "compile_session": 70473,
+      "exit_code": 0,
+      "statements": {
+        "a_side_of_a_feasible_core_is_feasible": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "an_event_on_both_sides_is_exactly_a_core_event": [],
+        "every_event_belongs_to_a_side": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "audit": {
+    "session": 97746,
+    "exit_code": 0,
+    "command": "LEAN_PATH=. /Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean GateAndCoreAudit.lean",
+    "no_sorryAx": true,
+    "no_native_decide_axiom": true
+  },
+  "resources": {
+    "preflight": "memory_pressure -Q plus ps comm basename lean/lake enumeration before every invocation",
+    "free_percentages": [
+      29,
+      28,
+      28
+    ],
+    "concurrency": "Sequential small abstract module builds/audit alongside preserved numeric session 27530 and unrelated Lean 4.35 task processes. No heavy job duplication or restart."
+  },
+  "scope": "Three new gate lemmas and three shared-core source-level lemmas only. Original U-catalogue geometric adapters, full-tile valuation/cardinality, actual marked-side counting, G supermodularity and canonical least-hull consequences have written proofs. No end-to-end Lean claim for margin valuation, arbitrary allocation, grid equality or the connected nine-source obstruction.",
+  "independent_review": "Review07c239aa completed REVISE: substantive gate, least-hull, G supermodularity, zero duplicates and feasible-core valuation pass. One missing proper-branch hypothesis in minimum-counterexample corollary corrected explicitly in both notes; ordinary union complete feasibility and consumer sign distinction explicit. Correction re-review submitted in same conversation, original stream39454; no final ACCEPT claimed.",
+  "separate_numeric_job": {
+    "session": 27530,
+    "status": "PASS_SCOPED_SIX_SOURCE_CORE",
+    "exit_code": 0,
+    "axiom_audit_session": 87356,
+    "axiom_audit_exit_code": 0,
+    "source": "formal/SubQuorum/DemandHullReserveObstruction.lean",
+    "scope": "Five fixed six-source k=h20 declarations only; four axiom-free, adjacent support declaration propext only. Not the nine-source parameter theorem."
+  }
+}

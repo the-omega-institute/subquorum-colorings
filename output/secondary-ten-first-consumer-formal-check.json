@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-21",
+  "status": "PASS",
+  "machine": "user-authorized local Mac",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/SecondaryTenFirstConsumer.lean",
+  "command": "standalone lean --stdin with source followed by individual #print axioms for every theorem",
+  "final_execution": "exec chunk 667da9, exit 0",
+  "declarations": 16,
+  "warnings": 0,
+  "allowed_axioms_observed": ["propext", "Classical.choice", "Quot.sound"],
+  "sorry_or_native_axioms": false,
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "system_memory_free_percent": 61,
+    "lean_lake_comm_basename_check": "no active lean or lake executable"
+  },
+  "checked_scope": [
+    "prescribed forcing neighbors and rotor blockers",
+    "north-stem length bound and chart collision coordinates",
+    "corner near-terminal supports and their D-owned images",
+    "far-leg conditional restrictions and charge arithmetic"
+  ],
+  "written_scope": [
+    "complete U and rotor catalogue adaptation",
+    "geometric touched-tile and original-support counts"
+  ],
+  "not_claimed": [
+    "a global injection for the corner activation",
+    "a complete realization of a partial stencil",
+    "a compensation theorem for all secondary-ten cases",
+    "the full allocation inequality or rectangular-grid triple equality"
+  ],
+  "failed_attempts": "Earlier stdin runs failed because two legal-width premises were omitted and the combined support-image conjunction required explicit proof splitting. They are not counted as successful verification. The final 16 declarations pass with all individual axiom audits clean.",
+  "independent_written_review": "not performed for this necessary-form milestone"
+}

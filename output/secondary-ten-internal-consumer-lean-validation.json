@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/SecondaryTenInternalConsumerChains.lean",
+  "execution_machine": "local Mac authorized in current session",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "execution_mode": "full standalone source plus individual #print axioms for every declaration, through --stdin",
+  "final_execution_session": 66770,
+  "exit_code": 0,
+  "warnings": 0,
+  "declarations": 34,
+  "theorems": 24,
+  "preflight": {
+    "memory_free_percent": 32,
+    "other_real_lean_lake_processes": [
+      16232,
+      16233,
+      16306,
+      16307
+    ],
+    "process_check": "basename of comm field, accepts bare names and full paths",
+    "scope": "single small standalone module; no mathlib build and no change to other processes"
+  },
+  "individual_axioms": {
+    "SubQuorum.SecondaryTenInternalConsumerChains.Point": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.endpoint": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.originalSupport": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.terminal": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.move": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.color": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.endpoint_leg_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.support_leg_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.canonical_terminal_colors": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.transformed_terminal_colors": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.same_color_terminal_slots_equal": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.oldV": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.eastE": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.zeroRepair": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.forced_p_original_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.p_absent_from_V_and_E": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.p_three_foreign_blockers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.zero_repair_consumes_p": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.band_endpoint_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.band_directions_survive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.renewed_q_is_original_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.renewed_q_absent_locally": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.renewed_q_two_endpoint_neighbors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.chain_body_row_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.successive_repair_row_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.nonadjacent_column_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.internal_consumer_chart": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.chain_deficit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.arbitrary_chain_relative_loss": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.chain_absolute_positive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.freshMass": [],
+    "SubQuorum.SecondaryTenInternalConsumerChains.distinct_fresh_owner_mass": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.fresh_mass_exterior_reduction": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SecondaryTenInternalConsumerChains.zero_gain_repair_receipt": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Endpoint/support leg exchange; opposite terminal colors under arbitrary integer grid isometries; forced p and renewed q geometry; row/column separation arithmetic; internal consumer chart; finite-list owner mass; exact receipt arithmetic. General complete-family ownership, role classification, inter-block event partition and final conclusions remain written proofs."
+}

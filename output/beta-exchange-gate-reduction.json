@@ -1,0 +1,240 @@
+{
+  "status": "PASS",
+  "totals": {
+    "exhaustive_core_controls": 20480,
+    "exchange_gate_uses": 2980,
+    "independent_original_terminal_matchings": 256,
+    "independently_enumerated_models": 32,
+    "exhaustive_original_models": 4096,
+    "random_core_controls": 800,
+    "strict_protected_gaps": 71,
+    "multiport_root_sets": 66197,
+    "multiport_route_controls": 345,
+    "physical_core_controls": 536,
+    "physical_exchange_gate_uses": 0,
+    "physical_geometries": 480
+  },
+  "port_recovery_obstruction": {
+    "core_size": 1,
+    "residual_value": 1,
+    "full_value": 2,
+    "deficit": 0,
+    "used_exchange_gates": 1,
+    "exterior_links": 1,
+    "lifted_links": 1,
+    "unrestricted_minimum_links": 1,
+    "core": [
+      [
+        2,
+        4
+      ]
+    ],
+    "retained_core": [],
+    "selected_links": [
+      [
+        0,
+        4
+      ]
+    ],
+    "payments": [
+      [
+        2,
+        0
+      ]
+    ],
+    "paid_sources": [
+      0,
+      1
+    ],
+    "used_betas": [
+      2
+    ],
+    "residual_cut": [],
+    "residual_blocked": [],
+    "source_root_owners": [
+      0
+    ],
+    "residual_cut_original": [],
+    "residual_blocked_original": [],
+    "protected_core_value": 1
+  },
+  "cardinality_not_cost": {
+    "core_size": 1,
+    "residual_value": 0,
+    "full_value": 1,
+    "deficit": 0,
+    "used_exchange_gates": 0,
+    "exterior_links": 0,
+    "lifted_links": 1,
+    "unrestricted_minimum_links": 0,
+    "core": [
+      [
+        0,
+        2
+      ]
+    ],
+    "retained_core": [
+      [
+        0,
+        2
+      ]
+    ],
+    "selected_links": [
+      [
+        0,
+        2
+      ]
+    ],
+    "payments": [],
+    "paid_sources": [
+      0
+    ],
+    "used_betas": [
+      1
+    ],
+    "residual_cut": [],
+    "residual_blocked": [],
+    "source_root_owners": [],
+    "residual_cut_original": [],
+    "residual_blocked_original": []
+  },
+  "multiport_balanced_example": {
+    "core_size": 6,
+    "residual_value": 2,
+    "full_value": 8,
+    "deficit": 0,
+    "used_exchange_gates": 4,
+    "exterior_links": 4,
+    "lifted_links": 6,
+    "unrestricted_minimum_links": 6,
+    "core": [
+      [
+        4,
+        16
+      ],
+      [
+        6,
+        18
+      ],
+      [
+        8,
+        20
+      ],
+      [
+        10,
+        22
+      ],
+      [
+        12,
+        24
+      ],
+      [
+        14,
+        26
+      ]
+    ],
+    "retained_core": [
+      [
+        8,
+        20
+      ],
+      [
+        14,
+        26
+      ]
+    ],
+    "selected_links": [
+      [
+        8,
+        20
+      ],
+      [
+        14,
+        26
+      ],
+      [
+        0,
+        18
+      ],
+      [
+        7,
+        17
+      ],
+      [
+        2,
+        24
+      ],
+      [
+        13,
+        23
+      ]
+    ],
+    "payments": [
+      [
+        4,
+        0
+      ],
+      [
+        10,
+        1
+      ]
+    ],
+    "paid_sources": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "used_betas": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "residual_cut": [],
+    "residual_blocked": [],
+    "source_root_owners": [
+      0,
+      1
+    ],
+    "residual_cut_original": [],
+    "residual_blocked_original": []
+  },
+  "physical_families": [
+    {
+      "family": "bent_1",
+      "alpha": 1,
+      "beta": 1,
+      "core": 1,
+      "full_value": 1
+    },
+    {
+      "family": "occupied",
+      "alpha": 1,
+      "beta": 5,
+      "core": 1,
+      "full_value": 1
+    },
+    {
+      "family": "unported",
+      "alpha": 2,
+      "beta": 5,
+      "core": 2,
+      "full_value": 2
+    },
+    {
+      "family": "shared",
+      "alpha": 2,
+      "beta": 2,
+      "core": 1,
+      "full_value": 2
+    }
+  ],
+  "scope": "Written exact cardinality reduction for any owner-disjoint original alpha-beta core. Every compiled route packing is lifted and its original paid-source and beta supports checked. Independent finite terminal enumeration is a bounded cross-check, not a general proof. No geometric coverage or universal 5/6 improvement is claimed."
+}

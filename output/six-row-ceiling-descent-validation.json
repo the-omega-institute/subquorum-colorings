@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_GENERAL_EXCLUSION_EXACT_CONTROLS_SCOPED_LEAN_INDEPENDENT_ACCEPT",
+  "proof": "docs/SIX_ROW_CEILING_DESCENT.md",
+  "verifier": "develop/check_six_row_ceiling_descent.py",
+  "controls": "output/six-row-ceiling-descent-controls.json",
+  "theorem": "Complete retained-support six-row pocket under explicit full-even-U/standard-rotor source decomposition: no V bottom endpoint over H0/H4 north projection, by actual corner consumers forcing bounded integer descent; reflected top exclusion; boundary H0/H5 impossible; interior H1/H4 projections contain no foreign endpoints, including rotors. No horizontal alignment restriction for these geometric exclusions.",
+  "exact_peeling": "If surviving H projections start at even columns, Phi(full)=Phi(V+rotors)+sum(B-1), exact simultaneous nonreuse. Full-model Phi includes positive-source count, negative mass, 2J-K; q=M-2T+S. No residual V/rotor sign assumed.",
+  "rotor_free_corollary": "Complete pocket with only V and aligned H: Phi>=a+2b+sum(B-1). Each H contributes exact B-1 rather than prior lower bound B/2-2; any such pocket with an H has Phi>=5, whole chamber increment>=10. Transverse-only nonempty sharp2/7 remains.",
+  "python": {
+    "exit_code": 0,
+    "final_execution_chunk": "7ce74d",
+    "final_original_session": 67091,
+    "U_corner_anchor_roles": 11616,
+    "surviving_north_corner_roles": 16,
+    "excluded_rotor_corner_roles": 64,
+    "normalized_rotor_shapes": 2,
+    "bottom_support_owner_roles": 26176,
+    "surviving_transverse_owner_roles": 98,
+    "partial_descent_chains": 64,
+    "rotor_interior_H_anchor_roles": 26112,
+    "rotor_interior_H_survivors": 0,
+    "complete_exact_peeling_controls": 23,
+    "genuinely_mixed_complete_controls": 14,
+    "largest_horizontal_width": 2000,
+    "scope": "Exact canonical endpoint/support/matching records, consumer roles, renewed support neighbours and unconsumed leftmost supports, rotor separation, actual old core retained-support feasibility and exact zero H contact debit. Finite controls support separate unrestricted-parameter proof."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SixRowCeilingDescent.lean",
+    "version": "4.33.0",
+    "final_execution_chunk": "80a2cf",
+    "original_session": 50650,
+    "exit_code": 0,
+    "local_theorems": 10,
+    "individual_declaration_axiom_audits": 16,
+    "axioms": "Only ordinary propext/Classical.choice/Quot.sound or none; no warnings/sorry/native in final run.",
+    "preflight_memory_free_percent": 56,
+    "real_lean_lake_processes_before_run": [],
+    "scope": "Explicit north endpoint and right-facing V predicates, top clearance, renewed support neighbours and nonownership, six-column descent, both normalized rotor endpoint shapes, bottom-tip upper neighbour and southeast-corner exclusion, arbitrary bounded integer descent. Canonical adapters, wall confinement and completeness/inventory assembly remain written.",
+    "initial_attempt": "Unknown Nat.strong_induction_on core name; replaced by Nat.strongRecOn before final clean passing audit. Failed attempt is not counted as validation."
+  },
+  "review": {
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_session": 27595,
+    "request": "output/six-row-ceiling-descent-review-request.json",
+    "stream": "output/six-row-ceiling-descent-review-stream.sse",
+    "pool_preflight": {
+      "ready": 20,
+      "busy": 5,
+      "needs_attention": 1,
+      "queued": 0
+    },
+    "scope": "Independent full written classification, actual source confinement, noncircular bounded descent, boundary H0/H5 exclusion, interior H/rotor separation, exact aligned-H peeling and no-rotor withH chamber>=10 corollary. No Python or Lean rerun by reviewer; source decomposition remains explicit, V/rotor residual and global goals open.",
+    "task_id": "2a3b4f9e-f29d-42dc-aa8e-2901bb8e7f1c",
+    "conversation_id": "conv_1b43f64ccd85f367",
+    "terminal": "output/six-row-ceiling-descent-review-terminal.json",
+    "response_chars": 16326,
+    "observed_model": "gpt_6/pro",
+    "transport": "Original27595 EOF; recovered same dispatched task through verified matching session prompt, then terminal task API. No streamed response available for byte comparison; no resubmission."
+  },
+  "limitations": "General V/rotor residual budget, odd-start H shared tile bands, arbitrary source decomposition, exterior sign, unrestricted global5/6 improvement and rectangular-grid triple equality remain open. Submitted manuscript unchanged; no mail actions."
+}

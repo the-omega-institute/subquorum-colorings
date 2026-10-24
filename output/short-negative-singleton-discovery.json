@@ -1,0 +1,104 @@
+{
+  "scope": "Finite U-only discovery, never a substitute for arbitrary-source proof. The tight-return geometric no-extension theorem and complete 11-source certificate are independently reconstructed in the note and checker.",
+  "candidate_widths": [
+    6,
+    8,
+    10,
+    12
+  ],
+  "candidate_independent_legs": [
+    4,
+    6,
+    8
+  ],
+  "isometries": 8,
+  "maximum_additional_sources": 10,
+  "timeout_ms": 90000,
+  "runs": [
+    {
+      "command": "python3 develop/discover_short_negative_singleton_completion.py 10 18",
+      "window_lower": [
+        -6,
+        -6
+      ],
+      "window_upper": [
+        18,
+        22
+      ],
+      "candidate_count": 10656,
+      "status": "unsat",
+      "seconds": 15.73,
+      "meaning": "No extension in this bounded U-only library. Written stencil proof separately excludes arbitrary U/rotor extension."
+    },
+    {
+      "command": "python3 develop/discover_short_negative_singleton_completion.py 14 22",
+      "window_lower": [
+        -6,
+        -6
+      ],
+      "window_upper": [
+        22,
+        22
+      ],
+      "candidate_count": 15579,
+      "status": "sat",
+      "seconds": 26.29,
+      "meaning": "A completion exists; manifest is permanent in the note and independent checker. No minimality claim."
+    }
+  ],
+  "complete_witness": {
+    "images": 32,
+    "b6_negative_branch_images": 8,
+    "exact_connected_report": {
+      "owners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "endpoints": 278,
+      "matching": 139,
+      "selected": 62,
+      "endpoint_components": 1,
+      "shape": [
+        28,
+        28
+      ],
+      "ambient_slack": 191,
+      "positive": 3,
+      "marked": 2,
+      "activated_positive": 4,
+      "unused_u_triples": 2,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 5,
+      "sole_irregular_pair": 19,
+      "mutual_non_event": 0,
+      "mixed_three": 3,
+      "boundary_cost": 46,
+      "event_reserve": 26,
+      "exact_joint_margin": 27
+    },
+    "least_feasible_seed_hull": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "source_count_minimality_claim": false,
+    "scope": "Complete actual negative H branch, every original support and matching retained. Connectedness and Horn closure checked independently; positive margin27, not an allocation counterexample."
+  }
+}

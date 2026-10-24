@@ -1,0 +1,1794 @@
+{
+  "status": "PASS",
+  "controls": {
+    "whole_beta_resources_consumed": 196,
+    "source_alpha_unit_allocation_controls": 943,
+    "original_beta_path_resources_assigned": 102,
+    "nonempty_source_alpha_unit_allocations": 94,
+    "terminal_models": 15033,
+    "original_path_objects": 155070,
+    "cancellation_links": 72362,
+    "abstract_controls": 346,
+    "cancellation_cycles": 37674,
+    "all_horizontal_matching_controls": 13376,
+    "exhaustive_horizontal_parameter_pairs": 6,
+    "independent_forced_matching_edges": 4576,
+    "unique_frozen_pairs": 143,
+    "uniform_serial_freezing_events": 9152,
+    "uniform_forced_template_edges": 4576,
+    "virtual_connector_models": 1135,
+    "residual_unported_paths": 1313,
+    "physical_receiver_closed_cropped_packets": 143,
+    "selected_cap_access_candidates": 4130,
+    "extended_access_ownership_models": 496,
+    "selected_cap_family_compensations": 143,
+    "selected_cap_boundary_collision_controls": 13,
+    "fully_frozen_parameter_pairs": 143,
+    "hall_deficient_rows": 286,
+    "symmetry_controls": 8,
+    "independent_stack_controls": 32,
+    "mixed_stack_controls": 27
+  },
+  "examples": [
+    {
+      "width": 6,
+      "height": 4,
+      "injection": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 5
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 3,
+          "omitted": 1,
+          "margin_twice": 278,
+          "h1": 18,
+          "h0": 140
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ],
+              [
+                10,
+                5
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                5
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 2
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            5
+          ],
+          [
+            10,
+            5
+          ]
+        ]
+      },
+      "maximal_continuation": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 5
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            [
+              10,
+              4
+            ]
+          ],
+          [
+            [
+              10,
+              5
+            ],
+            [
+              10,
+              6
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 1,
+          "omitted": 1,
+          "margin_twice": 278,
+          "h1": 18,
+          "h0": 140
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ],
+              [
+                10,
+                5
+              ],
+              [
+                10,
+                6
+              ],
+              [
+                10,
+                7
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                7
+              ],
+              [
+                10,
+                7
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 4
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            7
+          ],
+          [
+            10,
+            7
+          ]
+        ]
+      },
+      "cropped_packet": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 5
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            [
+              10,
+              4
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 3,
+          "omitted": 1,
+          "margin_twice": 18,
+          "h1": 8,
+          "h0": 10
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ],
+              [
+                10,
+                5
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                5
+              ],
+              [
+                10,
+                5
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 2
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            5
+          ],
+          [
+            10,
+            5
+          ]
+        ]
+      },
+      "selected_cap_compensation": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 5,
+        "omitted": 0,
+        "margin_twice": 18,
+        "h1": 8,
+        "h0": 9
+      },
+      "selected_cap_after_first_injection": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 3,
+        "omitted": 1,
+        "margin_twice": 18,
+        "h1": 8,
+        "h0": 10
+      },
+      "selected_cap_after_maximal_continuation": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 1,
+        "omitted": 0,
+        "margin_twice": 18,
+        "h1": 6,
+        "h0": 10,
+        "h2": 1
+      },
+      "bottom_hall_counts": [
+        3,
+        2
+      ],
+      "shape": [
+        18,
+        20
+      ],
+      "selected": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "matching": [
+        [
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            10,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        [
+          [
+            9,
+            5
+          ],
+          [
+            9,
+            6
+          ]
+        ]
+      ],
+      "freezing_certificate": [
+        [
+          {
+            "endpoint": [
+              5,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                2
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              5,
+              7
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                7
+              ],
+              [
+                5,
+                8
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              10,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                10,
+                2
+              ],
+              [
+                11,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              10,
+              7
+            ],
+            "kept_neighbors": [
+              [
+                10,
+                8
+              ],
+              [
+                11,
+                7
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              5,
+              5
+            ],
+            "kept_neighbors": [
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                6
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              9,
+              6
+            ],
+            "kept_neighbors": [
+              [
+                8,
+                6
+              ],
+              [
+                10,
+                6
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              10,
+              5
+            ],
+            "kept_neighbors": [
+              [
+                10,
+                6
+              ],
+              [
+                11,
+                5
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              6,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                5,
+                4
+              ],
+              [
+                6,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              9,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                9,
+                3
+              ],
+              [
+                9,
+                5
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              7,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                6,
+                3
+              ],
+              [
+                7,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              7,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                7,
+                5
+              ],
+              [
+                8,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              8,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                8,
+                4
+              ],
+              [
+                9,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              6,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              8,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                7,
+                4
+              ],
+              [
+                8,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              5,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                5,
+                3
+              ],
+              [
+                6,
+                4
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              9,
+              3
+            ],
+            "kept_neighbors": [
+              [
+                8,
+                3
+              ],
+              [
+                9,
+                4
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              5,
+              6
+            ],
+            "kept_neighbors": [
+              [
+                5,
+                5
+              ],
+              [
+                6,
+                6
+              ]
+            ]
+          },
+          {
+            "endpoint": [
+              10,
+              4
+            ],
+            "kept_neighbors": [
+              [
+                9,
+                4
+              ],
+              [
+                10,
+                3
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              9,
+              5
+            ],
+            "kept_neighbors": [
+              [
+                9,
+                4
+              ],
+              [
+                10,
+                5
+              ]
+            ]
+          }
+        ],
+        [
+          {
+            "endpoint": [
+              10,
+              6
+            ],
+            "kept_neighbors": [
+              [
+                9,
+                6
+              ],
+              [
+                10,
+                5
+              ]
+            ]
+          }
+        ]
+      ],
+      "full_freezing_count": 20
+    },
+    {
+      "width": 12,
+      "height": 8,
+      "injection": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 9
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              16,
+              3
+            ],
+            [
+              16,
+              4
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 7,
+          "omitted": 1,
+          "margin_twice": 550,
+          "h1": 24,
+          "h0": 276
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                16,
+                3
+              ],
+              [
+                16,
+                4
+              ],
+              [
+                16,
+                5
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                5
+              ],
+              [
+                16,
+                5
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 2
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            5
+          ],
+          [
+            16,
+            5
+          ]
+        ]
+      },
+      "maximal_continuation": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 9
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          [
+            [
+              16,
+              3
+            ],
+            [
+              16,
+              4
+            ]
+          ],
+          [
+            [
+              16,
+              5
+            ],
+            [
+              16,
+              6
+            ]
+          ],
+          [
+            [
+              16,
+              7
+            ],
+            [
+              16,
+              8
+            ]
+          ],
+          [
+            [
+              16,
+              9
+            ],
+            [
+              16,
+              10
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 3,
+          "omitted": 1,
+          "margin_twice": 550,
+          "h1": 24,
+          "h0": 276
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                16,
+                3
+              ],
+              [
+                16,
+                4
+              ],
+              [
+                16,
+                5
+              ],
+              [
+                16,
+                6
+              ],
+              [
+                16,
+                7
+              ],
+              [
+                16,
+                8
+              ],
+              [
+                16,
+                9
+              ],
+              [
+                16,
+                10
+              ],
+              [
+                16,
+                11
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                7
+              ],
+              [
+                16,
+                11
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 6
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            7
+          ],
+          [
+            16,
+            11
+          ]
+        ]
+      },
+      "cropped_packet": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 9
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              16,
+              3
+            ],
+            [
+              16,
+              4
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 7,
+          "omitted": 1,
+          "margin_twice": 94,
+          "h1": 14,
+          "h0": 48
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                16,
+                3
+              ],
+              [
+                16,
+                4
+              ],
+              [
+                16,
+                5
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                5
+              ],
+              [
+                16,
+                5
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 2
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            5
+          ],
+          [
+            16,
+            5
+          ]
+        ]
+      },
+      "selected_cap_compensation": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 9,
+        "omitted": 0,
+        "margin_twice": 94,
+        "h1": 14,
+        "h0": 47
+      },
+      "selected_cap_after_first_injection": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 7,
+        "omitted": 1,
+        "margin_twice": 94,
+        "h1": 14,
+        "h0": 48
+      },
+      "selected_cap_after_maximal_continuation": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 3,
+        "omitted": 0,
+        "margin_twice": 94,
+        "h1": 14,
+        "h0": 47
+      },
+      "bottom_hall_counts": [
+        5,
+        4
+      ]
+    },
+    {
+      "width": 30,
+      "height": 24,
+      "injection": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 25
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              34,
+              3
+            ],
+            [
+              34,
+              4
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 23,
+          "omitted": 1,
+          "margin_twice": 2262,
+          "h1": 42,
+          "h0": 1132
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                34,
+                3
+              ],
+              [
+                34,
+                4
+              ],
+              [
+                34,
+                5
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                5
+              ],
+              [
+                34,
+                5
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 2
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            5
+          ],
+          [
+            34,
+            5
+          ]
+        ]
+      },
+      "maximal_continuation": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 25
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          [
+            [
+              34,
+              3
+            ],
+            [
+              34,
+              4
+            ]
+          ],
+          [
+            [
+              34,
+              5
+            ],
+            [
+              34,
+              6
+            ]
+          ],
+          [
+            [
+              34,
+              7
+            ],
+            [
+              34,
+              8
+            ]
+          ],
+          [
+            [
+              34,
+              9
+            ],
+            [
+              34,
+              10
+            ]
+          ],
+          [
+            [
+              34,
+              11
+            ],
+            [
+              34,
+              12
+            ]
+          ],
+          [
+            [
+              34,
+              13
+            ],
+            [
+              34,
+              14
+            ]
+          ],
+          [
+            [
+              34,
+              15
+            ],
+            [
+              34,
+              16
+            ]
+          ],
+          [
+            [
+              34,
+              17
+            ],
+            [
+              34,
+              18
+            ]
+          ],
+          [
+            [
+              34,
+              19
+            ],
+            [
+              34,
+              20
+            ]
+          ],
+          [
+            [
+              34,
+              21
+            ],
+            [
+              34,
+              22
+            ]
+          ],
+          [
+            [
+              34,
+              23
+            ],
+            [
+              34,
+              24
+            ]
+          ],
+          [
+            [
+              34,
+              25
+            ],
+            [
+              34,
+              26
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 11,
+          "omitted": 1,
+          "margin_twice": 2262,
+          "h1": 42,
+          "h0": 1132
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                5,
+                7
+              ],
+              [
+                34,
+                3
+              ],
+              [
+                34,
+                4
+              ],
+              [
+                34,
+                5
+              ],
+              [
+                34,
+                6
+              ],
+              [
+                34,
+                7
+              ],
+              [
+                34,
+                8
+              ],
+              [
+                34,
+                9
+              ],
+              [
+                34,
+                10
+              ],
+              [
+                34,
+                11
+              ],
+              [
+                34,
+                12
+              ],
+              [
+                34,
+                13
+              ],
+              [
+                34,
+                14
+              ],
+              [
+                34,
+                15
+              ],
+              [
+                34,
+                16
+              ],
+              [
+                34,
+                17
+              ],
+              [
+                34,
+                18
+              ],
+              [
+                34,
+                19
+              ],
+              [
+                34,
+                20
+              ],
+              [
+                34,
+                21
+              ],
+              [
+                34,
+                22
+              ],
+              [
+                34,
+                23
+              ],
+              [
+                34,
+                24
+              ],
+              [
+                34,
+                25
+              ],
+              [
+                34,
+                26
+              ],
+              [
+                34,
+                27
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                7
+              ],
+              [
+                34,
+                27
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 14
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            7
+          ],
+          [
+            34,
+            27
+          ]
+        ]
+      },
+      "cropped_packet": {
+        "original": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 25
+        },
+        "links": [
+          [
+            [
+              5,
+              3
+            ],
+            [
+              5,
+              4
+            ]
+          ],
+          [
+            [
+              34,
+              3
+            ],
+            [
+              34,
+              4
+            ]
+          ]
+        ],
+        "virtual": {
+          "alpha": 1,
+          "beta": 0,
+          "gamma": 23,
+          "omitted": 1,
+          "margin_twice": 722,
+          "h1": 32,
+          "h0": 362
+        },
+        "cancellation_components": [
+          {
+            "vertices": [
+              [
+                5,
+                3
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                5
+              ],
+              [
+                34,
+                3
+              ],
+              [
+                34,
+                4
+              ],
+              [
+                34,
+                5
+              ]
+            ],
+            "ends": [
+              [
+                5,
+                5
+              ],
+              [
+                34,
+                5
+              ]
+            ],
+            "cycle": false,
+            "alpha": 1,
+            "beta": 0,
+            "gamma": 2
+          }
+        ],
+        "free_missing_tp": [
+          [
+            5,
+            5
+          ],
+          [
+            34,
+            5
+          ]
+        ]
+      },
+      "selected_cap_compensation": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 25,
+        "omitted": 0,
+        "margin_twice": 722,
+        "h1": 32,
+        "h0": 361
+      },
+      "selected_cap_after_first_injection": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 23,
+        "omitted": 1,
+        "margin_twice": 722,
+        "h1": 32,
+        "h0": 362
+      },
+      "selected_cap_after_maximal_continuation": {
+        "alpha": 1,
+        "beta": 0,
+        "gamma": 11,
+        "omitted": 0,
+        "margin_twice": 722,
+        "h1": 32,
+        "h0": 361
+      },
+      "bottom_hall_counts": [
+        13,
+        12
+      ]
+    }
+  ],
+  "scope": "General written terminal-cancellation conservation and virtual connector ledger; fully frozen uniformly stranded continuation and all-missing-TP Hall obstruction. This refutes proposed port-exposure/automatic-credit rules, not the grid target."
+}

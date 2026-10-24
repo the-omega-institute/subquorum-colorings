@@ -1,0 +1,130 @@
+ACCEPTThe new theorem package, including Section 5, is mathematically sound on its stated scope: exact statements about the displayed endpoint-disjoint inventories, together with necessary ownership conditions for any complete extension. The positive tail phase, the two new mixed full tiles and nine new directed events, the interior escape exclusion, and the simultaneous specified-owner compensation all check out for the full stated parameter ranges.I found two inaccurate geometric descriptions in Section 4. Both have immediate coordinate corrections, given below; neither changes a theorem statement, parameter restriction, event list, or numerical receipt. I found no substantive missing hypothesis, omitted consumer role, or duplicated source budget.This is an ordinary mathematical review. I do not certify the claimed Python or Lean executions. I use the preceding accepted chain theorem for its existing inventory and baseline ledger, and check the newly adjoined originals and their interactions against the supplied full-original coordinates.1. Exact receipts and the bookkeeping principleWrite
+$$B=\sum_{i=0}^{n-1}(w_i+9).$$
+The accepted input is
+$$\Phi(H_1)=B+h-1-n.$$
+All new receipts are correct:Added originalOriginal charge $\Delta N$  $\Delta S$  $\Delta F$  $\Delta E$  $\Delta\Phi$  $Z_i$  $0$  $0$  $0$  $0$  $0$  $0$ Specified new  $L_i$  $-1$  $0$  $1$  $1$  $3$  $0$ Tail  $J$  $+1$  $1$  $0$  $2$  $9$  $-4$ Specified  $Y_i$  $-(w_i+13)$  $0$  $w_i+13$  $w_i/2+10$  $2w_i+32$  $1$ The relevant bookkeeping principle is valid here. When endpoint-disjoint full originals are adjoined:An old source’s charge does not change when one of its original supports is consumed.An old directed event does not disappear: its exclusion test still uses the source owner’s fixed original-support set.An old mixed full endpoint tile remains mixed and full.New events and new mixed full tiles can therefore be counted by exact set difference against the whole old inventory.The note applies this principle correctly. In particular, it does not count an already included  $V_{i-1}$  again when that original supplies a later block’s upper consumer, and it does not reuse the exhausted  $P_i^0$  source mass to pay for a later stage.For the coordinate checks below, normalize relative to  $(a_i,s_i)$ . Because  $a_i$  is odd and  $s_i$  is even, physical tiles have relative coordinates
+$$\{2p-1,2p\}\times\{2q,2q+1\}.$$
+This phase is essential to several of the boundary exclusions.2. Sections 1–2: simultaneous zero-gain closureThe  $Z_i$  charge and zero-contact receiptThe listed  $Z_i$  endpoints occupy exactly four physical tiles:
+$$\begin{aligned}
+&\{-5,-4\}\times\{-2,-1\},\\
+&\{-3,-2\}\times\{-2,-1\},\\
+&\{-3,-2\}\times\{0,1\},\\
+&\{-1,0\}\times\{0,1\}.
+\end{aligned}$$
+Exactly four of its original supports lie in these endpoint tiles:
+$$(-5,-1),\quad(-4,-2),\quad(-1,1),\quad(0,0).$$
+With four matching edges, this gives
+$$q(Z_i)=4+4-2\cdot4=0.$$
+The local absence of new contacts is stronger than merely an absence of surviving events:  $Z_i$  shares no endpoint tile with the old local inventory.Every local base endpoint has column at least  $2$ , whereas  $Z_i$  has column at most  $1$ ; the boundary between columns  $1$  and  $2$  is a physical tile-column boundary. The only relevant old endpoints farther left belong to the column- $1$  far stem of  $P_i^0$ , which ends at row  $-4$ . The new endpoint  $q_i=(-3,1)$  is in the next physical tile row.Thus neither an intratile event nor an overlooked mixed full tile is introduced:
+$$\Delta F=\Delta E=0.$$
+The specified new  $L_i$ The new  $L_i$  has nine matching edges, seven endpoint tiles, and four original supports inside those tiles:
+$$(-3,1),\quad(-3,-4),\quad(-1,0),\quad(-1,-3).$$
+Therefore
+$$q(L_i)=9+4-2\cdot7=-1.$$
+There are exactly two tiles shared with  $Z_i$ : $\{-3,-2\}\times\{0,1\}$ , which becomes full when  $r_i=(-2,1)$  is added. $\{-1,0\}\times\{0,1\}$ , which contains only three endpoints and remains partial.In the first tile, the two foreign geometric edges are
+$$Z_i:(-3,1)\;-\;L_i:(-2,1),
+\qquad
+Z_i:(-2,0)\;-\;L_i:(-2,1).$$
+Both  $Z_i$ -outgoing directions survive. The direction from  $r_i$  to  $q_i$  is excluded by  $L_i$ ’s original axial support, while the direction from  $r_i$  to  $(-2,0)$  survives. This is exactly the listed three-event receipt.The second tile deserves explicit attention because absence of events alone would not establish absence of a full tile. Its one foreign adjacency is
+$$Z_i:(-1,0)\;-\;L_i:(-1,1).$$
+Both directions are excluded: $(-1,1)$  is a  $Z_i$  original support. $(-1,0)$  is an  $L_i$  original support.The tile has only three endpoints, so it contributes neither a new full tile nor an event. Consequently
+$$\Delta\Phi(L_i)=1+2-3=0.$$
+Simultaneous separationThe inter-block bounds suffice, including for nonuniform widths and leg lengths. Preceding bases and repairs are separated from the new western originals by columns; following bases are separated by rows; and new originals at distinct indices have the stated row gaps.One small proof-writing addition would make Section 2 fully explicit: later  $P_j^0$  should be mentioned alongside later bases. For  $j>i$ ,
+$$\min\operatorname{row}(P_j^0)=a_j-8\ge a_i+10,$$
+whereas  $Z_i$  and the new  $L_i$  have maximum row at most  $a_i+2$ . This is already a consequence of the existing hypotheses, not an additional hypothesis.The owner counts are also correct:
+$$|H_1|=10n+1,\qquad |H_2|=11n+1,\qquad |H_3|=12n+1.$$
+The retained  $t_i$  obstructionThe point
+$$t_i=(a_i-4,s_i)$$
+is indeed the  $P_i^0$  original support with intrinsic coordinates  $(4,w_i+13)$ . It remains outside the enlarged endpoint sets and has the three stated retained endpoint neighbors.Thus, as an unconsumed original support, its occupied degree is at least three, contradicting the degree-one requirement. This proves incompleteness of both  $H_2$  and  $H_3$ . It does not require a classification of every other unresolved support.3. Section 3: actual-owner alternatives and interior exclusionThe owner-role classification is exhaustiveAt  $r_i$ , the north, west, and east neighbors are endpoints of retained originals. Completeness forces consumption because otherwise  $r_i$ , an original support of  $V_i$ , would have occupied degree at least three.Endpoint disjointness prevents its new owner from using any of those three neighbors as its own endpoint. Its matching partner must therefore be south, and  $r_i$  has exactly one own endpoint neighbor.For a canonical  $U$ , every nonterminal endpoint has at least two own endpoint neighbors. Hence  $r_i$  must be a leg terminal. Exchanging the full original legs and allowing the two horizontal orientations gives precisely the two displayed frames.The rotor exclusion is also complete. With a tip fixed at  $r_i$  and its matching partner fixed southward, there are two distinct rotor placements up to the rotor’s rotational symmetry. They contain, respectively,
+$$(a_i-1,s_i+2)
+\quad\text{and}\quad
+(a_i-1,s_i).$$
+These collide with retained  $V_i$  and  $Z_i$  endpoints. No additional rotor terminal role survives.This argument uses the full original endpoint graph. It does not infer a terminal role from a consumed or reconstructed local picture.Both charge phases hold for every allowed breadth and depthSet
+$$H=2b,\qquad d=2u,\qquad f=2v,\qquad R=a_i+d-2.$$
+Then  $R$  is odd, and the matching count is
+$$m=2b-1+u+v.$$
+For the right frame, the bar occupies  $b+1$  endpoint tiles and the legs add  $u+v$ . The original supports inside endpoint tiles comprise:two bar-exterior supports;two axial supports;the  $u+v$  even-row lateral supports.Thus
+$$T_{\rm right}=b+1+u+v,\qquad
+I_{\rm right}=u+v+4,$$
+and
+$$q_{\rm right}
+=(2b-1+u+v)+(u+v+4)-2(b+1+u+v)
+=1.$$
+For the left frame,
+$$T_{\rm left}=b+u+v.$$
+The two axial supports and the odd-row lateral supports contribute
+$$I_{\rm left}=2+(u-1)+(v-1)=u+v,$$
+while the bar-exterior supports are outside the endpoint tiles. Therefore
+$$q_{\rm left}
+=(2b-1+u+v)+(u+v)-2(b+u+v)
+=-1.$$
+These counts include original supports already occupied by other owners’ endpoints. Removing them after consumption would give the wrong charge.The depth threshold and the interior collision are validFor a right-frame owner, the bar cell at column  $s_i+2$  and row
+$$a_i+d-3$$
+collides with  $V_i$ ’s far stem whenever  $d<z_i-2$ . Since both quantities are even, this inequality implies
+$$d\le z_i-4.$$
+Together with  $d\ge4$ , it places the displayed bar cell within the retained far-stem interval. Thus
+$$d\ge z_i-2$$
+is a necessary condition.Once this condition holds, the right owner’s column- $(s_i+1)$  near stem covers all rows from  $a_i-2$  through
+$$a_i+d-2\ge a_i+z_i-4.$$
+For  $i<n-1$ , it therefore contains
+$$(a_i+z_i-6,s_i+1),$$
+which is precisely the retained  $E_{i+1}$  endpoint identified in the note.This excludes the right frame at every interior position, independently of its breadth and other-leg depth. It is an unbounded geometric exclusion, not a conclusion from a short-depth catalogue.Finally, all  $r_i$  have the same checkerboard color, whereas the two terminals of every legal  $U$  have opposite colors. Their actual owners are therefore distinct. The consequence of at least  $n-1$  fresh charge- $-1$  originals is correct, including the  $n=1$  boundary case.The note appropriately stops short of turning that source-mass statement into a contact-compensation inequality.4. Section 4: the positive tail has exactly two new full tiles and nine eventsLegality and separation for arbitrary depthFor
+$$J=U(w,d,d-6),\qquad d\ge z-2\ge22,$$
+the other depth satisfies
+$$d-6\ge16,$$
+so every displayed  $J$  is a legal full original.Its near and far terminal rows are  $a-2$  and  $a+4$ . Its bar rows are
+$$a+d-3,\qquad a+d-2.$$
+At the minimum depth, the lower  $V$  terminal is at row  $a+z-6$ , and the first  $J$  bar row is  $a+z-5$ . These adjacent rows lie in different physical tile rows: the former is odd and the latter even. Increasing  $d$  only increases separation.The preceding-owner column bounds also remain valid for arbitrarily long  $J$ . This is important: arbitrarily large depth is harmless here because the separation from earlier originals is by columns, not by a bounded row interval.Near-stem contribution: one tile and three eventsRelative to  $(a,s)$ , the three surviving events are exactly
+$$\begin{aligned}
+Z:(-3,1)&\longrightarrow J:(-2,1),\\
+Z:(-2,0)&\longrightarrow J:(-2,1),\\
+J:(-1,1)&\longrightarrow Z:(-1,0).
+\end{aligned}$$
+The respective reverse directions are excluded by: $J$ ’s original axial support  $(-3,1)$ ; $J$ ’s original even-row lateral support  $(-2,0)$ ; $Z$ ’s original support  $(-1,1)$ .The tile
+$$\{-3,-2\}\times\{0,1\}$$
+becomes full. The next tile,
+$$\{-1,0\}\times\{0,1\},$$
+still has only three endpoints. Hence the near-stem receipt is exactly
+$$(\Delta F,\Delta E)=(1,3).$$
+This differs correctly from the specified left  $L_i$ : the third surviving event moves to the next stem endpoint because the lateral-support phase changes.Far-stem contribution: one tile and six eventsThe  $J$  far stem and  $W$ ’s left bar overlap at rows
+$$a+4,a+5,a+6,a+7.$$
+All four  $W\to J$  directions survive. The  $J\to W$  directions survive only at  $a+5,a+7$ ; the directions at  $a+4,a+6$  target  $J$ ’s original lateral supports.The overlap occupies three physical tile rows:Relative tile rowsEndpoint occupancy $\{3,4\}$ Three endpoints $\{5,6\}$ Four endpoints $\{7,8\}$ Three endpointsThus only
+$$\{a+5,a+6\}\times\{s+w,s+w+1\}$$
+is a new full tile. The neighboring missing cells are not filled by another retained original.The far-stem receipt is therefore
+$$(\Delta F,\Delta E)=(1,6).$$
+Combining the two disjoint regions gives
+$$\Delta F=2,\qquad \Delta E=9.$$
+With the already established positive source charge,
+$$\Delta\Phi=1+2\cdot2-9=-4.$$
+Two precise corrections to Section 4First, the sentence about a west support of  $W$  is false under the supplied canonical support set.The chart is
+$$(r,c)\longmapsto(a+1+c,s+w+1+r).$$
+Every target  $(a+j,s+w)$  has intrinsic  $W$ -row  $r=-1$ . All canonical original supports have intrinsic row at least zero. Consequently there is no  $W$  original support at any such target, including the claimed exceptional first row.Replace the relevant justification by:Each  $J$  target in this band has intrinsic  $W$ -row  $-1$ , so none belongs to  $W$ ’s original-support set.This proves the needed four event survivals directly.Second, the far stem does not start below  $Q$ ’s bar.The rotated  $Q$  bar spans rows  $a+5,\ldots,a+10$ , while the  $J$  far stem starts at  $a+4$ . Remove  $Q$  from the “starts below the … bars” list.The correct exclusion is already available from the next clause:  $Q$  has maximum column  $s+11$ . At the boundary value  $w=12$ , columns  $s+11$  and  $s+12$  lie in different physical tile columns; for larger even  $w$ , they are farther apart. Hence  $Q$  produces no intratile contribution.Neither correction changes the exact tail receipt.5. Section 5: the specified-owner compensation is correctOriginal charge of  $Y_i$ Put  $H=w+14$ . For
+$$Y=U(H,6,4),\qquad(r,c)\mapsto(-10+r,-1+c),$$
+the matching has
+$$H-1+3+2=H+4$$
+edges.There are  $H+3$  endpoint tiles. The two bar rows belong to different physical tile rows and contribute  $H$  tiles altogether; the near and far stems add two and one further tiles.Exactly three original supports lie in those endpoint tiles: the near-side supports at intrinsic rows  $3,5$ , and the far-side support at intrinsic row  $3$ . Therefore
+$$q(Y)=(H+4)+3-2(H+3)=1-H=-(w+13).$$
+Those three supports must still be counted even though they are occupied by  $P^0$  endpoints in the union. The note’s full-original convention handles this correctly.Exact tiles and eventsThe displayed top-band tile list has
+$$\frac w2+7$$
+members. Its two extreme tiles each contain three  $Y$  endpoints and one  $P^0$  endpoint; the interior tiles contain two of each. The extremes are therefore genuinely mixed full tiles and correctly included.The three additional stem tiles give
+$$\Delta F=\frac w2+10.$$
+The event partition is likewise exact:Vertical bar-band events:  $2(w+12)$ .Column- $0/1$  stem events:  $5$ .Column- $(w+12)/(w+13)$  stem events:  $3$ .Hence
+$$\Delta E=2w+32$$
+and
+$$\Delta\Phi
+=(w+13)+2\left(\frac w2+10\right)-(2w+32)
+=1.$$
+The omitted directions in the stem lists are precisely original bar-exterior or lateral supports. The lists neither omit surviving directions nor restore directions excluded by original supports.Why the receipts add simultaneouslyThe potentially delicate preceding-base separation is valid. The largest  $Y_i$  column is
+$$x_i-1=s_i+w_i+13,$$
+which is odd. Every preceding base endpoint has column at least the even coordinate  $x_i$ . Thus even possible geometric adjacency crosses a physical tile-column boundary.Earlier  $P^0,Z,L$  endpoints end by row  $a_i-16$ , whereas  $Y_i$  starts at  $a_i-10$ . Later originals begin below its last endpoint row  $a_i-4$ . Different  $Y_i$  have the asserted row separation.Locally, the possible  $Y_i/Z_i$  adjacencies near  $t_i$  cross tile boundaries. The specified new  $L_i$ , or the tail  $J$ , starts at row  $a_i-2$ , in a different physical tile row from  $Y_i$ ’s last row  $a_i-4$ .These facts exclude additional shared tiles as well as additional events. Therefore adding all  $Y_i$  contributes exactly  $n$ , and both joint ledgers follow:
+$$\Phi(H_3\cup\{Y_i\})=B+h-1,$$
+and
+$$\Phi(H_2\cup\{L_i:i<n-1\}\cup\{J\}\cup\{Y_i\})
+=B+h-5.$$
+Since  $h\ge6$ , the latter exceeds  $B$  by at least one.The compensated inventories remain incompleteThe last-block point
+$$u=(a-1,s+w+13)$$
+is exactly  $E$ ’s original axial support at intrinsic coordinates  $(5,6)$ .Its three claimed endpoint neighbors are present:west: the  $P^0$  near stem;south: the  $E$  far terminal;east: the root’s near stem when  $n=1$ , or the already counted  $V_{n-2}$  near stem otherwise.The tail  $Y$  has a stem in  $u$ ’s column, but that stem ends at  $a-6$ . The tail  $J$  has maximum column  $s+w$ . Neither consumes  $u$ , and the other originals are excluded by the established separations.Thus both compensated inventories still violate the degree-one condition at an unconsumed original support.6. Scope, source roles, and what remains openThe package maintains the essential distinctions.The actual-consumer theorem is conditional on a complete extension. It gives necessary owner roles and excludes every interior right frame. It does not assert that a complete extension exists.The displayed  $J$  is an endpoint-disjoint tail construction. Its negative marginal receipt refutes the stated endpoint-only nonnegative-marginal rule. Without an extension theorem, it does not demonstrate a negative marginal arising inside an actual complete feasible extension.Section 5 specifies the owners whose receipts are being added. Completeness forces consumption of the  $t_i$ , but the note does not prove that their arbitrary actual consumers must be the displayed  $Y_i$ , or have marginal gain at least one. The distinction is necessary and is preserved.There is also no absolute negative- $\Phi$  example here. Before adding the  $Y_i$ , the tail family has
+$$\Phi=B+h-5-n
+=\sum_i(w_i+8)+h-5
+\ge20n+1>0.$$
+Its obstruction concerns a marginal or relative-baseline claim, in addition to occurring in an incomplete inventory.Two small presentation clarifications would help preserve these distinctions:Rename the newly adjoined  $L_i$  to distinguish it from the base owner already named  $L$ .In Section 6, identify  $t_i$  as the next obligation before the specified  $Y_i$  are adjoined; after Section 5’s compensation, the displayed remaining obligation is  $u$ .Neither requires a mathematical change. The remaining substantive gap is exactly the one the note acknowledges: controlling arbitrary actual subsequent consumers and their joint contact debit in complete families. The present package proves its specified receipts and necessary exclusions without claiming that gap has been closed.

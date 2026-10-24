@@ -1,0 +1,97 @@
+ACCEPTNo must-fix issue found in the later shared-stop extension (8)–(10). The new  $E_{\mathrm{term}}$  separation is a valid geometric input, and the combined argument uses exactly the established capacity of two claims per activated positive leg, one jointly packed  $H$  family, and one injected  $Z_0$  family.I use the accepted initial two-corner result and the supplied passive-corner and critical shared-stop results as established inputs. This verdict concerns the new written extension; it does not certify execution or establish complete critical U10 existence.1.  $E_{\mathrm{term}}$  is the required actual terminal occurrenceThe interpretation of  $E_{\mathrm{term}}$  as the passive-corner theorem’s  $E_1$  class is faithful.In that theorem’s normalization, the producing phase10 source has its outer bar on row  $0$ , inner bar on row  $-1$ , columns  $1,\ldots,v$ , and its stems point north. The next receiver is the actual physical tile
+$$Q=\{0,1\}\times\{2,3\}.$$
+Its complete original profile is
+$$P_{\mathrm{parent}}\cap Q=\{(0,2),(0,3)\},
+\qquad
+S_{\mathrm{parent}}\cap Q=\varnothing.$$
+This is an exact original irregular  $2P0T$  pair. The source’s stems and their supports extend north, and its row-zero exterior supports lie outside columns  $2,3$ . The minimum width  $v\ge6$  prevents interference from the opposite end. Independent stem heights do not change this profile.The  $E_1$  branch specifically identifies  $x=(1,2)$  as a positive terminal, with predecessor south, exterior east, and bar west. It is distinct from the positive outer-corner branch counted by  $C_1$ .For an explicit complete-source adapter, represent this terminal as the canonical right terminal  $(a,w)$ . The map
+$$\Phi(i,j)=(a+1-i,\ j-w+2)$$
+sends it to  $x$ . The preimage of the actual  $Q$  is
+$$\{a,a+1\}\times\{w,w+1\}.$$
+Since  $a,w$  are even, this is the phase00 terminal tile. Its unique original endpoint is  $(a,w)$ , and its two original intratile supports map to
+$$(0,2),\qquad (1,3).$$
+The  $E_1$  branch occurs when  $Q$  is full. Both supports therefore belong to final  $P$ , so this terminal is actually activated and is counted by  $A$ . The producing parent’s pair is foreign to its owner: the parent has exactly its two top-row endpoints in  $Q$ , and original endpoint ownership is unique.This establishes the specific new fact needed in (8): every  $E_{\mathrm{term}}$  occurrence is an activated positive terminal whose own physical tile contains a foreign exact original  $2P0T$  pair.Source: PASSIVE_CORNERS_AND_NEUTRAL_OWNERSHIP_CYCLES.md, §§2–3.The occurrence injection is globalThe established injection has the needed scope, including the same-parent case.If two distinct producing parents claimed the same positive terminal, their two disjoint original pairs would have to fit among the other three corners of that terminal’s tile. That is impossible.For one producing parent, its two outer corners use different neighboring bar receivers when  $v\ge6$ . In the displayed normalization these lie at the two ends of the bar; the relevant column pairs are  $\{2,3\}$  and  $\{v-2,v-1\}$ , which are different. A particular original corner is itself counted only once.Thus  $E_{\mathrm{term}}$  counts distinct terminal occurrences. Repeated positive owners at different terminals do not create repeated occurrences.2. The three terminal families are pairwise disjointLet
+$$\mathcal E_{\mathrm{term}},\qquad
+\mathcal F_{\mathrm{pos}},\qquad
+\mathcal C_+$$
+be the actual positive terminal-occurrence sets counted by  $E_{\mathrm{term}},F_{\mathrm{pos}},C_+$ , respectively. Each is a subset of the activation set  $\mathcal A$ .Their distinguishing original profiles are:Terminal familyForeign exact original profile in its terminal tile $\mathcal E_{\mathrm{term}}$ Irregular  $2P0T$  pair $\mathcal F_{\mathrm{pos}}$ Phase11 cap  $3P0T$  triple $\mathcal C_+$ Regular  $2P1T$  pairIf two terminal occurrences coincide, their endpoint coincides and therefore their physical partition tile coincides. The following arguments compare original profiles in that same physical tile. $E_{\mathrm{term}}$  versus  $F_{\mathrm{pos}}$ The tile would contain an exact original pair and an exact original triple.If their owners differ, endpoint disjointness requires  $2+3=5$  distinct original endpoints in a four-point tile.If their owners agree, that source’s intersection with the tile would have cardinality both two and three.Both cases are impossible. $E_{\mathrm{term}}$  versus  $C_+$ The tile would contain an exact original irregular pair and an exact original regular pair, both foreign to the common positive terminal.If their owners differ, the two disjoint pairs require four foreign endpoints in addition to the common terminal, hence five points in the tile.If their owners agree, their original support profiles contradict one another:
+$$S_{\mathrm{owner}}\cap Q=\varnothing
+\quad\text{and}\quad
+|S_{\mathrm{owner}}\cap Q|=1.$$
+The latter is the essential same-owner argument. Comparing only endpoint counts would not suffice, because both profiles have two endpoints. Comparing final retained supports would also be inadequate, because the regular pair’s support can be consumed. The written extension correctly compares original profiles, which remain different after consumption. $F_{\mathrm{pos}}$  versus  $C_+$ This is the accepted initial two-corner pair-versus-triple separation. Its same-owner and distinct-owner cases apply unchanged.Consequently
+$$\mathcal E_{\mathrm{term}}
+\sqcup\mathcal F_{\mathrm{pos}}
+\sqcup\mathcal C_+
+\subseteq\mathcal A,$$
+and hence
+$$\boxed{E_{\mathrm{term}}+F_{\mathrm{pos}}+C_+\le A.}
+\tag{8}$$
+This excludes overlap with all positive cap-filling occurrences, not merely a selected receiver subfamily.The argument is independent of owner freshness and component labels. It also respects transported tilings: each local normalization must be pulled back to the common physical configuration, where a terminal has one partition tile. The cardinalities of the original endpoint and support intersections are invariant under that transport.Sources: the later extension’s equation (8); the accepted initial two-corner separation in §2; the passive-corner geometry above.3. Combining (8) with  $C_1\le A$  uses exactly the justified factor twoThe two activation bounds describe two distinct kinds of claim: $C_1\le A$ : at most one claim through an activated positive leg’s outer corner. $E_{\mathrm{term}}+F_{\mathrm{pos}}+C_+\le A$ : at most one claim from the entire three-family union through that leg’s terminal.An activated leg may receive one claim of each kind. It cannot receive two terminal claims from the displayed union, because those terminal families are disjoint.Thus the argument permits at most two claims per activated occurrence. It does not assign separate copies of  $A$  to  $E_{\mathrm{term}}$ ,  $F_{\mathrm{pos}}$ , and  $C_+$ .This is exactly the capacity appearing after expanding the proposed right-hand side:
+$$2R+A=2A+U_0+Z_0+H.$$
+The additional  $A$  on the right is therefore consequential. The argument does not obtain the same left-hand side bounded by  $2R$  alone.No separation between  $C_1$  and the terminal union is needed for this bound. Their possible overlap is precisely what the established factor two allows.Source: PASSIVE_CORNERS_AND_NEUTRAL_OWNERSHIP_CYCLES.md, §3.4. Equation (9) uses the  $H$  and  $Z_0$  families onceWrite
+$$J=J_{01}+J_{11}+J_{\mathrm{crit}}.$$
+The supplied critical shared-stop theorem provides the joint packing
+$$D+C_0+J\le H,$$
+and the rotor-stop injection
+$$T_{\mathrm{crit}}\le Z_0.$$
+Using the same passive-corner partition
+$$B=D+C_0+C_1+E_{\mathrm{term}},$$
+the complete left-hand side of (9) decomposes as
+$$\begin{aligned}
+&B+J+T_{\mathrm{crit}}+F_{\mathrm{pos}}+C_++U_0\\
+&\quad=(D+C_0+J)
++C_1
++(E_{\mathrm{term}}+F_{\mathrm{pos}}+C_+)
++T_{\mathrm{crit}}+U_0\\
+&\quad\le H+A+A+Z_0+U_0\\
+&\quad=2R+A.
+\end{aligned}$$
+This proves
+$$\boxed{
+B+J+T_{\mathrm{crit}}+F_{\mathrm{pos}}+C_++U_0
+\le2R+A.
+}
+\tag{9}$$
+The exact slack makes the capacity accounting explicit:
+$$\begin{aligned}
+&2R+A-
+ \bigl(B+J+T_{\mathrm{crit}}+F_{\mathrm{pos}}+C_++U_0\bigr)\\
+&\quad=
+\underbrace{H-(D+C_0+J)}_{\ge0}
++\underbrace{A-C_1}_{\ge0}\\
+&\qquad\quad+
+\underbrace{A-(E_{\mathrm{term}}+F_{\mathrm{pos}}+C_+)}_{\ge0}
++\underbrace{Z_0-T_{\mathrm{crit}}}_{\ge0}.
+\end{aligned}$$
+Every nonnegative term corresponds to a stated geometric injection or joint packing.In particular:The proof uses  $D+C_0+J\le H$ , rather than adding several separate estimates against  $H$ . $T_{\mathrm{crit}}$  occupies a subfamily of actual  $Z_0$  occurrences once. $U_0$  remains one unchanged term.The initial two-corner lower bound is not added to the older shared-stop inequality as a separate reserve payment.All counts are global counts in the same complete fusion. No same-component AA specialization is imported into this argument.Source: CRITICAL_OWNER_PROFILES_AND_SHARED_STOPS.md, §4, together with the one exact reserve identity.5. Equation (10) is a literal substitution from the accepted pool identitySet
+$$e=|E_0|+|E_{1\mathrm{old}}|.$$
+The accepted negative singleton partition is
+$$F_{\mathrm{neg}}+e+K_C+C_-+L
+=2(K_{01}+K_{10}),$$
+and the original cap partition is
+$$F_{\mathrm{neg}}+F_{\mathrm{pos}}+U_0=2K_{11}.$$
+Eliminating  $F_{\mathrm{neg}}$  gives
+$$F_{\mathrm{pos}}+U_0
+=
+2(K_{11}-K_{01}-K_{10})
++e+K_C+C_-+L.$$
+Adding  $C_+$  and using  $C_-+C_+=K_C$  yields the exact equality
+$$\boxed{
+F_{\mathrm{pos}}+C_++U_0
+=
+2(K_{11}-K_{01}-K_{10})
++e+2K_C+L.
+}
+\tag{*}$$
+Replace precisely this block on the left of (9) by (*). The result is
+$$\boxed{
+B+J+T_{\mathrm{crit}}
++2(K_{11}-K_{01}-K_{10})
++|E_0|+|E_{1\mathrm{old}}|
++2K_C+L
+\le2R+A,
+}
+\tag{10}$$
+exactly as written.No additional activation bound or nonnegativity assumption is needed for this replacement. Nonnegativity of  $L$  is used only in the subsequent step that drops  $L$ .This also explains why the negative singleton reservations are not counted a second time: they enter through an equality replacing the already budgeted expression  $F_{\mathrm{pos}}+C_++U_0$ . They are not appended to (9) as another independent demand.If  $\mathcal S$  denotes the four-term nonnegative slack displayed for (9), then after dropping  $L$ , the resulting inequality has slack exactly
+$$\mathcal S+L\ge0.$$
+That gives a direct certificate for the final simultaneous inequality.The two new conditional Lean statements match this mathematical structure: the first packages the joint capacity bounds, and the second performs the exact pool/cap substitution. This is a check of their stated mathematical implications, not of compilation.6. Scope of the accepted extensionNo additional freshness, component-separation, or unused-capacity hypothesis is needed. The indispensable geometric facts are present: $E_{\mathrm{term}}$  consists of actual positive terminal activations.Its producing pair is foreign and has an exact original  $2P0T$  profile.All profiles are compared in one fixed transported physical partition.The  $H$  stop bound is jointly chosen, and the  $Z_0$  stop assignment is injective. $C_1$  uses at most one corner claim per activated leg.Equation (9) is stronger than the preceding stop bound by the nonnegative retained term  $F_{\mathrm{pos}}+C_+$ . Equation (10) then retains both route-C corner occurrences through the same singleton/cap partition.The signed source-census term and the additional  $A$  on the right must remain. Their unresolved control is consistent with leaving unrestricted  $N+R-G\ge0$  and the grid triple equality open.

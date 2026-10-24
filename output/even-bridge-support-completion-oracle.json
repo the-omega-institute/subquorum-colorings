@@ -1,0 +1,30 @@
+{
+  "status": "COMPLETED",
+  "mathematical_verdict": "ACCEPT",
+  "accepted_receipt": "output/even-bridge-support-completion-review-accepted.json",
+  "reviewed_source": "docs/EVEN_BRIDGE_SUPPORT_COMPLETION.md",
+  "scope": "General written graph and tile proof, including terminality equivalence, exact X/B corrections, exclusion of two-endpoint t=0 bridge tiles, and all-even-bridge iteration. No reviewer code execution is requested or claimed.",
+  "terminal_first_attempt": {
+    "task_id": "165b9db2-98ae-4ccd-b865-1d4a94d90338",
+    "conversation_id": "conv_b7839e406e8a6f20",
+    "status": "failed",
+    "failure_reason": "no_assistant_output",
+    "completed_at_utc": "2026-10-22T10:01:46.673+00:00",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "mathematical_review_received": false
+  },
+  "active_review": {
+    "task_id": "67c5658f-f695-417b-9a2f-6eaf67da9077",
+    "conversation_id": "conv_79dfee85cc1c5e3b",
+    "submitted_at_utc": "2026-10-22T10:02:16.835+00:00",
+    "status": "completed",
+    "exec_session": 55297,
+    "request_file": "/tmp/sahbi-even-bridge-final-review-request.json",
+    "stream_file": "/tmp/sahbi-even-bridge-final-review.sse",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro"
+  },
+  "resubmission_reason": "The first task was already terminal and supplied no mathematical answer. The final strengthened note was submitted to a new conversation only after that failure, not because a live review was slow.",
+  "continuation": "Original task completed ACCEPT, full DONE stream/task/session answer and request/session prompt agree. Direct raw-buffer calculation and support-multiplicity clarification are incorporated. Research goal remains active toward physical donor payment."
+}

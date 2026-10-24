@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "execution": "local, user-authorized",
+  "lean_version": "4.33.0",
+  "command": "cd formal && lean SubQuorum/FrozenSharedMixedGate.lean",
+  "exit_code": 0,
+  "scope": [
+    "General strict-rank certificate implies inductive endpoint freezing",
+    "Concrete grid bounds, selected-set feasibility and actual matching validity",
+    "All 64 concrete endpoints are inductively frozen",
+    "Three disjoint alternating paths with their TP/BP terminal types",
+    "Shared entrance adjacency, two physical resource positions and bypass blanks"
+  ],
+  "not_formalized": [
+    "General strand-normalization/flow equivalence",
+    "Optimization of full physical route network",
+    "Universal grid compensation inequality or improved 5/6 bound"
+  ],
+  "checked_dependencies": ["propext", "Quot.sound"],
+  "uses_sorry": false,
+  "uses_native_decide": false,
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure_free_percent": 43,
+    "lean_lake_processes_by_comm_basename": []
+  }
+}

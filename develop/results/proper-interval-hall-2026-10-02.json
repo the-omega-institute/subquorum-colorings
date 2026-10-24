@@ -1,0 +1,33 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "proper_families_checked": 35544,
+  "zero_capacity_hole_subsets_checked": 8,
+  "nonproper_counterexample": {
+    "intervals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "capacities": [
+      1,
+      1,
+      1
+    ],
+    "violating_subset": [
+      0,
+      2
+    ],
+    "violating_capacity": 1,
+    "all_consecutive_blocks_pass": true,
+    "interpretation": "Nested windows make block-only Hall checks unsound."
+  }
+}

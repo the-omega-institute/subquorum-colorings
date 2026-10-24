@@ -1,0 +1,93 @@
+{
+  "status": "PASS",
+  "obstruction": {
+    "disjoint_prescribed_patterns": 72,
+    "U_axial_roles": 35840,
+    "U_straight_interior_roles": 32256,
+    "U_role_pattern_collisions": 2580480,
+    "rotor_tip_footprints": 4,
+    "surviving_consumers": 0,
+    "U_dimensions_bounded_by": 18,
+    "includes_every_endpoint_anchor_in_each_bounded_U": true
+  },
+  "complete_pair_patterns": 307,
+  "extreme_pair_patterns": [
+    {
+      "bottom": 100,
+      "near": 200,
+      "endpoints": 422,
+      "matching": 211,
+      "selected": 214
+    },
+    {
+      "bottom": 200,
+      "near": 4,
+      "endpoints": 426,
+      "matching": 213,
+      "selected": 18
+    },
+    {
+      "bottom": 10,
+      "near": 200,
+      "endpoints": 242,
+      "matching": 121,
+      "selected": 214
+    }
+  ],
+  "bottom_eight_negative_controls": [
+    {
+      "bottom": 8,
+      "near": 4,
+      "bad_selected": [
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "bad_endpoints": []
+    },
+    {
+      "bottom": 8,
+      "near": 6,
+      "bad_selected": [
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "bad_endpoints": []
+    },
+    {
+      "bottom": 8,
+      "near": 20,
+      "bad_selected": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          12
+        ]
+      ],
+      "bad_endpoints": []
+    }
+  ],
+  "scope": "Finite controls only. Arbitrary-dimension statements use the written proof and scoped Lean lemmas. The complete two-source pair has no actual A/B/C gate or positive marked producer. No complete Vcorner witness, unrestricted allocation or grid equality is established."
+}

@@ -1,0 +1,29 @@
+{
+  "purpose": "Exploration of a possible connected frozen whole-receiver charge ceiling, before deriving the independent one-port isolation theorem.",
+  "script": "develop/search_corner_coverage.py",
+  "solver": "z3-solver 5.3.1",
+  "common_constraints": "Actual perfect matching, feasible selections, occupied degree at least three at endpoints, one connected endpoint component rooted at (3,3), endpoints at least two sites inside the ambient boundary, corrected whole-receiver charge at least two.",
+  "cases": [
+    {
+      "shape": [10, 10],
+      "require_full_freezing": true,
+      "solver_status": "unsat",
+      "seconds": 2.626
+    },
+    {
+      "shape": [10, 12],
+      "require_full_freezing": false,
+      "solver_status": "unknown",
+      "reason": "timeout",
+      "seconds": 45.009
+    },
+    {
+      "shape": [12, 12],
+      "require_full_freezing": true,
+      "solver_status": "unknown",
+      "reason": "timeout",
+      "seconds": 60.007
+    }
+  ],
+  "scope": "Finite discovery only. No universal ceiling or nonexistence conclusion. The independent all-length boundary/isolation and coefficient-one proofs do not depend on any solver outcome."
+}

@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "date": "2026-10-21",
+  "python": {
+    "execution_session": 12437,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_arbitrary_t_consumers.py",
+    "full_original_parameter_controls": 15200,
+    "charge_tile_support_count_controls": 15200,
+    "surviving_exact_set_controls": 10388,
+    "tail_replacement_exact_set_controls": 10388,
+    "minimum_tested_gain": 1,
+    "parameter_role_triples": 27,
+    "full_original_north_terminal_roles": 102,
+    "rotor_exclusions": 2,
+    "tile_preserving_isometries": 32,
+    "nested_blocks": [
+      1,
+      2,
+      3,
+      8,
+      7,
+      24
+    ],
+    "nested_joint_gains": [
+      5,
+      28,
+      51,
+      166,
+      211,
+      758
+    ],
+    "later_checked_prefix_marginal": -3,
+    "prefix_scope": "All prefixes for n<=8; no prefix reevaluation for n24."
+  },
+  "lean": {
+    "execution_session": 50993,
+    "exit_code": 0,
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "command": "lean --stdin with full source and #print axioms for every declaration",
+    "source": "formal/SubQuorum/SecondaryTenArbitraryConsumers.lean",
+    "declarations": 48,
+    "theorems": 36,
+    "memory_free_percent_before": 42,
+    "active_lean_lake_before": [],
+    "axioms": "Each declaration inspected; only propext, Classical.choice, Quot.sound where needed. No sorryAx/native axioms or warnings.",
+    "scope": "Explicit local collision witnesses, parity/frontier arithmetic, conditional gain cases, and arbitrary-list joint ledger/width budget. Geometric catalogue and exact cardinality partitions are ordinary proofs, not fully formalized."
+  },
+  "review": {
+    "task_id": "7aff5dfd-8497-4f70-a23a-de7f19c59bda",
+    "conversation_id": "conv_2c190eab00021c88",
+    "status": "completed",
+    "verdict": "ACCEPT",
+    "completed_at": "2026-10-21T13:10:09.962+00:00",
+    "original_execution_session": 1985,
+    "original_exit_code": 0,
+    "stream_done": true,
+    "stream_equals_terminal_response": true,
+    "response_chars": 17732,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "scope": "Entire written single-block/nested note. Not code execution or later full-chain exterior theorem.",
+    "applied_clarifications": [
+      "Upper partial tile has two/three/four endpoints depending on frame/depth; all receipt tables unchanged.",
+      "Specify absolute versus relative row parity in special far-event lists."
+    ]
+  },
+  "limitations": [
+    "No existence of complete extension asserted.",
+    "No arbitrary multiblock allocation or Phi monotonicity.",
+    "Global5/6 and rectangular-grid triple equality OPEN."
+  ]
+}

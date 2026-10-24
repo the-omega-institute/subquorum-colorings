@@ -1,0 +1,3371 @@
+{
+  "status": "PASS",
+  "parameter_cases": 39,
+  "symmetry_checks": 624,
+  "mixed_ownership_controls": [
+    {
+      "components": 2,
+      "descriptions": 9,
+      "distinct_physical_tiles": 6,
+      "owned_capacities": [
+        2,
+        5
+      ]
+    },
+    {
+      "components": 3,
+      "descriptions": 12,
+      "distinct_physical_tiles": 7,
+      "owned_capacities": [
+        2,
+        5,
+        1
+      ]
+    },
+    {
+      "components": 4,
+      "descriptions": 16,
+      "distinct_physical_tiles": 9,
+      "owned_capacities": [
+        2,
+        5,
+        1,
+        2
+      ]
+    }
+  ],
+  "previous_22_endpoint_four_rule_capacity": 0,
+  "scope": "Physical controls for the written all-even-parameter two-leg theorem. Exact degree three, complete ordered mixed-bundle exclusion certificates, original corrected charge one, zero capacity for all three old rules, and two distinct saturated-endpoint unit donors. Finite controls do not replace the general proof. The previous 22-endpoint example also defeats the fourth rule in general; four-rule degree-three coverage remains open.",
+  "cases": [
+    {
+      "width": 6,
+      "left_height": 4,
+      "right_height": 4,
+      "endpoints": 18,
+      "selected": 10,
+      "matching_edges": 9,
+      "receiver": {
+        "endpoints": 18,
+        "tiles": 8,
+        "selected": 8,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 6,
+      "objective": 19,
+      "area": 48,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 4,
+      "right_height": 8,
+      "endpoints": 22,
+      "selected": 14,
+      "matching_edges": 11,
+      "receiver": {
+        "endpoints": 22,
+        "tiles": 10,
+        "selected": 10,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 16,
+      "objective": 25,
+      "area": 80,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 4,
+      "right_height": 12,
+      "endpoints": 26,
+      "selected": 18,
+      "matching_edges": 13,
+      "receiver": {
+        "endpoints": 26,
+        "tiles": 12,
+        "selected": 12,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 26,
+      "objective": 31,
+      "area": 112,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 6,
+      "right_height": 4,
+      "endpoints": 20,
+      "selected": 12,
+      "matching_edges": 10,
+      "receiver": {
+        "endpoints": 20,
+        "tiles": 9,
+        "selected": 9,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 11,
+      "objective": 22,
+      "area": 64,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 6,
+      "right_height": 8,
+      "endpoints": 24,
+      "selected": 16,
+      "matching_edges": 12,
+      "receiver": {
+        "endpoints": 24,
+        "tiles": 11,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 13,
+      "objective": 28,
+      "area": 80,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 6,
+      "right_height": 12,
+      "endpoints": 28,
+      "selected": 20,
+      "matching_edges": 14,
+      "receiver": {
+        "endpoints": 28,
+        "tiles": 13,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 23,
+      "objective": 34,
+      "area": 112,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 10,
+      "right_height": 4,
+      "endpoints": 24,
+      "selected": 16,
+      "matching_edges": 12,
+      "receiver": {
+        "endpoints": 24,
+        "tiles": 11,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 21,
+      "objective": 28,
+      "area": 96,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 10,
+      "right_height": 8,
+      "endpoints": 28,
+      "selected": 20,
+      "matching_edges": 14,
+      "receiver": {
+        "endpoints": 28,
+        "tiles": 13,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 15,
+      "objective": 34,
+      "area": 96,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 6,
+      "left_height": 10,
+      "right_height": 12,
+      "endpoints": 32,
+      "selected": 24,
+      "matching_edges": 16,
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 15,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 17,
+      "objective": 40,
+      "area": 112,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "selected": [
+            3,
+            5
+          ],
+          "anchor": [
+            3,
+            6
+          ],
+          "guard": [
+            1,
+            4
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 4,
+      "right_height": 4,
+      "endpoints": 22,
+      "selected": 10,
+      "matching_edges": 11,
+      "receiver": {
+        "endpoints": 22,
+        "tiles": 9,
+        "selected": 8,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 10,
+      "objective": 21,
+      "area": 60,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 4,
+      "right_height": 8,
+      "endpoints": 26,
+      "selected": 14,
+      "matching_edges": 13,
+      "receiver": {
+        "endpoints": 26,
+        "tiles": 11,
+        "selected": 10,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 24,
+      "objective": 27,
+      "area": 100,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 4,
+      "right_height": 12,
+      "endpoints": 30,
+      "selected": 18,
+      "matching_edges": 15,
+      "receiver": {
+        "endpoints": 30,
+        "tiles": 13,
+        "selected": 12,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 38,
+      "objective": 33,
+      "area": 140,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 6,
+      "right_height": 4,
+      "endpoints": 24,
+      "selected": 12,
+      "matching_edges": 12,
+      "receiver": {
+        "endpoints": 24,
+        "tiles": 10,
+        "selected": 9,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 17,
+      "objective": 24,
+      "area": 80,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 6,
+      "right_height": 8,
+      "endpoints": 28,
+      "selected": 16,
+      "matching_edges": 14,
+      "receiver": {
+        "endpoints": 28,
+        "tiles": 12,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 21,
+      "objective": 30,
+      "area": 100,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 6,
+      "right_height": 12,
+      "endpoints": 32,
+      "selected": 20,
+      "matching_edges": 16,
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 14,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 35,
+      "objective": 36,
+      "area": 140,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 10,
+      "right_height": 4,
+      "endpoints": 28,
+      "selected": 16,
+      "matching_edges": 14,
+      "receiver": {
+        "endpoints": 28,
+        "tiles": 12,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 31,
+      "objective": 30,
+      "area": 120,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 10,
+      "right_height": 8,
+      "endpoints": 32,
+      "selected": 20,
+      "matching_edges": 16,
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 14,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 25,
+      "objective": 36,
+      "area": 120,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 8,
+      "left_height": 10,
+      "right_height": 12,
+      "endpoints": 36,
+      "selected": 24,
+      "matching_edges": 18,
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 16,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 29,
+      "objective": 42,
+      "area": 140,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 4,
+      "right_height": 4,
+      "endpoints": 26,
+      "selected": 10,
+      "matching_edges": 13,
+      "receiver": {
+        "endpoints": 26,
+        "tiles": 10,
+        "selected": 8,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 14,
+      "objective": 23,
+      "area": 72,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 4,
+      "right_height": 8,
+      "endpoints": 30,
+      "selected": 14,
+      "matching_edges": 15,
+      "receiver": {
+        "endpoints": 30,
+        "tiles": 12,
+        "selected": 10,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 32,
+      "objective": 29,
+      "area": 120,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 4,
+      "right_height": 12,
+      "endpoints": 34,
+      "selected": 18,
+      "matching_edges": 17,
+      "receiver": {
+        "endpoints": 34,
+        "tiles": 14,
+        "selected": 12,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 50,
+      "objective": 35,
+      "area": 168,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 6,
+      "right_height": 4,
+      "endpoints": 28,
+      "selected": 12,
+      "matching_edges": 14,
+      "receiver": {
+        "endpoints": 28,
+        "tiles": 11,
+        "selected": 9,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 23,
+      "objective": 26,
+      "area": 96,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 6,
+      "right_height": 8,
+      "endpoints": 32,
+      "selected": 16,
+      "matching_edges": 16,
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 13,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 29,
+      "objective": 32,
+      "area": 120,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 6,
+      "right_height": 12,
+      "endpoints": 36,
+      "selected": 20,
+      "matching_edges": 18,
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 15,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 47,
+      "objective": 38,
+      "area": 168,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 10,
+      "right_height": 4,
+      "endpoints": 32,
+      "selected": 16,
+      "matching_edges": 16,
+      "receiver": {
+        "endpoints": 32,
+        "tiles": 13,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 41,
+      "objective": 32,
+      "area": 144,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 10,
+      "right_height": 8,
+      "endpoints": 36,
+      "selected": 20,
+      "matching_edges": 18,
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 15,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 35,
+      "objective": 38,
+      "area": 144,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 10,
+      "left_height": 10,
+      "right_height": 12,
+      "endpoints": 40,
+      "selected": 24,
+      "matching_edges": 20,
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 17,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 41,
+      "objective": 44,
+      "area": 168,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            4
+          ],
+          "selected": [
+            3,
+            9
+          ],
+          "anchor": [
+            3,
+            10
+          ],
+          "guard": [
+            1,
+            8
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 4,
+      "right_height": 4,
+      "endpoints": 34,
+      "selected": 10,
+      "matching_edges": 17,
+      "receiver": {
+        "endpoints": 34,
+        "tiles": 12,
+        "selected": 8,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 22,
+      "objective": 27,
+      "area": 96,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 4,
+      "right_height": 8,
+      "endpoints": 38,
+      "selected": 14,
+      "matching_edges": 19,
+      "receiver": {
+        "endpoints": 38,
+        "tiles": 14,
+        "selected": 10,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 48,
+      "objective": 33,
+      "area": 160,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 4,
+      "right_height": 12,
+      "endpoints": 42,
+      "selected": 18,
+      "matching_edges": 21,
+      "receiver": {
+        "endpoints": 42,
+        "tiles": 16,
+        "selected": 12,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 74,
+      "objective": 39,
+      "area": 224,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 6,
+      "right_height": 4,
+      "endpoints": 36,
+      "selected": 12,
+      "matching_edges": 18,
+      "receiver": {
+        "endpoints": 36,
+        "tiles": 13,
+        "selected": 9,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 35,
+      "objective": 30,
+      "area": 128,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 6,
+      "right_height": 8,
+      "endpoints": 40,
+      "selected": 16,
+      "matching_edges": 20,
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 15,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 45,
+      "objective": 36,
+      "area": 160,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 6,
+      "right_height": 12,
+      "endpoints": 44,
+      "selected": 20,
+      "matching_edges": 22,
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 17,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 71,
+      "objective": 42,
+      "area": 224,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 10,
+      "right_height": 4,
+      "endpoints": 40,
+      "selected": 16,
+      "matching_edges": 20,
+      "receiver": {
+        "endpoints": 40,
+        "tiles": 15,
+        "selected": 11,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 61,
+      "objective": 36,
+      "area": 192,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 10,
+      "right_height": 8,
+      "endpoints": 44,
+      "selected": 20,
+      "matching_edges": 22,
+      "receiver": {
+        "endpoints": 44,
+        "tiles": 17,
+        "selected": 13,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 55,
+      "objective": 42,
+      "area": 192,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 14,
+      "left_height": 10,
+      "right_height": 12,
+      "endpoints": 48,
+      "selected": 24,
+      "matching_edges": 24,
+      "receiver": {
+        "endpoints": 48,
+        "tiles": 19,
+        "selected": 15,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 65,
+      "objective": 48,
+      "area": 224,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            6
+          ],
+          "selected": [
+            3,
+            13
+          ],
+          "anchor": [
+            3,
+            14
+          ],
+          "guard": [
+            1,
+            12
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 40,
+      "left_height": 40,
+      "right_height": 4,
+      "endpoints": 122,
+      "selected": 46,
+      "matching_edges": 61,
+      "receiver": {
+        "endpoints": 122,
+        "tiles": 43,
+        "selected": 26,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 776,
+      "objective": 107,
+      "area": 1764,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            19
+          ],
+          "selected": [
+            3,
+            39
+          ],
+          "anchor": [
+            3,
+            40
+          ],
+          "guard": [
+            1,
+            38
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 40,
+      "left_height": 4,
+      "right_height": 40,
+      "endpoints": 122,
+      "selected": 46,
+      "matching_edges": 61,
+      "receiver": {
+        "endpoints": 122,
+        "tiles": 43,
+        "selected": 26,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 776,
+      "objective": 107,
+      "area": 1764,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            19
+          ],
+          "selected": [
+            3,
+            39
+          ],
+          "anchor": [
+            3,
+            40
+          ],
+          "guard": [
+            1,
+            38
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    },
+    {
+      "width": 64,
+      "left_height": 40,
+      "right_height": 40,
+      "endpoints": 206,
+      "selected": 82,
+      "matching_edges": 103,
+      "receiver": {
+        "endpoints": 206,
+        "tiles": 73,
+        "selected": 44,
+        "charge_twice": 2,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      "no_endpoint_deficit": 1202,
+      "objective": 185,
+      "area": 2772,
+      "freezing_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "three_rule_capacity": 0,
+      "saturated_endpoint_donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            31
+          ],
+          "selected": [
+            3,
+            63
+          ],
+          "anchor": [
+            3,
+            64
+          ],
+          "guard": [
+            1,
+            62
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ]
+    }
+  ]
+}

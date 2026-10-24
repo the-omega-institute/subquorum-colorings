@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "machine": "local Mac selected by the user in this session",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/MatchingBlockTileLedger.lean",
+  "source": "formal/SubQuorum/MatchingBlockTileLedger.lean",
+  "source_sha256": "4e13c13f0451699903c52f40042086ea3ea06dd17598678859f7f65c8ab3740b",
+  "preflight_free_memory_percent": 51,
+  "preflight_real_lean_lake_processes": [],
+  "preflight_session_chunk": "9fd6f1",
+  "execution_session": 81292,
+  "execution_final_chunk": "c122af",
+  "exit_code": 0,
+  "theorem_count": 9,
+  "individual_axiom_audits": [
+    "tile_contraction",
+    "flexible_tile_budget",
+    "forced_same_tile_budget",
+    "forced_crossing_budget",
+    "exact_block_ledger",
+    "exact_global_margin",
+    "sufficient_interface_bound",
+    "occupied_band_charge",
+    "occupied_band_margin"
+  ],
+  "axioms_by_theorem": {
+    "tile_contraction": [
+      "propext"
+    ],
+    "flexible_tile_budget": [
+      "propext"
+    ],
+    "forced_same_tile_budget": [],
+    "forced_crossing_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_block_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_global_margin": [
+      "propext",
+      "Quot.sound"
+    ],
+    "sufficient_interface_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "occupied_band_charge": [
+      "propext",
+      "Quot.sound"
+    ],
+    "occupied_band_margin": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "errors": 0,
+  "warnings": 0,
+  "sorry": false,
+  "native_evaluation": false,
+  "scope": "Local tile contraction conditional on connected endpoints/fibres; flexible-tile and forced-edge local inequalities; exact global and band arithmetic. General geometric block-tile connectivity, matching independence, exchange-terminality adapter, and all-width band forcing are written proofs, not claimed formalized."
+}

@@ -1,0 +1,50 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checked_at": "2026-10-19T03:23:22.998390+00:00",
+  "active_lean_lake_before": [],
+  "memory_before": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4345.\nPages active:                                 267771.\nPages inactive:                               243594.\nPages speculative:                             22771.\nPages throttled:                                   0.\nPages wired down:                             226584.\nPages purgeable:                                3720.\n\"Translation faults\":                    15926787048.\nPages copy-on-write:                       974604729.\nPages zero filled:                        6529511980.\nPages reactivated:                        2986044700.\nPages purged:                              137904397.\nFile-backed pages:                            334030.\nAnonymous pages:                              200106.\nPages stored in compressor:                  1671970.\nPages occupied by compressor:                 241825.\nDecompressions:                           2405569453.\nCompressions:                             2844873054.\nPageins:                                  4392782278.\nPageouts:                                   12224133.\nSwapins:                                    25593079.\nSwapouts:                                   32107529.\n",
+  "peak_child_rss": 840974336,
+  "peak_child_rss_unit": "bytes on macOS; KiB on Linux",
+  "checks": [
+    {
+      "module": "SubQuorum/CollarCompensation.lean",
+      "seconds": 4.942,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/AttachmentCollarCompensation.lean",
+      "seconds": 0.644,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "CollarCompensationAudit.lean",
+      "seconds": 0.377,
+      "stdout": "'SubQuorum.CollarCompensation.pressured_tile' does not depend on any axioms\n'SubQuorum.CollarCompensation.terminal_tile' depends on axioms: [propext]\n'SubQuorum.CollarCompensation.disjoint_tile_surplus' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.collar_parity_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.aggregate_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.compensated_core_nonpositive' depends on axioms: [propext, Quot.sound]\n'SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile' depends on axioms: [propext]\n'SubQuorum.AttachmentCollarCompensation.saturated_endpoints' depends on axioms: [propext]\n'SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "audited_declarations": [
+    "SubQuorum.CollarCompensation.pressured_tile",
+    "SubQuorum.CollarCompensation.terminal_tile",
+    "SubQuorum.CollarCompensation.disjoint_tile_surplus",
+    "SubQuorum.CollarCompensation.collar_parity_charge",
+    "SubQuorum.CollarCompensation.aggregate_source_compensation",
+    "SubQuorum.CollarCompensation.compensated_core_nonpositive",
+    "SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile",
+    "SubQuorum.AttachmentCollarCompensation.saturated_endpoints",
+    "SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge",
+    "SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation"
+  ],
+  "sha256": {
+    "formal/SubQuorum/CollarCompensation.lean": "d47dfc9778320a50a5b011606de904a7bffe3e3a1441891074660999fbaf6e3c",
+    "formal/SubQuorum/AttachmentCollarCompensation.lean": "28c59e3262b5ad4c8fac38a7b0888aa712f703f4e1055a249a0fdd6eb010b618",
+    "formal/CollarCompensationAudit.lean": "bfac8b21ec0d8e3f559e941641def904b85ad69d49a272210c486f6bc7b5a950"
+  },
+  "scope": "Finite pressured and unpressured local tile implications, arbitrary-list surplus, conditional original and attachment-corrected parity/charge/source counts; geometric and regional-ledger adapters have written proofs."
+}

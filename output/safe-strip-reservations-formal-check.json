@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19T19:32:41.409328+00:00",
+  "execution_location": "User-authorized local Mac",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4488 \nPages purgeable: 219 \nPages purged: 142711631 \n\nSwap I/O:\nSwapins: 27237729 \nSwapouts: 33905064 \n\nPage Q counts:\nPages active: 197610 \nPages inactive: 179554 \nPages speculative: 18434 \nPages throttled: 0 \nPages wired down: 255215 \n\nCompressor Stats:\nPages used by compressor: 351568 \nPages decompressed: 2725956825 \nPages compressed: 3206161630 \n\nFile I/O:\nPageins: 5685210532 \nPageouts: 16333551 \n\nSystem-wide memory free percentage: 39%",
+    "actual_lean_lake_processes": [],
+    "process_check": "Exact basename of the full comm field, including bare names."
+  },
+  "source_files": [
+    "formal/SubQuorum/SafeStripReservations.lean"
+  ],
+  "theorem_declarations": 10,
+  "compile_exit_codes": {
+    "source": 0,
+    "stdin_axiom_audit": 0
+  },
+  "axiom_audit_output": [
+    "'SubQuorum.SafeStripReservations.old_branch_attains_max' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.component_parity_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.rank_branch_preserves_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.component_parity_preserves_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.component_exact_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.batch_parity_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.aggregate_parity_preserves_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.batch_exact_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SafeStripReservations.exact_preservation_criterion' depends on axioms: [propext,",
+    " Classical.choice,",
+    " Quot.sound]",
+    "'SubQuorum.SafeStripReservations.preserve_existing_coverage' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Ten Std-only declarations prove local and arbitrary finite-list accounting, fixed old branch optimality, aggregate parity sufficiency, exact parity-plus-recovery criterion and preservation of existing coverage. Rank deletion and handshake hypotheses are explicit; the graph-to-count adapter, Hall feasibility, grid geometry and donor validity are written/computational, not fully Lean-formalized."
+}

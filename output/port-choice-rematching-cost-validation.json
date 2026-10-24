@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_forced_matching_edges": 11284,
+    "unique_frozen_pairs": 127,
+    "uniform_serial_freezing_events": 22568,
+    "uniform_forced_template_edges": 11284,
+    "endpoint_shortest_walk_checks": 254,
+    "complete_coherent_repairs": 381,
+    "new_auxiliary_edges": 4149,
+    "deleted_auxiliary_edges": 3768,
+    "frozen_unique_physical_models": 127,
+    "exact_portal_witnesses": 1016
+  },
+  "examples": [
+    {
+      "width": 6,
+      "depth": 1,
+      "tail": 4,
+      "margin": 59,
+      "costs": {
+        "lower": 5,
+        "upper": 3
+      }
+    },
+    {
+      "width": 8,
+      "depth": 1,
+      "tail": 4,
+      "margin": 75,
+      "costs": {
+        "upper": 3,
+        "lower": 5
+      }
+    },
+    {
+      "width": 32,
+      "depth": 1,
+      "tail": 16,
+      "margin": 471,
+      "costs": {
+        "upper": 3,
+        "lower": 17
+      }
+    },
+    {
+      "width": 64,
+      "depth": 5,
+      "tail": 32,
+      "margin": 1975,
+      "costs": {
+        "upper": 3,
+        "lower": 33
+      }
+    }
+  ],
+  "scope": "Finite physical controls for the all-parameter terminal-choice cost theorem. Exact candidate relation: occupied grid edges and all row choices across maximal all-BT endpoint-free gaps. Lower bounds use written symmetric-difference and quotient-distance proofs; no exhaustive matching enumeration or global grid claim."
+}

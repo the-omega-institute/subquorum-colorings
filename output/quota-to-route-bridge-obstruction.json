@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "minimal_obstruction": {
+    "sources": [
+      "A",
+      "B"
+    ],
+    "gates": [
+      "g"
+    ],
+    "resources": [
+      "R0",
+      "R1"
+    ],
+    "source_gates": {
+      "A": [
+        "g"
+      ],
+      "B": [
+        "g"
+      ]
+    },
+    "gate_resources": {
+      "g": [
+        "R0",
+        "R1"
+      ]
+    },
+    "quota_projection": 2,
+    "quota_assignment": {
+      "B": "R0",
+      "A": "R1"
+    },
+    "route_flow": 1,
+    "shared_gate_sources": [
+      "A",
+      "B"
+    ]
+  },
+  "source_separated_control": {
+    "quota_projection": 2,
+    "route_flow": 2,
+    "assignment": {
+      "B": "R0",
+      "A": "R1"
+    }
+  },
+  "exhaustive": {
+    "totals": {
+      "networks": 225,
+      "exact_projection": 211,
+      "source_separated_controls": 120,
+      "source_separated_exact": 120,
+      "quota_overstates_flow": 14
+    },
+    "gap_examples": [
+      {
+        "source_gates": {
+          "A": [
+            "g0"
+          ],
+          "B": [
+            "g0"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R0",
+            "R1"
+          ],
+          "g1": []
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g0"
+          ],
+          "B": [
+            "g0"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R0",
+            "R1"
+          ],
+          "g1": [
+            "R0"
+          ]
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g0"
+          ],
+          "B": [
+            "g0"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R0",
+            "R1"
+          ],
+          "g1": [
+            "R1"
+          ]
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g0"
+          ],
+          "B": [
+            "g0"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R0",
+            "R1"
+          ],
+          "g1": [
+            "R0",
+            "R1"
+          ]
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g0",
+            "g1"
+          ],
+          "B": [
+            "g0"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R0",
+            "R1"
+          ],
+          "g1": []
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g1"
+          ],
+          "B": [
+            "g1"
+          ]
+        },
+        "gate_resources": {
+          "g0": [],
+          "g1": [
+            "R0",
+            "R1"
+          ]
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g1"
+          ],
+          "B": [
+            "g1"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R0"
+          ],
+          "g1": [
+            "R0",
+            "R1"
+          ]
+        },
+        "quota": 2,
+        "flow": 1
+      },
+      {
+        "source_gates": {
+          "A": [
+            "g1"
+          ],
+          "B": [
+            "g1"
+          ]
+        },
+        "gate_resources": {
+          "g0": [
+            "R1"
+          ],
+          "g1": [
+            "R0",
+            "R1"
+          ]
+        },
+        "quota": 2,
+        "flow": 1
+      }
+    ]
+  },
+  "scope": "The run-slot quota projection can strictly exceed unit-capacity route flow when sources share a mixed gate. If every mixed gate is reachable from at most one source, a saturating source-resource matching lifts to disjoint routes. This is an abstract bridge obstruction, not a physical-grid counterexample."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/OneSidedResourceAllocation.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "location": "local Mac selected by the user in this session",
+  "preflight": {
+    "memory_free_percent": 61,
+    "real_lean_lake_processes": [],
+    "process_check": "ps comm basename compared exactly against lean and lake"
+  },
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/OneSidedResourceAllocation.lean",
+  "execution": {"session_id": 22440, "final_chunk": "529fbc", "exit_code": 0},
+  "theorems": 7,
+  "axiom_audits": 7,
+  "allowed_axioms_observed": ["propext", "Classical.choice", "Quot.sound"],
+  "errors": 0,
+  "warnings": 0,
+  "scope": "Capacity-two owner uniqueness; strict-rank injectivity of branch resource allocation; combination with a separately certified disjoint paid core; exact allocation ledger and tree cardinality obstruction. General spanning-tree existence, maximum matching classification, grid/cap adapters, beta-link selection and physical chain/cycle/relay constructions remain written proofs."
+}

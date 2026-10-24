@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T17:12:20.409954+00:00",
+  "execution": "user-authorized local machine; one standalone module",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "command": "cd formal && lean SubQuorum/BalancedMultiTransfer.lean",
+  "exit_code": 0,
+  "theorems": 4,
+  "axiom_audits": [
+    "'SubQuorum.BalancedMultiTransfer.legal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.BalancedMultiTransfer.injective' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.BalancedMultiTransfer.covers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.BalancedMultiTransfer.matching' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "For arbitrary n and finite separated index intervals: adjacent F-matching map bounds, deleted-beta avoidance, injectivity and surjectivity after deleting alpha-left/beta-right roots.",
+  "not_formalized": [
+    "Necessity of root interlacing",
+    "Flow existence, exact exchange compilation or full lifting",
+    "Geometry and universal grid inequality"
+  ],
+  "preflight": {
+    "memory_free_percent": 50,
+    "existing_processes_by_comm_basename": [
+      {
+        "pid": 22851,
+        "comm": "lake",
+        "rss_kib": 681232
+      }
+    ],
+    "decision": "Small core/Omega file only, sequential local execution"
+  },
+  "sorry": false,
+  "native_decide": false,
+  "warnings": []
+}

@@ -1,0 +1,833 @@
+{
+  "status": "sat",
+  "shape": [
+    8,
+    10
+  ],
+  "timeout_seconds": 45,
+  "seconds": 5.039,
+  "z3_version": "5.3.1",
+  "interval_predicates": 110,
+  "excluded_strip_certificate": "capacity",
+  "scope": "Finite discovery: one connected fully frozen endpoint component through (2,2), corrected charge at least one, no donor from the four corner rules and no maximal endpoint-free run satisfying the specified sealed or actual-capacity-at-least-two certificate. Unsat is finite only and unknown is not unsat.",
+  "selected": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      7,
+      9
+    ]
+  ],
+  "matching": [
+    [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    [
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        8
+      ]
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    [
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    [
+      [
+        5,
+        8
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    [
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        3
+      ]
+    ],
+    [
+      [
+        6,
+        4
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    [
+      [
+        6,
+        6
+      ],
+      [
+        6,
+        7
+      ]
+    ],
+    [
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        2
+      ]
+    ],
+    [
+      [
+        7,
+        3
+      ],
+      [
+        7,
+        4
+      ]
+    ],
+    [
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        6
+      ]
+    ],
+    [
+      [
+        7,
+        7
+      ],
+      [
+        7,
+        8
+      ]
+    ]
+  ],
+  "checked": {
+    "objective": 38,
+    "receiver_charge": 1,
+    "ledger": {
+      "receivers": [
+        {
+          "endpoints": 32,
+          "tiles": 14,
+          "selected": 13,
+          "charge_twice": 2,
+          "straight": false,
+          "saturated_endpoints": 3,
+          "transfers": 3
+        }
+      ],
+      "no_endpoint_tiles": 6,
+      "empty_deficit": 3,
+      "objective": 38,
+      "area": 80
+    },
+    "fully_frozen": true,
+    "freezing_layers": [
+      [
+        {
+          "endpoint": [
+            1,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            2,
+            4
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            3,
+            8
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              9
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            1,
+            3
+          ],
+          "kept_neighbors": [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            2,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            3,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            5,
+            8
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              8
+            ],
+            [
+              5,
+              9
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            4,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            5,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            8
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              9
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            6,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            6,
+            7
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              7
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              0
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            6,
+            4
+          ],
+          "kept_neighbors": [
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            3
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              2
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              7
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            6,
+            5
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              5
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            6,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            5
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              4
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            7,
+            4
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              4
+            ],
+            [
+              7,
+              5
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            7
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              6
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            6,
+            3
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              4
+            ],
+            [
+              7,
+              3
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            6,
+            8
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            4,
+            8
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              8
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            7,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              3
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            6,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              1
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            5,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            4,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            3,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            2,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            1,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            2,
+            3
+          ],
+          "kept_neighbors": [
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              2
+            ]
+          ]
+        }
+      ]
+    ]
+  }
+}

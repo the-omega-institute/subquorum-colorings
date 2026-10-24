@@ -1,0 +1,22 @@
+{
+  "status": "unsat",
+  "rows": 16,
+  "columns": 16,
+  "maximum_modules": 6,
+  "fixed_anchor_offset": [
+    2,
+    2
+  ],
+  "module_types": "two_leg(6,4,4), rotor; all contained placements/guards, with union occupancy and retained-support feasibility",
+  "placements": 758,
+  "z3_version": "5.3.1",
+  "timeout_seconds": 60,
+  "positive_encoding_control": {
+    "status": "PASS",
+    "modules": 3,
+    "fine_credit": 2,
+    "check": "A fixed feasible fully frozen three-module assignment agrees between SAT and independent physical ledgers."
+  },
+  "seconds": 7.64,
+  "scope": "Finite discovery only. UNSAT covers this window/library/anchor/module-count restriction, UNKNOWN is not exclusion. No freezing assumed by the search."
+}

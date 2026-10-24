@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T20:41:15.014759+00:00",
+  "execution": "Explicitly selected local executable; sequential dependency and new module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "41%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/BTColumnCorridorObstruction.lean",
+        "-o",
+        "/Users/lexa/Desktop/lexa/omega/subquorum-grid-compensation-20261019/build/frozen-beta-support-fork-formal/SubQuorum/BTColumnCorridorObstruction.olean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/FrozenBetaSupportFork.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/FrozenBetaSupportFork.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.FrozenBetaSupportFork.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.owner_types_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.fork_links_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.interior_gap_geometry' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.sizes_and_margin' does not depend on any axioms",
+        "'SubQuorum.FrozenBetaSupportFork.copies_no_occupied_adjacency' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.copied_units_distinct' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenBetaSupportFork.stack_ledgers' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Concrete16by14feasible geometry;66endpoint strict-rank complete freezing; all6original open strands and8PPcycles;two distinct alpha-to-beta links; interior beta-body gap and pure-cycle opposite boundary; arbitrary-copy occupied-point separation and distinct copied units; scalar ledgers.",
+  "not_formalized": [
+    "Whole-support original interval construction and exact inventory",
+    "Reserved and unrestricted compensation optimum and min link cost",
+    "All-q physical stacking/padding adapter"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

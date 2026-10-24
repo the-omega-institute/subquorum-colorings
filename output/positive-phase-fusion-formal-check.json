@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-19T21:55:10.402880+00:00",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "actual_lean_lake_preflight": [],
+  "memory_pressure_free_percent": 44,
+  "parallel_jobs": 1,
+  "source": "formal/SubQuorum/PositivePhaseFusions.lean",
+  "declarations": [
+    "internal_event_forces_full",
+    "each_profile_at_most_one_tail",
+    "event_uses_two_original_endpoints",
+    "profile_receiver_charge",
+    "exterior_gate_excludes",
+    "continuation_excludes",
+    "retained_support",
+    "full_tile_defect_le_two",
+    "summed_tile_cancellation",
+    "automatic_positive_compensation",
+    "automatic_finer_criterion",
+    "unspent_square_credit",
+    "mixed_positive_tail_budget",
+    "mixed_positive_tail_compensation"
+  ],
+  "initial_build_seconds": 6.837,
+  "axiom_audit_seconds": 0.369,
+  "audit_stdout": "'SubQuorum.PositivePhaseFusions.internal_event_forces_full' depends on axioms: [propext]\n'SubQuorum.PositivePhaseFusions.each_profile_at_most_one_tail' depends on axioms: [propext]\n'SubQuorum.PositivePhaseFusions.event_uses_two_original_endpoints' depends on axioms: [propext]\n'SubQuorum.PositivePhaseFusions.profile_receiver_charge' depends on axioms: [propext]\n'SubQuorum.PositivePhaseFusions.exterior_gate_excludes' does not depend on any axioms\n'SubQuorum.PositivePhaseFusions.continuation_excludes' does not depend on any axioms\n'SubQuorum.PositivePhaseFusions.retained_support' does not depend on any axioms\n'SubQuorum.PositivePhaseFusions.full_tile_defect_le_two' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PositivePhaseFusions.summed_tile_cancellation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PositivePhaseFusions.automatic_positive_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PositivePhaseFusions.automatic_finer_criterion' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PositivePhaseFusions.unspent_square_credit' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PositivePhaseFusions.mixed_positive_tail_budget' depends on axioms: [propext, Quot.sound]\n'SubQuorum.PositivePhaseFusions.mixed_positive_tail_compensation' depends on axioms: [propext, Quot.sound]\n",
+  "audit_stderr": "",
+  "scope": "Thirteen local receiver profiles; all final masks for local full-tile forcing, at-most-one event per original profile and two original endpoints per event. Abstract exterior gate/continuation exclusions and exact scalar budget. Global geometry, profile classification for all parameters and event-pair packing remain written; no fully formal global fusion claim. The later mixed-phase corollary also has exact unspent-credit arithmetic and sufficient payment formalized, with positive-tail geometric partition proved in writing.",
+  "declaration_count": 14
+}

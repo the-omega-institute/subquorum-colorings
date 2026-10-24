@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac selected by user",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+  "source_check_exit_code": 0,
+  "object_build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "preflight": {
+    "memory_free_percent_before_object": 53,
+    "memory_free_percent_before_audit": 47,
+    "active_lean_lake_before_object": [],
+    "active_lean_lake_before_audit": [],
+    "process_enumeration": "ps -acxo pid=,comm=,rss= with basename(comm), plus ordinary comm check; -c is needed here because ordinary macOS comm output truncates long executable paths."
+  },
+  "declarations": [
+    {
+      "name": "SubQuorum.WidthSixBottomOwner.blocked_vertical_owner_is_horizontal_tip",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.WidthSixBottomOwner.terminal_avoiding_lower_support_points_down",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.WidthSixBottomOwner.downward_terminal_receiver_profile",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.WidthSixBottomOwner.bottom_point_has_no_rotor_owner",
+      "axioms": []
+    },
+    {
+      "name": "SubQuorum.WidthSixBottomOwner.second_point_has_no_rotor_owner",
+      "axioms": []
+    },
+    {
+      "name": "SubQuorum.WidthSixBottomOwner.clearance_four_last_receiver_hits_forbidden_point",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "forbidden_axioms_absent": true,
+  "subsequent_recheck": "Final classifier uses only upper/left endpoint exclusions instead of entire9-point rotor stencil, following accepted structural audit. All11 declarations in extended file rebuild and axiom-audit PASS; see positive-bottom-owner-reserve-formal-check.json.",
+  "scope": "Universal arbitrary-dimension U endpoint-role classification for all8 images and forbidden distances1/2/4, support-direction and terminal profile, exact rotor tables, coordinate equality. Source-normalization/phase/global-saturation adapters remain written. Not end-to-end fusion or arbitrary-grid formalization."
+}

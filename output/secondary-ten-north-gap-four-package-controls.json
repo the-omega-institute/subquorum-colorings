@@ -1,0 +1,277 @@
+{
+  "status": "PASS",
+  "roles": {
+    "first_patterns": 72,
+    "first_U_roles": 36138,
+    "first_forms": {
+      "right_positive": 26880,
+      "left_negative": 9258
+    },
+    "first_rotor_exclusions": 288,
+    "second_patterns": 12,
+    "second_U_roles": 5460,
+    "second_forms": {
+      "right_negative": 5376,
+      "left_positive": 84
+    },
+    "second_rotor_exclusions": 48,
+    "U_dimensions_bounded_by": 18,
+    "every_bounded_endpoint_role_included": true
+  },
+  "package": {
+    "parameter_patterns": 2430,
+    "widths": [
+      8,
+      10,
+      20,
+      50,
+      200
+    ],
+    "independent_leg_max": 80,
+    "exact_N_plus_Rraw_package_change": 0
+  },
+  "cavity": {
+    "patterns": 360,
+    "surviving_U_roles": 26880,
+    "phases": {
+      "minus_one": 14976,
+      "negative_width": 11904
+    },
+    "rotor_exclusions": 1440,
+    "equal_incident_noncompletion_patterns": 72,
+    "even_phase_forced_four_foreign_neighbors": 11904,
+    "complete_family_phase": "odd_B_charge_minus_one_only",
+    "tight_negative_consumer_controls": 768,
+    "U_dimensions_bounded_by": 18,
+    "all_endpoint_anchors_included": true
+  },
+  "obstruction": {
+    "endpoint_disjoint_sources": 5,
+    "bottom": 40,
+    "width": 12,
+    "D": [
+      16,
+      10,
+      4
+    ],
+    "L": [
+      12,
+      4,
+      6
+    ],
+    "outward": [
+      6,
+      4,
+      4
+    ],
+    "outward_frame": "(35-r,18+c)",
+    "external": [
+      6,
+      4,
+      4
+    ],
+    "external_frame": "(32+c,13+r)",
+    "repaired_support": [
+      31,
+      19
+    ],
+    "positive_terminal_supports": [
+      [
+        30,
+        19
+      ],
+      [
+        31,
+        18
+      ]
+    ],
+    "extra_full_tile_indices": [
+      [
+        16,
+        7
+      ],
+      [
+        16,
+        8
+      ]
+    ],
+    "extra_full_tile_lower_coordinates": [
+      [
+        32,
+        14
+      ],
+      [
+        32,
+        16
+      ]
+    ],
+    "external_directed_events": 7,
+    "external_events": [
+      {
+        "owner": "L",
+        "endpoint": [
+          32,
+          13
+        ],
+        "target": [
+          33,
+          13
+        ]
+      },
+      {
+        "owner": "L",
+        "endpoint": [
+          32,
+          14
+        ],
+        "target": [
+          33,
+          14
+        ]
+      },
+      {
+        "owner": "L",
+        "endpoint": [
+          32,
+          15
+        ],
+        "target": [
+          33,
+          15
+        ]
+      },
+      {
+        "owner": "L",
+        "endpoint": [
+          32,
+          16
+        ],
+        "target": [
+          33,
+          16
+        ]
+      },
+      {
+        "owner": "L",
+        "endpoint": [
+          32,
+          17
+        ],
+        "target": [
+          33,
+          17
+        ]
+      },
+      {
+        "owner": "W",
+        "endpoint": [
+          33,
+          14
+        ],
+        "target": [
+          32,
+          14
+        ]
+      },
+      {
+        "owner": "W",
+        "endpoint": [
+          33,
+          16
+        ],
+        "target": [
+          32,
+          16
+        ]
+      }
+    ],
+    "external_signed_term": -3,
+    "delta_N_plus_Rraw": -3,
+    "next_missing_forced_original_support": [
+      32,
+      20
+    ],
+    "complete_family": false,
+    "refutes_full_allocation": false
+  },
+  "repaired_cavity_obstruction": {
+    "parameter_controls": 8,
+    "widths": [
+      12,
+      14,
+      50,
+      200
+    ],
+    "witness": {
+      "bottom": 40,
+      "width": 12,
+      "endpoint_disjoint_sources": 6,
+      "consumed_forced_sites": [
+        [
+          31,
+          19
+        ],
+        [
+          32,
+          20
+        ]
+      ],
+      "C": [
+        8,
+        6,
+        4
+      ],
+      "C_frame": "(37-r,18+c)",
+      "E": [
+        6,
+        4,
+        4
+      ],
+      "E_frame": "(35-r,19+c)",
+      "W": [
+        6,
+        4,
+        4
+      ],
+      "W_frame": "(32+c,13+r)",
+      "negative_E_charge": -1,
+      "internal_package_delta_phi": 0,
+      "external_delta_phi": -3,
+      "next_missing_original_support": [
+        33,
+        22
+      ],
+      "missing_support_anchors": [
+        [
+          33,
+          21
+        ],
+        [
+          34,
+          22
+        ]
+      ],
+      "complete_family": false,
+      "refutes_target": false
+    },
+    "written_all_width_family": true
+  },
+  "third_right_repair": {
+    "parameter_patterns": 512,
+    "widths": [
+      12,
+      14,
+      50,
+      200
+    ],
+    "arbitrary_dimension_test_max": 50,
+    "minimum_reserve_gain": 3,
+    "exact_tile_event_partition": true,
+    "W_neutral": true,
+    "repairs_displayed_external_loss": true,
+    "other_orientation": "OPEN",
+    "arbitrary_additional_sources": "OPEN",
+    "full_allocation": "OPEN"
+  },
+  "scope": "Finite independent controls of a separately written general consumer dichotomy, exact neutral raw-potential package, and subsequent negative cavity consumer/window. The external-sign obstruction is partial, not complete-model or allocation refutation. No global target credit is claimed."
+}

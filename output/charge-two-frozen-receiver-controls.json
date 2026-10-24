@@ -1,0 +1,90 @@
+{
+  "shape": [
+    14,
+    10
+  ],
+  "endpoints": 38,
+  "matching_edges": 19,
+  "selected": 20,
+  "receiver_tiles": 17,
+  "selected_in_receiver": 17,
+  "blanks_in_receiver": 13,
+  "corrected_charge_twice": 4,
+  "saturated_endpoint_transfers": 6,
+  "occupied_degrees": {
+    "3": 28,
+    "4": 10
+  },
+  "freezing_layer_sizes": [
+    6,
+    4,
+    4,
+    4,
+    5,
+    6,
+    4,
+    3,
+    2
+  ],
+  "ordered_certificate_steps": 38,
+  "distinct_capped_donors": [
+    {
+      "tile": [
+        1,
+        1
+      ],
+      "deficit": 1
+    },
+    {
+      "tile": [
+        3,
+        0
+      ],
+      "deficit": 2
+    },
+    {
+      "tile": [
+        3,
+        3
+      ],
+      "deficit": 1
+    },
+    {
+      "tile": [
+        5,
+        1
+      ],
+      "deficit": 1
+    }
+  ],
+  "actual_owned_capacity": 5,
+  "guaranteed_owned_units": 4,
+  "objective": 39,
+  "no_endpoint_deficit": 33,
+  "whole_grid_deficit": 31,
+  "receiver_inventory": [
+    {
+      "endpoints": 1,
+      "selected": 2,
+      "tiles": 6
+    },
+    {
+      "endpoints": 2,
+      "selected": 1,
+      "tiles": 5
+    },
+    {
+      "endpoints": 3,
+      "selected": 0,
+      "tiles": 2
+    },
+    {
+      "endpoints": 4,
+      "selected": 0,
+      "tiles": 4
+    }
+  ],
+  "status": "PASS",
+  "symmetry_images": 8,
+  "scope": "Complete explicit frozen charge-two counterexample to the whole-receiver ceiling; ordered freezing is a general exclusion proof for arbitrary mixed bundles, not exhaustive bundle enumeration. Four distinct capped donor tiles are deduplicated before adding physical capacities. The coefficient-one grid inequality is not refuted."
+}

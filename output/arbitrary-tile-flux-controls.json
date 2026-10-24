@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "cuts": 122572,
+  "split_added_source_occurrences": 94032,
+  "crossing_rotor_arc_occurrences": 600,
+  "footprint_closed_marginal_checks": 58220,
+  "half_integral_regional_increments": 8028,
+  "old_inventory_choices": 2104,
+  "complete_inventories": 736,
+  "diagnostics": {
+    "old_rotor_negative_cut": {
+      "doubled_increment": 0,
+      "old_doubled_beta": -1,
+      "outgoing": 1,
+      "incoming": 0,
+      "repaired_rhs": 0,
+      "omitted_flux_rhs": 1
+    },
+    "added_positive_U_terminal_cut": {
+      "doubled_increment": 0,
+      "anchor_count": 0,
+      "doubled_beta": -1,
+      "terminal_credits": 1,
+      "whole_Phi": 1
+    },
+    "separate_rounding_counterexample": {
+      "old_empty": true,
+      "whole_Phi": 0,
+      "doubled_regional_increments": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "exact_total": 0,
+      "sum_of_individual_ceilings": 2
+    }
+  },
+  "scope": "Finite controls of a written arbitrary-cut conservation proof. Checks direct immutable inventory identity, physical new-terminal allocation, injective actual rotor pairs, exact signed boundary terms, old-eligible debit and partition sums, including cuts through sources. Does not prove general grid decomposition, sharp exterior5, or marked-side coverage."
+}

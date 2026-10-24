@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T17:58:03.473078+00:00",
+  "execution": "User-authorized local machine; sequential standalone module.",
+  "command": "cd formal && lean SubQuorum/ColoredRowOwnerDeficiency.lean",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "exit_code": 0,
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 45%",
+    "decision": "One small standalone core/Omega module; sequential on user-authorized local machine."
+  },
+  "axiom_audits": [
+    "'SubQuorum.ColoredRowOwnerDeficiency.owner_unique_on_color' does not depend on any axioms",
+    "'SubQuorum.ColoredRowOwnerDeficiency.monochromatic_allocation_nonreuse' does not depend on any axioms",
+    "'SubQuorum.ColoredRowOwnerDeficiency.colored_owner_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ColoredRowOwnerDeficiency.resource_cut_conversion' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ColoredRowOwnerDeficiency.two_flips_preserve_phase' depends on axioms: [propext]",
+    "'SubQuorum.ColoredRowOwnerDeficiency.relay_chain_preserves_phase' depends on axioms: [propext]"
+  ],
+  "scope": "Opposite-color owner uniqueness and monochromatic terminal-allocation nonreuse; two-flip and arbitrary finite relay phase invariance; signed two-color inventory conversion and one-step resource-cut arithmetic.",
+  "not_formalized": [
+    "Grid owner-fiber/opposite-color geometry",
+    "Exact row matchings and Hall defect theorem",
+    "Uniform asymmetric freezing construction",
+    "Full lifting/full-route cut equality and universal grid inequality"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

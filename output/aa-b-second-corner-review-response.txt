@@ -1,0 +1,164 @@
+ACCEPT — with an explicit dependency boundary for the censusThe written no-B theorem is sound in the specified saturated AA endpoint component. Its proof addresses the actual incoming sources, both relevant equality cases, all rotor orientations, the fixed-partition phase alternatives, recurring ownership, and the final crossing for arbitrary legal independent dimensions.The negative-only all-route census is also correct, conditional on the inherited global occurrence injections and cap-selection identities, and on the earlier C theorem supplying the exact grouped stencil and fixed-partition placement asserted in D §5. The C proof itself is not included in this packet, so I cannot independently certify that cross-file correspondence. I checked the supplied new D arguments needed here; they support the census under those stated inputs.An important distinction is that the no-B proof does not use the new conclusion  $C_+=D_+=0$ . That conclusion is needed for the negative-only census. Thus the standalone no-B verdict does not depend on completion of the separate D review.I found no must-fix mathematical defect in the new B argument or in the propositions stated by the ten supplied Lean theorems. This is an ordinary mathematical and static source review, not certification of reported compilation, axiom audits, warnings, controls, or execution receipts.1. The B frame and transported partition are correctUse the endpoint predicate supplied in WidthSixBottomOwner.lean:
+$$\begin{aligned}
+E(w,a,f)={}&
+\{(r,c):0\le r\le1,\ 1\le c\le w\}\\
+&\cup\{(r,1):2\le r\le a\}
+\cup\{(r,w):2\le r\le f\}.
+\end{aligned}$$
+In the original B normalization, the positive terminal at
+$$x=(1,-a-1)$$
+has its outward direction west and its original side support north. At the normalized AA short tip
+$$z=(b,6),$$
+these directions are south and east, respectively. Because these are the distinguished axial and side-support directions, their correspondence forces
+$$M(\Delta r,\Delta c)=(-\Delta c,-\Delta r).$$
+There is no second compatible signed permutation once those two roles are distinguished.The incident leg height is preserved by the normalization, so  $a=b$ . The resulting affine map from the original B coordinates is
+$$(u,v)\longmapsto(-v-1,\,7-u).$$
+Composing with the original positive-source map gives
+$$(r,c)\longmapsto(r,7-c),$$
+which exchanges its two stems and puts the activated short stem on column  $6$ . Composing with the companion gives exactly
+$$F(r,c)=(h-r,8-c).$$
+Consequently the output tile is
+$$T=\{b,b+1\}\times\{6,7\},$$
+with
+$$z=(b,6),\qquad y=(b+1,6),$$
+and the companion endpoints at
+$$(b,7),\qquad(b+1,7).$$
+The original interior condition becomes
+$$h\ge b+4.$$
+This also checks the partition adapter. The affine map sends each original even/odd coordinate pair to another even/odd pair. In particular,  $z$  is the even-row/even-column corner and  $y$  the odd-row/even-column corner of the transported original tile. No phase is obtained by selecting a new partition.The cap reduction is consistent with the established cap input. At the original cap boundary  $a=h-2$ , the companion occupies the three corners other than  $x$ , so the positive terminal  $x$  is a positive cap filler. The established  $F_{\rm pos}=0$  therefore removes that case. Every remaining B event is interior.2. The boundary  $k=b$  must be removed—and the proof removes it correctlyFor the actual incoming source
+$$R_1(r,c)=(k+2-r,c+4),$$
+at  $k=b$  the companion’s two endpoints have inverse coordinates
+$$R_1^{-1}(b+1,7)=(1,3),\qquad
+R_1^{-1}(b,7)=(2,3).$$
+The first belongs to the full bar. The second is below the bar and in an interior column:  $3\ne1,v$ , because  $v\ge6$ . Thus
+$$(b+1,7)\in P_{R_1},\qquad (b,7)\notin P_{R_1}.$$
+Since  $F$  owns both points, the missing point first establishes  $F\ne R_1$ . Their common endpoint then contradicts original endpoint disjointness. This is a valid argument even when recurring owners are permitted.Legal heights are even, so
+$$k\ge b,\qquad k\ne b$$
+imply
+$$k\ge b+2.$$
+This boundary exclusion is essential. Without it, the later assertion that  $R_1$  does not own  $y$  would fail: at  $k=b$ ,  $y$  pulls back to the bar point  $(1,2)$ .After the exclusion,
+$$\begin{aligned}
+R_1^{-1}(b+1,5)&=(k-b+1,1),\\
+R_1^{-1}(b+1,6)&=(k-b+1,2).
+\end{aligned}$$
+Here
+$$3\le k-b+1\le k.$$
+Therefore
+$$p=(b+1,5)\in P_{R_1},\qquad y\notin P_{R_1}.$$
+The actual owner  $J$  of  $y$  consequently differs from  $R_1$ , before  $p$  is used as a foreign endpoint.3. The additional incoming endpoint closes the exact rotor catalogueThe seven-point B stencil is correctly obtained from complete original sources:
+$$S_B=
+\{(-1,-2),(-1,-1),(-1,0),(-1,1),(0,1),(0,2),(0,3)\}.$$
+The four companion points pull back to near-column rows
+$$h-a-3,\ldots,h-a.$$
+Their first row is at least  $1$ ; row  $1$ , when it occurs, belongs to the complete bar, and the subsequent rows belong to the stem. The three positive-owner points pull back to its incident stem at rows  $a,a-1,a-2$ . Thus neither part of the stencil restricts an independent far height.Here is a direct check of the sixteen anchored rotor roles. Label the points of the supplied rotorP in their listed order:
+$$\begin{gathered}
+A=(1,2),\ B=(2,2),\ C=(2,3),\ D=(2,4),\\
+E=(3,1),\ F_0=(3,2),\ G=(3,3),\ H_0=(4,3).
+\end{gathered}$$
+The table gives one collision with  $S_B$  for every excluded placement.Anchored roleUnmirrored collisionMirrored collision $A$ NoneNone $B$  $(-1,0)$  $(-1,0)$  $C$  $(-1,-1)$  $(-1,1)$  $D$  $(-1,-2)$  $(0,1)$  $E$  $(-1,1)$  $(-1,-1)$  $F_0$  $(-1,0)$  $(-1,0)$  $G$  $(-1,-1)$  $(-1,0)$  $H_0$  $(-1,-2)$  $(-1,0)$ The two surviving endpoint images are exactly the two printed in B §2. Both contain  $(1,0)$ .This is exhaustive over orientations and translations. The given rotor is invariant under quarter turns about  $(5/2,5/2)$ ; reflection supplies the other chirality. Once an original endpoint role is assigned to  $y$ , its translation is fixed. Consequently the two chiralities and eight anchored roles cover every allowed rotor placement.Under the established B-to-AA signed map,
+$$(1,0)\longmapsto(0,-1).$$
+That is precisely the displacement from  $y$  to the actual incoming endpoint  $p$ . Since  $p$  is foreign to  $J$ , it blocks both surviving roles.Thus the manuscript correctly distinguishes the two conclusions:The generic seven-point B stencil leaves two rotor possibilities.The actual AA incoming endpoint removes both.The U-only conclusion is justified specifically in this AA setting.4. The U terminal alternatives and their phases are exhaustiveAt  $y$ , the north, east and west neighbors belong to  $O,F,R_1$ , respectively, and are foreign to  $J$ .Every nonterminal endpoint of a complete legal U has at least two original endpoint neighbors:An upper outer bar corner has a horizontal bar neighbor and the point below.Other bar points have at least two bar neighbors or continuing stem neighbors.A nonterminal stem point has its two opposite stem neighbors.Three foreign neighboring positions leave only one possible direction for an own endpoint neighbor. Therefore  $y$  must be an original terminal, with its predecessor south and its outward direction north.This eliminates the phase10 upper-bar-corner alternative by geometry, not by a finite dimension search. The exact singleton catalogue also excludes phase11.The remaining phase choice follows from the actual tile
+$$T=\{b,b+1\}\times\{6,7\}.$$
+Position of the other stemOriginal support directions at  $y$ Supports inside  $T$ Effective phaseWestNorth and eastBoth $00$ , positiveEastNorth and westNorth only $01$ , negativeThe north-pointing terminal and its even incident height fix this placement. The phase is not chosen afresh for the event.In the positive case, both original intratile supports are occupied by foreign original endpoints. It is therefore an actual activation. Since  $J\ne O$ , the stipulated AA activation census identifies it as the other actual activated short tip, not an arbitrary unactivated positive and not a newly postulated source.5. The incoming theorem applies at the reflected second positive sourceThis is the most consequential applicability check, and the displayed argument passes it.Let  $t$  be the short height of the hypothetical second positive owner. Its other stem must be west, so its physical map is
+$$O_2(r,c)=(s-r,c),\qquad s=b+t+1.$$
+It sends the canonical short tip  $(t,6)$  to  $y=(b+1,6)$ .Since  $b,t$  are even,  $s$  is odd. The row reflection therefore maps a canonical row pair as follows:
+$$\{2j,2j+1\}
+\longmapsto
+\{s-2j-1,s-2j\},$$
+whose smaller element is even. Columns are unchanged. Thus this reflection preserves the aligned physical partition as a collection of tiles.One may consequently apply the inverse coordinate change to the whole actual component, transporting its endpoint sets, original supports, unchanged matchings and partition. In that frame,  $O_2$  is exactly a canonical AA positive with its long unactivated stem on the left and its activated short stem on the right. The established incoming-owner theorem applies to that actual source.It supplies an actual canonical incoming source
+$$G_\ell(r,c)=(\ell+2-r,c+4),\qquad \ell\ge t.$$
+Transporting it back gives
+$$O_2\circ G_\ell(r,c)
+=(b+t-\ell-1+r,c+4),$$
+which is precisely the stated  $R_2$ .This application does not assume that  $R_2$  is fresh or distinct from  $R_1$ .The extra missing point proves distinctnessTake
+$$p=(b+1,5),\qquad q=(b+t-\ell-1,6).$$
+Their inverse coordinates are
+$$\begin{array}{c|cc}
+ &R_1^{-1}&R_2^{-1}\\ \hline
+p&(k-b+1,1)&(\ell-t+2,1)\\
+q&(k-b-t+\ell+3,2)&(0,2).
+\end{array}$$
+For  $R_2$ ,
+$$2\le\ell-t+2\le\ell,$$
+so  $p$  is a near-stem endpoint, while  $q$  is a bar endpoint.For  $R_1$ , the inverse row of  $q$  satisfies
+$$k-b-t+\ell+3=(k-b)+(\ell-t)+3\ge5.$$
+Its column  $2$  is neither stem column. Hence
+$$q\in P_{R_2}\setminus P_{R_1}.$$
+The two complete original endpoint sets differ, establishing  $R_1\ne R_2$ . Their common endpoint  $p$  then contradicts disjointness.The boundary  $\ell=t$  is included:  $R_2^{-1}p=(2,1)$ , and the lower inverse row of  $q$  is still at least  $5$ . There is no strict-height assumption hidden in this step.Positive ownership of  $y$  is therefore excluded without assuming fresh incoming owners.6. The negative terminal crossing holds for all legal independent dimensionsThe remaining owner has phase01 and its other stem east. Thus its exact form is
+$$J(r,c)=(b+t+1-r,c+5),$$
+on a legal  $U(w,t,f_J)$ . The companion is
+$$F(r,c)=(h-r,8-c),$$
+on  $U(v,h,f)$ , with  $h\ge b+4$ .Put
+$$L=b+t+1.$$
+Their inverse maps are
+$$F^{-1}(r,c)=(h-r,8-c),\qquad
+J^{-1}(r,c)=(L-r,c-5).$$
+There are exactly two cases.Case 1:  $L\ge h-1$ Choose
+$$u=(h-1,6).$$
+Its companion coordinate is
+$$F^{-1}u=(1,2),$$
+a bar endpoint.Its  $J$ -coordinate is
+$$J^{-1}u=(L-h+1,1)=(b+t+2-h,1).$$
+The case assumption gives a nonnegative row, and  $h\ge b+4$  gives
+$$b+t+2-h\le t-2.$$
+It therefore lies in  $J$ 's bar or incident stem.The equality  $L=h-1$  is explicitly covered: the  $J$ -coordinate is  $(0,1)$ , a bar endpoint.Case 2:  $L<h-1$ Choose
+$$u=(L,7).$$
+Then
+$$J^{-1}u=(0,2),$$
+a bar endpoint, while
+$$F^{-1}u=(h-L,1).$$
+Here  $h-L\ge2$ , and  $h-L\le h$  because  $L\ge0$ . Thus this is a companion near-stem endpoint.These cases exhaust all heights. Neither witness uses either independent far height. Widths enter only through bar-column inclusion, which every legal width satisfies.Finally,  $J\ne F$  is already established by their exact original singleton and pair profiles in  $T$ . Indeed, directly,
+$$F^{-1}y=(h-b-1,2)$$
+is not an endpoint because  $h-b-1\ge3$ . The crossing is therefore between distinct original sources.This proves that the remaining negative terminal cannot fit. Together with the rotor and positive exclusions, it establishes the no-B theorem by an unbounded source argument.7. The new D ingredients needed for the censusI checked the supplied D argument to the extent required for B §5.The D second-corner stencil is validThe four companion endpoints pull back to
+$$(h-a-3,1),\ldots,(h-a,1),$$
+and the three  $H$ -owner endpoints pull back to
+$$(0,1),(0,2),(0,3).$$
+Thus the claimed grouped stencil is valid for every legal interior event:
+$$S_D=
+\{(-1,-2),(-1,-1),(-1,0),(-1,1),(0,1),(1,1),(2,1)\}.$$
+The distinction from the B stencil matters: the last two points are  $(1,1),(2,1)$ .This stencil excludes both rotor chiralities. A central anchor cannot avoid the foreign north and east neighbors. A south or west outer tip has its central neighbor in one of those blocked directions. For the remaining north/east tips, the two chiralities give collisions at  $(1,1)$  or  $(2,1)$ , and at the displayed upper-row stencil points.The exact singleton catalogue then gives phases01/10 or an actually activated phase00 terminal, as stated.The enlarged negative pool has the required nonreuse argumentGiven the inherited joint output-tile injection and separation from earlier receiving tiles, the new D- $y$  occurrences are separated from other D outputs and the selected C/old receiving occurrences.The additional local separations also work with recurring owners:A cap filler requires a foreign original triple in its tile; the D corner has the companion’s exact original pair. Distinct owners cannot fit both, and one owner cannot have both exact profiles in the same tile.An  $E_0$  occurrence requires an exact foreign irregular pair. The only owner with two endpoints in the D tile is  $F$ , whose pair is exact regular  $2P1T$ .The two other singleton owners cannot have their points combined and substituted for a required pair belonging to one original owner.Thus the new negative D- $y$  family enlarges the selected subset of the same  $P_{\rm neg}$ . It does not insert another copy of the already selected D- $x$  family or spend the full  $E_{1,\rm reg}$  count again.The AA positive exclusion checks both compatible framesAt a hypothetical positive C/D second corner the original intratile support directions are north/east; at a normalized AA short tip they are south/east. The two possible signed maps are
+$$M_1(\Delta r,\Delta c)=(-\Delta r,\Delta c),\qquad
+M_2(\Delta r,\Delta c)=(\Delta c,-\Delta r).$$
+For  $M_1$ , the two  $F$ -owned points
+$$(-1,-1),\quad(-1,-2)$$
+map to
+$$p=(b+1,5),\quad q_{\rm west}=(b+1,4).$$
+For  $M_2$ , the two  $H$ -owned points
+$$(1,1),\quad(2,1)$$
+map to the same pair.Thus in either frame one actual original owner contains both points. The incoming source owns  $p$ , with inverse coordinate
+$$(k-b+1,1),$$
+and lacks  $q_{\rm west}$ , whose inverse column is  $0$ . At  $k=b$ , the first coordinate is  $(1,1)$ , so the equality case works here too.The missing point establishes distinctness before the shared- $p$  contradiction.For  $D_+=0$ , the necessary grouped stencil is proved by the supplied source maps. For  $C_+=0$ , the earlier C note is absent. The precise remaining dependency is that it supplies the same owner grouping and fixed-partition placement, as asserted in D §5. Merely supplying seven foreign points without that grouping would be insufficient: the two points used to establish distinctness and collision must belong to the same actual source.8. The negative-only all-route census follows exactlyTo avoid confusing the positive short height  $b$  with the B-interior event count, write the latter as  $b_{\rm int}$ .The established cap exclusion and the new interior impossibility give
+$$K_B=K_{B,\rm cap}=b_{\rm int}=0.$$
+Under the checked D dependencies,
+$$C_-=K_C,\qquad D_-=d,\qquad
+F_{\rm pos}=U_0=C_+=D_+=0.$$
+The original cap partition gives
+$$F_{\rm neg}=2K_{11}.$$
+The enlarged negative pool therefore gives the exact identity
+$$2(K_{01}+K_{10})
+=2K_{11}+e+2K_C+2d+L_{\rm AA},
+\qquad L_{\rm AA}\ge0.$$
+Retain the same selected-cap partition:
+$$2K_{11}=K_A+K_{D,\rm cap}+Q.$$
+Since
+$$K_D=K_{D,\rm cap}+d,$$
+we have
+$$K_{\rm back}
+=K_A+K_C+K_{D,\rm cap}+d
+=2K_{11}-Q+K_C+d.$$
+Hence
+$$2K_{11}+2K_C+2d
+=K_{\rm back}+K_C+d+Q.$$
+Substitution yields
+$$\boxed{
+2(K_{01}+K_{10})
+=K_{\rm back}+K_C+d+e+Q+L_{\rm AA}.
+}$$
+Dropping the actual complement gives
+$$\boxed{
+K_{\rm back}+K_C+d+e+Q
+\le2(K_{01}+K_{10}).
+}$$
+The removal of the previous right-hand  $+2$  is valid. It comes from the exact negative pool after the positive exit alternatives have been excluded. It does not reuse  $A$  or change  $R$ .The independent terminal-capacity specialization is
+$$E_{\rm term}\le2.$$
+Also, “no  $A$  term” means no activation-count term  $A$  on the right. Route-A events  $K_A$  remain included in  $K_{\rm back}$ ; the result does not eliminate that route.9. What the ten Lean statements establishAll ten supplied propositions agree with the ordinary arguments above. Their scope, in source order, is:DeclarationMathematical content checkedPhysical adapter still supplied by the written proof1. Seven-point rotor countExactly two listed anchored roles surviveQuarter-turn/chirality exhaustion identifies the list with all rotor placements2. Extra-blocker rotor exclusionAdding  $(1,0)$  removes both survivorsThe actual incoming endpoint is foreign and transports to that displacement3. Signed frameThe two direction premises force the displayed displacement imagesActual axial and side-support directions give those premises4. Equal incoming heightOne companion point is present and the other absent at  $k=b$ The companion owns both; the missing point establishes source distinctness5. Strict incoming height $p$  is present and  $y$  absent for  $k\ge b+2$ Equal-height exclusion plus evenness supplies the strict inequality6. Three foreign neighborsEvery possible U anchor is an original terminalActual foreign neighbors determine the south back-ray and transported phase7. Opposite incoming ownersThe two displayed maps share  $p$  and differ at  $q$ The AA theorem applies to the actual reflected second positive source8. Exact censusCorrect conditional integer eliminationThe physical negative pool, cap selection and occurrence packing9. Final crossingThe two displayed endpoint sets cannot be disjointPhase classification supplies those actual source maps and their distinctness10. CapacityThe equality and nonnegative complement imply the inequalityThe complement is the actual unused subset of  $P_{\rm neg}$ In particular, aa_negative_only_all_route_exact_census does not assume positiveBand = 0 or routeB = 0. Its positiveBand contribution cancels under its assumed identities. That proposition is valid conditional algebra; its name must not be read as a formal proof that B events do not exist.Likewise, the crossing declaration assumes the displayed source forms and disjointness. The substantive written work is to prove that every remaining actual source must have those forms. The manuscript supplies that work, and the checks above validate it.The reported execution and sampled collision counts play no role in this acceptance.Review scope and minor clarificationsTwo small presentation changes would make the accepted scope easier to preserve:Rename the B-interior event count to avoid the literal ambiguity between the legal short height  $b\ge4$  and the later statement  $K_B=b=0$ .State explicitly that  $C_+=D_+=0$  is a dependency of the census, not of the standalone no-B proof.Neither is a mathematical obstruction.The accepted conclusion is the absence of B events in this specified AA component, together with the stated conditional negative-only necessary census. It does not exclude all AA fusions. No argument supplied here forces the census demand to exceed the available negative source count. No complete AA or critical  $U10$  realization, unrestricted allocation theorem, or rectangular-grid equality follows.

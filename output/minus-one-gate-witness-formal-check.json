@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-19T22:35:42.569283+00:00",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "actual_lean_lake_preflight": [],
+  "memory_pressure_free_percent": 50,
+  "parallel_jobs": 1,
+  "source": "formal/SubQuorum/MinusOneGateWitness.lean",
+  "declaration_count": 14,
+  "declarations": [
+    "original_charges",
+    "matching_endpoints_distinct",
+    "actual_matching_edges",
+    "original_feasibility",
+    "final_selected_feasibility",
+    "final_endpoint_min_degree",
+    "actual_counts",
+    "inside_rectangle",
+    "no_intratile_new_neighbors",
+    "no_new_full_tiles",
+    "old_donor_profiles",
+    "both_old_donors_fully_consumed",
+    "final_receiver_charge",
+    "exact_half_area_slack"
+  ],
+  "build_seconds": 28.597,
+  "axiom_audit_seconds": 3.45,
+  "audit_stdout": "'SubQuorum.MinusOneGateWitness.original_charges' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.matching_endpoints_distinct' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.actual_matching_edges' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.original_feasibility' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.final_selected_feasibility' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.final_endpoint_min_degree' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.actual_counts' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.inside_rectangle' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.no_intratile_new_neighbors' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.no_new_full_tiles' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.old_donor_profiles' depends on axioms: [propext]\n'SubQuorum.MinusOneGateWitness.both_old_donors_fully_consumed' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.final_receiver_charge' does not depend on any axioms\n'SubQuorum.MinusOneGateWitness.exact_half_area_slack' does not depend on any axioms\n",
+  "audit_stderr": "",
+  "scope": "The explicit seven original modules: charges, feasible original supports and degree3 endpoints, distinct actual matching endpoints and edges, complete final selected feasibility, endpoint degree lower bound, rectangle containment, counts142P71M28T, zero intratile new-neighbor defect and zero new full physical tiles, original two canonical unit donor profiles, both consumed as full endpoint tiles, final receiver charge minus5 and exact half-area slack69. No complete freezing or general coordinate classification claim. Kernel decide only, no native_decide, Std-only."
+}

@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_LOCAL_WRITTEN_EXACT_SCOPED_LEAN_ORIGINAL_REVIEW_ACCEPT_SEED_NOW_EXCLUDED",
+  "proof": "docs/WIDE_GATE_ROTOR_COMPENSATION.md",
+  "verifier": "develop/check_wide_gate_rotor_compensation.py",
+  "python": {
+    "session": 79851,
+    "exit_code": 0,
+    "U_roles_excluded": 2592,
+    "rotor_roles": 128,
+    "exact_full_event_batches": 1360,
+    "lower_only_partial_equality_cases": 16,
+    "large_controls": 4,
+    "largest_width": 2000,
+    "largest_inner_source_count": 12
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WideGateRotorCompensation.lean",
+    "version": "4.33.0",
+    "session": 43962,
+    "exit_code": 0,
+    "explicit_declarations": 15,
+    "local_theorems": 9,
+    "preflight_memory_free_percent": 45,
+    "real_lean_lake_processes": [],
+    "axioms": "Every explicit declaration audited individually; ordinary propext/Classical.choice/Quot.sound only. Final run no warnings/sorry/native. Earlier right-reflection type mismatch corrected.",
+    "scope": "All-depth east-terminal collision; canonical rotor geometry, opposite separation and immutable middle supports; inter-gap tile-row separation; gate injection and budget arithmetic. Exact original-source inventory and complete-extension/role adapters are WRITTEN."
+  },
+  "claim": "Even W>=8,a>=2,n>=2, even D/F>=a+8(n-1)+4. Retain A=U(W+2,D,F) chart(r,c-1), B_i=U(W,4,4) chart(a+8i+r,c). Any complete full-U/standard-rotor extension forces2(n-1) distinct gate rotors. Selected retained+gate-owner inventory Phi=3(n-1)+upperCount.",
+  "limitations": "Selected-inventory theorem only. Lower-only partial equality is not complete-family sharpness. No complete extension existence or arbitrary-baseline monotonicity. Original two-layer written review completed ACCEPT; the later all-width nonextension theorem is under separate review and makes complete-owner implications for this seed vacuous. Global5/6, full-family allocation and grid triple equality OPEN.",
+  "predecessor_review": {
+    "task_id": "e5552d8e-bcac-46bf-96c4-181121a74210",
+    "original_stream_session": 25032,
+    "last_observed": "COMPLETED_ACCEPT original25032exit0;11448chars exactSSEterminalMatch gpt6/pro; receipt even-bar-contact-ledger-review-terminal.json."
+  },
+  "review": {
+    "task_id": "4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2",
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "original_stream_session": 15686,
+    "status": "COMPLETED_ACCEPT",
+    "scope": "Original BOTH wide layers accepted, not post-submission far-offset or subsequent all-width closure; written audit, no independent execution. Two coordinate wording fixes applied.",
+    "original_stream_exit_code": 0,
+    "response_chars": 19396,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/wide-gate-escape-pair-review-terminal.json"
+  },
+  "subsequent_disposition": {
+    "proof": "docs/ALL_WIDTH_NESTED_SEED_NONEXTENSION.md",
+    "status": "COMPLETED_ACCEPT_da0dcf4e_18509chars_exactStreamTerminalMatch_gpt6pro",
+    "claim": "ALL evenW>=6 nested seed NOcompleteExtension; earlier selected partial formulas stayexact, complete-owner implicationsforTHISseed vacuous, not global bound."
+  }
+}

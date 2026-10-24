@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19T19:15:40.059309+00:00",
+  "execution_location": "User-authorized local Mac",
+  "lean_version": "4.33.0",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 38%",
+    "actual_lean_lake_processes": [],
+    "process_check": "Exact basename of full comm field, including bare names."
+  },
+  "source_files": [
+    "formal/SubQuorum/MixedStripCertificates.lean"
+  ],
+  "theorem_declarations": 4,
+  "compile_exit_codes": {
+    "source": 0,
+    "stdin_axiom_audit": 0
+  },
+  "axiom_audit_output": [
+    "'SubQuorum.MixedStripCertificates.mixed_loss_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedStripCertificates.no_loss_iff_no_excess_or_even' depends on axioms: [propext,",
+    " Classical.choice,",
+    " Quot.sound]",
+    "'SubQuorum.MixedStripCertificates.mixed_component_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedStripCertificates.even_ends_reservation_decreases_budget' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Four unbounded arithmetic identities: exact mixed loss, exhaustion characterization, per-component budget, and a parity-based reservation loss with explicit branch hypotheses. The physical graph/Hall adapter, charge-five resource classification and exact frozen donor are written and independently computationally checked, not formalized by these four statements."
+}

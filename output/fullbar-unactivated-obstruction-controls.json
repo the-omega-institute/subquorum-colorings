@@ -1,0 +1,204 @@
+{
+  "status": "PASS",
+  "witness": {
+    "gate_owner": 2,
+    "forced_support_consumer": 6,
+    "original_terminal_supports_retained": true,
+    "gate_marked": true,
+    "producer_terminal_activated": false,
+    "adjacent_final_profile": [
+      2,
+      1
+    ],
+    "adjacent_profile_owners": 1,
+    "adjacent_tile_defect": 0,
+    "least_feasible_seed_hull_owners": 8,
+    "paths": {
+      "negative_U_sinks": 2,
+      "P": 1,
+      "physical_paths": 5,
+      "physical_cycles": 0,
+      "bad_paths": 1,
+      "unmarked_surplus": 5
+    }
+  },
+  "physical": {
+    "owners": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "endpoints": 184,
+    "matching": 92,
+    "selected": 40,
+    "endpoint_components": 1,
+    "shape": [
+      22,
+      26
+    ],
+    "ambient_slack": 154,
+    "positive": 3,
+    "marked": 3,
+    "activated_positive": 4,
+    "unused_u_triples": 3,
+    "unpaired_rotor_activation": 0,
+    "lone_irregular": 2,
+    "sole_irregular_pair": 13,
+    "mutual_non_event": 0,
+    "mixed_three": 3,
+    "boundary_cost": 31,
+    "event_reserve": 19,
+    "exact_joint_margin": 19
+  },
+  "specifications": [
+    [
+      [
+        14,
+        8,
+        4
+      ],
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        4,
+        14
+      ]
+    ],
+    [
+      [
+        6,
+        6,
+        4
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        1,
+        7
+      ]
+    ],
+    [
+      [
+        6,
+        6,
+        4
+      ],
+      [
+        true,
+        true,
+        true
+      ],
+      [
+        9,
+        13
+      ]
+    ],
+    [
+      [
+        6,
+        8,
+        4
+      ],
+      [
+        true,
+        true,
+        true
+      ],
+      [
+        14,
+        6
+      ]
+    ],
+    [
+      [
+        8,
+        4,
+        4
+      ],
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        4,
+        18
+      ]
+    ],
+    [
+      [
+        10,
+        4,
+        4
+      ],
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        8,
+        11
+      ]
+    ]
+  ],
+  "catalogue": {
+    "anchored_distinct_consumers": 66,
+    "counts": {
+      "horizontal": 33,
+      "endpoint_disjoint_producer_patterns": 720,
+      "unactivated_clearance_patterns": 300,
+      "vertical": 33
+    },
+    "scope": "All anchored endpoint roles and isometries in the explicit dimension library, with no translation cutoff after anchoring. Partial patterns check the written classification/clearance proof, not completion."
+  },
+  "phase_isometry_images": 32,
+  "obstruction_preserving_images": 8,
+  "refutes_fullbar_implies_producer_activation": true,
+  "refutes_forced_exit_tile_has_positive_defect": true,
+  "refutes_full_allocation": false,
+  "scope": "Explicit complete connected eight-source counterexample to two local rules, with exact original matching/support reconstruction, degree feasibility, least Horn hull and actual path ledger. The full allocation margin is POSITIVE nineteen. No source-count minimality, unrestricted allocation or grid conclusion."
+}

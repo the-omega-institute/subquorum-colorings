@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/CompensationAugmentation.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "execution_location": "local Mac selected by the user in this conversation",
+  "preflight_memory_free_percent": 51,
+  "preflight_real_lean_lake_processes": [],
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/CompensationAugmentation.lean",
+  "execution": {"session_id": 82855, "final_chunk": "de6ce5", "exit_code": 0},
+  "theorems": ["simple_path_cannot_reenter_start", "simple_path_cannot_leave_finish", "saturated_source_arc_untouched", "saturated_resource_arc_untouched", "untouched_arc_keeps_flow"],
+  "axiom_audits": 5,
+  "axioms_used": ["propext", "Quot.sound"],
+  "scope": "An injective finite path cannot re-enter its start or leave its finish. Given forward residual availability and reverse walk incidence, each saturated source or sink-resource arc is untouched; a list of residual moves avoiding an arc preserves its flow. Does not formalize integral maximum-flow existence, decomposition, the grid adapter or the geometric budget. The last three statements were added and checked after the new Oracle submission."
+}

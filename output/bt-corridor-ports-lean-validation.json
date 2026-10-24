@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T18:19:00.367313+00:00",
+  "command": "cd formal && lean SubQuorum/BTColumnCorridorObstruction.lean",
+  "exit_code": 0,
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution": "User-authorized local machine; one standalone core/Omega module, sequential.",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "47%",
+    "physical_memory_bytes": 17179869184
+  },
+  "axiom_audits": [
+    "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+    "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+  ],
+  "scope": "Two-side extreme-available interval injection and availability; general strict-rank freezing criterion; concrete feasible matching and complete freezing of all 20 endpoints; exact path/cycle decomposition; arbitrary finite original relay closure with no direct/single-cap exit; concrete two-link longer-corridor witness and margin13.",
+  "not_formalized": [
+    "Physical gap ordering and at-most-two candidates",
+    "Global compression/lifting and optimization equivalence",
+    "All-parameter family and exact minimum link costs",
+    "Universal grid bound"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

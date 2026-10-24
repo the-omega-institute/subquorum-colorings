@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac, user-selected",
+  "lean_version": "4.33.0",
+  "sources": [
+    "formal/SubQuorum/NeutralFullReceiverInjection.lean"
+  ],
+  "total_theorem_declarations": 9,
+  "total_helper_definitions": 3,
+  "source_check": {
+    "original_exec_session": 86260,
+    "exit_code": 0,
+    "memory_free_percent": 40
+  },
+  "axiom_audit": {
+    "original_exec_session": 20842,
+    "exit_code": 0,
+    "memory_free_percent": 46,
+    "theorems_printed": 9
+  },
+  "dependency_builds": [
+    {
+      "source": "formal/SubQuorum/NeutralSupportInjection.lean",
+      "original_exec_session": 33837,
+      "exit_code": 0,
+      "memory_free_percent": 46
+    },
+    {
+      "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+      "original_exec_session": 15088,
+      "exit_code": 0,
+      "memory_free_percent": 42
+    }
+  ],
+  "declarations": [
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.regular_receiver_has_four_original_endpoints",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.first_receiver_has_four_original_endpoints",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.long_receiver_has_four_original_endpoints",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.phase_zero_one_forced_owner_is_terminal",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.shared_tile_stencils_have_same_forced_point",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.first_and_long_receiver_map_is_injective",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.additional_endpoint_count_for_first_and_long_receivers",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.joint_receivers_in_the_shared_corner_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.NeutralFullReceiverInjection.AA_closed_receivers_with_long_exits",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflights": "Memory pressure and ordinary/-c ps exact comm basenames lean/lake before every local invocation; serial checks, no real other lean/lake observed in these preflight outputs.",
+  "scope": "Arbitrary-dimension fourth original endpoint, phase01 terminal role from original foreign blockers and transported canonical origin parity, complete cardinal-frame tag proof, generic event-to-tile injection using actual tile-set adapter and accepted joint point injection; exact counts/shared budget/conditional AA algebra. Whole-owner exclusion and original profile catalogue are written adapters. Complete controls exercise full first receivers but no long/critical phase11 or closed01/AA contacts. No reserve payment from a full receiver and no complete coefficient-one/grid theorem."
+}

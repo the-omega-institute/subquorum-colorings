@@ -1,0 +1,109 @@
+{
+  "status": "GENERAL_WRITTEN_PROOF_EXACT_AND_SCOPED_LOCAL_LEAN_PASS_INDEPENDENT_ACCEPT",
+  "date": "2026-10-21",
+  "python": {
+    "execution_session": 31379,
+    "exit_code": 0,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_root_deep_triple.py",
+    "classification_decisions": 33984,
+    "surviving": 2016,
+    "exact_full_set_controls": 1152,
+    "incident_controls": {
+      "4": 256,
+      "6": 384,
+      "8": 512
+    },
+    "full_north_terminal_roles": 102,
+    "role_parameter_triples": 27,
+    "rotor_exclusions": 2,
+    "long_chain_controls": 24,
+    "long_chain_sizes": [
+      5,
+      24
+    ],
+    "receiver_far_values": [
+      4,
+      2000
+    ],
+    "insertion_order_controls": "All six orders on six long-chain cases and the explicit negative-marginal witness. Stable owner relabeling gives identical complete event sets.",
+    "negative_marginal_witness": {
+      "origin": 31,
+      "offset": 0,
+      "widths": [
+        12,
+        12
+      ],
+      "depths": [
+        24,
+        24
+      ],
+      "root_breadth": 6,
+      "R": [
+        8,
+        8,
+        4
+      ],
+      "A": [
+        6,
+        8,
+        4
+      ],
+      "pair_gain": 49,
+      "joint_gain": 46,
+      "marginal": -3,
+      "complete_extendibility": "NOT_ASSERTED"
+    }
+  },
+  "lean": {
+    "execution_session": 7410,
+    "exit_code": 0,
+    "source": "formal/SubQuorum/SecondaryTenRootDeepTriple.lean",
+    "declarations": 29,
+    "theorems": 22,
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "memory_free_percent": 45,
+    "active_lean_lake_before": [],
+    "axiom_audit": "Each declaration individually printed; only ordinary propext, Classical.choice and Quot.sound where needed; no warnings, sorryAx or native axioms.",
+    "scope": "Explicit all-depth and right-role blockers, width/far constraints, B/R/nextP geometric separations and conditional receipt arithmetic. Original catalogue/completeness adapters, own-block geometric separations and exact set exhaustion remain written."
+  },
+  "review": {
+    "status": "failed_infrastructure",
+    "conversation_id": "conv_fb28a06da07d30e5",
+    "original_execution_session": 64559,
+    "request": "output/secondary-ten-root-deep-triple-review-request.json",
+    "stream": "output/secondary-ten-root-deep-triple-review-stream.sse",
+    "task_id": "5dcc6bd6-7f8e-4aef-a703-496074f27fc2",
+    "original_exit_code": 1,
+    "stream_bytes": 0,
+    "observation_error": "unexpected EOF during chunk size line",
+    "identity_recovery": "Exact complete prompt equality to exactly one turn in the original conversation.",
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "terminal_completed_at": "2026-10-21T15:27:01.691+00:00",
+    "archive": "output/secondary-ten-root-deep-triple-review-failed.json",
+    "mathematical_verdict": null
+  },
+  "limitations": [
+    "Explicit every-actual-original full even U or standard rotor model, not arbitrary-grid exhaustion.",
+    "Specified first root B; actual R and A parameters classified.",
+    "Geometric sufficiency not complete extendibility; negative marginal is a partial-inventory rule obstacle, not a global target counterexample.",
+    "Arbitrary extra originals, other deep phases, global5/6 and grid triple equality OPEN."
+  ],
+  "retry_review": {
+    "status": "completed_ACCEPT",
+    "original_execution_session": 13420,
+    "conversation_id": "conv_1c4e0ac56ebb598f",
+    "request": "output/secondary-ten-root-deep-triple-review-retry-request.json",
+    "stream": "output/secondary-ten-root-deep-triple-review-retry-stream.sse",
+    "justification": "One fresh self-contained retry only after authoritative terminal infrastructure failure, with20ready workers; no duplicate of a live task.",
+    "scope": "Full triple classification and exact selected-union ledger. Later cavity/reflected exclusions outside this input.",
+    "task_id": "cced8155-607d-4d43-be99-7b890ae51877",
+    "original_exit_code": 0,
+    "stream_terminal_response_match": true,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "response_archive": "output/secondary-ten-root-deep-triple-review-response.md",
+    "terminal_archive": "output/secondary-ten-root-deep-triple-review-terminal.json",
+    "correction": "d4 bars overlap in rows; disjointness follows from column intervals [F,s] and [s+1,s+u+12]. No ledger correction."
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checked_at": "2026-10-19T06:41:54.312235+00:00",
+  "active_lean_lake_before": [],
+  "memory_before": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3813.\nPages active:                                 194294.\nPages inactive:                               180763.\nPages speculative:                             12658.\nPages throttled:                                   0.\nPages wired down:                             262152.\nPages purgeable:                                  93.\n\"Translation faults\":                    16124872502.\nPages copy-on-write:                       979418322.\nPages zero filled:                        6623710994.\nPages reactivated:                        3044619490.\nPages purged:                              138940423.\nFile-backed pages:                            250409.\nAnonymous pages:                              137306.\nPages stored in compressor:                  1831544.\nPages occupied by compressor:                 353154.\nDecompressions:                           2476744233.\nCompressions:                             2924482205.\nPageins:                                  4651739819.\nPageouts:                                   13026552.\nSwapins:                                    25949771.\nSwapouts:                                   32443847.\n",
+  "peak_child_rss": 1107181568,
+  "peak_child_rss_unit": "bytes on macOS; KiB on Linux",
+  "checks": [
+    {
+      "module": "SubQuorum/CollarCompensation.lean",
+      "seconds": 4.702,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/AttachmentCollarCompensation.lean",
+      "seconds": 0.659,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/BlankWitnessCompensation.lean",
+      "seconds": 0.474,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/DiagonalWitnessChains.lean",
+      "seconds": 5.391,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/MixedPChainCompensation.lean",
+      "seconds": 0.587,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/FrozenPromotion.lean",
+      "seconds": 0.415,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/OwnedDonorCompensation.lean",
+      "seconds": 1.16,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/SingleSquareObstacle.lean",
+      "seconds": 1.464,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/LadderReduction.lean",
+      "seconds": 4.12,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/CompatibleBundles.lean",
+      "seconds": 0.503,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "CollarCompensationAudit.lean",
+      "seconds": 0.382,
+      "stdout": "'SubQuorum.CollarCompensation.pressured_tile' does not depend on any axioms\n'SubQuorum.CollarCompensation.terminal_tile' depends on axioms: [propext]\n'SubQuorum.CollarCompensation.disjoint_tile_surplus' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.collar_parity_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.aggregate_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.compensated_core_nonpositive' depends on axioms: [propext, Quot.sound]\n'SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile' depends on axioms: [propext]\n'SubQuorum.AttachmentCollarCompensation.saturated_endpoints' depends on axioms: [propext]\n'SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.corner_two_exterior_faces' does not depend on any axioms\n'SubQuorum.BlankWitnessCompensation.shared_blank_ledger' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.shared_blank_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.two_witness_payment' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.paid_attachment_parity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.shared_corner_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.orientation_propagation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.double_link_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MixedPChainCompensation.blank_exterior_gap' depends on axioms: [propext]\n'SubQuorum.MixedPChainCompensation.occupied_exterior_gap' depends on axioms: [propext]\n'SubQuorum.MixedPChainCompensation.transition_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FrozenPromotion.frozen_exclusion' does not depend on any axioms\n'SubQuorum.OwnedDonorCompensation.face_pair_exclusion' depends on axioms: [propext, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.pinwheel_incidence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.central_matching_patterns' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.central_parity_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.turn_forces_square' depends on axioms: [propext, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.branch_forces_square' depends on axioms: [propext, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.two_side_supports_impossible' depends on axioms: [propext]\n'SubQuorum.OwnedDonorCompensation.frozen_chain' depends on axioms: [propext, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.single_endpoint_donor_unique' does not depend on any axioms\n'SubQuorum.OwnedDonorCompensation.owned_donor_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.OwnedDonorCompensation.owned_aggregate' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SingleSquareObstacle.valid_matching' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SingleSquareObstacle.feasible_selected' does not depend on any axioms\n'SubQuorum.SingleSquareObstacle.endpoint_terminal' does not depend on any axioms\n'SubQuorum.SingleSquareObstacle.unique_square' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SingleSquareObstacle.neutral_tiles' does not depend on any axioms\n'SubQuorum.SingleSquareObstacle.exact_objective' does not depend on any axioms\n'SubQuorum.SingleSquareObstacle.all_frozen' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LadderReduction.promoted_unique_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.LadderReduction.width_three_failure' does not depend on any axioms\n'SubQuorum.LadderReduction.mixed_promoted_unique_neighbor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.CompatibleBundles.compatible_union_feasible' does not depend on any axioms\n'SubQuorum.CompatibleBundles.compatible_union_keeps_promoted' does not depend on any axioms\n'SubQuorum.CompatibleBundles.occupied_contact_owner_unique' does not depend on any axioms\n'SubQuorum.CompatibleBundles.upper_lower_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.CompatibleBundles.lower_prefix' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompatibleBundles.blank_block_exists' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompatibleBundles.sharp_three_full_promotion_impossible' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "audited_declarations": [
+    "SubQuorum.CollarCompensation.pressured_tile",
+    "SubQuorum.CollarCompensation.terminal_tile",
+    "SubQuorum.CollarCompensation.disjoint_tile_surplus",
+    "SubQuorum.CollarCompensation.collar_parity_charge",
+    "SubQuorum.CollarCompensation.aggregate_source_compensation",
+    "SubQuorum.CollarCompensation.compensated_core_nonpositive",
+    "SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile",
+    "SubQuorum.AttachmentCollarCompensation.saturated_endpoints",
+    "SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge",
+    "SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation",
+    "SubQuorum.BlankWitnessCompensation.corner_two_exterior_faces",
+    "SubQuorum.BlankWitnessCompensation.shared_blank_ledger",
+    "SubQuorum.BlankWitnessCompensation.shared_blank_source_compensation",
+    "SubQuorum.BlankWitnessCompensation.two_witness_payment",
+    "SubQuorum.BlankWitnessCompensation.paid_attachment_parity",
+    "SubQuorum.DiagonalWitnessChains.shared_corner_displacement",
+    "SubQuorum.DiagonalWitnessChains.orientation_propagation",
+    "SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks",
+    "SubQuorum.DiagonalWitnessChains.double_link_charge",
+    "SubQuorum.MixedPChainCompensation.blank_exterior_gap",
+    "SubQuorum.MixedPChainCompensation.occupied_exterior_gap",
+    "SubQuorum.MixedPChainCompensation.transition_charge",
+    "SubQuorum.FrozenPromotion.frozen_exclusion",
+    "SubQuorum.OwnedDonorCompensation.face_pair_exclusion",
+    "SubQuorum.OwnedDonorCompensation.pinwheel_incidence",
+    "SubQuorum.OwnedDonorCompensation.central_matching_patterns",
+    "SubQuorum.OwnedDonorCompensation.central_parity_ledger",
+    "SubQuorum.OwnedDonorCompensation.turn_forces_square",
+    "SubQuorum.OwnedDonorCompensation.branch_forces_square",
+    "SubQuorum.OwnedDonorCompensation.two_side_supports_impossible",
+    "SubQuorum.OwnedDonorCompensation.frozen_chain",
+    "SubQuorum.OwnedDonorCompensation.single_endpoint_donor_unique",
+    "SubQuorum.OwnedDonorCompensation.owned_donor_budget",
+    "SubQuorum.OwnedDonorCompensation.owned_aggregate",
+    "SubQuorum.SingleSquareObstacle.valid_matching",
+    "SubQuorum.SingleSquareObstacle.feasible_selected",
+    "SubQuorum.SingleSquareObstacle.endpoint_terminal",
+    "SubQuorum.SingleSquareObstacle.unique_square",
+    "SubQuorum.SingleSquareObstacle.neutral_tiles",
+    "SubQuorum.SingleSquareObstacle.exact_objective",
+    "SubQuorum.SingleSquareObstacle.all_frozen",
+    "SubQuorum.LadderReduction.promoted_unique_neighbor",
+    "SubQuorum.LadderReduction.width_three_failure",
+    "SubQuorum.LadderReduction.mixed_promoted_unique_neighbor",
+    "SubQuorum.CompatibleBundles.compatible_union_feasible",
+    "SubQuorum.CompatibleBundles.compatible_union_keeps_promoted",
+    "SubQuorum.CompatibleBundles.occupied_contact_owner_unique",
+    "SubQuorum.CompatibleBundles.upper_lower_equivalence",
+    "SubQuorum.CompatibleBundles.lower_prefix",
+    "SubQuorum.CompatibleBundles.blank_block_exists",
+    "SubQuorum.CompatibleBundles.sharp_three_full_promotion_impossible"
+  ],
+  "sha256": {
+    "formal/SubQuorum/CollarCompensation.lean": "d47dfc9778320a50a5b011606de904a7bffe3e3a1441891074660999fbaf6e3c",
+    "formal/SubQuorum/AttachmentCollarCompensation.lean": "28c59e3262b5ad4c8fac38a7b0888aa712f703f4e1055a249a0fdd6eb010b618",
+    "formal/SubQuorum/BlankWitnessCompensation.lean": "8b6abc7f743b76b3e1399645d1719f74029d65e0e2d5bfe853174d53c412601e",
+    "formal/SubQuorum/DiagonalWitnessChains.lean": "e6d09a6a14862b749b02a6df708818d37d1bdd37e80ee1c36d4897e2eb4d7eef",
+    "formal/SubQuorum/MixedPChainCompensation.lean": "9682f1f3fb715983d59b819519469e0872c07bcf767c5ac1946a91f5265a2529",
+    "formal/SubQuorum/FrozenPromotion.lean": "9272c06ed50aa3db00999f9c2e38458e3ebc579250a3955e14ade8aa1c307c30",
+    "formal/SubQuorum/OwnedDonorCompensation.lean": "dd516ddcb1d0b206af49db80105c487f21479aea2a986b9144bb4da2439df656",
+    "formal/SubQuorum/SingleSquareObstacle.lean": "04730e96ad54e527815a628b7fa49abb7e5d480c2c0fb7e606f1b048ce2621c4",
+    "formal/SubQuorum/LadderReduction.lean": "87353068bfa34aefeaa8f2f44e5b0fddfdcb88580cd2e82aa982cf4644f5ce81",
+    "formal/SubQuorum/CompatibleBundles.lean": "b7bb97dd8f1f0cf104fdd5bd194cdcf07e09e9d5e29a888a90eb9facead70cda",
+    "formal/CollarCompensationAudit.lean": "34e8924413451311614ffa3287af1900b5e2c0dc765271560eb8aed972159df4"
+  },
+  "scope": "Earlier tile/count, frozen, single-square and finite8x8 declarations; arbitrary-width active-guard and all-length mixed-color promoted-neighbor geometry; abstract compatible-union feasibility/retention and occupied-contact ownership; arbitrary-length paired-prefix implication lemmas; arbitrary-length blank-block existence; sharp three-column full-promotion numerical contradiction. Full matching block decomposition and geometric switch construction, mixed-family freezing and exact bundle adapters/counts, component factorization, grid classification and compensation allocation remain written proofs."
+}

@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-21T10:04:32.839979+00:00",
+  "machine": "user-authorized local Mac",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "source": "formal/SubQuorum/SecondaryTenDistinctConsumers.lean",
+  "memory_before_run": {
+    "total_bytes": 17179869184,
+    "free_percent": 59,
+    "real_lean_lake_processes": [],
+    "process_detection": "basename of comm equals lean or lake"
+  },
+  "command": "lean --stdin; full standalone source followed by all14 individual #print axioms",
+  "exec_session": 85500,
+  "exit_code": 0,
+  "warnings": false,
+  "sorry_or_native_axioms": false,
+  "axioms_by_declaration": {
+    "lower_gap_original_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "lower_gap_foreign_neighbors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "lower_gap_absent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "south_U_hits_cavity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "south_rotor_hits_cavity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "side_gap_original_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "side_gap_foreign_neighbors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "side_gap_absent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "west_U_hits_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "west_rotor_hits_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "depth_eight_escape_pays_contact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_upper_consumer_gain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "rotor_pair_repairs_deficit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "east_U_repairs_deficit": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Forced original-support membership/absence and foreign anchors, unbounded U collision certificates, explicit full-rotor collision footprints, depth8 width paying contact debit and final budget inequalities. Exact source counts, exhaustive own-neighbor catalogue, full disjointness tables and final subinventory theorem are written, not end-to-end Lean."
+}

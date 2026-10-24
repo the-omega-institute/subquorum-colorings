@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "user-selected local Mac",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/BackfillBandOutputs.lean",
+  "theorem_declarations": 14,
+  "theorems": [
+    "positive_band_incident_drop",
+    "negative_band_incident_drop",
+    "occupied_band_output_alternatives",
+    "positive_output_exact_singleton_and_two_supports",
+    "negative_output_exact_singleton_and_one_support",
+    "companion_cap_output_exact_triple",
+    "companion_interior_output_exact_pair",
+    "interior_pair_excludes_original_terminal",
+    "band_outputs_exact_single_pool_reserve",
+    "band_outputs_retained_compensation",
+    "band_outputs_shared_stops",
+    "band_outputs_shared_source_census",
+    "all_positive_routes_activation_capacity",
+    "all_positive_routes_enter_shared_bound"
+  ],
+  "source_check": {
+    "original_exec_session": 19509,
+    "exit_code": 0,
+    "memory_free_percent": 44,
+    "warnings": false
+  },
+  "axiom_audit": {
+    "execution_chunk": "84b7d9",
+    "exit_code": 0,
+    "memory_free_percent": 43,
+    "declarations": 14,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "additional_axioms": false,
+    "sorry": false,
+    "native_decide": false
+  },
+  "dependency_build": {
+    "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+    "original_exec_session": 78582,
+    "exit_code": 0,
+    "memory_free_percent": 41
+  },
+  "initial_thirteen_statement_check": {
+    "original_exec_session": 78034,
+    "exit_code": 0,
+    "memory_free_percent": 46
+  },
+  "preflights": "Before every Lean invocation measured memory_pressure and enumerated actual lean/lake via os.path.basename of ps comm, including bare executable names. Sequential dependency/source/audit; no active Lean/lake found before these invocations.",
+  "corrections": "Initial source omitted the written legal incident-height premise in the negative support profile; added incident>=4. Removed unused simp arguments. Only final fourteen-statement compilation and audit establish PASS.",
+  "scope": "Normalized complete-source B/D incident bounds; exact singleton/support, cap/triple and interior regular-pair profiles; interior nonterminal coordinates; conditional one-pool reserve, retained compensation, shared stops/source census, all-B activation capacity and shared-bound consequences. Actual source phase/partition transport, original occurrence/event injections, output tile/receiver/backfill separation and global singleton/activation family assembly remain written. Not end-to-end source fusion formalization, complete critical U10 realization, unrestricted allocation or grid equality."
+}

@@ -1,0 +1,2164 @@
+{
+  "status": "PASS",
+  "abstract": {
+    "patterns": 729,
+    "cut_subsets": 23328,
+    "strict_improvements": 192,
+    "old_first_five_patterns": 60,
+    "first_five_repaired": 30,
+    "remaining_first_five": 30,
+    "remaining_capacity_5": 24,
+    "remaining_capacity_6": 6
+  },
+  "physical": {
+    "counts": {
+      "fixture_symmetry_reservations": 96,
+      "separated_components": 3,
+      "frozen_right_donor_now_safe": 1
+    },
+    "repaired_frozen_donor": {
+      "before": 10,
+      "reserved": 1,
+      "after": 9
+    },
+    "reservation_monotonicity_counterexample": {
+      "shape": [
+        4,
+        4
+      ],
+      "selected": [],
+      "matching": [],
+      "reserved_tile": [
+        0,
+        0
+      ],
+      "reserved_units": 1,
+      "before": {
+        "credits": 8,
+        "capacity": 8,
+        "unused": 0,
+        "degrees": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "quotas": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "assignment": [
+          {
+            "strip": 0,
+            "request": 0,
+            "tile": [
+              0,
+              0
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 0,
+            "request": 1,
+            "tile": [
+              0,
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "strip": 3,
+            "request": 1,
+            "tile": [
+              0,
+              1
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 3,
+            "request": 0,
+            "tile": [
+              0,
+              1
+            ],
+            "unit": 1
+          },
+          {
+            "strip": 2,
+            "request": 1,
+            "tile": [
+              1,
+              0
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 2,
+            "request": 0,
+            "tile": [
+              1,
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "strip": 1,
+            "request": 1,
+            "tile": [
+              1,
+              1
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 1,
+            "request": 0,
+            "tile": [
+              1,
+              1
+            ],
+            "unit": 1
+          }
+        ],
+        "components": 1,
+        "attaining_cut": {
+          "vertices": [],
+          "internal_slots": [],
+          "boundary_slots": [],
+          "odd_nonleaves": 0,
+          "leaves": 0,
+          "quota": 0,
+          "deficiency": 0
+        }
+      },
+      "after": {
+        "credits": 6,
+        "capacity": 7,
+        "unused": 1,
+        "degrees": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "quotas": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "assignment": [
+          {
+            "strip": 0,
+            "request": 0,
+            "tile": [
+              0,
+              0
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 3,
+            "request": 1,
+            "tile": [
+              0,
+              1
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 3,
+            "request": 0,
+            "tile": [
+              0,
+              1
+            ],
+            "unit": 1
+          },
+          {
+            "strip": 2,
+            "request": 0,
+            "tile": [
+              1,
+              0
+            ],
+            "unit": 0
+          },
+          {
+            "strip": 1,
+            "request": 1,
+            "tile": [
+              1,
+              0
+            ],
+            "unit": 1
+          },
+          {
+            "strip": 1,
+            "request": 0,
+            "tile": [
+              1,
+              1
+            ],
+            "unit": 0
+          }
+        ],
+        "components": 1,
+        "attaining_cut": {
+          "vertices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "internal_slots": [
+            [
+              [
+                0,
+                0
+              ],
+              0
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              0
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              1
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              0
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              1
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              0
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              1
+            ]
+          ],
+          "boundary_slots": [],
+          "odd_nonleaves": 2,
+          "leaves": 0,
+          "quota": 6,
+          "deficiency": 1
+        }
+      },
+      "combined_after": 7,
+      "scope": "Resource-only counterexample to reservation monotonicity for local-quota score. Zero receiver charge, no owned donor."
+    }
+  },
+  "frozen_batches": {
+    "parameter_cases": 14,
+    "symmetry_batch_cases": 448,
+    "cases": [
+      {
+        "width": 8,
+        "endpoints": 26,
+        "original_capacity": 14,
+        "before": 14,
+        "any_nonempty_donor_batch": 13
+      },
+      {
+        "width": 10,
+        "endpoints": 30,
+        "original_capacity": 20,
+        "before": 20,
+        "any_nonempty_donor_batch": 19
+      },
+      {
+        "width": 12,
+        "endpoints": 34,
+        "original_capacity": 26,
+        "before": 26,
+        "any_nonempty_donor_batch": 25
+      },
+      {
+        "width": 14,
+        "endpoints": 38,
+        "original_capacity": 32,
+        "before": 32,
+        "any_nonempty_donor_batch": 31
+      },
+      {
+        "width": 16,
+        "endpoints": 42,
+        "original_capacity": 38,
+        "before": 38,
+        "any_nonempty_donor_batch": 37
+      },
+      {
+        "width": 18,
+        "endpoints": 46,
+        "original_capacity": 44,
+        "before": 44,
+        "any_nonempty_donor_batch": 43
+      },
+      {
+        "width": 20,
+        "endpoints": 50,
+        "original_capacity": 50,
+        "before": 50,
+        "any_nonempty_donor_batch": 49
+      },
+      {
+        "width": 22,
+        "endpoints": 54,
+        "original_capacity": 56,
+        "before": 56,
+        "any_nonempty_donor_batch": 55
+      },
+      {
+        "width": 24,
+        "endpoints": 58,
+        "original_capacity": 62,
+        "before": 62,
+        "any_nonempty_donor_batch": 61
+      },
+      {
+        "width": 26,
+        "endpoints": 62,
+        "original_capacity": 68,
+        "before": 68,
+        "any_nonempty_donor_batch": 67
+      },
+      {
+        "width": 28,
+        "endpoints": 66,
+        "original_capacity": 74,
+        "before": 74,
+        "any_nonempty_donor_batch": 73
+      },
+      {
+        "width": 30,
+        "endpoints": 70,
+        "original_capacity": 80,
+        "before": 80,
+        "any_nonempty_donor_batch": 79
+      },
+      {
+        "width": 32,
+        "endpoints": 74,
+        "original_capacity": 86,
+        "before": 86,
+        "any_nonempty_donor_batch": 85
+      },
+      {
+        "width": 64,
+        "endpoints": 138,
+        "original_capacity": 182,
+        "before": 182,
+        "any_nonempty_donor_batch": 181
+      }
+    ],
+    "base": {
+      "shape": [
+        8,
+        10
+      ],
+      "selected": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "matching": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        [
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        [
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            8
+          ]
+        ],
+        [
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ]
+      ],
+      "ordered_freezing_certificate": [
+        [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        [
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        [
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        [
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            4,
+            8
+          ]
+        ]
+      ],
+      "original_ledger": {
+        "endpoints": 26,
+        "selected": 14,
+        "matching_edges": 13,
+        "receiver": {
+          "endpoints": 26,
+          "tiles": 11,
+          "selected": 10,
+          "charge_twice": 2,
+          "straight": false,
+          "saturated_endpoints": 2,
+          "transfers": 2
+        },
+        "no_endpoint_deficit": 14,
+        "objective": 27,
+        "area": 80,
+        "freezing_layer_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "three_rule_capacity": 0,
+        "saturated_endpoint_donors": [
+          {
+            "tile": [
+              1,
+              1
+            ],
+            "selected": [
+              3,
+              2
+            ],
+            "anchor": [
+              3,
+              1
+            ],
+            "guard": [
+              1,
+              3
+            ],
+            "owner": 0,
+            "deficit": 1
+          },
+          {
+            "tile": [
+              1,
+              3
+            ],
+            "selected": [
+              3,
+              7
+            ],
+            "anchor": [
+              3,
+              8
+            ],
+            "guard": [
+              1,
+              6
+            ],
+            "owner": 0,
+            "deficit": 1
+          }
+        ]
+      },
+      "donors": [
+        {
+          "tile": [
+            1,
+            1
+          ],
+          "selected": [
+            3,
+            2
+          ],
+          "anchor": [
+            3,
+            1
+          ],
+          "guard": [
+            1,
+            3
+          ],
+          "owner": 0,
+          "deficit": 1
+        },
+        {
+          "tile": [
+            1,
+            3
+          ],
+          "selected": [
+            3,
+            7
+          ],
+          "anchor": [
+            3,
+            8
+          ],
+          "guard": [
+            1,
+            6
+          ],
+          "owner": 0,
+          "deficit": 1
+        }
+      ],
+      "reservations": [
+        {
+          "reserved_tiles": [],
+          "reserved": 0,
+          "local_quota": {
+            "credits": 14,
+            "capacity": 14,
+            "unused": 0,
+            "degrees": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            "quotas": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "assignment": [
+              {
+                "strip": 0,
+                "request": 0,
+                "tile": [
+                  1,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 1,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 0,
+                "request": 1,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 5,
+                "request": 1,
+                "tile": [
+                  1,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 1,
+                "request": 1,
+                "tile": [
+                  2,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 1,
+                "request": 0,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 2,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 5,
+                "request": 0,
+                "tile": [
+                  2,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 3,
+                "request": 1,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 3,
+                "request": 0,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 4,
+                "request": 0,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 2,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 2,
+                "request": 1,
+                "tile": [
+                  3,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 0,
+                "tile": [
+                  3,
+                  3
+                ],
+                "unit": 1
+              }
+            ],
+            "components": 1,
+            "attaining_cut": {
+              "vertices": [],
+              "internal_slots": [],
+              "boundary_slots": [],
+              "odd_nonleaves": 0,
+              "leaves": 0,
+              "quota": 0,
+              "deficiency": 0
+            }
+          },
+          "previous_mixed": 14,
+          "combined": 14
+        },
+        {
+          "reserved_tiles": [
+            [
+              1,
+              1
+            ]
+          ],
+          "reserved": 1,
+          "local_quota": {
+            "credits": 12,
+            "capacity": 13,
+            "unused": 1,
+            "degrees": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                4
+              ]
+            ],
+            "quotas": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                2
+              ]
+            ],
+            "assignment": [
+              {
+                "strip": 4,
+                "request": 1,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 0,
+                "request": 0,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 5,
+                "request": 1,
+                "tile": [
+                  1,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 1,
+                "request": 1,
+                "tile": [
+                  2,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 1,
+                "request": 0,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 2,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 5,
+                "request": 0,
+                "tile": [
+                  2,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 1,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 3,
+                "request": 0,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 4,
+                "request": 0,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 2,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 2,
+                "request": 0,
+                "tile": [
+                  3,
+                  3
+                ],
+                "unit": 0
+              }
+            ],
+            "components": 1,
+            "attaining_cut": {
+              "vertices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "internal_slots": [
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    1,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    2,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  1
+                ],
+                [
+                  [
+                    3,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    3,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    3
+                  ],
+                  1
+                ]
+              ],
+              "boundary_slots": [],
+              "odd_nonleaves": 2,
+              "leaves": 0,
+              "quota": 12,
+              "deficiency": 1
+            }
+          },
+          "previous_mixed": 12,
+          "combined": 13
+        },
+        {
+          "reserved_tiles": [
+            [
+              1,
+              3
+            ]
+          ],
+          "reserved": 1,
+          "local_quota": {
+            "credits": 12,
+            "capacity": 13,
+            "unused": 1,
+            "degrees": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "quotas": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "assignment": [
+              {
+                "strip": 0,
+                "request": 0,
+                "tile": [
+                  1,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 2,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 1,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 1,
+                "request": 1,
+                "tile": [
+                  2,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 0,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 1,
+                "request": 0,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 5,
+                "request": 0,
+                "tile": [
+                  2,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 3,
+                "request": 1,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 3,
+                "request": 0,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 2,
+                "request": 2,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 1,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 2,
+                "request": 0,
+                "tile": [
+                  3,
+                  3
+                ],
+                "unit": 0
+              }
+            ],
+            "components": 1,
+            "attaining_cut": {
+              "vertices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "internal_slots": [
+                [
+                  [
+                    1,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    2,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    2,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  1
+                ],
+                [
+                  [
+                    3,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    3,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    3
+                  ],
+                  1
+                ]
+              ],
+              "boundary_slots": [],
+              "odd_nonleaves": 2,
+              "leaves": 0,
+              "quota": 12,
+              "deficiency": 1
+            }
+          },
+          "previous_mixed": 12,
+          "combined": 13
+        },
+        {
+          "reserved_tiles": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          "reserved": 2,
+          "local_quota": {
+            "credits": 11,
+            "capacity": 12,
+            "unused": 1,
+            "degrees": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                6
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "quotas": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "assignment": [
+              {
+                "strip": 4,
+                "request": 1,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 0,
+                "request": 0,
+                "tile": [
+                  1,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 1,
+                "request": 1,
+                "tile": [
+                  2,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 1,
+                "request": 0,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 4,
+                "request": 2,
+                "tile": [
+                  2,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 5,
+                "request": 0,
+                "tile": [
+                  2,
+                  3
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 1,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 3,
+                "request": 0,
+                "tile": [
+                  3,
+                  1
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 4,
+                "request": 0,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 0
+              },
+              {
+                "strip": 2,
+                "request": 2,
+                "tile": [
+                  3,
+                  2
+                ],
+                "unit": 1
+              },
+              {
+                "strip": 2,
+                "request": 0,
+                "tile": [
+                  3,
+                  3
+                ],
+                "unit": 0
+              }
+            ],
+            "components": 1,
+            "attaining_cut": {
+              "vertices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "internal_slots": [
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    1,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    2,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    2,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    2,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    1
+                  ],
+                  1
+                ],
+                [
+                  [
+                    3,
+                    2
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    2
+                  ],
+                  1
+                ],
+                [
+                  [
+                    3,
+                    3
+                  ],
+                  0
+                ],
+                [
+                  [
+                    3,
+                    3
+                  ],
+                  1
+                ]
+              ],
+              "boundary_slots": [],
+              "odd_nonleaves": 2,
+              "leaves": 0,
+              "quota": 11,
+              "deficiency": 1
+            }
+          },
+          "previous_mixed": 11,
+          "combined": 13
+        }
+      ]
+    },
+    "conclusion": "For every even width at least8, the height-six two-leg family is fully frozen and has exactly two donors from the four rules. Every nonempty subset lowers both mixed and local-quota budgets by one, including the complete batch. Neither single-donor order starts safely. Corrected charge is1 and the grid target survives. The all-width result has a separate written proof."
+  },
+  "scope": "General capacitated incidence matching is proved by an attaining internal-edge cut. All729abstract patterns and23328cut subsets verify the odd-nonleaf/leaf/boundary formula, non-reuse and exact maximum.30of60first-q5resource patterns are repaired; remaining shapes have no leaves. Actual frozen right-donor loss is repaired. An all-even-width actual frozen two-donor family refutes existence of a safe nonempty subset, including reserving all donors at once. The additional4x4blank example has no donor and charge zero. Universal initial geometric coverage and the grid target remain open."
+}

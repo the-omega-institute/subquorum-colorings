@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/PPCutDebt.lean",
+  "lean_version": "4.33.0",
+  "machine": "local Mac, selected by user in this session",
+  "preflight": {
+    "free_memory_percent": 53,
+    "real_lean_lake_processes": [],
+    "process_check": "basename of ps comm field, matching both full toolchain paths and bare executable names"
+  },
+  "execution": {
+    "session_id": 1079,
+    "final_chunk": "e673ce",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "theorems": [
+    "finite_trace_has_exact_cut_debt",
+    "corrected_charge_is_invariant",
+    "packet_ledger_after_trace",
+    "omitting_cut_debt_overstates_margin",
+    "opening_cycle_then_pairing",
+    "apparent_payment_keeps_negative_unit",
+    "finite_reconnection_has_exact_debt",
+    "zero_debt_reconnection_preserves_ledger",
+    "balanced_two_cut_repair"
+  ],
+  "axiom_audit": "Seven statements use only propext and Quot.sound; opening_cycle_then_pairing and balanced_two_cut_repair use no axioms. No sorryAx, native evaluation or added axioms.",
+  "scope": "General finite strand rewriting with internal cuts and cycle opening, opposite-label joining/closing, and positive BP--BP reconnections repaying one unit each. Exact debt under arbitrary composition; net-zero reconnection preserves the original packet ledger. Concrete phantom-payment and balanced two-cut/two-repayment traces. Physical grid embedding and availability/identity of actual auxiliary edges remain written proofs and separate controls. All nine statements are after the first combined Oracle submission."
+}

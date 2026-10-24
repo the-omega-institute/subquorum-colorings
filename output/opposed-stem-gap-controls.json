@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "opposed_gap": {
+    "parameter_patterns": {
+      "2": 576,
+      "3": 576
+    },
+    "endpoint_only_checks_miss_the_gap_three_conflict": 576
+  },
+  "actual_corner_roles": [
+    {
+      "leg": 8,
+      "corner_far": 4,
+      "lower_U_candidates": 0,
+      "lower_gap_three_exclusions": 0,
+      "lower_necessary_north_escapes": 0,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 0,
+      "upper_gap_two_exclusions": 0,
+      "upper_U_force_lower": 0,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 8,
+      "corner_far": 6,
+      "lower_U_candidates": 0,
+      "lower_gap_three_exclusions": 0,
+      "lower_necessary_north_escapes": 0,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 0,
+      "upper_gap_two_exclusions": 0,
+      "upper_U_force_lower": 0,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 10,
+      "corner_far": 4,
+      "lower_U_candidates": 4,
+      "lower_gap_three_exclusions": 4,
+      "lower_necessary_north_escapes": 0,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 10,
+      "upper_gap_two_exclusions": 0,
+      "upper_U_force_lower": 10,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 10,
+      "corner_far": 6,
+      "lower_U_candidates": 4,
+      "lower_gap_three_exclusions": 4,
+      "lower_necessary_north_escapes": 0,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 10,
+      "upper_gap_two_exclusions": 0,
+      "upper_U_force_lower": 10,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 12,
+      "corner_far": 4,
+      "lower_U_candidates": 29,
+      "lower_gap_three_exclusions": 10,
+      "lower_necessary_north_escapes": 19,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 44,
+      "upper_gap_two_exclusions": 5,
+      "upper_U_force_lower": 39,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 12,
+      "corner_far": 6,
+      "lower_U_candidates": 29,
+      "lower_gap_three_exclusions": 10,
+      "lower_necessary_north_escapes": 19,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 44,
+      "upper_gap_two_exclusions": 5,
+      "upper_U_force_lower": 39,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 18,
+      "corner_far": 4,
+      "lower_U_candidates": 214,
+      "lower_gap_three_exclusions": 40,
+      "lower_necessary_north_escapes": 174,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 248,
+      "upper_gap_two_exclusions": 32,
+      "upper_U_force_lower": 216,
+      "upper_rotors_force_lower": 1
+    },
+    {
+      "leg": 18,
+      "corner_far": 6,
+      "lower_U_candidates": 214,
+      "lower_gap_three_exclusions": 40,
+      "lower_necessary_north_escapes": 174,
+      "lower_rotors": 0,
+      "upper_U_candidates_with_lower_absent": 248,
+      "upper_gap_two_exclusions": 32,
+      "upper_U_force_lower": 216,
+      "upper_rotors_force_lower": 1
+    }
+  ],
+  "translated_intruder_identities": 54,
+  "cross_owner_exclusions": {
+    "lower_same_owner_collisions": 1716,
+    "upper_parity_exclusions": 2808
+  },
+  "scope": "Independent finite endpoint/support/matching and anchored-role controls of a separate arbitrary-dimension proof. The role library bounds widths/legs at18; it does not supply unbounded exhaustion. Necessary H escapes are partial, not complete witnesses. No new reserve is assigned to impossible two-source intruders; full allocation/grid remains open."
+}

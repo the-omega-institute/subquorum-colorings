@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19T17:54:52Z",
+  "execution_location": "Local Mac, explicitly authorized by user in this session",
+  "lean_version": "4.33.0",
+  "platform": "arm64-apple-darwin24.6.0",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure_free_percent": 53,
+    "actual_lean_lake_processes": [],
+    "process_check": "Compared basename of ps comm field to lean/lake, including bare names and full paths."
+  },
+  "source_files": ["formal/SubQuorum/SaturatedEndpointCorners.lean"],
+  "theorem_declarations": 2,
+  "compile_exit_codes": {
+    "FrozenPromotion": 0,
+    "OwnedDonorCompensation": 0,
+    "SaturatedEndpointCorners": 0,
+    "stdin_axiom_audit": 0
+  },
+  "axiom_audits": [
+    {
+      "theorem": "SubQuorum.SaturatedEndpointCorners.saturated_endpoint_corner_exact",
+      "axioms": ["propext"]
+    },
+    {
+      "theorem": "SubQuorum.SaturatedEndpointCorners.two_leg_receiver_charge",
+      "axioms": ["propext", "Quot.sound"]
+    }
+  ],
+  "reproduction": [
+    "From formal/, set LEAN_PATH to a task-owned empty directory and create its SubQuorum/ subdirectory.",
+    "lean -o <cache>/SubQuorum/FrozenPromotion.olean SubQuorum/FrozenPromotion.lean",
+    "lean -o <cache>/SubQuorum/OwnedDonorCompensation.olean SubQuorum/OwnedDonorCompensation.lean",
+    "lean -o <cache>/SubQuorum/SaturatedEndpointCorners.olean SubQuorum/SaturatedEndpointCorners.lean",
+    "Import SubQuorum.SaturatedEndpointCorners and run #print axioms for the two fully qualified theorem names above."
+  ],
+  "scope": "Two Std-only local/arithmetic theorems. The local degree cap forces the opposite corner blank with no terminality assumption. The charge identity assumes the receiver counts, with width denoting half the physical bar width. Full unbounded geometric construction, absence of old donors, freezing argument, mixed ownership and global adapter are written and physically checked, not newly formalized. No sorry or native_decide; standard axioms explicitly listed. No manuscript, shared CI or upstream changes."
+}

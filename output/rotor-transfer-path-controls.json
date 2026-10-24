@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "rotor_roles": {
+    "all_rotor_gate_footprints": 16,
+    "endpoint_disjoint_survivors": 2,
+    "permitted_after_forced_tip": 1,
+    "excluded_companion_rotor_role_images": 8,
+    "excluded_companion_rotor_footprints": 2
+  },
+  "intervals": {
+    "consecutive_pair_width_controls": 1904,
+    "pair_singleton_exclusion_controls": 182,
+    "small_companion_pair_rotor_exclusion_controls": 182,
+    "rotor_companion_activation_controls": 91,
+    "scope": "Coordinate interval/collision checks and original companion profiles; partial patterns are not asserted to have complete feasible extensions."
+  },
+  "abstract_paths": {
+    "partial_injection_labelled_graphs": 3166,
+    "maximum_vertices": 4,
+    "scope": "Exact finite graph/unit-label controls, including cycles and isolated bad negative endings; no geometric realizability or full allocation inference."
+  },
+  "physical": {
+    "images": 800,
+    "legal_restrictions": 31904,
+    "S": 0,
+    "P": 792,
+    "R": 0,
+    "consecutive_PP": 0,
+    "consecutive_PS": 0,
+    "consecutive_PR": 0,
+    "negative_U_sinks": 3504,
+    "physical_paths": 51672,
+    "physical_cycles": 0,
+    "bad_paths": 1376,
+    "unmarked_surplus": 62408
+  },
+  "scope": "General proofs are written separately. Existing complete fixtures can have zero rotor/S/PP/PS/PR channels; their counts remain explicit. No bounded census proves unrestricted allocation or grid equality."
+}

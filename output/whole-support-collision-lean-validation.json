@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T20:02:52.666915+00:00",
+  "execution": "Explicitly selected local executable; sequential dependency and new module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/BTColumnCorridorObstruction.lean",
+        "-o",
+        "/Users/lexa/Desktop/lexa/omega/subquorum-grid-compensation-20261019/build/whole-support-collision-formal/SubQuorum/BTColumnCorridorObstruction.olean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/WholeSupportDonorCollision.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/WholeSupportDonorCollision.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.WholeSupportDonorCollision.frozen_extend_endpoints' does not depend on any axioms",
+        "'SubQuorum.WholeSupportDonorCollision.oriented_seal_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.upper_seal_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.lower_seal_contacts' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.seal_packet_ledger' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.collision_and_repair_ledgers' depends on axioms: [propext,",
+        "'SubQuorum.WholeSupportDonorCollision.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportDonorCollision.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "General freezing inheritance under endpoint/mate extension; arbitrary-length oriented PP-seal freezing induction; arbitrary-coordinate upper/lower contacts; parametric packet ledger; concrete W8 feasible geometry and all68EndpointFrozen strict-rank certificate.",
+  "not_formalized": [
+    "All-height full support gap inventory and PP decomposition",
+    "All-q geometric stacking/padding and mixed optimality",
+    "General matching component allocation specialization"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

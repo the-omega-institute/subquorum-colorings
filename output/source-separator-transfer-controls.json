@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "images": 640,
+  "legal_separator_splits": 2080,
+  "fixtures": {
+    "marked_gate": {
+      "images": 32,
+      "splits": 0
+    },
+    "two_tips": {
+      "images": 32,
+      "splits": 0
+    },
+    "overloaded": {
+      "images": 32,
+      "splits": 0
+    },
+    "zero_credit": {
+      "images": 32,
+      "splits": 0
+    },
+    "rotor": {
+      "images": 32,
+      "splits": 0
+    },
+    "four_way_8": {
+      "images": 32,
+      "splits": 0
+    },
+    "four_way_14": {
+      "images": 32,
+      "splits": 0
+    },
+    "star_6": {
+      "images": 32,
+      "splits": 224
+    },
+    "star_14": {
+      "images": 32,
+      "splits": 224
+    },
+    "chain_1": {
+      "images": 32,
+      "splits": 224
+    },
+    "chain_2": {
+      "images": 32,
+      "splits": 544
+    },
+    "chain_3": {
+      "images": 32,
+      "splits": 864
+    },
+    "opposed_6": {
+      "images": 32,
+      "splits": 0
+    },
+    "occupied_6": {
+      "images": 32,
+      "splits": 0
+    },
+    "opposed_8": {
+      "images": 32,
+      "splits": 0
+    },
+    "occupied_8": {
+      "images": 32,
+      "splits": 0
+    },
+    "opposed_14": {
+      "images": 32,
+      "splits": 0
+    },
+    "occupied_14": {
+      "images": 32,
+      "splits": 0
+    },
+    "opposed_40": {
+      "images": 32,
+      "splits": 0
+    },
+    "occupied_40": {
+      "images": 32,
+      "splits": 0
+    }
+  },
+  "correction_types": [
+    [
+      -13,
+      0
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "connected_witness": {
+    "separator": "V2",
+    "left_owners": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "right_owners": [
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "separator_charge": -1,
+    "duplicate_marked_sides": 0,
+    "shared_mass": 1,
+    "reserves": [
+      3,
+      16,
+      18
+    ],
+    "margins": [
+      3,
+      15,
+      17
+    ]
+  },
+  "scope": "Actual complete-source restrictions, source contact separation, exact directed-event/mixed-full-tile disjoint partitions, reserve and actual mark valuation. Finite controls do not prove the general separator theorem or unrestricted allocation. Partitions exhaustive through eight branches, singleton branch samples thereafter."
+}

@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "max_covered": 8,
+  "totals": {
+    "coherent_full_domain_certificates": 81681,
+    "signed_full_domain_controls": 342833,
+    "full_domain_replacements": 253944,
+    "transported_payment_occurrences": 133136,
+    "marker_free_alpha_occurrences": 81704,
+    "selected_tail_internal_rematchings": 212548,
+    "independent_forced_matching_edges": 1010,
+    "unique_frozen_pairs": 20,
+    "frozen_physical_unprotected_beta_tail_repairs": 20
+  },
+  "physical_examples": [
+    {
+      "width": 6,
+      "depth": 1,
+      "source": [
+        5,
+        9
+      ],
+      "donor": [
+        4,
+        4
+      ],
+      "removed": [
+        [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      ],
+      "added": [
+        [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ]
+        ]
+      ],
+      "original": {
+        "mixed": 7,
+        "beta": 2,
+        "cycle": 10,
+        "alpha": 1
+      },
+      "final": {
+        "mixed": 8,
+        "cycle": 10,
+        "beta": 1
+      },
+      "sampled_minimum_error_pairs": 0,
+      "cycle_flips_exhaustive": false,
+      "forest_rank": 1
+    },
+    {
+      "width": 6,
+      "depth": 16,
+      "source": [
+        5,
+        39
+      ],
+      "donor": [
+        4,
+        4
+      ],
+      "removed": [
+        [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      ],
+      "added": [
+        [
+          [
+            5,
+            39
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ]
+        ]
+      ],
+      "original": {
+        "mixed": 7,
+        "beta": 2,
+        "cycle": 10,
+        "alpha": 1
+      },
+      "final": {
+        "mixed": 8,
+        "cycle": 10,
+        "beta": 1
+      },
+      "sampled_minimum_error_pairs": 0,
+      "cycle_flips_exhaustive": false,
+      "forest_rank": 1
+    }
+  ],
+  "scope": "Full original actual matching, no tail contraction or selected-tail protection. All complete N up to max_covered, selected source/donor paths through two PP pairs, both chosen ends, optional paid alpha/beta/mixed relays and cycles through two pairs, exhaustive cycle flips in abstract controls. Physical controls check the base and individual cycle flips plus the forest assignment, rather than enumerating all independent original two-edge cycle orientations. Physical reflected all-length repair controls certify unchanged M, feasible fully frozen uniquely matched grids, zero-BT corridor witness and rematching inside the selected beta. General graph proof is written; no new Lean execution, universal route existence or scalar improvement is claimed."
+}

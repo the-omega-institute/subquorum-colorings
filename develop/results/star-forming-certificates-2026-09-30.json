@@ -1,0 +1,219 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "all_graph_controls": [
+    {
+      "order": 1,
+      "graphs": 1,
+      "minimal_sets": 1,
+      "sets_with_high_degree_vertices": 0
+    },
+    {
+      "order": 2,
+      "graphs": 2,
+      "minimal_sets": 2,
+      "sets_with_high_degree_vertices": 0
+    },
+    {
+      "order": 3,
+      "graphs": 8,
+      "minimal_sets": 16,
+      "sets_with_high_degree_vertices": 0
+    },
+    {
+      "order": 4,
+      "graphs": 64,
+      "minimal_sets": 218,
+      "sets_with_high_degree_vertices": 0
+    },
+    {
+      "order": 5,
+      "graphs": 1024,
+      "minimal_sets": 5536,
+      "sets_with_high_degree_vertices": 120
+    }
+  ],
+  "labelled_graphs": 1099,
+  "grid_controls": [
+    {
+      "rows": 1,
+      "columns": 1,
+      "beta_2": 1,
+      "Gamma": 1,
+      "gap": 0
+    },
+    {
+      "rows": 1,
+      "columns": 2,
+      "beta_2": 2,
+      "Gamma": 1,
+      "gap": 1
+    },
+    {
+      "rows": 1,
+      "columns": 3,
+      "beta_2": 2,
+      "Gamma": 2,
+      "gap": 0
+    },
+    {
+      "rows": 1,
+      "columns": 4,
+      "beta_2": 3,
+      "Gamma": 2,
+      "gap": 1
+    },
+    {
+      "rows": 2,
+      "columns": 1,
+      "beta_2": 2,
+      "Gamma": 1,
+      "gap": 1
+    },
+    {
+      "rows": 2,
+      "columns": 2,
+      "beta_2": 2,
+      "Gamma": 2,
+      "gap": 0
+    },
+    {
+      "rows": 2,
+      "columns": 3,
+      "beta_2": 4,
+      "Gamma": 3,
+      "gap": 1
+    },
+    {
+      "rows": 2,
+      "columns": 4,
+      "beta_2": 4,
+      "Gamma": 4,
+      "gap": 0
+    },
+    {
+      "rows": 3,
+      "columns": 1,
+      "beta_2": 2,
+      "Gamma": 2,
+      "gap": 0
+    },
+    {
+      "rows": 3,
+      "columns": 2,
+      "beta_2": 4,
+      "Gamma": 3,
+      "gap": 1
+    },
+    {
+      "rows": 3,
+      "columns": 3,
+      "beta_2": 5,
+      "Gamma": 5,
+      "gap": 0
+    },
+    {
+      "rows": 3,
+      "columns": 4,
+      "beta_2": 7,
+      "Gamma": 6,
+      "gap": 1
+    },
+    {
+      "rows": 4,
+      "columns": 1,
+      "beta_2": 3,
+      "Gamma": 2,
+      "gap": 1
+    },
+    {
+      "rows": 4,
+      "columns": 2,
+      "beta_2": 4,
+      "Gamma": 4,
+      "gap": 0
+    },
+    {
+      "rows": 4,
+      "columns": 3,
+      "beta_2": 7,
+      "Gamma": 6,
+      "gap": 1
+    },
+    {
+      "rows": 4,
+      "columns": 4,
+      "beta_2": 8,
+      "Gamma": 8,
+      "gap": 0
+    }
+  ],
+  "double_star": {
+    "order": 6,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "beta_2": 4,
+    "SF_2": 4,
+    "minimal_star_forming_sets": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        3,
+        5
+      ],
+      [
+        0,
+        2,
+        4,
+        5
+      ],
+      [
+        0,
+        3,
+        4,
+        5
+      ],
+      [
+        2,
+        3,
+        4,
+        5
+      ]
+    ]
+  },
+  "sha256": {
+    "develop/check_star_forming_certificates.py": "3ae15323a394345e97c9755051f196687a455997ec8bb538d9c158c3a905a5e2",
+    "docs/STAR_FORMING_CERTIFICATES.md": "37d8b0c215194148f736cc305c65d7002cfa2d04ee67327847b937029df345a8",
+    "docs/GRID_PARAMETER_BRIDGES.md": "97e2274ae699a3a3cfacc8af55d5dbba1adc746657c97d0a4f397da0916015a6"
+  },
+  "scope": "Finite controls of the all-graph written proof. No bipartite equality proof or grid upper comparison is claimed."
+}

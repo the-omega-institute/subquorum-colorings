@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "parameter_controls": 50,
+  "first_role_controls": {
+    "tested_roles": 32896
+  },
+  "first_surviving_classes": {
+    "4_down": 100,
+    "4_up": 13,
+    "6_down": 100,
+    "6_up": 13
+  },
+  "second_role_controls": {
+    "tested_roles": 32896,
+    "downward_U11_terminal_profiles": 200
+  },
+  "local_upward_wrappers": [
+    {
+      "wrapper_dimensions": [
+        8,
+        14,
+        4
+      ],
+      "disjoint_original_endpoints": true,
+      "forbidden_point_avoided": true,
+      "wrapper_phase": "11",
+      "complete_feasible": false,
+      "infeasible_retained_supports": [
+        [
+          7,
+          13
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          14,
+          2
+        ]
+      ],
+      "scope": "Local endpoint/forbidden-point compatible upward wrapper; not a complete-source fusion or a counterexample to compensation."
+    },
+    {
+      "wrapper_dimensions": [
+        6,
+        16,
+        4
+      ],
+      "disjoint_original_endpoints": true,
+      "forbidden_point_avoided": true,
+      "wrapper_phase": "11",
+      "complete_feasible": false,
+      "infeasible_retained_supports": [
+        [
+          7,
+          13
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          12,
+          14
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          14,
+          2
+        ]
+      ],
+      "scope": "Local endpoint/forbidden-point compatible upward wrapper; not a complete-source fusion or a counterexample to compensation."
+    }
+  ],
+  "new_complete_physical_fixture_coverage": 0,
+  "scope": "Representative all-role/all-isometry endpoint and support controls, nonvacuous upward wrapping alternatives, and exact forced second-owner profiles. Universal U-role classification is separately proved in Lean; source-normalization and global saturation implications remain written. No finite closure or ambient counterexample is claimed."
+}

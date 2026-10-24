@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "totals": {
+    "block_selection_controls": 4706,
+    "independent_forced_matching_edges": 4464,
+    "unique_frozen_pairs": 36,
+    "uniform_serial_freezing_events": 1116,
+    "uniform_forced_template_edges": 558,
+    "selected_cap_access_candidates": 288,
+    "extended_access_ownership_models": 36,
+    "whole_beta_resources_consumed": 0,
+    "terminal_models": 36,
+    "original_path_objects": 1152,
+    "cancellation_links": 288,
+    "complete_distinct_interval_repairs": 36,
+    "different_original_interval_payments": 144,
+    "odd_selector_empty_cut_tutte_witnesses": 72,
+    "explicit_signed_block_identities": 480,
+    "explicit_even_cardinality_witnesses": 108,
+    "selector_lifts": 108,
+    "exact_forest_sign_witnesses": 108,
+    "physical_frozen_unique_families": 36,
+    "independent_even_vertex_blocks": 144,
+    "portal_edges_checked": 720
+  },
+  "examples": [
+    {
+      "width": 6,
+      "depth": 2,
+      "copies": 1,
+      "original": {
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 12
+      },
+      "feasible_r": [
+        0,
+        2
+      ],
+      "packet_margin": 388,
+      "proof_scope": "All infeasible odd r and lower bounds for arbitrary replacements, including any complete mixed-pair activation, follow from the written even-block and endpoint-inventory proof, not finite enumeration."
+    },
+    {
+      "width": 6,
+      "depth": 2,
+      "copies": 2,
+      "original": {
+        "alpha": 4,
+        "beta": 4,
+        "mixed": 24
+      },
+      "feasible_r": [
+        0,
+        2,
+        4
+      ],
+      "packet_margin": 776,
+      "proof_scope": "All infeasible odd r and lower bounds for arbitrary replacements, including any complete mixed-pair activation, follow from the written even-block and endpoint-inventory proof, not finite enumeration."
+    },
+    {
+      "width": 6,
+      "depth": 2,
+      "copies": 3,
+      "original": {
+        "alpha": 6,
+        "beta": 6,
+        "mixed": 36
+      },
+      "feasible_r": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "packet_margin": 1164,
+      "proof_scope": "All infeasible odd r and lower bounds for arbitrary replacements, including any complete mixed-pair activation, follow from the written even-block and endpoint-inventory proof, not finite enumeration."
+    },
+    {
+      "width": 6,
+      "depth": 3,
+      "copies": 1,
+      "original": {
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 12
+      },
+      "feasible_r": [
+        0,
+        2
+      ],
+      "packet_margin": 424,
+      "proof_scope": "All infeasible odd r and lower bounds for arbitrary replacements, including any complete mixed-pair activation, follow from the written even-block and endpoint-inventory proof, not finite enumeration."
+    },
+    {
+      "width": 20,
+      "depth": 6,
+      "copies": 3,
+      "original": {
+        "alpha": 6,
+        "beta": 6,
+        "mixed": 36
+      },
+      "feasible_r": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "packet_margin": 2688,
+      "proof_scope": "All infeasible odd r and lower bounds for arbitrary replacements, including any complete mixed-pair activation, follow from the written even-block and endpoint-inventory proof, not finite enumeration."
+    }
+  ],
+  "scope": "Real feasible frozen uniquely matched rectangular-grid packets with all endpoint grid edges and every all-BT gap edge; explicit even-r coverage witnesses, selector lifts, actual odd-r empty-set Tutte witnesses, explicit signed block identities and positive packet ledgers; complete repairs by distinct old interval units through two mixed relays per source. General parity exclusion, half-progress lower bound and arbitrary mixed activation are written proofs. No general grid inequality counterexample and no new Lean validation."
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-21",
+  "status": "PASS_SCOPED_FOUR_SOURCE_LEVEL_DECLARATIONS",
+  "machine": "User-authorized local Mac",
+  "lean": "Lean 4.33.0",
+  "source": "formal/SubQuorum/ContactHullLocalization.lean",
+  "dependencies": [
+    {"source": "SourceRetentionClosure.lean", "session": 60630, "exit_code": 0, "preflight_free_percent": 56},
+    {"source": "SourceSeparatorTransfer.lean", "session": 12321, "exit_code": 0, "preflight_free_percent": 55},
+    {"source": "FeasibleCoreSeparator.lean", "session": 55532, "exit_code": 0, "preflight_free_percent": 54}
+  ],
+  "compile": {"session": 50351, "exit_code": 0, "preflight_free_percent": 51, "real_lean_lake_processes": []},
+  "axiom_audit": {
+    "exit_code": 0,
+    "preflight_free_percent": 50,
+    "real_lean_lake_processes": [],
+    "declarations": 4,
+    "axiom_free": ["the_contact_core_separates_added_endpoints_from_the_old_remainder"],
+    "other_axioms": ["propext", "Classical.choice", "Quot.sound"],
+    "no_sorryAx": true,
+    "no_native_decide_axiom": true
+  },
+  "audit_correction": "The initial stdin audit command erroneously removed the dependency import, failed with unknown identifiers and exit1, and is not validation evidence. Source compilation was already successful. The corrected audit retains the import and passes all four declarations without any source change.",
+  "scope": "Arbitrary source/vertex types, anchored original supports, unique endpoint ownership and full support feasibility. Contact Horn hull stays inside the old feasible family, includes every old endpoint neighbor of added owners, yields feasible local source retention with restored supports, and is the least feasible contact carrier. Original matching/endpoint-degree catalogue, physical component construction, event/full-tile/mark counts, reserve localization and activation-budget adapters remain written. No end-to-end Lean, full allocation or grid equality claim."
+}

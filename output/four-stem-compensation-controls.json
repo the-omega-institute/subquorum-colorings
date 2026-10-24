@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "parameter_controls": 29,
+  "rotor_tables": {
+    "first_owners": [],
+    "second_owners": [],
+    "exact_roles_per_table": 16
+  },
+  "source_role_controls": {
+    "first_role_tests": 7952,
+    "second_role_tests": 7952,
+    "first_downward_tips": 76,
+    "second_downward_tips": 76
+  },
+  "ordered_height_cases": 252,
+  "shared_pool_cases": 1785,
+  "partial_staircase": {
+    "positive_dimensions": [
+      6,
+      14,
+      4
+    ],
+    "outer_heights": [
+      10,
+      4
+    ],
+    "intermediate_heights": [
+      8,
+      6
+    ],
+    "incoming_widths_left_to_right": [
+      12,
+      10,
+      8,
+      6
+    ],
+    "left_and_inner_phase11_chains_full": true,
+    "disjoint_original_endpoints": 136,
+    "complete_feasible": false,
+    "remaining_infeasible_supports": [
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        13,
+        2
+      ]
+    ],
+    "scope": "Partial source geometry attains h-k=6 and positive gap10; its retained supports are infeasible. Not a complete allocation example or counterexample."
+  },
+  "new_complete_physical_fixture_coverage": 0,
+  "scope": "Exact rotor role tables, representative U dimension/isometry controls, finite height/pool arithmetic and an explicitly incomplete partial staircase. General source-role and support proofs are written; arbitrary mixed allocation remains open."
+}

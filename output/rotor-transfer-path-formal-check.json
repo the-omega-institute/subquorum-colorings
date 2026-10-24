@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/RotorTransferPathEndings.lean",
+  "lean_version": "4.33.0",
+  "execution_machine": "User-selected local Mac",
+  "declarations": 16,
+  "final_source_compile_and_axiom_audit": {
+    "original_session": 1047,
+    "exit_code": 0,
+    "available_memory_percent": 56,
+    "real_lean_lake_basename_preflight": "No active executables before invocation",
+    "method": "Whole final source fed to lean --stdin followed by #print axioms for every theorem",
+    "allowed_axioms": ["propext", "Classical.choice", "Quot.sound"],
+    "sorryAx": false,
+    "native_decide": false
+  },
+  "earlier_runs": [
+    {
+      "original_session": 16660,
+      "exit_code": 1,
+      "reason": "Formal singleton-clearance lemma omitted positive source width hypothesis; restored width>=6. Two unavailable Nat.cast simp names replaced by standard reduction. No completed verification inferred from that failed compile."
+    },
+    {
+      "declarations": 14,
+      "exit_code": 0,
+      "available_memory_percent": 43,
+      "note": "One unused hypothesis warning subsequently removed"
+    },
+    {
+      "declarations": 14,
+      "exit_code": 0,
+      "available_memory_percent": 51
+    },
+    {
+      "original_session": 47280,
+      "declarations": 15,
+      "exit_code": 0,
+      "available_memory_percent": 55
+    }
+  ],
+  "scope": "Actual source-coordinate collisions for PP width drop, P->S exclusion and second-rotor companion wall collision; companion activation support and R/P collision; arbitrary-length P coordinate iteration/no return; conditional exact root/path ledger arithmetic. The complete rotor catalogue, physical S/P/R global injection, graph decomposition/count adapters and full allocation are not end-to-end formalized."
+}

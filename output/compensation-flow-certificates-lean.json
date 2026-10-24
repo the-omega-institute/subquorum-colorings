@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/CompensationFlowCertificates.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "execution_location": "local Mac, selected by the user in this conversation",
+  "preflight_memory_free_percent": 62,
+  "preflight_real_lean_lake_processes": [],
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/CompensationFlowCertificates.lean",
+  "execution": {
+    "session_id": 84879,
+    "final_chunk": "9c4380",
+    "exit_code": 0
+  },
+  "theorems": [
+    "shared_terminal_forces_same_route",
+    "terminal_lists_form_matching",
+    "separator_certificate_injective",
+    "separator_count_bound",
+    "protected_core_resources_stay_unique",
+    "exact_resource_ledger"
+  ],
+  "axiom_audits": 6,
+  "axioms_used": ["propext", "Classical.choice", "Quot.sound"],
+  "scope": "Route terminal exclusivity, duplicate-free combined terminal lists, source/separator certificate injectivity and finite cardinality bound, disjoint protected-core resource combination, exact ledger. The general normalization, integral max-flow/min-cut, minimum-cost argument and grid adapter remain written proofs."
+}

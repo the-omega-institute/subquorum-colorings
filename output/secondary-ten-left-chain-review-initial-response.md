@@ -1,0 +1,60 @@
+Verdict: REVISE as writtenThe three-row exterior classification and the resulting event ledger are correct under the intended all-even depth domain, but the theorem does not state that domain. Under the literal quantifier in the theorem, the parity-dependent claims are false or the object  $U(H,d,f)$  is not a legal matched original. There are also two proof statements that need to be made more precise for unbounded leg lengths and for the partner-column frontier.After those local repairs, I find no further error in the first-later-block selection, the three column cases, the exact event counts, or the gain conclusion.1. The theorem must explicitly require  $d$  and  $f$  to be evenThe theorem currently says:“Fix an index  $i$  and any even  $H\ge 6,d,f\ge 4$ .”Grammatically, this makes only  $H$  even. The proof then uses all of the following: $y=a_i-4-d+f$  is odd;the terminal rows have the asserted absolute parity;the intrinsic parity of the far-leg terminal determines which lateral support is present;the two full-tile/four-event receipt against  $P_i^0$  is independent of  $d$ ;the event exclusions in the exceptional  $\ell=s_k-3$  case.All of those require  $d,f$  even. Moreover, under the displayed matching convention, the leg matching  $(1,2),(3,4),\ldots$  reaches a terminal only for an even leg depth. Thus, if odd depths are forbidden by the definition of a legal  $U$ , the theorem currently quantifies over invalid objects. If odd depths are admitted by reading the endpoint/support formulas literally, the theorem is false.A concrete literal counterexample is as follows.Take  $n=2$ ,  $i=0$ ,  $a_0=1$ ,  $s_0=0$ ,  $w_0=w_1=12$ , and  $z_0=24$ . Then
+$$a_1=19,\qquad s_1=-24.$$
+Set
+$$H=28,\qquad d=5,\qquad f=25.$$
+For the proposed  $T$ ,
+$$\ell=s_0+1-H=-27=s_1-3,$$
+and
+$$y=a_0-4-d+f=17=a_1-2.$$
+Thus this is the first row of the table with  $m=0$ . The relevant  $X_1$  endpoint is
+$$(a_1-2,s_1-4)=(17,-28),$$
+while  $T$  has the adjacent endpoint  $(17,-27)$ .Because the  $X_1$  intrinsic far-leg row is  $4$ , its relevant lateral support is on the other side, at column  $-29$ , so  $(17,-27)$  is not an  $X_1$ -original support. Because  $T$ 's far terminal has odd intrinsic row  $f=25$ , its relevant lateral support is at column  $-26$ , so  $(17,-28)$  is not a  $T$ -original support. Consequently both directed events survive:
+$$X_1:(17,-28)\to T:(17,-27),$$
+
+$$T:(17,-27)\to X_1:(17,-28).$$
+There is no new full tile in this  $m=0$  case, so the extra contribution is
+$$\Delta F_{\mathrm{extra}}=0,\qquad
+\Delta E_{\mathrm{extra}}=2,$$
+giving signed contribution  $-2$ , whereas the theorem claims one event and signed contribution  $-1$ .The statement should therefore begin with something such as
+$$H,d,f\in 2\mathbb Z,\qquad H\ge 6,\quad d,f\ge 4,$$
+or else define  $U(H,d,f)$  only for even  $H,d,f$ . It should also state explicitly  $0\le i<n$ .If  $f-d$  is odd, there is an even more immediate failure:  $y$  is even, contrary to the assertion that both  $\ell$  and  $y$  are odd, and the three parity cases are no longer exhaustive.2. The three first-contact cases themselves check out under the all-even hypothesisWith  $H,d,f$  all even, the monotonicity argument for  $s_j$  is sound:
+$$s_{j+1}=s_j-(w_{j+1}+12),$$
+so the  $s_j$  strictly decrease by at least  $24$ . If  $k$  is the first index  $j>i$  with
+$$\ell\ge s_j-3,$$
+then minimality gives
+$$\ell<s_{k-1}-3.$$
+Since  $\ell$  and all  $s_j$  have the relevant parity, this becomes
+$$\ell\le s_{k-1}-5.$$
+Thus the possible odd columns are exactly
+$$\ell=s_k-3,\qquad
+\ell=s_k-1,\qquad
+s_k+1\le\ell\le s_{k-1}-5.$$
+The earlier-block tile-boundary exclusion is also correct. Every block before  $k$  has minimum endpoint column at least  $s_{k-1}-4$ , which is even, while the largest possible  $\ell$  is  $s_{k-1}-5$ , which is odd. Therefore the far stem lies in the preceding global physical tile column, and no shared physical tile or intratile event can arise from those blocks. This remains true even when an earlier  $V_j$  stem has unbounded length, because the possible columns are separated before row information is considered.The three relevant frontiers are:Far columnFirst old endpoint in that columnRelevant legal bound $\ell=s_k-3$  $X_k$  bar at row  $a_k+1$  $y\le a_k$  $\ell=s_k-1$  $Z_k$  at row  $a_k-4$  $y\le a_k-6$  $s_k+1\le\ell\le s_{k-1}-5$  $P_k^0$  bar at row  $a_k-8$  $y\le a_k-10$ The thresholds are right. The far leg starts strictly above each frontier because
+$$a_i-2-d\le a_i-6<a_k-2$$
+for every  $k>i$ , so it reaches every row up to its terminal  $y$ .The event ledger in the first row is also correct once  $d,f$  are even. Write
+$$y=a_k-2+2m,\qquad m\in\{0,1\}.$$
+For  $m=0$ , there is one surviving event and no new full tile:
+$$\Delta F_{\rm extra}=0,\qquad
+\Delta E_{\rm extra}=1.$$
+For  $m=1$ , there is one new full tile and three surviving events:
+$$\Delta F_{\rm extra}=1,\qquad
+\Delta E_{\rm extra}=3.$$
+In both cases,
+$$2\Delta F_{\rm extra}-\Delta E_{\rm extra}=-1.$$
+The support exclusions described in the theorem are the correct ones in the all-even domain:  $X_k$ 's rightward targets survive on its even intrinsic stem rows, and  $T$ 's leftward targets survive on its odd intrinsic far-leg rows.The second and third rows produce no extra tile or event under their stated  $y$ -bounds.3. The partner-column wording is literally inaccurate and should be correctedThe third-row proof says:“There are no preceding endpoints in its partner column  $\ell-1$ .”This is not literally true throughout the interval. For example, when  $\ell\ge s_k+3$ , both  $\ell$  and  $\ell-1$  may lie in the  $P_k^0$  bar, so the partner column contains a  $P_k^0$  endpoint at the same row  $a_k-8$ .The correct statement is something like:In the partner column  $\ell-1$ , there is no endpoint in a tile row reached by the far stem before the first-column frontier becomes an endpoint collision; in particular, there is no partner endpoint above row  $a_k-8$ , and the same-row  $P_k^0$  endpoint is irrelevant under the legal bound  $y\le a_k-10$ .For the three cases, the more precise partner-column facts are:At  $\ell=s_k-3$ , the  $X_k$  partner column begins at row  $a_k-2$ .At  $\ell=s_k-1$ , the  $Z_k$  partner column begins at row  $a_k-2$ , which is below the  $Z_k$  frontier at  $a_k-4$ .At  $\ell=s_k+1$ , the partner column has only lower endpoints before the  $P_k^0$  frontier.At  $\ell\ge s_k+3$ , the partner column can contain a same-row  $P_k^0$  bar endpoint, but the legal terminal bound stops the far leg two rows earlier.This is a proof-writing defect rather than a change to the table.4. The later-block exclusion must be stated conditionally on the legal row boundThe theorem allows  $f$  to be unbounded. Therefore one cannot unconditionally say that later blocks begin below the far terminal.For example, with
+$$n=2,\quad a_0=1,\quad s_0=0,\quad w_1=12,\quad z_0=24,$$
+we have  $a_1=19$ . Taking  $H=6,d=4,f=100$  gives
+$$\ell=-5,\qquad y=93,$$
+while the next block has minimum endpoint row  $a_1-8=11$ . Thus the later block does not begin below the far terminal. This candidate is already excluded because it collides with the first frontier in block  $1$ , but the proof must not use later-block row separation before imposing the relevant table bound.The sufficiency argument should instead be written as:If  $k<n-1$ , every endpoint in a block  $j>k$  has row at least
+$$a_{k+1}-8\ge a_k+10.$$
+For a legal  $T$ , the table gives  $y\le a_k$ , and in the second and third rows an even stronger bound.Hence no later block can contact the far stem.If  $k=n-1$ , there is no later block and the assertion is vacuous.If no  $k$  exists, use only the column/tile-boundary separation; do not invoke a row comparison with a far terminal.The statement that the near stem is separated from later blocks is fine, since its terminal is fixed at row  $a_i-4$ . The unbounded quantity is the far terminal  $y$ , and that part needs the conditional formulation above.5. The gain calculation is correct after using the exceptional-width identityThere is no arithmetic error in the final lower bound, although the intermediate formula should be read together with the exceptional-width observation.The own  $P_i^0$  receipt contributes
+$$2\cdot 2-4=0.$$
+The new original has charge  $1-H$ , so its negative mass contributes  $H-1$ . Therefore
+$$\Delta\Phi=H-1-\delta.$$
+When  $\delta=1$ , the first-row column identity gives
+$$H=s_i-s_k+4\ge 24+4=28.$$
+Thus the exceptional gain is at least  $28-2=26$ . If  $H=6$ , the exceptional row cannot occur, so  $\delta=0$  and the gain is exactly  $5$ . Hence the conclusion
+$$\Delta\Phi\ge 5,$$
+with equality exactly at breadth  $H=6$ , is valid once the parity and frontier proof are repaired.Required revisionsReplace the quantifier by an explicit all-even condition:
+$$H,d,f\in2\mathbb Z,\qquad H\ge6,\quad d,f\ge4.$$
+State  $0\le i<n$ .Clarify whether  $U(H,d,f)$  is undefined or illegal for odd  $d,f$ ; do not leave the issue implicit in the matching description.Replace “no preceding endpoints in its partner column” by a precise statement about the absence of partner endpoints in the relevant tile rows before the first collision frontier.Rewrite the later-block exclusion so that it is applied only after the legal  $y$ -bound for the selected row has been imposed, and explicitly handle  $k=n-1$ .With these changes, the substantive theorem appears correct: the first later block is selected correctly by far column, the earlier blocks are excluded by the global tile boundary, the three frontiers are exhaustive, the  $m=0$  and  $m=1$  event ledgers are correct, and no additional later contact survives for a legal  $T$ .

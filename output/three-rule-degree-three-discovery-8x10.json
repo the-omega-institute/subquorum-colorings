@@ -1,0 +1,624 @@
+{
+  "status": "sat",
+  "shape": [
+    8,
+    10
+  ],
+  "root": [
+    2,
+    2
+  ],
+  "fixed_endpoints_and_matching": false,
+  "include_endpoint_guard": true,
+  "occupied_degree_three": true,
+  "seconds": 0.59,
+  "timeout_seconds": 30,
+  "z3_version": "5.3.1",
+  "scope": "Discovery in one even rectangle with one connected endpoint component and strict acyclic freeze ranks. All enabled corner rules use all orientations and actual physical tile identities. Optional fixed endpoints and matching leave only selected labels free. The optional endpoint guard uses the single connected component; optional occupied degree three counts both selected and endpoint neighbors. Unknown is not unsat; finite unsat is not a general coverage proof.",
+  "selected": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      4
+    ],
+    [
+      7,
+      6
+    ]
+  ],
+  "matching": [
+    [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        6
+      ]
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    [
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    [
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    [
+      [
+        5,
+        1
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    [
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ]
+  ],
+  "donors": [],
+  "owned_capacity": 0,
+  "checked": {
+    "objective": 22,
+    "receiver_charge": 1,
+    "ledger": {
+      "receivers": [
+        {
+          "endpoints": 18,
+          "tiles": 8,
+          "selected": 8,
+          "charge_twice": 2,
+          "straight": false,
+          "saturated_endpoints": 2,
+          "transfers": 2
+        }
+      ],
+      "no_endpoint_tiles": 12,
+      "empty_deficit": 19,
+      "objective": 22,
+      "area": 80
+    },
+    "fully_frozen": true,
+    "freezing_layers": [
+      [
+        {
+          "endpoint": [
+            6,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              0
+            ],
+            [
+              7,
+              1
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            6,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              6
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            4,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            4,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            2,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            2,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            3,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            3,
+            5
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              6
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            2,
+            3
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            2,
+            4
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            3,
+            3
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            3,
+            4
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            2,
+            2
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            2,
+            5
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            3,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            3,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        }
+      ],
+      [
+        {
+          "endpoint": [
+            5,
+            1
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "endpoint": [
+            5,
+            6
+          ],
+          "kept_neighbors": [
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        }
+      ]
+    ]
+  },
+  "ranks": [
+    {
+      "point": [
+        2,
+        1
+      ],
+      "rank": 2
+    },
+    {
+      "point": [
+        2,
+        2
+      ],
+      "rank": 9
+    },
+    {
+      "point": [
+        2,
+        3
+      ],
+      "rank": 4
+    },
+    {
+      "point": [
+        2,
+        4
+      ],
+      "rank": 7
+    },
+    {
+      "point": [
+        2,
+        5
+      ],
+      "rank": 6
+    },
+    {
+      "point": [
+        2,
+        6
+      ],
+      "rank": 5
+    },
+    {
+      "point": [
+        3,
+        1
+      ],
+      "rank": 10
+    },
+    {
+      "point": [
+        3,
+        2
+      ],
+      "rank": 3
+    },
+    {
+      "point": [
+        3,
+        3
+      ],
+      "rank": 8
+    },
+    {
+      "point": [
+        3,
+        4
+      ],
+      "rank": 5
+    },
+    {
+      "point": [
+        3,
+        5
+      ],
+      "rank": 6
+    },
+    {
+      "point": [
+        3,
+        6
+      ],
+      "rank": 7
+    },
+    {
+      "point": [
+        4,
+        1
+      ],
+      "rank": 1
+    },
+    {
+      "point": [
+        4,
+        6
+      ],
+      "rank": 4
+    },
+    {
+      "point": [
+        5,
+        1
+      ],
+      "rank": 11
+    },
+    {
+      "point": [
+        5,
+        6
+      ],
+      "rank": 8
+    },
+    {
+      "point": [
+        6,
+        1
+      ],
+      "rank": 0
+    },
+    {
+      "point": [
+        6,
+        6
+      ],
+      "rank": 0
+    }
+  ]
+}

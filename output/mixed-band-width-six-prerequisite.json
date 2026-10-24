@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "command": "python3 scripts/check_strip.py 6",
+  "width": 6,
+  "finite_lengths": 30,
+  "certificate": {
+    "width": 6,
+    "start": 6,
+    "period": 2,
+    "doubled_increment": 12,
+    "states": 3105
+  },
+  "from_initial_state": true,
+  "independent_check": "PASS width=6 start=6 period=2 doubled_increment=12 states=3105",
+  "source_hashes": {
+    "grid_omega.cpp": "2d5eda99a6572efaa70e7311626f807b69506df326eb6066328420b9c77e2af9",
+    "check_omega.cpp": "f790f19d51b3a5e8daa659d0bf43558353b91f6875ed8625530f3505f41706a1"
+  },
+  "scope": "Fresh regeneration of the existing width-six all-length Omega prerequisite: all 30 initial readouts and both complete indexed vectors match the archive byte-for-byte. The exact recurrence and vector-translation induction establish all lengths; bounded readouts alone are not used as proof."
+}

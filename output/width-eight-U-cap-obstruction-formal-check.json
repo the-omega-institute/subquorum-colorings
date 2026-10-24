@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-20T01:13:24.642Z",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/WidthEightUCapObstruction.lean",
+  "source_exec": 73524,
+  "source_exit_code": 0,
+  "full_current_source_audit_exec": 75897,
+  "audit_exit_code": 0,
+  "actual_lean_lake_preflight": [],
+  "source_preflight_memory_free_percent": 57,
+  "audit_preflight_memory_free_percent": 59,
+  "parallel_jobs": 1,
+  "declaration_count": 16,
+  "declarations": [
+    "three_blockers_force_terminal",
+    "three_blockers_force_left_ray",
+    "five_blockers_force_upper_support",
+    "every_u_endpoint_hits_corridor",
+    "u_support_is_not_endpoint",
+    "seed_endpoint_disjointness",
+    "first_support_forcing",
+    "five_root_blockers_present",
+    "first_rotor_owner",
+    "rotor_branch_endpoint_disjointness",
+    "rotor_branch_second_support",
+    "rotor_branch_no_rotor_owner",
+    "rotor_branch_four_site_barrier",
+    "u_branch_second_neighbors",
+    "u_branch_no_rotor_owner",
+    "u_branch_corridor_barrier"
+  ],
+  "individual_axiom_audit": {
+    "three_blockers_force_terminal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "three_blockers_force_left_ray": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "five_blockers_force_upper_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "every_u_endpoint_hits_corridor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "u_support_is_not_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "seed_endpoint_disjointness": [],
+    "first_support_forcing": [],
+    "five_root_blockers_present": [],
+    "first_rotor_owner": [],
+    "rotor_branch_endpoint_disjointness": [],
+    "rotor_branch_second_support": [],
+    "rotor_branch_no_rotor_owner": [],
+    "rotor_branch_four_site_barrier": [],
+    "u_branch_second_neighbors": [],
+    "u_branch_no_rotor_owner": [],
+    "u_branch_corridor_barrier": []
+  },
+  "scope": "Universally quantified U terminal normal form, four-step left ray, original upper support under five blockers, six-site corridor exclusion and support-endpoint disjointness for arbitrary integer dimensions and all eight signed permutations. Exact seed46 disjoint endpoints, first forcing, five blockers, three exhaustive16-role rotor owner tables, rotor branch54endpoint disjointness/second support/four-site barrier, U branch mandatory neighbors/six-site barrier. Source-image normalization and mapping the original U constructor to endpoint/support formulas and assembly into arbitrary-extension noncompletion remain written. No full Lean theorem of all mixed completions, and no sorryAx/native_decide."
+}
