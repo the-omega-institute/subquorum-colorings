@@ -254,7 +254,7 @@ deficient systems; 3244 exact release-capacity comparisons, 786 canonical
 single-release checks and 359 minimal obstructions. There are 546 independent
 abstract primitive comparisons. All 2048 physical reservations pass both
 optimizers: 1488 give (3,1), 544 give (3,2), 15 give (3,3), and only the full
-eleven-unit deletion gives (2,2). The 112 stack controls cover q=1..16 and
+eleven-unit deletion gives (2,2).
 An independent subset dynamic program also checks both formulas (4) for
 all 2048 candidate sets K against the optimized reservation outcomes.
 The 112 stack controls cover q=1..16 and
