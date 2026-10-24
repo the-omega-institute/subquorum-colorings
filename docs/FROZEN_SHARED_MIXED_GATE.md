@@ -195,6 +195,12 @@ answer that question. The full mixed-capacity network, or a proved residual
 selection invariant, is still needed. No improvement of the universal `5/6`
 bound is asserted, and the 11 October submitted manuscript is unchanged.
 
+Update, 25 October: [first-destination allocation and an unported shared gate](FIRST_DESTINATION_ALLOCATION_AND_UNPORTED_GATE.md)
+prove a simultaneous first-step allocation and exact beta-compensation formula.
+A new frozen witness has no direct or selected-cap access at any original
+alpha tip, so even maximum direct prepayment does not restore source separation.
+Its full network still pays both sources, now by two different beta strands.
+
 ## 6. Reproduction and scope
 
 Run the standard-library verifier:
