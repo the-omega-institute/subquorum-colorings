@@ -24,6 +24,13 @@ templates are UNSAT. No frozen-grid fork realization, general geometric
 saturation theorem, or improvement of the universal5/6 bound is claimed.
 The11 October submitted manuscript is preserved.
 
+**Later25 October result:** the [frozen beta-fork note](FROZEN_BETA_SUPPORT_FORK_AND_RESERVED_RESOURCE_GAIN.md)
+constructs a completely frozen physical fork, refuting general fork exclusion.
+Its reserved interface has strict gain2vs1; its full pool has no gain. The
+zero-fork counts in this note describe the original controls only. The new
+note also proves the exact Hall criterion for simultaneous fixed-arm ordinary
+replacement; unrestricted strict gain remains unresolved.
+
 ## 1. Fixed supports and the problem being optimized
 
 Start with the finite TP/BP strand system of

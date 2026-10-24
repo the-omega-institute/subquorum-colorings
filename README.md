@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [completely frozen beta fork and exact arm-replacement criterion](docs/FROZEN_BETA_SUPPORT_FORK_AND_RESERVED_RESOURCE_GAIN.md):
+an explicit16-by14 board with66 frozen endpoints refutes universal beta-fork
+exclusion. Two different alpha arms enter different tips of one beta and
+use its internal original interval: one whole beta plus one interval pays2.
+A reserved interface has strict value2vs1; unrestricted value remains3 with
+one link. Arbitrary separated copies give reserved gapq; right padding
+releases a boundary unit and lowers full link cost to0. A general fixed-arm
+Hall criterion exactly characterizes simultaneous ordinary replacement and
+saves at least one link per replaced fork; shared substitutes must be counted
+once. Checks pass20 physical boards/16 stacks,784 abstract replacement systems,
+and12 new scoped Lean audits. Unrestricted strict gain and the general5/6
+bound remain open; the submitted manuscript is preserved.
+
 New [exact whole-support stem/fork normal form](docs/WHOLE_SUPPORT_FORK_NORMAL_FORM.md):
 whole-support interval witnesses can belong to beta bodies. Two different
 alpha arms entering its different BP tips then consume one whole beta plus
