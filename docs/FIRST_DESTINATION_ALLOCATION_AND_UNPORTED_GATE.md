@@ -264,6 +264,11 @@ repair exemplifies why choosing different first destinations is weaker and
 more useful than requiring that every reachable mixed gate have only one
 potential source.
 
+The component-root extension is proved in
+[COMPONENT_ROUTE_CERTIFICATES_AND_GROUPED_BETA_RESERVES.md](COMPONENT_ROUTE_CERTIFICATES_AND_GROUPED_BETA_RESERVES.md).
+It groups each beta-surplus path as one reserve, chooses internal matchings
+after exterior routes, and lifts reduced route packings without repeated credit.
+
 ## 6. Verification and remaining theorem
 
 The standard-library verifier checks all 10,348 partitions of 2n witness

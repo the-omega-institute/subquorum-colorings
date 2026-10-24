@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "execution": "user-authorized local machine; sequential standalone Lean",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "command": "cd formal && lean SubQuorum/ComponentRouteCertificate.lean",
+  "exit_code": 0,
+  "theorems": 10,
+  "axiom_audits": [
+    "'SubQuorum.ComponentRouteCertificate.skip_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.skip_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.skip_covers' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.arbitrary_root_matching' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.component_balance' depends on axioms: [propext]",
+    "'SubQuorum.ComponentRouteCertificate.whole_balance' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.resource_ledger' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.exchange_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.exchange_injective' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ComponentRouteCertificate.exchange_covers' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": [
+    "Arbitrary-length path root map: bounds, distinct indices, coverage, adjacency",
+    "Abstract component-list count identity beta+t=alpha+s and signed interval ledger",
+    "Arbitrary-length ordered balanced-path exchange map: bounds, injectivity, coverage"
+  ],
+  "not_formalized": [
+    "Owner graph classification and graph matching interpretation",
+    "Necessity of ordered root compatibility or cycle-deletion case",
+    "Reduced network, route packing existence and either full lifting theorem",
+    "Frozen-grid geometry or any universal improvement of 5/6"
+  ],
+  "preflight": {
+    "memory_free_percent": 33,
+    "existing_lean_lake_by_comm_basename": [
+      {
+        "pid": 17246,
+        "comm": "lake",
+        "rss_kib": 60640
+      },
+      {
+        "pid": 17358,
+        "comm": "lean",
+        "rss_kib": 2647248
+      }
+    ],
+    "decision": "Only small standalone core/Omega module, one task process; no dependency build or parallel Lean"
+  },
+  "sorry": false,
+  "native_decide": false,
+  "warnings": []
+}
