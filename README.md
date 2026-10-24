@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [strict beta-cut promotion and shared reserve](docs/BETA_CUT_PROMOTION_AND_SHARED_RESERVE_OBSTRUCTION.md):
+in the largest-source-side minimum cut, every nonempty receiver set Q has
+at least |double-entry receivers in Q|+1 different far-side interval witnesses.
+Double-entry receivers admit a matching even after deleting any one interval;
+under two owners their witness graph has degree at least two and no pure
+cycle component. An all-q abstract family nevertheless has only one globally
+unused interval, refuting per-receiver fresh-reserve accounting. A complete
+finite frontier of 6136 frozen boards (four old matchings, at most two added
+selections/edges) has full ordinary compensation. Checks pass 137,272 strict
+promotion inequalities, six scoped Lean audits and the original flow suite.
+The general geometric cut bound and universal 5/6 improvement remain open.
+
 New [one exact whole-support fork flow and resource cuts](docs/WHOLE_SUPPORT_FORK_FLOW_AND_RESOURCE_CUTS.md):
 separate capacity-one gates for the two physical beta BP entries, one private
 whole-beta sink and beta-body support arcs give a single polynomial min-cost

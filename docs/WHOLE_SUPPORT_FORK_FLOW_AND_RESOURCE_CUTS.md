@@ -1,5 +1,11 @@
 # Whole-support forks: one exact flow and a resource-cut criterion
 
+**Canonical-cut continuation:** [beta-body promotion and shared reserve](BETA_CUT_PROMOTION_AND_SHARED_RESERVE_OBSTRUCTION.md)
+sharpens the separator to a strict simultaneous promotion inequality, giving
+deletion-robust Hall witnesses for double BP entry cuts. These far-side units
+can already be used; an all-length abstract family has only one unused unit.
+The full flow can optionally return the largest-source-side minimum cut.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 Maximum whole-owner-support compensation, including beta-body forks, and the

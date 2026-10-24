@@ -35,7 +35,7 @@ def normalize_beta_paths(beta,paths):
     return int(changed)
 
 
-def fork_flow(kinds,pairs,links,support,resources):
+def fork_flow(kinds,pairs,links,support,resources,maximal_cut=False):
     owner,alphas,betas,mixed=owner_data(kinds,pairs)
     assert set(support)==set(range(len(pairs)))
     assert all(set(w)<=resources for w in support.values())
@@ -84,6 +84,19 @@ def fork_flow(kinds,pairs,links,support,resources):
         for i in adj[u]:
             e=edges[i]
             if e['cap'] and e['v'] not in reachable:reachable.add(e['v']);pending.append(e['v'])
+    if maximal_cut:
+        # The largest source side among all minimum cuts is the complement
+        # of vertices that can reach the sink in the residual network.
+        incoming=defaultdict(list)
+        for e in edges:
+            if e['cap']:incoming[e['v']].append(e['u'])
+        sink_reachable={sink};pending=[sink]
+        while pending:
+            v=pending.pop()
+            for u in incoming[v]:
+                if u not in sink_reachable:sink_reachable.add(u);pending.append(u)
+        reachable=nodes-sink_reachable
+        assert source in reachable
     assert sink not in reachable
     cut=[e for e in edges[::2] if e['u'] in reachable and e['v'] not in reachable]
     assert sum(e['initial'] for e in cut)==value
@@ -161,6 +174,9 @@ def fork_flow(kinds,pairs,links,support,resources):
     return dict(value=value,cost=cost,certificates=certs,links=chosen,
         beta_private_sink_normalizations=normalizations,
         cut=separator,source_side=sorted(source_side),blocked_sources=blocked,deficit=len(alphas)-value,
+        source_side_betas=sorted(b for b in betas if exit(b) in reachable),
+        source_side_intervals=sorted(j for j in resources if ('interval',j) in reachable),
+        cut_side='largest' if maximal_cut else 'smallest',
         network_nodes=len(nodes),network_forward_arcs=len(edges)//2)
 
 
