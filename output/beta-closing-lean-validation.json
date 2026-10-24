@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T19:38:57.816789+00:00",
+  "execution": "Explicitly selected local executable; sequential dependency and new module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "39%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/BTColumnCorridorObstruction.lean",
+        "-o",
+        "/Users/lexa/Desktop/lexa/omega/subquorum-grid-compensation-20261019/build/beta-closing-formal/SubQuorum/BTColumnCorridorObstruction.olean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/InteriorSupportTreeCaps.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/InteriorSupportTreeCaps.lean",
+        "-o",
+        "/Users/lexa/Desktop/lexa/omega/subquorum-grid-compensation-20261019/build/beta-closing-formal/SubQuorum/InteriorSupportTreeCaps.olean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.InteriorSupportTreeCaps.cap_frozen' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.InteriorSupportTreeCaps.cap_mate_closed' depends on axioms: [propext]",
+        "'SubQuorum.InteriorSupportTreeCaps.tail_row_alternates' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.InteriorSupportTreeCaps.tail_not_horizontal_neighbors' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.InteriorSupportTreeCaps.capped_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.InteriorSupportTreeCaps.two_external_witnesses' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.InteriorSupportTreeCaps.hall_defect_bound' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.InteriorSupportTreeCaps.at_most_one_zero_token_forces_saturation' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    {
+      "module": "SubQuorum/FrozenSupportTreeReroot.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/FrozenSupportTreeReroot.lean",
+        "-o",
+        "/Users/lexa/Desktop/lexa/omega/subquorum-grid-compensation-20261019/build/beta-closing-formal/SubQuorum/FrozenSupportTreeReroot.olean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.FrozenSupportTreeReroot.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.terminal_inventory' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.direct_beta_asymmetry' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.support_sees_only_shared_unmarked_unit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.two_marked_boundary_exits' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.shared_gap_is_singleton' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.wider_mixed_alternative' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FrozenSupportTreeReroot.exact_geometry_counts' does not depend on any axioms",
+        "'SubQuorum.FrozenSupportTreeReroot.stacked_ledger' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    {
+      "module": "SubQuorum/BetaClosingAndMixedRepair.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/BetaClosingAndMixedRepair.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.BetaClosingAndMixedRepair.frozen_selected_mono' does not depend on any axioms",
+        "'SubQuorum.BetaClosingAndMixedRepair.insert_feasible' does not depend on any axioms",
+        "'SubQuorum.BetaClosingAndMixedRepair.original_site_safe' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BetaClosingAndMixedRepair.all_original_endpoints_still_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BetaClosingAndMixedRepair.changed_tip_types' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BetaClosingAndMixedRepair.old_beta_direct_link_and_new_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BetaClosingAndMixedRepair.closed_family_ledger' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BetaClosingAndMixedRepair.physical_sharpness_scalar' depends on axioms: [propext,"
+      ]
+    }
+  ],
+  "scope": "Arbitrary actual-mate freezing monotone under selection insertion; general feasibility insertion lemma; concrete safe site and preserved46EndpointFrozen certificate; BP-to-TP local types and selected-cap exit; all-parameter scalar ledger.",
+  "not_formalized": [
+    "General matching and weighted reroot optimum",
+    "Whole-board interval inventory and full mixed route optimality",
+    "All-d full-board adapter, exact inventory, stacking and padding",
+    "Universal grid bound"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

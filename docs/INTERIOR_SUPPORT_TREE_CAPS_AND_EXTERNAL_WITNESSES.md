@@ -16,6 +16,14 @@ The first result removes the boundary-release limitation of
 combines the proved [missing-tip injection](FROZEN_MISSING_PORT_BP_TERMINAL_INJECTION.md)
 with the [joint tree--beta theorem](JOINT_TREE_BETA_COMPENSATION.md).
 
+Subsequent result: [safe beta closing](BETA_CLOSING_AND_SHARP_MIXED_DEFECT.md)
+adds one selection, preserving every original interval and alpha support,
+but turning the sole beta into mixed. The resulting physical family attains
+the bound below with arbitrary positive direct-beta Hall defect, yet admits
+full mixed repair. Thus universal direct-beta saturation under the stated
+feasibility/freezing hypotheses is now refuted, not an open lemma to prove.
+This note's original physical controls and their zero defect remain unchanged.
+
 ## 1. An all-length interior cap
 
 Start with exactly the 12-by-18 configuration, selections T, actual matching M,
@@ -312,11 +320,11 @@ computational regression checks; they are **not** claimed fully formalized.
 The local driver records the executable, memory/process preflight and axiom
 audits. No new external review is claimed.
 
-The remaining geometric task is now sharper: either rule out the two-mixed-end
-Hall-deficient structure using freezing and continuation, or build an actual
-completely frozen example and track its accessible original interval reserves.
+The subsequent safe-beta-closing result realizes the two-mixed-end Hall-deficient
+structure and tracks its accessible original interval reserves. The remaining
+geometric task is a general continuation mechanism beyond this realized family.
 Any continuation through mixed strands must retain gate capacity and original
 interval identity; the earlier shared-gate obstruction rules out replacing
-this with an unrestricted source-to-resource projection. A universal beta Hall
-theorem, general mixed compensation and a new numerical 5/6 improvement remain
-open. The submitted manuscript is unchanged.
+this with an unrestricted source-to-resource projection. Universal direct-beta
+saturation is false under these hypotheses; general mixed compensation and a
+new numerical 5/6 improvement remain open. The submitted manuscript is unchanged.

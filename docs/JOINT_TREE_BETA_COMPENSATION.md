@@ -26,6 +26,13 @@ establish a universal improvement of the grid's 5/6 bound.
 
 ## 1. Hypotheses and units
 
+Subsequent result: [safe beta closing](BETA_CLOSING_AND_SHARP_MIXED_DEFECT.md)
+now realizes arbitrarily large positive t-mu in completely frozen physical
+grids, stable under blank right padding. Thus a universal direct-beta Hall
+saturation theorem under feasibility/freezing alone is false. This exact
+joint allocation theorem remains valid; mixed continuation repairs the
+constructed family, and general mixed compensation is still open.
+
 Subsequent physical result: [a frozen two-vertex support tree](FROZEN_SUPPORT_TREE_AND_FORCED_REROOT.md)
 now realizes positive reroot cost at a specified maximum baseline, with an
 all-q disjoint physical stacking proof. It also exhibits a wider mixed repair

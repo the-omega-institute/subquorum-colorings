@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [sharp physical beta Hall defects and mixed repair](docs/BETA_CLOSING_AND_SHARP_MIXED_DEFECT.md):
+one safe selection changes a beta into a mixed strand while preserving all
+freezing certificates, original interval identities and alpha supports.
+All-length capped boards and arbitrary separated stacks have actual direct-beta
+Hall defectq, attaining the two-external-witness bound with2q mixed witnesses
+and no boundary witness. Thus universal direct-beta saturation under feasibility
+and freezing is false. Full compensation still takes exactlyq mixed links to
+different original unused intervals, preserving all old B-to-J assignments;
+the target margin remains positive. Checks cover105 physical models, including
+9 with betas confined to other components, plus8 new scoped Lean audits.
+The general mixed continuation problem remains open.
+
 New [interior frozen caps and external-witness bound](docs/INTERIOR_SUPPORT_TREE_CAPS_AND_EXTERNAL_WITNESSES.md):
 an explicit all-length PP cap seals the earlier two-owner support tree's boundary
 exits without adding beta credit. Its interval defect survives arbitrary blank
