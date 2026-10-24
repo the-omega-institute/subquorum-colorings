@@ -200,4 +200,12 @@ full answer is in output/frozen-missing-port-bp-injection-oracle.json.
 The review certifies written mathematics, not program or Lean execution.
 No owned review remains live. Universal resource compensation remains open.
 
+Follow-up (25 October):
+[Frozen fork exclusion and row surplus](FROZEN_FORK_EXCLUSION_AND_ROW_SURPLUS.md)
+sharpens the row graph to isolated edges and BP-ended paths, proves exact
+subset surplus and minimum mixed-target use, and supplies a full geometric
+beta-only compensation class. It also explains the two-link beta allocation
+of the no-direct-access shared-gate fixture. The universal grid bound remains
+open.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.

@@ -343,4 +343,12 @@ this alone cannot certify that all future reachable gates are source-separated.
 The universal grid inequality and `5/6` improvement remain open. The 11 October
 submitted manuscript is unchanged.
 
+Follow-up (25 October):
+[Frozen fork exclusion and row surplus](FROZEN_FORK_EXCLUSION_AND_ROW_SURPLUS.md)
+sharpens the row graph to isolated edges and BP-ended paths, proves exact
+subset surplus and minimum mixed-target use, and supplies a full geometric
+beta-only compensation class. It also explains the two-link beta allocation
+of the no-direct-access shared-gate fixture. The universal grid bound remains
+open.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
