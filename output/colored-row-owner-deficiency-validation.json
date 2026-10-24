@@ -1,0 +1,1075 @@
+{
+  "status": "PASS",
+  "totals": {
+    "exact_owner_subset_ledgers": 18208,
+    "exact_monochromatic_matching_controls": 2848,
+    "models": 1424,
+    "strict_two_color_improvements": 98,
+    "fully_frozen_geometry_controls": 624,
+    "colored_full_route_models": 522,
+    "phase_preserving_routes": 790,
+    "simple_deficit_but_full_routes_complete": 3,
+    "carried_physical_controls": 480,
+    "uniform_asymmetric_certificate_events": 7020,
+    "abstract_colored_row_profiles_not_grid_claims": 800,
+    "exhaustive_colored_full_route_cuts": 12127
+  },
+  "examples": {
+    "asymmetric_base": {
+      "shape": [
+        18,
+        20
+      ],
+      "selected": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "matching": [
+        [
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        [
+          [
+            10,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        [
+          [
+            9,
+            5
+          ],
+          [
+            9,
+            6
+          ]
+        ]
+      ],
+      "freezing_schedule": [
+        [
+          [
+            5,
+            3
+          ],
+          [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ]
+          ]
+        ],
+        [
+          [
+            5,
+            7
+          ],
+          [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              8
+            ]
+          ]
+        ],
+        [
+          [
+            10,
+            3
+          ],
+          [
+            [
+              10,
+              2
+            ],
+            [
+              11,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            10,
+            7
+          ],
+          [
+            [
+              10,
+              8
+            ],
+            [
+              11,
+              7
+            ]
+          ]
+        ],
+        [
+          [
+            5,
+            5
+          ],
+          [
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        ],
+        [
+          [
+            9,
+            6
+          ],
+          [
+            [
+              8,
+              6
+            ],
+            [
+              10,
+              6
+            ]
+          ]
+        ],
+        [
+          [
+            10,
+            5
+          ],
+          [
+            [
+              9,
+              5
+            ],
+            [
+              10,
+              6
+            ]
+          ]
+        ],
+        [
+          [
+            9,
+            4
+          ],
+          [
+            [
+              9,
+              3
+            ],
+            [
+              9,
+              5
+            ]
+          ]
+        ],
+        [
+          [
+            6,
+            4
+          ],
+          [
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            [
+              7,
+              4
+            ],
+            [
+              8,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            [
+              8,
+              3
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            [
+              9,
+              3
+            ],
+            [
+              8,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            7,
+            4
+          ],
+          [
+            [
+              7,
+              3
+            ],
+            [
+              8,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            6,
+            3
+          ],
+          [
+            [
+              7,
+              3
+            ],
+            [
+              6,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            [
+              6,
+              6
+            ],
+            [
+              5,
+              5
+            ]
+          ]
+        ],
+        [
+          [
+            10,
+            4
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            [
+              9,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            9,
+            5
+          ],
+          [
+            [
+              9,
+              4
+            ],
+            [
+              10,
+              5
+            ]
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            [
+              10,
+              5
+            ],
+            [
+              9,
+              6
+            ]
+          ]
+        ]
+      ],
+      "result": {
+        "alpha": 1,
+        "beta_deficit": 0,
+        "simple_deficit": 0,
+        "excess_by_bp_color": [
+          0,
+          1
+        ],
+        "beta_matching": [
+          [
+            0,
+            [
+              "beta",
+              4
+            ]
+          ]
+        ],
+        "simple_matching": [
+          [
+            0,
+            [
+              "beta",
+              4
+            ]
+          ]
+        ],
+        "color_matchings": [
+          [
+            [
+              0,
+              [
+                "beta",
+                4
+              ]
+            ]
+          ],
+          []
+        ],
+        "tight_beta_subset": [
+          0
+        ],
+        "tight_simple_subset": [],
+        "lifted_simple_certificate": {
+          "links": [
+            [
+              [
+                10,
+                3
+              ],
+              [
+                10,
+                4
+              ]
+            ]
+          ],
+          "payments": []
+        },
+        "all_original_alphas_unported": true,
+        "full_route_deficit": 0
+      }
+    },
+    "assembly_2_2": {
+      "alpha": 4,
+      "beta_deficit": 0,
+      "simple_deficit": 0,
+      "excess_by_bp_color": [
+        2,
+        2
+      ],
+      "beta_matching": [
+        [
+          0,
+          [
+            "beta",
+            4
+          ]
+        ],
+        [
+          6,
+          [
+            "beta",
+            22
+          ]
+        ],
+        [
+          9,
+          [
+            "beta",
+            13
+          ]
+        ],
+        [
+          15,
+          [
+            "beta",
+            19
+          ]
+        ]
+      ],
+      "simple_matching": [
+        [
+          0,
+          [
+            "beta",
+            4
+          ]
+        ],
+        [
+          6,
+          [
+            "beta",
+            22
+          ]
+        ],
+        [
+          9,
+          [
+            "beta",
+            13
+          ]
+        ],
+        [
+          15,
+          [
+            "beta",
+            19
+          ]
+        ]
+      ],
+      "color_matchings": [
+        [
+          [
+            0,
+            [
+              "beta",
+              4
+            ]
+          ],
+          [
+            6,
+            [
+              "beta",
+              22
+            ]
+          ]
+        ],
+        [
+          [
+            9,
+            [
+              "beta",
+              13
+            ]
+          ],
+          [
+            15,
+            [
+              "beta",
+              19
+            ]
+          ]
+        ]
+      ],
+      "tight_beta_subset": [
+        0,
+        6,
+        9,
+        15
+      ],
+      "tight_simple_subset": [],
+      "lifted_simple_certificate": {
+        "links": [
+          [
+            [
+              28,
+              3
+            ],
+            [
+              28,
+              4
+            ]
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            [
+              10,
+              4
+            ]
+          ],
+          [
+            [
+              46,
+              4
+            ],
+            [
+              46,
+              5
+            ]
+          ],
+          [
+            [
+              64,
+              4
+            ],
+            [
+              64,
+              5
+            ]
+          ]
+        ],
+        "payments": []
+      },
+      "all_original_alphas_unported": true,
+      "full_route_deficit": 0
+    },
+    "assembly_4_0": {
+      "alpha": 4,
+      "beta_deficit": 0,
+      "simple_deficit": 0,
+      "excess_by_bp_color": [
+        0,
+        4
+      ],
+      "beta_matching": [
+        [
+          0,
+          [
+            "beta",
+            4
+          ]
+        ],
+        [
+          6,
+          [
+            "beta",
+            22
+          ]
+        ],
+        [
+          9,
+          [
+            "beta",
+            13
+          ]
+        ],
+        [
+          15,
+          [
+            "beta",
+            19
+          ]
+        ]
+      ],
+      "simple_matching": [
+        [
+          0,
+          [
+            "beta",
+            4
+          ]
+        ],
+        [
+          6,
+          [
+            "beta",
+            22
+          ]
+        ],
+        [
+          9,
+          [
+            "beta",
+            13
+          ]
+        ],
+        [
+          15,
+          [
+            "beta",
+            19
+          ]
+        ]
+      ],
+      "color_matchings": [
+        [
+          [
+            0,
+            [
+              "beta",
+              4
+            ]
+          ],
+          [
+            6,
+            [
+              "beta",
+              22
+            ]
+          ],
+          [
+            9,
+            [
+              "beta",
+              13
+            ]
+          ],
+          [
+            15,
+            [
+              "beta",
+              19
+            ]
+          ]
+        ],
+        []
+      ],
+      "tight_beta_subset": [
+        0,
+        6,
+        9,
+        15
+      ],
+      "tight_simple_subset": [],
+      "lifted_simple_certificate": {
+        "links": [
+          [
+            [
+              28,
+              3
+            ],
+            [
+              28,
+              4
+            ]
+          ],
+          [
+            [
+              10,
+              3
+            ],
+            [
+              10,
+              4
+            ]
+          ],
+          [
+            [
+              46,
+              3
+            ],
+            [
+              46,
+              4
+            ]
+          ],
+          [
+            [
+              64,
+              3
+            ],
+            [
+              64,
+              4
+            ]
+          ]
+        ],
+        "payments": []
+      },
+      "all_original_alphas_unported": true,
+      "full_route_deficit": 0
+    },
+    "relay_depth_1": {
+      "alpha": 1,
+      "beta_deficit": 1,
+      "simple_deficit": 1,
+      "excess_by_bp_color": [
+        1,
+        1
+      ],
+      "beta_matching": [],
+      "simple_matching": [],
+      "color_matchings": [
+        [],
+        []
+      ],
+      "tight_beta_subset": [
+        1
+      ],
+      "tight_simple_subset": [
+        1
+      ],
+      "lifted_simple_certificate": {
+        "links": [],
+        "payments": []
+      },
+      "all_original_alphas_unported": true,
+      "full_route_deficit": 0
+    },
+    "relay_depth_2": {
+      "alpha": 1,
+      "beta_deficit": 1,
+      "simple_deficit": 1,
+      "excess_by_bp_color": [
+        1,
+        1
+      ],
+      "beta_matching": [],
+      "simple_matching": [],
+      "color_matchings": [
+        [],
+        []
+      ],
+      "tight_beta_subset": [
+        3
+      ],
+      "tight_simple_subset": [
+        3
+      ],
+      "lifted_simple_certificate": {
+        "links": [],
+        "payments": []
+      },
+      "all_original_alphas_unported": true,
+      "full_route_deficit": 0
+    },
+    "relay_depth_5": {
+      "alpha": 1,
+      "beta_deficit": 1,
+      "simple_deficit": 1,
+      "excess_by_bp_color": [
+        1,
+        1
+      ],
+      "beta_matching": [],
+      "simple_matching": [],
+      "color_matchings": [
+        [],
+        []
+      ],
+      "tight_beta_subset": [
+        2
+      ],
+      "tight_simple_subset": [
+        2
+      ],
+      "lifted_simple_certificate": {
+        "links": [],
+        "payments": []
+      },
+      "all_original_alphas_unported": true,
+      "full_route_deficit": 0
+    },
+    "opposite_phase_resource_nonreuse": {
+      "shared_beta": {
+        "value": 1,
+        "cost": 1,
+        "links": [
+          [
+            0,
+            5
+          ]
+        ],
+        "payments": [],
+        "routes": [
+          [
+            [
+              "source",
+              0
+            ],
+            [
+              "link",
+              0,
+              5
+            ],
+            [
+              "beta",
+              2
+            ]
+          ]
+        ],
+        "cut": [
+          [
+            "beta",
+            2
+          ]
+        ],
+        "blocked": [
+          0,
+          1
+        ],
+        "deficit": 1,
+        "route_phases": [
+          0
+        ],
+        "phase_blocked_at_min_cut": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "shared_resources_at_min_cut": [
+          [
+            "beta",
+            2
+          ]
+        ],
+        "incorrect_double_resource_cut_deficit": 0
+      },
+      "shared_interval": {
+        "value": 1,
+        "cost": 0,
+        "links": [],
+        "payments": [
+          [
+            0,
+            0
+          ]
+        ],
+        "routes": [
+          [
+            [
+              "source",
+              0
+            ],
+            [
+              "access",
+              0,
+              0
+            ],
+            [
+              "interval",
+              0
+            ]
+          ]
+        ],
+        "cut": [
+          [
+            "interval",
+            0
+          ]
+        ],
+        "blocked": [
+          0,
+          1
+        ],
+        "deficit": 1,
+        "route_phases": [
+          0
+        ],
+        "phase_blocked_at_min_cut": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "shared_resources_at_min_cut": [
+          [
+            "interval",
+            0
+          ]
+        ],
+        "incorrect_double_resource_cut_deficit": 0
+      },
+      "scope": "Colored original-terminal controls, not claimed fully frozen physical grids. Distinct phase routes still share a whole beta or original interval unit."
+    }
+  },
+  "scope": "General written exact colored row-owner Hall identities and one-hop allocation criterion; uniform asymmetric frozen construction with explicit serial certificate; phase-preserving full routes Abstract profiles are not claimed realizable grids. A one-hop failure is not a full-route or target-bound counterexample. Universal geometric resource cuts/5of6 remain open."
+}

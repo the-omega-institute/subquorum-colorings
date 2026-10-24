@@ -247,4 +247,12 @@ only propext and Quot.sound. The execution receipt and explicit limits are
 in `output/frozen-fork-surplus-lean-validation.json`. This note has not had
 an independent external mathematical review.
 
+Follow-up (25 October):
+[Colored row-owner deficiency and resource cuts](COLORED_ROW_OWNER_DEFICIENCY_AND_RESOURCE_CUTS.md)
+adds the exact one-tip-beta correction, sharp monochromatic optima, a uniform
+frozen color-asymmetric family, and an exact one-step interval allocation
+criterion. Original mixed relays preserve checkerboard phase; the full-route
+cut has two phase blockers and one jointly owned beta/interval resource set.
+The phase conclusion does not apply directly to artificial exchange gates.
+
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
