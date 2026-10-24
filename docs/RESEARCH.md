@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [two-slot sufficiency and a frozen internal Hall obstruction](FROZEN_TIP_SLOT_OBSTRUCTION.md)
+prove that a complete TP-to-BP/two-interval-slot assignment suffices for full
+ordinary whole-support compensation; three slots are already unsound. Complete
+freezing does not imply the two-slot certificate, even among alpha-reachable
+owners. An explicit PP-sealed 10 by 16 board has exact terminal Hall defect one
+and full compensation one at one link. For all q separated copies and arbitrary
+even blank right padding, defect is q while all q alpha payments remain possible
+at exactly q links. The failed condition overcounts neutral mixed TP demands.
+Independent controls and scoped local Lean pass; universal geometric saturation
+and the 5/6 improvement remain open. The submitted manuscript is preserved.
+
 21 October: [all-length terminal-companion injection](ALL_LENGTH_SINGLETON_COMPANION_INJECTION.md)
 extends the joint E/S versus S/P/R activation assignment to arbitrary negative
 singleton incident length b. The exhaustive next-owner roles are E,S,H and

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "machine": "local, authorized in this conversation",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_pressure_free_percent": 44,
+    "lean_lake_processes_by_comm_basename": 0,
+    "concurrency": 1
+  },
+  "command": "LEAN_PATH=/tmp/subquorum-tip-slot-20261025 lean SubQuorum/FrozenTipSlotObstruction.lean",
+  "dependency_build": "lean -o /tmp/subquorum-tip-slot-20261025/SubQuorum/FrozenSharedMixedGate.olean SubQuorum/FrozenSharedMixedGate.lean",
+  "all_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "axiom_report": "'SubQuorum.FrozenTipSlotObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FrozenTipSlotObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FrozenTipSlotObstruction.critical_strands' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FrozenTipSlotObstruction.no_interval_witness_even_including_boundary' depends on axioms: [propext,\n Quot.sound]\n'SubQuorum.FrozenTipSlotObstruction.no_injective_tip_assignment' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FrozenTipSlotObstruction.right_pp_seal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.FrozenTipSlotObstruction.closed_owner_charge_bound' depends on axioms: [propext, Quot.sound]",
+  "scope": "Concrete 10x16 geometry, all20 actual inductively frozen endpoints, critical strands/TP/BP, empty whole-support BB choices including boundary, identical BP targets, no injective critical-tip assignment, alpha-reachable mixed and beta-payment links, arbitrary-later-column PP seal. General Hall lifting, all-copy geometry and flow optimality remain written proof plus independent controls."
+}

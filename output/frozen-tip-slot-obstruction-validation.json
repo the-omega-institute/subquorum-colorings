@@ -1,0 +1,1376 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_base_terminal_matchings": 60,
+    "base_hall_subsets": 64,
+    "physical_systems": 56,
+    "carried_band_isometries": 8,
+    "abstract_systems": 1080,
+    "actual_two_slot_lifts": 516,
+    "ordinary_complete_without_tip_certificate": 227,
+    "three_slot_unsound_controls": 1
+  },
+  "physical": {
+    "selected": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        6,
+        11
+      ],
+      [
+        7,
+        1
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        10
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        8,
+        12
+      ]
+    ],
+    "matching": [
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      [
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      [
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      [
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ]
+      ]
+    ],
+    "rank_witnesses": [
+      {
+        "endpoint": [
+          2,
+          4
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          3,
+          4
+        ],
+        "rank": 3,
+        "kept_neighbors": [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            4
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          3,
+          5
+        ],
+        "rank": 3,
+        "kept_neighbors": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          3,
+          6
+        ],
+        "rank": 1,
+        "kept_neighbors": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          3,
+          7
+        ],
+        "rank": 3,
+        "kept_neighbors": [
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            7
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          3,
+          8
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          4,
+          3
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            3
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          4,
+          4
+        ],
+        "rank": 4,
+        "kept_neighbors": [
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          4,
+          5
+        ],
+        "rank": 2,
+        "kept_neighbors": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          4,
+          6
+        ],
+        "rank": 2,
+        "kept_neighbors": [
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          4,
+          7
+        ],
+        "rank": 2,
+        "kept_neighbors": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          5,
+          6
+        ],
+        "rank": 3,
+        "kept_neighbors": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          5,
+          7
+        ],
+        "rank": 1,
+        "kept_neighbors": [
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          6,
+          6
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            6,
+            5
+          ],
+          [
+            7,
+            6
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          6,
+          7
+        ],
+        "rank": 4,
+        "kept_neighbors": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          6,
+          8
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          6,
+          12
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            5,
+            12
+          ],
+          [
+            6,
+            11
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          7,
+          2
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            1
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          7,
+          3
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            3
+          ]
+        ]
+      },
+      {
+        "endpoint": [
+          7,
+          12
+        ],
+        "rank": 0,
+        "kept_neighbors": [
+          [
+            7,
+            13
+          ],
+          [
+            8,
+            12
+          ]
+        ]
+      }
+    ],
+    "original_inventory": {
+      "alpha": 1,
+      "beta": 1,
+      "gamma": 4,
+      "tau": 0,
+      "delta": 0,
+      "exterior_pairs": 0,
+      "cuts": 0,
+      "balance": 49,
+      "surplus_twice": 98,
+      "boundary_budget": 10
+    },
+    "alpha": [
+      [
+        3,
+        6
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "mixed": [
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    "beta": [
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "upper_mixed": [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        8
+      ]
+    ],
+    "records": [
+      {
+        "copies": 1,
+        "extra_columns": 0,
+        "alpha": 1,
+        "beta": 1,
+        "mixed": 4,
+        "tp_tips": 6,
+        "slot_matching": 5,
+        "tip_hall_defect": 1,
+        "ordinary_payment": 1,
+        "minimum_link_cost": 1,
+        "ordinary_deficit": 0,
+        "intervals": 39,
+        "balance": 49,
+        "boundary_budget": 10
+      },
+      {
+        "copies": 1,
+        "extra_columns": 2,
+        "alpha": 1,
+        "beta": 1,
+        "mixed": 4,
+        "tp_tips": 6,
+        "slot_matching": 5,
+        "tip_hall_defect": 1,
+        "ordinary_payment": 1,
+        "minimum_link_cost": 1,
+        "ordinary_deficit": 0,
+        "intervals": 49,
+        "balance": 59,
+        "boundary_budget": 10
+      },
+      {
+        "copies": 1,
+        "extra_columns": 10,
+        "alpha": 1,
+        "beta": 1,
+        "mixed": 4,
+        "tp_tips": 6,
+        "slot_matching": 5,
+        "tip_hall_defect": 1,
+        "ordinary_payment": 1,
+        "minimum_link_cost": 1,
+        "ordinary_deficit": 0,
+        "intervals": 89,
+        "balance": 99,
+        "boundary_budget": 10
+      },
+      {
+        "copies": 2,
+        "extra_columns": 0,
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 8,
+        "tp_tips": 12,
+        "slot_matching": 10,
+        "tip_hall_defect": 2,
+        "ordinary_payment": 2,
+        "minimum_link_cost": 2,
+        "ordinary_deficit": 0,
+        "intervals": 78,
+        "balance": 98,
+        "boundary_budget": 20
+      },
+      {
+        "copies": 2,
+        "extra_columns": 2,
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 8,
+        "tp_tips": 12,
+        "slot_matching": 10,
+        "tip_hall_defect": 2,
+        "ordinary_payment": 2,
+        "minimum_link_cost": 2,
+        "ordinary_deficit": 0,
+        "intervals": 98,
+        "balance": 118,
+        "boundary_budget": 20
+      },
+      {
+        "copies": 2,
+        "extra_columns": 10,
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 8,
+        "tp_tips": 12,
+        "slot_matching": 10,
+        "tip_hall_defect": 2,
+        "ordinary_payment": 2,
+        "minimum_link_cost": 2,
+        "ordinary_deficit": 0,
+        "intervals": 178,
+        "balance": 198,
+        "boundary_budget": 20
+      },
+      {
+        "copies": 3,
+        "extra_columns": 0,
+        "alpha": 3,
+        "beta": 3,
+        "mixed": 12,
+        "tp_tips": 18,
+        "slot_matching": 15,
+        "tip_hall_defect": 3,
+        "ordinary_payment": 3,
+        "minimum_link_cost": 3,
+        "ordinary_deficit": 0,
+        "intervals": 117,
+        "balance": 147,
+        "boundary_budget": 30
+      },
+      {
+        "copies": 3,
+        "extra_columns": 2,
+        "alpha": 3,
+        "beta": 3,
+        "mixed": 12,
+        "tp_tips": 18,
+        "slot_matching": 15,
+        "tip_hall_defect": 3,
+        "ordinary_payment": 3,
+        "minimum_link_cost": 3,
+        "ordinary_deficit": 0,
+        "intervals": 147,
+        "balance": 177,
+        "boundary_budget": 30
+      },
+      {
+        "copies": 3,
+        "extra_columns": 10,
+        "alpha": 3,
+        "beta": 3,
+        "mixed": 12,
+        "tp_tips": 18,
+        "slot_matching": 15,
+        "tip_hall_defect": 3,
+        "ordinary_payment": 3,
+        "minimum_link_cost": 3,
+        "ordinary_deficit": 0,
+        "intervals": 267,
+        "balance": 297,
+        "boundary_budget": 30
+      },
+      {
+        "copies": 4,
+        "extra_columns": 0,
+        "alpha": 4,
+        "beta": 4,
+        "mixed": 16,
+        "tp_tips": 24,
+        "slot_matching": 20,
+        "tip_hall_defect": 4,
+        "ordinary_payment": 4,
+        "minimum_link_cost": 4,
+        "ordinary_deficit": 0,
+        "intervals": 156,
+        "balance": 196,
+        "boundary_budget": 40
+      },
+      {
+        "copies": 4,
+        "extra_columns": 2,
+        "alpha": 4,
+        "beta": 4,
+        "mixed": 16,
+        "tp_tips": 24,
+        "slot_matching": 20,
+        "tip_hall_defect": 4,
+        "ordinary_payment": 4,
+        "minimum_link_cost": 4,
+        "ordinary_deficit": 0,
+        "intervals": 196,
+        "balance": 236,
+        "boundary_budget": 40
+      },
+      {
+        "copies": 4,
+        "extra_columns": 10,
+        "alpha": 4,
+        "beta": 4,
+        "mixed": 16,
+        "tp_tips": 24,
+        "slot_matching": 20,
+        "tip_hall_defect": 4,
+        "ordinary_payment": 4,
+        "minimum_link_cost": 4,
+        "ordinary_deficit": 0,
+        "intervals": 356,
+        "balance": 396,
+        "boundary_budget": 40
+      },
+      {
+        "copies": 5,
+        "extra_columns": 0,
+        "alpha": 5,
+        "beta": 5,
+        "mixed": 20,
+        "tp_tips": 30,
+        "slot_matching": 25,
+        "tip_hall_defect": 5,
+        "ordinary_payment": 5,
+        "minimum_link_cost": 5,
+        "ordinary_deficit": 0,
+        "intervals": 195,
+        "balance": 245,
+        "boundary_budget": 50
+      },
+      {
+        "copies": 5,
+        "extra_columns": 2,
+        "alpha": 5,
+        "beta": 5,
+        "mixed": 20,
+        "tp_tips": 30,
+        "slot_matching": 25,
+        "tip_hall_defect": 5,
+        "ordinary_payment": 5,
+        "minimum_link_cost": 5,
+        "ordinary_deficit": 0,
+        "intervals": 245,
+        "balance": 295,
+        "boundary_budget": 50
+      },
+      {
+        "copies": 5,
+        "extra_columns": 10,
+        "alpha": 5,
+        "beta": 5,
+        "mixed": 20,
+        "tp_tips": 30,
+        "slot_matching": 25,
+        "tip_hall_defect": 5,
+        "ordinary_payment": 5,
+        "minimum_link_cost": 5,
+        "ordinary_deficit": 0,
+        "intervals": 445,
+        "balance": 495,
+        "boundary_budget": 50
+      },
+      {
+        "copies": 6,
+        "extra_columns": 0,
+        "alpha": 6,
+        "beta": 6,
+        "mixed": 24,
+        "tp_tips": 36,
+        "slot_matching": 30,
+        "tip_hall_defect": 6,
+        "ordinary_payment": 6,
+        "minimum_link_cost": 6,
+        "ordinary_deficit": 0,
+        "intervals": 234,
+        "balance": 294,
+        "boundary_budget": 60
+      },
+      {
+        "copies": 6,
+        "extra_columns": 2,
+        "alpha": 6,
+        "beta": 6,
+        "mixed": 24,
+        "tp_tips": 36,
+        "slot_matching": 30,
+        "tip_hall_defect": 6,
+        "ordinary_payment": 6,
+        "minimum_link_cost": 6,
+        "ordinary_deficit": 0,
+        "intervals": 294,
+        "balance": 354,
+        "boundary_budget": 60
+      },
+      {
+        "copies": 6,
+        "extra_columns": 10,
+        "alpha": 6,
+        "beta": 6,
+        "mixed": 24,
+        "tp_tips": 36,
+        "slot_matching": 30,
+        "tip_hall_defect": 6,
+        "ordinary_payment": 6,
+        "minimum_link_cost": 6,
+        "ordinary_deficit": 0,
+        "intervals": 534,
+        "balance": 594,
+        "boundary_budget": 60
+      },
+      {
+        "copies": 7,
+        "extra_columns": 0,
+        "alpha": 7,
+        "beta": 7,
+        "mixed": 28,
+        "tp_tips": 42,
+        "slot_matching": 35,
+        "tip_hall_defect": 7,
+        "ordinary_payment": 7,
+        "minimum_link_cost": 7,
+        "ordinary_deficit": 0,
+        "intervals": 273,
+        "balance": 343,
+        "boundary_budget": 70
+      },
+      {
+        "copies": 7,
+        "extra_columns": 2,
+        "alpha": 7,
+        "beta": 7,
+        "mixed": 28,
+        "tp_tips": 42,
+        "slot_matching": 35,
+        "tip_hall_defect": 7,
+        "ordinary_payment": 7,
+        "minimum_link_cost": 7,
+        "ordinary_deficit": 0,
+        "intervals": 343,
+        "balance": 413,
+        "boundary_budget": 70
+      },
+      {
+        "copies": 7,
+        "extra_columns": 10,
+        "alpha": 7,
+        "beta": 7,
+        "mixed": 28,
+        "tp_tips": 42,
+        "slot_matching": 35,
+        "tip_hall_defect": 7,
+        "ordinary_payment": 7,
+        "minimum_link_cost": 7,
+        "ordinary_deficit": 0,
+        "intervals": 623,
+        "balance": 693,
+        "boundary_budget": 70
+      },
+      {
+        "copies": 8,
+        "extra_columns": 0,
+        "alpha": 8,
+        "beta": 8,
+        "mixed": 32,
+        "tp_tips": 48,
+        "slot_matching": 40,
+        "tip_hall_defect": 8,
+        "ordinary_payment": 8,
+        "minimum_link_cost": 8,
+        "ordinary_deficit": 0,
+        "intervals": 312,
+        "balance": 392,
+        "boundary_budget": 80
+      },
+      {
+        "copies": 8,
+        "extra_columns": 2,
+        "alpha": 8,
+        "beta": 8,
+        "mixed": 32,
+        "tp_tips": 48,
+        "slot_matching": 40,
+        "tip_hall_defect": 8,
+        "ordinary_payment": 8,
+        "minimum_link_cost": 8,
+        "ordinary_deficit": 0,
+        "intervals": 392,
+        "balance": 472,
+        "boundary_budget": 80
+      },
+      {
+        "copies": 8,
+        "extra_columns": 10,
+        "alpha": 8,
+        "beta": 8,
+        "mixed": 32,
+        "tp_tips": 48,
+        "slot_matching": 40,
+        "tip_hall_defect": 8,
+        "ordinary_payment": 8,
+        "minimum_link_cost": 8,
+        "ordinary_deficit": 0,
+        "intervals": 712,
+        "balance": 792,
+        "boundary_budget": 80
+      },
+      {
+        "copies": 9,
+        "extra_columns": 0,
+        "alpha": 9,
+        "beta": 9,
+        "mixed": 36,
+        "tp_tips": 54,
+        "slot_matching": 45,
+        "tip_hall_defect": 9,
+        "ordinary_payment": 9,
+        "minimum_link_cost": 9,
+        "ordinary_deficit": 0,
+        "intervals": 351,
+        "balance": 441,
+        "boundary_budget": 90
+      },
+      {
+        "copies": 9,
+        "extra_columns": 2,
+        "alpha": 9,
+        "beta": 9,
+        "mixed": 36,
+        "tp_tips": 54,
+        "slot_matching": 45,
+        "tip_hall_defect": 9,
+        "ordinary_payment": 9,
+        "minimum_link_cost": 9,
+        "ordinary_deficit": 0,
+        "intervals": 441,
+        "balance": 531,
+        "boundary_budget": 90
+      },
+      {
+        "copies": 9,
+        "extra_columns": 10,
+        "alpha": 9,
+        "beta": 9,
+        "mixed": 36,
+        "tp_tips": 54,
+        "slot_matching": 45,
+        "tip_hall_defect": 9,
+        "ordinary_payment": 9,
+        "minimum_link_cost": 9,
+        "ordinary_deficit": 0,
+        "intervals": 801,
+        "balance": 891,
+        "boundary_budget": 90
+      },
+      {
+        "copies": 10,
+        "extra_columns": 0,
+        "alpha": 10,
+        "beta": 10,
+        "mixed": 40,
+        "tp_tips": 60,
+        "slot_matching": 50,
+        "tip_hall_defect": 10,
+        "ordinary_payment": 10,
+        "minimum_link_cost": 10,
+        "ordinary_deficit": 0,
+        "intervals": 390,
+        "balance": 490,
+        "boundary_budget": 100
+      },
+      {
+        "copies": 10,
+        "extra_columns": 2,
+        "alpha": 10,
+        "beta": 10,
+        "mixed": 40,
+        "tp_tips": 60,
+        "slot_matching": 50,
+        "tip_hall_defect": 10,
+        "ordinary_payment": 10,
+        "minimum_link_cost": 10,
+        "ordinary_deficit": 0,
+        "intervals": 490,
+        "balance": 590,
+        "boundary_budget": 100
+      },
+      {
+        "copies": 10,
+        "extra_columns": 10,
+        "alpha": 10,
+        "beta": 10,
+        "mixed": 40,
+        "tp_tips": 60,
+        "slot_matching": 50,
+        "tip_hall_defect": 10,
+        "ordinary_payment": 10,
+        "minimum_link_cost": 10,
+        "ordinary_deficit": 0,
+        "intervals": 890,
+        "balance": 990,
+        "boundary_budget": 100
+      },
+      {
+        "copies": 11,
+        "extra_columns": 0,
+        "alpha": 11,
+        "beta": 11,
+        "mixed": 44,
+        "tp_tips": 66,
+        "slot_matching": 55,
+        "tip_hall_defect": 11,
+        "ordinary_payment": 11,
+        "minimum_link_cost": 11,
+        "ordinary_deficit": 0,
+        "intervals": 429,
+        "balance": 539,
+        "boundary_budget": 110
+      },
+      {
+        "copies": 11,
+        "extra_columns": 2,
+        "alpha": 11,
+        "beta": 11,
+        "mixed": 44,
+        "tp_tips": 66,
+        "slot_matching": 55,
+        "tip_hall_defect": 11,
+        "ordinary_payment": 11,
+        "minimum_link_cost": 11,
+        "ordinary_deficit": 0,
+        "intervals": 539,
+        "balance": 649,
+        "boundary_budget": 110
+      },
+      {
+        "copies": 11,
+        "extra_columns": 10,
+        "alpha": 11,
+        "beta": 11,
+        "mixed": 44,
+        "tp_tips": 66,
+        "slot_matching": 55,
+        "tip_hall_defect": 11,
+        "ordinary_payment": 11,
+        "minimum_link_cost": 11,
+        "ordinary_deficit": 0,
+        "intervals": 979,
+        "balance": 1089,
+        "boundary_budget": 110
+      },
+      {
+        "copies": 12,
+        "extra_columns": 0,
+        "alpha": 12,
+        "beta": 12,
+        "mixed": 48,
+        "tp_tips": 72,
+        "slot_matching": 60,
+        "tip_hall_defect": 12,
+        "ordinary_payment": 12,
+        "minimum_link_cost": 12,
+        "ordinary_deficit": 0,
+        "intervals": 468,
+        "balance": 588,
+        "boundary_budget": 120
+      },
+      {
+        "copies": 12,
+        "extra_columns": 2,
+        "alpha": 12,
+        "beta": 12,
+        "mixed": 48,
+        "tp_tips": 72,
+        "slot_matching": 60,
+        "tip_hall_defect": 12,
+        "ordinary_payment": 12,
+        "minimum_link_cost": 12,
+        "ordinary_deficit": 0,
+        "intervals": 588,
+        "balance": 708,
+        "boundary_budget": 120
+      },
+      {
+        "copies": 12,
+        "extra_columns": 10,
+        "alpha": 12,
+        "beta": 12,
+        "mixed": 48,
+        "tp_tips": 72,
+        "slot_matching": 60,
+        "tip_hall_defect": 12,
+        "ordinary_payment": 12,
+        "minimum_link_cost": 12,
+        "ordinary_deficit": 0,
+        "intervals": 1068,
+        "balance": 1188,
+        "boundary_budget": 120
+      },
+      {
+        "copies": 13,
+        "extra_columns": 0,
+        "alpha": 13,
+        "beta": 13,
+        "mixed": 52,
+        "tp_tips": 78,
+        "slot_matching": 65,
+        "tip_hall_defect": 13,
+        "ordinary_payment": 13,
+        "minimum_link_cost": 13,
+        "ordinary_deficit": 0,
+        "intervals": 507,
+        "balance": 637,
+        "boundary_budget": 130
+      },
+      {
+        "copies": 13,
+        "extra_columns": 2,
+        "alpha": 13,
+        "beta": 13,
+        "mixed": 52,
+        "tp_tips": 78,
+        "slot_matching": 65,
+        "tip_hall_defect": 13,
+        "ordinary_payment": 13,
+        "minimum_link_cost": 13,
+        "ordinary_deficit": 0,
+        "intervals": 637,
+        "balance": 767,
+        "boundary_budget": 130
+      },
+      {
+        "copies": 13,
+        "extra_columns": 10,
+        "alpha": 13,
+        "beta": 13,
+        "mixed": 52,
+        "tp_tips": 78,
+        "slot_matching": 65,
+        "tip_hall_defect": 13,
+        "ordinary_payment": 13,
+        "minimum_link_cost": 13,
+        "ordinary_deficit": 0,
+        "intervals": 1157,
+        "balance": 1287,
+        "boundary_budget": 130
+      },
+      {
+        "copies": 14,
+        "extra_columns": 0,
+        "alpha": 14,
+        "beta": 14,
+        "mixed": 56,
+        "tp_tips": 84,
+        "slot_matching": 70,
+        "tip_hall_defect": 14,
+        "ordinary_payment": 14,
+        "minimum_link_cost": 14,
+        "ordinary_deficit": 0,
+        "intervals": 546,
+        "balance": 686,
+        "boundary_budget": 140
+      },
+      {
+        "copies": 14,
+        "extra_columns": 2,
+        "alpha": 14,
+        "beta": 14,
+        "mixed": 56,
+        "tp_tips": 84,
+        "slot_matching": 70,
+        "tip_hall_defect": 14,
+        "ordinary_payment": 14,
+        "minimum_link_cost": 14,
+        "ordinary_deficit": 0,
+        "intervals": 686,
+        "balance": 826,
+        "boundary_budget": 140
+      },
+      {
+        "copies": 14,
+        "extra_columns": 10,
+        "alpha": 14,
+        "beta": 14,
+        "mixed": 56,
+        "tp_tips": 84,
+        "slot_matching": 70,
+        "tip_hall_defect": 14,
+        "ordinary_payment": 14,
+        "minimum_link_cost": 14,
+        "ordinary_deficit": 0,
+        "intervals": 1246,
+        "balance": 1386,
+        "boundary_budget": 140
+      },
+      {
+        "copies": 15,
+        "extra_columns": 0,
+        "alpha": 15,
+        "beta": 15,
+        "mixed": 60,
+        "tp_tips": 90,
+        "slot_matching": 75,
+        "tip_hall_defect": 15,
+        "ordinary_payment": 15,
+        "minimum_link_cost": 15,
+        "ordinary_deficit": 0,
+        "intervals": 585,
+        "balance": 735,
+        "boundary_budget": 150
+      },
+      {
+        "copies": 15,
+        "extra_columns": 2,
+        "alpha": 15,
+        "beta": 15,
+        "mixed": 60,
+        "tp_tips": 90,
+        "slot_matching": 75,
+        "tip_hall_defect": 15,
+        "ordinary_payment": 15,
+        "minimum_link_cost": 15,
+        "ordinary_deficit": 0,
+        "intervals": 735,
+        "balance": 885,
+        "boundary_budget": 150
+      },
+      {
+        "copies": 15,
+        "extra_columns": 10,
+        "alpha": 15,
+        "beta": 15,
+        "mixed": 60,
+        "tp_tips": 90,
+        "slot_matching": 75,
+        "tip_hall_defect": 15,
+        "ordinary_payment": 15,
+        "minimum_link_cost": 15,
+        "ordinary_deficit": 0,
+        "intervals": 1335,
+        "balance": 1485,
+        "boundary_budget": 150
+      },
+      {
+        "copies": 16,
+        "extra_columns": 0,
+        "alpha": 16,
+        "beta": 16,
+        "mixed": 64,
+        "tp_tips": 96,
+        "slot_matching": 80,
+        "tip_hall_defect": 16,
+        "ordinary_payment": 16,
+        "minimum_link_cost": 16,
+        "ordinary_deficit": 0,
+        "intervals": 624,
+        "balance": 784,
+        "boundary_budget": 160
+      },
+      {
+        "copies": 16,
+        "extra_columns": 2,
+        "alpha": 16,
+        "beta": 16,
+        "mixed": 64,
+        "tp_tips": 96,
+        "slot_matching": 80,
+        "tip_hall_defect": 16,
+        "ordinary_payment": 16,
+        "minimum_link_cost": 16,
+        "ordinary_deficit": 0,
+        "intervals": 784,
+        "balance": 944,
+        "boundary_budget": 160
+      },
+      {
+        "copies": 16,
+        "extra_columns": 10,
+        "alpha": 16,
+        "beta": 16,
+        "mixed": 64,
+        "tp_tips": 96,
+        "slot_matching": 80,
+        "tip_hall_defect": 16,
+        "ordinary_payment": 16,
+        "minimum_link_cost": 16,
+        "ordinary_deficit": 0,
+        "intervals": 1424,
+        "balance": 1584,
+        "boundary_budget": 160
+      }
+    ]
+  },
+  "scope": "Explicit fully frozen physical counterexample to necessity of two-slot TP Hall, alpha-reachable and PP-sealed against blank right padding. General sufficiency and all-copy proof are written separately. Finite checks do not prove universal geometric compensation or improve 5/6."
+}
