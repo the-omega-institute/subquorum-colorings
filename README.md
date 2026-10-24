@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [full-gap obstruction and whole-support compensation](docs/BOUNDARY_SEALED_GAP_OBSTRUCTION.md):
+complete freezing and a unique actual matching do not force compensation
+even in the full endpoint-free-gap terminal network. An all-parameter family
+has no reachable unmarked interval and positive margin on the ENTIRE board;
+separated copies give arbitrarily large unpaid count with an empty two-phase
+unit cut. The target grid inequality is not refuted. A general whole-support
+gap adapter admits internal PP witnesses, retains at most two virtual-alpha
+owners per original interval and gives exact standard tree-defect allocation.
+It repairs the whole obstructed family without a new link. Eleven scoped
+Lean audits pass locally; the physical all-parameter and allocation proofs
+are written. A separate real frozen control shows interval-only defect zero
+is not automatic either; whole beta resources remain necessary.
+
 New [extreme-interval compression theorem](docs/BT_CORRIDOR_PORTS_AND_BOUNDED_ACCESS_OBSTRUCTION.md):
 every full endpoint-free-gap interval payment can be moved to one available
 extreme per candidate terminal while preserving the paid virtual alphas,

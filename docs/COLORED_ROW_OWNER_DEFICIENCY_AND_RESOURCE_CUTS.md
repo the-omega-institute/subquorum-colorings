@@ -304,6 +304,13 @@ and reassigning original source payments; the lifted original routes still
 preserve their respective phases. The phase-disjoint conclusion must NOT
 be extended to those artificial exchange gates.
 
+Subsequent [full-gap obstruction](BOUNDARY_SEALED_GAP_OBSTRUCTION.md) shows
+that complete freezing does NOT force the score in (8) to be zero, even
+with full endpoint-free-gap access on the entire board. Both gate sets and
+the shared resource set can be empty while the blocked-source intersection
+has arbitrarily large size. Formula (8) remains exact; automatic geometric
+completeness of that terminal-access interface is the implication that fails.
+
 Two small original-terminal controls show why R must be charged once.
 Give every terminal j color j mod2. For two alphas (0,1),(2,3) and one beta
 (4,5), allow links (0,5) of phase0 and (3,4) of phase1. The sources differ
