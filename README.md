@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [one exact whole-support fork flow and resource cuts](docs/WHOLE_SUPPORT_FORK_FLOW_AND_RESOURCE_CUTS.md):
+separate capacity-one gates for the two physical beta BP entries, one private
+whole-beta sink and beta-body support arcs give a single polynomial min-cost
+maximum-flow formulation of the full stem/fork optimum. Free private-beta
+normalization proves the reverse lift; compatible-fork enumeration is no
+longer needed. The exact deficit is max_Z(|U_Z|-|Z|), now including BP entry
+gates and whole-beta support closure. Checks pass 11,308 independent packing
+comparisons, 96,843 terminal matchings, 24 frozen stacks and five scoped Lean
+audits. All four perfect matchings on the base fixed endpoint footprint also
+have no strict ordinary/full gap. Mandatory interval-identity retention is
+outside this unrestricted optimum theorem; the general grid bound is open.
+
 New [guarded pockets and monotone fork replacement](docs/GUARDED_POCKETS_AND_MONOTONE_FORK_REPLACEMENT.md):
 a general two-column pocket in an occupied adjacent-band pattern either
 retains private interval credit or becomes one forced beta accessible only

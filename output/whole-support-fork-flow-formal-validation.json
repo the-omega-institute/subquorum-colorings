@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T21:45:22.216405+00:00",
+  "execution": "Explicitly selected local executable; one standalone module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "41%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/WholeSupportForkFlow.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/WholeSupportForkFlow.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.WholeSupportForkFlow.two_BP_entries_bound' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkFlow.replace_by_unused_resource_injective' depends on axioms: [propext]",
+        "'SubQuorum.WholeSupportForkFlow.replacement_creates_no_other_resource' depends on axioms: [propext]",
+        "'SubQuorum.WholeSupportForkFlow.positive_beta_normalization' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkFlow.beta_interval_identities_distinct' does not depend on any axioms"
+      ]
+    }
+  ],
+  "scope": "Arbitrary finite sets of beta-entering paths inject into two physical BP tips; private-beta resource reassignment preserves allocation injectivity; no other resources introduced; positive beta occupancy normalizes to one whole beta plus at most one interval without increasing interval usage; typed beta/interval distinction.",
+  "not_formalized": [
+    "Integral flow decomposition and full stem/fork equivalence",
+    "Min-cost optimality, separator max formula and physical support adapter",
+    "Finite matching-footprint enumeration"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

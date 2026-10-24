@@ -1,5 +1,12 @@
 # Exact whole-support normal form: stems, beta forks, and residual flow
 
+**Optimization refinement:** [the BP-entry flow theorem](WHOLE_SUPPORT_FORK_FLOW_AND_RESOURCE_CUTS.md)
+computes the full value and minimum link cost by one polynomial-size flow,
+using separate physical BP entry gates and private-beta output normalization.
+The exact fork-enumeration formula below remains an independent description;
+its exponential outer search is no longer necessary. This refinement does
+not impose prescribed used-interval identities.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 Whole-support access differs from free-tip access in a second way beyond
