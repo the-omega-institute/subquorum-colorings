@@ -55,8 +55,8 @@ contrary to the hypothesis. Their resources are distinct by the matching,
 and each source is used once. The resulting paths are therefore a legal
 unit-capacity route packing. QED.
 
-The hypothesis is stronger than necessary. It is useful because it is local,
-checkable, and explains exactly what the run-slot abstraction must establish
+The hypothesis is stronger than necessary. Its finite reachability sets are
+checkable, and it explains exactly what the run-slot abstraction must establish
 before it can replace a mixed-owner flow calculation. A multiplicity-m version
 would require that every gate be used by at most m supplied certificates; the
 low-congestion theorem then supplies the correct replacement for strict source
@@ -89,5 +89,11 @@ Run:
 
 The recorded run passes. No universal grid route-cover theorem or 5/6
 improvement follows from this note.
+
+Update, 24 October: [a completely frozen physical witness](FROZEN_SHARED_MIXED_GATE.md)
+shows that freezing alone does not imply source separation. Its restricted
+relay rule has projection value 2 and flow 1; its full physical network has
+flow 2 through other exits. Thus the geometric question must retain residual
+source selection and all available bypasses.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
