@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "command": "lean SubQuorum/FrozenBetaForkEscape.lean",
+  "exit_code": 0,
+  "machine": "local; authorized in this session",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_pressure_free_percent": 46,
+    "active_lean_lake_by_comm_basename": 0,
+    "concurrency": 1
+  },
+  "axioms": {
+    "outRow_involutive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "outRow_ne": [
+      "propext",
+      "Quot.sound"
+    ],
+    "outRow_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "strict_escape_dependency": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "vertical_outer_mate_impossible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "escape_injective": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Six scoped declarations: across-band row involution, inequality and injection; strict two-of-three rank deduction; vertical outer-mate contradiction; actual matching-coordinate escape-site injection. Geometric adapter, pure-cycle owner bound, short-alpha consequence and all-q physical construction are written proofs with finite controls. No universal compensation theorem, frozen live-gate realization or 5/6 improvement."
+}

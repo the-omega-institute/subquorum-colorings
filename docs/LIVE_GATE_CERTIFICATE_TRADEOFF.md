@@ -277,3 +277,12 @@ read Mail, change a draft or send a message. The next geometric question is
 whether complete freezing excludes this all-live serial bottleneck or forces
 an extra distinct interval/beta bypass. The abstract liveness and terminal
 degree tests alone are now proved insufficient.
+
+## Geometric continuation, 25 October
+
+[Frozen beta-fork escape geometry](FROZEN_BETA_FORK_ESCAPE.md) now proves
+necessary diagonal-P and outward-matching constraints at a physical fork,
+with injective escape sites. An actual frozen example puts this P in a pure
+cycle, and a PP plug removes its adjacent interval without breaking freezing.
+Thus local forced occupancy alone cannot certify extra payment. The abstract
+all-live gate still has neither a frozen realization nor a geometric exclusion.

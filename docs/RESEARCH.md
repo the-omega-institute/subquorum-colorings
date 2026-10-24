@@ -7,6 +7,15 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [frozen beta-fork escape geometry](FROZEN_BETA_FORK_ESCAPE.md)
+proves a forced diagonal P, strict rank dependencies, an outward actual mate,
+and an injection of escape sites. A pure two-point escape cycle can serve at
+most one distinct alpha owner. An explicit fully frozen 12x14 construction
+puts the escape in such a cycle; a PP plug seals its adjacent interval while
+preserving freezing. Thus a forced P is not automatically a new local payment.
+All-q copy/padding proofs, 712 frozen scans/484 motifs and six scoped Lean
+declarations pass. Global compensation and 5/6 remain open.
+
 25 October: [all-live shared-gate certificate tradeoff](LIVE_GATE_CERTIFICATE_TRADEOFF.md)
 settles the abstract maximum-certificate question even after safe pruning.
 Any two full binary merge/split trees sharing one mixed root give q alpha
