@@ -1,5 +1,11 @@
 # Joint whole-support interval and whole-beta compensation
 
+The later [whole-support stem/fork normal form](WHOLE_SUPPORT_FORK_NORMAL_FORM.md)
+allows general mixed continuation and beta-body interval witnesses. Two arms
+can consume one beta and use a distinct interval in its support; an exact
+fork-packing/residual-flow formula handles this larger interface. This note's
+direct one-alpha/one-beta restriction and its exact formula remain as stated.
+
 ## Status and purpose
 
 This note proves an exact direct-compensation theorem after an arbitrary fixed

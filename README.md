@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact whole-support stem/fork normal form](docs/WHOLE_SUPPORT_FORK_NORMAL_FORM.md):
+whole-support interval witnesses can belong to beta bodies. Two different
+alpha arms entering its different BP tips then consume one whole beta plus
+one distinct original interval, paying two demands. Every cancellation and
+support allocation normalizes with a subset of its links into ordinary stems
+and disjoint beta forks. Reserving forks gives an exact residual-flow formula
+for maximum compensation and minimum link cost; without feasible forks,
+including every beta-free system, ordinary owner-support flow is exact.
+The possible value gap is at most the beta-to-support-interval matching number
+and half the alpha count, sharply in abstract systems. Checks pass10,906
+abstract/2,442 frozen physical systems and7 scoped Lean audits. Physical
+controls contain zero forks; abstract gains are not claimed frozen-grid gains.
+General grid compensation and the5/6 bound remain open.
+
 New [actual whole-support donor collision and frozen PP seals](docs/WHOLE_SUPPORT_DONOR_COLLISION_AND_FROZEN_PP_SEALS.md):
 an all-even-height frozen family has two genuinely deficient whole-support
 components. Distinct legal mixed continuations each pay one separately, yet

@@ -1,0 +1,656 @@
+{
+  "status": "PASS",
+  "totals": {
+    "fork_pack_flow_comparisons": 10906,
+    "fork_packs_checked": 13584,
+    "systems": 10906,
+    "independent_terminal_matchings": 105625,
+    "strict_fork_cardinality_gains": 218,
+    "strict_fork_cost_gains": 1,
+    "optima_using_forks": 219,
+    "subset_normalization_checks": 332,
+    "abstract_sharp_stack_controls": 6,
+    "physical_independent_terminal_matchings": 99855,
+    "physical_exhaustive_optimum_comparisons": 2402,
+    "physical_systems": 2442,
+    "physical_systems_with_feasible_forks": 0,
+    "physical_fork_value_gains": 0
+  },
+  "physical": [
+    {
+      "family": "bent0",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 24
+    },
+    {
+      "family": "bent0",
+      "fixed_links": 0,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 8
+    },
+    {
+      "family": "bent1",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "bent1",
+      "fixed_links": 0,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "graft",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "graft",
+      "fixed_links": 0,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "occupied",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 8
+    },
+    {
+      "family": "occupied",
+      "fixed_links": 0,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 24
+    },
+    {
+      "family": "rotor",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 32
+    },
+    {
+      "family": "shared",
+      "fixed_links": 0,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "shared",
+      "fixed_links": 1,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "shared",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 5
+    },
+    {
+      "family": "shared",
+      "fixed_links": 2,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "shared",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 8
+    },
+    {
+      "family": "shared",
+      "fixed_links": 3,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 5
+    },
+    {
+      "family": "shared",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "shared",
+      "fixed_links": 4,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 2
+    },
+    {
+      "family": "star10",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "star10",
+      "fixed_links": 0,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "star6",
+      "fixed_links": 0,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "star6",
+      "fixed_links": 0,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 16
+    },
+    {
+      "family": "tree",
+      "fixed_links": 0,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "tree",
+      "fixed_links": 1,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "tree",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 2
+    },
+    {
+      "family": "tree",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 11
+    },
+    {
+      "family": "tree",
+      "fixed_links": 2,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 13
+    },
+    {
+      "family": "tree",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 20
+    },
+    {
+      "family": "tree",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 49
+    },
+    {
+      "family": "tree",
+      "fixed_links": 3,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 69
+    },
+    {
+      "family": "tree",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 78
+    },
+    {
+      "family": "tree",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 115
+    },
+    {
+      "family": "tree",
+      "fixed_links": 4,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 193
+    },
+    {
+      "family": "tree",
+      "fixed_links": 4,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 151
+    },
+    {
+      "family": "tree",
+      "fixed_links": 4,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 154
+    },
+    {
+      "family": "tree",
+      "fixed_links": 5,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 305
+    },
+    {
+      "family": "tree",
+      "fixed_links": 5,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 151
+    },
+    {
+      "family": "tree",
+      "fixed_links": 5,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 118
+    },
+    {
+      "family": "tree",
+      "fixed_links": 6,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 269
+    },
+    {
+      "family": "tree",
+      "fixed_links": 6,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 72
+    },
+    {
+      "family": "tree",
+      "fixed_links": 6,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 48
+    },
+    {
+      "family": "tree",
+      "fixed_links": 7,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 120
+    },
+    {
+      "family": "tree",
+      "fixed_links": 7,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 12
+    },
+    {
+      "family": "tree",
+      "fixed_links": 7,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 8
+    },
+    {
+      "family": "tree",
+      "fixed_links": 8,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 20
+    },
+    {
+      "family": "unported",
+      "fixed_links": 0,
+      "value": 2,
+      "cost": 2,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "unported",
+      "fixed_links": 1,
+      "value": 1,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 2,
+      "feasible_forks": 0,
+      "count": 2
+    },
+    {
+      "family": "unported",
+      "fixed_links": 2,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 2,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 8
+    },
+    {
+      "family": "unported",
+      "fixed_links": 2,
+      "value": 1,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 14
+    },
+    {
+      "family": "unported",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 3
+    },
+    {
+      "family": "unported",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 8
+    },
+    {
+      "family": "unported",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 2,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "unported",
+      "fixed_links": 3,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 20
+    },
+    {
+      "family": "unported",
+      "fixed_links": 3,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 26
+    },
+    {
+      "family": "unported",
+      "fixed_links": 3,
+      "value": 1,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 14
+    },
+    {
+      "family": "unported",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 4,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 32
+    },
+    {
+      "family": "unported",
+      "fixed_links": 4,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 22
+    },
+    {
+      "family": "unported",
+      "fixed_links": 4,
+      "value": 1,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 5,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 18
+    },
+    {
+      "family": "unported",
+      "fixed_links": 5,
+      "value": 1,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 4
+    },
+    {
+      "family": "unported",
+      "fixed_links": 6,
+      "value": 0,
+      "cost": 0,
+      "feasible_forks": 0,
+      "count": 3
+    },
+    {
+      "family": "whole_support_collision12",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 2,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "whole_support_collision12",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 2
+    },
+    {
+      "family": "whole_support_collision12",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "whole_support_collision8",
+      "fixed_links": 1,
+      "value": 2,
+      "cost": 2,
+      "feasible_forks": 0,
+      "count": 1
+    },
+    {
+      "family": "whole_support_collision8",
+      "fixed_links": 2,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 2
+    },
+    {
+      "family": "whole_support_collision8",
+      "fixed_links": 3,
+      "value": 2,
+      "cost": 1,
+      "feasible_forks": 0,
+      "count": 1
+    }
+  ],
+  "minimal_abstract_fork": {
+    "value": 2,
+    "cost": 2,
+    "certificates": [
+      {
+        "kind": "fork",
+        "owners": [
+          0,
+          1,
+          2
+        ],
+        "links": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "interval": 0,
+        "value": 2,
+        "beta": 2,
+        "entries": [
+          4,
+          5
+        ],
+        "witness": 2
+      }
+    ],
+    "primitive_count": 3
+  },
+  "minimum_cost_fork_control": {
+    "value": 2,
+    "cost": 2,
+    "certificates": [
+      {
+        "kind": "fork",
+        "owners": [
+          0,
+          1,
+          2
+        ],
+        "links": [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "interval": 0,
+        "value": 2,
+        "beta": 2,
+        "entries": [
+          4,
+          5
+        ],
+        "witness": 2
+      }
+    ],
+    "primitive_count": 4
+  },
+  "scope": "Exact general whole-owner-support stem/fork normalization and minimum links; independent terminal-matching/allocation and fork-pack/residual-flow comparisons. Physical all-C0 lifts and frontier controls contain zero feasible forks; strict fork gains are abstract, not claimed frozen-grid realizations. General normalization and physical adapter proofs are written."
+}

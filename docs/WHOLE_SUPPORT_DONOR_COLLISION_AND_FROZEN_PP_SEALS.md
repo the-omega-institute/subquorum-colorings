@@ -1,5 +1,11 @@
 # Whole-support donor collision with frozen PP seals
 
+Subsequent [whole-support normal form](WHOLE_SUPPORT_FORK_NORMAL_FORM.md):
+because this family has no beta owners, its full-support maximum compensation
+and minimum additional link cost are exactly an ordinary owner-support flow.
+The larger theorem separately accounts for beta-body interval witnesses using
+explicit two-arm forks; none are present in this family.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 Two deficient components can each have a legal, separately successful mixed

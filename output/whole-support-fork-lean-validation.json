@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T20:15:17.476694+00:00",
+  "execution": "Explicitly selected local executable; one standalone module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "47%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/WholeSupportForkNormalForm.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/WholeSupportForkNormalForm.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.WholeSupportForkNormalForm.alpha_root_bounds' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkNormalForm.residual_adjacent' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkNormalForm.alpha_root_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkNormalForm.alpha_root_coverage' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkNormalForm.fork_root_excludes_beta' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkNormalForm.fork_root_coverage' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.WholeSupportForkNormalForm.normal_form_ledger' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Arbitrary-length odd alternating-path residual matching after an alpha root, or a beta fork with both adjacent alpha roots; bounds, adjacency, injectivity, coverage and beta/interval/alpha resource ledger.",
+  "not_formalized": [
+    "Alternating-component normalization and primitive packing equivalence",
+    "Owner-support physical adapter and route existence",
+    "Whole-network maximum/minimum-cost optimization"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

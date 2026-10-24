@@ -1,5 +1,10 @@
 # Exact compensation by vertex-disjoint directed paths
 
+The later [whole-support stem/fork normal form](WHOLE_SUPPORT_FORK_NORMAL_FORM.md)
+extends to owner-body interval witnesses, including beta bodies. Ordinary
+terminal-access flow remains exact under this note's own hypotheses; substituting
+whole-beta support access requires the explicit two-arm fork capacity there.
+
 23 October 2026. Authors: Haobo Ma and Wenlin Zhang.
 
 We prove an exact directed-path formulation of terminal cancellation followed
