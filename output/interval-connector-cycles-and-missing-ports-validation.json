@@ -1,0 +1,755 @@
+{
+  "status": "PASS",
+  "controls": {
+    "independent_forced_matching_edges": 36760,
+    "unique_frozen_pairs": 383,
+    "models": 6748,
+    "matching_edges_owned": 54773,
+    "pp_columns": 23472,
+    "paths_TP_TP": 4026,
+    "paths_BP_TP": 23814,
+    "pp_cycles": 12797,
+    "open_packets": 0,
+    "connector_models": 6748,
+    "actual_connector_cycles": 1004,
+    "actual_missing_port_paths": 1203,
+    "degree_four_alpha_terminals": 2400,
+    "boundary_collision_paths": 288,
+    "omitted_attachable_paths": 419,
+    "family_packets": 383,
+    "parameter_triples": 240,
+    "symmetry_images": 24,
+    "missing_terminals_with_adjacent_bp": 2398,
+    "unbounded_multiplicity_controls": 80,
+    "mixed_inventory_controls": 63,
+    "alternative_port_controls": 4,
+    "short_matching_models": 6211,
+    "paths_BP_BP": 3461
+  },
+  "references": [
+    {
+      "kind": "cycle",
+      "shape": [
+        18,
+        20
+      ],
+      "selected": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          4,
+          13
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          9
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          11,
+          9
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "matching": [
+        [
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        [
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        [
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        [
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            12
+          ]
+        ],
+        [
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            12
+          ]
+        ],
+        [
+          [
+            5,
+            12
+          ],
+          [
+            5,
+            13
+          ]
+        ],
+        [
+          [
+            10,
+            12
+          ],
+          [
+            10,
+            13
+          ]
+        ],
+        [
+          [
+            10,
+            14
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        [
+          [
+            9,
+            13
+          ],
+          [
+            9,
+            14
+          ]
+        ],
+        [
+          [
+            5,
+            14
+          ],
+          [
+            5,
+            15
+          ]
+        ],
+        [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            9,
+            7
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        [
+          [
+            8,
+            6
+          ],
+          [
+            9,
+            6
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            4
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            9,
+            5
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            3
+          ]
+        ]
+      ],
+      "alpha": 2,
+      "beta": 0,
+      "gamma": 10,
+      "pp_cycles": 4,
+      "intervals": 136,
+      "connector_edges": 2,
+      "residual": 0,
+      "missing_port_paths": 0,
+      "h0": 116,
+      "h1": 18,
+      "h2": 0,
+      "cycles": 1,
+      "degree_four_alpha_terminals": 0,
+      "boundary": 18,
+      "surplus_twice": 268,
+      "margin_twice": 232,
+      "nontrivial_components": [
+        {
+          "kind": "cycle",
+          "vertices": [
+            42,
+            72
+          ],
+          "edges": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "collision",
+      "shape": [
+        18,
+        20
+      ],
+      "selected": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "matching": [
+        [
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        [
+          [
+            9,
+            5
+          ],
+          [
+            9,
+            6
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      ],
+      "alpha": 1,
+      "beta": 0,
+      "gamma": 5,
+      "pp_cycles": 2,
+      "intervals": 156,
+      "connector_edges": 1,
+      "residual": 0,
+      "missing_port_paths": 0,
+      "h0": 138,
+      "h1": 16,
+      "h2": 1,
+      "cycles": 0,
+      "degree_four_alpha_terminals": 0,
+      "boundary": 18,
+      "surplus_twice": 310,
+      "margin_twice": 274,
+      "nontrivial_components": [
+        {
+          "kind": "h2",
+          "vertices": [
+            40,
+            84
+          ],
+          "edges": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "missing",
+      "shape": [
+        18,
+        20
+      ],
+      "selected": [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          7
+        ]
+      ],
+      "matching": [
+        [
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            9,
+            3
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            6,
+            4
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            4
+          ],
+          [
+            10,
+            5
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            10,
+            7
+          ]
+        ],
+        [
+          [
+            9,
+            5
+          ],
+          [
+            9,
+            6
+          ]
+        ],
+        [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      ],
+      "alpha": 1,
+      "beta": 0,
+      "gamma": 5,
+      "pp_cycles": 2,
+      "intervals": 158,
+      "connector_edges": 0,
+      "residual": 1,
+      "missing_port_paths": 1,
+      "h0": 140,
+      "h1": 18,
+      "h2": 0,
+      "cycles": 0,
+      "degree_four_alpha_terminals": 2,
+      "boundary": 18,
+      "surplus_twice": 314,
+      "margin_twice": 278,
+      "nontrivial_components": []
+    }
+  ],
+  "scope": "Uniform written partial-connector identity and all-parameter frozen cycle/missing-port constructions; finite discovery/controls are not general proofs. Grid-to-multigraph, degree and coordinate adapters remain written."
+}

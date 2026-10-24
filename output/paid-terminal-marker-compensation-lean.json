@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/MixedRelayEndpointAccounting.lean",
+  "preflight": {
+    "memory_free_percent": 53,
+    "real_lean_lake_processes_by_comm_basename": []
+  },
+  "execution": {
+    "session_id": 98382,
+    "final_chunk": "825e57",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "audited_theorem_count": 9,
+  "new_marker_theorems": [
+    "general_component_endpoint_identity",
+    "alpha_has_marker_or_negative_auxiliary_edge",
+    "coherent_alpha_has_actual_marker"
+  ],
+  "axioms": {
+    "new_marker_theorems": ["propext", "Quot.sound"],
+    "sorryAx": false,
+    "native_evaluation": false,
+    "new_axioms": false
+  },
+  "scope": "General signed endpoint-incidence identity and marker-or-negative-auxiliary-edge witness from a supplied sign-occurrence permutation. Does not formalize graph incidence construction, physical marker-to-terminal transport, distinct actual edge identities, payment access or grid geometry. The latter are written proofs with separate finite graph checks."
+}

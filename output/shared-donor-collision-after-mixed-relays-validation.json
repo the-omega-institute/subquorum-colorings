@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_forced_matching_edges": 1088,
+    "unique_frozen_pairs": 17,
+    "fully_frozen_unique_collision_families": 17,
+    "original_beta_resources": 0
+  },
+  "examples": [
+    {
+      "width": 8,
+      "packet_dimensions": [
+        10,
+        22
+      ],
+      "selected": 34,
+      "matching": 32,
+      "surplus": 44,
+      "boundary": 10,
+      "margin": 34,
+      "states": {
+        "initial": {
+          "assigned": 0,
+          "deficit": 2,
+          "resources": []
+        },
+        "left_only": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        },
+        "right_only": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        },
+        "both": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "width": 20,
+      "packet_dimensions": [
+        22,
+        22
+      ],
+      "selected": 34,
+      "matching": 56,
+      "surplus": 152,
+      "boundary": 22,
+      "margin": 130,
+      "states": {
+        "initial": {
+          "assigned": 0,
+          "deficit": 2,
+          "resources": []
+        },
+        "left_only": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        },
+        "right_only": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        },
+        "both": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        }
+      }
+    },
+    {
+      "width": 40,
+      "packet_dimensions": [
+        42,
+        22
+      ],
+      "selected": 34,
+      "matching": 96,
+      "surplus": 332,
+      "boundary": 42,
+      "margin": 290,
+      "states": {
+        "initial": {
+          "assigned": 0,
+          "deficit": 2,
+          "resources": []
+        },
+        "left_only": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        },
+        "right_only": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        },
+        "both": {
+          "assigned": 1,
+          "deficit": 1,
+          "resources": [
+            2
+          ]
+        }
+      }
+    }
+  ],
+  "scope": "Finite controls for the written all-even-width collision construction; failure concerns distinct-resource allocation, not the grid inequality."
+}

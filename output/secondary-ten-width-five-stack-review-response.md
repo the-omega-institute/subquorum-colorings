@@ -1,0 +1,136 @@
+# Independent width-five stack review
+
+ACCEPTUnder the explicit full-even- $U$ /standard-rotor model, the width-five classification, local support closure, and exact joint increment are correct:
+$$\boxed{\Phi(S\cup K)-\Phi(S)=\frac N2-k-4\ge4.}$$
+The selectable-group consequence also follows at its stated scope:
+$$\boxed{\Delta\Phi(\text{selected group})\ge \frac L2+9\ge12.}$$
+Two details deserve explicit treatment in the written proof:Reversing the long axis of  $U(H,4,4)$  preserves its matching and original supports, not merely its endpoint set. This validates the support phase used in the ledger for every actual orientation.The selectable stack is the actual stack in the particular complete extension under consideration. Its height partition may depend on that extension.Neither requires changing the hypotheses or the conclusions. Here is the general coordinate audit.1. The initial cavity and its old support inventory are correctIn the width-five case,
+$$D_3=u+v+18,\qquad
+c=s-v-11,\qquad
+b_3=P-D_3=s-v-6=c+5.$$
+Thus
+$$C=[T,Q]\times[c,c+4],
+\qquad
+T=a-12,\quad Q=a+z-15.$$
+Here  $T,c$  are odd,  $Q$  is even, and
+$$N=Q-T+1=z-2\ge22$$
+is even.The depth conditions imply
+$$u+L+20\le D_3=u+v+18,$$
+so
+$$\boxed{L\le v-2.}
+\tag{4}$$
+Original supports of  $B$  inside  $C$ The cavity’s rows correspond to canonical  $B$ -rows
+$$2,\ldots,z-1.$$
+At an odd canonical near-stem row,  $B$ 's original lateral support has canonical column  $2$ , hence physical column
+$$s_1+1=c.$$
+Because the row offset  $a-14$  is odd, these are exactly the physical even rows.The even canonical near-lateral supports instead lie at column  $c-2$ . The near axial support is below  $C$ , and the far-side and bar-end supports lie outside  $C$ . Therefore
+$$\boxed{
+\operatorname{Supp}(B)\cap C
+=
+\{(r,c):T\le r\le Q,\ r\text{ even}\}.
+}
+\tag{5}$$
+No other retained original has a support inside  $C$ The support bounds, rather than just endpoint bounds, are sufficient:Retained originalsExclusion of original supports from  $C$  $J_0,\ldots,J_3$ Every support has column at least its bar start, hence at least  $b_3=c+5$ . $A$ Its minimum support column is  $s-L$ . By (4),  $s-L\ge s-v+2=c+13$ .First-block  $H_3$  originalsTheir minimum support column is at least  $s-5$ , attained by an  $X_0$  support. But  $c+4=s-v-7<s-5$ .Root and  $R$ Their supports lie farther right. $P_1$  and later-block originalsTheir supports begin below  $Q$ . In particular,  $P_1$ 's earliest support row is  $Q+1$ .Inspection of the given charts also establishes the stated initial endpoint-emptiness of  $C$ .Thus the later support-closure argument does not omit a retained support hidden in the cavity.2. The corner consumer has exactly the two claimed formsThe corner
+$$q=(Q,c)$$
+is an original  $B$  support with occupied neighbors in the left and bottom walls. In any complete extension, it must therefore be an endpoint of an actual original.The full-wall trapping argument confines that original to  $C$ . This argument applies to an owner already present in an unspecified complete extension just as it applies to a newly identified owner: endpoint connectivity and occupied walls are the only ingredients.Because the consumer lies inside  $C$ , the endpoint  $q$  simultaneously attains its maximum row and minimum column. It is therefore a corner of its bounding rectangle.Rotor exclusionThe canonical rotor has no endpoint at any of the four corners of its bounding rectangle. Rotation, reflection, and translation preserve this property.Hence no permitted rotor orientation can contain  $q$  while remaining in  $C$ .Full- $U$  classificationAn untransposed full  $U(H,d,f)$  has  $H\ge6$  distinct columns, so it cannot fit.A transposed one has
+$$\max(d,f)+1$$
+distinct columns. Since  $d,f$  are even and at least  $4$ , fitting in five columns forces
+$$\boxed{d=f=4.}$$
+Its column projection then contains exactly five columns, so it fills the cavity’s entire column range  $[c,c+4]$ .Its long-axis projection has  $H$  rows. Since its lowest endpoint is at row  $Q$ , its top row is
+$$Y=Q-H+1.$$
+The only two endpoint forms are therefore:bar in columns  $c,c+1$ ;bar in columns  $c+3,c+4$ .Both have complete five-point stems on rows  $Y,Q$ .Matching and support normalizationThere is no additional immutable-support variant hidden by reversing the long axis.For even  $H$ , the canonical reflection
+$$j\longmapsto H+1-j$$
+preserves the full data of  $U(H,4,4)$ :row-zero matching pairs map to row-zero matching pairs;internal row-one matching pairs map to the same internal matching;the equal stems and their vertical matchings are exchanged;their axial and alternating lateral support sets are exchanged correctly.Thus the displayed left-bar chart represents the matching and original-support data of every actual left-bar consumer, including those originally presented with the opposite long-axis orientation.3. The right-bar notch excludes every right-bar consumerSuppose the bar lies at  $c+3,c+4$ . Its unoccupied notch is
+$$C'=[Y+1,Q-1]\times[c,c+2].$$
+All four outside walls are occupied:left:  $B$ 's stem at  $c-1$ ;right: the consumer’s bar at  $c+3$ ;top: its full stem at row  $Y$ ;bottom: its full stem at row  $Q$ .Since  $Q,H$  are even,  $Y$  is odd. Hence
+$$q'=(Y+1,c)$$
+is one of the original  $B$  supports in (5).The right-bar consumer does not occupy  $q'$ . The site already has the two occupied neighbors
+$$(Y+1,c-1)\in B,\qquad
+(Y,c)\in\text{consumer}.$$
+Completeness therefore requires another original containing  $q'$ .That owner is trapped in  $C'$ . But  $C'$  has width three, while every full  $U$  needs at least five columns in every permitted orientation and every rotor needs four.This is a contradiction.The argument does not depend on the order in which owners are discovered. If another owner already contained  $q'$  in the complete extension, it would still be trapped by these same occupied walls.Therefore
+$$\boxed{\text{every actual corner consumer has its bar on the left}.}
+\tag{6}$$
+4. Recursion exhausts all owners, not just the forced onesFor a left-bar consumer, the remaining part of its height band is
+$$C''=[Y+1,Q-1]\times[c+2,c+4].$$
+Its walls are:the consumer’s bar at  $c+1$ ;the retained  $J_3$  bar at  $c+5$ ;the consumer’s full top and bottom stems.Any other original with an endpoint in  $C''$  would be trapped in three columns. Thus no other original can have an endpoint in this notch.The consumer occupies the entire complement of the notch within its band. Consequently, no other original has any endpoint anywhere in that band.If  $Y>T$ , the remaining upper rectangle is
+$$[T,Y-1]\times[c,c+4].$$
+It has positive even height. Its lower-left corner
+$$(Y-1,c)$$
+is another even-row original  $B$  support, with occupied left and below neighbors. Its actual consumer is trapped in this upper rectangle and satisfies the same two-form classification and right-bar exclusion.Each step removes an even height  $H_j\ge6$ . A positive remainder of height  $2$  or  $4$  is impossible:the corner cannot be occupied by a rotor;an untransposed  $U$  is too wide;a transposed  $U$  has height at least six.Finite descent therefore ends at remainder zero:
+$$\boxed{
+H_j\ge6,\quad H_j\text{ even},\quad
+\sum_{j=1}^{k}H_j=N,\quad 6k\le N.
+}
+\tag{7}$$
+Every row belongs to one of these bands, and every band’s remaining notch admits no other owner. This proves the claimed exhaustion over the entire complete extension, including owners that were never individually named during the recursion.5. The local support closure is exactFor one left-bar band  $[Y,Q_j]$ , write its chart as
+$$(r,d)\longmapsto(Y-1+d,c+r).$$
+The complete original-support set of its  $U(H_j,4,4)$  is:Support groupLocationsAbove the top stem $(Y-1,c),\ (Y-1,c+2),\ (Y-1,c+4)$ Below the bottom stem $(Q_j+1,c),\ (Q_j+1,c+2),\ (Q_j+1,c+4)$ Right axial supports $(Y,c+5),\ (Q_j,c+5)$ Inner-notch supports $(Y+1,c+3),\ (Q_j-1,c+3)$ This is the full list of ten supports.The first six are consumed by a retained top or bottom wall, or by a neighboring band’s complete stem. The two right axial supports are consumed by the retained  $J_3$  bar.The remaining two are unoccupied:
+$$(Y+1,c+3),\qquad(Q_j-1,c+3).$$
+Their occupied neighbors are exactly: $(Y,c+3)$  for the first; $(Q_j,c+3)$  for the second.Their other neighbors lie in the empty inner notch. The bar and the retained right wall are each two columns away from these support sites. Since  $H_j\ge6$ , neither support also neighbors the opposite stem.Thus every band leaves exactly two unconsumed new supports, each with exactly one occupied neighbor.Every even-row original  $B$  support at column  $c$  is consumed, because the stack’s left bar column occupies every row of  $C$ . By Section 1, these are all the retained original supports inside the cavity.Exterior supportsIf a site outside  $C$  gains a neighbor from a new endpoint inside  $C$ , that site is an immediate outside neighbor of  $C$ . Every such site is already a retained wall endpoint. It therefore cannot be an unconsumed old support.There is also no hidden support obligation inside  $C$  from a fresh owner lying wholly outside it. Every canonical original support is adjacent to an endpoint of its own owner. A support of such an exterior owner lying inside  $C$  would require an owner endpoint either inside  $C$  or on an occupied retained wall. Both are excluded.The local closure claim is therefore sound, while leaving preexisting exterior obligations unresolved.6. Each band’s immutable charge is  $1-H_j$ Fix one band of height  $H$ .Its matching count is
+$$M=H+\frac{4+4}{2}-1=H+3.$$
+The physical phase matters:  $c$  is odd, so the two bar columns  $c,c+1$  lie in different physical tile columns,
+$$[c-1,c],\qquad[c+1,c+2].$$
+The bar starts on an odd row and ends on an even row, so it meets
+$$H/2+1$$
+physical tile rows. These two tile columns therefore account for  $H+2$  endpoint tiles. The top and bottom stems add one tile each in the third physical tile column  $[c+3,c+4]$ . Hence
+$$T_{\mathrm{tiles}}=H+4.$$
+Exactly six original supports lie in these endpoint tiles: the three immediately above the top stem and the three immediately below the bottom stem.The two right axial supports lie in the next physical tile column. The two inner-notch supports lie in tiles containing no endpoint of this original;  $H\ge6$  ensures those tiles are separated from both stems.Therefore
+$$\operatorname{charge}
+=(H+3)+6-2(H+4)
+=\boxed{1-H<0}.$$
+Summing over the stack gives
+$$\boxed{\text{increase in negative mass}=N-k,}
+\tag{8}$$
+with no increase in the positive-owner count.Consumption of any of these supports does not change this calculation: their original-support status remains immutable.7. The new full mixed-tile set is exactly the stated setOnly three physical tile columns can acquire full mixed tiles from the stack:Physical tile columnNumber of newly full mixed tiles $[c-1,c]$  $N/2+1$  $[c+1,c+2]$  $k+1$  $[c+3,c+4]$  $k+1$ Left-wall columnThe tile-row minima are
+$$T-1,T+1,\ldots,Q,$$
+giving  $N/2+1$  tiles.At the top, the tile has three  $B$  endpoints and one stack endpoint. At the bottom, it has two  $B$  endpoints, one  $P_1$  endpoint, and one stack endpoint. An internal interface may place two distinct stack owners in its right column, but it is still one physical tile.Inner columnsEach inner column has a full mixed tile:at the top wall;at the bottom wall;at each of the  $k-1$  band interfaces.Inside a band, away from those boundary rows, the first inner tile column contains only one bar column, and the second inner tile column contains no endpoint. Thus there are no other full tiles.The right wall is at the even column  $c+5$ . Its tile column is separate from  $[c+3,c+4]$ ; an endpoint at  $c+4$  cannot combine with that wall to create an additional same-tile receipt.Consequently,
+$$\boxed{\delta F=\frac N2+2k+3.}
+\tag{9}$$
+Nonreuse with the preceding prefix ledgerThere is a subtle point worth stating explicitly: the stack’s top tile row is
+$$T-1=a-13,$$
+which is also one of the preceding upper-ledger rows.This causes no reuse. The new top tile-column minima are
+$$c-1,\quad c+1,\quad c+3,$$
+all strictly left of
+$$b_3=c+5,$$
+where the earlier  $B/J_3$  full-tile receipts begin.More generally, every counted new tile contains a newly occupied site of the initially endpoint-empty cavity. It was therefore nonfull in  $S$ , regardless of whether its row had appeared in an earlier receipt calculation.8. The directed-event partition is exactEvery new foreign event either crosses a retained wall or an interface between adjacent stack originals. There were no old endpoints inside  $C$ , and a new endpoint can meet an old endpoint only at a wall.Left wall:  $3N/2$  eventsAt each row  $r\in[T,Q]$ , the new endpoint at  $(r,c)$  points to  $B$  at  $(r,c-1)$ . None of these targets is one of that band’s original supports. This gives  $N$  events.In reverse, the target  $(r,c)$  is an original  $B$  support exactly when  $r$  is even. Thus  $B\to K$  occurs only on the  $N/2$  odd rows:
+$$E_{\mathrm{left}}=\frac{3N}{2}.$$
+Top wall: seven eventsAll five  $B\to K$  directions occur. The targets are in  $B$ 's canonical row  $2$ , columns  $2,\ldots,6$ , and none is an original  $B$  support.The top stack original points upward only at  $c+1,c+3$ ; its other three targets are its original supports. Therefore
+$$E_{\mathrm{top}}=5+2=7.$$
+Bottom wall: seven eventsAll five  $P_1\to K$  directions occur. Their targets lie above  $P_1$ 's canonical bar row  $0$ , where it has no original support.The bottom stack original points downward only at  $c+1,c+3$ . Hence
+$$E_{\mathrm{bottom}}=7.$$
+Internal interfaces: four events eachAt an interface, the upper original points downward only at  $c+1,c+3$ , and the lower original points upward only at those same two columns. Each of the other targets remains an original support of its source owner, even though another band consumes it.Thus
+$$E_{\mathrm{interfaces}}=4(k-1).$$
+There are no right-wall events because adjacency from odd column  $c+4$  to even column  $c+5$  crosses a physical tile boundary.Combining the groups,
+$$\boxed{\delta E=\frac{3N}{2}+4k+10.}
+\tag{10}$$
+The left-wall edges are horizontal. The top, bottom, and interface edges are vertical and occupy distinct row interfaces. Thus corner tiles carrying more than one event group do not create duplicated directed edges. Old-old events remain unchanged.9. The joint increment and its minimum follow exactlyEquations (8)–(10) give
+$$\begin{aligned}
+\Phi(S\cup K)-\Phi(S)
+&=(N-k)
++2\left(\frac N2+2k+3\right)
+-\left(\frac{3N}{2}+4k+10\right)\\
+&=\boxed{\frac N2-k-4}.
+\end{aligned}
+\tag{11}$$
+This is an exact set calculation. It does not depend on an order of insertion for the bands.To verify the lower bound, put  $n=N/2$ . Then
+$$n\ge11,\qquad 3k\le n.$$
+If  $k\le3$ , then
+$$n-k\ge11-3=8.$$
+If  $k\ge4$ , then
+$$n-k\ge3k-k=2k\ge8.$$
+Therefore
+$$\boxed{\frac N2-k-4\ge4.}
+\tag{12}$$
+The stated geometric equality instances are valid: $N=22,k=3$ , with heights  $6,6,10$ ; $N=24,k=4$ , with all heights  $6$ .The support and endpoint arguments above apply to every such partition, so these examples require no finite-sample inference.Using the accepted complete-prefix bound in the width-five branch,
+$$\Delta\Phi(S)\ge\frac L2+7,$$
+equation (12) gives
+$$\boxed{\Delta\Phi(S\cup K)\ge\frac L2+11\ge14.}
+\tag{13}$$
+10. The selectable-group consequence has the correct quantifiers and scopeFix a complete extension containing the stated prefix  $S$ . Choose:the set of all actual originals in its width-five cavity, when that case occurs;no additional originals in the other cases.The stack’s height partition may depend on the complete extension. No single predetermined partition is required to work in every extension.The case distinction is exhaustive:CaseSelected groupGuaranteed gain $J_3$  meets  $P_1$ ,  $W=5$  $S$  plus its actual forced stack $\ge L/2+11$  $J_3$  meets  $P_1$ ,  $W\ge7$  $S$  $\ge L/2+9$ Only  $J_1$  meets  $P_1$  $S$  $\ge L/2+9$ Neither meets  $P_1$  $S$  $\ge L/2+14$ For the second row,
+$$W=u+v+23-D_3\ge7
+\quad\Longrightarrow\quad
+D_3\le u+v+16,$$
+so the accepted intermediate bound gives the displayed gain. Width is odd, and widths  $1,3$  have already been excluded for complete extensions.Thus, for each actual complete extension, the specified selection rule yields one group satisfying
+$$\boxed{\Delta\Phi\ge\frac L2+9\ge12.}$$
+The local rule is sound, and its stated limitation is also sound. It proves a classification and a joint compensation result for one selected group. It neither assigns a forced stack to multiple overlapping groups nor controls arbitrary added-owner marginals. A full-family allocation or global inequality still requires a separate argument.
+

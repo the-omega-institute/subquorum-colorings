@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "user-selected local Mac",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/BackfillDInteriorTwoCorner.lean",
+  "theorem_declarations": 16,
+  "theorems": [
+    "companion_supplies_four_second_corner_blockers",
+    "negative_bar_supplies_three_second_corner_blockers",
+    "second_corner_has_no_rotor_owner",
+    "second_corner_keeps_original_tile_parity",
+    "aa_terminal_support_frame_forces_two_westward_endpoints",
+    "aa_incoming_owner_contains_collision_but_not_west_extension",
+    "aa_collision_cannot_be_hidden_by_recurring_owner",
+    "enlarged_pool_exposes_one_unit_per_interior_event",
+    "d_two_corner_exact_single_pool_identity",
+    "d_two_corner_cap_activation_capacity",
+    "d_two_corner_all_route_exact_identity",
+    "d_two_corner_all_route_retained_compensation",
+    "d_two_corner_all_route_cap_activation_capacity",
+    "aa_new_negative_complement_and_activation_restriction",
+    "d_two_corner_shared_stops",
+    "d_two_corner_all_route_shared_stops"
+  ],
+  "source_check": {
+    "original_exec_session": 74253,
+    "exit_code": 0,
+    "memory_free_percent": 38,
+    "warnings": false
+  },
+  "axiom_audit": {
+    "original_exec_session": 12101,
+    "exit_code": 0,
+    "memory_free_percent": 47,
+    "declarations": 16,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "additional_axioms": false,
+    "sorry": false,
+    "native_decide": false
+  },
+  "dependencies": [
+    {
+      "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+      "original_exec_session": 44737,
+      "exit_code": 0,
+      "memory_free_percent": 40
+    },
+    {
+      "source": "formal/SubQuorum/BackfillBandOutputs.lean",
+      "original_exec_session": 42185,
+      "exit_code": 0,
+      "memory_free_percent": 40
+    }
+  ],
+  "preflights": "Before every Lean invocation: memory_pressure -Q and actual ps comm executable basenames lean/lake, including bare names; all builds sequential. Initial 10/12-declaration snapshots and 12-declaration audit passed before final16 source/audit. No additional concurrent Lean processes at final source/audit preflights.",
+  "scope": "Unbounded companion four-point and D-bar three-point endpoint stencils; exact16-role rotor exclusion; original tile parity; enlarged-complement identity; conditional single-pool, all-route and shared-stop arithmetic; all8 signed AA support frames, incoming original endpoint/missing-point adapter and recurring-owner collision contradiction. Actual original singleton/phase classification, full-source forced support, global occurrence injections and applicability of AA saturation remain written adapters. No end-to-end source-fusion theorem, complete critical U10 realization, unrestricted allocation or grid equality.",
+  "controls": "output/backfill-d-interior-two-corner-controls.json",
+  "control_repair": "The initial singleton sample translated the second corner to even/even and inadvertently reset its physical tile parity. Corrected by placing it at odd/even (1,-2) before computing phases. Final controls preserve the original fixed partition; theorem hypotheses were unchanged."
+}

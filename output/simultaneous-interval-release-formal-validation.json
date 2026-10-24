@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T22:09:39.056058+00:00",
+  "execution": "Explicitly selected local executable; one standalone module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "45%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/SimultaneousIntervalRelease.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/SimultaneousIntervalRelease.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.SimultaneousIntervalRelease.exact_release_capacity' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SimultaneousIntervalRelease.minimal_obstruction_cut_contains_every_deleted' depends on axioms: [propext,",
+        "'SubQuorum.SimultaneousIntervalRelease.minimal_obstruction_cut_capacity' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SimultaneousIntervalRelease.eleven_unit_release_counts' depends on axioms: [propext,",
+        "'SubQuorum.SimultaneousIntervalRelease.two_unit_cost_obstruction' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SimultaneousIntervalRelease.stack_table_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.SimultaneousIntervalRelease.stacked_release_capacity' depends on axioms: [propext,",
+        "'SubQuorum.SimultaneousIntervalRelease.c_pocket_extra_links' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Exact reserve count from flow conservation, an outside-terminal upper bound and a saturating extension; minimal-obstruction cut ledger; physical eleven-unit and capacity-two count bounds; arbitrary-copy payment and extra-link ledgers.",
+  "not_formalized": [
+    "Integral augmentation supplying a saturating extension",
+    "Max-flow/min-cut, canonical-cut lattice and full fork-flow adapter",
+    "Physical owner/support table, complete freezing and all-copy separation"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

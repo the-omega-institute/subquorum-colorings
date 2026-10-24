@@ -1,0 +1,85 @@
+ACCEPTNo must-fix mathematical issue found in the stated general theorem. The complete source adapters, four-role classification, transported phases, rotor exclusion, wrong-turn collisions, strict bounds, shallow obstruction, and simultaneous reservations are valid under the supplied complete-source hypotheses and established backfill/separation results.This verdict concerns the written proof in BACKFILL_CORNER_ROUTING_AND_SHALLOW_BARRIER.md. I have not certified compilation or checker execution. The partial geometric samples do not establish complete U10 realizability, and nothing in this audit closes the coefficient-one allocation or rectangular-grid equality.1. The complete original-source adapters are correctThe endpoint and support predicates in WidthSixBottomOwner.lean describe a canonical U with its bar on rows  $0,1$ , columns  $1,\ldots,w$ , and independently tall stems on columns  $1,w$ .Write  $(i,j)$  for canonical coordinates. With the terminal labels chosen as in the first note, the complete embeddings of the companion  $F$  and root owner  $G$  are
+$$\Phi_F(i,j)=(j-1,\ i-h-1),
+\qquad
+\Phi_G(i,j)=(g-i,\ j-u).$$
+The canonical first terminal  $(h,1)$  of  $F$  maps to  $(0,-1)$ . Its complete incident stem and two-column bar give
+$$\{(0,c):-h-1\le c\le-1\},$$
+and
+$$\{(r,-h-1),(r,-h):0\le r\le v-1\}.$$
+These are exactly the displayed  $F$  barriers.The canonical right terminal  $(g,u)$  of  $G$  maps to  $(0,0)$ . Its incident stem and bar give
+$$\{(r,0):0\le r\le g\},$$
+and
+$$\{(g-1,c),(g,c):1-u\le c\le0\}.$$
+These are exactly the displayed  $G$  barriers. Neither construction uses equality of the two stem heights.The canonical reflection is legitimateThe relabeling
+$$\rho_w(i,j)=(i,w+1-j)$$
+takes the canonical U with heights  $(L,R)$  to the canonical U with heights  $(R,L)$ , preserving the endpoint, support, and matching patterns under that exchange. Composing the source embedding with this relabeling leaves the physical source unchanged.It also preserves the effective phase. A canonical column pair with lower coordinate  $p$  becomes a pair with lower coordinate  $w-p$ . Since  $w$  is even,
+$$w-p\equiv p\pmod 2.$$
+Thus choosing the first or right canonical terminal does not silently change a phase or reset the physical partition.The forced corner has an actual original ownerThe supplied backfill theorem establishes that  $q=(1,-1)$  is an original  $G$ -support with two persistent endpoint neighbors,  $(1,0)\in P_G$  and  $(0,-1)\in P_F$ . Mandatory support retention and the retained-support degree bound force  $q$  into  $P$ . The same argument then forces  $r=(1,-2)$  into  $P$ .Because the complete model retains the unchanged original matchings, these are endpoints belonging to original sources. The exact  $F/G$  profiles exclude both  $q$  and  $r$  from  $P_F\cup P_G$ . Consequently the owner  $H$  of  $q$  is distinct from  $F,G$ , and its endpoints must avoid both complete barriers.This supplies the necessary original-owner premise. It does not introduce a new endpoint source merely to complete the tile. These adapters justify the use of the normalized disjointness hypotheses in the displayed Lean lemmas.Sources: first note §1; supplied backfill theorem §2; WidthSixBottomOwner.lean, definitions endpoint and support.2. Rotor exclusion is exhaustiveThe supplied rotor endpoint set is invariant under the quarter-turn
+$$(i,j)\longmapsto(j,5-i).$$
+Translations absorb the difference between this rotation about the rotor’s center and a linear quarter-turn about the origin. Therefore arbitrary translated signed-coordinate-permutation images reduce to two chiralities, each anchored at one of the eight original endpoints.That is the claimed sixteen-role catalogue; it has no translation, dimension, or source-count cutoff.Relative to  $q$ , the blocker stencil in the first note becomes
+$$B=
+\{(-1,0),(-1,-1),(-1,-2),(-1,-3),
+  (-1,1),(0,1),(1,1),(2,1)\},$$
+which is exactly cornerBlockers.A central rotor endpoint has three original endpoint neighbors. It cannot avoid both north and east, because only south and west would remain available.For completeness, the eight tip cases also have explicit collision witnesses. Index the four tips in the supplied, unreflected template by
+$$(1,2),\quad(2,4),\quad(4,3),\quad(3,1).$$
+Each entry below is an endpoint displacement from the anchored tip belonging to  $B$ . The second column of cases uses the reflected template  $(i,j)\mapsto(i,-j)$ .Canonical tipGiven chiralityReflected chirality $(1,2)$  $(1,1)$  $(2,1)$  $(2,4)$  $(-1,-2)$  $(0,1)$  $(4,3)$  $(-1,0)$  $(-1,0)$  $(3,1)$  $(0,1)$  $(-1,-1)$ Together with the central-role argument, this checks every anchored role directly from the template. The rotor exclusion therefore does not depend on accepting a reported checker result.Sources: first note §2; WidthSixBottomOwner.lean, definitions rotorP, rotorMove, and rotorOwners; rotor_networks.py, function rotor.3. The four U roles and their phases are correct in the fixed tilingExhaustion of endpoint rolesA nonterminal stem endpoint has two opposite original endpoint neighbors. Such a pair necessarily includes north or east, so it cannot occur at  $q$ .Every bar endpoint other than an upper outer corner has at least three original endpoint neighbors, and is excluded for the same reason. Thus  $q$  must be an upper outer bar corner or a terminal.At an upper outer corner, the two inward directions must be west and south. Depending on which direction traverses the bar, this gives A or B.At a terminal, the incident run must point south or west. Each initially allows two directions for the remote bar. The two wrong-turn arguments eliminate precisely the unwanted choices, leaving C and D. This exhausts the canonical endpoint roles and all signed coordinate permutations.Explicit phase and profile adaptersThe following representatives describe the surviving roles. For A and C, use the canonical right corner or right terminal; for B and D, use the first corner or first terminal. The other height remains arbitrary.RoleCanonical-to-physical mapCanonical preimage of the actual  $Q_b$ Effective phaseA $(i,j)\mapsto(i+1,\ j-w-1)$  $\{-1,0\}\times\{w-1,w\}$  $11$ B $(i,j)\mapsto(j,\ -i-1)$  $\{0,1\}\times\{0,1\}$  $00$ C $(i,j)\mapsto(a+1-i,\ j-w-1)$  $\{a,a+1\}\times\{w-1,w\}$  $01$ D $(i,j)\mapsto(j,\ i-a-1)$  $\{a-1,a\}\times\{0,1\}$  $10$ These preimages pull back the existing physical tile
+$$Q_b=\{0,1\}\times\{-2,-1\}.$$
+Since  $a,w$  are even, their lower-coordinate parities are exactly  $11,00,01,10$ . No phase is inferred from a newly chosen tiling.Substitution into the complete canonical predicates gives precisely the claimed original profiles:Role $P_H\cap Q_b$  $S_H\cap Q_b$ A $\{q,r\}$  $\varnothing$ B $\{q,r\}$  $\{(0,-1)\}$ C $\{q\}$  $\{(0,-1)\}$ D $\{q,r\}$  $\{(0,-1)\}$ The lower bounds on width and height matter here. The other stem is displaced transversely by  $w-1\ge5$ , and the terminal cases are sufficiently far from the two-row bar. An arbitrarily long independent opposite stem therefore cannot add an unlisted endpoint or support to  $Q_b$ .The occurrences of  $(0,-1)$  as an original  $H$ -support in B–D are consistent with its being an  $F$ -endpoint: the model permits an original support to be covered by another source’s endpoint.This establishes all four phases and exact profiles at the complete-source level. It does not establish that all four roles occur in complete feasible critical U10 events, which the note correctly does not claim.Sources: first note §2; WidthSixBottomOwner.lean, definitions endpoint, support, and pull.4. Both wrong-turn exclusions and all strict dimension bounds holdSouth terminal with its bar opening rightThe incident run contains
+$$(r,-1),\qquad 1\le r\le a+1.$$
+If  $a+1\ge g-1$ , it meets  $G$ ’s bar at  $(g-1,-1)$ .Otherwise  $a+1<g-1$ . The rightward bar contains  $(a,0)$ , and  $0\le a\le g$ , so this point lies on  $G$ ’s complete stem.The equality boundary  $a+1=g-1$  is included in the first collision case. There is no uncovered transition case.West terminal with its bar extending upThe incident run contains
+$$(1,c),\qquad -a-1\le c\le-1.$$
+If  $a+1\ge h$ , it meets  $F$ ’s bar at  $(1,-h)$ . The width assumption ensures row  $1$  belongs to that bar.Otherwise  $a+1<h$ . The upper bar contains  $(0,-a)$ , which lies in  $F$ ’s horizontal run.Again, equality belongs to the collision branch.A and C:  $a\le g-4$ Both roles contain the entire run  $(r,-1)$  for  $1\le r\le a+1$ . Avoiding  $G$ ’s bar therefore requires
+$$a+1<g-1.$$
+The integer inequality alone gives  $a\le g-3$ . Using that both  $a$  and  $g$  are even strengthens this to
+$$\boxed{a\le g-4}.$$
+This parity step is necessary and is correctly present.B:  $w\le g-2$ The vertical bar owns  $(r,-1)$  for  $1\le r\le w$ . It cannot reach row  $g-1$ , so
+$$w<g-1,
+\qquad\text{hence}\qquad
+\boxed{w\le g-2}.$$
+D: incident drop and width tradeoffThe westward run cannot contain  $(1,-h)$ , giving
+$$a+1<h,
+\qquad\text{hence}\qquad
+\boxed{a\le h-2}.$$
+If both  $w\ge g-1$  and  $a\le u-1$ , then
+$$(g-1,-a)$$
+belongs to  $H$ ’s vertical bar and to  $G$ ’s horizontal bar. Thus endpoint disjointness gives
+$$\boxed{w\le g-2\quad\text{or}\quad u\le a}.$$
+Shallow  $g=4,6$ For  $g\in\{4,6\}$ , roles A and C contradict  $a\ge4$ , since they would require  $a\le g-4\le2$ . Role B contradicts  $w\ge6$ , since it would require  $w\le g-2\le4$ .Only D remains. Its first tradeoff alternative is also impossible, leaving
+$$u\le a\le h-2.$$
+Consequently
+$$\boxed{h\ge u+2}.$$
+In particular, the shallow boundary  $h=u$  is excluded. The distinction from the F/G barrier-disjointness test is also correct: with  $h=u$ , the displayed  $F$ -bar columns  $-u-1,-u$  lie outside the displayed  $G$ -bar columns  $1-u,\ldots,0$ , so those barrier subsets alone need not collide.The stronger exclusion comes from requiring an original owner of  $q$ , exactly as the first note states. It supplies a necessary condition, with no sufficiency or sharpness implication.Sources: first note §§2–3; the corresponding collision and inequality statements in BackfillCornerRouting.lean.5. The singleton reservation inequality uses one pool without repetitionLet  $C_q$  be the set of role-C  $q$ -points.The established backfill injection gives
+$$|C_q|=K_C.$$
+The phase/profile calculation above makes every such point an original phase01 terminal singleton. Its physical tile contains the distinct source  $F$ ’s exact original  $2P1T$  profile. Therefore
+$$C_q\subseteq E_{1\mathrm{reg}}.$$
+The established separation of all backfill tiles from all ordinary and critical receiving tiles gives
+$$C_q\cap E_{1\mathrm{old}}=\varnothing.$$
+This remains true across components and with recurring owners, because the separation theorem concerns actual physical tiles globally.The accepted any-pair theorem supplies the other required separations. In particular,
+$$F_{\mathrm{negSet}},\quad
+E_0,\quad
+E_{1\mathrm{old}},\quad
+C_q$$
+are pairwise disjoint subsets of the single original negative singleton pool  $P_{\mathrm{neg}}$ . Hence
+$$F_{\mathrm{neg}}+|E_0|+|E_{1\mathrm{old}}|+K_C
+\le 2K_{01}+2K_{10}.$$
+Substitution of
+$$F_{\mathrm{neg}}+F_{\mathrm{pos}}+U_0=2K_{11}$$
+gives exactly
+$$\boxed{
+2K_{11}+|E_0|+|E_{1\mathrm{old}}|+K_C
+\le
+2K_{01}+2K_{10}+F_{\mathrm{pos}}+U_0.
+}$$
+This is a simultaneous occurrence count. A source may recur, but distinct events use distinct terminal points. No owner-freshness premise is needed.The qualification about the older scalar inequality is essential and correct:
+$$E_{1\mathrm{old}}\sqcup C_q\subseteq E_{1\mathrm{reg}}.$$
+Thus the new statement retains a particular disjoint selection inside the existing count. It does not add  $K_C$  to the already complete  $|E_{1\mathrm{reg}}|$ . Doing that would double count; the note expressly avoids it.Sources: first note §4; supplied backfill theorem §§3–5; DISTINCT_NEUTRAL_SUPPORTS_AND_ANY_PAIR_BUDGET.md, §5.6. The cap injection and the B/D resource interpretations are validRole A identifies an actual original capUnder the A embedding, the next physical tile
+$$Q_A=\{2,3\}\times\{-2,-1\}$$
+pulls back to
+$$\{1,2\}\times\{w-1,w\}.$$
+Its original endpoints are exactly
+$$(1,w-1),\quad(1,w),\quad(2,w).$$
+The fourth canonical point  $(2,w-1)$  is neither an endpoint nor a support.Consequently its physical profile is precisely the triple
+$$\{(2,-2),(2,-1),(3,-1)\},$$
+with missing corner  $(3,-2)$ . It is the original phase11 cap in (6).The event-to-cap map is injectiveFor a fixed source, each of its two upper outer bar corners has its corresponding lower cap. The two correspondences cannot merge: the relevant sides are separated by  $w-1\ge5$ .Across distinct sources, two original triples cannot occupy one four-point physical tile, because the triples would intersect and violate original endpoint disjointness.Thus a cap identifies its source and associated  $q$ . Finally, equality of  $q$  identifies the event by the established backfill injection: equal points lie in the same partition tile, and distinct events have distinct backfill tiles.This proves the cap injection with recurring owners allowed.The caps remain inside existing resource categoriesThe mapped unfilled caps are a subfamily of the existing  $U_0$ . Mapped filled caps use the existing negative-filler or positive-activation categories. Injection prevents repetition within the mapped family; it does not prove those resources are unused by every other part of an allocation.There is also no conflict with the selected singleton reservations: a negative filler of one of these caps lies in  $F_{\mathrm{negSet}}$ , which is disjoint from  $E_0$  and  $E_{1\mathrm{reg}}$  by the original pair-versus-triple argument.The note correctly makes no general separation claim between the associated cap tiles and other receiver families, and correctly refuses to add their unfilled count to the complete  $U_0$ .Roles B and D introduce no unproved reserveA role-B point is one of the two upper outer bar corners of a positive U. Distinct  $q$ ’s therefore give the stated incidence bound
+$$K_B\le2N.$$
+This does not make the corner an activated positive terminal or establish another available copy of the positive-source capacity.Role D identifies an actual phase10 terminal and gives the local incident-length comparison. The note does not turn that comparison into a global termination claim. Both limitations are mathematically appropriate.Sources: first note §4; canonical endpoint/support definitions; supplied any-pair cap partition.7. The most consequential remaining gap toward coefficient oneThe missing result is a simultaneous allocation of actual resource occurrences to all competing receiver demands, after retaining the reservations already made.The four routes do not yet prove availability:RouteWhat this theorem providesWhat allocation still needsAAn injectively identified existing capAvailability of that cap, or a justified reassignment of its current useBAn incidence at a positive-source cornerCompatible capacity within the already used positive-source budgetCA distinct reservation inside  $E_{1\mathrm{reg}}$ Its integration with all other demands in the same poolDA strict comparison between particular incident lengthsA continuation rule that transports a common decreasing quantity, or otherwise controls recurrenceThe D issue is especially precise. The comparison is between  $H$ ’s incident length  $a$  and  $F$ ’s particular opposite-terminal length  $h$ . A subsequent event can involve a different owner, a different terminal, the other independent height, or a width. The present proof does not show that these comparisons concatenate into descent of one quantity along the continuation.Even a termination theorem would have to terminate at available capacity. An identified cap may already be filled or committed, and a positive-source incidence may point into already committed capacity.A faithful next allocation theorem would therefore need an occurrence-level assignment or reassignment argument that handles recurring owners and all relevant receiver families simultaneously. If formulated through a matching or flow model, its eligibility relation and capacity condition would themselves have to be proved from the actual geometry. The present local injections do not supply that global condition.That is the decisive gap toward the coefficient-one allocation. Additional partial geometric samples, or a complete U10 witness, would not by themselves resolve it. The first note accurately leaves this gap—and the grid equality—open.

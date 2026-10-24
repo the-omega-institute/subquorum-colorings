@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "execution": "user-authorized local machine",
+  "lean_version": "4.33.0",
+  "dependency_command": "cd formal && lean -o /tmp/subquorum-first-destination-lean/SubQuorum/FrozenSharedMixedGate.olean SubQuorum/FrozenSharedMixedGate.lean",
+  "command": "cd formal && LEAN_PATH=/tmp/subquorum-first-destination-lean lean SubQuorum/UnportedSharedMixedGate.lean",
+  "exit_code": 0,
+  "scope": [
+    "Concrete selected-set and actual matching grid feasibility",
+    "Inductive complete freezing of all 66 matching endpoints via general strict-rank theorem",
+    "Three disjoint alternating physical paths and their terminal labels",
+    "No direct or selected-cap access at any of four original alpha tips",
+    "Shared entrance, two interval locations and distinct beta-exit data"
+  ],
+  "not_formalized": [
+    "Theorem 1: general simultaneous first-destination matching",
+    "Theorem 2: general exact beta-compensation formula and mixed-ended path classification",
+    "Exhaustion of all original alpha owners in full PP decomposition (checked in Python)",
+    "General flow normal form and optimization of full physical network"
+  ],
+  "fixture_data_compared": "Lean selected/matching definitions equal canonical JSON fixture",
+  "axioms": ["propext", "Quot.sound"],
+  "sorry": false,
+  "native_decide": false,
+  "preflight": {
+    "memory_pressure_free_percent": 40,
+    "real_lean_lake_processes_by_comm_basename": []
+  }
+}

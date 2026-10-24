@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "excluded_south_rotor_footprints": 2,
+  "forcing": {
+    "counts": {
+      "disjoint_C_X_patterns": 288,
+      "small_cross_no_U_consumer_controls": 123,
+      "wide_bar_below_corner": 1252,
+      "disjoint_C_X_Q_partial_patterns": 3020,
+      "short_bar_longer_near": 1768
+    },
+    "partial_examples": {
+      "wide": {
+        "cross": [
+          14,
+          8,
+          4
+        ],
+        "corner": [
+          6,
+          4,
+          4
+        ],
+        "companion": [
+          8,
+          8,
+          4
+        ]
+      },
+      "short": {
+        "cross": [
+          10,
+          12,
+          4
+        ],
+        "corner": [
+          8,
+          8,
+          4
+        ],
+        "companion": [
+          6,
+          6,
+          4
+        ]
+      }
+    },
+    "candidate_south_terminal_frames": 288
+  },
+  "prior_targets": {
+    "old_S_collision_and_self_exclusion": 48,
+    "old_P_collision_and_self_exclusion": 48
+  },
+  "scope": "Independent original-source endpoint/support/phase controls. C/X and C/X/Q examples are PARTIAL and are not claimed complete. General consumer exhaustion, injectivity, cross-type support-owner separation and simultaneous ledger are written proofs."
+}

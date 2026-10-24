@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "normalized_shared_tile_controls": {
+    "counts": {
+      "frame_point_pairs": 32,
+      "same_physical_tile_cases": 8,
+      "excluded_by_global_forced_point_separation": 2,
+      "tag_compatible_nonzero_cases": 3
+    },
+    "survivors": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            -1,
+            0
+          ]
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          [
+            -1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ]
+    ]
+  },
+  "arbitrary_dimension_proof_controls": {
+    "original_U_endpoint_images": 14400,
+    "downward_terminal_survivors": 144
+  },
+  "exact_rotor_owner_controls": {
+    "all_rotor_translations_owning_origin": 16,
+    "three_blocker_survivors": 2,
+    "survivors": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ]
+      ]
+    ]
+  },
+  "complete_other_phase_critical_coverage": 0,
+  "complete_AA_coverage": 0,
+  "scope": "Exhaustive finite orientation and rotor-root roles; finite U endpoint images control the separately proved arbitrary-dimension terminal lemma. Physical original-owner/type/coordinate adapters are written. The preceding complete fixture batch covers phase01 returns only. Not critical-to-critical tile injection or the full allocation theorem."
+}

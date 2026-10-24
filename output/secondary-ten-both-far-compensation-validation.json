@@ -1,0 +1,174 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_BOTH_FAR_COMPENSATION.md",
+  "python": {
+    "session": 75512,
+    "exit_code": 0,
+    "exact_pair_set_controls": 11568,
+    "status": "PASS",
+    "pairs": [
+      {
+        "exact_full_event_set_controls": 5784,
+        "minimum_pair_gain": 4,
+        "profiles": {
+          "('P_bar', 0, 0, 0, 0)": 647,
+          "('P_bar', 0, 0, 1, 0)": 189,
+          "('P_bar', 0, 1, 0, 0)": 36,
+          "('P_bar', 1, 0, 0, 0)": 124,
+          "('P_bar', 1, 1, 0, 0)": 4,
+          "('P_far', 0, 0, 0, 0)": 200,
+          "('P_far', 0, 0, 1, 0)": 80,
+          "('P_far', 2, 0, 0, 0)": 72,
+          "('X', 0, 0, 0, 0)": 347,
+          "('X', 0, 0, 1, 0)": 131,
+          "('X', 0, 1, 1, 0)": 54,
+          "('X', 0, 1, 1, 1)": 6,
+          "('Z', 0, 0, 0, 0)": 275,
+          "('Z', 0, 0, 1, 0)": 104,
+          "('Z', 1, 0, 0, 0)": 39,
+          "('outside', 0, 0, 0, 0)": 2922,
+          "('outside', 0, 0, 1, 0)": 450,
+          "('outside', 0, 1, 0, 0)": 104
+        }
+      },
+      {
+        "exact_full_event_set_controls": 5784,
+        "minimum_pair_gain": 4,
+        "profiles": {
+          "('P_bar', 0, 0, 0, 0)": 647,
+          "('P_bar', 0, 0, 1, 0)": 189,
+          "('P_bar', 0, 1, 0, 0)": 36,
+          "('P_bar', 1, 0, 0, 0)": 124,
+          "('P_bar', 1, 1, 0, 0)": 4,
+          "('P_far', 0, 0, 0, 0)": 200,
+          "('P_far', 0, 0, 1, 0)": 80,
+          "('P_far', 2, 0, 0, 0)": 72,
+          "('X', 0, 0, 0, 0)": 347,
+          "('X', 0, 0, 1, 0)": 131,
+          "('X', 0, 1, 1, 0)": 54,
+          "('X', 0, 1, 1, 1)": 6,
+          "('Z', 0, 0, 0, 0)": 275,
+          "('Z', 0, 0, 1, 0)": 104,
+          "('Z', 1, 0, 0, 0)": 39,
+          "('outside', 0, 0, 0, 0)": 2922,
+          "('outside', 0, 0, 1, 0)": 450,
+          "('outside', 0, 1, 0, 0)": 104
+        }
+      }
+    ],
+    "batches": {
+      "actual_endpoint_disjoint_groups": 60,
+      "pair_counts": [
+        4,
+        5
+      ],
+      "minimum_gain_per_pair": 13.5
+    },
+    "long_legs": {
+      "both_far_2000_groups": [
+        {
+          "pairs": 2,
+          "exact_gain": 2326,
+          "new_full": 1012,
+          "new_events": 2026,
+          "profiles": {
+            "('outside', 0, 0, 0, 0)": 1,
+            "('outside', 0, 0, 1, 0)": 1
+          }
+        },
+        {
+          "pairs": 5,
+          "exact_gain": 6816,
+          "new_full": 2029,
+          "new_events": 4062,
+          "profiles": {
+            "('outside', 0, 0, 0, 0)": 3,
+            "('outside', 0, 0, 1, 0)": 2
+          }
+        },
+        {
+          "pairs": 11,
+          "exact_gain": 19230,
+          "new_full": 5062,
+          "new_events": 10134,
+          "profiles": {
+            "('outside', 0, 0, 0, 0)": 6,
+            "('outside', 0, 0, 1, 0)": 5
+          }
+        }
+      ],
+      "triple_owner_correction": {
+        "pairs": 1,
+        "exact_gain": 27,
+        "new_full": 18,
+        "new_events": 37,
+        "profiles": {
+          "('X', 0, 1, 1, 1)": 1
+        }
+      },
+      "sharp_old_chain_loss": {
+        "pairs": 1,
+        "exact_gain": 4,
+        "new_full": 6,
+        "new_events": 14,
+        "profiles": {
+          "('P_far', 2, 0, 0, 0)": 1
+        }
+      }
+    },
+    "scope": "Exact physical full-tile and owner-labelled event SETS for both arbitrary far legs, including the triple-owner correction and automatic pair-footprint separation. Finite controls supplement the unbounded written proof; no complete extension or global bound."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenBothFarCompensation.lean",
+    "exit_code": 0,
+    "declarations": 29,
+    "theorems": 21,
+    "execution": "Local Mac, leanprover/lean4:v4.33.0 standalone --stdin",
+    "preflight": {
+      "memory_free_percent": 44,
+      "real_lean_lake_processes": []
+    },
+    "individual_axiom_audit": "Every29 explicit declarations individually printed. Ordinary propext/Classical.choice/Quot.sound only; final corrected run no warnings/sorry/native axioms. Initial failed concrete projection simplification repaired with kernel decide.",
+    "scope": "Aligned bar/column separation, continuous stem stopping, coupled-frontier nonstacking, exact conditional scalar/list ledger and two concrete arithmetic witnesses. General chart exhaustion and actual-owner normalization are written."
+  },
+  "review": {
+    "status": "REVISE_RESPONSE_SUBMITTED",
+    "task_id": "780b9242-2e82-48b0-8579-5bf5449979dd",
+    "conversation_id": "conv_b2437cfb41cccc53",
+    "original_stream_session": 21235,
+    "original_stream_exit_code": 0,
+    "observed_model": "gpt_6",
+    "observed_effort": "pro",
+    "terminal_record": "output/secondary-ten-both-far-compensation-review-terminal.json",
+    "stream_terminal_response_exact_match": true,
+    "assessment": "Original verdict REVISE: proposed R positive-charge correction is contradicted by original-source counts and all-parameter support proof; valid earlier-column wording objection repaired with exhaustive row/column separation. Gain identity unchanged. No final acceptance claimed.",
+    "response_note": "docs/SECONDARY_TEN_BOTH_FAR_CHARGE_SEPARATION.md",
+    "followup_request": "output/secondary-ten-both-far-charge-revision-review-request.json",
+    "followup_original_stream_session": 31558,
+    "followup_status": "Original streaming request active; same conversation; retain without duplicate dispatch.",
+    "scope": "Main theorem and E-frontier dependency only. Later sharpness, forced owners, first and second return-debit theorems remain outside this review input.",
+    "latest_followup": {
+      "status": "SECOND_REVISE_LOCAL_T_PARTITION_FIXED_FINAL_CONFIRMATION_SUBMITTED",
+      "task_id": "dd9cdf7b-c87b-4830-b469-08ed31a4a97f",
+      "observed_model": "gpt_6",
+      "observed_effort": "pro",
+      "original_stream_session": 31558,
+      "original_stream_exit_code": 0,
+      "stream_terminal_response_exact_match": true,
+      "terminal_record": "output/secondary-ten-both-far-charge-revision-review-terminal.json",
+      "assessment": "Reviewer withdrew erroneous R charge objection and confirmed repaired exhaustive earlier-original separation and main geometry. Sole remaining local T support partition corrected: two bar ends+two near even laterals+g/2 far even laterals inside; both axial supports outside. Counts, charges and theorem unchanged. Full R/T inside-support SET assertions added and144/144 controls rerun PASS.",
+      "final_request": "output/secondary-ten-both-far-charge-final-review-request.json",
+      "final_original_stream_session": 75561,
+      "final_status": "Active original same-conversation stream, metadata not yet returned; retain without duplicate. No final ACCEPT yet."
+    }
+  },
+  "open": "Deeper E incident legs; actual consumers outside this selected branch; full-family allocation; arbitrary-grid catalogue exhaustion; global5/6 improvement and rectangular-grid triple equality.",
+  "post_review_recheck": {
+    "original_e_frontier_exit_code": 0,
+    "e_frontier_exact_set_controls": 10482,
+    "original_both_far_exit_code": 0,
+    "both_far_exact_pair_set_controls": 11568,
+    "note": "Original source mass assertions retained and rerun successfully; no change to charge decomposition."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/TerminalCancellationAndStrandedDemand.lean",
+  "machine": "local Mac selected by the user in this session",
+  "toolchain": "leanprover--lean4---v4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/TerminalCancellationAndStrandedDemand.lean",
+  "preflight": {
+    "memory_free_percent": 46,
+    "active_real_lean_or_lake": [],
+    "process_method": "ps comm field with executable basename equal to lean or lake"
+  },
+  "execution": {
+    "session_id": 40697,
+    "initial_chunk_id": "70aad7",
+    "completion_chunk_id": "8d08e0",
+    "exit_code": 0
+  },
+  "theorems": 22,
+  "individual_axiom_audits": 22,
+  "observed_axioms_union": ["propext", "Quot.sound", "Classical.choice"],
+  "errors": 0,
+  "warnings": 0,
+  "earlier_attempts": [
+    {"session_id": 57990, "exit_code": 0, "scope": "Initial 16-theorem source before common-drop additions"},
+    {"session_id": 8145, "exit_code": 1, "reason": "Two nonnegativity base cases incorrectly used rfl for an order relation; corrected to decide before final validation"}
+  ],
+  "scope": "Generic signed strand surgery under finite inductive composition, finite-list alpha/beta inventory, noncreation of beta, common nonnegative alpha/beta resource drop, no-beta demand persistence, conditional virtual ledger and mixed-tail zero credit. Grid geometry, terminal graph extraction, actual freezing and the connector adapter remain written mathematical proofs."
+}

@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "user-selected local Mac",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/AABSecondCorner.lean",
+  "theorem_declarations": 10,
+  "theorems": [
+    "unrestricted_positive_band_stencil_leaves_two_rotor_roles",
+    "incoming_endpoint_excludes_both_remaining_rotor_roles",
+    "positive_terminal_frame_transports_incoming_endpoint",
+    "equal_incoming_height_collides_with_companion_pair",
+    "strict_incoming_height_supplies_foreign_west_point",
+    "three_foreign_neighbors_force_original_terminal",
+    "opposite_incoming_owners_share_point_and_have_distinguishing_endpoint",
+    "aa_negative_only_all_route_exact_census",
+    "remaining_negative_terminal_must_cross_companion",
+    "aa_negative_only_all_route_capacity"
+  ],
+  "source_check": {
+    "original_exec_session": 86458,
+    "exit_code": 0,
+    "memory_free_percent": 44,
+    "warnings": false
+  },
+  "axiom_audit": {
+    "original_exec_chunk": "b919f1",
+    "exit_code": 0,
+    "memory_free_percent": 45,
+    "declarations": 10,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "additional_axioms": false,
+    "sorry": false,
+    "native_decide": false
+  },
+  "dependency": {
+    "source": "formal/SubQuorum/WidthSixBottomOwner.lean",
+    "original_exec_session": 73097,
+    "exit_code": 0,
+    "memory_free_percent": 47
+  },
+  "preflights": "Before EVERY Lean invocation: memory_pressure -Q and actual ps comm executable basenames lean/lake, including bare names; dependency/source/audit sequential. Initial9 source77129 passed before final10 source/audit.",
+  "scope": "Exact B rotor roles and extra-blocker exclusion; signed support frame; unbounded U terminal classification; incoming endpoint/missing-point adapters and opposite-owner collision; final unbounded negative-terminal stem/bar crossing; conditional joint source-pool census/capacity. Full physical phase/orientation, AA applicability, exhaustive no-B source adapter and global pool packing remain written. No end-to-end source-fusion theorem, critical U10/AA realization, full allocation or grid equality.",
+  "controls": "output/aa-b-second-corner-controls.json"
+}

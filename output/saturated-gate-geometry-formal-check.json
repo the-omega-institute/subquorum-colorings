@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-20T02:38:48Z",
+  "execution_location": "Local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/SaturatedGateGeometry.lean",
+  "dependencies": [
+    {
+      "source": "formal/SubQuorum/WidthEightUCapObstruction.lean",
+      "exec_session": 4705,
+      "exit_code": 0,
+      "memory_free_percent": 42
+    },
+    {
+      "source": "formal/SubQuorum/OccupiedGateActivation.lean",
+      "exec_session": 23272,
+      "exit_code": 0,
+      "memory_free_percent": 44
+    }
+  ],
+  "final_source": {
+    "exec_session": 28642,
+    "exit_code": 0,
+    "memory_free_percent": 43
+  },
+  "individual_audit": {
+    "exec_session": 35491,
+    "exit_code": 0,
+    "memory_free_percent": 41
+  },
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 13,
+  "declarations": [
+    "corner_bar_contains_footprint",
+    "corner_leg_contains_footprint",
+    "horizontal_tip_contains_footprint",
+    "distinct_transverse_owners_need_width",
+    "down_right_outside_pair",
+    "down_right_outside_pair_has_no_support",
+    "saturated_vertical_clearance",
+    "upright_original_beyond_tip",
+    "shorter_side_width_descent",
+    "upright_strict_clearance",
+    "common_owner_dimensions",
+    "single_positive_failure_needs_large_dimension",
+    "small_positive_joint_allocation"
+  ],
+  "individual_axiom_audit": {
+    "corner_bar_contains_footprint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "corner_leg_contains_footprint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "horizontal_tip_contains_footprint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "distinct_transverse_owners_need_width": [
+      "propext",
+      "Quot.sound"
+    ],
+    "down_right_outside_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "down_right_outside_pair_has_no_support": [
+      "propext",
+      "Quot.sound"
+    ],
+    "saturated_vertical_clearance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "upright_original_beyond_tip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "shorter_side_width_descent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "upright_strict_clearance": [
+      "propext",
+      "Quot.sound"
+    ],
+    "common_owner_dimensions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "single_positive_failure_needs_large_dimension": [
+      "propext",
+      "Quot.sound"
+    ],
+    "small_positive_joint_allocation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Universal coordinate footprints and overlap, outside2P0T endpoint/support profile, saturated longitudinal strict clearance, original upright beyond-tip support, shorter-side width descent, and conditional common-owner dimension/single-positive allocation consequences. Source-role catalogue adapters, common-owner AA/AF/FF isometry classification, final support forcing and saturation-to-full-tile adapter remain written; no end-to-end arbitrary-fusion Lean theorem.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-saturated-check/SubQuorum",
+    "lean -o /tmp/subquorum-saturated-check/SubQuorum/WidthEightUCapObstruction.olean formal/SubQuorum/WidthEightUCapObstruction.lean",
+    "LEAN_PATH=/tmp/subquorum-saturated-check lean -o /tmp/subquorum-saturated-check/SubQuorum/OccupiedGateActivation.olean formal/SubQuorum/OccupiedGateActivation.lean",
+    "LEAN_PATH=/tmp/subquorum-saturated-check lean -o /tmp/subquorum-saturated-check/SubQuorum/SaturatedGateGeometry.olean formal/SubQuorum/SaturatedGateGeometry.lean"
+  ],
+  "audit_reproduction": "Import SubQuorum.SaturatedGateGeometry and #print axioms for every named declaration in a temporary file with the same LEAN_PATH. No sorryAx/native_decide."
+}

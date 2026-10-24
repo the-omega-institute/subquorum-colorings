@@ -1,0 +1,101 @@
+{
+  "status": "GENERAL_WRITTEN_ACTUAL_STAIRCASE_GE2_EXACT_SET_SCOPED_LEAN_PASS_INDEPENDENT_ACCEPT",
+  "date": "2026-10-22",
+  "owner": "Wenlin Zhang and Haobo Ma",
+  "source": "docs/SECONDARY_TEN_ROOT_ACTUAL_STAIRCASE.md",
+  "theorem": "For the selected union H3+B+R+A+J0+J1+J2+J3, every allowed actual endpoint-disjoint staircase has DeltaPhi >= L/2-1 >= 2.",
+  "hypotheses": "Explicit every-original full even U/standard rotor model; complete retained H3 and specified B,R,A; four forced charts and necessary depth/height bounds; pairwise disjoint original endpoint sets. No arbitrary-grid exhaustion or complete-extension existence assertion.",
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_root_actual_staircase.py",
+    "initial_exact_set_session": 74578,
+    "targeted_exact_set_session": 43802,
+    "targeted_exit_code": 0,
+    "final_hypothesis_checked_execution_session": 57896,
+    "final_hypothesis_checked_exit_code": 0,
+    "sampled_exact_set_controls": 113,
+    "random_seed": 221031,
+    "least_sampled_joint_gain": 9,
+    "least_targeted_joint_gain": 8,
+    "targeted_controls": [
+      "Two simultaneous P1 far intervals: total far length28, signed far budget-16, joint8, theorem lower bound2.",
+      "A boundary event: one old A debit, joint18.",
+      "24-block translated chain with R far2000, same A boundary event and joint18."
+    ],
+    "old_rotor_corner_sample_cases": 2,
+    "nonuniform_partial_example": {
+      "dimensions": [
+        [
+          16,
+          32,
+          4
+        ],
+        [
+          10,
+          38,
+          4
+        ],
+        [
+          20,
+          44,
+          12
+        ],
+        [
+          22,
+          46,
+          20
+        ]
+      ],
+      "joint_gain": 9,
+      "interpretation": "The earlier specified-family bound19 is not a universal bound for geometrically admissible actual dimensions. This is not a complete-family counterexample."
+    },
+    "scope": "Exact upper tile/event SET equality, far-owner pair receipts, shared lower width budget, old A directions/neutral rotor corner and disjoint paid receipts. Finite controls test the separate general proof."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenRootActualStaircase.lean",
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "final_execution_chunk": "9ef9d4",
+    "exit_code": 0,
+    "theorems": 11,
+    "preflight_free_percent": 41,
+    "active_real_lean_lake_before": [],
+    "axiom_audit": "Every declaration individually printed; only propext, Classical.choice and Quot.sound; no warnings, sorryAx or native axioms.",
+    "initial_correction": "Initial run25968 exposed integer-negation/division precedence in a local arithmetic statement without parity assumptions. Parenthesized the intended negated quotient; removed redundant local hypotheses causing warnings. Final run passes.",
+    "scope": "Interval-overlap and packing arithmetic; four-pair debit bound; shared P1 budget; upper ledger algebra; disjoint-receipt arithmetic; final all-parameter inequality; row-phase arithmetic. Geometric classification and physical receipt exhaustion remain written, not fully formalized."
+  },
+  "review": {
+    "status": "completed",
+    "original_execution_session": 85987,
+    "request": "output/secondary-ten-root-actual-staircase-review-request.json",
+    "stream": "output/secondary-ten-root-actual-staircase-review-stream.sse",
+    "scope": "New arbitrary-actual-dimension selected-union compensation proof, conditional on explicitly supplied accepted triple and forced-chart hypotheses.",
+    "pool_before": {
+      "queued": 0,
+      "dispatched": 5,
+      "ready": 21
+    },
+    "task_id": "523658e0-2938-4254-b39d-edcc533e5c3c",
+    "conversation_id": "conv_0ac3ea2fea0b7c23",
+    "mathematical_verdict": "ACCEPT",
+    "original_stream_exit_code": 0,
+    "stream_terminal_response_match": true,
+    "response_characters": 15774,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "response_archive": "output/secondary-ten-root-actual-staircase-review-response.md",
+    "terminal_archive": "output/secondary-ten-root-actual-staircase-review-terminal.json",
+    "clarification": "Nonfull upper-left boundary tile carries one A->J0 event already included in3nu/2; clarified separately from full-tile credit list. No count or hypothesis change."
+  },
+  "earlier_specified_staircase_review": {
+    "task_id": "651df2fc-415f-4a61-88d0-a90d5fa94e4a",
+    "status": "failed",
+    "reason": "no_assistant_output",
+    "mathematical_verdict": null,
+    "archive": "output/secondary-ten-root-support-staircase-review-failed.json"
+  },
+  "open": [
+    "Complete-extension consequences of the later geometric sharpness example. The later sharp theorem and its unbounded geometric equality family now also have independent ACCEPT.",
+    "Interactions and nonreusing allocation with arbitrary additional originals.",
+    "Arbitrary-grid component catalogue exhaustion.",
+    "Global5/6 improvement and rectangular-grid triple equality."
+  ]
+}

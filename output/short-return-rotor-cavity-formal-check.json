@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "date_singapore": "2026-10-21",
+  "machine": "User-authorized local Mac",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "source": "formal/SubQuorum/ShortReturnRotorCavity.lean",
+  "method": "Source through lean --stdin followed by individual #print axioms for all22 theorems",
+  "process_session_id": 5748,
+  "exit_code": 0,
+  "memory_free_percentage_before": 45,
+  "real_lean_lake_processes_before": [],
+  "declarations": 22,
+  "axioms_union": ["propext", "Classical.choice", "Quot.sound"],
+  "sorry_or_native_axioms": false,
+  "prior_run": "22722 exit1: rotor support disjunction needed explicit simplification; far-leg-six endpoint required definition unfolding in dependency order. Repaired before the final22-declaration run; the failed run is not validation.",
+  "earlier_pass": "12920 exit0 passed22 declarations using the R support witness. Following independent audit, the proof was strengthened to use only Q's original support rule, then all22 declarations passed again5748.",
+  "scope": "Normalized X/Q geometry, support and blocker coordinates, arbitrary U terminal/corner collision coordinates, Q/rotor single-row cavity, connected unit-walk confinement, complete Q/rotor contradiction over an arbitrary owner family using ONLY Q support retention, and complete X/Q contradiction under an explicit U/rotor endpoint-catalogue adapter. No rotor support-retention premise is needed. Exhaustive adaptation of all physical orientations remains written; no global allocation or realizability claim."
+}

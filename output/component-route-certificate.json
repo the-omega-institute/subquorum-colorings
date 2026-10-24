@@ -1,0 +1,343 @@
+{
+  "status": "PASS",
+  "totals": {
+    "abstract_models": 600,
+    "strict_conservative_models": 17,
+    "lifted_routes": 428,
+    "balanced_root_pairs": 2870,
+    "balanced_cycle_root_pairs": 2870,
+    "balanced_exchange_chains": 12,
+    "unported_fixture_injections": 12,
+    "separated_missing_stacks": 5,
+    "depth_relay_families": 18
+  },
+  "grouped_reserve_obstruction": {
+    "alpha": 3,
+    "original_beta": 2,
+    "demand_components": 2,
+    "reserve_components": 1,
+    "quotient_value": 1,
+    "quotient_cost": 1,
+    "compensation": 2,
+    "remaining": 1,
+    "links": [
+      [
+        5,
+        8
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "payments": [],
+    "source_roots": [
+      [
+        0,
+        0
+      ]
+    ],
+    "beta_roots": [
+      [
+        2,
+        3
+      ]
+    ],
+    "components": [
+      {
+        "index": 0,
+        "kind": "demand",
+        "alphas": [
+          0
+        ],
+        "betas": [],
+        "mixed": [
+          5,
+          6
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "demand",
+        "alphas": [
+          1
+        ],
+        "betas": [],
+        "mixed": [
+          7,
+          8
+        ]
+      },
+      {
+        "index": 2,
+        "kind": "reserve",
+        "alphas": [
+          2
+        ],
+        "betas": [
+          3,
+          4
+        ],
+        "mixed": []
+      }
+    ],
+    "unrestricted_value": 2,
+    "unrestricted_cost": 2
+  },
+  "conservative_limit": {
+    "alpha": 2,
+    "original_beta": 1,
+    "demand_components": 1,
+    "reserve_components": 0,
+    "quotient_value": 0,
+    "quotient_cost": 0,
+    "compensation": 1,
+    "remaining": 1,
+    "links": [
+      [
+        3,
+        10
+      ]
+    ],
+    "payments": [],
+    "source_roots": [],
+    "beta_roots": [],
+    "components": [
+      {
+        "index": 0,
+        "kind": "demand",
+        "alphas": [
+          0
+        ],
+        "betas": [],
+        "mixed": [
+          2,
+          3
+        ]
+      },
+      {
+        "index": 1,
+        "kind": "balanced",
+        "alphas": [
+          1
+        ],
+        "betas": [
+          5
+        ],
+        "mixed": [
+          4
+        ]
+      }
+    ],
+    "unrestricted_value": 2,
+    "unrestricted_cost": 1
+  },
+  "physical_examples": [
+    {
+      "family": "unported_gate",
+      "result": {
+        "alpha": 2,
+        "original_beta": 5,
+        "demand_components": 1,
+        "reserve_components": 4,
+        "quotient_value": 1,
+        "quotient_cost": 1,
+        "compensation": 2,
+        "remaining": 0,
+        "links": [
+          [
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              8
+            ]
+          ],
+          [
+            [
+              5,
+              11
+            ],
+            [
+              5,
+              12
+            ]
+          ]
+        ],
+        "payments": [],
+        "source_roots": [
+          [
+            1,
+            4
+          ]
+        ],
+        "beta_roots": [
+          [
+            2,
+            5
+          ]
+        ],
+        "components": [
+          {
+            "index": 0,
+            "kind": "balanced",
+            "alphas": [
+              1
+            ],
+            "betas": [
+              2
+            ],
+            "mixed": [
+              0
+            ]
+          },
+          {
+            "index": 1,
+            "kind": "demand",
+            "alphas": [
+              4
+            ],
+            "betas": [],
+            "mixed": [
+              3,
+              9
+            ]
+          },
+          {
+            "index": 2,
+            "kind": "reserve",
+            "alphas": [],
+            "betas": [
+              5
+            ],
+            "mixed": []
+          },
+          {
+            "index": 3,
+            "kind": "reserve",
+            "alphas": [],
+            "betas": [
+              6
+            ],
+            "mixed": []
+          },
+          {
+            "index": 4,
+            "kind": "reserve",
+            "alphas": [],
+            "betas": [
+              7
+            ],
+            "mixed": []
+          },
+          {
+            "index": 5,
+            "kind": "reserve",
+            "alphas": [],
+            "betas": [
+              8
+            ],
+            "mixed": []
+          }
+        ],
+        "unrestricted_value": 2,
+        "unrestricted_cost": 2
+      }
+    },
+    {
+      "family": "three_missing_components",
+      "result": {
+        "alpha": 3,
+        "original_beta": 0,
+        "demand_components": 3,
+        "reserve_components": 0,
+        "quotient_value": 3,
+        "quotient_cost": 0,
+        "compensation": 3,
+        "remaining": 0,
+        "links": [],
+        "payments": [
+          [
+            [
+              23,
+              3
+            ],
+            199
+          ],
+          [
+            [
+              5,
+              3
+            ],
+            41
+          ],
+          [
+            [
+              41,
+              3
+            ],
+            357
+          ]
+        ],
+        "source_roots": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "beta_roots": [],
+        "components": [
+          {
+            "index": 0,
+            "kind": "demand",
+            "alphas": [
+              0
+            ],
+            "betas": [],
+            "mixed": [
+              1,
+              4
+            ]
+          },
+          {
+            "index": 1,
+            "kind": "demand",
+            "alphas": [
+              6
+            ],
+            "betas": [],
+            "mixed": [
+              7,
+              16
+            ]
+          },
+          {
+            "index": 2,
+            "kind": "demand",
+            "alphas": [
+              9
+            ],
+            "betas": [],
+            "mixed": [
+              10,
+              13
+            ]
+          }
+        ],
+        "unrestricted_value": 3,
+        "unrestricted_cost": 0
+      }
+    }
+  ],
+  "scope": "Written component route lifting with one reserve per beta-surplus path. All certificates reconstruct original terminal matchings and interval payments. Quotient flow is a sufficient lower bound, not unrestricted equality. Compatible balanced transfers have separate root-pair and chain controls; no ordinary-flow reduction for that enlarged class is claimed. Abstract obstructions are not physical frozen-grid counterexamples. No universal grid or 5/6 improvement follows from finite controls."
+}

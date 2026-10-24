@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac selected by user",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/NeutralPortTurning.lean",
+  "source_check_and_object_build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "total_file_declarations": 11,
+  "preflight": {
+    "memory_free_percent_before_object": 46,
+    "memory_free_percent_before_audit": 40,
+    "active_lean_lake_before_object": [],
+    "active_lean_lake_before_audit": [],
+    "process_enumeration": "Ordinary and -c macOS ps, comparing exact comm basename lean/lake."
+  },
+  "declarations": [
+    {
+      "name": "local_moment_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "signed_moment_bounds",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "total_turn_forces_capacity",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "closed_curve_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "double_passive_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "closed_passive_occurrences_do_not_repeat",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "shared_activation_boundary_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "double_passive_shared_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "retained_reserve_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AA_phase_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AA_sink_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "scope": "Arbitrary-list signed moment capacity, conditional total-turn/active-port count aggregation, passive occurrence nonreuse by subset, shared A/H and exact R deductions, conditional AA phase and sink counts. Original source arcs, simple polygon total-turn theorem, physical neutral contacts, cyclic reindexing and AA no-passive geometry remain written adapters. No end-to-end planar-source Lean theorem or full grid closure."
+}

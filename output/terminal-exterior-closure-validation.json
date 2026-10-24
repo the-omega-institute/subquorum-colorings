@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-22",
+  "status": "COMPLETED_ACCEPT_LOCAL_CHECKS_PASS",
+  "note": "docs/TERMINAL_EXTERIOR_SINGLE_SOURCE_AND_GLOBAL_REDUCTION.md",
+  "claims": [
+    "One-original exterior completion is exactly a full-width equal-leg upward U; marginal5; exists iff min(D,F)>=a+10.",
+    "A finite core-dependent lower bound for arbitrary complete exteriors implies nonnegative Phi for every detached complete canonical fusion, via5+kPhi(H).",
+    "Anchored endpoint-connected exterior monotonicity fails even when both whole states complete:21->20; arbitrary-k negative marginal."
+  ],
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_terminal_exterior_classification.py",
+    "exit_code": 0,
+    "terminal_chunk": "4dc616",
+    "controls": "output/terminal-exterior-classification-controls.json"
+  },
+  "lean": {
+    "version": "4.33.0",
+    "location": "local Mac, explicitly authorized",
+    "memory_free_percent": 56,
+    "active_lean_lake_before": 0,
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/TerminalExteriorClosure.lean",
+    "exit_code": 0,
+    "terminal_chunk": "be9c41",
+    "definitions": 1,
+    "theorems": 10,
+    "individual_axiom_audits": 11,
+    "warnings": 0,
+    "errors": 0,
+    "sorryAx": false,
+    "native_decide": false,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "scope": "Local support predicate and arithmetic only; source-role catalogue, geometric adapters, gluing, component restriction and amplification remain written."
+  },
+  "finite_discovery": [
+    {
+      "record": "output/terminal-exterior-discovery-18x12.jsonl",
+      "window": [
+        18,
+        12
+      ],
+      "candidates": 437,
+      "known_cap": "SAT_exact_marginal5",
+      "query": "Delta_out<5",
+      "result": "UNSAT",
+      "scope": "Only this contained-source window and fixed core."
+    },
+    {
+      "record": "output/terminal-exterior-discovery-24x24.jsonl",
+      "window": [
+        24,
+        24
+      ],
+      "candidates": 52859,
+      "known_cap": "SAT_exact_marginal5",
+      "query": "Delta_out<5",
+      "result": "UNKNOWN",
+      "reason": "canceled",
+      "scope": "Excludes nothing; solver timeout."
+    }
+  ],
+  "independent_review": {
+    "status": "COMPLETED_REVISE_PROMPT_NORMALIZATION_CORRECTED",
+    "task_id": "2a869582-424a-4c0a-a071-908363b5ffd8",
+    "conversation_id": "conv_37f5b6b1df38ee24",
+    "original_stream_session": 77166,
+    "request": "output/terminal-exterior-closure-review-request.json",
+    "stream": "output/terminal-exterior-closure-review-stream.sse",
+    "original_prompt_match": true,
+    "prompt_erratum": "The review prompt transcribed the charge with a missing factor2. The actual authoritative charge is q=|M|+|original supports inside endpoint tiles|-2*|endpoint tiles|, as in check_incident_eight_north_transfer.py. Correct this in the same conversation before treating any verdict as applying to the actual model; original request preserved.",
+    "terminal": "output/terminal-exterior-closure-review-terminal.json",
+    "response_chars": 18682,
+    "final_followup": {
+      "status": "COMPLETED_ACCEPT",
+      "task_id": "3a0e1918-c434-47be-a3cb-24c71dd0271a",
+      "conversation_id": "conv_37f5b6b1df38ee24",
+      "response_chars": 6110,
+      "observed_model": "gpt_6/pro",
+      "stream_terminal_session_response_exact_match": true,
+      "terminal": "output/terminal-exterior-closure-charge-correction-terminal.json",
+      "request": "output/terminal-exterior-closure-charge-correction-request.json",
+      "stream": "output/terminal-exterior-closure-charge-correction-stream.sse",
+      "scope": "All three written claims accepted under actual factor2 charge; source and inventory unchanged. Original REVISE retained for prompt transcription correction. Reviewer did not execute code."
+    }
+  },
+  "original_research": {
+    "status": "COMPLETED_NEW_EXTERIOR_SIGN_ARGUMENT_RECEIVED",
+    "task_id": "49a148fa-80db-4645-8283-fb7aed214e4d",
+    "conversation_id": "conv_bdfde13335de93f1",
+    "original_stream_session": 83112,
+    "terminal": "output/arbitrary-exterior-compensation-research-terminal.json"
+  },
+  "limitations": "Canonical source model only. One-source/classification/amplification/anchored monotonicity note ACCEPT. Later localized exterior-sign general written theorem in LOCALIZED_COMPLETE_EXTERIOR_BUDGET.md passes own controls/scoped Lean; independent final review pending. Sharp exterior minimum, general grid decomposition/marked allocation/unrestricted5/6/triple equality remain OPEN."
+}

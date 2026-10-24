@@ -1,0 +1,934 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "family_cases": 7992,
+  "symmetry_images": 384,
+  "tail_extension_checks": 2664,
+  "family": [
+    {
+      "width": 3,
+      "optional_patterns": 1,
+      "tail_choices": 6
+    },
+    {
+      "width": 4,
+      "optional_patterns": 3,
+      "tail_choices": 6
+    },
+    {
+      "width": 5,
+      "optional_patterns": 9,
+      "tail_choices": 6
+    },
+    {
+      "width": 6,
+      "optional_patterns": 24,
+      "tail_choices": 6
+    },
+    {
+      "width": 7,
+      "optional_patterns": 64,
+      "tail_choices": 6
+    },
+    {
+      "width": 8,
+      "optional_patterns": 168,
+      "tail_choices": 6
+    },
+    {
+      "width": 9,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 10,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 11,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 12,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 13,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 14,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 15,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 16,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 17,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 18,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 19,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 20,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 21,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 22,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 23,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    },
+    {
+      "width": 24,
+      "optional_patterns": 4,
+      "tail_choices": 6
+    }
+  ],
+  "exhaustive": [
+    {
+      "source_shape": [
+        2,
+        2
+      ],
+      "examined": 25,
+      "qualifying": 25,
+      "normalization_bundles": 14,
+      "residual_capped_components": 0
+    },
+    {
+      "source_shape": [
+        2,
+        4
+      ],
+      "examined": 548,
+      "qualifying": 548,
+      "normalization_bundles": 452,
+      "residual_capped_components": 0
+    },
+    {
+      "source_shape": [
+        2,
+        6
+      ],
+      "examined": 12179,
+      "qualifying": 12179,
+      "normalization_bundles": 11660,
+      "residual_capped_components": 0
+    },
+    {
+      "source_shape": [
+        3,
+        4
+      ],
+      "examined": 11544,
+      "qualifying": 9623,
+      "normalization_bundles": 9086,
+      "residual_capped_components": 0
+    }
+  ],
+  "neutral_multisquare": {
+    "shape": [
+      8,
+      12
+    ],
+    "selected": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "matching": [
+      [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ]
+      ]
+    ],
+    "endpoint_squares": 3,
+    "frozen_endpoints": 10,
+    "receiver": {
+      "endpoints": 10,
+      "tiles": 6,
+      "selected": 7,
+      "charge_twice": 0,
+      "straight": false,
+      "saturated_endpoints": 2,
+      "transfers": 2
+    },
+    "refutes": "Every frozen thin square-bearing component has receiver charge at most minus one.",
+    "global_coefficient_one_refuted": false
+  },
+  "mixed_components": {
+    "initial_shape": [
+      76,
+      24
+    ],
+    "selected": [
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        9
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        2,
+        16
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        19
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        13
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        16,
+        9
+      ],
+      [
+        16,
+        14
+      ],
+      [
+        27,
+        5
+      ],
+      [
+        28,
+        4
+      ],
+      [
+        29,
+        6
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        31,
+        6
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        33,
+        7
+      ],
+      [
+        34,
+        4
+      ],
+      [
+        35,
+        7
+      ],
+      [
+        36,
+        4
+      ],
+      [
+        37,
+        7
+      ],
+      [
+        39,
+        4
+      ],
+      [
+        40,
+        7
+      ],
+      [
+        41,
+        5
+      ],
+      [
+        42,
+        7
+      ],
+      [
+        43,
+        6
+      ],
+      [
+        53,
+        12
+      ],
+      [
+        54,
+        13
+      ],
+      [
+        55,
+        11
+      ],
+      [
+        55,
+        14
+      ],
+      [
+        55,
+        16
+      ],
+      [
+        56,
+        8
+      ],
+      [
+        56,
+        10
+      ],
+      [
+        56,
+        18
+      ],
+      [
+        57,
+        6
+      ],
+      [
+        57,
+        15
+      ],
+      [
+        57,
+        17
+      ],
+      [
+        58,
+        7
+      ],
+      [
+        58,
+        9
+      ],
+      [
+        58,
+        11
+      ],
+      [
+        58,
+        14
+      ],
+      [
+        59,
+        12
+      ],
+      [
+        60,
+        14
+      ],
+      [
+        61,
+        13
+      ]
+    ],
+    "matching": [
+      [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      [
+        [
+          4,
+          8
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      [
+        [
+          3,
+          9
+        ],
+        [
+          3,
+          10
+        ]
+      ],
+      [
+        [
+          4,
+          10
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      [
+        [
+          3,
+          11
+        ],
+        [
+          3,
+          12
+        ]
+      ],
+      [
+        [
+          4,
+          12
+        ],
+        [
+          4,
+          13
+        ]
+      ],
+      [
+        [
+          3,
+          13
+        ],
+        [
+          3,
+          14
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          15
+        ],
+        [
+          3,
+          16
+        ]
+      ],
+      [
+        [
+          3,
+          17
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      [
+        [
+          14,
+          8
+        ],
+        [
+          14,
+          9
+        ]
+      ],
+      [
+        [
+          15,
+          9
+        ],
+        [
+          15,
+          10
+        ]
+      ],
+      [
+        [
+          14,
+          10
+        ],
+        [
+          14,
+          11
+        ]
+      ],
+      [
+        [
+          15,
+          11
+        ],
+        [
+          15,
+          12
+        ]
+      ],
+      [
+        [
+          14,
+          12
+        ],
+        [
+          14,
+          13
+        ]
+      ],
+      [
+        [
+          15,
+          13
+        ],
+        [
+          15,
+          14
+        ]
+      ],
+      [
+        [
+          14,
+          7
+        ],
+        [
+          14,
+          6
+        ]
+      ],
+      [
+        [
+          32,
+          5
+        ],
+        [
+          33,
+          5
+        ]
+      ],
+      [
+        [
+          33,
+          6
+        ],
+        [
+          34,
+          6
+        ]
+      ],
+      [
+        [
+          34,
+          5
+        ],
+        [
+          35,
+          5
+        ]
+      ],
+      [
+        [
+          35,
+          6
+        ],
+        [
+          36,
+          6
+        ]
+      ],
+      [
+        [
+          36,
+          5
+        ],
+        [
+          37,
+          5
+        ]
+      ],
+      [
+        [
+          37,
+          6
+        ],
+        [
+          38,
+          6
+        ]
+      ],
+      [
+        [
+          38,
+          5
+        ],
+        [
+          39,
+          5
+        ]
+      ],
+      [
+        [
+          39,
+          6
+        ],
+        [
+          40,
+          6
+        ]
+      ],
+      [
+        [
+          31,
+          5
+        ],
+        [
+          30,
+          5
+        ]
+      ],
+      [
+        [
+          29,
+          5
+        ],
+        [
+          28,
+          5
+        ]
+      ],
+      [
+        [
+          41,
+          6
+        ],
+        [
+          42,
+          6
+        ]
+      ],
+      [
+        [
+          56,
+          12
+        ],
+        [
+          56,
+          13
+        ]
+      ],
+      [
+        [
+          55,
+          12
+        ],
+        [
+          54,
+          12
+        ]
+      ],
+      [
+        [
+          56,
+          14
+        ],
+        [
+          56,
+          15
+        ]
+      ],
+      [
+        [
+          56,
+          16
+        ],
+        [
+          56,
+          17
+        ]
+      ],
+      [
+        [
+          57,
+          13
+        ],
+        [
+          58,
+          13
+        ]
+      ],
+      [
+        [
+          59,
+          13
+        ],
+        [
+          60,
+          13
+        ]
+      ],
+      [
+        [
+          57,
+          12
+        ],
+        [
+          57,
+          11
+        ]
+      ],
+      [
+        [
+          57,
+          10
+        ],
+        [
+          57,
+          9
+        ]
+      ],
+      [
+        [
+          57,
+          8
+        ],
+        [
+          57,
+          7
+        ]
+      ],
+      [
+        [
+          69,
+          3
+        ],
+        [
+          70,
+          3
+        ]
+      ],
+      [
+        [
+          69,
+          4
+        ],
+        [
+          70,
+          4
+        ]
+      ]
+    ],
+    "initial_components": 5,
+    "normalization_bundles": 1,
+    "receivers": [
+      {
+        "endpoints": 20,
+        "tiles": 11,
+        "selected": 12,
+        "charge_twice": 0,
+        "straight": false,
+        "saturated_endpoints": 2,
+        "transfers": 2
+      },
+      {
+        "endpoints": 14,
+        "tiles": 5,
+        "selected": 2,
+        "charge_twice": -2,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      },
+      {
+        "endpoints": 22,
+        "tiles": 12,
+        "selected": 12,
+        "charge_twice": -2,
+        "straight": false,
+        "saturated_endpoints": 1,
+        "transfers": 1
+      },
+      {
+        "endpoints": 18,
+        "tiles": 9,
+        "selected": 8,
+        "charge_twice": -2,
+        "straight": false,
+        "saturated_endpoints": 0,
+        "transfers": 0
+      }
+    ],
+    "no_endpoint_tiles": 419,
+    "empty_deficit": 813,
+    "objective": 96,
+    "area": 1824
+  },
+  "scope": "Controls for the written arbitrary thin-component classification, all-phase capped receiver formulas, frozen converse and normalization bound. Enumeration does not replace general proofs; no universal grid bound claimed."
+}

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_WRITTEN_UNBOUNDED_THEOREM_EXACT_CONTROLS_SCOPED_LEAN_INDEPENDENT_ACCEPT",
+  "proof": "docs/SIX_ROW_TRANSVERSE_U_BUDGET.md",
+  "verifier": "develop/check_six_row_transverse_budget.py",
+  "full_controls": "output/six-row-transverse-budget-controls.json",
+  "theorem": "Any finite endpoint-disjoint family of full transverse U(h,d,f) in common aligned even height h>=6, arbitrary even independent depths d,f>=4 and integer bar starts, either direction: Phi=a+(h-1)b-hp-e, p a matching of odd adjacent bars, 0<=e<=2(b-2p). Hence Phi>=a+(h/2-1)b>=a+2b>=numberSources. No completeness required. Coefficients sharp.",
+  "complete_six_row_corollary": "In the spanning-upward-U pocket, if ALL extra sources are transverse U, their whole budget is at least source count. Completeness excludes exactly one source via forced terminal support and old side support. Nonempty pocketPhi>=2, chamberDelta>=7. Explicit opposite-bar pairs with unequal complementary even depths attain2 for every evenW>=12, locally complete only; global extension not asserted.",
+  "complete_homogeneous_global_corollary": "If the ENTIRE complete retained-support fusion consists of common-aligned-even-height transverse U sources, the established all-phase ledger has Npositive=G=0 and sigma>=Phi. Therefore selected+matching<=mn/2-a-(h/2-1)b, coefficient1 instead of5/6 with additional guaranteed slack. Does NOT apply to just a pocket within a seed containing other source orientations. Added after original84340 submission; OUTSIDE original review scope; separately independently ACCEPT in task779e215f. Written deduction, no new end-to-end Lean claim.",
+  "python": {
+    "exit_code": 0,
+    "final_execution_chunk": "c9722e",
+    "disjoint_pair_controls": 27782,
+    "greedy_batches": 100,
+    "complete_opposed_pair_controls": 46,
+    "parallel_even_height_controls": 135,
+    "forbidden_singleton_controls": 1116,
+    "complete_ambient_controls": 9,
+    "largest_height_or_pocket_width": 2000,
+    "scope": "Independent canonical full T/H/M reconstruction; exact mixed tiles and emitting-owner event sets, both directions/parities, all e=0/1/2 interface kinds, adjacent-bar matching, unequal-leg local complete witnesses and batches. Nine entire ambient complete fusions directly check support/endpoint feasibility and actual area slack againstPhi. Separate written arbitrary-parameter proof; controls not used as an unbounded proof."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SixRowTransverseBudget.lean",
+    "version": "4.33.0",
+    "final_execution_chunk": "595c3b",
+    "exit_code": 0,
+    "local_theorems": 17,
+    "individual_declaration_axiom_audits": 24,
+    "axioms": "Only ordinary propext/Classical.choice/Quot.sound or none. No warnings/sorry/native.",
+    "preflight_memory_free_percent": 65,
+    "real_lean_lake_processes_before_run": [],
+    "scope": "Six-row endpoint/bar predicate; bar clearance, touching bars face away and cannot chain, no vertical foreign adjacency, original tip/support exclusions, singleton under explicitly stated inherited-completeness conditions, exact budget and pair arithmetic. Full original source adapters, charge and event classification, finite matching count, general-height extension and complete occupied-set assembly remain written.",
+    "initial_run": "1207 failed two proof goals simplified to True; corrected to True.intro before final passing run."
+  },
+  "finite_discovery": {
+    "require_rotor": "UNSAT W8,10,12,14,16,20; UNKNOWN timeout W24,30. No universal rotor exclusion inferred.",
+    "nonempty_budget_at_most_one": "UNSAT W8,10,12,14,16,20,24. No unrestricted all-width bound inferred.",
+    "source": "develop/discover_six_row_chamber_budget.py"
+  },
+  "review": {
+    "status": "COMPLETED_ACCEPT_SUPPORT_COUNT_EXPLANATION_CORRECTED",
+    "original_stream_session": 84340,
+    "request": "output/six-row-transverse-budget-review-request.json",
+    "stream": "output/six-row-transverse-budget-review-stream.sse",
+    "pool_preflight": {
+      "ready": 17,
+      "busy": 8,
+      "needs_attention": 1,
+      "queued": 0
+    },
+    "scope": "Self-contained attachment with complete new six-row/general-height proof, verifier before additional singleton controls, final kernel-checked Lean, corrected predecessor chain formula, full chamber/localization/axial prerequisites and exact canonical source/affine/charge/inventory definitions. All mathematical claims and singleton proof included; added1116 computational singleton controls not claimed reviewed. No worker changes or duplicate live task.",
+    "task_id": "97e42b24-fba2-4e91-8e66-253ed2444051",
+    "terminal": "output/six-row-transverse-budget-review-terminal.json",
+    "response_chars": 20350,
+    "observed_model": "gpt_6/pro",
+    "correction": "Even-bar inside supports are t-2 inner lateral plus two beyond-tip supports; table and all conclusions unchanged.",
+    "execution_scope": "Independent written/model audit and fresh exact reconstruction; reviewer did not run Lean or submitted verifier."
+  },
+  "limitations": "Remaining horizontal-U/rotor interactions, unrestricted complete-pocket budget, exterior sign, global complete extension existence, universal source decomposition, global5/6 improvement and rectangular-grid triple equality remain OPEN. Submitted manuscript/main/C4/sharedCI unchanged. No mail actions.",
+  "coefficient_one_review": {
+    "status": "COMPLETED_ACCEPT",
+    "task_id": "779e215f-7f40-4cd7-8042-14ed23ac9601",
+    "original_stream_session": 35113,
+    "terminal": "output/transverse-coefficient-one-review-terminal.json",
+    "response_chars": 5688,
+    "observed_model": "gpt_6/pro",
+    "scope": "Separate written ledger deduction conditional on established ledger and entire complete common-phase endpoint-disjoint transverse source family. No clipped supports. Explicit hypotheses retained. Not a general grid theorem or new end-to-end Lean proof."
+  }
+}

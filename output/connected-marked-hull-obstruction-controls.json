@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "witness": {
+    "length": 70,
+    "full": {
+      "owners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "endpoints": 668,
+      "matching": 334,
+      "selected": 184,
+      "endpoint_components": 1,
+      "shape": [
+        98,
+        22
+      ],
+      "ambient_slack": 560,
+      "positive": 1,
+      "marked": 2,
+      "activated_positive": 1,
+      "unused_u_triples": 5,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 5,
+      "sole_irregular_pair": 17,
+      "mutual_non_event": 0,
+      "mixed_three": 3,
+      "boundary_cost": 42,
+      "event_reserve": 24,
+      "exact_joint_margin": 23
+    },
+    "least_marked_hull": {
+      "owners": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "endpoints": 496,
+      "matching": 248,
+      "selected": 120,
+      "endpoint_components": 1,
+      "shape": [
+        88,
+        12
+      ],
+      "ambient_slack": 160,
+      "positive": 1,
+      "marked": 2,
+      "activated_positive": 1,
+      "unused_u_triples": 5,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 0,
+      "sole_irregular_pair": 45,
+      "mutual_non_event": 0,
+      "mixed_three": 0,
+      "boundary_cost": 90,
+      "event_reserve": 48,
+      "exact_joint_margin": 47
+    },
+    "witness_owners": [
+      {
+        "positive_owner": 1,
+        "side": 0,
+        "witness_owners": [
+          4
+        ]
+      },
+      {
+        "positive_owner": 1,
+        "side": 1,
+        "witness_owners": [
+          4
+        ]
+      }
+    ],
+    "source_seed": [
+      1,
+      4
+    ],
+    "least_hull": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "extension_generated_by_one_added_owner": 5,
+    "added_sources_alone_feasible": false,
+    "negative_separator_branch": {
+      "separator_owner": 3,
+      "shared_negative_mass": 77,
+      "positive": 0,
+      "marked": 0,
+      "reserve": 53,
+      "endpoint_components": 1,
+      "reserve_below_shared_mass": true
+    },
+    "signed_extension": {
+      "negative_mass": 17,
+      "mixed_full_gain": 40,
+      "old_new": 77,
+      "new_old": 38,
+      "new_new": 6,
+      "reserve_change": -24
+    },
+    "insertion_control": "PASS"
+  },
+  "parameter_controls": [
+    {
+      "length": 6,
+      "full_reserve": 24,
+      "hull_reserve": 16,
+      "negative_mass": 17,
+      "mixed_full_gain": 8,
+      "old_new": 13,
+      "new_old": 6,
+      "new_new": 6,
+      "reserve_change": 8
+    },
+    {
+      "length": 8,
+      "full_reserve": 24,
+      "hull_reserve": 17,
+      "negative_mass": 17,
+      "mixed_full_gain": 9,
+      "old_new": 15,
+      "new_old": 7,
+      "new_new": 6,
+      "reserve_change": 7
+    },
+    {
+      "length": 12,
+      "full_reserve": 24,
+      "hull_reserve": 19,
+      "negative_mass": 17,
+      "mixed_full_gain": 11,
+      "old_new": 19,
+      "new_old": 9,
+      "new_new": 6,
+      "reserve_change": 5
+    },
+    {
+      "length": 24,
+      "full_reserve": 24,
+      "hull_reserve": 25,
+      "negative_mass": 17,
+      "mixed_full_gain": 17,
+      "old_new": 31,
+      "new_old": 15,
+      "new_new": 6,
+      "reserve_change": -1
+    },
+    {
+      "length": 40,
+      "full_reserve": 24,
+      "hull_reserve": 33,
+      "negative_mass": 17,
+      "mixed_full_gain": 25,
+      "old_new": 47,
+      "new_old": 23,
+      "new_new": 6,
+      "reserve_change": -9
+    },
+    {
+      "length": 70,
+      "full_reserve": 24,
+      "hull_reserve": 48,
+      "negative_mass": 17,
+      "mixed_full_gain": 40,
+      "old_new": 77,
+      "new_old": 38,
+      "new_new": 6,
+      "reserve_change": -24
+    },
+    {
+      "length": 100,
+      "full_reserve": 24,
+      "hull_reserve": 63,
+      "negative_mass": 17,
+      "mixed_full_gain": 55,
+      "old_new": 107,
+      "new_old": 53,
+      "new_new": 6,
+      "reserve_change": -39
+    }
+  ],
+  "scope": "Independent reconstruction of Oracle-proposed nine-source family. Both endpoint graphs connected; exact actual marked hull, mandatory supports, matching, degrees, tile/event reserves, signed loss and two-row insertion checked. Finite controls do not replace the written all-parameter proof. Refutes least-hull reserve comparison, including connected hulls; full allocation and rectangular-grid equality OPEN. No Lean claim for this nine-source family."
+}

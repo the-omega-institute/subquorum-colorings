@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "execution_location": "Local Mac selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/EndpointComponentReserve.lean",
+  "successful_source_check": {
+    "exec_session": 29618,
+    "exit_code": 0,
+    "memory_free_percent": 41
+  },
+  "successful_object_build": {
+    "exec_session": 57593,
+    "exit_code": 0,
+    "memory_free_percent": 40
+  },
+  "individual_audit": {
+    "exec_session": 21279,
+    "exit_code": 0,
+    "memory_free_percent": 38
+  },
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 13,
+  "declarations": [
+    "qualifying_component_reserve",
+    "reserve_dominates_indicator",
+    "component_count_reserve",
+    "exact_margin_sum",
+    "component_count_slack",
+    "joint_from_component_count",
+    "negative_total_has_negative_component",
+    "nonexceptional_failure_needs_two_demands",
+    "one_double_per_component_pays",
+    "component_defect_parity",
+    "one_reserve_concentrates",
+    "integer_sum_nonnegative",
+    "nonnegative_remainder_sum"
+  ],
+  "individual_axiom_audit": {
+    "qualifying_component_reserve": [
+      "propext",
+      "Quot.sound"
+    ],
+    "reserve_dominates_indicator": [
+      "propext",
+      "Quot.sound"
+    ],
+    "component_count_reserve": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_margin_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "component_count_slack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "joint_from_component_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "negative_total_has_negative_component": [
+      "propext",
+      "Quot.sound"
+    ],
+    "nonexceptional_failure_needs_two_demands": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "one_double_per_component_pays": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "component_defect_parity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "one_reserve_concentrates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "integer_sum_nonnegative": [
+      "propext",
+      "Quot.sound"
+    ],
+    "nonnegative_remainder_sum": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Conditional finite-list whole-component reserve count and margin addition, sufficient joint allocation, negative-component reduction, nonexceptional failure demand, one double mark per component at arbitrary reserve, component parity and single-reserve concentration. Physical connected-source restriction, support-retention/mark stability, endpoint tile connectivity and exact additive ledger adapters remain written; no arbitrary-fusion end-to-end or grid theorem.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-component-check/SubQuorum",
+    "lean -o /tmp/subquorum-component-check/SubQuorum/EndpointComponentReserve.olean formal/SubQuorum/EndpointComponentReserve.lean",
+    "Import SubQuorum.EndpointComponentReserve in a temporary Audit.lean and #print axioms for all declarations above, with LEAN_PATH=/tmp/subquorum-component-check."
+  ]
+}

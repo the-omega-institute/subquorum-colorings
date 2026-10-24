@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "source": "formal/SubQuorum/SourceRetentionClosure.lean",
+  "lean_version": "4.33.0",
+  "theorem_declarations": 11,
+  "theorems": [
+    "occupied_iff_endpoint_or_selected",
+    "a_second_occupied_neighbor_forces_consumption",
+    "feasible_iff_horn_closed",
+    "arbitrary_intersections_are_closed",
+    "arbitrary_intersections_are_feasible",
+    "hull_contains_seed",
+    "hull_is_closed",
+    "hull_is_least_closed_completion",
+    "hull_is_feasible",
+    "hull_is_monotone",
+    "hull_is_idempotent"
+  ],
+  "final_source_build": {
+    "exec_session": 69811,
+    "exit_code": 0,
+    "preflight_free_memory_percent": 49,
+    "real_comm_basename_lean_lake_processes": []
+  },
+  "individual_axiom_audit": {
+    "exec_session": 16147,
+    "exit_code": 0,
+    "output_chunk": "c13fa6",
+    "preflight_free_memory_percent": 46,
+    "real_comm_basename_lean_lake_processes": [],
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "initial_source_attempt": {
+    "exec_session": 89789,
+    "exit_code": 1,
+    "reason": "Std does not provide by_contra tactic; replaced with Classical.byContradiction. This failed attempt does not validate the final source."
+  },
+  "scope": "Source-level abstract anchored graph semantics: exact occupied-set identity, second-neighbor consumption, feasibility iff definite-Horn closure, arbitrary-intersection feasibility and the least feasible hull/order properties. Endpoint ownership uniqueness, own anchors and full feasibility are explicit hypotheses. Complete U/rotor constructor adapters, finite forward-iteration termination, connectedness and actual canonical-mark adapters remain written. No reserve inequality or full allocation claim."
+}

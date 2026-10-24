@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "machine": "local Mac selected by user",
+  "lean_version": "4.33.0",
+  "command": "lean --stdin < formal/SubQuorum/FrozenMissingPortBPTerminalInjection.lean",
+  "preflight": {
+    "chunk": "b1d261",
+    "memory_free_percent": 44,
+    "active_real_lean_lake_comm_basename": "none"
+  },
+  "execution": {
+    "session_id": 55995,
+    "result_chunk": "5ff680",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "theorems": 2,
+  "individual_axiom_audits": [
+    {
+      "theorem": "SubQuorum.FrozenMissingPortBPTerminalInjection.no_closed_freezing_dependency",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenMissingPortBPTerminalInjection.no_two_class_freezing_cycle",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "sorry": false,
+  "native_evaluation": false,
+  "scope": "Generic nonempty closed dependency set cannot have strictly earlier freezing predecessors; two-class BP/mates-of-missing specialization. Actual grid geometry, Hall obstruction classification and constructive BP-terminal injection remain written proofs."
+}

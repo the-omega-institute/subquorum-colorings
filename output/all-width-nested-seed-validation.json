@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-22",
+  "status": "PASS_LOCAL_AND_ALL_WIDTH_WRITTEN_REVIEW_ACCEPT_SPACING_COROLLARY_SEPARATE",
+  "proof": "docs/ALL_WIDTH_NESTED_SEED_NONEXTENSION.md",
+  "verifier": "develop/check_wide_gate_sealed_return_obstruction.py",
+  "theorem": "Explicit complete full-even-U/standard-rotor model, even W>=6,a>=2,D/F>=a+12. THREE retained originals A=U(W+2,D,F)chart(r,c-1),B=U(W,4,4)chart(a+r,c),C=U(W,4,4)chart(a+8+r,c) have NO complete extension in ANY lattice orientations. Hence ALL n>=2 nested even-bar negative partial families excluded, at every even W.",
+  "python": {
+    "session": 89822,
+    "exit_code": 0,
+    "normalized_cases": 18,
+    "normalized_U": 62,
+    "normalized_rotors": 33,
+    "full_short_U_shapes": 156,
+    "sealed_gates": 189,
+    "excluded_U_roles": 364800,
+    "excluded_rotor_roles": 3024,
+    "reflection_and_even_translation_controls": "PASS",
+    "large_controls": [
+      {
+        "W": 200,
+        "k": 100,
+        "f": 40,
+        "sealed_gates": 54,
+        "U_roles": 54784,
+        "rotor_roles": 864
+      },
+      {
+        "W": 2000,
+        "k": 1000,
+        "f": 900,
+        "sealed_gates": 94,
+        "U_roles": 85504,
+        "rotor_roles": 1504
+      }
+    ]
+  },
+  "lean": {
+    "source": "formal/SubQuorum/WideGateSealedReturnObstruction.lean",
+    "version": "4.33.0",
+    "session": 3216,
+    "exit_code": 0,
+    "explicit_declarations": 20,
+    "local_theorems": 13,
+    "preflight_memory_free_percent": 42,
+    "real_lean_lake_processes": [],
+    "individual_axiom_audit": "Every declaration ordinary propext/Classical.choice/Quot.sound only. Final no warnings/sorry/native. Initial simplification arithmetic and unavailable Int lemma corrected.",
+    "scope": "Normalized top/bottom/side geometry, all-bar-column horizontalU collision, all horizontal rotor directions, gate bounds, east-terminal/south-stem/south-bar/south-rotor collisions and frontier arithmetic. Full original-source-to-role/support and complete-extension assembly WRITTEN."
+  },
+  "predecessor_review": {
+    "task_id": "4ea2ca1d-03f9-4e8c-9e82-383e2a72f7a2",
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_session": 15686,
+    "exit_code": 0,
+    "response_chars": 19396,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/wide-gate-escape-pair-review-terminal.json",
+    "scope": "Original BOTH wide layers only, not far-offset addendum or all-width closure. Two coordinate-wording corrections applied. Written review, no independent execution."
+  },
+  "review": {
+    "task_id": "da0dcf4e-7214-4c46-bd46-1749adde75db",
+    "conversation_id": "conv_ed4025a182e9f9d9",
+    "original_stream_session": 89055,
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_exit_code": 0,
+    "response_chars": 18509,
+    "exact_stream_terminal_match": true,
+    "observed_model": "gpt_6/pro",
+    "receipt": "output/all-width-nested-seed-review-terminal.json",
+    "request": "output/all-width-nested-seed-review-request.json",
+    "scope": "All-width closure plus earlier far-offset exclusion accepted as written mathematics, not independently executed. Later spacing corollary outside this packet."
+  },
+  "interpretation": "Earlier selected-inventory formulas remain exact, but their actual-owner complete-extension implications for THIS seed are now vacuous. No global compensation improvement or target counterexample follows.",
+  "open": "Unequal/deeper inner sources, other multicyclic contacts, mixed-direction complete families and unified allocation, global5/6 and rectangular-grid triple equality. Leave now-excluded seed.",
+  "post_submission_spacing_corollary": {
+    "claim": "In a complete extension, coextensive positive U(W,4,4) inside one U(W+2,D,F) with even bar rows and walls covering every tip must have successive bar gaps>=10. Gap6 excluded by one EASTonly gate, gap8 by main all-width theorem; span>=10(n-1).",
+    "validation": "FourW6_8_20_100 original-source controls1024U32rotor rolesPASS, invoked separately after main89822PASS. New generalU/rotor/gap arithmetic Lean final3216PASS20decl13theorems42percentFreeIdle.",
+    "review_scope": "ADDED_AFTER_da0dcf4e_SUBMISSION_NOTinInitialPacket"
+  }
+}

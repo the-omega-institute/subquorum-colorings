@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "machine": "user-authorized local Mac",
+  "toolchain": "Lean 4.33.0",
+  "source": "formal/SubQuorum/SecondaryTenBatchTerminalBudget.lean",
+  "exec_session": 92162,
+  "exit_code": 0,
+  "theorem_count": 27,
+  "warnings": false,
+  "sorry_or_native_axioms": false,
+  "preflight": {
+    "memory_free_percent": 47,
+    "real_lean_lake_processes": [],
+    "process_detection": "basename of comm equals lean or lake"
+  },
+  "axioms_by_declaration": {
+    "terminal_is_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "terminal_only_inward_neighbor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "different_terminal_slots": [
+      "propext",
+      "Quot.sound"
+    ],
+    "three_claims_repeat_slot": [
+      "propext"
+    ],
+    "no_three_distinct_terminal_claims": [
+      "propext"
+    ],
+    "owner_mass_pays_two_claims": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "batch_remaining_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_batch_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "batch_compensation_iff_exterior_paid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "batch_spare_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "opposing_bar_collision_free_rows": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "opposing_bars_exterior_debit": [
+      "propext",
+      "Quot.sound"
+    ],
+    "shared_consumer_baseline_loss": [
+      "propext",
+      "Quot.sound"
+    ],
+    "shared_consumer_loss_negative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fixed_consumer_blocks_east_U": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "fixed_consumer_blocks_east_rotor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "short_right_upper_hits_shared": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "long_upper_hits_reflected_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "short_left_upper_hits_lower_V": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "middle_left_upper_hits_reflected_V": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "every_upper_U_hits_opposing_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_disjoint_upper_U_consumer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "short_reflected_bases_overlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "separated_reflected_bases_row_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "reflected_pair_compensation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "same_slot_same_anchor": [],
+    "physical_anchor_forbids_duplicate": []
+  },
+  "scope": "Terminal/anchor geometry, slot pigeonhole, single-owner and finite-list budgets, conditional ledger arithmetic, complete opposing-prefix upper-U collision alternatives and reflected breadth classification. Full role catalogue, complete-family implication, event/tile partitions and final theorems remain written."
+}

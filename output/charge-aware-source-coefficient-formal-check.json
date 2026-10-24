@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac selected by user",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/CompleteSourceCoefficient.lean",
+  "source_check_exit_code": 0,
+  "object_build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "preflight": {
+    "memory_free_percent_before_object": 40,
+    "memory_free_percent_before_audit": 40,
+    "active_lean_lake_before_object": [],
+    "active_lean_lake_before_audit": [],
+    "process_enumeration": "ps -acxo pid=,comm=,rss= with basename(comm); ordinary path comm output truncates on this Mac."
+  },
+  "new_declarations": [
+    {
+      "name": "SubQuorum.CompleteSourceCoefficient.negative_U_matching_covers_charge",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.CompleteSourceCoefficient.combined_source_matching_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.CompleteSourceCoefficient.universal_charge_scaled_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.CompleteSourceCoefficient.nonexceptional_charge_scaled_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.CompleteSourceCoefficient.universal_charge_boundary_coefficient",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SubQuorum.CompleteSourceCoefficient.nonexceptional_charge_boundary_coefficient",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "audit_stdout": "'SubQuorum.CompleteSourceCoefficient.negative_U_matching_covers_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompleteSourceCoefficient.combined_source_matching_budget' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompleteSourceCoefficient.universal_charge_scaled_margin' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompleteSourceCoefficient.nonexceptional_charge_scaled_margin' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompleteSourceCoefficient.universal_charge_boundary_coefficient' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CompleteSourceCoefficient.nonexceptional_charge_boundary_coefficient' depends on axioms: [propext,\n Quot.sound]\n",
+  "forbidden_axioms_absent": true,
+  "scope": "Six new arithmetic source-cost/scaled-slack/boundary declarations, with all13 file declarations compiling. Physical original-charge formulas, ownership sum and existing geometric compensation are written dependencies. Does not prove arbitrary-grid decomposition."
+}

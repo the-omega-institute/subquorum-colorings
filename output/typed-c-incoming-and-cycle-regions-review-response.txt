@@ -1,0 +1,124 @@
+Verdict: ACCEPTThe three new written conclusions are valid under the stated complete-source hypotheses and the supplied inherited source-profile, occurrence-injection, and budget results. I found no missing physical orientation, recurring-owner loophole, nested-cycle counterexample, or rounding error requiring revision.The new region-separation argument establishes pairwise disjointness of the actual interior absorber-source families, including for nested pure U01 cycles. Its essential ingredients are present: a forced point lies on no specified neutral curve; its owner differs from every source of every chosen pure U01 cycle; and its unit edge to the generating curve determines its side of every other curve.The Lean propositions have substantially narrower scope than these written geometric theorems. In particular, the quota-aggregation proposition has no source sets or disjointness statement: the identification of a sum of source counts with a union cardinality comes from the written planar proof.New conclusionVerdictDecisive pointA negative C second corner is phase10, and the negative pool splits exactly by phaseACCEPTThe two possible phase01 terminal orientations are exhaustive, and each forces a complete-source endpoint crossing.An actual incoming U10 source protects a positive terminal activation from all four positive claim familiesACCEPTOne consumed terminal support suffices for activation; every route-B companion crosses the incoming source; cap and C/D exclusions preserve the identity of the owner containing the distinguishing pair.Pure U01 cycles have disjoint interior absorber families and additive rounded quotasACCEPTOwner exclusion permits connected-source containment, and the unit anchor edge prevents an outer cycle’s inward absorber from lying inside a nested cycle.This verdict does not establish  $\mu=N+R-G\ge0$ , the rectangular-grid equality  $\beta_2=\psi_{\rm sq}=SF_2$ , any reported execution, or any novelty claim.1. C second-corner phase exclusionThe incident and far-height labels are correctIn the normalized backfill tile
+$$Q_b=\{0,1\}\times\{-2,-1\},
+\qquad q=(1,-1),\quad r=(1,-2),$$
+the route-C owner is
+$$H(s,t)=(a+1-s,t-w-1),\qquad H\text{ from }U(w,b,a).$$
+The canonical right terminal  $(a,w)$  maps to  $q$ . Thus  $a$  is indeed the right incident height, and  $b$  is the independent left height. In particular,
+$$\{(u,-1):1\le u\le a+1\}\subseteq P_H,
+\qquad (a,-2)\in P_H.$$
+The latter point has inverse coordinate  $(1,w-1)$ .For
+$$F(s,t)=(t-1,s-h-1),\qquad F\text{ from }U(v,h,f),$$
+the incident stem supplies row  $0$ , columns  $-h-1,\ldots,-1$ , and
+$$F^{-1}(1,-h)=(1,2).$$
+Neither description requires equality of the two heights.The two phase01 terminal orientations are exhaustiveAt  $r$ , the north neighbor belongs to  $F$ , and the east neighbor belongs to  $H$ . Therefore an actual terminal owner  $J$  cannot have its inward incident stem pointing north or east.There is also a physical-profile restriction. At a phase01 terminal singleton, the two axial directions into its physical tile are:the outward stem direction, containing its beyond-tip support;the transverse direction toward the U interior, containing its original blank.Using the transverse exterior direction instead would give the positive terminal  $1P2T$  profile.Since  $r$  is the bottom-left corner of  $Q_b$ , these two intratile directions are north and east. Exactly two possibilities remain:Inward stemTransverse direction toward the U interiorNormalized sourceSouthEast $J_N(s,t)=(j+1-s,t-3)$ WestNorth $J_E(s,t)=(2-t,s-j-2)$ Both formulas use the canonical left terminal  $(j,1)$ . A right-terminal realization is included by reflecting the canonical source across its vertical axis and exchanging its left and right heights. This preserves the endpoint/support pattern and does not constrain the far height.Thus the proof does cover all physical terminal orientations, with the physical partition transported throughout.All four crossing branches workThe crossing calculations in C_SECOND_CORNER_PHASE_EXCLUSION.md are correct:CandidateConditionCommon endpointRelevant inverse coordinates $J_N,H$  $j+1\ge a$  $(a,-2)$  $H^{-1}=(1,w-1)$ ,  $J_N^{-1}=(j+1-a,1)$  $J_N,H$  $j+1<a$  $(j+1,-1)$  $J_N^{-1}=(0,2)$ ,  $H^{-1}=(a-j,w)$  $J_E,F$  $j+2\ge h$  $(1,-h)$  $F^{-1}=(1,2)$ ,  $J_E^{-1}=(j+2-h,1)$  $J_E,F$  $j+2<h$  $(0,-j-2)$  $J_E^{-1}=(0,2)$ ,  $F^{-1}=(h-j-1,1)$ In the first and third rows, the inverse row coordinate lies between  $0$  and the incident height, so the bar or stem supplies the endpoint. In the second and fourth rows, it lies between  $2$  and the incident height.Equality is correctly included. The equality  $j+1=a$  cannot occur for legal even  $j,a$ , but the argument covers it algebraically. The equality  $j+2=h$  can occur and is handled by the first  $J_E$  branch.Recurring owners do not escape the contradiction. The exact original profiles in  $Q_b$  are
+$$P_F\cap Q_b=\{(0,-2),(0,-1)\},\quad
+P_H\cap Q_b=\{q\},\quad
+P_J\cap Q_b=\{r\}.$$
+Hence  $J\ne F,H$ , independently of any recurrence elsewhere. The exhibited common endpoint contradicts original endpoint uniqueness.With the supplied rotor exclusion and singleton catalogue, this leaves precisely:a negative phase10 outer-bar-corner singleton; ora positive phase00 terminal activation.The proof does not incorrectly eliminate the positive branch.The phase-specific pool identities use one poolThe inherited selected negative families form one disjoint union:
+$$FnegSet,\ E_0,\ E_{1old},\ Cq,\ C^-r,\ Dx,\ D^-y,$$
+with the single complement  $L_{\rm new}$ .Restricting this union by fixed original phase gives
+$$2K_{01}
+ =Fneg_{01}+e_{01}+K_C+D_{01}+L_{01},$$
+
+$$2K_{10}
+ =Fneg_{10}+e_{10}+C^-+d+D_{10}+L_{10}.$$
+The new information is exactly that  $C^-r$  belongs entirely to the phase10 restriction. The  $Cq$  family is phase01, and the  $Dx$  family is phase10. Nothing is selected twice, and no additional copy of  $E_{1reg}$  enters the count.Dropping  $L_{10}\ge0$  gives the claimed phase10 capacity bound. Within the same qualified AA component, the inherited positive-exit exclusion gives  $C^-=K_C$  and  $D_{01}+D_{10}=d$ , yielding the stated specialization.These are valid resource-type refinements. They do not create reserve or remove the signed negative-source term.2. Incoming U10 sources and the activation remainderThe activation argument uses the correct definitionLet
+$$O=U(w,L,b),\qquad z=(b,w),$$
+and write
+$$p=(b+1,w-1),\qquad q=(b+1,w-2),\qquad \eta=(b+1,w).$$
+For the actual incoming source
+$$V(s,t)=(k+2-s,t+w-2),\qquad V\text{ from }U(v,k,f),\quad k\ge b,$$
+one has
+$$V^{-1}(p)=(k-b+1,1),\qquad
+V^{-1}(q)=(k-b+1,0).$$
+Because
+$$1\le k-b+1\le k,$$
+the first point is an original endpoint. At  $k=b$ , it is specifically a bar-row endpoint. Column  $0$  is never an endpoint, so  $q\notin P_V$ .The point  $\eta$  is the positive terminal’s original beyond-tip support. Its two distinct persistent endpoint neighbors are  $z$  and  $p$ . If  $\eta\notin P$ , mandatory retention selects it, contradicting the occupied-degree restriction. Therefore
+$$\eta\in P.$$
+This consumes at least one of the original terminal’s two intratile supports, which is exactly the stated definition of activation. Consumption of its other support is unnecessary.The boundary  $k=b$  is sound: there  $\eta$  itself has incoming inverse coordinate  $(1,2)$ , so it is already an incoming bar endpoint. The general retention argument remains valid.The B transport is fixed by the actual source geometryIn the supplied route-B coordinates, the positive terminal is
+$$x=(1,-a-1),$$
+with positive-source map
+$$(s,t)\longmapsto(t,-s-1).$$
+Its inward stem direction is east, its beyond-tip support is west, and its side support is north.At  $z$  in  $O$ , these directions are respectively north, south, and east. The actual incident stem distinguishes the two support directions; they cannot be freely interchanged while keeping the original source fixed.The resulting transport is exactly
+$$\Phi(r,c)=(-c-1,w+1-r),\qquad a=b.$$
+Composing the original companion map with  $\Phi$  gives
+$$F(s,t)=(h-s,w+2-t),\qquad F\text{ from }U(u,h,g).$$
+Thus: $F$  owns column  $w+1$  through rows  $0,\ldots,h$ ; $F$  owns the bar point  $(h,w-1)$ ; $V$  owns the bar point  $(k+1,w+1)$ ; $V$  owns column  $w-1$  through rows  $2,\ldots,k+2$ .The exhaustive alternatives are
+$$k+1\le h
+\quad\Longrightarrow\quad
+(k+1,w+1)\in P_F\cap P_V,$$
+and
+$$k+1>h
+\quad\Longrightarrow\quad
+(h,w-1)\in P_F\cap P_V.$$
+For the second branch,  $h\ge4$  and  $h<k+1$  place  $h$  within the incoming stem’s range. The first branch includes equality.The actual types distinguish the original owners:  $F$  is phase11 and  $V$  is phase10. These are fixed original phases, so recurrence elsewhere cannot identify them.This excludes every route-B output, including  $h=b+2$ , the cap case. No step uses  $w=6$ ,  $L>b$ , or a relation between the independent far heights.Both cap orientations have the required common ownerThe two normalized cap-owner maps give the following inverse coordinates:Cap-owner mapInverse of  $p$ Inverse of  $q$  $(s,t)\mapsto(b+2-s,w+2-t)$  $(1,3)$  $(1,4)$  $(s,t)\mapsto(b+2-t,w+2-s)$  $(3,1)$  $(4,1)$ The first pair lies in the original bar; the second lies in the incident stem. The legal dimension bounds include all four positions, including height  $4$ .These are the two possible orientations of the foreign cap elbow after exchanging the original arms when necessary.Crucially, one original cap owner contains both  $p$  and  $q$ . Since  $V$  lacks  $q$ , that owner differs from  $V$ . Their common endpoint  $p$  then gives the contradiction. The proof does not assume distinctness merely from the existence of a shared point.Thus the protected terminal is excluded from all  $F_{\rm pos}$ .The C/D stencil argument preserves owner groupingRelative to the positive second corner, the stipulated stencil is
+$$\{(-1,-2),(-1,-1),(-1,0),(-1,1)\}\subseteq P_F,$$
+
+$$\{(0,1),(1,1),(2,1)\}\subseteq P_H.$$
+Its intratile support directions are north and east; those at  $z$  are south and east. There are exactly two compatible assignments:North maps to south; east maps to east.The  $F$ -points  $(-1,-1)$ ,  $(-1,-2)$  map to  $p-z$ ,  $q-z$ .North maps to east; east maps to south.The  $H$ -points  $(1,1)$ ,  $(2,1)$  map to  $p-z$ ,  $q-z$ .In each case, a single original owner contains both points. Its ownership of  $q$  distinguishes it from  $V$ , and the shared  $p$  contradicts endpoint uniqueness.This distinction is particularly necessary for D: its grouped  $H$ -owner and the incoming owner can both be phase10. The missing- $q$  argument handles that recurring-owner possibility correctly.Therefore the protected terminal belongs to neither  $C_{\rm plus}$  nor  $D_{\rm plus}$ .The remainder and maximum are correctLet  $\mathrm{Act}$  denote the actual positive terminal activation set. The preceding arguments give
+$$W_{\rm term}\subseteq\mathrm{Act},$$
+and separate it from the established jointly disjoint families
+$$F_{\rm pos},\quad C_{\rm plus},\quad
+B_{\rm interior},\quad D_{\rm plus}.$$
+The use of the B-interior event count here requires its inherited injection into terminal occurrences; the supplied dependencies provide precisely that input. Counting  $W_{\rm term}$  by original  $(\text{owner},\text{terminal index})$ , once per terminal, is correct even when events recur.Consequently,
+$$\rho_A
+=A-F_{\rm pos}-C_{\rm plus}-B_{\rm interior}-D_{\rm plus}
+\ge\omega.$$
+The inherited bound  $E_{\rm term}\le\rho_A$  does not establish disjointness between  $E_{\rm term}$  and  $W_{\rm term}$ . Hence
+$$\rho_A\ge\max(\omega,E_{\rm term})$$
+is justified, while their sum is not. The manuscript preserves this distinction.Substituting into the same enhanced identity and dropping only  $L_{\rm new}\ge0$  gives
+$$2R\ge
+K_{\rm back}+K_C+d-2(K_{01}+K_{10})
++e+Q+Z_0+H+\omega.$$
+All counts must come from the same fusion, or the same component to which the inherited ledger applies. In the specified AA application, protecting both of its only two activations gives  $\omega=A=2$ , forcing all four subtracted positive families to vanish there. This does not constrain unrelated components or eliminate all AA configurations.3. Pure-cycle absorber separationThis is the most substantial new deduction, and the written proof supplies the needed intermediate statements.The local forced point and complete barriers are validNormalize the active-to-passive contact as
+$$p=(0,0),\quad q=(0,1),\quad s=(1,0),\quad z=(1,1).$$
+The active stem proceeds south; the passive stem proceeds east.For an active canonical left terminal of incident height  $j$ , the map
+$$(r,c)\longmapsto(j-r,c-1)$$
+sends the terminal to  $p$ . Its odd-row interior support  $(j-1,2)$  maps to  $z$ , anchored at
+$$x=p+s=(1,0).$$
+The exact original profile in
+$$Q_z=\{1,2\}\times\{0,1\}$$
+is
+$$\{(1,0),(2,0)\}.$$
+This remains true at the minimum incident height  $j=4$ .The passive terminal also has original support  $z$ , anchored at  $q$ . The complete incident arms supply the stated foreign barriers
+$$\{(r,0):0\le r\le4\}
+\ \cup\
+\{(0,c):1\le c\le5\}.$$
+Thus  $z$  has two distinct persistent endpoint neighbors,  $x$  and  $q$ , and is forced into  $P$ . Since it is an original support of both incident sources, its endpoint owner differs from both.Forced-point injection is genuinely globalSuppose two contacts produce the same  $z$ . They use the same physical tile  $Q_z$ .Each active exact pair is an adjacent pair of the other three tile corners. There are exactly two such pairs, and they intersect at the corner opposite  $z$ . Endpoint uniqueness therefore identifies their active original owners.The pairs must then coincide: one original owner cannot have two different exact two-point profiles in the same physical tile.The anchor is also determined. Within that pair, exactly one endpoint is adjacent to  $z$ ; call it  $x$ . If the other endpoint is  $y$ , then
+$$s=y-x,\qquad p=x-s,\qquad d=z-x,\qquad q=p+d.$$
+The original contact is recovered.The canonical support formula additionally gives unique support anchoring for legal U sources; the width bound keeps the two arm-support families apart. Thus there is no hidden ambiguity from source recurrence or independent dimensions.This proves global forced-point injection across different cycles as well as within one cycle.Rotor exclusion and the four-role capacity are soundThe supplied rotor endpoint graph is connected, has coordinate span three in each direction, and has no endpoint at a bounding-box corner. These properties survive rotations and reflections.If such a rotor owned  $z=(1,1)$ , all its endpoint coordinates would be at most four. If an endpoint left the strictly positive quadrant, an endpoint path from  $z$  would first meet an axis at a foreign barrier point. If every endpoint remained in the positive quadrant,  $z$  would attain both coordinate minima and be a bounding-box corner endpoint. Both possibilities are excluded.For a U owner, the two perpendicular foreign neighbors rule out every role with two opposite own endpoint neighbors, and every role with at least three own endpoint neighbors. The only surviving canonical roles are
+$$(0,1),\quad (0,w),\quad (L,1),\quad (R,w).$$
+Therefore one original U owns at most four globally distinct forced points, independently of its dimensions.No forced point lies on any specified closed neutral U-port curveThe manuscript’s cases exhaust the prescribed arcs:Straight source-arc point: its two opposite own neighbors include one of the forced point’s two perpendicular foreign neighbors, producing an ownership collision.Phase01 source-arc bend: it is an upper outer bar corner in an original full tile. That is incompatible with the foreign exact pair already in  $Q_z$ .Curve port: its physical tile has actual profile  $2P1T$ , whereas  $Q_z$  contains at least the active pair and  $z$ , hence at least three endpoints.Interior of a unit contact edge: it contains no lattice point at which integer  $z$  could lie.A phase10 source arc is the straight outer-bar path, so there is no omitted phase10 bend case.This proves the stated avoidance even for other specified closed curves containing phase10 sources.The stronger source-owner exclusion is presentAvoidance of a curve by  $z$  alone would not justify containment of its entire owner. The manuscript correctly proves more.A phase01 source on any closed port component cannot own  $z$  anywhere in its full source:both terminals are neutral ports and are excluded by the actual  $2P1T$  tile profile;both upper outer bar corners are excluded by their original full tiles;all remaining roles are excluded by the perpendicular-neighbor argument.Hence the actual owner of every relevant forced point differs from every source of every chosen pure U01 cycle.This does not exclude ownership by a phase10 source whose terminal lies off its specified outer-bar curve. That possibility is compatible with the theorem, because every source of a chosen pure cycle is phase01.The exact inward count follows from turningA closed degree-two port component uses each of its source vertices once, so its number of source arcs and neutral contact edges both equal  $m(C)$ . Other contacts of those sources remain allowed.Across a contact,  $\chi$  is preserved; across a source, it reverses. Thus the  $\chi_i$  alternate and  $m(C)$  is even.For a pure phase01 cycle, the source-arc turns are  $-2\chi_i$ , whose sum is zero. Each contact contributes exactly one quarter-turn: the active end bends and the passive end is straight.Orienting the polygon to have total signed turn  $4$  therefore gives
+$$I(C)-O(C)=4,\qquad I(C)+O(C)=m(C),$$
+hence
+$$I(C)=\frac{m(C)+4}{2}\ge4.$$
+The convex/concave location argument is also sufficient. The unit square with vertices
+$$p,\ q,\ z,\ p+s$$
+has no curve edge in its open face. Since  $z$  is not on the curve, it connects to that face without crossing the curve. The local sector at the contact therefore determines its actual Jordan side: inside at a convex contact and outside at a concave contact.Distant portions of the curve cannot reverse this classification.Complete-source containment follows from the endpoint graphLet  $V$  own an inside forced point of  $C$ .Its original endpoint graph is connected and disjoint from every chosen curve’s vertices, because  $V$  differs from every chosen cycle source. Connectivity here is that of the unit adjacency graph of all original endpoints, not connectivity of the unchanged matching.Both the endpoint graph and the curves use unit lattice edges. Such edges cannot cross without sharing an integer endpoint. Starting at the forced point inside  $C$ , every endpoint of  $V$  therefore remains strictly inside  $C$ .The precise support conclusion is
+$$P_V\subset\operatorname{int}(C),\qquad
+\operatorname{Supp}(V)\subset\overline{\operatorname{int}(C)}.$$
+Every support is one unit from its own endpoint anchor. A support strictly outside would force that unit segment to cross the curve. A support on the curve is an integer curve vertex and hence already an original endpoint in  $P$ , so it is consumed.This is the claimed complete-source containment. It does not require deleting surrounding sources or producing an isolated feasible subfusion.The unit-edge argument resolves nestingTake an inside forced point  $z$  of  $C$ , with active anchor
+$$x=p+s\in C.$$
+The segment  $xz$  is a unit lattice edge.For a distinct chosen cycle  $D$ : $x\notin D$ , because the specified curves are vertex-disjoint; $z\notin D$ , by the global curve-avoidance result;the interior of  $xz$  cannot intersect a unit lattice edge of  $D$ .Therefore  $x$  and  $z$  lie on the same side of  $D$ .Suppose  $D$  lies inside  $C$ . Every point of  $C$ , including  $x$ , lies outside  $D$ . Thus  $z$  lies outside  $D$ . The connected endpoint graph of its owner, disjoint from  $D$ , remains entirely outside  $D$ .Every member of  $\mathcal V(D)$ , however, has all endpoints strictly inside  $D$ . Consequently,
+$$\mathcal V(C)\cap\mathcal V(D)=\varnothing.$$
+Reverse nesting is symmetric. For disjoint interiors, containment alone proves separation. This covers arbitrary nesting depth.Nothing here requires the chosen port components to be components of the full endpoint-contact graph. Additional contacts do not allow a unit endpoint path to cross one of these curves without sharing a vertex.The integer quotas and their addition are justifiedGlobal forced-point injection and four-role capacity give, for each cycle,
+$$\frac{m(C)+4}{2}=I(C)\le4|\mathcal V(C)|.$$
+Therefore
+$$|\mathcal V(C)|
+\ge
+\left\lceil\frac{m(C)+4}{8}\right\rceil.$$
+Because the actual source families are pairwise disjoint,
+$$\sum_C\left\lceil\frac{m(C)+4}{8}\right\rceil
+\le
+\sum_C|\mathcal V(C)|
+=
+\left|\bigcup_C\mathcal V(C)\right|.$$
+The rounding is correct:
+$$\left\lceil\frac{m+4}{8}\right\rceil
+=
+\left\lfloor\frac{m+11}{8}\right\rfloor.$$
+For  $m=6$ , there are five inside forced points, so one four-role source cannot suffice; two such cycles require at least four distinct absorber sources.These are conditional necessities. They assert neither realizability of a six-source cycle nor an unused reserve payment attached to an absorber.4. Exact scope of the supplied Lean propositionsI inspected the displayed statements and proof structure. I did not run Lean or certify compilation.FileScope of the displayed propositionsGeometry and global realization remaining writtenCSecondCornerPhase.leanExplicit crossing witnesses for the prescribed maps; contradiction from corresponding disjointness assumptions; arithmetic consequences of supplied typed-pool identitiesClassification of every actual phase01 terminal into those maps; physical phase transport; original-owner identification; construction and partition of the actual negative poolIncomingTerminalReserve.leanIncoming present/missing pair; complete B-companion crossing; contradiction from assumed disjointness; endpoint pair for both specified cap maps; conditional ledger and maximum deductionsActual B normalization and phase distinction; mandatory-support activation; exhaustiveness of cap orientations; grouped C/D frames; construction of  $W_{\rm term}$  inside the activation remainderNeutralCycleInteriorTransfer.leanExplicit anchored rotor-template exclusion; arbitrary-dimension four-role implication; conditional turning/capacity arithmetic; ceiling arithmetic; summation of numerical boundsPhysical contact normalization; global forced-point injection; simple curves and turning interpretation; avoidance of curves; exclusion of chosen cycle owners; containment; nested-family separation; union cardinalityThree distinctions are especially important:phase_typed_pools_recover_the_single_pool assumes h01 and h10.It does not construct the geometric partition whose cardinalities yield those hypotheses.reserved_activation_improves_all_route_bound assumes hprotected.It does not encode the proof that actual incoming terminals are activated and avoid the four claim families.rounded_cycle_quotas_aggregate_without_reusing_owner_counts has no owner sets or disjointness premise.Its conclusion is a bound on a sum of supplied numerical owner counts. It does not establish
+$$\sum_C|\mathcal V(C)|
+=
+\left|\bigcup_C\mathcal V(C)\right|.$$
+The written planar argument establishes that equality.The conditional mixed-cycle arithmetic in the last file likewise does not formalize or imply the pure-cycle separation result for mixed cycles.These formalization limits are accurately acknowledged in the package. They do not expose a gap in the written proofs reviewed here.5. Review boundary and final assessmentI checked the new arguments directly against the inline canonical endpoint/support definitions, rotor template, normalized maps, occurrence definitions, and displayed Lean statements. I checked the phase-specific and activation-budget deductions using the supplied inherited global backfill/output injections and single-pool identities. I did not reconstruct every earlier theorem merely referenced by filename, and I did not use previous ACCEPT reports as evidence.I did not execute code, inspect execution receipts, infer feasibility from sampled controls, or assert existence of a complete critical U10 configuration.There is no must-fix mathematical gap in the three new written conclusions within that dependency base. The remaining limitation is substantive and correctly stated: the interior-source count has no proved map to unused reserve payments, and the all-route ledger retains its signed negative-source term. The unrestricted allocation and rectangular-grid equality remain open.VERDICT: ACCEPT.

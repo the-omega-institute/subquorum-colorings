@@ -1,0 +1,2631 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local": {
+    "valid_unpressured_deficient_states": 40,
+    "valid_saturated_states": 10
+  },
+  "physical_regions": 45,
+  "symmetry_images": 360,
+  "max_debt_path_length": 40,
+  "fixtures": [
+    {
+      "name": "incoming_only",
+      "shape": [
+        10,
+        16
+      ],
+      "selected": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "matching": [
+        [
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            12
+          ]
+        ]
+      ],
+      "region_tiles": [
+        [
+          2,
+          5
+        ]
+      ],
+      "marked": [],
+      "record": {
+        "tile_count": 1,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 0,
+        "deficient_surplus": 0,
+        "objective": 3,
+        "tiles": [
+          21
+        ],
+        "selected": 2,
+        "blanks": 1,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 1,
+        "charge_twice": 0
+      }
+    },
+    {
+      "name": "incoming_with_terminal",
+      "shape": [
+        10,
+        16
+      ],
+      "selected": [
+        [
+          4,
+          10
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "matching": [
+        [
+          [
+            4,
+            11
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ]
+      ],
+      "region_tiles": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      "marked": [
+        [
+          [
+            2,
+            2
+          ],
+          3
+        ]
+      ],
+      "record": {
+        "tile_count": 2,
+        "marked_tiles": 1,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 0,
+        "deficient_surplus": 2,
+        "objective": 6,
+        "tiles": [
+          18,
+          21
+        ],
+        "selected": 2,
+        "blanks": 3,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 1,
+        "charge_twice": -2
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 0,
+      "record": {
+        "tile_count": 2,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 5,
+        "tiles": [
+          5,
+          6
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 1,
+      "record": {
+        "tile_count": 3,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 7,
+        "tiles": [
+          2,
+          6,
+          7
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 2,
+      "record": {
+        "tile_count": 4,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 9,
+        "tiles": [
+          2,
+          3,
+          7,
+          8
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 3,
+      "record": {
+        "tile_count": 5,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 11,
+        "tiles": [
+          2,
+          3,
+          4,
+          8,
+          9
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 4,
+      "record": {
+        "tile_count": 6,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 13,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          9,
+          10
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 5,
+      "record": {
+        "tile_count": 7,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 15,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          10,
+          11
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 6,
+      "record": {
+        "tile_count": 8,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 17,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          12
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 7,
+      "record": {
+        "tile_count": 9,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 19,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          12,
+          13
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 8,
+      "record": {
+        "tile_count": 10,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 21,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          13,
+          14
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 9,
+      "record": {
+        "tile_count": 11,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 23,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          14,
+          15
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 10,
+      "record": {
+        "tile_count": 12,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 25,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          15,
+          16
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 11,
+      "record": {
+        "tile_count": 13,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 27,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          16,
+          17
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 12,
+      "record": {
+        "tile_count": 14,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 29,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          17,
+          18
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 13,
+      "record": {
+        "tile_count": 15,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 31,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          18,
+          19
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 14,
+      "record": {
+        "tile_count": 16,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 33,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          19,
+          20
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 15,
+      "record": {
+        "tile_count": 17,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 35,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          20,
+          21
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 16,
+      "record": {
+        "tile_count": 18,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 37,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          21,
+          22
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 17,
+      "record": {
+        "tile_count": 19,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 39,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          22,
+          23
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 18,
+      "record": {
+        "tile_count": 20,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 41,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          23,
+          24
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 19,
+      "record": {
+        "tile_count": 21,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 43,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          24,
+          25
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 20,
+      "record": {
+        "tile_count": 22,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 45,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          25,
+          26
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 21,
+      "record": {
+        "tile_count": 23,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 47,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          26,
+          27
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 22,
+      "record": {
+        "tile_count": 24,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 49,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          27,
+          28
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 23,
+      "record": {
+        "tile_count": 25,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 51,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          28,
+          29
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 24,
+      "record": {
+        "tile_count": 26,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 53,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          29,
+          30
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 25,
+      "record": {
+        "tile_count": 27,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 55,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          30,
+          31
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 26,
+      "record": {
+        "tile_count": 28,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 57,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          31,
+          32
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 27,
+      "record": {
+        "tile_count": 29,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 59,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          32,
+          33
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 28,
+      "record": {
+        "tile_count": 30,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 61,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          33,
+          34
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 29,
+      "record": {
+        "tile_count": 31,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 63,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          34,
+          35
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 30,
+      "record": {
+        "tile_count": 32,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 65,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          35,
+          36
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 31,
+      "record": {
+        "tile_count": 33,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 67,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          36,
+          37
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 32,
+      "record": {
+        "tile_count": 34,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 69,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          37,
+          38
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 33,
+      "record": {
+        "tile_count": 35,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 71,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          38,
+          39
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 34,
+      "record": {
+        "tile_count": 36,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 73,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          39,
+          40
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 35,
+      "record": {
+        "tile_count": 37,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 75,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          40,
+          41
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 36,
+      "record": {
+        "tile_count": 38,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 77,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          41,
+          42
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 37,
+      "record": {
+        "tile_count": 39,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 79,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          42,
+          43
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 38,
+      "record": {
+        "tile_count": 40,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 81,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          43,
+          44
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 39,
+      "record": {
+        "tile_count": 41,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 83,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          44,
+          45
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "internal_debt_path",
+      "length": 40,
+      "record": {
+        "tile_count": 42,
+        "marked_tiles": 0,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 1,
+        "deficient_surplus": 0,
+        "objective": 85,
+        "tiles": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          45,
+          46
+        ],
+        "selected": 3,
+        "blanks": 2,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": 1
+      }
+    },
+    {
+      "name": "thick_sharp",
+      "shape": [
+        16,
+        20
+      ],
+      "selected": [],
+      "matching": [
+        [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            8
+          ]
+        ],
+        [
+          [
+            8,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        [
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            10
+          ]
+        ],
+        [
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        [
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        [
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        [
+          [
+            8,
+            6
+          ],
+          [
+            9,
+            6
+          ]
+        ],
+        [
+          [
+            8,
+            7
+          ],
+          [
+            9,
+            7
+          ]
+        ],
+        [
+          [
+            10,
+            8
+          ],
+          [
+            11,
+            8
+          ]
+        ],
+        [
+          [
+            10,
+            9
+          ],
+          [
+            11,
+            9
+          ]
+        ],
+        [
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            12
+          ]
+        ],
+        [
+          [
+            8,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            5
+          ],
+          [
+            9,
+            5
+          ]
+        ],
+        [
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        [
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            11,
+            6
+          ]
+        ],
+        [
+          [
+            10,
+            7
+          ],
+          [
+            11,
+            7
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            9,
+            3
+          ]
+        ],
+        [
+          [
+            8,
+            14
+          ],
+          [
+            9,
+            14
+          ]
+        ],
+        [
+          [
+            6,
+            10
+          ],
+          [
+            7,
+            10
+          ]
+        ],
+        [
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        [
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        [
+          [
+            10,
+            2
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            14
+          ],
+          [
+            7,
+            15
+          ]
+        ],
+        [
+          [
+            10,
+            14
+          ],
+          [
+            10,
+            15
+          ]
+        ]
+      ],
+      "region_tiles": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "marked": [
+        [
+          [
+            4,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            4,
+            7
+          ],
+          1
+        ]
+      ],
+      "record": {
+        "tile_count": 13,
+        "marked_tiles": 2,
+        "crossing": 0,
+        "saturated_endpoints": 0,
+        "internal_attachments": 0,
+        "deficient_surplus": 4,
+        "objective": 28,
+        "tiles": [
+          33,
+          34,
+          35,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          53,
+          54,
+          55
+        ],
+        "selected": 0,
+        "blanks": 4,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 0,
+        "charge_twice": -4
+      }
+    },
+    {
+      "name": "thick_incoming",
+      "shape": [
+        16,
+        20
+      ],
+      "selected": [
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "matching": [
+        [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            8
+          ]
+        ],
+        [
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            10
+          ]
+        ],
+        [
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        [
+          [
+            8,
+            6
+          ],
+          [
+            9,
+            6
+          ]
+        ],
+        [
+          [
+            8,
+            7
+          ],
+          [
+            9,
+            7
+          ]
+        ],
+        [
+          [
+            10,
+            8
+          ],
+          [
+            11,
+            8
+          ]
+        ],
+        [
+          [
+            10,
+            9
+          ],
+          [
+            11,
+            9
+          ]
+        ],
+        [
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            12
+          ]
+        ],
+        [
+          [
+            8,
+            13
+          ],
+          [
+            9,
+            13
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            9,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            5
+          ],
+          [
+            9,
+            5
+          ]
+        ],
+        [
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        [
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        [
+          [
+            10,
+            6
+          ],
+          [
+            11,
+            6
+          ]
+        ],
+        [
+          [
+            10,
+            7
+          ],
+          [
+            11,
+            7
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            9,
+            3
+          ]
+        ],
+        [
+          [
+            8,
+            14
+          ],
+          [
+            9,
+            14
+          ]
+        ],
+        [
+          [
+            6,
+            11
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        [
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        [
+          [
+            10,
+            2
+          ],
+          [
+            10,
+            3
+          ]
+        ],
+        [
+          [
+            7,
+            14
+          ],
+          [
+            7,
+            15
+          ]
+        ],
+        [
+          [
+            10,
+            14
+          ],
+          [
+            10,
+            15
+          ]
+        ],
+        [
+          [
+            6,
+            9
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      ],
+      "region_tiles": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "marked": [
+        [
+          [
+            4,
+            1
+          ],
+          3
+        ],
+        [
+          [
+            4,
+            7
+          ],
+          1
+        ]
+      ],
+      "record": {
+        "tile_count": 13,
+        "marked_tiles": 2,
+        "crossing": 1,
+        "saturated_endpoints": 1,
+        "internal_attachments": 0,
+        "deficient_surplus": 10,
+        "objective": 26,
+        "tiles": [
+          33,
+          34,
+          35,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          53,
+          54,
+          55
+        ],
+        "selected": 2,
+        "blanks": 11,
+        "outgoing_saturated_attachments": 0,
+        "incoming_saturated_attachments": 1,
+        "charge_twice": -10
+      }
+    }
+  ],
+  "scope": "Finite controls; arbitrary-size proof and all-length connected debt construction are written separately. The two refuted rules do not refute the grid inequality."
+}

@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "initial_perfect_matchings": 8,
+  "initial_freezing_histogram": {
+    "27": 5,
+    "38": 3
+  },
+  "final_perfect_matchings": 1,
+  "final_all_frozen": true,
+  "matching_independent_completion_controls": 8,
+  "nonextendible_partial_matching_control": true,
+  "sparse_degree_three_motif_control": true,
+  "final_matching_forcing_certificate": [
+    [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    [
+      [
+        3,
+        1
+      ],
+      [
+        4,
+        1
+      ]
+    ],
+    [
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ],
+    [
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    [
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    [
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    [
+      [
+        8,
+        8
+      ],
+      [
+        8,
+        7
+      ]
+    ],
+    [
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        5
+      ]
+    ],
+    [
+      [
+        10,
+        4
+      ],
+      [
+        9,
+        4
+      ]
+    ],
+    [
+      [
+        8,
+        4
+      ],
+      [
+        8,
+        3
+      ]
+    ],
+    [
+      [
+        9,
+        3
+      ],
+      [
+        9,
+        2
+      ]
+    ],
+    [
+      [
+        8,
+        2
+      ],
+      [
+        8,
+        1
+      ]
+    ],
+    [
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        1
+      ]
+    ],
+    [
+      [
+        11,
+        1
+      ],
+      [
+        12,
+        1
+      ]
+    ]
+  ],
+  "transformed_flux_controls": 24,
+  "strictly_positive_flux_controls": 16,
+  "generic_motif_normalizer_controls": 8,
+  "irreducible_elbow_normalizer_controls": 3,
+  "elbow_forcing_cases": 342,
+  "forced_edges": 15048,
+  "square_positive_control_perfect_matchings": 2,
+  "retained_neighbors": {
+    "(5, 5)": [
+      [
+        5,
+        4
+      ]
+    ],
+    "(6, 2)": [
+      [
+        5,
+        2
+      ]
+    ],
+    "(6, 4)": [
+      [
+        5,
+        4
+      ]
+    ],
+    "(7, 3)": [
+      [
+        8,
+        3
+      ]
+    ],
+    "(7, 5)": [
+      [
+        8,
+        5
+      ]
+    ]
+  },
+  "charge_two_exchange": {
+    "before": {
+      "receivers": [
+        {
+          "endpoints": 38,
+          "tiles": 17,
+          "selected": 17,
+          "charge_twice": 4,
+          "straight": false,
+          "saturated_endpoints": 6,
+          "transfers": 6
+        }
+      ],
+      "no_endpoint_tiles": 18,
+      "empty_deficit": 33,
+      "objective": 39,
+      "area": 140
+    },
+    "after": {
+      "receivers": [
+        {
+          "endpoints": 12,
+          "tiles": 6,
+          "selected": 7,
+          "charge_twice": 2,
+          "straight": false,
+          "saturated_endpoints": 2,
+          "transfers": 2
+        },
+        {
+          "endpoints": 16,
+          "tiles": 8,
+          "selected": 9,
+          "charge_twice": 2,
+          "straight": false,
+          "saturated_endpoints": 3,
+          "transfers": 3
+        }
+      ],
+      "no_endpoint_tiles": 21,
+      "empty_deficit": 33,
+      "objective": 39,
+      "area": 140
+    },
+    "components": [
+      {
+        "old_charge": 2,
+        "descendant_charge": 2,
+        "freed_deficit": 0,
+        "freed_tiles": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      }
+    ],
+    "flux": 0
+  },
+  "scope": "Exact local move and finite flux/forcing controls; general normalization, physical flux partition and all-length forcing are written proofs."
+}

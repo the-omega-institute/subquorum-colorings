@@ -1,0 +1,93 @@
+ACCEPT — for the two added bounds and the  $u=h=6\Rightarrow g\ge12$  strengthening, conditional on the four-route classification. I find no blocking mathematical gap in this extension. Each of A/B/C/D is excluded when  $u=h=6$  and  $g\le10$ .The proof uses the correct other original stem of  $G$ , including its terminal endpoint. The decisive strict inequalities follow from original endpoint disjointness. Independent far heights and recurring owners do not invalidate those collisions.This acceptance is limited to the requested extension; it does not settle the separate four-route audit.1. Exact canonical coordinates and the additional barrierWrite  $E_{W,L,R}$  for the endpoint set defined by the supplied WidthSixBottomOwner.endpoint:
+$$E_{W,L,R}
+=
+\bigl(\{0,1\}\times[1,W]_{\mathbb Z}\bigr)
+\;\cup\;
+\bigl([2,L]_{\mathbb Z}\times\{1\}\bigr)
+\;\cup\;
+\bigl([2,R]_{\mathbb Z}\times\{W\}\bigr).$$
+In particular, the complete canonical stem in column  $1$  contains every integer row from  $0$  through  $L$ : rows  $0,1$  come from the bar, and rows  $2,\ldots,L$  come from the stem clause.Let  $(\rho,c)$  denote physical coordinates. After the permitted exchange of canonical height labels, the relevant membership maps are:Source or roleCanonical dimensionsPhysical-to-canonical mapRoot  $G$  $(u,b,g)$  $(\rho,c)\mapsto(g-\rho,c+u)$ Companion  $F$  $(v,h,f)$  $(\rho,c)\mapsto(c+h+1,\rho+1)$ A $(w,d,a)$  $(\rho,c)\mapsto(\rho-1,c+w+1)$ B $(w,e,d)$  $(\rho,c)\mapsto(-c-1,\rho)$ C $(w,d,a)$  $(\rho,c)\mapsto(a+1-\rho,c+w+1)$ D $(w,a,d)$  $(\rho,c)\mapsto(c+a+1,\rho)$ Here  $b$  is the root’s other height,  $f$  is the companion’s other height, and the auxiliary heights in each H row are independent. In B,  $d$  is specifically the bottom arm’s incident height.For H, these maps send  $q=(1,-1)$ , respectively, to the canonical points
+$$(0,w),\quad(0,1),\quad(a,w),\quad(a,1).$$
+They therefore agree with the stated bar-corner and terminal roles. They are also the corresponding choices of the supplied pull map applied to coordinates relative to  $q$ . No physical partition is reset.The G and F maps agree with root_barrier_is_original and companion_barrier_is_original. In particular, F’s canonical bar gives exactly
+$$0\le \rho\le v-1,
+\qquad
+c\in\{-h-1,-h\}.$$
+For G’s other stem, canonical column  $1$  means
+$$c=1-u,$$
+and canonical rows  $0\le g-\rho\le b$  mean
+$$g-b\le \rho\le g.$$
+Thus, at  $u=6$ ,
+$$\boxed{\{(\rho,-5):g-b\le\rho\le g\}\subseteq P_G.}$$
+This is exactly (4a). Both endpoints are included. In particular,  $(g-b,-5)$  maps to the canonical original terminal  $(b,1)$ ; it is not a point beyond that terminal.Because the conditional backfill input gives  $q\notin P_F\cup P_G$ , its actual original owner H differs from both F and G. Original endpoint uniqueness therefore supplies the disjointness used below.2. The two added bounds are correctA:  $w\le h-2$ Assume  $w\ge h$ . Consider
+$$p=(1,-h).$$
+Under A’s map,
+$$p\longmapsto(0,w+1-h).$$
+Since  $w\ge h$  and  $h\ge4$ ,
+$$1\le w+1-h\le w,$$
+so  $p$  belongs to H’s original bar.Under F’s map,
+$$p\longmapsto(1,2),$$
+which belongs to F’s original bar because  $v\ge6$ .This contradicts original endpoint disjointness. Therefore
+$$w<h.$$
+Both  $w$  and  $h$  are even, so
+$$\boxed{w\le h-2.}$$
+The collision already occurs at  $w=h$ ; there is no missing equality case.C:  $w\le h-2$  or  $v\le a$ Assume simultaneously
+$$w\ge h,\qquad a\le v-1.$$
+Consider
+$$p=(a,-h).$$
+Under C’s map,
+$$p\longmapsto(1,w+1-h),$$
+which lies in H’s original bar.Under F’s map,
+$$p\longmapsto(1,a+1).$$
+Because  $a\ge4$  and  $a\le v-1$ , this also lies in F’s original bar.Hence these two assumptions cannot hold together:
+$$w<h\quad\text{or}\quad v\le a.$$
+Using evenness of  $w,h$ ,
+$$\boxed{w\le h-2\quad\text{or}\quad v\le a.}$$
+The boundary  $a=v$  is correctly retained. F’s physical bar ends at row  $v-1$ , so this particular collision does not justify replacing  $v\le a$  by a stronger inequality.Neither argument uses either source’s unlisted other height.3. The exact far-stem clearance implicationThe common step in the strengthening is the following elementary lemma.Lemma. Suppose  $u=6$ ,  $(\rho,-5)\in P_H$ , and  $\rho\le g$ . Then
+$$\boxed{\rho<g-b.}$$
+Proof. If  $g-b\le\rho$ , the additional hypothesis  $\rho\le g$  places  $(\rho,-5)$  in the closed original G-stem interval (4a). It would then be an endpoint of both H and G, contradicting original endpoint uniqueness. ∎The condition  $\rho\le g$  is essential: without it, avoidance could occur above the interval. The proposed proof supplies this condition in every branch where the lemma is used.4. Verification of every route when  $u=h=6$ A is impossible for every  $g$ The new A bound gives
+$$6\le w\le h-2=4,$$
+a contradiction.Thus A is excluded without using the far stem.B forces  $g\ge12$ The bottom arm has independent incident height  $d\ge4$ . Under B’s canonical map,
+$$(w,-5)\longmapsto(4,w).$$
+This is an original endpoint of the bottom arm because  $4\le d$ .This membership remains true at the minimum  $d=4$ : the point is then the original terminal itself. No equality between H’s two heights is needed.The inherited B bound is
+$$w\le g-2.$$
+Its collision coordinate is consistent with the exact bar: if  $w\ge g-1$ , B’s bar contains  $(g-1,-1)$ , which belongs to G’s bar. Thus the bound supplies  $w\le g$ , as required by the clearance lemma.Applying that lemma at  $\rho=w$ ,
+$$w<g-b.$$
+Consequently
+$$g>w+b\ge6+4=10.$$
+Since  $g$  is even,
+$$\boxed{g\ge12.}$$
+Keeping the parameter dependence, evenness of  $w,b,g$  gives the necessary inequality
+$$g\ge w+b+2.$$
+C forces  $g\ge12$ Since  $w\ge6=h$ , the first alternative of the added C bound is impossible. Hence
+$$a\ge v\ge6.$$
+C’s lower bar row contains  $(a+1,-5)$ . Its exact canonical coordinates are
+$$(a+1,-5)\longmapsto(0,w-4).$$
+For every  $w\ge6$ ,
+$$1\le w-4\le w,$$
+so this is an original bar endpoint.The inherited depth bound gives
+$$a\le g-4,
+\qquad\text{hence}\qquad
+a+1\le g-3<g.$$
+This bound is consistent with C’s complete incident run: that run occupies  $(\rho,-1)$  for  $1\le\rho\le a+1$ , and must avoid G’s bar at  $(g-1,-1)$ . The strict separation, together with even  $a,g$ , gives the stated  $a\le g-4$ .The far-stem clearance lemma now yields
+$$a+1<g-b.$$
+Since these are integers,
+$$g\ge a+b+2\ge6+4+2.$$
+Therefore
+$$\boxed{g\ge12.}$$
+No further parity rounding is needed in this final C step. The dependent necessary bound is
+$$g\ge a+b+2\ge v+b+2.$$
+D forces  $g\ge12$ The incident bound gives
+$$4\le a\le h-2=4,$$
+so  $a=4$ . Its relevant collision with F is correctly located at  $(1,-h)$ : the complete incident run would contain that point if  $a+1\ge h$ .With  $a=4$ , D’s vertical bar occupies columns  $-5,-4$ , at every row  $1,\ldots,w$ . In particular,
+$$(w,-5)\in P_H.$$
+The exact canonical image is
+$$(w,-5)\longmapsto(0,w),$$
+an original bar corner. This membership is independent of D’s other height.The inherited tradeoff
+$$w\le g-2\quad\text{or}\quad u\le a$$
+reduces to
+$$w\le g-2,$$
+because its second alternative would say  $6\le4$ .The tradeoff’s collision coordinate is also consistent: when  $w\ge g-1$  and  $a\le u-1$ , D’s bar and G’s bar both contain  $(g-1,-a)$ .Thus the clearance lemma applies at  $\rho=w$  and gives
+$$w<g-b.$$
+As in B,  $w\ge6$ ,  $b\ge4$ , and even  $g$  imply
+$$\boxed{g\ge12.}$$
+These four cases exhaust the stipulated classification. Therefore the claimed necessary condition follows.5. Formal scope and small correctionsThe printed new Lean statements match the mathematical steps, with the stated separation between normalized lemmas and actual-event assembly:horizontal_bar_clears_companion_width gives the integer A bound  $w\le h-1$ , expressed as two alternatives. horizontal_even_bar_clears_companion_width removes the parity-incompatible equality.south_bar_clears_companion_height gives  $w\le h-1$  or  $v\le a$ . Refining its first alternative using even  $w,h$  is a valid written arithmetic step.far_root_stem_is_original gives precisely the additional original stem.endpoint_at_minus_five_clears_width_six_far_stem explicitly includes the necessary hypothesis  $\rho\le g$ .width_six_low_point_requires_height_twelve correctly states the final arithmetic implication from  $\rho\ge6$ ,  $b\ge4$ , strict clearance, and even  $g$ . The C point satisfies the stronger  $\rho=a+1\ge7$ .The displayed file does not contain an assembled theorem taking an actual complete critical event, selecting its B/C/D collision point, and concluding  $g\ge12$ . Those endpoint memberships and the actual-owner adaptation are written deductions from the supplied definition, as verified above. This is consistent with the receipt’s stated scope.Two nonblocking textual corrections are appropriate:“Avoiding (7)” should read “Avoiding (4a).”Replace “The even widths turn  $w<h$  into…” with “Evenness of  $w$  and  $h$  turns  $w<h$  into…” Here  $h$  is an incident height.I have not compiled Lean, run the checker, or independently verified either execution receipt.Accepted conclusion: under the conditional four-route input, every complete feasible critical U10 event with  $u=h=6$  must have  $g\ge12$ , uniformly over the permitted independent heights, companion widths, and surrounding sources. The argument establishes a necessary obstruction. It supplies no complete realization at  $g=12$ , no sharpness result, no fresh reserve, and no conclusion about the full allocation or rectangular-grid target.

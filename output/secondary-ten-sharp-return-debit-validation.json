@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_SHARP_RETURN_DEBIT.md",
+  "verifier": "develop/check_secondary_ten_sharp_return_debit.py",
+  "python_exit_code": 0,
+  "exact_physical_set_controls": 18,
+  "even_g_values": [4,6,10,40,100,2000],
+  "translations": [[0,0],[-64,-100],[20,200]],
+  "general_written_family": "For every even g>=4, the m1 sharp family at a0=31,s0=0 admits endpoint-disjoint W=U(2g+20,4,40), chart(2g+42-c,r-34), consuming the common forced support x=(2g+41,-30). W charge-1; exact new mixedFull3/events10/mass1; marginal-3, total selected gain drops4to1. New original axial support z=(22,7) stays missing with west W and south P0 endpoints, hence remains forced.",
+  "charge_counts": "matching2g+41, endpointTilesg+32, immutableSupportsInside22, charge-1",
+  "failure_scope": "Refutes nonnegative marginal inferred from endpoint-disjoint forced-site consumption ALONE. Complete feasible extendibility of the enlarged family is OPEN, so not a counterexample about actual complete families, the selected-pair theorem or the global inequality.",
+  "review_scope": "Later result OUTSIDE live main both-far audit780b9242. No new Lean or independent review claimed. Exact all-g geometric proof is written; finite controls do not replace it."
+}

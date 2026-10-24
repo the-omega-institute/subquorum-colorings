@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "execution_location": "Local Mac selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/ShortLegDefectInjection.lean",
+  "successful_source_check": {
+    "exec_session": 56108,
+    "exit_code": 0,
+    "memory_free_percent": 42
+  },
+  "successful_object_build": {
+    "exec_session": 35845,
+    "exit_code": 0,
+    "memory_free_percent": 41
+  },
+  "individual_audit": {
+    "exec_session": 38791,
+    "exit_code": 0,
+    "memory_free_percent": 38
+  },
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 11,
+  "declarations": [
+    "donor_orientation_exclusion",
+    "no_blank_donor",
+    "short_longitudinal_dimensions",
+    "injected_witness_count",
+    "source_bound_from_injection",
+    "saturated_pool_covered",
+    "discarded_defect_bound",
+    "exceptional_source_bound",
+    "low_reserve_failure_exact",
+    "D2_excludes_discarded_types",
+    "three_remaining_patterns"
+  ],
+  "individual_axiom_audit": {
+    "donor_orientation_exclusion": [
+      "propext",
+      "Quot.sound"
+    ],
+    "no_blank_donor": [
+      "propext",
+      "Quot.sound"
+    ],
+    "short_longitudinal_dimensions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "injected_witness_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source_bound_from_injection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "saturated_pool_covered": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "discarded_defect_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exceptional_source_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "low_reserve_failure_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "D2_excludes_discarded_types": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "three_remaining_patterns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "excluded_axioms": [
+    "sorryAx",
+    "Lean.ofReduceBool",
+    "native_decide"
+  ],
+  "scope": "Eight actual local donor orientations and conditional physical exclusion; short-leg arithmetic; generic finite-list injection cardinality and exact resource saturation; sharpened weighted defect and exceptional-label arithmetic; exact R1 failure census and three-pattern alternative. Universal physical source-role normalization, forced-pair ownership/corner reconstruction, global witness injection and complete-component adapters remain written. Not an end-to-end arbitrary-grid Lean theorem.",
+  "temporary_objects": "Task-owned temporary object/audit directory removed after successful audit."
+}

@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "machine": "local Mac explicitly selected by user in current session",
+  "lean_version": "4.33.0",
+  "executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "command": "lean --stdin < formal/SubQuorum/IntervalConnectorCyclesAndMissingPorts.lean",
+  "preflight": {
+    "chunk": "1327c9",
+    "memory_free_percent": 41,
+    "active_real_lean_lake_comm_basename": "none"
+  },
+  "execution": {
+    "session_id": 10806,
+    "result_chunk": "94d35c",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "theorems": 19,
+  "individual_axiom_audits": [
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.terminal_port_degree_inventory",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.terminal_missing_iff_degree_four",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.missing_paths_and_degree_four_inventory",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.finite_multigraph_euler",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.path_component_partition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.boundary_inventory",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.exact_partial_connector_compensation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.packet_bound_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.all_interior_component_correction",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.injection_budget_suffices",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.global_with_outside_overlap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.parallel_cycle_has_zero_euler",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.any_cycle_length_has_zero_euler",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.cycle_count_not_an_extra_path_debit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.omitted_paths_are_full_debits",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.mirrored_shared_selection_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.cycle_family_target_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.missing_port_family_target_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IntervalConnectorCyclesAndMissingPorts.connector_choice_invariance",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "sorry": false,
+  "native_evaluation": false,
+  "scope": "Local Boolean port/degree inventory and degree-four missing-path counts; arbitrary finite path/cycle inventories, exact partial-connector compensation, conditional packet/global bounds including outside overlap, cycle accounting, omitted debit, family arithmetic and choice invariance. Actual grid-to-profile/multigraph, degree classification, coordinate, freezing and matching adapters remain written proofs."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T20:58:56.067371+00:00",
+  "execution": "Explicitly selected local executable; one standalone module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "42%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/ForkReplacementDeficiency.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/ForkReplacementDeficiency.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.ForkReplacementDeficiency.ordinary_count_bound' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkReplacementDeficiency.one_certificate_one_interval' does not depend on any axioms",
+        "'SubQuorum.ForkReplacementDeficiency.external_owners_injective' does not depend on any axioms",
+        "'SubQuorum.ForkReplacementDeficiency.private_arm_unit_not_used_outside' does not depend on any axioms",
+        "'SubQuorum.ForkReplacementDeficiency.same_external_owner_forces_same_unit' does not depend on any axioms",
+        "'SubQuorum.ForkReplacementDeficiency.prefix_saves_one_link' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkReplacementDeficiency.swapped_intervals_injective' does not depend on any axioms",
+        "'SubQuorum.ForkReplacementDeficiency.swapped_intervals_avoid_fixed' does not depend on any axioms",
+        "'SubQuorum.ForkReplacementDeficiency.matching_defect_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.ForkReplacementDeficiency.tree_defect_ledger' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkReplacementDeficiency.whole_network_gap_bound' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkReplacementDeficiency.direct_fork_external_token_bound' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Arbitrary finite-list ordinary local payment bound; original interval nonreuse and unique external-owner blocking injection; private-unit and same-external-owner exclusions; strict-prefix link saving; injective simultaneous old-interval swaps; deficit, tree and global ledgers; direct-fork token arithmetic under the written capacity hypothesis.",
+  "not_formalized": [
+    "General finite matching/Hall theorem and exact route optimization",
+    "Two-owner gap adapter and minimum-cost fork DAG argument",
+    "Original-alpha geometric token injection specialization"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

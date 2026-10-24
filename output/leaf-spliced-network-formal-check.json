@@ -1,0 +1,34 @@
+{
+  "recorded_at_utc": "2026-10-19T20:15:04.451963+00:00",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/LeafSplicedNetworks.lean",
+  "imports": [
+    "Std"
+  ],
+  "declarations": [
+    "tail_valid",
+    "path_charge_bound",
+    "even_path_nonpositive",
+    "odd_path_at_most_one",
+    "adjacent_module_budget",
+    "splice_charge_identity",
+    "receiver_ledger_adapter",
+    "positive_path_compensated",
+    "phase_zero_charge",
+    "phase_column_charge",
+    "phase_row_charge",
+    "phase_both_charge",
+    "nonpositive_phase",
+    "half_area_from_distinct_donors",
+    "coefficient_improvement",
+    "surviving_distinct_donors",
+    "first_five_support_excluded"
+  ],
+  "declaration_count": 17,
+  "return_code": 0,
+  "seconds": 5.318,
+  "audit_stdout": "'SubQuorum.LeafSplicedNetworks.tail_valid' does not depend on any axioms\n'SubQuorum.LeafSplicedNetworks.path_charge_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.even_path_nonpositive' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.odd_path_at_most_one' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.adjacent_module_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.splice_charge_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.receiver_ledger_adapter' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.positive_path_compensated' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.phase_zero_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.phase_column_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.phase_row_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.phase_both_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.nonpositive_phase' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.half_area_from_distinct_donors' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.coefficient_improvement' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.surviving_distinct_donors' depends on axioms: [propext, Quot.sound]\n'SubQuorum.LeafSplicedNetworks.first_five_support_excluded' depends on axioms: [propext, Quot.sound]\n",
+  "audit_stderr": "",
+  "scope": "All-length integer path induction, phase arithmetic, exact splice count cancellation, conditional distinct-donor ledger and coefficient improvement, arbitrary-reservation surviving donor count and first-five support contradiction. Geometry, physical receiver adapter, donor ownership and arbitrary affine modules retain written proofs. No Mathlib build or shared CI change."
+}

@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_forced_matching_edges": 11362,
+    "unique_frozen_pairs": 69,
+    "protected_paid_alpha_owners": 14559,
+    "flow_models": 963,
+    "witness_routes": 960,
+    "physical_flow_models": 963,
+    "externally_specified_protected_roots": 897,
+    "all_single_additional_link_controls": 4485,
+    "old_interval_assignments_forced_to_change": 828,
+    "fully_frozen_shared_chain_families": 69,
+    "two_link_one_reassignment_controls": 66
+  },
+  "examples": [
+    {
+      "width": 6,
+      "count": 2,
+      "protected_root_full_repair_costs": [
+        1,
+        null
+      ],
+      "unique_one_link_full_extension": [
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          6
+        ]
+      ],
+      "old_assignments_changed_at_one_link_optimum": 1,
+      "two_link_repair_changes_one_assignment": false,
+      "margin": 18
+    },
+    {
+      "width": 8,
+      "count": 3,
+      "protected_root_full_repair_costs": [
+        1,
+        2,
+        null
+      ],
+      "unique_one_link_full_extension": [
+        [
+          12,
+          5
+        ],
+        [
+          12,
+          6
+        ]
+      ],
+      "old_assignments_changed_at_one_link_optimum": 2,
+      "two_link_repair_changes_one_assignment": true,
+      "margin": 45
+    },
+    {
+      "width": 12,
+      "count": 24,
+      "protected_root_full_repair_costs": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null
+      ],
+      "unique_one_link_full_extension": [
+        [
+          16,
+          5
+        ],
+        [
+          16,
+          6
+        ]
+      ],
+      "old_assignments_changed_at_one_link_optimum": 23,
+      "two_link_repair_changes_one_assignment": true,
+      "margin": 648
+    }
+  ],
+  "scope": "Finite controls for the written arbitrary-length protected-root classification and unbounded old-allocation reassignment at the one-link optimum. Targets remain positive; no counterexample to the grid inequality is asserted."
+}

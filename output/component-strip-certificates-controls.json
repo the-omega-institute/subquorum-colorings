@@ -1,0 +1,600 @@
+{
+  "status": "PASS",
+  "capacity_patterns": 729,
+  "first_residual_charge_five_patterns": 60,
+  "first_pattern_capacity_counts": {
+    "5": 54,
+    "6": 6
+  },
+  "strict_component_mixtures": 6,
+  "physical_cases": 96,
+  "separated_mixed_cases": 6,
+  "physical_mixture": {
+    "shape": [
+      4,
+      6
+    ],
+    "rank": 4,
+    "weighted": 4,
+    "mixed": 5,
+    "selected": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "receiver_charge": 0
+  },
+  "reservation_monotonicity_counterexample": {
+    "shape": [
+      2,
+      6
+    ],
+    "all_blank": true,
+    "original_credits": 6,
+    "reserved_tile": [
+      0,
+      0
+    ],
+    "reserved_units": 1,
+    "residual_credits": 4,
+    "combined_after": 5,
+    "original_capacity": 6,
+    "conclusion": "B+mixed is NOT reservation-monotone; recompute from residual slots."
+  },
+  "frozen_owned_donor_counterexample": {
+    "shape": [
+      8,
+      8
+    ],
+    "selected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        7,
+        6
+      ]
+    ],
+    "matching": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    ],
+    "ordered_freezing_certificate": [
+      [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    ],
+    "donor": {
+      "tile": [
+        1,
+        2
+      ],
+      "selected": [
+        3,
+        5
+      ],
+      "anchor": [
+        3,
+        6
+      ],
+      "guard": [
+        1,
+        4
+      ],
+      "owner": 0,
+      "deficit": 1
+    },
+    "original_ledger": {
+      "receivers": [
+        {
+          "endpoints": 20,
+          "tiles": 9,
+          "selected": 9,
+          "charge_twice": 2,
+          "straight": false,
+          "saturated_endpoints": 2,
+          "transfers": 2
+        }
+      ],
+      "no_endpoint_tiles": 7,
+      "empty_deficit": 11,
+      "objective": 22,
+      "area": 64
+    },
+    "before": {
+      "credits": 10,
+      "rank": 6,
+      "weighted": 10,
+      "unused": 1,
+      "components": [
+        {
+          "vertices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slots": 11,
+          "rank": 6,
+          "weighted": 10,
+          "odd_runs": 2,
+          "credits": 10,
+          "unused": 1,
+          "rule": "half_capacity"
+        }
+      ]
+    },
+    "after": {
+      "credits": 8,
+      "rank": 6,
+      "weighted": 8,
+      "unused": 2,
+      "components": [
+        {
+          "vertices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "slots": 10,
+          "rank": 6,
+          "weighted": 8,
+          "odd_runs": 4,
+          "credits": 8,
+          "unused": 2,
+          "rule": "half_capacity"
+        }
+      ]
+    },
+    "reserved_units": 1,
+    "combined_after": 9,
+    "conclusion": "A valid saturated endpoint donor in a fully frozen receiver reduces B+mixed from10to9. This refutes reservation monotonicity for this score; charge1is paid both before and after, so neither allocation validity nor the target is refuted."
+  },
+  "scope": "Every assigned unit is checked physically and against every Hall subset within each component for729abstract capacity patterns. The low-charge threshold and exact first-failure resource shapes are finite controls of written general proofs. Both concrete blank/independent physical controls have no endpoints and charge zero; they demonstrate a stricter resource certificate and a failed monotonicity rule. The separate frozen donor example supplies a genuine owned-corner reservation counterexample to monotonicity, with the original target intact.96physical and6separated cases check distinct assignments and correct branch demands without enumerating their potentially large Hall-subset families."
+}

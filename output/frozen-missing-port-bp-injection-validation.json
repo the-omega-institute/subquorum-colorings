@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "controls": {
+    "models": 450,
+    "fully_frozen_models": 433,
+    "missing_alpha_terminals": 340,
+    "distinct_adjacent_bp_assignments": 331,
+    "nonempty_frozen_injections": 143,
+    "closed_dependency_obstructions": 9,
+    "parameter_triples": 351,
+    "mixed_inventory_controls": 26,
+    "fixture_symmetry_controls": 72
+  },
+  "examples": [
+    {
+      "kind": "missing",
+      "missing": [
+        [
+          5,
+          3
+        ],
+        [
+          10,
+          3
+        ]
+      ],
+      "assignment": [
+        [
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        [
+          [
+            10,
+            3
+          ],
+          [
+            10,
+            4
+          ]
+        ]
+      ],
+      "frozen_count": 20,
+      "endpoint_count": 20,
+      "frozen_layers": 9,
+      "bad_closed_sets": [],
+      "beta": 0
+    },
+    {
+      "kind": "cycle",
+      "missing": [],
+      "assignment": [],
+      "frozen_count": 40,
+      "endpoint_count": 40,
+      "frozen_layers": 10,
+      "bad_closed_sets": [],
+      "beta": 0
+    },
+    {
+      "kind": "collision",
+      "missing": [],
+      "assignment": [],
+      "frozen_count": 20,
+      "endpoint_count": 20,
+      "frozen_layers": 10,
+      "bad_closed_sets": [],
+      "beta": 0
+    },
+    {
+      "kind": "degree-three-but-not-frozen",
+      "shape": [
+        4,
+        10
+      ],
+      "selected": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "matching": [
+        [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "missing": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "assignment": [
+        [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ]
+      ],
+      "frozen_count": 2,
+      "endpoint_count": 10,
+      "frozen_layers": 1,
+      "bad_closed_sets": [
+        [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ]
+        ]
+      ],
+      "beta": 2
+    }
+  ],
+  "scope": "Uniform written injection into distinct BP terminals under complete freezing; closed dependency obstruction and explicit failure under degree>=3 alone. An injection into BP terminals is not an injection into BP--BP unit resources."
+}

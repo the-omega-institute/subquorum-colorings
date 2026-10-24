@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T18:41:06.908313+00:00",
+  "execution": "Explicitly selected local executable; sequential dependency and new module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "46%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/bin/lean",
+        "SubQuorum/BTColumnCorridorObstruction.lean",
+        "-o",
+        "/Users/lexa/Desktop/lexa/omega/subquorum-grid-compensation-20261019/build/sealed-gap-formal/SubQuorum/BTColumnCorridorObstruction.olean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/BoundarySealedGapObstruction.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/bin/lean",
+        "SubQuorum/BoundarySealedGapObstruction.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.BoundarySealedGapObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.original_tip_labels_unchanged' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.no_tt_columns' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.no_units_in_terminal_bands' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.no_full_gap_exit_at_reachable_tip' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.no_reachable_full_gap_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.interior_support_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.exact_counts_and_positive_margins' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BoundarySealedGapObstruction.at_most_two_support_owners' depends on axioms: [propext]"
+      ]
+    }
+  ],
+  "scope": "Concrete18x10 geometry/matching, all20 frozen endpoints, original tip labels, noTT, 48 original unmarked intervals, no full-gap exit along any finite original relay, internal PP witness, margins7/47; generic two-side owner bound under boundary ownership.",
+  "not_formalized": [
+    "All-parameter family and unique matching",
+    "General flow and two-phase cut adapter",
+    "Physical whole-support ownership and general allocation/ledger",
+    "Universal grid bound"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

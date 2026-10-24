@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "z3_version": "5.3.1",
+  "positive_controls": [
+    {
+      "source": "develop/capacity_one_strip_obstruction.json",
+      "shape": [
+        8,
+        10
+      ],
+      "root": [
+        1,
+        1
+      ],
+      "status": "sat",
+      "original_receiver_charge": 1,
+      "independently_frozen": true
+    },
+    {
+      "source": "develop/remote_deficit_frozen_obstruction.json",
+      "shape": [
+        8,
+        10
+      ],
+      "root": [
+        0,
+        3
+      ],
+      "status": "sat",
+      "original_receiver_charge": 1,
+      "independently_frozen": true
+    }
+  ],
+  "shape_encoding_patterns": 729,
+  "accepted_resource_shapes": 9,
+  "accepted_first_mixed_resource_shapes": 60,
+  "accepted_first_local_quota_resource_shapes": 30,
+  "scope": "Both known fully frozen no-four-corner fixtures satisfy the base SMT constraints with their exact T/P/matching labels. The encoded charge equals the independently checked original corrected receiver charge. This excludes vacuous negative searches caused by rejecting these fixtures at the base level; The direct doubled-tile shape encoding agrees with independent rank and capacity on all729abstract patterns, accepting exactly nine. The new first-mixed encoding agrees with the independently allocated mixed score on those same patterns, accepting exactly60. Excluding degree-one runs agrees with exact local-quota allocation on the same patterns, accepting exactly30 remaining shapes. These patterns test resource algebra, not physical feasibility. This does not establish full search completeness or general coverage."
+}

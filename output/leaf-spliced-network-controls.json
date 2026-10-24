@@ -1,0 +1,1048 @@
+{
+  "status": "PASS",
+  "phase_cases": 96,
+  "path_lengths": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    24,
+    33,
+    64
+  ],
+  "symmetry_images": 152,
+  "phase_splice_cases": 76,
+  "receiver_locality_controls": {
+    "cases": 6561,
+    "feasible_terminal": 625
+  },
+  "separated_network_components": 4,
+  "reservation_controls": {
+    "physical_reservation_subsets": 128,
+    "residual_charge_at_most_five": 120,
+    "original_charge": 7,
+    "positive_networks": 7,
+    "exact_q5_matching_controls": 1,
+    "note": "Reservations consume genuine donor units; nonzero-B q5 cases included. General arbitrary-slot proof is the distinct-unit deletion argument."
+  },
+  "separated_positive_components": 3,
+  "scope": "Finite controls for the separate all-length geometric proof; phase counts, actual matching, exact corrected splice ledger, all-endpoint freezing and distinct physical unit donors. No universal grid coverage or unrestricted coefficient improvement.",
+  "paths": [
+    {
+      "modules": 1,
+      "endpoints": 18,
+      "selected": 10,
+      "matching_edges": 9,
+      "intratile_splices": 0,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1
+      ],
+      "receiver_tiles": 8,
+      "receiver_selected": 8,
+      "objective": 19,
+      "half_area": 40,
+      "frozen_endpoints": 18,
+      "freezing_layers": 9,
+      "distinct_unit_donors": 2
+    },
+    {
+      "modules": 2,
+      "endpoints": 36,
+      "selected": 18,
+      "matching_edges": 18,
+      "intratile_splices": 1,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1
+      ],
+      "receiver_tiles": 14,
+      "receiver_selected": 10,
+      "objective": 36,
+      "half_area": 70,
+      "frozen_endpoints": 36,
+      "freezing_layers": 18,
+      "distinct_unit_donors": 2
+    },
+    {
+      "modules": 3,
+      "endpoints": 54,
+      "selected": 26,
+      "matching_edges": 27,
+      "intratile_splices": 2,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 21,
+      "receiver_selected": 16,
+      "objective": 53,
+      "half_area": 90,
+      "frozen_endpoints": 54,
+      "freezing_layers": 27,
+      "distinct_unit_donors": 4
+    },
+    {
+      "modules": 4,
+      "endpoints": 72,
+      "selected": 34,
+      "matching_edges": 36,
+      "intratile_splices": 3,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 27,
+      "receiver_selected": 18,
+      "objective": 70,
+      "half_area": 120,
+      "frozen_endpoints": 72,
+      "freezing_layers": 36,
+      "distinct_unit_donors": 4
+    },
+    {
+      "modules": 5,
+      "endpoints": 90,
+      "selected": 42,
+      "matching_edges": 45,
+      "intratile_splices": 4,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 34,
+      "receiver_selected": 24,
+      "objective": 87,
+      "half_area": 140,
+      "frozen_endpoints": 90,
+      "freezing_layers": 45,
+      "distinct_unit_donors": 6
+    },
+    {
+      "modules": 6,
+      "endpoints": 108,
+      "selected": 50,
+      "matching_edges": 54,
+      "intratile_splices": 5,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 40,
+      "receiver_selected": 26,
+      "objective": 104,
+      "half_area": 170,
+      "frozen_endpoints": 108,
+      "freezing_layers": 54,
+      "distinct_unit_donors": 6
+    },
+    {
+      "modules": 7,
+      "endpoints": 126,
+      "selected": 58,
+      "matching_edges": 63,
+      "intratile_splices": 6,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 47,
+      "receiver_selected": 32,
+      "objective": 121,
+      "half_area": 190,
+      "frozen_endpoints": 126,
+      "freezing_layers": 63,
+      "distinct_unit_donors": 8
+    },
+    {
+      "modules": 8,
+      "endpoints": 144,
+      "selected": 66,
+      "matching_edges": 72,
+      "intratile_splices": 7,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 53,
+      "receiver_selected": 34,
+      "objective": 138,
+      "half_area": 220,
+      "frozen_endpoints": 144,
+      "freezing_layers": 72,
+      "distinct_unit_donors": 8
+    },
+    {
+      "modules": 9,
+      "endpoints": 162,
+      "selected": 74,
+      "matching_edges": 81,
+      "intratile_splices": 8,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 60,
+      "receiver_selected": 40,
+      "objective": 155,
+      "half_area": 240,
+      "frozen_endpoints": 162,
+      "freezing_layers": 81,
+      "distinct_unit_donors": 10
+    },
+    {
+      "modules": 10,
+      "endpoints": 180,
+      "selected": 82,
+      "matching_edges": 90,
+      "intratile_splices": 9,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 66,
+      "receiver_selected": 42,
+      "objective": 172,
+      "half_area": 270,
+      "frozen_endpoints": 180,
+      "freezing_layers": 90,
+      "distinct_unit_donors": 10
+    },
+    {
+      "modules": 11,
+      "endpoints": 198,
+      "selected": 90,
+      "matching_edges": 99,
+      "intratile_splices": 10,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 73,
+      "receiver_selected": 48,
+      "objective": 189,
+      "half_area": 290,
+      "frozen_endpoints": 198,
+      "freezing_layers": 99,
+      "distinct_unit_donors": 12
+    },
+    {
+      "modules": 12,
+      "endpoints": 216,
+      "selected": 98,
+      "matching_edges": 108,
+      "intratile_splices": 11,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 79,
+      "receiver_selected": 50,
+      "objective": 206,
+      "half_area": 320,
+      "frozen_endpoints": 216,
+      "freezing_layers": 108,
+      "distinct_unit_donors": 12
+    },
+    {
+      "modules": 13,
+      "endpoints": 234,
+      "selected": 106,
+      "matching_edges": 117,
+      "intratile_splices": 12,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 86,
+      "receiver_selected": 56,
+      "objective": 223,
+      "half_area": 340,
+      "frozen_endpoints": 234,
+      "freezing_layers": 117,
+      "distinct_unit_donors": 14
+    },
+    {
+      "modules": 14,
+      "endpoints": 252,
+      "selected": 114,
+      "matching_edges": 126,
+      "intratile_splices": 13,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 92,
+      "receiver_selected": 58,
+      "objective": 240,
+      "half_area": 370,
+      "frozen_endpoints": 252,
+      "freezing_layers": 126,
+      "distinct_unit_donors": 14
+    },
+    {
+      "modules": 15,
+      "endpoints": 270,
+      "selected": 122,
+      "matching_edges": 135,
+      "intratile_splices": 14,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 99,
+      "receiver_selected": 64,
+      "objective": 257,
+      "half_area": 390,
+      "frozen_endpoints": 270,
+      "freezing_layers": 135,
+      "distinct_unit_donors": 16
+    },
+    {
+      "modules": 16,
+      "endpoints": 288,
+      "selected": 130,
+      "matching_edges": 144,
+      "intratile_splices": 15,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 105,
+      "receiver_selected": 66,
+      "objective": 274,
+      "half_area": 420,
+      "frozen_endpoints": 288,
+      "freezing_layers": 144,
+      "distinct_unit_donors": 16
+    },
+    {
+      "modules": 24,
+      "endpoints": 432,
+      "selected": 194,
+      "matching_edges": 216,
+      "intratile_splices": 23,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 157,
+      "receiver_selected": 98,
+      "objective": 410,
+      "half_area": 620,
+      "frozen_endpoints": 432,
+      "freezing_layers": 216,
+      "distinct_unit_donors": 24
+    },
+    {
+      "modules": 33,
+      "endpoints": 594,
+      "selected": 266,
+      "matching_edges": 297,
+      "intratile_splices": 32,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 216,
+      "receiver_selected": 136,
+      "objective": 563,
+      "half_area": 840,
+      "frozen_endpoints": 594,
+      "freezing_layers": 297,
+      "distinct_unit_donors": 34
+    },
+    {
+      "modules": 64,
+      "endpoints": 1152,
+      "selected": 514,
+      "matching_edges": 576,
+      "intratile_splices": 63,
+      "intertile_splices": 0,
+      "charge": 0,
+      "isolated_charges": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "receiver_tiles": 417,
+      "receiver_selected": 258,
+      "objective": 1090,
+      "half_area": 1620,
+      "frozen_endpoints": 1152,
+      "freezing_layers": 576,
+      "distinct_unit_donors": 64
+    }
+  ],
+  "sharp_three_module_example": {
+    "shape": [
+      10,
+      18
+    ],
+    "selected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        10
+      ],
+      [
+        0,
+        17
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        10
+      ],
+      [
+        2,
+        17
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        3,
+        15
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        10
+      ],
+      [
+        7,
+        5
+      ],
+      [
+        7,
+        12
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        9,
+        12
+      ]
+    ],
+    "matching": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      [
+        [
+          9,
+          6
+        ],
+        [
+          9,
+          7
+        ]
+      ],
+      [
+        [
+          9,
+          8
+        ],
+        [
+          9,
+          9
+        ]
+      ],
+      [
+        [
+          9,
+          10
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      [
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          8
+        ]
+      ],
+      [
+        [
+          8,
+          9
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      [
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      [
+        [
+          6,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          8,
+          11
+        ],
+        [
+          7,
+          11
+        ]
+      ],
+      [
+        [
+          6,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      [
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      [
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      [
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          16
+        ]
+      ],
+      [
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      [
+        [
+          1,
+          14
+        ],
+        [
+          1,
+          15
+        ]
+      ],
+      [
+        [
+          1,
+          11
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      [
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      [
+        [
+          1,
+          16
+        ],
+        [
+          2,
+          16
+        ]
+      ],
+      [
+        [
+          3,
+          16
+        ],
+        [
+          4,
+          16
+        ]
+      ]
+    ],
+    "checked": {
+      "modules": 3,
+      "endpoints": 54,
+      "selected": 26,
+      "matching_edges": 27,
+      "intratile_splices": 2,
+      "intertile_splices": 0,
+      "charge": 1,
+      "isolated_charges": [
+        1,
+        -1,
+        1
+      ],
+      "receiver_tiles": 21,
+      "receiver_selected": 16,
+      "objective": 53,
+      "half_area": 90,
+      "frozen_endpoints": 54,
+      "freezing_layers": 27,
+      "distinct_unit_donors": 4
+    }
+  }
+}

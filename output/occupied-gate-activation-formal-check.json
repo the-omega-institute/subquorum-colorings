@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-20T01:58:08.854Z",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/OccupiedGateActivation.lean",
+  "dependency": "formal/SubQuorum/WidthEightUCapObstruction.lean",
+  "dependency_exec": 89726,
+  "dependency_exit_code": 0,
+  "dependency_memory_free_percent": 55,
+  "full_current_source_exec": 11066,
+  "full_current_source_exit_code": 0,
+  "source_memory_free_percent": 50,
+  "individual_axiom_audit_exec": 50076,
+  "axiom_audit_exit_code": 0,
+  "audit_memory_free_percent": 47,
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 16,
+  "declarations": [
+    "reference_bar_endpoint",
+    "reference_left_column_endpoint",
+    "down_left_clears_same_leg",
+    "down_right_clears_opposite_leg",
+    "down_left_contains_tip_neighbor",
+    "down_right_contains_tip_neighbor",
+    "positive_beyond_tip_is_original_support",
+    "right_up_always_collides",
+    "right_down_collides_when_stem_reaches",
+    "corner_bar_collides_when_bar_reaches",
+    "corner_leg_collides_when_leg_reaches",
+    "width_six_reach_is_automatic",
+    "shorter_leg_activation_height",
+    "width_six_slack",
+    "width_six_joint_allocation",
+    "partially_marked_joint_allocation"
+  ],
+  "individual_axiom_audit": {
+    "reference_bar_endpoint": [],
+    "reference_left_column_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "down_left_clears_same_leg": [
+      "propext",
+      "Quot.sound"
+    ],
+    "down_right_clears_opposite_leg": [
+      "propext",
+      "Quot.sound"
+    ],
+    "down_left_contains_tip_neighbor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "down_right_contains_tip_neighbor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "positive_beyond_tip_is_original_support": [
+      "propext"
+    ],
+    "right_up_always_collides": [
+      "propext",
+      "Quot.sound"
+    ],
+    "right_down_collides_when_stem_reaches": [
+      "propext",
+      "Quot.sound"
+    ],
+    "corner_bar_collides_when_bar_reaches": [
+      "propext",
+      "Quot.sound"
+    ],
+    "corner_leg_collides_when_leg_reaches": [
+      "propext",
+      "Quot.sound"
+    ],
+    "width_six_reach_is_automatic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "shorter_leg_activation_height": [
+      "propext",
+      "Quot.sound"
+    ],
+    "width_six_slack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "width_six_joint_allocation": [
+      "propext",
+      "Quot.sound"
+    ],
+    "partially_marked_joint_allocation": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Universal physical-coordinate U endpoint witnesses for down/left and down/right tip clearance, compulsory beyond-tip neighbor, original positive support inclusion, horizontal tip and corner collisions under dimension reach; reference column/bar lemmas and conditional shorter-leg, joint allocation and integer floor bounds. Signed-isometry gate normalization, source phase classification, final support forcing, side-to-tip incidence injection and complete fusion assembly remain written. No end-to-end arbitrary-source Lean theorem and no sorryAx/native_decide.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-gate-check/SubQuorum",
+    "lean -o /tmp/subquorum-gate-check/SubQuorum/WidthEightUCapObstruction.olean formal/SubQuorum/WidthEightUCapObstruction.lean",
+    "LEAN_PATH=/tmp/subquorum-gate-check lean formal/SubQuorum/OccupiedGateActivation.lean"
+  ],
+  "audit_reproduction": "Append #print axioms SubQuorum.OccupiedGateActivation.NAME for each named declaration to a temporary copy, then run with the same LEAN_PATH."
+}

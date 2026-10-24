@@ -1,0 +1,171 @@
+The unrestricted allocation remains unresolved. I can now rule out a substantial version of the proposed spatial transfer: deleting boundary owners and paying the resulting mandatory-support failures individually from the original  $A/U_0/Z_0/H$  pool.The obstruction is an unbounded family of complete feasible original-source fusions. With four original sources, the family keeps
+$$(K_{01},K_{10},K_{11})=(3,1,0),\qquad
+(A,U_0,Z_0,H)=(0,0,0,6),\qquad R=3$$
+fixed, while the minimum number of mandatory-support omissions needed to make the proposed source restriction feasible tends to infinity.Every member has  $N=G=0$ , hence  $\mu=3>0$ . Its ambient  $\sigma$  is also explicitly positive. Thus the result identifies a failure of that transfer mechanism while preserving the full allocation question.The construction realizes an open neutral  $01$ -to- $01$  path, its singleton continuation into a phase10 corner, and arbitrarily long full two-owner receivers. It uses complete sources and checks occupied degree in  $P\cup T$ .1. The exact boundary condition for restricting original sourcesFirst, there is a general theorem describing precisely what goes wrong with a source cut. It applies to arbitrary finite mixed U/rotor fusions, with unrestricted dimensions and recurring owners.Let the complete feasible fusion have
+$$P=\bigcup_iP_i,\qquad T=\left(\bigcup_iT_i\right)\setminus P.$$
+For any subset  $I$  of original owners, put
+$$P_I=\bigcup_{i\in I}P_i,\qquad U_I=\bigcup_{i\in I}T_i.$$
+The mandatory selected set after retaining exactly those complete sources would be
+$$T_I=U_I\setminus P_I.$$
+Separate it into
+$$V_I=U_I\setminus P,\qquad
+W_I=U_I\cap(P\setminus P_I).$$
+Thus
+$$T_I=V_I\sqcup W_I.$$
+Here  $V_I$  consists of supports that were already selected in the complete fusion. The points in  $W_I$  are restored supports: they were consumed by endpoints of deleted owners and become mandatory selections after the cut.Exact feasibility criterionEvery  $v\in V_I$  remains feasible automatically. Indeed,
+$$P_I\cup V_I\cup W_I\subseteq P\cup T,$$
+and  $v$  retains its original endpoint anchor in  $P_I$ .Every  $w\in W_I$  also has at least one original anchor in  $P_I$ . Full-fusion feasibility rules out any adjacency between  $V_I$  and  $W_I$ : such an adjacency would have given the globally retained selection in  $V_I$  an occupied neighbor in addition to its anchor.Consequently
+$$\deg_{P_I\cup T_I}(w)
+=\deg_{P_I}(w)+\deg_{W_I}(w).$$
+Therefore the complete-source restriction is feasible if and only if
+$$\deg_{P_I}(w)=1\quad\text{for every }w\in W_I,
+\qquad E(W_I)=\varnothing.
+\tag{1}$$
+There are two distinct obstructions:a restored selection has two or more persistent endpoint neighbors;two restored selections are adjacent, each already having its own persistent endpoint anchor.This is why endpoint disjointness and containment of whole endpoint sets do not suffice for a recursive restriction.An exact minimum boundary omission countDefine  $\kappa(I)$  to be the minimum number of restored supports that would have to be omitted from selection to make the cut feasible, keeping  $P_I$  fixed. These omissions are forbidden in the original model. The definition measures the cut’s failure; it does not repair a fusion legally.Partition
+$$W_2=\{w\in W_I:\deg_{P_I}(w)\ge2\},
+\qquad W_1=W_I\setminus W_2.$$
+Every point of  $W_2$  must be omitted. Once those points are removed, the remaining requirement is to eliminate every edge between selected points of  $W_1$ . Hence
+$$\boxed{\kappa(I)=|W_2|+\tau\bigl(G[W_1]\bigr)
+              =|W_2|+\nu\bigl(G[W_1]\bigr).}
+\tag{2}$$
+Here  $\tau$  is minimum vertex-cover size and  $\nu$  is maximum matching size. Their equality follows because the grid graph is bipartite.For completeness, the usual alternating-path proof gives the equality: from a maximum matching, start alternating paths at unmatched vertices in one bipartition class. The unreached vertices of that class together with the reached vertices of the other class form a vertex cover containing exactly one endpoint of every matching edge.A separate measure is total excess occupied degree:
+$$\boxed{
+\beta(I)
+=\sum_{w\in W_I}\bigl(\deg_{P_I}(w)-1\bigr)+2|E(W_I)|.
+}
+\tag{3}$$
+The cut is feasible exactly when  $\beta(I)=0$ .Neither  $\kappa$  nor  $\beta$  is a new reserve. The family below shows that even the optimal omission count  $\kappa$  cannot generally be paid from the existing reserve.2. A complete two-parameter source familyLet  $k\ge4$  and  $h\ge8$  be arbitrary even integers. Keep the standard fixed physical partition
+$$\{2i,2i+1\}\times\{2j,2j+1\}.$$
+Take every original endpoint, support, and matching edge from the following four sources, using the exact constructor in the question.OwnerComplete canonical sourcePhysical mapOriginal phase $V_1$  $U(h,k+4,k+2)$  $(r,c)\mapsto(r-k-2,c-1)$  $01$  $V_2$  $U(6,h-2,4)$  $(r,c)\mapsto(c+1,h-1-r)$  $01$  $V_3$  $U(k+8,h,4)$  $(r,c)\mapsto(2-c,h+1-r)$  $01$  $V_4$  $U(h-2,k,k)$  $(r,c)\mapsto(-r,c)$  $10$ All widths and both heights of every source are legal. The physical partition is fixed throughout.The exact endpoint sets can be written as these disjoint blocks within each source:
+$$\begin{aligned}
+P_1={}&
+\{-k-2,-k-1\}\times[0,h-1]\\
+&{}\cup[-k,2]\times\{0\}
+\cup[-k,0]\times\{h-1\};
+\\[2mm]
+P_2={}&
+[2,7]\times\{h-2,h-1\}\\
+&{}\cup\{2\}\times[1,h-3]
+\cup\{7\}\times[h-5,h-3];
+\\[2mm]
+P_3={}&
+[-k-6,1]\times\{h,h+1\}\\
+&{}\cup\{1\}\times[1,h-1]
+\cup\{-k-6\}\times[h-3,h-1];
+\\[2mm]
+P_4={}&
+\{-1,0\}\times[1,h-2]\\
+&{}\cup[-k,-2]\times\{1,h-2\}.
+\end{aligned}
+\tag{4}$$
+Intervals in these formulas contain integer coordinates.These descriptions prove pairwise endpoint disjointness directly. For example,  $V_1$ 's two stem columns lie immediately outside  $V_4$ 's stem columns; its bar lies above  $V_4$ 's tips. The bar of  $V_3$  lies in columns  $h,h+1$ , outside the other three sources, while its near stem occupies row  $1$ , between  $V_4$ 's bar and  $V_2$ 's near stem.The endpoint counts are
+$$\begin{aligned}
+|P_1|&=2h+2k+4, &
+|P_2|&=h+12,\\
+|P_3|&=2k+h+18, &
+|P_4|&=2h+2k-6.
+\end{aligned}$$
+Therefore
+$$\boxed{|P|=6k+6h+28,\qquad |M|=3k+3h+14.}
+\tag{5}$$
+The matching is exactly the union of the four transported original matchings. Endpoint disjointness ensures that this union remains a matching.3. Complete mandatory-support feasibilitySubstitution into the original support constructor gives the following entire final selected set
+$$T=(T_1\cup T_2\cup T_3\cup T_4)\setminus P.$$
+The families in the table are disjoint.Original ownerRetained selected point or familyIts unique neighbor in  $P\cup T$  $V_1$  $(r,-1)$ ,  $r$  even,  $-k-2\le r\le2$  $(r,0)$  $V_1$  $(3,0)$  $(2,0)$  $V_2$  $(3,c)$ ,  $c$  even,  $2\le c\le h-4$  $(2,c)$  $V_2$  $(8,c)$ ,  $c\in\{h-5,h-3,h-1\}$  $(7,c)$  $V_2$  $(7,h-6)$  $(7,h-5)$  $V_2$  $(6,h-4)$  $(7,h-4)$  $V_3$  $(2,h+1)$  $(1,h+1)$  $V_3$  $(-k-7,c)$ ,  $c\in\{h-3,h-1,h+1\}$  $(-k-6,c)$  $V_3$  $(-k-6,h-4)$  $(-k-6,h-3)$  $V_3$  $(-k-5,h-2)$  $(-k-6,h-2)$  $V_4$  $(r,2)$ ,  $r$  odd,  $-k+1\le r\le-3$  $(r,1)$  $V_4$  $(r,h-3)$ , same odd  $r$  $(r,h-2)$ The endpoint blocks (4), the spacing of these support families, and parity exclude the other three neighbors in every row of this table. This verifies occupied degree in the full set  $P\cup T$ , including the exclusion of selected–selected adjacencies.For example, the odd-row interior supports of  $V_1$ 's near leg are consumed by  $V_4$ , except its last such support  $(1,1)$ , which is consumed by  $V_3$ . All supports of  $V_1$ 's far leg are consumed by  $V_3$  or  $V_4$ . Its remaining selections are exactly the first two table rows. The other sources give the remaining rows by the same direct substitution.The counts are
+$$|T\cap T_1|=\frac k2+4,\quad
+|T\cap T_2|=\frac h2+3,\quad
+|T\cap T_3|=6,\quad
+|T\cap T_4|=k-2,$$
+so
+$$\boxed{|T|=\frac{3k+h}{2}+11.}
+\tag{6}$$
+Thus this is a complete feasible fusion for every even  $k\ge4,h\ge8$ . No optional selections, truncated sources, or unfilled support obligations are being suppressed.4. It realizes the relevant open-path continuationThe original  $01$  terminals
+$$p=(2,0)\in P_1,\qquad q=(2,1)\in P_2$$
+form an actual neutral edge in
+$$Q_0=\{2,3\}\times\{0,1\}.$$
+Its exact final contents are:endpoints  $p,q$ ;retained selection  $(3,0)$ ;blank corner  $(3,1)$ .The  $V_1$  port is active and the  $V_2$  port passive. Their forced continuation point is
+$$z=(1,1)\in P_3,$$
+an original phase01 terminal.Its next receiver
+$$Q=\{0,1\}\times\{0,1\}$$
+is full, with the following original ownership:Column  $0$ Column  $1$ Row  $0$  $V_1$  endpoint $V_4$  phase10 cornerRow  $1$  $V_1$  endpoint $V_3$  phase01 terminalThis is a complete realization of the neutral singleton continuation into a phase10 corner.The four sources belong to one endpoint component: the neutral edge joins  $V_1,V_2$ , and  $Q$  joins  $V_1,V_3,V_4$ .The specified neutral port component is open. In particular,  $V_1$ 's other original terminal  $(0,h-1)$  already lies in a full tile. Thus this family does not contradict the previously proved pure- $01$  closed-curve Hall statement.It also supplies no complete critical-U10 backfill event in the separate established sense: there is no U11 companion, and the phase10 corner in  $Q$  has an original singleton profile.5. The proposed cut has an unbounded, unavoidable deficitRetain exactly the complete sources
+$$I=\{V_3,V_4\},$$
+and remove  $V_1,V_2$ .Their newly restored mandatory supports are exactly
+$$\begin{aligned}
+W_I={}&\{(1,0)\}\\
+&{}\cup\{(2,c):c\text{ odd},\ 1\le c\le h-1\}\\
+&{}\cup\{(-2i,0),(-2i,h-1):0\le i\le k/2\}\\
+&{}\cup\{(-k-1,1),(-k-1,h-2)\}.
+\end{aligned}
+\tag{7}$$
+The long side creates persistent multiple-anchor failuresFor every  $1\le i\le k/2$ , the restored selection
+$$w_i=(-2i,h-1)$$
+has the two persistent endpoint neighbors
+$$(-2i,h-2)\in P_4,\qquad (-2i,h)\in P_3.
+\tag{8}$$
+It cannot be selected.At  $i=0$ , the restored selection  $(0,h-1)$  has three persistent endpoint neighbors:
+$$(0,h-2)\in P_4,\quad
+(0,h)\in P_3,\quad
+(1,h-1)\in P_3.
+\tag{9}$$
+Consequently
+$$W_2=\{(-2i,h-1):0\le i\le k/2\},
+\qquad |W_2|=\frac k2+1.
+\tag{10}$$
+These failures recur along the same original owners. They do not introduce new source owners or new cap occurrences as the length grows.The full  $2+1+1$  receiver creates a selected–selected failureIn  $Q$ , deleting  $V_1$  restores $(0,0)$ , an original support of  $V_4$ , anchored at  $(0,1)$ ; $(1,0)$ , an original support of  $V_3$ , anchored at  $(1,1)$ .The two restored selections are adjacent. Each therefore has occupied degree two.All other restored supports have one persistent endpoint anchor, and the only edge induced by  $W_1$  is
+$$(0,0)\text{—}(1,0).$$
+Applying (2),
+$$\boxed{\kappa(I)=\left(\frac k2+1\right)+1=\frac k2+2.}
+\tag{11}$$
+The three-anchor point in (9) is counted only once in  $\kappa$ . The additional unit in (11) comes from the separate selected–selected edge.The total degree excess is
+$$\boxed{\beta(I)=\frac k2+4.}
+\tag{12}$$
+These formulas are exact: omitting all points of  $W_2$  and either endpoint of the selected–selected edge would suffice in the relaxed model. Mandatory retention forbids those omissions in the actual complete-source model.6. The actual reserve does not grow with this boundary burdenThe original, uncut fusion has the following exhaustive census of endpoint-bearing physical tiles:Actual tile profileNumberFull  $4P0T$  $3k/2+h+7$ Ordinary  $2P1T$  $h/2$ Neutral  $2P1T$  $1$ Irregular  $2P0T$  $h/2-2$ Singleton  $1P1T$  $2$ There are no  $3P0T$  tiles.The two singleton tiles are the unfilled far terminal receivers of  $V_2,V_3$ . Every actual  $2P0T$  tile is an exact original irregular bar pair of  $V_4$ , on row  $-1$ . Therefore
+$$L_1=2,\qquad
+L_{2\mathrm{bar}}=\frac h2-2,\qquad
+L_{2\mathrm{mutual}}=L_3=0.$$
+Using the stipulated defect identity,
+$$\boxed{H=h-2,\qquad A=U_0=Z_0=0,\qquad R=\frac{h-2}{2}.}
+\tag{13}$$
+The problematic restored points do not come with previously uncounted local defect slots:For  $i\ge1$ , the point in (8) originally lies in a full  $2+2$  tile:  $V_1$  supplies one column and  $V_4$  the other.The point in (9) lies in a full  $2+1+1$  tile.The selected–selected failure comes from the full  $2+1+1$  tile  $Q$ .Increasing  $k$  lengthens full receiver bands. It does not create an  $H$  stop along them.Fixed resources, unbounded optimal omission countSet  $h=8$ . For every even  $k\ge4$ , the complete fusion has
+$$(K_{01},K_{10},K_{11})=(3,1,0),$$
+
+$$(A,U_0,Z_0,H)=(0,0,0,6),\qquad R=3,$$
+while
+$$\kappa(I)=\frac k2+2\longrightarrow\infty.
+\tag{14}$$
+Thus the universal proposed payment
+$$\kappa(I)\le A+U_0+Z_0+H$$
+is false. More strongly, no finite bound on this omission count can depend only on those original source counts and resource counts. They all remain fixed along the family.This also rules out paying such boundary obligations separately using any fixed multiple of the same pool. A representation that groups a whole occupied band or preserves its original boundary owner remains possible.7. Actual  $\mu$ , original negative charge, and ambient  $\sigma$ All four sources are negative, so
+$$N=0,\qquad G=0,\qquad n_0=n_2=0.$$
+Their original negative charge is
+$$S=1+1+1+\bigl((h-2)-1\bigr)=h.$$
+In particular,  $G=0$  and  $S=h$  are different actual quantities.The allocation margin is
+$$\boxed{\mu=N+R-G=\frac{h-2}{2}>0.}
+\tag{15}$$
+For an ambient rectangle aligned with the fixed partition, take rows
+$$[-k-8,9]$$
+and columns
+$$[-2,h+1].$$
+It has dimensions
+$$(k+18)\times(h+4)$$
+and contains all original endpoints and supports.From (5)–(6), its actual ambient slack is
+$$\begin{aligned}
+\sigma
+&=\frac{(k+18)(h+4)}2-|M|-|T|\\
+&=\boxed{\frac{k(h-5)+11h+22}{2}}>0.
+\end{aligned}
+\tag{16}$$
+For a concrete instance where the optimal omission count already exceeds the entire actual pool, take
+$$k=10,\qquad h=8.$$
+The four complete sources are
+$$U(8,14,12),\quad U(6,6,4),\quad U(18,8,4),\quad U(6,10,10)$$
+with the maps in the manifest. The exact counts are
+$$|P|=136,\quad |M|=68,\quad |T|=30.$$
+The aligned ambient rectangle is  $28\times12$ , and
+$$\boxed{
+S=8,\quad G=0,\quad
+2R=6,\quad \kappa=7,\quad \beta=9,\quad
+\mu=3,\quad \sigma=70.
+}$$
+This is a complete feasible counterexample to the boundary-payment inequality, with positive allocation and ambient margins.8. What this resolves, and the precise remaining gapThe proposed spatial iteration cannot rely on either of the following unrestricted assertions:Retaining complete owners on the chosen side of a cut automatically yields another feasible complete-source fusion.The restored-support failures of such a cut can be paid individually from a uniformly bounded portion of the original  $A/U_0/Z_0/H$  pool.The first assertion fails in the complete family above. The second fails unboundedly, even after replacing a raw count of bad selections by the optimal omission count obtained from the exact boundary matching problem.The accepted restriction to whole endpoint components is unaffected. Our cut splits one endpoint component; the removed owners are precisely what consume the otherwise infeasible supports.This leaves a specific obligation for a successful general induction. It must either:carry the deleted owners’ occupied boundary bands as part of the induction state, with an accounting rule that survives further cuts and recurring owners; orprove a stronger restriction on the regions generated by actual marked-side demand that excludes this obstruction.The present family has no positive demand, so a suitably proved demand-dependent restriction could exclude it. No such restriction follows merely from complete-source containment or the existing neutral continuation rules.The pure- $01$  closed-region Hall theorem remains intact. The family realizes an open-path escape, not a closed pure- $01$  component or an AA component. U11 cap/bar continuation and complete critical-U10 realization remain separate unresolved branches.Accordingly, the full remaining claim is still
+$$\boxed{2(n_2-n_0)\le A+U_0+Z_0+H.}$$
+What is now established is a concrete obstruction to extending the internal-region argument by charging restored supports separately: arbitrarily many such obligations can run through full receivers belonging to the same few original owners, while the entire actual reserve stays fixed.

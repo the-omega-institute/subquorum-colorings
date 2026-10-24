@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19T19:03:50.582640+00:00",
+  "execution_location": "Local Mac, user-authorized for this session",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 40%",
+    "actual_lean_lake_processes": [],
+    "process_check": "Compared basename of full ps comm field, including bare lean/lake."
+  },
+  "source_files": [
+    "formal/SubQuorum/LowChargeRankBarrier.lean"
+  ],
+  "theorem_declarations": 7,
+  "compile_exit_codes": {
+    "source": 0,
+    "stdin_axiom_audit": 0
+  },
+  "axiom_audit_output": [
+    "'SubQuorum.LowChargeRankBarrier.component_small_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowChargeRankBarrier.small_budget_add' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowChargeRankBarrier.small_total_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowChargeRankBarrier.rank_at_most_two_uses_all_slots' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowChargeRankBarrier.separating_failure_needs_rank_three' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowChargeRankBarrier.separating_failure_needs_charge_four' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowChargeRankBarrier.charge_four_numeric_shape' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Seven general arithmetic and arbitrary-component-list statements. The local admissible count interface is explicit: slots<=rank or rank>=2 and 2*slots<=rank*rank. The physical run multiplicity bound, full unbounded quadratic theorem and exact doubled-edge support geometry remain written. No universal grid bound, geometric coverage or frozen charge-four realization is formalized."
+}

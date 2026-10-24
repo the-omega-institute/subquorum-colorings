@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-19T17:36:02Z",
+  "execution_location": "Local Mac, explicitly authorized by user in this session",
+  "lean_version": "4.33.0",
+  "platform": "arm64-apple-darwin24.6.0",
+  "preflight": {
+    "physical_memory_bytes": 17179869184,
+    "memory_pressure_free_percent": 48,
+    "actual_lean_lake_processes": [],
+    "process_check": "Compared basename of ps comm field to lean/lake, including bare names and full paths."
+  },
+  "source_files": [
+    "formal/SubQuorum/CornerFreeFrozenReceiver.lean",
+    "formal/SubQuorum/EndpointGuardedCorners.lean"
+  ],
+  "theorem_declarations": 35,
+  "compile_exit_codes": {
+    "FrozenPromotion": 0,
+    "CornerFreeFrozenReceiver": 0,
+    "OwnedDonorCompensation": 0,
+    "EndpointGuardedCorners": 0
+  },
+  "axiom_audits": [
+    {
+      "theorem": "coordinates_injective",
+      "axioms": []
+    },
+    {
+      "theorem": "matching_involution",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "occupied_degree_three",
+      "axioms": []
+    },
+    {
+      "theorem": "all_endpoints_frozen",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "no_feasible_bundle",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "receiver_complete",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "receiver_counts",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "original_corrected_receiver_charge_twice",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "endpoint_guarded_corner_exact",
+      "axioms": [
+        "propext"
+      ]
+    }
+  ],
+  "formal_fixture_embedding": "Coordinate array exactly matches the20certificate endpoints followed by12selected vertices in develop/corner_free_frozen_receiver.json; actual mate array independently matches its matching. No sorry or native_decide in either new source.",
+  "dependencies": "Std-only transitive imports, using existing FrozenPromotion and OwnedDonorCompensation; no Lake/Mathlib build or shared CI change.",
+  "scope": "Kernel-checked concrete grid embedding, feasibility, occupied degree3, actual matching, complete receiver, original corrected charge and arbitrary mixed-bundle exclusion; plus the general normalized endpoint-guard local deficit lemma. Geometric absence of old donors and full mixed ownership/global coverage adapter remain written, not formalized.",
+  "regeneration": [
+    "Create a task-owned temporary directory with a SubQuorum subdirectory; use it as LEAN_PATH.",
+    "From formal/, compile SubQuorum/FrozenPromotion.lean and SubQuorum/OwnedDonorCompensation.lean with lean -o to their module paths in that directory.",
+    "Compile SubQuorum/CornerFreeFrozenReceiver.lean and SubQuorum/EndpointGuardedCorners.lean with the same LEAN_PATH.",
+    "Import the two resulting modules in a temporary audit source and run #print axioms on the nine listed full theorem names, in their corresponding namespaces."
+  ]
+}

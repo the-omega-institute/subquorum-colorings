@@ -1,0 +1,86 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "checked_at": "2026-10-19T04:19:23.758889+00:00",
+  "active_lean_lake_before": [],
+  "memory_before": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4024.\nPages active:                                 332202.\nPages inactive:                               306515.\nPages speculative:                             24659.\nPages throttled:                                   0.\nPages wired down:                             225580.\nPages purgeable:                                1922.\n\"Translation faults\":                    15982387868.\nPages copy-on-write:                       976188854.\nPages zero filled:                        6550546879.\nPages reactivated:                        3002691797.\nPages purged:                              138252047.\nFile-backed pages:                            381482.\nAnonymous pages:                              281894.\nPages stored in compressor:                  1597554.\nPages occupied by compressor:                 113949.\nDecompressions:                           2419883487.\nCompressions:                             2861013922.\nPageins:                                  4465718117.\nPageouts:                                   12417926.\nSwapins:                                    25846578.\nSwapouts:                                   32402710.\n",
+  "peak_child_rss": 1081966592,
+  "peak_child_rss_unit": "bytes on macOS; KiB on Linux",
+  "checks": [
+    {
+      "module": "SubQuorum/CollarCompensation.lean",
+      "seconds": 5.204,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/AttachmentCollarCompensation.lean",
+      "seconds": 0.726,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/BlankWitnessCompensation.lean",
+      "seconds": 0.501,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/DiagonalWitnessChains.lean",
+      "seconds": 5.358,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "SubQuorum/MixedPChainCompensation.lean",
+      "seconds": 0.565,
+      "stdout": "",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "module": "CollarCompensationAudit.lean",
+      "seconds": 0.358,
+      "stdout": "'SubQuorum.CollarCompensation.pressured_tile' does not depend on any axioms\n'SubQuorum.CollarCompensation.terminal_tile' depends on axioms: [propext]\n'SubQuorum.CollarCompensation.disjoint_tile_surplus' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.collar_parity_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.aggregate_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.CollarCompensation.compensated_core_nonpositive' depends on axioms: [propext, Quot.sound]\n'SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile' depends on axioms: [propext]\n'SubQuorum.AttachmentCollarCompensation.saturated_endpoints' depends on axioms: [propext]\n'SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.corner_two_exterior_faces' does not depend on any axioms\n'SubQuorum.BlankWitnessCompensation.shared_blank_ledger' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.shared_blank_source_compensation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.two_witness_payment' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BlankWitnessCompensation.paid_attachment_parity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.shared_corner_displacement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.orientation_propagation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DiagonalWitnessChains.double_link_charge' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MixedPChainCompensation.blank_exterior_gap' depends on axioms: [propext]\n'SubQuorum.MixedPChainCompensation.occupied_exterior_gap' depends on axioms: [propext]\n'SubQuorum.MixedPChainCompensation.transition_charge' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "audited_declarations": [
+    "SubQuorum.CollarCompensation.pressured_tile",
+    "SubQuorum.CollarCompensation.terminal_tile",
+    "SubQuorum.CollarCompensation.disjoint_tile_surplus",
+    "SubQuorum.CollarCompensation.collar_parity_charge",
+    "SubQuorum.CollarCompensation.aggregate_source_compensation",
+    "SubQuorum.CollarCompensation.compensated_core_nonpositive",
+    "SubQuorum.AttachmentCollarCompensation.unpressured_deficient_tile",
+    "SubQuorum.AttachmentCollarCompensation.saturated_endpoints",
+    "SubQuorum.AttachmentCollarCompensation.attachment_corrected_charge",
+    "SubQuorum.AttachmentCollarCompensation.pressure_free_source_compensation",
+    "SubQuorum.BlankWitnessCompensation.corner_two_exterior_faces",
+    "SubQuorum.BlankWitnessCompensation.shared_blank_ledger",
+    "SubQuorum.BlankWitnessCompensation.shared_blank_source_compensation",
+    "SubQuorum.BlankWitnessCompensation.two_witness_payment",
+    "SubQuorum.BlankWitnessCompensation.paid_attachment_parity",
+    "SubQuorum.DiagonalWitnessChains.shared_corner_displacement",
+    "SubQuorum.DiagonalWitnessChains.orientation_propagation",
+    "SubQuorum.DiagonalWitnessChains.two_possible_shared_blanks",
+    "SubQuorum.DiagonalWitnessChains.double_link_charge",
+    "SubQuorum.MixedPChainCompensation.blank_exterior_gap",
+    "SubQuorum.MixedPChainCompensation.occupied_exterior_gap",
+    "SubQuorum.MixedPChainCompensation.transition_charge"
+  ],
+  "sha256": {
+    "formal/SubQuorum/CollarCompensation.lean": "d47dfc9778320a50a5b011606de904a7bffe3e3a1441891074660999fbaf6e3c",
+    "formal/SubQuorum/AttachmentCollarCompensation.lean": "28c59e3262b5ad4c8fac38a7b0888aa712f703f4e1055a249a0fdd6eb010b618",
+    "formal/SubQuorum/BlankWitnessCompensation.lean": "8b6abc7f743b76b3e1399645d1719f74029d65e0e2d5bfe853174d53c412601e",
+    "formal/SubQuorum/DiagonalWitnessChains.lean": "e6d09a6a14862b749b02a6df708818d37d1bdd37e80ee1c36d4897e2eb4d7eef",
+    "formal/SubQuorum/MixedPChainCompensation.lean": "9682f1f3fb715983d59b819519469e0872c07bcf767c5ac1946a91f5265a2529",
+    "formal/CollarCompensationAudit.lean": "6cc2dbf46ab4de7303e9832b9ab27526e27809436693a3fcc984e3406419d4e5"
+  },
+  "scope": "Finite pressured/unpressured/mixed-P gap tile facts, arbitrary-list surplus, integer-coordinate shared-corner displacement and orientation, conditional collar/shared-blank/diagonal-chain/transition counts and parity; full graph adapters, normalization, path classification and constructive allocation have written proofs."
+}

@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "totals": {
+    "uniform_serial_freezing_events": 19392,
+    "uniform_forced_template_edges": 9696,
+    "independent_forced_matching_edges": 9696,
+    "unique_frozen_pairs": 192,
+    "tt_columns_in_gaps": 0,
+    "endpoint_free_gaps": 5568,
+    "gap_unit_resources": 79200,
+    "gap_adapters": 192,
+    "single_pp_cut_on_original_cycle": 46,
+    "single_pp_cut_on_original_beta": 52,
+    "single_pp_cut_on_original_alpha": 10,
+    "arbitrary_pp_cut_set_ledger_controls": 220,
+    "whole_beta_resources_consumed": 96,
+    "source_alpha_unit_allocation_controls": 96,
+    "original_beta_path_resources_assigned": 96,
+    "nonempty_source_alpha_unit_allocations": 96,
+    "terminal_models": 96,
+    "original_path_objects": 960,
+    "cancellation_links": 96,
+    "fully_frozen_zero_gap_barriers": 96,
+    "unrestricted_full_gap_access_obstructions": 96,
+    "single_zero_gap_beta_repairs": 96,
+    "zero_gap_link_witnesses": 192,
+    "explicit_pp_cycle_cut_debt_controls": 96,
+    "zero_debt_auxiliary_rematching_repairs": 96,
+    "pp_auxiliary_edges_replaced": 192,
+    "new_auxiliary_witness_edges": 288,
+    "fully_frozen_reflected_pp_barriers": 96,
+    "unrestricted_zero_gap_pairing_obstructions": 96
+  },
+  "examples": [
+    {
+      "width": 6,
+      "depth": 1,
+      "selected": 39,
+      "matching": 34,
+      "packet_shape": [
+        12,
+        24
+      ],
+      "inventory": {
+        "alpha": 1,
+        "beta": 2,
+        "mixed": 7
+      },
+      "margin": 59,
+      "unmarked_interval_units": 58,
+      "full_gap_access_maximum": 0,
+      "deficit": 1,
+      "empty_separator": [],
+      "corridor_columns": 2,
+      "chosen_corridor_link": [
+        [
+          10,
+          9
+        ],
+        [
+          11,
+          6
+        ]
+      ],
+      "augmented_maximum": 1,
+      "minimum_total_virtual_links": 1
+    },
+    {
+      "width": 6,
+      "depth": 1,
+      "reflected_left": true,
+      "margin": 59,
+      "full_gap_and_corridor_pairing_maximum": 0,
+      "deficit": 1,
+      "whole_original_beta_resources": 2,
+      "corridor_columns": 2,
+      "naive_pp_opening_overcount": 1,
+      "zero_debt_auxiliary_repair": 1,
+      "auxiliary_edges_removed": 2,
+      "new_auxiliary_edges": 3
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "selected": 95,
+      "matching": 40,
+      "packet_shape": [
+        14,
+        52
+      ],
+      "inventory": {
+        "alpha": 1,
+        "beta": 2,
+        "mixed": 7
+      },
+      "margin": 215,
+      "unmarked_interval_units": 214,
+      "full_gap_access_maximum": 0,
+      "deficit": 1,
+      "empty_separator": [],
+      "corridor_columns": 16,
+      "chosen_corridor_link": [
+        [
+          12,
+          23
+        ],
+        [
+          13,
+          6
+        ]
+      ],
+      "augmented_maximum": 1,
+      "minimum_total_virtual_links": 1
+    },
+    {
+      "width": 8,
+      "depth": 8,
+      "reflected_left": true,
+      "margin": 215,
+      "full_gap_and_corridor_pairing_maximum": 0,
+      "deficit": 1,
+      "whole_original_beta_resources": 2,
+      "corridor_columns": 16,
+      "naive_pp_opening_overcount": 1,
+      "zero_debt_auxiliary_repair": 1,
+      "auxiliary_edges_removed": 2,
+      "new_auxiliary_edges": 3
+    },
+    {
+      "width": 20,
+      "depth": 24,
+      "selected": 223,
+      "matching": 76,
+      "packet_shape": [
+        26,
+        116
+      ],
+      "inventory": {
+        "alpha": 1,
+        "beta": 2,
+        "mixed": 7
+      },
+      "margin": 1183,
+      "unmarked_interval_units": 1182,
+      "full_gap_access_maximum": 0,
+      "deficit": 1,
+      "empty_separator": [],
+      "corridor_columns": 48,
+      "chosen_corridor_link": [
+        [
+          24,
+          55
+        ],
+        [
+          25,
+          6
+        ]
+      ],
+      "augmented_maximum": 1,
+      "minimum_total_virtual_links": 1
+    },
+    {
+      "width": 20,
+      "depth": 24,
+      "reflected_left": true,
+      "margin": 1183,
+      "full_gap_and_corridor_pairing_maximum": 0,
+      "deficit": 1,
+      "whole_original_beta_resources": 2,
+      "corridor_columns": 48,
+      "naive_pp_opening_overcount": 1,
+      "zero_debt_auxiliary_repair": 1,
+      "auxiliary_edges_removed": 2,
+      "new_auxiliary_edges": 3
+    }
+  ],
+  "scope": "Finite controls for the written arbitrary-length frozen three-copy obstruction to unrestricted full-gap resource access and its single zero-surplus corridor accounting pairing into one whole original beta. Also covers the reflected PP-boundary obstruction to free-terminal corridor pairing, explicit PP-opening debt, selected single/prefix cut sets, and two-PP-edge/three-new-edge auxiliary rematching with zero net debt. All surgeries change auxiliary accounting strands, not actual matching or selected vertices. No universal grid inequality or Lean geometry proof."
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "counts": {
+    "critical_original_source_pairs": 216,
+    "endpoint_disjoint_partial_pairs": 186,
+    "physical_partition_preserving_images": 1488,
+    "opposite_leg_far_stem_collisions": 30,
+    "endpoint_collision_pairs": 30
+  },
+  "exact_frame_controls": {
+    "critical_ordered_frame_pairs": 64,
+    "critical_tag_only_survivors": 32,
+    "critical_tag_and_partition_survivors": 8,
+    "long_ordered_frame_pairs": 64,
+    "long_tag_only_survivors": 8,
+    "long_tag_and_partition_survivors": 0,
+    "first_ordered_frame_pairs": 64,
+    "first_tag_only_survivors": 16,
+    "first_tag_and_partition_survivors": 0
+  },
+  "partial_examples": [
+    {
+      "active_width": 10,
+      "active": 8,
+      "child_dimensions": [
+        6,
+        4,
+        4
+      ],
+      "reflected": false,
+      "forced_critical_point": [
+        -4,
+        6
+      ],
+      "partial_only": true
+    },
+    {
+      "active_width": 10,
+      "active": 8,
+      "child_dimensions": [
+        6,
+        4,
+        4
+      ],
+      "reflected": true,
+      "forced_critical_point": [
+        -4,
+        6
+      ],
+      "partial_only": true
+    },
+    {
+      "active_width": 10,
+      "active": 8,
+      "child_dimensions": [
+        6,
+        4,
+        4
+      ],
+      "reflected": false,
+      "forced_critical_point": [
+        -4,
+        6
+      ],
+      "partial_only": true
+    }
+  ],
+  "complete_feasible_phase11_exit_coverage": 0,
+  "complete_closed01_contact_coverage": 0,
+  "complete_AA_coverage": 0,
+  "scope": "Original endpoint/support geometry, actual aligned-partition corner diagonals under all eight preserving isometries, and exact orientation tag/partition exhaustion. Partial pairs are not complete feasible configurations or target counterexamples. General claims use written arbitrary-dimension proofs and Lean statements."
+}

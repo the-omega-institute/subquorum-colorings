@@ -1,0 +1,184 @@
+{
+  "status": "PASS",
+  "totals": {
+    "flat_exhaustive_assignment_comparisons": 5413,
+    "independent_flat_min_cost_comparisons": 7544,
+    "positive_reroot_controls": 751,
+    "shared_beta_controls": 1639,
+    "unrepaired_tree_controls": 2471,
+    "all_small_maximum_baselines": 5413,
+    "frozen_fixed_c0_lift_checks": 491,
+    "physical_repaired_trees": 56,
+    "physical_positive_reroot_controls": 0,
+    "physical_nonsingleton_deficient_trees": 0,
+    "frozen_geometry_controls": 25
+  },
+  "examples": {
+    "shared_whole_beta_obstruction": {
+      "k": 4,
+      "intervals": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "beta_owners": [
+        [
+          1,
+          3
+        ]
+      ],
+      "t": 2,
+      "mu": 1,
+      "deficit": 1,
+      "scope": "Abstract incidence counterexample to separate reuse of one beta; no frozen realization claimed."
+    },
+    "unported_frozen_repairs": [
+      {
+        "alpha": 2,
+        "beta": 5,
+        "t": 2,
+        "mu": 2,
+        "paid": 2,
+        "changes": 0,
+        "margin": 190,
+        "extra_links": [
+          [
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          [
+            [
+              7,
+              13
+            ],
+            [
+              7,
+              14
+            ]
+          ]
+        ],
+        "tree_sizes": [
+          1,
+          1
+        ]
+      },
+      {
+        "alpha": 2,
+        "beta": 5,
+        "t": 2,
+        "mu": 2,
+        "paid": 2,
+        "changes": 0,
+        "margin": 190,
+        "extra_links": [
+          [
+            [
+              7,
+              12
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          [
+            [
+              7,
+              10
+            ],
+            [
+              7,
+              9
+            ]
+          ]
+        ],
+        "tree_sizes": [
+          1,
+          1
+        ]
+      },
+      {
+        "alpha": 2,
+        "beta": 5,
+        "t": 2,
+        "mu": 2,
+        "paid": 2,
+        "changes": 0,
+        "margin": 190,
+        "extra_links": [
+          [
+            [
+              5,
+              13
+            ],
+            [
+              5,
+              12
+            ]
+          ],
+          [
+            [
+              12,
+              8
+            ],
+            [
+              12,
+              9
+            ]
+          ]
+        ],
+        "tree_sizes": [
+          1,
+          1
+        ]
+      },
+      {
+        "alpha": 2,
+        "beta": 5,
+        "t": 2,
+        "mu": 2,
+        "paid": 2,
+        "changes": 0,
+        "margin": 190,
+        "extra_links": [
+          [
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              11
+            ]
+          ],
+          [
+            [
+              12,
+              15
+            ],
+            [
+              12,
+              14
+            ]
+          ]
+        ],
+        "tree_sizes": [
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "scope": "General written joint allocation theorem and weighted rerooting proof; independent flat min-cost/exhaustive regression checks; actual frozen C0+C1 cancellation and retained-support checks. Only direct whole-beta links; mixed relays and a universal grid/5of6 bound are not established."
+}

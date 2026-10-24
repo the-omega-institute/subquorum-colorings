@@ -1,0 +1,2675 @@
+{
+  "status": "PASS",
+  "physical_cases": 144,
+  "mixed_controls": [
+    {
+      "reserve_old": false,
+      "components": 2,
+      "sealed_strips": 39,
+      "eligible_after_reservation": 39,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 103,
+      "no_endpoint_deficit": 227,
+      "allocations": 39,
+      "charge_twice": 4
+    },
+    {
+      "reserve_old": true,
+      "components": 2,
+      "sealed_strips": 39,
+      "eligible_after_reservation": 39,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 103,
+      "no_endpoint_deficit": 227,
+      "allocations": 39,
+      "charge_twice": 4
+    },
+    {
+      "reserve_old": false,
+      "components": 3,
+      "sealed_strips": 52,
+      "eligible_after_reservation": 52,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 136,
+      "no_endpoint_deficit": 302,
+      "allocations": 52,
+      "charge_twice": 6
+    },
+    {
+      "reserve_old": true,
+      "components": 3,
+      "sealed_strips": 52,
+      "eligible_after_reservation": 52,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 136,
+      "no_endpoint_deficit": 302,
+      "allocations": 52,
+      "charge_twice": 6
+    },
+    {
+      "reserve_old": false,
+      "components": 4,
+      "sealed_strips": 75,
+      "eligible_after_reservation": 75,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 259,
+      "no_endpoint_deficit": 557,
+      "allocations": 75,
+      "charge_twice": 10
+    },
+    {
+      "reserve_old": true,
+      "components": 4,
+      "sealed_strips": 75,
+      "eligible_after_reservation": 74,
+      "reserved_units": 6,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 259,
+      "no_endpoint_deficit": 557,
+      "allocations": 74,
+      "charge_twice": 10
+    }
+  ],
+  "single_tile_two_orientation_allocation": "PASS_two_distinct_units_of_one_capacity_two_tile",
+  "frozen_remote_sharpness": "PASS_two_strips_each_capacity2_share_only_donor_capacity2;one_unit_each_allocated;full_two_unit_credit_per_strip_FALSE",
+  "scope": "Controls for general written strip capacity, multiplicity-two, Hall allocation and reservation theorems, with actual overlapping physical rings and mixed-component cases. Rings are single-terminal, not claimed fully frozen. Global strip coverage is not inferred from finite checks.",
+  "cases": [
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_3",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 14,
+      "eligible_after_reservation": 14,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 13,
+      "no_endpoint_deficit": 30,
+      "allocations": 14,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_4",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 20,
+      "eligible_after_reservation": 20,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 20,
+      "no_endpoint_deficit": 44,
+      "allocations": 20,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_6",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 32,
+      "eligible_after_reservation": 32,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 40,
+      "no_endpoint_deficit": 84,
+      "allocations": 32,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "ring_10",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 56,
+      "eligible_after_reservation": 56,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 104,
+      "no_endpoint_deficit": 212,
+      "allocations": 56,
+      "charge_twice": 0
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "remote",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 2,
+      "eligible_after_reservation": 2,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 1,
+      "no_endpoint_deficit": 2,
+      "allocations": 2,
+      "charge_twice": 2
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 17,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 17,
+      "charge_twice": 4
+    },
+    {
+      "name": "charge_two",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 17,
+      "eligible_after_reservation": 15,
+      "reserved_units": 5,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 15,
+      "no_endpoint_deficit": 33,
+      "allocations": 15,
+      "charge_twice": 4
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "corner_free",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 5,
+      "eligible_after_reservation": 5,
+      "reserved_units": 1,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 5,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "old22",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 9,
+      "eligible_after_reservation": 9,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 6,
+      "no_endpoint_deficit": 16,
+      "allocations": 9,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": false,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    },
+    {
+      "name": "two_leg",
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "reserve_old": true,
+      "components": 1,
+      "sealed_strips": 4,
+      "eligible_after_reservation": 4,
+      "reserved_units": 0,
+      "max_tile_multiplicity": 2,
+      "crossed_tiles": 3,
+      "no_endpoint_deficit": 11,
+      "allocations": 4,
+      "charge_twice": 2
+    }
+  ]
+}

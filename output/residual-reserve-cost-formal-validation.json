@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T22:22:26.483751+00:00",
+  "execution": "Explicitly selected local executable; one standalone module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "40%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/ResidualReserveCost.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/ResidualReserveCost.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.ResidualReserveCost.sublist_cost_bound' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ResidualReserveCost.positive_cycle_selection' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ResidualReserveCost.prune_positive_cycles_with_cost' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ResidualReserveCost.sum_nonnegative' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ResidualReserveCost.zero_sum_iff_all_zero' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ResidualReserveCost.same_endpoint_potential_cost' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Arbitrary finite residual-cycle lists: extract exactly h positive-gain cycles from net gain at least h as a subsequence without exceeding cost; nonnegative reduced-cost sum zero iff every used reduced cost zero; equal endpoint potentials preserve path cost.",
+  "not_formalized": [
+    "Integral flow difference cycle decomposition and capacity lifting",
+    "Original compensation flow/normalization adapter and physical geometry",
+    "Min-cost-flow dual potentials, convex profile and max-flow/min-cut"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

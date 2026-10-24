@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "seed_endpoints": 46,
+  "first_rotor_owners": [
+    [
+      false,
+      -3,
+      -5
+    ]
+  ],
+  "second_rotor_owners_in_both_branches": [],
+  "first_root": [
+    -1,
+    -1
+  ],
+  "second_root": [
+    -2,
+    -1
+  ],
+  "rotor_branch_barrier": [
+    [
+      -3,
+      -1
+    ],
+    [
+      -2,
+      -3
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      2,
+      -1
+    ]
+  ],
+  "u_branch_corridor_barrier": [
+    [
+      -3,
+      -5
+    ],
+    [
+      -3,
+      -1
+    ],
+    [
+      -2,
+      -7
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -1,
+      -5
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "parameter_controls": 30,
+  "isometry_controls": 240,
+  "endpoint_controls": 8768,
+  "three_blocker_contexts": 120,
+  "five_blocker_support_contexts": 19,
+  "scope": "Exact16-role owner exhaustion in three fixed contexts; branch barriers and mandatory neighbors. Representative complete U endpoint/support controls only; arbitrary dimensions and both ownership branches have written proofs and separately scoped Lean lemmas. The finite controls do not prove general noncompletion or the mixed inequality."
+}

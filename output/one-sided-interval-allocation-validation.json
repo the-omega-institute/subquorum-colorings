@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "totals": {
+    "labelled_whole_beta_interval_controls": 3,
+    "exhaustive_abstract_incidence_models": 19283,
+    "independent_forced_matching_edges": 16744,
+    "unique_frozen_pairs": 92,
+    "frozen_chain_families": 92,
+    "chain_demands_paid_after_one_link": 1196,
+    "fixed_height_payment_distance_controls": 6,
+    "physical_parallel_cycle_controls": 11
+  },
+  "chain_examples": [
+    {
+      "width": 6,
+      "count": 2,
+      "margin": 18,
+      "before": {
+        "assigned": 1,
+        "deficit": 1
+      },
+      "after": {
+        "assigned": 2,
+        "deficit": 0
+      },
+      "omitted_two_sided_connectors_after": 1
+    },
+    {
+      "width": 8,
+      "count": 3,
+      "margin": 45,
+      "before": {
+        "assigned": 2,
+        "deficit": 1
+      },
+      "after": {
+        "assigned": 3,
+        "deficit": 0
+      },
+      "omitted_two_sided_connectors_after": 1
+    },
+    {
+      "width": 16,
+      "count": 24,
+      "margin": 936,
+      "before": {
+        "assigned": 23,
+        "deficit": 1
+      },
+      "after": {
+        "assigned": 24,
+        "deficit": 0
+      },
+      "omitted_two_sided_connectors_after": 1
+    }
+  ],
+  "relay_examples": [
+    {
+      "depth": 3,
+      "dimensions": [
+        10,
+        16
+      ],
+      "minimum_two_end_access": 4,
+      "minimum_one_interval_assignment": 3,
+      "minimum_two_end_collision_free_compensation": 5
+    },
+    {
+      "depth": 4,
+      "dimensions": [
+        10,
+        18
+      ],
+      "minimum_two_end_access": 4,
+      "minimum_one_interval_assignment": 4,
+      "minimum_two_end_collision_free_compensation": 6
+    },
+    {
+      "depth": 8,
+      "dimensions": [
+        10,
+        26
+      ],
+      "minimum_two_end_access": 4,
+      "minimum_one_interval_assignment": 8,
+      "minimum_two_end_collision_free_compensation": 10
+    },
+    {
+      "depth": 16,
+      "dimensions": [
+        10,
+        42
+      ],
+      "minimum_two_end_access": 4,
+      "minimum_one_interval_assignment": 16,
+      "minimum_two_end_collision_free_compensation": 18
+    },
+    {
+      "depth": 32,
+      "dimensions": [
+        10,
+        74
+      ],
+      "minimum_two_end_access": 4,
+      "minimum_one_interval_assignment": 32,
+      "minimum_two_end_collision_free_compensation": 34
+    },
+    {
+      "depth": 64,
+      "dimensions": [
+        10,
+        138
+      ],
+      "minimum_two_end_access": 4,
+      "minimum_one_interval_assignment": 64,
+      "minimum_two_end_collision_free_compensation": 66
+    }
+  ],
+  "scope": "Finite controls support the written resource-degree-two allocation proof. No universal grid bound or general route-existence theorem is claimed."
+}

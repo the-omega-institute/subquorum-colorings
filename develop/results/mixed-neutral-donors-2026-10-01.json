@@ -1,0 +1,1777 @@
+{
+  "status": "ALL_CHECKS_PASSED",
+  "local": {
+    "states": [
+      {
+        "labels": "BB/BB",
+        "upward_saturated_attachments": [],
+        "charge_twice": -4
+      },
+      {
+        "labels": "BT/BB",
+        "upward_saturated_attachments": [],
+        "charge_twice": -2
+      },
+      {
+        "labels": "BP/BB",
+        "upward_saturated_attachments": [],
+        "charge_twice": -3
+      },
+      {
+        "labels": "BP/BB",
+        "upward_saturated_attachments": [
+          1
+        ],
+        "charge_twice": -2
+      },
+      {
+        "labels": "TB/BB",
+        "upward_saturated_attachments": [],
+        "charge_twice": -2
+      },
+      {
+        "labels": "PB/BB",
+        "upward_saturated_attachments": [],
+        "charge_twice": -3
+      },
+      {
+        "labels": "PB/BB",
+        "upward_saturated_attachments": [
+          0
+        ],
+        "charge_twice": -2
+      },
+      {
+        "labels": "PP/BB",
+        "upward_saturated_attachments": [],
+        "charge_twice": -2
+      }
+    ],
+    "labelings_examined": 9,
+    "scope": "Necessary conditions with arbitrary upper exterior; no matching realizability inferred."
+  },
+  "words": {
+    "neutral_state_count": 12,
+    "widths": [
+      {
+        "tile_width": 1,
+        "necessary_feasible_words": 0,
+        "single_tile_donors": 0,
+        "wider_full_intervals": 0,
+        "wider_mixed_intervals_outside_rule": 0
+      },
+      {
+        "tile_width": 2,
+        "necessary_feasible_words": 0,
+        "single_tile_donors": 0,
+        "wider_full_intervals": 0,
+        "wider_mixed_intervals_outside_rule": 0
+      },
+      {
+        "tile_width": 3,
+        "necessary_feasible_words": 1,
+        "single_tile_donors": 1,
+        "wider_full_intervals": 0,
+        "wider_mixed_intervals_outside_rule": 0
+      },
+      {
+        "tile_width": 4,
+        "necessary_feasible_words": 5,
+        "single_tile_donors": 2,
+        "wider_full_intervals": 1,
+        "wider_mixed_intervals_outside_rule": 2
+      },
+      {
+        "tile_width": 5,
+        "necessary_feasible_words": 27,
+        "single_tile_donors": 13,
+        "wider_full_intervals": 3,
+        "wider_mixed_intervals_outside_rule": 11
+      },
+      {
+        "tile_width": 6,
+        "necessary_feasible_words": 126,
+        "single_tile_donors": 52,
+        "wider_full_intervals": 14,
+        "wider_mixed_intervals_outside_rule": 60
+      },
+      {
+        "tile_width": 7,
+        "necessary_feasible_words": 594,
+        "single_tile_donors": 271,
+        "wider_full_intervals": 56,
+        "wider_mixed_intervals_outside_rule": 285
+      },
+      {
+        "tile_width": 8,
+        "necessary_feasible_words": 2748,
+        "single_tile_donors": 1292,
+        "wider_full_intervals": 267,
+        "wider_mixed_intervals_outside_rule": 1384
+      }
+    ],
+    "scope": "Necessary label and receiving-cap conditions; general proof and global matching are separate."
+  },
+  "obstacle_symmetry_images": [
+    {
+      "dimensions": [
+        6,
+        14
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        6,
+        14
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        6,
+        14
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        6,
+        14
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        14,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        14,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        14,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    },
+    {
+      "dimensions": [
+        14,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        -2
+      ],
+      "remainder_charge_twice": -2,
+      "max_capacity": 1
+    }
+  ],
+  "capacity_two_flips": [
+    {
+      "swaps": 1,
+      "symmetry_images": 8
+    },
+    {
+      "swaps": 2,
+      "symmetry_images": 8
+    }
+  ],
+  "branching_controls": [
+    {
+      "branches": 1,
+      "terminal_charge_twice": -2
+    },
+    {
+      "branches": 2,
+      "terminal_charge_twice": -4
+    },
+    {
+      "branches": 3,
+      "terminal_charge_twice": -6
+    },
+    {
+      "branches": 4,
+      "terminal_charge_twice": -8
+    },
+    {
+      "branches": 5,
+      "terminal_charge_twice": -10
+    },
+    {
+      "branches": 6,
+      "terminal_charge_twice": -12
+    },
+    {
+      "branches": 7,
+      "terminal_charge_twice": -14
+    },
+    {
+      "branches": 8,
+      "terminal_charge_twice": -16
+    },
+    {
+      "branches": 9,
+      "terminal_charge_twice": -18
+    },
+    {
+      "branches": 10,
+      "terminal_charge_twice": -20
+    },
+    {
+      "branches": 11,
+      "terminal_charge_twice": -22
+    },
+    {
+      "branches": 12,
+      "terminal_charge_twice": -24
+    },
+    {
+      "branches": 13,
+      "terminal_charge_twice": -26
+    },
+    {
+      "branches": 14,
+      "terminal_charge_twice": -28
+    },
+    {
+      "branches": 15,
+      "terminal_charge_twice": -30
+    },
+    {
+      "branches": 16,
+      "terminal_charge_twice": -32
+    }
+  ],
+  "obstacle": {
+    "name": "Mixed-neutral obstacle compensated by capped donor",
+    "rows": 6,
+    "columns": 14,
+    "selected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        13
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        5,
+        8
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ]
+    ],
+    "matching": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ]
+      ],
+      [
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      [
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          12
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ]
+      ],
+      [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ]
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          10
+        ]
+      ]
+    ],
+    "objective": 41,
+    "q": -1,
+    "components": [
+      {
+        "tiles": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "edges": 6,
+        "capacity": 5,
+        "excess": 1
+      },
+      {
+        "tiles": [
+          8
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          10
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          11
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          12
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          16
+        ],
+        "edges": 0,
+        "capacity": 1,
+        "excess": -1
+      },
+      {
+        "tiles": [
+          18
+        ],
+        "edges": 0,
+        "capacity": 1,
+        "excess": -1
+      }
+    ],
+    "routing": {
+      "a": 1,
+      "b": 2,
+      "c": 0,
+      "f2": 0,
+      "f3": 0,
+      "h": 8,
+      "paths": [
+        {
+          "typ": "LL",
+          "length": 6,
+          "internal": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "ends": [
+            0,
+            6
+          ]
+        },
+        {
+          "typ": "HH",
+          "length": 0,
+          "internal": [
+            16
+          ],
+          "ends": [
+            16,
+            16
+          ]
+        },
+        {
+          "typ": "HH",
+          "length": 0,
+          "internal": [
+            18
+          ],
+          "ends": [
+            18,
+            18
+          ]
+        }
+      ]
+    },
+    "tiles": [
+      {
+        "tile": 0,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 1
+      },
+      {
+        "tile": 1,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 2,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 3,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 4,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 5,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 6,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 1
+      },
+      {
+        "tile": 7,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 8,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 9,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 10,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 11,
+        "selected": 1,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 12,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 13,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 14,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 15,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 16,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 0
+      },
+      {
+        "tile": 17,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 18,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 0
+      },
+      {
+        "tile": 19,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 20,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      }
+    ]
+  },
+  "wide_obstacle_symmetry_images": [
+    {
+      "dimensions": [
+        6,
+        20
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        6,
+        20
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        6,
+        20
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        6,
+        20
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        20,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        20,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        20,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    },
+    {
+      "dimensions": [
+        20,
+        6
+      ],
+      "charge_twice": [
+        2,
+        0,
+        0,
+        -2,
+        -2
+      ],
+      "remainder_charge_twice": 0
+    }
+  ],
+  "wide_obstacle": {
+    "name": "Closed wide mixed successor has zero charge",
+    "rows": 6,
+    "columns": 20,
+    "selected": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        19
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        11
+      ],
+      [
+        2,
+        13
+      ],
+      [
+        2,
+        19
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        3,
+        14
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        0
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        4,
+        13
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        19
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        5,
+        18
+      ]
+    ],
+    "matching": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ]
+      ],
+      [
+        [
+          0,
+          11
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      [
+        [
+          0,
+          13
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      [
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          16
+        ]
+      ],
+      [
+        [
+          0,
+          17
+        ],
+        [
+          0,
+          18
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      [
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      [
+        [
+          1,
+          12
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      [
+        [
+          1,
+          14
+        ],
+        [
+          1,
+          15
+        ]
+      ],
+      [
+        [
+          1,
+          16
+        ],
+        [
+          1,
+          17
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          18
+        ],
+        [
+          2,
+          18
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      [
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          15
+        ]
+      ],
+      [
+        [
+          2,
+          16
+        ],
+        [
+          2,
+          17
+        ]
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      [
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ]
+      ],
+      [
+        [
+          3,
+          16
+        ],
+        [
+          4,
+          16
+        ]
+      ]
+    ],
+    "objective": 59,
+    "q": -1,
+    "components": [
+      {
+        "tiles": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "edges": 9,
+        "capacity": 8,
+        "excess": 1
+      },
+      {
+        "tiles": [
+          11
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          12
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          13
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          16
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          17
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          18
+        ],
+        "edges": 0,
+        "capacity": 0,
+        "excess": 0
+      },
+      {
+        "tiles": [
+          22
+        ],
+        "edges": 0,
+        "capacity": 1,
+        "excess": -1
+      },
+      {
+        "tiles": [
+          27
+        ],
+        "edges": 0,
+        "capacity": 1,
+        "excess": -1
+      }
+    ],
+    "routing": {
+      "a": 1,
+      "b": 2,
+      "c": 0,
+      "f2": 0,
+      "f3": 0,
+      "h": 12,
+      "paths": [
+        {
+          "typ": "LL",
+          "length": 9,
+          "internal": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "ends": [
+            0,
+            9
+          ]
+        },
+        {
+          "typ": "HH",
+          "length": 0,
+          "internal": [
+            22
+          ],
+          "ends": [
+            22,
+            22
+          ]
+        },
+        {
+          "typ": "HH",
+          "length": 0,
+          "internal": [
+            27
+          ],
+          "ends": [
+            27,
+            27
+          ]
+        }
+      ]
+    },
+    "tiles": [
+      {
+        "tile": 0,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 1
+      },
+      {
+        "tile": 1,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 2,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 3,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 4,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 5,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 6,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 7,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 8,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 2
+      },
+      {
+        "tile": 9,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 1
+      },
+      {
+        "tile": 10,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 11,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 12,
+        "selected": 1,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 13,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 14,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 15,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 16,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 17,
+        "selected": 1,
+        "internal": 1,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 18,
+        "selected": 0,
+        "internal": 1,
+        "attachments": 1,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 19,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 20,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 21,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 22,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 0
+      },
+      {
+        "tile": 23,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 24,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 25,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 26,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 27,
+        "selected": 1,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 1,
+        "degree": 0
+      },
+      {
+        "tile": 28,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      },
+      {
+        "tile": 29,
+        "selected": 2,
+        "internal": 0,
+        "attachments": 0,
+        "capacity": 0,
+        "degree": 0
+      }
+    ]
+  },
+  "sha256": {
+    "develop/check_mixed_neutral_donors.py": "a4bae9f01ef75a057dc55d94d571edd9932586a716dd1e3b1acc8f7ac6214293",
+    "docs/MIXED_NEUTRAL_DONORS.md": "40b14ba565771e82de0d3bd6e4e204025a7b014653c268b08595f91ffa3bb287",
+    "develop/check_branching_interval_compensation.py": "a8cad68d79a06f83de32eb5342f718c90f2ead4bacacf32eaef614d4c7b7e926",
+    "develop/check_compensation_transport.py": "8cf6f30d9b3ce4646af8f6f7347af9ab2356edc888a2b989dc56e512746b5557",
+    "develop/check_cross_component_compensation.py": "51cdf7976deac21a71d0a605cc0ca6d65fdb22814c03ab1d89f4113e117087d0",
+    "develop/check_pressure_bands.py": "e94e6f7c511563101df4e18d0ef1a52b5e52c278b001dde517038205a0147659",
+    "develop/check_residual_corridors.py": "0997ef4291d0110ebb0b984b7fcb3457c0dc9511f294169b74871c818a903c28",
+    "develop/verify_grid_five_sixths.py": "c2aa8d5fe3ef90c61ef62a82678adbc6dd67f3c357ec24f5017af17cb308078b",
+    "develop/verify_grid_short_path_compensation.py": "afaf0d1adb404472680e008f6a28fdcffeaab356b8bb0f78bc2322ee094027af"
+  },
+  "scope": "Finite controls of the written lemmas and covered-class theorem. Wide mixed intervals and general grid inequality remain open. No Lean run."
+}

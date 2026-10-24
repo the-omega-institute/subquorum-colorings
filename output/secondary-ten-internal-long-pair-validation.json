@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "date": "2026-10-22",
+  "written_proof": "docs/SECONDARY_TEN_INTERNAL_LONG_PAIR.md",
+  "python": {
+    "status": "PASS",
+    "session": 24965,
+    "exit_code": 0,
+    "exact_arbitrary_far_pair_sets": 2264,
+    "activated_old_X_receipts": 80,
+    "minimum_pair_gain": 4,
+    "actual_endpoint_disjoint_batches": 58,
+    "batch_pair_counts": [
+      3,
+      4,
+      5
+    ],
+    "long_far_2000_batches": [
+      {
+        "pairs": 2,
+        "gain": 2324,
+        "activations": 0,
+        "new_full": 12,
+        "new_events": 28
+      },
+      {
+        "pairs": 5,
+        "gain": 6810,
+        "activations": 0,
+        "new_full": 30,
+        "new_events": 70
+      },
+      {
+        "pairs": 11,
+        "gain": 19218,
+        "activations": 0,
+        "new_full": 66,
+        "new_events": 154
+      }
+    ],
+    "scope": "Full original exact receipts and pairwise FULL endpoint tile-footprint disjointness, including old X activations and far legs2000. Finite checks supplement the all-parameter proof."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenInternalLongPair.lean",
+    "session": 68871,
+    "exit_code": 0,
+    "declarations": 22,
+    "theorems": 17,
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "execution": "local Mac, standalone --stdin",
+    "preflight": {
+      "memory_free_percent": 39,
+      "real_lean_lake_processes": []
+    },
+    "individual_axiom_audit": "All22 declarations individually printed. Only ordinary propext, Classical.choice, Quot.sound where needed; no warnings/sorry/native axioms.",
+    "scope": "Continuous far column, parity-dependent tile-column gates, collision points/terminal stopping, tile-row separation, exceptional width and conditional scalar/list ledger. Actual-owner normalization and full geometric set partitions remain written."
+  },
+  "review": {
+    "status": "FAILED_INFRASTRUCTURE_NO_MATHEMATICAL_VERDICT",
+    "task_id": "b6e54ed2-6681-485e-a0ac-09c39ee83f54",
+    "conversation_id": "conv_0ac3ea2fea0b7c23",
+    "original_stream_session": 65504,
+    "last_observed_service_status": "Terminal failed2026-10-21T19:10:22.715UTC, attempts4/retries3, infrastructure_retry_exhausted/cdp_disconnected@typing. Original65504 exited0 but SSE contains explicit server_error and no response text; no mathematical verdict. No duplicate submission. Stronger BOTH-far theorem has separate live audit780b9242.",
+    "terminal_record": "output/secondary-ten-internal-long-pair-review-terminal.json",
+    "request": "output/secondary-ten-internal-long-pair-review-request.json",
+    "scope": "General arbitrary t far leg and automatic disjoint-footprint batch theorem; short-pair proof supplied as written dependency."
+  },
+  "dependencies": {
+    "internal_barrier": "Independent ACCEPT132e9691; terminal response recovered from original task after transport EOF, exact original prompt/conversation response identity verified.",
+    "left_chain_exterior": "Corrected all-even one-consumer exterior theorem ACCEPT11e2fbbf; read written proof and validation before applying.",
+    "short_pair": "COMPLETED_ACCEPT52f81a04;original37600exit0_full15218chars_streamTerminalMatch_promptConversationMatch_gpt6pro;ordinary short-pair theorem, not this arbitrary-far strengthening."
+  },
+  "scope": "Selected-union >=4m for actual internal E incident10/far4 with arbitrary actual t far legs. Deeper/longer E branches, all remaining owners/global inequality/grid triple equality OPEN."
+}

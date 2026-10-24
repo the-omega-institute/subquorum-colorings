@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T18:52:20.137054+00:00",
+  "execution": "Explicitly selected local executable; one small core/Omega module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "44%",
+    "physical_memory_bytes": 17179869184
+  },
+  "module": "SubQuorum/JointTreeBetaCompensation.lean",
+  "command": [
+    "/Users/lexa/.elan/bin/lean",
+    "SubQuorum/JointTreeBetaCompensation.lean"
+  ],
+  "axiom_audits": [
+    "'SubQuorum.JointTreeBetaCompensation.old_owners_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.new_owners_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.old_paid_domain' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.new_paid_domain' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.every_vertex_paid_after' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.both_orientations_incident' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.original_resource_set_preserved' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.physical_owners_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.every_old_path_assignment_changes' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.beta_root_disjoint' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.merge_unchanged_off_path' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.beta_and_path_resources_disjoint' does not depend on any axioms",
+    "'SubQuorum.JointTreeBetaCompensation.joint_ledger' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.JointTreeBetaCompensation.saturated_tree_compensation' depends on axioms: [propext, Quot.sound]"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "scope": "Arbitrary-length indexed simple-path reassignment: domains, physical incidence under endpoint hypotheses, resource identities, no owner reuse, all old path assignments change, distinct beta root, and joint ledger.",
+  "not_formalized": [
+    "General graph/tree decomposition and unique rooted allocation",
+    "Maximum and minimum-weight matching theorems",
+    "Whole-support physical adapter and universal grid bound"
+  ]
+}

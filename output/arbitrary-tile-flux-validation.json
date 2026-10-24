@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-22",
+  "status": "WRITTEN_GENERAL_CONSERVATION_PROOF_SCOPED_CHECKS_PASS_INDEPENDENT_ACCEPT",
+  "note": "docs/ARBITRARY_TILE_CUTS_AND_SIGNED_ROTOR_FLUX.md",
+  "claims": {
+    "definition": "L_Q=p_Q+sum_Q(beta(K)-beta(O)+t_new/2), p_Q counts arbitrary fixed new positive-source anchors; terminal tokens total2Pnew.",
+    "exact": "2L_Q=2p_Q-2B_Q-u_Q+in_Q-out_Q+Z_Q with Z_Q>=0, actual old negative-U u_Q<=eligible b_Q.",
+    "bound": "2L_Q>=2p_Q-2B_Q-b_Q+in_Q-out_Q for any tile cut, including through added U or rotor sources.",
+    "conservation": "Exhaustive disjoint partitions count each base source unit, terminal occurrence, actual old negative tile, rotor mate and physical residual once. Rotor incoming/outgoing cancel; sum L_Q=Phi(K)-Phi(O).",
+    "scope": "L_Q equals a source-addition marginal only when the added source footprints do not cross Q. No general grid decomposition, marked-side coverage, exterior5 or stronger universal bound claimed."
+  },
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_arbitrary_tile_flux_cuts.py",
+    "exit_code": 0,
+    "original_session": 23710,
+    "terminal_chunk": "95a1eb",
+    "controls": "output/arbitrary-tile-flux-controls.json",
+    "complete_inventories": 736,
+    "old_inventory_choices": 2104,
+    "cuts": 122572,
+    "split_added_source_occurrences": 94032,
+    "crossing_rotor_arc_occurrences": 600,
+    "half_integral_regional_increments": 8028
+  },
+  "lean": {
+    "source": "formal/SubQuorum/BoundaryFluxCuts.lean",
+    "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/BoundaryFluxCuts.lean",
+    "location": "user-selected local Mac",
+    "memory_free_percent": 55,
+    "active_real_lean_lake_before": 0,
+    "exit_code": 0,
+    "original_session": 31653,
+    "terminal_chunk": "2a300a",
+    "theorems": 13,
+    "individual_declaration_axiom_audits": 29,
+    "warnings": 0,
+    "errors": 0,
+    "sorryAx": false,
+    "native_decide": false,
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "scope": "Local role residual, signed arc identities, complement conservation, finite regional sums and conditional aggregate bounds; geometric adapters/injective rotor pairing remain written dependencies."
+  },
+  "independent_review": {
+    "task_id": "96e3f47c-6327-4f7b-a21d-7826061da91a",
+    "conversation_id": "conv_37f5b6b1df38ee24",
+    "status": "COMPLETED_ACCEPT",
+    "original_stream_session": 92575,
+    "request": "output/arbitrary-tile-flux-and-marked-corollary-review-request.json",
+    "stream": "output/arbitrary-tile-flux-and-marked-corollary-review-stream.sse",
+    "scope": "Conservation proof and later width6 all-marks corollary; earlierd8ACCEPT does not cover these. Separate-rounding diagnostic added after audit input, directly checked and kernel-decided.",
+    "terminal": "output/arbitrary-tile-flux-and-marked-corollary-review-terminal.json",
+    "response_chars": 14469,
+    "observed_model": "gpt_6/pro",
+    "provenance": "Original prompt/session and full response/task/session/stream exact matches; written review only, not execution."
+  },
+  "sharp_exterior_research": {
+    "task_id": "8b95f828-f11e-4975-b7c3-6c958fa7b60c",
+    "conversation_id": "conv_eb71baec2b2f8748",
+    "status": "FAILED_NO_ASSISTANT_OUTPUT",
+    "original_stream_session": 90724,
+    "scope": "Separate question: prove sharp exterior5 or produce a complete counterexample below5; no theorem claimed while pending.",
+    "failure_reason": "no_assistant_output",
+    "completed_at": "2026-10-22T04:30:51.558+00:00"
+  },
+  "preserved": "11October submitted manuscript, public main, star-forming/C4-free results, shared CI. No Mail check/draft/send in this research continuation."
+}

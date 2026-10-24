@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-21",
+  "status": "PASS_SCOPED_NINE_DECLARATIONS",
+  "machine": "User-authorized local Mac",
+  "lean": "Lean 4.33.0",
+  "source": "formal/SubQuorum/FiveEndpointCap.lean",
+  "compile": {
+    "session": 10596,
+    "exit_code": 0,
+    "preflight_free_percent": 44,
+    "real_lean_lake_processes": []
+  },
+  "audit": {
+    "session": 44642,
+    "exit_code": 0,
+    "preflight_free_percent": 43,
+    "real_lean_lake_processes": [],
+    "declarations": 9,
+    "axiom_free": [
+      "all_sixteen_rotor_owner_roles_hit_the_cap",
+      "all_sixteen_rotor_owner_roles_hit_the_four_point_cap",
+      "every_rotor_gate_role_collides_or_has_the_forced_support"
+    ],
+    "other_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "no_sorryAx": true,
+    "no_native_decide_axiom": true
+  },
+  "scope": "General normalized U endpoint classification and four-step continuation for arbitrary heights/width; exact sixteen rotor cap and gate owner roles; conditional five-endpoint contradiction; explicit singleton support forcing; even transverse-height arithmetic. Original-source/isometry adapter, gate incidence injection, positive profile continuation and full bar/stem geometry remain written; no end-to-end Lean, full allocation or grid equality claim.",
+  "development": "Initial omega-only sketch exceeded heartbeats; replaced by explicit bar/left-stem/right-stem cases with normalized projections. Final nine-declaration source and audit both exit0. Task-owned olean/audit scratch removed after preservation."
+}

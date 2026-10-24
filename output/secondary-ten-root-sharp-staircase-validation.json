@@ -1,0 +1,120 @@
+{
+  "status": "GENERAL_WRITTEN_SHARP_ACTUAL_STAIRCASE_GE6_EQUALITY_FAMILY_EXACT_SCOPED_LEAN_PASS_INDEPENDENT_ACCEPT",
+  "date": "2026-10-22",
+  "owner": "Wenlin Zhang and Haobo Ma",
+  "source": "docs/SECONDARY_TEN_ROOT_SHARP_STAIRCASE.md",
+  "theorem": "Same explicit model and arbitrary actual staircase hypotheses: selected-union DeltaPhi>=L/2+3>=6, sharp for every even6<=L<=v through an unbounded geometric family.",
+  "new_geometric_facts": [
+    "A far overlap requires b_upper>b_lower: otherwise the upper far interval collides with the lower bar. Strict b0>b1>b2>b3 and row phase leave only J1/J2; pair receipts >=-1.",
+    "An A boundary event occurs before t=a+z-15, while a P1 contact occurs exactly at t. Their owner sets among J1,J3 are disjoint, so countA+countBottom<=2.",
+    "All lower intervals share one common width D3-u-12. Thus eta>=-g/2-3>=-(D3-u-12)/2-3. Existing tile/event ownership certificates preserve nonreuse."
+  ],
+  "equality_family": {
+    "hypotheses": "Even u,v>=12,z>=24,6<=L<=v; f6; any H3 length n>=2, root h>=6 and R(K,8,g) with K>=h+2,g>=4.",
+    "dimensions": [
+      "(6,u+L+16,4)",
+      "(8,u+L+18,6)",
+      "(10,u+L+20,4)",
+      "(z-2,u+v+22,v+10)"
+    ],
+    "exact_receipts": {
+      "J1_J2": -1,
+      "A_boundary": -1,
+      "P1": "-(v+10)/2-1",
+      "eta": "-v/2-8",
+      "joint": "L/2+3"
+    },
+    "smallest_witness": [
+      [
+        6,
+        34,
+        4
+      ],
+      [
+        8,
+        36,
+        6
+      ],
+      [
+        10,
+        38,
+        4
+      ],
+      [
+        22,
+        46,
+        22
+      ]
+    ],
+    "smallest_joint_gain": 6,
+    "complete_extension": "NOT_ASSERTED"
+  },
+  "python": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python3 develop/check_secondary_ten_root_sharp_staircase.py",
+    "first_execution_session": 25200,
+    "first_exit_code": 0,
+    "extended_execution_session": 64534,
+    "extended_exit_code": 0,
+    "final_execution_session": 8503,
+    "final_exit_code": 0,
+    "equality_family_exact_controls": 128,
+    "nonuniform_sampled_controls": 70,
+    "sampled_far_pair_contacts": 25,
+    "targeted_controls": [
+      "Two simultaneous P1 contacts, joint8.",
+      "24-block translated equality family, root40/R42/far2000, joint6.",
+      "L=v+2 tight frontier, joint20>=10.",
+      "Two A boundary debits and no P1 contact, joint17."
+    ],
+    "two_A_debit_supplement_chunk": "e38f1a",
+    "scope": "Full original endpoints/supports and inherited exact physical SET checks; all other far pairs empty; owner debit exclusivity; common width; equality receipts. Finite controls supplement general written proofs."
+  },
+  "lean": {
+    "source": "formal/SubQuorum/SecondaryTenRootSharpStaircase.lean",
+    "toolchain": "leanprover--lean4---v4.33.0",
+    "execution_session": 24546,
+    "exit_code": 0,
+    "declarations": 13,
+    "theorems": 10,
+    "preflight_free_percent": 39,
+    "active_real_lean_lake_before": [],
+    "axioms": "All13 declarations individually printed; ordinary propext, Classical.choice and Quot.sound only; no warnings, sorryAx or native axioms.",
+    "scope": "Coordinate collision with lower bar; phase/index restriction; A/P1 row separation; exclusive budget and final sharp inequality; equality ledger and separation arithmetic. Full receipt exhaustion and geometric equality-family adapter remain written."
+  },
+  "dependency_review": {
+    "task_id": "523658e0-2938-4254-b39d-edcc533e5c3c",
+    "status": "completed",
+    "verdict": "ACCEPT",
+    "scope": "Original weaker actual-staircase theorem; complete response and terminal API exactly equal; gpt_6/pro. Not the new sharp theorem."
+  },
+  "review": {
+    "status": "completed",
+    "execution_session": 2624,
+    "conversation_id": "conv_0ac3ea2fea0b7c23",
+    "request": "output/secondary-ten-root-sharp-staircase-review-request.json",
+    "stream": "output/secondary-ten-root-sharp-staircase-review-stream.sse",
+    "prompt_characters": 9243,
+    "pool_before": {
+      "queued": 0,
+      "dispatched": 6,
+      "ready": 20
+    },
+    "scope": "New >=L/2+3 sharp bound, general far-pair exclusion and A/P1 exclusivity, unbounded equality-family geometry and receipts.",
+    "original_stream_exit_code": 0,
+    "task_id": "30eabe1f-f849-41fd-9df6-276c1603764c",
+    "mathematical_verdict": "ACCEPT",
+    "stream_terminal_response_match": true,
+    "response_characters": 14474,
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "response_archive": "output/secondary-ten-root-sharp-staircase-review-response.md",
+    "terminal_archive": "output/secondary-ten-root-sharp-staircase-review-terminal.json",
+    "clarifications": "Exact residual full-tile/event lists justify equality; Q0 at z24 excluded by minimum column s+3, not by being entirely above the last tile row. No inequality/hypothesis correction."
+  },
+  "open": [
+    "Extra-owner interactions and nonreusing allocation among overlapping selected groups.",
+    "Arbitrary-grid catalogue exhaustion.",
+    "Complete extendibility of the equality family.",
+    "Global5/6 improvement and rectangular-grid triple equality."
+  ]
+}

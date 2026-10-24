@@ -1,0 +1,56 @@
+{
+  "status": "PASS_SCOPED_SIX_SOURCE_CORE",
+  "lean_version": "4.33.0",
+  "user_selected_execution": "local_machine",
+  "concurrent_task_module_builds": 1,
+  "source": "formal/SubQuorum/DemandHullReserveObstruction.lean",
+  "final_source_exec_session": 27530,
+  "source_preflight": {
+    "memory_free_percentage": 64,
+    "real_lean_lake_processes": [],
+    "process_detection": "basename of comm field"
+  },
+  "dependency_compile": {
+    "source": "formal/SubQuorum/CriticalClosedOwnerCounterexample.lean",
+    "exec_session": 56327,
+    "exit_code": 0,
+    "preflight_memory_free_percentage": 71
+  },
+  "initial_failed_source": {
+    "exec_session": 29476,
+    "exit_code": 1,
+    "errors": [
+      "deriving Decidable failed on the Prop definition",
+      "Decidable (completeFeasible core and completeFeasible restricted) unavailable"
+    ],
+    "correction": "Remove deriving; explicitly unfold completeFeasible before decide"
+  },
+  "intended_declarations": [
+    "original_source_dimensions_and_charges",
+    "full_and_restricted_complete_feasibility",
+    "exact_source_endpoint_matching_and_support_counts",
+    "adjacent_positive_supports_have_the_same_forced_consumer",
+    "exact_original_source_event_and_tile_reserve_drop"
+  ],
+  "axiom_audit_status": "PASS",
+  "scope": "Six-source concrete core k=h20 ONLY: original dimensions/charges, full and restricted complete occupied feasibility, exact endpoint/matching/support counts, adjacent positive-support consumer facts, direct source-event reserves5 versus13. Five declarations compile and pass axiom audit, four axiom-free and one propext only. No claim for nine-source/eighteen-source full family, actual marks/canonical hull, connectivity, general parameter theorem, full allocation or grid equality.",
+  "final_source_exit_code": 0,
+  "axiom_audit": {
+    "exec_session": 87356,
+    "exit_code": 0,
+    "preflight_memory_free_percentage": 66,
+    "real_lean_lake_processes": [],
+    "declarations": {
+      "original_source_dimensions_and_charges": [],
+      "full_and_restricted_complete_feasibility": [],
+      "exact_source_endpoint_matching_and_support_counts": [],
+      "adjacent_positive_supports_have_the_same_forced_consumer": [
+        "propext"
+      ],
+      "exact_original_source_event_and_tile_reserve_drop": []
+    },
+    "no_sorryAx": true,
+    "no_native_decide_axiom": true
+  },
+  "execution_note": "Preserved original long-running source session27530 until exit0; no duplicate/restart. Sequential small abstract module builds/audits and unrelated Lean4.35 tasks were observed during its run, after memory/process preflights."
+}

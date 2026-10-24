@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "owner_roles": {
+    "dimension_controls": 64,
+    "u_isometry_images": 512,
+    "u_endpoint_owner_roles": 49152,
+    "one_neighbor_terminal_roles": 1024,
+    "transverse_terminal_roles": 256,
+    "transverse_height_bound_controls": 384,
+    "complete_rotor_owner_roles": 16,
+    "complete_rotor_gate_roles": 16,
+    "endpoint_disjoint_rotor_gate_roles_with_forced_support": 2
+  },
+  "positive_consumers": {
+    "width_six_height_controls": 9,
+    "endpoint_disjoint_positive_consumer_candidates": 864,
+    "original_profile_counts": {
+      "1": 864
+    },
+    "reciprocal_pair_cap": "PASS"
+  },
+  "physical": {
+    "complete_physical_images": 672,
+    "positive_to_positive_gate_edges": 8,
+    "positive_regular_singleton_gate_consumers": 0,
+    "zero_regular_singleton_gate_consumers": 0,
+    "scope": "The fixture count reports actual conditional coverage, including zero occurrence counts; local owner-role controls and written proofs are separate."
+  },
+  "scope": "U parameter controls supplement the all-parameter proof. Rotor ownership exhaustion is over all sixteen roles, not a translation cutoff. No full allocation, grid equality, positive-consumer acyclicity or general noncompletion inference from finite UNSAT."
+}

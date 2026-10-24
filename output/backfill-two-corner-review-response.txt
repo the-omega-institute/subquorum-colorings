@@ -1,0 +1,91 @@
+ACCEPTNo must-fix mathematical issue found in the new two-corner compensation lemma. The second-corner owner classification, actual positive activation, separation from all  $F_{\mathrm{pos}}$  occurrences, global singleton partition, and equations (6)–(7) are valid under the stated complete-source hypotheses and supplied established inputs.The substantive new step is sound: the second corner contributes either another negative singleton occurrence or a positive activation that is disjoint from the cap-filling activation set. This supports the coefficient  $2K_C$  in  $2R$ , with the signed source-census term retained.I am auditing the written argument. I have not certified Lean/checker execution or inferred complete critical U10 realizability.1. The second corner has an actual original singleton ownerThe established backfill theorem gives  $r\in P$ . Since final  $P$  is the union of the unchanged original endpoint sets,  $r$  has an actual original owner  $J$ .The supplied profiles establish
+$$r\notin P_F\cup P_G,
+\qquad
+P_H\cap Q_b=\{q\}.$$
+Therefore  $J\ne F,H,G$ . Moreover, the other three points of  $Q_b$  already belong to  $F,F,H$ , so original endpoint uniqueness gives the exact profile
+$$P_J\cap Q_b=\{r\}.$$
+This exactness is essential. It establishes that  $r$  is an original singleton occurrence in the actual physical tile, rather than merely a point whose owner happens to have some singleton elsewhere.The rotor blocker stencil is also supplied by complete original sources: $F$ ’s incident run contains  $(0,-4),(0,-3),(0,-2),(0,-1)$ , because its incident height is at least four.Route-C  $H$ ’s incident run contains  $(1,-1),(2,-1),(3,-1)$ , independently of its opposite height.Every listed endpoint is foreign to  $J$ . Subtracting  $r=(1,-2)$  gives exactly
+$$B_r=
+\{(-1,-2),(-1,-1),(-1,0),(-1,1),
+  (0,1),(1,1),(2,1)\}.$$
+Thus the exclusion uses actual original-owner disjointness. It does not assume that nearby occupied points have convenient owners or that  $J$  is fresh elsewhere in the configuration.Source: new note §1, using the supplied backfill and route-C profiles.2. The new seven-point stencil excludes every rotor roleThe supplied rotor endpoint set is invariant under
+$$(i,j)\longmapsto(j,5-i).$$
+Consequently every translated signed-coordinate-permutation image is a translated copy of one of two chiralities. Anchoring one of its eight endpoints at  $r$  gives the sixteen exhaustive roles.Here is a direct collision check for the new stencil. Each entry is a displacement from the anchored endpoint that belongs both to the anchored rotor and to  $B_r$ . For the reflected column, apply  $(i,j)\mapsto(i,-j)$  before translating the reflected anchor to zero.Canonical anchorGiven chiralityReflected chirality $(1,2)$  $(1,1)$  $(2,1)$  $(2,2)$  $(-1,0)$  $(-1,0)$  $(2,3)$  $(0,1)$  $(0,1)$  $(2,4)$  $(-1,-2)$  $(0,1)$  $(3,1)$  $(0,1)$  $(-1,-1)$  $(3,2)$  $(-1,0)$  $(-1,0)$  $(3,3)$  $(-1,0)$  $(-1,0)$  $(4,3)$  $(-1,0)$  $(-1,0)$ All witnesses occur in the seven-point stencil actually available at  $r$ . In particular, the relative point  $(-1,-3)$  from the preceding corner stencil is not needed.The central roles can also be excluded immediately: they have three original endpoint neighbors and therefore cannot avoid both foreign directions north and east. The table additionally checks the tip roles, where that neighbor-count argument alone would be insufficient.This proves rotor exclusion for every allowed placement of the fixed template. There is no dimension or translation cutoff and no reliance on the reported finite execution.Sources: new note §1; BackfillTwoCornerBudget.lean, definition secondCornerBlockers; the previously supplied original rotor template.3. The U singleton alternatives are exhaustiveOnce rotors are excluded,  $J$  is a U with exactly one original endpoint in  $Q_b$ . The complete singleton catalogue follows directly from the canonical endpoint/support predicates and the pulled-back physical tiling:Effective phaseAll original singleton occurrencesExact original profile $00$ The two terminals $1P2T$  $01$ The two terminals $1P1T$  $10$ The two upper outer bar corners $1P1T$  $11$ None—The parity argument also verifies completeness for independent heights.When the row phase is  $0$ , the two bar rows  $0,1$  lie together, so every bar tile meeting endpoints contains at least two of them. Interior stem tiles contain two consecutive endpoints. At either even terminal height  $a$ , the terminal lies alone in the final row pair  $\{a,a+1\}$ . With column phase  $0$ , the tile contains both its exterior side support and its terminal-extension support, giving  $1P2T$ . With column phase  $1$ , the exterior support lies outside the tile, leaving  $1P1T$ .When the row phase is  $1$ , each even-height terminal is paired with its predecessor in  $\{a-1,a\}$ , so it is not a singleton. The upper bar row is paired with the empty row above it. Column phase  $0$  isolates the two upper outer bar endpoints, each with its exterior support. Column phase  $1$  instead pairs the upper bar endpoints, while the lower outer bar tiles contain the original triples. Hence phase  $11$  has no singleton.The minimum width keeps opposite stems from contributing to the same two-column tile. Their independent heights therefore do not introduce an additional singleton type. The argument uses the pullback of the actual partition through the source isometry; no tiling is reset.Thus the two grouped alternatives in the new note are exhaustive: $J$  is a negative phase01/phase10 U, and  $r$  belongs to the U-only pool  $P_{\mathrm{neg}}$ . $J$  is positive phase00, and  $r$  is an original terminal  $1P2T$  occurrence.A regular zero-rotor singleton is not an omitted resource case: rotor ownership at  $r$  has already been excluded by complete source geometry.Sources: new note §1; the supplied canonical U predicates; EXACT_GEOMETRIC_EVENT_RESERVE.md, §1, for the occurrence types.4. A positive second corner is an actual activation counted by  $A$ In the positive case, the catalogue identifies a particular original positive terminal occurrence with two original intratile supports.The two corners adjacent to  $r$  inside  $Q_b$  are
+$$(0,-2)\in P_F,
+\qquad
+(1,-1)=q\in P_H.$$
+For this  $1P2T$  terminal, these are its two original intratile support positions. Both belong to final  $P$ , as also follows from fullness of  $Q_b$ .The definition of  $A$  requires at least one of those supports to belong to  $P$ . Therefore this is an actual activated occurrence counted by  $A$ . Both consumed supports establish activation of one terminal occurrence; they are not counted as two activations.In the negative case, the distinct source  $F$  supplies the foreign exact original  $2P1T$  profile in the same tile, so
+$$r\in P_{\mathrm{neg}}\cap E_{1\mathrm{reg}}.$$
+The word original remains important: consuming  $F$ ’s support does not change its original  $2P1T$  profile into an original  $2P0T$  profile.Sources: new note §1; EXACT_GEOMETRIC_EVENT_RESERVE.md, §1, definition of  $A$ .5. Separation from all  $F_{\mathrm{pos}}$  occurrences is validLet  $\mathcal A$  be the set of actual activated positive terminal occurrences. Let  $\mathcal F_+\subseteq\mathcal A$  be those filling original phase11 caps, and let  $\mathcal R_+$  be the positive second-corner occurrences from the route-C events.Original endpoint uniqueness identifies an occurrence from its endpoint, and the fixed partition identifies its tile.Suppose an occurrence belonged to both  $\mathcal R_+$  and  $\mathcal F_+$ . Its physical tile would then contain:the companion  $F$ ’s exact original  $2P1T$  profile; anda cap owner’s exact original  $3P0T$  profile.The two owner cases are exhaustive.Different pair and cap owners. Their original endpoint sets are disjoint. The tile would require at least  $2+3=5$  distinct original endpoints, impossible in a four-point tile.The same pair and cap owner. The intersection of that one original endpoint set with that same fixed tile would have cardinality both two and three. This contradicts the exactness of the original profiles.The same-owner case is necessary; simply saying that “a pair and a triple require five endpoints” would not cover it. The new proof explicitly handles it correctly.This argument applies to every positive cap-filling occurrence, regardless of which event or component led to its use. It is not restricted to a previously selected receiver subfamily.Backfill-tile injection makes the new positive second-corner occurrences mutually distinct. The existing cap-to-filler correspondence is also injective: a filler endpoint lies in one physical tile, and two distinct original cap triples cannot share that tile. Consequently
+$$|\mathcal F_+\sqcup\mathcal R_+|
+=F_{\mathrm{pos}}+C_+
+\le A.$$
+Different terminals of one recurring positive source remain different occurrences. A source can therefore contribute to both sets at different terminals without violating either their disjointness or the activation count.Source: new note §2, especially equation (3).6. The negative singleton partition is simultaneous and globalFor the selected route-C events, write
+$$Q_C=\{q_e\},
+\qquad
+R_-=\{r_e:J_e\text{ is negative}\}.$$
+The established backfill injection and the physical partition give
+$$|Q_C|=K_C,\qquad |R_-|=C_-,
+\qquad Q_C\cap R_-=\varnothing.$$
+This covers the potentially delicate comparison of a  $q$  from one event with an  $r$  from another. Equality of those points would force equality of their physical tiles, hence equality of the events; within one event,  $q\ne r$ .Both sets lie in  $E_{1\mathrm{reg}}$ :every  $q_e$  is an original phase01 terminal singleton;every negative  $r_e$  is an original negative U singleton;the companion  $F_e$  supplies the foreign exact original regular pair in their tile.Separation of backfill tiles from all ordinary and critical receiving tiles gives
+$$(Q_C\cup R_-)\cap E_{1\mathrm{old}}=\varnothing.$$
+The established any-pair separation gives disjointness from  $E_0$ . Its same-owner issue is also correctly resolved by exact profiles: one source cannot have both an exact  $2P0T$  and an exact  $2P1T$  profile in one fixed tile. Distinct pair owners would require two disjoint pairs among the singleton’s three remaining tile positions.Finally, the pair-versus-triple separation makes  $F_{\mathrm{negSet}}$  disjoint from all these any-pair occurrences. Therefore
+$$F_{\mathrm{negSet}},\quad E_0,\quad E_{1\mathrm{old}},
+\quad Q_C,\quad R_-$$
+are pairwise disjoint subsets of one  $P_{\mathrm{neg}}$ .Defining  $L$  as the cardinality of the complement of precisely this union gives
+$$F_{\mathrm{neg}}+|E_0|+|E_{1\mathrm{old}}|
++K_C+C_-+L
+=2K_{01}+2K_{10},$$
+which is exactly equation (4).Two details are handled correctly: $L$  is the complement for this selected union, rather than an older complement defined using all of  $E_{1\mathrm{reg}}$ .Membership in  $L$  does not assert availability for the unfinished global allocation. Other reservations may lie there. Only its nonnegativity is used in this lemma.Recurring owners and contacts on different components cause no repetition: the partition counts globally distinct original endpoint occurrences, not owner names.Source: new note §2, using the accepted global backfill separation and any-pair separation inputs.7. Equations (5), (6), and (7) have the stated exact algebraSet
+$$e=|E_0|+|E_{1\mathrm{old}}|,
+\qquad
+D=K_{11}-K_{01}-K_{10}.$$
+The negative singleton partition is
+$$F_{\mathrm{neg}}+e+K_C+C_-+L
+=2(K_{01}+K_{10}),$$
+and the supplied original cap partition is
+$$F_{\mathrm{neg}}+F_{\mathrm{pos}}+U_0=2K_{11}.$$
+Eliminating  $F_{\mathrm{neg}}$  gives
+$$U_0
+=2D+e+K_C+C_-+L-F_{\mathrm{pos}}.$$
+Using
+$$C_-+C_+=K_C,$$
+this becomes
+$$A+U_0
+=
+2D+e+2K_C
++(A-F_{\mathrm{pos}}-C_+)+L.
+\tag{*}$$
+The two remainder terms satisfy
+$$A-F_{\mathrm{pos}}-C_+\ge0,
+\qquad
+L\ge0.$$
+Dropping these two remainders from (*) and rearranging proves equation (5):
+$$2K_{11}+e+2K_C
+\le
+2K_{01}+2K_{10}+A+U_0.$$
+More precisely, the slack in (5) is exactly
+$$\bigl(2K_{01}+2K_{10}+A+U_0\bigr)
+-\bigl(2K_{11}+e+2K_C\bigr)
+=
+(A-F_{\mathrm{pos}}-C_+)+L.$$
+This explicitly identifies the slack instead of combining separate budget inequalities.Now use the established geometric identity
+$$2R=A+U_0+Z_0+H,$$
+where  $H$  here is the established defect count. Substituting (*) once yields
+$$\boxed{
+2R=
+2D+e+2K_C
++(A-F_{\mathrm{pos}}-C_+)+Z_0+H+L,
+}$$
+which is exactly equation (6).Removing the same two nonnegative remainders gives
+$$\boxed{
+2R\ge
+2D+e+2K_C+Z_0+H,
+}$$
+which is exactly equation (7).The distinction in the displayed Lean statements is appropriate: the exact identity is algebraic and does not require the activation inequality; that inequality is needed when proving the remainder nonnegative and passing to the lower bound. This observation concerns the mathematical statements, not their execution.Sources: new note §3; EXACT_GEOMETRIC_EVENT_RESERVE.md, equation (2); the three conditional arithmetic statements in BackfillTwoCornerBudget.lean.8. The coefficient and scope are correctly qualifiedDividing (7) by two gives the precise conclusion
+$$\boxed{
+R\ge
+K_C+(K_{11}-K_{01}-K_{10})
++\frac{|E_0|+|E_{1\mathrm{old}}|+Z_0+H}{2}.
+}$$
+Thus the claimed coefficient of one on  $K_C$  in  $R$  is present. A negative source-census term cannot be discarded, so this does not yield  $R\ge K_C$  without further information.Within the displayed ledger, the accounting is simultaneous:Negative cap fillers appear once in the original singleton partition.Selected old singleton occurrences appear once.A negative second corner contributes a second distinct singleton occurrence.A positive second corner contributes an activation separated from  $F_{\mathrm{pos}}$ .The complete  $E_{1\mathrm{reg}}$  count is not added again. $Z_0$  and  $H$  remain single terms in the same established reserve identity.These statements justify the new partial compensation lemma. They do not supply the remaining allocation for other routes or competing side reservations, and they make no complete U10 realization, uniform coefficient improvement, or grid-equality claim.

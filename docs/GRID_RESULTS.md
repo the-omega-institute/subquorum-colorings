@@ -55,11 +55,16 @@ $$
 
 This numerical formula is already determined by the exact 3-path vertex-cover
 results of Bresar et al. ([2013](https://doi.org/10.1016/j.dam.2013.02.024))
-and Jakovac--Taranenko ([2013](https://doi.org/10.1016/j.disc.2012.09.010)),
+and reproduced in Jakovac--Taranenko
+([2013](https://doi.org/10.1016/j.disc.2012.09.010), Theorem 2.1, p. 95),
 using beta_2(G)=|V(G)|-tau_3(G). The three parity formulas are also displayed
 in [Jesih's 2013 thesis](https://dk.um.si/IzpisGradiva.php?id=40050&lang=eng),
 Theorem 4.2, p. 28. Our new proof supplies equality information used in the
-directional extension.
+directional extension. The latter paper's Proposition 3.1 (p. 96) gives the
+corresponding construction and explicitly notes sharpness for `k=3`.
+The [verified source comparison](GRID_PATH_COVER_ATTRIBUTION.md) records
+the attribution, exact formulas, singleton boundaries and general algebraic
+agreement with `F`.
 
 Our independent proof uses the rigid equality case on a two-row ladder.
 For odd width, the row counts give an odd-integer profile. At each integer
@@ -116,6 +121,92 @@ every capacity-one fork, by a promotion or a matching flip.
 
 [Complete residual-geometry and five-sixths proof](GRID_ABSORPTION_PROOF.md).
 
+**Coefficient one for square-free endpoint configurations.** On every
+even-by-even rectangle, if the graph induced by P=V(M) has no all-P unit
+square, then |T|+|M|<=mn/2. The initial pair need not be terminal, its
+matching can use both directions, and components need not align with tiles.
+Objective-preserving singles reach terminal straight combs. A general tile
+ownership lemma makes their endpoint-tile receivers disjoint, and the actual
+saturated-transfer ledger gives each entire comb receiver charge zero in
+every alignment. The deficit is exactly the sum of 2-t over all no-P tiles
+of the resulting pair. This removes the |M|/6 loss on that geometric class.
+
+The same bound holds when every initial component is square-free or a full
+two-row/two-column rectangle, using the prior rectangle reduction. Allowing
+L prescribed tile-aligned capped components gives |T|+|M|<=mn/2-L on the
+stated mixed class. Their negative units are counted once per whole component.
+This is a covered-class theorem, not the unrestricted grid formula.
+[Complete hypotheses, general proofs, exact deficit and verification scope](COMPONENT_RECEIVERS_AND_SQUARE_FREE_BOUND.md).
+
+**One-square component extension, with every alignment.** The coefficient-one
+bound also holds when each initial endpoint component has at most one P-square.
+In a terminal one-square component the four arms have a proved pinwheel form.
+Extending any arm by two leaves the whole receiver charge unchanged; explicit
+parity-only base shapes have nonpositive charges in all four alignment phases.
+Thus each whole receiver pays for its own incidences, including all saturated
+transfers. Pure rectangles and the prescribed capped components can be included
+as in the preceding theorem. This covers branched components but leaves general
+interacting multi-square shapes open.
+[All-length proof, exact phase table and sharp equality case](ALL_ALIGNMENT_SINGLE_SQUARE_BOUND.md).
+
+**Exact even-width orientation criterion.** For an even grid width `n`, let
+`c_i` be the row load before assigning vertical matching edges and let `k_i`
+be the number of vertical matching edges between rows `i` and `i+1`. There is
+an orientation of those edges whose row loads satisfy
+
+```text
+z_i <= ceil(2n/3),       z_i + z_(i+1) <= n
+```
+
+if and only if every contiguous row interval `[a,d]` obeys
+
+```text
+sum(c_i for i=a..d) + sum(k_i for i=a..d-1) <= F(d-a+1,n).
+```
+
+The constructive proof uses a two-step lower-envelope recurrence for cumulative
+loads, so it either returns all orientations in linear time or returns a
+specific violating interval. On a geometric feasible pair, the left side is
+exactly the objective retained in that subrectangle after deleting matching
+edges crossing its boundary. Thus a failed orientation is an explicit smaller
+rectangle witness against the desired `Omega` bound, while a successful
+orientation reduces the remaining argument to the already proved row-profile
+inequality. This criterion is an exact interface for the direct grid
+`psi_sq` route; it does not assume the unresolved universal interval bound.
+
+The finite checker `develop/verify_grid_directional_core.py` exercises the
+criterion on `288,804` exhaustive feasible pairs, `120,680` abstract integer
+profiles, and `1,200` seeded random geometric pairs (including `20 x 20`),
+with all listed checks passing. The residual-component compensation notes
+remain necessary for proving the interval inequalities in arbitrary mixed
+direction configurations.
+
+**Compensation through branching bands.** For a pressure band of zero charge
+whose own upper row consists entirely of matching endpoints, consecutive
+right-then-left saturated exits generate disjoint, strictly narrower child
+bands. Lower-row selected vertices and capacity-two passages are allowed.
+If this recursion forms a forest with K filled sources and D closed terminal
+bands, and the remaining tiles have nonpositive total charge, then
+
+$$
+|T|+|M|-mn/2\le K-D\le0.
+$$
+
+Thus the coefficient increases from 5/6 to 1 on this geometric class, with
+each terminal counted once. A 6-by-14 feasible configuration shows why a
+general neutral band cannot automatically supply the same successor geometry.
+[Successor lemma, forest theorem and obstruction](BRANCHING_INTERVAL_COMPENSATION.md).
+The existing uniform 5/6 theorem and full grid conjecture retain their scope.
+
+An [elementary global certificate bound](STAR_FORMING_CERTIFICATES.md) also
+shows that high-degree vertices in a minimal 2-star-forming set have disjoint
+outside certificate sets, without assuming bipartiteness. The double star
+has beta_2=SF_2=4<psi_sq=5, so a star-forming upper comparison for colorings
+requires a graph-class-specific proof.
+The [upper-domination comparison](GRID_PARAMETER_BRIDGES.md) gives its exact
+parity gap and all equality cases; it identifies the additional upper bound
+needed before domination can settle the grid coloring target.
+
 ## Exact strips and structural obstructions
 
 For widths 8, 9, 10 and 11, exact transfer certificates establish
@@ -171,5 +262,9 @@ proof, with reusable equality conditions. Its relationship with earlier
 path-cover results, particularly Bresar et al., *On the vertex k-path cover*,
 Discrete Applied Mathematics 161 (2013), 1943-1949, and Jakovac and Taranenko,
 *On the k-path vertex cover of some graph products*, Discrete Mathematics 313
-(2013), 94-100, still needs a full comparison. The tree results likewise
-require comparison with the earlier caterpillar work cited by Sahbi.
+(2013), 94-100, is recorded in the
+[verified grid source comparison](GRID_PATH_COVER_ATTRIBUTION.md).
+The exact numerical formula is an earlier result; the independent proof's
+equality conditions and directional extension are separate contributions.
+The tree results still require comparison with the earlier caterpillar work
+cited by Sahbi.

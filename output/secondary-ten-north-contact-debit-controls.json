@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "pairs": {
+    "arbitrary_parameter_controls": 640,
+    "tight": 160,
+    "separated": 480,
+    "Q_neutral": 640,
+    "checked_widths": [
+      8,
+      10,
+      20,
+      50,
+      200
+    ]
+  },
+  "external": {
+    "endpoint_disjoint_partial_patterns": 1068,
+    "patterns_with_external_events": 15,
+    "patterns_with_extra_full_tiles": 11,
+    "positive_external_sources": 205,
+    "negative_external_sources": 863,
+    "external_signed_term_distribution": {
+      "0": 1056,
+      "-3": 4,
+      "-2": 3,
+      "-1": 5
+    },
+    "endpoint_only_external_nonnegativity_counterexample": {
+      "bottom": 40,
+      "D": [
+        12,
+        10,
+        4
+      ],
+      "L": [
+        8,
+        4,
+        6
+      ],
+      "external_dimensions": [
+        6,
+        4,
+        4
+      ],
+      "external_symmetry": [
+        true,
+        false,
+        false
+      ],
+      "external_offset": [
+        32,
+        9
+      ],
+      "external_charge": -5,
+      "raw_reserve_before": 16,
+      "raw_reserve_after": 11,
+      "extra_full_tiles": [
+        [
+          16,
+          5
+        ],
+        [
+          16,
+          6
+        ]
+      ],
+      "external_term": -3,
+      "missing_forced_original_support": [
+        31,
+        15
+      ],
+      "external_events": [
+        {
+          "owner": "W",
+          "endpoint": [
+            33,
+            10
+          ],
+          "target": [
+            32,
+            10
+          ]
+        },
+        {
+          "owner": "W",
+          "endpoint": [
+            33,
+            12
+          ],
+          "target": [
+            32,
+            12
+          ]
+        },
+        {
+          "owner": "L",
+          "endpoint": [
+            32,
+            9
+          ],
+          "target": [
+            33,
+            9
+          ]
+        },
+        {
+          "owner": "L",
+          "endpoint": [
+            32,
+            10
+          ],
+          "target": [
+            33,
+            10
+          ]
+        },
+        {
+          "owner": "L",
+          "endpoint": [
+            32,
+            11
+          ],
+          "target": [
+            33,
+            11
+          ]
+        },
+        {
+          "owner": "L",
+          "endpoint": [
+            32,
+            12
+          ],
+          "target": [
+            33,
+            12
+          ]
+        },
+        {
+          "owner": "L",
+          "endpoint": [
+            32,
+            13
+          ],
+          "target": [
+            33,
+            13
+          ]
+        }
+      ]
+    },
+    "complete_feasibility_not_assumed": true
+  },
+  "scope": "Direct checks of a separately written all-parameter raw event functional identity and external owner partition. Partial families are not asserted complete or legal extensions. No monotonicity or global allocation inequality is inferred."
+}

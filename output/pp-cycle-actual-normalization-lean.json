@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/PPCycleNormalization.lean",
+  "preflight": {
+    "memory_free_percent": 38,
+    "real_lean_lake_processes_by_comm_basename": []
+  },
+  "execution": {
+    "session_id": 3199,
+    "final_chunk": "acc0a2",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "audited_theorems": [
+    "unchanged_outside",
+    "auxiliary_inside",
+    "normalized_involution",
+    "normalized_no_fixed_points",
+    "normalized_edges_permitted"
+  ],
+  "axioms": {
+    "unchanged_outside": ["propext"],
+    "auxiliary_inside": ["propext"],
+    "other_three_theorems": [],
+    "sorryAx": false,
+    "native_evaluation": false,
+    "new_axioms": false
+  },
+  "scope": "Functional matching normalization under supplied closed-region, involution, distinct-mate and permitted-edge hypotheses. Graph component classification, simultaneous compensation decomposition, finite cardinalities, grid availability and freezing remain written proofs and separate graph checks. No general freezing invariance is claimed."
+}

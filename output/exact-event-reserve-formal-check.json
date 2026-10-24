@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-20T02:21:17Z",
+  "execution_location": "Local Mac explicitly selected by user in current session",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/ExactEventReserve.lean",
+  "dependencies": [
+    {
+      "source": "formal/SubQuorum/SingletonNegativeDefects.lean",
+      "exec_session": 72759,
+      "exit_code": 0,
+      "preflight_memory_free_percent": 46
+    },
+    {
+      "source": "formal/SubQuorum/ActivatedSingletonBudget.lean",
+      "exec_session": 32853,
+      "exit_code": 0,
+      "preflight_memory_free_percent": 42
+    }
+  ],
+  "final_source": {
+    "exec_session": 30039,
+    "exit_code": 0,
+    "preflight_memory_free_percent": 44
+  },
+  "audit": {
+    "exec_session": 31633,
+    "exit_code": 0,
+    "preflight_memory_free_percent": 46
+  },
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 11,
+  "declarations": [
+    "complete_exact_local_table",
+    "boundary_cost_nonnegative",
+    "exact_reserve_identity",
+    "zero_reserve_iff",
+    "residual_parity",
+    "exact_defect_slack",
+    "joint_allocation_iff",
+    "joint_failure_iff",
+    "blank_gate_refinement",
+    "single_positive_failure_saturates",
+    "single_positive_nonzero_defect_pays"
+  ],
+  "individual_axiom_audit": {
+    "complete_exact_local_table": [],
+    "boundary_cost_nonnegative": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_reserve_identity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "zero_reserve_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "residual_parity": [
+      "propext",
+      "Quot.sound"
+    ],
+    "exact_defect_slack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "joint_allocation_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "joint_failure_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "blank_gate_refinement": [
+      "propext",
+      "Quot.sound"
+    ],
+    "single_positive_failure_saturates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "single_positive_nonzero_defect_pays": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Complete kernel-reduced local exact-defect table; nonnegative local weights; conditional exact global reserve algebra, seven-count saturation, parity, ledger slack, allocation/failure equivalences, blank-gate refinement and unrestricted-width single-positive defect consequence. Source-to-profile completeness, original support and rotor pairing adapters, physical-tile summation and global incidence identities remain written, not an end-to-end arbitrary-source Lean theorem.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-exact-check/SubQuorum",
+    "lean -o /tmp/subquorum-exact-check/SubQuorum/SingletonNegativeDefects.olean formal/SubQuorum/SingletonNegativeDefects.lean",
+    "LEAN_PATH=/tmp/subquorum-exact-check lean -o /tmp/subquorum-exact-check/SubQuorum/ActivatedSingletonBudget.olean formal/SubQuorum/ActivatedSingletonBudget.lean",
+    "LEAN_PATH=/tmp/subquorum-exact-check lean -o /tmp/subquorum-exact-check/SubQuorum/ExactEventReserve.olean formal/SubQuorum/ExactEventReserve.lean"
+  ],
+  "audit_reproduction": "Import SubQuorum.ExactEventReserve in a temporary Lean file and #print axioms for each named declaration with the same LEAN_PATH. No sorryAx/native_decide."
+}

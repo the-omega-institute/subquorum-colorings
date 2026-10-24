@@ -1,0 +1,2135 @@
+{
+  "status": "PASS",
+  "totals": {
+    "same_optimum_different_cut_controls": 673,
+    "single_interval_deletion_matching_controls": 166,
+    "canonical_cut_models": 7352,
+    "strict_joint_promotion_inequalities": 137272,
+    "cuts_with_double_BP_receiver": 20,
+    "double_BP_receivers": 140,
+    "two_owner_surplus_components": 20,
+    "independent_shared_chain_optima": 5,
+    "shared_reserve_chain_controls": 16,
+    "frontier_disjoint_edit_sets": 25004,
+    "frontier_feasible_boards": 24852,
+    "frontier_independent_packing_comparisons": 24,
+    "frontier_fully_frozen_boards": 6136,
+    "frontier_positive_full_deficit": 0,
+    "frontier_strict_fork_value_gain": 0,
+    "frontier_strict_fork_cost_gain": 0,
+    "frontier_solver_selected_forks": 0,
+    "frontier_negative_scalar_margin": 0
+  },
+  "shared_reserve_chains": [
+    {
+      "copies": 1,
+      "full_value": 2,
+      "ordinary_value": 1,
+      "double_BP_receivers": 1,
+      "far_side_intervals": 2,
+      "used_intervals": 1,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 2,
+      "full_value": 4,
+      "ordinary_value": 2,
+      "double_BP_receivers": 2,
+      "far_side_intervals": 3,
+      "used_intervals": 2,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 3,
+      "full_value": 6,
+      "ordinary_value": 3,
+      "double_BP_receivers": 3,
+      "far_side_intervals": 4,
+      "used_intervals": 3,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 4,
+      "full_value": 8,
+      "ordinary_value": 4,
+      "double_BP_receivers": 4,
+      "far_side_intervals": 5,
+      "used_intervals": 4,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 5,
+      "full_value": 10,
+      "ordinary_value": 5,
+      "double_BP_receivers": 5,
+      "far_side_intervals": 6,
+      "used_intervals": 5,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 6,
+      "full_value": 12,
+      "ordinary_value": 6,
+      "double_BP_receivers": 6,
+      "far_side_intervals": 7,
+      "used_intervals": 6,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 7,
+      "full_value": 14,
+      "ordinary_value": 7,
+      "double_BP_receivers": 7,
+      "far_side_intervals": 8,
+      "used_intervals": 7,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 8,
+      "full_value": 16,
+      "ordinary_value": 8,
+      "double_BP_receivers": 8,
+      "far_side_intervals": 9,
+      "used_intervals": 8,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 9,
+      "full_value": 18,
+      "ordinary_value": 9,
+      "double_BP_receivers": 9,
+      "far_side_intervals": 10,
+      "used_intervals": 9,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 10,
+      "full_value": 20,
+      "ordinary_value": 10,
+      "double_BP_receivers": 10,
+      "far_side_intervals": 11,
+      "used_intervals": 10,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 11,
+      "full_value": 22,
+      "ordinary_value": 11,
+      "double_BP_receivers": 11,
+      "far_side_intervals": 12,
+      "used_intervals": 11,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 12,
+      "full_value": 24,
+      "ordinary_value": 12,
+      "double_BP_receivers": 12,
+      "far_side_intervals": 13,
+      "used_intervals": 12,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 13,
+      "full_value": 26,
+      "ordinary_value": 13,
+      "double_BP_receivers": 13,
+      "far_side_intervals": 14,
+      "used_intervals": 13,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 14,
+      "full_value": 28,
+      "ordinary_value": 14,
+      "double_BP_receivers": 14,
+      "far_side_intervals": 15,
+      "used_intervals": 14,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 15,
+      "full_value": 30,
+      "ordinary_value": 15,
+      "double_BP_receivers": 15,
+      "far_side_intervals": 16,
+      "used_intervals": 15,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    },
+    {
+      "copies": 16,
+      "full_value": 32,
+      "ordinary_value": 16,
+      "double_BP_receivers": 16,
+      "far_side_intervals": 17,
+      "used_intervals": 16,
+      "globally_unused_intervals": 1,
+      "scalar_margin": 1
+    }
+  ],
+  "physical_frontier": {
+    "base_matchings": 4,
+    "elementary_feasible_actions": {
+      "T": 52,
+      "M": 61
+    },
+    "allowed_edit_count": [
+      0,
+      1,
+      2
+    ],
+    "scope": "Fixed16x14_standardBlankBoundary; fourBasePerfectMatchings; retainBaseTandEachChosenBaseM; add at most two selections or new matching edges; require full freezing. All individually feasible actions suffice by monotonicity of feasibility.",
+    "grouped": [
+      {
+        "base_matching": 0,
+        "edit_types": "M",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 3
+      },
+      {
+        "base_matching": 0,
+        "edit_types": "MM",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 7
+      },
+      {
+        "base_matching": 0,
+        "edit_types": "MT",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 155
+      },
+      {
+        "base_matching": 0,
+        "edit_types": "T",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 52
+      },
+      {
+        "base_matching": 0,
+        "edit_types": "TT",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1316
+      },
+      {
+        "base_matching": 0,
+        "edit_types": "none",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1
+      },
+      {
+        "base_matching": 1,
+        "edit_types": "M",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 3
+      },
+      {
+        "base_matching": 1,
+        "edit_types": "MM",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 7
+      },
+      {
+        "base_matching": 1,
+        "edit_types": "MT",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 155
+      },
+      {
+        "base_matching": 1,
+        "edit_types": "T",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 52
+      },
+      {
+        "base_matching": 1,
+        "edit_types": "TT",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1316
+      },
+      {
+        "base_matching": 1,
+        "edit_types": "none",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1
+      },
+      {
+        "base_matching": 2,
+        "edit_types": "M",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 3
+      },
+      {
+        "base_matching": 2,
+        "edit_types": "MM",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 7
+      },
+      {
+        "base_matching": 2,
+        "edit_types": "MT",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 155
+      },
+      {
+        "base_matching": 2,
+        "edit_types": "T",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 52
+      },
+      {
+        "base_matching": 2,
+        "edit_types": "TT",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1316
+      },
+      {
+        "base_matching": 2,
+        "edit_types": "none",
+        "alphas": 2,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1
+      },
+      {
+        "base_matching": 3,
+        "edit_types": "M",
+        "alphas": 3,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 3
+      },
+      {
+        "base_matching": 3,
+        "edit_types": "MM",
+        "alphas": 3,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 7
+      },
+      {
+        "base_matching": 3,
+        "edit_types": "MT",
+        "alphas": 3,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 155
+      },
+      {
+        "base_matching": 3,
+        "edit_types": "T",
+        "alphas": 3,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 52
+      },
+      {
+        "base_matching": 3,
+        "edit_types": "TT",
+        "alphas": 3,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1316
+      },
+      {
+        "base_matching": 3,
+        "edit_types": "none",
+        "alphas": 3,
+        "full_deficit": 0,
+        "full_minus_ordinary_value": 0,
+        "full_minus_ordinary_cost": 0,
+        "count": 1
+      }
+    ],
+    "first_obstructions": {
+      "BP_entry_cut": {
+        "shape": [
+          16,
+          14
+        ],
+        "selected": [
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            12
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            10,
+            8
+          ],
+          [
+            12,
+            1
+          ],
+          [
+            12,
+            9
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            13,
+            5
+          ],
+          [
+            13,
+            8
+          ],
+          [
+            13,
+            10
+          ],
+          [
+            13,
+            12
+          ],
+          [
+            14,
+            7
+          ]
+        ],
+        "matching": [
+          [
+            [
+              2,
+              9
+            ],
+            [
+              2,
+              8
+            ]
+          ],
+          [
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          [
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              8
+            ]
+          ],
+          [
+            [
+              4,
+              7
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          [
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          [
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          [
+            [
+              7,
+              2
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          [
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          [
+            [
+              7,
+              4
+            ],
+            [
+              7,
+              5
+            ]
+          ],
+          [
+            [
+              12,
+              2
+            ],
+            [
+              11,
+              2
+            ]
+          ],
+          [
+            [
+              10,
+              2
+            ],
+            [
+              10,
+              3
+            ]
+          ],
+          [
+            [
+              11,
+              3
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          [
+            [
+              10,
+              4
+            ],
+            [
+              10,
+              5
+            ]
+          ],
+          [
+            [
+              12,
+              10
+            ],
+            [
+              12,
+              11
+            ]
+          ],
+          [
+            [
+              12,
+              12
+            ],
+            [
+              11,
+              12
+            ]
+          ],
+          [
+            [
+              11,
+              11
+            ],
+            [
+              10,
+              11
+            ]
+          ],
+          [
+            [
+              10,
+              12
+            ],
+            [
+              9,
+              12
+            ]
+          ],
+          [
+            [
+              9,
+              11
+            ],
+            [
+              8,
+              11
+            ]
+          ],
+          [
+            [
+              8,
+              12
+            ],
+            [
+              7,
+              12
+            ]
+          ],
+          [
+            [
+              7,
+              11
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          [
+            [
+              6,
+              10
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          [
+            [
+              7,
+              9
+            ],
+            [
+              7,
+              8
+            ]
+          ],
+          [
+            [
+              13,
+              7
+            ],
+            [
+              12,
+              7
+            ]
+          ],
+          [
+            [
+              5,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          [
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          [
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              7
+            ]
+          ],
+          [
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              6
+            ]
+          ],
+          [
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          [
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              6
+            ]
+          ],
+          [
+            [
+              10,
+              7
+            ],
+            [
+              11,
+              7
+            ]
+          ],
+          [
+            [
+              11,
+              5
+            ],
+            [
+              11,
+              6
+            ]
+          ],
+          [
+            [
+              12,
+              5
+            ],
+            [
+              12,
+              6
+            ]
+          ]
+        ],
+        "freezing_layers": [
+          [
+            {
+              "endpoint": [
+                2,
+                9
+              ],
+              "kept_neighbors": [
+                [
+                  1,
+                  9
+                ],
+                [
+                  2,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  2,
+                  2
+                ],
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  12,
+                  1
+                ],
+                [
+                  13,
+                  2
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                10
+              ],
+              "kept_neighbors": [
+                [
+                  12,
+                  9
+                ],
+                [
+                  13,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                13,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  13,
+                  8
+                ],
+                [
+                  14,
+                  7
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                2,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  1,
+                  7
+                ],
+                [
+                  2,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  4,
+                  2
+                ],
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  1
+                ],
+                [
+                  11,
+                  2
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                12
+              ],
+              "kept_neighbors": [
+                [
+                  12,
+                  11
+                ],
+                [
+                  13,
+                  12
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                3,
+                8
+              ],
+              "kept_neighbors": [
+                [
+                  2,
+                  8
+                ],
+                [
+                  3,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  2
+                ],
+                [
+                  7,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                3
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  3
+                ],
+                [
+                  11,
+                  2
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                11
+              ],
+              "kept_neighbors": [
+                [
+                  11,
+                  12
+                ],
+                [
+                  12,
+                  11
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                4,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  3,
+                  7
+                ],
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  2
+                ],
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                4
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  3
+                ],
+                [
+                  11,
+                  4
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                12
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  11
+                ],
+                [
+                  11,
+                  12
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "kept_neighbors": [
+                [
+                  4,
+                  8
+                ],
+                [
+                  5,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                4
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  4
+                ],
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                9,
+                11
+              ],
+              "kept_neighbors": [
+                [
+                  9,
+                  12
+                ],
+                [
+                  10,
+                  11
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  5
+                ],
+                [
+                  11,
+                  4
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  4
+                ],
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  5,
+                  7
+                ],
+                [
+                  6,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                12
+              ],
+              "kept_neighbors": [
+                [
+                  8,
+                  11
+                ],
+                [
+                  9,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  5
+                ],
+                [
+                  11,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  12,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  11,
+                  6
+                ],
+                [
+                  12,
+                  7
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  5,
+                  7
+                ],
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  6
+                ],
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                8
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  8
+                ],
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                11
+              ],
+              "kept_neighbors": [
+                [
+                  7,
+                  12
+                ],
+                [
+                  8,
+                  11
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                9,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  9,
+                  6
+                ],
+                [
+                  10,
+                  5
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  8
+                ],
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                10
+              ],
+              "kept_neighbors": [
+                [
+                  5,
+                  10
+                ],
+                [
+                  7,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  7,
+                  5
+                ],
+                [
+                  8,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  8,
+                  5
+                ],
+                [
+                  9,
+                  6
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                7,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  7,
+                  6
+                ],
+                [
+                  8,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                9
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  9
+                ],
+                [
+                  7,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                10
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  10
+                ],
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                9,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  8,
+                  6
+                ],
+                [
+                  9,
+                  5
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                6,
+                8
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  9
+                ],
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  7,
+                  6
+                ],
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                12
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  9,
+                  5
+                ],
+                [
+                  10,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  6
+                ],
+                [
+                  10,
+                  8
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                5,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  5,
+                  8
+                ],
+                [
+                  6,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  7
+                ],
+                [
+                  7,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                11
+              ],
+              "kept_neighbors": [
+                [
+                  7,
+                  11
+                ],
+                [
+                  8,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                6
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  6
+                ],
+                [
+                  11,
+                  7
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                4,
+                8
+              ],
+              "kept_neighbors": [
+                [
+                  4,
+                  7
+                ],
+                [
+                  5,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  4,
+                  5
+                ],
+                [
+                  6,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                4
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  5
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                9,
+                12
+              ],
+              "kept_neighbors": [
+                [
+                  8,
+                  12
+                ],
+                [
+                  9,
+                  11
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                4
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  4
+                ],
+                [
+                  11,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                5
+              ],
+              "kept_neighbors": [
+                [
+                  11,
+                  5
+                ],
+                [
+                  13,
+                  5
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                3,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  3,
+                  8
+                ],
+                [
+                  4,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                3
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  3
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                3
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  4
+                ],
+                [
+                  11,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                10,
+                11
+              ],
+              "kept_neighbors": [
+                [
+                  9,
+                  11
+                ],
+                [
+                  10,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                7
+              ],
+              "kept_neighbors": [
+                [
+                  11,
+                  7
+                ],
+                [
+                  12,
+                  6
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                2,
+                8
+              ],
+              "kept_neighbors": [
+                [
+                  2,
+                  7
+                ],
+                [
+                  3,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  6,
+                  3
+                ],
+                [
+                  7,
+                  2
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  2
+                ],
+                [
+                  11,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                11,
+                12
+              ],
+              "kept_neighbors": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  11
+                ]
+              ]
+            }
+          ],
+          [
+            {
+              "endpoint": [
+                4,
+                2
+              ],
+              "kept_neighbors": [
+                [
+                  4,
+                  3
+                ],
+                [
+                  5,
+                  2
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                12,
+                11
+              ],
+              "kept_neighbors": [
+                [
+                  11,
+                  11
+                ],
+                [
+                  12,
+                  12
+                ]
+              ]
+            }
+          ]
+        ],
+        "edits": [],
+        "base_matching": 0,
+        "full": {
+          "value": 2,
+          "cost": 1,
+          "certificates": [
+            {
+              "kind": "interval",
+              "owners": [
+                0
+              ],
+              "links": [],
+              "interval": 13,
+              "value": 1,
+              "witness": 0
+            },
+            {
+              "kind": "beta",
+              "owners": [
+                1,
+                3
+              ],
+              "links": [
+                [
+                  [
+                    7,
+                    12
+                  ],
+                  [
+                    7,
+                    11
+                  ]
+                ]
+              ],
+              "interval": null,
+              "value": 1,
+              "beta": 1
+            }
+          ],
+          "links": [
+            [
+              [
+                7,
+                12
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ],
+          "beta_private_sink_normalizations": 0,
+          "cut": [
+            [
+              "tip",
+              [
+                7,
+                11
+              ]
+            ]
+          ],
+          "source_side": [
+            3
+          ],
+          "blocked_sources": [
+            3
+          ],
+          "deficit": 0,
+          "source_side_betas": [],
+          "source_side_intervals": [],
+          "cut_side": "largest",
+          "network_nodes": 56,
+          "network_forward_arcs": 72
+        },
+        "ordinary": {
+          "value": 2,
+          "cost": 1,
+          "links": [
+            [
+              [
+                7,
+                12
+              ],
+              [
+                7,
+                11
+              ]
+            ]
+          ],
+          "payments": [
+            [
+              [
+                3,
+                2
+              ],
+              13
+            ]
+          ],
+          "routes": [
+            [
+              [
+                "source",
+                0
+              ],
+              [
+                "access",
+                [
+                  3,
+                  2
+                ],
+                13
+              ],
+              [
+                "interval",
+                13
+              ]
+            ],
+            [
+              [
+                "source",
+                3
+              ],
+              [
+                "link",
+                [
+                  7,
+                  12
+                ],
+                [
+                  7,
+                  11
+                ]
+              ],
+              [
+                "beta",
+                1
+              ]
+            ]
+          ],
+          "cut": [],
+          "blocked": [],
+          "deficit": 0
+        },
+        "scalar_margin": 42,
+        "cut_analysis": {
+          "receivers": [
+            1
+          ],
+          "double_receivers": [],
+          "far_intervals": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            21,
+            22,
+            23,
+            24,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            39,
+            40,
+            43,
+            44,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57
+          ],
+          "neighborhood": {
+            "1": [
+              17,
+              18,
+              22,
+              23,
+              24
+            ]
+          }
+        }
+      }
+    }
+  },
+  "scope": "General strict beta-promotion and surplus Hall proofs written; finite controls compare canonical cuts, matching after any single interval deletion and abstract shared-reserve family. Physical edit frontier is explicitly finite, not a universal compensation proof."
+}

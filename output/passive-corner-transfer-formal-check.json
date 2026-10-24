@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/PassiveCornerTransfers.lean",
+  "source_check_and_object_build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "total_file_declarations": 12,
+  "preflight": {
+    "memory_free_percent_before_final_object": 46,
+    "memory_free_percent_before_final_audit": 46,
+    "active_lean_lake_before_object": [],
+    "active_lean_lake_before_audit": [],
+    "process_enumeration": "Both ordinary and -c macOS ps comm, comparing exact basename lean/lake."
+  },
+  "declarations": [
+    {
+      "name": "full_receiver_owner_roles",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "receiver_roles_are_positive",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "name": "unique_rotor_candidate",
+      "axioms": []
+    },
+    {
+      "name": "rotor_candidate_hits_retained_support_neighbor",
+      "axioms": []
+    },
+    {
+      "name": "shared_corner_charging",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "corner_reserve_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "AA_corner_charging",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "charged_owner_width_bound",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "two_counted_corners_impossible",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "opposite_corner_hits_incoming_bar",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "opposite_corner_has_retained_incoming_support",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "retained_support_cannot_have_two_occupied_neighbors",
+      "axioms": []
+    }
+  ],
+  "scope": "Universal arbitrary-dimension U role and positivity classification, fixed rotor role reduction, conditional shared resource arithmetic and AA coordinate exclusions. Physical role/normalization/nonreuse/AA census adapters remain written; no complete AA/positive-branch fixture or full grid equality claimed.",
+  "implementation_note": "Initial unsplit arithmetic proof exceeded1,000,000heartbeats; proof now splits bar row0/1 and stem columns before arithmetic. Final build and audit both pass without changing the statement."
+}

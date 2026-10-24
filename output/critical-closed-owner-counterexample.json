@@ -1,0 +1,799 @@
+{
+  "status": "PASS",
+  "specifications": [
+    [
+      [
+        26,
+        12,
+        4
+      ],
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        10,
+        4,
+        4
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    [
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        11,
+        7
+      ]
+    ],
+    [
+      [
+        6,
+        4,
+        4
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        8,
+        8
+      ]
+    ],
+    [
+      [
+        8,
+        6,
+        6
+      ],
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    [
+      [
+        10,
+        4,
+        4
+      ],
+      [
+        true,
+        true,
+        false
+      ],
+      [
+        1,
+        20
+      ]
+    ]
+  ],
+  "fixed": {
+    "shape": [
+      20,
+      30
+    ],
+    "matching_edges": 90,
+    "endpoints": 180,
+    "retained_supports": 38,
+    "objective": 128,
+    "half_area": 300,
+    "slack": 172,
+    "phases": [
+      "01",
+      "11",
+      "01",
+      "10",
+      "01",
+      "11"
+    ],
+    "source_charges": [
+      -1,
+      -9,
+      -1,
+      -5,
+      -1,
+      -9
+    ],
+    "closed_owners": [
+      3,
+      4
+    ],
+    "closed_components": 1,
+    "critical_point": [
+      2,
+      8
+    ],
+    "exact_census": {
+      "positive": 0,
+      "marked": 0,
+      "activated_positive": 0,
+      "unused_u_triples": 4,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 2,
+      "sole_irregular_pair": 15,
+      "mutual_non_event": 0,
+      "mixed_three": 0,
+      "boundary_cost": 32,
+      "event_reserve": 18,
+      "exact_joint_margin": 18
+    },
+    "joint_control": {
+      "irregular_pair_slots": 0,
+      "regular_pair_slots": 0,
+      "all_pair_slots": 0,
+      "unused_singletons": 8,
+      "forced_contacts": 1,
+      "forced_distinct_points": 1,
+      "forced_owner_phases": {
+        "11": 1
+      },
+      "regular_stops": 0,
+      "forced_Pneg_reserved": 0,
+      "counted_B": 2,
+      "boundary": 32,
+      "activation": 0,
+      "negative_cap_fillers": 0,
+      "complete_feasible": true
+    }
+  },
+  "partition_preserving_images": [
+    {
+      "shape": [
+        20,
+        30
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        2,
+        8
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        false,
+        false,
+        false
+      ],
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "shape": [
+        20,
+        30
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        2,
+        21
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        false,
+        false,
+        true
+      ],
+      "offset": [
+        0,
+        29
+      ]
+    },
+    {
+      "shape": [
+        20,
+        30
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        17,
+        8
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        false,
+        true,
+        false
+      ],
+      "offset": [
+        19,
+        0
+      ]
+    },
+    {
+      "shape": [
+        20,
+        30
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        17,
+        21
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        false,
+        true,
+        true
+      ],
+      "offset": [
+        19,
+        29
+      ]
+    },
+    {
+      "shape": [
+        30,
+        20
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        8,
+        2
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        true,
+        false,
+        false
+      ],
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "shape": [
+        30,
+        20
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        21,
+        2
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        true,
+        false,
+        true
+      ],
+      "offset": [
+        29,
+        0
+      ]
+    },
+    {
+      "shape": [
+        30,
+        20
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        8,
+        17
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        true,
+        true,
+        false
+      ],
+      "offset": [
+        0,
+        19
+      ]
+    },
+    {
+      "shape": [
+        30,
+        20
+      ],
+      "matching_edges": 90,
+      "endpoints": 180,
+      "retained_supports": 38,
+      "objective": 128,
+      "half_area": 300,
+      "slack": 172,
+      "phases": [
+        "01",
+        "11",
+        "01",
+        "10",
+        "01",
+        "11"
+      ],
+      "source_charges": [
+        -1,
+        -9,
+        -1,
+        -5,
+        -1,
+        -9
+      ],
+      "closed_owners": [
+        3,
+        4
+      ],
+      "closed_components": 1,
+      "critical_point": [
+        21,
+        17
+      ],
+      "exact_census": {
+        "positive": 0,
+        "marked": 0,
+        "activated_positive": 0,
+        "unused_u_triples": 4,
+        "unpaired_rotor_activation": 0,
+        "lone_irregular": 2,
+        "sole_irregular_pair": 15,
+        "mutual_non_event": 0,
+        "mixed_three": 0,
+        "boundary_cost": 32,
+        "event_reserve": 18,
+        "exact_joint_margin": 18
+      },
+      "joint_control": {
+        "irregular_pair_slots": 0,
+        "regular_pair_slots": 0,
+        "all_pair_slots": 0,
+        "unused_singletons": 8,
+        "forced_contacts": 1,
+        "forced_distinct_points": 1,
+        "forced_owner_phases": {
+          "11": 1
+        },
+        "regular_stops": 0,
+        "forced_Pneg_reserved": 0,
+        "counted_B": 2,
+        "boundary": 32,
+        "activation": 0,
+        "negative_cap_fillers": 0,
+        "complete_feasible": true
+      },
+      "symmetry": [
+        true,
+        true,
+        true
+      ],
+      "offset": [
+        29,
+        19
+      ]
+    }
+  ],
+  "refuted_rule": "Every critical second point avoids all closed phase01 original owners.",
+  "target_inequality_refuted": false,
+  "scope": "One complete six-source critical witness and its eight partition-preserving images. Not AA, no closed01-closed01 contact, no long-second event. Does not establish overlap with the other extra corner of a first/long receiver."
+}

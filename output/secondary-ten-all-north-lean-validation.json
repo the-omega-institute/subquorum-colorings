@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-21T09:35:44.257338+00:00",
+  "machine": "user-authorized local Mac",
+  "memory_before_final_run": {
+    "total_bytes": 17179869184,
+    "free_percent": 51,
+    "real_lean_lake_processes_before_run": [],
+    "process_detection": "basename of comm equals lean or lake"
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean --stdin; full standalone source followed by individual #print axioms for all18 declarations",
+  "final_exec_session": 96248,
+  "exit_code": 0,
+  "warnings": false,
+  "sorry_or_native_axioms": false,
+  "source": "formal/SubQuorum/SecondaryTenNarrowCapExclusion.lean",
+  "axioms_by_declaration": {
+    "gap_absent": [
+      "propext",
+      "Quot.sound"
+    ],
+    "gap_three_neighbors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "right_bar_hits_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "long_near_leg_hits_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "short_left_bar_hits_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "intermediate_left_bar_hits_cap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "every_right_consumer_collides": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "every_left_consumer_collides": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "north_rotor_hits_cavity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "left_bar_spanning_cap_far_column": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "left_far_leg_reaching_residual": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "tight_left_avoids_all_retained_endpoints": [
+      "propext",
+      "Quot.sound"
+    ],
+    "tight_left_disjointness_necessary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_left_cap_avoids_retained_endpoints": [
+      "propext",
+      "Quot.sound"
+    ],
+    "all_left_cap_disjointness_necessary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_left_cap_blocks_right_consumer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "all_zero_cap_left_consumer_sufficient": [
+      "propext",
+      "Quot.sound"
+    ],
+    "all_zero_cap_left_consumer_necessary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "18 unbounded geometric declarations. Added exact all-left-cap necessary/sufficient endpoint region, right-consumer collision and both-zero-boundary next-consumer geometry. Counts, event sets, exhaustive catalogue and final joint-consumer theorem are written, not end-to-end Lean.",
+  "previous_13_declaration_receipt": "secondary-ten-narrow-cap-lean-validation.json"
+}

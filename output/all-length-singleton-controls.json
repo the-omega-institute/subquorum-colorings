@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "roles": {
+    "counts": {
+      "fixed_patterns": 110,
+      "H": 2410,
+      "positive_short": 422,
+      "E": 1686,
+      "positive_long": 2004,
+      "V": 1344,
+      "E_smaller_than_singleton_width": 325,
+      "S4_no_extension_stencils": 159,
+      "S": 740,
+      "anchored_U_candidates": 480
+    },
+    "partial_examples": {
+      "H": {
+        "singleton_width": 6,
+        "incident": 8,
+        "cross_width": 6,
+        "height": 14,
+        "companion": [
+          6,
+          4,
+          4
+        ]
+      },
+      "E": {
+        "singleton_width": 6,
+        "incident": 8,
+        "cross_width": 6,
+        "height": 14,
+        "companion": [
+          12,
+          6,
+          4
+        ]
+      },
+      "V": {
+        "singleton_width": 6,
+        "incident": 10,
+        "cross_width": 6,
+        "height": 10,
+        "companion": [
+          6,
+          4,
+          4
+        ]
+      },
+      "E_short_bar_exception": {
+        "singleton_width": 6,
+        "incident": 10,
+        "cross_width": 6,
+        "height": 10,
+        "companion": [
+          6,
+          4,
+          4
+        ]
+      },
+      "S": {
+        "singleton_width": 6,
+        "incident": 10,
+        "cross_width": 6,
+        "height": 14,
+        "companion": [
+          6,
+          4,
+          4
+        ]
+      }
+    }
+  },
+  "excluded_rotor_footprints": 4,
+  "injection_collisions": {
+    "S_P_actual_endpoint_and_self_owner_exclusion": 16,
+    "E_S_and_S_S_collisions": 8,
+    "E_P_and_self_owner_exclusion": 10
+  },
+  "narrow_south_obstructions": 101,
+  "scope": "Endpoint-disjoint PARTIAL role controls at independent dimensions; not complete realizations or a universal allocation proof. All-length role exhaustion and joint injection are written proofs."
+}

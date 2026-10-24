@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "recorded_at_utc": "2026-10-20T01:43:08.759Z",
+  "execution_location": "local Mac explicitly selected by user",
+  "lean_version": "4.33.0",
+  "lean_executable": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+  "source": "formal/SubQuorum/ActivatedSingletonBudget.lean",
+  "dependency": "formal/SubQuorum/SingletonNegativeDefects.lean",
+  "dependency_exec": 37961,
+  "dependency_exit_code": 0,
+  "dependency_memory_free_percent": 39,
+  "source_exec": 76814,
+  "source_exit_code": 0,
+  "source_memory_free_percent": 49,
+  "axiom_audit_exec": 90804,
+  "axiom_audit_exit_code": 0,
+  "axiom_audit_memory_free_percent": 44,
+  "actual_lean_lake_preflight": [],
+  "parallel_jobs": 1,
+  "declaration_count": 10,
+  "declarations": [
+    "complete_local_activation_payment",
+    "complete_blank_gate_payment",
+    "first_original_support_bridge",
+    "second_original_support_bridge",
+    "distinct_bridge_targets",
+    "forwarding_cancels",
+    "activation_reserve",
+    "universal_event_reserve",
+    "activated_slack",
+    "unmarked_coefficient_one"
+  ],
+  "individual_axiom_audit": {
+    "complete_local_activation_payment": [],
+    "complete_blank_gate_payment": [],
+    "first_original_support_bridge": [],
+    "second_original_support_bridge": [],
+    "distinct_bridge_targets": [],
+    "forwarding_cancels": [
+      "propext",
+      "Quot.sound"
+    ],
+    "activation_reserve": [
+      "propext",
+      "Quot.sound"
+    ],
+    "universal_event_reserve": [
+      "propext",
+      "Quot.sound"
+    ],
+    "activated_slack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "unmarked_coefficient_one": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "scope": "Complete local activated-singleton and blank-gate table checks; two normalized original support bridges and distinct paired tiles; conditional forwarding cancellation, activation reserve, universal event reserve, ceiling slack and unmarked coefficient-one arithmetic. Arbitrary-source normalization, geometric source/profile and blank-gate adapters, incidence injection and global summation remain written. Not an end-to-end Lean theorem for arbitrary fusions; no sorryAx/native_decide.",
+  "reproduction": [
+    "mkdir -p /tmp/subquorum-activation-check/SubQuorum",
+    "lean -o /tmp/subquorum-activation-check/SubQuorum/SingletonNegativeDefects.olean formal/SubQuorum/SingletonNegativeDefects.lean",
+    "LEAN_PATH=/tmp/subquorum-activation-check lean formal/SubQuorum/ActivatedSingletonBudget.lean"
+  ],
+  "audit_reproduction": "Append #print axioms SubQuorum.ActivatedSingletonBudget.NAME for each declaration listed above to a temporary copy of the source, using the same LEAN_PATH."
+}

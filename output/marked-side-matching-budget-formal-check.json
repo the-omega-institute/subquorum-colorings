@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "date": "2026-10-20",
+  "machine": "local Mac selected by user",
+  "lean_version": "4.33.0",
+  "source": "formal/SubQuorum/MarkedSideMatchingBudget.lean",
+  "source_check_and_object_build_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "total_file_declarations": 10,
+  "preflight": {
+    "memory_free_percent_before_object": 43,
+    "memory_free_percent_before_audit": 40,
+    "active_lean_lake_before_object": [],
+    "active_lean_lake_before_audit": [],
+    "process_enumeration": "Both ordinary and -c macOS ps comm, with exact basename lean/lake."
+  },
+  "declarations": [
+    "phase_mark_capacity",
+    "negative_matching_pays_marked_sides",
+    "negative_matching_covers_marks",
+    "combined_marked_matching_budget",
+    "earlier_combined_budget",
+    "expanded_marked_matching_budget",
+    "universal_marked_scaled_margin",
+    "nonexceptional_marked_scaled_margin",
+    "universal_marked_boundary_coefficient",
+    "nonexceptional_marked_boundary_coefficient"
+  ],
+  "axioms_for_each_declaration": ["propext", "Quot.sound"],
+  "forbidden_axioms_absent": true,
+  "old_coefficient_source_after_parameter_rename_exit_code": 0,
+  "scope": "Universal side-capacity/matching-budget and signed arithmetic consequences giving33/35 and e0-class26/27; earlier14/15/21/22 follow as weaker consequences. Physical side assignment, source size/ownership partition, compensation and actual ambient ledger remain written dependencies. G marked sides is distinct from S original negative charge; no arbitrary-grid decomposition or complete AA closure."
+}

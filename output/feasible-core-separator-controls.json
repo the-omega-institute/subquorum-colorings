@@ -1,0 +1,227 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "fixture": "star_6",
+      "owners": 5,
+      "shared_core_cuts": 18,
+      "phase_images": 32,
+      "checks": 576,
+      "cores_with_nonzero_events": 0,
+      "cores_with_mixed_full_tiles": 0,
+      "nontrivial_shared_reserve": 0,
+      "duplicate_new_common_sides": 0
+    },
+    {
+      "fixture": "star_14",
+      "owners": 5,
+      "shared_core_cuts": 18,
+      "phase_images": 32,
+      "checks": 576,
+      "cores_with_nonzero_events": 0,
+      "cores_with_mixed_full_tiles": 0,
+      "nontrivial_shared_reserve": 0,
+      "duplicate_new_common_sides": 0
+    },
+    {
+      "fixture": "chain_1",
+      "owners": 5,
+      "shared_core_cuts": 18,
+      "phase_images": 32,
+      "checks": 576,
+      "cores_with_nonzero_events": 0,
+      "cores_with_mixed_full_tiles": 0,
+      "nontrivial_shared_reserve": 0,
+      "duplicate_new_common_sides": 0
+    },
+    {
+      "fixture": "chain_2",
+      "owners": 11,
+      "shared_core_cuts": 627,
+      "phase_images": 32,
+      "checks": 20064,
+      "cores_with_nonzero_events": 0,
+      "cores_with_mixed_full_tiles": 0,
+      "nontrivial_shared_reserve": 0,
+      "duplicate_new_common_sides": 0
+    },
+    {
+      "fixture": "chain_3",
+      "owners": 17,
+      "shared_core_cuts": 2691,
+      "phase_images": 32,
+      "checks": 86112,
+      "cores_with_nonzero_events": 0,
+      "cores_with_mixed_full_tiles": 0,
+      "nontrivial_shared_reserve": 0,
+      "duplicate_new_common_sides": 0
+    },
+    {
+      "fixture": "connected_hull24",
+      "owners": 9,
+      "shared_core_cuts": 5,
+      "phase_images": 32,
+      "checks": 160,
+      "cores_with_nonzero_events": 32,
+      "cores_with_mixed_full_tiles": 32,
+      "nontrivial_shared_reserve": 32,
+      "duplicate_new_common_sides": 0
+    },
+    {
+      "fixture": "connected_hull70",
+      "owners": 9,
+      "shared_core_cuts": 5,
+      "phase_images": 32,
+      "checks": 160,
+      "cores_with_nonzero_events": 32,
+      "cores_with_mixed_full_tiles": 32,
+      "nontrivial_shared_reserve": 32,
+      "duplicate_new_common_sides": 0
+    }
+  ],
+  "checks": 108224,
+  "witness": {
+    "core_owners": 5,
+    "core_events": 6,
+    "core_mixed_full_tiles": 2,
+    "core_reserve": 41,
+    "core_negative_mass": 43,
+    "duplicate_new_common_sides": 0,
+    "full": {
+      "owners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "endpoints": 346,
+      "matching": 173,
+      "selected": 92,
+      "endpoint_components": 1,
+      "shape": [
+        52,
+        22
+      ],
+      "ambient_slack": 307,
+      "positive": 1,
+      "marked": 2,
+      "activated_positive": 1,
+      "unused_u_triples": 5,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 5,
+      "sole_irregular_pair": 17,
+      "mutual_non_event": 0,
+      "mixed_three": 3,
+      "boundary_cost": 42,
+      "event_reserve": 24,
+      "exact_joint_margin": 23
+    },
+    "left": {
+      "owners": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "endpoints": 302,
+      "matching": 151,
+      "selected": 73,
+      "endpoint_components": 1,
+      "shape": [
+        52,
+        18
+      ],
+      "ambient_slack": 244,
+      "positive": 1,
+      "marked": 2,
+      "activated_positive": 1,
+      "unused_u_triples": 5,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 4,
+      "sole_irregular_pair": 29,
+      "mutual_non_event": 0,
+      "mixed_three": 2,
+      "boundary_cost": 64,
+      "event_reserve": 35,
+      "exact_joint_margin": 34
+    },
+    "right": {
+      "owners": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "endpoints": 200,
+      "matching": 100,
+      "selected": 55,
+      "endpoint_components": 1,
+      "shape": [
+        46,
+        22
+      ],
+      "ambient_slack": 351,
+      "positive": 0,
+      "marked": 0,
+      "activated_positive": 0,
+      "unused_u_triples": 2,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 5,
+      "sole_irregular_pair": 25,
+      "mutual_non_event": 0,
+      "mixed_three": 3,
+      "boundary_cost": 58,
+      "event_reserve": 30,
+      "exact_joint_margin": 30
+    },
+    "core": {
+      "owners": [
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "endpoints": 156,
+      "matching": 78,
+      "selected": 36,
+      "endpoint_components": 1,
+      "shape": [
+        46,
+        18
+      ],
+      "ambient_slack": 300,
+      "positive": 0,
+      "marked": 0,
+      "activated_positive": 0,
+      "unused_u_triples": 2,
+      "unpaired_rotor_activation": 0,
+      "lone_irregular": 4,
+      "sole_irregular_pair": 37,
+      "mutual_non_event": 0,
+      "mixed_three": 2,
+      "boundary_cost": 80,
+      "event_reserve": 41,
+      "exact_joint_margin": 41
+    },
+    "core_owners_1based": [
+      3,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "scope": "Complete feasible shared cores of at least two owners; actual mandatory-support restrictions, event/full-tile union AND intersection, actual marks and exact signed overlap valuation. All 32 phase/isometry images per eligible fixture. Core subsets exhaustive through nine owners; larger fixtures use pair/random seed hulls; branch partitions exhaustive through eight components and singleton samples beyond. Finite controls do not replace the general proof or establish full allocation or grid equality."
+}

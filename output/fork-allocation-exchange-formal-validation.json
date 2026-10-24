@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-24T21:24:20.313357+00:00",
+  "execution": "Explicitly selected local executable; one standalone module.",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "42%",
+    "physical_memory_bytes": 17179869184
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/ForkAllocationExchange.lean",
+      "exit_code": 0,
+      "command": [
+        "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "SubQuorum/ForkAllocationExchange.lean"
+      ],
+      "axiom_audits": [
+        "'SubQuorum.ForkAllocationExchange.chain_intervals_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.chain_interval_sources_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.chain_beta_sources_injective' depends on axioms: [propext]",
+        "'SubQuorum.ForkAllocationExchange.chain_payment_sources_disjoint' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.every_old_ordinary_source_paid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.every_old_interval_identity_retained' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.exchange_value_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.joint_defect_improves_fixed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForkAllocationExchange.unique_external_witness' does not depend on any axioms",
+        "'SubQuorum.ForkAllocationExchange.closed_component_single_anchor' depends on axioms: [propext,",
+        "'SubQuorum.ForkAllocationExchange.saturated_selected_guard_excludes_neighbor' does not depend on any axioms",
+        "'SubQuorum.ForkAllocationExchange.two_old_neighbors_forbid_new_selection' does not depend on any axioms",
+        "'SubQuorum.ForkAllocationExchange.alternating_chain_ledgers' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Arbitrary-length alternating-chain interval/source injectivity and typed beta/interval source disjointness; every old ordinary source paid and old interval identity retained in the chain; joint-defect scalar bounds; unique outside witness under two owners; closed-component single-anchor arithmetic; feasibility exclusions for selected-only shielding; arbitrary positive-q chain ledgers.",
+  "not_formalized": [
+    "General augmenting-path joint matching and full route construction",
+    "Certificate dependency graph and closed ordinary tree adapter",
+    "Exact terminal-fork defect and simultaneous first-next-fork path matching",
+    "Concrete68endpoint insertion and all-q abstract optimality"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

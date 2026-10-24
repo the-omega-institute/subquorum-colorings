@@ -1,0 +1,19 @@
+{
+  "task_id": "056dcbfb-4760-4df8-a966-ff7eda142d4d",
+  "conversation_id": "conv_27ea1687d9e26dab",
+  "status": "completed",
+  "completed_at": "2026-10-20T17:37:34.684+00:00",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "response_chars": 20189,
+  "original_stream_session": 93570,
+  "original_stream_terminal_exit_code": 0,
+  "exact_original_stream_api_match": true,
+  "verdict": "REVISE",
+  "response_file": "output/periodic-strip-compression-review-response.md",
+  "required_correction": "Restrict descent to strips strictly inside the current occupied bounding interval; external protected strips do not decrease span.",
+  "correction_status": "Applied in Section6 and made explicit in checker; strict two-row span descent asserted at every operation. Same-conversation re-review4f57c33a completed ACCEPT; see correction_re_review. Original REVISE verdict retained as history.",
+  "validation_after_correction": "PASS: existing 800 images, 6480 compression steps, 1680 strict reserve decreases and 18488 legal restriction controls reproduced exactly. Every step additionally asserts an internal strip and occupied span decrease by exactly two. No Lean source changed or new Lean execution claimed.",
+  "correction_re_review": "output/periodic-strip-compression-revision-review.json",
+  "scope": "Written-proof audit accepts unrestricted source reconstruction, identical Horn keys, every legal subfamily reserve/margin decrease and linear bound conditional on the stated reserve ledger; requires internal-strip termination correction. Not execution certification, end-to-end Lean or a full allocation/grid equality proof."
+}

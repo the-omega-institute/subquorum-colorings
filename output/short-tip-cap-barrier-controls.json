@@ -1,0 +1,306 @@
+{
+  "status": "PASS",
+  "fixed_core_endpoints": 43,
+  "exact_rotor_tables": 3,
+  "parameter_controls": 30,
+  "isometry_controls": 240,
+  "endpoint_controls": 8768,
+  "short_tip_contexts": 28,
+  "width_six_left_height_controls": [
+    4,
+    6,
+    14,
+    40
+  ],
+  "cap_family_controls": [
+    {
+      "width": 8,
+      "left_height": 4,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 8,
+      "left_height": 6,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 8,
+      "left_height": 14,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 8,
+      "left_height": 40,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 10,
+      "left_height": 4,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 10,
+      "left_height": 6,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 10,
+      "left_height": 14,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 10,
+      "left_height": 40,
+      "necessary_entry_heights": []
+    },
+    {
+      "width": 12,
+      "left_height": 4,
+      "necessary_entry_heights": [
+        8
+      ]
+    },
+    {
+      "width": 12,
+      "left_height": 6,
+      "necessary_entry_heights": [
+        8
+      ]
+    },
+    {
+      "width": 12,
+      "left_height": 14,
+      "necessary_entry_heights": [
+        8
+      ]
+    },
+    {
+      "width": 12,
+      "left_height": 40,
+      "necessary_entry_heights": [
+        8
+      ]
+    },
+    {
+      "width": 16,
+      "left_height": 4,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "width": 16,
+      "left_height": 6,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "width": 16,
+      "left_height": 14,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "width": 16,
+      "left_height": 40,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12
+      ]
+    },
+    {
+      "width": 24,
+      "left_height": 4,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "width": 24,
+      "left_height": 6,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "width": 24,
+      "left_height": 14,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "width": 24,
+      "left_height": 40,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20
+      ]
+    },
+    {
+      "width": 64,
+      "left_height": 4,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60
+      ]
+    },
+    {
+      "width": 64,
+      "left_height": 6,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60
+      ]
+    },
+    {
+      "width": 64,
+      "left_height": 14,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60
+      ]
+    },
+    {
+      "width": 64,
+      "left_height": 40,
+      "necessary_entry_heights": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        22,
+        24,
+        26,
+        28,
+        30,
+        32,
+        34,
+        36,
+        38,
+        40,
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54,
+        56,
+        58,
+        60
+      ]
+    }
+  ],
+  "scope": "Exact local owner/barrier masks and representative U support controls. All-parameter short-tip exclusion, arbitrary-width cap inclusion and necessary8<=h<=W-4,W>=12 are written proofs with separately scoped Lean coordinate/mask/arithmetic declarations. Lists of necessary heights do not assert a feasible extension. Finite controls and cap10 UNSAT do not prove general noncompletion."
+}

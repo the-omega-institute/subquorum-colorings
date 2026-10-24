@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "execution_location": "local Mac selected by user in current session",
+  "lean_version": "4.33.0",
+  "command": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean --stdin < formal/SubQuorum/MixedRelayEndpointAccounting.lean",
+  "preflight": {
+    "memory_free_percent": 52,
+    "real_lean_lake_processes_by_comm_basename": []
+  },
+  "execution": {
+    "session_id": 13765,
+    "final_chunk": "32ddd4",
+    "exit_code": 0,
+    "errors": 0,
+    "warnings": 0
+  },
+  "audited_theorem_count": 12,
+  "new_full_domain_statements": [
+    "full_domain_component_identity",
+    "full_domain_alpha_has_marker_or_error",
+    "full_domain_coherent_alpha_marker"
+  ],
+  "axioms": {
+    "new_full_domain_statements": ["propext", "Quot.sound"],
+    "sorryAx": false,
+    "native_evaluation": false,
+    "new_axioms": false
+  },
+  "scope": "Full-domain signed endpoint-incidence identity with no contracted chosen-end term, and its alpha marker-or-error consequences. The graph-to-sign occurrence permutation is supplied. Physical graph construction, marker-to-terminal transport, injectivity of interval-unit payments, route existence and grid geometry remain written proofs and separate graph controls."
+}
