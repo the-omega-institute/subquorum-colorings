@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "totals": {
+    "essential_beta_stub_support_controls": 1,
+    "abstract_orientation_comparisons": 1680,
+    "abstract_core_networks": 360,
+    "independent_rank_events": 2890,
+    "physical_models": 16,
+    "selected_tiles": 25,
+    "beta_cores_with_two_root_ports": 6,
+    "beta_cores_with_one_root_port": 9,
+    "physical_orientation_assignments": 62,
+    "independent_terminal_matchings": 3648,
+    "joint_pool_comparisons": 102,
+    "selected_physical_link_lifts": 21,
+    "positive_direction_optimized_deficits": 12
+  },
+  "chain_controls": [
+    {
+      "q": 1,
+      "shape": [
+        30,
+        30
+      ],
+      "endpoints": 144,
+      "selected": 40,
+      "roots": [
+        [
+          14,
+          14
+        ]
+      ],
+      "beta_cores": 0,
+      "correct_empty_pool": [
+        0,
+        0
+      ],
+      "wrong_two_beta_units": [
+        0,
+        0
+      ],
+      "full_original_pool": [
+        2,
+        0
+      ]
+    },
+    {
+      "q": 2,
+      "shape": [
+        30,
+        70
+      ],
+      "endpoints": 322,
+      "selected": 86,
+      "roots": [
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          54
+        ]
+      ],
+      "beta_cores": 1,
+      "correct_empty_pool": [
+        1,
+        3
+      ],
+      "wrong_two_beta_units": [
+        2,
+        6
+      ],
+      "full_original_pool": [
+        4,
+        0
+      ],
+      "duplicate_credit_counterexample": {
+        "flips": [
+          [
+            14,
+            14
+          ]
+        ],
+        "six_actual_links": [
+          [
+            [
+              14,
+              48
+            ],
+            [
+              14,
+              49
+            ]
+          ],
+          [
+            [
+              14,
+              50
+            ],
+            [
+              14,
+              51
+            ]
+          ],
+          [
+            [
+              14,
+              52
+            ],
+            [
+              14,
+              53
+            ]
+          ],
+          [
+            [
+              15,
+              8
+            ],
+            [
+              15,
+              9
+            ]
+          ],
+          [
+            [
+              15,
+              10
+            ],
+            [
+              15,
+              11
+            ]
+          ],
+          [
+            [
+              15,
+              12
+            ],
+            [
+              15,
+              13
+            ]
+          ]
+        ],
+        "wrong_claim": 2,
+        "actual_payment": 1,
+        "restricted_link_subset_optimum": [
+          1,
+          3
+        ],
+        "independently_enumerated_subsets": 64,
+        "correct_separator": [
+          [
+            "whole_beta_core",
+            8
+          ]
+        ],
+        "blocked_sources": [
+          2,
+          3,
+          13,
+          18
+        ],
+        "direction_optimized_deficit": 3
+      }
+    },
+    {
+      "q": 3,
+      "shape": [
+        30,
+        110
+      ],
+      "endpoints": 500,
+      "selected": 132,
+      "roots": [
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          54
+        ],
+        [
+          14,
+          94
+        ]
+      ],
+      "beta_cores": 2,
+      "correct_empty_pool": [
+        2,
+        6
+      ],
+      "wrong_two_beta_units": [
+        4,
+        12
+      ],
+      "full_original_pool": [
+        6,
+        0
+      ]
+    },
+    {
+      "q": 4,
+      "shape": [
+        30,
+        150
+      ],
+      "endpoints": 678,
+      "selected": 178,
+      "roots": [
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          54
+        ],
+        [
+          14,
+          94
+        ],
+        [
+          14,
+          134
+        ]
+      ],
+      "beta_cores": 3,
+      "correct_empty_pool": [
+        3,
+        9
+      ],
+      "wrong_two_beta_units": [
+        6,
+        18
+      ],
+      "full_original_pool": [
+        8,
+        0
+      ]
+    }
+  ],
+  "theorem": "Written: arbitrary selected degree-three frozen pinwheel tiles admit one exact joint min-cost flow using fixed outside alpha/mixed/beta cores, each beta core one private unit; stub-supported beta-fork payment is moved to its incoming stub before the switch. Every integral flow extends to physical directions and normalizes to legal stems/forks. Exact direction-optimized deficit=max_Z(blocked_sources-|Z|) on shared original unit gates. Gain at most one per root.",
+  "limitations": "Uniform original background; exact degree3 and bundle terminality; available original resources arbitrary. No new full-pool deficit repair or universal5/6. Chain q controls test known physical families; no all-q incorrect-credit deficit formula claimed without separate written routing proof."
+}

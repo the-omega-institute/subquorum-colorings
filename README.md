@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [beta-core pinwheel switches and exact direction-optimized cuts](docs/PINWHEEL_BETA_CORE_SWITCHES.md):
+the two-mixed restriction is removed. Any selected degree-three four-outward
+pinwheel tiles, including beta paths joining two roots, optimize all directions
+by one exact integral min-cost flow. A fixed outside beta core owns ONE whole
+credit; stub-supported fork payments are normalized before the local switch.
+This yields an exact joint source/resource/gate separator and retains the
+one-unit-per-flipped-root gain bound. An explicit frozen 322-endpoint bridge
+shows duplicated beta credit falsely reports payment two instead of one;
+all 64 subsets of its six proposed links verify the actual payment. Its full
+original pool already pays all four sources. Checks pass 102 physical pool
+comparisons, 1,680 abstract orientation comparisons and four scoped Lean
+declarations. General donor coverage and universal 5/6 remain open.
+
 New [exact two-track switches at degree-three pinwheel tiles](docs/PINWHEEL_TWO_TRACK_SWITCHES.md):
 every four-outward full-P tile in the degree-three bundle-terminal class has
 two distinct BP-bearing owners; each mixed owner meets at most one such tile.

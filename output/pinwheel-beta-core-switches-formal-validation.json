@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T18:07:30.721106+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "65025 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "34%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "65025 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.PinwheelBetaCoreSwitches.completed_port_capacity' does not depend on any axioms",
+    "'SubQuorum.PinwheelBetaCoreSwitches.beta_total_load' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.PinwheelBetaCoreSwitches.second_payment_needs_interval' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.PinwheelBetaCoreSwitches.normalize_beta_outputs' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "128 finite crossing/direct-payment/orientation flag configurations: completing unused ports keeps each physical endpoint capacity1; total beta load including direct stub payments <=2; a second payment requires an original interval; private beta normalization keeps <=1 old interval.",
+  "not_formalized": [
+    "General physical stub/core identity and support adapter, arbitrary-grid direction-flow equivalence and separator theorem; complete written proofs",
+    "322-endpoint frozen bridge and physical duplicate-credit cancellation; independent executable coordinate/rank/64-link-subset checks"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

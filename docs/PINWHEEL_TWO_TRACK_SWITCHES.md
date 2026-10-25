@@ -3,6 +3,12 @@
 26 October 2026. Wenlin Zhang and Haobo Ma. Research branch; submitted
 manuscripts and public main are unchanged.
 
+**Beta continuation:** [fixed outside beta cores](PINWHEEL_BETA_CORE_SWITCHES.md)
+remove the two-mixed restriction using a stub-supported fork normalization.
+All selected degree-three pinwheel roots now optimize jointly by one flow,
+with one private credit per beta core and an exact direction-optimized cut
+criterion. The theorem below retains its original two-mixed scope.
+
 The [alpha-localization theorem](FOUR_OUTWARD_ALPHA_LOCALIZATION.md) excludes
 alpha wires at degree-three four-outward tiles in a uniform direction.
 Here we identify the remaining physical routing, prove an exact joint
