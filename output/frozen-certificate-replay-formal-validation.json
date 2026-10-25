@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T23:23:16.614706+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "45%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.FrozenCertificateReplay.kept_replay' does not depend on any axioms",
+    "'SubQuorum.FrozenCertificateReplay.certificate_replay' does not depend on any axioms",
+    "'SubQuorum.FrozenCertificateReplay.certificate_sound' does not depend on any axioms"
+  ],
+  "scope": "General preservation of exact two-neighbor strict-rank witnesses when removing endpoints outside a mate-closed partial frozen set and adding selections; transport of the whole certificate; soundness of arbitrary strict-rank certificates for any predicate closed under the physical freezing rule, by strong induction.",
+  "not_formalized": [
+    "Concrete board coordinates, feasibility, the 70-entry certificate, canonical H/V owner/resource/link adapter, exact flow/primitive optima and physical stack decomposition. Verified by explicit written argument and independent executable checks; no end-to-end grid Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

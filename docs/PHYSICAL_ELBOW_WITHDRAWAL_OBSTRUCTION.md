@@ -2,6 +2,13 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+**Follow-up:** [the fully frozen refinement](FULLY_FROZEN_ELBOW_WITHDRAWAL_OBSTRUCTION.md)
+removes the four unfrozen shield endpoints and gives a completely frozen
+70-endpoint rank-one example. A legal selected dimer changes the zero-capacity
+BT row phase, and one additional empty tile direction separates the lower
+gap. The partial-freezing distinctions below describe this earlier board;
+the follow-up resolves the full-freezing question left open here.
+
 The loss term in the [two-tile elbow theorem](LOCAL_ELBOW_RESOURCE_TRANSFER.md)
 is necessary on its stated feasible-grid class. We construct a canonical
 mixed H/V board with the **complete original resource pool** on which the

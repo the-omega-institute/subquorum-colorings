@@ -9,6 +9,12 @@ shield-beta endpoints remain unfrozen, so full freezing remains a separate
 question. Arbitrary independent copies saturate the distinct-witness loss
 bound. The earlier zero-loss computations below retain their original scope.
 
+**Further resolution:** [a completely frozen refinement](FULLY_FROZEN_ELBOW_WITHDRAWAL_OBSTRUCTION.md)
+now realizes r=1 with every endpoint frozen and every alpha terminal of
+degree three. The distinct-witness bound is sharp even under complete
+freezing. The exact conditional formulas below are unchanged; full freezing
+alone cannot supply their zero-loss premise.
+
 We give a local repair for a genuine H/V seam in the canonical band model.
 It changes only **two** tile direction bits in a 4-by-2 patch, rather than
 requiring a full-height P-free strip. All global M/PP owners, source and
