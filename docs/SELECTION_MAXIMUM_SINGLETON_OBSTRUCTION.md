@@ -2,6 +2,8 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Follow-up: [unique actual matching and arbitrary adjacent modules](FORCED_MATES_AND_ADJACENT_MAXIMA.md) removes matching freedom on this P family and proves an exact additive all-module maximum.
+
 The [complete-pool singleton obstruction](FULL_POOL_SINGLETON_OBSTRUCTION.md)
 is not explained merely by a failure to make the selected set inclusion
 maximal. On a cropped board, **every** feasible selected-only extension has

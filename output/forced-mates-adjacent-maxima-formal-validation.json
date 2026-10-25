@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T12:29:23.960638+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "19493 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "concurrency": "One small standalone module at a time; preserve every unrelated process."
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/ForcedMatesAdjacentMaxima.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.ForcedMatesAdjacentMaxima.strict_leaf_rank_unique' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.leaf_certificate_valid' does not depend on any axioms",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.attained_counts' does not depend on any axioms",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.module_count_identity' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.ForcedMatesAdjacentMaxima.replaced_patch_budget' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Generic strict-leaf-rank uniqueness of involutive adjacent mate maps; concrete W8/q1 feasible41T geometry, all34 endpoints frozen and strict leaf-pair certificate; arbitrary n/q scalar count and patch-budget arithmetic.",
+  "not_formalized": [
+    "All-W/q coordinate leaf-certificate specialization",
+    "All-W/q attaining construction and cover-to-count adaptation",
+    "Whole-band compiler and no-beta route cancellation"
+  ],
+  "sorry": false,
+  "native_decide": false
+}
