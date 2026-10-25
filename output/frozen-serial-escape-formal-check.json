@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "toolchain": "Lean 4.33.0",
+  "machine": "local, authorized in current session",
+  "memory": {
+    "total_gib": 16,
+    "available_percent": 41,
+    "preexisting_lean_lake": 0,
+    "concurrency": 1,
+    "final_lean_lake": 0
+  },
+  "statement_count": 9,
+  "axiom_free_statement_count": 2,
+  "statements": [
+    "two_witnesses_force_both",
+    "selected_outer_rank_cycle",
+    "outer_bp_vertical_rank_cycle",
+    "outward_target_injective",
+    "common_phase_excludes_inactive",
+    "serial_joint_deficit_bound",
+    "full_with_distinct_ports",
+    "marked_charge_bound",
+    "serial_certificate_link_count"
+  ],
+  "standard_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "warnings": 0,
+  "sorry": 0,
+  "new_axioms": 0,
+  "native_evaluation": false,
+  "scope": "Retained-witness combinatorics; strict-rank cycles; escape-target injection from supplied geometric hypotheses; phase exclusion; joint counting and marked-label/cost arithmetic.",
+  "excluded": [
+    "Full coordinate matching geometry",
+    "Serial owner exclusion and bipartite strand-end signing",
+    "Complete physical simultaneous packing adapter",
+    "Frozen serial embedding",
+    "Universal grid compensation or numerical 5/6"
+  ]
+}

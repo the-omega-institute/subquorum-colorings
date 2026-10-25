@@ -2,6 +2,11 @@
 
 25 October 2026. Wenlin Zhang and Haobo Ma. Isolated research branch.
 
+Continuation: [the frozen serial-fork escape theorem](FROZEN_SERIAL_FORK_ESCAPE.md)
+proves a forced BB port or exterior-owner exit in any original frozen
+realization of this skeleton, and gives a simultaneous common-phase
+certificate with original interval identities counted once.
+
 The [frozen gap family](FROZEN_GAP_CAPACITY_AND_LINK_RETRACTION.md) has an exact
 one-retraction-per-deficit frontier because its beta bypasses are independent.
 That frontier does **not** follow from the abstract strand axioms alone.

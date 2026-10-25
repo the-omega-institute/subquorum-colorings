@@ -7,6 +7,21 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [frozen serial-fork escape](FROZEN_SERIAL_FORK_ESCAPE.md).
+A frozen realization of the previous serial skeleton forces its second
+mixed output to an original BB port or an exterior open owner. An available
+port pays the skeleton with ALL old C retained. For owner-disjoint common-
+phase skeletons, BP escapes have different owners outside the entire family;
+exterior beta payments and original-unit allocation give certified deficit
+at most m+h+floor(u/2), with marked exceptions h<=card(K). Mixed escapes
+are not credited as resources. Two BB ports may share one unit. Literal
+resource-free owner-closed interior serial interfaces are excluded, but
+arbitrary exterior relay dependencies remain open. A literal28P/7T feasible
+NONFROZEN nested-fork control has an explicit two-point freezing obstruction.
+72earlier frozen images check160local BP escapes and12shared heads;
+they do NOT realize a full nested frozen skeleton.255abstract allocation
+controls and9scoped localLean pass. General5/6 remains open.
+
 25 October: [coupled old-link revisions and a serial plateau](COUPLED_LINK_RETRACTION.md).
 Under explicit single-active-TP/empty-alpha-support hypotheses, the full
 stem/fork network with one reward per retained actual C link gives the
