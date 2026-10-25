@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [conditional fresh-tip closure](CONDITIONAL_FRESH_TIP_CLOSURE.md).
+27 potential fresh-TP sites per actual base copy have compatible conditional
+singleton/BP witnesses under arbitrary feasible T/P additions and rematching.
+Only u=e-g unprotected fresh tips remain holes; exact strategy loss k<=u/2
+and true ordinary deficit<=k. The original interval identities are distinct
+even when physical targets share a column: their sources cannot both be TP.
+All u<=1 extensions are fully paid, permitting arbitrarily many protected
+new tips. An all-n connected frozen cap occupation has g=2n, p=n, u=0 and
+is paid for every M.2573 controls include58frozen/2515nonfrozen,243rematches,
+92independent packs;10new/39combined scoped Lean audits pass. Actual old-pool
+deficit1 is repaired on an explicitly NONFROZEN328P example. Universal
+compensation and5/6 remain open.
+
 25 October: [protected shared columns and fresh ends](PROTECTED_SHARED_COLUMNS_AND_FRESH_ENDS.md).
 An unbounded frozen long-alpha family has saturated-T collars that force
 its actual matching under arbitrary feasible additions and rematching.

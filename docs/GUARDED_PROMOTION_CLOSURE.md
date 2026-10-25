@@ -240,6 +240,11 @@ budget. The21 earlier audits in the same source are rerun. Full geometric
 extraction, the arbitrary-extension adapter and physical certificate
 lifting remain written/Python; this is not an end-to-end Lean proof.
 
+Further continuation: [conditional fresh-tip closure](CONDITIONAL_FRESH_TIP_CLOSURE.md)
+absorbs 27 potential fresh-tip sites per actual copy by compatible conditional
+singleton/BP witnesses. Only unprotected fresh TPs count as holes. This
+strengthens the arbitrary-extension guarantee without requiring old mates.
+
 Continuation: [protected shared columns and fresh ends](PROTECTED_SHARED_COLUMNS_AND_FRESH_ENDS.md)
 gives a completely frozen sharp retained-pool family, disproves localization
 by matching-difference components alone, and proves a persistent shared-unit

@@ -355,3 +355,112 @@ theorem multi_copy_interval_budget (n h e aFinal k used : Nat)
 #print axioms multi_copy_interval_budget
 
 end SubQuorum.EndpointExtensionReplacement.PromotionClosure
+
+namespace SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure
+
+/-- An activated new TP protects its target's band partner and forbids
+selecting the target. The retained blocker a and the new endpoint v are
+both used explicitly. No actual-mate hypothesis is present. -/
+theorem activated_target_guards {V : Type} (T P O : V → Prop)
+    (adj : V → V → Prop) (endpointOccupied : ∀ v, P v → O v)
+    (unique : ∀ t, T t → ∀ x, O x → adj t x → ∀ y, O y → adj t y → x=y)
+    (t v w q a : V) (ht : T t) (hv : P v) (ha : O a)
+    (htv : adj t v) (htq : adj t q) (hwv : adj w v) (hwa : adj w a)
+    (vq : v≠q) (va : v≠a) : ¬ O q ∧ ¬ T w := by
+  constructor
+  · exact selected_guard_blank T O adj unique t v q ht (endpointOccupied v hv) htv htq vq
+  · intro hw
+    exact va (unique w hw v (endpointOccupied v hv) hwv a ha hwa)
+
+def freshPairs : List (Point × Point) := [
+  ((1,14),(1,13)),
+  ((1,18),(1,19)),
+  ((8,22),(8,21)),
+  ((9,22),(9,21)),
+  ((10,1),(10,2)),
+  ((10,22),(10,21)),
+  ((11,1),(11,2)),
+  ((11,22),(11,21)),
+  ((12,22),(12,21)),
+  ((13,22),(13,21)),
+  ((14,22),(14,21)),
+  ((15,22),(15,21)),
+  ((16,10),(16,11)),
+  ((16,22),(16,21)),
+  ((17,8),(17,7)),
+  ((17,10),(17,11)),
+  ((17,22),(17,21)),
+  ((18,22),(18,21)),
+  ((19,9),(19,8)),
+  ((19,22),(19,21)),
+  ((20,22),(20,21)),
+  ((21,13),(21,12)),
+  ((21,14),(21,13)),
+  ((21,22),(21,21)),
+  ((24,13),(24,12)),
+  ((24,14),(24,13)),
+  ((24,15),(24,14))
+]
+
+def neighbourhood (v : Point) : List Point :=
+  [(v.1-1,v.2),(v.1+1,v.2),(v.1,v.2-1),(v.1,v.2+1)]
+def retained (v : Point) : Bool := decide (v∈selected ∨ v∈endpoints)
+def hasExternalOldNeighbour (v : Point) : Bool :=
+  (neighbourhood v).any fun a => retained a && decide (adjacent v a) && decide (a≠partner v)
+def outer (e : Point × Point) : Point := (e.2.1,2*e.2.2-e.1.2)
+def noTTWitness (v : Point) : Bool :=
+  decide (v∈endpoints ∨ partner v∈endpoints) ||
+    hasExternalOldNeighbour v || hasExternalOldNeighbour (partner v)
+
+/-- Literal 27-site audit. These are necessary local geometric facts for
+activation and its target, not a finite-extension proof. -/
+theorem actual_fresh_guard_geometry : ∀ e∈freshPairs,
+    e.1∉selected ∧ e.1∉endpoints ∧ partner e.1∉selected ∧ partner e.1∉endpoints ∧
+    e.2∉selected ∧ e.2∉endpoints ∧ adjacent e.1 e.2 ∧
+    adjacent (partner e.1) (partner e.2) ∧ e.1≠partner e.2 ∧
+    ((neighbourhood e.2).any retained=true) ∧ noTTWitness (outer e)=true := by decide
+
+theorem actual_distinct_fresh_targets : ∀ e∈freshPairs, ∀ f∈freshPairs,
+    e.2=f.2 → e=f := by decide
+
+theorem actual_fresh_target_resource_collisions : ∀ e∈freshPairs, ∀ f∈freshPairs,
+    (e.2.1/2,e.2.2)=(f.2.1/2,f.2.2) → e=f ∨ e.1=partner f.1 := by decide
+
+theorem actual_fresh_targets_disjoint : ∀ e∈freshPairs,
+    e.2∉oldLinks.map Prod.snd ∧ e.2≠(3,13) ∧
+    ∀ f∈flexible, e.2≠f.2 ∧
+      (e.2.1/2,e.2.2)≠(f.2.1/2,f.2.2) := by decide
+
+theorem actual_fresh_target_columns : ∀ e∈freshPairs, 0<e.2.2 ∧ e.2.2<24 := by decide
+
+/-- Endpoint/selection disjointness excludes simultaneous TP activation
+of band-partner sources. Only the conflicting endpoint/selection is needed. -/
+theorem paired_sources_not_both_active {V : Type} (T P : V → Prop)
+    (partner : V → V)
+    (disjoint : ∀ x, P x → ¬ T x) (x y : V) (paired : x=partner y)
+    (px : P x) (ty : T (partner y)) : False := by
+  exact disjoint x px (paired ▸ ty)
+
+/-- Column residues in one copy are strictly below the translation period. -/
+theorem translated_column_injection (c d i j : Nat) (hc : c<24) (hd : d<24)
+    (same : c+24*i=d+24*j) : i=j ∧ c=d := by omega
+
+theorem extended_certificate_counts (n h p g q : Nat) (hh : h≤5*n) (hq : q≤g) :
+    23*n+p+g = (18*n+h+p+q)+(5*n-h+g-q) := by omega
+
+theorem unprotected_fresh_budget (k e g p s : Nat) (hg : g≤e)
+    (twoUnprotectedEnds : 2*k≤e-g) (newSelections : e+p≤s) :
+    k≤(e-g)/2 ∧ k≤(s-p-g)/2 := by omega
+
+#print axioms activated_target_guards
+#print axioms actual_fresh_guard_geometry
+#print axioms actual_distinct_fresh_targets
+#print axioms actual_fresh_target_resource_collisions
+#print axioms actual_fresh_targets_disjoint
+#print axioms actual_fresh_target_columns
+#print axioms paired_sources_not_both_active
+#print axioms translated_column_injection
+#print axioms extended_certificate_counts
+#print axioms unprotected_fresh_budget
+
+end SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure

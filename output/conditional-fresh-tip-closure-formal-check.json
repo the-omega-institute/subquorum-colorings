@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "machine": "local user-selected execution",
+  "preflight": "16GiB physical RAM; memory_pressure 42 percent system-wide free; no active lean/lake by comm basename; one Lean process",
+  "command": "cd formal && lean SubQuorum/EndpointExtensionReplacement.lean",
+  "new_audits": 10,
+  "total_audits": 39,
+  "new_axiom_free": 4,
+  "total_axiom_free": 12,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "errors": 0,
+  "warnings": 0,
+  "sorry": false,
+  "native_decide": false,
+  "scope": [
+    "activated_target_guards",
+    "actual_fresh_guard_geometry",
+    "actual_distinct_fresh_targets",
+    "actual_fresh_target_resource_collisions",
+    "actual_fresh_targets_disjoint",
+    "actual_fresh_target_columns",
+    "paired_sources_not_both_active",
+    "translated_column_injection",
+    "extended_certificate_counts",
+    "unprotected_fresh_budget"
+  ],
+  "not_formalized": [
+    "complete all-n geometric extension adapter",
+    "original singleton extraction and availability",
+    "cancellation/ordinary packing lift",
+    "all-n frozen cap family geometry"
+  ],
+  "evidence": "conditional-fresh-tip-closure-lean-validation.txt"
+}

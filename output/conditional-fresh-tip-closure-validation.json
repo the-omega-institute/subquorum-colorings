@@ -1,0 +1,2550 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_primitive_comparisons": 92,
+    "models": 2573,
+    "frozen": 58,
+    "protected_fresh_active_models": 2567,
+    "protected_new_BP_models": 2271,
+    "coarse_budget_strict_improvement_models": 1896,
+    "all_fresh_protected_models": 2558,
+    "max_simultaneous_protected_fresh": 70,
+    "feasible_nonfrozen": 2515,
+    "actual_rematching_controls": 243,
+    "target_occupation_controls": 82,
+    "simultaneous_activation_runs": 48,
+    "frozen_caps_independent_rank_checks": 8,
+    "mixed_protected_unprotected_frozen_controls": 9,
+    "actual_old_pool_loss_repaired_controls": 1
+  },
+  "local_witness_audit": [
+    {
+      "source": [
+        1,
+        14
+      ],
+      "target": [
+        1,
+        13
+      ],
+      "selection": [
+        0,
+        14
+      ],
+      "blank_partner": [
+        0,
+        13
+      ],
+      "selection_blocker": [
+        1,
+        12
+      ],
+      "outer_column": [
+        1,
+        12
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          1,
+          12
+        ],
+        [
+          2,
+          12
+        ]
+      ]
+    },
+    {
+      "source": [
+        1,
+        18
+      ],
+      "target": [
+        1,
+        19
+      ],
+      "selection": [
+        0,
+        18
+      ],
+      "blank_partner": [
+        0,
+        19
+      ],
+      "selection_blocker": [
+        1,
+        20
+      ],
+      "outer_column": [
+        1,
+        20
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          1,
+          20
+        ],
+        [
+          2,
+          20
+        ]
+      ]
+    },
+    {
+      "source": [
+        8,
+        22
+      ],
+      "target": [
+        8,
+        21
+      ],
+      "selection": [
+        9,
+        22
+      ],
+      "blank_partner": [
+        9,
+        21
+      ],
+      "selection_blocker": [
+        8,
+        20
+      ],
+      "outer_column": [
+        8,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        8,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        9,
+        22
+      ],
+      "target": [
+        9,
+        21
+      ],
+      "selection": [
+        8,
+        22
+      ],
+      "blank_partner": [
+        8,
+        21
+      ],
+      "selection_blocker": [
+        9,
+        20
+      ],
+      "outer_column": [
+        9,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        8,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        10,
+        1
+      ],
+      "target": [
+        10,
+        2
+      ],
+      "selection": [
+        11,
+        1
+      ],
+      "blank_partner": [
+        11,
+        2
+      ],
+      "selection_blocker": [
+        10,
+        3
+      ],
+      "outer_column": [
+        10,
+        3
+      ],
+      "nonTT_old_endpoint": [
+        10,
+        3
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        10,
+        22
+      ],
+      "target": [
+        10,
+        21
+      ],
+      "selection": [
+        11,
+        22
+      ],
+      "blank_partner": [
+        11,
+        21
+      ],
+      "selection_blocker": [
+        10,
+        20
+      ],
+      "outer_column": [
+        10,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        10,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        11,
+        1
+      ],
+      "target": [
+        11,
+        2
+      ],
+      "selection": [
+        10,
+        1
+      ],
+      "blank_partner": [
+        10,
+        2
+      ],
+      "selection_blocker": [
+        11,
+        3
+      ],
+      "outer_column": [
+        11,
+        3
+      ],
+      "nonTT_old_endpoint": [
+        10,
+        3
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        11,
+        22
+      ],
+      "target": [
+        11,
+        21
+      ],
+      "selection": [
+        10,
+        22
+      ],
+      "blank_partner": [
+        10,
+        21
+      ],
+      "selection_blocker": [
+        11,
+        20
+      ],
+      "outer_column": [
+        11,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        10,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        12,
+        22
+      ],
+      "target": [
+        12,
+        21
+      ],
+      "selection": [
+        13,
+        22
+      ],
+      "blank_partner": [
+        13,
+        21
+      ],
+      "selection_blocker": [
+        12,
+        20
+      ],
+      "outer_column": [
+        12,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        12,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        13,
+        22
+      ],
+      "target": [
+        13,
+        21
+      ],
+      "selection": [
+        12,
+        22
+      ],
+      "blank_partner": [
+        12,
+        21
+      ],
+      "selection_blocker": [
+        13,
+        20
+      ],
+      "outer_column": [
+        13,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        12,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        14,
+        22
+      ],
+      "target": [
+        14,
+        21
+      ],
+      "selection": [
+        15,
+        22
+      ],
+      "blank_partner": [
+        15,
+        21
+      ],
+      "selection_blocker": [
+        14,
+        20
+      ],
+      "outer_column": [
+        14,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        14,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        15,
+        22
+      ],
+      "target": [
+        15,
+        21
+      ],
+      "selection": [
+        14,
+        22
+      ],
+      "blank_partner": [
+        14,
+        21
+      ],
+      "selection_blocker": [
+        15,
+        20
+      ],
+      "outer_column": [
+        15,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        14,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        16,
+        10
+      ],
+      "target": [
+        16,
+        11
+      ],
+      "selection": [
+        17,
+        10
+      ],
+      "blank_partner": [
+        17,
+        11
+      ],
+      "selection_blocker": [
+        15,
+        11
+      ],
+      "outer_column": [
+        16,
+        12
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          16,
+          12
+        ],
+        [
+          16,
+          13
+        ]
+      ]
+    },
+    {
+      "source": [
+        16,
+        22
+      ],
+      "target": [
+        16,
+        21
+      ],
+      "selection": [
+        17,
+        22
+      ],
+      "blank_partner": [
+        17,
+        21
+      ],
+      "selection_blocker": [
+        16,
+        20
+      ],
+      "outer_column": [
+        16,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        16,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        17,
+        8
+      ],
+      "target": [
+        17,
+        7
+      ],
+      "selection": [
+        16,
+        8
+      ],
+      "blank_partner": [
+        16,
+        7
+      ],
+      "selection_blocker": [
+        17,
+        6
+      ],
+      "outer_column": [
+        17,
+        6
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          17,
+          6
+        ],
+        [
+          18,
+          6
+        ]
+      ]
+    },
+    {
+      "source": [
+        17,
+        10
+      ],
+      "target": [
+        17,
+        11
+      ],
+      "selection": [
+        16,
+        10
+      ],
+      "blank_partner": [
+        16,
+        11
+      ],
+      "selection_blocker": [
+        18,
+        11
+      ],
+      "outer_column": [
+        17,
+        12
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          16,
+          12
+        ],
+        [
+          16,
+          13
+        ]
+      ]
+    },
+    {
+      "source": [
+        17,
+        22
+      ],
+      "target": [
+        17,
+        21
+      ],
+      "selection": [
+        16,
+        22
+      ],
+      "blank_partner": [
+        16,
+        21
+      ],
+      "selection_blocker": [
+        17,
+        20
+      ],
+      "outer_column": [
+        17,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        16,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        18,
+        22
+      ],
+      "target": [
+        18,
+        21
+      ],
+      "selection": [
+        19,
+        22
+      ],
+      "blank_partner": [
+        19,
+        21
+      ],
+      "selection_blocker": [
+        18,
+        20
+      ],
+      "outer_column": [
+        18,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        18,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        19,
+        9
+      ],
+      "target": [
+        19,
+        8
+      ],
+      "selection": [
+        18,
+        9
+      ],
+      "blank_partner": [
+        18,
+        8
+      ],
+      "selection_blocker": [
+        20,
+        8
+      ],
+      "outer_column": [
+        19,
+        7
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          18,
+          7
+        ],
+        [
+          18,
+          6
+        ]
+      ]
+    },
+    {
+      "source": [
+        19,
+        22
+      ],
+      "target": [
+        19,
+        21
+      ],
+      "selection": [
+        18,
+        22
+      ],
+      "blank_partner": [
+        18,
+        21
+      ],
+      "selection_blocker": [
+        19,
+        20
+      ],
+      "outer_column": [
+        19,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        18,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        20,
+        22
+      ],
+      "target": [
+        20,
+        21
+      ],
+      "selection": [
+        21,
+        22
+      ],
+      "blank_partner": [
+        21,
+        21
+      ],
+      "selection_blocker": [
+        20,
+        20
+      ],
+      "outer_column": [
+        20,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        20,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        21,
+        13
+      ],
+      "target": [
+        21,
+        12
+      ],
+      "selection": [
+        20,
+        13
+      ],
+      "blank_partner": [
+        20,
+        12
+      ],
+      "selection_blocker": [
+        21,
+        11
+      ],
+      "outer_column": [
+        21,
+        11
+      ],
+      "nonTT_old_endpoint": [
+        20,
+        11
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        21,
+        14
+      ],
+      "target": [
+        21,
+        13
+      ],
+      "selection": [
+        20,
+        14
+      ],
+      "blank_partner": [
+        20,
+        13
+      ],
+      "selection_blocker": [
+        22,
+        13
+      ],
+      "outer_column": [
+        21,
+        12
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          20,
+          12
+        ],
+        [
+          19,
+          12
+        ]
+      ]
+    },
+    {
+      "source": [
+        21,
+        22
+      ],
+      "target": [
+        21,
+        21
+      ],
+      "selection": [
+        20,
+        22
+      ],
+      "blank_partner": [
+        20,
+        21
+      ],
+      "selection_blocker": [
+        21,
+        20
+      ],
+      "outer_column": [
+        21,
+        20
+      ],
+      "nonTT_old_endpoint": [
+        20,
+        20
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        24,
+        13
+      ],
+      "target": [
+        24,
+        12
+      ],
+      "selection": [
+        25,
+        13
+      ],
+      "blank_partner": [
+        25,
+        12
+      ],
+      "selection_blocker": [
+        23,
+        12
+      ],
+      "outer_column": [
+        24,
+        11
+      ],
+      "nonTT_old_endpoint": [
+        24,
+        11
+      ],
+      "nonTT_external_guard": null
+    },
+    {
+      "source": [
+        24,
+        14
+      ],
+      "target": [
+        24,
+        13
+      ],
+      "selection": [
+        25,
+        14
+      ],
+      "blank_partner": [
+        25,
+        13
+      ],
+      "selection_blocker": [
+        23,
+        13
+      ],
+      "outer_column": [
+        24,
+        12
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          24,
+          12
+        ],
+        [
+          23,
+          12
+        ]
+      ]
+    },
+    {
+      "source": [
+        24,
+        15
+      ],
+      "target": [
+        24,
+        14
+      ],
+      "selection": [
+        25,
+        15
+      ],
+      "blank_partner": [
+        25,
+        14
+      ],
+      "selection_blocker": [
+        23,
+        14
+      ],
+      "outer_column": [
+        24,
+        13
+      ],
+      "nonTT_old_endpoint": null,
+      "nonTT_external_guard": [
+        [
+          24,
+          13
+        ],
+        [
+          23,
+          13
+        ]
+      ]
+    }
+  ],
+  "named": {
+    "(1, 14)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(1, 18)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(8, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(9, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(10, 1)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(10, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(11, 1)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(11, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(12, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(13, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(14, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(15, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(16, 10)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(16, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(17, 8)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(17, 10)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(17, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(18, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(19, 9)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(19, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(20, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(21, 13)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(21, 14)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(21, 22)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(24, 13)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(24, 14)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "(24, 15)": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 1,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 19,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50
+    },
+    "many_(1, 0)": {
+      "copies": 1,
+      "protected_fresh": 12,
+      "protected_BP_targets": 8,
+      "unprotected_fresh": 0,
+      "all_fresh": 12,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 26,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 332,
+      "selected": 61
+    },
+    "many_(1, 1)": {
+      "copies": 1,
+      "protected_fresh": 11,
+      "protected_BP_targets": 5,
+      "unprotected_fresh": 0,
+      "all_fresh": 11,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 23,
+      "assigned_units": 11,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 330,
+      "selected": 60
+    },
+    "many_(1, 2)": {
+      "copies": 1,
+      "protected_fresh": 12,
+      "protected_BP_targets": 7,
+      "unprotected_fresh": 0,
+      "all_fresh": 12,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 25,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 332,
+      "selected": 61
+    },
+    "many_(1, 3)": {
+      "copies": 1,
+      "protected_fresh": 10,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 0,
+      "all_fresh": 10,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 328,
+      "selected": 59
+    },
+    "many_(1, 4)": {
+      "copies": 1,
+      "protected_fresh": 11,
+      "protected_BP_targets": 7,
+      "unprotected_fresh": 0,
+      "all_fresh": 11,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 25,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 330,
+      "selected": 60
+    },
+    "many_(1, 5)": {
+      "copies": 1,
+      "protected_fresh": 12,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 0,
+      "all_fresh": 12,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 11,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 330,
+      "selected": 61
+    },
+    "many_(1, 6)": {
+      "copies": 1,
+      "protected_fresh": 11,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 0,
+      "all_fresh": 11,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 330,
+      "selected": 60
+    },
+    "many_(1, 7)": {
+      "copies": 1,
+      "protected_fresh": 11,
+      "protected_BP_targets": 4,
+      "unprotected_fresh": 0,
+      "all_fresh": 11,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 22,
+      "assigned_units": 12,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 328,
+      "selected": 60
+    },
+    "many_(2, 0)": {
+      "copies": 2,
+      "protected_fresh": 22,
+      "protected_BP_targets": 9,
+      "unprotected_fresh": 0,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 45,
+      "assigned_units": 23,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 660,
+      "selected": 120
+    },
+    "many_(2, 1)": {
+      "copies": 2,
+      "protected_fresh": 22,
+      "protected_BP_targets": 9,
+      "unprotected_fresh": 0,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 45,
+      "assigned_units": 23,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 660,
+      "selected": 120
+    },
+    "many_(2, 2)": {
+      "copies": 2,
+      "protected_fresh": 20,
+      "protected_BP_targets": 10,
+      "unprotected_fresh": 0,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 46,
+      "assigned_units": 20,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 660,
+      "selected": 118
+    },
+    "many_(2, 3)": {
+      "copies": 2,
+      "protected_fresh": 23,
+      "protected_BP_targets": 10,
+      "unprotected_fresh": 0,
+      "all_fresh": 23,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 46,
+      "assigned_units": 23,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 662,
+      "selected": 121
+    },
+    "many_(2, 4)": {
+      "copies": 2,
+      "protected_fresh": 24,
+      "protected_BP_targets": 12,
+      "unprotected_fresh": 0,
+      "all_fresh": 24,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 48,
+      "assigned_units": 22,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 664,
+      "selected": 122
+    },
+    "many_(2, 5)": {
+      "copies": 2,
+      "protected_fresh": 23,
+      "protected_BP_targets": 12,
+      "unprotected_fresh": 0,
+      "all_fresh": 23,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 48,
+      "assigned_units": 21,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 664,
+      "selected": 121
+    },
+    "many_(2, 6)": {
+      "copies": 2,
+      "protected_fresh": 23,
+      "protected_BP_targets": 10,
+      "unprotected_fresh": 0,
+      "all_fresh": 23,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 46,
+      "assigned_units": 23,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 662,
+      "selected": 121
+    },
+    "many_(2, 7)": {
+      "copies": 2,
+      "protected_fresh": 25,
+      "protected_BP_targets": 16,
+      "unprotected_fresh": 0,
+      "all_fresh": 25,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 52,
+      "assigned_units": 19,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": false,
+      "endpoints": 668,
+      "selected": 123
+    },
+    "many_(3, 0)": {
+      "copies": 3,
+      "protected_fresh": 37,
+      "protected_BP_targets": 18,
+      "unprotected_fresh": 0,
+      "all_fresh": 37,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 72,
+      "assigned_units": 34,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 1002,
+      "selected": 184
+    },
+    "many_(3, 1)": {
+      "copies": 3,
+      "protected_fresh": 36,
+      "protected_BP_targets": 14,
+      "unprotected_fresh": 0,
+      "all_fresh": 36,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 68,
+      "assigned_units": 37,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 994,
+      "selected": 183
+    },
+    "many_(3, 2)": {
+      "copies": 3,
+      "protected_fresh": 32,
+      "protected_BP_targets": 17,
+      "unprotected_fresh": 0,
+      "all_fresh": 32,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 71,
+      "assigned_units": 30,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 994,
+      "selected": 179
+    },
+    "many_(3, 3)": {
+      "copies": 3,
+      "protected_fresh": 34,
+      "protected_BP_targets": 14,
+      "unprotected_fresh": 0,
+      "all_fresh": 34,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 68,
+      "assigned_units": 35,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 996,
+      "selected": 181
+    },
+    "many_(3, 4)": {
+      "copies": 3,
+      "protected_fresh": 36,
+      "protected_BP_targets": 24,
+      "unprotected_fresh": 0,
+      "all_fresh": 36,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 78,
+      "assigned_units": 27,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 1004,
+      "selected": 183
+    },
+    "many_(3, 5)": {
+      "copies": 3,
+      "protected_fresh": 37,
+      "protected_BP_targets": 16,
+      "unprotected_fresh": 0,
+      "all_fresh": 37,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 70,
+      "assigned_units": 36,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 998,
+      "selected": 184
+    },
+    "many_(3, 6)": {
+      "copies": 3,
+      "protected_fresh": 34,
+      "protected_BP_targets": 19,
+      "unprotected_fresh": 0,
+      "all_fresh": 34,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 73,
+      "assigned_units": 30,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 998,
+      "selected": 181
+    },
+    "many_(3, 7)": {
+      "copies": 3,
+      "protected_fresh": 34,
+      "protected_BP_targets": 15,
+      "unprotected_fresh": 0,
+      "all_fresh": 34,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 69,
+      "assigned_units": 34,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": false,
+      "endpoints": 998,
+      "selected": 181
+    },
+    "many_(4, 0)": {
+      "copies": 4,
+      "protected_fresh": 45,
+      "protected_BP_targets": 25,
+      "unprotected_fresh": 0,
+      "all_fresh": 45,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 97,
+      "assigned_units": 40,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1332,
+      "selected": 241
+    },
+    "many_(4, 1)": {
+      "copies": 4,
+      "protected_fresh": 45,
+      "protected_BP_targets": 19,
+      "unprotected_fresh": 0,
+      "all_fresh": 45,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 91,
+      "assigned_units": 46,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1328,
+      "selected": 241
+    },
+    "many_(4, 2)": {
+      "copies": 4,
+      "protected_fresh": 47,
+      "protected_BP_targets": 24,
+      "unprotected_fresh": 0,
+      "all_fresh": 47,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 96,
+      "assigned_units": 43,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1334,
+      "selected": 243
+    },
+    "many_(4, 3)": {
+      "copies": 4,
+      "protected_fresh": 48,
+      "protected_BP_targets": 29,
+      "unprotected_fresh": 0,
+      "all_fresh": 48,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 101,
+      "assigned_units": 39,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1340,
+      "selected": 244
+    },
+    "many_(4, 4)": {
+      "copies": 4,
+      "protected_fresh": 46,
+      "protected_BP_targets": 25,
+      "unprotected_fresh": 0,
+      "all_fresh": 46,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 97,
+      "assigned_units": 41,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1332,
+      "selected": 242
+    },
+    "many_(4, 5)": {
+      "copies": 4,
+      "protected_fresh": 47,
+      "protected_BP_targets": 24,
+      "unprotected_fresh": 0,
+      "all_fresh": 47,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 96,
+      "assigned_units": 43,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1334,
+      "selected": 243
+    },
+    "many_(4, 6)": {
+      "copies": 4,
+      "protected_fresh": 44,
+      "protected_BP_targets": 21,
+      "unprotected_fresh": 0,
+      "all_fresh": 44,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 93,
+      "assigned_units": 43,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1328,
+      "selected": 240
+    },
+    "many_(4, 7)": {
+      "copies": 4,
+      "protected_fresh": 45,
+      "protected_BP_targets": 23,
+      "unprotected_fresh": 0,
+      "all_fresh": 45,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 95,
+      "assigned_units": 42,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": false,
+      "endpoints": 1330,
+      "selected": 241
+    },
+    "many_(5, 0)": {
+      "copies": 5,
+      "protected_fresh": 58,
+      "protected_BP_targets": 31,
+      "unprotected_fresh": 0,
+      "all_fresh": 58,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 121,
+      "assigned_units": 52,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1670,
+      "selected": 303
+    },
+    "many_(5, 1)": {
+      "copies": 5,
+      "protected_fresh": 56,
+      "protected_BP_targets": 29,
+      "unprotected_fresh": 0,
+      "all_fresh": 56,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 119,
+      "assigned_units": 52,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1664,
+      "selected": 301
+    },
+    "many_(5, 2)": {
+      "copies": 5,
+      "protected_fresh": 58,
+      "protected_BP_targets": 31,
+      "unprotected_fresh": 0,
+      "all_fresh": 58,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 121,
+      "assigned_units": 52,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1668,
+      "selected": 303
+    },
+    "many_(5, 3)": {
+      "copies": 5,
+      "protected_fresh": 54,
+      "protected_BP_targets": 23,
+      "unprotected_fresh": 0,
+      "all_fresh": 54,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 113,
+      "assigned_units": 56,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1660,
+      "selected": 299
+    },
+    "many_(5, 4)": {
+      "copies": 5,
+      "protected_fresh": 56,
+      "protected_BP_targets": 29,
+      "unprotected_fresh": 0,
+      "all_fresh": 56,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 119,
+      "assigned_units": 52,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1664,
+      "selected": 301
+    },
+    "many_(5, 5)": {
+      "copies": 5,
+      "protected_fresh": 59,
+      "protected_BP_targets": 33,
+      "unprotected_fresh": 0,
+      "all_fresh": 59,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 123,
+      "assigned_units": 51,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1668,
+      "selected": 304
+    },
+    "many_(5, 6)": {
+      "copies": 5,
+      "protected_fresh": 60,
+      "protected_BP_targets": 32,
+      "unprotected_fresh": 0,
+      "all_fresh": 60,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 122,
+      "assigned_units": 53,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1670,
+      "selected": 305
+    },
+    "many_(5, 7)": {
+      "copies": 5,
+      "protected_fresh": 58,
+      "protected_BP_targets": 34,
+      "unprotected_fresh": 0,
+      "all_fresh": 58,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 124,
+      "assigned_units": 49,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": false,
+      "endpoints": 1672,
+      "selected": 303
+    },
+    "many_(6, 0)": {
+      "copies": 6,
+      "protected_fresh": 70,
+      "protected_BP_targets": 34,
+      "unprotected_fresh": 0,
+      "all_fresh": 70,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 142,
+      "assigned_units": 66,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 2000,
+      "selected": 364
+    },
+    "many_(6, 1)": {
+      "copies": 6,
+      "protected_fresh": 68,
+      "protected_BP_targets": 26,
+      "unprotected_fresh": 0,
+      "all_fresh": 68,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 134,
+      "assigned_units": 72,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 1994,
+      "selected": 362
+    },
+    "many_(6, 2)": {
+      "copies": 6,
+      "protected_fresh": 70,
+      "protected_BP_targets": 35,
+      "unprotected_fresh": 0,
+      "all_fresh": 70,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 143,
+      "assigned_units": 65,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 1998,
+      "selected": 364
+    },
+    "many_(6, 3)": {
+      "copies": 6,
+      "protected_fresh": 66,
+      "protected_BP_targets": 30,
+      "unprotected_fresh": 0,
+      "all_fresh": 66,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 138,
+      "assigned_units": 66,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 1996,
+      "selected": 360
+    },
+    "many_(6, 4)": {
+      "copies": 6,
+      "protected_fresh": 67,
+      "protected_BP_targets": 29,
+      "unprotected_fresh": 0,
+      "all_fresh": 67,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 137,
+      "assigned_units": 68,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 1990,
+      "selected": 361
+    },
+    "many_(6, 5)": {
+      "copies": 6,
+      "protected_fresh": 70,
+      "protected_BP_targets": 32,
+      "unprotected_fresh": 0,
+      "all_fresh": 70,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 140,
+      "assigned_units": 68,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 1998,
+      "selected": 364
+    },
+    "many_(6, 6)": {
+      "copies": 6,
+      "protected_fresh": 70,
+      "protected_BP_targets": 39,
+      "unprotected_fresh": 0,
+      "all_fresh": 70,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 147,
+      "assigned_units": 61,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 2004,
+      "selected": 364
+    },
+    "many_(6, 7)": {
+      "copies": 6,
+      "protected_fresh": 66,
+      "protected_BP_targets": 35,
+      "unprotected_fresh": 0,
+      "all_fresh": 66,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 143,
+      "assigned_units": 61,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": false,
+      "endpoints": 1996,
+      "selected": 360
+    },
+    "two_fresh_caps": {
+      "copies": 1,
+      "protected_fresh": 2,
+      "protected_BP_targets": 2,
+      "unprotected_fresh": 0,
+      "all_fresh": 2,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 20,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 312,
+      "selected": 51
+    },
+    "existing_frozen_310P": {
+      "copies": 1,
+      "protected_fresh": 1,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 1,
+      "promotions": 1,
+      "old_filled_targets": 1,
+      "certificate_links": 20,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 310,
+      "selected": 51
+    },
+    "frozen_caps_1": {
+      "copies": 1,
+      "protected_fresh": 2,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 2,
+      "promotions": 1,
+      "old_filled_targets": 2,
+      "certificate_links": 21,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 312,
+      "selected": 52
+    },
+    "frozen_caps_2": {
+      "copies": 2,
+      "protected_fresh": 4,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 4,
+      "promotions": 2,
+      "old_filled_targets": 4,
+      "certificate_links": 42,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 4,
+      "frozen": true,
+      "endpoints": 628,
+      "selected": 104
+    },
+    "frozen_caps_3": {
+      "copies": 3,
+      "protected_fresh": 6,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 6,
+      "promotions": 3,
+      "old_filled_targets": 6,
+      "certificate_links": 63,
+      "assigned_units": 15,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 6,
+      "frozen": true,
+      "endpoints": 944,
+      "selected": 156
+    },
+    "frozen_caps_4": {
+      "copies": 4,
+      "protected_fresh": 8,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 8,
+      "promotions": 4,
+      "old_filled_targets": 8,
+      "certificate_links": 84,
+      "assigned_units": 20,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 8,
+      "frozen": true,
+      "endpoints": 1260,
+      "selected": 208
+    },
+    "frozen_caps_5": {
+      "copies": 5,
+      "protected_fresh": 10,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 10,
+      "promotions": 5,
+      "old_filled_targets": 10,
+      "certificate_links": 105,
+      "assigned_units": 25,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 10,
+      "frozen": true,
+      "endpoints": 1576,
+      "selected": 260
+    },
+    "frozen_caps_6": {
+      "copies": 6,
+      "protected_fresh": 12,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 12,
+      "promotions": 6,
+      "old_filled_targets": 12,
+      "certificate_links": 126,
+      "assigned_units": 30,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 12,
+      "frozen": true,
+      "endpoints": 1892,
+      "selected": 312
+    },
+    "frozen_caps_7": {
+      "copies": 7,
+      "protected_fresh": 14,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 14,
+      "promotions": 7,
+      "old_filled_targets": 14,
+      "certificate_links": 147,
+      "assigned_units": 35,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 14,
+      "frozen": true,
+      "endpoints": 2208,
+      "selected": 364
+    },
+    "frozen_caps_8": {
+      "copies": 8,
+      "protected_fresh": 16,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 16,
+      "promotions": 8,
+      "old_filled_targets": 16,
+      "certificate_links": 168,
+      "assigned_units": 40,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 16,
+      "frozen": true,
+      "endpoints": 2524,
+      "selected": 416
+    },
+    "unprotected_(1, 1)": {
+      "copies": 1,
+      "protected_fresh": 2,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 2,
+      "all_fresh": 4,
+      "promotions": 1,
+      "old_filled_targets": 2,
+      "certificate_links": 21,
+      "assigned_units": 5,
+      "exact_strategy_loss": 1,
+      "ordinary_deficit": 1,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 316,
+      "selected": 58
+    },
+    "unprotected_(1, 2)": {
+      "copies": 1,
+      "protected_fresh": 2,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 4,
+      "all_fresh": 6,
+      "promotions": 1,
+      "old_filled_targets": 2,
+      "certificate_links": 21,
+      "assigned_units": 5,
+      "exact_strategy_loss": 2,
+      "ordinary_deficit": 2,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 320,
+      "selected": 64
+    },
+    "unprotected_(1, 4)": {
+      "copies": 1,
+      "protected_fresh": 2,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 8,
+      "all_fresh": 10,
+      "promotions": 1,
+      "old_filled_targets": 2,
+      "certificate_links": 21,
+      "assigned_units": 5,
+      "exact_strategy_loss": 4,
+      "ordinary_deficit": 4,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 328,
+      "selected": 76
+    },
+    "unprotected_(2, 1)": {
+      "copies": 2,
+      "protected_fresh": 4,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 2,
+      "all_fresh": 6,
+      "promotions": 2,
+      "old_filled_targets": 4,
+      "certificate_links": 42,
+      "assigned_units": 10,
+      "exact_strategy_loss": 1,
+      "ordinary_deficit": 1,
+      "ordinary_cost": 4,
+      "frozen": true,
+      "endpoints": 632,
+      "selected": 110
+    },
+    "unprotected_(2, 2)": {
+      "copies": 2,
+      "protected_fresh": 4,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 4,
+      "all_fresh": 8,
+      "promotions": 2,
+      "old_filled_targets": 4,
+      "certificate_links": 42,
+      "assigned_units": 10,
+      "exact_strategy_loss": 2,
+      "ordinary_deficit": 2,
+      "ordinary_cost": 4,
+      "frozen": true,
+      "endpoints": 636,
+      "selected": 116
+    },
+    "unprotected_(2, 4)": {
+      "copies": 2,
+      "protected_fresh": 4,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 8,
+      "all_fresh": 12,
+      "promotions": 2,
+      "old_filled_targets": 4,
+      "certificate_links": 42,
+      "assigned_units": 10,
+      "exact_strategy_loss": 4,
+      "ordinary_deficit": 4,
+      "ordinary_cost": 4,
+      "frozen": true,
+      "endpoints": 644,
+      "selected": 128
+    },
+    "unprotected_(3, 1)": {
+      "copies": 3,
+      "protected_fresh": 6,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 2,
+      "all_fresh": 8,
+      "promotions": 3,
+      "old_filled_targets": 6,
+      "certificate_links": 63,
+      "assigned_units": 15,
+      "exact_strategy_loss": 1,
+      "ordinary_deficit": 1,
+      "ordinary_cost": 6,
+      "frozen": true,
+      "endpoints": 948,
+      "selected": 162
+    },
+    "unprotected_(3, 2)": {
+      "copies": 3,
+      "protected_fresh": 6,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 4,
+      "all_fresh": 10,
+      "promotions": 3,
+      "old_filled_targets": 6,
+      "certificate_links": 63,
+      "assigned_units": 15,
+      "exact_strategy_loss": 2,
+      "ordinary_deficit": 2,
+      "ordinary_cost": 6,
+      "frozen": true,
+      "endpoints": 952,
+      "selected": 168
+    },
+    "unprotected_(3, 4)": {
+      "copies": 3,
+      "protected_fresh": 6,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 8,
+      "all_fresh": 14,
+      "promotions": 3,
+      "old_filled_targets": 6,
+      "certificate_links": 63,
+      "assigned_units": 15,
+      "exact_strategy_loss": 4,
+      "ordinary_deficit": 4,
+      "ordinary_cost": 6,
+      "frozen": true,
+      "endpoints": 960,
+      "selected": 180
+    },
+    "actual_old_pool_loss_repaired": {
+      "before": {
+        "copies": 1,
+        "promoted_retained_tips": 0,
+        "fresh_endpoint_tips": 11,
+        "covered_tips": 23,
+        "filled_candidates": 0,
+        "surviving_units": 5,
+        "alpha": 5,
+        "beta": 6,
+        "exact_certificate_loss": 1,
+        "ordinary_deficit": 1,
+        "ordinary_cost": 2,
+        "frozen": false,
+        "selected": 60,
+        "endpoints": 328,
+        "full_pool_deficit": 0
+      },
+      "after": {
+        "copies": 1,
+        "protected_fresh": 11,
+        "protected_BP_targets": 5,
+        "unprotected_fresh": 0,
+        "all_fresh": 11,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 23,
+        "assigned_units": 11,
+        "exact_strategy_loss": 0,
+        "ordinary_deficit": 0,
+        "ordinary_cost": 2,
+        "frozen": false,
+        "endpoints": 328,
+        "selected": 60
+      }
+    }
+  },
+  "scope": "Written arbitrary-extension theorem; 27 conditional fresh-tip sites per actual base copy, distinct BP targets and distinct available original units; arbitrary T/P additions and rematching; only unprotected fresh tips count as holes. Universal compensation and 5/6 remain open."
+}
