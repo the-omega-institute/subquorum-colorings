@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "command": "lean SubQuorum/OccupancyCertificate.lean",
+  "exit_code": 0,
+  "machine": "user-authorized local Mac",
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percentage": 56,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "audited_declarations": [
+    "SubQuorum.OccupancyCertificate.free_tip_has_interval",
+    "SubQuorum.OccupancyCertificate.surviving_interval_injection",
+    "SubQuorum.OccupancyCertificate.full_payment_ledger",
+    "SubQuorum.OccupancyCertificate.actual_tip_inventory",
+    "SubQuorum.OccupancyCertificate.actual_occupation_certificate",
+    "SubQuorum.OccupancyCertificate.actual_five_units_eighteen_links",
+    "SubQuorum.OccupancyCertificate.actual_five_disjoint_obstructions"
+  ],
+  "axioms_union": [
+    "propext",
+    "Quot.sound"
+  ],
+  "axiom_free_declarations": [
+    "free_tip_has_interval",
+    "surviving_interval_injection"
+  ],
+  "no_sorry_native": true,
+  "scope": "General free-tip interval consequence, original-unit injection and payment ledger; actual23TP occupation-only certificate with18physical BP links/five different original-unit witnesses; five disjoint physical obstruction neighborhoods. Original interval forest/eligibility adapter, arbitrary-M/PP decomposition, cancellation and ordinary normal-form lift are written/Python, not end-to-end Lean all-rematching allocation. Earlier308P freezing files unchanged and not rerun."
+}

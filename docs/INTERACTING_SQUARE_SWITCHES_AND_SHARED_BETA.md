@@ -281,3 +281,12 @@ The next substantive question is how arbitrary interacting rematching
 changes the joint cut, including gates on longer shared chains. Full
 compensation from freezing and the resulting universal 5/6 improvement
 remain open; separate copies or a finite switch scan do not settle them.
+
+Continuation: [the fixed occupation certificate](OCCUPANCY_CERTIFICATE_AND_ALL_REMATCHINGS.md)
+now settles ALL actual perfect matchings on this same T/P geometry, frozen
+or not. Five specified original intervals and18fixed physical BP links
+cover all23TPs before M is chosen, giving full ordinary compensation for any
+matching. The restricted-pool entrance obstructions here remain valid: those
+pools omit some of the five units. Further rematching on this fixed occupation
+cannot produce an unrestricted compensation counterexample; other occupations
+or alterations of the protected physical witnesses require separate analysis.

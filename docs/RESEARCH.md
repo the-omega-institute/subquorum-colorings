@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [occupation certificate for ALL rematchings](OCCUPANCY_CERTIFICATE_AND_ALL_REMATCHINGS.md)
+settles EVERY actual perfect matching of the fixed308P/49T board, with no
+freezing or square-flip-connectivity assumption. A single occupation-only
+23TP certificate assigns18different physical BP targets and5different original
+interval units at(6,12),(7,10),(9,10),(12,7),(12,16). Keeping just these units
+and original betas always gives Vord=Vfull=a(M), at most18links, even as
+alpha/beta counts change. Five disjoint Hall-deficient physical tip groups
+prove5units optimal for this ALL-TP cover scheme, not for payment itself.
+2745matching models include309frozen/2436feasible nonfrozen;160independent
+primitive packs and7scoped Lean audits pass. Thus this fixed occupation is
+no longer a candidate for an uncompensated arbitrary rematching. New occupied
+sites, other occupations and the universal5/6 target remain open.
+
 25 October: [interacting square switches and shared-beta cuts](INTERACTING_SQUARE_SWITCHES_AND_SHARED_BETA.md)
 settles a new SAME-board two-switch frozen example and a general joint repair
 lemma. Fixed T/P, interval identities and counts persist; beta-only V falls4
