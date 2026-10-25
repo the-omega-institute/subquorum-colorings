@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_primitive_optima": 19,
+    "arbitrary_unsealed_T_boards": 361,
+    "positive_seal_defect_boards": 360,
+    "positive_central_beta_boards": 268
+  },
+  "records": [
+    {
+      "w": 8,
+      "k": 1,
+      "ell": 3,
+      "alpha": 0,
+      "central_beta": 0,
+      "deficit": 0,
+      "seal_defect": 2,
+      "unfrozen_designated_leaves": 2
+    },
+    {
+      "w": 8,
+      "k": 2,
+      "ell": 11,
+      "alpha": 0,
+      "central_beta": 0,
+      "deficit": 0,
+      "seal_defect": 2,
+      "unfrozen_designated_leaves": 2
+    },
+    {
+      "w": 8,
+      "k": 3,
+      "ell": 13,
+      "alpha": 1,
+      "central_beta": 0,
+      "deficit": 0,
+      "seal_defect": 5,
+      "unfrozen_designated_leaves": 5
+    },
+    {
+      "w": 8,
+      "k": 5,
+      "ell": 25,
+      "alpha": 0,
+      "central_beta": 3,
+      "deficit": 0,
+      "seal_defect": 9,
+      "unfrozen_designated_leaves": 8
+    },
+    {
+      "w": 10,
+      "k": 1,
+      "ell": 5,
+      "alpha": 1,
+      "central_beta": 0,
+      "deficit": 0,
+      "seal_defect": 1,
+      "unfrozen_designated_leaves": 1
+    },
+    {
+      "w": 10,
+      "k": 2,
+      "ell": 10,
+      "alpha": 0,
+      "central_beta": 1,
+      "deficit": 0,
+      "seal_defect": 1,
+      "unfrozen_designated_leaves": 1
+    },
+    {
+      "w": 10,
+      "k": 3,
+      "ell": 19,
+      "alpha": 2,
+      "central_beta": 1,
+      "deficit": 0,
+      "seal_defect": 5,
+      "unfrozen_designated_leaves": 5
+    },
+    {
+      "w": 10,
+      "k": 5,
+      "ell": 27,
+      "alpha": 1,
+      "central_beta": 2,
+      "deficit": 0,
+      "seal_defect": 10,
+      "unfrozen_designated_leaves": 9
+    },
+    {
+      "w": 14,
+      "k": 1,
+      "ell": 10,
+      "alpha": 0,
+      "central_beta": 1,
+      "deficit": 0,
+      "seal_defect": 2,
+      "unfrozen_designated_leaves": 2
+    },
+    {
+      "w": 14,
+      "k": 2,
+      "ell": 19,
+      "alpha": 0,
+      "central_beta": 0,
+      "deficit": 0,
+      "seal_defect": 4,
+      "unfrozen_designated_leaves": 2
+    },
+    {
+      "w": 14,
+      "k": 3,
+      "ell": 20,
+      "alpha": 1,
+      "central_beta": 1,
+      "deficit": 0,
+      "seal_defect": 5,
+      "unfrozen_designated_leaves": 5
+    },
+    {
+      "w": 14,
+      "k": 5,
+      "ell": 42,
+      "alpha": 0,
+      "central_beta": 1,
+      "deficit": 0,
+      "seal_defect": 8,
+      "unfrozen_designated_leaves": 8
+    }
+  ],
+  "excluded_frozen_control": {
+    "w": 8,
+    "k": 1,
+    "ell": 0,
+    "alpha": 0,
+    "central_beta": 1,
+    "deficit": 0,
+    "seal_defect": 2,
+    "unfrozen_designated_leaves": 2
+  },
+  "theorem": "All final feasible T on existing adjacent-module P,M with uniform horizontal N, with NO freezing or seal hypothesis: ell+D+E>=k+central_beta. E counts missing outer column3 partners plus terminal column2 pairs with no selection; U<=E<=2U where U is unfrozen designated column3 leaves. Thus ell+D+2U>=k+central_beta. The frozen theorem is E=0.",
+  "proof": "Same written disjoint cover, exact source-tile and gap corrections, and complete full-network sink injection; enumeration only checks adapters."
+}

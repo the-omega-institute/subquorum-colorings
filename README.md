@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact frozen repair frontier under arbitrary selection exchange](docs/FROZEN_SELECTION_REPAIR_FRONTIER.md):
+for the all-width adjacent-module family, every feasible T freezing the two
+column3 leaves per module satisfies ell+D>=k+central_beta. Missing central
+partners, terminal beta credits and original terminal intervals charge disjoint
+physical cover members. The fully frozen optimum under D<=d is exactly
+tau-k+d for 0<=d<=k; fixing central alpha/beta counts a,b sharpens it to
+tau-k-b+min(a,d). Every frozen true maximum has D=k; arbitrary reselection
+cannot avoid a net loss of k points to repair this horizontal decomposition.
+Vertical bands repair the same maximum without loss. Written general proofs,
+physical checks and scoped Lean audits accompany the result; universal5/6
+remains open.
+
 New [permanent links, the sharp completion budget and frozen birth circuits](docs/MONOTONE_COMPLETION_DEFICIT_AND_BIRTH_CIRCUITS.md):
 for arbitrary fixed physical mixed-direction bands, feasible T additions retain
 every old TP--BP band link. Exact full deficit is monotone and grows by at most

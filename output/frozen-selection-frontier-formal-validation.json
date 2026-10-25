@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T21:13:25.675935+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "30332 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+    ],
+    "memory_free_percentage": "36%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "30332 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.FrozenSelectionFrontier.leaf_forces_seals' does not depend on any axioms",
+    "'SubQuorum.FrozenSelectionFrontier.central_identity' does not depend on any axioms",
+    "'SubQuorum.FrozenSelectionFrontier.central_list_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.disjoint_loss_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.coupled_frontier' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.slack_frontier' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.repair_net_loss' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.pareto_upper' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.every_maximum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.sharp_attainer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.exact_frontier' does not depend on any axioms",
+    "'SubQuorum.FrozenSelectionFrontier.inventory_upper' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.inventory_attainer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.unsealed_coupling' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.unfrozen_leaf_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.same_size_repair_unfreezes_leaves' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenSelectionFrontier.walk_preserves_module' does not depend on any axioms",
+    "'SubQuorum.FrozenSelectionFrontier.reached_central_is_source' does not depend on any axioms",
+    "'SubQuorum.FrozenSelectionFrontier.central_beta_unreachable' does not depend on any axioms"
+  ],
+  "scope": "Leaf witnesses force the two permissible seals; exact central-tip identity and unbounded list induction; disjoint nonnegative loss arithmetic; cover/payment coupled frontier; slack form; arbitrary-exchange net-loss lower bound; Pareto upper bound; every sealed maximum has k alphas and deficit k; sharp attainer arithmetic and conditional maximum packaging; complete fixed-central-alpha/beta inventory upper bound and max/min attainer arithmetic; arbitrary unsealed-T boundary-defect coupling and necessary count of unfrozen designated leaves; arbitrary-length owner-walk module invariance, uniqueness of reached central body, and central beta unreachability.",
+  "not_formalized": [
+    "Coordinate classification of bodies and leaf witness exclusion, validity and disjointness of the geometric cover charges, full-network source-route closure and resource injection, and uniform geometric freezing of all attainers; these have written proofs and executable checks."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

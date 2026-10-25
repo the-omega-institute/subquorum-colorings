@@ -1,5 +1,7 @@
 # Permanent band links, a joint completion budget and frozen birth circuits
 
+Follow-up: [the exact frozen selection-repair frontier](FROZEN_SELECTION_REPAIR_FRONTIER.md) proves a sharp net-loss bound under arbitrary final T, including deletions and replacement additions, for the adjacent-module family with horizontal bands.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 The [preceding source-birth theorem](DEGREE_CHANGING_BENT_COMPLETIONS.md)
