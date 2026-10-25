@@ -200,6 +200,20 @@ each completion, so the statement also covers all frozen retaining saturation
 extensions. Deleting T reverses the deficit inequality, but can destroy
 freezing; no freezing guarantee for arbitrary deletions follows.
 
+**Exchange corollary and necessary repair cost.** For ANY two feasible selected
+sets T0,T1 with the same P,M,N, not necessarily nested, let d=|T0 minus T1|
+and e=|T1 minus T0|. Apply (5) to their common feasible intersection I and
+each endpoint. Since D(I)<=D(T0),D(T1), and D(Ti)-D(I) is at most its number
+of additions, we obtain
+
+    -d <= D(T1)-D(T0) <= e.                              (6a)
+
+Thus ANY selection exchange that fully repairs an old deficit D(T0) must
+remove at least D(T0) old selections, regardless of how many new selections
+it adds. This is a necessary cost, not a promise that such a deletion set
+exists or preserves freezing. Nonmonotone exchanges of T remain a possible
+repair mechanism and are not excluded by completion monotonicity.
+
 ## 4. A common frozen family with three independent kinds of event
 
 Use the existing configuration(W,k), even W>=8, k>=1, on the
@@ -418,9 +432,11 @@ model_unavailable@selecting_model, returning no answer. The
 records that limitation; it is not an acceptance or rejection of the theorem.
 Submitted manuscripts and correspondence are unchanged.
 
-The next geometric question is which allowed changes of P or auxiliary N can
-repair a persistent fixed-partition deficit while charging each original
-resource only once. Adding T alone is now excluded as a repair mechanism in
-the entire fixed-P,M,N model, rather than only in previously studied families.
+The next geometric question is which nonmonotone T exchanges, or allowed
+changes of P or auxiliary N, can repair a persistent deficit while charging
+each original resource only once and preserving the required freezing.
+Adding T alone is now excluded as a repair mechanism in the entire fixed-P,M,N
+model, rather than only in previously studied families; a successful T exchange
+has the necessary deletion budget just proved.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
