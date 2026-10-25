@@ -1,0 +1,11 @@
+{
+  "scope": "For every n>=1, start from the retained 28x24n PP-connected base B_n and add this patch at each of its n-1 seams, translating columns by24i.",
+  "new_selected_per_seam": [[8,23],[11,23],[9,22],[10,24]],
+  "new_matching_per_seam": [[[9,23],[10,23]]],
+  "new_endpoint_freezing_witnesses": [
+    {"endpoint":[9,23],"selected_neighbors":[[8,23],[9,22]]},
+    {"endpoint":[10,23],"selected_neighbors":[[11,23],[10,24]]}
+  ],
+  "one_new_unit_per_seam": {"band":4,"first":24,"last":24},
+  "counts": {"P":"314n-6","T":"53n-4","alpha":"5n-1","old_conditional_pool_deficit":"n-1","deficit_with_J_new_units":"n-1-card(J)"}
+}

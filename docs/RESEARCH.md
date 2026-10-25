@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [seam-completed compensation](SEAM_RESIDUAL_COMPENSATION.md).
+For EVERY n>=1 on the fixed28-by-24n connected-copy rectangle, arbitrary
+retained-T0/P0 extensions and arbitrary actual M are fully ordinarily
+compensated if all final P have occupied degree>=3; frozen extensions are
+included. Nonbottom seam tips get injective interval/BP assignments; a
+bounded bottom BT corridor protects the even tip; all remaining relevant
+alpha holes are odd. No original interval is assigned twice. A frozen
+all-n family has old restricted deficit n-1 and exact deficit n-1-card(J)
+when J distinct specified new units are opened.408 models (48frozen,
+360degree3nonfrozen),368rematches,40reserve profiles,12independent primitive
+comparisons in two runs and10new scoped Lean audits pass. This extends the
+single-copy result; universal grids, larger heights and numerical5/6 remain
+open.
+
 25 October: [residual fresh-tip domains](RESIDUAL_FRESH_DOMAINS.md).
 On the SAME 28-by-24 rectangle, every feasible extension retaining the old
 49T/308P, with arbitrary new T/P and arbitrary actual M, loses at most one

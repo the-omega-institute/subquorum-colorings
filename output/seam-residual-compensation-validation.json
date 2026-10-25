@@ -1,0 +1,946 @@
+{
+  "status": "PASS",
+  "counts": {
+    "cap_independent_rank_checks": 8,
+    "models": 408,
+    "frozen": 48,
+    "physical_odd_paths": 9603,
+    "seam_assignments": 1569,
+    "bottom_even_assignments": 78,
+    "models_with_odd_final_alpha_holes": 26,
+    "max_relevant_odd_holes": 1,
+    "old_assignments": 19008,
+    "conditional_assignments": 6346,
+    "independent_primitive_comparisons": 6,
+    "strict_restricted_pool_repairs": 7,
+    "degree_three_nonfrozen": 360,
+    "actual_rematches": 368,
+    "seam_unit_assignments": 1374,
+    "seam_BP_assignments": 195,
+    "solver_discovered_models_rechecked_without_solver": 24,
+    "bottom_even_BP_assignments": 13,
+    "bottom_even_unit_assignments": 65,
+    "bottom_unit_first_residue_13": 13,
+    "bottom_unit_first_residue_12": 26,
+    "bottom_unit_first_residue_11": 26
+  },
+  "audit": {
+    "footprints": [
+      {
+        "copies": 1,
+        "unprotected_candidates": 39,
+        "local_candidates": 39,
+        "seam_candidates": 0
+      },
+      {
+        "copies": 2,
+        "unprotected_candidates": 106,
+        "local_candidates": 78,
+        "seam_candidates": 28
+      },
+      {
+        "copies": 3,
+        "unprotected_candidates": 173,
+        "local_candidates": 117,
+        "seam_candidates": 56
+      },
+      {
+        "copies": 4,
+        "unprotected_candidates": 240,
+        "local_candidates": 156,
+        "seam_candidates": 84
+      },
+      {
+        "copies": 5,
+        "unprotected_candidates": 307,
+        "local_candidates": 195,
+        "seam_candidates": 112
+      },
+      {
+        "copies": 6,
+        "unprotected_candidates": 374,
+        "local_candidates": 234,
+        "seam_candidates": 140
+      }
+    ],
+    "seam_literal": [
+      [
+        8,
+        23
+      ],
+      [
+        8,
+        24
+      ],
+      [
+        9,
+        23
+      ],
+      [
+        9,
+        24
+      ],
+      [
+        10,
+        23
+      ],
+      [
+        10,
+        24
+      ],
+      [
+        11,
+        23
+      ],
+      [
+        11,
+        24
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        12,
+        24
+      ],
+      [
+        13,
+        23
+      ],
+      [
+        13,
+        24
+      ],
+      [
+        14,
+        23
+      ],
+      [
+        15,
+        23
+      ],
+      [
+        16,
+        23
+      ],
+      [
+        17,
+        23
+      ],
+      [
+        18,
+        23
+      ],
+      [
+        19,
+        23
+      ],
+      [
+        20,
+        23
+      ],
+      [
+        21,
+        23
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        22,
+        24
+      ],
+      [
+        23,
+        23
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        26,
+        23
+      ],
+      [
+        26,
+        24
+      ],
+      [
+        27,
+        23
+      ],
+      [
+        27,
+        24
+      ]
+    ],
+    "guard_triples": [
+      [
+        [
+          25,
+          1
+        ],
+        [
+          25,
+          2
+        ],
+        [
+          24,
+          2
+        ]
+      ],
+      [
+        [
+          26,
+          2
+        ],
+        [
+          25,
+          2
+        ],
+        [
+          24,
+          2
+        ]
+      ],
+      [
+        [
+          25,
+          12
+        ],
+        [
+          25,
+          11
+        ],
+        [
+          24,
+          11
+        ]
+      ],
+      [
+        [
+          26,
+          11
+        ],
+        [
+          25,
+          11
+        ],
+        [
+          24,
+          11
+        ]
+      ],
+      [
+        [
+          25,
+          16
+        ],
+        [
+          25,
+          17
+        ],
+        [
+          24,
+          17
+        ]
+      ],
+      [
+        [
+          26,
+          17
+        ],
+        [
+          25,
+          17
+        ],
+        [
+          24,
+          17
+        ]
+      ],
+      [
+        [
+          25,
+          22
+        ],
+        [
+          25,
+          21
+        ],
+        [
+          24,
+          21
+        ]
+      ],
+      [
+        [
+          26,
+          21
+        ],
+        [
+          25,
+          21
+        ],
+        [
+          24,
+          21
+        ]
+      ],
+      [
+        [
+          24,
+          23
+        ],
+        [
+          24,
+          22
+        ],
+        [
+          24,
+          21
+        ]
+      ],
+      [
+        [
+          25,
+          25
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          24,
+          26
+        ]
+      ],
+      [
+        [
+          24,
+          24
+        ],
+        [
+          24,
+          25
+        ],
+        [
+          24,
+          26
+        ]
+      ],
+      [
+        [
+          26,
+          26
+        ],
+        [
+          25,
+          26
+        ],
+        [
+          24,
+          26
+        ]
+      ]
+    ]
+  },
+  "named": {
+    "caps_1": {
+      "old_conditional": {
+        "copies": 1,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 0,
+        "all_fresh": 0,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 18,
+        "assigned_units": 5,
+        "exact_strategy_loss": 0,
+        "ordinary_deficit": 0,
+        "ordinary_cost": 2,
+        "frozen": true,
+        "endpoints": 308,
+        "selected": 49
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 0,
+        "bottom_even": 0,
+        "physical_paths": 7,
+        "assigned": 23,
+        "units": 5,
+        "links": 18,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_1": {
+      "holes": 2,
+      "relevant_odd_holes": 0,
+      "seam_tips": 0,
+      "bottom_even": 0,
+      "physical_paths": 9,
+      "assigned": 23,
+      "units": 5,
+      "links": 18,
+      "frozen": true
+    },
+    "caps_2": {
+      "old_conditional": {
+        "copies": 2,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 2,
+        "all_fresh": 2,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 36,
+        "assigned_units": 10,
+        "exact_strategy_loss": 1,
+        "ordinary_deficit": 1,
+        "ordinary_cost": 4,
+        "frozen": true,
+        "endpoints": 622,
+        "selected": 102
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 2,
+        "bottom_even": 0,
+        "physical_paths": 15,
+        "assigned": 48,
+        "units": 12,
+        "links": 36,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_2": {
+      "holes": 4,
+      "relevant_odd_holes": 0,
+      "seam_tips": 2,
+      "bottom_even": 0,
+      "physical_paths": 19,
+      "assigned": 48,
+      "units": 12,
+      "links": 36,
+      "frozen": true
+    },
+    "caps_3": {
+      "old_conditional": {
+        "copies": 3,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 4,
+        "all_fresh": 4,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 54,
+        "assigned_units": 15,
+        "exact_strategy_loss": 2,
+        "ordinary_deficit": 2,
+        "ordinary_cost": 6,
+        "frozen": true,
+        "endpoints": 936,
+        "selected": 155
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 4,
+        "bottom_even": 0,
+        "physical_paths": 23,
+        "assigned": 73,
+        "units": 19,
+        "links": 54,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_3": {
+      "holes": 6,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 29,
+      "assigned": 73,
+      "units": 19,
+      "links": 54,
+      "frozen": true
+    },
+    "caps_4": {
+      "old_conditional": {
+        "copies": 4,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 6,
+        "all_fresh": 6,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 72,
+        "assigned_units": 20,
+        "exact_strategy_loss": 3,
+        "ordinary_deficit": 3,
+        "ordinary_cost": 8,
+        "frozen": true,
+        "endpoints": 1250,
+        "selected": 208
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 6,
+        "bottom_even": 0,
+        "physical_paths": 31,
+        "assigned": 98,
+        "units": 26,
+        "links": 72,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_4": {
+      "holes": 8,
+      "relevant_odd_holes": 0,
+      "seam_tips": 6,
+      "bottom_even": 0,
+      "physical_paths": 39,
+      "assigned": 98,
+      "units": 26,
+      "links": 72,
+      "frozen": true
+    },
+    "caps_5": {
+      "old_conditional": {
+        "copies": 5,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 8,
+        "all_fresh": 8,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 90,
+        "assigned_units": 25,
+        "exact_strategy_loss": 4,
+        "ordinary_deficit": 4,
+        "ordinary_cost": 10,
+        "frozen": true,
+        "endpoints": 1564,
+        "selected": 261
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 8,
+        "bottom_even": 0,
+        "physical_paths": 39,
+        "assigned": 123,
+        "units": 33,
+        "links": 90,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_5": {
+      "holes": 10,
+      "relevant_odd_holes": 0,
+      "seam_tips": 8,
+      "bottom_even": 0,
+      "physical_paths": 49,
+      "assigned": 123,
+      "units": 33,
+      "links": 90,
+      "frozen": true
+    },
+    "caps_6": {
+      "old_conditional": {
+        "copies": 6,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 10,
+        "all_fresh": 10,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 108,
+        "assigned_units": 30,
+        "exact_strategy_loss": 5,
+        "ordinary_deficit": 5,
+        "ordinary_cost": 12,
+        "frozen": true,
+        "endpoints": 1878,
+        "selected": 314
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 10,
+        "bottom_even": 0,
+        "physical_paths": 47,
+        "assigned": 148,
+        "units": 40,
+        "links": 108,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_6": {
+      "holes": 12,
+      "relevant_odd_holes": 0,
+      "seam_tips": 10,
+      "bottom_even": 0,
+      "physical_paths": 59,
+      "assigned": 148,
+      "units": 40,
+      "links": 108,
+      "frozen": true
+    },
+    "caps_7": {
+      "old_conditional": {
+        "copies": 7,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 12,
+        "all_fresh": 12,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 126,
+        "assigned_units": 35,
+        "exact_strategy_loss": 6,
+        "ordinary_deficit": 6,
+        "ordinary_cost": 14,
+        "frozen": true,
+        "endpoints": 2192,
+        "selected": 367
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 12,
+        "bottom_even": 0,
+        "physical_paths": 55,
+        "assigned": 173,
+        "units": 47,
+        "links": 126,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_7": {
+      "holes": 14,
+      "relevant_odd_holes": 0,
+      "seam_tips": 12,
+      "bottom_even": 0,
+      "physical_paths": 69,
+      "assigned": 173,
+      "units": 47,
+      "links": 126,
+      "frozen": true
+    },
+    "caps_8": {
+      "old_conditional": {
+        "copies": 8,
+        "protected_fresh": 0,
+        "protected_BP_targets": 0,
+        "unprotected_fresh": 14,
+        "all_fresh": 14,
+        "promotions": 0,
+        "old_filled_targets": 0,
+        "certificate_links": 144,
+        "assigned_units": 40,
+        "exact_strategy_loss": 7,
+        "ordinary_deficit": 7,
+        "ordinary_cost": 16,
+        "frozen": true,
+        "endpoints": 2506,
+        "selected": 420
+      },
+      "new_certificate": {
+        "holes": 0,
+        "relevant_odd_holes": 0,
+        "seam_tips": 14,
+        "bottom_even": 0,
+        "physical_paths": 63,
+        "assigned": 198,
+        "units": 54,
+        "links": 144,
+        "frozen": true
+      }
+    },
+    "caps_plus_bottom_8": {
+      "holes": 16,
+      "relevant_odd_holes": 0,
+      "seam_tips": 14,
+      "bottom_even": 0,
+      "physical_paths": 79,
+      "assigned": 198,
+      "units": 54,
+      "links": 144,
+      "frozen": true
+    },
+    "tip_(9, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 2,
+      "bottom_even": 0,
+      "physical_paths": 17,
+      "assigned": 50,
+      "units": 8,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(10, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 1,
+      "bottom_even": 0,
+      "physical_paths": 17,
+      "assigned": 51,
+      "units": 9,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(11, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 1,
+      "bottom_even": 0,
+      "physical_paths": 14,
+      "assigned": 49,
+      "units": 8,
+      "links": 41,
+      "frozen": false
+    },
+    "tip_(12, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 2,
+      "bottom_even": 0,
+      "physical_paths": 17,
+      "assigned": 50,
+      "units": 9,
+      "links": 41,
+      "frozen": false
+    },
+    "tip_(13, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 2,
+      "bottom_even": 0,
+      "physical_paths": 15,
+      "assigned": 52,
+      "units": 9,
+      "links": 43,
+      "frozen": false
+    },
+    "tip_(14, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 1,
+      "bottom_even": 0,
+      "physical_paths": 21,
+      "assigned": 52,
+      "units": 10,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(21, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 3,
+      "bottom_even": 0,
+      "physical_paths": 22,
+      "assigned": 54,
+      "units": 12,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(22, 23)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 3,
+      "bottom_even": 0,
+      "physical_paths": 22,
+      "assigned": 54,
+      "units": 12,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(9, 24)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 21,
+      "assigned": 55,
+      "units": 12,
+      "links": 43,
+      "frozen": false
+    },
+    "tip_(10, 24)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 6,
+      "bottom_even": 0,
+      "physical_paths": 21,
+      "assigned": 57,
+      "units": 14,
+      "links": 43,
+      "frozen": false
+    },
+    "tip_(11, 24)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 21,
+      "assigned": 55,
+      "units": 13,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(12, 24)": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 19,
+      "assigned": 55,
+      "units": 13,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(26, 23)": {
+      "holes": 1,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 20,
+      "assigned": 55,
+      "units": 13,
+      "links": 42,
+      "frozen": false
+    },
+    "tip_(26, 24)": {
+      "holes": 1,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 20,
+      "assigned": 55,
+      "units": 13,
+      "links": 42,
+      "frozen": false
+    },
+    "noBB_seam": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 0,
+      "physical_paths": 18,
+      "assigned": 55,
+      "units": 12,
+      "links": 43,
+      "frozen": false
+    },
+    "bottom_BP": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 1,
+      "physical_paths": 18,
+      "assigned": 55,
+      "units": 11,
+      "links": 44,
+      "frozen": false
+    },
+    "bottom_BB13": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 1,
+      "physical_paths": 19,
+      "assigned": 55,
+      "units": 12,
+      "links": 43,
+      "frozen": false
+    },
+    "bottom_BT_BB12": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 1,
+      "physical_paths": 19,
+      "assigned": 55,
+      "units": 12,
+      "links": 43,
+      "frozen": false
+    },
+    "bottom_BT_BT_BB11": {
+      "holes": 0,
+      "relevant_odd_holes": 0,
+      "seam_tips": 4,
+      "bottom_even": 1,
+      "physical_paths": 19,
+      "assigned": 55,
+      "units": 12,
+      "links": 43,
+      "frozen": false
+    },
+    "mixed_bottom_colors": {
+      "holes": 1,
+      "relevant_odd_holes": 0,
+      "seam_tips": 1,
+      "bottom_even": 1,
+      "physical_paths": 16,
+      "assigned": 48,
+      "units": 10,
+      "links": 38,
+      "frozen": false
+    },
+    "two_odd_bottoms": {
+      "holes": 3,
+      "relevant_odd_holes": 0,
+      "seam_tips": 1,
+      "bottom_even": 0,
+      "physical_paths": 16,
+      "assigned": 47,
+      "units": 8,
+      "links": 39,
+      "frozen": false
+    },
+    "odd_and_seam": {
+      "holes": 3,
+      "relevant_odd_holes": 0,
+      "seam_tips": 2,
+      "bottom_even": 0,
+      "physical_paths": 17,
+      "assigned": 48,
+      "units": 7,
+      "links": 41,
+      "frozen": false
+    },
+    "double_BT_and_odd": {
+      "holes": 2,
+      "relevant_odd_holes": 1,
+      "seam_tips": 2,
+      "bottom_even": 1,
+      "physical_paths": 19,
+      "assigned": 50,
+      "units": 7,
+      "links": 43,
+      "frozen": false
+    },
+    "opposite_copies_odd": {
+      "holes": 3,
+      "relevant_odd_holes": 1,
+      "seam_tips": 2,
+      "bottom_even": 0,
+      "physical_paths": 19,
+      "assigned": 49,
+      "units": 6,
+      "links": 43,
+      "frozen": false
+    }
+  },
+  "scope": "Written arbitrary-n theorem on SAME28x24n rectangle retaining old T/P and PP seams: every feasible extension with all final P occupied-degree>=3 has full ordinary compensation, arbitrary actual M. Completely frozen extensions included. New nonbottom seam assignments and bottom-even protection are injective in original units/BPs; only odd relevant alpha holes remain. Universal grids, larger rectangles and numerical5/6 improvement remain open."
+}

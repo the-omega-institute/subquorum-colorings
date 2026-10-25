@@ -317,3 +317,13 @@ new opposite-color hole pairs require additional distinct resources. Such
 resources must be counted jointly across components, with their original
 identities retained. The universal mixed-direction problem and the numerical
 5/6 improvement remain open. No submitted-manuscript or email change is made.
+
+## Arbitrary-copy continuation
+
+[Seam-completed compensation](SEAM_RESIDUAL_COMPENSATION.md) proves the
+minimum-degree-three and frozen-extension conclusion for every number of
+connected copies, within the fixed28-by-24n rectangle. It uses injective
+nonbottom seam targets and a bounded bottom-even BT corridor, leaving only
+odd relevant holes. The all-n cap family has exact restricted deficit
+n-1-card(J) under specified distinct new reserve units. The larger-height
+and universal-grid problems remain open.

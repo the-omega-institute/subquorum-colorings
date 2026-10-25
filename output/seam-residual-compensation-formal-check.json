@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "audits": [
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.adjacent_tp_columns_excluded",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.seam_bp_column_injection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.degree_three_excludes_guarded_mate",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.periodic_window_injection",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.bottom_private_copy_injection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.same_color_holes_no_unpaid",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.certificate_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.full_payment_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.saturated_guard_blank",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.SeamResidualCompensation.actual_guard_triple_geometry",
+      "axioms": []
+    }
+  ],
+  "new_audits": 10,
+  "axiom_free": 4,
+  "execution": "User-selected local machine;16GiB;71% system available; wide comm-basename enumeration empty before one Lean process; no shared CI changes.",
+  "scope": "Generic uniqueness, target/window injection, guarded degree exclusion, monochromatic holes, resource/payment ledgers and literal guard geometry; full arbitrary-n grid adapter, corridor extraction, untouched-owner argument and packing lift remain written/Python, not end-to-end Lean."
+}
