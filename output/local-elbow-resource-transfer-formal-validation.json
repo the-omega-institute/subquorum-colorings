@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T22:30:02.392363+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "64613 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "33%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "64613 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.LocalElbowResourceTransfer.local_delta' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.distinct_witness_losses' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.joint_exact_value' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.joint_nondecrease' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.strict_gain_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.single_unpaid_gain' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.no_unpaid_hypothesis_no_monotonicity' depends on axioms: [propext,",
+    "'SubQuorum.LocalElbowResourceTransfer.residual_deficit' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.all_residual_paid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.coefficient_one' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.joint_withdrawal_not_sum_of_marginals' does not depend on any axioms",
+    "'SubQuorum.LocalElbowResourceTransfer.arbitrary_module_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.physical_module_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.quota_upper' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.quota_attainer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.two_tiles_independent_of_height' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LocalElbowResourceTransfer.single_tile_tax_transfer' depends on axioms: [propext,"
+  ],
+  "scope": "Arbitrary-length unit losses indexed by distinct witness owners; exact local and joint rank/value arithmetic, conditional nondecrease and full compensation, one-credit beta/interval numerical ledger, nonadditive abstract withdrawals, arbitrary-length private-cap/patch module budget and quota attainments; two direction bits per action and seam-to-boundary tax transfer.",
+  "not_formalized": [
+    "Physical local and simultaneous elbow adapters, forest cell/support/link equalities, pack/fork normalization and witness grouping, all-size family and strict freezing geometry. These have general written proofs and executable checks; not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
