@@ -1,0 +1,1522 @@
+{
+  "status": "PASS",
+  "totals": {
+    "fixed_matchings_with_all_paid_subsets": 2890,
+    "prescribed_virtual_alpha_subsets": 17653,
+    "fixed_terminal_matchings": 2898,
+    "models": 267,
+    "saturated_nonempty_classes": 911,
+    "removed_support_incidences": 3297,
+    "models_with_removed_incidences": 226,
+    "models_with_fork_optimum": 7,
+    "singleton_core_withdrawals": 603,
+    "singleton_core_orientations": 603,
+    "strict_joint_value_losses": 8,
+    "strict_joint_cost_losses_at_equal_value": 5,
+    "empty_core_value_and_cost_additivity": 139,
+    "empty_core_multiple_active_additivity": 86,
+    "singleton_core_models": 215,
+    "frozen_fixture_images": 7,
+    "frozen_companion_path_images": 14,
+    "fixed_matchings_with_sampled_paid_subsets": 8
+  },
+  "abstract_controls": {
+    "layered_fork_value_cost": [
+      2,
+      4
+    ],
+    "wrong_component_grouping_value": [
+      2,
+      0
+    ],
+    "wrong_static_reservation_value": [
+      1,
+      0
+    ],
+    "singleton_cost_control": {
+      "active_components": 2,
+      "cross_units_before": 1,
+      "cross_support_classes": 1,
+      "singleton_core_units": [
+        0
+      ],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        2,
+        1
+      ],
+      "orientation_value_cost": [
+        2,
+        1
+      ]
+    },
+    "scope": "abstract, not asserted physical"
+  },
+  "physical": [
+    {
+      "fixture": "frozen_intrinsic_one_unit_gap",
+      "active_components": 2,
+      "cross_units_before": 1,
+      "cross_support_classes": 1,
+      "singleton_core_units": [
+        69
+      ],
+      "local_value_cost": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "global_value_cost": [
+        2,
+        2
+      ],
+      "orientation_value_cost": [
+        2,
+        2
+      ],
+      "core_geometry": [
+        {
+          "band": 3,
+          "first": 19,
+          "last": 19
+        }
+      ]
+    },
+    {
+      "fixture": "protected_shared_columns_fresh_obstruction",
+      "active_components": 4,
+      "cross_units_before": 4,
+      "cross_support_classes": 2,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        4,
+        0
+      ],
+      "orientation_value_cost": [
+        4,
+        0
+      ],
+      "core_geometry": []
+    },
+    {
+      "fixture": "whole_support_donor_collision",
+      "active_components": 2,
+      "cross_units_before": 2,
+      "cross_support_classes": 2,
+      "singleton_core_units": [
+        66,
+        146
+      ],
+      "local_value_cost": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "global_value_cost": [
+        2,
+        2
+      ],
+      "orientation_value_cost": [
+        2,
+        2
+      ],
+      "core_geometry": [
+        {
+          "band": 2,
+          "first": 11,
+          "last": 11
+        },
+        {
+          "band": 6,
+          "first": 11,
+          "last": 11
+        }
+      ]
+    },
+    {
+      "fixture": "frozen_mixed_cycle_square_switch",
+      "active_components": 1,
+      "cross_units_before": 0,
+      "cross_support_classes": 0,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          4,
+          2
+        ]
+      ],
+      "global_value_cost": [
+        4,
+        2
+      ],
+      "orientation_value_cost": [
+        4,
+        2
+      ],
+      "core_geometry": []
+    },
+    {
+      "fixture": "frozen_beta_support_fork",
+      "active_components": 1,
+      "cross_units_before": 0,
+      "cross_support_classes": 0,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          3,
+          1
+        ]
+      ],
+      "global_value_cost": [
+        3,
+        1
+      ],
+      "orientation_value_cost": [
+        3,
+        1
+      ],
+      "core_geometry": []
+    },
+    {
+      "fixture": "frozen_beta_fork_escape",
+      "active_components": 1,
+      "cross_units_before": 0,
+      "cross_support_classes": 0,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        1,
+        0
+      ],
+      "orientation_value_cost": [
+        1,
+        0
+      ],
+      "core_geometry": []
+    },
+    {
+      "fixture": "frozen_all_mixed_gate_cycle",
+      "active_components": 1,
+      "cross_units_before": 0,
+      "cross_support_classes": 0,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          4,
+          2
+        ]
+      ],
+      "global_value_cost": [
+        4,
+        2
+      ],
+      "orientation_value_cost": [
+        4,
+        2
+      ],
+      "core_geometry": []
+    },
+    {
+      "fixture": "source-free-square shared gap",
+      "active_components": 1,
+      "cross_units_before": 0,
+      "cross_support_classes": 0,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        1,
+        0
+      ],
+      "orientation_value_cost": [
+        1,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 2,
+      "active_components": 2,
+      "cross_units_before": 2,
+      "cross_support_classes": 1,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        2,
+        0
+      ],
+      "orientation_value_cost": [
+        2,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 3,
+      "active_components": 3,
+      "cross_units_before": 4,
+      "cross_support_classes": 2,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        3,
+        0
+      ],
+      "orientation_value_cost": [
+        3,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 4,
+      "active_components": 4,
+      "cross_units_before": 6,
+      "cross_support_classes": 3,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        4,
+        0
+      ],
+      "orientation_value_cost": [
+        4,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 5,
+      "active_components": 5,
+      "cross_units_before": 8,
+      "cross_support_classes": 4,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        5,
+        0
+      ],
+      "orientation_value_cost": [
+        5,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 6,
+      "active_components": 6,
+      "cross_units_before": 10,
+      "cross_support_classes": 5,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        6,
+        0
+      ],
+      "orientation_value_cost": [
+        6,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 7,
+      "active_components": 7,
+      "cross_units_before": 12,
+      "cross_support_classes": 6,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        7,
+        0
+      ],
+      "orientation_value_cost": [
+        7,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 8,
+      "active_components": 8,
+      "cross_units_before": 14,
+      "cross_support_classes": 7,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        8,
+        0
+      ],
+      "orientation_value_cost": [
+        8,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 9,
+      "active_components": 9,
+      "cross_units_before": 16,
+      "cross_support_classes": 8,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        9,
+        0
+      ],
+      "orientation_value_cost": [
+        9,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 10,
+      "active_components": 10,
+      "cross_units_before": 18,
+      "cross_support_classes": 9,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        10,
+        0
+      ],
+      "orientation_value_cost": [
+        10,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 11,
+      "active_components": 11,
+      "cross_units_before": 20,
+      "cross_support_classes": 10,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        11,
+        0
+      ],
+      "orientation_value_cost": [
+        11,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 12,
+      "active_components": 12,
+      "cross_units_before": 22,
+      "cross_support_classes": 11,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        12,
+        0
+      ],
+      "orientation_value_cost": [
+        12,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 24,
+      "active_components": 24,
+      "cross_units_before": 46,
+      "cross_support_classes": 23,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        24,
+        0
+      ],
+      "orientation_value_cost": [
+        24,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 48,
+      "active_components": 48,
+      "cross_units_before": 94,
+      "cross_support_classes": 47,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        48,
+        0
+      ],
+      "orientation_value_cost": [
+        48,
+        0
+      ]
+    },
+    {
+      "fixture": "frozen path with both original companion units",
+      "n": 96,
+      "active_components": 96,
+      "cross_units_before": 190,
+      "cross_support_classes": 95,
+      "singleton_core_units": [],
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        96,
+        0
+      ],
+      "orientation_value_cost": [
+        96,
+        0
+      ]
+    }
+  ],
+  "scope": "Finite corroboration of written all-size fixed-C saturation and singleton-core proofs.",
+  "limits": [
+    "available Q must be fixed before class construction",
+    "original whole-owner classes, not component-pair classes",
+    "keep original interval counts in physical ledger",
+    "no universal full-pool geometric compensation or 5/6 improvement"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "compiler": "Lean 4.33.0",
+  "execution": "local macOS, one standalone file, sequential invocation",
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percent": 29,
+    "existing_unrelated_processes": [
+      76427,
+      93464,
+      93759
+    ],
+    "process_detection": "basename of comm field, accepting full paths and bare executable names",
+    "existing_processes_preserved": true
+  },
+  "declarations": [
+    "component_witness_injective",
+    "reassigned_same_class",
+    "reassigned_injective",
+    "reassigned_supported",
+    "two_owner_selector_injective",
+    "two_owner_selector_values",
+    "positive_pair_class_unsaturated_iff_singleton",
+    "full_compensation_packet_margin"
+  ],
+  "axiom_free": [
+    "SubQuorum.SupportClassSaturation.component_witness_injective",
+    "SubQuorum.SupportClassSaturation.reassigned_same_class",
+    "SubQuorum.SupportClassSaturation.reassigned_injective",
+    "SubQuorum.SupportClassSaturation.reassigned_supported"
+  ],
+  "standard_axiom_dependencies": {
+    "SubQuorum.SupportClassSaturation.two_owner_selector_injective": [
+      "propext"
+    ],
+    "SubQuorum.SupportClassSaturation.two_owner_selector_values": [
+      "propext"
+    ],
+    "SubQuorum.SupportClassSaturation.positive_pair_class_unsaturated_iff_singleton": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.SupportClassSaturation.full_compensation_packet_margin": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "warnings": 0,
+  "errors": 0,
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false,
+  "verified": [
+    "component-map right inverse makes original-owner witnesses injective",
+    "arbitrary-size hybrid reassignment preserves original support class",
+    "hybrid reassignment is injective given eligible original-owner class selectors",
+    "reassigned resource remains supported by the same witness owner",
+    "two-owner selector injectivity and selected original identities",
+    "positive unsaturated two-owner class is singleton",
+    "full compensation plus original packet ledger implies coefficient-one margin"
+  ],
+  "not_formalized": [
+    "cancellation graph decomposition",
+    "finite cardinality supplies class selectors",
+    "whole-support physical adapter",
+    "complete mincost optimization and singleton-core orientation theorem",
+    "max-flow/min-cut and complete singleton withdrawal formula",
+    "universal geometric compensation"
+  ],
+  "log": "output/support-class-saturation-lean-validation.txt"
+}

@@ -1,5 +1,13 @@
 # Exact resource gluing across original endpoint components
 
+**Support-saturation refinement:** [original owner classes and the singleton
+core](SUPPORT_CLASS_SATURATION_AND_SINGLETON_CORE.md) preserves every fixed
+terminal matching while privatizing any class with at least as many units as
+original owners. In physical two-owner systems only singleton owner-pair
+classes can couple active P-components; an empty core gives exact value AND
+cost additivity. The two original companion units repair every frozen path
+in Section 3 without exterior resources.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
 The original endpoint-neighbor components give an exact decomposition of

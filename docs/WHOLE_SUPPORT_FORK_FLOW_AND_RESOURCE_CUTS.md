@@ -1,5 +1,10 @@
 # Whole-support forks: one exact flow and a resource-cut criterion
 
+**Resource-saturation continuation:** [fixed-matching class privatization](SUPPORT_CLASS_SATURATION_AND_SINGLETON_CORE.md)
+preserves value and cost, including beta forks. Physical cross-component
+coupling reduces exactly to singleton original-owner-pair classes; both the
+withdrawal value formula and a singleton-assignment cost formula are proved.
+
 **Endpoint-component continuation:** [exact original-resource gluing](ENDPOINT_COMPONENT_RESOURCE_GLUING.md)
 retains arbitrary internal mixed/BP/beta networks and isolates the exact joint
 overlap loss between original P-components. A frozen all-length path family
