@@ -2,6 +2,14 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+General continuation: [permanent links and a joint completion
+budget](MONOTONE_COMPLETION_DEFICIT_AND_BIRTH_CIRCUITS.md) proves that existing
+band links persist, full deficit cannot fall under feasible additions, and
+its growth is at most added selections minus old beta-to-alpha births.
+It also treats shared resource loss, private beta removal and new source
+demands in one frozen physical family, including arbitrarily large joint
+birth obstructions with every proper birth subset payable.
+
 The [preceding reserve theorem](BENT_GAP_PRIVATE_RESERVES.md) kept the occupied
 degree of every P endpoint fixed. Here we allow arbitrary feasible additions to
 T, retaining only P, the actual matching M and all old selections. We prove:

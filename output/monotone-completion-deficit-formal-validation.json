@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T20:26:47.093042+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "6668 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+    ],
+    "memory_free_percentage": "33%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "6668 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.MonotoneCompletionDeficit.old_link_protects_BP' does not depend on any axioms",
+    "'SubQuorum.MonotoneCompletionDeficit.converting_beta_has_no_old_fork' does not depend on any axioms",
+    "'SubQuorum.MonotoneCompletionDeficit.double_conversion_beta_unused' does not depend on any axioms",
+    "'SubQuorum.MonotoneCompletionDeficit.joint_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.mixed_birth_step' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.beta_loss_step' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.chain_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.corrected_potential' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.positive_deficit_persists' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.whollyEndangered_iff' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.absent_birth_breaks_circuit' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MonotoneCompletionDeficit.source_beta_AND' does not depend on any axioms"
+  ],
+  "scope": "General-predicate physical link protection; converting beta cannot root an old fork; double-converted beta unused; exact sharp p-s joint budget arithmetic; beta loss and mixed birth steps; arbitrary sequence-length induction; corrected potential and persistent positive deficit; arbitrary-length endangered-list characterization and joint birth obstruction predicate.",
+  "not_formalized": [
+    "General fixed-gap capacity coupling, full stem/fork packing transformations, physical all-width family freezing and route closure, shared resource graph matching and exact component deficit formula; these have written proofs and executable checks."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

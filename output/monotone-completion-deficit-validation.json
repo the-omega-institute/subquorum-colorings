@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "counts": {
+    "strict_controlled_rank_events": 340560,
+    "independent_controlled_primitive_optima": 90,
+    "controlled_models": 2260,
+    "controlled_single_event_edges": 10436,
+    "arbitrary_size_joint_birth_circuit_controls": 36,
+    "arbitrary_size_source_beta_AND_controls": 48,
+    "interval_delta0": 122,
+    "independent_primitive_optima": 16,
+    "physical_transitions": 154,
+    "preserved_old_links": 1473,
+    "converted_BP_no_old_entry": 114,
+    "beta_loss_delta0": 7,
+    "mixed_birth_delta0": 1,
+    "interval_delta1": 1,
+    "mixed_birth_delta1": 1,
+    "beta_loss_delta1": 1,
+    "strict_beta_birth_rank_events": 2112,
+    "sharp_p_minus_beta_birth_controls": 9,
+    "abstract_optima_using_forks": 18,
+    "abstract_zero_entry_conversions": 600,
+    "nonphysical_relabeling_exclusion_controls": 1
+  },
+  "exhaustive_profiles": [
+    {
+      "width": 8,
+      "modules": 1,
+      "all_event_subsets": 4
+    },
+    {
+      "width": 8,
+      "modules": 2,
+      "all_event_subsets": 64
+    },
+    {
+      "width": 8,
+      "modules": 3,
+      "all_event_subsets": 1024
+    },
+    {
+      "width": 10,
+      "modules": 3,
+      "all_event_subsets": 1024
+    }
+  ],
+  "theorem": "Fixed P,M,physical N and retained T: all old standard band links persist; full deficit is monotone and grows by at most added selections MINUS old beta-to-alpha births. Canonical gap coupling recomputes forest identities. Old paid-source certificates lose at most gap capacity loss plus beta-to-mixed count; beta-to-alpha owners had no old incoming entry and cannot cost an old payment. Both ends are counted only once.",
+  "family": "For every even W>=8 and k, explicit fully frozen controls X alpha births,Y private beta removals,Eupper/Elower shared openings give D=number of tree resource components all of whose vertices lie in X intersect Y. Arbitrarily large joint birth circuits and source-beta AND controls in full original pools.",
+  "limits": [
+    "No P additions, M/N rematching, arbitrary extra inter-band cancellation or universal5over6 improvement.",
+    "General proofs written; finite enumeration and scoped Lean verify only stated adapters."
+  ]
+}

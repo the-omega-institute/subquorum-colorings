@@ -1,0 +1,27 @@
+{
+  "status": "FAILED_NO_REVIEW",
+  "checked_at": "2026-10-25T20:27:44.663566+00:00",
+  "service": "NyxID independent oracle broker",
+  "endpoint": "api/v1/oracle/openai/v1/chat/completions",
+  "stream": true,
+  "pool": "chrono-chatgpt-pro-pool",
+  "preflight": {
+    "online_workers": 26,
+    "queued": 0,
+    "dispatched": 1,
+    "ready_workers": 25
+  },
+  "task_id": "2e952a46-bebf-498e-b125-2bea532dbf16",
+  "failure_detail": "model_unavailable@selecting_model",
+  "errors": [
+    {
+      "message": "The oracle task failed: model_unavailable",
+      "type": "server_error",
+      "param": null,
+      "code": "model_unavailable"
+    }
+  ],
+  "response_characters": 0,
+  "scope": "Requested audit of the sharp monotone completion bound 0<=DeltaD<=p-s, old-source retention and the reverse-packing transformation, in the physical standard band-link full-flow model.",
+  "conclusion": "No model answer; no external review, endorsement or mathematical rejection claimed. Written proofs, executable checks and scoped Lean remain the evidence."
+}

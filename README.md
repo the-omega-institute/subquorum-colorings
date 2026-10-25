@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [permanent links, the sharp completion budget and frozen birth circuits](docs/MONOTONE_COMPLETION_DEFICIT_AND_BIRTH_CIRCUITS.md):
+for arbitrary fixed physical mixed-direction bands, feasible T additions retain
+every old TP--BP band link. Exact full deficit is monotone and grows by at most
+p-s, where p selections are added and s old betas become alpha. Any old packing
+loses at most gap-capacity loss plus beta-to-mixed count of its old sources;
+double-converted betas had no old incoming route and are not charged twice.
+An all-width frozen family controls source births, private beta removals and
+shared intervals jointly: deficit counts tree resource components with every
+vertex endangered. Arbitrarily large birth sets have every proper subset
+payable, but the whole set not payable, on the full original pool. Checks pass
+2,260 controlled boards,10,436 event edges and scoped Lean audits. Universal5/6
+remains open.
+
 New [degree-changing bent completions and sharp full-network withdrawals](docs/DEGREE_CHANGING_BENT_COMPLETIONS.md):
 the endpoint-degree-preservation assumption is removed for the occupied-bent
 family. Every feasible fixed-P,M,old-T completion retains exactly q alphas,
