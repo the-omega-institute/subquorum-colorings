@@ -7,6 +7,24 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [protected shared columns and fresh ends](PROTECTED_SHARED_COLUMNS_AND_FRESH_ENDS.md).
+An unbounded frozen long-alpha family has saturated-T collars that force
+its actual matching under arbitrary feasible additions and rematching.
+Two persistent original units per neighbouring pair pay all m>=2 sources
+at zero links. Deleting the block preserves residual maximum value and
+minimum link cost exactly, without spending any interval twice. A separate
+fully frozen retained-old-pool family attains fresh-end loss k=e/2, although
+each matching-difference component contains at most one fresh TP: PP band
+edges defeat that localization rule. Full resources repair every example.
+409 models (155 frozen/254 feasible nonfrozen), 80 actual rematches,
+40 independent primitive comparisons and seven local Lean audits pass;
+Twelve additional frozen sharp counterexamples include six extensions of
+the actual 308P base (312 through 332 P), attaining its old-pool budget.
+Fresh TPs cannot horizontally neighbour old P in any retained-occupation
+extension of any frozen starting board (general written separation lemma).
+Universal
+mixed-direction compensation and the numerical 5/6 improvement remain open.
+
 25 October: [guarded promotion closure](GUARDED_PROMOTION_CLOSURE.md).
 Every retained-endpoint TP promotion in arbitrary PP-connected copies has
 an unused guarded old BP target:3,14->3,13, protected by the new selection

@@ -240,6 +240,11 @@ budget. The21 earlier audits in the same source are rerun. Full geometric
 extraction, the arbitrary-extension adapter and physical certificate
 lifting remain written/Python; this is not an end-to-end Lean proof.
 
+Continuation: [protected shared columns and fresh ends](PROTECTED_SHARED_COLUMNS_AND_FRESH_ENDS.md)
+gives a completely frozen sharp retained-pool family, disproves localization
+by matching-difference components alone, and proves a persistent shared-unit
+compensation class under arbitrary rematching. It does not solve all fresh ends.
+
 The remaining general obstacle is the simultaneous payment of alpha paths
 with TWO genuinely fresh matching endpoints. Their interval-only repair is
 already known to fail under freezing in other configurations, so their

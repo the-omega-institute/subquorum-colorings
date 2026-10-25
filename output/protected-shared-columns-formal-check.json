@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "machine": "local user-selected execution",
+  "preflight": "16GiB physical RAM; memory_pressure reports 67 percent system-wide free; no active lean/lake by comm basename; one standalone Lean process",
+  "command": "cd formal && lean SubQuorum/ProtectedSharedColumns.lean",
+  "audits": 7,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "errors": 0,
+  "warnings": 0,
+  "sorry": false,
+  "native_decide": false,
+  "scope": [
+    "even path involution has unique consecutive matching",
+    "side-guard parity indices",
+    "strict freezing-rank arithmetic",
+    "shared two-slot assignment injection",
+    "assignment range and incidence",
+    "physical interval coordinate injection",
+    "chosen-unit and all-shared-unit signed ledgers"
+  ],
+  "not_formalized": [
+    "complete geometric extraction of saturated-T collar",
+    "interval availability and exact owner-support adapter",
+    "packing projection and arbitrary-extension compensation theorem",
+    "general fresh-tip separation lemma"
+  ],
+  "evidence": "protected-shared-columns-lean-validation.txt"
+}
