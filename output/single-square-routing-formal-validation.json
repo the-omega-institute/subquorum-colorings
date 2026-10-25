@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T10:49:17.671224+00:00",
+  "compiler": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "command": "lean formal/SubQuorum/SingleSquareRouting.lean",
+  "exit_code": 0,
+  "execution": "User-selected local Mac, sequential single compiler process",
+  "memory_preflight": {
+    "total_bytes": 17179869184,
+    "first_available_percent": 36,
+    "final_available_percent": 37,
+    "preexisting_lean_lake": [],
+    "final_lean_lake": []
+  },
+  "declarations": 12,
+  "axiom_free": 9,
+  "axioms": {
+    "SubQuorum.SingleSquareRouting.pp_mate_preserves_column": [],
+    "SubQuorum.SingleSquareRouting.arbitrary_wire_walk_preserves_column": [],
+    "SubQuorum.SingleSquareRouting.fixed_pairing_iff": [],
+    "SubQuorum.SingleSquareRouting.no_cross_column_switch": [],
+    "SubQuorum.SingleSquareRouting.two_local_wires_have_no_common_corner": [],
+    "SubQuorum.SingleSquareRouting.reachable_component_has_source": [],
+    "SubQuorum.SingleSquareRouting.source_free_component_unreachable": [],
+    "SubQuorum.SingleSquareRouting.reachable_gate_outside_removed_component": [],
+    "SubQuorum.SingleSquareRouting.exact_mixed_chain_count": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SingleSquareRouting.pruned_primitive_iff_original": [],
+    "SubQuorum.SingleSquareRouting.one_original_owner_is_one_gate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.SingleSquareRouting.arbitrary_shared_gap_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "warnings": 0,
+  "sorry": false,
+  "native": false,
+  "new_axioms": false,
+  "scope": "All-length fixed-column wire-walk invariant, exact corner pairing, component-preserving owner reachability, source-free exclusion, pointwise primitive preservation under explicit paying-gate reachability interface, and chain/gap/one-owner capacity arithmetic. Full physical seven-pattern strand classification, finite extraction, optimization/pruning of complete fork packings and geometry adapters are written plus independent Python; not end-to-end formalization.",
+  "log": "output/single-square-routing-lean-validation.txt"
+}

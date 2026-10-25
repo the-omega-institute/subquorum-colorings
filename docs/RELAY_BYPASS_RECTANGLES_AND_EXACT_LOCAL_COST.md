@@ -1,5 +1,10 @@
 # Arbitrary-entrant relays: empty rectangles and exact local cost
 
+The subsequent [physical square-interface analysis](SINGLE_SQUARE_WIRES_AND_SOURCE_FREE_PRUNING.md)
+proves the aligned unique-square class source-free and gives a fully frozen
+capacity-two tile whose two local wires are one mixed owner. It is an actual
+obstruction to inferring this note's relay capacity from tile residual r=2.
+
 25 October 2026. Wenlin Zhang and Haobo Ma.
 
 This extends [multi-source bypass lifting](MULTISOURCE_RELAY_BYPASS_AND_DEFECT_BOUND.md).

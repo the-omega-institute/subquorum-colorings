@@ -1,0 +1,361 @@
+{
+  "status": "PASS",
+  "counts": {
+    "single_square_images": 4543,
+    "fully_frozen_single_square_images": 3245,
+    "source_free_mixed_owners": 13295,
+    "original_pp_m_cycles": 8545,
+    "nonself_chain_links": 5937,
+    "shared_gap_pruning_flow_comparisons": 336,
+    "frozen_shared_gap_images": 84,
+    "resource_deletion_countercontrols": 84,
+    "independent_shared_gap_terminal_matchings": 64,
+    "all_source_support_subsets": 4096,
+    "same_owner_frozen_tile_obstructions": 1,
+    "independent_same_owner_terminal_matchings": 3
+  },
+  "shared_gap": [
+    {
+      "C": 10,
+      "shape": [
+        10,
+        16
+      ],
+      "selected": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "matching": [
+        [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        [
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        [
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            10
+          ]
+        ]
+      ],
+      "removed_owner_tips": [
+        [
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        [
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            5
+          ]
+        ]
+      ],
+      "original_alpha": [
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          10
+        ]
+      ],
+      "shared_example": {
+        "band": 1,
+        "first": 5,
+        "last": 5
+      },
+      "source_support_units": 12,
+      "north_shared_units": 4,
+      "correct_payment": 1,
+      "wrong_resource_deletion_payment": 0
+    }
+  ],
+  "same_owner": {
+    "fixture": "frozen_mixed_cycle_square_switch.json",
+    "shape": [
+      28,
+      24
+    ],
+    "endpoints": 308,
+    "selected": 49,
+    "tile": [
+      5,
+      8
+    ],
+    "residual_capacity": 2,
+    "residual_degree": 4,
+    "mixed_ends": [
+      [
+        5,
+        18
+      ],
+      [
+        12,
+        14
+      ]
+    ],
+    "original_trace": [
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        18
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        5,
+        18
+      ],
+      [
+        6,
+        18
+      ],
+      [
+        6,
+        17
+      ],
+      [
+        5,
+        17
+      ],
+      [
+        4,
+        17
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        5,
+        16
+      ],
+      [
+        5,
+        15
+      ],
+      [
+        5,
+        14
+      ],
+      [
+        6,
+        14
+      ]
+    ],
+    "source_ends": [
+      [
+        [
+          5,
+          17
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          24,
+          19
+        ],
+        [
+          5,
+          19
+        ]
+      ]
+    ],
+    "original_units": [
+      {
+        "band": 5,
+        "first": 10,
+        "last": 10
+      },
+      {
+        "band": 5,
+        "first": 12,
+        "last": 12
+      }
+    ],
+    "actual_restricted": [
+      1,
+      1
+    ],
+    "false_capacity_two": [
+      2,
+      2
+    ],
+    "complete_board": [
+      4,
+      2
+    ],
+    "complete_certificates": [
+      {
+        "kind": "interval",
+        "owners": [
+          11
+        ],
+        "links": [],
+        "interval": 40,
+        "value": 1,
+        "witness": 11
+      },
+      {
+        "kind": "interval",
+        "owners": [
+          12
+        ],
+        "links": [],
+        "interval": 100,
+        "value": 1,
+        "witness": 12
+      },
+      {
+        "kind": "beta",
+        "owners": [
+          4,
+          10
+        ],
+        "links": [
+          [
+            [
+              5,
+              19
+            ],
+            [
+              5,
+              20
+            ]
+          ]
+        ],
+        "interval": null,
+        "value": 1,
+        "beta": 4
+      },
+      {
+        "kind": "beta",
+        "owners": [
+          17,
+          18
+        ],
+        "links": [
+          [
+            [
+              5,
+              17
+            ],
+            [
+              5,
+              16
+            ]
+          ]
+        ],
+        "interval": null,
+        "value": 1,
+        "beta": 17
+      }
+    ]
+  },
+  "scope": "General all-length routing and owner-only pruning proofs written separately. All seven single-square matchings, original identities and costs retained. Existing frozen same-owner tile is a counterexample to a tile-to-capacity-two-relay adapter in a declared restricted certificate, not a full-board or grid target counterexample. No new Oracle/mail/manuscript change. Lean scope separate."
+}

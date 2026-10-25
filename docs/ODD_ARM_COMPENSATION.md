@@ -1,5 +1,10 @@
 # Unique-square components transport four half-donors along odd arms
 
+The later [exact routing classification](SINGLE_SQUARE_WIRES_AND_SOURCE_FREE_PRUNING.md)
+shows that these receivers have only source-free horizontal-BP mixed chains
+and PP/M cycles. Their routing gates may be pruned while all original units
+and the physical negative budget remain; shared units cannot be deleted.
+
 19 October 2026. This extends the fixed-anchor cross in
 FROZEN_CAPACITY_TWO_CROSS.md. All claims concern the original feasible
 configuration and its original tile charges. The submitted paper is unchanged.
