@@ -243,7 +243,7 @@ columns. Published packet assertions were not disabled or modified.
 
 Stack q copies of the raw board vertically at stride W+12, keeping width22.
 Every stride is even, so the original band phase is preserved. Successive
-occupied blocks have six blank rows between them. There is no intercopy
+occupied blocks have ten blank rows between them. There is no intercopy
 occupied adjacency or terminal link; every supported gap remains in its
 original band's copy. The q distinct shared units j_i therefore give
 
