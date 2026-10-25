@@ -1,0 +1,3211 @@
+{
+  "status": "PASS",
+  "totals": {
+    "full_residual_value_cost_comparisons": 1504,
+    "actual_link_lifts": 1504,
+    "systems": 752,
+    "nonempty_eliminations": 720,
+    "cardinality_only_systems": 84,
+    "eliminated_sources": 2957,
+    "eliminated_internal_betas": 3414,
+    "independent_primitive_pack_comparisons": 290,
+    "nonfrozen_degree_three_controls": 1,
+    "forced_guard_motifs": 1636,
+    "frozen_physical_boards": 268,
+    "monotone_frozen_extension_controls": 40,
+    "carried_band_isometries": 16
+  },
+  "physical": [
+    {
+      "family": "parallel_cycle",
+      "copies": 1,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 2,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 1,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 3,
+      "cost": 1
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 1,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 2,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 1,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 3,
+      "cost": 2
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 2,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 4,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 2,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 2
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 2,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 4,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 2,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 3
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 2,
+      "filled": [
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 4,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 2,
+      "filled": [
+        1
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 3
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 2,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 4,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 2,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 4
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 3
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 4
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        1
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 4
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        2
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        2
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 4
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        0,
+        2
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        0,
+        2
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        1,
+        2
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        1,
+        2
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 3,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 6,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 3,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 9,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 4
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        1
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        2
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        2
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        2
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        2
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        1,
+        2
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        1,
+        2
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        3
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        3
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        3
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        1,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        1,
+        3
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        3
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        3
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        2,
+        3
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        2,
+        3
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        2,
+        3
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 8,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 8
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 5,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 10,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 5,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 15,
+      "cost": 5
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 5,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 10,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 5,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 15,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 5,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 10,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 5,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 15,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 10,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 15,
+      "cost": 8
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 10,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 15,
+      "cost": 9
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 10,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 15,
+      "cost": 10
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 6
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 8
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 9
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 10
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 11
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 12,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 7
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 8
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 9
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 10
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 11
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 13
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 14,
+      "internal_betas_removed": 14,
+      "scalar_excess": 0,
+      "value": 14,
+      "cost": 14
+    },
+    {
+      "family": "loop",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 7,
+      "internal_betas_removed": 7,
+      "scalar_excess": 0,
+      "value": 21,
+      "cost": 14
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 8
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 9
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 10
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 11
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 13
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 14
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 14,
+      "internal_betas_removed": 14,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 14
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 7,
+      "internal_betas_removed": 7,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 15
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 16,
+      "internal_betas_removed": 16,
+      "scalar_excess": 0,
+      "value": 16,
+      "cost": 16
+    },
+    {
+      "family": "loop",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 16
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 9
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 10
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 11
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 13
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 14
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 15
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 14,
+      "internal_betas_removed": 14,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 14
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 7,
+      "internal_betas_removed": 7,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 16
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 16,
+      "internal_betas_removed": 16,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 16
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 17
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 18,
+      "internal_betas_removed": 18,
+      "scalar_excess": 0,
+      "value": 18,
+      "cost": 18
+    },
+    {
+      "family": "loop",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 9,
+      "internal_betas_removed": 9,
+      "scalar_excess": 0,
+      "value": 27,
+      "cost": 18
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 10
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 11
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 13
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 14
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 15
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 16
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 14,
+      "internal_betas_removed": 14,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 14
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 7,
+      "internal_betas_removed": 7,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 17
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 16,
+      "internal_betas_removed": 16,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 16
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 18
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 18,
+      "internal_betas_removed": 18,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 18
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 9,
+      "internal_betas_removed": 9,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 19
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sources_removed": 20,
+      "internal_betas_removed": 20,
+      "scalar_excess": 0,
+      "value": 20,
+      "cost": 20
+    },
+    {
+      "family": "loop",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 30,
+      "cost": 20
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 11
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 13
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 14
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 15
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 16
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 17
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 14,
+      "internal_betas_removed": 14,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 14
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 7,
+      "internal_betas_removed": 7,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 18
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 16,
+      "internal_betas_removed": 16,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 16
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 19
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 18,
+      "internal_betas_removed": 18,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 18
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 9,
+      "internal_betas_removed": 9,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 20
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sources_removed": 20,
+      "internal_betas_removed": 20,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 20
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 21
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sources_removed": 22,
+      "internal_betas_removed": 22,
+      "scalar_excess": 0,
+      "value": 22,
+      "cost": 22
+    },
+    {
+      "family": "loop",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sources_removed": 11,
+      "internal_betas_removed": 11,
+      "scalar_excess": 0,
+      "value": 33,
+      "cost": 22
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 0
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [],
+      "sources_removed": 0,
+      "internal_betas_removed": 0,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 12
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 2
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0
+      ],
+      "sources_removed": 1,
+      "internal_betas_removed": 1,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 13
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 4
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1
+      ],
+      "sources_removed": 2,
+      "internal_betas_removed": 2,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 14
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 6
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources_removed": 3,
+      "internal_betas_removed": 3,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 15
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 8
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources_removed": 4,
+      "internal_betas_removed": 4,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 16
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 10
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources_removed": 5,
+      "internal_betas_removed": 5,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 17
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 12
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources_removed": 6,
+      "internal_betas_removed": 6,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 18
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 14,
+      "internal_betas_removed": 14,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 14
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources_removed": 7,
+      "internal_betas_removed": 7,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 19
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 16,
+      "internal_betas_removed": 16,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 16
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources_removed": 8,
+      "internal_betas_removed": 8,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 20
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 18,
+      "internal_betas_removed": 18,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 18
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "sources_removed": 9,
+      "internal_betas_removed": 9,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 21
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sources_removed": 20,
+      "internal_betas_removed": 20,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 20
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "sources_removed": 10,
+      "internal_betas_removed": 10,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 22
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sources_removed": 22,
+      "internal_betas_removed": 22,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 22
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "sources_removed": 11,
+      "internal_betas_removed": 11,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 23
+    },
+    {
+      "family": "parallel_cycle",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sources_removed": 24,
+      "internal_betas_removed": 24,
+      "scalar_excess": 0,
+      "value": 24,
+      "cost": 24
+    },
+    {
+      "family": "loop",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "sources_removed": 12,
+      "internal_betas_removed": 12,
+      "scalar_excess": 0,
+      "value": 36,
+      "cost": 24
+    }
+  ],
+  "hypothesis_controls": {
+    "supported_loop": {
+      "value": 1,
+      "cost": 0,
+      "invalid_unconditional_cost": 1
+    }
+  },
+  "nonfrozen_geometry_control": {
+    "shape": [
+      4,
+      6
+    ],
+    "selected": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    ],
+    "closed_pairs": [
+      [
+        [
+          2,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    ],
+    "frozen_endpoints": 0
+  },
+  "scope": "General forced PP guards for horizontal two-endpoint beta between alpha TP tips; exact full-network unsupported cyclic-component elimination, source and beta identities once. Pure-cycle PP/M components are not beta resources. Universal compensation and5/6 remain open."
+}

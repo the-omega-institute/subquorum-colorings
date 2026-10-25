@@ -311,3 +311,12 @@ exhibit a genuine geometric obstruction to a proposed stronger rule.
 Individual reachability, distinct BP tips, or a positive scalar reserve
 count cannot replace that joint gate/resource inequality. Universal
 compensation and improvement of the 5/6 bound remain open.
+
+Continuation: [forced pocket guards and cyclic-block elimination](FORCED_POCKET_GUARDS_AND_CYCLE_ELIMINATION.md)
+proves that every short beta between alpha TP tips already has the required
+PP guards in a completely frozen board. Construct the complete recognized
+resource multigraph and eliminate its non-tree components before compressing
+the remaining trees. In particular, the tight completed fixture has an older
+second beta joining the same two alphas; considering both edges eliminates
+the closed two-source component. The tree compression theorem above remains
+valid when only one of those edges is selected for compression.

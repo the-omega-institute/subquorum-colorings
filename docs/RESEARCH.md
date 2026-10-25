@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [forced short-beta PP guards and cyclic-block elimination](FORCED_POCKET_GUARDS_AND_CYCLE_ELIMINATION.md)
+derives the adjacent occupied PP columns from complete freezing, rather
+than assuming a guarded construction history. Every short horizontal beta
+between alpha TP tips is an exclusive whole resource. Non-tree components
+of their complete multigraph eliminate with exact V=n+V_res; if their
+alphas have empty direct interval support, c=n+c_res too. The tight frozen
+fixture contains a second, older beta, so its completed two-alpha component
+is a parallel-edge resource cycle. 752 systems/268 frozen boards/1,636 motifs,
+290 independent packs and three scoped Lean declarations pass. A degree-three
+nonfrozen board refutes the weaker guard rule. The remaining trees require
+a joint exterior cut proof; universal compensation and 5/6 remain open.
+
 25 October: [filled-pocket tree exterior compression](POCKET_TREE_EXTERIOR_COMPRESSION.md)
 retains the full exterior mixed/BP/beta/interval network and replaces each
 internal tree by one residual source choosing an original alpha exit.

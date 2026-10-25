@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "machine": "local machine, authorized by user in current session",
+  "preflight": {
+    "memory_gib": 16,
+    "memory_free_percent": 40,
+    "active_lean_lake": 0,
+    "process_detection": "compare basename of comm field to lean and lake",
+    "concurrency": 1
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "working_directory": "formal",
+  "command": "lean SubQuorum/ForcedPocketGuards.lean",
+  "exit_code": 0,
+  "declarations": [
+    "forced_candidate",
+    "two_neighbours_exclude_selection",
+    "guard_partner_is_endpoint"
+  ],
+  "axioms": {
+    "forced_candidate": [],
+    "two_neighbours_exclude_selection": [],
+    "guard_partner_is_endpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Three scoped local lemmas. Main rank contradiction is derived from actual neighbor lists, matching involution and strict freezing certificate; P guards and exclusion of selected partner use written grid-feasibility adapters. Complete grid-coordinate theorem and full-network cyclic-block elimination remain written general proofs.",
+  "log": "forced-pocket-guards-lean-validation.txt",
+  "external_review": "No new independent external review claimed."
+}
