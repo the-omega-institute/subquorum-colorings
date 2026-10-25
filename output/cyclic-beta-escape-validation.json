@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "totals": {
+    "fixed_escape_criterion_comparisons": 18944,
+    "successful_prunings": 10143,
+    "weighted_fixed_beta_cost_comparisons": 366,
+    "joint_deficit_independent_pack_comparisons": 120,
+    "systematic_four_gate_comparisons": 3520,
+    "actual_induced_interfaces": 8,
+    "independent_actual_ordinary_full_packs": 16,
+    "complete_original_comparisons": 3,
+    "separated_actual_frozen_copy_models": 20
+  },
+  "actual": {
+    "shape": [
+      28,
+      24
+    ],
+    "endpoints": 308,
+    "selected": 49,
+    "actual_original_betas": 6,
+    "available_units": [
+      {
+        "band": 6,
+        "first": 15,
+        "last": 15
+      },
+      {
+        "band": 9,
+        "first": 13,
+        "last": 13
+      }
+    ],
+    "induced": {
+      "none": {
+        "value": 2,
+        "cost": 2,
+        "minimum_full_beta_uses": null
+      },
+      "A": {
+        "value": 3,
+        "cost": 3,
+        "minimum_full_beta_uses": null
+      },
+      "B": {
+        "value": 3,
+        "cost": 3,
+        "minimum_full_beta_uses": null
+      },
+      "A,B": {
+        "value": 3,
+        "cost": 3,
+        "minimum_full_beta_uses": null
+      },
+      "D": {
+        "value": 3,
+        "cost": 3,
+        "minimum_full_beta_uses": null
+      },
+      "A,D": {
+        "value": 4,
+        "cost": 4,
+        "minimum_full_beta_uses": 2
+      },
+      "B,D": {
+        "value": 4,
+        "cost": 4,
+        "minimum_full_beta_uses": 2
+      },
+      "A,B,D": {
+        "value": 4,
+        "cost": 4,
+        "minimum_full_beta_uses": 2
+      }
+    },
+    "failed_pair": {
+      "escaped": [
+        "A",
+        "B"
+      ],
+      "tree_count": 2,
+      "gap_count": 2,
+      "tree_gap_rank": 1,
+      "gaps": [
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "complete_original": {
+      "value": 4,
+      "cost": 4
+    }
+  },
+  "scope": "General cyclic tree/gap Hall criterion, exact deficit, beta pruning and fixed-matching cost have written proofs. Actual induced owner interface is restricted; complete original board remains V4/c4. No universal compensation or5/6 improvement."
+}

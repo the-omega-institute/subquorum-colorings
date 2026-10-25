@@ -7,6 +7,22 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [cyclic beta escapes and joint tree/gap cuts](CYCLIC_BETA_ESCAPE_CUTS.md)
+give an exact all-size criterion for a declared cyclic mixed-gate interface:
+after sources escape to distinct original betas, resource-tree deficits must
+match different intersecting source gaps. Full payment admits pruning to
+exactly t beta uses, where t is the interval-tree count; the successful
+positions matter. Exact deficit and fixed-beta minimum cost are proved.
+On the actual308P frozen board, two different A/B beta options separately
+raise local interval value2 to3 but together still pay3; allowing D permits
+the different A/D pair to pay4. All-q separated original copies give the
+exact union/intersection repair count. Complete original owners/betas still
+pay4/c4 for this pool.18944fixed-escape/3520systematic controls,
+10143prunings,366weighted/120joint-deficit checks,8actual interfaces,
+20literal copy models and12scoped Lean declarations pass. Pruning, full
+Hall/tree decomposition and physical adapter remain written/Python.
+Universal compensation and5/6 remain open.
+
 25 October: [actual frozen mixed-gate cycles and occupied chambers](FROZEN_MIXED_GATE_CYCLES_AND_OCCUPIED_CHAMBERS.md)
 realizes four different alpha sources/four different mixed gates in a C4
 with different source ports:49T/154M/308P, completely frozen. Thus freezing

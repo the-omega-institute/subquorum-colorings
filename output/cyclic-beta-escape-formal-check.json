@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "machine": "local Mac, user-authorized",
+  "command": "lean SubQuorum/CyclicBetaEscapeCuts.lean",
+  "exit_code": 0,
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percentage": 60,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "audited_declarations": [
+    "SubQuorum.CyclicBetaEscapeCuts.path_gate_incident",
+    "SubQuorum.CyclicBetaEscapeCuts.path_gate_avoids_root",
+    "SubQuorum.CyclicBetaEscapeCuts.path_gate_injective",
+    "SubQuorum.CyclicBetaEscapeCuts.path_gate_covers_nonroot",
+    "SubQuorum.CyclicBetaEscapeCuts.isolated_gap_no_interval_source",
+    "SubQuorum.CyclicBetaEscapeCuts.unused_roots_give_tree_gap_injection",
+    "SubQuorum.CyclicBetaEscapeCuts.interval_payment_injective",
+    "SubQuorum.CyclicBetaEscapeCuts.joint_payment_injective",
+    "SubQuorum.CyclicBetaEscapeCuts.late_sources_require_z",
+    "SubQuorum.CyclicBetaEscapeCuts.restricted_pair_cannot_pay_all",
+    "SubQuorum.CyclicBetaEscapeCuts.repaired_payment_legal",
+    "SubQuorum.CyclicBetaEscapeCuts.repaired_payment_distinct"
+  ],
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "no_sorry_native": true,
+  "scope": "Arbitrary-length source-gap matching legality/no-root/injectivity/coverage; unused-root tree-to-gap injection; original interval/beta nonreuse; actual-interface four-source shared-z obstruction and explicit repaired assignment. Component decomposition, Hall theorem, cyclic pruning, minimum costs, and physical adapter remain written/Python. Previous concrete308P freezing Lean unchanged and not rerun."
+}

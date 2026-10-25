@@ -332,3 +332,10 @@ beta/interval exits? The cycle core itself is now realized and cannot be
 excluded. General sharing before/after gates and reachable beta forks still
 require the complete resource-cut model. Universal compensation and5/6
 remain open; the submitted manuscript is unchanged.
+
+**Peripheral-repair continuation:** [cyclic beta escape cuts](CYCLIC_BETA_ESCAPE_CUTS.md)
+proves the exact tree/gap Hall condition and pruning to the minimum t beta
+uses for cyclic interfaces. On this actual board two DIFFERENT peripheral
+betas can still give only one additional payment in a declared original
+owner interface; another beta permits a different successful pair. The
+complete original network continues to pay all four.
