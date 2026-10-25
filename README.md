@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [terminal-defect compensation and exact joint withdrawals](docs/TERMINAL_DEFECT_PORT_COMPENSATION.md):
+with the complete original interval pool and standard packet boundaries,
+all degree-three alpha terminals have simultaneous zero-link payments, before
+any pinwheel switch. More generally the exact port deficit is the number of
+paths with two zero ends, and twice that deficit is at most the degree-four
+alpha-terminal count plus explicit lateral-boundary defects. The note gives
+the exact simultaneous interval-withdrawal profile and the coefficient-one
+criterion d4+b<=2beta+1. Arbitrary interior degree-four vertices are allowed.
+1180 physical models, 4720 withdrawal profiles, 5227 abstract optima and
+16 scoped Lean declarations pass; general raw-boundary coverage and universal
+5/6 remain open.
+
 New [beta-core pinwheel switches and exact direction-optimized cuts](docs/PINWHEEL_BETA_CORE_SWITCHES.md):
 the two-mixed restriction is removed. Any selected degree-three four-outward
 pinwheel tiles, including beta paths joining two roots, optimize all directions

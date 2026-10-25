@@ -1,5 +1,11 @@
 # Exact pinwheel direction optimization with one credit per beta core
 
+Continuation: [terminal-defect full-pool theorem](TERMINAL_DEFECT_PORT_COMPENSATION.md)
+settles the complete original pool on standard-boundary packets whenever
+alpha terminals have degree three, without root flips. It also quantifies
+degree-four terminal and raw-boundary exceptions and exact port withdrawals.
+This does not apply to arbitrarily reserved pools or discard boundary defects.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Isolated research continuation.
 Submitted manuscripts, public main and shared CI are unchanged.
 

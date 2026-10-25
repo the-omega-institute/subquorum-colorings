@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T18:36:01.157471+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "69699 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "36%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "69699 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.TerminalDefectPortCompensation.parent_edge_incident' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.parent_edge_in_range' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.parent_edges_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.full_path_assignment' depends on axioms: [propext,",
+    "'SubQuorum.TerminalDefectPortCompensation.full_path_assignment_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.initial_half_tax' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.simultaneous_withdrawal_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.joint_half_tax_with_withdrawals' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.defect_free_profiles_pay_all' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.one_terminal_defect_still_pays_all' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.path_first_withdrawal_is_free' does not depend on any axioms",
+    "'SubQuorum.TerminalDefectPortCompensation.cycle_withdrawal_loses_one_per_unit' does not depend on any axioms",
+    "'SubQuorum.TerminalDefectPortCompensation.two_missing_ends_are_one_debit' does not depend on any axioms",
+    "'SubQuorum.TerminalDefectPortCompensation.ledger_from_distinct_interval_payments' depends on axioms: [propext,",
+    "'SubQuorum.TerminalDefectPortCompensation.coefficient_one_criterion' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.TerminalDefectPortCompensation.full_pool_zero_link_upper_bound' depends on axioms: [propext,"
+  ],
+  "scope": "Explicit arbitrary-length path assignment and injective parent-edge allocation away from any withdrawn zero root; list induction for half-terminal tax, joint arbitrary withdrawals and zero/one-defect coverage; original interval ledger and coefficient-one sufficient criterion.",
+  "not_formalized": [
+    "General physical alpha-terminal port and balanced-boundary adapter, degree-two graph classification and arbitrary grid conclusion; written proofs",
+    "Physical family, original interval and withdrawal checks; separate executable validation"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
