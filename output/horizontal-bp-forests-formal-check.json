@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "toolchain": "Lean 4.33.0",
+  "machine": "local; current-session user authorization",
+  "memory": {
+    "total_gib": 16,
+    "available_percent": 42,
+    "preexisting_lean_lake": 0,
+    "concurrency": 1,
+    "final_lean_lake": 0
+  },
+  "statement_count": 8,
+  "axiom_free_statement_count": 4,
+  "statements": [
+    "roots_unique",
+    "different_root_descendants_disjoint",
+    "no_path_into_closed_region",
+    "cycle_region_incoming_closed",
+    "horizontal_bp_other_neighbour",
+    "path_depth_monotone",
+    "serial_matching_payment",
+    "serial_matching_link_count"
+  ],
+  "standard_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "warnings": 0,
+  "sorry": 0,
+  "new_axioms": 0,
+  "native_evaluation": false,
+  "scope": "Arbitrary-length unique roots and disjoint descendants; entry exclusion for incoming-closed regions and cycle predecessor certificates; one-row neighbor arithmetic; depth monotonicity; serial deficit/link arithmetic.",
+  "excluded": [
+    "Full original physical geometry and H extraction",
+    "Finite-forest extraction and weighted flow substitution",
+    "Complete original packing adapter or end-to-end theorem",
+    "Frozen branching-H or complete serial embedding",
+    "Universal compensation or numerical 5/6"
+  ]
+}

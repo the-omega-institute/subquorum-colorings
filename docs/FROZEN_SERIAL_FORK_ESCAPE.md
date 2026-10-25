@@ -284,3 +284,10 @@ They might return into other routing components; injective BP targets alone
 do not establish available beta or interval surplus. Boundary-marked escapes
 and two-phase interactions also remain. The submitted 11 October version,
 public main, PR3 and shared CI are unchanged. No email was sent.
+
+Continuation: [horizontal-BP mixed forests](HORIZONTAL_BP_FORESTS.md) now
+prove that these exterior mixed escape owners root disjoint single-entry
+trees up to the first vertical-BP frontier. An exact weighted full-network
+compression and a stronger joint original-resource matching certificate
+retain all shared sinks and subsequent vertical gates. This does not assume
+that every exterior escape ultimately supplies a free resource.

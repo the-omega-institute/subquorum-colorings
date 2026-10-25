@@ -7,6 +7,22 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [horizontal-BP mixed forests](HORIZONTAL_BP_FORESTS.md).
+Actual horizontal matching at a mixed BP leaves only one original nonself
+entrance, even for long bent strands. Alpha-reachable owners of this class
+form single-entry trees; different forced serial exits cannot merge inside
+them. Per-output weighted compression preserves the complete fork network's
+value AND minimum actual links, keeping every vertical gate, original unit
+and actual beta entrance. A joint resource matching of rank nu strengthens
+the unchanged-C serial certificate to payment at least N-q+nu, deficit at
+most q-nu. It is exact only with the stated fixed baseline/forest-only route
+class. Existing frozen short-tail merger data demonstrate a real first
+VERTICAL gate collision in a restricted pool, not a full-board deficit.
+22saved frozen fixtures (4long H owners),88physical/220abstract full-flow
+value-cost checks,100serial certificates and8scoped localLean pass. Physical
+branching and complete frozen serial embedding are not claimed. General5/6
+remains open.
+
 25 October: [frozen serial-fork escape](FROZEN_SERIAL_FORK_ESCAPE.md).
 A frozen realization of the previous serial skeleton forces its second
 mixed output to an original BB port or an exterior open owner. An available
