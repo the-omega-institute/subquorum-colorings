@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [shared-pocket joint deficit and full-pool cost obstruction](SHARED_POCKET_COMPLETION_AND_JOINT_DEFICIT.md)
+extends the guarded-pocket geometry to different alpha owners. In the declared
+pocket interface, any multigraph has exact payment V=k-t and minimum links
+c=k-t-z, where t counts all-filled tree components and z counts vertices
+incident to empty pockets. Strict-distance parent-edge injection prevents
+joint reuse. A new completely frozen tight-support board keeps full payment
+two but raises full-pool minimum links from zero to two after filling one
+shared pocket; q copies have exact cost 2|S|. This refutes cost-nonincreasing
+shared completion, not universal compensation. General written proofs,
+2,912 abstract graph states, 422 physical controls and four scoped Lean
+declarations pass. The submitted manuscript and the 5/6 bound are unchanged.
+
 25 October: [protected singleton reserves](PROTECTED_SINGLETON_RESERVES.md)
 settles a positive completion class left by the sealed escape-cycle example.
 A fixed selected guard and three old matched neighbors force a private

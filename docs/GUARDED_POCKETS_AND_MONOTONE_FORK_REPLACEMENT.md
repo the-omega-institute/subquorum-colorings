@@ -150,6 +150,15 @@ minimize the number of forks as a third criterion. Theorem 3 contradicts
 such minimality if a fork has a guarded C root. This criterion changes no
 payment or link optimum; it chooses a representative attaining both.
 
+The same-alpha hypothesis cannot be dropped from this exclusive-resource
+argument. The sequel
+[SHARED_POCKET_COMPLETION_AND_JOINT_DEFICIT.md](SHARED_POCKET_COMPLETION_AND_JOINT_DEFICIT.md)
+proves the two-owner geometry and an exact joint pocket-graph formula. An
+actual fully frozen tight-support shared pocket raises the full-pool minimum
+links from zero to two when filled, while preserving payment two. That is
+a cost obstruction to a broader completion rule, not a contradiction to
+Theorem 3 or a failure of the global target inequality.
+
 For several owner-disjoint guarded roots, the replacements can be performed
 simultaneously. Private interval units cannot belong to two different C
 owners. If two filled pockets supplied the same beta, that beta would have

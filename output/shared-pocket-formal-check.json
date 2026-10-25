@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "machine": "local Mac; user-authorized local Lean",
+  "memory_preflight": {
+    "physical_GiB": 16,
+    "free_percent": 42,
+    "lean_lake_processes_by_comm_basename": [],
+    "concurrency": 1
+  },
+  "lean_version": "Lean 4.33.0, arm64-apple-darwin24.6.0, d8b18978322de05a8f3dba51ef03cf5461676c17",
+  "command": "cd formal && lean SubQuorum/SharedPocketJointDeficit.lean",
+  "exit_code": 0,
+  "source": "formal/SubQuorum/SharedPocketJointDeficit.lean",
+  "declarations": 4,
+  "axiom_output": "output/shared-pocket-lean-validation.txt",
+  "sorryAx": false,
+  "native_decide": false,
+  "scope": "Parent-edge injectivity from actual endpoints and strict distance descent; interval/beta tag separation; distinct empty-pocket slots; arithmetic under explicit graph count hypotheses. Full geometry, BFS existence and exact allocation theorem are written, not fully Lean formalized.",
+  "initial_lake_invocation": "Stopped before validation because lake attempted task-local mathlib clone; direct pinned Lean checks the standalone module without dependencies."
+}

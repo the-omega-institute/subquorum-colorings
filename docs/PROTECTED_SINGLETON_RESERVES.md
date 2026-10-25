@@ -17,6 +17,12 @@ These results settle a concrete completion class, not the existence of a
 protected interval at every frozen fork. The universal grid compensation
 statement and 5/6 improvement remain open.
 
+For residual sources sharing two-column pockets rather than possessing
+private singletons, see
+[SHARED_POCKET_COMPLETION_AND_JOINT_DEFICIT.md](SHARED_POCKET_COMPLETION_AND_JOINT_DEFICIT.md).
+Its exact joint graph count and frozen full-pool cost obstruction distinguish
+shared completion from this private-source elimination.
+
 ## 1. A single column that cannot be filled
 
 Use zero-based horizontal bands. Let r be even and c strictly inside the
