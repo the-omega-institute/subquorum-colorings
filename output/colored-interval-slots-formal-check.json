@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "audits": [
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.chosen_owner_injection",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.chosen_owners_nodup",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.actual_one_color_allocation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.one_color_deficit_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.signed_color_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.two_zero_holes_force_one_collision",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.two_one_holes_force_zero_collision",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.monochromatic_holes_no_opposite_collision",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.colored_slots_loss_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.signed_payment_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.sharp_stack_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.actual_hole_colors",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.actual_assigned_tip_colors",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.actual_copy_separation",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.ColoredIntervalSlots.half_turn_preserves_color",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "new_audits": 15,
+  "axiom_free": 1,
+  "execution": "User-selected local machine;16GiB;42% system available at preflight; wide comm-basename enumeration empty; single Lean process. No shared CI changes.",
+  "scope": "Actual map resource-choice injection/nodup/allocation; one-color count-to-deficit; signed collision identity; two-hole collision necessity; monochromatic-hole criterion; ledger; sharp-family counts; actual tip/hole parity, copy separation and half-turn color. Full arbitrary-copy feasibility/freezing/strands/gap and normalization adapter remain written/Python, not end-to-end Lean."
+}

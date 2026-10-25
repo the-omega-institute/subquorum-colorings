@@ -1,0 +1,895 @@
+{
+  "status": "PASS",
+  "counts": {
+    "incidence_components": 4167,
+    "components_with_opposite_color_double_slot": 665,
+    "same_color_two_hole_components": 657,
+    "components_with_color_collision": 674,
+    "certificates": 2039,
+    "color_bound_strict_vs_global_hole_floor": 178,
+    "abstract_systems": 400,
+    "exhaustively_checked_partial_certificates": 550,
+    "opposite_color_double_slot_controls": 1,
+    "resource_link_model_flow_checks": 864,
+    "independent_primitive_comparisons": 12,
+    "physical_boards": 144,
+    "strict_rank_certificates": 144
+  },
+  "named": {
+    "q1_mirror0": {
+      "shape": [
+        14,
+        30
+      ],
+      "endpoints": 40,
+      "selected": 42,
+      "bad": {
+        "deficit": 1,
+        "holes": [
+          2,
+          0
+        ],
+        "collisions": [
+          0,
+          1
+        ],
+        "parts": [
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          }
+        ],
+        "assignments": 4,
+        "links": 2,
+        "payment": 1
+      },
+      "repaired": {
+        "deficit": 0,
+        "holes": [
+          2,
+          0
+        ],
+        "collisions": [
+          0,
+          0
+        ],
+        "parts": [
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          }
+        ],
+        "assignments": 4,
+        "links": 2,
+        "payment": 2
+      },
+      "full_payment": 2,
+      "full_minimum_links": 2,
+      "shared_units_per_pair": 10
+    },
+    "q1_mirror1": {
+      "shape": [
+        14,
+        30
+      ],
+      "endpoints": 40,
+      "selected": 42,
+      "bad": {
+        "deficit": 1,
+        "holes": [
+          0,
+          2
+        ],
+        "collisions": [
+          1,
+          0
+        ],
+        "parts": [
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          }
+        ],
+        "assignments": 4,
+        "links": 2,
+        "payment": 1
+      },
+      "repaired": {
+        "deficit": 0,
+        "holes": [
+          0,
+          2
+        ],
+        "collisions": [
+          0,
+          0
+        ],
+        "parts": [
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          }
+        ],
+        "assignments": 4,
+        "links": 2,
+        "payment": 2
+      },
+      "full_payment": 2,
+      "full_minimum_links": 2,
+      "shared_units_per_pair": 10
+    },
+    "q8_mirror0": {
+      "shape": [
+        112,
+        30
+      ],
+      "endpoints": 320,
+      "selected": 336,
+      "bad": {
+        "deficit": 8,
+        "holes": [
+          16,
+          0
+        ],
+        "collisions": [
+          0,
+          8
+        ],
+        "parts": [
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              2,
+              0
+            ],
+            "collisions": [
+              0,
+              1
+            ],
+            "deficit": 1
+          }
+        ],
+        "assignments": 32,
+        "links": 16,
+        "payment": 8
+      },
+      "repaired": {
+        "deficit": 0,
+        "holes": [
+          16,
+          0
+        ],
+        "collisions": [
+          0,
+          0
+        ],
+        "parts": [
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              1,
+              0
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          }
+        ],
+        "assignments": 32,
+        "links": 16,
+        "payment": 16
+      },
+      "full_payment": 16,
+      "full_minimum_links": 16,
+      "shared_units_per_pair": 10
+    },
+    "q8_mirror1": {
+      "shape": [
+        112,
+        30
+      ],
+      "endpoints": 320,
+      "selected": 336,
+      "bad": {
+        "deficit": 8,
+        "holes": [
+          0,
+          16
+        ],
+        "collisions": [
+          8,
+          0
+        ],
+        "parts": [
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          },
+          {
+            "alphas": 2,
+            "units": 1,
+            "holes": [
+              0,
+              2
+            ],
+            "collisions": [
+              1,
+              0
+            ],
+            "deficit": 1
+          }
+        ],
+        "assignments": 32,
+        "links": 16,
+        "payment": 8
+      },
+      "repaired": {
+        "deficit": 0,
+        "holes": [
+          0,
+          16
+        ],
+        "collisions": [
+          0,
+          0
+        ],
+        "parts": [
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          },
+          {
+            "alphas": 1,
+            "units": 1,
+            "holes": [
+              0,
+              1
+            ],
+            "collisions": [
+              0,
+              0
+            ],
+            "deficit": 0
+          }
+        ],
+        "assignments": 32,
+        "links": 16,
+        "payment": 16
+      },
+      "full_payment": 16,
+      "full_minimum_links": 16,
+      "shared_units_per_pair": 10
+    }
+  },
+  "scope": "General written colored two-slot compensation and signed collision identity; actual all-q frozen half-turn/shift same-color-hole maximum-certificate failure and distinct-unit/beta repairs. Finite controls do not establish arbitrary-grid saturation or improve universal 5/6."
+}

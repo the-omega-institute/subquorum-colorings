@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [colored interval slots and frozen same-color holes](COLORED_INTERVAL_SLOTS_AND_MONOCHROMATIC_HOLES.md)
+extends the seam color argument to two assigned tips per original interval
+under explicit color capacities. In each assigned-incidence component,
+deficit is at most min(h0+e0,h1+e1), where ec counts actual double assignments
+of color c. No opposite-color collision plus monochromatic relevant holes
+gives full ordinary compensation. A fully frozen14-by30 paired half-turn/
+shift board has two color0 holes yet a bad maximum certificate loses1 by
+putting two color1 ends on ONE interval. Distinct j/k repair it without
+changing links; direct original beta bypasses also pay both. For arbitraryq
+stacks the bad-certificate loss is q, full payment2q/minimum links2q.
+400abstract/144frozen boards,2039certificates,864 resource/link flow checks,
+12independent primitive comparisons and15scoped local Lean audits pass. Written arbitrary-parameter
+proof; full geometry is not end-to-end Lean. Universal5/6 remains open.
+
 25 October: [seam-completed compensation](SEAM_RESIDUAL_COMPENSATION.md).
 For EVERY n>=1 on the fixed28-by-24n connected-copy rectangle, arbitrary
 retained-T0/P0 extensions and arbitrary actual M are fully ordinarily

@@ -2,6 +2,11 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
+Continuation: [colored interval slots](COLORED_INTERVAL_SLOTS_AND_MONOCHROMATIC_HOLES.md)
+extracts the portable color-capacity rule and gives a completely frozen
+same-color-hole obstruction to allowing two uncolored slots per resource.
+The one-tip-per-original-unit hypothesis used here is sufficient and unchanged.
+
 The [fixed-rectangle theorem](RESIDUAL_FRESH_DOMAINS.md) now extends to **every
 number of horizontally connected copies**, with arbitrary additions of T/P
 and arbitrary actual rematching, provided the final rectangle keeps height 28,
