@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [interacting square switches and shared-beta cuts](INTERACTING_SQUARE_SWITCHES_AND_SHARED_BETA.md)
+settles a new SAME-board two-switch frozen example and a general joint repair
+lemma. Fixed T/P, interval identities and counts persist; beta-only V falls4
+to2, while full original pool still pays4/c1. Three residual sources share
+a beta/interval gate and a second interval gate. Exact full payment iff
+Pair(L,P union R union W) or Pair(W,P union R); U affects cost but cannot
+independently repair value because it shares the beta entrance. Complete
+all-Q value and minimum-link tables are proved. Two different X units give
+a reachability matching4 but actual payment3; two shared direct Z units do
+pay4. General arbitrary-identity full criterion now Lean, plus actual308P
+new complete freezing:8audits pass.12430actual availability models,
+256independent ordinary/full packs,128abstract route comparisons and
+1280arbitrary-support controls pass. General rematching/5over6 still open.
+
 25 October: [frozen square switch and exact interval repair](FROZEN_SQUARE_SWITCH_AND_INTERVAL_REPAIR.md)
 shows that retaining T/P without retaining the actual matching does not preserve
 the preceding beta-paid core. One actual2x2 matching flip preserves all occupied

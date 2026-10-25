@@ -223,3 +223,11 @@ alone does not suffice for its beta-only conclusion. The next task is to
 control more general rematching and simultaneous interval repair, preserving
 the original resource identities and entrance capacities. A full five-source
 shared-resource obstruction and universal compensation remain open.
+
+Continuation: [the interacting-switch note](INTERACTING_SQUARE_SWITCHES_AND_SHARED_BETA.md)
+now applies a second switch on the SAME board. Beta-only value falls further
+to2, and source choices through a shared beta entrance become essential.
+It proves the exact joint full-payment condition for arbitrary support sets,
+formalizes that condition in Lean, and gives all-Q actual value/cost formulas.
+Two different available units can still fail because their routes and the
+beta fallback reuse the same entrance. Full interval pool remains paid.

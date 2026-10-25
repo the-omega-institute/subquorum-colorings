@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "shape": [
+    28,
+    24
+  ],
+  "selected": 49,
+  "matching": 154,
+  "endpoints": 308,
+  "freezing_layers": 48,
+  "source_counts": {
+    "alpha": 4,
+    "beta": 6,
+    "mixed": 15
+  },
+  "class_sizes": {
+    "P": 5,
+    "L": 16,
+    "R": 6,
+    "U": 4,
+    "W": 9,
+    "Z": 3,
+    "X": 2,
+    "Y": 2
+  },
+  "totals": {
+    "abstract_arbitrary_support_models": 1280,
+    "independent_complete_ordinary_full_packs": 256,
+    "independent_abstract_route_packs": 128,
+    "complete_original_availability_models": 12430,
+    "strict_reachability_matching_overestimates": 2,
+    "actual_frozen_reflections": 4
+  },
+  "named": {
+    "empty": {
+      "value": 2,
+      "cost": 3
+    },
+    "one_Z": {
+      "value": 3,
+      "cost": 3
+    },
+    "two_Z": {
+      "value": 4,
+      "cost": 3
+    },
+    "two_X": {
+      "value": 3,
+      "cost": 2,
+      "individual_reachability_matching_value": 4
+    },
+    "two_Y": {
+      "value": 3,
+      "cost": 3
+    },
+    "two_W_only": {
+      "value": 3,
+      "cost": 4,
+      "individual_reachability_matching_value": 4
+    },
+    "R_and_P": {
+      "value": 3,
+      "cost": 1
+    },
+    "L_and_R": {
+      "value": 4,
+      "cost": 3
+    },
+    "L_and_W": {
+      "value": 4,
+      "cost": 4
+    },
+    "all": {
+      "value": 4,
+      "cost": 1
+    }
+  },
+  "scope": "Actual two switches on SAME frozen board: beta-only V2/c3, full original V4/c1. General arbitrary-support three-source/two-gate shared-beta value and exact-cost theorem, all original Q. Different units do not suffice when beta/interval exits share U or interval routes share W. Universal rematching compensation and5over6 OPEN."
+}

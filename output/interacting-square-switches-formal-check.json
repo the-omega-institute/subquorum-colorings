@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "machine": "user-authorized local Mac",
+  "concurrency": 1,
+  "validations": [
+    {
+      "command": "lean SubQuorum/TwoGateRematchingRepair.lean",
+      "exit_code": 0,
+      "preflight_memory_bytes": 17179869184,
+      "preflight_free_percentage": 70,
+      "lean_lake_comm_basename_processes": [],
+      "audited_declarations": [
+        "SubQuorum.TwoGateRematchingRepair.full_payment_iff",
+        "SubQuorum.TwoGateRematchingRepair.no_direct_D_or_B_or_C",
+        "SubQuorum.TwoGateRematchingRepair.two_shared_direct_units"
+      ]
+    },
+    {
+      "command": "lean SubQuorum/DoubleSquareSwitch.lean",
+      "exit_code": 0,
+      "preflight_memory_bytes": 17179869184,
+      "preflight_free_percentage": 64,
+      "lean_lake_comm_basename_processes": [],
+      "audited_declarations": [
+        "SubQuorum.DoubleSquareSwitch.actual_geometry",
+        "SubQuorum.DoubleSquareSwitch.actual_board_completely_frozen",
+        "SubQuorum.DoubleSquareSwitch.eight_original_strands_disjoint",
+        "SubQuorum.DoubleSquareSwitch.four_alpha_four_mixed_terminals",
+        "SubQuorum.DoubleSquareSwitch.eight_retained_tip_adjacencies"
+      ]
+    }
+  ],
+  "axioms_union": [
+    "propext",
+    "Quot.sound"
+  ],
+  "no_sorry_native": true,
+  "scope": "General full-payment iff joint distinct-unit repair criterion for arbitrary identity types/support predicates in complete three-source/two-gate shared-beta route interface; shared-gate-only impossibility and two-distinct-direct-unit sufficiency. Concrete NEW308P complete inductive freezing, geometry, disjoint strands, terminal types, physical tip adjacencies. Physical support/reachability adapter and all-Q exact value/cost formulas remain written/Python, not end-to-end Lean allocation."
+}
