@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [frozen ear rematching and resource consumption](FROZEN_EAR_REMATCHING_AND_RESOURCE_CONSUMPTION.md)
+constructs a real endpoint-adding rematching: four new P/two T replace an
+old right-alpha edge by a PP alternating detour. General rank scaling by3
+proves complete freezing, while terminal pairs and alpha/beta counts stay
+fixed. Exactly four old interval units are consumed, no new beta credit;
+private payments survive. Optional ears in q copies and arbitrary further
+modified-matching-retaining extensions have V=2q+Vres,c=filledCaps+cres.
+A shorter square flip fails because its necessary selected supports conflict.
+1107 frozen elimination models/184 independent packs and7 generic Lean
+statements pass. Old-M retention under arbitrary endpoint additions is
+false; target compensation and5/6 are not refuted and remain open.
+
+
 25 October: [matching-independent active-merger reserves](MATCHING_INDEPENDENT_ACTIVE_MERGER_RESERVES.md)
 proves unique completely frozen actual matching for each of the four fixed-
 endpoint cap states, even after arbitrary feasible selected additions. A

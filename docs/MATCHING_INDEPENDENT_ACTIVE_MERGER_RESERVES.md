@@ -253,3 +253,9 @@ No independent external review was received in this round.
 The 11 October submitted manuscript, public main, PR3, shared CI and email
 were not changed. These are research notes for later discussion or a
 separately reviewed manuscript addition.
+
+Follow-up: [four-endpoint frozen ear insertion](FROZEN_EAR_REMATCHING_AND_RESOURCE_CONSUMPTION.md)
+now gives an actual endpoint-adding rematching and a general rank-lift proof.
+It defeats extending matching retention beyond fixed P, but preserves both
+old private payments and consumes four old interval units rather than
+creating new surplus. Unrestricted reserve ownership changes remain open.
