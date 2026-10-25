@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [coupled old-link revisions and a serial plateau](COUPLED_LINK_RETRACTION.md).
+Under explicit single-active-TP/empty-alpha-support hypotheses, the full
+stem/fork network with one reward per retained actual C link gives the
+EXACT minimum revisions for full payment, then minimum total link count.
+A two-active-tip countercontrol proves the scope restriction necessary.
+A connected, all-live abstract degree-two family has initial deficit one
+but needs n-1 simultaneous C revisions; every smaller budget leaves the
+same deficit. All beta resources remain available. This serial family is
+NOT a claimed frozen-grid embedding. Disjoint bundles have the exact
+sorted-cost frontier. The earlier frozen c0/c1/c2 family agrees with the
+weighted criterion and independent unpruned subset controls. General
+frozen geometry and numerical5/6 remain open; full proofs and validation
+scope are in the note.
+
 25 October: [frozen gap capacity and exact link retraction](FROZEN_GAP_CAPACITY_AND_LINK_RETRACTION.md).
 In the SAME paired endpoint/M system, isolated added T prescribe every
 shared-gap capacity c=0..w-20, keeping endpoint degrees, types, strands,

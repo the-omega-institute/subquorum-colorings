@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "toolchain": "Lean 4.33.0",
+  "machine": "local, per current session authorization",
+  "memory": {
+    "total_gib": 16,
+    "system_available_percent": 43,
+    "preexisting_lean_lake_processes": 0,
+    "execution_concurrency": 1,
+    "final_lean_lake_processes": 0
+  },
+  "statements": [
+    "serial_full_assignment_forced",
+    "serial_tail_links_must_release",
+    "serial_release_count_lower_bound",
+    "serial_plateau",
+    "serial_full_link_count",
+    "reward_retraction_identity",
+    "reward_strict_priority",
+    "reward_equal_priority",
+    "equal_bundle_budget"
+  ],
+  "statement_count": 9,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": [
+    "Arbitrary-n serial injective assignment is forced",
+    "Each labelled tail link must release",
+    "Distinct tail-label count lower bound",
+    "Plateau and route count arithmetic",
+    "Retention reward arithmetic and lexicographic priority",
+    "Equal-bundle budget bound"
+  ],
+  "excluded": [
+    "Network-to-assignment adapter",
+    "Full weighted flow normalization",
+    "Physical dead-entry deletion",
+    "Frozen serial embedding",
+    "Universal compensation or numerical 5/6 improvement"
+  ],
+  "warnings": 0,
+  "sorry": 0,
+  "new_axioms": 0,
+  "native_evaluation": false
+}

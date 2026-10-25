@@ -2,6 +2,11 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
+Continuation: [coupled old-link revisions](COUPLED_LINK_RETRACTION.md)
+identifies the independent-bypass assumption behind this frontier, gives
+an exact signed-flow criterion under explicit port hypotheses, and proves
+an abstract all-live serial obstruction to a deficit-only revision bound.
+
 The [colored-slot theorem](COLORED_INTERVAL_SLOTS_AND_MONOCHROMATIC_HOLES.md)
 raises a geometric question: does complete freezing force a second distinct
 unit beside two same-color mixed exits? It does not. In its actual paired

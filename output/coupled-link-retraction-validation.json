@@ -1,0 +1,335 @@
+{
+  "status": "passed",
+  "scope": "Signed full-repair theorem, abstract serial dependency, and previous frozen-family applications; no physical serial embedding.",
+  "counts": {
+    "connected_all_live_phase_degree_controls": 11,
+    "fixed_subset_ordinary_full_comparisons": 1116,
+    "exhaustive_serial_budget_optima": 42,
+    "signed_full_flow_checks": 254,
+    "independent_terminal_matchings": 3581,
+    "independent_serial_full_optima": 3,
+    "random_fixed_subsets": 372,
+    "random_infeasible_full_targets": 73,
+    "random_full_targets": 107,
+    "random_repaired_targets_using_beta_forks": 5,
+    "disjoint_bundle_subset_checks": 1184,
+    "exhaustive_bundle_budget_optima": 34,
+    "two_active_hypothesis_countercontrols": 1,
+    "unpruned_physical_fixed_subsets": 504,
+    "physical_frozen_controls": 18
+  },
+  "serial": [
+    {
+      "sources": 2,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 1,
+      "minimum_full_total_links": 3,
+      "subsets_checked": 4,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 3,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 2,
+      "minimum_full_total_links": 5,
+      "subsets_checked": 8,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 4,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 3,
+      "minimum_full_total_links": 7,
+      "subsets_checked": 16,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 5,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 4,
+      "minimum_full_total_links": 9,
+      "subsets_checked": 32,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 6,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 5,
+      "minimum_full_total_links": 11,
+      "subsets_checked": 64,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 7,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 6,
+      "minimum_full_total_links": 13,
+      "subsets_checked": 128,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 8,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 7,
+      "minimum_full_total_links": 15,
+      "subsets_checked": 256,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 9,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 8,
+      "minimum_full_total_links": 17,
+      "subsets_checked": 11,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 10,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 9,
+      "minimum_full_total_links": 19,
+      "subsets_checked": 12,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 11,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 10,
+      "minimum_full_total_links": 21,
+      "subsets_checked": 13,
+      "frozen_grid_realization": false
+    },
+    {
+      "sources": 12,
+      "initial_deficit": 1,
+      "minimum_full_retractions": 11,
+      "minimum_full_total_links": 23,
+      "subsets_checked": 14,
+      "frozen_grid_realization": false
+    }
+  ],
+  "bundles": [
+    {
+      "lengths": [
+        2,
+        3
+      ],
+      "initial_deficit": 2,
+      "full_retractions": 3,
+      "budget_values": [
+        3,
+        4,
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "lengths": [
+        3,
+        4
+      ],
+      "initial_deficit": 2,
+      "full_retractions": 5,
+      "budget_values": [
+        5,
+        5,
+        6,
+        6,
+        6,
+        7,
+        7,
+        7
+      ]
+    },
+    {
+      "lengths": [
+        2,
+        4,
+        3
+      ],
+      "initial_deficit": 3,
+      "full_retractions": 6,
+      "budget_values": [
+        6,
+        7,
+        7,
+        8,
+        8,
+        8,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    {
+      "lengths": [
+        3,
+        3,
+        3
+      ],
+      "initial_deficit": 3,
+      "full_retractions": 6,
+      "budget_values": [
+        6,
+        6,
+        7,
+        7,
+        8,
+        8,
+        9,
+        9,
+        9,
+        9
+      ]
+    }
+  ],
+  "physical": [
+    {
+      "copies": 1,
+      "capacity": 0,
+      "mirror": false,
+      "sources": 2,
+      "minimum_full_retractions": 2,
+      "total_links": 2
+    },
+    {
+      "copies": 1,
+      "capacity": 0,
+      "mirror": true,
+      "sources": 2,
+      "minimum_full_retractions": 2,
+      "total_links": 2
+    },
+    {
+      "copies": 1,
+      "capacity": 1,
+      "mirror": false,
+      "sources": 2,
+      "minimum_full_retractions": 1,
+      "total_links": 2
+    },
+    {
+      "copies": 1,
+      "capacity": 1,
+      "mirror": true,
+      "sources": 2,
+      "minimum_full_retractions": 1,
+      "total_links": 2
+    },
+    {
+      "copies": 1,
+      "capacity": 2,
+      "mirror": false,
+      "sources": 2,
+      "minimum_full_retractions": 0,
+      "total_links": 2
+    },
+    {
+      "copies": 1,
+      "capacity": 2,
+      "mirror": true,
+      "sources": 2,
+      "minimum_full_retractions": 0,
+      "total_links": 2
+    },
+    {
+      "copies": 2,
+      "capacity": 0,
+      "mirror": false,
+      "sources": 4,
+      "minimum_full_retractions": 4,
+      "total_links": 4
+    },
+    {
+      "copies": 2,
+      "capacity": 0,
+      "mirror": true,
+      "sources": 4,
+      "minimum_full_retractions": 4,
+      "total_links": 4
+    },
+    {
+      "copies": 2,
+      "capacity": 1,
+      "mirror": false,
+      "sources": 4,
+      "minimum_full_retractions": 2,
+      "total_links": 4
+    },
+    {
+      "copies": 2,
+      "capacity": 1,
+      "mirror": true,
+      "sources": 4,
+      "minimum_full_retractions": 2,
+      "total_links": 4
+    },
+    {
+      "copies": 2,
+      "capacity": 2,
+      "mirror": false,
+      "sources": 4,
+      "minimum_full_retractions": 0,
+      "total_links": 4
+    },
+    {
+      "copies": 2,
+      "capacity": 2,
+      "mirror": true,
+      "sources": 4,
+      "minimum_full_retractions": 0,
+      "total_links": 4
+    },
+    {
+      "copies": 3,
+      "capacity": 0,
+      "mirror": false,
+      "sources": 6,
+      "minimum_full_retractions": 6,
+      "total_links": 6
+    },
+    {
+      "copies": 3,
+      "capacity": 0,
+      "mirror": true,
+      "sources": 6,
+      "minimum_full_retractions": 6,
+      "total_links": 6
+    },
+    {
+      "copies": 3,
+      "capacity": 1,
+      "mirror": false,
+      "sources": 6,
+      "minimum_full_retractions": 3,
+      "total_links": 6
+    },
+    {
+      "copies": 3,
+      "capacity": 1,
+      "mirror": true,
+      "sources": 6,
+      "minimum_full_retractions": 3,
+      "total_links": 6
+    },
+    {
+      "copies": 3,
+      "capacity": 2,
+      "mirror": false,
+      "sources": 6,
+      "minimum_full_retractions": 0,
+      "total_links": 6
+    },
+    {
+      "copies": 3,
+      "capacity": 2,
+      "mirror": true,
+      "sources": 6,
+      "minimum_full_retractions": 0,
+      "total_links": 6
+    }
+  ]
+}
