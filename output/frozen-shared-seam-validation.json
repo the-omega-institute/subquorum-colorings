@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "counts": {
+    "reservation_models": 416,
+    "ordinary_full_comparisons": 416,
+    "positive_deficit_models": 259,
+    "naive_independent_credit_overcounts": 150,
+    "independent_primitive_packs": 28,
+    "connected_frozen_families": 12
+  },
+  "families": [
+    {
+      "q": 1,
+      "endpoints": 620,
+      "live_shared_intervals": 2,
+      "states": 18,
+      "removed_mixed": 20
+    },
+    {
+      "q": 2,
+      "endpoints": 932,
+      "live_shared_intervals": 4,
+      "states": 258,
+      "removed_mixed": 29
+    },
+    {
+      "q": 3,
+      "endpoints": 1244,
+      "live_shared_intervals": 6,
+      "states": 14,
+      "removed_mixed": 38
+    },
+    {
+      "q": 4,
+      "endpoints": 1556,
+      "live_shared_intervals": 8,
+      "states": 14,
+      "removed_mixed": 47
+    },
+    {
+      "q": 5,
+      "endpoints": 1868,
+      "live_shared_intervals": 10,
+      "states": 14,
+      "removed_mixed": 56
+    },
+    {
+      "q": 6,
+      "endpoints": 2180,
+      "live_shared_intervals": 12,
+      "states": 14,
+      "removed_mixed": 65
+    },
+    {
+      "q": 7,
+      "endpoints": 2492,
+      "live_shared_intervals": 14,
+      "states": 14,
+      "removed_mixed": 74
+    },
+    {
+      "q": 8,
+      "endpoints": 2804,
+      "live_shared_intervals": 16,
+      "states": 14,
+      "removed_mixed": 83
+    },
+    {
+      "q": 9,
+      "endpoints": 3116,
+      "live_shared_intervals": 18,
+      "states": 14,
+      "removed_mixed": 92
+    },
+    {
+      "q": 10,
+      "endpoints": 3428,
+      "live_shared_intervals": 20,
+      "states": 14,
+      "removed_mixed": 101
+    },
+    {
+      "q": 11,
+      "endpoints": 3740,
+      "live_shared_intervals": 22,
+      "states": 14,
+      "removed_mixed": 110
+    },
+    {
+      "q": 12,
+      "endpoints": 4052,
+      "live_shared_intervals": 24,
+      "states": 14,
+      "removed_mixed": 119
+    }
+  ],
+  "theorem": "Any q>=1; original seam identities, reserved whole side-beta owners, only seam interval pool: D=sum max(0,r_i-z_i), Vord=Vfull=4(q+1)-D, cord=cfull=5(q+1)-D. Full unrestricted board remains compensated.",
+  "scope": "Finite controls corroborate arbitrary-q written proof; not a universal grid theorem."
+}

@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [actual shared seam compensation](FROZEN_SHARED_SEAM_COMPENSATION.md).
+The connected fully frozen family has two PRODUCTIVE shared original
+intervals per seam, accessible from different-copy side alphas through
+different mixed gates. If r_i side beta owners are reserved and z_i of
+these two original units are available, exact deficit is
+Delta=sum max(0,r_i-z_i), maximum ordinary/full payment4(q+1)-Delta and
+minimum cost5(q+1)-Delta. All other intervals are withheld in this policy;
+the unrestricted family remains fully compensated. One shared unit repairs
+each side separately but cannot repair both simultaneously.416reservation
+models on12connected frozen boards,28independent packings and7local Lean
+audits pass. General route/cluster proof is written; no end-to-end Lean
+geometric theorem or universal5/6 improvement is claimed.
+
 25 October: [connected frozen obstruction to interval-only repair](CONNECTED_FROZEN_INTERVAL_REPAIR_OBSTRUCTION.md).
 A neutral PP splice joins arbitrary q+1 copies into a connected fully frozen
 occupied graph. After the old18C links, the4q new-new alpha paths have direct

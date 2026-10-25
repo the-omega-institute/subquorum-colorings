@@ -2,6 +2,11 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+**Continuation:** [actual productive seam sharing](FROZEN_SHARED_SEAM_COMPENSATION.md)
+identifies two shared original units per seam and proves the exact joint
+beta-reservation deficit and cost. The beta-only graph separates by copy;
+the complete owner/interval network has genuine productive coupling.
+
 The [joint-extension theorem](SELECTED_EXTENSIONS_AND_NEW_TP_DEFECT_BUDGET.md)
 leaves exactly k post-cancellation alpha paths with two new TP ends. Its
 disjoint-new-interval repair lemma is sufficient. We now refute the proposed
