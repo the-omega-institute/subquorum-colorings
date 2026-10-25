@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "machine": "local Mac; user-authorized local Lean",
+  "preflight": {
+    "physical_GiB": 16,
+    "free_percent": 35,
+    "comm_basename_lean_lake_processes": [],
+    "concurrency": 1
+  },
+  "lean_version": "4.33.0",
+  "command": "cd formal && lean SubQuorum/PocketTreeExteriorCompression.lean",
+  "exit_code": 0,
+  "declarations": 4,
+  "source": "formal/SubQuorum/PocketTreeExteriorCompression.lean",
+  "axioms": "output/pocket-tree-compression-lean-validation.txt",
+  "sorryAx": false,
+  "native_decide": false,
+  "scope": "Positive route sum; cost-safe exterior route pruning; local root/payment/savings ledger; reward dominance over explicit finite cost range. Tree geometry and allocation, network projection/lift and min-cost circulation theorem are written, not fully formalized."
+}

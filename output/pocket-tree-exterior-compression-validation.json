@@ -1,0 +1,4102 @@
+{
+  "status": "PASS",
+  "totals": {
+    "unsupported_exact_cost_controls": 530,
+    "models": 866,
+    "capacity_and_cost_checked_flow_lifts": 1732,
+    "simple_value_equalities": 866,
+    "discounted_value_cost_equalities": 866,
+    "simple_cost_overestimates": 164,
+    "joint_exterior_deficits": 404,
+    "discounted_multiple_exterior_exit_controls": 164,
+    "independent_primitive_pack_comparisons": 285,
+    "rejected_internal_beta_support_control": 1,
+    "frozen_physical_boards": 264
+  },
+  "joint_controls": {
+    "shared_whole_beta": {
+      "value": 3,
+      "cost": 3,
+      "simple_cost": 3,
+      "baseline": 2,
+      "exterior_value": 1,
+      "exact_extra_exits": 0
+    },
+    "same_beta_with_body_interval": {
+      "value": 4,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 2,
+      "exact_extra_exits": 0
+    },
+    "nonempty_internal_beta_support": {
+      "original_value": 2,
+      "invalid_baseline_only_value": 1,
+      "compression_hypothesis_rejected": true
+    }
+  },
+  "physical": [
+    {
+      "family": "outside_intervals",
+      "copies": 1,
+      "filled": [],
+      "value": 2,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 2,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 1,
+      "filled": [
+        0
+      ],
+      "value": 2,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 1,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 2,
+      "filled": [],
+      "value": 4,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 4,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 2,
+      "filled": [
+        0
+      ],
+      "value": 4,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 3,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 2,
+      "filled": [
+        1
+      ],
+      "value": 4,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 3,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 2,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 4,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 2,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        0
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 5,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        1
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 5,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 4,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        2
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 5,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        0,
+        2
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 4,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        1,
+        2
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 4,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 3,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 3,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        1
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        2
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        2
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        1,
+        2
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        1,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        1,
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 4,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        2
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        2
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        2
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 5,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [
+        0
+      ],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 11,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 10,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 9,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 8,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 7,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 6,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 13,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 12,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 11,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 10,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 9,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 8,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 7,
+      "baseline": 7,
+      "exterior_value": 7,
+      "exact_extra_exits": 7
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 16,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 15,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 14,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 13,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 12,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 11,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 10,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 7,
+      "baseline": 7,
+      "exterior_value": 9,
+      "exact_extra_exits": 7
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 8,
+      "baseline": 8,
+      "exterior_value": 8,
+      "exact_extra_exits": 8
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 18,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 17,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 16,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 15,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 14,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 13,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 12,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 7,
+      "baseline": 7,
+      "exterior_value": 11,
+      "exact_extra_exits": 7
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 8,
+      "baseline": 8,
+      "exterior_value": 10,
+      "exact_extra_exits": 8
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 9,
+      "baseline": 9,
+      "exterior_value": 9,
+      "exact_extra_exits": 9
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 20,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 19,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 18,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 17,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 16,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 15,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 14,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 7,
+      "baseline": 7,
+      "exterior_value": 13,
+      "exact_extra_exits": 7
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 8,
+      "baseline": 8,
+      "exterior_value": 12,
+      "exact_extra_exits": 8
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 9,
+      "baseline": 9,
+      "exterior_value": 11,
+      "exact_extra_exits": 9
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 10,
+      "baseline": 10,
+      "exterior_value": 10,
+      "exact_extra_exits": 10
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 22,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 21,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 20,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 19,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 18,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 17,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 16,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 7,
+      "baseline": 7,
+      "exterior_value": 15,
+      "exact_extra_exits": 7
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 8,
+      "baseline": 8,
+      "exterior_value": 14,
+      "exact_extra_exits": 8
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 9,
+      "baseline": 9,
+      "exterior_value": 13,
+      "exact_extra_exits": 9
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 10,
+      "baseline": 10,
+      "exterior_value": 12,
+      "exact_extra_exits": 10
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 11,
+      "baseline": 11,
+      "exterior_value": 11,
+      "exact_extra_exits": 11
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 24,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 1,
+      "baseline": 1,
+      "exterior_value": 23,
+      "exact_extra_exits": 1
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 2,
+      "baseline": 2,
+      "exterior_value": 22,
+      "exact_extra_exits": 2
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 3,
+      "baseline": 3,
+      "exterior_value": 21,
+      "exact_extra_exits": 3
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 4,
+      "baseline": 4,
+      "exterior_value": 20,
+      "exact_extra_exits": 4
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 5,
+      "baseline": 5,
+      "exterior_value": 19,
+      "exact_extra_exits": 5
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 6,
+      "baseline": 6,
+      "exterior_value": 18,
+      "exact_extra_exits": 6
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 7,
+      "baseline": 7,
+      "exterior_value": 17,
+      "exact_extra_exits": 7
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 8,
+      "baseline": 8,
+      "exterior_value": 16,
+      "exact_extra_exits": 8
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 9,
+      "baseline": 9,
+      "exterior_value": 15,
+      "exact_extra_exits": 9
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 10,
+      "baseline": 10,
+      "exterior_value": 14,
+      "exact_extra_exits": 10
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 11,
+      "baseline": 11,
+      "exterior_value": 13,
+      "exact_extra_exits": 11
+    },
+    {
+      "family": "outside_intervals",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 12,
+      "baseline": 12,
+      "exterior_value": 12,
+      "exact_extra_exits": 12
+    },
+    {
+      "family": "unsupported",
+      "copies": 1,
+      "filled": [],
+      "value": 2,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 2,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 1,
+      "filled": [
+        0
+      ],
+      "value": 2,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 1,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 2,
+      "filled": [],
+      "value": 4,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 4,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 2,
+      "filled": [
+        0
+      ],
+      "value": 4,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 3,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 2,
+      "filled": [
+        1
+      ],
+      "value": 4,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 3,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 2,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 4,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 2,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [],
+      "value": 6,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        0
+      ],
+      "value": 6,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        1
+      ],
+      "value": 6,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 6,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 4,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        2
+      ],
+      "value": 6,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        0,
+        2
+      ],
+      "value": 6,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 4,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        1,
+        2
+      ],
+      "value": 6,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 4,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 3,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 6,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 3,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [],
+      "value": 8,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0
+      ],
+      "value": 8,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        1
+      ],
+      "value": 8,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 8,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        2
+      ],
+      "value": 8,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        2
+      ],
+      "value": 8,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        1,
+        2
+      ],
+      "value": 8,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 8,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        3
+      ],
+      "value": 8,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        3
+      ],
+      "value": 8,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        1,
+        3
+      ],
+      "value": 8,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        3
+      ],
+      "value": 8,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        1,
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 8,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 4,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [],
+      "value": 10,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0
+      ],
+      "value": 10,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1
+      ],
+      "value": 10,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        2
+      ],
+      "value": 10,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        2
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        2
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        3
+      ],
+      "value": 10,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        3
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        3
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        3
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 10,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        4
+      ],
+      "value": 10,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        4
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        4
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        4
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "value": 10,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 10,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 5,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [],
+      "value": 12,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [
+        0
+      ],
+      "value": 12,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 11,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 12,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 12,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 12,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 12,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 12,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 6,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [],
+      "value": 14,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0
+      ],
+      "value": 14,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 13,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 14,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 14,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 11,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 14,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 14,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 14,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 14,
+      "cost": 14,
+      "simple_cost": 14,
+      "baseline": 7,
+      "exterior_value": 7,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [],
+      "value": 16,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 16,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0
+      ],
+      "value": 16,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 15,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 16,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 16,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 13,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 16,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 16,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 11,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 16,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 16,
+      "cost": 14,
+      "simple_cost": 14,
+      "baseline": 7,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 16,
+      "cost": 16,
+      "simple_cost": 16,
+      "baseline": 8,
+      "exterior_value": 8,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [],
+      "value": 18,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 18,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0
+      ],
+      "value": 18,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 17,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 18,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 16,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 18,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 15,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 18,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 18,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 13,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 18,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 18,
+      "cost": 14,
+      "simple_cost": 14,
+      "baseline": 7,
+      "exterior_value": 11,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 18,
+      "cost": 16,
+      "simple_cost": 16,
+      "baseline": 8,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 9,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 18,
+      "cost": 18,
+      "simple_cost": 18,
+      "baseline": 9,
+      "exterior_value": 9,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [],
+      "value": 20,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 20,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0
+      ],
+      "value": 20,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 19,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 20,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 18,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 20,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 17,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 20,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 16,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 20,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 15,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 20,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 20,
+      "cost": 14,
+      "simple_cost": 14,
+      "baseline": 7,
+      "exterior_value": 13,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 20,
+      "cost": 16,
+      "simple_cost": 16,
+      "baseline": 8,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 20,
+      "cost": 18,
+      "simple_cost": 18,
+      "baseline": 9,
+      "exterior_value": 11,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 10,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value": 20,
+      "cost": 20,
+      "simple_cost": 20,
+      "baseline": 10,
+      "exterior_value": 10,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [],
+      "value": 22,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 22,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0
+      ],
+      "value": 22,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 21,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 22,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 20,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 22,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 19,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 22,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 18,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 22,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 17,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 22,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 16,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 22,
+      "cost": 14,
+      "simple_cost": 14,
+      "baseline": 7,
+      "exterior_value": 15,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 22,
+      "cost": 16,
+      "simple_cost": 16,
+      "baseline": 8,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 22,
+      "cost": 18,
+      "simple_cost": 18,
+      "baseline": 9,
+      "exterior_value": 13,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value": 22,
+      "cost": 20,
+      "simple_cost": 20,
+      "baseline": 10,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 11,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value": 22,
+      "cost": 22,
+      "simple_cost": 22,
+      "baseline": 11,
+      "exterior_value": 11,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [],
+      "value": 24,
+      "cost": 0,
+      "simple_cost": 0,
+      "baseline": 0,
+      "exterior_value": 24,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0
+      ],
+      "value": 24,
+      "cost": 2,
+      "simple_cost": 2,
+      "baseline": 1,
+      "exterior_value": 23,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1
+      ],
+      "value": 24,
+      "cost": 4,
+      "simple_cost": 4,
+      "baseline": 2,
+      "exterior_value": 22,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "value": 24,
+      "cost": 6,
+      "simple_cost": 6,
+      "baseline": 3,
+      "exterior_value": 21,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "value": 24,
+      "cost": 8,
+      "simple_cost": 8,
+      "baseline": 4,
+      "exterior_value": 20,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "value": 24,
+      "cost": 10,
+      "simple_cost": 10,
+      "baseline": 5,
+      "exterior_value": 19,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "value": 24,
+      "cost": 12,
+      "simple_cost": 12,
+      "baseline": 6,
+      "exterior_value": 18,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "value": 24,
+      "cost": 14,
+      "simple_cost": 14,
+      "baseline": 7,
+      "exterior_value": 17,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "value": 24,
+      "cost": 16,
+      "simple_cost": 16,
+      "baseline": 8,
+      "exterior_value": 16,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "value": 24,
+      "cost": 18,
+      "simple_cost": 18,
+      "baseline": 9,
+      "exterior_value": 15,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "value": 24,
+      "cost": 20,
+      "simple_cost": 20,
+      "baseline": 10,
+      "exterior_value": 14,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "value": 24,
+      "cost": 22,
+      "simple_cost": 22,
+      "baseline": 11,
+      "exterior_value": 13,
+      "exact_extra_exits": 0
+    },
+    {
+      "family": "unsupported",
+      "copies": 12,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "value": 24,
+      "cost": 24,
+      "simple_cost": 24,
+      "baseline": 12,
+      "exterior_value": 12,
+      "exact_extra_exits": 0
+    }
+  ],
+  "scope": "Exact full-network cardinal compression of filled pocket trees; exact simple cost when every grouped alpha has empty direct support; discounted circulation restores general exact cost. All exterior mixed/BP/beta/interval identities retained. General proofs written; no universal frozen saturation or5/6 improvement."
+}

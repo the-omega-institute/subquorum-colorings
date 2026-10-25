@@ -335,3 +335,10 @@ shows that exterior repair can require two links even for one shared pocket.
 Separate reachability of exits is insufficient: shared mixed owners, whole
 betas and original intervals must each be reserved once across all residual
 trees. The universal compensation theorem and the 5/6 improvement remain open.
+
+The sequel [POCKET_TREE_EXTERIOR_COMPRESSION.md](POCKET_TREE_EXTERIOR_COMPRESSION.md)
+now reduces these trees to a jointly capacitated exterior network: one
+residual source chooses any original alpha exit in its tree. Maximum payment
+is preserved after adding the internal baseline. Unsupported alphas also
+give exact minimum links; arbitrary direct support needs the discounted
+circulation correction. No exterior saturation theorem is assumed.

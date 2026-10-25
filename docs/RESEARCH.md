@@ -7,6 +7,17 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [filled-pocket tree exterior compression](POCKET_TREE_EXTERIOR_COMPRESSION.md)
+retains the full exterior mixed/BP/beta/interval network and replaces each
+internal tree by one residual source choosing an original alpha exit.
+Exact original payment is B+R. If grouped alphas have empty direct support,
+minimum links are exactly B+d; a frozen board refutes this cost equality
+without the assumption. A discounted circulation restores exact general
+cost, accounting for multiple exterior exits by saved internal links.
+866 models/1,732 checked lifts, including 264 frozen boards and 285 independent
+primitive packs, plus four scoped Lean declarations pass. The remaining
+geometric obligation is a joint exterior cut inequality; universal 5/6 is open.
+
 25 October: [shared-pocket joint deficit and full-pool cost obstruction](SHARED_POCKET_COMPLETION_AND_JOINT_DEFICIT.md)
 extends the guarded-pocket geometry to different alpha owners. In the declared
 pocket interface, any multigraph has exact payment V=k-t and minimum links
