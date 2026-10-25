@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_full_pool_primitive_packs": 6,
+    "uniform_direction_exact_flow_controls": 20,
+    "piecewise_distinct_direct_payments": 116,
+    "opposed_all_parameter_boards": 10,
+    "frozen_endpoint_witnesses": 28040,
+    "forced_unique_matching_pairs": 14020,
+    "complete_endpoint_hulls_and_matching_augmentation_checks": 10,
+    "carried_isometry_direction_controls": 48
+  },
+  "records": [
+    {
+      "q": 1,
+      "shape": [
+        12,
+        24
+      ],
+      "selected": 99,
+      "matching": 40,
+      "slack": 5,
+      "uniform_alphas": 2,
+      "uniform_beta": 1,
+      "uniform_value": 1,
+      "uniform_deficit": 1,
+      "piecewise_value": 2,
+      "fixedP_optimum_upper": 100,
+      "endpoint_hull_size": 15
+    },
+    {
+      "q": 2,
+      "shape": [
+        22,
+        44
+      ],
+      "selected": 335,
+      "matching": 140,
+      "slack": 9,
+      "uniform_alphas": 4,
+      "uniform_beta": 2,
+      "uniform_value": 2,
+      "uniform_deficit": 2,
+      "piecewise_value": 4,
+      "fixedP_optimum_upper": 336,
+      "endpoint_hull_size": 107
+    },
+    {
+      "q": 3,
+      "shape": [
+        32,
+        64
+      ],
+      "selected": 711,
+      "matching": 300,
+      "slack": 13,
+      "uniform_alphas": 6,
+      "uniform_beta": 3,
+      "uniform_value": 3,
+      "uniform_deficit": 3,
+      "piecewise_value": 6,
+      "fixedP_optimum_upper": 712,
+      "endpoint_hull_size": 259
+    },
+    {
+      "q": 4,
+      "shape": [
+        42,
+        84
+      ],
+      "selected": 1227,
+      "matching": 520,
+      "slack": 17,
+      "uniform_alphas": 8,
+      "uniform_beta": 4,
+      "uniform_value": 4,
+      "uniform_deficit": 4,
+      "piecewise_value": 8,
+      "fixedP_optimum_upper": 1228,
+      "endpoint_hull_size": 471
+    },
+    {
+      "q": 5,
+      "shape": [
+        52,
+        104
+      ],
+      "selected": 1883,
+      "matching": 800,
+      "slack": 21,
+      "uniform_alphas": 10,
+      "uniform_beta": 5,
+      "uniform_value": 5,
+      "uniform_deficit": 5,
+      "piecewise_value": 10,
+      "fixedP_optimum_upper": 1884,
+      "endpoint_hull_size": 743
+    },
+    {
+      "q": 6,
+      "shape": [
+        62,
+        124
+      ],
+      "selected": 2679,
+      "matching": 1140,
+      "slack": 25,
+      "uniform_alphas": 12,
+      "uniform_beta": 6,
+      "uniform_value": 6,
+      "uniform_deficit": 6,
+      "piecewise_value": 12,
+      "fixedP_optimum_upper": 2680,
+      "endpoint_hull_size": 1075
+    },
+    {
+      "q": 7,
+      "shape": [
+        72,
+        144
+      ],
+      "selected": 3615,
+      "matching": 1540,
+      "slack": 29,
+      "uniform_alphas": 14,
+      "uniform_beta": 7,
+      "uniform_value": 7,
+      "uniform_deficit": 7,
+      "piecewise_value": 14,
+      "fixedP_optimum_upper": 3616,
+      "endpoint_hull_size": 1467
+    },
+    {
+      "q": 8,
+      "shape": [
+        82,
+        164
+      ],
+      "selected": 4691,
+      "matching": 2000,
+      "slack": 33,
+      "uniform_alphas": 16,
+      "uniform_beta": 8,
+      "uniform_value": 8,
+      "uniform_deficit": 8,
+      "piecewise_value": 16,
+      "fixedP_optimum_upper": 4692,
+      "endpoint_hull_size": 1919
+    },
+    {
+      "q": 10,
+      "shape": [
+        102,
+        204
+      ],
+      "selected": 7263,
+      "matching": 3100,
+      "slack": 41,
+      "uniform_alphas": 20,
+      "uniform_beta": 10,
+      "uniform_value": 10,
+      "uniform_deficit": 10,
+      "piecewise_value": 20,
+      "fixedP_optimum_upper": 7264,
+      "endpoint_hull_size": 3003
+    },
+    {
+      "q": 12,
+      "shape": [
+        122,
+        244
+      ],
+      "selected": 10395,
+      "matching": 4440,
+      "slack": 49,
+      "uniform_alphas": 24,
+      "uniform_beta": 12,
+      "uniform_value": 12,
+      "uniform_deficit": 12,
+      "piecewise_value": 24,
+      "fixedP_optimum_upper": 10396,
+      "endpoint_hull_size": 4327
+    }
+  ],
+  "scope": "Written all-q physical opposed-direction family; one necessary seam deletion; all endpoints frozen; unique actual M; both aligned global directions pay only q of2q with all raw units; disjoint piecewise perpendicular directions pay2q at zero links; joint T/P inclusion maximal under arbitrary rematching; within one selection of true ALL-T fixed-P optimum.",
+  "limits": [
+    "Not a counterexample to the numerical grid inequality: slack4qplus1.",
+    "The two aligned global directions are tested, not every possible phase or arbitrary domino partition.",
+    "True fixed-P optimum is bounded within one of displayed T, not claimed equal."
+  ]
+}

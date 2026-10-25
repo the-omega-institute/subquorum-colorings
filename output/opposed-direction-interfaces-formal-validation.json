@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T13:06:27.393839+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "34726 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "35%",
+    "physical_memory_bytes": 17179869184,
+    "concurrency": "One small standalone module at a time; preserve every unrelated process."
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/FullPoolSingletonObstruction.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.FullPoolSingletonObstruction.reach_stays_closed' does not depend on any axioms",
+        "'SubQuorum.FullPoolSingletonObstruction.singleton_payments_unique' does not depend on any axioms",
+        "'SubQuorum.FullPoolSingletonObstruction.no_two_distinct_singleton_payments' does not depend on any axioms",
+        "'SubQuorum.FullPoolSingletonObstruction.raw_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.original_marked_ledger' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.stack_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.sources_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.reachable_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.reachable_support_singleton' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.FullPoolSingletonObstruction.both_have_singleton_witness' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    {
+      "module": "SubQuorum/OpposedDirectionInterfaces.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.OpposedDirectionInterfaces.closed_route_no_exit' does not depend on any axioms",
+        "'SubQuorum.OpposedDirectionInterfaces.region_payments_injective' does not depend on any axioms",
+        "'SubQuorum.OpposedDirectionInterfaces.partition_ledger' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.square_area' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.opposed_ledger' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.h_closure_certificate' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.h_arbitrary_route_exclusion' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.h_direct_payment_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.v_closure_certificate' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.v_arbitrary_route_exclusion' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.v_direct_payment_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.piecewise_physical_payments' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.OpposedDirectionInterfaces.actual_counts_and_slack' does not depend on any axioms"
+      ]
+    }
+  ],
+  "scope": "General closed-route no-exit, region-tagged payment injectivity, finite partition ledger and all-q polynomial area/slack; actual q1 feasible99T/all80P frozen geometry, both direction closed empty-support/no-beta certificates and arbitrary-length route exclusions, direct remaining-source interval witnesses, disjoint physical piecewise units.",
+  "not_formalized": [
+    "All-q seam feasibility and uniform coordinate schedules",
+    "Coordinate-to-owner/support compilation and exact full-network payment counts",
+    "All-q joint-maximality hull classification and cut-respecting rectangle geometric gluing"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

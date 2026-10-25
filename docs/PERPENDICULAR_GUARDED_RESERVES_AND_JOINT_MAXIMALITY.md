@@ -2,6 +2,8 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Follow-up: [opposed interfaces and a valid piecewise decomposition](OPPOSED_DIRECTION_INTERFACES_AND_PIECEWISE_COMPENSATION.md) gives a fully frozen jointly maximal family where both aligned global directions fail by q, while a disjoint two-region choice pays all.
+
 The [adjacent frozen module family](FORCED_MATES_AND_ADJACENT_MAXIMA.md)
 has a unique actual matching and a true fixed-P selection maximum, yet its
 horizontal whole-pool compensation is zero. We now prove two further facts.
