@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T12:42:15.778701+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "24491 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "36%",
+    "physical_memory_bytes": 17179869184,
+    "concurrency": "One small standalone module at a time; preserve every unrelated process."
+  },
+  "checks": [
+    {
+      "module": "SubQuorum/BTColumnCorridorObstruction.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.BTColumnCorridorObstruction.strict_rank_complete' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_injective' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.compressed_payment_available' does not depend on any axioms",
+        "'SubQuorum.BTColumnCorridorObstruction.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.decomposition_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.tip_lists_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.closure_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_old_access' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.all_routes_stay_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.no_reachable_old_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.two_link_exit' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.longer_corridor_witness' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.BTColumnCorridorObstruction.sizes_and_positive_packet_margin' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/SelectionMaximumSingleton.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.SelectionMaximumSingleton.isolated_selection_addable' does not depend on any axioms",
+        "'SubQuorum.SelectionMaximumSingleton.candidate_hull_isolated' does not depend on any axioms",
+        "'SubQuorum.SelectionMaximumSingleton.maximal_contains_compatible' does not depend on any axioms",
+        "'SubQuorum.SelectionMaximumSingleton.frozen_extend_selection' does not depend on any axioms",
+        "'SubQuorum.SelectionMaximumSingleton.extension_constant_slack' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.w8_cover_bound' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.fixed_P_constant_slack' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.fixed_P_attaining_count' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.w8_exact_ledger' does not depend on any axioms",
+        "'SubQuorum.SelectionMaximumSingleton.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.sources_inside' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.reachable_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.reachable_support_empty' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.SelectionMaximumSingleton.selected_count' does not depend on any axioms"
+      ]
+    },
+    {
+      "module": "SubQuorum/PerpendicularGuardedReserves.lean",
+      "exit_code": 0,
+      "axiom_audits": [
+        "'SubQuorum.PerpendicularGuardedReserves.saturated_guard_excludes' does not depend on any axioms",
+        "'SubQuorum.PerpendicularGuardedReserves.two_endpoints_exclude_selection' does not depend on any axioms",
+        "'SubQuorum.PerpendicularGuardedReserves.chosen_reserve_available' does not depend on any axioms",
+        "'SubQuorum.PerpendicularGuardedReserves.chosen_reserves_injective' does not depend on any axioms",
+        "'SubQuorum.PerpendicularGuardedReserves.one_removal_survives' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.balance_append' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.opposite_weight' depends on axioms: [propext]",
+        "'SubQuorum.PerpendicularGuardedReserves.matching_balanced' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.single_colour_balance' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.no_single_colour_matching_extension' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.geometry_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.mate_closed' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.certificate_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.endpoint_hull_valid' depends on axioms: [propext, Quot.sound]",
+        "'SubQuorum.PerpendicularGuardedReserves.endpoint_hull_isolation' does not depend on any axioms",
+        "'SubQuorum.PerpendicularGuardedReserves.two_actual_reserves' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "General saturated-neighbour guard and two-P exclusion; arbitrary-index two-reserve choice with injectivity and one-removal survival; list colour balance for arbitrary opposite-colour matchings and no single-colour endpoint extension; W8/q1 transposed feasible41T/all34P freezing, complete finite endpoint hull/isolation, and two actual guarded BB witnesses.",
+  "not_formalized": [
+    "All-W/q strand classification and complete resource-ownership adapter",
+    "All-W/q exact endpoint hull table and isolated candidate adaptation",
+    "Full network value formula and both-band comparison"
+  ],
+  "sorry": false,
+  "native_decide": false
+}

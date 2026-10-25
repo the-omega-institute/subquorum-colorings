@@ -2,6 +2,8 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Follow-up: [perpendicular guarded reserves and joint maximality](PERPENDICULAR_GUARDED_RESERVES_AND_JOINT_MAXIMALITY.md) proves vertical full compensation for every feasible T with this P, and excludes all monotone endpoint growth of the attaining configuration, even after arbitrary rematching.
+
 We remove two restrictions from the preceding [fixed-P maximum
 result](SELECTION_MAXIMUM_SINGLETON_OBSTRUCTION.md): the actual matching is
 now proved unique, and the number of horizontally adjacent modules is
