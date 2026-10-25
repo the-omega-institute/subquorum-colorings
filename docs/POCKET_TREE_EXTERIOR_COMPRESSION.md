@@ -320,3 +320,9 @@ the remaining trees. In particular, the tight completed fixture has an older
 second beta joining the same two alphas; considering both edges eliminates
 the closed two-source component. The tree compression theorem above remains
 valid when only one of those edges is selected for compression.
+
+The subsequent [short-beta deletion obstruction](SHORT_BETA_DELETION_AND_FREEZING_OBSTRUCTION.md)
+also shows that geometric deletion need not preserve complete freezing.
+The reduced network above is an algebraic system retaining original resource
+identities; further geometric estimates must use the original frozen board,
+unless a separate preservation or repair theorem is supplied.

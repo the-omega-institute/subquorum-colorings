@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [short-beta deletion and freezing obstruction](SHORT_BETA_DELETION_AND_FREEZING_OBSTRUCTION.md)
+refutes geometric reverse completion even when both flanking alphas have
+empty whole support. An explicit frozen 16x14 board loses complete freezing
+after deleting its recognized guarded short beta; a four-point actual
+dependency core excludes every strict certificate. A complete recognized
+tree variant fails too, with a supported second alpha. Deletion creates
+two distinct interval units and repairs compensation at zero links, so the
+failed implication is freezing preservation, not the target bound. General
+all-q stacking/ledger proofs, 130 deletion pairs and eight Lean declarations
+pass, including the actual original complete freezing and all-ranks deletion
+obstruction. Residual geometric arguments must use the original frozen board;
+algebraic cycle elimination and tree compression remain valid. 5/6 is open.
+
 25 October: [forced short-beta PP guards and cyclic-block elimination](FORCED_POCKET_GUARDS_AND_CYCLE_ELIMINATION.md)
 derives the adjacent occupied PP columns from complete freezing, rather
 than assuming a guarded construction history. Every short horizontal beta

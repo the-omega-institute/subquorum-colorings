@@ -95,6 +95,12 @@ Recognition uses the current configuration; it must not silently be
 replaced by an assumed monotone completion history from a frozen empty
 pocket. Deleting the edge preserves feasibility, but may destroy freezing.
 
+The subsequent [deletion obstruction](SHORT_BETA_DELETION_AND_FREEZING_OBSTRUCTION.md)
+now realizes that failure, even with empty whole support for both adjacent
+alphas. Its four-point actual closed core and the concrete original complete
+freezing are checked by Lean. Thus the algebraic elimination below must not
+be interpreted as a frozen physical-subboard induction.
+
 ## 3. The actual short-beta resource multigraph
 
 Construct H on the original alpha owners. Include **every** horizontal

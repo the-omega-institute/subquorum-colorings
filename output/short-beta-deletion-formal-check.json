@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "machine": "user-authorized local machine",
+  "preflight": {
+    "memory_gib": 16,
+    "memory_free_percent": 39,
+    "active_lean_lake": 0,
+    "process_detection": "comm basename exactly lean or lake",
+    "concurrency": 1
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean SubQuorum/ShortBetaDeletion.lean",
+  "working_directory": "formal",
+  "exit_code": 0,
+  "declarations": [
+    "minimum_on_list",
+    "closed_core_excludes_certificate",
+    "original_feasible",
+    "original_frozen",
+    "deletion_feasible",
+    "actual_core_closed",
+    "actual_core_inside",
+    "deletion_has_no_freezing_certificate"
+  ],
+  "axioms": {
+    "minimum_on_list": [
+      "propext",
+      "Quot.sound"
+    ],
+    "closed_core_excludes_certificate": [
+      "propext",
+      "Quot.sound"
+    ],
+    "original_feasible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "original_frozen": [
+      "propext",
+      "Quot.sound"
+    ],
+    "deletion_feasible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "actual_core_closed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "actual_core_inside": [
+      "propext",
+      "Quot.sound"
+    ],
+    "deletion_has_no_freezing_certificate": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Generic finite closed-core obstruction; concrete original matching/selection feasibility and complete strict freezing, deletion feasibility, actual four-point core, and impossibility of every strict rank certificate after deletion are kernel checked. Alpha/beta/PP recognition, original interval inventory, compensation and all-q stacking remain written proofs with independent computational controls.",
+  "external_review": "No new independent review claimed."
+}
