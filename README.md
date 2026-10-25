@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [isolated-candidate obstruction and exact strip-direction repair](docs/ISOLATED_COVERAGE_OBSTRUCTION_AND_STRIP_REPAIR.md):
+for all even W>=8 and k>=1, a fully frozen mixed partition with 2k actual
+matching crossings has k unpaid sources even after ALL occupied-isolated
+selections are removed. Every such source has a one-owner reachable closure
+and empty support, so arbitrary routes and beta forks cannot help. Flipping
+any f prescribed narrow strips pays exactly f sources with zero links,
+unchanged physical source identities, and no deletion required. Private
+singleton reserves prevent duplicate credit. Checks pass 568 physical
+models, 244 independent primitive profiles and 13 scoped Lean declarations.
+This refutes automatic
+candidate coverage in a fixed conservative mixed network; the family has
+a zero-loss direction repair and gives no numerical 5/6 counterexample.
+
 New [isolated-selection repair choice and one combined budget](docs/ISOLATED_SELECTION_REPAIR_MATROID.md):
 in any fixed even-rectangle mixed-direction partition, deleting occupied-
 isolated selections adds distinct original singleton sinks while preserving
