@@ -1,0 +1,1033 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_primitive_comparisons": 126,
+    "models": 450,
+    "frozen": 224,
+    "positive_new_tp_models": 95,
+    "positive_exact_certificate_loss": 12,
+    "complete_certificates": 438,
+    "single_new_selection_models": 310,
+    "feasible_nonfrozen": 226,
+    "joint_selected_only_models": 64,
+    "single_selection_endpoint_extension_models": 32,
+    "joint_endpoint_selection_models": 32,
+    "new_end_repair_matchings": 12,
+    "disjoint_new_resource_repairs": 12,
+    "sharp_family_models": 12
+  },
+  "original_single_selectable_sites": 155,
+  "unique_promotable_old_endpoint": [
+    3,
+    14
+  ],
+  "candidate_exclusions": [
+    {
+      "source": [
+        12,
+        14
+      ],
+      "candidate": [
+        12,
+        15
+      ],
+      "retained_endpoint_neighbors": [
+        [
+          11,
+          15
+        ],
+        [
+          12,
+          14
+        ]
+      ]
+    },
+    {
+      "source": [
+        14,
+        11
+      ],
+      "candidate": [
+        14,
+        10
+      ],
+      "retained_endpoint_neighbors": [
+        [
+          13,
+          10
+        ],
+        [
+          14,
+          11
+        ]
+      ]
+    },
+    {
+      "source": [
+        19,
+        11
+      ],
+      "candidate": [
+        19,
+        10
+      ],
+      "retained_endpoint_neighbors": [
+        [
+          19,
+          11
+        ],
+        [
+          20,
+          10
+        ]
+      ]
+    },
+    {
+      "source": [
+        24,
+        6
+      ],
+      "candidate": [
+        24,
+        7
+      ],
+      "retained_endpoint_neighbors": [
+        [
+          23,
+          7
+        ],
+        [
+          24,
+          6
+        ],
+        [
+          24,
+          8
+        ]
+      ]
+    },
+    {
+      "source": [
+        24,
+        17
+      ],
+      "candidate": [
+        24,
+        16
+      ],
+      "retained_endpoint_neighbors": [
+        [
+          23,
+          16
+        ],
+        [
+          24,
+          17
+        ]
+      ]
+    }
+  ],
+  "named": {
+    "unique_old_endpoint_promotion": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 50,
+      "new_selected": 1,
+      "endpoints": 308,
+      "alpha": 4,
+      "beta": 5,
+      "new_tp": 1,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": true
+    },
+    "joint_fill_0": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 84,
+      "new_selected": 35,
+      "endpoints": 308,
+      "alpha": 4,
+      "beta": 6,
+      "new_tp": 0,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": true
+    },
+    "joint_fill_1": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 310,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 0,
+      "filled_candidates": 1,
+      "surviving_units": 4,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": true
+    },
+    "joint_fill_2": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 310,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 0,
+      "filled_candidates": 1,
+      "surviving_units": 4,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_3": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 85,
+      "new_selected": 36,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_4": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 310,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 0,
+      "filled_candidates": 1,
+      "surviving_units": 4,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_5": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_6": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_7": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 86,
+      "new_selected": 37,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 1,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_8": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 84,
+      "new_selected": 35,
+      "endpoints": 310,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 0,
+      "filled_candidates": 1,
+      "surviving_units": 4,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_9": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_10": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_11": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 1,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_12": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_13": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 1,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_14": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 9,
+      "new_tp": 0,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_15": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 316,
+      "alpha": 4,
+      "beta": 10,
+      "new_tp": 0,
+      "filled_candidates": 4,
+      "surviving_units": 1,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_16": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 84,
+      "new_selected": 35,
+      "endpoints": 310,
+      "alpha": 4,
+      "beta": 6,
+      "new_tp": 1,
+      "filled_candidates": 1,
+      "surviving_units": 4,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_17": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 1,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_18": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 86,
+      "new_selected": 37,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 1,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_19": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 85,
+      "new_selected": 36,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 9,
+      "new_tp": 0,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_20": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 84,
+      "new_selected": 35,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 1,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 1,
+      "interval_payments": 1,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_21": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 9,
+      "new_tp": 0,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_22": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 9,
+      "new_tp": 0,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_23": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 81,
+      "new_selected": 32,
+      "endpoints": 316,
+      "alpha": 4,
+      "beta": 10,
+      "new_tp": 0,
+      "filled_candidates": 4,
+      "surviving_units": 1,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_24": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 312,
+      "alpha": 4,
+      "beta": 8,
+      "new_tp": 0,
+      "filled_candidates": 2,
+      "surviving_units": 3,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_25": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 85,
+      "new_selected": 36,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 9,
+      "new_tp": 0,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_26": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 81,
+      "new_selected": 32,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 9,
+      "new_tp": 0,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_27": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 316,
+      "alpha": 4,
+      "beta": 10,
+      "new_tp": 0,
+      "filled_candidates": 4,
+      "surviving_units": 1,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_28": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 83,
+      "new_selected": 34,
+      "endpoints": 314,
+      "alpha": 4,
+      "beta": 7,
+      "new_tp": 2,
+      "filled_candidates": 3,
+      "surviving_units": 2,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_29": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 316,
+      "alpha": 4,
+      "beta": 10,
+      "new_tp": 0,
+      "filled_candidates": 4,
+      "surviving_units": 1,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_30": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 82,
+      "new_selected": 33,
+      "endpoints": 316,
+      "alpha": 4,
+      "beta": 10,
+      "new_tp": 0,
+      "filled_candidates": 4,
+      "surviving_units": 1,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "joint_fill_31": {
+      "shape": [
+        28,
+        24
+      ],
+      "selected": 86,
+      "new_selected": 37,
+      "endpoints": 318,
+      "alpha": 4,
+      "beta": 10,
+      "new_tp": 1,
+      "filled_candidates": 5,
+      "surviving_units": 0,
+      "residual_alpha": 0,
+      "interval_payments": 0,
+      "exact_certificate_loss": 0,
+      "restricted_deficit": 0,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_1": {
+      "shape": [
+        42,
+        30
+      ],
+      "selected": 51,
+      "new_selected": 2,
+      "endpoints": 310,
+      "alpha": 5,
+      "beta": 6,
+      "new_tp": 2,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 2,
+      "interval_payments": 1,
+      "exact_certificate_loss": 1,
+      "restricted_deficit": 1,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_2": {
+      "shape": [
+        48,
+        30
+      ],
+      "selected": 53,
+      "new_selected": 4,
+      "endpoints": 312,
+      "alpha": 6,
+      "beta": 6,
+      "new_tp": 4,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 3,
+      "interval_payments": 1,
+      "exact_certificate_loss": 2,
+      "restricted_deficit": 2,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_3": {
+      "shape": [
+        54,
+        30
+      ],
+      "selected": 55,
+      "new_selected": 6,
+      "endpoints": 314,
+      "alpha": 7,
+      "beta": 6,
+      "new_tp": 6,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 4,
+      "interval_payments": 1,
+      "exact_certificate_loss": 3,
+      "restricted_deficit": 3,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_4": {
+      "shape": [
+        60,
+        30
+      ],
+      "selected": 57,
+      "new_selected": 8,
+      "endpoints": 316,
+      "alpha": 8,
+      "beta": 6,
+      "new_tp": 8,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 5,
+      "interval_payments": 1,
+      "exact_certificate_loss": 4,
+      "restricted_deficit": 4,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_5": {
+      "shape": [
+        66,
+        30
+      ],
+      "selected": 59,
+      "new_selected": 10,
+      "endpoints": 318,
+      "alpha": 9,
+      "beta": 6,
+      "new_tp": 10,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 6,
+      "interval_payments": 1,
+      "exact_certificate_loss": 5,
+      "restricted_deficit": 5,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_6": {
+      "shape": [
+        72,
+        30
+      ],
+      "selected": 61,
+      "new_selected": 12,
+      "endpoints": 320,
+      "alpha": 10,
+      "beta": 6,
+      "new_tp": 12,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 7,
+      "interval_payments": 1,
+      "exact_certificate_loss": 6,
+      "restricted_deficit": 6,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_7": {
+      "shape": [
+        78,
+        30
+      ],
+      "selected": 63,
+      "new_selected": 14,
+      "endpoints": 322,
+      "alpha": 11,
+      "beta": 6,
+      "new_tp": 14,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 8,
+      "interval_payments": 1,
+      "exact_certificate_loss": 7,
+      "restricted_deficit": 7,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_8": {
+      "shape": [
+        84,
+        30
+      ],
+      "selected": 65,
+      "new_selected": 16,
+      "endpoints": 324,
+      "alpha": 12,
+      "beta": 6,
+      "new_tp": 16,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 9,
+      "interval_payments": 1,
+      "exact_certificate_loss": 8,
+      "restricted_deficit": 8,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_9": {
+      "shape": [
+        90,
+        30
+      ],
+      "selected": 67,
+      "new_selected": 18,
+      "endpoints": 326,
+      "alpha": 13,
+      "beta": 6,
+      "new_tp": 18,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 10,
+      "interval_payments": 1,
+      "exact_certificate_loss": 9,
+      "restricted_deficit": 9,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_10": {
+      "shape": [
+        96,
+        30
+      ],
+      "selected": 69,
+      "new_selected": 20,
+      "endpoints": 328,
+      "alpha": 14,
+      "beta": 6,
+      "new_tp": 20,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 11,
+      "interval_payments": 1,
+      "exact_certificate_loss": 10,
+      "restricted_deficit": 10,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_11": {
+      "shape": [
+        102,
+        30
+      ],
+      "selected": 71,
+      "new_selected": 22,
+      "endpoints": 330,
+      "alpha": 15,
+      "beta": 6,
+      "new_tp": 22,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 12,
+      "interval_payments": 1,
+      "exact_certificate_loss": 11,
+      "restricted_deficit": 11,
+      "full_pool_deficit": 0,
+      "frozen": false
+    },
+    "sharp_reserved_family_12": {
+      "shape": [
+        108,
+        30
+      ],
+      "selected": 73,
+      "new_selected": 24,
+      "endpoints": 332,
+      "alpha": 16,
+      "beta": 6,
+      "new_tp": 24,
+      "filled_candidates": 0,
+      "surviving_units": 5,
+      "residual_alpha": 13,
+      "interval_payments": 1,
+      "exact_certificate_loss": 12,
+      "restricted_deficit": 12,
+      "full_pool_deficit": 0,
+      "frozen": false
+    }
+  },
+  "scope": "ANY feasible finite extension retaining old49T and308P; arbitrary addedT/P and arbitraryM. Old23TP adaptive certificate persists with singleton units. DeltaNewTP holes; exact certificate loss k equals postC alpha paths with TWOnewTPends; 2kLEdeltaLEnewSelections. Full ordinary if k0, especially deltaLE1, hence atMostOneNewSelection with ANYnewP. Fixed oldP arbitraryTextensions ALWAYSfull. Sharp feasible NONFROZEN family disproves ONLYoldReserve sufficiency, fullPool remains complete. Universal frozen compensation and5over6 OPEN."
+}

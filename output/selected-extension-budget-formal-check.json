@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "command": "lean SubQuorum/EndpointExtensionReplacement.lean",
+  "exit_code": 0,
+  "preflight": {
+    "machine": "user-authorized local Mac",
+    "memory_bytes": 17179869184,
+    "free_percentage": 74,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "new_audited_declarations": [
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.two_retained_neighbors_forbid_selection",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.retained_neighbor_forbids_selected_pair",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_end_counts",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.new_tip_defect_budget",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.interval_payment_budget",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_payment_loss",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.at_most_one_new_tip_has_no_loss",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_candidates_have_two_retained_neighbors",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_adjacent_columns_cannot_become_TT",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_unique_promotable_old_endpoint"
+  ],
+  "all_audited_declarations": [
+    "SubQuorum.EndpointExtensionReplacement.selected_guard_blank",
+    "SubQuorum.EndpointExtensionReplacement.saturation_no_new_tip",
+    "SubQuorum.EndpointExtensionReplacement.local_two_state_replacement",
+    "SubQuorum.EndpointExtensionReplacement.adaptive_target_injection",
+    "SubQuorum.EndpointExtensionReplacement.interval_payment_budget",
+    "SubQuorum.EndpointExtensionReplacement.four_fills_force_beta_only",
+    "SubQuorum.EndpointExtensionReplacement.payment_ledger",
+    "SubQuorum.EndpointExtensionReplacement.actual_all_selected_saturated",
+    "SubQuorum.EndpointExtensionReplacement.actual_twenty_three_guards",
+    "SubQuorum.EndpointExtensionReplacement.actual_static_certificate_targets",
+    "SubQuorum.EndpointExtensionReplacement.actual_five_singleton_guards",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.two_retained_neighbors_forbid_selection",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.retained_neighbor_forbids_selected_pair",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_end_counts",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.new_tip_defect_budget",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.interval_payment_budget",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_payment_loss",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.at_most_one_new_tip_has_no_loss",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_candidates_have_two_retained_neighbors",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_adjacent_columns_cannot_become_TT",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_unique_promotable_old_endpoint"
+  ],
+  "axiom_free_declarations": [
+    "SubQuorum.EndpointExtensionReplacement.selected_guard_blank",
+    "SubQuorum.EndpointExtensionReplacement.saturation_no_new_tip",
+    "SubQuorum.EndpointExtensionReplacement.local_two_state_replacement",
+    "SubQuorum.EndpointExtensionReplacement.actual_all_selected_saturated",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.two_retained_neighbors_forbid_selection",
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.retained_neighbor_forbids_selected_pair"
+  ],
+  "axioms_by_declaration": {
+    "SubQuorum.EndpointExtensionReplacement.adaptive_target_injection": [
+      "propext"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.interval_payment_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.four_fills_force_beta_only": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.payment_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.actual_twenty_three_guards": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.actual_static_certificate_targets": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.actual_five_singleton_guards": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_end_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.new_tip_defect_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.interval_payment_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_payment_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.at_most_one_new_tip_has_no_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_candidates_have_two_retained_neighbors": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_adjacent_columns_cannot_become_TT": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_unique_promotable_old_endpoint": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "axioms_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "no_sorry_native": true,
+  "no_new_axiom_declarations": true,
+  "prior_attempts": [
+    {
+      "status": "TERMINATED_FOR_MEASURED_MEMORY_PRESSURE",
+      "exit_code": 143,
+      "measured_resident_GiB": 1.7,
+      "measured_swapped_GiB": 13.2,
+      "change": "Replace nested all-endpoint existential searches by explicit checked local witnesses. No CI or machine architecture change."
+    },
+    {
+      "status": "TYPECHECK_ERROR_FIXED",
+      "exit_code": 1,
+      "change": "Explicitly simplify empty-list membership in finite case split; final log clean."
+    }
+  ],
+  "scope": "10NEW/21combined scoped local audits. General two-retained-neighbor/selected-pair exclusions; recursive finite end classification exact loss, interval and payment arithmetic; atMostOneNewTP loss0. Actual flexible candidates2retainedPneighbors, all10 adjacent columns jointly TTblocked, unique promotable old endpoint3_14. ArbitraryM physical paths, final interval adapter, newTP-to-newT injection and normal-form lift WRITTENPython; unbounded sharp NONFROZEN reservation family writtenPython. NOTendToEndLean jointExtensionFlow. UniversalFrozenCompensationAnd5over6OPEN."
+}

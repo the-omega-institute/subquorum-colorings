@@ -216,3 +216,13 @@ and [direct Lean source](../formal/SubQuorum/EndpointExtensionReplacement.lean).
 The [310P positive fixture](../develop/fixtures/endpoint_extension_one_target_frozen.json)
 has an independently checked complete rank certificate; its freezing is not
 claimed as a new Lean theorem.
+
+## New-selection continuation
+
+The [next result](SELECTED_EXTENSIONS_AND_NEW_TP_DEFECT_BUDGET.md) allows
+new selections. Joint TT exclusions preserve all five singleton candidates;
+the retained certificate has exact loss k final alpha paths with TWO newTP
+ends, with2k<=d. For fixed oldP, at most one newTP can occur, so arbitrary
+selection additions and arbitrary rematching are fully ordinarily compensated.
+An unbounded NONFROZEN reserved-pool family makes the general defect budget
+sharp; its full final resource pool still pays all alpha.

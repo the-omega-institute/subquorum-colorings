@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [new selections and the exact new-TP defect budget](SELECTED_EXTENSIONS_AND_NEW_TP_DEFECT_BUDGET.md).
+Arbitrary feasible new selections on the fixed308P endpoint set are now
+fully ordinarily compensated for EVERY actual rematching. For arbitrary
+joint T/P additions retaining the old occupation, the guarded old23TP
+certificate persists: candidates cannot become selected and neighbouring
+columns cannot simultaneously becomeTT. Its EXACT loss is k post-cancellation
+alpha paths with two NEW TP ends, with2k<=d. The old-reserve rule is sharply
+false for an unbounded feasible NONFROZEN family (restricted deficit j with
+d=2j); opening its new original units restores full payment. This is not
+a frozen-only or all-resource counterexample. See
+[complete proof](SELECTED_EXTENSIONS_AND_NEW_TP_DEFECT_BUDGET.md).
+
 25 October: [arbitrary endpoint additions and local replacement](ENDPOINT_EXTENSIONS_AND_LOCAL_RESOURCE_REPLACEMENT.md)
 settles ALL feasible extensions of the49T/308P occupation retaining EXACT T
 and oldP, with arbitrary newP and arbitrary simultaneous rematching. All49T
@@ -17,7 +29,7 @@ ordinary/full compensation holds, with at mostfloor((5-h)/2)interval payments.
 Four filled candidates already force beta-only full payment.435controls
 (7frozen/428feasible nonfrozen),136independent packs and11scoped Lean audits
 pass. Actual310P positive control is frozen;318P all-five control explicitly
-NONFROZEN. Arbitrary additions of new selections and universal5/6 remain open.
+NONFROZEN. The following new-selection continuation extends this result; universal5/6 remains open.
 
 25 October: [occupation certificate for ALL rematchings](OCCUPANCY_CERTIFICATE_AND_ALL_REMATCHINGS.md)
 settles EVERY actual perfect matching of the fixed308P/49T board, with no

@@ -137,3 +137,145 @@ theorem actual_five_singleton_guards : ∀ e∈flexible,
 #print axioms actual_static_certificate_targets
 #print axioms actual_five_singleton_guards
 end SubQuorum.EndpointExtensionReplacement
+
+/- New-selection extension. These lemmas check the geometric exclusions and
+the exact end-count/payment budget; they do NOT formalize the whole grid flow. -/
+namespace SubQuorum.EndpointExtensionReplacement.SelectionBudget
+
+theorem two_retained_neighbors_forbid_selection {V : Type}
+    (T O : V → Prop) (adj : V → V → Prop)
+    (unique : ∀ t, T t → ∀ x, O x → adj t x → ∀ y, O y → adj t y → x=y)
+    (u x y : V) (hx : O x) (hy : O y) (hux : adj u x) (huy : adj u y)
+    (different : x≠y) : ¬ T u := by
+  intro ht
+  exact different (unique u ht x hx hux y hy huy)
+
+theorem retained_neighbor_forbids_selected_pair {V : Type}
+    (T O : V → Prop) (adj : V → V → Prop)
+    (selectedOccupied : ∀ v, T v → O v)
+    (unique : ∀ t, T t → ∀ x, O x → adj t x → ∀ y, O y → adj t y → x=y)
+    (s q w : V) (hw : O w) (hsq : adj s q) (hsw : adj s w)
+    (different : q≠w) : ¬ (T s ∧ T q) := by
+  intro h
+  exact different (unique s h.1 q (selectedOccupied q h.2) hsq w hw hsw)
+
+/-- True marks an old free TP that has its own distinct interval assignment.
+False marks a genuinely new TP, which this retained certificate leaves open. -/
+abbrev Ends := List (Bool × Bool)
+
+def oldEnds : Ends → Nat
+  | [] => 0
+  | (x,y)::xs => (if x then 1 else 0)+(if y then 1 else 0)+oldEnds xs
+
+def newEnds : Ends → Nat
+  | [] => 0
+  | (x,y)::xs => (if x then 0 else 1)+(if y then 0 else 1)+newEnds xs
+
+def unpaid : Ends → Nat
+  | [] => 0
+  | (x,y)::xs => (if x || y then 0 else 1)+unpaid xs
+
+def paid : Ends → Nat
+  | [] => 0
+  | (x,y)::xs => (if x || y then 1 else 0)+paid xs
+
+theorem exact_end_counts (xs : Ends) :
+    paid xs+unpaid xs=xs.length ∧
+    2*unpaid xs≤newEnds xs ∧ paid xs≤oldEnds xs ∧
+    oldEnds xs+newEnds xs=2*xs.length := by
+  induction xs with
+  | nil => simp [paid,unpaid,oldEnds,newEnds]
+  | cons e xs ih =>
+    rcases e with ⟨x,y⟩
+    cases x <;> cases y <;>
+      simp [paid,unpaid,oldEnds,newEnds] at * <;> omega
+
+theorem new_tip_defect_budget (xs : Ends) (delta : Nat)
+    (availableNewEnds : newEnds xs≤delta) : unpaid xs≤delta/2 := by
+  have h := (exact_end_counts xs).2.1
+  omega
+
+theorem interval_payment_budget (xs : Ends) (r delta : Nat)
+    (availableOldEnds : oldEnds xs≤r) (availableNewEnds : newEnds xs≤delta) :
+    paid xs≤r ∧ paid xs≤(r+delta)/2 := by
+  obtain ⟨hcounts,hunpaid,hpaid,htotal⟩ := exact_end_counts xs
+  omega
+
+theorem exact_payment_loss (xs : Ends) (a b bFinal : Nat)
+    (ledger : a+bFinal=b+xs.length) (betaMonotone : bFinal≤b) :
+    b-bFinal+paid xs+unpaid xs=a := by
+  have h := (exact_end_counts xs).1
+  omega
+
+theorem at_most_one_new_tip_has_no_loss (xs : Ends) (delta : Nat)
+    (availableNewEnds : newEnds xs≤delta) (one : delta≤1) : unpaid xs=0 := by
+  have h := new_tip_defect_budget xs delta availableNewEnds
+  omega
+
+/-- Retained endpoints already give two distinct occupied neighbours at
+each flexible candidate. Thus no extension can select that candidate. -/
+theorem actual_candidates_have_two_retained_neighbors : ∀ e∈flexible,
+    ∃ x∈endpoints, ∃ y∈endpoints, x≠y ∧ adjacent e.2 x ∧ adjacent e.2 y := by
+  intro e he
+  simp only [flexible,List.mem_cons,List.not_mem_nil,or_false] at he
+  rcases he with rfl | rfl | rfl | rfl | rfl
+  · exact ⟨(11,15),by decide,(12,14),by decide,by decide,by decide,by decide⟩
+  · exact ⟨(13,10),by decide,(14,11),by decide,by decide,by decide,by decide⟩
+  · exact ⟨(19,11),by decide,(20,10),by decide,by decide,by decide,by decide⟩
+  · exact ⟨(23,7),by decide,(24,6),by decide,by decide,by decide,by decide⟩
+  · exact ⟨(23,16),by decide,(24,17),by decide,by decide,by decide,by decide⟩
+
+def columnBlocked (b c : Nat) : Prop :=
+    (2*b,c)∈endpoints ∨ (2*b+1,c)∈endpoints ∨
+    (∃ w∈endpoints, adjacent (2*b,c) w ∧ w≠(2*b+1,c)) ∨
+    (∃ w∈endpoints, adjacent (2*b+1,c) w ∧ w≠(2*b,c))
+instance (b c : Nat) : Decidable (columnBlocked b c) :=
+  inferInstanceAs (Decidable (_ ∨ _ ∨ _ ∨ _))
+
+/-- Each adjacent column either contains a retained endpoint, or selecting
+both its sites would give one of them two occupied neighbours. Hence every
+surviving flexible BB is STILL a singleton even with new selections. -/
+theorem actual_adjacent_columns_cannot_become_TT : ∀ e∈flexible,
+    columnBlocked (e.2.1/2) (e.2.2-1) ∧ columnBlocked (e.2.1/2) (e.2.2+1) := by
+  intro e he
+  simp only [flexible,List.mem_cons,List.not_mem_nil,or_false] at he
+  rcases he with rfl | rfl | rfl | rfl | rfl
+  · change columnBlocked 6 14 ∧ columnBlocked 6 16
+    exact ⟨Or.inl (by decide),Or.inr (Or.inr (Or.inl
+      ⟨(11,16),by decide,by decide,by decide⟩))⟩
+  · change columnBlocked 7 9 ∧ columnBlocked 7 11
+    exact ⟨Or.inr (Or.inr (Or.inl
+      ⟨(13,9),by decide,by decide,by decide⟩)),Or.inl (by decide)⟩
+  · change columnBlocked 9 9 ∧ columnBlocked 9 11
+    exact ⟨Or.inr (Or.inr (Or.inr
+      ⟨(20,9),by decide,by decide,by decide⟩)),Or.inr (Or.inl (by decide))⟩
+  · change columnBlocked 12 6 ∧ columnBlocked 12 8
+    exact ⟨Or.inl (by decide),Or.inl (by decide)⟩
+  · change columnBlocked 12 15 ∧ columnBlocked 12 17
+    exact ⟨Or.inr (Or.inr (Or.inl
+      ⟨(23,15),by decide,by decide,by decide⟩)),Or.inl (by decide)⟩
+
+def individuallyAllowed (v : Point) : Prop :=
+    ((selected++endpoints).filter fun w => decide (adjacent v w)).length≤1 ∧
+    ∀ t∈selected, ¬ adjacent v t
+instance (v : Point) : Decidable (individuallyAllowed v) :=
+  inferInstanceAs (Decidable (_ ∧ _))
+
+/-- Necessary conditions on a new selection at an old blank band partner.
+This is a finite complete audit of the ACTUAL old endpoint set, not a claim
+about arbitrary starting geometries or all possible new endpoints. -/
+theorem actual_unique_promotable_old_endpoint : ∀ v∈endpoints,
+    partner v∉selected → partner v∉endpoints →
+    individuallyAllowed (partner v) → v=(3,14) := by decide
+
+#print axioms two_retained_neighbors_forbid_selection
+#print axioms retained_neighbor_forbids_selected_pair
+#print axioms exact_end_counts
+#print axioms new_tip_defect_budget
+#print axioms interval_payment_budget
+#print axioms exact_payment_loss
+#print axioms at_most_one_new_tip_has_no_loss
+#print axioms actual_candidates_have_two_retained_neighbors
+#print axioms actual_adjacent_columns_cannot_become_TT
+#print axioms actual_unique_promotable_old_endpoint
+end SubQuorum.EndpointExtensionReplacement.SelectionBudget
