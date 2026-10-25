@@ -2,6 +2,10 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Follow-up: [crossing-M port ledger and residual reserves](CROSSING_MATCHING_PORT_LEDGER.md)
+extends gluing to actual matching cuts with an exact new-interface-alpha
+term, a joint unused-resource matching bound, and sharp fully frozen examples.
+
 Follow-up: [exact interface optima](FROZEN_INTERFACE_OPTIMALITY.md) settles the
 one-point uncertainty: the unrestricted fixed-P maximum is2t, whereas the
 maximum with all endpoints frozen is exactly2t-1, attained by this construction.

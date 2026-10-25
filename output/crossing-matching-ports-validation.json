@@ -1,0 +1,8781 @@
+{
+  "status": "PASS",
+  "totals": {
+    "physical_partitions": 288,
+    "crossing_matching_edges": 876,
+    "interface_cycles": 0,
+    "mixed_region_direction_partitions": 120,
+    "independent_primitive_optimum_controls": 12,
+    "sharp_frozen_interfaces": 32,
+    "four_region_partitions": 48,
+    "no_crossing_recovery_controls": 3,
+    "physical_port_cycle_controls": 1,
+    "physical_port_relay_controls": 11,
+    "all_physical_partition_controls": 303,
+    "strict_reserve_bound_improvements": 183,
+    "reserved_original_units": 540
+  },
+  "records": [
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 5,
+        "CT": 2,
+        "BB": 1,
+        "cycle": 2
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 8,
+        "BT": 4
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 2,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 4,
+        "CT": 2,
+        "cycle": 4,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 6,
+        "BT": 5
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 2,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 4,
+        "CT": 2,
+        "cycle": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 2,
+        "BT": 5,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 1,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 2,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 12
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 10,
+        "CT": 4,
+        "BB": 2,
+        "cycle": 4
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 16,
+        "BT": 8
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 4,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 12
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 8,
+        "CT": 4,
+        "cycle": 8,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 12,
+        "BT": 10
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 4,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 12
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 8,
+        "CT": 4,
+        "cycle": 16
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 4,
+        "BT": 10,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 2,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 4,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 15,
+        "CT": 6,
+        "BB": 3,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 24,
+        "BT": 12
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 6,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 6,
+        "cycle": 12,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 18,
+        "BT": 15
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 6,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 6,
+        "cycle": 24
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 6,
+        "BT": 15,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 3,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 6,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 42
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 35,
+        "CT": 14,
+        "BB": 7,
+        "cycle": 14
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 56,
+        "BT": 28
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 14,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 42
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 28,
+        "CT": 14,
+        "cycle": 28,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 42,
+        "BT": 35
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 14,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 42
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 8,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 28,
+        "CT": 14,
+        "cycle": 56
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 14,
+        "BT": 35,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 8,
+      "q": 7,
+      "cut_row": 8,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 14,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 6,
+        "CT": 2,
+        "BB": 1,
+        "cycle": 2
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 10,
+        "BT": 4
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 3,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 5,
+        "CT": 2,
+        "cycle": 4,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 8,
+        "BT": 5
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 3,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 4,
+        "CT": 2,
+        "cycle": 6,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 6,
+        "BT": 6
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 3,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 4,
+        "CT": 2,
+        "cycle": 10
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 2,
+        "BT": 6,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 3,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 16
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 4,
+        "BB": 2,
+        "cycle": 4
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 20,
+        "BT": 8
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 16
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 10,
+        "CT": 4,
+        "cycle": 8,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 16,
+        "BT": 10
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 16
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 8,
+        "CT": 4,
+        "cycle": 12,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 12,
+        "BT": 12
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 16
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 8,
+        "CT": 4,
+        "cycle": 20
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 4,
+        "BT": 12,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 24
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 18,
+        "CT": 6,
+        "BB": 3,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 30,
+        "BT": 12
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 9,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 24
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 15,
+        "CT": 6,
+        "cycle": 12,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 24,
+        "BT": 15
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 9,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 24
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 6,
+        "cycle": 18,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 18,
+        "BT": 18
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 9,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 24
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 6,
+        "cycle": 30
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 6,
+        "BT": 18,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 9,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 56
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 42,
+        "CT": 14,
+        "BB": 7,
+        "cycle": 14
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 70,
+        "BT": 28
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 21,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 56
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 35,
+        "CT": 14,
+        "cycle": 28,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 56,
+        "BT": 35
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 21,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 56
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 6,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 28,
+        "CT": 14,
+        "cycle": 42,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 42,
+        "BT": 42
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 6,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 21,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 56
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 28,
+        "CT": 14,
+        "cycle": 70
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 14,
+        "BT": 42,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 10,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 21,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 11,
+        "CT": 2,
+        "BB": 1,
+        "cycle": 2
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 20,
+        "BT": 4
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 8,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 10,
+        "CT": 2,
+        "cycle": 4,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 18,
+        "BT": 5
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 8,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 10,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 12,
+        "BT": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 8,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 18
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 4,
+        "CT": 2,
+        "cycle": 20
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 2,
+        "BT": 11,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 8,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 36
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 22,
+        "CT": 4,
+        "BB": 2,
+        "cycle": 4
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 40,
+        "BT": 8
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 16,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 36
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 20,
+        "CT": 4,
+        "cycle": 8,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 36,
+        "BT": 10
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 16,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 36
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 20,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 24,
+        "BT": 16
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 16,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 36
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 8,
+        "CT": 4,
+        "cycle": 40
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 4,
+        "BT": 22,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 16,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 54
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 33,
+        "CT": 6,
+        "BB": 3,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 60,
+        "BT": 12
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 24,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 54
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 30,
+        "CT": 6,
+        "cycle": 12,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 54,
+        "BT": 15
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 24,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 54
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 30,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 36,
+        "BT": 24
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 24,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 54
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 6,
+        "cycle": 60
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 6,
+        "BT": 33,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 24,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 126
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 77,
+        "CT": 14,
+        "BB": 7,
+        "cycle": 14
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 140,
+        "BT": 28
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 56,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 126
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 70,
+        "CT": 14,
+        "cycle": 28,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 126,
+        "BT": 35
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 56,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 126
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 70,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 84,
+        "BT": 56
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 10,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 56,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 126
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 28,
+        "CT": 14,
+        "cycle": 140
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 14,
+        "BT": 77,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 20,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 56,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 38
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 2,
+        "BB": 1,
+        "cycle": 2
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 40,
+        "BT": 4
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 18,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 38
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 20,
+        "CT": 2,
+        "cycle": 4,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 38,
+        "BT": 5
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 18,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 38
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 2,
+        "cycle": 20,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 22,
+        "BT": 13
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 18,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 7,
+        "CT": 2,
+        "cycle": 38
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 4,
+        "CT": 2,
+        "cycle": 40
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 3,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 2,
+        "BT": 21,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 1,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 4,
+        "BT": 18,
+        "BB": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 1,
+      "raw": 2,
+      "slack": 2,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 76
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 42,
+        "CT": 4,
+        "BB": 2,
+        "cycle": 4
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 80,
+        "BT": 8
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 36,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 76
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 40,
+        "CT": 4,
+        "cycle": 8,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 76,
+        "BT": 10
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 36,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 76
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 24,
+        "CT": 4,
+        "cycle": 40,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 44,
+        "BT": 26
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 36,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 14,
+        "CT": 4,
+        "cycle": 76
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 8,
+        "CT": 4,
+        "cycle": 80
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 6,
+      "slack": 4,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 4,
+        "BT": 42,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 2,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 8,
+        "BT": 36,
+        "BB": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 4,
+      "slack": 4,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 114
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 63,
+        "CT": 6,
+        "BB": 3,
+        "cycle": 6
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 120,
+        "BT": 12
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 54,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 114
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 60,
+        "CT": 6,
+        "cycle": 12,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 114,
+        "BT": 15
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 54,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 114
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 36,
+        "CT": 6,
+        "cycle": 60,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 66,
+        "BT": 39
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 54,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 21,
+        "CT": 6,
+        "cycle": 114
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 12,
+        "CT": 6,
+        "cycle": 120
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 0,
+      "raw": 9,
+      "slack": 6,
+      "value": 0,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 6,
+        "BT": 63,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 3,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 12,
+        "BT": 54,
+        "BB": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 3,
+      "beta": 3,
+      "raw": 6,
+      "slack": 6,
+      "value": 3,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 266
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 147,
+        "CT": 14,
+        "BB": 7,
+        "cycle": 14
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 280,
+        "BT": 28
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 2,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 126,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 266
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 140,
+        "CT": 14,
+        "cycle": 28,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 266,
+        "BT": 35
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 4,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 126,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 266
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 84,
+        "CT": 14,
+        "cycle": 140,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 154,
+        "BT": 91
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 20,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 126,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "BT": 49,
+        "CT": 14,
+        "cycle": 266
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 40,
+      "top_vertical": false,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "BT": 28,
+        "CT": 14,
+        "cycle": 280
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 0,
+      "raw": 21,
+      "slack": 14,
+      "value": 0,
+      "cost": 0,
+      "deficit": 7,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 7,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": false,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 14,
+        "BT": 147,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "w": 40,
+      "q": 7,
+      "cut_row": 40,
+      "top_vertical": true,
+      "bottom_vertical": true,
+      "local_inventory": {
+        "CT": 14,
+        "cycle": 28,
+        "BT": 126,
+        "BB": 7
+      },
+      "interface": {
+        "TT": 7
+      },
+      "alpha": 7,
+      "beta": 7,
+      "raw": 14,
+      "slack": 14,
+      "value": 7,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 7,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "BT": 10,
+        "CT": 2,
+        "cycle": 12,
+        "BB": 1,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "BT": 14,
+        "CT": 2,
+        "cycle": 16,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 7,
+      "slack": 5,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "BT": 10,
+        "CT": 2,
+        "cycle": 12,
+        "BB": 1,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "BT": 14,
+        "CT": 2,
+        "cycle": 16,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 7,
+      "slack": 5,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "BT": 9,
+        "CT": 2,
+        "BB": 2,
+        "cycle": 6,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 5,
+      "slack": 5,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "BT": 13,
+        "CT": 2,
+        "BB": 1,
+        "cycle": 10,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "BT": 9,
+        "CT": 2,
+        "BB": 2,
+        "cycle": 6,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 5,
+      "slack": 5,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "BT": 13,
+        "CT": 2,
+        "BB": 1,
+        "cycle": 10,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 14,
+        "BT": 7,
+        "BB": 1,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 18,
+        "BT": 11,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 7,
+      "slack": 5,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 14,
+        "BT": 7,
+        "BB": 1,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 18,
+        "BT": 11,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 0,
+      "raw": 7,
+      "slack": 5,
+      "value": 0,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 5,
+      "slack": 5,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 12,
+        "BT": 10,
+        "BB": 1,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 2,
+      "raw": 5,
+      "slack": 5,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 1,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 1,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "CT": 2,
+        "cycle": 12,
+        "BT": 10,
+        "BB": 1,
+        "TT": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 2,
+      "beta": 1,
+      "raw": 6,
+      "slack": 5,
+      "value": 1,
+      "cost": 0,
+      "deficit": 1,
+      "local_closed_value": 0,
+      "local_closed_deficit": 1,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 1,
+      "crossing_matching_edges": 1
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "BT": 30,
+        "CT": 4,
+        "cycle": 44,
+        "BB": 2,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "BT": 28,
+        "CT": 4,
+        "cycle": 72,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 0,
+      "raw": 13,
+      "slack": 9,
+      "value": 0,
+      "cost": 0,
+      "deficit": 4,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 4,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "BT": 30,
+        "CT": 4,
+        "cycle": 44,
+        "BB": 2,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "BT": 28,
+        "CT": 4,
+        "cycle": 72,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 0,
+      "raw": 13,
+      "slack": 9,
+      "value": 0,
+      "cost": 0,
+      "deficit": 4,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 4,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "BT": 38,
+        "CT": 4,
+        "BB": 4,
+        "cycle": 12,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 4,
+      "raw": 9,
+      "slack": 9,
+      "value": 4,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "BT": 36,
+        "CT": 4,
+        "BB": 2,
+        "cycle": 40,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "BT": 38,
+        "CT": 4,
+        "BB": 4,
+        "cycle": 12,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 4,
+      "raw": 9,
+      "slack": 9,
+      "value": 4,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "BT": 36,
+        "CT": 4,
+        "BB": 2,
+        "cycle": 40,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 48,
+        "BT": 24,
+        "BB": 2,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 76,
+        "BT": 22,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 0,
+      "raw": 13,
+      "slack": 9,
+      "value": 0,
+      "cost": 0,
+      "deficit": 4,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 4,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 48,
+        "BT": 24,
+        "BB": 2,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 76,
+        "BT": 22,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 0,
+      "raw": 13,
+      "slack": 9,
+      "value": 0,
+      "cost": 0,
+      "deficit": 4,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 4,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 16,
+        "BT": 32,
+        "BB": 4,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 4,
+      "raw": 9,
+      "slack": 9,
+      "value": 4,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 44,
+        "BT": 30,
+        "BB": 2,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 16,
+        "BT": 32,
+        "BB": 4,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 4,
+      "raw": 9,
+      "slack": 9,
+      "value": 4,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 2,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "CT": 4,
+        "cycle": 44,
+        "BT": 30,
+        "BB": 2,
+        "TT": 2
+      },
+      "interface": {
+        "TT": 2
+      },
+      "alpha": 4,
+      "beta": 2,
+      "raw": 11,
+      "slack": 9,
+      "value": 2,
+      "cost": 0,
+      "deficit": 2,
+      "local_closed_value": 0,
+      "local_closed_deficit": 2,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 2,
+      "retained_pack_reserve_bound": 2,
+      "crossing_matching_edges": 2
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "BT": 60,
+        "CT": 6,
+        "cycle": 96,
+        "BB": 3,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "BT": 42,
+        "CT": 6,
+        "cycle": 168,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 0,
+      "raw": 19,
+      "slack": 13,
+      "value": 0,
+      "cost": 0,
+      "deficit": 6,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 6,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "BT": 60,
+        "CT": 6,
+        "cycle": 96,
+        "BB": 3,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "BT": 42,
+        "CT": 6,
+        "cycle": 168,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 0,
+      "raw": 19,
+      "slack": 13,
+      "value": 0,
+      "cost": 0,
+      "deficit": 6,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 6,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "BT": 87,
+        "CT": 6,
+        "BB": 6,
+        "cycle": 18,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 6,
+      "raw": 13,
+      "slack": 13,
+      "value": 6,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "BT": 69,
+        "CT": 6,
+        "BB": 3,
+        "cycle": 90,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "BT": 87,
+        "CT": 6,
+        "BB": 6,
+        "cycle": 18,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 6,
+      "raw": 13,
+      "slack": 13,
+      "value": 6,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "BT": 69,
+        "CT": 6,
+        "BB": 3,
+        "cycle": 90,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 102,
+        "BT": 51,
+        "BB": 3,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 174,
+        "BT": 33,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 0,
+      "raw": 19,
+      "slack": 13,
+      "value": 0,
+      "cost": 0,
+      "deficit": 6,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 6,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 102,
+        "BT": 51,
+        "BB": 3,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 174,
+        "BT": 33,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 0,
+      "raw": 19,
+      "slack": 13,
+      "value": 0,
+      "cost": 0,
+      "deficit": 6,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 6,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 24,
+        "BT": 78,
+        "BB": 6,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 6,
+      "raw": 13,
+      "slack": 13,
+      "value": 6,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 96,
+        "BT": 60,
+        "BB": 3,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 24,
+        "BT": 78,
+        "BB": 6,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 6,
+      "raw": 13,
+      "slack": 13,
+      "value": 6,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 3,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "q": 3,
+      "opposed_four_regions": true,
+      "directions": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "local_inventory": {
+        "CT": 6,
+        "cycle": 96,
+        "BT": 60,
+        "BB": 3,
+        "TT": 3
+      },
+      "interface": {
+        "TT": 3
+      },
+      "alpha": 6,
+      "beta": 3,
+      "raw": 16,
+      "slack": 13,
+      "value": 3,
+      "cost": 0,
+      "deficit": 3,
+      "local_closed_value": 0,
+      "local_closed_deficit": 3,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 3,
+      "retained_pack_reserve_bound": 3,
+      "crossing_matching_edges": 3
+    },
+    {
+      "no_crossing_recovery_control": 1,
+      "local_inventory": {
+        "TT": 2,
+        "cycle": 8,
+        "BT": 6,
+        "BB": 2
+      },
+      "interface": {},
+      "alpha": 2,
+      "beta": 2,
+      "raw": 5,
+      "slack": 5,
+      "value": 2,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 2,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 0
+    },
+    {
+      "no_crossing_recovery_control": 2,
+      "local_inventory": {
+        "TT": 4,
+        "cycle": 16,
+        "BT": 32,
+        "BB": 4
+      },
+      "interface": {},
+      "alpha": 4,
+      "beta": 4,
+      "raw": 9,
+      "slack": 9,
+      "value": 4,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 4,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 0
+    },
+    {
+      "no_crossing_recovery_control": 3,
+      "local_inventory": {
+        "TT": 6,
+        "cycle": 24,
+        "BT": 78,
+        "BB": 6
+      },
+      "interface": {},
+      "alpha": 6,
+      "beta": 6,
+      "raw": 13,
+      "slack": 13,
+      "value": 6,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 6,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 0
+    },
+    {
+      "nonfrozen_cycle_control": true,
+      "local_inventory": {
+        "CC": 2
+      },
+      "interface": {
+        "cycle": 1
+      },
+      "alpha": 0,
+      "beta": 0,
+      "raw": 2,
+      "slack": 2,
+      "value": 0,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 0,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "nonfrozen_relay_control": 0,
+      "local_inventory": {
+        "CT": 2
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 1
+    },
+    {
+      "nonfrozen_relay_control": 1,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 1
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 2
+    },
+    {
+      "nonfrozen_relay_control": 2,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 2
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 3
+    },
+    {
+      "nonfrozen_relay_control": 3,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 3
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 4
+    },
+    {
+      "nonfrozen_relay_control": 4,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 4
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 5
+    },
+    {
+      "nonfrozen_relay_control": 5,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 5
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 6
+    },
+    {
+      "nonfrozen_relay_control": 6,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 6
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 7
+    },
+    {
+      "nonfrozen_relay_control": 7,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 7
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 8
+    },
+    {
+      "nonfrozen_relay_control": 8,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 8
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 9
+    },
+    {
+      "nonfrozen_relay_control": 16,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 16
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 17
+    },
+    {
+      "nonfrozen_relay_control": 32,
+      "local_inventory": {
+        "CT": 2,
+        "CC": 32
+      },
+      "interface": {
+        "TT": 1
+      },
+      "alpha": 1,
+      "beta": 0,
+      "raw": 2,
+      "slack": 1,
+      "value": 1,
+      "cost": 0,
+      "deficit": 0,
+      "local_closed_value": 0,
+      "local_closed_deficit": 0,
+      "local_closed_cost": 0,
+      "reserved_interface_payments": 1,
+      "retained_pack_reserve_bound": 0,
+      "crossing_matching_edges": 33
+    }
+  ],
+  "scope": "Written arbitrary-even-rectangle-partition port ledger and boundary stitching; retained closed local primitive packs inject into one global resource pool; deficit at most sum local deficits plus interface alphas minus a matching into original units unused by retained packs; interface alphas bounded by crossing M edges; physical fully frozen sharp family.",
+  "limits": [
+    "Local pack hypothesis excludes open port components; their budgets are not independent closed-strand payments.",
+    "Declared links are valid within local chosen bands; arbitrary extra interface links are not assumed.",
+    "No universal5over6 improvement or guarantee of full compensation."
+  ]
+}

@@ -2,6 +2,10 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Follow-up: [crossing-M port ledger and residual reserves](CROSSING_MATCHING_PORT_LEDGER.md)
+extends gluing to actual matching cuts with an exact new-interface-alpha
+term, a joint unused-resource matching bound, and sharp fully frozen examples.
+
 We settle the one-point uncertainty in the [opposed-direction construction](OPPOSED_DIRECTION_INTERFACES_AND_PIECEWISE_COMPENSATION.md).
 For its fixed endpoint set, the unrestricted selection maximum is one larger
 than the displayed fully frozen configuration. Among configurations in which
