@@ -235,3 +235,12 @@ local guards or exclusive exits. The full five-source shared-resource
 obstruction and universal compensation still require their general geometric
 analysis. This result resolves the retained-matching completion class of
 THIS actual mixed-cycle family, without changing the submitted manuscript.
+
+Continuation: [the frozen square-switch note](FROZEN_SQUARE_SWITCH_AND_INTERVAL_REPAIR.md)
+now resolves one rematching direction explicitly. A single actual matching
+flip, preserving T/P and complete freezing, reduces beta-only value4 to3.
+The source/gate C4 owner partition changes, so this is not a counterexample
+to the retained-matching theorem above. Exact inherited interval supports
+restore full value4, with all-original-availability value/cost formulas and
+both unit-identity and gate-capacity corrections. Arbitrary rematching and
+simultaneous cross-component repair remain open.

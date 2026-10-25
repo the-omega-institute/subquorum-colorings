@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "command": "lean SubQuorum/MixedCycleSquareSwitch.lean",
+  "exit_code": 0,
+  "machine": "user-authorized local Mac",
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percentage": 50,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "audited_declarations": [
+    "SubQuorum.MixedCycleSquareSwitch.actual_geometry",
+    "SubQuorum.MixedCycleSquareSwitch.actual_board_completely_frozen",
+    "SubQuorum.MixedCycleSquareSwitch.eight_original_strands_disjoint",
+    "SubQuorum.MixedCycleSquareSwitch.four_alpha_four_mixed_terminals",
+    "SubQuorum.MixedCycleSquareSwitch.eight_retained_tip_adjacencies"
+  ],
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "no_sorry_native": true,
+  "scope": "Actual switched308P geometry and inductive strict-rank complete freezing; eight disjoint actual strands, four alpha/four mixed terminal pairs and eight retained physical tip adjacencies. These adjacencies are NOT the old source/gate C4. Support ownership, full reachability, all-Q exact value/cost and all-q copies are written/Python, NOT end-to-end Lean allocation."
+}

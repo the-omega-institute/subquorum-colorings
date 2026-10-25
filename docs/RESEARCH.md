@@ -7,6 +7,21 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [frozen square switch and exact interval repair](FROZEN_SQUARE_SWITCH_AND_INTERVAL_REPAIR.md)
+shows that retaining T/P without retaining the actual matching does not preserve
+the preceding beta-paid core. One actual2x2 matching flip preserves all occupied
+sites, interval identities and counts, and remains completely frozen, but
+beta-only value falls4 to3. The old alpha/mixed tails become a40P alpha with
+no beta path and a2P mixed self-link. Direct interval ownership repairs the
+loss: exact ordinary/full value and minimum-link cost are proved for EVERY
+original availability subset, including both distinct-unit and shared-gate
+corrections. Full pool remains V4/c2. For q separated copies with h flipped,
+beta-only V=4q-h,c=5q-h; full pool V4q/c2q, with unchanged inventory.
+5626availability models,280independent ordinary/full comparisons,4frozen
+reflections,36literal-copy models and5scoped Lean audits pass. This defeats
+beta-only rematching persistence, not the grid target. General simultaneous
+rematching compensation and universal5/6 remain open.
+
 25 October: [persistent beta-paid mixed-cycle core](PERSISTENT_MIXED_CYCLE_BETA_CORE.md)
 settles the COMPLETE retained-matching extension class of the actual308P
 four-source/four-mixed cycle. Fifteen local blank certificates preserve four
