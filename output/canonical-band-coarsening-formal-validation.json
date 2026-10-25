@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T21:54:40.455497+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "55419 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+    ],
+    "memory_free_percentage": "33%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "55419 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.CanonicalBandCoarsening.positive_count_le_sum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.positive_sum_has_child' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.unique_positive_child_count' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.balanced_parent_no_positive_child' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.member_weight_le_sum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.positive_child_identity_unique' depends on axioms: [propext,",
+    "'SubQuorum.CanonicalBandCoarsening.positive_parent_map_injective' depends on axioms: [propext,",
+    "'SubQuorum.CanonicalBandCoarsening.pack_resource_injection' does not depend on any axioms",
+    "'SubQuorum.CanonicalBandCoarsening.pack_witness_transport' does not depend on any axioms",
+    "'SubQuorum.CanonicalBandCoarsening.transported_pool_avoids_withdrawals' does not depend on any axioms",
+    "'SubQuorum.CanonicalBandCoarsening.arbitrary_list_joint_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.physical_joint_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.sharp_quota_upper' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.sharp_quota_attainer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.CanonicalBandCoarsening.no_point_loss_at_canonical' depends on axioms: [propext,",
+    "'SubQuorum.CanonicalBandCoarsening.terminal_tax_monotone' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Arbitrary-length nonnegative child-capacity uniqueness including child identities, injectivity of the parent map under explicit child-list adapters, disjoint primitive resource and support witness transport, jointly transported withdrawals, arbitrary-length private-cap/guard-cut budget, sharp quota upper and attainer arithmetic, terminal-tax monotonicity.",
+  "not_formalized": [
+    "Coordinate canonical-band construction, geometric forest partition/capacity identity and support inclusion, complete primitive/link adapter, all-size family classification and strict freezing geometry. These have general written proofs and executable checks; not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

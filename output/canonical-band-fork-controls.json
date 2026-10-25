@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "counts": {
+    "actual_two_entry_beta_fork_embeddings": 8,
+    "positive_resource_bijection_checks": 177,
+    "individual_primitive_embeddings": 108,
+    "independent_primitive_optima_pairs": 9,
+    "complete_pool_or_joint_withdrawal_comparisons": 9,
+    "terminal_tax_monotonicity_checks": 3,
+    "general_coarsening_models": 3,
+    "sharp_same_N_no_seam_tax_controls": 4,
+    "genuine_mixed_seam_deficit_retained_controls": 4
+  },
+  "records": [
+    {
+      "cut": 8,
+      "old_forks": 1
+    },
+    {
+      "cut": 10,
+      "old_forks": 3
+    },
+    {
+      "cut": 12,
+      "old_forks": 4
+    },
+    {
+      "w": 8,
+      "k": 1,
+      "fine": {
+        "alpha": 1,
+        "beta": 1,
+        "mixed": 2,
+        "raw": 2,
+        "slack": 2,
+        "d4": 0,
+        "boundary": 2,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 2,
+        "port_value": 0,
+        "port_deficit": 1,
+        "value": 0,
+        "deficit": 1,
+        "cost": 0
+      },
+      "canonical": {
+        "alpha": 1,
+        "beta": 1,
+        "mixed": 2,
+        "raw": 2,
+        "slack": 2,
+        "d4": 0,
+        "boundary": 0,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 0,
+        "port_value": 1,
+        "port_deficit": 0,
+        "value": 1,
+        "deficit": 0,
+        "cost": 0
+      }
+    },
+    {
+      "w": 8,
+      "k": 2,
+      "fine": {
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 4,
+        "raw": 4,
+        "slack": 4,
+        "d4": 0,
+        "boundary": 4,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 4,
+        "port_value": 0,
+        "port_deficit": 2,
+        "value": 0,
+        "deficit": 2,
+        "cost": 0
+      },
+      "canonical": {
+        "alpha": 2,
+        "beta": 2,
+        "mixed": 4,
+        "raw": 4,
+        "slack": 4,
+        "d4": 0,
+        "boundary": 0,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 0,
+        "port_value": 2,
+        "port_deficit": 0,
+        "value": 2,
+        "deficit": 0,
+        "cost": 0
+      }
+    },
+    {
+      "w": 14,
+      "k": 3,
+      "fine": {
+        "alpha": 3,
+        "beta": 3,
+        "mixed": 15,
+        "raw": 6,
+        "slack": 6,
+        "d4": 0,
+        "boundary": 6,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 6,
+        "port_value": 0,
+        "port_deficit": 3,
+        "value": 0,
+        "deficit": 3,
+        "cost": 0
+      },
+      "canonical": {
+        "alpha": 3,
+        "beta": 3,
+        "mixed": 15,
+        "raw": 6,
+        "slack": 6,
+        "d4": 0,
+        "boundary": 0,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 0,
+        "port_value": 3,
+        "port_deficit": 0,
+        "value": 3,
+        "deficit": 0,
+        "cost": 0
+      }
+    },
+    {
+      "w": 32,
+      "k": 7,
+      "fine": {
+        "alpha": 7,
+        "beta": 7,
+        "mixed": 98,
+        "raw": 14,
+        "slack": 14,
+        "d4": 0,
+        "boundary": 14,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 14,
+        "port_value": 0,
+        "port_deficit": 7,
+        "value": 0,
+        "deficit": 7,
+        "cost": 0
+      },
+      "canonical": {
+        "alpha": 7,
+        "beta": 7,
+        "mixed": 98,
+        "raw": 14,
+        "slack": 14,
+        "d4": 0,
+        "boundary": 0,
+        "seam": 0,
+        "cross_direction_M": 0,
+        "tax": 0,
+        "port_value": 7,
+        "port_deficit": 0,
+        "value": 7,
+        "deficit": 0,
+        "cost": 0
+      }
+    }
+  ],
+  "purpose": "Nonvacuity: actual two-source beta forks with distinct BP entries embed, and fully frozen T* has unchanged physical original units and N while the full deficit drops k to0 without seams."
+}
