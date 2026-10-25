@@ -2,6 +2,13 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Subsequent [selection-saturation theorem](SELECTION_MAXIMUM_SINGLETON_OBSTRUCTION.md):
+on the cropped board, every feasible fixed-P selected extension retains the
+obstruction, and every inclusion-maximal extension has zero payment. The exact
+maximum over ALL selections with fixed P is8W+8, attaining zero payment and
+margin4; the W8 extension maximum retaining the original T0 is71.
+This does not assert a global maximum over changing endpoint sets.
+
 There are feasible, fully frozen configurations with two alpha strands in
 **different actual P-neighbour components** such that each component can pay
 its alpha using the complete original interval pool, but together they can pay
