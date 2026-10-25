@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [four-outward capacity-two slab with one unit of negative charge](docs/FOUR_OUTWARD_SLAB_AND_ONE_UNIT_OBSTRUCTION.md):
+for every h>=1 a fully frozen (2h+4)-by-8 board has 2h aligned full-P tiles,
+each with all four actual mates outside, yet its ENTIRE negative physical
+charge is just one unit. Every such tile contains a wire of the same alpha
+and a wire of the same PP/M cycle. This refutes removing square uniqueness
+from the two-unit compensation theorem while keeping four outward mates;
+independent per-tile credit fails without bound. The board itself has
+objective half-area minus one and its sole alpha is paid on the full pool.
+Checks pass 75 physical models, all 19,682 nonempty oriented bundles on the
+smallest witness, and 13 Lean declarations including its physical freezing
+and complete one-unit charge certificate. Universal 5/6 remains open.
+
 New [joint direction/deletion repair and the exact two-budget frontier](docs/JOINT_DIRECTION_AND_ISOLATED_DELETION_REPAIR.md):
 guarded switches and outside occupied-isolated deletions compile to one fixed
 candidate-resource network; inside-strip deletions are dominated. For switch

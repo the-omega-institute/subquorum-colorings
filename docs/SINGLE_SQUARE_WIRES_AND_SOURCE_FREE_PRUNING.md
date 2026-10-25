@@ -1,5 +1,11 @@
 # Capacity-two square wires and source-free single-square components
 
+**26 October continuation:** [four-outward repeated-owner slabs](FOUR_OUTWARD_SLAB_AND_ONE_UNIT_OBSTRUCTION.md)
+give an all-length alpha-bearing multi-square obstruction: 2h full capacity-two
+tiles, each with four outward mates, contain wires of just one alpha and one
+closed PP/M cycle. The entire board has only one unit of negative charge.
+Thus local capacity alone cannot supply independent geometric compensation.
+
 **Shared-resource continuation:** [exact endpoint-component gluing](ENDPOINT_COMPONENT_RESOURCE_GLUING.md)
 keeps every active component's internal gates and treats units shared with
 source-free components as effectively private. It gives an exact joint

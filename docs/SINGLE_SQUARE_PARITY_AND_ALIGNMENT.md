@@ -1,5 +1,11 @@
 # Complete single-square classification and a neutral misalignment obstacle
 
+**26 October continuation:** the [four-outward slab obstruction](FOUR_OUTWARD_SLAB_AND_ONE_UNIT_OBSTRUCTION.md)
+resolves the specific extension left open in Section5: without square
+uniqueness, even retaining four outward actual mates and complete freezing
+does not guarantee two negative units. Arbitrarily many aligned capacity-two
+tiles share a total one-unit negative budget. The original theorem is unchanged.
+
 19 October 2026. This extends ODD_ARM_COMPENSATION.md by removing its
 four-outward-mates hypothesis and identifies why tile alignment is necessary
 for a strict negative budget. The submitted manuscript is unchanged.
@@ -275,7 +281,9 @@ unit independently to each of these two overlapping P-squares under this
 ledger. Exactly one of these squares is aligned, and each has two outward
 matching edges and one internal matching edge: o=2, not o=4. Consequently this
 example does not settle whether the original four-outward-matched two-unit
-theorem extends when uniqueness alone is removed. Distinct aligned unit
+theorem extends when uniqueness alone is removed; the later
+[all-length slab](FOUR_OUTWARD_SLAB_AND_ONE_UNIT_OBSTRUCTION.md) now refutes
+that extension while retaining the four outward mates. Distinct aligned unit
 squares are disjoint tiles. The global target remains
 valid, strictly, here. The general geometry of several-square components is
 still unclassified; this is an exact obstacle to that proposed extension.

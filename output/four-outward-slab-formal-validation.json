@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T16:50:12.984303+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "15899 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+    ],
+    "memory_free_percentage": "40%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "15899 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.FourOutwardSlab.valid_matching' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FourOutwardSlab.feasible_selected' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.endpoint_terminal' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.complete_tile_profiles' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.no_saturated_endpoint_tile' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.two_four_outward_tiles' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.complete_charge_table' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.exact_negative_capacity' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.exact_counts' does not depend on any axioms",
+    "'SubQuorum.FourOutwardSlab.all_frozen' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardSlab.no_feasible_promotion' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardSlab.general_count_consequences' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FourOutwardSlab.arbitrarily_many_centers' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Explicit h=1 physical matching and selected feasibility; all endpoint degrees at least three; full tile profiles/no saturated endpoints; two aligned four-outward tiles; exact total negative charge one and objective margin one; all frozen endpoints and general retained-vertex promotion exclusion. General h count algebra and arbitrarily many centers.",
+  "not_formalized": [
+    "All-h coordinate construction/feasibility and freezing waves; written induction and physical controls",
+    "General strand classification and complete original resource/flow adapter; written proof and independent finite checks"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
