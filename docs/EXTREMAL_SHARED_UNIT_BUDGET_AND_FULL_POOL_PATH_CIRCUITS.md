@@ -270,8 +270,8 @@ records 95 frozen horizontal boards, 28,010 strict freezing events, 14,005
 forced matching pairs, 339 independent seam-tile capacity checks, 434 exact
 seven-owner closures, 48 independent primitive packing profiles, 100 maximum
 source-basis cost checks, 184 proper-source-subset checks and 629 full-pool
-path withdrawals. These include 100 withdrawals with actual inaccessible
-units added, plus seven mixed-interface heights through W=128.
+path withdrawals. There are also 100 withdrawal controls with actual
+inaccessible units added, plus seven mixed-interface heights through W=128.
 The [formal receipt](../output/extremal-path-circuits-formal-validation.json)
 and [compiler log](../output/extremal-path-circuits-lean-validation.txt) record
 Lean 4.33.0 passing 17 new declaration audits and 11 dependency audits, with
