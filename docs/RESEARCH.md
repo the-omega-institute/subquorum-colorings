@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [vertical TP injection and short-mixed exceptions](VERTICAL_TP_INJECTION_AND_SHORT_MIXED_HOLES.md)
+extends the frozen missing-port injection to every vertically matched original
+TP, including mixed exits. A geometric partial certificate leaves holes only
+at unported one-edge horizontal mixed tips and marked-boundary port exceptions.
+Ordinary deficit is at most the sum over original interaction components of
+min(alpha,floor((short+boundary)/2)); thus at most one exception per alpha
+component gives full ordinary compensation, with arbitrary bent/long mixed
+strands allowed. A new frozen 66-endpoint board contains an actual mixed
+vertical missing TP, and all-q separated copies retain it. 213 frozen boards,
+491 subset checks, 26 independent packs and nine audited Lean declarations
+pass, including concrete feasibility/full freezing/mixed topology. The general
+geometric adapter/lift is written; universal5/6 remains open. The previous
+joint-block introduction is corrected: full fork optimum can exceed ordinary.
+
 25 October: [joint original-interval/beta block reduction](JOINT_INTERVAL_BETA_BLOCK_REDUCTION.md)
 combines source-only original intervals and exclusive empty-body betas on the
 original frozen board. A rooted joint tree has exact local beta cost

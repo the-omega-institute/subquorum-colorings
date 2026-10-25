@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "machine": "user-authorized local machine",
+  "preflight": {
+    "memory_gib": 16,
+    "memory_free_percent": 40,
+    "active_lean_lake": 0,
+    "process_detection": "comm basename exactly lean or lake",
+    "concurrency": 1
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean SubQuorum/VerticalTipInjection.lean",
+  "working_directory": "formal",
+  "exit_code": 0,
+  "audited_declarations": [
+    "geometry_valid",
+    "all_endpoints_frozen",
+    "concrete_mixed_vertical_missing_tip",
+    "rowTarget_adjacent",
+    "rowTarget_injective",
+    "rowTarget_avoids",
+    "rowTarget_bounded",
+    "fork_rank_cycle_impossible",
+    "one_exception_zero_budget"
+  ],
+  "axiom_audit": "vertical-tip-injection-lean-validation.txt",
+  "axioms_used": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Reused inductive freezing infrastructure proves new concrete66endpoint board feasible and fully frozen, with actual mixed strand vertical TP mate, blocked immediate ports and adjacent BP. Unbounded omit-one row-target map verified for adjacency/injectivity/avoidance/bound; strict rank cycle and conditional one-exception budget. Actual grid-to-row classification, port-slot ownership and partial compensation projection/lift are written proofs, not end-to-end formalized.",
+  "external_review": "No new independent external review claimed."
+}

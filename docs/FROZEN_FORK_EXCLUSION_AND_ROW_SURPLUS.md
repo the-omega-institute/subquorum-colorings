@@ -256,3 +256,10 @@ cut has two phase blockers and one jointly owned beta/interval resource set.
 The phase conclusion does not apply directly to artificial exchange gates.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
+
+Continuation: [vertical TP injection and short-mixed exception budget](VERTICAL_TP_INJECTION_AND_SHORT_MIXED_HOLES.md)
+extends the original-alpha row proof to every original vertically matched
+missing TP, including mixed exits. A geometric partial certificate localizes
+holes to unported short horizontal mixed tips and marked-boundary exceptions;
+at most one exception per original alpha interaction component suffices for
+full ordinary compensation. General compensation and5/6 remain open.

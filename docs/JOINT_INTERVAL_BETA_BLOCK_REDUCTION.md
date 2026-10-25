@@ -14,7 +14,9 @@ source, a mixed owner has its original capacity-one gate, a beta has its two
 original BP entries and a capacity-one whole-payment sink, and every original
 BB interval has capacity one. Each actual TP–BP link costs one. Write V for
 maximum paid alphas and c for minimum actual links among maximum payments.
-The established normal-form theorem identifies ordinary and fork optima.
+The established normal-form theorem identifies the full cancellation optimum
+with the BP-aware fork-flow optimum. Ordinary-only compensation may be
+strictly smaller; no general equality with ordinary flow is assumed.
 
 Choose disjoint nonempty alpha blocks S. Each block has a connected multigraph
 of the following distinct internal resource identities, with one or two
@@ -239,3 +241,10 @@ alongside a formal receipt. The general resource-graph allocation, exterior
 network projection/lift, and physical adapter are written mathematical proofs,
 not claimed as end-to-end Lean formalization. Finite enumeration checks these
 proofs and finds rule errors; it does not replace their general arguments.
+
+Continuation: [vertical TP injection and short-mixed exception budget](VERTICAL_TP_INJECTION_AND_SHORT_MIXED_HOLES.md)
+extends the original-alpha row proof to every original vertically matched
+missing TP, including mixed exits. A geometric partial certificate localizes
+holes to unported short horizontal mixed tips and marked-boundary exceptions;
+at most one exception per original alpha interaction component suffices for
+full ordinary compensation. General compensation and5/6 remain open.
