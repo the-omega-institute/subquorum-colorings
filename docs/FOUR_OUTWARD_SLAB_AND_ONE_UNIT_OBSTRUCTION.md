@@ -10,6 +10,13 @@ when uniqueness of the endpoint square is removed. The obstruction has a
 general construction and proof. It is not a counterexample to the numerical
 grid target; its objective is exactly one below half the area.
 
+Continuation: [alpha localization by degree defects and direction interfaces](FOUR_OUTWARD_ALPHA_LOCALIZATION.md)
+proves that exact occupied degree three and uniform auxiliary direction exclude
+alpha wires through ALL four-outward tiles, without square uniqueness. With
+mixed directions the total incidence is at most the number of actual
+direction-changing matching edges. This does not establish a two-unit donor
+theorem in the degree-three class; reachable mixed owners remain possible.
+
 ## 1. Statement and conventions
 
 Use a feasible pair (T,M): M is a grid matching, P=V(M), T is disjoint

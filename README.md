@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [four-outward alpha localization by degree defects and direction interfaces](docs/FOUR_OUTWARD_ALPHA_LOCALIZATION.md):
+for any collection F of four-outward full-P tiles in a bundle-terminal pair,
+the number I_F of original alpha wire incidences satisfies I_F<=2J4+E_dir.
+Here J4 counts occupied-degree-four endpoints and E_dir counts actual matching
+edges between opposite auxiliary directions. The sharper local inequality
+2i_Q<=3a_Q+b_Q+2c_Q retains endpoint and seam identities, so no edge is
+credited twice. Exact degree three with uniform direction excludes all
+alpha wires at these tiles, even in multi-square components. A frozen 14-by-14
+example attains i_Q=c_Q=1 after one tile's direction changes, and separately
+shows source-reachable mixed owners cannot simply be pruned. Checks pass
+728 partitions/4,853 tiles and 11 scoped Lean declarations. This localizes
+the geometry; unused donor coverage and universal 5/6 remain open.
+
 New [four-outward capacity-two slab with one unit of negative charge](docs/FOUR_OUTWARD_SLAB_AND_ONE_UNIT_OBSTRUCTION.md):
 for every h>=1 a fully frozen (2h+4)-by-8 board has 2h aligned full-P tiles,
 each with all four actual mates outside, yet its ENTIRE negative physical

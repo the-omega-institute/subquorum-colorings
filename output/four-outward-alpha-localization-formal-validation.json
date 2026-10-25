@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T17:22:17.002335+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "34028 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "37%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "34028 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.FourOutwardAlphaLocalization.sixteen_exit_cases' does not depend on any axioms",
+    "'SubQuorum.FourOutwardAlphaLocalization.direction_change_one_endpoint' depends on axioms: [propext]",
+    "'SubQuorum.FourOutwardAlphaLocalization.two_removed_neighbors' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardAlphaLocalization.each_color_has_defect' depends on axioms: [propext,",
+    "'SubQuorum.FourOutwardAlphaLocalization.local_wire_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardAlphaLocalization.local_exact_three' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardAlphaLocalization.sum_local' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardAlphaLocalization.endpoint_weight_cap' does not depend on any axioms",
+    "'SubQuorum.FourOutwardAlphaLocalization.all_endpoint_weights' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardAlphaLocalization.aggregate_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FourOutwardAlphaLocalization.uniform_exact_three' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "16 outward direction assignments; exactly one perpendicular endpoint on a direction-changing edge; degree arithmetic for alternating-square promotion; local source-wire count from stated geometric injections; arbitrary finite sums and endpoint weight cap; exact-three uniform corollary.",
+  "not_formalized": [
+    "Coordinate-to-owner BP/cycle/defect/seam injection and frozen alternating-square adapter; complete written proof",
+    "Arbitrary grid assembly, physical 66-endpoint rank schedule, original resources and payment/pruning example; executable physical checks"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

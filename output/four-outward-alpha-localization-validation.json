@@ -1,0 +1,2942 @@
+{
+  "status": "PASS",
+  "totals": {
+    "local_direction_cases": 16,
+    "independent_rank_events": 66,
+    "partitions": 728,
+    "four_outward_tiles": 4853,
+    "alpha_wire_incidences": 3187,
+    "degree_four_endpoint_occurrences": 10974,
+    "direction_changing_matching_edges": 10378,
+    "independent_terminal_matchings": 832,
+    "physical_models": 20
+  },
+  "witness": {
+    "live_mixed": {
+      "link": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "original_resource_cells": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "singleton_pool_before": [
+        1,
+        1
+      ],
+      "singleton_pool_after_pruning": [
+        0,
+        0
+      ],
+      "full_pool_before": [
+        1,
+        0
+      ],
+      "whole_uncut_H_resource": [
+        1,
+        5,
+        5
+      ],
+      "whole_uncut_H_singleton_before": [
+        1,
+        1
+      ],
+      "whole_uncut_H_singleton_after_pruning": [
+        0,
+        0
+      ],
+      "scope": "Only singleton-available-pool pruning fails; no full-pool loss claimed."
+    },
+    "uniform": {
+      "I": 0,
+      "J4": 0,
+      "E_dir": 0,
+      "C_F": 0,
+      "weighted_defects": 0,
+      "tiles": [
+        {
+          "tile": [
+            4,
+            4
+          ],
+          "i": 0,
+          "a": 0,
+          "b": 0,
+          "c": 0,
+          "D": 0,
+          "v": 0,
+          "owners": [
+            "BT",
+            "BT"
+          ]
+        }
+      ]
+    },
+    "mixed": {
+      "I": 1,
+      "J4": 0,
+      "E_dir": 2,
+      "C_F": 1,
+      "weighted_defects": 0,
+      "tiles": [
+        {
+          "tile": [
+            4,
+            4
+          ],
+          "i": 1,
+          "a": 0,
+          "b": 0,
+          "c": 1,
+          "D": 0,
+          "v": 0,
+          "owners": [
+            "TT",
+            "BT"
+          ]
+        }
+      ]
+    }
+  },
+  "controls": [
+    {
+      "model": "witness",
+      "partitions": 43,
+      "four_outward_tile_occurrences": 43,
+      "alpha_wire_incidences": 6,
+      "maximum_J4": 0,
+      "maximum_E_dir": 21,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "witness",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "witness",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BB",
+              "BB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "slab1",
+      "partitions": 39,
+      "four_outward_tile_occurrences": 78,
+      "alpha_wire_incidences": 26,
+      "maximum_J4": 6,
+      "maximum_E_dir": 7,
+      "minimum_local_bound_slack": 5,
+      "minimum_global_bound_slack": 10,
+      "uniform_vertical_N": {
+        "model": "slab1",
+        "I": 2,
+        "J4": 6,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 14,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "slab1",
+        "I": 0,
+        "J4": 6,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 14,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "slab2",
+      "partitions": 41,
+      "four_outward_tile_occurrences": 164,
+      "alpha_wire_incidences": 72,
+      "maximum_J4": 12,
+      "maximum_E_dir": 11,
+      "minimum_local_bound_slack": 3,
+      "minimum_global_bound_slack": 20,
+      "uniform_vertical_N": {
+        "model": "slab2",
+        "I": 4,
+        "J4": 12,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 38,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "slab2",
+        "I": 0,
+        "J4": 12,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 38,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "slab4",
+      "partitions": 45,
+      "four_outward_tile_occurrences": 360,
+      "alpha_wire_incidences": 200,
+      "maximum_J4": 24,
+      "maximum_E_dir": 19,
+      "minimum_local_bound_slack": 3,
+      "minimum_global_bound_slack": 36,
+      "uniform_vertical_N": {
+        "model": "slab4",
+        "I": 8,
+        "J4": 24,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 86,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              4
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "slab4",
+        "I": 0,
+        "J4": 24,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 86,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              4
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "slab8",
+      "partitions": 53,
+      "four_outward_tile_occurrences": 848,
+      "alpha_wire_incidences": 586,
+      "maximum_J4": 48,
+      "maximum_E_dir": 35,
+      "minimum_local_bound_slack": 3,
+      "minimum_global_bound_slack": 68,
+      "uniform_vertical_N": {
+        "model": "slab8",
+        "I": 16,
+        "J4": 48,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 182,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              2
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              4
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "slab8",
+        "I": 0,
+        "J4": 48,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 182,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              2
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              4
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "slab16",
+      "partitions": 69,
+      "four_outward_tile_occurrences": 2208,
+      "alpha_wire_incidences": 2198,
+      "maximum_J4": 96,
+      "maximum_E_dir": 67,
+      "minimum_local_bound_slack": 3,
+      "minimum_global_bound_slack": 132,
+      "uniform_vertical_N": {
+        "model": "slab16",
+        "I": 32,
+        "J4": 96,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 374,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              18,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              18,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              20,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              20,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              22,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              22,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              24,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              24,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              26,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              26,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              28,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              28,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              30,
+              2
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              30,
+              4
+            ],
+            "i": 1,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 2,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          },
+          {
+            "tile": [
+              32,
+              2
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "TT",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              32,
+              4
+            ],
+            "i": 1,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 1,
+            "owners": [
+              "cycle",
+              "TT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "slab16",
+        "I": 0,
+        "J4": 96,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 374,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              2,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              4,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              6,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              10,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              12,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              16,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              18,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              18,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              20,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              20,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              22,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              22,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              24,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              24,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              26,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              26,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              28,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              28,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              30,
+              2
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              30,
+              4
+            ],
+            "i": 0,
+            "a": 3,
+            "b": 3,
+            "c": 0,
+            "D": 2,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "cycle"
+            ]
+          },
+          {
+            "tile": [
+              32,
+              2
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              32,
+              4
+            ],
+            "i": 0,
+            "a": 2,
+            "b": 1,
+            "c": 0,
+            "D": 1,
+            "v": 0,
+            "owners": [
+              "cycle",
+              "BB"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "cross1",
+      "partitions": 36,
+      "four_outward_tile_occurrences": 36,
+      "alpha_wire_incidences": 13,
+      "maximum_J4": 0,
+      "maximum_E_dir": 4,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "cross1",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "cross1",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "cross2",
+      "partitions": 37,
+      "four_outward_tile_occurrences": 74,
+      "alpha_wire_incidences": 33,
+      "maximum_J4": 0,
+      "maximum_E_dir": 8,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "cross2",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "cross2",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "cross4",
+      "partitions": 39,
+      "four_outward_tile_occurrences": 156,
+      "alpha_wire_incidences": 49,
+      "maximum_J4": 0,
+      "maximum_E_dir": 16,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "cross4",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              20,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "cross4",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              2,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              8,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              14,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              20,
+              2
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "chain1",
+      "partitions": 60,
+      "four_outward_tile_occurrences": 60,
+      "alpha_wire_incidences": 0,
+      "maximum_J4": 0,
+      "maximum_E_dir": 48,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "chain1",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              14,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "chain1",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              14,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "chain2",
+      "partitions": 92,
+      "four_outward_tile_occurrences": 184,
+      "alpha_wire_incidences": 1,
+      "maximum_J4": 0,
+      "maximum_E_dir": 106,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "chain2",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              14,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              54,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "chain2",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              14,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              54,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BB",
+              "BT"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "model": "chain4",
+      "partitions": 156,
+      "four_outward_tile_occurrences": 624,
+      "alpha_wire_incidences": 2,
+      "maximum_J4": 0,
+      "maximum_E_dir": 222,
+      "minimum_local_bound_slack": 0,
+      "minimum_global_bound_slack": 0,
+      "uniform_vertical_N": {
+        "model": "chain4",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              14,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              54,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              94,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          },
+          {
+            "tile": [
+              134,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BT"
+            ]
+          }
+        ]
+      },
+      "uniform_horizontal_N": {
+        "model": "chain4",
+        "I": 0,
+        "J4": 0,
+        "E_dir": 0,
+        "C_F": 0,
+        "weighted_defects": 0,
+        "tiles": [
+          {
+            "tile": [
+              14,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BT",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              54,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BB",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              94,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BB",
+              "BB"
+            ]
+          },
+          {
+            "tile": [
+              134,
+              14
+            ],
+            "i": 0,
+            "a": 0,
+            "b": 0,
+            "c": 0,
+            "D": 0,
+            "v": 0,
+            "owners": [
+              "BB",
+              "BT"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "proved": "Written: 2i_Q<=3a_Q+b_Q+2c_Q; exact non-reused endpoint/seam sum; I_F<=2J4+E_dir for any F. Exact degree three/uniform implies no alpha wire at four-outward tiles.",
+  "limitations": "Localization, not donor supply or universal5/6. Mixed/beta owners not excluded. Singleton-pool pruning counterexample is not full-pool failure; witness full pool pays its one alpha at cost zero."
+}
