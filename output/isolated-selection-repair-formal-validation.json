@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T15:27:54.194915+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "86492 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "34%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "86492 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.IsolatedSelectionRepair.subset_extend' does not depend on any axioms",
+    "'SubQuorum.IsolatedSelectionRepair.list_member_in_extension' depends on axioms: [propext]",
+    "'SubQuorum.IsolatedSelectionRepair.insert_absorbed' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.zero_marginal_lifts' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.no_gain_extension' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.improving_candidate_exists' depends on axioms: [propext,",
+    "'SubQuorum.IsolatedSelectionRepair.independent_extension_count' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.independent_candidates_distinct' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.extension_gain_at_most_count' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.independent_spanning_is_minimum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.endpoint_neighbors_unchanged' does not depend on any axioms",
+    "'SubQuorum.IsolatedSelectionRepair.neighboring_TT_forbidden' does not depend on any axioms",
+    "'SubQuorum.IsolatedSelectionRepair.slack_deficit_monotone' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.IsolatedSelectionRepair.minimum_repairs_for_full_payment' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Arbitrary finite candidate lists: zero marginal persistence, no joint gain from individually zero marginals, existence of improving candidate under diminishing returns, independent extension exact rank count and no repeated candidates, unit-increment count upper bound and minimum spanning count. Local endpoint-neighborhood preservation and TT-neighbor exclusion; combined slack/deficit and full-payment deletion arithmetic.",
+  "not_formalized": [
+    "Resource-network submodularity and its diminishing-returns adapter; written cut proof and finite checks",
+    "General physical BB/TT component extraction and freezing adapter",
+    "Matroid weighted greedy exchange and source-protected lexicographic flow optimality; written proofs and independent primitive comparisons"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

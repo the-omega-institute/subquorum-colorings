@@ -1,0 +1,520 @@
+{
+  "status": "PASS",
+  "totals": {
+    "baseline_fork_models": 3,
+    "candidate_pool_flows_with_forks": 12,
+    "resource_subsets": 1102,
+    "independent_protected_primitive_values": 358,
+    "rank_submodular_pairs": 24642,
+    "exact_zero_marginal_stopping_certificates": 740,
+    "exact_deletion_budget_frontier_entries": 380,
+    "independent_lexicographic_repair_optima": 126,
+    "weighted_greedy_and_joint_flow_profiles": 333,
+    "models": 111,
+    "explicit_two_entry_beta_repair_models": 1,
+    "abstract_models": 90,
+    "physical_commuting_deletion_subsets": 578,
+    "fully_frozen_deletion_subsets": 578,
+    "mixed_partition_commuting_subsets": 192,
+    "mixed_partition_actual_crossing_edge_checks": 320,
+    "all_candidate_global_optimal_adjacent_controls": 12,
+    "nonisolated_TT_identity_failure_controls": 1
+  },
+  "records": [
+    {
+      "label": "abstract-0",
+      "old_value": 3,
+      "maximum": 4,
+      "minimum_repairs": 1,
+      "protected": [
+        0,
+        1,
+        4
+      ],
+      "bases": 2
+    },
+    {
+      "label": "abstract-1",
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        0
+      ],
+      "bases": 4
+    },
+    {
+      "label": "abstract-2",
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        0
+      ],
+      "bases": 1
+    },
+    {
+      "label": "abstract-3",
+      "old_value": 3,
+      "maximum": 3,
+      "minimum_repairs": 0,
+      "protected": [
+        0,
+        1,
+        5
+      ],
+      "bases": 1
+    },
+    {
+      "label": "abstract-4",
+      "old_value": 1,
+      "maximum": 3,
+      "minimum_repairs": 2,
+      "protected": [
+        0
+      ],
+      "bases": 5
+    },
+    {
+      "label": "abstract-5",
+      "old_value": 3,
+      "maximum": 3,
+      "minimum_repairs": 0,
+      "protected": [
+        0,
+        1,
+        5
+      ],
+      "bases": 1
+    },
+    {
+      "label": "abstract-6",
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        0
+      ],
+      "bases": 1
+    },
+    {
+      "label": "abstract-7",
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        0
+      ],
+      "bases": 1
+    },
+    {
+      "old_value": 0,
+      "maximum": 1,
+      "minimum_repairs": 1,
+      "protected": [],
+      "bases": 3,
+      "label": "adjacent-8-1",
+      "shape": [
+        10,
+        12
+      ],
+      "isolated_candidates": 13,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 2,
+      "minimum_repairs": 2,
+      "protected": [],
+      "bases": 9,
+      "label": "adjacent-8-2",
+      "shape": [
+        10,
+        22
+      ],
+      "isolated_candidates": 24,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 3,
+      "minimum_repairs": 3,
+      "protected": [],
+      "bases": 9,
+      "label": "adjacent-8-3",
+      "shape": [
+        10,
+        32
+      ],
+      "isolated_candidates": 35,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 1,
+      "minimum_repairs": 1,
+      "protected": [],
+      "bases": 3,
+      "label": "adjacent-10-1",
+      "shape": [
+        12,
+        12
+      ],
+      "isolated_candidates": 20,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 2,
+      "minimum_repairs": 2,
+      "protected": [],
+      "bases": 9,
+      "label": "adjacent-10-2",
+      "shape": [
+        12,
+        22
+      ],
+      "isolated_candidates": 36,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 3,
+      "minimum_repairs": 3,
+      "protected": [],
+      "bases": 9,
+      "label": "adjacent-10-3",
+      "shape": [
+        12,
+        32
+      ],
+      "isolated_candidates": 52,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 1,
+      "minimum_repairs": 1,
+      "protected": [],
+      "bases": 3,
+      "label": "adjacent-20-1",
+      "shape": [
+        22,
+        12
+      ],
+      "isolated_candidates": 55,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 2,
+      "minimum_repairs": 2,
+      "protected": [],
+      "bases": 9,
+      "label": "adjacent-20-2",
+      "shape": [
+        22,
+        22
+      ],
+      "isolated_candidates": 96,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 3,
+      "minimum_repairs": 3,
+      "protected": [],
+      "bases": 9,
+      "label": "adjacent-20-3",
+      "shape": [
+        22,
+        32
+      ],
+      "isolated_candidates": 137,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        5
+      ],
+      "bases": 5,
+      "label": "raw-singleton-8",
+      "shape": [
+        10,
+        22
+      ],
+      "isolated_candidates": 7,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        5
+      ],
+      "bases": 5,
+      "label": "raw-singleton-10",
+      "shape": [
+        12,
+        22
+      ],
+      "isolated_candidates": 7,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        5
+      ],
+      "bases": 5,
+      "label": "raw-singleton-20",
+      "shape": [
+        22,
+        22
+      ],
+      "isolated_candidates": 7,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 3,
+      "maximum": 3,
+      "minimum_repairs": 0,
+      "protected": [
+        1,
+        3,
+        4
+      ],
+      "bases": 1,
+      "label": "beta-fork",
+      "shape": [
+        16,
+        14
+      ],
+      "isolated_candidates": 0,
+      "tested_candidates": 0,
+      "frozen": true
+    },
+    {
+      "old_value": 1,
+      "maximum": 1,
+      "minimum_repairs": 0,
+      "protected": [
+        1
+      ],
+      "bases": 1,
+      "label": "tip-slot",
+      "shape": [
+        10,
+        16
+      ],
+      "isolated_candidates": 0,
+      "tested_candidates": 0,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 1,
+      "minimum_repairs": 1,
+      "protected": [],
+      "bases": 1,
+      "label": "mixed-crossing-8-1",
+      "shape": [
+        10,
+        12
+      ],
+      "isolated_candidates": 13,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 2,
+      "minimum_repairs": 2,
+      "protected": [],
+      "bases": 1,
+      "label": "mixed-crossing-8-2",
+      "shape": [
+        10,
+        22
+      ],
+      "isolated_candidates": 24,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 1,
+      "minimum_repairs": 1,
+      "protected": [],
+      "bases": 1,
+      "label": "mixed-crossing-10-1",
+      "shape": [
+        12,
+        12
+      ],
+      "isolated_candidates": 20,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 0,
+      "maximum": 2,
+      "minimum_repairs": 2,
+      "protected": [],
+      "bases": 1,
+      "label": "mixed-crossing-10-2",
+      "shape": [
+        12,
+        22
+      ],
+      "isolated_candidates": 36,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        4
+      ],
+      "bases": 3,
+      "label": "mixed-singleton-8",
+      "shape": [
+        10,
+        22
+      ],
+      "isolated_candidates": 7,
+      "tested_candidates": 5,
+      "frozen": true
+    },
+    {
+      "old_value": 1,
+      "maximum": 2,
+      "minimum_repairs": 1,
+      "protected": [
+        4
+      ],
+      "bases": 3,
+      "label": "mixed-singleton-10",
+      "shape": [
+        12,
+        22
+      ],
+      "isolated_candidates": 7,
+      "tested_candidates": 5,
+      "frozen": true
+    }
+  ],
+  "all_candidate_adjacent": [
+    {
+      "W": 8,
+      "k": 1,
+      "candidates": 13,
+      "minimum_deletions": 1,
+      "minimum_links": 1
+    },
+    {
+      "W": 8,
+      "k": 2,
+      "candidates": 24,
+      "minimum_deletions": 2,
+      "minimum_links": 2
+    },
+    {
+      "W": 8,
+      "k": 4,
+      "candidates": 46,
+      "minimum_deletions": 4,
+      "minimum_links": 4
+    },
+    {
+      "W": 8,
+      "k": 8,
+      "candidates": 90,
+      "minimum_deletions": 8,
+      "minimum_links": 8
+    },
+    {
+      "W": 20,
+      "k": 1,
+      "candidates": 55,
+      "minimum_deletions": 1,
+      "minimum_links": 1
+    },
+    {
+      "W": 20,
+      "k": 2,
+      "candidates": 96,
+      "minimum_deletions": 2,
+      "minimum_links": 2
+    },
+    {
+      "W": 20,
+      "k": 4,
+      "candidates": 178,
+      "minimum_deletions": 4,
+      "minimum_links": 4
+    },
+    {
+      "W": 20,
+      "k": 8,
+      "candidates": 342,
+      "minimum_deletions": 8,
+      "minimum_links": 8
+    },
+    {
+      "W": 64,
+      "k": 1,
+      "candidates": 209,
+      "minimum_deletions": 1,
+      "minimum_links": 1
+    },
+    {
+      "W": 64,
+      "k": 2,
+      "candidates": 360,
+      "minimum_deletions": 2,
+      "minimum_links": 2
+    },
+    {
+      "W": 64,
+      "k": 4,
+      "candidates": 662,
+      "minimum_deletions": 4,
+      "minimum_links": 4
+    },
+    {
+      "W": 64,
+      "k": 8,
+      "candidates": 1266,
+      "minimum_deletions": 8,
+      "minimum_links": 8
+    }
+  ],
+  "scope": "General isolated-deletion physical adapter; normalized candidate repair rank, arbitrary mixed/BP/beta flow; exact deletion frontier, weighted greedy, source-protected joint lexicographic selection and links.",
+  "limits": [
+    "General proofs are written; enumeration corroborates.",
+    "Full compensation is conditional on all candidate resources paying all alpha sources.",
+    "Only isolated selections are deleted; no arbitrary candidate-removal identity claim.",
+    "No universal5over6 improvement or change of auxiliary partition."
+  ]
+}

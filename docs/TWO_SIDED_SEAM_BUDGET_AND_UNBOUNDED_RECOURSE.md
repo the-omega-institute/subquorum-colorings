@@ -1,5 +1,11 @@
 # Two-sided seam budgets, exact full-pool compensation and unbounded recourse
 
+General repair-choice continuation: [isolated selections and the contracted
+resource rank](ISOLATED_SELECTION_REPAIR_MATROID.md) handles arbitrary mixed
+and beta gates in a fixed mixed-direction partition, gives exact deletion
+budgets with old-source preservation, and jointly optimizes locations and
+links. It also identifies an optimal free-location repair for this family.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Independent research branch.
 
 The [one-sided path circuit](EXTREMAL_SHARED_UNIT_BUDGET_AND_FULL_POOL_PATH_CIRCUITS.md)

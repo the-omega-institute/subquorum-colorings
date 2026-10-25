@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [isolated-selection repair choice and one combined budget](docs/ISOLATED_SELECTION_REPAIR_MATROID.md):
+in any fixed even-rectangle mixed-direction partition, deleting occupied-
+isolated selections adds distinct original singleton sinks while preserving
+all old resource identities, terminal gates, links and freezing. Candidate
+payment gains are a standard contracted resource-matroid rank, including
+mixed and beta forks. If all candidates gain R payments, exactly R deletions
+suffice, retaining every old paid source. A single lexicographic flow chooses
+minimum-count, minimum-weight repairs and then minimum links. Zero individual
+optimized gains imply zero joint gain, and S+D increases exactly by deleted
+count minus rank gain. The adjacent maximum family has exact free-location
+optimum k deletions/k links. Full geometric candidate coverage and 5/6 remain
+open; the general proof does not assert all isolated candidates always suffice.
+
 New [two-sided seam budgets and unbounded prescribed-repair recourse](docs/TWO_SIDED_SEAM_BUDGET_AND_UNBOUNDED_RECOURSE.md):
 any m prescribed upper/lower singleton openings lower the true fixed-P
 selection maximum by exactly m, with frozen attainers. Their full-pool
