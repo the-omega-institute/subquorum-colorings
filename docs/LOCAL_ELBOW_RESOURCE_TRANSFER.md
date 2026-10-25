@@ -2,6 +2,13 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+**Follow-up:** [a physical rank-one withdrawal](PHYSICAL_ELBOW_WITHDRAWAL_OBSTRUCTION.md)
+now realizes the allowed r=1 with the complete original pool, an unpaid old
+target, frozen alpha bodies and degree-three alpha terminals. Its four
+shield-beta endpoints remain unfrozen, so full freezing remains a separate
+question. Arbitrary independent copies saturate the distinct-witness loss
+bound. The earlier zero-loss computations below retain their original scope.
+
 We give a local repair for a genuine H/V seam in the canonical band model.
 It changes only **two** tile direction bits in a 4-by-2 patch, rather than
 requiring a full-height P-free strip. All global M/PP owners, source and
