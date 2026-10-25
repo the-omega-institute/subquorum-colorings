@@ -309,3 +309,12 @@ retain actual entrance caps and original shared resource identities, or
 exhibit a fully frozen obstruction for the specific proposed stronger rule.
 The submitted 11 October manuscript, public main, PR #3 and shared CI are
 not modified by this research branch.
+
+## Continuation: a realized active merger
+
+The [active short-tail merger note](ACTIVE_SHORT_TAIL_MERGER_AND_SEALED_ESCAPE.md)
+constructs a fully frozen two-source common-BP merger with both short owners
+alpha reachable and two distinct downstream intervals. It also proves a
+necessary injective retained-escape lemma and realizes an escape in a sealed
+pure cycle. The obstruction survives the exact reductions here; complete
+original compensation still holds through different old bypass intervals.

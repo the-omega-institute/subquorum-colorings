@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "machine": "user-authorized local machine",
+  "preflight": {
+    "memory_gib": 16,
+    "memory_free_percent": 40,
+    "active_lean_lake": 0,
+    "process_detection": "comm basename exactly lean or lake",
+    "concurrency": 1
+  },
+  "command": "lean SubQuorum/ActiveShortTailMerger.lean",
+  "working_directory": "formal",
+  "exit_code": 0,
+  "audited_declarations": [
+    "geometry_valid",
+    "all_endpoints_frozen",
+    "concrete_sizes",
+    "concrete_distinct_sources_and_gate",
+    "concrete_short_tail_merger",
+    "concrete_two_distinct_gap_units",
+    "concrete_sealed_retained_escape",
+    "cannot_use_both_links",
+    "separated_bottleneck_ledger"
+  ],
+  "axiom_audit": "active-short-tail-merger-lean-validation.txt",
+  "axioms_used": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Actual25T31M62P original feasibility and complete inductive freezing; two distinct alternating alpha traces and actual long mixed gate, actual short-tail links, distinct gap-unit geometry and sealed retained pure cycle; generic same-target exclusion and conditional all-q bottleneck ledger. General grid-to-support/flow adapter and retained escape-site injection written, not end-to-end Lean.",
+  "external_review": "Oracle attempt failed model_unavailable; no mathematical review returned."
+}

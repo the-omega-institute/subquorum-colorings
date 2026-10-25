@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [active short-tail merger and sealed retained escape](ACTIVE_SHORT_TAIL_MERGER_AND_SEALED_ESCAPE.md)
+realizes two different alpha-entered one-edge mixed tails at the same BP of
+a longer mixed gate, on an actual frozen14x18 board. In the five-owner/two-
+interval restricted pool every source individually pays1, but together V1,c2;
+all owners are alpha reachable and chain contraction leaves the entrance cap.
+A general lemma gives injective retained escape P sites, yet a retained escape
+in this board is a sealed pure two-point PP/M cycle. All-q copies have exact
+restricted Vq,c2q and complete-pool V2q,c0 via distinct old bypass intervals.
+228 geometric scans/109 forks,24 independent packs and9 scoped Lean statements
+pass, including actual62endpoint full freezing and alternating strand topology.
+Oracle returned model_unavailable, no review. Universal compensation/5/6 open.
+
 25 October: [short mixed chains and the corridor hole budget](SHORT_MIXED_CHAINS_AND_CORRIDOR_HOLE_BUDGET.md)
 proves a simultaneous geometric extension: short horizontal mixed owners form
 same-row directed chains, and all internal links avoid the vertical injection.
