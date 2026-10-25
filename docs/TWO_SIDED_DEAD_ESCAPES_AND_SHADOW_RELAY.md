@@ -16,6 +16,12 @@ The proof is a general two-source shared-relay lemma with support containment.
 It distinguishes a second original unit from a second route through the
 same capacity-one owner. No universal 5/6 improvement is claimed.
 
+Continuation: [many relay modules and the joint defect bound](MULTISOURCE_RELAY_BYPASS_AND_DEFECT_BOUND.md)
+allows covered outputs to be split between entrants and retains at most c
+uncovered units in a capacity-c module with at most c+1 entrants. It proves
+exact weighted matching reduction in that class and a source/resource-
+coupled compensation bound when some modules remain unsafe.
+
 ## 1. A two-sided physical obstruction
 
 Use rows 0,...,13, columns 0,...,27, and the original bands (0,1),(2,3),... .

@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "toolchain": "Lean 4.33.0",
+  "machine": "local; selected by user in this conversation",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_available_percent": 43,
+    "preexisting_lean_lake_comm_basename": 0,
+    "concurrency": 1,
+    "final_lean_lake_comm_basename": 0
+  },
+  "command": "lean -j1 formal/SubQuorum/MultiSourceRelayBypass.lean",
+  "statement_count": 9,
+  "axiom_free_statement_count": 1,
+  "statements": [
+    "repair_two_routes",
+    "one_uncovered_implies_pair_covered",
+    "overloaded_source_sets_disjoint",
+    "one_gate_forbids_two_loads",
+    "finite_normalization",
+    "deficiency_bound",
+    "half_projection_bound",
+    "capacity_two_projection_bound",
+    "joint_rank_not_sum"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "warnings": 0,
+  "sorry": 0,
+  "new_axioms": 0,
+  "native_evaluation": false,
+  "scope": "Arbitrary resource two-source transposition preserving the two original units and nonincreasing separable route cost; at most one uncovered identity implies a covered collision unit; disjoint selected source sets for distinct overloaded labels; finite normalization under supplied progress/payment/cost hypotheses; unit-gate exclusion and deficiency/projection arithmetic including capacity two.",
+  "excluded": [
+    "Full finite module matching/flow adapter",
+    "Joint source-resource rank extraction and Hall deficiency theorem",
+    "Higher-capacity exchange geometry",
+    "Physical H-region decomposition or complete grid theorem",
+    "Universal5over6"
+  ],
+  "axiom_report": "'SubQuorum.MultiSourceRelayBypass.repair_two_routes' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.one_uncovered_implies_pair_covered' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.overloaded_source_sets_disjoint' does not depend on any axioms\n'SubQuorum.MultiSourceRelayBypass.one_gate_forbids_two_loads' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.finite_normalization' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.deficiency_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.half_projection_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.capacity_two_projection_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MultiSourceRelayBypass.joint_rank_not_sum' depends on axioms: [propext, Quot.sound]\n"
+}
