@@ -90,6 +90,11 @@ assumes decidable baseline membership, as provided by this finite board.
 Concrete coordinates, the cover below and the physical compiler are outside
 that Lean scope.
 
+Subsequent [fixed-P extremal construction](FIXED_P_MAXIMUM_FROZEN_ELBOW.md)
+resolves the question left open here: a different186-point attainer is
+completely frozen and retains the rank-one elbow and destructive E/F
+interaction. The184 retained-extension bound in this note remains exact.
+
 ## 3. Protecting all types, links and source-reachable supports
 
 First protect the type of **every** free P tip, not just the tips in the
