@@ -1,5 +1,13 @@
 # Exact resource gluing across original endpoint components
 
+**Full-pool continuation:** [sharp opening budgets and full-pool path
+circuits](EXTREMAL_SHARED_UNIT_BUDGET_AND_FULL_POOL_PATH_CIRCUITS.md) gives a
+different frozen adjacent-module family whose complete physical original
+pool has an arbitrarily large path circuit. Each open shared seam costs
+exactly one selection relative to its true fixed-P maximum. This strengthens
+the restricted-pool diagnostic in Section 3; that section's own full-pool
+repair statement remains valid.
+
 **Support-saturation refinement:** [original owner classes and the singleton
 core](SUPPORT_CLASS_SATURATION_AND_SINGLETON_CORE.md) preserves every fixed
 terminal matching while privatizing any class with at least as many units as

@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [sharp seam-opening budget and FULL-pool path circuits](docs/EXTREMAL_SHARED_UNIT_BUDGET_AND_FULL_POOL_PATH_CIRCUITS.md):
+on the adjacent-module endpoint family, prescribing any m shared singleton
+seams open lowers the true fixed-P maximum by exactly m, with frozen attainers.
+Their full original pools pay m of k sources. Opening all k-1 seams gives
+an arbitrarily large minimal unpayable source set and a unique violating
+withdrawal of size k-1; bounded-order withdrawal checks cannot suffice.
+Keeping all sources except source r costs exactly k-1+r links.
+A mixed interface specialization is exactly one selection below the true
+maximum. Checks pass 95 frozen boards, 629 path withdrawals, 100 maximum
+source-basis costs and 17 new scoped Lean declarations. This endpoint family
+still admits vertical full compensation; the universal 5/6 bound remains open.
+
 New [FULL-pool interface singleton and exact repairs](docs/FULL_POOL_INTERFACE_SINGLETON_AND_REPAIR_PROFILE.md):
 for every even W>=8 and every subset of s repairs among q frozen copies,
 closed local systems pay q and the interface alone pays q, yet the full
