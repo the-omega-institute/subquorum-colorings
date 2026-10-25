@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "machine": "user-authorized local machine",
+  "preflight": {
+    "memory_gib": 16,
+    "memory_free_percent": 37,
+    "active_lean_lake": 0,
+    "process_detection": "comm basename exactly lean or lake",
+    "concurrency": 1
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean SubQuorum/ShortMixedChains.lean",
+  "working_directory": "formal",
+  "exit_code": 0,
+  "audited_declarations": [
+    "internal_links_disjoint",
+    "internal_link_adjacent",
+    "strict_progress_no_cycle",
+    "chain_toll_exact",
+    "hole_budget_monotone",
+    "one_tail_zero_budget",
+    "walk_potential_bound",
+    "concrete_edge_potential",
+    "every_paying_walk_cost_at_least_three",
+    "three_link_paying_walk",
+    "separated_toll_ledger"
+  ],
+  "axiom_audit": "short-mixed-chains-lean-validation.txt",
+  "axioms_used": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Unbounded chain-column disjointness/adjacency and strict progression, toll arithmetic and conditional hole budgets; arbitrary-length owner-walk potential lower bound, actual restricted graph three-link witness and all-q ledger. Python checks the exact original restricted owner graph adapter. General physical chain classification, corridor certificate and full-flow projection/lift are written proofs, not end-to-end Lean.",
+  "external_review": "No new independent external review claimed."
+}

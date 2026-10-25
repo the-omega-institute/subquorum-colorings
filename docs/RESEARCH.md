@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [short mixed chains and the corridor hole budget](SHORT_MIXED_CHAINS_AND_CORRIDOR_HOLE_BUDGET.md)
+proves a simultaneous geometric extension: short horizontal mixed owners form
+same-row directed chains, and all internal links avoid the vertical injection.
+With BT-corridor slots first, only unported chain tails and marked-port
+exceptions remain; component deficit is at most min(alpha,floor((tails+boundary)/2)).
+Entered chains support intervals only at their tail, so a capacity-one
+conduit with toll length-1 preserves full maximum payment and minimum links.
+An actual frozen-board restricted pool has exact cost3, whereas dropping
+the toll reports2; all-q copies have3q versus2q. Full pools still pay2q at0.
+213 frozen contractions/lifts,155 independent packs,128 abstract chain/receiver
+controls and11 scoped Lean declarations pass. General geometry and lifts
+are written; universal compensation/5/6 remain open.
+
 25 October: [vertical TP injection and short-mixed exceptions](VERTICAL_TP_INJECTION_AND_SHORT_MIXED_HOLES.md)
 extends the frozen missing-port injection to every vertically matched original
 TP, including mixed exits. A geometric partial certificate leaves holes only

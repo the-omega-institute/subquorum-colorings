@@ -268,3 +268,11 @@ network retain that full network; neither the local allocation theorem nor
 its projection/lift needs a general ordinary/full equality. This correction
 changes no solver or theorem hypothesis. The new bound (2) deliberately keeps
 the inequality V_full>=V_ord rather than asserting equality.
+
+## Continuation: short-chain and corridor reduction
+
+The [short mixed chain note](SHORT_MIXED_CHAINS_AND_CORRIDOR_HOLE_BUDGET.md)
+strengthens the displayed certificate by assigning BT-corridor slots and
+all non-tail short TPs. It replaces short-owner hole counts by unported
+chain-tail counts and proves exact full-flow contraction with the required
+internal-link toll. The original hypotheses and statements here are retained.
