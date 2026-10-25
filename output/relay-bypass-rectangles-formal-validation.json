@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T10:32:27.268555+00:00",
+  "compiler": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution": "User-selected local Mac; sequential one compiler process",
+  "memory_preflight": {
+    "total_bytes": 17179869184,
+    "first_available_percent": 38,
+    "final_available_percent": 39,
+    "preexisting_lean_lake_processes": [],
+    "final_lean_lake_processes": []
+  },
+  "command": "lean formal/SubQuorum/RelayBypassRectangles.lean",
+  "exit_code": 0,
+  "declarations": 15,
+  "axiom_free": 4,
+  "axioms": {
+    "SubQuorum.RelayBypassRectangles.initialSegment_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.arbitrary_overload_has_bypass": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.square_criterion_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.empty_square_refutes_uniform_criterion": [],
+    "SubQuorum.RelayBypassRectangles.restrict_safe_interface": [],
+    "SubQuorum.RelayBypassRectangles.cheap_transposition": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.absent_cheap_pair_means_expensive": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.unmatched_rectangle_empty": [],
+    "SubQuorum.RelayBypassRectangles.local_payment_and_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.quota_iff_full_payment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.unmatched_defect_is_rectangle_weight": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.old_entrant_bound_recovers_one_loss": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.cost_only_control": [],
+    "SubQuorum.RelayBypassRectangles.coupled_deficiency_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.RelayBypassRectangles.sharp_family_arithmetic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "warnings": 0,
+  "sorry": false,
+  "native": false,
+  "new_axioms": false,
+  "scope": "Arbitrary overloaded indexed group cheap-pair existence and square iff; injective identity restriction; empty rectangle obstruction to pair existence; unmatched augmentation interface; separable transposition cost; local loss/quota and global deficiency arithmetic. Full finite matching/quota optimization, joint rank extraction and physical grid adapter remain written proofs plus independent Python checks; not end-to-end.",
+  "log": "output/relay-bypass-rectangles-lean-validation.txt"
+}

@@ -2,6 +2,13 @@
 
 25 October 2026. Wenlin Zhang and Haobo Ma. Isolated research branch.
 
+The subsequent [empty-rectangle theorem](RELAY_BYPASS_RECTANGLES_AND_EXACT_LOCAL_COST.md)
+removes the entrant-count bound: every c+1 entrants must jointly bypass all
+but at most c original outputs. It proves a sharp local universal criterion,
+an exact isolated private-quota cost formula, and a joint rectangle defect
+bound reducing to this note's kappa in the original small-entrant case.
+The one-stage/common-output/private-owner hypotheses still apply.
+
 The preceding [two-source shared-relay lemma](TWO_SIDED_DEAD_ESCAPES_AND_SHADOW_RELAY.md)
 uses direct support to release a shared mixed gate. We extend this to any
 finite number of sources and relay modules, with original resource identities

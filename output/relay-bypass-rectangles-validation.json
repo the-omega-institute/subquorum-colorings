@@ -1,0 +1,160 @@
+{
+  "status": "PASS",
+  "counts": {
+    "local_subset_interfaces": 20480,
+    "local_independent_packings": 177920,
+    "all_relay_pairings": 34816,
+    "exhaustive_relations_and_capacities": 1024,
+    "safe_exhaustive_relations_and_capacities": 845,
+    "independent_route_packings": 14904,
+    "independent_models": 35,
+    "network_models": 433,
+    "safe_network_models": 240,
+    "strict_joint_overlap_improvements": 40,
+    "projection_value_gaps": 9,
+    "projection_cost_only_gaps": 21,
+    "old_rank_equalities": 317,
+    "weighted_private_quota_controls": 160,
+    "weighted_quota_independent_packings": 25827,
+    "physical_original_pool_patterns": 243
+  },
+  "controls": {
+    "covered_everywhere_c1_k1_n3": {
+      "projection": [
+        3,
+        2
+      ],
+      "actual": [
+        2,
+        1
+      ],
+      "K": 1,
+      "local_sum": 1,
+      "safe": false
+    },
+    "covered_everywhere_c1_k2_n6": {
+      "projection": [
+        6,
+        4
+      ],
+      "actual": [
+        3,
+        1
+      ],
+      "K": 3,
+      "local_sum": 3,
+      "safe": false
+    },
+    "covered_everywhere_c2_k1_n4": {
+      "projection": [
+        4,
+        3
+      ],
+      "actual": [
+        3,
+        2
+      ],
+      "K": 1,
+      "local_sum": 1,
+      "safe": false
+    },
+    "covered_everywhere_c2_k3_n8": {
+      "projection": [
+        8,
+        5
+      ],
+      "actual": [
+        5,
+        2
+      ],
+      "K": 3,
+      "local_sum": 3,
+      "safe": false
+    },
+    "covered_everywhere_c3_k2_n9": {
+      "projection": [
+        9,
+        7
+      ],
+      "actual": [
+        5,
+        3
+      ],
+      "K": 4,
+      "local_sum": 4,
+      "safe": false
+    },
+    "cost_only_empty_square": {
+      "projection": [
+        2,
+        2
+      ],
+      "actual": [
+        2,
+        3
+      ],
+      "K": 1,
+      "local_sum": 1,
+      "safe": false
+    },
+    "cheap_loss_conservative_costly_bypass_offset": {
+      "projection": [
+        3,
+        20
+      ],
+      "actual": [
+        3,
+        21
+      ],
+      "K": 1,
+      "local_sum": 1,
+      "safe": false
+    },
+    "unsafe_but_full_optimum_exact": {
+      "projection": [
+        4,
+        0
+      ],
+      "actual": [
+        4,
+        0
+      ],
+      "K": 1,
+      "local_sum": 1,
+      "safe": false
+    },
+    "shared_source_not_double_counted": {
+      "projection": [
+        3,
+        3
+      ],
+      "actual": [
+        2,
+        2
+      ],
+      "K": 1,
+      "local_sum": 2,
+      "safe": false
+    },
+    "shared_unit_not_double_counted": {
+      "projection": [
+        3,
+        3
+      ],
+      "actual": [
+        2,
+        2
+      ],
+      "K": 1,
+      "local_sum": 2,
+      "safe": false
+    }
+  },
+  "physical": {
+    "existing_board": "fully frozen 56P/26T; complete original routing, no new embedding",
+    "patterns": 243,
+    "safe": 162,
+    "strict_value_gaps": 1
+  },
+  "scope": "General proofs are written separately. Exhaustion is supplementary. Arbitrary entrant counts, exact isolated quota cost, cheap matching repairs and coupled original-identity rectangle rank. Private-owner disjointness assumed, not inferred. No new physical embedding, no universal grid bound, no mail. Lean scope recorded separately."
+}
