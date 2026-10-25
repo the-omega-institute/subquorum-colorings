@@ -7,6 +7,23 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [joint mixed-entrance and original-interval cuts](JOINT_GATE_RESOURCE_CUTS.md)
+prove exact V=private+min_H(sourceRank(H)+intervalRank(G-H)) for a declared
+branch interface, allowing shared mixed entrances AND shared original units.
+For gates with at most two source incidences the exact deficit is
+max_H(treeComponents(H)-intervalRank(G-H)), equivalently an explicit joint
+union inequality over disjoint gate subsets. A four-source abstract example
+passes all three marginal source/gate/interval matchings but jointly pays3;
+an even-cycle five-source control also passes necessary terminal-color
+parity yet jointly pays4/5. No physical embedding of either is claimed.
+The complete frozen active-merger board,
+with all owners/links/betas retained, has an exact formula for EVERY interval
+availability subset: eleven gate units still supply only one payment until
+a private alternative is released.6834joint-cut/private controls,6883physical
+availability models/13766independent packs and12scoped Lean declarations pass.
+General geometric coverage/5/6 open.
+
+
 25 October: [reserve boundary split and exact joint compensation](RESERVE_BOUNDARY_SPLIT_AND_JOINT_COMPENSATION.md)
 realizes actual old-T/P-monotone rematching:4newP/1T leave J_R's BB13/BT14
 geometry intact but split its owner into a new alpha and a mixed chain

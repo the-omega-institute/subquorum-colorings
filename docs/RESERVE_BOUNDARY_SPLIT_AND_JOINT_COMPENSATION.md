@@ -281,3 +281,7 @@ sources share resources, including cases with shared mixed or BP gates.
 The two-source disjoint-branch hypothesis cannot be dropped without checking
 those capacities. Public main, PR3, shared CI, the submitted11October
 manuscript and correspondence are preserved.
+
+**Shared-entrance continuation:** [joint gate/resource cuts](JOINT_GATE_RESOURCE_CUTS.md)
+removes source separation at designated mixed entrances under explicit branch
+hypotheses, and counts shared original intervals jointly with those entrances.

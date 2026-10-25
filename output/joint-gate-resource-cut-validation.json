@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_abstract_packs": 6834,
+    "joint_cut_models": 6834,
+    "private_prepayment_models": 6834,
+    "independent_physical_packs": 13766,
+    "complete_board_availability_models": 6883
+  },
+  "named_joint_obstruction": {
+    "value": 3,
+    "deficit": 1,
+    "tree_count": 3,
+    "outside_interval_rank": 2,
+    "separator_gates": [
+      3,
+      4
+    ],
+    "source_gate_rank": 4,
+    "gate_interval_rank": 4,
+    "source_interval_reachability_rank": 4,
+    "physical_embedding": "not asserted"
+  },
+  "even_cycle_obstruction": {
+    "value": 4,
+    "deficit": 1,
+    "tree_count": 4,
+    "outside_interval_rank": 3,
+    "separator_gates": [
+      4,
+      5
+    ],
+    "source_gate_rank": 5,
+    "gate_interval_rank": 5,
+    "source_interval_reachability_rank": 5,
+    "opposite_terminal_gate_coloring": {
+      "0": 0,
+      "1": 1,
+      "2": 0,
+      "3": 1,
+      "4": 0,
+      "5": 1
+    },
+    "physical_embedding": "not asserted; necessary parity only"
+  },
+  "physical": {
+    "empty": {
+      "group_sizes": [
+        3,
+        2,
+        5,
+        6,
+        5
+      ],
+      "only_gate_intervals": [
+        1,
+        2
+      ],
+      "full_pool": [
+        2,
+        0
+      ],
+      "all_original_owners_links_betas_retained": true
+    },
+    "selection": {
+      "group_sizes": [
+        2,
+        2,
+        5,
+        6,
+        5
+      ],
+      "only_gate_intervals": [
+        1,
+        2
+      ],
+      "full_pool": [
+        2,
+        0
+      ],
+      "all_original_owners_links_betas_retained": true
+    },
+    "cycle": {
+      "group_sizes": [
+        2,
+        2,
+        5,
+        6,
+        5
+      ],
+      "only_gate_intervals": [
+        1,
+        2
+      ],
+      "full_pool": [
+        2,
+        0
+      ],
+      "all_original_owners_links_betas_retained": true
+    },
+    "cycle_beta": {
+      "group_sizes": [
+        0,
+        2,
+        5,
+        6,
+        5
+      ],
+      "only_gate_intervals": [
+        2,
+        3
+      ],
+      "full_pool": [
+        2,
+        1
+      ],
+      "all_original_owners_links_betas_retained": true
+    }
+  },
+  "scope": "Arbitrary-size joint gate/resource rank and tree-cut theorem is written, not inferred from finite tests. Physical adapter uses complete original active-merger board and all four frozen caps with arbitrary original interval availability. Four- and five-source joint obstructions are abstract only; no physical embedding or universal5/6 improvement asserted."
+}
