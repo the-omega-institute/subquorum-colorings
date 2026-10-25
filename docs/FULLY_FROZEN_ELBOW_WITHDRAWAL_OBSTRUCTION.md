@@ -21,6 +21,12 @@ or that the obstruction survives optimization of N. In fact uniform V pays
 both one-copy sources with no links, while uniform H also pays both sources.
 The 11 October submitted manuscript is preserved.
 
+Subsequent [selected-extension analysis](FROZEN_ELBOW_SELECTION_SATURATION.md)
+proves that every feasible extension retaining this board's selections
+preserves the loss and repair interaction. Its exact one-copy retained maximum
+is184 (slack5), while the unrestricted fixed-P maximum is186; the latter
+is not asserted to preserve full freezing or the same obstruction.
+
 ## 1. Construction from the partially frozen board
 
 Take the 16-by-28 board in the preceding physical example, including its

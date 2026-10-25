@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T23:38:31.932255+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "44%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.SelectedExtensionProtection.feasible_downward' does not depend on any axioms",
+    "'SubQuorum.SelectedExtensionProtection.new_selection_in_hull' does not depend on any axioms",
+    "'SubQuorum.SelectedExtensionProtection.protected_region_unchanged' does not depend on any axioms",
+    "'SubQuorum.SelectedExtensionProtection.two_occupied_neighbors_forbid' does not depend on any axioms"
+  ],
+  "scope": "General selected-degree feasibility is hereditary; every added selection lies in the baseline candidate hull; regions disjoint from this hull retain all selection labels; two distinct baseline occupied neighbors forbid future selection. Arbitrary vertex type and adjacency relation, no enumeration or maximum assumption.",
+  "not_formalized": [
+    "Concrete184/186attainers, disjoint square/patch cover, physical BP/gap protection certificates, owner/link/flow invariance and arbitrary-copy geometry. Written proof and executable evidence; no end-to-end grid Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
