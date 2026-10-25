@@ -2,6 +2,11 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+Continuation: [pressured bent gaps and exact beta repair](BENT_GAP_PRIVATE_RESERVES.md)
+handles an occupied family with zero immediate-exposure pair count, proves a
+sharp private reserve over all retaining completions, and removes the column
+alignment requirement from the same-side boundary exclusion.
+
 Freezing does **not** exclude the double-zero-ended boundary paths left by
 [terminal-defect compensation](TERMINAL_DEFECT_PORT_COMPENSATION.md), even
 when every occupied endpoint has degree exactly three. We give an explicit

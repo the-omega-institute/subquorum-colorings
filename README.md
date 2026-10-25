@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [sharp private reserves in occupied bent gaps and exact beta repair](docs/BENT_GAP_PRIVATE_RESERVES.md):
+occupied neighbours can force a blank row even when immediate BB exposure fails.
+For every even width w>=6, all retaining degree-profile-preserving completions
+of the frozen occupied-band family have at least floor(w/3)+2 private units per
+alpha. An explicit completion attains this exact minimum. Distinct dedicated
+beta owners repair arbitrary interval withdrawals: full value is always the
+alpha count, and minimum links equal the direct deficit. Checks pass140 frozen
+family models,56 mixed cuts,1,400 withdrawals and10 scoped Lean audits. The
+correct density allows horizontal selected pairs; universal5/6 remains open.
+
 New [frozen boundary obstruction and adjacent-band repair](docs/ADJACENT_BAND_BOUNDARY_REPAIR.md):
 freezing and exact degree three do not exclude double-zero terminal-port paths.
 An explicit frozen 144-endpoint board has two such paths, yet its complete

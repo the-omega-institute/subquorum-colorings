@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T19:36:53.250917+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "91142 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "29%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "91142 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.BentGapPrivateReserves.selected_triple_impossible' depends on axioms: [propext]",
+    "'SubQuorum.BentGapPrivateReserves.triple_has_blank' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BentGapPrivateReserves.triple_block_density' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BentGapPrivateReserves.blankCount_append' depends on axioms: [propext]",
+    "'SubQuorum.BentGapPrivateReserves.anchored_end_forces_blank' depends on axioms: [propext]",
+    "'SubQuorum.BentGapPrivateReserves.anchored_pressure_density' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BentGapPrivateReserves.even_BB_ends_need_distinct_forests' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BentGapPrivateReserves.occupied_family_private_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BentGapPrivateReserves.different_bands_give_different_units' does not depend on any axioms",
+    "'SubQuorum.BentGapPrivateReserves.private_completion_ledger' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Selected-triple exclusion allowing adjacent selected pairs; arbitrary-length list induction for one blank per disjoint triple; anchored-end forced blank; anchored pressured-row density; even-gap BB forest parity; exact all-width private reserve arithmetic; resource distinction by bands; private completion ledger.",
+  "not_formalized": [
+    "Physical gap/forest and occupied-family coordinate adapters; arbitrary-width saturation construction and completion coverage; global private-set injection, allocation and exact dedicated-beta withdrawal cost; written proofs with executable controls",
+    "Mixed-direction support identities and offset-free boundary adapter; independent executable controls and written proof"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
