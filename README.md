@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [frozen boundary obstruction and adjacent-band repair](docs/ADJACENT_BAND_BOUNDARY_REPAIR.md):
+freezing and exact degree three do not exclude double-zero terminal-port paths.
+An explicit frozen 144-endpoint board has two such paths, yet its complete
+whole-support pool pays both at zero links. Two adjacent exposed BB/P bands
+always supply a positive original unit; band-disjoint pairs avoid reusing units
+within an owner. At least two pairs per global alpha give simultaneous zero-link
+payment, including mixed-direction regions with actual matching seams restored.
+The global incidence criterion G+2beta>=2alpha-1 gives coefficient one on this
+class. Every fixed-P degree-three selection extension of the example family
+retains four private reserves per alpha, with deficit at most floor(r/4) after
+r unit withdrawals. Checks pass 215 physical models, 48 mixed partitions,
+36,476 abstract withdrawals and 17 scoped Lean audits; universal 5/6 remains open.
+
 New [terminal-defect compensation and exact joint withdrawals](docs/TERMINAL_DEFECT_PORT_COMPENSATION.md):
 with the complete original interval pool and standard packet boundaries,
 all degree-three alpha terminals have simultaneous zero-link payments, before

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T19:13:34.496128+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "82207 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "38%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "82207 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.AdjacentBandBoundaryRepair.two_adjacent_TT_pairs_impossible' depends on axioms: [propext]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.adjacent_pair_has_positive_unit' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.chosen_band_in_pair' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.disjoint_pairs_choose_distinct_bands' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.run_pair_count' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.global_exposed_band_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.global_coefficient_one_criterion' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.restored_interface_coefficient_one' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.uniform_four_guard_slack' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.private_four_guard_slack' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.alternating_reachable_withdrawal_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.small_withdrawal_keeps_two_neighbours' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.private_disjoint_reserve_bound' does not depend on any axioms",
+    "'SubQuorum.AdjacentBandBoundaryRepair.four_private_reserves' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.arbitrary_copy_slack' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.arbitrary_copy_port_defects' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.AdjacentBandBoundaryRepair.arbitrary_copy_positive_margin' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Local adjacent TT exclusion; positive adjacent-band reserve interface; injective original band choices from disjoint consecutive pairs; global shared-incidence and coefficient-one ledgers including restored actual-matching interface correction arithmetic; arbitrary-g alternating reachable withdrawal inequality; private reserve tax; arbitrary-q counterexample inventory arithmetic.",
+  "not_formalized": [
+    "General physical balanced-forest-to-TT adapter, guard-to-resource incidence and matching allocation, fixed-P monotone completion coverage; written proofs",
+    "144-endpoint actual frozen boundary obstruction, copied family and retained-neighbour certificates; separate independent executable validation"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

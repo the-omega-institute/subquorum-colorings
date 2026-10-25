@@ -2,6 +2,11 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+Continuation: [frozen boundary obstruction and adjacent-band repair](ADJACENT_BAND_BOUNDARY_REPAIR.md)
+shows that exact degree-three freezing does not exclude the double-zero
+boundary paths below. A new whole-support reserve lemma repairs a stated
+exposed-band class, also with mixed directions and actual matching seams.
+
 The full-pool question following the [beta-core switch theorem](PINWHEEL_BETA_CORE_SWITCHES.md)
 has an automatic positive answer under the standard packet boundary conditions:
 if every alpha terminal has occupied degree three, all original alphas have
