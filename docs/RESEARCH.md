@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [connected frozen obstruction to interval-only repair](CONNECTED_FROZEN_INTERVAL_REPAIR_OBSTRUCTION.md).
+A neutral PP splice joins arbitrary q+1 copies into a connected fully frozen
+occupied graph. After the old18C links, the4q new-new alpha paths have direct
+free-end interval rankq, and even whole-owner interval rank2q. Thus freezing
+does not automatically supply the preceding sufficient new-interval Hall
+condition. Different beta stems pay ALL4(q+1) sources at exact5(q+1)links,
+with no interval use; the old partial certificate also extends compatibly.
+General freezing uses a112endpoint prelude, a four-site bridge and old-rank
+replay, rather than finite-q inference.12connected frozen controls,5patch
+matchings,2independent packs and10scopedLean audits pass. The occupied graph
+is connected while its beta-only owner/link graph separates by copy; no
+coupled-owner or all-resource counterexample is claimed. Oracle review of
+the preceding notes failed model_unavailable and supplied no review.
+
 25 October: [new selections and the exact new-TP defect budget](SELECTED_EXTENSIONS_AND_NEW_TP_DEFECT_BUDGET.md).
 Arbitrary feasible new selections on the fixed308P endpoint set are now
 fully ordinarily compensated for EVERY actual rematching. For arbitrary

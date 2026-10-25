@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "command": "lean SubQuorum/ConnectedFrozenIntervalRepair.lean",
+  "lean_version": "4.33.0",
+  "exit_code": 0,
+  "preflight": {
+    "machine": "user-authorized local Mac",
+    "memory_bytes": 17179869184,
+    "free_percentage": 75,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "audited_declarations": [
+    "SubQuorum.ConnectedFrozenIntervalRepair.actual_occupied_side_witnesses",
+    "SubQuorum.ConnectedFrozenIntervalRepair.rank_replay",
+    "SubQuorum.ConnectedFrozenIntervalRepair.pure_pp_patch_closed",
+    "SubQuorum.ConnectedFrozenIntervalRepair.four_new_bridge_sites_freeze",
+    "SubQuorum.ConnectedFrozenIntervalRepair.block_translation_injective",
+    "SubQuorum.ConnectedFrozenIntervalRepair.zero_support_forbids_matching",
+    "SubQuorum.ConnectedFrozenIntervalRepair.whole_interval_rank_gap",
+    "SubQuorum.ConnectedFrozenIntervalRepair.strict_interval_hall_failure",
+    "SubQuorum.ConnectedFrozenIntervalRepair.beta_only_ledger",
+    "SubQuorum.ConnectedFrozenIntervalRepair.beta_minimum_link_count"
+  ],
+  "axiom_free_declarations": [
+    "SubQuorum.ConnectedFrozenIntervalRepair.zero_support_forbids_matching"
+  ],
+  "axioms_by_declaration": {
+    "SubQuorum.ConnectedFrozenIntervalRepair.actual_occupied_side_witnesses": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.rank_replay": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.pure_pp_patch_closed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.four_new_bridge_sites_freeze": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.block_translation_injective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.whole_interval_rank_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.strict_interval_hall_failure": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.beta_only_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.ConnectedFrozenIntervalRepair.beta_minimum_link_count": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "axioms_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "no_sorry_native": true,
+  "no_new_axiom_declarations": true,
+  "scope": "General arbitrary-old-rank replay after changed-mate targets are seeded frozen; finite closed terminal-free2x4PP patch; new4bridge endpoints freeze from4boundary endpoint core; arbitrary-copy translation injection; empty-support matching obstruction, intervalHall arithmetic, beta ledger/link arithmetic; concrete25source-path-node50retainedPside blockers. 112endpoint prelude and complete620P ranks checkedPython; arbitraryq physical assembly, interval/support and compensation-flow adapters WRITTENPython. NOTendToEndLean family theorem. Fullycompensated connectedfrozen family refutes automatic interval-only repair, NOT universal compensation or5over6. OccupiedGraphConnected;BetaOnlyOwnerNetworkSeparatesByCopy."
+}

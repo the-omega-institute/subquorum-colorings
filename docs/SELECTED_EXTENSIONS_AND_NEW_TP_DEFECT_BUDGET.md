@@ -1,5 +1,11 @@
 # New selections: retained certificate, exact new-end defect, and a sharp reserved-pool obstruction
 
+Continuation: [connected fully frozen extensions](CONNECTED_FROZEN_INTERVAL_REPAIR_OBSTRUCTION.md)
+refute automatic applicability of the sufficient disjoint-new-interval Hall
+condition below. After old C,4q new-new demands have whole-owner interval
+rank only2q, but different beta stems pay all. The sufficient lemma itself
+and the present extension theorem are unaffected.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Isolated research branch.
 
 The previous [endpoint-extension theorem](ENDPOINT_EXTENSIONS_AND_LOCAL_RESOURCE_REPLACEMENT.md)
