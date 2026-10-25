@@ -1,5 +1,11 @@
 # Capacity-two square wires and source-free single-square components
 
+**Shared-resource continuation:** [exact endpoint-component gluing](ENDPOINT_COMPONENT_RESOURCE_GLUING.md)
+keeps every active component's internal gates and treats units shared with
+source-free components as effectively private. It gives an exact joint
+withdrawal correction and an all-length frozen path obstruction to bounded
+withdrawal tests on restricted original pools.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Isolated research branch.
 
 The abstract [relay rectangle criterion](RELAY_BYPASS_RECTANGLES_AND_EXACT_LOCAL_COST.md)

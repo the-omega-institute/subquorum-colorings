@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "compiler": "Lean 4.33.0",
+  "execution": "local macOS, one standalone file, sequential invocation",
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percent_final_invocation": 31,
+    "unrelated_processes": [
+      {
+        "pid": 76427,
+        "executable": "lake",
+        "toolchain": "4.35.0"
+      },
+      {
+        "pid": 86083,
+        "executable": "lean",
+        "toolchain": "4.35.0"
+      },
+      {
+        "pid": 86088,
+        "executable": "lean",
+        "toolchain": "4.35.0"
+      }
+    ],
+    "process_detection": "basename of comm field; full paths and bare names recognized",
+    "existing_processes_preserved": true
+  },
+  "declarations": [
+    "lost_avoids_retained_endpoints",
+    "parent_edge_in_range",
+    "parent_edge_incident",
+    "parent_edge_injective",
+    "lost_parent_deleted",
+    "lost_vertices_inject_into_deleted_edges",
+    "output_cut_uncrossing",
+    "aggregate_uncrossing",
+    "optimal_witness_uncrossing",
+    "private_unit_addition_never_increases",
+    "full_withdrawal_path_excess"
+  ],
+  "axiom_free": [
+    "SubQuorum.EndpointComponentResourceGluing.lost_avoids_retained_endpoints",
+    "SubQuorum.EndpointComponentResourceGluing.output_cut_uncrossing"
+  ],
+  "standard_axiom_dependencies": {
+    "SubQuorum.EndpointComponentResourceGluing.parent_edge_in_range": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.parent_edge_incident": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.parent_edge_injective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.lost_parent_deleted": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.lost_vertices_inject_into_deleted_edges": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.aggregate_uncrossing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.optimal_witness_uncrossing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.private_unit_addition_never_increases": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointComponentResourceGluing.full_withdrawal_path_excess": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "warnings": 0,
+  "errors": 0,
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false,
+  "verified": [
+    "arbitrary-n lost-vertex parent-edge injection with retained-edge exclusion",
+    "valid parent edge belongs to withdrawn set",
+    "elementwise switchable-output cut uncrossing",
+    "aggregate uncrossing arithmetic",
+    "minimum-witness uncrossing arithmetic",
+    "effective-private-unit elimination arithmetic",
+    "full path withdrawal excess arithmetic"
+  ],
+  "not_formalized": [
+    "max-flow/min-cut",
+    "physical whole-support and P-component adapter",
+    "full component gluing formula",
+    "matroid rank recognition",
+    "finite-set cardinality from injections",
+    "full-board geometric compensation or 5/6 improvement"
+  ],
+  "log": "output/endpoint-component-resource-gluing-lean-validation.txt"
+}

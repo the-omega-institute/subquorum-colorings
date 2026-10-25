@@ -1,0 +1,1255 @@
+{
+  "status": "PASS",
+  "scope": "finite checks only; arbitrary-size claims have written proofs",
+  "totals": {
+    "unit_increment_checks": 8607,
+    "rank_submodularity_pairs": 94876,
+    "minimizer_lattice_pairs": 5764,
+    "exact_gluing_availability_sets": 1916,
+    "positive_joint_overlap_cases": 274,
+    "independent_terminal_matchings": 3500,
+    "lattice_models": 139,
+    "models_with_multiple_active_P_components_or_abstract_groups": 115,
+    "frozen_fixture_images": 4,
+    "path_withdrawal_subsets": 1137,
+    "frozen_path_images": 12
+  },
+  "abstract_controls": {
+    "scope": "abstract, not asserted physical",
+    "forced_layered_beta_fork": {
+      "value": 3,
+      "cost": 5,
+      "certificates": [
+        {
+          "kind": "interval",
+          "owners": [
+            5,
+            6
+          ],
+          "links": [
+            [
+              10,
+              12
+            ]
+          ],
+          "interval": 0,
+          "value": 1,
+          "witness": 6
+        },
+        {
+          "kind": "fork",
+          "owners": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "links": [
+            [
+              0,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              2,
+              9
+            ]
+          ],
+          "interval": 1,
+          "value": 2,
+          "beta": 4,
+          "witness": 4
+        }
+      ]
+    },
+    "cost_countercontrol": {
+      "local_value_cost": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "global_value_cost": [
+        2,
+        1
+      ]
+    }
+  },
+  "frozen_controls": [
+    {
+      "fixture": "frozen_intrinsic_one_unit_gap",
+      "trial": 0,
+      "active_components": 2,
+      "original_subpool": [
+        18,
+        60,
+        69,
+        120,
+        122
+      ],
+      "full_value": 2,
+      "local_values": [
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "frozen_intrinsic_one_unit_gap",
+      "trial": 1,
+      "active_components": 2,
+      "original_subpool": [
+        69,
+        92,
+        99,
+        120,
+        121
+      ],
+      "full_value": 2,
+      "local_values": [
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "frozen_intrinsic_one_unit_gap",
+      "trial": 2,
+      "active_components": 2,
+      "original_subpool": [
+        10,
+        31,
+        64,
+        69,
+        120
+      ],
+      "full_value": 2,
+      "local_values": [
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "protected_shared_columns_fresh_obstruction",
+      "trial": 0,
+      "active_components": 4,
+      "original_subpool": [
+        1,
+        20,
+        47,
+        114,
+        141
+      ],
+      "full_value": 4,
+      "local_values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "protected_shared_columns_fresh_obstruction",
+      "trial": 1,
+      "active_components": 4,
+      "original_subpool": [
+        20,
+        47,
+        77,
+        114,
+        141
+      ],
+      "full_value": 4,
+      "local_values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "protected_shared_columns_fresh_obstruction",
+      "trial": 2,
+      "active_components": 4,
+      "original_subpool": [
+        20,
+        47,
+        108,
+        114,
+        141
+      ],
+      "full_value": 4,
+      "local_values": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "whole_support_donor_collision",
+      "trial": 0,
+      "active_components": 2,
+      "original_subpool": [
+        11,
+        66,
+        69,
+        146,
+        236
+      ],
+      "full_value": 2,
+      "local_values": [
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "whole_support_donor_collision",
+      "trial": 1,
+      "active_components": 2,
+      "original_subpool": [
+        18,
+        66,
+        109,
+        146,
+        181
+      ],
+      "full_value": 2,
+      "local_values": [
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "whole_support_donor_collision",
+      "trial": 2,
+      "active_components": 2,
+      "original_subpool": [
+        40,
+        66,
+        146,
+        159,
+        187
+      ],
+      "full_value": 2,
+      "local_values": [
+        1,
+        1
+      ]
+    },
+    {
+      "fixture": "frozen_mixed_cycle_square_switch",
+      "trial": 0,
+      "active_components": 1,
+      "original_subpool": [
+        3,
+        50,
+        79,
+        109,
+        113
+      ],
+      "full_value": 4,
+      "local_values": [
+        4
+      ]
+    },
+    {
+      "fixture": "frozen_mixed_cycle_square_switch",
+      "trial": 1,
+      "active_components": 1,
+      "original_subpool": [
+        6,
+        24,
+        39,
+        43,
+        86
+      ],
+      "full_value": 4,
+      "local_values": [
+        4
+      ]
+    },
+    {
+      "fixture": "frozen_mixed_cycle_square_switch",
+      "trial": 2,
+      "active_components": 1,
+      "original_subpool": [
+        46,
+        57,
+        109,
+        113,
+        119
+      ],
+      "full_value": 4,
+      "local_values": [
+        4
+      ]
+    },
+    {
+      "fixture": "source-free-square shared unit is effectively private",
+      "active_components": 1,
+      "original_subpool": [
+        19
+      ],
+      "full_value": 1,
+      "local_values": [
+        1
+      ]
+    }
+  ],
+  "path_family": [
+    {
+      "n": 2,
+      "shape": [
+        8,
+        14
+      ],
+      "restricted_value": 1,
+      "local_sum": 2,
+      "full_pool_value": 2,
+      "zero_owner_units": 24,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 3,
+      "shape": [
+        8,
+        18
+      ],
+      "restricted_value": 2,
+      "local_sum": 3,
+      "full_pool_value": 3,
+      "zero_owner_units": 32,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 4,
+      "shape": [
+        8,
+        22
+      ],
+      "restricted_value": 3,
+      "local_sum": 4,
+      "full_pool_value": 4,
+      "zero_owner_units": 40,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 5,
+      "shape": [
+        8,
+        26
+      ],
+      "restricted_value": 4,
+      "local_sum": 5,
+      "full_pool_value": 5,
+      "zero_owner_units": 48,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 6,
+      "shape": [
+        8,
+        30
+      ],
+      "restricted_value": 5,
+      "local_sum": 6,
+      "full_pool_value": 6,
+      "zero_owner_units": 56,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 7,
+      "shape": [
+        8,
+        34
+      ],
+      "restricted_value": 6,
+      "local_sum": 7,
+      "full_pool_value": 7,
+      "zero_owner_units": 64,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 8,
+      "shape": [
+        8,
+        38
+      ],
+      "restricted_value": 7,
+      "local_sum": 8,
+      "full_pool_value": 8,
+      "zero_owner_units": 72,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        },
+        {
+          "band": 1,
+          "first": 30,
+          "last": 30
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 9,
+      "shape": [
+        8,
+        42
+      ],
+      "restricted_value": 8,
+      "local_sum": 9,
+      "full_pool_value": 9,
+      "zero_owner_units": 80,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        },
+        {
+          "band": 1,
+          "first": 30,
+          "last": 30
+        },
+        {
+          "band": 1,
+          "first": 34,
+          "last": 34
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 10,
+      "shape": [
+        8,
+        46
+      ],
+      "restricted_value": 9,
+      "local_sum": 10,
+      "full_pool_value": 10,
+      "zero_owner_units": 88,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        },
+        {
+          "band": 1,
+          "first": 30,
+          "last": 30
+        },
+        {
+          "band": 1,
+          "first": 34,
+          "last": 34
+        },
+        {
+          "band": 1,
+          "first": 38,
+          "last": 38
+        }
+      ],
+      "withdrawals": "all"
+    },
+    {
+      "n": 16,
+      "shape": [
+        8,
+        70
+      ],
+      "restricted_value": 15,
+      "local_sum": 16,
+      "full_pool_value": 16,
+      "zero_owner_units": 136,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        },
+        {
+          "band": 1,
+          "first": 30,
+          "last": 30
+        },
+        {
+          "band": 1,
+          "first": 34,
+          "last": 34
+        },
+        {
+          "band": 1,
+          "first": 38,
+          "last": 38
+        },
+        {
+          "band": 1,
+          "first": 42,
+          "last": 42
+        },
+        {
+          "band": 1,
+          "first": 46,
+          "last": 46
+        },
+        {
+          "band": 1,
+          "first": 50,
+          "last": 50
+        },
+        {
+          "band": 1,
+          "first": 54,
+          "last": 54
+        },
+        {
+          "band": 1,
+          "first": 58,
+          "last": 58
+        },
+        {
+          "band": 1,
+          "first": 62,
+          "last": 62
+        }
+      ],
+      "withdrawals": "empty/full/all-one-edge-retained"
+    },
+    {
+      "n": 32,
+      "shape": [
+        8,
+        134
+      ],
+      "restricted_value": 31,
+      "local_sum": 32,
+      "full_pool_value": 32,
+      "zero_owner_units": 264,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        },
+        {
+          "band": 1,
+          "first": 30,
+          "last": 30
+        },
+        {
+          "band": 1,
+          "first": 34,
+          "last": 34
+        },
+        {
+          "band": 1,
+          "first": 38,
+          "last": 38
+        },
+        {
+          "band": 1,
+          "first": 42,
+          "last": 42
+        },
+        {
+          "band": 1,
+          "first": 46,
+          "last": 46
+        },
+        {
+          "band": 1,
+          "first": 50,
+          "last": 50
+        },
+        {
+          "band": 1,
+          "first": 54,
+          "last": 54
+        },
+        {
+          "band": 1,
+          "first": 58,
+          "last": 58
+        },
+        {
+          "band": 1,
+          "first": 62,
+          "last": 62
+        },
+        {
+          "band": 1,
+          "first": 66,
+          "last": 66
+        },
+        {
+          "band": 1,
+          "first": 70,
+          "last": 70
+        },
+        {
+          "band": 1,
+          "first": 74,
+          "last": 74
+        },
+        {
+          "band": 1,
+          "first": 78,
+          "last": 78
+        },
+        {
+          "band": 1,
+          "first": 82,
+          "last": 82
+        },
+        {
+          "band": 1,
+          "first": 86,
+          "last": 86
+        },
+        {
+          "band": 1,
+          "first": 90,
+          "last": 90
+        },
+        {
+          "band": 1,
+          "first": 94,
+          "last": 94
+        },
+        {
+          "band": 1,
+          "first": 98,
+          "last": 98
+        },
+        {
+          "band": 1,
+          "first": 102,
+          "last": 102
+        },
+        {
+          "band": 1,
+          "first": 106,
+          "last": 106
+        },
+        {
+          "band": 1,
+          "first": 110,
+          "last": 110
+        },
+        {
+          "band": 1,
+          "first": 114,
+          "last": 114
+        },
+        {
+          "band": 1,
+          "first": 118,
+          "last": 118
+        },
+        {
+          "band": 1,
+          "first": 122,
+          "last": 122
+        },
+        {
+          "band": 1,
+          "first": 126,
+          "last": 126
+        }
+      ],
+      "withdrawals": "empty/full/all-one-edge-retained"
+    },
+    {
+      "n": 64,
+      "shape": [
+        8,
+        262
+      ],
+      "restricted_value": 63,
+      "local_sum": 64,
+      "full_pool_value": 64,
+      "zero_owner_units": 520,
+      "designated_units": [
+        {
+          "band": 1,
+          "first": 6,
+          "last": 6
+        },
+        {
+          "band": 1,
+          "first": 10,
+          "last": 10
+        },
+        {
+          "band": 1,
+          "first": 14,
+          "last": 14
+        },
+        {
+          "band": 1,
+          "first": 18,
+          "last": 18
+        },
+        {
+          "band": 1,
+          "first": 22,
+          "last": 22
+        },
+        {
+          "band": 1,
+          "first": 26,
+          "last": 26
+        },
+        {
+          "band": 1,
+          "first": 30,
+          "last": 30
+        },
+        {
+          "band": 1,
+          "first": 34,
+          "last": 34
+        },
+        {
+          "band": 1,
+          "first": 38,
+          "last": 38
+        },
+        {
+          "band": 1,
+          "first": 42,
+          "last": 42
+        },
+        {
+          "band": 1,
+          "first": 46,
+          "last": 46
+        },
+        {
+          "band": 1,
+          "first": 50,
+          "last": 50
+        },
+        {
+          "band": 1,
+          "first": 54,
+          "last": 54
+        },
+        {
+          "band": 1,
+          "first": 58,
+          "last": 58
+        },
+        {
+          "band": 1,
+          "first": 62,
+          "last": 62
+        },
+        {
+          "band": 1,
+          "first": 66,
+          "last": 66
+        },
+        {
+          "band": 1,
+          "first": 70,
+          "last": 70
+        },
+        {
+          "band": 1,
+          "first": 74,
+          "last": 74
+        },
+        {
+          "band": 1,
+          "first": 78,
+          "last": 78
+        },
+        {
+          "band": 1,
+          "first": 82,
+          "last": 82
+        },
+        {
+          "band": 1,
+          "first": 86,
+          "last": 86
+        },
+        {
+          "band": 1,
+          "first": 90,
+          "last": 90
+        },
+        {
+          "band": 1,
+          "first": 94,
+          "last": 94
+        },
+        {
+          "band": 1,
+          "first": 98,
+          "last": 98
+        },
+        {
+          "band": 1,
+          "first": 102,
+          "last": 102
+        },
+        {
+          "band": 1,
+          "first": 106,
+          "last": 106
+        },
+        {
+          "band": 1,
+          "first": 110,
+          "last": 110
+        },
+        {
+          "band": 1,
+          "first": 114,
+          "last": 114
+        },
+        {
+          "band": 1,
+          "first": 118,
+          "last": 118
+        },
+        {
+          "band": 1,
+          "first": 122,
+          "last": 122
+        },
+        {
+          "band": 1,
+          "first": 126,
+          "last": 126
+        },
+        {
+          "band": 1,
+          "first": 130,
+          "last": 130
+        },
+        {
+          "band": 1,
+          "first": 134,
+          "last": 134
+        },
+        {
+          "band": 1,
+          "first": 138,
+          "last": 138
+        },
+        {
+          "band": 1,
+          "first": 142,
+          "last": 142
+        },
+        {
+          "band": 1,
+          "first": 146,
+          "last": 146
+        },
+        {
+          "band": 1,
+          "first": 150,
+          "last": 150
+        },
+        {
+          "band": 1,
+          "first": 154,
+          "last": 154
+        },
+        {
+          "band": 1,
+          "first": 158,
+          "last": 158
+        },
+        {
+          "band": 1,
+          "first": 162,
+          "last": 162
+        },
+        {
+          "band": 1,
+          "first": 166,
+          "last": 166
+        },
+        {
+          "band": 1,
+          "first": 170,
+          "last": 170
+        },
+        {
+          "band": 1,
+          "first": 174,
+          "last": 174
+        },
+        {
+          "band": 1,
+          "first": 178,
+          "last": 178
+        },
+        {
+          "band": 1,
+          "first": 182,
+          "last": 182
+        },
+        {
+          "band": 1,
+          "first": 186,
+          "last": 186
+        },
+        {
+          "band": 1,
+          "first": 190,
+          "last": 190
+        },
+        {
+          "band": 1,
+          "first": 194,
+          "last": 194
+        },
+        {
+          "band": 1,
+          "first": 198,
+          "last": 198
+        },
+        {
+          "band": 1,
+          "first": 202,
+          "last": 202
+        },
+        {
+          "band": 1,
+          "first": 206,
+          "last": 206
+        },
+        {
+          "band": 1,
+          "first": 210,
+          "last": 210
+        },
+        {
+          "band": 1,
+          "first": 214,
+          "last": 214
+        },
+        {
+          "band": 1,
+          "first": 218,
+          "last": 218
+        },
+        {
+          "band": 1,
+          "first": 222,
+          "last": 222
+        },
+        {
+          "band": 1,
+          "first": 226,
+          "last": 226
+        },
+        {
+          "band": 1,
+          "first": 230,
+          "last": 230
+        },
+        {
+          "band": 1,
+          "first": 234,
+          "last": 234
+        },
+        {
+          "band": 1,
+          "first": 238,
+          "last": 238
+        },
+        {
+          "band": 1,
+          "first": 242,
+          "last": 242
+        },
+        {
+          "band": 1,
+          "first": 246,
+          "last": 246
+        },
+        {
+          "band": 1,
+          "first": 250,
+          "last": 250
+        },
+        {
+          "band": 1,
+          "first": 254,
+          "last": 254
+        }
+      ],
+      "withdrawals": "empty/full/all-one-edge-retained"
+    }
+  ],
+  "limitations": [
+    "restricted original pools are not full-board counterexamples",
+    "value gluing does not give a local minimum-cost gluing rule",
+    "universal geometric compensation and 5/6 improvement remain open"
+  ]
+}
