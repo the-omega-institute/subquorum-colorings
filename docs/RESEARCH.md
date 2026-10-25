@@ -7,6 +7,21 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [frozen gap capacity and exact link retraction](FROZEN_GAP_CAPACITY_AND_LINK_RETRACTION.md).
+In the SAME paired endpoint/M system, isolated added T prescribe every
+shared-gap capacity c=0..w-20, keeping endpoint degrees, types, strands,
+ALL links and freezing witnesses unchanged. The intrinsic one-unit40P/51T
+14-by30 board has125 available original units but its two locked alphas
+can reach only the SAME one; dead mixed branches offer no productive exit.
+For arbitraryq and capacities ci, keeping ki of the two A-to-R links per
+copy gives exact ordinary/full value2q-sum max(0,ki-ci), extra link cost
+sum(2-ki). With D=sum max(0,2-ci), retraction budget R gives value
+2q-max(0,D-R), minimum extra cost min(R,D). ExactlyD revisions suffice and
+are necessary for full payment, at minimum total2q links. All pools are
+full physical pools, with no artificial reservations.300frozen boards,
+5642kept subsets,11284contracted flow checks,48family+8literal primitive
+comparisons and15scoped local Lean audits pass. General5/6 remains open.
+
 25 October: [colored interval slots and frozen same-color holes](COLORED_INTERVAL_SLOTS_AND_MONOCHROMATIC_HOLES.md)
 extends the seam color argument to two assigned tips per original interval
 under explicit color capacities. In each assigned-incidence component,

@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "audits": [
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.isolated_selection_extension",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.old_occupied_neighbors_unchanged",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.surviving_link_value",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.per_copy_retraction_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.per_copy_retraction_lower_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.global_retraction_lower_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.budget_remaining_lower_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.labelled_repair_prefix",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.exact_budget_arithmetic",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.full_payment_needs_all_deficit_releases",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.one_unit_per_copy_frontier",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.one_copy_selection_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.one_copy_half_area_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.alternating_new_selections_nonadjacent",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.FrozenGapRetraction.last_filled_selection_row",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "new_audits": 15,
+  "axiom_free": 2,
+  "execution": "User-selected local machine;16GiB physical memory;42% system available; wide comm-basename preflight empty; one Lean process; final enumeration empty; no shared CI changes.",
+  "scope": "Generic isolated-selection feasibility preservation and unchanged old occupied-neighbor predicate; per-copy value/retraction identities and global lower bound; labelled distinct repair prefix; exact budget arithmetic; selection/margin counts; alternating-selection nonadjacency and final row parity. Full all-parameter physical support/dead-branch/freezing/ordinary-full adapter remains written/Python, not end-to-end Lean."
+}

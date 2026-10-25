@@ -2,6 +2,12 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
+Continuation: [intrinsic gap capacity and exact link retraction](FROZEN_GAP_CAPACITY_AND_LINK_RETRACTION.md)
+shows that isolated added selections can reduce the actual shared support
+to one or zero units without changing endpoints, M, degrees, strands or links.
+At capacity one a same-color collision needs a route revision, not merely a
+different interval assignment; the arbitrary-copy minimum retraction is exact.
+
 The [seam theorem](SEAM_RESIDUAL_COMPENSATION.md) assigns at most one tip to
 each original interval. Its same-color-hole argument extends to two tips per
 interval under an additional **color capacity** condition. The condition is
