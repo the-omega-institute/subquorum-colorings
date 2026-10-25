@@ -464,3 +464,125 @@ theorem unprotected_fresh_budget (k e g p s : Nat) (hg : g≤e)
 #print axioms unprotected_fresh_budget
 
 end SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure
+
+namespace SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains
+open ConditionalFreshClosure
+
+def board : List Point := (List.range 28).flatMap fun r => (List.range 24).map fun c => (r,c)
+def oldNeighbour (v : Point) : Bool :=
+  (neighbourhood v).any fun w => retained w && decide (adjacent v w)
+def oldSelectedNeighbour (v : Point) : Bool :=
+  (neighbourhood v).any fun w => decide (w∈selected ∧ adjacent v w)
+def forcedBlank (v : Point) : Bool :=
+  decide (v.2=0) || (!retained v && oldSelectedNeighbour v)
+def possibleFresh (v : Point) : Bool :=
+  decide (0<v.2 ∧ v.2<23) && !retained v && !retained (partner v) &&
+    !oldNeighbour (partner v) && !oldSelectedNeighbour v
+def residual : List Point := board.filter fun v => possibleFresh v && decide (v∉freshPairs.map Prod.fst)
+def residualLiteral : List Point := [
+ (0,14),(0,15),(0,16),(0,17),(0,18),(1,15),(1,16),(1,17),
+ (16,8),(16,9),(17,9),
+ (26,1),(26,3),(26,5),(26,7),(26,9),(26,10),(26,12),(26,13),(26,14),(26,15),(26,16),(26,18),(26,20),(26,22),
+ (27,1),(27,3),(27,5),(27,7),(27,9),(27,10),(27,12),(27,13),(27,14),(27,15),(27,16),(27,18),(27,20),(27,22)]
+def targets : List Point := oldLinks.map Prod.snd ++ flexible.map Prod.snd ++ [(3,13)] ++ freshPairs.map Prod.snd
+def hasTransverse (v : Point) : Bool :=
+  if v.1%2=0 then decide (0<v.1) else decide (v.1+1<28)
+def transverse (v : Point) : Point :=
+  (if v.1%2=0 then v.1-1 else v.1+1,v.2)
+def seven : List Point := [(1,16),(1,17),(16,9),(17,9),(26,13),(26,14),(26,15)]
+def relevant : List Point := [(17,9),(26,13),(26,14),(26,15)]
+def color (v : Point) : Nat := (v.1+v.2)%2
+
+theorem actual_complete_residual_audit : residual=residualLiteral := by decide
+
+theorem actual_no_horizontal_chosen_target : ∀ v∈residualLiteral, ∀ w∈targets,
+    ¬ (v.1=w.1 ∧ adjacent v w) := by decide
+
+theorem actual_seven_transverse_cases : ∀ v∈residualLiteral,
+    hasTransverse v=true → forcedBlank (transverse v)=false → v∈seven := by decide
+
+theorem actual_seven_mates_not_targets : ∀ v∈seven, transverse v∉targets := by decide
+
+theorem actual_three_untouched_vertical_cases : ∀ v∈seven,
+    v∉relevant → forcedBlank (partner (transverse v))=true := by decide
+
+theorem actual_degree_two_guard : ∀ w∈neighbourhood (18,9),
+    adjacent (18,9) w → forcedBlank w=false → w=(17,9) ∨ w=(19,9) := by decide
+
+/-- Literal colors and activation conflicts reduce any bichromatic relevant
+pair to the unique exceptional even tip. The hypotheses exclude simultaneous
+adjacent bottom TPs. -/
+theorem actual_bichromatic_relevant_pair (x y : Point)
+    (hx : x∈relevant) (hy : y∈relevant) (opposite : color x≠color y)
+    (noAB : ¬ (x=(26,13) ∧ y=(26,14)) ∧ ¬ (y=(26,13) ∧ x=(26,14)))
+    (noBC : ¬ (x=(26,15) ∧ y=(26,14)) ∧ ¬ (y=(26,15) ∧ x=(26,14))) :
+    x=(17,9) ∨ y=(17,9) := by
+  simp only [relevant,List.mem_cons,List.not_mem_nil,or_false] at hx hy
+  rcases hx with rfl | rfl | rfl | rfl <;>
+    rcases hy with rfl | rfl | rfl | rfl <;> simp_all [color]
+
+/-- Every adjacent grid edge flips checkerboard color. -/
+theorem adjacent_color_flip (v w : Point) (h : adjacent v w) :
+    color v≠color w := by
+  rcases h with ⟨hr,hc|hc⟩ | ⟨hc,hr|hr⟩ <;> simp only [color] <;> omega
+
+/-- A physical path starts and ends with M and has 2k+1 edges. -/
+theorem odd_flip_walk (f : Nat → Nat) (n : Nat)
+    (binary : ∀ i, i≤n → f i<2)
+    (step : ∀ i, i<n → f i≠f (i+1)) :
+    (f 0+n)%2=f n := by
+  induction n with
+  | zero => have h:=binary 0 (by omega); simp; omega
+  | succ n ih =>
+    have hb:=binary n (by omega)
+    have hc:=binary (n+1) (by omega)
+    have hs:=step n (by omega)
+    have hi:=ih (fun i h => binary i (by omega)) (fun i h => step i (by omega))
+    omega
+
+theorem odd_walk_opposite (f : Nat → Nat) (k : Nat)
+    (binary : ∀ i, i≤2*k+1 → f i<2)
+    (step : ∀ i, i<2*k+1 → f i≠f (i+1)) : f 0≠f (2*k+1) := by
+  have h:=odd_flip_walk f (2*k+1) binary step
+  have h0:=binary 0 (by omega)
+  omega
+
+/-- Disjoint unpaid paths cannot each contain the same exceptional tip. -/
+theorem loss_pair_uniqueness {V : Type} (ends : Nat → V × V) (d : V)
+    (k : Nat) (contains : ∀ i, i<k → (ends i).1=d ∨ (ends i).2=d)
+    (disjoint : ∀ i, i<k → ∀ j, j<k → i≠j →
+      (ends i).1≠(ends j).1 ∧ (ends i).1≠(ends j).2 ∧
+      (ends i).2≠(ends j).1 ∧ (ends i).2≠(ends j).2) : k≤1 := by
+  by_cases h : k≤1
+  · exact h
+  apply False.elim
+  have h0:=contains 0 (by omega)
+  have h1:=contains 1 (by omega)
+  have hd:=disjoint 0 (by omega) 1 (by omega) (by omega)
+  rcases h0 with h0 | h0 <;> rcases h1 with h1 | h1 <;> simp_all
+
+/-- The geometric adapter excluding d by its mate's degree is written
+separately in the grid proof. -/
+theorem degree_three_removes_loss {V : Type} (ends : Nat → V × V) (d : V)
+    (k : Nat) (contains : ∀ i, i<k → (ends i).1=d ∨ (ends i).2=d)
+    (absent : ∀ i, i<k → (ends i).1≠d ∧ (ends i).2≠d) : k=0 := by
+  by_cases h : k=0
+  · exact h
+  apply False.elim
+  have hc:=contains 0 (by omega)
+  have ha:=absent 0 (by omega)
+  exact hc.elim ha.1 ha.2
+
+#print axioms actual_complete_residual_audit
+#print axioms actual_no_horizontal_chosen_target
+#print axioms actual_seven_transverse_cases
+#print axioms actual_seven_mates_not_targets
+#print axioms actual_three_untouched_vertical_cases
+#print axioms actual_degree_two_guard
+#print axioms actual_bichromatic_relevant_pair
+#print axioms adjacent_color_flip
+#print axioms odd_flip_walk
+#print axioms odd_walk_opposite
+#print axioms loss_pair_uniqueness
+#print axioms degree_three_removes_loss
+end SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains

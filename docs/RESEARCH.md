@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [residual fresh-tip domains](RESIDUAL_FRESH_DOMAINS.md).
+On the SAME 28-by-24 rectangle, every feasible extension retaining the old
+49T/308P, with arbitrary new T/P and arbitrary actual M, loses at most one
+alpha in the existing conditional certificate. Every extension whose final
+P all have occupied degree at least three is fully compensated; hence so is
+every completely frozen extension in this rectangle. A complete 39-site audit
+reduces possible two-hole alpha ends to four sites; opposite colors and
+adjacent-TP exclusion force a unique degree-two mate in every loss path.
+An actual 330P NONFROZEN witness has true restricted-pool deficit one and
+full-pool deficit zero. A 318P NONFROZEN degree-three control is fully paid.
+The written theorem covers every extension, not just tested models. The
+boundary is essential; larger rectangles, copy seams and universal 5/6 remain
+open. Verification details and scoped Lean coverage are in the note/receipts.
+
 25 October: [conditional fresh-tip closure](CONDITIONAL_FRESH_TIP_CLOSURE.md).
 27 potential fresh-TP sites per actual base copy have compatible conditional
 singleton/BP witnesses under arbitrary feasible T/P additions and rematching.

@@ -1,0 +1,338 @@
+{
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "execution": "User-selected local machine, 16GiB; one Lean process; 71% system-available at final preflight; wide untruncated comm-basename enumeration found no other lean/lake. Final process check empty.",
+  "command": "cd formal && lean SubQuorum/EndpointExtensionReplacement.lean",
+  "combined_audits": 51,
+  "new_audits": 12,
+  "new_axiom_free": 1,
+  "combined_axiom_free": 13,
+  "scope": "Literal residual completeness and target/transverse/degree guards, bichromatic relevant-pair reduction, adjacent grid color flip, arbitrary odd binary-color walks, disjoint loss pairs and exceptional-tip exclusion. Not end-to-end grid configuration/packing formalization.",
+  "written_python_scope": "Necessary-site adapter for arbitrary feasible retained T/P and M, untouched mixed-owner argument, freezing implies degree>=3, conditional interval extraction, beta/interval compensation lift and ordinary normalization.",
+  "audits": [
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.selected_guard_blank",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.saturation_no_new_tip",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.local_two_state_replacement",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.adaptive_target_injection",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.interval_payment_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.four_fills_force_beta_only",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.payment_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.actual_all_selected_saturated",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.actual_twenty_three_guards",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.actual_static_certificate_targets",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.actual_five_singleton_guards",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.two_retained_neighbors_forbid_selection",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.retained_neighbor_forbids_selected_pair",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_end_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.new_tip_defect_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.interval_payment_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_payment_loss",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.at_most_one_new_tip_has_no_loss",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_candidates_have_two_retained_neighbors",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_adjacent_columns_cannot_become_TT",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_unique_promotable_old_endpoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.guarded_promotion_target",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.promotion_target_injection",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.actual_fresh_promotion_target",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.translated_promotion_targets",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.fresh_endpoint_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.one_fresh_endpoint_full",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.promoted_certificate_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.PromotionClosure.multi_copy_interval_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.activated_target_guards",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.actual_fresh_guard_geometry",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.actual_distinct_fresh_targets",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.actual_fresh_target_resource_collisions",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.actual_fresh_targets_disjoint",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.actual_fresh_target_columns",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.paired_sources_not_both_active",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.translated_column_injection",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.extended_certificate_counts",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ConditionalFreshClosure.unprotected_fresh_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_complete_residual_audit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_no_horizontal_chosen_target",
+      "axioms": []
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_seven_transverse_cases",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_seven_mates_not_targets",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_three_untouched_vertical_cases",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_degree_two_guard",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.actual_bichromatic_relevant_pair",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.adjacent_color_flip",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.odd_flip_walk",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.odd_walk_opposite",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.loss_pair_uniqueness",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "declaration": "SubQuorum.EndpointExtensionReplacement.ResidualFreshDomains.degree_three_removes_loss",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

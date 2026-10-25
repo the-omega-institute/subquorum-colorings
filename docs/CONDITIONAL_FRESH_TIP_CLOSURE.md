@@ -300,3 +300,13 @@ Run from formal with Lean 4.33.0:
 No submitted manuscript or correspondence is changed.
 
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
+
+## Fixed-domain continuation
+
+[Residual fresh-tip domains](RESIDUAL_FRESH_DOMAINS.md) closes the remaining
+holes under the additional hypothesis that the rectangle remains exactly
+28-by-24: all feasible extensions have displayed loss at most one, and every
+minimum-occupied-degree-three (in particular completely frozen) extension is
+fully paid. The proof removes untouched mixed owners and uses path colors;
+it adds no resource credit. This conclusion is NOT asserted for arbitrary
+rectangle extensions or the internal boundaries of horizontal copies.

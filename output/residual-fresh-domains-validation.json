@@ -1,0 +1,1926 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_primitive_comparisons": 90,
+    "models": 863,
+    "frozen": 27,
+    "protected_fresh_active_models": 488,
+    "protected_new_BP_models": 464,
+    "coarse_budget_strict_improvement_models": 462,
+    "all_fresh_protected_models": 14,
+    "max_simultaneous_protected_fresh": 10,
+    "physical_odd_paths": 10892,
+    "min_degree_three_models": 95,
+    "active_unprotected_tips": 4045,
+    "models_with_unprotected_tips": 848,
+    "models_with_relevant_holes": 358,
+    "loss_one_models": 71,
+    "feasible_nonfrozen": 836,
+    "untouched_mixed_holes": 3615,
+    "degree_three_bottom_rematches": 46,
+    "frozen_bottom_independent_rank_checks": 1,
+    "frozen_bottom_rematches": 45,
+    "actual_rematches": 132,
+    "no_single_augmenting_completion": 6,
+    "forced_transverse_models": 7,
+    "simultaneous_runs": 24,
+    "sharp_witness_rematches": 70
+  },
+  "geometry": {
+    "potential_count": 66,
+    "unprotected": [
+      [
+        0,
+        14
+      ],
+      [
+        0,
+        15
+      ],
+      [
+        0,
+        16
+      ],
+      [
+        0,
+        17
+      ],
+      [
+        0,
+        18
+      ],
+      [
+        1,
+        15
+      ],
+      [
+        1,
+        16
+      ],
+      [
+        1,
+        17
+      ],
+      [
+        16,
+        8
+      ],
+      [
+        16,
+        9
+      ],
+      [
+        17,
+        9
+      ],
+      [
+        26,
+        1
+      ],
+      [
+        26,
+        3
+      ],
+      [
+        26,
+        5
+      ],
+      [
+        26,
+        7
+      ],
+      [
+        26,
+        9
+      ],
+      [
+        26,
+        10
+      ],
+      [
+        26,
+        12
+      ],
+      [
+        26,
+        13
+      ],
+      [
+        26,
+        14
+      ],
+      [
+        26,
+        15
+      ],
+      [
+        26,
+        16
+      ],
+      [
+        26,
+        18
+      ],
+      [
+        26,
+        20
+      ],
+      [
+        26,
+        22
+      ],
+      [
+        27,
+        1
+      ],
+      [
+        27,
+        3
+      ],
+      [
+        27,
+        5
+      ],
+      [
+        27,
+        7
+      ],
+      [
+        27,
+        9
+      ],
+      [
+        27,
+        10
+      ],
+      [
+        27,
+        12
+      ],
+      [
+        27,
+        13
+      ],
+      [
+        27,
+        14
+      ],
+      [
+        27,
+        15
+      ],
+      [
+        27,
+        16
+      ],
+      [
+        27,
+        18
+      ],
+      [
+        27,
+        20
+      ],
+      [
+        27,
+        22
+      ]
+    ],
+    "vertical_cases": [
+      {
+        "tip": [
+          1,
+          16
+        ],
+        "mate": [
+          2,
+          16
+        ],
+        "mate_partner_forced_blank": true,
+        "max_occupied_degree": 2,
+        "possible_occupied_neighbors": [
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            17
+          ]
+        ]
+      },
+      {
+        "tip": [
+          1,
+          17
+        ],
+        "mate": [
+          2,
+          17
+        ],
+        "mate_partner_forced_blank": true,
+        "max_occupied_degree": 2,
+        "possible_occupied_neighbors": [
+          [
+            1,
+            17
+          ],
+          [
+            2,
+            16
+          ]
+        ]
+      },
+      {
+        "tip": [
+          16,
+          9
+        ],
+        "mate": [
+          15,
+          9
+        ],
+        "mate_partner_forced_blank": true,
+        "max_occupied_degree": 1,
+        "possible_occupied_neighbors": [
+          [
+            16,
+            9
+          ]
+        ]
+      },
+      {
+        "tip": [
+          17,
+          9
+        ],
+        "mate": [
+          18,
+          9
+        ],
+        "mate_partner_forced_blank": false,
+        "max_occupied_degree": 2,
+        "possible_occupied_neighbors": [
+          [
+            17,
+            9
+          ],
+          [
+            19,
+            9
+          ]
+        ]
+      },
+      {
+        "tip": [
+          26,
+          13
+        ],
+        "mate": [
+          25,
+          13
+        ],
+        "mate_partner_forced_blank": false,
+        "max_occupied_degree": 3,
+        "possible_occupied_neighbors": [
+          [
+            24,
+            13
+          ],
+          [
+            25,
+            14
+          ],
+          [
+            26,
+            13
+          ]
+        ]
+      },
+      {
+        "tip": [
+          26,
+          14
+        ],
+        "mate": [
+          25,
+          14
+        ],
+        "mate_partner_forced_blank": false,
+        "max_occupied_degree": 4,
+        "possible_occupied_neighbors": [
+          [
+            24,
+            14
+          ],
+          [
+            25,
+            13
+          ],
+          [
+            25,
+            15
+          ],
+          [
+            26,
+            14
+          ]
+        ]
+      },
+      {
+        "tip": [
+          26,
+          15
+        ],
+        "mate": [
+          25,
+          15
+        ],
+        "mate_partner_forced_blank": false,
+        "max_occupied_degree": 3,
+        "possible_occupied_neighbors": [
+          [
+            24,
+            15
+          ],
+          [
+            25,
+            14
+          ],
+          [
+            26,
+            15
+          ]
+        ]
+      }
+    ],
+    "final_alpha_hole_domain": [
+      [
+        17,
+        9
+      ],
+      [
+        26,
+        13
+      ],
+      [
+        26,
+        14
+      ],
+      [
+        26,
+        15
+      ]
+    ],
+    "degree_two_mate": [
+      18,
+      9
+    ]
+  },
+  "named": {
+    "frozen_caps": {
+      "copies": 1,
+      "protected_fresh": 2,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 0,
+      "all_fresh": 2,
+      "promotions": 1,
+      "old_filled_targets": 2,
+      "certificate_links": 21,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 312,
+      "selected": 52,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": true,
+      "full_pool_ordinary_deficit": 0
+    },
+    "degree_three_nonfrozen_bottom": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 2,
+      "all_fresh": 2,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 318,
+      "selected": 51,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": true,
+      "full_pool_ordinary_deficit": 0
+    },
+    "frozen_unprotected_bottom": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 2,
+      "all_fresh": 2,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": true,
+      "endpoints": 318,
+      "selected": 52,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": true,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(0, 14)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(0, 15)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(0, 16)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(0, 17)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(0, 18)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(1, 15)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(1, 16)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(1, 17)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(16, 8)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(16, 9)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(17, 9)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 9)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 10)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 12)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 13)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 14)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          26,
+          14
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 15)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          26,
+          15
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 16)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(26, 22)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 1)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 3)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 5)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 7)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 9)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 10)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 12)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 13)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 14)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 15)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 16)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 18)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 20)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "(27, 22)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(1, 16)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(1, 17)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(16, 9)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(17, 9)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          17,
+          9
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(26, 13)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(26, 14)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          26,
+          14
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "transverse_(26, 15)": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 1,
+      "all_fresh": 1,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 18,
+      "assigned_units": 5,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 310,
+      "selected": 50,
+      "relevant_holes": [
+        [
+          26,
+          15
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_0": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 14,
+      "all_fresh": 23,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 8,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 352,
+      "selected": 72,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_1": {
+      "copies": 1,
+      "protected_fresh": 10,
+      "protected_BP_targets": 7,
+      "unprotected_fresh": 12,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 25,
+      "assigned_units": 8,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 352,
+      "selected": 71,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_2": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 11,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 8,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 69,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_3": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 4,
+      "unprotected_fresh": 12,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 22,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 69,
+      "relevant_holes": [
+        [
+          26,
+          15
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_4": {
+      "copies": 1,
+      "protected_fresh": 10,
+      "protected_BP_targets": 8,
+      "unprotected_fresh": 14,
+      "all_fresh": 24,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 26,
+      "assigned_units": 7,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 356,
+      "selected": 73,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_5": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 4,
+      "unprotected_fresh": 13,
+      "all_fresh": 21,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 22,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 70,
+      "relevant_holes": [
+        [
+          26,
+          14
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_6": {
+      "copies": 1,
+      "protected_fresh": 6,
+      "protected_BP_targets": 5,
+      "unprotected_fresh": 12,
+      "all_fresh": 18,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 23,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 344,
+      "selected": 67,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_7": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 13,
+      "all_fresh": 21,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 7,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 70,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_8": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 5,
+      "unprotected_fresh": 14,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 23,
+      "assigned_units": 8,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 352,
+      "selected": 71,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_9": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 7,
+      "unprotected_fresh": 13,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 25,
+      "assigned_units": 7,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 352,
+      "selected": 71,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_10": {
+      "copies": 1,
+      "protected_fresh": 7,
+      "protected_BP_targets": 3,
+      "unprotected_fresh": 14,
+      "all_fresh": 21,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 21,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 70,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_11": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 5,
+      "unprotected_fresh": 11,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 23,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 346,
+      "selected": 69,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_12": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 8,
+      "unprotected_fresh": 13,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 26,
+      "assigned_units": 6,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 352,
+      "selected": 71,
+      "relevant_holes": [
+        [
+          26,
+          14
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_13": {
+      "copies": 1,
+      "protected_fresh": 10,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 14,
+      "all_fresh": 24,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 9,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 354,
+      "selected": 73,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_14": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 11,
+      "all_fresh": 19,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 7,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 346,
+      "selected": 68,
+      "relevant_holes": [
+        [
+          26,
+          15
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_15": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 6,
+      "unprotected_fresh": 11,
+      "all_fresh": 19,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 24,
+      "assigned_units": 7,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 346,
+      "selected": 68,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_16": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 4,
+      "unprotected_fresh": 11,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 22,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 69,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_17": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 7,
+      "unprotected_fresh": 13,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 25,
+      "assigned_units": 7,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 352,
+      "selected": 71,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_18": {
+      "copies": 1,
+      "protected_fresh": 7,
+      "protected_BP_targets": 2,
+      "unprotected_fresh": 13,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 20,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 346,
+      "selected": 69,
+      "relevant_holes": [
+        [
+          26,
+          15
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_19": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 4,
+      "unprotected_fresh": 13,
+      "all_fresh": 22,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 22,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 348,
+      "selected": 71,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_20": {
+      "copies": 1,
+      "protected_fresh": 8,
+      "protected_BP_targets": 3,
+      "unprotected_fresh": 12,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 21,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 346,
+      "selected": 69,
+      "relevant_holes": [
+        [
+          26,
+          15
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_21": {
+      "copies": 1,
+      "protected_fresh": 7,
+      "protected_BP_targets": 4,
+      "unprotected_fresh": 13,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 22,
+      "assigned_units": 8,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 2,
+      "frozen": false,
+      "endpoints": 346,
+      "selected": 69,
+      "relevant_holes": [],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_22": {
+      "copies": 1,
+      "protected_fresh": 7,
+      "protected_BP_targets": 2,
+      "unprotected_fresh": 12,
+      "all_fresh": 19,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 20,
+      "assigned_units": 10,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 344,
+      "selected": 68,
+      "relevant_holes": [
+        [
+          26,
+          14
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "simultaneous_23": {
+      "copies": 1,
+      "protected_fresh": 9,
+      "protected_BP_targets": 3,
+      "unprotected_fresh": 11,
+      "all_fresh": 20,
+      "promotions": 0,
+      "old_filled_targets": 0,
+      "certificate_links": 21,
+      "assigned_units": 11,
+      "exact_strategy_loss": 0,
+      "ordinary_deficit": 0,
+      "ordinary_cost": 3,
+      "frozen": false,
+      "endpoints": 344,
+      "selected": 69,
+      "relevant_holes": [
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    },
+    "sharp_restricted_pool_witness": {
+      "copies": 1,
+      "protected_fresh": 0,
+      "protected_BP_targets": 0,
+      "unprotected_fresh": 2,
+      "all_fresh": 2,
+      "promotions": 0,
+      "old_filled_targets": 5,
+      "certificate_links": 23,
+      "assigned_units": 0,
+      "exact_strategy_loss": 1,
+      "ordinary_deficit": 1,
+      "ordinary_cost": 0,
+      "frozen": false,
+      "endpoints": 330,
+      "selected": 51,
+      "relevant_holes": [
+        [
+          17,
+          9
+        ],
+        [
+          26,
+          13
+        ]
+      ],
+      "loss_pairs": [
+        [
+          [
+            17,
+            9
+          ],
+          [
+            26,
+            13
+          ]
+        ]
+      ],
+      "min_degree_three": false,
+      "full_pool_ordinary_deficit": 0
+    }
+  },
+  "scope": "Written every-feasible-extension theorem on this fixed 28x24 rectangle only: strategy loss <=1, loss zero if all final P have occupied degree >=3, hence every frozen extension fully compensated. 330P nonfrozen witness has restricted-pool true deficit1, full-pool0. Not universal grids, larger rectangles, copies, or numerical 5/6 improvement."
+}
