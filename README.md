@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [interface reserve reoptimization](docs/INTERFACE_RESERVE_REOPTIMIZATION.md):
+local routes can be rearranged while retaining every initially paid old
+source. The exact additional interface payment has one joint original-resource
+cut criterion, with withdrawals restricted to units shared by local and
+interface networks. It dominates matching into one fixed pack's unused units.
+A fully frozen all-even-height mixed-direction family gives a strict gain
+on a stated two-unit pool; its chosen baseline maximizes value, not minimum
+link cost. A two-entry beta fork shows why direct matching rank cannot be
+added without charging old withdrawal losses. Checks pass 293 models,
+72 prescribed maximum old paid sets and 14 scoped local Lean declarations.
+Full-pool geometric control and the universal 5/6 improvement remain open.
+
 New [strict beta-cut promotion and shared reserve](docs/BETA_CUT_PROMOTION_AND_SHARED_RESERVE_OBSTRUCTION.md):
 in the largest-source-side minimum cut, every nonempty receiver set Q has
 at least |double-entry receivers in Q|+1 different far-side interval witnesses.

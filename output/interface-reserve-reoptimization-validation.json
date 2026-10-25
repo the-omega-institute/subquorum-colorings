@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "totals": {
+    "simple_augmentations_checked": 529,
+    "protected_sources_retained": 403,
+    "distinct_terminal_assignments": 529,
+    "joint_withdrawal_cuts": 1084,
+    "minimizer_uncrossing_pairs": 1134,
+    "disjoint_interface_exact_additivity": 166,
+    "all_maximum_old_paid_sets_extended": 72,
+    "independent_primitive_models": 63,
+    "models": 293,
+    "forced_two_entry_beta_fork_obstructions": 1,
+    "fully_frozen_physical_boards": 8
+  },
+  "physical_controls": [
+    {
+      "W": 8,
+      "shape": [
+        10,
+        22
+      ],
+      "selected": 40,
+      "matching": 34,
+      "frozen": 68,
+      "numerical_slack": 36,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          4,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 36,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 10,
+      "shape": [
+        12,
+        22
+      ],
+      "selected": 40,
+      "matching": 40,
+      "frozen": 80,
+      "numerical_slack": 52,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          5,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 51,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 12,
+      "shape": [
+        14,
+        22
+      ],
+      "selected": 40,
+      "matching": 46,
+      "frozen": 92,
+      "numerical_slack": 68,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          6,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 66,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 16,
+      "shape": [
+        18,
+        22
+      ],
+      "selected": 40,
+      "matching": 58,
+      "frozen": 116,
+      "numerical_slack": 100,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          8,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 96,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 20,
+      "shape": [
+        22,
+        22
+      ],
+      "selected": 40,
+      "matching": 70,
+      "frozen": 140,
+      "numerical_slack": 132,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          10,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 126,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 40,
+      "shape": [
+        42,
+        22
+      ],
+      "selected": 40,
+      "matching": 130,
+      "frozen": 260,
+      "numerical_slack": 292,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          20,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 276,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 64,
+      "shape": [
+        66,
+        22
+      ],
+      "selected": 40,
+      "matching": 202,
+      "frozen": 404,
+      "numerical_slack": 484,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          32,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 456,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    },
+    {
+      "W": 128,
+      "shape": [
+        130,
+        22
+      ],
+      "selected": 40,
+      "matching": 394,
+      "frozen": 788,
+      "numerical_slack": 996,
+      "available_pool": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          64,
+          11,
+          11
+        ]
+      ],
+      "full_original_count": 936,
+      "fixed_pack_nu": 0,
+      "theta": 1,
+      "old_baseline_cost": 2,
+      "local_minimum_cost": 1,
+      "joint_minimum_cost": 1,
+      "partition_compiled": true
+    }
+  ],
+  "proof": "docs/INTERFACE_RESERVE_REOPTIMIZATION.md",
+  "scope": "Exact joint cuts; old-only then restored-source residual augmentation with all paid source identities retained at every step; normalized whole-beta outputs; exhaustive small prescribed old maximum sets; all-W written frozen mixed-direction restricted two-unit exchange.",
+  "limits": [
+    "The general max-flow and all-W geometric statements rely on written proofs, not finite extrapolation.",
+    "Physical strict gain uses a value-maximum, non-minimum-cost baseline and an explicitly restricted original pool.",
+    "No strict full-pool physical gain or universal5over6 improvement claimed."
+  ]
+}
