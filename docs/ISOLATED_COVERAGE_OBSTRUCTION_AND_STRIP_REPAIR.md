@@ -1,5 +1,7 @@
 # Isolated-candidate coverage fails; exact zero-loss strip-direction repair
 
+Follow-up: [guarded switches and dual-source repair](GUARDED_STRIP_SWITCHES_AND_DUAL_REPAIR.md) gives a general physical sufficient condition, exact complement-source value/cost, and fully frozen shared-seam examples where different flips have the same single repair credit.
+
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
 The [isolated-deletion repair theorem](ISOLATED_SELECTION_REPAIR_MATROID.md)

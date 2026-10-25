@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [guarded strip switches and dual-source repair](docs/GUARDED_STRIP_SWITCHES_AND_DUAL_REPAIR.md):
+explicit physical guards let a strip direction change preserve all old owner
+identities, used resources and links, while opening private zero-link payments.
+For any eligible F, exact value is |F|+r(A minus F), with minimum links equal
+to the old complement-source optimum. Gains are a standard dual source-matroid
+rank, giving optimal switch counts, weighted choice and old-source retention.
+A fully frozen shared-seam stack realizes one repair credit per path component:
+every single flip can gain one while all flips together still gain only one.
+Checks pass 1508 physical models, 480 exact value/cost profiles and 13 scoped
+Lean declarations. No selected points move and no reserve is credited twice.
+Universal 5/6 is open.
+
 New [isolated-candidate obstruction and exact strip-direction repair](docs/ISOLATED_COVERAGE_OBSTRUCTION_AND_STRIP_REPAIR.md):
 for all even W>=8 and k>=1, a fully frozen mixed partition with 2k actual
 matching crossings has k unpaid sources even after ALL occupied-isolated
