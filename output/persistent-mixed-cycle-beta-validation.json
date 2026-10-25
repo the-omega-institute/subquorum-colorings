@@ -1,0 +1,794 @@
+{
+  "status": "PASS",
+  "certificate": {
+    "primary": [
+      [
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      [
+        [
+          3,
+          19
+        ],
+        [
+          2,
+          19
+        ],
+        [
+          2,
+          20
+        ]
+      ],
+      [
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      [
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      [
+        [
+          4,
+          15
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          3,
+          14
+        ]
+      ],
+      [
+        [
+          4,
+          16
+        ],
+        [
+          4,
+          17
+        ],
+        [
+          5,
+          17
+        ]
+      ],
+      [
+        [
+          4,
+          18
+        ],
+        [
+          4,
+          17
+        ],
+        [
+          5,
+          17
+        ]
+      ],
+      [
+        [
+          4,
+          20
+        ],
+        [
+          4,
+          19
+        ],
+        [
+          5,
+          19
+        ]
+      ],
+      [
+        [
+          19,
+          16
+        ],
+        [
+          19,
+          15
+        ],
+        [
+          18,
+          15
+        ]
+      ],
+      [
+        [
+          21,
+          16
+        ],
+        [
+          20,
+          16
+        ],
+        [
+          20,
+          17
+        ]
+      ],
+      [
+        [
+          25,
+          5
+        ],
+        [
+          25,
+          4
+        ],
+        [
+          24,
+          4
+        ]
+      ],
+      [
+        [
+          25,
+          18
+        ],
+        [
+          25,
+          17
+        ],
+        [
+          24,
+          17
+        ]
+      ]
+    ],
+    "enclosed": [
+      {
+        "point": [
+          3,
+          3
+        ],
+        "old_endpoints": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "guard_blanks": [
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      },
+      {
+        "point": [
+          3,
+          20
+        ],
+        "old_endpoints": [
+          [
+            2,
+            20
+          ],
+          [
+            3,
+            21
+          ]
+        ],
+        "guard_blanks": [
+          [
+            3,
+            19
+          ],
+          [
+            4,
+            20
+          ]
+        ]
+      },
+      {
+        "point": [
+          21,
+          17
+        ],
+        "old_endpoints": [
+          [
+            20,
+            17
+          ],
+          [
+            21,
+            18
+          ],
+          [
+            22,
+            17
+          ]
+        ],
+        "guard_blanks": [
+          [
+            21,
+            16
+          ]
+        ]
+      }
+    ],
+    "bp_side_checks": [
+      {
+        "bp": [
+          2,
+          3
+        ],
+        "side": [
+          2,
+          2
+        ],
+        "partner": [
+          3,
+          2
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          2,
+          3
+        ],
+        "side": [
+          2,
+          4
+        ],
+        "partner": [
+          3,
+          4
+        ],
+        "reason": "permanent_BP_not_TP"
+      },
+      {
+        "bp": [
+          5,
+          3
+        ],
+        "side": [
+          5,
+          2
+        ],
+        "partner": [
+          4,
+          2
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          5,
+          3
+        ],
+        "side": [
+          5,
+          4
+        ],
+        "partner": [
+          4,
+          4
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          2,
+          20
+        ],
+        "side": [
+          2,
+          19
+        ],
+        "partner": [
+          3,
+          19
+        ],
+        "reason": "retained_selected_not_endpoint"
+      },
+      {
+        "bp": [
+          2,
+          20
+        ],
+        "side": [
+          2,
+          21
+        ],
+        "partner": [
+          3,
+          21
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          5,
+          20
+        ],
+        "side": [
+          5,
+          19
+        ],
+        "partner": [
+          4,
+          19
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          5,
+          20
+        ],
+        "side": [
+          5,
+          21
+        ],
+        "partner": [
+          4,
+          21
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          24,
+          5
+        ],
+        "side": [
+          24,
+          4
+        ],
+        "partner": [
+          25,
+          4
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          24,
+          5
+        ],
+        "side": [
+          24,
+          6
+        ],
+        "partner": [
+          25,
+          6
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          20,
+          17
+        ],
+        "side": [
+          20,
+          16
+        ],
+        "partner": [
+          21,
+          16
+        ],
+        "reason": "retained_selected_not_endpoint"
+      },
+      {
+        "bp": [
+          20,
+          17
+        ],
+        "side": [
+          20,
+          18
+        ],
+        "partner": [
+          21,
+          18
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          18,
+          16
+        ],
+        "side": [
+          18,
+          15
+        ],
+        "partner": [
+          19,
+          15
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          18,
+          16
+        ],
+        "side": [
+          18,
+          17
+        ],
+        "partner": [
+          19,
+          17
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          24,
+          18
+        ],
+        "side": [
+          24,
+          17
+        ],
+        "partner": [
+          25,
+          17
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          24,
+          18
+        ],
+        "side": [
+          24,
+          19
+        ],
+        "partner": [
+          25,
+          19
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          5,
+          15
+        ],
+        "side": [
+          5,
+          14
+        ],
+        "partner": [
+          4,
+          14
+        ],
+        "reason": "retained_PP_not_TP"
+      },
+      {
+        "bp": [
+          5,
+          15
+        ],
+        "side": [
+          5,
+          16
+        ],
+        "partner": [
+          4,
+          16
+        ],
+        "reason": "permanent_BP_not_TP"
+      },
+      {
+        "bp": [
+          5,
+          16
+        ],
+        "side": [
+          5,
+          15
+        ],
+        "partner": [
+          4,
+          15
+        ],
+        "reason": "permanent_BP_not_TP"
+      },
+      {
+        "bp": [
+          5,
+          16
+        ],
+        "side": [
+          5,
+          17
+        ],
+        "partner": [
+          4,
+          17
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          5,
+          18
+        ],
+        "side": [
+          5,
+          17
+        ],
+        "partner": [
+          4,
+          17
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          5,
+          18
+        ],
+        "side": [
+          5,
+          19
+        ],
+        "partner": [
+          4,
+          19
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          5,
+          5
+        ],
+        "side": [
+          5,
+          4
+        ],
+        "partner": [
+          4,
+          4
+        ],
+        "reason": "retained_internal_core_TP"
+      },
+      {
+        "bp": [
+          5,
+          5
+        ],
+        "side": [
+          5,
+          6
+        ],
+        "partner": [
+          4,
+          6
+        ],
+        "reason": "retained_internal_core_TP"
+      }
+    ],
+    "required_terminal_blanks": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        20
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        4,
+        16
+      ],
+      [
+        4,
+        18
+      ],
+      [
+        4,
+        20
+      ],
+      [
+        19,
+        16
+      ],
+      [
+        21,
+        17
+      ],
+      [
+        25,
+        5
+      ],
+      [
+        25,
+        18
+      ]
+    ],
+    "lean_guard_matching": [
+      [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          20
+        ],
+        [
+          2,
+          21
+        ]
+      ],
+      [
+        [
+          3,
+          21
+        ],
+        [
+          4,
+          21
+        ]
+      ],
+      [
+        [
+          20,
+          17
+        ],
+        [
+          19,
+          17
+        ]
+      ],
+      [
+        [
+          21,
+          18
+        ],
+        [
+          22,
+          18
+        ]
+      ],
+      [
+        [
+          22,
+          17
+        ],
+        [
+          22,
+          16
+        ]
+      ]
+    ],
+    "formal_adapter_matches_actual": true
+  },
+  "baseline": {
+    "empty": {
+      "value": 4,
+      "cost": 5,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "frozen": true,
+      "alphas": 4,
+      "betas": 6
+    },
+    "all": {
+      "value": 4,
+      "cost": 2,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "frozen": true,
+      "alphas": 4,
+      "betas": 6
+    },
+    "two_original": {
+      "value": 4,
+      "cost": 4,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "frozen": true,
+      "alphas": 4,
+      "betas": 6
+    },
+    "random": {
+      "value": 4,
+      "cost": 3,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "frozen": true,
+      "alphas": 4,
+      "betas": 6
+    }
+  },
+  "totals": {
+    "independent_ordinary_full_eliminations": 50,
+    "extension_availability_models": 522,
+    "completely_frozen_models": 276,
+    "preserved_original_strand_bodies": 6696,
+    "nonempty_residual_source_models": 27,
+    "positive_residual_payment_models": 27,
+    "single_addition_candidates": 742,
+    "feasible_single_additions": 346,
+    "frozen_single_additions": 158,
+    "feasible_nonfrozen_models": 246,
+    "multi_addition_prefixes": 128,
+    "symmetry_padding_controls": 8,
+    "multi_core_exterior_controls": 36
+  },
+  "scope": "All feasible old-T-and-actual-M-retaining extensions preserve12protected original strands via15permanent blanks and24BPside checks. Closed core pays4with4distinctwholebetas5links, no intervals. Both ordinary/full V4q+Vres,cres<=c<=5q+cres for arbitrary final-original interval availability, with ledger unchanged. General proof independent of finite extensions; no arbitrary-rematching theorem or5over6 improvement."
+}

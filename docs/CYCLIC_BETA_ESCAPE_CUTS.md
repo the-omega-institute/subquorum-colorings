@@ -298,3 +298,10 @@ beta choices? Distinct whole-beta counts and individual repairs do not
 establish it. Shared entry chains, gate-to-gate continuations and beta-body
 forks outside this interface still require the full original flow model.
 The submitted manuscript, public main and unrestricted5/6 bound are unchanged.
+
+**Complete-extension continuation:** [persistent mixed-cycle beta core](PERSISTENT_MIXED_CYCLE_BETA_CORE.md)
+proves that THIS fixture's compensating four betas persist and exclude
+outside entries under any feasible extension retaining its old selections
+and actual matching. The full four-source core then eliminates exactly,
+for every final-original interval subset. This is stronger than checking
+the unchanged board, and does not assume a frozen physical deletion.

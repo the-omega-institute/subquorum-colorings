@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [persistent beta-paid mixed-cycle core](PERSISTENT_MIXED_CYCLE_BETA_CORE.md)
+settles the COMPLETE retained-matching extension class of the actual308P
+four-source/four-mixed cycle. Fifteen local blank certificates preserve four
+different beta strands and all gate types under ANY feasible old-T/M-retaining
+additions. Both horizontal neighbours at every protected BP show that no
+outside source can enter the12-owner core. Its four sources always pay via
+four different whole betas/five links, with no interval. For arbitrary final
+original interval availability, ordinary/full V=4q+Vres and
+cres<=c<=5q+cres for allq initially separated copies, even if later exterior
+additions connect components. The I+b-k ledger is unchanged.522availability
+models (276frozen/246feasible nonfrozen),50independent ordinary/full
+eliminations and9scoped Lean declarations pass. Old rematching and arbitrary
+different cycles remain open; universal compensation/5over6 not obtained.
+
 25 October: [cyclic beta escapes and joint tree/gap cuts](CYCLIC_BETA_ESCAPE_CUTS.md)
 give an exact all-size criterion for a declared cyclic mixed-gate interface:
 after sources escape to distinct original betas, resource-tree deficits must

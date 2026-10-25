@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "command": "lean SubQuorum/PersistentMixedCycleBetaCore.lean",
+  "exit_code": 0,
+  "machine": "user-authorized local Mac",
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percentage": 46,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "audited_declarations": [
+    "SubQuorum.PersistentMixedCycleBetaCore.selected_guard_blank",
+    "SubQuorum.PersistentMixedCycleBetaCore.matched_wall_excludes_new_endpoint",
+    "SubQuorum.PersistentMixedCycleBetaCore.matched_enclosure_blank",
+    "SubQuorum.PersistentMixedCycleBetaCore.direct_coordinate_checks",
+    "SubQuorum.PersistentMixedCycleBetaCore.wall_coordinate_checks",
+    "SubQuorum.PersistentMixedCycleBetaCore.star_coordinate_checks",
+    "SubQuorum.PersistentMixedCycleBetaCore.all_fifteen_blanks_permanent",
+    "SubQuorum.PersistentMixedCycleBetaCore.outside_path_cannot_enter_closed_core",
+    "SubQuorum.PersistentMixedCycleBetaCore.residual_ledger"
+  ],
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "no_sorry_native": true,
+  "scope": "General selected guard and matched-neighbour enclosure blank rules; concrete15coordinate-blank universal arbitrary-feasible-extension adapter with7retained local mate edges; arbitrary-length incoming-closed owner no-entry; ledger. Strand persistence,24BPside classification, whole-support flow elimination and allq physical adapter written/Python. Previous308P Lean freezing certificate reused unchanged, not rerun."
+}
