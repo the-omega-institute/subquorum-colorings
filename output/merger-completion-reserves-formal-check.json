@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "machine": "user-authorized local machine",
+  "preflight": {
+    "memory_gib": 16,
+    "memory_free_percent": 43,
+    "active_lean_lake": 0,
+    "process_detection": "comm basename exactly lean or lake",
+    "concurrency": 1
+  },
+  "command": "lean SubQuorum/MergerCompletionReserves.lean",
+  "working_directory": "formal",
+  "exit_code": 0,
+  "audited_declarations": [
+    "four_geometries_valid",
+    "all_four_completions_frozen",
+    "bad_nonmate_unique",
+    "no_strict_certificate_in_bad_completion",
+    "four_state_classification",
+    "exact_elimination_ledger",
+    "no_extra_surplus_ledger"
+  ],
+  "axiom_audit": "merger-completion-reserves-lean-validation.txt",
+  "axioms_used": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Four actual complete feasibility and inductive freezing certificates, all-ranks impossibility of strict witnesses at either degree-two bad completion, conditional four-state classification, exact elimination and no-extra-surplus ledgers. General guarded-gap adapter, persistent ownership and fixed-packet arbitrary-extension support/flow proof WRITTEN, not end-to-end Lean.",
+  "external_review": "No new external or Oracle review claimed; earlier request failure remains recorded separately."
+}

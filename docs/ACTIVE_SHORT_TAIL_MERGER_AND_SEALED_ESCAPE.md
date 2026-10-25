@@ -258,3 +258,13 @@ open whether the full original frozen geometry always has enough different
 bypasses, and whether that can yield a better bound than5/6. The 11 October
 submitted manuscript, public main, PR3 and shared CI remain outside this
 research change. No Mail operation is part of this round.
+
+## Continuation: retaining the old matching forces persistent payments
+
+The [completion note](ACTIVE_MERGER_COMPLETION_AND_PERSISTENT_PAYMENTS.md)
+classifies the actual bypass gap under arbitrary admissible fixed-packet
+monotone completely frozen extensions. Sealing its last interval forces a
+cycle and an exclusive beta; the other alpha keeps a private corridor unit.
+Both old sources therefore eliminate exactly even with exterior coupling.
+The restricted obstruction here and the open arbitrary-matching problem
+remain as stated.

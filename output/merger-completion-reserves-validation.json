@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "totals": {
+    "independent_primitive_packs": 144,
+    "frozen_completion_models": 1035,
+    "settled_old_alphas": 3894,
+    "exclusive_beta_payments": 487,
+    "private_interval_payments": 3407,
+    "exact_value_and_cost_eliminations": 1035,
+    "nonempty_residual_alpha_cases": 12,
+    "positive_residual_payment_cases": 12,
+    "positive_residual_cost_cases": 12,
+    "degree_two_nonfreezing_controls": 2,
+    "exhaustive_local_feasible_states": 6,
+    "single_addition_candidates": 1589,
+    "single_addition_feasible": 805,
+    "single_addition_frozen": 359,
+    "copy_local_choice_models": 340,
+    "nontrivial_residual_controls": 12,
+    "multi_addition_frozen_prefixes": 288
+  },
+  "local_models": {
+    "empty": {
+      "filled_caps": 0,
+      "full_value": 2,
+      "full_cost": 0,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "settled_alphas": 2,
+      "left_units": [
+        {
+          "kind": "interval",
+          "identity": {
+            "band": 2,
+            "first": 5,
+            "last": 5
+          }
+        }
+      ]
+    },
+    "selection": {
+      "filled_caps": 0,
+      "full_value": 2,
+      "full_cost": 0,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "settled_alphas": 2,
+      "left_units": [
+        {
+          "kind": "interval",
+          "identity": {
+            "band": 2,
+            "first": 5,
+            "last": 5
+          }
+        }
+      ]
+    },
+    "cycle": {
+      "filled_caps": 0,
+      "full_value": 2,
+      "full_cost": 0,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "settled_alphas": 2,
+      "left_units": [
+        {
+          "kind": "interval",
+          "identity": {
+            "band": 2,
+            "first": 5,
+            "last": 5
+          }
+        }
+      ]
+    },
+    "cycle_beta": {
+      "filled_caps": 1,
+      "full_value": 2,
+      "full_cost": 1,
+      "residual_value": 0,
+      "residual_cost": 0,
+      "settled_alphas": 2,
+      "left_units": [
+        {
+          "kind": "beta",
+          "tip": [
+            5,
+            5
+          ]
+        }
+      ]
+    }
+  },
+  "scope": "General six-state guarded-cap classification, four frozen states, private interval or exclusive empty-body beta, and fixed admissible packet rectangle arbitrary monotone feasible completely frozen extension elimination with standard boundary marks and no arbitrary reservations V=2q+Vres,c=filledCaps+cres. Finite checks corroborate written proof, not substitute. Universal compensation and5/6 remain open."
+}

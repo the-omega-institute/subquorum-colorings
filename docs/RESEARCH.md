@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [active-merger completion and persistent private payments](ACTIVE_MERGER_COMPLETION_AND_PERSISTENT_PAYMENTS.md)
+settles arbitrary matching/selection-retaining completely frozen extensions
+of the active short-tail merger on a fixed admissible packet. A guarded
+three-column gap has6feasible states but only4frozen: filling the last private
+interval forces a PP/M cycle and an exclusive empty-body beta. The other
+alpha's BT corridor reserve stays private. For q copies with arbitrary
+exterior coupling, V=2q+Vres and c=filledCaps+cres in ordinary/full models;
+one actual interval or beta is removed per settled source, surplus unchanged.
+1,035 frozen elimination models,144 independent packs and7 scoped Lean
+results pass, including four concrete complete-freezing certificates and
+all-ranks exclusion of both bad states. This is a monotone-completion class,
+not a universal reserve theorem;5/6 remains open.
+
 25 October: [active short-tail merger and sealed retained escape](ACTIVE_SHORT_TAIL_MERGER_AND_SEALED_ESCAPE.md)
 realizes two different alpha-entered one-edge mixed tails at the same BP of
 a longer mixed gate, on an actual frozen14x18 board. In the five-owner/two-
