@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "toolchain": "Lean 4.33.0",
+  "machine": "local; explicitly authorized in this conversation",
+  "preflight": {
+    "physical_memory_GiB": 16,
+    "memory_available_percent": 36,
+    "preexisting_lean_lake_comm_basename": 0,
+    "concurrency": 1,
+    "final_lean_lake_comm_basename": 0
+  },
+  "statement_count": 11,
+  "axiom_free_statement_count": 1,
+  "statements": [
+    "geometry_valid",
+    "mate_closed",
+    "certificate_valid",
+    "all_endpoints_frozen",
+    "critical_strands",
+    "fork_and_two_forced_escapes",
+    "both_escapes_have_no_original_BB_support",
+    "both_escapes_have_only_self_output",
+    "productive_gate_and_support_shadow",
+    "distinct_shadow_payment",
+    "one_gate_forbids_two_routes"
+  ],
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "warnings": 0,
+  "sorry": 0,
+  "native_evaluation": false,
+  "new_axioms": 0,
+  "dependency_command": "lean -j1 -o /tmp/subquorum-two-dead-lean/SubQuorum/FrozenSharedMixedGate.olean SubQuorum/FrozenSharedMixedGate.lean",
+  "command": "LEAN_PATH=/tmp/subquorum-two-dead-lean lean -j1 SubQuorum/TwoSidedDeadEscape.lean",
+  "scope": "Concrete selected/matching feasibility, full56 inductively frozen endpoints from strict ranks, five disjoint alternating critical owners and terminal types, actual vertical fork and both horizontal outward matching edges, two empty original BB supports including marked boundary, self-only outputs, productive receiver and contained direct alpha support. Small resource-distinctness and unit-gate exclusion consequences.",
+  "excluded": [
+    "General weighted support-shadow relay optimum theorem",
+    "Full physical whole-support adapter and payment normal form",
+    "Full owner classification and all-copy physical construction",
+    "End-to-end universal compensation or5/6"
+  ],
+  "axiom_report": "'SubQuorum.TwoSidedDeadEscape.geometry_valid' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.mate_closed' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.certificate_valid' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.critical_strands' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.fork_and_two_forced_escapes' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.both_escapes_have_no_original_BB_support' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.both_escapes_have_only_self_output' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.productive_gate_and_support_shadow' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TwoSidedDeadEscape.distinct_shadow_payment' does not depend on any axioms\n'SubQuorum.TwoSidedDeadEscape.one_gate_forbids_two_routes' depends on axioms: [propext, Quot.sound]\n"
+}

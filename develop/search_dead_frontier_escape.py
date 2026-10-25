@@ -13,7 +13,7 @@ from check_whole_support_fork_normal_form import whole_support_data
 from check_compensation_flow_normal_form import owner_data
 
 
-def search(rows,cols,seconds,typed,rich_gate=False,double_dead=False):
+def search(rows,cols,seconds,typed,rich_gate=False,double_dead=False,max_endpoints=0):
     assert rows >= 14 and rows % 2 == 0 and cols >= (24 if double_dead else 18)
     assert seconds > 0 and (typed or not rich_gate)
     shift=8 if double_dead else 0
@@ -56,7 +56,8 @@ def search(rows,cols,seconds,typed,rich_gate=False,double_dead=False):
         for v in [(4,12),(4,10),(5,9),(5,8)]:S.add(blank(v))
         for v in [(5,12),(5,11),(4,8)]:S.add(P[v])
         S.add(M[((5,11),(5,12))])
-    start=time.monotonic();status=S.check();out=dict(status=str(status),shape=[rows,cols],elapsed_seconds=time.monotonic()-start,reason=S.reason_unknown(),typed=typed,rich_gate=rich_gate,double_dead=double_dead,coordinate_shift=shift,scope='Bounded discovery; no general inference from UNSAT/UNKNOWN.')
+    if max_endpoints:S.add(count(P.values()) <= max_endpoints)
+    start=time.monotonic();status=S.check();out=dict(status=str(status),shape=[rows,cols],elapsed_seconds=time.monotonic()-start,reason=S.reason_unknown(),typed=typed,rich_gate=rich_gate,double_dead=double_dead,coordinate_shift=shift,scope='Bounded discovery; no general inference from UNSAT/UNKNOWN.',max_endpoints=max_endpoints)
     if status==z3.sat:
         model=S.model();ts={v for v in points if z3.is_true(model.eval(T[v]))};ms=[e for e in edges if z3.is_true(model.eval(M[e]))];cur=rows,cols,ts,ms
         direct_check(*cur);F,layers=frozen_certificate(cur);assert len(F)==2*len(ms)
@@ -71,4 +72,4 @@ def search(rows,cols,seconds,typed,rich_gate=False,double_dead=False):
         out.update(selected=sorted(ts),matching=ms,freezing_layers=[[w['endpoint'] for w in layer] for layer in layers],endpoints=len(F),selected_count=len(ts),fork_owners=[o[mv((5,5))],o[mv((5,6))],o[mv((5,7))]],dead_owner=dead)
     return out
 if __name__=='__main__':
-    ap=argparse.ArgumentParser();ap.add_argument('--rows',type=int,default=14);ap.add_argument('--columns',type=int,default=18);ap.add_argument('--seconds',type=int,default=40);ap.add_argument('--typed',action='store_true');ap.add_argument('--rich-gate',action='store_true');ap.add_argument('--double-dead',action='store_true');ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();r=search(a.rows,a.columns,a.seconds,a.typed,a.rich_gate,a.double_dead);a.output.write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({k:v for k,v in r.items() if k not in ['selected','matching','freezing_layers']}))
+    ap=argparse.ArgumentParser();ap.add_argument('--rows',type=int,default=14);ap.add_argument('--columns',type=int,default=18);ap.add_argument('--seconds',type=int,default=40);ap.add_argument('--typed',action='store_true');ap.add_argument('--rich-gate',action='store_true');ap.add_argument('--double-dead',action='store_true');ap.add_argument('--max-endpoints',type=int,default=0);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();r=search(a.rows,a.columns,a.seconds,a.typed,a.rich_gate,a.double_dead,a.max_endpoints);a.output.write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({k:v for k,v in r.items() if k not in ['selected','matching','freezing_layers']}))

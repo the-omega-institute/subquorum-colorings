@@ -15,6 +15,11 @@ automatic unit of compensation. The complete board still pays both
 alphas, at minimum actual-link cost one. The obstruction concerns the
 local rule, not the target grid inequality or the universal 5/6 bound.
 
+Follow-up: [two dead forced escapes and the support-shadow relay lemma](TWO_SIDED_DEAD_ESCAPES_AND_SHADOW_RELAY.md)
+gives a beta-free frozen board with BOTH alternatives dead and a productive
+receiver. Its complete original-pool-subset payment/cost function is proved
+by a general shared-relay lemma retaining direct source support.
+
 The [horizontal-BP forest theorem](HORIZONTAL_BP_FORESTS.md) remains valid:
 D is an alpha-reachable, single-entry, one-vertex H tree with no output.
 Alpha reachability and resource productivity are different conditions.

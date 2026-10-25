@@ -1,0 +1,477 @@
+{
+  "status": "passed",
+  "counts": {
+    "physical_frozen_fixtures": 24,
+    "physical_h_owners": 169,
+    "physical_long_h_owners": 4,
+    "physical_branching_h_owners": 0,
+    "physical_live_h_owners": 74,
+    "physical_multi_owner_trees": 9,
+    "physical_full_flow_cost_comparisons": 96,
+    "abstract_full_flow_cost_comparisons": 220,
+    "abstract_models_with_pruned_h": 124,
+    "abstract_branching_h_owners": 26,
+    "independent_terminal_models": 39,
+    "independent_terminal_matchings": 1587,
+    "explicit_abstract_countercontrols": 3,
+    "actual_restricted_vertical_frontier_collision": 1,
+    "serial_strict_gain_over_direct_escape_bound": 54,
+    "serial_forest_matching_certificates": 100,
+    "serial_fixed_baseline_exact_value_cost_checks": 100,
+    "serial_full_fixed_c_lower_bound_checks": 100,
+    "serial_vertical_frontier_additional_gain_controls": 7
+  },
+  "physical": [
+    {
+      "fixture": "connected_frozen_new_end_obstacle.json",
+      "endpoints": 620,
+      "h_owners": 22,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 4,
+      "live_h": 4
+    },
+    {
+      "fixture": "endpoint_extension_one_target_frozen.json",
+      "endpoints": 310,
+      "h_owners": 11,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 2,
+      "live_h": 2
+    },
+    {
+      "fixture": "frozen_active_short_tail_merger.json",
+      "endpoints": 62,
+      "h_owners": 7,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 4,
+      "live_h": 4
+    },
+    {
+      "fixture": "frozen_all_mixed_gate_cycle.json",
+      "endpoints": 308,
+      "h_owners": 11,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 2,
+      "live_h": 2
+    },
+    {
+      "fixture": "frozen_beta_fork_escape.json",
+      "endpoints": 50,
+      "h_owners": 2,
+      "long_h": 1,
+      "branching_h": 0,
+      "trees": 1,
+      "live_h": 1
+    },
+    {
+      "fixture": "frozen_beta_support_fork.json",
+      "endpoints": 66,
+      "h_owners": 1,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 1,
+      "live_h": 1
+    },
+    {
+      "fixture": "frozen_dead_forced_mixed_escape.json",
+      "endpoints": 50,
+      "h_owners": 3,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 2,
+      "live_h": 2
+    },
+    {
+      "fixture": "frozen_double_square_switch.json",
+      "endpoints": 308,
+      "h_owners": 13,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 4,
+      "live_h": 4
+    },
+    {
+      "fixture": "frozen_four_endpoint_ear_rematching.json",
+      "endpoints": 66,
+      "h_owners": 7,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 4,
+      "live_h": 4
+    },
+    {
+      "fixture": "frozen_intrinsic_one_unit_gap.json",
+      "endpoints": 40,
+      "h_owners": 8,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 4,
+      "live_h": 4
+    },
+    {
+      "fixture": "frozen_mixed_cycle_square_switch.json",
+      "endpoints": 308,
+      "h_owners": 12,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 3,
+      "live_h": 3
+    },
+    {
+      "fixture": "frozen_reserve_boundary_split.json",
+      "endpoints": 66,
+      "h_owners": 9,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 3,
+      "live_h": 5
+    },
+    {
+      "fixture": "frozen_shared_pocket.json",
+      "endpoints": 36,
+      "h_owners": 2,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 0,
+      "live_h": 0
+    },
+    {
+      "fixture": "frozen_shared_pocket_tight.json",
+      "endpoints": 72,
+      "h_owners": 5,
+      "long_h": 1,
+      "branching_h": 0,
+      "trees": 2,
+      "live_h": 4
+    },
+    {
+      "fixture": "frozen_short_beta_deletion.json",
+      "endpoints": 90,
+      "h_owners": 0,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 0,
+      "live_h": 0
+    },
+    {
+      "fixture": "frozen_short_beta_deletion_supported.json",
+      "endpoints": 82,
+      "h_owners": 0,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 0,
+      "live_h": 0
+    },
+    {
+      "fixture": "frozen_support_tree_reroot.json",
+      "endpoints": 46,
+      "h_owners": 8,
+      "long_h": 1,
+      "branching_h": 0,
+      "trees": 3,
+      "live_h": 5
+    },
+    {
+      "fixture": "frozen_two_dead_mixed_escapes.json",
+      "endpoints": 56,
+      "h_owners": 9,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 4,
+      "live_h": 7
+    },
+    {
+      "fixture": "frozen_vertical_mixed_missing_tip.json",
+      "endpoints": 66,
+      "h_owners": 4,
+      "long_h": 1,
+      "branching_h": 0,
+      "trees": 1,
+      "live_h": 2
+    },
+    {
+      "fixture": "frozen_wider_cycle_chamber.json",
+      "endpoints": 128,
+      "h_owners": 6,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 3,
+      "live_h": 3
+    },
+    {
+      "fixture": "guarded_promotion_fresh_tip_frozen.json",
+      "endpoints": 310,
+      "h_owners": 13,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 3,
+      "live_h": 3
+    },
+    {
+      "fixture": "protected_shared_columns_fresh_obstruction.json",
+      "endpoints": 16,
+      "h_owners": 0,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 0,
+      "live_h": 0
+    },
+    {
+      "fixture": "unported_shared_mixed_gate.json",
+      "endpoints": 66,
+      "h_owners": 2,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 2,
+      "live_h": 2
+    },
+    {
+      "fixture": "whole_support_donor_collision.json",
+      "endpoints": 68,
+      "h_owners": 14,
+      "long_h": 0,
+      "branching_h": 0,
+      "trees": 8,
+      "live_h": 12
+    }
+  ],
+  "controls": [
+    {
+      "control": "two_h_trees_first_vertical_gate_collision",
+      "value": 1,
+      "cost": 2,
+      "lifted_links": 2,
+      "selected": [
+        [
+          0,
+          4
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "trees": 2,
+      "live_h": 2,
+      "removed_h": 0,
+      "max_depth": 0
+    },
+    {
+      "control": "two_h_trees_one_original_interval",
+      "value": 1,
+      "cost": 1,
+      "lifted_links": 1,
+      "selected": [
+        [
+          0,
+          4
+        ]
+      ],
+      "trees": 2,
+      "live_h": 2,
+      "removed_h": 0,
+      "max_depth": 0
+    },
+    {
+      "control": "branching_tolls_and_unreachable_cycle",
+      "deep_resource_only": {
+        "value": 1,
+        "cost": 2,
+        "lifted_links": 2,
+        "selected": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "trees": 1,
+        "live_h": 3,
+        "removed_h": 2,
+        "max_depth": 1
+      },
+      "root_resource_only": {
+        "value": 1,
+        "cost": 1,
+        "lifted_links": 1,
+        "selected": [
+          [
+            0,
+            2
+          ]
+        ],
+        "trees": 1,
+        "live_h": 3,
+        "removed_h": 2,
+        "max_depth": 1
+      },
+      "wrong_zero_internal_toll": {
+        "value": 1,
+        "cost": 1,
+        "lifted_links": 2,
+        "selected": [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "trees": 1,
+        "live_h": 3,
+        "removed_h": 2,
+        "max_depth": 1
+      }
+    }
+  ],
+  "physical_frontier_control": {
+    "fixture": "frozen_active_short_tail_merger.json",
+    "scope": "Earlier completely frozen board; RESTRICTED five-owner two-resource allocation, not full-board deficit.",
+    "horizontal_roots": [
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        11
+      ]
+    ],
+    "vertical_frontier": [
+      5,
+      9
+    ],
+    "original_units": [
+      45,
+      46
+    ],
+    "value": 1,
+    "cost": 2,
+    "lifted_links": 2,
+    "selected": [
+      [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      [
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          9
+        ]
+      ]
+    ],
+    "trees": 2,
+    "live_h": 2,
+    "removed_h": 0,
+    "max_depth": 0
+  },
+  "serial_interfaces": [
+    {
+      "spec": [
+        "M",
+        "B",
+        "M"
+      ],
+      "lengths": [
+        3,
+        3,
+        2
+      ],
+      "rank": 3,
+      "previous_direct_rank": 1,
+      "added_cost": 4,
+      "payment": 8,
+      "full_fixed_c_payment": 8
+    },
+    {
+      "spec": [
+        "M",
+        "M",
+        "B"
+      ],
+      "lengths": [
+        2,
+        3,
+        4
+      ],
+      "rank": 3,
+      "previous_direct_rank": 1,
+      "added_cost": 4,
+      "payment": 9,
+      "full_fixed_c_payment": 9
+    },
+    {
+      "spec": [
+        "B",
+        "M",
+        "I1"
+      ],
+      "lengths": [
+        2,
+        4,
+        3
+      ],
+      "rank": 3,
+      "previous_direct_rank": 2,
+      "added_cost": 3,
+      "payment": 9,
+      "full_fixed_c_payment": 9
+    },
+    {
+      "spec": [
+        "I1",
+        "B",
+        "B"
+      ],
+      "lengths": [
+        4,
+        2,
+        4
+      ],
+      "rank": 3,
+      "previous_direct_rank": 3,
+      "added_cost": 2,
+      "payment": 10,
+      "full_fixed_c_payment": 10
+    },
+    {
+      "spec": [
+        "I0",
+        "M",
+        "M",
+        "I1"
+      ],
+      "lengths": [
+        4,
+        2,
+        4,
+        3
+      ],
+      "rank": 4,
+      "previous_direct_rank": 2,
+      "added_cost": 6,
+      "payment": 13,
+      "full_fixed_c_payment": 13
+    }
+  ],
+  "scope": "General geometric indegree/forest proof is written. Physical horizontal-BP mixed includes long bent owners; branching controls abstract. Exact full-flow value/cost compression, not universal compensation or 5/6."
+}
