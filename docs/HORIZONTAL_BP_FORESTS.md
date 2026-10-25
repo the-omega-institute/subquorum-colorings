@@ -18,6 +18,12 @@ elementary; the content is the physical single-entrance criterion and its
 application without inventing resources or dropping actual costs. No general
 compensation theorem or improvement of the universal 5/6 bound is asserted.
 
+Follow-up: the [dead forced mixed escape](DEAD_FORCED_MIXED_ESCAPE.md)
+gives a fully frozen two-alpha fork into a productive vertical mixed gate
+whose rank-forced exterior H tree has no support or nonself output.
+Alpha-reachable H trees need not be resource-productive. The complete
+board still pays both sources through original bypasses.
+
 ## 1. Original physical class and the unique entrance
 
 Use the feasible original selected set T, actual matching M, aligned two-row
