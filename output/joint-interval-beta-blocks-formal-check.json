@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "date": "2026-10-25",
+  "machine": "user-authorized local machine",
+  "preflight": {
+    "memory_gib": 16,
+    "original_memory_free_percent": 41,
+    "active_lean_lake": 0,
+    "process_detection": "comm basename exactly lean or lake",
+    "concurrency": 1,
+    "rerun_preflight": "No active lean/lake; vm_stat measured before rerun; memory_pressure -Q afterward reports39percent free"
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "lean SubQuorum/JointIntervalBetaBlocks.lean",
+  "working_directory": "formal",
+  "exit_code": 0,
+  "declarations": [
+    "representatives_injective",
+    "parent_betas_not_reused",
+    "weighted_local_root_ledger",
+    "discount_within_beta_budget",
+    "same_interval_component_control",
+    "saturated_local_root_ledger"
+  ],
+  "axiom_audit": "joint-interval-beta-blocks-lean-validation.txt",
+  "axioms_used": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "native_evaluation": false,
+  "scope": "Scoped representative/parent-edge injections, conditional tree and saturated count ledgers, budget and exact named abstract three-alpha cost obstruction. General allocation, full exterior projection/lift, circulation exactness and physical adapters remain written mathematical proofs with independent computational checks; no end-to-end formalization or universal5/6 claim.",
+  "external_review": "No new independent external review claimed."
+}

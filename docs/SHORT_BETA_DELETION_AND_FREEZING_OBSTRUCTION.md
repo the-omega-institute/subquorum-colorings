@@ -272,3 +272,9 @@ The next question remains the joint exterior capacity of the residual trees,
 but its geometry must be established on the original board. This counterexample
 does not show that the required exterior inequality fails. The submitted
 11 October manuscript, public main and existing PR3 remain unchanged.
+
+Continuation: [joint interval/beta block reduction](JOINT_INTERVAL_BETA_BLOCK_REDUCTION.md)
+combines original source-only intervals and exclusive betas. Exact discounts
+count distinct interval components (only deficient ones in saturated blocks),
+retaining the full exterior and both value and minimum-link cost. It is an
+algebraic reduction on the original board; universal compensation remains open.

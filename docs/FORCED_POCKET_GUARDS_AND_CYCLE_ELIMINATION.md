@@ -274,3 +274,9 @@ trees. Those trees must obtain further compensation from other beta shapes,
 mixed routes or original intervals, with original capacities retained.
 Nothing proved here guarantees those remaining exterior cuts are saturated.
 Universal compensation and improvement of the 5/6 bound remain open.
+
+Continuation: [joint interval/beta block reduction](JOINT_INTERVAL_BETA_BLOCK_REDUCTION.md)
+combines original source-only intervals and exclusive betas. Exact discounts
+count distinct interval components (only deficient ones in saturated blocks),
+retaining the full exterior and both value and minimum-link cost. It is an
+algebraic reduction on the original board; universal compensation remains open.

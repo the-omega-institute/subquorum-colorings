@@ -1,0 +1,1326 @@
+{
+  "status": "PASS",
+  "totals": {
+    "joint_reduction_systems": 920,
+    "joint_actual_pack_lifts": 1840,
+    "simple_cost_overestimates": 124,
+    "no_external_support_equalities": 441,
+    "nonzero_component_discount_systems": 124,
+    "independent_primitive_pack_comparisons": 752,
+    "saturated_full_residual_comparisons": 1838,
+    "saturated_systems": 919,
+    "nonempty_saturated_eliminations": 415,
+    "exact_saturated_cost_systems": 787,
+    "arbitrary_local_root_sets": 2150,
+    "saturated_arbitrary_root_sets": 2922,
+    "exhaustive_local_multigraph_root_sets": 6248,
+    "exhaustive_local_multigraphs": 810,
+    "forced_guard_motifs": 519,
+    "frozen_physical_boards": 103,
+    "physical_interval_reservation_models": 120
+  },
+  "controls": {
+    "same_interval_component_discount": {
+      "correct": {
+        "value": 3,
+        "cost": 1,
+        "claimed_cost": 1,
+        "baseline": 2,
+        "costbase": 1,
+        "exterior_score": 1,
+        "extra_clusters": 0,
+        "roots": {
+          "0": [
+            0
+          ]
+        }
+      },
+      "invalid_flattened": {
+        "value": 3,
+        "cost": 1,
+        "claimed_cost": 0,
+        "baseline": 2,
+        "costbase": 1,
+        "exterior_score": 1,
+        "extra_clusters": 1,
+        "roots": {
+          "0": [
+            0,
+            1
+          ]
+        }
+      },
+      "status": "Refutes counting alpha exits as independent beta savings; abstract control, not a frozen realization."
+    }
+  },
+  "physical": [
+    {
+      "family": "tight",
+      "copies": 1,
+      "filled": [],
+      "sources": 2,
+      "units": 3,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 1,
+      "filled": [
+        0
+      ],
+      "sources": 2,
+      "units": 2,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 2,
+      "filled": [],
+      "sources": 4,
+      "units": 6,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 2,
+      "filled": [
+        0
+      ],
+      "sources": 4,
+      "units": 5,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 2,
+      "filled": [
+        1
+      ],
+      "sources": 4,
+      "units": 5,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 2,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 4,
+      "units": 4,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [],
+      "sources": 6,
+      "units": 9,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        0
+      ],
+      "sources": 6,
+      "units": 8,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        1
+      ],
+      "sources": 6,
+      "units": 8,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 6,
+      "units": 7,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        2
+      ],
+      "sources": 6,
+      "units": 8,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        0,
+        2
+      ],
+      "sources": 6,
+      "units": 7,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        1,
+        2
+      ],
+      "sources": 6,
+      "units": 7,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 3,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 6,
+      "units": 6,
+      "local_cost": 6,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 4,
+      "filled": [],
+      "sources": 8,
+      "units": 12,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 4,
+      "filled": [
+        0
+      ],
+      "sources": 8,
+      "units": 11,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 4,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 8,
+      "units": 10,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 8,
+      "units": 9,
+      "local_cost": 6,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 8,
+      "units": 8,
+      "local_cost": 8,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 5,
+      "filled": [],
+      "sources": 10,
+      "units": 15,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 5,
+      "filled": [
+        0
+      ],
+      "sources": 10,
+      "units": 14,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 5,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 10,
+      "units": 13,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 10,
+      "units": 12,
+      "local_cost": 6,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 10,
+      "units": 11,
+      "local_cost": 8,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 10,
+      "units": 10,
+      "local_cost": 10,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [],
+      "sources": 12,
+      "units": 18,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [
+        0
+      ],
+      "sources": 12,
+      "units": 17,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 12,
+      "units": 16,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 12,
+      "units": 15,
+      "local_cost": 6,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 12,
+      "units": 14,
+      "local_cost": 8,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 12,
+      "units": 13,
+      "local_cost": 10,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources": 12,
+      "units": 12,
+      "local_cost": 12,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [],
+      "sources": 14,
+      "units": 21,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0
+      ],
+      "sources": 14,
+      "units": 20,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 14,
+      "units": 19,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 14,
+      "units": 18,
+      "local_cost": 6,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 14,
+      "units": 17,
+      "local_cost": 8,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 14,
+      "units": 16,
+      "local_cost": 10,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources": 14,
+      "units": 15,
+      "local_cost": 12,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources": 14,
+      "units": 14,
+      "local_cost": 14,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [],
+      "sources": 16,
+      "units": 24,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0
+      ],
+      "sources": 16,
+      "units": 23,
+      "local_cost": 2,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 16,
+      "units": 22,
+      "local_cost": 4,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 16,
+      "units": 21,
+      "local_cost": 6,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 16,
+      "units": 20,
+      "local_cost": 8,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 16,
+      "units": 19,
+      "local_cost": 10,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources": 16,
+      "units": 18,
+      "local_cost": 12,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources": 16,
+      "units": 17,
+      "local_cost": 14,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "tight",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources": 16,
+      "units": 16,
+      "local_cost": 16,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 1,
+      "filled": [],
+      "sources": 2,
+      "units": 16,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 1,
+      "filled": [
+        0
+      ],
+      "sources": 2,
+      "units": 15,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 2,
+      "filled": [],
+      "sources": 4,
+      "units": 32,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 2,
+      "filled": [
+        0
+      ],
+      "sources": 4,
+      "units": 31,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 2,
+      "filled": [
+        1
+      ],
+      "sources": 4,
+      "units": 31,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 2,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 4,
+      "units": 30,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [],
+      "sources": 6,
+      "units": 48,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        0
+      ],
+      "sources": 6,
+      "units": 47,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        1
+      ],
+      "sources": 6,
+      "units": 47,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 6,
+      "units": 46,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        2
+      ],
+      "sources": 6,
+      "units": 47,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        0,
+        2
+      ],
+      "sources": 6,
+      "units": 46,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        1,
+        2
+      ],
+      "sources": 6,
+      "units": 46,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 3,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 6,
+      "units": 45,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 4,
+      "filled": [],
+      "sources": 8,
+      "units": 64,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 4,
+      "filled": [
+        0
+      ],
+      "sources": 8,
+      "units": 63,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 4,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 8,
+      "units": 62,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 8,
+      "units": 61,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 4,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 8,
+      "units": 60,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 5,
+      "filled": [],
+      "sources": 10,
+      "units": 80,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 5,
+      "filled": [
+        0
+      ],
+      "sources": 10,
+      "units": 79,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 5,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 10,
+      "units": 78,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 10,
+      "units": 77,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 10,
+      "units": 76,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 5,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 10,
+      "units": 75,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [],
+      "sources": 12,
+      "units": 96,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [
+        0
+      ],
+      "sources": 12,
+      "units": 95,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 12,
+      "units": 94,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 12,
+      "units": 93,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 12,
+      "units": 92,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 12,
+      "units": 91,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 6,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources": 12,
+      "units": 90,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [],
+      "sources": 14,
+      "units": 112,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0
+      ],
+      "sources": 14,
+      "units": 111,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 14,
+      "units": 110,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 14,
+      "units": 109,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 14,
+      "units": 108,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 14,
+      "units": 107,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources": 14,
+      "units": 106,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 7,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources": 14,
+      "units": 105,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [],
+      "sources": 16,
+      "units": 128,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0
+      ],
+      "sources": 16,
+      "units": 127,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1
+      ],
+      "sources": 16,
+      "units": 126,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2
+      ],
+      "sources": 16,
+      "units": 125,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sources": 16,
+      "units": 124,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sources": 16,
+      "units": 123,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sources": 16,
+      "units": 122,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "sources": 16,
+      "units": 121,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    },
+    {
+      "family": "outside",
+      "copies": 8,
+      "filled": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sources": 16,
+      "units": 120,
+      "local_cost": 0,
+      "exact_cost_hypothesis": true
+    }
+  ],
+  "frozen_cost_control": {
+    "local_cost": 1,
+    "full_cost": 0,
+    "exact_cost_hypothesis": false,
+    "status": "Actual frozen board refutes dropping no-exterior-direct-support cost condition."
+  },
+  "physical_reservations": [
+    {
+      "reserved": 0,
+      "value": 2,
+      "cost": 0,
+      "claimed_cost": 0,
+      "baseline": 2,
+      "costbase": 0,
+      "exterior_score": 0,
+      "extra_clusters": 0,
+      "roots": {
+        "0": []
+      }
+    },
+    {
+      "reserved": 1,
+      "value": 2,
+      "cost": 1,
+      "claimed_cost": 1,
+      "baseline": 2,
+      "costbase": 1,
+      "exterior_score": 0,
+      "extra_clusters": 0,
+      "roots": {
+        "0": []
+      }
+    },
+    {
+      "reserved": 2,
+      "value": 2,
+      "cost": 2,
+      "claimed_cost": 2,
+      "baseline": 1,
+      "costbase": 1,
+      "exterior_score": 1,
+      "extra_clusters": 0,
+      "roots": {
+        "0": [
+          3
+        ]
+      }
+    }
+  ],
+  "scope": "Closed source-only interval and exclusive empty-body beta blocks have an exact joint reduction in the full exterior network; optional discounts retain one capacity per deficient interval component in saturated blocks and per interval component in trees. General proofs written, finite controls not a universal geometric compensation proof;5/6 open."
+}

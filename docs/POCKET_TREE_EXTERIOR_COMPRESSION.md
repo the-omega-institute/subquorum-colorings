@@ -326,3 +326,9 @@ also shows that geometric deletion need not preserve complete freezing.
 The reduced network above is an algebraic system retaining original resource
 identities; further geometric estimates must use the original frozen board,
 unless a separate preservation or repair theorem is supplied.
+
+Continuation: [joint interval/beta block reduction](JOINT_INTERVAL_BETA_BLOCK_REDUCTION.md)
+combines original source-only intervals and exclusive betas. Exact discounts
+count distinct interval components (only deficient ones in saturated blocks),
+retaining the full exterior and both value and minimum-link cost. It is an
+algebraic reduction on the original board; universal compensation remains open.

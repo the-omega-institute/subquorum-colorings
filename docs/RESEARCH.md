@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [joint original-interval/beta block reduction](JOINT_INTERVAL_BETA_BLOCK_REDUCTION.md)
+combines source-only original intervals and exclusive empty-body betas on the
+original frozen board. A rooted joint tree has exact local beta cost
+q-max(1,z), where z counts touched interval components; a saturated block has
+exact cost t-z, counting touched deficient interval components. A unified
+optional circulation recovers both maximum payment and minimum actual links
+with the full exterior capacities retained. A three-alpha control refutes
+counting two exits in one interval component as two independent savings.
+920 full reductions/1,840 actual lifts, 752 independent packs, 810 local
+multigraphs with 6,248 root sets, 103 frozen boards and 120 reservation models,
+plus six scoped Lean declarations pass. General allocation and projection/lift
+proofs are written; the remaining joint exterior geometric cut and 5/6 are open.
+
 25 October: [short-beta deletion and freezing obstruction](SHORT_BETA_DELETION_AND_FREEZING_OBSTRUCTION.md)
 refutes geometric reverse completion even when both flanking alphas have
 empty whole support. An explicit frozen 16x14 board loses complete freezing
