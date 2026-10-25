@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [FULL-pool interface singleton and exact repairs](docs/FULL_POOL_INTERFACE_SINGLETON_AND_REPAIR_PROFILE.md):
+for every even W>=8 and every subset of s repairs among q frozen copies,
+closed local systems pay q and the interface alone pays q, yet the full
+restored mixed-direction model pays exactly q+s, leaving q-s unpaid.
+An arbitrary-route eight-owner closure excludes all other original units
+and every beta sink. Unrestricted minimum links are s; retaining all old
+paid source identities costs exactly 2q-s. A selected lower-route baseline
+has nu=0 even on the full pool, while theta=s; locally minimum-cost baselines
+already attain nu=s. Checks pass 92 full-pool frozen boards, 1,176 withdrawals,
+24 independent primitive profiles and 21 scoped local Lean declarations.
+This extends the existing sealed-board singleton family; global extremality,
+alternative partitions and the universal 5/6 improvement remain open.
+
 New [interface reserve reoptimization](docs/INTERFACE_RESERVE_REOPTIMIZATION.md):
 local routes can be rearranged while retaining every initially paid old
 source. The exact additional interface payment has one joint original-resource

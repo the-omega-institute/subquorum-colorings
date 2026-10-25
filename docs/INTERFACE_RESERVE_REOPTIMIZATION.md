@@ -1,5 +1,13 @@
 # Interface compensation with local rerouting and protected payments
 
+**Full-pool continuation:** the [exact interface singleton/repair profile](FULL_POOL_INTERFACE_SINGLETON_AND_REPAIR_PROFILE.md)
+proves the complete original-pool behavior for every even height and every
+subset of repairs in a stack. Local full payment and an independently full
+interface matching can have deficit q-s after restoration. For the chosen
+non-minimum-cost lower-route packs, theta=s>nu=0 when s>0 even on the full
+pool; locally minimum-cost packs instead have nu=theta=s. It also determines
+the exact cost of retaining old source identities.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Research branch.
 
 The previous [crossing-port lemma](CROSSING_MATCHING_PORT_LEDGER.md) fixed

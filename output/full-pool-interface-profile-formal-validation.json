@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T14:35:31.922210+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "70937 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Local machine selected in current session; one standalone small module; preserve unrelated processes."
+  },
+  "active_processes_after_by_comm_basename": [
+    "19150 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "70937 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.FullPoolInterfaceProfile.actual_board_counts' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.actual_closed_exit_support_table' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.route_copy_index' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.no_incoming_interface' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.old_route_not_interface' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.payment_copy_index' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.unrepaired_payment_unique' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.interface_route_stationary' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.interface_payment_unique' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.unrepaired_two_root_collision' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.transition_level' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.route_level_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.old_shared_needs_two' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.old_private_needs_one' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.explicit_old_lower_route' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.explicit_old_upper_route' depends on axioms: [propext]",
+    "'SubQuorum.FullPoolInterfaceProfile.repaired_distinct_payments' does not depend on any axioms",
+    "'SubQuorum.FullPoolInterfaceProfile.different_copies_distinct_units' does not depend on any axioms",
+    "'SubQuorum.FullPoolInterfaceProfile.aggregate_profile' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.joint_withdrawal_defect' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FullPoolInterfaceProfile.numerical_slack' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Indexed eight-owner arbitrary routes preserve copy index; no route from old source reaches interface; all payments stay in original copy; unrepaired old/interface payments collide; exact lower bounds two links to shared unit and one to private unit; explicit repair routes and distinct units; aggregate exact value/deficit/cost arithmetic and positive numerical slack; actual W8 source table and full original pool compiled constants.",
+  "not_formalized": [
+    "General physical coordinate-to-owner/resource adapter and all-W/q freezing",
+    "Finite-cardinality summation of per-copy route/payment bounds and construction of full physical certificates",
+    "Max-flow duality; complete written arguments and independent Python checks supplied"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
