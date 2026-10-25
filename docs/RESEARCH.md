@@ -7,6 +7,19 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [matching-independent active-merger reserves](MATCHING_INDEPENDENT_ACTIVE_MERGER_RESERVES.md)
+proves unique completely frozen actual matching for each of the four fixed-
+endpoint cap states, even after arbitrary feasible selected additions. A
+new arbitrary-graph closed-trap proof excludes candidate edges without
+matching enumeration:29 explicit traps plus leaf forcing finish all four
+graphs; the two bad endpoint shapes fail for every matching. Thus q separated
+copies have k=V=2q,c=filledCaps without assuming old matching retention; every
+payment consumes a distinct original resource.4340 independent matching
+controls,15 feasible helper subsets/30 packs and8 scoped Lean results pass.
+Existing fully frozen nonunique core retained as a control. Added endpoints
+with old-to-new rematching, arbitrary geometry and universal5/6 remain open.
+
+
 25 October: [active-merger completion and persistent private payments](ACTIVE_MERGER_COMPLETION_AND_PERSISTENT_PAYMENTS.md)
 settles arbitrary matching/selection-retaining completely frozen extensions
 of the active short-tail merger on a fixed admissible packet. A guarded

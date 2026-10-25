@@ -305,3 +305,8 @@ a jointly sufficient reserve of this kind, or whether changing the old
 matching can remove the reserves without creating compensating credit.
 The submitted11October manuscript, public main, PR3, shared CI and mail are
 outside this research branch.
+
+Follow-up: [fixed-endpoint matching rigidity](MATCHING_INDEPENDENT_ACTIVE_MERGER_RESERVES.md)
+now removes the matching-retention assumption for the four fixed-endpoint
+states and arbitrary feasible selected supersets, including all separated
+copies. It does not yet cover simultaneous endpoint additions and rematching.

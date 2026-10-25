@@ -1,0 +1,3553 @@
+{
+  "status": "PASS",
+  "proof_method": "explicit leaf forcing and closed-trap certificates; no perfect matching enumeration in proof checker",
+  "scope": "Four fixed endpoint states of active merger, arbitrary feasible selected supersets and arbitrary actual perfect matching; all-q separated copies follow by locality. Arbitrary endpoint additions/rematching of a larger endpoint graph remain OPEN.",
+  "totals": {
+    "certificate_states": 4,
+    "closed_trap_exclusions": 29,
+    "independent_matching_controls": 4340,
+    "independent_primitive_packs": 30,
+    "frozen_completion_models": 15,
+    "settled_old_alphas": 30,
+    "exclusive_beta_payments": 3,
+    "private_interval_payments": 27,
+    "exact_value_and_cost_eliminations": 15,
+    "nonempty_residual_alpha_cases": 0,
+    "positive_residual_payment_cases": 0,
+    "positive_residual_cost_cases": 0,
+    "feasible_helper_subsets": 15,
+    "bad_shape_incident_pair_traps": 4,
+    "bad_fixed_endpoint_shapes_excluded": 2,
+    "known_fully_frozen_nonunique_controls": 2
+  },
+  "independent_matching_counts": {
+    "empty": {
+      "perfect_matchings": 22,
+      "optimistically_frozen": 1
+    },
+    "selection": {
+      "perfect_matchings": 22,
+      "optimistically_frozen": 1
+    },
+    "cycle": {
+      "perfect_matchings": 330,
+      "optimistically_frozen": 1
+    },
+    "cycle_beta": {
+      "perfect_matchings": 3966,
+      "optimistically_frozen": 1
+    }
+  },
+  "certificates": {
+    "empty": {
+      "endpoint_count": 62,
+      "helper_selections": [
+        [
+          5,
+          4
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "leaf_forcings": 29,
+      "excluded_edges": 5,
+      "traps": [
+        {
+          "edge": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                7
+              ],
+              "neighbors": [
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                9
+              ],
+              "neighbors": [
+                [
+                  5,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                8
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              7,
+              9
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  6,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                8
+              ],
+              "neighbors": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "selection": {
+      "endpoint_count": 62,
+      "helper_selections": [
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "leaf_forcings": 29,
+      "excluded_edges": 5,
+      "traps": [
+        {
+          "edge": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                7
+              ],
+              "neighbors": [
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                9
+              ],
+              "neighbors": [
+                [
+                  5,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                8
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              7,
+              9
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  6,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                8
+              ],
+              "neighbors": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cycle": {
+      "endpoint_count": 64,
+      "helper_selections": [
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "leaf_forcings": 30,
+      "excluded_edges": 9,
+      "traps": [
+        {
+          "edge": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "neighbors": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  5,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                1
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                1
+              ],
+              "neighbors": [
+                [
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                1
+              ],
+              "neighbors": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                2
+              ],
+              "neighbors": [
+                [
+                  4,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                1
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                3
+              ],
+              "neighbors": [
+                [
+                  4,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                1
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                6,
+                2
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                7,
+                1
+              ],
+              "neighbors": [
+                [
+                  8,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                2
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  4
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "neighbors": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  5,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                7
+              ],
+              "neighbors": [
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                9
+              ],
+              "neighbors": [
+                [
+                  5,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                8
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              7,
+              9
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  6,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                8
+              ],
+              "neighbors": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  10
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "cycle_beta": {
+      "endpoint_count": 66,
+      "helper_selections": [
+        [
+          8,
+          14
+        ],
+        [
+          8,
+          15
+        ]
+      ],
+      "leaf_forcings": 31,
+      "excluded_edges": 10,
+      "traps": [
+        {
+          "edge": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "neighbors": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  5,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                1
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                1
+              ],
+              "neighbors": [
+                [
+                  2,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                2
+              ],
+              "neighbors": [
+                [
+                  4,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                1
+              ],
+              "neighbors": [
+                [
+                  6,
+                  1
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "trap": [
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              3
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                3,
+                2
+              ],
+              "neighbors": [
+                [
+                  3,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  5,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                4
+              ],
+              "neighbors": [
+                [
+                  5,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                4
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                4
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              5,
+              9
+            ],
+            [
+              5,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              11
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                12
+              ],
+              "neighbors": [
+                [
+                  4,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  7,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ]
+          ],
+          "trap": [
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              9
+            ],
+            [
+              8,
+              10
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                4,
+                3
+              ],
+              "neighbors": [
+                [
+                  3,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                2
+              ],
+              "neighbors": [
+                [
+                  5,
+                  1
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                4
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                5,
+                6
+              ],
+              "neighbors": [
+                [
+                  4,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                7
+              ],
+              "neighbors": [
+                [
+                  5,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                9
+              ],
+              "neighbors": [
+                [
+                  5,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                3
+              ],
+              "neighbors": [
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  7,
+                  7
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                8
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  9
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                9
+              ],
+              "neighbors": [
+                [
+                  7,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  11
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "edge": [
+            [
+              7,
+              9
+            ],
+            [
+              7,
+              10
+            ]
+          ],
+          "trap": [
+            [
+              5,
+              4
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              7,
+              10
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "possible_retained_neighbors": [
+            {
+              "endpoint": [
+                5,
+                4
+              ],
+              "neighbors": [
+                [
+                  5,
+                  3
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                8
+              ],
+              "neighbors": [
+                [
+                  4,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                5,
+                10
+              ],
+              "neighbors": [
+                [
+                  4,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                5
+              ],
+              "neighbors": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                7
+              ],
+              "neighbors": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                6,
+                9
+              ],
+              "neighbors": []
+            },
+            {
+              "endpoint": [
+                6,
+                11
+              ],
+              "neighbors": [
+                [
+                  6,
+                  12
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                6
+              ],
+              "neighbors": [
+                [
+                  6,
+                  6
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                8
+              ],
+              "neighbors": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                7,
+                10
+              ],
+              "neighbors": [
+                [
+                  8,
+                  10
+                ]
+              ]
+            },
+            {
+              "endpoint": [
+                8,
+                7
+              ],
+              "neighbors": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
