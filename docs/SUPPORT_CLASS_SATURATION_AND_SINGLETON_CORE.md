@@ -2,6 +2,13 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
+Subsequent full-pool obstruction. The [fully frozen singleton family](FULL_POOL_SINGLETON_OBSTRUCTION.md)
+realizes an essential cross-component core even in the complete original
+pool: two locally payable sources have joint value one, with all links
+reselected and no extra reservations. A raw-pool version also includes every
+boundary unit. This does not contradict saturation or exact gluing; it
+refutes automatic full compensation under feasibility and freezing alone.
+
 Two available intervals with the SAME two original whole owners can be
 assigned one to each owner without losing any cancellation/allocation value
 or link cost. Their coordinates may be in different bands and gaps. This

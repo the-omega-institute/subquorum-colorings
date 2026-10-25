@@ -8,6 +8,12 @@ explicit two-arm forks; none are present in this family.
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Research branch only.
 
+The subsequent [full-pool singleton obstruction](FULL_POOL_SINGLETON_OBSTRUCTION.md)
+adds isolated selections to seal the alternative resources. That new family
+has maximum compensation one for two alphas over all terminal matchings,
+even with the complete raw resource pool. The present family remains
+repairable as proved below; the two results concern different configurations.
+
 Two deficient components can each have a legal, separately successful mixed
 continuation, using distinct gates and terminals, while those continuations
 together expose only one original interval. We realize this in the **whole
