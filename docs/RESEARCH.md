@@ -7,6 +7,18 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [arbitrary endpoint additions and local replacement](ENDPOINT_EXTENSIONS_AND_LOCAL_RESOURCE_REPLACEMENT.md)
+settles ALL feasible extensions of the49T/308P occupation retaining EXACT T
+and oldP, with arbitrary newP and arbitrary simultaneous rematching. All49T
+are saturated, so there are no newTPs. A modified immediate-BB packet at
+(6,15),(7,10),(9,10),(12,7),(12,16) either survives or becomes a distinct
+BP entrance. The23TP certificate adapts to18+hlinks and5-hunits; complete
+ordinary/full compensation holds, with at mostfloor((5-h)/2)interval payments.
+Four filled candidates already force beta-only full payment.435controls
+(7frozen/428feasible nonfrozen),136independent packs and11scoped Lean audits
+pass. Actual310P positive control is frozen;318P all-five control explicitly
+NONFROZEN. Arbitrary additions of new selections and universal5/6 remain open.
+
 25 October: [occupation certificate for ALL rematchings](OCCUPANCY_CERTIFICATE_AND_ALL_REMATCHINGS.md)
 settles EVERY actual perfect matching of the fixed308P/49T board, with no
 freezing or square-flip-connectivity assumption. A single occupation-only

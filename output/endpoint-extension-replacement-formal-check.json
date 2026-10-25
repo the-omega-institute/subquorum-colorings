@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "command": "lean SubQuorum/EndpointExtensionReplacement.lean",
+  "exit_code": 0,
+  "machine": "user-authorized local Mac",
+  "preflight": {
+    "memory_bytes": 17179869184,
+    "free_percentage": 57,
+    "lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "audited_declarations": [
+    "SubQuorum.EndpointExtensionReplacement.selected_guard_blank",
+    "SubQuorum.EndpointExtensionReplacement.saturation_no_new_tip",
+    "SubQuorum.EndpointExtensionReplacement.local_two_state_replacement",
+    "SubQuorum.EndpointExtensionReplacement.adaptive_target_injection",
+    "SubQuorum.EndpointExtensionReplacement.interval_payment_budget",
+    "SubQuorum.EndpointExtensionReplacement.four_fills_force_beta_only",
+    "SubQuorum.EndpointExtensionReplacement.payment_ledger",
+    "SubQuorum.EndpointExtensionReplacement.actual_all_selected_saturated",
+    "SubQuorum.EndpointExtensionReplacement.actual_twenty_three_guards",
+    "SubQuorum.EndpointExtensionReplacement.actual_static_certificate_targets",
+    "SubQuorum.EndpointExtensionReplacement.actual_five_singleton_guards"
+  ],
+  "axioms_union": [
+    "propext",
+    "Quot.sound"
+  ],
+  "axiom_free_declarations": [
+    "selected_guard_blank",
+    "saturation_no_new_tip",
+    "local_two_state_replacement",
+    "actual_all_selected_saturated"
+  ],
+  "no_sorry_native": true,
+  "scope": "General selected guard, saturated-fixed-T no-new-TP rule, local BB-to-BP-or-surviving-interval replacement, simultaneous adaptive-target injection; interval budget and four-fill beta-only arithmetic plus ledger. Concrete49T saturation,23guards, static sources/targets and singleton-neighbour guards. Arbitrary-M/PP decomposition, physical final interval-forest adapter and normal-form lift WRITTENPython, NOTendToEndLean extension flow. Actual310P positive-control complete rank certificate checkedPython, NOTclaimedNewLeanFreezing."
+}

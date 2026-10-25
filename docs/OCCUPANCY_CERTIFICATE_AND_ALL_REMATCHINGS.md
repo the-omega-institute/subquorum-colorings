@@ -223,3 +223,11 @@ general free-tip/injection lemmas are axiom-free. See the
 [formal receipt](../output/occupancy-all-rematchings-formal-check.json),
 [computational receipt](../output/occupancy-all-rematchings-validation.json)
 and [direct Lean source](../formal/SubQuorum/OccupancyCertificate.lean).
+
+Continuation: [guarded local replacement](ENDPOINT_EXTENSIONS_AND_LOCAL_RESOURCE_REPLACEMENT.md)
+now allows ANY new endpoints and arbitrary rematching while keeping T exactly
+fixed and retaining oldP. All49selections are saturated, preventing newTPs.
+Replace the old(6,12) unit by immediate(6,15); every occupied candidate then
+supplies a distinct BP entrance instead. An adaptive23TP certificate proves
+full ordinary compensation for the entire feasible endpoint-extension class.
+New selections still require new demand/resource accounting.
