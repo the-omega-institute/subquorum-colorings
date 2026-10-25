@@ -140,6 +140,24 @@ def full_pool_check(w,q,repairs,totals,fixture=False):
             if deficit==q-s:maxima.append(J)
             totals['full_pool_shared_withdrawals']+=1
         assert len(maxima)==2**s and set.intersection(*maxima)==unrepair
+    if q<=3:
+        # Eliminating private withdrawals gives SOME optimum, not all of
+        # them. A repaired copy also permits deleting {j,l} together.
+        live=units|repair_units;optimal=[]
+        for J in subsets(live):
+            F=Q-J
+            oldv=fork_flow(*restrict(data,set(range(len(data[1])))-interface,F))['value']
+            hv=fork_flow(*restrict(data,interface,F))['value']
+            deficit=q-oldv+q-hv-len(J)
+            expected=sum(tables[i]['shared'] in J for i in range(q) if i not in repairs)
+            expected-=sum(tables[i]['private'] in J and tables[i]['shared'] not in J for i in repairs)
+            assert deficit==expected
+            if deficit==q-s:optimal.append(J)
+            totals['full_live_pool_withdrawals_including_private']+=1
+        assert len(optimal)==3**s
+        assert set.intersection(*optimal)=={tables[i]['shared'] for i in range(q) if i not in repairs}
+        assert set.union(*optimal)==live
+        totals['full_live_optimal_withdrawal_witnesses']+=len(optimal)
     if q<=2 and w<=10:
         assert constrained_primitive(data,set())==(q+s,s)
         assert constrained_primitive(data,old)==(q+s,2*q-s)

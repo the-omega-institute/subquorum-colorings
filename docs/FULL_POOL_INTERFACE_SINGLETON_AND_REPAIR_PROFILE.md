@@ -212,6 +212,21 @@ be deleted without changing the maximum, so there are 2^s minimizing
 retained-pool witnesses among the E-restricted choices. If s=q the smallest
 withdrawal is empty and full compensation holds.
 
+There are exactly **3^s optimal withdrawal witnesses in the entire original
+pool**, not just the 2^s witnesses obtained after eliminating private
+withdrawals. Every unrepaired j_i must be withdrawn; in each repaired copy
+the allowed withdrawal choices are empty, {j_i}, or {j_i,l_i}. Withdrawing
+l_i alone makes that copy's expression minus one: the old source still
+uses j_i, so there is no withdrawal loss to pay for l_i. Withdrawing both
+gives old loss one plus interface loss one, exactly offset by two removed
+units, so that copy contributes zero. Any withdrawn original unit outside
+these route closures only adds one cost and changes neither rank. These
+cases exhaust the full pool. Thus optimal withdrawals form a product of
+s three-element chains, with smallest set the unrepaired j_i and largest
+set all j_i together with all existing l_i. Private-unit elimination
+guarantees a sufficient restricted witness family; it does not describe
+every full-pool minimizer.
+
 These are genuine singleton ORIGINAL-owner classes: U(j_i)={I_i,L2_i}
 and no other unit has that same owner pair. They survive the exact
 [support-class saturation](SUPPORT_CLASS_SATURATION_AND_SINGLETON_CORE.md).
@@ -274,7 +289,9 @@ The recorded run passed 92 fully frozen FULL-pool boards, including every
 repair subset for q=1,...,4 at W=8,10 and further heights through W=64.
 It replayed 37,800 uniform serial freezing events, checked 300 exact
 eight-owner closures, 1,176 shared-unit withdrawals and 24 independent
-primitive value/cost profiles. All 21 new Lean declarations passed locally
+primitive value/cost profiles. A further 956 withdrawals including private
+repair units checked the full 3^s witness formula, identifying 332 optimal
+witnesses across the separate controls. All 21 new Lean declarations passed locally
 on Lean 4.33.0, with two axiom-free declarations and only standard Lean
 axioms in the others; no warnings, placeholders, native decision shortcuts
 or new axioms. Memory and real Lean/Lake executable basenames were checked
