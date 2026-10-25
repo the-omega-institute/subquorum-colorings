@@ -1,5 +1,7 @@
 # Guarded strip switches: exact dual-source repair and shared-seam competition
 
+Joint continuation: [direction/deletion repair and exact quota cuts](JOINT_DIRECTION_AND_ISOLATED_DELETION_REPAIR.md) proves the physical commuting adapter, a four-cut two-budget formula, minimum point loss and a sharp combined budget, with a fully frozen all-isolated-candidate realization.
+
 26 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
 The [previous obstruction](ISOLATED_COVERAGE_OBSTRUCTION_AND_STRIP_REPAIR.md)

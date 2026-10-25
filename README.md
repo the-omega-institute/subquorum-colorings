@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [joint direction/deletion repair and the exact two-budget frontier](docs/JOINT_DIRECTION_AND_ISOLATED_DELETION_REPAIR.md):
+guarded switches and outside occupied-isolated deletions compile to one fixed
+candidate-resource network; inside-strip deletions are dominated. For switch
+budget s and deletion budget d, gain is exactly min(R,s+d,s+RC,d+RH).
+A single lex flow retains old paid sources and minimizes point loss, flips,
+weights and links. At maximum payment the sharp S+D improvement is min(s,RH);
+deletions cannot improve that budget beyond the available direction rank.
+A fully frozen all-candidate family has exact value min(q,s+d,s+q-1): deleting
+ALL isolated points still leaves one unpaid, while one flip plus q-1 effective
+deletions pays all, or q flips pay all with zero point loss. The universal
+5/6 question remains open. Checks pass 930 physical models, 108 actual-grid
+quota profiles, 149 independent lex optima and 15 scoped Lean declarations.
+
 New [guarded strip switches and dual-source repair](docs/GUARDED_STRIP_SWITCHES_AND_DUAL_REPAIR.md):
 explicit physical guards let a strip direction change preserve all old owner
 identities, used resources and links, while opening private zero-link payments.

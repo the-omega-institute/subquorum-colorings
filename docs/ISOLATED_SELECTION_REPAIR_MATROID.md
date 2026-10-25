@@ -1,5 +1,7 @@
 # Choosing isolated-selection repairs with protected sources and exact budgets
 
+Joint continuation: [direction/deletion repair and exact quota cuts](JOINT_DIRECTION_AND_ISOLATED_DELETION_REPAIR.md) proves the physical commuting adapter, a four-cut two-budget formula, minimum point loss and a sharp combined budget, with a fully frozen all-isolated-candidate realization.
+
 Follow-up: [fixed-partition coverage obstruction and exact strip repair](ISOLATED_COVERAGE_OBSTRUCTION_AND_STRIP_REPAIR.md) disproves automatic full candidate coverage even after all occupied-isolated selections are deleted, and gives a zero-loss direction repair with actual matching crossings.
 
 25 October 2026. Wenlin Zhang and Haobo Ma. Independent research branch.
