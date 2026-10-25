@@ -373,3 +373,10 @@ or source-to-resource Hall matchings cannot establish it. For arbitrary
 frozen boards, shared entry chains, reachable beta-body forks and overlapping
 exit branches additionally require the complete resource-cut model. No
 change to the submitted manuscript or unrestricted 5/6 bound follows yet.
+
+**Actual cycle continuation:** [frozen mixed-gate cycles and occupied chambers](FROZEN_MIXED_GATE_CYCLES_AND_OCCUPIED_CHAMBERS.md)
+realizes the four-source all-mixed even cycle with different source ports on
+an actual completely frozen board. It does NOT realize the full five-source
+resource obstruction: the complete original network has compensating beta
+exits, with exact all-availability value/cost. Thin occupied chambers are
+excluded by a general shadow/closure theorem; wider chambers allow the cycle.

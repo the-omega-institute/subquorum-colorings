@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "totals": {
+    "coordinate_chamber_certificates": 21,
+    "arbitrary_extension_boundary_checks": 1344,
+    "actual_strict_freezing_certificates": 1,
+    "independent_physical_packs": 1
+  },
+  "families": [
+    {
+      "width": 5,
+      "chamber_points": 24,
+      "fixed_source_endpoints": 36,
+      "gate_count": 4
+    },
+    {
+      "width": 7,
+      "chamber_points": 28,
+      "fixed_source_endpoints": 44,
+      "gate_count": 4
+    },
+    {
+      "width": 9,
+      "chamber_points": 32,
+      "fixed_source_endpoints": 52,
+      "gate_count": 4
+    },
+    {
+      "width": 11,
+      "chamber_points": 36,
+      "fixed_source_endpoints": 60,
+      "gate_count": 4
+    },
+    {
+      "width": 13,
+      "chamber_points": 40,
+      "fixed_source_endpoints": 68,
+      "gate_count": 4
+    },
+    {
+      "width": 15,
+      "chamber_points": 44,
+      "fixed_source_endpoints": 76,
+      "gate_count": 4
+    },
+    {
+      "width": 17,
+      "chamber_points": 48,
+      "fixed_source_endpoints": 84,
+      "gate_count": 4
+    },
+    {
+      "width": 19,
+      "chamber_points": 52,
+      "fixed_source_endpoints": 92,
+      "gate_count": 4
+    },
+    {
+      "width": 21,
+      "chamber_points": 56,
+      "fixed_source_endpoints": 100,
+      "gate_count": 4
+    },
+    {
+      "width": 23,
+      "chamber_points": 60,
+      "fixed_source_endpoints": 108,
+      "gate_count": 4
+    },
+    {
+      "width": 25,
+      "chamber_points": 64,
+      "fixed_source_endpoints": 116,
+      "gate_count": 4
+    },
+    {
+      "width": 27,
+      "chamber_points": 68,
+      "fixed_source_endpoints": 124,
+      "gate_count": 4
+    },
+    {
+      "width": 29,
+      "chamber_points": 72,
+      "fixed_source_endpoints": 132,
+      "gate_count": 4
+    },
+    {
+      "width": 31,
+      "chamber_points": 76,
+      "fixed_source_endpoints": 140,
+      "gate_count": 4
+    },
+    {
+      "width": 33,
+      "chamber_points": 80,
+      "fixed_source_endpoints": 148,
+      "gate_count": 4
+    },
+    {
+      "width": 35,
+      "chamber_points": 84,
+      "fixed_source_endpoints": 156,
+      "gate_count": 4
+    },
+    {
+      "width": 37,
+      "chamber_points": 88,
+      "fixed_source_endpoints": 164,
+      "gate_count": 4
+    },
+    {
+      "width": 39,
+      "chamber_points": 92,
+      "fixed_source_endpoints": 172,
+      "gate_count": 4
+    },
+    {
+      "width": 41,
+      "chamber_points": 96,
+      "fixed_source_endpoints": 180,
+      "gate_count": 4
+    },
+    {
+      "width": 43,
+      "chamber_points": 100,
+      "fixed_source_endpoints": 188,
+      "gate_count": 4
+    },
+    {
+      "width": 45,
+      "chamber_points": 104,
+      "fixed_source_endpoints": 196,
+      "gate_count": 4
+    }
+  ],
+  "actual": {
+    "wider_frozen": {
+      "endpoints": 128,
+      "selected": 24,
+      "alpha": 4,
+      "beta": 3,
+      "gate_kinds": [
+        "beta",
+        "mixed",
+        "beta",
+        "beta"
+      ],
+      "first_last_gate_same_beta": true,
+      "value": 4,
+      "cost": 2
+    }
+  },
+  "scope": "General shadow-exclusion and matching/PP closure theorem written; arbitrary-width thin frame has no TP in chamber in ANY feasible source-matching-retaining extension, so its gate paths are beta, not mixed. Wider frozen control shows chamber shadow hypothesis is essential. General mixed cycle realization and5/6 remain open."
+}

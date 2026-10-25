@@ -7,6 +7,23 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [actual frozen mixed-gate cycles and occupied chambers](FROZEN_MIXED_GATE_CYCLES_AND_OCCUPIED_CHAMBERS.md)
+realizes four different alpha sources/four different mixed gates in a C4
+with different source ports:49T/154M/308P, completely frozen. Thus freezing
+plus terminal parity does NOT exclude an all-mixed even cycle. Its actual
+16-unit local resource multigraph has exact V=4-treeComponents,c=V for every
+availability subset; a three-unit tree pays3 and any one of five distinct
+original releases repairs the SAME deficit. Complete original owners/betas
+instead give V4 and exact c=2+ell+b for EVERY original subset, including
+beta-only V4c5 and full-pool V4c2. An arbitrary-width thin occupied chamber
+has no TP in any feasible fixed-wall extension, so gates there must be beta;
+wide geometry defeats that shadow hypothesis.373local/5486complete models,
+224independent complete packs,32repair/8physical copy controls and11Lean
+declarations pass, including actual308endpoint inductive full freezing.
+Full five-source obstruction
+without peripheral compensation and universal5/6 remain open.
+
+
 25 October: [joint mixed-entrance and original-interval cuts](JOINT_GATE_RESOURCE_CUTS.md)
 prove exact V=private+min_H(sourceRank(H)+intervalRank(G-H)) for a declared
 branch interface, allowing shared mixed entrances AND shared original units.

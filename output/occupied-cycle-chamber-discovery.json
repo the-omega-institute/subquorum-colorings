@@ -1,0 +1,80 @@
+{
+  "scope": "Bounded discovery ONLY. UNSAT and unknown are not general exclusion proofs; eventual SAT independently certified by saved strict ranks and Lean.",
+  "runs": [
+    {
+      "case": "thin mixed",
+      "status": "unsat",
+      "seconds": 0.14387391693890095,
+      "bottom": 12,
+      "right": 10,
+      "mixed": true
+    },
+    {
+      "case": "expanded mixed",
+      "status": "unsat",
+      "seconds": 0.232904750155285,
+      "bottom": 14,
+      "right": 10,
+      "mixed": true
+    },
+    {
+      "case": "thin unrestricted",
+      "status": "unsat",
+      "seconds": 0.12130445800721645,
+      "bottom": 12,
+      "right": 10,
+      "mixed": false
+    },
+    {
+      "case": "wider frozen",
+      "status": "sat",
+      "seconds": 0.20606420817784965,
+      "bottom": 16,
+      "right": 10,
+      "mixed": false
+    },
+    {
+      "case": "wider mixed",
+      "status": "unsat",
+      "seconds": 0.24611170799471438,
+      "bottom": 16,
+      "right": 10,
+      "mixed": true
+    },
+    {
+      "case": "larger mixed",
+      "status": "unsat",
+      "seconds": 3.4796765837818384,
+      "bottom": 18,
+      "right": 14,
+      "mixed": true
+    },
+    {
+      "case": "larger feasible no freeze",
+      "status": "sat",
+      "seconds": 1.176516291918233,
+      "bottom": 18,
+      "right": 14,
+      "mixed": true,
+      "freeze_required": false
+    },
+    {
+      "case": "large initial",
+      "status": "unknown",
+      "seconds": 35.04417891614139,
+      "bottom": 24,
+      "right": 18,
+      "mixed": true,
+      "freeze_required": true
+    },
+    {
+      "case": "large frozen witness",
+      "status": "sat",
+      "seconds": 101.82672841614112,
+      "bottom": 24,
+      "right": 18,
+      "mixed": true,
+      "freeze_required": true
+    }
+  ]
+}
