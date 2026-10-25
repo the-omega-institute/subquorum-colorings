@@ -6,6 +6,12 @@ continues the [one-unit slab obstruction](FOUR_OUTWARD_SLAB_AND_ONE_UNIT_OBSTRUC
 without assuming a unique P-square or a tree of chambers. Submitted
 manuscripts are unchanged.
 
+Continuation: [exact two-track pinwheel switches](PINWHEEL_TWO_TRACK_SWITCHES.md)
+identifies the two distinct BP-bearing owners in the exact-degree-three
+uniform class. Tiles with two mixed owners admit joint direction optimization
+by one integral flow, with a sharp one-unit gain ceiling per root and an
+all-q restricted-pool repair family. General donor coverage is still open.
+
 ## 1. Hypotheses and quantities
 
 Let (T,M) be feasible on a finite even-by-even grid rectangle. Put P=V(M),

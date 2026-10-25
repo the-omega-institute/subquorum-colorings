@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact two-track switches at degree-three pinwheel tiles](docs/PINWHEEL_TWO_TRACK_SWITCHES.md):
+every four-outward full-P tile in the degree-three bundle-terminal class has
+two distinct BP-bearing owners; each mixed owner meets at most one such tile.
+When both tracks are mixed, flipping the root exchanges their BP-to-TP
+pairing, preserving all physical terminals, links and original resource
+identities. Any number of these switches optimize jointly by ONE exact
+two-by-two-switch min-cost flow, including shared resources and untouched
+beta forks. Gain is at most one per flipped root. An all-q frozen physical
+family attains gain q on a restricted original pool, with q actual links;
+the full pool already pays q at cost zero. Checks pass 140 physical pool
+comparisons, 1,490 abstract orientation comparisons and six scoped Lean
+declarations. General donor coverage and universal 5/6 remain open.
+
 New [four-outward alpha localization by degree defects and direction interfaces](docs/FOUR_OUTWARD_ALPHA_LOCALIZATION.md):
 for any collection F of four-outward full-P tiles in a bundle-terminal pair,
 the number I_F of original alpha wire incidences satisfies I_F<=2J4+E_dir.
