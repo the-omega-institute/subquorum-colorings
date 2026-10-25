@@ -1,5 +1,10 @@
 # Exact extremal cost of shared units and full-pool path circuits
 
+Continuation: [two-sided openings and prescribed-repair recourse](TWO_SIDED_SEAM_BUDGET_AND_UNBOUNDED_RECOURSE.md)
+solves every upper/lower opening pattern, and shows that one added upper
+unit can repair the full path while forcing arbitrarily many old assignments
+to change when its position is prescribed.
+
 25 October 2026. Wenlin Zhang and Haobo Ma. Research branch only.
 
 We link the shared-singleton obstruction to a sharp selection budget. On the

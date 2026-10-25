@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [two-sided seam budgets and unbounded prescribed-repair recourse](docs/TWO_SIDED_SEAM_BUDGET_AND_UNBOUNDED_RECOURSE.md):
+any m prescribed upper/lower singleton openings lower the true fixed-P
+selection maximum by exactly m, with frozen attainers. Their full-pool
+compensation is an exact path multigraph: each component with a doubled
+seam pays all sources; each other component leaves one unpaid. The first
+double's distance from the left boundary gives the exact extra link cost.
+Opening one upper unit at position p repairs a k-source lower path, but
+forces p-1 old unit reassignments and raises minimum links from k-1 to k+p.
+The bounds are attained; choosing p=1 instead avoids old reassignments.
+Checks pass 730 frozen boards, 85 independent primitive profiles and 15
+scoped Lean declarations. Other partitions and the universal 5/6 bound
+remain outside this result; vertical full compensation holds for this P.
+
 New [sharp seam-opening budget and FULL-pool path circuits](docs/EXTREMAL_SHARED_UNIT_BUDGET_AND_FULL_POOL_PATH_CIRCUITS.md):
 on the adjacent-module endpoint family, prescribing any m shared singleton
 seams open lowers the true fixed-P maximum by exactly m, with frozen attainers.
