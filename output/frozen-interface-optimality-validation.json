@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "totals": {
+    "all_parameter_boards": 10,
+    "strict_frozen_endpoint_witnesses": 28040,
+    "disjoint_cover_members": 23348,
+    "physical_local_stencil_checks": 10,
+    "local_physical_assignments": 16384
+  },
+  "records": [
+    {
+      "q": 1,
+      "shape": [
+        12,
+        24
+      ],
+      "unrestricted_exact_maximum": 100,
+      "fully_frozen_exact_maximum": 99,
+      "frozen_slack": 5,
+      "unrestricted_slack": 4,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          9
+        ],
+        [
+          4,
+          13
+        ]
+      ]
+    },
+    {
+      "q": 2,
+      "shape": [
+        22,
+        44
+      ],
+      "unrestricted_exact_maximum": 336,
+      "fully_frozen_exact_maximum": 335,
+      "frozen_slack": 9,
+      "unrestricted_slack": 8,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          19
+        ],
+        [
+          4,
+          23
+        ]
+      ]
+    },
+    {
+      "q": 3,
+      "shape": [
+        32,
+        64
+      ],
+      "unrestricted_exact_maximum": 712,
+      "fully_frozen_exact_maximum": 711,
+      "frozen_slack": 13,
+      "unrestricted_slack": 12,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          29
+        ],
+        [
+          4,
+          33
+        ]
+      ]
+    },
+    {
+      "q": 4,
+      "shape": [
+        42,
+        84
+      ],
+      "unrestricted_exact_maximum": 1228,
+      "fully_frozen_exact_maximum": 1227,
+      "frozen_slack": 17,
+      "unrestricted_slack": 16,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          39
+        ],
+        [
+          4,
+          43
+        ]
+      ]
+    },
+    {
+      "q": 5,
+      "shape": [
+        52,
+        104
+      ],
+      "unrestricted_exact_maximum": 1884,
+      "fully_frozen_exact_maximum": 1883,
+      "frozen_slack": 21,
+      "unrestricted_slack": 20,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          49
+        ],
+        [
+          4,
+          53
+        ]
+      ]
+    },
+    {
+      "q": 6,
+      "shape": [
+        62,
+        124
+      ],
+      "unrestricted_exact_maximum": 2680,
+      "fully_frozen_exact_maximum": 2679,
+      "frozen_slack": 25,
+      "unrestricted_slack": 24,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          59
+        ],
+        [
+          4,
+          63
+        ]
+      ]
+    },
+    {
+      "q": 7,
+      "shape": [
+        72,
+        144
+      ],
+      "unrestricted_exact_maximum": 3616,
+      "fully_frozen_exact_maximum": 3615,
+      "frozen_slack": 29,
+      "unrestricted_slack": 28,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          69
+        ],
+        [
+          4,
+          73
+        ]
+      ]
+    },
+    {
+      "q": 8,
+      "shape": [
+        82,
+        164
+      ],
+      "unrestricted_exact_maximum": 4692,
+      "fully_frozen_exact_maximum": 4691,
+      "frozen_slack": 33,
+      "unrestricted_slack": 32,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          79
+        ],
+        [
+          4,
+          83
+        ]
+      ]
+    },
+    {
+      "q": 10,
+      "shape": [
+        102,
+        204
+      ],
+      "unrestricted_exact_maximum": 7264,
+      "fully_frozen_exact_maximum": 7263,
+      "frozen_slack": 41,
+      "unrestricted_slack": 40,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          99
+        ],
+        [
+          4,
+          103
+        ]
+      ]
+    },
+    {
+      "q": 12,
+      "shape": [
+        122,
+        244
+      ],
+      "unrestricted_exact_maximum": 10396,
+      "fully_frozen_exact_maximum": 10395,
+      "frozen_slack": 49,
+      "unrestricted_slack": 48,
+      "local_old_cap": 6,
+      "local_frozen_cap": 5,
+      "two_required_frozen_endpoints": [
+        [
+          1,
+          119
+        ],
+        [
+          4,
+          123
+        ]
+      ]
+    }
+  ],
+  "scope": "Written all-q exact unrestricted and fully-frozen fixed-P selection optima; two frozen endpoints force one local loss; disjoint cover prevents repeated charges; explicit uniform unrestricted attainer.",
+  "limits": [
+    "Does not assert all frozen maximizers share the same compensation network.",
+    "No optimization over replacement endpoint sets or other band phases.",
+    "No universal5over6 improvement; all slacks positive."
+  ]
+}

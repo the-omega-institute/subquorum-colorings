@@ -2,6 +2,12 @@
 
 25 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
+Follow-up: [exact interface optima](FROZEN_INTERFACE_OPTIMALITY.md) settles the
+one-point uncertainty: the unrestricted fixed-P maximum is2t, whereas the
+maximum with all endpoints frozen is exactly2t-1, attained by this construction.
+Only two specified frozen endpoints force the interface loss. The statements
+below retain their original near-maximum formulation.
+
 The [perpendicular repair theorem](PERPENDICULAR_GUARDED_RESERVES_AND_JOINT_MAXIMALITY.md)
 fully compensates every selection on the homogeneous module endpoint family.
 It does not extend to choosing a single better direction on a mixed board.
