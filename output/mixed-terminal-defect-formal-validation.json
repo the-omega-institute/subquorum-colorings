@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T21:32:16.885508+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "45478 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+    ],
+    "memory_free_percentage": "32%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "45478 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean",
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.MixedTerminalDefect.degree_three_absent_normal' depends on axioms: [propext]",
+    "'SubQuorum.MixedTerminalDefect.degree_three_present_normal' depends on axioms: [propext]",
+    "'SubQuorum.MixedTerminalDefect.degree_four' depends on axioms: [propext]",
+    "'SubQuorum.MixedTerminalDefect.local_zero_identity' depends on axioms: [propext]",
+    "'SubQuorum.MixedTerminalDefect.parallel_partner_blank' does not depend on any axioms",
+    "'SubQuorum.MixedTerminalDefect.charge_injective' does not depend on any axioms",
+    "'SubQuorum.MixedTerminalDefect.joint_seam_tax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.one_seam_no_failure' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.coefficient_one' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.sum_ge_paid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.partition_counts' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.private_frontier' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.every_frozen_maximum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.pareto_upper' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.sharp_attainer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.MixedTerminalDefect.sharp_seam_counts' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Local degree3/4 and zero-incidence classification for arbitrary Boolean neighbour predicates; selected partner forbids parallel mate partner occupation; injectivity of seam-terminal charges under explicit matching-edge/opposite-normal adapters; joint seam-tax, single-edge full port allocation implication, coefficient-one ledger arithmetic; arbitrary-length private-support list loss and paid/unpaid induction; every maximum has full deficit; Pareto and sharp attainer arithmetic.",
+  "not_formalized": [
+    "Full rectangle parity/coordinate and M/PP-owner adapters, physical forest incidence degree and path/cycle matching theorem, exact grid support/private-unit and common all-size freezing geometry. These have general written proofs and executable checks; not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

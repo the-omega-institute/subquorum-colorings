@@ -1,5 +1,7 @@
 # Terminal defects, full-pool compensation and exact interval withdrawals
 
+Continuation: [mixed-direction terminal defects and sharp frozen seam tax](MIXED_TERMINAL_DEFECT_AND_FROZEN_OBSTRUCTION.md) extends terminal counting across actual matching seams and gives a degree-three-terminal mixed-direction obstruction with an exact arbitrary-T private-support repair profile.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 Continuation: [frozen boundary obstruction and adjacent-band repair](ADJACENT_BAND_BOUNDARY_REPAIR.md)

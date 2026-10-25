@@ -1,5 +1,7 @@
 # Exact frozen repair frontier under arbitrary selection exchange
 
+Continuation: [mixed-direction terminal defects and sharp frozen seam tax](MIXED_TERMINAL_DEFECT_AND_FROZEN_OBSTRUCTION.md) extends terminal counting across actual matching seams and gives a degree-three-terminal mixed-direction obstruction with an exact arbitrary-T private-support repair profile.
+
 26 October 2026. Haobo Ma and Wenlin Zhang. Independent research branch.
 
 For the adjacent-module endpoint family of

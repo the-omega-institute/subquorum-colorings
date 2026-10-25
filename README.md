@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [mixed-direction terminal defects and a sharp frozen obstruction](docs/MIXED_TERMINAL_DEFECT_AND_FROZEN_OBSTRUCTION.md):
+for any valid even-rectangle H/V partition with actual M restored, each seam
+terminal defect charges a different cross-direction actual edge. The global
+port deficit obeys 2D_port<=d4+b+s<=d4+b+eHV, with one common original pool;
+d4+b+s<=2beta+1 gives the coefficient-one counting bound on this class.
+A fully frozen true maximum has all alpha ends degree3, d4=b=0 and full
+D=k=eHV/2, proving the seam term sharp. Its mixed decomposition has an exact
+all-T private-support profile and frozen net-loss frontier tau-k+d, attained
+at zero links. General proofs, physical controls and scoped Lean audits
+accompany the result; universal5/6 remains open.
+
 New [exact frozen repair frontier under arbitrary selection exchange](docs/FROZEN_SELECTION_REPAIR_FRONTIER.md):
 for the all-width adjacent-module family, every feasible T freezing the two
 column3 leaves per module satisfies ell+D>=k+central_beta. Missing central
