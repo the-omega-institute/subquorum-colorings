@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "totals": {
+    "saved_actual_strict_freezing_certificates": 1,
+    "independent_primitive_packs": 12492,
+    "reservation_checks": 6246,
+    "individual_shared_unit_controls": 6,
+    "class_availability_controls": 256,
+    "all_singleton_pair_reservations": 5466,
+    "random_large_reservations": 512,
+    "independent_copy_packs": 72,
+    "copy_cap_release_models": 584
+  },
+  "models": {
+    "empty": {
+      "available_intervals": 53,
+      "group_sizes": [
+        3,
+        2,
+        10,
+        5
+      ],
+      "shared_identity": {
+        "band": 2,
+        "first": 13,
+        "last": 13
+      },
+      "replacement_private_identity": {
+        "band": 5,
+        "first": 10,
+        "last": 10
+      },
+      "full": [
+        2,
+        0
+      ],
+      "only_shared": [
+        1,
+        0
+      ],
+      "shared_plus_private": [
+        2,
+        3
+      ]
+    },
+    "selection": {
+      "available_intervals": 52,
+      "group_sizes": [
+        2,
+        2,
+        10,
+        5
+      ],
+      "shared_identity": {
+        "band": 2,
+        "first": 13,
+        "last": 13
+      },
+      "replacement_private_identity": {
+        "band": 5,
+        "first": 10,
+        "last": 10
+      },
+      "full": [
+        2,
+        0
+      ],
+      "only_shared": [
+        1,
+        0
+      ],
+      "shared_plus_private": [
+        2,
+        3
+      ]
+    },
+    "cycle": {
+      "available_intervals": 52,
+      "group_sizes": [
+        2,
+        2,
+        10,
+        5
+      ],
+      "shared_identity": {
+        "band": 2,
+        "first": 13,
+        "last": 13
+      },
+      "replacement_private_identity": {
+        "band": 5,
+        "first": 10,
+        "last": 10
+      },
+      "full": [
+        2,
+        0
+      ],
+      "only_shared": [
+        1,
+        0
+      ],
+      "shared_plus_private": [
+        2,
+        3
+      ]
+    },
+    "cycle_beta": {
+      "available_intervals": 50,
+      "group_sizes": [
+        0,
+        2,
+        10,
+        5
+      ],
+      "shared_identity": {
+        "band": 2,
+        "first": 13,
+        "last": 13
+      },
+      "replacement_private_identity": {
+        "band": 5,
+        "first": 10,
+        "last": 10
+      },
+      "full": [
+        2,
+        1
+      ],
+      "only_shared": [
+        2,
+        1
+      ],
+      "shared_plus_private": [
+        2,
+        1
+      ]
+    }
+  },
+  "scope": "Actual monotone old-T/P extension with original singleton changing from private alpha support to alpha+mixed support; two sources reach same unit. General exact two-source shared-unit projection/lift and all-original-reservation formula; physical full pools still V2c0/1. All-q overlap-correct repair V=q+|F union E|,c=|F|+3|E minus F|. Arbitrary further geometric extensions not asserted; universal compensation and5/6 OPEN."
+}

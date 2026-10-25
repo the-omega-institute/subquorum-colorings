@@ -267,3 +267,8 @@ New searches should target that separation and measure the resulting joint
 capacity. Failure of matching retention by itself is now settled and does
 not establish failure of compensation. The submitted11October version,
 public main, PR3, shared CI and correspondence were preserved.
+
+Follow-up: [actual reserve boundary splitting](RESERVE_BOUNDARY_SPLIT_AND_JOINT_COMPENSATION.md)
+now realizes different owners on J_R's preserved gap and proves the exact
+all-reservation joint compensation/link cost, including an overlap-correct
+all-q repair formula. Unrestricted original pools remain fully payable.

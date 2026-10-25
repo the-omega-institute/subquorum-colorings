@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [reserve boundary split and exact joint compensation](RESERVE_BOUNDARY_SPLIT_AND_JOINT_COMPENSATION.md)
+realizes actual old-T/P-monotone rematching:4newP/1T leave J_R's BB13/BT14
+geometry intact but split its owner into a new alpha and a mixed chain
+reachable from the left alpha in3links. The right demand migrates to the
+old long-mixed TP and inherits another original private K. A complete
+five-class projection gives exact V/c for EVERY original-interval subset,
+with all original owners/links/betas retained. For q copies with J available,
+cap repairs F and K releases E:V=q+|F union E|,c=|F|+3|E minus F|; overlap
+must be counted once. Full pools still pay2q at0/filledCap links.6246original
+availability models/12492independent packs,584copy controls and9Lean
+statements pass, including all66base endpoints fully frozen and actual
+boundary strands. Private-ownership persistence fails;universal5/6 open.
+
+
 25 October: [frozen ear rematching and resource consumption](FROZEN_EAR_REMATCHING_AND_RESOURCE_CONSUMPTION.md)
 constructs a real endpoint-adding rematching: four new P/two T replace an
 old right-alpha edge by a PP alternating detour. General rank scaling by3
