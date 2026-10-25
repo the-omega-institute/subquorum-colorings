@@ -7,6 +7,20 @@ consequence supply the main conceptual link to further research.
 
 ## Rectangular grids
 
+25 October: [guarded promotion closure](GUARDED_PROMOTION_CLOSURE.md).
+Every retained-endpoint TP promotion in arbitrary PP-connected copies has
+an unused guarded old BP target:3,14->3,13, protected by the new selection
+2,14. All promotions can be absorbed simultaneously, even with arbitrary
+new T/P and arbitrary actual rematching. Only e TPs on genuinely ADDED P
+remain holes; exact certificate loss k counts their new-new final alphas,
+so k<=floor(e/2)<=floor((newT-p)/2). Thus e<=1 guarantees full ordinary
+compensation with arbitrarily many new selections. Fixed P, arbitrary T/M
+is fully paid for every copy count.358controls (201frozen/157nonfrozen),
+28independent comparisons and8new/29combined local Lean audits pass.
+Actual310P/51T frozen example has one retained-P promotion and one fresh TP.
+Sharp reserved-pool loss examples are explicitly NONFROZEN and full-pool
+compensated. Universal fresh-new-end repair and5/6 improvement remain open.
+
 25 October: [actual shared seam compensation](FROZEN_SHARED_SEAM_COMPENSATION.md).
 The connected fully frozen family has two PRODUCTIVE shared original
 intervals per seam, accessible from different-copy side alphas through

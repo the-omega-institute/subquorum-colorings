@@ -279,3 +279,79 @@ theorem actual_unique_promotable_old_endpoint : ∀ v∈endpoints,
 #print axioms actual_adjacent_columns_cannot_become_TT
 #print axioms actual_unique_promotable_old_endpoint
 end SubQuorum.EndpointExtensionReplacement.SelectionBudget
+
+namespace SubQuorum.EndpointExtensionReplacement.PromotionClosure
+
+/-- A new selected band partner of a retained endpoint forces the partner
+of its horizontal retained-P target blank. Thus that target is an actual
+BP in every feasible extension, regardless of actual matching. -/
+theorem guarded_promotion_target {V : Type} (T P : V → Prop)
+    (adj : V → V → Prop)
+    (unique : ∀ t, T t → ∀ x, (T x ∨ P x) → adj t x →
+      ∀ y, (T y ∨ P y) → adj t y → x=y)
+    (t v u q : V) (ht : T t) (hv : P v) (hu : P u)
+    (htv : adj t v) (htq : adj t q) (different : v≠q) :
+    P u ∧ ¬ (T q ∨ P q) := by
+  refine ⟨hu, ?_⟩
+  intro hq
+  exact different (unique t ht v (Or.inr hv) htv q hq htq)
+
+def combined {S N R : Type} (old : S → R) (new : N → R) : Sum S N → R
+  | Sum.inl s => old s
+  | Sum.inr n => new n
+
+/-- Simultaneous guarded promotions cannot spend an old target, a flexible
+target, or another promotion's target. These are explicit hypotheses. -/
+theorem promotion_target_injection {S N R : Type} (old : S → R) (new : N → R)
+    (oldInj : ∀ x y, old x=old y → x=y)
+    (newInj : ∀ x y, new x=new y → x=y)
+    (disjoint : ∀ x y, old x≠new y)
+    (x y : Sum S N) (same : combined old new x=combined old new y) : x=y := by
+  cases x with
+  | inl a =>
+    cases y with
+    | inl b => exact congrArg Sum.inl (oldInj a b same)
+    | inr b => exact False.elim (disjoint a b same)
+  | inr a =>
+    cases y with
+    | inl b => exact False.elim (disjoint b a same.symm)
+    | inr b => exact congrArg Sum.inr (newInj a b same)
+
+theorem actual_fresh_promotion_target :
+    (3,14)∈endpoints ∧ (3,13)∈endpoints ∧
+    adjacent (3,14) (3,13) ∧ adjacent (2,14) (3,14) ∧
+    adjacent (2,14) (2,13) ∧ (3,14)≠(2,13) ∧
+    (3,13)∉oldLinks.map Prod.snd ∧ (3,13)∉flexible.map Prod.snd := by decide
+
+/-- Arbitrarily many translated promotion targets remain different. -/
+theorem translated_promotion_targets (i j : Nat)
+    (same : 13+24*i=13+24*j) : i=j := by omega
+
+/-- Promotions are not fresh holes. Count only genuinely new matching
+endpoints when bounding the remaining two-unassigned-end components. -/
+theorem fresh_endpoint_budget (k e p s : Nat)
+    (twoFreeFreshEnds : 2*k≤e) (newSelectedInjection : e+p≤s) :
+    k≤e/2 ∧ k≤(s-p)/2 := by omega
+
+theorem one_fresh_endpoint_full (k e : Nat)
+    (twoFreeFreshEnds : 2*k≤e) (one : e≤1) : k=0 := by omega
+
+theorem promoted_certificate_ledger (a b aFinal bFinal k used : Nat)
+    (balance : a+bFinal=b+aFinal) (betaMonotone : bFinal≤b)
+    (assignedFinal : used+k=aFinal) : b-bFinal+used+k=a := by omega
+
+theorem multi_copy_interval_budget (n h e aFinal k used : Nat)
+    (twoEnds : 2*aFinal≤5*n-h+e)
+    (assignedFinal : used+k=aFinal) (oldWitness : used≤5*n-h) :
+    used≤5*n-h ∧ used≤(5*n-h+e)/2 := by omega
+
+#print axioms guarded_promotion_target
+#print axioms promotion_target_injection
+#print axioms actual_fresh_promotion_target
+#print axioms translated_promotion_targets
+#print axioms fresh_endpoint_budget
+#print axioms one_fresh_endpoint_full
+#print axioms promoted_certificate_ledger
+#print axioms multi_copy_interval_budget
+
+end SubQuorum.EndpointExtensionReplacement.PromotionClosure

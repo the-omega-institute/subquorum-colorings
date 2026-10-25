@@ -1,5 +1,12 @@
 # New selections: retained certificate, exact new-end defect, and a sharp reserved-pool obstruction
 
+**Strengthening:** [guarded promotion closure](GUARDED_PROMOTION_CLOSURE.md)
+absorbs every possible old-endpoint TP promotion into an unused BP target.
+For arbitrary connected copy count, arbitrary additions and rematching,
+only e TPs on genuinely added P remain holes, improving the budget from
+floor((promotions+e)/2) to floor(e/2). At most one fresh-end TP suffices
+for complete compensation even with arbitrary many new selections.
+
 Continuation: [connected fully frozen extensions](CONNECTED_FROZEN_INTERVAL_REPAIR_OBSTRUCTION.md)
 refute automatic applicability of the sufficient disjoint-new-interval Hall
 condition below. After old C,4q new-new demands have whole-owner interval

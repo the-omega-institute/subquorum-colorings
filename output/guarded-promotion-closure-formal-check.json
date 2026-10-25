@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "command": "lean SubQuorum/EndpointExtensionReplacement.lean",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "exit_code": 0,
+  "preflight": {
+    "machine": "user-authorized local Mac",
+    "memory": "The system has 17179869184 (1048576 pages with a page size of 16384).\nSystem-wide memory free percentage: 64%",
+    "actual_lean_lake_comm_basename_processes": [],
+    "concurrency": 1
+  },
+  "new_declarations": 8,
+  "total_audited": 29,
+  "new_axioms_by_declaration": {
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.guarded_promotion_target": [],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.promotion_target_injection": [],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.actual_fresh_promotion_target": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.translated_promotion_targets": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.fresh_endpoint_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.one_fresh_endpoint_full": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.promoted_certificate_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.multi_copy_interval_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "all_axioms_by_declaration": {
+    "SubQuorum.EndpointExtensionReplacement.selected_guard_blank": [],
+    "SubQuorum.EndpointExtensionReplacement.saturation_no_new_tip": [],
+    "SubQuorum.EndpointExtensionReplacement.local_two_state_replacement": [],
+    "SubQuorum.EndpointExtensionReplacement.adaptive_target_injection": [
+      "propext"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.interval_payment_budget": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.four_fills_force_beta_only": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.payment_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.actual_all_selected_saturated": [],
+    "SubQuorum.EndpointExtensionReplacement.actual_twenty_three_guards": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.actual_static_certificate_targets": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.actual_five_singleton_guards": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.two_retained_neighbors_forbid_selection": [],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.retained_neighbor_forbids_selected_pair": [],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_end_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.new_tip_defect_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.interval_payment_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.exact_payment_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.at_most_one_new_tip_has_no_loss": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_candidates_have_two_retained_neighbors": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_adjacent_columns_cannot_become_TT": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.SelectionBudget.actual_unique_promotable_old_endpoint": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.guarded_promotion_target": [],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.promotion_target_injection": [],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.actual_fresh_promotion_target": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.translated_promotion_targets": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.fresh_endpoint_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.one_fresh_endpoint_full": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.promoted_certificate_ledger": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SubQuorum.EndpointExtensionReplacement.PromotionClosure.multi_copy_interval_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "scope": "General conditional guarded promotion target, disjoint injection augmentation, actual fresh target audit, arbitrary-copy target injection, fresh-end and selection budgets and payment ledger. Existing unique-old-promotion/flexible-candidate audits rerun. Physical all-q/certificate-lift adapters WRITTEN/Python; not end-to-end Lean universal grid theorem."
+}
