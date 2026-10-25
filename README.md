@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [degree-changing bent completions and sharp full-network withdrawals](docs/DEGREE_CHANGING_BENT_COMPLETIONS.md):
+the endpoint-degree-preservation assumption is removed for the occupied-bent
+family. Every feasible fixed-P,M,old-T completion retains exactly q alphas,
+each with a sharp private reserve of three units at w=6 and two at even w>=8.
+All are paid at zero links on the full original pool. Degree-changing sealed
+mixed chains make the full standard band-link withdrawal bound floor(r/g)
+sharp, with no reachable beta fallback. A general fixed-body birth theorem
+injects newly born alphas into distinct actual edges with nonadjacent physical
+N partners; fully frozen mixed-seam families attain this tax. Checks pass196
+family models,756 full-network withdrawals,24 sharp frozen seams and12 scoped
+Lean audits. Universal5/6 remains open.
+
 New [sharp private reserves in occupied bent gaps and exact beta repair](docs/BENT_GAP_PRIVATE_RESERVES.md):
 occupied neighbours can force a blank row even when immediate BB exposure fails.
 For every even width w>=6, all retaining degree-profile-preserving completions

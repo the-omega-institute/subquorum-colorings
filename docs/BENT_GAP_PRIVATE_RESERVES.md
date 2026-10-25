@@ -2,6 +2,13 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+Continuation: [degree-changing completions, source births and sharp full-network
+cuts](DEGREE_CHANGING_BENT_COMPLETIONS.md) removes endpoint-degree preservation
+for this family. The resulting sharp reserve is three at w=6 and two at even
+w>=8. The dedicated beta fallback below relies on this note's original
+degree-preservation hypothesis; a sealed mixed chain shows why it does not
+extend to all completions.
+
 The [adjacent-band reserve theorem](ADJACENT_BAND_BOUNDARY_REPAIR.md) required
 immediate BB exposure at aligned P columns. An occupied neighbour can block
 that witness while forcing a larger reserve elsewhere in the same no-P gap.

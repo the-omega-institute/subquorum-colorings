@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-25T19:59:11.710357+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [
+      "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+      "98753 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+    ],
+    "memory_free_percentage": "36%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [
+    "63026 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lake",
+    "98907 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean"
+  ],
+  "declaration_audits": [
+    "'SubQuorum.DegreeChangingBentCompletions.square_conversion_requires_blank' depends on axioms: [propext]",
+    "'SubQuorum.DegreeChangingBentCompletions.square_beta_not_both_converted' depends on axioms: [propext]",
+    "'SubQuorum.DegreeChangingBentCompletions.fixed_body_transition_ledger' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.exact_resource_transition' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.endpoint_birth_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.no_bad_ends_no_new_alpha' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.owned_edge_witness_injective' does not depend on any axioms",
+    "'SubQuorum.DegreeChangingBentCompletions.two_old_neighbours_forbid_new_selection' depends on axioms: [propext]",
+    "'SubQuorum.DegreeChangingBentCompletions.width_six_upper_gap_positive' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.private_withdrawal_floor' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.two_private_unit_ledger' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeChangingBentCompletions.three_private_unit_ledger' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Local physical-square conversion exclusion; paired beta mutual conversion barrier; exact fixed-body inventory and resource transition arithmetic; endpoint birth budget; zero-birth corollary; arbitrary actual-edge ownership witness injection; two-neighbour protection; width6 positive upper gap interface; private withdrawal floor and two/three-unit ledgers.",
+  "not_formalized": [
+    "General M/PP component and physical square adapters; mixed-direction all-width sharp seam births; arbitrary monotone completion coverage; retained freezing certificates; complete private allocation and sealed route-closure formula; written proofs and independent executable checks"
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
