@@ -1,0 +1,437 @@
+{
+  "status": "PASS",
+  "counts": {
+    "written_schedule_events": 6596,
+    "strict_freezing_events": 7972,
+    "regional_models": 90,
+    "mixed_export_models": 90,
+    "only_nonmixed_export_models": 0,
+    "sealed_even_models": 0,
+    "parallel_safe_export_square_witnesses": 0,
+    "joint_models": 45,
+    "models_with_safe_cross_refund": 0,
+    "safe_cross_matching_edges": 0,
+    "models_with_TP_TP_debit": 0,
+    "models_with_TP_PP_debit": 0,
+    "models_with_external_TP_debit": 45,
+    "geometric_port_budget_models": 45,
+    "ported_export_forest_ends_allocated": 0,
+    "unported_degree_four_TP_exports": 90,
+    "all_h_models": 21,
+    "degree_four_sources": 42,
+    "isometry_controls": 24
+  },
+  "samples": [
+    {
+      "h": 1,
+      "shape": [
+        14,
+        10
+      ],
+      "selected": 38,
+      "matching": 18,
+      "endpoints": 36,
+      "whole_surplus": 14,
+      "regional_surplus_twice": 8,
+      "D4": 2,
+      "connected_endpoint_components": 1,
+      "original_all_P_tiles": 4,
+      "original_capacity_two_tiles": 0,
+      "internal_half_unit_budget": 10,
+      "outside_positive_half_units": 20,
+      "outside_positive_tiles": [
+        {
+          "tile": [
+            0,
+            0
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            4
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            6,
+            2
+          ],
+          "half_units": 4
+        }
+      ],
+      "source_distances": [
+        {
+          "source": [
+            8,
+            3
+          ],
+          "tile": [
+            4,
+            1
+          ],
+          "nearest_chebyshev": 2,
+          "nearest_manhattan": 3
+        },
+        {
+          "source": [
+            8,
+            6
+          ],
+          "tile": [
+            4,
+            3
+          ],
+          "nearest_chebyshev": 2,
+          "nearest_manhattan": 3
+        }
+      ],
+      "written_freezing_waves": 18
+    },
+    {
+      "h": 2,
+      "shape": [
+        18,
+        10
+      ],
+      "selected": 50,
+      "matching": 26,
+      "endpoints": 52,
+      "whole_surplus": 14,
+      "regional_surplus_twice": 8,
+      "D4": 2,
+      "connected_endpoint_components": 1,
+      "original_all_P_tiles": 6,
+      "original_capacity_two_tiles": 0,
+      "internal_half_unit_budget": 10,
+      "outside_positive_half_units": 20,
+      "outside_positive_tiles": [
+        {
+          "tile": [
+            0,
+            0
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            4
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            8,
+            2
+          ],
+          "half_units": 4
+        }
+      ],
+      "source_distances": [
+        {
+          "source": [
+            10,
+            3
+          ],
+          "tile": [
+            5,
+            1
+          ],
+          "nearest_chebyshev": 3,
+          "nearest_manhattan": 4
+        },
+        {
+          "source": [
+            10,
+            6
+          ],
+          "tile": [
+            5,
+            3
+          ],
+          "nearest_chebyshev": 3,
+          "nearest_manhattan": 4
+        }
+      ],
+      "written_freezing_waves": 26
+    },
+    {
+      "h": 4,
+      "shape": [
+        26,
+        10
+      ],
+      "selected": 74,
+      "matching": 42,
+      "endpoints": 84,
+      "whole_surplus": 14,
+      "regional_surplus_twice": 8,
+      "D4": 2,
+      "connected_endpoint_components": 1,
+      "original_all_P_tiles": 10,
+      "original_capacity_two_tiles": 4,
+      "internal_half_unit_budget": 10,
+      "outside_positive_half_units": 20,
+      "outside_positive_tiles": [
+        {
+          "tile": [
+            0,
+            0
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            4
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            12,
+            2
+          ],
+          "half_units": 4
+        }
+      ],
+      "source_distances": [
+        {
+          "source": [
+            14,
+            3
+          ],
+          "tile": [
+            7,
+            1
+          ],
+          "nearest_chebyshev": 5,
+          "nearest_manhattan": 6
+        },
+        {
+          "source": [
+            14,
+            6
+          ],
+          "tile": [
+            7,
+            3
+          ],
+          "nearest_chebyshev": 5,
+          "nearest_manhattan": 6
+        }
+      ],
+      "written_freezing_waves": 42
+    },
+    {
+      "h": 16,
+      "shape": [
+        74,
+        10
+      ],
+      "selected": 218,
+      "matching": 138,
+      "endpoints": 276,
+      "whole_surplus": 14,
+      "regional_surplus_twice": 8,
+      "D4": 2,
+      "connected_endpoint_components": 1,
+      "original_all_P_tiles": 34,
+      "original_capacity_two_tiles": 28,
+      "internal_half_unit_budget": 10,
+      "outside_positive_half_units": 20,
+      "outside_positive_tiles": [
+        {
+          "tile": [
+            0,
+            0
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            4
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            36,
+            2
+          ],
+          "half_units": 4
+        }
+      ],
+      "source_distances": [
+        {
+          "source": [
+            38,
+            3
+          ],
+          "tile": [
+            19,
+            1
+          ],
+          "nearest_chebyshev": 17,
+          "nearest_manhattan": 18
+        },
+        {
+          "source": [
+            38,
+            6
+          ],
+          "tile": [
+            19,
+            3
+          ],
+          "nearest_chebyshev": 17,
+          "nearest_manhattan": 18
+        }
+      ],
+      "written_freezing_waves": 138
+    },
+    {
+      "h": 128,
+      "shape": [
+        522,
+        10
+      ],
+      "selected": 1562,
+      "matching": 1034,
+      "endpoints": 2068,
+      "whole_surplus": 14,
+      "regional_surplus_twice": 8,
+      "D4": 2,
+      "connected_endpoint_components": 1,
+      "original_all_P_tiles": 258,
+      "original_capacity_two_tiles": 252,
+      "internal_half_unit_budget": 10,
+      "outside_positive_half_units": 20,
+      "outside_positive_tiles": [
+        {
+          "tile": [
+            0,
+            0
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            0,
+            4
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            1,
+            2
+          ],
+          "half_units": 4
+        },
+        {
+          "tile": [
+            260,
+            2
+          ],
+          "half_units": 4
+        }
+      ],
+      "source_distances": [
+        {
+          "source": [
+            262,
+            3
+          ],
+          "tile": [
+            131,
+            1
+          ],
+          "nearest_chebyshev": 129,
+          "nearest_manhattan": 130
+        },
+        {
+          "source": [
+            262,
+            6
+          ],
+          "tile": [
+            131,
+            3
+          ],
+          "nearest_chebyshev": 129,
+          "nearest_manhattan": 130
+        }
+      ],
+      "written_freezing_waves": 1034
+    }
+  ],
+  "scope": "All-h written construction, actual feasibility, two nine-wave freezing schedules with two true lower-endpoint replacements, exact original-tile ledger, arbitrary-distance pointwise D4 exterior access obstruction. Internal budget10 covers D4=2; no counterexample to residual-capacity routing, grid target or 5/6."
+}

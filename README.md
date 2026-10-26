@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [no uniform exterior-donor radius for degree-four exports](docs/DEGREE_FOUR_EXTERIOR_LOCALITY_OBSTRUCTION.md):
+an all-h completely frozen connected construction has two actual unported
+degree-four TP exports in disjoint original-tile-aligned strips, each at
+exact nearest exterior-donor distance h+1. It contains arbitrarily many
+original capacity-two tiles. Its internal half-unit budget10 already covers
+D4=2, with regional surplus4 and whole surplus14: this refutes unconditional
+pointwise local access, not residual compensation or the grid target.
+Checks replay 6,596 written freezing events plus 24 isometries; Lean verifies
+the concrete 52-endpoint h=2 board and its exact exterior tile inventory.
+The next target is residual demand AFTER internal payment, jointly with
+outside positive charge and unique physical capacity ownership.
+
 New [sharp occupied-strip degree-four budget](docs/OCCUPIED_STRIP_DEGREE_FOUR_BUDGET.md):
 every transverse TP export either occupies a different BB--TT forest end or
 is an unported degree-four exception. For disjoint mixed-direction strips,

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T08:59:50.832603+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "39%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "40%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.DegreeFourExteriorLocality.geometry_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.mate_closed' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.certificate_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.actual_sources' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.exact_outside_positive' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.no_radius_two_donor' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.concrete_ledger' does not depend on any axioms",
+    "'SubQuorum.DegreeFourExteriorLocality.arbitrary_radius_coordinate_separation' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.DegreeFourExteriorLocality.internal_budget_covers_sources' does not depend on any axioms"
+  ],
+  "scope": "Concrete h=2 feasibility, all 52 endpoints inductively frozen, two actual degree-four TP exports, exact positive outside original-tile inventory, absence of radius-two donors, regional and global margins, general coordinate distance separation and internal coverage arithmetic.",
+  "not_formalized": [
+    "The all-h slab joining geometry, two-wave freezing adapter, all-h raw-tile inventory and capacity-two count are written general proofs with executable checks, not end-to-end general Lean. The h=2 geometry/freezing/source/donor inventory is concrete kernel-checked."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

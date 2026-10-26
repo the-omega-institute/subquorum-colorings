@@ -23,6 +23,14 @@ This is a geometric refinement of the existing strip-flux and port-degree
 arguments, not a new abstract matching theorem. The universal improvement
 of 5/6 remains open.
 
+Continuation: [no uniform exterior-donor radius](DEGREE_FOUR_EXTERIOR_LOCALITY_OBSTRUCTION.md)
+gives a completely frozen connected all-h family with actual D4 exports
+at exact nearest exterior positive-tile distance h+1. Their internal budget
+already pays them: the result refutes unconditional pointwise access at any
+fixed radius, not local coverage of genuinely residual demand. A correct
+exterior allocation must first account for B+r+u+V and retain exterior
+positive-charge demands and unique original-tile capacities.
+
 ## 1. Hypotheses and the physical end-incidence injection
 
 Let (T,M) be feasible on a rectangular nearest-neighbor grid, P=V(M).
