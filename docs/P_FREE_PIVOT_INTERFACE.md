@@ -1,5 +1,11 @@
 # Four-arm accounting for a P-free direction pivot
 
+**Destructive batch continuation:** [exact repair using the old link set](OLD_LINK_BATCH_REPAIR.md)
+aggregates final supports along complete old primitives, permits early
+termination and beta-arm splitting, and gives the exact joint loss and
+prescribed-source test for arbitrary mixed-target P-free batches. It adds
+new directly paid sources to the same ledger, without independent reserve reuse.
+
 **Uniform-family continuation:** [two-state recognition and corridor compilation](UNIFORM_ZERO_CAPACITY_OPENINGS.md)
 characterize lossless support families of uniform capacity-zero openings by
 one endpoint incidence comparison. A passing arbitrary grid compiles into

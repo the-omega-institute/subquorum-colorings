@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_old_link_optima": 976,
+    "old_beta_forks": 24,
+    "deficient_tree_components": 436,
+    "new_direct_source_payments": 85,
+    "prefix_link_savings": 90,
+    "prescribed_old_source_sets": 3862,
+    "infeasible_prescriptions": 1525,
+    "targeted_controls": 9,
+    "no_enumeration_api_controls": 1,
+    "generic_support_changes": 160,
+    "all_compatible_old_packs": 157,
+    "strict_freezing_events": 350,
+    "mixed_target_batches": 20,
+    "physical_support_change_batches": 244,
+    "physical_old_link_losses": 5
+  },
+  "physical_loss_controls": [
+    {
+      "name": "frozen-support-loss",
+      "shape": [
+        16,
+        28
+      ],
+      "pivot": [
+        2,
+        16
+      ],
+      "old_value": 2,
+      "old_link_retention": 1,
+      "unrestricted_new_value": 1,
+      "loss": 1
+    },
+    {
+      "name": "frozen-support-loss",
+      "shape": [
+        16,
+        34
+      ],
+      "pivot": [
+        2,
+        16
+      ],
+      "old_value": 2,
+      "old_link_retention": 1,
+      "unrestricted_new_value": 1,
+      "loss": 1
+    },
+    {
+      "name": "frozen-joint-gate-compensation",
+      "shape": [
+        16,
+        30
+      ],
+      "gates": 2,
+      "old_value": 1,
+      "new_value_without_new_links": 2,
+      "old_sources_retained": true,
+      "links": 1,
+      "strict_frozen_endpoints": 70
+    },
+    {
+      "name": "frozen-joint-gate-compensation",
+      "shape": [
+        16,
+        36
+      ],
+      "gates": 9,
+      "old_value": 1,
+      "new_value_without_new_links": 2,
+      "old_sources_retained": true,
+      "links": 1,
+      "strict_frozen_endpoints": 70
+    }
+  ],
+  "proof": "docs/OLD_LINK_BATCH_REPAIR.md",
+  "scope": "Exact retained old sources plus specified newly eligible direct sources with subsets of a fixed normalized pack's old links. Source prescriptions and no repeated original resources. Enumeration is only an independent audit.",
+  "limitations": [
+    "Not a universal grid bound.",
+    "Not the optimum when new physical links are permitted.",
+    "No minimum-link optimality claim among maximum repairs."
+  ]
+}

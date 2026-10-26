@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact destructive batch repair with no new physical links](docs/OLD_LINK_BATCH_REPAIR.md):
+after arbitrary mixed-target P-free pivots, aggregate the new supports along
+each old primitive and permit prefix truncation or beta-arm splitting. With
+p old paid sources, g newly eligible direct sources and t deficient resource
+trees, the exact optimum using subsets of the old pack's links is p+g-t.
+Prescribed source sets have an exact mandatory-root test. Every original unit
+is allocated once; the rule handles lost supports and occupied bands without
+lossless handoff assumptions. Checks cover 976 optima and 3,862 prescriptions;
+two structural Lean kernels are axiom-free. Full new-link repair and universal
+5/6 remain separate questions.
+
 New [full routing and shared activation fees by one weighted matching](docs/FULL_ROUTING_WEIGHTED_MATCHING.md):
 the explicit mixed-capacity and separate beta-entry network has an exact
 two-port matching representation. Dominant port-coverage weights enforce
