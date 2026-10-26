@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_selected_action_profiles": 546,
+    "exact_enabled_and_source_preservation_profiles": 1092,
+    "models": 57,
+    "old_optima_with_forks": 1,
+    "multiunit_withdrawal_groups": 68,
+    "repeated_target_models": 32,
+    "separate_beta_BP_gate_controls": 1,
+    "shared_old_witness_distinct_group_controls": 1,
+    "large_chain_flow_controls": 4,
+    "physical_adapter_profiles": 4,
+    "multi_owner_group_rejection_controls": 1
+  },
+  "physical_optimum": {
+    "value": 2,
+    "action_weight": 1,
+    "links": 1,
+    "chosen": [
+      0
+    ],
+    "paid": [
+      0,
+      3
+    ]
+  },
+  "physical_enabled_choice_profiles": [
+    {
+      "enabled": [],
+      "preserve_old_sources": false,
+      "value": 1,
+      "action_weight": 0,
+      "links": 1,
+      "chosen": [],
+      "paid": [
+        3
+      ]
+    },
+    {
+      "enabled": [],
+      "preserve_old_sources": true,
+      "value": 1,
+      "action_weight": 0,
+      "links": 1,
+      "chosen": [],
+      "paid": [
+        3
+      ]
+    },
+    {
+      "enabled": [
+        0
+      ],
+      "preserve_old_sources": false,
+      "value": 2,
+      "action_weight": 1,
+      "links": 1,
+      "chosen": [
+        0
+      ],
+      "paid": [
+        0,
+        3
+      ]
+    },
+    {
+      "enabled": [
+        0
+      ],
+      "preserve_old_sources": true,
+      "value": 2,
+      "action_weight": 1,
+      "links": 1,
+      "chosen": [
+        0
+      ],
+      "paid": [
+        0,
+        3
+      ]
+    },
+    {
+      "enabled": [
+        1
+      ],
+      "preserve_old_sources": false,
+      "value": 1,
+      "action_weight": 0,
+      "links": 1,
+      "chosen": [],
+      "paid": [
+        3
+      ]
+    },
+    {
+      "enabled": [
+        1
+      ],
+      "preserve_old_sources": true,
+      "value": 1,
+      "action_weight": 0,
+      "links": 1,
+      "chosen": [],
+      "paid": [
+        3
+      ]
+    },
+    {
+      "enabled": [
+        0,
+        1
+      ],
+      "preserve_old_sources": false,
+      "value": 2,
+      "action_weight": 1,
+      "links": 1,
+      "chosen": [
+        0
+      ],
+      "paid": [
+        0,
+        3
+      ]
+    },
+    {
+      "enabled": [
+        0,
+        1
+      ],
+      "preserve_old_sources": true,
+      "value": 2,
+      "action_weight": 1,
+      "links": 1,
+      "chosen": [
+        0
+      ],
+      "paid": [
+        0,
+        3
+      ]
+    }
+  ],
+  "beta_fork_synergy_profiles": [
+    {
+      "enabled": [],
+      "preserve_old_sources": false,
+      "value": 2,
+      "action_weight": 0,
+      "links": 2,
+      "chosen": [],
+      "paid": [
+        0,
+        1
+      ]
+    },
+    {
+      "enabled": [],
+      "preserve_old_sources": true,
+      "value": 2,
+      "action_weight": 0,
+      "links": 2,
+      "chosen": [],
+      "paid": [
+        0,
+        1
+      ]
+    },
+    {
+      "enabled": [
+        0
+      ],
+      "preserve_old_sources": false,
+      "value": 2,
+      "action_weight": 0,
+      "links": 2,
+      "chosen": [],
+      "paid": [
+        0,
+        1
+      ]
+    },
+    {
+      "enabled": [
+        0
+      ],
+      "preserve_old_sources": true,
+      "value": 2,
+      "action_weight": 0,
+      "links": 2,
+      "chosen": [],
+      "paid": [
+        0,
+        1
+      ]
+    },
+    {
+      "enabled": [
+        1
+      ],
+      "preserve_old_sources": false,
+      "value": 2,
+      "action_weight": 0,
+      "links": 2,
+      "chosen": [],
+      "paid": [
+        0,
+        1
+      ]
+    },
+    {
+      "enabled": [
+        1
+      ],
+      "preserve_old_sources": true,
+      "value": 2,
+      "action_weight": 0,
+      "links": 2,
+      "chosen": [],
+      "paid": [
+        0,
+        1
+      ]
+    },
+    {
+      "enabled": [
+        0,
+        1
+      ],
+      "preserve_old_sources": false,
+      "value": 3,
+      "action_weight": 2,
+      "links": 1,
+      "chosen": [
+        0,
+        1
+      ],
+      "paid": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "enabled": [
+        0,
+        1
+      ],
+      "preserve_old_sources": true,
+      "value": 3,
+      "action_weight": 2,
+      "links": 1,
+      "chosen": [
+        0,
+        1
+      ],
+      "paid": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "arbitrary_length_synergy_controls": [
+    {
+      "actions": 2,
+      "old_value": 1,
+      "proper_enabled_subset_value": 1,
+      "full_value": 2,
+      "minimum_actions_for_gain": 2
+    },
+    {
+      "actions": 3,
+      "old_value": 2,
+      "proper_enabled_subset_value": 2,
+      "full_value": 3,
+      "minimum_actions_for_gain": 3
+    },
+    {
+      "actions": 4,
+      "old_value": 3,
+      "proper_enabled_subset_value": 3,
+      "full_value": 4,
+      "minimum_actions_for_gain": 4
+    },
+    {
+      "actions": 5,
+      "old_value": 4,
+      "proper_enabled_subset_value": 4,
+      "full_value": 5,
+      "minimum_actions_for_gain": 5
+    },
+    {
+      "actions": 6,
+      "old_value": 5,
+      "proper_enabled_subset_value": 5,
+      "full_value": 6,
+      "minimum_actions_for_gain": 6
+    }
+  ],
+  "source_identity_control": {
+    "unprotected": {
+      "value": 1,
+      "action_weight": 0,
+      "links": 0,
+      "chosen": [
+        1
+      ],
+      "paid": [
+        0
+      ]
+    },
+    "protected": {
+      "value": 1,
+      "action_weight": 0,
+      "links": 1,
+      "chosen": [],
+      "paid": [
+        3
+      ]
+    }
+  },
+  "theorem": "Under a simultaneous disjoint withdrawal/private-target adapter, each nonempty old withdrawal group has at most one old witness owner. Compress that group to one capacity-one token and add a direct target-to-token action arc. The fixed fork-capable proxy gives exactly the maximum over chosen action subsets, including repeated target alternatives. Nonnegative action weights and physical links optimize lexicographically by min-cost flow; any old maximum paid source set can be retained at maximum value. Applied actions and physical old/new pools are never unioned.",
+  "limits": [
+    "Does not assert that applying all enabled destructive actions attains the proxy optimum.",
+    "Enabled-action gain need not be a matroid rank or submodular: arbitrary n-action complementarity exists in abstract exchange models.",
+    "The arbitrary chain family is abstract, not a claimed frozen grid realization.",
+    "Full physical adapter and fork normalization have written proofs; formal allocation scope separately stated. No universal5/6 improvement."
+  ]
+}

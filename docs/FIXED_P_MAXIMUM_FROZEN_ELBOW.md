@@ -25,6 +25,13 @@ The numerical target still has positive slack3. A favorable direction choice
 pays all sources, so this is no optimized-N obstruction and no universal5/6
 improvement. The11 October submitted manuscript is preserved.
 
+The subsequent [destructive-exchange selection theorem](DESTRUCTIVE_EXCHANGE_CHOICE.md)
+gives a positive exact algorithm under a simultaneous replacement adapter:
+old access and action access compete for the same capacity-one withdrawal
+token. On this board it selects E alone and preserves old b, while allowing
+both E and F as alternatives. It does not assume that all enabled actions
+should be applied.
+
 ## 1. Explicit extremal feasible board
 
 Retain exactly the35 actual matching edges and tile directions from the
