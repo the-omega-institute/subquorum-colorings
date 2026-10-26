@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [actual bridge compensation and a frozen entrance obstruction](docs/SINGLE_BRIDGE_COMPENSATION.md):
+one added link between two old interval stems has exactly two routing modes,
+giving payment p+g-min(t0,te) and exact source-preservation tests. For k bridges
+on disjoint pairs of old stems, 2^k global resource-graph modes give maximum
+payment then minimum actual bridge fees without repeated reserve credits.
+On one fully frozen board a single capacity-one pivot changes the same old
+three-source packing from payment 3 to 2. An upper bridge into five receiving
+units still gives 2; a lower bridge with a usable prefix resource restores 3.
+All-q separated copies prove the obstruction and repair scale exactly; the
+unrestricted full original board still pays all 4q sources. Checks cover 184
+bridge optima, 4,344 prescriptions and 576 batch fee/prescription optima.
+The mode and geometric proofs are written, with independent executable checks;
+no new end-to-end Lean or universal 5/6 improvement is claimed.
+
 New [exact mixed-target zero-capacity optimization](docs/MIXED_ZERO_CORRIDOR_OPTIMIZATION.md):
 all-state support monotonicity makes the final H and V gaps an exact protected
 corridor family when variable tiles carry no positive units. Disjoint extreme

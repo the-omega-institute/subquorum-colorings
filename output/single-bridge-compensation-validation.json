@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_bridge_optima": 184,
+    "strict_bridge_gains": 9,
+    "source_prescription_checks": 4344,
+    "joint_two_mode_obstructions": 2230,
+    "production_no_flow_or_primitive_enumeration_controls": 2,
+    "joint_original_reserve_nonreuse_controls": 1,
+    "arbitrary_length_chain_models": 180,
+    "batch_fee_and_prescription_optima": 576,
+    "two_bridge_batch_models": 36,
+    "strict_freezing_events": 2156,
+    "physical_single_bridge_base_checks": 2,
+    "physical_bridge_batch_checks": 6
+  },
+  "controls": [
+    {
+      "name": "surplus-behind-used-entry",
+      "old_component_deficits": 1,
+      "receiver_units": 2,
+      "receiver_unused_units": 1,
+      "mode_deficits": [
+        1,
+        1
+      ],
+      "value": 1,
+      "selected_mode": 0,
+      "abstract": true,
+      "physical_realization_claim": false
+    },
+    {
+      "name": "separated-prefix-suffix",
+      "old_component_deficits": 1,
+      "receiver_units": 2,
+      "receiver_unused_units": 1,
+      "mode_deficits": [
+        1,
+        0
+      ],
+      "value": 2,
+      "selected_mode": 1,
+      "abstract": true,
+      "physical_realization_claim": false
+    },
+    {
+      "name": "two-bridges-one-original-reserve",
+      "old_payment": 2,
+      "each_bridge_alone": 3,
+      "joint_payment": 3,
+      "wrong_sum": 4,
+      "cheapest_actual_bridge": 1,
+      "fee": 2,
+      "abstract": true,
+      "physical_realization_claim": false
+    }
+  ],
+  "physical": [
+    {
+      "kind": "surplus-failure",
+      "copies": 1,
+      "shape": [
+        28,
+        24
+      ],
+      "old_source_count": 3,
+      "old_link_payment": 2,
+      "with_named_bridges": 2,
+      "minimum_actual_bridges": 0,
+      "all_old_sources_retained": false,
+      "unrestricted_full_board_payment": 4,
+      "all_original_units_retained": true
+    },
+    {
+      "kind": "gain",
+      "copies": 1,
+      "shape": [
+        28,
+        24
+      ],
+      "old_source_count": 3,
+      "old_link_payment": 2,
+      "with_named_bridges": 3,
+      "minimum_actual_bridges": 1,
+      "all_old_sources_retained": true,
+      "unrestricted_full_board_payment": 4,
+      "all_original_units_retained": true
+    },
+    {
+      "kind": "surplus-failure",
+      "copies": 2,
+      "shape": [
+        58,
+        24
+      ],
+      "old_source_count": 6,
+      "old_link_payment": 4,
+      "with_named_bridges": 4,
+      "minimum_actual_bridges": 0,
+      "all_old_sources_retained": false,
+      "unrestricted_full_board_payment": 8,
+      "all_original_units_retained": true
+    },
+    {
+      "kind": "gain",
+      "copies": 2,
+      "shape": [
+        58,
+        24
+      ],
+      "old_source_count": 6,
+      "old_link_payment": 4,
+      "with_named_bridges": 6,
+      "minimum_actual_bridges": 2,
+      "all_old_sources_retained": true,
+      "unrestricted_full_board_payment": 8,
+      "all_original_units_retained": true
+    },
+    {
+      "kind": "surplus-failure",
+      "copies": 4,
+      "shape": [
+        118,
+        24
+      ],
+      "old_source_count": 12,
+      "old_link_payment": 8,
+      "with_named_bridges": 8,
+      "minimum_actual_bridges": 0,
+      "all_old_sources_retained": false,
+      "unrestricted_full_board_payment": 16,
+      "all_original_units_retained": true
+    },
+    {
+      "kind": "gain",
+      "copies": 4,
+      "shape": [
+        118,
+        24
+      ],
+      "old_source_count": 12,
+      "old_link_payment": 8,
+      "with_named_bridges": 12,
+      "minimum_actual_bridges": 4,
+      "all_old_sources_retained": true,
+      "unrestricted_full_board_payment": 16,
+      "all_original_units_retained": true
+    }
+  ],
+  "proof": "docs/SINGLE_BRIDGE_COMPENSATION.md",
+  "scope": "Pairwise disjoint pairs of old ordinary stems, one named actual added bridge per pair into a mixed owner. Exact max payment then minimum actual added-bridge fees, with source prescriptions, by 2^k resource-graph modes. Other old beta/fork primitives retained. Frozen capacity-one pivot separates failed and successful actual bridges.",
+  "limitations": [
+    "Not unrestricted new-link compensation or minimum total old/new link count.",
+    "Frozen obstruction is to named-link surplus rule; full original board pays all four sources per copy.",
+    "No universal 5/6 improvement."
+  ]
+}
