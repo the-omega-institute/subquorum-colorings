@@ -43,7 +43,7 @@ def guards : Entry → List Shield
   | .right => [.right,.common]
   | .both => [.left,.right,.common]
 
-def total (f : Entry → Nat) : List Entry → Nat
+def total {α : Type} (f : α → Nat) : List α → Nat
   | [] => 0
   | e::rest => f e + total f rest
 
@@ -103,9 +103,82 @@ theorem no_fully_frozen_restricted_conversion (word : List Entry)
   have hs := restricted_conversion_shortage word hne
   omega
 
+/- The enlarged permission domain allows any of the three black cells at
+   each envelope, and white conversions may be pooled across envelopes. -/
+inductive Mask where
+  | empty | d | e | de | w | dw | ew | full
+  deriving DecidableEq
+
+def blacks : Mask → Nat
+  | .empty => 0 | .d | .e | .w => 1
+  | .de | .dw | .ew => 2 | .full => 3
+def forced : Mask → Nat
+  | .empty => 0 | .d | .e => 2 | _ => 3
+def deficit : Mask → Nat
+  | .empty | .full => 0 | .w => 2 | _ => 1
+def Complete : List Mask → Prop
+  | [] => True
+  | mask::rest => (mask=.empty ∨ mask=.full) ∧ Complete rest
+
+/-- All eight local masks, counting the shared physical guards once. -/
+theorem local_full_envelope_budget (mask : Mask) :
+    forced mask = blacks mask + deficit mask ∧
+    (deficit mask=0 ↔ mask=.empty ∨ mask=.full) := by
+  cases mask <;> decide
+
+/-- Pooling the white conversions globally cannot cancel any local deficit. -/
+theorem all_length_full_envelope_budget (word : List Mask) :
+    total forced word = total blacks word + total deficit word := by
+  induction word with
+  | nil => rfl
+  | cons mask rest ih =>
+    have he := (local_full_envelope_budget mask).1
+    simp only [total]
+    omega
+
+/-- Equality classifies the allowed footprint: every envelope is empty or
+    contains all six sites. It does not classify actual matchings. -/
+theorem zero_deficit_iff_complete_cells (word : List Mask) :
+    total deficit word=0 ↔ Complete word := by
+  induction word with
+  | nil => simp [total,Complete]
+  | cons mask rest ih =>
+    have he := (local_full_envelope_budget mask).2
+    simp only [total,Complete]
+    constructor
+    · intro hz
+      have hez : deficit mask=0 := by omega
+      have hrz : total deficit rest=0 := by omega
+      exact ⟨he.mp hez,ih.mp hrz⟩
+    · intro ⟨hc,hr⟩
+      have hez := he.mpr hc
+      have hrz := ih.mpr hr
+      omega
+
+/-- Actual bipartite colour balance supplies hobjective. Geometry supplies
+    hwithdrawn. Both are explicit; no matching or coordinate adapter is
+    silently assumed formalized. Neutrality forces all-or-nothing cells and
+    withdrawal of exactly their forced guards. -/
+theorem neutral_objective_forces_complete_cells (word : List Mask)
+    (withdrawn : Nat) (J J0 : Int)
+    (hobjective : J=J0+(total blacks word:Int)-(withdrawn:Int))
+    (hwithdrawn : total forced word≤withdrawn) :
+    J+(total deficit word:Int)≤J0 ∧
+    (J=J0 → Complete word ∧ withdrawn=total forced word) := by
+  have hb := all_length_full_envelope_budget word
+  constructor
+  · omega
+  · intro hj
+    have hz : total deficit word=0 := by omega
+    exact ⟨(zero_deficit_iff_complete_cells word).mp hz,by omega⟩
+
 end SubQuorum.NeutralOccupiedEnvelopes
 #print axioms SubQuorum.NeutralOccupiedEnvelopes.shield_coordinate_injective
 #print axioms SubQuorum.NeutralOccupiedEnvelopes.exact_shared_guard_count
 #print axioms SubQuorum.NeutralOccupiedEnvelopes.restricted_conversion_shortage
 #print axioms SubQuorum.NeutralOccupiedEnvelopes.singleton_shield_excludes_freezing
 #print axioms SubQuorum.NeutralOccupiedEnvelopes.no_fully_frozen_restricted_conversion
+#print axioms SubQuorum.NeutralOccupiedEnvelopes.local_full_envelope_budget
+#print axioms SubQuorum.NeutralOccupiedEnvelopes.all_length_full_envelope_budget
+#print axioms SubQuorum.NeutralOccupiedEnvelopes.zero_deficit_iff_complete_cells
+#print axioms SubQuorum.NeutralOccupiedEnvelopes.neutral_objective_forces_complete_cells

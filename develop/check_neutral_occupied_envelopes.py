@@ -193,6 +193,75 @@ def restricted_controls(counts):
             counts['restricted_entry_sets']+=1
 
 
+def retained_old_matching_traps(counts):
+    """Check the weaker true necessity: some original edge must change.
+
+    Grant every endpoint outside the new white pool frozen. Under ANY perfect
+    matching retaining M0, every new black mate belongs to that pool, so the
+    pool has at most its one old-neighbour support. Three internal domino
+    tilings control the coordinate statement, including mixed local tilings.
+    """
+    for m in (2,3,5,10,25,50,100):
+        for S in (set(range(m)),set(range(0,m,2))):
+            for offset in range(3):
+                old=frozen_family(m);T=expanded(m,S)[2];M=list(old[3]);pool=set()
+                for j in sorted(S):
+                    a,b,f,d,e,w=envelope(j);pool|={a,b,f}
+                    tilings=[[(a,d),(w,b),(f,e)],[(a,w),(d,f),(b,e)],[(a,d),(w,f),(b,e)]]
+                    M.extend(tilings[(j+offset)%3])
+                cur=(*old[:2],T,M);assert direct_check(*cur)==18*m+30
+                mate={v:u for edge in M for v,u in (edge,edge[::-1])}
+                for v in pool:
+                    supports={u for u in neighbors(v) if u in T or u in mate and mate[u] not in pool}
+                    assert len(supports)<=1
+                assert pool.isdisjoint(first_times(cur))
+                counts['retained_old_matching_pool_traps']+=1
+
+
+def arbitrary_envelope_budget_controls(counts):
+    """All allowed black masks, with white conversions pooled across patches.
+
+    No perfect matching is assumed to exist for these prospective pools. Any
+    actual matching has the colour-balanced size used below, so checking a
+    superset of pools strengthens this finite adapter control.
+    """
+    for m in (2,3):
+        white=set().union(*(set(envelope(j)[:3]) for j in range(m)))
+        old=frozen_family(m);oldP=endpoints(old[3]);J0=18*m+30
+        for word in itertools.product(range(8),repeat=m):
+            black=set();forced=set();deficit=0
+            for j,mask in enumerate(word):
+                a,b,f,d,e,w=envelope(j)
+                B={v for bit,v in enumerate((d,e,w)) if mask&(1<<bit)}
+                G=set()
+                if d in B:G|={a,f}
+                if e in B:G|={b,f}
+                if w in B:G|={a,b,f}
+                delta=len(G)-len(B)
+                assert delta==(0 if mask in (0,7) else 2 if mask==4 else 1)
+                black|=B;forced|=G;deficit+=delta
+            assert len(forced)-len(black)==deficit
+            # Every black cell has a different private matching target, even
+            # though their selected-degree guard sets overlap.
+            sharpM=list(old[3])
+            for j,mask in enumerate(word):
+                a,b,f,d,e,w=envelope(j)
+                sharpM.extend((x,y) for bit,(x,y) in enumerate(((d,a),(e,b),(w,f)))
+                              if mask&(1<<bit))
+            assert direct_check(*old[:2],old[2]-forced,sharpM)==J0-deficit
+            counts['sharp_arbitrary_envelope_matchings']+=1
+            for pool in itertools.combinations(sorted(white),len(black)):
+                Y=set(pool);removed=forced|Y;T=old[2]-removed;P=oldP|black|Y
+                assert len(Y)==len(black)
+                assert all(len(set(neighbors(v))&(T|P))<=1 for v in T)
+                prospectiveJ=J0+len(black)-len(removed)
+                assert prospectiveJ<=J0-deficit
+                equality=prospectiveJ==J0
+                assert equality==(all(mask in (0,7) for mask in word) and Y==forced)
+                counts['pooled_arbitrary_envelope_colour_pools']+=1
+            counts['arbitrary_envelope_black_masks']+=1
+
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);args=p.parse_args()
     counts=Counter();max_depth=0
@@ -219,10 +288,12 @@ def main():
                 max_depth=max(max_depth,check_board(m,S,counts,alternate,mixed=True))
     counts['mixed_patch_boards']=counts['boards']-counts['original_patch_boards']
     restricted_controls(counts)
+    retained_old_matching_traps(counts)
+    arbitrary_envelope_budget_controls(counts)
     result=dict(status='PASS',counts=dict(counts),max_observed_synchronous_depth=max_depth,
-                scope='524 CD-patch subset controls (all subsets m=2..8; structured m=10,25,50,100); 1121 mixed-patch controls (all ternary patterns m=2..6 and structured larger patterns); all colour-balanced restricted shield pools m=2..4.',
+                scope='524 CD-patch subset controls (all subsets m=2..8; structured m=10,25,50,100); 1121 mixed-patch controls (all ternary patterns m=2..6 and structured larger patterns); all colour-balanced restricted shield pools m=2..4; all black masks and pooled white conversions m=2,3; 42 retained-old-matching pool traps.',
                 proof='Written arbitrary-length rank formulas and token deletion; finite enumeration checks the adapter and is not a general proof.',
-                not_claimed='Arbitrary enlarged footprints; global 5/6 improvement; end-to-end Lean coordinate formalization.')
+                not_claimed='New sites outside the six-cell permission domain; new selections outside T0; global 5/6 improvement; end-to-end Lean coordinate formalization.')
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result))
 

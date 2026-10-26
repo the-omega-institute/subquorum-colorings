@@ -12,8 +12,13 @@ footprint and 3^m configurations overall. Each expansion deletes one already pai
 physical surplus/demand; no reserve is released or counted twice. In the
 restricted direct-entry footprint the exact loss is one per active index,
 and no nonempty conversion can completely freeze. Solver-free checks cover
-1,645 expanded boards and 19,183 restricted conversion pools; five scoped local
-Lean kernels check shield identities/counts and the conditional trap argument.
+1,645 expanded boards and 19,183 restricted conversion pools. The complete
+six-cell permission domain has an exact pooled upper bound: each partial
+black mask pays its forced-guard deficit, and half-area equality forces every
+cell empty or full. All 49,544 small pooled conversion profiles satisfy it;
+576 explicit matchings attain every prescribed black-mask bound. Nine scoped local
+Lean kernels check shield identities/counts, conditional traps and the
+arbitrary-length budget and equality criterion.
 The complete coordinate adapter is written; the universal 5/6 question is open.
 
 New [complete two-port matching classification](docs/TWO_PORT_MATCHING_CLASSIFICATION.md):

@@ -12,6 +12,8 @@ actual matchings on each enlarged footprint and 3^m configurations overall.
 
 We prove the full all-length construction, its literal actual-mate rank table,
 its physical-token cancellation, and the precise restricted rule it defeats.
+For arbitrary partial occupations throughout the full six-cell permission
+domain, an exact pooled budget also classifies every neutral T/P footprint.
 The universal grid 5/6 improvement and arbitrary endpoint invasion remain open.
 
 ## 1. Exact original footprint
@@ -36,6 +38,9 @@ The original selections T0 have columns
     row 3: {1,3}; row 4: {0,2,4}.
 
 Thus |T0|=9m+21, |M0|=9m+9 and J0=|T0|+|M0|=18m+30=area(R)/2.
+M is a matching of nearest-neighbour grid edges; N_R(x) denotes the
+nearest-neighbour grid sites inside R. A labeled configuration (T,M) includes
+its actual matching, so different matchings can share one T/P footprint.
 A feasible pair (T,M) has disjoint selected sites and matching endpoints,
 and every selected site has at most one occupied neighbour in T union P.
 An endpoint freezes once TWO distinct adjacent sites are kept. A site is kept
@@ -359,14 +364,82 @@ different endpoint footprints. Summing 2^|S| over S gives 3^m. The ledger
 in Section 6 depends only on S, so EVERY one of these matchings uses the
 same surviving physical payments, with no extra reserve from the choices.
 
-## 8. Exact scope of the obstruction and the next cut problem
+## 8. Sharp budget and all neutral footprints in the full envelope domain
+
+There is a stronger upper bound that does not prescribe S or require whole
+envelopes in advance. Retain all original endpoints P0. Allow arbitrary
+new black endpoints B among ALL d_j,e_j,w_j for 0<=j<m, arbitrary new
+white endpoints Y among ALL a_j,b'_j,f_j, arbitrary T subset T0, and
+arbitrary actual perfect matching on P0 union B union Y. No original
+matching edge or freezing condition is imposed for this upper bound.
+Write B_j=B intersect {d_j,e_j,w_j}.
+
+Let G_j be the forced withdrawal set of original white selections at index j.
+The old neighbours C_j,A_(j+1),g_j are retained endpoints. Consequently
+
+    d_j present forces a_j,f_j withdrawn;
+    e_j present forces b'_j,f_j withdrawn;
+    w_j present forces ALL a_j,b'_j,f_j withdrawn.
+
+The last line uses adjacency of w_j to f_j as well as a_j,b'_j. The
+G_j are physically disjoint across indices. Put delta_j=|G_j|-|B_j|.
+The complete local table is
+
+| New black sites B_j | Black count | Forced guard count | delta_j |
+| --- | ---: | ---: | ---: |
+| empty | 0 | 0 | 0 |
+| d only, or e only | 1 | 2 | 1 |
+| d,e | 2 | 3 | 1 |
+| w only | 1 | 3 | 2 |
+| d,w, or e,w | 2 | 3 | 1 |
+| d,e,w | 3 | 3 | 0 |
+
+**Sharp pooled envelope budget.** For every prescribed B in this domain,
+
+    max J = J0 - sum_j delta_j,                    (6)
+
+where the maximum ranges over feasible T,Y and actual matchings. The
+maximum does not require complete freezing. Moreover J=J0 is possible
+if and only if EVERY B_j is empty or full. In that case its entire T/P
+footprint is forced to be exactly T_S/P_S for the full-cell index set S;
+that equality footprint DOES have completely frozen attainments by
+Sections 3--7. Matching equality is not classified.
+
+Proof. Since each matching edge joins opposite colours and P0 is balanced,
+|Y|=|B| and |M|=|M0|+|B|. Set L=|T0 minus T|. All G_j must be
+withdrawn, so L>=sum_j |G_j|. Thus
+
+    J=J0+|B|-L <= J0+sum_j(|B_j|-|G_j|)=J0-sum_j delta_j.
+
+This is one GLOBAL colour-balance count: white conversions may be pooled
+across different indices and matched to old endpoints. No local perfect
+matching or local colour-balance premise is assumed in the upper bound.
+Equality in (6) is feasible for every B: withdraw exactly union_j G_j,
+retain M0, and add d_j--a_j, e_j--b'_j, w_j--f_j for whichever black
+sites are present. These three possible new edges have distinct targets.
+The selected-degree check is the same as in Section 3. This proves (6)
+without an optimization or a finite-enumeration premise. Such a sharp
+matching need not be completely frozen.
+
+If J=J0, every nonnegative delta_j must vanish. The table forces each
+B_j empty or full. Also L=sum_j|G_j|=|B|. Because Y is disjoint from T,
+Y lies among the withdrawn selections; its cardinality |B| equals L.
+Hence Y=T0 minus T=union_j G_j. This proves the full equality-footprint
+classification. Conversely the mixed-expansion construction supplies
+completely frozen equality for every such footprint. This concludes the
+proof for arbitrary length and arbitrary pooling across envelopes.
+
+## 9. Exact scope of the obstruction and the next cut problem
 
 For the specified enlarged endpoint footprint P_S and any T subset T0,
 no selected site in the three converted shields per envelope can be retained.
 Every actual matching has |P_S|/2 edges. Therefore J<=J0, irrespective of
 freezing or rematching; (1) attains equality with complete freezing. This is
 the exact maximum for that specified endpoint footprint and selection domain.
-It is not a maximum over arbitrary new sites or arbitrary new selections.
+Section 8 extends this to the full six-cell permission domain, with complete
+equality-footprint classification and exact costs of partial black masks.
+Neither statement is a maximum over arbitrary new sites or new selections
+outside T0.
 
 The pair-only inequality in Section 2 correctly loses one objective unit
 per occupied d/e pair, but (1) has those same direct pairs and loses none.
@@ -376,7 +449,7 @@ alternative such as (5). Some old matching edge MUST change when S is
 nonempty. Indeed, if all old M0 edges were retained, every new black
 endpoint would have a converted white shield as mate. Before the first
 such shield freezes, none of the new black sites can be kept. Each shield
-has just one neighbour outside the new black sites: C_j, A_(j+1), or g_j.
+has just one occupied neighbour outside the new black sites: C_j, A_(j+1), or g_j.
 It has no selected neighbour, so no first shield can freeze. This traps
 the entire converted white pool, independently of how its new edges are
 matched. This does not force a particular old edge to change.
@@ -398,7 +471,7 @@ fully frozen half-area configurations already within R, without a cap.
 This is a constructive lower bound, not a classification of enlarged
 footprints or a sequence of freezing-preserving intermediate moves.
 
-## 9. Verification and formal scope
+## 10. Verification and formal scope
 
 The written all-length proof is (1) and (5), the complete strict actual-mate
 rank tables (including the mixed table) and the literal deletion from (3).
@@ -422,13 +495,21 @@ queue and synchronous closures, 6,658 literal token/demand cancellations,
 and 10,093 surviving payments. Distinct literal matching edge sets check
 the 3^m count at m=2,...,6. Restricted controls
 cover every entry set for m=2,3,4 and all 19,183 colour-balanced conversion
-pools. No optimizer or external solver is used.
+pools. An additional 576 arbitrary black-mask profiles and all 49,544
+colour-balanced white conversion pools check the enlarged-domain budget,
+including conversions pooled across different indices. Each profile has an
+explicit feasible sharp matching. Forty-two retained-old-matching controls
+check the whole converted-white pool trap. No optimizer or external solver
+is used.
 
-Five declarations in
+Nine declarations in
 [NeutralOccupiedEnvelopes.lean](../formal/SubQuorum/NeutralOccupiedEnvelopes.lean)
 check injective physical shield coordinates, exact shared-guard counts for
 arbitrary finite entry words, strict conversion shortage, the actual-mate
-singleton trap, and the conditional restricted no-freezing contradiction.
+singleton trap, and the conditional restricted no-freezing contradiction. Four additional
+kernels check all eight enlarged masks, the arbitrary-length pooled budget,
+zero deficit if and only if all cells are empty/full, and the objective
+equality criterion under explicit colour-balance/withdrawal premises.
 The [local Lean receipt](../output/neutral-occupied-envelopes-formal.json)
 records Lean 4.33.0, memory/process preflight before each invocation, and
 axiom closures with no sorry or nonstandard axioms. The singleton proof reuses
@@ -438,10 +519,11 @@ feasibility, all-length matching construction and physical cancellation
 remain written proofs with the executable adapter above. The Lean result
 does not claim an end-to-end coordinate formalization.
 
-## 10. Proposed research-note addition
+## 11. Proposed research-note addition
 
-The useful addition to a future grid paper is the neutral expansion theorem
-with (1)--(5) and the independent mixed choices. Its scope is essential:
+The useful addition to a future grid paper is the sharp pooled envelope
+budget (6), its complete equality-footprint classification, and the
+independent mixed expansions attaining equality. Its scope is essential:
 an interface cost must depend on the
 entire allowed footprint and the actual matching. The six-cell family is
 a checked obstruction to charging a fixed positive amount to every occupied

@@ -8,7 +8,7 @@ import tempfile
 import subprocess
 
 ROOT=Path(__file__).resolve().parents[1]
-NAMES=['shield_coordinate_injective','exact_shared_guard_count','restricted_conversion_shortage','singleton_shield_excludes_freezing','no_fully_frozen_restricted_conversion']
+NAMES=['shield_coordinate_injective','exact_shared_guard_count','restricted_conversion_shortage','singleton_shield_excludes_freezing','no_fully_frozen_restricted_conversion','local_full_envelope_budget','all_length_full_envelope_budget','zero_deficit_iff_complete_cells','neutral_objective_forces_complete_cells']
 
 def preflight():
     ps=subprocess.check_output(['ps','-axo','pid=,comm='],text=True)
@@ -42,7 +42,7 @@ def main():
     assert all(set(x['axioms'])<={'propext','Classical.choice','Quot.sound'} for x in audits)
     out=dict(status='PASS',lean_version=version,execution_location='local',command='cd formal && lean SubQuorum/NeutralOccupiedEnvelopes.lean',
         theorems=audits,preflight=checks,
-        scope='Injective physical shield coordinates; exact shared-guard count and strict conversion shortage on arbitrary finite entry words; actual-mate singleton trap; conditional restricted no-freezing contradiction.',
+        scope='Injective physical shield coordinates; exact shared-guard count and strict conversion shortage on arbitrary finite entry words; actual-mate singleton trap; conditional restricted no-freezing contradiction; all eight envelope masks, arbitrary-length pooled budget, and neutral equality footprint classification.',
         not_formalized='The envelope matching, complete coordinate rank tables, feasibility and physical token cancellation remain written all-length proofs with solver-free adapter checks. Rank induction is reused from FrozenHalfAreaAttainers. Not an end-to-end Lean coordinate theorem.')
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps(dict(status=out['status'],lean_version=version,theorems=len(audits))))

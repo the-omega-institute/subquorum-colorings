@@ -9,10 +9,14 @@
     "original_patch_boards": 524,
     "mixed_patch_boards": 1121,
     "restricted_conversion_pools": 19183,
-    "restricted_entry_sets": 336
+    "restricted_entry_sets": 336,
+    "retained_old_matching_pool_traps": 42,
+    "sharp_arbitrary_envelope_matchings": 576,
+    "pooled_arbitrary_envelope_colour_pools": 49544,
+    "arbitrary_envelope_black_masks": 576
   },
   "max_observed_synchronous_depth": 1208,
-  "scope": "524 CD-patch subset controls (all subsets m=2..8; structured m=10,25,50,100); 1121 mixed-patch controls (all ternary patterns m=2..6 and structured larger patterns); all colour-balanced restricted shield pools m=2..4.",
+  "scope": "524 CD-patch subset controls (all subsets m=2..8; structured m=10,25,50,100); 1121 mixed-patch controls (all ternary patterns m=2..6 and structured larger patterns); all colour-balanced restricted shield pools m=2..4. Full-envelope domain: 576 arbitrary black masks, all 49544 pooled white conversions at m=2,3; 42 retained-old-matching pool traps.",
   "proof": "Written arbitrary-length rank formulas and token deletion; finite enumeration checks the adapter and is not a general proof.",
-  "not_claimed": "Arbitrary enlarged footprints; global 5/6 improvement; end-to-end Lean coordinate formalization."
+  "not_claimed": "New sites outside the six-cell permission domain; new selections outside T0; global 5/6 improvement; end-to-end Lean coordinate formalization."
 }
