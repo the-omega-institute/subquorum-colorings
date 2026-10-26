@@ -282,3 +282,8 @@ The next positive task is to combine the exact support-change ledger with
 joint prerequisite constraints and globally disjoint resource reservations.
 Single-pivot no-gain is insufficient evidence that a residual path cannot
 be repaired, even at a completely frozen true fixed-P maximum.
+
+The next [two-unit gate-bundle theorem](CAPACITY_TWO_GATE_BUNDLES.md) gives a
+positive exact weighted-matching reduction for independent whole-corridor
+bundles with at most two usable original units. It also constructs a genuine
+frozen capacity-two pivot paying two sources at one shared activation fee.

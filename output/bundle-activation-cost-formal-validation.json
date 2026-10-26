@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T01:11:04.785852+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "47%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.BundleActivationCost.fee_complement' depends on axioms: [propext]",
+    "'SubQuorum.BundleActivationCost.weight_cost_identity' depends on axioms: [propext]",
+    "'SubQuorum.BundleActivationCost.cardinality_priority' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.BundleActivationCost.lower_fee_priority' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "General finite-list shared activation-fee kernel: spent and saved fees partition total fees; matching weight plus spent fees equals scaled payments plus total fees; scale totalFee+1 prioritizes cardinality, then minimum activation cost. No enumeration.",
+  "not_formalized": [
+    "The matching gadget and physical-to-matching reconstruction, old-source extension, frozen-grid geometry and exact-cover complexity reductions. Written proofs and independent executable checks; no end-to-end matching or grid Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
