@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T02:54:57.274154+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "47%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "47%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.PositiveCapacityHandoff.closed_phase_constant' does not depend on any axioms",
+    "'SubQuorum.PositiveCapacityHandoff.phase_guard_monotone' does not depend on any axioms",
+    "'SubQuorum.PositiveCapacityHandoff.critical_guards_iff_all_states' does not depend on any axioms"
+  ],
+  "scope": "Three arbitrary-state phase kernels: closed antitone phase with endpoint guard is constant; closed guard and singleton handoff imply global monotonicity; the two critical guards iff all-state monotonicity. No finite enumeration.",
+  "not_formalized": [
+    "Physical common slot IDs, phase monotonicity, identical capacity-two slot supports, full H-gap prerequisite compiler and frozen controls. Written proofs and independent executable audits; no end-to-end Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

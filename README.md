@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [positive-capacity handoffs: linear-state recognition and exact support compiler](docs/POSITIVE_CAPACITY_HANDOFFS.md):
+uniform V→H P-free gates of capacities zero, one and two admit exact recognition
+of all-subset support monotonicity in at most 2+2p physical snapshots, where p
+counts positive gates. Closed-phase and singleton handoff guards replace the
+old two-state test. A feasible all-length bent-owner family passes full endpoint
+incidence inclusion but loses support in intermediate states; it is not fully
+frozen and does not contradict the numerical grid bound. Passing inputs compile
+to exact H-gap gate prerequisites, preserving actual shared fees without claiming
+a general fee optimizer. Checks cover 1,332 states and 2,669 lattice edges;
+three general phase lemmas are axiom-free in Lean. Universal 5/6 remains open.
+
 New [uniform zero-capacity openings: two-state recognition and physical compiler](docs/UNIFORM_ZERO_CAPACITY_OPENINGS.md):
 on any feasible grid, uniform V→H P-free capacity-zero gates have increasing H
 resource support and decreasing V support. Full endpoint incidence inclusion
