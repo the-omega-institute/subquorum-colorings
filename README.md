@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact integer compensation for the connected occupied band](docs/CONNECTED_BAND_INTEGER_COMPENSATION.md):
+for simultaneous G/H/F permissions, retained old endpoints and arbitrary
+actual rematching, the true whole-board maximum is J=18m+29=area/2-1
+for every m>=2, attained by completely frozen configurations. A disjoint
+chessboard-weight cover and a new pocket certificate 4W<=39 close the
+integer frontier left open by the preceding fractional matching obstruction.
+Original physical tile credits pay exterior debts and the strip deficit
+once, leaving two half-unit tokens. Checks include 147,297 pocket models,
+20 sharp frozen lengths, 144 actual rematchings and ten scoped Lean theorems.
+Other residual geometries and the universal 5/6 improvement remain open.
+
 New [sharp completion and distinct reserves for negative frozen strips](docs/FROZEN_STRIP_SHARP_COMPLETION_AND_RESERVES.md):
 for the original k-module endpoint footprint, EVERY feasible reselection has
 T<=13k+11, by disjoint local face/pair covers. A periodic completion retains

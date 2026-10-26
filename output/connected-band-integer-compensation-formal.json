@@ -1,0 +1,81 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/ConnectedBandIntegerCompensation.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.local_thirteen",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.left_boundary",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.pocket_coefficients",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.pocket_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.connected_band_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.whole_board_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.exact_attainer_arithmetic",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.exterior_token_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.token_indices",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ConnectedBandIntegerCompensation.unused_tokens",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "custom_axioms": [],
+  "scope": "Scaled local inequalities, exact pocket incidence identity and integer rounding, all-m arithmetic and token budget. Board-coordinate reduction and frozen graph construction remain written proofs plus finite independent controls."
+}
