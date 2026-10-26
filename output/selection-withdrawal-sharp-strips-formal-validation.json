@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T10:59:29.019852+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "40%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "39%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.SelectionWithdrawalSharpStrips.strict_witness_not_mate' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.mate_plus_one_exclusion' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.weighted_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.tree_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.tree_equality_data' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.global_extra_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.total_objective_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.whole_margin_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.successor_payment_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.remaining_reserve_not_spent' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.exact_physical_ledger' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.remainder_closed' does not depend on any axioms",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.isolated_remainder_obstruction' does not depend on any axioms",
+    "'SubQuorum.SelectionWithdrawalSharpStrips.isolated_new_endpoint_geometry' does not depend on any axioms"
+  ],
+  "scope": "Universal strict-witness/mate-plus-one exclusion; exact nine-vertex tree weighted identity, bound6 and mandatory equality data; arbitrary-k/q disjoint count aggregation and whole margin; original physical donor injection, disjointness from remaining reserves and exact ledger; necessary closure of new endpoints under any old-edge-retaining matching and explicit isolated remainder obstruction.",
+  "not_formalized": [
+    "All-k free graph classification, actual matching/selection indicator adapter, complete equality pattern classification, right-to-left freezing construction and physical charge adapter remain general written proofs with executable checks. Arbitrary rematching of old M after withdrawals and universal5/6 are not claimed."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

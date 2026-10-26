@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "counts": {
+    "universal_tree_certificate_controls": 1467,
+    "independent_local_models": 546,
+    "fully_frozen_normalization_obstruction_models": 19,
+    "obstruction_explicit_strict_rank_events": 3002,
+    "weighted_pocket_certificates": 205,
+    "retained_matching_extension_models": 205,
+    "regional_models": 140,
+    "mixed_export_models": 140,
+    "only_nonmixed_export_models": 0,
+    "sealed_even_models": 0,
+    "parallel_safe_export_square_witnesses": 0,
+    "joint_models": 140,
+    "models_with_safe_cross_refund": 0,
+    "safe_cross_matching_edges": 0,
+    "models_with_TP_TP_debit": 0,
+    "models_with_TP_PP_debit": 0,
+    "models_with_external_TP_debit": 140,
+    "geometric_port_budget_models": 140,
+    "ported_export_forest_ends_allocated": 140,
+    "unported_degree_four_TP_exports": 2354,
+    "actual_no_reuse_payment_maps": 140,
+    "successor_reserves_converted_and_spent_once": 807,
+    "distinct_unspent_full_units": 1547,
+    "sharp_fully_frozen_joint_withdrawal_models": 140,
+    "arbitrary_joint_completion_controls": 64
+  },
+  "samples": [
+    {
+      "k": 2,
+      "withdrawn_guards": 1,
+      "selected": 36,
+      "matching": 11,
+      "objective": 47,
+      "whole_surplus": 1,
+      "strip_surplus_twice": -1
+    },
+    {
+      "k": 4,
+      "withdrawn_guards": 3,
+      "selected": 60,
+      "matching": 23,
+      "objective": 83,
+      "whole_surplus": 1,
+      "strip_surplus_twice": -3
+    },
+    {
+      "k": 16,
+      "withdrawn_guards": 15,
+      "selected": 204,
+      "matching": 95,
+      "objective": 299,
+      "whole_surplus": 1,
+      "strip_surplus_twice": -15
+    },
+    {
+      "k": 128,
+      "withdrawn_guards": 127,
+      "selected": 1548,
+      "matching": 767,
+      "objective": 2315,
+      "whole_surplus": 1,
+      "strip_surplus_twice": -127
+    }
+  ],
+  "scope": "Written all-k exact maximum17k+12+q with retained M0 and T0 except any q interior guard sites; arbitrary extra T and matching edges, no freeze required for upper bound. Explicit all-subset attaining family fully frozen. Nine-vertex tree bound6 and equality classification proved generally by weighted feasibility certificate; physical D4 payment injectively reroutes lost half rebates through successor old reserves, leaving exactly k-q full units. Does not prove the same upper bound for simultaneous arbitrary rematching of old M or arbitrary T/P withdrawals, nor universal5/6."
+}
