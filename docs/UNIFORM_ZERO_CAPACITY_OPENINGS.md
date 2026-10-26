@@ -210,6 +210,10 @@ gate lists and fee bit lengths, and use standard min-cost flow. ∎
 
 No enumeration of 2^|G| states is part of this optimizer. The independent
 validator does enumerate small choices to check the general theorem.
+The callable `solve_openings(cur,bits,gates,weights,required)` performs the
+two-state audit and costed flow without primitive-pack enumeration; it returns
+actual opened tiles, or explicit owner/anchor loss witnesses on rejection.
+Independent primitive enumeration is confined to the verification path.
 
 ## 5. Frozen accepted and rejected controls
 

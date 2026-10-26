@@ -11,6 +11,8 @@ import itertools
 import json
 from pathlib import Path
 import random
+from unittest.mock import patch
+import check_protected_linear_corridors as corridor_impl
 
 from check_canonical_band_coarsening import forests, tile_refinement, random_board
 from check_compensation_flow_normal_form import owner_data
@@ -105,6 +107,23 @@ def compile_openings(cur,bits,gates):
     return result
 
 
+def solve_openings(cur,bits,gates,weights,required=frozenset()):
+    """Polynomial solving API: two physical states and one costed flow.
+
+    Primitive-pack and gate-subset enumeration belong only to the audit.
+    Rejection returns exact original-owner/anchor loss witnesses.
+    """
+    direct_check(*cur)
+    assert set(weights)==set(range(len(gates)))
+    assert all(isinstance(w,int) and w>=0 for w in weights.values())
+    compiled=compile_openings(cur,bits,gates)
+    if not compiled['accepted']:
+        return dict(accepted=False,losses=[dict(owner=o,anchor=compiled['old']['anchors'][j])
+                                          for o,j in compiled['losses']])
+    result=corridor_flow(compiled['base'],compiled['corridors'],weights,required,independent=False)
+    return dict(accepted=True,**result,opened_tiles=[gates[i] for i in result['opened']])
+
+
 def audit(cur,bits,gates,counts,exhaustive=True):
     direct_check(*cur);compiled=compile_openings(cur,bits,gates);n=len(gates);allgates=set(range(n))
     chosen=subsets(range(n)) if exhaustive else [frozenset(),frozenset(allgates),
@@ -144,7 +163,8 @@ def audit(cur,bits,gates,counts,exhaustive=True):
         counts['two_state_iff_all_subset_monotonicity_audits']+=1
     if compiled['accepted']:
         weights={i:(i%4)+1 for i in allgates}
-        result=corridor_flow(compiled['base'],compiled['corridors'],weights)
+        result=solve_openings(cur,bits,gates,weights)
+        assert result['accepted']
         if exhaustive:
             expected=max(((r['value'],sum(weights[i] for i in F),r['links']) for F,r in records.items()),key=lambda t:(t[0],-t[1],-t[2]))
             assert (result['value'],result['fee'],result['links'])==expected
@@ -223,6 +243,17 @@ def main():
     row=audit(cur,bits,gates,counts)
     assert not row['accepted'] and (row['old_value'],row['full_value'],row['losses'])==(2,1,10)
     examples['frozen_loss_rejection']=row
+    # The callable solver must not invoke the exponential independent
+    # primitive or operation-subset checks used by this audit.
+    with patch.object(corridor_impl,'constrained_optimum',side_effect=RuntimeError('enumeration in solver')), \
+         patch.object(corridor_impl,'subsets',side_effect=RuntimeError('subset enumeration in solver')):
+        c,b,_,g=balanced_frozen()
+        solved=solve_openings(c,b,g,{i:(i%4)+1 for i in range(len(g))})
+        assert solved['accepted'] and (solved['value'],solved['fee'],solved['links'])==(4,10,2)
+        c,b,_,g=scalar_guard_trap()
+        rejected=solve_openings(c,b,g,dict.fromkeys(range(len(g)),1))
+        assert not rejected['accepted'] and len(rejected['losses'])==10
+    counts['solver_API_without_enumeration_checks']+=2
     for index in range(180):
         R,C=rng.choice([(4,6),(6,6),(6,8)])
         cur=random_board(R,C,rng)

@@ -62,7 +62,7 @@ def apply(base, corridors, opened, compressed=False):
     return (*base[:3],W,base[4])
 
 
-def corridor_flow(base,corridors,weights,required=frozenset()):
+def corridor_flow(base,corridors,weights,required=frozenset(),independent=True):
     """Costed exact full fork network, independently constructed here.
 
     Integral min-cost max-flow uses Bellman--Ford. New support arcs cost
@@ -117,7 +117,8 @@ def corridor_flow(base,corridors,weights,required=frozenset()):
     nlinks=sum(e['initial']-e['cap'] for e in used if e['tag'] and e['tag'][0]=='link')
     paid={e['tag'][1] for e in used if e['tag'] and e['tag'][0]=='source'}
     assert required<=paid and nlinks<=H
-    assert constrained_optimum(apply(base,corridors,opened),required)==(value,nlinks)
+    if independent:
+        assert constrained_optimum(apply(base,corridors,opened),required)==(value,nlinks)
     return dict(value=value,fee=fee,links=nlinks,opened=sorted(opened),paid=sorted(paid),scale=scale)
 
 
