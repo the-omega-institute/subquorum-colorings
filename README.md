@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [cross-band matching refunds for occupied strips](docs/OCCUPIED_STRIP_EXPORT_CANCELLATION.md):
+actual TP-column-to-BP-column matching exports cancel across disjoint strips,
+including different directions, through distinct BP targets. The exact regional
+ledger retains only one debit per TP-TP edge and half per TP-PP or exterior
+TP export. All coefficients have frozen sharp controls. A fully frozen split
+receiver crosses two bands and violates the former per-strip receiver-closure
+hypothesis, while joint compensation applies; all-q copies supply 5q physical
+surplus without reused tiles. Single-terminal safe parallel exports force a
+boundary P-square. Checks cover 922 joint models/806 exhaustive matchings/1798
+freezing events and 6 scoped Lean kernels, two axiom-free. The remaining target
+is unpaid demand versus unused physical slack; freezing alone does not force
+full routing, and a universal improvement over the 5/6 bound remains open.
+
 New [identity-safe admission of previously unused betas](docs/NEW_BETA_IDENTITY_SAFE_AUGMENTATION.md):
 the reachable-beta saturation guard is removed. Among minimum-cost residual
 augmentations, choosing the fewest residual arcs keeps every beta normalized

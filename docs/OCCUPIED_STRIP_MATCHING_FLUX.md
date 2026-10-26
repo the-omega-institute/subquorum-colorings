@@ -1,5 +1,11 @@
 # Occupied two-row strips: a sharp mixed-column matching flux
 
+**Continuation:** [cross-band export cancellation](OCCUPIED_STRIP_EXPORT_CANCELLATION.md)
+allows a receiver to cross several strips. A TP export matched to a BP column
+in their disjoint union is refunded once; only TP-TP, TP-PP and exterior TP
+mates remain as debits. Their coefficients have frozen sharp controls. This
+extends the geometric sufficient class without asserting universal full routing.
+
 22 October 2026. Authors: Haobo Ma and Wenlin Zhang.
 
 The neutral-portal corridor theorem required endpoint-free corridors. Here

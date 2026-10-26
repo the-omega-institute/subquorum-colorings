@@ -1,5 +1,11 @@
 # New beta admission without losing old interval identities
 
+**Geometric continuation:** [occupied-strip export cancellation](OCCUPIED_STRIP_EXPORT_CANCELLATION.md)
+classifies actual matching debt across bands. Known full-pool frozen examples
+can have unpaid alphas, so universal full routing is not a valid consequence
+of freezing alone. The remaining general target is to pay that deficit with
+unused physical slack, with original resources counted once.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 We remove the beta saturation guard from the

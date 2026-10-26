@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T07:26:55.876435+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "40%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "39%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.OccupiedStripExportCancellation.distinct_BP_targets' does not depend on any axioms",
+    "'SubQuorum.OccupiedStripExportCancellation.parallel_export_forces_square' does not depend on any axioms",
+    "'SubQuorum.OccupiedStripExportCancellation.exact_joint_flux' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripExportCancellation.corrected_union_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripExportCancellation.safe_union_debit_free' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripExportCancellation.original_grid_compensation' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Six scoped kernels: actual-mate/BP-target injection, local single-terminal parallel-export P-square stencil, exact matching-edge flux, corrected union bound, debit-free safe union, and original-grid partition arithmetic.",
+  "not_formalized": [
+    "The geometric strip-to-column adapter, finite cardinality summation, BB-TT forests, complete physical freezing and all-copy constructions are written proofs with executable checks; not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
