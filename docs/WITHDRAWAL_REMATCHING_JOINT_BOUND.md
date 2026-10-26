@@ -2,6 +2,11 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Research continuation.
 
+The subsequent [two-guard merger theorem](LOWER_GUARD_MERGER_FRONTIER.md)
+also permits arbitrary lower-guard withdrawals without increasing the sharp
+frontier, treats the resulting seven-site and cyclic thirteen-site regions,
+and proves a local guard-retention implication under complete freezing.
+
 The exact guard-withdrawal frontier survives arbitrary rematching of the old
 endpoints. We prove this directly from occupation and the actual matching at
 the boundary of one fixed pocket. Restoring the old matching is unnecessary;

@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T11:42:09.591534+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "28%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "28%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.LowerGuardMergerFrontier.joint_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.joint_weighted_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.lower_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.lower_occupation_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.lower_equality_data' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.lower_matching_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.two_guard_component_sum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.lower_permissions_cancel' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.sharp_margin' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.strict_witness_not_mate' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.mate_plus_one_exclusion' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.selection_forced_by_two_traps' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.explicit_lower_patch_counts' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.LowerGuardMergerFrontier.physical_exterior_cut' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Universal13-site weighted identity and capacity16 in doubled occupation; seven-site identity/bound11/equality obstruction under actual mate coverage gives10; all-k two-guard count cancellation and sharp margin; strict witness/mate-plus-one exclusion and selection forced by two alternative traps; lower-only sharp patch counts and signed exterior cut.",
+  "not_formalized": [
+    "All-k free-coordinate classification and boundary adapter, actual guard-implication geometry, full explicit patch freezing schedule and original-tile physical token adapter remain general written proofs with executable checks. Exact sharp frozen attainment inherits the previous all-subset upper-guard construction, which retains lower guards. Not an end-to-end all-k Lean grid theorem; arbitrary other T/P withdrawals and universal5/6 remain open."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
