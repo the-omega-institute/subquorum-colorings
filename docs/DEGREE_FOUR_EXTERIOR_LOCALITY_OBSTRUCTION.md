@@ -2,6 +2,12 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research branch.
 
+Positive follow-up: [sharp completion and physical reserves](FROZEN_STRIP_SHARP_COMPLETION_AND_RESERVES.md)
+settles the earlier genuinely negative one-corner D4 family: arbitrary fixed-P
+reselections have a sharp k-unit global margin, and every retained completion
+has explicit distinct rebates paying D4 plus k unused original-tile reserves.
+This is a stated geometric class, not a universal local-access claim.
+
 The [degree-four occupied-strip budget](OCCUPIED_STRIP_DEGREE_FOUR_BUDGET.md)
 reduces regional losses to actual unported degree-four TP exports. A tempting
 next assertion is that every such endpoint has an exterior positive-surplus

@@ -2,6 +2,13 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+Positive continuation: [sharp fixed-P completion and distinct physical reserves](FROZEN_STRIP_SHARP_COMPLETION_AND_RESERVES.md)
+proves T<=13k+11 for EVERY feasible reselection on the one-corner sharp family's
+endpoint footprint, with a completely frozen attaining completion. All retained
+completions keep regional2S=1-k but admit an explicit no-reuse physical payment
+and k unused full units. This settles this negative-strip family at its true
+fixed-P maximum; unrestricted endpoint footprints remain open.
+
 The [cross-band matching ledger](OCCUPIED_STRIP_EXPORT_CANCELLATION.md) left
 TP--TP, TP--PP and exterior matching debits. We now bound their TOTAL using
 the actual ends of BB--TT forests. A transverse TP export either uses a

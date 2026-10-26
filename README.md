@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [sharp completion and distinct reserves for negative frozen strips](docs/FROZEN_STRIP_SHARP_COMPLETION_AND_RESERVES.md):
+for the original k-module endpoint footprint, EVERY feasible reselection has
+T<=13k+11, by disjoint local face/pair covers. A periodic completion retains
+all old selections and freezing, attains this true fixed-P maximum, and keeps
+regional2S=1-k. For every retained completion, distinct original tiles give
+one half-unit rebate per D4; the internal half unit pays the exterior boundary
+demand, and k different full-unit endpoint-free reserves remain unused.
+The sharp whole-board surplus is k. Checks include 80 retained extensions,
+independent all-selection/retained DP optima, 24 isometries and 15 Lean audits,
+including universal local cover proofs and the concrete 18-endpoint optimum.
+Arbitrary-footprint geometric coverage and universal 5/6 improvement remain open.
+
 New [no uniform exterior-donor radius for degree-four exports](docs/DEGREE_FOUR_EXTERIOR_LOCALITY_OBSTRUCTION.md):
 an all-h completely frozen connected construction has two actual unported
 degree-four TP exports in disjoint original-tile-aligned strips, each at

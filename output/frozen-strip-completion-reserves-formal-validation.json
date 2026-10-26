@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T09:30:47.124708+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "39%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "38%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.FrozenStripCompletionReserves.pair_limit' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.forced_blank' does not depend on any axioms",
+    "'SubQuorum.FrozenStripCompletionReserves.face_limit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.module_partition' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.module_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.cap_partition' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.cap_upper_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.sum_module_bounds' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.global_cover_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.geometry_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.mate_closed' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.certificate_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.sharp_concrete_counts' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.FrozenStripCompletionReserves.distinct_physical_reserves' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Universal local module T<=13 and cap T<=11 from actual feasibility, exact geometric partitions, general sum aggregation; concrete sharp k2 37T/9M/18P feasibility and inductive freezing, negative regional surplus, distinct physical full-unit reserves and half rebates.",
+  "not_formalized": [
+    "The all-k placement of local covers into the global board, periodic attaining configuration, geometric retained-completion invariance and general physical reserve adapter remain written proofs with executable checks. Universal local-cover implications and their fixed local geometry are kernel-checked; the full all-k board theorem is not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

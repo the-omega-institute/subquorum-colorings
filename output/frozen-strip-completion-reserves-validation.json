@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "counts": {
+    "retained_extension_models": 80,
+    "retained_rank_events": 2080,
+    "strict_freezing_events": 3370,
+    "regional_models": 45,
+    "mixed_export_models": 45,
+    "only_nonmixed_export_models": 0,
+    "sealed_even_models": 0,
+    "parallel_safe_export_square_witnesses": 0,
+    "joint_models": 45,
+    "models_with_safe_cross_refund": 0,
+    "safe_cross_matching_edges": 0,
+    "models_with_TP_TP_debit": 0,
+    "models_with_TP_PP_debit": 0,
+    "models_with_external_TP_debit": 45,
+    "geometric_port_budget_models": 45,
+    "ported_export_forest_ends_allocated": 45,
+    "unported_degree_four_TP_exports": 410,
+    "sharp_all_k_models": 21,
+    "distinct_physical_unit_reserves": 362,
+    "independent_column_DP_optima": 14,
+    "isometry_controls": 24
+  },
+  "samples": [
+    {
+      "k": 0,
+      "shape": [
+        6,
+        4
+      ],
+      "selected": 11,
+      "matching": 1,
+      "endpoints": 2,
+      "maximum_T_over_all_feasible_reselections": 11,
+      "whole_surplus": 0,
+      "regional_surplus_twice": 1,
+      "internal_half_unit_budget": 1,
+      "D4": 0,
+      "outside_boundary_half_unit_demand": 1,
+      "distinct_core_half_unit_rebates": 0,
+      "distinct_endpoint_free_unit_reserves": 0,
+      "selected_region": 3,
+      "endpoint_region": 1
+    },
+    {
+      "k": 1,
+      "shape": [
+        6,
+        10
+      ],
+      "selected": 24,
+      "matching": 5,
+      "endpoints": 10,
+      "maximum_T_over_all_feasible_reselections": 24,
+      "whole_surplus": 1,
+      "regional_surplus_twice": 0,
+      "internal_half_unit_budget": 1,
+      "D4": 1,
+      "outside_boundary_half_unit_demand": 1,
+      "distinct_core_half_unit_rebates": 1,
+      "distinct_endpoint_free_unit_reserves": 1,
+      "selected_region": 8,
+      "endpoint_region": 4
+    },
+    {
+      "k": 2,
+      "shape": [
+        6,
+        16
+      ],
+      "selected": 37,
+      "matching": 9,
+      "endpoints": 18,
+      "maximum_T_over_all_feasible_reselections": 37,
+      "whole_surplus": 2,
+      "regional_surplus_twice": -1,
+      "internal_half_unit_budget": 1,
+      "D4": 2,
+      "outside_boundary_half_unit_demand": 1,
+      "distinct_core_half_unit_rebates": 2,
+      "distinct_endpoint_free_unit_reserves": 2,
+      "selected_region": 13,
+      "endpoint_region": 7
+    },
+    {
+      "k": 4,
+      "shape": [
+        6,
+        28
+      ],
+      "selected": 63,
+      "matching": 17,
+      "endpoints": 34,
+      "maximum_T_over_all_feasible_reselections": 63,
+      "whole_surplus": 4,
+      "regional_surplus_twice": -3,
+      "internal_half_unit_budget": 1,
+      "D4": 4,
+      "outside_boundary_half_unit_demand": 1,
+      "distinct_core_half_unit_rebates": 4,
+      "distinct_endpoint_free_unit_reserves": 4,
+      "selected_region": 23,
+      "endpoint_region": 13
+    },
+    {
+      "k": 16,
+      "shape": [
+        6,
+        100
+      ],
+      "selected": 219,
+      "matching": 65,
+      "endpoints": 130,
+      "maximum_T_over_all_feasible_reselections": 219,
+      "whole_surplus": 16,
+      "regional_surplus_twice": -15,
+      "internal_half_unit_budget": 1,
+      "D4": 16,
+      "outside_boundary_half_unit_demand": 1,
+      "distinct_core_half_unit_rebates": 16,
+      "distinct_endpoint_free_unit_reserves": 16,
+      "selected_region": 83,
+      "endpoint_region": 49
+    },
+    {
+      "k": 128,
+      "shape": [
+        6,
+        772
+      ],
+      "selected": 1675,
+      "matching": 513,
+      "endpoints": 1026,
+      "maximum_T_over_all_feasible_reselections": 1675,
+      "whole_surplus": 128,
+      "regional_surplus_twice": -127,
+      "internal_half_unit_budget": 1,
+      "D4": 128,
+      "outside_boundary_half_unit_demand": 1,
+      "distinct_core_half_unit_rebates": 128,
+      "distinct_endpoint_free_unit_reserves": 128,
+      "selected_region": 643,
+      "endpoint_region": 385
+    }
+  ],
+  "scope": "General written disjoint cell cover gives T<=13k+11 for EVERY feasible reselected T with this fixed P, with no freezing/retained-T hypothesis for the upper bound. Explicit all-k completion retains old T and freezing and attains the bound, keeps regional2S=1-k, gives exact distinct physical compensation plus k unused whole units. General grid coverage and universal5/6 improvement remain open."
+}
