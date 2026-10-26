@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T10:32:22.125027+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.EndpointRematchingNormalization.unchanged_outside' depends on axioms: [propext]",
+    "'SubQuorum.EndpointRematchingNormalization.auxiliary_inside' depends on axioms: [propext]",
+    "'SubQuorum.EndpointRematchingNormalization.normalized_involution' does not depend on any axioms",
+    "'SubQuorum.EndpointRematchingNormalization.normalized_no_fixed_points' does not depend on any axioms",
+    "'SubQuorum.EndpointRematchingNormalization.normalized_edges_permitted' does not depend on any axioms",
+    "'SubQuorum.EndpointRematchingNormalization.even_two_port_cut' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.synchronized_ports' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.no_certified_trap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.sharp_bound_transfer' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.trap_geometry_1' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.trap_geometry_2' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.trap_geometry_3' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.actual_payment_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointRematchingNormalization.actual_refund_ledger' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Universal closed-region matching splice involution/no fixed points/permitted edges; even-cut two-port arithmetic; strict-rank trap exclusion for partial certified sets; sharp-bound transfer; all three noncanonical local trap geometries; physical resource-type/index injection and exact refund-demand cancellation.",
+  "not_formalized": [
+    "The all-k grid boundary classification, finite cut-count identity from an actual matching, local exhaustive matching classification, adapter to actual freezing layers and full normalization construction remain written proofs with executable checks. No end-to-end all-k board theorem is claimed."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

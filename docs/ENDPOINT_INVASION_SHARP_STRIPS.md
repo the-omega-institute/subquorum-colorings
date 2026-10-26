@@ -11,6 +11,11 @@ explicit frozen extension consumes one old reserve and replaces it in a differen
 original tile. These are results for this specified family; the general geometric
 compensation problem and universal improvement of 5/6 remain open.
 
+The subsequent [rematching and rank-trap note](ENDPOINT_REMATCHING_NORMALIZATION_AND_TRAPS.md)
+removes the old-edge retention requirement while keeping T0 and P0. It also
+proves that complete freezing forces the old edges to be retained, and gives
+an actual matching-specific no-reuse ledger for a sharp 4^k-matching family.
+
 ## 1. The retained-extension theorem
 
 Let k>=1 and let (T0,M0) be exactly the b=1 configuration on the 6-by-(6k+4)

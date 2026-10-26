@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "counts": {
+    "noncanonical_rank_trap_templates": 3,
+    "core_boundary_geometry_controls": 360,
+    "weighted_pocket_certificates": 635,
+    "fully_frozen_extension_models": 86,
+    "extension_models": 635,
+    "actual_fully_frozen_models": 20,
+    "arbitrary_rematching_models": 635,
+    "nontrivial_normalizations": 565,
+    "regional_models": 430,
+    "mixed_export_models": 430,
+    "only_nonmixed_export_models": 0,
+    "sealed_even_models": 0,
+    "parallel_safe_export_square_witnesses": 0,
+    "joint_models": 430,
+    "models_with_safe_cross_refund": 0,
+    "safe_cross_matching_edges": 0,
+    "models_with_TP_TP_debit": 0,
+    "models_with_TP_PP_debit": 0,
+    "models_with_external_TP_debit": 430,
+    "geometric_port_budget_models": 430,
+    "ported_export_forest_ends_allocated": 430,
+    "unported_degree_four_TP_exports": 4181,
+    "matching_specific_no_reuse_ledgers": 430,
+    "extra_actual_D4_paid_by_distinct_BP_refunds": 829,
+    "sharp_all_port_rematching_models": 430,
+    "robust_unfrozen_traps": 2805,
+    "single_invader_all_matching_controls": 76,
+    "varied_T_rematching_controls": 64,
+    "varied_P_and_T_rematching_controls": 64
+  },
+  "samples": [
+    {
+      "k": 1,
+      "shape": [
+        6,
+        10
+      ],
+      "all_port_sharp_matching_count": "4^1",
+      "sharp_objective": 29,
+      "whole_surplus": 1,
+      "single_invader_matching_count": 4,
+      "single_invader_fully_frozen_matching_count": 1
+    },
+    {
+      "k": 2,
+      "shape": [
+        6,
+        16
+      ],
+      "all_port_sharp_matching_count": "4^2",
+      "sharp_objective": 46,
+      "whole_surplus": 2,
+      "single_invader_matching_count": 4,
+      "single_invader_fully_frozen_matching_count": 1
+    },
+    {
+      "k": 16,
+      "shape": [
+        6,
+        100
+      ],
+      "all_port_sharp_matching_count": "4^16",
+      "sharp_objective": 284,
+      "whole_surplus": 16,
+      "single_invader_matching_count": 4,
+      "single_invader_fully_frozen_matching_count": 1
+    },
+    {
+      "k": 128,
+      "shape": [
+        6,
+        772
+      ],
+      "all_port_sharp_matching_count": "4^128",
+      "sharp_objective": 2188,
+      "whole_surplus": 128,
+      "single_invader_matching_count": 4,
+      "single_invader_fully_frozen_matching_count": 1
+    }
+  ],
+  "scope": "Written all-k even-core two-adjacent-port normalization covers EVERY feasible T0/P0-retained arbitrary actual matching; sharp T+M<=area/2-k. Noncanonical old-core matching creates a robust three-endpoint strict-rank trap, so complete freezing forces all old M0 edges already retained. Local matching enumeration is a control, not the general proof. Old T/P withdrawal, arbitrary footprint compensation and universal5/6 remain open."
+}
