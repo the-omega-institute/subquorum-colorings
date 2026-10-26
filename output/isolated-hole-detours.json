@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "parameter_controls": 50,
+  "smallest": {
+    "q": 1,
+    "height": 6,
+    "width": 8,
+    "T": 20,
+    "H": 20,
+    "M": 4,
+    "J": 24,
+    "exact_adjacent_matching": 19,
+    "exact_adjacent_defect": 1,
+    "exact_minimum_relay_edges": 1,
+    "forced_holes": 5
+  },
+  "largest": {
+    "q": 50,
+    "height": 6,
+    "width": 400,
+    "T": 1000,
+    "H": 1000,
+    "M": 200,
+    "J": 1200,
+    "exact_adjacent_matching": 950,
+    "exact_adjacent_defect": 50,
+    "exact_minimum_relay_edges": 50,
+    "forced_holes": 250
+  },
+  "arbitrary_both_colour_samples": 200,
+  "padded_controls": [
+    {
+      "q": 1,
+      "height": 10,
+      "width": 12,
+      "T": 56,
+      "H": 56,
+      "M": 4,
+      "J": 60,
+      "exact_adjacent_matching": 55,
+      "exact_adjacent_defect": 1,
+      "exact_minimum_relay_edges": 1,
+      "forced_holes": 5
+    },
+    {
+      "q": 2,
+      "height": 16,
+      "width": 26,
+      "T": 200,
+      "H": 200,
+      "M": 8,
+      "J": 208,
+      "exact_adjacent_matching": 198,
+      "exact_adjacent_defect": 2,
+      "exact_minimum_relay_edges": 2,
+      "forced_holes": 10
+    },
+    {
+      "q": 3,
+      "height": 28,
+      "width": 54,
+      "T": 744,
+      "H": 744,
+      "M": 12,
+      "J": 756,
+      "exact_adjacent_matching": 741,
+      "exact_adjacent_defect": 3,
+      "exact_minimum_relay_edges": 3,
+      "forced_holes": 15
+    },
+    {
+      "q": 5,
+      "height": 10,
+      "width": 46,
+      "T": 210,
+      "H": 210,
+      "M": 20,
+      "J": 230,
+      "exact_adjacent_matching": 205,
+      "exact_adjacent_defect": 5,
+      "exact_minimum_relay_edges": 5,
+      "forced_holes": 25
+    }
+  ],
+  "exhaustive_square_states": 11,
+  "corner_exhaustion": {
+    "profiles": 4096,
+    "feasible_T": 195,
+    "histogram": {
+      "0": 1,
+      "1": 10,
+      "2": 39,
+      "3": 69,
+      "4": 54,
+      "5": 19,
+      "6": 3
+    },
+    "maximum_T": 6,
+    "adjacent_defect": 1,
+    "independent_DP_matches_full_exhaustion": true
+  },
+  "independent_column_dp": [
+    {
+      "q": 1,
+      "maximum_T": 20,
+      "maximum_J": 24,
+      "feasible_T": 81651600,
+      "maximizing_T": 19,
+      "peak_states": 129
+    },
+    {
+      "q": 2,
+      "maximum_T": 40,
+      "maximum_J": 48,
+      "feasible_T": 3462825824142000,
+      "maximizing_T": 38,
+      "peak_states": 129
+    },
+    {
+      "q": 3,
+      "maximum_T": 60,
+      "maximum_J": 72,
+      "feasible_T": 146857679499733629712800,
+      "maximizing_T": 76,
+      "peak_states": 129
+    },
+    {
+      "q": 4,
+      "maximum_T": 80,
+      "maximum_J": 96,
+      "feasible_T": 6228201799262577577386704346000,
+      "maximizing_T": 152,
+      "peak_states": 129
+    }
+  ],
+  "scope": "Written all-q mixed-cover proof, exact arbitrary-T fixed-footprint maximum, exact adjacent defect q, no integral/fractional local cover, and q necessary/sufficient physical relay edges. Padding preserves all claims.",
+  "trust_boundary": "Finite DP and samples validate adapters, not universal-width proof. Fractional impossibility and minimum-cost lower bound are written conservation/disjointness proofs. Universal cover existence, arbitrary footprints, freezing, 5/6 improvement and end-to-end grid Lean are not claimed."
+}

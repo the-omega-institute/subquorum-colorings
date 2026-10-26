@@ -1,5 +1,33 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [isolated-hole obstruction and actual-edge detours](docs/ISOLATED_HOLE_OBSTRUCTION_AND_MATCHING_DETOURS.md):
+on a 6-by-8q footprint, every feasible selection satisfies J<=area/2, sharply,
+by an explicit disjoint cover with seven guarded pairs, six endpoint-free squares
+and one forced-hole detour pair per cell. The sharp selection has exact adjacent
+T-to-H matching deficiency q. Colour conservation rules out even fractional
+exact covers made only of forced-hole singletons, guarded adjacent pairs and
+endpoint-free unit squares, in all alignments. Exactly q distinct actual matching
+edges are necessary and sufficient for disjoint alternating-path payments;
+even padding moves the isolated holes arbitrarily far from the boundary.
+The endpoint matching is unique. Fifty q controls, 200 arbitrary selections,
+four padded boards, independent arbitrary-T column DP and seven scoped local
+Lean declarations pass. The numerical six-row half-area bound was already known;
+the new contribution is the structural cover, obstruction and exact relay cost.
+General cover existence and the universal 5/6 improvement remain open.
+[Independent review ACCEPT](output/isolated-hole-detours-review.json) covers
+this all-q theorem and reports reproducing the supplied Python output, not Lean.
+
+The [unbounded isolated-hole relay-cost theorem](docs/UNBOUNDED_ISOLATED_HOLE_RELAY_COST.md)
+separates defect count from path cost: for every k>=1 an explicit (4k+2)-square
+board attains J=area/2 and has adjacent deficit ONE, yet every complete
+disjoint alternating-path payment needs at least k actual matching edges,
+under every rematching on its P. One specified M attains k with a single
+length-(2k+1) path and otherwise adjacent payments. Thus adding any FIXED
+maximum length of forced-hole detours cannot yield a universal cover, even
+with nonnegative fractional exact coverage. Forty actual boards and another
+actual rematching per board pass; two further scoped Lean kernels verify the
+distance/cost deduction. The lower bound is geometric and holds at every k.
+
 New [unique-matching hole-compensation barrier](docs/UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md):
 for every even w>=6, one explicit endpoint footprint on 4-by-w has a unique
 perfect matching and exact FREE-selection maximum J=2w-1=area/2-1.

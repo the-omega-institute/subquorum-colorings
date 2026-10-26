@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/IsolatedHoleDetours.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3534 \nPages purgeable: 0 \nPages purged: 267678245 \n\nSwap I/O:\nSwapins: 461484520 \nSwapouts: 477664611 \n\nPage Q counts:\nPages active: 147948 \nPages inactive: 145587 \nPages speculative: 1176 \nPages throttled: 0 \nPages wired down: 263137 \n\nCompressor Stats:\nPages used by compressor: 445411 \nPages decompressed: 6956215000 \nPages compressed: 7832139212 \n\nFile I/O:\nPageins: 8577687799 \nPageouts: 26381630 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4617.\nPages active:                                 147364.\nPages inactive:                               145080.\nPages speculative:                              1181.\nPages throttled:                                   0.\nPages wired down:                             263137.\nPages purgeable:                                   2.\n\"Translation faults\":                    31424428624.\nPages copy-on-write:                      1505047304.\nPages zero filled:                       12303845679.\nPages reactivated:                        6851917322.\nPages purged:                              267678246.\nFile-backed pages:                            105530.\nAnonymous pages:                              188095.\nPages stored in compressor:                  3567292.\nPages occupied by compressor:                 445487.\nDecompressions:                           6956215349.\nCompressions:                             7832140809.\nPageins:                                  8577687800.\nPageouts:                                   26381630.\nSwapins:                                   461484564.\nSwapouts:                                  477665087."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.centre_neighbour_in_P",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.square_capacity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.unrestricted_disjoint_capacity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.singleton_colour_obstruction",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.exact_mixed_margin",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.padded_footprint_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.exact_adjacent_defect",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.outer_L_distance",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.IsolatedHoleDetours.unbounded_relay_cost",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.IsolatedHoleDetours.centre_neighbour_in_P' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.square_capacity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.unrestricted_disjoint_capacity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.singleton_colour_obstruction' depends on axioms: [propext, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.exact_mixed_margin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.padded_footprint_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.exact_adjacent_defect' depends on axioms: [propext, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.outer_L_distance' depends on axioms: [propext, Quot.sound]\n'SubQuorum.IsolatedHoleDetours.unbounded_relay_cost' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Actual centre-neighbour coordinates; local square capacity; arbitrary-list disjoint capacities; integer colour obstruction and exact margin/footprint/defect arithmetic; arbitrary-k outer-L distance and alternating-path actual-edge cost, with explicit hypotheses.",
+  "not_formalized": "Periodic disjoint coordinate cover, all forced-hole classification, fractional conservation, feasible sharp selections, square/path assembly, arbitrary-selection DP and geometric minimum-relay-edge proof remain written mathematics with computational controls."
+}

@@ -15,6 +15,12 @@ free-selection maximum J=2w-1. One adjacent relocation of a selected vertex
 also repairs the ownership criterion at the same J, keeping P and M fixed.
 This separates rematching from relocation of T and direct use of hole credit.
 
+Subsequent research [excludes universal adjacent-hole payment and the proposed
+purely local mixed cover](ISOLATED_HOLE_OBSTRUCTION_AND_MATCHING_DETOURS.md):
+an interior all-q footprint has exact adjacent deficiency q, while distinct
+actual-edge length-three detours provide the missing payments. The guarded
+cover proved for P_w below remains valid; it was never a universal cover claim.
+
 ## 1. Setup and the fixed endpoint footprint
 
 Use grid coordinates (r,c), 0<=r<4, 0<=c<w, with ordinary grid adjacency and

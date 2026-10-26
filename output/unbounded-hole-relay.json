@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "parameter_controls": 40,
+  "smallest": {
+    "k": 1,
+    "side": 6,
+    "T": 6,
+    "H": 6,
+    "M": 12,
+    "J": 18,
+    "exact_adjacent_defect": 1,
+    "minimum_T_to_centre_distance": 3,
+    "exact_minimum_actual_relay_edges": 1,
+    "no_fixed_ell_cover_for_each_ell_below_k": true,
+    "transposed_rematching_payment_checked": true
+  },
+  "largest": {
+    "k": 40,
+    "side": 162,
+    "T": 162,
+    "H": 162,
+    "M": 12960,
+    "J": 13122,
+    "exact_adjacent_defect": 1,
+    "minimum_T_to_centre_distance": 81,
+    "exact_minimum_actual_relay_edges": 40,
+    "no_fixed_ell_cover_for_each_ell_below_k": true,
+    "transposed_rematching_payment_checked": true
+  },
+  "scope": "Written all-k sharp actual family: adjacent defect one, relay-edge cost k for explicit M, geometric lower bound k under every rematching, no fixed-length forced-hole detour exact cover even fractionally. Standard full-matching decomposition checks another actual M per parameter.",
+  "trust_boundary": "All-k lower bound, fractional conservation and every-rematching decomposition are written proofs. Finite actual-coordinate controls are validation. No unique matching, freezing, universal numeric counterexample or end-to-end Lean grid formalization is claimed."
+}
