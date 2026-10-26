@@ -1,0 +1,681 @@
+{
+  "status": "PASS",
+  "theorem": "For every m>=2, retain P0, arbitrary feasible T and arbitrary actual matching: exact max J=18m+30=area/2. No freezing needed; inherited frozen equality family attains.",
+  "proof": "Written actual-mate capacities, five-white Hall injection, thirteen exact nonnegative affine identities, disjoint colourwise maps and integer colour switch. Enumeration checks the proof only.",
+  "counts": {
+    "boards": 461,
+    "black_payments": 11086,
+    "white_payments": 19819,
+    "selected_white_pocket_injections": 587,
+    "actual_mate_pocket_injections": 1845,
+    "frozen_controls": 123,
+    "positive_prefix_deficits": 82,
+    "all_length_prefix_obstructions": 82,
+    "five_white_hall_patterns": 2247
+  },
+  "affine_certificates": [
+    {
+      "group": "black",
+      "fix": {
+        "t44": 1
+      },
+      "bound": [
+        7,
+        9
+      ],
+      "nonnegative_terms": 17
+    },
+    {
+      "group": "black",
+      "fix": {
+        "t44": 0,
+        "t33": 0,
+        "h41": 0
+      },
+      "bound": [
+        1,
+        2
+      ],
+      "nonnegative_terms": 17
+    },
+    {
+      "group": "black",
+      "fix": {
+        "t44": 0,
+        "t33": 0,
+        "h41": 1
+      },
+      "bound": [
+        3,
+        4
+      ],
+      "nonnegative_terms": 20
+    },
+    {
+      "group": "black",
+      "fix": {
+        "t44": 0,
+        "t33": 1,
+        "t24": 0
+      },
+      "bound": [
+        8,
+        9
+      ],
+      "nonnegative_terms": 21
+    },
+    {
+      "group": "black",
+      "fix": {
+        "t44": 0,
+        "t33": 1,
+        "t24": 1,
+        "h41": 0
+      },
+      "bound": [
+        2,
+        3
+      ],
+      "nonnegative_terms": 18
+    },
+    {
+      "group": "black",
+      "fix": {
+        "t44": 0,
+        "t33": 1,
+        "t24": 1,
+        "h41": 1
+      },
+      "bound": [
+        11,
+        12
+      ],
+      "nonnegative_terms": 21
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 0,
+        "t41": 0,
+        "h00": 0
+      },
+      "bound": [
+        74,
+        84
+      ],
+      "nonnegative_terms": 41
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 0,
+        "t41": 0,
+        "h00": 1
+      },
+      "bound": [
+        25,
+        27
+      ],
+      "nonnegative_terms": 42
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 0,
+        "t41": 1,
+        "h23": 0
+      },
+      "bound": [
+        1,
+        2
+      ],
+      "nonnegative_terms": 34
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 0,
+        "t41": 1,
+        "h23": 1
+      },
+      "bound": [
+        4,
+        5
+      ],
+      "nonnegative_terms": 36
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 1,
+        "h13": 0,
+        "h03": 0
+      },
+      "bound": [
+        0,
+        1
+      ],
+      "nonnegative_terms": 32
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 1,
+        "h13": 0,
+        "h03": 1
+      },
+      "bound": [
+        2,
+        4
+      ],
+      "nonnegative_terms": 30
+    },
+    {
+      "group": "switch",
+      "fix": {
+        "t32": 1,
+        "h13": 1
+      },
+      "bound": [
+        9,
+        15
+      ],
+      "nonnegative_terms": 44
+    }
+  ],
+  "obstruction_controls": [
+    {
+      "m": 2,
+      "J": 66,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 3,
+      "J": 84,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 4,
+      "J": 102,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 5,
+      "J": 120,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 6,
+      "J": 138,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 7,
+      "J": 156,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 8,
+      "J": 174,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 9,
+      "J": 192,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 10,
+      "J": 210,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 11,
+      "J": 228,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 12,
+      "J": 246,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 13,
+      "J": 264,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 14,
+      "J": 282,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 15,
+      "J": 300,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 16,
+      "J": 318,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 17,
+      "J": 336,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 18,
+      "J": 354,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 19,
+      "J": 372,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 20,
+      "J": 390,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 21,
+      "J": 408,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 22,
+      "J": 426,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 23,
+      "J": 444,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 24,
+      "J": 462,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 25,
+      "J": 480,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 26,
+      "J": 498,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 27,
+      "J": 516,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 28,
+      "J": 534,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 29,
+      "J": 552,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 30,
+      "J": 570,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 31,
+      "J": 588,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 32,
+      "J": 606,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 33,
+      "J": 624,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 34,
+      "J": 642,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 35,
+      "J": 660,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 36,
+      "J": 678,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 37,
+      "J": 696,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 38,
+      "J": 714,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 39,
+      "J": 732,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 40,
+      "J": 750,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 64,
+      "J": 1182,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    },
+    {
+      "m": 100,
+      "J": 1830,
+      "black_prefix_selected": 12,
+      "white_prefix_holes": 11,
+      "delta_black": 1,
+      "delta_white": 0,
+      "boundary_hole": [
+        5,
+        4
+      ]
+    }
+  ],
+  "scope": "Full grid adapter and actual-mate/Hall geometry are written with solver-free checks. Lean audits local algebra and global switching arithmetic separately. Universal 5/6 remains open."
+}

@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [arbitrary-selection colour-switch theorem](docs/ARBITRARY_SELECTION_COLOUR_SWITCH.md):
+for every m>=2, retaining P0 alone permits arbitrary selections of either colour,
+arbitrary whole-board new endpoints and any actual matching, with exact maximum
+J=18m+30=area/2. No freezing is needed; the known completely frozen family attains.
+A black prefix can genuinely borrow the single boundary hole (5,4); four actual-mate
+capacities and thirteen explicit nonnegative affine identities show that this
+state admits a complementary white budget. Switching colours rules out a global
+excess without spending the same hole twice. All coefficients are published and
+exact-checked without an optimizer; 461 boards, 2,247 five-white Hall controls and
+19 scoped local Lean declarations pass. The full coordinate adapter is written,
+not an end-to-end Lean grid theorem. The universal 5/6 problem remains open.
+
+
 New [neutral occupied envelopes](docs/NEUTRAL_OCCUPIED_ENVELOPE_EXPANSION.md):
 allowing the selected/endpoint footprint to change defeats a direct-entry-only
 cost. An explicit six-cell expansion adds three matching edges, withdraws

@@ -1,5 +1,7 @@
 # Unprotected white selections, sharp terminal cost and a prefix obstruction
 
+Successor: [arbitrary-selection colour switch](ARBITRARY_SELECTION_COLOUR_SWITCH.md) removes the black-selection restriction under retained P0 and proves the sharp whole-board half-area bound.
+
 27 October 2026. Wenlin Zhang and Haobo Ma.
 
 The two bottom white sites in the previous whole-board endpoint theorem need

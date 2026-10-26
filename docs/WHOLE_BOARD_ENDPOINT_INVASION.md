@@ -1,5 +1,7 @@
 # Whole-board endpoint invasion: a sharp half-area compensation theorem
 
+Successor: [arbitrary-selection colour switch](ARBITRARY_SELECTION_COLOUR_SWITCH.md) removes the black-selection restriction under retained P0 and proves the sharp whole-board half-area bound.
+
 Successor: [unprotected white selections, sharp new-black terminal cost and prefix obstruction](UNPROTECTED_WHITE_PAIR_AND_PREFIX_BUDGET.md) removes the two protected-white assumptions and settles one new black-selection permission.
 
 27 October 2026. Wenlin Zhang and Haobo Ma.
