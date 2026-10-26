@@ -6,11 +6,13 @@ cost. An explicit six-cell expansion adds three matching edges, withdraws
 three selections and rematches one old edge. Every subset of m possible
 expansions stays completely frozen at exact half-area, without exterior input.
 Complete actual-mate rank tables prove this for arbitrary m, including
-consecutive expansions. Each expansion deletes exactly one already paired
+consecutive expansions. Two local rematchings can be chosen independently
+at each expanded site, giving at least 2^|S| matchings on each enlarged
+footprint and 3^m configurations overall. Each expansion deletes one already paired
 physical surplus/demand; no reserve is released or counted twice. In the
 restricted direct-entry footprint the exact loss is one per active index,
 and no nonempty conversion can completely freeze. Solver-free checks cover
-524 expanded boards and 19,183 restricted conversion pools; five scoped local
+1,645 expanded boards and 19,183 restricted conversion pools; five scoped local
 Lean kernels check shield identities/counts and the conditional trap argument.
 The complete coordinate adapter is written; the universal 5/6 question is open.
 

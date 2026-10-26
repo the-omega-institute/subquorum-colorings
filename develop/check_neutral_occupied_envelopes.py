@@ -32,20 +32,27 @@ def envelope(j):
     return [(r,c+t) for r,c in [(1,8),(1,10),(2,9),(2,8),(2,10),(1,9)]]
 
 
-def expanded(m, S):
-    assert m >= 2 and set(S) <= set(range(m))
+def expanded(m, S, alternate=frozenset()):
+    assert m >= 2 and set(S) <= set(range(m)) and set(alternate)<=set(S)
     h,w,T,M = frozen_family(m)
     T = set(T); M = list(M)
     for j in sorted(S):
         _,_,C,D,*_ = core(j)
         a,b,f,d,e,v = envelope(j)
         T -= {a,b,f}
-        M.remove(next(edge for edge in M if set(edge) == {C,D}))
-        M.extend([(C,a),(D,d),(v,b),(f,e)])
+        if j in alternate:
+            g,oldb=(3,9+6*j),(3,10+6*j)
+            M.remove(next(edge for edge in M if set(edge)=={g,oldb}))
+            M.extend([(g,f),(oldb,e),(a,d),(v,b)])
+        else:
+            M.remove(next(edge for edge in M if set(edge) == {C,D}))
+            M.extend([(C,a),(D,d),(v,b),(f,e)])
     return h,w,T,M
 
 
-def rank_table(m, S):
+def rank_table(m, S, alternate=frozenset(), mixed=False):
+    assert not alternate or mixed
+    scale=6 if mixed else 3
     n = 3*m+2; c = 6*m+9; rec = []
     def add(v,r,a,b): rec.append((v,r,a,b))
     def Z(l): return 4,5+2*l
@@ -59,21 +66,30 @@ def rank_table(m, S):
         a,b,f,d,e,v = envelope(j)
         g = 3,9+6*j
         r = n+1+9*(m-j)
-        add(H,r,g,K(3*j+1)); add(F,r+1,G,K(3*j))
-        add(D,r+2,E,G)
-        if j in S:
-            add(f,r+3,g,d); add(b,r+4,core(j+1)[0],e)
-            add(a,r+5,d,v)
+        if j in alternate:
+            add(b,r,core(j+1)[0],e); add(f,r+1,v,e)
+            add(H,r+2,g,K(3*j+1)); add(F,r+3,G,K(3*j))
+            add(D,r+4,E,G); add(a,r+5,C,v)
+        else:
+            add(H,r,g,K(3*j+1)); add(F,r+1,G,K(3*j))
+            add(D,r+2,E,G)
+            if j in S:
+                add(f,r+3,g,d); add(b,r+4,core(j+1)[0],e)
+                add(a,r+5,d,v)
         add(B,r+6,C,E); add(U,r+7,A,E)
         if j: add((3,4+6*j),r+8,V,K(3*j-1))
-        add(A,3*j,(0,5+6*j),(1,4+6*j))
-        add(C,3*j+1,(0,7+6*j),B)
-        if j in S: add(v,3*j+2,(0,9+6*j),a)
-        t = 3*m+2+10*(m-j)
-        if j in S:
-            add(e,t,b,core(j+1)[8]); add(d,t+1,a,f)
-        add(E,t+2,B,D); add(G,t+3,D,F)
-        add(g,t+4,(2,9+6*j),H)
+        add(A,scale*j,(0,5+6*j),(1,4+6*j))
+        add(C,scale*j+1,(0,7+6*j),B)
+        if j in alternate:
+            add(E,6*j+2,B,D); add(G,6*j+3,D,F)
+            add(d,6*j+4,D,H)
+        if j in S: add(v,scale*j+scale-1,(0,9+6*j),a)
+        t = scale*m+2+10*(m-j)
+        if j in S: add(e,t,b,core(j+1)[8])
+        if j not in alternate:
+            if j in S: add(d,t+1,a,f)
+            add(E,t+2,B,D); add(G,t+3,D,F)
+        add(g,t+4,H,(3,10+6*j) if j in alternate else (2,9+6*j))
         if j<m: add(K(3*j+2),t+5,(3,10+6*j),Z(3*j+3))
         add(K(3*j+1),t+6,H,Z(3*j+2) if j<m else (4,c))
         add(K(3*j),t+7,F,Z(3*j+1)); add(V,t+8,F,Z(3*j))
@@ -113,8 +129,8 @@ def payment(m, S, cur, counts):
     counts['literal_cancellations']+=len(S)
 
 
-def check_board(m,S,counts):
-    cur=expanded(m,S); h,w,T,M=cur; P=endpoints(M); s=len(S)
+def check_board(m,S,counts,alternate=frozenset(),mixed=False):
+    cur=expanded(m,S,alternate); h,w,T,M=cur; P=endpoints(M); s=len(S)
     assert direct_check(*cur)==h*w//2==18*m+30
     assert len(T)==9*m+21-3*s and len(M)==9*m+9+3*s
     original=frozen_family(m); oldP=endpoints(original[3])
@@ -122,7 +138,7 @@ def check_board(m,S,counts):
     assert P-oldP==added
     assert oldP<=P and len(P)==18*m+18+6*s
     assert len({edge_key(e) for e in M}&{edge_key(e) for e in original[3]})==len(original[3])-s
-    rec=rank_table(m,S); rank={v:r for v,r,a,b in rec}
+    rec=rank_table(m,S,alternate,mixed); rank={v:r for v,r,a,b in rec}
     mate={v:u for edge in M for v,u in (edge,edge[::-1])}
     assert len(rec)==len(rank)==len(P) and set(rank)==P
     for v,r,a,b in rec:
@@ -131,14 +147,16 @@ def check_board(m,S,counts):
         for u in (a,b):
             assert u in T or u in P and rank[mate[u]]<r,(m,S,v,r,u)
             if u in P: assert sum(v)%2==sum(mate[u])%2
-    assert max(rank.values())<=13*m+10
-    times=first_times(cur); assert set(times)==P and max(times.values())<=13*m+11
+    bound=(16 if mixed else 13)*m+10
+    assert max(rank.values())<=bound
+    times=first_times(cur); assert set(times)==P and max(times.values())<=bound+1
     # Synchronous replay is intentionally independent of the event queue.
     frozen,layers=frozen_certificate(cur); assert frozen==P
     replay={tuple(item['endpoint']):i+1 for i,layer in enumerate(layers) for item in layer}
     assert replay==times
     payment(m,S,cur,counts)
     counts['boards']+=1; counts['strict_actual_mate_rank_events']+=len(rec)
+    counts['alternate_patch_occurrences']+=len(alternate)
     return len(layers)
 
 
@@ -184,9 +202,25 @@ def main():
     for m in (10,25,50,100):
         for S in (set(range(m)),set(range(0,m,2)),{0},{m-1}):
             max_depth=max(max_depth,check_board(m,S,counts))
+    counts['original_patch_boards']=counts['boards']
+    # 0=no expansion, 1=CD-based expansion, 2=gb-based expansion.
+    # Literal edge sets distinguish all 3^m patterns for these lengths.
+    for m in range(2,7):
+        seen=set()
+        for word in itertools.product((0,1,2),repeat=m):
+            S={j for j,x in enumerate(word) if x}; alternate={j for j,x in enumerate(word) if x==2}
+            max_depth=max(max_depth,check_board(m,S,counts,alternate,mixed=True))
+            key=frozenset(edge_key(e) for e in expanded(m,S,alternate)[3])
+            assert key not in seen; seen.add(key)
+        assert len(seen)==3**m
+    for m in (10,25,50,100):
+        for S in (set(range(m)),set(range(0,m,2)),{0},{m-1}):
+            for alternate in (S,S&set(range(0,m,2))):
+                max_depth=max(max_depth,check_board(m,S,counts,alternate,mixed=True))
+    counts['mixed_patch_boards']=counts['boards']-counts['original_patch_boards']
     restricted_controls(counts)
     result=dict(status='PASS',counts=dict(counts),max_observed_synchronous_depth=max_depth,
-                scope='All subsets for m=2..8; all/even/first/last subsets for m=10,25,50,100. Restricted entry sets and all colour-balanced shield pools for m=2..4.',
+                scope='524 CD-patch subset controls (all subsets m=2..8; structured m=10,25,50,100); 1121 mixed-patch controls (all ternary patterns m=2..6 and structured larger patterns); all colour-balanced restricted shield pools m=2..4.',
                 proof='Written arbitrary-length rank formulas and token deletion; finite enumeration checks the adapter and is not a general proof.',
                 not_claimed='Arbitrary enlarged footprints; global 5/6 improvement; end-to-end Lean coordinate formalization.')
     args.output.parent.mkdir(parents=True,exist_ok=True);args.output.write_text(json.dumps(result,indent=2)+'\n')

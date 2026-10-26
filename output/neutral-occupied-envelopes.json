@@ -1,15 +1,18 @@
 {
   "status": "PASS",
   "counts": {
-    "surviving_physical_payments": 3818,
-    "literal_cancellations": 2078,
-    "boards": 524,
-    "strict_actual_mate_rank_events": 99732,
+    "surviving_physical_payments": 10093,
+    "literal_cancellations": 6658,
+    "boards": 1645,
+    "strict_actual_mate_rank_events": 282246,
+    "alternate_patch_occurrences": 2481,
+    "original_patch_boards": 524,
+    "mixed_patch_boards": 1121,
     "restricted_conversion_pools": 19183,
     "restricted_entry_sets": 336
   },
   "max_observed_synchronous_depth": 1208,
-  "scope": "All subsets for m=2..8; all/even/first/last subsets for m=10,25,50,100. Restricted entry sets and all colour-balanced shield pools for m=2..4.",
+  "scope": "524 CD-patch subset controls (all subsets m=2..8; structured m=10,25,50,100); 1121 mixed-patch controls (all ternary patterns m=2..6 and structured larger patterns); all colour-balanced restricted shield pools m=2..4.",
   "proof": "Written arbitrary-length rank formulas and token deletion; finite enumeration checks the adapter and is not a general proof.",
   "not_claimed": "Arbitrary enlarged footprints; global 5/6 improvement; end-to-end Lean coordinate formalization."
 }

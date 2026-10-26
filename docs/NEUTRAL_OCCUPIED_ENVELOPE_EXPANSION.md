@@ -7,6 +7,8 @@ endpoints that directly touch the old band. A six-cell envelope adds one
 further endpoint, rematches one old edge, and cancels exactly one original
 positive-token/negative-demand pair. Arbitrarily many disjoint envelopes
 remain completely frozen with NO outside input and at exact half-area.
+Two local rematchings can be mixed independently, giving at least 2^|S|
+actual matchings on each enlarged footprint and 3^m configurations overall.
 
 We prove the full all-length construction, its literal actual-mate rank table,
 its physical-token cancellation, and the precise restricted rule it defeats.
@@ -21,8 +23,8 @@ Use the following endpoints in each core j=0,...,m, with t=6j:
     E=(2,6+t), F=(3,6+t), G=(3,7+t), H=(3,8+t),
     U=(2,5+t), V=(3,5+t).
 
-Also g_j=(3,9+6j), b_j=(3,10+6j) for j<m,
-Z_l=(4,5+2l), K_l=(4,6+2l) for l<n, and Q=(4,c).
+Also g_j=(3,9+6j) for 0<=j<=m, b_j=(3,10+6j) for 0<=j<m,
+Z_l=(4,5+2l), K_l=(4,6+2l) for 0<=l<n, and Q=(4,c).
 The isolated edge is (1,1)--(2,1).
 The original matching M0 consists of that edge, AB,CD,EF,GH,UV in each core,
 g_j b_j for j<m, g_m Q, and Z_l K_l. Let P0 be its endpoint set.
@@ -39,6 +41,13 @@ and every selected site has at most one occupied neighbour in T union P.
 An endpoint freezes once TWO distinct adjacent sites are kept. A site is kept
 when selected or its ACTUAL mate has previously frozen. Initially no endpoints
 are frozen. No exterior sites are granted in this note.
+Equivalently, with actual-mate involution mu, F_0 is empty and
+
+    F_(r+1)=F_r union {x in P: |N_R(x) intersect (T union mu(F_r))|>=2}.
+
+A rank witness y at x is selected, or y is an endpoint with
+rank(mu(y))<rank(x). In particular y=mu(x) can never be such a witness:
+it would require rank(x)<rank(x).
 Even coordinate sum means black; odd means white. Witness-mate dependencies
 preserve colour, so black and white rank orders can be supplied independently.
 
@@ -120,6 +129,18 @@ particular
 
     |T_S|=9m+21-3s, |M_S|=9m+9+3s,
     |P_S|=18m+18+6s, J_S=18m+30=area(R)/2.           (2)
+
+For a small reproducible example take m=2, S={0}, on the 6x22 board.
+Remove edge (1,7)--(2,7), withdraw selections (1,8),(1,10),(2,9), and add
+
+    (1,7)--(1,8), (2,7)--(2,8),
+    (1,9)--(1,10), (2,9)--(2,10).
+
+All other original edges and selections are as in Section 1. There are now
+36 selected sites and 30 matching edges, so J=66=132/2; all 60 endpoints
+freeze. This is a counterexample to imposing a loss of one for the occupied
+pair (2,8),(2,10) while omitting (1,9) from its accounting. The two changed
+nonzero tile charges are at (0,10) and (2,10).
 
 Feasibility is local. Every new black site d/e is adjacent to its withdrawn
 shields; no other retained selection gains an occupied neighbour there.
@@ -260,7 +281,85 @@ m+3-s positive tokens and the same number of demands. No token is invented,
 redirected or released as reserve. The original +2 tile retains its two
 separate identities. This proves the physical statement for all S.
 
-## 7. Exact scope of the obstruction and the next cut problem
+## 7. Two local rematchings can be mixed independently
+
+The CD-based choice (1) is not necessary. For any subset A of S, use (1)
+at the indices of S minus A. At each j in A instead retain C_j D_j,
+remove g_j b_j, and add
+
+    g_j f_j, b_j e_j, a_j d_j, w_j b'_j.             (5)
+
+All four are grid edges. The patches are disjoint for arbitrary S and A.
+Call the resulting matching M_(S,A). It has precisely the same endpoint
+set P_S, selected set T_S, objective and tile charges as (1).
+
+**Independent mixed-expansion theorem.** Every M_(S,A) is completely frozen
+without outside input. For each S there are at least 2^|S| different such
+matchings on the SAME T/P footprint; over all S there are at least 3^m
+different fully frozen half-area configurations. This is a lower bound,
+not a classification of all matchings or footprints.
+
+Here is a complete mixed certificate, including consecutive indices of
+different types. The isolated endpoints, Z_l and Q keep their base witnesses
+and ranks. Use the same r_j=n+1+9(m-j). At j not in A use the white table
+in Section 4 unchanged. At j in A use this replacement table:
+
+| White endpoint | Rank | Two witness sites | Actual-mate dependencies |
+| --- | ---: | --- | --- |
+| b'_j | r_j | A_(j+1),e_j | B_(j+1),b_j |
+| f_j | r_j+1 | w_j,e_j | b'_j,b_j |
+| H_j | r_j+2 | g_j,K_(3j+1) | f_j,Z_(3j+1) |
+| F_j | r_j+3 | G_j,K_(3j) | H_j,Z_(3j) |
+| D_j | r_j+4 | E_j,G_j | F_j,H_j |
+| a_j | r_j+5 | C_j,w_j | D_j,b'_j |
+| B_j | r_j+6 | C_j,E_j | D_j,F_j |
+| U_j | r_j+7 | A_j,E_j | B_j,F_j |
+| b_(j-1), j>=1 | r_j+8 | V_j,K_(3j-1) | U_j,Z_(3j-1) |
+
+At either patch type, B_(j+1) and b_j retain ranks r_j-3 and r_j-1.
+Thus all dependencies entering from the next block precede the current
+block, irrespective of its type. Every within-block comparison is strict.
+At a CD-based block the dependencies use that block's original Section 4
+table. No assumption about an adjacent block's choice is needed.
+
+For black endpoints use this top forward wave at EVERY j:
+
+    A_j: rank 6j, witnesses (0,5+6j),(1,4+6j);
+    C_j: rank 6j+1, witnesses (0,7+6j),B_j.
+
+At j in A additionally put E_j,G_j,d_j at ranks 6j+2,6j+3,6j+4,
+with witnesses B_j,D_j; D_j,F_j; D_j,H_j, respectively. Their actual-mate
+dependencies are A_j,C_j; C_j,E_j; C_j,G_j. At every j in S put w_j
+at rank 6j+5, using selected (0,9+6j) and a_j. The mate of a_j is C_j
+for a CD patch and d_j for a gb patch, so both precede w_j. The left
+site at A_(j+1), if converted, has mate w_j of rank 6j+5<6(j+1).
+Consequently this wave works across consecutive patches of either type.
+All these forward ranks are at most 6m+1.
+
+Now set t_j=6m+2+10(m-j). Use the Section 5 reverse table with this
+new t_j at j not in A. At j in A omit d_j,E_j,G_j from the reverse
+table because they were handled in the top wave. Keep
+
+    e_j: rank t_j, witnesses b'_j,U_(j+1), with mates w_j,V_(j+1);
+    g_j: rank t_j+4, witnesses H_j,b_j, with mates G_j,e_j.
+
+All K and V rows keep their Section 5 ranks and witness sites. The only
+changed K dependency is at K_(3j+2): the mate of witness b_j is now e_j,
+of rank t_j, instead of g_j of rank t_j+4. Both precede t_j+5.
+At EVERY next block, V_(j+1) has rank t_j-2 and K_(3j+3) has rank
+t_j-3. Hence all reverse cross-block dependencies are strict regardless
+of the choices in S and A. The terminal block is not expanded and keeps
+its original seeds. This covers all black endpoints, with maximum rank
+at most 16m+10, and proves the theorem by strict-rank induction.
+
+Each expanded position independently chooses whether to remove CD or gb;
+those two old edges are distinct, and all patches use disjoint old edges.
+The resulting 2^|S| matchings are therefore distinct. Different S give
+different endpoint footprints. Summing 2^|S| over S gives 3^m. The ledger
+in Section 6 depends only on S, so EVERY one of these matchings uses the
+same surviving physical payments, with no extra reserve from the choices.
+
+## 8. Exact scope of the obstruction and the next cut problem
 
 For the specified enlarged endpoint footprint P_S and any T subset T0,
 no selected site in the three converted shields per envelope can be retained.
@@ -272,15 +371,24 @@ It is not a maximum over arbitrary new sites or arbitrary new selections.
 The pair-only inequality in Section 2 correctly loses one objective unit
 per occupied d/e pair, but (1) has those same direct pairs and loses none.
 The failed extension of that rule omitted w_j from the permitted footprint.
-It also omitted the necessary cross matching C_j--a_j,D_j--d_j; retaining
-all old M0 edges traps the converted shield pool. The counterexample thus
+It also omitted the cross matching C_j--a_j,D_j--d_j used in (1), or an
+alternative such as (5). Some old matching edge MUST change when S is
+nonempty. Indeed, if all old M0 edges were retained, every new black
+endpoint would have a converted white shield as mate. Before the first
+such shield freezes, none of the new black sites can be kept. Each shield
+has just one neighbour outside the new black sites: C_j, A_(j+1), or g_j.
+It has no selected neighbour, so no first shield can freeze. This traps
+the entire converted white pool, independently of how its new edges are
+matched. This does not force a particular old edge to change.
+The counterexample thus
 refutes an unqualified per-direct-entry cost, not the restricted lemma or
 the global half-area target.
 
 A logical interval hitting count can still constrain a matching while its
 T/P and EF reduction remain fixed. It cannot be promoted to a physical
 cost after these six-cell expansions without redoing the footprint and mate
-accounting. Here both occupation and the old CD mate change. The corrected
+accounting. In (1) both occupation and the old CD mate change; in (5),
+gb changes instead. The corrected
 joint cut must include the outer w site and record the cancelled successor
 token/demand pair, rather than charge the same old donor once to each direct
 entry or assume it remains available to another component.
@@ -290,10 +398,11 @@ fully frozen half-area configurations already within R, without a cap.
 This is a constructive lower bound, not a classification of enlarged
 footprints or a sequence of freezing-preserving intermediate moves.
 
-## 8. Verification and formal scope
+## 9. Verification and formal scope
 
-The written all-length proof is (1), the two complete strict actual-mate
-rank tables and the literal deletion from (3). Finite enumeration is used
+The written all-length proof is (1) and (5), the complete strict actual-mate
+rank tables (including the mixed table) and the literal deletion from (3).
+Finite enumeration is used
 only to discover and check it. The coordinate verifier checks arbitrary
 subsets on small lengths, structured larger subsets, literal ranks,
 independent freezing closures, feasibility and every surviving physical
@@ -305,10 +414,13 @@ Run the standard-library checks with
     python3 develop/check_neutral_occupied_envelopes_formal.py --output /tmp/envelopes-formal.json
 
 The saved coordinate [receipt](../output/neutral-occupied-envelopes.json)
-covers 524 boards: every S for m=2,...,8, and the all/even/first/last subsets
-at m=10,25,50,100. It checks 99,732 strict actual-mate witness events,
-agreement of independent queue and synchronous closures, 2,078 literal
-token/demand cancellations and 3,818 surviving payments. Restricted controls
+covers 1,645 boards: 524 original CD-based controls (every S for m=2,...,8,
+and the all/even/first/last subsets at m=10,25,50,100), plus 1,121 mixed
+controls (all ternary patterns for m=2,...,6 and structured larger patterns).
+It checks 282,246 strict actual-mate witness events, agreement of independent
+queue and synchronous closures, 6,658 literal token/demand cancellations,
+and 10,093 surviving payments. Distinct literal matching edge sets check
+the 3^m count at m=2,...,6. Restricted controls
 cover every entry set for m=2,3,4 and all 19,183 colour-balanced conversion
 pools. No optimizer or external solver is used.
 
@@ -326,10 +438,11 @@ feasibility, all-length matching construction and physical cancellation
 remain written proofs with the executable adapter above. The Lean result
 does not claim an end-to-end coordinate formalization.
 
-## 9. Proposed research-note addition
+## 10. Proposed research-note addition
 
 The useful addition to a future grid paper is the neutral expansion theorem
-with (1)--(4), together with its scope: an interface cost must depend on the
+with (1)--(5) and the independent mixed choices. Its scope is essential:
+an interface cost must depend on the
 entire allowed footprint and the actual matching. The six-cell family is
 a checked obstruction to charging a fixed positive amount to every occupied
 direct-entry pair, even under complete freezing; it leaves the global
