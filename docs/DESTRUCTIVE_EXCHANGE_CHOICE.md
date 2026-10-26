@@ -22,6 +22,12 @@ payment. The abstract family is not claimed to have a frozen-grid embedding.
 This does not prove universal availability of suitable geometric actions, or
 a universal5/6 improvement. The11 October submitted manuscript is preserved.
 
+The next [P-free pivot analysis](P_FREE_PIVOT_INTERFACE.md) gives a general
+five-block support ledger and reserve-based payment stability bound. Its fully
+frozen zero-local-capacity example loses payment with every positive forest
+cell set unchanged; generic pivots therefore need additional support-change
+accounting before they satisfy the physical adapter below.
+
 ## 1. Simultaneous replacement hypotheses
 
 Start with the full [whole-support fork model](WHOLE_SUPPORT_FORK_NORMAL_FORM.md):
