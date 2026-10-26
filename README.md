@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [private prefix/suffix bridge compensation](docs/PRIVATE_PREFIX_BRIDGE_COMPENSATION.md):
+two distinct request-private original units across a mixed entrance give
+polynomial exact payment p+g-t0+d, with d distinct deficient donor trees.
+One cheapest bridge per tree attains minimum actual bridge fees and retains
+every paid source and used original unit of any maximum reference allocation.
+A fully frozen capacity-two gap gives 3 to 4 payments; arbitrary separated
+copies give 3q to 4q with q fresh units and bridges. Checks include 31 independent
+optima, 169 maximum-baseline identity audits and 7,084 freezing events; a 16-copy
+run forbids mode enumeration and full optimization. One general local exchange
+kernel is axiom-free in Lean; the complete theorem has a written proof.
+This certifies a coefficient-one counting class, while universal 5/6 remains open.
+
 New [actual bridge compensation and a frozen entrance obstruction](docs/SINGLE_BRIDGE_COMPENSATION.md):
 one added link between two old interval stems has exactly two routing modes,
 giving payment p+g-min(t0,te) and exact source-preservation tests. For k bridges

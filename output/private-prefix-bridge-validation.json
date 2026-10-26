@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_value_and_bridge_fee_optima": 31,
+    "retained_paid_source_and_unit_set_checks": 31,
+    "all_maximum_baseline_identity_checks": 169,
+    "nonprivate_shared_reserve_rule_rejections": 1,
+    "strict_freezing_events": 7084,
+    "frozen_cap_two_prefix_suffix_boards": 4,
+    "polynomial_full_flow_physical_crosschecks": 1,
+    "production_no_mode_pack_or_flow_enumeration": 1
+  },
+  "physical": [
+    {
+      "copies": 1,
+      "shape": [
+        28,
+        24
+      ],
+      "old_payment": 3,
+      "new_payment": 4,
+      "old_used": 3,
+      "retained_all_old_units": true,
+      "new_distinct_units": 1,
+      "new_bridges": 1,
+      "fee": 1,
+      "old_deficiency": 1,
+      "geometric_capacity_two_tiles": [
+        {
+          "tile": [
+            14,
+            6
+          ],
+          "units": [
+            [
+              7,
+              6,
+              6
+            ],
+            [
+              7,
+              7,
+              7
+            ]
+          ],
+          "boundary_owners": [
+            6,
+            7
+          ]
+        }
+      ],
+      "production_polynomial": false
+    },
+    {
+      "copies": 2,
+      "shape": [
+        58,
+        24
+      ],
+      "old_payment": 6,
+      "new_payment": 8,
+      "old_used": 6,
+      "retained_all_old_units": true,
+      "new_distinct_units": 2,
+      "new_bridges": 2,
+      "fee": 3,
+      "old_deficiency": 2,
+      "geometric_capacity_two_tiles": [
+        {
+          "tile": [
+            14,
+            6
+          ],
+          "units": [
+            [
+              7,
+              6,
+              6
+            ],
+            [
+              7,
+              7,
+              7
+            ]
+          ],
+          "boundary_owners": [
+            6,
+            7
+          ]
+        }
+      ],
+      "production_polynomial": false
+    },
+    {
+      "copies": 4,
+      "shape": [
+        118,
+        24
+      ],
+      "old_payment": 12,
+      "new_payment": 16,
+      "old_used": 12,
+      "retained_all_old_units": true,
+      "new_distinct_units": 4,
+      "new_bridges": 4,
+      "fee": 7,
+      "old_deficiency": 4,
+      "geometric_capacity_two_tiles": [
+        {
+          "tile": [
+            14,
+            6
+          ],
+          "units": [
+            [
+              7,
+              6,
+              6
+            ],
+            [
+              7,
+              7,
+              7
+            ]
+          ],
+          "boundary_owners": [
+            6,
+            7
+          ]
+        }
+      ],
+      "production_polynomial": false
+    },
+    {
+      "copies": 16,
+      "shape": [
+        478,
+        24
+      ],
+      "old_payment": 48,
+      "new_payment": 64,
+      "old_used": 48,
+      "retained_all_old_units": true,
+      "new_distinct_units": 16,
+      "new_bridges": 16,
+      "fee": 31,
+      "old_deficiency": 16,
+      "geometric_capacity_two_tiles": [
+        {
+          "tile": [
+            14,
+            6
+          ],
+          "units": [
+            [
+              7,
+              6,
+              6
+            ],
+            [
+              7,
+              7,
+              7
+            ]
+          ],
+          "boundary_owners": [
+            6,
+            7
+          ]
+        }
+      ],
+      "production_polynomial": true
+    }
+  ],
+  "proof": "docs/PRIVATE_PREFIX_BRIDGE_COMPENSATION.md",
+  "scope": "Distinct request-private pre-entry/post-entry units for bridges on disjoint old stem pairs; donor requests in deficient trees. Eligible new direct sources included. Exact polynomial value and minimum actual bridge fee; preserves any maximum request-allocation baseline paid sources and used original units.",
+  "limitations": [
+    "Not arbitrary shared-path bridge networks.",
+    "Privacy is relative to all declared requests, not just two selected sources.",
+    "No universal 5/6 improvement."
+  ]
+}
