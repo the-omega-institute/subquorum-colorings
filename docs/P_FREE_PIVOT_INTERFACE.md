@@ -327,3 +327,9 @@ Next: extend joint action selection to these exact support changes, reserving
 arm units globally; or find a genuine grid configuration requiring several
 coordinated pivots for a net payment gain. A universal coverage/5/6 result
 is still open.
+
+The subsequent [frozen coordinated-pivot construction](FROZEN_COORDINATED_PIVOTS.md)
+realizes an arbitrary-length all-gates prerequisite on genuine frozen grids,
+with zero-capacity pivots and unchanged positive forest cells. It also gives
+a true fixed-P maximum with no improving single P-free pivot but a successful
+two-pivot repair.

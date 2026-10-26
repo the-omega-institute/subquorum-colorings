@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T00:51:32.272452+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "44%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "Current-session user chose local machine; one small standalone module; preserve unrelated jobs."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.CoordinatedPivotGates.allOn_iff' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CoordinatedPivotGates.value_two_iff' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CoordinatedPivotGates.missing_gate_value_one' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CoordinatedPivotGates.value_monotone' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.CoordinatedPivotGates.strict_submodularity_violation' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "General finite serial gate kernel: all gates open iff every member is enabled; payment two iff all gates open; any missing gate gives payment one; monotonicity; strict submodularity violation from any two distinct required gates. No enumeration.",
+  "not_formalized": [
+    "Frozen-grid embedding, invariant support adapters, fixed-P maximality, 81-pivot geometric local-trap classification, and exact minimum physical action counts. Written proofs and independent executable checks; no end-to-end grid Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

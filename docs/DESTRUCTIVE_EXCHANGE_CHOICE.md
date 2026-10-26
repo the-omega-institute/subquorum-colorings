@@ -28,6 +28,13 @@ frozen zero-local-capacity example loses payment with every positive forest
 cell set unchanged; generic pivots therefore need additional support-change
 accounting before they satisfy the physical adapter below.
 
+The later [frozen coordinated-pivot note](FROZEN_COORDINATED_PIVOTS.md) proves
+genuine grid coordination by a different geometric mechanism: an arbitrary
+number of zero-capacity cuts jointly gate access to two unchanged resources,
+and a true fixed-P maximum has a two-pivot repair but no improving single
+P-free pivot. This realizes non-submodularity on frozen grids without claiming
+a physical embedding of the particular cyclic token family in Section 5.
+
 ## 1. Simultaneous replacement hypotheses
 
 Start with the full [whole-support fork model](WHOLE_SUPPORT_FORK_NORMAL_FORM.md):

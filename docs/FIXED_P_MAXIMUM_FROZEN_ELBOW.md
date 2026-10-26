@@ -32,6 +32,12 @@ token. On this board it selects E alone and preserves old b, while allowing
 both E and F as alternatives. It does not assume that all enabled actions
 should be applied.
 
+The later [coordinated-pivot analysis](FROZEN_COORDINATED_PIVOTS.md) changes
+one additional P-free direction bit on this same extremal board. Its resulting
+start has no improving single P-free pivot among all 81 candidates, yet two
+such pivots jointly pay both sources. The local-trap claim is proved by
+classifying the only three new gaps that can support the unpaid source.
+
 ## 1. Explicit extremal feasible board
 
 Retain exactly the35 actual matching edges and tile directions from the
