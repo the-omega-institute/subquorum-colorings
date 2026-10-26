@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T10:01:12.494091+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "35%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "35%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.EndpointInvasionSharpStrips.feasible_wedge' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.strict_witness_not_mate' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.mate_plus_one_exclusion' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.pocket_edge_geometry' depends on axioms: [propext]",
+    "'SubQuorum.EndpointInvasionSharpStrips.weighted_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.pocket_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.gate_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.star_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.global_count' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.EndpointInvasionSharpStrips.whole_surplus' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Universal feasible-wedge bound, strict witness not mate, mate-plus-one exclusion, exact 17-edge pocket geometry, weighted incidence identity and pocket score<=9, repeated gate/star capacities and all-k count aggregation.",
+  "not_formalized": [
+    "The all-k free graph classification, conversion of actual matching/selection to incidence indicators, sharp frozen invading adapter and distinct physical reserve relocation remain written proofs with executable checks; no end-to-end all-k board formalization."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
