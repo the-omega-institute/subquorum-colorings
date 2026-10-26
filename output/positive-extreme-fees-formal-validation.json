@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T03:14:04.943253+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "41%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "42%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.PositiveExtremeFees.legacy_singleton_has_no_earlier_gate' does not depend on any axioms",
+    "'SubQuorum.PositiveExtremeFees.left_extreme_with_legacy' does not depend on any axioms",
+    "'SubQuorum.PositiveExtremeFees.common_prerequisite_is_common_tile' does not depend on any axioms",
+    "'SubQuorum.PositiveExtremeFees.intervening_unit_in_common_tile' does not depend on any axioms",
+    "'SubQuorum.PositiveExtremeFees.local_shared_fee_identity' does not depend on any axioms",
+    "'SubQuorum.PositiveExtremeFees.exclusive_ends_have_no_fee_duplication' does not depend on any axioms"
+  ],
+  "scope": "Six general ordered and fee kernels: singleton legacy handoff excludes earlier cuts; legacy-aware extreme access; shared prerequisite lies in both extreme tiles; intervening units lie in that common tile; exact duplicated pivot fee identity; exclusive end uses have no duplicate fee. No finite enumeration.",
+  "not_formalized": [
+    "Physical handoff-to-legacy geometry, whole-pack retraction and same-source/link preservation, capacity-two core classification, beta normalization and 2^h flow optimization. Written general proofs and independent executable audits, not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

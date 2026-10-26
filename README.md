@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [positive-pivot extreme retraction and exact shared-fee optimization](docs/POSITIVE_EXTREMES_AND_SHARED_FEES.md):
+every passing all-capacity uniform input retracts to the original first/last
+gap units while preserving sources, owners and links, including old V-phase
+local support. The only simultaneously shared positive fee is a containing
+capacity-two pivot supplying its gap's two initially unsupported units to
+distinct boundary owners. With h such pivots the exact joint payment/fee/link
+optimum takes at most 2^h full min-cost flows; h=0 includes all capacity-one
+inputs. A fully frozen adapter distinguishes actual fee 5 from the erroneous
+per-end fee 6. Six ordered/fee Lean kernels are axiom-free; unrestricted
+polynomial optimization and the universal 5/6 bound remain open.
+
 New [positive-capacity handoffs: linear-state recognition and exact support compiler](docs/POSITIVE_CAPACITY_HANDOFFS.md):
 uniform V→H P-free gates of capacities zero, one and two admit exact recognition
 of all-subset support monotonicity in at most 2+2p physical snapshots, where p
