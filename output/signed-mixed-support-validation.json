@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "counts": {
+    "logic_controls": 7,
+    "accepted_positive_retraction_states": 817,
+    "independent_physical_optima": 945,
+    "old_pack_repair_states": 1509,
+    "physical_support_states": 1509,
+    "capacity_two_twin_states": 3790,
+    "exact_recognition_iff_exhaustive": 94,
+    "prior_uniform_recognizer_comparisons": 52,
+    "models": 95,
+    "accepted": 65,
+    "mixed_target_models": 35,
+    "max_compiler_snapshots": 3,
+    "signed_corridor_terms": 462,
+    "negative_literal_occurrences": 230,
+    "positive_literal_occurrences": 251,
+    "all_boolean_lattice_edges": 4213,
+    "gate_capacity_1": 30,
+    "gate_capacity_2": 148,
+    "physical_loss_certificates": 208,
+    "max_undecided_new_terms": 1,
+    "rejected": 30,
+    "gate_capacity_0": 63,
+    "strict_freezing_events": 280,
+    "no_enumeration_api_controls": 1
+  },
+  "controls": [
+    {
+      "name": "mixed-target-bent-endpoint-trap",
+      "capacity": 2,
+      "accepted": false,
+      "losses": [
+        {
+          "resource": [
+            "gate",
+            2,
+            0
+          ],
+          "owner": 0,
+          "from_changed": [
+            0,
+            2
+          ],
+          "to_changed": [
+            0,
+            1,
+            2
+          ],
+          "gate": 1,
+          "old_term": [
+            [
+              0,
+              true
+            ],
+            [
+              1,
+              false
+            ],
+            [
+              2,
+              true
+            ]
+          ],
+          "undecided_new_terms": 0
+        },
+        {
+          "resource": [
+            "gate",
+            2,
+            0
+          ],
+          "owner": 0,
+          "from_changed": [],
+          "to_changed": [
+            2
+          ],
+          "gate": 2,
+          "old_term": [
+            [
+              2,
+              false
+            ]
+          ],
+          "undecided_new_terms": 1
+        }
+      ]
+    },
+    {
+      "name": "mixed-target-bent-endpoint-trap",
+      "capacity": 1,
+      "accepted": false,
+      "losses": [
+        {
+          "resource": [
+            "gate",
+            2,
+            0
+          ],
+          "owner": 0,
+          "from_changed": [
+            0,
+            2
+          ],
+          "to_changed": [
+            0,
+            1,
+            2
+          ],
+          "gate": 1,
+          "old_term": [
+            [
+              0,
+              true
+            ],
+            [
+              1,
+              false
+            ],
+            [
+              2,
+              true
+            ]
+          ],
+          "undecided_new_terms": 0
+        },
+        {
+          "resource": [
+            "gate",
+            2,
+            0
+          ],
+          "owner": 0,
+          "from_changed": [],
+          "to_changed": [
+            2
+          ],
+          "gate": 2,
+          "old_term": [
+            [
+              2,
+              false
+            ]
+          ],
+          "undecided_new_terms": 1
+        }
+      ]
+    },
+    {
+      "name": "lossless-old-phase-new-support",
+      "n": 2,
+      "capacity": 2,
+      "accepted": true,
+      "formula": "x_q OR AND_(i<q) x_i",
+      "old_phase_state": [
+        0
+      ],
+      "true_minimum_access_fee": 1,
+      "final_phase_only_fee": 3,
+      "frozen": false,
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 1
+    },
+    {
+      "name": "lossless-old-phase-new-support",
+      "n": 2,
+      "capacity": 1,
+      "accepted": true,
+      "formula": "x_q OR AND_(i<q) x_i",
+      "old_phase_state": [
+        0
+      ],
+      "true_minimum_access_fee": 1,
+      "final_phase_only_fee": 3,
+      "frozen": false,
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 1
+    },
+    {
+      "name": "lossless-old-phase-new-support",
+      "n": 4,
+      "capacity": 2,
+      "accepted": true,
+      "formula": "x_q OR AND_(i<q) x_i",
+      "old_phase_state": [
+        0,
+        1,
+        2
+      ],
+      "true_minimum_access_fee": 3,
+      "final_phase_only_fee": 5,
+      "frozen": false,
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 1
+    },
+    {
+      "name": "lossless-old-phase-new-support",
+      "n": 4,
+      "capacity": 1,
+      "accepted": true,
+      "formula": "x_q OR AND_(i<q) x_i",
+      "old_phase_state": [
+        0,
+        1,
+        2
+      ],
+      "true_minimum_access_fee": 3,
+      "final_phase_only_fee": 5,
+      "frozen": false,
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 1
+    },
+    {
+      "name": "lossless-old-phase-new-support",
+      "n": 8,
+      "capacity": 2,
+      "accepted": true,
+      "formula": "x_q OR AND_(i<q) x_i",
+      "old_phase_state": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "true_minimum_access_fee": 7,
+      "final_phase_only_fee": 9,
+      "frozen": false,
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 1
+    },
+    {
+      "name": "lossless-old-phase-new-support",
+      "n": 8,
+      "capacity": 1,
+      "accepted": true,
+      "formula": "x_q OR AND_(i<q) x_i",
+      "old_phase_state": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "true_minimum_access_fee": 7,
+      "final_phase_only_fee": 9,
+      "frozen": false,
+      "alpha": 0,
+      "beta": 0,
+      "mixed": 1
+    },
+    {
+      "name": "frozen-35-mixed-target-gates",
+      "shape": [
+        16,
+        102
+      ],
+      "gates": 35,
+      "compiler_snapshots": 3,
+      "all_state_count": 34359738368,
+      "accepted": false,
+      "loss_certificates": 38
+    }
+  ],
+  "proof": "docs/SIGNED_MIXED_SUPPORT_COMPILER.md",
+  "scope": "Exact signed support at every gate state and polynomial all-subset monotonicity recognition for arbitrary mixed-target aligned P-free tiles, capacities zero/one/two. Enumeration is audit only.",
+  "limitations": [
+    "No arbitrary-state joint fee optimizer.",
+    "No automatic compensation or universal 5/6 improvement.",
+    "Signed offers cannot be unioned without one consistent global gate assignment."
+  ]
+}

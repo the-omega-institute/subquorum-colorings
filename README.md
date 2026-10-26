@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [three-snapshot signed support compiler for mixed target directions](docs/SIGNED_MIXED_SUPPORT_COMPILER.md):
+arbitrary P-free changes of capacities zero, one and two have an exact
+four-corridor-term description per original unit. Positive and negative gate
+requirements retain destructive accesses; a polynomial test gives adjacent
+physical loss witnesses. On passing inputs negative literals retract exactly.
+An all-length feasible bent-owner family nevertheless acquires new support
+before its own gate changes, refuting a final-direction-only compiler and
+its access-fee estimate. Checks cover 1,509 states and 4,213 lattice edges;
+two general logical Lean kernels are axiom-free. Arbitrary-state joint fee
+optimization and universal 5/6 remain open.
+
 New [exact destructive batch repair with no new physical links](docs/OLD_LINK_BATCH_REPAIR.md):
 after arbitrary mixed-target P-free pivots, aggregate the new supports along
 each old primitive and permit prefix truncation or beta-arm splitting. With

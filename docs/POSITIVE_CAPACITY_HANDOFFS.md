@@ -1,5 +1,12 @@
 # Positive-capacity handoffs: linear-state recognition and exact support compilation
 
+**Mixed-target continuation:** [three-snapshot signed support compilation](SIGNED_MIXED_SUPPORT_COMPILER.md)
+works for arbitrary initial/target directions, including support-losing
+families. It gives an exact polynomial monotonicity test and positive
+retraction on passing inputs. A genuine old-phase support birth shows why
+this note's final-H-corridor compiler and fee adapter cannot simply be
+transposed componentwise and unioned for mixed targets.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 We extend the uniform V→H support-recognition theorem from capacity zero to
