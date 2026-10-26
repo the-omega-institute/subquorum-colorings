@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/WholeBoardEndpointInvasion.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.WholeBoardEndpointInvasion.triple_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.WholeBoardEndpointInvasion.four_hole_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.WholeBoardEndpointInvasion.two_site_actual_mate_capacity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.WholeBoardEndpointInvasion.pocket_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.WholeBoardEndpointInvasion.whole_board_count",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.WholeBoardEndpointInvasion.objective_half_area",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3832 \nPages purgeable: 0 \nPages purged: 264108868 \n\nSwap I/O:\nSwapins: 351731123 \nSwapouts: 366882376 \n\nPage Q counts:\nPages active: 151040 \nPages inactive: 147839 \nPages speculative: 1721 \nPages throttled: 0 \nPages wired down: 278020 \n\nCompressor Stats:\nPages used by compressor: 424374 \nPages decompressed: 6676390017 \nPages compressed: 7545891531 \n\nFile I/O:\nPageins: 8565532867 \nPageouts: 26234792 \n\nSystem-wide memory free percentage: 30%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3831.\nPages active:                                 150796.\nPages inactive:                               147605.\nPages speculative:                              1725.\nPages throttled:                                   0.\nPages wired down:                             278020.\nPages purgeable:                                   2.\n\"Translation faults\":                    30885235818.\nPages copy-on-write:                      1496049092.\nPages zero filled:                       12227216939.\nPages reactivated:                        6737989679.\nPages purged:                              264108868.\nFile-backed pages:                             79472.\nAnonymous pages:                              220654.\nPages stored in compressor:                  3510979.\nPages occupied by compressor:                 424868.\nDecompressions:                           6676390145.\nCompressions:                             7545892222.\nPageins:                                  8565532868.\nPageouts:                                   26234792.\nSwapins:                                   351731199.\nSwapouts:                                  366882376."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 5155 \nPages purgeable: 2 \nPages purged: 264109340 \n\nSwap I/O:\nSwapins: 351736519 \nSwapouts: 366885380 \n\nPage Q counts:\nPages active: 144202 \nPages inactive: 140416 \nPages speculative: 2529 \nPages throttled: 0 \nPages wired down: 278109 \n\nCompressor Stats:\nPages used by compressor: 436461 \nPages decompressed: 6676401401 \nPages compressed: 7545920230 \n\nFile I/O:\nPageins: 8565536634 \nPageouts: 26234793 \n\nSystem-wide memory free percentage: 28%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     5077.\nPages active:                                 144225.\nPages inactive:                               140423.\nPages speculative:                              2533.\nPages throttled:                                   0.\nPages wired down:                             278109.\nPages purgeable:                                   2.\n\"Translation faults\":                    30885262231.\nPages copy-on-write:                      1496049875.\nPages zero filled:                       12227220100.\nPages reactivated:                        6737999531.\nPages purged:                              264109340.\nFile-backed pages:                             83152.\nAnonymous pages:                              204029.\nPages stored in compressor:                  3527697.\nPages occupied by compressor:                 436481.\nDecompressions:                           6676401430.\nCompressions:                             7545920230.\nPageins:                                  8565536643.\nPageouts:                                   26234793.\nSwapins:                                   351736539.\nSwapouts:                                  366885380."
+    }
+  ],
+  "scope": "Binary pocket compensation, triple/four-hole helpers, explicit two-site capacity arithmetic, disjoint global budget and half-area objective arithmetic.",
+  "not_formalized": "Coordinate adjacency, actual-mate injection into four black neighbours, full cardinality adapter and existing frozen sharp construction are written proofs with executable controls. Not an end-to-end Lean grid theorem."
+}

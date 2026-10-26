@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "theorem": "All m>=2, retained P0 and T subset T0, arbitrary whole-board new endpoints and actual rematching: exact maximum J=18m+30=area/2, attained fully frozen.",
+  "proof": "Written algebraic four-case pocket lemma, injective two-site actual-mate capacity, and disjoint all-length bottom-hole budget. Finite checks do not replace this proof.",
+  "scope": "Also checks the weaker occupied-anchor/black-selection skeleton. Not a universal 5/6 improvement or complete equality-footprint classification.",
+  "counts": {
+    "degree_feasible_local_models": 11640,
+    "actual_capacity_local_models": 11355,
+    "pocket_equality_models": 100,
+    "degree_only_deficit_models_excluded_by_actual_capacity": 10,
+    "boards": 655,
+    "physical_tail_payments": 14619,
+    "actual_pair_mate_events": 179,
+    "tile_global_payments": 3329,
+    "fully_frozen_sharp_boards": 438,
+    "arbitrary_whole_board_rematchings": 128,
+    "skeleton_controls_with_new_white_selections": 22
+  },
+  "degree_only_obstruction": {
+    "selected": [
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "blank": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "selected_count": 6,
+    "blank_count": 5,
+    "actual_matching_capacity_violation": "4>3",
+    "joint_witness": {
+      "selected": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "blank": [
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "obstruction": "Both occupied (5,0),(5,2) can only mate (5,1); two singleton capacities pass but their joint capacity fails."
+    }
+  },
+  "discovery_examples": [
+    {
+      "m": 2,
+      "discovery_status": "OPTIMAL",
+      "frozen_required": false,
+      "selected": 35,
+      "matching": 31,
+      "objective": 66,
+      "pocket_slack": 0,
+      "tail_slack": 0,
+      "other_holes": 0
+    },
+    {
+      "m": 2,
+      "discovery_status": "OPTIMAL",
+      "frozen_required": true,
+      "selected": 39,
+      "matching": 27,
+      "objective": 66,
+      "pocket_slack": 0,
+      "tail_slack": 0,
+      "other_holes": 0
+    },
+    {
+      "m": 2,
+      "discovery_status": "OPTIMAL",
+      "frozen_required": true,
+      "selected": 31,
+      "matching": 35,
+      "objective": 66,
+      "pocket_slack": 0,
+      "tail_slack": 0,
+      "other_holes": 0
+    }
+  ]
+}
