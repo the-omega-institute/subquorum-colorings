@@ -429,6 +429,12 @@ classification. Conversely the mixed-expansion construction supplies
 completely frozen equality for every such footprint. This concludes the
 proof for arbitrary length and arbitrary pooling across envelopes.
 
+The plain half-area upper bound already follows from colour balance and
+Y lying among withdrawn selections: L>=|Y|=|B|. The additional content of
+(6) is the exact strictly positive loss for every proper nonempty local
+black mask, feasible sharpness for EVERY prescribed B, and the complete
+classification of equality footprints despite arbitrary global pooling.
+
 ## 9. Exact scope of the obstruction and the next cut problem
 
 For the specified enlarged endpoint footprint P_S and any T subset T0,
@@ -504,10 +510,10 @@ is used.
 
 Nine declarations in
 [NeutralOccupiedEnvelopes.lean](../formal/SubQuorum/NeutralOccupiedEnvelopes.lean)
-check injective physical shield coordinates, exact shared-guard counts for
+include five kernels for injective physical shield coordinates, exact shared-guard counts for
 arbitrary finite entry words, strict conversion shortage, the actual-mate
-singleton trap, and the conditional restricted no-freezing contradiction. Four additional
-kernels check all eight enlarged masks, the arbitrary-length pooled budget,
+singleton trap, and the conditional restricted no-freezing contradiction,
+plus four kernels checking all eight enlarged masks, the arbitrary-length pooled budget,
 zero deficit if and only if all cells are empty/full, and the objective
 equality criterion under explicit colour-balance/withdrawal premises.
 The [local Lean receipt](../output/neutral-occupied-envelopes-formal.json)
@@ -518,6 +524,20 @@ strict-rank induction from FrozenHalfAreaAttainers. Coordinate rank support,
 feasibility, all-length matching construction and physical cancellation
 remain written proofs with the executable adapter above. The Lean result
 does not claim an end-to-end coordinate formalization.
+
+Independent review is recorded with separate scopes. The
+[original audit](../output/neutral-occupied-envelopes-oracle.json) returned
+REVISE, accepted the original construction and supplied the alternative gb
+patch as proof assistance; the terminal definition and overstrong CD-edge
+necessity wording were corrected. A fresh
+[mixed-construction audit](../output/neutral-occupied-envelopes-mixed-oracle.json)
+returned ACCEPT for the arbitrary mixed rank proof, labeled 3^m count,
+restricted rule and physical cancellation. Its occupied-neighbour wording
+clarification is applied. Neither audit executed the verifier or Lean.
+The later sharp pooled budget and equality-footprint classification in
+Section 8 have a [separate follow-up record](../output/neutral-occupied-envelopes-pooled-oracle.json);
+that record states the actual request status, without borrowing the earlier
+ACCEPT for a result outside its input.
 
 ## 11. Proposed research-note addition
 
