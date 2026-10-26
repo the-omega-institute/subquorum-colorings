@@ -1,0 +1,1036 @@
+{
+  "status": "PASS",
+  "theorem": "For every m>=2 a six-column zero-charge cap activates the flipped half-area band; arbitrary q stacks have at least 2^q frozen actual matchings on identical occupation with zero reserve.",
+  "obstruction": "Global freezing and region-closed matching do not imply local freezing or the isolated-band binary reserve. The isolated theorem and global half-area target are not refuted.",
+  "proof": "Written all-length coordinate construction, strict actual-mate ranks, exact interface traps and arbitrary-q disjoint physical token bijection; finite checks only validate adapters.",
+  "lengths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    40,
+    64,
+    100
+  ],
+  "counts": {
+    "strict_actual_mate_rank_events": 103428,
+    "literal_nonreuse_token_bijections": 241,
+    "fully_frozen_half_area_boards": 52,
+    "queue_synchronous_crosschecks": 52,
+    "exact_band_interface_responses": 104,
+    "exact_cap_interface_responses": 104,
+    "exhaustive_stack_matching_profiles": 186,
+    "fixed_occupation_distinct_matching_families": 15,
+    "larger_stack_controls": 3,
+    "isometry_controls": 32
+  },
+  "records": [
+    {
+      "m": 2,
+      "flip": false,
+      "shape": [
+        6,
+        28
+      ],
+      "selected": 50,
+      "matching": 34,
+      "objective": 84,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 25,
+      "max_rank": 25,
+      "positive_tokens": 6,
+      "negative_demands": 6,
+      "reserve": 0
+    },
+    {
+      "m": 2,
+      "flip": true,
+      "shape": [
+        6,
+        28
+      ],
+      "selected": 50,
+      "matching": 34,
+      "objective": 84,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 24,
+      "max_rank": 25,
+      "positive_tokens": 6,
+      "negative_demands": 6,
+      "reserve": 0
+    },
+    {
+      "m": 3,
+      "flip": false,
+      "shape": [
+        6,
+        34
+      ],
+      "selected": 59,
+      "matching": 43,
+      "objective": 102,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 34,
+      "max_rank": 34,
+      "positive_tokens": 7,
+      "negative_demands": 7,
+      "reserve": 0
+    },
+    {
+      "m": 3,
+      "flip": true,
+      "shape": [
+        6,
+        34
+      ],
+      "selected": 59,
+      "matching": 43,
+      "objective": 102,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 33,
+      "max_rank": 34,
+      "positive_tokens": 7,
+      "negative_demands": 7,
+      "reserve": 0
+    },
+    {
+      "m": 4,
+      "flip": false,
+      "shape": [
+        6,
+        40
+      ],
+      "selected": 68,
+      "matching": 52,
+      "objective": 120,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 43,
+      "max_rank": 43,
+      "positive_tokens": 8,
+      "negative_demands": 8,
+      "reserve": 0
+    },
+    {
+      "m": 4,
+      "flip": true,
+      "shape": [
+        6,
+        40
+      ],
+      "selected": 68,
+      "matching": 52,
+      "objective": 120,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 42,
+      "max_rank": 43,
+      "positive_tokens": 8,
+      "negative_demands": 8,
+      "reserve": 0
+    },
+    {
+      "m": 5,
+      "flip": false,
+      "shape": [
+        6,
+        46
+      ],
+      "selected": 77,
+      "matching": 61,
+      "objective": 138,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 52,
+      "max_rank": 52,
+      "positive_tokens": 9,
+      "negative_demands": 9,
+      "reserve": 0
+    },
+    {
+      "m": 5,
+      "flip": true,
+      "shape": [
+        6,
+        46
+      ],
+      "selected": 77,
+      "matching": 61,
+      "objective": 138,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 51,
+      "max_rank": 52,
+      "positive_tokens": 9,
+      "negative_demands": 9,
+      "reserve": 0
+    },
+    {
+      "m": 6,
+      "flip": false,
+      "shape": [
+        6,
+        52
+      ],
+      "selected": 86,
+      "matching": 70,
+      "objective": 156,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 61,
+      "max_rank": 61,
+      "positive_tokens": 10,
+      "negative_demands": 10,
+      "reserve": 0
+    },
+    {
+      "m": 6,
+      "flip": true,
+      "shape": [
+        6,
+        52
+      ],
+      "selected": 86,
+      "matching": 70,
+      "objective": 156,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 60,
+      "max_rank": 61,
+      "positive_tokens": 10,
+      "negative_demands": 10,
+      "reserve": 0
+    },
+    {
+      "m": 7,
+      "flip": false,
+      "shape": [
+        6,
+        58
+      ],
+      "selected": 95,
+      "matching": 79,
+      "objective": 174,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 70,
+      "max_rank": 70,
+      "positive_tokens": 11,
+      "negative_demands": 11,
+      "reserve": 0
+    },
+    {
+      "m": 7,
+      "flip": true,
+      "shape": [
+        6,
+        58
+      ],
+      "selected": 95,
+      "matching": 79,
+      "objective": 174,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 69,
+      "max_rank": 70,
+      "positive_tokens": 11,
+      "negative_demands": 11,
+      "reserve": 0
+    },
+    {
+      "m": 8,
+      "flip": false,
+      "shape": [
+        6,
+        64
+      ],
+      "selected": 104,
+      "matching": 88,
+      "objective": 192,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 79,
+      "max_rank": 79,
+      "positive_tokens": 12,
+      "negative_demands": 12,
+      "reserve": 0
+    },
+    {
+      "m": 8,
+      "flip": true,
+      "shape": [
+        6,
+        64
+      ],
+      "selected": 104,
+      "matching": 88,
+      "objective": 192,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 78,
+      "max_rank": 79,
+      "positive_tokens": 12,
+      "negative_demands": 12,
+      "reserve": 0
+    },
+    {
+      "m": 9,
+      "flip": false,
+      "shape": [
+        6,
+        70
+      ],
+      "selected": 113,
+      "matching": 97,
+      "objective": 210,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 88,
+      "max_rank": 88,
+      "positive_tokens": 13,
+      "negative_demands": 13,
+      "reserve": 0
+    },
+    {
+      "m": 9,
+      "flip": true,
+      "shape": [
+        6,
+        70
+      ],
+      "selected": 113,
+      "matching": 97,
+      "objective": 210,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 87,
+      "max_rank": 88,
+      "positive_tokens": 13,
+      "negative_demands": 13,
+      "reserve": 0
+    },
+    {
+      "m": 10,
+      "flip": false,
+      "shape": [
+        6,
+        76
+      ],
+      "selected": 122,
+      "matching": 106,
+      "objective": 228,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 97,
+      "max_rank": 97,
+      "positive_tokens": 14,
+      "negative_demands": 14,
+      "reserve": 0
+    },
+    {
+      "m": 10,
+      "flip": true,
+      "shape": [
+        6,
+        76
+      ],
+      "selected": 122,
+      "matching": 106,
+      "objective": 228,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 96,
+      "max_rank": 97,
+      "positive_tokens": 14,
+      "negative_demands": 14,
+      "reserve": 0
+    },
+    {
+      "m": 11,
+      "flip": false,
+      "shape": [
+        6,
+        82
+      ],
+      "selected": 131,
+      "matching": 115,
+      "objective": 246,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 106,
+      "max_rank": 106,
+      "positive_tokens": 15,
+      "negative_demands": 15,
+      "reserve": 0
+    },
+    {
+      "m": 11,
+      "flip": true,
+      "shape": [
+        6,
+        82
+      ],
+      "selected": 131,
+      "matching": 115,
+      "objective": 246,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 105,
+      "max_rank": 106,
+      "positive_tokens": 15,
+      "negative_demands": 15,
+      "reserve": 0
+    },
+    {
+      "m": 12,
+      "flip": false,
+      "shape": [
+        6,
+        88
+      ],
+      "selected": 140,
+      "matching": 124,
+      "objective": 264,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 115,
+      "max_rank": 115,
+      "positive_tokens": 16,
+      "negative_demands": 16,
+      "reserve": 0
+    },
+    {
+      "m": 12,
+      "flip": true,
+      "shape": [
+        6,
+        88
+      ],
+      "selected": 140,
+      "matching": 124,
+      "objective": 264,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 114,
+      "max_rank": 115,
+      "positive_tokens": 16,
+      "negative_demands": 16,
+      "reserve": 0
+    },
+    {
+      "m": 13,
+      "flip": false,
+      "shape": [
+        6,
+        94
+      ],
+      "selected": 149,
+      "matching": 133,
+      "objective": 282,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 124,
+      "max_rank": 124,
+      "positive_tokens": 17,
+      "negative_demands": 17,
+      "reserve": 0
+    },
+    {
+      "m": 13,
+      "flip": true,
+      "shape": [
+        6,
+        94
+      ],
+      "selected": 149,
+      "matching": 133,
+      "objective": 282,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 123,
+      "max_rank": 124,
+      "positive_tokens": 17,
+      "negative_demands": 17,
+      "reserve": 0
+    },
+    {
+      "m": 14,
+      "flip": false,
+      "shape": [
+        6,
+        100
+      ],
+      "selected": 158,
+      "matching": 142,
+      "objective": 300,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 133,
+      "max_rank": 133,
+      "positive_tokens": 18,
+      "negative_demands": 18,
+      "reserve": 0
+    },
+    {
+      "m": 14,
+      "flip": true,
+      "shape": [
+        6,
+        100
+      ],
+      "selected": 158,
+      "matching": 142,
+      "objective": 300,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 132,
+      "max_rank": 133,
+      "positive_tokens": 18,
+      "negative_demands": 18,
+      "reserve": 0
+    },
+    {
+      "m": 15,
+      "flip": false,
+      "shape": [
+        6,
+        106
+      ],
+      "selected": 167,
+      "matching": 151,
+      "objective": 318,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 142,
+      "max_rank": 142,
+      "positive_tokens": 19,
+      "negative_demands": 19,
+      "reserve": 0
+    },
+    {
+      "m": 15,
+      "flip": true,
+      "shape": [
+        6,
+        106
+      ],
+      "selected": 167,
+      "matching": 151,
+      "objective": 318,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 141,
+      "max_rank": 142,
+      "positive_tokens": 19,
+      "negative_demands": 19,
+      "reserve": 0
+    },
+    {
+      "m": 16,
+      "flip": false,
+      "shape": [
+        6,
+        112
+      ],
+      "selected": 176,
+      "matching": 160,
+      "objective": 336,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 151,
+      "max_rank": 151,
+      "positive_tokens": 20,
+      "negative_demands": 20,
+      "reserve": 0
+    },
+    {
+      "m": 16,
+      "flip": true,
+      "shape": [
+        6,
+        112
+      ],
+      "selected": 176,
+      "matching": 160,
+      "objective": 336,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 150,
+      "max_rank": 151,
+      "positive_tokens": 20,
+      "negative_demands": 20,
+      "reserve": 0
+    },
+    {
+      "m": 17,
+      "flip": false,
+      "shape": [
+        6,
+        118
+      ],
+      "selected": 185,
+      "matching": 169,
+      "objective": 354,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 160,
+      "max_rank": 160,
+      "positive_tokens": 21,
+      "negative_demands": 21,
+      "reserve": 0
+    },
+    {
+      "m": 17,
+      "flip": true,
+      "shape": [
+        6,
+        118
+      ],
+      "selected": 185,
+      "matching": 169,
+      "objective": 354,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 159,
+      "max_rank": 160,
+      "positive_tokens": 21,
+      "negative_demands": 21,
+      "reserve": 0
+    },
+    {
+      "m": 18,
+      "flip": false,
+      "shape": [
+        6,
+        124
+      ],
+      "selected": 194,
+      "matching": 178,
+      "objective": 372,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 169,
+      "max_rank": 169,
+      "positive_tokens": 22,
+      "negative_demands": 22,
+      "reserve": 0
+    },
+    {
+      "m": 18,
+      "flip": true,
+      "shape": [
+        6,
+        124
+      ],
+      "selected": 194,
+      "matching": 178,
+      "objective": 372,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 168,
+      "max_rank": 169,
+      "positive_tokens": 22,
+      "negative_demands": 22,
+      "reserve": 0
+    },
+    {
+      "m": 19,
+      "flip": false,
+      "shape": [
+        6,
+        130
+      ],
+      "selected": 203,
+      "matching": 187,
+      "objective": 390,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 178,
+      "max_rank": 178,
+      "positive_tokens": 23,
+      "negative_demands": 23,
+      "reserve": 0
+    },
+    {
+      "m": 19,
+      "flip": true,
+      "shape": [
+        6,
+        130
+      ],
+      "selected": 203,
+      "matching": 187,
+      "objective": 390,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 177,
+      "max_rank": 178,
+      "positive_tokens": 23,
+      "negative_demands": 23,
+      "reserve": 0
+    },
+    {
+      "m": 20,
+      "flip": false,
+      "shape": [
+        6,
+        136
+      ],
+      "selected": 212,
+      "matching": 196,
+      "objective": 408,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 187,
+      "max_rank": 187,
+      "positive_tokens": 24,
+      "negative_demands": 24,
+      "reserve": 0
+    },
+    {
+      "m": 20,
+      "flip": true,
+      "shape": [
+        6,
+        136
+      ],
+      "selected": 212,
+      "matching": 196,
+      "objective": 408,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 186,
+      "max_rank": 187,
+      "positive_tokens": 24,
+      "negative_demands": 24,
+      "reserve": 0
+    },
+    {
+      "m": 21,
+      "flip": false,
+      "shape": [
+        6,
+        142
+      ],
+      "selected": 221,
+      "matching": 205,
+      "objective": 426,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 196,
+      "max_rank": 196,
+      "positive_tokens": 25,
+      "negative_demands": 25,
+      "reserve": 0
+    },
+    {
+      "m": 21,
+      "flip": true,
+      "shape": [
+        6,
+        142
+      ],
+      "selected": 221,
+      "matching": 205,
+      "objective": 426,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 195,
+      "max_rank": 196,
+      "positive_tokens": 25,
+      "negative_demands": 25,
+      "reserve": 0
+    },
+    {
+      "m": 22,
+      "flip": false,
+      "shape": [
+        6,
+        148
+      ],
+      "selected": 230,
+      "matching": 214,
+      "objective": 444,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 205,
+      "max_rank": 205,
+      "positive_tokens": 26,
+      "negative_demands": 26,
+      "reserve": 0
+    },
+    {
+      "m": 22,
+      "flip": true,
+      "shape": [
+        6,
+        148
+      ],
+      "selected": 230,
+      "matching": 214,
+      "objective": 444,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 204,
+      "max_rank": 205,
+      "positive_tokens": 26,
+      "negative_demands": 26,
+      "reserve": 0
+    },
+    {
+      "m": 23,
+      "flip": false,
+      "shape": [
+        6,
+        154
+      ],
+      "selected": 239,
+      "matching": 223,
+      "objective": 462,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 214,
+      "max_rank": 214,
+      "positive_tokens": 27,
+      "negative_demands": 27,
+      "reserve": 0
+    },
+    {
+      "m": 23,
+      "flip": true,
+      "shape": [
+        6,
+        154
+      ],
+      "selected": 239,
+      "matching": 223,
+      "objective": 462,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 213,
+      "max_rank": 214,
+      "positive_tokens": 27,
+      "negative_demands": 27,
+      "reserve": 0
+    },
+    {
+      "m": 24,
+      "flip": false,
+      "shape": [
+        6,
+        160
+      ],
+      "selected": 248,
+      "matching": 232,
+      "objective": 480,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 223,
+      "max_rank": 223,
+      "positive_tokens": 28,
+      "negative_demands": 28,
+      "reserve": 0
+    },
+    {
+      "m": 24,
+      "flip": true,
+      "shape": [
+        6,
+        160
+      ],
+      "selected": 248,
+      "matching": 232,
+      "objective": 480,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 222,
+      "max_rank": 223,
+      "positive_tokens": 28,
+      "negative_demands": 28,
+      "reserve": 0
+    },
+    {
+      "m": 40,
+      "flip": false,
+      "shape": [
+        6,
+        256
+      ],
+      "selected": 392,
+      "matching": 376,
+      "objective": 768,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 367,
+      "max_rank": 367,
+      "positive_tokens": 44,
+      "negative_demands": 44,
+      "reserve": 0
+    },
+    {
+      "m": 40,
+      "flip": true,
+      "shape": [
+        6,
+        256
+      ],
+      "selected": 392,
+      "matching": 376,
+      "objective": 768,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 366,
+      "max_rank": 367,
+      "positive_tokens": 44,
+      "negative_demands": 44,
+      "reserve": 0
+    },
+    {
+      "m": 64,
+      "flip": false,
+      "shape": [
+        6,
+        400
+      ],
+      "selected": 608,
+      "matching": 592,
+      "objective": 1200,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 583,
+      "max_rank": 583,
+      "positive_tokens": 68,
+      "negative_demands": 68,
+      "reserve": 0
+    },
+    {
+      "m": 64,
+      "flip": true,
+      "shape": [
+        6,
+        400
+      ],
+      "selected": 608,
+      "matching": 592,
+      "objective": 1200,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 582,
+      "max_rank": 583,
+      "positive_tokens": 68,
+      "negative_demands": 68,
+      "reserve": 0
+    },
+    {
+      "m": 100,
+      "flip": false,
+      "shape": [
+        6,
+        616
+      ],
+      "selected": 932,
+      "matching": 916,
+      "objective": 1848,
+      "missing_prescribed_edges": 0,
+      "local_unfrozen_endpoints": 0,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 907,
+      "max_rank": 907,
+      "positive_tokens": 104,
+      "negative_demands": 104,
+      "reserve": 0
+    },
+    {
+      "m": 100,
+      "flip": true,
+      "shape": [
+        6,
+        616
+      ],
+      "selected": 932,
+      "matching": 916,
+      "objective": 1848,
+      "missing_prescribed_edges": 2,
+      "local_unfrozen_endpoints": 4,
+      "cap_unfrozen_endpoints": 8,
+      "observed_synchronous_rounds": 906,
+      "max_rank": 907,
+      "positive_tokens": 104,
+      "negative_demands": 104,
+      "reserve": 0
+    }
+  ]
+}

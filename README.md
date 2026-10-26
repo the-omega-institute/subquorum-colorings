@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [zero-charge ambient activation of occupied bands](docs/AMBIENT_BAND_PORT_ACTIVATION.md):
+a six-column cap preserves the old band's selected and endpoint footprint and
+keeps its actual matching region-closed, yet activates a two-edge matching
+switch at exact half-area. The switched band alone has four unfrozen endpoints;
+the cap alone has eight. Their union is completely frozen for every m>=2.
+Exact interface response maps and a three-stage certificate explain the
+activation. Arbitrary stacks allow at least 2^q actual matchings on identical
+occupation, with every physical token already spent. Thus isolated-band
+rigidity and binary reserve cannot be applied to a region using global
+freezing and matching closure alone. Solver-free controls and 17 local Lean
+audits cover the stated kernels; the general grid 5/6 question remains open.
+
 New [complete frozen equality-matching rigidity](docs/FROZEN_EQUALITY_MATCHING_RIGIDITY.md):
 half-area equality forces the ENTIRE actual matching M*, not only four terminal
 edges. A stronger pocket-port certificate starts a backwards actual-mate time

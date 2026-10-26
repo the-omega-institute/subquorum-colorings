@@ -343,3 +343,14 @@ certificate, terminal-edge lemma and attainers as premises. It performs no
 code execution. Its equality-scope, unused-mate and terminal-index wording
 clarifications are incorporated; the direct all-g construction above is an
 expository consequence supplied by the reviewer and independently checked.
+
+## 10. Ambient limitation resolved by a zero-charge cap
+
+The freezing hypothesis above is LOCAL to this isolated board. It cannot be
+replaced by global freezing in a larger board plus matching closure of the
+old region. The [ambient activation construction](AMBIENT_BAND_PORT_ACTIVATION.md)
+preserves its T/P footprint and local half-area but switches its last two
+horizontal edges to verticals. A six-column zero-charge cap makes the whole
+union completely frozen, although the restricted band has four unfrozen
+endpoints. Arbitrarily many such regions can occur at zero reserve. This
+refutes that ambient transfer rule; the theorem proved here is unchanged.

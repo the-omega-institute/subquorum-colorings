@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/AmbientBandPortActivation.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.stage_rank_forces_closed",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.stage_certificate_implies_seeded_freezing",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.three_stage_composition",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.seeded_trap_exclusion",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.phase_rank_strict",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.early_cap_rank_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.return_cap_rank_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.flipped_band_rank_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.cap_rank_max",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.cap_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.ambient_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.zero_charge_is_not_unused_credit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.union_token_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.indexed_payment_bijective",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.stack_objective",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.stack_half_area",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.AmbientBandPortActivation.no_reserve_per_flipped_region",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3915 \nPages purgeable: 2 \nPages purged: 259680548 \n\nSwap I/O:\nSwapins: 276112570 \nSwapouts: 290799671 \n\nPage Q counts:\nPages active: 150388 \nPages inactive: 138357 \nPages speculative: 11205 \nPages throttled: 0 \nPages wired down: 249252 \n\nCompressor Stats:\nPages used by compressor: 453829 \nPages decompressed: 6411286767 \nPages compressed: 7272483459 \n\nFile I/O:\nPageins: 8554287978 \nPageouts: 26011810 \n\nSystem-wide memory free percentage: 30%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3616.\nPages active:                                 150446.\nPages inactive:                               138418.\nPages speculative:                             11206.\nPages throttled:                                   0.\nPages wired down:                             249249.\nPages purgeable:                                   2.\n\"Translation faults\":                    30355223673.\nPages copy-on-write:                      1486536981.\nPages zero filled:                       12146410377.\nPages reactivated:                        6614397922.\nPages purged:                              259680548.\nFile-backed pages:                            112100.\nAnonymous pages:                              187970.\nPages stored in compressor:                  3294430.\nPages occupied by compressor:                 453850.\nDecompressions:                           6411286879.\nCompressions:                             7272483459.\nPageins:                                  8554287988.\nPageouts:                                   26011810.\nSwapins:                                   276112626.\nSwapouts:                                  290799671."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3555 \nPages purgeable: 0 \nPages purged: 259680670 \n\nSwap I/O:\nSwapins: 276117747 \nSwapouts: 290806483 \n\nPage Q counts:\nPages active: 151395 \nPages inactive: 138538 \nPages speculative: 11839 \nPages throttled: 0 \nPages wired down: 249234 \n\nCompressor Stats:\nPages used by compressor: 452196 \nPages decompressed: 6411296151 \nPages compressed: 7272492243 \n\nFile I/O:\nPageins: 8554292149 \nPageouts: 26011847 \n\nSystem-wide memory free percentage: 30%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3693.\nPages active:                                 151583.\nPages inactive:                               138978.\nPages speculative:                             11588.\nPages throttled:                                   0.\nPages wired down:                             249234.\nPages purgeable:                                   2.\n\"Translation faults\":                    30355245561.\nPages copy-on-write:                      1486537771.\nPages zero filled:                       12146413975.\nPages reactivated:                        6614402477.\nPages purged:                              259680670.\nFile-backed pages:                            113140.\nAnonymous pages:                              189009.\nPages stored in compressor:                  3291978.\nPages occupied by compressor:                 451720.\nDecompressions:                           6411296777.\nCompressions:                             7272492243.\nPageins:                                  8554292166.\nPageouts:                                   26011852.\nSwapins:                                   276117787.\nSwapouts:                                  290806483."
+    }
+  ],
+  "scope": "Generic strict actual-mate stage induction, seeded closure, three-stage composition, seeded trap exclusion, phase rank lifting, cap and flipped-band rank arithmetic, exact counts, indexed bijective payment nonreuse, arbitrary-stack half-area and impossible flipped-region reserve.",
+  "not_formalized": "Full grid coordinate membership, concrete matching and feasibility, all-length witness adapters, exact interface trap instantiations and geometric tile identities remain written and independently executable. No end-to-end coordinate theorem is claimed."
+}
