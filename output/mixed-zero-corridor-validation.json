@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "counts": {
+    "exact_zero_final_corridor_states": 144,
+    "independent_physical_optima": 334,
+    "single_flow_lex_optima": 318,
+    "parameterized_lex_optima": 360,
+    "nonempty_prescribed_optima": 24,
+    "accepted_models": 112,
+    "zero_models": 102,
+    "mixed_target_accepted_models": 9,
+    "rejected_models": 2,
+    "positive_capacity_zero_adapter_rejections": 6,
+    "frozen_mixed_target_physical_states": 272,
+    "strict_freezing_events": 1120,
+    "production_no_zero_state_or_pack_enumeration_controls": 1
+  },
+  "controls": [
+    {
+      "name": "two-direction-frozen-payment",
+      "n": 1,
+      "shape": [
+        78,
+        58
+      ],
+      "gates": 4,
+      "initial_payment": 4,
+      "final_payment": 8,
+      "accepted": true,
+      "value": 8,
+      "fee": 7,
+      "links": 4,
+      "opened": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "paid": [
+        0,
+        1,
+        5,
+        6,
+        21,
+        23,
+        30,
+        32
+      ],
+      "scale": 29
+    },
+    {
+      "name": "two-direction-frozen-payment",
+      "n": 2,
+      "shape": [
+        78,
+        58
+      ],
+      "gates": 8,
+      "initial_payment": 4,
+      "final_payment": 8,
+      "accepted": true,
+      "value": 8,
+      "fee": 15,
+      "links": 4,
+      "opened": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "paid": [
+        0,
+        1,
+        5,
+        6,
+        21,
+        23,
+        30,
+        32
+      ],
+      "scale": 29
+    },
+    {
+      "name": "frozen-mixed-positive-branches",
+      "capacity": 2,
+      "accepted": true,
+      "value": 8,
+      "fee": 12,
+      "links": 4,
+      "opened": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "paid": [
+        0,
+        1,
+        5,
+        6,
+        21,
+        23,
+        30,
+        32
+      ],
+      "positive_gates": 2,
+      "zero_gates": 4,
+      "branches": 4
+    },
+    {
+      "name": "frozen-mixed-positive-branches",
+      "capacity": 1,
+      "accepted": true,
+      "value": 6,
+      "fee": 7,
+      "links": 4,
+      "opened": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "paid": [
+        0,
+        5,
+        6,
+        23,
+        30,
+        32
+      ],
+      "positive_gates": 2,
+      "zero_gates": 4,
+      "branches": 4
+    },
+    {
+      "name": "36-zero-gates-one-flow",
+      "symbolic_states": 68719476736,
+      "accepted": true,
+      "value": 8,
+      "fee": 36,
+      "links": 4,
+      "opened": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "paid": [
+        0,
+        1,
+        5,
+        6,
+        21,
+        23,
+        30,
+        32
+      ],
+      "positive_gates": 0,
+      "zero_gates": 36,
+      "branches": 1
+    }
+  ],
+  "proof": "docs/MIXED_ZERO_CORRIDOR_OPTIMIZATION.md",
+  "scope": "All-state support-monotone aligned P-free arbitrary mixed targets. Zero capacity: one exact costed full fork flow. General capacities: 2^p flows, p positive gates. Nonnegative integer fees. Required sources initially feasible.",
+  "limitations": [
+    "Not an arbitrary mixed-target polynomial algorithm when p is unbounded.",
+    "No universal 5/6 improvement or automatic geometric defect-tree elimination.",
+    "Finite state and primitive enumeration are independent audits only."
+  ]
+}

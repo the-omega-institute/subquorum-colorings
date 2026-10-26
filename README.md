@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact mixed-target zero-capacity optimization](docs/MIXED_ZERO_CORRIDOR_OPTIMIZATION.md):
+all-state support monotonicity makes the final H and V gaps an exact protected
+corridor family when variable tiles carry no positive units. Disjoint extreme
+prerequisites give maximum payment, minimum actual activation fee and minimum
+links in one full fork flow. With p positive-capacity variables, only their
+2^p assignments need branching; zero-gate subsets are never enumerated.
+Frozen two-direction fixtures give real payment gains from 4 to 8, and 36 zero
+gates representing 2^36 states are solved in one flow. Independent checks cover
+318 single-flow and 360 parameterized optima, including prescribed sources;
+two logical Lean kernels are axiom-free. Unbounded-p polynomial optimization
+for general mixed targets and a universal 5/6 improvement remain open.
+
 New [three-snapshot signed support compiler for mixed target directions](docs/SIGNED_MIXED_SUPPORT_COMPILER.md):
 arbitrary P-free changes of capacities zero, one and two have an exact
 four-corridor-term description per original unit. Positive and negative gate
@@ -8,8 +20,9 @@ physical loss witnesses. On passing inputs negative literals retract exactly.
 An all-length feasible bent-owner family nevertheless acquires new support
 before its own gate changes, refuting a final-direction-only compiler and
 its access-fee estimate. Checks cover 1,509 states and 4,213 lattice edges;
-two general logical Lean kernels are axiom-free. Arbitrary-state joint fee
-optimization and universal 5/6 remain open.
+two general logical Lean kernels are axiom-free. The zero-capacity and
+positive-gate-parameterized joint fee continuation is linked above; general
+unbounded-p polynomial optimization and universal 5/6 remain open.
 
 New [exact destructive batch repair with no new physical links](docs/OLD_LINK_BATCH_REPAIR.md):
 after arbitrary mixed-target P-free pivots, aggregate the new supports along
