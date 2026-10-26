@@ -45,6 +45,12 @@ and Z_l K_l. There are 9m+9 endpoints of each colour.
 
 Only outside sites p=(3,c+1) and q=(4,c+1) can be granted kept; every other
 outside site is unavailable. No actual matching edge crosses the boundary.
+Starting with no frozen endpoints, an endpoint freezes once at least two
+DISTINCT nearest-neighbour sites are kept. More precisely, with granted set I,
+
+    F_0=empty,
+    F_(t+1)=F_t union {v in P*: |N(v) intersect (T* union I union mate(F_t))|>=2}.
+
 A site is kept when selected or its ACTUAL mate has frozen. Thus freezing
 of a white endpoint depends only on white endpoints, and likewise for black.
 The two kept grants influence black and white respectively.
@@ -191,7 +197,7 @@ location; after that location the exposed b_j must use V_(j+1), forcing R
 successively to the right. Within each free top path the remaining adjacent
 pairs are forced. This is also seen directly from its first unmatched vertex.
 
-For explicit reconstruction, a rotated suffix starting at r>=1 has five
+For explicit reconstruction, a rotated suffix starting at 1<=r<=m has five
 transitions, with prefix L and suffix R. Put j=r-1. The exceptional edges are
 
 | Type | Exceptional edges at the transition |
@@ -293,6 +299,14 @@ suffix runs left to right. Finally every still-unfrozen V_j in L, or G_j in
 R, uses F_j (mate E_j) and its lower Z site, whose mate has now frozen.
 All black endpoints are covered. This proves sufficiency for every length.
 
+The canonical matching needs NEITHER grant. Its lower white wave from Z_0
+continues through all Z_l and then Q: Q uses its selected bottom site and
+K_(n-1), whose mate Z_(n-1) has frozen. Its terminal black g_m uses the
+selected site (2,c) and H_m, whose mate G_m has frozen in the early L wave.
+The reverse white core wave and the lower black wave then run as above.
+This supplies the no-grant seeds directly, without appealing only to the
+older attainer certificate.
+
 ## 6. Exact response and one-input rigidity
 
 Every noncanonical listed matching has either H_m g_m and K_(n-1) Q,
@@ -329,8 +343,9 @@ Put k=m-r+1 for a nonempty R suffix. Direct coordinate counting gives
 | Canonical | 0 | 0 | 0 |
 
 For p only the deficit is |W|; for q only it is 2, except canonical has zero
-in every state. Exact missing-edge counts count symmetric-difference edges;
-they do not assume that the symmetric difference is a single cycle.
+in every state. The missing-edge column is d(M)=|M* minus M|=|M symmetric_difference M*|/2;
+it is HALF the symmetric-difference edge count. These counts do not assume
+that the symmetric difference is a single cycle.
 
 Necessity with q absent was already proved for arbitrary matchings. If p
 is absent but q is present, complete freezing would, after adding p, place
@@ -345,6 +360,13 @@ token is unchanged. Attach the SAME six-column cap from
 Its early endpoints supply p and q independently of M. After the band has
 frozen, all cap endpoints complete: every interface witness has its actual
 mate inside the now-frozen band, irrespective of its identity.
+
+The cap's early/completion sequences, its contribution |T_C|+|M_C|=18,
+its zero net charge and token bijection, and the separator construction are
+INHERITED premises from that note, not newly proved or independently audited
+here. The present argument verifies their transfer to every classified band
+matching. Concrete checks replay 215 such cap unions; the all-length
+inherited proofs, rather than those finite checks, justify the general use.
 
 Every classified matching therefore gives a completely frozen ambient
 half-area configuration, with the SAME physical payment bijection and zero
@@ -406,3 +428,14 @@ Section 1 and checked against the inherited constructor. It executed no code.
 The final note has a separate audit request; its actual status is recorded
 in the audit receipt, without treating a browser delivery failure as a
 mathematical verdict.
+
+
+The [separate independent final-note audit](../output/two-port-matching-classification-oracle.json)
+returns narrowly REVISE, while explicitly finding the local all-length
+classification, every positive wave, exact partial closures, uniqueness and
+all table entries sound. Its requested edge-count wording, explicit canonical
+no-grant seeds and threshold-two definition have been applied above. Its
+ambient conclusion is conditional on the referenced cap, separator and ledger
+certificates; that inherited scope is now explicit. The audit executed no
+Python or Lean. We retain its actual REVISE verdict and do not relabel it as
+an unconditional ACCEPT after making these presentation corrections.
