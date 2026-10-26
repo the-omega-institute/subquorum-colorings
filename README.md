@@ -1,5 +1,33 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [two-row signed compensation lemma](docs/TWO_ROW_SIGNED_BOUNDARY_COMPENSATION.md):
+an explicit block classification proves the exact actual-edge ledger
+T-H = cross-boundary charge + internal-edge charge - block slack.
+Internal edges have nonpositive charge. Cross-strip terms can be positive:
+an explicit sharp 6-by-w family for every even w>=4 has cross charge +2,
+two distinct internal payments -1 each, zero block slack and J=area/2.
+Thus automatic boundary cancellation fails even at equality; the target bound
+is not refuted. Local checks cover all 50 feasible block states and 422
+interfaces. The general cross-strip compensation inequality remains open.
+
+The proposed [four-to-two-column compression rule is false](docs/TWO_COLUMN_COMPRESSION_OBSTRUCTION.md):
+a realizable boundary has exact best short reward -1, but four columns yield +1.
+A structural two-case proof gives the short upper bound; both attaining boards
+use actual matching edges. This rules out that candidate induction, not the
+half-area target or the independent boundary invariant below.
+
+New [anchor-free six-row boundary invariant](docs/SIX_ROW_BOUNDARY_INVARIANT.md):
+an explicit two-phase integer certificate and arbitrary-length induction give
+the exact maximum J=3w+(w mod 2) for any 6-by-w rectangle, with arbitrary
+actual matching and selected vertices. No retained endpoints are required.
+The independent solver-free checker covers 2,404 states, 145,524 transitions
+in both phases, and all seed/terminal cases. Four Lean declarations verify the
+general induction and arithmetic with these local inequalities as hypotheses;
+the table and coordinate adapter remain outside Lean. This is a
+computer-checked invariant proof; a purely structural six-row proof and the
+universal 5/6 problem remain open. Separate independent reviews accept the full
+invariant proof and the structural signed-strip lemma/sharp obstruction.
+
 New [arbitrary-selection colour-switch theorem](docs/ARBITRARY_SELECTION_COLOUR_SWITCH.md):
 for every m>=2, retaining P0 alone permits arbitrary selections of either colour,
 arbitrary whole-board new endpoints and any actual matching, with exact maximum
@@ -9,7 +37,9 @@ capacities and thirteen explicit nonnegative affine identities show that this
 state admits a complementary white budget. Switching colours rules out a global
 excess without spending the same hole twice. All coefficients are published and
 exact-checked without an optimizer; 461 boards, 2,247 five-white Hall controls and
-19 scoped local Lean declarations pass. The full coordinate adapter is written,
+19 scoped local Lean declarations pass. Independent review accepts the full
+counting proof and coefficients; frozen attainment cites the established rank
+construction. The full coordinate adapter is written,
 not an end-to-end Lean grid theorem. The universal 5/6 problem remains open.
 
 

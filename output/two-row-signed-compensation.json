@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "feasible_blocks": 50,
+  "block_types": {
+    "other": 27,
+    "two_selected": 6,
+    "positive": 4,
+    "neutral_horizontal": 4,
+    "neutral_vertical": 4,
+    "three_endpoints": 4,
+    "all_endpoints": 1
+  },
+  "within_block_actual_edge_controls": 24,
+  "horizontal_interface_actual_edge_controls": 422,
+  "sharp_extensions": 39,
+  "smallest_sharp_obstruction": {
+    "width": 4,
+    "T": 3,
+    "M": 9,
+    "H": 3,
+    "J": 12,
+    "area": 24,
+    "cross_charge": 2,
+    "internal_charge": -2,
+    "block_slack": 0,
+    "negative_internal_edges": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        -1
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        -1
+      ]
+    ],
+    "crossing_edges": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        0
+      ]
+    ]
+  },
+  "original_assistance_example": {
+    "T": 2,
+    "M": 6,
+    "H": 10,
+    "J": 8,
+    "area": 24,
+    "cross_charge": 2,
+    "internal_charge": -2,
+    "block_slack": 8,
+    "negative_internal_edges": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        -1
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        -1
+      ]
+    ],
+    "crossing_edges": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        2
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        0
+      ]
+    ]
+  },
+  "scope": "Checks the written all-width signed two-row lemma, actual-edge ledger, and symbolic even-width sharp obstruction. Finite board checks are controls only.",
+  "remaining": "General cross-strip compensation inequality for arbitrary heights; purely structural anchor-free six-row proof."
+}

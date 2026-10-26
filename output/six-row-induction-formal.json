@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "seconds": 6.236303091049194,
+  "returncode": 0,
+  "stdout": "'SubQuorum.BoundaryPotentialInduction.prefix_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BoundaryPotentialInduction.closed_trace_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BoundaryPotentialInduction.objective_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.BoundaryPotentialInduction.even_width_half_area' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [
+      {
+        "pid": 7781,
+        "comm": "/Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean",
+        "resources": "185376 05:12  98.2 /Users/lexa/.elan/toolchains/leanprover--lean4---v4.33.0/bin/lean SubQuorum/SixRowPotential.lean"
+      }
+    ],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4186 \nPages purgeable: 2 \nPages purged: 265813191 \n\nSwap I/O:\nSwapins: 400177788 \nSwapouts: 415506673 \n\nPage Q counts:\nPages active: 143454 \nPages inactive: 140924 \nPages speculative: 1492 \nPages throttled: 0 \nPages wired down: 283531 \n\nCompressor Stats:\nPages used by compressor: 433298 \nPages decompressed: 6806721363 \nPages compressed: 7678675236 \n\nFile I/O:\nPageins: 8570492266 \nPageouts: 26300819 \n\nSystem-wide memory free percentage: 28%\n",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4102.\nPages active:                                 143473.\nPages inactive:                               140938.\nPages speculative:                              1509.\nPages throttled:                                   0.\nPages wired down:                             283531.\nPages purgeable:                                   2.\n\"Translation faults\":                    31132210519.\nPages copy-on-write:                      1499837076.\nPages zero filled:                       12262171504.\nPages reactivated:                        6790792830.\nPages purged:                              265813191.\nFile-backed pages:                            101225.\nAnonymous pages:                              184695.\nPages stored in compressor:                  3601558.\nPages occupied by compressor:                 433324.\nDecompressions:                           6806721388.\nCompressions:                             7678675236.\nPageins:                                  8570492279.\nPageouts:                                   26300819.\nSwapins:                                   400177816.\nSwapouts:                                  415506673.\n",
+    "decision": "One existing own constant-table prototype is below 256MB RSS. This new standalone arithmetic induction has no imports beyond Omega; allow this small second invocation with >25 percent memory free."
+  },
+  "scope": "All-length induction and final arithmetic only; local certificate and full grid adapter are explicit assumptions, not Lean-verified here.",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.BoundaryPotentialInduction.prefix_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryPotentialInduction.closed_trace_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryPotentialInduction.objective_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryPotentialInduction.even_width_half_area",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "cd formal && lean SubQuorum/BoundaryPotentialInduction.lean",
+  "not_formalized": "Finite potential table, exhaustive word/state generation and full grid-to-state adapter."
+}

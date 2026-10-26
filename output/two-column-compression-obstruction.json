@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "boundary": {
+    "O": 54,
+    "F": 4,
+    "R": 50,
+    "index": 3884
+  },
+  "short_completions_checked": 240,
+  "exact_short_reward": -1,
+  "short_attainer": {
+    "width": 3,
+    "T": [
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "M": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ]
+    ],
+    "J": 8,
+    "reward": -1
+  },
+  "four_column_obstruction": {
+    "width": 5,
+    "T": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        4
+      ]
+    ],
+    "M": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    ],
+    "J": 15,
+    "reward": 1
+  },
+  "failed_rule": "Every closed four-column completion is dominated by a zero- or two-column completion.",
+  "scope": "Literal feasible boards and finite control. The exact short upper bound has a separate structural proof; this does not refute the half-area target."
+}
