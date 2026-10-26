@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T06:22:54.781503+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "37%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "37%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.GeneralBridgeRetention.saturated_beta_already_normal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.GeneralBridgeRetention.closed_repaired_tree_flux' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.GeneralBridgeRetention.fee_dominates_new_link_count' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Three general kernels: saturated private beta prevents a second interval; repaired closed-tree outgoing-minus-incoming flux is one; integer fee dominates new-link count under the explicit scale.",
+  "not_formalized": [
+    "General reversed resource flow, preservation of source/interval identities, beta reachability guard, complete routing equivalence, physical shared-stem synergy and all-length relay families have written proofs and independent executable checks; not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

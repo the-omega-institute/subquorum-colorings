@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [general mixed-head retention and deficient-tree relays](docs/GENERAL_BRIDGE_RETENTION_AND_DEFICIENT_RELAYS.md):
+one resource-first flow handles arbitrary shared stems and deficient receivers
+when every reachable beta already has its old whole-beta credit saturated.
+All mixed-head additions satisfy this guard. Maximum payment, minimum actual
+new-link fee and then minimum new-link count retain every old paid source and
+original used interval ID. A deficient junction needs two outgoing bridges and
+one incoming; one-outlet contraction cannot be extended unchanged. An all-length
+abstract chain needs r+1 new links for one gain. A fully frozen shared-stem
+example has separate bridge values 3/3 and joint value 4, retaining three old
+units; all-q copies need 2q new bridges. Checks include 330 independent optima,
+7,084 freezing events and three scoped Lean kernels. Newly reachable unused
+betas and universal 5/6 improvement remain open.
+
 New [shared prefix/suffix bridge compensation in one flow](docs/SHARED_PREFIX_BRIDGE_FLOW.md):
 private reserves are no longer required when donors lie in deficient trees,
 receivers in nondeficient components and candidate stem pairs are disjoint.

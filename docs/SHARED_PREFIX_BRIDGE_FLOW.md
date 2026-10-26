@@ -2,6 +2,10 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+Continuation: [general mixed-head retention and deficient-tree relays](GENERAL_BRIDGE_RETENTION_AND_DEFICIENT_RELAYS.md)
+remove the disjoint-pair/donor/receiver guards under beta saturation, and give
+an explicit obstruction to extending the one-outlet contraction unchanged.
+
 The [private prefix/suffix theorem](PRIVATE_PREFIX_BRIDGE_COMPENSATION.md)
 gave a sufficient geometric certificate for bridge compensation. We now remove
 its private-unit hypothesis entirely, retaining the ordered entrance and the

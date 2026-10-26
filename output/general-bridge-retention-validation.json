@@ -1,0 +1,369 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_lex_value_fee_new_link_optima": 330,
+    "independent_prescribed_source_and_interval_optima": 330,
+    "max_flow_cut_and_residual_cost_certificates": 330,
+    "old_whole_beta_credit_models": 108,
+    "old_fork_reference_models": 8,
+    "augmenting_paths_with_reversed_links": 1,
+    "all_maximum_baseline_retention": 43,
+    "junction_bridge_essentiality_checks": 3,
+    "safe_added_beta_head_with_old_private_credit": 1,
+    "transport_bridge_essentiality_checks": 35,
+    "all_length_transport_samples": 7,
+    "random_mixed_head_models": 320,
+    "new_reachable_beta_guard_rejections": 214,
+    "production_64_step_transport_no_mode_or_primitive_optimizer": 1,
+    "strict_freezing_events": 7084,
+    "frozen_independent_restricted_full_flow_values": 3,
+    "frozen_two_bridge_joint_necessity_checks": 2,
+    "frozen_independent_identity_prescribed_lex_optimum": 1,
+    "frozen_shared_stem_synergy_boards": 4,
+    "production_frozen_shared_stems_no_independent_optimizer": 1
+  },
+  "samples": [
+    {
+      "name": "deficient_tree_transit_junction",
+      "old": 4,
+      "new": 6,
+      "gain": 2,
+      "new_links": 3,
+      "tree_outgoing": 2,
+      "tree_incoming": 1,
+      "paid": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "certificates": [
+        {
+          "kind": "interval",
+          "owners": [
+            1
+          ],
+          "links": [],
+          "interval": 0,
+          "value": 1,
+          "witness": 1
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            0,
+            6
+          ],
+          "links": [
+            [
+              0,
+              12
+            ]
+          ],
+          "interval": 1,
+          "value": 1,
+          "witness": 6
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            4
+          ],
+          "links": [],
+          "interval": 2,
+          "value": 1,
+          "witness": 4
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            2,
+            7
+          ],
+          "links": [
+            [
+              4,
+              14
+            ]
+          ],
+          "interval": 3,
+          "value": 1,
+          "witness": 7
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            5
+          ],
+          "links": [],
+          "interval": 4,
+          "value": 1,
+          "witness": 5
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            3,
+            8
+          ],
+          "links": [
+            [
+              6,
+              16
+            ]
+          ],
+          "interval": 5,
+          "value": 1,
+          "witness": 8
+        }
+      ]
+    }
+  ],
+  "physical": [
+    {
+      "copies": 1,
+      "shape": [
+        28,
+        24
+      ],
+      "old_payment": 3,
+      "new_payment": 4,
+      "old_used_retained": 3,
+      "fresh_units": 1,
+      "new_links": 2,
+      "fee": 5,
+      "cut_capacity": 4,
+      "cost_potential_certificate": true,
+      "production": false,
+      "example_certificate": {
+        "certificates": [
+          {
+            "kind": "interval",
+            "owners": [
+              11,
+              12
+            ],
+            "links": [
+              [
+                [
+                  5,
+                  19
+                ],
+                [
+                  5,
+                  18
+                ]
+              ]
+            ],
+            "interval": [
+              5,
+              10,
+              10
+            ],
+            "value": 1,
+            "witness": 11
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              7,
+              8
+            ],
+            "links": [
+              [
+                [
+                  5,
+                  6
+                ],
+                [
+                  5,
+                  5
+                ]
+              ]
+            ],
+            "interval": [
+              5,
+              12,
+              12
+            ],
+            "value": 1,
+            "witness": 7
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              6
+            ],
+            "links": [],
+            "interval": [
+              7,
+              6,
+              6
+            ],
+            "value": 1,
+            "witness": 6
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              14,
+              20
+            ],
+            "links": [
+              [
+                [
+                  24,
+                  17
+                ],
+                [
+                  24,
+                  18
+                ]
+              ]
+            ],
+            "interval": [
+              7,
+              13,
+              13
+            ],
+            "value": 1,
+            "witness": 14
+          }
+        ],
+        "used_units": [
+          {
+            "id": [
+              5,
+              10,
+              10
+            ],
+            "cells": [
+              [
+                10,
+                10
+              ],
+              [
+                11,
+                10
+              ]
+            ],
+            "old": true
+          },
+          {
+            "id": [
+              5,
+              12,
+              12
+            ],
+            "cells": [
+              [
+                10,
+                12
+              ],
+              [
+                11,
+                12
+              ]
+            ],
+            "old": false
+          },
+          {
+            "id": [
+              7,
+              6,
+              6
+            ],
+            "cells": [
+              [
+                14,
+                6
+              ],
+              [
+                15,
+                6
+              ]
+            ],
+            "old": true
+          },
+          {
+            "id": [
+              7,
+              13,
+              13
+            ],
+            "cells": [
+              [
+                14,
+                13
+              ],
+              [
+                15,
+                13
+              ]
+            ],
+            "old": true
+          }
+        ]
+      }
+    },
+    {
+      "copies": 2,
+      "shape": [
+        58,
+        24
+      ],
+      "old_payment": 6,
+      "new_payment": 8,
+      "old_used_retained": 6,
+      "fresh_units": 2,
+      "new_links": 4,
+      "fee": 10,
+      "cut_capacity": 8,
+      "cost_potential_certificate": true,
+      "production": false,
+      "example_certificate": {}
+    },
+    {
+      "copies": 4,
+      "shape": [
+        118,
+        24
+      ],
+      "old_payment": 12,
+      "new_payment": 16,
+      "old_used_retained": 12,
+      "fresh_units": 4,
+      "new_links": 8,
+      "fee": 20,
+      "cut_capacity": 16,
+      "cost_potential_certificate": true,
+      "production": false,
+      "example_certificate": {}
+    },
+    {
+      "copies": 16,
+      "shape": [
+        478,
+        24
+      ],
+      "old_payment": 48,
+      "new_payment": 64,
+      "old_used_retained": 48,
+      "fresh_units": 16,
+      "new_links": 32,
+      "fee": 80,
+      "cut_capacity": 64,
+      "cost_potential_certificate": true,
+      "production": true,
+      "example_certificate": {}
+    }
+  ],
+  "proof": "docs/GENERAL_BRIDGE_RETENTION_AND_DEFICIENT_RELAYS.md",
+  "scope": "Arbitrary added links with no newly reachable beta; all mixed-head additions to old normalized skeletons covered. Exact maximum payment, minimum actual new-link fee then count; retain all old paid sources and original used interval IDs. No disjoint-pair, deficient-donor or nondeficient-receiver guard.",
+  "limitations": [
+    "New reachable beta not already paid in baseline requires additional normalization argument.",
+    "No universal geometric 5/6 improvement."
+  ]
+}

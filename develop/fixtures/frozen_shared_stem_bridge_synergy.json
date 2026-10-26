@@ -1,0 +1,21 @@
+{
+  "base_fixture": "frozen_all_mixed_gate_cycle.json",
+  "directions": "all H; no pivot",
+  "old_stems": [
+    {"owners": [8, 11], "links": [[[5, 17], [5, 18]]]},
+    {"owners": [6, 7], "links": [[[5, 4], [5, 5]]]},
+    {"owners": [20, 14], "links": [[[24, 17], [24, 18]]]}
+  ],
+  "baseline_original_units_cells": [
+    [[10, 10], [11, 10]],
+    [[14, 6], [15, 6]],
+    [[14, 13], [15, 13]]
+  ],
+  "new_source_tip": [5, 19],
+  "added_links": [[[5, 19], [5, 18]], [[5, 6], [5, 5]]],
+  "fees": [2, 3],
+  "expected_old_payment": 3,
+  "expected_either_single_bridge_payment": 3,
+  "expected_joint_payment": 4,
+  "scope": "Fully frozen actual board. One new bridge enters old top-source stem and another leaves that same stem. Neither bridge alone raises payment; both together pay all four original alphas while retaining the three supplied old original interval IDs."
+}

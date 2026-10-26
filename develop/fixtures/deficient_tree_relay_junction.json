@@ -1,0 +1,21 @@
+{
+  "owner_types": "AAAAAAMMM",
+  "owner_names": ["A", "B", "C", "D", "E", "F", "X", "Y", "Z"],
+  "support": {"0": [], "1": [0], "2": [0], "3": [1], "4": [2], "5": [4], "6": [1], "7": [3], "8": [5]},
+  "resources": [0, 1, 2, 3, 4, 5],
+  "old_stems": [
+    {"owners": [1, 6], "links": [[2, 12]]},
+    {"owners": [2], "links": []},
+    {"owners": [3], "links": []},
+    {"owners": [4, 7], "links": [[8, 14]]},
+    {"owners": [5, 8], "links": [[10, 16]]}
+  ],
+  "new_sources": [0],
+  "added_links": [[0, 12], [4, 14], [6, 16]],
+  "fees": [1, 1, 1],
+  "expected_old_payment": 4,
+  "expected_payment": 6,
+  "expected_minimum_actual_new_links": 3,
+  "expected_payment_after_deleting_any_added_link": 5,
+  "scope": "Abstract canonical TP/BP owner model with at most two original-owner users per resource. Candidate stem pairs are disjoint, but receiver B->X lies in a deficient tree with two necessary outgoing bridges and one incoming bridge. No frozen grid realization claimed."
+}
