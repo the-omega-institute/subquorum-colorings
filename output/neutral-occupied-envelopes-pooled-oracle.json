@@ -1,14 +1,21 @@
 {
-  "status": "dispatched",
+  "status": "failed",
   "verdict": null,
   "task_id": "ab576cc1-ccfc-4507-bafb-754a6dcc69d3",
   "conversation_id": "conv_b43f7c71e8701816",
-  "observed_at": "2026-10-26T19:42:25.358785+00:00",
-  "phase": "typing",
+  "failure_reason": "infrastructure_retry_exhausted",
+  "failure_detail": "cdp_disconnected@typing",
   "attempts": 4,
   "retry_count": 3,
-  "max_retries": 3,
-  "failure_detail": "cdp_disconnected@typing",
-  "scope": "Separate follow-up for the new sharp arbitrary-mask pooled budget and complete neutral-footprint classification. No mathematical reply received as of this snapshot. Original streaming call retained.",
-  "not_claimed": "The prior ACCEPT covers mixed freezing and physical cancellation, not this later budget extension."
+  "response": "",
+  "stream_errors": [
+    {
+      "message": "The oracle task failed: infrastructure_retry_exhausted",
+      "type": "server_error",
+      "param": null,
+      "code": "infrastructure_retry_exhausted"
+    }
+  ],
+  "scope": "Separate follow-up for the sharp arbitrary-mask pooled budget and complete neutral-footprint classification; task failed during browser prompt delivery, without a mathematical response. No review acceptance or rejection of that theorem.",
+  "not_claimed": "Prior mixed-construction ACCEPT does not cover this later budget extension. The new budget has its written all-length proof, solver-free adapter controls and scoped local Lean verification; independent external confirmation remains absent."
 }

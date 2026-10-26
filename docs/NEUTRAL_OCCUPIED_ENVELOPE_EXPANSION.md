@@ -536,8 +536,10 @@ restricted rule and physical cancellation. Its occupied-neighbour wording
 clarification is applied. Neither audit executed the verifier or Lean.
 The later sharp pooled budget and equality-footprint classification in
 Section 8 have a [separate follow-up record](../output/neutral-occupied-envelopes-pooled-oracle.json);
-that record states the actual request status, without borrowing the earlier
-ACCEPT for a result outside its input.
+the request ended with infrastructure_retry_exhausted /
+cdp_disconnected@typing and no mathematical response. The new budget has
+the written proof and local checks above; it has no separate external
+confirmation. The earlier ACCEPT is limited to its actual input.
 
 ## 11. Proposed research-note addition
 
