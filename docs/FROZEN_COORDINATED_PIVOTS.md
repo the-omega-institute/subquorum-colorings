@@ -1,5 +1,10 @@
 # Genuine frozen-grid coordination and a fixed-P maximum local trap
 
+**Two-ended continuation:** [protected linear corridors](PROTECTED_LINEAR_CORRIDORS.md)
+prove all-length fully frozen one/two-unit shared-resource variants and a
+general extreme-resource compression for arbitrary external mixed/beta cores.
+Their exact joint gate/route optimization is one min-cost fork flow.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 We give two physical grid results beyond the earlier abstract coordination

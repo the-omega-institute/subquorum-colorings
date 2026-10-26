@@ -1,5 +1,12 @@
 # Mixed relays and beta forks: exact shared fees by dual resource parity
 
+**Protected-path continuation:** [extreme-resource linear corridors](PROTECTED_LINEAR_CORRIDORS.md)
+give a geometric class with arbitrarily many original units and overlapping
+route prerequisites that reduces to one polynomial min-cost fork flow.
+Simultaneous endpoint privatization makes the retained prerequisites disjoint;
+a one-unit corridor retains one shared output. This does not supply a parity
+algorithm for arbitrary instances of the theorem below.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 The [capacity-two gate-bundle theorem](CAPACITY_TWO_GATE_BUNDLES.md) required

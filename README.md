@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [protected linear corridors and extreme-resource joint repair](docs/PROTECTED_LINEAR_CORRIDORS.md):
+arbitrarily many resource/gate prefixes collapse to the first and last original
+units. Their disjoint end prerequisites give one polynomial min-cost fork flow
+for maximum payment, minimum actual gate fee and then minimum links, with
+arbitrary competing mixed/beta cores. A single-unit corridor keeps one shared
+output. All-length fully frozen two-ended families realize both cases; an
+outside-owner control proves why protection is required. Checks pass926 abstract
+states,93 joint lex optima,507 protected-source optima and2088 physical states,
+plus four scoped Lean lemmas. Original inventory is retained; universal5/6
+and arbitrary branched/shared-gate adapters remain open.
+
 New [mixed-resource dual parity and exact shared activation fees](docs/MIXED_RESOURCE_DUAL_PARITY.md):
 arbitrary competing mixed relays and beta forks can participate in independent
 one/two-original-unit gate bundles. Output linkability is a matroid; closing

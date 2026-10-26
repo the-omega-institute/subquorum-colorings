@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T01:58:52.480423+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.ProtectedCorridorExtremes.left_extreme_reachable' does not depend on any axioms",
+    "'SubQuorum.ProtectedCorridorExtremes.right_extreme_reachable' does not depend on any axioms",
+    "'SubQuorum.ProtectedCorridorExtremes.extreme_prerequisites_disjoint' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ProtectedCorridorExtremes.distinct_valid_extreme_indices' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Four general ordered-corridor kernel theorems: arbitrary gate predicates and opening sets inherit reachability toward first/last resources; their prerequisite positions are disjoint; at least two units have distinct valid extreme indices. No enumeration.",
+  "not_formalized": [
+    "Full normalized-pack simultaneous reassignment, global protected support contract, costed fork-flow equivalence and polynomial optimization, source preservation and frozen-grid embedding. These have written proofs and independent executable checks; no end-to-end Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
