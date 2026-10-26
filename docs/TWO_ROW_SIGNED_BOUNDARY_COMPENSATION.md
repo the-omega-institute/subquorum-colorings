@@ -162,8 +162,9 @@ Proof assistance: broker task `3c84927d-3525-46ae-a285-c48899fbd366`, conversati
 and a non-sharp six-row boundary-cancellation obstruction. The sharp bottom
 extension, exact retained-edge ledger and arbitrary-even-width construction
 are deductions here. Assistance is not independent acceptance. Its proposed
-four-column compression lemma remains unproved and is not a premise of this
-note or of the separately checked boundary invariant.
+four-column compression lemma is refuted by the subsequent explicit obstruction
+linked below; it is not a premise of this note or of the separately checked
+boundary invariant.
 
 Independent review `1502c35a-6718-4fa0-832b-62c7a3984897`, observed gpt_6/pro,
 is COMPLETED/ACCEPT for Sections 1–4: the structural lemma, exact ledger and
