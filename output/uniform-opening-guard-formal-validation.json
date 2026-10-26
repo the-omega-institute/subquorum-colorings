@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T02:19:40.379794+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "45%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "45%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.UniformOpeningGuard.antitone_two_state_constant' does not depend on any axioms",
+    "'SubQuorum.UniformOpeningGuard.axis_two_state_monotone' does not depend on any axioms",
+    "'SubQuorum.UniformOpeningGuard.guard_iff_all_state_monotonicity' does not depend on any axioms",
+    "'SubQuorum.UniformOpeningGuard.endpoint_loss_is_vertical' does not depend on any axioms"
+  ],
+  "scope": "Four general all-state support kernels: antitone incidence family with endpoint inclusion is constant; mixed increasing/decreasing incidence classes become globally monotone under that inclusion; endpoint guard iff all-state monotonicity; every endpoint loss lies on the decreasing axis. No finite enumeration.",
+  "not_formalized": [
+    "Physical common-anchor construction and horizontal/vertical monotonicity, no-P final-gap compiler, min-cost fork-flow equivalence and physical frozen controls. These have written proofs and independent executable checks; no end-to-end Lean claim."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

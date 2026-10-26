@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [uniform zero-capacity openings: two-state recognition and physical compiler](docs/UNIFORM_ZERO_CAPACITY_OPENINGS.md):
+on any feasible grid, uniform V→H P-free capacity-zero gates have increasing H
+resource support and decreasing V support. Full endpoint incidence inclusion
+is equivalent to support monotonicity for every gate subset. Passing inputs
+automatically compile into disjoint protected no-P corridors and one polynomial
+costed fork flow, including arbitrary mixed/beta competition. Fine anchors allow
+balanced TT/BB gates with changing coarse forest cells. A fully frozen28×48
+control has payments3/2/4/3: equal endpoint values do not certify losslessness.
+Checks cover954 physical states,2721 lattice edges and1750 strict freeze events;
+four general recognition lemmas are axiom-free in Lean. Universal5/6 remains open.
+
 New [protected linear corridors and extreme-resource joint repair](docs/PROTECTED_LINEAR_CORRIDORS.md):
 arbitrarily many resource/gate prefixes collapse to the first and last original
 units. Their disjoint end prerequisites give one polynomial min-cost fork flow

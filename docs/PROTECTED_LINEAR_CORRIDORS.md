@@ -1,5 +1,11 @@
 # Protected linear corridors: extreme resources and polynomial joint repair
 
+**Physical recognition continuation:** [uniform zero-capacity openings](UNIFORM_ZERO_CAPACITY_OPENINGS.md)
+prove a two-state support audit for arbitrary feasible grids. A passing input
+automatically satisfies the complete corridor contract below, including all
+gate subsets. Balanced zero-capacity gates may change coarse forest cells;
+common positive fine anchors preserve original resource identities.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 The [mixed-resource dual parity theorem](MIXED_RESOURCE_DUAL_PARITY.md) handles

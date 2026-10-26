@@ -1,5 +1,11 @@
 # Four-arm accounting for a P-free direction pivot
 
+**Uniform-family continuation:** [two-state recognition and corridor compilation](UNIFORM_ZERO_CAPACITY_OPENINGS.md)
+characterize lossless support families of uniform capacity-zero openings by
+one endpoint incidence comparison. A passing arbitrary grid compiles into
+disjoint protected corridors and one costed full fork flow. A frozen3/2/4/3
+control shows why comparing only the endpoint payment values is insufficient.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 A single P-free 2×2 direction change has an exact five-block support ledger.
