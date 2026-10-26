@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [two-port activation of an unbounded rematching chain](docs/TWO_PORT_UNBOUNDED_REMATCHING.md):
+the same six-column zero-charge cap activates a matching change through every
+core of the band. It removes exactly 8m+7 prescribed edges, including the
+leftmost core arbitrarily far from the two right-boundary ports, while keeping
+T/P and half-area unchanged. An all-length actual-mate rank table proves
+complete freezing. Exact interface states leave 9m+9, 9m+7, 2 or 0 endpoints
+unfrozen; both inputs are necessary for this matching. Every physical token
+is already spent. Fixed input count therefore bounds neither rematching
+extent nor distance. This is an explicit family, not an all-matching
+classification. Solver-free controls and 17 local Lean audits pass.
+
 New [zero-charge ambient activation of occupied bands](docs/AMBIENT_BAND_PORT_ACTIVATION.md):
 a six-column cap preserves the old band's selected and endpoint footprint and
 keeps its actual matching region-closed, yet activates a two-edge matching

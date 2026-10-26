@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/TwoPortUnboundedRematching.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.actual_mate_preserves_dependency_colour",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.colour_freezing_invariant",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.exact_two_input_response",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.two_inputs_necessary_sufficient",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.zipper_matching_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.exact_interface_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.early_black_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.lower_black_step",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.terminal_G_check",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.lower_white_step",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.white_core_steps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.white_core_successors",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.changed_cap_seam_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.rank_max_checks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.no_uniform_defect_per_port",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.no_uniform_rematching_radius",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortUnboundedRematching.fixed_port_affine_defect_bound_fails",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3935 \nPages purgeable: 2 \nPages purged: 260549842 \n\nSwap I/O:\nSwapins: 286829305 \nSwapouts: 301584035 \n\nPage Q counts:\nPages active: 150111 \nPages inactive: 136932 \nPages speculative: 11970 \nPages throttled: 0 \nPages wired down: 251546 \n\nCompressor Stats:\nPages used by compressor: 452410 \nPages decompressed: 6439800171 \nPages compressed: 7302484015 \n\nFile I/O:\nPageins: 8556498066 \nPageouts: 26060970 \n\nSystem-wide memory free percentage: 29%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3668.\nPages active:                                 150005.\nPages inactive:                               136802.\nPages speculative:                             11982.\nPages throttled:                                   0.\nPages wired down:                             251867.\nPages purgeable:                                   0.\n\"Translation faults\":                    30414951327.\nPages copy-on-write:                      1487836456.\nPages zero filled:                       12159686395.\nPages reactivated:                        6631783018.\nPages purged:                              260549844.\nFile-backed pages:                            106005.\nAnonymous pages:                              192784.\nPages stored in compressor:                  3279176.\nPages occupied by compressor:                 452509.\nDecompressions:                           6439800481.\nCompressions:                             7302484279.\nPageins:                                  8556498068.\nPageouts:                                   26060970.\nSwapins:                                   286829353.\nSwapouts:                                  301584063."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4613 \nPages purgeable: 2 \nPages purged: 260550002 \n\nSwap I/O:\nSwapins: 286834021 \nSwapouts: 301592783 \n\nPage Q counts:\nPages active: 149366 \nPages inactive: 134414 \nPages speculative: 14166 \nPages throttled: 0 \nPages wired down: 251828 \n\nCompressor Stats:\nPages used by compressor: 452507 \nPages decompressed: 6439813442 \nPages compressed: 7302504474 \n\nFile I/O:\nPageins: 8556502404 \nPageouts: 26060970 \n\nSystem-wide memory free percentage: 29%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4538.\nPages active:                                 149375.\nPages inactive:                               134418.\nPages speculative:                             14167.\nPages throttled:                                   0.\nPages wired down:                             251828.\nPages purgeable:                                   4.\n\"Translation faults\":                    30414993877.\nPages copy-on-write:                      1487838147.\nPages zero filled:                       12159697173.\nPages reactivated:                        6631788968.\nPages purged:                              260550002.\nFile-backed pages:                            111319.\nAnonymous pages:                              186641.\nPages stored in compressor:                  3284710.\nPages occupied by compressor:                 452511.\nDecompressions:                           6439813448.\nCompressions:                             7302504474.\nPageins:                                  8556502405.\nPageouts:                                   26060970.\nSwapins:                                   286834025.\nSwapouts:                                  301592783."
+    }
+  ],
+  "scope": "Arbitrary-type actual-mate colour dependence and least-closure invariance, conditional exact two-input response and necessity/sufficiency, matching and interface counts, all-length rank arithmetic, and unbounded changed-edge count/radius at fixed two ports.",
+  "not_formalized": "The concrete all-length matching, coordinate-to-bipartition adapter, explicit rank membership, exact geometric trap support tables, physical token payment and stack adapters remain written with solver-free checks. This is not an end-to-end Lean coordinate theorem or a classification of all matchings."
+}

@@ -314,3 +314,13 @@ clarifications are incorporated: both regions fail local freezing in the
 flipped case, and cap trap supports count only explicitly granted outside
 sites. The all-tile/exterior-token distinction and alignment parity are
 explicit above.
+
+## 7. Subsequent extension: the same ports reach every core
+
+The [two-port rematching-chain construction](TWO_PORT_UNBOUNDED_REMATCHING.md)
+uses exactly this cap and retained T/P, but changes the matching through every
+core. It misses 8m+7 prescribed edges at zero reserve. Its exact two-input
+response has a two-endpoint trap and a 9m+7-endpoint trap. Thus the ambient
+obstruction is not confined to a fixed terminal square; bounded input count
+does not bound the number or distance of changed edges. The local two-edge
+construction and all statements above remain valid.
