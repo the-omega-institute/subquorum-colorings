@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/TurningOwnership.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.TurningOwnership.local_charge_from_owner",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TurningOwnership.endpoint_capacity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TurningOwnership.exact_resource_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TurningOwnership.half_area_from_resources",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TurningOwnership.node_forces_next",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TurningOwnership.forced_path",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TurningOwnership.every_old_path_owner_changes",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.TurningOwnership.local_charge_from_owner' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TurningOwnership.endpoint_capacity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TurningOwnership.exact_resource_margin' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TurningOwnership.half_area_from_resources' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TurningOwnership.node_forces_next' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TurningOwnership.forced_path' depends on axioms: [propext, Quot.sound]\n'SubQuorum.TurningOwnership.every_old_path_owner_changes' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 5185 \nPages purgeable: 2 \nPages purged: 266547511 \n\nSwap I/O:\nSwapins: 424670700 \nSwapouts: 440049861 \n\nPage Q counts:\nPages active: 143063 \nPages inactive: 133723 \nPages speculative: 8225 \nPages throttled: 0 \nPages wired down: 283168 \n\nCompressor Stats:\nPages used by compressor: 433551 \nPages decompressed: 6866372581 \nPages compressed: 7739206754 \n\nFile I/O:\nPageins: 8572727469 \nPageouts: 26331341 \n\nSystem-wide memory free percentage: 28%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     5121.\nPages active:                                 143084.\nPages inactive:                               133760.\nPages speculative:                              8229.\nPages throttled:                                   0.\nPages wired down:                             283168.\nPages purgeable:                                   2.\n\"Translation faults\":                    31242344296.\nPages copy-on-write:                      1501311987.\nPages zero filled:                       12276230699.\nPages reactivated:                        6814105578.\nPages purged:                              266547511.\nFile-backed pages:                            102449.\nAnonymous pages:                              182624.\nPages stored in compressor:                  3558677.\nPages occupied by compressor:                 433565.\nDecompressions:                           6866372635.\nCompressions:                             7739206754.\nPageins:                                  8572727476.\nPageouts:                                   26331341.\nSwapins:                                   424670736.\nSwapouts:                                  440049861."
+  },
+  "scope": "Scalar actual-edge charge/resource arithmetic and arbitrary-length forced path induction with explicit local hypotheses.",
+  "not_formalized": "Hall theorem application, tile/endpoint adapter, actual coordinate families and square-exchange assembly remain written proofs."
+}

@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "controls": 50,
+  "smallest": {
+    "height": 6,
+    "width": 4,
+    "J": 12,
+    "cut_tiles": 5,
+    "cut_demand": 6,
+    "distinct_cut_resources": 5,
+    "Hall_deficiency": 1,
+    "cut_signed_excess": 2,
+    "outside_signed_payment": -2,
+    "square_flip_removes": 2,
+    "square_flip_adds": 2,
+    "full_ownership_after_flip": true,
+    "ownership_after_flip_retains_original_matching": false,
+    "original_M_grouped_charge_certificate": true,
+    "exceptional_original_edge_charges": [
+      -2,
+      2
+    ],
+    "endpoint_set_and_matching_size_preserved": true,
+    "additional_all_matching_controls": 11,
+    "max_alternating_cycles_in_controls": 2
+  },
+  "largest": {
+    "height": 104,
+    "width": 4,
+    "J": 208,
+    "cut_tiles": 54,
+    "cut_demand": 104,
+    "distinct_cut_resources": 103,
+    "Hall_deficiency": 1,
+    "cut_signed_excess": 2,
+    "outside_signed_payment": -2,
+    "square_flip_removes": 2,
+    "square_flip_adds": 2,
+    "full_ownership_after_flip": true,
+    "ownership_after_flip_retains_original_matching": false,
+    "original_M_grouped_charge_certificate": true,
+    "exceptional_original_edge_charges": [
+      -2,
+      2
+    ],
+    "endpoint_set_and_matching_size_preserved": true,
+    "additional_all_matching_controls": 0,
+    "max_alternating_cycles_in_controls": 0
+  },
+  "all_matching_controls": 77,
+  "all_matching_control_heights": [
+    {
+      "height": 6,
+      "width": 4,
+      "J": 12,
+      "cut_tiles": 5,
+      "cut_demand": 6,
+      "distinct_cut_resources": 5,
+      "Hall_deficiency": 1,
+      "cut_signed_excess": 2,
+      "outside_signed_payment": -2,
+      "square_flip_removes": 2,
+      "square_flip_adds": 2,
+      "full_ownership_after_flip": true,
+      "ownership_after_flip_retains_original_matching": false,
+      "original_M_grouped_charge_certificate": true,
+      "exceptional_original_edge_charges": [
+        -2,
+        2
+      ],
+      "endpoint_set_and_matching_size_preserved": true,
+      "additional_all_matching_controls": 11,
+      "max_alternating_cycles_in_controls": 2
+    },
+    {
+      "height": 8,
+      "width": 4,
+      "J": 16,
+      "cut_tiles": 6,
+      "cut_demand": 8,
+      "distinct_cut_resources": 7,
+      "Hall_deficiency": 1,
+      "cut_signed_excess": 2,
+      "outside_signed_payment": -2,
+      "square_flip_removes": 2,
+      "square_flip_adds": 2,
+      "full_ownership_after_flip": true,
+      "ownership_after_flip_retains_original_matching": false,
+      "original_M_grouped_charge_certificate": true,
+      "exceptional_original_edge_charges": [
+        -2,
+        2
+      ],
+      "endpoint_set_and_matching_size_preserved": true,
+      "additional_all_matching_controls": 66,
+      "max_alternating_cycles_in_controls": 2
+    }
+  ],
+  "scope": "Coordinates, exact failed physical-resource Hall cut, signed ledger, explicit ownership after a single alternating square flip, paired -2/+2 accounting on the original matching, and 77 all-matching disjoint-cycle controls at heights 6 and 8. Written proof covers every even h>=6.",
+  "refuted": "Universal ownership feasibility for a fixed actual matching, even with unlimited intratile rerouting.",
+  "not_refuted": "Half-area numerical target. It holds with equality in this family.",
+  "not_proved": "Universal existence of a suitable rematching on arbitrary grids."
+}

@@ -1,5 +1,34 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [fixed-matching component-cut obstruction and square exchange](docs/ACTUAL_MATCHING_COMPONENT_CUT_AND_SQUARE_EXCHANGE.md):
+for every even h>=6 an explicit feasible h-by-4 board attains J=area/2,
+yet a closed tile set needs h distinct actual resources and has only h-1.
+Thus universal compensation along fixed actual matching edges fails, even
+with unrestricted intratile routing. Its complementary component has precisely
+one physical spare. A capacity-two alternating square exchange gives a complete
+ownership certificate at every height, keeping T/P and matching size while
+changing two actual edges. On the original matching the same repair pairs a +2 edge with one -2 edge;
+a general alternating-cycle ledger transports any consistent rematched charge
+certificate without counting overlapping flips as separate payments. Negative
+tile credit and negative edge payment are the same reserve and cannot be added. Fifty coordinate/ledger/exchange controls
+pass; the written argument covers every even height. Universal rematching and
+the numerical 5/6 improvement remain open.
+
+The [actual-edge ownership lemma and bent relay family](docs/TURNING_ACTUAL_EDGE_COMPENSATION.md)
+give an exact Hall/endpoint-charge criterion and resource margin
+J=area/2-unused_edges-sparse_tile_units. Each physical matching edge has one
+owner at most, including internal edges. In a sharp 4-by-(2q+2) family, restoring
+one selected vertex from an explicit reversed baseline forces 2q+1 old owners
+to change and one reserve to activate,
+although source and reserve tiles are adjacent. The actual matching and all old
+used resources remain fixed in this relay result. Fifty actual boards and seven
+scoped local Lean declarations/axiom audits pass; Hall/grid/exchange adapters
+remain written. A per-tile choice of old H/V charges already fails on a sharp
+4-by-4 board. The broader fixed-M Hall criterion is itself obstructed above. Independent
+written reviews accept the original notes and the later original-M/cycle
+lemmas; [precise review and execution scope](output/turning-compensation-independent-review.json) distinguishes the two accepted bundles, local Lean, later local controls
+and one terminal infrastructure failure without a mathematical verdict.
+
 New [two-row signed compensation lemma](docs/TWO_ROW_SIGNED_BOUNDARY_COMPENSATION.md):
 an explicit block classification proves the exact actual-edge ledger
 T-H = cross-boundary charge + internal-edge charge - block slack.

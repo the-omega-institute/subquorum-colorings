@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "sharp_family_controls": 50,
+  "smallest": {
+    "q": 1,
+    "height": 4,
+    "width": 4,
+    "J": 8,
+    "path_edges": 3,
+    "changed_owners": 4,
+    "previous_paid_edges_changed": 3,
+    "all_P_relays": 1,
+    "adjacent_source_and_reserve_tiles": true,
+    "all_old_used_physical_edges_retained": true
+  },
+  "largest": {
+    "q": 50,
+    "height": 4,
+    "width": 102,
+    "J": 204,
+    "path_edges": 101,
+    "changed_owners": 102,
+    "previous_paid_edges_changed": 101,
+    "all_P_relays": 99,
+    "adjacent_source_and_reserve_tiles": true,
+    "all_old_used_physical_edges_retained": true
+  },
+  "orientation_obstruction": {
+    "status": "PROVED_OBSTRUCTION",
+    "central_tile": [
+      0,
+      1
+    ],
+    "forced_V_edge": [
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "forced_H_edge": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "scope": "Per-tile H/V signed-charge choice cannot make every actual edge nonpositive; actual-edge ownership repairs this sharp board."
+  },
+  "scope": "Exact actual-coordinate and ownership checks of the written arbitrary-q turning relay and augmentation proof. No general Hall feasibility inferred from finite boards.",
+  "not_claimed": "Universal existence of ownership on every even-by-even grid; freezing; a universal 5/6 improvement."
+}

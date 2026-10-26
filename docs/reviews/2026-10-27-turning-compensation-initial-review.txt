@@ -1,0 +1,107 @@
+ACCEPTThe mathematical claims are correct under the stated hypotheses and within the declared scope. I found no substantive defect in the ownership/Hall/charge equivalence, exact resource identity, arbitrary-length forcing argument, either coordinate family, signed accounting, or square-rematching lemma.The distinctions requested in the question are essential and are respected:The bent family forces arbitrarily many ownership changes from the specified reversed baseline, while keeping the actual matching fixed.The component-cut family disproves universal ownership feasibility for a fixed matching  $M$ , although every board in that family attains the half-area target.The square operation repairs that family by changing two matching edges. It preserves endpoints and matching size, but does not preserve  $M$ .The seven Lean declarations cover scalar arithmetic and an abstract path induction. They do not formalize Hall, the grid constructions, or the square exchange.I reviewed the written arguments in    independent-review-bundle.txt and reran all three supplied Python checkers successfully. Lean and Lake were not available here, so I did not independently reproduce the Lean compilation or reported axiom output. Neither assistance provenance nor earlier acceptance records was used as a premise.1. Actual-edge ownership, Hall, and chargesTurning compensation note, §1.The resource identity is correct throughout: a resource is an actual edge of  $M$ , with capacity one. An internal matching edge does not acquire capacity two merely because both endpoints lie in one tile.Hall equivalenceGive tile  $B$  exactly  $d_B$  demand slots, all adjacent to the actual matching edges incident to  $B$ . Matching all slots to distinct resource vertices is precisely an ownership assignment paying every tile exactly its demand. An ownership certificate that overpays some tiles can be reduced to such an assignment by discarding excess owners.The reduction from arbitrary slot subsets to tile subsets is valid. If  $S$  is a set of slots and  $U$  its supporting tiles, then
+$$|S|\le \sum_{B\in U}d_B,
+\qquad
+N(S)=N_M(U).$$
+Thus the stated tile inequalities imply Hall’s inequality for every slot subset. Tiles with zero demand cause no problem: adding them to a tile set can only enlarge its resource neighbourhood.Conversely, an ownership certificate directly gives
+$$\sum_{B\in U}d_B\le |N_M(U)|$$
+because the resources owned by tiles in  $U$  are distinct incident actual edges.Ownership implies integral chargesFor each owned edge, choose one endpoint in its owner tile to receive  $+1$ , and assign  $-1$  to its other endpoint. Give both endpoints of an unused edge charge  $-1$ .A tile owning  $m_B$  resources contains exactly  $m_B$  positive endpoints, so
+$$\sum_{p\in P\cap B}\sigma(p)=2m_B-p_B.$$
+In particular, an owned internal edge contributes  $+1-1=0$ . This is consistent with its being one resource and having two endpoints.Since  $m_B\ge d_B\ge o_B-2$ ,
+$$2m_B-p_B
+\ge 2(o_B-2)-p_B
+=2t_B+p_B-4
+=q_B.$$
+Every owned edge has charge sum zero, and every unused edge has sum  $-2$ . This establishes the required charge inequalities.Real charges imply HallFor a feasible real charge assignment, put
+$$x_p=\frac{\sigma(p)+1}{2}.$$
+Then  $x_p\ge0$ , and for each actual edge  $uv$ ,
+$$x_u+x_v\le1.$$
+The tile inequality gives
+$$\sum_{p\in P\cap B}x_p
+\ge \frac{q_B+p_B}{2}
+=o_B-2.$$
+Nonnegativity therefore improves this to
+$$\sum_{p\in P\cap B}x_p\ge d_B.$$
+Summing over a tile set  $U$ , each incident matching edge contributes at most one: an internal edge contributes its two endpoint weights together, while an edge leaving  $U$  contributes only one nonnegative part of its total. Consequently,
+$$\sum_{B\in U}d_B
+\le \sum_{p\in P\cap U}x_p
+\le |N_M(U)|.$$
+This proves Hall and hence integral ownership. There is no unproved geometric rounding step. The four stated conditions are equivalent.Exact resource identityAfter normalizing to exact payments, write
+$$d=\sum_Bd_B,\qquad r=\sum_Br_B,\qquad b=\#\{\text{tiles}\}.$$
+If  $u$  actual edges are unused, then
+$$|M|=d+u.$$
+Also,
+$$d-r=\sum_B(o_B-2)=|T|+2|M|-2b.$$
+Substituting gives
+$$\boxed{
+J=|T|+|M|
+=2b-u-r
+=\frac{\operatorname{area}}2-u-\sum_Br_B.
+}$$
+The exact-payment qualification matters: this formula uses the unused-edge count after excess assignments have been discarded. Under that qualification, the identity and its half-area consequence are correct.None of this algebra requires the selected-neighbour condition. That condition is used for the geometric charging lemma and feasible constructions, as the note says.2. Restricted H/V failure and arbitrary-length forcingTurning compensation note, §§2–3.The H/V contradiction is genuineOn the  $4\times4$  board, the endpoint  $(2,2)$  in positive tile  $D$  has charge  $+1$  under either directional table. Its actual mate  $(1,2)$  has charge  $0$  under the horizontal table at  $B$  and  $-1$  under the vertical table. Making that actual edge nonpositive therefore forces the vertical choice at  $B$ .That choice gives  $(0,2)$  charge  $+1$ . Its actual mate  $(0,1)$  lies in all- $P$  tile  $A$ , where both restricted tables give charge zero. This second edge forces the horizontal choice at  $B$ , a contradiction.The broader ownership assignment nevertheless pays demands
+$$(d_A,d_B,d_C,d_D)=(2,1,1,1)$$
+with five different actual edges. Thus this example establishes failure of the restricted directional rule, while both broader ownership and the numerical target succeed.The forcing proof works at arbitrary lengthFor the stated path component,
+$$\#\{\text{resources}\}
+=\sum_{i=0}^{\ell}a_i+\ell
+=\sum_{i=0}^{\ell}d_i.$$
+Every complete certificate must therefore use every resource and pay every tile exactly. Internal edges have only one possible owner.After those internal payments,  $v_0$  must own  $e_0$ . Then  $v_1$  must own  $e_1$ , and induction forces
+$$\operatorname{owner}(e_i)=v_i
+\quad(0\le i<\ell).$$
+The terminal tile is paid by its internal edges. This proves existence and uniqueness.After decreasing only  $d_0$ , the reversed baseline is valid: $v_0$  receives its internal resources.Each intermediate tile receives its internal resources and the preceding path edge.The terminal tile receives all but one internal resource, together with its preceding path edge.Restoring the missing demand forces the unique complete certificate. Every one of the  $\ell$  path edges changes owner, and the one unused terminal edge becomes used. Hence precisely
+$$\ell+1$$
+physical resources change ownership status, while every previously used physical resource remains used.The degenerate case  $\ell=0$  also works: restoring the demand activates one internal reserve.Two scope conditions are essential:“Path” has its usual simple-path meaning, with distinct tile vertices, and the listed resources are all incident resources in the component.The unbounded change count compares the complete certificate with the particular reversed baseline. It is not a claim about every possible baseline certificate on the reduced-demand board.The claims about combining disjoint components are also correct; disjoint tile sets and actual-edge sets prevent shared payments.3. The explicit bent family works for every  $q\ge1$ Turning compensation note, §4.The three selected vertices have exactly the listed occupied neighbours:
+$$\begin{array}{c|c}
+\text{Selected vertex}&\text{Unique occupied neighbour}\\ \hline
+(0,2q+1)&(0,2q)\\
+(2,2q+1)&(2,2q)\\
+(3,2q)&(2,2q)
+\end{array}$$
+Every other existing neighbour is a listed hole. The last two selected vertices sharing one occupied neighbour is permitted: the hypothesis bounds the occupied degree of each selected vertex.General coordinate coverageFor  $q\ge2$ , the matching covers  $P$  exactly once, as can be checked by partitioning the endpoints row by row:RowCoverage by the listed edges $0$ Column  $0$  is covered by the left internal vertical edge. Columns  $1,\ldots,2q$  are covered by disjoint horizontal pairs  $(1,2),(3,4),\ldots,(2q-1,2q)$ . $1$ Columns  $0,1,2q$  are covered by the three relevant vertical edges. Columns  $2,\ldots,2q-1$  are covered by disjoint horizontal pairs. $2$ Columns  $0,1,2q$  are covered by the corresponding vertical edges. Columns  $2,\ldots,2q-1$  are covered by the intermediate horizontal pairs together with the terminal pair. $3$ Column  $0$  is covered vertically. Columns  $1,\ldots,2q-2$  are covered by disjoint horizontal pairs. The final three sites are exactly  $H,T,H$ .All these edges have grid length one. These partitions establish disjointness, complete endpoint coverage, and avoidance of  $T\cup H$  for arbitrary  $q$ , including the empty intermediate ranges at  $q=2$ . The separately specified  $q=1$  matching has the same required properties.The intertile matching graph is exactly
+$$(1,q),(0,q),(0,q-1),\ldots,(0,0),(1,0),\ldots,(1,q-1).$$
+It visits all  $2q+2$  tiles exactly once and contains  $2q+1$  intertile edges. The remaining  $2q$  edges are internal: one in each of the  $2q-1$  all- $P$  tiles and one in the terminal three- $P$  tile. Thus
+$$|M|=4q+1,\qquad |T|=|H|=3,
+\qquad
+J=4q+4=\frac{\operatorname{area}}2.$$
+The forcing hypotheses hold exactly:Positive source and following neutral tile:  $a_i=0,\ d_i=1$ .Each all- $P$  tile:  $a_i=1,\ d_i=2$ .Terminal three- $P$  tile:  $a_\ell=1,\ d_\ell=1$ .Removing  $(3,2q)$  changes only the source occupancy from three to two and its demand from one to zero. Restoring it therefore changes precisely  $2q+1$  old owners and activates one reserve:
+$$\boxed{2q+2\text{ changed ownership statuses}.}$$
+The source and reserve tiles are adjacent, but there is no extra actual matching edge between them. Their geometric proximity therefore does not shorten the forced ownership path. This is established by the coordinate construction and induction, not extrapolated from finite widths.4. The fixed- $M$  Hall obstruction works at every even heightComponent-cut and square-exchange note, §§1–2.Put  $h=2k\ge6$ , and write  $L_i=(i,0)$ ,  $R_i=(i,1)$ .Matching coverage and feasibilityThe matching partitions the endpoint set column by column:In column  $0$ , the  $P$ -vertices are precisely rows  $3,\ldots,h-4$ , paired by the odd-start vertical edges. This interval is empty at  $h=6$ .In columns  $1,2$ , rows  $1,h-2$  belong to the horizontal end edges; rows  $2,\ldots,h-3$  belong to the even-start vertical pairs.In column  $3$ , the odd-start vertical pairs cover rows  $1,\ldots,h-2$ .This proves complete, disjoint coverage and avoidance of the selected vertices and holes. The number of matching edges is
+$$2+(k-1)+2(k-2)+(k-3)=4k-6=2h-6.$$
+The selected-neighbour check at the top is correct, and horizontal-midline reflection gives the bottom check, including at  $h=6$ . Therefore
+$$J=6+(2h-6)=2h=\frac{\operatorname{area}}2.$$
+The deficient cut is closedThe set
+$$U=\{L_0,R_0,R_1,\ldots,R_{k-1},L_{k-1}\}$$
+has exactly the displayed intertile path. Its  $k+1$  path edges are the two horizontal end edges and the  $k-1$  column- $3$  edges. Its  $k-2$  internal resources are the column- $2$  edges.No actual matching edge leaves  $U$ . In particular, the only edges crossing tile columns are the two end edges, both already inside  $U$ .Its four end tiles have demand one, while its  $k-2$  intermediate right tiles have demand two. Hence
+$$d(U)=4+2(k-2)=2k=h,$$
+but
+$$|N_M(U)|=(k+1)+(k-2)=2k-1=h-1.$$
+This is a genuine Hall deficiency of one actual resource at every stated height.The complementary path has  $k-2$  internal resources and  $k-3$  intertile resources, totaling  $h-5$ . Its demand is  $h-6$ :At  $h=6$ , it is one  $2P/2H$  tile with demand zero.At  $h\ge8$ , its two ends have demand one and its  $k-4$  intermediate tiles have demand two.The explicit later assignment shows that its one surplus resource can actually be left unused; the claim is not based solely on a global count.This obstruction rules out the capacity-one ownership scheme on the fixed matching, including attempts to repair it using only the same actual-edge transfer support. It does not rule out other proofs of the numerical target. Indeed, the displayed boards satisfy that target with equality.5. Signed accounting, the factor two, and duplicate reservesSigned-boundary note, §§1–4; component-cut note, §3.The signed-strip lemma is validThe local classification follows from the selected occupied-degree condition:Three selected vertices in a tile are impossible.Two adjacent selected vertices force the remaining sites to be holes.Two diagonal selected vertices allow at most one other occupied site.With one selected vertex and two matching endpoints, those endpoints must be adjacent.With no selected vertices, the remaining cases are classified by the number of endpoints.Thus every unlisted case satisfies  $t+p\le2$ , which proves the fallback inequality
+$$q=2t+p-4\le-p.$$
+The exceptional table rows have equality.The internal-edge argument is also correct. Every  $+1$  endpoint has a selected vertex immediately above or below it. Its actual mate, if inside the two-row strip, must be horizontal. If that mate is across a tile boundary, its vertical counterpart is adjacent to the selected vertex and is forced to be a hole. The receiving endpoint consequently has charge  $-1$  under the exhaustive table. Hence every actual edge wholly inside the strip has charge sum at most zero.Partitioning endpoints by their actual matching edges then gives exactly
+$$|T\cap S|-|H\cap S|=B_S+E_S-L_S.$$
+After summing strips,
+$$|T|-|H|=B_{\mathrm{cross}}+E_{\mathrm{internal}}-L.$$
+Each physical edge is counted once with its appropriate endpoint charges. There is no automatic sign restriction on  $B_{\mathrm{cross}}$ .The six-row example has exactly
+$$B_{\mathrm{cross}}=2,\qquad E_{\mathrm{internal}}=-2,\qquad L=0.$$
+The two negative internal payments are on distinct listed edges. Appending an even number of all- $P$  columns covered by the prescribed vertical pairs preserves these charges and gives  $J=3w$ . The arbitrary-even-width extension is therefore valid.The component family’s signed ledger is exactWithin  $U$ , the only positive edge sums are  $+1$  on each of
+$$(1,3)(2,3),
+\qquad
+(h-3,3)(h-2,3).$$
+The horizontal end edges have sums  $+1-1=0$ , and every other edge in  $U$  has sum zero.In the complementary component:At  $h=6$ , the edge  $(2,1)(3,1)$  has sum  $-2$ .At  $h=8$ , the two negative endpoints lie on the same column- $0$  edge, again giving  $-2$ .At larger even heights, they lie on two different edges, each giving  $-1$ .Every tile has zero local slack. Thus the ledger is exactly  $+2-2=0$ .The conversion between signed units and resources is correctFor a matching-closed tile set  $W$  with every occupancy at least two,
+$$d_B=o_B-2,
+\qquad
+q_B=2d_B-p_B.$$
+Closedness gives
+$$\sum_{B\in W}p_B=2|M_W|,$$
+so
+$$\boxed{
+\sum_{B\in W}q_B
+=2\left(\sum_{B\in W}d_B-|M_W|\right).
+}$$
+Accordingly, signed excess  $+2$  represents one missing physical resource, while signed payment  $-2$  represents the complementary component’s one resource surplus.The negative tile total and negative actual-edge total are equal descriptions of the same accounting contribution. Adding them as separate reserves would double-count it. The signed ledger also does not create a second unused edge beyond the one realized by the ownership assignment.6. The general square-rematching lemma and all- $h$  repairComponent-cut and square-exchange note, §§4–5.General lemmaThe four square vertices are already paired by  $e_A,e_B$ . Replacing those two edges by the other two square sides therefore gives a matching on exactly the same endpoint set, with no conflict with any surviving edge.The payment change at  $B$  is precisely
+$$d_B-1
+\;\longrightarrow\;
+d_B-2
+\;\longrightarrow\;
+d_B.$$
+Removing unused  $e_A$  costs no payment. Removing  $e_B$ , owned by  $B$ , costs one. Assigning both distinct new edges to  $B$  supplies two. All other ownership assignments remain valid.The hypothesis that  $B$  owns  $e_B$  while owning only  $d_B-1$  resources does imply  $d_B\ge2$ . There is no hidden capacity-one violation: the two new edges are two distinct resources, each used once.The preserved quantities are exactly those claimed:
+$$P,\ T,\ O,\ \{d_B\},\ |M|,\ J,$$
+and selected occupied degrees. Every surviving old resource retains its owner. The previously used edge  $e_B$  does not survive, which is why this is explicitly a change of matching.Explicit repair for all even  $h\ge6$ The square on rows  $2,3$ , columns  $1,2$ , is all- $P$  at every stated height. Both vertical edges are present in the original matching.With  $A=L_1$  and  $B=R_1$ :In  $U$ , assigning path edges away from  $B$  pays every other tile exactly. Tile  $B$  receives only its internal  $e_B$ , leaving one demand unit unpaid.In the complementary path, leave  $e_A$  unused and assign path edges toward  $A$ . At  $h=6$ ,  $A$  has demand zero. At larger heights,  $A$  receives one path payment, each intermediate all- $P$  tile receives one internal and one path payment, and the terminal three- $P$  tile receives its internal payment.Thus exactly  $e_A$  is unused, and precisely one demand unit at  $B$  remains unpaid. The square exchange completes the certificate. Every edge of the new matching is used, every demand is paid exactly, and the single spare has been used once.This proves the stated family repair. It establishes neither a universal rematching theorem for arbitrary feasible grids nor a repair that preserves the original physical matching.7. Computational checks and exact Lean scopeI extracted the supplied code into a separate temporary working directory and ran the three Python programs with assertions enabled.Supplied checkerControls executedResultcheck_turning_edge_ownership.py $q=1,\ldots,50$ , including coverage, ownership, charges, augmentation, and H/V obstructionPASScheck_component_cut_exchange.pyEvery even  $h=6,\ldots,104$ , including the cut, signed ledger, partial assignment, and square repairPASScheck_two_row_signed_compensation.pyLocal configurations and interfaces; sharp extensions at every even width  $4,\ldots,80$ PASSThese are successful reruns of the supplied checkers, not a separate implementation or a proof of the unbounded statements. The general arguments above are what justify those statements.The seven Lean declarations have the following limited content:DeclarationContentlocal_charge_from_ownerInteger rearrangement of the assumed local coverage inequality.endpoint_capacityInteger rearrangement of the assumed endpoint-charge capacity inequality.exact_resource_marginDerivation of the margin identity from the two assumed accounting identities.half_area_from_resourcesThat identity together with nonnegativity of unused and sparse quantities.node_forces_nextA natural-number relay implication; prev ≤ 1 controls truncated subtraction.forced_pathArbitrary-length induction for a sequence starting at one, bounded above by one, and nondecreasing along the path.every_old_path_owner_changesNonzeroness of that sequence on the specified range.The statements are mathematically valid. However, the last declaration does not itself encode physical edges or an old ownership assignment; that interpretation is supplied by the written construction. Likewise, the scalar endpoint lemma does not formalize the real-charge/Hall equivalence.I did not reproduce Lean compilation, and I do not independently certify the attached compilation or axiom report. The accepted mathematical result is the written ownership equivalence, exact accounting, forcing and coordinate constructions, fixed- $M$  obstruction, and changed- $M$  repair, with precisely the scope stated above.   independent-review-bundle.txtDocumentOpen file

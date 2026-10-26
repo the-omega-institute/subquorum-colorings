@@ -1,0 +1,92 @@
+ACCEPT — Sections 6 and 7The additions correctly establish conditional grouped-charge certificates for the original matching  $M$ . The original edges and their endpoints are partitioned exactly once, the factor of two is correct, tile slack has the correct sign and multiplicity, and the claimed  $-2/+2$  realization holds for every even  $h\ge 6$ .I reviewed the written arguments in    addendum-review.txt, including the preceding definitions and ownership construction where these additions use them. I did not run code or Lean, and neither the reported finite controls nor any previous acceptance supplies a premise for this verdict.1. Section 6: the paired-original-edge lemma is correctWrite
+$$c_e=\sum_{p\in e}\sigma(p)$$
+for an original edge  $e\in M$ . Let  $\mathcal Q$  be the collection of selected pairs of original edges, and let  $S\subseteq M$  be the remaining single edges.Because  $M$  is a matching and no original edge belongs to two pairs, this is an exact partition:
+$$M=S\;\dot\cup\!\!\bigdotcup_{Q\in\mathcal Q}Q.$$
+Each pair contains two distinct original edges and therefore four distinct endpoints. Different pairs have disjoint endpoint sets, and the single edges supply precisely the remaining endpoints. In particular,
+$$|M|=|S|+2|\mathcal Q|,
+\qquad
+|P|=2|S|+4|\mathcal Q|.$$
+The disjoint tile partition gives
+$$\sum_B q_B=|T|-|H|.$$
+Consequently, the stated assumptions imply
+$$\begin{aligned}
+|T|-|H|
+&\le \sum_{p\in P}\sigma(p)\\
+&=\sum_{e\in S}c_e+
+  \sum_{\{e,f\}\in\mathcal Q}(c_e+c_f)\\
+&\le 0.
+\end{aligned}$$
+Every endpoint appears exactly once in the middle expression. A negative edge included in a pair is counted only through that pair; it does not also appear among the single edges.The conversion to the objective is exact. With  $A_{\mathrm{grid}}$  denoting the board’s area,
+$$A_{\mathrm{grid}}=|T|+2|M|+|H|,$$
+so
+$$2\bigl(|T|+|M|\bigr)-A_{\mathrm{grid}}
+=|T|-|H|.$$
+Thus the conclusion is precisely
+$$|T|+|M|\le \frac{A_{\mathrm{grid}}}{2}.$$
+This also fixes the units: two signed-charge units correspond to one unit of objective deficit or matching-resource shortage. The four endpoints of a square pair remain the endpoints of two original resources.Transporting one charge assignment from  $M'$ For one alternating square, the two old edges and the two replacement edges each partition the same four vertices. Hence, for the same function  $\sigma$ ,
+$$c_{e_A}+c_{e_B}
+=\sum_{\text{four square vertices }p}\sigma(p)
+=\sum_{\text{two replacement edges }f}c_f.$$
+Nonpositivity on the two replacement edges therefore proves nonpositivity of the original pair’s total.The stated disjointness condition is sufficient. If two such squares shared a vertex, both would contain the unique original  $M$ -edge incident to that vertex, contrary to the prohibition on reusing an original edge in two pairs. Thus the old pairs’ endpoint sets are disjoint. Every original edge outside these pairs survives in  $M'$ , so its charge sum is nonpositive individually.This uses  $M'$  to produce a certificate evaluated on  $M$ ; it does not identify the two matchings.2. The all-height  $-2/+2$  realization is validThe relevant construction from Sections 4–5 works uniformly, including the smallest height.Put  $k=h/2$ , and retain the note’s
+$$A=(1,0),\qquad B=(1,1).$$
+For every even  $h\ge6$ , the four vertices in rows  $2,3$  and columns  $1,2$  belong to  $P$ , and
+$$e_A=(2,1)(3,1),\qquad e_B=(2,2)(3,2)$$
+are original matching edges.The required ownership certificate exists at every heightOn the  $U$ -path, assigning every path edge away from  $B$ , while using its internal edges, pays every tile other than  $B$  exactly its demand. Tile  $B$  is all- $P$ , has demand two, and owns only  $e_B$ , leaving exactly one demand unit unpaid.On the complementary left path:For  $h=6$ : the complement consists only of  $A$ . It has two  $P$  vertices and two holes, hence demand zero. Leaving  $e_A$  unused pays it exactly.For  $h\ge8$ : the first and last complementary tiles have demand one, and every intervening tile has demand two. With path edges assigned toward  $A$ , and every internal edge except  $e_A$  used, the first tile receives one path edge, every intervening tile receives one internal edge and one path edge, and the last tile receives its internal edge.Thus every original resource except  $e_A$  is used once, and only the one unit at  $B$  remains unpaid.The exchange removes unused  $e_A$  and  $B$ -owned  $e_B$ , then assigns both replacement horizontal edges to  $B$ . Its ownership count changes from one to zero to two. All other tile counts remain correct. The resulting  $M'$ -certificate pays every tile exactly its demand and uses every  $M'$ -edge.The four endpoint charges are forcedConstruct  $\sigma$  from that single ownership certificate: each owned edge receives  $+1$  at a chosen endpoint in its owner tile and  $-1$  at its mate.Both replacement horizontal edges are owned by  $B$ , so necessarily
+$$\sigma(2,1)=\sigma(3,1)=-1,
+\qquad
+\sigma(2,2)=\sigma(3,2)=+1.$$
+Evaluating this same assignment on the original edges gives
+$$c_{e_A}=-2,\qquad c_{e_B}=+2.$$
+Every other original edge survives as an owned  $M'$ -edge and therefore has charge sum zero. Choices between the two endpoints of an internal owned edge do not affect these conclusions.Every tile inequality is indeed an equalityFor a tile  $D$ , write
+$$t_D=|T\cap D|,\qquad p_D=|P\cap D|,
+\qquad o_D=t_D+p_D.$$
+Exact ownership means that the number of positively charged endpoints in  $D$  is exactly  $d_D$ . Therefore
+$$\sum_{p\in P\cap D}\sigma(p)=2d_D-p_D.$$
+Every tile in this family has occupancy at least two. The occupancy-two case occurs at the complementary tile when  $h=6$ , and causes no exception. Hence
+$$d_D=o_D-2,$$
+and
+$$2d_D-p_D
+=2t_D+p_D-4
+=t_D-|H\cap D|
+=q_D.$$
+Thus all local slack is zero at every allowed height.The original pair consequently has total zero, with negative and positive signed masses both exactly two. This is consistent with the failed fixed- $M$  rule: the original edge  $e_B$  has charge  $+2$ , so the new certificate expressly uses the relaxed grouped condition.3. Section 7: the alternating-cycle partition is exactThe inherited finite-board setting and the equality of endpoint sets are the essential hypotheses here.Let
+$$K=M\cap M',\qquad D=M\triangle M'.$$
+At any vertex  $p\in P$ , there is exactly one incident edge from each matching.If these edges coincide,  $p$  belongs to a common edge and has degree zero in  $D$ . Otherwise,  $p$  has degree two in  $D$ , with one incident edge from  $M\setminus M'$  and one from  $M'\setminus M$ .Every nontrivial component of this finite degree-two graph is therefore a simple cycle. Edge membership alternates between the two matchings, so every cycle has even length. Distinct cycles have disjoint vertex sets, and common edges have no endpoints on those cycles.Accordingly,
+$$M=K\;\dot\cup\!\!\bigdotcup_C\bigl(M\cap E(C)\bigr).$$
+If  $C$  has length  $2r_C$ , its group contains exactly  $r_C$  original edges and  $2r_C$  endpoints. Thus
+$$|M|=|K|+\sum_C r_C,
+\qquad
+|P|=2|K|+\sum_C 2r_C.$$
+There are no omitted path components, shared cycle endpoints, or repeated original edges.For the single stipulated charge assignment  $\sigma$ , both matchings restricted to a cycle partition its vertex set. Therefore
+$$\begin{aligned}
+\sum_{e\in M\cap E(C)}c_e
+&=\sum_{p\in V(C)}\sigma(p)\\
+&=\sum_{e\in M'\cap E(C)}c_e
+\le0.
+\end{aligned}$$
+This proves equation (4). Each common edge is also an  $M'$ -edge and has nonpositive charge separately.In particular, compensation holds within each final cycle. No payment from another cycle is needed.4. The exact ledger counts tile slack once, with the correct signDefine
+$$L=\sum_B\left(
+\sum_{p\in P\cap B}\sigma(p)-q_B
+\right)\ge0.$$
+Because the tiles partition the board,
+$$|T|-|H|=\sum_{p\in P}\sigma(p)-L.$$
+For each cycle, put
+$$P_C=\sum_{e\in M\cap E(C)}\max(0,c_e),
+\qquad
+N_C=\sum_{e\in M\cap E(C)}\max(0,-c_e).$$
+Then
+$$\sum_{e\in M\cap E(C)}c_e=P_C-N_C,$$
+and equation (4) gives  $P_C\le N_C$ . Substituting the exact original-edge partition yields precisely the note’s ledger:
+$$|T|-|H|
+=\sum_{e\in K}c_e+\sum_C(P_C-N_C)-L.$$
+A useful equivalent form exposes both the factor two and every nonnegative contribution:
+$$\boxed{
+2\left(\frac{A_{\mathrm{grid}}}{2}-\bigl(|T|+|M|\bigr)\right)
+=
+L+\sum_{e\in K}(-c_e)+\sum_C(N_C-P_C)
+\ge0.
+}$$
+Here tile slack occurs once. It is defined as the difference between the endpoint-charge total and the required tile total; it is not an additional copy of a negative edge’s payment. Each original negative edge occurs in exactly one common-edge term or one cycle mass.For the explicit family,
+$$L=0,\qquad c_e=0\ \text{on common edges},\qquad
+P_C=N_C=2$$
+on its sole square cycle. The ledger therefore gives equality, as claimed.5. Overlapping intermediate flips introduce no additional creditsSection 7 correctly uses only the initial  $M$ , the final  $M'$ , and one compatible final charge assignment.If an edge disappears during intermediate flips and later returns, it belongs to  $M\cap M'$  in the final comparison and is counted once there. Historical squares are not payment groups. Even when those squares overlap, the components of the final symmetric difference are vertex-disjoint.The stated scope consequently matches the proof:The original fixed- $M$  per-edge Hall/charge condition still fails on the family.The new certificate groups distinct original edges using one consistent endpoint assignment.Availability of a suitable final  $M'$  remains a hypothesis in the general result.Intermediate flips supply no separately accumulated reserves.No mathematical revision is required in Sections 6 or 7 within the supplied finite rectangular-grid setting.   addendum-review.txtDocumentOpen file
