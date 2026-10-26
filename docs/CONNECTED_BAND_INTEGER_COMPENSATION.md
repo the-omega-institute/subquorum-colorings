@@ -59,7 +59,24 @@ To check the boundary for all m, rows0,1 have no available sites; the two
 isolated row2 sites above each slot join the three row3 sites, and rows4,5
 are exactly the two stated intervals. The retained terminal lower guard
 forces (4,6m+5) blank. The leftmost retained lower guard is (4,6).
-These also separate A and I from C_m. The only A sites adjacent to P0
+These also separate A and I from C_m. For a direct check of the complement,
+the forced blank sites have the following row coordinates:
+
+| Row | Forced blank columns |
+| --- | --- |
+| 0 | every even column 0,...,6m+8 |
+| 1 | 0 and 3+6j, for 0<=j<=m+1 |
+| 2 | 2,6m+9 and 4+6j,8+6j, for 0<=j<=m |
+| 3 | 0,2 |
+| 4 | 1,5,7,6m+5,6m+7,6m+9 |
+| 5 | 6,6m+6,6m+8 |
+
+Each entry is a neighbour of a retained selection already adjacent to P0.
+The row-zero selections (0,3+6j) are themselves unanchored, but every neighbour
+of them is forced blank by another retained, anchored selection. The other
+retained selections are anchored. Thus this complement table also proves
+that no U site is adjacent to R. The retained row counts are
+3m+5,2m+3,1,2,3,0, summing to 5m+14. The only A sites adjacent to P0
 are (2,5), with two such neighbours, and (3,5), with one.
 
 Call a site black when r+c is even, and white otherwise. For S subset U put
@@ -108,11 +125,9 @@ one of u,v is one, its two units cover that bit and w. If neither is one,
 the w condition proves (4).
 
 There is also a strengthened left-boundary form: if x=0 and A=D=1,
-then the total in (4) is at least x+y+z+u+v+w+1. For y=1 there are
-four fixed blank units A,B,D,E, plus z+w from C,F,G. For y=0,z=1,
-A+D=2 and B+C+F+G>=3 give five, covering 1+z+u+v+w. For y=z=0,
-if v=1 use its two units disjoint from A,D; otherwise use C+F>=w and
-u<=1. These cases prove the strengthened inequality.
+then the total in (4) is at least x+y+z+u+v+w+1. To see this, replace x=0
+by x'=1. The only newly activated condition is A=D=1, already assumed.
+Apply (4) to the modified bits. This proves the extra boundary unit directly.
 
 ### 2.1 Embedding and disjoint cover of the open band
 
@@ -140,15 +155,22 @@ Use the strengthened inequality at a=6, with x=0 as a selection increment
 (the physical site (4,6) belongs to R), and A=D=1 because (4,7),(5,6)
 are forced blank. The y anchor is still present. Conditions for z,u,v,w
 remain valid after ignoring any outside occupied neighbour. The thirteen
-formal terms consist exactly of the ten L terms and three zero terms.
-Hence W(L)<=6.
+formal weight terms consist exactly of the ten L terms and three zero
+contributions: the selection increment at (4,6), and the occupations at
+(4,7),(5,6). The blank variables A,D themselves equal one. Hence W(L)<=6.
 
 For each i, d_i=(2,9+6i) is white and g_i=(3,9+6i) is black with an old
 endpoint neighbour. Thus o_(d_i)+t_(g_i)<=1. The same argument gives
  o_(2,11+6i)+t_(3,11+6i)<=1. These 2m pairs, L, and the m-1 thirteen-site
 blocks cover every weighted site of C_m exactly once. Different blocks
 use distinct row3 extras, and their six-column lower intervals are disjoint.
-Consequently
+More precisely, if B_a denotes the thirteen-site block and q=(4,6m+5),
+then the disjoint set identity is
+
+    C_m disjoint-union {q}
+      = L disjoint-union (all 2m pairs) disjoint-union B_12 ... B_(6m).
+
+Extend the weight to q by zero; q is white and forced blank. Consequently
 
     W(C_m)<=2m+6+7(m-1)=9m-1.                        (5)
 
@@ -226,8 +248,11 @@ The completion has |T*|=13k+11 and retains T0.
 For c_i=9+6i remove selections (3,c_i),(3,c_i+2), add selection (2,c_i),
 and add edges (3,c_i)--(3,c_i+1) and (2,c_i+2)--(3,c_i+2), for every i<m.
 The slots are disjoint. Each step decreases |T| by one and increases |M|
-by two, so J=17k+12+m=18m+29. The earlier frozen certificate applies;
-the verifier checks it independently on the actual boards.
+by two, so J=17k+12+m=18m+29. The precise construction theorem is Section 1 (equality for every permission
+subset) of [Joint selection withdrawal](SELECTION_WITHDRAWAL_SHARP_STRIPS.md#1-exact-theorem-and-hypotheses),
+using its nine-site frozen pattern in Section 4. We invoke that established
+feasibility/freezing result; neither property is inferred from the objective
+count alone. The verifier checks it independently on the actual boards.
 
 For each original aligned 2-by-2 tile Q define the integer half-unit charge
 
@@ -248,6 +273,15 @@ no credit allocated to an exterior debt is reused for the strip or reserve.
 This is a global compensation statement, with no directional routing claim.
 
 ## 5. Verification and scope
+
+Oracle reviewed the self-contained written upper-bound argument and returned
+**ACCEPT**. It independently checked the forced-blank complement, local
+real-blank lemma, disjoint cover and both pocket port coefficients. Its
+sharpness verdict invokes the established frozen modification theorem supplied
+as a premise. Its wording suggestions about zero contributions and the earlier
+construction reference are incorporated above. This review did not execute
+Python or Lean. The [review receipt](../output/connected-band-integer-compensation-oracle.json)
+retains the response and observed model metadata.
 
 The proof above holds for every m>=2. Enumeration is used to check local
 identities and finite actual-board controls, not to extrapolate (1).

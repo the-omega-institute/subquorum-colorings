@@ -2,6 +2,10 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Research note.
 
+Update: the [integer compensation theorem](CONNECTED_BAND_INTEGER_COMPENSATION.md)
+now proves the exact actual-configuration maximum 18m+29 for this same
+permissions class. The fractional obstruction established here remains valid.
+
 We strengthen the preceding [mate-coverage barrier](CONNECTED_BAND_MATE_COVERAGE_BARRIER.md) in two directions. First, a five-vertex Hall set shows exactly why that note's 92-scaled point has no simultaneous fractional matching extension. Second, a different, 80-scaled point has an explicit matching-edge extension on every sufficiently long finite board. It exceeds the proposed **whole-board** bound, within the specified fractional relaxation. Thus adding all matching capacities and Hall inequalities to that relaxation does not suffice. This is not an integer or completely frozen counterexample.
 
 ## 1. Domain and precise relaxation

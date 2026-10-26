@@ -139,6 +139,16 @@ def geometry(m,counts):
     old,R,P0,U,C,es=domain(m)
     A=set(POCKET);I={(5,6*m+7),(5,6*m+9)}
     assert U==C|A|I and not (C&A or C&I or A&I)
+    forced={0:set(range(0,6*m+10,2)),
+            1:{0}|{3+6*j for j in range(m+2)},
+            2:{2,6*m+9}|{c+6*j for j in range(m+1) for c in (4,8)},
+            3:{0,2},4:{1,5,7,6*m+5,6*m+7,6*m+9},5:{6,6*m+6,6*m+8}}
+    blanks={(r,c) for r,cols in forced.items() for c in cols}
+    board=set(itertools.product(range(6),range(6*m+10)))
+    assert blanks==board-(R|P0|U)
+    anchored={v for v in R if set(neighbors(v))&P0}
+    assert all(set(neighbors(v))&anchored for v in blanks)
+    assert [sum(r==i for r,c in R) for i in range(6)]==[3*m+5,2*m+3,1,2,3,0]
     assert len(R)==5*m+14 and sum(not black(v) for v in P0)==4*m+5
     assert all(not set(neighbors(v))&R for v in U)
     pairs=[[(2,c),(3,c)] for i in range(m) for c in (9+6*i,11+6*i)]
