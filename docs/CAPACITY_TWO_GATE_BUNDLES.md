@@ -1,5 +1,11 @@
 # Exact joint compensation with two-unit gate bundles
 
+**Full-routing algorithm:** [one weighted matching with routing ports](FULL_ROUTING_WEIGHTED_MATCHING.md)
+now includes arbitrary competing mixed relays and beta forks, rather than
+requiring the independent direct-source baseline below. It retains each
+actual BP-entry capacity and adds access/link costs with exact lexicographic
+objectives. The direct-source construction here is an earlier special case.
+
 **Mixed-network continuation:** [dual resource parity](MIXED_RESOURCE_DUAL_PARITY.md)
 removes the direct-residual-source and independent-baseline restrictions.
 Arbitrary competing mixed relays and beta forks remain in one resource

@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [full routing and shared activation fees by one weighted matching](docs/FULL_ROUTING_WEIGHTED_MATCHING.md):
+the explicit mixed-capacity and separate beta-entry network has an exact
+two-port matching representation. Dominant port-coverage weights enforce
+routing conservation; idle edges save a one/two-output group's fee once.
+This removes every 2^h branch for the recognized all-capacity uniform class:
+one polynomial maximum-weight matching gives maximum payment, minimum actual
+opening fee and minimum links, with prescribed sources and full competing
+beta/mixed routing. A fully frozen 192×58 input with 12 sharing pivots gives
+48 payments, fee 60 and 24 links in one matching. Six general priority/fee
+Lean kernels are axiom-free; failed-guard compensation and universal 5/6 remain open.
+
 New [positive-pivot extreme retraction and exact shared-fee optimization](docs/POSITIVE_EXTREMES_AND_SHARED_FEES.md):
 every passing all-capacity uniform input retracts to the original first/last
 gap units while preserving sources, owners and links, including old V-phase

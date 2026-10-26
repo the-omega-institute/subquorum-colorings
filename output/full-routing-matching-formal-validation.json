@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T03:33:35.585633+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "44%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "43%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.FullRoutingMatching.dominant_digit' does not depend on any axioms",
+    "'SubQuorum.FullRoutingMatching.maximal_score_saturates_ports' does not depend on any axioms",
+    "'SubQuorum.FullRoutingMatching.paid_source_priority' does not depend on any axioms",
+    "'SubQuorum.FullRoutingMatching.saved_fee_complement' does not depend on any axioms",
+    "'SubQuorum.FullRoutingMatching.beta_private_cost_nonincrease' does not depend on any axioms",
+    "'SubQuorum.FullRoutingMatching.fee_precedes_links' does not depend on any axioms"
+  ],
+  "scope": "Six general score/fee kernels: dominant priority digit; maximum score saturates internal ports; paid-source priority; saved fee complement for either/both slots; beta private-output normalization does not increase fee; integer fee precedes bounded links. No finite enumeration.",
+  "not_formalized": [
+    "Matching graph construction, full-port matching/path correspondence, cycle removal, beta routing reconstruction, optimum matching completion, physical handoff compiler/retraction, Edmonds blossom algorithm. General written proofs and independent executable checks, not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

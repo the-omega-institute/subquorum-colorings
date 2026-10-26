@@ -1,5 +1,11 @@
 # Mixed relays and beta forks: exact shared fees by dual resource parity
 
+**Explicit-network algorithm:** [full-routing weighted matching](FULL_ROUTING_WEIGHTED_MATCHING.md)
+gives a deterministic polynomial realization for the explicit routing/group
+input below, and additionally permits nonnegative per-access fees. The rank,
+cut and parity identities remain valid; the earlier rank-oracle-only caution
+does not restrict the new construction, which uses the supplied routing graph.
+
 **Protected-path continuation:** [extreme-resource linear corridors](PROTECTED_LINEAR_CORRIDORS.md)
 give a geometric class with arbitrarily many original units and overlapping
 route prerequisites that reduces to one polynomial min-cost fork flow.

@@ -1,5 +1,12 @@
 # Positive pivots: extreme reassignment and the exact shared-fee core
 
+**Polynomial continuation:** [one full-routing weighted matching](FULL_ROUTING_WEIGHTED_MATCHING.md)
+now eliminates the 2^h enumeration below. The extreme retraction and shared-fee
+classification proved here supply its physical adapter; explicit routing
+ports and unused-pair edges give one polynomial matching even with competing
+mixed/beta routes and asymmetric outer-prefix fees. The parameterized flow
+solver remains an independent exact checker.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 We settle the next question left by [positive-capacity handoff recognition](POSITIVE_CAPACITY_HANDOFFS.md).
