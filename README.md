@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [neutral occupied envelopes](docs/NEUTRAL_OCCUPIED_ENVELOPE_EXPANSION.md):
+allowing the selected/endpoint footprint to change defeats a direct-entry-only
+cost. An explicit six-cell expansion adds three matching edges, withdraws
+three selections and rematches one old edge. Every subset of m possible
+expansions stays completely frozen at exact half-area, without exterior input.
+Complete actual-mate rank tables prove this for arbitrary m, including
+consecutive expansions. Each expansion deletes exactly one already paired
+physical surplus/demand; no reserve is released or counted twice. In the
+restricted direct-entry footprint the exact loss is one per active index,
+and no nonempty conversion can completely freeze. Solver-free checks cover
+524 expanded boards and 19,183 restricted conversion pools; five scoped local
+Lean kernels check shield identities/counts and the conditional trap argument.
+The complete coordinate adapter is written; the universal 5/6 question is open.
+
 New [complete two-port matching classification](docs/TWO_PORT_MATCHING_CLASSIFICATION.md):
 on the SAME fixed selected/endpoint footprint, exactly 5m+4 actual perfect
 matchings completely freeze with both right inputs. A geometric interval trap

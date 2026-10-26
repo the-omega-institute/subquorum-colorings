@@ -2,6 +2,11 @@
 
 27 October 2026. Wenlin Zhang and Haobo Ma.
 
+For a subsequent change of the selected/endpoint footprint, see
+[neutral occupied envelopes](NEUTRAL_OCCUPIED_ENVELOPE_EXPANSION.md).
+That construction supplies at least 2^m completely frozen half-area footprints
+without exterior input. It does not alter this fixed-footprint classification.
+
 Fix the selected set T* and endpoint set P* of the frozen half-area band.
 The actual matching is allowed to be ANY perfect matching of the induced grid
 on P*. With both right ports kept, exactly **5m+4** actual matchings completely
