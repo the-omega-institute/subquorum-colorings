@@ -1,5 +1,14 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [terminal-guard half-area frontier](docs/TERMINAL_GUARD_HALF_AREA_FRONTIER.md):
+after also allowing the terminal row-three guard to be withdrawn, the exact
+unrestricted actual-matching maximum becomes 18m+30=area/2 for every m>=2.
+A ten-site terminal inequality proves the upper bound; a three-chunk periodic
+family attains it. Physical surplus pays exterior debts and the strip deficit
+once, with no additional reserve. The sharp family has a provably nonfrozen
+endpoint: the fully frozen optimum is still one of 18m+29 and 18m+30.
+The preceding stronger theorem remains valid with its retained terminal guard.
+
 New [boundary withdrawals and propagation of compensation](docs/BOUNDARY_WITHDRAWAL_AND_PROPAGATED_COMPENSATION.md):
 the exact maximum 18m+29 survives after EVERY old row-four selection becomes
 optional, including the three former boundary guards. A left-pocket gain of

@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/TerminalGuardHalfArea.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.terminal_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.saturated_input_state",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.whole_board_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.equality_capacities",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.chunk_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.physical_token_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TerminalGuardHalfArea.no_reserve_at_equality",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4064 \nPages purgeable: 18 \nPages purged: 255556778 \n\nSwap I/O:\nSwapins: 219809005 \nSwapouts: 234150183 \n\nPage Q counts:\nPages active: 156505 \nPages inactive: 149494 \nPages speculative: 5857 \nPages throttled: 0 \nPages wired down: 225632 \n\nCompressor Stats:\nPages used by compressor: 465182 \nPages decompressed: 6248765937 \nPages compressed: 7104413963 \n\nFile I/O:\nPageins: 8545120908 \nPageouts: 25801252 \n\nSystem-wide memory free percentage: 31%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4123.\nPages active:                                 156537.\nPages inactive:                               149523.\nPages speculative:                              5892.\nPages throttled:                                   0.\nPages wired down:                             225626.\nPages purgeable:                                  26.\n\"Translation faults\":                    30033906426.\nPages copy-on-write:                      1480200216.\nPages zero filled:                       12080738194.\nPages reactivated:                        6530173437.\nPages purged:                              255556778.\nFile-backed pages:                            109918.\nAnonymous pages:                              202034.\nPages stored in compressor:                  3158371.\nPages occupied by compressor:                 465173.\nDecompressions:                           6248765991.\nCompressions:                             7104413963.\nPageins:                                  8545120921.\nPageouts:                                   25801252.\nSwapins:                                   219809069.\nSwapouts:                                  234150183."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4449 \nPages purgeable: 2 \nPages purged: 255557014 \n\nSwap I/O:\nSwapins: 219812955 \nSwapouts: 234150647 \n\nPage Q counts:\nPages active: 155183 \nPages inactive: 147711 \nPages speculative: 6837 \nPages throttled: 0 \nPages wired down: 222541 \n\nCompressor Stats:\nPages used by compressor: 470171 \nPages decompressed: 6248782280 \nPages compressed: 7104438681 \n\nFile I/O:\nPageins: 8545124935 \nPageouts: 25801252 \n\nSystem-wide memory free percentage: 31%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3877.\nPages active:                                 155472.\nPages inactive:                               147993.\nPages speculative:                              6845.\nPages throttled:                                   0.\nPages wired down:                             222541.\nPages purgeable:                                   2.\n\"Translation faults\":                    30033947844.\nPages copy-on-write:                      1480203042.\nPages zero filled:                       12080745024.\nPages reactivated:                        6530181186.\nPages purged:                              255557014.\nFile-backed pages:                            113692.\nAnonymous pages:                              196618.\nPages stored in compressor:                  3165808.\nPages occupied by compressor:                 470083.\nDecompressions:                           6248782850.\nCompressions:                             7104438681.\nPageins:                                  8545124939.\nPageouts:                                   25801252.\nSwapins:                                   219813007.\nSwapouts:                                  234150647."
+    }
+  ],
+  "scope": "Scaled terminal inequality/equality pattern, global upper bound/equality capacities, arbitrary-length chunk counts and physical token arithmetic.",
+  "not_formalized": "Graph-coordinate reduction, old endpoint coverage, chunk gluing, inherited pocket/pair/block lemmas and nonfreezing argument are written proofs with independent Python controls; no end-to-end graph theorem claimed."
+}

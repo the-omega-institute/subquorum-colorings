@@ -1,0 +1,23 @@
+{
+  "status": "UNAVAILABLE_INFRASTRUCTURE_FAILURE",
+  "mathematical_review_received": false,
+  "requested_pool": "chrono-chatgpt-pro-pool",
+  "requested_model": "oracle/chrono-chatgpt-pro-pool",
+  "observed_model": null,
+  "attempts": [
+    {
+      "task_id": "8bf2dc99-4c37-437c-81fd-7e5fee520a1f",
+      "status": "failed",
+      "failure_reason": "infrastructure_retry_exhausted",
+      "failure_detail": "cdp_disconnected@typing"
+    },
+    {
+      "task_id": "6fb1158e-e4c8-4ba2-8ebd-9fcccc9532f0",
+      "status": "failed",
+      "failure_reason": "infrastructure_retry_exhausted",
+      "failure_detail": "cdp_disconnected@typing"
+    }
+  ],
+  "scope": "Both streaming requests were terminal before any answer. No independent Oracle acceptance or correction is claimed. Written proof and local exact/Lean validation are separate evidence.",
+  "review_input": "Initial terminal-guard note and preceding boundary-withdrawal note. Subsequent explicit residue exposition and equality-withdrawal consequence were independently checked locally; no version received an Oracle mathematical response."
+}

@@ -301,3 +301,9 @@ argument; it does not execute Python or Lean. Its optional request to state
 integrality explicitly has been incorporated. The telescoping reformulation
 and extra actual models are recorded as subsequent independently checked
 consequences of that argument.
+
+
+A subsequent [terminal-guard extension](TERMINAL_GUARD_HALF_AREA_FRONTIER.md)
+settles the unrestricted maximum when the last row-three guard is optional:
+it increases to 18m+30=area/2. Its explicit sharp family is not completely
+frozen, so it does not disprove the stronger bound for that subclass.
