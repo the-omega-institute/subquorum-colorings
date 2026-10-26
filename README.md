@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [mixed-resource dual parity and exact shared activation fees](docs/MIXED_RESOURCE_DUAL_PARITY.md):
+arbitrary competing mixed relays and beta forks can participate in independent
+one/two-original-unit gate bundles. Output linkability is a matroid; closing
+paired groups preserves maximum payment exactly when their union is independent
+in its dual. Weighted parity therefore minimizes once-per-group activation
+fees, with one exact cross-component cut ledger and old-source retention at
+the same optimum fee. A 16×58 fully frozen 32-state adapter includes genuinely
+optional mixed routes. Reachability matching and group-index greedy have
+explicit failed controls. Independent checks and four scoped Lean audits pass;
+no polynomial rank-oracle parity algorithm or universal 5/6 improvement is claimed.
+
 New [mixed-direction terminal defects and a sharp frozen obstruction](docs/MIXED_TERMINAL_DEFECT_AND_FROZEN_OBSTRUCTION.md):
 for any valid even-rectangle H/V partition with actual M restored, each seam
 terminal defect charges a different cross-direction actual edge. The global

@@ -1,5 +1,13 @@
 # Exact joint compensation with two-unit gate bundles
 
+**Mixed-network continuation:** [dual resource parity](MIXED_RESOURCE_DUAL_PARITY.md)
+removes the direct-residual-source and independent-baseline restrictions.
+Arbitrary competing mixed relays and beta forks remain in one resource
+matroid; weighted parity in its dual gives exact shared fees, cut accounting
+and old-source retention. The extension does not inherit a polynomial
+algorithm from a rank oracle alone. The direct-source weighted-matching
+algorithm below remains a separate polynomial special case.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 We give a positive joint-selection theorem that handles both a whole-corridor

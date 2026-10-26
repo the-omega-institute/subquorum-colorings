@@ -1,5 +1,10 @@
 # Simultaneous interval release: exact capacity and physical circuits
 
+**Paired-release continuation:** [mixed-resource dual parity](MIXED_RESOURCE_DUAL_PARITY.md)
+optimizes weighted all-or-nothing release of disjoint one/two-interval groups
+in the complete competing mixed/beta network. It supplies exact activation
+fees and a shared cut ledger without assuming independent routing baselines.
+
 **Cost continuation:** [residual exchange and exact reserve cost](RESIDUAL_EXCHANGE_AND_EXACT_RESERVE_COST.md)
 computes the minimum additional links at every reserve target, and the exact
 zero-additional-link capacity from a reduced-cost residual cut.

@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T01:36:45.935913+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "51%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "51%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.ResourceDualParity.dual_independent_iff_full_rank' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.ResourceDualParity.min_spent_iff_max_saved' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ResourceDualParity.exact_fee_from_saved' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.ResourceDualParity.budget_iff_saving' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Four general non-enumerative kernel theorems: assumed dual-rank formula gives deletion/full-rank criterion; complementary fees transfer min-spent iff max-saved optimality over arbitrary feasible states; exact fee and budget identities.",
+  "not_formalized": [
+    "Flow-linkability matroid exchange, construction of the dual rank formula, physical fork normalization, exact support adapter and reduction to paired resource deletions, frozen geometry, parity algorithms. These have written proofs and independent executable checks."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
