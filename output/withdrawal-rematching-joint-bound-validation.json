@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "counts": {
+    "occupation_tree_certificates": 6728,
+    "independent_tree_occupations": 3941,
+    "tree_maximum_occupation_patterns": 4,
+    "pocket_matching_boundary_certificates": 148112,
+    "pocket_upper_only_crossings": 34435,
+    "independent_pocket_partial_matching_models": 147297,
+    "enumerated_pocket_charge_twice_maximum": 18,
+    "written_pocket_certificate_upper_bound": 19,
+    "global_actual_tile_token_allocations": 815,
+    "actual_exterior_negative_tokens_paid": 1098,
+    "net_strip_half_demands_paid_once": 6019,
+    "unspent_actual_exterior_half_tokens": 19518,
+    "models_not_retaining_old_edges": 391,
+    "arbitrary_rematching_withdrawal_models": 815,
+    "fully_frozen_joint_models": 127,
+    "regional_models": 112,
+    "mixed_export_models": 112,
+    "only_nonmixed_export_models": 0,
+    "sealed_even_models": 0,
+    "parallel_safe_export_square_witnesses": 0,
+    "joint_models": 112,
+    "models_with_safe_cross_refund": 0,
+    "safe_cross_matching_edges": 0,
+    "models_with_TP_TP_debit": 0,
+    "models_with_TP_PP_debit": 0,
+    "models_with_external_TP_debit": 112,
+    "geometric_port_budget_models": 112,
+    "ported_export_forest_ends_allocated": 112,
+    "unported_degree_four_TP_exports": 1805,
+    "actual_no_reuse_payment_maps": 112,
+    "successor_reserves_converted_and_spent_once": 583,
+    "distinct_unspent_full_units": 1222,
+    "sharp_frozen_all_subset_attainers": 112,
+    "frozen_no_normalization_controls": 15,
+    "explicit_joint_withdrawal_and_rematching_controls": 376
+  },
+  "samples": [
+    {
+      "k": 2,
+      "q": 1,
+      "sharp_objective": 47,
+      "half_area": 48,
+      "whole_surplus": 1
+    },
+    {
+      "k": 3,
+      "q": 2,
+      "sharp_objective": 65,
+      "half_area": 66,
+      "whole_surplus": 1
+    },
+    {
+      "k": 4,
+      "q": 3,
+      "sharp_objective": 83,
+      "half_area": 84,
+      "whole_surplus": 1
+    },
+    {
+      "k": 5,
+      "q": 4,
+      "sharp_objective": 101,
+      "half_area": 102,
+      "whole_surplus": 1
+    },
+    {
+      "k": 6,
+      "q": 5,
+      "sharp_objective": 119,
+      "half_area": 120,
+      "whole_surplus": 1
+    },
+    {
+      "k": 7,
+      "q": 6,
+      "sharp_objective": 137,
+      "half_area": 138,
+      "whole_surplus": 1
+    },
+    {
+      "k": 8,
+      "q": 7,
+      "sharp_objective": 155,
+      "half_area": 156,
+      "whole_surplus": 1
+    },
+    {
+      "k": 9,
+      "q": 8,
+      "sharp_objective": 173,
+      "half_area": 174,
+      "whole_surplus": 1
+    },
+    {
+      "k": 10,
+      "q": 9,
+      "sharp_objective": 191,
+      "half_area": 192,
+      "whole_surplus": 1
+    },
+    {
+      "k": 11,
+      "q": 10,
+      "sharp_objective": 209,
+      "half_area": 210,
+      "whole_surplus": 1
+    },
+    {
+      "k": 12,
+      "q": 11,
+      "sharp_objective": 227,
+      "half_area": 228,
+      "whole_surplus": 1
+    },
+    {
+      "k": 16,
+      "q": 15,
+      "sharp_objective": 299,
+      "half_area": 300,
+      "whole_surplus": 1
+    },
+    {
+      "k": 32,
+      "q": 31,
+      "sharp_objective": 587,
+      "half_area": 588,
+      "whole_surplus": 1
+    },
+    {
+      "k": 64,
+      "q": 63,
+      "sharp_objective": 1163,
+      "half_area": 1164,
+      "whole_surplus": 1
+    },
+    {
+      "k": 128,
+      "q": 127,
+      "sharp_objective": 2315,
+      "half_area": 2316,
+      "whole_surplus": 1
+    }
+  ],
+  "scope": "Written all-k exact maximum17k+12+q after any q specified interior guard withdrawals; retain T0 except these guards and P0, allow arbitrary actual old-edge rematching and arbitrary added endpoints/selections. No freezing needed for upper bound; every J has a fully frozen sharp attainer. Occupation-only tree capacity6 and one boundary-aware pocket half-slack, removed by ONE global integer rounding. No old-M normalization assumption. For every arbitrary actual rematching, actual positive original-tile half tokens injectively cover all exterior negative charge plus net strip deficit and leave at least2(k-q) unspent half tokens. This global allocation has no locality/direction restriction; individual D4 routing and whole-unit original-tile reserves for arbitrary rematching are not claimed. The prior successor physical payment applies to the explicit sharp attainers. Universal5/6, other T/P deletions and general mixed-direction geometric cut remain open."
+}

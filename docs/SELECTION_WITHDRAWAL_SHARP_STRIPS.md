@@ -2,6 +2,12 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Research continuation.
 
+The subsequent [joint withdrawal/rematching theorem](WITHDRAWAL_REMATCHING_JOINT_BOUND.md)
+removes the retained-M0 assumption while keeping P0 and the specified retained
+selections. It proves the same sharp frontier by occupation weights and a
+single global rounding, and gives actual original-tile net compensation for
+every rematching, including the normalization obstruction below.
+
 Withdrawing one retained guard CAN increase the objective by one, even with
 complete freezing and all old matching edges retained. For any subset of q
 interior guards we prove the exact maximum 17k+12+q and give a completely

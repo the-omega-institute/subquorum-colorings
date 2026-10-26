@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T11:22:44.036648+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "38%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "38%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.WithdrawalRematchingJointBound.anchored_pair' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.wedge' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.occupation_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.tree_occupation_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.tree_charge_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.pocket_integer_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.pocket_signed_boundary_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.pocket_half_slack' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.gate_occupation_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.closed_star_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.disjoint_component_sum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.one_global_integer_rounding' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.joint_margin' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.sharp_slack_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.exterior_signed_cut' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.actual_token_capacity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.WithdrawalRematchingJointBound.physical_token_injective' does not depend on any axioms",
+    "'SubQuorum.WithdrawalRematchingJointBound.unspent_token_margin' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Universal anchored-pair and wedge constraints; occupation-only nine-vertex tree identity and capacity6 without edge-retention premise; boundary-aware pocket integer certificate and signed/half-slack bound; gate and closed-star bounds; arbitrary-k/q count aggregation, one global integer rounding, sharp slack and joint margin; signed exterior physical cut, positive/negative charge token capacity, injective allocation and unspent half-token margin.",
+  "not_formalized": [
+    "All-k free graph and boundary classification, actual matching adapter for the 15-site weighted pocket certificate and closed stars, global partition and actual original-tile charge/token adapters remain written general proofs with executable checks. Fully frozen sharp attainability and no-reuse physical ledger are inherited from the prior written all-subset construction. No end-to-end all-k grid formal theorem; other T/P withdrawals and universal5/6 remain open."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}
