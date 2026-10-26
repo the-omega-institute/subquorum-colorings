@@ -1,0 +1,20 @@
+{
+  "base_fixture": "frozen_all_mixed_gate_cycle.json",
+  "vertical_tiles": [[14, 14]],
+  "pivot_capacity": 1,
+  "pivot_selected_cell": [15, 14],
+  "old_stems": [
+    {"owners": [20, 14], "links": [[[24, 17], [24, 18]]]},
+    {"owners": [6, 17], "links": [[[24, 4], [24, 5]]]}
+  ],
+  "new_sources": [12],
+  "bridge": [[24, 19], [24, 18]],
+  "baseline_original_units_cells": [
+    [[18, 13], [19, 13]],
+    [[18, 14], [19, 14]]
+  ],
+  "shared_suffix_owner_users": [14, 17],
+  "expected_old_value": 2,
+  "expected_value": 3,
+  "scope": "Fully frozen original board, one P-free capacity-one tile changed H to V. Receiver suffix has two original units shared with another old request; no request-private suffix witness. Both shared units already used in supplied maximum baseline are retained after joint compensation."
+}

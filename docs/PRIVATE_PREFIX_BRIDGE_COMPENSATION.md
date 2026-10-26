@@ -2,6 +2,10 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
+Continuation: [shared reserves and one initialized receiver-slot flow](SHARED_PREFIX_BRIDGE_FLOW.md)
+remove the private-unit hypothesis for deficient donors and nondeficient receivers,
+with exact actual fees and the same original-unit retention guarantee.
+
 The [single-bridge theorem](SINGLE_BRIDGE_COMPENSATION.md) shows why unused
 resources in a receiving component alone do not repair an incoming deficient
 path: both sources can still need the same capacity-one mixed entrance. Here

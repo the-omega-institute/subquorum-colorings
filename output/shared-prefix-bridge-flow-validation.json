@@ -1,0 +1,330 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_mode_value_and_actual_fee_optima": 300,
+    "independent_primitive_and_full_flow_values": 50,
+    "paid_source_and_used_unit_set_retention": 300,
+    "max_flow_cut_and_global_fee_potential_certificates": 300,
+    "fee_reversing_augmentation_paths": 1,
+    "all_maximum_baseline_retention": 454,
+    "discarded_donor_suffix_resource_retained": 1,
+    "fork_in_donor_tree_controls": 1,
+    "accepted_random_shared_support_models": 295,
+    "strict_freezing_events": 7084,
+    "frozen_independent_mode_and_restricted_full_flow": 3,
+    "frozen_independent_primitive_value": 1,
+    "frozen_nonprivate_capacity_one_boards": 4,
+    "production_shared_flow_without_modes_or_full_optimizer": 1
+  },
+  "samples": [
+    {
+      "name": "two_receivers_one_shared_suffix_reserve",
+      "old": 2,
+      "new": 3,
+      "fee": 2,
+      "bridges": [
+        1
+      ]
+    },
+    {
+      "name": "cheap_bridge_reversed_for_joint_optimum",
+      "old": 4,
+      "new": 6,
+      "fee": 3,
+      "bridges": [
+        1,
+        2
+      ]
+    }
+  ],
+  "physical": [
+    {
+      "copies": 1,
+      "shape": [
+        28,
+        24
+      ],
+      "old_payment": 2,
+      "new_payment": 3,
+      "old_shared_used_units_retained": 2,
+      "fresh_units": 1,
+      "bridges": 1,
+      "fee": 1,
+      "old_private_guard_accepts": false,
+      "production": false,
+      "vertical_tiles": [
+        [
+          14,
+          14
+        ]
+      ],
+      "shared_suffix_original_units": [
+        [
+          [
+            10,
+            13,
+            13
+          ],
+          [
+            10,
+            14,
+            14
+          ]
+        ]
+      ],
+      "cut_capacity": 3,
+      "min_cost_potential_certificate": true,
+      "example_certificate": {
+        "paid_source_ids": [
+          6,
+          12,
+          20
+        ],
+        "certificates": [
+          {
+            "kind": "interval",
+            "owners": [
+              20
+            ],
+            "links": [],
+            "interval": [
+              13,
+              7,
+              7
+            ],
+            "value": 1,
+            "witness": 20
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              6,
+              17
+            ],
+            "links": [
+              [
+                [
+                  24,
+                  4
+                ],
+                [
+                  24,
+                  5
+                ]
+              ]
+            ],
+            "interval": [
+              10,
+              14,
+              14
+            ],
+            "value": 1,
+            "witness": 17
+          },
+          {
+            "kind": "interval",
+            "owners": [
+              12,
+              14
+            ],
+            "links": [
+              [
+                [
+                  24,
+                  19
+                ],
+                [
+                  24,
+                  18
+                ]
+              ]
+            ],
+            "interval": [
+              10,
+              13,
+              13
+            ],
+            "value": 1,
+            "witness": 14
+          }
+        ],
+        "used_original_units": [
+          {
+            "id": [
+              10,
+              13,
+              13
+            ],
+            "cells": [
+              [
+                18,
+                13
+              ],
+              [
+                19,
+                13
+              ]
+            ],
+            "old": true
+          },
+          {
+            "id": [
+              10,
+              14,
+              14
+            ],
+            "cells": [
+              [
+                18,
+                14
+              ],
+              [
+                19,
+                14
+              ]
+            ],
+            "old": true
+          },
+          {
+            "id": [
+              13,
+              7,
+              7
+            ],
+            "cells": [
+              [
+                24,
+                7
+              ],
+              [
+                25,
+                7
+              ]
+            ],
+            "old": false
+          }
+        ]
+      }
+    },
+    {
+      "copies": 2,
+      "shape": [
+        58,
+        24
+      ],
+      "old_payment": 4,
+      "new_payment": 6,
+      "old_shared_used_units_retained": 4,
+      "fresh_units": 2,
+      "bridges": 2,
+      "fee": 3,
+      "old_private_guard_accepts": false,
+      "production": false,
+      "vertical_tiles": [
+        [
+          14,
+          14
+        ]
+      ],
+      "shared_suffix_original_units": [
+        [
+          [
+            10,
+            13,
+            13
+          ],
+          [
+            10,
+            14,
+            14
+          ]
+        ]
+      ],
+      "cut_capacity": 6,
+      "min_cost_potential_certificate": true,
+      "example_certificate": {}
+    },
+    {
+      "copies": 4,
+      "shape": [
+        118,
+        24
+      ],
+      "old_payment": 8,
+      "new_payment": 12,
+      "old_shared_used_units_retained": 8,
+      "fresh_units": 4,
+      "bridges": 4,
+      "fee": 7,
+      "old_private_guard_accepts": false,
+      "production": false,
+      "vertical_tiles": [
+        [
+          14,
+          14
+        ]
+      ],
+      "shared_suffix_original_units": [
+        [
+          [
+            10,
+            13,
+            13
+          ],
+          [
+            10,
+            14,
+            14
+          ]
+        ]
+      ],
+      "cut_capacity": 12,
+      "min_cost_potential_certificate": true,
+      "example_certificate": {}
+    },
+    {
+      "copies": 16,
+      "shape": [
+        478,
+        24
+      ],
+      "old_payment": 32,
+      "new_payment": 48,
+      "old_shared_used_units_retained": 32,
+      "fresh_units": 16,
+      "bridges": 16,
+      "fee": 31,
+      "old_private_guard_accepts": false,
+      "production": true,
+      "vertical_tiles": [
+        [
+          14,
+          14
+        ]
+      ],
+      "shared_suffix_original_units": [
+        [
+          [
+            10,
+            13,
+            13
+          ],
+          [
+            10,
+            14,
+            14
+          ]
+        ]
+      ],
+      "cut_capacity": 48,
+      "min_cost_potential_certificate": true,
+      "example_certificate": {}
+    }
+  ],
+  "proof": "docs/SHARED_PREFIX_BRIDGE_FLOW.md",
+  "scope": "One initialized receiver-slot min-cost flow: deficient donors, nondeficient receivers, disjoint candidate stem pairs. Arbitrary shared original supports. Exact unrestricted declared-link payment/actual bridge fees; all maximum-baseline paid sources and original used units retained.",
+  "limitations": [
+    "No shared-stem candidates or deficient receivers.",
+    "No universal geometric certificate or 5/6 improvement."
+  ]
+}

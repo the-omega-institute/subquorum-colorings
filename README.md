@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [shared prefix/suffix bridge compensation in one flow](docs/SHARED_PREFIX_BRIDGE_FLOW.md):
+private reserves are no longer required when donors lie in deficient trees,
+receivers in nondeficient components and candidate stem pairs are disjoint.
+One receiver-slot min-cost flow gives exact declared-link payment and minimum
+actual bridge fees, preserving every paid source and used original unit of
+any maximum reference allocation. The upper bound covers multiple bridges
+from one tree; one per repaired tree suffices. A frozen capacity-one pivot
+gives shared-suffix payment 2 to 3, retaining both already used shared units;
+all-q copies give 2q to 3q. Checks include 300 mode optima, 454 baseline audits
+and 7,084 freezing events, plus two scoped Lean kernels. General shared-stem
+geometry and universal 5/6 improvement remain open.
+
 New [private prefix/suffix bridge compensation](docs/PRIVATE_PREFIX_BRIDGE_COMPENSATION.md):
 two distinct request-private original units across a mixed entrance give
 polynomial exact payment p+g-t0+d, with d distinct deficient donor trees.
