@@ -1,5 +1,17 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [sharp occupied-strip degree-four budget](docs/OCCUPIED_STRIP_DEGREE_FOUR_BUDGET.md):
+every transverse TP export either occupies a different BB--TT forest end or
+is an unported degree-four exception. For disjoint mixed-direction strips,
+the exact joint ledger becomes 2S=B+r+u+V-D4, with V>=0 and distinct refund
+targets. Fully frozen, uniquely matched all-k families attain 2S=b-k for
+one-corner and sealed even bands; every complete receiver is neutral, each
+module contains an original capacity-two tile, and all endpoint-free regional
+tiles are saturated. The outside half-unit charges are identified exactly.
+Checks cover 990 geometric budgets and 6,594 freezing events; Lean verifies
+the concrete 18-endpoint negative strip from feasibility through inductive
+freezing, plus general arithmetic. Universal 5/6 improvement remains open.
+
 New [cross-band matching refunds for occupied strips](docs/OCCUPIED_STRIP_EXPORT_CANCELLATION.md):
 actual TP-column-to-BP-column matching exports cancel across disjoint strips,
 including different directions, through distinct BP targets. The exact regional

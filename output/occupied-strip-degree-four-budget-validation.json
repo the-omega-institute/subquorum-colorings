@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "counts": {
+    "strict_freezing_events": 6594,
+    "regional_models": 3310,
+    "mixed_export_models": 547,
+    "only_nonmixed_export_models": 1238,
+    "sealed_even_models": 721,
+    "parallel_safe_export_square_witnesses": 118,
+    "joint_models": 990,
+    "models_with_safe_cross_refund": 43,
+    "safe_cross_matching_edges": 134,
+    "models_with_TP_TP_debit": 9,
+    "models_with_TP_PP_debit": 41,
+    "models_with_external_TP_debit": 213,
+    "geometric_port_budget_models": 990,
+    "ported_export_forest_ends_allocated": 561,
+    "unported_degree_four_TP_exports": 622,
+    "all_q_frozen_models": 20,
+    "forced_unique_matching_edges": 1878,
+    "independent_unique_matching_counts": 6,
+    "isometry_controls": 48,
+    "negative_regional_models": 15,
+    "all_q_frozen_refund_controls": 7,
+    "frozen_refund_symmetries": 16,
+    "nonvacuous_five_positive_source_compensation_boards": 3,
+    "all_q_sharp_TP_TP_debit_boards": 4,
+    "exhaustive_two_strip_matchings": 806,
+    "mixed_direction_greedy_region_controls": 80,
+    "complete_frozen_board_band_partition": 1
+  },
+  "samples": [
+    {
+      "copies": 0,
+      "sealed": false,
+      "shape": [
+        6,
+        4
+      ],
+      "T": 5,
+      "M": 1,
+      "regional_selected": 3,
+      "regional_endpoints": 1,
+      "record": {
+        "surplus_twice": 1,
+        "boundary_budget": 1,
+        "forest_components": 1,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 1,
+        "safe_cross": 0,
+        "old_individual_export_debit": 1,
+        "new_debit_twice": 1,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": -1
+        },
+        "degree_four_budget": {
+          "boundary_ends": 1,
+          "unported_degree_four_TP": 0,
+          "ported_exports": 1,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": 1
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": 1,
+      "outside_endpoint_free_deficit": 6,
+      "whole_margin_twice": 12
+    },
+    {
+      "copies": 0,
+      "sealed": true,
+      "shape": [
+        8,
+        6
+      ],
+      "T": 8,
+      "M": 2,
+      "regional_selected": 4,
+      "regional_endpoints": 2,
+      "record": {
+        "surplus_twice": 2,
+        "boundary_budget": 2,
+        "forest_components": 2,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 2,
+        "safe_cross": 0,
+        "old_individual_export_debit": 2,
+        "new_debit_twice": 2,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": -2
+        },
+        "degree_four_budget": {
+          "boundary_ends": 2,
+          "unported_degree_four_TP": 0,
+          "ported_exports": 2,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": 2
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": 2,
+      "outside_endpoint_free_deficit": 14,
+      "whole_margin_twice": 28
+    },
+    {
+      "copies": 2,
+      "sealed": false,
+      "shape": [
+        6,
+        16
+      ],
+      "T": 21,
+      "M": 9,
+      "regional_selected": 13,
+      "regional_endpoints": 7,
+      "record": {
+        "surplus_twice": -1,
+        "boundary_budget": 1,
+        "forest_components": 1,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 3,
+        "safe_cross": 0,
+        "old_individual_export_debit": 3,
+        "new_debit_twice": 3,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": 1
+        },
+        "degree_four_budget": {
+          "boundary_ends": 1,
+          "unported_degree_four_TP": 2,
+          "ported_exports": 1,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": -1
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": -1,
+      "outside_endpoint_free_deficit": 18,
+      "whole_margin_twice": 36
+    },
+    {
+      "copies": 2,
+      "sealed": true,
+      "shape": [
+        8,
+        18
+      ],
+      "T": 24,
+      "M": 10,
+      "regional_selected": 14,
+      "regional_endpoints": 8,
+      "record": {
+        "surplus_twice": 0,
+        "boundary_budget": 2,
+        "forest_components": 2,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 4,
+        "safe_cross": 0,
+        "old_individual_export_debit": 4,
+        "new_debit_twice": 4,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": 0
+        },
+        "degree_four_budget": {
+          "boundary_ends": 2,
+          "unported_degree_four_TP": 2,
+          "ported_exports": 2,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": 0
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": 0,
+      "outside_endpoint_free_deficit": 38,
+      "whole_margin_twice": 76
+    },
+    {
+      "copies": 3,
+      "sealed": false,
+      "shape": [
+        6,
+        22
+      ],
+      "T": 29,
+      "M": 13,
+      "regional_selected": 18,
+      "regional_endpoints": 10,
+      "record": {
+        "surplus_twice": -2,
+        "boundary_budget": 1,
+        "forest_components": 1,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 4,
+        "safe_cross": 0,
+        "old_individual_export_debit": 4,
+        "new_debit_twice": 4,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": 2
+        },
+        "degree_four_budget": {
+          "boundary_ends": 1,
+          "unported_degree_four_TP": 3,
+          "ported_exports": 1,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": -2
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": -2,
+      "outside_endpoint_free_deficit": 24,
+      "whole_margin_twice": 48
+    },
+    {
+      "copies": 3,
+      "sealed": true,
+      "shape": [
+        8,
+        24
+      ],
+      "T": 32,
+      "M": 14,
+      "regional_selected": 19,
+      "regional_endpoints": 11,
+      "record": {
+        "surplus_twice": -1,
+        "boundary_budget": 2,
+        "forest_components": 2,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 5,
+        "safe_cross": 0,
+        "old_individual_export_debit": 5,
+        "new_debit_twice": 5,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": 1
+        },
+        "degree_four_budget": {
+          "boundary_ends": 2,
+          "unported_degree_four_TP": 3,
+          "ported_exports": 2,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": -1
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": -1,
+      "outside_endpoint_free_deficit": 50,
+      "whole_margin_twice": 100
+    },
+    {
+      "copies": 128,
+      "sealed": false,
+      "shape": [
+        6,
+        772
+      ],
+      "T": 1029,
+      "M": 513,
+      "regional_selected": 643,
+      "regional_endpoints": 385,
+      "record": {
+        "surplus_twice": -127,
+        "boundary_budget": 1,
+        "forest_components": 1,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 129,
+        "safe_cross": 0,
+        "old_individual_export_debit": 129,
+        "new_debit_twice": 129,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": 127
+        },
+        "degree_four_budget": {
+          "boundary_ends": 1,
+          "unported_degree_four_TP": 128,
+          "ported_exports": 1,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": -127
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": -127,
+      "outside_endpoint_free_deficit": 774,
+      "whole_margin_twice": 1548
+    },
+    {
+      "copies": 128,
+      "sealed": true,
+      "shape": [
+        8,
+        774
+      ],
+      "T": 1032,
+      "M": 514,
+      "regional_selected": 644,
+      "regional_endpoints": 386,
+      "record": {
+        "surplus_twice": -126,
+        "boundary_budget": 2,
+        "forest_components": 2,
+        "unused_BP": 0,
+        "TP_TP": 0,
+        "TP_PP": 0,
+        "outside": 130,
+        "safe_cross": 0,
+        "old_individual_export_debit": 130,
+        "new_debit_twice": 130,
+        "union_tile_closed": true,
+        "physical_ledger": {
+          "endpoint_free_deficit": 0,
+          "raw_receiver_charge_twice": 126
+        },
+        "degree_four_budget": {
+          "boundary_ends": 2,
+          "unported_degree_four_TP": 128,
+          "ported_exports": 2,
+          "unused_forest_end_slots": 0,
+          "bound_surplus_twice": -126
+        }
+      },
+      "complete_receiver_charge_twice": 0,
+      "outside_raw_receiver_charge_twice": -126,
+      "outside_endpoint_free_deficit": 1550,
+      "whole_margin_twice": 3100
+    }
+  ],
+  "scope": "General physical forest-end injection and exact occupied-strip degree-four budget; all-q sharp frozen uniquely matched constructions. Seven degree-three and one degree-four endpoint per eight-endpoint core. All full receivers neutral, all regional endpoint-free tiles saturated, one original capacity-two tile per core. Finite checks corroborate the written general proofs; no universal grid-bound improvement."
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T08:16:26.815214+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "45%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "44%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.OccupiedStripDegreeFourBudget.geometry_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.certificate_valid' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.all_endpoints_frozen' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.actual_degree_four' does not depend on any axioms",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.concrete_negative_strip' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.port_debit_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.mixed_union_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.original_grid_budget' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.all_q_sharp_ledger' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.OccupiedStripDegreeFourBudget.unbounded_negative_budget' depends on axioms: [propext, Quot.sound]"
+  ],
+  "scope": "Concrete q=2 feasibility, all 18 endpoints inductively frozen, actual degree-four count, negative regional surplus; general defect/unused-port ledger and mixed-union/original-grid arithmetic; all-q sharp numerical ledger.",
+  "not_formalized": [
+    "The general forest-end injection, all-q geometric separation, unique matching leaf argument and complete raw receiver accounting are written proofs with executable checks; only the concrete q=2 geometry/freezing/negative-surplus instance is formalized end to end."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

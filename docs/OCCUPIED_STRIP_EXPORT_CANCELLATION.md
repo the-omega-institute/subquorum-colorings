@@ -1,5 +1,11 @@
 # Occupied strips: cross-band refunds and the exact unmatched debit
 
+**Geometric continuation:** [the sharp degree-four budget](OCCUPIED_STRIP_DEGREE_FOUR_BUDGET.md)
+limits the remaining total debit by distinct physical forest ends and unported
+degree-four TP exports. It gives a uniform regional bound without receiver
+closure, and frozen unique-matching families attain it with all complete
+receivers neutral and arbitrarily negative regional surplus.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 The [occupied-strip flux theorem](OCCUPIED_STRIP_MATCHING_FLUX.md) charges half
