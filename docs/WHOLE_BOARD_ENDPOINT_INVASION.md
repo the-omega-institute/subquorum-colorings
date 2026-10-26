@@ -1,5 +1,7 @@
 # Whole-board endpoint invasion: a sharp half-area compensation theorem
 
+Successor: [unprotected white selections, sharp new-black terminal cost and prefix obstruction](UNPROTECTED_WHITE_PAIR_AND_PREFIX_BUDGET.md) removes the two protected-white assumptions and settles one new black-selection permission.
+
 27 October 2026. Wenlin Zhang and Haobo Ma.
 
 We remove the six-cell permission restriction from the previous occupied-envelope
