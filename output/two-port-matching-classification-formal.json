@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/TwoPortMatchingClassification.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.TwoPortMatchingClassification.separated_fronts_exclude_freezing",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortMatchingClassification.least_root",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortMatchingClassification.root_normal_form",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortMatchingClassification.odd_column_normal_form",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.TwoPortMatchingClassification.absent_port_excludes_noncanonical",
+      "axioms": []
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3938 \nPages purgeable: 2 \nPages purged: 261860031 \n\nSwap I/O:\nSwapins: 305257597 \nSwapouts: 320269034 \n\nPage Q counts:\nPages active: 140749 \nPages inactive: 131612 \nPages speculative: 7925 \nPages throttled: 0 \nPages wired down: 299364 \n\nCompressor Stats:\nPages used by compressor: 423364 \nPages decompressed: 6526471046 \nPages compressed: 7392017481 \n\nFile I/O:\nPageins: 8559325899 \nPageouts: 26121701 \n\nSystem-wide memory free percentage: 28%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3802.\nPages active:                                 140838.\nPages inactive:                               131699.\nPages speculative:                              7926.\nPages throttled:                                   0.\nPages wired down:                             299519.\nPages purgeable:                                   2.\n\"Translation faults\":                    30581393576.\nPages copy-on-write:                      1490147775.\nPages zero filled:                       12180368093.\nPages reactivated:                        6669565698.\nPages purged:                              261860031.\nFile-backed pages:                             95375.\nAnonymous pages:                              185088.\nPages stored in compressor:                  3507495.\nPages occupied by compressor:                 423120.\nDecompressions:                           6526471378.\nCompressions:                             7392017481.\nPageins:                                  8559325903.\nPageouts:                                   26121701.\nSwapins:                                   305257625.\nSwapouts:                                  320269034."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 15991 \nPages purgeable: 4 \nPages purged: 261860079 \n\nSwap I/O:\nSwapins: 305262931 \nSwapouts: 320282322 \n\nPage Q counts:\nPages active: 137589 \nPages inactive: 127120 \nPages speculative: 9076 \nPages throttled: 0 \nPages wired down: 297183 \n\nCompressor Stats:\nPages used by compressor: 419812 \nPages decompressed: 6526515347 \nPages compressed: 7392077125 \n\nFile I/O:\nPageins: 8559330735 \nPageouts: 26121701 \n\nSystem-wide memory free percentage: 28%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                    16201.\nPages active:                                 137590.\nPages inactive:                               127137.\nPages speculative:                              9076.\nPages throttled:                                   0.\nPages wired down:                             297206.\nPages purgeable:                                   4.\n\"Translation faults\":                    30581482790.\nPages copy-on-write:                      1490149702.\nPages zero filled:                       12180404910.\nPages reactivated:                        6669582501.\nPages purged:                              261860079.\nFile-backed pages:                            100007.\nAnonymous pages:                              173796.\nPages stored in compressor:                  3522683.\nPages occupied by compressor:                 419604.\nDecompressions:                           6526515366.\nCompressions:                             7392077125.\nPageins:                                  8559330736.\nPageouts:                                   26121701.\nSwapins:                                   305262939.\nSwapouts:                                  320282322."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4022 \nPages purgeable: 2 \nPages purged: 261862554 \n\nSwap I/O:\nSwapins: 305359499 \nSwapouts: 320357242 \n\nPage Q counts:\nPages active: 142209 \nPages inactive: 127386 \nPages speculative: 13541 \nPages throttled: 0 \nPages wired down: 294573 \n\nCompressor Stats:\nPages used by compressor: 424982 \nPages decompressed: 6527094722 \nPages compressed: 7392662199 \n\nFile I/O:\nPageins: 8559411322 \nPageouts: 26122230 \n\nSystem-wide memory free percentage: 28%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3569.\nPages active:                                 142440.\nPages inactive:                               127590.\nPages speculative:                             13554.\nPages throttled:                                   0.\nPages wired down:                             294573.\nPages purgeable:                                   2.\n\"Translation faults\":                    30582937537.\nPages copy-on-write:                      1490159542.\nPages zero filled:                       12180874525.\nPages reactivated:                        6669940535.\nPages purged:                              261862554.\nFile-backed pages:                            106744.\nAnonymous pages:                              176840.\nPages stored in compressor:                  3508851.\nPages occupied by compressor:                 425096.\nDecompressions:                           6527095098.\nCompressions:                             7392662199.\nPageins:                                  8559411366.\nPageouts:                                   26122230.\nSwapins:                                   305359651.\nSwapouts:                                  320357242."
+    }
+  ],
+  "scope": "Separated-front interval barrier for arbitrary endpoint types and least freezing closure; all-length singleton/adjacent-pair root normal form; conditional absence-of-input exclusion.",
+  "not_formalized": "Concrete coordinate support localization, EF/L/R reduction, lower-row parity, matching reconstruction, positive wave sequences, exact coordinate counts and physical stack adapters remain written with solver-free checks. Not an end-to-end Lean coordinate classification."
+}

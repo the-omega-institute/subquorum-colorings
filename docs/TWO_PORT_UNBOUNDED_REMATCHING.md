@@ -15,6 +15,12 @@ from rematching extent and physical surplus: both inputs are necessary, their
 number stays two, and no physical token is left unspent. This is an explicit
 family, not a classification of every feasible matching on this footprint.
 
+The subsequent [complete classification](TWO_PORT_MATCHING_CLASSIFICATION.md)
+settles the all-matching question on this fixed T/P: exactly 5m+4 matchings
+freeze with both inputs, and only the canonical matching freezes if either
+input is absent. The explicit zipper proof below remains a member of that
+classification.
+
 ## 1. Construction and statement
 
 Use the board R, T*, P*, names and original prescribed matching M* from

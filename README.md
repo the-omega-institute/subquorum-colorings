@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [complete two-port matching classification](docs/TWO_PORT_MATCHING_CLASSIFICATION.md):
+on the SAME fixed selected/endpoint footprint, exactly 5m+4 actual perfect
+matchings completely freeze with both right inputs. A geometric interval trap
+forces all odd vertical matching edges into one column or two adjacent odd
+columns; lower-path parity reconstructs the entire matching. Explicit ordered
+waves prove sufficiency for every length. If EITHER input is absent, only the
+canonical matching freezes. Exact four-state deficits are proved for every
+listed matching. The same zero-charge cap and exhausted physical ledger give
+at least (5m+4)^t independent stack matchings at half-area. Solver-free checks
+cover 1,454 candidates and all 53,900 reduced matchings at m=2,3,4. Lean covers
+the separated-front barrier and abstract root normal form; the coordinate
+adapter remains a written proof. The universal grid 5/6 question stays open.
+
 New [two-port activation of an unbounded rematching chain](docs/TWO_PORT_UNBOUNDED_REMATCHING.md):
 the same six-column zero-charge cap activates a matching change through every
 core of the band. It removes exactly 8m+7 prescribed edges, including the

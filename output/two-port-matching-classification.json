@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "lengths": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    40
+  ],
+  "counts": {
+    "candidate_boards": 1454,
+    "exact_response_traps": 2866,
+    "white_strict_sequence_events": 252180,
+    "independent_synchronous_responses": 860,
+    "exact_interface_responses": 5816,
+    "strict_rank_events": 1763658,
+    "fully_frozen_ambient_boards": 215,
+    "explicit_full_tile_token_bijections": 21,
+    "exhaustive_reduced_matchings": 53900,
+    "universal_tail_traps": 257109,
+    "universal_interval_traps": 618561
+  },
+  "exhaustive": [
+    {
+      "m": 2,
+      "reduced_matchings": 495,
+      "accepted": 14
+    },
+    {
+      "m": 3,
+      "reduced_matchings": 4900,
+      "accepted": 19
+    },
+    {
+      "m": 4,
+      "reduced_matchings": 48505,
+      "accepted": 24
+    }
+  ],
+  "scope": "Literal white wave sequence, exact four-state closures, strict actual-mate certificates, interval/tail traps for all reduced matchings m2..4, 215 candidate ambient cap unions, unchanged physical token bijections.",
+  "proof": "docs/TWO_PORT_MATCHING_CLASSIFICATION.md",
+  "limits": "Finite controls verify the written geometric adapter; they do not replace its arbitrary-length proof. EF-absent matchings are excluded by the written three-endpoint trap, not by the reduced enumeration."
+}
