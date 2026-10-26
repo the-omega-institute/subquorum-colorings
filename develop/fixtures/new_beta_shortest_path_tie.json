@@ -1,0 +1,18 @@
+{
+  "scope": "Abstract canonical owner model; not a frozen grid realization or target inequality counterexample.",
+  "owner_types": "AAB",
+  "owner_names": ["A", "C", "B"],
+  "resources": [0, 1],
+  "resource_names": ["old u", "fresh v"],
+  "support": {"0": [0, 1], "1": [], "2": [0]},
+  "old_links": [],
+  "old_paid": [0],
+  "old_used": [0],
+  "added_links": [[2, 4]],
+  "fee": 1,
+  "raw_residual_path": ["s", "v", "A", "u", "B_body", "B_tip4", "C", "t"],
+  "raw_residual_arc_count": 7,
+  "shortcut_residual_path": ["s", "B_body", "B_tip4", "C", "t"],
+  "shortcut_residual_arc_count": 4,
+  "conclusion": "Both paths have minimum fee1 and gain1. The raw path moves old u to an uncredited beta and A to fresh v; post-hoc beta normalization releases old u. The shorter same-cost shortcut pays C with beta B and keeps old A:u. Only the arbitrary cost-tie-plus-normalization rule fails."
+}

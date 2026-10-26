@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T06:53:56.105393+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "42%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "42%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.NewBetaRetention.walk_reduced_cost_nonnegative' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.NewBetaRetention.used_resource_prefix_nonnegative' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.NewBetaRetention.private_shortcut_strictly_better' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.NewBetaRetention.fresh_resource_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Four scoped kernels: residual walk reduced-cost telescoping, nonnegative prefix to a used resource with its return edge, strict private-beta shortcut in the local cost/arc-count order, and the fresh interval/beta gain ledger.",
+  "not_formalized": [
+    "The network-specific incoming-arc cases, induction of beta normality, min-cost flow theorem, full identity retention, routing equivalence and all-length beta transport have general written proofs and executable checks; not end-to-end Lean."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [identity-safe admission of previously unused betas](docs/NEW_BETA_IDENTITY_SAFE_AUGMENTATION.md):
+the reachable-beta saturation guard is removed. Among minimum-cost residual
+augmentations, choosing the fewest residual arcs keeps every beta normalized
+from first activation. Exact maximum payment, minimum actual new-link fee and
+then minimum new-link count retain all old paid alphas, original interval IDs
+and whole-beta credits. Net gain is fresh intervals plus new beta credits,
+counted separately. The proof covers any normalized zero-cost baseline, with
+no initial maximality or two-owner-support requirement in the core network.
+An explicit equal-cost tie shows why post-hoc normalization alone can lose an
+old unit. Checks include 1,210 independent lex optima, 437 new-beta models,
+63 augmentations with reverse links, an r=64 beta-transport production run,
+frozen q=1,2,4,16 new-beta admission and four scoped Lean kernels. Geometric
+cut lower bounds and universal 5/6 improvement remain open.
+
 New [general mixed-head retention and deficient-tree relays](docs/GENERAL_BRIDGE_RETENTION_AND_DEFICIENT_RELAYS.md):
 one resource-first flow handles arbitrary shared stems and deficient receivers
 when every reachable beta already has its old whole-beta credit saturated.
@@ -11,7 +25,8 @@ abstract chain needs r+1 new links for one gain. A fully frozen shared-stem
 example has separate bridge values 3/3 and joint value 4, retaining three old
 units; all-q copies need 2q new bridges. Checks include 330 independent optima,
 7,084 freezing events and three scoped Lean kernels. Newly reachable unused
-betas and universal 5/6 improvement remain open.
+betas are covered by the identity-safe continuation above; universal 5/6
+improvement remains open.
 
 New [shared prefix/suffix bridge compensation in one flow](docs/SHARED_PREFIX_BRIDGE_FLOW.md):
 private reserves are no longer required when donors lie in deficient trees,

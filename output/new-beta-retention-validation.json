@@ -1,0 +1,2584 @@
+{
+  "status": "PASS",
+  "counts": {
+    "independent_unrestricted_lex_optima": 1210,
+    "independent_prescribed_source_interval_lex_optima": 1210,
+    "old_beta_models": 605,
+    "old_fork_models": 25,
+    "models_activating_new_beta": 437,
+    "augmentations_activating_new_beta": 504,
+    "new_beta_forks": 27,
+    "augmentations_with_reverse_links": 63,
+    "explicit_cost_shortest_bad_normalization_control": 1,
+    "same_actual_beta_port_capacity_control": 1,
+    "beta_transport_bridge_deletion_controls": 35,
+    "production_beta_transport_r64": 1,
+    "arbitrary_support_nonmaximum_and_empty_baseline_controls": 2,
+    "all_maximum_old_baselines": 43,
+    "seeded_arbitrary_head_models": 1200,
+    "strict_freezing_events": 7084,
+    "frozen_independent_restricted_full_flow_values": 3,
+    "frozen_two_bridge_joint_necessity_checks": 2,
+    "frozen_independent_identity_prescribed_lex_optimum": 1,
+    "frozen_shared_stem_synergy_boards": 4,
+    "frozen_new_beta_independent_full_values": 3,
+    "physical_previous_beta_guard_removed": 1,
+    "frozen_new_beta_admission_boards": 4,
+    "production_frozen_shared_stems_no_independent_optimizer": 1,
+    "production_frozen_new_beta_q16": 1
+  },
+  "examples": {
+    "tie": {
+      "accepted": true,
+      "value": 2,
+      "fee": 1,
+      "new_links": 1,
+      "certificates": [
+        {
+          "kind": "interval",
+          "owners": [
+            0
+          ],
+          "links": [],
+          "interval": 0,
+          "value": 1,
+          "witness": 0
+        },
+        {
+          "kind": "beta",
+          "owners": [
+            1,
+            2
+          ],
+          "links": [
+            [
+              2,
+              4
+            ]
+          ],
+          "interval": null,
+          "value": 1,
+          "beta": 2
+        }
+      ],
+      "paid": [
+        0,
+        1
+      ],
+      "used": [
+        0
+      ],
+      "old_value": 1,
+      "old_paid": [
+        0
+      ],
+      "old_used": [
+        0
+      ],
+      "old_beta": [],
+      "fresh": [],
+      "used_beta": [
+        2
+      ],
+      "fresh_beta": [
+        2
+      ],
+      "selected_new": [
+        [
+          2,
+          4
+        ]
+      ],
+      "cut_capacity": 2,
+      "cut_tags": [
+        [
+          "port",
+          4
+        ],
+        [
+          "alpha",
+          0
+        ]
+      ],
+      "cost_potential_certificate": true,
+      "augmentations": [
+        {
+          "cost": 3,
+          "residual_arc_count": 4,
+          "new_beta": 1,
+          "reversed_links": 0
+        }
+      ]
+    },
+    "new_beta_old_interval_fork": {
+      "accepted": true,
+      "value": 3,
+      "fee": 4,
+      "new_links": 2,
+      "certificates": [
+        {
+          "kind": "interval",
+          "owners": [
+            0
+          ],
+          "links": [],
+          "interval": 1,
+          "value": 1,
+          "witness": 0
+        },
+        {
+          "kind": "fork",
+          "owners": [
+            1,
+            2,
+            3
+          ],
+          "links": [
+            [
+              2,
+              6
+            ],
+            [
+              4,
+              7
+            ]
+          ],
+          "interval": 0,
+          "value": 2,
+          "beta": 3,
+          "witness": 3
+        }
+      ],
+      "paid": [
+        0,
+        1,
+        2
+      ],
+      "used": [
+        0,
+        1
+      ],
+      "old_value": 1,
+      "old_paid": [
+        0
+      ],
+      "old_used": [
+        0
+      ],
+      "old_beta": [],
+      "fresh": [
+        1
+      ],
+      "used_beta": [
+        3
+      ],
+      "fresh_beta": [
+        3
+      ],
+      "selected_new": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      "cut_capacity": 3,
+      "cut_tags": [
+        [
+          "interval",
+          0
+        ],
+        [
+          "interval",
+          1
+        ],
+        [
+          "beta",
+          3
+        ]
+      ],
+      "cost_potential_certificate": true,
+      "augmentations": [
+        {
+          "cost": 7,
+          "residual_arc_count": 4,
+          "new_beta": 1,
+          "reversed_links": 0
+        },
+        {
+          "cost": 7,
+          "residual_arc_count": 7,
+          "new_beta": 0,
+          "reversed_links": 0
+        }
+      ]
+    },
+    "production_chain": {
+      "accepted": true,
+      "value": 65,
+      "fee": 65,
+      "new_links": 65,
+      "certificates": [
+        {
+          "kind": "interval",
+          "owners": [
+            0,
+            65
+          ],
+          "links": [
+            [
+              0,
+              130
+            ]
+          ],
+          "interval": 0,
+          "value": 1,
+          "witness": 65
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            1,
+            66
+          ],
+          "links": [
+            [
+              2,
+              132
+            ]
+          ],
+          "interval": 1,
+          "value": 1,
+          "witness": 66
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            2,
+            67
+          ],
+          "links": [
+            [
+              4,
+              134
+            ]
+          ],
+          "interval": 2,
+          "value": 1,
+          "witness": 67
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            3,
+            68
+          ],
+          "links": [
+            [
+              6,
+              136
+            ]
+          ],
+          "interval": 3,
+          "value": 1,
+          "witness": 68
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            4,
+            69
+          ],
+          "links": [
+            [
+              8,
+              138
+            ]
+          ],
+          "interval": 4,
+          "value": 1,
+          "witness": 69
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            5,
+            70
+          ],
+          "links": [
+            [
+              10,
+              140
+            ]
+          ],
+          "interval": 5,
+          "value": 1,
+          "witness": 70
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            6,
+            71
+          ],
+          "links": [
+            [
+              12,
+              142
+            ]
+          ],
+          "interval": 6,
+          "value": 1,
+          "witness": 71
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            7,
+            72
+          ],
+          "links": [
+            [
+              14,
+              144
+            ]
+          ],
+          "interval": 7,
+          "value": 1,
+          "witness": 72
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            8,
+            73
+          ],
+          "links": [
+            [
+              16,
+              146
+            ]
+          ],
+          "interval": 8,
+          "value": 1,
+          "witness": 73
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            9,
+            74
+          ],
+          "links": [
+            [
+              18,
+              148
+            ]
+          ],
+          "interval": 9,
+          "value": 1,
+          "witness": 74
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            10,
+            75
+          ],
+          "links": [
+            [
+              20,
+              150
+            ]
+          ],
+          "interval": 10,
+          "value": 1,
+          "witness": 75
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            11,
+            76
+          ],
+          "links": [
+            [
+              22,
+              152
+            ]
+          ],
+          "interval": 11,
+          "value": 1,
+          "witness": 76
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            12,
+            77
+          ],
+          "links": [
+            [
+              24,
+              154
+            ]
+          ],
+          "interval": 12,
+          "value": 1,
+          "witness": 77
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            13,
+            78
+          ],
+          "links": [
+            [
+              26,
+              156
+            ]
+          ],
+          "interval": 13,
+          "value": 1,
+          "witness": 78
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            14,
+            79
+          ],
+          "links": [
+            [
+              28,
+              158
+            ]
+          ],
+          "interval": 14,
+          "value": 1,
+          "witness": 79
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            15,
+            80
+          ],
+          "links": [
+            [
+              30,
+              160
+            ]
+          ],
+          "interval": 15,
+          "value": 1,
+          "witness": 80
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            16,
+            81
+          ],
+          "links": [
+            [
+              32,
+              162
+            ]
+          ],
+          "interval": 16,
+          "value": 1,
+          "witness": 81
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            17,
+            82
+          ],
+          "links": [
+            [
+              34,
+              164
+            ]
+          ],
+          "interval": 17,
+          "value": 1,
+          "witness": 82
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            18,
+            83
+          ],
+          "links": [
+            [
+              36,
+              166
+            ]
+          ],
+          "interval": 18,
+          "value": 1,
+          "witness": 83
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            19,
+            84
+          ],
+          "links": [
+            [
+              38,
+              168
+            ]
+          ],
+          "interval": 19,
+          "value": 1,
+          "witness": 84
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            20,
+            85
+          ],
+          "links": [
+            [
+              40,
+              170
+            ]
+          ],
+          "interval": 20,
+          "value": 1,
+          "witness": 85
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            21,
+            86
+          ],
+          "links": [
+            [
+              42,
+              172
+            ]
+          ],
+          "interval": 21,
+          "value": 1,
+          "witness": 86
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            22,
+            87
+          ],
+          "links": [
+            [
+              44,
+              174
+            ]
+          ],
+          "interval": 22,
+          "value": 1,
+          "witness": 87
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            23,
+            88
+          ],
+          "links": [
+            [
+              46,
+              176
+            ]
+          ],
+          "interval": 23,
+          "value": 1,
+          "witness": 88
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            24,
+            89
+          ],
+          "links": [
+            [
+              48,
+              178
+            ]
+          ],
+          "interval": 24,
+          "value": 1,
+          "witness": 89
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            25,
+            90
+          ],
+          "links": [
+            [
+              50,
+              180
+            ]
+          ],
+          "interval": 25,
+          "value": 1,
+          "witness": 90
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            26,
+            91
+          ],
+          "links": [
+            [
+              52,
+              182
+            ]
+          ],
+          "interval": 26,
+          "value": 1,
+          "witness": 91
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            27,
+            92
+          ],
+          "links": [
+            [
+              54,
+              184
+            ]
+          ],
+          "interval": 27,
+          "value": 1,
+          "witness": 92
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            28,
+            93
+          ],
+          "links": [
+            [
+              56,
+              186
+            ]
+          ],
+          "interval": 28,
+          "value": 1,
+          "witness": 93
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            29,
+            94
+          ],
+          "links": [
+            [
+              58,
+              188
+            ]
+          ],
+          "interval": 29,
+          "value": 1,
+          "witness": 94
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            30,
+            95
+          ],
+          "links": [
+            [
+              60,
+              190
+            ]
+          ],
+          "interval": 30,
+          "value": 1,
+          "witness": 95
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            31,
+            96
+          ],
+          "links": [
+            [
+              62,
+              192
+            ]
+          ],
+          "interval": 31,
+          "value": 1,
+          "witness": 96
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            32,
+            97
+          ],
+          "links": [
+            [
+              64,
+              194
+            ]
+          ],
+          "interval": 32,
+          "value": 1,
+          "witness": 97
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            33,
+            98
+          ],
+          "links": [
+            [
+              66,
+              196
+            ]
+          ],
+          "interval": 33,
+          "value": 1,
+          "witness": 98
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            34,
+            99
+          ],
+          "links": [
+            [
+              68,
+              198
+            ]
+          ],
+          "interval": 34,
+          "value": 1,
+          "witness": 99
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            35,
+            100
+          ],
+          "links": [
+            [
+              70,
+              200
+            ]
+          ],
+          "interval": 35,
+          "value": 1,
+          "witness": 100
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            36,
+            101
+          ],
+          "links": [
+            [
+              72,
+              202
+            ]
+          ],
+          "interval": 36,
+          "value": 1,
+          "witness": 101
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            37,
+            102
+          ],
+          "links": [
+            [
+              74,
+              204
+            ]
+          ],
+          "interval": 37,
+          "value": 1,
+          "witness": 102
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            38,
+            103
+          ],
+          "links": [
+            [
+              76,
+              206
+            ]
+          ],
+          "interval": 38,
+          "value": 1,
+          "witness": 103
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            39,
+            104
+          ],
+          "links": [
+            [
+              78,
+              208
+            ]
+          ],
+          "interval": 39,
+          "value": 1,
+          "witness": 104
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            40,
+            105
+          ],
+          "links": [
+            [
+              80,
+              210
+            ]
+          ],
+          "interval": 40,
+          "value": 1,
+          "witness": 105
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            41,
+            106
+          ],
+          "links": [
+            [
+              82,
+              212
+            ]
+          ],
+          "interval": 41,
+          "value": 1,
+          "witness": 106
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            42,
+            107
+          ],
+          "links": [
+            [
+              84,
+              214
+            ]
+          ],
+          "interval": 42,
+          "value": 1,
+          "witness": 107
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            43,
+            108
+          ],
+          "links": [
+            [
+              86,
+              216
+            ]
+          ],
+          "interval": 43,
+          "value": 1,
+          "witness": 108
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            44,
+            109
+          ],
+          "links": [
+            [
+              88,
+              218
+            ]
+          ],
+          "interval": 44,
+          "value": 1,
+          "witness": 109
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            45,
+            110
+          ],
+          "links": [
+            [
+              90,
+              220
+            ]
+          ],
+          "interval": 45,
+          "value": 1,
+          "witness": 110
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            46,
+            111
+          ],
+          "links": [
+            [
+              92,
+              222
+            ]
+          ],
+          "interval": 46,
+          "value": 1,
+          "witness": 111
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            47,
+            112
+          ],
+          "links": [
+            [
+              94,
+              224
+            ]
+          ],
+          "interval": 47,
+          "value": 1,
+          "witness": 112
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            48,
+            113
+          ],
+          "links": [
+            [
+              96,
+              226
+            ]
+          ],
+          "interval": 48,
+          "value": 1,
+          "witness": 113
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            49,
+            114
+          ],
+          "links": [
+            [
+              98,
+              228
+            ]
+          ],
+          "interval": 49,
+          "value": 1,
+          "witness": 114
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            50,
+            115
+          ],
+          "links": [
+            [
+              100,
+              230
+            ]
+          ],
+          "interval": 50,
+          "value": 1,
+          "witness": 115
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            51,
+            116
+          ],
+          "links": [
+            [
+              102,
+              232
+            ]
+          ],
+          "interval": 51,
+          "value": 1,
+          "witness": 116
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            52,
+            117
+          ],
+          "links": [
+            [
+              104,
+              234
+            ]
+          ],
+          "interval": 52,
+          "value": 1,
+          "witness": 117
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            53,
+            118
+          ],
+          "links": [
+            [
+              106,
+              236
+            ]
+          ],
+          "interval": 53,
+          "value": 1,
+          "witness": 118
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            54,
+            119
+          ],
+          "links": [
+            [
+              108,
+              238
+            ]
+          ],
+          "interval": 54,
+          "value": 1,
+          "witness": 119
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            55,
+            120
+          ],
+          "links": [
+            [
+              110,
+              240
+            ]
+          ],
+          "interval": 55,
+          "value": 1,
+          "witness": 120
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            56,
+            121
+          ],
+          "links": [
+            [
+              112,
+              242
+            ]
+          ],
+          "interval": 56,
+          "value": 1,
+          "witness": 121
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            57,
+            122
+          ],
+          "links": [
+            [
+              114,
+              244
+            ]
+          ],
+          "interval": 57,
+          "value": 1,
+          "witness": 122
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            58,
+            123
+          ],
+          "links": [
+            [
+              116,
+              246
+            ]
+          ],
+          "interval": 58,
+          "value": 1,
+          "witness": 123
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            59,
+            124
+          ],
+          "links": [
+            [
+              118,
+              248
+            ]
+          ],
+          "interval": 59,
+          "value": 1,
+          "witness": 124
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            60,
+            125
+          ],
+          "links": [
+            [
+              120,
+              250
+            ]
+          ],
+          "interval": 60,
+          "value": 1,
+          "witness": 125
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            61,
+            126
+          ],
+          "links": [
+            [
+              122,
+              252
+            ]
+          ],
+          "interval": 61,
+          "value": 1,
+          "witness": 126
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            62,
+            127
+          ],
+          "links": [
+            [
+              124,
+              254
+            ]
+          ],
+          "interval": 62,
+          "value": 1,
+          "witness": 127
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            63,
+            128
+          ],
+          "links": [
+            [
+              126,
+              256
+            ]
+          ],
+          "interval": 63,
+          "value": 1,
+          "witness": 128
+        },
+        {
+          "kind": "beta",
+          "owners": [
+            64,
+            129
+          ],
+          "links": [
+            [
+              128,
+              258
+            ]
+          ],
+          "interval": null,
+          "value": 1,
+          "beta": 129
+        }
+      ],
+      "paid": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "old_value": 64,
+      "old_paid": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "old_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "old_beta": [],
+      "fresh": [],
+      "used_beta": [
+        129
+      ],
+      "fresh_beta": [
+        129
+      ],
+      "selected_new": [
+        [
+          0,
+          130
+        ],
+        [
+          2,
+          132
+        ],
+        [
+          4,
+          134
+        ],
+        [
+          6,
+          136
+        ],
+        [
+          8,
+          138
+        ],
+        [
+          10,
+          140
+        ],
+        [
+          12,
+          142
+        ],
+        [
+          14,
+          144
+        ],
+        [
+          16,
+          146
+        ],
+        [
+          18,
+          148
+        ],
+        [
+          20,
+          150
+        ],
+        [
+          22,
+          152
+        ],
+        [
+          24,
+          154
+        ],
+        [
+          26,
+          156
+        ],
+        [
+          28,
+          158
+        ],
+        [
+          30,
+          160
+        ],
+        [
+          32,
+          162
+        ],
+        [
+          34,
+          164
+        ],
+        [
+          36,
+          166
+        ],
+        [
+          38,
+          168
+        ],
+        [
+          40,
+          170
+        ],
+        [
+          42,
+          172
+        ],
+        [
+          44,
+          174
+        ],
+        [
+          46,
+          176
+        ],
+        [
+          48,
+          178
+        ],
+        [
+          50,
+          180
+        ],
+        [
+          52,
+          182
+        ],
+        [
+          54,
+          184
+        ],
+        [
+          56,
+          186
+        ],
+        [
+          58,
+          188
+        ],
+        [
+          60,
+          190
+        ],
+        [
+          62,
+          192
+        ],
+        [
+          64,
+          194
+        ],
+        [
+          66,
+          196
+        ],
+        [
+          68,
+          198
+        ],
+        [
+          70,
+          200
+        ],
+        [
+          72,
+          202
+        ],
+        [
+          74,
+          204
+        ],
+        [
+          76,
+          206
+        ],
+        [
+          78,
+          208
+        ],
+        [
+          80,
+          210
+        ],
+        [
+          82,
+          212
+        ],
+        [
+          84,
+          214
+        ],
+        [
+          86,
+          216
+        ],
+        [
+          88,
+          218
+        ],
+        [
+          90,
+          220
+        ],
+        [
+          92,
+          222
+        ],
+        [
+          94,
+          224
+        ],
+        [
+          96,
+          226
+        ],
+        [
+          98,
+          228
+        ],
+        [
+          100,
+          230
+        ],
+        [
+          102,
+          232
+        ],
+        [
+          104,
+          234
+        ],
+        [
+          106,
+          236
+        ],
+        [
+          108,
+          238
+        ],
+        [
+          110,
+          240
+        ],
+        [
+          112,
+          242
+        ],
+        [
+          114,
+          244
+        ],
+        [
+          116,
+          246
+        ],
+        [
+          118,
+          248
+        ],
+        [
+          120,
+          250
+        ],
+        [
+          122,
+          252
+        ],
+        [
+          124,
+          254
+        ],
+        [
+          126,
+          256
+        ],
+        [
+          128,
+          258
+        ]
+      ],
+      "cut_capacity": 65,
+      "cut_tags": [
+        [
+          "interval",
+          0
+        ],
+        [
+          "interval",
+          1
+        ],
+        [
+          "interval",
+          2
+        ],
+        [
+          "interval",
+          3
+        ],
+        [
+          "interval",
+          4
+        ],
+        [
+          "interval",
+          5
+        ],
+        [
+          "interval",
+          6
+        ],
+        [
+          "interval",
+          7
+        ],
+        [
+          "interval",
+          8
+        ],
+        [
+          "interval",
+          9
+        ],
+        [
+          "interval",
+          10
+        ],
+        [
+          "interval",
+          11
+        ],
+        [
+          "interval",
+          12
+        ],
+        [
+          "interval",
+          13
+        ],
+        [
+          "interval",
+          14
+        ],
+        [
+          "interval",
+          15
+        ],
+        [
+          "interval",
+          16
+        ],
+        [
+          "interval",
+          17
+        ],
+        [
+          "interval",
+          18
+        ],
+        [
+          "interval",
+          19
+        ],
+        [
+          "interval",
+          20
+        ],
+        [
+          "interval",
+          21
+        ],
+        [
+          "interval",
+          22
+        ],
+        [
+          "interval",
+          23
+        ],
+        [
+          "interval",
+          24
+        ],
+        [
+          "interval",
+          25
+        ],
+        [
+          "interval",
+          26
+        ],
+        [
+          "interval",
+          27
+        ],
+        [
+          "interval",
+          28
+        ],
+        [
+          "interval",
+          29
+        ],
+        [
+          "interval",
+          30
+        ],
+        [
+          "interval",
+          31
+        ],
+        [
+          "interval",
+          32
+        ],
+        [
+          "interval",
+          33
+        ],
+        [
+          "interval",
+          34
+        ],
+        [
+          "interval",
+          35
+        ],
+        [
+          "interval",
+          36
+        ],
+        [
+          "interval",
+          37
+        ],
+        [
+          "interval",
+          38
+        ],
+        [
+          "interval",
+          39
+        ],
+        [
+          "interval",
+          40
+        ],
+        [
+          "interval",
+          41
+        ],
+        [
+          "interval",
+          42
+        ],
+        [
+          "interval",
+          43
+        ],
+        [
+          "interval",
+          44
+        ],
+        [
+          "interval",
+          45
+        ],
+        [
+          "interval",
+          46
+        ],
+        [
+          "interval",
+          47
+        ],
+        [
+          "interval",
+          48
+        ],
+        [
+          "interval",
+          49
+        ],
+        [
+          "interval",
+          50
+        ],
+        [
+          "interval",
+          51
+        ],
+        [
+          "interval",
+          52
+        ],
+        [
+          "interval",
+          53
+        ],
+        [
+          "interval",
+          54
+        ],
+        [
+          "interval",
+          55
+        ],
+        [
+          "interval",
+          56
+        ],
+        [
+          "interval",
+          57
+        ],
+        [
+          "interval",
+          58
+        ],
+        [
+          "interval",
+          59
+        ],
+        [
+          "interval",
+          60
+        ],
+        [
+          "interval",
+          61
+        ],
+        [
+          "interval",
+          62
+        ],
+        [
+          "interval",
+          63
+        ],
+        [
+          "beta",
+          129
+        ]
+      ],
+      "cost_potential_certificate": true,
+      "augmentations": [
+        {
+          "cost": 4355,
+          "residual_arc_count": 260,
+          "new_beta": 1,
+          "reversed_links": 0
+        }
+      ]
+    },
+    "nonmaximum_core": {
+      "accepted": true,
+      "value": 4,
+      "fee": 2,
+      "new_links": 2,
+      "certificates": [
+        {
+          "kind": "interval",
+          "owners": [
+            3
+          ],
+          "links": [],
+          "interval": 1,
+          "value": 1,
+          "witness": 3
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            0
+          ],
+          "links": [],
+          "interval": 2,
+          "value": 1,
+          "witness": 0
+        },
+        {
+          "kind": "fork",
+          "owners": [
+            1,
+            2,
+            4
+          ],
+          "links": [
+            [
+              2,
+              8
+            ],
+            [
+              4,
+              9
+            ]
+          ],
+          "interval": 0,
+          "value": 2,
+          "beta": 4,
+          "witness": 4
+        }
+      ],
+      "paid": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "used": [
+        0,
+        1,
+        2
+      ],
+      "old_value": 1,
+      "old_paid": [
+        0
+      ],
+      "old_used": [
+        0
+      ],
+      "old_beta": [],
+      "fresh": [
+        1,
+        2
+      ],
+      "used_beta": [
+        4
+      ],
+      "fresh_beta": [
+        4
+      ],
+      "selected_new": [
+        [
+          2,
+          8
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "cut_capacity": 4,
+      "cut_tags": [
+        [
+          "interval",
+          0
+        ],
+        [
+          "interval",
+          1
+        ],
+        [
+          "interval",
+          2
+        ],
+        [
+          "beta",
+          4
+        ]
+      ],
+      "cost_potential_certificate": true,
+      "augmentations": [
+        {
+          "cost": 0,
+          "residual_arc_count": 3,
+          "new_beta": 0,
+          "reversed_links": 0
+        },
+        {
+          "cost": 4,
+          "residual_arc_count": 4,
+          "new_beta": 1,
+          "reversed_links": 0
+        },
+        {
+          "cost": 4,
+          "residual_arc_count": 7,
+          "new_beta": 0,
+          "reversed_links": 0
+        }
+      ]
+    }
+  },
+  "physical": [
+    {
+      "copies": 1,
+      "mixed_head_regression": {
+        "copies": 1,
+        "shape": [
+          28,
+          24
+        ],
+        "old_payment": 3,
+        "new_payment": 4,
+        "old_used_retained": 3,
+        "fresh_units": 1,
+        "new_links": 2,
+        "fee": 5,
+        "cut_capacity": 4,
+        "cost_potential_certificate": true,
+        "production": false,
+        "example_certificate": {
+          "certificates": [
+            {
+              "kind": "interval",
+              "owners": [
+                11,
+                12
+              ],
+              "links": [
+                [
+                  [
+                    5,
+                    19
+                  ],
+                  [
+                    5,
+                    18
+                  ]
+                ]
+              ],
+              "interval": [
+                5,
+                10,
+                10
+              ],
+              "value": 1,
+              "witness": 11
+            },
+            {
+              "kind": "interval",
+              "owners": [
+                7,
+                8
+              ],
+              "links": [
+                [
+                  [
+                    5,
+                    6
+                  ],
+                  [
+                    5,
+                    5
+                  ]
+                ]
+              ],
+              "interval": [
+                5,
+                12,
+                12
+              ],
+              "value": 1,
+              "witness": 7
+            },
+            {
+              "kind": "interval",
+              "owners": [
+                6
+              ],
+              "links": [],
+              "interval": [
+                7,
+                6,
+                6
+              ],
+              "value": 1,
+              "witness": 6
+            },
+            {
+              "kind": "interval",
+              "owners": [
+                14,
+                20
+              ],
+              "links": [
+                [
+                  [
+                    24,
+                    17
+                  ],
+                  [
+                    24,
+                    18
+                  ]
+                ]
+              ],
+              "interval": [
+                7,
+                13,
+                13
+              ],
+              "value": 1,
+              "witness": 14
+            }
+          ],
+          "used_units": [
+            {
+              "id": [
+                5,
+                10,
+                10
+              ],
+              "cells": [
+                [
+                  10,
+                  10
+                ],
+                [
+                  11,
+                  10
+                ]
+              ],
+              "old": true
+            },
+            {
+              "id": [
+                5,
+                12,
+                12
+              ],
+              "cells": [
+                [
+                  10,
+                  12
+                ],
+                [
+                  11,
+                  12
+                ]
+              ],
+              "old": false
+            },
+            {
+              "id": [
+                7,
+                6,
+                6
+              ],
+              "cells": [
+                [
+                  14,
+                  6
+                ],
+                [
+                  15,
+                  6
+                ]
+              ],
+              "old": true
+            },
+            {
+              "id": [
+                7,
+                13,
+                13
+              ],
+              "cells": [
+                [
+                  14,
+                  13
+                ],
+                [
+                  15,
+                  13
+                ]
+              ],
+              "old": true
+            }
+          ]
+        }
+      },
+      "new_beta_payment": 4,
+      "old_payment": 3,
+      "old_intervals_retained": 3,
+      "fresh_intervals": 0,
+      "fresh_whole_betas": 1,
+      "new_links": 1,
+      "fee": 1,
+      "example_certificate": [
+        {
+          "kind": "interval",
+          "owners": [
+            8,
+            11
+          ],
+          "links": [
+            [
+              [
+                5,
+                17
+              ],
+              [
+                5,
+                18
+              ]
+            ]
+          ],
+          "interval": [
+            5,
+            10,
+            10
+          ],
+          "value": 1,
+          "witness": 11
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            6
+          ],
+          "links": [],
+          "interval": [
+            7,
+            6,
+            6
+          ],
+          "value": 1,
+          "witness": 6
+        },
+        {
+          "kind": "interval",
+          "owners": [
+            14,
+            20
+          ],
+          "links": [
+            [
+              [
+                24,
+                17
+              ],
+              [
+                24,
+                18
+              ]
+            ]
+          ],
+          "interval": [
+            7,
+            13,
+            13
+          ],
+          "value": 1,
+          "witness": 14
+        },
+        {
+          "kind": "beta",
+          "owners": [
+            4,
+            12
+          ],
+          "links": [
+            [
+              [
+                5,
+                19
+              ],
+              [
+                5,
+                20
+              ]
+            ]
+          ],
+          "interval": null,
+          "value": 1,
+          "beta": 4
+        }
+      ]
+    },
+    {
+      "copies": 2,
+      "mixed_head_regression": {
+        "copies": 2,
+        "shape": [
+          58,
+          24
+        ],
+        "old_payment": 6,
+        "new_payment": 8,
+        "old_used_retained": 6,
+        "fresh_units": 2,
+        "new_links": 4,
+        "fee": 10,
+        "cut_capacity": 8,
+        "cost_potential_certificate": true,
+        "production": false,
+        "example_certificate": {}
+      },
+      "new_beta_payment": 8,
+      "old_payment": 6,
+      "old_intervals_retained": 6,
+      "fresh_intervals": 0,
+      "fresh_whole_betas": 2,
+      "new_links": 2,
+      "fee": 2,
+      "example_certificate": null
+    },
+    {
+      "copies": 4,
+      "mixed_head_regression": {
+        "copies": 4,
+        "shape": [
+          118,
+          24
+        ],
+        "old_payment": 12,
+        "new_payment": 16,
+        "old_used_retained": 12,
+        "fresh_units": 4,
+        "new_links": 8,
+        "fee": 20,
+        "cut_capacity": 16,
+        "cost_potential_certificate": true,
+        "production": false,
+        "example_certificate": {}
+      },
+      "new_beta_payment": 16,
+      "old_payment": 12,
+      "old_intervals_retained": 12,
+      "fresh_intervals": 0,
+      "fresh_whole_betas": 4,
+      "new_links": 4,
+      "fee": 4,
+      "example_certificate": null
+    },
+    {
+      "copies": 16,
+      "mixed_head_regression": {
+        "copies": 16,
+        "shape": [
+          478,
+          24
+        ],
+        "old_payment": 48,
+        "new_payment": 64,
+        "old_used_retained": 48,
+        "fresh_units": 16,
+        "new_links": 32,
+        "fee": 80,
+        "cut_capacity": 64,
+        "cost_potential_certificate": true,
+        "production": true,
+        "example_certificate": {}
+      },
+      "new_beta_payment": 64,
+      "old_payment": 48,
+      "old_intervals_retained": 48,
+      "fresh_intervals": 0,
+      "fresh_whole_betas": 16,
+      "new_links": 16,
+      "fee": 16,
+      "example_certificate": null
+    }
+  ],
+  "proof": "docs/NEW_BETA_IDENTITY_SAFE_AUGMENTATION.md",
+  "scope": "Arbitrary new actual links, including newly reachable beta; maximum payment/minimum actual fee/then minimum new links retain all old paid alphas, original intervals and whole-beta credits. Shortest residual paths break cost ties by residual arc count, preserving beta normality after EVERY augmentation.",
+  "limitations": [
+    "Full flow/normalization theorem has a general written proof, not end-to-end Lean.",
+    "New-beta transport and tie control are abstract canonical systems; physical new-beta controls instantiate the theorem on the existing frozen board, not a newly discovered unrestricted compensation improvement.",
+    "No universal geometric 5/6 improvement."
+  ]
+}

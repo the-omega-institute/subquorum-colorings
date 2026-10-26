@@ -1,5 +1,12 @@
 # General mixed-head repair: retained original units and deficient-tree relays
 
+**Continuation:** [new-beta identity-safe augmentation](NEW_BETA_IDENTITY_SAFE_AUGMENTATION.md)
+removes this note's beta guard. A minimum-residual-arc tie among cheapest
+augmentations keeps beta normalization at every step, retaining old interval
+IDs without substitution. Net gain now counts fresh intervals plus new beta
+credits. The guarded theorem and relay obstructions below remain valid;
+new-beta normalization is no longer an unresolved step.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Independent research continuation.
 
 We remove the disjoint-stem-pair, deficient-donor and nondeficient-receiver
