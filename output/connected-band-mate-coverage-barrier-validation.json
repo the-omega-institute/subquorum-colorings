@@ -1,0 +1,244 @@
+{
+  "status": "PASS",
+  "counts": {
+    "exact_vertex_and_mate_coverage_checks": 6054,
+    "exact_period_window_checks": 4,
+    "finite_connected_chain_controls": 18
+  },
+  "period_scaled_by92": [
+    {
+      "site": [
+        2,
+        3
+      ],
+      "t": 92,
+      "o": 92
+    },
+    {
+      "site": [
+        2,
+        5
+      ],
+      "t": 0,
+      "o": 92
+    },
+    {
+      "site": [
+        3,
+        3
+      ],
+      "t": 0,
+      "o": 67
+    },
+    {
+      "site": [
+        3,
+        4
+      ],
+      "t": 56,
+      "o": 92
+    },
+    {
+      "site": [
+        3,
+        5
+      ],
+      "t": 0,
+      "o": 61
+    },
+    {
+      "site": [
+        4,
+        0
+      ],
+      "t": 36,
+      "o": 54
+    },
+    {
+      "site": [
+        4,
+        1
+      ],
+      "t": 38,
+      "o": 56
+    },
+    {
+      "site": [
+        4,
+        2
+      ],
+      "t": 36,
+      "o": 54
+    },
+    {
+      "site": [
+        4,
+        3
+      ],
+      "t": 47,
+      "o": 56
+    },
+    {
+      "site": [
+        4,
+        4
+      ],
+      "t": 36,
+      "o": 36
+    },
+    {
+      "site": [
+        4,
+        5
+      ],
+      "t": 53,
+      "o": 56
+    },
+    {
+      "site": [
+        5,
+        0
+      ],
+      "t": 55,
+      "o": 56
+    },
+    {
+      "site": [
+        5,
+        1
+      ],
+      "t": 54,
+      "o": 54
+    },
+    {
+      "site": [
+        5,
+        2
+      ],
+      "t": 49,
+      "o": 56
+    },
+    {
+      "site": [
+        5,
+        3
+      ],
+      "t": 54,
+      "o": 70
+    },
+    {
+      "site": [
+        5,
+        4
+      ],
+      "t": 56,
+      "o": 56
+    },
+    {
+      "site": [
+        5,
+        5
+      ],
+      "t": 54,
+      "o": 58
+    }
+  ],
+  "bulk_charge": "891/46",
+  "omission_charge": "101/23",
+  "boundary_endpoint_reduction": "1/23",
+  "all_m_charge": "(891m-204)/46",
+  "gap_above_18m_minus2": "(63m-112)/46>0 for m>=2",
+  "samples": [
+    {
+      "m": 2,
+      "charge": "789/23",
+      "gap_above_18m_minus2": "7/23"
+    },
+    {
+      "m": 3,
+      "charge": "2469/46",
+      "gap_above_18m_minus2": "77/46"
+    },
+    {
+      "m": 4,
+      "charge": "1680/23",
+      "gap_above_18m_minus2": "70/23"
+    },
+    {
+      "m": 5,
+      "charge": "4251/46",
+      "gap_above_18m_minus2": "203/46"
+    },
+    {
+      "m": 6,
+      "charge": "2571/23",
+      "gap_above_18m_minus2": "133/23"
+    },
+    {
+      "m": 7,
+      "charge": "6033/46",
+      "gap_above_18m_minus2": "329/46"
+    },
+    {
+      "m": 8,
+      "charge": "3462/23",
+      "gap_above_18m_minus2": "196/23"
+    },
+    {
+      "m": 9,
+      "charge": "7815/46",
+      "gap_above_18m_minus2": "455/46"
+    },
+    {
+      "m": 10,
+      "charge": "4353/23",
+      "gap_above_18m_minus2": "259/23"
+    },
+    {
+      "m": 11,
+      "charge": "9597/46",
+      "gap_above_18m_minus2": "581/46"
+    },
+    {
+      "m": 12,
+      "charge": "228",
+      "gap_above_18m_minus2": "14"
+    },
+    {
+      "m": 13,
+      "charge": "11379/46",
+      "gap_above_18m_minus2": "707/46"
+    },
+    {
+      "m": 14,
+      "charge": "6135/23",
+      "gap_above_18m_minus2": "385/23"
+    },
+    {
+      "m": 15,
+      "charge": "13161/46",
+      "gap_above_18m_minus2": "833/46"
+    },
+    {
+      "m": 16,
+      "charge": "7026/23",
+      "gap_above_18m_minus2": "448/23"
+    },
+    {
+      "m": 32,
+      "charge": "14154/23",
+      "gap_above_18m_minus2": "952/23"
+    },
+    {
+      "m": 64,
+      "charge": "28410/23",
+      "gap_above_18m_minus2": "1960/23"
+    },
+    {
+      "m": 128,
+      "charge": "56922/23",
+      "gap_above_18m_minus2": "3976/23"
+    }
+  ],
+  "scope": "General written all-m rational witness for the previously stated local occupation/degree/star/four-window system PLUS every basic mate-coverage inequality (o_v-t_v)<=oldPCount_v+sum_neighbour(o_u-t_u). At bottom-right site seto=t; all other values periodic. Still has bulk slope891/46>18, so these local mate constraints do not suffice for any bound18m+B with fixedB. Not an actual fractional edge matching, not integer or completely frozen, and not a whole-board counterexample; joint edge capacities, integrality and boundary/freezing structure remain open. This strengthening is separate from the earlier Oracle review scope."
+}

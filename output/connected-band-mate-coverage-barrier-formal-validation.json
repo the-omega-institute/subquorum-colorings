@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T13:03:38.019324+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "29%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "29%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.ConnectedBandMateCoverageBarrier.bulk_and_windows' does not depend on any axioms",
+    "'SubQuorum.ConnectedBandMateCoverageBarrier.patched_boundary_constraints' does not depend on any axioms",
+    "'SubQuorum.ConnectedBandMateCoverageBarrier.period_omission_and_patch' does not depend on any axioms",
+    "'SubQuorum.ConnectedBandMateCoverageBarrier.all_m_positive_gap' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "scope": "Three axiom-free kernel checks establish all17 scaled92 periodic bounds/anchors/wedges/full-degree/stars/basic mate-coverage and four window cuts, six patched boundary types and period/omission/endpoint sums. All-m positive gap arithmetic is proved over integers.",
+  "not_formalized": [
+    "All-m geometric coordinate reduction to periodic/boundary cases and charge adapter are general written proofs with exact Python controls. Not an actual fractional edge matching, integer or frozen configuration, or a whole-board counterexample. Outside the companion Oracle review input."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

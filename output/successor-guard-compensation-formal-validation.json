@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T12:45:44.530658+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "29%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "29%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.SuccessorGuardCompensation.gf_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.gf_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.f_identity' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.f_occupation_bound' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.f_equality_data' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.f_matching_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.successor_isolate_injective' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.successor_component_sum' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.successor_permissions_cancel' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.successor_margin' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.periodic_local_constraints' does not depend on any axioms",
+    "'SubQuorum.SuccessorGuardCompensation.periodic_window_constraints' does not depend on any axioms",
+    "'SubQuorum.SuccessorGuardCompensation.periodic_charge_and_omission' does not depend on any axioms",
+    "'SubQuorum.SuccessorGuardCompensation.periodic_boundary_constraints' does not depend on any axioms",
+    "'SubQuorum.SuccessorGuardCompensation.connected_fractional_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.sharp_f_patch_count' depends on axioms: [propext, Quot.sound]",
+    "'SubQuorum.SuccessorGuardCompensation.integer_counterexample_feasible' does not depend on any axioms",
+    "'SubQuorum.SuccessorGuardCompensation.integer_counterexample_retains_baseline' does not depend on any axioms",
+    "'SubQuorum.SuccessorGuardCompensation.integer_counterexample_charge' does not depend on any axioms"
+  ],
+  "scope": "Universal G/F13-site weighted identity and capacity16; f-only10-site identity, occupation13 equality data and actual-mate-coverage capacity12; successor-isolate injectivity, all-k component counts and permission cancellation; sharp patch counts. Kernel decides all17 integer-scaled periodic local constraints, four window cuts, five boundary types and period/omission sums; all-m positive fractional gap arithmetic. Three additional kernel checks verify the explicit6x22 counterexample grid feasibility/matching, supplied retainedR/P0 inclusion and component35/whole55 charges.",
+  "not_formalized": [
+    "All-k grid/free-graph coordinate classification, actual-matching boundary adapter, successor slot cover, original-tile token allocation, explicit patch freezing geometry and finite-chain/periodic adapter remain written general proofs with executable checks. No end-to-end all-k grid theorem. The explicit6x22 retainedR/P0 lists are supplied as concrete constants; their original-family/connected-component adapter and non-complete freezing remain Python/written. Fractional witness and actual integer counterexample have separate scopes; the latter refutes only the non-frozen permissions component cut."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

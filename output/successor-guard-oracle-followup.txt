@@ -1,0 +1,135 @@
+ACCEPTI find no blocking mathematical error in the successor-ownership theorem, the all-length rational relaxation barrier, or the actual  $6\times22$  counterexample. In particular, the supplied integer configuration really does refute
+$$Q(C_2)\le 34$$
+in the permissions-based class with arbitrary actual rematching and every old endpoint retained. Its component contribution is  $35/2$ , and that half-unit cannot be rounded down independently.The scope distinctions in the note are correct: the configuration is not completely frozen, has whole-board objective  $55<65$ , and restores one permitted selection. It therefore does not refute the completely-frozen version of the component cut, the whole-board frontier, or a different statement requiring actual deletion of every permitted selection.This is a mathematical review of the supplied text, coordinates, and original-family definition. I did not execute Python or Lean. I treat the earlier boundary-pocket bounds, older local cuts, sharp completion, and  $g$ -withdrawal attainers as the declared dependencies; their proofs and reported execution results are not new results established by this review.1. The actual fixture agrees with the original familyExpanding family(3, False) gives the following original selections:RowColumns of  $T_0$  $0$  $1,3,5,7,9,11,13,15,17,19,21$  $1$  $2,4,8,10,14,16,20$  $2$  $0$  $3$  $1,9,15,21$  $4$  $6,8,12,14,18,20$  $5$ NoneThus  $|T_0|=29=8k+5$ . The five permissions are precisely
+$$g_0=(3,9),\quad g_1=(3,15),\quad
+h_0=(4,8),\quad h_1=(4,14),\quad f_0=(4,12).$$
+Removing these gives exactly the fixture’s 24-site retained_T list.For general  $k$ , the original matching obtained from the supplied definition consists of the cap edge
+$$(1,1)--(2,1)$$
+and, for  $0\le j<k$ , the four edges
+$$\begin{aligned}
+&(1,5+6j)--(1,6+6j),\\
+&(1,7+6j)--(2,7+6j),\\
+&(2,6+6j)--(3,6+6j),\\
+&(3,7+6j)--(3,8+6j).
+\end{aligned}$$
+These have distinct endpoints. Consequently
+$$|M_0|=4k+1,\qquad |P_0|=8k+2.$$
+At  $k=3$ , all seven edges described as removed in §2.3 really belong to this matching.The final matching has no endpoint reuseThe six original edges that remain are
+$$\begin{aligned}
+&(1,1)--(2,1), &&(1,17)--(1,18),\\
+&(1,19)--(2,19), &&(2,6)--(3,6),\\
+&(2,18)--(3,18), &&(3,19)--(3,20).
+\end{aligned}$$
+Together with the eleven listed added edges, these give exactly the fixture’s final matching.Every listed edge is an orthogonal unit grid edge. Their 34 endpoints are pairwise distinct and disjoint from  $T$ . Every old endpoint remains covered, and the new endpoints are exactly
+$$P\setminus P_0=
+\{(2,5),(2,11),(2,17),(3,9),(3,17),
+  (4,12),(4,13),(4,14)\}.$$
+Hence
+$$|M|=13-7+11=17,\qquad |P|=34.$$
+The fourteen sites of  $A$  are distinct and disjoint from  $R$ , so
+$$|T|=24+14=38.$$
+The actual states of the permitted sites are worth displaying because they establish the precise quantifier under which the example works:Permitted siteActual state $g_0=(3,9)$ Endpoint $g_1=(3,15)$ Blank $h_0=(4,8)$ Selected $h_1=(4,14)$ Endpoint $f_0=(4,12)$ EndpointIn particular,  $h_0$  is restored. The example satisfies  $R\subseteq T$ , but it does not satisfy a requirement that all five permitted sites cease to be selections.Every selection satisfies the degree conditionThe occupied-neighbour counts of the fourteen added selections, in the stated order, are indeed
+$$1,0,1,1,1,1,1,0,1,1,1,1,1,1.$$
+For the 24 retained selections, twenty have one occupied neighbour and four have none. The four with none are the row-zero selections at columns  $3,9,15,21$ . Every retained row-one selection and every retained selection below row one has exactly one occupied neighbour.Thus the feasibility claim holds for all 38 selections, not merely for  $A$ .2. The  $C_2$  adapter and the extra half-unit are correctDirectly deriving the available sites from the supplied  $R$  and  $P_0$  gives the following disjoint decomposition:The fixed fifteen-site pocket.The stated thirty-site  $C_2$ .The two isolates  $(5,19)$  and  $(5,21)$ .The pocket is explicitlyRowPocket columns $2$  $3,5$  $3$  $3,4,5$  $4$  $0,2,3,4$  $5$  $0,1,2,3,4,5$ The thirty sites listed for  $C_2$  are exactly the specialization of the displayed  $C_m$  formula to  $m=2$ . Its bottom band connects all upper branches. There are no free edges between this component, the pocket, and the two isolates.Inside  $C_2$ , the selections are exactly  $A$ , and the endpoints are exactly
+$$(2,11),(2,17),(3,9),(3,17),(4,12),(4,13),(4,14).$$
+Therefore
+$$Q(C_2)=2\cdot14+7=35>34.$$
+This is an actual matching counterexample, not merely an occupation pattern.The boundary matching explains why local rounding failsFive component endpoints have mates in  $P_0$ :
+$$\begin{aligned}
+&(2,11)--(1,11),\\
+&(3,9)--(3,8),\\
+&(4,12)--(3,12),\\
+&(4,13)--(3,13),\\
+&(4,14)--(3,14).
+\end{aligned}$$
+The remaining two component endpoints form the internal edge
+$$(2,17)--(3,17).$$
+The one new pocket endpoint is  $(2,5)$ , matched to  $(1,5)\in P_0$ .Thus the exact objective decomposition is
+$$\begin{aligned}
+|T|+|M|
+&=|R|+\frac{|P_0|}{2}
+  +\frac{Q(C_2)}2+\frac{Q(\text{pocket})}2\\
+&=24+13+\frac{35}{2}+\frac12\\
+&=55.
+\end{aligned}$$
+The two isolates contribute zero in this fixture.This calculation directly exhibits the issue with the proposed component cut: the component contributes  $17.5$ , while the pocket supplies the other half needed for an integer whole-board objective. There is no valid reason to replace  $17.5$  by  $17$  at the component boundary.The example is also consistent with the listed local window cuts. Using their module placements, the contained windows have these integer charges:Window $c=9$  $c=15$ Old  $h7$  $8$  $7$ Old  $gh13$  $14$  $15$ New  $f10$  $10$ Not containedNew  $gf13$  $15$ Not containedThus the counterexample does not depend on violating one of those local cuts.3. The claimed 23/11 freezing partition checks outUsing the strict witness convention encoded by the supplied CORE_WITNESSES—a witness is selected, or is an endpoint whose actual mate froze at a strictly earlier rank—the following ranks produce exactly the claimed 23 frozen endpoints:RankEndpoints $0$  $(1,1),(2,1),(1,5),(1,7),(1,11),(1,13),(1,17),(1,19),(3,9),(4,12),(4,14),(3,20)$  $1$  $(2,6),(2,12),(2,18),(3,18),(3,13)$  $2$  $(3,7),(3,17),(2,19),(3,19)$  $3$  $(1,18)$  $4$  $(2,17)$ For example: $(2,6)$  uses neighbours  $(1,6)$  and  $(2,5)$ , whose actual mates  $(1,7)$  and  $(1,5)$  have rank zero. $(3,7)$  uses neighbours  $(3,6)$  and  $(3,8)$ , whose mates  $(2,6)$  and  $(3,9)$  have ranks one and zero. $(1,18)$  uses neighbours  $(1,19)$  and  $(2,18)$ , whose mates  $(2,19)$  and  $(3,18)$  have ranks two and one. $(2,17)$  uses neighbours  $(1,17)$  and  $(2,18)$ , whose mates  $(1,18)$  and  $(3,18)$  have ranks three and one.The remaining eleven endpoints are exactly the fixture’s unfrozen_endpoints. After this closure,  $(3,6)$  and  $(3,8)$  each have only one qualifying witness, and the other nine remaining endpoints have none. Thus this is the full closure, not merely a partial freezing certificate.The simpler obstruction at  $(2,5)$  is also correct: its only occupied neighbours are its own mate  $(1,5)$  and  $(2,6)$ . Its mate cannot supply a strict witness for freezing  $(2,5)$ , so it can never acquire two admissible witnesses.The resulting scope is therefore:StatementStatus established by the fixture $Q(C_2)\le34$  under arbitrary rematching and permissionsRefutedThe same cut restricted to completely frozen configurationsNot refutedThe whole-board candidate bound  $65$ Not refuted; actual objective is  $55$ The half-area bound  $66$ Not refutedA statement requiring all permitted selections actually deletedNot addressed by this fixture4. The successor-ownership theorem survives arbitrary rematchingThe essential accounting identity should be read with
+$$X=T\setminus R,\qquad Y=P\setminus P_0.$$
+Then
+$$|T|+|M|
+=
+|R|+\frac{|P_0|}{2}+|X|+\frac{|Y|}{2}.$$
+This identity does not depend on which endpoints are matched to which. A permitted old selection that is restored belongs to  $X$ , and is counted once. A new endpoint is counted at its own vertex even if its mate lies in  $P_0$ .That is the correct foundation for the arbitrary-rematching claim.The successor cover is geometrically soundFrom the original-family definition:Releasing  $g_i$  adds exactly  $d_i,g_i,b_i$ .Releasing  $f_i$  adds exactly  $x_i,f_i,z_i$ .These release sets are pairwise disjoint.The successor isolates  $R_i=(5,13+6i)$  are distinct.The unassigned isolates are exactly  $(5,7)$  and  $(5,6k+3)$ .The retained  $h_i$ , the next retained  $h$ , and the terminal guard give the stated separating blanks. The free-coordinate count is consequently
+$$15+7(k-1)+2+3|G|+3|F|
+=
+7k+10+3|G|+3|F|.$$
+Crucially, retaining  $P_0$  preserves every saturation argument used to force a blank, even when those old endpoints change mates. The cover does not silently require preservation of  $M_0$ .The ten-site certificate is correctThe displayed region has ten vertices and eleven internal edges, hence cycle rank two. The revised cyclic-region wording is appropriate.Collecting coefficients in §1.2 gives exactly
+$$B=Q+o_a-t_a,\qquad B\le13.$$
+Since  $t_a\le o_a$ , this implies  $Q\le13$ .The equality exclusion is valid. Equality forces  $s$  to be an endpoint and all three of its grid neighbours  $a,l,r$  to be selected. There is no fourth neighbour, no old endpoint neighbour, and no possible mate outside the window.The statement that there are exactly two charge-13 integer occupations before imposing matching coverage can also be checked from the equality conditions. Both have
+$$a,l,r,R,f\in T,\qquad s\in P,\qquad x,z\text{ blank},$$
+with either: $u$  blank and  $v$  selected; or $u,v$  both endpoints.Both fail at the unmatched endpoint  $s$ . Thus  $Q\le12$  genuinely uses actual matching coverage and remains valid when outside mates are generally allowed.The thirteen-site certificate is correctCoefficient collection gives coefficient three on every selection variable except  $t_x,t_r$ , which have coefficient two; it gives coefficient three on every occupation variable except  $o_x,o_r$ , which have coefficient four. Therefore
+$$A+t_x+t_r=3Q+o_x+o_r$$
+is exact. The weighted right sides sum to  $50$ , so
+$$3Q\le A\le50.$$
+Integral  $Q$  yields  $Q\le16$ .All anchors used here correspond to retained old endpoints, and all wedges are actual grid wedges. Neither complete freezing nor internal matching of all region endpoints is assumed.The global cancellation and rounding are correctThe retained contribution is
+$$|R|+\frac{|P_0|}{2}=12k+6-|G|-|F|.$$
+The slot bounds are  $5,7,6,8$ , equivalently
+$$5+2\mathbf1_G+\mathbf1_F.$$
+Adding the pocket bound and two isolates gives
+$$|T|+|M|
+\le17k+12+|G|+\frac12.$$
+Since the whole objective is integral,
+$$|T|+|M|\le17k+12+|G|.$$
+There is exactly one global rounding. No component half-unit is discarded during the sum.Sharpness transfers correctly from the stated earlier  $g$ -withdrawal attainer: because that attainer retains all  $f_i$ , it satisfies the weaker retention requirement for every  $F$ . This is precisely where “permissions, not forced deletion” matters.5. The compensation allocation and actual- $f$ -deletion patch are soundFor the fixed disjoint original  $2\times2$  tile partition,
+$$\sum_D c(D)=\operatorname{area}-2|T|-|P|.$$
+Theorem 1 gives
+$$\sum_D c(D)\ge2(k-|G|).$$
+The top-strip charge remains  $1-k$ , because the upper-bound geometry permits no new occupied sites in rows zero and one. Therefore the exterior net charge satisfies
+$$C^+-C^-\ge3k-1-2|G|
+=(k-1)+2(k-|G|).$$
+Labelling positive exterior half-units by  $(D,j)$ , then assigning distinct labels to exterior negative half-units and the  $k-1$  net strip half-demands, leaves at least  $2(k-|G|)$  unused labels. This is a valid global injection with no token reuse.The note appropriately limits this conclusion: it supplies neither direction-constrained routing nor a reserve of whole units inside individual original tiles.The §1.6 patch is also consistent with the original witness coordinates:Distinct patches have horizontal separation six, so their new edges and altered certificates do not collide.Each  $z_i$  has the two stated selected neighbours and freezes at rank zero.The altered original endpoint  $e_i=(3,c_i+3)$  is the translated CORE_WITNESSES entry at  $(3,3)$ , originally of rank one.Replacing its selected witness  $f_i$  by an endpoint whose mate  $z_i$  has rank zero preserves strictness.Each new  $f_i$  has only its own mate  $z_i$  and  $e_i$  as occupied neighbours, so  $f_i$  cannot freeze.The count change
+$$\Delta|T|=-|F|,\qquad \Delta|M|=|F|$$
+is correct. This patch’s failure of complete freezing does not conflict with the completely frozen permission attainers, which retain the permitted  $f_i$ . Nor does it establish that every maximizer with actual  $f$ -deletion has the same defect.6. The rational obstruction works for every stated chain lengthThe geometry in §2 gives row counts
+$$2m,\quad3m,\quad6m-3,\quad6m-1,$$
+so
+$$|C_m|=17m-4.$$
+The stated old- $P_0$  neighbour counts are correct, as are
+$$|R|=5m+14,\qquad |M_0|=4m+5.$$
+In this connected-family setting the two outside isolates are
+$$(5,6m+7),\qquad(5,6m+9).$$
+In particular,  $(5,7)$  has joined  $C_m$ ; it is no longer an outside isolate.Bulk and boundary substitutionsAll seventeen bulk types satisfy the selected-degree inequalities. Their slacks are zero except for:PhaseFull-degree slack $(2,3)$  $5/12$  $(2,5)$  $1/4$  $(3,3)$  $1/3$  $(3,5)$  $1/3$ The anchors hold. Checking the two largest free-neighbour occupation values at each phase verifies every ordinary wedge.The six bulk bottom-star charges, in residue order  $0,\ldots,5$ , are
+$$\frac{13}{3},\quad
+\frac{29}{6},\quad
+\frac{13}{3},\quad
+\frac{185}{36},\quad
+\frac{13}{3},\quad
+\frac{61}{12},$$
+all below six.The five listed boundary vertices are exactly the surviving vertices whose free-neighbour sets differ from their bulk types. Their full-degree slacks are indeed
+$$0,\quad0,\quad0,\quad\frac13,\quad\frac13.$$
+The note correctly avoids the invalid argument that full-degree inequalities automatically survive restriction.The window adapter has the necessary protection against outside matesFor clarity, the old  $h7$  window at  $c=9+6i$  has coordinates
+$$\{(4,c-1),(4,c+1)\}
+\cup\{(5,c-2),(5,c-1),(5,c),(5,c+1),(5,c+2)\}.$$
+Adding
+$$(2,c),(2,c+2),(3,c),(3,c+1),(3,c+2),(4,c)$$
+gives the corresponding old  $gh13$  window.These coordinate sets give the stated rational charges. In the note’s order, the four charges are
+$$\frac{533}{36},\qquad\frac{15}{2},\qquad
+\frac{59}{4},\qquad\frac{21}{2}.$$
+The important adapter statement is correct: for both matching-dependent equality exclusions, the distinguished endpoint  $s$  has its entire grid neighbourhood inside the window. An exterior mate cannot repair the equality case. For the weighted certificates, extra outside occupation only imposes additional feasibility restrictions; it does not invalidate an internal wedge or remove an old- $P_0$  anchor.The period sum and all-length conclusion are correctWith denominator  $36$ , the rowwise sums of  $t+o$  over a full period are
+$$108,\quad108,\quad218,\quad264,$$
+totalling  $698$ . The four omitted charges have numerators
+$$30+42+45+48=165.$$
+Hence
+$$Q_{\mathrm{frac}}(C_m)=\frac{698m-165}{36},$$
+and
+$$Q_{\mathrm{frac}}(C_m)-(18m-2)
+=\frac{50m-93}{36}.$$
+This is positive for every  $m\ge2$ , equals  $7/36$  at  $m=2$ , and exceeds one for every  $m\ge3$ .Therefore the stated real relaxation does not imply the proposed cut. Its bulk slope also rules out any uniform upper bound  $18m+B$  with fixed  $B$  throughout that relaxation.The qualification about matching constraints is necessary and correctly included. At  $l=(5,9+6j)$ ,
+$$p_l=\frac16,\qquad
+\sum_{u\sim l}p_u=\frac1{36}.$$
+The elementary matching-coverage inequality fails by  $5/36$ . Thus the rational construction does not establish that nonlocal constraints are necessary, or that every stronger local matching relaxation fails.7. Nonblocking precision editsNo theorem constant, fixture coordinate, matching edge, charge, or stated scope needs correction. I recommend the following small edits to make the geometry and accounting harder to misread:Define the increments explicitly. In §1.1 or §1.4 write
+$$\mathrm{newT}=T\setminus R,\qquad
+\mathrm{newP}=P\setminus P_0.$$
+This makes restored permitted selections unambiguous.Clarify the pocket ports. There are two pocket boundary vertices,  $(2,5)$  and  $(3,5)$ , but three edges to  $P_0$ :
+$$(2,5)--(1,5),\quad
+(2,5)--(2,6),\quad
+(3,5)--(3,6).$$
+“Two ports” should explicitly mean the two pocket vertices.Name the two outside isolates in §2. They are  $(5,6m+7)$  and  $(5,6m+9)$ . This prevents “the same pocket and two isolates” from being read as preserving the particular pair of isolates named in §1.Specify the tile partition in §1.5. The charge identity uses the fixed disjoint original  $2\times2$  partition. It would not mean the sum over all overlapping  $2\times2$  windows.Keep the older window coordinate sets readily available. The explicit  $h7/gh13$  coordinates above would make the contained-window adapter self-contained. Their established bounds should remain attributed to the earlier results.Finally, the validation disclosure is appropriately limited. The reported enumeration totals, board-control counts, Lean declaration count, and kernel checks remain reported execution evidence that I have not independently reproduced. The acceptance here rests on the mathematical certificates and coordinate audit; it does not upgrade the work to an end-to-end formal grid theorem.

@@ -1,0 +1,1111 @@
+Review the new mathematical note as a critical coauthor. Give a verdict ACCEPT / REVISE with specific mathematical flaws or missing hypotheses, focusing on correctness of Theorem1 successor ownership with arbitrary actual rematching and Section2 all-m fractional obstruction. Distinguish a proof-method barrier from an actual integer counterexample. Check boundary sites, local equality/mate exclusion, old-T withdrawals, no-double-use, and exact arithmetic. Prior results are provided as dependency context, not new claims to review. Do not claim to have executed code. The16 scoped Lean declarations and both stdlib checkers passed locally; the geometry remains a written proof, so independently scrutinize it. If there is an error, supply a precise correction. This is ONE manuscript review request.
+
+FILE docs/SUCCESSOR_GUARD_COMPENSATION_AND_CONNECTED_CUT_BARRIER.md
+# Successor ownership gives sharp compensation; connected bands need a stronger cut
+
+26 October 2026. Wenlin Zhang and Haobo Ma. Research note.
+
+We prove another exact compensation theorem for the occupied-strip family,
+including arbitrary actual rematching. A change of ownership of isolated
+sites avoids charging an additional loss for a second lower-guard family.
+We then give a rational obstruction, at every chain length, to proving the
+fully connected case from a specified collection of local inequalities.
+The obstruction concerns that proof method; it is not an integer grid
+counterexample or a disproof of the proposed numerical bound.
+
+## 1. Sharp successor-guard compensation theorem
+
+Use the b=1 family (T0,M0) on the 6-by-(6k+4) grid, k>=2, with
+P0=V(M0). Coordinates and its completely frozen sharp completion (T*,M0)
+are given in [the completion note](FROZEN_STRIP_SHARP_COMPLETION_AND_RESERVES.md).
+In particular |T0|=8k+5, |P0|=8k+2, |T*|=13k+11 and |M0|=4k+1.
+For 0<=i<=k-2 write
+
+    c_i=9+6i,
+    g_i=(3,c_i), h_i=(4,c_i-1), f_i=(4,c_i+3).
+
+The new f_i is the guard previously indexed (4,6+6j) with j=i+1.
+The leftmost guard (4,6) is excluded. Every h_i remains selected here.
+
+**Theorem 1.** Let G,F be arbitrary subsets of {0,...,k-2}. Let T,P be
+disjoint sets such that every vertex of T has at most one neighbour in
+T union P, and let M be an actual grid matching with endpoint set exactly P.
+Assume P0 is contained in P and
+
+    R = T0 minus {g_i:i in G} minus {f_i:i in F} is contained in T.
+
+Then
+
+    |T|+|M| <= 17k+12+|G| = area/2-(k-|G|).          (1)
+
+For every permissions pair G,F equality is attained by a completely frozen
+configuration. The construction is the earlier g-withdrawal attainer, which
+retains all f_i. Thus the maximum is exact, and adding any F permissions
+has zero further cost. Permissions do not require actual deletion.
+Old matching edges need not be retained; all old endpoints must be retained.
+No freezing assumption is needed for the upper bound.
+
+### 1.1 A disjoint cover using successor isolated sites
+
+Let U be the set of sites outside R union P0 not forced blank by a retained
+selection adjacent to P0. Every new selection and new endpoint lies in U.
+The old free graph had one fixed 15-site pocket, k-1 gate/star pairs, and
+k+1 isolated bottom sites. Instead of attaching the preceding isolate to
+slot i, attach its **successor**
+
+    R_i=(5,c_i+4)=(5,13+6i).
+
+The two unassigned isolates are (5,7) and (5,6k+3). Their columns lie outside
+the list 13,19,...,6k+1. The map i -> R_i is injective.
+
+For c=c_i use these names:
+
+    d=(2,c), u=(2,c+2),
+    g=(3,c), b=(3,c+1), v=(3,c+2),
+    a=(4,c+1), x=(4,c+2), f=(4,c+3),
+    l=(5,c), s=(5,c+1), r=(5,c+2), z=(5,c+3), R=(5,c+4).
+
+With neither permission, the slot is {u,v}, {a,l,s,r}, {R}. Removing g
+from the retained set adds exactly d,g,b. Removing f adds exactly x,f,z.
+The additions are independent. Retained h_i forces (4,c) blank, and the
+next retained h, or the terminal retained guard, forces (4,c+4) and
+(5,c+5) blank. Hence no free edge joins consecutive slots. The pocket and
+its two possible old-P0 boundary ports remain unchanged.
+
+This also proves the cover for every k: inspect rows2,3,4,5 using the
+displayed sites and blockers; rows0,1 have no newly available sites.
+The cases at the first and last slot leave exactly the two stated isolates.
+Thus U has 7k+10+3|G|+3|F| sites, and the four slot states are:
+
+| Permissions | Free pieces | Maximum doubled contribution |
+| --- | --- | --- |
+| neither | gate + star + successor isolate | 2+6+2=10 |
+| g only | old nine-site tree + successor isolate | 12+2=14 |
+| f only | ten-site tree {u,v,a,x,f,l,s,r,z,R} | 12 |
+| g and f | thirteen-site region with all displayed sites | 16 |
+
+Doubled contribution is Q=2 newT+newP, independent of the locations of
+actual mates. An endpoint is counted once at its own site, including when
+its mate is in P0. The first two capacities were proved in the
+[rematching note](WITHDRAWAL_REMATCHING_JOINT_BOUND.md); the next two follow below.
+
+### 1.2 The ten-site tree: matching removes the equality excess
+
+Write t_v,p_v for selection/endpoint indicators and o_v=t_v+p_v. For the
+ten sites, Q=sum(t_v+o_v). Add the following inequalities with weight one:
+
+    t_u=0;                     o_v<=1;
+    t_v+o_u<=1;                t_x+o_a+o_r<=2;
+    t_f+o_z<=1;                t_l<=1;
+    t_s+o_a+o_l<=2;            t_r+o_x+o_s<=2;
+    t_z+o_f+o_R<=2;            t_R<=1.
+
+If B is their summed left side, their right sides sum to13 and
+
+    B+t_a = Q+o_a.
+
+Since t_a<=o_a, Q<=B<=13. If Q=13, every displayed upper bound is tight
+and t_a=o_a. In particular t_l=t_R=1. The selected-subset bounds give
+o_l=o_R=1 and t_s+o_a=1.
+
+If t_s=1, then o_a=0. The genuine wedge t_s+o_l+o_r<=2 gives o_r=0,
+so the tight x wedge forces t_x=2, impossible. Hence t_s=0 and t_a=o_a=1.
+The wedge t_a+o_x+o_s<=2 gives o_x+o_s<=1; tightness at r forces
+t_r=1 and o_x+o_s=1. If o_s=0, then o_x=1. The wedge
+t_r+o_x+o_z<=2 forces o_z=0, while the tight f anchor forces t_f=1.
+This contradicts the other f anchor t_f+o_x<=1. Therefore o_s=1.
+
+Thus equality forces s to be an endpoint and a,l,r to be selected. Those
+are **all** possible occupied neighbours of s: it has no old endpoint
+neighbour or other grid neighbour in U. It has no endpoint mate, contrary
+to actual matching coverage. Consequently Q<=12.
+
+There are two feasible integer occupation patterns of charge13 if actual
+matching coverage is omitted. The matching assumption is essential here.
+
+### 1.3 Thirteen-site universal weighted certificate
+
+Use the thirteen names in Section1.1, and Q=sum(t+o). In addition to
+t_u=0 and t_x<=o_x, t_r<=o_r, use these nonnegative integer weights:
+
+| Weight | Inequality |
+| --- | --- |
+| 3 | t_g+o_d<=1 |
+| 3 | t_v+o_u<=1 |
+| 2 | t_f+o_x<=1 |
+| 1 | t_f+o_z<=1 |
+| 1 | t_b+o_g+o_v<=2 |
+| 2 | t_b+o_g+o_a<=2 |
+| 2 | t_a+o_b+o_x<=2 |
+| 1 | t_a+o_b+o_s<=2 |
+| 2 | t_x+o_v+o_r<=2 |
+| 1 | t_s+o_a+o_l<=2 |
+| 2 | t_s+o_l+o_r<=2 |
+| 2 | t_r+o_s+o_z<=2 |
+| 3 | t_z+o_f+o_R<=2 |
+| 3 each | t_d,t_l,t_R<=1 |
+
+Add 3t_u<=0. If A is the resulting weighted left side, direct coefficient
+accounting gives the identity
+
+    A+t_x+t_r = 3Q+o_x+o_r,       A<=50.
+
+It follows that 3Q<=50. Since Q is an integer, Q<=16. This certificate
+allows mates outside the region and uses no freezing hypothesis.
+
+### 1.4 Sum once; remove one half-unit slack once
+
+The retained contribution is |R|+|P0|/2=12k+6-|G|-|F|. Each slot has
+contribution at most 5+2*1_G+1_F. The unique pocket contributes at most
+9+1/2 by the previously proved boundary-aware actual-matching certificate;
+the two remaining isolates contribute at most2. Therefore
+
+    |T|+|M| <= 12k+6-|G|-|F| + 9+1/2+5(k-1)+2|G|+|F|+2
+             =17k+12+|G|+1/2.
+
+The integer objective gives (1). This is one global rounding, not a
+separate rounding of each half-weight contribution. The predecessor
+g-attainer is valid for every F and proves sharpness.
+
+### 1.5 Actual original-tile compensation without reused credit
+
+For an original 2-by-2 tile D write c(D)=4-2|T intersect D|-|P intersect D|.
+The top strip still has total1-k. By (1), the exterior signed charge is
+at least3k-1-2|G|. Let Cplus sum positive exterior charges and Cminus be
+the absolute sum of negative exterior charges. Then
+
+    Cplus >= Cminus+(k-1)+2(k-|G|).                   (2)
+
+Label each actual positive half-unit by (original tile,unit index). In a
+fixed order first pay all exterior negative half-units, then the k-1 net
+strip half-demands, and reserve the remaining tokens. The allocation is
+injective; no paid token is also reserved. At least2(k-|G|) remain.
+Both local ownership and the final physical-token accounting are explicit.
+This is a global net allocation; it makes no direction-constrained routing
+claim for individual D4 exports, or claim of whole-unit reserves in original tiles.
+
+### 1.6 Sharp actual f deletion and its precise freezing defect
+
+For any F start at (T*,M0), remove each f_i from T*, and add edge
+f_i--z_i, z_i=(5,c_i+3). This gives
+
+    |T|=13k+11-|F|, |M|=4k+1+|F|, |T|+|M|=17k+12.
+
+Each z_i has selected neighbours (5,c_i+2),(5,c_i+4), so it freezes at
+rank0. Retain all old strict ranks and witness coordinates from the b=1
+family. The only altered old witness is at (3,c_i+3), whose rank is1;
+its former selected witness f_i is now an endpoint with rank0 mate z_i.
+All old certificates therefore remain strict. Every endpoint except the
+new f_i freezes. Each f_i has only its actual mate z_i and old endpoint
+(3,c_i+3) occupied nearby; its own mate cannot be a strict witness, so
+it never freezes. This proves the exact defect for every k,F. It does
+not assert that every actual-f-deletion maximizer has this defect.
+
+## 2. A barrier for fully connected G/H/F chains
+
+Now withdraw all g_i,h_i for i=0,...,m-1 and f_i for i=0,...,m-2 on the
+k=m+1 board, m>=2. The newly available free region containing g_0 is C_m:
+
+    row2: 9+6j,11+6j                   (0<=j<m)
+    row3: 9+6j,10+6j,11+6j             (0<=j<m)
+    row4: every column8,...,6m+4
+    row5: every column7,...,6m+5.
+
+It is connected and has17m-4 sites. Outside it remain the same pocket
+and two isolates. Its old-P0 neighbour counts are2 at row2 residue5,
+1 at row3 residues3,5 and row4 residues0,1,2, and0 elsewhere. The retained
+old-T count is5m+14 and the old matching size is4m+5.
+
+The natural connected cut that would cancel the extra m-1 guard
+withdrawals at the same rate is
+
+    Q(C_m) <= 18m-2.                                (3)
+
+Together with the pocket/isolate bounds and one global rounding, (3)
+would give |T|+|M|<=18m+29=17k+12+m. We do not prove (3).
+The point below explains why summing the available local cuts is insufficient.
+
+### 2.1 The exact relaxation being obstructed
+
+Allow real variables 0<=t_v<=o_v<=1 on C_m. Put d_v equal to its number
+of neighbours in C_m, and b_v equal to its old-P0 neighbour count. Include:
+
+1. t_v=0 when b_v>=2; all anchors t_v+o_u<=1 when b_v>=1.
+2. Every ordinary wedge t_v+o_a+o_b<=2, for distinct free neighbours a,b.
+3. The full selected-degree inequality
+   (d_v+b_v-1)t_v+sum_(u adjacent in C_m)o_u<=d_v at every vertex.
+4. Every bottom closed-star charge at most6.
+5. Every fully contained module translate (horizontal shift6i) of the
+   old gh thirteen-site cut Q<=16, old h seven-site cut Q<=10,
+   new gf thirteen-site cut Q<=16, and new f ten-site cut Q<=12.
+
+These are valid necessary constraints for integer feasible configurations
+with actual matching, including the two cuts proved using mate coverage.
+The relaxation contains these cuts but does not impose all matching or
+freezing constraints. In particular it includes no general matching-flow,
+Hall or integer-disjunction description.
+
+### 2.2 One rational point works at every chain length
+
+Assign by row and column modulo6 as follows:
+
+| Site phase (row,residue) | t | o |
+| --- | --- | --- |
+| (2,3) | 1 | 1 |
+| (2,5) | 0 | 1 |
+| (3,3) | 0 | 7/12 |
+| (3,4) | 2/3 | 1 |
+| (3,5) | 0 | 3/4 |
+| (4,0) | 1/3 | 1/2 |
+| (4,1) | 1/2 | 2/3 |
+| (4,2) | 1/3 | 1/2 |
+| (4,3) | 23/36 | 2/3 |
+| (4,4) | 1/3 | 1/3 |
+| (4,5) | 7/12 | 2/3 |
+| (5,0) | 2/3 | 2/3 |
+| (5,1) | 1/2 | 1/2 |
+| (5,2) | 2/3 | 2/3 |
+| (5,3) | 1/2 | 2/3 |
+| (5,4) | 2/3 | 2/3 |
+| (5,5) | 1/2 | 2/3 |
+
+All17 bulk vertex types satisfy the listed inequalities by substitution.
+The four window charges, independent of their module translate, are
+533/36, 15/2, 59/4, 21/2 respectively, below their bounds16,10,16,12.
+Every bottom-star charge is at most6.
+These are finite rational substitutions into explicit inequalities, not
+enumeration of grid configurations.
+
+For completeness, restriction to C_m does not automatically preserve a
+full selected-degree inequality, because its right side also decreases.
+There are precisely five surviving boundary types with changed free
+neighbours; check them separately:
+
+| Boundary vertex | Surviving free neighbours | Full-degree slack |
+| --- | --- | --- |
+| (3,6m+5) | (2,6m+5),(3,6m+4) | 0 |
+| (4,8) | (4,9),(5,8) | 0 |
+| (4,6m+4) | (3,6m+4),(4,6m+3),(5,6m+4) | 0 |
+| (5,7) | (5,8) | 1/3 |
+| (5,6m+5) | (5,6m+4) | 1/3 |
+
+All other constraints restrict by deleting nonnegative terms, or are fully
+contained module windows with the same phase values. This proves that
+the point satisfies the complete stated finite relaxation for **every** m>=2.
+
+The sum of t+o in one full period is349/18. Relative to m periods, C_m
+omits row4 residues0,1,5 and row5 residue0, once each; their total is55/12.
+Consequently
+
+    Q_frac(C_m) = 349m/18-55/12 = (698m-165)/36,
+    Q_frac(C_m)-(18m-2) = (50m-93)/36 > 0   (m>=2).   (4)
+
+Already C_2 has30 sites and fractional charge1231/36>34 by7/36.
+No nonnegative linear combination of the constraints in Section2.1 can
+prove (3), since that combination would hold at this rational point.
+More generally the relaxation itself does not logically imply (3).
+
+The failed statement is the **sufficiency of this local relaxation**.
+The point is neither an integer occupation nor an actual matching or
+completely frozen configuration. It does not disprove (3), the proposed
+zero-extra-cost G/H/F frontier, or the half-area/grid target. New matching
+constraints, integer structure or a nonlocal cut are needed to settle those.
+
+## 3. Validation and exact formal scope
+
+The standard-library G/F checker verifies both coefficient identities,
+all7,885 f-only and108,625 gf local occupations, including the two
+unmatchable charge13 patterns. It checks513 board configurations through
+k=128, including116 models changing old matching edges,156 sharp frozen
+permission attainers,45 sharp actual-f-deletion patches and8,302 explicit
+partial strict-rank events. All513 original-tile token allocations are
+injective and leave the claimed unpaid-token remainder.
+
+The separate rational checker verifies the17 bulk types, five boundary
+types and four module-window cuts exactly with Fraction arithmetic, and
+checks actual free-coordinate adapters for18 chain lengths through m=128.
+It checks6,053 full-degree instances,18,941 wedges and2,144 bottom stars.
+The all-m proof is periodic substitution, the explicit boundary table and
+the algebra (4); the length checks are controls.
+
+Lean4.33.0 checks16 declarations: the two universal weighted identities,
+the integer local bounds and matching equality exclusion, successor-isolate
+injectivity, component sum and permission cancellation, sharp patch counts,
+all integer-scaled bulk/window/boundary checks, period/omission sums and
+the positive gap for every m>=2. No sorry, native_decide or new axioms.
+The general coordinate classification, grid-to-inequality/matching adapters,
+patch freezing geometry and physical-token interpretation remain written
+proofs with executable controls. This is not an end-to-end formal grid theorem.
+
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_successor_guard_compensation.py --output output/successor-guard-compensation-validation.json
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_connected_band_local_relaxation.py --output output/connected-band-local-relaxation-validation.json
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_successor_guard_compensation_formal.py --lean /path/to/lean-4.33.0/bin/lean --output output/successor-guard-compensation-formal-validation.json
+
+The next research problem is an actual matching cut or structural induction
+for C_m under simultaneous G/H/F activation. Arbitrary old-P0 withdrawal,
+general bent/mixed footprints and a universal improvement of5/6 remain open.
+These are research notes; the submitted11 October manuscript is preserved.
+
+FILE docs/LOWER_GUARD_MERGER_FRONTIER.md
+# Two guard types: a sharp merger frontier and forced guard retention under freezing
+
+26 October 2026. Wenlin Zhang and Haobo Ma. Research continuation.
+
+We enlarge the [joint withdrawal/rematching theorem](WITHDRAWAL_REMATCHING_JOINT_BOUND.md)
+to a second family of old selections. The newly opened regions include a
+seven-site tree and a thirteen-site region with cycles. An integer weighted
+certificate proves a sharp upper bound for arbitrary actual rematching.
+The additional lower-guard withdrawal permissions do not increase that bound.
+Complete freezing, however, forces the lower guard whenever its upper/right
+guard remains selected. Explicit sharp configurations can violate this
+implication only by leaving exactly one endpoint per lower withdrawal unfrozen.
+
+## 1. The two-guard theorem
+
+Fix the original b=1 family (T0,M0), P0=V(M0), on the 6-by-(6k+4) board,
+k>=2. Its coordinates are recorded in the
+[sharp-completion note](FROZEN_STRIP_SHARP_COMPLETION_AND_RESERVES.md).
+For each i=0,...,k-2 define
+
+    c_i=9+6i,   g_i=(3,c_i),   h_i=(4,c_i-1).
+
+Both g_i and h_i are old selections. Let G,H be ANY subsets of these indices,
+g=|G|, h=|H|. Suppose T,P are disjoint, every selected site has at most one
+occupied neighbour, P0 is a subset of P, and
+
+    T0 minus {g_i:i in G} minus {h_i:i in H} is a subset of T.
+
+Let M be ANY actual grid matching of exactly P. Old edges may be rematched,
+and additional endpoints and selections are unrestricted. Then
+
+    |T|+|M| <= 17k+12+g = area/2-(k-g).              (1)
+
+The bound is sharp for every pair (G,H), including among completely frozen
+configurations: the previous all-subset g-withdrawal attainer retains every
+h_i and remains allowed here. These are permissions to withdraw, so sites
+in G or H may be selected again. The upper bound covers their actual deletion
+as well. A separate construction below actually deletes an arbitrary set
+of h_i at the sharp value with G empty, but cannot be completely frozen.
+
+Thus adding lower-guard permissions has zero extra cost in (1). It is not
+valid to assign a further independent one-unit loss to every h_i merely
+because the g_i had that cost. No endpoint site of P0 may be deleted, and
+no other old-T withdrawal is included in this theorem.
+
+## 2. The exact free slots, including both interactions
+
+Retained old T sites with old P0 neighbours force all their other neighbours
+blank. This uses occupation only and survives arbitrary rematching. Apart
+from the fixed 15-site pocket, the free graph splits into k-1 disjoint slots
+and two final isolated sites. Slot i contains the old gate, star and isolated
+site with columns between c_i-2 and c_i+2. The four activation states are:
+
+| Allowed guard withdrawals in this slot | Free components | Contribution bound |
+| --- | --- | --- |
+| neither | gate + star + isolated site | 1+3+1=5 |
+| g only | nine-site tree + isolated site | 6+1=7 |
+| h only | gate + seven-site tree | 1+5=6 |
+| both | one thirteen-site region | 8 |
+
+Here contribution means new T plus HALF the number of new endpoints, even
+when their actual mates lie outside the slot. The fixed pocket contributes
+at most 9+1/2 by the preceding boundary-aware proof; each final isolated
+site contributes at most one.
+
+For completeness the exact freed sites relative to the original free graph
+are {d,g,b} for g only, {h,z} for h only, and {d,g,b,h,e,z} for both, where
+for c=c_i
+
+    d=(2,c), u=(2,c+2), g=(3,c), b=(3,c+1), v=(3,c+2),
+    h=(4,c-1), e=(4,c), a=(4,c+1),
+    L=(5,c-2), z=(5,c-1), l=(5,c), s=(5,c+1), r=(5,c+2).
+
+The site e is available ONLY when both guards are removed from the retained
+set: either g or h alone forces it blank. Removing h frees z but does not
+free (4,c-2), which is still guarded by retained old T(4,c-3). The same
+row-by-row deletion that gave the preceding free table proves there are
+no further freed sites. Different slots remain disjoint with no free-grid
+edge between them, even at consecutive active indices. Matching edges
+to old P0 sites are allowed throughout.
+
+The both-active internal edges are
+
+    dg,gb,ge,bv,ba,uv,he,hz,ea,el,as,zL,zl,ls,sr.
+
+The old endpoint-neighbour counts are one at g,v,h, two at u, and zero
+elsewhere. This is the thirteen-site cyclic case missing from the old tree
+argument; simply adding independent guard costs would overlook its interaction.
+
+## 3. The seven-site capacity is five under the actual matching
+
+In the h-only case its new component is {h,a,L,z,l,s,r}, with edges
+hz,zL,zl,ls,sa,sr. Only h has an old endpoint neighbour. Write t_x for its
+selection indicator, p_x for its endpoint indicator, o_x=t_x+p_x, and
+
+    F=sum_x(t_x+o_x)=2 newT+newP.
+
+Add these feasibility inequalities, each with weight one:
+
+    t_h+o_z<=1;
+    t_z+o_h+o_L<=2;       t_s+o_a+o_r<=2;
+    t_a,t_r,t_L,t_l<=1;   o_l,o_s<=1.
+
+Their left sides sum EXACTLY to F, and their right sides sum to 11. If F=11,
+all bounds must be tight, so a,l,r are selected and s is occupied. The wedge
+at s makes t_s=0, hence s is an endpoint. Its only eligible endpoint neighbours
+are a,l,r: all three are selected. It has no possible actual mate, a
+contradiction. Therefore F<=10, proving contribution at most five.
+
+The excluded occupation of charge eleven really exists if matchability is
+discarded: select h,a,L,l,r and occupy s as an endpoint. This is feasible
+for the selection constraints but s is isolated in the endpoint graph.
+The proof therefore uses actual matching coverage at exactly the place
+where the occupation-only bound would be insufficient.
+
+## 4. A general thirteen-site integer certificate
+
+Use the thirteen names above, and set F=sum(t_x+o_x) again. We have t_u=0,
+t_e<=o_e, t_l<=o_l. The following table lists all other inequalities and
+their nonnegative integer weights:
+
+| Weight | Feasibility inequality |
+| --- | --- |
+| 3 | t_g+o_d<=1 |
+| 3 | t_v+o_u<=1 |
+| 2 | t_h+o_e<=1 |
+| 1 | t_h+o_z<=1 |
+| 3 | t_b+o_g+o_v<=2 |
+| 2 | t_e+o_h+o_l<=2 |
+| 2 | t_a+o_b+o_e<=2 |
+| 1 | t_a+o_b+o_s<=2 |
+| 1 | t_z+o_h+o_L<=2 |
+| 2 | t_z+o_L+o_l<=2 |
+| 2 | t_l+o_z+o_s<=2 |
+| 3 | t_s+o_a+o_r<=2 |
+| 3 each | t_d,t_L,t_r<=1 |
+
+Also add 3t_u<=0. Let A be the sum of these displayed left sides with
+their weights. Their right sides sum to 50. Direct coefficient accounting
+gives the universal identity
+
+    A+t_e+t_l = 3F+o_e+o_l.
+
+The two selection-subset inequalities imply 3F<=A<=50. Since F is an
+integer, F<=16; equivalently this component contributes at most eight.
+No matching-boundary restriction or freezing hypothesis was used. The
+identity and all weights are explicit, so a solver or finite enumeration
+is not needed to prove the inequality. Integer rounding applies to the
+integer DOUBLED contribution F here; it does not round half-weight
+contributions individually to whole numbers.
+
+The previously proved gate, star and nine-site bounds establish the other
+three rows of the slot table. Each slot's contribution is at most
+5+2*1_(i in G)+1_(i in H), including the both-active state.
+
+## 5. Sum distinct components, then round the unique pocket slack once
+
+The old retained contribution is
+
+    |T0 minus withdrawn permissions|+|P0|/2=12k+6-g-h.
+
+Every new endpoint belongs to exactly one free component, independent of its
+mate, so contributions add without double counting. The free contribution
+is at most
+
+    9+1/2 + 5(k-1)+2g+h+2 = 5k+6+1/2+2g+h.
+
+Adding gives |T|+|M|<=17k+12+1/2+g. The objective is an integer, yielding
+(1). This final rounding occurs once, for the single fixed pocket. The
+additional h permission cancels exactly between the old retained count
+and the seven/thirteen-site capacities.
+
+The top strip still has doubled surplus 1-k. Thus the full original-tile
+compensation theorem from the preceding note also extends unchanged:
+
+    exterior Cplus >= exterior Cminus+(k-1)+2(k-g).
+
+Positive tokens identified by original tile and half-unit number pay all
+exterior negative charges first, then the net strip deficit, leaving at
+least 2(k-g) distinct half tokens. No extra credit is charged to H, and
+no already-spent token is also kept in the remainder. This is global net
+compensation, without a local/directional routing claim for individual D4.
+
+## 6. Complete freezing forces g selected implies h selected
+
+For EVERY allowed configuration, if all actual endpoints are completely
+frozen, then, at every internal index,
+
+    g_i in T  implies  h_i in T.                     (2)
+
+This is not restricted to maximizers. Let W=(3,c-1), an old endpoint.
+If g is selected, its old neighbour W forces d,b,e blank. Retained old
+T(4,c-3) forces (4,c-2) blank, and retained old T(1,c-1) forces (2,c-1)
+blank. Consequently h has only W,z as possible occupied neighbours.
+If h were an endpoint it would have at most two occupied neighbours.
+One is its actual mate, which cannot serve as a strict freezing witness;
+at most one other witness remains. Such an endpoint can never freeze.
+
+If h is not an endpoint and is not selected, W has only its old neighbour
+(3,c-2) and selected g occupied. Its actual mate must be (3,c-2), since
+g is selected. Again it has only its mate and one other occupied neighbour,
+and cannot freeze. Both alternatives contradict complete freezing, proving
+(2). This is a local two-alternative trapping argument; outside support,
+arbitrary rematching and a later freezing time cannot repair either trap.
+
+In particular, actual lower withdrawal in a completely frozen configuration
+requires actual upper withdrawal as well. The capacity theorem's permission
+to withdraw h must not be mistaken for existence of a completely frozen
+attainer that actually deletes h while retaining g.
+
+## 7. A sharp all-k family with exactly the lower endpoints unfrozen
+
+Start with the completely frozen maximum (T*,M0) of the sharp-completion
+note. For any H subset of {0,...,k-2}, remove each h_i from T* and add
+the actual matching edge
+
+    h_i=(4,8+6i) -- z_i=(5,8+6i).
+
+Keep all g_i selected. Each z_i sees the two unchanged selections
+L_i=(5,7+6i), l_i=(5,9+6i). Previously each had no occupied neighbour,
+so the added endpoints preserve feasibility. Each new h_i has only its
+mate z_i and old W_i as occupied neighbours. The counts are
+
+    |T|=13k+11-|H|,  |M|=4k+1+|H|,
+    |T|+|M|=17k+12.
+
+Thus actual lower withdrawal can retain the sharp numerical objective.
+Each h_i is nevertheless permanently unfrozen by the degree-two argument.
+Every other endpoint does freeze. For an explicit uniform certificate, use
+old core names A,B,C,D,E,F,G,H from the rematching note (here H_core is W;
+it is distinct from the index set H and lower guard h):
+
+| Endpoint type | Strict rank |
+| --- | --- |
+| old A,C; every new z_i; isolated old left pair | 0 |
+| old E,H_core | 1 |
+| old F,G | 2 |
+| old D | 3 |
+| old B | 4 |
+
+Retain all original old-core witness coordinates. The former lower-T
+witness at h_i is now an endpoint whose actual mate z_i has rank zero,
+so it remains usable by H_core at rank one. All other original witnesses
+have mates of smaller displayed rank. Each new z_i uses its two selected
+witnesses L_i,l_i. This proves a strict partial certificate covering exactly
+P minus {h_i:i in H} for every k,H. It also agrees with independent iterative
+freezing. For nonempty H these configurations refute the idea that one
+may delete h while keeping g and still obtain complete freezing; they do
+not refute the sharp counting bound or the half-area target.
+
+## 8. Verification, formal scope, and remaining geometric issue
+
+The standard-library checker verifies every feasible local occupation:
+110,130 thirteen-site patterns and 975 seven-site patterns. It checks the
+integer certificate, the unique unmatchable charge-eleven case, the actual
+free graph and all four slot states. It exhausts four-state slot strings
+through k=4 and tests larger joint patterns through k=128. The 617 board
+models include 133 old-edge rematchings, 156 sharp frozen attainers and
+45 exact-trap families. There are 2,216 actual lower withdrawals, 3,805
+guard-implication controls and 8,302 independently replayed partial strict-rank
+events. All 617 actual original-tile payment maps are injective and account
+for external negative charges and remaining half units.
+
+Lean 4.33.0 checks 14 declarations covering the universal thirteen-site
+identity/capacity, seven-site identity/equality/mate-coverage bound, all-k
+slot count and lower-permission cancellation, sharp margin, strict-mate
+witness exclusion, selection forced by two alternative traps, and the patch
+count/exterior cut. No sorry, native_decide or new axioms are used. The
+all-k coordinate and actual-matching adapters, the guard geometry and explicit
+patch freezing schedule remain general written proofs with executable checks.
+No end-to-end formal grid theorem is claimed.
+
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_lower_guard_merger_frontier.py --output output/lower-guard-merger-frontier-validation.json
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_lower_guard_merger_frontier_formal.py --lean /path/to/lean-4.33.0/bin/lean --output output/lower-guard-merger-frontier-formal-validation.json
+
+The next issue is withdrawal opening connections BETWEEN these free slots,
+or deletion of old P0 sites: disjoint slot capacities then no longer supply
+the geometric cut automatically. Individual direction-constrained D4 routing,
+arbitrary mixed footprints and a universal improvement of 5/6 remain open.
+The submitted 11 October manuscript, public main/PR3, shared CI, C4 work and
+correspondence are preserved. No Mail operations are performed at this stage.
+
+FILE develop/check_connected_band_local_relaxation.py
+"""An exact rational barrier to a specified local-certificate strategy.
+
+This is a fractional occupation witness, not a feasible integer matching.
+No solver is used. Infinite-period and finite-boundary inequalities are exact.
+"""
+import argparse
+from collections import Counter
+from fractions import Fraction as Q
+import itertools
+import json
+from pathlib import Path
+
+from check_cooperative_promotion import neighbors
+from check_endpoint_invasion_sharp_strips import endpoints,free_vertices
+from check_lower_guard_merger_frontier import actual_components,guard,lower_guard,JOINT,LOWER
+from check_occupied_strip_degree_four_budget import family
+from check_successor_guard_compensation import JOINT_GF,ONLY_F
+
+if not __debug__:
+    raise RuntimeError('Assertions required; do not use -O.')
+
+PERIOD_DATA=[
+    ((2,3),'1','1'),((2,5),'0','1'),
+    ((3,3),'0','7/12'),((3,4),'2/3','1'),((3,5),'0','3/4'),
+    ((4,0),'1/3','1/2'),((4,1),'1/2','2/3'),((4,2),'1/3','1/2'),
+    ((4,3),'23/36','2/3'),((4,4),'1/3','1/3'),((4,5),'7/12','2/3'),
+    ((5,0),'2/3','2/3'),((5,1),'1/2','1/2'),((5,2),'2/3','2/3'),
+    ((5,3),'1/2','2/3'),((5,4),'2/3','2/3'),((5,5),'1/2','2/3'),
+]
+PERIOD={v:(Q(t),Q(o)) for v,t,o in PERIOD_DATA}
+WINDOWS=[('gh13',JOINT,16),('h7',LOWER,10),
+         ('gf13',JOINT_GF,16),('f10',ONLY_F,12)]
+
+
+def reduced(v):return v[0],v[1]%6
+
+
+def old_count(v):
+    r,c=reduced(v)
+    if (r,c)==(2,5):return 2
+    return int((r==3 and c in (3,5)) or (r==4 and c in (0,1,2)))
+
+
+def connected_cells(m):
+    assert m>=2
+    return ({(2,c+6*j) for j in range(m) for c in (9,11)} |
+            {(3,c+6*j) for j in range(m) for c in (9,10,11)} |
+            {(4,c) for c in range(8,6*m+5)} |
+            {(5,c) for c in range(7,6*m+6)})
+
+
+def vertex_inequalities(v,ns,c,counts):
+    t,o=PERIOD[reduced(v)];nt=lambda u:PERIOD[reduced(u)][1]
+    assert 0<=t<=o<=1;counts['bound_and_subset_checks']+=1
+    if c>=2:assert t==0;counts['forbidden_selection_checks']+=1
+    if c>=1:
+        for u in ns:
+            assert t+nt(u)<=1;counts['anchored_pair_checks']+=1
+    # Also check all ordinary wedges, including vertices with old anchors.
+    for a,b in itertools.combinations(sorted(ns),2):
+        assert t+nt(a)+nt(b)<=2;counts['wedge_checks']+=1
+    assert (len(ns)+c-1)*t+sum(map(nt,ns))<=len(ns)
+    counts['full_selected_degree_checks']+=1
+    if v[0]==5:
+        assert sum(sum(PERIOD[reduced(u)]) for u in set(ns)|{v})<=6
+        counts['bottom_closed_star_cuts']+=1
+
+
+def period_controls(counts):
+    domain=set(PERIOD)
+    for v in sorted(domain):
+        ns={reduced(u) for u in neighbors(v)}&domain
+        vertex_inequalities(v,ns,old_count(v),counts)
+    for name,pattern,b in WINDOWS:
+        value=sum(sum(PERIOD[r,(c+9)%6]) for r,c in pattern)
+        assert value<=b;counts['period_window_'+name]+=1
+    assert sum(sum(v) for v in PERIOD.values())==Q(349,18)
+
+
+def boundary_controls(counts):
+    # The only surviving sites whose free-neighbour sets differ from the
+    # doubly infinite 6-period graph. Right sites are represented at m=2;
+    # adding6 preserves all data, so this verifies every m>=2 boundary.
+    m=2;C=connected_cells(m);changed=[];slacks={}
+    for v in sorted(C):
+        infinite={reduced(u) for u in neighbors(v)}&set(PERIOD)
+        actual=set(neighbors(v))&C
+        if {reduced(u) for u in actual}!=infinite:
+            changed.append(v);vertex_inequalities(v,actual,old_count(v),counts)
+            t=PERIOD[reduced(v)][0]
+            slack=len(actual)-(len(actual)+old_count(v)-1)*t-sum(PERIOD[reduced(u)][1] for u in actual)
+            slacks[str(v)]=str(slack)
+    assert changed==[(3,17),(4,8),(4,16),(5,7),(5,17)]
+    assert slacks=={'(3, 17)':'0','(4, 8)':'0','(4, 16)':'0','(5, 7)':'1/3','(5, 17)':'1/3'}
+    # Relative to m complete periods the finite region omits these four
+    # phase sites, each once. All others are counted exactly m times.
+    omitted=[(4,0),(4,1),(4,5),(5,0)]
+    missing=sum(sum(PERIOD[v]) for v in omitted)
+    assert missing==Q(55,12)
+    return slacks
+
+
+def finite_control(m,counts):
+    k=m+1;old=family(k)[0];P0=endpoints(old[3]);C=connected_cells(m)
+    R=old[2]-{guard(i) for i in range(m)}-{lower_guard(i) for i in range(m)}
+    R-={(4,6+6*i) for i in range(1,m)}
+    free=free_vertices((*old[:2],R,old[3]))
+    actual=next(S for S in actual_components(free) if guard(0) in S)
+    assert actual==C and len(C)==17*m-4
+    assert len(free-C)==17  # fixed15-site pocket and two isolates
+    for v in sorted(C):
+        c=len(set(neighbors(v))&P0);assert c==old_count(v)
+        vertex_inequalities(v,set(neighbors(v))&C,c,counts)
+    for name,pat,b in WINDOWS:
+        for i in range(-2,m+2):
+            S={(r,c+9+6*i) for r,c in pat}
+            if S<=C:
+                assert sum(sum(PERIOD[reduced(v)]) for v in S)<=b
+                counts['finite_window_'+name]+=1
+    value=sum(sum(PERIOD[reduced(v)]) for v in C)
+    assert value==Q(698*m-165,36)
+    gap=value-(18*m-2);assert gap==Q(50*m-93,36)>0
+    counts['finite_connected_chain_controls']+=1
+    return dict(m=m,sites=len(C),fractional_charge=str(value),candidate_cut=18*m-2,gap=str(gap))
+
+
+def main():
+    p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True)
+    args=p.parse_args();counts=Counter();period_controls(counts);boundary=boundary_controls(counts)
+    samples=[finite_control(m,counts) for m in [*range(2,17),32,64,128]]
+    out=dict(status='PASS',counts=dict(counts),period=[dict(site=v,t=t,o=o) for v,t,o in PERIOD_DATA],
+        boundary_full_degree_slack=boundary,period_charge='349/18',omitted_phase_charge='55/12',
+        finite_charge='(698m-165)/36',candidate_cut='18m-2',strict_gap='(50m-93)/36>0 for every m>=2',
+        samples=samples,
+        scope='Exact rational witness for the stated fractional local occupation relaxation on every connected17m-4-site G/H/F chain. Satisfies bounds, selection subset, old-P forbiddance, every anchor, every ordinary wedge, full selected-degree inequalities, all bottom closed-star6 cuts and all fully contained module-translates of gh13<=16,h7<=10,gf13<=16,f10<=12. Therefore this relaxation cannot imply Q<=18m-2; no nonnegative linear combination of its constraints proves that cut. NOT an integer occupation, actual matching, frozen configuration or counterexample to the target bound. Other matching cuts or genuinely nonlocal structure remain necessary; target chain inequality and universal5/6 remain open.')
+    args.output.write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(dict(status='PASS',counts=dict(counts),samples=samples[:2],boundary=boundary),indent=2))
+
+
+if __name__=='__main__':main()
+
+SOURCE develop/check_occupied_strip_degree_four_budget.py
+"""Geometric port budget and sharp all-q frozen families; written proof is primary."""
+import argparse
+from collections import Counter
+import itertools
+import json
+from pathlib import Path
+
+from check_cooperative_promotion import neighbors,occupied_degrees
+from check_component_receivers import endpoint_components,vertices_of
+from check_even_bridge_support_completion import endpoints_of,tiles_of
+from check_neutral_portal_strip_compensation import image_map
+import check_occupied_strip_export_cancellation as previous
+from check_occupied_strip_export_cancellation import inspect as joint_inspect,frozen_check
+from check_residual_corridors import direct_check,transformed
+
+if not __debug__:
+    raise RuntimeError('Assertions required; do not use -O.')
+
+CORE_T={(0,2),(0,4),(1,1),(1,5),(4,3),(4,5),(3,6)}
+CORE_M=[((1,2),(1,3)),((1,4),(2,4)),((2,3),(3,3)),((3,4),(3,5))]
+CORE_WITNESSES=[
+    ((1,2),0,(0,2),(1,1)),((1,4),0,(0,4),(1,5)),
+    ((3,5),0,(4,5),(3,6)),((2,3),1,(1,3),(2,4)),
+    ((3,3),1,(4,3),(3,4)),((2,4),2,(2,3),(3,4)),
+    ((3,4),2,(3,3),(2,4)),((1,3),3,(1,4),(2,3)),
+]
+FORCED=[((1,2),(1,3)),((1,4),(2,4)),((3,5),(3,4)),((2,3),(3,3))]
+
+
+def family(q,sealed=False):
+    assert q>=0
+    row0=2 if sealed else 0
+    move=lambda v,i:(v[0]+row0,v[1]+3+6*i)
+    T={move(v,i) for i in range(q) for v in CORE_T}
+    # Isolated selections join copies WITHOUT introducing another BB column.
+    T|={(row0,3+6*i) for i in range(q+1)}
+    T|={(r+row0,c) for r,c in ((0,1),(1,2),(2,0),(3,1))}
+    M=[tuple(move(v,i) for v in e) for i in range(q) for e in CORE_M]
+    M.append(((row0+1,1),(row0+2,1)))
+    n=6*q+4+2*int(sealed)
+    region=[((row0,c),(row0+1,c)) for c in range(n)]
+    ranks=[tuple(move(v,i) if isinstance(v,tuple) else v for v in w)
+           for i in range(q) for w in CORE_WITNESSES]
+    ranks.extend([((row0+1,1),0,(row0,1),(row0+1,2)),
+                  ((row0+2,1),0,(row0+2,0),(row0+3,1))])
+    forced=[tuple(move(v,i) for v in e) for i in range(q) for e in FORCED]
+    forced.append(M[-1])
+    if sealed:
+        c=6*q+4
+        T|={(3,c),(0,c),(1,c+1)}
+        M.append(((2,c),(1,c)))
+        ranks.extend([((2,c),0,(3,c),(2,c-1)),((1,c),0,(0,c),(1,c+1))])
+        forced.append(M[-1])
+    cur=(8 if sealed else 6,n,T,M)
+    return cur,region,ranks,forced
+
+
+def inspect_budget(cur,regions,counts):
+    """Rebuild and allocate actual BB/TT forest END incidences, once each."""
+    result=joint_inspect(cur,regions,counts)
+    T=cur[2];P=endpoints_of(cur);mate={v:w for e in cur[3] for v,w in (e,e[::-1])}
+    B=D4=A=V=old_unused=0
+    for region in regions:
+        cells={v for col in region for v in col}
+        labels=[('BB' if not set(col)&(T|P) else 'TT' if set(col)<=T else 'other') for col in region]
+SOURCE develop/check_frozen_strip_completion_reserves.py
+"""Sharp all-selection bound and physical no-reuse reserves for frozen D4 strips.
+
+The written proof is a disjoint geometric cover, not finite enumeration.
+"""
+import argparse
+from collections import Counter
+import itertools
+import json
+import random
+from pathlib import Path
+
+from check_occupied_strip_degree_four_budget import family,check_ranks,unique_by_leaves,inspect_budget
+from check_occupied_strip_export_cancellation import complete_fixed_strip,frozen_check
+from check_cooperative_promotion import neighbors
+from check_even_bridge_support_completion import endpoints_of,tiles_of
+from check_component_receivers import vertices_of
+from check_residual_corridors import direct_check,transformed
+from check_neutral_portal_strip_compensation import image_map
+
+if not __debug__:
+    raise RuntimeError('Assertions required; do not use -O.')
+
+MODULE_P={(1,1),(1,2),(1,3),(2,2),(2,3),(3,2),(3,3),(3,4)}
+MODULE_FORBIDDEN={(2,1),(2,4)}
+MODULE_FACES=[(0,4),(4,0),(4,4)]
+MODULE_PAIRS=[((3,1),(3,0)),((4,3),(5,3)),((0,3),(0,2)),
+              ((0,1),(0,0)),((1,0),(2,0)),((3,5),(2,5)),((4,2),(5,2))]
+CAP_P={(1,1),(2,1)}
+CAP_FACES=[(0,2),(2,2),(4,0),(4,2)]
+CAP_PAIRS=[((0,1),(0,0)),((3,1),(3,0)),((1,0),(2,0))]
+
+
+def face(r,c):return {(r+i,c+j) for i,j in itertools.product(range(2),repeat=2)}
+
+
+def check_cover(P,forbidden,faces,pairs,width):
+    cells=set(itertools.product(range(6),range(width)));seen=set(P)|set(forbidden)
+    assert len(seen)==len(P)+len(forbidden)
+    for v in forbidden:assert len(set(neighbors(v))&P)>=2
+    for r,c in faces:
+        F=face(r,c);assert not seen&F;seen|=F
+        # Any three square corners contain a vertex with two neighbours.
+        for triple in itertools.combinations(F,3):
+            assert any(len(set(neighbors(v))&set(triple))==2 for v in triple)
+    for a,b in pairs:
+        assert b in neighbors(a) and set(neighbors(a))&P
+        assert not seen&{a,b};seen|={a,b}
+    assert seen==cells
+    return 2*len(faces)+len(pairs)
+
+
+def completion(k):
+    cur,region,ranks,forced=family(k)
+    w=cur[1]
+    T={(0,c) for c in range(1,w,2)}|{(1,2)}
+    T|={(1,c) for i in range(k) for c in (4+6*i,8+6*i)}
+    T|={(2,0),(2,3),(3,1),(3,3)}
+    T|={(3,c) for i in range(k) for c in (5+6*i,9+6*i)}
+    T|={(4,c) for c in range(0,w,2)}|{(5,0)}|{(5,c) for c in range(3,w,2)}
+    assert cur[2]<=T
+    return (*cur[:2],T,cur[3]),region,ranks,forced
+
+
+def upper_certificate(cur):
+    """Check the local cover against an arbitrary feasible selected set."""
+    h,w,T,M=cur;assert h==6 and (w-4)%6==0;k=(w-4)//6
+    direct_check(*cur);P=endpoints_of(cur);seen=set();upper=0
+    for start,width,footprint,forbidden,faces,pairs in [
+        (0,4,CAP_P,set(),CAP_FACES,CAP_PAIRS)]+[
+        (4+6*i,6,MODULE_P,MODULE_FORBIDDEN,MODULE_FACES,MODULE_PAIRS) for i in range(k)]:
+        shift=lambda v:(v[0],v[1]+start)
+        cells={(r,c+start) for r,c in itertools.product(range(6),range(width))}
+SOURCE develop/check_endpoint_invasion_sharp_strips.py
+"""Endpoint additions to the sharp negative strip: written weighted proof is primary.
+
+No optimization package is required. Coordinates and resource identities are
+checked independently of the local integer certificate. Do not run with -O.
+"""
+import argparse
+from collections import Counter
+import itertools
+import json
+from pathlib import Path
+import random
+
+from check_cooperative_promotion import neighbors
+from check_component_receivers import vertices_of
+from check_frozen_strip_completion_reserves import completion
+from check_occupied_strip_degree_four_budget import family, check_ranks, inspect_budget
+from check_promotion_cores import frozen_certificate
+from check_residual_corridors import direct_check, transformed
+
+if not __debug__:
+    raise RuntimeError('Assertions required; do not use -O.')
+
+POCKET = [(2,3),(2,5),(3,3),(3,4),(3,5),(4,0),(4,2),(4,3),
+          (4,4),(5,0),(5,1),(5,2),(5,3),(5,4),(5,5)]
+EDGES = sorted({tuple(sorted((v,u))) for v in POCKET
+                for u in set(neighbors(v)) & set(POCKET)})
+# (weight, centre, first neighbour, second neighbour).
+WEDGES = [(2,(3,4),(3,3),(3,5)),(1,(3,4),(3,5),(4,4)),
+          (2,(4,2),(4,3),(5,2)),(1,(4,3),(3,3),(4,4)),
+          (3,(5,0),(4,0),(5,1)),(1,(5,2),(4,2),(5,3)),
+          (1,(5,4),(4,4),(5,5)),(2,(5,4),(5,3),(5,5))]
+
+
+def endpoints(M):
+    return {v for e in M for v in e}
+
+
+def edge_key(e):
+    return tuple(sorted(e))
+
+
+def components(k):
+    assert k >= 1
+    gates = [{(2,5+6*i),(3,5+6*i)} for i in range(1,k)]
+    stars = [{(5,4+6*i),(4,4+6*i),(5,3+6*i),(5,5+6*i)}
+             for i in range(1,k)]
+    isolated = [{(5,7+6*i)} for i in range(k)] + [{(5,6*k+3)}]
+    return [set(POCKET)] + gates + stars + isolated
+
+
+def free_vertices(cur):
+    h,w,T,M = cur
+    P = endpoints(M)
+    anchored = {t for t in T if set(neighbors(t)) & P}
+    board = set(itertools.product(range(h),range(w)))
+    return {v for v in board-T-P if not set(neighbors(v)) & anchored}
+
+
+def coefficients():
+    tc = Counter({(2,3):3,(2,5):3})
+    pc = Counter()
+    for weight,v,a,b in WEDGES:
+        assert a != b and a in neighbors(v) and b in neighbors(v)
+SOURCE develop/check_selection_withdrawal_sharp_strips.py
+"""Exact guarded-selection withdrawal frontier and physical successor payment.
+
+The proof is the disjoint free-graph decomposition and universal weighted
+nine-vertex tree certificate. Finite enumeration is only a local control.
+"""
+import argparse
+from collections import Counter
+import itertools
+import json
+from pathlib import Path
+import random
+
+from check_cooperative_promotion import neighbors
+from check_component_receivers import vertices_of
+from check_endpoint_invasion_sharp_strips import (
+    components, edge_key, endpoints, free_vertices, pocket_bound,
+)
+from check_frozen_strip_completion_reserves import completion
+from check_occupied_strip_degree_four_budget import family, inspect_budget, check_ranks
+from check_promotion_cores import frozen_certificate
+from check_residual_corridors import direct_check
+
+if not __debug__:
+    raise RuntimeError('Assertions required; do not use -O.')
+
+# d,g,b,u,v,a,s,l,r, relative to the withdrawn guard's column c.
+TREE = [(2,0),(3,0),(3,1),(2,2),(3,2),(4,1),(5,1),(5,0),(5,2)]
+TREE_EDGES = [(0,1),(1,2),(2,4),(2,5),(3,4),(5,6),(6,7),(6,8)]
+WEDGES = [(2,1,4),(2,4,5),(5,2,6),(6,7,8)]
+OLD_P_COUNTS = {1:1,3:2,4:1}
+PATTERN_A = ({0,5,7,8},{(1,2),(3,4)})
+PATTERN_B = ({0,7,8},{(1,2),(3,4),(5,6)})
+
+
+def guard(i):
+    return 3,9+6*i
+
+
+def tree_cells(i):
+    c = guard(i)[1]
+    return [(r,c+s) for r,s in TREE]
+
+
+def free_components(k,withdrawn):
+    original = components(k)
+    out,caps = [original[0]],[9]
+    for j in range(1,k):
+        if j-1 in withdrawn:
+            out.append(set(tree_cells(j-1)))
+            caps.append(6)
+        else:
+            out += [original[j],original[k-1+j]]
+            caps += [1,3]
+    out += original[2*k-1:]
+    caps += [1]*(k+1)
+    assert len(out) == len(caps)
+    return out,caps
+
+
+def tree_certificate(tset,M,counts):
+    P = {v for e in M for v in e}
+    O = tset | P
+    assert 3 not in tset
+    assert int(1 in tset)+int(0 in O) <= 1
+    values = [int(v in tset)+int(a in O)+int(b in O) for v,a,b in WEDGES]
+    assert all(x <= 2 for x in values)
+    lhs = (int(1 in tset)+int(0 in O)+sum(values)+
+           int(0 in tset)+int(7 in tset)+int(8 in tset)+2*int(3 in tset))
+    q = len(tset)+len(M)
+    assert lhs == 2*q+int(2 in tset)+int((2,4) in M) <= 12
+    assert q <= 6
+    if q == 6:
+        assert 2 not in tset and (2,4) not in M
+        assert {0,7,8} <= tset
+        assert (tset,M) in (PATTERN_A,PATTERN_B)
+    counts['universal_tree_certificate_controls'] += 1
+
+
+def local_controls(counts):
+    best = []
+    for mask in range(1 << len(TREE_EDGES)):
+        M = {e for j,e in enumerate(TREE_EDGES) if (mask >> j) & 1}
+        P = {v for e in M for v in e}
+        if len(P) != 2*len(M):
+            continue
+        remaining = sorted(set(range(9))-P)
+        for bits in range(1 << len(remaining)):
+            T = {v for j,v in enumerate(remaining) if (bits >> j) & 1}
+            O = T | P
+            if any(OLD_P_COUNTS.get(v,0)+sum(u in O for u in range(9)
+                   if tuple(sorted((u,v))) in TREE_EDGES) > 1 for v in T):
+                continue
+            tree_certificate(T,M,counts)
+            counts['independent_local_models'] += 1
+            if len(T)+len(M) == 6:
+                best.append((T,M))
+    assert len(best) == 2 and all(x in best for x in (PATTERN_A,PATTERN_B))
+
+
+def check_extension(cur,k,withdrawn,counts):
+    old = family(k)[0]
+    R = {guard(i) for i in withdrawn}
+    assert withdrawn <= set(range(k-1))
+    assert old[2]-R <= cur[2] and cur[:2] == old[:2]
+    oldM = {edge_key(e) for e in old[3]}
+    assert oldM <= {edge_key(e) for e in cur[3]}
+    direct_check(*cur)
+    base = (*old[:2],old[2]-R,old[3])
+    free = free_vertices(base)
+    blocks,caps = free_components(k,withdrawn)
+    assert set().union(*blocks) == free
+    assert sum(map(len,blocks)) == len(free) == 7*k+10+3*len(withdrawn)
+    owner = {v:i for i,c in enumerate(blocks) for v in c}
+    assert all(owner[v] == owner[u] for v in free for u in set(neighbors(v)) & free)
+    newT = cur[2]-base[2]
+    newM = [edge_key(e) for e in cur[3] if edge_key(e) not in oldM]
+    assert newT | endpoints(newM) <= free
+    assert all(owner[a] == owner[b] for a,b in newM)
+    pocket_bound(newT,newM,counts)
+    for cells,cap in zip(blocks,caps):
+        assert len(newT & cells)+sum(set(e) <= cells for e in newM) <= cap
+    frozen,layers = frozen_certificate(cur)
+    for i in withdrawn:
+        cells = tree_cells(i)
+        index = {v:j for j,v in enumerate(cells)}
+        T = {index[v] for v in newT & set(cells)}
+        M = {tuple(sorted((index[a],index[b]))) for a,b in newM
+             if {a,b} <= set(cells)}
+        tree_certificate(T,M,counts)
+        if frozen == endpoints(cur[3]) and len(T)+len(M) == 6:
+            assert (T,M) == PATTERN_A
+    assert sum(caps) == 5*k+6+2*len(withdrawn)
+    upper = 17*k+12+len(withdrawn)
+    assert len(cur[2])+len(cur[3]) <= upper
+    counts['retained_matching_extension_models'] += 1

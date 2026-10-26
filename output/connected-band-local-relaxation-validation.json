@@ -1,0 +1,315 @@
+{
+  "status": "PASS",
+  "counts": {
+    "bound_and_subset_checks": 6053,
+    "full_selected_degree_checks": 6053,
+    "forbidden_selection_checks": 360,
+    "anchored_pair_checks": 5620,
+    "wedge_checks": 18941,
+    "bottom_closed_star_cuts": 2144,
+    "period_window_gh13": 1,
+    "period_window_h7": 1,
+    "period_window_gf13": 1,
+    "period_window_f10": 1,
+    "finite_window_gh13": 359,
+    "finite_window_h7": 359,
+    "finite_window_gf13": 341,
+    "finite_window_f10": 341,
+    "finite_connected_chain_controls": 18,
+    "actual_integer_component_cut_counterexamples": 1
+  },
+  "period": [
+    {
+      "site": [
+        2,
+        3
+      ],
+      "t": "1",
+      "o": "1"
+    },
+    {
+      "site": [
+        2,
+        5
+      ],
+      "t": "0",
+      "o": "1"
+    },
+    {
+      "site": [
+        3,
+        3
+      ],
+      "t": "0",
+      "o": "7/12"
+    },
+    {
+      "site": [
+        3,
+        4
+      ],
+      "t": "2/3",
+      "o": "1"
+    },
+    {
+      "site": [
+        3,
+        5
+      ],
+      "t": "0",
+      "o": "3/4"
+    },
+    {
+      "site": [
+        4,
+        0
+      ],
+      "t": "1/3",
+      "o": "1/2"
+    },
+    {
+      "site": [
+        4,
+        1
+      ],
+      "t": "1/2",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        4,
+        2
+      ],
+      "t": "1/3",
+      "o": "1/2"
+    },
+    {
+      "site": [
+        4,
+        3
+      ],
+      "t": "23/36",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        4,
+        4
+      ],
+      "t": "1/3",
+      "o": "1/3"
+    },
+    {
+      "site": [
+        4,
+        5
+      ],
+      "t": "7/12",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        5,
+        0
+      ],
+      "t": "2/3",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        5,
+        1
+      ],
+      "t": "1/2",
+      "o": "1/2"
+    },
+    {
+      "site": [
+        5,
+        2
+      ],
+      "t": "2/3",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        5,
+        3
+      ],
+      "t": "1/2",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        5,
+        4
+      ],
+      "t": "2/3",
+      "o": "2/3"
+    },
+    {
+      "site": [
+        5,
+        5
+      ],
+      "t": "1/2",
+      "o": "2/3"
+    }
+  ],
+  "boundary_full_degree_slack": {
+    "(3, 17)": "0",
+    "(4, 8)": "0",
+    "(4, 16)": "0",
+    "(5, 7)": "1/3",
+    "(5, 17)": "1/3"
+  },
+  "period_charge": "349/18",
+  "omitted_phase_charge": "55/12",
+  "finite_charge": "(698m-165)/36",
+  "candidate_cut": "18m-2",
+  "strict_gap": "(50m-93)/36>0 for every m>=2",
+  "samples": [
+    {
+      "m": 2,
+      "sites": 30,
+      "fractional_charge": "1231/36",
+      "candidate_cut": 34,
+      "gap": "7/36"
+    },
+    {
+      "m": 3,
+      "sites": 47,
+      "fractional_charge": "643/12",
+      "candidate_cut": 52,
+      "gap": "19/12"
+    },
+    {
+      "m": 4,
+      "sites": 64,
+      "fractional_charge": "2627/36",
+      "candidate_cut": 70,
+      "gap": "107/36"
+    },
+    {
+      "m": 5,
+      "sites": 81,
+      "fractional_charge": "3325/36",
+      "candidate_cut": 88,
+      "gap": "157/36"
+    },
+    {
+      "m": 6,
+      "sites": 98,
+      "fractional_charge": "447/4",
+      "candidate_cut": 106,
+      "gap": "23/4"
+    },
+    {
+      "m": 7,
+      "sites": 115,
+      "fractional_charge": "4721/36",
+      "candidate_cut": 124,
+      "gap": "257/36"
+    },
+    {
+      "m": 8,
+      "sites": 132,
+      "fractional_charge": "5419/36",
+      "candidate_cut": 142,
+      "gap": "307/36"
+    },
+    {
+      "m": 9,
+      "sites": 149,
+      "fractional_charge": "2039/12",
+      "candidate_cut": 160,
+      "gap": "119/12"
+    },
+    {
+      "m": 10,
+      "sites": 166,
+      "fractional_charge": "6815/36",
+      "candidate_cut": 178,
+      "gap": "407/36"
+    },
+    {
+      "m": 11,
+      "sites": 183,
+      "fractional_charge": "7513/36",
+      "candidate_cut": 196,
+      "gap": "457/36"
+    },
+    {
+      "m": 12,
+      "sites": 200,
+      "fractional_charge": "2737/12",
+      "candidate_cut": 214,
+      "gap": "169/12"
+    },
+    {
+      "m": 13,
+      "sites": 217,
+      "fractional_charge": "8909/36",
+      "candidate_cut": 232,
+      "gap": "557/36"
+    },
+    {
+      "m": 14,
+      "sites": 234,
+      "fractional_charge": "9607/36",
+      "candidate_cut": 250,
+      "gap": "607/36"
+    },
+    {
+      "m": 15,
+      "sites": 251,
+      "fractional_charge": "1145/4",
+      "candidate_cut": 268,
+      "gap": "73/4"
+    },
+    {
+      "m": 16,
+      "sites": 268,
+      "fractional_charge": "11003/36",
+      "candidate_cut": 286,
+      "gap": "707/36"
+    },
+    {
+      "m": 32,
+      "sites": 540,
+      "fractional_charge": "22171/36",
+      "candidate_cut": 574,
+      "gap": "1507/36"
+    },
+    {
+      "m": 64,
+      "sites": 1084,
+      "fractional_charge": "44507/36",
+      "candidate_cut": 1150,
+      "gap": "3107/36"
+    },
+    {
+      "m": 128,
+      "sites": 2172,
+      "fractional_charge": "89179/36",
+      "candidate_cut": 2302,
+      "gap": "6307/36"
+    }
+  ],
+  "actual_integer_obstacle": {
+    "shape": [
+      6,
+      22
+    ],
+    "component_charge": 35,
+    "component_candidate_cut": 34,
+    "selected": 38,
+    "edges": 17,
+    "whole_objective": 55,
+    "whole_candidate_bound": 65,
+    "frozen_endpoints": 23,
+    "total_endpoints": 34,
+    "scope": "Actual feasible arbitrary-rematching permissions example; restores h0. Not completely frozen; not a whole-board bound counterexample."
+  },
+  "scope": "Exact rational witness for the stated fractional local occupation relaxation on every connected17m-4-site G/H/F chain. Satisfies bounds, selection subset, old-P forbiddance, every anchor, every ordinary wedge, full selected-degree inequalities, all bottom closed-star6 cuts and all fully contained module-translates of gh13<=16,h7<=10,gf13<=16,f10<=12. Real relaxation cannot imply Q<=18m-2 or any fixed-boundary correction with bulk slope18; elementary local mate coverage already excludes this rational point. Separately an actual feasible6x22 matching givesQ(C2)=35>34 under the permissions/retainedP0/arbitrary-rematching hypotheses, refuting the isolated component cut. It restores h0, has23of34 endpoints frozen and whole objective55<65; completely frozen component cut, whole-board G/H/F frontier and universal5/6 remain open."
+}
