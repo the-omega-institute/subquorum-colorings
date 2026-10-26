@@ -1,0 +1,98 @@
+{
+  "status": "PASS",
+  "width_controls": 50,
+  "smallest": {
+    "width": 6,
+    "T": 6,
+    "M": 5,
+    "H": 8,
+    "J": 11,
+    "sharp_gap_from_half": 1,
+    "guarded_pairs": 6,
+    "forced_holes": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "unique_matching_forced_edges": 5,
+    "demand": 6,
+    "all_physical_resources": 5,
+    "endpoint_charge_cut_excess": 2,
+    "arbitrary_rematching_cannot_repair": true,
+    "adjacent_hole_injection_unused_holes": 2,
+    "one_step_T_relocation_repairs_ownership": true,
+    "normalization_preserves_M_P_and_T_cardinality": true
+  },
+  "largest": {
+    "width": 104,
+    "T": 104,
+    "M": 103,
+    "H": 106,
+    "J": 207,
+    "sharp_gap_from_half": 1,
+    "guarded_pairs": 104,
+    "forced_holes": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        101
+      ]
+    ],
+    "unique_matching_forced_edges": 103,
+    "demand": 104,
+    "all_physical_resources": 103,
+    "endpoint_charge_cut_excess": 2,
+    "arbitrary_rematching_cannot_repair": true,
+    "adjacent_hole_injection_unused_holes": 2,
+    "one_step_T_relocation_repairs_ownership": true,
+    "normalization_preserves_M_P_and_T_cardinality": true
+  },
+  "arbitrary_selector_controls": [
+    {
+      "width": 6,
+      "profiles": 729,
+      "feasible_selector_sets": 441,
+      "sharp_selector_sets": 16,
+      "selector_histogram": {
+        "0": 1,
+        "1": 12,
+        "2": 56,
+        "3": 128,
+        "4": 148,
+        "5": 80,
+        "6": 16
+      },
+      "perfect_matchings": 1
+    },
+    {
+      "width": 8,
+      "profiles": 6561,
+      "feasible_selector_sets": 3256,
+      "sharp_selector_sets": 33,
+      "selector_histogram": {
+        "0": 1,
+        "1": 16,
+        "2": 107,
+        "3": 386,
+        "4": 809,
+        "5": 990,
+        "6": 678,
+        "7": 236,
+        "8": 33
+      },
+      "perfect_matchings": 1
+    }
+  ],
+  "finite_profile_count": 7290,
+  "feasible_selector_sets": 3697,
+  "scope": "Written all-even-width exact maximum for fixed P with arbitrary T; unique actual matching; all-rematching and all-endpoint-only charge obstruction for explicit sharp T; guarded-pair adjacent-hole certificate; one-selection relocation repair.",
+  "trust_boundary": "Finite profiles validate adapters; universal-grid bounds, arbitrary-P normalization, freezing, and end-to-end coordinate Lean are not proved."
+}

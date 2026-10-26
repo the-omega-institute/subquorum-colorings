@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/GuardedHoleCover.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.two_endpoints_exclude_selection",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.guarded_pair_exclusion",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.partner_injective",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.selected_partner_is_hole",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.all_length_slot_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.exact_hole_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GuardedHoleCover.fixed_footprint_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.GuardedHoleCover.two_endpoints_exclude_selection' does not depend on any axioms\n'SubQuorum.GuardedHoleCover.guarded_pair_exclusion' does not depend on any axioms\n'SubQuorum.GuardedHoleCover.partner_injective' does not depend on any axioms\n'SubQuorum.GuardedHoleCover.selected_partner_is_hole' does not depend on any axioms\n'SubQuorum.GuardedHoleCover.all_length_slot_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GuardedHoleCover.exact_hole_margin' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GuardedHoleCover.fixed_footprint_bound' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4355 \nPages purgeable: 2 \nPages purged: 267282248 \n\nSwap I/O:\nSwapins: 445849279 \nSwapouts: 461329147 \n\nPage Q counts:\nPages active: 144552 \nPages inactive: 138434 \nPages speculative: 5160 \nPages throttled: 0 \nPages wired down: 278386 \n\nCompressor Stats:\nPages used by compressor: 435955 \nPages decompressed: 6917607916 \nPages compressed: 7791781818 \n\nFile I/O:\nPageins: 8575402597 \nPageouts: 26359953 \n\nSystem-wide memory free percentage: 28%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4012.\nPages active:                                 144807.\nPages inactive:                               138683.\nPages speculative:                              5165.\nPages throttled:                                   0.\nPages wired down:                             278385.\nPages purgeable:                                   2.\n\"Translation faults\":                    31344795604.\nPages copy-on-write:                      1503437795.\nPages zero filled:                       12292893518.\nPages reactivated:                        6837372832.\nPages purged:                              267282248.\nFile-backed pages:                            105164.\nAnonymous pages:                              183491.\nPages stored in compressor:                  3563241.\nPages occupied by compressor:                 435813.\nDecompressions:                           6917608411.\nCompressions:                             7791781818.\nPageins:                                  8575402598.\nPageouts:                                   26359953.\nSwapins:                                   445849311.\nSwapouts:                                  461329147."
+  },
+  "scope": "Occupied-neighbour exclusions, guarded-pair partner injection, all-length slot bound and exact hole-margin arithmetic; hypotheses explicit.",
+  "not_formalized": "Actual grid-coordinate cover, disjoint partner construction, arbitrary-width matching uniqueness, no-endpoint-certificate cut and selection-relocation assembly remain written proofs."
+}

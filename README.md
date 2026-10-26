@@ -1,5 +1,22 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [unique-matching hole-compensation barrier](docs/UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md):
+for every even w>=6, one explicit endpoint footprint on 4-by-w has a unique
+perfect matching and exact FREE-selection maximum J=2w-1=area/2-1.
+Two forced holes and w disjoint guarded adjacent pairs give a hole injection
+for every feasible T and prove the bound at arbitrary width. A sharp T has
+ownership demand w but only w-1 actual resources; its all-P tile set has q=+2.
+Thus no rematching, or even arbitrary regrouping of endpoint charges with the
+unchanged tile inequalities, can repair this family. Actual hole credit does
+pay it, with exactly two unused holes. One adjacent relocation of a selection
+preserves P/M/cardinality and restores ownership. Fifty widths, 7,290 selector
+profiles (3,697 feasible) and seven scoped Lean declarations/axiom audits pass;
+the coordinate cover and uniqueness induction remain written. General hole
+transport, selection normalization and the universal 5/6 improvement remain open.
+[Independent review ACCEPT](output/unique-matching-hole-barrier-review.json)
+covers the written all-width results; the reviewer reports reproducing the
+Python output, and did not compile Lean.
+
 New [fixed-matching component-cut obstruction and square exchange](docs/ACTUAL_MATCHING_COMPONENT_CUT_AND_SQUARE_EXCHANGE.md):
 for every even h>=6 an explicit feasible h-by-4 board attains J=area/2,
 yet a closed tile set needs h distinct actual resources and has only h-1.
@@ -11,8 +28,8 @@ changing two actual edges. On the original matching the same repair pairs a +2 e
 a general alternating-cycle ledger transports any consistent rematched charge
 certificate without counting overlapping flips as separate payments. Negative
 tile credit and negative edge payment are the same reserve and cannot be added. Fifty coordinate/ledger/exchange controls
-pass; the written argument covers every even height. Universal rematching and
-the numerical 5/6 improvement remain open.
+pass; the written argument covers every even height. Universal rematching is refuted by the new unique-matching barrier above;
+the numerical 5/6 improvement remains open.
 
 The [actual-edge ownership lemma and bent relay family](docs/TURNING_ACTUAL_EDGE_COMPENSATION.md)
 give an exact Hall/endpoint-charge criterion and resource margin

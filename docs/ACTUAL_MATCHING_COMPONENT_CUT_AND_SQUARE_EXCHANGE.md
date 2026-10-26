@@ -1,5 +1,7 @@
 # A sharp component cut obstruction and a capacity-two square exchange
 
+Subsequent research [refutes universal rematching alone](UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md): a sharp all-width footprint has a unique matching and no feasible endpoint-only certificate. A guarded-hole cover and one-selection relocation provide alternative compensation there. The conditional transport lemmas below remain valid.
+
 For a fixed actual matching, the ownership criterion in
 [the turning compensation note](TURNING_ACTUAL_EDGE_COMPENSATION.md) is not
 universally feasible. We give a sharp, feasible `h × 4` family for every even

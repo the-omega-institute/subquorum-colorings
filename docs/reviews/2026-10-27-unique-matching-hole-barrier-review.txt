@@ -1,0 +1,108 @@
+ACCEPTThe note’s mathematical claims are correct within its stated scope. I found no required mathematical correction. The arguments establish the results for every even  $w\ge6$ ; the finite controls support those arguments without replacing the all-width proofs.In particular, the note correctly proves three different conclusions:For the fixed footprint  $P_w$ , the maximum over all feasible selected sets  $T$  is  $J=2w-1$ .For the displayed sharp  $T_w$ , ownership is impossible, as is any endpoint-charge certificate satisfying the unchanged tile inequalities and a nonpositive total charge condition—even when arbitrary groups of matching edges are permitted.Moving the specified single selected vertex produces a different feasible  $T$ , with the same  $P$ ,  $M$ ,  $|T|$ , and  $J$ , for which complete ownership exists.My review uses the definitions, arguments, and source supplied in    unique-matching-review.txt, independently of any previous review verdict. I executed the supplied Python verifier and reproduced its reported output. I did not compile Lean. The execution and formal-scope details appear below.1. The unique-matching peel is valid at arbitrary even widthWrite  $w=2n$ , where  $n\ge3$ . The displayed matching contains:
+$$2\text{ leaf edges},\qquad n-1\text{ row-zero edges},\qquad n-2\text{ row-one edges}.$$
+These edges are disjoint and cover  $P_w$ , so
+$$|M_w|=2+(n-1)+(n-2)=w-1,
+\qquad
+|P_w|=2w-2.$$
+For uniqueness, both  $(2,1)$  and  $(2,w-2)$  have exactly one neighbour in the induced graph on  $P_w$ . Consequently, every perfect matching contains their displayed vertical edges.After removing those two edges and their endpoints, the remaining vertices are precisely
+$$\{(0,j):1\le j\le w-2\}
+\;\cup\;
+\{(1,j):2\le j\le w-3\}.$$
+The following invariant makes the note’s induction explicit. Immediately before processing an odd column  $c\in\{1,3,\ldots,w-3\}$ , the remaining vertices are
+$$R_c=
+\{(0,j):c\le j\le w-2\}
+\;\cup\;
+\{(1,j):c+1\le j\le w-3\}.$$
+In this graph,  $(0,c)$  has exactly one neighbour,  $(0,c+1)$ , so that top edge is forced. If  $c\le w-5$ , then after removing it,  $(1,c+1)$  has exactly one remaining neighbour,  $(1,c+2)$ :Its upper neighbour was just removed.Its left neighbour is absent from  $R_c$ .Its possible row-two neighbour is outside  $P_w$ , since  $2\le c+1\le w-4$ .Its right neighbour is still present.Removing this forced bottom edge gives exactly  $R_{c+2}$ . At  $c=w-3$ , only the final top edge remains.Thus every displayed edge is forced in every perfect matching. This proves uniqueness for all even  $w\ge6$ .At  $w=6$ , after the two leaf edges, the successive forced edges are
+$$(0,1)(0,2),\qquad
+(1,2)(1,3),\qquad
+(0,3)(0,4).$$
+The intermediate bottom step is present, and the final step needs no further bottom edge. There is no boundary indexing defect.The absence of an  $M_w$ -alternating cycle follows: flipping such a cycle would produce a second perfect matching. Hence the claimed obstruction to alternating rematching and square flips is justified.2. The general guarded-cover injection and exact margin are correctThe two local exclusions use exactly the stated feasibility condition.If a vertex has two distinct neighbours in  $P$ , selecting it would give it two occupied neighbours. If  $\{a,b\}\subseteq V\setminus P$  is a guarded adjacent pair, with  $a$  adjacent to  $g\in P$ , selecting both  $a$  and  $b$  would give  $a$  the two distinct occupied neighbours  $b$  and  $g$ .Now suppose  $V\setminus P$  is partitioned into  $f$  forced-hole sites and  $m$  guarded pairs. Let  $a$  be the number of pairs containing no selection. Every other pair contains exactly one selection, so
+$$|T|=m-a.$$
+Each selected pair contributes one hole, each empty pair contributes two, and the forced-hole sites contribute  $f$ . Therefore
+$$|H|=(m-a)+2a+f=m+a+f,$$
+and hence
+$$|H|-|T|=f+2a.$$
+The proposed map sends each selected vertex to the other vertex of its pair. Its image is an actual adjacent hole: the partner lies outside  $P$ , and pair exclusion ensures it is unselected. Disjointness of the pairs makes the map injective.For a matching covering exactly  $P$ ,
+$$|V|=2|M|+|T|+|H|.$$
+Thus, with  $J=|T|+|M|$ ,
+$$2J=|V|-\bigl(|H|-|T|\bigr)
+=|V|-f-2a,$$
+which gives the claimed exact identity
+$$J=\frac{|V|}{2}-\frac f2-a.$$
+No extra matching property, colour restriction, freezing assumption, or independence between different pair choices is needed. In particular, the proof does not assume that every choice of at most one vertex per pair is feasible.3. The coordinate cover is complete, including  $w=6$  and  $w=8$ The proposed forced holes have the following distinct endpoint neighbours:
+$$\begin{aligned}
+(2,2)&:\quad (1,2),(2,1),\\
+(2,w-3)&:\quad (1,w-3),(2,w-2).
+\end{aligned}$$
+Both sites lie outside  $P_w$ , and they are distinct for  $w\ge6$ .Every proposed pair has an actual endpoint guard:PairGuard for its first displayed vertex $(0,0),(1,0)$  $(0,1)$  $(2,0),(3,0)$  $(2,1)$  $(0,w-1),(1,w-1)$  $(0,w-2)$  $(2,w-1),(3,w-1)$  $(2,w-2)$  $(3,1),(3,2)$  $(2,1)$  $(3,w-2),(3,w-3)$  $(2,w-2)$  $(2,c),(3,c)$ ,  $3\le c\le w-4$  $(1,c)$ The coverage and disjointness also hold exactly:The four boundary-column pairs cover every site in columns  $0$  and  $w-1$ .The two bottom end pairs cover row-three columns  $1,2,w-3,w-2$ .The interior vertical pairs cover both lower rows in columns  $3,\ldots,w-4$ .The remaining row-two sites are precisely the two endpoints and the two forced holes.There are
+$$4+2+(w-6)=w$$
+pairs.The small-width ranges behave correctly:WidthInterior vertical-pair columnsBottom end-pair column setsForced-hole columns $6$ Empty $\{1,2\}$ ,  $\{4,3\}$  $2,3$  $8$  $3,4$  $\{1,2\}$ ,  $\{6,5\}$  $2,5$ General even  $w\ge8$  $3,\ldots,w-4$  $\{1,2\}$ ,  $\{w-2,w-3\}$  $2,w-3$ At  $w=6$ , the two bottom pairs remain disjoint even though the interior vertical range is empty. At  $w=8$ , the two interior columns are disjoint from both end ranges.It follows that every feasible  $T\subseteq V\setminus P_w$  satisfies
+$$|T|\le w,\qquad
+J=2w-1-a\le2w-1.$$
+This quantifier is genuinely unrestricted over feasible  $T$ . The proof does not merely bound subsets of the displayed  $T_w$ , or selections retained from an earlier configuration.4. The explicit  $T_w$  attains the bound at every widthThe two additional ranges in formula (7) each have  $(w-6)/2$  elements:
+$$3,5,\ldots,w-5,
+\qquad
+4,6,\ldots,w-4.$$
+Both are empty when  $w=6$ . Together with the six explicitly listed boundary/end selections, they give
+$$|T_w|=6+\frac{w-6}{2}+\frac{w-6}{2}=w.$$
+There are no duplicate sites or intersections with  $P_w$ .The occupied-neighbour check is valid by vertex type:Each row-zero or row-two boundary selection has exactly its inward endpoint neighbour.Each bottom end selection has exactly the row-two endpoint above it.Each row-two odd interior selection has exactly its row-one endpoint above it. Its horizontal neighbours and its lower neighbour are holes.Each row-three even interior selection has no occupied neighbour. The site above it is unselected, and its horizontal neighbours have odd columns and are unselected.The end cases are covered by the ranges. In particular, an interior row-three selection at column  $w-4$  has a hole to its right at column  $w-3$ ; it is not adjacent to the bottom end selection at column  $w-2$ .At  $w=8$ , the two new interior selections are  $(2,3)$  and  $(3,4)$ . They are diagonal rather than adjacent.There is exactly one selection in every guarded pair. Therefore  $a=0$ , and
+$$|T_w|=w,\qquad |H_w|=w+2,\qquad
+J=w+(w-1)=2w-1.$$
+The universal upper bound and this feasible witness establish the claimed exact maximum:
+$$\boxed{\max_{\substack{T\cap P_w=\varnothing\\T\text{ feasible}}}
+\bigl(|T|+|M_w|\bigr)=2w-1.}$$
+5. The Hall-demand failure and outside ledger are exactFor the sharp configuration, define
+$$d_B=\max(0,|O\cap B|-2),\qquad
+r_B=\max(0,2-|O\cap B|),\qquad
+q_B=|T\cap B|-|H\cap B|.$$
+The tiles in  $U$  have these counts:| Tile type in  $U$  | Number |  $(|T_B|,|P_B|,|H_B|)$  |  $d_B$  |  $q_B$  |  $r_B$  ||---|---:|---:|---:|---:|---:|---:|| Bottom end |  $2$  |  $(2,1,1)$  |  $1$  |  $1$  |  $0$  || Top end |  $2$  |  $(1,2,1)$  |  $1$  |  $0$  |  $0$  || Interior top |  $n-2$  |  $(0,4,0)$  |  $2$  |  $0$  |  $0$  |Consequently,
+$$\sum_{B\in U}d_B=2+2+2(n-2)=w,
+\qquad
+\sum_{B\in U}q_B=2.$$
+Every endpoint lies in  $U$ . Thus every matching edge is incident to  $U$ , but the number of distinct physical edge resources is only  $w-1$ . The Hall demand exceeds capacity by exactly one.This argument applies to any perfect matching on the same  $P_w$ , irrespective of uniqueness. The uniqueness proof supplies the additional structural fact that no alternative perfect matching exists; it is not being used circularly to establish the capacity deficit.The omitted tiles have the claimed different small-width structures:At  $w=6$ : there is one omitted bottom tile, covering columns  $2,3$ . All four sites are holes, so  $q=-4$  and  $r=2$ .At  $w\ge8$ : the first omitted tile has sole selection  $(2,3)$ ; the last has sole selection  $(3,w-4)$ . Each has  $q=-2$  and  $r=1$ .Every strictly intervening omitted tile contains two selections,  $(3,c)$  and  $(2,c+1)$ , where  $c$  is its even left column. Hence it has  $q=r=0$ .At  $w=8$ , the first and last omitted tiles are distinct, and there are no intervening tiles. Thus, for every permitted width,
+$$\sum_{B\notin U}q_B=-4,\qquad
+\sum_Br_B=2,\qquad
+\sum_Bd_B=w.$$
+The conditional ownership bound is also correct. If  $D=\sum_Bd_B$ ,  $R=\sum_Br_B$ , and  $A=|V|$ , then
+$$D-R=|O|-\frac A2,$$
+so
+$$D=|T|+2|M|-\frac A2+R.$$
+Ownership would require  $D\le|M|$ , implying
+$$J\le\frac A2-R.$$
+Here  $R=2$ , whereas  $J=A/2-1$ . This contradicts universal ownership availability, not the conditional implication itself.6. The stronger endpoint-charge impossibility includes arbitrary groupsThis part of the note is sound and strictly stronger than failure of a particular ownership assignment.Suppose an arbitrary real-valued map  $\sigma:P_w\to\mathbb R$  satisfies the unchanged tile inequalities
+$$q_B\le \sum_{p\in P_w\cap B}\sigma(p).$$
+Summing over  $U$ , whose tiles contain all endpoints exactly once, gives
+$$2=\sum_{B\in U}q_B
+\le
+\sum_{p\in P_w}\sigma(p).
+\tag{*}$$
+Now let the matching edges be partitioned into arbitrary groups  $\mathcal G$ , and suppose every group has nonpositive total endpoint charge. Since the matching partitions  $P_w$ ,
+$$\sum_{p\in P_w}\sigma(p)
+=
+\sum_{G\in\mathcal G}
+\sum_{\{u,v\}\in G}
+\bigl(\sigma(u)+\sigma(v)\bigr)
+\le0,$$
+contradicting  $(*)$ .No bound on the individual charges is used. No geometric restriction on the groups is used. Allowing larger groups, nonlocal groups, or the entire matching as one group cannot repair the contradiction.The precise refuted class is therefore correctly identified: unchanged per-tile inequalities using endpoint charges, together with a nonpositive total-charge certificate, including any partition into nonpositive edge groups.The note also correctly preserves the limitation of that statement. It does not rule out accounting that explicitly uses negative hole slack across tiles, modifies the tile inequalities, or changes  $T$ .7. Hole compensation proves the numerical claim for the original configurationFor the original sharp  $T_w$ , every guarded pair has one selected site and one hole. Its partner map therefore uses every hole outside  $F_w$ , leaving exactly the two forced holes unused.The two cross-tile payments are particularly explicit:
+$$(3,1)\longmapsto(3,2),\qquad
+(3,w-2)\longmapsto(3,w-3).$$
+The image holes lie outside  $U$ , while the selected vertices lie in its positive bottom end tiles. These are distinct physical holes, including at  $w=6$ .Globally,
+$$\sum_Bq_B=2-4=-2,$$
+and therefore
+$$J=\frac{A+\sum_Bq_B}{2}=\frac A2-1.$$
+The units are consistent: two excess holes correspond to one unit of margin in  $J$ .Thus the original configuration already has a complete compensation proof. The endpoint-only certificate fails while the half-area numerical target holds, with strict margin one. The note makes that distinction correctly.8. The single relocation is feasible and repairs ownership at every widthLet
+$$T'_w=
+\bigl(T_w\setminus\{(3,w-2)\}\bigr)
+\cup\{(3,w-3)\}.$$
+The destination was a hole, the two sites are adjacent, and neither belongs to  $P_w$ . Hence this changes exactly one selected site and preserves cardinality.Feasibility at the boundary widthsAt  $w=6$ , the new site is  $(3,3)$ . Its neighbours are
+$$(2,3),\qquad (3,2),\qquad (3,4).$$
+The first two were holes, and the third becomes a hole when the old selection is removed. The new selected vertex has occupied degree zero.For every  $w\ge8$ , the new site has exactly one occupied neighbour,  $(3,w-4)$ :Its upper neighbour  $(2,w-3)$  is a forced hole.Its right neighbour is the vacated site.Its left neighbour  $(3,w-4)$  is selected.That left neighbour previously had occupied degree zero and gains only this one neighbour. No other selection acquires a new occupied neighbour. Feasibility is therefore preserved.Demands after relocationThe donor bottom tile changes from
+$$2T/1P/1H
+\quad\text{to}\quad
+1T/1P/2H,$$
+so its demand decreases from one to zero.The receiving tile remains endpoint-free. At  $w=6$ , it changes from zero selections to one; at  $w\ge8$ , from one to two. Its demand remains zero in both cases. All other demands are unchanged.The ownership construction is completeOn the tiles incident to matching edges, the intertile resource graph is the displayed path
+$$(1,0),(0,0),(0,1),\ldots,(0,n-1),(1,n-1).$$
+Its resources consist of:Two leaf edges connecting the bottom end tiles to the top end tiles. $n-1$  row-zero matching edges connecting consecutive top tiles.One internal row-one matching edge in each of the  $n-2$  interior top tiles.There are therefore  $n+1$  path edges and  $n-2$  internal edges, totalling
+$$(n+1)+(n-2)=2n-1=w-1.$$
+Assigning each path edge to its earlier tile and each internal edge locally gives:TileAssigned resourcesDemand after relocationLeft bottom end $1$  $1$ Left top end $1$  $1$ Each interior top tile $1$  internal  $+\;1$  outgoing path edge $2$ Right top end $1$  $1$ Right bottom end $0$  $0$ Omitted bottom tiles $0$  $0$ Every actual matching edge is used once, and every demand is met exactly.At  $w=6$ , the receiving tile’s sparse slack decreases from  $2$  to  $1$ . At  $w\ge8$ , the last omitted tile’s slack decreases from  $1$  to  $0$ , while the first omitted tile retains slack  $1$ . Thus total sparse slack becomes exactly one in both cases.The repaired certificate belongs to  $T'_w$ . It preserves  $P_w$  and  $M_w$  as sets, and preserves  $|T_w|$  and  $J$ , but it does not preserve  $T_w$  itself. The note states this distinction accurately and makes no unsupported universal-relocation claim.9. Executed controls and the seven Lean declarationsWhat I executedI extracted the four supplied Python source sections into their displayed relative paths, without changing their contents, and ran:Plain textpython3 develop/check_unique_matching_hole_barrier.pyThe run completed successfully with assertions enabled. It checked all 50 even widths from  $6$  through  $104$ , including matching coverage, selected degrees, leaf elimination, guarded cover, hole injection, counts, obstruction data, and the relocation ownership certificate.The selector and matching enumeration results were:WidthSelector profilesFeasible selector setsMaximizersPerfect matchings of  $P_w$  $6$  $729$  $441$  $16$  $1$  $8$  $6{,}561$  $3{,}256$  $33$  $1$ Total $7{,}290$  $3{,}697$  $49$ —I also parsed the fresh output JSON and compared it with the supplied output/unique-matching-hole-barrier.json; they were equal.The imported helper modules’ separate main() routines were not run. I did not execute a Z3 search or any additional mathematical search.The verifier’s scope is appropriate. In particular, the three-state enumeration exhausts all feasible  $T$  at widths  $6,8$  because the forced-hole and guarded-pair exclusions reduce every feasible selection to such a profile. The script then checks feasibility rather than assuming all profiles are feasible.Lean scopeI reviewed the seven supplied theorem declarations and their proofs as text:DeclarationWhat it establishestwo_endpoints_exclude_selectionTwo distinct endpoint neighbours exclude selection under Capacity.guarded_pair_exclusionThe guarded pair cannot have both sites selected.partner_injectiveAn involution is injective.selected_partner_is_holeExplicit nonselection and nonendpoint hypotheses imply hole membership.all_length_slot_boundA finite list of natural occupancies bounded by one has sum at most its length.exact_hole_marginThe exact objective identity follows from the supplied partition and hole-margin identities.fixed_footprint_boundThe stated objective bound follows arithmetically from  $t\le w$ .These are valid abstract building blocks for the written proof. They do not construct the coordinate cover, prove its adjacency or cardinalities, connect actual vertex counts to the slot list, establish matching uniqueness, prove the Hall/charge obstruction, or assemble the relocation certificate.The note and supplied formal-output record disclose those limitations correctly. The partner involution can indeed be extended by the identity outside the pairs, because those uncovered sites are endpoints or forced holes and contain no selection.I did not run Lean or independently reproduce the compiler and axiom audit. The attached report’s compilation result and axiom lists remain supplied execution evidence. My acceptance of the all-width mathematics rests on the written arguments checked above, with the reproduced Python run serving as finite control.   unique-matching-review.txtDocumentOpen file

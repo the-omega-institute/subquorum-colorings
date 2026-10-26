@@ -251,9 +251,10 @@ end-to-end Lean results. Compilation and exact scope are recorded separately.
 
 The [component-cut family](ACTUAL_MATCHING_COMPONENT_CUT_AND_SQUARE_EXCHANGE.md)
 proves that (H) need not hold for a fixed actual matching, and repairs that
-family using a single capacity-two square exchange. Universal existence of a
-suitable rematching, or a transfer rule retaining the original matching, remains
-open. Finite discovery checks do not decide either universal question. A conditional owner certificate is stronger than merely having a
+family using a single capacity-two square exchange. Universal existence of a suitable rematching is now refuted by the
+[unique-matching hole barrier](UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md).
+A general transfer rule admitting direct hole budgets or selection relocation
+remains open. Finite discovery checks do not decide either universal question. A conditional owner certificate is stronger than merely having a
 nonpositive total numerical excess, so failure of a candidate ownership rule
 must remain distinct from failure of the target inequality.
 
