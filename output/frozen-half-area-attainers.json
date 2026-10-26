@@ -1,0 +1,437 @@
+{
+  "status": "PASS",
+  "theorem": "Every m>=2, completely frozen: J<=18m+29+epsilon where epsilon indicates actual terminal vertical edge. Both epsilon values have sharp M0-retaining frozen attainers. Half-area equality forces four terminal matching edges.",
+  "proof": "Written coordinate construction, explicit two-witness strict-rank table and well-founded induction for arbitrary length. Finite controls do not substitute for this proof.",
+  "scope": "No universal 5/6 counterexample. The certificate has maximum rank 9m+7; equality of the minimal synchronous depth is observed in finite controls only.",
+  "counts": {
+    "terminal_local_matching_models": 17,
+    "explicit_terminal_trap_certificates": 16,
+    "optimistically_frozen_terminal_patterns": 1,
+    "strict_rank_endpoint_events": 20736,
+    "new_family_fully_frozen_board_checks": 65,
+    "explicit_endpoint_row_tables": 41,
+    "pocket_maximum_boundary_states": 41,
+    "pocket_controls": 82,
+    "all_optional_old_selections_absent_at_equality": 41,
+    "equality_pattern_controls": 41,
+    "token_injections": 82,
+    "terminal_guard_actually_absent": 41,
+    "actual_board_controls": 82,
+    "explicit_full_tile_token_bijections": 41,
+    "sharp_no_terminal_port_frozen_lengths": 41,
+    "sharp_frozen_lengths": 41,
+    "isometry_controls": 24
+  },
+  "records": [
+    {
+      "m": 2,
+      "selected": 39,
+      "matching": 27,
+      "endpoints": 54,
+      "objective": 66,
+      "certificate_max_rank": 25,
+      "observed_synchronous_layers": 26,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 3,
+      "selected": 48,
+      "matching": 36,
+      "endpoints": 72,
+      "objective": 84,
+      "certificate_max_rank": 34,
+      "observed_synchronous_layers": 35,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 4,
+      "selected": 57,
+      "matching": 45,
+      "endpoints": 90,
+      "objective": 102,
+      "certificate_max_rank": 43,
+      "observed_synchronous_layers": 44,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 5,
+      "selected": 66,
+      "matching": 54,
+      "endpoints": 108,
+      "objective": 120,
+      "certificate_max_rank": 52,
+      "observed_synchronous_layers": 53,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 6,
+      "selected": 75,
+      "matching": 63,
+      "endpoints": 126,
+      "objective": 138,
+      "certificate_max_rank": 61,
+      "observed_synchronous_layers": 62,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 7,
+      "selected": 84,
+      "matching": 72,
+      "endpoints": 144,
+      "objective": 156,
+      "certificate_max_rank": 70,
+      "observed_synchronous_layers": 71,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 8,
+      "selected": 93,
+      "matching": 81,
+      "endpoints": 162,
+      "objective": 174,
+      "certificate_max_rank": 79,
+      "observed_synchronous_layers": 80,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 9,
+      "selected": 102,
+      "matching": 90,
+      "endpoints": 180,
+      "objective": 192,
+      "certificate_max_rank": 88,
+      "observed_synchronous_layers": 89,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 10,
+      "selected": 111,
+      "matching": 99,
+      "endpoints": 198,
+      "objective": 210,
+      "certificate_max_rank": 97,
+      "observed_synchronous_layers": 98,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 11,
+      "selected": 120,
+      "matching": 108,
+      "endpoints": 216,
+      "objective": 228,
+      "certificate_max_rank": 106,
+      "observed_synchronous_layers": 107,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 12,
+      "selected": 129,
+      "matching": 117,
+      "endpoints": 234,
+      "objective": 246,
+      "certificate_max_rank": 115,
+      "observed_synchronous_layers": 116,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 13,
+      "selected": 138,
+      "matching": 126,
+      "endpoints": 252,
+      "objective": 264,
+      "certificate_max_rank": 124,
+      "observed_synchronous_layers": 125,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 14,
+      "selected": 147,
+      "matching": 135,
+      "endpoints": 270,
+      "objective": 282,
+      "certificate_max_rank": 133,
+      "observed_synchronous_layers": 134,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 15,
+      "selected": 156,
+      "matching": 144,
+      "endpoints": 288,
+      "objective": 300,
+      "certificate_max_rank": 142,
+      "observed_synchronous_layers": 143,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 16,
+      "selected": 165,
+      "matching": 153,
+      "endpoints": 306,
+      "objective": 318,
+      "certificate_max_rank": 151,
+      "observed_synchronous_layers": 152,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 17,
+      "selected": 174,
+      "matching": 162,
+      "endpoints": 324,
+      "objective": 336,
+      "certificate_max_rank": 160,
+      "observed_synchronous_layers": 161,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 18,
+      "selected": 183,
+      "matching": 171,
+      "endpoints": 342,
+      "objective": 354,
+      "certificate_max_rank": 169,
+      "observed_synchronous_layers": 170,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 19,
+      "selected": 192,
+      "matching": 180,
+      "endpoints": 360,
+      "objective": 372,
+      "certificate_max_rank": 178,
+      "observed_synchronous_layers": 179,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 20,
+      "selected": 201,
+      "matching": 189,
+      "endpoints": 378,
+      "objective": 390,
+      "certificate_max_rank": 187,
+      "observed_synchronous_layers": 188,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 21,
+      "selected": 210,
+      "matching": 198,
+      "endpoints": 396,
+      "objective": 408,
+      "certificate_max_rank": 196,
+      "observed_synchronous_layers": 197,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 22,
+      "selected": 219,
+      "matching": 207,
+      "endpoints": 414,
+      "objective": 426,
+      "certificate_max_rank": 205,
+      "observed_synchronous_layers": 206,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 23,
+      "selected": 228,
+      "matching": 216,
+      "endpoints": 432,
+      "objective": 444,
+      "certificate_max_rank": 214,
+      "observed_synchronous_layers": 215,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 24,
+      "selected": 237,
+      "matching": 225,
+      "endpoints": 450,
+      "objective": 462,
+      "certificate_max_rank": 223,
+      "observed_synchronous_layers": 224,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 25,
+      "selected": 246,
+      "matching": 234,
+      "endpoints": 468,
+      "objective": 480,
+      "certificate_max_rank": 232,
+      "observed_synchronous_layers": 233,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 26,
+      "selected": 255,
+      "matching": 243,
+      "endpoints": 486,
+      "objective": 498,
+      "certificate_max_rank": 241,
+      "observed_synchronous_layers": 242,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 27,
+      "selected": 264,
+      "matching": 252,
+      "endpoints": 504,
+      "objective": 516,
+      "certificate_max_rank": 250,
+      "observed_synchronous_layers": 251,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 28,
+      "selected": 273,
+      "matching": 261,
+      "endpoints": 522,
+      "objective": 534,
+      "certificate_max_rank": 259,
+      "observed_synchronous_layers": 260,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 29,
+      "selected": 282,
+      "matching": 270,
+      "endpoints": 540,
+      "objective": 552,
+      "certificate_max_rank": 268,
+      "observed_synchronous_layers": 269,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 30,
+      "selected": 291,
+      "matching": 279,
+      "endpoints": 558,
+      "objective": 570,
+      "certificate_max_rank": 277,
+      "observed_synchronous_layers": 278,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 31,
+      "selected": 300,
+      "matching": 288,
+      "endpoints": 576,
+      "objective": 588,
+      "certificate_max_rank": 286,
+      "observed_synchronous_layers": 287,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 32,
+      "selected": 309,
+      "matching": 297,
+      "endpoints": 594,
+      "objective": 606,
+      "certificate_max_rank": 295,
+      "observed_synchronous_layers": 296,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 33,
+      "selected": 318,
+      "matching": 306,
+      "endpoints": 612,
+      "objective": 624,
+      "certificate_max_rank": 304,
+      "observed_synchronous_layers": 305,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 34,
+      "selected": 327,
+      "matching": 315,
+      "endpoints": 630,
+      "objective": 642,
+      "certificate_max_rank": 313,
+      "observed_synchronous_layers": 314,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 35,
+      "selected": 336,
+      "matching": 324,
+      "endpoints": 648,
+      "objective": 660,
+      "certificate_max_rank": 322,
+      "observed_synchronous_layers": 323,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 36,
+      "selected": 345,
+      "matching": 333,
+      "endpoints": 666,
+      "objective": 678,
+      "certificate_max_rank": 331,
+      "observed_synchronous_layers": 332,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 37,
+      "selected": 354,
+      "matching": 342,
+      "endpoints": 684,
+      "objective": 696,
+      "certificate_max_rank": 340,
+      "observed_synchronous_layers": 341,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 38,
+      "selected": 363,
+      "matching": 351,
+      "endpoints": 702,
+      "objective": 714,
+      "certificate_max_rank": 349,
+      "observed_synchronous_layers": 350,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 39,
+      "selected": 372,
+      "matching": 360,
+      "endpoints": 720,
+      "objective": 732,
+      "certificate_max_rank": 358,
+      "observed_synchronous_layers": 359,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 40,
+      "selected": 381,
+      "matching": 369,
+      "endpoints": 738,
+      "objective": 750,
+      "certificate_max_rank": 367,
+      "observed_synchronous_layers": 368,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 64,
+      "selected": 597,
+      "matching": 585,
+      "endpoints": 1170,
+      "objective": 1182,
+      "certificate_max_rank": 583,
+      "observed_synchronous_layers": 584,
+      "unspent_half_tokens": 0
+    },
+    {
+      "m": 100,
+      "selected": 921,
+      "matching": 909,
+      "endpoints": 1818,
+      "objective": 1830,
+      "certificate_max_rank": 907,
+      "observed_synchronous_layers": 908,
+      "unspent_half_tokens": 0
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/FrozenHalfAreaAttainers.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.rank_forces_closed",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.certificate_implies_frozen",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.trap_excludes_frozen",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.early_ranks",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_white_step",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_white_terminal",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_black_early",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_black_step",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_black_terminal",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.left_port_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.right_return_start",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.bridge_precedes_H",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_whites_precede_H",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.return_core_steps",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.return_bridge_step",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.old_core_white_max",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.last_white_rank",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.lower_and_port_rank_max",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.bridge_rank_max",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.construction_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.exact_token_budget",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.full_tile_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.terminal_port_frontier",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenHalfAreaAttainers.terminal_port_token_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3743 \nPages purgeable: 18 \nPages purged: 257161676 \n\nSwap I/O:\nSwapins: 241768652 \nSwapouts: 256245811 \n\nPage Q counts:\nPages active: 154403 \nPages inactive: 144243 \nPages speculative: 8957 \nPages throttled: 0 \nPages wired down: 230447 \n\nCompressor Stats:\nPages used by compressor: 465001 \nPages decompressed: 6316778838 \nPages compressed: 7174218369 \n\nFile I/O:\nPageins: 8548127787 \nPageouts: 25876062 \n\nSystem-wide memory free percentage: 30%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3515.\nPages active:                                 154528.\nPages inactive:                               144344.\nPages speculative:                              8960.\nPages throttled:                                   0.\nPages wired down:                             230449.\nPages purgeable:                                  18.\n\"Translation faults\":                    30167863690.\nPages copy-on-write:                      1482709111.\nPages zero filled:                       12106722573.\nPages reactivated:                        6563352244.\nPages purged:                              257161676.\nFile-backed pages:                            101913.\nAnonymous pages:                              205919.\nPages stored in compressor:                  3185523.\nPages occupied by compressor:                 464999.\nDecompressions:                           6316779033.\nCompressions:                             7174218369.\nPageins:                                  8548127788.\nPageouts:                                   25876062.\nSwapins:                                   241768680.\nSwapouts:                                  256245811."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3793 \nPages purgeable: 2 \nPages purged: 257163209 \n\nSwap I/O:\nSwapins: 241775245 \nSwapouts: 256257815 \n\nPage Q counts:\nPages active: 154416 \nPages inactive: 142738 \nPages speculative: 10369 \nPages throttled: 0 \nPages wired down: 230562 \n\nCompressor Stats:\nPages used by compressor: 464870 \nPages decompressed: 6316790886 \nPages compressed: 7174237471 \n\nFile I/O:\nPageins: 8548132787 \nPageouts: 25876066 \n\nSystem-wide memory free percentage: 30%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3847.\nPages active:                                 154444.\nPages inactive:                               142757.\nPages speculative:                             10373.\nPages throttled:                                   0.\nPages wired down:                             230562.\nPages purgeable:                                   2.\n\"Translation faults\":                    30167907761.\nPages copy-on-write:                      1482710952.\nPages zero filled:                       12106735351.\nPages reactivated:                        6563359700.\nPages purged:                              257163209.\nFile-backed pages:                            107334.\nAnonymous pages:                              200240.\nPages stored in compressor:                  3192398.\nPages occupied by compressor:                 464900.\nDecompressions:                           6316790933.\nCompressions:                             7174237471.\nPageins:                                  8548132788.\nPageouts:                                   25876066.\nSwapins:                                   241775281.\nSwapouts:                                  256257815."
+    }
+  ],
+  "scope": "Generic well-founded strict-rank implication into least freezing closure and exclusion by a freezing trap; all-length early/lower/return-wave rank comparisons, maximum certificate rank, construction counts and sharp terminal-port bound/token arithmetic.",
+  "not_formalized": "Actual coordinate/matching adapter, endpoint partition, selected feasibility, witness adjacency/selection exact physical tile-charge table and the coordinate instantiation of terminal traps are written proofs with independent Python checks. The generic rank theorem is not an end-to-end Lean graph instantiation."
+}

@@ -1,5 +1,11 @@
 # Withdrawing the terminal guard: exact half-area frontier
 
+**Subsequent resolution (27 October):**
+[Completely frozen attainers and a sharp terminal-port criterion](FROZEN_HALF_AREA_ATTAINERS.md)
+settle the frozen maximum left open in this note. It is also half-area;
+forbidding the terminal vertical matching edge restores the one-unit margin.
+The historical open-question statements below describe the preceding stage.
+
 26 October 2026. Wenlin Zhang and Haobo Ma. Research continuation.
 
 Removing the last retained row-three guard changes the exact unrestricted

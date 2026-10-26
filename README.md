@@ -1,12 +1,23 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [completely frozen half-area frontier and terminal-port compensation](docs/FROZEN_HALF_AREA_ATTAINERS.md):
+for every m>=2 the exact frozen bound is J<=18m+29+epsilon, where epsilon
+records the actual terminal vertical matching edge. Both values are attained
+while retaining M0. An explicit all-length rank certificate proves complete
+freezing of half-area attainers, and a local trap proof forces four terminal
+edges at equality. The physical budget Cplus>=Cminus+m+2(1-epsilon) never
+reuses a token; the half-area family has an explicit bijection spending all
+positive tokens. The earlier one-unit reserve therefore requires a boundary
+condition even under complete freezing.
+
 New [terminal-guard half-area frontier](docs/TERMINAL_GUARD_HALF_AREA_FRONTIER.md):
 after also allowing the terminal row-three guard to be withdrawn, the exact
 unrestricted actual-matching maximum becomes 18m+30=area/2 for every m>=2.
 A ten-site terminal inequality proves the upper bound; a three-chunk periodic
 family attains it. Physical surplus pays exterior debts and the strip deficit
-once, with no additional reserve. The sharp family has a provably nonfrozen
-endpoint: the fully frozen optimum is still one of 18m+29 and 18m+30.
+once, with no additional reserve. That initial sharp family has a provably nonfrozen
+endpoint; the subsequent frozen-frontier theorem above resolves the frozen
+optimum and its sharp terminal-port condition.
 The preceding stronger theorem remains valid with its retained terminal guard.
 
 New [boundary withdrawals and propagation of compensation](docs/BOUNDARY_WITHDRAWAL_AND_PROPAGATED_COMPENSATION.md):
