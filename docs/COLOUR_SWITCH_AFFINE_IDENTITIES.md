@@ -484,4 +484,3 @@ The identity is
       + 36·(-1-h01-h03-h05-h07-h10-h12-h14-h23-h30-h32-h34-h41-h43-h50-h52+t00+t02+t04+t06+t13+t20+t22+t24+t31+t33+t40+t42+t44+t51+t53)  # positive_black_deficit
 
 Hence the objective is at most 9/15<1, and integrality gives the required nonpositive bound.
-
