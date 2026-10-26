@@ -1,0 +1,383 @@
+# Simultaneous edge capacities do not close the connected-band relaxation
+
+26 October 2026. Wenlin Zhang and Haobo Ma. Research note.
+
+We strengthen the preceding [mate-coverage barrier](CONNECTED_BAND_MATE_COVERAGE_BARRIER.md) in two directions. First, a five-vertex Hall set shows exactly why that note's 92-scaled point has no simultaneous fractional matching extension. Second, a different, 80-scaled point has an explicit matching-edge extension on every sufficiently long finite board. It exceeds the proposed **whole-board** bound, within the specified fractional relaxation. Thus adding all matching capacities and Hall inequalities to that relaxation does not suffice. This is not an integer or completely frozen counterexample.
+
+## 1. Domain and precise relaxation
+
+Use the b=1 family on the 6-by-(6m+10) board, with k=m+1, m>=2. Keep the old endpoint set P0 and retain
+
+    R=T0 minus {g_i,h_i:0<=i<m} minus {f_i:0<=i<m-1},
+    g_i=(3,9+6i), h_i=(4,8+6i), f_i=(4,12+6i).
+
+These are withdrawal permissions; they do not force deletion. Here |R|=5m+14 and |P0|=8m+10. The available set U is disjoint from R and P0, and no vertex of U is adjacent to R. It is the disjoint union of the connected C_m, the fixed 15-site pocket, and two isolated sites. Explicitly,
+
+    C_m row2: 9+6j,11+6j                    (0<=j<m)
+        row3: 9+6j,10+6j,11+6j              (0<=j<m)
+        row4: 8,...,6m+4
+        row5: 7,...,6m+5.
+
+Thus |C_m|=17m-4. The isolates are (5,6m+7),(5,6m+9).
+
+Put a nonnegative real x_e on every grid edge with both ends in U union P0. Define
+
+    p_v=sum_{e incident to v} x_e.
+
+Require p_v=1 for v in P0 and 0<=t_v<=t_v+p_v<=1 for v in U. Set o_v=t_v+p_v on U. Every edge uses its weight once at each of its two endpoints; shared mates have one common capacity. There are no independent, reusable per-vertex matching budgets.
+
+Also impose **all** constraints of Section 2.1 in the [companion note](SUCCESSOR_GUARD_COMPENSATION_AND_CONNECTED_CUT_BARRIER.md): old-endpoint forbiddance and anchors, ordinary wedges, full selected-degree inequalities, bottom closed-star charge<=6 on C_m, and every contained gh13/h7/gf13/f10 module window. We impose the occupation/anchor/wedge/full-degree constraints on the pocket and isolates as well. Retained selections, old endpoints and forced blanks additionally satisfy ordinary whole-grid occupation, wedge and full selected-degree inequalities.
+
+The objective is
+
+    J=|R|+sum_{v in U} t_v+sum_e x_e.
+
+This relaxation contains every actual matching/selection configuration in the permissions class, but permits fractional selections. We impose no freezing conditions. As the underlying graph is bipartite, these edge variables already satisfy the entire bipartite matching polytope and all its Hall inequalities. Moreover they lie in the face that covers every old endpoint: in any convex decomposition into integral matchings, each old endpoint is covered in every matching of positive weight. This fact does not make the accompanying selection variables integral or jointly feasible with those matchings.
+
+### 1.1 Complete old-family and free-domain coordinates
+
+For self-contained verification set q=m+1. Start with the templates
+
+    Tcore={(0,2),(0,4),(1,1),(1,5),(4,3),(4,5),(3,6)},
+    Mcore={ (1,2)--(1,3), (1,4)--(2,4),
+            (2,3)--(3,3), (3,4)--(3,5) }.
+
+For every i=0,...,q-1 translate every core coordinate by (0,3+6i). T0 is the union of these translated Tcore sets, together with {(0,3+6i):0<=i<=q} and {(0,1),(1,2),(2,0),(3,1)}. M0 is the union of the translated Mcore edges together with (1,1)--(2,1). P0 is its endpoint set. Define R by the permissions in Section 1. These rules determine all sets on the actual finite board without any periodic identification of finite vertices.
+
+The pocket is exactly
+
+    {(2,3),(2,5),(3,3),(3,4),(3,5),(4,0),(4,2),(4,3),
+     (4,4),(5,0),(5,1),(5,2),(5,3),(5,4),(5,5)}.
+
+Equivalently, let A_R={r in R: r has a neighbour in P0}. Then U consists of board vertices outside R union P0 having no neighbour in A_R. This gives the displayed C_m, pocket and two isolates. The remaining board vertices are forced blanks. Row-by-row substitution also verifies that no free vertex is adjacent to any retained selection.
+
+### 1.2 The complete additional linear system
+
+For each v in U, put N_U(v)=N_grid(v) intersect U, d_v=|N_U(v)| and b_v=|N_grid(v) intersect P0|. Require:
+
+    0<=t_v<=o_v=t_v+sum_{e incident to v}x_e<=1;
+    t_v=0 if b_v>=2;
+    t_v+o_u<=1 for every u in N_U(v), if b_v>=1;
+    t_v+o_u+o_w<=2 for distinct u,w in N_U(v);
+    (d_v+b_v-1)t_v+sum_{u in N_U(v)}o_u<=d_v.
+
+At each bottom vertex v in C_m require sum_{u in {v} union N_U(v)}(t_u+o_u)<=6. For each of the following relative-coordinate sets W and every integer i for which S={(r,c+9+6i):(r,c) in W} is contained in C_m, impose sum_{v in S}(t_v+o_v)<=B:
+
+    gh13: B=16, W=[(2,0),(2,2),(3,0),(3,1),(3,2),(4,-1),(4,0),(4,1),(5,-2),(5,-1),(5,0),(5,1),(5,2)]
+    h7: B=10, W=[(4,-1),(4,1),(5,-2),(5,-1),(5,0),(5,1),(5,2)]
+    gf13: B=16, W=[(2,0),(2,2),(3,0),(3,1),(3,2),(4,1),(4,2),(4,3),(5,0),(5,1),(5,2),(5,3),(5,4)]
+    f10: B=12, W=[(2,2),(3,2),(4,1),(4,2),(4,3),(5,0),(5,1),(5,2),(5,3),(5,4)]
+
+For ordinary whole-board checks set t=1 on R, t=0 on P0 and all forced blanks, p=1 on P0, p=0 on R and all forced blanks, and use the free t,p elsewhere. At every board vertex require 0<=t<=o=t+p<=1, every wedge t_v+o_u+o_w<=2 for distinct grid neighbours u,w, and (deg_grid(v)-1)t_v+sum_{u adjacent v}o_u<=deg_grid(v). These are redundant strengthenings for the construction, verified independently of the reduced free-domain inequalities. The matching equalities p_v=1 on P0 and shared edge-variable definition of p are always retained.
+
+## 2. An exact Hall obstruction to the preceding point
+
+Write a=6m and take
+
+    A={(1,a+6),(2,a+5),(2,a+7),(3,a+6),(3,a+8)},
+    N={(1,a+5),(1,a+7),(2,a+6),(3,a+5),(3,a+7)}.
+
+All vertices of A have the same chessboard parity. Direct grid adjacency within U union P0 gives **exactly** N(A)=N. Four vertices of each set are old endpoints. The remaining ones are u=(2,a+5) in A and v=(3,a+5) in N. For every simultaneous fractional matching,
+
+    sum_{w in A} p_w <= sum_{w in N} p_w,
+
+because each edge leaving A contributes to the right side, and each right-side vertex has only its one shared endpoint capacity. The four old endpoints on each side cancel, giving the useful terminal boundary inequality
+
+    p_(2,6m+5) <= p_(3,6m+5).                         (1)
+
+The preceding 92-scaled point instead has p_u=1 and p_v=61/92. Its demand on A is 460/92, while N has only 429/92: a deficit of **31/92**. The bottom-right patch in that note affects neither set. The obstruction is independent of all pocket choices and holds for every m>=2 by translation.
+
+This is a matching-capacity obstruction to that particular point. It does not establish that matching capacities repair the relaxation; the next construction shows otherwise.
+
+## 3. A periodic point with simultaneous matching edges
+
+All entries below are multiplied by 80. Unlisted selection or edge weights are zero. Columns are taken modulo 6 only in this periodic table, not in a finite board. The old endpoint phases are
+
+    (1,0),(1,1),(1,5),(2,0),(2,1),(3,0),(3,1),(3,2).
+
+The retained selection phases are (0,1),(0,3),(0,5),(1,2),(1,4). The free phases are exactly the 17 phases listed below.
+
+| Free phase | 80t | 80p | 80o |
+| --- | ---: | ---: | ---: |
+| (2, 3) | 80 | 0 | 80 |
+| (2, 5) | 0 | 80 | 80 |
+| (3, 3) | 0 | 56 | 56 |
+| (3, 4) | 44 | 36 | 80 |
+| (3, 5) | 0 | 60 | 60 |
+| (4, 0) | 36 | 18 | 54 |
+| (4, 1) | 26 | 18 | 44 |
+| (4, 2) | 36 | 18 | 54 |
+| (4, 3) | 40 | 4 | 44 |
+| (4, 4) | 36 | 0 | 36 |
+| (4, 5) | 36 | 8 | 44 |
+| (5, 0) | 35 | 9 | 44 |
+| (5, 1) | 54 | 0 | 54 |
+| (5, 2) | 39 | 5 | 44 |
+| (5, 3) | 54 | 0 | 54 |
+| (5, 4) | 44 | 0 | 44 |
+| (5, 5) | 54 | 8 | 62 |
+
+The nonzero periodic edge weights are:
+
+| Edge phases | 80x |
+| --- | ---: |
+| (1, 0)--(1, 1) | 56 |
+| (1, 0)--(1, 5) | 24 |
+| (1, 1)--(2, 1) | 24 |
+| (1, 5)--(2, 5) | 56 |
+| (2, 0)--(3, 0) | 80 |
+| (2, 1)--(3, 1) | 56 |
+| (2, 5)--(3, 5) | 24 |
+| (3, 1)--(3, 2) | 15 |
+| (3, 1)--(4, 1) | 9 |
+| (3, 2)--(3, 3) | 52 |
+| (3, 2)--(4, 2) | 13 |
+| (3, 3)--(4, 3) | 4 |
+| (3, 4)--(3, 5) | 36 |
+| (4, 0)--(4, 1) | 9 |
+| (4, 0)--(5, 0) | 9 |
+| (4, 2)--(5, 2) | 5 |
+| (4, 5)--(5, 5) | 8 |
+
+The edge (1,0)--(1,5) joins neighbouring columns across a period boundary. This notation never creates a long finite-board edge.
+
+**Periodic substitution.** At every old endpoint the incident weights sum to 80. At every free vertex, t+p<=80. Substituting the table into every anchor, wedge, full-degree constraint and bottom-star bound verifies the displayed relaxation. The four module windows are likewise checked on their actual vertex sets. In one period,
+
+    sum free t=614/80,
+    sum all edges x=480/80,
+    Q=sum_{C}(2t+p)=1548/80=387/20,
+    retained contribution=5.
+
+For an explicit substitution check, the scaled charges of gh13, h7, gf13 and f10 are respectively 1229, 665, 1221 and 881, below 1280, 800, 1280 and 960. The six bottom-star charges are 393, 340, 389, 363, 384 and 363, each at most 480. The only positive full-degree slacks are 24 at (2,3), 20 at (2,5), and 36 at (3,3),(3,5); the other 13 free phase constraints are tight.
+
+Thus one full period contributes
+
+    5+614/80+480/80=1494/80=747/40
+
+to J, strictly more than 18. These are substitutions in explicit linear inequalities, not an enumeration of configurations or an assertion of an LP optimum.
+
+## 4. Finite boundaries and a general splice proof
+
+A finite seed at m=8 is specified completely by the sparse integer lists in
+[the exact fixture](../develop/fixtures/connected_band_fractional_matching_splice.json). Its `base.T` and `base.X` lists give 80t and 80x on actual grid coordinates; omitted entries are zero. Appendix A reproduces both lists. The `period` lists are the preceding table. A direct substitution into the seed's constraints gives
+
+    Q(C_8)=12069/80,
+    J_8=13346/80.
+
+Outside C_8, all new selection weights vanish and the only nonzero new endpoint weight is p_(2,5)=63/80; both isolates have weight zero. In particular
+
+    J_8=|R|+|P0|/2+(12069+63)/160.
+
+On columns 20 through 40, inclusive, the seed's vertex types and t-values coincide exactly with the periodic table; every edge with both ends in this collar has its periodic weight.
+
+For any m>=8, let d=6(m-8) and insert d columns at column 24. Define t on free sites by the seed for c<24, by the periodic table for 24<=c<24+d, and by the seed at column c-d for c>=24+d. For actual candidate matching edges e, use:
+
+1. The seed weight when both endpoints have column<24.
+2. The translated seed weight when both have column>=24+d.
+3. The periodic weight in every remaining case, including both seams.
+
+The two cases overlap nowhere when d>0; for d=0 an edge crossing the cut has its seed weight because the seed agrees with the periodic table there. Every generated edge is an actual nearest-neighbour grid edge.
+
+Here is why this verifies **all lengths**, rather than only the finitely checked examples. Expand p and o into incident x variables. A vertex constraint then has horizontal support of diameter at most 4. A module-window constraint has diameter at most 6, since its sites span at most 4 columns and incident edges extend by at most one column at each end. Every other constraint has no larger support. The spliced board agrees with the infinite periodic assignment throughout columns 20 through 40+d.
+
+If a constraint uses any nonperiodic data to the left of this collar, its entire support ends no later than column 25. It is consequently the unchanged corresponding seed constraint. If it uses any nonperiodic data to the right, its entire support begins no earlier than column 35+d, and translation by -d gives the seed constraint. It cannot use both kinds of nonperiodic data because their separation exceeds 6. Every remaining local defining constraint is a periodic substitution. Global Hall inequalities may have larger support; they hold as consequences of the explicit simultaneous edge variables and are not part of this bounded-support classification. The domain/vertex-type statement follows from the displayed C_m rows and the six-periodic old family; the pocket and the right boundary are respectively unchanged and translated. This proves all matching equalities, capacities, and occupation constraints for every m>=8. No allowance is charged twice: x_e is a single shared edge variable throughout the splice.
+
+There is no uncounted seam term. In scaled units, the only positive edge crossing the seed cut between columns23 and24 has weight24. For q=m-8>=1 inserted periods, internal edges contribute480q-24, the two seams contribute24+24, and the removed old crossing contributed24. The net edge increment is480q. The inserted selections contribute614q, and R gains5q sites. Thus
+
+    sum_e x_e=(4240+480(m-8))/80=6m+5,
+    sum_{v in U}t_v=(4786+614(m-8))/80=(614m-126)/80.
+
+The free endpoint charge outside C_m remains63/80. The identity 2sum_e x_e=|P0|+sum_{v in U}p_v then confirms the corresponding increment1548/80 in Q. Therefore:
+
+**Theorem.** For every m>=8, the specified fractional relaxation has a point with simultaneous matching edges and
+
+    Q(C_m)=(1548m-315)/80,
+    J_m=(1494m+1394)/80=(747m+697)/40.              (2)
+
+In particular,
+
+    J_m-(18m+29)=(27m-463)/40>0   for every m>=18. (3)
+
+For m=18 the board is 6-by-118, J=14143/40=353+23/40, while the candidate bound is 353. At m>=19 this relaxation also exceeds the half-area value 18m+30, since its gap is (27m-503)/40. Both statements concern fractional selections.
+
+## 5. Consequences for the proof strategy
+
+The original isolated integer cut Q(C_m)<=18m-2 was already refuted in the companion note without freezing. The present result addresses a stronger proposed repair: combining the pocket and connected band and supplying the entire matching-edge system still cannot prove J<=18m+29 from the stated fractional occupation constraints. The point in (2) satisfies that stronger system and violates its proposed conclusion. Consequently no linear combination of those constraints, even supplemented by all valid matching-polytope/Hall inequalities alone, proves that conclusion.
+
+More generally, the slope747/40 is greater than18, so no inequality J<=18m+B with a fixed boundary constant B holds throughout this relaxation.
+
+This does **not** rule out stronger occupation inequalities, joint selection/matching disjunctions or integrality arguments. It also does not address what complete freezing forces. The matching x lies in the integral bipartite matching polytope; the missing issue is the **joint** selection/occupation structure. Taking a convex decomposition of x does not supply compatible integral selections for its summands.
+
+The candidate integer value18m+29 is already attained for every m>=2 by the completely frozen all-g permission attainer of the successor-guard theorem: take k=m+1 and |G|=m. That construction retains all h and f, so it remains admissible in the larger G/H/F permissions class used here. What is open in this larger class is the corresponding upper bound. The present fractional excess must not be called an integrality-gap value relative to the unknown integer optimum.
+
+The next useful proof direction is therefore an integer or freezing-aware joint boundary lemma. Replacing per-vertex mate coverage by more matching-only constraints, while retaining this precise fractional occupation relaxation, cannot close its bulk gap. Whether the actual integer whole-board frontier holds, and any general improvement of the 5/6 bound, remain open.
+
+## 6. Verification scope
+
+The independent standard-library checker uses integer arithmetic throughout and consumes no solver output beyond the explicit witness data. It checks the exact periodic collar, 20 finite splice lengths through m=128, 20,696 candidate edge capacities, 4,168 old-endpoint equalities, 8,692 free-vertex checks, 19,056 full-board vertex checks, 2,956 bottom stars and 1,944 module windows. It also checks five translated instances of the terminal Hall set. These controls corroborate the support/splice proof; they do not replace it.
+
+The supplied Lean module checks the finite seed's edge capacities, local and whole-board occupation constraints, all contained module windows, the periodic matching/local constraints, the periodic collar, seed/period sums, the terminal Hall set at m=2, and the arithmetic implication of (2) for every m>=18. All eleven Lean declarations passed with Lean 4.33.0: ten are axiom-free kernel computations; the integer arithmetic theorem uses only the standard axioms. No sorry, native_decide or added axioms. The additional two-declaration module independently checks the corrected retained phases, their neighbour property, and the entire periodic whole-board occupation/degree/matching system. The general identification of supplied coordinate lists with the old family, the all-length splice/support classification, and the general Hall edge-counting argument remain written proofs with exact Python controls. This is not an end-to-end all-grid Lean theorem. No integer or freezing certificate is claimed.
+
+Discovery used SciPy/HiGHS only to find rational entries. The exact verifier and formal source have no optimization dependency. This result is outside the earlier successor-guard Oracle review's scope. The submitted 11 October manuscript is preserved.
+
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_connected_band_fractional_matching.py --output output/connected-band-fractional-matching-validation.json
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_connected_band_fractional_matching_formal.py --lean /path/to/lean-4.33.0/bin/lean --output output/connected-band-fractional-matching-formal-validation.json
+
+### Oracle source review and applied correction
+
+The first review (task30be0f3a-d2bd-4a81-ace9-d3f6ffd755ff) requested the old-family and exact window definitions, which are now reproduced in Section1. The original CLI stream failed with EOF; the same completed task was recovered through the broker, without redispatching it.
+
+The follow-up (task7ac467c7-29b3-45d0-a33f-ff211ba06f73, observed gpt_6 / pro) gave **REVISE with one explicit correction**: an earlier prose line incorrectly listed row-zero retained phases0,1,5. The correct phases are1,3,5, as already used in the actual finite data and coordinate construction. That line is corrected above. The review states that with this correction it accepts the intended construction and its fractional-relaxation conclusion; it reports no other mathematical correction to the seed, window substitutions, Hall argument, splice or formulas. The two additional kernel checks independently confirm the corrected periodic whole-board pattern. We retain the actual REVISE receipt rather than relabelling it an unconditional ACCEPT. This was mathematical source review, not code execution. The later inherited-attainment and arbitrary-fixed-boundary observations were not in its input and remain separate written deductions.
+
+    PYTHONDONTWRITEBYTECODE=1 python3 develop/check_connected_band_retained_phases_formal.py --lean /path/to/lean-4.33.0/bin/lean --output output/connected-band-retained-phases-formal-validation.json
+
+## Appendix A. Complete finite seed, multiplied by 80
+
+These are fixed rational substitutions, not a set of enumerated configurations. The board has 6 rows and 58 columns. Apply the retained set and old endpoint rules of Section 1 at m=8. All unspecified t and x entries are zero.
+
+Selections, grouped by row as `column:80t`:
+
+```text
+row 2: 9:80, 15:80, 21:80, 27:80, 33:80, 39:80, 45:80, 51:80
+row 3: 10:45, 16:45, 22:44, 28:44, 34:44, 40:44, 46:47, 47:2, 52:46
+row 4: 8:34, 9:31, 10:34, 11:44, 12:34, 13:28, 14:34, 15:37, 16:34, 17:42, 18:36, 19:26, 20:36, 21:40, 22:36, 23:36, 24:36, 25:26, 26:36, 27:40, 28:36, 29:36, 30:36, 31:26, 32:36, 33:40, 34:36, 35:36, 36:36, 37:26, 38:36, 39:40, 40:36, 41:39, 42:29, 43:35, 44:29, 45:42, 46:27, 47:49, 48:24, 49:34, 50:22, 51:57, 52:22
+row 5: 7:80, 8:17, 9:51, 10:45, 11:51, 12:43, 13:51, 14:43, 15:51, 16:45, 17:53, 18:34, 19:54, 20:39, 21:54, 22:44, 23:54, 24:35, 25:54, 26:39, 27:54, 28:44, 29:54, 30:35, 31:54, 32:39, 33:54, 34:44, 35:54, 36:35, 37:54, 38:39, 39:54, 40:44, 41:50, 42:45, 43:44, 44:50, 45:42, 46:55, 47:37, 48:51, 49:35, 50:57, 51:33, 52:46, 53:80
+```
+
+Matching edges, as `(row,column)--(row,column):80x`:
+
+```text
+(1, 1)--(2, 1):80
+(1, 5)--(1, 6):17
+(1, 5)--(2, 5):63
+(1, 6)--(1, 7):63
+(1, 7)--(2, 7):17
+(1, 11)--(1, 12):14
+(1, 11)--(2, 11):66
+(1, 12)--(2, 12):66
+(1, 13)--(2, 13):80
+(1, 17)--(1, 18):15
+(1, 17)--(2, 17):65
+(1, 18)--(1, 19):65
+(1, 19)--(2, 19):15
+(1, 23)--(1, 24):24
+(1, 23)--(2, 23):56
+(1, 24)--(1, 25):56
+(1, 25)--(2, 25):24
+(1, 29)--(1, 30):24
+(1, 29)--(2, 29):56
+(1, 30)--(1, 31):56
+(1, 31)--(2, 31):24
+(1, 35)--(1, 36):24
+(1, 35)--(2, 35):56
+(1, 36)--(1, 37):56
+(1, 37)--(2, 37):24
+(1, 41)--(2, 41):80
+(1, 42)--(2, 42):80
+(1, 43)--(2, 43):80
+(1, 47)--(1, 48):48
+(1, 47)--(2, 47):32
+(1, 48)--(2, 48):32
+(1, 49)--(2, 49):80
+(1, 53)--(2, 53):80
+(1, 54)--(1, 55):80
+(2, 6)--(3, 6):80
+(2, 7)--(3, 7):63
+(2, 11)--(3, 11):13
+(2, 12)--(3, 12):14
+(2, 17)--(3, 17):15
+(2, 18)--(3, 18):80
+(2, 19)--(3, 19):65
+(2, 23)--(3, 23):24
+(2, 24)--(3, 24):80
+(2, 25)--(3, 25):56
+(2, 29)--(3, 29):24
+(2, 30)--(3, 30):80
+(2, 31)--(3, 31):56
+(2, 35)--(3, 35):24
+(2, 36)--(3, 36):80
+(2, 37)--(3, 37):56
+(2, 47)--(3, 47):44
+(2, 48)--(3, 48):48
+(2, 54)--(2, 55):80
+(3, 7)--(3, 8):17
+(3, 8)--(3, 9):63
+(3, 9)--(4, 9):2
+(3, 10)--(3, 11):34
+(3, 12)--(3, 13):52
+(3, 12)--(4, 12):14
+(3, 13)--(3, 14):11
+(3, 13)--(4, 13):17
+(3, 14)--(3, 15):63
+(3, 14)--(4, 14):6
+(3, 15)--(3, 16):8
+(3, 16)--(3, 17):26
+(3, 17)--(4, 17):1
+(3, 19)--(3, 20):15
+(3, 20)--(3, 21):52
+(3, 20)--(4, 20):13
+(3, 21)--(4, 21):4
+(3, 22)--(3, 23):36
+(3, 25)--(3, 26):15
+(3, 25)--(4, 25):9
+(3, 26)--(3, 27):52
+(3, 26)--(4, 26):13
+(3, 27)--(4, 27):4
+(3, 28)--(3, 29):36
+(3, 31)--(3, 32):15
+(3, 31)--(4, 31):9
+(3, 32)--(3, 33):52
+(3, 32)--(4, 32):13
+(3, 33)--(4, 33):4
+(3, 34)--(3, 35):36
+(3, 37)--(3, 38):15
+(3, 37)--(4, 37):9
+(3, 38)--(3, 39):52
+(3, 38)--(4, 38):13
+(3, 39)--(4, 39):4
+(3, 40)--(3, 41):36
+(3, 41)--(3, 42):24
+(3, 42)--(3, 43):56
+(3, 43)--(3, 44):24
+(3, 44)--(3, 45):41
+(3, 44)--(4, 44):15
+(3, 45)--(3, 46):24
+(3, 46)--(4, 46):5
+(3, 48)--(3, 49):23
+(3, 48)--(4, 48):9
+(3, 49)--(3, 50):57
+(3, 50)--(4, 50):23
+(3, 51)--(3, 52):33
+(3, 53)--(3, 54):80
+(3, 55)--(3, 56):80
+(4, 8)--(4, 9):11
+(4, 8)--(5, 8):17
+(4, 12)--(5, 12):2
+(4, 14)--(4, 15):8
+(4, 14)--(5, 14):2
+(4, 18)--(4, 19):18
+(4, 20)--(5, 20):5
+(4, 23)--(5, 23):8
+(4, 24)--(4, 25):9
+(4, 24)--(5, 24):9
+(4, 26)--(5, 26):5
+(4, 29)--(5, 29):8
+(4, 30)--(4, 31):9
+(4, 30)--(5, 30):9
+(4, 32)--(5, 32):5
+(4, 35)--(5, 35):8
+(4, 36)--(4, 37):9
+(4, 36)--(5, 36):9
+(4, 38)--(5, 38):5
+(4, 41)--(5, 41):4
+(4, 42)--(4, 43):14
+(4, 45)--(5, 45):7
+(4, 47)--(5, 47):5
+(4, 48)--(4, 49):11
+(4, 49)--(5, 49):9
+(4, 52)--(5, 52):11
+(5, 8)--(5, 9):11
+(5, 17)--(5, 18):9
+(5, 41)--(5, 42):5
+(5, 47)--(5, 48):3
+```

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T13:49:52.685953+00:00",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "preflight_before_version": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "31%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "preflight_before_compile": {
+    "active_processes_by_comm_basename": [],
+    "memory_free_percentage": "31%",
+    "physical_memory_bytes": 17179869184,
+    "execution": "User authorized local machine; one standalone Std-only module; no shared build or CI changes."
+  },
+  "active_processes_after_by_comm_basename": [],
+  "declaration_audits": [
+    "'SubQuorum.ConnectedBandRetainedPhases.periodic_occupation_and_matching' does not depend on any axioms",
+    "'SubQuorum.ConnectedBandRetainedPhases.corrected_retained_domain' does not depend on any axioms"
+  ],
+  "scope": "Two axiom-free kernel computations verify the corrected retained phases (row0 residues1,3,5; row1 residues2,4), the entire periodic whole-board occupation/wedge/full-degree system and old endpoint matching saturation. Explicitly excludes incorrect row0 residue0.",
+  "not_formalized": [
+    "All-length finite old-family to periodic coordinate adapter remains a written proof and exact Python check. No integer/frozen or end-to-end grid theorem."
+  ],
+  "sorry": false,
+  "native_decide": false,
+  "new_axioms": false
+}

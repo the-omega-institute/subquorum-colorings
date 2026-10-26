@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "counts": {
+    "exact_periodic_splice_adapter_checks": 1,
+    "old92_exact_Hall_obstructions": 5,
+    "edge_capacity_checks": 20696,
+    "old_endpoint_equalities": 4168,
+    "free_vertex_checks": 8692,
+    "bottom_star_checks": 2956,
+    "whole_board_vertex_checks": 19056,
+    "window_checks": 1944,
+    "finite_splice_controls": 20
+  },
+  "scale": 80,
+  "samples": [
+    {
+      "m": 8,
+      "component_charge_scaled80": 12069,
+      "whole_objective_scaled80": 13346,
+      "whole_gap_scaled80": -494
+    },
+    {
+      "m": 9,
+      "component_charge_scaled80": 13617,
+      "whole_objective_scaled80": 14840,
+      "whole_gap_scaled80": -440
+    },
+    {
+      "m": 10,
+      "component_charge_scaled80": 15165,
+      "whole_objective_scaled80": 16334,
+      "whole_gap_scaled80": -386
+    },
+    {
+      "m": 11,
+      "component_charge_scaled80": 16713,
+      "whole_objective_scaled80": 17828,
+      "whole_gap_scaled80": -332
+    },
+    {
+      "m": 12,
+      "component_charge_scaled80": 18261,
+      "whole_objective_scaled80": 19322,
+      "whole_gap_scaled80": -278
+    },
+    {
+      "m": 13,
+      "component_charge_scaled80": 19809,
+      "whole_objective_scaled80": 20816,
+      "whole_gap_scaled80": -224
+    },
+    {
+      "m": 14,
+      "component_charge_scaled80": 21357,
+      "whole_objective_scaled80": 22310,
+      "whole_gap_scaled80": -170
+    },
+    {
+      "m": 15,
+      "component_charge_scaled80": 22905,
+      "whole_objective_scaled80": 23804,
+      "whole_gap_scaled80": -116
+    },
+    {
+      "m": 16,
+      "component_charge_scaled80": 24453,
+      "whole_objective_scaled80": 25298,
+      "whole_gap_scaled80": -62
+    },
+    {
+      "m": 17,
+      "component_charge_scaled80": 26001,
+      "whole_objective_scaled80": 26792,
+      "whole_gap_scaled80": -8
+    },
+    {
+      "m": 18,
+      "component_charge_scaled80": 27549,
+      "whole_objective_scaled80": 28286,
+      "whole_gap_scaled80": 46
+    },
+    {
+      "m": 19,
+      "component_charge_scaled80": 29097,
+      "whole_objective_scaled80": 29780,
+      "whole_gap_scaled80": 100
+    },
+    {
+      "m": 20,
+      "component_charge_scaled80": 30645,
+      "whole_objective_scaled80": 31274,
+      "whole_gap_scaled80": 154
+    },
+    {
+      "m": 21,
+      "component_charge_scaled80": 32193,
+      "whole_objective_scaled80": 32768,
+      "whole_gap_scaled80": 208
+    },
+    {
+      "m": 22,
+      "component_charge_scaled80": 33741,
+      "whole_objective_scaled80": 34262,
+      "whole_gap_scaled80": 262
+    },
+    {
+      "m": 23,
+      "component_charge_scaled80": 35289,
+      "whole_objective_scaled80": 35756,
+      "whole_gap_scaled80": 316
+    },
+    {
+      "m": 24,
+      "component_charge_scaled80": 36837,
+      "whole_objective_scaled80": 37250,
+      "whole_gap_scaled80": 370
+    },
+    {
+      "m": 32,
+      "component_charge_scaled80": 49221,
+      "whole_objective_scaled80": 49202,
+      "whole_gap_scaled80": 802
+    },
+    {
+      "m": 64,
+      "component_charge_scaled80": 98757,
+      "whole_objective_scaled80": 97010,
+      "whole_gap_scaled80": 2530
+    },
+    {
+      "m": 128,
+      "component_charge_scaled80": 197829,
+      "whole_objective_scaled80": 192626,
+      "whole_gap_scaled80": 5986
+    }
+  ],
+  "component_formula": "(1548m-315)/80",
+  "whole_formula": "(747m+697)/40",
+  "whole_gap_above_18m_plus29": "(27m-463)/40; positive for every m>=18",
+  "old92_obstruction": "Terminal Hall set A has endpoint demand460/92 but its entire neighbour set has429/92; deficit31/92. Independent of pocket values and valid at every m>=2 by translation.",
+  "scope": "All-length written periodic-splice construction, m>=8. Exact rational simultaneous matching-edge variables saturate all old endpoints, obey shared vertex capacities, and satisfy the prior bounds/anchors/wedges/full-selected-degree/bottom-stars/four module-window system. The whole-board fractional objective exceeds18m+29 for every m>=18. Not an integer occupation, frozen configuration or whole-board integer counterexample. The all-length coordinate and bounded-support classification is a written proof, with exact finite controls through128; no LP output is accepted as proof."
+}

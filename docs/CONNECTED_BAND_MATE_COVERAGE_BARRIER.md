@@ -95,3 +95,5 @@ Oracle review and is outside that review's scope.
 
     PYTHONDONTWRITEBYTECODE=1 python3 develop/check_connected_band_mate_coverage_barrier.py --output output/connected-band-mate-coverage-barrier-validation.json
     PYTHONDONTWRITEBYTECODE=1 python3 develop/check_connected_band_mate_coverage_formal.py --lean /path/to/lean-4.33.0/bin/lean --output output/connected-band-mate-coverage-barrier-formal-validation.json
+
+A subsequent [simultaneous-edge construction](CONNECTED_BAND_SIMULTANEOUS_MATCHING_BARRIER.md) gives an exact terminal Hall obstruction to this particular92-scaled point, but a different80-scaled all-length point satisfies the entire matching-edge system and violates the specified whole-board fractional bound for m>=18. This strengthens the relaxation barrier; integer and freezing-aware bounds remain open.
