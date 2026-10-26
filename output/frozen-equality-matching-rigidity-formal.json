@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "lean_version": "Lean (version 4.33.0, arm64-apple-darwin24.6.0, commit d8b18978322de05a8f3dba51ef03cf5461676c17, Release)",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/FrozenEqualityMatchingRigidity.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.pocket_port_slack",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.canonical_core_order",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.two_of_three_excludes_late",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.no_bridge_vertical_cycle",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.no_old_H_vertical_cycle",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.no_lower_F_vertical_cycle",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.backwards_chain",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.terminal_pair_propagates",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.no_two_endpoint_trap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.matching_equality",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.forced_matching_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.equality_selection_count",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.binary_defect_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.binary_token_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.nonadditive_counterexample",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FrozenEqualityMatchingRigidity.no_repeated_token_reserve",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "preflight": [
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3628 \nPages purgeable: 2 \nPages purged: 258512887 \n\nSwap I/O:\nSwapins: 259027010 \nSwapouts: 273584396 \n\nPage Q counts:\nPages active: 154760 \nPages inactive: 147095 \nPages speculative: 6632 \nPages throttled: 0 \nPages wired down: 228857 \n\nCompressor Stats:\nPages used by compressor: 465919 \nPages decompressed: 6365801610 \nPages compressed: 7224946188 \n\nFile I/O:\nPageins: 8551266917 \nPageouts: 25938454 \n\nSystem-wide memory free percentage: 30%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4174.\nPages active:                                 154487.\nPages inactive:                               146827.\nPages speculative:                              6635.\nPages throttled:                                   0.\nPages wired down:                             228857.\nPages purgeable:                                   0.\n\"Translation faults\":                    30263103542.\nPages copy-on-write:                      1484711063.\nPages zero filled:                       12124029321.\nPages reactivated:                        6588810029.\nPages purged:                              258512903.\nFile-backed pages:                             82360.\nAnonymous pages:                              225589.\nPages stored in compressor:                  3217382.\nPages occupied by compressor:                 465825.\nDecompressions:                           6365801635.\nCompressions:                             7224946741.\nPageins:                                  8551266922.\nPageouts:                                   25938454.\nSwapins:                                   259027074.\nSwapouts:                                  273584436."
+    },
+    {
+      "active_lean_lake_by_comm_basename": [],
+      "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4288 \nPages purgeable: 2 \nPages purged: 258512981 \n\nSwap I/O:\nSwapins: 259035266 \nSwapouts: 273590457 \n\nPage Q counts:\nPages active: 157549 \nPages inactive: 149500 \nPages speculative: 7044 \nPages throttled: 0 \nPages wired down: 222779 \n\nCompressor Stats:\nPages used by compressor: 465641 \nPages decompressed: 6365813195 \nPages compressed: 7224958546 \n\nFile I/O:\nPageins: 8551270361 \nPageouts: 25938454 \n\nSystem-wide memory free percentage: 31%",
+      "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4331.\nPages active:                                 157549.\nPages inactive:                               149503.\nPages speculative:                              7044.\nPages throttled:                                   0.\nPages wired down:                             222779.\nPages purgeable:                                   2.\n\"Translation faults\":                    30263125446.\nPages copy-on-write:                      1484711851.\nPages zero filled:                       12124032163.\nPages reactivated:                        6588812186.\nPages purged:                              258512981.\nFile-backed pages:                             85570.\nAnonymous pages:                              228526.\nPages stored in compressor:                  3217590.\nPages occupied by compressor:                 465653.\nDecompressions:                           6365813199.\nCompressions:                             7224958546.\nPageins:                                  8551270362.\nPageouts:                                   25938454.\nSwapins:                                   259035286.\nSwapouts:                                  273590465."
+    }
+  ],
+  "scope": "Weighted pocket-port slack, necessary actual-mate core orders, excluded local time cycles, arbitrary-length backward propagation, abstract matching equality, binary defect bound and nonadditive token arithmetic.",
+  "not_formalized": "Coordinate-to-graph membership, witness exhaustion, local trap instantiations, full equality-matching classification and actual attaining-family adapters remain written proofs with independent executable checks. No end-to-end coordinate theorem is claimed."
+}

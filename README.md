@@ -1,5 +1,16 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [complete frozen equality-matching rigidity](docs/FROZEN_EQUALITY_MATCHING_RIGIDITY.md):
+half-area equality forces the ENTIRE actual matching M*, not only four terminal
+edges. A stronger pocket-port certificate starts a backwards actual-mate time
+argument through every occupied block; a final two-endpoint trap excludes extra
+pocket edges. Any missing prescribed edge restores one unit of reserve. The
+fully frozen all-g family misses 3m+4 prescribed edges but loses only one unit,
+so separate edge deficits cannot each claim that same reserve. Different
+selected sets can attain equality with the same unique matching. The all-length
+proof has solver-free controls and 16 scoped Lean audits; general grid 5/6
+improvement remains open.
+
 New [completely frozen half-area frontier and terminal-port compensation](docs/FROZEN_HALF_AREA_ATTAINERS.md):
 for every m>=2 the exact frozen bound is J<=18m+29+epsilon, where epsilon
 records the actual terminal vertical matching edge. Both values are attained

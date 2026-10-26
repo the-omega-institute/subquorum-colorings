@@ -1,5 +1,11 @@
 # Completely frozen half-area attainers with the old matching retained
 
+Subsequent resolution: [the entire equality matching is forced](FROZEN_EQUALITY_MATCHING_RIGIDITY.md),
+by backwards actual-mate time propagation and a final pocket trap. The selected
+set need not be unique. Missing-edge compensation is binary; a fully frozen
+family with 3m+4 missing edges and only one unit of margin excludes an additive
+reserve per missing edge.
+
 27 October 2026. Wenlin Zhang and Haobo Ma. Research continuation.
 
 Complete freezing does not restore the additional unit of reserve after the
