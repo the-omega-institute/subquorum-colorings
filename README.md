@@ -1,5 +1,15 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [boundary withdrawals and propagation of compensation](docs/BOUNDARY_WITHDRAWAL_AND_PROPAGATED_COMPENSATION.md):
+the exact maximum 18m+29 survives after EVERY old row-four selection becomes
+optional, including the three former boundary guards. A left-pocket gain of
+one forces a state that crosses each saturated block and is paid by the first
+unsaturated block or the reduced right-end capacity. The local inequalities
+L<=9+p0, b_i+p_i<=7+p_(i+1), e+p_m<=4 telescope without reused credit.
+The written proof holds for every m>=2, with arbitrary actual rematching;
+frozen attainers persist. Thirteen scoped Lean audits include the arbitrary
+length induction and potential sum. Other endpoint footprints remain open.
+
 New [exact integer compensation for the connected occupied band](docs/CONNECTED_BAND_INTEGER_COMPENSATION.md):
 for simultaneous G/H/F permissions, retained old endpoints and arbitrary
 actual rematching, the true whole-board maximum is J=18m+29=area/2-1

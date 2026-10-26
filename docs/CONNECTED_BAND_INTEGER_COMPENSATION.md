@@ -2,6 +2,10 @@
 
 26 October 2026. Wenlin Zhang and Haobo Ma. Research note.
 
+The [boundary-withdrawal extension](BOUNDARY_WITHDRAWAL_AND_PROPAGATED_COMPENSATION.md)
+now removes the three retained row-four boundary guards and proves the same
+exact maximum by propagating a one-unit boundary state.
+
 We prove the exact maximum **18m+29** for the simultaneous G/H/F withdrawal
 permissions of the connected-band problem, with every old endpoint retained
 and with arbitrary actual rematching. A chessboard count replaces separate

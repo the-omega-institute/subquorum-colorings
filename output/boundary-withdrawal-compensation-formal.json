@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "lean_version": "4.33.0",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/BoundaryWithdrawalCompensation.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.saturated_input_state",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.right_end_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.right_end_input_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.pocket_coefficients",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.pocket_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.pocket_gain_state",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.block_sum_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.saturated_prefix_state",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.chain_compensation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.whole_board_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.potential_prefix",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.potential_whole_board_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.BoundaryWithdrawalCompensation.physical_token_budget",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "custom_axioms": [],
+  "scope": "Scaled saturated-input equality lemma, terminal bounds, enlarged-pocket exact matching incidence identity and rounding; arbitrary-length state induction and telescoping potential inequality; all-m objective and token budget. Graph reduction and inherited frozen construction remain written proofs plus finite controls."
+}
