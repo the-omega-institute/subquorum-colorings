@@ -90,7 +90,7 @@ class Network:
         graph={};refs={};S=('S',0);Z=('Z',0)
         def add(u,v,cap,cost=0):
             graph.setdefault(u,[]);graph.setdefault(v,[])
-            a=[v,len(graph[v]),cap,cost];b=[u,len(graph[u]),0,-cost]
+            a=[v,len(graph[v])+(u==v),cap,cost];b=[u,len(graph[u]),0,-cost]
             graph[u].append(a);graph[v].append(b);return a
         for j,(u,v,w,_) in enumerate(self.arcs):
             if j not in banned:refs[j]=add(u,v,1,w if priced else 0)

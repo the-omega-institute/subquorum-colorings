@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/GeneralSquarePorts.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4083 \nPages purgeable: 2 \nPages purged: 270352227 \n\nSwap I/O:\nSwapins: 575144065 \nSwapouts: 591590905 \n\nPage Q counts:\nPages active: 152722 \nPages inactive: 146294 \nPages speculative: 5294 \nPages throttled: 0 \nPages wired down: 237976 \n\nCompressor Stats:\nPages used by compressor: 460429 \nPages decompressed: 7219214584 \nPages compressed: 8103410029 \n\nFile I/O:\nPageins: 8596577934 \nPageouts: 26582181 \n\nSystem-wide memory free percentage: 30%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4074.\nPages active:                                 152730.\nPages inactive:                               146314.\nPages speculative:                              5297.\nPages throttled:                                   0.\nPages wired down:                             237976.\nPages purgeable:                                   2.\n\"Translation faults\":                    31980908979.\nPages copy-on-write:                      1518857905.\nPages zero filled:                       12392537500.\nPages reactivated:                        6951340011.\nPages purged:                              270352227.\nFile-backed pages:                             88890.\nAnonymous pages:                              215451.\nPages stored in compressor:                  2577262.\nPages occupied by compressor:                 460459.\nDecompressions:                           7219214611.\nCompressions:                             8103410029.\nPageins:                                  8596577937.\nPageouts:                                   26582181.\nSwapins:                                   575144097.\nSwapouts:                                  591590905."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.local_C4_profile",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.local_C4_charge",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.debt_diagonal",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.local_slack",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.signed_cycle_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.regional_white_cancellation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.local_reserve_cancellation",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.regional_cross_excess",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.debt_boundary_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.debt_flow_deficit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.debt_free_regional_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.positive_component",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.cycle_relay_cost",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.cycle_relay_margin",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.GeneralSquarePorts.old_cycle_unbounded_expense",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.GeneralSquarePorts.local_C4_profile' does not depend on any axioms\n'SubQuorum.GeneralSquarePorts.local_C4_charge' does not depend on any axioms\n'SubQuorum.GeneralSquarePorts.debt_diagonal' does not depend on any axioms\n'SubQuorum.GeneralSquarePorts.local_slack' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.signed_cycle_ledger' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.regional_white_cancellation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.local_reserve_cancellation' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.regional_cross_excess' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.debt_boundary_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.debt_flow_deficit' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.debt_free_regional_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.positive_component' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.cycle_relay_cost' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.cycle_relay_margin' depends on axioms: [propext, Quot.sound]\n'SubQuorum.GeneralSquarePorts.old_cycle_unbounded_expense' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Complete local C4 feasible-label profile/charge and diagonal debt; supported-internal-M local slack; signed partition and regional/debt arithmetic; arbitrary finite positive component; all-K even unbounded old-cycle expense.",
+  "not_formalized": "Physical fragment adapter, global max-flow/min-cut and debt-flow equivalence, normalization, all-H coordinate embedding, and numerical target remain written or open as specified. Not end-to-end grid Lean."
+}

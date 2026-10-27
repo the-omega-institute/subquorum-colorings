@@ -1,5 +1,60 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [general physical ports and exact tile compensation](docs/GENERAL_SQUARE_PORTS_AND_TILE_CUTS.md):
+same-path cuts, cut original P-only cycles and retained M/N doubled edges
+now fit the coverage flow and joint-cost model. Physical cut ports preserve
+self-loops, parallel fragments and single ownership. With a fixed 2-by-2
+tiling the exact residual TT count is
+
+    delta_tile = max_U (T(U)+M_internal(U)-2|U|)
+               = (total debt - maximum debt-to-reserve flow)/2.
+
+Each debt tile has two diagonal T and one P; each other tile contributes
+reserve max(4-2T-P,0). Every actual cross-tile M edge has one undirected
+compensation capacity. This is an exact joint criterion; it does not assert
+that all feasible grid cuts pass. Every intra-tile actual M edge may be
+retained without changing terminal pairings or increasing payment cost.
+
+A NEW consequence for the existing unique-matching 4-by-w family gives an
+actual positive regional cut at EVERY even w>=6: two debt ends lie on a closed
+zero-reserve M chain, so the best of ALL product-tile phases leaves exactly
+one TT. The construction still admits unrestricted zero-M adjacent-hole
+payments. Fixed-tiling universal coverage is therefore disproved; flexible
+pool selection and the numerical target remain open. Fifty widths and all
+product phases at widths 6,8,10 validate this written deduction.
+
+A stronger forced-port argument proves EVERY independent square pool fails
+at the all-horizontal auxiliary baseline in that family, for all even w>=6.
+In fact all 5^(w/2) auxiliaries confined to the 4-by-2 column strips retain
+a TT: interior strips always connect their top M ports, and both end ports
+terminate at T. The optimal residual is exactly one. Controls check 3,875
+strip-confined full auxiliaries and all 504 maximal pools at widths 6,...,16.
+The zero-M unrestricted N is explicit; changing the baseline or permitting
+controlled successive overlapping batches is necessary for this example.
+
+The same note proves an all-even-H old-cycle relay barrier: the original
+bad-path M count is TWO, yet the unique covering subset of two prescribed
+squares costs H+2 by absorbing H previously free cycle edges. A 2-by-2 example
+already refutes a bad-only cost ledger (payment 0 to 1). The corrected signed
+ledger includes old and new free cycles and any remaining HH-path M.
+These are pool/rule obstructions; the all-H family has unrestricted zero-M
+payments and is not a numerical counterexample.
+
+[General physical controls](output/general-square-ports.json) exhaust 10,512
+small actual models / 22,618 subset surgeries, plus 140 larger actual models,
+573 exhaustive product-tile models and 140 larger tile models. They check
+6,402 tile-phase normalizations, both directed and debt flows, forty even-H
+relay families and the complete 567 local label/matching cases.
+[Fifteen scoped Lean declarations](formal/SubQuorum/GeneralSquarePorts.lean)
+and [local execution/axiom audits](output/general-square-formal.json) pass.
+Physical extraction, global flow/min-cut, normalization and all-H embeddings
+are written proofs; the universal 5/6 improvement remains open.
+[Independent core audit ACCEPT](output/general-square-review.json) reproduces
+both original submitted Python outputs exactly, without running Lean. The
+later closed-cut and stronger all-independent-pool results are in separate
+live reviews and are not covered by that initial acceptance.
+
+
 New [exact arbitrary-contact coverage and cut](docs/CONTACT_FLOW_CUT_AND_EXACT_COST.md):
 for any prescribed pool of vertex-disjoint squares satisfying the original
 terminal-path contact hypotheses, an integral unit flow gives the EXACT

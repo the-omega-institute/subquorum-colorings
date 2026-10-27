@@ -1,0 +1,2167 @@
+{
+  "status": "PASS",
+  "exhaustive_small": [
+    {
+      "board": [
+        2,
+        2
+      ],
+      "physical_models": 100,
+      "actual_subset_surgeries": 150,
+      "feasible_weighted_models": 96,
+      "case_coverage": {
+        "retention_removed": 14,
+        "retention_added": 14,
+        "same_original_component": 14,
+        "old_cycle_contact": 16
+      }
+    },
+    {
+      "board": [
+        2,
+        4
+      ],
+      "physical_models": 10412,
+      "actual_subset_surgeries": 22468,
+      "feasible_weighted_models": 9816,
+      "case_coverage": {
+        "retention_removed": 3295,
+        "retention_added": 3295,
+        "same_original_component": 2449,
+        "old_cycle_contact": 2798
+      }
+    }
+  ],
+  "random_actual_models": 140,
+  "exhaustive_product_tiles": [
+    {
+      "board": [
+        2,
+        2
+      ],
+      "models": 25,
+      "models_with_debt": 0,
+      "normalization_states": 50
+    },
+    {
+      "board": [
+        2,
+        4
+      ],
+      "models": 548,
+      "models_with_debt": 16,
+      "normalization_states": 2192
+    }
+  ],
+  "random_actual_subset_surgeries": 2042,
+  "product_tile_models": 140,
+  "product_tile_normalization_states": 4160,
+  "exact_debt_flow_models": 140,
+  "debt_flow_models_with_debt": 3,
+  "local_tile_classification": {
+    "supported_feasible_local_patterns": 76,
+    "debt_patterns": 4,
+    "complete_label_matching_space": 567
+  },
+  "cycle_relay_family_controls": [
+    {
+      "H": 2,
+      "board": [
+        4,
+        6
+      ],
+      "M": 4,
+      "old_bad_M": 2,
+      "old_cycle_M": 2,
+      "new_paid_M": 4,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 4,
+      "board": [
+        6,
+        6
+      ],
+      "M": 6,
+      "old_bad_M": 2,
+      "old_cycle_M": 4,
+      "new_paid_M": 6,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 6,
+      "board": [
+        8,
+        6
+      ],
+      "M": 8,
+      "old_bad_M": 2,
+      "old_cycle_M": 6,
+      "new_paid_M": 8,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 8,
+      "board": [
+        10,
+        6
+      ],
+      "M": 10,
+      "old_bad_M": 2,
+      "old_cycle_M": 8,
+      "new_paid_M": 10,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          8,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 10,
+      "board": [
+        12,
+        6
+      ],
+      "M": 12,
+      "old_bad_M": 2,
+      "old_cycle_M": 10,
+      "new_paid_M": 12,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          10,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 12,
+      "board": [
+        14,
+        6
+      ],
+      "M": 14,
+      "old_bad_M": 2,
+      "old_cycle_M": 12,
+      "new_paid_M": 14,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          12,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 14,
+      "board": [
+        16,
+        6
+      ],
+      "M": 16,
+      "old_bad_M": 2,
+      "old_cycle_M": 14,
+      "new_paid_M": 16,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          14,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 16,
+      "board": [
+        18,
+        6
+      ],
+      "M": 18,
+      "old_bad_M": 2,
+      "old_cycle_M": 16,
+      "new_paid_M": 18,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          16,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 18,
+      "board": [
+        20,
+        6
+      ],
+      "M": 20,
+      "old_bad_M": 2,
+      "old_cycle_M": 18,
+      "new_paid_M": 20,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          18,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 20,
+      "board": [
+        22,
+        6
+      ],
+      "M": 22,
+      "old_bad_M": 2,
+      "old_cycle_M": 20,
+      "new_paid_M": 22,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          20,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 22,
+      "board": [
+        24,
+        6
+      ],
+      "M": 24,
+      "old_bad_M": 2,
+      "old_cycle_M": 22,
+      "new_paid_M": 24,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          22,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 24,
+      "board": [
+        26,
+        6
+      ],
+      "M": 26,
+      "old_bad_M": 2,
+      "old_cycle_M": 24,
+      "new_paid_M": 26,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          24,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 26,
+      "board": [
+        28,
+        6
+      ],
+      "M": 28,
+      "old_bad_M": 2,
+      "old_cycle_M": 26,
+      "new_paid_M": 28,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          26,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 28,
+      "board": [
+        30,
+        6
+      ],
+      "M": 30,
+      "old_bad_M": 2,
+      "old_cycle_M": 28,
+      "new_paid_M": 30,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          28,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 30,
+      "board": [
+        32,
+        6
+      ],
+      "M": 32,
+      "old_bad_M": 2,
+      "old_cycle_M": 30,
+      "new_paid_M": 32,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          30,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 32,
+      "board": [
+        34,
+        6
+      ],
+      "M": 34,
+      "old_bad_M": 2,
+      "old_cycle_M": 32,
+      "new_paid_M": 34,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          32,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 34,
+      "board": [
+        36,
+        6
+      ],
+      "M": 36,
+      "old_bad_M": 2,
+      "old_cycle_M": 34,
+      "new_paid_M": 36,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          34,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 36,
+      "board": [
+        38,
+        6
+      ],
+      "M": 38,
+      "old_bad_M": 2,
+      "old_cycle_M": 36,
+      "new_paid_M": 38,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          36,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 38,
+      "board": [
+        40,
+        6
+      ],
+      "M": 40,
+      "old_bad_M": 2,
+      "old_cycle_M": 38,
+      "new_paid_M": 40,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          38,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 40,
+      "board": [
+        42,
+        6
+      ],
+      "M": 42,
+      "old_bad_M": 2,
+      "old_cycle_M": 40,
+      "new_paid_M": 42,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          40,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 42,
+      "board": [
+        44,
+        6
+      ],
+      "M": 44,
+      "old_bad_M": 2,
+      "old_cycle_M": 42,
+      "new_paid_M": 44,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          42,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 44,
+      "board": [
+        46,
+        6
+      ],
+      "M": 46,
+      "old_bad_M": 2,
+      "old_cycle_M": 44,
+      "new_paid_M": 46,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          44,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 46,
+      "board": [
+        48,
+        6
+      ],
+      "M": 48,
+      "old_bad_M": 2,
+      "old_cycle_M": 46,
+      "new_paid_M": 48,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          46,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 48,
+      "board": [
+        50,
+        6
+      ],
+      "M": 50,
+      "old_bad_M": 2,
+      "old_cycle_M": 48,
+      "new_paid_M": 50,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          48,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 50,
+      "board": [
+        52,
+        6
+      ],
+      "M": 52,
+      "old_bad_M": 2,
+      "old_cycle_M": 50,
+      "new_paid_M": 52,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          50,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 52,
+      "board": [
+        54,
+        6
+      ],
+      "M": 54,
+      "old_bad_M": 2,
+      "old_cycle_M": 52,
+      "new_paid_M": 54,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          52,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 54,
+      "board": [
+        56,
+        6
+      ],
+      "M": 56,
+      "old_bad_M": 2,
+      "old_cycle_M": 54,
+      "new_paid_M": 56,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          54,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 56,
+      "board": [
+        58,
+        6
+      ],
+      "M": 58,
+      "old_bad_M": 2,
+      "old_cycle_M": 56,
+      "new_paid_M": 58,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          56,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 58,
+      "board": [
+        60,
+        6
+      ],
+      "M": 60,
+      "old_bad_M": 2,
+      "old_cycle_M": 58,
+      "new_paid_M": 60,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          58,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 60,
+      "board": [
+        62,
+        6
+      ],
+      "M": 62,
+      "old_bad_M": 2,
+      "old_cycle_M": 60,
+      "new_paid_M": 62,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          60,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 62,
+      "board": [
+        64,
+        6
+      ],
+      "M": 64,
+      "old_bad_M": 2,
+      "old_cycle_M": 62,
+      "new_paid_M": 64,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          62,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 64,
+      "board": [
+        66,
+        6
+      ],
+      "M": 66,
+      "old_bad_M": 2,
+      "old_cycle_M": 64,
+      "new_paid_M": 66,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          64,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 66,
+      "board": [
+        68,
+        6
+      ],
+      "M": 68,
+      "old_bad_M": 2,
+      "old_cycle_M": 66,
+      "new_paid_M": 68,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          66,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 68,
+      "board": [
+        70,
+        6
+      ],
+      "M": 70,
+      "old_bad_M": 2,
+      "old_cycle_M": 68,
+      "new_paid_M": 70,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          68,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 70,
+      "board": [
+        72,
+        6
+      ],
+      "M": 72,
+      "old_bad_M": 2,
+      "old_cycle_M": 70,
+      "new_paid_M": 72,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          70,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 72,
+      "board": [
+        74,
+        6
+      ],
+      "M": 74,
+      "old_bad_M": 2,
+      "old_cycle_M": 72,
+      "new_paid_M": 74,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          72,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 74,
+      "board": [
+        76,
+        6
+      ],
+      "M": 76,
+      "old_bad_M": 2,
+      "old_cycle_M": 74,
+      "new_paid_M": 76,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          74,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 76,
+      "board": [
+        78,
+        6
+      ],
+      "M": 78,
+      "old_bad_M": 2,
+      "old_cycle_M": 76,
+      "new_paid_M": 78,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          76,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 78,
+      "board": [
+        80,
+        6
+      ],
+      "M": 80,
+      "old_bad_M": 2,
+      "old_cycle_M": 78,
+      "new_paid_M": 80,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          78,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    },
+    {
+      "H": 80,
+      "board": [
+        82,
+        6
+      ],
+      "M": 82,
+      "old_bad_M": 2,
+      "old_cycle_M": 80,
+      "new_paid_M": 82,
+      "new_cycle_M": 0,
+      "contacts": [
+        [
+          0,
+          2
+        ],
+        [
+          80,
+          2
+        ]
+      ],
+      "initially_no_TH": true,
+      "initially_no_direct_TT_HH_square": true,
+      "unique_covering_subset": [
+        0,
+        1
+      ],
+      "unrestricted_adjacent_payment_M": 0
+    }
+  ],
+  "closed_tile_chain_controls": [
+    {
+      "width": 6,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        4
+      ],
+      "closed_cut_tiles": 5,
+      "cut_T": 6,
+      "cut_M": 5,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 8,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        6
+      ],
+      "closed_cut_tiles": 6,
+      "cut_T": 6,
+      "cut_M": 7,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 10,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        8
+      ],
+      "closed_cut_tiles": 7,
+      "cut_T": 6,
+      "cut_M": 9,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 12,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        10
+      ],
+      "closed_cut_tiles": 8,
+      "cut_T": 6,
+      "cut_M": 11,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 14,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        12
+      ],
+      "closed_cut_tiles": 9,
+      "cut_T": 6,
+      "cut_M": 13,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 16,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        14
+      ],
+      "closed_cut_tiles": 10,
+      "cut_T": 6,
+      "cut_M": 15,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 18,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        16
+      ],
+      "closed_cut_tiles": 11,
+      "cut_T": 6,
+      "cut_M": 17,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 20,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        18
+      ],
+      "closed_cut_tiles": 12,
+      "cut_T": 6,
+      "cut_M": 19,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 22,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        20
+      ],
+      "closed_cut_tiles": 13,
+      "cut_T": 6,
+      "cut_M": 21,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 24,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        22
+      ],
+      "closed_cut_tiles": 14,
+      "cut_T": 6,
+      "cut_M": 23,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 26,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        24
+      ],
+      "closed_cut_tiles": 15,
+      "cut_T": 6,
+      "cut_M": 25,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 28,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        26
+      ],
+      "closed_cut_tiles": 16,
+      "cut_T": 6,
+      "cut_M": 27,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 30,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        28
+      ],
+      "closed_cut_tiles": 17,
+      "cut_T": 6,
+      "cut_M": 29,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 32,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        30
+      ],
+      "closed_cut_tiles": 18,
+      "cut_T": 6,
+      "cut_M": 31,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 34,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        32
+      ],
+      "closed_cut_tiles": 19,
+      "cut_T": 6,
+      "cut_M": 33,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 36,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        34
+      ],
+      "closed_cut_tiles": 20,
+      "cut_T": 6,
+      "cut_M": 35,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 38,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        36
+      ],
+      "closed_cut_tiles": 21,
+      "cut_T": 6,
+      "cut_M": 37,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 40,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        38
+      ],
+      "closed_cut_tiles": 22,
+      "cut_T": 6,
+      "cut_M": 39,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 42,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        40
+      ],
+      "closed_cut_tiles": 23,
+      "cut_T": 6,
+      "cut_M": 41,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 44,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        42
+      ],
+      "closed_cut_tiles": 24,
+      "cut_T": 6,
+      "cut_M": 43,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 46,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        44
+      ],
+      "closed_cut_tiles": 25,
+      "cut_T": 6,
+      "cut_M": 45,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 48,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        46
+      ],
+      "closed_cut_tiles": 26,
+      "cut_T": 6,
+      "cut_M": 47,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 50,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        48
+      ],
+      "closed_cut_tiles": 27,
+      "cut_T": 6,
+      "cut_M": 49,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 52,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        50
+      ],
+      "closed_cut_tiles": 28,
+      "cut_T": 6,
+      "cut_M": 51,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 54,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        52
+      ],
+      "closed_cut_tiles": 29,
+      "cut_T": 6,
+      "cut_M": 53,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 56,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        54
+      ],
+      "closed_cut_tiles": 30,
+      "cut_T": 6,
+      "cut_M": 55,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 58,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        56
+      ],
+      "closed_cut_tiles": 31,
+      "cut_T": 6,
+      "cut_M": 57,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 60,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        58
+      ],
+      "closed_cut_tiles": 32,
+      "cut_T": 6,
+      "cut_M": 59,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 62,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        60
+      ],
+      "closed_cut_tiles": 33,
+      "cut_T": 6,
+      "cut_M": 61,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 64,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        62
+      ],
+      "closed_cut_tiles": 34,
+      "cut_T": 6,
+      "cut_M": 63,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 66,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        64
+      ],
+      "closed_cut_tiles": 35,
+      "cut_T": 6,
+      "cut_M": 65,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 68,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        66
+      ],
+      "closed_cut_tiles": 36,
+      "cut_T": 6,
+      "cut_M": 67,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 70,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        68
+      ],
+      "closed_cut_tiles": 37,
+      "cut_T": 6,
+      "cut_M": 69,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 72,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        70
+      ],
+      "closed_cut_tiles": 38,
+      "cut_T": 6,
+      "cut_M": 71,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 74,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        72
+      ],
+      "closed_cut_tiles": 39,
+      "cut_T": 6,
+      "cut_M": 73,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 76,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        74
+      ],
+      "closed_cut_tiles": 40,
+      "cut_T": 6,
+      "cut_M": 75,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 78,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        76
+      ],
+      "closed_cut_tiles": 41,
+      "cut_T": 6,
+      "cut_M": 77,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 80,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        78
+      ],
+      "closed_cut_tiles": 42,
+      "cut_T": 6,
+      "cut_M": 79,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 82,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        80
+      ],
+      "closed_cut_tiles": 43,
+      "cut_T": 6,
+      "cut_M": 81,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 84,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        82
+      ],
+      "closed_cut_tiles": 44,
+      "cut_T": 6,
+      "cut_M": 83,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 86,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        84
+      ],
+      "closed_cut_tiles": 45,
+      "cut_T": 6,
+      "cut_M": 85,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 88,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        86
+      ],
+      "closed_cut_tiles": 46,
+      "cut_T": 6,
+      "cut_M": 87,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 90,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        88
+      ],
+      "closed_cut_tiles": 47,
+      "cut_T": 6,
+      "cut_M": 89,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 92,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        90
+      ],
+      "closed_cut_tiles": 48,
+      "cut_T": 6,
+      "cut_M": 91,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 94,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        92
+      ],
+      "closed_cut_tiles": 49,
+      "cut_T": 6,
+      "cut_M": 93,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 96,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        94
+      ],
+      "closed_cut_tiles": 50,
+      "cut_T": 6,
+      "cut_M": 95,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 98,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        96
+      ],
+      "closed_cut_tiles": 51,
+      "cut_T": 6,
+      "cut_M": 97,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 100,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        98
+      ],
+      "closed_cut_tiles": 52,
+      "cut_T": 6,
+      "cut_M": 99,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 102,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        100
+      ],
+      "closed_cut_tiles": 53,
+      "cut_T": 6,
+      "cut_M": 101,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    },
+    {
+      "width": 104,
+      "debt": 2,
+      "debt_flow": 0,
+      "minimum_residual_TT": 1,
+      "optimal_counts": [
+        1,
+        2,
+        102
+      ],
+      "closed_cut_tiles": 54,
+      "cut_T": 6,
+      "cut_M": 103,
+      "regional_excess": 1,
+      "unrestricted_adjacent_payment_M": 0,
+      "provenance": "Actual M,T from existing unique_matching_hole_barrier; all-product-phase optimum is the new deduction."
+    }
+  ],
+  "column_strip_obstruction": {
+    "local_domino_states": 5,
+    "all_column_strip_auxiliaries": 3875,
+    "exact_width_controls": [
+      {
+        "width": 6,
+        "auxiliary_models": 125,
+        "minimum_TT": 1
+      },
+      {
+        "width": 8,
+        "auxiliary_models": 625,
+        "minimum_TT": 1
+      },
+      {
+        "width": 10,
+        "auxiliary_models": 3125,
+        "minimum_TT": 1
+      }
+    ],
+    "maximal_independent_pools": 504,
+    "all_pool_minimum_TT": 1,
+    "scope": "Finite controls for written ALL-W no-column-crossing-N obstruction, hence ANY single independent square batch from all-horizontal N fails; unrestricted full N succeeds."
+  },
+  "positive_regional_cut_examples": [],
+  "old_cycle_payment_witness": {
+    "board": [
+      2,
+      2
+    ],
+    "M": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    ],
+    "N": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "T": [
+      [
+        0,
+        1
+      ]
+    ],
+    "old_counts": [
+      0,
+      0,
+      1
+    ],
+    "new_counts": [
+      0,
+      0,
+      1
+    ],
+    "old_paid": 0,
+    "new_paid": 1,
+    "old_bad_M": 0,
+    "old_free_M": 1,
+    "new_free_M": 0
+  },
+  "scope": "General port/flow/cost theorem, old-circle signed ledger, geometric product-tile cut identity and all-internal-M retention normalization are written proofs. Finite actual controls validate, not prove, arbitrary-size statements. No universal half-area or5/6 improvement."
+}
