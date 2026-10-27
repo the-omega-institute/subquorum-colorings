@@ -180,8 +180,10 @@ neighbour, witnessed by A. Its shortest TH fee is zero. The centres have
 shortest fees rho_i. A white source z_i can enter only cores i or i+1:
 its other outgoing choices immediately meet black Q sinks, and internal
 P routes cannot cross between cores. Both adjacent centre routes exist
-by the corner-pad argument. Thus its positive-benefit graph is the path
-incidence graph z_i--{h_i,h_(i+1)}. Any discount matching omits at least
+by the corner-pad argument. Thus its centre reachability graph is the path
+incidence graph z_i--{h_i,h_(i+1)}; the positive-benefit graph restricts
+this to centres with rho_i>0. Zero-benefit links may be omitted without
+changing the discount. Any discount matching omits at least
 one centre, so its benefit is at most sum rho_i-min rho_i. Assignment
 (4), choosing a minimizing j, ATTAINS that benefit. Consequently
 Lambda=sum rho_i-(sum rho_i-min rho_i)=min rho_i, proving (3). QED.
@@ -255,7 +257,10 @@ The reproducible report is
 
 The two-core predecessor at `1aae8d6` independently received ACCEPT and
 had its full checker rerun, task `0568223b-a629-49d0-ba3c-b1a664f97892`.
-That verdict does not cover this subsequent arbitrary-r extension.
-Its own review task is `680018f6-ae75-4826-8134-972d8bd19fa3`, with
-the latest observed status and precise source scope in
+The arbitrary-r extension at `9968cd9` subsequently received its OWN
+ACCEPT in task `680018f6-ae75-4826-8134-972d8bd19fa3`. The reviewer
+executed the entire arbitrary-r checker with assertions, reproducing
+the supplied JSON structurally and byte for byte. A nonblocking wording
+precision about the positive-benefit graph at zero weights is included
+above. The precise source and execution scope are in
 [`output/staircase-source-exact-review.json`](../output/staircase-source-exact-review.json).
