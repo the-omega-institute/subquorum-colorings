@@ -1,0 +1,421 @@
+{
+  "status": "PASS",
+  "exhaustive": [
+    {
+      "height": 1,
+      "width": 2,
+      "all_actual_matchings": 2,
+      "all_actual_and_selected_models": 5,
+      "nonfeasible_models_included": 0,
+      "full_auxiliary_evaluations": 5,
+      "distinct_allowed_graphs": 2,
+      "balanced_terminal_models": 3,
+      "frontier_checks": 5
+    },
+    {
+      "height": 1,
+      "width": 4,
+      "all_actual_matchings": 5,
+      "all_actual_and_selected_models": 29,
+      "nonfeasible_models_included": 5,
+      "full_auxiliary_evaluations": 29,
+      "distinct_allowed_graphs": 8,
+      "balanced_terminal_models": 13,
+      "frontier_checks": 29
+    },
+    {
+      "height": 1,
+      "width": 6,
+      "all_actual_matchings": 13,
+      "all_actual_and_selected_models": 169,
+      "nonfeasible_models_included": 52,
+      "full_auxiliary_evaluations": 169,
+      "distinct_allowed_graphs": 31,
+      "balanced_terminal_models": 63,
+      "frontier_checks": 169
+    },
+    {
+      "height": 1,
+      "width": 8,
+      "all_actual_matchings": 34,
+      "all_actual_and_selected_models": 985,
+      "nonfeasible_models_included": 416,
+      "full_auxiliary_evaluations": 985,
+      "distinct_allowed_graphs": 117,
+      "balanced_terminal_models": 321,
+      "frontier_checks": 0
+    },
+    {
+      "height": 2,
+      "width": 2,
+      "all_actual_matchings": 7,
+      "all_actual_and_selected_models": 34,
+      "nonfeasible_models_included": 9,
+      "full_auxiliary_evaluations": 68,
+      "distinct_allowed_graphs": 14,
+      "balanced_terminal_models": 16,
+      "frontier_checks": 34
+    },
+    {
+      "height": 2,
+      "width": 3,
+      "all_actual_matchings": 22,
+      "all_actual_and_selected_models": 223,
+      "nonfeasible_models_included": 107,
+      "full_auxiliary_evaluations": 669,
+      "distinct_allowed_graphs": 80,
+      "balanced_terminal_models": 87,
+      "frontier_checks": 223
+    },
+    {
+      "height": 3,
+      "width": 2,
+      "all_actual_matchings": 22,
+      "all_actual_and_selected_models": 223,
+      "nonfeasible_models_included": 107,
+      "full_auxiliary_evaluations": 669,
+      "distinct_allowed_graphs": 80,
+      "balanced_terminal_models": 87,
+      "frontier_checks": 223
+    },
+    {
+      "height": 2,
+      "width": 4,
+      "all_actual_matchings": 71,
+      "all_actual_and_selected_models": 1469,
+      "nonfeasible_models_included": 921,
+      "full_auxiliary_evaluations": 7345,
+      "distinct_allowed_graphs": 424,
+      "balanced_terminal_models": 501,
+      "frontier_checks": 0
+    }
+  ],
+  "larger_general_controls": [
+    {
+      "height": 3,
+      "width": 4,
+      "models": 32,
+      "full_auxiliary_evaluations": 352,
+      "frontier_checks": 32
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "models": 32,
+      "full_auxiliary_evaluations": 1152,
+      "frontier_checks": 32
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "models": 32,
+      "full_auxiliary_evaluations": 8992,
+      "frontier_checks": 32
+    }
+  ],
+  "families": {
+    "unit_families": [
+      {
+        "height": 4,
+        "width": 4,
+        "J": 7,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "J": 11,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "J": 11,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 6,
+        "width": 6,
+        "J": 17,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 4,
+        "width": 64,
+        "J": 127,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 64,
+        "width": 4,
+        "J": 127,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 20,
+        "width": 24,
+        "J": 239,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 40,
+        "width": 48,
+        "J": 959,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      },
+      {
+        "height": 128,
+        "width": 128,
+        "J": 8191,
+        "direct_defect": 0,
+        "whole_board_defect": 1,
+        "witness_TT": 0,
+        "witness_unit_fee": 1
+      }
+    ],
+    "weighted_controls": [
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 1,
+        "left_weight": 7,
+        "exact_fee": 1,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 9,
+        "left_weight": 2,
+        "exact_fee": 2,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 4,
+        "left_weight": 4,
+        "exact_fee": 4,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 0,
+        "left_weight": 5,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 6,
+        "left_weight": 0,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 0,
+        "left_weight": 0,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 4,
+        "top_weight": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+        "left_weight": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "exact_fee": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "full_auxiliary_evaluations": 36,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 1,
+        "left_weight": 7,
+        "exact_fee": 1,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 9,
+        "left_weight": 2,
+        "exact_fee": 2,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 4,
+        "left_weight": 4,
+        "exact_fee": 4,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 0,
+        "left_weight": 5,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 6,
+        "left_weight": 0,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 0,
+        "left_weight": 0,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 4,
+        "width": 6,
+        "top_weight": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+        "left_weight": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "exact_fee": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 1,
+        "left_weight": 7,
+        "exact_fee": 1,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 9,
+        "left_weight": 2,
+        "exact_fee": 2,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 4,
+        "left_weight": 4,
+        "exact_fee": 4,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 0,
+        "left_weight": 5,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 6,
+        "left_weight": 0,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 0,
+        "left_weight": 0,
+        "exact_fee": 0,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      },
+      {
+        "height": 6,
+        "width": 4,
+        "top_weight": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007,
+        "left_weight": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "exact_fee": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003,
+        "full_auxiliary_evaluations": 281,
+        "nonempty_paid_set_unavoidable": true,
+        "whole_board_defect": 1
+      }
+    ]
+  },
+  "input_controls": {
+    "invalid_dimension_or_selection_inputs_rejected": 6
+  },
+  "exhaustive_models": 3137,
+  "full_auxiliary_evaluations": 24621,
+  "frontier_checks": 800,
+  "scope": "All actual matchings and all T subsets on the eight listed even-area boards, including infeasible selections; every full N; independent partial-matching maxima, Hall witnesses, component replacement, larger seeded controls and exact weighted family witnesses.",
+  "proof_scope": "The exact extension criterion, a+p lower bound and all-even-dimension weighted family have written proofs; finite checks validate implementations. No Lean or improved universal numerical coefficient is claimed."
+}
