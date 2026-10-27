@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/ContactCycleLedger.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4069 \nPages purgeable: 2 \nPages purged: 268438233 \n\nSwap I/O:\nSwapins: 516576667 \nSwapouts: 532842219 \n\nPage Q counts:\nPages active: 149073 \nPages inactive: 146036 \nPages speculative: 1608 \nPages throttled: 0 \nPages wired down: 257620 \n\nCompressor Stats:\nPages used by compressor: 448492 \nPages decompressed: 7089560295 \nPages compressed: 7967858052 \n\nFile I/O:\nPageins: 8584540669 \nPageouts: 26481993 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3855.\nPages active:                                 149099.\nPages inactive:                               146243.\nPages speculative:                              1612.\nPages throttled:                                   0.\nPages wired down:                             257620.\nPages purgeable:                                   2.\n\"Translation faults\":                    31688190570.\nPages copy-on-write:                      1510043737.\nPages zero filled:                       12332866704.\nPages reactivated:                        6891165700.\nPages purged:                              268438233.\nFile-backed pages:                            101846.\nAnonymous pages:                              195108.\nPages stored in compressor:                  3133223.\nPages occupied by compressor:                 448532.\nDecompressions:                           7089560478.\nCompressions:                             7967858052.\nPageins:                                  8584540670.\nPageouts:                                   26481993.\nSwapins:                                   516576751.\nSwapouts:                                  532842219."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.old_partition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.new_partition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.resource_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.signed_cost",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.full_repair_cost",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.forest_full_repair_cost",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactCycleLedger.no_increment_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.ContactCycleLedger.old_partition' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactCycleLedger.new_partition' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactCycleLedger.resource_ledger' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactCycleLedger.signed_cost' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactCycleLedger.full_repair_cost' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactCycleLedger.forest_full_repair_cost' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactCycleLedger.no_increment_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "All finite resource-label lists: original/final partition, exact signed cost with bad/cycle exclusions, conditional full-repair/forest cost and no-increment iff cycle credit covers original bad resources.",
+  "not_formalized": "Grid-to-unique-resource-list and permutation routing adapters, cycle-rank bound, normalization matching proof and all-length actual ladder construction remain written. No end-to-end geometric Lean."
+}

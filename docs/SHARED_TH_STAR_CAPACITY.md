@@ -12,6 +12,10 @@ repairs all s bad pairs through a single original TH. In the other, every one
 of the s-by-s individual ordered relay pairs is valid, yet the prescribed
 simultaneous switches repair only ONE pair. The Hall overestimate is s-1.
 
+A repair count here means the NET reduction in each TT/HH component count.
+It does not identify original leaf pairs with both terminals paid: residual
+paths can join arms from different leaves.
+
 The obstruction concerns the specified original N and simultaneous contacts.
 Both actual families have complete zero-M adjacent payments using other
 certificates. No numerical sub-quorum inequality is refuted.
@@ -144,7 +148,8 @@ Every HH contact precedes every TT contact on C. Any TT leaf and any HH leaf
 therefore form a correct individual ordered relay through C: when oriented
 from the TT source toward the HH sink, the central path's outgoing HH contact
 comes before its incoming TT contact in T-to-H order. Both selected squares
-are disjoint. The graph of individually valid pairs is K_{s,s}, and has a
+are disjoint. The graph on the designated leaves, using their prescribed contacts, is
+K_{s,s}, and has a
 matching of size s satisfying every Hall inequality.
 
 Choose that matching's s pairs. Collectively their squares are STILL pairwise
@@ -154,7 +159,8 @@ word T,H^s,T^s,H, hence
 
     d_T=d_H=s-1, c=3.                               (11)
 
-Only one pair is repaired. Reordering these same disjoint switches cannot
+The TT and HH component counts each decrease by exactly one. Reordering
+these same disjoint switches cannot
 improve the result, because they commute. Thus matching individually valid
 ordered relays, even with disjoint actual square supports and distinct bad
 endpoint paths, does not imply simultaneous repair of the matching's size.
@@ -221,7 +227,7 @@ the arm attached after it. Substituting into (6) gives 3,6,...,6,5. Their sum
 is 6k+2=|M|, so this is also an explicit complete resource partition.
 
 For k=2s the words (HT)^s and H^sT^s have identical P,M,N, contacts and counts
-|T|=2s+1, |H|=46s+7, |M|=12s+2, J=14s+3. Only T placement differs.
+|T|=2s+1, |H|=46s+7, |M|=12s+2, J=14s+3. For s>=2 the T placements differ; at s=1 both words are HT.
 
 | Word | Global initial counts | Global final counts | Final TH M-cost |
 | --- | --- | --- | --- |
@@ -263,5 +269,8 @@ all-finite-word edge-count partition, absence of monochromatic outputs iff
 alternation, alternating/blocked word counts for all s, and conditional balanced
 endpoint arithmetic. The geometry-to-word and physical-resource adapters,
 coordinate feasibility, and individual-pair Hall projection remain written.
-This is not end-to-end grid Lean. Earlier independent reviews concern the
-preceding notes and do not certify this new theorem.
+This is not end-to-end grid Lean. A separate [independent review ACCEPT](../output/shared-th-star-review.json)
+covers this star theorem and reports rerunning the submitted checker, reproducing
+510 words, 40 positive/40 blocked lengths and 204 pair controls with byte-identical
+and parsed-equal JSON. It did not execute Lean or the helpers’ standalone suites.
+The general contact-network/cycle-credit theorem is outside that review.

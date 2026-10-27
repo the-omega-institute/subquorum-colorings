@@ -1,5 +1,18 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [contact-network routing and cycle credit](docs/CONTACT_NETWORK_CYCLE_CREDIT.md)
+reduces all chosen square contacts to a canonical bipartite continuation
+permutation, with exact terminal pairing and unique physical-M ownership.
+New P-only cycles are bounded by the contact multigraph cycle rank; a parity
+constraint and a complete two-contact order dichotomy follow. A feasible 8-by-6
+fixture has two individually successful contacts whose combination restores
+TT/HH. Conversely, an all-length ladder repairs the pair at zero M payment
+cost: one cycle can remove arbitrarily many original bad-path M resources.
+The exact cost change is original bad resources minus final bad and cycle
+resources. Direct physical checks pass 1,012 ladder subsets, 240 length controls,
+1,248 multi-path networks and the 8-by-6 fixture; seven local Lean ledger
+kernels pass. General geometric coverage and universal 5/6 remain open.
+
 New [exact shared-TH star capacity](docs/SHARED_TH_STAR_CAPACITY.md): a single
 original TH path supports arbitrarily many TT/HH repairs when its contact
 labels alternate HH,TT,HH,TT. Cutting all contacts gives a complete physical
@@ -8,13 +21,17 @@ matching over individually valid ordered relays fails without bound: all
 s-by-s pairs are valid and all chosen squares are vertex-disjoint, yet the
 contact word H^sT^s repairs only one pair and leaves s-1 TT/HH pairs.
 Explicit feasible 6-by-(12s+2) families realize both words for every s, with
-the same actual M, auxiliary N, contacts and selection count. Only selection
-placement differs. Both have zero-M unrestricted payments; the obstruction is
+the same actual M, auxiliary N, contacts and selection count. For s>=2 selection
+placement differs; at s=1 both words coincide. Both have zero-M unrestricted payments; the obstruction is
 to the specified simultaneous certificate, not the numerical target.
 All 510 short actual words, 40 positive/40 obstruction lengths, 204 individual
 pair controls and seven local Lean word-classification declarations pass.
 General coverage across multiple shared TH components and the universal 5/6
 improvement remain open.
+[Separate independent star review ACCEPT](output/shared-th-star-review.json)
+reports reproducing the submitted 510/40/40/204 Python output, with no Lean
+execution. Its three wording clarifications are incorporated; it does not
+certify the later contact-network/cycle-credit theorem.
 
 New [ordered TH relay theorem](docs/ORDERED_TH_RELAY_COMPENSATION.md) extends
 fixed-M square compensation through arbitrarily many intermediate TH paths.

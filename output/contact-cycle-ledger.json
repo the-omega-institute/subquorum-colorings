@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "small_ladder_subsets": 1012,
+  "long_family_controls": 240,
+  "four_path_networks": 1248,
+  "networks_with_cycles": 948,
+  "networks_with_residual_TT": 163,
+  "networks_affecting_four_original_paths": 958,
+  "largest_sparse_credit": {
+    "before": [
+      1,
+      163,
+      0
+    ],
+    "after": [
+      0,
+      162,
+      2
+    ],
+    "original_paths": 2,
+    "contacts": 2,
+    "contact_rank": 1,
+    "cycles": 1,
+    "cycle_M": 160,
+    "old_TH_M": 0,
+    "old_bad_M": 160,
+    "new_TH_M": 0,
+    "new_bad_M": 0,
+    "symbols": 6
+  },
+  "largest_dense_credit": {
+    "before": [
+      1,
+      163,
+      0
+    ],
+    "after": [
+      0,
+      162,
+      2
+    ],
+    "original_paths": 2,
+    "contacts": 81,
+    "contact_rank": 80,
+    "cycles": 80,
+    "cycle_M": 160,
+    "old_TH_M": 0,
+    "old_bad_M": 160,
+    "new_TH_M": 0,
+    "new_bad_M": 0,
+    "symbols": 164
+  },
+  "largest_single_contact": {
+    "before": [
+      1,
+      163,
+      0
+    ],
+    "after": [
+      0,
+      162,
+      2
+    ],
+    "original_paths": 2,
+    "contacts": 1,
+    "contact_rank": 0,
+    "cycles": 0,
+    "cycle_M": 0,
+    "old_TH_M": 0,
+    "old_bad_M": 160,
+    "new_TH_M": 160,
+    "new_bad_M": 0,
+    "symbols": 4
+  },
+  "same_order_witness": {
+    "before": [
+      1,
+      9,
+      0
+    ],
+    "after": [
+      1,
+      9,
+      0
+    ],
+    "original_paths": 2,
+    "contacts": 2,
+    "contact_rank": 1,
+    "cycles": 0,
+    "cycle_M": 0,
+    "old_TH_M": 0,
+    "old_bad_M": 12,
+    "new_TH_M": 0,
+    "new_bad_M": 12,
+    "symbols": 6
+  },
+  "verified": "Exact compressed endpoint pairs, physical fragment and M-edge sets versus direct path/cycle decomposition; cycle-rank bound and permutation parity; two-contact order dichotomy; full N and feasible fixed M,T; exact signed ledger; safe normalization and retention identity.",
+  "trust_boundary": "All-size permutation/forest/cycle-rank and span-credit results have written proofs. Finite actual grids test these proofs and the adapter; no universal coverage, universal5/6 improvement or general novelty of permutation surgery is claimed."
+}
