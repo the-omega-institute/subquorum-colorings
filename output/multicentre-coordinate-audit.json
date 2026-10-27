@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "project_imports": false,
+  "all_K_independent_exterior_deletions": 98,
+  "eligible_roots": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "canonical_F_size": 20,
+  "canonical_D_size": 20,
+  "cheap_black_selected_neighbours": [
+    {
+      "black": [
+        2,
+        2
+      ],
+      "selected_neighbours": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "black": [
+        6,
+        8
+      ],
+      "selected_neighbours": [
+        [
+          5,
+          8
+        ]
+      ]
+    }
+  ],
+  "full_N_symbolic_checks": [
+    {
+      "matching": "optimum",
+      "full_N_edges": 162,
+      "paid_coefficients": [
+        0,
+        1
+      ],
+      "a": 0,
+      "b": 0,
+      "c": 0,
+      "k": 1
+    },
+    {
+      "matching": "sharp_two_centre",
+      "full_N_edges": 162,
+      "paid_coefficients": [
+        2,
+        1
+      ],
+      "a": 2,
+      "b": 1,
+      "c": 1,
+      "k": 2
+    }
+  ],
+  "proper_J_eligible": [
+    1
+  ],
+  "proper_J_independent_exterior_deletions": 17,
+  "scope": "Standalone standard-library adjacency, full matching and path audit; computes exposure by every deletion and Gamma by local walks. Symbolic paid coefficients certify fees K and K+2 for fixed N; general theorem is proved separately."
+}

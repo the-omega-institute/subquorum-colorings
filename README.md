@@ -1,5 +1,20 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [multicentre Hall balance theorem](docs/MULTICENTRE_HALL_BALANCE.md):
+one global exterior HH budget of k-1 forces an E-to-D TH compensation
+when all k TH-centre sources lie in the canonical tight region F. The
+general refined lower bound retains an eligible/ineligible-centre quota
+branch; when every centre is eligible, the unrestricted two-centre
+branch disappears. On one fixed positive-weight 18-by-18 grid, the old
+bound is 2 and the new bound and optimum are K for every integer K>=3.
+[Implementation](develop/multicentre_hall_balance.py) ·
+[checker](develop/check_multicentre_hall_balance.py) ·
+[standalone coordinate audit](develop/check_multicentre_coordinates.py) ·
+[report](output/multicentre-hall-balance.json) ·
+[complete matching certificates](output/multicentre-hall-certificates.json).
+General arguments are written; no universal unit-weight 5/6 improvement
+or new Lean claim is made.
+
 New unrestricted physical result: [joint-frontier defect/fee theorem](docs/JOINT_FRONTIER_PHYSICAL_DEFECTS.md) optimizes over ALL full grid auxiliary matchings, lexicographically minimizing residual TT count and actual TH fee. Four labels give an exact local model; the joint label/covered-bit frontier has at most 8^min(h,w) states, independent of cell-graph cycle rank. [Solver](develop/joint_frontier_compensation.py) · [independent full-N enumeration](develop/check_joint_frontier_compensation.py) · [report](output/joint-frontier-compensation.json). All-size proofs are written; no new Lean or universal 5/6 improvement is claimed.
 
 New physical compensation result: [bridge-block exact fee theorem](docs/BRIDGE_BLOCK_PHYSICAL_COMPENSATION.md) localizes the feedback exponent to each actual-M bridge block: O(sum_B 3^k_B |V_B|) arithmetic operations and O(|V|) storage. Bounded block rank gives a linear solver even at unbounded global rank; a cycle cannot cross a bridge, so its free-edge credit stays in one block. [Solver](develop/bridge_block_compensation.py) · [independent matching controls](develop/check_bridge_block_compensation.py) · [report](output/bridge-block-compensation.json). No universal 5/6 improvement or new Lean formalization is claimed. This extension is outside the preceding strip-repair review.
