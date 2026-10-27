@@ -27,6 +27,9 @@ maximum length of forced-hole detours cannot yield a universal cover, even
 with nonnegative fractional exact coverage. Forty actual boards and another
 actual rematching per board pass; two further scoped Lean kernels verify the
 distance/cost deduction. The lower bound is geometric and holds at every k.
+Its [separate independent review remains pending](output/unbounded-hole-relay-review.json):
+the broker has encountered a browser typing failure and is retaining the
+original live task. No mathematical verdict for this addendum is recorded yet.
 
 New [unique-matching hole-compensation barrier](docs/UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md):
 for every even w>=6, one explicit endpoint footprint on 4-by-w has a unique

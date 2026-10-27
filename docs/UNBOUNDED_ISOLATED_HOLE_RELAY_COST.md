@@ -166,3 +166,9 @@ Lean kernels verify the arbitrary-k distance estimate and the deduction
 from alternating path length to required actual edges; the geometric
 matching/path adapters and decomposition remain written. No submitted
 manuscript, Mail, public main/PR3, C4 or shared CI is modified.
+
+The [separate independent review](../output/unbounded-hole-relay-review.json)
+is still live after a broker browser-input failure. The earlier q-cell ACCEPT
+does not cover this later theorem. The mathematical evidence here is the
+written all-k proof, local coordinate controls and two conditional Lean kernels;
+no independent acceptance is claimed while the original task remains pending.
