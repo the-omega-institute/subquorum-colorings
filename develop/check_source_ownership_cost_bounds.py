@@ -189,16 +189,57 @@ def family_controls():
                 weighted_rematching_controls=weighted,optimized_parameters=6)
 
 
+def asymmetric_controls():
+    rows=[];flows=[]
+    for k in range(1,33):
+        f=shared_hole_chambers(k,1);board=f['board'];p=f['P'];t=f['T'];s=k+1
+        assert len(f['M'])==8*(k*k+1)+4*s
+        assert len(t)==16*k+8*s+3 and len(f['H'])==16*k+8*s+5
+        assert len(f['M'])+len(t)==len(board)//2-1
+        assert all(len(neighbours(v)&(p|t))<=1 for v in t)
+        assert {v for v in f['H'] if sum(v)%2}=={f['white_hole']}
+        for centre,scale in [(f['first_centre'],k),(f['second_centre'],1)]:
+            assert neighbours(centre)<=p
+            assert min(sum(abs(x-y) for x,y in zip(centre,v)) for v in t)==2*scale+1
+            assert sum(abs(x-y) for x,y in zip(centre,f['white_hole']))==4*scale+1
+        true=physical_state_linear(board,f['M'],f['true_TH_auxiliary'],t)
+        all_cost=physical_state_linear(board,f['M'],f['all_terminal_auxiliary'],t)
+        assert true['paid']==f['true_TH_paid'] and len(true['paid'])==1
+        assert sum(len(path['M']) for path in true['data']['paths'] if path['kind']=='HH')==2*k
+        assert len(all_cost['paid'])==k+1
+        assert sum(len(path['M']) for path in all_cost['data']['paths'])==k+1
+        rows.append(dict(K=k,l=1,height=f['height'],width=f['width'],true_TH_optimum=1,
+                         every_C_minimizer_TH_fee=k+1,area_deficit=1))
+        if k<=6:
+            result=source_ownership_bounds(f['height'],f['width'],f['M'],t)
+            cf=solve_completion_flow(f['height'],f['width'],f['M'],t)
+            assert result['source_budget']['lower_bound']==1
+            assert cf['all_terminal_cost']==cf['TH_fee']==k+1
+            flows.append(dict(K=k,l=1,source_budget=1,all_terminal_flow_TH_fee=k+1))
+    # Unequal scales beyond l=1, and exact nonnegative uniform weights.
+    for k,l in [(3,2),(5,2),(7,3)]:
+        f=shared_hole_chambers(k,l)
+        for scale in [0,1,10**400+3]:
+            weights={e:scale for e in f['M']}
+            result=source_ownership_bounds(f['height'],f['width'],f['M'],f['T'],weights)
+            witness=physical_state_linear(f['board'],f['M'],f['true_TH_auxiliary'],f['T'])
+            assert sum(weights[e] for e in witness['paid'])==l*scale
+            assert result['source_budget']['lower_bound']==l*scale
+            assert result['static_upper_bound']==(k+l)*scale
+            flows.append(dict(K=k,l=l,weight=scale,source_budget=l*scale,static_upper=(k+l)*scale))
+    return dict(coordinate_controls=rows,optimized_and_weighted_controls=flows)
+
+
 def main():
-    ex=enumerate_models();large=larger_models();sharp=sharp_controls();families=family_controls()
-    out=dict(status='PASS',exhaustive=ex,larger=large,sharp_width_controls=sharp,families=families,
+    ex=enumerate_models();large=larger_models();sharp=sharp_controls();families=family_controls();asymmetric=asymmetric_controls()
+    out=dict(status='PASS',exhaustive=ex,larger=large,sharp_width_controls=sharp,families=families,asymmetric_family=asymmetric,
              exhaustive_models=sum(x['models'] for x in ex),
              seeded_models=sum(x['models'] for x in large),
              full_N_evaluations=sum(x['full_N_evaluations'] for x in ex+large)+4*len(list(all_matchings(grid(3,4)))),
              exact_frontier_comparisons=sum(x['models'] for x in ex+large)+4,
              brute_discount_comparisons=sum(x['models'] for x in ex+large)+4,
-             scope='Pointwise static-cost identities and weighted source-budget lower bounds on independent full N, exact frontier and brute discount matching; both colours, empty T, zero/401-digit weights; two all-k families with 24 coordinate controls and flows for k<=6; 18 weighted/rematching controls.',
-             proof_scope='General source-ownership identities, separated exactness and capacity-one HH discount lower bound are written proofs. Feasible all-k shared-source family has exact TH k and EVERY all-terminal minimizer TH 2k. Finite controls do not replace proofs. No Lean, generic-algorithm novelty or universal numerical improvement claimed.')
+             scope='Pointwise static-cost identities and weighted source-budget lower bounds on independent full N, exact frontier and brute discount matching; both colours, empty T, zero/401-digit weights; two all-k families with 24 coordinate controls and flows for k<=6; 18 weighted/rematching controls; 32 unequal-scale coordinate controls and 15 asymmetric optimized/weighted cases.',
+             proof_scope='General source-ownership identities, separated exactness and capacity-one HH discount lower bound are written proofs. Feasible equal-scale family has exact TH k and EVERY all-terminal minimizer TH 2k; unequal scales fix area deficit and TH optimum at one with unbounded forced optimizer fee. Finite controls do not replace proofs. No Lean, generic-algorithm novelty or universal numerical improvement claimed.')
     (ROOT/'output/source-ownership-cost-bounds.json').write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps({k:out[k] for k in ['status','exhaustive_models','seeded_models','full_N_evaluations','exact_frontier_comparisons','brute_discount_comparisons']}),flush=True)
 

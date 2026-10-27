@@ -1,10 +1,11 @@
-# A capacity-one HH source budget, and forced factor-two TH overpayment
+# A capacity-one HH source budget, and unbounded TH overpayment by every C-minimizer
 
 A scalar hole count cannot be spent separately by two components. This
 note makes that restriction into a weighted matching lower bound and a
 feasible all-size counterfamily for the all-terminal optimization rule.
-The family has J=area/2-1 and positive TH optimum k. EVERY minimum-C full
-matching has TH fee 2k. The failure concerns the choice of objective C,
+The equal-scale family has J=area/2-1 and positive TH optimum k; EVERY
+minimum-C full matching has TH fee 2k. Its unequal-scale extension fixes
+the true TH optimum and area deficit at one while that forced fee diverges. The failure concerns the choice of objective C,
 not existence of a good physical matching or the numerical 5/6 target.
 
 ## 1. A weighted source-capacity lower bound
@@ -199,3 +200,54 @@ exact frontier, and weighted maximum-discount matching by separate brute
 force on the small instances. The generated report records finite scope.
 The statements for EVERY k and every C-minimizer rest on Sections 2-4,
 not on extrapolation from enumeration.
+
+## 6. Unequal scales: unbounded optimizer ratio at area deficit one
+
+The same proof yields a stronger two-parameter family. Take integers
+K>=l>=1. Use a first core of scale K and a second core of scale l,
+translated by (4K,4K+2). Their odd squares and black centres are
+
+    S_1=[0,4K] x [0,4K],            h_1=(2K,2K),
+    S_2=[4K,4K+4l] x [4K+2,4K+4l+2],
+    h_2=(4K+2l,4K+2+2l).
+
+The rectangle has height 4K+4l+2 and width 4K+4l+4. Retain
+z=(4K,4K+1) as the only white H and select every other white Q. The
+same single-corner adjacency proves feasibility. Put s=K+l. Counts become
+
+    |M|=8(K^2+l^2)+4s,
+    |T|=16Kl+8s+3,       |H|=16Kl+8s+5,
+    area/2=8s^2+12s+4,  J=area/2-1.                         (7)
+
+Every TH path to h_1 has at least K actual edges; to h_2 it has at least
+l. The unique H source can absorb at most one centre. Taking the source
+budget on the two centres with weights (K,l) gives
+
+    f(N)>=K+l-max(K,l)=l.
+
+The left corner HH relay has 2K actual edges and admits exactly the same
+L completion; the right straight TH relay has l. The blocks have widths
+4K+2 and 4l+2, overlap in two rows and have disjoint column intervals.
+Every leftover row interval still has even width, so horizontal completion
+works without change. It attains f=l and C=2K+l.
+
+For original C optimization, both centres TH contribute at least K+l.
+An HH path to h_1 has distance 4K+1 from z, so contributes at least 2K;
+the other centre then contributes l. An HH path to h_2 has distance
+4l+1, so contributes at least 2l, in addition to the other centre's K.
+Both alternatives cost STRICTLY more than K+l. The two straight TH
+relays and direct HH at z attain C=K+l. Therefore
+
+    f*=l,      Phi=K+l,      every C-minimizer has f=K+l.      (8)
+
+The lower bounds survive every actual rematching on P; the stated
+attainments and exact values concern the displayed canonical M. This
+rematching distinction is the same as in the equal-scale case.
+
+In particular set l=1 and let K grow. Both the area deficit and true TH
+optimum stay equal to one, while EVERY all-terminal optimizer returns
+TH fee K+1. Its approximation ratio and additive TH overpayment are
+unbounded. Thus tie-breaking cannot fix the rule, and no finite universal
+multiplicative approximation factor for TH follows from minimizing C.
+This strengthens the earlier unbounded objective-value overcharge, whose
+C-optimal matching was not necessarily forced to have poor TH fee.
