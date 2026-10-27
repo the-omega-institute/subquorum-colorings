@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/SharedTHStar.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3673 \nPages purgeable: 2 \nPages purged: 268352745 \n\nSwap I/O:\nSwapins: 507322914 \nSwapouts: 523561283 \n\nPage Q counts:\nPages active: 147469 \nPages inactive: 145257 \nPages speculative: 811 \nPages throttled: 0 \nPages wired down: 267678 \n\nCompressor Stats:\nPages used by compressor: 441967 \nPages decompressed: 7067440139 \nPages compressed: 7945369007 \n\nFile I/O:\nPageins: 8584028200 \nPageouts: 26476408 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3603.\nPages active:                                 147481.\nPages inactive:                               145281.\nPages speculative:                               815.\nPages throttled:                                   0.\nPages wired down:                             267678.\nPages purgeable:                                   2.\n\"Translation faults\":                    31645694163.\nPages copy-on-write:                      1509229132.\nPages zero filled:                       12329092374.\nPages reactivated:                        6884815422.\nPages purged:                              268352745.\nFile-backed pages:                             99023.\nAnonymous pages:                              194554.\nPages stored in compressor:                  3110748.\nPages occupied by compressor:                 441994.\nDecompressions:                           7067440175.\nCompressions:                             7945369007.\nPageins:                                  8584028201.\nPageouts:                                   26476408.\nSwapins:                                   507322946.\nSwapouts:                                  523561283."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.SharedTHStar.edge_partition",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SharedTHStar.no_monochrome_iff",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SharedTHStar.paired_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SharedTHStar.true_run",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SharedTHStar.false_run",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SharedTHStar.blocked_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.SharedTHStar.balanced_defects",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.SharedTHStar.edge_partition' depends on axioms: [propext, Quot.sound]\n'SubQuorum.SharedTHStar.no_monochrome_iff' depends on axioms: [propext]\n'SubQuorum.SharedTHStar.paired_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SharedTHStar.true_run' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SharedTHStar.false_run' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SharedTHStar.blocked_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.SharedTHStar.balanced_defects' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "All finite Bool contact words: edge-count partition, no monochromatic pair iff alternation, all-s alternating and blocked word counts, run counts and conditional balanced endpoint arithmetic.",
+  "not_formalized": "Original grid path/leaf fragment theorem, physical resource ownership adapter, actual all-word feasibility construction and individual-pair Hall projection remain written. Not end-to-end grid Lean."
+}

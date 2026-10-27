@@ -1,5 +1,21 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact shared-TH star capacity](docs/SHARED_TH_STAR_CAPACITY.md): a single
+original TH path supports arbitrarily many TT/HH repairs when its contact
+labels alternate HH,TT,HH,TT. Cutting all contacts gives a complete physical
+fragment partition and exact residual counts for every word. Coarse Hall
+matching over individually valid ordered relays fails without bound: all
+s-by-s pairs are valid and all chosen squares are vertex-disjoint, yet the
+contact word H^sT^s repairs only one pair and leaves s-1 TT/HH pairs.
+Explicit feasible 6-by-(12s+2) families realize both words for every s, with
+the same actual M, auxiliary N, contacts and selection count. Only selection
+placement differs. Both have zero-M unrestricted payments; the obstruction is
+to the specified simultaneous certificate, not the numerical target.
+All 510 short actual words, 40 positive/40 obstruction lengths, 204 individual
+pair controls and seven local Lean word-classification declarations pass.
+General coverage across multiple shared TH components and the universal 5/6
+improvement remain open.
+
 New [ordered TH relay theorem](docs/ORDERED_TH_RELAY_COMPENSATION.md) extends
 fixed-M square compensation through arbitrarily many intermediate TH paths.
 With disjoint square supports, all paths become TH if and only if every
