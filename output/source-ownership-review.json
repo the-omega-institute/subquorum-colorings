@@ -1,5 +1,5 @@
 {
-  "verdict": "ACCEPT_CORE_UNEQUAL_REVIEW_PENDING",
+  "verdict": "ACCEPT_CORE_UNEQUAL_REVISE_CLARIFICATIONS_APPLIED",
   "task_id": "a1e0f736-7898-4593-b272-f36a836fa6cc",
   "conversation_id": "conv_25488b9d4a46b311",
   "core_review": "source-ownership-core-review.json",
@@ -8,8 +8,10 @@
   "unequal_source_commit": "c78eed2ec7ff14e767edd2012a92b880a9954828",
   "unequal_review_task": "fdc65561-b760-4d08-8d5d-62011991bba7",
   "unequal_review_conversation": "conv_d8ff34ba4c153cfa",
-  "unequal_review_status": "dispatched_waiting_response",
+  "unequal_review_status": "completed_REVISE",
   "unequal_review_execution_requested": false,
   "local_final_report_sha256": "081de35e4636847b1db2b10699233f80804b6c934f5877c01277e95bd683fd25",
-  "scope_description": "主体及此前最短路公式已独立ACCEPT（source 51069e0，任务a1e0f736-7898-4593-b272-f36a836fa6cc，会话conv_25488b9d4a46b311，观测gpt_6/pro）；审核实际执行两checker，原源归属报告与本地3a3092d版SHA256完全一致，角区报告逐字节一致。较强不对称族source c78eed2已另送任务fdc65561-b760-4d08-8d5d-62011991bba7、会话conv_d8ff34ba4c153cfa作一般证明/源码审核，当前待回，不登记为通过，也不声称该续审执行了代码。最终不对称报告已在本地完整验证；无Lean。"
+  "scope_description": "主体及此前角区最短路公式已独立ACCEPT并执行原checker。不等尺度优化器障碍续审为REVISE：认可模型下的数学结论，要求明示奇偶、至多一个P邻点、单位费用及资源约定；本轮已补明，并显式列出不等尺度外部区间。审核把等尺度Section3的正确区间误引为Section6错误，已在作者回应注明。无不等尺度独立执行或修订后ACCEPT。新的两核心任意重配精确补齐另有ACCEPT和完整独立执行，见shared-source-exact-review.json；任意r推广需单独审核。",
+  "unequal_review_receipt": "unequal-optimizer-proof-review.json",
+  "unequal_revision_status": "Model conventions and explicit exterior ranges added; revised source not re-accepted."
 }

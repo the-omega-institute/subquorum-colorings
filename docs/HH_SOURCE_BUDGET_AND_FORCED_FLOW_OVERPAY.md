@@ -203,6 +203,10 @@ not on extrapolation from enumeration.
 
 ## 6. Unequal scales: unbounded optimizer ratio at area deficit one
 
+Throughout this section every actual M edge has UNIT cost; f and C
+are the corresponding actual-edge counts. The weighted source-budget
+theorem in Section 1 separately allows arbitrary nonnegative weights.
+
 The same proof yields a stronger two-parameter family. Take integers
 K>=l>=1. Use a first core of scale K and a second core of scale l,
 translated by (4K,4K+2). Their odd squares and black centres are
@@ -211,9 +215,14 @@ translated by (4K,4K+2). Their odd squares and black centres are
     S_2=[4K,4K+4l] x [4K+2,4K+4l+2],
     h_2=(4K+2l,4K+2+2l).
 
-The rectangle has height 4K+4l+2 and width 4K+4l+4. Retain
-z=(4K,4K+1) as the only white H and select every other white Q. The
-same single-corner adjacency proves feasibility. Put s=K+l. Counts become
+The rectangle has height 4K+4l+2 and width 4K+4l+4. Black means even
+coordinate sum and white means odd. Set z=(4K,4K+1),
+T={q in Q: sum(q) is odd} minus {z}, and
+H={q in Q: sum(q) is even} union {z}.
+Thus z is the only white H. Feasibility means each selected T vertex
+has AT MOST one P neighbour, and no T neighbour; zero P neighbours
+are allowed. Only z has two P neighbours, one black corner per core,
+so this definition proves feasibility. Put s=K+l. Counts become
 
     |M|=8(K^2+l^2)+4s,
     |T|=16Kl+8s+3,       |H|=16Kl+8s+5,
@@ -226,10 +235,20 @@ budget on the two centres with weights (K,l) gives
     f(N)>=K+l-max(K,l)=l.
 
 The left corner HH relay has 2K actual edges and admits exactly the same
-L completion; the right straight TH relay has l. The blocks have widths
+L completion. The right straight TH relay runs from
+t_2=(4K+4l+1,4K+2+2l) to h_2, has l actual edges, and has even
+index 6l+2 on L_2. The blocks have widths
 4K+2 and 4l+2, overlap in two rows and have disjoint column intervals.
-Every leftover row interval still has even width, so horizontal completion
-works without change. It attains f=l and C=2K+l.
+Explicitly the leftover row intervals are:
+
+    rows 0..4K-1:          columns 4K+2..4K+4l+3 (width 4l+2),
+    rows 4K..4K+1:         empty,
+    rows 4K+2..4K+4l+1:    columns 0..4K+1       (width 4K+2).
+
+Pair them horizontally. The two relays use disjoint actual edge sets,
+each unused actual edge is doubled once, and no outside pair meets a
+completion block. The source z is used once. This is a full matching
+with f=l and C=2K+l.
 
 For original C optimization, both centres TH contribute at least K+l.
 An HH path to h_1 has distance 4K+1 from z, so contributes at least 2K;
@@ -257,8 +276,14 @@ C-optimal matching was not necessarily forced to have poor TH fee.
 The general HH budget and equal-scale construction at source `51069e0`
 were independently ACCEPTED; the source-ownership checker was executed
 and its original JSON reproduced by SHA256. Section 6 was added later at
-`c78eed2` and has a separate live proof/source review, task
-`fdc65561-b760-4d08-8d5d-62011991bba7`. It is not covered by the earlier
+`c78eed2` and received REVISE from separate proof/source review task
+`fdc65561-b760-4d08-8d5d-62011991bba7`: the reviewer found the theorem
+sound under the inherited model, requesting explicit parity, at-most-one
+feasibility, unit cost and resource-use conventions. These clarifications
+are now included above. The review's alleged unequal-scale row typo
+quoted the equal-scale Section 3 paragraph, where those ranges were
+correct; Section 6 now spells out its own unequal ranges to remove any
+possible ambiguity. This is an author response to REVISE, not a revised
 ACCEPT or independent execution. The final local checker including the
 unequal family passed. See the [scope receipt](../output/source-ownership-review.json)
 and [full original review](../output/source-ownership-core-review.json).
