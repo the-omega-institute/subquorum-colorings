@@ -1,0 +1,36 @@
+{
+  "status": "completed",
+  "task_id": "ea8e188c-7214-4461-8673-9f2eca0d80ac",
+  "conversation_id": "conv_2aee9a5491ec76ef",
+  "submitted_source_commit": "1d223e039441dc259fe31fd6ac3dff7c9decc547",
+  "exact_prompt_identity_verified": true,
+  "verdict": "REVISE",
+  "mathematical_verdict": "Theorem, unique odd exception, complete direct compensation, two-orientation necessary seam conditions, general Hall lower bound and exact 4x4 obstruction accepted. One implementation complexity correction required.",
+  "required_correction": "Older selected_feasible rebuilt P union T at every selected vertex, giving quadratic feasibility validation; form the union once.",
+  "revision_status": "Local constructor now calls its own _check_selection, forms occupied=P|T once, and checks at most four neighbour memberships per selected vertex. Both ladder and band APIs repaired; checker rerun and unchanged JSON confirmed. Await bounded text-only repair follow-up.",
+  "response": "docs/reviews/2026-10-27-closed-ladder-independent-review.txt",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "independent_execution": {
+    "checker": "python3 -B develop/check_closed_ladder_compensation.py",
+    "exit_code": 0,
+    "assertions_enabled": true,
+    "parsed_json_equal": true,
+    "bytes_equal": true,
+    "exhaustive_ladder_models": 15455,
+    "exhaustive_ladder_full_N_evaluations": 182126,
+    "exhaustive_ladder_weighted_frontier_checks": 694,
+    "additional_band_models": 48,
+    "additional_band_full_N_evaluations": 5280,
+    "additional_seam_full_N_evaluations": 36,
+    "total_frontier_calls": 743,
+    "lean_executed": false,
+    "other_checker_entrypoints_executed": false
+  },
+  "post_submission_local_checker_rerun": {
+    "exit_code": 0,
+    "bytes_equal_to_submitted_report": true,
+    "scope": "Repaired feasibility helper, unchanged construction and checker source."
+  },
+  "trust_boundary": "All-size geometry has a written proof. No new Lean formalization or universal numerical 5/6 improvement."
+}

@@ -4,7 +4,17 @@ The sole residual case is the full odd alternating TT/HH pattern. The
 construction uses disjoint column pairs, not a scalar resource relaxation.
 """
 from strip_tree_compensation import edge, grid, mates, physical_state_linear
-from check_mixed_terminal_compensation import selected_feasible
+from check_mixed_terminal_compensation import neighbours
+
+
+def _check_selection(board, p, t):
+    if not t <= board-p:
+        raise ValueError('A feasible selected set disjoint from actual M is required')
+    # Build this union ONCE. The older finite-enumeration helper rebuilds it
+    # for each selected vertex and is not suitable for this linear constructor.
+    occupied = p | t
+    if any(sum(z in occupied for z in neighbours(v)) > 1 for v in t):
+        raise ValueError('A feasible selected set disjoint from actual M is required')
 
 
 def construct_ladder(width, m, t):
@@ -18,8 +28,7 @@ def construct_ladder(width, m, t):
         raise ValueError('Positive integer width required')
     board = grid(2, width); m = {edge(a, b) for a, b in m}; t = set(t)
     mm = mates(board, m); p = set(mm)
-    if not t <= board-p or not selected_feasible(p, t):
-        raise ValueError('A feasible selected set disjoint from actual M is required')
+    _check_selection(board, p, t)
     labels = {v: ('P' if v in p else 'T' if v in t else 'H') for v in board}
     columns = [tuple(labels[r, c] for r in range(2)) for c in range(width)]
     used = set(); auxiliary = set(); blocks = []; unmatched_tt = []
@@ -79,8 +88,7 @@ def construct_closed_bands(height, width, m, t):
         raise ValueError('Positive even height and width required')
     board = grid(height, width); m = {edge(a, b) for a, b in m}; t = set(t)
     mm = mates(board, m); p = set(mm)
-    if not t <= board-p or not selected_feasible(p, t):
-        raise ValueError('A feasible selected set disjoint from actual M is required')
+    _check_selection(board, p, t)
     if any(a[0]//2 != b[0]//2 for a, b in m):
         raise ValueError('Actual M must be closed inside each two-row band')
     per_m = [set() for _ in range(height//2)]

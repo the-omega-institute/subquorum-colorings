@@ -133,8 +133,11 @@ Lemma 3, scan TT columns from left to right, preferring an unused left
 HH neighbour and otherwise taking its right HH neighbour. Within an
 alternating component this pairs to the left when it starts in HH,
 and to the right when it starts in TT. Only (E) leaves a final TT.
-Feasibility checks, mate-map construction and the final M+N component
-traversal are linear as well. The implementation does not run a matching
+Feasibility validation forms P union T ONCE and checks the at most four
+neighbours of each T against that set; it does not use the older enumeration
+helper that rebuilds this union at every vertex. These checks, mate-map
+construction and the final M+N component traversal are linear as well.
+The implementation does not run a matching
 optimizer or a frontier table to construct this certificate.
 
 ## 4. Occupied bands and the precise remaining obstruction
