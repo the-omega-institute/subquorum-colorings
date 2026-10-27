@@ -1,7 +1,8 @@
 """Whole-board Hall test for full coverage with an empty paid actual edge set.
 
 This is a standard bipartite matching adapter. It does not optimize positive
-TH fees. The delivered augmenting-path implementation uses O(|V||E|) time.
+TH fees. The delivered implementation uses O(|V||E(G)|) time, where E(G)
+is the AMBIENT grid edge set, including vertex preprocessing.
 """
 from collections import deque
 from strip_tree_compensation import edge, grid, mates, physical_state_linear

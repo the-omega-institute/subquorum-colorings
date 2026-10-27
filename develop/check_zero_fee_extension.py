@@ -165,8 +165,8 @@ def families():
             for n in full:
                 s = physical_state(grid(h, w), f['M'], n, f['T'])
                 a = s['data']['counts'][0]
-                if a == 0:
-                    assert s['paid'] & {f['core_top'], f['core_left']}
+                assert a == 0  # All selected terminals have the same parity.
+                assert s['paid'] & {f['core_top'], f['core_left']}
                 scores.append((a, sum(weights[e] for e in s['paid'])))
             assert min(scores) == (0, min(top, left))
             r = solve_frontier(h, w, f['M'], f['T'], weights)

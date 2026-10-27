@@ -168,6 +168,8 @@ lexicographic optimum
 
 The paid set cannot be empty, even when the minimum weight is zero.
 
+In fact every full N in this family has a(N)=0, not just the optimum.
+
 Construction. Start with Section 3 in the northwest corner. For each
 added column pair c,c+1, c=4,6,...,w-2, in rows 0..3, use
 
@@ -196,6 +198,7 @@ Each added two-row band has w-2 actual edges and two T, increasing J
 by w, again half its area. Hence J=hw/2-1. Add to (5) the horizontal
 TH edges in each new HT/TH pair. They cover all T without collisions,
 proving d=0. This also explicitly gives |H|=|T|+2.
+More explicitly, |T|=h+w-4, |M|=hw/2-h-w+3 and |H|=h+w-2.
 
 Persistent obstruction. Extending right and downward adds no neighbours
 to X in (6), so that deficient Hall set persists. Hence delta_0>=1.
@@ -215,6 +218,17 @@ at that T ends at H, so this actual edge belongs to Paid(N). Since
 all weights are nonnegative, f>=min(w_top,w_left). The two witnesses
 attain the two respective weights, proving (8). This argument also
 proves Paid nonempty independently of numerical zero weights. QED.
+
+There is also a local way to see the forced payment, noted in the
+independent review. Every T in the construction has odd coordinate sum.
+An alternating terminal path has one more N edge than M edges, hence
+odd length and opposite-colour endpoints. Consequently no full N can
+have a TT path in this family. Moreover H=(0,0) must be N-paired to
+(0,1) or (1,0). Following its actual mate reaches (0,2) or (2,0),
+respectively. Its remaining possible N neighbours are all T (the
+predecessor P is already N-matched to the corner H). Thus this forced
+TH component contains e_top or e_left. This gives the weighted lower
+bound directly for EVERY full N, including zero-weight cases.
 
 For unit weights this has (a,f)=(0,1), saturating (3), while the earlier
 direct estimate only gives f>=0. The example disproves the RULE that
@@ -237,11 +251,26 @@ made. The frontier solver and its proof remain unchanged.
 
 Implementation: `develop/zero_fee_extension.py` builds G_0, uses standard
 iterative augmenting paths, and returns a maximum matching and a Hall set
-attaining delta_0. Its time bound is O(|V||E|), O(|V|^2) on a grid,
-with O(|V|+|E|) memory. It also constructs Theorem 3's witnesses.
+attaining delta_0. Here E(G) denotes the AMBIENT grid edges, not just the
+retained G_0 edges. Its time bound is O(|V||E(G)|), O(|V|^2) on a grid,
+with O(|V|+|E(G)|) memory. More explicitly, including sorted vertices,
+the time is O(|V| log |V| + |V| (|E(G_0)|+1)); the ambient rectangular
+grid has |E(G)|=Theta(|V|). The distinction matters when G_0 has no
+edges. It also constructs Theorem 3's witnesses.
 `develop/check_zero_fee_extension.py` compares with exhaustive matching
 recursion and an independent older tagged-component decomposition;
 `output/zero-fee-extension.json` records the actual completed checks.
 Those finite checks test implementations and controls. The arbitrary-size
 statements are established by the proofs above. No Lean verification is
 claimed for this note.
+
+Independent review `92ca804c-6440-4d28-909e-71d0e5d168a7` returned ACCEPT
+for source `303aecac07227a3b250352187144a021e6301ad4`. The reviewer actually
+ran the original checker and reproduced all 3,137 exhaustive models,
+24,621 full-N evaluations and 800 frontier comparisons, matching the
+report both as parsed JSON and byte for byte; no Lean was run. The
+reviewer's nonblocking ambient-edge complexity clarification and the
+same-colour/corner observations above were incorporated. The strengthened
+all-family-N no-TT assertion was then rerun locally; that revised-source
+execution is distinct from the reviewer's original execution. See
+`output/hall-extension-review.json` for the full response and exact scope.
