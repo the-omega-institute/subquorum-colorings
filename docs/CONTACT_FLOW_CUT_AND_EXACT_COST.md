@@ -63,7 +63,9 @@ bijection or the crossed bijection preserves BOTH colours. Choose either
 consistent bijection, independently at every contact. This decodes to an
 actual subset of disjoint square flips and preserves every physical fragment.
 
-A terminal path is monochromatic. Every used source edge starts a colour-1
+A terminal path is monochromatic and cannot enter a closed cycle: local
+continuations are bijective, so a cycle already has the unique predecessor
+of each of its ports. Every used source edge therefore starts a colour-1
 path at black T; black H has no colour-1 outgoing fragment, and white T has
 no colour-1 incoming fragment, by conservation at those terminal vertices.
 Thus the F used source edges give F distinct T-to-H paths. This proves
@@ -90,6 +92,13 @@ the stronger sufficient condition delta<=eta|M| also works. Eta=1/6
 recovers the existing 5/6 coefficient, and eta<1/6 would improve it.
 No such universal geometric bound is established here. This identity
 uses remaining HH components once, separately from any cycle M credit.
+Here b_opt counts ALL residual HH components, including untouched ones.
+Since b_opt=b-a+delta, the difference delta-b_opt=a-b is invariant under
+switches at fixed M,N,T. Optimizing F improves the coverage certificate;
+it does not itself improve this numerical difference. A coefficient bound
+requires a separate geometric estimate. The flow/integrality/min-cut tools
+used here are classical; the contribution is their physical fragment adapter,
+complete residual-TT criterion and the accompanying joint-cost obstruction.
 
 The compressed graph has O(n+e) arcs/vertices. Unit augmenting paths take
 O(B_T(n+e)) time, followed by linear local decoding. Extraction from the
@@ -208,7 +217,8 @@ bad choice, so neither optimal completion nor favourable tie breaking helps.
 
 The five-contact family now has a complete weighted model beyond the earlier
 one/two-contact class. For its prescribed pool the optimum in (5) is C5 in the
-positive-gap regime, while every proper subset costs C2. The full model must
+positive-gap regime, while the minimum cost over successful proper subsets
+is C2. The full model must
 allow multiple independently owned fragments from one original component.
 
 ## 5. What remains open
@@ -229,3 +239,9 @@ Local evidence: [physical/abstract controls](../output/contact-flow-cut.json),
 The eleven Lean declarations include arbitrary-label local switch completion
 and a quantified even-L unbounded-ratio witness; physical embedding, global
 flow/min-cut optimality and the cost-model equivalence remain written.
+
+Independent audit: initial REVISE concerned one ancillary five-contact summary
+quantifier, now corrected. Follow-up ACCEPT covers the corrected package. The
+auditor reproduced the submitted main with complete parsed-JSON equality; no
+Lean or new follow-up executions occurred. Post-submission edge cases remain
+local-only evidence. Full initial and final responses are linked in the receipt.

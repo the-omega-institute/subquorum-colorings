@@ -22,7 +22,10 @@ five-contact models and six diagonal greedy-family boards. Eleven scoped Lean
 declarations prove general local switch completion and conditional cut/ratio
 arithmetic; the global flow and physical adapters remain written. Separate
 post-submission controls check zero-M terminals and eight off-diagonal boards.
-[Independent audit status and exact execution scope](output/contact-flow-review.json).
+[Independent audit ACCEPT after one summary-quantifier correction](output/contact-flow-review.json):
+submitted main reproduced with full parsed-JSON equality; no Lean or later
+edge-case execution. The follow-up accepts the corrected package and conditional
+numerical ledger, emphasizing that delta-b_opt=a-b is switch-invariant.
 General geometric pool selection and universal 5/6 remain open.
 
 New [five indispensable contacts](docs/FIVE_CONTACT_SPARSIFICATION_BARRIER.md):

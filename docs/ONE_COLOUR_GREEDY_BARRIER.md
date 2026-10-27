@@ -99,6 +99,16 @@ Since 2L+2d+28>0, the unique minimum red terminal-path resource set is the
 one for {g3}. Nonnegative coloured cycles cannot improve it. Every nonempty
 cycle here has positive M weight, so they cannot create another optimum.
 
+One can verify this directly for ALL red flows, including circulations.
+Let x,y,u,v be the red bits on alpha,beta,gamma,eta respectively. The
+terminal bits on a0,b3 are 1 and those on b0,a3 are 0. Conservation gives
+x=y+u and u+v=1, so the only possibilities are
+(x,y,u,v)=(0,0,0,1),(1,0,1,0),(1,1,0,1). The first is the direct red
+path, the second the cheap red path for g3, and the third the direct path
+plus the positive alpha+beta circulation. Their costs are exactly the
+ones above. This proves uniqueness over all flows, not only the displayed
+terminal paths of successful switch subsets.
+
 This red path uses A through g1 and g2, crossing only at g3. At g1 and g2
 red must go straight; at g3 it must cross. Thus fixing this minimum red flow
 forces ALL THREE local choices. Even optimal blue completion, or resolving
@@ -146,3 +156,9 @@ Local evidence: [physical/abstract controls](../output/contact-flow-cut.json),
 The eleven Lean declarations include arbitrary-label local switch completion
 and a quantified even-L unbounded-ratio witness; physical embedding, global
 flow/min-cut optimality and the cost-model equivalence remain written.
+
+Independent audit: initial REVISE concerned one ancillary five-contact summary
+quantifier, now corrected. Follow-up ACCEPT covers the corrected package. The
+auditor reproduced the submitted main with complete parsed-JSON equality; no
+Lean or new follow-up executions occurred. Post-submission edge cases remain
+local-only evidence. Full initial and final responses are linked in the receipt.

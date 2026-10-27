@@ -1,0 +1,21 @@
+ACCEPT, for the corrected package as described. The replacement sentence resolves the sole required correction. The explicit no-entry-into-cycle argument and the red-bit equations correctly strengthen the exposition; neither introduces a new hypothesis.The added endpoint-ledger corollary is also correct. Let  $\tau$  be the final TH count, and let  $b_{\mathrm{opt}}$  count all residual HH paths on the full board, including untouched HH paths. Then
+$$|T|=2\delta+\tau,\qquad
+|H|=2b_{\mathrm{opt}}+\tau,\qquad
+A=2|M|+|T|+|H|.$$
+Consequently,
+$$\boxed{
+J=|T|+|M|=\frac A2+\delta-b_{\mathrm{opt}}
+\le \frac A2+\delta,
+}$$
+and
+$$\boxed{
+\frac A2-\bigl[|T|+(1-\eta)|M|\bigr]
+=b_{\mathrm{opt}}+\eta|M|-\delta.
+}$$
+Thus the proposed geometric estimate
+$$\delta-b_{\mathrm{opt}}\le\eta|M|$$
+does imply the stated coefficient inequality.One useful scope clarification: from the residual-count formula,
+$$b_{\mathrm{opt}}=b-a+\delta,
+\qquad\text{so}\qquad
+\delta-b_{\mathrm{opt}}=a-b.$$
+This difference is invariant under the contact switches at fixed  $M,N,T$ . Optimizing coverage therefore does not itself improve that difference; the coefficient bound still requires the separate geometric estimate you explicitly retain. This is consistent with your conditional claim and is not a remaining defect.Execution status: I performed no new executions in this follow-up. My prior unchanged-main PASS and full parsed-JSON equality remain the independently executed evidence for the unchanged code/output. The later controls remain your local-only evidence. I have not run Lean.No remaining mathematical issue is apparent in the corrected statements and additions you supplied.

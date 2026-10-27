@@ -1,0 +1,125 @@
+Verdict: REVISE — one local correction; the main mathematical claims are acceptedThe general contact-pool coverage theorem, the complete directed cut formula, the exact two-colour binary cost model, and the all-size three-contact obstruction are correct under the stated hypotheses. I found no hidden terminal or routing condition invalidating them.The required revision is one false ancillary sentence about the older five-contact family. It does not affect the new theorems.I also executed the submitted Python main unchanged, with its submitted helpers unchanged. It passed, and its complete generated JSON equals the supplied JSON after parsing, including fields omitted from the program’s console summary. Lean did not run.All document references below refer to the embedded files in    contact-flow-cut-review.txt.1. The required correctionIn CONTACT_FLOW_CUT_AND_EXACT_COST.md, §4, this sentence is false:“…while every proper subset costs C2.”The correct statement is:In the positive-gap regime, the prescribed five-contact pool has optimum  $C_5$ , while the minimum cost over successful proper subsets is  $C_2$ .Successful proper subsets need not have equal costs, and unsuccessful subsets are not feasible candidates for the full-coverage optimization.For a concrete contradiction to the current wording, the older five-contact construction at  $L=20,d=11$  has
+$$|M|=675,\qquad C_2=263,\qquad C_5=151.$$
+Every singleton is a successful proper subset costing  $675$ , not  $263$ . The underlying five-contact note correctly states the minimum-over-successful-proper-subsets result in §4, equation (5a); the error is confined to its summary in the new note.With that sentence corrected, my verdict on the package is ACCEPT.2. Coverage theorem: the lower bound and arbitrary-flow decoder are validThe physical hypotheses supply exactly the claimed local routing freedomThe assumptions in CONTACT_NETWORK_CYCLE_CREDIT.md, §§1–2, are sufficient for the reduction.Because  $N$  is a full bipartite matching, an original terminal component of  $M+N$  is an alternating path
+$$N,M,\ldots,M,N$$
+with one black  $Q$  endpoint and one white  $Q$  endpoint. It therefore has the claimed canonical orientation.Each contact removes one  $N$  edge from each of two distinct original terminal paths. Neither removed edge belongs to  $M$ ; an  $M$ -edge also in  $N$  would be a doubled component rather than an edge on a terminal path. Neither inserted cross edge belongs to  $M$ , because that would already connect the two original components.Cutting the candidate  $N$  edges partitions both:the actual physical vertices;the actual  $M$ -edge resources.At a square there are two incoming and two outgoing physical ports. The two bijections between them are exactly the old matching and the switched matching. Pairwise disjoint square supports make those choices independent.No extra capacity-one constraint should be imposed on a compressed square vertex. Two paths can use the same square through its two disjoint port pairs. A path can also revisit a compressed square through different physical ports without repeating a physical vertex. The capacity restriction belongs on physical fragments.Lower boundFor any switch subset  $S$ , let  $a(S)$  be the number of residual TT paths.Every TT path contains exactly one black  $T$ . Every other path starting at black  $T$  ends at white  $H$ . Consequently there are exactly
+$$B_T-a(S)$$
+black- $T$ -to-white- $H$  paths.Their fragments give a feasible unit-capacity flow: they do not share physical fragments, and each contact conserves their incoming and outgoing flow. Thus
+$$B_T-a(S)\le F,
+\qquad
+a(S)\ge B_T-F.$$
+This argument omits cycles without losing any terminal contribution.Decoding an arbitrary integral maximum flowTake any integral maximum flow, including one containing circulations. Give occupied fragment arcs label  $1$  and the other arcs label  $0$ .At each contact, incoming and outgoing  $1$ -counts agree. Since there are two ports on each side, their binary label multisets agree. At least one of keep or flip therefore preserves both labels. Choose any such bijection at each contact.The resulting physical terminal paths and cycles are monochromatic. The point that deserves explicit emphasis is:A terminal-started component cannot become trapped in a decoded cycle, because the local continuation is bijective on physical ports.Every point of a closed cycle already has its unique predecessor within that cycle. A terminal path could not enter it without violating uniqueness. Equivalently, the actual union of the two matchings decomposes into terminal paths and cycles, and a component containing a terminal is a path.Terminal conservation also gives:a black  $H$  has no occupied outgoing fragment;a white  $T$  has no occupied incoming fragment.Therefore the  $F$  occupied source edges produce  $F$  distinct black- $T$ -to-white- $H$  paths. Hence
+$$a(S)\le B_T-F.$$
+Combined with the lower bound,
+$$\boxed{\min_S a(S)=B_T-F.}$$
+The conclusion is valid for arbitrary integral maximum flows and arbitrary compatible local tie-breaking.White  $T$  is covered; no terminal-colour balance assumption is missingWhen  $F=B_T$ , every black  $T$  starts a label- $1$  path. Every white  $T$  ends a label- $0$  path. Such a label- $0$  path must start at black  $H$ , since no black  $T$  starts a label- $0$  path.Thus every white  $T$  is paid as well. No assumption equating the numbers of black and white selected terminals is required.HH paths may remain. Endpoint incidences
+$$2a+t=|T|,
+\qquad
+2b+t=|H|$$
+then give the claimed optimal residual counts
+$$\boxed{
+(\delta,\ b-a+\delta,\ t+2(a-\delta)),
+\qquad \delta=B_T-F.
+}$$
+3. The directed cut expression is completeThe cut proof in CONTACT_FLOW_CUT_AND_EXACT_COST.md, §3, correctly retains all directed contributions.Every cut can be normalized, without increasing its capacity, to the following terminal placements:Terminal typeNormalized sideBlack  $T$ Source sideBlack  $H$ Sink sideWhite  $T$ Source sideWhite  $H$ Sink sideFor black  $T$ , moving it to the source side removes its source-edge contribution and can introduce at most its sole outgoing fragment, also of capacity one. The white- $H$  argument is dual. Black  $H$  has no incoming arc, and white  $T$  has no outgoing arc, so their respective moves cannot introduce a forward cut edge.Fix the set  $U$  of square vertices on the source side. The cut capacity is exactly
+$$c_0+\bigl(B_{\mathrm{touch}}-s_T(U)\bigr)
++h_H(U)+\operatorname{out}(U),$$
+where  $c_0$  counts untouched black- $T$ -to-white- $H$  paths.The no-contact cases cause no exception:black- $T$ /white- $H$  contributes one;TT contributes zero;HH contributes zero;black- $H$ /white- $T$  contributes zero.Since
+$$B_T=a_{\mathrm{iso}}+c_0+B_{\mathrm{touch}},$$
+max-flow/min-cut gives
+$$\boxed{
+\delta=a_{\mathrm{iso}}
++\max_{U}\left(s_T(U)-h_H(U)-\operatorname{out}(U)\right).
+}$$
+Here  $\operatorname{out}(U)$  must count directed interior fragments from  $U$  to its complement, with multiplicity. Backward arcs do not contribute. Parallel physical fragments remain separate arcs.The treatment of zero- $M$  fragments is also correct. They retain capacity one because they own physical vertices, even though their cost is zero. Replacing their capacity by their  $M$ -weight would invalidate both routing and ownership.4. The two-colour binary model is exactThe weighted model in §4 has the right terminal constraints and the right shared capacity:
+$$r_R,b_R\in\{0,1\},
+\qquad r_R+b_R\le1.$$
+Separate red and blue conservation at a square also forces conservation of the third label, “unused,” because there are exactly two incoming and two outgoing ports. Equal incoming and outgoing label multisets admit a label-preserving keep-or-flip bijection.The terminal constraints then force the decoded terminal paths to be:LabelPossible terminal pathRedBlack  $T$  to white  $H$ BlueBlack  $H$  to white  $T$ UnusedBlack  $H$  to white  $H$ Thus every feasible model point gives complete  $T$ -coverage, and shared fragment capacity enforces physical disjointness, including on zero-cost fragments.The equality of optimal values follows from the two directions stated in the note:A covering switch subset gives a feasible binary point by colouring its TH paths, with objective exactly its total payment cost.A feasible binary point decodes to a covering switch subset whose TH cost is at most its objective. Any discrepancy consists of coloured cycles, whose weights are nonnegative.Writing  $C_{\mathrm{switch}}$  and  $C_{\mathrm{model}}$  for the two minima, these give
+$$C_{\mathrm{model}}\le C_{\mathrm{switch}},
+\qquad
+C_{\mathrm{switch}}\le C_{\mathrm{model}}.$$
+Deleting coloured cycles is legitimate, but the two inequalities already establish the optimal-value equality.A useful consequence connecting the positive and negative claimsEvery full red flow admits a blue completion within its remaining fragment capacities.To see this, decode red versus unused first. All black  $T$  starts are red, while every white  $T$  is unused. Each unused path ending at white  $T$  therefore starts at black  $H$ . Colour precisely those paths blue.This matters for the submitted checker: its lexicographic solver filters for red assignments admitting a full blue completion. Under the theorem’s structural assumptions, that filter imposes no additional restriction. It really does represent “minimize red first, then optimally complete blue.”Nothing here establishes integrality of the LP relaxation or a polynomial weighted algorithm. The submission correctly makes neither claim.5. The three-contact obstruction holds for every allowed sizeThe following is a symbolic all-size audit of ONE_COLOUR_GREEDY_BARRIER.md, using the explicit geometry in FIVE_CONTACT_SPARSIFICATION_BARRIER.md. Parameters are understood as integers: even  $L\ge4$  and  $d\ge1$ .Geometry and all-internal contactsThe rectangle has dimensions
+$$(L+10)\times(4d+50),$$
+and the stated horizontal dominoes give a full matching  $N$ .The narrowed part of  $A$  occupies columns  $c_4,c_4+1$  on rows  $2,\ldots,L-1$ . Because  $L$  is even, the serpentine ends at  $(c_4,L)$ , as required. Its separate descending column satisfies
+$$c_5-(c_4+1)=d>0.$$
+Thus it cannot intersect its own serpentine.The changed portion lies inside the old  $A$  rectangle; its other segments are unchanged. The old separation from  $B$  therefore survives. The listed exterior returns of  $B$  are separated from  $A$  and from nonconsecutive segments of  $B$ , including at the boundary values  $L=4,d=1$ .The selected endpoints remain
+$$(0,0),\qquad (4d+37,0).$$
+Their sole neighbours in  $P\cup T$  remain  $(1,0)$  and  $(4d+36,0)$ , respectively. Actual feasibility is preserved.All six cut dominoes have both a preceding and a following  $M$ -step. Hence all twelve contact vertices lie in  $P$ . The three contact columns  $8,c_3,c_4$  are distinct, so their supports are disjoint.The canonical orders are exactly
+$$A:g_1,g_2,g_3,
+\qquad
+B:g_2,g_1,g_3.$$
+Fragment weights and joint optimumThe eight fragment weights are
+$$\begin{aligned}
+a_0&=8,&
+\alpha&=d+1,&
+\gamma&=4,&
+a_3&=d+3L+3,\\
+b_0&=1,&
+\beta&=(L-1)d+2L+1,&
+\eta&=2L+3d+33,&
+b_3&=d+29.
+\end{aligned}$$
+In particular, the narrowed excursion has length
+$$2+(L-2)+(L-2)+(d+1)+L=d+3L-1,$$
+and the four-step final tail gives the stated  $a_3$ .Summing the fragments yields
+$$\boxed{|M|=(L+5)d+7L+80.}$$
+The successful-subset classification follows from the contact orders:Each singleton exchanges the TT/HH destinations and creates no cycle.The reversed pair  $\{g_1,g_2\}$  exchanges the destinations and creates one cycle owning exactly the  $\alpha$  and  $\beta$  fragments.Either other pair has the same order on the two strands and fails coverage.After the reversed pair,  $g_3$  exchanges the terminal destinations back, so all three also fail coverage.Thus the covering choices are precisely the three singletons and  $\{g_1,g_2\}$ . Since
+$$\alpha+\beta=Ld+2L+2>0,$$
+the pair is uniquely optimal:
+$$\boxed{
+C_{\mathrm{joint}}
+=|M|-(\alpha+\beta)
+=5d+5L+78.
+}$$
+This is a structural argument valid for all parameters, not an inference from numerical subset enumeration.The minimum-red statement holds over all flows, including circulationsThis is the strongest useful check on the obstruction.Let the red bits on the four interior arcs be
+$$x=r_\alpha,\quad y=r_\beta,\quad
+u=r_\gamma,\quad v=r_\eta.$$
+The terminal constraints force
+$$r_{a_0}=r_{b_3}=1,
+\qquad
+r_{b_0}=r_{a_3}=0.$$
+The untouched HH components have no contact connecting them to the red source, so they supply no alternative red route.Conservation reduces to
+$$x=y+u,\qquad u+v=1,$$
+with all four variables binary. The  $g_1$  equation follows from these.The only possibilities are
+$$(x,y,u,v)
+=(0,0,0,1),\quad
+(1,0,1,0),\quad
+(1,1,0,1).$$
+Their red costs are, respectively,
+$$\begin{aligned}
+R_{\mathrm{direct}}&=a_0+\eta+b_3,\\
+R_{\mathrm{cheap}}&=a_0+\alpha+\gamma+b_3,\\
+R_{\mathrm{direct+circulation}}
+&=a_0+\eta+b_3+\alpha+\beta.
+\end{aligned}$$
+The third possibility explicitly accounts for the directed circulation between  $g_1$  and  $g_2$ .Now
+$$R_{\mathrm{direct}}-R_{\mathrm{cheap}}
+=\eta-\alpha-\gamma
+=2L+2d+28>0,$$
+and  $\alpha+\beta>0$ . Therefore the unique minimum-red resource set is
+$$\{a_0,\alpha,\gamma,b_3\},
+\qquad
+\boxed{R_{\min}=2d+42.}$$
+This establishes uniqueness over all admissible binary red flows, not just the red paths displayed for successful switch subsets.That red flow forces the entire switch choiceFor the minimum red flow:at  $g_1$ , red must continue along  $A$ ;at  $g_2$ , red must continue along  $A$ ;at  $g_3$ , red must cross from  $A$  to  $B$ .Thus the local bijections force exactly the singleton  $\{g_3\}$ . There is no remaining decoding choice that can create the beneficial cycle.The complementary blue path uses
+$$b_0,\beta,\eta,a_3.$$
+Together the two payments use every affected fragment, so
+$$\boxed{
+C_{\mathrm{sequential}}
+=(L+5)d+7L+80.
+}$$
+For the joint optimum, the red and blue costs are
+$$4d+2L+70,
+\qquad
+d+3L+8,$$
+whose sum is  $5d+5L+78$ . Optimal blue completion and favourable tie-breaking therefore do not rescue red-first optimization.Unbounded ratioSetting  $d=L$  gives
+$$C_{\mathrm{sequential}}=L^2+12L+80,
+\qquad
+C_{\mathrm{joint}}=10L+78.$$
+Hence the ratio tends to infinity.The explicit quantified witness also checks: for  $L\ge4$ ,
+$$C_{\mathrm{joint}}\le30L.$$
+For any integer  $K\ge0$ , choose even  $L=100(K+1)$ . Then
+$$K C_{\mathrm{joint}}
+\le30KL<L^2\le C_{\mathrm{sequential}}.$$
+The prescribed-pool qualification is essential and is correctly retained. The construction does not obstruct choosing other squares, another  $N$ , or unrestricted payments to nearby unused holes.6. Independent execution recordI extracted the submitted file sections without changing their contents, preserving the helper layout. The submitted report was kept separately from the generated output.I executed once:Plain textpython3 develop/check_contact_flow_cut.pyWorking directory:Plain text/workspace/scratch/8cddb0cd0c27/contact_flow_auditThe interpreter was Python 3.12.14, assertions were enabled, and the process exited 0 with status PASS.I then ran a separate comparison script which:loaded the generated and supplied output/contact-flow-cut.json in full;compared the entire parsed objects;checked recursively for type, key, list-length and value differences;confirmed that the extracted submitted Python source payloads remained unchanged after execution.Result: complete parsed-JSON equality, with zero recursive differences across all 14 top-level fields. This included the long-star records, shortcut records and scope field omitted from stdout.The reproduced report contains:Control categoryReproduced countAbstract networks360Abstract weighted models224Actual row pools96Actual row subset surgeries2,144Actual short-star families62Actual short-star subset surgeries1,364Actual long-star controls48Special fixtures2Five-contact weighted models3One-colour ladder shortcut controls19Three-contact greedy-obstruction boards6The six greedy boards use  $d=L$  with
+$$L\in\{4,6,8,12,20,40\}.$$
+They reproduce, among others,  $720$  versus  $278$  at  $L=d=20$ , and  $2160$  versus  $478$  at  $L=d=40$ . The all- $d$ , all-size conclusion rests on the mathematical argument above.I did not execute the helpers’ standalone mains, either formal-checking script, Lean, or lake. The attached Lean file contains eleven scoped lemmas for local label completion, conditional arithmetic and the ratio witness. Its global physical adapter, flow/min-cut theorem and weighted equivalence remain written mathematics, as the submission acknowledges. The supplied formal-run report is therefore supplied evidence only, not an independently reproduced Lean execution.   contact-flow-cut-review.txtDocumentOpen file
