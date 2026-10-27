@@ -1681,6 +1681,137 @@
     "actual_TH_cost": 0,
     "global_cycle_normalization_deferred": true
   },
+  "review_repair_controls": {
+    "large_integer_forests": [
+      {
+        "retained_weight_digits": 401,
+        "forced_weight_digits": 1,
+        "exact": true
+      },
+      {
+        "retained_weight_digits": 801,
+        "forced_weight_digits": 501,
+        "exact": true
+      },
+      {
+        "retained_weight_digits": 1,
+        "forced_weight_digits": 401,
+        "exact": true
+      }
+    ],
+    "large_integer_feedback_cycle": true,
+    "component_traversal_controls": [
+      {
+        "height": 2,
+        "kind": "HH",
+        "terminal_start_checks": 4,
+        "cycle_start_checks": 4,
+        "vertex_visits": 4,
+        "actual_edge_visits": 0,
+        "auxiliary_edge_visits": 2
+      },
+      {
+        "height": 2,
+        "kind": "doubles",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 4,
+        "vertex_visits": 4,
+        "actual_edge_visits": 2,
+        "auxiliary_edge_visits": 2
+      },
+      {
+        "height": 2,
+        "kind": "long_cycle",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 4,
+        "vertex_visits": 4,
+        "actual_edge_visits": 2,
+        "auxiliary_edge_visits": 2
+      },
+      {
+        "height": 32,
+        "kind": "HH",
+        "terminal_start_checks": 64,
+        "cycle_start_checks": 64,
+        "vertex_visits": 64,
+        "actual_edge_visits": 0,
+        "auxiliary_edge_visits": 32
+      },
+      {
+        "height": 32,
+        "kind": "doubles",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 64,
+        "vertex_visits": 64,
+        "actual_edge_visits": 32,
+        "auxiliary_edge_visits": 32
+      },
+      {
+        "height": 32,
+        "kind": "long_cycle",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 64,
+        "vertex_visits": 64,
+        "actual_edge_visits": 32,
+        "auxiliary_edge_visits": 32
+      },
+      {
+        "height": 512,
+        "kind": "HH",
+        "terminal_start_checks": 1024,
+        "cycle_start_checks": 1024,
+        "vertex_visits": 1024,
+        "actual_edge_visits": 0,
+        "auxiliary_edge_visits": 512
+      },
+      {
+        "height": 512,
+        "kind": "doubles",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 1024,
+        "vertex_visits": 1024,
+        "actual_edge_visits": 512,
+        "auxiliary_edge_visits": 512
+      },
+      {
+        "height": 512,
+        "kind": "long_cycle",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 1024,
+        "vertex_visits": 1024,
+        "actual_edge_visits": 512,
+        "auxiliary_edge_visits": 512
+      },
+      {
+        "height": 4096,
+        "kind": "HH",
+        "terminal_start_checks": 8192,
+        "cycle_start_checks": 8192,
+        "vertex_visits": 8192,
+        "actual_edge_visits": 0,
+        "auxiliary_edge_visits": 4096
+      },
+      {
+        "height": 4096,
+        "kind": "doubles",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 8192,
+        "vertex_visits": 8192,
+        "actual_edge_visits": 4096,
+        "auxiliary_edge_visits": 4096
+      },
+      {
+        "height": 4096,
+        "kind": "long_cycle",
+        "terminal_start_checks": 0,
+        "cycle_start_checks": 8192,
+        "vertex_visits": 8192,
+        "actual_edge_visits": 4096,
+        "auxiliary_edge_visits": 4096
+      }
+    ],
+    "baseline_decomposition_differential_on_all_compared_auxiliaries": true
+  },
   "scope": "Exact physical same-colour ladder language, three-colour weighted model, forest messages and cycle-rank feedback; exact w/2 one-batch versus zero two-batch cost after one T relocation; inherited isolated-hole k family has new strip-confined horizontal optimal completion.",
   "trust_boundary": "All-size correctness and complexity are written proofs, finite controls validate implementation; no universal 5/6 or unrestricted polynomial solver claimed."
 }

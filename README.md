@@ -2415,4 +2415,4 @@ dimensions/240 isometries check8768 endpoints;24 independent cap parameters
 and4 width-six left heights check the geometric adapters. The full
 admission theorem assembly and physical wall argument remain written.
 
-Independent strip-tree review: task `355b1665-3f6d-4499-8d79-e57afbdd56b9`, conversation `conv_114a15870b1dd1fd`, currently dispatched/waiting_response. Identity checked by exact submitted-prompt equality. No mathematical verdict or independent execution is available yet; see [receipt](output/strip-tree-review.json). The pending review inputs and stream are archived outside the disposable checkout.
+Independent strip-tree review: task `355b1665-3f6d-4499-8d79-e57afbdd56b9`, conversation `conv_114a15870b1dd1fd`, completed with REVISE: written mathematical arguments accepted; checker JSON reproduced byte for byte; implementation needs integer-arithmetic and component-traversal fixes. Identity checked by exact submitted-prompt equality; see [receipt](output/strip-tree-review.json). The pending review inputs and stream are archived outside the disposable checkout.

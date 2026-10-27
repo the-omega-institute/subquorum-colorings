@@ -163,7 +163,15 @@ The number of colours and transfer states is fixed. Precompute each endpoint's
 three unary costs, process each cell at most three times (one per parent colour),
 and traverse each actual edge once. This is O(|V|) arithmetic operations and
 O(|V|) storage, not an enumeration of the Fibonacci-many local tilings.
-Integer arithmetic has the bit length of the total weights. This is a
+All finite costs remain arbitrary-size integers. Impossible unary/message values
+use a separate symbolic value (None), never floating-point infinity; an option
+with an impossible chosen unary is rejected before finite costs are added.
+Integer arithmetic has the bit length of the total weights. The final component
+extraction scans Q once for terminal starts and V once for cycle starts,
+marking each vertex on entry. Each N edge and actual M edge is traversed
+once, including shared edges as tagged doubled cycles. Thus the diagnostic
+wrapper and backtracking also obey the linear operation bound; they do not
+repeatedly choose a minimum unseen vertex or rebuild a growing path set. This is a
 weighted algorithm for the stated forest class, not a claim that arbitrary
 cell graphs or unrestricted grids have a polynomial weighted solver.
 
@@ -259,7 +267,9 @@ All other selected pairings persist. Thus
     two batches: feasible, exact minimum M fee 0.          (4)
 
 For this relocated selection the minimum coverage depth is one, while the
-minimum zero-fee depth is two. The gap in expense is unbounded, without any
+minimum zero-fee depth is two, under UNIT fees. With arbitrary nonnegative
+weights, the minimum zero-weight-fee depth is one exactly when the forced
+set has total weight zero, and two otherwise. The gap in expense is unbounded, without any
 change to actual M. In particular the left middle vertical phase matters:
 ignoring that fifth phase would incorrectly charge the left side edge too.
 
@@ -301,8 +311,9 @@ and word length; two are axiom-free and the others use only standard Lean
 axioms. The geometric extraction of the rung/vertical grammar is written.
 All-width proofs of (1)--(4), the message induction and
 feedback partition above provide generality; finite controls do not replace
-them. Scoped Lean statements concern the word parser and resource arithmetic,
-not the global coordinate/flow/algorithm adapters.
+them. Scoped Lean statements concern the word grammar, its normalization, and
+its recognizer, not resource arithmetic or global coordinate/flow/algorithm
+adapters.
 
 The next open issue is a geometric guarantee or resource estimate for the
 full mixed/occupied-band problem. These exact models can certify or exclude
@@ -311,3 +322,12 @@ they do not prove every feasible board has a covering N in a chosen strip
 class. In particular the old closed-chain selection remains infeasible even
 though its scalar coarse flow passes, and fixed-M coverage improvements do
 not change the numerical invariant delta-b_opt=a-b.
+
+The [initial independent review](reviews/2026-10-27-strip-tree-initial-review.txt)
+accepted the written arguments and reproduced the submitted checker JSON
+byte for byte, but returned REVISE for large-integer arithmetic and quadratic
+component-checking overhead in the implementation. Both issues are corrected
+in this revision and covered by large-integer and exact traversal-count
+controls, in addition to differential checks against the older decomposition.
+A follow-up verdict is recorded separately; initial mathematical acceptance
+does not count as acceptance of the corrected implementation.

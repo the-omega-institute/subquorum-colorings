@@ -5,7 +5,9 @@ from pathlib import Path
 import json
 import random
 
-from strip_tree_compensation import solve, solve_cycle_rank, word_lifts, _forest_labels
+from strip_tree_compensation import (
+    solve, solve_cycle_rank, word_lifts, _forest_labels, physical_state_linear,
+)
 from check_general_square_ports import all_matchings, edge, grid, physical_state, selected_feasible
 from check_unique_matching_hole_barrier import family as closed_family
 from check_unbounded_hole_relay import family as relay_family
@@ -77,6 +79,13 @@ def compare(h, w, m, t, cell_height, nlist, weights):
     best = None; covering = 0
     for n in nlist:
         state = physical_state(grid(h, w), m, n, t)
+        linear = physical_state_linear(grid(h, w), m, n, t)
+        assert state['data']['counts'] == linear['data']['counts']
+        assert all(state[k] == linear[k] for k in ['paid', 'bad', 'free'])
+        assert set(state['cycles']) == set(linear['cycles'])
+        signature = lambda d: {(p['kind'], frozenset(p['vertices']), frozenset(p['M']),
+                                frozenset(p['N'])) for p in d['data']['paths']}
+        assert signature(state) == signature(linear)
         if state['data']['counts'][0] == 0:
             fee = sum(weights[e] for e in state['paid'])
             best = fee if best is None else min(best, fee); covering += 1
@@ -199,6 +208,51 @@ def cycle_controls():
                 global_cycle_normalization_deferred=True)
 
 
+def integer_and_linear_controls():
+    # Independent review reproduced this valid feasible forest with optimum 1.
+    # Floating infinity used to overflow while inspecting an impossible option.
+    e0 = edge((0, 0), (1, 0)); e1 = edge((0, 1), (0, 2))
+    m = {e0, e1}; t = {(0, 3), (1, 2)}; integer_cases = []
+    for expensive, forced in [(10**400, 1), (10**800, 10**500+7), (0, 10**400)]:
+        weights = {e0: expensive, e1: forced}
+        row = compare(2, 4, m, t, 2, auxiliaries(2, 4, 2), weights)
+        assert row['fee'] == forced
+        integer_cases.append(dict(retained_weight_digits=len(str(expensive)),
+                                  forced_weight_digits=len(str(forced)), exact=True))
+    parallel = {edge((0, 1), (0, 2)), edge((1, 1), (1, 2))}
+    weights = {e: 10**400 for e in parallel}
+    branch = _forest_labels(2, 4, parallel, set(), 2, weights, {max(parallel): 1})
+    assert branch['cost'] == 2*10**400 and branch['physical_cost'] == 0
+    assert solve_cycle_rank(2, 4, parallel, set(), 2, weights)['cost'] == 0
+    # Scans/visits are exact structural counts, not a timing-based complexity claim.
+    # These are the reviewer's HH-only and doubled-rung quadratic counterfamilies,
+    # plus one long P-only cycle to check tagging and incremental membership.
+    traversals = []
+    for h in [2, 32, 512, 4096]:
+        board = grid(h, 2)
+        rungs = {edge((r, 0), (r, 1)) for r in range(h)}
+        around = {edge((0, 0), (0, 1)), edge((h-1, 0), (h-1, 1))}
+        around |= {edge((r, c), (r+1, c)) for r in range(1, h-1, 2) for c in [0, 1]}
+        vertical = {edge((r, c), (r+1, c)) for r in range(0, h, 2) for c in [0, 1]}
+        for name, actual, auxiliary in [('HH', set(), rungs), ('doubles', rungs, rungs),
+                                         ('long_cycle', around, vertical)]:
+            state = physical_state_linear(board, actual, auxiliary, set())
+            visits = state['traversal_counts']
+            assert visits == dict(terminal_start_checks=2*h-2*len(actual),
+                                  cycle_start_checks=2*h, vertex_visits=2*h,
+                                  actual_edge_visits=len(actual), auxiliary_edge_visits=h)
+            if name == 'long_cycle':
+                assert len(state['cycles']) == 1 and len(state['cycles'][0][0]) == 2*h
+            traversals.append(dict(height=h, kind=name, **visits))
+        for actual in [set(), rungs]:
+            result = solve(h, 2, actual, set(), h)
+            assert result['cost'] == 0
+            assert result['state']['traversal_counts']['vertex_visits'] == 2*h
+    return dict(large_integer_forests=integer_cases, large_integer_feedback_cycle=True,
+                component_traversal_controls=traversals,
+                baseline_decomposition_differential_on_all_compared_auxiliaries=True)
+
+
 def main():
     words = colour_controls()
     exhaustive = [exhaustive_controls(2, 4, 2), exhaustive_controls(4, 2, 4)]
@@ -206,12 +260,14 @@ def main():
     relocated = [relocated_family(w) for w in range(6, 106, 2)]
     longfees = [long_fee_family(k) for k in range(1, 17)]
     cycles = cycle_controls()
+    repairs = integer_and_linear_controls()
     out = dict(status='PASS', colour_profiles=sum(r['profiles'] for r in words),
                local_word_controls=words, exhaustive_controls=exhaustive,
                exhaustive_actual_weighted_models=sum(r['actual_weighted_models'] for r in exhaustive),
                exhaustive_full_auxiliary_evaluations=sum(r['full_auxiliary_evaluations'] for r in exhaustive),
                random_actual_models=len(randoms), random_controls=randoms,
                relocated_family_controls=relocated, long_fee_controls=longfees, cycle_control=cycles,
+               review_repair_controls=repairs,
                scope='Exact physical same-colour ladder language, three-colour weighted model, forest messages and cycle-rank feedback; exact w/2 one-batch versus zero two-batch cost after one T relocation; inherited isolated-hole k family has new strip-confined horizontal optimal completion.',
                trust_boundary='All-size correctness and complexity are written proofs, finite controls validate implementation; no universal 5/6 or unrestricted polynomial solver claimed.')
     (ROOT/'output/strip-tree-compensation.json').write_text(json.dumps(out, indent=2)+'\n')
