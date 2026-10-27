@@ -31,11 +31,16 @@ Write V_B for the original grid vertices in B's cells and
           - number of cells in B + 1.
 
 **Bridge-block theorem.** Feasibility and the exact minimum physical TH fee
-are computable, with full N and unique actual-edge payment sets as witnesses,
+are computable, with full N and deduplicated actual-edge payment sets for each witness,
 in
 
     O( sum_B 3^(k_B) |V_B| ) arithmetic operations,
     O(|V|) storage.
+
+The written theorem permits arbitrary two-column rectangular cells. The
+delivered API constructs uniform row bands, with a possibly shorter final
+band; it implements the bound for that domain, without accepting an arbitrary
+per-cell partition as input. Uniqueness of an optimal N is not claimed.
 
 In particular, if r=max_B k_B is bounded, the bound is O(3^r |V|), regardless
 of the total rank k=sum_B k_B. All finite costs remain integers, with bit
@@ -244,3 +249,10 @@ bridge theorem. Any extension across such a cell must preserve its joint
 physical port relation. The next step is therefore a stronger separator
 model with explicit boundary-colour tuples, rather than attempting to
 deduce a universal bounded bridge-block rank from feasibility.
+
+The [independent review](reviews/2026-10-27-bridge-block-independent-review.txt)
+returned ACCEPT for the submitted bridge-block theorem and implemented
+uniform-band domain, reproduced the submitted checker output byte for byte,
+and reported additional small differential tests. It did not execute Lean
+or inspect the later Section 8 rank barrier. The two scope clarifications
+above were incorporated following that review.
