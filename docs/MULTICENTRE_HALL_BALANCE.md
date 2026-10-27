@@ -343,3 +343,16 @@ proper-J counterexample, all complete-N symbolic expense vectors, and
 both cheap-only endpoint obstructions. The actual counterexample is also
 tested at five K values including a 401-digit integer. Results and exact
 scope are recorded in the three `output/multicentre-*.json` reports.
+
+Two independent Oracle reviews returned **ACCEPT**, with no required
+mathematical revisions. The first reviewed source `d018eaa` for the
+general theorem, 18-by-18 all-K improvement and sharp two-centre witness;
+the second separately reviewed source `4ba1aa2` including the later
+12-by-14 actual-grid obstruction. Both executed the two validation
+commands and reproduced all three reports byte for byte at their own
+respective snapshots. Both also report independent standard-library
+reconstructions of the relevant geometry and full matchings. They reviewed
+supplied archives and did not fetch GitHub. The first stream suffered a
+transport EOF; its completed response was recovered from the original
+task, not by submitting a replacement. Exact scope and full responses
+are retained in `output/multicentre-review.json` and its linked receipts.

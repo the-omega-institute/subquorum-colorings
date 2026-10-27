@@ -1,23 +1,73 @@
 {
-  "status": "running",
-  "verdict": "PENDING",
+  "status": "completed",
+  "verdict": "ACCEPT",
   "source_commit": "4ba1aa233152f6827e7b01d84a4492155fce1d72",
-  "task_id": null,
+  "task_id": "f002372c-e4b5-4703-a5d6-3c4b162ad454",
+  "conversation_id": "conv_66d1b9d787869c0f",
   "reviews": [
     {
-      "scope": "General balance, refined theorem,18x18 all-K improvement and initial tests",
-      "source_commit": "d018eaab754c0266ec5742dc1c32e0b781f43093",
+      "task_id": "52dac19c-e4ce-4054-bddd-e4705f508201",
       "conversation_id": "conv_11f7f9bc2fea4b96",
-      "status": "running",
-      "verdict": null
+      "status": "completed",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "completed_at": "2026-10-27T12:01:31.439+00:00",
+      "verdict": "ACCEPT",
+      "source_commit": "d018eaab754c0266ec5742dc1c32e0b781f43093",
+      "github_fetched": false,
+      "supplied_snapshot_review": true,
+      "executed_commands": [
+        "python3 develop/check_multicentre_hall_balance.py",
+        "python3 develop/check_multicentre_coordinates.py"
+      ],
+      "reports_compared_byte_for_byte": [
+        "output/multicentre-hall-balance.json",
+        "output/multicentre-hall-certificates.json",
+        "output/multicentre-coordinate-audit.json"
+      ],
+      "execution_evidence": "Reviewer reports executing both validators and independently written standard-library reconstruction; full response retained.",
+      "scope": "Arbitrary-k balance, eligible-centre lemma, general refined bound and dominance,physical quotas,18x18 all-K strict improvement,sharp two-centre witness; excludes later12x14 supplement.",
+      "transport": "Original streaming CLI ended unexpected EOF. Original session and original task both authoritatively completed; response recovered without a replacement task.",
+      "additional_independent_checks": "Reviewer reports1258 physical paths,74785FCC pairs,27588FH pairs,proper-J320paths/1914pairs,and184336 full4x6 matching/weight comparisons. The latter all fall into U1,not extra exhaustive FH/FX coverage.",
+      "report_byte_sizes": [
+        29170,
+        86846,
+        1281
+      ],
+      "full_review": "output/multicentre-core-oracle-review.json"
     },
     {
-      "scope": "Actual12x14 all-K obstruction and final expanded checker/certificates",
-      "source_commit": "4ba1aa233152f6827e7b01d84a4492155fce1d72",
+      "task_id": "f002372c-e4b5-4703-a5d6-3c4b162ad454",
       "conversation_id": "conv_66d1b9d787869c0f",
-      "status": "running",
-      "verdict": null
+      "status": "completed",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "completed_at": "2026-10-27T12:01:10.250+00:00",
+      "verdict": "ACCEPT",
+      "source_commit": "4ba1aa233152f6827e7b01d84a4492155fce1d72",
+      "github_fetched": false,
+      "supplied_snapshot_review": true,
+      "executed_commands": [
+        "python3 develop/check_multicentre_hall_balance.py",
+        "python3 develop/check_multicentre_coordinates.py"
+      ],
+      "reports_compared_byte_for_byte": [
+        "output/multicentre-hall-balance.json",
+        "output/multicentre-hall-certificates.json",
+        "output/multicentre-coordinate-audit.json"
+      ],
+      "execution_evidence": "Reviewer reports executing both validators and independently written standard-library reconstruction; full response retained.",
+      "scope": "Final source: actual12x14 all-K necessary-FX obstruction,all model hypotheses,full optimum and normal-form N,cheap-only endpoint/cross-pairing argument,plus inspected general theorem and contextual18x18 result.",
+      "transport": "Original streaming CLI completed with exit0; task metadata also confirms completed.",
+      "additional_independent_checks": "Reviewer independently reconstructs12x14 geometry/M/T,all59 exposure deletions,exact Gamma/J,full84-edge optimum and normal matchings,symbolic paid vectors(2,0)/(0,1),and cheap-only E endpoints.",
+      "report_byte_sizes": [
+        32643,
+        123905,
+        1699
+      ],
+      "full_review": "output/multicentre-counterexample-oracle-review.json"
     }
   ],
-  "scope": "Local proofs and both checkers passed. Independent reviews are pending; no external acceptance or execution claim. Supplied git snapshots, not GitHub fetches. No Lean or universal5/6 claim."
+  "local_validation": "Both checkers passed on final mathematical source; all48 earlier controls retain matching exact certificates; standard-library audit includes98+17+59 exterior deletions.",
+  "scope": "Two distinct supplied-source reviews. General proof and18x18 improvement accepted at d018eaa; later12x14 all-K obstruction and final expanded reports separately accepted at4ba1aa2. No GitHub fetch by reviewers,Lean run,general exact optimizer or universal unit-weight5/6 improvement claim."
 }

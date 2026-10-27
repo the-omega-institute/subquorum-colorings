@@ -16,6 +16,9 @@ give the false lower bound K if the mixed-centre branch were omitted.
 [complete matching certificates](output/multicentre-hall-certificates.json).
 General arguments are written; no universal unit-weight 5/6 improvement
 or new Lean claim is made.
+Separate [ACCEPT reviews](output/multicentre-review.json) cover the main
+theorem and the later actual-grid obstruction; both reviewers executed
+the validators and reproduced their respective three reports byte for byte.
 
 New unrestricted physical result: [joint-frontier defect/fee theorem](docs/JOINT_FRONTIER_PHYSICAL_DEFECTS.md) optimizes over ALL full grid auxiliary matchings, lexicographically minimizing residual TT count and actual TH fee. Four labels give an exact local model; the joint label/covered-bit frontier has at most 8^min(h,w) states, independent of cell-graph cycle rank. [Solver](develop/joint_frontier_compensation.py) · [independent full-N enumeration](develop/check_joint_frontier_compensation.py) · [report](output/joint-frontier-compensation.json). All-size proofs are written; no new Lean or universal 5/6 improvement is claimed.
 
