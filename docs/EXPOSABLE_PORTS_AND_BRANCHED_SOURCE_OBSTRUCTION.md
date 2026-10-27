@@ -92,6 +92,11 @@ For nonnegative weights alone, equality U_1=Lambda is sufficient; we do
 not assert its necessity. Nor is U_1 a general exact TH optimizer when
 it exceeds Lambda.
 
+The later note `TWO_NONTRIVIAL_TH_PATH_BOUND.md` gives a general
+two-path lower bound and a fixed strictly positive-weight family with
+f*=2 but U_1=K for every integer K>=3. This is an explicit failure of
+global normal-form exactness; it preserves the restricted theorem here.
+
 Proof of (1). Every black O vertex has a direct T neighbour witnessed
 by its saturating matching, hence shortest TH fee zero. The centre fees
 are exactly rho_i by core separation. The generic discount problem is

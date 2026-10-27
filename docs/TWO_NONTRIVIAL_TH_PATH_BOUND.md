@@ -31,6 +31,11 @@ in C. These paths need not extend to a full auxiliary matching N.
 The minimum of the empty set is +infinity. Define F_2 without the
 centre-endpoint condition; thus F_2<=F_2^C.
 
+Here P=V(M), and a full auxiliary matching N is a perfect matching
+of the whole vertex set V. The mathematical statements allow finite
+nonnegative real weights. The supplied exact-arithmetic Python API
+accepts nonnegative integer weights.
+
 **Two-path dichotomy.** Every full auxiliary grid matching N has either:
 
 1. exactly one TH centre, every other centre HH, and all remaining
@@ -246,3 +251,13 @@ variant 31 with simpler symbolic weights and fixed certificates;
 its all-K proof does not claim to solve the original random weights
 of that control. Finite tests validate implementation and fixed
 witnesses; Sections 1--3 and 5 supply the mathematical arguments.
+
+Independent Oracle review of source `87e7b802de4e42b7beb25cb2c0ae89cef9ccd356`
+returned **ACCEPT** with no required mathematical changes. The reviewer
+ran the checker and reproduced the report structurally and byte for
+byte, and independently reconstructed the fixed coordinate witnesses
+without importing the project decomposition. The review covers the
+dichotomy, physical flow, combined bound, and all-K/zero-weight family;
+it used the supplied git archive, not a GitHub fetch. The two explicit
+conventions above are the reviewer's optional clarifications. See
+`output/two-th-path-review.json` for provenance and limitations.
