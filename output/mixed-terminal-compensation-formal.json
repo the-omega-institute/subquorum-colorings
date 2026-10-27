@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/MixedTerminalCompensation.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3554 \nPages purgeable: 2 \nPages purged: 267993266 \n\nSwap I/O:\nSwapins: 483358839 \nSwapouts: 499538132 \n\nPage Q counts:\nPages active: 147170 \nPages inactive: 144928 \nPages speculative: 1116 \nPages throttled: 0 \nPages wired down: 266733 \n\nCompressor Stats:\nPages used by compressor: 443340 \nPages decompressed: 7010878891 \nPages compressed: 7887669500 \n\nFile I/O:\nPageins: 8580429682 \nPageouts: 26449880 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4188.\nPages active:                                 146739.\nPages inactive:                               144491.\nPages speculative:                              1120.\nPages throttled:                                   0.\nPages wired down:                             266733.\nPages purgeable:                                   0.\n\"Translation faults\":                    31530793205.\nPages copy-on-write:                      1507110501.\nPages zero filled:                       12313547266.\nPages reactivated:                        6867021795.\nPages purged:                              267993273.\nFile-backed pages:                             89669.\nAnonymous pages:                              202681.\nPages stored in compressor:                  3223384.\nPages occupied by compressor:                 443682.\nDecompressions:                           7010879009.\nCompressions:                             7887670478.\nPageins:                                  8580429683.\nPageouts:                                   26449880.\nSwapins:                                   483358879.\nSwapouts:                                  499538284."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.terminal_balance",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.batch_residuals",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.full_hall_weighted",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.retention_normalized",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.terminal_penalty",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.band_counts",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MixedTerminalCompensation.penalty_one",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.MixedTerminalCompensation.terminal_balance' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MixedTerminalCompensation.batch_residuals' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.MixedTerminalCompensation.full_hall_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.MixedTerminalCompensation.retention_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.MixedTerminalCompensation.terminal_penalty' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MixedTerminalCompensation.band_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.MixedTerminalCompensation.penalty_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Terminal counts, simultaneous-batch residuals, conditional half-area and exact scaled 5/6 margin, normalized retention arithmetic, terminal penalty and arbitrary band counts, with explicit geometric/optimization hypotheses.",
+  "not_formalized": "Matching decomposition, square-arm gluing, component-disjoint switches, Hall theorem, optimization existence and all-length coordinate/feasibility proof remain written. Not end-to-end grid Lean."
+}

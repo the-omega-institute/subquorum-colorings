@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [mixed-terminal square compensation](docs/MIXED_TERMINAL_SQUARE_COMPENSATION.md)
+keeps the actual matching M fixed and switches only a full auxiliary certificate N.
+A matching of s original TT/HH component pairs with alternating-square witnesses
+repairs exactly 2s selected endpoints, without sharing physical M edges;
+Hall coverage of TT gives J=area/2-(b-a) and the exact weighted margin
+(b-a)+|M|/6. The geometric Hall hypothesis remains explicit. At balanced equality,
+legal payment cost is |M| minus maximum retention over TH-admissible certificates;
+unrestricted retention can underestimate it. An arbitrary-height feasible
+4-column family has terminal penalty exactly one and an explicit square repair.
+Checks cover 7,345 small-strip controls, 360,432 matching-pair controls,
+6,117 feasible balanced core selections and 41 family parameters. Seven scoped
+local Lean arithmetic declarations pass; decomposition, gluing, Hall and grid
+assembly remain written proofs. No universal 5/6 improvement is claimed.
+
 New [isolated-hole obstruction and actual-edge detours](docs/ISOLATED_HOLE_OBSTRUCTION_AND_MATCHING_DETOURS.md):
 on a 6-by-8q footprint, every feasible selection satisfies J<=area/2, sharply,
 by an explicit disjoint cover with seven guarded pairs, six endpoint-free squares
@@ -27,9 +41,9 @@ maximum length of forced-hole detours cannot yield a universal cover, even
 with nonnegative fractional exact coverage. Forty actual boards and another
 actual rematching per board pass; two further scoped Lean kernels verify the
 distance/cost deduction. The lower bound is geometric and holds at every k.
-Its [separate independent review remains pending](output/unbounded-hole-relay-review.json):
-the broker has encountered a browser typing failure and is retaining the
-original live task. No mathematical verdict for this addendum is recorded yet.
+Its [first separate review terminated with an infrastructure failure](output/unbounded-hole-relay-review.json):
+the broker exhausted three browser-input retries. No mathematical verdict
+was returned for this addendum; the accepted q-cell review remains separate.
 
 New [unique-matching hole-compensation barrier](docs/UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md):
 for every even w>=6, one explicit endpoint footprint on 4-by-w has a unique

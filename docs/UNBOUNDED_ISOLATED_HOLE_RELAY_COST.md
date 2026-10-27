@@ -168,7 +168,7 @@ matching/path adapters and decomposition remain written. No submitted
 manuscript, Mail, public main/PR3, C4 or shared CI is modified.
 
 The [separate independent review](../output/unbounded-hole-relay-review.json)
-is still live after a broker browser-input failure. The earlier q-cell ACCEPT
-does not cover this later theorem. The mathematical evidence here is the
-written all-k proof, local coordinate controls and two conditional Lean kernels;
-no independent acceptance is claimed while the original task remains pending.
+terminated after three broker browser-input failures, with no mathematical
+verdict. The earlier q-cell ACCEPT does not cover this later theorem. The
+mathematical evidence here is the written all-k proof, local coordinate controls
+and two conditional Lean kernels; no acceptance is inferred from the failed task.

@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "exhaustive_2by4": {
+    "controls": 7345,
+    "positive_batches": 880,
+    "nonvacuous_full_Hall_cases": 674,
+    "unbalanced_partitions": 4840,
+    "lost_M_counts_including_unused_cycles": 340
+  },
+  "family_parameters": 41,
+  "smallest": {
+    "bands": 0,
+    "height": 4,
+    "T": 6,
+    "H": 6,
+    "M": 2,
+    "J": 8,
+    "exact_R_all": 2,
+    "exact_R_TH": 1,
+    "exact_legal_cost": 1,
+    "exact_terminal_penalty": 1,
+    "one_square_repairs_without_extra_M": true
+  },
+  "largest": {
+    "bands": 40,
+    "height": 84,
+    "T": 166,
+    "H": 166,
+    "M": 2,
+    "J": 168,
+    "exact_R_all": 2,
+    "exact_R_TH": 1,
+    "exact_legal_cost": 1,
+    "exact_terminal_penalty": 1,
+    "one_square_repairs_without_extra_M": true
+  },
+  "core_optimization": {
+    "partial_M": 10012,
+    "full_N": 36,
+    "M_N_pairs": 360432,
+    "unused_cycle_overcount_cases": 94352,
+    "feasible_balanced_selections": 6117,
+    "mixed_colour_cases": 4107,
+    "strict_terminal_penalty_cases": 8,
+    "no_admissible_N_cases": 0,
+    "first_strict_case": {
+      "M": [
+        [
+          7,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "T": [
+        0,
+        1,
+        3,
+        8,
+        13,
+        15
+      ],
+      "R_all": 2,
+      "R_TH": 1,
+      "actual_cost": 1
+    }
+  },
+  "scope": "Written fixed-M TT/HH square and simultaneous component-matching compensation; exact residuals and conditional weighted bound; balanced constrained-retention equivalence; all-length feasible mixed penalty-one family.",
+  "trust_boundary": "The path decomposition, arm gluing, Hall and all-length coordinate argument are written proofs. Small exhaustive controls are not universal Hall/retention feasibility evidence. No universal 5/6 improvement, freezing or end-to-end grid Lean is claimed."
+}
