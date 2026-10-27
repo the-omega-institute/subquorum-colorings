@@ -250,3 +250,30 @@ validate the delivered code. The all-size assertions follow from the
 column injection, alternating-path proof and disjoint gluing above.
 This note makes no new Lean verification claim and does not modify the
 11 October manuscript or the public manuscript revision.
+
+## 7. Validation and independent review record
+
+The checker passes all 15,455 feasible actual ladder models of widths
+1 through 6, comparing 182,126 full auxiliary matchings. The 694 weighted
+frontier comparisons are specifically the exhaustive models of widths
+1 through 4, with one prescribed weight assignment each. An additional
+48 closed-band models have 5,280 full-N comparisons, and the seam example
+has all 36 full N. Including those controls, the checker makes 743 frontier
+calls. The large families use widths 8,32,128,1024,8192 in two reflected
+forms; the odd exception uses 1,3,5,129,4097. These are listed family sizes,
+not exhaustive enumeration of all boards up to the largest size.
+
+Independent audit ea8e188c-7214-4461-8673-9f2eca0d80ac accepted the mathematics
+and reproduced the original report with parsed and byte equality. Its
+initial package verdict was REVISE solely because the old selected_feasible
+helper rebuilt P union T for every T vertex. The dedicated union-once
+validator fixes both constructors without changing the shared old helper;
+the complete checker was locally rerun and its report remained byte equal.
+Bounded same-conversation follow-up 33b18c77-f1f4-4ac6-a932-4caecfb57d0d
+returned ACCEPT. That follow-up reviewed the supplied repair text only,
+without retrieving or executing revised source. The original independent
+execution and the local repaired execution remain distinct evidence.
+
+Full responses and precise scopes are in `docs/reviews/2026-10-27-closed-ladder-independent-review.txt`,
+`docs/reviews/2026-10-27-closed-ladder-repair-acceptance.txt`, and
+`output/closed-ladder-review.json`.
