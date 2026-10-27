@@ -1,5 +1,5 @@
 {
-  "status": "ORIGINAL_RELAXATION_OBSTRUCTION_AND_BATCH_THEOREMS_ACCEPT_LOCAL_HALL_REVIEW_RUNNING",
+  "status": "ORIGINAL_RELAXATION_OBSTRUCTION_AND_BATCH_THEOREMS_ACCEPT_HALL_FOLLOWUP_INFRA_FAILURE",
   "initial": {
     "task_id": "66372210-51d4-4f96-b723-19f1a8e160b9",
     "conversation_id": "conv_980736915cc7b604",
@@ -33,10 +33,14 @@
   },
   "local_Hall_followup": {
     "conversation_id": "conv_980736915cc7b604",
-    "status": "dispatched",
+    "status": "failed",
     "scope": "New exact two-colour local Hall lifting iff criterion, preserving M loops/circulations;70-profile control",
     "original_request_file": "hall-followup-request.json",
     "task_id": "350e5106-9119-412e-8f50-0d7dc7815f24",
-    "identity": "Recovered by exact full prompt equality in original conversation; no resubmission."
+    "identity": "Recovered by exact full prompt equality in original conversation; no resubmission.",
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "mathematical_verdict": null,
+    "observation": "Original task GET confirmed terminal infrastructure failure; no mathematical opinion. Prior ACCEPT scope remains unchanged."
   }
 }

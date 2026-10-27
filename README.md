@@ -1,5 +1,22 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact physical strip compensation and fee/depth tradeoff](docs/STRIP_TREE_PHYSICAL_COMPENSATION.md):
+same-colour matching in an arbitrarily tall two-column cell is equivalent
+to even runs of identical mixed rows. A red/blue/unused model prices actual
+TH M edges exactly, with coloured-cycle normalization at the global optimum.
+An 18-state physical transfer gives linear arithmetic complexity when the
+actual cross-cell M multigraph is a forest; conditioning its k feedback
+edges gives an exact O(3^k |V|) extension, retaining parallel-edge identities.
+The solver reconstructs a full N rather than reporting scalar compensation.
+For the old 4-by-w family after one T relocation, the new sharp deduction
+is one-batch minimum fee w/2 versus two-batch fee zero, for every even w>=6.
+Another inherited isolated-hole family has a new strip-confined horizontal
+full completion of exact fee k. All-size proofs accompany 2,192 exhaustive
+weighted actual models / 9,864 auxiliary comparisons, 100 further models,
+12,842 colour profiles, 50 relocated widths and 16 long-relay parameters.
+Five local Lean declarations prove the arbitrary-alphabet word normalization;
+the physical extraction and global algorithm are written proofs.
+
 New [physical obstruction to capacity-preserving cell coarsening](docs/CAPACITY_PRESERVING_MACROCELL_OBSTRUCTION.md):
 the regional/debt formula on arbitrary balanced cells is exact for the
 complete-port relaxation. Its use for physical domino matchings requires
@@ -24,8 +41,9 @@ M loops; a failed test for one flow alone is not a global impossibility proof.
 Independent review [ACCEPT](output/macrocell-review.json) covers the general
 relaxation, capacity-respecting physical obstruction, amplification and sharp
 one/two-batch separation. The reviewer reproduced the submitted checker JSON
-in full and did not run Lean. The later local Hall criterion is under a
-separate follow-up review and is not included in that initial verdict.
+in full and did not run Lean. The later local Hall follow-up terminated
+with an infrastructure failure and no mathematical verdict; it is not
+included in the initial acceptance.
 
 New [general physical ports and exact tile compensation](docs/GENERAL_SQUARE_PORTS_AND_TILE_CUTS.md):
 same-path cuts, cut original P-only cycles and retained M/N doubled edges
