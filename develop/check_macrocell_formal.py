@@ -5,6 +5,8 @@ import re
 import subprocess
 from check_unprotected_white_pair_formal import preflight
 
+if not __debug__:
+    raise RuntimeError('Run with assertions enabled')
 ROOT = Path(__file__).resolve().parents[1]
 NAMES = ['top_left_neighbours', 'top_right_neighbours', 'side_neighbours',
          'forced_top_ports', 'forced_selected_end']
