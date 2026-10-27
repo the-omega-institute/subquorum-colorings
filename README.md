@@ -1,5 +1,7 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New unrestricted physical result: [joint-frontier defect/fee theorem](docs/JOINT_FRONTIER_PHYSICAL_DEFECTS.md) optimizes over ALL full grid auxiliary matchings, lexicographically minimizing residual TT count and actual TH fee. Four labels give an exact local model; the joint label/covered-bit frontier has at most 8^min(h,w) states, independent of cell-graph cycle rank. [Solver](develop/joint_frontier_compensation.py) · [independent full-N enumeration](develop/check_joint_frontier_compensation.py) · [report](output/joint-frontier-compensation.json). All-size proofs are written; no new Lean or universal 5/6 improvement is claimed.
+
 New physical compensation result: [bridge-block exact fee theorem](docs/BRIDGE_BLOCK_PHYSICAL_COMPENSATION.md) localizes the feedback exponent to each actual-M bridge block: O(sum_B 3^k_B |V_B|) arithmetic operations and O(|V|) storage. Bounded block rank gives a linear solver even at unbounded global rank; a cycle cannot cross a bridge, so its free-edge credit stays in one block. [Solver](develop/bridge_block_compensation.py) · [independent matching controls](develop/check_bridge_block_compensation.py) · [report](output/bridge-block-compensation.json). No universal 5/6 improvement or new Lean formalization is claimed. This extension is outside the preceding strip-repair review.
 
 New [exact physical strip compensation and fee/depth tradeoff](docs/STRIP_TREE_PHYSICAL_COMPENSATION.md):
