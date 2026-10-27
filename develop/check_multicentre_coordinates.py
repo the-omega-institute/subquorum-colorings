@@ -130,10 +130,41 @@ def main():
     data2=raw['proper_J'];b2,t2,c2,w2,_,e2,f2,d2,g2,j2=coordinate_audit(data2)
     assert g2=={(5,2):{0}} and j2=={1} and f2=={(5,0),(5,4)}
     paid2,_,_=decompose(b2,data2['M'],data2['attaining_N'],t2);assert len(paid2)==1
+    data3=raw['proper_J_counterexample']
+    b3,t3,c3,w3,_,e3,f3,d3,g3,j3=coordinate_audit(data3)
+    assert g3=={(0,5):{0}} and j3=={1}
+    assert f3==vertices(data3['F']) and d3==vertices(data3['D']) and len(f3)==17
+    cheap3=edges(data3['cheap_edges']);mm3=matching(b3,data3['M']);q3=b3-set(mm3)
+    # Independently compute terminal endpoints of all nontrivial cheap-only
+    # E-source walks. Only the ineligible centre may occur, so every E path
+    # to either an eligible centre or D uses a K edge, including cross pairs.
+    reached={(v,False) for v in e3};todo=list(reached);cheap_ends=set()
+    while todo:
+        v,paid_flag=todo.pop()
+        if v in q3 and sum(v)%2==0:
+            if paid_flag:cheap_ends.add(v)
+            continue
+        if sum(v)%2:options=[(z,paid_flag) for z in adjacent(v)&b3 if mm3.get(v)!=z]
+        elif v in mm3 and tuple(sorted((v,mm3[v]))) in cheap3:options=[(mm3[v],True)]
+        else:options=[]
+        for item in options:
+            if item not in reached:reached.add(item);todo.append(item)
+    assert cheap_ends=={c3[0]} and not cheap_ends&(d3|{c3[i] for i in j3})
+    p3,pairs3,paths3=decompose(b3,data3['M'],data3['attaining_N'],t3)
+    assert p3==cheap3 and list(map(tuple,data3['HH_to_D'])) in paths3
+    normal3,_,_=decompose(b3,data3['M'],data3['normal_N'],t3)
+    assert len(normal3)==1 and not normal3&cheap3
+    assert (sum(a in f3 and z not in d3 for a,z in pairs3),
+            sum(a in e3 and z in d3 for a,z in pairs3),
+            sum(a in w3 and z in d3 for a,z in pairs3),
+            sum(a in t3 and z in c3 for a,z in pairs3))==(1,0,1,2)
     out=dict(status='PASS',project_imports=False,all_K_independent_exterior_deletions=len(t),
              eligible_roots=sorted(J),canonical_F_size=len(F),canonical_D_size=len(D),
              cheap_black_selected_neighbours=cheap_neighbours,full_N_symbolic_checks=rows,
              proper_J_eligible=sorted(j2),proper_J_independent_exterior_deletions=len(t2),
+             proper_J_counterexample=dict(independent_exterior_deletions=len(t3),F_size=len(f3),D_size=len(d3),
+                 eligible=sorted(j3),nontrivial_E_cheap_only_endpoints=sorted(cheap_ends),
+                 optimum_paid_coefficients=[2,0],normal_paid_coefficients=[0,1],terminal_balance=[1,0,1,2]),
              scope='Standalone standard-library adjacency, full matching and path audit; computes exposure by every deletion and Gamma by local walks. Symbolic paid coefficients certify fees K and K+2 for fixed N; general theorem is proved separately.')
     (ROOT/'output/multicentre-coordinate-audit.json').write_text(json.dumps(out,indent=2)+'\n')
     print(json.dumps(out),flush=True)

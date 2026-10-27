@@ -55,6 +55,22 @@ def two_cheap_centre_family(k):
     return result
 
 
+def proper_root_counterexample(k):
+    """12x14 all-K counterexample to dropping F_X without J=I."""
+    from check_unbounded_hole_relay import family
+    from check_mixed_terminal_compensation import edge,grid
+    if type(k) is not int or k<3:raise ValueError('Integer K>=3 required')
+    local=family(1);board=grid(12,14);parts=[];centres=[];m=set()
+    for r,c in [(0,6),(6,0)]:
+        move=lambda v:(v[0]+r,v[1]+c)
+        parts.append({move(v) for v in local['P']});centres.append(move(local['h']))
+        m|={edge(move(a),move(b)) for a,b in local['M']}
+    p=set(mates(board,m));W={(0,5)};t={v for v in board-p if sum(v)%2}-W
+    cheap={edge((6,2),(7,2)),edge((3,8),(4,8))}
+    return dict(board=board,M=m,T=t,parts=parts,centres=centres,white_holes=W,
+                cheap_edges=cheap,weights={e:1 if e in cheap else k for e in m})
+
+
 def certify_multicentre_bound(board,m,t,parts,centres,weights=None):
     previous=certify_hall_barrier_bound(board,m,t,parts,centres,weights)
     base=previous['base'];barrier=previous['barrier'];C=set(base['centres'])

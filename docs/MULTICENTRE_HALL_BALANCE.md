@@ -132,9 +132,9 @@ TH. At the abstract endpoint level take r=2, W={w}, Gamma={w--0}, so
 J={1}; take F={f}, E={e}, D={d}, with sole exterior direct edge f--d.
 The terminal bijection w->d, f->h_1, e->h_0 is consistent with the
 HH-centre Gamma restriction, has k=2, a=c=1, b=0, and belongs to the
-F_X case, not the U_1 or F_H cases used above. This is a countermodel
-to an endpoint-only proof that omits the case; it is NOT asserted to be
-a realizable grid counterexample to inequality (3) without J=I.
+F_X case, not the U_1 or F_H cases used above. This abstract countermodel
+alone refutes an endpoint-only proof that omits the case. Section 6 gives
+a separate realizable grid family refuting inequality (3) without J=I.
 
 For a physical proper-J control, place canonical 5-by-5 cores at (0,0)
 and (0,8) in a 6-by-14 board. Remove their centres, use their canonical
@@ -226,7 +226,77 @@ two withdrawals from F, yet one E-to-D TH path remains necessary. The
 full matching and that HH path are saved as coordinate certificates.
 This N is a sharp count witness, not an optimum claim (the optimum is K).
 
-## 6. Algorithms and validation boundary
+## 6. The mixed-centre branch is necessary: an actual all-K grid obstruction
+
+Use a 12-by-14 board with two canonical 5-by-5 cores at origins (0,6)
+and (6,0), centres h_0=(2,8), h_1=(8,2), and canonical M as defined in
+Section 4. Set W={(0,5)} and select every other white Q vertex. The
+only Gamma incidence is (0,5)--core0: the white hole touches core0 only,
+and the relay
+
+    (0,5),(0,6),(1,6),(2,6),(2,7),(2,8)
+
+reaches its centre. Hence J={1}, so h_0 is ineligible and h_1 eligible.
+Both centres have only P neighbours and T is feasible. The canonical
+balanced tight region is
+
+    F = white vertices of [0,5]^2 minus {(0,5)},
+    D = black vertices of [0,5]^2 minus {(5,5)},
+
+each of size 17. Direct inspection gives N_T(D)=F. The certificate
+contains a direct exterior matching exposing (8,5); independently testing
+every exterior deletion gives E=T minus F, not just a subset thereof.
+These fixed coordinate facts establish all Section 1 assumptions.
+
+Give only e_1={(6,2),(7,2)} and e_0={(3,8),(4,8)} weight one, and every
+other M edge integer K>=3. The following disjoint centre paths are cheap:
+
+    A_1: (5,2),(6,2),(7,2),(8,2),       F -> eligible h_1,
+    A_0: (5,8),(4,8),(3,8),(2,8),       E -> ineligible h_0.
+
+An explicit complete N fixes both, uses the direct HH edge
+(0,5)--(0,4), and has every other TH path direct. Its only paid actual
+edges are e_1,e_0, so its fee is 2 for EVERY K. Its global terminal
+balance is a=c=1, b=0, k=2: the unique HH source compensates the one F
+withdrawal and no E-to-D TH path is forced. Thus F_X=2 (the two paths
+attain it and each nontrivial path costs at least one).
+
+Any all-cheap nontrivial path from E must first use e_0: the only selected
+neighbour of the other cheap black endpoint (6,2) is (5,2) in F. After
+e_0 its white endpoint (3,8) has only one black Q neighbour, namely
+ineligible h_0. Reaching any other endpoint requires an additional,
+K-weight actual edge. The two cheap edges lie in separate cores, so
+cannot form a longer cheap-only alternating path. Consequently every
+E-source nontrivial path ending in C_J or D costs at least K.
+
+It follows that U_1>=K and F_H>=K+1, even when crossed pairings are
+allowed. The eligible centre relay
+
+    (8,5),(8,4),(8,3),(8,2)
+
+has one K edge and is completed by the normal-form construction, with
+only one expensive paid actual edge. Thus U_1=K. The disjoint paths A_1
+and
+
+    (5,6),(4,6),(3,6),(3,5)
+
+attain F_H=K+1, since the second starts in E and ends in D. Therefore
+
+    Lambda=1,  F_X=f*=B_M=2,  U_1=K,  F_H=K+1.            (5)
+
+The true optimum follows from (2) and the explicit N of fee 2.
+Deleting F_X would instead assert the false lower bound K<=2 for K>=3.
+This refutes the unconditional version of (3), not the main theorem (2),
+not the J=I corollary, and not the colouring 5/6 target. It also shows
+why merely finding one eligible TH centre is insufficient: another,
+ineligible TH centre can start outside F and release a source into D.
+
+The full matching lists, symbolic paid vectors (2,0) and (0,1), tight
+sets and HH edge are explicit checkable certificates. Their discovery
+used finite search; the first-edge argument and fixed certificates prove
+all K, rather than extrapolating from the tested samples.
+
+## 7. Algorithms and validation boundary
 
 F_X uses the preceding capacity-one physical grid network, with source
 collectors F,E and sink collectors C_J,C_-. There is one actual M arc
@@ -268,6 +338,8 @@ controls; and the proper-J physical example with 320 independently
 enumerated paths and 1,914 qualifying pairs. The weight controls include
 zero costs, and the five K samples include a 401-digit K. The standalone audit imports
 no project module and independently checks all 98 exterior deletions in
-the main family, 17 in the proper-J family, both complete-N symbolic
-expense vectors, and the cheap first-edge obstruction. Results and exact
+the main family, 17 in the first proper-J family and 59 in the new
+proper-J counterexample, all complete-N symbolic expense vectors, and
+both cheap-only endpoint obstructions. The actual counterexample is also
+tested at five K values including a 401-digit integer. Results and exact
 scope are recorded in the three `output/multicentre-*.json` reports.

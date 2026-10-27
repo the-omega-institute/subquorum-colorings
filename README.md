@@ -7,6 +7,8 @@ general refined lower bound retains an eligible/ineligible-centre quota
 branch; when every centre is eligible, the unrestricted two-centre
 branch disappears. On one fixed positive-weight 18-by-18 grid, the old
 bound is 2 and the new bound and optimum are K for every integer K>=3.
+Conversely, a 12-by-14 proper-root family has true optimum 2 but would
+give the false lower bound K if the mixed-centre branch were omitted.
 [Implementation](develop/multicentre_hall_balance.py) ·
 [checker](develop/check_multicentre_hall_balance.py) ·
 [standalone coordinate audit](develop/check_multicentre_coordinates.py) ·

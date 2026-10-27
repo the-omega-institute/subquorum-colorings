@@ -8,7 +8,7 @@ from pathlib import Path
 import json,random
 
 from multicentre_hall_balance import (terminal_balance,certify_multicentre_bound,
-    solve_multicentre_completion,two_cheap_centre_family)
+    solve_multicentre_completion,two_cheap_centre_family,proper_root_counterexample)
 from exposable_source_completion import surplus_exposure
 from hall_barrier_pair_bound import complete_fixed_th_paths
 from check_hall_barrier_pair_bound import check_extension_certificate
@@ -215,17 +215,63 @@ def all_K_controls():
     return rows,certificate
 
 
+def proper_root_counterexample_controls():
+    A=[(5,2),(6,2),(7,2),(8,2)];B=[(5,8),(4,8),(3,8),(2,8)]
+    R=[(5,6),(4,6),(3,6),(3,5)];rows=[];certificate=None
+    chamber={(r,c) for r in range(6) for c in range(6)}-{(0,5),(5,5)}
+    F={v for v in chamber if sum(v)%2};D=chamber-F
+    assert len(F)==len(D)==17
+    for k in [3,7,100,10**6,10**400+17]:
+        f=proper_root_counterexample(k);board,m,t=[f[key] for key in ['board','M','T']]
+        got=solve_multicentre_completion(board,m,t,f['parts'],f['centres'],f['weights'])
+        assert got['base']['eligible_roots']=={1} and got['base']['source_adjacency']=={(0,5):{0}}
+        assert got['base']['rho']==[1,1] and got['base']['sigma']==[1,k]
+        assert got['lower_bound']==got['minimum_TH_fee']==2 and got['normal_form_upper']==k
+        assert got['mixed_centre_pair']['minimum']==2 and got['Hall_pair']['minimum']==k+1
+        assert got['barrier']['forbidden']==F and got['barrier']['dark']==D
+        invalid=min(got['normal_form_upper'],got['Hall_pair']['minimum']);assert invalid==k>2
+        fixed=complete_fixed_th_paths(board,m,t,[A,B]);assert fixed['feasible']
+        check_extension_certificate(board,m,t,[A,B],fixed)
+        bal=terminal_balance(board,m,fixed['auxiliary'],t,f['centres'],got['barrier'])
+        assert (bal['a'],bal['b'],bal['c'],bal['k'])==(1,0,1,2)
+        paid=physical_state(board,m,fixed['auxiliary'],t)['paid'];assert paid==f['cheap_edges']
+        check_pair(got['mixed_centre_pair'],board,m,t,f['weights'],None)
+        check_pair(got['Hall_pair'],board,m,t,f['weights'],None)
+        E=got['barrier']['exposable'];assert B[0] in E and A[0] in F and R[0] in E and R[-1] in D
+        hh=[]
+        for p in bal['state']['data']['paths']:
+            vs=p['vertices']
+            if sum(vs[0])%2==0:vs=list(reversed(vs))
+            if vs[0] in f['white_holes'] and vs[-1] in D:hh.append(vs)
+        assert hh==[[(0,5),(0,4)]]
+        rows.append(dict(K=k,eligible_roots=[1],BM=2,optimum=2,U1=k,F_X=2,F_H=k+1,
+                         invalid_bound_without_F_X=k,balance=balance_numbers(bal)))
+        if certificate is None:
+            normal_paid=physical_state(board,m,got['base']['auxiliary'],t)['paid']
+            assert len(normal_paid)==1 and not normal_paid&f['cheap_edges']
+            certificate=dict(board=sorted(board),M=sorted(m),T=sorted(t),parts=[sorted(p) for p in f['parts']],
+                centres=f['centres'],W=sorted(f['white_holes']),F=sorted(F),D=sorted(D),E=sorted(E),
+                cheap_edges=sorted(f['cheap_edges']),fixed_paths=[A,B],attaining_N=sorted(fixed['auxiliary']),
+                paid=sorted(paid),symbolic_paid_coefficients=[2,0],Hall_attaining_paths=[A,R],
+                normal_N=sorted(got['base']['auxiliary']),normal_paid=sorted(normal_paid),normal_paid_coefficients=[0,1],
+                HH_to_D=hh[0],balance=balance_numbers(bal),eligible_roots=[1])
+        else:assert sorted(fixed['auxiliary'])==certificate['attaining_N']
+    return rows,certificate
+
+
 def main():
     source=abstract_source_controls();print(json.dumps(source),flush=True)
     terminal=abstract_terminal_controls();print(json.dumps(terminal),flush=True)
     small=small_full_N_controls();proper,proper_cert=proper_root_controls()
     original=original_controls();weighted,weighted_cert=all_K_controls()
+    counterexample,counterexample_cert=proper_root_counterexample_controls()
     out=dict(status='PASS',source_graph_controls=source,terminal_bijection_controls=terminal,
         small_grid_full_N_controls=small,proper_root_grid=proper,original_48_controls=original,
-        original_48_exact_count=len(original),all_K_controls=weighted,
+        original_48_exact_count=len(original),all_K_controls=weighted,all_K_proper_J_counterexample=counterexample,
         scope='General balance, eligible-centre lemma and strengthened inequality have written proofs. All-K improvement is symbolic with fixed full matching witnesses. Finite enumeration checks implementations. No general exact optimizer, unit-weight 5/6 improvement or Lean claim.')
     (ROOT/'output/multicentre-hall-balance.json').write_text(json.dumps(out,indent=2)+'\n')
-    (ROOT/'output/multicentre-hall-certificates.json').write_text(json.dumps(dict(all_K=weighted_cert,proper_J=proper_cert),indent=2)+'\n')
+    (ROOT/'output/multicentre-hall-certificates.json').write_text(json.dumps(dict(all_K=weighted_cert,proper_J=proper_cert,
+        proper_J_counterexample=counterexample_cert),indent=2)+'\n')
     print(json.dumps(dict(status='PASS',original_exact=len(original),all_K_samples=len(weighted),proper_J=proper,small_grid=small)),flush=True)
 
 
