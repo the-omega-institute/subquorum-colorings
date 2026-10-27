@@ -305,9 +305,15 @@ The readable coordinate certificates and complete auxiliary matchings
 are in [`branched-source-coordinate-certificates.json`](../output/branched-source-coordinate-certificates.json);
 the full validation scope is in
 [`exposable-source-completion.json`](../output/exposable-source-completion.json).
-The separate source/proof and execution review task is
-`5f87e45b-9ef5-41b8-bf14-b89fd2bb5cb7`, covering source `5a7c154`;
-its observed status is recorded in
+The separate source/proof and execution review task
+`5f87e45b-9ef5-41b8-bf14-b89fd2bb5cb7` ACCEPTED the supplied source
+snapshot assembled at `5a7c154`, including the general criterion and
+both exact obstructions. The reviewer executed the entire checker,
+reproducing BOTH output files structurally and byte for byte, and
+reports additional independent coordinate scripts checking the Hall
+neighbourhood, one-edge sources and both full-N certificates. Remote
+GitHub retrieval was unavailable to the reviewer; the receipt separates
+supplied-snapshot review from remote identity verification. Full scope is in
 [`exposable-source-review.json`](../output/exposable-source-review.json).
 The predecessor staircase ACCEPT does not cover this new theorem or
 the branched-source obstruction.
