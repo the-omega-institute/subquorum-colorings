@@ -256,3 +256,6 @@ The reproducible report is
 The two-core predecessor at `1aae8d6` independently received ACCEPT and
 had its full checker rerun, task `0568223b-a629-49d0-ba3c-b1a664f97892`.
 That verdict does not cover this subsequent arbitrary-r extension.
+Its own review task is `680018f6-ae75-4826-8134-972d8bd19fa3`, with
+the latest observed status and precise source scope in
+[`output/staircase-source-exact-review.json`](../output/staircase-source-exact-review.json).
