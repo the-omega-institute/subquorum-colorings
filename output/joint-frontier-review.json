@@ -5,12 +5,12 @@
   "exact_prompt_identity_verified": true,
   "submitted_source_commit": "9e4c2b04691c4b7e74b77234fce99870fd14427a",
   "scope": "Unrestricted four-label lexicographic TT/TH model, joint packed frontier, witness reconstruction, complexity and submitted validation.",
-  "verdict": "REVISE",
+  "verdict": "ACCEPT",
   "mathematical_verdict": "New unrestricted theorem, implementation and stated complexity pass; qualify the older cell-confined w/2 comparison by unit actual-edge weights.",
   "observed_model_switcher": "gpt_6",
   "observed_model_effort": "pro",
   "required_correction": "Unit actual-edge weights for relocated cell-confined cost w/2. Unrestricted optimum remains (0,0) for arbitrary nonnegative weights.",
-  "revision_status": "Required qualification and two minor wording improvements applied; no solver or checker changes.",
+  "revision_status": "Three wording corrections accepted in same-conversation text-only follow-up; no new execution or closed-ladder theorem in that review scope.",
   "response": "docs/reviews/2026-10-27-joint-frontier-independent-review.txt",
   "independent_execution": {
     "checker": "python3 -B develop/check_joint_frontier_compensation.py",
@@ -22,5 +22,30 @@
     "additional_probe": "Relocated 4x6 family uniform actual weights 0,1,2 has cell fees 0,3,6, unrestricted (a,f)=(0,0) in all cases.",
     "lean_executed": false
   },
-  "lean_scope": "No new Lean formalization claimed."
+  "lean_scope": "No new Lean formalization claimed.",
+  "initial_verdict": "REVISE",
+  "followup": {
+    "task_id": "c1b81561-7abc-42e3-b5ea-e56d52d89a15",
+    "conversation_id": "conv_895dc18757c51621",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6ae03da6-d080-83ec-b76e-788869d1b82a",
+    "usage_estimated": true,
+    "status": "completed",
+    "verdict": "ACCEPT",
+    "scope": "Text-only assessment of the three quoted wording fixes. No retrieval or execution of revised files.",
+    "source_commit": "9920329",
+    "response": "docs/reviews/2026-10-27-joint-frontier-wording-acceptance.txt"
+  },
+  "local_unchanged_file_comparison": {
+    "reference_commit": "9e4c2b04691c4b7e74b77234fce99870fd14427a",
+    "files": [
+      "develop/joint_frontier_compensation.py",
+      "develop/check_joint_frontier_compensation.py",
+      "output/joint-frontier-compensation.json"
+    ],
+    "all_equal": true
+  }
 }

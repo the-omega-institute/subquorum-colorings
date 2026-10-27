@@ -1,0 +1,762 @@
+{
+  "status": "PASS",
+  "exhaustive": [
+    {
+      "width": 1,
+      "all_feasible_actual_models": 5,
+      "full_N_per_model": 1,
+      "full_auxiliary_evaluations": 5,
+      "exceptional_models": 1,
+      "mixed_direction_models": 0,
+      "frontier_checks": 5,
+      "used_TP_PH_blocks": 0,
+      "used_TT_HH_blocks": 0,
+      "direct_defect_inequality_checked": true
+    },
+    {
+      "width": 2,
+      "all_feasible_actual_models": 25,
+      "full_N_per_model": 2,
+      "full_auxiliary_evaluations": 50,
+      "exceptional_models": 0,
+      "mixed_direction_models": 0,
+      "frontier_checks": 25,
+      "used_TP_PH_blocks": 4,
+      "used_TT_HH_blocks": 2,
+      "direct_defect_inequality_checked": true
+    },
+    {
+      "width": 3,
+      "all_feasible_actual_models": 116,
+      "full_N_per_model": 3,
+      "full_auxiliary_evaluations": 348,
+      "exceptional_models": 1,
+      "mixed_direction_models": 10,
+      "frontier_checks": 116,
+      "used_TP_PH_blocks": 24,
+      "used_TT_HH_blocks": 10,
+      "direct_defect_inequality_checked": true
+    },
+    {
+      "width": 4,
+      "all_feasible_actual_models": 548,
+      "full_N_per_model": 5,
+      "full_auxiliary_evaluations": 2740,
+      "exceptional_models": 0,
+      "mixed_direction_models": 95,
+      "frontier_checks": 548,
+      "used_TP_PH_blocks": 152,
+      "used_TT_HH_blocks": 60,
+      "direct_defect_inequality_checked": true
+    },
+    {
+      "width": 5,
+      "all_feasible_actual_models": 2582,
+      "full_N_per_model": 8,
+      "full_auxiliary_evaluations": 20656,
+      "exceptional_models": 1,
+      "mixed_direction_models": 693,
+      "frontier_checks": 0,
+      "used_TP_PH_blocks": 872,
+      "used_TT_HH_blocks": 306,
+      "direct_defect_inequality_checked": true
+    },
+    {
+      "width": 6,
+      "all_feasible_actual_models": 12179,
+      "full_N_per_model": 13,
+      "full_auxiliary_evaluations": 158327,
+      "exceptional_models": 0,
+      "mixed_direction_models": 4367,
+      "frontier_checks": 0,
+      "used_TP_PH_blocks": 4868,
+      "used_TT_HH_blocks": 1578,
+      "direct_defect_inequality_checked": true
+    }
+  ],
+  "all_feasible_actual_models": 15455,
+  "full_auxiliary_evaluations": 182126,
+  "frontier_checks": 694,
+  "large_families": {
+    "mixed_direction_families": [
+      {
+        "width": 8,
+        "reflected": false,
+        "mixed_actual_edges": 2,
+        "selected": 4,
+        "direct_TP_PH_blocks": 1,
+        "direct_TT_HH_blocks": 1,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 12,
+          "cycle_start_checks": 16,
+          "vertex_visits": 16,
+          "actual_edge_visits": 2,
+          "auxiliary_edge_visits": 8
+        }
+      },
+      {
+        "width": 8,
+        "reflected": true,
+        "mixed_actual_edges": 2,
+        "selected": 4,
+        "direct_TP_PH_blocks": 1,
+        "direct_TT_HH_blocks": 1,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 12,
+          "cycle_start_checks": 16,
+          "vertex_visits": 16,
+          "actual_edge_visits": 2,
+          "auxiliary_edge_visits": 8
+        }
+      },
+      {
+        "width": 32,
+        "reflected": false,
+        "mixed_actual_edges": 8,
+        "selected": 16,
+        "direct_TP_PH_blocks": 4,
+        "direct_TT_HH_blocks": 4,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 48,
+          "cycle_start_checks": 64,
+          "vertex_visits": 64,
+          "actual_edge_visits": 8,
+          "auxiliary_edge_visits": 32
+        }
+      },
+      {
+        "width": 32,
+        "reflected": true,
+        "mixed_actual_edges": 8,
+        "selected": 16,
+        "direct_TP_PH_blocks": 4,
+        "direct_TT_HH_blocks": 4,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 48,
+          "cycle_start_checks": 64,
+          "vertex_visits": 64,
+          "actual_edge_visits": 8,
+          "auxiliary_edge_visits": 32
+        }
+      },
+      {
+        "width": 128,
+        "reflected": false,
+        "mixed_actual_edges": 32,
+        "selected": 64,
+        "direct_TP_PH_blocks": 16,
+        "direct_TT_HH_blocks": 16,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 192,
+          "cycle_start_checks": 256,
+          "vertex_visits": 256,
+          "actual_edge_visits": 32,
+          "auxiliary_edge_visits": 128
+        }
+      },
+      {
+        "width": 128,
+        "reflected": true,
+        "mixed_actual_edges": 32,
+        "selected": 64,
+        "direct_TP_PH_blocks": 16,
+        "direct_TT_HH_blocks": 16,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 192,
+          "cycle_start_checks": 256,
+          "vertex_visits": 256,
+          "actual_edge_visits": 32,
+          "auxiliary_edge_visits": 128
+        }
+      },
+      {
+        "width": 1024,
+        "reflected": false,
+        "mixed_actual_edges": 256,
+        "selected": 512,
+        "direct_TP_PH_blocks": 128,
+        "direct_TT_HH_blocks": 128,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 1536,
+          "cycle_start_checks": 2048,
+          "vertex_visits": 2048,
+          "actual_edge_visits": 256,
+          "auxiliary_edge_visits": 1024
+        }
+      },
+      {
+        "width": 1024,
+        "reflected": true,
+        "mixed_actual_edges": 256,
+        "selected": 512,
+        "direct_TP_PH_blocks": 128,
+        "direct_TT_HH_blocks": 128,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 1536,
+          "cycle_start_checks": 2048,
+          "vertex_visits": 2048,
+          "actual_edge_visits": 256,
+          "auxiliary_edge_visits": 1024
+        }
+      },
+      {
+        "width": 8192,
+        "reflected": false,
+        "mixed_actual_edges": 2048,
+        "selected": 4096,
+        "direct_TP_PH_blocks": 1024,
+        "direct_TT_HH_blocks": 1024,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 12288,
+          "cycle_start_checks": 16384,
+          "vertex_visits": 16384,
+          "actual_edge_visits": 2048,
+          "auxiliary_edge_visits": 8192
+        }
+      },
+      {
+        "width": 8192,
+        "reflected": true,
+        "mixed_actual_edges": 2048,
+        "selected": 4096,
+        "direct_TP_PH_blocks": 1024,
+        "direct_TT_HH_blocks": 1024,
+        "minimum_TT": 0,
+        "TH_fee": 0,
+        "traversal": {
+          "terminal_start_checks": 12288,
+          "cycle_start_checks": 16384,
+          "vertex_visits": 16384,
+          "actual_edge_visits": 2048,
+          "auxiliary_edge_visits": 8192
+        }
+      }
+    ],
+    "odd_exceptional_families": [
+      {
+        "width": 1,
+        "minimum_TT": 1,
+        "TH_fee": 0,
+        "direct_TH": 0
+      },
+      {
+        "width": 3,
+        "minimum_TT": 1,
+        "TH_fee": 0,
+        "direct_TH": 2
+      },
+      {
+        "width": 5,
+        "minimum_TT": 1,
+        "TH_fee": 0,
+        "direct_TH": 4
+      },
+      {
+        "width": 129,
+        "minimum_TT": 1,
+        "TH_fee": 0,
+        "direct_TH": 128
+      },
+      {
+        "width": 4097,
+        "minimum_TT": 1,
+        "TH_fee": 0,
+        "direct_TH": 4096
+      }
+    ]
+  },
+  "band_controls": [
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 7,
+      "selected": 0,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 1,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 4,
+      "selected": 0,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 5,
+      "selected": 2,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 1,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 5,
+      "selected": 1,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 1,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 7,
+      "selected": 2,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 3,
+      "selected": 3,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 7,
+      "selected": 0,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 11,
+      "selected": 0,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 4,
+      "selected": 2,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 2,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 0,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 5,
+      "selected": 1,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 5,
+      "selected": 1,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 1,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 5,
+      "selected": 0,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 5,
+      "selected": 2,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 10,
+      "selected": 1,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 5,
+      "selected": 0,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 2,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 8,
+      "selected": 0,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 2,
+      "selected": 4,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 7,
+      "selected": 0,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 8,
+      "selected": 2,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 4,
+      "selected": 2,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 7,
+      "selected": 0,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 8,
+      "selected": 2,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 6,
+      "selected": 0,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 4,
+      "selected": 3,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 8,
+      "selected": 2,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 2,
+      "selected": 4,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 5,
+      "selected": 1,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 5,
+      "selected": 3,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 5,
+      "selected": 0,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 1,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 2,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 4,
+      "selected": 0,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 1,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 7,
+      "selected": 3,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 3,
+      "selected": 2,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 1,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 1,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 5,
+      "selected": 1,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 4,
+      "actual_edges": 6,
+      "selected": 2,
+      "full_auxiliary_evaluations": 36,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 4,
+      "width": 6,
+      "actual_edges": 9,
+      "selected": 1,
+      "full_auxiliary_evaluations": 281,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    },
+    {
+      "height": 6,
+      "width": 2,
+      "actual_edges": 2,
+      "selected": 3,
+      "full_auxiliary_evaluations": 13,
+      "minimum_TT": 0,
+      "TH_fee": 0
+    }
+  ],
+  "seam_obstacle": {
+    "exact_minimum_TT": 0,
+    "exact_unit_TH_fee": 1,
+    "Hall_selected": [
+      [
+        0,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "Hall_hole_neighbours": [
+      [
+        1,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "exact_direct_Hall_defect": 1,
+    "full_auxiliary_evaluations": 36,
+    "closed_band_adapter_rejects_actual_seam": true,
+    "failure_scope": "Unrestricted universal zero-fee extension fails; full coverage and the numerical target are not refuted."
+  },
+  "scope": "All feasible ladders of widths 1..6, all their full N; weighted frontier checks at widths 1..4; mixed-direction families, odd exceptions, closed bands and explicit seam Hall obstruction.",
+  "proof_scope": "All-size direct compensation and unique odd exception have a written proof. Empty paid edge set works for all nonnegative weights. No new universal numerical coefficient or Lean claim."
+}

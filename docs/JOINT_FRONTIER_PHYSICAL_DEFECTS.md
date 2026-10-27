@@ -228,6 +228,14 @@ improves the numerical target. Independence of scalar reserves or bounded
 bridge-block rank may not be assumed. No new Lean formalization is claimed;
 the previous word-grammar Lean file does not formalize this global theorem.
 
+The subsequent [closed-ladder direct-compensation theorem](CLOSED_LADDER_ZERO_FEE_COMPENSATION.md)
+settles matching-closed two-row bands constructively: every TH component
+can be a direct edge, so its actual fee set is empty. The unique odd-ladder
+exception has exact residual one. On even-by-even boards, any nonzero
+unrestricted optimum must therefore have actual matching edges crossing
+both the two-row and the two-column band seams. This is a certificate
+classification, without a universal numerical coefficient improvement.
+
 ## 7. Reproducible validation
 
 The checker enumerates full unrestricted physical N independently of the
