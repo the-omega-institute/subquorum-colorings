@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "prefix_optimizer_controls": 1000,
+  "actual_matching_assignment_controls": 144,
+  "actual_restricted_pool_Hall_failures": 57,
+  "actual_positive_cost_batches": 61,
+  "actual_zero_cost_packings": 132,
+  "all_candidate_direct_Hall_failures_with_TH_relay": 20,
+  "largest_packing": {
+    "TT": 12,
+    "HH": 300,
+    "pair_edges": 156,
+    "flow": 12,
+    "added_paid_M": 0,
+    "credit": 264,
+    "original_matched_M": 264,
+    "full": true,
+    "hall": null,
+    "physical": {
+      "before": [
+        12,
+        300,
+        0
+      ],
+      "after": [
+        0,
+        288,
+        24
+      ],
+      "original_paths": 24,
+      "contacts": 24,
+      "contact_rank": 12,
+      "cycles": 12,
+      "cycle_M": 264,
+      "old_TH_M": 0,
+      "old_bad_M": 264,
+      "new_TH_M": 0,
+      "new_bad_M": 0,
+      "symbols": 72
+    }
+  },
+  "largest_direct_class_failure": {
+    "TT": 1,
+    "HH": 42,
+    "pair_edges": 0,
+    "flow": 0,
+    "added_paid_M": 0,
+    "credit": 0,
+    "original_matched_M": 0,
+    "full": false,
+    "hall": {
+      "TT": [
+        0
+      ],
+      "HH_neighbours": [],
+      "deficit": 1
+    },
+    "physical": null
+  },
+  "scope": "Fast prefix optimizer versus quadratic inversion search; residual min-cost matching versus exhaustive small assignments; chosen witnesses versus actual physical component/resource decomposition; arbitrary-qW packing and Hall-failure family have written proofs.",
+  "limitations": "Exact optimum within original-component-disjoint one/two-contact pair class only. Not an optimum over arbitrary multi-contact/shared-component networks; no universal covering or5/6 claim."
+}

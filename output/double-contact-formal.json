@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/DoubleContactCover.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 3689 \nPages purgeable: 2 \nPages purged: 268651661 \n\nSwap I/O:\nSwapins: 531304236 \nSwapouts: 547598640 \n\nPage Q counts:\nPages active: 155206 \nPages inactive: 153443 \nPages speculative: 777 \nPages throttled: 0 \nPages wired down: 257922 \n\nCompressor Stats:\nPages used by compressor: 435923 \nPages decompressed: 7123208568 \nPages compressed: 8001992294 \n\nFile I/O:\nPageins: 8585352259 \nPageouts: 26493886 \n\nSystem-wide memory free percentage: 30%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4296.\nPages active:                                 154284.\nPages inactive:                               152588.\nPages speculative:                               685.\nPages throttled:                                   0.\nPages wired down:                             257922.\nPages purgeable:                                   2.\n\"Translation faults\":                    31752787833.\nPages copy-on-write:                      1511093728.\nPages zero filled:                       12339645942.\nPages reactivated:                        6900962721.\nPages purged:                              268651664.\nFile-backed pages:                            110276.\nAnonymous pages:                              197281.\nPages stored in compressor:                  3109363.\nPages occupied by compressor:                 437070.\nDecompressions:                           7123208629.\nCompressions:                             8001994132.\nPageins:                                  8585352260.\nPageouts:                                   26493886.\nSwapins:                                   531304292.\nSwapouts:                                  547598640."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.DoubleContactCover.strict_prefix_credit",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.DoubleContactCover.prefix_credit_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.DoubleContactCover.inner_credit_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.DoubleContactCover.local_cost_exact",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.DoubleContactCover.sum_batch_balance",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.DoubleContactCover.zero_cost_iff",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.DoubleContactCover.batch_saving",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.DoubleContactCover.strict_prefix_credit' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DoubleContactCover.prefix_credit_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DoubleContactCover.inner_credit_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DoubleContactCover.local_cost_exact' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DoubleContactCover.sum_batch_balance' depends on axioms: [propext, Quot.sound]\n'SubQuorum.DoubleContactCover.zero_cost_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.DoubleContactCover.batch_saving' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Ordered natural prefix-credit identity/minimum2/bound; arbitrary finite account lists with credit<=total give exact cost+credit sum and integer saving.",
+  "not_formalized": "Actual grid prefixes/unique fragment ownership, range-minimum optimum, Hall and min-cost matching, all-size physical family and broader optimality remain written or open as explicitly stated."
+}

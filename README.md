@@ -1,5 +1,27 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [five indispensable contacts](docs/FIVE_CONTACT_SPARSIFICATION_BARRIER.md):
+one actual TT/HH pair and five vertex-disjoint prescribed squares give an
+unbounded cost gap between all five and EVERY successful proper subset.
+For every even L>=12, the best proper subset costs L^2+L+14, whereas all
+five cost 5L+78. A general coordinate and two-block routing proof establishes
+the result; 27 actual boards / 837 subsets validate it and six scoped Lean
+arithmetic declarations pass. The theorem concerns this prescribed contact
+pool; alternative squares/N and the numerical 5/6 target remain open.
+[Independent audit ACCEPT](output/five-contact-barrier-review.json) confirms the
+written theorem, reproduces all 837 subsets with parsed-JSON equality, and
+adds 62 boundary subset controls; it did not run Lean.
+
+The [exact disjoint-pair optimizer](docs/DOUBLE_CONTACT_OPTIMAL_COVER.md)
+remains valid in its stated one/two-contact class: strict reverse-order prefix
+coordinates give maximum single-cycle credit in O(d log d), and minimum-cost
+TT/HH matching gives the exact full-cover cost without reusing original paths.
+Controls pass 1,000 local comparisons, 144 actual matching assignments,
+132 zero-cost packings and 20 direct-Hall failures repaired by TH relays;
+seven scoped Lean declarations pass. The first independent review requested
+two quantifier corrections, both applied; its follow-up ended with an
+infrastructure failure and no verdict. [Precise review scope](output/double-contact-cover-review.json).
+
 New [contact-network routing and cycle credit](docs/CONTACT_NETWORK_CYCLE_CREDIT.md)
 reduces all chosen square contacts to a canonical bipartite continuation
 permutation, with exact terminal pairing and unique physical-M ownership.

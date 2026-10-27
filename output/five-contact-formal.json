@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/FiveContactBarrier.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4392 \nPages purgeable: 2 \nPages purged: 268770606 \n\nSwap I/O:\nSwapins: 538328346 \nSwapouts: 554655413 \n\nPage Q counts:\nPages active: 148153 \nPages inactive: 142440 \nPages speculative: 4922 \nPages throttled: 0 \nPages wired down: 258966 \n\nCompressor Stats:\nPages used by compressor: 448000 \nPages decompressed: 7135945690 \nPages compressed: 8015330510 \n\nFile I/O:\nPageins: 8586379222 \nPageouts: 26501504 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4096.\nPages active:                                 148189.\nPages inactive:                               142482.\nPages speculative:                              4926.\nPages throttled:                                   0.\nPages wired down:                             258966.\nPages purgeable:                                   2.\n\"Translation faults\":                    31782954984.\nPages copy-on-write:                      1512427667.\nPages zero filled:                       12345143485.\nPages reactivated:                        6906830277.\nPages purged:                              268770606.\nFile-backed pages:                            110292.\nAnonymous pages:                              185305.\nPages stored in compressor:                  3173272.\nPages occupied by compressor:                 448035.\nDecompressions:                           7135945766.\nCompressions:                             8015330510.\nPageins:                                  8586379223.\nPageouts:                                   26501504.\nSwapins:                                   538328382.\nSwapouts:                                  554655413."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.FiveContactBarrier.symbolic_ledger",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FiveContactBarrier.quadratic_cost",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FiveContactBarrier.positive_gap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FiveContactBarrier.linear_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FiveContactBarrier.ratio_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.FiveContactBarrier.unbounded_ratio",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.FiveContactBarrier.symbolic_ledger' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FiveContactBarrier.quadratic_cost' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FiveContactBarrier.positive_gap' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FiveContactBarrier.linear_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FiveContactBarrier.ratio_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.FiveContactBarrier.unbounded_ratio' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Exact symbolic two-cycle accounting; square-family cost expression; positivity and FOR EVERY integer K an explicit even L with C2>K*C5.",
+  "not_formalized": "Domino embedding, simplicity/disjointness/feasibility, five-contact routing and structural all-proper-subset comparison remain written with actual physical controls. Not end-to-end grid Lean."
+}

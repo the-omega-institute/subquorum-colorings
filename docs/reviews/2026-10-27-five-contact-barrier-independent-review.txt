@@ -1,0 +1,127 @@
+Verdict: ACCEPTThe construction is valid for every even  $L\ge4$  and every integer  $d\ge1$ . The contact orders, fragment weights, full-five routing, and exact cost formulas are correct. The structural argument for all successful proper subsets also holds.In fact, that argument proves a stronger statement:For every successful proper subset  $S\subsetneq\{1,2,3,4,5\}$ , there is a successful subset  $R\subseteq S$ , with  $|R|\le2$ , having exactly the same credited  $M$ -edge set and exactly the same payment cost.Consequently, for  $d=L$  and even  $L\ge12$ , the unique optimal successful contact subset is the full five-contact set, with cost  $5L+78$ , while the optimum among all successful proper subsets is  $L^2+L+14$ .The internal-contact modification is also valid. Its costs are  $5L+80$  and  $L^2+L+16$ , respectively: both increase by two, as the manuscript states. Their ratio still diverges.I audited the construction and accompanying sources in    five-contact-barrier-review.txt. The reasoning below establishes the all-size claims independently of the finite checker. Execution details follow in §8.1. Full horizontal  $N$ , directed paths, and actual matchingThe auxiliary matching covers the entire boardThe physical board
+$$-6\le x\le4d+43,\qquad -4\le y\le L+5$$
+has width  $4d+50$  and height  $L+10$ .For each row  $j$ , the dominoes
+$$D(i,j)=\{(2i,j),(2i+1,j)\},
+\qquad -3\le i\le2d+21,$$
+partition its vertices: the first starts at  $x=-6$ , the last ends at  $x=4d+43$ , and consecutive dominoes occupy consecutive disjoint pairs. Thus the displayed  $N$  is a full perfect matching, including all vertices outside the two constructed paths.Each permitted domino step gives one legal physical  $M$  edgeOn an even row, the black vertex of  $D(i,j)$  is its left vertex and the white vertex is its right vertex. Hence an eastward domino step connects
+$$(2i+1,j)\longrightarrow(2i+2,j).$$
+On an odd row, black and white reverse positions, so a westward domino step connects
+$$(2i,j)\longrightarrow(2i-1,j).$$
+Both are unit grid edges.For a vertical domino step, row parity changes. The old white vertex and the next black vertex therefore have the same horizontal coordinate and adjacent vertical coordinates. This also gives a unit grid edge.For a simple domino path, an interior domino’s black vertex receives its incoming  $M$  edge, while its white vertex supplies its outgoing  $M$  edge. These are different physical vertices. The first black vertex and last white vertex remain unmatched. Consequently, simple, disjoint domino paths define an actual partial matching  $M$ , disjoint from  $N$ .This verifies the connection between the domino-coordinate description and an actual grid matching.2. Simplicity, disjointness, and feasibility for every allowed parameterPut
+$$c_3=d+9,\qquad c_4=d+13,\qquad c_5=2d+14.$$
+The useful separation identities are
+$$c_3+1<c_4,\qquad c_4+d=c_5-1,\qquad
+c_5-c_4=d+1\ge2,$$
+and
+$$c_5+4=2d+18<2d+20.$$
+Path  $A$ Its initial segment lies on row  $0$ , from column  $0$  through  $c_4$ . The ascent to row  $2$  then enters the serpentine rectangle
+$$c_4\le i\le c_5-1,\qquad 2\le j\le L-1.$$
+Each horizontal serpentine segment occupies a new row. Its upward connectors meet the neighboring horizontal segments only at consecutive endpoints. Since  $L$  is even, the last traversed row  $L-1$  is odd, and the path reaches  $(c_4,L)$  as claimed.The top connector lies on row  $L$ . The return column  $c_5$  is strictly outside the serpentine rectangle. Its row-zero endpoint is strictly to the right of the initial row-zero segment, since  $c_5-c_4\ge2$ . The final row-zero segment then continues farther right.Thus  $A$  has no repeated domino.Path  $B$ The first serpentine occupies
+$$9\le i\le c_3,\qquad 3\le j\le L.$$
+Its initial extra point  $(c_3+1,1)$  lies outside this rectangle, and its approach through column  $c_3$ , rows  $1,2,3$ , meets the serpentine only at its starting endpoint.The following return column  $8$  and ascending column  $7$  are strictly left of the serpentine. Their connecting segments meet only at their specified endpoints. The top connector at row  $L+4$  lies above the preceding portions, and the right return at column  $2d+20$  lies strictly to their right.The two horizontal segments on row  $-3$  occupy the disjoint intervals
+$$[c_5+1,\,2d+20]
+\quad\text{and}\quad
+[-2,\,c_4].$$
+They are separated because
+$$c_5+1-c_4=d+2\ge3.$$
+The intervening row- $-1$  connector and its vertical ends introduce no repetition.Finally, column  $-2$ , the segment on row  $2$  through column  $4$ , and the descent to  $(4,1)$  lie to the left of the earlier positive-row portions of  $B$ . Hence  $B$  is simple.All horizontal directions have the required parity: rows  $0,2,L,L+4$  are even, whereas rows  $1,-1,-3,L+1$  are odd.The two paths are disjointThe serpentine rectangles are separated by the column gap between  $c_3$  and  $c_4=c_3+4$ . The extra starting point of  $B$ , at column  $c_3+1$ , still lies left of  $A$ ’s positive-row portion.The  $B$  segments at columns  $7,8$ , and its final positive-row portion through columns at most  $4$ , are also left of  $A$ ’s positive-row portion. At row  $0$ ,  $B$  visits only the remote columns  $-2$  and  $2d+20$ ;  $A$  lies between columns  $0$  and  $2d+18$ .The remaining  $B$  portions are below  $A$ , above it, or to its right. This proves disjointness without a large-parameter assumption.The most extreme visited domino coordinates are
+$$-2\le i\le2d+20,\qquad -3\le j\le L+4.$$
+They lie inside the specified board with a margin. None of these arguments degenerates at  $L=4$  or  $d=1$ .Selected-degree feasibilityThe two unmatched endpoints of  $A$  are exactly
+$$T=\{(0,0),(4d+37,0)\}.$$
+At  $(0,0)$ , the neighbor  $(1,0)$  belongs to  $P=V(M)$ , while
+$$(-1,0),\qquad(0,-1),\qquad(0,1)$$
+belong to unvisited dominoes and are holes.At  $(4d+37,0)$ , the neighbor  $(4d+36,0)$  belongs to  $P$ , while
+$$(4d+38,0),\qquad(4d+37,-1),\qquad(4d+37,1)$$
+belong to unvisited dominoes. For example, the first of these lies in the unused domino column  $2d+19$ , between  $A$ ’s final column  $2d+18$  and  $B$ ’s outer return column  $2d+20$ .Thus each selected vertex has degree exactly one in  $P\cup T$ .The unmatched endpoints of  $B$  are
+$$(2d+21,1),\qquad(8,1),$$
+and neither is selected. Therefore the two nontrivial original components are one TT path and one HH path. Every unvisited domino is an  $N$ -only HH component.3. Contacts, orders, and exact weightsEach prescribed contact consists of two horizontal  $N$  edges in the same domino column on adjacent rows. It is therefore an actual unit square.The five domino columns
+$$4,\quad8,\quad c_3,\quad c_4,\quad c_5$$
+are distinct for every  $d\ge1$ , so the supports are pairwise vertex-disjoint. Each square has one old edge on  $A$  and one on  $B$ . Its inserted edges connect vertices of these distinct original components, so neither inserted edge belongs to  $M$ .Consequently, switching any subset of the five squares preserves a full auxiliary matching and leaves actual  $M$  and selected-degree feasibility unchanged.Reading the paths in their canonical black-to-white orientations gives
+$$A:1,2,3,4,5,\qquad B:3,2,5,4,1.$$
+The weights are correct:
+$$x=z=4,\qquad y=t=d+1,$$
+
+$$w=u=(L-1)d+2L+1,$$
+
+$$v=2L+2d+32,\qquad s=d+29.$$
+For the longer intervals, the step counts are
+$$\begin{aligned}
+w=u
+&=2+(L-2)d+(L-2)+(d+1)+L\\
+&=(L-1)d+2L+1,
+\end{aligned}$$
+
+$$v=1+(L+3)+(2d+13)+(L+7)+5+2+1
+  =2L+2d+32,$$
+and
+$$s=2+(d+15)+5+6+1=d+29.$$
+The exterior tails have weights  $4,4,1,0$ , so  $E=9$ . Therefore
+$$\boxed{|M|=(2L+3)d+6L+82.}$$
+These are counts of actual  $M$  edges, because each unit domino step contributes exactly one such edge.4. Full-five routing and payment costUsing right-to-left composition  $f=\alpha\circ\tau$ , I obtain the stated decomposition:
+$$f=
+(a,1_A,b,3_B,4_A,1_B,2_A,5_B)
+(3_A,2_B)(5_A,4_B).$$
+The marker-containing cycle has first-return routing
+$$a\longmapsto b,\qquad b\longmapsto a.$$
+Since the original paths are TT and HH, this produces two TH terminal paths.The two marker-free cycles own exactly the  $M$ -edge sets
+$$\mathcal C_U=A[2,3]\sqcup B[3,2],$$
+
+$$\mathcal C_V=A[4,5]\sqcup B[5,4].$$
+Their weights are  $y+u$  and  $w+t$ .These sets are disjoint: on each original path they use different inner intervals. Sharing an original component does not imply sharing any physical resource.All affected  $M$  edges lie either on the two TH paths or on these two cycles. Hence
+$$\begin{aligned}
+C_5
+&=|M|-(y+u)-(w+t)\\
+&=E+x+z+v+s\\
+&=\boxed{2L+3d+78}.
+\end{aligned}$$
+This accounting checks terminal success separately from cycle credit and credits no  $M$  edge twice.5. Structural proof for every successful proper subsetThis is the central point of the audit. The submitted reduction is valid, and it can be stated precisely as follows.The local block lemmaConsider two contacts whose orders on the two directed strands are reversed. Viewed as a network with two incoming and two outgoing strand ends:Selected contacts within the blockTerminal routingInternal cycleNoneIdentityNoneOneTranspositionNoneBothTranspositionOne, using the two inner strand intervalsFor the full block, the first incoming strand switches directly to the opposite outgoing strand, and the other incoming strand does likewise. The two intervals between contacts close into the internal cycle.Now take
+$$U=\{2,3\},\qquad V=\{4,5\}.$$
+Both strands encounter block  $U$  before block  $V$ , and each block has reversed internal contact order. They therefore compose in series.Once a directed trajectory leaves one block, it cannot return to that block through the forward connectors. Thus the series composition creates no additional cycles beyond the local cycles of full blocks. Those local resource sets are precisely  $\mathcal C_U$  and  $\mathcal C_V$  above.Case A: contact  $1$  is absentEach nonempty block contributes a transposition. The terminal destinations are exchanged exactly when one block is nonempty and the other is empty.Therefore every successful subset without contact  $1$  already contains only one or two contacts.In particular, choosing both full blocks gives two cycle credits but identity terminal routing; it is unsuccessful. The proof correctly excludes this tempting low-cost configuration.Case B: contact  $1$  is present and both blocks are nonemptyBefore switching contact  $1$ , the two nonempty blocks contribute two transpositions, hence identity terminal routing.The occurrence of contact  $1$  on  $A$  lies before both blocks, on the  $A$ -to- $A$  terminal path. Its occurrence on  $B$  lies after both blocks, on the  $B$ -to- $B$  terminal path. They therefore lie on distinct terminal paths.Switching contact  $1$  exchanges their destinations and creates no additional cycle. All existing local cycles remain unchanged.If the selected set is proper, at most one block is full.If exactly one block is full, the entire cycle-resource union is that block’s local cycle. Selecting that pair alone gives a successful repair with the same resource credit and cost.If neither block is full, there are no cycles. Any selected singleton gives a successful repair with the same cost  $|M|$ .The replacement is a subset of the original selected contacts.Case C: contact  $1$  is present and exactly one block is nonemptyIf the block contributes one contact, the selection already has two contacts.If it contributes both contacts, the three selected contacts have completely reversed orders:
+$$(1,2,3)\quad\text{against}\quad(3,2,1),$$
+or
+$$(1,4,5)\quad\text{against}\quad(5,4,1).$$
+For three reversed contacts  $p,q,r$ , the two cycles have resource sets
+$$A[p,q]\sqcup B[q,p],
+\qquad
+A[q,r]\sqcup B[r,q].$$
+Their disjoint union is
+$$A[p,r]\sqcup B[r,p],$$
+which is exactly the cycle-resource set obtained by selecting only the outer pair  $\{p,r\}$ .Thus  $\{1,2,3\}$  has the same payment cost as  $\{1,3\}$ , and  $\{1,4,5\}$  has the same cost as  $\{1,5\}$ . Both replacements are successful subsubsets.Case D: neither block is nonemptyThe selection is simply  $\{1\}$ .These structural cases exhaust every successful proper subset. They establish the stronger equal-cost replacement statement, rather than merely a numerical domination inequality. They depend on the contact-order pattern, not on finite grid enumeration or particular values of the nonnegative weights.6. Exact proper-subset optimum and the unbounded ratioFor two contacts, success occurs exactly when their orders are reversed. The six successful pairs and their credits are:PairCredited  $M$ -edge count $\{1,2\}$  $x+v+t+s$  $\{1,3\}$  $x+y+u+v+t+s$  $\{1,4\}$  $x+y+z+s$  $\{1,5\}$  $x+y+z+w+t+s$  $\{2,3\}$  $y+u$  $\{4,5\}$  $w+t$ The other four pairs have the same order on both strands and are unsuccessful.Nonnegative weights show that pair  $\{1,3\}$  dominates pairs  $\{1,2\}$  and  $\{2,3\}$ , while pair  $\{1,5\}$  dominates pairs  $\{1,4\}$  and  $\{4,5\}$ . The two remaining candidate costs are
+$$E+z+w,\qquad E+u+v.$$
+Because  $u=w$ ,  $z=4$ , and  $v>4$ , the first is strictly smaller. Singletons cost all of  $|M|$ , so they do not improve it.Therefore
+$$\boxed{C_2=(L-1)d+2L+14.}$$
+Combined with the structural proof,
+$$\boxed{
+\min_{\substack{S\text{ successful}\\S\subsetneq\{1,\ldots,5\}}}
+\operatorname{cost}(S)=C_2,
+}$$
+and
+$$\boxed{
+\min_{S\text{ successful}}\operatorname{cost}(S)=\min(C_2,C_5).
+}$$
+The difference is exactly
+$$C_2-C_5=(L-4)d-64.$$
+For  $d=L$ ,
+$$C_2=L^2+L+14,\qquad C_5=5L+78.$$
+For every  $L\ge12$ ,
+$$L^2-4L-64=L(L-4)-64\ge12\cdot8-64=32>0.$$
+Thus throughout the stated even- $L$  range, the full-five selection is the unique optimal successful subset.The explicit unbounded-ratio witness is also correct. For  $L\ge12$ ,
+$$C_5\le12L.$$
+Given any integer  $K\ge0$ , choose
+$$L=20(K+1).$$
+Then  $L$  is even,  $L\ge12$ , and  $L>12K$ , giving
+$$K C_5\le12KL<L^2<C_2.$$
+Unboundedness against integer factors implies unboundedness against every fixed real factor.Because every subset of at most four contacts is proper, this proves the claimed failure for four-contact sparsification, not only for the one/two-contact class.7. Internal-contact modification and scopeAppending
+$$(4,1)\longrightarrow(3,1)\longrightarrow(2,1)$$
+to  $B$  is legal on odd row  $1$ . The two new dominoes were unvisited, are disjoint from  $A$ , and do not affect any neighbor of either selected site.The extension adds two  $M$  edges and moves  $B$ ’s white terminal from physical  $(8,1)$  to  $(4,1)$ . Contact  $1$ , previously incident to the terminal of  $B$ , becomes internal. The other contact dominoes were already internal. Hence all twenty physical contact vertices belong to  $P$  in this variant.Only the final exterior tail changes, from weight zero to weight two. That tail belongs to a terminal path for every chosen subset and cannot belong to a marker-free cycle. Accordingly, every successful cost increases by two, while every cycle credit remains unchanged:
+$$C_5^{\mathrm{int}}=2L+3d+80,
+\qquad
+C_2^{\mathrm{int}}=(L-1)d+2L+16.$$
+On the diagonal,
+$$C_5^{\mathrm{int}}=5L+80,\qquad
+C_2^{\mathrm{int}}=L^2+L+16.$$
+The gap remains  $L^2-4L-64$ , and the ratio still diverges. The same explicit witness works because  $5L+80\le12L$  for  $L\ge12$ .The accepted optimization claim concerns subsets of these five prescribed squares, starting from the specified  $N$  and fixed actual  $M$ . Its numerical scope is consistent with the manuscript: direct calculation gives
+$$\frac{(L+10)(4d+50)}2-(|M|+2)
+=17d+19L+166>0,$$
+or two less for the internal variant. Thus this family establishes the stated sparsification obstruction without refuting the numerical target.8. Exact execution and formalization statusPython: actually executed and passedI extracted the submitted checker and helper from the attachment without changing their contents and used Python 3.12.14, with assertions enabled.Working directory:Plain text/workspace/scratch/7df221c412a8/five_contact_audit/submittedCommand:Bashpython3 -B develop/check_five_contact_barrier.pyThe process exited with code 0 and printed:JSON{"status": "PASS", "boards": 27, "subsets": 837, "source": [263, 151], "largest": [3674, 378], "largest_gap": 3296}This executed the submitted main routine: the original  $(20,11)$  fixture, its internal variant, and the 25 diagonal controls  $L=d=12,14,\ldots,60$ , each with all 31 nonempty contact subsets.I then loaded the generated and supplied five-contact-barrier.json files with json.loads and asserted equality of the entire parsed JSON objects. They were equal.I also imported the unchanged checker and executed:Pythoncontrol(4, 1, False)
+control(4, 1, True)Both passed all their assertions, covering another 62 subset checks:| Parameters | Internal |  $|M|$  | Best proper subset | Five-contact cost ||---|---:|---:|---:|---:||  $L=4,d=1$  | No | 117 | 25 | 89 ||  $L=4,d=1$  | Yes | 119 | 27 | 91 |These boundary controls correctly have gap  $-64$ ; the five-contact optimum claim is restricted to the stated positive-gap regime.The imported helper’s standalone exhaustive suite was not executed. The finite runs support the implementation; the all-size conclusion rests on the coordinate and structural proofs above.Lean: not executed in this auditI did not run Lean. Neither lean nor lake was available on the current PATH.I inspected the supplied Lean source and its submitted execution report. The six Lean theorem statements concern the symbolic ledger, diagonal cost identity, positivity, linear bound, and quantified ratio witness. They do not formalize the actual grid embedding, feasibility, contact routing, or the proper-subset structural theorem. The supplied PASS report is therefore prior submitted evidence, not a Lean run independently reproduced here.No mathematical revision is required for the stated counterfamily. The internal-variant costs should continue to be displayed with their  $+2$  shifts, and the fixed-prescribed-contact scope should remain explicit.   five-contact-barrier-review.txtDocumentOpen file
