@@ -233,3 +233,12 @@ the all-K failure of arbitrary minimum-pair extension is proved in
 Section 5. No Lean verification or universal 5/6 improvement is
 claimed. Multiple Hall regions and extra nontrivial TH paths remain
 part of the wider research problem.
+
+Independent Oracle review of source `600d0d209c8170fe1ebe4ddf63980a7311fd682d`
+returned **ACCEPT**, with no required mathematical revisions. The
+reviewer executed the checker and reproduced BOTH JSON reports byte
+for byte, then independently reconstructed the deficient 51/50 Hall
+set and original-weight variant31 full matching without project
+imports. This review used the supplied git archive, not a GitHub fetch.
+Its general-proof, all-K and finite-execution scopes are distinguished
+in `output/hall-barrier-pair-review.json`.

@@ -252,6 +252,13 @@ its all-K proof does not claim to solve the original random weights
 of that control. Finite tests validate implementation and fixed
 witnesses; Sections 1--3 and 5 supply the mathematical arguments.
 
+The subsequent note `CANONICAL_HALL_BARRIER_AND_PAIR_COMPLETION.md`
+strengthens B_2 using the canonical exterior Hall barrier. It certifies
+the normal-form optima in original variants 14,23,45, and supplies a
+zero-fee full completion for original variant31. Thus all 48 original
+controls are subsequently certified, while the scope of B_2 and its
+review below remains unchanged.
+
 Independent Oracle review of source `87e7b802de4e42b7beb25cb2c0ae89cef9ccd356`
 returned **ACCEPT** with no required mathematical changes. The reviewer
 ran the checker and reproduced the report structurally and byte for

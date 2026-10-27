@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "verdict": "ACCEPT",
+  "source_commit": "600d0d209c8170fe1ebe4ddf63980a7311fd682d",
+  "task_id": "c3c32b90-3aa3-45a1-a08f-cb68f13b9403",
+  "conversation_id": "conv_d86d0c25ed9ef9d1",
+  "pool": "chrono-chatgpt-pro-pool",
+  "model_label": "chatgpt-6-pro",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "chatgpt_url": "https://chatgpt.com/c/6ae0885b-4814-83ec-90b5-721d5b237640",
+  "usage_estimated": true,
+  "mathematical_scope": [
+    "Matching-independent canonical Hall barrier N_T(D)=F and equal sizes",
+    "General bound BH=max(Lambda,min(U1,F_CC,F_H)) under full separated-core/H6 hypotheses",
+    "Physical source/sink quotas allow cross pairing and never copy actual M capacity",
+    "Exact fixed-path extension iff restricted remaining grid has perfect matching; failure returns a Hall cut",
+    "For every integer K>=3, a fixed strictly-positive-weight family has minimum pairs of fee2 with different extendability; f*=F2C=2,U1=K"
+  ],
+  "execution": {
+    "command": "python3 develop/check_hall_barrier_pair_bound.py",
+    "exit_code": 0,
+    "reports": {
+      "hall-barrier-pair-bound.json": {
+        "bytes": 29089,
+        "sha256": "72ae56a259d239601d13aae2bb18b8ab947104b662bc9722f6b10f7be8ba27b6",
+        "reviewer_byte_for_byte_reproduction": true
+      },
+      "hall-barrier-pair-certificates.json": {
+        "bytes": 52063,
+        "sha256": "c1dfe7599e21eb0c746813fd969bda9cb7769a29e330c4b6866d7494bf0d1135",
+        "reviewer_byte_for_byte_reproduction": true
+      }
+    },
+    "surplus_graphs": 4165,
+    "saturating_matchings": 12389,
+    "quota_pair_comparisons": 1350,
+    "fixed_path_specifications": 1214,
+    "full_N_references": 12470,
+    "Hall_failures": 293,
+    "normal_form_optima_of_original_48": 47,
+    "total_certified_original_controls": 48
+  },
+  "independent_verification": "Reviewer used standard-library-only coordinate reconstruction: exact 51-black/50-white residual neighbour set; 98 exterior deletions; original variant31 M,N, TH/HH ownership and fee0; original rho=(2,0,1,3,2),sigma=(2,5,6,3,2),U1=2. A separate local no-project-import audit is archived.",
+  "provenance": "Supplied git archive snapshot and its metadata; no GitHub fetch or remote authentication performed.",
+  "limitations": [
+    "No general exact optimizer claim",
+    "A failed fixed-pair test does not rule out other pairs or extensions with additional nontrivial TH paths",
+    "48 controls are a finite benchmark",
+    "No Lean verification or universal 5/6 improvement",
+    "Later candidate eliminating F_CC when J=I is outside this review"
+  ]
+}
