@@ -1,0 +1,3483 @@
+{
+  "status": "PASS",
+  "actual_models": 86,
+  "local_domino_states": 5,
+  "balanced_local_bit_profiles": 70,
+  "liftable_local_bit_profiles": 44,
+  "regional_cuts": 5440,
+  "enumerated_active_cell_auxiliaries": 19500,
+  "exhaustive_controls": [
+    {
+      "copies": 1,
+      "width": 6,
+      "active_cell_auxiliaries": 125,
+      "exact_minimum_TT": 1,
+      "separator_phases": "Irrelevant by absence of M/T and cell confinement; fixed horizontal in enumeration"
+    },
+    {
+      "copies": 1,
+      "width": 8,
+      "active_cell_auxiliaries": 625,
+      "exact_minimum_TT": 1,
+      "separator_phases": "Irrelevant by absence of M/T and cell confinement; fixed horizontal in enumeration"
+    },
+    {
+      "copies": 1,
+      "width": 10,
+      "active_cell_auxiliaries": 3125,
+      "exact_minimum_TT": 1,
+      "separator_phases": "Irrelevant by absence of M/T and cell confinement; fixed horizontal in enumeration"
+    },
+    {
+      "copies": 2,
+      "width": 6,
+      "active_cell_auxiliaries": 15625,
+      "exact_minimum_TT": 2,
+      "separator_phases": "Irrelevant by absence of M/T and cell confinement; fixed horizontal in enumeration"
+    }
+  ],
+  "families": [
+    {
+      "copies": 1,
+      "width": 6,
+      "M": 5,
+      "T": 6,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 2,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 64,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 8,
+      "M": 7,
+      "T": 8,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 256,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 10,
+      "M": 9,
+      "T": 10,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 1024,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 12,
+      "M": 11,
+      "T": 12,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 14,
+      "M": 13,
+      "T": 14,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 16,
+      "M": 15,
+      "T": 16,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 18,
+      "M": 17,
+      "T": 18,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 20,
+      "M": 19,
+      "T": 20,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 22,
+      "M": 21,
+      "T": 22,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 24,
+      "M": 23,
+      "T": 24,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 26,
+      "M": 25,
+      "T": 26,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 28,
+      "M": 27,
+      "T": 28,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 30,
+      "M": 29,
+      "T": 30,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 32,
+      "M": 31,
+      "T": 32,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 34,
+      "M": 33,
+      "T": 34,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 36,
+      "M": 35,
+      "T": 36,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 38,
+      "M": 37,
+      "T": 38,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 40,
+      "M": 39,
+      "T": 40,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 42,
+      "M": 41,
+      "T": 42,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 44,
+      "M": 43,
+      "T": 44,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 46,
+      "M": 45,
+      "T": 46,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 48,
+      "M": 47,
+      "T": 48,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 50,
+      "M": 49,
+      "T": 50,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 52,
+      "M": 51,
+      "T": 52,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 54,
+      "M": 53,
+      "T": 54,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 56,
+      "M": 55,
+      "T": 56,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 58,
+      "M": 57,
+      "T": 58,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 60,
+      "M": 59,
+      "T": 60,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 62,
+      "M": 61,
+      "T": 62,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 64,
+      "M": 63,
+      "T": 64,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 66,
+      "M": 65,
+      "T": 66,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 68,
+      "M": 67,
+      "T": 68,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 70,
+      "M": 69,
+      "T": 70,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 72,
+      "M": 71,
+      "T": 72,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 74,
+      "M": 73,
+      "T": 74,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 76,
+      "M": 75,
+      "T": 76,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 78,
+      "M": 77,
+      "T": 78,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 80,
+      "M": 79,
+      "T": 80,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 82,
+      "M": 81,
+      "T": 82,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 84,
+      "M": 83,
+      "T": 84,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 86,
+      "M": 85,
+      "T": 86,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 88,
+      "M": 87,
+      "T": 88,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 90,
+      "M": 89,
+      "T": 90,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 92,
+      "M": 91,
+      "T": 92,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 94,
+      "M": 93,
+      "T": 94,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 96,
+      "M": 95,
+      "T": 96,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 98,
+      "M": 97,
+      "T": 98,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 100,
+      "M": 99,
+      "T": 100,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 102,
+      "M": 101,
+      "T": 102,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 1,
+      "width": 104,
+      "M": 103,
+      "T": 104,
+      "physical_macrocell_minimum_TT": 1,
+      "relaxed_TT": 0,
+      "debt": 2,
+      "debt_flow": 2,
+      "explicit_single_use_edges": 2,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 1,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 1,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 1,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 2,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        2,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 6,
+      "M": 10,
+      "T": 12,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 2,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 4096,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 6,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 8,
+      "M": 14,
+      "T": 16,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 7,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 10,
+      "M": 18,
+      "T": 20,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 8,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 12,
+      "M": 22,
+      "T": 24,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 9,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 14,
+      "M": 26,
+      "T": 28,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 10,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 16,
+      "M": 30,
+      "T": 32,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 11,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 18,
+      "M": 34,
+      "T": 36,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 12,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 20,
+      "M": 38,
+      "T": 40,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 13,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 22,
+      "M": 42,
+      "T": 44,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 14,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 24,
+      "M": 46,
+      "T": 48,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 15,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 26,
+      "M": 50,
+      "T": 52,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 16,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 28,
+      "M": 54,
+      "T": 56,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 17,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 30,
+      "M": 58,
+      "T": 60,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 18,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 32,
+      "M": 62,
+      "T": 64,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 19,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 34,
+      "M": 66,
+      "T": 68,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 20,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 36,
+      "M": 70,
+      "T": 72,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 21,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 38,
+      "M": 74,
+      "T": 76,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 22,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 40,
+      "M": 78,
+      "T": 80,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 23,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 42,
+      "M": 82,
+      "T": 84,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 24,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 2,
+      "width": 44,
+      "M": 86,
+      "T": 88,
+      "physical_macrocell_minimum_TT": 2,
+      "relaxed_TT": 0,
+      "debt": 4,
+      "debt_flow": 4,
+      "explicit_single_use_edges": 4,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 2,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 2,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 2,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 25,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        4,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 6,
+      "M": 15,
+      "T": 18,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 2,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 10,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 8,
+      "M": 21,
+      "T": 24,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 12,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 10,
+      "M": 27,
+      "T": 30,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 14,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 12,
+      "M": 33,
+      "T": 36,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 16,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 14,
+      "M": 39,
+      "T": 42,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 18,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 16,
+      "M": 45,
+      "T": 48,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 20,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 18,
+      "M": 51,
+      "T": 54,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 22,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 20,
+      "M": 57,
+      "T": 60,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 24,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 22,
+      "M": 63,
+      "T": 66,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 26,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 3,
+      "width": 24,
+      "M": 69,
+      "T": 72,
+      "physical_macrocell_minimum_TT": 3,
+      "relaxed_TT": 0,
+      "debt": 6,
+      "debt_flow": 6,
+      "explicit_single_use_edges": 6,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 3,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 3,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 3,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 28,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        6,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 5,
+      "width": 6,
+      "M": 25,
+      "T": 30,
+      "physical_macrocell_minimum_TT": 5,
+      "relaxed_TT": 0,
+      "debt": 10,
+      "debt_flow": 10,
+      "explicit_single_use_edges": 10,
+      "explicit_max_received": 2,
+      "relaxed_auxiliary_nongrid_edges": 5,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 5,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 5,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 18,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        10,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 5,
+      "width": 10,
+      "M": 45,
+      "T": 50,
+      "physical_macrocell_minimum_TT": 5,
+      "relaxed_TT": 0,
+      "debt": 10,
+      "debt_flow": 10,
+      "explicit_single_use_edges": 10,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 5,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 5,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 5,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 26,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        10,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 5,
+      "width": 20,
+      "M": 95,
+      "T": 100,
+      "physical_macrocell_minimum_TT": 5,
+      "relaxed_TT": 0,
+      "debt": 10,
+      "debt_flow": 10,
+      "explicit_single_use_edges": 10,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 5,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 5,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 5,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 46,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        10,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 10,
+      "width": 6,
+      "M": 50,
+      "T": 60,
+      "physical_macrocell_minimum_TT": 10,
+      "relaxed_TT": 0,
+      "debt": 20,
+      "debt_flow": 20,
+      "explicit_single_use_edges": 20,
+      "explicit_max_received": 2,
+      "relaxed_auxiliary_nongrid_edges": 10,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 10,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 10,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 38,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        20,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 10,
+      "width": 10,
+      "M": 90,
+      "T": 100,
+      "physical_macrocell_minimum_TT": 10,
+      "relaxed_TT": 0,
+      "debt": 20,
+      "debt_flow": 20,
+      "explicit_single_use_edges": 20,
+      "explicit_max_received": 1,
+      "relaxed_auxiliary_nongrid_edges": 10,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 10,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 10,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 56,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        20,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    },
+    {
+      "copies": 25,
+      "width": 6,
+      "M": 125,
+      "T": 150,
+      "physical_macrocell_minimum_TT": 25,
+      "relaxed_TT": 0,
+      "debt": 50,
+      "debt_flow": 50,
+      "explicit_single_use_edges": 50,
+      "explicit_max_received": 2,
+      "relaxed_auxiliary_nongrid_edges": 25,
+      "regional_cuts": 0,
+      "failed_local_Hall_cells": 25,
+      "first_local_Hall_witness": {
+        "cell": [
+          0,
+          1
+        ],
+        "bit": true,
+        "black": [
+          [
+            0,
+            2
+          ]
+        ],
+        "neighbours": [],
+        "deficit": 1
+      },
+      "initial_TT": 25,
+      "explicit_one_batch_TT": 1,
+      "one_batch_paid_M": 98,
+      "final_two_batch_TT": 0,
+      "two_batch_paid_M": [
+        50,
+        0,
+        0
+      ],
+      "exact_resource_sets": true
+    }
+  ],
+  "scope": "Balanced-cell complete-port relaxation; capacity-respecting false macrocell certificates; physical forced-port/stacked gap; exact one/two-batch separation and actual M class sets.",
+  "trust_boundary": "Quantified proofs are written; finite controls do not establish general geometry. Numerical 5/6 improvement and universal successive-batch coverage remain open."
+}

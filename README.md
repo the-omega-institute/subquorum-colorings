@@ -1,5 +1,27 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [physical obstruction to capacity-preserving cell coarsening](docs/CAPACITY_PRESERVING_MACROCELL_OBSTRUCTION.md):
+the regional/debt formula on arbitrary balanced cells is exact for the
+complete-port relaxation. Its use for physical domino matchings requires
+a local routing lift. For uniform 4-by-2 cells on a connected 8q-by-w board,
+all coarse debts can be paid using distinct actual M edges within receiving
+budgets, yet every cell-confined auxiliary matching leaves exactly q TT.
+Thus the gap is unbounded even without any duplicated compensation resource.
+The missing constraint is the forced connection of the two top ports.
+For the same stacked family, the optimum over a single independent batch
+from horizontal N is exactly one TT; exactly two batches achieve zero at
+zero final M cost. This separates static coarsening from successive routing.
+The physical base family/forced-port argument are inherited and credited;
+the relaxation interpretation and capacity-preserving amplification are new
+deductions. Controls: 86 models, 5,440 regional cuts, 19,500 active-cell
+auxiliaries and five local Lean declarations. Global arguments are written;
+the numerical 5/6 bound and universal batch coverage remain open.
+An exact physical lifting criterion supplements the flow: both red and
+unmarked cell port subgraphs must satisfy Hall. All 70 balanced local bit
+profiles are checked against the five physical phases; exactly 44 lift.
+The criterion is existential over integral flows and retains intra-cell
+M loops; a failed test for one flow alone is not a global impossibility proof.
+
 New [general physical ports and exact tile compensation](docs/GENERAL_SQUARE_PORTS_AND_TILE_CUTS.md):
 same-path cuts, cut original P-only cycles and retained M/N doubled edges
 now fit the coverage flow and joint-cost model. Physical cut ports preserve

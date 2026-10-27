@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4015 \nPages purgeable: 2 \nPages purged: 272593428 \n\nSwap I/O:\nSwapins: 602619143 \nSwapouts: 619197462 \n\nPage Q counts:\nPages active: 154168 \nPages inactive: 147695 \nPages speculative: 4842 \nPages throttled: 0 \nPages wired down: 232378 \n\nCompressor Stats:\nPages used by compressor: 463762 \nPages decompressed: 7275204558 \nPages compressed: 8161621612 \n\nFile I/O:\nPageins: 8599937306 \nPageouts: 26622395 \n\nSystem-wide memory free percentage: 30%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     3824.\nPages active:                                 154224.\nPages inactive:                               147799.\nPages speculative:                              4846.\nPages throttled:                                   0.\nPages wired down:                             232378.\nPages purgeable:                                   2.\n\"Translation faults\":                    32110400988.\nPages copy-on-write:                      1522862632.\nPages zero filled:                       12425667848.\nPages reactivated:                        6981577753.\nPages purged:                              272593428.\nFile-backed pages:                            112390.\nAnonymous pages:                              194479.\nPages stored in compressor:                  2669276.\nPages occupied by compressor:                 463772.\nDecompressions:                           7275204629.\nCompressions:                             8161621612.\nPageins:                                  8599937307.\nPageouts:                                   26622395.\nSwapins:                                   602619167.\nSwapouts:                                  619197462."
+  },
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "command": "cd formal && lean SubQuorum/MacrocellPorts.lean",
+  "theorems": [
+    {
+      "theorem": "SubQuorum.MacrocellPorts.top_left_neighbours",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MacrocellPorts.top_right_neighbours",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MacrocellPorts.side_neighbours",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MacrocellPorts.forced_top_ports",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.MacrocellPorts.forced_selected_end",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.MacrocellPorts.top_left_neighbours' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MacrocellPorts.top_right_neighbours' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MacrocellPorts.side_neighbours' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MacrocellPorts.forced_top_ports' depends on axioms: [propext, Quot.sound]\n'SubQuorum.MacrocellPorts.forced_selected_end' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Local 4-by-2 grid neighbour constraints and forced top-port/selected-end laws from arbitrary legal involutive mate maps.",
+  "not_formalized": "Global flow/min-cut, all-width concatenation and stacked coordinate embedding, and exact batch-depth bounds are written proofs."
+}

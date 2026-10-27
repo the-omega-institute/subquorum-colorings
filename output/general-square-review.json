@@ -1,5 +1,5 @@
 {
-  "status": "CORE_AND_ALL_POOL_OBSTRUCTION_ACCEPT_TWO_BATCH_REVIEW_RUNNING",
+  "status": "CORE_AND_ALL_POOL_OBSTRUCTION_ACCEPT_TWO_BATCH_REVIEW_INFRA_FAILURE",
   "initial": {
     "task_id": "9a4dae23-1196-4bb6-9eb3-22725bc50d3b",
     "conversation_id": "conv_079d4deb25b0e6ac",
@@ -31,7 +31,7 @@
     "conversation_id": "conv_079d4deb25b0e6ac",
     "status": "dispatched",
     "scope": "New all-product-tile-phase closed-cut deduction; original long follow-up kept live.",
-    "observation": "Original stream unexpected EOF; same original task confirmed dispatched/typing, retained for later observation. No verdict yet; not used as acceptance evidence. Accepted stronger audit independently includes the closed-cut proof."
+    "observation": "Original task GET reconfirmed dispatched/typing this session; no mathematical verdict, not resubmitted. Accepted stronger audit independently includes its closed-cut proof."
   },
   "stronger_review": {
     "task_id": "36702c39-03cd-402d-92f5-36d123200dec",
@@ -57,7 +57,12 @@
   "two_batch_review": {
     "conversation_id": "conv_48764e524b553652",
     "marker": "Final NEW corollary after your ACCEPT 36702c39",
-    "status": "stream_running",
-    "scope": "Exact optimal depth2 and literal resource ledger; separate from prior all-pool acceptance."
+    "status": "failed",
+    "scope": "Exact optimal depth2 and literal resource ledger; separate from prior all-pool acceptance.",
+    "task_id": "57902c17-e514-436b-bb52-b365b6b9383c",
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "mathematical_verdict": null,
+    "observation": "Authoritative original task GET confirmed terminal infrastructure failure; no mathematical opinion. Written construction and local controls remain, prior ACCEPT scope excludes this corollary."
   }
 }
