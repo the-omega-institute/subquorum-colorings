@@ -13,6 +13,9 @@ family has no initial direct TT/HH square yet admits these relays, and separated
 copies give arbitrary chain packings. Eighty lengths, 40 packings, 32 tiny
 matching controls and seven scoped Lean resource/uniqueness kernels pass.
 General chain coverage and a universal 5/6 improvement remain open.
+[Separate independent review ACCEPT](output/ordered-th-relay-review.json) covers
+the written theorem and constructions; the reviewer reproduced the submitted
+80/40/32+counterexample output, not Lean or later local checker additions.
 
 New [mixed-terminal square compensation](docs/MIXED_TERMINAL_SQUARE_COMPENSATION.md)
 keeps the actual matching M fixed and switches only a full auxiliary certificate N.

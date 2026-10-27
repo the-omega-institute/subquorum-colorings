@@ -98,6 +98,12 @@ def relay(h, w, m, n, t, chain, gates, require_order=True):
         assert u in t and v in before['H']
         assert u not in paid_t and v not in paid_h and not used & p['M']
         paid_t.add(u); paid_h.add(v); used |= p['M']
+    if correct:
+        old_th = set().union(*(p['M'] for p in before['paths'] if p['kind'] == 'TH'))
+        end_tt, end_hh = paths[chain[0]]['M'], paths[chain[-1]]['M']
+        assert not old_th & end_tt and not old_th & end_hh and not end_tt & end_hh
+        assert used == old_th | end_tt | end_hh
+        assert len(used)-len(old_th) == len(end_tt)+len(end_hh)
     return dict(correct_order=correct, orders=orders, before=before['counts'],
                 after=after['counts'], initial_paid_M=len(set().union(
                     *(p['M'] for p in before['paths'] if p['kind'] == 'TH'))),
@@ -302,6 +308,7 @@ def main():
                   actual_disjoint_chain_packing_controls=len(packed),
                   largest_packing=packed[-1],
                   feasible_wrong_order_obstruction=wrong,
+                  direct_payment_resource_set_identity_checked=True,
                   trust_boundary='General iff port-order relay and component-disjoint chain packing are written proofs. Finite controls do not prove universal existence, optimality or a universal 5/6 improvement. The positive family deliberately has a cheaper zero-M payment, so no minimum relay-cost claim is made.')
     (ROOT/'output/ordered-th-relay.json').write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(dict(status='PASS', small=small, order_words=words, family_parameters=len(rows),

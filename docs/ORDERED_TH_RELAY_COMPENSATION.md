@@ -253,8 +253,9 @@ numerical inequality beyond (6). The open problem is to find useful geometric
 conditions guaranteeing component-disjoint ordered chain coverage, or extend
 the surgery to shared TH subpaths with an honest capacity ledger.
 
-The previous independent ACCEPT covers the preceding square/retention and all-k
-relay-cost notes, not this new ordered-relay result. The submitted manuscript,
+The preceding independent ACCEPT covers the earlier square/retention and all-k
+relay-cost notes. A separate review of this new ordered-relay result is recorded
+below. The submitted manuscript,
 Mail, public main/PR3, star-forming/C4 and shared CI are outside this branch.
 
 [Seven local Lean declarations](../formal/SubQuorum/OrderedTHRelay.lean), with
@@ -265,5 +266,11 @@ the exact conditional cost/residual/family arithmetic. These lists enumerate
 physical resources; they are not ordered vertex walks. The geometric adapter,
 port-order iff statement and coordinate constructions remain written proofs.
 
-[Independent review of this new theorem is pending](../output/ordered-th-relay-review.json);
-no acceptance is inferred from the preceding result.
+[Independent review ACCEPT](../output/ordered-th-relay-review.json) covers the
+full written theorem and coordinate constructions. The reviewer executed the
+submitted checker (80 lengths,40 packings,32 tiny matching controls and the
+negative witness), reproduced the submitted JSON, and did not run Lean. The
+later 510 orientation-word checks and direct payment-resource-set assertion
+are local additions, not reviewer-executed. The latter implements the review's
+suggestion to check (4) directly, including pairwise disjointness; the local
+checker was rerun after adding it. No mathematical statement changed.
