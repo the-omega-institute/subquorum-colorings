@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "zero_M_terminal_controls": [
+    {
+      "contacts": 0,
+      "flow": 0,
+      "minimum_TT": 1,
+      "M": 0
+    },
+    {
+      "contacts": 1,
+      "flow": 1,
+      "minimum_TT": 0,
+      "M": 0
+    }
+  ],
+  "physical_star_cut": {
+    "word": "HHHTTT",
+    "cut_contact_ids": [
+      3,
+      4,
+      5
+    ],
+    "supplies": 3,
+    "hole_exits": 0,
+    "interior_exit_fragments": 1,
+    "minimum_TT": 2,
+    "flow": 1,
+    "unique_exit_M_edges": [
+      [
+        [
+          3,
+          15
+        ],
+        [
+          3,
+          16
+        ]
+      ],
+      [
+        [
+          3,
+          17
+        ],
+        [
+          3,
+          18
+        ]
+      ],
+      [
+        [
+          3,
+          19
+        ],
+        [
+          3,
+          20
+        ]
+      ]
+    ],
+    "unique_exit_M_weight": 3
+  },
+  "offdiagonal_greedy_families": [
+    {
+      "L": 4,
+      "d": 1,
+      "joint_cost": 103,
+      "sequential_cost": 117
+    },
+    {
+      "L": 4,
+      "d": 7,
+      "joint_cost": 133,
+      "sequential_cost": 171
+    },
+    {
+      "L": 6,
+      "d": 1,
+      "joint_cost": 113,
+      "sequential_cost": 133
+    },
+    {
+      "L": 6,
+      "d": 2,
+      "joint_cost": 118,
+      "sequential_cost": 144
+    },
+    {
+      "L": 8,
+      "d": 3,
+      "joint_cost": 133,
+      "sequential_cost": 175
+    },
+    {
+      "L": 10,
+      "d": 1,
+      "joint_cost": 133,
+      "sequential_cost": 165
+    },
+    {
+      "L": 12,
+      "d": 5,
+      "joint_cost": 163,
+      "sequential_cost": 249
+    },
+    {
+      "L": 16,
+      "d": 2,
+      "joint_cost": 168,
+      "sequential_cost": 234
+    }
+  ],
+  "scope": "Local post-submission additions; not part of the independent reviewer execution packet. General proofs remain in notes."
+}

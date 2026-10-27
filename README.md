@@ -1,5 +1,30 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [exact arbitrary-contact coverage and cut](docs/CONTACT_FLOW_CUT_AND_EXACT_COST.md):
+for any prescribed pool of vertex-disjoint squares satisfying the original
+terminal-path contact hypotheses, an integral unit flow gives the EXACT
+minimum remaining TT count B_T-F over every subset. The complete directed
+fragment cut counts each shared capacity once, including zero-M fragments.
+It detects the shared-star bottleneck and distinguishes mandatory wrong-order
+batches from pools that admit successful smaller subsets. A separate two-colour
+binary-flow model gives exact total M cost with one shared fragment capacity.
+
+New [three internal contacts defeat red-first cost optimization](docs/ONE_COLOUR_GREEDY_BARRIER.md):
+for every even L>=4, first minimizing red and THEN optimally completing blue
+costs L^2+12L+80, while joint optimization costs only 10L+78. The ratio is
+unbounded; the unique red minimum forces the bad operation. An actual
+30-by-130 board gives 720 versus 278. This is a failure of sequential cost
+optimization, not of the coverage flow or the numerical sub-quorum target.
+
+Local checks pass 360 abstract networks / 224 weighted models, 3,508 actual
+subset surgeries on 158 row/star pools, 48 long star controls, three weighted
+five-contact models and six diagonal greedy-family boards. Eleven scoped Lean
+declarations prove general local switch completion and conditional cut/ratio
+arithmetic; the global flow and physical adapters remain written. Separate
+post-submission controls check zero-M terminals and eight off-diagonal boards.
+[Independent audit status and exact execution scope](output/contact-flow-review.json).
+General geometric pool selection and universal 5/6 remain open.
+
 New [five indispensable contacts](docs/FIVE_CONTACT_SPARSIFICATION_BARRIER.md):
 one actual TT/HH pair and five vertex-disjoint prescribed squares give an
 unbounded cost gap between all five and EVERY successful proper subset.

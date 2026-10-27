@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/ContactFlowCut.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4085 \nPages purgeable: 2 \nPages purged: 269149157 \n\nSwap I/O:\nSwapins: 554666096 \nSwapouts: 571029783 \n\nPage Q counts:\nPages active: 149055 \nPages inactive: 140627 \nPages speculative: 7010 \nPages throttled: 0 \nPages wired down: 260552 \n\nCompressor Stats:\nPages used by compressor: 445591 \nPages decompressed: 7167173476 \nPages compressed: 8047840398 \n\nFile I/O:\nPageins: 8588614214 \nPageouts: 26527377 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4069.\nPages active:                                 149058.\nPages inactive:                               140649.\nPages speculative:                              7013.\nPages throttled:                                   0.\nPages wired down:                             260552.\nPages purgeable:                                   2.\n\"Translation faults\":                    31861062740.\nPages copy-on-write:                      1515465879.\nPages zero filled:                       12362551343.\nPages reactivated:                        6921908145.\nPages purged:                              269149157.\nFile-backed pages:                            109707.\nAnonymous pages:                              187013.\nPages stored in compressor:                  3224063.\nPages occupied by compressor:                 445606.\nDecompressions:                           7167173501.\nCompressions:                             8047840398.\nPageins:                                  8588614217.\nPageouts:                                   26527377.\nSwapins:                                   554666112.\nSwapouts:                                  571029783."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.ContactFlowCut.two_port_completion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.binary_completion",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.three_colour_partition",
+      "axioms": []
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.two_colour_completion",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.optimal_TT_from_flow",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.cut_deficit_identity",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.star_cut_shortage",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.greedy_cost_gap",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.greedy_linear_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.greedy_ratio_bound",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.ContactFlowCut.greedy_unbounded_ratio",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.ContactFlowCut.two_port_completion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.ContactFlowCut.binary_completion' depends on axioms: [propext]\n'SubQuorum.ContactFlowCut.three_colour_partition' does not depend on any axioms\n'SubQuorum.ContactFlowCut.two_colour_completion' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.ContactFlowCut.optimal_TT_from_flow' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactFlowCut.cut_deficit_identity' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactFlowCut.star_cut_shortage' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactFlowCut.greedy_cost_gap' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactFlowCut.greedy_linear_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactFlowCut.greedy_ratio_bound' depends on axioms: [propext, Quot.sound]\n'SubQuorum.ContactFlowCut.greedy_unbounded_ratio' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Arbitrary-label two-port completion, binary completion, two-colour+unused completion; conditional optimal-TT, cut and star arithmetic; FOR EVERY K an explicit even greedy-barrier ratio witness.",
+  "not_formalized": "Physical extraction/unique ownership, global max-flow decoding and min-cut optimality, all-s star embedding and two-colour weighted equivalence remain written. Not end-to-end grid Lean."
+}
