@@ -81,7 +81,7 @@ def analyse(h, w, m, n, t, gates):
     unseen = set(f); predicted_paths = {}; predicted_cycles = {}; pi = {}
     while unseen:
         first = min(unseen); orbit = []; x = first
-        while x not in orbit:
+        while x in unseen:
             orbit.append(x); unseen.remove(x); x = f[x]
         assert x == first
         markers = [j for j, x in enumerate(orbit) if x[0] == 's']
@@ -221,10 +221,18 @@ def main():
         for k in range(1,len(columns)+1):
             for chosen in combinations(columns,k): ladder(w,chosen); small += 1
     long = []
+    negative = []
     for s in range(1,81):
         w = 2*s+2
         for chosen in [[0,w-2],list(range(0,w,2)),[0]]:
             long.append(ladder(w,chosen))
+        m,n,t,allg = row_family(4,w,'TH')
+        gates = [g for g in allg if g['square'] in [(1,0),(1,w-2)]]
+        result = analyse(4,w,m,n,t,gates)
+        assert result['before'] == result['after'] == (0,w,2)
+        assert result['old_TH_M'] == result['cycle_M'] == w-2
+        assert result['new_TH_M'] == result['new_bad_M'] == 0
+        negative.append(result)
     networks = 0; cyclic = 0; residual = 0; spanning_four = 0
     # At each column-pair choose a matching of the three possible row contacts.
     # The support condition is exact; these controls include mixed TT/HH and TH.
@@ -241,6 +249,11 @@ def main():
             spanning_four += result['original_paths']==4
     assert cyclic and residual and spanning_four
     witness = same_order_witness()
+    empty_m = decompose(grid(2,2),set(),
+                        {edge((r,0),(r,1)) for r in range(2)}, {(0,0),(0,1)})
+    assert selected_feasible(empty_m['P'],{(0,0),(0,1)})
+    assert empty_m['counts'] == (1,1,0)
+    assert all(not p['M'] for p in empty_m['paths'])
     (ROOT/'output/two-contact-same-order-witness.json').write_text(
         json.dumps(witness,indent=2)+'\n')
     output=dict(status='PASS',small_ladder_subsets=small,
@@ -249,6 +262,9 @@ def main():
                 networks_affecting_four_original_paths=spanning_four,
                 largest_sparse_credit=long[-3],largest_dense_credit=long[-2],
                 largest_single_contact=long[-1],
+                negative_increment_family_controls=len(negative),
+                largest_negative_increment=negative[-1],
+                zero_bad_M_does_not_certify_coverage='PASS: feasible2x2 M-empty configuration has TT/HH and zero bad M resources',
                 same_order_witness=witness['result'],
                 verified='Exact compressed endpoint pairs, physical fragment and M-edge sets versus direct path/cycle decomposition; cycle-rank bound and permutation parity; two-contact order dichotomy; full N and feasible fixed M,T; exact signed ledger; safe normalization and retention identity.',
                 trust_boundary='All-size permutation/forest/cycle-rank and span-credit results have written proofs. Finite actual grids test these proofs and the adapter; no universal coverage, universal5/6 improvement or general novelty of permutation surgery is claimed.')

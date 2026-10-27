@@ -57,7 +57,9 @@ theorem signed_cost (rs : List Resource) :
   omega
 
 /-- The adapter must establish no final bad-path resources before using
-this specialization. In the written theorem every final path is TH. -/
+this specialization. In the written theorem every final path is TH.
+The converse is false: an M-free TT/HH path has no resource-list entry,
+so bad rs = 0 alone cannot certify endpoint coverage. -/
 theorem full_repair_cost (rs : List Resource) (full : bad rs = 0) :
     (paid rs : Int) - oldPaid rs = (oldBad rs : Int) - cycles rs := by
   have h := signed_cost rs

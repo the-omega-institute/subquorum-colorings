@@ -96,7 +96,9 @@ paths still takes time proportional to their total size.
 
 ## 3. A sharp topological bound
 
-Let r be the number of NEW affected P-only cycles. Then
+Let r be the number of NEW affected P-only cycles in M+N', before any
+normalization in Section 4. Doubled retained components after normalization
+are not substituted into this count. Then
 
     0 <= r <= e-n+c.                                    (3)
 
@@ -137,8 +139,10 @@ not from a choice of arbitrary nonbipartite reconnection orientations.
 
 ### The two-contact dichotomy
 
-Suppose exactly two distinct original paths have exactly two chosen
-contacts with each other. Label the contacts g1,g2 in black-to-white order
+Consider a connected component of G consisting of exactly two original
+paths and exactly two chosen contacts between them. Neither path has any
+other selected contact; disjoint contact components are allowed. Label
+the contacts g1,g2 in black-to-white order
 on the first path. There are only two cases:
 
 * If the second path has the SAME canonical contact order, pi is the
@@ -205,8 +209,15 @@ empty and
 This can be zero or negative. It is not valid to charge all original bad
 path resources and separately credit a cycle without checking (4).
 Each physical edge in C is removed once, whether it came from O or B.
-Unaffected paths/cycles cancel from the global comparison. Terminal
-incidences independently give a0-a1=b0-b1=(t1-t0)/2; cycles introduce no
+The implication used here is all-final-paths-TH => D empty. Its converse
+is false: a bad terminal path may be a single auxiliary edge with zero M
+resources. For example M empty and horizontal N on a 2-by-2 board, with
+both top sites selected, is feasible and has a TT and an HH path with
+ZERO bad M resources. Neither D empty nor the corresponding Lean
+resource-count hypothesis proves endpoint coverage; (2) must check that.
+Unaffected paths/cycles cancel from the global comparison. With a,b,t
+denoting TT, HH and TH path counts, endpoint incidences independently give
+a0-a1=b0-b1=(t1-t0)/2; cycles introduce no
 extra terminal or hole credit.
 
 There is also a legitimate full auxiliary certificate realizing this
@@ -273,6 +284,14 @@ universal 5/6 improvement, and no novelty over general permutation surgery
 is claimed. The new application is the precise physical ledger and its
 actual feasible grid realization within this compensation project.
 
+The same geometric construction also realizes a genuinely negative cost
+increment. Replace T by {(1,0),(2,W-1)}. Each selected site still has just
+one P neighbour; both original middle-row paths are now TH. With the two
+boundary contacts they remain TH, but their entire W-2 originally paid M
+edges lie on the new inner cycle. Thus B is empty and the increment is
+-(W-2), without bound. This changes the certificate cost, not |M| or the
+configuration's numerical objective.
+
 ## 6. Evidence and remaining question
 
 The direct physical checker compares the compressed permutation with
@@ -284,9 +303,24 @@ failure in the feasible 8-by-6 same-order fixture. It also checks (3a) and
 the two-contact dichotomy. These computations test the construction and adapter;
 the arbitrary-size proofs above do not depend on finite enumeration.
 
-The seven local Lean kernels in ContactCycleLedger.lean certify the
+The [seven local Lean kernels](../formal/SubQuorum/ContactCycleLedger.lean) certify the
 all-finite-resource ledger and conditional arithmetic, not the geometric
 permutation adapter or the cycle-rank argument. See the accompanying JSON
 for the executed scope. Universal covering networks and a universal 5/6
 improvement remain open. A new cycle credit must be tested together with
 terminal coverage, never inferred from the number of contacts alone.
+
+
+## 7. Independent review
+
+[Independent review ACCEPT](../output/contact-cycle-review.json) confirms
+the general routing, rank/parity, isolated two-contact dichotomy, signed
+ledger, normalization and all-W span-credit proof. The reviewer reports
+executing Python 3.12.14 on the submitted checker and unchanged helpers:
+1,012 ladder subsets, 240 length controls and 1,248 networks (2,500 analysis
+calls), with generated JSON equal to the supplied parsed JSON. It did not
+execute Lean or the helpers' standalone suites. Its scope clarifications
+are incorporated above. The 8-by-6 fixture, 80 negative-increment controls,
+2-by-2 M-free bad-path fixture and visited-set loop change are local additions
+outside reviewer execution. They were checked locally afterward. The
+review does not provide universal contact coverage or a 5/6 improvement.

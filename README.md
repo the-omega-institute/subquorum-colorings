@@ -11,7 +11,12 @@ cost: one cycle can remove arbitrarily many original bad-path M resources.
 The exact cost change is original bad resources minus final bad and cycle
 resources. Direct physical checks pass 1,012 ladder subsets, 240 length controls,
 1,248 multi-path networks and the 8-by-6 fixture; seven local Lean ledger
-kernels pass. General geometric coverage and universal 5/6 remain open.
+kernels pass. Another 80 TH-ladder controls verify negative cost increments,
+and an M-free bad-path fixture separates resource cost from terminal coverage.
+[Independent network review ACCEPT](output/contact-cycle-review.json) reports
+reproducing the submitted 2,500 analysis calls, with no Lean; later fixture and
+negative-increment additions were checked locally. General geometric coverage
+and universal 5/6 remain open.
 
 New [exact shared-TH star capacity](docs/SHARED_TH_STAR_CAPACITY.md): a single
 original TH path supports arbitrarily many TT/HH repairs when its contact
