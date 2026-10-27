@@ -31,6 +31,11 @@ terminate at T. The optimal residual is exactly one. Controls check 3,875
 strip-confined full auxiliaries and all 504 maximal pools at widths 6,...,16.
 The zero-M unrestricted N is explicit; changing the baseline or permitting
 controlled successive overlapping batches is necessary for this example.
+An explicit optimal repair now uses exactly TWO batches: flip all even-column
+squares in both two-row bands, then all odd-column squares. Every T ends
+on a direct hole edge with zero M cost. A full set ledger traces payment
+2 -> 0 -> 0 and distinguishes absorbed old free edges from new free edges;
+the two batches overlap each other and are individually independent.
 
 The same note proves an all-even-H old-cycle relay barrier: the original
 bad-path M count is TWO, yet the unique covering subset of two prescribed
@@ -51,8 +56,11 @@ Physical extraction, global flow/min-cut, normalization and all-H embeddings
 are written proofs; the universal 5/6 improvement remains open.
 [Independent core audit ACCEPT](output/general-square-review.json) reproduces
 both original submitted Python outputs exactly, without running Lean. The
-later closed-cut and stronger all-independent-pool results are in separate
-live reviews and are not covered by that initial acceptance.
+[separate stronger audit ACCEPT](docs/reviews/2026-10-27-all-independent-pool-obstruction-review.txt)
+checks the all-width closed cut, every independent pool and explicit full N,
+reproducing its complete submitted checker JSON exactly, without Lean. The
+subsequent optimal two-batch repair has a separate live review. The original
+closed-cut-only follow-up remains an independently tracked pending task.
 
 
 New [exact arbitrary-contact coverage and cut](docs/CONTACT_FLOW_CUT_AND_EXACT_COST.md):

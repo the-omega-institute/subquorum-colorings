@@ -1,5 +1,5 @@
 {
-  "status": "CORE_ACCEPT_STRONGER_THEOREM_REVIEWS_RUNNING",
+  "status": "CORE_AND_ALL_POOL_OBSTRUCTION_ACCEPT_TWO_BATCH_REVIEW_RUNNING",
   "initial": {
     "task_id": "9a4dae23-1196-4bb6-9eb3-22725bc50d3b",
     "conversation_id": "conv_079d4deb25b0e6ac",
@@ -30,12 +30,22 @@
     "task_id": "2f7689f6-87e6-4acc-abd5-df6523b65642",
     "conversation_id": "conv_079d4deb25b0e6ac",
     "status": "dispatched",
-    "scope": "New all-product-tile-phase closed-cut deduction; original long follow-up kept live."
+    "scope": "New all-product-tile-phase closed-cut deduction; original long follow-up kept live.",
+    "observation": "Original stream unexpected EOF; same original task confirmed dispatched/typing, retained for later observation. No verdict yet; not used as acceptance evidence. Accepted stronger audit independently includes the closed-cut proof."
   },
   "stronger_review": {
-    "marker": "sahbi-any-independent-pool-obstruction-20261027",
-    "status": "stream_running",
-    "scope": "Distinct enlarged theorem: Section8 actual closed cut and explicit unrestricted full N; Section9 ALL strip-confined N and ANY independent pool at N0; not a restart of earlier request."
+    "task_id": "36702c39-03cd-402d-92f5-36d123200dec",
+    "conversation_id": "conv_48764e524b553652",
+    "status": "completed",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6ae024fd-0d2c-83ec-858a-d25732eaa868",
+    "completed_at": "2026-10-27T04:19:36.724+00:00",
+    "verdict": "ACCEPT",
+    "response": "docs/reviews/2026-10-27-all-independent-pool-obstruction-review.txt",
+    "scope": "Sections8-9:all even widths, fixed-product-phase exact delta1, ALL strip-confined N, EVERY independent square pool at horizontal N0, explicit unrestricted full N zero payment. Excludes later two-batch construction.",
+    "execution": "Entire submitted checker PASS; full parsed JSON and bytes equal; 3875 auxiliaries,504 maximal pools,50 widths and full-N completions. No Lean and no separate old regression in this review.",
+    "recovery": "Local streaming transport ended unexpected EOF; original task recovered only after exact full prompt equality; task completed, no task resubmitted."
   },
   "post_initial_local_controls": {
     "general_main": "PASS_current_full_main",
@@ -43,5 +53,11 @@
     "maximal_independent_pools": 504,
     "explicit_full_N_zero_payment_widths": 50,
     "lean": "15 scoped declarations PASS locally; no whole-grid formalization."
+  },
+  "two_batch_review": {
+    "conversation_id": "conv_48764e524b553652",
+    "marker": "Final NEW corollary after your ACCEPT 36702c39",
+    "status": "stream_running",
+    "scope": "Exact optimal depth2 and literal resource ledger; separate from prior all-pool acceptance."
   }
 }

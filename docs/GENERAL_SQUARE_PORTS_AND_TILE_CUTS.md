@@ -476,12 +476,63 @@ The unrestricted full N in Section 8 succeeds and necessarily crosses at
 least one of these strip boundaries. This is a fixed-baseline, one-independent-
 batch obstruction, not a failure of the general port theorem, which exactly
 reports its shortage. To repair it one must change the auxiliary baseline or
-allow successive batches with overlapping supports; the latter possibility
-is a next problem, not a construction asserted here. A universal pool-selection
+allow successive batches with overlapping supports. Section 10 supplies an
+explicit optimal two-batch construction for this entire family. A universal pool-selection
 argument cannot start from this N_0 and merely search harder among independent
 squares. The numerical target remains untouched.
 
-## 10. Evidence and the remaining scope
+## 10. Exactly TWO batches suffice, with zero final payment cost
+
+For this family the minimum number of successive independent-square batches
+needed to cover all T from N_0 is exactly TWO. The lower bound is Section 9;
+the following explicit construction proves the upper bound for every even
+w>=6, keeping the actual M,T fixed.
+
+1. Flip all squares with upper-left corners (r,c), r in {0,2} and even
+   c=0,2,...,w-2. These w squares partition the board. Starting from N_0,
+   they produce the full vertical matching N_1 on row pairs (0,1),(2,3).
+2. In N_1 flip all squares with r in {0,2} and odd c=1,3,...,w-3. These
+   w-2 squares are pairwise vertex-disjoint and now have the required
+   vertical old N edges. They produce horizontal pairs (c,c+1) at every
+   odd c=1,3,...,w-3 in EVERY row, with vertical edges retained only in
+   the two boundary columns 0,w-1. Call this full matching N_2.
+
+The two batches overlap EACH OTHER; each batch separately has disjoint
+supports. Applying both at once is not an allowed operation and is not claimed.
+Every T is N_2-matched directly to a distinct H: the four selected left/right
+vertices in rows zero and two go down; the two special row-three T go inward;
+the remaining odd-column row-two T go right; the remaining even-column
+row-three T go left. The explicit T ranges in Section 8 show that each target
+is a hole. Matching disjointness gives their uniqueness. Therefore all T are
+covered with zero actual-M payment, and the counts are (0,1,w).
+
+The intermediate state has not yet repaired the shortage: it still has
+(1,2,w-2). The TT endpoints have moved to the two special row-three T, and
+that TT now owns ALL actual M edges. This construction is not a monotone
+preservation theorem for each previously paid selected vertex. It is a valid
+sequence of auxiliary changes at fixed feasible actual M,T, ending in a full
+cover. Neither changing the selection nor changing the actual matching is
+needed.
+
+The entire actual-resource ledger is explicit. With n=w/2, let M_top be the
+n-1 top-row edges, M_mid the n-2 row-one edges, and M_side the two side edges.
+These are disjoint actual M sets, so all resource transitions are literal:
+
+| Auxiliary state | TH paid M | TT/HH bad M | P-only free M |
+| --- | --- | --- | --- |
+| N_0 | M_side (2) | M_top (n-1) | M_mid (n-2) |
+| N_1 | empty | all M (2n-1) | empty |
+| N_2 | empty | M_mid union M_side (n) | M_top (n-1) |
+
+The signed cost increments in (5) are -2 and 0, for total -2. In particular
+the final n-1 free edges do not provide a credit to be added on top of the
+old n-2 free edges: the latter were absorbed and end in HH. No credit is
+booked per individual flip. The final partition, or the signed telescoping
+identity, counts each physical edge once. This supplies both a sharp obstacle
+to a one-batch strategy and a complete all-size repair with depth exactly two.
+It does not prove that two batches suffice for arbitrary grid configurations.
+
+## 11. Evidence and the remaining scope
 
 The [physical checker](../develop/check_general_square_ports.py) independently
 walks actual terminal paths and all P-only cycles, compares their full vertex
@@ -493,9 +544,11 @@ independent undirected debt flow, all product-tile phases for intra-tile
 retention, the complete local four-corner classification and forty even H
 values of (10), fifty widths of (11), and every product phase at widths
 6,8,10 for the closed-cut family. These are discovery/verification controls;
-Sections 1--9 are the arbitrary-size proofs. Complete products of all five
+Sections 1--10 are the arbitrary-size proofs. Complete products of all five
 strip domino states at widths 6,8,10 give 3,875 actual auxiliaries; 504 maximal
-independent pools at widths 6,...,16 each have exact residual TT one. The old network's residual self-loop indices
+independent pools at widths 6,...,16 each have exact residual TT one. Fifty
+widths also check both batches, intermediate/final actual component sets and
+the complete signed resource ledger, including payment costs 2 -> 0 -> 0. The old network's residual self-loop indices
 are corrected; its original checker is rerun as a regression.
 
 The scoped Lean source proves the signed partition arithmetic, regional

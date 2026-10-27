@@ -467,6 +467,39 @@ def column_strip_obstruction_controls():
                 scope='Finite controls for written ALL-W no-column-crossing-N obstruction, hence ANY single independent square batch from all-horizontal N fails; unrestricted full N succeeds.')
 
 
+def two_batch_repair_control(w):
+    """Exact batch depth TWO; never add intermediate cycle credit twice."""
+    _,m,t,_,_=unique_matching_family(w);m=set(m);n0,_=tiled_auxiliary(4,w)
+    first=[(r,c) for r in [0,2] for c in range(0,w,2)]
+    second=[(r,c) for r in [0,2] for c in range(1,w-1,2)]
+    states=[physical_state(grid(4,w),m,n0,t)]
+    n=n0
+    for coords in [first,second]:
+        by={g['square']:g for g in all_squares(4,w,n)}
+        net=PortNetwork(4,w,m,n,t,[by[x] for x in coords])
+        states.append(net.actual(set(range(len(coords)))))
+        for square in coords:
+            g=by[square];n=n-g['old']|g['new']
+    assert [s['data']['counts'] for s in states]==[(1,2,w-2),(1,2,w-2),(0,1,w)]
+    assert [len(s['paid']) for s in states]==[2,0,0]
+    assert len(states[0]['bad'])==w//2-1 and len(states[0]['free'])==w//2-2
+    assert len(states[1]['bad'])==w-1 and not states[1]['free']
+    assert len(states[2]['bad'])==w//2 and len(states[2]['free'])==w//2-1
+    top={e for e in m if all(v[0]==0 for v in e)}
+    mid={e for e in m if all(v[0]==1 for v in e)}
+    side=m-top-mid
+    assert states[0]['paid']==side and states[0]['bad']==top and states[0]['free']==mid
+    assert not states[1]['paid'] and states[1]['bad']==m and not states[1]['free']
+    assert not states[2]['paid'] and states[2]['bad']==mid|side and states[2]['free']==top
+    assert all(len(p['vertices'])==2 for p in states[2]['data']['paths'] if p['kind']=='TH')
+    assert len(first)==w and len(second)==w-2
+    return dict(width=w,minimum_independent_batches=2,
+                flip_counts=[w,w-2],counts=[list(s['data']['counts']) for s in states],
+                paid_M=[len(s['paid']) for s in states],
+                final_T_paths_are_direct_hole_payments=True,
+                scope='Upper bound is explicit; lower bound is the written all-independent-pools theorem, not finite extrapolation. Fixed actual M,T; final ledger evaluated once.')
+
+
 def main():
     small=[small_controls(2,2),small_controls(2,4)]
     small_tiles=[small_tile_controls(2,2),small_tile_controls(2,4)]
@@ -501,6 +534,7 @@ def main():
     relays=[cycle_relay_control(H) for H in range(2,82,2)]
     closed_chains=[closed_tile_chain_control(w) for w in range(6,106,2)]
     strip_obstructions=column_strip_obstruction_controls()
+    two_batches=[two_batch_repair_control(w) for w in range(6,106,2)]
     out=dict(status='PASS',exhaustive_small=small,random_actual_models=random_cases,
         exhaustive_product_tiles=small_tiles,
         random_actual_subset_surgeries=random_surgeries,product_tile_models=len(tile_rows),
@@ -510,6 +544,7 @@ def main():
         local_tile_classification=local_tile_controls(),cycle_relay_family_controls=relays,
         closed_tile_chain_controls=closed_chains,
         column_strip_obstruction=strip_obstructions,
+        two_batch_repair_controls=two_batches,
         positive_regional_cut_examples=[x for x in tile_rows if x['delta']>0],
         old_cycle_payment_witness=old_circle,
         scope='General port/flow/cost theorem, old-circle signed ledger, geometric product-tile cut identity and all-internal-M retention normalization are written proofs. Finite actual controls validate, not prove, arbitrary-size statements. No universal half-area or5/6 improvement.')

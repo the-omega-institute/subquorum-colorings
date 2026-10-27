@@ -1,0 +1,91 @@
+ACCEPTAudit marker: sahbi-any-independent-pool-obstruction-20261027I independently audited the enlarged statements in Sections 8–9 of    GENERAL_SQUARE_PORTS_AND_TILE_CUTS.md. I found no mathematical error or required revision. The all-even-width obstruction follows from the stated coordinate argument, including the forced continuation through every interior strip and selected-terminal termination at both ends.The requested checker passed. Its regenerated output agrees with the submitted JSON as a complete parsed object and byte for byte. I did not execute Lean.This verdict covers the new enlarged theorem, including Section 9. It is independent of the earlier general-port acceptance and does not serve as the result of the separate closed-cut-only follow-up.The accepted conclusions have the following precise quantifiers:Auxiliary classAccepted conclusionAll phases of the fixed aligned  $2\times2$  product tilingMinimum residual TT is exactly  $1$ .Every full auxiliary  $N$  confined to the specified  $4\times2$  column stripsEvery such  $N$  has at least one TT component; the minimum over this class is  $1$ .Every vertex-disjoint pool of  $N_0$ -alternating squaresThe minimum residual over subsets of that particular pool is exactly  $1$ , including for nonmaximal and empty pools.Unrestricted full auxiliary matchingsThe explicit Section 8 construction attains  $(TT,HH,TH)=(0,1,w)$ , with zero actual- $M$  cost on TH paths.1. The physical family and its boundary casesWrite  $w=2n$ , with  $n\ge3$ . The three displayed classes of actual matching edges have sizes
+$$2,\qquad n-1,\qquad n-2.$$
+They have disjoint endpoints and cover exactly the stated  $P$ , giving
+$$|M|=w-1,\qquad |P|=2w-2.$$
+The selected set consists of six special vertices and two interior classes of size  $n-3$ . Hence
+$$|T|=6+2(n-3)=w,
+\qquad
+|H|=4w-|P|-|T|=w+2.$$
+At  $w=6$ , both interior selected classes are empty. The six special selected vertices remain distinct, and all subsequent arguments still apply.The feasibility check is valid directly from the coordinates:The four boundary selections in rows zero and two each have exactly one occupied neighbour, toward the interior of their row.Each lower special selection,  $(3,1)$  or  $(3,w-2)$ , has its occupied neighbour immediately above.Each interior row-two selection has its unique occupied neighbour in row one.Each interior row-three selection has no occupied neighbour.The blank positions at the two transitions prevent additional selected adjacencies.The displayed  $P,M,T$  agrees with the attached prior    UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md. Its forced-edge elimination establishes uniqueness of the matching on  $P$ , and its guarded-pair cover establishes the fixed- $P$  bound  $|T|\le w$ . The present note correctly credits that physical construction and hole certificate as prior material. The all-phase and all-pool obstruction deductions are the additional statements audited here.2. Section 9: the forced strip continuation proves the all-width lower boundLet
+$$S_j=\{0,1,2,3\}\times\{2j,2j+1\},
+\qquad 0\le j<n,$$
+and let  $N$  be any full grid matching whose edges remain within these strips.Interior stripsFor  $1\le j\le n-2$ , denote the two top vertices and their lower neighbours by
+$$a_j=(0,2j),\quad b_j=(0,2j+1),\quad
+u_j=(1,2j),\quad v_j=(1,2j+1).$$
+Both top vertices are in  $P$ . Their actual  $M$ -edges go to neighbouring strips, while
+$$u_jv_j\in M.$$
+Within the strip, a top vertex has only two possible auxiliary neighbours: the other top vertex or the vertex directly below it. Therefore there are precisely two cases relevant to the external ports:The top pair is horizontal:  $a_jb_j\in N$ . This directly connects the two top ports.The top pair is not horizontal: both downward edges must occur,
+$$a_ju_j,\ b_jv_j\in N.$$
+The ports are then connected by
+$$a_j\xleftrightarrow{N}u_j
+\xleftrightarrow{M}v_j
+\xleftrightarrow{N}b_j.$$
+There is no mixed case: matching either top vertex horizontally necessarily matches both top vertices to each other.Thus every local perfect matching continues one external top  $M$ -port into the other. No assumption about the bottom-half labels or its matching phase is used. This is the essential all-size step; it does not depend on enumerating the five strip matchings.Left end stripThe sole external actual- $M$  port is  $(0,1)$ .If the top pair is horizontal in  $N$ , the port connects immediately to selected vertex  $(0,0)$ .Otherwise both top auxiliary edges are vertical, and the continuation from the port is
+$$(0,1)\xleftrightarrow{N}(1,1)
+\xleftrightarrow{M}(2,1).$$
+The next auxiliary edge cannot return to  $(1,1)$ : that vertex already has auxiliary mate  $(0,1)$ . Strip confinement excludes  $(2,2)$ . The only remaining possible auxiliary neighbours are
+$$(2,0),\qquad (3,1),$$
+and both are selected.Therefore the left external port always terminates at a selected terminal.Right end stripThe reflected argument applies to external port  $(0,w-2)$ . Its continuation terminates at one of
+$$(0,w-1),\qquad (2,w-1),\qquad (3,w-2),$$
+all selected.The endpoint colours also agree with the directed convention: the three possible left terminals are black, and the three possible right terminals are white.Concatenation produces an actual TT componentThe interstrip actual edges are exactly the successive top-row edges. Combining them with the forced interior continuations and the two end continuations produces one alternating path from a left selected terminal to a right selected terminal.This path cannot branch: every internal occupied vertex has its unique actual mate and unique auxiliary mate. It cannot close into a cycle: its strip sequence proceeds along the finite top chain, with terminal endpoints at its two ends. Different strips have disjoint vertex sets.Consequently,
+$$TT(M,N,T)\ge1$$
+for every strip-confined full auxiliary  $N$  and every even  $w\ge6$ .At  $w=6$ , there is exactly one interior strip, and its required row-one actual edge is present. No exceptional small-width argument is needed.3.  $N_0$  attains one, and the candidate-square characterization is exhaustiveExact counts at  $N_0$ For the all-horizontal auxiliary  $N_0$ , the components can be identified directly:ComponentsNumberTop-row TT path $1$ Side TH paths through the two vertical actual edges $2$ Single-edge TH components for the remaining selected vertices $w-4$ HH edges $2$ Retained row-one actual edges, as doubled  $P$ -only components $n-2$ The two HH edges are explicitly
+$$(2,w-4)(2,w-3),
+\qquad
+(3,2)(3,3).$$
+At  $w=6$ , they use the same column pair in different rows and remain distinct.Thus
+$$(TT,HH,TH)(N_0)=(1,2,w-2).$$
+Together with the preceding lower bound, this proves that the minimum over all strip-confined auxiliaries is exactly one.Every candidate square lies in one stripAn  $N_0$ -alternating square cannot use the vertical pair as its old phase, because  $N_0$  contains no vertical edge.Its horizontal old edges must start in an even column. Conversely, for every
+$$(r,2j),\qquad r\in\{0,1,2\},\quad 0\le j<n,$$
+the square with that upper-left corner has both horizontal edges in  $N_0$ .Therefore the complete candidate set is exactly
+$$\bigl\{(r,2j):r=0,1,2,\ 0\le j<n\bigr\}.$$
+Every candidate is contained in one strip. Flipping any subset of a vertex-disjoint candidate pool preserves strip confinement, and vertex-disjointness ensures that the resulting auxiliary remains a full matching.For any fixed pool  $\mathcal P$ ,
+$$TT(N_{\mathcal A})\ge1
+\qquad
+\text{for every }\mathcal A\subseteq\mathcal P.$$
+The empty subset retains  $N_0$ , whose residual is one. Hence
+$$\boxed{\min_{\mathcal A\subseteq\mathcal P}TT(N_{\mathcal A})=1}$$
+for every such pool.This establishes the claimed exact optimum, rather than only failure of full coverage.The maximal-pool catalogue is completeWithin a strip, the row-zero and row-two squares are disjoint. The row-one square intersects both. Thus the maximal independent local pools are exactly
+$$\{0,2\}\quad\text{and}\quad\{1\}.$$
+Different strips have disjoint supports, so every pool extends to a product of these choices. There are  $2^n$  maximal pools at width  $2n$ .This catalogue is correct, but the universal conclusion above does not depend on the finite catalogue checks: it already follows from strip confinement and the empty-subset upper attainment.4. Section 8: the closed tile chain has exact residual oneFor aligned tiles
+$$B_{a,j}=\{2a,2a+1\}\times\{2j,2j+1\},$$
+the nonisolated actual- $M$  tile component is exactly
+$$B_{1,0},B_{0,0},B_{0,1},\ldots,B_{0,n-1},B_{1,n-1}.$$
+There are  $n-1$  cross-tile top-row edges and two side vertical edges. They form a simple path with  $n+2$  vertices and  $n+1$  edges. Each interior upper tile also contains its row-one actual edge internally.The local values are:Tile type $t_v$  $p_v$  $i_v$  $k_v=4-2t_v-p_v$ Upper endpoint1200Upper interior0410Lower endpoint210 $-1$ Remaining lower tile $0,1,$  or  $2$ 00 $4-2t_v\ge0$ Thus precisely the two lower endpoint tiles are debts. Their connected component contains no positive reserve. All other tiles are isolated in the actual- $M$  tile graph.Therefore
+$$D=2,\qquad F_D=0,\qquad
+\delta_{\rm tile}=\frac{D-F_D}{2}=1.$$
+The displayed regional certificate is also exact. For the chain region  $U$ ,
+$$|T\cap R|=6,\qquad
+|M_{\rm int}(R)|=w-1,\qquad
+|U|=n+2,$$
+so
+$$|T\cap R|+|M_{\rm int}(R)|-2|U|
+=6+(w-1)-2(n+2)=1.$$
+There cannot be a larger debt-cut value: the whole board has only two debt tiles, while reserve and boundary contributions are nonnegative. Hence every numerator
+$$D(U)-K(U)-\partial_M(U)$$
+is at most  $2$ , and the displayed closed region attains  $2$ .There is also a direct physical check of the lower bound. The union  $R$  contains six selected vertices and four holes. No actual edge leaves it, and no product-tile auxiliary edge leaves it. Its terminal components therefore satisfy
+$$2\,TT_R+TH_R=6,\qquad
+2\,HH_R+TH_R=4,$$
+giving  $TT_R-HH_R=1$ . This forces at least one TT independently of the flow implementation. The already checked  $N_0$  supplies upper attainment.Finally, terminal conservation with  $|T|=w$  and  $|H|=w+2$  gives the stated optimal counts
+$$(TT,HH,TH)=(1,2,w-2).$$
+5. The unrestricted completion is full and has exactly the claimed costSection 8 explicitly completes the adjacent-hole payments to a full auxiliary matching. The partition argument is correct.Let
+$$F=\{(2,2),(2,w-3)\}.$$
+The displayed  $w$  direct  $T\!-\!H$  edges are pairwise vertex-disjoint and cover exactly  $Q\setminus F$ . Their hole endpoints are distinct and lie outside  $P\cup T$ .Retain all top-row and side vertical actual edges. These cover exactly the occupied vertices outside
+$$I=\{(1,c):2\le c\le w-3\}.$$
+The two added vertical edges match the holes in  $F$  to the two endpoints of  $I$ :
+$$(2,2)(1,2),\qquad
+(2,w-3)(1,w-3).$$
+The shifted horizontal edges
+$$(1,c)(1,c+1),\qquad c=3,5,\ldots,w-5,$$
+cover the remaining vertices of  $I$ .These edge classes have disjoint supports and cover every board vertex. Their counts are respectively
+$$w,\quad n+1,\quad 2,\quad n-3,$$
+which sum to  $2w$ , the required number of edges in a full matching of a  $4\times w$  board.At  $w=6$ , the shifted horizontal range is empty. The two extra vertical edges cover the entire remaining row-one interval, so the construction still works.Every selected vertex lies on a single auxiliary  $T\!-\!H$  edge. Consequently there are exactly  $w$  TH components, each with zero actual- $M$  cost, and no TT component.The retained actual edges form doubled  $P$ -only components under the tagged-copy convention. The remaining terminal component joins the two holes in  $F$ , alternating along the row-one interval. It is one HH path and contains all  $n-2$  row-one actual edges. Thus
+$$\boxed{(TT,HH,TH)=(0,1,w),\qquad |M\text{ on TH paths}|=0.}$$
+The HH path’s actual edges are accounted for; zero TH cost does not require those edges to disappear.This successful  $N$  crosses strip boundaries. For example, the direct payment
+$$(3,1)(3,2)$$
+already crosses from  $S_0$  to  $S_1$ . It is therefore fully consistent with the strip-confined obstruction.6. Execution and complete JSON comparisonI inspected   check_general_square_ports.py and the relevant matching, decomposition, and flow helpers.Before execution, I used a Python snippet with shutil.copyfile to preserve the submitted output/general-square-ports.json as audit_receipts/submitted-general-square-ports.json.FromPlain text/workspace/scratch/7d11997ce8db/stronger-column-strip-auditI executed exactly:Bashpython3 -B develop/check_general_square_ports.py > audit_receipts/general-square-ports.stdout.json 2> audit_receipts/general-square-ports.stderr.txtThe run used Python 3.12.14, exited with code 0, and produced empty stderr.I then executed a python3 -B - comparison snippet that:Parsed the complete preserved submission, regenerated output, and captured stdout with json.loads.Asserted equality of all three parsed objects.Asserted exact byte equality of the preserved and regenerated files.Checked that the preserved bytes equal the original JSON entry in the uploaded ZIP.Computed the SHA-256 digest and checked that stderr was empty.ComparisonResultComplete submitted/generated parsed JSONEqualComplete stdout/generated parsed JSONEqualSubmitted/generated bytesIdenticalPreserved submission/original ZIP entryIdenticalOutput size44,641 bytesStderr size0 bytesSHA-256 of both submitted and regenerated general-square-ports.json:Plain text6fa63bd1c6f4da213f983650615e165593271cb9bd4ae47b9d879be130ba661cThe new finite controls test the claimed objectsThe reproduced   general-square-ports.json includes:ControlReproduced scope and resultAll strip-confined auxiliaries $125+625+3125=3875$  actual auxiliaries at widths  $6,8,10$ ; every TT count is at least one, and each width has minimum one.Maximal independent pools $8+16+32+64+128+256=504$  pools at widths  $6,8,\ldots,16$ ; exact residual one for each.Closed tile chainsAll 50 even widths  $6,8,\ldots,104$ ; debt two, debt flow zero, residual one.Explicit unrestricted completionsAt each of those 50 widths, full matching validation and actual decomposition assert counts  $(0,1,w)$  and empty paid- $M$  set.Complete product-tile phase controls for the new familyWidths  $6,8,10$ , with residual minimum one.The 3,875 auxiliary controls use complete products of the five actual  $4\times2$  domino matchings and physically decompose each resulting matching. Their TT lower bound is not inferred from the coverage-flow computation.The 504 maximal-pool controls use the exact two-choice-per-strip catalogue. They compute the coverage optimum and physically replay its returned switches. They do not enumerate every switching subset at those widths, which the prose accurately discloses.For each unrestricted completion, mates(..., full=True) checks adjacency, endpoint disjointness, and full vertex coverage before decomposition. The complete counts are asserted during execution, even though the per-width JSON summaries record the completion more compactly.The checker also reproduced its bundled earlier controls, including the exhaustive  $2\times2$  and  $2\times4$  physical models, 140 larger random models, and 40 old-cycle relay sizes. I did not separately execute develop/check_contact_flow_cut.py in this audit.These are validation results. Acceptance of the universal width quantifier rests on the direct proofs above.7. Formal scope and remaining claimsI inspected GeneralSquarePorts.lean and its supplied execution receipt. It contains fifteen scoped theorem declarations covering local corner-label facts, conditional ledger and regional arithmetic, a positive-component implication, and arithmetic for unbounded old-cycle expense.They do not formalize:The  $4\times w$  coordinate family and its assembly.The strip-confined auxiliary obstruction.Interior top-port continuation or end-terminal termination.The exhaustive candidate-square characterization.The unrestricted full auxiliary completion.The physical adapter or global flow/min-cut equivalence.For example, debt_flow_deficit assumes an equality of the form
+$$2\delta+\mathrm{capacity}=\mathrm{debt}$$
+and derives arithmetic consequences. It does not establish that equality from the physical debt network.I ran neither Lean, lake, nor develop/check_general_square_formal.py. The submitted Lean receipt was inspected, not independently reproduced.The numerical and auxiliary-class boundaries are also correctly maintained:
+$$J=|M|+|T|=(w-1)+w
+=2w-1=\frac{\operatorname{area}}2-1.$$
+Thus the new obstruction leaves the numerical target intact, establishes no coefficient or  $5/6$  improvement, and supplies no arbitrary- $N$  counterexample. Successive overlapping batches are presented as a possible further route, with no repair construction asserted here.Required revisions: none.   GENERAL_SQUARE_PORTS_AND_TILE_CUTS.mdDocumentOpen file   UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.mdDocumentOpen filecheck_general_square_ports.pyCodeOpen filegeneral-square-ports.jsonCodeOpen file
