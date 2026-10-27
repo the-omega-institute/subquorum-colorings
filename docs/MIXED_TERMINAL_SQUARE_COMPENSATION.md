@@ -198,7 +198,8 @@ three adjacent holes {(1,0),(3,0),(3,2)}. One actual edge suffices:
     (3,3)--(3,2), (2,3)--(2,2).                         (5)
 
 The paths in (5) are vertex-disjoint. Therefore c_M=1, R_TH=1 and the penalty
-R_all-R_TH=1. The target numerical inequality is attained, not contradicted.
+R_all-R_TH=1. The unweighted half-area bound is attained: J=|V|/2. The weighted value is
+|T|+(5/6)|M|=|V|/2-1/3, so no weighted equality is claimed.
 
 There is also a nontrivial application of the square lemma on THIS board.
 Take a different full N_bad with these path components:
@@ -274,5 +275,7 @@ contains the stated conditional arithmetic only. The exhaustive checks contain
 eight strict terminal-penalty cases. No inadmissible core was found; this is not
 a general existence proof. The coordinate family is checked at 41 lengths.
 
-[Independent review is pending](../output/mixed-terminal-compensation-review.json);
-no mathematical acceptance is inferred from submission or local checks.
+[Independent written review ACCEPT](../output/mixed-terminal-compensation-review.json)
+covers this note and the all-k unbounded relay-cost note. The reviewer executed
+none of the Python or Lean commands; the recorded local controls remain separate.
+The review does not cover the subsequent ordered TH relay theorem.

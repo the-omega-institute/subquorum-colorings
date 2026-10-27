@@ -1,0 +1,678 @@
+{
+  "status": "PASS",
+  "small_matching_controls": {
+    "correct_order": 16,
+    "wrong_order": 16,
+    "feasible_among_these_tiny_matching_controls": 0,
+    "scope": "All partial M/full N/two-gate three-path relays on 2x4; feasibility not assumed for matching-only controls."
+  },
+  "contact_order_words": {
+    "correct_words": 8,
+    "failing_words": 502,
+    "scope": "Matching-only controls for all TH orientations at r1..8; flipped selections need not be sub-quorum feasible."
+  },
+  "actual_family_parameters": 80,
+  "smallest": {
+    "relays": 1,
+    "height": 4,
+    "T": 3,
+    "H": 9,
+    "M": 2,
+    "direct_TT_HH_square_edges": 0,
+    "specified_switches": 2,
+    "before": [
+      1,
+      4,
+      1
+    ],
+    "after": [
+      0,
+      3,
+      3
+    ],
+    "relay_paid_M": 2,
+    "incremental_paid_M": 1,
+    "optimal_unrestricted_payment_cost": 0,
+    "J": 5,
+    "half_area_margin": 3
+  },
+  "largest": {
+    "relays": 80,
+    "height": 162,
+    "T": 82,
+    "H": 404,
+    "M": 81,
+    "direct_TT_HH_square_edges": 0,
+    "specified_switches": 81,
+    "before": [
+      1,
+      162,
+      80
+    ],
+    "after": [
+      0,
+      161,
+      82
+    ],
+    "relay_paid_M": 81,
+    "incremental_paid_M": 1,
+    "optimal_unrestricted_payment_cost": 0,
+    "J": 163,
+    "half_area_margin": 161
+  },
+  "actual_disjoint_chain_packing_controls": 40,
+  "largest_packing": {
+    "chains": 8,
+    "intermediate_paths_each": 8,
+    "before": [
+      8,
+      270,
+      64
+    ],
+    "after": [
+      0,
+      262,
+      80
+    ],
+    "final_paid_M": 72,
+    "incremental_paid_M": 8
+  },
+  "feasible_wrong_order_obstruction": {
+    "height": 6,
+    "width": 12,
+    "feasible": true,
+    "M": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      [
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ],
+      [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ]
+      ]
+    ],
+    "N": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          8
+        ]
+      ],
+      [
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ]
+      ],
+      [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      [
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      [
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      [
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ]
+      ],
+      [
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ]
+      ],
+      [
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      [
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      [
+        [
+          3,
+          10
+        ],
+        [
+          4,
+          10
+        ]
+      ],
+      [
+        [
+          4,
+          0
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      [
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      [
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      [
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      [
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      [
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          10
+        ]
+      ]
+    ],
+    "T": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        10
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "original_paths": {
+      "TT": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "TH_from_T": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "HH": [
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "witness_squares": [
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        5
+      ]
+    ],
+    "gate_outgoing_incoming": [
+      4,
+      2
+    ],
+    "before": [
+      1,
+      26,
+      1
+    ],
+    "after": [
+      1,
+      26,
+      1
+    ],
+    "stranded_TT_endpoints": [
+      [
+        1,
+        1
+      ],
+      [
+        4,
+        3
+      ]
+    ],
+    "optimal_payment_cost": 0,
+    "J": 11,
+    "area": 72,
+    "failure_scope": "The two specified disjoint square switches with wrong TH port order; not all possible certificates or the numerical target."
+  },
+  "trust_boundary": "General iff port-order relay and component-disjoint chain packing are written proofs. Finite controls do not prove universal existence, optimality or a universal 5/6 improvement. The positive family deliberately has a cheaper zero-M payment, so no minimum relay-cost claim is made."
+}

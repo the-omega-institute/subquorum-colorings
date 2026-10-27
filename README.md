@@ -1,5 +1,19 @@
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
+New [ordered TH relay theorem](docs/ORDERED_TH_RELAY_COMPENSATION.md) extends
+fixed-M square compensation through arbitrarily many intermediate TH paths.
+With disjoint square supports, all paths become TH if and only if every
+intermediate path meets its outgoing contact before its incoming contact in
+T-to-H order. Incremental payment uses exactly the two original bad paths'
+M-resource sets; intermediate TH edges are rearranged once. Component-disjoint
+chains batch without sharing resources. A feasible 6-by-12 wrong-order witness
+leaves a TT after both disjoint switches, refuting the order-free rule rather
+than payment existence or the numerical target. An arbitrary-length actual
+family has no initial direct TT/HH square yet admits these relays, and separated
+copies give arbitrary chain packings. Eighty lengths, 40 packings, 32 tiny
+matching controls and seven scoped Lean resource/uniqueness kernels pass.
+General chain coverage and a universal 5/6 improvement remain open.
+
 New [mixed-terminal square compensation](docs/MIXED_TERMINAL_SQUARE_COMPENSATION.md)
 keeps the actual matching M fixed and switches only a full auxiliary certificate N.
 A matching of s original TT/HH component pairs with alternating-square witnesses
@@ -13,6 +27,9 @@ Checks cover 7,345 small-strip controls, 360,432 matching-pair controls,
 6,117 feasible balanced core selections and 41 family parameters. Seven scoped
 local Lean arithmetic declarations pass; decomposition, gluing, Hall and grid
 assembly remain written proofs. No universal 5/6 improvement is claimed.
+[Independent written review ACCEPT](output/mixed-terminal-compensation-review.json)
+covers this mixed-terminal result and the all-k relay-cost theorem below;
+it reports no Python or Lean execution.
 
 New [isolated-hole obstruction and actual-edge detours](docs/ISOLATED_HOLE_OBSTRUCTION_AND_MATCHING_DETOURS.md):
 on a 6-by-8q footprint, every feasible selection satisfies J<=area/2, sharply,
@@ -43,7 +60,9 @@ actual rematching per board pass; two further scoped Lean kernels verify the
 distance/cost deduction. The lower bound is geometric and holds at every k.
 Its [first separate review terminated with an infrastructure failure](output/unbounded-hole-relay-review.json):
 the broker exhausted three browser-input retries. No mathematical verdict
-was returned for this addendum; the accepted q-cell review remains separate.
+was returned for that first task. A fresh [written review ACCEPT](output/mixed-terminal-compensation-review.json)
+now covers this addendum; its execution scope and the earlier q-cell review
+remain separate.
 
 New [unique-matching hole-compensation barrier](docs/UNIQUE_MATCHING_HOLE_COMPENSATION_BARRIER.md):
 for every even w>=6, one explicit endpoint footprint on 4-by-w has a unique

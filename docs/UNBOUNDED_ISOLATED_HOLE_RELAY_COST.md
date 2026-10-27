@@ -172,3 +172,8 @@ terminated after three broker browser-input failures, with no mathematical
 verdict. The earlier q-cell ACCEPT does not cover this later theorem. The
 mathematical evidence here is the written all-k proof, local coordinate controls
 and two conditional Lean kernels; no acceptance is inferred from the failed task.
+
+A [fresh independent written review ACCEPT](../output/mixed-terminal-compensation-review.json)
+now covers the full all-k proof and its fractional exact-cover obstruction. It
+used text inspection only, with no independent Python or Lean execution. The
+failed first request above remains a separate historical record.

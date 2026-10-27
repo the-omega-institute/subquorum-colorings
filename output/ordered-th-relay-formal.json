@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "execution_location": "local",
+  "command": "cd formal && lean SubQuorum/OrderedTHRelay.lean",
+  "toolchain": "leanprover/lean4:v4.33.0",
+  "preflight": {
+    "active_lean_lake_by_comm_basename": [],
+    "memory_pressure": "The system has 17179869184 (1048576 pages with a page size of 16384).\n\nStats: \nPages free: 4138 \nPages purgeable: 2 \nPages purged: 268211349 \n\nSwap I/O:\nSwapins: 496159171 \nSwapouts: 512355129 \n\nPage Q counts:\nPages active: 149332 \nPages inactive: 146254 \nPages speculative: 2249 \nPages throttled: 0 \nPages wired down: 259765 \n\nCompressor Stats:\nPages used by compressor: 445202 \nPages decompressed: 7040524563 \nPages compressed: 7918011547 \n\nFile I/O:\nPageins: 8583276439 \nPageouts: 26469701 \n\nSystem-wide memory free percentage: 29%",
+    "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                     4010.\nPages active:                                 149364.\nPages inactive:                               146291.\nPages speculative:                              2252.\nPages throttled:                                   0.\nPages wired down:                             259765.\nPages purgeable:                                   2.\n\"Translation faults\":                    31593267092.\nPages copy-on-write:                      1508277365.\nPages zero filled:                       12323704784.\nPages reactivated:                        6876817767.\nPages purged:                              268211349.\nFile-backed pages:                             76889.\nAnonymous pages:                              221018.\nPages stored in compressor:                  3125989.\nPages occupied by compressor:                 445237.\nDecompressions:                           7040524631.\nCompressions:                             7918011547.\nPageins:                                  8583276442.\nPageouts:                                   26469701.\nSwapins:                                   496159211.\nSwapouts:                                  512355129."
+  },
+  "theorems": [
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.arm_rewire",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.context_rewire",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.surgery_perm",
+      "axioms": [
+        "propext"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.surgery_nodup",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.incremental_cost",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.batch_residuals",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "theorem": "SubQuorum.OrderedTHRelay.family_ledger",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "stdout": "'SubQuorum.OrderedTHRelay.arm_rewire' depends on axioms: [propext]\n'SubQuorum.OrderedTHRelay.context_rewire' depends on axioms: [propext]\n'SubQuorum.OrderedTHRelay.surgery_perm' depends on axioms: [propext]\n'SubQuorum.OrderedTHRelay.surgery_nodup' depends on axioms: [propext, Quot.sound]\n'SubQuorum.OrderedTHRelay.incremental_cost' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.OrderedTHRelay.batch_residuals' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SubQuorum.OrderedTHRelay.family_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Four-arm resource-list permutation with context; arbitrary finite ResourceSurgery preserves permutation and Nodup; conditional exact incremental cost, batch residual and family arithmetic.",
+  "not_formalized": "Actual grid path decomposition, adapter from physical edges to four arm lists, necessity/sufficiency of gate order, component-disjoint chain assembly and coordinate examples remain written. No end-to-end grid theorem."
+}
