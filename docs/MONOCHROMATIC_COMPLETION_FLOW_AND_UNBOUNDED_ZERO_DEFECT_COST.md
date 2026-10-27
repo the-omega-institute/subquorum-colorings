@@ -265,3 +265,9 @@ controls; for k=1..8, 24 complete flow computations and 16 whole-board
 matching tests check the claimed costs, sufficient-condition flags,
 zero-weight reachability and Hall defects. These are implementation checks
 with fixed integer weights, not exhaustive weight assignments.
+
+Independent Oracle review accepted source `1a580d1a4dfd2df557b29b908f0c7fe56aea7872` and
+executed the complete checker with assertions, reproducing the supplied
+report byte for byte. See [review receipt](../output/completion-flow-review.json).
+The later [arbitrary-rematching shortest-relay refinement](CORNER_RELAY_SHORTEST_PATH.md)
+has its own review scope; the original ACCEPT does not cover that addition.
