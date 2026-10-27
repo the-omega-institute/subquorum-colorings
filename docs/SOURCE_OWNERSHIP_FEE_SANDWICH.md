@@ -238,3 +238,10 @@ The unresolved general case is positive B with max(L,Lambda)<F_best. The interva
 makes that remaining ownership ambiguity explicit. It does not solve the
 full two-source TH optimization or provide a universal fee upper bound
 from scalar Hall defects.
+
+Independent review accepted source `51069e0a2e440f0e6b00ff181790d82f78374cf9`
+and executed both original checkers. The original source-ownership report
+hash equals the local report at `3a3092d`; the corner-relay report was
+reproduced byte for byte. See [core review](../output/source-ownership-core-review.json)
+and [scope receipt](../output/source-ownership-review.json). Later unequal-
+scale additions have a separate review scope.

@@ -1,0 +1,15 @@
+{
+  "verdict": "ACCEPT_CORE_UNEQUAL_REVIEW_PENDING",
+  "task_id": "a1e0f736-7898-4593-b272-f36a836fa6cc",
+  "conversation_id": "conv_25488b9d4a46b311",
+  "core_review": "source-ownership-core-review.json",
+  "core_source_commit": "51069e0a2e440f0e6b00ff181790d82f78374cf9",
+  "core_execution_scope": "Both original source-ownership and corner-relay checkers executed with assertions; source-ownership output equals local report at 3a3092d by SHA256, corner-relay supplied report reproduced byte for byte. No asymmetric family execution covered.",
+  "unequal_source_commit": "c78eed2ec7ff14e767edd2012a92b880a9954828",
+  "unequal_review_task": "fdc65561-b760-4d08-8d5d-62011991bba7",
+  "unequal_review_conversation": "conv_d8ff34ba4c153cfa",
+  "unequal_review_status": "dispatched_waiting_response",
+  "unequal_review_execution_requested": false,
+  "local_final_report_sha256": "081de35e4636847b1db2b10699233f80804b6c934f5877c01277e95bd683fd25",
+  "scope_description": "主体及此前最短路公式已独立ACCEPT（source 51069e0，任务a1e0f736-7898-4593-b272-f36a836fa6cc，会话conv_25488b9d4a46b311，观测gpt_6/pro）；审核实际执行两checker，原源归属报告与本地3a3092d版SHA256完全一致，角区报告逐字节一致。较强不对称族source c78eed2已另送任务fdc65561-b760-4d08-8d5d-62011991bba7、会话conv_d8ff34ba4c153cfa作一般证明/源码审核，当前待回，不登记为通过，也不声称该续审执行了代码。最终不对称报告已在本地完整验证；无Lean。"
+}

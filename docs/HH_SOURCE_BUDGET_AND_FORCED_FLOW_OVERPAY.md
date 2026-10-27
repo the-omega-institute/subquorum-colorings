@@ -251,3 +251,14 @@ unbounded. Thus tie-breaking cannot fix the rule, and no finite universal
 multiplicative approximation factor for TH follows from minimizing C.
 This strengthens the earlier unbounded objective-value overcharge, whose
 C-optimal matching was not necessarily forced to have poor TH fee.
+
+## 7. Independent review scope
+
+The general HH budget and equal-scale construction at source `51069e0`
+were independently ACCEPTED; the source-ownership checker was executed
+and its original JSON reproduced by SHA256. Section 6 was added later at
+`c78eed2` and has a separate live proof/source review, task
+`fdc65561-b760-4d08-8d5d-62011991bba7`. It is not covered by the earlier
+ACCEPT or independent execution. The final local checker including the
+unequal family passed. See the [scope receipt](../output/source-ownership-review.json)
+and [full original review](../output/source-ownership-core-review.json).
