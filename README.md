@@ -21,6 +21,11 @@ unmarked cell port subgraphs must satisfy Hall. All 70 balanced local bit
 profiles are checked against the five physical phases; exactly 44 lift.
 The criterion is existential over integral flows and retains intra-cell
 M loops; a failed test for one flow alone is not a global impossibility proof.
+Independent review [ACCEPT](output/macrocell-review.json) covers the general
+relaxation, capacity-respecting physical obstruction, amplification and sharp
+one/two-batch separation. The reviewer reproduced the submitted checker JSON
+in full and did not run Lean. The later local Hall criterion is under a
+separate follow-up review and is not included in that initial verdict.
 
 New [general physical ports and exact tile compensation](docs/GENERAL_SQUARE_PORTS_AND_TILE_CUTS.md):
 same-path cuts, cut original P-only cycles and retained M/N doubled edges

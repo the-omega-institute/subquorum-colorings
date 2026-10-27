@@ -1,0 +1,102 @@
+Verdict: ACCEPT, with the stated restrictionsI found no substantive mathematical error in the    macrocell note. The general complete-port relaxation formula is correct, the false physical certificate respects single-use capacities, and the amplification gives the claimed sharp separation—including  $n=3$  and  $q=1$ .The distinctions between the optimization problems are essential. On the specified  $8q\times w$  family, with  $q\ge1$  and even  $w\ge6$ , the correct conclusions are:Allowed auxiliary matching or operationMinimum residual TTComplete-port relaxation within the prescribed  $4\times2$  cells $0$ Physical domino matchings confined to those same cells $q$ One optimally chosen independent square batch from the all-horizontal  $N_0$  $1$ Two successive independent square batches from  $N_0$  $0$ , with zero final actual- $M$  paymentThus the unbounded gap is an additive gap between relaxed and physical cell-confined coverage. It is not an obstruction to unrestricted auxiliary matching, and it does not force increasing batch depth.I also ran the requested Python checker successfully. Its regenerated JSON agrees with the supplied JSON as a parsed object and byte for byte. I did not run Lean: no Lean executable was available here. The execution details and their limits appear below.1. The balanced-cell complete-port formula is correctWrite  $Q=V\setminus P=T\mathbin{\dot\cup}H$ , and let  $B_T$  denote the number of black selected terminals. For a full auxiliary matching  $N$ , orient its edges black-to-white and the actual matching  $M$  white-to-black, retaining the two tagged copies when  $M$  and  $N$  share an edge.Every occupied vertex then has indegree and outdegree one. The components are directed cycles and directed terminal paths from black  $Q$  to white  $Q$ . In particular, every TT component has exactly one black selected endpoint.The flow interpretation has both required directionsIf a routing has  $x$  TT components, exactly  $B_T-x$  black selected terminals terminate at white holes. Those terminal paths induce an integral flow of value  $B_T-x$  in the directed cell network. Actual matching edges retain their individual unit capacities, so this extraction does not merge or duplicate resources. Consequently, if  $F_{\max}$  is the maximum flow value,
+$$x\ge B_T-F_{\max}.$$
+Conversely, take a maximum integral flow. At each cell, its marked incoming ports are distinct black vertices: black selected source ports or black endpoints of used actual matching edges. Its marked outgoing ports are distinct white vertices: white-hole sink ports or white endpoints of used actual matching edges.Conservation gives equal numbers of marked black and marked white ports. Matchingness of  $M$ , together with disjointness of  $P,T,H$ , ensures that no physical vertex supplies two ports. Since the cell contains  $a_C$  vertices of each colour, one can:pair its marked black and marked white ports;pair its remaining black and remaining white ports.These pairings are available precisely because the relaxation permits every within-cell black-to-white bijection.A marked source path in the decoded matching cannot enter a directed cycle: its first entry would give a vertex two predecessors. It therefore reaches a marked white-hole sink. This produces at least  $F_{\max}$  black- $T$ -to-white- $H$  paths, and hence at most  $B_T-F_{\max}$  TT components. Together with the preceding lower bound,
+$$\min_{N\text{ relaxed}}\operatorname{TT}(M,N)
+=B_T-F_{\max}.$$
+This is the substantive lifting argument. It is valid for complete ports; its failure for physical  $4\times2$  domino matchings is exactly what the example exploits.The regional cut calculation is exactFor a cell set  $U$ , put  $R=R(U)$ . The corresponding source–sink cut has capacity
+$$B_T-B_T(R)+H_W(R)+M_{W\text{-out}}(R).$$
+Its deficiency from  $B_T$  is therefore
+$$B_T(R)-H_W(R)-M_{W\text{-out}}(R).$$
+The identities
+$$\sum_{C\in U}a_C
+=P_W(R)+T_W(R)+H_W(R)$$
+and
+$$P_W(R)
+=|M_{\mathrm{int}}(R)|+M_{W\text{-out}}(R)$$
+give
+$$B_T(R)-H_W(R)-M_{W\text{-out}}(R)
+=
+|T\cap R|+|M_{\mathrm{int}}(R)|
+-\sum_{C\in U}a_C.$$
+Thus equation (1) is correct:
+$$\boxed{
+\delta_{\mathrm{rel}}
+=
+\max_U\left(
+|T\cap R(U)|+|M_{\mathrm{int}}(R(U))|
+-\sum_{C\in U}a_C
+\right).
+}$$
+Several details are correctly handled: $M_{\mathrm{int}}(R)$  includes actual edges between different cells belonging to  $U$ .Disconnected sets  $U$  are included.Empty  $U$  gives zero.Internal actual matching edges are loops in the cell network and do not contribute to cut boundaries.Neither selected-degree feasibility nor a geometric shape assumption enters this calculation.Every physical cell-confined matching is a relaxed matching, so the physical lower bound follows immediately. If a balanced cell has no physical perfect matching, that lower-bound statement is vacuous for physical  $N$ ; the relaxed optimization still exists.Equations (2) and (3) preserve the stated capacitiesLet
+$$e(U)=E(U)-\sum_{C\in U}s_C,
+\qquad
+b(U)=\operatorname{boundary}_M(U).$$
+Using  $k_C=2s_C-d_C$  and
+$$\sum_{C\in U}d_C=2E(U)+b(U),$$
+one obtains
+$$\begin{aligned}
+2e(U)
+&=2E(U)-2\sum_{C\in U}s_C\\
+&=-\sum_{C\in U}k_C-b(U)\\
+&=D(U)-K(U)-b(U).
+\end{aligned}$$
+This proves (2). It also proves that each expression maximized on its right-hand side is even; the later division by two introduces no integrality problem.In the undirected debt-to-reserve network, the cut associated with  $U$  has capacity
+$$D-D(U)+K(U)+b(U).$$
+Hence
+$$D-F_D
+=\max_U\bigl(D(U)-K(U)-b(U)\bigr)
+=2\delta_{\mathrm{rel}},$$
+which proves
+$$\boxed{\delta_{\mathrm{rel}}=\frac{D-F_D}{2}.}$$
+Representing an undirected physical edge by two opposite unit arcs does not invalidate the single-use interpretation. Any simultaneous opposite flow can be cancelled on that same edge; circulations can then be removed. The remaining integral path decomposition uses each physical edge at most once, while sink capacities enforce the receiving reserves.The debt paths certify the scalar cut condition. Their role does not itself supply physical alternating paths or admissible local domino pairings. The note keeps that distinction intact.2. The  $4\times w$  false certificate is valid, including  $n=3$ The coordinate construction and forced-port theorem are inherited results, but their use here checks out.Matchingness, terminal counts, and feasibilityWith  $w=2n$ , the three clauses defining  $M$  contain
+$$n-1,\qquad n-2,\qquad 2$$
+edges respectively. They are disjoint, so
+$$|M|=(n-1)+(n-2)+2=2n-1=w-1.$$
+Each of the two additional selected-vertex ranges has  $n-3$  elements. Consequently,
+$$|T|=6+2(n-3)=w.$$
+For  $n=3$ , both ranges are empty; the six special selected vertices are the entire selection.The selected-degree condition holds at the transitions as well as in the interior:Each special selected vertex has its stated unique occupied neighbour and no selected neighbour.An additional row-two selected vertex has its occupied neighbour immediately above; its other neighbours are holes.An additional row-three selected vertex has only hole neighbours.The strict endpoints in the two extra ranges prevent additional adjacency near the special selections.The coarse certificate uses distinct resourcesThe cross-cell actual- $M$  graph is the path
+$$C_0-C_1-\cdots-C_{n-1}.$$
+The endpoint cells have
+$$(t,p,i)=(3,3,1),\qquad s=0,\qquad k=-1.$$
+Thus there are exactly two units of debt.The interior values are correctly separated into the small and general cases:CaseInterior cell dataReserve  $k$  $n=3$ The unique interior cell has  $(t,p,i)=(0,4,1)$  $4$  $n\ge4$ , cells  $1,n-2$  $(t,p,i)=(1,4,1)$  $2$ Other interior cells $(t,p,i)=(2,4,1)$  $0$ For  $n=3$ , the two payments use
+$$C_0C_1,\qquad C_2C_1,$$
+which are different actual matching edges. They deliver two units to a cell with reserve four. For  $n\ge4$ , the receiving cells are distinct and each receives one unit against reserve two.Therefore
+$$F_D=D=2,\qquad \delta_{\mathrm{rel}}=0.$$
+Through the proved equivalence, this establishes every coarse regional inequality, including disconnected regions. It is not merely a check of a few selected cuts.The physical lower bound is an actual forced TT pathFor an interior  $4\times2$  strip, its two top vertices have only two possibilities under a cell-confined domino matching:they are matched horizontally to each other;both are matched downward.In the second case the internal row-one actual matching edge joins the downward branches. Thus, in every local domino state, the two external top ports are connected either by one  $N$ -edge or by an  $N$ - $M$ - $N$  path.At the left endpoint, the external port is  $(0,1)$ . Its  $N$ -edge either goes to selected  $(0,0)$ , or goes down to  $(1,1)$ . In the latter case, the actual matching continues to  $(2,1)$ . That vertex cannot be  $N$ -matched back to  $(1,1)$ , which already has its mate. Its remaining within-cell neighbours are exactly
+$$(2,0),\qquad (3,1),$$
+both selected. The right endpoint is the reflected argument.Concatenating these forced connections gives a genuine alternating TT component across the band. There is no choice involving the lower reserve that can divert this path. This proves the lower bound for all five local domino states, without relying on their enumeration.The all-horizontal matching attains exactly one TT. Its top row supplies that component; the side detours are TH, the internal row-one actual edges are retained cycles, and the remaining lower paths introduce no additional TT. Its terminal counts are
+$$(TT,HH,TH)=(1,2,w-2).$$
+Hence
+$$\boxed{\delta_{\mathrm{physical}}=1,\qquad
+\delta_{\mathrm{rel}}=0.}$$
+This argument works unchanged at  $w=6$ .3. The stacked physical gap is unbounded in exactly the claimed senseFor the  $8q\times w$  construction, the four empty rows between successive active bands prevent new selected-neighbour violations. The uniform  $4\times2$  partition is aligned so that every active band and every separator band is a union of cells.The two compensating flows in different active bands use disjoint actual edges and separate receiving cells. Empty cells have reserve eight but no incident actual matching edges; the certificate does not depend on reaching or reusing that isolated reserve. Thus
+$$\delta_{\mathrm{rel}}=0$$
+for the whole board.Under the prescribed cell confinement, no auxiliary edge leaves its cell, and no actual matching edge leaves its active band. Each band’s forced TT therefore belongs to a distinct component. Empty cells contain only holes and contribute only HH components. All-horizontal  $N$  attains the resulting lower bound:
+$$\boxed{
+\delta_{\mathrm{physical}}=q,\qquad
+\delta_{\mathrm{physical}}-\delta_{\mathrm{rel}}=q.
+}$$
+The connectedness assertion is accurate with its stated meaning: the ambient rectangular grid is connected. The actual- $M$  cell graph used in the amplification is a disjoint union of active paths and isolated empty cells. The note does not establish an unbounded gap with that routing graph connected, and does not need that stronger property for its claim.The population calculation is also correct:
+$$|M|+|T|=q(2w-1)<4qw=\frac{|V|}{2}.$$
+Moreover, the inherited full completion in each active band, combined with horizontal matching in the separator rows, gives unrestricted coverage with zero actual- $M$  payment. The family therefore has the advertised methodological scope; it supplies no counterexample to the numerical target.4. The one-batch/two-batch separation is sharpThis is the part where the restrictions on the baseline and on a batch matter most.Every single batch leaves at least one TTAt the all-horizontal baseline  $N_0$ , an alternating square must have an even upper-left column. Its two old edges are horizontal pairs starting in even columns.Flipping any vertex-disjoint collection of such squares therefore leaves every auxiliary edge inside a global two-column strip
+$$\{0,\ldots,8q-1\}\times\{2j,2j+1\}.$$
+Unlike fixed macrocell confinement, this permits vertical edges across active-band boundaries.The note correctly proves that this weaker restriction still traps the first band’s TT:Row zero has no vertices above it, so the top-port dichotomy remains valid.The interior row-one  $M$ -edges still connect the two downward top branches.At either end, the forced continuation reaches a selected vertex in rows zero, two, or three before any choice below the active band can affect it.In particular, allowing a different auxiliary edge across rows three and four elsewhere does not provide an escape for this forced path. Therefore every single independent batch from  $N_0$  leaves at least one TT.A single batch can reduce the residual to exactly oneFor each  $k=1,\ldots,q-1$ , the square with upper-left corner
+$$(8k-1,2)$$
+contains two old horizontal  $N_0$ -edges:its upper edge is an N-only HH component in the separator;its lower edge lies on the next active band’s top-row TT component.Flipping that square replaces one TT and one HH by two TH components. Different values of  $k$  give vertex-disjoint squares and affect different original TT and HH components. Hence the  $q-1$  flips remove precisely the TT components in the later bands, leaving the first:
+$$\boxed{
+\min_{\text{one independent batch from }N_0}\operatorname{TT}=1.
+}$$
+The chosen columns  $2,3$  exist already at  $w=6$ . At  $q=1$ , the collection of these flips is empty, and  $N_0$  itself already attains the upper bound one.This is a minimum over the choice of a batch. It does not claim that every batch attains one.Two batches give zero residual and zero final paymentThe inherited two-stage pattern applies to the entire rectangle.First flip every square with upper-left coordinates
+$$r=0,2,\ldots,8q-2,\qquad c=0,2,\ldots,w-2.$$
+These squares partition the board and produce the vertical matching on consecutive row pairs.Then flip every square with
+$$r=0,2,\ldots,8q-2,\qquad c=1,3,\ldots,w-3.$$
+These squares are pairwise vertex-disjoint within the second batch and are alternating in the intermediate state.The resulting matching has odd-starting horizontal pairs in every row and vertical pairs in the two boundary columns. In each active band:the selected boundary vertices in rows zero and two go downward to holes;the two special row-three selections go inward to holes;the remaining row-two selections go right to holes;the remaining row-three selections go left to holes.The selection ranges guarantee that all targets are holes, and full matchingness guarantees that they are distinct. Every selected vertex therefore belongs to a direct  $T$ - $H$  auxiliary edge. No actual  $M$ -edge is on a TH payment path.Both batches separately have disjoint supports; their supports may overlap between stages. The first-band lower bound excludes success in one batch, so the necessary and sufficient depth is exactly two.For the joint smallest case  $q=1,w=6$ , the six direct final pairings are
+$$\begin{aligned}
+(0,0)&\leftrightarrow(1,0),&
+(0,5)&\leftrightarrow(1,5),\\
+(2,0)&\leftrightarrow(3,0),&
+(2,5)&\leftrightarrow(3,5),\\
+(3,1)&\leftrightarrow(3,2),&
+(3,4)&\leftrightarrow(3,3).
+\end{aligned}$$
+All six partners are distinct holes. There is no small-width exception hidden in the empty interior-selection ranges.5. Attribution and formal scopeThe distinction from the inherited work is correctly drawn. In the attached    general-square note:Sections 8–9 already contain the  $4\times w$  construction, the fixed-tiling obstruction, and the stronger all-five-state forced-port argument.Section 10 already contains the sharp two-batch repair of the single-band family and its actual-resource ledger.The present note’s contribution is the general balanced-cell relaxation interpretation, the explicit capacity-respecting certificate that fails to lift physically, and the stacked amplification together with its exact one-batch optimum. The physical  $4\times w$  construction itself is appropriately credited.The Lean scope is also represented accurately. The supplied source contains three local neighbour lemmas and two consequences for legal involutive mate maps on a  $4\times2$  strip. Those local statements support the forced-port reasoning. They do not formalize the global flow theorem, the all-width concatenation, the coordinate embedding, stacking, or the batch-depth theorem.There are two small editorial improvements worth making, neither of which changes the verdict:Define  $Q=T\cup H$  when  $Q$  first appears in Section 1.Say explicitly “take a maximum integral flow of value  $F$ ” before concluding  $\min TT=B_T-F$ . For an arbitrary flow, the construction first gives only the corresponding upper bound; maximizing supplies equality.6. What actually ranIn the extracted review directory, I ran exactly:Bashpython3 -B develop/check_macrocell_obstruction.pyIt exited successfully with status PASS. The reported coverage was:CheckReported countConstructed family instances86Local  $4\times2$  domino states5Enumerated regional cuts5,440Enumerated active-cell auxiliary matchings19,500The exhaustive active-cell controls were: $q$  $w$ Auxiliary matchings enumeratedExact minimum TT16 $5^3=125$ 118 $5^4=625$ 1110 $5^5=3{,}125$ 126 $5^6=15{,}625$ 2I compared the regenerated output/macrocell-obstruction.json against the supplied member read directly from the original ZIP. Both comparisons returned true:parsed JSON equality;byte equality.The smallest recorded case  $q=1,w=6$  reports two debt units, two units of debt flow, two distinct single-use certificate edges, relaxed residual zero, physical macrocell residual one, one-batch residual one, and two-batch residual zero. Its payment counts across the prescribed two-stage construction are  $2\to0\to0$ .These finite checks corroborate the constructions and adapters. They do not replace the quantified proofs, and the reported physical minimum for every larger family instance should not be mistaken for exhaustive enumeration at that size.Lean was not executed in this audit. I inspected the source and supplied receipt; neither lean nor lake was available in the environment, and the ZIP did not include a formal/lean-toolchain file. The supplied Lean receipt remains a supplied execution record.Final assessment: accept the complete-port/min-cut theorem, its single-use debt-flow reformulation, the unbounded additive physical gap under the prescribed macrocell restriction, and the sharp one-batch/two-batch separation from the all-horizontal baseline. The numerical  $5/6$  problem and universal successive-batch coverage remain open, exactly as the note states.   CAPACITY_PRESERVING_MACROCELL_OBSTRUCTION.mdDocumentOpen file   GENERAL_SQUARE_PORTS_AND_TILE_CUTS.mdDocumentOpen file

@@ -17,7 +17,7 @@ not a counterexample to the numerical 5/6 target.
 ## 1. What a scalar balanced-cell model actually computes
 
 Let M be a partial matching of a finite bipartite grid, with occupied set P,
-selected terminals T outside P, and holes H=V\(P union T). Partition the board
+unoccupied set Q=V\P, selected terminals T in Q, and holes H=Q\T. Partition the board
 into cells C, each with a_C black and a_C white vertices. Restrict the auxiliary
 full matching N to edges within cells. For U a set of cells let R(U) be its
 union, and let M_int(R) include every actual M edge with both endpoints in R,
@@ -39,7 +39,7 @@ black T and a unit sink arc for each white H. An actual M edge gives one arc
 from its white endpoint's cell to its black endpoint's cell; intra-cell edges
 are loops. An N routing with x TT components supplies a flow of value B_T-x.
 
-Conversely an integral flow of value F marks incoming and outgoing ports at
+Conversely a maximum integral flow of value F marks incoming and outgoing ports at
 each cell in equal numbers. Pair marked black and white ports, and then pair
 unmarked ports. Arbitrary bijections are available in the relaxation, so this
 is a full relaxed N. Marked source paths reach white H, since a terminal path
