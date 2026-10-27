@@ -1,11 +1,26 @@
 {
-  "status": "dispatched",
+  "status": "completed",
   "task_id": "0ea1861b-7c07-4f16-8149-7f7e23d8ce89",
   "conversation_id": "conv_895dc18757c51621",
   "exact_prompt_identity_verified": true,
   "submitted_source_commit": "9e4c2b04691c4b7e74b77234fce99870fd14427a",
   "scope": "Unrestricted four-label lexicographic TT/TH model, joint packed frontier, witness reconstruction, complexity and submitted validation.",
-  "mathematical_verdict": null,
-  "independent_execution": null,
+  "verdict": "REVISE",
+  "mathematical_verdict": "New unrestricted theorem, implementation and stated complexity pass; qualify the older cell-confined w/2 comparison by unit actual-edge weights.",
+  "observed_model_switcher": "gpt_6",
+  "observed_model_effort": "pro",
+  "required_correction": "Unit actual-edge weights for relocated cell-confined cost w/2. Unrestricted optimum remains (0,0) for arbitrary nonnegative weights.",
+  "revision_status": "Required qualification and two minor wording improvements applied; no solver or checker changes.",
+  "response": "docs/reviews/2026-10-27-joint-frontier-independent-review.txt",
+  "independent_execution": {
+    "checker": "python3 -B develop/check_joint_frontier_compensation.py",
+    "exit_code": 0,
+    "assertions_enabled": true,
+    "parsed_json_equal": true,
+    "bytes_equal": true,
+    "output_bytes": 16788,
+    "additional_probe": "Relocated 4x6 family uniform actual weights 0,1,2 has cell fees 0,3,6, unrestricted (a,f)=(0,0) in all cases.",
+    "lean_executed": false
+  },
   "lean_scope": "No new Lean formalization claimed."
 }

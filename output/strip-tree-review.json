@@ -28,14 +28,18 @@
     "Describe Lean scope as word grammar, normalization and recognizer."
   ],
   "response": "docs/reviews/2026-10-27-strip-tree-initial-review.txt",
-  "revision_status": "Integer and linear-traversal corrections locally validated and pushed at 965d7754dda1299132a2e741ece44124c77b6b2c; same-conversation follow-up pending.",
+  "revision_status": "Integer and linear-traversal corrections locally validated and pushed at 965d7754dda1299132a2e741ece44124c77b6b2c; original same-conversation repair follow-up terminated with infrastructure_retry_exhausted, not a mathematical verdict. Later bridge-block ACCEPT independently inspected the shared helpers in its own scope.",
   "followup": {
     "task_id": "fb49a5d6-4501-472c-b9f4-c4e09a3bbf54",
     "conversation_id": "conv_114a15870b1dd1fd",
-    "status": "dispatched",
-    "last_phase": "typing",
+    "status": "failed",
+    "last_phase": "infrastructure_retry_exhausted",
     "exact_prompt_identity_verified": true,
     "submitted_source_commit": "965d7754dda1299132a2e741ece44124c77b6b2c",
-    "scope": "Repairs only; excludes subsequent bridge-block theorem and rank barrier."
+    "scope": "Repairs only; excludes subsequent bridge-block theorem and rank barrier.",
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "retry_count": 3,
+    "terminal_observed_at": "2026-10-27T06:31:47.788121+00:00"
   }
 }

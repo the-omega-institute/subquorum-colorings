@@ -193,15 +193,16 @@ exception, never returns a truncated approximate optimum.
 
 The earlier 4-by-w closed-chain selection has no complete covering in its
 specified two-column cells, but unrestricted N attains (a,f)=(0,0).
-For its relocated selection, cell-confined covering costs exactly w/2,
-whereas unrestricted N again attains (0,0). The existing two-batch explicit
+With unit actual-edge weights, its relocated selection has cell-confined
+covering cost exactly w/2, whereas unrestricted N attains (0,0) for every
+nonnegative weighting. The existing two-batch explicit
 N proves the upper bounds for every width; nonnegativity proves the fee
 lower bounds. The new algorithm recovers these exact unrestricted optima
 without receiving those two-batch witnesses.
 
 The 2-by-2n half-area double-edge chain has one bridgeless cell block of
-rank n-1. The global-feedback and bridge-block algorithms would condition
-exponentially many edges, but this joint transfer has frontier height two
+rank n-1. The global-feedback and bridge-block algorithms would enumerate
+3^(n-1) label assignments to n-1 feedback edges, but this joint transfer has frontier height two
 and at most 64 states, uniformly in n. Its explicit all-vertical witness
 proves (a,f)=(0,0) for all n; the implementation tests up to n=256. This
 shows exactly how a joint separator handles the prior rank obstacle.
@@ -212,7 +213,8 @@ selected, T is feasible but |T|=4, |H|=2. Hence a>=1, and a full N with
 one TT and two TH components attains (a,f)=(1,0). Complete coverage is
 impossible for a numerical endpoint-count reason, not a local lifting error.
 
-For general N the invariant
+For general N, let b count HH paths, t count TH paths, and J=|M|+|T|.
+The invariant
 
     |T|=2a+t, |H|=2b+t, J=|V|/2-(b-a)
 
