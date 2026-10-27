@@ -3,7 +3,8 @@ from pathlib import Path
 import json
 import random
 
-from bridge_block_compensation import solve_bridge_blocks
+from bridge_block_compensation import solve_bridge_blocks, bridge_partition
+from strip_tree_compensation import physical_state_linear
 from check_strip_tree_compensation import auxiliaries, partial_matchings, compare, rank
 from check_general_square_ports import edge, grid, selected_feasible
 
@@ -113,6 +114,37 @@ def positive_bridge_control():
     return rows
 
 
+def bridgeless_rank_barrier(n):
+    # All-n physical obstruction to a bounded-rank inference from feasibility
+    # or half-area equality. Do NOT run exponential conditioning at large n.
+    w = 2*n; board = grid(2, w)
+    m = {edge((r, c), (r, c+1)) for r in range(2) for c in range(1, w-1, 2)}
+    t = {(0, 0), (0, w-1)}; p = {v for e in m for v in e}
+    assert selected_feasible(p, t) and len(m)+len(t) == len(board)//2
+    auxiliary = {edge((0, c), (1, c)) for c in range(w)}
+    state = physical_state_linear(board, m, auxiliary, t)
+    assert state['data']['counts'] == (0, 0, 2) and state['free'] == m
+    cells = list(range(n)); adj = {c: [] for c in cells}
+    for e in m:
+        a, b = e; ca, cb = a[1]//2, b[1]//2
+        adj[ca].append((cb, e, a, b)); adj[cb].append((ca, e, b, a))
+    bridges, _, blocks = bridge_partition(cells, adj)
+    assert not bridges and len(blocks) == 1
+    assert len(m)-n+1 == n-1
+    if n <= 4:
+        result = solve_bridge_blocks(2, w, m, t, 2)
+        assert result['cost'] == 0 and result['max_block_cycle_rank'] == n-1
+    if n > 2:
+        try:
+            solve_bridge_blocks(2, w, m, t, 2, max_block_rank=1)
+        except ValueError:
+            pass
+        else:
+            raise AssertionError('Adjacent rank-one cycles share cells and form one bridge block')
+    return dict(cells=n, vertices=4*n, global_and_block_rank=n-1, bridges=0,
+                exact_half_area=True, explicit_zero_fee=True)
+
+
 def main():
     small = exhaustive(); randoms = random_controls()
     chains = [cycle_chain(q) for q in [1, 2, 4, 16, 64, 256]]
@@ -120,6 +152,8 @@ def main():
                random_controls=randoms, connected_cycle_chains=chains,
                integer_and_parallel_controls=integer_control(),
                positive_bridge_controls=positive_bridge_control(),
+               post_submission_bridgeless_rank_barrier=[bridgeless_rank_barrier(n)
+                   for n in [2, 3, 4, 8, 32, 256]],
                scope='Exact same-colour physical strip fee via bridge-block messages; exponential only in each local block rank, with global normalization.',
                trust_boundary='All-size proof and complexity bound are written; finite matching enumerations and chain controls test the implementation. No new Lean declaration or universal 5/6 improvement.')
     (ROOT/'output/bridge-block-compensation.json').write_text(json.dumps(out, indent=2)+'\n')

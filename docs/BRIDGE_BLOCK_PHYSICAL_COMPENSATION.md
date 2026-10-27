@@ -203,8 +203,44 @@ review does not cover this new theorem or implementation.
 
 This result removes the need for small TOTAL cycle rank when the rank is
 distributed across actual bridge blocks. It does not promise that an
-arbitrary feasible T has a covering within these cells, bound the rank of
-every grid instance, or improve the universal 5/6 coefficient. The next
-geometric question is whether residual mixed/occupied-band configurations
-admit low-rank bridge blocks, or whether a high-rank bridgeless core is an
-essential remaining obstruction. No new Lean formalization is claimed.
+arbitrary feasible T has a covering within these cells or improve the
+universal 5/6 coefficient. No new Lean formalization is claimed.
+
+## 8. An all-size obstacle to a universal block-rank assumption
+
+The following additional deduction was added AFTER the initial bridge-block
+review snapshot. It is not covered by an opinion on that earlier snapshot.
+
+For n>=2 take a 2-by-2n board, two-column full-height cells, and
+
+    M = {(r,2j+1)--(r,2j+2): r=0,1; j=0,...,n-2},
+    T = {(0,0),(0,2n-1)}.
+
+The actual edges are disjoint. Each selected point has exactly one P
+neighbour and no selected neighbour, so the original feasibility condition
+holds. There are 2n-2 actual M edges and two selected points; consequently
+J=2n=|V|/2 exactly.
+
+The cell multigraph is a chain on n vertices with TWO parallel actual
+edges at each link. Every link pair lies on a two-edge multigraph cycle,
+so there is no bridge. The whole graph is one bridge block with
+
+    k_B = 2(n-1)-n+1 = n-1.
+
+Thus feasible T, fixed height, and even exact half-area equality together
+do not bound the largest bridge-block rank. This conclusion follows for
+all n from the explicit multigraph; it is not inferred from the finite
+controls.
+
+Nevertheless N consisting of every vertical rung gives zero TH fee:
+the two outer columns are direct TH paths and each pair of parallel M
+edges forms a free P-only four-cycle. All actual M edges are free, once
+each. Hence this is an obstruction to the proposed universal RANK BOUND,
+not to coverage, zero-fee compensation or the numerical target.
+
+Adjacent two-edge cycles share a cell, so splitting at articulation cells
+and assigning them independent scalar credit is not licensed by the
+bridge theorem. Any extension across such a cell must preserve its joint
+physical port relation. The next step is therefore a stronger separator
+model with explicit boundary-colour tuples, rather than attempting to
+deduce a universal bounded bridge-block rank from feasibility.

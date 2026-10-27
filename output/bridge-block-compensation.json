@@ -951,6 +951,56 @@
       "bridges": 2
     }
   ],
+  "post_submission_bridgeless_rank_barrier": [
+    {
+      "cells": 2,
+      "vertices": 8,
+      "global_and_block_rank": 1,
+      "bridges": 0,
+      "exact_half_area": true,
+      "explicit_zero_fee": true
+    },
+    {
+      "cells": 3,
+      "vertices": 12,
+      "global_and_block_rank": 2,
+      "bridges": 0,
+      "exact_half_area": true,
+      "explicit_zero_fee": true
+    },
+    {
+      "cells": 4,
+      "vertices": 16,
+      "global_and_block_rank": 3,
+      "bridges": 0,
+      "exact_half_area": true,
+      "explicit_zero_fee": true
+    },
+    {
+      "cells": 8,
+      "vertices": 32,
+      "global_and_block_rank": 7,
+      "bridges": 0,
+      "exact_half_area": true,
+      "explicit_zero_fee": true
+    },
+    {
+      "cells": 32,
+      "vertices": 128,
+      "global_and_block_rank": 31,
+      "bridges": 0,
+      "exact_half_area": true,
+      "explicit_zero_fee": true
+    },
+    {
+      "cells": 256,
+      "vertices": 1024,
+      "global_and_block_rank": 255,
+      "bridges": 0,
+      "exact_half_area": true,
+      "explicit_zero_fee": true
+    }
+  ],
   "scope": "Exact same-colour physical strip fee via bridge-block messages; exponential only in each local block rank, with global normalization.",
   "trust_boundary": "All-size proof and complexity bound are written; finite matching enumerations and chain controls test the implementation. No new Lean declaration or universal 5/6 improvement."
 }
