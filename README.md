@@ -1,5 +1,14 @@
 # Current continuation
 
+The [bipartite partial-ear obstruction](docs/BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md)
+closes the exact-addition question even with one attached square: a
+connected25-vertex bipartite example has residual SF_2=11 and full
+SF_2=14, exceeding the proposed13. The all-q family has residual
+`SF_2=max(5q+1,6q-1)` and full `SF_2=6q+2`. Its adjacent selected ear
+pair is internally active, so that extra condition does not repair
+the formula. A full literal check of both the21- and25-vertex examples
+agrees with the general proof.
+
 The [four-parameter ear-ladder family](docs/EAR_LADDER_FOUR_PARAMETERS.md)
 has, for every r>=1, order16r and exact values
 `beta_2=sf_2=SF_2=8r < psi_sq=Omega=9r`.

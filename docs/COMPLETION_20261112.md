@@ -1,5 +1,33 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Bipartiteness does not rescue exact partial-ear addition
+
+The [bipartite obstruction note](BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md)
+gives exact connected families F_q,G_q, q>=1, with
+
+    |V(F_q)|=10q+1, |V(G_q)|=10q+5,
+    SF_2(F_q)=max(5q+1,6q-1), SF_2(G_q)=6q+2.
+
+G_q is obtained by adding roots d,e with de,dy and attaching just one
+square along de. Thus deleting the roots gives exactly F_q. For q>=2
+the full SF exceeds2+SF(F_q) by one. Disjoint unions give an additive
+error k with k ears, within bipartite graphs. The q=2 graph is connected,
+has maximum degree five and exact SF=14, while the residual21-vertex
+graph has SF=11. The violating selected pair in the ear is adjacent
+and internally active; formation of the exterior y, rather than
+root activity from the residual selection, permits the extra vertex.
+
+The original Oracle research supplied the25-vertex lower witness and
+the residual upper proof. The local reconstruction proves the all-q
+local caps with an exterior attached through y, both residual attaining
+sets, and the additional exact whole-graph upper bound6q+2. The literal
+C++ checker enumerates all2097152 residual and33554432 whole-graph
+subsets, including every single deletion, giving beta/SF=11/11 and13/14.
+Named-vertex certificates pass3314 deletions and1180 specified witnesses
+over16 models through q128. The complete new proof and both unchanged
+checkers are being independently reviewed; acceptance is not inferred
+from the original research answer or the earlier ear-ladder audit.
+
 ## Four exact parameters on two-connected outerplanar median graphs
 
 The [ear-ladder family](EAR_LADDER_FOUR_PARAMETERS.md) gives, for every
@@ -370,6 +398,7 @@ retain their existing ACCEPT, scoped to their original input.
 | SF_2=beta_2 for all finite median graphs | False; the bounded-degree connected family above has linear gap |
 | SF_2=beta_2 for two-connected subcubic median graphs | Proved, using the cited ladder/cube classification and the prism theorem |
 | Exact SF addition for arbitrary partial square or pendant-path attachments | False; explicit all-m families have additive error m-4 |
+| Exact SF addition for partial square attachments to bipartite bases | False even for one ear; exact25-vertex obstruction and all-q family |
 | Full root coverage by square or pendant-path attachments | Complete minimal-set classification and exact beta_2=sf_2=SF_2 |
 | SF_2=beta_2 for two-connected planar median graphs of maximum degree four | Open; cube chains and full-coverage ear classes proved |
 | SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |

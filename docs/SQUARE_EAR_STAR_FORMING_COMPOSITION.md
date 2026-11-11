@@ -119,6 +119,10 @@ per square is minimal forming in G. The choices are distinct and number
 For partial matchings the tempting identity SF_2(G)=2k+SF_2(F) is false,
 with an unbounded additive error. The counterexample in Section 4 gives
 exact values, including an upper proof and all deletion witnesses.
+The [bipartite obstruction](BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md) also
+refutes the identity for a bipartite base with just k=1, even when its
+selected ear pair is adjacent and internally active. This separately
+closes the bipartite restriction left by the clique example below.
 
 ## 4. Exact obstruction to the partial-matching formula
 
