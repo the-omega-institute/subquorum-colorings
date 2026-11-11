@@ -47,6 +47,15 @@ retaining the old row edge. Call the resulting square Q_(i,s). These
 n squares partition all4n=16r vertices. No new vertex has an outside
 neighbour. This fully specifies H_r.
 
+Equivalently, H_r is the full4-by-4r grid with exactly the following
+boundary edges removed: on each of its first and last rows remove the
+edge between columns 2s+1 and 2s+2 for 0<=s<2r-1. To see the isomorphism,
+send old (i,j) to row i+1, column j; send a_(0,s),b_(0,s) to row0,
+columns2s,2s+1, and a_(1,s),b_(1,s) to row3 at those columns. All vertical
+edges and both middle-row paths are retained, and the outer-row edges
+are precisely the disjoint pairs. In particular H_1 is a4-by-4 grid
+with just its top and bottom middle horizontal edges deleted.
+
 ## 2. Star-forming and dissociation values
 
 Every dissociation set meets each square in at most two vertices,
@@ -136,7 +145,8 @@ of row alternates between consecutive blocks.
 
 Each selected old T root sees only its own P root in the occupied
 support: its rung neighbour is unoccupied, and at a block boundary
-its row neighbour belongs to the next block's unoccupied row. Each
+its row neighbour belongs to the adjacent block's unoccupied row, when
+that adjacent block exists. Each
 selected new T vertex in an exceptional square sees only its P root.
 Every new T vertex in the other row sees only its selected new partner.
 Thus (M,T) is feasible and has value8r+r=9r.

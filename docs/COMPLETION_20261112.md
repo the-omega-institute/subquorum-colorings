@@ -29,9 +29,21 @@ have the written proof; finite controls do not replace it.
 The triple-equality extension to two-connected outerplanar median graphs
 is therefore false. The weaker SF_2=beta_2 question in planar degree-four
 median graphs remains open; this family satisfies that equality. It
-does not consist of full rectangular grids. Independent review of the
-new four-parameter result is recorded separately from the earlier ear
-and cube-chain package.
+does not consist of full rectangular grids. In fact H_r is the4-by-4r
+grid with all between-pair edges on its first and last rows deleted;
+for r=1 these are just two boundary edges. The note gives the explicit
+coordinate isomorphism.
+
+The new four-parameter theorem received independent **ACCEPT** at
+snapshot a7737b0. The reviewer ran the original Python checker unchanged,
+with assertions enabled, reproduced the report byte-for-byte, and
+independently verified all-r counting, block-boundary colouring and
+structural proofs. The checker does not enumerate all colourings or
+calculate lower sf separately; those values follow from the proof.
+Only a previous/next-block wording clarification and the explicit
+coordinate identification were added afterward; no checker changed.
+The complete response and exact scope are in
+`output/ear-ladder-four-parameter-review.json`.
 
 ## Square attachments and the exact composition obstruction
 
@@ -105,8 +117,12 @@ prism theorem used in the parameter corollaries. The restricted note
 now states that theorem precisely and links its complete proof at
 957ef94, Section5 Theorem4/Corollary5, with definitions and the prism
 isomorphism in Sections1/3. This supplier file is byte-identical to
-the pinned revision. Targeted independent closure remains pending;
-the new four-parameter ear-ladder theorem has its own separate audit.
+the pinned revision. Targeted independent closure returned **ACCEPT**,
+after reconstructing the full supplier proof and all three applications.
+That closure did not rerun code or independently authenticate the remote
+GitHub bytes; the local check verified that the supplied complete source
+is byte-identical to the pinned Git object. The first complete audit's
+three original checker executions remain the execution evidence.
 Complete response and input scope are in
 `output/square-ear-composition-review.json`. No new Lean execution is claimed.
 
