@@ -1,5 +1,32 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Median graphs: explicit failure and bounded-degree amplification
+
+The [median obstruction note](MEDIAN_STAR_FORMING_OBSTRUCTION.md) proves
+that for every r>=1 there is a connected median graph G_r with
+
+    |V(G_r)|=38r, Delta(G_r)=5,
+    beta_2(G_r)=21r, SF_2(G_r)>=22r.
+
+The base is P_4 square P_4 square K_2 with two pendant leaves at each
+of three lower corners. A four-cube pattern proof gives beta_2=15 after
+removing those three attachment vertices; simultaneous leaf normalization
+then gives beta_2=21. A 22-set has explicit witnesses for every deletion.
+Bridging distinct leaf ports preserves medianity, the exact dissociation
+value, and all minimality witnesses. This disproves the general median
+SF/beta equality and shows a linear gap with a fixed maximum degree.
+It does not determine exact SF_2 of these examples or refute rectangular-grid
+equality. They contain pendant vertices and degree-five vertices.
+
+The standalone checker passes all256 cube subsets, all4096 forced block
+pattern tuples,893000 median triples, and10010 deletion witnesses over
+10 family sizes through r=256. The written proof establishes the all-r
+claim; the finite controls test its implementation. The original Oracle
+research response supplied the fixed counterexample. Its reconstructed
+proof and new connected amplification are under a separate independent
+review; current status is in output/median-obstruction-review.json.
+
+
 ## Arbitrary Cartesian prisms and their sharp gaps
 
 The [complete prism note](ADJACENT_INVOLUTIONS_AND_PRISM_GAPS.md) proves
@@ -211,6 +238,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Exact genuine TH expense at fixed grid width, with retained paths | Solved by the source-label DP, exponential in width |
 | Zero expense for all feasible ladder and E(H) instances | Proved, arbitrary M and nonnegative weights |
 | Zero expense for every feasible full grid instance | False: the explicit 3-by-6r family has expense r with unit actual weights |
+| SF_2=beta_2 for all finite median graphs | False; the bounded-degree connected family above has linear gap |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |

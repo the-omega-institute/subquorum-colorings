@@ -1,3 +1,13 @@
+# Median obstruction and the remaining grid question
+
+Medianity alone does not imply SF_2=beta_2: the
+[explicit connected family](MEDIAN_STAR_FORMING_OBSTRUCTION.md) has order38r,
+maximum degree5, beta_2=21r and SF_2>=22r for every r>=1. Medianity is
+preserved by the leaf attachments and bridge composition. The examples
+are not full rectangular grids. Future proofs for those grids must use
+additional geometry; the earlier finite simplex/convex-expansion samples
+did not justify an equality theorem for median graphs.
+
 # From the hypercube solution to grids and structural characterization
 
 The [arbitrary-prism continuation](ADJACENT_INVOLUTIONS_AND_PRISM_GAPS.md)

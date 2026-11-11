@@ -1,5 +1,13 @@
 # Current continuation
 
+The [median-graph obstruction](docs/MEDIAN_STAR_FORMING_OBSTRUCTION.md)
+proves that medianity does not force SF_2=beta_2. For every r>=1 a
+connected median graph of order38r and maximum degree5 has beta_2=21r
+and a minimal forming set of size22r. The base is a 4-by-4-by-2 prism
+with six pendant leaves; disjoint leaf ports give the connected family.
+Complete deletion witnesses and an elementary exact dissociation proof
+are included. These graphs are not rectangular grids.
+
 The [Cartesian-prism theorem](docs/ADJACENT_INVOLUTIONS_AND_PRISM_GAPS.md)
 extends the exact star-forming and representative values to every finite
 base H: `SF_2(H square K_2)=Omega(H square K_2)=2n-nu(D(H))`.
