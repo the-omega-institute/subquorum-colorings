@@ -25,7 +25,11 @@ attain both values. It has12r vertices,15r-1 edges and maximum degree5 for
 r>=2. The leaves' witnesses are unique and constitute every outside vertex,
 so alternative witnesses or additional outside vertices cannot repair
 leaf retention. These are full all-r proofs, with a standalone finite
-checker; independent review is pending. The general selected-star inequality
+checker. Independent review returned **ACCEPT** with no mathematical
+correction: all three artifacts were reconstructed with matching hashes,
+the original checker ran unchanged with assertions enabled, and its
+50,622-byte report was reproduced exactly. See
+`output/star-leaf-budget-review.json` for the complete response and scope. The general selected-star inequality
 without extra conditions remains open, as does arbitrary full-grid equality.
 
 ## Geometry at arbitrary width

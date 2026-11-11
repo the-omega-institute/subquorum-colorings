@@ -12,7 +12,10 @@ obstacle. A connected12r-vertex family has true beta `8r` but exact
 leaf-retaining optimum `7r`, proving that the restriction can lose an
 unbounded amount. This is a limitation of leaf retention, with an explicit
 size-preserving exchange still available. The general proofs, certificate
-construction and independent finite checker are included; review is pending.
+construction and independent finite checker received independent
+[ACCEPT](output/star-leaf-budget-review.json). The reviewer verified all
+three attached files against their hashes, ran the original checker
+unchanged with assertions, and reproduced the report byte-for-byte.
 
 The [arbitrary-width witness geometry](docs/GRID_WITNESS_GEOMETRY.md) proves
 `2|S|-mn<=|Z|+|E|-|H|-ceil(K/2)` for every minimal forming grid selection:

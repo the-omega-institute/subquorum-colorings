@@ -299,5 +299,10 @@ reaching1,536 vertices, with3,904 single-deletion failures and1,952 unique
 leaf witnesses checked. They verify the printed P_3 partition, perfect
 matching, explicit cover/independent set and both attaining dissociation
 sets. Exact coverage is recorded in `output/star-leaf-budget-check.json`.
-Independent review is pending.
+The proof/source snapshot c15cbb4 received independent **ACCEPT**, with no
+mathematical correction required. The reviewer reconstructed all three
+attached files byte-for-byte and verified their manifest hashes, ran the
+complete original checker unchanged with assertions enabled, and reproduced
+the entire 50,622-byte report exactly. The complete response and execution
+scope are in `output/star-leaf-budget-review.json`.
 There is no new Lean verification or claim of worldwide priority.
