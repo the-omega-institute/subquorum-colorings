@@ -113,3 +113,19 @@ matchings of a 4-by-10 board. The second report covers 1,259,376 terminal
 bijections and 2,355,108 weighted regional identities. The 12-by-18 family
 has a general all-K proof and a fixed row-by-row attaining matching;
 the twelve weighted samples are implementation controls.
+
+The further coordinate note
+[`RETAINING_PAIR_EXACT_UNIT_COST.md`](RETAINING_PAIR_EXACT_UNIT_COST.md)
+sharpens the unit example: retaining its specified bad pair has exact
+minimum expense four, while the unrestricted optimum is two. The proof
+excludes HH compensation into its deficient region and shows every incoming
+TH compensation needs at least two actual edges. It includes a complete
+row-tiling construction and an independent standard-library checker:
+
+```sh
+python3 scripts/check_retaining_pair_optimum.py
+```
+
+This strengthening is a separate coordinate note; the accepted fifteen-page
+PDF remains bound to its original scientific revision and states the valid
+weaker retaining-pair lower bound three.
