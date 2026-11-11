@@ -1,5 +1,16 @@
 # Current continuation
 
+The [arbitrary-width witness geometry](docs/GRID_WITNESS_GEOMETRY.md) proves
+`2|S|-mn<=|Z|+|E|-|H|` for every minimal forming grid selection: each
+selected-degree-four centre supplies two omitted caps, distinct across
+centres and from direct-witness resources. It also proves a simultaneous
+star exchange through independent leaf witnesses, including shared selected
+isolates. In particular, selected branching confined to one bipartition
+class implies `|S|<=beta_2` at all dimensions. An explicit full 6-by-6
+example refutes automatic independence of the witnesses while admitting
+a same-size dissociation exchange. The general proofs and two literal
+finite checkers are included; separate review is pending.
+
 The [five-row theorem](docs/FIVE_ROW_STAR_FORMING_EQUALITY.md) extends the
 all-length star-forming result to height five. For every n>=1,
 `SF_2(P_5 square P_n)=beta_2=psi_sq=F(5,n)`; the value is 4,6,9 at lengths
@@ -9,8 +20,11 @@ literal-star implementation compares every one of the 33,554,432 local
 kernel entries, reconstructs both complete vectors with standard maps,
 and checks 1,082,400 individual small-board selections. The general
 frontier and induction prove the all-length implication. The prior
-colouring supplier was rerun separately. Independent final review is
-pending; arbitrary width and the universal 5/6 improvement remain open.
+colouring supplier was rerun separately. Its independent
+[ACCEPT audit](output/grid-star-height-five-review.json) ran both original
+programs, regenerated both large vectors with exact hashes and reproduced
+the independent checker report and all four prior colouring outputs
+byte-for-byte. Arbitrary width and the universal 5/6 improvement remain open.
 
 The [three-row upper-forming theorem](docs/THREE_ROW_STAR_FORMING_EQUALITY.md)
 establishes `SF_2(P_3 square P_n)=5floor(n/3)+2(n mod3)` for every n>=1,

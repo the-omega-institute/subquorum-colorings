@@ -209,5 +209,15 @@ The large vectors and native-endian temporary kernel are regenerable;
 their exact hashes are recorded with the concise reports. The mathematical
 state serialization is the portable decimal TSV format (4). No global
 state-count bound at larger heights is inferred from the observed count.
-No new Lean result or arbitrary-width theorem is asserted. Independent
-review and its actual execution scope will be recorded separately.
+No new Lean result or arbitrary-width theorem is asserted.
+
+The independent audit of revision c5d4c45 returned **ACCEPT**, with no
+required changes. The reviewer reconstructed all fifteen manifest entries,
+ran both unchanged C++ programs to completion, checked all local kernels
+and global controls, rebuilt all seventeen prefixes, and regenerated both
+large endpoint vectors with the exact recorded hashes. The independent
+checker stdout and the four prior Omega supplier files were reproduced
+byte-for-byte. GitHub DNS was unavailable to that reviewer; source identity
+was established against the supplied complete manifest, also checked
+locally against the pinned Git revision. The full response and actual
+execution scope are in `output/grid-star-height-five-review.json`.

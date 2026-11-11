@@ -1,5 +1,31 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Geometry at arbitrary width
+
+The [witness geometry note](GRID_WITNESS_GEOMETRY.md) proves, for every
+minimal forming S in every full rectangle,
+
+    2|S|-mn<=|Z|+|E|-|H|-ceil(K/2).
+
+Here Z comprises selected components of order at most two, E the degree-two
+or degree-three selections without a direct deletion witness, H the
+degree-four selections, and K counts selected perpendicular siblings of
+chosen clean leaves at exceptional centres. Two caps per H centre are
+pairwise disjoint across distinct centres. Exceptional caps have capacity
+at most two and are disjoint from H caps. Direct and clean witnesses are
+reserved without counting the same leaf resource twice. The exact residual
+identity retains the actual exceptional-cap union and unused omitted set.
+
+A separate simultaneous auxiliary-multigraph exchange gives |S|<=beta_2
+when selected components are stars/edges/isolates with independent chosen
+leaf witnesses. This applies whenever selected degree-at-least-two vertices
+lie in one bipartition class, at any width. A complete 6-by-6 example refutes
+automatic independence but admits an explicit size-preserving exchange.
+The finite audits cover 190,798 grid subsets, 28 protected degree-four
+centres, and 50,196 exchange constructions on small bipartite graphs and
+explicit cycle/dummy/conflict fixtures. General proofs are written in full;
+separate review of this new structural note is pending.
+
 ## Five-row grids at every length
 
 The [five-row proof](FIVE_ROW_STAR_FORMING_EQUALITY.md) establishes
@@ -19,7 +45,9 @@ subsets of 5-by-1 through 5-by-4. The new generator also reproduces the
 accepted h3/h4 endpoint vectors. Both existing width-five colouring
 implementations were rerun and reproduced four archived outputs exactly.
 No state truncation or new Lean execution is used. Independent final
-review is pending; both dimensions of a still-uncovered rectangle must
+review returned ACCEPT at c5d4c45: both original programs completed, both
+large vectors were regenerated with exact hashes, and the checker report
+and all four prior colouring outputs matched byte-for-byte; both dimensions of a still-uncovered rectangle must
 now be at least six. Arbitrary-width equality and a universal 5/6 gain
 remain open.
 
@@ -602,8 +630,8 @@ retain their existing ACCEPT, scoped to their original input.
 | SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is three | Proved for every positive other side; complete-vector computer-assisted proof, independently accepted with original executions |
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is four | Proved for every positive other side by the full-vector extension; separately accepted with original executions |
-| Rectangular-grid SF_2=beta_2=psi_sq when one side is five | Complete-vector computer-assisted proof and independent full reconstruction pass locally; separate final review pending |
-| Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
+| Rectangular-grid SF_2=beta_2=psi_sq when one side is five | Proved for every positive other side; independent ACCEPT with both original executions and exact vector hashes |
+| Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
 | Simpler incomplete-core equality structure for general bipartite graphs | Open; the exact remainders here describe only E(H) |

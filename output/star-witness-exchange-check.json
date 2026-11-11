@@ -1,0 +1,323 @@
+{
+  "checks": {
+    "actual_root_runs": 7708,
+    "cycle_component_runs": 435,
+    "dummy_root_runs": 10018,
+    "exchange_runs": 50196,
+    "independent_runs": 50178,
+    "nonindependent_runs": 18,
+    "positive_cover_runs": 8,
+    "positive_surplus_runs": 1
+  },
+  "exhaustive_ranges": [
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        0
+      ],
+      "selections": 1,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        1
+      ],
+      "selections": 2,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        2
+      ],
+      "selections": 4,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        3
+      ],
+      "selections": 8,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        4
+      ],
+      "selections": 16,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        5
+      ],
+      "selections": 32,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 1,
+      "graphs": 1,
+      "minimal_selections": 1,
+      "parts": [
+        0,
+        6
+      ],
+      "selections": 64,
+      "with_star_selections": 0,
+      "witness_assignments": 1
+    },
+    {
+      "eligible_selections": 2,
+      "graphs": 2,
+      "minimal_selections": 2,
+      "parts": [
+        1,
+        1
+      ],
+      "selections": 8,
+      "with_star_selections": 0,
+      "witness_assignments": 2
+    },
+    {
+      "eligible_selections": 6,
+      "graphs": 4,
+      "minimal_selections": 6,
+      "parts": [
+        1,
+        2
+      ],
+      "selections": 32,
+      "with_star_selections": 0,
+      "witness_assignments": 6
+    },
+    {
+      "eligible_selections": 17,
+      "graphs": 8,
+      "minimal_selections": 17,
+      "parts": [
+        1,
+        3
+      ],
+      "selections": 128,
+      "with_star_selections": 0,
+      "witness_assignments": 17
+    },
+    {
+      "eligible_selections": 44,
+      "graphs": 16,
+      "minimal_selections": 44,
+      "parts": [
+        1,
+        4
+      ],
+      "selections": 512,
+      "with_star_selections": 0,
+      "witness_assignments": 44
+    },
+    {
+      "eligible_selections": 107,
+      "graphs": 32,
+      "minimal_selections": 107,
+      "parts": [
+        1,
+        5
+      ],
+      "selections": 2048,
+      "with_star_selections": 0,
+      "witness_assignments": 107
+    },
+    {
+      "eligible_selections": 37,
+      "graphs": 16,
+      "minimal_selections": 37,
+      "parts": [
+        2,
+        2
+      ],
+      "selections": 256,
+      "with_star_selections": 0,
+      "witness_assignments": 37
+    },
+    {
+      "eligible_selections": 218,
+      "graphs": 64,
+      "minimal_selections": 218,
+      "parts": [
+        2,
+        3
+      ],
+      "selections": 2048,
+      "with_star_selections": 6,
+      "witness_assignments": 218
+    },
+    {
+      "eligible_selections": 1231,
+      "graphs": 256,
+      "minimal_selections": 1231,
+      "parts": [
+        2,
+        4
+      ],
+      "selections": 16384,
+      "with_star_selections": 72,
+      "witness_assignments": 1255
+    },
+    {
+      "eligible_selections": 2730,
+      "graphs": 512,
+      "minimal_selections": 2802,
+      "parts": [
+        3,
+        3
+      ],
+      "selections": 32768,
+      "with_star_selections": 252,
+      "witness_assignments": 2730
+    },
+    {
+      "eligible_selections": 32868,
+      "graphs": 4096,
+      "minimal_selections": 34596,
+      "parts": [
+        3,
+        4
+      ],
+      "selections": 524288,
+      "with_star_selections": 4884,
+      "witness_assignments": 33948
+    }
+  ],
+  "extension": "Exact brute-force minimum vertex cover of retained witness conflicts; size S+q-tau verified.",
+  "fixtures": [
+    {
+      "auxiliary_edges": 2,
+      "checks": {
+        "actual_root_runs": 1,
+        "dummy_root_runs": 2,
+        "exchange_runs": 3,
+        "independent_runs": 3
+      },
+      "name": "private_dummy_tree",
+      "selected": 6,
+      "vertices": 9,
+      "witness_conflicts": 0
+    },
+    {
+      "auxiliary_edges": 4,
+      "checks": {
+        "actual_root_runs": 3,
+        "dummy_root_runs": 2,
+        "exchange_runs": 5,
+        "independent_runs": 5
+      },
+      "name": "shared_isolate_tree",
+      "selected": 7,
+      "vertices": 13,
+      "witness_conflicts": 0
+    },
+    {
+      "auxiliary_edges": 2,
+      "checks": {
+        "cycle_component_runs": 1,
+        "exchange_runs": 1,
+        "independent_runs": 1
+      },
+      "name": "parallel_cycle",
+      "selected": 4,
+      "vertices": 7,
+      "witness_conflicts": 0
+    },
+    {
+      "auxiliary_edges": 4,
+      "checks": {
+        "cycle_component_runs": 1,
+        "exchange_runs": 1,
+        "independent_runs": 1
+      },
+      "name": "ordinary_four_cycle",
+      "selected": 8,
+      "vertices": 14,
+      "witness_conflicts": 0
+    },
+    {
+      "auxiliary_edges": 3,
+      "checks": {
+        "cycle_component_runs": 1,
+        "exchange_runs": 1,
+        "independent_runs": 1,
+        "positive_surplus_runs": 1
+      },
+      "name": "positive_cycle_surplus",
+      "selected": 5,
+      "vertices": 9,
+      "witness_conflicts": 0
+    },
+    {
+      "auxiliary_edges": 4,
+      "checks": {
+        "actual_root_runs": 6,
+        "dummy_root_runs": 12,
+        "exchange_runs": 9,
+        "nonindependent_runs": 9,
+        "positive_cover_runs": 4
+      },
+      "name": "conflicting_private_trees",
+      "selected": 6,
+      "vertices": 12,
+      "witness_conflicts": 1
+    }
+  ],
+  "grid_6x6": {
+    "explicit_dissociation_size": 18,
+    "forced_adjacent_witnesses": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "independent_assignments": 0,
+    "selected": 18,
+    "star_leaves": 4,
+    "vertices": 36,
+    "witness_assignments": 1
+  },
+  "mathematical_issues": [
+    "Private dummy endpoints are auxiliary only; actual private paths have length two.",
+    "Extra omitted centre witnesses t_c certify fixture minimality; bare length-three subdivisions need not.",
+    "Witness independence is a hypothesis, refuted as automatic by the 6x6 example."
+  ],
+  "scope": "Finite labelled bipartite graph audit; not a general proof",
+  "status": "pass"
+}
