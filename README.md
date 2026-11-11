@@ -1,9 +1,11 @@
 # Current continuation
 
 The [arbitrary-width witness geometry](docs/GRID_WITNESS_GEOMETRY.md) proves
-`2|S|-mn<=|Z|+|E|-|H|` for every minimal forming grid selection: each
+`2|S|-mn<=|Z|+|E|-|H|-ceil(K/2)` for every minimal forming grid selection:
+each
 selected-degree-four centre supplies two omitted caps, distinct across
-centres and from direct-witness resources. It also proves a simultaneous
+centres and from direct-witness resources; exceptional caps have capacity
+at most two and supply the K term. It also proves a simultaneous
 star exchange through independent leaf witnesses, including shared selected
 isolates. In particular, selected branching confined to one bipartition
 class implies `|S|<=beta_2` at all dimensions. An explicit full 6-by-6

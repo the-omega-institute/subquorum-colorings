@@ -637,7 +637,8 @@ retain their existing ACCEPT, scoped to their original input.
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
-| Simpler incomplete-core equality structure for general bipartite graphs | Open; the exact remainders here describe only E(H) |
+| Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
+| Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:
 if both sides of a rectangle are at least three, a corner has degree two

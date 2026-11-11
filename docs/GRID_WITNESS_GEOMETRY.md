@@ -363,4 +363,5 @@ arguments, clean-leaf reservation, exact residual, auxiliary tree/cycle
 exchange, conflict-cover variant and the six-by-six obstacle. The complete
 response, attachment manifest and actual execution scope are preserved in
 `output/grid-witness-geometry-review.json`. This verdict covers the stated
-conditional and defect-counting results; the residual (8) remains open.
+conditional and defect-counting results; the further inequality needed
+to control the defect in (8) remains open.
