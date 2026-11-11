@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "height": 4,
+  "literal_five_column_patterns": 1048576,
+  "literal_board_controls": [
+    {
+      "height": 4,
+      "length": 1,
+      "subsets": 16,
+      "minimal_sets": 3,
+      "SF": 3
+    },
+    {
+      "height": 4,
+      "length": 2,
+      "subsets": 256,
+      "minimal_sets": 36,
+      "SF": 4
+    },
+    {
+      "height": 4,
+      "length": 3,
+      "subsets": 4096,
+      "minimal_sets": 151,
+      "SF": 7
+    },
+    {
+      "height": 4,
+      "length": 4,
+      "subsets": 65536,
+      "minimal_sets": 924,
+      "SF": 8
+    }
+  ],
+  "literal_board_subsets": 69904,
+  "per_subset_transfer_acceptance_comparisons": 69904,
+  "prefixes_reconstructed_from_empty": 17,
+  "optima": [
+    3,
+    4,
+    7,
+    8,
+    11,
+    12,
+    15,
+    16,
+    19,
+    20,
+    23,
+    24,
+    27,
+    28,
+    31,
+    32,
+    35
+  ],
+  "full_state_domain": 43046721,
+  "reachable_certificate_states": 342768,
+  "start": 15,
+  "period": 2,
+  "increment": 4,
+  "full_vectors_independently_reconstructed": true,
+  "large_vectors_regenerable_not_required_in_source": true,
+  "certificate_sha256": {
+    "grid-star-h4-v15.tsv": "9f0c2d55dc3bf0a48f8aab6a240b89679991d72d9b2094954481875e3d3e698e",
+    "grid-star-h4-v17.tsv": "47c4dcd2b86a6c920a2dd009e81b6c1f7a92df9cd5305eccf8c1639f8190672c"
+  },
+  "new_Lean": false
+}

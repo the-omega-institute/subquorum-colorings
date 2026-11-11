@@ -9,6 +9,13 @@ independently rebuilt from the empty prefix using literal three-vertex
 stars. This is a computer-assisted all-length proof; independent final
 review is pending, and arbitrary width remains open.
 
+The [four-row extension](docs/FOUR_ROW_STAR_FORMING_EQUALITY.md) gives
+`SF_2(P_4 square P_n)=beta_2(P_4 square P_n)=2n+(n mod2)` for every n>=1.
+Its independent literal-star reconstruction verifies `V17=V15+4` on all
+342,768 reachable states. The same general frontier proof and induction,
+together with the prior width-four colouring theorem, give triple equality
+at height four. It is being reviewed separately from the height-three input.
+
 The [exact decorated-interface formula](docs/EXACT_DECORATED_INTERFACE_FORMULA.md)
 converts a minimum interface forming set into a maximum minimal forming
 set of a 21-fold decoration: `SF_2(D(H))=12|H|-sf_2(H)` for every finite

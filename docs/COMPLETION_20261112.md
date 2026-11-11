@@ -1,5 +1,22 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## The four-row extension
+
+The [four-row proof](FOUR_ROW_STAR_FORMING_EQUALITY.md) closes the upper
+forming number at height four for every positive length:
+`SF_2(P_4 square P_n)=beta_2(P_4 square P_n)=2n+(n mod2)`.
+An explicit alternating-column dissociation set attains the bound and has
+self-deletion witnesses. The full-vector certificate is V17=V15+4, on all
+342,768 reachable states in the 3^16 state domain. The general frontier
+proof and homogeneous-transfer induction prove the infinite conclusion.
+
+The independent Python implementation reconstructs both vectors by literal
+stars and compares all entries. It also checks all 1,048,576 local masks
+and 69,904 whole-board subsets. The vectors are regenerable output, with
+their exact hashes in the concise report. With the prior width-four
+colouring theorem, all three parameters coincide. This is a computer-assisted
+result; it is being independently audited as a separate extension.
+
 ## Upper forming number and triple equality at height three
 
 The [three-row proof](THREE_ROW_STAR_FORMING_EQUALITY.md) establishes
