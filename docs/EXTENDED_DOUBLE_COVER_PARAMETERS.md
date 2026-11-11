@@ -26,7 +26,10 @@ matching cardinality, and define
 The empty set is allowed, so delta>=0. Here N_H(X) is the set of vertices
 adjacent to some member of X; it can intersect X. A
 dissociation set induces maximum degree at most one; beta_2 is its maximum
-size. A feasible representative pair consists of a matching M and a set T
+size. A partial colouring is sub-quorum if, at every coloured vertex, at
+least half of the coloured vertices in its closed neighbourhood have its
+colour; psi_sq is the largest number of nonempty colours in such a colouring.
+A feasible representative pair consists of a matching M and a set T
 disjoint from its endpoints P, such that every t in T has at most one
 neighbour in T union P. The quantity Omega maximizes |T|+|M|. T may use both
 colours. Sahbi's representative reduction supplies

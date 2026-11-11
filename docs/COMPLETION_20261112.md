@@ -48,9 +48,16 @@ embedded checker and reproduced the report. That reviewer also supplied
 a malformed external certificate exploiting Python negative indices. The
 checker now validates vertex domains before indexing and rejects that
 exact regression. The new SF theorem, its equality remainders and the
-expanded checker have a separate independent audit at snapshot 6000a72;
-its verdict is recorded with the final review output when available.
-No new Lean verification or full priority comparison is claimed.
+expanded checker received a separate independent **ACCEPT** at snapshot
+6000a72. The reviewer reconstructed the all-size proof, extracted the two
+Python files verbatim, ran the full unchanged checker with assertions
+enabled, and confirmed equality of the generated and attached JSON data.
+The exact negative-index fake certificate was also separately rejected
+before graph indexing. The final note adds the requested explicit standard
+partial-colouring definition; no proof or algorithm change was needed.
+`output/extended-double-cover-review.json` preserves both complete verdicts
+and the exact attached-file manifests. No new Lean verification or full
+priority comparison is claimed.
 
 ## Source-dependent TH completion
 
