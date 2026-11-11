@@ -23,6 +23,24 @@ reproduced the 27,335-byte report exactly. The complete response and execution
 scope are in `output/selected-star-general-budget-review.json`. This does not assert that a maximizing minimal selection in
 every bipartite graph or full rectangle has selected star components.
 
+## Minimum-degree and maximum-degree refinement
+
+For the same selected-star class, nonempty graphs with minimum degree at
+least delta>=2 and maximum degree Delta satisfy the stronger bound
+
+    |S|-beta_2<=floor(L*n/(12L+2(delta-1))),
+    L=max(7(delta-1),Delta).
+
+In particular minimum degree two and maximum degree at most seven give
+floor(7n/86). The complete [proof](SELECTED_STAR_MINIMUM_DEGREE_BOUND.md)
+counts real edges from singly touched selected isolates into unused outside
+vertices and retains one exact global vertex remainder. Both degree reviews
+returned ACCEPT; original checker executions reproduced their corresponding
+reports exactly. The final public checker tests 727,240 feasible ledgers
+and a real 38-vertex graph (minimum degree2, maximum8, selected24, beta22)
+using 524,288 independent one-part subsets. The coefficient is not claimed
+sharp, and this is a bound on specified selected-star minimal sets.
+
 ## Exact clean-witness port composition
 
 For any finite simple interface graph R, orient its edges arbitrarily and
@@ -743,7 +761,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp gap for selected-star sets with a private outside witness at one leaf of every centre | Proved: floor(n/12), attained by connected maximum-degree-six graphs at all orders24r |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
-| Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
+| Sharp gap under simultaneous specified degree/connectivity restrictions | New explicit degree-dependent bound proved for selected-star sets with minimum degree at least two; optimal constants beyond the exact classes remain open |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 

@@ -15,6 +15,19 @@ checker and finite report are included. Both independent proof reviews returned
 hash-checked all four supplied files, ran the original checker unchanged with
 assertions to completion, and reproduced the 27,335-byte report exactly.
 
+The [minimum-degree refinement](docs/SELECTED_STAR_MINIMUM_DEGREE_BOUND.md)
+strengthens this for nonempty graphs with minimum degree at least delta>=2
+and maximum degree Delta. Put `L=max(7(delta-1),Delta)`. Every such selected-star
+minimal set satisfies `|S|-beta_2<=floor(L*n/(12L+2(delta-1)))`.
+For minimum degree two and Delta<=7 this becomes `floor(7n/86)`.
+The proof retains the exact unused-vertex remainder and counts the additional
+neighbours required by singly touched selected isolates. Two independent
+[ACCEPT reviews](output/selected-star-degree-budget-review.json) checked the
+argument and ran the original controls to completion, including 727,240
+feasible integer ledgers and a genuine 38-vertex minimum-degree-two example
+with selected size24 and exact unrestricted beta22. No sharpness of the new
+degree constant is asserted.
+
 The [clean-witness port composition](docs/SELECTED_STAR_PORT_COMPOSITION.md)
 gives an exact unrestricted formula for every finite interface graph R,
 with any orientation: `beta_2(F_R)=7|V(R)|+alpha(R)`. Its explicit minimal
