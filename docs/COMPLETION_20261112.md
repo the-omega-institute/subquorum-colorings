@@ -41,6 +41,26 @@ and a real 38-vertex graph (minimum degree2, maximum8, selected24, beta22)
 using 524,288 independent one-part subsets. The coefficient is not claimed
 sharp, and this is a bound on specified selected-star minimal sets.
 
+## Whole-cut capacity and boundary deficits
+
+The [whole-cut degree theorem](FULL_DEGREE_CAPACITY_FOR_SELECTED_STARS.md)
+counts the degree demands of all selected vertex types in a single cut and
+adds the bipartition bound `beta_2>=n/2`. For the same selected-star minimal
+sets, minimum degree at least delta>=3 and maximum degree at most Delta>=4 give
+`d<=floor((Delta-delta+1)n/(2(5Delta+delta-7)))`. In regular degree k>=4 this
+is `floor(n/(12k-14))`; cubic graphs satisfy `floor(7n/146)`.
+A positive gap in regular degree at least four requires selected edge
+components, with an explicit lower bound on their number of vertices.
+The constants are optimal in the explicitly stated six-ledger relaxation
+for the proved parameter ranges; graph-sharpness remains open.
+
+Retaining actual degree deficits also gives a boundary-sensitive version
+without a minimum-degree assumption. In a full h-by-w rectangle it implies
+`d<=floor((hw+4h+4w)/34)` for every specified selected-star minimal set,
+with a stronger location-dependent form in the note. This does not assume
+that all minimal grid selections are of that form. Literal finite checks
+and exact rational controls pass; independent source review is pending.
+
 ## Exact clean-witness port composition
 
 For any finite simple interface graph R, orient its edges arbitrarily and
@@ -759,9 +779,9 @@ retain their existing ACCEPT, scoped to their original input.
 | Exact dissociation composition through clean witness ports | Proved beta_2=7r+alpha(R) for every oriented finite interface graph; selected size8r and degree-four path/cycle counterexamples |
 | Sharp gap for all selected-star minimal sets without the private clean-leaf hypothesis | Proved floor(n/12), sharp even connected maximum degree six; positive equality forces pendant vertices, so minimum degree two yields floor((n-1)/12) |
 | Sharp gap for selected-star sets with a private outside witness at one leaf of every centre | Proved: floor(n/12), attained by connected maximum-degree-six graphs at all orders24r |
-| Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
+| Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; arbitrary-width cap/exchange criteria and selected-star boundary-deficit bound proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
-| Sharp gap under simultaneous specified degree/connectivity restrictions | New explicit degree-dependent bound proved for selected-star sets with minimum degree at least two; optimal constants beyond the exact classes remain open |
+| Sharp gap under simultaneous specified degree/connectivity restrictions | Degree bounds proved for selected-star sets, including regular k>=4 coefficient 1/(12k-14), cubic 7/146, and a boundary-deficit rectangle cap; optimal graph constants beyond the exact classes remain open |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 

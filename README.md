@@ -28,6 +28,24 @@ feasible integer ledgers and a genuine 38-vertex minimum-degree-two example
 with selected size24 and exact unrestricted beta22. No sharpness of the new
 degree constant is asserted.
 
+The [whole-cut degree theorem](docs/FULL_DEGREE_CAPACITY_FOR_SELECTED_STARS.md)
+counts the degree demands of all selected vertex types in a single cut and
+adds the bipartition bound `beta_2>=n/2`. For the same selected-star minimal
+sets, minimum degree at least delta>=3 and maximum degree at most Delta>=4 give
+`d<=floor((Delta-delta+1)n/(2(5Delta+delta-7)))`. In regular degree k>=4 this
+is `floor(n/(12k-14))`; cubic graphs satisfy `floor(7n/146)`.
+A positive gap in regular degree at least four requires selected edge
+components, with an explicit lower bound on their number of vertices.
+The constants are optimal in the explicitly stated six-ledger relaxation
+for the proved parameter ranges; graph-sharpness remains open.
+
+Retaining actual degree deficits also gives a boundary-sensitive version
+without a minimum-degree assumption. In a full h-by-w rectangle it implies
+`d<=floor((hw+4h+4w)/34)` for every specified selected-star minimal set,
+with a stronger location-dependent form in the note. This does not assume
+that all minimal grid selections are of that form. Literal finite checks
+and exact rational controls pass; independent source review is pending.
+
 The [clean-witness port composition](docs/SELECTED_STAR_PORT_COMPOSITION.md)
 gives an exact unrestricted formula for every finite interface graph R,
 with any orientation: `beta_2(F_R)=7|V(R)|+alpha(R)`. Its explicit minimal

@@ -1,0 +1,617 @@
+{
+  "arithmetic": {
+    "basis_identity_checks": 20460,
+    "cubic_primal_witness": true,
+    "large_integer_identity_checks": 6,
+    "low_dispersion_primal_witnesses": 5858,
+    "scope": "exact algebra/primal controls; no graph-sharpness inference"
+  },
+  "boundary_controls": {
+    "positive_gap_controls": [
+      {
+        "a": 1,
+        "b": 2,
+        "beta": 11,
+        "checks": {
+          "boundary_degree_checks": 3,
+          "negative_deficit_differences": 0,
+          "positive_gap_boundary_checks": 3
+        },
+        "maximum_degree": 6,
+        "minimum_degree": 1,
+        "one_part_subsets": 512,
+        "order": 18,
+        "selected_size": 12
+      },
+      {
+        "a": 2,
+        "b": 2,
+        "beta": 14,
+        "checks": {
+          "boundary_degree_checks": 3,
+          "negative_deficit_differences": 0,
+          "positive_gap_boundary_checks": 3
+        },
+        "maximum_degree": 6,
+        "minimum_degree": 1,
+        "one_part_subsets": 4096,
+        "order": 24,
+        "selected_size": 16
+      }
+    ],
+    "rectangle_totals": {
+      "boundary_degree_checks": 5349,
+      "eligible_minimal_selections": 1467,
+      "excluded_nonstar_minimal_selections": 706,
+      "graphs": 18,
+      "minimal_selections": 2173,
+      "negative_deficit_differences": 1357,
+      "one_part_subsets": 761,
+      "positive_gap_boundary_checks": 0,
+      "rectangle_boundary_checks": 1783,
+      "selected_subsets": 125262,
+      "witness_allocations": 1783
+    },
+    "rectangles": [
+      {
+        "checks": {
+          "boundary_degree_checks": 3,
+          "eligible_minimal_selections": 1,
+          "graphs": 1,
+          "minimal_selections": 1,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 1,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 1,
+          "selected_subsets": 2,
+          "witness_allocations": 1
+        },
+        "height": 1,
+        "width": 1
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 3,
+          "eligible_minimal_selections": 1,
+          "graphs": 1,
+          "minimal_selections": 1,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 2,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 1,
+          "selected_subsets": 4,
+          "witness_allocations": 1
+        },
+        "height": 1,
+        "width": 2
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 9,
+          "eligible_minimal_selections": 3,
+          "graphs": 1,
+          "minimal_selections": 3,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 2,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 3,
+          "selected_subsets": 8,
+          "witness_allocations": 3
+        },
+        "height": 1,
+        "width": 3
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 9,
+          "eligible_minimal_selections": 3,
+          "graphs": 1,
+          "minimal_selections": 3,
+          "negative_deficit_differences": 3,
+          "one_part_subsets": 4,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 3,
+          "selected_subsets": 16,
+          "witness_allocations": 3
+        },
+        "height": 1,
+        "width": 4
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 15,
+          "eligible_minimal_selections": 5,
+          "graphs": 1,
+          "minimal_selections": 5,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 4,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 5,
+          "selected_subsets": 32,
+          "witness_allocations": 5
+        },
+        "height": 1,
+        "width": 5
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 24,
+          "eligible_minimal_selections": 8,
+          "excluded_nonstar_minimal_selections": 1,
+          "graphs": 1,
+          "minimal_selections": 9,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 8,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 8,
+          "selected_subsets": 64,
+          "witness_allocations": 8
+        },
+        "height": 1,
+        "width": 6
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 27,
+          "eligible_minimal_selections": 9,
+          "graphs": 1,
+          "minimal_selections": 9,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 8,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 9,
+          "selected_subsets": 128,
+          "witness_allocations": 9
+        },
+        "height": 1,
+        "width": 7
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 48,
+          "eligible_minimal_selections": 16,
+          "graphs": 1,
+          "minimal_selections": 16,
+          "negative_deficit_differences": 3,
+          "one_part_subsets": 16,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 16,
+          "selected_subsets": 256,
+          "witness_allocations": 16
+        },
+        "height": 1,
+        "width": 8
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 18,
+          "eligible_minimal_selections": 6,
+          "graphs": 1,
+          "minimal_selections": 6,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 4,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 6,
+          "selected_subsets": 16,
+          "witness_allocations": 6
+        },
+        "height": 2,
+        "width": 2
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 30,
+          "eligible_minimal_selections": 10,
+          "graphs": 1,
+          "minimal_selections": 10,
+          "negative_deficit_differences": 3,
+          "one_part_subsets": 8,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 10,
+          "selected_subsets": 64,
+          "witness_allocations": 10
+        },
+        "height": 2,
+        "width": 3
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 99,
+          "eligible_minimal_selections": 29,
+          "excluded_nonstar_minimal_selections": 7,
+          "graphs": 1,
+          "minimal_selections": 36,
+          "negative_deficit_differences": 0,
+          "one_part_subsets": 16,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 33,
+          "selected_subsets": 256,
+          "witness_allocations": 33
+        },
+        "height": 2,
+        "width": 4
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 174,
+          "eligible_minimal_selections": 52,
+          "excluded_nonstar_minimal_selections": 6,
+          "graphs": 1,
+          "minimal_selections": 58,
+          "negative_deficit_differences": 39,
+          "one_part_subsets": 32,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 58,
+          "selected_subsets": 1024,
+          "witness_allocations": 58
+        },
+        "height": 2,
+        "width": 5
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 441,
+          "eligible_minimal_selections": 131,
+          "excluded_nonstar_minimal_selections": 42,
+          "graphs": 1,
+          "minimal_selections": 173,
+          "negative_deficit_differences": 75,
+          "one_part_subsets": 64,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 147,
+          "selected_subsets": 4096,
+          "witness_allocations": 147
+        },
+        "height": 2,
+        "width": 6
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 987,
+          "eligible_minimal_selections": 275,
+          "excluded_nonstar_minimal_selections": 90,
+          "graphs": 1,
+          "minimal_selections": 365,
+          "negative_deficit_differences": 310,
+          "one_part_subsets": 128,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 329,
+          "selected_subsets": 16384,
+          "witness_allocations": 329
+        },
+        "height": 2,
+        "width": 7
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 102,
+          "eligible_minimal_selections": 28,
+          "graphs": 1,
+          "minimal_selections": 28,
+          "negative_deficit_differences": 47,
+          "one_part_subsets": 16,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 34,
+          "selected_subsets": 512,
+          "witness_allocations": 34
+        },
+        "height": 3,
+        "width": 3
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 387,
+          "eligible_minimal_selections": 115,
+          "excluded_nonstar_minimal_selections": 36,
+          "graphs": 1,
+          "minimal_selections": 151,
+          "negative_deficit_differences": 81,
+          "one_part_subsets": 64,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 129,
+          "selected_subsets": 4096,
+          "witness_allocations": 129
+        },
+        "height": 3,
+        "width": 4
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 1134,
+          "eligible_minimal_selections": 294,
+          "excluded_nonstar_minimal_selections": 81,
+          "graphs": 1,
+          "minimal_selections": 375,
+          "negative_deficit_differences": 436,
+          "one_part_subsets": 128,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 378,
+          "selected_subsets": 32768,
+          "witness_allocations": 378
+        },
+        "height": 3,
+        "width": 5
+      },
+      {
+        "checks": {
+          "boundary_degree_checks": 1839,
+          "eligible_minimal_selections": 481,
+          "excluded_nonstar_minimal_selections": 443,
+          "graphs": 1,
+          "minimal_selections": 924,
+          "negative_deficit_differences": 360,
+          "one_part_subsets": 256,
+          "positive_gap_boundary_checks": 0,
+          "rectangle_boundary_checks": 613,
+          "selected_subsets": 65536,
+          "witness_allocations": 613
+        },
+        "height": 4,
+        "width": 4
+      }
+    ],
+    "scope": "All selections on the specified finite rectangles; positive gaps occur only in separate nonrectangular minimum-degree-one controls."
+  },
+  "graph_controls": {
+    "excluded_heawood_control": {
+      "beta": 7,
+      "order": 14,
+      "selected_nonstar_component": "six-cycle",
+      "selected_size": 8
+    },
+    "ranges": {
+      "all_cubic_3": {
+        "boundary_degree_checks": 33,
+        "cut_edges_checked": 54,
+        "degree_parameter_checks": 33,
+        "eligible_minimal_selections": 11,
+        "graphs": 1,
+        "minimal_selections": 11,
+        "negative_deficit_differences": 27,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 8,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 11,
+        "selected_subsets": 64,
+        "untouched_isolate_allocations": 2,
+        "with_selected_edges": 9,
+        "with_stars": 0,
+        "witness_allocations": 11
+      },
+      "all_cubic_4": {
+        "boundary_degree_checks": 2304,
+        "cut_edges_checked": 3456,
+        "degree_parameter_checks": 2304,
+        "eligible_minimal_selections": 768,
+        "excluded_nonstar_minimal_selections": 720,
+        "graphs": 24,
+        "minimal_selections": 1488,
+        "negative_deficit_differences": 0,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 384,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 768,
+        "selected_subsets": 6144,
+        "untouched_isolate_allocations": 48,
+        "with_selected_edges": 144,
+        "with_stars": 576,
+        "witness_allocations": 768
+      },
+      "all_quartic_4": {
+        "boundary_degree_checks": 54,
+        "cut_edges_checked": 128,
+        "degree_parameter_checks": 108,
+        "eligible_minimal_selections": 18,
+        "graphs": 1,
+        "minimal_selections": 18,
+        "negative_deficit_differences": 32,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 16,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 18,
+        "selected_subsets": 256,
+        "untouched_isolate_allocations": 2,
+        "with_selected_edges": 16,
+        "with_stars": 0,
+        "witness_allocations": 18
+      },
+      "all_quartic_5": {
+        "boundary_degree_checks": 47520,
+        "cut_edges_checked": 120000,
+        "degree_parameter_checks": 95040,
+        "eligible_minimal_selections": 8640,
+        "excluded_nonstar_minimal_selections": 10800,
+        "graphs": 120,
+        "minimal_selections": 19440,
+        "negative_deficit_differences": 2400,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 3840,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 15840,
+        "selected_subsets": 122880,
+        "untouched_isolate_allocations": 240,
+        "with_selected_edges": 1200,
+        "with_stars": 14400,
+        "witness_allocations": 15840
+      },
+      "complete_degree5": {
+        "boundary_degree_checks": 81,
+        "cut_edges_checked": 250,
+        "degree_parameter_checks": 243,
+        "eligible_minimal_selections": 27,
+        "graphs": 1,
+        "minimal_selections": 27,
+        "negative_deficit_differences": 50,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 32,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 27,
+        "selected_subsets": 1024,
+        "untouched_isolate_allocations": 2,
+        "with_selected_edges": 25,
+        "with_stars": 0,
+        "witness_allocations": 27
+      },
+      "complete_nonregular_3_4": {
+        "boundary_degree_checks": 42,
+        "cut_edges_checked": 84,
+        "degree_parameter_checks": 42,
+        "eligible_minimal_selections": 14,
+        "graphs": 1,
+        "minimal_selections": 14,
+        "negative_deficit_differences": 39,
+        "nonregular_allocations": 14,
+        "one_part_subsets": 8,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "selected_subsets": 128,
+        "untouched_isolate_allocations": 2,
+        "with_selected_edges": 12,
+        "with_stars": 0,
+        "witness_allocations": 14
+      },
+      "complete_nonregular_3_5": {
+        "boundary_degree_checks": 51,
+        "cut_edges_checked": 120,
+        "degree_parameter_checks": 51,
+        "eligible_minimal_selections": 17,
+        "graphs": 1,
+        "minimal_selections": 17,
+        "negative_deficit_differences": 48,
+        "nonregular_allocations": 17,
+        "one_part_subsets": 8,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "selected_subsets": 256,
+        "untouched_isolate_allocations": 2,
+        "with_selected_edges": 15,
+        "with_stars": 0,
+        "witness_allocations": 17
+      },
+      "complete_nonregular_4_5": {
+        "boundary_degree_checks": 66,
+        "cut_edges_checked": 180,
+        "degree_parameter_checks": 132,
+        "eligible_minimal_selections": 22,
+        "graphs": 1,
+        "minimal_selections": 22,
+        "negative_deficit_differences": 63,
+        "nonregular_allocations": 22,
+        "one_part_subsets": 16,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "selected_subsets": 512,
+        "untouched_isolate_allocations": 2,
+        "with_selected_edges": 20,
+        "with_stars": 0,
+        "witness_allocations": 22
+      },
+      "seeded_nonregular": {
+        "boundary_degree_checks": 3354,
+        "cut_edges_checked": 8550,
+        "degree_parameter_checks": 3354,
+        "eligible_minimal_selections": 636,
+        "excluded_nonstar_minimal_selections": 581,
+        "graphs": 12,
+        "minimal_selections": 1217,
+        "negative_deficit_differences": 1010,
+        "nonregular_allocations": 1118,
+        "one_part_subsets": 384,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "selected_subsets": 12288,
+        "untouched_isolate_allocations": 172,
+        "with_selected_edges": 310,
+        "with_stars": 784,
+        "witness_allocations": 1118
+      },
+      "seeded_regular_5_3": {
+        "boundary_degree_checks": 1752,
+        "cut_edges_checked": 5304,
+        "degree_parameter_checks": 1752,
+        "eligible_minimal_selections": 584,
+        "excluded_nonstar_minimal_selections": 176,
+        "graphs": 12,
+        "minimal_selections": 760,
+        "negative_deficit_differences": 1188,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 384,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 584,
+        "selected_subsets": 12288,
+        "untouched_isolate_allocations": 284,
+        "with_selected_edges": 476,
+        "with_stars": 80,
+        "witness_allocations": 584
+      },
+      "seeded_regular_6_3": {
+        "boundary_degree_checks": 3414,
+        "cut_edges_checked": 12379,
+        "degree_parameter_checks": 3414,
+        "eligible_minimal_selections": 1138,
+        "excluded_nonstar_minimal_selections": 1078,
+        "graphs": 12,
+        "minimal_selections": 2216,
+        "negative_deficit_differences": 1491,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 768,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 1138,
+        "selected_subsets": 49152,
+        "untouched_isolate_allocations": 706,
+        "with_selected_edges": 1028,
+        "with_stars": 356,
+        "witness_allocations": 1138
+      },
+      "seeded_regular_6_4": {
+        "boundary_degree_checks": 2073,
+        "cut_edges_checked": 9108,
+        "degree_parameter_checks": 4146,
+        "eligible_minimal_selections": 635,
+        "excluded_nonstar_minimal_selections": 617,
+        "graphs": 8,
+        "minimal_selections": 1252,
+        "negative_deficit_differences": 1114,
+        "nonregular_allocations": 0,
+        "one_part_subsets": 512,
+        "positive_deficit_allocations": 0,
+        "positive_gap_boundary_checks": 0,
+        "regular_resource_checks": 691,
+        "selected_subsets": 32768,
+        "untouched_isolate_allocations": 309,
+        "with_selected_edges": 562,
+        "with_stars": 112,
+        "witness_allocations": 691
+      }
+    },
+    "totals": {
+      "boundary_degree_checks": 60744,
+      "cut_edges_checked": 159613,
+      "degree_parameter_checks": 110619,
+      "eligible_minimal_selections": 12510,
+      "excluded_nonstar_minimal_selections": 13972,
+      "graphs": 194,
+      "minimal_selections": 26482,
+      "negative_deficit_differences": 7462,
+      "nonregular_allocations": 1171,
+      "one_part_subsets": 6360,
+      "positive_deficit_allocations": 0,
+      "positive_gap_boundary_checks": 0,
+      "regular_resource_checks": 19077,
+      "selected_subsets": 237760,
+      "untouched_isolate_allocations": 1771,
+      "with_selected_edges": 3817,
+      "with_stars": 16308,
+      "witness_allocations": 20248
+    }
+  },
+  "scope": "Finite literal graphs and exact identities; all-parameter theorem proved in the note. Rational primal points certify only the stated numerical relaxation.",
+  "status": "PASS"
+}
