@@ -189,3 +189,64 @@ to coexist, while the same union fails to form F_q. Requiring selected
 roots to remain active inside their ears therefore does not rescue the
 proposed exact formula. The exact dissociation addition, local two-point
 cap, and lower star-forming bound remain valid.
+
+## 5. Unbounded discrepancy with one fixed ear
+
+In fact no additive correction depending only on the number of ears
+can hold for arbitrary bipartite bases. Take s>=1 disjoint copies of
+F_2 and name their exterior vertices y_1,...,y_s. Let R_s be their
+disjoint union, so SF_2(R_s)=11s by componentwise formation and minimality.
+Add just two roots d,e, the edge de, and all edges dy_j. Finally attach
+one square d-alpha-beta-e-d. Call the result J_s. The base and J_s are
+connected and bipartite, and the single matched edge is still de.
+
+Every minimal forming set of J_s meets that square in exactly two
+vertices. For each copy of F_2, the local cap (2) still applies with
+the exterior attached through y_j. If y_j is omitted, its two blocks
+contribute at most12; if y_j is selected, they contribute at most10,
+so the whole copy contributes at most11. Each copy therefore contributes
+at most12 in all cases. This gives SF_2(J_s)<=12s+2.
+
+For attainment, select both six-sets T_c in every copy and the adjacent
+pair {d,alpha}, omitting every y_j. The active d forms all y_j. Every
+block deletion has the witnesses from Section1; deleting d or alpha
+has the same private square witnesses e or beta as in Section4.
+The resulting12s+2-set is minimal forming. Consequently
+
+    |V(J_s)|=21s+4,
+    SF_2(J_s)=12s+2,
+    SF_2(J_s)-(2+SF_2(R_s))=s.                            (4)
+
+The discrepancy is unbounded although the ear count is fixed at one
+and both the base and the final graph are connected. The root degree
+grows with s; no fixed maximum-degree conclusion is drawn from (4).
+
+## 6. Verification and independent review
+
+The all-q proof and arbitrary-exterior cap received independent **ACCEPT**.
+The reviewer extracted both unchanged original checkers, verified all six
+input-file hashes, executed them with assertions enabled, and reproduced
+both reports byte-for-byte. The literal C++ computation enumerates all
+2,097,152 subsets of F_2 and 33,554,432 subsets of G_2. It computes literal
+formation for every subset; the minimality loop rejects a nonminimal set
+as soon as it finds a forming deletion. All deletions of each accepted
+minimal set are checked. This gives beta/SF=11/11 and13/14, respectively.
+
+The separate named-vertex Python checker tests the three witness families
+at q in {1,2,3,4,8,16,32,128}:16 graph models,24 witness sets,3,314 single
+deletions and1,180 named witnesses. It does not test every integer up to128.
+The general conclusions depend on the written local proof.
+
+Section5 received a separate independent **ACCEPT**. That reviewer ran
+`python3 scripts/check_single_ear_amplification.py` unchanged, with
+assertions enabled, and reproduced its203-byte report byte-for-byte:
+s in {1,2,3,8,16,64}, six models and1,140 single deletions. The exact
+upper bound for all s comes from the written arbitrary-exterior cap.
+`output/bipartite-partial-ear-review.json` preserves both full responses,
+input-file hashes, observed models and execution scopes. No Lean execution
+is claimed.
+
+The [connected-residual amplification](CONNECTED_RESIDUAL_EAR_AMPLIFICATION.md)
+proves a further unbounded-error theorem with the residual connected as
+well. That later construction has its own independent review record;
+it was not in either input reviewed above.

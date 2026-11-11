@@ -18,15 +18,60 @@ and internally active; formation of the exterior y, rather than
 root activity from the residual selection, permits the extra vertex.
 
 The original Oracle research supplied the25-vertex lower witness and
-the residual upper proof. The local reconstruction proves the all-q
-local caps with an exterior attached through y, both residual attaining
-sets, and the additional exact whole-graph upper bound6q+2. The literal
-C++ checker enumerates all2097152 residual and33554432 whole-graph
-subsets, including every single deletion, giving beta/SF=11/11 and13/14.
-Named-vertex certificates pass3314 deletions and1180 specified witnesses
-over16 models through q128. The complete new proof and both unchanged
-checkers are being independently reviewed; acceptance is not inferred
-from the original research answer or the earlier ear-ladder audit.
+residual upper proof. The local reconstruction proves the all-q local
+caps with an arbitrary exterior at y, both residual attaining sets,
+and the additional exact whole-graph upper bound6q+2. The independent
+all-q audit returned **ACCEPT**, executed both unchanged original
+checkers, and reproduced both reports byte-for-byte. The C++ checker
+computes literal formation for all2,097,152 residual and33,554,432 final
+subsets. A nonminimal set is rejected at its first forming deletion;
+each accepted minimal set passes every deletion. It finds beta/SF=11/11
+and13/14. Named-vertex certificates test q in {1,2,3,4,8,16,32,128},
+not all integers up to128:16 models,3,314 deletions and1,180 specified
+witnesses.
+
+A stronger one-ear amplification has exact values
+
+    |V(J_s)|=21s+4, SF_2(R_s)=11s, SF_2(J_s)=12s+2,
+    SF_2(J_s)-(2+SF_2(R_s))=s.
+
+Here the residual is the disjoint union of s copies of F_2, all attached
+through their y vertices to a single root d. The base and final graph
+are connected and bipartite. The arbitrary-exterior cap bounds each
+copy by12; the common active root lets every copy attain12 simultaneously.
+A separate independent **ACCEPT** reconstructs this all-s proof and ran
+the unchanged new certificate checker, reproducing its report byte-for-byte:
+s in {1,2,3,8,16,64}, six models and1,140 single deletions. The two complete
+audits and exact input hashes are in
+`output/bipartite-partial-ear-review.json`.
+
+The [connected-residual amplification](CONNECTED_RESIDUAL_EAR_AMPLIFICATION.md)
+adds a path through the y vertices and attaches its odd/even indices to
+the two roots. It proves, for every s>=1,
+
+    |V(R_s)|=21s, |V(J_s)|=21s+4,
+    SF_2(R_s)<=12s-ceil(s/3), SF_2(J_s)=12s+2.
+
+The base, final graph and residual are all connected and bipartite.
+Every residual module contributing12 would omit y and all Z vertices;
+formation of y then requires a selected neighbouring y, whose module
+contributes at most11. The modules with a positive loss therefore form
+a dominating set of the path, forcing at least ceil(s/3) total loss.
+One active root pair removes this requirement in the final graph,
+while each selected vertex retains a private deletion witness. The
+single-ear discrepancy is consequently at least ceil(s/3). The residual
+has maximum degree six; the final root degrees grow with s. No exact
+residual formula for s>1 or bounded final degree is claimed.
+
+The standalone checker passes seven sizes s in {1,2,3,4,8,16,64},1,190
+single deletions and1,190 named witnesses, and32,766 path subsets. Its
+independent review returned **ACCEPT** and ran this unchanged original
+checker with assertions enabled, reproducing both its349-byte report
+and stdout byte-for-byte. Its complete response and precise scope are
+recorded separately in `output/connected-residual-ear-review.json`.
+The reviewer also reconstructed the referenced square-ear lemma directly;
+that accepted proof is now included in the note. The earlier audits do
+not cover this later construction. All-s bounds rely on the written proof.
 
 ## Four exact parameters on two-connected outerplanar median graphs
 
@@ -398,7 +443,7 @@ retain their existing ACCEPT, scoped to their original input.
 | SF_2=beta_2 for all finite median graphs | False; the bounded-degree connected family above has linear gap |
 | SF_2=beta_2 for two-connected subcubic median graphs | Proved, using the cited ladder/cube classification and the prism theorem |
 | Exact SF addition for arbitrary partial square or pendant-path attachments | False; explicit all-m families have additive error m-4 |
-| Exact SF addition for partial square attachments to bipartite bases | False even for one ear; exact25-vertex obstruction and all-q family |
+| Exact SF addition for partial square attachments to bipartite bases | False; unbounded error with exactly one ear, even with connected base, final graph and residual |
 | Full root coverage by square or pendant-path attachments | Complete minimal-set classification and exact beta_2=sf_2=SF_2 |
 | SF_2=beta_2 for two-connected planar median graphs of maximum degree four | Open; cube chains and full-coverage ear classes proved |
 | SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |

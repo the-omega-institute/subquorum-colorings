@@ -1,13 +1,17 @@
 # Current continuation
 
 The [bipartite partial-ear obstruction](docs/BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md)
-closes the exact-addition question even with one attached square: a
-connected25-vertex bipartite example has residual SF_2=11 and full
-SF_2=14, exceeding the proposed13. The all-q family has residual
-`SF_2=max(5q+1,6q-1)` and full `SF_2=6q+2`. Its adjacent selected ear
-pair is internally active, so that extra condition does not repair
-the formula. A full literal check of both the21- and25-vertex examples
-agrees with the general proof.
+proves that exact SF addition fails even for one attached square and that
+its error is unbounded while the ear count stays fixed at one. Connected
+bipartite examples have `SF_2(R_s)=11s` and `SF_2(J_s)=12s+2`, so the
+error is exactly s. Both the all-q local proof and this amplification
+have independent ACCEPT reviews with original-checker executions.
+The [connected-residual version](docs/CONNECTED_RESIDUAL_EAR_AMPLIFICATION.md)
+keeps the base, final graph and residual connected and bipartite, with
+`SF_2(J_s)=12s+2` and `SF_2(R_s)<=12s-ceil(s/3)`. The residual degree
+is at most six; root degrees grow with s. Its all-s proof and standalone
+certificate checks have a separate independent ACCEPT, which also reran
+the unchanged checker and reproduced its report byte-for-byte.
 
 The [four-parameter ear-ladder family](docs/EAR_LADDER_FOUR_PARAMETERS.md)
 has, for every r>=1, order16r and exact values
