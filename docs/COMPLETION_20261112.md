@@ -1,5 +1,28 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Five-row grids at every length
+
+The [five-row proof](FIVE_ROW_STAR_FORMING_EQUALITY.md) establishes
+`SF_2(P_5 square P_n)=beta_2=psi_sq=F(5,n)` for every positive n. The
+value is 4,6,9 at n=1,2,3 and `8floor(n/3)+3(n mod3)` for n>=4. The
+new conclusion is the SF upper bound. The same general deletion-witness
+frontier, now stored compactly, gives complete vectors with 8,227,512
+reachable states and the exact identity V17=V14+8. Transfer homogeneity
+and exact initial values prove the result at arbitrary length.
+
+The independent literal-star implementation compares all 33,554,432 local
+kernel entries against the generator, reconstructs all seventeen prefixes
+with standard unordered maps, compares every entry and complete support
+at both endpoints, and verifies the translation. Its whole-board controls
+compare individual subset acceptance with global minimality on 1,082,400
+subsets of 5-by-1 through 5-by-4. The new generator also reproduces the
+accepted h3/h4 endpoint vectors. Both existing width-five colouring
+implementations were rerun and reproduced four archived outputs exactly.
+No state truncation or new Lean execution is used. Independent final
+review is pending; both dimensions of a still-uncovered rectangle must
+now be at least six. Arbitrary-width equality and a universal 5/6 gain
+remain open.
+
 ## The four-row extension
 
 The [four-row proof](FOUR_ROW_STAR_FORMING_EQUALITY.md) closes the upper
@@ -579,6 +602,7 @@ retain their existing ACCEPT, scoped to their original input.
 | SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is three | Proved for every positive other side; complete-vector computer-assisted proof, independently accepted with original executions |
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is four | Proved for every positive other side by the full-vector extension; separately accepted with original executions |
+| Rectangular-grid SF_2=beta_2=psi_sq when one side is five | Complete-vector computer-assisted proof and independent full reconstruction pass locally; separate final review pending |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |

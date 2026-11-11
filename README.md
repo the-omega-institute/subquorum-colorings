@@ -1,5 +1,17 @@
 # Current continuation
 
+The [five-row theorem](docs/FIVE_ROW_STAR_FORMING_EQUALITY.md) extends the
+all-length star-forming result to height five. For every n>=1,
+`SF_2(P_5 square P_n)=beta_2=psi_sq=F(5,n)`; the value is 4,6,9 at lengths
+1,2,3 and `8floor(n/3)+3(n mod3)` thereafter. A compact nontruncating
+generator finds `V17=V14+8` on 8,227,512 reachable states. An independent
+literal-star implementation compares every one of the 33,554,432 local
+kernel entries, reconstructs both complete vectors with standard maps,
+and checks 1,082,400 individual small-board selections. The general
+frontier and induction prove the all-length implication. The prior
+colouring supplier was rerun separately. Independent final review is
+pending; arbitrary width and the universal 5/6 improvement remain open.
+
 The [three-row upper-forming theorem](docs/THREE_ROW_STAR_FORMING_EQUALITY.md)
 establishes `SF_2(P_3 square P_n)=5floor(n/3)+2(n mod3)` for every n>=1,
 by an exact deletion-witness frontier and whole-vector translation followed
