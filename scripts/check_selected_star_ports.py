@@ -172,6 +172,10 @@ def check(r, arcs, J=None, exact=False, literal=False, one_part=False):
               'minimal_selected_size': S.bit_count(), 'beta_certificate': expected,
               'selected_deficit': r - J.bit_count(), 'deletion_failures': deletion_checks,
               'literal_star_checks': literal_checks}
+    if r > 4:
+        # The family name and r regenerate these large interface edge lists.
+        result['arc_count'] = len(arcs)
+        del result['arcs']
     if exact:
         value, calls = exact_beta(adj)
         assert value == expected
