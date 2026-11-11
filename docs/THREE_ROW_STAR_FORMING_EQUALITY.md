@@ -202,10 +202,12 @@ both complete vectors from the empty prefix and compares every saved entry.
 The checker also compares its acceptance with literal global minimality
 for every selected subset on the stated small boards: 21 boards, 44,954
 subsets, heights one through three. In particular, the one-column closure
-has an explicit exhaustive regression. Finite kernel controls cover all
-33,824 five-column masks at heights one, two and three. These finite tests
-check the implementations; Sections 1--3 prove the general frontier
-specification and its all-length implication.
+has an explicit exhaustive regression. The literal-star kernels are fully
+constructed on all 33,824 five-column masks at heights one, two and three.
+This is distinct from the 44,954 explicit transfer-acceptance comparisons;
+the checker does not compare every C++ kernel or transition-table entry
+against Python. These finite tests check the implementations; Sections
+1--3 prove the general frontier specification and its all-length implication.
 
 The initial exploratory closure used the n>=2 tail at n=1 and incorrectly
 reported three for P_3; the literal reference found two. Both final programs
@@ -213,6 +215,23 @@ use the correct one-column tail, and the original discovery output is
 retained locally as provenance, not a theorem or final validation report.
 The endpoint certificate at lengths 12 and 15 was unaffected.
 
-Independent review and its actual execution scope will be recorded with
-this note. There is no exhaustive subset search on large G_n, no general
-SF<=Omega premise, no new Lean execution, and no arbitrary-width claim.
+The independent audit returned **ACCEPT** for the mathematical proof and
+finite premise. The reviewer ran the unchanged C++ generator and the
+unchanged Python checker with assertions enabled, rebuilt both complete
+vectors from the empty prefix, and reproduced both TSVs and both new JSON
+reports byte-for-byte. An additional independent canonical serialization
+of the Python vectors matched the TSV bytes. The reviewer also reran the
+old Omega generator and checker and reproduced its four width-three
+outputs exactly. They reproduced the wrong one-column tail and confirmed
+the corrected boundary handling. No mathematical revision was requested.
+
+The full response, pinned input hashes and actual execution scope are in
+[the review record](../output/grid-star-transfer-review.json). The reviewer
+could not retrieve the original arXiv v1 text to confirm the exact theorem
+number; their independent check of the supplied prior Omega proof and
+certificates supports the colouring corollary without that retrieval.
+The wording above distinguishes literal-kernel construction from explicit
+acceptance comparisons, as suggested in review. Code and certificates are
+unchanged after review. There is no exhaustive subset search on large G_n,
+no general SF<=Omega premise, no new Lean execution, and no arbitrary-width
+claim.

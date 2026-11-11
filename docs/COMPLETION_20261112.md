@@ -15,7 +15,13 @@ stars and compares all entries. It also checks all 1,048,576 local masks
 and 69,904 whole-board subsets. The vectors are regenerable output, with
 their exact hashes in the concise report. With the prior width-four
 colouring theorem, all three parameters coincide. This is a computer-assisted
-result; it is being independently audited as a separate extension.
+result. The separate independent audit returned **ACCEPT**, ran both
+unchanged implementations, and reproduced both reports byte-for-byte and
+both vector hashes. It reconstructed the general frontier argument without
+assuming the height-three numerical result. The reviewer-reported source
+hashes match our pinned manifest; that manifest was not in their attachment.
+[The review record](../output/grid-star-height-four-review.json) gives the
+complete execution and provenance scope. No code or certificate changed.
 
 ## Upper forming number and triple equality at height three
 
@@ -38,8 +44,15 @@ reconstructs both vectors from the empty prefix. It also compares every
 44,954 selected subset on 21 small boards with literal global minimality.
 The one-column boundary has its own corrected and exhaustively checked
 tail. This is a computer-assisted theorem with a finite exact premise,
-not scalar extrapolation; independent final review is pending. The full
-arbitrary-width triple equality and universal 5/6 improvement remain open.
+not scalar extrapolation. The independent audit returned **ACCEPT** and
+ran both unchanged implementations and the prior Omega supplier. All
+eight supplied result files were reproduced byte-for-byte; the reviewer
+also reproduced the erroneous one-column tail and verified its correction.
+The [review record](../output/grid-star-transfer-review.json) preserves the
+complete answer, pinned source hashes and exact scope. The 33,824 local
+patterns describe literal-kernel construction; the explicit per-subset
+acceptance comparisons number 44,954. The full arbitrary-width triple
+equality and universal 5/6 improvement remain open.
 
 ## Exact decoration formula and sharp path-residual values
 
@@ -564,6 +577,8 @@ retain their existing ACCEPT, scoped to their original input.
 | Full root coverage by square or pendant-path attachments | Complete minimal-set classification and exact beta_2=sf_2=SF_2 |
 | SF_2=beta_2 for two-connected planar median graphs of maximum degree four | Open; cube chains and full-coverage ear classes proved |
 | SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |
+| Rectangular-grid SF_2=beta_2=psi_sq when one side is three | Proved for every positive other side; complete-vector computer-assisted proof, independently accepted with original executions |
+| Rectangular-grid SF_2=beta_2=psi_sq when one side is four | Proved for every positive other side by the full-vector extension; separately accepted with original executions |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |

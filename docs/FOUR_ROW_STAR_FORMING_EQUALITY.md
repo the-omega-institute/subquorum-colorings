@@ -117,9 +117,42 @@ for every subset on the four boards 4-by-1 through 4-by-4: 69,904 subsets.
 Those small controls test the implementation and boundary cases; the general
 frontier proof and vector induction supply the all-n conclusion.
 
+The literal kernel construction does not serialize and compare every C++
+kernel entry. The cross-language checks are the complete endpoint vectors
+and the per-subset whole-board acceptance comparisons described above.
+
 The C++ program enforces a one-million reachable-state resource limit;
-exceeding it terminates without a certificate. The successful 17-column
-run remains below that limit. No general resource bound is inferred from
-the observed reachable count. No Lean execution or arbitrary-width proof
-is claimed. Independent review and its executed scope will be recorded
-separately from the three-row audit.
+exceeding it terminates unsuccessfully, without a successful certificate
+report. A failed run may leave a partial endpoint file or old output, so
+use a fresh disposable output directory and require both process exit
+statuses to be zero. The successful 17-column run remains below that limit.
+No general resource bound is inferred from the observed reachable count.
+
+The independent audit returned **ACCEPT**. The reviewer reconstructed the
+general frontier proof without assuming the height-three numerical result,
+ran the unchanged C++ generator and unchanged Python checker with assertions
+enabled in a fresh directory, and compared every endpoint entry against
+the independently rebuilt vectors. Both regenerated reports were identical
+to the supplied bytes; both generated vector hashes matched the recorded
+hashes. The reviewer reported the hashes of all three executed/imported
+source files, which match our pinned Git revision. Their attachment did
+not include the separate expected-source manifest, so this last binding
+was checked locally against the reviewer-reported hashes. No mathematical
+revision was requested, and code and certificates are unchanged.
+
+[The full audit record](../output/grid-star-height-four-review.json)
+preserves the response, exact input manifest and execution scope. That
+audit accepted the star-forming and dissociation theorem; it used the
+prior width-four colouring formula as stipulated, without retrieving or
+reauditing Sahbi's paper. Its execution does not certify the separate
+height-three numerical theorem. No Lean execution or arbitrary-width proof
+is claimed.
+
+Separately, a local rerun of the existing independent Omega supplier
+checker reconstructed its width-four certificate from the empty prefix:
+`PASS width=4 start=3 period=2 doubled_increment=8 states=236`.
+The [supplier receipt](../output/grid-star-height-four-colouring-supplier-check.json)
+pins those inputs. The general supplier proof and its exact initial values
+give the prior colouring formula, so this rerun also checks the finite
+colouring premise of the triple-equality corollary. This was a local
+verification of existing work, outside the four-row reviewer's execution.

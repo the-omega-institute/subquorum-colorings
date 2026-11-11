@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "at": "2026-11-11T20:58:11.086488+00:00",
+  "scope": "Local rerun of existing independent width-four Omega supplier checker; no new colouring theorem claimed. Existing general supplier proof and finite values accompany this certificate.",
+  "command": [
+    "local-runs/grid-star-20261112/check-omega-h4-supplier",
+    "4",
+    "3",
+    "2",
+    "8",
+    "subquorum-colorings/develop/results/omega-w4"
+  ],
+  "exit_code": 0,
+  "stdout": "PASS width=4 start=3 period=2 doubled_increment=8 states=236\n",
+  "files": {
+    "develop/check_omega.cpp": {
+      "sha256": "f790f19d51b3a5e8daa659d0bf43558353b91f6875ed8625530f3505f41706a1",
+      "bytes": 2936
+    },
+    "develop/grid-strips-2026-09-27.md": {
+      "sha256": "6276186fe7d3dfda6b25e86d87d9706d428b07d11cb4b4291b224cfb8135fc01",
+      "bytes": 8940
+    },
+    "develop/results/omega-w4.json": {
+      "sha256": "29a504ba9137ece8b1df015d957bc75737bb7e8c13354899e65e84ba15d7a5a3",
+      "bytes": 68
+    },
+    "develop/results/omega-w4-start.tsv": {
+      "sha256": "0adcd5dc5a5a83925f622b84cf53839661dd05f4f147289ac1fd392737990983",
+      "bytes": 1767
+    },
+    "develop/results/omega-w4-end.tsv": {
+      "sha256": "be2a4d74b048295b0906addd80f9965231808028bd4191c9fd9738ee65c0cecf",
+      "bytes": 1776
+    },
+    "develop/results/omega-w4.csv": {
+      "sha256": "4117d7dbb6423f916d9b9d1b4deab6cc4b694cbaa04d6911251bfbc301d65376",
+      "bytes": 470
+    }
+  },
+  "main_revision": "48728b42d39ab3de5de251c61da5a404ec418a69",
+  "state_count": 236,
+  "start": 3,
+  "period": 2,
+  "doubled_increment": 8
+}

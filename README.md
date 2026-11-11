@@ -6,15 +6,20 @@ by an exact deletion-witness frontier and whole-vector translation followed
 by induction. With the prior width-three colouring theorem, this closes
 the proposed triple equality at height three. The finite certificate is
 independently rebuilt from the empty prefix using literal three-vertex
-stars. This is a computer-assisted all-length proof; independent final
-review is pending, and arbitrary width remains open.
+stars. This computer-assisted all-length proof has an independent
+[ACCEPT review](output/grid-star-transfer-review.json): both unchanged
+implementations and the prior Omega supplier were executed, with all eight
+attached output files reproduced byte-for-byte. Arbitrary width remains open.
 
 The [four-row extension](docs/FOUR_ROW_STAR_FORMING_EQUALITY.md) gives
 `SF_2(P_4 square P_n)=beta_2(P_4 square P_n)=2n+(n mod2)` for every n>=1.
 Its independent literal-star reconstruction verifies `V17=V15+4` on all
 342,768 reachable states. The same general frontier proof and induction,
 together with the prior width-four colouring theorem, give triple equality
-at height four. It is being reviewed separately from the height-three input.
+at height four. Its separate [ACCEPT review](output/grid-star-height-four-review.json)
+ran both unchanged implementations, reproduced both reports byte-for-byte,
+and matched the two endpoint hashes. The two audits preserve their exact
+input snapshots and execution scopes.
 
 The [exact decorated-interface formula](docs/EXACT_DECORATED_INTERFACE_FORMULA.md)
 converts a minimum interface forming set into a maximum minimal forming
@@ -59,7 +64,7 @@ These graphs are two-connected, outerplanar, median, and have maximum
 degree four. Every local selected/endpoint configuration is charged
 once to prove the upper bound; an explicit9r-colour partial colouring
 attains it. Thus even in this restricted class, SF/dissociation equality
-does not imply sub-quorum equality. Full rectangular grids remain open.
+does not imply sub-quorum equality. Arbitrary-width rectangular grids remain open.
 
 The [square-ear composition theorem](docs/SQUARE_EAR_STAR_FORMING_COMPOSITION.md)
 classifies every minimal forming set when squares are attached along a
