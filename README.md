@@ -1,5 +1,13 @@
 # Current continuation
 
+The [exact decorated-interface formula](docs/EXACT_DECORATED_INTERFACE_FORMULA.md)
+converts a minimum interface forming set into a maximum minimal forming
+set of a21-fold decoration: `SF_2(D(H))=12|H|-sf_2(H)` for every finite
+simple H. A stronger activity cap pays for each extra interface selection
+once. It gives the exact connected path residual and the exact single-ear
+discrepancy `mu(s)=2floor(s/4)+min(s mod4,2)`, strengthening the earlier
+domination estimate.
+
 The [local stability theorem](docs/LOCAL_STAR_FORMING_STABILITY.md)
 proves two-sided bounds for deleting an arbitrary interface in any finite
 simple graph. The repair preserves original selections beyond radius five;

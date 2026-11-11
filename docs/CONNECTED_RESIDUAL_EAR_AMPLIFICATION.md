@@ -15,6 +15,11 @@ Consequently
 
 Thus connectedness of the base, final graph, and residual does not permit
 an additive error bound depending only on the number of square ears.
+The subsequent [exact interface theorem](EXACT_DECORATED_INTERFACE_FORMULA.md)
+strengthens this to SF_2(R_s)=12s-mu(s), with exact single-ear error mu(s),
+where mu(s)=2floor(s/4)+min(s mod4,2). The proof below retains the original
+domination estimate and its original review scope.
+
 The residual has maximum degree at most six. The two root degrees grow
 with s, so (1) makes no fixed-degree claim for B_s or J_s.
 
@@ -106,8 +111,9 @@ It follows that
 
 This proves the residual upper bound. No sufficiency claim about this
 dominating condition is needed: it is a necessary consequence of literal
-formation and the local cap. In particular we do not claim an exact
-formula for SF_2(R_s) when s>1.
+formation and the local cap. The exact formula for SF_2(R_s) is
+proved separately in the later interface theorem, using a stronger
+activity-sensitive block cap. It is not a consequence of domination alone.
 
 ## 4. Exact value after attaching the one ear
 

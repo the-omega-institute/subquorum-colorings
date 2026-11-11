@@ -1,5 +1,30 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Exact decoration formula and sharp path-residual values
+
+The [decorated-interface theorem](EXACT_DECORATED_INTERFACE_FORMULA.md)
+proves SF_2(D(H))=12|H|-sf_2(H) for every finite simple H. Each interface
+vertex is replaced by the fixed21-vertex F_2 module. A selected interface
+with internal activity costs at least two of the twelve available units.
+These extra units pay, once each, for any extra interface selections
+needed to turn a globally minimal decorated set into a forming set of H.
+Conversely every minimal forming set Q of H lifts to a minimal decorated
+set of size12|H|-|Q|. Taking Q minimum proves the exact identity.
+
+For H=P_s, minimum forming sets have exact size
+mu(s)=2floor(s/4)+min(s mod4,2), by selected-run counting and printed
+attaining binary patterns. Hence the earlier connected residual has
+SF_2(R_s)=12s-mu(s), and its single-ear discrepancy is exactly mu(s).
+This closes the residual optimum, rather than merely proving it grows.
+The roots in that family still have increasing degree; fixed-degree
+error boundedness follows from the separate local-stability theorem.
+
+The independent checker covers every interface graph through order5,
+all binary path strings through order14,1,265 lifted minimal sets,70,717
+specified deletion witnesses, and44 seeded globally minimal decorations.
+There is no exhaustive SF search over the large decorated graphs.
+Review scope is preserved in `output/decorated-interface-review.json`.
+
 ## Fixed-degree local stability and arbitrary interfaces
 
 The [local stability theorem](LOCAL_STAR_FORMING_STABILITY.md) proves,
@@ -31,8 +56,11 @@ The standalone literal checker passes1,100 exhaustive small graphs,
 973,858 induced-selection states,669,163 interface repairs and329 ear
 models. The research-stage answer's overstrong all-minimal-set minimum
 is explicitly rejected by the claw. Final statements use the correct
-fixed-S inequality. Exact review scope is recorded separately in
-`output/local-star-stability-review.json`. No new Lean is claimed.
+fixed-S inequality. Independent **ACCEPT** reconstructed the entire local proof and supplying
+square theorem, ran the unchanged original C++17 checker with checks
+active, and reproduced its622-byte report byte-for-byte. Exact input
+hashes, full response and finite execution limits are recorded separately
+in `output/local-star-stability-review.json`. No new Lean is claimed.
 
 ## Bipartiteness does not rescue exact partial-ear addition
 

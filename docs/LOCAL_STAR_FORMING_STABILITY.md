@@ -12,7 +12,7 @@ For U subset V(G), put H=G-U and
     b_r(U)=|B_r(U) minus U|.
 
 Thus B_r includes U; B_r(empty)=empty, and vertices in different
-components have infinite distance. All distances below are in G.
+components have infinite distance. All distances below are in G. The empty graph has SF_2(empty)=0.
 
 **Theorem 1 (deleting an interface).** For arbitrary U,
 
@@ -78,7 +78,7 @@ to x and to an A vertex a. If t differs from w, then x already has the
 two selected neighbours t,w after deleting v, contradicting its failure.
 If t=w, the path v-w-a has length two. This exhausts the possibilities.
 The argument also covers triangles, since stars need not be induced.
-No bipartiteness assumption is used. Square.
+No bipartiteness assumption is used. This proves the lemma.
 
 ## 2. Proof of the interface theorem
 
@@ -107,7 +107,9 @@ implies the upper bound in (1).
 For the lower bound, take a maximum minimal forming set T of H. The
 set T union U forms G, since all new vertices are selected and each
 old outside vertex retains its old star. If v in T is outside B_3(U),
-its old witness x lies in H. Lemma 2, applied to that witness with
+its old witness x lies in H. The subgraph on (T-{v}) union {x} is
+identical in H and G because no selected vertex is in U. Lemma 2,
+applied to that witness with
 added set U, shows that it remains a witness in G. Its proof applies
 although T alone need not form all of G: formation of the old outside
 witness in H is all that the proof uses. Hence every forming subset
@@ -132,13 +134,13 @@ It forms. The deletion failures are:
 | 6 | 7 |
 | 8 | 8 |
 
-Thus S is minimal. Adding A={2} makes vertex5 deletable: its own two
+Thus S is minimal. Adding A={2} makes vertex 5 deletable: its own two
 neighbours4,6 stay selected; vertex3 gains selected2 in addition to4;
 vertex7 retains selected6,8. The remaining outside vertices are formed.
 Since dist(5,2)=3, distance three in Lemma 2 cannot be replaced by two.
 
 Now delete U={0}. The restricted set S_H is unformed exactly at2,
-so the canonical repair set in Theorem1 is A={2}. Vertex5 is again
+so the canonical repair set in Theorem 1 is A={2}. Vertex5 is again
 deletable after repair, and dist(5,U)=5. A forming subset omitting5
 therefore exists, and can be minimized without reintroducing5. Thus
 one cannot guarantee preservation of every original selected vertex at
@@ -153,7 +155,7 @@ inclusion-minimality separate over disjoint components, so
 
     SF_2(G-U)=sum_i SF_2(F_i).
 
-Theorem1 therefore gives
+Theorem 1 therefore gives
 
     sum_i SF_2(F_i)-b_3(U) <= SF_2(G)
            <= sum_i SF_2(F_i)+|U|+b_5(U).                  (5)
@@ -167,8 +169,9 @@ If G has maximum degree Delta>=1, a breadth-first count gives
     b_r(U)<=|U| Delta sum_(j=0)^(r-1) (Delta-1)^j.        (6)
 
 At distance one there are at most |U|Delta vertices; at later layers
-each vertex has a predecessor, leaving at most Delta-1 forward edges.
-Overlaps only reduce the count. At Delta=1 the sum is interpreted
+each vertex has a predecessor, leaving at most Delta-1 forward edges. Thus |L_(j+1)|<=
+(Delta-1)|L_j| for the simultaneous BFS layers. Overlaps only reduce
+the count. At Delta=1 the sum is interpreted
 literally, with (Delta-1)^0=1. At Delta=0, b_r(U)=0.
 Thus a fixed interface size and fixed maximum degree yield an error
 bound independent of the sizes of the components.
@@ -229,8 +232,22 @@ deleted, refutes it: SF=3 but the smallest minimal forming set has size2.
 The final statement (3) is for each fixed S; SF(G) on the left requires
 an SF-maximizing S. The report includes that exact regression. Complete
 provenance is in `output/local-star-research.json`. A separate final
-independent review is recorded in `output/local-star-stability-review.json`;
-it must not be inferred from the research response.
+independent review returned **ACCEPT**, reconstructed the complete proof,
+compiled and ran the unchanged C++17 checker with checks active, and
+reproduced its622-byte report byte-for-byte. Its complete response and
+input hashes are in `output/local-star-stability-review.json`. The reviewer
+independently checked all six square-pair rows and their twelve witnesses.
+Its mathematical verdict is distinct from the research response.
+
+The96 seeded graphs are not deduplicated; the97th seeded entry is the
+explicit P9. The extra claw builds one additional induced-state table.
+The ear routine exhausts subsets using the activity predicate; literal
+three-vertex enumeration is cross-checked separately on full graph subsets.
+Each nonempty-ear control has at most two residual vertices, so it does
+not exercise ear BFS layers three to five. The five-layer coefficient
+has the general breadth-first proof above. The original checker is
+unchanged after review; later edits clarify these scopes and the proof.
+No unreviewed strengthening from the research answer is used.
 
 The local perturbation question was posed to Oracle after the preceding
 ear obstruction. The final proof and checker are reconstructed locally;
