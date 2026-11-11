@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-12",
+  "scientific_commit": "2769477d17550cee6469c074516db10e2384ab40",
+  "status": "Written general proofs and local independent checks complete; independent Oracle reviews running, no verdict yet",
+  "initial_review": {
+    "source_commit": "4a3aa6e1200c428031727813f8ffc8e26e84ec0a",
+    "scope": "Theorems1-4, retained-path adapter, width algorithm and full-versus-retained cascade",
+    "status": "RUNNING",
+    "original_exec": 11748,
+    "request_sha256": "dd7be430f118aabff3ed1c171a6c06e12f74c628c9707b1dd1cca6124e58ca26",
+    "source_manifest": "local-runs/ownership-dp-20261112/review-source-manifest.json"
+  },
+  "height_three_review": {
+    "source_commit": "2769477d17550cee6469c074516db10e2384ab40",
+    "scope": "Theorem5 feasible all-r 3x6r family, lower bound and full matching",
+    "status": "RUNNING",
+    "original_exec": 73506,
+    "prompt_sha256": "c77a79979ae8517540c15ee188dc192b67cc1bd788903ea12b8cc48391684134"
+  },
+  "source_and_report_hashes": {
+    "docs/EXACT_TH_OPTIMIZATION_AND_LADDERS.md": "4d59f650a215e7fb698251727626876792db8d22ccb46788cc26a2d20c2b5ec8",
+    "scripts/source_label_dp.py": "6e9376145404bbf147c36df78531d3c9899bf0760f51b415061d9afa4cc2aed0",
+    "scripts/check_source_label_dp.py": "0e9009c81aeb35aeef52a3919e20adab8ad614fadbd96fe128954a326f2ee463",
+    "output/source-label-dp-check.json": "79b7b46438cacfc8f53458394848bf3e0479fbdfe36d6890d805bd7f038a7fb2",
+    "output/source-label-dp-witnesses.json": "910dd9a81396e1943547fbde709bd3597db73cdcf77629b2c50f61eebcf27995",
+    "output/three-row-positive-expense.json": "7382d57d254eab6752c173788550d42aba4ef25cfeca22f8cef8b380280b6360"
+  },
+  "scope": "No Lean; reviewer execution not claimed; universal5/6 and grid triple equality remain open; no email or submission"
+}
