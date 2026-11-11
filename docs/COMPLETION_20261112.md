@@ -4,12 +4,12 @@
 
 The [decorated-interface theorem](EXACT_DECORATED_INTERFACE_FORMULA.md)
 proves SF_2(D(H))=12|H|-sf_2(H) for every finite simple H. Each interface
-vertex is replaced by the fixed21-vertex F_2 module. A selected interface
+vertex is replaced by the fixed 21-vertex F_2 module. A selected interface
 with internal activity costs at least two of the twelve available units.
 These extra units pay, once each, for any extra interface selections
 needed to turn a globally minimal decorated set into a forming set of H.
 Conversely every minimal forming set Q of H lifts to a minimal decorated
-set of size12|H|-|Q|. Taking Q minimum proves the exact identity.
+set of size 12|H|-|Q|. Taking Q minimum proves the exact identity.
 
 For H=P_s, minimum forming sets have exact size
 mu(s)=2floor(s/4)+min(s mod4,2), by selected-run counting and printed
@@ -19,11 +19,19 @@ This closes the residual optimum, rather than merely proving it grows.
 The roots in that family still have increasing degree; fixed-degree
 error boundedness follows from the separate local-stability theorem.
 
-The independent checker covers every interface graph through order5,
-all binary path strings through order14,1,265 lifted minimal sets,70,717
-specified deletion witnesses, and44 seeded globally minimal decorations.
+The independent checker covers every interface graph through order 5,
+all binary path strings through order 14, 1,265 lifted minimal sets, 70,717
+specified deletion witnesses, and 44 seeded globally minimal decorations.
 There is no exhaustive SF search over the large decorated graphs.
-Review scope is preserved in `output/decorated-interface-review.json`.
+Independent **ACCEPT** reconstructed the general proof and dependencies,
+ran the unchanged original checker with assertions enabled, and reproduced
+its 550-byte report and stdout byte-for-byte. None of its original 1,309
+upper-map calls triggers augmentation. The reviewer separately checked
+two minimal decorations with 54 deletions, including two augmentation
+indices choosing the same added vertex. A separate local literal-star
+checker now reproduces these cases; its output is recorded separately.
+The complete response and execution scopes are preserved in
+`output/decorated-interface-review.json`.
 
 ## Fixed-degree local stability and arbitrary interfaces
 
@@ -122,8 +130,11 @@ a dominating set of the path, forcing at least ceil(s/3) total loss.
 One active root pair removes this requirement in the final graph,
 while each selected vertex retains a private deletion witness. The
 single-ear discrepancy is consequently at least ceil(s/3). The residual
-has maximum degree six; the final root degrees grow with s. No exact
-residual formula for s>1 or bounded final degree is claimed.
+has maximum degree six; the final root degrees grow with s. The later
+decorated-interface theorem above sharpens the residual bound to the exact
+value 12s-mu(s), and the discrepancy to mu(s). The original proof and review
+of this connected-residual construction establish the weaker domination
+bound and the exact final-graph value independently of that later theorem.
 
 The standalone checker passes seven sizes s in {1,2,3,4,8,16,64},1,190
 single deletions and1,190 named witnesses, and32,766 path subsets. Its
@@ -502,6 +513,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Exact genuine TH expense at fixed grid width, with retained paths | Solved by the source-label DP, exponential in width |
 | Zero expense for all feasible ladder and E(H) instances | Proved, arbitrary M and nonnegative weights |
 | Zero expense for every feasible full grid instance | False: the explicit 3-by-6r family has expense r with unit actual weights |
+| Simultaneous endpoint counting for overlapping Hall-tight regions | Proved with one global HH budget; compatible physical routing and a universal coefficient gain remain open |
 | SF_2=beta_2 for all finite median graphs | False; the bounded-degree connected family above has linear gap |
 | SF_2=beta_2 for two-connected subcubic median graphs | Proved, using the cited ladder/cube classification and the prism theorem |
 | Exact SF addition for arbitrary partial square or pendant-path attachments | False; explicit all-m families have additive error m-4 |

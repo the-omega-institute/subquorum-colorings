@@ -2,11 +2,15 @@
 
 The [exact decorated-interface formula](docs/EXACT_DECORATED_INTERFACE_FORMULA.md)
 converts a minimum interface forming set into a maximum minimal forming
-set of a21-fold decoration: `SF_2(D(H))=12|H|-sf_2(H)` for every finite
+set of a 21-fold decoration: `SF_2(D(H))=12|H|-sf_2(H)` for every finite
 simple H. A stronger activity cap pays for each extra interface selection
 once. It gives the exact connected path residual and the exact single-ear
 discrepancy `mu(s)=2floor(s/4)+min(s mod4,2)`, strengthening the earlier
-domination estimate.
+domination estimate. Its independent ACCEPT review ran the unchanged
+original checker and reproduced the report byte-for-byte. The review
+also checked two additional minimal decorations exercising the augmentation
+and repeated-choice branches; a separate literal-star checker reproduces
+those two controls locally. Exact scopes are recorded with the proof.
 
 The [local stability theorem](docs/LOCAL_STAR_FORMING_STABILITY.md)
 proves two-sided bounds for deleting an arbitrary interface in any finite
@@ -24,8 +28,10 @@ bipartite examples have `SF_2(R_s)=11s` and `SF_2(J_s)=12s+2`, so the
 error is exactly s. Both the all-q local proof and this amplification
 have independent ACCEPT reviews with original-checker executions.
 The [connected-residual version](docs/CONNECTED_RESIDUAL_EAR_AMPLIFICATION.md)
-keeps the base, final graph and residual connected and bipartite, with
-`SF_2(J_s)=12s+2` and `SF_2(R_s)<=12s-ceil(s/3)`. The residual degree
+keeps the base, final graph and residual connected and bipartite. Its
+original bound `SF_2(R_s)<=12s-ceil(s/3)` is strengthened by the exact
+decoration formula above to `SF_2(R_s)=12s-mu(s)`; `SF_2(J_s)=12s+2`.
+The residual degree
 is at most six; root degrees grow with s. Its all-s proof and standalone
 certificate checks have a separate independent ACCEPT, which also reran
 the unchanged checker and reproduced its report byte-for-byte.
@@ -502,7 +508,7 @@ from the empty state, runs finite controls, builds the paper, and checks Lean.
 
 ## Attribution and license
 
-This repository is an Omega Institute research artifact. Sahbi is credited for
+This repository contains the project's research artifacts. Sahbi is credited for
 the source problems and methods; this deposit does not assign him authorship
 of the current draft. The manuscript author list is provisional.
 AI assistance included mathematical exploration, code development, cross-checking

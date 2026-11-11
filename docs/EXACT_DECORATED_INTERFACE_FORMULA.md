@@ -1,7 +1,7 @@
 # An exact upper-to-lower star-forming composition formula
 
 Let H be any finite simple graph on n vertices. Replace each vertex v
-by a copy of the21-vertex graph F_2 from the bipartite ear obstruction,
+by a copy of the 21-vertex graph F_2 from the bipartite ear obstruction,
 using y_v as its interface. Join y_u to y_v exactly when uv is an edge
 of H. Call the result D(H). We prove the exact formula
 
@@ -12,7 +12,7 @@ of an inclusion-minimal forming set. SF_2 is the maximum such size.
 All stars are non-induced K_(1,2), and all deletions test the newly
 omitted vertex. In particular, this theorem is valid for nonbipartite H.
 
-For nonempty H, D(H) has order21n, minimum degree two, and maximum degree
+For nonempty H, D(H) has order 21n, minimum degree two, and maximum degree
 max(5,4+Delta(H)). It is connected exactly when H is connected, and it is
 bipartite exactly when H is bipartite. The induced graph on all y_v is H;
 a bipartition of H extends by choosing the corresponding orientation
@@ -26,7 +26,7 @@ two-sets A,V,W,Z and vertices p,u, with all A--V and W--Z edges, and
     a_i z_i, v_i w_i, p z_i, u w_i, y z_i, i=1,2.
 
 Only y has neighbours in other modules. The supplying arbitrary-exterior
-cap in `BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md`, Section2, proves that a
+cap in `BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md`, Section 2, proves that a
 block's contribution b to a globally minimal forming set satisfies
 
     b<=6; z>0 implies b<=5; y selected implies b<=5.        (2)
@@ -46,14 +46,14 @@ If w>0, selected u is similarly deletable through the active W--Z edge.
 When w=0, u must be selected. By (2), it suffices to exclude b=5.
 
 Suppose w>0. We have p=u=0. The core is K_(4,4) minus a perfect matching
-on sides A union W and V union Z. If its selected side sizes are2 and3,
-delete a non-Z selection from the side of size3: a V vertex on the
+on sides A union W and V union Z. If its selected side sizes are 2 and 3,
+delete a non-Z selection from the side of size 3: a V vertex on the
 second side, or an A vertex on the first. It exists because W,Z each
-have size at most2. Two selections remain on each side, making every
+have size at most 2. Two selections remain on each side, making every
 selected core vertex active and forming every omitted one. W and Z
 stay nonempty, so p,u are formed and y stays active.
 
-The remaining side sizes are1 and4. If A union W has size1, then it
+The remaining side sizes are 1 and 4. If A union W has size1, then it
 is a single W_i, while all V,Z are selected. Delete V_i. It sees active
 W_i; all outside A see their own active selected Z, and outside W,p,u
 see active Z or W. If V union Z has size1, it is a single Z_i, with
@@ -102,7 +102,7 @@ Take any globally minimal forming set S of D(H). Put
 We construct a forming set Q of H of size at most C. Start with P.
 For every v in P such that y_v is selected and internally active,
 and v has no neighbour in P but has at least one neighbour in H,
-choose one neighbour a(v) and add it to P. Let I be this set of v and
+choose one neighbour a(v), keeping the original P fixed. Let I be this set of v and
 let Q=P union {a(v):v in I}. Each v in I has c_v>=2 by (4). Therefore
 
     |Q|<=|P|+|I|<=sum_v c_v=C.                             (5)
@@ -130,8 +130,8 @@ selection is paid by a distinct extra unit at its index in I.
 Choose a minimum forming set Q of H. It is inclusion-minimal, since
 a proper forming subset would contradict minimum size.
 In each module indexed by Q, select y and A union W union {p} in both
-blocks. This contributes11 selections. In every other module select
-A union V union {p,u} in both blocks, omitting y; this contributes12.
+blocks. This contributes 11 selections. In every other module select
+A union V union {p,u} in both blocks, omitting y; this contributes 12.
 Call the resulting set S. No Z vertex is selected anywhere.
 
 Every outside block vertex is formed. In a Q module, each outside V
@@ -175,17 +175,17 @@ have size two, and hence p even. If t>0, e<=b (also when a=b=e=0),
 so z<=2a+t-1<=p-1. Therefore s<=2p, with strict inequality when p is
 odd. This implies p>=mu(s), by considering s modulo four.
 
-For attainment, repeat the four-bit pattern0110. For remaining length
-one append1, for remaining length two append11, and for remaining
-length three append110. Each pattern forms the path and uses mu(s)
+For attainment, repeat the four-bit pattern 0110. For remaining length
+one append 1, for remaining length two append 11, and for remaining
+length three append 110. Each pattern forms the path and uses mu(s)
 selections. The empty path has value zero. Thus sf_2(P_s)=mu(s).
 
 Taking H=P_s in (1) gives the exact residual from the preceding note:
 
     SF_2(R_s)=12s-mu(s),                                  (6)
 
-where R_s is connected, bipartite, has21s vertices and maximum degree
-at most six. Its earlier upper bound12s-ceil(s/3) is valid but weaker.
+where, for s>=1, R_s is connected, bipartite, has 21s vertices and maximum degree
+at most six. Its earlier upper bound 12s-ceil(s/3) is valid but weaker.
 The same single-ear graph J_s in the preceding connected-residual
 construction has SF_2(J_s)=12s+2. Hence, for every s>=1,
 
@@ -205,17 +205,32 @@ globally minimal decorations obtained by deterministic reductions,
 validates the constructive upper map Q, and tests all binary path strings
 at small orders. Its report distinguishes these controls from exhaustive
 computation of SF_2 on the exponentially larger decorated graphs.
-The checker passes all1,024 block patterns, including483 forming
-candidates at or above the sharper cap. It checks all1,100 labelled
-interface graphs of orders0 to5: every minimal interface set through
-order4, and one literal minimum set per order5 graph. Together with
-three larger paths these give1,265 lifted minimal sets and70,717 specified
+The checker passes all 1,024 block patterns, including 483 forming
+candidates at or above the sharper cap. It checks all 1,100 labelled
+interface graphs of orders 0 to 5: every minimal interface set through
+order 4, and one literal minimum set per order 5 graph. Together with
+three larger paths these give 1,265 lifted minimal sets and 70,717 specified
 deletions. Forty-four seeded greedy minimal decorations test the general
-upper map independently of the prescribed lower construction. All32,767
-binary strings for paths of orders0 through14 test the exact path formula;
-the large path certificates have17,32,65 modules (up to1,365 vertices).
-These are the precise sizes tested, not all sizes through65.
+upper map independently of the prescribed lower construction. All 32,767
+binary strings for paths of orders 0 through 14 test the exact path formula;
+the large path certificates have 17, 32, 65 modules (up to 1,365 vertices).
+These are the precise sizes tested, not all sizes through 65.
 
-Independent final review and exact execution scope are recorded separately
-in `output/decorated-interface-review.json`.
+The independent final review returned **ACCEPT**, reconstructed the general
+proof and its dependencies, and ran the unchanged original checker with
+assertions enabled. Both the generated report and stdout matched the supplied
+550-byte report byte-for-byte. It also identified a coverage limitation:
+all 1,309 original upper-map calls have I empty, so none exercises the
+extra-neighbour augmentation. The general proof covers that branch.
+
+The reviewer separately checked two explicit globally minimal decorations
+on K_(1,1) and K_(1,2), with 22 and 32 selections respectively. Each leaf
+has loss two and an internally active selected interface; each chooses
+the centre, which has loss zero, as its extra neighbour. Thus K_(1,2)
+checks two additions choosing the same vertex. All 54 single deletions fail.
+The supplementary `scripts/check_decorated_augmentation.py` reproduces these
+two cases locally using literal three-vertex stars and calls the original
+upper-map routine. Its report is separate from the unchanged original report.
+Complete response, original input hashes and exact execution scopes are in
+`output/decorated-interface-review.json`.
 No Lean execution or external novelty claim is made.
