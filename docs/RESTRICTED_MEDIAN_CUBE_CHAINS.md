@@ -9,6 +9,26 @@ attachments at their ends. The cube-free degree-four case remains open.
 The maximum-degree-three case follows completely from a verified
 squaregraph characterization and the bipartite prism formula.
 
+## Proof dependency: the bipartite prism bound
+
+We use the following precise previously proved result: for every finite
+simple bipartite graph B, including disconnected graphs,
+
+    SF_2(B square K_2)=beta_2(B square K_2)=2 alpha(B).       (P)
+
+The upper-SF assertion in (P) is supplied by Theorem 4 and Corollary 5
+in [the complete extended-cover proof, Section 5](https://github.com/the-omega-institute/subquorum-colorings/blob/957ef94e1f692e4feae85ecd087e41d1375df1c4/docs/EXTENDED_DOUBLE_COVER_PARAMETERS.md#5-exact-upper-star-forming-number).
+In that source, Theorem 4 proves for every finite simple base H the
+inequality |S|<=n+|I_S|-|N_H(I_S)| for every minimal forming set of E(H),
+by giving each empty rung a shared capacity of two deletion witnesses.
+The definitions of E(H) and the proof of its bipartite-base prism
+isomorphism are in Sections 1 and 3; Corollary 5 explicitly states (P).
+For bipartite B the ordinary double cover is two disjoint copies of B,
+so n+delta(B)=2n-2nu(B)=2alpha(B), by Konig's theorem. Thus the supplier
+includes precisely the nontrivial upper inequality used below, with
+the same non-induced star and deletion conventions. It is not an
+application of the new ear cap to arbitrary prism squares.
+
 ## 1. Elementary median facts
 
 Median graphs are bipartite. Fix a root o. If adjacent u,v had equal

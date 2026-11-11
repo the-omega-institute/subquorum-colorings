@@ -97,8 +97,18 @@ two-connected planar median Delta<=4 equality remains open, including
 the exchange problem in cube-free squaregraph regions and compatible
 activation/deletion data across square interfaces.
 
-Independent final review is recorded with the package when complete.
-No new Lean execution is claimed.
+The independent complete-package audit found the new ear, pendant,
+all-m obstruction and cube-chain arguments sound and ran all three
+original checkers, reproducing every report byte-for-byte. Its verdict
+was REVISE for one missing exact dependency locator: the upper-SF
+prism theorem used in the parameter corollaries. The restricted note
+now states that theorem precisely and links its complete proof at
+957ef94, Section5 Theorem4/Corollary5, with definitions and the prism
+isomorphism in Sections1/3. This supplier file is byte-identical to
+the pinned revision. Targeted independent closure remains pending;
+the new four-parameter ear-ladder theorem has its own separate audit.
+Complete response and input scope are in
+`output/square-ear-composition-review.json`. No new Lean execution is claimed.
 
 ## Median graphs: explicit failure and bounded-degree amplification
 

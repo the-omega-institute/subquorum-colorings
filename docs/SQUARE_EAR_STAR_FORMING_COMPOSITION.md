@@ -225,6 +225,8 @@ These n edges form a perfect matching of the old graph. The resulting
 graph has 4n vertices, is two-connected, outerplanar, median, and has
 maximum degree four by Section 5. Section 3 classifies all its 6^n
 minimal forming sets, all of size 2n; beta_2=sf_2=SF_2=2n.
+For outerplanarity, draw every ear outward along its old row edge;
+its new three-edge path replaces that edge on the outer boundary.
 
 This family has no automorphism sending every vertex to a neighbour.
 The two new vertices a,b of a square attached to a corner row edge have
