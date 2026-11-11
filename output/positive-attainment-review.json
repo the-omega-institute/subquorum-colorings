@@ -1,7 +1,7 @@
 {
   "date": "2026-11-12",
   "scientific_commit": "344a007809b11285268960471dcd5fc4b944aa44",
-  "status": "Positive attainment, quantitative route bound and unit optimizer-choice obstruction ACCEPT; new forced-cascade extension under independent review.",
+  "status": "Positive attainment, quantitative route bound and unit optimizer-choice obstruction ACCEPT; forced-cascade review retried after terminal infrastructure failure, no cascade verdict inferred.",
   "reviews": [
     {
       "task_id": "338e56ad-2084-47f8-9447-1637c969be47",
@@ -18,10 +18,19 @@
     }
   ],
   "cascade_review": {
-    "status": "Live on original request; no verdict inferred",
+    "status": "Terminal infrastructure failure; no mathematical response",
     "scientific_commit": "24e0f58d3526fed9e89aa4b7c9c7a12639b7b1ee",
     "scope": "All-region bound_mu versus retaining_rmu on paths and even2x4r rectangles, zero unrestricted matching and forced residual iteration",
-    "input_sha256": "a6469525932b34fe96059b9396b15ae0367adce437b7ab9662476a37e7f9e526"
+    "input_sha256": "a6469525932b34fe96059b9396b15ae0367adce437b7ab9662476a37e7f9e526",
+    "task_id": "4cb5b94b-b9a2-498b-8999-ae720057b51f",
+    "failure_reason": "infrastructure_retry_exhausted",
+    "failure_detail": "cdp_disconnected@typing",
+    "attempts": 4,
+    "completed_at": "2026-11-11T16:07:28.041+00:00",
+    "retry": {
+      "status": "Live fresh request after authoritative terminal failure; same prompt and scientific input",
+      "input_sha256": "a6469525932b34fe96059b9396b15ae0367adce437b7ab9662476a37e7f9e526"
+    }
   },
   "disposition": [
     "Implemented reviewer explicit Hall decomposition:59+4+20 black versus59+4+19 allowed white; local checker asserts exact coordinate identities.",
