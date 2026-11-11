@@ -17,7 +17,10 @@ budget proves |S|-beta_2<=floor(n/12). The assumption is explicit; it is
 not inferred from minimality. Connected maximum-degree-six graphs attain
 this coefficient at all orders24r: |S|=16r and beta_2=14r. All-size proofs,
 actual graph certificates and independent finite checks are included.
-Independent review is pending. These graphs have pendant vertices and
+Independent review returned **ACCEPT**, with no mathematical correction. All
+four original artifacts were reconstructed with matching hashes; the unchanged
+checker ran with assertions and reproduced its entire report byte-for-byte.
+See `output/selected-star-gap-review.json`. These graphs have pendant vertices and
 are not full rectangles; no exact SF_2 value is asserted for them.
 
 ## Matching exchanges that retain selected star leaves

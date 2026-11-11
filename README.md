@@ -10,7 +10,10 @@ A general matching-budget argument proves the sharp bound
 outside witness. Connected maximum-degree-six graphs attain that coefficient
 at every order24r, with selected size16r and beta_2=14r.
 These are all-parameter proofs with explicit attaining sets and independent
-finite checks. Independent review of this new result is pending.
+finite checks. Independent
+[ACCEPT review](output/selected-star-gap-review.json) confirmed every proof,
+reconstructed all four artifacts with matching hashes, ran the original
+checker unchanged with assertions and reproduced its report byte-for-byte.
 
 The [leaf-retaining exchange theorem](docs/STAR_LEAF_MATCHING_EXCHANGE.md)
 handles conflicts by one auxiliary bipartite matching. For a minimal forming

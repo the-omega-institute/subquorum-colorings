@@ -264,5 +264,9 @@ two-star copies for formation and deletion failures, checks the explicit
 attaining sets and path partitions, and independently computes small
 unrestricted dissociation optima. Larger controls check the certificates
 and the local table underlying every case of the upper bound. All-parameter
-claims use the proofs above. Independent review is pending. No Lean or
+claims use the proofs above. The proof/source snapshot 0d1bd44 received independent **ACCEPT** with
+no mathematical correction required. The reviewer reconstructed and hash-checked
+all four attached files, ran the complete unchanged checker with assertions
+enabled, and reproduced its 21,420-byte report exactly. The complete response
+and actual execution scope are in `output/selected-star-gap-review.json`. No Lean or
 historical-priority verification is claimed.
