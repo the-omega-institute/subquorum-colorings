@@ -1,5 +1,14 @@
 # Current continuation
 
+The [local stability theorem](docs/LOCAL_STAR_FORMING_STABILITY.md)
+proves two-sided bounds for deleting an arbitrary interface in any finite
+simple graph. The repair preserves original selections beyond radius five;
+adding selections affects deletion witnesses only within radius three,
+and both certificate radii are attained on P9. Consequently the error
+from a fixed number of square ears is bounded at fixed maximum degree,
+independently of graph order. Explicit union-of-balls bounds extend this
+to arbitrary components glued through a bounded interface.
+
 The [bipartite partial-ear obstruction](docs/BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md)
 proves that exact SF addition fails even for one attached square and that
 its error is unbounded while the ear count stays fixed at one. Connected

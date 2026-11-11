@@ -1,5 +1,39 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Fixed-degree local stability and arbitrary interfaces
+
+The [local stability theorem](LOCAL_STAR_FORMING_STABILITY.md) proves,
+for every finite simple graph G and U subset V(G), with H=G-U,
+
+    SF_2(H)-b_3(U)<=SF_2(G)<=SF_2(H)+|U|+b_5(U),
+
+where b_r counts surviving vertices within distance r of U. Its stronger
+adaptive version repairs exactly the unformed residual vertices A,
+which lie within distance two of U, and preserves all old selections
+outside B_2(U) union B_3(A). Radius-three addition locality and radius-five
+canonical-repair locality both have explicit sharp P9 witnesses. These
+are sharp certificate radii, not sharp parameter-difference constants.
+
+For k disjoint square ears, the exact two-selections cap improves this to
+
+    0<=SF_2(G)-(2k+SF_2(F))<=|F intersect B_5(roots)|.
+
+If Delta is the maximum degree of the final graph, its upper bound is
+2k(Delta-2)sum_(j=0)^4(Delta-1)^j. Thus unbounded single-ear error
+cannot occur at fixed maximum degree. The earlier unbounded examples
+require growing root degrees, as their constructions explicitly state.
+Deleting a general interface and using disjoint-union additivity gives
+a two-sided composition estimate without assuming minimality of a
+restriction to an arbitrary component.
+
+The standalone literal checker passes1,100 exhaustive small graphs,
+96 seeded larger graphs, the sharp P9 example and a claw regression:
+973,858 induced-selection states,669,163 interface repairs and329 ear
+models. The research-stage answer's overstrong all-minimal-set minimum
+is explicitly rejected by the claw. Final statements use the correct
+fixed-S inequality. Exact review scope is recorded separately in
+`output/local-star-stability-review.json`. No new Lean is claimed.
+
 ## Bipartiteness does not rescue exact partial-ear addition
 
 The [bipartite obstruction note](BIPARTITE_PARTIAL_EAR_OBSTRUCTION.md)
@@ -444,6 +478,8 @@ retain their existing ACCEPT, scoped to their original input.
 | SF_2=beta_2 for two-connected subcubic median graphs | Proved, using the cited ladder/cube classification and the prism theorem |
 | Exact SF addition for arbitrary partial square or pendant-path attachments | False; explicit all-m families have additive error m-4 |
 | Exact SF addition for partial square attachments to bipartite bases | False; unbounded error with exactly one ear, even with connected base, final graph and residual |
+| Unbounded partial-ear error at fixed ear count and fixed maximum degree | Impossible; explicit radius-five footprint and degree bound above |
+| General composition through a bounded deleted interface | Two-sided local-error theorem for every finite simple graph; optimal constants remain open |
 | Full root coverage by square or pendant-path attachments | Complete minimal-set classification and exact beta_2=sf_2=SF_2 |
 | SF_2=beta_2 for two-connected planar median graphs of maximum degree four | Open; cube chains and full-coverage ear classes proved |
 | SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |
