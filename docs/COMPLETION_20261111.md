@@ -178,3 +178,11 @@ the rejected remainder has an 83/82 physical Hall certificate. Reproduce with:
 ```sh
 python3 scripts/check_positive_attainment.py
 ```
+
+The same checker verifies an all-size forced cascade on paths and full
+2-by-4r rectangles. At unit weight, retaining the bottom-row direct HH paths
+gives true optimum r, while maximizing the initial residual bound over every
+black-terminal region gives one. The unrestricted vertical matching costs
+zero. Leaf forcing followed by residual recomputation certifies r exactly;
+the general proof is in (3c)--(3e). This separates static regional bounds
+from adaptive certificates without repeated use of any actual edge.

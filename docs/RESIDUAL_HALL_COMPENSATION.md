@@ -165,14 +165,8 @@ least eta. If eta>0 and f(N)<=b_R+C_s+epsilon, with epsilon>=0, this gives
 If no residual non-direct TH path exists, every retaining full matching has
 m(N)=s=0 and expense b_R; no infinite product in (3b) is intended.
 
-The coefficient eta in (3b) is sharp even for connected bipartite graphs.
-For r>=1 take white vertices t_i,w_i and black vertices b_i,z_i, i=1,...,r.
-Use edges t_i--b_i, b_i--w_i, w_i--z_i, and w_i--b_(i+1) for i<r.
-Let M consist of b_i--w_i, all of weight eta>0; set T={t_i}, W empty,
-R empty and D={z_1}. This graph is a tree. Its leaf edges force the unique
-full N to contain t_i--b_i and w_i--z_i for every i. Thus s=1, C_s=eta,
-m(N)=r and f(N)=r eta, attaining (3b). Every selected source has one P
-neighbour. This family establishes sharpness in the general graph domain.
+The path family below attains the coefficient eta in (3b), even for
+connected graphs with every actual edge of unit weight.
 
 Both the positivity hypothesis and the existential optimizer quantifier have
 content. For positivity, take two disjoint four-vertex paths, embedded as
@@ -301,6 +295,71 @@ with a perfect direct remainder and another minimum path without one.
 This refutes the rule that an arbitrary minimum C_s family may be used
 to decide attainability. It supports the existential formulation of (3a)
 without refuting that theorem or the grid colouring targets.
+
+### All regions in one residual state can miss a forced cascade
+
+There is an unbounded obstruction to strengthening the one-round certificate
+merely by optimizing D. For r>=1 form the path on the ordered vertices
+
+    t_1,b_1,w_1,z_1,t_2,b_2,w_2,z_2,...,t_r,b_r,w_r,z_r.
+
+White vertices are t_i,w_i; black vertices are b_i,z_i. Let the actual
+matching be {b_i--w_i}, each edge of weight mu>0, set T={t_i}, W empty,
+and R empty. This is a one-row grid rectangle: on columns 0,...,4r-1 use
+t_i=4(r-i)+3, b_i=4(r-i)+2, w_i=4(r-i)+1, z_i=4(r-i).
+Every selected source has exactly one P neighbour. The graph is connected
+and has maximum degree two.
+
+For every D subset {z_1,...,z_r}, its direct selected neighbourhood is
+
+    F={t_(i+1): z_i in D and i<r}.
+
+Hence d=s=1 if z_r is in D, and d=s=0 otherwise. If z_r is in D, let j
+be the smallest index in the consecutive suffix of D that ends at r.
+Then either j=1 or z_(j-1) is not in D, so t_j is outside F. The path
+t_j,b_j,w_j,z_j supplies a TH arrival of expense mu from outside F.
+No such arrival is direct, and an alternating terminal path cannot cross
+an intermediate z_i or t_i. Thus C_s=J_d=mu in this case. In the other
+case both values are zero. Consequently
+
+    max_D max(C_s,J_d)=mu.                                  (3c)
+
+Nevertheless the full auxiliary matching is unique. Its first leaf t_1
+forces t_1--b_1, and then w_1 can use only z_1. Deleting those four vertices
+leaves the same path with indices 2,...,r. Induction forces t_i--b_i and
+w_i--z_i for every i. It follows that
+
+    m(N)=r,       f*=r mu.                                  (3d)
+
+The minimum non-direct TH expense is eta=mu. Thus (3b) is attained, and
+even taking every region in (3c) underestimates the true optimum by the
+factor r. This remains true at unit weight mu=1 for arbitrarily large r.
+
+The same residual obstruction occurs on an even-by-even rectangle. Add row 1
+below the 1-by-4r board. Keep the same top-row M and T, and retain the 2r
+direct HH paths (1,2j),(1,2j+1), j=0,...,2r-1. Their white sources are all
+unselected, and their expense b_R is zero. Deleting these retained paths
+leaves exactly the one-row instance, so every residual regional bound is at
+most mu while the retaining optimum is r mu. The selected vertices still
+have one P neighbour. By contrast, the unrestricted vertical auxiliary
+matching has expense zero: every selected top white is paired directly to
+a bottom black terminal, and each actual edge lies on an HH path. Thus on
+these full 2-by-4r rectangles
+
+    max_D [b_R+max(C_s,J_d)]=mu,    f_R*=r mu,    f*=0.        (3e)
+
+These are exact routing and retention statements, rather than a
+counterexample to the grid colouring bound.
+
+The same family permits exact iterative certificates. With D all remaining
+black terminals, U consists only of the first remaining t_i. Its unique
+alternating terminal path is t_i,b_i,w_i,z_i, which the leaf argument forces
+in every retaining completion. Fix that path and repeat. After i-1 forced
+paths, b_R=(i-1)mu and the next residual bound contributes mu. The last
+step certifies r mu. Every actual edge belongs to exactly one fixed path.
+The unconditional conclusion is licensed by the structural forcing at each
+step. Fixing an arbitrary cheap path would instead give a conditional bound
+for its retaining completions, as the unit rectangle above illustrates.
 
 ## 4. Exact recovery of the unit retained-pair optimum
 

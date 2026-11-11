@@ -117,6 +117,74 @@ def unit_optimizer_tie():
                 bad_remainder_Hall_black=hall_black, bad_remainder_Hall_white=hall_white)
 
 
+def cascade_controls():
+    stats = dict(parameter_models=0, all_region_checks=0, forced_steps=0,
+                 largest_r=32)
+    witness = None
+    for r in list(range(1, 9))+[16, 32]:
+        board = {(0, c) for c in range(4*r)}
+        paths = [[(0, 4*(r-i)+j) for j in [3, 2, 1, 0]] for i in range(1, r+1)]
+        actual = {pair(p[1], p[2]) for p in paths}
+        selected = {p[0] for p in paths}
+        for mu in [1, 3, 1 << 400]:
+            weights = {e: mu for e in actual}
+            data = residual_data(board, actual, selected, [], weights)
+            full = list(tilings(board))
+            assert len(full) == 1
+            assert full[0] == auxiliary_on(paths)
+            fee, terminal_paths = score(board, actual, full[0], selected, weights)
+            assert fee == r*mu and len(terminal_paths) == r
+            assert all(len(p) == 4 for p in terminal_paths)
+            assert cheapest_non_direct_TH(data)['cost'] == mu
+            lifted = {(row, c) for row in [0, 1] for c in range(4*r)}
+            hh = [[(1, 2*j), (1, 2*j+1)] for j in range(2*r)]
+            lifted_data = residual_data(lifted, actual, selected, hh, weights)
+            assert lifted_data['board'] == data['board']
+            assert lifted_data['actual'] == data['actual']
+            assert lifted_data['selected'] == data['selected']
+            assert lifted_data['holes'] == set() and lifted_data['fixed_expense'] == 0
+            retained_n = auxiliary_on(paths+hh)
+            assert score(lifted, actual, retained_n, selected, weights)[0] == r*mu
+            vertical_n = {pair((0, c), (1, c)) for c in range(4*r)}
+            assert score(lifted, actual, vertical_n, selected, weights)[0] == 0
+            occupied = {v for e in actual for v in e}
+            assert all(sum(adjacent(t, v) for v in occupied) == 1 for t in selected)
+            if r <= 8:
+                black = sorted(data['black_q'])
+                maximum = 0
+                for mask in range(1 << r):
+                    d = {b for i, b in enumerate(black) if mask & (1 << i)}
+                    result = bound(data, d, attempt_completion=False)
+                    expect = mu if paths[-1][-1] in d else 0
+                    assert result['TH_flow']['cost'] == result['joint_assignment']['cost'] == expect
+                    assert result['required_TH'] == int(expect != 0)
+                    maximum = max(maximum, result['lower'])
+                    stats['all_region_checks'] += 1
+                assert maximum == mu
+            steps = []
+            for i, path in enumerate(paths):
+                residual = residual_data(board, actual, selected, paths[:i], weights)
+                assert residual['adjacency'][path[0]] == {path[1]}
+                assert residual['adjacency'][path[2]] == {path[1], path[3]}
+                result = bound(residual, residual['black_q'], attempt_completion=False)
+                assert residual['selected']-result['direct_neighbours'] == {path[0]}
+                assert result['required_TH'] == result['TH_flow']['value'] == 1
+                assert result['TH_flow']['cost'] == mu and result['lower'] == (i+1)*mu
+                steps.append(dict(fixed_paths=i, forced_path=path,
+                                  fixed_expense=i*mu, next_expense=mu, lower=(i+1)*mu))
+                stats['forced_steps'] += 1
+            if r == 8 and mu == 1:
+                witness = dict(board=[1, 4*r], actual=actual, selected=selected,
+                               full_auxiliary=full[0], terminal_paths=paths,
+                               initial_all_region_bound=1, true_optimum=r, forced_steps=steps,
+                               rectangle_board=[2, 4*r], retained_HH=hh,
+                               rectangle_retaining_auxiliary=retained_n,
+                               rectangle_unrestricted_auxiliary=vertical_n,
+                               rectangle_retaining_optimum=r, rectangle_unrestricted_optimum=0)
+            stats['parameter_models'] += 1
+    return stats, witness
+
+
 def main():
     rng = random.Random(20261113)
     stats = dict(models=0, regions=0, physical_hypothesis_checks=0,
@@ -265,6 +333,9 @@ def main():
         physical_cost=1, rejected_path_cost=1,
         rejected_remainder_Hall_black=len(rectangle['bad_remainder_Hall_black']),
         rejected_remainder_Hall_white=len(rectangle['bad_remainder_Hall_white']))
+    cascade_report, cascade = cascade_controls()
+    stats['forced_cascade'] = cascade_report
+    Path('output/forced-hall-cascade.json').write_text(json.dumps(serial(cascade), indent=2)+'\n')
     Path('output/positive-attainment-check.json').write_text(json.dumps(stats, indent=2)+'\n')
     print(json.dumps(stats, indent=2))
 
