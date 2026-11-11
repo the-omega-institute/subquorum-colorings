@@ -10,8 +10,10 @@ The connected degree-six family attains the coefficient. Positive equality
 forces the six-vertex-block template, including at least n/6 pendant
 vertices; minimum degree at least two therefore improves the integer bound
 to `floor((n-1)/12)` for such selections. The complete proof, standalone
-checker and finite report are included. The first independent proof review
-returned ACCEPT; final exact-source execution review is pending.
+checker and finite report are included. Both independent proof reviews returned
+[ACCEPT](output/selected-star-general-budget-review.json). The final reviewer
+hash-checked all four supplied files, ran the original checker unchanged with
+assertions to completion, and reproduced the 27,335-byte report exactly.
 
 The [clean-witness port composition](docs/SELECTED_STAR_PORT_COMPOSITION.md)
 gives an exact unrestricted formula for every finite interface graph R,

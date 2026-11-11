@@ -16,9 +16,11 @@ minimum degree at least two yields floor((n-1)/12) for these selections.
 
 The standalone audit passes on 5,399 graphs, 599,877 selected subsets,
 39,880 witness assignments and 80,912 repaired sets, plus nine targeted
-models and 22,937 feasible integer-ledger controls. Initial independent
-proof review returned ACCEPT. The final exact-source execution audit is
-pending. This does not assert that a maximizing minimal selection in
+models and 22,937 feasible integer-ledger controls. Both independent proof reviews returned ACCEPT. The final reviewer
+reconstructed all four exact artifacts, verified their hashes, ran the
+original checker unchanged with assertions to terminal completion, and
+reproduced the 27,335-byte report exactly. The complete response and execution
+scope are in `output/selected-star-general-budget-review.json`. This does not assert that a maximizing minimal selection in
 every bipartite graph or full rectangle has selected star components.
 
 ## Exact clean-witness port composition

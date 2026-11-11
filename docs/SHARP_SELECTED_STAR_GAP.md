@@ -256,6 +256,10 @@ choices, large helper multiplicities, the positive equality template and
 a positive-gap example with direct-only centres. The 52-vertex disjoint
 control uses the previously proved G_(3,3) optimum plus an independent
 exact solve of its other component; it is not a whole-graph exact solve.
-The initial independent proof check returned ACCEPT. The final exact-source
-execution audit is pending. No Lean or historical-priority verification
+Both the initial independent proof check and the final exact-source execution
+audit returned **ACCEPT**. The latter reconstructed all four supplied files,
+verified their manifest hashes, ran the original checker unchanged with
+assertions enabled to terminal completion, and reproduced the 27,335-byte
+report exactly. Its complete response and actual scope are recorded in
+`output/selected-star-general-budget-review.json`. No Lean or historical-priority verification
 is claimed.
