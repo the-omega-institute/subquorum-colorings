@@ -86,7 +86,8 @@ Let F=B-D. We prove beta_2(F)=15.
 
 First classify the four-vertex dissociation sets in a cube Q_3, with local
 coordinates (u,v,w) in {0,1}^3. Each square face has at most two selected
-vertices, so a dissociation set has size at most four. If a four-set
+vertices. Each vertex belongs to three of the six faces, so
+3|A|<=6*2=12 and |A|<=4. If a four-set
 contains an edge, its endpoints exclude their other four neighbours;
 the remaining two vertices form the opposite parallel edge. Otherwise
 the set is independent. Its twelve incident edges account for every
@@ -147,8 +148,8 @@ If a cube has type X, its y neighbour must be X with the same phase.
 The other column consists of P or X cubes. Its two types must agree,
 because a P/X pair is forbidden across a y boundary. Their phases agree
 as well, directly for X/X or by the identical horizontal relations to
-the first column for P/P. Hence the left column has one type P or X
-and one phase. Avoiding (0,0,0) requires phase one; avoiding (0,3,0)
+the first column for P/P. Hence the left column, containing the two
+deleted vertices with x=0, has one type P or X and one phase. Avoiding (0,0,0) requires phase one; avoiding (0,3,0)
 requires phase zero. This is impossible. The case with a Y cube follows
 by interchanging x,y and uses (0,0,0),(3,0,0).
 
@@ -213,7 +214,7 @@ have been removed.
 
 Run `python3 scripts/check_median_obstruction.py`. This standalone checker
 uses no other project modules. It checks physical adjacency, all triples
-in the base graph and four small amplified graphs, the exact eight
+in four family members (r=1,...,4), the exact eight
 four-vertex cube patterns, every combination of those patterns in the
 punctured prism, all displayed formation/deletion witnesses, and larger
 members of the connected family. Machine-readable coordinates and full
@@ -222,6 +223,10 @@ witnesses are in `output/median-obstruction-certificates.json`.
 The proof establishes a separation SF_2>=22r>21r=beta_2, not an exact
 SF_2 value or an optimal median-graph gap coefficient. The fixed graph
 was obtained in an Oracle research response and reconstructed here; the
-bounded-degree connected amplification is proved above. Independent review
-status and execution scope are recorded in `output/median-obstruction-review.json`.
+bounded-degree connected amplification is proved above. An independent
+review accepted the complete all-r proof and inspected the checker source.
+That reviewer did not execute the checker; the reported finite execution
+is local. The note incorporates the recommended explicit face-incidence
+count and column orientation. The complete response, reviewed source hashes
+and execution scope are recorded in `output/median-obstruction-review.json`.
 There is no new Lean verification or historical priority claim.

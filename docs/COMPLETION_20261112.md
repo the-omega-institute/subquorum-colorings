@@ -22,9 +22,12 @@ The standalone checker passes all256 cube subsets, all4096 forced block
 pattern tuples,893000 median triples, and10010 deletion witnesses over
 10 family sizes through r=256. The written proof establishes the all-r
 claim; the finite controls test its implementation. The original Oracle
-research response supplied the fixed counterexample. Its reconstructed
-proof and new connected amplification are under a separate independent
-review; current status is in output/median-obstruction-review.json.
+research response supplied the fixed counterexample. A separate independent
+review returned **ACCEPT** for the reconstructed proof and new connected
+amplification. It inspected the checker source and supplied outputs but
+did not execute code. Local execution and proof acceptance are distinguished
+in output/median-obstruction-review.json. The final note makes the face
+incidence count and the column containing the deleted vertices explicit.
 
 
 ## Arbitrary Cartesian prisms and their sharp gaps
