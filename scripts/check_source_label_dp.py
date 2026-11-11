@@ -6,7 +6,57 @@ from pathlib import Path
 import random
 
 from source_label_dp import complete_ladder_zero_fee, optimize_th, pair
-from check_residual_hall_compensation import adjacent, score, serial, tilings
+
+
+def adjacent(a, b):
+    return sum(abs(x-y) for x, y in zip(a, b)) == 1
+
+
+def tilings(board):
+    """Literal recursive enumeration, independent of the optimizer recurrence."""
+    if not board:
+        yield set()
+        return
+    a = min(board)
+    for b in sorted(board-{a}):
+        if adjacent(a, b):
+            for rest in tilings(board-{a, b}):
+                yield rest | {pair(a, b)}
+
+
+def score(board, actual, auxiliary, selected, weights):
+    """Walk literal N,M,N,... components; do not use binary labels to score."""
+    assert len(auxiliary)*2 == len(board)
+    assert {v for e in auxiliary for v in e} == board
+    assert all(adjacent(*e) for e in auxiliary)
+    m = {v: w for e in actual for v, w in (e, e[::-1])}
+    n = {v: w for e in auxiliary for v, w in (e, e[::-1])}
+    paths, total = [], 0
+    for source in sorted(v for v in board-m.keys() if sum(v) % 2):
+        path, fee, v = [source], 0, source
+        while True:
+            v = n[v]
+            path.append(v)
+            if v not in m:
+                break
+            if source in selected:
+                fee += weights[pair(v, m[v])]
+            v = m[v]
+            path.append(v)
+        assert len(path) == len(set(path))
+        paths.append(path)
+        total += fee
+    return total, paths
+
+
+def serial(value):
+    if isinstance(value, dict):
+        return {str(k): serial(v) for k, v in value.items()}
+    if isinstance(value, set):
+        return [serial(v) for v in sorted(value, key=repr)]
+    if isinstance(value, (list, tuple)):
+        return [serial(v) for v in value]
+    return value
 
 
 def verify(board, actual, selected, weights, retained, result, expected):
@@ -272,6 +322,7 @@ def three_row_controls():
 
 
 def main():
+    Path('output').mkdir(exist_ok=True)
     report = small_models()
     report['controls'], witnesses = controls()
     report['ladder'] = ladder_controls()

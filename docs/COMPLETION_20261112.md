@@ -58,12 +58,24 @@ No Lean execution or verification is claimed.
 
 ## Scope and review
 
-The proof/source snapshot 4a3aa6e was sent through oracle-broker for an
-independent audit of Theorems 1–4, the retained adapter and cascade
-application. The later height-three result is outside that initial input;
-review status and exact source/response bindings are recorded separately
-in `output/source-label-dp-review.json` when available. No review verdict
-is inferred from dispatch or a local PASS report.
+The proof/source snapshot 4a3aa6e received independent **ACCEPT for the
+mathematics and optimizer**. The reviewer inspected both Python files and
+reported 17,788 calls to the unchanged optimizer using a new literal-reference
+harness, including 13,148 full-matching scores. That harness also reproduced
+the 10,992 ladder constructions and all 36 cascade work-counter records.
+The original attached checker initially could not run because the attachment
+omitted its helper-module dependency. This package issue is corrected: the
+exact independent enumerator, overlay scorer and serializer are now included
+in the checker, whose only project import is the optimizer under test; it
+creates its output directory. An isolated local full rerun reproduced all
+three committed reports byte-for-byte. No claim is made that the reviewer
+executed this corrected original checker.
+
+The later height-three theorem received its own independent **ACCEPT**, based
+on its all-r proof and explicit coordinates; that reviewer did not claim code
+execution. `output/source-label-dp-review.json` records both exact review
+scopes, responses and the completed packaging correction. The empty-board,
+preprocessing-memory and forced-scan conventions are explicit in the note.
 
 The earlier forced-cascade review and its identical retry both ended with
 terminal infrastructure failures and no mathematical response. The prior

@@ -88,7 +88,9 @@ Theorem 1 to the residual instance. QED.
 
 Use the induced four-neighbour graph on any finite balanced set of integer
 grid vertices. Let h be the shorter side of its bounding rectangle and n
-its number of vertices. Scan columns when the height is h, or transpose.
+its number of vertices. The empty board has optimum zero and needs no
+bounding rectangle. For a nonempty board scan columns when the height is h,
+or transpose.
 Order vertices within each column by row. Introduce each vertex, process
 all its edges to earlier introduced neighbours, and then forget every
 vertex whose last neighbour has now been introduced. Isolated vertices
@@ -142,6 +144,9 @@ at most two alternatives. This proves the bounds. QED.
 These are counts of state records and transitions, rather than bit-operation
 bounds. The Python implementation uses tuples of length at most h+1, so
 tuple construction/hashing and witness storage introduce a factor O(h).
+The rolling state bound excludes O(n) input/preprocessing records. The
+shorter-side bound uses the automatic orientation; a manually forced scan
+uses its own perpendicular bounding-box extent instead.
 Sorting arbitrary integer coordinates costs O(n log n) comparisons; adjacency
 uses four set probes per vertex. Integer comparisons/additions also have
 their ordinary cost in the accumulated-weight bit length. For fixed h this
@@ -268,7 +273,9 @@ linear ladder constructor. `scripts/check_source_label_dp.py` compares it
 with literal full-matching enumeration and independent overlay scoring;
 it also checks source labels, actual/auxiliary degree and adjacency,
 retention, alternative scans, value-only mode, infeasibility, zero weights,
-401-bit weights, and the long cascade. Separate colour enumeration checks
+401-bit weights, and the long cascade. Its independent enumerator and
+overlay scorer are included in the checker itself, whose only project
+import is the optimizer under test. Separate colour enumeration checks
 the reduction without using the frontier recurrence. Reports and small
 full witnesses are in `output/source-label-dp-*.json`.
 
