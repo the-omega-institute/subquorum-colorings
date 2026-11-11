@@ -87,7 +87,10 @@ Section~\ref{sec:bound}. Section~\ref{sec:attainment} supplies the exact
 composition theorem and the attaining graphs. Section~\ref{sec:equality}
 determines the intrinsic equality structure and gives equality graphs
 without a spanning $H$-factor. Section~\ref{sec:degree} proves degree
-refinements and minimum-degree asymptotic sharpness.
+refinements and minimum-degree asymptotic sharpness. The appendices treat
+a separate matching question arising from the proposed rectangular-grid
+equalities: how shared compensation and several exterior entrances can
+be made compatible on a full board.
 
 \section{Two exchanges from deletion witnesses}\label{sec:bound}
 
@@ -709,14 +712,14 @@ Finally $g\ge r-s$ and $g\le n/10$, giving the asserted limit.
 
 
 \appendix
-\section{One budget for overlapping Hall-tight regions}
+\section{One budget for overlapping Hall regions}
 
 We record separately a simultaneous counting lemma for the grid
 compensation problem. Its hypotheses refer to terminal alternating paths;
 its conclusion does not assert that an endpoint assignment can be routed.
 Let an exterior bipartite graph have white side $T$, black side $B$,
-$|T|=|B|+1$, and a matching saturating $B$. There are $r$ additional
-black centres $C$ and $r-1$ additional white sources $W$.
+$|T|=|B|+q$ for $q\ge1$, and a matching saturating $B$. There are $r$
+additional black centres $C$ and $r-q$ additional white sources $W$.
 Suppose a full auxiliary matching, together with an actual matching $M$,
 decomposes into alternating terminal paths defining a bijection
 \[
@@ -728,17 +731,20 @@ edge of the exterior graph; centres have no direct $T$ neighbour.
 For the expense conclusion assume actual-edge weights are at least one,
 every non-direct TH path contains an actual edge, and actual edges on
 distinct terminal paths are disjoint. Let $f$ be the sum of actual-edge
-weights on all TH paths. These hypotheses hold in the separated-core
-setting of the compensation problem, and are stated here explicitly.
+weights on all TH paths. The path hypotheses hold in the separated-core
+setting; the expense conclusion additionally requires the stated unit
+lower bound on actual-edge weights.
 
-Choose finitely many nonempty tight sets $D_j\subseteq B$ with
-$F_j=N_T(D_j)$ and $|F_j|=|D_j|$, allowing overlap and nesting.
+Choose finitely many nonempty sets $D_j\subseteq B$ with
+$F_j=N_T(D_j)$ and slack $s_j=|F_j|-|D_j|\ge0$, allowing overlap and nesting.
 For nonnegative weights $\lambda_j$, not all zero, put
 \[
  \phi_B(b)=\sum_j\lambda_j\mathbf1_{b\in D_j},\qquad
  \phi_T(t)=\sum_j\lambda_j\mathbf1_{t\in F_j},\qquad
  \mu=\max_{b\in B}\phi_B(b)>0.
 \]
+Put $\sigma=\sum_j\lambda_js_j$. The denominator $\mu$ is the black
+maximum; the white maximum need not equal it when some slack is positive.
 Give centres potential zero. Write $x_+=\max(x,0)$ and define
 \[
  A=\sum_{t\in T}(\phi_T(t)-\phi_B(\pi(t)))_+,\qquad
@@ -750,32 +756,28 @@ aggregation occurs before taking positive parts, so opposite regional
 contributions on one path cancel.
 
 \begin{theorem}\label{thm:hallmulti}
-Under these hypotheses, $k\ge1$, $\max_T\phi_T=\mu$, and
+Under these hypotheses, $k\ge q$ and
 \[
- A-L=\sum_{w\in W}\phi_B(\pi(w)),\qquad
- 0\le A-L\le(k-1)\mu.
+ A-L=\sigma+\sum_{w\in W}\phi_B(\pi(w)),\qquad
+ \sigma\le A-L\le\sigma+(k-q)\mu.
 \]
-If $q$ counts TH paths of positive compensation, then
+If $z$ counts TH paths of positive compensation, then
 \[
- q\ge\max\left\{0,\left\lceil\frac{A-(k-1)\mu}{\mu}\right\rceil\right\}
- \ge\max\left\{0,\left\lceil\frac{R-(k-1)\mu}{\mu}\right\rceil\right\}.
+ z\ge\max\left\{0,\left\lceil\frac{A-\sigma-(k-q)\mu}{\mu}\right\rceil\right\}
+ \ge\max\left\{0,\left\lceil\frac{R-\sigma-(k-q)\mu}{\mu}\right\rceil\right\}.
 \]
 Every such path is non-direct and ends in $B$. Consequently
 \[
- f\ge k+\max\left\{0,\left\lceil\frac{A-(k-1)\mu}{\mu}\right\rceil\right\}.
+ f\ge k+\max\left\{0,\left\lceil\frac{A-\sigma-(k-q)\mu}{\mu}\right\rceil\right\}.
 \]
 \end{theorem}
 \begin{proof}
-Fix a direct matching $m:B\to T$ saturating $B$. For every tight pair,
-$m(D_j)\subseteq F_j$ and equal cardinality gives $m(D_j)=F_j$.
-Thus $\phi_T(m(b))=\phi_B(b)$, and unmatched whites have potential
-zero. The nonzero potential multisets on the two sides agree, giving
-equal sums and maxima.
-
-There cannot be $r$ HH centres with just $r-1$ HH sources, so $k\ge1$.
-Exactly $r-k$ HH sources end at centres, leaving $k-1$ for the entire
-exterior. Subtracting the HH contribution from the terminal bijection,
-and using $x_+-(-x)_+=x$, gives the displayed conservation identity.
+Summing the regional cardinality differences gives
+$\sum_T\phi_T-\sum_B\phi_B=\sigma$.
+There are $r$ centre endpoints and $r-q$ HH sources, so $k\ge q$.
+Exactly $r-k$ HH sources end at centres, leaving $k-q$ for the entire
+exterior. Subtracting the HH contribution from the terminal bijection
+and using $x_+-(-x)_+=x$ gives the displayed conservation identity.
 Each exterior HH endpoint contributes its summed potential once, at
 most $\mu$, proving the upper bound. No source is allocated separately
 to the regions containing its endpoint.
@@ -783,12 +785,16 @@ to the regions containing its endpoint.
 For every direct edge $tb$, membership $b\in D_j$ implies $t\in F_j$.
 Therefore $\phi_T(t)\ge\phi_B(b)$, so positive compensation requires
 a non-direct path. Its endpoint is exterior, and its amount is at most
-$\mu$. Hence $q\mu\ge L\ge A-(k-1)\mu$. Every centre TH path contributes
-its full source potential to $A$, giving $A\ge R$. The $k$ centre paths
-and $q$ compensating paths are distinct non-direct paths, each using at
-least one separate actual edge. Thus $f\ge k+q$.
+$\mu$. Hence $z\mu\ge L\ge A-\sigma-(k-q)\mu$. Every centre TH path
+contributes its full source potential to $A$, giving $A\ge R$. The $k$
+centre paths and $z$ compensating paths are distinct non-direct paths,
+each using at least one separate actual edge. Thus $f\ge k+z$.
 \end{proof}
 
+For tight regions, a matching $m:B\to T$ maps each $D_j$ onto $F_j$,
+so $\phi_T(m(b))=\phi_B(b)$ and unmatched whites have potential zero.
+Thus both maxima are $\mu$ in that case. The following two examples use
+tight regions and $q=1$.
 The normalization by $\mu$ is essential for overlapping regions. As an
 endpoint countermodel, take
 \[
@@ -808,7 +814,8 @@ only $k-1=1$ from the unnormalized total would falsely require $1\ge2$.
 The correct potentials give $\mu=2$, $A=3$, $L=1$ and
 $A-L=(k-1)\mu=2$.
 
-The centre-only version replaces $A$ by $R$. Since $R\le k\mu$, its
+For tight regions and $q=1$, the centre-only version replaces $A$ by $R$.
+Since $R\le k\mu$, its
 extra term is at most one, and equals one precisely when
 $R>(k-1)\mu$. The full withdrawal bound can force more. For example,
 take $T=\{t_1,t_2,t_3,e\}$, $B=\{b_1,b_2,b_3\}$, $C=\{h\}$,
@@ -818,9 +825,233 @@ $t_1\mapsto h,t_2\mapsto b_3,t_3\mapsto b_1,e\mapsto b_2$ has
 $k=\mu=R=1$ and $A=L=2$. The full bound gives $f\ge3$ for any path
 realization satisfying the hypotheses, while the centre-only bound gives
 $f\ge2$. Both examples concern endpoint deductions; no rectangular-grid
-realization is asserted. Compatible physical routing and full completion,
-the universal unit-weight $5/6$ improvement and the rectangular-grid
-triple equality remain separate questions.
+realization is asserted. The next appendix gives physical completions and
+obstructions with several centre entrances. These endpoint deductions do
+not decide the even-by-even grid equality specified below.
+
+
+\section{Simultaneous exterior entrances and physical completion}
+
+Let $V$ be a finite balanced square-grid board, with black vertices of
+even coordinate sum. An actual matching $M$ has support $P$ and leaves
+$Q=V\setminus P$. White $Q$ is $T\sqcup W$; black $Q$ is $B\sqcup
+\{h_1,\ldots,h_r\}$. Selected whites $t\in T$ have at most one $P$
+neighbour. Partition $P$ into pairwise nonadjacent cores $P_i$, internally
+covered by $M$. Every $P$ neighbour of $h_i$ belongs to $P_i$, and centres
+have no direct $T$ neighbour. Actual-edge weights are nonnegative.
+A full auxiliary matching $N$ is a perfect matching of $V$. Its TH
+expense $f(N)$ sums actual-edge weights over the terminal paths starting
+in $T$, and $f^*$ is the minimum over all such $N$. Closed alternating
+components, including doubled common edges, contribute zero. Use
+$+\infty$ for an unavailable relay or an empty feasible minimum.
+A local relay to $h_i$ is a simple alternating path with interior in $P_i$,
+starting and ending with auxiliary edges. Its expense is the sum of its
+actual-edge weights. Write $c(t,i)$ for the minimum expense from $t$,
+when a relay exists. A relay from $W$ is free for the TH objective.
+
+Consider full auxiliary matchings in which every centre receives one
+local relay and every other terminal path is a direct edge to $B$.
+Form a weighted bipartite graph $K$ on $T\sqcup W$ and $B\sqcup I$,
+where $I$ indexes the centres. Put an edge $t i$ of fee $c(t,i)$ for
+each available selected relay, an edge $wi$ of fee zero for each
+available HH relay, and a fee-zero edge $xb$ for each direct grid
+adjacency $x\in T\sqcup W$, $b\in B$.
+
+\begin{theorem}\label{thm:ports}
+The minimum TH expense $U_{\rm dir}$ in this form equals the minimum
+fee of a perfect matching of $K$. Each such assignment constructs a
+full physical auxiliary matching, with its fee attained by minimum
+selected relays. Failure of a perfect matching in $K$ has an ordinary
+Hall certificate on $B\sqcup I$.
+\end{theorem}
+\begin{proof}
+Balance gives $|T|+|W|=|B|+r$. Choose the relays of an assignment and
+its direct exterior edges. Matching capacity gives distinct terminal
+endpoints, and different centre relays use different cores. Thus these
+paths are vertex-disjoint. Each interior actual pair occurs whole on
+its path. Flip $M$ along the paths, retaining unused $M$ edges in the
+auxiliary matching; equivalently these unused edges are doubled in the
+tagged union. Every vertex is covered once. The only paid paths start
+in $T$, so their minimum fees give the assignment fee. Conversely,
+contract the terminal paths of any full matching in the specified form.
+They give a perfect matching of $K$ of no larger fee. Replacing its
+selected relays by shortest relays is simultaneous because there is
+only one relay per core. This proves equality of the two minima.
+Hall's theorem supplies a deficient right set when no assignment exists.
+\end{proof}
+
+Now forbid $W$--$B$ edges, and let $U_c$ be the resulting optimum.
+Suppose $q=r-|W|=|T|-|B|\ge1$, the direct exterior graph saturates $B$,
+and the HH incidence graph $\Gamma$ on $W,I$ saturates $W$. Exactly
+$q$ centres are TH in this form. A chosen entrance set $A\subseteq T$
+of size $q$ can be exposed simultaneously precisely when
+\begin{equation}\label{eq:portcap}
+ |A\cap N_T(D)|\le |N_T(D)|-|D|\qquad(D\subseteq B).
+\end{equation}
+Indeed, these are Hall's inequalities after deleting $A$. A set of at
+most $q$ entrances can be included in an exposed $q$-set under the same
+condition: a saturating matching avoiding it leaves exactly $q$ whites
+unmatched. Thus positive-slack neighbourhoods carry finite entrance
+capacity. Exposed sets of size $q$ are complements of bases of the
+standard transversal matroid on $T$; smaller extendible sets are subsets
+of those complements. Full exterior rank is part of the hypotheses.
+Completion also needs $\Gamma$ to match $W$
+onto the centres not selected, and distinct available relays from $A$
+to those selected. The transversal terminology is standard~\cite{EF65}.
+Theorem~\ref{thm:ports} enforces all three choices
+jointly by ordinary weighted assignment.
+
+Put $\rho_i=\min_t c(t,i)$ and suppose every $\rho_i$ is finite. Define
+\[
+ \Lambda_q=\min_{\substack{\Gamma\text{ matching}\\\text{saturating }W}}
+                  \sum_{i\text{ unmatched}}\rho_i.
+\]
+This relaxed source budget ignores entrance compatibility. It is computed
+by matching $W$ and $q$ dummy roots to $I$, with HH fee zero and
+root--$i$ fee $\rho_i$.
+
+\begin{corollary}\label{cor:portbudget}
+For the unrestricted minimum $f^*$,
+$\Lambda_q\le f^*\le U_{\rm dir}\le U_c$.
+If all actual weights and all $\rho_i$ are strictly positive, then
+$f^*=\Lambda_q$ if and only if $U_c=\Lambda_q$.
+For nonnegative weights, $U_c=\Lambda_q$ is sufficient.
+\end{corollary}
+\begin{proof}
+Every terminal-path interior lies in $P$. A path ending at $h_i$ has its
+last interior vertex in $P_i$, and nonadjacency of the cores keeps the
+whole interior in $P_i$. A direct $Wh_i$ edge is a relay with empty
+interior. Thus the $r-k$ HH paths ending at centres of any full matching
+give a partial matching in $\Gamma$. Augment it until it saturates $W$; augmentation
+preserves previously matched right vertices. Its $q$ unmatched centres
+are among the original $k$ TH centres. Hence
+\[
+ f\ge\sum_{\text{TH centres }i}\rho_i
+   \ge\sum_{\text{these }q\text{ centres }i}\rho_i\ge\Lambda_q.
+\]
+The upper bounds follow from Theorem~\ref{thm:ports} and inclusion.
+Under strict positivity, equality forces $k=q$. All HH sources then
+serve centres, and all other TH paths have zero expense, so contain no
+actual edge and are direct. Such a matching belongs to the $U_c$ form.
+The reverse implication follows from its attaining construction.
+\end{proof}
+
+\paragraph{A unit-weight obstruction to independent entrances.}
+Use $V=[0,7]\times[0,11]$, with three $3\times3$ squares at origins
+$(1,3),(1,9),(5,5)$. Their centres are $(2,4),(2,10),(6,6)$, and $P_i$
+is each square with its centre removed. Translate the four actual edges
+\[
+ (0,0)(0,1),\quad(0,2)(1,2),\quad(2,2)(2,1),\quad(2,0)(1,0)
+\]
+into each core. The cores are nonadjacent. The only white $Q$ vertex
+with two $P$ neighbours is $W=\{(4,5)\}$; select all other white $Q$.
+Thus $|T|=35$, $|B|=33$, $q=2$. All centres have no direct $T$ neighbour.
+The two paths
+\[
+ (4,9),(3,9),(2,9),(2,10),\qquad
+ (5,8),(5,7),(6,7),(6,6)
+\]
+are disjoint centre relays of fee one each, and $(4,5)$ relays to the
+remaining centre through $(3,5),(3,4)$. For
+\[
+ D=\{(4,10),(5,9),(5,11),(6,8),(6,10),(7,9),(7,11)\}
+\]
+its selected neighbourhood is
+\[
+ F=\{(4,9),(4,11),(5,8),(5,10),(6,9),(6,11),(7,8),(7,10)\}.
+\]
+Thus $|D|=7$, $|F|=8$, and the two chosen entrances leave only six
+neighbours for $D$. They violate~\eqref{eq:portcap}.
+
+Each entrance separately belongs to a fee-two full matching: replace the
+second source by $(4,7)$, or the first by $(3,8)$, entering the same
+black actual endpoint. For both good cases use exterior vertical edges
+\[
+\begin{gathered}
+ (0,2)(1,2),\ (0,7)(1,7),\ (1,6)(2,6),\ (1,8)(2,8),\ (2,2)(3,2),\\
+ (2,7)(3,7),\ (3,6)(4,6),\ (4,4)(5,4),\ (6,4)(7,4).
+\end{gathered}
+\]
+Add $(3,8)(4,8)$ for entrances $\{(4,9),(4,7)\}$, or
+$(4,9)(5,9)$ for $\{(3,8),(5,8)\}$. After deleting the square footprints,
+$W$, these entrances and the vertical endpoints, every remaining row
+interval has even length and tiles horizontally. These exterior matchings
+and the three relay flips construct the full matchings.
+
+Any full matching has at least two TH centres, so unit weights give
+$f\ge2$; the good constructions attain two. If the bad pair extended at
+fee two, the third centre would consume the only HH source and every
+other TH path would be direct, contradicting the $7/6$ exterior deficit.
+Thus individual entrance availability does not imply joint availability,
+even at the true optimum. If $k=2$, this region has $\sigma=\mu=1$
+and $R=2$, so Theorem~\ref{thm:hallmulti} forces a further paid TH path.
+If $k=3$, the third TH centre path itself costs at least one. Thus every
+completion retaining both specified relays has expense at least three.
+
+\paragraph{An unbounded source-budget gap on a fixed board.}
+Take $V=[0,11]\times[0,17]$, with $5\times5$ squares at origins
+$(1,3),(1,13),(7,7)$, centres $(3,5),(3,15),(9,9)$, and cores obtained
+by deleting the centres. Match each core by translating
+\[
+ (0,2)(1,2),\quad(2,0)(2,1),\quad(2,4)(2,3),\quad(4,2)(3,2),
+\]
+and horizontally tiling the four corner $2\times2$ squares. Here
+$W=\{(6,7)\}$, $|T|=71$, $|B|=69$, $q=2$, selecting all other white
+$Q$. Give $(5,15)(4,15)$ and $(9,11)(9,10)$ weight one, every other
+actual edge weight $K$. Then, for every integer $K\ge2$,
+\begin{equation}\label{eq:portgap}
+ \Lambda_q=2,\qquad f^*=U_{\rm dir}=U_c=K+1.
+\end{equation}
+To prove this, the HH source reaches centre 0 via
+\[
+ (6,7),(5,7),(5,6),(5,5),(4,5),(3,5).
+\]
+The only cheap-only centre relays are
+\[
+ (6,15),(5,15),(4,15),(3,15),\qquad
+ (9,12),(9,11),(9,10),(9,9).
+\]
+Indeed, these are the only cheap actual edges; each lies in a different
+core, has its white endpoint adjacent to that centre, and has a unique
+white $Q$ neighbour at its black endpoint. There is no cheap actual edge
+in core 0. The source budget therefore leaves centres 1 and 2 and equals two.
+
+Let $D$ be the black vertices in
+\[
+ (\{6\}\times[13,17])\ \cup\ ([7,11]\times[12,17]).
+\]
+Its selected neighbourhood is exactly the white vertices of that region,
+so $|D|=17$ and $|N_T(D)|=18$. Both cheap entrances lie in it and leave
+only 16 neighbours. Every full matching has at least two TH centres.
+If a paid path uses a $K$ edge, a different TH centre path supplies
+another unit, giving $f\ge K+1$. Otherwise both cheap centre relays
+are forced, the remaining centre consumes $W$, and all other TH paths
+are direct, contradicting this $17/16$ deficit.
+
+For attainment retain the first cheap relay and use
+$(9,6),(9,7),(9,8),(9,9)$ for the second, with the displayed HH relay.
+Take exterior vertical edges $(a,b)(a+1,b)$ for $a=1,3,5$ and $b=2,12$,
+and also $(7,6)(8,6)$ and $(10,6)(11,6)$. After deleting the square
+footprints, $W$, entrances $(6,15),(9,6)$ and these vertical endpoints,
+the remaining row intervals are
+\[
+\begin{array}{c|l}
+\text{row}&\text{column intervals}\\\hline
+0 &[0,17]\\
+1\text{--}5 &[0,1],\ [8,11]\\
+6 &[0,1],\ [3,6],\ [8,11],\ [13,14],\ [16,17]\\
+7\text{--}11 &[0,5],\ [12,17].
+\end{array}
+\]
+All tile horizontally, yielding a complete exterior matching. The two
+paid actual edges have weights one and $K$; the HH relay is free.
+This proves~\eqref{eq:portgap} for all $K$. The source-budget gap and
+ratio are unbounded on this fixed geometry. These expense results do not
+decide the proposed equality $\Gamma(G)=\diss(G)=\SF(G)=2rs$ for
+$G=P_{2r}\square P_{2s}$, where $\Gamma$ is the largest cardinality of
+an inclusion-minimal dominating set and $r,s\ge1$. This is Conjecture~8.5
+of Sahbi's version~2, distinct from Conjecture~8.4 asking $\diss=\SF$
+on all rectangular grids.
 
 
 \paragraph{Verification.}
@@ -834,13 +1065,14 @@ repository revision and complete verification reports. Additional controls check
 for complete cores, the paired formula for arbitrary seeded cores, and
 the degree bounds by direct subset enumeration. Separate controls
 check the general boundary predicates and abstract terminal bijections
-for the simultaneous Hall budget. The new proofs
+for the simultaneous Hall budget, positive Hall slack, and several exterior entrances. Physical controls include complete auxiliary matchings and explicit failed exposure pairs. The new proofs
 are not included in the earlier Lean formalization of the two-attachment
 construction.
 
 \paragraph{AI use.}
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
 
+\clearpage
 \begingroup
 \small
 \begin{thebibliography}{9}
@@ -868,6 +1100,10 @@ A bound on the dissociation number,
 \emph{A characterization of graphs attaining a lower bound on the
 dissociation number},
 \href{https://arxiv.org/abs/2610.35408v1}{arXiv:2610.35408v1}, 26 October 2026.
+\bibitem{EF65} J. Edmonds and D. R. Fulkerson,
+Transversals and matroid partition,
+\emph{J. Res. Nat. Bur. Standards Sect. B} \textbf{69B} (1965), 147--153,
+\href{https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn3p147_A1b.pdf}{NBS primary text}.
 \end{thebibliography}
 \endgroup
 \end{document}

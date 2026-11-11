@@ -16,15 +16,20 @@ scope is kept separate from the proved results in COMPLETION_20261111.md.
    not sharpness claims. The older regular bounds and connected cubic
    constructions remain their own benchmarks; the exact connected cubic
    asymptotic optimum is not supplied by the present work.
-3. **Routing several Hall compensations.** The weighted-potential theorem
-   counts overlapping and nested tight regions with one global HH budget.
-   It does not extend a low-cost terminal bijection to disjoint physical
-   paths or to a full auxiliary matching. The earlier whole-board residual
-   Hall test remains necessary for a fixed chosen path list. A useful next
-   target is a class with more than one exposed exterior entrance for
-   which routing and residual completion can be proved simultaneously.
+3. **Routing several Hall compensations.** The simultaneous-port theorem
+   now constructs and exactly optimizes physical completion with any number
+   of centre relays and direct exterior TH/HH paths; it couples local routes,
+   source assignment and exterior exposure in one weighted matching. For
+   arbitrary extra non-centre relays, a low-cost terminal assignment still
+   need not extend. The remaining target is a constructive class permitting
+   these additional relays, sharing physical capacities and preserving all
+   residual Hall constraints. Individual exposure is refuted by the 8-by-12
+   unit example; the 12-by-18 all-K example separates source budget two
+   from the true optimum K+1, even though each cheap entrance is exposable.
 4. **Unit-weight numerical gain.** For weights at least one, the new theorem
-   gives f>=k+ceil((A-(k-1)mu)/mu)_+, with A the total withdrawal potential.
+   gives f>=k+ceil((A-sigma-(k-q)mu)/mu)_+, with A the total withdrawal
+   potential, sigma the weighted regional Hall slack, and q the exterior
+   white surplus. This includes arbitrary overlapping non-tight regions.
    This is a path-dependent lower bound. A useful universal numerical
    improvement needs an independent geometric lower estimate on A and
    control of physical routes; no such universal estimate is claimed here.

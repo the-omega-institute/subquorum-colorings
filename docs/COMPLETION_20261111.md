@@ -87,3 +87,29 @@ Those remaining questions are not marked solved by finite evidence.
 
 The coauthor-facing draft does not choose author order or a venue and
 records no approval by the correspondent, email send or submission.
+
+## Simultaneous-port continuation
+
+The subsequent same-day round is indexed in
+[`SIMULTANEOUS_PORT_COMPLETION.md`](SIMULTANEOUS_PORT_COMPLETION.md) and
+[`HALL_SLACK_SHARED_BUDGET.md`](HALL_SLACK_SHARED_BUDGET.md). It supplies an
+exact physical completion theorem for several centre entrances, a q-root
+budget-attainment criterion, arbitrary positive-slack Hall accounting,
+an 8-by-12 unit obstruction and a 12-by-18 all-K source-budget gap.
+The integrated manuscript now has fifteen pages. Previous round evidence
+and its review manifest remain version-bound to their own source.
+
+Reproduce the new finite controls from the repository root:
+
+```sh
+python3 scripts/check_multiport_completion.py
+python3 scripts/check_hall_slack_budget.py
+```
+
+The first report covers 1,721 weighted assignment controls, 4,373 exterior
+graphs, 23,611 entrance sets, 384 physical weighted models, a direct exterior
+HH control with two TH centres at surplus one, and all 18,061 auxiliary
+matchings of a 4-by-10 board. The second report covers 1,259,376 terminal
+bijections and 2,355,108 weighted regional identities. The 12-by-18 family
+has a general all-K proof and a fixed row-by-row attaining matching;
+the twelve weighted samples are implementation controls.
