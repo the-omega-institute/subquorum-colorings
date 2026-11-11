@@ -59,7 +59,10 @@ without a minimum-degree assumption. In a full h-by-w rectangle it implies
 `d<=floor((hw+4h+4w)/34)` for every specified selected-star minimal set,
 with a stronger location-dependent form in the note. This does not assume
 that all minimal grid selections are of that form. Literal finite checks
-and exact rational controls pass; independent source review is pending.
+and exact rational controls pass. The final [ACCEPT audit](../output/full-degree-capacity-review.json)
+reviewed the complete proof, reconstructed all five files with matching
+hashes, ran the original checker unchanged with assertions to completion,
+and reproduced the report byte-for-byte.
 
 ## Exact clean-witness port composition
 

@@ -227,7 +227,8 @@ in its stated finite graph range. It independently compares two exact
 dissociation optimizers, counts actual cut edges, checks the six ledgers
 and identities, and verifies the regular selected-edge resource bound.
 
-The report covers 194 graphs, 237,760 selected subsets, 12,510 eligible
+The report covers 194 graph inputs (193 distinct labelled adjacency lists),
+237,760 selected subsets, 12,510 eligible
 minimal selections and 20,248 witness assignments. The exhaustive labelled
 ranges are cubic graphs with fixed parts (3,3) and (4,4), and quartic
 graphs with fixed parts (4,4) and (5,5); larger regular and nonregular
@@ -251,7 +252,10 @@ The first independent proof review returned **ACCEPT** on the original
 nonempty-graph domain. Its requested scope repair, explicitly retaining
 delta<=Delta in the standalone relaxation range, is included above. That
 first pass did not review the subsequently added boundary extension and
-requested no code execution. A final full-source review including that
-extension and original-code execution is pending. The complete scope and
-response are recorded in `output/full-degree-capacity-review.json`. No
+requested no code execution. The final full-source review returned
+**ACCEPT**, including the boundary extension. The reviewer reconstructed
+all five supplied files, verified their manifest hashes, ran the original
+checker unchanged with assertions enabled to terminal completion, and
+reproduced its complete report byte-for-byte. The complete response and
+actual scope are recorded in `output/full-degree-capacity-review.json`. No
 Lean verification, historical-priority or graph-sharpness claim is made.

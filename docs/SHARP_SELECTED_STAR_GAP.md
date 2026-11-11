@@ -111,7 +111,7 @@ Fix the original bipartition A,B and put T=S union W. The sets
         ((R0 intersect B) minus {i in I:h(i)>=2}),    (9)
 
 and the set E_B obtained by reversing colours are dissociation sets.
-All selected active vertices from the opposite colour are omitted.
+All selected star centres and leaves from the opposite colour are omitted.
 A retained edge-component vertex sees only its original mate; no chosen
 witness has an active owner in R0. A retained opposite-colour isolate
 touches at most one chosen witness, and every chosen witness touches at
