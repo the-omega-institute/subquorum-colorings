@@ -1,5 +1,19 @@
 # Current continuation
 
+The [leaf-retaining exchange theorem](docs/STAR_LEAF_MATCHING_EXCHANGE.md)
+handles conflicts by one auxiliary bipartite matching. For a minimal forming
+selection with selected star/edge/isolate components, fix one witness per
+star leaf, let c count centres, e leaves, and Q=G[W union I] on witnesses
+and selected isolates. The exact largest dissociation set in S union W
+retaining all star leaves has size `|S|-c+e-nu(Q)`. Hence the desired bound
+holds without any witness-independence assumption when S has at most one
+selected isolate. The matching criterion also certifies the earlier6-by-6 witness
+obstacle. A connected12r-vertex family has true beta `8r` but exact
+leaf-retaining optimum `7r`, proving that the restriction can lose an
+unbounded amount. This is a limitation of leaf retention, with an explicit
+size-preserving exchange still available. The general proofs, certificate
+construction and independent finite checker are included; review is pending.
+
 The [arbitrary-width witness geometry](docs/GRID_WITNESS_GEOMETRY.md) proves
 `2|S|-mn<=|Z|+|E|-|H|-ceil(K/2)` for every minimal forming grid selection:
 each

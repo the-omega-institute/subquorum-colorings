@@ -1,5 +1,33 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Matching exchanges that retain selected star leaves
+
+The [new exact exchange formula](STAR_LEAF_MATCHING_EXCHANGE.md) is
+
+    max_(D subset S union W, L subset D, Delta(G[D])<=1)|D|
+       =|S|-c+e-nu(G[W union I]).
+
+Here selected components are stars/edges/isolates, c counts nontrivial star
+centres, L their leaves, e=|L|=|W|, and I is the set of all selected isolates.
+Witness conflicts and shared isolates appear in one bipartite graph, with
+matching/cover dual certificates. At most one selected isolate implies the existence
+of a dissociation set of at least |S| for every such minimal forming set,
+even when centres occupy both bipartition classes and witnesses conflict.
+The distinct-helper bound e-t>=2c-1 is another sufficient criterion. The
+matching formula also certifies the prior full6-by-6 independence obstacle,
+where c=2,e=4,nu=2 and the exact leaf-retaining optimum is18.
+
+A connected bounded-degree family shows the exact limitation. Its minimal
+forming S has size8r and beta=8r, while every dissociation set retaining all
+star leaves has size at most7r. Four disjoint P3 paths per block prove the
+true upper bound; explicit dissociation sets and matching/cover certificates
+attain both values. It has12r vertices,15r-1 edges and maximum degree5 for
+r>=2. The leaves' witnesses are unique and constitute every outside vertex,
+so alternative witnesses or additional outside vertices cannot repair
+leaf retention. These are full all-r proofs, with a standalone finite
+checker; independent review is pending. The general selected-star inequality
+without extra conditions remains open, as does arbitrary full-grid equality.
+
 ## Geometry at arbitrary width
 
 The [witness geometry note](GRID_WITNESS_GEOMETRY.md) proves, for every
@@ -634,6 +662,10 @@ retain their existing ACCEPT, scoped to their original input.
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is three | Proved for every positive other side; complete-vector computer-assisted proof, independently accepted with original executions |
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is four | Proved for every positive other side by the full-vector extension; separately accepted with original executions |
 | Rectangular-grid SF_2=beta_2=psi_sq when one side is five | Proved for every positive other side; independent ACCEPT with both original executions and exact vector hashes |
+| Exact exchange within S union W retaining all selected star leaves | Solved by bipartite matching for every fixed witness assignment |
+| Selected-star minimal sets with at most one selected isolate | Proved cardinality at most beta_2, allowing witness conflicts and centres in both parts |
+| Always retaining every selected star leaf in a size-preserving exchange | False; connected12r family has leaf optimum7r but true beta=8r equals the selected size |
+| General selected-star minimal-set inequality without further hypotheses | Open; a restricted exchange shortfall is not a parameter counterexample |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
