@@ -23,8 +23,11 @@ lie in one bipartition class, at any width. A complete 6-by-6 example refutes
 automatic independence but admits an explicit size-preserving exchange.
 The finite audits cover 190,798 grid subsets, 28 protected degree-four
 centres, and 50,196 exchange constructions on small bipartite graphs and
-explicit cycle/dummy/conflict fixtures. General proofs are written in full;
-separate review of this new structural note is pending.
+explicit cycle/dummy/conflict fixtures. General proofs are written in full.
+The independent audit at2958b91 returned ACCEPT without mathematical
+changes: all five manifest files were reconstructed, both original checkers
+ran unchanged with assertions enabled, and both reports matched byte-for-byte.
+Complete execution scope is in output/grid-witness-geometry-review.json.
 
 ## Five-row grids at every length
 

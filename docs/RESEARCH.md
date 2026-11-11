@@ -1,3 +1,31 @@
+# Arbitrary-width witness geometry and the remaining grid question
+
+The [witness geometry note](GRID_WITNESS_GEOMETRY.md) now proves the
+arbitrary-width inequality
+
+    2|S|-mn<=|Z|+|E|-|H|-ceil(K/2)
+
+for every minimal forming selection on every full rectangle. It counts
+direct and clean deletion witnesses, two disjoint omitted caps per
+selected-degree-four centre, and capacity-two exceptional caps. The note
+also proves a simultaneous star-component exchange through independent
+leaf witnesses, automatically applicable when selected degree-at-least-two
+vertices lie in one bipartition class. Shared selected isolates are handled
+by one auxiliary multigraph. The full6-by-6 example refutes automatic
+independent choices without refuting a same-size dissociation exchange.
+The remaining quantitative defect is given by an exact residual identity.
+The separate audit returned ACCEPT with both original checker executions
+and byte-identical regenerated reports.
+
+The separate complete-vector theorems establish
+SF_2=beta_2=psi_sq at every positive length when the shorter side is at
+most five. The five-row theorem has independent ACCEPT with original
+executions, regenerated large vectors and exact report/hash comparisons.
+Its new contribution is the SF upper bound; prior dissociation and colouring
+formulas retain their attribution. Both dimensions of a still-uncovered
+rectangle must therefore be at least six. The new structural note gives
+additional arbitrary-width classes, not the full equality.
+
 # Median obstruction and the remaining grid question
 
 Medianity alone does not imply SF_2=beta_2: the

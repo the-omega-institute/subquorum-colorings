@@ -9,7 +9,10 @@ isolates. In particular, selected branching confined to one bipartition
 class implies `|S|<=beta_2` at all dimensions. An explicit full 6-by-6
 example refutes automatic independence of the witnesses while admitting
 a same-size dissociation exchange. The general proofs and two literal
-finite checkers are included; separate review is pending.
+finite checkers are included. A separate
+[ACCEPT audit](output/grid-witness-geometry-review.json) reconstructed all
+five manifest files, ran both original checkers unchanged with assertions
+enabled, and reproduced both reports byte-for-byte.
 
 The [five-row theorem](docs/FIVE_ROW_STAR_FORMING_EQUALITY.md) extends the
 all-length star-forming result to height five. For every n>=1,

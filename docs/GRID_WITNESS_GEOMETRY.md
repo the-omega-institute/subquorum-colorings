@@ -351,3 +351,16 @@ triple equality still requires handling both checkerboard classes and
 controlling the residual in (8). The separate strip theorems now cover
 every positive length when the shorter side is at most five. No Lean
 verification is claimed for this note.
+
+
+The independent audit of scientific revision 2958b91 returned **ACCEPT**,
+with no required mathematical changes. The reviewer reconstructed all five
+manifest files, checked their byte counts and hashes, and ran both original
+Python scripts unchanged with assertions enabled. Both generated JSON
+reports matched the supplied reports byte-for-byte. It independently
+reconstructed the witness classification, cap-disjointness and capacity
+arguments, clean-leaf reservation, exact residual, auxiliary tree/cycle
+exchange, conflict-cover variant and the six-by-six obstacle. The complete
+response, attachment manifest and actual execution scope are preserved in
+`output/grid-witness-geometry-review.json`. This verdict covers the stated
+conditional and defect-counting results; the residual (8) remains open.
