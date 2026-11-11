@@ -1,5 +1,10 @@
 # Current continuation
 
+The 12 November continuation gives [exact source-dependent TH optimization
+by grid width and a zero-expense theorem for every feasible two-row ladder](docs/EXACT_TH_OPTIMIZATION_AND_LADDERS.md).
+The implementation returns a full optimal auxiliary matching and handles
+retained paths, zero weights and free HH rerouting together.
+
 The 11 November results on intrinsic equality, degree constraints, general
 boundary composition and simultaneous Hall budgets are indexed in
 [the completion note](docs/COMPLETION_20261111.md).

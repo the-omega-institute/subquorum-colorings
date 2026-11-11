@@ -25,9 +25,11 @@ scope is kept separate from the proved results in COMPLETION_20261111.md.
    paths R. A physically optimal extra TH family with a matchable direct-TH
    remainder attains b_R+C_s. This includes additional non-centre relays and
    certifies the exact retained-pair optima four and K+2 in the two grid
-   examples. The remaining target is a general choice of regions and paths
-   guaranteeing compatible completion, or an unrestricted exact TH optimizer;
-   failure of one minimum-flow remainder is not an impossibility proof.
+   examples. The 12 November [binary-label formulation and frontier algorithm](EXACT_TH_OPTIMIZATION_AND_LADDERS.md)
+   now solve unrestricted exact TH optimization and retaining optimization,
+   with time exponential in grid width. A simpler structural rule or a
+   faster algorithm at arbitrary width remains open; failure of one
+   minimum-flow remainder is not an impossibility proof.
    Under the absence of zero-expense non-direct TH paths, the existential
    minimum-flow remainder criterion is now necessary and sufficient for
    attaining b_R+C_s. A unit-weight 18-by-18 example shows an arbitrary
@@ -37,8 +39,8 @@ scope is kept separate from the proved results in COMPLETION_20261111.md.
    maximizing these one-round bounds over every region can give one while
    the retaining optimum is r. Structurally forced iteration attains r on
    this family; arbitrary conditional path fixing cannot certify an
-   unrestricted optimum. A general routing choice or branching certificate
-   is still needed.
+   unrestricted optimum. The exact optimizer chooses routes and full
+   completion jointly without requiring arbitrary conditional path fixing.
    The 12-by-18 all-K example still separates source budget two from the
    unrestricted optimum K+1, even though each cheap entrance is exposable.
 4. **Unit-weight numerical gain.** For weights at least one, the new theorem
@@ -52,7 +54,10 @@ scope is kept separate from the proved results in COMPLETION_20261111.md.
    equality proposed in Sahbi's grid question nor a universal improvement
    of the unit-weight 5/6 colouring coefficient follows from these results.
    The abstract endpoint countermodels refute specified counting shortcuts;
-   they are not grid counterexamples to either target.
+   they are not grid counterexamples to either target. The 12 November
+   ladder theorem supplies zero-expense auxiliary completion on every
+   feasible full 2-by-n instance, but does not by itself identify all three
+   graph parameters.
 
 No candidate absent from this list is silently treated as resolved by
 finite enumeration. No author approval, email send or submission is inferred
