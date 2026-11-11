@@ -1,5 +1,22 @@
 # Current continuation
 
+The [square-ear composition theorem](docs/SQUARE_EAR_STAR_FORMING_COMPOSITION.md)
+classifies every minimal forming set when squares are attached along a
+perfect matching of an arbitrary base: all 6^k choices of two vertices
+per square are minimal, with beta_2=sf_2=SF_2=2k. For a partial matching,
+the exact dissociation addition and star-forming bounds hold, but the
+analogous exact SF addition is false by an explicit all-m family with
+unbounded error. A pendant-path variant has the same obstruction.
+An outerplanar median degree-four equality family has no automorphism
+sending every vertex to a neighbour.
+
+The [restricted median reduction](docs/RESTRICTED_MEDIAN_CUBE_CHAINS.md)
+settles the two-connected subcubic median case as a consequence of the
+squaregraph characterization and the prism formula. In planar median
+graphs of maximum degree four, intersecting cubes form induced convex
+chains with at most eight external edges at their ends. The full
+degree-four equality question remains open.
+
 The [median-graph obstruction](docs/MEDIAN_STAR_FORMING_OBSTRUCTION.md)
 proves that medianity does not force SF_2=beta_2. For every r>=1 a
 connected median graph of order38r and maximum degree5 has beta_2=21r
@@ -54,8 +71,8 @@ statements, proofs and exact validation scope.
 
 Research sources and reproducibility materials for **From hypercubes to grids:
 sub-quorum colorings and structural bounds**, with contributions by Wenlin
-Zhang (National University of Singapore; The Omega Institute) and Haobo Ma
-(ChronoAI Pte Ltd; The Omega Institute).
+Zhang (National University of Singapore; Chrono AI, Singapore) and Haobo Ma
+(Chrono AI, Singapore).
 
 **Start with the [current mathematical results](docs/GRID_RESULTS.md)**:
 the uniform grid dissociation formula, directional matching bounds, and the

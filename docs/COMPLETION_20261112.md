@@ -1,5 +1,72 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Square attachments and the exact composition obstruction
+
+The [square-ear note](SQUARE_EAR_STAR_FORMING_COMPOSITION.md) proves that
+for an arbitrary finite simple base B and a matching of k old edges,
+adding a square along each edge gives, with F the base minus all roots,
+
+    beta_2(G)=2k+beta_2(F),
+    2k+SF_2(F)<=SF_2(G)<=2k+|V(F)|.
+
+Every minimal forming set selects exactly two vertices in each square.
+For a perfect root matching all 6^k pair choices are precisely the minimal
+forming sets, so beta_2=sf_2=SF_2=2k. There are companion pendant-path
+formulas and a full-root classification with 3^k minimal sets.
+
+The proposed exact SF addition for partial root sets is false. For every
+m>=5 an explicit 6m-vertex square family has F=K_m disjoint-union K_m,
+SF_2(F)=4, beta_2(G)=2m+4 and SF_2(G)=3m. The analogous pendant-path
+example has 5m vertices and the same values. Full all-m upper proofs and
+three explicit deletion witnesses per index explain the activity
+dependency responsible for the error m-4. These families use cliques;
+they do not refute a bipartite or median equality.
+
+Square attachments preserve medianity, planarity and two-connectivity;
+they preserve maximum degree four when all roots previously have degree
+at most three. Fully covered ladders provide an infinite outerplanar
+median degree-four class with no automorphism mapping every vertex to
+a neighbour, and with all minimal forming sets classified.
+
+The Python checker passes 329 square models,1099 path models,681648
+literal subsets,126 fully covered models,2008 minimal-set lifts and58263
+local-cap tests. It checks80 larger pair selections,7 structural median
+models (including2 with interior-edge attachments),6651 metric triples,
+117 vertex deletions, and2124 specified obstruction deletion witnesses.
+The independent C++ implementation checks all7962624 two-per-square
+sets and248832 two-per-path sets for m=5, obtaining exact SF=15 in both.
+Its exhaustive domain uses the proved local-cap lemma; it does not
+enumerate all 2^30 unrestricted subsets or assume the p/q upper proof.
+
+## Restricted median graphs
+
+The [restricted median note](RESTRICTED_MEDIAN_CUBE_CHAINS.md) reconstructs
+the cube-chain theorem: in any finite planar median graph with Delta<=4,
+every connected collection of intersecting induced cubes is an induced
+convex C_4 square P_(r+1). External edges meet only the end layers and
+number at most eight; when r>=2, each outside component attaches to one
+end. Two-connectivity requires at least two attachment vertices per
+nonempty outside component. Planarity is used through the bipartite
+Euler bound, which excludes adjacent-face branching and cycles of cubes.
+
+Every finite two-connected median graph with Delta<=3 is a ladder or
+Q_3 and has SF_2=beta_2. The classification is explicitly attributed as a
+consequence of Bandelt--Chepoi--Eppstein Proposition9, checked in the full
+arXiv0905.4537v1 primary manuscript. The forbidden book has degree four;
+the source's suspended cogwheels have hubs of degree at least five.
+The existing bipartite prism theorem supplies the exact parameter values.
+
+The structural checker passes39 models,84 cubes in24 components,69816
+metric triples and786 vertex deletions. A nonplanar Q_4 control confirms
+that degree four and medianity alone do not force the cube-chain property.
+These checks support the implementation of the all-size proof. The
+two-connected planar median Delta<=4 equality remains open, including
+the exchange problem in cube-free squaregraph regions and compatible
+activation/deletion data across square interfaces.
+
+Independent final review is recorded with the package when complete.
+No new Lean execution is claimed.
+
 ## Median graphs: explicit failure and bounded-degree amplification
 
 The [median obstruction note](MEDIAN_STAR_FORMING_OBSTRUCTION.md) proves
@@ -242,6 +309,10 @@ retain their existing ACCEPT, scoped to their original input.
 | Zero expense for all feasible ladder and E(H) instances | Proved, arbitrary M and nonnegative weights |
 | Zero expense for every feasible full grid instance | False: the explicit 3-by-6r family has expense r with unit actual weights |
 | SF_2=beta_2 for all finite median graphs | False; the bounded-degree connected family above has linear gap |
+| SF_2=beta_2 for two-connected subcubic median graphs | Proved, using the cited ladder/cube classification and the prism theorem |
+| Exact SF addition for arbitrary partial square or pendant-path attachments | False; explicit all-m families have additive error m-4 |
+| Full root coverage by square or pendant-path attachments | Complete minimal-set classification and exact beta_2=sf_2=SF_2 |
+| SF_2=beta_2 for two-connected planar median graphs of maximum degree four | Open; cube chains and full-coverage ear classes proved |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
