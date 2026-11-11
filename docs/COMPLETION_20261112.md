@@ -1,5 +1,56 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Arbitrary Cartesian prisms and their sharp gaps
+
+The [complete prism note](ADJACENT_INVOLUTIONS_AND_PRISM_GAPS.md) proves
+
+    SF_2(H square K_2)=Omega(H square K_2)=2n-nu(D(H))
+
+for every finite simple H, with no bipartiteness requirement. The upper
+witness argument extends to any graph with an adjacent involutory
+automorphism; its quotient determines exact Omega and an SF upper bound.
+Prism attainment uses a layer selection over the residual critical-set
+graph, with explicit opposite-rung deletion witnesses. An arbitrary graph
+with this involution need not attain the SF upper bound: K_(2n) has
+SF_2=2 and Omega=n for n>=3.
+
+Over all n-vertex bases, both maximum gaps SF_2-beta_2 and SF_2-psi_sq are
+exactly max(0,n-4). For n>=5 their positive equality bases are respectively:
+
+- K_n with any matching of edges deleted, for SF_2-beta_2;
+- K_n or K_n with one edge deleted, for SF_2-psi_sq.
+
+For H=K_n with m disjoint edges deleted, n>=5, the complete values are
+
+| Parameter | Exact value |
+| --- | --- |
+| beta_2 | 4 |
+| psi_sq | 4 if m<=1, and 5 if m>=2 |
+| SF_2 and Omega | n |
+
+These are all-size proofs. A complete-base prism is n-regular,
+n-connected and vertex-transitive, so those properties alone do not
+extend the bipartite four-way equality. The note also proves direct
+terminal completion in any paired graph for every feasible independent
+T, including selections using both layers. Independence excludes direct
+TT paths; no such TT-free assertion is made for arbitrary adjacent T.
+
+`python3 scripts/check_paired_graphs.py` passes 1,100 prism bases and
+1,065,509 literal subsets, 60,296 minimal forming sets, 4,166 general
+paired graphs and 1,052,741 further subsets, 89,860 further minimal sets,
+6,715 representative pairs, 5,397 direct completions including 496
+mixed-layer selections, and 3,396,244 canonical partial colourings over
+79 models. The latter exhausts all bases through order four and three
+near-complete bases of order five. Twelve larger prism certificates and
+31 larger extremal-family certificates also pass.
+
+The research-stage Oracle audit reconstructed and accepted all proposed
+formulae and equality classifications; it did not inspect or run code.
+The complete note, both new Python files and their existing matcher
+dependency have a separate independent audit at f44adbc. Its final scope
+and verdict are preserved in `output/paired-graph-review.json`.
+No new Lean verification or historical priority claim is made.
+
 ## Extended double covers and Cartesian prisms
 
 The [complete extended-cover proof](EXTENDED_DOUBLE_COVER_PARAMETERS.md)
@@ -148,6 +199,8 @@ retain their existing ACCEPT, scoped to their original input.
 | Question | Current status |
 | --- | --- |
 | All four parameters on E(H), and on every bipartite Cartesian prism | Proved by the matching and witness-capacity theorem above |
+| SF_2 and Omega on arbitrary Cartesian prisms | Proved; sharp SF/beta and SF/psi gaps and all positive equality bases classified |
+| Extending four-way prism equality to arbitrary bases | False; the exact near-complete families above separate the parameters |
 | Exact genuine TH expense at fixed grid width, with retained paths | Solved by the source-label DP, exponential in width |
 | Zero expense for all feasible ladder and E(H) instances | Proved, arbitrary M and nonnegative weights |
 | Zero expense for every feasible full grid instance | False: the explicit 3-by-6r family has expense r with unit actual weights |

@@ -1,5 +1,14 @@
 # From the hypercube solution to grids and structural characterization
 
+The [arbitrary-prism continuation](ADJACENT_INVOLUTIONS_AND_PRISM_GAPS.md)
+now gives exact SF_2 and Omega for every Cartesian prism, sharp gaps over
+all n-vertex bases, every positive equality base, and exact colouring
+values on that extremal family. The four-way equality extends to every
+bipartite base but fails for general bases, even highly connected regular
+ones. Mixed-layer independent selections have direct zero-expense
+completion under the adjacent-involution hypothesis. The rectangular-grid
+questions below retain their own scope.
+
 Current status (12 November): the [extended-double-cover theorem](EXTENDED_DOUBLE_COVER_PARAMETERS.md)
 settles SF_2=beta_2=psi_sq=Omega for every E(H), including every bipartite
 Cartesian prism H square K_2. Its value is 2n-nu(D(H)), or 2 alpha(H) in

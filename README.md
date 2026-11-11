@@ -1,5 +1,14 @@
 # Current continuation
 
+The [Cartesian-prism theorem](docs/ADJACENT_INVOLUTIONS_AND_PRISM_GAPS.md)
+extends the exact star-forming and representative values to every finite
+base H: `SF_2(H square K_2)=Omega(H square K_2)=2n-nu(D(H))`.
+The largest SF/dissociation gap among n-vertex bases is `max(0,n-4)`;
+for n>=5 all equality bases are complete graphs with a matching deleted.
+Their four parameters, and the sharp SF/colouring gap and its equality
+cases, are determined exactly. This shows precisely where the four-way
+prism equality needs the bipartite-base hypothesis.
+
 The [extended-double-cover theorem](docs/EXTENDED_DOUBLE_COVER_PARAMETERS.md)
 now proves, for every finite simple base H on n vertices,
 `SF_2(E(H))=beta_2(E(H))=psi_sq(E(H))=Omega(E(H))=2n-nu(D(H))`.
