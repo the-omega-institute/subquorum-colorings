@@ -47,8 +47,15 @@ near-complete bases of order five. Twelve larger prism certificates and
 The research-stage Oracle audit reconstructed and accepted all proposed
 formulae and equality classifications; it did not inspect or run code.
 The complete note, both new Python files and their existing matcher
-dependency have a separate independent audit at f44adbc. Its final scope
-and verdict are preserved in `output/paired-graph-review.json`.
+dependency received independent **ACCEPT** at f44adbc. The reviewer ran
+the original complete checker unchanged, with assertions enabled, and
+reproduced the 813-byte report byte for byte. The final note clarifies
+the n<=4 case of the gap corollary and refers explicitly to vertices of T
+in representative attainment. Two later checker assertions require all
+selected vertices to have deletion witnesses and connect the outer optimum
+to its matching dual. A full local rerun with these assertions reproduced
+the same report. The external run predates these small additions. Complete
+responses and exact scopes are in `output/paired-graph-review.json`.
 No new Lean verification or historical priority claim is made.
 
 ## Extended double covers and Cartesian prisms

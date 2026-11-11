@@ -99,7 +99,7 @@ For attainment choose critical I, put
     R=V(H) minus (I union N_H(I)),
 
 select both endpoints of I as T, and use the rungs over R as actual M.
-Every selected vertex sees only its selected rung partner in T union P.
+Every vertex of T sees only its selected rung partner in T union P.
 The objective is 2|I|+|R|=n+delta(H), proving the exact Omega formula.
 
 **Star-forming proof.** First suppose s,tau(s) are selected and an
@@ -340,7 +340,9 @@ be extended to arbitrary bases, even when the exact SF formula persists.
 SF_2(P(H))-psi_sq(P(H)) is also max(0,n-4). For n>=5 the bases with
 positive equality are precisely K_n and K_n with one edge deleted.
 
-Indeed beta_2<=psi_sq gives the upper bound from Theorem 3, and the
+For n<=4, Theorem 3 gives beta_2=SF_2. Since
+beta_2<=psi_sq<=Omega=SF_2, all four parameters agree and the gap is zero.
+For n>=5, beta_2<=psi_sq gives the upper bound from Theorem 3, and the
 complete base attains it by (12). Positive equality requires equality
 in Theorem 3 and psi_sq=beta_2=4, so (12) restricts the deleted matching
 to size zero or one. Since SF_2=Omega for every prism, the same exact

@@ -121,6 +121,8 @@ def check_prism_certificate(h):
     cert = prism_optimum_certificate(h)
     check_dual(h, cert['matching_dual'])
     selected = set(cert['forming'])
+    assert set(cert['deletion_witnesses']) == selected
+    assert cert['optimum'] == cert['matching_dual']['optimum']
     assert not unformed(g, selected)
     assert len(selected) == cert['optimum']
     for s, x in cert['deletion_witnesses'].items():
