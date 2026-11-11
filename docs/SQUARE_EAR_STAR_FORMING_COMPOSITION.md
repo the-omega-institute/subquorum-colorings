@@ -235,6 +235,11 @@ the degree-three old neighbour to map to the degree-four one, impossible.
 Thus the equality and full minimal-set classification here are not
 consequences of the adjacent-involution criterion.
 
+For n=4r, a separate [four-parameter proof](EAR_LADDER_FOUR_PARAMETERS.md)
+determines psi_sq=Omega=9r while beta_2=sf_2=SF_2=8r. Thus this class
+also shows why the established SF/dissociation equality alone cannot
+settle the grid's separate sub-quorum comparison.
+
 ## 7. Pendant paths and a companion exact class
 
 Another shielding operation attaches d-a_d-b_d at each vertex d of an

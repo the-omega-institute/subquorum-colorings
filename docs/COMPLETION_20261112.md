@@ -1,5 +1,38 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Four exact parameters on two-connected outerplanar median graphs
+
+The [ear-ladder family](EAR_LADDER_FOUR_PARAMETERS.md) gives, for every
+r>=1, a graph of order16r, maximum degree4, two-connected, outerplanar
+and median, with exact values
+
+    beta_2=sf_2=SF_2=8r,
+    psi_sq=Omega=9r.
+
+The proof classifies the local representative budget of each attached
+square. Only an opposite T pair with one old P root can exceed2 units,
+contributing5/2. In each two-column ladder interval at most one of the
+two row squares can have that type. This gives Omega<=9r, counting
+each actual matching endpoint by one half. Alternating the selected
+row in consecutive four-column blocks gives a legal9r-colour partial
+sub-quorum colouring. The square-pair classification gives all star-forming
+values and the exact dissociation value independently.
+
+The standalone checker literally examines all65536 subsets of the
+16-vertex base, its6668 actual matchings and1369324 possible disjoint
+T subsets after the forced >=2-P-neighbour exclusion. It obtains
+beta=SF=8, all1296 minimal forming sets, and Omega=9 without using the
+exceptional-square upper proof. Ten sizes through r128 pass2620 coloured
+closed-neighbourhood tests and2096 deletion witnesses. All-r statements
+have the written proof; finite controls do not replace it.
+
+The triple-equality extension to two-connected outerplanar median graphs
+is therefore false. The weaker SF_2=beta_2 question in planar degree-four
+median graphs remains open; this family satisfies that equality. It
+does not consist of full rectangular grids. Independent review of the
+new four-parameter result is recorded separately from the earlier ear
+and cube-chain package.
+
 ## Square attachments and the exact composition obstruction
 
 The [square-ear note](SQUARE_EAR_STAR_FORMING_COMPOSITION.md) proves that
@@ -313,6 +346,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Exact SF addition for arbitrary partial square or pendant-path attachments | False; explicit all-m families have additive error m-4 |
 | Full root coverage by square or pendant-path attachments | Complete minimal-set classification and exact beta_2=sf_2=SF_2 |
 | SF_2=beta_2 for two-connected planar median graphs of maximum degree four | Open; cube chains and full-coverage ear classes proved |
+| SF_2=beta_2=psi_sq for two-connected outerplanar median graphs of maximum degree four | False; H_r has beta_2=SF_2=8r and psi_sq=Omega=9r |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |

@@ -1,5 +1,14 @@
 # Current continuation
 
+The [four-parameter ear-ladder family](docs/EAR_LADDER_FOUR_PARAMETERS.md)
+has, for every r>=1, order16r and exact values
+`beta_2=sf_2=SF_2=8r < psi_sq=Omega=9r`.
+These graphs are two-connected, outerplanar, median, and have maximum
+degree four. Every local selected/endpoint configuration is charged
+once to prove the upper bound; an explicit9r-colour partial colouring
+attains it. Thus even in this restricted class, SF/dissociation equality
+does not imply sub-quorum equality. Full rectangular grids remain open.
+
 The [square-ear composition theorem](docs/SQUARE_EAR_STAR_FORMING_COMPOSITION.md)
 classifies every minimal forming set when squares are attached along a
 perfect matching of an arbitrary base: all 6^k choices of two vertices
