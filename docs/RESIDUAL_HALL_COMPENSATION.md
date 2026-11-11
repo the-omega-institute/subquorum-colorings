@@ -128,6 +128,180 @@ This construction permits additional non-centre TH paths and makes no
 one-relay-per-core assumption. It supplies a certificate criterion, not
 a general exact optimizer for unrestricted TH expense.
 
+### When the attainment criterion is also necessary
+
+The expense-splitting argument used earlier for separated-core normal forms
+extends to arbitrary retained paths and residual regions as follows.
+
+Suppose C_s is finite and every residual non-direct TH path has strictly
+positive expense. This holds whenever all residual actual edges have strictly
+positive weights; it also permits zero-weight actual edges that cannot occur
+on a zero-expense non-direct TH path. Then
+
+    f_R*=b_R+C_s
+    iff some optimal C_s family has a perfect direct-TH remainder.   (3a)
+
+**Proof.** Sufficiency is (3). For necessity take a retaining full matching
+of expense b_R+C_s. Such a matching exists when this finite equality holds,
+because a finite graph has finitely many auxiliary matchings. As in Section 2,
+choose s of its TH paths from U into D. Their expense is at least C_s.
+The total residual TH expense is exactly C_s, so the chosen paths attain C_s
+and all other residual TH paths have expense zero. By the hypothesis these
+other TH paths are direct. Restricting the full matching to their remainder
+therefore supplies the perfect matching required in (3a). QED.
+
+There is a quantitative version. If the minimum expense eta of any residual
+non-direct TH path is finite, and m(N) is the number of those paths in a
+retaining full matching N, then m(N)>=s and
+
+    f(N) >= b_R+C_s+(m(N)-s) eta.                             (3b)
+
+Indeed, after selecting the s compulsory paths, the remaining m(N)-s
+non-direct TH components have disjoint actual-edge sets and each costs at
+least eta. If eta>0 and f(N)<=b_R+C_s+epsilon, with epsilon>=0, this gives
+
+    m(N) <= s+floor(epsilon/eta).
+
+If no residual non-direct TH path exists, every retaining full matching has
+m(N)=s=0 and expense b_R; no infinite product in (3b) is intended.
+
+The coefficient eta in (3b) is sharp even for connected bipartite graphs.
+For r>=1 take white vertices t_i,w_i and black vertices b_i,z_i, i=1,...,r.
+Use edges t_i--b_i, b_i--w_i, w_i--z_i, and w_i--b_(i+1) for i<r.
+Let M consist of b_i--w_i, all of weight eta>0; set T={t_i}, W empty,
+R empty and D={z_1}. This graph is a tree. Its leaf edges force the unique
+full N to contain t_i--b_i and w_i--z_i for every i. Thus s=1, C_s=eta,
+m(N)=r and f(N)=r eta, attaining (3b). Every selected source has one P
+neighbour. This family establishes sharpness in the general graph domain.
+
+Both the positivity hypothesis and the existential optimizer quantifier have
+content. For positivity, take two disjoint four-vertex paths, embedded as
+grid vertices (r,c) with r in {0,2} and c in {0,1,2,3}. In each row the middle
+edge (r,1)--(r,2) is actual, the selected source is (r,3), and the black
+terminal is (r,0). Give the row-0 actual edge weight one and the row-2 edge
+weight zero. All other graph edges are the path edges. Let R be empty and
+D={(0,0)}. Then W is empty, d=s=1, C_s=1, and the unique optimal physical
+family is the row-0 path. The unique full auxiliary matching pairs columns
+0--1 and 2--3 in both rows and has expense one. After removing the row-0
+path, however, its row-2 selected source can be matched only through P.
+The direct-TH remainder is impossible. Thus equality with b_R+C_s need not
+imply the direct-remainder condition when additional zero-expense TH paths
+are allowed. Each source has one P neighbour; this is a finite grid-board
+example, with two components, rather than a full rectangle.
+
+The hypothesis in (3a) is decidable by a one-path shortest-cost flow: delete
+all direct arcs from T' to B' in the residual alternating network, and find
+the minimum expense from T' to B'. Its finite value is eta. A zero value
+means a zero-expense non-direct TH path exists; absence of any such path
+also satisfies the hypothesis. This is a test of the stated hypothesis,
+not a search over all optimal C_s families.
+
+### Unit weights still require choosing a compatible optimizer
+
+The existential quantifier in (3a) cannot be replaced by an arbitrary
+minimum physical flow, even on a full rectangle with feasible selected
+vertices and unit actual weights. Reuse the five-square geometry of the
+[earlier branched-source construction](https://github.com/the-omega-institute/subquorum-colorings/blob/b7e74a95f8250ef94234ccb3a485f10dcfa51622/docs/EXPOSABLE_PORTS_AND_BRANCHED_SOURCE_OBSTRUCTION.md),
+now with its canonical matching and all weights one. Here are the full
+specification and an attaining certificate.
+
+The board is [0,17]^2. Its five 5-by-5 square origins are
+
+    (6,6), (2,0), (0,10), (10,12), (12,2).
+
+Remove the black centre of each square to obtain P. In each local square
+use vertical actual pairs (a,b)--(a+1,b) for a=0,3 and b=0,...,4, and
+the two horizontal actual pairs (2,0)--(2,1), (2,3)--(2,4). Select all
+white Q vertices except the four HH sources
+
+    W={(5,10),(6,5),(10,11),(11,6)}.
+
+Every selected white has at most one P neighbour. Take R empty and let D
+be all five centres. None has a direct selected neighbour, so d=5.
+The four HH paths printed below show h_D=4; since there are only four HH
+sources, h_D cannot be larger. Hence s=1 and C_s=1.
+
+Two minimum one-edge TH paths to the central centre are
+
+    A_bad:  (5,8),(6,8),(7,8),(8,8),
+    A_good: (8,5),(8,6),(8,7),(8,8).
+
+The bad path has no direct-TH completion. To see this, take the chamber
+
+    ([0,1] x [0,9]) union ([2,5] x [5,9]).
+
+It has twenty black and twenty selected white vertices, and the direct
+selected neighbourhood of its black vertices is exactly its white set.
+A_bad withdraws the chamber white (5,8) to the central centre. If all
+other TH paths were direct, the other four centres would require all four
+HH sources, leaving none for the chamber. Its twenty black terminals would
+then have only nineteen available selected neighbours, contradicting Hall.
+The actual direct-remainder matching network also returns a physical Hall
+certificate with 83 black vertices and only 82 allowed white neighbours.
+
+For A_good, assign the four HH sources to their respective arm centres:
+
+    (5,10),(4,10),(3,10),(3,11),(4,11),(4,12),(3,12),(2,12),
+    (6,5),(6,4),(5,4),(4,4),(4,3),(4,2),
+    (10,11),(10,12),(11,12),(11,13),(10,13),(10,14),(11,14),
+        (11,15),(10,15),(10,16),(11,16),(12,16),(12,15),(12,14),
+    (11,6),(12,6),(13,6),(14,6),(14,5),(14,4).
+
+Each HH path lies inside its own square except for its first vertex.
+Together with A_good these paths are vertex-disjoint, use fourteen actual
+edges and supply nineteen auxiliary edges. Include the remaining forty-six
+actual edges as common M/N edges.
+
+For the exterior, use vertical pairs (a,b)--(a+1,b) in these columns:
+
+| a | Columns b |
+| --- | --- |
+| 0 | 8,9,17 |
+| 2 | 7,8,9,15,16,17 |
+| 4 | 5,6,7,8,9,15,16,17 |
+| 6 | 11,12,13,14,15,16,17 |
+| 8 | 0,11,12,13,14,15,16,17 |
+| 9 | 1 |
+| 10 | 0,2,5,17 |
+| 11 | 1,7,8,9 |
+| 12 | 0,10,11,17 |
+| 13 | 1,7,8,9 |
+| 14 | 0,10,11,17 |
+| 15 | 1,7,8,9,12,13,14,15,16 |
+| 16 | 0,17 |
+
+Remove the five square footprints, W, the entrance (8,5), and those vertical
+endpoints. The remaining horizontal intervals are:
+
+| Row | Intervals |
+| --- | --- |
+| 0,1 | [0,7], [15,16] |
+| 2,3 | [5,6] |
+| 4 | empty |
+| 5 | [11,14] |
+| 6 | empty |
+| 7 | [0,5] |
+| 8 | [1,4] |
+| 9 | [2,5] |
+| 10 | [3,4] |
+| 11 | [3,4], [10,11] |
+| 12,13,14,15 | empty |
+| 16 | [10,11] |
+| 17 | [1,16] |
+
+All intervals have even length and tile horizontally. The sixty-four vertical
+and thirty-three horizontal pairs give ninety-seven direct terminal paths.
+The total is 19+46+64+33=162 disjoint edges, covering all 324 vertices.
+Only A_good is a non-direct TH path, so the expense is one. A centre must
+be TH because five centres share four HH sources, and every centre TH path
+uses an actual edge. Thus the unrestricted optimum is exactly one.
+
+Consequently, the same unit-weight physical subproblem has a minimum path
+with a perfect direct remainder and another minimum path without one.
+This refutes the rule that an arbitrary minimum C_s family may be used
+to decide attainability. It supports the existential formulation of (3a)
+without refuting that theorem or the grid colouring targets.
+
 ## 4. Exact recovery of the unit retained-pair optimum
 
 Retain A and C from `RETAINING_PAIR_EXACT_UNIT_COST.md`. In the residual
@@ -310,7 +484,9 @@ so it is not a feasible-selection example for the colouring problem.
 
 `scripts/residual_hall_compensation.py` computes both residual bounds,
 physical path/cut and min-cost dual certificates, and the direct-TH remainder
-test. It uses exact nonnegative integer costs; the theorem permits real
+test. Its `cheapest_non_direct_TH` function tests the hypothesis in (3a)
+by the one-path network described above. It uses exact nonnegative integer
+costs; the theorem permits real
 nonnegative weights. The residual physical capacities are unique, including
 in the HH max-flow computation. All reported lower bounds combine by max.
 
@@ -318,5 +494,9 @@ in the HH max-flow computation. All reported lower bounds combine by max.
 literal disjoint path families, endpoint assignments, reconstructed residual
 dual potentials and cuts, and both explicit grid applications. Written proofs
 establish the general and all-K statements; finite controls test the code.
+The additional `scripts/check_positive_attainment.py` compares all optimal
+physical path families with independent full-matching enumeration on small
+boards, verifies (3a)--(3b), checks the zero-weight obstruction, and reconstructs
+the printed unit-weight 18-by-18 matching and its rejected-path Hall certificate.
 No universal unit-weight colouring improvement, rectangular-grid triple
 equality, unrestricted exact optimizer or new Lean verification is claimed.

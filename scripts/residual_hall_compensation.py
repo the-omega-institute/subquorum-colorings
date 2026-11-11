@@ -198,6 +198,20 @@ def complete_direct(data, extra):
     return dict(auxiliary=auxiliary, certificate=result)
 
 
+def cheapest_non_direct_TH(data):
+    """Minimum non-direct residual TH expense, or value zero if none exists.
+
+    Forbid only direct source-to-terminal arcs. Every surviving source/sink
+    path must then use an actual edge. The returned flow has demand one;
+    value zero denotes no such path, rather than a zero-cost path.
+    """
+    arcs = [(a, b, c) for a, b, c in data['physical']
+            if not (a in data['selected'] and b in data['black_q'])]
+    arcs += [('S', t, 0) for t in sorted(data['selected'])]
+    arcs += [(b, 'Z', 0) for b in sorted(data['black_q'])]
+    return flow(data['board'] | {'S', 'Z'}, arcs, 'S', 'Z', 1)
+
+
 def bound(data, region, attempt_completion=True):
     dset = set(region)
     if not dset <= data['black_q']:

@@ -163,3 +163,18 @@ exact completion certificates. The checker independently reconstructs the
 printed complete tiling and the flow dual/cut certificates. General and
 all-K conclusions have written proofs. This coordinate note is proposed
 appendix material; the fifteen-page PDF and submitted version are unchanged.
+
+The positive-attainment continuation in Section 3 of that note proves the
+criterion is also necessary whenever every non-direct residual TH path has
+positive expense. It bounds the number m of such paths in any retaining
+completion by f(N)>=b_R+C_s+(m-s)eta, where eta is their minimum expense;
+a connected bipartite tree family attains the coefficient. A finite two-path
+grid board shows why zero weights need a different remainder criterion.
+A unit-weight 18-by-18 rectangle shows why even positive weights do not allow
+an arbitrary physical optimizer: two one-edge minimum TH routes have opposite
+completion outcomes. The successful route has a printed 162-edge full matching;
+the rejected remainder has an 83/82 physical Hall certificate. Reproduce with:
+
+```sh
+python3 scripts/check_positive_attainment.py
+```

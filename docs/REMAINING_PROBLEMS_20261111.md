@@ -28,6 +28,11 @@ scope is kept separate from the proved results in COMPLETION_20261111.md.
    examples. The remaining target is a general choice of regions and paths
    guaranteeing compatible completion, or an unrestricted exact TH optimizer;
    failure of one minimum-flow remainder is not an impossibility proof.
+   Under the absence of zero-expense non-direct TH paths, the existential
+   minimum-flow remainder criterion is now necessary and sufficient for
+   attaining b_R+C_s. A unit-weight 18-by-18 example shows an arbitrary
+   physical optimizer may fail while another succeeds, so choosing a
+   compatible optimizer remains substantive even with positive weights.
    The 12-by-18 all-K example still separates source budget two from the
    unrestricted optimum K+1, even though each cheap entrance is exposable.
 4. **Unit-weight numerical gain.** For weights at least one, the new theorem
