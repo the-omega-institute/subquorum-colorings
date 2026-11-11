@@ -38,8 +38,11 @@ composition, and extends the separate grid compensation accounting.
 
 The readable star-forming manuscript is `manuscript/starforming-gap.tex`.
 Its proofs are self-contained apart from the identified literature context.
-The grid result is kept as a separate proof because it addresses a different
-optimization model. All infinite claims above have written proofs.
+The grid result appears in a separate appendix because it addresses a
+different optimization model. The final editor accepted coauthor
+circulation subject to an explicit disjoint-union hypothesis; that
+hypothesis is now inserted. The review manifest records the exact
+mathematical review scope and the implemented corrections. All infinite claims above have written proofs.
 
 ## Reproduction
 

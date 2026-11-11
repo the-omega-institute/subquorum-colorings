@@ -249,10 +249,12 @@ than $s$ vertices of $K$. This proves a cap independent of the ambient
 graph, without requiring outside activity to be internal.
 
 \begin{theorem}\label{thm:generalcomposition}
-Let induced blocks $K_i$ partition the vertices, with all interblock
-edges through boundaries $P_i$. Suppose their global caps are $s_i$.
+Start with finitely many pairwise vertex-disjoint graphs $K_i$ and
+boundaries $P_i\subseteq V(K_i)$. Form $G$ on
+$V(G)=\bigsqcup_i V(K_i)$ by retaining all block edges and adding only
+edges between $P_i,P_j$ for distinct $i,j$. Suppose their global caps are $s_i$.
 For each $i$, suppose $C_i$ forms $K_i$, $|C_i|=s_i$, and for every
-$v\in C_i$ there is a vertex $x\notin P_i$, outside $C_i\setminus\{v\}$,
+$v\in C_i$ there is a vertex $x\in V(K_i)\setminus P_i$, outside $C_i\setminus\{v\}$,
 whose neighbourhood in $C_i\setminus\{v\}$ is either empty or is
 $\{y\}$, where $y\notin P_i$ has no selected neighbour after deletion.
 Then $\SF(G)=\sum_i s_i$.
