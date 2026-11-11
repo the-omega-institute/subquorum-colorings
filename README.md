@@ -1,5 +1,14 @@
 # Current continuation
 
+The [three-row upper-forming theorem](docs/THREE_ROW_STAR_FORMING_EQUALITY.md)
+establishes `SF_2(P_3 square P_n)=5floor(n/3)+2(n mod3)` for every n>=1,
+by an exact deletion-witness frontier and whole-vector translation followed
+by induction. With the prior width-three colouring theorem, this closes
+the proposed triple equality at height three. The finite certificate is
+independently rebuilt from the empty prefix using literal three-vertex
+stars. This is a computer-assisted all-length proof; independent final
+review is pending, and arbitrary width remains open.
+
 The [exact decorated-interface formula](docs/EXACT_DECORATED_INTERFACE_FORMULA.md)
 converts a minimum interface forming set into a maximum minimal forming
 set of a 21-fold decoration: `SF_2(D(H))=12|H|-sf_2(H)` for every finite

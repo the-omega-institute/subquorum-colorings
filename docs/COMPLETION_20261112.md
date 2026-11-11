@@ -1,5 +1,29 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Upper forming number and triple equality at height three
+
+The [three-row proof](THREE_ROW_STAR_FORMING_EQUALITY.md) establishes
+`SF_2(P_3 square P_n)=beta_2(P_3 square P_n)=5floor(n/3)+2(n mod3)`
+for every positive n. Together with Sahbi's prior width-three colouring
+formula, it gives SF_2=beta_2=psi_sq on all three-row rectangles. The new
+contribution is the SF upper bound, not a new colouring formula.
+
+The exact frontier retains four columns with omitted/selected-unwitnessed/
+selected-witnessed digits. All radius-two formation and deletion tests are
+performed at the middle column of each five-column window. A general
+soundness/completeness proof identifies accepted strings with globally
+minimal forming sets. Both complete maximum-score vectors, at lengths
+12 and 15, have 14,726 reachable states and satisfy V15=V12+5 entrywise.
+Transfer homogeneity proves the recurrence for every later length.
+
+An independent Python implementation uses literal star triples and
+reconstructs both vectors from the empty prefix. It also compares every
+44,954 selected subset on 21 small boards with literal global minimality.
+The one-column boundary has its own corrected and exhaustively checked
+tail. This is a computer-assisted theorem with a finite exact premise,
+not scalar extrapolation; independent final review is pending. The full
+arbitrary-width triple equality and universal 5/6 improvement remain open.
+
 ## Exact decoration formula and sharp path-residual values
 
 The [decorated-interface theorem](EXACT_DECORATED_INTERFACE_FORMULA.md)
