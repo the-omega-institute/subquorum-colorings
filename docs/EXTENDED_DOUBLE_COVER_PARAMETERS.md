@@ -1,8 +1,10 @@
 # Exact parameters and zero-expense completion in extended double covers
 
-For every finite simple graph H, we prove exact formulas for the dissociation
-number, sub-quorum colouring number and representative optimum of its extended
-double cover. The common value has an ordinary bipartite matching certificate.
+For every finite simple graph H, we prove that the upper star-forming number,
+dissociation number, sub-quorum colouring number and representative optimum
+of its extended double cover are all equal to 2n-nu(D(H)). The common value
+has an ordinary bipartite matching certificate. The star-forming upper bound
+counts deletion witnesses with a single capacity of two per empty rung.
 The same symmetry extends the two-row zero-TH-expense construction to this
 whole graph class, for arbitrary actual matchings and nonnegative weights.
 
@@ -21,17 +23,34 @@ matching cardinality, and define
 
     delta(H) = max_{I independent in H} (|I|-|N_H(I)|).
 
-The empty set is allowed, so delta>=0. Neighbourhoods are open. A
+The empty set is allowed, so delta>=0. Here N_H(X) is the set of vertices
+adjacent to some member of X; it can intersect X. A
 dissociation set induces maximum degree at most one; beta_2 is its maximum
 size. A feasible representative pair consists of a matching M and a set T
 disjoint from its endpoints P, such that every t in T has at most one
 neighbour in T union P. The quantity Omega maximizes |T|+|M|. T may use both
 colours. Sahbi's representative reduction supplies
 
-    beta_2(G) <= psi_sq(G) <= Omega(G).                        (1)
+beta_2(G) <= psi_sq(G) <= Omega(G).                        (1)
 
-The proof below bounds every feasible pair and constructs an attaining
-dissociation set; it does not need a converse to (1).
+For clarity, the two reductions have direct proofs. Give each vertex of a
+dissociation set its own colour. Its coloured closed neighbourhood has size
+at most two, so that vertex alone supplies at least half. Conversely, from
+each colour class containing an edge retain one such edge; from each
+edge-free colour class retain one vertex. A vertex of the latter type has
+no same-colour neighbour in the original coloured support. Its sub-quorum
+condition therefore allows at most one coloured neighbour, and hence at
+most one neighbour in the retained set. The retained edges and vertices
+give a feasible pair with one contribution per colour. The proof below
+bounds every such pair and constructs an attaining dissociation set.
+
+A set S is **2-star-forming** if every x outside S belongs to a not
+necessarily induced K_(1,2) inside S union {x}. The exact local test is
+that x has at least two neighbours in S, or has a neighbour in S with a
+neighbour in S. SF_2 is the maximum size of an inclusion-minimal such set.
+Formation is upward closed: when S is enlarged, every still-outside vertex
+keeps a witnessing star. Thus testing every single deletion characterizes
+inclusion-minimality. An empty graph has all four parameters zero.
 
 ## 2. A matching formula for the independent-set deficiency
 
@@ -114,7 +133,8 @@ An ordinary maximum matching in D(H) provides both sides of the certificate.
 Start alternating reachability at its unmatched left vertices. If X,Y
 are the reached left and right indices, then Y=N_H(X) and
 |X|-|Y|=n-nu(D(H)). The construction in Lemma 1 gives I=X minus Y with
-the same deficiency. The dissociation selection above is optimal. The
+the same deficiency: Lemma 1 gives at least the Hall deficiency, which
+already equals the global maximum. The dissociation selection above is optimal. The
 matching together with the minimum vertex cover (left outside X) union Y
 certifies its own maximum cardinality. Thus the exact parameter and an
 attaining set are computable in polynomial time on this class.
@@ -149,6 +169,18 @@ Its unweighted biadjacency matrix has no orthogonal signing: the inner
 product of any two rows of a 3-by-3 sign matrix is an odd integer, hence
 nonzero. Thus the equality criterion above applies to graphs outside the
 orthogonal-signing sufficient condition.
+
+The proof also characterizes all optimal feasible representatives through
+an exact nonnegative remainder. With I the TT indices and a,b,u,v as above,
+
+    n+delta(H)-(|T|+|M|)
+      = [delta(H)-(|I|-|N_H(I)|)]
+        + [b-|N_H(I)|] + (v-u)/2.                           (6a)
+
+Each summand is nonnegative. Thus the pair is optimal exactly when I is
+critical, the ZZ rungs are exactly N_H(I), and u=v. In the last condition
+the TP-to-PZ injection is a bijection. This criterion allows both colours
+in T and does not require M to be a subset of the rungs.
 
 ## 4. Zero TH expense for arbitrary actual matchings
 
@@ -185,7 +217,135 @@ adjacent to tau(v) for every v. Its orbits give exactly the E(H) construction
 for a quotient graph H. Recognition from such a supplied involution is
 immediate; no graph-isomorphism complexity claim is needed.
 
-## 5. Verification and the separate star-forming question
+## 5. Exact upper star-forming number
+
+**Theorem 4.** For every finite simple H,
+
+    SF_2(E(H))=beta_2(E(H))=psi_sq(E(H))=Omega(E(H))
+              =n+delta(H)=2n-nu(D(H)).                        (8)
+
+More precisely, for each inclusion-minimal forming S let I_S consist of
+the indices whose rungs are isolated edge components of E(H)[S]. Then
+I_S is independent in H and
+
+    |S| <= n+|I_S|-|N_H(I_S)|.                               (9)
+
+**Proof.** We prove (9) by allocating all deletion witnesses on empty
+rungs just once. Write N_A(v) for the neighbours of v in A. An outside
+vertex fails formation exactly when it has no selected neighbour, or its
+unique selected neighbour is isolated in the selected graph.
+
+First suppose S is forming, both s and tau(s) belong to S, and an original
+outside vertex x becomes unformed after deleting s. We claim tau(x) is
+outside S too. Otherwise tau(x) remains selected: it cannot equal s, as
+then x=tau(s) would already be selected. Failure at x forces
+
+    N_(S minus {s})(x)={tau(x)},
+    N_(S minus {s})(tau(x))=empty.                            (10)
+
+If x is adjacent to s, symmetry makes tau(x) adjacent to the still-selected
+tau(s), contradicting (10). If x is not adjacent to s, its selected
+neighbours were unchanged. Formation before deletion therefore requires
+tau(x) to have a selected neighbour before deletion, which by (10) can
+only be s. Symmetry then makes x adjacent to tau(s), a still-selected
+vertex different from tau(x), again a contradiction. This proves the claim:
+every outside witness for an endpoint of a doubly selected rung lies on a
+completely empty rung.
+
+Fix now a minimal forming S. Let C index its doubly selected rungs and Z
+its empty rungs. Put C_0=I_S and C_1=C minus C_0. Counting rungs gives
+
+    |S|=n+|C_0|+|C_1|-|Z|.                                  (11)
+
+Every neighbour of an index in C_0 is in Z, since a selected lift in an
+adjacent rung would give one endpoint of this isolated selected edge a
+second selected neighbour. Thus C_0 is independent and N_H(C_0) is a
+subset of Z.
+
+Every endpoint s of a C_1-rung lies in a three-vertex path inside S. If
+its selected degree is at least two it is a star centre; otherwise its
+only selected neighbour is tau(s), which has another selected neighbour
+because their rung is not an isolated edge component. The newly omitted
+s is therefore still formed after its deletion. Minimality forces some
+original outside vertex x to fail. By the preceding claim, x is on an
+empty rung. Let Q consist of the 2|C_1| endpoints of all C_1-rungs.
+
+For each z in Z let W_z be the set of vertices in Q whose deletion is
+witnessed by at least one of w_z,b_z. We prove
+
+    |W_z|<=2,             W_z=empty if z belongs to N_H(C_0). (12)
+
+If z has an H-neighbour c in C, both outside lifts have fixed forming
+stars w_z-b_c-w_c and b_z-w_c-b_c. Deleting any selected vertex outside
+{w_c,b_c} preserves both stars. Hence W_z is contained in this pair. If
+c lies in C_0 neither of its endpoints belongs to Q, so W_z is empty.
+
+If z has no H-neighbour in C, neither outside lift x=w_z or b_z is
+adjacent to any member of Q. For x to witness a deletion s in Q, its
+selected-neighbour set must stay fixed at a singleton {t}; two neighbours
+would still form x, and zero could not have formed it before deletion.
+The vertex t must have N_S(t)={s}, so deletion of precisely that s makes
+t isolated. For fixed x both t and its unique selected neighbour s are
+fixed. Each outside lift therefore witnesses at most one member of Q,
+again proving the capacity two. This proves (12) in all cases.
+
+Every member of Q has at least one outside witness. Counting unions via
+the capacity bound, while reserving N_H(C_0), gives
+
+    2|C_1| <= sum_(z in Z) |W_z|
+             =sum_(z in Z minus N_H(C_0)) |W_z|
+             <=2(|Z|-|N_H(C_0)|).
+
+The same empty rung has total capacity two across all deletions; none
+is charged separately for different centres or witness choices. Substitute
+this inequality into (11) to obtain (9), and hence SF_2<=n+delta(H).
+
+To attain it, take the dissociation set D constructed in Theorem 2 from
+a deficiency-maximizing independent I, with R=V(H) minus (I union N_H(I)).
+The graph H[R] has no isolated vertex: otherwise adding such a vertex
+to I would increase its deficiency by one without enlarging N_H(I).
+Each outside lift over N_H(I) is formed using a neighbouring selected
+rung over I. Each outside black b_r over R has selected neighbours w_r
+and w_(r') for some r' adjacent to r in R. Thus D is forming. Deleting
+any selected vertex leaves that vertex unformed, because the induced
+graph on D has maximum degree one and contains no three-vertex star.
+D is therefore minimal forming and has size n+delta(H). This proves (8).
+The empty graph follows directly from the definitions. QED.
+
+For a maximum minimal forming set, (9) shows that I_S must itself attain
+delta(H). In fact, (11) gives the exact nonnegative remainder
+
+    n+delta(H)-|S|
+      = [delta(H)-(|C_0|-|N_H(C_0)|)]
+        + [|Z|-|N_H(C_0)|-|C_1|].                          (9a)
+
+Among minimal forming sets, S is maximum exactly when C_0 is critical
+and |C_1|=|Z minus N_H(C_0)|. In that event the sets W_z, for z outside
+N_H(C_0), partition Q into pairs: equality at both steps of the capacity
+count forces every such W_z to have size two and no deletion to occur in
+two different W_z. This describes all equality cases within this graph
+class, including maximum sets that contain stars. The theorem does not say
+that every maximum minimal forming set
+is a dissociation set. On the 2-by-4 ladder the four middle-column vertices
+induce a square and form a minimal set of size four: each endpoint of the
+square has its deletion witnessed by the adjacent outside end-column
+vertex. There are two C_1-rungs and two empty rungs, each witnessing exactly
+two deletions, so the capacity in (12) is sharp.
+
+**Corollary 5 (Cartesian prisms).** If H is bipartite then
+
+    SF_2(H square K_2)=beta_2(H square K_2)=psi_sq(H square K_2)
+                     =Omega(H square K_2)=2 alpha(H).         (13)
+
+This follows from (6) and (8). In particular the prism operation eliminates
+the star-forming/dissociation gap of any bipartite base. For the ten-vertex
+sharp gap block B with beta_2(B)=5 and SF_2(B)=6, its prism has all four
+parameters equal to ten. For each d>=2 the hypercube Q_d has all four
+parameters equal to 2^(d-1). For every ladder P_2 square P_k they equal
+k if k is even and k+1 if k is odd. These are all-size consequences of
+the witness-capacity proof, not extrapolations of finite computation.
+
+## 6. Verification
 
 `scripts/extended_double_cover.py` returns an ordinary matching, equal-size
 vertex cover, a Hall-deficient set, the critical independent set and the
@@ -201,15 +361,13 @@ larger graphs. It has no helper-module dependency beyond the implementation
 under test. Finite enumeration checks implementations; the proofs above
 establish the arbitrary-size statements. No new Lean verification is claimed.
 
-Whether the **upper star-forming number** SF_2(E(H)) also equals (3) is a
-separate question at this stage. Its definition maximizes the size of an
-inclusion-minimal set S such that each x outside S lies in a not-necessarily-
-induced K_(1,2) inside S union {x}. Neither (1) nor the representative proof
-is an upper bound on SF_2. Finite equalities found by the checker are
-explicitly recorded as observations, not a general proof. The general
-rectangular-grid equality involving SF_2 remains separate as well.
+The star-forming extension additionally tests every minimal forming set of
+the small cover graphs, all its deletion witnesses, the empty-rung capacities
+and the zero budget on neighbours of isolated selected rungs. The upper
+bound for SF_2 comes from Theorem 4, independently of the representative
+inequality (1); no general-graph assertion SF_2<=Omega is used.
 
-## Sources and scope
+## 7. Sources and scope
 
 [1] Zhibo Chen, “Spectra of extended double cover graphs,” *Czechoslovak
 Mathematical Journal* 54 (2004), 1077–1082.

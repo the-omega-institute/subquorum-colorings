@@ -156,3 +156,53 @@ def zero_TH_completion(adjacency, actual, selected):
         auxiliary.update(((i, n+j), (j, n+i)))
     auxiliary.update((i, n+i) for i in range(n) if i not in used)
     return dict(auxiliary=sorted(auxiliary), swaps=swaps)
+
+
+def minimal_forming_certificate(adjacency, selected):
+    """Validate minimal formation and expose its two-per-empty-rung budget.
+
+    This constructs literal deletion witnesses; it does not infer minimality
+    from the proved parameter formula. Cost is polynomial in cover size.
+    """
+    h = validate_base(adjacency)
+    n = len(h)
+    g = extended_cover(h)
+    selected = set(selected)
+    vertices = set(range(2*n))
+    if not selected <= vertices:
+        raise ValueError('Selected vertices outside graph')
+
+    def unformed(s):
+        active = {v for v in s if g[v] & s}
+        return {x for x in vertices-s if len(g[x] & s) < 2 and not g[x] & active}
+
+    if unformed(selected):
+        raise ValueError('Set is not forming')
+    failures = {s: unformed(selected-{s}) for s in selected}
+    if any(not values for values in failures.values()):
+        raise ValueError('Set is not inclusion-minimal forming')
+    doubles = {i for i in range(n) if {i, n+i} <= selected}
+    isolated = {i for i in doubles if g[i] & selected == {n+i}
+                and g[n+i] & selected == {i}}
+    high = doubles-isolated
+    empty = {i for i in range(n) if not {i, n+i} & selected}
+    near_isolated = {v for u in isolated for v in h[u]}
+    assert not isolated & near_isolated and near_isolated <= empty
+    relevant = high | {n+i for i in high}
+    budget = {i: set() for i in empty}
+    for s in relevant:
+        assert s not in failures[s] and failures[s]
+        for x in failures[s]:
+            assert x not in selected and x % n in empty
+            budget[x % n].add(s)
+    assert all(len(values) <= 2 for values in budget.values())
+    assert all(not budget[i] for i in near_isolated)
+    assert relevant <= {s for values in budget.values() for s in values}
+    defect = len(isolated)-len(near_isolated)
+    assert len(high) <= len(empty)-len(near_isolated)
+    assert len(selected) <= n+defect
+    return dict(size=len(selected), isolated_rungs=sorted(isolated),
+                isolated_neighbours=sorted(near_isolated), high_rungs=sorted(high),
+                empty_rungs=sorted(empty), independent_defect=defect,
+                deletion_witnesses={s: sorted(values) for s, values in failures.items()},
+                empty_rung_deletions={i: sorted(values) for i, values in budget.items()})

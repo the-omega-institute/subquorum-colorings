@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import random
 
-from extended_double_cover import (extended_cover, optimum_certificate,
+from extended_double_cover import (extended_cover, minimal_forming_certificate, optimum_certificate,
                                    representative_certificate, zero_TH_completion)
 
 
@@ -33,7 +33,7 @@ def neighbours(h, selected):
 
 def literal_optima(g):
     adj = masks(g)
-    size, beta, sf = 1 << len(g), 0, 0
+    size, beta, sf, minimal_sets = 1 << len(g), 0, 0, []
     forming = bytearray(size)
     for selected in range(size):
         active, dissociation = 0, True
@@ -51,7 +51,8 @@ def literal_optima(g):
         forming[selected] = ok
         if ok and all(not forming[selected ^ (1 << v)] for v in range(len(g)) if selected >> v & 1):
             sf = max(sf, selected.bit_count())
-    return beta, sf, size
+            minimal_sets.append({v for v in range(len(g)) if selected >> v & 1})
+    return beta, sf, size, minimal_sets
 
 
 def matchings(g, vertices=None):
@@ -91,6 +92,18 @@ def score(g, actual, auxiliary, selected, weights):
 def check_certificate(h, result):
     n = len(h)
     matching = result['double_matching']
+    # Validate domains before indexing: Python's negative indices are not
+    # additional graph vertices. This helper also accepts external witnesses.
+    def check_ids(values, limit):
+        assert all(type(v) is int and 0 <= v < limit for v in values)
+        assert len(set(values)) == len(values)
+    for edge in matching:
+        assert len(edge) == 2
+        assert all(type(v) is int and 0 <= v < n for v in edge)
+    for key in ('double_vertex_cover_left', 'double_vertex_cover_right',
+                'Hall_left', 'Hall_right', 'critical_independent', 'critical_neighbours'):
+        check_ids(result[key], n)
+    check_ids(result['dissociation'], 2*n)
     assert len({u for u, _ in matching}) == len(matching)
     assert len({v for _, v in matching}) == len(matching)
     assert all(v in h[u] for u, v in matching)
@@ -144,8 +157,24 @@ def pair_controls(h):
 def main():
     report = dict(base_graphs=0, literal_subsets=0, observed_SF_equalities=0,
                   representative_pairs=0, zero_constructions=0,
-                  white_subsets_certified=0, per_order=[])
+                  white_subsets_certified=0, minimal_forming_sets=0,
+                  empty_rung_budgets=0, reserved_empty_rungs=0,
+                  high_rung_occurrences=0, per_order=[])
     examples = []
+    # The independent review supplied this formerly accepted malformed
+    # K_(1,3) certificate: -4 aliases 0 during indexing, faking a third edge.
+    star = base(4, [(0, 1), (0, 2), (0, 3)])
+    malformed = dict(double_matching=[(0, 1), (-4, 2), (1, 0)],
+                     double_vertex_cover_left=[0, 1], double_vertex_cover_right=[0],
+                     Hall_left=[1, 2], Hall_right=[0], critical_independent=[1, 2],
+                     critical_neighbours=[0], deficiency=1,
+                     dissociation=[1, 2, 3, 5, 6], optimum=5)
+    try:
+        check_certificate(star, malformed)
+    except AssertionError:
+        report['malformed_certificate_rejected'] = True
+    else:
+        raise AssertionError('Accepted a vertex outside the graph domain')
     for n in range(6):
         edges = list(combinations(range(n), 2))
         count = 0
@@ -157,8 +186,29 @@ def main():
             delta = max((len(i)-len(neighbours(h, i)) for bits_i in range(1 << n)
                          if not (i := {v for v in range(n) if bits_i >> v & 1}) & neighbours(h, i)), default=0)
             assert delta == cert['deficiency']
-            beta, sf, size = literal_optima(literal_cover(h))
-            assert beta == cert['optimum']
+            beta, sf, size, minimal_sets = literal_optima(literal_cover(h))
+            assert beta == sf == cert['optimum']
+            for selected in minimal_sets:
+                witness = minimal_forming_certificate(h, selected)
+                assert witness['size'] <= n+witness['independent_defect'] <= n+delta
+                if len(selected) == cert['optimum']:
+                    assert witness['independent_defect'] == delta
+                    reserved = set(witness['isolated_neighbours'])
+                    pairs = [set(values) for i, values in witness['empty_rung_deletions'].items()
+                             if i not in reserved]
+                    assert all(len(values) == 2 for values in pairs)
+                    assert sum(map(len, pairs)) == len(set().union(*pairs))
+                # Independently recalculate every returned failed-formation vertex.
+                for s, failures in witness['deletion_witnesses'].items():
+                    reduced = selected-{s}
+                    for x in failures:
+                        assert len(literal_cover(h)[x] & reduced) <= 1
+                        assert all(not literal_cover(h)[v] & reduced
+                                   for v in literal_cover(h)[x] & reduced)
+                report['minimal_forming_sets'] += 1
+                report['empty_rung_budgets'] += len(witness['empty_rung_deletions'])
+                report['reserved_empty_rungs'] += len(witness['isolated_neighbours'])
+                report['high_rung_occurrences'] += len(witness['high_rungs'])
             report['observed_SF_equalities'] += sf == beta
             if sf > beta:
                 examples.append(dict(n=n, edges=[e for i, e in enumerate(edges) if bits >> i & 1],
@@ -180,9 +230,10 @@ def main():
                          if rng.random() < probability])
             cert = optimum_certificate(h)
             check_certificate(h, cert)
+            minimal_forming_certificate(h, cert['dissociation'])
             report['larger_certificates'] += 1
     report['SF_counterexamples_in_finite_run'] = examples
-    report['SF_scope'] = 'Finite observations; not a proof of any all-base SF formula'
+    report['SF_scope'] = 'All minimal forming sets checked on small bases; general two-per-empty-rung proof in note establishes all-base formula'
     report['status'] = 'PASS'
     Path('output').mkdir(exist_ok=True)
     Path('output/extended-double-cover-check.json').write_text(json.dumps(report, indent=2)+'\n')
