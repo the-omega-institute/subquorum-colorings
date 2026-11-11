@@ -1,5 +1,18 @@
 # Current continuation
 
+The [sharp selected-star theorem](docs/SHARP_SELECTED_STAR_GAP.md) proves
+`|S|-beta_2(G)<=floor(n/12)` for every inclusion-minimal two-star-forming
+set S in a finite simple bipartite graph whose selected components are
+stars, edges or isolates. A private clean leaf at each centre is no
+longer required. A matching of centres to twice-touched isolate helpers
+makes the repairs compatible and supplies the missing budget inequality.
+The connected degree-six family attains the coefficient. Positive equality
+forces the six-vertex-block template, including at least n/6 pendant
+vertices; minimum degree at least two therefore improves the integer bound
+to `floor((n-1)/12)` for such selections. The complete proof, standalone
+checker and finite report are included. The first independent proof review
+returned ACCEPT; final exact-source execution review is pending.
+
 The [clean-witness port composition](docs/SELECTED_STAR_PORT_COMPOSITION.md)
 gives an exact unrestricted formula for every finite interface graph R,
 with any orientation: `beta_2(F_R)=7|V(R)|+alpha(R)`. Its explicit minimal

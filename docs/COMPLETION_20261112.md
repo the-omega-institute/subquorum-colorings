@@ -1,5 +1,26 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Sharp selected-star coefficient without a clean-leaf assumption
+
+The [complete proof](SHARP_SELECTED_STAR_GAP.md) establishes
+|S|-beta_2(G)<=floor(n/12) for every minimal forming selection whose
+selected components are stars, edges or isolates in a finite simple
+bipartite graph. No clean leaf at every centre is assumed. Direct centre
+witnesses enter the incidence ledger, while a capacity-one matching of
+centres to twice-touched selected isolates gives simultaneously valid
+repairs. Two exact weighted combinations prove the coefficient and
+quantitative remainder bounds. Connected degree-six graphs attain it.
+Positive equality forces c P3 components, c pendant selected isolates,
+2c leaf witnesses, and degree two at every selected centre/leaf. Thus
+minimum degree at least two yields floor((n-1)/12) for these selections.
+
+The standalone audit passes on 5,399 graphs, 599,877 selected subsets,
+39,880 witness assignments and 80,912 repaired sets, plus nine targeted
+models and 22,937 feasible integer-ledger controls. Initial independent
+proof review returned ACCEPT. The final exact-source execution audit is
+pending. This does not assert that a maximizing minimal selection in
+every bipartite graph or full rectangle has selected star components.
+
 ## Exact clean-witness port composition
 
 For any finite simple interface graph R, orient its edges arbitrarily and
@@ -716,7 +737,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Always retaining every selected star leaf in a size-preserving exchange | False; connected12r family has leaf optimum7r but true beta=8r equals the selected size |
 | General selected-star minimal-set inequality without further hypotheses | False; both the18-vertex example and connected maximum-degree-four port families have genuine gaps |
 | Exact dissociation composition through clean witness ports | Proved beta_2=7r+alpha(R) for every oriented finite interface graph; selected size8r and degree-four path/cycle counterexamples |
-| Sharp gap for all selected-star minimal sets without the private clean-leaf hypothesis | Open coefficient question; the zero-gap assertion is false, while the clean-leaf subclass has the sharp n/12 theorem |
+| Sharp gap for all selected-star minimal sets without the private clean-leaf hypothesis | Proved floor(n/12), sharp even connected maximum degree six; positive equality forces pendant vertices, so minimum degree two yields floor((n-1)/12) |
 | Sharp gap for selected-star sets with a private outside witness at one leaf of every centre | Proved: floor(n/12), attained by connected maximum-degree-six graphs at all orders24r |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
