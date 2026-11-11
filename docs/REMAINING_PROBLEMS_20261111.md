@@ -20,12 +20,16 @@ scope is kept separate from the proved results in COMPLETION_20261111.md.
    now constructs and exactly optimizes physical completion with any number
    of centre relays and direct exterior TH/HH paths; it couples local routes,
    source assignment and exterior exposure in one weighted matching. For
-   arbitrary extra non-centre relays, a low-cost terminal assignment still
-   need not extend. The remaining target is a constructive class permitting
-   these additional relays, sharing physical capacities and preserving all
-   residual Hall constraints. Individual exposure is refuted by the 8-by-12
-   unit example; the 12-by-18 all-K example separates source budget two
-   from the true optimum K+1, even though each cheap entrance is exposable.
+   arbitrary extra non-centre relays, the residual Hall theorem now gives
+   b_R+max(C_s,J_d) as a lower bound for every completion retaining specified
+   paths R. A physically optimal extra TH family with a matchable direct-TH
+   remainder attains b_R+C_s. This includes additional non-centre relays and
+   certifies the exact retained-pair optima four and K+2 in the two grid
+   examples. The remaining target is a general choice of regions and paths
+   guaranteeing compatible completion, or an unrestricted exact TH optimizer;
+   failure of one minimum-flow remainder is not an impossibility proof.
+   The 12-by-18 all-K example still separates source budget two from the
+   unrestricted optimum K+1, even though each cheap entrance is exposable.
 4. **Unit-weight numerical gain.** For weights at least one, the new theorem
    gives f>=k+ceil((A-sigma-(k-q)mu)/mu)_+, with A the total withdrawal
    potential, sigma the weighted regional Hall slack, and q the exterior

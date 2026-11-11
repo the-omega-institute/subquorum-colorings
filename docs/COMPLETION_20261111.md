@@ -129,3 +129,37 @@ python3 scripts/check_retaining_pair_optimum.py
 This strengthening is a separate coordinate note; the accepted fifteen-page
 PDF remains bound to its original scientific revision and states the valid
 weaker retaining-pair lower bound three.
+
+## Residual physical compensation continuation
+
+[`RESIDUAL_HALL_COMPENSATION.md`](RESIDUAL_HALL_COMPENSATION.md) gives a
+general lower bound for every full completion retaining specified alternating
+paths R. For any residual black-terminal region D, its direct selected
+neighbourhood yields a demand d. Let h_D be its maximum physical HH supply,
+s=(d-h_D)_+, C_s the minimum expense of s disjoint outside-TH paths, and J_d
+the minimum cardinality-d endpoint-assignment expense. Then
+
+    f_R* >= b_R+max(C_s,J_d).
+
+The two bounds charge the same additional expense. A successful direct-TH
+remainder matching for some optimal C_s family certifies equality with
+b_R+C_s. This criterion permits extra non-centre TH relays and arbitrary
+free HH routing. It gives exact retained-pair optima four on the unit
+8-by-12 board and K+2 for every integer K>=2 on the 12-by-18 board; their
+unrestricted optima remain two and K+1. On the second board, a centre and
+an exterior deficit compete for a single HH source, so only their union
+forces the K-cost compensation. Two additional all-K controls show neither
+residual relaxation dominates the other.
+
+Reproduce this continuation from the repository root:
+
+```sh
+python3 scripts/check_residual_hall_compensation.py
+```
+
+The report covers 344 seeded physical models, 984 regional checks, 6,894
+independent full-matching scores, 473 literal path-packing controls and 972
+exact completion certificates. The checker independently reconstructs the
+printed complete tiling and the flow dual/cut certificates. General and
+all-K conclusions have written proofs. This coordinate note is proposed
+appendix material; the fifteen-page PDF and submitted version are unchanged.
