@@ -1,5 +1,17 @@
 # From the hypercube solution to grids and structural characterization
 
+Current status (12 November): the [extended-double-cover theorem](EXTENDED_DOUBLE_COVER_PARAMETERS.md)
+settles SF_2=beta_2=psi_sq=Omega for every E(H), including every bipartite
+Cartesian prism H square K_2. Its value is 2n-nu(D(H)), or 2 alpha(H) in
+the bipartite prism case. A shared two-per-empty-rung witness budget gives
+the star-forming upper bound. This supplies a structural equality class
+beyond the signed-matrix criterion. The [current completion record](COMPLETION_20261112.md)
+also contains the exact fixed-width TH optimizer, the general zero-expense
+extended-cover theorem and the positive-expense height-three family.
+Wider rectangular-grid triple equality and the universal 5/6 improvement
+remain open; the adjacent-pair involution cannot exist when both grid
+dimensions are at least three.
+
 The starting point is the completed proof of Sahbi's Conjecture 6.4:
 psi_sq(Q_n)=2^(n-1) for every n>=2. Its Lean formalization checks this
 all-dimensional statement. The boundary injection and its Hall-matching

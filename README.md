@@ -1,9 +1,22 @@
 # Current continuation
 
+The [extended-double-cover theorem](docs/EXTENDED_DOUBLE_COVER_PARAMETERS.md)
+now proves, for every finite simple base H on n vertices,
+`SF_2(E(H))=beta_2(E(H))=psi_sq(E(H))=Omega(E(H))=2n-nu(D(H))`.
+Here D(H) is the ordinary double cover without rungs. An ordinary matching
+and equal-size vertex cover certify the common value. The new star-forming
+proof gives each empty rung one shared budget of two deletion witnesses.
+For every bipartite H, its Cartesian prism therefore has all four values
+equal to `2 alpha(H)`. The same symmetry gives zero genuine TH expense
+for arbitrary actual matchings and feasible white-only selections.
+
 The 12 November continuation gives [exact source-dependent TH optimization
 by grid width and a zero-expense theorem for every feasible two-row ladder](docs/EXACT_TH_OPTIMIZATION_AND_LADDERS.md).
 The implementation returns a full optimal auxiliary matching and handles
 retained paths, zero weights and free HH rerouting together.
+The current [completion and remaining-problem record](docs/COMPLETION_20261112.md)
+distinguishes these proved classes from wider rectangular grids and the
+remaining degree/connectivity problems.
 
 The 11 November results on intrinsic equality, degree constraints, general
 boundary composition and simultaneous Hall budgets are indexed in

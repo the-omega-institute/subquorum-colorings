@@ -1,4 +1,58 @@
-# Source-dependent TH completion: 12 November 2026
+# Structural equality and source-dependent completion: 12 November 2026
+
+## Extended double covers and Cartesian prisms
+
+The [complete extended-cover proof](EXTENDED_DOUBLE_COVER_PARAMETERS.md)
+establishes, for every finite simple H of order n,
+
+    SF_2(E(H))=beta_2(E(H))=psi_sq(E(H))=Omega(E(H))
+              =n+delta(H)=2n-nu(D(H)).
+
+The proof covers nonbipartite bases as well. The independent-set deficiency
+delta(H) equals the ordinary double-cover Hall deficiency. A TP-to-PZ rung
+injection bounds every feasible representative pair, allowing selected
+vertices in both colours. A separate minimal-forming proof counts the
+union of deletion witnesses with capacity two per empty rung. Neighbours
+of isolated selected rung edges are reserved and contribute no witness
+capacity to the other doubly selected rungs. This proves the SF upper
+bound without a general-graph assertion SF_2<=Omega.
+
+There are exact nonnegative remainders describing every optimal feasible
+representative pair and every maximum minimal forming set in this class.
+For example, a maximum minimal set can induce a square; the statement is
+an equality of optima and includes these nondissociation maximizers.
+
+The common value and an attaining set have polynomial matching/vertex-cover
+certificates. If H is bipartite, E(H) is its Cartesian prism and the common
+value is 2 alpha(H). This closes all four parameters on every bipartite
+prism, including all ladders and all hypercubes of dimension at least two.
+Taking a prism eliminates any SF_2/beta_2 gap in a bipartite base.
+
+For arbitrary actual M and any feasible white selected set T, disjoint
+two-rung swaps provide a full auxiliary matching that pairs all selected
+vertices directly with black terminals. Thus the true TH optimum is zero
+for every nonnegative weighting on the whole extended-cover class.
+
+Run `python3 scripts/check_extended_double_cover.py`. The independent
+literal controls cover all 1,100 labelled bases of orders zero through
+five, 1,065,509 selected subsets, all 54,160 minimal forming sets and their
+65,820 empty-rung budgets, 36,306 feasible representative pairs on bases
+through order four, and 5,036 direct-terminal constructions. These certify
+14,236 white selected subsets, rather than 14,236 separate construction
+calls. Fifteen larger matching/dual and attaining-set certificates cover
+base orders 8,17,64,257,1024. All-size conclusions use the written proofs.
+
+The initial three-parameter theorem and zero-completion algorithm received
+independent ACCEPT at snapshot 5044cd7; the reviewer ran its complete
+embedded checker and reproduced the report. That reviewer also supplied
+a malformed external certificate exploiting Python negative indices. The
+checker now validates vertex domains before indexing and rejects that
+exact regression. The new SF theorem, its equality remainders and the
+expanded checker have a separate independent audit at snapshot 6000a72;
+its verdict is recorded with the final review output when available.
+No new Lean verification or full priority comparison is claimed.
+
+## Source-dependent TH completion
 
 The [complete proof note](EXACT_TH_OPTIMIZATION_AND_LADDERS.md) gives five
 results, with an exact integer implementation and independent controls:
@@ -82,9 +136,25 @@ terminal infrastructure failures and no mathematical response. The prior
 positive-attainment equivalence and unit 18-by-18 optimizer-choice result
 retain their existing ACCEPT, scoped to their original input.
 
-The general grid triple equality, a universal 5/6 coefficient improvement,
-a simpler incomplete-core equality description, and sharp simultaneous
-degree/connectivity optima remain research questions. The new optimizer
-is exponential in width; no arbitrary-width polynomial claim is made.
+## Remaining questions
+
+| Question | Current status |
+| --- | --- |
+| All four parameters on E(H), and on every bipartite Cartesian prism | Proved by the matching and witness-capacity theorem above |
+| Exact genuine TH expense at fixed grid width, with retained paths | Solved by the source-label DP, exponential in width |
+| Zero expense for all feasible ladder and E(H) instances | Proved, arbitrary M and nonnegative weights |
+| Zero expense for every feasible full grid instance | False: the explicit 3-by-6r family has expense r with unit actual weights |
+| Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; positive TH expense alone does not refute this equality |
+| Improvement of the universal mixed-direction 5/6 coefficient | Open |
+| Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
+| Simpler incomplete-core equality structure for general bipartite graphs | Open; the exact remainders here describe only E(H) |
+
+The new structural theorem does not extend automatically to wider grids:
+if both sides of a rectangle are at least three, a corner has degree two
+but all its neighbours have degree three. No adjacency-preserving map can
+send that corner to an adjacent vertex. Such a rectangle therefore cannot
+admit the adjacent-pair involution used for the extended-cover argument.
+This rules out applying this particular structural criterion, without
+deciding the equality itself. No arbitrary-width polynomial claim is made.
 The sharp bipartite n/10 gap theorem and previous composition manuscript
 are preserved. No email, submission or submitted-version edit is implied.
