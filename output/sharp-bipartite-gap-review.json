@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-11",
+  "theorems": [
+    "Universal bipartite gap SF_2-beta_2 <= floor(n/10)",
+    "Positive unrounded equality requires at least n/5 vertices of full degree two",
+    "Four-attachment local safe-deletion cap in any surrounding graph",
+    "Exact parameters beta_2=5r and SF_2=6r for all permitted bipartite interfaces",
+    "Sharp attaining two-connected bipartite families with minimum degree 2 and maximum degree 4"
+  ],
+  "oracle_reviews": [
+    {
+      "task_id": "bd28442e-6dd6-4171-91c9-081bfef1a68c",
+      "verdict": "REVISE",
+      "scope": "Initial standalone universal proof and equality necessity. Mathematics accepted; correct the statement about selected outside witnesses and introduce definitions upfront.",
+      "disposition": "Both wording corrections applied; explicitly selected witnesses occupy one side; definitions added."
+    },
+    {
+      "task_id": "a8c2103a-42bc-4adf-9b27-c4bb4ce4d6eb",
+      "verdict": "ACCEPT",
+      "scope": "Complete corrected standalone universal proof and equality necessity; excludes attainment theorem.",
+      "model": "gpt_6",
+      "effort": "pro",
+      "input_sha256": "b6ca0788e46a53bdbb25abce805f8f21db923285a4dc39f840f74771906e3978",
+      "response_sha256": "01d9b01e35a0291aaea33edd21d241003a78c9a7030f1e6564c1d37d3f1a2a12"
+    },
+    {
+      "task_id": "041b99d0-c5ab-4eb8-a7a5-1d8127b391b6",
+      "verdict": "ACCEPT for coauthor circulation",
+      "scope": "All five initial manuscript pages, including all written proofs, four-attachment cap, exact parameters, topology and citation framing. Acceptance rests on written proofs; reviewer did not run the project enumeration.",
+      "model": "gpt_6",
+      "effort": "pro",
+      "input_pdf_sha256": "13357a6b23205c329bf8874e2bae55127f7c2493aef6030d349f535b7d3edc76",
+      "response_sha256": "6ad0ee58dc69d6802de0d98f770352d79c1003e3baef497aa517997a5ee24f94",
+      "applied_after_review": [
+        "Bound x in the abstract and clarify that additivity is between interconnected copies.",
+        "Describe minimality by failure after single deletion, including the deleted vertex.",
+        "Define R exactly; call c a support to distinguish it from the star centre.",
+        "State maximum degree at most one, rather than exactly one.",
+        "Identify the omitted vertices inside H precisely in the safe-deletion argument.",
+        "Identify the dated source ZIP; clarify decision-problem terminology and the cyclic construction.",
+        "Credit Sahbi Section 5 for the local witness restrictions; include their proof.",
+        "Typeset the bibliography in a smaller font to retain five pages."
+      ],
+      "final_bytes_separately_reviewed": false
+    }
+  ],
+  "local_checks": {
+    "general_proof_report": "output/sharp-bipartite-gap-controls.json",
+    "four_attachment_report": "output/four-port-composition-controls.json",
+    "all_witness_choices_report": "output/bipartite-gap-all-witnesses.txt",
+    "all_witness_checker_sha256": "5c3f6be257fb56ff6aab56b9d1263e5075f3097353edbe726837beb7c2a9fca5",
+    "all_witness_scope": "6101 fixed bipartite presentations of orders 1 through 7 plus 300 seeded orders 8 through 11; all minimal sets and every permitted witness choice. Does not separately test equality-degree necessity or composition.",
+    "archive_verifier": {
+      "status": "passed",
+      "evidence_files": 74,
+      "finite_grids": 336,
+      "vector_translations": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "pinned_formal_sources": "intact"
+    },
+    "latex": "Two final pdflatex passes, five A4 pages; no errors, undefined references or overfull boxes. A non-overflowing underfull bibliography line is present.",
+    "visual_qa": "All five final pages rendered at 100 dpi and inspected: no clipping, overlap, broken formula or missing references."
+  },
+  "formal_validation": "No new Lean validation. Earlier two-attachment formalization does not prove the new universal or four-attachment theorems.",
+  "literature_limits": "See docs/STAR_FORMING_LITERATURE_20261111.md. No comprehensive historical priority claim; some indexes and the 2003 H-forming full text remain inaccessible.",
+  "publication_state": "Working manuscript for coauthor review, without author-order or venue decisions. No submission or mail action.",
+  "final_tex_sha256": "7031bea37af593f4985eab20363889b204f80ec9f68532c1fc53078055e56b4f",
+  "final_pdf_sha256": "04c0e4783957cd7ab984591d5092fbed17a360f17d5fc70972b94d3b90e1171c"
+}

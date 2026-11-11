@@ -1,0 +1,395 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\SF}{\operatorname{SF}_2}
+\newcommand{\diss}{\beta_2}
+\newcommand{\NS}{N_S}
+\title{A sharp gap bound for two-star-forming sets in bipartite graphs}
+\author{}
+\date{Working manuscript, 11 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+The upper two-star-forming number is the largest cardinality of an
+inclusion-minimal set $S$ such that every vertex $x$ outside $S$ belongs to a
+not necessarily induced two-leaf star in $G[S\cup\{x\}]$. We prove that its
+difference from the dissociation number is at most $\lfloor n/10\rfloor$
+in every bipartite graph of order $n$. The coefficient is sharp even for
+two-connected graphs of minimum degree two and maximum degree four. The
+proof constructs two dissociation sets from disjoint deletion witnesses.
+We also prove that both parameters are additive over copies of a ten-vertex
+graph under permitted bipartite interconnections through four specified vertices.
+Positive equality in the unrounded bound requires at least $n/5$ vertices
+of degree two.
+\end{abstract}
+
+\section{Introduction}
+
+How far can the upper two-star-forming number of a bipartite graph exceed
+its dissociation number? We prove that the difference is at most one tenth
+of the order, and construct two-connected graphs of maximum degree four
+attaining this bound at arbitrarily large orders. Thus the restriction to
+bipartite graphs gives a sharp quantitative comparison between the two
+parameters, although they need not be equal.
+
+All graphs are finite and simple. A set $S\subseteq V(G)$ is
+\emph{two-star-forming} if every $x\notin S$ lies in a copy of $K_{1,2}$
+in $G[S\cup\{x\}]$; the copy need not be induced. Let $\SF(G)$ denote
+the largest cardinality of an inclusion-minimal such set. A
+\emph{dissociation set} induces maximum degree at most one, and $\diss(G)$
+is its maximum cardinality. Chellali and Favaron~\cite{CF09} established
+the comparison $\diss(G)\le\SF(G)$ in the more general framework of
+$k$-star-forming sets. The parameters measure different forms of maximality:
+a dissociation set restricts its own induced subgraph, whereas minimal
+star formation requires each single deletion to destroy formation, possibly
+because the deleted vertex itself becomes uncovered.
+
+Equality for bipartite graphs, and for triangle-free graphs at $k=2$, was
+proposed in Conjectures 4.1, 4.2 and 7.2 of Sahbi's version~2
+preprint~\cite{Sahbi}; that preprint was subsequently withdrawn. The
+ten-vertex graph in Section~\ref{sec:attainment} has $\diss=5$ and
+$\SF=6$. Our main result determines the largest possible difference per
+vertex, rather than an equality of the two parameters.
+
+Favaron~\cite[Theorem~10]{Favaron12} gives
+$SF_k(G)\le n-\delta+k-1$ for $1\le k\le\delta$, where $\delta$ is the
+minimum degree. That order bound does not compare $\SF$ with $\diss$.
+Bhattacharjee~\cite{Bhattacharjee} gives higher-$k$ bipartite examples,
+chain-graph equalities and complexity results for the threshold decision
+problem $\SF(G)\ge t$. Attachment
+constructions preserving extremal dissociation numbers also appear in
+Bock et al.~\cite{BPPP} and Li~\cite{Li}. Here the global inequality comes
+from two exchanges applied to every minimal forming set; the attaining
+construction controls both parameters under its permitted interfaces.
+
+\begin{theorem}\label{thm:gap}
+Every bipartite graph $G$ of order $n$ satisfies
+\[
+  \SF(G)-\diss(G)\le\left\lfloor\frac n{10}\right\rfloor.
+\]
+The coefficient $1/10$ is sharp among two-connected bipartite graphs of
+minimum degree two and maximum degree four. If
+$\SF(G)-\diss(G)=n/10>0$, then at least $n/5$ vertices have degree two.
+\end{theorem}
+
+The proof of the upper bound and equality condition occupies
+Section~\ref{sec:bound}. Section~\ref{sec:attainment} supplies the exact
+composition theorem and the attaining graphs.
+
+\section{Two exchanges from deletion witnesses}\label{sec:bound}
+
+Write $\NS(x)=N_G(x)\cap S$ and $d_S(x)=|\NS(x)|$. The definition of
+two-star formation is equivalent to
+\begin{equation}\label{eq:local}
+ x\notin S\quad\Longrightarrow\quad
+ d_S(x)\ge2\ \text{ or }\
+ \exists y\in\NS(x):d_S(y)\ge1.
+\end{equation}
+The alternatives make $x$ the centre or a leaf of the star. Formation is
+upward closed: enlarging a forming set preserves a witnessing star at
+each vertex still outside. Consequently, inclusion-minimality is
+equivalent to failure of formation after every single deletion.
+
+Fix an inclusion-minimal forming set $S$ and a bipartition $(A,B)$ of $G$.
+Let $R$ consist of the vertices in components of $G[S]$ of order one or two,
+let $C=S\setminus R$, and let $I$ be the set of isolated vertices of $G[S]$.
+Every $v\in C$ lies on a three-vertex path in $G[S]$. After deleting $v$,
+the newly outside vertex $v$ therefore satisfies~\eqref{eq:local}.
+Minimality supplies a vertex $x\notin S$ that loses coverage. We use the
+local certificate restrictions of~\cite[Section~5]{Sahbi}, giving their
+short proof here. There are three possible forms:
+\begin{align}
+ &\NS(x)=\{v\};\label{eq:type1}\\
+ &\NS(x)=\{v,i\},\qquad i\in I;\label{eq:type2}\\
+ &\NS(x)=\{\ell\},\qquad \NS(\ell)=\{v\}.\label{eq:type3}
+\end{align}
+Indeed, if $xv$ is an edge, $x$ retains at most one selected neighbour.
+If this neighbour $i$ exists, it is isolated after the deletion. Since
+$i$ and $v$ lie in the same bipartition class, they are nonadjacent,
+so $i$ was isolated already. If $xv$ is not an edge, the selected
+neighbourhood of $x$ is unchanged. It can lose coverage only through a
+unique neighbour $\ell$ whose sole selected neighbour was $v$.
+
+For every $c\in C$ admitting~\eqref{eq:type3}, choose one triple
+$(c,\ell_c,x_c)$, and let $p$ count the chosen support vertices. Each support has
+selected degree at least two; otherwise it and $\ell_c$ form a component
+of order two. The chosen leaves have distinct unique selected neighbours,
+and cannot themselves be supports. The outside vertices $x_c$ are distinct
+because their unique selected neighbours are distinct. Thus these triples
+are vertex-disjoint.
+
+Let
+\[
+ U=C\setminus\bigl(\{c:\text{chosen support}\}
+                 \cup\{\ell_c:\text{chosen leaf}\}\bigr),
+ \qquad u=|U|.
+\]
+For every $v\in U$, choose a witness $x_v$ of
+form~\eqref{eq:type1} or~\eqref{eq:type2}. No vertex of $U$ admits
+form~\eqref{eq:type3}, since all such vertices were chosen as supports.
+Each $x_v$ has exactly one neighbour in $C$, namely $v$. These witnesses
+are distinct from one another and from the triple witnesses. We have
+\begin{equation}\label{eq:partition}
+ |S|=|R|+2p+u.
+\end{equation}
+
+For $i\in I$, let $h(i)$ count the chosen witnesses $x_v$ adjacent to $i$.
+Let $a$ count the isolates with $h(i)=1$ and $b$ those with $h(i)\ge2$.
+Each $x_v$ meets at most one isolate, so $u\ge a+2b$. The $p$ triples,
+the $u$ pairs $(v,x_v)$ and the $a+b$ touched isolates are mutually
+disjoint. It follows that
+\begin{equation}\label{eq:budget}
+ n\ge3p+2u+a+b\ge3p+3a+5b.
+\end{equation}
+
+We construct two dissociation sets, then repeat each construction with
+$A$ and $B$ exchanged. In the first, retain $R$ except the touched
+isolates in $A$. From each triple select $c,\ell_c$ when $c\in A$,
+and $\ell_c,x_c$ when $c\in B$. From each remaining pair $(v,x_v)$,
+select both vertices when $v\in A$ and neither when $v\in B$.
+Denote the resulting set by $D_A$.
+
+All selected outside witnesses lie in $B$, so none are adjacent to one
+another. A selected triple witness sees only its chosen leaf in $S$.
+A selected pair witness sees its owner $v$, and its optional isolate
+neighbour lies in $A$ and was removed. Among vertices of $C\cap B$,
+only chosen leaves with supports in $A$ remain. Such a leaf has its support
+as its unique selected neighbour in $S$. There are no selected edges
+between $R$ and $C$, and no chosen witness meets an order-two component
+of $G[S]$. These observations show that $G[D_A]$ has maximum degree at most one.
+Counting both orientations gives
+\begin{equation}\label{eq:first}
+ \diss(G)\ge\frac{|D_A|+|D_B|}{2}=|S|-\frac{a+b}{2}.
+\end{equation}
+
+For the second construction, let $T$ be $S$ together with all $p+u$
+chosen outside witnesses. Select $T\cap A$, together with $R\cap B$
+except its isolates with $h(i)\ge2$, and call this set $E_A$.
+A retained endpoint of an order-two component in $R\cap B$ sees only
+its mate; no chosen witness meets such a component. A retained isolate
+in $R\cap B$ meets at most one chosen witness. On the $A$ side, a vertex
+of $S$ sees at most one vertex of $R$, and a chosen witness sees at most
+one isolate of $R$. Hence $E_A$ is a dissociation set. Since
+$|T|=|S|+p+u$, equation~\eqref{eq:partition} gives
+\begin{equation}\label{eq:second}
+ \diss(G)\ge\frac{|E_A|+|E_B|}{2}
+ =\frac{|T|+|R|-b}{2}=|S|-\frac{p+b}{2}.
+\end{equation}
+These are alternative constructions; their resources are counted
+separately, while~\eqref{eq:budget} counts each vertex once.
+
+Combining~\eqref{eq:budget}, \eqref{eq:first} and~\eqref{eq:second},
+\begin{equation}\label{eq:chain}
+ 10\bigl(|S|-\diss(G)\bigr)
+ \le5\min(a,p)+5b\le3a+3p+5b\le n.
+\end{equation}
+The middle inequality follows from
+$5\min(a,p)\le3(a+p)$ for nonnegative $a,p$.
+Taking $|S|=\SF(G)$ and using integrality proves the upper bound.
+
+Suppose now that $\SF(G)-\diss(G)=n/10>0$. All inequalities in
+\eqref{eq:chain} and~\eqref{eq:budget} are equalities. Equality in
+$5\min(a,p)\le3(a+p)$ forces $a=p=0$. Hence $u=2b$ and $n=5b$.
+The counted vertices exhaust $V(G)$: all outside vertices are pair
+witnesses, and $R$ consists exactly of the $b$ touched isolates.
+Their witness incidences total at most $u=2b$ and each isolate has at
+least two, so every one has exactly two neighbours. They have no selected
+neighbours and there are no other outside vertices. These $b=n/5$
+vertices have degree two. This proves the equality assertion of
+Theorem~\ref{thm:gap}. The assertion concerns equality with $n/10$,
+rather than equality with its integer part.
+
+\section{Exact composition and attainment}\label{sec:attainment}
+
+Let $H$ have parts $A_H=\{a_1,\ldots,a_5\}$,
+$B_H=\{b_1,\ldots,b_5\}$ and cross-edge matrix
+\begin{equation}\label{eq:matrix}
+ \begin{pmatrix}
+ 1&1&0&0&1\\1&1&0&1&0\\0&0&0&1&1\\
+ 0&1&1&1&1\\1&0&1&1&1
+ \end{pmatrix}.
+\end{equation}
+The attachment vertices are $P=\{a_1,a_2,b_1,b_2\}$.
+
+\begin{theorem}\label{thm:composition}
+Take $r$ disjoint induced copies of $H$, and add any collection of edges
+between distinct copies, always joining a vertex labelled $b_1$ or $b_2$
+to one labelled $a_1$ or $a_2$. The resulting graph $F$ satisfies
+\[
+ \diss(F)=5r,\qquad \SF(F)=6r.
+\]
+\end{theorem}
+
+We prove a local upper bound that also applies in a nonbipartite
+surrounding graph. First, if a selection $T$ in $H$ has at least six
+vertices, formation is equivalent to domination. To see the converse,
+suppose an outside vertex $x$ has a unique selected neighbour $y$ and
+$y$ has no selected neighbour. The disjoint sets $N_H(x)\setminus\{y\}$
+and $N_H(y)$ lie in $V(H)\setminus T$. Every edge of $H$ has degree sum
+at least six, so their union has at least five vertices, a contradiction.
+Disjointness follows from bipartiteness; the degree-two vertices have
+only degree-four neighbours and all other degrees are at least three.
+
+The closed neighbourhoods of size at most four are
+\begin{align*}
+ &\{a_3,b_4,b_5\},\quad\{b_3,a_4,a_5\},\\
+ &\{a_1,b_1,b_2,b_5\},\quad\{a_2,b_1,b_2,b_4\},\\
+ &\{b_1,a_1,a_2,a_5\},\quad\{b_2,a_1,a_2,a_4\}.
+\end{align*}
+The two triples are disjoint. Any two distinct displayed quadruples
+intersect in at most two vertices. All other closed neighbourhoods have
+size five.
+
+\begin{lemma}\label{lem:localcap}
+Suppose $H$ is induced in a graph $G$ and all edges from $H$ to the rest
+of $G$ meet $H$ at $P$. Every inclusion-minimal forming set $S$ satisfies
+$|S\cap V(H)|\le6$.
+\end{lemma}
+\begin{proof}
+Suppose $C=S\cap V(H)$ has at least seven vertices and put
+$W=V(H)\setminus C$, so $|W|\le3$. The set $C$ dominates $H$.
+Otherwise some $N_H[x]$ lies in $W$; only $a_3,b_3$ can have such small
+closed neighbourhoods. Neither is an attachment vertex, so $x$ has no
+selected neighbour in $G$, contradicting formation.
+
+At most two candidates for deletion destroy domination. Completing one
+of the disjoint triples from $W$ requires two elements of $W$, so at
+most one candidate completes a triple. Completing a quadruple requires
+$|W|=3$ and $W$ contained in that quadruple. The intersection bound
+permits at most one such quadruple. A size-five neighbourhood is too large.
+
+Let $t=|C\cap P|$. If $t\le2$, there are at least $7-t$ selected
+nonattachment candidates. Besides the two domination failures, at most
+$t$ candidates destroy the existing internal selected-neighbour activity
+of an attachment: each selected attachment has at most one unique selected
+neighbour. Since $7-t>2+t$, some candidate is safe. If $t\ge3$, the
+selected attachment vertices induce a complete bipartite graph with both
+sides nonempty. Every selected attachment therefore has a selected
+attachment neighbour, which no nonattachment deletion removes. There
+are at least three candidates and at most two domination failures, so
+again a safe candidate $v$ exists.
+
+The set $C\setminus\{v\}$ dominates $H$ and has at least six vertices,
+so it is forming inside $H$. Each selected attachment with an internal
+selected neighbour before deletion retains one. Every vertex of
+$V(H)\setminus(C\setminus\{v\})$, including $v$, therefore has a
+witnessing star entirely inside $H$ after deletion. For an
+outside vertex $x$ of $G$ beyond the copy, an old star avoiding $v$
+survives. A star using $v$ has $v$ as a leaf, because $xv$ is not an
+edge. Its selected centre is an attachment, and its other leaf is $x$.
+Replace $v$ by a surviving selected internal neighbour of that centre.
+This proves formation of $S\setminus\{v\}$, contradicting minimality.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:composition}]
+Lemma~\ref{lem:localcap} gives $\SF(F)\le6r$. In each copy select
+$S_0=\{a_1,a_2,a_3,b_1,b_2,b_3\}$. Every omitted vertex has two selected
+neighbours. Single deletions fail at the following vertices:
+\begin{center}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+Deleted & $a_1$ & $a_2$ & $a_3$ & $b_1$ & $b_2$ & $b_3$\\
+Failure & $b_5$ & $b_4$ & $a_3$ & $a_5$ & $a_4$ & $b_3$\\
+Remaining neighbours & $a_3$ & $a_3$ & none & $b_3$ & $b_3$ & none\\
+\bottomrule
+\end{tabular}
+\end{center}
+All these failure vertices are nonattachments, and $a_3,b_3$ remain
+isolated in the selected subgraph under every interface. Thus the union
+of the $S_0$ is minimal, proving $\SF(F)=6r$.
+
+The whole $A_H$ side is independent in $F$, giving $\diss(F)\ge5r$.
+It remains to exclude a dissociation six-set in $H$. By the symmetry
+of the matrix under exchanging the sides, its side split is $(1,5)$,
+$(2,4)$ or $(3,3)$. The first fails minimum degree two. In the second,
+omitting only one $B_H$ vertex permits selected degree at most one only
+at $a_3$, so two selected $A_H$ vertices are impossible. In the third,
+the degree-four vertices $a_4,a_5$ cannot be selected; the $A_H$ side is
+therefore $\{a_1,a_2,a_3\}$. Both $a_1,a_2$ must avoid at least two of
+their three neighbours. With only two omitted $B_H$ vertices this forces
+both $b_1,b_2$ omitted. The remaining $b_4,b_5$ both meet $a_3$, a
+contradiction. Every global dissociation set consequently uses at most
+five vertices of each copy, proving $\diss(F)=5r$.
+\end{proof}
+
+\begin{corollary}\label{cor:topology}
+Let $Q$ be a connected simple graph with no bridge, with an orientation
+having at most two incoming and two outgoing edges at each vertex.
+There is a two-connected bipartite graph $F$ of order $10|V(Q)|$,
+maximum degree four and minimum degree two, with
+$\SF(F)-\diss(F)=|V(F)|/10$.
+\end{corollary}
+\begin{proof}
+Replace each vertex $i$ of $Q$ by $H_i$. Assign distinct outgoing edges
+to $b_1^{(i)},b_2^{(i)}$ and distinct incoming edges to
+$a_1^{(i)},a_2^{(i)}$, then join the assigned vertices along each edge.
+Each attachment gains at most one edge, so all degrees lie between two
+and four. Each copy has the Hamilton cycle
+\[
+ a_1,b_1,a_2,b_2,a_4,b_3,a_5,b_4,a_3,b_5,a_1.
+\]
+Deleting a vertex leaves its copy connected and removes at most one
+interface edge. Since $Q$ has no bridge, the surviving interfaces still
+connect the copies. The graph remains connected after every vertex
+deletion, proving two-connectivity. Theorem~\ref{thm:composition} gives
+the exact gap.
+\end{proof}
+
+Taking $Q$ to be a cycle gives a cyclic attaining family. More generally,
+every connected simple four-regular $Q$ qualifies: an Euler orientation
+has two edges entering and leaving each vertex, and a connected graph
+with all degrees even has no bridge. For example $Q=C_m^2$, $m\ge5$,
+gives attaining graphs of order $10m$ and size $18m$. Here cyclic
+distances one and two define the square; $C_5^2=K_5$. All four attachments
+of every copy then have external neighbours. In these examples the two
+degree-two vertices per copy meet the necessary count in
+Theorem~\ref{thm:gap} exactly.
+
+\paragraph{Verification.}
+The results have the general proofs above. Independent finite controls
+reconstruct both exchanges for every minimal set in all binary bipartite
+adjacency matrices of total order at most eight, and in additional seeded
+models. A separate complete subset enumeration checks all 256 interfaces
+between two copies of $H$. Source and reproduction instructions are provided in the accompanying
+\texttt{verification\_20261111.zip}; its README identifies the pinned
+repository revision and complete verification reports. The new upper-bound and four-attachment proofs
+are not included in the earlier Lean formalization of the two-attachment
+construction.
+
+\paragraph{AI use.}
+Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
+
+\begingroup
+\small
+\begin{thebibliography}{9}
+\setlength{\itemsep}{2pt}
+\bibitem{CF09} M. Chellali and O. Favaron,
+On $k$-star-forming sets in graphs,
+\emph{J. Combin. Math. Combin. Comput.} \textbf{68} (2009), 205--214.
+\bibitem{Favaron12} O. Favaron,
+Bounds on the Upper $k$-Domination Number and the Upper $k$-Star-Forming
+Number of a Graph,
+\emph{J. Combin. Math. Combin. Comput.} \textbf{80} (2012), 321--332.
+\bibitem{Sahbi} R. Sahbi,
+\emph{Upper $k$-Star-Forming Sets, $k$-Independence, and Upper Domination},
+\href{https://arxiv.org/abs/2610.03785v2}{arXiv:2610.03785v2},
+6 October 2026; subsequently withdrawn.
+\bibitem{Bhattacharjee} D. Bhattacharjee,
+\emph{Upper $k$-star-forming sets and $k$-independence in bipartite graphs},
+version 1.1.0, 14 October 2026,
+\href{https://doi.org/10.5281/zenodo.23360032}{doi:10.5281/zenodo.23360032}.
+\bibitem{BPPP} F. Bock, J. Pardey, L. D. Penso and D. Rautenbach,
+A bound on the dissociation number,
+\emph{J. Graph Theory} \textbf{103} (2023), 661--673,
+\href{https://doi.org/10.1002/jgt.22940}{doi:10.1002/jgt.22940}.
+\bibitem{Li} P. Li,
+\emph{A characterization of graphs attaining a lower bound on the
+dissociation number},
+\href{https://arxiv.org/abs/2610.35408v1}{arXiv:2610.35408v1}, 26 October 2026.
+\end{thebibliography}
+\endgroup
+\end{document}

@@ -2,6 +2,15 @@
 
 [![Verification](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml/badge.svg)](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml)
 
+**11 November 2026: sharp star-forming gap.** Every finite bipartite graph
+satisfies `SF_2 - beta_2 <= floor(n/10)`. The bound is attained by
+two-connected graphs of minimum degree two and maximum degree four. The
+[general proof](docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md),
+[four-attachment composition theorem](docs/FOUR_PORT_STAR_FORMING_COMPOSITION.md),
+[working manuscript](manuscript/starforming-gap.tex), and
+[reproduction instructions](docs/REPRODUCE_STAR_FORMING_GAP.md) give the
+statements, proofs and exact validation scope.
+
 Research sources and reproducibility materials for **From hypercubes to grids:
 sub-quorum colorings and structural bounds**, with contributions by Wenlin
 Zhang (National University of Singapore; The Omega Institute) and Haobo Ma
