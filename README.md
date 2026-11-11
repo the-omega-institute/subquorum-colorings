@@ -1,5 +1,17 @@
 # Current continuation
 
+The [selected-star gap theorem](docs/SELECTED_STAR_COMPONENT_GAPS.md)
+resolves the unrestricted selected-star question negatively. A connected
+18-vertex bipartite graph has a minimal forming selection of size12 whose
+selected components are three P3 stars and three isolates, but beta_2=11.
+The two-parameter construction has exact beta_2=3(a+b)+max(a,b,2).
+A general matching-budget argument proves the sharp bound
+`|S|-beta_2<=floor(n/12)` when every centre has a leaf with a private
+outside witness. Connected maximum-degree-six graphs attain that coefficient
+at every order24r, with selected size16r and beta_2=14r.
+These are all-parameter proofs with explicit attaining sets and independent
+finite checks. Independent review of this new result is pending.
+
 The [leaf-retaining exchange theorem](docs/STAR_LEAF_MATCHING_EXCHANGE.md)
 handles conflicts by one auxiliary bipartite matching. For a minimal forming
 selection with selected star/edge/isolate components, fix one witness per

@@ -273,8 +273,10 @@ witness choices repair the leaf-retention rule. A successful exchange must
 drop some leaves. The displayed8r-set does so.
 
 These graphs have pendant vertices and are not full rectangular grids.
-They do not refute grid equality, or the more general still-open assertion
-|S|<=beta_2(G) for minimal forming selections with selected star components.
+They do not refute grid equality. The broader assertion
+|S|<=beta_2(G) for minimal forming selections with selected star components
+is refuted by the different construction in
+[SELECTED_STAR_COMPONENT_GAPS.md](SELECTED_STAR_COMPONENT_GAPS.md).
 No exact SF_2 value for this family is claimed here.
 
 ## Reproduction and status

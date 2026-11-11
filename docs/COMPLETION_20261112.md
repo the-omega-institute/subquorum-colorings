@@ -1,5 +1,25 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Genuine selected-star gaps and a sharp clean-leaf bound
+
+The [complete new proof](SELECTED_STAR_COMPONENT_GAPS.md) refutes the
+unrestricted selected-star minimal-set inequality. A connected18-vertex
+bipartite graph has a minimal12-set inducing only P3 stars and isolates,
+while its true unrestricted dissociation number is11. The general family
+G_(a,b) has6(a+b) vertices, minimal selected size4(a+b), and exact
+beta_2=3(a+b)+max(a,b,2), proved by four exhaustive structural cases and
+three explicit attaining sets. Its forced leaf-retaining optimum is
+3(a+b)+max(a,b), which equals the true optimum except at(1,1).
+
+For every such selected-star/edge/isolate selection whose every centre
+has a clean leaf with a private outside witness, a general distinct-helper
+budget proves |S|-beta_2<=floor(n/12). The assumption is explicit; it is
+not inferred from minimality. Connected maximum-degree-six graphs attain
+this coefficient at all orders24r: |S|=16r and beta_2=14r. All-size proofs,
+actual graph certificates and independent finite checks are included.
+Independent review is pending. These graphs have pendant vertices and
+are not full rectangles; no exact SF_2 value is asserted for them.
+
 ## Matching exchanges that retain selected star leaves
 
 The [new exact exchange formula](STAR_LEAF_MATCHING_EXCHANGE.md) is
@@ -29,8 +49,8 @@ checker. Independent review returned **ACCEPT** with no mathematical
 correction: all three artifacts were reconstructed with matching hashes,
 the original checker ran unchanged with assertions enabled, and its
 50,622-byte report was reproduced exactly. See
-`output/star-leaf-budget-review.json` for the complete response and scope. The general selected-star inequality
-without extra conditions remains open, as does arbitrary full-grid equality.
+`output/star-leaf-budget-review.json` for the complete response and scope. The broader selected-star inequality is refuted by the new construction
+above. Arbitrary full-grid equality remains open.
 
 ## Geometry at arbitrary width
 
@@ -669,7 +689,8 @@ retain their existing ACCEPT, scoped to their original input.
 | Exact exchange within S union W retaining all selected star leaves | Solved by bipartite matching for every fixed witness assignment |
 | Selected-star minimal sets with at most one selected isolate | Proved cardinality at most beta_2, allowing witness conflicts and centres in both parts |
 | Always retaining every selected star leaf in a size-preserving exchange | False; connected12r family has leaf optimum7r but true beta=8r equals the selected size |
-| General selected-star minimal-set inequality without further hypotheses | Open; a restricted exchange shortfall is not a parameter counterexample |
+| General selected-star minimal-set inequality without further hypotheses | False; the connected18-vertex graph has minimal selected size12 but true beta_2=11, with an exact all-parameter extension |
+| Sharp gap for selected-star sets with a private outside witness at one leaf of every centre | Proved: floor(n/12), attained by connected maximum-degree-six graphs at all orders24r |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp gap under simultaneous specified degree/connectivity restrictions | Open beyond the previously proved exact classes and general bounds |
