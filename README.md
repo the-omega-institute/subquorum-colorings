@@ -1,5 +1,16 @@
 # Current continuation
 
+The [clean-witness port composition](docs/SELECTED_STAR_PORT_COMPOSITION.md)
+gives an exact unrestricted formula for every finite interface graph R,
+with any orientation: `beta_2(F_R)=7|V(R)|+alpha(R)`. Its explicit minimal
+forming selection has size `8|V(R)|`, inducing only P3 stars and isolates.
+A full eight-set in a block forces both already-paired ports; hence such
+blocks form an independent set of R. Port-omitting seven-sets attain the
+complementary blocks simultaneously. Directed paths give connected
+maximum-degree-four graphs with selected deficit `floor(r/2)` at order12r;
+cycles give `ceil(r/2)`. General proofs and independent controls are included;
+review of this composition result is pending.
+
 The [selected-star gap theorem](docs/SELECTED_STAR_COMPONENT_GAPS.md)
 resolves the unrestricted selected-star question negatively. A connected
 18-vertex bipartite graph has a minimal forming selection of size12 whose

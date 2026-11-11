@@ -1,5 +1,22 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Exact clean-witness port composition
+
+For any finite simple interface graph R, orient its edges arbitrarily and
+join the clean witness ports of copies of G_(1,1). The
+[general composition theorem](SELECTED_STAR_PORT_COMPOSITION.md) proves
+beta_2(F_R)=7r+alpha(R), while an explicit minimal forming selection has
+size8r and only P3 stars/isolates. A full eight-set in a block forces both
+internally matched ports, so the full blocks must form an independent
+set. Seven-sets omitting both ports attain every complementary block.
+
+Path interfaces give connected maximum-degree-four examples at all orders
+12r with beta_2=7r+ceil(r/2), and selected deficit floor(r/2). Cycles give
+beta_2=7r+floor(r/2) and deficit ceil(r/2) for r>=3. The r=2 path has
+selected16 and true beta15. This is a genuine unrestricted gap. All-size
+proofs and an independent checker are included; review is pending.
+No exact SF value or rectangular-grid conclusion is asserted.
+
 ## Genuine selected-star gaps and a sharp clean-leaf bound
 
 The [complete new proof](SELECTED_STAR_COMPONENT_GAPS.md) refutes the
@@ -692,7 +709,8 @@ retain their existing ACCEPT, scoped to their original input.
 | Exact exchange within S union W retaining all selected star leaves | Solved by bipartite matching for every fixed witness assignment |
 | Selected-star minimal sets with at most one selected isolate | Proved cardinality at most beta_2, allowing witness conflicts and centres in both parts |
 | Always retaining every selected star leaf in a size-preserving exchange | False; connected12r family has leaf optimum7r but true beta=8r equals the selected size |
-| General selected-star minimal-set inequality without further hypotheses | False; the connected18-vertex graph has minimal selected size12 but true beta_2=11, with an exact all-parameter extension |
+| General selected-star minimal-set inequality without further hypotheses | False; both the18-vertex example and connected maximum-degree-four port families have genuine gaps |
+| Exact dissociation composition through clean witness ports | Proved beta_2=7r+alpha(R) for every oriented finite interface graph; selected size8r and degree-four path/cycle counterexamples |
 | Sharp gap for selected-star sets with a private outside witness at one leaf of every centre | Proved: floor(n/12), attained by connected maximum-degree-six graphs at all orders24r |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
