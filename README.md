@@ -9,7 +9,10 @@ blocks form an independent set of R. Port-omitting seven-sets attain the
 complementary blocks simultaneously. Directed paths give connected
 maximum-degree-four graphs with selected deficit `floor(r/2)` at order12r;
 cycles give `ceil(r/2)`. General proofs and independent controls are included;
-review of this composition result is pending.
+the separate
+[ACCEPT audit](output/selected-star-ports-review.json) reconstructed all three
+files with matching hashes, ran the original checker unchanged to terminal
+completion with assertions, and reproduced its report byte-for-byte.
 
 The [selected-star gap theorem](docs/SELECTED_STAR_COMPONENT_GAPS.md)
 resolves the unrestricted selected-star question negatively. A connected

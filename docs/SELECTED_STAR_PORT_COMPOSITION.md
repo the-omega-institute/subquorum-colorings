@@ -165,4 +165,11 @@ deletion including new outside vertices, and compares unrestricted
 dissociation optima with the composition formula on small interfaces.
 Larger tests check actual edge lists, induced block identity, port
 memberships and attaining sets. General proofs are above. Independent
-review is pending; no Lean or historical-priority verification is claimed.
+review of snapshot 2860c42 returned **ACCEPT** with no mathematical or code
+correction. All three attached files were reconstructed with matching hashes;
+the unchanged original checker ran with assertions to terminal exit zero and
+reproduced the entire 60,288-byte report exactly. Its 84 exact-solver calls
+cover graphs up to 48 vertices. Larger graphs, up to 1,536 vertices, use
+certificate checks and the general proof. The complete response and exact
+scope are in `output/selected-star-ports-review.json`. No Lean or
+historical-priority verification is claimed.

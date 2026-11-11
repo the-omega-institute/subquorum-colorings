@@ -14,7 +14,12 @@ Path interfaces give connected maximum-degree-four examples at all orders
 12r with beta_2=7r+ceil(r/2), and selected deficit floor(r/2). Cycles give
 beta_2=7r+floor(r/2) and deficit ceil(r/2) for r>=3. The r=2 path has
 selected16 and true beta15. This is a genuine unrestricted gap. All-size
-proofs and an independent checker are included; review is pending.
+proofs and an independent checker received **ACCEPT** with no correction.
+All three original artifacts were reconstructed with matching hashes; the
+original checker ran unchanged with assertions and reproduced its entire
+60,288-byte report. Its84 exact-solver calls cover up to48 vertices; the
+22 large-family entries up to1536 vertices check certificates, with all-size
+optimality supplied by the proof. See `output/selected-star-ports-review.json`.
 No exact SF value or rectangular-grid conclusion is asserted.
 
 ## Genuine selected-star gaps and a sharp clean-leaf bound
@@ -711,6 +716,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Always retaining every selected star leaf in a size-preserving exchange | False; connected12r family has leaf optimum7r but true beta=8r equals the selected size |
 | General selected-star minimal-set inequality without further hypotheses | False; both the18-vertex example and connected maximum-degree-four port families have genuine gaps |
 | Exact dissociation composition through clean witness ports | Proved beta_2=7r+alpha(R) for every oriented finite interface graph; selected size8r and degree-four path/cycle counterexamples |
+| Sharp gap for all selected-star minimal sets without the private clean-leaf hypothesis | Open coefficient question; the zero-gap assertion is false, while the clean-leaf subclass has the sharp n/12 theorem |
 | Sharp gap for selected-star sets with a private outside witness at one leaf of every centre | Proved: floor(n/12), attained by connected maximum-degree-six graphs at all orders24r |
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; new arbitrary-width cap inequality and one-class exchange criterion proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
