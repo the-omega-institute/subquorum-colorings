@@ -241,13 +241,45 @@ def masked_controls():
     return report
 
 
+def three_row_controls():
+    report, witness = [], None
+    for r in (1, 2, 3, 8, 32, 128):
+        board = {(a, b) for a in range(3) for b in range(6*r)}
+        local_m = [((0, 1), (0, 2)), ((0, 0), (1, 0)),
+                   ((1, 2), (2, 2)), ((2, 0), (2, 1))]
+        local_n = [((0, 3), (0, 2)), ((0, 1), (1, 1)),
+                   ((0, 0), (1, 0)), ((1, 2), (2, 2)), ((2, 0), (2, 1)),
+                   ((2, 3), (1, 3)), ((0, 4), (0, 5)),
+                   ((1, 4), (1, 5)), ((2, 4), (2, 5))]
+        actual = {pair((a, b+6*i), (c, d+6*i)) for i in range(r) for (a, b), (c, d) in local_m}
+        auxiliary = {pair((a, b+6*i), (c, d+6*i)) for i in range(r) for (a, b), (c, d) in local_n}
+        p = {v for e in actual for v in e}
+        selected = {v for v in board-p if sum(v) % 2}
+        assert all(sum(adjacent(v, w) for w in p) <= 1 for v in selected)
+        centres = {(1, 6*i+1) for i in range(r)}
+        assert centres <= board-p
+        assert all(all(w in p for w in board if adjacent(c, w)) for c in centres)
+        for mu in (0, 1, 1 << 400):
+            weights = {e: mu for e in actual}
+            assert score(board, actual, auxiliary, selected, weights)[0] == r*mu
+            result = optimize_th(board, actual, selected, weights)
+            verify(board, actual, selected, weights, [], result, r*mu)
+            report.append(dict(r=r, mu=mu, optimum=r*mu, stats=result['stats']))
+            if r == 2 and mu == 1:
+                witness = dict(board=board, actual=actual, selected=selected,
+                               auxiliary=auxiliary, centres=centres, optimum=r)
+    return report, witness
+
+
 def main():
     report = small_models()
     report['controls'], witnesses = controls()
     report['ladder'] = ladder_controls()
     report['masked'] = masked_controls()
+    report['three_rows'], three_rows = three_row_controls()
     Path('output/source-label-dp-check.json').write_text(json.dumps(report, indent=2)+'\n')
     Path('output/source-label-dp-witnesses.json').write_text(json.dumps(serial(witnesses), indent=2)+'\n')
+    Path('output/three-row-positive-expense.json').write_text(json.dumps(serial(three_rows), indent=2)+'\n')
     print(json.dumps(report, indent=2))
 
 

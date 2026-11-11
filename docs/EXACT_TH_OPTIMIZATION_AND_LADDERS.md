@@ -150,6 +150,9 @@ exponential in h, and is not a polynomial-time algorithm for arbitrary-width
 rectangles. The two-bit frontier recurrence is an application of standard
 dynamic programming on a path decomposition; the result here is the exact
 source-expense representation and its use for this completion problem.
+For the standard decomposition method see M. Cygan et al., *Parameterized
+Algorithms*, Springer, 2015, Chapter 7, “Treewidth,” pp. 151–244,
+[doi:10.1007/978-3-319-21275-3_7](https://doi.org/10.1007/978-3-319-21275-3_7).
 
 ## 3. Every feasible two-row ladder has zero expense
 
@@ -214,7 +217,51 @@ This is an all-size example of Corollary 2 and of why a conditional routing
 choice cannot certify an unrestricted optimum. The exact optimizer handles
 both questions by including or omitting the retained paths.
 
-## 4. Implementation, checks and remaining scope
+## 4. The height-two zero-expense conclusion is sharp
+
+For each r>=1 let G be the full 3-by-6r grid with coordinates starting at
+zero. In block i=0,...,r-1, translate by (0,6i) the four actual edges
+
+    (0,1)(0,2), (0,0)(1,0), (1,2)(2,2), (2,0)(2,1).
+
+Give every actual edge weight mu>=0 and select every white Q vertex.
+
+**Theorem 5.** This is a feasible selected configuration, and its unrestricted
+minimum TH expense is exactly r mu. In particular, feasible unit-weight
+instances of height three have unbounded minimum expense.
+
+**Proof.** White Q vertices in each block are (0,3),(2,3),(1,4),(0,5),(2,5),
+with the block translation understood. The two at column 3 have exactly
+one occupied neighbour on their left. The one at column 4 has none. The
+two at column 5 have at most one, in the next block when present. All
+other neighbours are in Q. This verifies feasibility also at block joins.
+
+There are no white HH sources because every white Q vertex was selected.
+Each of the r black centres (1,6i+1) has all its neighbours in P. Its
+terminal component must therefore be TH and must use at least one actual
+edge. Distinct centres belong to different components: an alternating
+terminal path has exactly one black Q endpoint. These r components have
+disjoint actual edges, so every full matching has expense at least r mu.
+
+For the matching attaining it, translate the following nine auxiliary
+edges into every block:
+
+    (0,3)(0,2), (0,1)(1,1),
+    (0,0)(1,0), (1,2)(2,2), (2,0)(2,1),
+    (2,3)(1,3), (0,4)(0,5), (1,4)(1,5), (2,4)(2,5).
+
+They are disjoint and cover the eighteen block vertices. In each block
+the first two auxiliary edges and actual edge (0,2)(0,1) form the unique
+non-direct TH component; the next three edges are common M/N edges; the
+last four are direct TH paths. Thus the expense is r mu. This proves both
+the all-r formula and the case mu=0. QED.
+
+Together with Theorem 4 this gives a sharp height threshold for the
+universal zero-expense property under the selected-neighbour condition.
+The positive family has odd height three and even length; its theorem
+is not stated as an even-by-even family.
+
+## 5. Reproduction and remaining questions
 
 `scripts/source_label_dp.py` supplies the integer-weight optimizer and the
 linear ladder constructor. `scripts/check_source_label_dp.py` compares it
