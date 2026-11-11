@@ -1,3 +1,9 @@
+# Current continuation
+
+The 11 November results on intrinsic equality, degree constraints, general
+boundary composition and simultaneous Hall budgets are indexed in
+[the completion note](docs/COMPLETION_20261111.md).
+
 # Sub-quorum colorings: hypercubes, boundary matchings, and grids
 
 [![Verification](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml/badge.svg)](https://github.com/the-omega-institute/subquorum-colorings/actions/workflows/verify.yml)
