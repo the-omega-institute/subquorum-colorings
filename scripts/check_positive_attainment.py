@@ -107,6 +107,9 @@ def unit_optimizer_tie():
                   any(adjacent(w, b) and (w not in residual['selected'] or b not in p)
                       for b in hall_black)}
     assert len(hall_black) > len(hall_white)
+    assert hall_black == ({v for v in p if not sum(v) % 2} |
+                          (centres-{bad[-1]}) | black)
+    assert hall_white == ({v for v in p if sum(v) % 2} | holes | (white-{bad[0]}))
     return dict(board=[18, 18], origins=origins, actual=actual, selected=selected,
                 holes=holes, centres=centres, bad_path=bad, good_path=good,
                 demand=5, max_HH=4, required_TH=1, physical_cost=1, true_optimum=1,

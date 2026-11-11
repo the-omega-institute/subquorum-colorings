@@ -232,6 +232,20 @@ HH sources, leaving none for the chamber. Its twenty black terminals would
 then have only nineteen available selected neighbours, contradicting Hall.
 The actual direct-remainder matching network also returns a physical Hall
 certificate with 83 black vertices and only 82 allowed white neighbours.
+Explicitly, let P_B^-,P_W^- be the remaining black and white actual endpoints,
+each of size 59, and let S_B,S_T be the chamber black and selected white sets.
+The physical Hall set is P_B^- union the four remaining centres union S_B.
+Its allowed white neighbourhood is exactly
+
+    P_W^- union W union (S_T minus {(5,8)}).
+
+The sizes are 59+4+20=83 and 59+4+19=82. Selected-to-P_B^- edges are
+forbidden; the remaining centres have only P neighbours; and the chamber
+has no other selected neighbours. Conversely each remaining white actual
+endpoint has its mate in P_B^-, every W source has a remaining P neighbour,
+and every remaining chamber white has a chamber black neighbour. These
+observations establish equality of the stated neighbourhood, not just an
+upper bound on its size.
 
 For A_good, assign the four HH sources to their respective arm centres:
 
