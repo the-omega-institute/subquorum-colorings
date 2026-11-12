@@ -22,9 +22,9 @@ in every bipartite graph of order $n$. The coefficient is sharp even for
 two-connected graphs of minimum degree two and maximum degree four. The
 proof constructs two dissociation sets from disjoint deletion witnesses.
 For maximum degree at most three we improve the bound uniformly to
-$\lfloor31n/314\rfloor$, with no restriction on the components induced
-by a minimal forming set. A joint accounting of phase-class margins,
-physical core paths and template boundary edges yields this improvement.
+$\lfloor15n/152\rfloor$, with no restriction on the components induced
+by a minimal forming set. Paired phase-class margins, endpoint-event credits
+on good physical core paths, and template boundary edges yield this improvement.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1296,76 +1296,102 @@ The strictness argument uses the original graph's witness counts and its
 exterior; it does not exclude equality $13b/5$ for an isolated template.
 The next argument uses nonzero phase margins to improve the real coefficient.
 
-\subsection{Joint margins and a smaller unrestricted coefficient}
+\subsection{Two endpoints, paired margins and a smaller coefficient}
 
-For a partial template, retain the owner-class budgets of
-Lemma~\ref{lem:phase-slack}. Write $M_U$ for a class budget
-minus its assigned cycle loss, so $\sum_U M_U=\sigma$. Call an ordinary
-auxiliary component \emph{good} if both its owner classes consist of
-monochromatic physical core squares. Let $b_G$ count its helpers, and
-let $s_g,s_b$ count good and bad auxiliary paths. A good component has
-helper order divisible by four, so $4s_g\le b_G$.
-Assign each bad auxiliary path's one flag to one of its failing ordinary
-classes. Each class thus has $f_U\in\{0,1\}$; distinguished classes
-have no flags, and $\sum_U f_U=s_b$.
+For a partial template retain the owner-class margins $M_U$ of
+Lemma~\ref{lem:phase-slack}, with $\sum_U M_U=\sigma$.
+An ordinary auxiliary component is \emph{good} when both its owner classes
+consist of monochromatic physical core squares. Let $b_G$ count helpers
+in these components and let $s_g,s_b$ count good and bad auxiliary paths.
+Since every good component has positive helper order divisible by four,
+$4s_g\le b_G$. Give each bad auxiliary path one flag, shared by its two
+owner classes; cycles have no flags.
 
-Fix one endpoint of each physical core path and follow its initial run
-of equal retention literals. If the run has length at most two, retain
-it and omit its next vertex if present. This consistent event specifies
-at most two bits and leaves $P_1$ or $P_2$, giving expected rounding
-surplus at least $1/12$. Let $t_g$ count these paths. For each of the
-other $t_b$ paths assign its first three vertices to their owner class;
-let $p_U$ count these disjoint triples.
+Call a physical core path \emph{good} if both endpoint runs of equal
+retention literals have length at most two. An isolated vertex is good.
+For every other path choose one endpoint with an initial run of length
+at least three and assign its first three vertices to their common owner
+class. A bad path contributes one triple even if both ends are bad.
+Let $t_g,t_b$ count good and bad physical paths, and let $p_U$ count the
+triples assigned to $U$.
 
 \begin{lemma}\label{lem:joint-margin}
-The two types of defect satisfy a single shared budget
+These resources satisfy a single shared budget
 \[
- 2t_b+2s_b\le24\sigma.
+ 2t_b+2s_b\le12\sigma.
 \]
 There is an actual dissociation set $D$ of the template with
 \begin{equation}\label{eq:joint-template}
- 5|D|\ge13b+3\sigma+\frac{3b_G+t_g}{4}.
+ 5|D|\ge13b+3\sigma+\frac{3b_G+2t_g}{4}.
 \end{equation}
 \end{lemma}
 \begin{proof}
-Remove the monochromatic cycles of a class $U$, leaving $r_U$ vertices.
-If $q_U$ mixed losses are charged there, their disjoint supports avoid
-the path triples, so $3q_U\le r_U-3p_U$. For an ordinary class,
-$M_U\ge(r_U-q_U)/12\ge p_U/4$. If $p_U=0$ and $f_U=1$, its failure
-also gives $M_U\ge1/12$. If $p_U\ge1$, then
-$24M_U\ge6p_U\ge2p_U+2f_U$. Hence always
-$2p_U+2f_U\le24M_U$.
+Remove the monochromatic cycles of $U$, leaving $r_U$ vertices. If $q_U$
+mixed losses are assigned there, their supports avoid the path triples,
+so $3q_U\le r_U-3p_U$. Every ordinary class therefore has
+$M_U\ge(r_U-q_U)/12\ge p_U/4$. A bad ordinary class also has
+$M_U\ge1/12$. For a distinguished class a non-square monochromatic
+cycle gives $M_U\ge1/3+p_U/4$. Otherwise $r_U\equiv2\pmod4$ and
+$M_U\ge(r_U-q_U-2)/12$. If $p_U=1$ then $r_U\ge6$ gives $M_U\ge1/4$;
+if $p_U\ge2$ then $M_U\ge(3p_U-2)/12\ge p_U/6$.
+Thus $2p_U\le12M_U$ for distinguished classes, which have no flags.
 
-A distinguished class with a non-square monochromatic cycle has
-$M_U\ge1/3+p_U/4$, using that cycle's slack at least $1/2$ and the
-class deduction $1/6$. Otherwise $r_U\equiv2\pmod4$, and
-$M_U\ge(r_U-q_U-2)/12$. For $p_U=1$, we have $r_U\ge6$ and the latter
-bound is at least $1/4$. For $p_U\ge2$, it is at least
-$(3p_U-2)/12\ge p_U/6$. Thus $p_U\le6M_U$ in all cases. Summing once
-over the classes proves the shared budget.
+For an ordinary auxiliary component combine its two margins $M_0+M_1$
+and put $p=p_0+p_1$. Without a flag, $12(M_0+M_1)\ge3p\ge2p$ suffices.
+For a bad auxiliary path, we claim $12(M_0+M_1)\ge2p+2$.
+If $p\ge2$, the same bound $3p$ suffices. Suppose $p=1$.
+A non-square monochromatic cycle in its triple's class supplies slack
+at least $1/2$, already enough. Otherwise only squares were removed.
+The two classes have the same order $h$. If $4\mid h$, that class has
+residual order $r_U\ge4$ divisible by four. The bound
+$3q_U\le r_U-3$ gives $r_U-q_U\ge4$, hence $M_U\ge1/3$.
+If $4\nmid h$, the other class cannot consist of squares and supplies
+at least $1/12$, in addition to the triple class's $1/4$.
+Again $M_0+M_1\ge1/3$, paying $2p+2=4$.
+Finally suppose $p=0$. Two bad classes supply $1/12$ each. If exactly
+one is bad, the good one forces $4\mid h$. The bad one either has a
+non-square monochromatic cycle, or has residual order $r_U\ge4$
+divisible by four. In the latter case $3q_U\le r_U$ gives
+$M_U\ge(r_U-q_U)/12\ge1/4$. This pays its one flag as well.
+Summing once over ordinary components and distinguished classes proves
+the shared budget. No path or class margin has been allocated twice.
+
+For a good physical path, at either endpoint retain its initial run
+and omit the next vertex if present. The consistent event specifies
+at most two bits and leaves a residual $P_1$ or $P_2$, of surplus $1/3$
+or $2/3$ above density $2/3$. Its expected score is at least $1/12$.
+For a physical path of order at least three use both endpoint events.
+When both fire they describe different residual components: a component
+containing both physical endpoints would be the entire path, larger
+than either prescribed piece. Thus their surpluses add pointwise.
+For $P_1$ use its sole event once, of expectation $1/6$. For $P_2$ with
+identical literals use the whole-path event once, of expectation $1/3$.
+With different literals its two endpoint-isolation events are disjoint
+and each has expectation at least $1/12$. Hence every good physical path
+supplies at least $1/6$ in expectation. Different paths and full core
+cycles have disjoint physical supports, so all their scores add even
+when they use the same phase bits.
 
 Good ordinary auxiliary components are isolated within the template:
-all their core edges belong to their full squares. Their one-side
-construction replaces the phase restriction with gain at least $b_G/4$,
-as in the zero-budget repair. Their margins are zero and they contain
-no physical core paths. On the remainder, add the $t_g$ endpoint scores
-to the accepted cycle scores. The physical components supporting these
-scores are disjoint, so pointwise addition is valid even with shared
-bits. Conditional expectations give an actual set of size at least
-$5b/2+o/3+\sigma+b_G/4+t_g/12$.
-Compare this with the one-side guarantee $11b/4-o/2$, taking weights
-$3/5$ and $2/5$. Their maximum satisfies~\eqref{eq:joint-template}.
+all their core edges belong to their full squares. Replacing their
+phase restrictions by their one-side sets gains at least $b_G/4$.
+Their margins are zero and they contain no physical core paths.
+Conditional expectations on the remainder, followed by actual residual
+path/cycle optimization, give a compatible set of size at least
+$5b/2+o/3+\sigma+b_G/4+t_g/6$.
+Compare this with $11b/4-o/2$, taking weights $3/5$ and $2/5$.
+Their maximum proves~\eqref{eq:joint-template}.
 \end{proof}
 
 \begin{theorem}\label{thm:joint-subcubic}
 Every bipartite graph of order $n$ and maximum degree at most three,
 and every minimal two-star-forming set $S$, satisfy
 \[
- 314\bigl(|S|-\diss(G)\bigr)\le31n.
+ 152\bigl(|S|-\diss(G)\bigr)\le15n.
 \]
 In particular,
 \[
- \boxed{\SF(G)-\diss(G)\le\left\lfloor\frac{31n}{314}\right\rfloor.}
+ \boxed{\SF(G)-\diss(G)\le\left\lfloor\frac{15n}{152}\right\rfloor.}
 \]
 \end{theorem}
 \begin{proof}
@@ -1374,13 +1400,13 @@ Theorem~\ref{thm:subcubic}; put $\beta=\diss(G)$ and $d=|S|-\beta$.
 The extracted template has $b'=b-b_3$ helpers. Every template set
 extends by the same retained set of size $L=|R|-b'+p$. Thus
 \begin{equation}\label{eq:joint-Z}
- Z=5\beta-5L-13b'\ge3\sigma+\frac{3b_G+t_g}{4}.
+ Z=5\beta-5L-13b'\ge3\sigma+\frac{3b_G+2t_g}{4}.
 \end{equation}
 
 Let $B$ count physical edges leaving the template. Its owners have
 one internal witness edge, so their remaining slots give at most
 $2(t_g+t_b)$ boundary edges. Its witnesses have an owner and a helper;
-only the unmatched interface slots, two per auxiliary path, can leave,
+only unmatched interface slots, two per auxiliary path, can leave,
 giving at most $2(s_g+s_b)$ edges. A helper is isolated in $S$. A triple
 witness cannot meet it, and every allocated pair witness meeting it is
 already one of its two assigned template witnesses. Thus any extra
@@ -1395,10 +1421,10 @@ and compatible with $D$; their sizes sum to at least $n-5b'-B$.
 Taking the larger side, using $4s_g\le b_G$, gives
 \begin{equation}\label{eq:joint-exterior}
  \beta\ge\frac n2+\frac{b'}{10}+\frac{3\sigma}{5}
-       -\frac{19t_g+2b_G}{20}-t_b-s_b-\frac{3q}{2}.
+       -\frac{18t_g+2b_G}{20}-t_b-s_b-\frac{3q}{2}.
 \end{equation}
-This is a different full-graph candidate from the retained-set extension;
-the two exterior choices are not combined with that retained set.
+This is an alternative full-graph candidate to the retained-set extension;
+the exterior choices are not combined with that retained set.
 
 The exact witness identities give
 \[
@@ -1406,30 +1432,30 @@ The exact witness identities give
  =-2m-\alpha-\pi+r-2e-3b_3-q+\frac{2Z}{5}.
 \]
 Rearranging~\eqref{eq:joint-exterior}, using the shared budget and then
-$38/5$ times~\eqref{eq:joint-Z}, proves
+$18/5$ times~\eqref{eq:joint-Z}, proves
 \begin{align*}
  2m+\alpha+\pi+2e+3b_3
- &\le r+2q+\frac{2Z}{5}+\frac{19t_g+2b_G}{10}
+ &\le r+2q+\frac{2Z}{5}+\frac{18t_g+2b_G}{10}
                        +2t_b+2s_b-\frac{6\sigma}{5}\\
- &\le r+2q+\frac{2Z}{5}+\frac{19t_g}{10}
-                       +\frac{b_G}{5}+\frac{114\sigma}{5}\\
- &\le r+2q+8Z.
+ &\le r+2q+\frac{2Z}{5}+\frac{9t_g}{5}
+                       +\frac{b_G}{5}+\frac{54\sigma}{5}\\
+ &\le r+2q+4Z.
 \end{align*}
 In the last step the $\sigma,t_g$ coefficients are exact and the available
-$b_G$ coefficient $57/10$ exceeds $1/5$.
-Thus $W=r+2q+8Z-(2m+\alpha+\pi+2e+3b_3)$ is a nonnegative integer.
+$b_G$ coefficient $27/10$ exceeds $1/5$.
+Thus $W_4=r+2q+4Z-(2m+\alpha+\pi+2e+3b_3)$ is a nonnegative integer.
 Direct substitution in~\eqref{eq:subcubic-ledger} yields
 \[
- 62n-628d=W+61r+147(\alpha+\pi)+86(e-b_3)+25b_3+60q+294\tau\ge0.
+ 30n-304d=W_4+29r+71(\alpha+\pi)+42(e-b_3)+13b_3+28q+142\tau\ge0.
 \]
 All the slacks, including $e-b_3$ and $\tau$, were nonnegative before
 this argument. This proves the theorem, including the empty graph.
 \end{proof}
 
-The coefficient improves $8/81$ by exactly $1/25434$. Its sharp value
-remains open. The proof uses general class margins, actual template sets
-and physical boundary slots; enumeration verifies these constructions
-without supplying a premise of the inequality.
+The coefficient improves $8/81$ by exactly $1/12312$. Its sharp value
+remains open. Two endpoint scores and paired class margins are both
+needed for this improvement; their physical supports, the actual
+extensions and the general budget are proved above.
 
 \subsection{Minimum-degree asymptotic sharpness}
 
@@ -1830,9 +1856,10 @@ repository revision and complete verification reports. Additional controls check
 for complete cores, the paired formula for arbitrary seeded cores, and
 the degree bounds by direct subset enumeration. Separate controls
 check the general boundary predicates and abstract terminal bijections
-for the simultaneous Hall budget, positive Hall slack, and several exterior entrances. Physical controls include complete auxiliary matchings and explicit failed exposure pairs. The shared-margin controls check all minimal sets in their finite graph
+for the simultaneous Hall budget, positive Hall slack, and several exterior entrances. Physical controls include complete auxiliary matchings and explicit failed exposure pairs. The endpoint and class-pair controls check all minimal sets in their finite graph
 models, 5,200 exact small templates and every phase of larger prescribed
-templates, including loss and path supports in the same owner class.
+templates, including loss and path supports in the same owner class. All signed literal words through path order six are classified; every phase
+of each good word is checked for the pointwise endpoint-score inequality.
 The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 

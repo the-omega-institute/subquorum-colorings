@@ -1,6 +1,38 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
-## Current unrestricted subcubic bound31/314: joint margin and physical boundary
+## Current unrestricted subcubic bound15/152: two endpoints and paired margins
+
+The [two-endpoint theorem](TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md) proves
+`152(|S|-beta_2(G))<=15n` for every minimal S in every finite simple bipartite
+maximum-degree-three graph. The current integer bound isfloor15n/152,
+including the emptygraph andwithout connectivity, positive minimumdegree,
+sidebalance orselectedcomponent conditions. Gain over31/314 is1/23864;
+gain over8/81 is1/12312. Optimality andattainment remain open.
+
+Both endpoint runs must be short for a physical path to be good. Its scores
+supply1/6 inexpectation, withwholeP1/P2 events countedonce. Every bad path
+ownsjustONEtriple. Both equal-order ordinary owner classes are combined to
+pay their auxiliarypath'sONEflag. Distinguishedclasseshavenoflags. This
+proves2tb+2sb<=12sigma once globally. Actual compatible sets satisfy
+5D>=13b+3sigma+(3bG+2tg)/4. The retained-set and exterior-independent-set
+extensions remainALTERNATIVES. The exact certificate is
+30n-304d=W4+29r+71(alpha+pi)+42(e-b3)+13b3+28q+142tau>=0.
+
+Exact26file independent audit ACCEPT with unchanged fulloriginalchecker
+execution and fresh report comparison; fullactualscope is preserved in
+`output/two-endpoint-review.json`. Local checkerexit0 in13.252635458949953s,
+emptyseparatestderr.43862minimalsets/5200exacttemplates/19938physicalphases/
+43734endpointwitnesses/1696simultaneousphysicalpairs. Literal-path control classifies all signed words throughorder6, then checks
+14380GOODwords/168376GOODwordphases/12908simultaneouspairs. Classpair flags
+exercise p0,p1,p>=2. Larger modelscheckactualsets/allphases, no largeexactoptima.
+The25page workingmanuscript replaces theolder31/314subsection5.5,compiledtwice
+andrendered/visuallychecked. CurrentMailrefresh/localindexstill5NovROWID26549;
+servercompletenessunproved. NoLean,maildraft/send,MacStudio,submission orOctoberpaperchange.
+GoalACTIVE foroptimalgraph/templatecoefficients,cubicspecifiedstar existence,
+simultaneous physicalmultiHall completion,unit5/6 andgrid equality.
+
+
+## Earlier unrestricted subcubic bound31/314: joint margin and physical boundary
 
 The [joint-margin theorem](JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md) proves
 `314(|S|-beta_2(G))<=31n` for every minimal S in every finite simple bipartite
@@ -38,7 +70,7 @@ simple bipartite maximum-degree-three graph. Thus the unrestricted integer
 bound is `SF_2-beta_2<=floor((8n-1)/81)`. No connectivity, minimum-degree,
 selected-component or side-balance condition. All positive81d=8n equality
 cases are settled negatively; they are no longer an open existence problem.
-The graph coefficient is now improved to31/314 above; sharp graph and standalone-template13/5 questions remain open.
+The graph coefficient is now improved to15/152 above; sharp graph and standalone-template13/5 questions remain open.
 
 At sigma0 the new physical bound is `20beta(H)>=52b+3bO+t`.
 Ordinary auxiliary components gain bO/4 by componentwise quotient replacement;
@@ -1238,7 +1270,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(31n/314), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. All positive8n/81 equality cases were already excluded; the sharp coefficient remains open |
+| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(15n/152), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. Paired class margins and two endpoint scores prove the exact30n-304d certificate; sharpness andattainment remain open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:

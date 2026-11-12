@@ -1,7 +1,35 @@
 # Current continuation
 
-The [joint-margin and physical-boundary theorem](docs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md)
-now gives the unrestricted bound
+The [two-endpoint and paired-margin theorem](docs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md)
+now proves `152(|S|-beta_2(G))<=15n` for EVERY minimal two-star-forming S
+in EVERY finite simple bipartite graph of maximum degree at most three.
+Consequently the current unrestricted bound is
+`SF_2(G)-beta_2(G)<=floor(15n/152)`. Empty graphs are included; no connectivity,
+minimum-degree, side-balance or selected-component condition. This improves
+31/314 by1/23864 and8/81 by1/12312. Sharpness and attainment remain open.
+
+A good physical core path now requires BOTH endpoint literal runs to have
+length at most two. Its endpoint-event score gives expected surplus at least 1/6;
+wholeP1/P2 events are counted once. A bad path assigns ONE triple even when
+bothendsbad. Pairing the equal-order owner classes of each ordinary auxiliary
+component pays its ONE flag and proves the single budget2tb+2sb<=12sigma.
+Compatible actual template and exterior alternatives yield the exact seven-term
+nonnegative30n-304d certificate. Full proofs accompany every step.
+
+Independent exact26-file mathematical/executable audit ACCEPT includes the
+new proof, module, checker and replacement manuscript5.5/abstract; actual
+execution evidence and full response are in `output/two-endpoint-review.json`.
+The original local full checker exits0 in13.252635458949953s with separateempty
+stderr:43,862minimal sets,5,200exact small templates,19,938physical phases,
+43,734endpoint witnesses and1,696simultaneous endpoint pairs. A separate
+literal-path check classifies all signed literal words through path order6, then checks14,380GOOD words and168,376phases of GOOD words, including
+12,908simultaneous pairs. Larger templates check actual certificates/all
+phases, not unrestrictedlargeoptima. The25page working manuscript replaces
+the older31/314 subsection with this strongest proof and was compiled twice,
+rendered and visually checked. Octoberpaper unchanged; no Lean/mail/submission.
+
+The earlier [joint-margin and physical-boundary theorem](docs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md)
+proved the unrestricted bound
 `SF_2(G)-beta_2(G)<=floor(31n/314)` for EVERY finite simple bipartite graph
 of maximum degree at most three. It applies to every minimal forming S,
 including the empty graph, with no connectivity, minimum-degree, side-balance
@@ -134,7 +162,7 @@ checkers and is disclosed separately; the earlier denominator clarification
 was explicitly resolved.
 
 The preceding19/192 and31b/12 arguments below remain historical milestones;
-the current unrestricted coefficients are31/314 for the graph gap and13/5 for the standalone-template lower bound, respectively.
+the current unrestricted coefficients are15/152 for the graph gap and13/5 for the standalone-template lower bound, respectively.
 
 The [odd-auxiliary-cycle compensation theorem](docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md)
 proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal

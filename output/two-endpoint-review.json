@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T11:17:27.422105+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "baf25e7e-7295-4762-85cc-eff3d9456ab2",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af59f20-e0b0-83ec-aa4a-49fb3648cc4e",
+    "usage_estimated": true
+  },
+  "source_manifest": [
+    {
+      "path": "docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md",
+      "bytes": 7964,
+      "sha256": "a4b2d62b341aa379ed937bf669e98f6bdc7e399a46c78ef91d619f665d8416c6"
+    },
+    {
+      "path": "docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md",
+      "bytes": 10027,
+      "sha256": "11bc037d367154f493bc219a72799a5c1376271ede39fac9664661ebcb0482fa"
+    },
+    {
+      "path": "docs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.md",
+      "bytes": 9478,
+      "sha256": "af97118185ebee2975943d7bb7a916aa090d73ec602ac9bfe53951dd86a59b58"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "develop/subcubic_zero_budget_repair.py",
+      "bytes": 4116,
+      "sha256": "306c9aa1192f6a34ab87b082cabe0d4f9d77aa13ecaa310afa4e36289b5470df"
+    },
+    {
+      "path": "develop/subcubic_phase_pairing.py",
+      "bytes": 5808,
+      "sha256": "5fb0351c8d4c8c44a8843e8367e88fe441f8c57116fb747c6ecb4a55de98cf7a"
+    },
+    {
+      "path": "develop/subcubic_phase_slack.py",
+      "bytes": 1790,
+      "sha256": "8d66f3cbeb03b1887bc4279438d757c4d1c86c76bf757ab4fea997dd14ea3e70"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    {
+      "path": "develop/subcubic_core_cycles.py",
+      "bytes": 3680,
+      "sha256": "eb5a055ade4830dc80cc64c58af1dfaadb7db1a968e8d7c7e11793a5e2acbff2"
+    },
+    {
+      "path": "develop/subcubic_odd_cycle_compensation.py",
+      "bytes": 4465,
+      "sha256": "8af9fcf1f0e8054472b28c8fb97d751cfc47f43f5020e2729c455745c91c2cf1"
+    },
+    {
+      "path": "scripts/check_zero_budget_repair.py",
+      "bytes": 10048,
+      "sha256": "e77142ef71255788d3ac3b8e8ccdf7097671ac678606749300d378c8a039ba96"
+    },
+    {
+      "path": "scripts/check_unrestricted_subcubic_gap.py",
+      "bytes": 9574,
+      "sha256": "73d6b2d8966fdf9c5555f4d8a4c4bc95f785d7aa8a475061390797b2463a6e1c"
+    },
+    {
+      "path": "scripts/check_subcubic_intrinsic_obstruction.py",
+      "bytes": 9946,
+      "sha256": "d9cf2cb89d693a29721ac6abab982204d220afa043595319a7f0fcce5fee1f6c"
+    },
+    {
+      "path": "scripts/check_odd_cycle_compensation.py",
+      "bytes": 13794,
+      "sha256": "7eeb632f8e878741deb9f16fa17437668cd605015a208a38fef5119192f80650"
+    },
+    {
+      "path": "develop/fixtures/three-cycle-phase-ceiling.json",
+      "bytes": 5292,
+      "sha256": "8242f12b98163f798fe0e9c69135eef54d8d8ddbc30e1ab5141c3944a345f53a"
+    },
+    {
+      "path": "develop/fixtures/three-construction-ceiling.json",
+      "bytes": 4339,
+      "sha256": "fd4a32e2917a4c98f1bbd0bc3959c89049bfacbd99e0dbd4d96dac4ea45ad389"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 90383,
+      "sha256": "e9bfb9bd409247837314ca8d0510584e9914ca234e202f5c6d6061248086e76c"
+    },
+    {
+      "path": "docs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md",
+      "bytes": 12732,
+      "sha256": "473bd0341e8d27281c92f4bcbd5e9a5d163237a03378e38fa3d87e34246eb431"
+    },
+    {
+      "path": "develop/subcubic_joint_margin.py",
+      "bytes": 8413,
+      "sha256": "f876b3e8e60769bdcf11401281105f74b3ebdee06472142b4baa554a8f8410bc"
+    },
+    {
+      "path": "scripts/check_joint_margin.py",
+      "bytes": 10783,
+      "sha256": "d54287d05a61d94a4b93058b2ca30c3c8b7cf417d47bce76e15be914e7f835bd"
+    },
+    {
+      "path": "docs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md",
+      "bytes": 13509,
+      "sha256": "12dcc4d590f0ce0bfe4d35d3e0de971a6ac3b1f49985c3c723547a4619c200ce"
+    },
+    {
+      "path": "develop/subcubic_two_endpoint.py",
+      "bytes": 9275,
+      "sha256": "4ebb7dcff535c03409380657cf2d65bcb2d28e73edd742c9aeb23dee690d3dde"
+    },
+    {
+      "path": "scripts/check_two_endpoint.py",
+      "bytes": 13624,
+      "sha256": "18f7de56340320c27ae8fe1c02e78fc07747e76175fb04941b72ffe85e7b3f4d"
+    },
+    {
+      "path": "output/two-endpoint-check.json",
+      "bytes": 2520,
+      "sha256": "1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096"
+    }
+  ],
+  "review_source_bytes": 325767,
+  "review_source_sha256": "16a5d0857cd266c41f9107def192ee8331eeb1140d0f8cd5e2e230e22bd7783f",
+  "local_execution": {
+    "command": [
+      "python3",
+      "-B",
+      "scripts/check_two_endpoint.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 13.252635458949953,
+    "stdout": "{\"status\": \"PASS\", \"bytes\": 2520, \"sha256\": \"1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096\"}\n",
+    "stderr": ""
+  },
+  "independent_execution": {
+    "verdict": "ACCEPT",
+    "full_response_read": true,
+    "prior_round_mathematical_verdict": "ACCEPT",
+    "prior_round_overall_verdict": "REVISE for two wording corrections",
+    "corrections_closed": true,
+    "command": "python3 -B scripts/check_two_endpoint.py",
+    "working_directory_as_reported": "/mnt/data/two-endpoint-correction-audit",
+    "exit_code": 0,
+    "elapsed_seconds": 30.781115691,
+    "assertions_enabled": true,
+    "files_reconstructed_and_verified": 26,
+    "expected_report_moved_aside": true,
+    "report_path_absent_before_execution": true,
+    "non_report_source_files_unchanged": 25,
+    "all25_postexecution_hashes_verified_in_received_response": true,
+    "report_bytes": 2520,
+    "report_sha256": "1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096",
+    "direct_byte_comparison": true,
+    "stdout_as_reported": "{\"status\": \"PASS\", \"bytes\": 2520, \"sha256\": \"1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096\"}\n",
+    "full_stderr_as_reported": "",
+    "stderr_bytes_as_reported": 0,
+    "older_imported_main_suites_executed": false,
+    "large_unrestricted_optimizer_or_lean_run": false,
+    "returned_remote_artifact_archive": false,
+    "evidence_scope": "Full received response and raw local SSE preserved. Remote execution streams and exact-source reconstruction are reported in that response; no separate raw sandbox archive was returned."
+  },
+  "accepted_claims": [
+    "two endpoint scores with expected1/6 pergood physicalpath",
+    "wholeP1/P2 events counted once and one triple perbad path",
+    "paired owner-class margins2tb+2sb<=12sigma",
+    "compatible5D>=13b+3sigma+(3bG+2tg)/4 template construction",
+    "physical boundary and alternative exterior independent-set extension",
+    "nonnegativeW4 and exact30n-304d ledger",
+    "universal152d<=15n and integerfloor15n/152",
+    "replacement working manuscript subsection5.5 and revised abstract"
+  ],
+  "limitations": [
+    "sharp coefficient andattainment remain open",
+    "no new cubic specified-star gap existence",
+    "no new universal unit5/6 or arbitrary-grid triple equality",
+    "larger template controls check actual sets/phases, not unrestricted large optima",
+    "private next-four-P3 discovery is outside this frozen26file review"
+  ],
+  "prior_round": {
+    "verdict": "REVISE — two local wording corrections",
+    "mathematical_verdict": "ACCEPT",
+    "executable_verdict": "PASS",
+    "oracle": {
+      "task_id": "2fe282ed-caa9-40cc-9205-64f68dc228cb",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af59c8c-30e0-83ec-be73-97da45631c13",
+      "usage_estimated": true
+    },
+    "elapsed_seconds": 24.800285105000512,
+    "report_bytes": 2349,
+    "report_sha256": "9d34647f458fbf9746404126f1bd6d4e5e3d9599c54a0725eaf5e71cc32ea479",
+    "stderr_bytes": 0,
+    "all26_files_verified": true,
+    "all25_nonreport_sources_unchanged": true,
+    "returned_remote_artifact_archive": false,
+    "full_response": "REVISE — two local wording correctionsMathematical proof: ACCEPT. Executable audit: PASS. Taking the stipulated earlier results as established, the new deductions prove\n$$152\\bigl(|S|-\\beta_2(G)\\bigr)\\le 15n$$\nfor every minimal two-star-forming set in every finite simple bipartite graph of maximum degree at most three, including the empty graph.The requested revisions concern the abstract’s description of endpoint credits and the stated scope of the literal-word computation. The proof in §5.5 and the implemented construction pass the audit.1. Required wording correctionsAbstract: qualify the endpoint-credit ruleThe abstract in starforming-gap.tex says:“two endpoint credits per physical core path”The actual construction assigns endpoint scores to good physical paths. An isolated  $P_1$  uses one event; an identical-literal  $P_2$  uses one whole-path event; a bad physical path supplies one allocated triple.Replace the sentence with:“Paired phase-class margins, endpoint-event credits on good physical core paths, and template boundary edges yield this improvement.”The body of §5.5 already handles these cases correctly.Verification scope: identify the good-word phase controlsIn literal_endpoint_controls in   check_two_endpoint.py, the statementPythonif terms is None:continueoccurs before phase enumeration. Consequently, the reported 14,380 literal words and 168,376 literal phase assignments cover good words. Every signed equality partition through order six is classified, and every phase of every good word is checked.Use this wording in the new document’s §6, the manuscript’s Verification paragraph, and the checker/report scope sentence:“All signed literal words through path order six are classified; every phase of each good word is checked for the pointwise endpoint-score inequality.”For bad words, the endpoint score is zero and the residual path components have nonnegative rounding surplus. The general mathematical argument covers them directly.2. Actual execution and exact-source integrityI reconstructed all 26 files from their supplied UTF-8 contents and verified every declared byte count and SHA-256. I then moved the expected report to a separate evidence directory and confirmed that its original absolute path was absent immediately before execution.The unchanged command actually executed was:Bashpython3 -B scripts/check_two_endpoint.pyWorking directory:Plain text/workspace/scratch/b88f15a73919/two_endpoint_auditCheckActual resultFiles reconstructed and verified before execution26/26Original report path absent before executionConfirmedAssertionsEnabledExit code0Measured subprocess wall runtime24.800285105000512 secondsFresh report size2,349 bytesDirect comparison with moved expected reportByte-for-byte equalNon-report source files verified afterward25/25 unchangedExact stdout, consisting of the following line followed by one LF, 112 bytes:Plain text{\"status\": \"PASS\", \"bytes\": 2349, \"sha256\": \"9d34647f458fbf9746404126f1bd6d4e5e3d9599c54a0725eaf5e71cc32ea479\"}Full stderr: the empty byte string, b\"\", 0 bytes. This capture includes interpreter startup output.Fresh report SHA-256:Plain text9d34647f458fbf9746404126f1bd6d4e5e3d9599c54a0725eaf5e71cc32ea479Observed countsEvery requested count matches the fresh report.ControlObserved countMinimal-set instances43,862Exact small templates5,200Physical phase assignments19,938Endpoint-event witnesses43,734Simultaneous physical endpoint pairs1,696Conditional-expectation controls15,137Good signed literal words14,380Literal phase assignments for good words168,376Simultaneous literal endpoint pairs12,908The targeted cases also have positive recorded coverage:CaseRecorded countFlagged ordinary auxiliary paths with  $p=0$ 7,444Flagged ordinary auxiliary paths with  $p=1$ 295Flagged ordinary auxiliary paths with  $p\\ge2$ 18Good physical paths of order  $1$ 11,715Good physical paths of order  $2$ 2,627Good physical paths of order at least  $3$ 4,012The report records controls with boundary edges in each physical layer: 52 with helper boundary edges, 2,917 with owner boundary edges, and 2,566 with witness boundary edges.This was one invocation of the full original checker. Imported earlier modules supplied helper functions; their guarded main suites remained dormant. Exact template optimization was confined to the checker’s small templates, with  $b\\le3$  and order at most  $15$ . Larger prescribed templates checked actual constructed sets and all phases.3. Two-endpoint lemma: ACCEPTThe definition in    TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md, §2, correctly requires both endpoint initial literal runs to have length at most two.For an endpoint run of length  $r\\in\\{1,2\\}$ , retaining the run and omitting its next vertex specifies a consistent event involving at most two fair bits. When the next literal uses the same bit, its opposite retaining value makes omission automatic. The event therefore has probability at least  $1/4$  and produces a complete residual  $P_r$ , whose surplus is\n$$\\left\\lceil\\frac{2r}{3}\\right\\rceil-\\frac{2r}{3}\n=\n\\begin{cases}\n1/3,&r=1,\\\\\n2/3,&r=2.\n\\end{cases}$$\nFor a physical path of order at least three, simultaneous endpoint events produce distinct residual components: a residual component containing both physical endpoints would contain the entire physical path, exceeding the order of either prescribed endpoint piece. Thus the active pieces have disjoint vertex sets and no retained edge between them. Every additional residual path component has nonnegative surplus, so the endpoint scores add pointwise and contribute at least  $1/6$  in expectation.The short cases are correct:Physical pathEvent accountingExpected surplus $P_1$ Sole retention event, counted once $1/6$  $P_2$ , identical literalsWhole-path event, counted once $1/3$  $P_2$ , different literalsTwo mutually exclusive isolation eventsAt least  $1/6$ Opposite values of one shared bit are covered by the third case; each isolation event then has probability  $1/2$ .Different physical paths and full physical core cycles have disjoint physical supports. Shared bits preserve both pointwise addition and linearity of expectation.Implementation correspondenceIn   subcubic_two_endpoint.py:endpoint_events examines both endpoint runs and deduplicates whole-path events by their prefix and requirements.resources assigns exactly one triple to each bad path, including a path with two long endpoint runs.After obtaining the established auxiliary data, resources rebuilds and replaces events, bad_paths, classes, tg, and tb.The reused auxiliary flags and good-component classification depend on auxiliary owner classes. Their definitions remain valid under the revised physical-path classification.4. Paired-margin inequality: ACCEPTThe support allocation gives\n$$3q_U\\le r_U-3p_U,$$\nbecause allocated triples lie in physical path components and assigned mixed-loss supports lie in full physical core-cycle components.For an ordinary class,\n$$M_U\\ge\n\\sum_{\\text{monochromatic }K}\n\\left(\\frac{|K|}{12}-\\operatorname{loss}(K)\\right)\n+\\frac{r_U-q_U}{12}\n\\ge\\frac{p_U}{4}.$$\nThe critical step correctly combines both equal-order owner classes before paying the auxiliary path’s single flag. Writing  $p=p_0+p_1$ , the flagged cases are exhaustive:CaseBound paying  $2p+2$  $p\\ge2$  $12(M_0+M_1)\\ge3p\\ge2p+2$ . $p=1$ , triple class contains a monochromatic cycle other than  $C_4$ Its cycle slack is at least  $1/2$ , sufficient for the required paired margin  $1/3$ . $p=1$ , only squares removed and  $4\\mid h$ Residual  $r_U$  is a positive multiple of four. From  $3q_U\\le r_U-3$ , integrality gives  $r_U-q_U\\ge4$ , hence  $M_U\\ge1/3$ . $p=1$ ,  $4\\nmid h$ The other class contributes at least  $1/12$ , added to the triple class’s  $1/4$ . $p=0$ , both classes badEach contributes at least  $1/12$ , paying the flag. $p=0$ , exactly one class badThe good class forces  $4\\mid h$ . The bad class supplies either cycle slack at least  $1/2$ , or residual  $r_U\\ge4$  divisible by four with  $r_U-q_U\\ge3$ , giving  $M_U\\ge1/4$ .The integral steps are sound. In the  $p=1,\\ r_U=4$  case,  $3q_U\\le1$  forces  $q_U=0$ . In the  $p=0,\\ r_U=4$  case,  $q_U\\le1$  gives  $r_U-q_U\\ge3$ .For distinguished classes, the proof correctly obtains\n$$2p_U\\le12M_U.$$\nA monochromatic cycle other than  $C_4$  supplies enough slack to cover the distinguished deduction. Otherwise  $r_U\\equiv2\\pmod4$ ; the  $p_U=1$  case gives  $M_U\\ge1/4$ , and  $p_U\\ge2$  gives\n$$M_U\\ge\\frac{3p_U-2}{12}\\ge\\frac{p_U}{6}.$$\nThese classes carry zero flags.Summation once over ordinary components and distinguished classes therefore yields\n$$\\boxed{2t_b+2s_b\\le12\\sigma.}$$\nEvery owner-class margin, allocated triple, and auxiliary-path flag has one allocation.5. Template construction and physical boundary: ACCEPTGood ordinary auxiliary components are isolated within the template, have zero margin, and consist of full monochromatic core squares. Their replacement preserves the remaining physical paths and gains  $b_G/4$ .Conditional expectation applied to the combined cycle and endpoint scores yields an actual construction of size at least\n$$F=\\frac{5b}{2}+\\frac{o}{3}+\\sigma+\\frac{b_G}{4}+\\frac{t_g}{6}.$$\nThe established global one-side alternative supplies\n$$O=\\frac{11b}{4}-\\frac{o}{2}.$$\nTaking the largest actual candidate gives\n$$5|D|\\ge3F+2O\n=13b+3\\sigma+\\frac{3b_G+2t_g}{4}.$$\nAll coefficients agree with the document, manuscript, and implementation.For the ambient extraction, the retained-set extension gives\n$$Z=5\\beta-5L-13b'\n\\ge3\\sigma+\\frac{3b_G+2t_g}{4}.$$\nPhysical boundary ownership remains valid:Owners: unused core-degree slots contribute at most  $2(t_g+t_b)$ , including two slots for an isolated owner.Witnesses: unmatched  $Q$ -slots contribute at most  $2(s_g+s_b)$ .Helpers: the accepted witness exclusions place additional neighbours among the  $q$  unallocated outside vertices, contributing at most  $3q$ .Hence\n$$B\\le2(t_g+t_b)+2(s_g+s_b)+3q.$$\nDeleting all exterior neighbours of the actual inner set  $D$ , then choosing a larger remaining bipartition side, gives\n$$\\beta\\ge |D|+\\frac{n-5b'-B}{2}.$$\nUsing  $s_g\\le b_G/4$  produces exactly\n$$\\boxed{\n\\beta\\ge\n\\frac n2+\\frac{b'}{10}+\\frac{3\\sigma}{5}\n-\\frac{18t_g+2b_G}{20}\n-t_b-s_b-\\frac{3q}{2}.\n}$$\nThe changed coefficient follows from\n$$\\frac{2t_g}{20}-t_g=-\\frac{18t_g}{20},$$\nand the good-component coefficient follows from\n$$\\frac{3b_G}{20}-\\frac{b_G}{4}\n=-\\frac{2b_G}{20}.$$\nThe retained-set construction and the exterior-side constructions are separately valid full-graph alternatives. The implementation constructs lifted and two externals, then chooses their maximum.6.  $W_4$ , the final identity, and universal scope: ACCEPTCombining the exact witness identity with the exterior estimate and paired-margin bound gives\n$$\\begin{aligned}\n2m+\\alpha+\\pi+2e+3b_3\n&\\le r+2q+\\frac{2Z}{5}\n+\\frac{9t_g}{5}+\\frac{b_G}{5}\n+\\frac{54\\sigma}{5}.\n\\end{aligned}$$\nMultiplying the retained bound for  $Z$  by  $18/5$  gives\n$$\\frac{18Z}{5}\n\\ge\n\\frac{54\\sigma}{5}\n+\\frac{27b_G}{10}\n+\\frac{9t_g}{5}.$$\nThis supplies the required  $\\sigma,t_g$  coefficients exactly, together with sufficient  $b_G$  coefficient. Thus\n$$W_4=r+2q+4Z-(2m+\\alpha+\\pi+2e+3b_3)\\ge0.$$\nThe final identity can be checked directly through\n$$30n-304d=4(8n-81d)-2(n-10d).$$\nSubstituting the accepted ledgers gives\n$$4Z-2m+30r+70(\\alpha+\\pi)+40e-32b_3+30q+142\\tau.$$\nExpanding the claimed expression gives precisely the same result:\n$$\\boxed{\n30n-304d\n=\nW_4+29r+71(\\alpha+\\pi)\n+42(e-b_3)+13b_3+28q+142\\tau.\n}$$\nAll seven terms are nonnegative, using the independently established  $e\\ge b_3$  and  $\\tau\\ge0$ . Division by two proves the universal inequality. Maximization over minimal  $S$  and integrality give\n$$\\operatorname{SF}_2(G)-\\beta_2(G)\n\\le\\left\\lfloor\\frac{15n}{152}\\right\\rfloor.$$\nThe empty graph gives zero throughout.The stated improvements are exact:\n$$\\frac{31}{314}-\\frac{15}{152}=\\frac1{23864},\n\\qquad\n\\frac8{81}-\\frac{15}{152}=\\frac1{12312}.$$\nThe manuscript presents the strongest new proof in §5.5, retains the separate preceding strictness argument, and replaces the historical  $31/314$  derivation. Its proof consistently uses the new both-endpoint classification.Audit evidence   two_endpoint_audit_evidence.zip contains the complete referee report, all 26 reconstructed files, the original attachment, separate exact stdout and stderr, execution metadata, before-and-after hash records, and both expected and fresh reports.Apply the two wording corrections and retain §5.5’s accepted mathematical argument and the recorded executable evidence.starforming-gap.texFileOpen filecheck_two_endpoint.pyCodeOpen file   TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.mdDocumentOpen filesubcubic_two_endpoint.pyCodeOpen file"
+  },
+  "wording_corrections": {
+    "initial_verdict": "REVISE: two local wording corrections",
+    "mathematics": "ACCEPT",
+    "executable_audit": "PASS",
+    "corrections": [
+      "Qualify abstract endpoint events as on good physical core paths",
+      "State all signed literal words classified, phases exhaustively checked only for good words; bad words use general nonnegative path-surplus proof"
+    ],
+    "algorithm_or_theorem_changed": false,
+    "initial_report_sha256": "9d34647f458fbf9746404126f1bd6d4e5e3d9599c54a0725eaf5e71cc32ea479"
+  },
+  "full_response": "Final correction reviewMathematical ACCEPTBoth previously identified wording findings are closed. The supplied exact diff makes the two required corrections without changing the theorem, algorithm, or proof.Abstract: The description now correctly limits endpoint-event credits to good physical core paths. It no longer implies that every physical path receives two endpoint credits.Verification scope: The document, manuscript, checker and regenerated report now distinguish classification of all signed literal words through order six from phase checking of good words only. Bad words receive zero endpoint score; their residual path pieces have nonnegative rounding surplus.The corrected wording is consistent with the actual implementation in endpoint_events, resources, and literal_endpoint_controls.The mathematical acceptance of the initial review therefore remains intact. The remaining question is whether the requested exact-source execution can be independently reproduced in this session.Final ACCEPT Execution PASS1. Exact-source reconstruction26/26 files verifiedAll 26 UTF-8 contents reconstructed or preserved as expected-report evidence.Every declared byte count matched.Every declared SHA-256 matched.Expected output/two-endpoint-check.json moved to a separate evidence directory.Confirmed original report path absent immediately before the successful execution.After execution, all 25 non-report files independently rehashed and verified unchanged.2. Actual executionCommandBashpython3 -B scripts/check_two_endpoint.pyWorking directory/mnt/data/two-endpoint-correction-auditExit code0Runtime30.781115691 secondsAssertionsEnabledStandard error0 bytesExact stdout (112 bytes, including trailing LF)Plain text{\"status\": \"PASS\", \"bytes\": 2520, \"sha256\": \"1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096\"}Complete stderrPlain textb''Fresh report:PropertyActual resultBytes2,520SHA-2561903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096Expected report bytes2,520Direct byte comparisonIDENTICAL3. Reproduced report countsControlActual countMinimal-set instances43,862Exact small templates5,200Physical phase assignments19,938Endpoint-event witnesses43,734Simultaneous physical endpoint pairs1,696Conditional-expectation controls15,137Good signed literal words14,380Good-word phase assignments168,376Simultaneous literal endpoint pairs12,908Additional scope controls:Flagged ordinary auxiliary paths: p=0: 7,444; p=1: 295; p≥2: 18.Good physical paths: order 1: 11,715; order 2: 2,627; order ≥3: 4,012.Physical boundary controls: helper 52, owner 2,917, witness 2,566.The regenerated report agrees byte-for-byte with the supplied expected report.4. All 25 post-execution source hashesAll values below were independently recomputed after the successful execution.FileSHA-256docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.mda4b2d62b341aa379ed937bf669e98f6bdc7e399a46c78ef91d619f665d8416c6docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md11bc037d367154f493bc219a72799a5c1376271ede39fac9664661ebcb0482fadocs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.mdaf97118185ebee2975943d7bb7a916aa090d73ec602ac9bfe53951dd86a59b58docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478abdocs/SHARP_BIPARTITE_STAR_FORMING_GAP.mdf20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532develop/subcubic_zero_budget_repair.py306c9aa1192f6a34ab87b082cabe0d4f9d77aa13ecaa310afa4e36289b5470dfdevelop/subcubic_phase_pairing.py5fb0351c8d4c8c44a8843e8367e88fe441f8c57116fb747c6ecb4a55de98cf7adevelop/subcubic_phase_slack.py8d66f3cbeb03b1887bc4279438d757c4d1c86c76bf757ab4fea997dd14ea3e70develop/subcubic_partial_template.pye7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7develop/subcubic_intrinsic_obstruction.py5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7develop/subcubic_core_cycles.pyeb5a055ade4830dc80cc64c58af1dfaadb7db1a968e8d7c7e11793a5e2acbff2develop/subcubic_odd_cycle_compensation.py8af9fcf1f0e8054472b28c8fb97d751cfc47f43f5020e2729c455745c91c2cf1scripts/check_zero_budget_repair.pye77142ef71255788d3ac3b8e8ccdf7097671ac678606749300d378c8a039ba96scripts/check_unrestricted_subcubic_gap.py73d6b2d8966fdf9c5555f4d8a4c4bc95f785d7aa8a475061390797b2463a6e1cscripts/check_subcubic_intrinsic_obstruction.pyd9cf2cb89d693a29721ac6abab982204d220afa043595319a7f0fcce5fee1f6cscripts/check_odd_cycle_compensation.py7eeb632f8e878741deb9f16fa17437668cd605015a208a38fef5119192f80650develop/fixtures/three-cycle-phase-ceiling.json8242f12b98163f798fe0e9c69135eef54d8d8ddbc30e1ab5141c3944a345f53adevelop/fixtures/three-construction-ceiling.jsonfd4a32e2917a4c98f1bbd0bc3959c89049bfacbd99e0dbd4d96dac4ea45ad389manuscript/starforming-gap.texe9bfb9bd409247837314ca8d0510584e9914ca234e202f5c6d6061248086e76cdocs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md473bd0341e8d27281c92f4bcbd5e9a5d163237a03378e38fa3d87e34246eb431develop/subcubic_joint_margin.pyf876b3e8e60769bdcf11401281105f74b3ebdee06472142b4baa554a8f8410bcscripts/check_joint_margin.pyd54287d05a61d94a4b93058b2ca30c3c8b7cf417d47bce76e15be914e7f835bddocs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md12dcc4d590f0ce0bfe4d35d3e0de971a6ac3b1f49985c3c723547a4619c200cedevelop/subcubic_two_endpoint.py4ebb7dcff535c03409380657cf2d65bcb2d28e73edd742c9aeb23dee690d3ddescripts/check_two_endpoint.py18f7de56340320c27ae8fe1c02e78fc07747e76175fb04941b72ffe85e7b3f4d5. Final dispositionACCEPT — no remaining concrete REVISE finding.The two wording corrections accurately describe the proof and executable scope. The original mathematical argument remains accepted, and the corrected exact-source checker has now independently passed in this execution environment.The accepted universal theorem remains:\n$$\\boxed{\n152\\bigl(|S|-\\beta_2(G)\\bigr)\\le15|V(G)|\n}$$\nfor every finite simple bipartite graph of maximum degree at most three and every inclusion-minimal two-star-forming set, including the empty graph.No claim is made here about sharpness, cubic examples, grid results, Lean formalization, or publication/submission.Evidence qualification: I used the supplied 26-file snapshot. I did not download or claim possession of the previously mentioned evidence ZIP.\n"
+}
