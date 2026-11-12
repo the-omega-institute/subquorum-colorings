@@ -1,0 +1,65 @@
+{
+  "counts": {
+    "exact_original_all_helper_controls": 2,
+    "fixed_fixture_controls": 2,
+    "full_vector_exact_optima": 67,
+    "independent_local_subsets": 55,
+    "invalid_inputs_rejected": 4,
+    "literal_C4_pairs": 256,
+    "literal_auxiliary_subsets": 65792,
+    "literal_local_subsets": 256,
+    "maximum_witness_phase_controls": 134,
+    "physical_certificates": 67,
+    "prior_matching_certificate_controls": 8,
+    "single_vertex_deletion_controls": 720,
+    "two_connectivity_certificates": 67,
+    "vector_transitions": 548460
+  },
+  "examples": [
+    {
+      "r": 1,
+      "physical_vertices": 20,
+      "beta_I": 11,
+      "maximum_witness_restricted_optimum": 10,
+      "loss": 1
+    },
+    {
+      "r": 2,
+      "physical_vertices": 40,
+      "beta_I": 23,
+      "maximum_witness_restricted_optimum": 20,
+      "loss": 3
+    },
+    {
+      "r": 3,
+      "physical_vertices": 60,
+      "beta_I": 34,
+      "maximum_witness_restricted_optimum": 30,
+      "loss": 4
+    },
+    {
+      "r": 4,
+      "physical_vertices": 80,
+      "beta_I": 46,
+      "maximum_witness_restricted_optimum": 40,
+      "loss": 6
+    },
+    {
+      "r": 5,
+      "physical_vertices": 100,
+      "beta_I": 57,
+      "maximum_witness_restricted_optimum": 50,
+      "loss": 7
+    },
+    {
+      "r": 6,
+      "physical_vertices": 120,
+      "beta_I": 69,
+      "maximum_witness_restricted_optimum": 60,
+      "loss": 9
+    }
+  ],
+  "largest_physical_vertices": 5120,
+  "deterministic_sha256": "f086726261629196860a69c4039f145f6f46e6f221662322a8c7faf974416280",
+  "scope": "General written all-r theorem. Original exponential all-helper optimizer used only for r1and2. Full-vector DP retains all local independent subsets and verifies exact optima on all listed r; larger physical graphs certify actual sets. This refutes maximum-witness retention, not general8b/3, nor any unrestricted beta_2 claim."
+}

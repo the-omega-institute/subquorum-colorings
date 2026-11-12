@@ -1,0 +1,95 @@
+\subsection{The cost of retaining the maximum witness count}
+
+On auxiliary squares, the constructions above retain $b$ witness vertices.
+For a longer auxiliary cycle, requiring the same witness count can lose an
+unbounded number of vertices, even in connected templates of minimum degree
+two and maximum degree three. The next family quantifies this loss exactly.
+
+\begin{theorem}\label{thm:maximum-witness-loss}
+For every integer $r\ge1$ there is a two-connected bipartite partial template
+$H_r$ on $20r$ vertices, with $b=4r$ helpers, minimum degree two and maximum
+degree three, such that
+\[
+ \beta_I(H_r)=11r+\lfloor r/2\rfloor.
+\]
+Among dissociation sets containing every helper and exactly $b$ witness
+vertices, the largest size is $10r$. Thus this additional restriction loses
+exactly $r+\lfloor r/2\rfloor$ vertices.
+\end{theorem}
+\begin{proof}
+Use the index set $V=\{0,\ldots,8r-1\}$ and let
+\[
+ P=\{\{2j,2j+1\}:0\le j<4r\},\qquad
+ Q=\{\{2j+1,2j+2\}:0\le j<4r\},
+\]
+where indices in $Q$ are reduced modulo $8r$. Thus $A=P\cup Q$ is the
+cycle $C_{8r}$. Split $V$ into intervals $K_i=\{8i,\ldots,8i+7\}$,
+$0\le i<r$. Within each $K_i$, put an owner four-cycle on the even offsets
+$0,2,4,6$ and another on the odd offsets $1,3,5,7$, in those orders.
+These are all edges of $B$.
+
+Give index $v$ the physical witness colour $\lfloor v/2\rfloor\bmod2$.
+Then $P$ joins equal colours, while $Q$ and $B$ join opposite colours.
+Construct the physical template as before. Its helper--witness subgraph is
+obtained by subdividing the $P$ edges of $C_{8r}$, so is connected. Each
+owner has its witness neighbour, hence the whole graph is connected. The
+helpers have degree two, and all witnesses and owners have degree three.
+The specified colours, reversed on owners and helpers, give a bipartition.
+The graph is two-connected. Deleting a helper or witness leaves the backbone
+cycle as a connected path; every owner cycle still has at least three
+witness attachments to that path. Deleting an owner leaves its owner cycle
+as a path attached to the intact backbone. Thus every single vertex deletion
+leaves a connected graph.
+
+Fix any selected witness set $T$, which must be independent in $A$.
+For $p\in\{0,1\}$ let $k_i^p$ count the selected witnesses of parity $p$
+in $K_i$. In a four-cycle with $k$ vertices forbidden, the largest
+dissociation set has size $\min\{2,4-k\}$: at most two vertices may be
+selected, and every set of at most two vertices is dissociation. The owner
+cycles are disjoint, so the largest physical set with this fixed $T$ has size
+\[
+ 4r+\sum_{i,p}\bigl(k_i^p+\min\{2,4-k_i^p\}\bigr)
+ =8r+\sum_i g_i,\qquad
+ g_i=\min\{k_i^0,2\}+\min\{k_i^1,2\}.
+\]
+Here owners indexed by $T$ are forbidden, and all other owner choices are
+independent between cycles. This maximization is therefore exact.
+
+Before the cyclic joins are added, each $K_i$ is a path of order eight.
+Consequently
+$|T\cap K_i|\le4$ and $g_i\le4$. If $g_i=4$, then $T\cap K_i$ has exactly
+two vertices of each parity. Both boundary offsets $0$ and $7$ must belong
+to it: omitting $0$ leaves a path of order seven whose unique independent
+four-set consists of the odd offsets, and omitting $7$ forces the even
+offsets instead. Adjacent intervals cannot both have $g_i=4$, because the
+last vertex of one is adjacent to the first of the next. For $r=1$ the
+closing edge similarly forbids $g_0=4$; for $r\ge2$, at most
+$\lfloor r/2\rfloor$ intervals can have that value. Every other interval
+contributes at most three. Hence
+\[
+ \beta_I(H_r)\le8r+3r+\lfloor r/2\rfloor.
+\]
+
+For equality choose $\lfloor r/2\rfloor$ pairwise nonadjacent intervals in
+the cyclic order, choosing none when $r=1$. In each chosen interval select
+witness offsets $\{0,2,5,7\}$ and owner offsets $\{1,3,4,6\}$; in each
+other interval select witness offsets $\{1,3,6\}$ and owner offsets
+$\{0,2,5,7\}$. The witnesses are independent, including across interval
+boundaries. Each owner cycle receives exactly two vertices and no selected
+owner shares its index with a selected witness. Together with all helpers
+these choices form a dissociation set of the asserted size.
+
+Finally, an independent set of maximum size $4r$ in $C_{8r}$ is one of its
+two bipartition classes. Either witness choice forbids all four vertices
+of one owner cycle in each interval and none of the other cycle. Exactly
+$2r$ owners can then be selected. Including the $4r$ helpers gives the
+restricted optimum $4r+4r+2r=10r$, attained by choosing two owners in each
+available four-cycle. Subtracting gives the stated loss.
+\end{proof}
+
+This family concerns the restriction on the witness count. It satisfies the
+earlier $8b/3$ bound and has no auxiliary four-cycle component, so
+Theorem~\ref{thm:owner-matching} applies. No unrestricted dissociation optimum
+or new subcubic gap coefficient is asserted. To combine square and longer
+auxiliary components, a construction must allow the witness count to change;
+even a single long auxiliary cycle can require such a change.

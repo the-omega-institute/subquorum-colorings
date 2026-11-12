@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T18:01:17.191376+00:00",
+  "verdict": "ACCEPT",
+  "proved": [
+    "For every r>=1 a two-connected bipartite partial template on20rvertices, b4rhelpers, min2/max3, has exact beta_I=11r+floor(r/2).",
+    "Forcing b witnesses gives exact10r, an additive loss r+floor(r/2), below the8b/3 target."
+  ],
+  "scope": "This refutes maximum-witness retention as a universal construction. The family satisfies the preceding Brooks theorem; no new general positive8b/3 class is claimed.",
+  "initial_exact_source_audit": {
+    "oracle": {
+      "task_id": "8e509ef4-6ec0-4466-ba31-ac7f13910235",
+      "conversation_id": "conv_57e923d3d2d2c9aa",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5fa81-e704-83ec-9b03-304a4fb4b4a3",
+      "usage_estimated": true
+    },
+    "response_full": "ACCEPT. The written proof establishes, for every  $r\\ge1$ , that\n$$\\beta_I(H_r)=11r+\\lfloor r/2\\rfloor,\\qquad\n\\max_{\\substack{D\\text{ dissociation}\\\\ I\\subseteq D,\\ |D\\cap X|=4r}}|D|=10r.$$\nThe milestone identifies a precise obstruction. Requiring the maximum witness count falls below  $\\lceil8b/3\\rceil=\\lceil32r/3\\rceil$  for every  $r$ , although the existing Brooks criterion already proves that bound for  $H_r$ . The additive loss  $r+\\lfloor r/2\\rfloor$  grows without bound. The ratio of the two optima is at most  $23/20$ .All- $r$  proofThe physical helper–witness subgraph is the cycle  $C_{8r}$  with every  $P$ -edge subdivided once. It is connected, and each owner attaches to its own witness. The  $4r$  helpers have degree two. The  $8r$  witnesses and  $8r$  owners have degree three. The proposed witness colour  $\\lfloor v/2\\rfloor\\bmod 2$  agrees across each  $P$ -pair and changes across every  $Q$ -edge and owner-cycle edge, including the wraparounds. Reversing the colour on each owner and on the helper of each pair gives the physical bipartition.With all helpers selected, each selected witness already has one selected neighbour. Thus its  $P$ -mate,  $Q$ -mate and corresponding owner are forbidden. These are all the witness constraints. For an independent witness set  $T$ , an owner square with  $k$  forbidden indices contributes exactly  $\\min(2,4-k)$  owners. Every two available vertices are feasible, and every three contain a vertex of induced degree two. Summing over the disjoint owner squares verifies the exact fixed- $T$  objective\n$$8r+\\sum_i\\bigl(\\min(k_i^{\\rm even},2)+\\min(k_i^{\\rm odd},2)\\bigr).$$\nAn open eight-vertex chunk scores four only with two witnesses of each parity. Omitting either endpoint leaves a seven-vertex path whose unique independent four-set has a single parity. Hence a score-four chunk uses both endpoints. For  $r=1$ , the edge  $\\{7,0\\}$  forbids that score. For  $r=2$ , the two joins are  $\\{7,8\\}$  and  $\\{15,0\\}$ , so at most one chunk scores four. In general at most  $\\lfloor r/2\\rfloor$  chunks score four, and the rest score at most three.The stated equality sets attain every term of this upper bound. On the chosen nonadjacent chunks the witness and owner offsets are respectively  $\\{0,2,5,7\\}$  and  $\\{1,3,4,6\\}$ . On the other chunks they are  $\\{1,3,6\\}$  and  $\\{0,2,5,7\\}$ . The second witness pattern uses neither endpoint, and each pattern leaves exactly two selected owners per square. Finally,  $4r$  independent witnesses on  $C_{8r}$  force strict alternation. Either phase leaves one whole owner square per chunk available, giving exactly  $2r$  owners and  $10r$  selected vertices in total.Exact-source executionI decoded all 38 files, totalling 516,561 bytes. Every declared byte count and SHA-256 matched, and all 38 extracted files still matched after execution. I ran both requested commands unmodified with PYTHONOPTIMIZE unset and assertions enabled.Fresh reportExitstdoutstderrReport sizeComparisonWITNESS-FRESH.json01,503 bytes0 bytes1,811 bytesByte-identicalFOREST-FRESH.json0970 bytes0 bytes14,043 bytesByte-identicalThe witness report SHA-256 is 142cd31ee7e6a3100fb46bc7f0677c48d4c78afee7b3530972fbf6c57e5334a9. The forest report SHA-256 is 00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c.The new checker examines all 256 local witness masks, all 55 independent masks, all 256 forbidden/selected owner-square pairs, and all 65,792 auxiliary masks for  $r=1,2$ . Its DP fixes the first boundary bit, tries every independent local mask, retains the best prefix for each last boundary bit, and checks the closing edge. Those bits contain every cross-chunk constraint. No mask is discarded for failing to fit an equality pattern. The run produced 67 family-specific exact optima, 67 physical certificates through 5,120 vertices, 134 maximum-phase controls, and two original exponential-optimizer comparisons.Independent physical reconstructionI rebuilt  $H_1,H_2,H_3$  from the raw edge rules without importing project code or reading stored certificates. I used one Boolean variable per physical vertex and forbade each triple consisting of a selected vertex and two selected neighbours. In all six optimizations the solver found a set of the indicated size and returned unsatisfiable at one vertex larger. I also checked the manuscript’s explicit selections directly against the rebuilt adjacency lists. $r$ Physical verticesAll helpersAll helpers and exactly  $b$  witnessesLoss120111012402320336034304Exposition and scopeOne sentence merits a copyedit. At line 53 of maximum-witness-loss-proof.tex, “Inside  $K_i$ , the auxiliary edges form a path” should say “Before adding the cyclic joins, each  $K_i$  is a path of order eight.” For  $r=1$  the induced graph is  $C_8$ . The proof already applies its closing edge correctly. The main manuscript’s verification paragraph also stops at the forest checker, and the project note names a final review JSON absent from this snapshot.The prior all-auxiliary-square theorem and its arbitrary-owner scope are present, and its checker reproduced the embedded report. Historical byte identity with an earlier revision cannot be established from this single snapshot. The  $5/51$  bound retains its actual-extraction hypothesis, with a maximum-cardinality minimal forming set required for the  $\\mathrm{SF}_2-\\beta_2$  conclusion. General mixed auxiliary templates, the sharp unrestricted subcubic coefficient, and arbitrary-width grid equality remain open in the manuscript. No unrestricted  $\\beta_2(H_r)$  or  $\\mathrm{SF}_2(H_r)$  value follows from this milestone.The optional TeX run stopped before reading the manuscript because pdflatex.fmt was unavailable. I did not independently render the PDF, run Lean, or compare the external October submission.The archive contains the captured streams, both fresh reports, the 38-file digest manifest, and the independent physical checker with its selected witness and owner indices.    connected-maximum-witness-audit.zip\n",
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 84044,
+        "sha256": "2ea3c7f14960462899384381b33b85966a388a06c2e2389b13ff397d86dbaaed"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/auxiliary_square_forest.py",
+        "bytes": 8305,
+        "sha256": "b90c7a0031479eae425464fca24a4f9d592cb2a1163ddbfba30688c2476d5b80"
+      },
+      {
+        "path": "develop/auxiliary_square_parity.py",
+        "bytes": 3587,
+        "sha256": "985f1181d61feb02100aa1eb554b88d7174b6d797782d8bbf39d72acb569f064"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-forest.json",
+        "bytes": 3776,
+        "sha256": "6ab84b7fdd7dba36ec031f8ec1d12d422cf477b330720f0bdcd5e25c7ccc75e8"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-parity.json",
+        "bytes": 4694,
+        "sha256": "4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638f"
+      },
+      {
+        "path": "develop/fixtures/maximum-witness-loss.json",
+        "bytes": 2817,
+        "sha256": "4542f0b1eec029a7ee5c21354c8475e5c1902710758bc5f07dd2c307950fd720"
+      },
+      {
+        "path": "develop/fixtures/sharp-all-helper-thirty.json",
+        "bytes": 694,
+        "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+      },
+      {
+        "path": "develop/maximum_witness_loss.py",
+        "bytes": 1028,
+        "sha256": "2d93aa75a2e5f737da9fb07c074df785f7dcc33c2bee106eb93e48f9f4b8d19f"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "develop/sharp_all_helper.py",
+        "bytes": 2187,
+        "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/ALL_OWNER_AUXILIARY_SQUARES.md",
+        "bytes": 5833,
+        "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+      },
+      {
+        "path": "docs/AUXILIARY_SQUARE_PARITY_CRITERION.md",
+        "bytes": 5097,
+        "sha256": "d85c038e7b6502240399d230e87f3e6eadcdfd9e8bdabe04366b2453ff327cbb"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 92301,
+        "sha256": "c9fae2172dff083eaf93400e660c5c6cfae1177738a68c5e680452c9e7587778"
+      },
+      {
+        "path": "docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md",
+        "bytes": 4540,
+        "sha256": "722fbc265ce2e5bd7a68c70a28636589b311a0c1b77889d6e4cb39c5f70fa912"
+      },
+      {
+        "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      {
+        "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+        "bytes": 5061,
+        "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/auxiliary-square-forest-proof.tex",
+        "bytes": 8465,
+        "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+      },
+      {
+        "path": "manuscript/auxiliary-square-proof.tex",
+        "bytes": 6405,
+        "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+      },
+      {
+        "path": "manuscript/maximum-witness-loss-proof.tex",
+        "bytes": 4656,
+        "sha256": "f30fc35d51f3de46a4b101d9a1ed5c4bd1a511e3e201f7072ddf6cea9eeba0e4"
+      },
+      {
+        "path": "manuscript/owner-matching-proof.tex",
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      {
+        "path": "manuscript/sharp-all-helper-proof.tex",
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 115435,
+        "sha256": "1f4268dcb7f38ae0d53fbd28655f3664d8fbd1ce009dabed315ff6847dcb3f92"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/auxiliary-square-forest-check.json",
+        "bytes": 14043,
+        "sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c"
+      },
+      {
+        "path": "output/auxiliary-square-parity-check.json",
+        "bytes": 3760,
+        "sha256": "9a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25"
+      },
+      {
+        "path": "output/maximum-witness-loss-check.json",
+        "bytes": 1811,
+        "sha256": "142cd31ee7e6a3100fb46bc7f0677c48d4c78afee7b3530972fbf6c57e5334a9"
+      },
+      {
+        "path": "output/sharp-all-helper-check.json",
+        "bytes": 1068,
+        "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_forest.py",
+        "bytes": 9106,
+        "sha256": "3f7daec55d96b4c42c4ea4b64bd3dd45fdda5425da221b329a38de0fa81a829f"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_parity.py",
+        "bytes": 4733,
+        "sha256": "60f16a744c41482c8c2524ca8b59d44a0d71a1e63391d6be077e8e468c6c9ac1"
+      },
+      {
+        "path": "scripts/check_maximum_witness_loss.py",
+        "bytes": 6015,
+        "sha256": "08854bce5ef0be103eb98c7134cd1044fbe86d012041f0509d554a60071d8c8f"
+      },
+      {
+        "path": "scripts/check_sharp_all_helper.py",
+        "bytes": 10877,
+        "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+      }
+    ]
+  },
+  "final_two_connectivity_source_audit": {
+    "oracle": {
+      "task_id": "a59eded5-24ec-4360-b925-71101e4a5bf3",
+      "conversation_id": "conv_df900b7258541b9b",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5fd74-323c-83ec-9da1-06c4246ef866",
+      "usage_estimated": true
+    },
+    "response_full": "FINAL exact-source audit38/38 source hashes verified Both original checkers exit 0The computational and source-integrity checks passed. The mathematical theorem still requires one important distinction: the upper bound for the unrestricted dissociation optimum must account for sets that omit helpers. I am checking that point against the actual template definitions before assigning the final verdict.1. Exact source reconstructionDecoded all 38 Base64 entries from the uploaded manifest.All 38 decoded byte counts match.All 38 SHA-256 hashes match.No manifest discrepancy.Both checker source files and the theorem manuscript were reconstructed from the supplied bytes, not inferred from the earlier audit.2. Actual checker executionExecuted the two requested commands, unchanged, with assertions enabled and PYTHONOPTIMIZE unset.CheckerExitRuntimeReport comparisoncheck_maximum_witness_loss.py05.583 sExact byte matchcheck_auxiliary_square_forest.py011.016 sExact byte matchThe witness report SHA-256 is exactly:9ea344253b8301d36d56da9a0cb15b5e88915f5fbaab489ea6453391886cae30The forest report also matches its embedded report byte-for-byte.Execution qualification: both commands emitted a Python-startup spreadsheet-runtime warning and traceback on stderr. Neither checker failed; both exited 0, and their stdout reports were produced successfully. I do not characterize stderr as empty.3. Independent mathematical auditACCEPTI find the all- $r$  argument sound.A. Physical constructionThe construction gives: $8r$  witnesses,  $4r$  helpers and  $8r$  owners. $20r$  vertices. $P\\cup Q=C_{8r}$ .Two owner  $C_4$ 's in each eight-vertex interval.A valid bipartition from the specified witness colours, reversed on helpers and owners.Minimum degree two and maximum degree three.The two-connectivity argument is valid. Deleting a backbone vertex leaves a connected path, with at least three surviving attachments per owner cycle. Deleting an owner leaves its owner cycle as a path attached to the intact backbone. Thus every single-vertex deletion preserves connectivity.B. Exact unrestricted-within-all-helpers optimumThe important notation is inherited from the manuscript:  $\\beta_I$  means the maximum dissociation size subject to retaining every helper. It does not mean unrestricted dissociation number.For fixed witness set  $T$ , the exact objective is\n$$4r+\\sum_{i,p}\\left(k_i^p+\\min(2,4-k_i^p)\\right)\n=8r+\\sum_i g_i.$$\nThe upper bound follows from:Each interval contributes at most four.Contribution four forces both boundary witnesses.Adjacent intervals cannot both contribute four.Cyclic closure rules out contribution four entirely when  $r=1$ .Otherwise at most  $\\lfloor r/2\\rfloor$  intervals contribute four.Therefore\n$$\\beta_I(H_r)\\le 11r+\\lfloor r/2\\rfloor.$$\nThe alternating active/inactive interval construction attains equality. Its witness choices are independent across interval boundaries, and its owner choices give exactly two nonadjacent owners per owner square.I find no missing case in the  $r=1$ ,  $r=2$ , or general cyclic argument.C. Maximum-witness restrictionAn independent set of size  $4r$  in  $C_{8r}$  must be one of its two alternating bipartition classes.Each phase forbids one owner square per interval and leaves the other available. Thus\n$$4r+4r+2r=10r.$$\nSubtracting gives exactly\n$$\\boxed{\\beta_I(H_r)-10r=r+\\lfloor r/2\\rfloor.}$$\nThis is a genuine unbounded loss in the maximum-witness restriction, not a counterexample to the underlying  $8b/3$  target.4. Independent raw reconstructionI independently reconstructed the physical graphs for  $r=1,2,3$ , without importing the supplied graph or certificate builders. $r$ VerticesEdgesConstructed dissociation sizeSingle-vertex deletions1202811All connected2405623All connected3608434All connectedAll three passed independent bipartition, degree, connectivity, deletion-connectivity and explicit dissociation-set checks.The larger exact-optimum coverage comes from the supplied checker, not from claiming an independent exponential enumeration at every size.5. Checker scope and reproducibilityThe fresh witness report records:CheckCountFull-vector exact optima67Local independent subsets55Literal local subsets256Literal auxiliary subsets65,792Original all-helper exponential controls2Maximum-witness phase controls134Physical certificates67Independent articulation checks67Single-vertex deletion controls720Vector transitions548,460The 67 exact DP sizes are  $1,\\ldots,64,96,128,256$ , reaching 5,120 physical vertices.The exponential original all-helper optimizer is used only for  $r=1,2$ . The larger checks establish the explicitly constructed certificates and exact family optima through the local cyclic DP. They do not establish a generic large-graph optimization theorem.The forest checker independently reproduces its 14,043-byte report, including 2,644 physical certificates and its literal rank/subset controls.6. Manuscript and presentationTeX compilation successfulCompiled from the reconstructed repository root:latexmk -pdf -interaction=nonstopmode -halt-on-error manuscript/starforming-gap.texExit 0.46-page PDF, 520,130 bytes.Rendered and visually inspected page 32, containing the complete new theorem and proof.The theorem, equations, boundary cases and conclusion render correctly. There are minor existing-style TeX warnings, including a hyperref mathematical bookmark warning and an underfull bibliography line; neither prevents compilation.All 38 manifested source files were rechecked after execution and compilation. All remain byte-identical to their supplied hashes.7. Scope and qualificationsThe manuscript correctly avoids claiming that this family settles:General mixed auxiliary  $8b/3$ .The unrestricted subcubic coefficient, still bounded within  $[1/20,7/71]$ .General grid compensation.Universal unit  $5/6$  improvement.Arbitrary-width rectangular triple equality.The theorem does not establish unrestricted  $\\beta_2$  or SF optimum claims. No Lean acceptance or formalization claim follows from these checks.The reference to the review JSON created after this audit is an intentional forward reference, not a missing theorem dependency. The October submitted manuscript is unchanged. No external October paper was included or independently checked; the SHA verification here concerns the supplied local source snapshot.Final verdictACCEPTThe all- $r$  maximum-witness-loss theorem is mathematically sound, its physical two-connectivity argument is valid, the exact loss calculation is correct, and both original checkers have been executed successfully with exact embedded-report reproduction.The stderr startup warning is disclosed rather than silently treated as empty.No mathematical correction or source change is required for this theorem.\n",
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 84048,
+        "sha256": "3cd4ef8aeecb290c9650833055882bd074a4113bc0ca4298b07f24ba7c42feea"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/auxiliary_square_forest.py",
+        "bytes": 8305,
+        "sha256": "b90c7a0031479eae425464fca24a4f9d592cb2a1163ddbfba30688c2476d5b80"
+      },
+      {
+        "path": "develop/auxiliary_square_parity.py",
+        "bytes": 3587,
+        "sha256": "985f1181d61feb02100aa1eb554b88d7174b6d797782d8bbf39d72acb569f064"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-forest.json",
+        "bytes": 3776,
+        "sha256": "6ab84b7fdd7dba36ec031f8ec1d12d422cf477b330720f0bdcd5e25c7ccc75e8"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-parity.json",
+        "bytes": 4694,
+        "sha256": "4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638f"
+      },
+      {
+        "path": "develop/fixtures/maximum-witness-loss.json",
+        "bytes": 2817,
+        "sha256": "4542f0b1eec029a7ee5c21354c8475e5c1902710758bc5f07dd2c307950fd720"
+      },
+      {
+        "path": "develop/fixtures/sharp-all-helper-thirty.json",
+        "bytes": 694,
+        "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+      },
+      {
+        "path": "develop/maximum_witness_loss.py",
+        "bytes": 1032,
+        "sha256": "ecaac46a6006fc2cb8388777768736b4d4a0bbdf06353efe0c38a1d7fe4e14f1"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "develop/sharp_all_helper.py",
+        "bytes": 2187,
+        "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/ALL_OWNER_AUXILIARY_SQUARES.md",
+        "bytes": 5833,
+        "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+      },
+      {
+        "path": "docs/AUXILIARY_SQUARE_PARITY_CRITERION.md",
+        "bytes": 5097,
+        "sha256": "d85c038e7b6502240399d230e87f3e6eadcdfd9e8bdabe04366b2453ff327cbb"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 92305,
+        "sha256": "117ca8e6f25ab65bbfd6162e90fedc5724ed5318ca1e81b3e279ebbf3a4098a6"
+      },
+      {
+        "path": "docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md",
+        "bytes": 4869,
+        "sha256": "257319af7b962deb03ce40b8a7714f8b6485180fe03910c16974a66be198e911"
+      },
+      {
+        "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      {
+        "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+        "bytes": 5061,
+        "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/auxiliary-square-forest-proof.tex",
+        "bytes": 8465,
+        "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+      },
+      {
+        "path": "manuscript/auxiliary-square-proof.tex",
+        "bytes": 6405,
+        "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+      },
+      {
+        "path": "manuscript/maximum-witness-loss-proof.tex",
+        "bytes": 4995,
+        "sha256": "c513d727465d4745883f45d933637bcbeb5c4efc0e033d7463b45f7a92a0b065"
+      },
+      {
+        "path": "manuscript/owner-matching-proof.tex",
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      {
+        "path": "manuscript/sharp-all-helper-proof.tex",
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 115753,
+        "sha256": "66967113c5f43bea0f60d650c3be943d84328999dde70434f80d279fc0911393"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/auxiliary-square-forest-check.json",
+        "bytes": 14043,
+        "sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c"
+      },
+      {
+        "path": "output/auxiliary-square-parity-check.json",
+        "bytes": 3760,
+        "sha256": "9a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25"
+      },
+      {
+        "path": "output/maximum-witness-loss-check.json",
+        "bytes": 1896,
+        "sha256": "9ea344253b8301d36d56da9a0cb15b5e88915f5fbaab489ea6453391886cae30"
+      },
+      {
+        "path": "output/sharp-all-helper-check.json",
+        "bytes": 1068,
+        "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_forest.py",
+        "bytes": 9106,
+        "sha256": "3f7daec55d96b4c42c4ea4b64bd3dd45fdda5425da221b329a38de0fa81a829f"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_parity.py",
+        "bytes": 4733,
+        "sha256": "60f16a744c41482c8c2524ca8b59d44a0d71a1e63391d6be077e8e468c6c9ac1"
+      },
+      {
+        "path": "scripts/check_maximum_witness_loss.py",
+        "bytes": 7236,
+        "sha256": "425f098af63fc5bb0b355eaa9b21f2be61e16f7a11cfa2c6145c65757f68e21d"
+      },
+      {
+        "path": "scripts/check_sharp_all_helper.py",
+        "bytes": 10877,
+        "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+      }
+    ],
+    "reconstruction": "Fresh attachment contains all38final exact files, reconstructed and independently audited after a terminal prompt_too_long rejection of the first follow-up."
+  },
+  "terminal_rejected_followup": {
+    "task_id": "c87eb48e-e899-488e-a4b8-ba1ffa6cbac6",
+    "failure_detail": "prompt_too_long@claimed"
+  },
+  "final_review_qualifications": {
+    "verdict": "ACCEPT",
+    "all38source_bytes_verified": true,
+    "both_original_checkers_executed": true,
+    "both_reports_byte_identical": true,
+    "two_connectivity_mathematical_proof_accepted": true,
+    "reviewer_compilation": "latexmk exit0,46pages; reviewer reports rendering/inspecting page32",
+    "execution_qualification": "Both reviewer checker runs emitted unrelated spreadsheet-runtime startup warnings/traceback on stderr but exited0. Local runs had empty stderr.",
+    "reviewer_aside_correction": "The response calls each selected owner pair nonadjacent. The explicit pairs may be adjacent; every two vertices of C4 induce maximum degree<=1, exactly as the source proof states. The all-r proof and feasibility need only this correct fact.",
+    "scope_clarification": "beta_I retains every helper. Reviewer initial sentence about unrestricted optimum is resolved explicitly in its sections3B/7; no unrestricted beta_2 or SF optimum is claimed.",
+    "October_manuscript": "Locally verified external SHA, not a separate external-byte comparison by the reviewer."
+  },
+  "local_initial_execution": [
+    {
+      "command": "python3 -B scripts/check_maximum_witness_loss.py --output FRESH.json",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 1.247648874999868,
+      "report_sha256": "142cd31ee7e6a3100fb46bc7f0677c48d4c78afee7b3530972fbf6c57e5334a9",
+      "report_byte_identical": true
+    },
+    {
+      "command": "python3 -B scripts/check_auxiliary_square_forest.py --output FRESH.json",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 7.038212874999772,
+      "report_sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c",
+      "report_byte_identical": true
+    }
+  ],
+  "local_final_execution": {
+    "command": "python3 -B scripts/check_maximum_witness_loss.py --output FRESH.json",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 1.3098709579999195,
+    "report_sha256": "9ea344253b8301d36d56da9a0cb15b5e88915f5fbaab489ea6453391886cae30",
+    "report_byte_identical": true,
+    "new_scope": "67independent articulation checks and720literal vertex deletions"
+  },
+  "working_manuscript_pdf": {
+    "pages": 46,
+    "all_pages_rendered": true,
+    "pdf_sha256": "95d4a68e5a2878a5551c79b1bef9831fef74ffb4da874055ba8415a291836575",
+    "visual_inspection": "passed: final46pages via allsixcontact sheets; finalnewproofpages31-33individually inspected",
+    "compilation_overfull": false,
+    "compilation_undefined_references": false,
+    "two_compiles_succeeded": true,
+    "new_proof_pages": [
+      31,
+      32,
+      33
+    ]
+  },
+  "not_claimed": [
+    "Unrestricted beta_2 or SF_2 optimum of the new family.",
+    "Unbounded multiplicative loss.",
+    "New Lean formalization or external literature priority.",
+    "Universal all-helper8b/3 or a new unrestricted subcubic gap coefficient."
+  ],
+  "remaining_open": [
+    "General mixed auxiliary8b/3.",
+    "Sharp unrestricted subcubic coefficient, current interval[1/20,7/71].",
+    "General physical multiple-Hall routing, universal unit5/6 improvement and arbitrary-width rectangular triple equality."
+  ],
+  "October_manuscript_unchanged": "Locally verified SHA256; external source audits do not themselves compare the separately submitted paper."
+}

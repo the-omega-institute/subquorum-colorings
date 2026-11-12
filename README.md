@@ -1,5 +1,11 @@
 # Current continuation
 
+New connected obstruction: [the exact cost of retaining the maximum witness count](docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md).
+For every r>=1, a20r-vertex two-connected bipartite min2/max3 template has
+beta_I=11r+floor(r/2), while retaining b=4r witnesses gives exactly10r.
+Thus the square construction cannot be extended by keeping that restriction.
+This does not refute8b/3; the family satisfies the existing Brooks criterion.
+
 New all-owner theorem: [auxiliary squares for arbitrary owner paths/even cycles](docs/ALL_OWNER_AUXILIARY_SQUARES.md).
 A rainbow-forest rank argument removes the owner-size hypothesis entirely:
 if every auxiliary component is a C4, beta_I>=ceil(8b/3) for all allowed owner

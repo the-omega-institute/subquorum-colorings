@@ -10,7 +10,7 @@
 \newcommand{\NS}{N_S}
 \title{A sharp gap bound for two-star-forming sets in bipartite graphs}
 \author{}
-\date{Working manuscript, 12 November 2026}
+\date{Working manuscript, 13 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -45,6 +45,8 @@ optimum seventeen, showing that any universal all-helper coefficient is at
 most $8/3$. The odd-owner-path surplus also refines the conditional gap bound.
 A rainbow forest of independent owner-cycle exchanges proves $8b/3$ whenever
 the auxiliary graph is a union of squares, for arbitrary owner paths and even cycles.
+Two-connected subcubic templates on $20r$ vertices have all-helper optimum
+$11r+\lfloor r/2\rfloor$, while forcing the maximum witness count gives only $10r$.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1761,6 +1763,8 @@ $6k$-cycles. It does not combine arbitrary longer paths with square cores.
 
 \input{manuscript/auxiliary-square-forest-proof.tex}
 
+\input{manuscript/maximum-witness-loss-proof.tex}
+
 \subsection{A robust subcubic block and a lower coefficient $1/20$}
 
 The unrestricted upper bound has a constructive lower counterpart. Define
@@ -2329,6 +2333,11 @@ parity corrections and templates outside its sufficient criterion.
 The \texttt{check\_auxiliary\_square\_forest.py} supplement checks
 Theorem~\ref{thm:all-owner-auxiliary-squares}, including independent coloured
 forest optima, graphic rank upper certificates and physical selections.
+The \texttt{check\_maximum\_witness\_loss.py} supplement checks
+Theorem~\ref{thm:maximum-witness-loss} using all local independent subsets
+in a cyclic dynamic program, the original exact all-helper optimizer on two
+small instances, and physical selections with independent articulation and
+vertex-deletion checks.
 The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 

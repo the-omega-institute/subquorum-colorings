@@ -1,5 +1,16 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Connected maximum-witness retention obstruction
+
+The [all-r family](CONNECTED_MAXIMUM_WITNESS_LOSS.md) has20rphysical vertices,
+minimum degree2 and maximum degree3, is two-connected and bipartite, and satisfies
+beta_I=11r+floor(r/2). Requiring the maximum possible b=4r witnesses reduces
+the optimum to10r, belowceil(8b/3). The proof uses the complete local owner
+objective and the cyclic adjacency of eight-index intervals. This identifies
+a failed extension rule, while leaving general8b/3 and the existing bounds
+unchanged. No unrestricted optimum or new sharp gap coefficient is claimed.
+
+
 ## All-owner auxiliary-square theorem: owner-size condition removed
 
 The [new theorem](ALL_OWNER_AUXILIARY_SQUARES.md) proves beta_I>=ceil(8b/3)
