@@ -1,5 +1,16 @@
 # Current continuation
 
+Inactive separators: [one common activation graph for simultaneous exchanges](docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md).
+The support budget applies to components of A[W], where W contains the
+initial omissions and all chosen owner cycles. Fixed vertices outside W
+can separate many exchanges inside one original auxiliary component;
+supports and parities must be computed on that same W. A connected60r
+min2/max3 family with mixed C10/C4 owners has one long auxiliary C16r:
+for the prescribed initial set, the new cost bound is3r while the whole
+support bound is5r-1. Its exact all-helper value is36r by an explicit
+zero-cost omission set. This is a sufficient class beyond the listed
+global tests, not universal8b/3 or a new unrestricted gap coefficient.
+
 Simultaneous exchanges: [a parity budget for disjoint auxiliary supports](docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md).
 For any permitted omission set U*, let m=|U*| and let o count auxiliary
 components with odd omission counts. A packing of t exceptional owner cycles,

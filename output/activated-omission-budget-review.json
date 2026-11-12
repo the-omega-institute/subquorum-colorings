@@ -1,0 +1,213 @@
+{
+  "at": "2026-11-12T19:14:39.931371+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "1328f0b6-82c5-4a0d-8169-4fcbb21f4c1c",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af60cc9-2f08-83ec-a90f-cc972b8e10a9",
+    "usage_estimated": true
+  },
+  "audited_source_files": 15,
+  "final_manifest_files": 15,
+  "actually_executed_original_checker": true,
+  "report_byte_identical": true,
+  "report_sha256": "52478d62c70914fc988801089948d945088a61c272de1173593e84529c47f497",
+  "editorial_correction": {
+    "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+    "old": "and then the next block's 10.",
+    "new": "and then block $i-1$'s 10, with block indices modulo $r$.",
+    "reviewer_explicitly_requested_and_approved": true,
+    "only_one_source_file_changed": true,
+    "raw_coordinate_closing_edge_controls": [
+      1,
+      2,
+      3,
+      4,
+      7
+    ],
+    "checker_and_data_unchanged": true,
+    "no_reexecution_after_editorial_fix": true
+  },
+  "all_streams_completed": true,
+  "scope": "Common activation support budget, arbitrary permitted U, physical60r family and prescribed-U budget comparison, exact beta_I36r, Hr control and overlapping independent activations obstruction; universal8b/3 and general grid claims excluded.",
+  "full_response": "ACCEPTScope: the common activated-support omission theorem, its exact-source implementation, the  $60r$ -vertex physical family, the comparison for the prescribed  $U_*$ , the exact family value  $\\beta_I=36r$ , and the  $H_r$  control. The general proof and the executed implementation support these claims. One minor traversal-direction correction is specified below; every edge, component count, certificate, and numerical conclusion survives that correction.This verdict rests on the reconstructed attachment, the actual executions reported here, and the mathematical arguments checked in this audit.1. Exact reconstruction and original checker executionI reconstructed all 15 files by encoding each supplied JSON text field directly as UTF-8, preserving its bytes and line endings. Their combined size is 305,666 bytes.Every manifest byte count and SHA-256 matched:CheckpointFiles passingAfter reconstruction, before execution15/15Immediately after the original checker15/15After the supplementary audit executions15/15The attachment itself is 315,575 bytes, with SHA-256:Plain textcce864c0d864ad6cad4bb4183e69e9359c838682a7e70b32c118b3aef3799ebdThe reconstructed activation note has SHA-256:Plain text225b83a201b262e9c7d462ca8e3540b35da8700bcc82e9535a808c3e26e58a48The original checker has SHA-256:Plain textf7c87bee63e73de31667abef50f9f5539b04d9504042c89a7fd65cb1c39f1820Actual required executionExecuted, unmodified, from /workspace/scratch/d371e99213cb/audit_source:Bashpython3 -B scripts/check_activated_omission_budget.py --output INDEPENDENT-activation.jsonExecution propertyObserved resultPython3.12.14Exit code0Measured subprocess wall runtime12.019963804 secondsAssertionsEnabledPYTHONOPTIMIZEUnsetCaptured stdout1,195 bytesCaptured stderr0 bytesExact stderr content\"\"Generated report size24,865 bytesDirect byte comparison with supplied reportIdenticalThe original checker also contains an explicit __debug__ guard, which passed.Generated report SHA-256:Plain text52478d62c70914fc988801089948d945088a61c272de1173593e84529c47f497This equals the supplied report’s hash. I also compared the two byte strings directly; equality returned True.The complete evidence includes the original attachment, all reconstructed files, the generated report, captured stdout/stderr, full before-and-after hash ledgers, and the separate raw-coordinate audit programs and results:   activated-support-independent-audit.zip2. General theorem: the fixed-outside lemma is validWrite  $q=|C|$  and  $k=\\lceil q/3\\rceil$  for one selected exceptional owner cycle. Its order is even,  $q\\ge4$ , and  $6\\nmid q$ .The exchange construction supplies, for every consecutive pair  $x,y$  on  $C$ , two minimum omission sets  $X,Y\\subseteq C$  satisfying\n$$|X|=|Y|=k,\\qquad X\\setminus Y=\\{x\\},\\qquad Y\\setminus X=\\{y\\}.$$\nI checked the actual gap patterns used by _exchange:Cycle orderValid construction $q=4$ The direct exchange  $\\{v_0,v_2\\}\\to\\{v_1,v_2\\}$ . $q\\equiv2\\pmod6$ Cyclic gaps  $3,\\ldots,3,2$ . $q\\equiv4\\pmod6,\\ q\\ge10$ Two gaps equal to  $2$ , all remaining gaps equal to  $3$ , placed as in the implementation.Moving the designated omitted vertex to its successor exchanges adjacent gaps  $(2,3)$  with  $(3,2)$ . Every gap remains at most three, so every complementary owner run has length at most two. These are particular valid minimum choices; their use requires only existence.Now fix the outside omission set  $U_0$ , and work in the single graph\n$$H=A[U_0\\cup C].$$\nSuppose every tested omission choice admits a perfect auxiliary matching.For an exchanged pair  $X,Y$ , the symmetric difference of the corresponding perfect matchings has exactly two degree-one vertices,  $x,y$ . Its path joining them has even length: its first edge belongs to one matching and its last edge to the other. Therefore  $x,y$  belong to the same component and the same bipartition side of  $H$ .Applying this to consecutive pairs puts all vertices of  $C$  on one side  $L$  of one connected component  $D$  of  $H$ . Let its other side be  $R$ . In any tested perfect choice, every vertex of  $D\\setminus C$  remains, and exactly  $k$  cycle vertices remain. Matching edges stay within  $D$ , so perfect balance requires\n$$|L|-(q-k)=|R|,\n\\qquad\\text{hence}\\qquad\n|L|-|R|=q-k\\ge2.$$\nA connected bipartite graph of maximum degree two is a path or an even cycle, with side imbalance at most one. This proves the contradiction and the fixed-outside lemma.The argument applies directly to the regional induced graph used in the activation theorem. Its requirements are bipartiteness, maximum degree two, full containment of the selected cycle, and fixed outside omissions.3. Common  $W$ , regional parity, and implementation alignmentThe containment\n$$U_*\\cup C_1\\cup\\cdots\\cup C_t\\subseteq W$$\nis sufficient to contain every possible resulting omission set. In particular, it includes every vertex that an exchange could introduce.For\n$$R_i=\\bigcup_{j\\in\\sigma_W(C_i)}K_j,$$\neach region consists of whole components of  $A[W]$ . Disjoint supports make the regions disjoint and exclude edges between them inside  $A[W]$ . An edge from a region to  $V\\setminus W$  has an endpoint absent from every final  $U$ , so that edge contributes nothing to  $A[U]$ . The matching decomposition therefore remains valid even when the corresponding components of the full graph  $A$  are larger.Every selected  $C_i$  is a whole owner component. Its exchange preserves all owner memberships outside  $C_i$ , so simultaneous exchanges preserve permittedness. Other owner components may cross auxiliary regions while retaining their fixed memberships.Let\n$$M_i=|U_*\\cap R_i|.$$\nEvery touched initial  $m_j$  is even, making  $M_i$  even. The lemma produces a regional omission set of the same cardinality with cost at most  $M_i/2-1$ . Unassigned components retain their initial omission sets and have cost at most  $\\lfloor m_j/2\\rfloor$ . Every initially odd component is unassigned. Consequently,\n$$\\begin{aligned}\n\\nu(A[U])\n&\\le\n\\sum_i\\left(\\frac{M_i}{2}-1\\right)\n+\\sum_{j\\text{ unassigned}}\\left\\lfloor\\frac{m_j}{2}\\right\\rfloor\\\\\n&=\\frac{m-o_W}{2}-t.\n\\end{aligned}$$\nThe regional accounting is correct. Individual component counts within an allocated region may change. Their regional sum is preserved, and the regional saving already includes the effect of any newly odd counts. The proof and implementation retain the initial  $o_W$ , spending that parity allowance once.The constructor follows these requirements:It creates and validates one common  $W$  before computing components, counts, and full supports.It obtains whole owner components from prepare and checks exceptional length and minimum omission count on every selected cycle.It rejects overlapping supports and odd initial counts in touched components.Its regional trials retain every noncycle omission in that region.score constructs the graph induced on its trial set, so passing the full raw edge lists preserves the required regional restriction.Its final checks permit count changes inside used regions and require count preservation on unassigned components.At  $W=V$ , the objects and bound specialize exactly to the earlier whole-support theorem.The bound of  $2\\sum_i|C_i|$  candidate matching tests is valid. The implementation also obtains successful matching metadata and the final physical certificate. For an empty selected family there are zero exchange tests and one final certificate computation.The physical interpretation also checks out. The returned independent witness set  $T$  satisfies\n$$|T|=|U|-\\nu(A[U]).$$\nTogether with all helpers and owners  $V\\setminus U$ , it gives a dissociation set of size\n$$b+(2b-|U|)+|T|=3b-\\nu(A[U]).$$\n4. Independent raw reconstruction of the  $60r$ -vertex familyA separate program reconstructed the family directly from the raw coordinate lists, importing none of the supplied implementation. It reconstructed physical adjacency, components, colours, omission sets, and activation sets; used literal matching deletion/contraction; exhaustively minimized omissions on each owner component; and checked every specified matching phase for  $r=1,2,3$ .Actual supplementary command:Bashpython3 -B /workspace/scratch/d371e99213cb/family_independent/reconstruct.pyIt exited 0. For  $r=1,2$ , its independently derived constructed omission sets agree exactly with the original checker’s outputs.Independently reconstructed quantity $r=1$  $r=2$  $r=3$ Physical vertices60120180Physical edges83166249Degree-two vertices142842Degree-three vertices4692138Auxiliary graph $2C_4+C_{16}$  $4C_4+C_{32}$  $6C_4+C_{48}$ Minimum omission count102030Activated components51015Initial omissions in each activated component222Activated budget and actual constructed cost369Maximum whole-support packing size111Whole-support budget4914Exact  $\\beta_I$ 3672108Specified phase assignments checked248 $K_4$ 's in every assignment123All- $r$  structure and physical graphThe coordinate lists make both  $P$  and  $Q$  perfect matchings. Each block contains the two stated auxiliary squares. Its remaining sixteen indices form the displayed path from  $10_i$  to  $11_i$ . The cross-block edges join those paths into one cycle, traversing block indices in decreasing cyclic order. Thus\n$$A=2rC_4\\sqcup C_{16r},\n\\qquad\nB=rC_{10}\\sqcup3rC_4\\sqcup rP_2.$$\nThere are  $12r$  helpers,  $24r$  witnesses, and  $24r$  owners. Every helper and each of the  $2r$  port owners has degree two. Every witness and each of the  $22r$  cycle owners has degree three. This gives the degree counts and  $83r$  edges above.The stated colours provide a bipartition. The long auxiliary cycle, with its  $P$ -edges subdivided by helpers, provides a connected physical core. Each local owner ten-cycle attaches the two remaining auxiliary squares to this core through the owners indexed by  $4$  and  $9$ . This accounts for every vertex and proves connectedness for every  $r$ .Prescribed  $U_*$ , common activation, and actual costThe prescribed local set is\n$$U_*=\\{0,2,5,7,12,14,16,18,21,22\\}.$$\nIt uses four omissions on  $C_{10}$ , two on each  $C_4$ , and zero on each port  $P_2$ . Every cyclic triple requires an omission, giving the lower bound  $\\lceil q/3\\rceil$ ; the listed choices attain it. Hence  $U_*$  is globally minimum and  $m=10r$ .The original auxiliary counts are two on every square and  $6r$  on the long cycle.Activating the two owner squares on indices  $12,\\ldots,19$  produces, per block,\n$$\\{0,2\\},\\quad\n\\{5,7\\},\\quad\n\\{12,13,14,15\\},\\quad\n\\{16,17,18,19\\},\\quad\n\\{21,22\\},$$\nwith graph types  $P_2,P_2,P_4,P_4,P_2$ . Each contains two initial omissions. The  $2r$  chosen cycles have disjoint singleton supports, so\n$$o_W=0,\\qquad t=2r,\\qquad\n\\frac{m-o_W}{2}-t=3r.$$\nThe deterministic exchanges return the local set\n$$U=\\{0,2,5,7,13,14,18,19,21,22\\}.$$\nIts only auxiliary edges are\n$$(0,2),\\qquad(5,7),\\qquad(21,22).$$\nThe port indices are absent, covering all cross-block edges. Therefore the actual constructed cost is exactly  $3r$  for every  $r$ , and its physical certificate has size\n$$36r-3r=33r>32r=\\frac{8b}{3}.$$\nWhole-support comparison and earlier global testsEvery exceptional owner cycle touches the original long auxiliary component: each ten-cycle through indices  $4,9$ , and each owner square through all its vertices. Every such cycle is eligible for the whole-support rule under this prescribed  $U_*$ . Their support packing therefore has maximum size exactly one, giving\n$$5r-1.$$\nFor  $r\\ge2$ ,\n$$5r-1>4r=\\left\\lfloor\\frac N6\\right\\rfloor.$$\nThe improvement in the prescribed- $U_*$  budget is exactly  $2r-1$ .The listed earlier global criteria fail for every  $r\\ge2$ :CriterionCoordinate-level obstructionAll auxiliary components are squares $A$  contains  $C_{16r}$ .Owner square/path/ $6k$ -cycle class $B$  contains  $r$  ten-cycles.At most one exceptional owner cycle $B$  has  $4r$  exceptional cycles.Owner-size threshold $\\beta_2(B)=14r<16r-2=2\\lceil N/3\\rceil-2$ .Some specified matching has at most one  $K_4$ Every specified matching has exactly  $rK_4$ .For the last assertion, every  $K_4$  in  $A\\cup R$  must use an entire auxiliary square: its vertices require two auxiliary edges and one matching edge each. In each block, phase zero of the owner ten-cycle supplies diagonals\n$$(0,1),(2,3)$$\nfor the first square; phase one supplies\n$$(5,6),(7,8)$$\nfor the second. Exactly one square is completed in either phase. The long auxiliary component supplies no additional square, proving the claim for all  $2^r$  specified assignments and every  $r$ .Exact  $\\beta_I=36r$ The alternative local omission set\n$$U^0=\\{0,1,4,7,14,15,16,17,21,23\\}$$\nis minimum and auxiliary-independent.Its owner complement consists of the three ten-cycle edges\n$$(2,3),\\quad(5,6),\\quad(8,9),$$\none edge on each owner square, and the port  $P_2$  edges. Thus it is permitted. Direct inspection of  $P,Q$ , including the absent port indices, establishes independence.Selecting all helpers, owners outside  $U^0$ , and witnesses indexed by  $U^0$  gives\n$$12r+14r+10r=36r.$$\nFor the upper bound, an included witness already has its included helper neighbour, so its owner is excluded. Each witness-owner index pair contributes at most one vertex. Hence every all-helper dissociation set has size at most\n$$b+N=3b=36r.$$\nTherefore\n$$\\boxed{\\beta_I=36r}$$\nfor every  $r\\ge1$ .This exact value also makes the comparison’s scope concrete: the  $3r$  budget concerns the specified starting set and selected exchanges; the alternative minimum omission set attains cost zero.5.  $H_r$ : exact cost and the overcount obstructionI checked the supplied general proof, including its  $r=1$  closing-edge case and  $r=2$  boundary behavior.For an independent witness set  $T$ , let  $k_i^0,k_i^1$  count the two index parities in block  $i$ . An owner  $C_4$  with  $k$  forbidden vertices has exact dissociation maximum  $\\min(2,4-k)$ . Consequently the exact physical objective is\n$$8r+\\sum_i g_i,\n\\qquad\ng_i=\\min(k_i^0,2)+\\min(k_i^1,2).$$\nEach block induces  $P_8$ , so  $g_i\\le4$ . Equality forces two witnesses of each parity and both boundary offsets  $0,7$ . Adjacent blocks therefore cannot both attain four. At most  $\\lfloor r/2\\rfloor$  blocks attain four; the closing edge handles  $r=1$ . The supplied active/passive selections attain the resulting bound. Hence\n$$\\beta_I(H_r)=11r+\\lfloor r/2\\rfloor,\n\\qquad\n\\boxed{\\min_U\\nu(A[U])=\\lceil r/2\\rceil}.$$\nFor the activation construction,\n$$W_i=\\{0,1,2,3,4,6\\}$$\ninduces  $P_5$  and isolated vertex  $6$ . The deterministic exchange gives\n$$U_i=\\{1,2,3,6\\},$$\nchanging the two component counts from\n$$(4,0)\\longrightarrow(3,1).$$\nThe regional matching cost becomes one, giving actual total cost  $r$ . This directly demonstrates preservation of the regional total alongside changed individual parities. Both new odd counts are already incorporated in that one regional saving.Activating both parity squares in every block gives the common set  $W=V$ . Its activation graph is the single cycle  $C_{8r}$ , so all full supports overlap. Adding  $2r$  independently calculated local credits would predict cost zero, contradicting the proved positive value  $\\lceil r/2\\rceil$ .A supplementary raw enumeration, using no supplied implementation, checked every omission subset for  $H_1,H_2$ : $r$ Subsets enumeratedPermitted subsetsExact minimum costActivation construction cost125612111265,53614,64112That execution exited zero. Its source and observed output are preserved in the evidence archive. The all- $r$  conclusion follows from the general proof above.6. Finite-check scope and the editorial correctionThe original checker produced 1,370 physical certificates, 659 literal matching controls, 463 whole-graph specialization controls, and 681 specified-matching phase controls. It checked the new family for\n$$r=1,\\ldots,24,32,48,64$$\nand the  $H_r$  construction for\n$$r=1,\\ldots,16,24,32,64.$$\nSpecified matching phases are exhaustive through  $r=8$ ; larger tested values use nine sampled assignments each. The 18 unrestricted- $U$  enumerations cover six models at each of  $n=4,8,12$ . Their assertion isPythonbest <= simple['actual_cost']so their precise role is an optimum sanity comparison against a feasible construction. These finite checks audit the implementation; the all-size conclusions are established by the mathematical arguments.The single editorial correction concerns the sentence following the displayed sixteen-index traversal. Given cross edges\n$$10_i\\,11_{i+1},$$\nthe displayed internal path ending at  $11_i$  continues to\n$$10_{i-1},$$\nwith indices modulo  $r$ . Replace “the next block’s 10” with “block  $i-1$ ’s 10, with block indices modulo  $r$ ”. The independently reconstructed  $r=3$  case traverses blocks  $0,2,1$ , confirming this direction.Acceptance covers a sufficient condition for supplied  $U_*,W,\\{C_i\\}$  and a stronger budget for the same prescribed  $U_*$ . Other initial omission sets remain available to earlier methods. Optimal selection of  $W$  or support packings and completeness of local descent remain outside the theorem. Universal physical  $8b/3$ , a new sharp unrestricted SF coefficient, grid  $5/6$ , arbitrary rectangular-grid triple equality, and Lean validation remain outside this verdict.Accept the bounded contribution and correct the traversal sentence to  $11_i\\to10_{i-1}$ .\n",
+  "audited_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 86321,
+      "sha256": "8264a55fb18a7b8f9d6e3df1aa3f89e66dc1dd091b39abd0583ab0fb921e19ee"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 95559,
+      "sha256": "5e522a608dc24983e2407edcd9fb26f0ef85699a4d9ca04c767a2e095fcfd529"
+    },
+    {
+      "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 10212,
+      "sha256": "225b83a201b262e9c7d462ca8e3540b35da8700bcc82e9535a808c3e26e58a48"
+    },
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "scripts/check_activated_omission_budget.py",
+      "bytes": 10880,
+      "sha256": "f7c87bee63e73de31667abef50f9f5539b04d9504042c89a7fd65cb1c39f1820"
+    },
+    {
+      "path": "output/activated-omission-budget-check.json",
+      "bytes": 24865,
+      "sha256": "52478d62c70914fc988801089948d945088a61c272de1173593e84529c47f497"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "develop/component_omission_budget.py",
+      "bytes": 5496,
+      "sha256": "2d86d030c61afc99d6af54a88df263ff3cc7e4193afb13351044b6444c49b619"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/maximum_witness_loss.py",
+      "bytes": 1032,
+      "sha256": "ecaac46a6006fc2cb8388777768736b4d4a0bbdf06353efe0c38a1d7fe4e14f1"
+    },
+    {
+      "path": "docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md",
+      "bytes": 4869,
+      "sha256": "257319af7b962deb03ce40b8a7714f8b6485180fe03910c16974a66be198e911"
+    },
+    {
+      "path": "manuscript/maximum-witness-loss-proof.tex",
+      "bytes": 4995,
+      "sha256": "c513d727465d4745883f45d933637bcbeb5c4efc0e033d7463b45f7a92a0b065"
+    }
+  ],
+  "final_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 86321,
+      "sha256": "8264a55fb18a7b8f9d6e3df1aa3f89e66dc1dd091b39abd0583ab0fb921e19ee"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 95559,
+      "sha256": "5e522a608dc24983e2407edcd9fb26f0ef85699a4d9ca04c767a2e095fcfd529"
+    },
+    {
+      "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 10240,
+      "sha256": "6449feee6e37952dce02915ea69bdb067a338c8fdd20c2227ad771cd96846d35"
+    },
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "scripts/check_activated_omission_budget.py",
+      "bytes": 10880,
+      "sha256": "f7c87bee63e73de31667abef50f9f5539b04d9504042c89a7fd65cb1c39f1820"
+    },
+    {
+      "path": "output/activated-omission-budget-check.json",
+      "bytes": 24865,
+      "sha256": "52478d62c70914fc988801089948d945088a61c272de1173593e84529c47f497"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "develop/component_omission_budget.py",
+      "bytes": 5496,
+      "sha256": "2d86d030c61afc99d6af54a88df263ff3cc7e4193afb13351044b6444c49b619"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/maximum_witness_loss.py",
+      "bytes": 1032,
+      "sha256": "ecaac46a6006fc2cb8388777768736b4d4a0bbdf06353efe0c38a1d7fe4e14f1"
+    },
+    {
+      "path": "docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md",
+      "bytes": 4869,
+      "sha256": "257319af7b962deb03ce40b8a7714f8b6485180fe03910c16974a66be198e911"
+    },
+    {
+      "path": "manuscript/maximum-witness-loss-proof.tex",
+      "bytes": 4995,
+      "sha256": "c513d727465d4745883f45d933637bcbeb5c4efc0e033d7463b45f7a92a0b065"
+    }
+  ],
+  "execution": {
+    "command": "python3 -B scripts/check_activated_omission_budget.py --output INDEPENDENT-activation.json",
+    "exit_code": 0,
+    "runtime_seconds": 12.019963804,
+    "stdout_bytes": 1195,
+    "stderr_bytes": 0,
+    "stderr": "",
+    "report_bytes": 24865,
+    "source_after_run_unchanged": true,
+    "independent_raw_family_scales": [
+      1,
+      2,
+      3
+    ],
+    "independent_Hr_all_U_scales": [
+      1,
+      2
+    ]
+  },
+  "reviewer_evidence_archive_link_not_locally_downloaded": true,
+  "no_Lean": true
+}

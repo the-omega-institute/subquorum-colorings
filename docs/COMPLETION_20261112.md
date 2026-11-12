@@ -1,5 +1,23 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## A common activation graph and inactive separators
+
+The [activation theorem](ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md) strengthens
+the support condition by replacing A by A[W], with one common W containing
+every possible changed omission. Disjoint full supports with even initial
+counts give cost<=(m-o_W)/2-t. Edges to fixed vertices outside W can never
+enter A[U]; every consumed region is charged once. Candidate changes require
+recomputing W, its components, all parities and supports together.
+
+A connected60r-vertex bipartite min2/max3 mixed-owner family has one C16r
+and2r auxiliary squares. From the same U*, activation gives3r versus the
+whole-component budget5r-1, and certifies8b/3 beyond earlier global tests
+for r>=2. An explicit auxiliary-independent omission set proves exact
+beta_I36r, so this budget is not claimed sharp. An older single-cycle
+control gives r versus2r-1 but has true costceil(r/2). Universal8b/3,
+unrestricted sharpness, unit5/6 and arbitrary-width grid equality remain
+open in the full ACTIVE goal.
+
 ## Disjoint supports: simultaneous owner exchanges
 
 The [new general support budget](DISJOINT_AUXILIARY_SUPPORT_BUDGET.md) proves
