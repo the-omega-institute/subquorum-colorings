@@ -86,8 +86,8 @@ simultaneous physicalmultiHall completion,unit5/6 andgrid equality.
 
 The [joint-margin theorem](JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md) proves
 `314(|S|-beta_2(G))<=31n` for every minimal S in every finite simple bipartite
-maximum-degree-three graph, including empty graphs. Hence the current bound
-is `SF_2-beta_2<=floor(31n/314)`. No connectivity, positive minimum degree,
+maximum-degree-three graph, including empty graphs. Its bound was
+`SF_2-beta_2<=floor(31n/314)`. No connectivity, positive minimum degree,
 side-balance or selected-component condition. The improvement over8/81 is
 exactly1/25434; sharpness remains open.
 

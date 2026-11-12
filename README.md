@@ -216,7 +216,7 @@ checkers and is disclosed separately; the earlier denominator clarification
 was explicitly resolved.
 
 The preceding19/192 and31b/12 arguments below remain historical milestones;
-the current unrestricted coefficients are51/517 for the graph gap and13/5 for the standalone-template lower bound, respectively.
+the current unrestricted coefficients are7/71 for the graph gap and13/5 for the standalone-template lower bound, respectively.
 
 The [odd-auxiliary-cycle compensation theorem](docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md)
 proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal
