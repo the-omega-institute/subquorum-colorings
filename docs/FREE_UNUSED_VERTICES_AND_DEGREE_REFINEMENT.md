@@ -1,5 +1,11 @@
 # Free unused vertices and a sharper minimum/maximum-degree bound
 
+The later [sharpness construction](SHARP_MINIMUM_TWO_DEGREE_BOUND.md)
+attains this coefficient for delta=2 and every integer Delta>=6, even
+with two-connectivity. That construction has its own general proof,
+fixed computer-assisted basis certificates and independent review record.
+The upper-bound proof and its original audit below retain their scope.
+
 Let G be a nonempty finite simple bipartite graph of order n, with minimum
 degree at least delta>=2 and maximum degree at most Delta. Let S be an
 inclusion-minimal two-star-forming set whose induced components are stars,
@@ -173,8 +179,9 @@ gives every chosen witness a leaf owner and at most one isolate helper.
 The remaining selected graph gives each centre exactly its two leaves.
 Thus every selected centre has full graph degree two. Since c=2d>0,
 this contradicts minimum degree at least three. This proves the stated
-strict unrounded obstruction for delta>=3. It does not settle sharpness
-at delta=2 or the optimal asymptotic coefficient at other parameters.
+strict unrounded obstruction for delta>=3. This equality calculation alone does not settle sharpness. The separate
+construction linked above settles delta=2,Delta>=6; other parameters
+retain their own open questions.
 
 ## Verification status
 

@@ -1,5 +1,23 @@
 # Current continuation
 
+The [sharp minimum-degree-two theorem](docs/SHARP_MINIMUM_TWO_DEGREE_BOUND.md)
+closes the optimal coefficient for every maximum-degree allowance Delta>=6,
+even with two-connectivity. For each p=Delta-1>=5 and k>=1 the explicit
+bipartite family has n=(12p+2)k, a minimal selected-star/isolate set of
+size8pk, true beta_2=7pk, minimum degree2 and maximum degree p+1. Its
+selected gap pk attains the free-unused upper coefficient
+`(Delta-1)/(12(Delta-1)+2)`. A general exact witness-interface formula
+keeps one total degree capacity at each common unused vertex. Two fixed
+computer-assisted base caps at orders62 and74, plus written shared-vertex
+and cyclic composition proofs, give all degrees and all k. At maximum
+degree6 the coefficient is exactly5/62, closing the earlier interval.
+The local checker passes556 interface graphs,2,819,008 independent one-part
+subsets, all59,049 p5 ternary wing states and29 physical family models.
+Independent final proof/source/execution review is pending. These claims
+concern specified minimal selections inducing stars/edges/isolates; exact
+SF values, minimum degree>=3, maximum degree<=5, regular sharpness and
+general rectangular-grid equality remain separate questions.
+
 The [free-unused-vertex refinement](docs/FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md)
 proves, for every specified selected-star/edge/isolate inclusion-minimal
 forming set in a nonempty bipartite graph with minimum degree at least
@@ -18,9 +36,9 @@ The [two-connected bounded-degree family](docs/TWO_CONNECTED_BOUNDED_DEGREE_SELE
 has n=(12p+2)k, selected size8pk, true beta_2=7pk, minimum degree2 and
 maximum degree2p+2, for every p>=2,k>=1. The proof uses disjoint P3/C4
 partitions and an optimum avoiding all gluing endpoints. At maximum degree6
-it gives selected gap n/13, while the new upper bound is5n/62. Thus the
-best asymptotic coefficient for this specified class lies between1/13
-and5/62; graph sharpness remains open. Local checks passed455 small graph
+it gives selected gap n/13, while the new upper bound is5n/62. This earlier
+family supplies the1/13 lower endpoint; the new sharp theorem above
+attains5/62 and closes that interval. Local checks passed455 small graph
 inputs,24,096 witness allocations and nine separately labelled targets,
 and28 physical family models with7,280 literal deletion failures.
 These results concern specified minimal selections, not an exact SF value

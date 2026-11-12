@@ -1,5 +1,10 @@
 # Two-connected selected gaps with fixed maximum degree
 
+The later [sharpness theorem](SHARP_MINIMUM_TWO_DEGREE_BOUND.md) improves
+the lower family in this note and closes the minimum-degree2 coefficient
+for every maximum degree>=6, including two-connectivity. The present
+construction and its original audit remain valid as stated.
+
 For every integer p>=2 and k>=1 there is a finite simple two-connected
 bipartite graph H_(p,k), with minimum degree 2 and maximum degree 2p+2,
 and a specified inclusion-minimal two-star-forming set S, such that
@@ -146,9 +151,9 @@ minimum degree at least2 and maximum degree at most6. Consequently
 
     1/13 <= best asymptotic coefficient in this class <= 5/62.
 
-The lower family itself is two-connected. No equality of these endpoints,
-higher minimum degree, regular extremality, or unit-grid improvement
-is asserted. For Delta=4 the earlier separate quartic family remains
+The lower family itself is two-connected. The present construction supplies the lower endpoint; the separate
+sharpness theorem now attains the upper endpoint. No higher-minimum-degree,
+regular-extremality or unit-grid claim is made here. For Delta=4 the earlier separate quartic family remains
 relevant; it is not subsumed by this construction.
 
 ## Verification status

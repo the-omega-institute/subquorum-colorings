@@ -1,5 +1,25 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Sharp coefficients at minimum degree two, for all maximum degrees>=6
+
+The [sharp minimum-degree-two theorem](SHARP_MINIMUM_TWO_DEGREE_BOUND.md)
+closes the optimal coefficient for every maximum-degree allowance Delta>=6,
+even with two-connectivity. For each p=Delta-1>=5 and k>=1 the explicit
+bipartite family has n=(12p+2)k, a minimal selected-star/isolate set of
+size8pk, true beta_2=7pk, minimum degree2 and maximum degree p+1. Its
+selected gap pk attains the free-unused upper coefficient
+`(Delta-1)/(12(Delta-1)+2)`. A general exact witness-interface formula
+keeps one total degree capacity at each common unused vertex. Two fixed
+computer-assisted base caps at orders62 and74, plus written shared-vertex
+and cyclic composition proofs, give all degrees and all k. At maximum
+degree6 the coefficient is exactly5/62, closing the earlier interval.
+The local checker passes556 interface graphs,2,819,008 independent one-part
+subsets, all59,049 p5 ternary wing states and29 physical family models.
+Independent final proof/source/execution review is pending. These claims
+concern specified minimal selections inducing stars/edges/isolates; exact
+SF values, minimum degree>=3, maximum degree<=5, regular sharpness and
+general rectangular-grid equality remain separate questions.
+
 ## Free-unused-vertex refinement and bounded-degree lower families
 
 The [free-unused-vertex refinement](FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md)
@@ -20,9 +40,9 @@ The [two-connected bounded-degree family](TWO_CONNECTED_BOUNDED_DEGREE_SELECTED_
 has n=(12p+2)k, selected size8pk, true beta_2=7pk, minimum degree2 and
 maximum degree2p+2, for every p>=2,k>=1. The proof uses disjoint P3/C4
 partitions and an optimum avoiding all gluing endpoints. At maximum degree6
-it gives selected gap n/13, while the new upper bound is5n/62. Thus the
-best asymptotic coefficient for this specified class lies between1/13
-and5/62; graph sharpness remains open. Local checks passed455 small graph
+it gives selected gap n/13, while the new upper bound is5n/62. This earlier
+family supplies the1/13 lower endpoint; the new sharp theorem above
+attains5/62 and closes that interval. Local checks passed455 small graph
 inputs,24,096 witness allocations and nine separately labelled targets,
 and28 physical family models with7,280 literal deletion failures.
 These results concern specified minimal selections, not an exact SF value
@@ -881,7 +901,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
 | Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
-| Sharp selected-star gap with bounded maximum degree or regularity | New free-unused bound proved; at minimum degree2 and maximum degree6 the explicit two-connected lower family gives1/13 and the upper coefficient is5/62. Quartic regular lower1/68 and upper1/34, and cubic upper1/22, retain their separate scopes. Optimal graph coefficients remain open |
+| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. Minimum degree>=3, maximum degree<=5 and regular graph sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
