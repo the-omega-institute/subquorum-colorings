@@ -341,7 +341,15 @@ The all-p witness relations, both orientation cases and the single
 closed-form construction above are its explicitly written generalization.
 The preceding source snapshot used two fixed base certificates and a
 parity/common-vertex composition. That argument remains a valid earlier
-route, with its exact source and ongoing original review preserved.
+route, with its exact source and completed original review preserved.
 The present direct proof removes those computational premises. The
-revised source has its own independent proof/execution review, pending.
+revised source received its own independent proof/execution **ACCEPT**.
+The reviewer reconstructed all nine manifest files exactly, ran the
+unchanged checker with assertions enabled to exit zero and empty stderr,
+and reproduced its complete 331,532-byte report byte-for-byte (SHA-256
+df011f76f077cca0bd0232003ced59b49a5e964e886d8373ec0d5db866d4828b).
+The older fixed-basis review also returned ACCEPT; its scope and earlier
+331,528-byte report remain separate. Both full responses, exact manifests
+and observed model metadata are in
+`../output/sharp-minimum-two-degree-review.json`.
 No Lean, priority, authorship commitment or manuscript submission is implied.
