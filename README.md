@@ -1,5 +1,15 @@
 # Current continuation
 
+The [balanced-omission extension](docs/BALANCED_OMISSION_DEGREE_SHARPNESS.md)
+attains `Delta*n/(12Delta+8delta-14)` for all `t>=2,p>=max(t,5),t|3p`,
+where `delta=t+1,Delta=(4t-3)p/t`, at every cyclic scale. In particular,
+for every `delta>=6` it attains the necessary threshold `Delta=4delta-7`
+with gap `n/14`, even two-connected; it also covers `(delta,Delta)=(4,15)`.
+The true unrestricted dissociation number is `7pk`, and the specified
+minimal P3/isolate selection has size `8pk`. Independent exact-source
+ACCEPT includes unchanged checker execution and complete report reproduction.
+
+
 The [higher-minimum-degree sharpness family](docs/SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) attains the new
 selected-star upper coefficient for EVERY integer delta>=3 along
 `Delta=(4delta-7)r`, r>=3, even with two-connectivity. Put t=delta-1,p=tr.
