@@ -1,5 +1,54 @@
 # Current continuation
 
+The [sharp odd-cycle phase compensation lemma](docs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.md)
+proves the unrestricted bound `|S|-beta_2(G)<=floor(8n/81)` for every
+inclusion-minimal two-star-forming S in every finite simple bipartite graph
+of maximum degree at most three. It requires no connectivity, minimum-degree,
+selected-component or balanced-side condition. The coefficient improves the
+preceding19/192 by1/5184. Its graph sharpness remains open.
+
+For a partial witness template, the new general phase expectation is
+`E[beta_2(F[A])-b/2]>=o/3`. Core-cycle event pairing and disjoint owner-class
+budgets prove it for all auxiliary paths and cycles, including two singleton
+defects. Each remaining mixed-cycle loss is assigned to one physical group;
+no vertex or cycle loss is charged twice. Comparing actual alternative sets
+with weights2/5 and3/5 gives `beta_2(template)>=ceil(13b/5)`. The global
+proof simultaneously retains R outside the template and all chosen triple
+leaves, ending in the exact identity
+
+    8n-81d=Z+8r+19alpha+19pi+3e+8(e-b3)+8q+38tau>=0.
+
+The phase coefficient1/3 IS sharp. In the explicit connected30-vertex fixture,
+core automorphisms act transitively on all8phases and every residual is2P3,
+so the surplus is exactly1=o/3; disjoint unions prove sharpness at every scale.
+An explicit17-set beats every16-vertex phase set. Thus phase sharpness,
+template optimality and graph sharpness are separate questions.
+
+[Additional core-cycle certificates](docs/CORE_CYCLE_GAP_CERTIFICATES.md)
+give `81d<=8n-eta` with the exact correlated square correction eta, hence
+`81d<=8n-max(0,eta)` in combination with the general theorem. If every
+extracted core cycle has length at least6h, then
+`(51h+30)d<=(5h+3)n`; an acyclic core gives `51d<=5n`.
+
+The local original sharp-phase checker passes43,706 minimal selections,
+5,200 exact small templates,30,990 phase assignments,17,748 independent
+residual-optimum checks,17,656 conditional-expectation checks and614 physical
+residue patterns. The separate core-cycle checker covers correlated square
+literals and32 hierarchy levels; its larger controls use certified lower
+bounds rather than exact beta. Finite controls validate implementations;
+the general results have complete written proofs in the notes and the working
+manuscript. Exact independent review and source/execution scopes are recorded
+in `output/sharp-phase-compensation-review.json`. Independent exact19-file
+review returned ACCEPT, including the final manuscript. The reviewer moved
+both expected reports aside and ran both original full checker commands:
+exit0, empty successful stderr, fresh1500/1484-byte reports reproduced
+byte-for-byte. An unavailable initial timing wrapper never launched the
+checkers and is disclosed separately; the earlier denominator clarification
+was explicitly resolved.
+
+The preceding19/192 and31b/12 arguments below remain historical milestones;
+the current unrestricted coefficients are8/81 and13/5, respectively.
+
 The [odd-auxiliary-cycle compensation theorem](docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md)
 proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal
 two-star-forming S in every finite simple bipartite graph of maximum degree

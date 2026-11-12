@@ -1,6 +1,32 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
-## All odd quotient cycles: current unrestricted bound19/192
+## Current unrestricted bound8/81 and sharp phase coefficient1/3
+
+The complete [cycle-event pairing proof](SHARP_ODD_CYCLE_PHASE_COMPENSATION.md)
+proves `81(|S|-beta_2(G))<=8n` for arbitrary minimal two-star-forming S in
+bipartite maximum-degree-three graphs. The new partial-template13b/5 estimate
+permits partial interfaces and unbalanced original sides. The key exact
+phase expectation has sharp coefficient1/3, witnessed at all scales by
+unions of an explicit connected30-vertex template. Actual alternative sets
+are compared; all retained R vertices and chosen triple leaves lift together.
+The previous19/192 and31b/12 milestones below are superseded.
+
+The [core-cycle refinements](CORE_CYCLE_GAP_CERTIFICATES.md) give the
+correlated square correction and a longer-cycle hierarchy approaching5/51;
+none of these graph coefficients is asserted sharp. The manuscript contains
+all new proofs. The separate sharp-phase and core-cycle execution reports
+record their exact finite control scopes; imported older main suites are not
+implicitly rerun. The exact final independent audit, including the corrected
+8eta denominator explanation and manuscript translation, is in
+`output/sharp-phase-compensation-review.json`: ACCEPT, both original full
+checkers actually run, fresh reports byte-identical and all17 non-report
+files unchanged. The first timing-wrapper launch failed before any checker
+started; the successful original runs exited0 with empty stderr. Cubic specified-star positive-gap
+existence, general physical multi-Hall routing, unit5/6 and arbitrary wide-grid
+triple equality remain open. No Lean, mail or submission accompanies this batch.
+
+
+## Earlier odd-cycle milestone: unrestricted bound19/192
 
 The [stronger partial-template proof](ODD_AUXILIARY_CYCLE_COMPENSATION.md)
 proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal
