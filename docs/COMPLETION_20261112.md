@@ -1,5 +1,27 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Primary complexity and tractable boundaries
+
+[Unbudgeted primary fixed-list hardness](docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md)
+uses charged source groups with exact no-increase rounding. Its optimum is
+exactly the source vertex-cover number, with a self-contained connected
+bridgeless normalization retaining two-connected bipartite physical min2/max3,
+minimum square omissions and auxiliary P2/P4 components. There is no operation
+budget or minimum-operation tie-break. This is fixed-list primary-cost
+hardness, not unrestricted graph-parameter hardness.
+
+[Connected-block cycle rank](docs/COMPONENT_BLOCK_RANK_AND_MATCHING_TRACTABILITY.md)
+sharpens the exponent to the maximum rank of any candidate-component block;
+ambient P2/isolated vertices give a polynomial complete frontier even when
+total rank is unbounded. [Zero and small primary cost](docs/SMALL_PRIMARY_COST_AND_ZERO_THRESHOLD.md)
+give an exact 2SAT zero-cost test and an exhaustive-cover XP algorithm in the
+primary-cost threshold. These elementary algorithmic corollaries carry no
+separate novelty claim. All three original checkers pass locally; three independent ACCEPT audits
+executed their respective original checkers and reproduced the complete reports
+byte-for-byte. Exact execution scope and limitations are preserved in the
+separate review receipts.
+
+
 ## Initial matching choice and mixed-side deletion
 
 The [constrained matching criterion](INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.md)

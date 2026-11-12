@@ -1,0 +1,59 @@
+{
+  "counts": {
+    "all_small_matching_graphs": 18,
+    "exact_budget_rows": 2354,
+    "exact_frontiers": 1140,
+    "invalid_input_rejections": 2,
+    "literal_batch_comparisons": 4591,
+    "matching_ambient_models": 857,
+    "one_shot_permutation_controls": 280,
+    "physical_constructor_controls": 3,
+    "unbounded_total_rank_families": 6
+  },
+  "digest": "a2fb88d10fc697268fd8111a7179524dfbcc6e5dc7a337b486a9d511c1195274",
+  "scope": "Exact connected-block factorization of unit maximum-matching cost over a fixed replacement list; largest block rank rather than total rank; polynomial P2/isolated-vertex class. No unrestricted omission, SF/beta or grid complexity claim.",
+  "unbounded_total_rank": [
+    {
+      "branches": 2,
+      "convolution_transitions": 2,
+      "maximum_block_rank": 1,
+      "r": 1,
+      "total_rank": 1
+    },
+    {
+      "branches": 4,
+      "convolution_transitions": 6,
+      "maximum_block_rank": 1,
+      "r": 2,
+      "total_rank": 2
+    },
+    {
+      "branches": 8,
+      "convolution_transitions": 20,
+      "maximum_block_rank": 1,
+      "r": 4,
+      "total_rank": 4
+    },
+    {
+      "branches": 32,
+      "convolution_transitions": 272,
+      "maximum_block_rank": 1,
+      "r": 16,
+      "total_rank": 16
+    },
+    {
+      "branches": 128,
+      "convolution_transitions": 4160,
+      "maximum_block_rank": 1,
+      "r": 64,
+      "total_rank": 64
+    },
+    {
+      "branches": 512,
+      "convolution_transitions": 65792,
+      "maximum_block_rank": 1,
+      "r": 256,
+      "total_rank": 256
+    }
+  ]
+}

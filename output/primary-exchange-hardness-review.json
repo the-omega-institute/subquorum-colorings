@@ -1,0 +1,92 @@
+{
+  "recorded_at": "2026-11-12T23:19:19.756129+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "af82ea80-393d-4455-af19-9f99d765d244",
+    "conversation_id": "conv_7b8c9449958f676a",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af6476e-506c-83ec-8b52-14fe6df2676f",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/component_cycle_frontier.py": {
+      "bytes": 9705,
+      "sha256": "fdec78f21ec15f76349ace9290778e7ff6d7a5b01584d02374bc8184660560f9"
+    },
+    "develop/mixed_isolated_cover_repair.py": {
+      "bytes": 10069,
+      "sha256": "509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7"
+    },
+    "develop/nonisolated_exchange_frontier.py": {
+      "bytes": 9214,
+      "sha256": "3c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abd"
+    },
+    "develop/odd_path_neutral_budget.py": {
+      "bytes": 11221,
+      "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    "develop/primary_exchange_hardness.py": {
+      "bytes": 9272,
+      "sha256": "6d964257d23e52f5774c1d90a6173ec20e5a260eaa5844ffc5ada2618c3d2f54"
+    },
+    "docs/COMPONENT_CYCLE_RANK_FRONTIER.md": {
+      "bytes": 14048,
+      "sha256": "bd4a2372a152a24c8c694afe532b4e303b68df167c70041afc648f82ba8c6fbe"
+    },
+    "docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md": {
+      "bytes": 16208,
+      "sha256": "b6e02c2ef58cf5fe3b5d2285bb1fd7660bc9d98c728834b11149f97660e55259"
+    },
+    "docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md": {
+      "bytes": 16544,
+      "sha256": "06cb6a286ef77eb5cb056f6e80d90d41039d5a9acf3d834a2e06d62b13a10f1e"
+    },
+    "output/primary-exchange-hardness-check.json": {
+      "bytes": 15335,
+      "sha256": "41bf09d4a0afcebab04882e13b7908f91e5d2ab22f0dff3ab7f349e793529bf8"
+    },
+    "scripts/check_primary_exchange_hardness.py": {
+      "bytes": 14762,
+      "sha256": "10695120d6e96af3fd4e765ab1184141827726dd1fd17c2c1974a7db1bfbdec1"
+    }
+  },
+  "all_frozen_files_unchanged_locally": true,
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_primary_exchange_hardness.py --output /tmp/primary-hardness-regenerated-2.json",
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "completed_runs": 2,
+    "wall_seconds": [
+      71.89,
+      71.79
+    ],
+    "exit_codes": [
+      0,
+      0
+    ],
+    "environment": "Python3.13.5; Linux x86_64 kernel6.18.57",
+    "stderr": "Timing-wrapper information only in successful runs: second run real71.79/user71.73/sys0.39; not described as empty.",
+    "stdout": "Reviewer response supplies successful counter JSON but abbreviates it relative to the full checker output. Do not use the response as an exact stdout-byte artifact.",
+    "report_bytes": 15335,
+    "report_sha256": "41bf09d4a0afcebab04882e13b7908f91e5d2ab22f0dff3ab7f349e793529bf8",
+    "full_byte_equality": true,
+    "all11payloads_checked_before_and_after": true
+  },
+  "preliminary_execution_limit": "Initial execution-wrapper interruption at approximately60seconds. No completed output from that attempt; not a failed checker or a passing execution. Reviewer reports overcoming interruptions by detached execution; exact interruption count beyond the initial one is not supplied.",
+  "scope": "Unbudgeted primary UNIT auxiliary matching-cost decision for a fixed distinct-owner candidate list. No operation budget, secondary tie-break or final-isolation condition. Exact all-partial-batch rounding; min cost=tau(H); arbitrary cover lift/projection through connected bridgeless normalization; physical two-connected bipartite min2/max3, minimum square omissions, auxiliaryP2/P4. Candidate rank m+cc(H).",
+  "limitations": [
+    "Attachment source identity, not independent remote Git provenance.",
+    "No Lean/kernel validation or literature-priority audit.",
+    "Does not prove unrestricted omission, SF/beta, weightedTH or rectangular-grid hardness.",
+    "Companion block-rank and small-cost algorithms are outside this11file review and have separate reviews."
+  ],
+  "corrections_required": false,
+  "complete_response": "独立审计：初步执行与源码身份已成功解压冻结快照，并核对 MANIFEST.json 中的全部 11 个 payload 文件。11/11 文件的 SHA-256 与清单一致。主证明文档、直接实现、完整 checker 均已读取。审计对象确实是无操作次数预算的 fixed-list primary matching-cost 问题，不是此前的 operation-budget 或 minimum-operation tie-break 问题。首次执行原始 checker 时，Python 执行环境在约 60 秒处中断了调用。这不是 checker 的失败结果，也不能算作完整执行。我会另用具有足够运行时间的执行环境重试，避免把中断误报为通过。ACCEPT1. Mathematical verdictI find the reduction correct. I found no mathematical counterexample or missing hypothesis in the stated scope.The central result is:\n$$\\boxed{\\min_{S\\subseteq[q]} C(S)=\\tau(H)}$$\nwhere  $C(S)$  is the primary unit matching cost, with no operation-count budget, no minimum-operation tie-break and no final-isolation requirement.The proof handles arbitrary partial batches, not merely whole-group batches or optimal batches.Critical proof checksAudit targetFindingCharging square and first Q joinCorrect: replaces precisely  $r_{\\operatorname{succ}(rep)}$  by  $s_{rep}$ .Second, zero-cost Q joinCorrect: both P-edge endpoints remain separated by absent middle vertices.Two dummy labelsSufficient; representative and successor are distinct dummy labels.P monochromatic, Q bichromaticCorrect, including the incidence and new charging joins.Internal z/w colour balanceCorrect: cyclic binary transitions occur an even number of times.Minimum square omissionsCorrect: exactly two omissions per square, and three retained vertices violate the degree bound.Partial batches and prefixesCorrect: operations belong to distinct owner components.P2/P4 decompositionCorrect; no auxiliary cycles or addition-to-addition edges are introduced.Exact P4 identity (1)Correct in all cases, including two simultaneous P-edge contributions.Single resource accountingCorrect: charging and zero-cost components are separate; no contribution is counted twice. $G_v\\geq1$ Correct for every nonempty touched group.Full-group roundingCorrect:  $C(S^+)=|Z|+|E(H-Z)|\\leq C(S)$ .Source-cover decodingCorrect, including endpoint completion when  $Z$  is not itself a cover.In particular, the boundary argument behind  $G_v\\geq1$  is sound. If the representative is not selected, a nonempty proper cyclic selection has a selected-to-unselected boundary. That boundary cannot be the omitted successor term because the representative bit is zero.This establishes the essential inequality for arbitrary batches, not just an optimization argument based on selecting whole groups.2. Source normalization auditThe connected/bridgeless normalization is also correct.For arbitrary  $F$ , the construction first forms  $F^+$ , with an apex and  $h_0+2$  leaves. The apex is forced in a minimum cover, giving\n$$\\tau(F^+)=\\tau(F)+1.$$\nReplacing each base edge with two internally disjoint length-three paths gives\n$$\\boxed{\\tau(J)=2m_+ + \\tau(F)+1.}$$\nI checked both directions independently at the proof level.Every original cover lifts. Given any cover  $T$  of  $F$ , take  $T$  together with the apex and exactly one internal vertex on each of the two paths replacing every base edge. The resulting cover has exactly\n$$|T|+R,\\qquad R=2m_++1.$$\nEvery normalized cover projects. For an arbitrary cover  $C$  of  $J$ , not necessarily minimum, let  $Z$  be its selected base vertices. Each base edge requires at least two internal vertices across its two paths, with two additional internal vertices if neither endpoint is in  $Z$ . Completing uncovered base edges by one endpoint and handling the missing-apex case gives an original  $F$ -cover of size at most\n$$|C|-R.$$\nThis is important: the reduction does not rely on projecting only optimum covers.The edge subdivision also establishes connectedness and bridgelessness, including the zero-vertex original-source case.3. Physical construction and connectivityI find the physical lift satisfies the advertised restrictions:Two-connected.Bipartite.Minimum degree exactly 2.Maximum degree exactly 3.Minimum-cardinality square-owner omissions.Auxiliary components exclusively P2/P4.All fixed-list operations individually permitted.No edge between two addition endpoints.The connectivity argument is valid.Each old source-group module has a cyclic backbone through its owner squares and helper-subdivided P links. The remaining square paths and z/w helper paths are ears between distinct backbone vertices.For an intergroup Q edge, deleting one physical vertex can destroy at most one such edge because Q is a matching. Since the source is bridgeless, removing any one source edge preserves connectivity.The charging modules also remain attached after one vertex deletion: their two Q joins have distinct endpoints on both sides, so at least one survives.The special  $D=2$  case uses two distinct joining paths. The one-vertex source case is valid independently of any intergroup joins.4. Exact complexity reductionThe reduction threshold is correct:\n$$\\boxed{B_0=t+R,\\qquad R=2m_++1.}$$\nCombining the two constructive maps gives\n$$\\min_S C(S)=\\tau(J)=\\tau(F)+R.$$\nConsequently,\n$$\\exists S:\\ C(S)\\leq t+R\n\\iff\n\\tau(F)\\leq t.$$\nThere is no operation budget hidden in this equivalence.NP membership is also established: a batch and an auxiliary vertex cover of size at most  $B_0$  provide a polynomially verifiable certificate. Bipartiteness and König's theorem give the equivalence with matching cost.The construction has polynomial size. In particular,\n$$D=\\Delta(H)+2,\\quad q=hD,$$\nso the physical order  $10(q+h)$  is polynomial in the normalized source size. The normalization itself is polynomial.5. Cycle-rank compatibilityThe candidate-component multigraph has:\n$$|V_K|=2q-m,\\qquad |E_K|=q,\\qquad\n\\operatorname{cc}(K)=q+\\operatorname{cc}(H).$$\nTherefore\n$$\\boxed{\\operatorname{cr}(K)=m+\\operatorname{cc}(H).}$$\nThis is consistent with the supplied component-cycle-rank algorithm. The hardness family makes that parameter grow; it does not contradict the parameterized algorithm.The proof does not imply hardness for unrestricted omission optimization, unrestricted graph parameters, or all-helper global omission. Those exclusions are correctly maintained.6. Original checker executionTwo complete successful executionsI executed the original checker unchanged, twice:Bashpython3 -B scripts/check_primary_exchange_hardness.py \\\n  --output /tmp/primary-hardness-regenerated-2.jsonExecution environmentPython 3.13.5Linux x86_64, kernel 6.18.57Assertions enabled (__debug__ == True)Original script and recursive project importsNo network or Lean executionMeasured runtimesExecutionReal timeExitFirst71.89 s0Second71.79 s0Second execution's stdout:JSON{\n  \"all_small_source_graphs\": 75,\n  \"arbitrary_batch_certificates\": 63536,\n  \"connected_normalization_models\": 11,\n  \"cycle_rank_identity_models\": 103,\n  \"exhaustive_batch_source_models\": 21,\n  \"individual_permission_controls\": 13118,\n  \"literal_physical_vertex_deletions\": 2460,\n  \"normalized_arbitrary_cover_projections\": 88,\n  \"normalized_batch_to_original_cover_controls\": 88,\n  \"normalized_lift_projection_controls\": 63,\n  \"physical_models\": 103,\n  \"rounding_matching_controls\": 63536,\n  \"two_connected_physical_models\": 29,\n  \"whole_group_batches\": 1098,\n  \"largest_physical_order\": 17250\n}Stderr contained only timing information:Plain textreal 71.79\nuser 71.73\nsys 0.39No Python checker errors or assertion failures.Full byte equalityFileBytesSHA-256Regenerated output15,33541bf09d4a0afcebab04882e13b7908f91e5d2ab22f0dff3ab7f349e793529bf8Frozen expected output15,33541bf09d4a0afcebab04882e13b7908f91e5d2ab22f0dff3ab7f349e793529bf8Full byte comparison: TRUE.Both completed runs reproduced the expected output exactly.7. Frozen-source integrityAll 11 payload files were SHA-256 checked against MANIFEST.json before and after review. Every file remained byte-identical.PayloadBytesSHA-256develop/component_cycle_frontier.py9,705fdec78f21ec15f76349ace9290778e7ff6d7a5b01584d02374bc8184660560f9develop/mixed_isolated_cover_repair.py10,069509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7develop/nonisolated_exchange_frontier.py9,2143c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abddevelop/odd_path_neutral_budget.py11,2210cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1develop/owner_matching_certificate.py9,760fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3cdevelop/primary_exchange_hardness.py9,2726d964257d23e52f5774c1d90a6173ec20e5a260eaa5844ffc5ada2618c3d2f54docs/COMPONENT_CYCLE_RANK_FRONTIER.md14,048bd4a2372a152a24c8c694afe532b4e303b68df167c70041afc648f82ba8c6fbedocs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md16,208b6e02c2ef58cf5fe3b5d2285bb1fd7660bc9d98c728834b11149f97660e55259docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md16,54406cb6a286ef77eb5cb056f6e80d90d41039d5a9acf3d834a2e06d62b13a10f1eoutput/primary-exchange-hardness-check.json15,33541bf09d4a0afcebab04882e13b7908f91e5d2ab22f0dff3ab7f349e793529bf8scripts/check_primary_exchange_hardness.py14,76210695120d6e96af3fd4e765ab1184141827726dd1fd17c2c1974a7db1bfbdec111/11 unchangedFinal dispositionACCEPT — mathematical proof, implementation, checker claims, and stated scope.No required mathematical correction.No execution discrepancy in the completed runs. The initial execution-wrapper interruptions were overcome by running the exact original command in the background; they do not affect the successful reproductions.No Lean or kernel-verification claim is made.The substantive achievement is the exact unbudgeted identity between a fixed-list primary matching-cost optimization and Vertex Cover, while retaining the unusually restrictive physical graph conditions. Crucially, arbitrary partial batches are controlled by a genuine no-increase rounding theorem, rather than by assuming that optimal batches are whole-group selections.\n"
+}

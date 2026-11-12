@@ -1,0 +1,81 @@
+{
+  "recorded_at": "2026-11-12T23:24:33.683960+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "b044aa5e-c08d-40c8-a60f-eb826f73bd1a",
+    "conversation_id": "conv_72e21bd1a97af92b",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af64947-09b4-83ec-aa26-456276091356",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/mixed_isolated_cover_repair.py": {
+      "bytes": 10069,
+      "sha256": "509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7"
+    },
+    "develop/nonisolated_exchange_frontier.py": {
+      "bytes": 9214,
+      "sha256": "3c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abd"
+    },
+    "develop/odd_path_neutral_budget.py": {
+      "bytes": 11221,
+      "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    "develop/small_primary_cost.py": {
+      "bytes": 3163,
+      "sha256": "216ca7073618841b36213915866651834935324914a27e9e45b1ca3cdeaf1b31"
+    },
+    "docs/SMALL_PRIMARY_COST_AND_ZERO_THRESHOLD.md": {
+      "bytes": 4226,
+      "sha256": "88d4341a44423caa0c7eb56076e032a1c9b6eb23d88570fdcf29f9a5b456e080"
+    },
+    "docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md": {
+      "bytes": 16544,
+      "sha256": "06cb6a286ef77eb5cb056f6e80d90d41039d5a9acf3d834a2e06d62b13a10f1e"
+    },
+    "output/small-primary-cost-check.json": {
+      "bytes": 821,
+      "sha256": "967561350cfc0f902bb2ec886dbc0bcc491a7d4de8cf5ec6fad0714e6f296481"
+    },
+    "scripts/check_small_primary_cost.py": {
+      "bytes": 6266,
+      "sha256": "9caee6dd6830d118dd2dbd53a8edf3c45d18d5fd153b10c2aa65c3c8d07075b2"
+    }
+  },
+  "all_frozen_files_unchanged_locally": true,
+  "corrections_required": false,
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_small_primary_cost.py --output /tmp/small-primary-regenerated.json",
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "environment": "CPython3.12.14; Linux6.18.57 x86_64",
+    "wall_seconds": null,
+    "runtime_not_supplied_in_review": true,
+    "stderr": "Empty as reported",
+    "stdout": "Complete successful counter JSON reproduced in the response; no exact stdout byte count supplied.",
+    "report_bytes": 821,
+    "report_sha256": "967561350cfc0f902bb2ec886dbc0bcc491a7d4de8cf5ec6fad0714e6f296481",
+    "full_byte_equality": true,
+    "all9payloads_checked_before_and_after": true
+  },
+  "supplemental": "Reviewer independently reports5039 arbitrary simple-graph zero-cost instances through4 vertices, including graphs beyond the public validator domain, checked against every batch. Separate from the original checker; no positive-cost high-degree/nonbipartite API execution claimed.",
+  "scope": "Fixed distinct replacement list: graph-general zero-cost equivalence with2SAT, exact positive-threshold cover enumeration on bipartite graphs, XP in thresholdB. Shipped API intentionally restricted to bipartite maxdegree2 auxiliaries for final path/cycle matching certificates; physical distinct-owner permission is a caller precondition.",
+  "limitations": [
+    "Not an FPT algorithm or a proof that no different FPT algorithm exists.",
+    "Feasibility only, not minimum operations or minimum actual cost belowB.",
+    "Failed positive query does not return all unsatisfiability certificates or claim a short NP countercertificate.",
+    "Separate primary-hardness proof/checker not reaudited here.",
+    "No unrestricted omission, SF/beta or grid complexity settlement.",
+    "No Lean/kernel or literature-priority audit; attachment identity is not remote Git provenance.",
+    "Requested runtime was not supplied by reviewer and is recorded as unknown."
+  ],
+  "complete_response": "Verdict: ACCEPTThe fixed-list zero-cost reduction and the positive-threshold enumeration are correct under the stated interface and scope. I found no substantive mathematical or implementation gap requiring a correction.This is an algorithmic correctness acceptance only. It does not make a novelty claim, does not re-audit the adjacent hardness theorem, and does not establish an FPT lower bound.Execution and environmentI extracted the supplied archive and ran the original checker unchanged from its extracted root:Plain textpython3 -B scripts/check_small_primary_cost.py --output /tmp/small-primary-regenerated.jsonEnvironment:CPython: Python 3.12.14Platform: Linux x86_64Kernel: 6.18.57Assertions: enabled; __debug__ was true and the checker’s assertion guard did not failNetwork: not usedLean: not usedChecker source: unchangedExit status:Plain text0Standard output was exactly:JSON{\"SCC_obstruction_paths\": 1662, \"all_small_ambient_graphs\": 48, \"constant_edge_obstructions\": 1472, \"edge_clause_truth_controls\": 14468, \"exhausted_cover_searches\": 850, \"invalid_threshold_rejections\": 3, \"literal_assignment_costs\": 6839, \"models\": 3127, \"one_shot_controls\": 4, \"positive_witnesses\": 8373, \"seeded_path_cycle_models\": 160, \"threshold_decisions\": 9223}Standard error was empty.The regenerated file was:Size: 821 bytesSHA-256: 967561350cfc0f902bb2ec886dbc0bcc491a7d4de8cf5ec6fad0714e6f296481A full byte comparison against output/small-primary-cost-check.json returned success:Plain textcmp exit = 0Thus the regenerated output is byte-for-byte identical to the supplied expected output.Manifest verificationAll nine entries listed in MANIFEST.json matched their declared byte counts and SHA-256 values both before and after execution.FileBytesSHA-256BeforeAfterdevelop/mixed_isolated_cover_repair.py10069509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7matchmatchdevelop/nonisolated_exchange_frontier.py92143c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abdmatchmatchdevelop/odd_path_neutral_budget.py112210cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1matchmatchdevelop/owner_matching_certificate.py9760fba622d5a489ae9cf65f60ae9372451468ffb31ce5b0bcb87b564d328691e3cmatchmatchdevelop/small_primary_cost.py3163216ca7073618841b36213915866651834935324914a27e9e45b1ca3cdeaf1b31matchmatchdocs/SMALL_PRIMARY_COST_AND_ZERO_THRESHOLD.md422688d4341a44423caa0c7eb56076e032a1c9b6eb23d88570fdcf29f9a5b456e080matchmatchdocs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md1654406cb6a286ef77eb5cb056f6e80d90d41039d5a9acf3d834a2e06d62b13a10f1ematchmatchoutput/small-primary-cost-check.json821967561350cfc0f902bb2ec886dbc0bcc491a7d4de8cf5ec6fad0714e6f296481matchmatchscripts/check_small_primary_cost.py62669caee6dd6830d118dd2dbd53a8edf3c45d18d5fd153b10c2aa65c3c8d07075b2matchmatchThe checker writes the regenerated result to /tmp, so the archived output file itself was not changed.Zero-cost 2SAT auditLet  $s_i=1$  mean that operation  $i$  is selected. For a fixed distinct replacement list  $(x_i,y_i)$ , with  $x_i\\in U$  and  $y_i\\notin U$ ,\n$$\\operatorname{present}(x_i)=1-s_i,\\qquad\n\\operatorname{present}(y_i)=s_i.$$\nEvery other vertex has a constant membership value:vertices in  $U$  that are not removed are constantly present;vertices outside  $U$  that are not added are constantly absent.For an ambient edge  $\\{a,b\\}$ , zero matching cost is equivalent to forbidding simultaneous presence:\n$$\\neg\\bigl(\\operatorname{present}(a)\\land\\operatorname{present}(b)\\bigr).$$\nThe implementation handles every case correctly.If either endpoint is constantly absent, the edge constraint is vacuous.If both endpoints are constantly present, the generated clause is empty and the instance is unsatisfiable.If one endpoint is constantly present and the other requires  $s_i=p$ , the result is a unit prohibition.If both endpoints are variable, the result is a two-requirement prohibition.If the same operation occurs at both ends of an edge, the requirements are  $(i,0)$  and  $(i,1)$ . They are complementary and cannot be simultaneously true, so the edge constraint is tautological.Duplicate requirement entries are removed before clause construction.A technical point that was checked explicitly is that sat() does not receive ordinary CNF literals. It receives requirements of the form “ $s_i=p$ ” and interprets each clause as:\n$$\\text{forbid all listed requirements simultaneously}.$$\nFor a two-requirement clause  $(a,b)$ , it adds the implications\n$$a\\Rightarrow \\neg b,\\qquad b\\Rightarrow \\neg a,$$\nwhich is exactly the implication graph for  $\\neg a\\lor\\neg b$ . A one-requirement clause is duplicated internally, producing the correct unit implication  $a\\Rightarrow\\neg a$ .The SCC assignmentPythonvalues = [int(label[2*v+1] > label[2*v]) for v in range(variables)]was checked against the exhaustive assignment controls and against the final clause assertion. When a variable and its complement lie in the same SCC, the checker verifies two directed contradiction paths: $2v\\to 2v+1$  $2v+1\\to 2v$ Every path hop is checked against the constructed implication graph. The corresponding clauses are separately checked against actual uncovered ambient edges through clause_edges, so the obstruction is tied back to the graph rather than being an abstract SAT artifact.The checker recorded:14,468 edge-clause truth controls over all assignments,1,472 constant/empty-clause obstructions,1,662 SCC contradiction paths.I also ran a supplemental exhaustive check of the internal zero-cost reduction on 5,039 arbitrary simple-graph instances through four vertices, including graphs outside the public validator’s bipartite maximum-degree-two domain. The SAT feasibility result agreed with direct enumeration of every operation subfamily in all cases.Therefore the graph-general mathematical statement is correct: the zero-cost equivalence itself does not require bipartiteness or a degree bound.Positive threshold auditFor a selected batch  $S$ , let\n$$H_S=A[U_S]$$\nbe the final induced graph. On the validated bipartite domain, König’s theorem gives\n$$\\nu(H_S)\\le B\n\\iff\n\\tau(H_S)\\le B\n\\iff\n\\exists Z\\subseteq V(A),\\ |Z|\\le B,\\ H_S-Z\\text{ is independent}.$$\nThe implementation enumerates every ambient vertex subset  $Z$  of size at most  $B$ . For each such  $Z$ , it discards edges incident with  $Z$  and invokes the same 2SAT construction on the remaining edges.The two directions are implemented correctly.From a low-cost batch to an enumerated exception setIf  $\\nu(H_S)\\le B$ , bipartite matching/vertex-cover duality supplies a vertex cover  $Z'\\subseteq U_S$  with  $|Z'|\\le B$ . The enumeration includes  $Z'$ , and  $U_S-Z'$  is independent, so its 2SAT instance is satisfiable.From a satisfiable enumerated set to a low-cost batchIf the 2SAT instance for an ambient set  $Z$  is satisfiable, the resulting batch has no final edge with both endpoints outside  $Z$ . Therefore\n$$Z\\cap U_S$$\nis a vertex cover of  $H_S$ . Its size is at most  $|Z|\\le B$ , so the final matching number is at most  $B$ .The code deliberately allows enumerated  $Z$  to contain vertices absent from the final membership set. It then returnsPythonfinal_cover = set(covered) & set(cert['U'])and asserts that this intersection covers every final edge. This is the correct treatment of ambient exception sets.The final certificate routine returns an actual matching and cover on the induced degree-two bipartite graph. The checker verifies:the matching edges are actual final induced edges;matching edges are vertex-disjoint;matching size equals the reported actual cost;cover size equals matching size;every final induced edge meets the returned cover;the returned exception cover is contained in the final present set;its size is at most  $B$ .The checker recorded 8,373 positive witnesses and 850 fully exhausted failed cover searches.Complexity classificationThe implementation tests at most\n$$\\sum_{j=0}^{\\min(B,N)}\\binom Nj$$\nexception sets, with one polynomial-size SCC computation per set. Hence the shipped algorithm is in XP with respect to  $B$ : for each fixed  $B$ , the running time is polynomial in the graph and list size, with an exponent depending on  $B$ .The note correctly makes no FPT claim of the form\n$$f(B)N^c$$\nwith  $c$  independent of  $B$ . This audit also does not establish that no different FPT algorithm exists; it verifies the stated XP algorithmic classification.The result is a feasibility procedure. A feasible response supplies a batch with cost at most  $B$ ; it does not promise:minimum operation count,minimum actual matching cost below  $B$ ,an optimal batch among all possible operation lists,all unsatisfiability traces after a failed positive query,a short NP certificate containing every failed  $Z$ -instance.Those limitations are stated consistently in the note and code.Scope limitations that are intentionalThe public function primary_cost_at_most calls validate, which restricts the shipped API to:simple indexed graphs,distinct removals  $x_i$ ,distinct additions  $y_i$ , $x_i\\in U$ ,  $y_i\\notin U$ ,bipartite ambient graphs,maximum degree at most two.Thus:the zero-cost theorem is graph-general;the direct public implementation is intentionally narrower because its final certificate routine is the path/even-cycle matching routine;the positive-threshold implementation should not be read as a general high-degree bipartite matching implementation.The original checker exhaustively covered all accepted ambient graphs through four vertices:48 accepted graph masks,3,127 total models,9,223 threshold decisions,and additionally tested 160 seeded larger paths and even cycles. It did not claim exhaustive testing of arbitrary high-degree bipartite graphs or non-bipartite graphs for the positive routine.Finally, physical owner-level permission is a caller-side precondition. The generic routine validates distinct graph replacements, but it does not know the physical owner catalogue or independently verify that every candidate is individually permitted. The note correctly states that the physical interpretation applies only when the supplied list already consists of individually permitted replacements for distinct owners. Under that precondition, every subfamily, returned batch, and ordered prefix preserves owner distinctness and individual permissibility.The adjacent UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md file was included in the manifest and remained unchanged, but its separate NP-completeness proof was treated only as comparison material here. This audit does not turn the positive-threshold result into a cost-zero hardness claim, an operation-budget hardness claim, or a claim about unrestricted SF/ $\\beta$  complexity.\n"
+}

@@ -1,0 +1,106 @@
+{
+  "recorded_at": "2026-11-12T23:22:32.684511+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "9f0ba9bf-5f7f-4eae-8f19-a57bd73cc14f",
+    "conversation_id": "conv_cd3db66d7d98030d",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af64875-6ef4-83ec-9367-549056138ddf",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/blockwise_component_frontier.py": {
+      "bytes": 4166,
+      "sha256": "f0611c5e1b49626f08594bc7f9f5fe7f33767af8b4898bf4c50312c2e0e2f002"
+    },
+    "develop/component_cycle_frontier.py": {
+      "bytes": 9705,
+      "sha256": "fdec78f21ec15f76349ace9290778e7ff6d7a5b01584d02374bc8184660560f9"
+    },
+    "develop/mixed_isolated_cover_repair.py": {
+      "bytes": 10069,
+      "sha256": "509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7"
+    },
+    "develop/nonisolated_exchange_frontier.py": {
+      "bytes": 9214,
+      "sha256": "3c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abd"
+    },
+    "develop/odd_path_neutral_budget.py": {
+      "bytes": 11221,
+      "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    "develop/primary_exchange_hardness.py": {
+      "bytes": 9272,
+      "sha256": "6d964257d23e52f5774c1d90a6173ec20e5a260eaa5844ffc5ada2618c3d2f54"
+    },
+    "docs/COMPONENT_BLOCK_RANK_AND_MATCHING_TRACTABILITY.md": {
+      "bytes": 5366,
+      "sha256": "9ae9b2212878c7f1ceff2469063102c40e7d87392aa23d38aa4ff9b644904eb9"
+    },
+    "docs/COMPONENT_CYCLE_RANK_FRONTIER.md": {
+      "bytes": 14048,
+      "sha256": "bd4a2372a152a24c8c694afe532b4e303b68df167c70041afc648f82ba8c6fbe"
+    },
+    "docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md": {
+      "bytes": 16208,
+      "sha256": "b6e02c2ef58cf5fe3b5d2285bb1fd7660bc9d98c728834b11149f97660e55259"
+    },
+    "docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md": {
+      "bytes": 16544,
+      "sha256": "06cb6a286ef77eb5cb056f6e80d90d41039d5a9acf3d834a2e06d62b13a10f1e"
+    },
+    "output/blockwise-component-frontier-check.json": {
+      "bytes": 1558,
+      "sha256": "2f0c8423224b4964509f8757d236bc55b139a1e0d6c1ee75adb8ba8e38488cb2"
+    },
+    "scripts/check_blockwise_component_frontier.py": {
+      "bytes": 6745,
+      "sha256": "fd35507ad940bff27a16945186ae86db1ae50a350f39bb86a6f4ba679b5005b6"
+    }
+  },
+  "all_frozen_files_unchanged_locally": true,
+  "corrections_required": false,
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_blockwise_component_frontier.py --output /tmp/blockwise-regenerated.json",
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "wall_seconds": 0.245596076,
+    "exit_code": 0,
+    "environment": "CPython3.12.14; Linux6.18.57 x86_64 glibc2.41; LANG/LC_ALL=C.UTF-8; optimization0",
+    "stdout_bytes": 294,
+    "stderr_bytes": 0,
+    "report_bytes": 1558,
+    "report_sha256": "2f0c8423224b4964509f8757d236bc55b139a1e0d6c1ee75adb8ba8e38488cb2",
+    "full_byte_equality": true,
+    "all13payloads_checked_before_after_and_after_supplemental": true
+  },
+  "supplemental": {
+    "successful": {
+      "frontiers": 16,
+      "literal_subsets": 4096,
+      "all_row_certificates": 144,
+      "nested_one_shot_frontiers": 16,
+      "zero_operation_frontiers": 3,
+      "wall_seconds": 0.029030747,
+      "exit_code": 0,
+      "stderr_bytes": 0
+    },
+    "initial_harness_error": "A temporary supplemental test incorrectly expected fixed cost7; true cost3 (full P4 cost2 plus an induced edge cost1). That test expectation alone was corrected. Initial supplemental attempt exited1; no submitted payload changed."
+  },
+  "scope": "Connected candidate-component block factorization of exact fixed-list unit matching-cost frontiers. Exponent=max block cycle rank; ambientP2/isolates polynomial even with unbounded totalrank. All rows give exact masks; only best row has an already materialized matching/cover, other row certificates are reconstructible by endpoint. Generic algorithm does not validate physical owner permissions.",
+  "limitations": [
+    "The primary reduction has a separate review; its full checker was not executed in this audit.",
+    "Complexity counts arithmetic DP/convolution transitions; index sorting, integer masks and predecessor component ordering have polynomial overhead.",
+    "No minimal-parameter or arbitrary-algorithm lower-bound claim.",
+    "No physical embedding of generic loop family, unrestricted omission, SF/beta or grid complexity settlement.",
+    "No Lean/kernel or literature-priority audit; source identity is attached snapshot, not remote Git provenance."
+  ],
+  "complete_response": "ACCEPTThe companion theorem and submitted implementation are correct on the stated fixed-list, unit matching-cost domain. I found no mathematical or implementation defect requiring revision.The original checker ran unchanged with assertions enabled, exited successfully, and reproduced the entire 1,558-byte report byte-for-byte. All 13 payloads passed their size and SHA256 checks before execution, immediately afterward, and again after the supplemental checks. The manifest itself remained byte-identical.This verdict covers the connected-component factorization, the exponent given by the maximum block cycle rank, and the polynomial P2/isolated-vertex special case. The P2/P4 hardness comparison remains conditional on the separately reviewed primary reduction. I did not execute the primary NP-completeness checker.1. Original checker: exact execution receiptI executed this command from the extracted attachment directory:Bashpython3 -B scripts/check_blockwise_component_frontier.py --output /tmp/blockwise-regenerated.jsonNeither the checker nor any imported payload was edited.ItemObserved resultWorking directory/workspace/scratch/d356069dd72e/blockwise-auditPythonCPython 3.12.14, built with Clang 22.1.3Python executable/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3PlatformLinux 6.18.57, x86_64, glibc 2.41LocaleLANG=C.UTF-8, LC_ALL=C.UTF-8AssertionsEnabled; optimization flag 0, PYTHONOPTIMIZE unsetMeasured elapsed runtime0.245596076 seconds, measured around the subprocessChild user CPU time0.233742 secondsChild system CPU time0.011521 secondsExit code0Stdout294 bytes, reproduced belowStderrEmpty: 0 bytesGenerated report1,558 bytesFull report byte comparisonEqualExact stdout, followed by a newline:Plain text{\"all_small_matching_graphs\": 18, \"exact_budget_rows\": 2354, \"exact_frontiers\": 1140, \"invalid_input_rejections\": 2, \"literal_batch_comparisons\": 4591, \"matching_ambient_models\": 857, \"one_shot_permutation_controls\": 280, \"physical_constructor_controls\": 3, \"unbounded_total_rank_families\": 6}The generated report and supplied reference both have SHA256:Plain text2f0c8423224b4964509f8757d236bc55b139a1e0d6c1ee75adb8ba8e38488cb2The comparison used the complete raw report bytes, including formatting and the final newline—not parsed JSON equality or selected fields. The report’s internal comparison digest was:Plain texta2fb88d10fc697268fd8111a7179524dfbcc6e5dc7a337b486a9d511c1195274The   original checker invokes charged_vertex_cover_template for its three constructor controls. Those calls are small auxiliary-frontier controls; they do not constitute execution or independent verification of the adjacent primary-hardness checker.2. Manifest and payload identityThe   MANIFEST.json contains exactly 13 payload records. It is 2,006 bytes, with unchanged SHA256:Plain text04f1291d730b6ed8dffb7ad6af2d8d7673e094d110e3ae21369a4be92bb05b37Every entry below passed both its byte-count and full SHA256 comparison before and after execution. The final check also compared every payload directly with its corresponding raw ZIP member.PayloadBytesVerified SHA256 before and afterdevelop/blockwise_component_frontier.py4,166f0611c5e1b49626f08594bc7f9f5fe7f33767af8b4898bf4c50312c2e0e2f002develop/component_cycle_frontier.py9,705fdec78f21ec15f76349ace9290778e7ff6d7a5b01584d02374bc8184660560f9develop/mixed_isolated_cover_repair.py10,069509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7develop/nonisolated_exchange_frontier.py9,2143c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abddevelop/odd_path_neutral_budget.py11,2210cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1develop/owner_matching_certificate.py9,760fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3cdevelop/primary_exchange_hardness.py9,2726d964257d23e52f5774c1d90a6173ec20e5a260eaa5844ffc5ada2618c3d2f54docs/COMPONENT_BLOCK_RANK_AND_MATCHING_TRACTABILITY.md5,3669ae9b2212878c7f1ceff2469063102c40e7d87392aa23d38aa4ff9b644904eb9docs/COMPONENT_CYCLE_RANK_FRONTIER.md14,048bd4a2372a152a24c8c694afe532b4e303b68df167c70041afc648f82ba8c6fbedocs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md16,208b6e02c2ef58cf5fe3b5d2285bb1fd7660bc9d98c728834b11149f97660e55259docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md16,54406cb6a286ef77eb5cb056f6e80d90d41039d5a9acf3d834a2e06d62b13a10f1eoutput/blockwise-component-frontier-check.json1,5582f0c8423224b4964509f8757d236bc55b139a1e0d6c1ee75adb8ba8e38488cb2scripts/check_blockwise_component_frontier.py6,745fd35507ad940bff27a16945186ae86db1ae50a350f39bb86a6f4ba679b5005b6There were no additional files in the extracted payload directory after the checks, including no generated __pycache__ files. The original archive itself remained unchanged, with SHA256:Plain text6f54f73dacf2994c077f8c4d51fd0a2dc453b958b52d10259aab68d411f577343. General mathematical proofComplete ambient components give the required independenceThe    main note defines each vertex of  $K$  from a complete connected component of the ambient graph  $A$ . Its “connected blocks” are the connected components of  $K$ , including isolated vertices.Let  $W_j$  be the union of ambient vertices belonging to  $K_j$ , and let  $I_j$  be its candidate indices. Then:Every ambient edge has both endpoints in one  $W_j$ .Every replacement has both endpoints in one  $W_j$ .The sets  $I_j$  partition the candidate list.Every combination of local candidate subsets is allowed by the fixed-list problem.For a global subset  $S$ , put  $S_j=S\\cap I_j$ ,  $A_j=A[W_j]$ , and  $U_j=U\\cap W_j$ . Then\n$$A[U_S]\n=\n\\bigsqcup_j\nA_j\\!\\left[\n  \\left(U_j\\setminus\\{x_i:i\\in S_j\\}\\right)\n  \\cup\\{y_i:i\\in S_j\\}\n\\right].$$\nMaximum matching number is additive over this vertex-disjoint union. A matching restricts to local matchings, and local maximum matchings unite into a global matching. Therefore\n$$\\nu(A[U_S])=\\sum_j \\nu(A_j[(U_j)_{S_j}]),\n\\qquad\n|S|=\\sum_j |S_j|.$$\nBoth directions of the feasible-choice correspondence hold, so the exact frontier is precisely\n$$F(t)=\n\\min_{\\substack{0\\le t_j\\le q_j\\\\ \\sum_jt_j=t}}\n\\sum_j F_j(t_j).$$\nThis establishes the min-plus convolution without a relaxation or hidden compatibility condition. Matching edges, ambient vertices, and candidate labels belong to only one local problem. There is no shared-resource double count.Using only initial induced components of  $A[U]$  would not establish this argument; the submitted definition and implementation correctly use the whole ambient graph.The inherited local algorithm supplies the claimed boundThe relevant    cycle-rank predecessor proof and implementation use the required invariant:Choose a spanning forest of the candidate multigraph.Condition all  $k_j$  nonforest candidate bits, including loops and excess parallel edges.Count each selected conditioned candidate once.Count each remaining forest candidate once in its child message.Evaluate each ambient path or even-cycle factor using the present-run parity automaton.The even-cycle closure also handles an entirely present cycle: its even length makes both closed traces have the correct half-length cost. Thus a local factor is evaluated by its actual matching number. The forest messages do not introduce an additional unrecorded candidate equality between different child subtrees.This supports the local bound\n$$O\\!\\left(2^{k_j}N_j(q_j+1)^2\\right).$$\nConvolution overhead and the maximum-rank exponentFor positive-candidate blocks, let  $Q_{j-1}$  be the number of candidates in earlier positive blocks. Their sequential convolution work is bounded by\n$$\\sum_j (Q_{j-1}+1)(q_j+1).$$\nExpanding gives a pairwise cross term, a sum of earlier budgets, and linear terms. In particular,\n$$\\sum_jQ_{j-1}q_j\n=\n\\frac{q^2-\\sum_jq_j^2}{2},$$\nand there are at most  $q$  positive-candidate blocks. Consequently the total is  $O(q^2)$ .A block with  $q_j=0$  has one fixed-cost row. Its cost is retained. Convolving that row through an existing frontier takes at most  $q+1$  transitions. There are at most  $N$  such blocks, giving  $O(N(q+1))$ .Therefore the stated bound is justified:\n$$O\\!\\left(\n\\sum_j2^{k_j}N_j(q_j+1)^2\n+N(q+1)+q^2\n\\right)\n=\nO\\!\\left(2^\\kappa N(q+1)^2\\right).$$\nThe comparison is asymptotic. For a literal numerical inequality, a universal constant is needed: each of the three summands is at most  $D=2^\\kappa N(q+1)^2$  when  $N\\ge1$ , so their sum is at most  $3D$ . The note already uses  $O(\\cdot)$ , so this requires no correction.When  $N=0$ , the endpoint conditions force  $q=0$ . The single zero-cost row is handled correctly.The allowance for polynomial index and bit overhead is also relevant to the exact Python code. For example, inherited component ordering repeatedly selects min(unseen), which can incur quadratic indexing work on many isolated vertices. The displayed bound counts DP/convolution transitions; it should retain that qualification when quoted as an implementation complexity claim.4. Exact implementation correspondenceThe   blockwise implementation matches the proof.Block construction. validate obtains components on the entire indexed ambient vertex set. The blockwise routine builds candidate connectivity between those components and assigns all vertices of each component to its block. It explicitly asserts that both ambient edges and replacements remain within their assigned block.Loops and parallel edges. The connectivity adjacency uses sets, but this does not corrupt cycle rank. Multiplicity is unnecessary for finding connected components. Every candidate index is separately preserved in block_ops and passed to the local cycle-rank solver, where loops and nonforest parallel edges are counted.Masks and ties. Each block’s candidate indices are retained in increasing original-index order. The local-to-global bit embedding therefore preserves numerical mask order. Masks from different blocks have disjoint support, and the code asserts disjointness before union. Lexicographic minimization by (cost, mask) consequently retains the correct least-mask optimum for each exact budget.One-shot inputs. The validation layer materializes edges, the initial set, and operations before reuse. The blockwise routine subsequently constructs its local inputs from those stored values.Returned certificates. Every frontier row contains its exact-count batch mask. The routine materializes a cover/matching certificate only for the globally best row, using the documented (cost, operation count, mask) tie-break. Other rows’ certificates are reconstructible with endpoint. This supports the theorem’s constructibility claim and agrees with the predecessor’s stated interface; it would be inaccurate to describe all covers and matchings as already present in the returned structure.5. P2/isolated-vertex tractability and the loop familyThe corollary’s degree argument is valid, including loops and parallel edges.Distinct removals, distinct additions, and disjoint removal/addition sets imply that each ambient vertex is an endpoint of at most one candidate. An ambient component containing at most two vertices therefore contributes at most two candidate half-edges. A loop consumes both half-edges at its component vertex.Hence every connected  $K_j$  has maximum degree at most two, with loops counted twice. Equivalently, writing  $v_j=|V(K_j)|$  and  $e_j=q_j$ ,\n$$2e_j=\\sum_{v\\in V(K_j)}\\deg(v)\\le2v_j,$$\nso\n$$k_j=e_j-v_j+1\\le1.$$\nConnectivity supplies  $k_j\\ge0$ . This includes isolated vertices, paths, ordinary cycles, single loops, and parallel two-edge cycles. The resulting complete frontier algorithm is polynomial even when  $\\sum_jk_j$  is unbounded.For the explicit disjoint-pair family, either candidate choice leaves exactly one endpoint of each ambient pair present. Every batch therefore has matching cost zero. There are  $r$  rank-one blocks and two conditioned branches per block.The original checker tested the following six scales: $r$ Total rankMaximum block rankSummed conditioned branchesConvolution transitions11122221464418201616132272646411284,160256256151265,792The all- $r$  conclusion follows from the construction and factorization proof. The six executions provide finite controls.For the physical interpretation, the inherited hypotheses must remain explicit: a permitted initial omission, together with individually permitted replacements in distinct owner components. These hypotheses ensure every subset and prefix remains permitted and support the  $3b-\\text{cost}$  dissociation certificate. The generic blockwise_frontier function itself does not validate physical owner permissions.6. Supplemental checks, separately identifiedA separate inline python3 -B check exercised one 22-vertex mixed ambient graph under 16 candidate permutations. It included a rank-four loop block, a parallel-edge cycle block, interleaved candidate indices, isolated vertices, a fixed nonzero-cost component, and nested one-shot iterators.The successful supplemental run had:16 frontier comparisons;4,096 literal candidate-subset matching comparisons;144 reconstructed all-row cover/matching certificates;16 nested one-shot input controls;3 zero-operation/empty-instance controls.It exited 0, with empty stderr. Its measured test-body runtime was 0.029030747 seconds. Exact stdout was:Plain text{\"seconds\": 0.02903074699861463, \"supplemental\": {\"all_row_certificates\": 144, \"frontiers\": 16, \"literal_subsets\": 4096, \"nested_one_shot_frontiers\": 16, \"zero_operation_frontiers\": 3}}For transparency, the first supplemental attempt exited 1 on an erroneous expected value in the temporary test: it expected fixed cost 7 for a zero-operation instance whose correct cost is 3. The returned cover and matching had size three: a fully present P4 contributes two, and an induced edge contributes one. Only the inline test expectation was corrected. No submitted file was changed, and the successful rerun is the supplemental result reported above.These checks are additional to the original checker’s counts.Scope of acceptanceNo network or Lean execution was used. The original checker’s finite comparisons support the submitted implementation; the unrestricted-size statements rest on the general proofs above.The accepted result concerns the supplied fixed candidate list and unit matching costs. It establishes neither hardness from large total rank nor minimality of  $\\kappa$ , and it makes no arbitrary physical-embedding claim for the loop family. The adjacent primary-hardness theorem, unrestricted omission optimization, SF/beta complexity, and grid conclusions remain outside this verdict.check_blockwise_component_frontier.pyCodeOpen fileMANIFEST.jsonCodeOpen file   COMPONENT_BLOCK_RANK_AND_MATCHING_TRACTABILITY.mdDocumentOpen file2 more\n"
+}

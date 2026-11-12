@@ -1,0 +1,973 @@
+{
+  "counts": {
+    "all_small_source_graphs": 75,
+    "arbitrary_batch_certificates": 63536,
+    "auxiliary_P2_components": 20602,
+    "auxiliary_P4_components": 3931,
+    "connected_normalization_models": 11,
+    "cycle_rank_identity_models": 103,
+    "exhaustive_batch_source_models": 21,
+    "full_frontier_optimum_comparisons": 12,
+    "independent_cover_solver_calibrations": 75,
+    "individual_permission_controls": 13118,
+    "invalid_certificate_rejections": 5,
+    "invalid_source_rejections": 5,
+    "large_source_family_models": 5,
+    "larger_source_models": 12,
+    "literal_physical_vertex_deletions": 2460,
+    "normalized_arbitrary_cover_projections": 88,
+    "normalized_batch_to_original_cover_controls": 88,
+    "normalized_exact_cover_comparisons": 4,
+    "normalized_lift_projection_controls": 63,
+    "one_shot_api_controls": 5,
+    "one_shot_constructor_controls": 1,
+    "physical_models": 103,
+    "rounding_matching_controls": 63536,
+    "two_connected_physical_models": 29,
+    "whole_group_batches": 1098
+  },
+  "digest": "48932421d50fd4c5193c63d6d8c943943a4e4c26f1f15f2a0aef9b66f9dc818b",
+  "examples": [
+    {
+      "all_selected_cost": 3,
+      "initial_cost": 3,
+      "minimum_source_cover": [
+        0,
+        1
+      ],
+      "model": {
+        "B": [
+          [
+            0,
+            24
+          ],
+          [
+            24,
+            12
+          ],
+          [
+            12,
+            36
+          ],
+          [
+            36,
+            0
+          ],
+          [
+            1,
+            25
+          ],
+          [
+            25,
+            13
+          ],
+          [
+            13,
+            37
+          ],
+          [
+            37,
+            1
+          ],
+          [
+            2,
+            26
+          ],
+          [
+            26,
+            14
+          ],
+          [
+            14,
+            38
+          ],
+          [
+            38,
+            2
+          ],
+          [
+            3,
+            27
+          ],
+          [
+            27,
+            15
+          ],
+          [
+            15,
+            39
+          ],
+          [
+            39,
+            3
+          ],
+          [
+            16,
+            4
+          ],
+          [
+            4,
+            28
+          ],
+          [
+            28,
+            40
+          ],
+          [
+            40,
+            16
+          ],
+          [
+            5,
+            29
+          ],
+          [
+            29,
+            17
+          ],
+          [
+            17,
+            41
+          ],
+          [
+            41,
+            5
+          ],
+          [
+            6,
+            30
+          ],
+          [
+            30,
+            18
+          ],
+          [
+            18,
+            42
+          ],
+          [
+            42,
+            6
+          ],
+          [
+            7,
+            19
+          ],
+          [
+            19,
+            43
+          ],
+          [
+            43,
+            31
+          ],
+          [
+            31,
+            7
+          ],
+          [
+            32,
+            8
+          ],
+          [
+            8,
+            44
+          ],
+          [
+            44,
+            20
+          ],
+          [
+            20,
+            32
+          ],
+          [
+            21,
+            9
+          ],
+          [
+            9,
+            33
+          ],
+          [
+            33,
+            45
+          ],
+          [
+            45,
+            21
+          ],
+          [
+            10,
+            34
+          ],
+          [
+            34,
+            22
+          ],
+          [
+            22,
+            46
+          ],
+          [
+            46,
+            10
+          ],
+          [
+            11,
+            23
+          ],
+          [
+            23,
+            47
+          ],
+          [
+            47,
+            35
+          ],
+          [
+            35,
+            11
+          ],
+          [
+            48,
+            50
+          ],
+          [
+            50,
+            49
+          ],
+          [
+            49,
+            51
+          ],
+          [
+            51,
+            48
+          ],
+          [
+            52,
+            54
+          ],
+          [
+            54,
+            53
+          ],
+          [
+            53,
+            55
+          ],
+          [
+            55,
+            52
+          ],
+          [
+            56,
+            58
+          ],
+          [
+            58,
+            57
+          ],
+          [
+            57,
+            59
+          ],
+          [
+            59,
+            56
+          ]
+        ],
+        "D": 4,
+        "H": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "P": [
+          [
+            12,
+            1
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            24,
+            36
+          ],
+          [
+            25,
+            37
+          ],
+          [
+            26,
+            38
+          ],
+          [
+            27,
+            39
+          ],
+          [
+            16,
+            5
+          ],
+          [
+            17,
+            6
+          ],
+          [
+            18,
+            7
+          ],
+          [
+            19,
+            4
+          ],
+          [
+            28,
+            43
+          ],
+          [
+            29,
+            40
+          ],
+          [
+            30,
+            41
+          ],
+          [
+            31,
+            42
+          ],
+          [
+            20,
+            9
+          ],
+          [
+            21,
+            10
+          ],
+          [
+            22,
+            11
+          ],
+          [
+            23,
+            8
+          ],
+          [
+            32,
+            44
+          ],
+          [
+            33,
+            47
+          ],
+          [
+            34,
+            45
+          ],
+          [
+            35,
+            46
+          ],
+          [
+            48,
+            49
+          ],
+          [
+            50,
+            51
+          ],
+          [
+            52,
+            53
+          ],
+          [
+            54,
+            55
+          ],
+          [
+            56,
+            57
+          ],
+          [
+            58,
+            59
+          ]
+        ],
+        "Q": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            14,
+            48
+          ],
+          [
+            38,
+            51
+          ],
+          [
+            18,
+            52
+          ],
+          [
+            42,
+            55
+          ],
+          [
+            22,
+            56
+          ],
+          [
+            46,
+            59
+          ]
+        ],
+        "b": 30,
+        "colour": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "groups": [
+          [
+            0,
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "h": 3,
+        "incidences": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "labels": [
+              0,
+              4
+            ]
+          },
+          {
+            "edge": [
+              0,
+              2
+            ],
+            "labels": [
+              1,
+              8
+            ]
+          },
+          {
+            "edge": [
+              1,
+              2
+            ],
+            "labels": [
+              5,
+              9
+            ]
+          }
+        ],
+        "initial_U": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          48,
+          50,
+          52,
+          54,
+          56,
+          58
+        ],
+        "labels": [
+          [
+            0,
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            0,
+            [
+              0,
+              2
+            ]
+          ],
+          [
+            0,
+            null
+          ],
+          [
+            0,
+            null
+          ],
+          [
+            1,
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            1,
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            1,
+            null
+          ],
+          [
+            1,
+            null
+          ],
+          [
+            2,
+            [
+              0,
+              2
+            ]
+          ],
+          [
+            2,
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            2,
+            null
+          ],
+          [
+            2,
+            null
+          ]
+        ],
+        "operations": [
+          [
+            0,
+            0,
+            12
+          ],
+          [
+            1,
+            1,
+            13
+          ],
+          [
+            2,
+            2,
+            14
+          ],
+          [
+            3,
+            3,
+            15
+          ],
+          [
+            4,
+            4,
+            16
+          ],
+          [
+            5,
+            5,
+            17
+          ],
+          [
+            6,
+            6,
+            18
+          ],
+          [
+            7,
+            7,
+            19
+          ],
+          [
+            8,
+            8,
+            20
+          ],
+          [
+            9,
+            9,
+            21
+          ],
+          [
+            10,
+            10,
+            22
+          ],
+          [
+            11,
+            11,
+            23
+          ]
+        ],
+        "predecessor": [
+          3,
+          0,
+          1,
+          2,
+          7,
+          4,
+          5,
+          6,
+          11,
+          8,
+          9,
+          10
+        ],
+        "q": 12,
+        "representatives": [
+          2,
+          6,
+          10
+        ],
+        "successor": [
+          1,
+          2,
+          3,
+          0,
+          5,
+          6,
+          7,
+          4,
+          9,
+          10,
+          11,
+          8
+        ]
+      },
+      "name": "triangle_unbudgeted_primary",
+      "optimal_certificate": {
+        "U": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          48,
+          50,
+          52,
+          54,
+          56,
+          58
+        ],
+        "actual_cost": 2,
+        "added": [
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "beta_I_lower": 88,
+        "cover": [
+          14,
+          18
+        ],
+        "final_odd_components": 26,
+        "initial_cost": 3,
+        "initial_odd_components": 24,
+        "ledger": {
+          "cost": 2,
+          "group_charges": [
+            {
+              "boundary_labels": [],
+              "charge": 1,
+              "representative_selected": true,
+              "vertex": 0
+            },
+            {
+              "boundary_labels": [],
+              "charge": 1,
+              "representative_selected": true,
+              "vertex": 1
+            },
+            {
+              "boundary_labels": [],
+              "charge": 0,
+              "representative_selected": false,
+              "vertex": 2
+            }
+          ],
+          "residual_edges": [],
+          "rounded_candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "rounded_cost": 2,
+          "selected_candidates": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "source_cover": [
+            0,
+            1
+          ],
+          "touched_groups": [
+            0,
+            1
+          ]
+        },
+        "matching": [
+          [
+            14,
+            48
+          ],
+          [
+            18,
+            52
+          ]
+        ],
+        "owners": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          20,
+          21,
+          22,
+          23,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          49,
+          51,
+          53,
+          55,
+          57,
+          59
+        ],
+        "removed": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "saving": 1,
+        "selected_candidates": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "witnesses": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          19,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          48,
+          50,
+          52,
+          54,
+          56,
+          58
+        ]
+      }
+    }
+  ],
+  "largest_physical_order": 17250,
+  "scope": "UNBUDGETED primary unit matching-cost minimization on all subsets of a fixed distinct-owner candidate list. Exact charged-group rounding and optimumtauH; connected bridgeless normalization gives NP-complete primarycost decision on two-connected bipartite physical min2/max3 graphs, minimum square omissions and auxiliaryP4/P2. NO operation budget or tie-break. Fixed-list only, not all-helper global omission, SF/beta, weightedTH or grid hardness."
+}
