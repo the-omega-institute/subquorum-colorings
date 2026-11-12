@@ -1,5 +1,32 @@
 # Current continuation
 
+The [joint-margin and physical-boundary theorem](docs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md)
+now gives the unrestricted bound
+`SF_2(G)-beta_2(G)<=floor(31n/314)` for EVERY finite simple bipartite graph
+of maximum degree at most three. It applies to every minimal forming S,
+including the empty graph, with no connectivity, minimum-degree, side-balance
+or selected-component condition. The real coefficient improves8/81 by
+exactly1/25434; the sharp coefficient remains open.
+
+Bad physical-path prefixes and bad auxiliary paths share ONE class-margin
+allocation: `2t_b+2s_b<=24sigma`. Isolated good ordinary components and
+physical-path endpoint events give an actual template set satisfying
+`5|D|>=13b+3sigma+(3b_G+t_g)/4`. The ambient boundary has at most
+`2(t_g+t_b)+2(s_g+s_b)+3q` edges. Combining the retained-set and compatible
+exterior-independent-set ALTERNATIVES yields an exact nonnegative ledger
+for62n-628d. The proof never unites incompatible retained and exterior sets.
+
+Independent exact23-file mathematical/executable audit ACCEPT covers this
+proof, module, checker, manuscript subsection5.5 and abstract; its full actual
+execution evidence is in `output/joint-margin-review.json`. The original
+local checker exits0 in10.805315500008874s with separately captured empty
+stderr. Controls cover43,862minimal sets,5,200exact small templates,
+19,938phases,36,520endpoint witnesses and15,137conditional expectations.
+Larger prescribed templates check actual certificates/all phases; no large
+unrestricted optimizer or Lean. The complete25-page working manuscript was
+compiled twice, all pages rendered, and new proof pages inspected. The
+October submitted paper remains byte-identical. No email or submission.
+
 The [zero-budget repair and strictness theorem](docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md)
 now exclude EVERY positive unrounded equality in the unrestricted subcubic
 bound. For every nonempty finite simple bipartite graph of maximum degree
@@ -7,8 +34,8 @@ at most three and every minimal two-star-forming S,
 `81(|S|-beta_2(G))<8n`; consequently
 `SF_2(G)-beta_2(G)<=floor((8n-1)/81)`.
 This improves the integer bound at all positive multiples of81, including
-orders162k left by the preceding parity argument. The real coefficient8/81
-and standalone-template optimal coefficient remain open.
+orders162k left by the preceding parity argument. This earlier result is superseded by31/314 above; the sharp graph
+and standalone-template optimal coefficients remain open.
 
 At zero budget, ordinary auxiliary components can replace their phase sets
 by quotient sets, and every physical core path supplies a separate endpoint
@@ -107,7 +134,7 @@ checkers and is disclosed separately; the earlier denominator clarification
 was explicitly resolved.
 
 The preceding19/192 and31b/12 arguments below remain historical milestones;
-the current unrestricted coefficients are8/81 and13/5, respectively.
+the current unrestricted coefficients are31/314 for the graph gap and13/5 for the standalone-template lower bound, respectively.
 
 The [odd-auxiliary-cycle compensation theorem](docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md)
 proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal

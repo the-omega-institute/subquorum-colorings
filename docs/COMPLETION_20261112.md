@@ -1,5 +1,35 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Current unrestricted subcubic bound31/314: joint margin and physical boundary
+
+The [joint-margin theorem](JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md) proves
+`314(|S|-beta_2(G))<=31n` for every minimal S in every finite simple bipartite
+maximum-degree-three graph, including empty graphs. Hence the current bound
+is `SF_2-beta_2<=floor(31n/314)`. No connectivity, positive minimum degree,
+side-balance or selected-component condition. The improvement over8/81 is
+exactly1/25434; sharpness remains open.
+
+A single shared allocation pays bad physical-path triples and bad auxiliary
+path flags. Good ordinary components and good endpoint events strengthen
+actual template sets. The physical boundary slots permit a second actual
+full-graph construction with an exterior independent set. These are compared
+with the retained-set alternative, never united. The exact seven-term
+nonnegative certificate is62n-628d=W+61r+147(alpha+pi)+86(e-b3)+25b3+60q+294tau.
+
+Exact23-file independent audit ACCEPT, including subsection5.5/abstract,
+with original full checker execution and direct fresh-report comparison;
+see `output/joint-margin-review.json` for complete evidence. Local checker
+exit0 in10.805315500008874s, empty separately captured stderr;43,862minimal
+sets,5,200exact small templates,19,938phases,36,520endpoint witnesses and
+15,137conditional checks. Targeted controls include mixed-cycle loss,
+bad-prefix triple and auxiliary-path flag on one class with disjoint physical
+supports. Larger models have no unrestricted exact optimization claim.
+Complete25page working manuscript compiled twice/rendered/visually checked.
+No Lean, email, Mac Studio, submission or Octoberpaper change.
+Full goalACTIVE for optimal graph/template coefficients,cubic specified-star
+existence,simultaneous physical multiHall completion,unit5/6 and grid equality.
+
+
 ## Strict subcubic bound: all positive unrounded equality is impossible
 
 The [zero-budget repair theorem](ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md)
@@ -8,7 +38,7 @@ simple bipartite maximum-degree-three graph. Thus the unrestricted integer
 bound is `SF_2-beta_2<=floor((8n-1)/81)`. No connectivity, minimum-degree,
 selected-component or side-balance condition. All positive81d=8n equality
 cases are settled negatively; they are no longer an open existence problem.
-The asymptotic8/81 and standalone-template13/5 questions remain open.
+The graph coefficient is now improved to31/314 above; sharp graph and standalone-template13/5 questions remain open.
 
 At sigma0 the new physical bound is `20beta(H)>=52b+3bO+t`.
 Ordinary auxiliary components gain bO/4 by componentwise quotient replacement;
@@ -50,8 +80,7 @@ Positive unrounded equality81d=8n forces
 `n162k,d16k,a=p=2k,b30k,b3=0,u62k,R32k,S98k,beta82k` for k>=1.
 The parity proof yields the unconditional refinement
 `SF_2-beta_2<=floor(8n/81)-1_{n=81 mod162}` for every nonempty
-bipartite maximum-degree-three graph. The asymptotic8/81 coefficient
-has not changed; the strict theorem above now excludes all those equality cases.
+bipartite maximum-degree-three graph. The earlier strict theorem excludes all those equality cases; the joint-margin theorem above now improves the real coefficient too.
 
 A connected50-vertex template has exact value26 within each of the two
 specified one-core-side QUOTIENT construction families and every full
@@ -72,7 +101,7 @@ compiled twice and visually checked. No Lean, email or submission.
 All outstanding collaboration problems listed below remain tracked.
 
 
-## Current unrestricted bound8/81 and sharp phase coefficient1/3
+## Earlier unrestricted bound8/81 and sharp phase coefficient1/3
 
 The complete [cycle-event pairing proof](SHARP_ODD_CYCLE_PHASE_COMPENSATION.md)
 proves `81(|S|-beta_2(G))<=8n` for arbitrary minimal two-star-forming S in
@@ -1209,7 +1238,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Unrestricted gap at maximum degree three | Strict improvement proved: every minimal S in a nonempty graph satisfies |S|-beta_2<=floor((8n-1)/81), without connectivity, minimum-degree or selected-component restrictions. All positive unrounded equality cases are excluded; the sharp asymptotic coefficient remains open |
+| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(31n/314), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. All positive8n/81 equality cases were already excluded; the sharp coefficient remains open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:
