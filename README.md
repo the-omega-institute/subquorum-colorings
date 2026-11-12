@@ -6,14 +6,15 @@ even with two-connectivity. For each p=Delta-1>=5 and k>=1 the explicit
 bipartite family has n=(12p+2)k, a minimal selected-star/isolate set of
 size8pk, true beta_2=7pk, minimum degree2 and maximum degree p+1. Its
 selected gap pk attains the free-unused upper coefficient
-`(Delta-1)/(12(Delta-1)+2)`. A general exact witness-interface formula
-keeps one total degree capacity at each common unused vertex. Two fixed
-computer-assisted base caps at orders62 and74, plus written shared-vertex
-and cyclic composition proofs, give all degrees and all k. At maximum
+`(Delta-1)/(12(Delta-1)+2)`. A single explicit circulant construction and a pure combinatorial
+three-case cap prove the result for every p>=5, with no finite base-cap
+premise. A separate exact witness-interface formula keeps one total degree
+capacity at each unused vertex and independently verifies the implementation. At maximum
 degree6 the coefficient is exactly5/62, closing the earlier interval.
 The local checker passes556 interface graphs,2,819,008 independent one-part
 subsets, all59,049 p5 ternary wing states and29 physical family models.
-Independent final proof/source/execution review is pending. These claims
+The revised direct-proof source has its own final proof/execution audit,
+currently pending; the earlier fixed-base source remains separately preserved. These claims
 concern specified minimal selections inducing stars/edges/isolates; exact
 SF values, minimum degree>=3, maximum degree<=5, regular sharpness and
 general rectangular-grid equality remain separate questions.

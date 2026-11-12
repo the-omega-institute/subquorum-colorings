@@ -118,12 +118,8 @@ def basis_adjacency(q):
 
 def degree_adjacency(p):
     if type(p)is not int or p<5:raise ValueError('Degree parameter p>=5 required.')
-    q=5 if p%2 else 6;basis=basis_adjacency(q);adj=[0]*(2*p)
-    for a,mask in enumerate(basis):adj[a]=mask
-    for first in range(q,p,2):
-        mask=((1<<4)-1)<<(2*first)
-        for a in range(2*first,2*first+4):adj[a]=mask
-    return adj
+    n=2*p;offset=p-1 if p%2 else p
+    return [sum(1<<((a+d)%n)for d in range(p-1)) | ((1<<((a+offset)%n))if a%2==0 else 0)for a in range(n)]
 
 
 def degree_fixture(p):

@@ -2,8 +2,8 @@
 
 The later [sharpness construction](SHARP_MINIMUM_TWO_DEGREE_BOUND.md)
 attains this coefficient for delta=2 and every integer Delta>=6, even
-with two-connectivity. That construction has its own general proof,
-fixed computer-assisted basis certificates and independent review record.
+with two-connectivity. That construction has a pure all-parameter combinatorial proof and its
+own independent review record.
 The upper-bound proof and its original audit below retain their scope.
 
 Let G be a nonempty finite simple bipartite graph of order n, with minimum

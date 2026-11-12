@@ -220,7 +220,7 @@ def lifts():
         else:assert connected(g)
         rows.append({'p':p,'k':k,'order':len(g),'selected':len(S),'attaining_beta':len(Q),'selected_gap':p*k,
                      'literal_deletion_failures':failures,'single_vertex_deletions':len(g)if p<=10 and k<=3 else 0})
-    # Direct exact controls on the first shared-u extensions and their port deletion.
+    # Direct exact controls on larger circulant parameters and their safe-edge deletion.
     extension=[]
     for p in(7,8):
         adj=opt.degree_adjacency(p)
@@ -229,7 +229,7 @@ def lifts():
             if removed:new[1]^=1<<1
             result=opt.exact(p,p,new);assert result['beta']==7*p
             extension.append({'p':p,'removed':removed,'beta':result['beta'],'feasible_pairs':sum(r['feasible_pairs']for r in result['rows'])})
-    return {'physical_models':rows,'exact_extension_controls':extension}
+    return {'physical_models':rows,'exact_larger_parameter_controls':extension}
 
 
 def invalid_controls():
@@ -245,7 +245,7 @@ def invalid_controls():
 def main():
     report={'status':'PASS','local_and_wing_controls':table_controls(),'small_graph_controls':small_controls(),
             'sharp_base':sharp_controls(),'lifts':lifts(),'invalid_domain_rejections':invalid_controls(),
-            'scope':'General exact-interface and all-k proofs are written separately. Fixed62/74-vertex caps are computer-assisted integer certificates, independently recomputed by closed-table/full-boundary enumeration. Large-lift optima follow the general composition theorem, not finite sampling. No exact SF value or unrestricted selected-structure claim.'}
+            'scope':'General exact-interface and all-k proofs are written separately. Fixed62/74-point exact optima are independently recomputed by closed-table/full-boundary enumeration. The all-p combinatorial proof and all-k composition prove the theorem; finite checks are not used to infer it. No exact SF value or unrestricted selected-structure claim.'}
     out=ROOT/'output/sharp-minimum-two-degree-check.json';out.write_text(json.dumps(report,indent=2,sort_keys=True)+'\n')
     print(json.dumps({'status':'PASS','small_graph_totals':report['small_graph_controls']['totals'],
                       'base_caps':{p:[r['maximum']for r in data['base_caps'].values()]for p,data in report['sharp_base'].items()},

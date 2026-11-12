@@ -1,10 +1,10 @@
-# The sharp selected-star coefficient at minimum degree two and maximum degree at least six
+# The sharp selected-star coefficient at minimum degree two and every maximum degree at least six
 
 All graphs are finite and simple. A two-star-forming set S forms every
 outside vertex using two distinct selected vertices and a not necessarily
-induced K_(1,2). The dissociation number beta_2 is the maximum cardinality
-of a vertex set inducing maximum degree at most one. Minimality below
-means inclusion-minimality. Put d=|S|-beta_2(G) and n=|V(G)|.
+induced K_(1,2). Beta_2(G) is the unrestricted dissociation number, the
+maximum cardinality of a set inducing maximum degree at most one.
+Minimality means inclusion-minimality. Put d=|S|-beta_2(G), n=|V(G)|.
 
 **Theorem.** For every integer Delta>=6, among bipartite graphs of minimum
 degree at least2 and maximum degree at most Delta, with a specified
@@ -13,25 +13,231 @@ asymptotic gap coefficient is
 
     C_Delta=(Delta-1)/[12(Delta-1)+2].                    (1)
 
-The universal upper statement d<=floor(C_Delta*n) is the preceding
+The universal bound d<=floor(C_Delta*n) is the preceding
 [free-unused-vertex theorem](FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md).
-Here we prove attainment by two-connected graphs at every order
-n=[12(Delta-1)+2]k, k>=1. Their exact selected sizes and unrestricted
-optima are
+For each p=Delta-1>=5 and k>=1, the explicit two-connected family below
+attains it, with
 
-    p=Delta-1>=5,
     n=(12p+2)k, |S|=8pk, beta_2(G)=7pk, d=pk.           (2)
 
-Thus the same sharp coefficient holds even after imposing two-connectivity.
-This does not assert an exact SF_2 value, pointwise attainment at other
-orders, a structure theorem for every maximizing minimal selection, or
-sharpness at maximum degree2,...,5 or minimum degree at least3. These
-nonregular graphs have vertices of degree at least6 and are not full grids.
+Both the all-p exact cap and the all-k composition have complete
+combinatorial proofs. Finite computations verify the implementation;
+no enumerated base cap is an assumption of this theorem.
+This is not an exact SF_2 value or pointwise attainment at other orders.
+No structure theorem for every maximizing minimal selection, sharpness
+at maximum degree<=5 or minimum degree>=3, regular theorem or grid theorem
+is claimed. The family is nonregular and has vertices of degree>=6.
 
-The proof has three distinct parts: a general exact witness-interface
-formula; computer-assisted integer caps for fixed bases of orders62 and74;
-and written all-p, all-k composition arguments. The infinite conclusion
-is not inferred from testing finitely many lifts or degree parameters.
+## A single explicit construction for every p>=5
+
+The base H_p has blocks j=0,...,2p-1. Write
+
+    c_j=6j, x_j=6j+1, y_j=6j+2, i_j=6j+3,
+    a_j=6j+4, b_j=6j+5,
+
+and add c_jx_j,c_jy_j,x_ja_j,y_jb_j,i_jb_j. The left wing comprises
+blocks0,...,p-1 and the right wing blocks p,...,2p-1. Reindex each wing
+by j in Z/pZ and write L_j,R_j for its block positions. In each wing,
+witness index t=2j denotes a_j and t=2j+1 denotes b_j.
+
+Join left witness t to right witnesses t,t+1,...,t+p-2 modulo2p.
+For even t also join it to right witness t+h, where
+
+    h=p-1 if p is odd, and h=p if p is even.             (3)
+
+This extra offset is even and outside0,...,p-2, so it adds one new edge
+from every a-witness to an a-witness. Add u_L=12p adjacent to every left
+i and to y_0; add u_R=12p+1 adjacent to every right i and to y_p.
+Let S consist of c,x,y,i in every block, so |S|=8p and H_p[S] consists
+of2p copies of P3 and2p isolates.
+
+Centres, ordinary leaves and isolates have degree2. The two distinguished
+y vertices have degree3. Each u has degree p+1. A-witnesses have p cross
+neighbours and one selected neighbour; b-witnesses have p-1 cross
+neighbours and two selected neighbours. The right cross degrees agree:
+the baseline has degree p-1, and the extra even-offset matching adds one
+edge exactly at the right a-witnesses. Hence delta(H_p)=2,Delta(H_p)=p+1.
+Orient the wings oppositely, with c,a,b,u of a wing in one colour and
+x,y,i in the other. Every edge respects the resulting bipartition.
+
+Every outside witness has an active selected leaf, and each u has its
+distinguished active leaf, so S is forming. Deleting x_j makes a_j fail;
+deleting y_j leaves b_j with only the inactive isolate i_j; deleting c_j
+leaves a_j with only inactive x_j; deleting i_j makes i_j itself outside
+with no selected neighbour. These are literal one-deletion failures,
+which prove inclusion-minimality because formation is upward closed.
+All later changes have two originally outside endpoints and preserve them.
+
+Set e=b_0^L b_0^R, with physical labels(5,6p+5), and put H_p^-=H_p-e.
+We prove beta_2(H_p^-)=beta_2(H_p)=7p without finite enumeration.
+
+## Witness relations that survive deletion of e
+
+For every p>=5, the following relations hold in H_p^-:
+
+- a_j^L meets both witnesses of R_j and both of R_(j+1), and meets
+  a_(j+2)^R. The last edge has offset4; at p=5 it is the extra edge,
+  while at p>=6 it belongs to the baseline.
+- b_j^L meets both witnesses of R_(j+1), and meets a_(j+2)^R.
+- Consequently L_j and R_(j+1) have complete K_(2,2) witness adjacency.
+- a_k^R meets both witnesses of L_(k-1) and of L_(k-2), while b_k^R
+  meets both witnesses of L_(k-1).
+
+Every displayed edge survives: the only deleted edge is b_0^L b_0^R,
+which has offset0. Additional witness edges only restrict dissociation.
+
+Fix an arbitrary dissociation set D of H_p^-. A chosen witness is
+cross-saturated when it has a chosen witness neighbour in the opposite
+wing. Such a witness has no other chosen neighbour. Call a block occupied
+if at least one witness is chosen; good if occupied and its b-witness
+is not cross-saturated; and full cross-free if both witnesses are chosen
+and neither is cross-saturated. Let o_T,g_T,f_T count these types in wing T.
+An absent b is not cross-saturated, so a block containing only a is good,
+even when a itself is cross-saturated.
+
+## Three local bounds, with one capacity for each u
+
+Each six-vertex block contributes at most3 plus its good indicator.
+If neither witness is chosen, x,c,y contribute at most2 and i at most1.
+If b is cross-saturated, neither y nor i can be chosen; a,x,c form a
+P3 and contribute at most2, together with b at most3. In all other
+occupied blocks, partition the path a-x-c-y-b-i into two P3's to get4.
+Thus when u_T is absent,
+
+    |D intersect V_T|<=3p+g_T.                           (4)
+
+If u_T is chosen, at most ONE of all p isolates i in that wing is chosen.
+Ignoring i, the path a-x-c-y-b contributes at most
+
+    2+[occupied]+[full cross-free].                      (5)
+
+With neither witness chosen it is at most2. With one chosen it is at
+most3. With both chosen and either cross-saturated, its adjacent x or y
+is excluded and the contribution is at most3. With both cross-free it
+is at most4. Adding u_T and at most one isolate to the sum of(5) gives
+
+    |D intersect V_T|<=2p+2+o_T+f_T  if u_T is chosen.    (6)
+
+The u-to-distinguished-y edge can only strengthen this upper bound.
+Its one total neighbour capacity has not been assigned once per block.
+
+Finally every entire wing, including its u, contributes at most4p.
+Partition the distinguished block and u into P3={a,x,c} and
+C4={y,b,i,u}, each of dissociation number2. Each other block is a P6
+of dissociation number4. Therefore
+
+    |D intersect V_T|<=4p.                              (7)
+
+## Neither unused vertex is chosen
+
+Partition the2p block positions into slots P_j=(L_j,R_(j+1)). If both
+blocks in a slot are good, complete K_(2,2) adjacency implies that neither
+contains a chosen b: any such b would have a chosen cross neighbour and
+would not be good. Their chosen witnesses are exactly a_j^L,a_(j+1)^R,
+which are adjacent and hence both cross-saturated. The witness relations
+then force every witness in R_j and in L_(j-1) to be absent. Thus the
+preceding slot P_(j-1) is empty of chosen witnesses, in particular of
+good blocks. The predecessor map is injective. If d_2,d_0 count double-good
+and empty-of-good slots, then d_2<=d_0 and
+
+    g_L+g_R=p+d_2-d_0<=p.
+
+Applying(4) to both wings proves |D|<=7p.
+
+## Both unused vertices are chosen
+
+For every slot P_j, the sum of occupied and full-cross-free indicators
+of its two blocks is at most2. If only one block is occupied it contributes
+at most2. If both are occupied, complete adjacency makes every chosen
+witness cross-saturated, so neither block is full cross-free and the sum
+is exactly2. Consequently o_L+o_R+f_L+f_R<=2p. By(6),
+
+    |D|<=4p+4+2p=6p+4<=7p,
+
+where the last inequality follows from p>=5.
+
+## Exactly one unused vertex is chosen: both orientations
+
+First let u_L be chosen and u_R absent. Let J be the indices of good
+right blocks and r=|J|. Equation(4) bounds the right wing by3p+r.
+We prove the left wing contributes at most4p-r.
+
+If r=0, use(7). If 1<=r<=p-1, then o_L<=p-1. Indeed, if all left blocks
+were occupied, a chosen a_k^R would meet a chosen witness in each of
+the distinct blocks L_(k-1),L_(k-2), violating degree1. A chosen b_k^R
+in a good block would meet a chosen witness in L_(k-1), contradicting
+its cross-isolation. A good right block would therefore be impossible.
+
+Any chosen witness in R_k excludes both L_k and L_(k-1) from being full
+cross-free: a_k^L meets both witnesses of R_k, and L_(k-1),R_k are completely
+joined. Hence
+
+    f_L<=p-|J union(J-1)|<=p-r-1.
+
+The last step uses only that J is a nonempty proper subset of the cyclic
+index set. Equality |J union(J-1)|=|J| would imply invariance under one
+cyclic shift, forcing J to be empty or the whole cycle. Combining with(6),
+
+    |D intersect V_L|<=2p+2+(p-1)+(p-r-1)=4p-r.
+
+If r=p, then f_L=0 and o_L<=p-2. We have excluded o_L=p. If o_L=p-1,
+let L_h be its unique empty block. A good R_k containing a_k^R requires
+an empty block among L_(k-1),L_(k-2), so k is h+1 or h+2. A good R_k
+containing b_k^R requires L_(k-1) empty, so k=h+1. Thus all good right
+indices would lie in a set of size2, contradicting r=p>=5. Equation(6)
+now gives |D intersect V_L|<=2p+2+(p-2)=3p=4p-r. In every case the total
+is at most(3p+r)+(4p-r)=7p.
+
+For u_R chosen and u_L absent, the needed index relations are explicit:
+a_j^L meets both witnesses in R_j and R_(j+1); b_j^L meets both in R_(j+1);
+and any chosen witness in L_j excludes full cross-free blocks R_(j+1)
+and R_(j+2). The last exclusion uses a_(j+2)^R, which meets both witnesses
+of L_j. If J indexes good left blocks, the same proof gives o_R<=p-1
+and f_R<=p-|(J+1) union(J+2)|<=p-r-1 for 1<=r<=p-1. When r=p, a unique
+empty right block R_h would permit good left indices only h,h-1, again
+impossible. Thus o_R<=p-2,f_R=0. The r=0 case uses(7). This proves the
+same total bound in the second orientation; no graph symmetry is assumed.
+
+## Exact cap, two-connectivity and arbitrary scale
+
+The three cases prove beta_2(H_p^-)<=7p for every p>=5. For attainment,
+take c,x,i in every left block and x,y,a,b in every right block, and
+neither u. This7p-set consists only of left c-x pairs, isolated left i's,
+and right x-a,y-b pairs. No cross-witness edge has both ends chosen.
+It is dissociation in both H_p and H_p^-. Since adding edges cannot
+increase beta,
+
+    7p<=beta_2(H_p)<=beta_2(H_p^-)<=7p.                  (8)
+
+The witness edges of offsets2 and3 form a Hamiltonian cycle: follow
+L_t--R_(t+3)--L_(t+1) with witness indices modulo2p. It visits all4p
+witnesses, and none of its edges is e. Start from this cycle and add
+all other witness edges of H_p^-. Add ears a_j-x_j-c_j-y_j-b_j. In each wing
+add b_(j0)-i_(j0)-u-i_(j1)-b_(j1) for two distinct indices, then ears
+b_j-i_j-u for its remaining isolates, and finally its u-y edge. Each
+ear has distinct old endpoints and new internal vertices. After any
+one deletion its surviving segments attach to a surviving endpoint,
+while the old graph remains connected. This proves H_p^- is two-connected.
+
+Take k disjoint copies of H_p^-. Add a in copy j to b in copy(j+1 modulo k),
+where a=b_0^L,b=b_0^R. At k=1 this restores e. At k>=2 the new edges are
+simple cross-copy edges. Every port loses and gains one edge, preserving
+all degrees and the bipartition. All changed edges have two originally
+outside endpoints, preserving selected adjacency and every one-deletion
+failure, including at a newly omitted selected vertex.
+
+Any dissociation set restricts to at most7p in each copy by(8). Repeating
+the displayed7p-set attains7pk: it omits every left port, so no new edge
+has both ends chosen. This proves the exact unrestricted beta in(2).
+Each base remains connected after any one deletion. Distinct entry and
+exit ports imply a deletion destroys at most one link of the cycle of
+bases, whose surviving links still connect all pieces. At k=2 there
+are two links at distinct ports and one survives; k=1 follows from the
+base. Therefore the family is two-connected for every k>=1.
+
+Finally p=Delta-1 gives the ratio(1), proving sharpness for every
+integer Delta>=6, even under two-connectivity. The proof has no finite
+base-cap premise and makes no exact SF_2 claim.
 
 ## An exact interface formula with one unused vertex per wing
 
@@ -39,7 +245,7 @@ Take positive integers p_L,p_R. There are p_L six-vertex blocks in the
 left wing and p_R in the right wing. Block j has vertices c,x,y,i,a,b
 and edges
 
-    cx,cy,xa,yb,ib.                                     (3)
+    cx,cy,xa,yb,ib.                                     (I1)
 
 Select c,x,y,i in every block. In each wing add a vertex u adjacent to
 all its i vertices and to the y of one distinguished block, indexed0
@@ -97,7 +303,7 @@ distinguished block, and let epsilon be1 if some block has beta=0 and0
 otherwise. The exact optimum on that wing, with the witness states fixed,
 is
 
-    M=w+max(F_sum,1+G_sum+epsilon).                      (4)
+    M=w+max(F_sum,1+G_sum+epsilon).                      (I2)
 
 Indeed, when u is absent, blocks are independent and give F_sum. When u
 is present, its ONE degree capacity can be used in at most one block.
@@ -108,7 +314,7 @@ constructions as well. The only cross-wing edges are the fixed witness
 edges; their consumed capacities have already been marked by state2.
 Therefore the exact unrestricted formula is
 
-    beta_2(G_R)=max_(admissible A,B)(M_L+M_R).             (5)
+    beta_2(G_R)=max_(admissible A,B)(M_L+M_R).             (I3)
 
 This proves the formula for every positive wing size and every interface,
 not just the two bases below. The implementation instead uses the
@@ -120,166 +326,22 @@ There are at most2^[2(p_L+p_R)] witness subset pairs. A direct evaluation
 uses O(p_L+p_R) local operations per pair, apart from graph/bit overhead.
 No polynomial-in-width claim is made.
 
-## Two fixed bases and their exact caps
+## Verification and provenance
 
-Let q be5 or6. Use q blocks in each wing, labelled j=0,...,2q-1,
-with c_j=6j,x_j=6j+1,y_j=6j+2,i_j=6j+3,a_j=6j+4,b_j=6j+5.
-The two unused vertices have labels12q and12q+1. The distinguished
-blocks are0 and q. Index the witnesses of each wing by t=0,...,2q-1,
-with even t denoting a and odd t denoting b.
+The exact-interface formula above is a separate general result and
+verification tool; the sharpness proof does not depend on evaluating it.
+Run `python3 -B scripts/check_sharp_minimum_two_degree.py`. Literal local
+stars, independent one-part optima on556 interface graphs, every59049
+p5 ternary wing state, physical boundary scores at p5,p6, and29 physical
+all-degree/lift models check the implementation. The report separates
+finite verification from the all-p and all-k combinatorial proofs.
 
-Join left witness t to right witnesses
-
-    t,t+1,...,t+q-2 modulo2q,
-
-and for even t also join it to right t+h, where h=4 at q=5 and h=6
-at q=6. Thus a witnesses have q cross neighbours and b witnesses q-1;
-parity makes the right degrees identical. Every witness has full degree
-q+1 after its one or two selected neighbours are included. Each unused
-vertex has degree q+1. Centres, ordinary leaves and isolates have degree2;
-the two distinguished leaves have degree3. Hence the bases have exact
-minimum degree2 and maximum degree q+1.
-
-Call these bases B_q. Put e_q=b_0b_q, with physical labels(5,6q+5).
-The fixed exact integer certificates establish
-
-    beta_2(B_5)=beta_2(B_5-e_5)=35,
-    beta_2(B_6)=beta_2(B_6-e_6)=42.                     (6)
-
-The explicit lower set takes c,x,i in every left block and x,y,a,b in
-every right block. It avoids both unused vertices, has size7q, and is
-dissociation: left c-x and right x-a,y-b are matching edges, left i
-vertices are isolated, and no cross-witness edge has both ends chosen.
-It remains valid after deleting e_q.
-
-For the upper certificate, apply the general formula(5) to the explicit
-interface masks printed in the two coordinate fixtures. For each left
-witness subset compute the maximum over every admissible right subset.
-There are1024 left subsets at q=5 and4096 at q=6. The checker independently
-enumerates all pairs of PHYSICAL witness subsets and evaluates the closed
-table(4), comparing every row cap and every admissible-pair count with
-the optimizer's pruned subset loop and two-state DP. The report retains
-the full row-cap and count vectors and their hashes, not only a solver's
-claimed optimum. Their largest entries are35 and42 respectively, both
-before and after deletion. The local table and formula prove why these
-finite integer certificates are upper bounds on unrestricted beta.
-
-This is a computer-assisted part of the theorem: it certifies two fixed
-labelled bases, not an infinite-family conclusion by sampled enumeration.
-The written general formula justifies the complete search domain. The
-written composition proofs below supply all other degrees and all k.
-Deleting the different outside edge a_0a_q gives cap36 at q=5 and43 at
-q=6; therefore outside endpoints alone do not establish the needed cap.
-
-## Two-connectivity before the safe-edge composition
-
-The witness interface of B_q-e_q contains the Hamiltonian cycle formed
-by offsets2 and3: repeatedly use
-
-    L_t -- R_(t+3) -- L_(t+1),
-
-with indices modulo2q. It visits every witness once and returns to L_0.
-These edges exist for both q, and none is the deleted offset0 edge.
-Starting from this cycle, all other witness-interface edges can be added.
-For every block add the ear a_j-x_j-c_j-y_j-b_j. In either wing, introduce
-its unused vertex and two isolates through the ear
-b_(j0)-i_(j0)-u-i_(j1)-b_(j1), using distinct j0,j1. Introduce each other
-isolate through the ear b_j-i_j-u. Add the distinguished u-y edge last.
-Each ear has distinct old endpoints and new internal vertices. After
-any one vertex deletion its surviving path segments attach to surviving
-endpoints, while the old graph remains connected. Thus ear addition
-preserves two-connectivity. This proves B_q-e_q is two-connected for
-both bases, independently of finite deletion tests.
-
-## All maximum degrees from two bases and24-vertex modules
-
-Let p>=5. Set q=5 if p is odd and q=6 if p is even, and put m=(p-q)/2.
-Take B_q together with m extra pairs of wings, each containing two
-six-vertex blocks per wing with complete K_(4,4) witness adjacency.
-These24-vertex modules are G_(2,2) from the earlier selected-star proof.
-Do not add new unused vertices. Instead join every newly added isolate
-i in each wing to the SAME unused vertex u of that wing in B_q. No
-new distinguished u-y edge is added. Call the result H_p.
-
-For completeness a24-vertex module without u has beta14: a wing
-partitions into four P3's and contributes at most8; a wing without
-chosen witnesses contributes at most6 (two selected P3's plus isolates).
-If both wings contain witnesses, completeness forces exactly one on each
-side and bounds the total by7+7=14. If one side is empty, the bound is
-8+6=14. Taking c,x,i on one side and x,y,a,b on the other attains14.
-This local proof does not require enumerating these modules.
-
-The two common unused vertices now have degree p+1. The initial witness
-degrees are q+1<=p+1; new private witnesses have degree5 and new helped
-witnesses degree6. Every selected vertex has degree2 except the two
-distinguished leaves of degree3. Thus delta(H_p)=2 and Delta(H_p)=p+1.
-Its order is12p+2 and its specified minimal set has size8p. Formation
-and every literal deletion failure follow exactly as in(3); the common
-u vertices still have their original active distinguished leaves.
-
-Partition the vertex set into the initial B_q, including both u vertices,
-and the m added24-vertex modules. The induced graphs on these parts are
-precisely B_q and those modules; edges from a common u to a new isolate
-cross the partition and can only restrict a dissociation set. Consequently
-(6) and the module cap give beta(H_p)<=7q+14m=7p. The common explicit
-maximizer avoids the two u vertices and attains7p in every part, proving
-
-    beta(H_p)=7p, beta(H_p-e_q)=7p.                    (7)
-
-The same argument proves the second equality by using B_q-e_q in the
-first part. This is an exact restriction-and-attainment argument for
-EVERY m, not repeated use of the same unused vertex as a free resource.
-
-H_p-e_q is also two-connected. A new24-vertex module together with the
-two common u vertices and their isolate edges is two-connected by the
-same ear argument from K_(4,4); no distinguished u-y edge is needed.
-Each such piece shares the two distinct vertices u_L,u_R with B_q-e_q.
-The union of two-connected graphs sharing at least two vertices is
-two-connected: after deleting any vertex, the pieces stay connected
-and have at least one shared surviving vertex. Iterating proves the
-claim for arbitrary m.
-
-## Arbitrary scale at the same maximum degree
-
-Take k disjoint copies of H_p. In each remove e_q=ab and add a in copy j
-to b in copy(j+1 modulo k). For k=1 this restores the original edge.
-For k>=2 the new edges join different copies and give no loops or
-parallel edges. Each port loses and gains one edge, so all degrees and
-the bipartition are preserved. All modified edges have two outside
-endpoints, so selected adjacency, formation and EVERY single-deletion
-failure remain unchanged, including failures at a newly omitted vertex.
-
-Any dissociation set restricts to H_p-e_q in each copy and is bounded
-by7p there. Repeating the explicit7p-set in each copy attains7pk: it
-uses no left witness and every right witness, so no new cross-copy
-edge has both endpoints selected. This proves the exact unrestricted
-beta in(2). There is no repeated assignment of a port or actual edge.
-
-Each H_p-e_q is two-connected. The cross-copy links form a cycle of
-pieces with distinct entry and exit ports. Deleting any one vertex
-keeps every piece connected and removes at most one link of that cycle.
-The surviving links still connect all pieces; for k=2 there are two
-links at distinct ports and one survives. Hence the whole graph remains
-connected after any single deletion. The k=1 case was proved above.
-
-Finally p=Delta-1 makes the gap/order ratio in(2) equal to(1). This proves
-sharpness for every integer Delta>=6, including under two-connectivity.
-It does not assert that all minimal forming sets have selected-star
-components, and it does not turn a selected gap into an exact SF value.
-
-## Reproduction and verification scope
-
-Run `python3 -B scripts/check_sharp_minimum_two_degree.py`. The optimizer
-and checker use only the standard library. Both coordinate fixtures,
-full fixed-base row certificates and the finite report are included.
-The general proof above supplies all-interface, all-p and all-k claims.
-The local/whole-wing literal controls and independent physical-boundary
-scores test the implementation, without substituting finite samples for
-those general implications. The local checker passes556 interface graphs with2,819,008 independent
-one-part subsets,59,049 complete ternary wing states, and four exact base
-caps35,35,42,42. It also checks29 physical all-degree/lift models with
-15,824 literal deletion failures and3,312 single-vertex deletions; larger
-connectivity statements use the written proof. Direct exact controls on
-the shared-u extensions p=7,8 and their safe-edge deletions give49,49,56,56.
-These ranges are listed separately in the report. Final independent
-exact-source and original-checker execution review is pending.
+An independent research response supplied the p5 good-slot argument.
+The all-p witness relations, both orientation cases and the single
+closed-form construction above are its explicitly written generalization.
+The preceding source snapshot used two fixed base certificates and a
+parity/common-vertex composition. That argument remains a valid earlier
+route, with its exact source and ongoing original review preserved.
+The present direct proof removes those computational premises. The
+revised source has its own independent proof/execution review, pending.
+No Lean, priority, authorship commitment or manuscript submission is implied.
