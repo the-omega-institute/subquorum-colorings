@@ -1,5 +1,37 @@
 # Current continuation
 
+The [zero-budget repair and strictness theorem](docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md)
+now exclude EVERY positive unrounded equality in the unrestricted subcubic
+bound. For every nonempty finite simple bipartite graph of maximum degree
+at most three and every minimal two-star-forming S,
+`81(|S|-beta_2(G))<8n`; consequently
+`SF_2(G)-beta_2(G)<=floor((8n-1)/81)`.
+This improves the integer bound at all positive multiples of81, including
+orders162k left by the preceding parity argument. The real coefficient8/81
+and standalone-template optimal coefficient remain open.
+
+At zero budget, ordinary auxiliary components can replace their phase sets
+by quotient sets, and every physical core path supplies a separate endpoint
+rounding credit. The actual compatible construction proves
+`20beta_2(H)>=52b+3b_O+t`. Template equality would force every owner and
+witness to have three internal neighbours. In the original equality ledger,
+q0 closes the helper boundary too: the template becomes a union of entire
+ambient components. The exterior6m-vertex bipartite graph then supplies an
+independent3m-set, contradicting the proposed original equality.
+
+Independent exact20-file review ACCEPT covers the general proof, module,
+checker and working-manuscript subsection5.4/revised abstract. The reviewer
+moved the expected report aside, ran the unchanged original command, exit0
+in19.268382722s, reproduced the1387-byte report byte-for-byte, and verified
+19 non-report files unchanged. Its unrelated Python-startup warning is
+preserved in full as reported in `output/zero-budget-repair-review.json`.
+The original local checker also exits0; separate local timing/stderr were
+not captured. Controls cover43,862 minimal sets,5,200 exact small templates,
+208 targeted zero-budget models,624 phases,790 endpoint witnesses and936
+closed-extraction checks. Larger models check certificates, not unrestricted
+large optima. The complete23-page working manuscript was compiled and
+visually checked. No Lean, mail, submission or Octoberpaper changes.
+
 The [exact phase-budget classification and construction ceiling](docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md)
 now refine the unrestricted result to
 `SF_2(G)-beta_2(G)<=floor(8n/81)-1_{n=81 mod162}` for every nonempty
@@ -7,7 +39,7 @@ bipartite graph of maximum degree at most three. The real coefficient stays
 8/81. The fixed-extraction budget has exact zero-set conditions and
 `sigma>=N_O/12+N_D/6`, giving
 `81d<=8n-3sigma<=8n-(N_O+2N_D)/4`. Positive unrounded equality would require
-`n=162k,d=16k`; existence of such graphs remains open.
+`n=162k,d=16k`; the strict theorem above now rules these cases out too.
 
 A connected50-vertex template has exact maximum26 in each of the two
 one-core-side QUOTIENT families and in every auxiliary phase with optimal

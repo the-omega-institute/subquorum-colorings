@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T10:31:05.328656+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "1945cc68-6ec2-4b62-aea1-7f39fed7f35f",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af5939f-eaf0-83ec-b0ad-b4422a7e7af4",
+    "usage_estimated": true
+  },
+  "source_manifest": [
+    {
+      "path": "docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md",
+      "bytes": 7964,
+      "sha256": "a4b2d62b341aa379ed937bf669e98f6bdc7e399a46c78ef91d619f665d8416c6"
+    },
+    {
+      "path": "docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md",
+      "bytes": 10027,
+      "sha256": "11bc037d367154f493bc219a72799a5c1376271ede39fac9664661ebcb0482fa"
+    },
+    {
+      "path": "docs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.md",
+      "bytes": 9478,
+      "sha256": "af97118185ebee2975943d7bb7a916aa090d73ec602ac9bfe53951dd86a59b58"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "develop/subcubic_zero_budget_repair.py",
+      "bytes": 4116,
+      "sha256": "306c9aa1192f6a34ab87b082cabe0d4f9d77aa13ecaa310afa4e36289b5470df"
+    },
+    {
+      "path": "develop/subcubic_phase_pairing.py",
+      "bytes": 5808,
+      "sha256": "5fb0351c8d4c8c44a8843e8367e88fe441f8c57116fb747c6ecb4a55de98cf7a"
+    },
+    {
+      "path": "develop/subcubic_phase_slack.py",
+      "bytes": 1790,
+      "sha256": "8d66f3cbeb03b1887bc4279438d757c4d1c86c76bf757ab4fea997dd14ea3e70"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    {
+      "path": "develop/subcubic_core_cycles.py",
+      "bytes": 3680,
+      "sha256": "eb5a055ade4830dc80cc64c58af1dfaadb7db1a968e8d7c7e11793a5e2acbff2"
+    },
+    {
+      "path": "develop/subcubic_odd_cycle_compensation.py",
+      "bytes": 4465,
+      "sha256": "8af9fcf1f0e8054472b28c8fb97d751cfc47f43f5020e2729c455745c91c2cf1"
+    },
+    {
+      "path": "scripts/check_zero_budget_repair.py",
+      "bytes": 10048,
+      "sha256": "e77142ef71255788d3ac3b8e8ccdf7097671ac678606749300d378c8a039ba96"
+    },
+    {
+      "path": "scripts/check_unrestricted_subcubic_gap.py",
+      "bytes": 9574,
+      "sha256": "73d6b2d8966fdf9c5555f4d8a4c4bc95f785d7aa8a475061390797b2463a6e1c"
+    },
+    {
+      "path": "scripts/check_subcubic_intrinsic_obstruction.py",
+      "bytes": 9946,
+      "sha256": "d9cf2cb89d693a29721ac6abab982204d220afa043595319a7f0fcce5fee1f6c"
+    },
+    {
+      "path": "scripts/check_odd_cycle_compensation.py",
+      "bytes": 13794,
+      "sha256": "7eeb632f8e878741deb9f16fa17437668cd605015a208a38fef5119192f80650"
+    },
+    {
+      "path": "develop/fixtures/three-cycle-phase-ceiling.json",
+      "bytes": 5292,
+      "sha256": "8242f12b98163f798fe0e9c69135eef54d8d8ddbc30e1ab5141c3944a345f53a"
+    },
+    {
+      "path": "develop/fixtures/three-construction-ceiling.json",
+      "bytes": 4339,
+      "sha256": "fd4a32e2917a4c98f1bbd0bc3959c89049bfacbd99e0dbd4d96dac4ea45ad389"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 82224,
+      "sha256": "59938a5aa9cca21e8b532e2771e03922b924678887797701847b9347a344879e"
+    },
+    {
+      "path": "output/zero-budget-repair-check.json",
+      "bytes": 1387,
+      "sha256": "66e5e7bbaa1bad4034c6f48cf6ccfacbce67c6ed24275fc5877d6860773ea7a7"
+    }
+  ],
+  "review_source_bytes": 225177,
+  "review_source_sha256": "e1ee653ab81187d17acb81c0a969ff2d7f514d042381df189057400d3de7cdfc",
+  "local_execution": {
+    "command": "python3 -B scripts/check_zero_budget_repair.py",
+    "exit_code": 0,
+    "report_bytes": 1387,
+    "report_sha256": "66e5e7bbaa1bad4034c6f48cf6ccfacbce67c6ed24275fc5877d6860773ea7a7",
+    "timing": "Not separately measured in this local run",
+    "stream_scope": "Unified exec output preserved; no separate stdout/stderr capture"
+  },
+  "independent_execution": {
+    "command": "python3 -B scripts/check_zero_budget_repair.py",
+    "exit_code": 0,
+    "elapsed_seconds": 19.268382722,
+    "assertions_enabled": true,
+    "expected_report_moved_aside": true,
+    "files_reconstructed_and_verified": 20,
+    "non_report_source_files_unchanged": 19,
+    "report_bytes": 1387,
+    "report_sha256": "66e5e7bbaa1bad4034c6f48cf6ccfacbce67c6ed24275fc5877d6860773ea7a7",
+    "direct_byte_comparison": true,
+    "stdout": "{\"status\": \"PASS\", \"bytes\": 1387, \"sha256\": \"66e5e7bbaa1bad4034c6f48cf6ccfacbce67c6ed24275fc5877d6860773ea7a7\"}",
+    "stderr_as_reported": "Spreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 718, in _warm_feature_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 509, in _warm_drawing_and_image_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py\", line 32861, in bring_to_front\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py\", line 764, in __call__\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py\", line 175, in call\nartifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.",
+    "older_imported_main_suites_executed": false,
+    "full50_optimum_or_lean_run": false,
+    "returned_remote_artifact_archive": false,
+    "evidence_scope": "Exact full response and local raw SSE preserved. Remote execution streams are reported in that response; no separate raw sandbox archive was returned."
+  },
+  "accepted_claims": [
+    "zero-budget componentwise quotient replacement",
+    "physical-core-path expected rounding credit",
+    "compatible polynomial conditional-expectation construction",
+    "20beta(H)>=52b+3bO+t at zero budget",
+    "necessary saturation structure for standalone-template equality13b/5",
+    "ambient helper closure and exterior independent-set contradiction",
+    "strict81d<8n and floor((8n-1)/81) for every nonempty bipartite maxdegree3 graph and minimal S",
+    "manuscript subsection5.4 and revised abstract"
+  ],
+  "limitations": [
+    "not a smaller asymptotic coefficient",
+    "standalone-template13/5 equality remains open",
+    "no cubic specified-star existence result",
+    "no new universal unit5/6 or arbitrary grid triple equality",
+    "large template controls certify physical sets/phases, not unrestricted large optima"
+  ],
+  "full_response": "Verdict: ACCEPTThe new strictness theorem is mathematically sound. I find no obstruction in the ordinary-component replacement, the physical-path endpoint credit, their simultaneous use, or the final ambient-component separation.The key distinction is correctly maintained:The new theorem excludes positive equality  $81d=8n$  in the original graph.It does not prove that an isolated partial template cannot attain  $\\beta_2(H)=13b/5$ .It does not improve the asymptotic coefficient  $8/81$ .It does not settle the cubic existence or rectangular-grid questions.I also reconstructed all 20 files and successfully executed the exact requested checker. The fresh report matches the supplied expected report byte-for-byte.1. Mathematical audit1.1 Ordinary-component replacementCorrectAt zero phase budget, every ordinary owner class is partitioned into whole monochromatic physical core  $C_4$ 's.Each such square exhausts both available core degrees of every vertex. Consequently:No core edge leaves its square.No core edge connects an ordinary auxiliary component to another auxiliary component.The owner matching and helper-witness incidences remain inside their respective auxiliary components.No physical edge connects an ordinary component to the remaining template.Thus the ordinary auxiliary components really are isolated within the partial template.For an ordinary component with  $b_j$  helpers, the zero-set classification gives  $4\\mid b_j$ .Its phase restriction has exactly\n$$b_j+b_j+\\frac{b_j}{2}=\\frac{5b_j}{2}$$\nvertices: helpers, witnesses and a dissociation set of the retained core squares.The two one-core-side alternatives have base sizes summing to  $5b_j$ .On an even- $\\ell$  cycle, their quotient gains sum to  $b_j/2$ .On a path, the two quotient orders are  $b_j/2$ , each contributing  $b_j/4$ .Therefore their larger alternative has size at least\n$$\\frac{5b_j+b_j/2}{2}=\\frac{11b_j}{4}.$$\nReplacing the phase restriction gains at least\n$$\\boxed{\\frac{b_j}{4}}.$$\nThis is a genuine componentwise improvement, not an averaging argument that silently combines incompatible dissociation sets.1.2 Physical-path endpoint creditCorrectThis is the most delicate new local argument.Let  $K$  be a physical core path, and choose one endpoint  $v$ .Write its retention literal as the condition on the auxiliary phase bit that retains its owner.There are three cases.Case 1:  $v$  is isolated.Retaining  $v$  leaves a  $P_1$ , whose surplus over  $2|V|/3$  is\n$$1-\\frac23=\\frac13.$$\nThe event has probability  $1/2$ .Case 2:  $v$  has neighbour  $u$  with a different retention literal.Retain  $v$  and omit  $u$ . The endpoint remains a  $P_1$ .These requirements are consistent even when they concern the same bit: opposite retention literals make the requirements agree.At most two independent bits are involved, so the event probability is at least  $1/4$ .Case 3:  $v,u$  have the same retention literal.Retain both. If a next vertex  $z$  exists, omit it.This is legitimate because the zero-set classification allows only two residual vertices of the owner class globally. The third vertex cannot have the same retention literal.The requirements again involve at most two consistent bits. The retained prefix is a  $P_2$ , with surplus\n$$2-\\frac43=\\frac23.$$\nThus in every case the expected rounding surplus contributed by this path is at least\n$$\\boxed{\\frac1{12}}.$$\nAll other residual pieces of the path are paths and have nonnegative rounding surplus.The important global point is that the two-vertex restriction applies across the entire owner class, not merely within one path. The proof uses precisely this stronger zero-set information.1.3 Path credit and mixed-cycle cancellationCorrectI checked the potential compatibility problem explicitly.The cycle-pairing argument assigns each physical core cycle a score of the form\n$$\\gamma\\,\\mathbf 1_{E_J}\n-\\delta\\,\\mathbf 1_{E_0}.$$\nThe endpoint argument assigns each physical core path a nonnegative event score.These scores may involve common auxiliary phase bits. That does not invalidate addition.The reason is that the physical core components are vertex-disjoint:A cycle's actual surplus dominates its cycle score pointwise.A path's actual surplus dominates its endpoint-event score pointwise.The two types of physical components do not overlap.Therefore the sum of scores is a pointwise lower bound for the total residual surplus.Independence of the scores is unnecessary.Conditional expectation can then fix the shared phase bits successively without decreasing their combined expectation.This correctly avoids the common mistake of adding expected improvements that are individually achievable but not simultaneously realizable.1.4 The combined template certificateThe three improvements now have the correct accounting:\n$$\\beta_2(H)\\ge\n\\frac{5b}{2}+\\frac{o}{3}\n+\\frac{b_O}{4}+\\frac{t}{12}.\n\\tag{A}$$\nThe original one-side construction still gives\n$$\\beta_2(H)\\ge\\frac{11b}{4}-\\frac{o}{2}.\n\\tag{B}$$\nTake the maximum of the two actual constructions. Using weights  $3/5$  and  $2/5$ , respectively, gives\n$$\\begin{aligned}\n\\beta_2(H)\n&\\ge\n\\frac35\\left(\n\\frac{5b}{2}+\\frac{o}{3}\n+\\frac{b_O}{4}+\\frac{t}{12}\n\\right)\\\\\n&\\quad+\n\\frac25\\left(\\frac{11b}{4}-\\frac{o}{2}\\right)\\\\\n&=\\boxed{\\frac{52b+3b_O+t}{20}}.\n\\end{aligned}$$\nIntegrality gives the stated ceiling.There is no addition of the two incompatible construction sets. The convex combination is applied to their guaranteed cardinalities, which is legitimate because the maximum of two numbers dominates their convex combination.1.5 Equality in the isolated templateCorrectIf  $b>0$  and\n$$\\beta_2(H)=\\frac{13b}{5},$$\nthe new certificate forces\n$$b_O=t=0.$$\nConsequently:Every auxiliary component is an odd- $\\ell$  cycle. $Q$  is a perfect matching.Every physical core component is a cycle.Every  $X$ -vertex has three internal neighbours: helper, owner and  $Q$ -partner.Every  $C$ -vertex has three internal neighbours: two core neighbours and its owner witness.The last two statements exhaust the degree-three capacity.Importantly, this is only a necessary structure for equality. It does not establish nonexistence of equality templates.1.6 Ambient helper closureCorrectThis is the critical distinction between isolated-template equality and original-graph equality.Suppose the original graph has\n$$81d=8n>0.$$\nThe fixed extraction ledger forces\n$$e=q=b_3=0,\\qquad a=p=m>0,$$\nand\n$$\\begin{aligned}\nb&=15m,&n&=81m,\\\\\n|S|&=49m,&\\beta_2(G)&=41m,\\\\\n|R|&=16m,&u&=31m.\n\\end{aligned}$$\nThe lifted dissociation set contains\n$$L=|R|-b+p=2m$$\nvertices outside the template.Thus\n$$\\frac{13b}{5}\n\\le\\beta_2(H)\n\\le\\beta_2(G)-L\n=39m\n=\\frac{13b}{5}.$$\nTemplate equality follows exactly.The saturated  $C_0,X_0$  vertices cannot have ambient neighbours outside  $H$ .The helper argument is also valid, and is essential:Every helper in  $I_0$  is isolated in  $S$ .Since  $q=0$ , every outside vertex is one of the selected pair or triple witnesses.A triple witness has selected neighbourhood exactly its chosen leaf, so cannot meet  $I_0$ .A pair witness adjacent to a helper contributes to that helper's  $h(i)$ .For  $i\\in I_0$ ,  $h(i)=2$ , and both such witnesses already belong to  $X_0$ .Therefore no helper has an external neighbour either.This closes the only potentially vulnerable boundary of the extraction.In particular, it would not have been sufficient merely to prove saturation of  $C_0\\cup X_0$ . The separate helper argument is necessary and correctly supplied.1.7 Final contradictionThe extracted template is a union of entire ambient graph components.Its order is\n$$|V(H)|=b+2b+2b=5b=75m.$$\nThe remaining graph has\n$$81m-75m=6m$$\nvertices.It is bipartite, so one of its two independent colour classes has at least  $3m$  vertices.Taking that independent set together with a maximum dissociation set of  $H$  gives\n$$\\beta_2(G)\\ge39m+3m=42m,$$\ncontradicting\n$$\\beta_2(G)=41m.$$\nThis argument needs neither minimality in the remaining graph nor an additional theorem about its dissociation number.It also explains precisely why the earlier failure to exclude isolated-template equality does not undermine this new result: the contradiction uses the exhausted ambient degree capacity and the original extraction's exterior vertex budget.2. Manuscript subsection 5.4 and abstractIntegration acceptedThe new subsection has the correct logical order:Zero-budget structural information.Ordinary-component replacement.Physical-path rounding credit.Combined template inequality.Necessary structure under template equality.Original-graph equality contradiction.Strict integer refinement.The abstract correctly distinguishes the unrestricted bipartite  $n/10$  result from the maximum-degree-three refinement.In particular, the statement\n$$\\left\\lfloor\\frac{8n-1}{81}\\right\\rfloor$$\nis the correct integer consequence of strictness:\n$$81d<8n\n\\iff\nd\\le\\left\\lfloor\\frac{8n-1}{81}\\right\\rfloor.$$\nThe manuscript also correctly retains the qualification that this is not a smaller asymptotic coefficient.I recommend no mathematical correction to the new subsection or revised abstract.3. Exact-source reconstruction20/20 files reconstructedAll 20 declared payloads were reconstructed from the uploaded UTF-8 snapshot.For every file, I independently checked:Exact UTF-8 byte count.SHA-256 digest.Exact declared relative path.All 20 matched.Before execution, I moved the supplied expected report outside the output directory and confirmed that:output/zero-budget-repair-check.jsondid not exist.No expected report was available to the checker during execution.4. Actual executionPASS · exit code 0Exact command:Bashpython3 -B scripts/check_zero_budget_repair.pyWorking directory: /mnt/data/strict-equality-auditRuntime: 19.268382722 seconds.Exit code: 0.Exact stdout:Plain text{\"status\": \"PASS\", \"bytes\": 1387, \"sha256\": \"66e5e7bbaa1bad4034c6f48cf6ccfacbce67c6ed24275fc5877d6860773ea7a7\"}Exact stderr, including the environment startup warning:Plain textSpreadsheet runtime warmup failed during python startup\nTraceback (most recent call last):\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py\", line 26, in warm_spreadsheet_runtime_on_startup\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 785, in warm_spreadsheet_runtime\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 718, in _warm_feature_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py\", line 509, in _warm_drawing_and_image_flows\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py\", line 32861, in bring_to_front\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py\", line 764, in __call__\n  File \"/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py\", line 175, in call\nartifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.The startup warning is an unrelated spreadsheet-runtime warmup failure. The requested Python checker nevertheless completed successfully with exit code zero.Fresh reportFresh reportByte-identical1,387 bytesSHA-25666e5e7bbaa1bad4034c6f48cf6ccfacbce67c6ed24275fc5877d6860773ea7a7Direct comparison with the supplied expected report:fresh_report == expected_report → TrueAfter execution, I rechecked all 19 non-report source files. Every byte count and SHA-256 still matched its declaration.5. Checker coverageThe fresh report records the following actual counts.CheckActual countMinimal selections43,862Exact templates5,200Targeted zero-budget models208Phase assignments624Closed-extraction controls936Zero-budget selections40,384Zero-budget templates242Conditional-expectation controls504Endpoint-event witnesses790Saturated-template controls28Accepted fixture controls2Additional features:FeatureCountOrdinary-component replacements112Physical-path credits138Both resources simultaneously36Zero-budget cases without either resource28Positive-gap controls28The exact-control digest is:Plain textdfa84cde8fee28847f78b1d04ae61ab31946daa40330fc2fcaf2cfe2053a1738The checker covers the intended execution scope:Actual dissociation certificates.All minimal selections in its finite original-graph models.Exact optimization of the 5,200 small templates.All 624 specified phases.Physical endpoint-event witnesses.Componentwise ordinary replacements.The ambient extraction closure controls.It does not claim unrestricted large-template optimization. The larger targeted models check physical certificates and all their remaining phases, not their unrestricted optima.I did not run the 50-vertex full exact optimizer or Lean. No old imported checker main suites were executed.6. Final scope and remaining open questionsThe accepted result is:\n$$\\boxed{\n\\forall\\,G\\ne\\varnothing,\\quad\n\\Delta(G)\\le3,\\quad G\\text{ bipartite}:\n\\quad\n81\\bigl(\\operatorname{SF}_2(G)-\\beta_2(G)\\bigr)<8|V(G)|.\n}$$\nConsequently,\n$$\\boxed{\n\\operatorname{SF}_2(G)-\\beta_2(G)\n\\le\n\\left\\lfloor\\frac{8|V(G)|-1}{81}\\right\\rfloor.\n}$$\nThe following remain open and should not be advertised as consequences:Whether  $8/81$  is the sharp asymptotic graph coefficient.Whether a standalone partial template can attain  $13b/5$ .Whether positive cubic specified-star examples exist.The outstanding rectangular-grid equality questions.Any stronger unrestricted dissociation bound for larger templates.Final assessment: ACCEPT. The new mathematical deductions are valid, the ambient helper closure is complete, the componentwise compatibility argument is sound, and the exact-source executable audit passed. The strict theorem is a genuine new integer refinement, not a disguised asymptotic improvement."
+}

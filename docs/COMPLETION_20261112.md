@@ -1,5 +1,38 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Strict subcubic bound: all positive unrounded equality is impossible
+
+The [zero-budget repair theorem](ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md)
+proves `81(|S|-beta_2(G))<8n` for every minimal S in every NONEMPTY finite
+simple bipartite maximum-degree-three graph. Thus the unrestricted integer
+bound is `SF_2-beta_2<=floor((8n-1)/81)`. No connectivity, minimum-degree,
+selected-component or side-balance condition. All positive81d=8n equality
+cases are settled negatively; they are no longer an open existence problem.
+The asymptotic8/81 and standalone-template13/5 questions remain open.
+
+At sigma0 the new physical bound is `20beta(H)>=52b+3bO+t`.
+Ordinary auxiliary components gain bO/4 by componentwise quotient replacement;
+physical core paths gain t/12 in phase expectation, with disjoint resources
+from core-cycle scores. Conditional expectations give actual compatible sets.
+Template equality forcesQperfect andallcoredegree2. In the original equality
+ledger, q0 closes the helper boundary as well; the extracted template is a
+union of whole graph components. The remaining6mvertices have an independent
+set of size3m, contradicting betaG41m via39m+3m. This avoids any assumption
+that standalone-template equality is itself impossible.
+
+Exact20-file independent audit ACCEPT, including manuscript5.4 and abstract.
+Original full checker independently executed exit0 in19.268382722s, fresh
+1387byte report byte-identical;19 non-report source hashes unchanged. The
+full received startup warning/response is retained in
+`output/zero-budget-repair-review.json`. Original local checker exit0;
+no separate local timing orstderr claim. Counts:43,862 minimal sets,5,200
+exact small templates,208 targeted zero models,624 phases,790 endpoint-event
+witnesses,936 closed-extraction controls. No old main suites/Lean/large exact
+optima. Working manuscript23pages compiled twice and visually inspected.
+Cubic specified-star existence, simultaneous physical multiHall completion,
+unit5/6 and arbitrary wide-grid triple equality remain open. Full goalACTIVE.
+
+
 ## Exact budget equality, integer refinement and a construction ceiling
 
 The [exact owner-budget theorem](PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md)
@@ -18,7 +51,7 @@ Positive unrounded equality81d=8n forces
 The parity proof yields the unconditional refinement
 `SF_2-beta_2<=floor(8n/81)-1_{n=81 mod162}` for every nonempty
 bipartite maximum-degree-three graph. The asymptotic8/81 coefficient
-has not changed, and equality-graph existence remains open.
+has not changed; the strict theorem above now excludes all those equality cases.
 
 A connected50-vertex template has exact value26 within each of the two
 specified one-core-side QUOTIENT construction families and every full
@@ -1176,7 +1209,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(19n/192), without connectivity, minimum-degree or selected-component restrictions. The partial-template proof extends the earlier equality obstruction; the optimal coefficient remains open |
+| Unrestricted gap at maximum degree three | Strict improvement proved: every minimal S in a nonempty graph satisfies |S|-beta_2<=floor((8n-1)/81), without connectivity, minimum-degree or selected-component restrictions. All positive unrounded equality cases are excluded; the sharp asymptotic coefficient remains open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:

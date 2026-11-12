@@ -22,8 +22,9 @@ in every bipartite graph of order $n$. The coefficient is sharp even for
 two-connected graphs of minimum degree two and maximum degree four. The
 proof constructs two dissociation sets from disjoint deletion witnesses.
 For maximum degree at most three we improve the bound uniformly to
-$\lfloor8n/81\rfloor$, with no restriction on the components induced
-by a minimal forming set.
+$\lfloor(8n-1)/81\rfloor$ for nonempty graphs, with no restriction
+on the components induced by a minimal forming set. The proof excludes
+every positive unrounded equality by a saturated-template separation.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1177,6 +1178,123 @@ contains one square and two other vertices, and each other distinguished
 class has its two vertices. Thus equality of the class budgets leaves
 room for gains outside the three construction families. The sharp graph
 coefficient and the optimal partial-template coefficient remain open.
+
+\subsection{Zero-budget repairs and strictness of the subcubic bound}
+
+The numerical equality conditions above also force a separation that
+is incompatible with the original graph. We first strengthen the
+partial-template estimate when $\sigma=0$.
+
+\begin{lemma}\label{lem:zero-budget-repair}
+In a partial template with zero phase budget, let $b_O$ count helpers
+in auxiliary paths or even-$\ell$ auxiliary cycles, and let $t$ count
+physical core path components, including isolated vertices. Then
+\[
+ \diss(H)\ge\left\lceil\frac{52b+3b_O+t}{20}\right\rceil.
+\]
+If $b>0$ and $\diss(H)=13b/5$, every auxiliary component is an
+odd-$\ell$ cycle and every physical core component is a cycle.
+\end{lemma}
+\begin{proof}
+By Lemma~\ref{lem:phase-slack}, both owner classes of an ordinary
+auxiliary component consist of whole monochromatic core squares.
+Their vertices have no template edges leaving that auxiliary component.
+If it has $b_j$ helpers, then $4\mid b_j$ and every phase set in it
+has size $5b_j/2$. The two one-side quotient constructions have bases
+summing to $5b_j$ and gains summing to $b_j/2$. This follows from
+the even-cycle formula and, on a path, from its two quotient orders
+$b_j/2$, each with gain $b_j/4$.
+Choose the larger alternative separately in each such component.
+Compared with its phase restriction this gains at least $b_j/4$.
+These choices do not affect the remainder of the template.
+
+Every physical core path lies outside the whole monochromatic
+squares. Hence each owner class has at most two vertices on all
+physical core paths together. Fix an endpoint $v$ of one such path.
+If it is isolated, retain it. Otherwise let $u$ be its neighbour.
+If $u$ has a different retention literal, retain $v$ and omit $u$,
+leaving an endpoint $P_1$. If their literals agree, retain both;
+a possible next vertex cannot have that literal, so omit it,
+leaving an endpoint $P_2$. All these requirements are consistent
+and involve at most two fair bits. Thus an event of probability
+at least $1/4$ leaves a $P_1$ or $P_2$. Their rounding surpluses
+above two thirds of their orders are $1/3$ and $2/3$.
+All other residual pieces of that physical path have nonnegative
+rounding surplus. Its expected surplus is therefore at least $1/12$.
+
+Distinct physical paths are disjoint, and the cycle-pairing scores
+use only physical cycle components. Their credits add even when
+phase bits are shared. Combining them with the ordinary replacements
+gives a dissociation set of size at least
+\[
+ 5b/2+o/3+b_O/4+t/12.
+\]
+The construction is effective: add these endpoint-event scores to
+the cycle scores, fix bits by conditional expectation, and optimize
+the remaining paths and cycles. Compare this alternative with the
+one-side guarantee $11b/4-o/2$, using weights $3/5,2/5$.
+This proves the displayed bound.
+
+If $\diss(H)=13b/5$, the strengthened bound forces $b_O=t=0$.
+Also the two preceding guarantees force $o=3b/10$.
+Thus $Q$ is perfect on $X$ and the core is a union of cycles.
+\end{proof}
+
+\begin{theorem}\label{thm:strict-subcubic}
+For every nonempty bipartite graph $G$ of maximum degree at most three
+and every minimal two-star-forming set $S$,
+\[
+ 81\bigl(|S|-\diss(G)\bigr)<8n.
+\]
+Consequently
+\[
+ \boxed{\SF(G)-\diss(G)\le
+          \left\lfloor\frac{8n-1}{81}\right\rfloor.}
+\]
+\end{theorem}
+\begin{proof}
+Suppose $81d=8n>0$. The nonnegative identity of
+Lemma~\ref{lem:phase-slack} forces all its terms to vanish.
+As in the proof of Corollary~\ref{cor:subcubic-parity}, write $a=p=m>0$.
+Then
+\[
+ b=15m,\quad n=81m,\quad |S|=49m,\quad
+ \diss(G)=41m,\quad |R|=16m,\quad e=q=b_3=0.
+\]
+The extracted template $H=G[I_0\cup C_0\cup X_0]$ has $b'=b$ helpers.
+Every dissociation set in it lifts by
+$L=|R|-b+p=2m$ vertices. Therefore
+\[
+ 13b/5\le\diss(H)\le\diss(G)-L=39m=13b/5.
+\]
+The budget is zero. Lemma~\ref{lem:zero-budget-repair} implies that
+$Q$ is perfect and every core vertex has core degree two.
+Each witness and each owner therefore has three internal neighbours,
+exhausting the ambient degree bound.
+
+A helper in $I_0$ has no selected neighbour. Since $q=0$, every outside
+vertex is a chosen pair or triple witness. A triple witness has
+selected neighbourhood exactly its chosen leaf, and cannot meet $I_0$.
+Every pair witness adjacent to a helper contributes to its $h$ count;
+for a helper in $I_0$ this count is exactly two, both already in $X_0$.
+Thus helpers also have no neighbour outside $H$.
+
+It follows that $H$ is a union of entire components of $G$.
+The remaining bipartite graph has $n-5b=6m$ vertices and hence an
+independent set of size at least $3m$. Adjoining it to a maximum
+dissociation set of $H$ gives
+\[
+ \diss(G)\ge39m+3m=42m>41m,
+\]
+a contradiction. The weak bound of Theorem~\ref{thm:subcubic}
+is consequently strict. Its integer deficit is at least one,
+proving the assertion.
+\end{proof}
+
+The improvement excludes equality at every positive multiple of $81$.
+It does not yield a smaller real coefficient than $8/81$, nor does it
+exclude equality $13b/5$ for an isolated partial template: the last
+contradiction uses the original graph's witness counts and its exterior.
 
 \subsection{Minimum-degree asymptotic sharpness}
 
