@@ -1,5 +1,39 @@
 # Current continuation
 
+The [exact universal-padding theorem](docs/BIPARTITE_UNIVERSAL_PADDING_AND_CONNECTIVITY.md) proves, for every r>=2 and t>=1,
+a bipartite selected-star family P_(r,t) with n=12r+2t, selected size8r,
+true beta_2=max(7r,6r+t), and minimum degree and vertex connectivity both t+1.
+For each fixed h>=2, taking t=h-1 gives h-connected graphs of minimum
+degree h whose selected gap/order tends to1/12. Thus the sharp universal
+selected-star coefficient remains asymptotically sharp under any fixed
+lower bounds on minimum degree and vertex connectivity; maximum degree
+is unbounded here. Taking t=r instead gives beta_2=n/2 but selected gap r,
+refuting the candidate general inequality4beta_2>=2|S|+n even with no
+selected edge components and arbitrarily high connectivity. These are
+nonregular graphs, not full rectangles. A general exact padding formula
+also covers isolated old vertices. The standard-library checker passes
+1,364 exact padded small models,2,558 literal minimality-preservation
+checks,6 exact family optima and2,498 vertex-split flows. The written
+all-parameter proofs are complete; final independent source/execution
+review is pending.
+
+The [cyclic outside-edge composition theorem](docs/REGULAR_SELECTED_STAR_GAP_FAMILY.md) now gives an explicit
+two-connected four-regular bipartite family of order68r with true
+`beta_2=35r` and a minimal selected-star/edge/isolate set of size36r,
+for every positive r. Thus regularity and two-connectivity allow a linear
+selected-star gap. The general theorem assumes that deleting a specified
+outside port edge preserves beta; its proof gives exact beta addition
+under cyclic switching and preserves every single-deletion witness.
+The fixed68-point base and its deleted-edge cap have independent exact
+integer max-sum certificates; no MILP result or finite lift sample is
+used as a proof for all r. Another outside edge raises the deleted cap
+to36, showing why that hypothesis needs verification. The coefficient
+1/68 is an explicit lower family below the selected-star upper1/34;
+no exact SF or graph-sharp coefficient is asserted. Independent review
+returned ACCEPT, reconstructed the four exact source files, and ran the
+original checker unchanged to reproduce its full report byte-for-byte.
+See `output/regular-selected-star-gap-review.json`.
+
 The [sharp selected-star theorem](docs/SHARP_SELECTED_STAR_GAP.md) proves
 `|S|-beta_2(G)<=floor(n/12)` for every inclusion-minimal two-star-forming
 set S in a finite simple bipartite graph whose selected components are
