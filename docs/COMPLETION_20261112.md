@@ -1663,3 +1663,33 @@ boundaries, not a new universal numerical bound or rectangular-grid result.
 Mixed nonisolated additions, universal8b/3, compatible physical multi-Hall
 routing, unit5/6, remaining sharp degree parameters and arbitrary-width grid
 triple equality remain OPEN in the full ACTIVE goal. October manuscript intact.
+
+
+## Arbitrary nonisolated exchange and all operation budgets (13 November)
+
+[Nonisolated exchange budget frontiers](docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md)
+compute the exact minimum matching cost at every operation count, allowing
+mixed removals and arbitrary addition adjacencies. A two-state run-parity
+automaton with closed traces on even cycles and retained candidate decisions
+gives 2^w polynomial time for supplied traversal pair width w, with explicit
+batch and final cover/matching witnesses. Two physical all-scale families
+have sharp opposite slopes F(t)=t and F(t)=2r-t; the useful-addition family
+improves the isolation domain, and earlier mixed inherited rules already
+reach it. The method is exact for a fixed distinct-owner candidate list,
+not unrestricted omission optimization or a universal small-width theorem.
+Original corrected checker passes; independent ACCEPT reproduced all8,945 report bytes with empty stderr. Initial iterator/reporting findings and exact fixes are preserved in the audit receipt.
+
+The full endpoint saving is half the change in ALL odd induced-component
+counts, including new isolates, because replacement preserves cardinality.
+The exact budget frontier is1-Lipschitz but need not be nonincreasing.
+Candidate variables are charged once at first occurrence and retained until
+their second, even across components. Cycle closure handles the fully
+present case without guessing an absent vertex. The fixed-list problem is
+now solved exactly with a pair-width parameter; a universally small width
+or a universal structural fee guarantee remains unproved. Earlier zero-cost
+operation-budget hardness survives without an explicit isolation condition,
+since zero matching cost forces an edgeless final graph. This does not prove
+unbudgeted primary hardness. Universal8b/3, unit5/6, compatible physical
+multi-Hall routing, remaining sharp degree parameters and arbitrary-width
+grid triple equality remain OPEN in the full ACTIVE goal. October manuscript
+unchanged; no weighted TH or formal-kernel claim.

@@ -1,0 +1,268 @@
+{
+  "at_recorded": "2026-11-12T22:37:16.353904+00:00",
+  "verdict": "ACCEPT",
+  "corrected_oracle": {
+    "task_id": "1fa9f5ad-8d04-4dc2-9e08-7aa41d06c138",
+    "conversation_id": "conv_47ad485b351653ea",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af63c99-97a0-83ec-9370-4d8a9f7c215d",
+    "usage_estimated": true
+  },
+  "corrected_attached_manifest": [
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    {
+      "path": "develop/cover_choice_exchange.py",
+      "bytes": 3801,
+      "sha256": "11b4131a559e1f9347871c6fccc3d23dd0b1233ac3507d13125d61a796222bb1"
+    },
+    {
+      "path": "develop/cover_saturated_exchange.py",
+      "bytes": 8770,
+      "sha256": "f8b52899d447d16374cd7d91f05e03125bddacfe26bbef3cf82346bf2202907b"
+    },
+    {
+      "path": "develop/matching_choice_exchange.py",
+      "bytes": 7687,
+      "sha256": "aefbcb90c3d54c07d043be78be941f1604127fa042cebee34fbd7ef8e9397e45"
+    },
+    {
+      "path": "develop/matching_credit_exchange.py",
+      "bytes": 11007,
+      "sha256": "b171c9cf633dff4eb62b5397a0d2cabf3691d741e4ad25dfa01109faa6bcc56d"
+    },
+    {
+      "path": "develop/mixed_isolated_cover_repair.py",
+      "bytes": 10069,
+      "sha256": "509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/nonisolated_exchange_frontier.py",
+      "bytes": 9214,
+      "sha256": "3c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abd"
+    },
+    {
+      "path": "develop/odd_path_neutral_budget.py",
+      "bytes": 11221,
+      "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4773,
+      "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "docs/MIXED_ISOLATED_REPAIR_AND_OPERATION_HARDNESS.md",
+      "bytes": 16352,
+      "sha256": "c8f3fa1004e435ab7d6872bbf6beb584cbad7492fbe1afda605f89f96dffa6af"
+    },
+    {
+      "path": "docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md",
+      "bytes": 16208,
+      "sha256": "b6e02c2ef58cf5fe3b5d2285bb1fd7660bc9d98c728834b11149f97660e55259"
+    },
+    {
+      "path": "output/nonisolated-exchange-frontier-check.json",
+      "bytes": 8945,
+      "sha256": "332538e1bde247478311c41ed1be85967df70e7671b3c4f3ab1733e46db449c4"
+    },
+    {
+      "path": "scripts/check_nonisolated_exchange_frontier.py",
+      "bytes": 12179,
+      "sha256": "92d39aab79c671081aabb680a7cec504b10af7a360d3a02483f523e107aaf87f"
+    }
+  ],
+  "corrected_reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_nonisolated_exchange_frontier.py --output /tmp/nonisolated-frontier-regenerated.json",
+    "original_corrected_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "runtime_wall_seconds": 7.947899414,
+    "user_cpu_seconds": 7.871894,
+    "system_cpu_seconds": 0.065041,
+    "max_rss_KiB": 22064,
+    "environment": "CPython3.12.14;Debian GNU/Linux13.6;Linux6.18.57 x86_64;glibc2.41",
+    "start_SGT": "2026-11-13T06:26:20.041405+08:00",
+    "finish_SGT": "2026-11-13T06:26:27.989330+08:00",
+    "stdout_bytes": 621,
+    "stdout_sha256": "c2366b4fec20db7e03179dadfec9008ca65cf0fe1634dc8c50eb16537867deb6",
+    "stderr_bytes": 0,
+    "report_bytes": 8945,
+    "report_sha256": "332538e1bde247478311c41ed1be85967df70e7671b3c4f3ab1733e46db449c4",
+    "full_byte_comparison_equal": true,
+    "all16payloads_verified_before_and_after": true,
+    "all_recursive_local_imports_present": true,
+    "zip_bytes": 57994,
+    "zip_sha256": "bf0b6f7ff313ba7a6a2b49a19c980f8eaeb8ac4fef55e37bdf76a0475b022a2c"
+  },
+  "initial_audit": {
+    "oracle": {
+      "task_id": "e7241cc2-39cb-4d17-aac3-628c5bf31b0d",
+      "conversation_id": "conv_d9bc5cb2ff9ccf21",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af63ad7-77e4-83ec-bd79-b8da7fe1a8a4",
+      "usage_estimated": true
+    },
+    "accepted_scope": "Mathematical proof and set/list-input implementation; original16-file snapshot only. This is not acceptance of later corrected bytes.",
+    "manifest": [
+      {
+        "path": "develop/activated_omission_budget.py",
+        "bytes": 4731,
+        "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 6358,
+        "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+      },
+      {
+        "path": "develop/cover_choice_exchange.py",
+        "bytes": 3801,
+        "sha256": "11b4131a559e1f9347871c6fccc3d23dd0b1233ac3507d13125d61a796222bb1"
+      },
+      {
+        "path": "develop/cover_saturated_exchange.py",
+        "bytes": 8770,
+        "sha256": "f8b52899d447d16374cd7d91f05e03125bddacfe26bbef3cf82346bf2202907b"
+      },
+      {
+        "path": "develop/matching_choice_exchange.py",
+        "bytes": 7687,
+        "sha256": "aefbcb90c3d54c07d043be78be941f1604127fa042cebee34fbd7ef8e9397e45"
+      },
+      {
+        "path": "develop/matching_credit_exchange.py",
+        "bytes": 11007,
+        "sha256": "b171c9cf633dff4eb62b5397a0d2cabf3691d741e4ad25dfa01109faa6bcc56d"
+      },
+      {
+        "path": "develop/mixed_isolated_cover_repair.py",
+        "bytes": 10069,
+        "sha256": "509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7"
+      },
+      {
+        "path": "develop/mixed_owner_bridges.py",
+        "bytes": 9881,
+        "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+      },
+      {
+        "path": "develop/nonisolated_exchange_frontier.py",
+        "bytes": 9173,
+        "sha256": "abc95945a1e13cc4861ab56233ffcbfa97f4d04873ff285bc3e351dec28030c0"
+      },
+      {
+        "path": "develop/odd_path_neutral_budget.py",
+        "bytes": 11221,
+        "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+      },
+      {
+        "path": "develop/omission_conflict_graph.py",
+        "bytes": 4773,
+        "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "docs/MIXED_ISOLATED_REPAIR_AND_OPERATION_HARDNESS.md",
+        "bytes": 16352,
+        "sha256": "c8f3fa1004e435ab7d6872bbf6beb584cbad7492fbe1afda605f89f96dffa6af"
+      },
+      {
+        "path": "docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md",
+        "bytes": 15754,
+        "sha256": "afaf0ae046631c9422ee288cf70cd9905773f0c4e5a64c67abdfa2da2cd6c54b"
+      },
+      {
+        "path": "output/nonisolated-exchange-frontier-check.json",
+        "bytes": 8832,
+        "sha256": "212d0f6e5e6fc2a8d3101e582d84c3b67efbfdcfc2dae5df67ba823a433e9802"
+      },
+      {
+        "path": "scripts/check_nonisolated_exchange_frontier.py",
+        "bytes": 11160,
+        "sha256": "d69eb7b2af3f93def651c7e93ef100827eab8bf08f054fa3e5c25dbacff26b41"
+      }
+    ],
+    "reviewer_reported_original_execution": {
+      "unchanged_original_checker": true,
+      "assertions_enabled": true,
+      "exit_code": 0,
+      "wall_seconds": 24.531,
+      "user_cpu_seconds": 24.247,
+      "system_cpu_seconds": 0.159,
+      "environment": "CPython3.12.14;Debian13.6;Linux6.18.57 x86_64",
+      "stdout_bytes": 520,
+      "stderr_bytes": 0,
+      "report_bytes": 8832,
+      "report_sha256": "212d0f6e5e6fc2a8d3101e582d84c3b67efbfdcfc2dae5df67ba823a433e9802",
+      "full_byte_comparison_equal": true
+    },
+    "findings": [
+      "endpoint reread one-shot U after validate exhausted it: K2 with U iterator incorrectly returned cost0 instead of1.",
+      "Main note overstated saved report as every comparison; actual JSON holds aggregate counts,digest,two r2 examples. Full deletion connectivity only throughr6, larger scales sample four vertices."
+    ],
+    "fixes": [
+      "endpoint reuses normalized U and operations returned by validate.",
+      "exact_frontier obtains q from normalized operations; one-shot operation inputs are supported.",
+      "48 endpoint,48 frontier,2 physical one-shot regression controls were added.",
+      "Report description and connectivity checking limits corrected in proof note."
+    ],
+    "complete_response": "ACCEPT for the exact operation-budget frontier on the stated domain: a fixed candidate list on a finite simple bipartite ambient graph of maximum degree two. The endpoint identity, both variation bounds, the dynamic program, the physical certificate, both all-scale families, and the budgeted zero-cost hardness corollary pass review. I found one Python input limitation and one reporting imprecision, detailed below.Original execution and integrityAll 16 manifest entries matched their declared byte lengths and SHA-256 hashes, both before and after execution. The archive contained exactly those entries plus MANIFEST.json. The recursive local import closure, including imports inside functions, consists of the 12 included develop modules. The unchanged checker’s SHA-256 was d69eb7b2af3f93def651c7e93ef100827eab8bf08f054fa3e5c25dbacff26b41.I ran the requested command once from the extracted root:Bashpython3 -B scripts/check_nonisolated_exchange_frontier.py --output /tmp/nonisolated-frontier-regenerated.jsonItemObserved resultEnvironmentCPython 3.12.14, Debian GNU/Linux 13.6, Linux 6.18.57, x86-64AssertionsEnabled. PYTHONOPTIMIZE unset, optimization level 0, __debug__ trueExit and runtimeExit 0. Wall time 24.531 s, user CPU 24.247 s, system CPU 0.159 sstderrEmpty, 0 bytesFull-byte comparisoncmp exited 0. Frozen and regenerated files were each 8,832 bytesSHA-256 of both reports212d0f6e5e6fc2a8d3101e582d84c3b67efbfdcfc2dae5df67ba823a433e9802Exact stdout was one 520-byte line, including its terminating newline:Plain text{\"actual_dissociation_certificates\": 1300, \"at_most_budget_optima\": 20720, \"cycle_trace_subsets\": 5456, \"earlier_mixed_inherited_controls\": 20, \"exact_operation_count_points\": 11957, \"exhaustive_ambient_graphs\": 48, \"family_literal_subsets\": 1020, \"family_scales\": 40, \"generic_frontiers\": 8763, \"literal_candidate_subsets\": 13131, \"literal_endpoint_certificates\": 11957, \"physical_connectivity_deletions\": 742, \"previous_hardness_budget_controls\": 4, \"random_physical_frontiers\": 60, \"traversal_invariance_pairs\": 140}Proof and implementation findingsEndpoint cost and budget variation. Every induced component is a path, an isolate, or an even cycle. Consecutive pairing and a smaller bipartition side give a matching and cover of equal size componentwise. A new isolate contributes one to  $o(U_S)$  and zero to matching cost. Summing gives  $\\nu(A[U_S])=(|U|-o(U_S))/2$  and the claimed saving. One deletion followed by one addition changes matching number by at most one in absolute value. Extending an optimal  $t$ -subset and shortening an optimal  $(t+1)$ -subset give the two directions of the frontier bound. The cost throughout is unit matching cardinality.Exactness of Theorem 3. At a fixed traversal cut, the identities of the live labels are known. The mask therefore needs only the selected live bits. The implementation charges  $s_i$  at the first endpoint, applies membership  $1-s_i$  at  $x_i$  and  $s_i$  at  $y_i$ , and forgets the decision only at the second endpoint. This works when  $y_i$  occurs first and when the endpoints lie in different components. Boundary merging retains both the live mask and  $t$ .The decisive cycle check is  $p_{\\rm end}=h$ . If any vertex is absent, its zero resets parity, fixing the closed trace and charging exactly  $\\lfloor L/2\\rfloor$  on each circular present run of length  $L$ . If every vertex is present, the even cycle closes from either initial parity and both traces cost  $N/2$ . Thus every accepted trace for a fixed batch has its actual maximum matching cost. Histories with the same live mask, count, parity and cycle-start parity have identical continuations, so keeping one least-cost full-mask witness is valid. The bound of  $4(q+1)2^w$  states per layer and  $O(N(q+1)2^w)$  transitions follows, with polynomial bit and witness overhead. Each row reconstructs a batch. Reading the rows up to  $B$  also gives the fewest operations attaining the at-most- $B$  optimum.Physical wrapper. The global Counter checks the initial retained-owner degrees. Each post-swap check uses the edges of the affected owner component. Distinct owners make every subset and every prefix permitted. For a final tight cover  $C$ , take all  $b$  centres, the owners outside  $U_S$ , and the witnesses in  $U_S\\setminus C$ . The cover and owner-degree conditions give induced maximum degree one and cardinality  $3b-|C|$ . The wrapper materializes this certificate for its best row. Every other row supplies the mask needed to reconstruct its certificate.Sharp physical families. In Theorem 4, component  $w_i,x_i,y_{i+1},z_{i+1}$  contributes exactly the indicator that operation  $i+1$  is selected. Its possible extra edge shares  $y_{i+1}$ . Hence every  $t$ -subset costs  $t$ . The two ears span each square module, and a vertex deletion destroys at most one cyclic join. For  $r=2$  the second intermodule edge survives, and for  $r=1$  the join is internal. The prescribed reversal gives width at most two, with width one at  $r=1$ .In Theorem 5, fixed absent boundary vertices separate the tiles. A selected tile changes  $P_4$  into an isolate and  $P_3$ , giving  $F(t)=2r-t$  at width one. The new vertex 5 remains adjacent to fixed vertex 4, so final isolation permits only the empty batch. Selecting all operations gives the  $11r$  physical certificate. The earlier mixed rule already achieves cost  $r$  by retaining cover vertex 4 and matching edge  $3\\!-\\!4$  in each selected tile. The subdivided cycle and four distinct attachments per owner establish two-connectivity after any one deletion. Both constructions have the claimed orders, bipartitions, degrees and minimum-cardinality initial omissions for every  $r\\ge1$ .Budgeted hardness. Zero cost forces the final auxiliary graph to be edgeless, making final isolation automatic. In the attached reduction, selecting a label then forces its successor and hence its whole group. Selecting groups  $Z$  uses  $D|Z|$  operations and leaves cost  $|E(J-Z)|$ , so the first zero is exactly at  $D\\tau(J)$ . The connected bridgeless normalization preserves the stated threshold and supplies two-connectivity of the physical construction. This proves NP-completeness for the budgeted decision and the conditional obstruction to a uniform polynomial full-frontier algorithm. Selecting all groups reaches zero on these instances, so the reduction leaves the unbudgeted primary-cost question open.Supplementary findings and limitsAn independent matching enumeration on  $C_6\\sqcup C_4\\sqcup P_3\\sqcup K_1$ , with six cross-component replacements, checked all 64 batches and all 4,608 legal traversals. All 32,256 exact-count rows and their decoded witnesses agreed. A separate two-owner-path physical case gave the nonmonotone frontier  $(1,0,1)$ , with valid certificates for all four batches.Python input limitation. The standalone endpoint reads U again after validate consumes it (develop/nonisolated_exchange_frontier.py, lines 42–47). On  $K_2$  with both vertices present and no operations, U={0,1} returns cost 1, while U=iter([0,1]) silently returns cost 0. This limits callers using one-shot iterators. The stated set input works, and the physical wrapper normalizes U to a set.Reporting imprecision. Lines 286–292 of the main note say the report gives every comparison. The checker performs every comparison; the saved JSON contains aggregate counts, a digest and two  $r=2$  examples. The 742 connectivity checks cover every vertex deletion through  $r=6$  and four sampled deletions at each larger tested scale. The all- $r$  conclusions rest on the proofs.The audit covers the supplied frozen bytes. The base commit attribution was supplied with the archive. The post-audit receipt link was excluded from the evidence. The accepted scope is the supplied traversal and candidate list; it establishes neither a best-order algorithm nor an unrestricted physical optimum.\n"
+  },
+  "corrected_supplemental_review_checks": {
+    "scope": "Separate from original execution and its counters.",
+    "literal_matching_and_nested_iterators": [
+      "Two C4 components with four crossing pairs:frontier[2,1,0,1,2].",
+      "Two P4 components with four crossing pairs:frontier[2,1,0,1,2].",
+      "Six isolates with addition-first candidates:frontier[0,0,0,0]."
+    ],
+    "family_ordering_scales": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      17,
+      513
+    ],
+    "family_ordering_checks_are_not_complete_frontier_runs": true,
+    "supplementary_commands_exit0_no_stderr": true
+  },
+  "no_further_corrections_required": true,
+  "scope": "Unit maximum-matching costs of every subset of a fixed distinct replacement list on a finite simple degree-two bipartite AMBIENT graph; exact per-operation budget frontier and witnesses parameterized by supplied complete-component pair width; physical wrapper requires individually permitted candidates on distinct owner components. Two all-r opposite-slope physical families and transfer of budgeted zero-cost NP-completeness. No efficient best-order claim,unrestricted omission optimum,unbudgeted primary hardness,weightedTH routing,new universal coefficient or grid embedding.",
+  "limitations": [
+    "Attachment identity verified; reviewer did not authenticate remote Git provenance.",
+    "No Lean,formal-kernel,network,literature-priority or other-platform audit.",
+    "Finite controls support implementation; all-size statements rely on complete proofs.",
+    "Prior hardness proof audited; its historical checker/reports/receipts were not used as executed or accepted evidence.",
+    "Forest/cycle-rank algorithms and physical highwidth stars in local next-stage files were not in either frozen audit."
+  ],
+  "complete_corrected_response": "ACCEPTThe corrected frozen snapshot supports the stated mathematical milestone and implementation scope. I found no substantive proof gap, incorrect frontier, iterator regression, or scope overclaim requiring correction.I executed the complete corrected original checker unchanged, with assertions enabled, from the extracted root. It exited successfully, and the regenerated report is byte-for-byte identical across all 8,945 bytes to the supplied report, with the requested SHA-256:Plain text332538e1bde247478311c41ed1be85967df70e7671b3c4f3ab1733e46db449c4This verdict concerns the supplied corrected bytes. I did not use the first audit’s acceptance or the post-audit receipt link as evidence.1. Frozen-source integrity: all 16 entries verifiedThe ZIP contains exactly the 16 manifested payload files plus MANIFEST.json. For every payload, I checked both the declared byte count and the full SHA-256. All passed before execution and again after execution and supplementary checks. The extracted source inventory remained unchanged.Manifest entryBytesSize and SHA-256develop/activated_omission_budget.py4,731PASSdevelop/all_helper_optimization.py6,358PASSdevelop/cover_choice_exchange.py3,801PASSdevelop/cover_saturated_exchange.py8,770PASSdevelop/matching_choice_exchange.py7,687PASSdevelop/matching_credit_exchange.py11,007PASSdevelop/mixed_isolated_cover_repair.py10,069PASSdevelop/mixed_owner_bridges.py9,881PASSdevelop/nonisolated_exchange_frontier.py9,214PASSdevelop/odd_path_neutral_budget.py11,221PASSdevelop/omission_conflict_graph.py4,773PASSdevelop/owner_matching_certificate.py9,760PASSdocs/MIXED_ISOLATED_REPAIR_AND_OPERATION_HARDNESS.md16,352PASSdocs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md16,208PASSoutput/nonisolated-exchange-frontier-check.json8,945PASSscripts/check_nonisolated_exchange_frontier.py12,179PASSThe   manifest itself hashes to:Plain textb327714cb2668235f325d8432a5449fa3f4c0ef304428caa6a9966aec226dc84The uploaded ZIP is 57,994 bytes, with SHA-256:Plain textbf0b6f7ff313ba7a6a2b49a19c980f8eaeb8ac4fef55e37bdf76a0475b022a2cThe executed original checker’s SHA-256 is:Plain text92d39aab79c671081aabb680a7cec504b10af7a360d3a02483f523e107aaf87fI also inspected imports across all 13 Python files. Every literal local import, including function-local imports, resolves to one of the 12 included local modules; the remaining imports are from the Python standard library. No missing local dependency was found.2. Original execution and full-byte comparisonExact command and working directoryThe command actually launched was:Bashpython3 -B scripts/check_nonisolated_exchange_frontier.py --output /tmp/nonisolated-frontier-regenerated.jsonWorking directory:Plain text/workspace/scratch/9999f85b9703/nonisolated-audit-sourceA surrounding process recorded timing, stdout, stderr, and exit status. It launched this exact command; it did not edit, shorten, replace, or instrument the checker.Actual environment and runtimeItemObserved valuePythonCPython 3.12.14Python build3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]Executable/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3OSDebian GNU/Linux 13.6, trixiePlatformLinux x86_64, kernel 6.18.57, glibc 2.41AssertionsEnabled; optimization level 0Python environment overridesPYTHONOPTIMIZE, PYTHONPATH, PYTHONDONTWRITEBYTECODE, and PYTHONHASHSEED all unsetStart2026-11-13 06:26:20.041405 SGTFinish2026-11-13 06:26:27.989330 SGTWall time7.947899414 secondsChild user CPU time7.871894 secondsChild system CPU time0.065041 secondsChild maximum resident set22,064 KiBExit status0Stdout621 bytes, one JSON line followed by a newlineStderrEmpty, 0 bytesThe original checker also explicitly rejects execution with assertions disabled.Actual stdoutPlain text{\"actual_dissociation_certificates\": 1300, \"at_most_budget_optima\": 20720, \"cycle_trace_subsets\": 5456, \"earlier_mixed_inherited_controls\": 20, \"exact_operation_count_points\": 11957, \"exhaustive_ambient_graphs\": 48, \"family_literal_subsets\": 1020, \"family_scales\": 40, \"generic_frontiers\": 8763, \"literal_candidate_subsets\": 13131, \"literal_endpoint_certificates\": 11957, \"one_shot_endpoint_controls\": 48, \"one_shot_frontier_controls\": 48, \"one_shot_physical_controls\": 2, \"physical_connectivity_deletions\": 742, \"previous_hardness_budget_controls\": 4, \"random_physical_frontiers\": 60, \"traversal_invariance_pairs\": 140}Stdout SHA-256:Plain textc2366b4fec20db7e03179dadfec9008ca65cf0fe1634dc8c50eb16537867deb6Comparison resultI compared the complete byte strings of the regenerated file and the   saved report, without parsing or normalizing their JSON.ComparisonResultRegenerated length8,945 bytesSaved length8,945 bytesFull-byte equalityTrueRegenerated SHA-256332538e1bde247478311c41ed1be85967df70e7671b3c4f3ab1733e46db449c4Saved SHA-256332538e1bde247478311c41ed1be85967df70e7671b3c4f3ab1733e46db449c4The report’s separate internal comparison digest is:Plain textcf41ce7c2086e4c4bc8c953810405590684288089b87961ec0c95bf0e2081aedThat internal digest is distinct from the report file’s SHA-256.3. The reported corrections are present and effectiveOne-shot iteratorsThe fixes are in the actual   implementation:endpoint, line 43: after validation, it assigns both U=d['U'] and operations=d['operations']. Subsequent endpoint construction uses those normalized objects. It does not reuse an exhausted original U or operation iterator.exact_frontier, line 58: it obtains q from len(d['operations']), rather than attempting to take the length of the original operation iterable.physical_frontier, line 95: it normalizes its initial omission and operations before reuse.Supplied component orders are normalized at both levels: the outer iterable and each inner component order.The   original checker genuinely executes the advertised 48 endpoint, 48 frontier, and 2 physical iterator controls. Each generic count is three cases times all 16 combinations of converting four arguments to one-shot iterators. The physical controls pass both omission and operation iterators simultaneously, for both families.Report-description and connectivity correctionsThe corrected prose accurately describes the saved JSON: it contains aggregate counts, a reproducibility digest, and two  $r=2$  family examples. It does not contain every comparison row.The connectivity testing description also matches the code:Every physical vertex is deleted at each scale  $r=1,\\ldots,6$ .At each larger tested scale, four vertices are sampled.Across both families this gives  $630+112=742$  deletion checks.The all-scale connectivity conclusions therefore depend on the supplied proofs, not exhaustive testing through  $r=512$ . These qualifications are correctly stated in §6 of the    main proof.The post-audit receipt link was not used as acceptance evidence. Its absence from the 16-file payload is not a defect in this deliberately frozen audit input.4. Theorem 1 and Proposition 2: sound on the stated ambient domainEndpoint formulaThe restriction is correctly imposed on the whole ambient graph. The validator calls ordered_components on all ambient vertices, rejects degree exceeding two, and rejects odd ambient cycles. It does not merely inspect the initial induced graph.Every induced component is consequently a path, an isolate, or an even cycle. A path of order  $k$  contributes  $\\lfloor k/2\\rfloor$  to both maximum-matching size and minimum-cover size; an even cycle contributes  $k/2$ . Counting every odd component, including every newly created isolate, gives\n$$\\nu(A[V])=\\frac{|V|-o(V)}2.$$\nDistinct removals lie in  $U$ , distinct additions lie outside  $U$ , and hence  $|U_S|=|U|$ . Both displayed identities follow:\n$$\\nu(A[U_S])=\\frac{|U|-o(U_S)}2,\n\\qquad\n\\nu(A[U])-\\nu(A[U_S])\n=\\frac{o(U_S)-o(U)}2.$$\nNothing in this reasoning requires additions to be isolated. Edges between additions, and edges from additions to retained old vertices, are included in the final induced components.The imported path_certificate constructs the claimed certificates directly: a smaller alternating side in each component and consecutive disjoint matching edges. Isolates contribute odd count one and matching/cover cost zero. This implementation is in   mixed_isolated_cover_repair.py.Variation boundsOne replacement first deletes one vertex and then adds one vertex. The respective matching-number changes belong to  $\\{0,-1\\}$  and  $\\{0,1\\}$ , so their sum lies in  $[-1,1]$ .Extending an optimal  $t$ -subset by any unused operation gives\n$$F(t+1)\\le F(t)+1.$$\nRemoving one operation from an optimal  $(t+1)$ -subset gives the reverse bound\n$$F(t)\\le F(t+1)+1.$$\nBoth arguments are legitimate because every candidate subset is allowed. Iterating the single-replacement bound proves the batch bound. No monotonicity of  $F$  is needed or asserted.These are unit-cardinality matching statements. The proof does not establish weighted TH routing or preservation of weighted costs.5. Theorem 3: the complete frontier DP is exactThis is the most consequential part of the audit. The proof and implementation agree on the following points.Decisions persist for exactly the necessary lifetimeAt a fixed traversal cut, the identities of live variables are determined by the traversal. The implementation therefore only needs a bitmask recording which live variables have decision one; an unset bit for a known live variable means decision zero.At a candidate’s first occurrence, the code branches on  $s_i$ , adds  $s_i$  to the operation count once, and records the decision. At its second occurrence it uses that stored decision and removes it from the live mask. The membership calculation correctly distinguishes the roles:\n$$x_i\\text{ present}\\iff s_i=0,\\qquad\ny_i\\text{ present}\\iff s_i=1.$$\nThus encountering  $y_i$  before  $x_i$  is supported.At component boundaries, the implementation discards parity information but retains the live mask and operation count. A candidate whose endpoints lie in different components therefore remains linked across the boundary.The cycle trace computes the maximum-matching numberFor paths, the automaton charges one for each completed consecutive pair in a present run, giving  $\\lfloor \\ell/2\\rfloor$  for a run of length  $\\ell$ .For a cycle with at least one absent vertex, let  $a$  be the present prefix before the first zero and  $b$  the present suffix after the last zero. The last zero resets parity, so terminal parity is  $b\\bmod2$ . Closure forces\n$$h=b\\bmod2.$$\nThe two scanned pieces of the circular run contribute\n$$\\left\\lfloor\\frac b2\\right\\rfloor\n+\n\\left\\lfloor\\frac{a+(b\\bmod2)}2\\right\\rfloor\n=\n\\left\\lfloor\\frac{a+b}2\\right\\rfloor.$$\nEvery internal run contributes its ordinary path cost. This proves that the accepted trace counts the actual circular components correctly.For an all-present even cycle of order  $N$ , both starting parities close, and each incurs exactly  $N/2$ .Accordingly, minimizing over accepted traces cannot invent an artificially smaller matching. For each fixed candidate assignment, every accepted trace has the correct maximum-matching cost. The code implements the two initial cycle parities and the required terminal equality.State merging preserves valid optimal witnessesThe state retains:\n$$(\\text{live decisions},\\,t,\\,p,\\,h).$$\nHistories with the same key have identical future possibilities. Their already-incurred costs are additive, so retaining the lower cost is valid. The operation count remains in the key; histories with different counts are not merged.The value also retains a full selected-operation mask, including decisions already forgotten from the live state. Consequently the retained minimum has an actual witnessing batch. Lexicographic comparison of (cost, chosen_mask) is a deterministic tie-break, not a claim that the mathematical optimum is unique.After all components, all candidate endpoints have been processed, live masks are empty, and every count  $0,\\ldots,q$  is represented. The frontier rows therefore give exactly the requested  $F(t)$ .Complexity and budget readingThere are at most\n$$2^w(q+1)\\cdot2\\cdot2\n=4(q+1)2^w$$\nstates. Each has at most two next choices, giving the claimed\n$$O\\!\\left(N(q+1)2^w\\right)$$\nDP-transition bound up to constants. Preprocessing, integer-bitset operations, complete witness masks, and certificate reconstruction contribute polynomial overhead. The claim is not a constant-word-cost statement about arbitrarily large Python integers.within_budget minimizes cost and then operation count among rows with  $t\\le B$ . That implements the stated at-most-budget optimum and fewest-operation tie-break.The theorem correctly leaves traversal-width optimization unresolved and makes no universal polynomial-time claim. These conclusions follow from Theorem 3 and the implementation’s validate, exact_frontier, and within_budget.6. Physical wrapper and actual  $3b-\\mathrm{cost}$  certificateThe wrapper enforces the specified list domain.It checks the initial owner complement’s induced degrees globally with a Counter. For each operation, it then checks the changed complement only within its owner component. Requiring distinct owner components makes these local changes independent: every subset and every prefix combines permitted owner states. There is no additional isolation condition.One distinction is important and is handled correctly: the physical witness colours are not themselves the auxiliary bipartition, since  $P$ -pairs are physically monochromatic. Auxiliary bipartiteness follows because cycles in  $P\\cup Q$  alternate between the two matchings and therefore have even length. The physical input checks are in   owner_matching_certificate.py, particularly prepare.For a final omission  $U'$  and minimum auxiliary cover  $C$ , the actual dissociation set consists of:all  $b$  centres;owners indexed outside  $U'$ ;witnesses indexed by  $U'\\setminus C$ .The selected witnesses are independent in  $P\\cup Q$ . Thus each centre meets at most one selected witness, and selected witnesses have neither selected  $Q$ -neighbours nor their own selected owners. Selected owners induce maximum degree at most one by permittedness. The cardinality is exactly\n$$b+(2b-|U'|)+(|U'|-|C|)\n=3b-\\nu(A[U']).$$\nThe wrapper returns the explicit owners/witnesses certificate for its overall best row. Every other exact-count row supplies a batch mask from which endpoint reconstructs the corresponding tight matching and cover.This is exact over all subsets of the validated list. It does not optimize over arbitrary omission states or multiple incompatible operations on one owner.7. Theorems 4 and 5: both all-scale families are validPropertyCost-increase familyCost-decrease familyPhysical order $10r$  $20r$ Auxiliary graph $rP_4$  $C_{8r}$ Candidate count $r$  $r$ Complete frontier $F(t)=t$  $F(t)=2r-t$ Displayed traversal width $1$  for  $r=1$ , at most  $2$  otherwise $1$ Physical graphBipartite, two-connected, minimum degree  $2$ , maximum degree  $3$ SameInitial omissionsMinimum-cardinality on square ownersSameCost increaseIn auxiliary component\n$$w_i-x_i-y_{i+1}-z_{i+1},$$\n $w_i$  is absent and  $z_{i+1}$  is present throughout. If operation  $i+1$  is unselected, the component contributes zero. If selected, it contains  $y_{i+1}z_{i+1}$ , possibly with  $x_i$  attached, and contributes exactly one. Therefore every  $t$ -subset has cost  $t$ .Each owner square together with its two helper paths is a two-connected module: the helper paths are ears with distinct endpoints. A physical vertex deletion leaves each module connected and destroys at most one joining  $Q$ -edge.The small cases are covered:For  $r\\ge3$ , the quotient cycle remains connected after losing at most one edge.For  $r=2$ , there are two distinct joining edges, and at least one survives.For  $r=1$ , the  $Q$ -edge is internal to an already two-connected module.The width argument also checks out. Processing component  $0$ , then reversing component  $r-1$ , closes candidate  $0$  before opening candidate  $r-1$ . Subsequent components close the current local candidate before introducing the next. At most two decisions remain live.The canonical traversal gives that order: component  $0$  contains the smallest vertex; the next unseen minimum lies in component  $r-1$ , whose smaller endpoint forces the reversal. The remaining components occur forward in increasing order.Cost decreaseAbsent tile boundaries separate the endpoint graph into independent tile pieces. An unselected tile contains the  $P_4$  on  $1,2,3,4$ , with cost two. A selected tile contains isolate  $1$  and the  $P_3$  on  $3,4,5$ , with cost one. Hence every  $t$ -subset has cost  $2r-t$ .The new vertex  $5$  remains adjacent to fixed vertex  $4$ , so only the empty batch satisfies final isolation.The physical backbone is the auxiliary cycle with each  $P$ -edge subdivided. Every owner square has four distinct attachments to it. Deleting a backbone vertex leaves a connected path and removes at most one attachment; deleting an owner vertex leaves its square as a connected path with three attachments. This proves two-connectivity for every  $r\\ge1$ .The natural traversal confines each candidate pair to its tile, giving width one. With every operation selected, the actual certificate contains four centres, three witnesses, and four owners per tile, hence  $11r$  vertices.The earlier mixed-rule qualification is correct. With\n$$C=\\{2,4\\},\\qquad M=\\{(1,2),(3,4)\\},$$\nthe mixed inherited rule retires  $2$ , retains  $4$ , and retains matching edge  $34$ . It already achieves cost one per selected tile. The checker explicitly enables mixed removals in choose_matching; the implementation is in   matching_choice_exchange.py.Thus the stated comparison is properly limited to the final-isolation domain.8. The operation-budget hardness corollary is soundI checked the included    prior physical hardness proof, including its connected-bridgeless normalization.For a graph  $H$ , the physical encoding uses groups of\n$$D=\\max(1,\\Delta(H))$$\nlabels. Final isolation forces whole-group selection, and a selected vertex set  $Z\\subseteq V(H)$  corresponds to\n$$|S|=D|Z|,\n\\qquad\n\\mathrm{cost}(S)=|E(H-Z)|.$$\nThe minimum operation count reaching zero cost is therefore  $D\\tau(H)$ .The normalization is also valid. The apex-and-leaves construction satisfies  $\\tau(F^+)=\\tau(F)+1$ . Replacing each edge by two internally disjoint length-three paths produces a connected bridgeless  $J$ . Fixing the selected original vertices  $Z$ , the exact cover cost is\n$$2m+|Z|+2|E(F^+-Z)|.$$\nAdding an endpoint of an uncovered original edge costs one and removes at least a penalty of two. An optimum therefore covers  $F^+$ , yielding\n$$\\tau(J)=2m+\\tau(F)+1.$$\nThe physical two-connectivity argument uses two-connected group modules and a matching of joining edges. One physical vertex deletion destroys at most one quotient edge; connectedness and bridgelessness of  $J$  suffice.The transfer to the new problem is exact because\n$$\\nu(G)=0\\iff E(G)=\\varnothing.$$\nEvery zero-cost batch in the no-isolation domain automatically makes all additions isolated. Thus removing the explicit isolation restriction creates no new zero-cost witnesses, and the old operation thresholds remain unchanged.NP membership is direct: a batch certifies its size and permission, and zero cost is checked by final edgelessness. A uniform polynomial full-frontier algorithm would therefore solve this NP-complete budget decision problem.The source correctly does not infer hardness of unbudgeted primary-cost minimization: selecting all groups already reaches zero in these reduction instances. Nor does it infer hardness for unrestricted physical parameters or grids.9. Supplementary findings — separate from original executionThese checks were supplemental. They did not replace or modify the original checker, and their results are not included in its reported counters.Deliberate cross-component and iterator casesThree additional cases were checked against independent literal subset enumeration and a memoized bitmask matching routine. They also used nested one-shot iterators for edges, operations, and component orders.CasePair widthExact frontierTwo  $C_4$  components, four crossing pairs, reversed/permuted traversal4[2, 1, 0, 1, 2]Two  $P_4$  components, four crossing pairs, reversed component traversal4[2, 1, 0, 1, 2]Six isolates, three pairs encountered addition-first3[0, 0, 0, 0]All witness reconstructions and nested-iterator/list comparisons passed. The first two cases explicitly exercise nonmonotone frontiers and cross-component decisions.Family traversal checksAdditional traversal checks at\n$$r=1,2,3,4,5,17,513$$\nconfirmed the claimed canonical ordering and widths. These were ordering checks, not a substitute for the all-scale proofs or additional complete family-frontier runs.All supplementary commands used python3 -B and exited successfully without stderr. No source file was changed.10. Acceptance limitsThe acceptance has the following precise limits:Source identity: I verified the attached archive and manifested bytes. I did not authenticate its claimed repository provenance against Git or a remote service.Execution: the complete original checker was run in the environment recorded above. This is not a claim of testing other Python versions or platforms.Mathematical assurance: this is an adversarial proof/source audit with executable checks, not Lean or formal-kernel verification. Finite enumeration supports the review; it does not establish the all-scale theorems by extrapolation.Hardness evidence: the included prior proof was audited. Its historical checker, reports, and audit receipts were not used as executed or accepted evidence. The reduction takes classical Vertex Cover NP-completeness as its starting fact.Scope: the result concerns unit matching cost on degree-two bipartite ambient graphs and all subsets of a fixed valid replacement list. The physical wrapper additionally requires individually permitted operations on distinct owner components.Claims not established: uniformly small traversal width, efficient best-order selection, weighted TH routing, unrestricted omission optimization, a new universal bound, global  $\\beta$ -exactness, or grid embedding.Required corrections to this corrected milestone: none.MANIFEST.jsonCodeOpen filenonisolated-exchange-frontier-check.jsonCodeOpen filenonisolated_exchange_frontier.pyCodeOpen file6 more\n"
+}

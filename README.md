@@ -1,5 +1,17 @@
 # Current continuation
 
+[Nonisolated exchange budget frontiers](docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md)
+compute the exact minimum matching cost at every operation count, allowing
+mixed removals and arbitrary addition adjacencies. A two-state run-parity
+automaton with closed traces on even cycles and retained candidate decisions
+gives 2^w polynomial time for supplied traversal pair width w, with explicit
+batch and final cover/matching witnesses. Two physical all-scale families
+have sharp opposite slopes F(t)=t and F(t)=2r-t; the useful-addition family
+improves the isolation domain, and earlier mixed inherited rules already
+reach it. The method is exact for a fixed distinct-owner candidate list,
+not unrestricted omission optimization or a universal small-width theorem.
+Original corrected checker passes; independent ACCEPT reproduced all8,945 report bytes with empty stderr. Initial iterator/reporting findings and exact fixes are preserved in the audit receipt.
+
 [Mixed isolated-addition repair and operation-count hardness](docs/MIXED_ISOLATED_REPAIR_AND_OPERATION_HARDNESS.md)
 allow removals on both initial cover sides. Odd-component counts give exact
 endpoint costs and explicit final covers/matchings. Maximum saving is exact
