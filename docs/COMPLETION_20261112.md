@@ -13,7 +13,9 @@ the padding family attains its coefficient of u exactly. These are
 complete general proofs, with 876 graph inputs,23,499 witness allocations
 and ten targeted finite models checked independently. No graph-sharp
 cubic coefficient or unrestricted SF bound is asserted. Final exact-source
-independent review is pending.
+review returned ACCEPT, reconstructed all11 files, and ran both original
+entry points unchanged with assertions. Both reports reproduced byte-for-byte;
+see `output/selected-star-integrated-review.json` for actual execution scope.
 
 ## Exact padding and fixed minimum-degree/connectivity sharpness
 
@@ -31,8 +33,9 @@ nonregular graphs, not full rectangles. A general exact padding formula
 also covers isolated old vertices. The standard-library checker passes
 1,364 exact padded small models,2,558 literal minimality-preservation
 checks,6 exact family optima and2,498 vertex-split flows. The written
-all-parameter proofs received independent proof-only ACCEPT; final
-source/execution review is pending after a terminal browser failure.
+all-parameter proofs received independent proof-only ACCEPT. The final
+integrated source/execution audit also returned ACCEPT, with both complete
+reports reproduced byte-for-byte by the unchanged original programs.
 
 ## A regular selected-star gap family and exact cyclic composition
 

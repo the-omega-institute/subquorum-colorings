@@ -176,6 +176,12 @@ positive gaps with direct-only centres, and sharpness of the u correction.
 The stronger exchange and correction (6)-(7) were proposed in the Oracle
 research response and independently checked by Codex. The new cubic
 identity (9), bound (1), and signed extension (11) were subsequently
-derived by Codex. Exact-source independent review is pending. No new
-Lean verification, literature-priority, unrestricted-SF or graph-sharpness
-claim is made.
+derived by Codex. The final integrated exact-source review returned
+**ACCEPT**. The reviewer reconstructed all11 manifest files, verified
+all hashes, ran both original entry points unchanged with assertions to
+terminal exit0, and reproduced both complete reports byte-for-byte,
+including this checker's11,370-byte report. Helper utility routines were
+exercised; their separate main suites were not rerun. The full response
+and actual scope are in `output/selected-star-integrated-review.json`.
+No new Lean verification, literature-priority, unrestricted-SF or
+graph-sharpness claim is made.

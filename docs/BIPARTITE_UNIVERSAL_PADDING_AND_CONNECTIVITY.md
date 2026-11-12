@@ -182,9 +182,10 @@ The all-parameter
 statements above rely on the case proof, the established (6), and the
 connectivity argument. No finite enumeration replaces those proofs.
 Independent proof-only review returned **ACCEPT**, including an independently
-derived version of (5a). The first final execution task ended in terminal
-browser infrastructure failure without a mathematical response. A fresh
-integrated exact-source execution audit is pending; no external checker
-execution is claimed here. Full responses and scope are in
-`output/bipartite-universal-padding-review.json`. No regular-family, grid equality, exact
+derived version of (5a). The final integrated audit also returned **ACCEPT**:
+all11 source files were reconstructed and hash-checked, both original
+entry points ran unchanged with assertions to terminal exit0, and both
+reports matched byte-for-byte, including this9,333-byte report. Full
+responses and actual scope are in `output/selected-star-integrated-review.json`
+and `output/bipartite-universal-padding-review.json`. No regular-family, grid equality, exact
 SF_2, historical-priority or Lean claim is implied.

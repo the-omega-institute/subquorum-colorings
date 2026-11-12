@@ -11,7 +11,9 @@ the padding family attains its coefficient of u exactly. These are
 complete general proofs, with 876 graph inputs,23,499 witness allocations
 and ten targeted finite models checked independently. No graph-sharp
 cubic coefficient or unrestricted SF bound is asserted. Final exact-source
-independent review is pending.
+review returned ACCEPT, reconstructed all11 files, and ran both original
+entry points unchanged with assertions. Both reports reproduced byte-for-byte;
+see `output/selected-star-integrated-review.json` for actual execution scope.
 
 The [exact universal-padding theorem](docs/BIPARTITE_UNIVERSAL_PADDING_AND_CONNECTIVITY.md) proves, for every r>=2 and t>=1,
 a bipartite selected-star family P_(r,t) with n=12r+2t, selected size8r,
@@ -27,8 +29,9 @@ nonregular graphs, not full rectangles. A general exact padding formula
 also covers isolated old vertices. The standard-library checker passes
 1,364 exact padded small models,2,558 literal minimality-preservation
 checks,6 exact family optima and2,498 vertex-split flows. The written
-all-parameter proofs received independent proof-only ACCEPT; final
-source/execution review is pending after a terminal browser failure.
+all-parameter proofs received independent proof-only ACCEPT. The final
+integrated source/execution audit also returned ACCEPT, with both complete
+reports reproduced byte-for-byte by the unchanged original programs.
 
 The [cyclic outside-edge composition theorem](docs/REGULAR_SELECTED_STAR_GAP_FAMILY.md) now gives an explicit
 two-connected four-regular bipartite family of order68r with true

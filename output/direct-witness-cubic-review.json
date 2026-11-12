@@ -1,5 +1,5 @@
 {
-  "verdict": "PENDING",
+  "verdict": "ACCEPT",
   "mathematical_provenance": "Stronger direct-witness exchange and u correction proposed by the completed Oracle research response; independently checked by Codex. Cubic n/22 positive identity and signed subcubic extension subsequently derived by Codex.",
   "research_task": "d94c1dda-81ee-4493-86ba-6700cad488f4",
   "exact_source_manifest": {
@@ -48,5 +48,20 @@
       "sha256": "6154eb19fea32523f5a506a1321907303419956e149094c3ea97dbaba2e45ca3"
     }
   },
-  "scope": "No exact-source external acceptance or execution claim yet. Local original checker passed; integrated source/execution final review is active."
+  "scope": "General stronger witness exchange, sharp unused-outside correction, cubic n/22 proof, signed subcubic version and actual original-code execution. No graph-sharpness; helper standalone main suites not rerun.",
+  "final_task": {
+    "task_id": "89e72d10-2975-4c2b-ae81-b38fbf607774",
+    "conversation_id": "conv_1b0229ca361a7231",
+    "status": "completed",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "attempts": 1,
+    "retry_count": 0
+  },
+  "final_review_record": "output/selected-star-integrated-review.json",
+  "separate_initial_proof_task": {
+    "task_id": "8d28569d-eb80-44c9-ad25-dc8e68af7a72",
+    "status": "failed",
+    "reason": "infrastructure_retry_exhausted at CDP typing; no mathematical response; final acceptance is independent of this task."
+  }
 }

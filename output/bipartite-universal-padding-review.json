@@ -1,6 +1,6 @@
 {
   "verdict": "ACCEPT",
-  "review_kind": "proof-only",
+  "review_kind": "proof-only first pass plus final exact-source execution audit",
   "task": {
     "task_id": "3b0aebaf-25ce-468e-9b8c-1026f86195b3",
     "conversation_id": "conv_7651fc906e51cbc3",
@@ -68,5 +68,17 @@
       "bytes": 12010,
       "sha256": "6154eb19fea32523f5a506a1321907303419956e149094c3ea97dbaba2e45ca3"
     }
-  }
+  },
+  "final_verdict": "ACCEPT",
+  "final_task": {
+    "task_id": "89e72d10-2975-4c2b-ae81-b38fbf607774",
+    "conversation_id": "conv_1b0229ca361a7231",
+    "status": "completed",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "attempts": 1,
+    "retry_count": 0
+  },
+  "final_review_record": "output/selected-star-integrated-review.json",
+  "final_scope": "Full padding formulas, literal minimality, exact connectivity, fixed-lower-bound asymptotic sharpness, both original program executions and complete report comparisons. See final review for exact execution limits."
 }
