@@ -1,5 +1,21 @@
 # Current continuation
 
+The [quantitative subcubic bound](docs/QUANTITATIVE_SUBCUBIC_SELECTED_STAR_BOUND.md)
+improves the real coefficient for specified minimal selected-star/edge/isolate
+sets at minimum degree two and maximum degree three from 1/13 to 20/263:
+`|S|-beta_2<=floor(20n/263)`. It combines a single defect ledger with
+compatible exchanges on private C_4 components; it has no connectivity
+assumption. A [compact two-connected family](docs/COMPACT_SUBCUBIC_SELECTED_STAR_GAPS.md)
+has `n=64k, |S|=40k, beta_2=39k` for every k>=1, with minimum degree and
+vertex connectivity two and maximum degree three. Its selection induces
+8k P_3's and16k isolates. More generally the construction gives
+`n=16Lk, |S|=10Lk, beta_2=(10L-1)k` for every even L>=4.
+For the two-connected selected class, these results bracket the best
+asymptotic gap coefficient between 1/64 and20/263. The standalone checkers
+are `scripts/check_compact_subcubic_selected_stars.py` and
+`scripts/check_subcubic_star_stability.py`. Neither an exact unrestricted
+SF_2 value nor optimality of these coefficients is asserted.
+
 There are now two further degree results in the specified selected-star
 class. For every k>=1, the explicit
 [two-connected subcubic family](docs/TWO_CONNECTED_SUBCUBIC_SELECTED_STAR_GAPS.md)
