@@ -1,5 +1,25 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Mixed owner bridges: 13 November continuation
+
+The [complete standalone proof](MIXED_OWNER_BRIDGES.md) establishes the
+all-helper8b/3 target for three mixed classes: at most one K4 in a specified
+owner matching; arbitrary owner squares together with paths and6k-cycles;
+and at most one exceptional owner cycle of arbitrary length. A global
+four-label interface budget avoids repeating cross-component capacity.
+A stronger local count lemma keeps arbitrary outside omissions fixed and
+forces a matching-edge saving at even cardinality; this also certifies
+some cases with several exceptional cycles.
+
+The abstract A-proper/B-defect1 three-colouring holds for every maxdegree2
+A and paths/even-cycle B. A connected30vertex physical counterexample has
+exact beta_I17 while2b+h18, so the exact square normalization cannot be
+used for arbitrary mixtures. A separate40vertex benchmark has restricted
+one-owner-per-R-pair optimum21, target22 and actual beta_I24.
+These results extend sufficient hypotheses for the existing conditional
+5/51 ledger, without changing a universal coefficient. The full goal,
+including general8b/3 and all general grid questions, remains ACTIVE.
+
 ## Connected maximum-witness retention obstruction
 
 The [all-r family](CONNECTED_MAXIMUM_WITNESS_LOSS.md) has20rphysical vertices,

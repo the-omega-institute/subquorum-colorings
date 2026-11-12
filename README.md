@@ -1,5 +1,15 @@
 # Current continuation
 
+Mixed auxiliary components: [three physical bridge theorems and an exact normalization obstruction](docs/MIXED_OWNER_BRIDGES.md).
+The all-helper8b/3 target now holds when a specified owner matching has at
+most one K4, when all owner cycles are C4 or6k, or when at most one owner
+cycle is exceptional. A stronger local count lemma saves one matching edge
+at even minimum omission cardinality, with every outside choice fixed.
+An abstract mixed three-colouring theorem holds for arbitrary maxdegree2 A;
+a connected30vertex example has beta_I17<2b+h18 and prevents converting
+that colouring directly by the old square normalization. General8b/3,
+the unrestricted subcubic sharp constant and general grid questions stay open.
+
 New connected obstruction: [the exact cost of retaining the maximum witness count](docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md).
 For every r>=1, a20r-vertex two-connected bipartite min2/max3 template has
 beta_I=11r+floor(r/2), while retaining b=4r witnesses gives exactly10r.

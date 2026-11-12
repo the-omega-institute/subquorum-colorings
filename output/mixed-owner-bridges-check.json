@@ -1,0 +1,103 @@
+{
+  "counts": {
+    "K4_one-K4 doubled-owner repair": 36,
+    "K4_specified matching bound": 2446,
+    "abstract_models": 392,
+    "abstract_restored_squares": 8,
+    "arbitrary_fixed_outside_balance_controls": 22175,
+    "cross_interface_models": 503,
+    "exact_fixed_benchmarks": 2,
+    "exception_exceptional-cycle exchange": 296,
+    "exception_minimum omission cardinality": 1811,
+    "exhaustive_physical_models": 850,
+    "genuine_K4_repairs": 1,
+    "inapplicable_K4": 2,
+    "inapplicable_cardinality": 80,
+    "inapplicable_exception": 377,
+    "inapplicable_squares": 1097,
+    "literal_compatible_subsets": 288,
+    "literal_matching_certificates": 3885,
+    "models_K4": 2482,
+    "models_cardinality": 2404,
+    "models_exception": 2107,
+    "models_squares": 1387,
+    "multiple_exception_cardinality_controls": 120,
+    "original_exponential_controls": 296,
+    "physical_certificates": 8501,
+    "prescribed_edge_exchange_pairs": 2520
+  },
+  "deterministic_sha256": "0b4b65875a05fada49ba78d36172e2b3751246b51813970c8a549c9e330fcacf",
+  "fixtures": [
+    {
+      "exact_optimum": {
+        "U": [
+          0,
+          2,
+          3,
+          4,
+          6
+        ],
+        "beta_I": 17,
+        "matching": [
+          [
+            2,
+            3
+          ]
+        ],
+        "owners": [
+          1,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "witnesses": [
+          0,
+          3,
+          4,
+          6
+        ]
+      },
+      "name": "normalization"
+    },
+    {
+      "exact_optimum": {
+        "U": [
+          1,
+          3,
+          4,
+          6,
+          8,
+          11,
+          13
+        ],
+        "beta_I": 24,
+        "matching": [],
+        "owners": [
+          0,
+          2,
+          5,
+          7,
+          9,
+          10,
+          12,
+          14,
+          15
+        ],
+        "witnesses": [
+          1,
+          3,
+          4,
+          6,
+          8,
+          11,
+          13
+        ]
+      },
+      "name": "one-K4"
+    }
+  ],
+  "scope": "General proofs are in docs/MIXED_OWNER_BRIDGES.md. Finite controls check constructions; no unrestricted physical, SF, grid or Lean result is claimed. Colouring search has no polynomial runtime claim."
+}

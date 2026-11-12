@@ -1,0 +1,174 @@
+{
+  "at": "2026-11-12T18:29:56.911901+00:00",
+  "verdict": "ACCEPT",
+  "scope": "Abstract mixed three-colouring; three physical sufficient classes; fixed arbitrary outside local count; cardinality and owner-size corollaries; exact30vertex normalization obstruction;40vertex restriction separation; conditional5/51 consequence only. Universal physical8b/3 and general grid results remain open.",
+  "initial_audit": {
+    "verdict": "FIXABLE_GAPS",
+    "oracle": {
+      "task_id": "5467a031-0470-4af5-b1c1-a3093e6546f8",
+      "conversation_id": "conv_fa7c2caf5cca0bf9",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af6023a-aa08-83ec-ae5c-7277d77c14e6",
+      "usage_estimated": true
+    },
+    "full_response": "FIXABLE_GAPS. All three sufficient-class bounds, the stronger fixed-outside lemma and its corollary, the abstract three-colouring theorem, and both benchmark optima pass. One graph description in the 40-vertex benchmark is false as written. The correction leaves its proof and numerical conclusions intact.Required source correctiondocs/MIXED_OWNER_BRIDGES.md, lines 141–145, says the specified  $J_R$  “consists of one  $K_4$  and four triangles.” Reconstructing it from the fixture gives two connected components, of orders 4 and 12. The 12-vertex component contains the four vertex-disjoint triangles\n$$(4,5,6),\\quad(7,8,9),\\quad(10,11,12),\\quad(13,14,15).$$\nSix further edges join these triangles. For example,  $6\\!-\\!7$  joins the first two. The auxiliary  $C_{12}$  itself remains present in  $J_R$ .A precise replacement is: “The specified  $J_R$  has a  $K_4$  component, and its connected 12-vertex remainder has a spanning collection of four vertex-disjoint triangles.” These five cliques give  $\\alpha(J_R)\\le5$ , and  $\\{0,4,7,10,13\\}$  attains five. The restricted optimum is therefore 21, the doubled-owner construction returns 22, and the exact all-helper optimum is 24. The original checker verifies the independence number and optima, which explains why the inaccurate component description passes it.Two minor source corrections also surfaced. The tested size ranges are specified in the checker script. The JSON report gives counts and a scope statement, so line 374 attributes the ranges to the wrong file. Lines 219 and 361 have escaped closing math delimiters.Mathematical auditExact objective. With every helper selected and owner set  $V\\setminus U$ , the feasible witness sets are precisely the independent subsets of  $A[U]$ . Thus a permitted  $U$  gives\n$$b+(2b-|U|)+\\alpha(A[U])=3b-\\nu(A[U]).$$\nThis verifies the constant  $3b$  and the target cost  $\\lfloor N/6\\rfloor$ . The physical graph has  $5b$  vertices.One- $K_4$  repair. I checked the imported bound with uncovered odd-path endpoints and the remaining  $z=1,o=0$  case. The two diagonals of the obstructing auxiliary square are actual owner edges by physical colour. If the doubled edge has two exterior neighbours, pairing them to each other would close an owner  $C_4$ , where the specified rule instead uses virtual diagonals. Their mates therefore lie in distinct exterior pairs, and at most two colours are forbidden. The repair leaves the doubled edge isolated among selected owners. On any other owner square, every choice of two owners is feasible, including an adjacent pair. The three sizes sum to  $3b+\\tfrac52(N-4)+10=8b$ . On a relabelling that forced two distinct forbidden mate colours, I obtained sizes  $21,21,22$ .Squares with paths and  $6k$ -cycles. The two bits distinguish all four vertices of each owner square and distinguish the endpoints of every internal auxiliary edge. For any matching,  $2m_O+m_\\partial\\le |U_O|$ . Combining this with the internal-edge and crossing-edge counts gives the single budget\n$$F(U)=\\tfrac12|U_O|+|E_A(U_I)|+\\tfrac12|E_A(U_I,U_O)|.$$\nBoth kinds of counted auxiliary edges have joint omission probability  $1/6$ . The degree sum on  $I$  gives  $\\mathbb EF\\le N/6$ . For each fixed label pair,  $2F$  separates over the outside owner components, which justifies polynomial phase minimization. I tested two owner squares, a  $C_6$ , and a  $P_6$  with 12 crossing auxiliary edges. All 54 label-pair/phase combinations satisfied the pointwise matching bound, and their mean  $F$  was exactly  $N/6$ .Fixed-outside count. Let  $k=\\lceil |C|/3\\rceil$ , fix  $U_0$ , and suppose both choices for an exchange  $x\\leftrightarrow y$  have perfect matchings. In their symmetric difference, only  $x,y$  have degree one. The edge at  $x$  belongs to the first matching and the edge at  $y$  to the second. The alternating path joining them therefore has even length. Applying this to every cycle edge puts all of  $C$  on the same side  $L$  of one component  $K$  of  $A[U_0\\cup V(C)]$ .For any one tested choice, every vertex of  $K\\setminus C$  is present. Passing to  $A[U_0\\cup U_C]$  removes exactly  $|C|-k$  vertices from  $L$  and zero from  $R$ . A perfect matching would have to satisfy\n$$|L|-(|C|-k)=|R|,$$\nbecause no matching edge can leave  $K$ . Vertices of  $U_0$  in other components cannot affect this equation. Its required imbalance is at least two, whereas a connected bipartite graph of maximum degree two has side imbalance at most one. The stronger count is valid with the original  $U_0$  fixed.The rounding obstruction in Theorem 4 is exactly  $N=6t+4,\\ m=2t+2$ . The lemma supplies the required one-edge saving there. In a physical  $C_{10}+P_6$  test, my initial minimum omission set had a perfect matching of size three, and an exchanged set with the same outside omissions had cost two. I also checked a physical  $A=C_8$  with two exceptional owner squares for which  $m=4$  and the exact minimum cost is one. This realizes one saving across two exceptional cycles.Abstract colouring and conditional consequence. The Brooks step covers the exterior, including odd auxiliary cycles. Every restored square has lists of size at least two. An internal  $F$ -edge is an  $A$ -edge, and an  $F$ -edge between restored squares is respected when its later endpoint is coloured. I checked an example with two restored  $K_4$  components linked by  $F$ -edges and an auxiliary triangle in the precoloured remainder. The  $5/51$  consequence also follows for an actual qualifying fixed extraction, by adjoining the  $L$  retained vertices and substituting  $Z\\ge0$  in the supplied ledger.Independent physical benchmarksI rebuilt both physical graphs from their edge lists, checked connectedness, bipartiteness and maximum degree three, and optimized directly by enumerating the three witness choices per helper and optimizing the remaining owners. This calculation used neither the packaged optimizer nor the matching formula.Physical graphDirect resultCertificate and obstruction checked30 vertices,  $b=6$  $h=6,\\ \\beta_I=17$ , target 16 $U=\\{0,1,2,5,8\\}$  has cost one. In the four maximal-square cases, choosing  $\\{1,8\\}$  in the first owner complement leaves either  $8,3,11$  or  $2,10,1$  selected. Choosing  $\\{0,9\\}$  forces both  $7,5$  into  $U$ , violating the auxiliary edge  $57$ . The compatible four-set  $\\{0,2,4,6\\}$  has complement cost three.40 vertices,  $b=8$ Restricted optimum 21, target 22,  $\\beta_I=24$ I checked the one-owner-per- $R$ -pair restriction directly. The original repair gives sizes  $22,21,21$ . The permitted set  $U=\\{1,3,4,6,8,11,13\\}$  has cost zero and attains  $3b=24$ .Exact-source executionAll 12 UTF-8 files, totalling 371,452 bytes, matched their individual declared byte counts and SHA-256 digests on decoding. I rechecked all 12 against the attachment after execution and the additional tests. Every byte count and digest was unchanged.I ran python3 -B scripts/check_mixed_owner_bridges.py --output INDEPENDENT.json from the decoded root under Python 3.12.14, with PYTHONOPTIMIZE unset and assertions enabled.ObservationResultExit status0Elapsed wall time around the subprocess11.148213343 sStderrEmpty, 0 bytesStdoutOne LF-terminated line, 1,155 bytes, SHA-256 224ec8f4186978752d6263ec18a52cb9fdf232529eb702ad2f4d9ec471a95558Generated reportByte-for-byte identical to the embedded report, 2,279 bytes, SHA-256 36af85ccccabdcf227b553992472891a9d57ed5fde8e8e308fc1b6149f6d51b8  INDEPENDENT.jsonExact stdout, including one final LF:Plain text{\"counts\": {\"K4_one-K4 doubled-owner repair\": 36, \"K4_specified matching bound\": 2446, \"abstract_models\": 392, \"abstract_restored_squares\": 8, \"arbitrary_fixed_outside_balance_controls\": 22175, \"cross_interface_models\": 503, \"exact_fixed_benchmarks\": 2, \"exception_exceptional-cycle exchange\": 296, \"exception_minimum omission cardinality\": 1811, \"exhaustive_physical_models\": 850, \"genuine_K4_repairs\": 1, \"inapplicable_K4\": 2, \"inapplicable_cardinality\": 80, \"inapplicable_exception\": 377, \"inapplicable_squares\": 1097, \"literal_compatible_subsets\": 288, \"literal_matching_certificates\": 3885, \"models_K4\": 2482, \"models_cardinality\": 2404, \"models_exception\": 2107, \"models_squares\": 1387, \"multiple_exception_cardinality_controls\": 120, \"original_exponential_controls\": 296, \"physical_certificates\": 8501, \"prescribed_edge_exchange_pairs\": 2520}, \"deterministic_sha256\": \"0b4b65875a05fada49ba78d36172e2b3751246b51813970c8a549c9e330fcacf\", \"scope\": \"General proofs are in docs/MIXED_OWNER_BRIDGES.md. Finite controls check constructions; no unrestricted physical, SF, grid or Lean result is claimed. Colouring search has no polynomial runtime claim.\"}The 850 exhaustive small models range over all cross-colour  $Q$  matchings for the script’s fixed  $P$  and listed owner layouts at  $N=4,8$ . The 22,175 fixed-outside controls use the specified auxiliary families at  $N=4,6,8,10$ . The 2,520 exchanges cover every prescribed edge of every even exceptional cycle length from 4 through 122. The 392 abstract models have orders 1 through 28. The 8,501 physical certificates include repeated constructions on a model, with generated sizes through  $N=128$ . The all-order conclusions rest on the proofs. Universal physical  $8b/3$ , an improved universal SF coefficient, and general grid claims remain open.\n",
+    "actually_executed_original_checker": true,
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "runtime_seconds": 11.148213343,
+    "report_bytes": 2279,
+    "report_sha256": "36af85ccccabdcf227b553992472891a9d57ed5fde8e8e308fc1b6149f6d51b8",
+    "report_byte_identical": true,
+    "independent_benchmark_reconstruction": true,
+    "correction": "Four covering triangles lie in a connected12vertex remainder, not four components. Their clique cover and all numeric values unchanged."
+  },
+  "final_proof_audit": {
+    "verdict": "ACCEPT",
+    "oracle": {
+      "task_id": "617e3048-2391-4afb-817e-0469d3684a97",
+      "conversation_id": "conv_fa7c2caf5cca0bf9",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af6023a-aa08-83ec-ae5c-7277d77c14e6",
+      "usage_estimated": true
+    },
+    "final_proof_sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7",
+    "final_proof_bytes": 19766,
+    "prior_unmodified_checker_executed": true,
+    "prior_report_byte_identical": true,
+    "proof_only_followup_no_checker_rerun": true,
+    "all_task_streams_completed": true,
+    "full_response": "FINAL ACCEPT. The revised proof resolves the 40-vertex benchmark error, and the new owner-size condition (5b) follows from the fixed-outside lemma for arbitrary physical auxiliary components.Let  $q=\\lfloor N/6\\rfloor$  and  $m=N-\\beta_2(B)$ , the minimum number of owner omissions. Writing  $N=6q+r$  with  $r\\in\\{0,2,4\\}$ , the two sides of\n$$N-2q-2=2\\lceil N/3\\rceil-2$$\ntake the respective values  $4q-2,4q,4q+2$ . Thus (5b) is exactly  $m\\le 2q+2$ .If  $m\\le 2q+1$ , any minimum omission set has matching cost at most  $\\lfloor m/2\\rfloor\\le q$ . The only remaining value is  $m=2q+2$ . An exceptional owner cycle must then exist: otherwise each path needs  $\\lfloor |P|/3\\rfloor$  omissions and each cycle needs  $|C|/3$ , giving  $m\\le\\lfloor N/3\\rfloor\\le 2q+1$ . Fix minimum omissions outside one exceptional cycle. The local lemma supplies a minimum choice on that cycle with no perfect auxiliary matching, so its global matching cost is at most  $m/2-1=q$ . Equation (1) now gives  $\\beta_I\\ge 3b-q=\\lceil8b/3\\rceil$ . This uses exactly one saving.The corrected benchmark description agrees with the reconstructed graph. The  $K_4$  and four vertex-disjoint triangles cover all 16 indices, and the triangles lie in one connected 12-vertex remainder. This cover gives  $\\alpha(J_R)\\le5$ , while  $\\{0,4,7,10,13\\}$  gives equality. The restricted optimum is 21, the repair attains 22, and the exact all-helper optimum is 24. Both closing math delimiters and the attribution of tested ranges to the script are corrected.Proof scope. I checked the revised standalone argument, including the abstract colouring, all three physical bridges, the fixed-outside count, both cardinality corollaries, the 30-vertex normalization counterexample, and the conditional  $5/51$  consequence. The universal physical  $8b/3$  question remains open.Source and execution scope. Reconstructing the revised Markdown from the previously verified source and the supplied changes gave exactly 19,766 UTF-8 bytes, SHA-256 72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7. The other 11 archived files matched their original byte counts and hashes. There was no checker rerun in this follow-up. The prior unmodified checker run exited 0 in 11.148213343 seconds, with empty stderr, and produced the byte-identical 2,279-byte report with SHA-256 36af85ccccabdcf227b553992472891a9d57ed5fde8e8e308fc1b6149f6d51b8.\n"
+  },
+  "initial_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 84771,
+      "sha256": "5f8c6208341cb2caf62613e4871943e754341b51e39dd42931faa997a61d3a65"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 93477,
+      "sha256": "9fb3979790883b8f27a1dc55b9f63e246c4c1bc2c69a30e2a2147e5b2200db90"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 18888,
+      "sha256": "dd567f9101d2e57ed95a9c9d66eafb53ce3973cea1ebad4e86000a3c4c5ffe2c"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "scripts/check_mixed_owner_bridges.py",
+      "bytes": 11468,
+      "sha256": "539b4bf2faf45ccb8c255cd7c25236d50eec31997f5f96bab8f97988c9801218"
+    },
+    {
+      "path": "develop/fixtures/mixed-owner-bridges.json",
+      "bytes": 4410,
+      "sha256": "e8cb1b1c82cae87d88994ddd58784ed869bd9b8fab99c5a3aca72186c1d32261"
+    },
+    {
+      "path": "output/mixed-owner-bridges-check.json",
+      "bytes": 2279,
+      "sha256": "36af85ccccabdcf227b553992472891a9d57ed5fde8e8e308fc1b6149f6d51b8"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "manuscript/owner-matching-proof.tex",
+      "bytes": 8523,
+      "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+    },
+    {
+      "path": "manuscript/auxiliary-square-proof.tex",
+      "bytes": 6405,
+      "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 115753,
+      "sha256": "66967113c5f43bea0f60d650c3be943d84328999dde70434f80d279fc0911393"
+    }
+  ],
+  "final_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 84771,
+      "sha256": "5f8c6208341cb2caf62613e4871943e754341b51e39dd42931faa997a61d3a65"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 93477,
+      "sha256": "9fb3979790883b8f27a1dc55b9f63e246c4c1bc2c69a30e2a2147e5b2200db90"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "scripts/check_mixed_owner_bridges.py",
+      "bytes": 11468,
+      "sha256": "539b4bf2faf45ccb8c255cd7c25236d50eec31997f5f96bab8f97988c9801218"
+    },
+    {
+      "path": "develop/fixtures/mixed-owner-bridges.json",
+      "bytes": 4410,
+      "sha256": "e8cb1b1c82cae87d88994ddd58784ed869bd9b8fab99c5a3aca72186c1d32261"
+    },
+    {
+      "path": "output/mixed-owner-bridges-check.json",
+      "bytes": 2279,
+      "sha256": "36af85ccccabdcf227b553992472891a9d57ed5fde8e8e308fc1b6149f6d51b8"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "manuscript/owner-matching-proof.tex",
+      "bytes": 8523,
+      "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+    },
+    {
+      "path": "manuscript/auxiliary-square-proof.tex",
+      "bytes": 6405,
+      "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 115753,
+      "sha256": "66967113c5f43bea0f60d650c3be943d84328999dde70434f80d279fc0911393"
+    }
+  ],
+  "no_Lean_or_universal_coefficient_claim": true,
+  "frontier_research_task_is_separate": "880ab64c-5e0c-48e9-894d-c7d3fd901744; candidate novelty rejected locally, not used in these theorems"
+}
