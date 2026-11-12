@@ -1,5 +1,11 @@
 # A degree bound for selected-star gaps when the minimum degree is at least two
 
+A later [free-unused-vertex refinement](FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md)
+strictly strengthens the coefficient below to
+`(Delta-1)/(12(Delta-1)+2(delta-1))` for all Delta>=delta>=2.
+The earlier proof and its review remain preserved here with their original
+scope; the new note has its own proof and separate verification record.
+
 Let G be nonempty, finite, simple and bipartite, with minimum degree at least
 2 and maximum degree Delta. Let S be an inclusion-minimal two-star-forming
 set whose selected components are stars, edges or isolates. Write n=|V(G)|,

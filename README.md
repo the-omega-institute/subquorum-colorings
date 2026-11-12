@@ -1,5 +1,28 @@
 # Current continuation
 
+The [free-unused-vertex refinement](docs/FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md)
+proves, for every specified selected-star/edge/isolate inclusion-minimal
+forming set in a nonempty bipartite graph with minimum degree at least
+delta>=2 and maximum degree at most Delta,
+`d<=floor((Delta-1)n/(12(Delta-1)+2(delta-1)))`. It strengthens the earlier
+minimum-degree certificate for every feasible parameter pair. The proof
+uses one fixed unused-vertex partition in both the enlarged colour exchange
+and the degree-capacity count. Positive unrounded equality is impossible
+when delta>=3. The proof-only independent review returned ACCEPT; the
+integrated exact-source/execution audit is pending.
+
+The [two-connected bounded-degree family](docs/TWO_CONNECTED_BOUNDED_DEGREE_SELECTED_GAPS.md)
+has n=(12p+2)k, selected size8pk, true beta_2=7pk, minimum degree2 and
+maximum degree2p+2, for every p>=2,k>=1. The proof uses disjoint P3/C4
+partitions and an optimum avoiding all gluing endpoints. At maximum degree6
+it gives selected gap n/13, while the new upper bound is5n/62. Thus the
+best asymptotic coefficient for this specified class lies between1/13
+and5/62; graph sharpness remains open. Local checks passed455 small graph
+inputs,24,096 witness allocations and nine separately labelled targets,
+and28 physical family models with7,280 literal deletion failures.
+These results concern specified minimal selections, not an exact SF value
+or general rectangular-grid equality. The new family is not regular.
+
 The [direct-witness exchange](docs/DIRECT_WITNESS_EXCHANGE_AND_CUBIC_BOUND.md) strengthens the colour ledger to
 `t-s-q>=2d`: direct centre witnesses can be retained along with leaf
 witnesses. An exact nonnegative whole-cut identity then improves the

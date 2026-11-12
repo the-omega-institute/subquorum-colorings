@@ -1,0 +1,64 @@
+{
+  "status": "proof_ACCEPT_final_execution_pending",
+  "proof_only": {
+    "status": "ACCEPT",
+    "scope": "Proof-only; no execution",
+    "oracle": {
+      "task_id": "7c026bce-b6fd-4854-9410-83192e0b9512",
+      "conversation_id": "conv_f0d6b10ae9e82f9f",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5131a-dc74-83ec-81b0-faebb58ce963",
+      "usage_estimated": true
+    },
+    "response": "ACCEPT The general degree refinement theorem is mathematically valid under the supplied established witness and repair-ledger premises. I find no failed inference.The new argument correctly combines the two uses of the same partition  $U=Z\\sqcup(U\\setminus Z)$ . In particular, it does not double-spend unused-vertex degree capacity.1. The enlarged colour exchanges are validFix the original witness assignment and bipartition  $A\\sqcup B$ .For  $v\\in Z\\cap A$ : $v$  has no neighbour in  $W\\cap A$ , by bipartiteness.Its selected neighbours belong to  $C\\cup I_+$ .Centres are removed from  $D_A$ .Every selected isolate in  $I_+\\cap B$  is touched by  $W\\cap A$ , since all its witness neighbours must lie in  $A$ . It is therefore removed in  $I_A^*$ .Added vertices in  $Z\\cap A$  are mutually nonadjacent.Thus every added vertex is isolated relative to the existing  $D_A$ . The symmetric argument applies to  $D_B$ .The partition also gives the exact accounting: each touched isolate is removed in exactly one exchange, and each vertex of  $Z$  is added in exactly one exchange.Consequently,\n$$|D_A^+|+|D_B^+|\n=2|S|+s+q-t+g.$$\nSince both are dissociation sets,\n$$\\boxed{T'-g=t-s-q-g\\ge 2d.}\\tag{5}$$\nThis is a valid strengthening of the original direct-witness exchange, without changing  $W$  or reallocating witnesses.2. The degree-slot inequality is validFor every  $h(i)=1$  isolate, exactly one neighbour belongs to  $W$ , none belongs to  $S$ , and hence at least  $\\delta-1$  neighbours belong to  $U$ .A vertex in  $U\\setminus Z$  has at least one selected neighbour in\n$$L\\cup P\\cup I_0.$$\nThis neighbour is distinct from every  $h=1$  isolate. It therefore has at most  $\\Delta-1$  available incident edges to those isolates.A vertex in  $Z$  has at most  $\\Delta$  such edges.Counting the same edges through their two endpoints gives\n$$\\boxed{\n(\\delta-1)a\n\\le \\Delta g+(\\Delta-1)(u-g)\n=(\\Delta-1)u+g.\n}\\tag{6}$$\nThe disjointness required here is genuine:  $I_0$ ,  $P$ , and  $L$  do not contain any  $h=1$  isolate.3. The coefficient algebra checks outThe two exact identities are correct:\n$$t=T'+s+q,\n\\qquad\n2c=J+R+T'+b_3+\\mu.$$\nSubstitution into the exact vertex count gives\n$$\\begin{aligned}\nn={}&\\frac52J+\\frac52R+\\frac72T'\n+\\frac52H\\\\\n&+3s+2q+m+z_0+u,\n\\end{aligned}$$\nwhere  $H=b_3+\\mu$ .Using  $J\\ge0$ ,  $R,T'\\ge2d$ , and (5), this yields\n$$\\boxed{\nn-12d\\ge\nu+\\frac72g+\\frac52H+3s+2q+m+z_0.\n}\\tag{8}$$\nThe other substitution, from  $D\\ge0$ , is also correct:\n$$\\boxed{\n2d\\le a+H-\\frac{s+q}{2}-g.\n}\\tag{9}$$\nCombining (6) and (9) gives exactly\n$$\\begin{aligned}\n2(\\delta-1)d\\le{}&\n(\\Delta-1)u+(\\delta-1)H\\\\\n&-\\frac{\\delta-1}{2}(s+q)-(\\delta-2)g.\n\\end{aligned}\n\\tag{10}$$\nNow  $\\Delta-1\\ge\\delta-1>0$ , and\n$$\\delta-1\\le\\frac52(\\Delta-1).$$\nThe negative terms in (10) cannot obstruct comparison with (8).Therefore\n$$2(\\delta-1)d\\le(\\Delta-1)(n-12d),$$\nor\n$$\\boxed{\nd\\le\n\\left\\lfloor\n\\frac{(\\Delta-1)n}\n{12(\\Delta-1)+2(\\delta-1)}\n\\right\\rfloor.\n}$$\nThe nonpositive-gap case is immediate because the right-hand side is nonnegative.4. Quantified remainder and equality obstructionThe displayed remainder (11) has the correct coefficients:\n$$\\begin{aligned}\n&\\frac72(\\Delta-1)+\\delta-2,\\\\\n&\\frac52(\\Delta-1)-(\\delta-1),\\\\\n&3(\\Delta-1)+\\frac{\\delta-1}{2},\\\\\n&2(\\Delta-1)+\\frac{\\delta-1}{2},\\\\\n&\\Delta-1.\n\\end{aligned}$$\nAll are strictly positive for  $\\Delta\\ge\\delta\\ge2$ .Suppose  $d>0$  and equality holds in the unrounded bound. Then (11), together with its nonnegative intermediate slacks, forces\n$$g=H=s=q=m=z_0=0$$\nand equality in the count relaxation:\n$$J=0,\\qquad R=T'=2d.$$\nSince  $H=0$ , we have  $b_3=\\mu=0$ . Since  $D\\ge0$ ,\n$$b_2=0.$$\nThe identity  $J=0$  then gives\n$$c=t=a=2d.$$\nThus the selected stars are precisely  $c$  copies of  $P_3$ , and every selected isolate has exactly one chosen witness.Equality in (6) forces every vertex of  $U$  to have exactly  $\\Delta-1$  neighbours among these  $h=1$  isolates and one additional neighbour. Since  $m=z_0=0$ , the additional neighbour must be a selected leaf.Moreover, no selected centre meets  $W$ , by the chosen witness classification and  $q=0$ . No selected centre meets  $U$ , by the saturated degree count. Each centre consequently has graph degree exactly two.For  $\\delta\\ge3$ , this contradicts the minimum-degree assumption.The positive unrounded-equality obstruction is therefore valid.5. Boundary and scope checks $\\delta=2$ : The coefficient of  $g$  in (10) vanishes, rather than becoming negative. The comparison with (8) remains valid. No equality obstruction at this boundary is claimed. $d\\le0$ : The theorem holds trivially, including the floor formulation.Same  $U$  partition: Both the exchange gain and degree-slot expenditure use precisely the same  $Z$ .Literal neighbourhood classification: The complement of  $Z$  is exactly the set of unused vertices having a selected neighbour in  $L\\cup P\\cup I_0$ .Strict improvement: The function\n\\[\nx\\longmapsto\\frac{x}{12x+2(\\delta-1)}\n\\]\nis strictly increasing. Since\n\\[\n\\Delta-1<\\max{7(\\delta-1),\\Delta},\n\\]\nthe new real coefficient is strictly smaller than the old one.Final verdict: ACCEPT.The decisive new mathematical contribution is the compatible use of free unused vertices in the colour exchange and the complementary degree-slot charge on nonfree unused vertices. This produces a valid aggregate inequality, rather than two independently optimized estimates that might spend the same vertices twice.The conclusion is limited to the specified inclusion-minimal selections with selected components that are stars, edges or isolates. It establishes neither graph-sharpness nor an unrestricted two-star-forming bound. No code execution or independent computational verification is claimed."
+  },
+  "integrated_review": {
+    "status": "pending",
+    "source_manifest": {
+      "docs/FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md": {
+        "bytes": 8800,
+        "sha256": "57c76cb986c24c1304067a3c2540added61d71c171f9214b599731ced71498cb"
+      },
+      "docs/TWO_CONNECTED_BOUNDED_DEGREE_SELECTED_GAPS.md": {
+        "bytes": 8411,
+        "sha256": "944417426dc3052d8eb60af61ceb7215084d3d1e30ad98b8908a282e799b1921"
+      },
+      "docs/SHARP_SELECTED_STAR_GAP.md": {
+        "bytes": 12224,
+        "sha256": "705cff76b687a235dbdcfc1a76970107bb7e828de271d9f849d65bb0b7970fbf"
+      },
+      "docs/DIRECT_WITNESS_EXCHANGE_AND_CUBIC_BOUND.md": {
+        "bytes": 8660,
+        "sha256": "30d5ebfaaccabaf2b25310cb654e0547ad6e968a02fce86e729051fca5fd20b6"
+      },
+      "scripts/check_selected_star_general_budget.py": {
+        "bytes": 20060,
+        "sha256": "d756992798b2aade31f499e0aeac6c4ab22c0fd900cb1c65ee1070f0e3f2f71b"
+      },
+      "scripts/check_full_degree_capacity.py": {
+        "bytes": 14115,
+        "sha256": "275c6278a0e7fcd10eaa70f05cb0c3444cf2ddf6b4f40a7d368021cf21679b38"
+      },
+      "scripts/check_free_unused_degree_refinement.py": {
+        "bytes": 7795,
+        "sha256": "a84bbd95e2074f2a1fbc359df999e6cfb56a32eb94753bf7e03fc3a07caf4d57"
+      },
+      "scripts/check_two_connected_bounded_degree_gaps.py": {
+        "bytes": 5273,
+        "sha256": "f1640f167fe90e984ba897377b13a84b29774438f20ae7e9b102d063da807b70"
+      },
+      "output/free-unused-degree-refinement-check.json": {
+        "bytes": 24963,
+        "sha256": "87d4ac77914d2e6cfbf4413224f2e373ca9307e5c4065a4b3c6a4bc01d8c8917"
+      },
+      "output/two-connected-bounded-degree-gaps-check.json": {
+        "bytes": 11730,
+        "sha256": "43934d8f09ffd95f647582c945faba4b06072d9ad065e62e67382d3b7376eab6"
+      }
+    },
+    "scope": "Both new theorems, complete dependency notes and both original unchanged checker entry points. No execution acceptance claimed yet."
+  }
+}

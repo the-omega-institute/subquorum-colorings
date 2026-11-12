@@ -1,5 +1,30 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Free-unused-vertex refinement and bounded-degree lower families
+
+The [free-unused-vertex refinement](FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md)
+proves, for every specified selected-star/edge/isolate inclusion-minimal
+forming set in a nonempty bipartite graph with minimum degree at least
+delta>=2 and maximum degree at most Delta,
+`d<=floor((Delta-1)n/(12(Delta-1)+2(delta-1)))`. It strengthens the earlier
+minimum-degree certificate for every feasible parameter pair. The proof
+uses one fixed unused-vertex partition in both the enlarged colour exchange
+and the degree-capacity count. Positive unrounded equality is impossible
+when delta>=3. The proof-only independent review returned ACCEPT; the
+integrated exact-source/execution audit is pending.
+
+The [two-connected bounded-degree family](TWO_CONNECTED_BOUNDED_DEGREE_SELECTED_GAPS.md)
+has n=(12p+2)k, selected size8pk, true beta_2=7pk, minimum degree2 and
+maximum degree2p+2, for every p>=2,k>=1. The proof uses disjoint P3/C4
+partitions and an optimum avoiding all gluing endpoints. At maximum degree6
+it gives selected gap n/13, while the new upper bound is5n/62. Thus the
+best asymptotic coefficient for this specified class lies between1/13
+and5/62; graph sharpness remains open. Local checks passed455 small graph
+inputs,24,096 witness allocations and nine separately labelled targets,
+and28 physical family models with7,280 literal deletion failures.
+These results concern specified minimal selections, not an exact SF value
+or general rectangular-grid equality. The new family is not regular.
+
 ## Direct witnesses and the strengthened cubic bound
 
 The [direct-witness exchange](DIRECT_WITNESS_EXCHANGE_AND_CUBIC_BOUND.md) strengthens the colour ledger to
@@ -853,7 +878,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
 | Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
-| Sharp selected-star gap with bounded maximum degree or regularity | Degree bounds and equality constraints proved; quartic two-connected graphs now have an explicit1/68 lower family and1/34 upper bound. The optimal graph coefficient remains open |
+| Sharp selected-star gap with bounded maximum degree or regularity | New free-unused bound proved; at minimum degree2 and maximum degree6 the explicit two-connected lower family gives1/13 and the upper coefficient is5/62. Quartic regular lower1/68 and upper1/34, and cubic upper1/22, retain their separate scopes. Optimal graph coefficients remain open |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
