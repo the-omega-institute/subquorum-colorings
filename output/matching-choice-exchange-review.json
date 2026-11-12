@@ -1,0 +1,117 @@
+{
+  "at_recorded": "2026-11-12T21:18:39.371745+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "bd003d31-9341-460e-ad2c-0470dcae7582",
+    "conversation_id": "conv_17a9d6b7fe3ef788",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af62bee-fde8-83ec-bf0c-e14552c03fc5",
+    "usage_estimated": true
+  },
+  "attached_manifest": [
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    {
+      "path": "develop/cover_choice_exchange.py",
+      "bytes": 3801,
+      "sha256": "11b4131a559e1f9347871c6fccc3d23dd0b1233ac3507d13125d61a796222bb1"
+    },
+    {
+      "path": "develop/cover_saturated_exchange.py",
+      "bytes": 8770,
+      "sha256": "f8b52899d447d16374cd7d91f05e03125bddacfe26bbef3cf82346bf2202907b"
+    },
+    {
+      "path": "develop/fixtures/matching-choice-seeded-gaps.json",
+      "bytes": 55735,
+      "sha256": "0f31c61dc98ed441bbccf536a53149ca0e744d73dee4a9ece44a76ddc6e50af6"
+    },
+    {
+      "path": "develop/matching_choice_exchange.py",
+      "bytes": 7687,
+      "sha256": "aefbcb90c3d54c07d043be78be941f1604127fa042cebee34fbd7ef8e9397e45"
+    },
+    {
+      "path": "develop/matching_credit_exchange.py",
+      "bytes": 11007,
+      "sha256": "b171c9cf633dff4eb62b5397a0d2cabf3691d741e4ad25dfa01109faa6bcc56d"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4773,
+      "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "docs/COVER_SATURATED_COORDINATED_EXCHANGES.md",
+      "bytes": 15097,
+      "sha256": "a60fc98bfed7a43e2e9e620be7067ac2b03f9d9c7862e4e1ee0eff6b62a2affc"
+    },
+    {
+      "path": "docs/INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.md",
+      "bytes": 16958,
+      "sha256": "bba8c9aab3242587a91ca6bd1cbc4e911be824b00e95de3e5056e5cda11482da"
+    },
+    {
+      "path": "docs/MATCHING_CREDIT_AND_NEUTRAL_PREREQUISITES.md",
+      "bytes": 16174,
+      "sha256": "101c86fa0280923ec78dc80e05934f4de047255eeb4517c00b7a9d330d042d0c"
+    },
+    {
+      "path": "output/matching-choice-exchange-check.json",
+      "bytes": 92016,
+      "sha256": "28da740cc5938fa12392a52102eba9a4ec16e40e8f4b4dc7207e3764a7f719ba"
+    },
+    {
+      "path": "scripts/check_matching_choice_exchange.py",
+      "bytes": 14489,
+      "sha256": "5237f0964423684707298b16b5aec24270e6b71268c45e5b22f2f8e6a9a56cf7"
+    }
+  ],
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_matching_choice_exchange.py --output /tmp/matching-choice-regenerated.json",
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "runtime_seconds": 7.1825,
+    "environment": "Python3.13.5 Linuxx86-64",
+    "stdout_bytes": 908,
+    "stderr_bytes": 1064,
+    "report_bytes": 92016,
+    "report_sha256": "28da740cc5938fa12392a52102eba9a4ec16e40e8f4b4dc7207e3764a7f719ba",
+    "full_byte_comparison_equal": true,
+    "execution_limitations": null,
+    "stderr_qualification": "Python startup emitted an unrelated artifact_tool spreadsheet warmup warning/traceback: RemoteError: Element ordering requires an owning element collection. Original checker still returned0 and complete report compared byte-for-byte. Full reviewer text below retains the exact qualification."
+  },
+  "reviewer_reported_supplemental_execution": {
+    "m": 5,
+    "common_neighbour_candidate_subsets": 1024,
+    "mixed_candidate_subsets": 32768,
+    "all_single_vertex_connectivity_deletions": true,
+    "bipartiteness_and_degree_bounds": true,
+    "not_substituted_for_original_checker": true
+  },
+  "mathematical_or_source_changes_required": false,
+  "scope": "General fixed-cover,batch initial-matching iff and unified edge-owned transfer; exact inherited-rule optimization, two analytic families,14stored gaps. No global physical optimum, numerical bound improvement, schedule, Lean or priority claim.",
+  "complete_response": "Verdict: ACCEPTI found no mathematical or implementation defect requiring correction. The initial-matching characterization, unified mixed-removal certificate, fixed-list optimization, and both uniform physical families withstand the audit.This is an acceptance of the stated mathematical milestone and its frozen implementation—not a claim of Lean verification, global optimality, or completion of the wider graph-theoretic objective.1. Frozen-source integrity15/15 entries verifiedZIP integrity test: passed.All 15 MANIFEST.json entries checked individually.Every byte count matches.Every SHA256 matches.The archive contains exactly those 15 files plus MANIFEST.json.Recursive implementation imports, fixtures, earlier supporting notes, checker and frozen report are present.The main proof and implementation were inspected:docs/INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.mddevelop/matching_choice_exchange.pyscripts/check_matching_choice_exchange.py2. Theorem 1: initial matching choiceMathematically acceptedThe characterization is correct.Let  $C$  be the supplied minimum cover,  $M_0$  a matching of equal cardinality,  $I=U\\setminus C$ , and  $X\\subseteq U$ .The crucial preliminary fact is that every maximum initial matching saturates  $C$ , with exactly one endpoint in  $C$  per matching edge.This remains true for nonbipartite graphs. It follows directly from matching-cover equality and does not require König's theorem.The forced retirement set is\n$$D=(C\\cap X)\\cup\n\\{c\\in C\\setminus X:N_I(c)\\subseteq X\\},\n\\qquad K=C\\setminus D.$$\nThe constrained initial cross graph correctly removes precisely the forbidden edges from  $K$  into  $X$ .The two necessary and sufficient conditions are: $K$  covers the final induced graph.The constrained initial cross graph has a matching saturating  $C$ .I checked both directions, including the distinction between a cover vertex being removed and surviving while its matched endpoint is removed.In particular:Every feasible initial matching has exactly the same retirement set  $D$ .Edges internal to  $C$  are properly handled by the final-cover condition.Removing both endpoints of a matching edge produces exactly one credit.Unmatched removals produce zero credit.The final matching and cover have equal cardinality  $|K|$ .No final matching optimization is needed.The outside-only specialization, matching  $K$  into  $I-X$ , is also valid.Hall-certificate distinction: the returned Hall deficiency belongs to the constrained initial graph  $H_X$ . It is not incorrectly presented as a deficiency of the physical final graph.The implementation's augmenting-path reconstruction and Hall witness extraction agree with the theorem.3. Fixed-list exact optimizationAccepted within stated scopeThe optimization correctly considers:Every minimum initial cover.Every candidate subset.Existence of a suitable initial maximum matching, without enumerating all such matchings.Distinct-owner, individually permitted operations.Arbitrary permitted additions, including additions that are not mutually independent.Maximum matching credit first.Minimum operation count second.The complexity claim is appropriately limited:\n$$O(L\\,2^q\\,\\operatorname{poly}(n)),$$\nwhere  $L$  is the number of minimum initial covers.It is not a universal polynomial-time claim.I also checked the distinction between endpoint certification and execution scheduling. Every candidate subset and sequential prefix is owner-permitted, but the theorem does not establish a nonincreasing-cost schedule for arbitrary batches.The physical helper/witness/owner construction correctly yields\n$$|D|=3b-|K|.$$\nThe matching-edge charging ledger has no duplicate charges.4. Two uniform physical familiesBoth accepted for every  $m\\geq1$ PropertyMixed two- $P_3$  family $P_5$  plus isolate familyPhysical vertices $30m$  $30m$ Initial cost $2m$  $2m$ Unique initial minimum coverYesYesBest one-sided/inherited result $m$  $2m$ Actual fixed-list optimum $0$  $m$ Uniform additive separation $m$  $m$ First family. The three operations have the intended separation:Outside-only inherited batches cannot use the cover-removing third operation.Inside-only final-isolation batches cannot use the first two operations.Each one-sided optimum is  $m$ .The three-operation mixed batch removes all initial paths and achieves zero matching cost.This is specifically a one-batch separation. It does not establish failure of successive applications of the one-sided rules.Second family. The common-neighbour obstruction is genuine.For each block, the two retained cover vertices have only one available initial matching neighbour after both endpoint removals:\n$$|S|=2,\\qquad |N_{H_X}(S)|=1.$$\nThus no choice of initial maximum matching can rescue the inherited-cover certificate.Nevertheless, the actual final graph has a matching and cover of size  $m$ , with the explicitly supplied final matching\n$$\\{(12j+2,12j+3):0\\leq j<m\\}.$$\nThis proves the unbounded additive gap  $m$ .Importantly, the proof does not claim global  $\\beta_I=17m$ .Physical graph conditions. Both constructions correctly give bipartite graphs with minimum degree two and maximum degree three. The deletion argument establishes two-connectivity at every scale: deleting a core vertex leaves a connected core path with at least three attachments per owner square; deleting an owner vertex leaves its square connected to the intact core.The all-scale arguments are analytic, not extrapolations from finite tests.5. Fourteen previous gaps and benchmark completenessAll stated counts confirmedThe pruning argument is legitimate.The checker:Scores every candidate endpoint subset to determine the actual fixed-list optimum.Enumerates all initial minimum covers.Searches every potentially improving batch and cover until it finds an optimal witness or exhausts the possibilities.Because every stored gap is exactly one, an optimal witness closes that benchmark case immediately.Results:ModeGaps closedOutside-only, all-pair12/14Mixed, all-pair14/14The benchmark is not an unrestricted completeness theorem. The second uniform family explicitly disproves that broader interpretation.The 90 smaller physical optimization and tie-break comparisons are also supported by literal all-pair enumeration.6. Original checker executionExact byte comparison passedI extracted the ZIP and ran the original checker, without modifying or shortening it, from the extracted root.Exact command:Bashpython3 -B scripts/check_matching_choice_exchange.py \\\n  --output /tmp/matching-choice-regenerated.jsonRuntime7.1825 secondsPython3.13.5PlatformLinux x86-64Return code0AssertionsEnabledRegenerated report92,016 bytesSHA256:28da740cc5938fa12392a52102eba9a4ec16e40e8f4b4dc7207e3764a7f719baFull byte-for-byte equality with the frozen report.The checker stdout contained the following counts:CheckResultGeneric literal batch models10,960Tight-cover models1,419Cross graphs689Successful reconstructions7,487Feasible initial-pair certificates7,797Literal Hall failures12Literal cover failures3,461Physical all-pair optimizations90Literal physical pair/batch tests2,354Physical dissociation certificates122Common-neighbour scales16Mixed-family scales16Stored endpoint subsets1,912Stored matching-choice checks21,595Outside-only gaps closed12Mixed gaps closed14Stderr qualification: Python startup emitted a 1,064-byte warning and traceback from the environment's unrelated artifact_tool spreadsheet warmup:RemoteError: Element ordering requires an owning element collection.This did not prevent checker execution. The process returned zero, produced the complete report, and passed the full byte comparison.The 908-byte stdout and 1,064-byte stderr were captured separately. The hash comparison covers the complete 92,016-byte JSON report, not stdout or stderr.7. Supplemental independent testsBeyond the original unchanged checker, I independently tested both families at  $m=5$ :Supplemental testCommon-neighbourMixedAll candidate subsets1,02432,768Physical vertices150150Endpoint cost formulasPassedPassedEvery single-vertex deletionConnectedConnectedBipartiteness and degree boundsPassedPassedThese are supplemental finite checks, not replacements for the all-scale proofs.8. Scope and final dispositionNo correction is required for this milestone.The following limitations remain correctly preserved:No universal  $\\beta_I=17m$  claim.No universal numerical improvement.No unit-grid  $5/6$  theorem.No arbitrary-width triple-equality theorem.No general schedule theorem.No Lean verification.No external priority or originality determination.The milestone establishes a genuine improvement in initial-matching selection and mixed-removal certification. It also identifies a precise limitation of the inherited-cover approach through an unbounded family.Review receiptAudit receipt createdThe post-audit receipt is available here:Download matching-choice-exchange-review.jsonFinal decision: ACCEPT. The mathematical statements, implementation scope, benchmark interpretation, and original checker execution are mutually consistent. No fixable mathematical gap was found.matching-choice-exchange-review.jsonCodeOpen file\n"
+}

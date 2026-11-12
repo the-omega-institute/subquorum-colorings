@@ -1,5 +1,14 @@
 # Current continuation
 
+[Initial matching choice and mixed removals](docs/INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.md)
+use one constrained initial matching test to certify a fixed batch, including
+removals on both cover sides. Each destroyed original edge is charged once.
+All14 stored fixed-pair gaps close under mixed cover/matching choice. Two
+uniform30m-vertex families prove a strict gain over both one-sided rules and
+an unbounded remaining additive gap from true fixed-list costs. Exact
+all-pair search is exponential in covers/candidates; independent ACCEPT reproduced the full original report byte-for-byte.
+
+
 [Matching-owned credit and zero-credit prerequisites](docs/MATCHING_CREDIT_AND_NEUTRAL_PREREQUISITES.md)
 reach cost zero on both preceding all-scale barriers. Matched removals outside
 a fixed initial cover retire distinct cover mates; unmatched removals can be

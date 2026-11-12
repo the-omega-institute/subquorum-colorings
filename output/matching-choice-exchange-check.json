@@ -1,0 +1,3972 @@
+{
+  "counts": {
+    "all_pair_family_optima": 4,
+    "barrier_candidate_subsets": 340,
+    "barrier_family_scales": 16,
+    "double_endpoint_single_charge_controls": 1,
+    "literal_Hall_failures": 12,
+    "literal_batch_models": 10960,
+    "literal_cover_failures": 3461,
+    "literal_cross_graphs": 689,
+    "literal_feasible_initial_pair_certificates": 7797,
+    "literal_physical_all_pair_optima": 90,
+    "literal_physical_pair_batch_tests": 2354,
+    "literal_successful_reconstructions": 7487,
+    "literal_tight_cover_models": 1419,
+    "mixed_family_all_pair_optima": 3,
+    "mixed_family_candidate_subsets": 584,
+    "mixed_family_scales": 16,
+    "physical_connectivity_deletions": 348,
+    "physical_dissociation_certificates": 122,
+    "positive_matching_choice_controls": 1,
+    "seeded_larger_batch_models": 120,
+    "stored_gap_candidate_subsets": 1912,
+    "stored_gap_matching_choice_checks": 21595,
+    "stored_gap_mixed_resolved": 14,
+    "stored_gap_models": 14,
+    "stored_gap_outside_resolved": 12
+  },
+  "digest": "a86dfe68bd326b0bbdc0ec06e7706ee6adb44dc8bc5694c3032f586628eae6c6",
+  "examples": [
+    {
+      "U": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "bad_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          7
+        ]
+      ],
+      "cover": [
+        1,
+        3,
+        6
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          0,
+          9
+        ]
+      ],
+      "name": "matching choice rescues a zero-credit prerequisite",
+      "operations": [
+        [
+          0,
+          8
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "result": {
+        "U": [
+          1,
+          2,
+          3,
+          4,
+          6,
+          8,
+          9
+        ],
+        "actual_cost": 2,
+        "added": [
+          8,
+          9
+        ],
+        "applicable": true,
+        "charged_edges": [
+          [
+            6,
+            7
+          ]
+        ],
+        "cover": [
+          1,
+          3
+        ],
+        "credit": 1,
+        "forced_retired": [
+          6
+        ],
+        "initial_U": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7
+        ],
+        "initial_cost": 3,
+        "initial_cover": [
+          1,
+          3,
+          6
+        ],
+        "initial_matching": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "matching": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "removed": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "final_U": [
+        2,
+        3,
+        4,
+        7,
+        9,
+        11
+      ],
+      "final_cover": [
+        3
+      ],
+      "final_matching": [
+        [
+          2,
+          3
+        ]
+      ],
+      "model": {
+        "B": [
+          [
+            1,
+            7
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            10,
+            4
+          ]
+        ],
+        "P": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "Q": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        "b": 6,
+        "colour": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "cover": [
+          2,
+          4
+        ],
+        "initial_U": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          9
+        ],
+        "m": 1,
+        "matching": [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "operations": [
+          [
+            0,
+            1,
+            7
+          ],
+          [
+            1,
+            5,
+            11
+          ]
+        ]
+      },
+      "name": "all initial pairs miss a joint saving",
+      "result": {
+        "U": [
+          2,
+          3,
+          4,
+          7,
+          9,
+          11
+        ],
+        "added": [
+          7,
+          11
+        ],
+        "applicable": false,
+        "cover": [
+          2,
+          4
+        ],
+        "forced_retired": [],
+        "hall": {
+          "deficiency": 1,
+          "hall_left": [
+            2,
+            4
+          ],
+          "hall_neighbours": [
+            3
+          ],
+          "matching": [
+            [
+              2,
+              3
+            ]
+          ],
+          "saturated": false
+        },
+        "initial_U": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          9
+        ],
+        "initial_cover": [
+          2,
+          4
+        ],
+        "reason": "constrained initial matching cannot saturate cover",
+        "removed": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "model": {
+        "B": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            11,
+            0
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            9,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            10,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "P": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "Q": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            11,
+            0
+          ]
+        ],
+        "b": 6,
+        "colour": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "cover": [
+          2,
+          7
+        ],
+        "initial_U": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "m": 1,
+        "matching": [
+          [
+            1,
+            2
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "operations": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            2,
+            7,
+            10
+          ]
+        ]
+      },
+      "name": "both one-sided rules miss zero, mixed transfer reaches it",
+      "result": {
+        "U": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "actual_cost": 0,
+        "added": [
+          0,
+          4,
+          10
+        ],
+        "applicable": true,
+        "charged_edges": [
+          [
+            2,
+            1
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "cover": [],
+        "credit": 2,
+        "forced_retired": [
+          2,
+          7
+        ],
+        "initial_U": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "initial_cost": 2,
+        "initial_cover": [
+          2,
+          7
+        ],
+        "initial_matching": [
+          [
+            2,
+            1
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "matching": [],
+        "removed": [
+          1,
+          3,
+          7
+        ]
+      }
+    },
+    {
+      "models": [
+        {
+          "actual_cost": 1,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    2,
+                    3,
+                    7
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    3
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      2,
+                      5
+                    ]
+                  ],
+                  "cover": [
+                    7
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    2
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    5,
+                    7
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    2,
+                    7
+                  ],
+                  "initial_matching": [
+                    [
+                      2,
+                      5
+                    ],
+                    [
+                      7,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      7,
+                      0
+                    ]
+                  ],
+                  "removed": [
+                    5
+                  ]
+                },
+                "selected": [
+                  1
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 1,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    2,
+                    3,
+                    7
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    3
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      2,
+                      5
+                    ]
+                  ],
+                  "cover": [
+                    7
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    2
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    5,
+                    7
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    2,
+                    7
+                  ],
+                  "initial_matching": [
+                    [
+                      2,
+                      5
+                    ],
+                    [
+                      7,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      7,
+                      0
+                    ]
+                  ],
+                  "removed": [
+                    5
+                  ]
+                },
+                "selected": [
+                  1
+                ]
+              }
+            }
+          ],
+          "n": 8,
+          "old_cost": 2,
+          "trial": 3
+        },
+        {
+          "actual_cost": 1,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    7
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    1
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      0,
+                      5
+                    ]
+                  ],
+                  "cover": [
+                    7
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    0
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    5,
+                    7
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    0,
+                    7
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      5
+                    ],
+                    [
+                      7,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      7,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    5
+                  ]
+                },
+                "selected": [
+                  0
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    7
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    1
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      0,
+                      5
+                    ]
+                  ],
+                  "cover": [
+                    7
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    0
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    5,
+                    7
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    0,
+                    7
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      5
+                    ],
+                    [
+                      7,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      7,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    5
+                  ]
+                },
+                "selected": [
+                  0
+                ]
+              }
+            }
+          ],
+          "n": 8,
+          "old_cost": 2,
+          "trial": 4
+        },
+        {
+          "actual_cost": 1,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 2,
+              "choice_checks": 1,
+              "improvement_witness": null
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 1,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    6,
+                    9,
+                    11
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    1,
+                    4
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      7,
+                      0
+                    ]
+                  ],
+                  "cover": [
+                    6
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    7
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    6,
+                    7,
+                    9,
+                    11
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    6,
+                    7
+                  ],
+                  "initial_matching": [
+                    [
+                      6,
+                      11
+                    ],
+                    [
+                      7,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      6,
+                      11
+                    ]
+                  ],
+                  "removed": [
+                    3,
+                    7
+                  ]
+                },
+                "selected": [
+                  0,
+                  2
+                ]
+              }
+            }
+          ],
+          "n": 12,
+          "old_cost": 2,
+          "trial": 12
+        },
+        {
+          "actual_cost": 1,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    10,
+                    11
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    1
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      0,
+                      7
+                    ]
+                  ],
+                  "cover": [
+                    11
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    0
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    7,
+                    10,
+                    11
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    0,
+                    11
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      7
+                    ],
+                    [
+                      11,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      11,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    7
+                  ]
+                },
+                "selected": [
+                  0
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    10,
+                    11
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    1
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      0,
+                      7
+                    ]
+                  ],
+                  "cover": [
+                    11
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    0
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    7,
+                    10,
+                    11
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    0,
+                    11
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      7
+                    ],
+                    [
+                      11,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      11,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    7
+                  ]
+                },
+                "selected": [
+                  0
+                ]
+              }
+            }
+          ],
+          "n": 12,
+          "old_cost": 2,
+          "trial": 29
+        },
+        {
+          "actual_cost": 2,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 2,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    8,
+                    13,
+                    15
+                  ],
+                  "actual_cost": 2,
+                  "added": [
+                    4
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      3,
+                      10
+                    ]
+                  ],
+                  "cover": [
+                    2,
+                    13
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    3
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    8,
+                    10,
+                    13,
+                    15
+                  ],
+                  "initial_cost": 3,
+                  "initial_cover": [
+                    2,
+                    3,
+                    13
+                  ],
+                  "initial_matching": [
+                    [
+                      2,
+                      15
+                    ],
+                    [
+                      3,
+                      10
+                    ],
+                    [
+                      13,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      2,
+                      15
+                    ],
+                    [
+                      13,
+                      0
+                    ]
+                  ],
+                  "removed": [
+                    10
+                  ]
+                },
+                "selected": [
+                  3
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 2,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    8,
+                    13,
+                    15
+                  ],
+                  "actual_cost": 2,
+                  "added": [
+                    4
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      3,
+                      10
+                    ]
+                  ],
+                  "cover": [
+                    2,
+                    13
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    3
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    8,
+                    10,
+                    13,
+                    15
+                  ],
+                  "initial_cost": 3,
+                  "initial_cover": [
+                    2,
+                    3,
+                    13
+                  ],
+                  "initial_matching": [
+                    [
+                      2,
+                      15
+                    ],
+                    [
+                      3,
+                      10
+                    ],
+                    [
+                      13,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      2,
+                      15
+                    ],
+                    [
+                      13,
+                      0
+                    ]
+                  ],
+                  "removed": [
+                    10
+                  ]
+                },
+                "selected": [
+                  3
+                ]
+              }
+            }
+          ],
+          "n": 16,
+          "old_cost": 3,
+          "trial": 10
+        },
+        {
+          "actual_cost": 1,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    2,
+                    3,
+                    5,
+                    7,
+                    8,
+                    14,
+                    15
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    8
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      5,
+                      10
+                    ]
+                  ],
+                  "cover": [
+                    15
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    5
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    5,
+                    7,
+                    10,
+                    14,
+                    15
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    5,
+                    15
+                  ],
+                  "initial_matching": [
+                    [
+                      5,
+                      10
+                    ],
+                    [
+                      15,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      15,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    10
+                  ]
+                },
+                "selected": [
+                  3
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 1,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    2,
+                    3,
+                    5,
+                    7,
+                    8,
+                    14,
+                    15
+                  ],
+                  "actual_cost": 1,
+                  "added": [
+                    8
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      5,
+                      10
+                    ]
+                  ],
+                  "cover": [
+                    15
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    5
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    5,
+                    7,
+                    10,
+                    14,
+                    15
+                  ],
+                  "initial_cost": 2,
+                  "initial_cover": [
+                    5,
+                    15
+                  ],
+                  "initial_matching": [
+                    [
+                      5,
+                      10
+                    ],
+                    [
+                      15,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      15,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    10
+                  ]
+                },
+                "selected": [
+                  3
+                ]
+              }
+            }
+          ],
+          "n": 16,
+          "old_cost": 2,
+          "trial": 11
+        },
+        {
+          "actual_cost": 4,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 4,
+              "choice_checks": 7,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    8,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    21,
+                    23
+                  ],
+                  "actual_cost": 4,
+                  "added": [
+                    2,
+                    11
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      3,
+                      16
+                    ],
+                    [
+                      5,
+                      18
+                    ]
+                  ],
+                  "cover": [
+                    1,
+                    12,
+                    21,
+                    23
+                  ],
+                  "credit": 2,
+                  "forced_retired": [
+                    3,
+                    5
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    3,
+                    4,
+                    5,
+                    8,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    18,
+                    21,
+                    23
+                  ],
+                  "initial_cost": 6,
+                  "initial_cover": [
+                    1,
+                    3,
+                    5,
+                    12,
+                    21,
+                    23
+                  ],
+                  "initial_matching": [
+                    [
+                      1,
+                      13
+                    ],
+                    [
+                      3,
+                      16
+                    ],
+                    [
+                      5,
+                      18
+                    ],
+                    [
+                      12,
+                      14
+                    ],
+                    [
+                      21,
+                      15
+                    ],
+                    [
+                      23,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      1,
+                      13
+                    ],
+                    [
+                      12,
+                      14
+                    ],
+                    [
+                      21,
+                      15
+                    ],
+                    [
+                      23,
+                      0
+                    ]
+                  ],
+                  "removed": [
+                    16,
+                    18
+                  ]
+                },
+                "selected": [
+                  1,
+                  3
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 4,
+              "choice_checks": 13,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    8,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    21,
+                    23
+                  ],
+                  "actual_cost": 4,
+                  "added": [
+                    2,
+                    11
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      3,
+                      16
+                    ],
+                    [
+                      5,
+                      18
+                    ]
+                  ],
+                  "cover": [
+                    1,
+                    12,
+                    21,
+                    23
+                  ],
+                  "credit": 2,
+                  "forced_retired": [
+                    3,
+                    5
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    3,
+                    4,
+                    5,
+                    8,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    18,
+                    21,
+                    23
+                  ],
+                  "initial_cost": 6,
+                  "initial_cover": [
+                    1,
+                    3,
+                    5,
+                    12,
+                    21,
+                    23
+                  ],
+                  "initial_matching": [
+                    [
+                      1,
+                      13
+                    ],
+                    [
+                      3,
+                      16
+                    ],
+                    [
+                      5,
+                      18
+                    ],
+                    [
+                      12,
+                      14
+                    ],
+                    [
+                      21,
+                      15
+                    ],
+                    [
+                      23,
+                      0
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      1,
+                      13
+                    ],
+                    [
+                      12,
+                      14
+                    ],
+                    [
+                      21,
+                      15
+                    ],
+                    [
+                      23,
+                      0
+                    ]
+                  ],
+                  "removed": [
+                    16,
+                    18
+                  ]
+                },
+                "selected": [
+                  1,
+                  3
+                ]
+              }
+            }
+          ],
+          "n": 24,
+          "old_cost": 5,
+          "trial": 15
+        },
+        {
+          "actual_cost": 4,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 4,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    5,
+                    6,
+                    8,
+                    9,
+                    10,
+                    14,
+                    16,
+                    17,
+                    19,
+                    20,
+                    23,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "actual_cost": 4,
+                  "added": [
+                    6
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  "cover": [
+                    0,
+                    9,
+                    14,
+                    17
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    1
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    8,
+                    9,
+                    10,
+                    14,
+                    16,
+                    17,
+                    19,
+                    20,
+                    23,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "initial_cost": 5,
+                  "initial_cover": [
+                    0,
+                    1,
+                    9,
+                    14,
+                    17
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      20
+                    ],
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      14,
+                      27
+                    ],
+                    [
+                      17,
+                      5
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      0,
+                      20
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      14,
+                      27
+                    ],
+                    [
+                      17,
+                      5
+                    ]
+                  ],
+                  "removed": [
+                    3
+                  ]
+                },
+                "selected": [
+                  3
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 4,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    5,
+                    6,
+                    8,
+                    9,
+                    10,
+                    14,
+                    16,
+                    17,
+                    19,
+                    20,
+                    23,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "actual_cost": 4,
+                  "added": [
+                    6
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      1,
+                      3
+                    ]
+                  ],
+                  "cover": [
+                    0,
+                    9,
+                    14,
+                    17
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    1
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    8,
+                    9,
+                    10,
+                    14,
+                    16,
+                    17,
+                    19,
+                    20,
+                    23,
+                    27,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "initial_cost": 5,
+                  "initial_cover": [
+                    0,
+                    1,
+                    9,
+                    14,
+                    17
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      20
+                    ],
+                    [
+                      1,
+                      3
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      14,
+                      27
+                    ],
+                    [
+                      17,
+                      5
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      0,
+                      20
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      14,
+                      27
+                    ],
+                    [
+                      17,
+                      5
+                    ]
+                  ],
+                  "removed": [
+                    3
+                  ]
+                },
+                "selected": [
+                  3
+                ]
+              }
+            }
+          ],
+          "n": 32,
+          "old_cost": 5,
+          "trial": 3
+        },
+        {
+          "actual_cost": 3,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 3,
+              "choice_checks": 2,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    7,
+                    8,
+                    10,
+                    12,
+                    13,
+                    17,
+                    19,
+                    23,
+                    25,
+                    29,
+                    30
+                  ],
+                  "actual_cost": 3,
+                  "added": [
+                    12,
+                    17,
+                    19
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      5,
+                      26
+                    ],
+                    [
+                      7,
+                      18
+                    ],
+                    [
+                      8,
+                      31
+                    ]
+                  ],
+                  "cover": [
+                    4,
+                    13,
+                    29
+                  ],
+                  "credit": 3,
+                  "forced_retired": [
+                    5,
+                    7,
+                    8
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    7,
+                    8,
+                    10,
+                    13,
+                    18,
+                    23,
+                    25,
+                    26,
+                    29,
+                    30,
+                    31
+                  ],
+                  "initial_cost": 6,
+                  "initial_cover": [
+                    4,
+                    5,
+                    7,
+                    8,
+                    13,
+                    29
+                  ],
+                  "initial_matching": [
+                    [
+                      4,
+                      23
+                    ],
+                    [
+                      5,
+                      26
+                    ],
+                    [
+                      7,
+                      18
+                    ],
+                    [
+                      8,
+                      31
+                    ],
+                    [
+                      13,
+                      2
+                    ],
+                    [
+                      29,
+                      10
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      4,
+                      23
+                    ],
+                    [
+                      13,
+                      2
+                    ],
+                    [
+                      29,
+                      10
+                    ]
+                  ],
+                  "removed": [
+                    18,
+                    26,
+                    31
+                  ]
+                },
+                "selected": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 3,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    7,
+                    8,
+                    10,
+                    12,
+                    13,
+                    17,
+                    19,
+                    23,
+                    25,
+                    29,
+                    30
+                  ],
+                  "actual_cost": 3,
+                  "added": [
+                    12,
+                    17,
+                    19
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      5,
+                      26
+                    ],
+                    [
+                      7,
+                      18
+                    ],
+                    [
+                      8,
+                      31
+                    ]
+                  ],
+                  "cover": [
+                    4,
+                    13,
+                    29
+                  ],
+                  "credit": 3,
+                  "forced_retired": [
+                    5,
+                    7,
+                    8
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    7,
+                    8,
+                    10,
+                    13,
+                    18,
+                    23,
+                    25,
+                    26,
+                    29,
+                    30,
+                    31
+                  ],
+                  "initial_cost": 6,
+                  "initial_cover": [
+                    4,
+                    5,
+                    7,
+                    8,
+                    13,
+                    29
+                  ],
+                  "initial_matching": [
+                    [
+                      4,
+                      23
+                    ],
+                    [
+                      5,
+                      26
+                    ],
+                    [
+                      7,
+                      18
+                    ],
+                    [
+                      8,
+                      31
+                    ],
+                    [
+                      13,
+                      2
+                    ],
+                    [
+                      29,
+                      10
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      4,
+                      23
+                    ],
+                    [
+                      13,
+                      2
+                    ],
+                    [
+                      29,
+                      10
+                    ]
+                  ],
+                  "removed": [
+                    18,
+                    26,
+                    31
+                  ]
+                },
+                "selected": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            }
+          ],
+          "n": 32,
+          "old_cost": 4,
+          "trial": 10
+        },
+        {
+          "actual_cost": 3,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 3,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    7,
+                    8,
+                    9,
+                    12,
+                    13,
+                    14,
+                    20,
+                    24,
+                    26,
+                    27,
+                    29
+                  ],
+                  "actual_cost": 3,
+                  "added": [
+                    8
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      1,
+                      30
+                    ]
+                  ],
+                  "cover": [
+                    3,
+                    9,
+                    27
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    1
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    7,
+                    9,
+                    12,
+                    13,
+                    14,
+                    20,
+                    24,
+                    26,
+                    27,
+                    29,
+                    30
+                  ],
+                  "initial_cost": 4,
+                  "initial_cover": [
+                    1,
+                    3,
+                    9,
+                    27
+                  ],
+                  "initial_matching": [
+                    [
+                      1,
+                      30
+                    ],
+                    [
+                      3,
+                      14
+                    ],
+                    [
+                      9,
+                      13
+                    ],
+                    [
+                      27,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      3,
+                      14
+                    ],
+                    [
+                      9,
+                      13
+                    ],
+                    [
+                      27,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    30
+                  ]
+                },
+                "selected": [
+                  1
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 3,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    7,
+                    8,
+                    9,
+                    12,
+                    13,
+                    14,
+                    20,
+                    24,
+                    26,
+                    27,
+                    29
+                  ],
+                  "actual_cost": 3,
+                  "added": [
+                    8
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      1,
+                      30
+                    ]
+                  ],
+                  "cover": [
+                    3,
+                    9,
+                    27
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    1
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    7,
+                    9,
+                    12,
+                    13,
+                    14,
+                    20,
+                    24,
+                    26,
+                    27,
+                    29,
+                    30
+                  ],
+                  "initial_cost": 4,
+                  "initial_cover": [
+                    1,
+                    3,
+                    9,
+                    27
+                  ],
+                  "initial_matching": [
+                    [
+                      1,
+                      30
+                    ],
+                    [
+                      3,
+                      14
+                    ],
+                    [
+                      9,
+                      13
+                    ],
+                    [
+                      27,
+                      2
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      3,
+                      14
+                    ],
+                    [
+                      9,
+                      13
+                    ],
+                    [
+                      27,
+                      2
+                    ]
+                  ],
+                  "removed": [
+                    30
+                  ]
+                },
+                "selected": [
+                  1
+                ]
+              }
+            }
+          ],
+          "n": 32,
+          "old_cost": 4,
+          "trial": 16
+        },
+        {
+          "actual_cost": 5,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 5,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    6,
+                    7,
+                    9,
+                    11,
+                    12,
+                    13,
+                    18,
+                    19,
+                    23,
+                    24,
+                    25,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "actual_cost": 5,
+                  "added": [
+                    11
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      6,
+                      26
+                    ]
+                  ],
+                  "cover": [
+                    3,
+                    5,
+                    7,
+                    9,
+                    25
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    6
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    6,
+                    7,
+                    9,
+                    12,
+                    13,
+                    18,
+                    19,
+                    23,
+                    24,
+                    25,
+                    26,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "initial_cost": 6,
+                  "initial_cover": [
+                    3,
+                    5,
+                    6,
+                    7,
+                    9,
+                    25
+                  ],
+                  "initial_matching": [
+                    [
+                      3,
+                      18
+                    ],
+                    [
+                      5,
+                      28
+                    ],
+                    [
+                      6,
+                      26
+                    ],
+                    [
+                      7,
+                      19
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      25,
+                      13
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      3,
+                      18
+                    ],
+                    [
+                      5,
+                      28
+                    ],
+                    [
+                      7,
+                      19
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      25,
+                      13
+                    ]
+                  ],
+                  "removed": [
+                    26
+                  ]
+                },
+                "selected": [
+                  5
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 5,
+              "choice_checks": 3,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    6,
+                    7,
+                    9,
+                    11,
+                    12,
+                    13,
+                    18,
+                    19,
+                    23,
+                    24,
+                    25,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "actual_cost": 5,
+                  "added": [
+                    11
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      6,
+                      26
+                    ]
+                  ],
+                  "cover": [
+                    3,
+                    5,
+                    7,
+                    9,
+                    25
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    6
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    5,
+                    6,
+                    7,
+                    9,
+                    12,
+                    13,
+                    18,
+                    19,
+                    23,
+                    24,
+                    25,
+                    26,
+                    28,
+                    29,
+                    30,
+                    31
+                  ],
+                  "initial_cost": 6,
+                  "initial_cover": [
+                    3,
+                    5,
+                    6,
+                    7,
+                    9,
+                    25
+                  ],
+                  "initial_matching": [
+                    [
+                      3,
+                      18
+                    ],
+                    [
+                      5,
+                      28
+                    ],
+                    [
+                      6,
+                      26
+                    ],
+                    [
+                      7,
+                      19
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      25,
+                      13
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      3,
+                      18
+                    ],
+                    [
+                      5,
+                      28
+                    ],
+                    [
+                      7,
+                      19
+                    ],
+                    [
+                      9,
+                      2
+                    ],
+                    [
+                      25,
+                      13
+                    ]
+                  ],
+                  "removed": [
+                    26
+                  ]
+                },
+                "selected": [
+                  5
+                ]
+              }
+            }
+          ],
+          "n": 32,
+          "old_cost": 6,
+          "trial": 27
+        },
+        {
+          "actual_cost": 14,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 15,
+              "choice_checks": 18432,
+              "improvement_witness": null
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 14,
+              "choice_checks": 2305,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    6,
+                    8,
+                    9,
+                    10,
+                    13,
+                    15,
+                    16,
+                    17,
+                    18,
+                    20,
+                    22,
+                    26,
+                    27,
+                    28,
+                    31,
+                    32,
+                    34,
+                    35,
+                    36,
+                    39,
+                    41,
+                    42,
+                    43,
+                    44,
+                    46,
+                    51,
+                    52,
+                    53,
+                    55,
+                    56,
+                    57,
+                    58,
+                    59,
+                    61,
+                    62,
+                    63
+                  ],
+                  "actual_cost": 14,
+                  "added": [
+                    55
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      5,
+                      1
+                    ]
+                  ],
+                  "cover": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    8,
+                    13,
+                    15,
+                    16,
+                    17,
+                    26,
+                    27,
+                    41,
+                    51,
+                    52
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    5
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    8,
+                    9,
+                    10,
+                    13,
+                    15,
+                    16,
+                    17,
+                    18,
+                    20,
+                    22,
+                    26,
+                    27,
+                    28,
+                    31,
+                    32,
+                    34,
+                    35,
+                    36,
+                    39,
+                    41,
+                    42,
+                    43,
+                    44,
+                    46,
+                    51,
+                    52,
+                    53,
+                    56,
+                    57,
+                    58,
+                    59,
+                    61,
+                    62,
+                    63
+                  ],
+                  "initial_cost": 15,
+                  "initial_cover": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    5,
+                    8,
+                    13,
+                    15,
+                    16,
+                    17,
+                    26,
+                    27,
+                    41,
+                    51,
+                    52
+                  ],
+                  "initial_matching": [
+                    [
+                      0,
+                      18
+                    ],
+                    [
+                      2,
+                      36
+                    ],
+                    [
+                      3,
+                      53
+                    ],
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      5,
+                      1
+                    ],
+                    [
+                      8,
+                      58
+                    ],
+                    [
+                      13,
+                      44
+                    ],
+                    [
+                      15,
+                      46
+                    ],
+                    [
+                      16,
+                      28
+                    ],
+                    [
+                      17,
+                      63
+                    ],
+                    [
+                      26,
+                      9
+                    ],
+                    [
+                      27,
+                      62
+                    ],
+                    [
+                      41,
+                      42
+                    ],
+                    [
+                      51,
+                      39
+                    ],
+                    [
+                      52,
+                      56
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      0,
+                      18
+                    ],
+                    [
+                      2,
+                      36
+                    ],
+                    [
+                      3,
+                      53
+                    ],
+                    [
+                      4,
+                      10
+                    ],
+                    [
+                      8,
+                      58
+                    ],
+                    [
+                      13,
+                      44
+                    ],
+                    [
+                      15,
+                      46
+                    ],
+                    [
+                      16,
+                      28
+                    ],
+                    [
+                      17,
+                      63
+                    ],
+                    [
+                      26,
+                      9
+                    ],
+                    [
+                      27,
+                      62
+                    ],
+                    [
+                      41,
+                      42
+                    ],
+                    [
+                      51,
+                      39
+                    ],
+                    [
+                      52,
+                      56
+                    ]
+                  ],
+                  "removed": [
+                    5
+                  ]
+                },
+                "selected": [
+                  5
+                ]
+              }
+            }
+          ],
+          "n": 64,
+          "old_cost": 15,
+          "trial": 0
+        },
+        {
+          "actual_cost": 10,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 10,
+              "choice_checks": 385,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    17,
+                    18,
+                    20,
+                    22,
+                    26,
+                    27,
+                    29,
+                    30,
+                    31,
+                    33,
+                    34,
+                    37,
+                    38,
+                    39,
+                    40,
+                    42,
+                    44,
+                    45,
+                    49,
+                    52,
+                    54,
+                    56,
+                    57,
+                    59,
+                    62,
+                    63
+                  ],
+                  "actual_cost": 10,
+                  "added": [
+                    45
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      17,
+                      47
+                    ]
+                  ],
+                  "cover": [
+                    2,
+                    3,
+                    7,
+                    12,
+                    14,
+                    15,
+                    18,
+                    20,
+                    22,
+                    27
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    17
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    17,
+                    18,
+                    20,
+                    22,
+                    26,
+                    27,
+                    29,
+                    30,
+                    31,
+                    33,
+                    34,
+                    37,
+                    38,
+                    39,
+                    40,
+                    42,
+                    44,
+                    47,
+                    49,
+                    52,
+                    54,
+                    56,
+                    57,
+                    59,
+                    62,
+                    63
+                  ],
+                  "initial_cost": 11,
+                  "initial_cover": [
+                    2,
+                    3,
+                    7,
+                    12,
+                    14,
+                    15,
+                    17,
+                    18,
+                    20,
+                    22,
+                    27
+                  ],
+                  "initial_matching": [
+                    [
+                      2,
+                      8
+                    ],
+                    [
+                      3,
+                      31
+                    ],
+                    [
+                      7,
+                      34
+                    ],
+                    [
+                      12,
+                      0
+                    ],
+                    [
+                      14,
+                      38
+                    ],
+                    [
+                      15,
+                      52
+                    ],
+                    [
+                      17,
+                      47
+                    ],
+                    [
+                      18,
+                      39
+                    ],
+                    [
+                      20,
+                      26
+                    ],
+                    [
+                      22,
+                      56
+                    ],
+                    [
+                      27,
+                      37
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      2,
+                      8
+                    ],
+                    [
+                      3,
+                      31
+                    ],
+                    [
+                      7,
+                      34
+                    ],
+                    [
+                      12,
+                      0
+                    ],
+                    [
+                      14,
+                      38
+                    ],
+                    [
+                      15,
+                      52
+                    ],
+                    [
+                      18,
+                      39
+                    ],
+                    [
+                      20,
+                      26
+                    ],
+                    [
+                      22,
+                      56
+                    ],
+                    [
+                      27,
+                      37
+                    ]
+                  ],
+                  "removed": [
+                    47
+                  ]
+                },
+                "selected": [
+                  1
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 10,
+              "choice_checks": 385,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    17,
+                    18,
+                    20,
+                    22,
+                    26,
+                    27,
+                    29,
+                    30,
+                    31,
+                    33,
+                    34,
+                    37,
+                    38,
+                    39,
+                    40,
+                    42,
+                    44,
+                    45,
+                    49,
+                    52,
+                    54,
+                    56,
+                    57,
+                    59,
+                    62,
+                    63
+                  ],
+                  "actual_cost": 10,
+                  "added": [
+                    45
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      17,
+                      47
+                    ]
+                  ],
+                  "cover": [
+                    2,
+                    3,
+                    7,
+                    12,
+                    14,
+                    15,
+                    18,
+                    20,
+                    22,
+                    27
+                  ],
+                  "credit": 1,
+                  "forced_retired": [
+                    17
+                  ],
+                  "initial_U": [
+                    0,
+                    2,
+                    3,
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    17,
+                    18,
+                    20,
+                    22,
+                    26,
+                    27,
+                    29,
+                    30,
+                    31,
+                    33,
+                    34,
+                    37,
+                    38,
+                    39,
+                    40,
+                    42,
+                    44,
+                    47,
+                    49,
+                    52,
+                    54,
+                    56,
+                    57,
+                    59,
+                    62,
+                    63
+                  ],
+                  "initial_cost": 11,
+                  "initial_cover": [
+                    2,
+                    3,
+                    7,
+                    12,
+                    14,
+                    15,
+                    17,
+                    18,
+                    20,
+                    22,
+                    27
+                  ],
+                  "initial_matching": [
+                    [
+                      2,
+                      8
+                    ],
+                    [
+                      3,
+                      31
+                    ],
+                    [
+                      7,
+                      34
+                    ],
+                    [
+                      12,
+                      0
+                    ],
+                    [
+                      14,
+                      38
+                    ],
+                    [
+                      15,
+                      52
+                    ],
+                    [
+                      17,
+                      47
+                    ],
+                    [
+                      18,
+                      39
+                    ],
+                    [
+                      20,
+                      26
+                    ],
+                    [
+                      22,
+                      56
+                    ],
+                    [
+                      27,
+                      37
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      2,
+                      8
+                    ],
+                    [
+                      3,
+                      31
+                    ],
+                    [
+                      7,
+                      34
+                    ],
+                    [
+                      12,
+                      0
+                    ],
+                    [
+                      14,
+                      38
+                    ],
+                    [
+                      15,
+                      52
+                    ],
+                    [
+                      18,
+                      39
+                    ],
+                    [
+                      20,
+                      26
+                    ],
+                    [
+                      22,
+                      56
+                    ],
+                    [
+                      27,
+                      37
+                    ]
+                  ],
+                  "removed": [
+                    47
+                  ]
+                },
+                "selected": [
+                  1
+                ]
+              }
+            }
+          ],
+          "n": 64,
+          "old_cost": 11,
+          "trial": 9
+        },
+        {
+          "actual_cost": 6,
+          "modes": [
+            {
+              "allow_mixed": false,
+              "best_cost": 6,
+              "choice_checks": 9,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    12,
+                    13,
+                    14,
+                    16,
+                    19,
+                    20,
+                    21,
+                    24,
+                    26,
+                    29,
+                    32,
+                    37,
+                    43,
+                    46,
+                    51,
+                    52,
+                    53,
+                    55,
+                    56,
+                    59,
+                    61,
+                    63
+                  ],
+                  "actual_cost": 6,
+                  "added": [
+                    5,
+                    10,
+                    16,
+                    37
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      1,
+                      54
+                    ],
+                    [
+                      2,
+                      33
+                    ],
+                    [
+                      4,
+                      45
+                    ],
+                    [
+                      9,
+                      60
+                    ]
+                  ],
+                  "cover": [
+                    7,
+                    8,
+                    13,
+                    14,
+                    21,
+                    32
+                  ],
+                  "credit": 4,
+                  "forced_retired": [
+                    1,
+                    2,
+                    4,
+                    9
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    12,
+                    13,
+                    14,
+                    19,
+                    20,
+                    21,
+                    24,
+                    26,
+                    29,
+                    32,
+                    33,
+                    43,
+                    45,
+                    46,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    59,
+                    60,
+                    61,
+                    63
+                  ],
+                  "initial_cost": 10,
+                  "initial_cover": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    8,
+                    9,
+                    13,
+                    14,
+                    21,
+                    32
+                  ],
+                  "initial_matching": [
+                    [
+                      1,
+                      54
+                    ],
+                    [
+                      2,
+                      33
+                    ],
+                    [
+                      4,
+                      45
+                    ],
+                    [
+                      7,
+                      63
+                    ],
+                    [
+                      8,
+                      59
+                    ],
+                    [
+                      9,
+                      60
+                    ],
+                    [
+                      13,
+                      19
+                    ],
+                    [
+                      14,
+                      53
+                    ],
+                    [
+                      21,
+                      56
+                    ],
+                    [
+                      32,
+                      61
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      7,
+                      63
+                    ],
+                    [
+                      8,
+                      59
+                    ],
+                    [
+                      13,
+                      19
+                    ],
+                    [
+                      14,
+                      53
+                    ],
+                    [
+                      21,
+                      56
+                    ],
+                    [
+                      32,
+                      61
+                    ]
+                  ],
+                  "removed": [
+                    33,
+                    45,
+                    54,
+                    60
+                  ]
+                },
+                "selected": [
+                  1,
+                  2,
+                  3,
+                  7
+                ]
+              }
+            },
+            {
+              "allow_mixed": true,
+              "best_cost": 6,
+              "choice_checks": 9,
+              "improvement_witness": {
+                "certificate": {
+                  "U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    12,
+                    13,
+                    14,
+                    16,
+                    19,
+                    20,
+                    21,
+                    24,
+                    26,
+                    29,
+                    32,
+                    37,
+                    43,
+                    46,
+                    51,
+                    52,
+                    53,
+                    55,
+                    56,
+                    59,
+                    61,
+                    63
+                  ],
+                  "actual_cost": 6,
+                  "added": [
+                    5,
+                    10,
+                    16,
+                    37
+                  ],
+                  "applicable": true,
+                  "charged_edges": [
+                    [
+                      1,
+                      54
+                    ],
+                    [
+                      2,
+                      33
+                    ],
+                    [
+                      4,
+                      45
+                    ],
+                    [
+                      9,
+                      60
+                    ]
+                  ],
+                  "cover": [
+                    7,
+                    8,
+                    13,
+                    14,
+                    21,
+                    32
+                  ],
+                  "credit": 4,
+                  "forced_retired": [
+                    1,
+                    2,
+                    4,
+                    9
+                  ],
+                  "initial_U": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    6,
+                    7,
+                    8,
+                    9,
+                    12,
+                    13,
+                    14,
+                    19,
+                    20,
+                    21,
+                    24,
+                    26,
+                    29,
+                    32,
+                    33,
+                    43,
+                    45,
+                    46,
+                    51,
+                    52,
+                    53,
+                    54,
+                    55,
+                    56,
+                    59,
+                    60,
+                    61,
+                    63
+                  ],
+                  "initial_cost": 10,
+                  "initial_cover": [
+                    1,
+                    2,
+                    4,
+                    7,
+                    8,
+                    9,
+                    13,
+                    14,
+                    21,
+                    32
+                  ],
+                  "initial_matching": [
+                    [
+                      1,
+                      54
+                    ],
+                    [
+                      2,
+                      33
+                    ],
+                    [
+                      4,
+                      45
+                    ],
+                    [
+                      7,
+                      63
+                    ],
+                    [
+                      8,
+                      59
+                    ],
+                    [
+                      9,
+                      60
+                    ],
+                    [
+                      13,
+                      19
+                    ],
+                    [
+                      14,
+                      53
+                    ],
+                    [
+                      21,
+                      56
+                    ],
+                    [
+                      32,
+                      61
+                    ]
+                  ],
+                  "matching": [
+                    [
+                      7,
+                      63
+                    ],
+                    [
+                      8,
+                      59
+                    ],
+                    [
+                      13,
+                      19
+                    ],
+                    [
+                      14,
+                      53
+                    ],
+                    [
+                      21,
+                      56
+                    ],
+                    [
+                      32,
+                      61
+                    ]
+                  ],
+                  "removed": [
+                    33,
+                    45,
+                    54,
+                    60
+                  ]
+                },
+                "selected": [
+                  1,
+                  2,
+                  3,
+                  7
+                ]
+              }
+            }
+          ],
+          "n": 64,
+          "old_cost": 7,
+          "trial": 22
+        }
+      ],
+      "name": "complete stored previous gap followup"
+    }
+  ],
+  "scope": "Original assertion-enabled checker. Exhaustive generic graphs through4; all maximum matchings, tight covers and arbitrary removals; all cross graphs through3+3; seeded larger and nonbipartite controls; positive matching-choice example; all-parameter physical common-neighbour barrier checked at16scales, all subsets for m<=4. Mixed-removal zero-cost escape at16scales and all subsets throughm3; all14 stored prior gaps checked by exact endpoint pruning and all-cover matching choice;90 all-pair physical optima independently enumerated. No unrestricted physical optimum or new universal numerical bound."
+}

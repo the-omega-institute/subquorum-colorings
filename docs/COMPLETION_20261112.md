@@ -1,5 +1,22 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Initial matching choice and mixed-side deletion
+
+The [constrained matching criterion](INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.md)
+is necessary and sufficient over all initial maximum matchings for a fixed
+cover and batch. Retirement is forced; mixed-side deletion charges each
+original edge once even if both endpoints are removed. One matching test
+returns a complete certificate or an explicit constrained Hall deficiency.
+Enumerating covers/subsets then optimizes this broader inherited-cover rule.
+
+All14 stored prior fixed-pair gaps close (outside-only all-pair choice closes12).
+A two-connected30m unit-cost family has one-sided best costm and mixed cost0;
+a second has all-pair mixed certificate2m but actual specified-list optimumm.
+Both have general all-scale proofs; the latter prevents a completeness claim.
+Original checker passes; independent ACCEPT reproduced the full original report byte-for-byte. Full goal ACTIVE, with
+universal bounds and general grid questions still open.
+
+
 ## Matching-owned credit and neutral prerequisites
 
 The [complementary transfer certificate](MATCHING_CREDIT_AND_NEUTRAL_PREREQUISITES.md)
