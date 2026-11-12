@@ -1,41 +1,47 @@
 # Current continuation
 
-The degree-bound equality threshold is now attained for **every integer
-minimum degree delta>=3**, at Delta=4delta-7 and every cyclic scale.
-For delta>=4 the examples also have **kappa=delta**, the largest possible
-vertex connectivity at that minimum degree. These statements concern a
-specified inclusion-minimal forming selection S inducing P_3's and isolates;
-beta_2 is the true unrestricted dissociation number.
+For **every integer delta>=3 and k>=1**, there is a finite simple bipartite
+graph G with a specified inclusion-minimal two-star-forming selection S
+inducing P_3's and isolates, such that
 
-| Construction | Parameters, k>=1 | Exact conclusion |
+    n=14(delta-1)k, |S|=8(delta-1)k, beta_2(G)=7(delta-1)k,
+    kappa(G)=delta(G)=delta, Delta(G)=4delta-7.
+
+Thus the selected gap is exactly n/14 and attains the general coefficient
+Delta*n/(12Delta+8delta-14), even at the maximum possible vertex
+connectivity for its minimum degree. Here beta_2 is unrestricted; the
+new families do not establish exact unrestricted SF_2 values.
+
+| Construction | Range and mechanism | Exact result |
 | --- | --- | --- |
-| [Selected-leaf port](docs/DEGREE_THREE_THRESHOLD_AND_SELECTED_PORT.md) | delta3, Delta5; n28k, selected16k, beta14k | Gap n/14, two-connected |
-| [Dense multiport witnesses](docs/MAXIMALLY_CONNECTED_DEGREE_THRESHOLD.md) | p>=3, delta=p+1, Delta4p-3; n14pk, selected8pk, beta7pk | Gap n/14, kappa=delta |
-| [Balanced omissions](docs/BALANCED_OMISSION_DEGREE_SHARPNESS.md) | t>=2, p>=max(t,5), t divides3p; delta=t+1, Delta=(4t-3)p/t | Gap pk=Delta*n/(12Delta+8delta-14), two-connected; includes (delta,Delta)=(4,15) |
-| [Earlier uniform omissions](docs/SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) | delta>=3, Delta=(4delta-7)r, r>=3 | Same exact coefficient, two-connected |
+| [Four selected-leaf ports](docs/THREE_CONNECTED_DEGREE_THREE_THRESHOLD.md) | delta3,Delta5; arbitrary colour-preserving perfect port matchings | n28k, selected16k,beta14k for every interface; kappa3 exactly when the quotient has no edge cut of size<3 (k>=2); all k1 pairings are three-connected |
+| [Dense witness multiports](docs/MAXIMALLY_CONNECTED_DEGREE_THRESHOLD.md) | delta>=4; simultaneous diagonal deletions and parallel bundles | n14pk,selected8pk,beta7pk,kappa=delta=p+1 at every scale |
+| [Balanced omissions](docs/BALANCED_OMISSION_DEGREE_SHARPNESS.md) | t>=2,p>=max(t,5),t divides3p; delta=t+1,Delta=(4t-3)p/t | Gap pk=Delta*n/(12Delta+8delta-14), two-connected; includes(delta,Delta)=(4,15) |
+| [Earlier uniform omissions](docs/SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) | delta>=3,Delta=(4delta-7)r,r>=3 | Same exact coefficient, two-connected |
 
-Each result has a complete arbitrary-set cap and an all-scale composition
-proof. The dense multiport proof traces the surviving kernel after simultaneous
-edge deletion; its vertex-attachment argument and disjoint bundles preserve
-maximum possible connectivity. The degree-three case uses a selected-to-outside
-port: every outside-to-outside base edge is unsafe. These are general proofs;
-finite optima are implementation controls. No exact unrestricted SF_2 value is
-inferred from a theorem for this selected-component class.
+The degree-three cap is a direct arbitrary-dissociation-set argument by
+witness distribution, with one shared connector capacity. An ordered
+attachment proof handles every two-vertex cut and gives the exact quotient
+criterion for arbitrary port interfaces. For larger minimum degrees, the
+fixed witness kernel survives simultaneous deletions and disjoint bundles
+retain kappa=delta. These are general proofs; finite optima are controls.
 
-Separate final Oracle audits accepted the balanced, dense, degree-three and
-maximal-connectivity sources and ran the unchanged original checkers. Their
-complete reports were reproduced byte-for-byte. The maximal-connectivity run
-exited0 but captured1,064bytes of unrelated Python-startup spreadsheet-runtime
-stderr; the full warning is preserved in its review record. The other three
-runs reported empty stderr. The degree-three version2 audit is distinct from
-the earlier non-accepted review; the revision replaces the disputed residual
-paragraph with a direct incidence inequality. Exact manifests and full responses
-are in the corresponding output/*-review.json files.
+Separate final Oracle audits accepted each new theorem and executed its
+unchanged original checker, reproducing the complete expected report
+byte-for-byte. The dense maximal-connectivity audit exited0 and captured
+1,064bytes of unrelated Python-startup spreadsheet-runtime stderr; its full
+warning is preserved rather than reported as empty. Exact process streams,
+manifests and execution qualifications are retained in the respective
+output/*-review.json files. The exploratory four-port recurrence/table is
+not a proof premise: the final source supplies a direct analytic argument.
 
-The [dense single-port proof](docs/DENSE_WITNESS_DEGREE_THRESHOLD.md)
-remains as an intermediate theorem. Other degree pairs, regular sharpness,
-wide rectangular equality, compatible multi-Hall routing and a universal
-unit-weight5/6 improvement remain separate problems.
+The [degree-three single-port theorem](docs/DEGREE_THREE_THRESHOLD_AND_SELECTED_PORT.md)
+and [dense single-port theorem](docs/DENSE_WITNESS_DEGREE_THRESHOLD.md)
+remain as intermediate results. Every outside-to-outside port is unsafe in
+the28-point degree-three base, so allowing selected-to-outside ports is
+essential there. Other degree pairs, regular sharpness, wide rectangular
+equality, compatible multi-Hall routing and a universal unit-weight5/6
+improvement remain separate problems.
 
 The [combined centre/leaf degree cuts](docs/COMBINED_CENTRE_LEAF_DEGREE_BOUNDS.md) strengthen the selected-star
 bound at minimum degree at least3. Every specified minimal selection in
