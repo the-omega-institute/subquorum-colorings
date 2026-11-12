@@ -1,5 +1,20 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Direct witnesses and the strengthened cubic bound
+
+The [direct-witness exchange](DIRECT_WITNESS_EXCHANGE_AND_CUBIC_BOUND.md) strengthens the colour ledger to
+`t-s-q>=2d`: direct centre witnesses can be retained along with leaf
+witnesses. An exact nonnegative whole-cut identity then improves the
+cubic selected-star bound from `floor(7n/146)` to `floor(n/22)`.
+The signed version at maximum degree three retains actual S/U degree
+deficits. A general correction also proves `4beta_2>=2|S|+n-u`, where u
+counts the outside vertices unused by one permitted witness assignment;
+the padding family attains its coefficient of u exactly. These are
+complete general proofs, with 876 graph inputs,23,499 witness allocations
+and ten targeted finite models checked independently. No graph-sharp
+cubic coefficient or unrestricted SF bound is asserted. Final exact-source
+independent review is pending.
+
 ## Exact padding and fixed minimum-degree/connectivity sharpness
 
 The [exact universal-padding theorem](BIPARTITE_UNIVERSAL_PADDING_AND_CONNECTIVITY.md) proves, for every r>=2 and t>=1,
@@ -16,8 +31,8 @@ nonregular graphs, not full rectangles. A general exact padding formula
 also covers isolated old vertices. The standard-library checker passes
 1,364 exact padded small models,2,558 literal minimality-preservation
 checks,6 exact family optima and2,498 vertex-split flows. The written
-all-parameter proofs are complete; final independent source/execution
-review is pending.
+all-parameter proofs received independent proof-only ACCEPT; final
+source/execution review is pending after a terminal browser failure.
 
 ## A regular selected-star gap family and exact cyclic composition
 
@@ -834,6 +849,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; arbitrary-width cap/exchange criteria and selected-star boundary-deficit bound proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
+| Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
 | Sharp selected-star gap with bounded maximum degree or regularity | Degree bounds and equality constraints proved; quartic two-connected graphs now have an explicit1/68 lower family and1/34 upper bound. The optimal graph coefficient remains open |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |

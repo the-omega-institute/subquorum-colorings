@@ -264,3 +264,8 @@ The separate [equality-interface note](REGULAR_SELECTED_STAR_EQUALITY_INTERFACE.
 classifies necessary regular equality resources, excludes the smallest
 numerical equality candidates, and records the perimeter-only bound for
 rectangular selections without edge components.
+
+The later [direct-witness exchange](DIRECT_WITNESS_EXCHANGE_AND_CUBIC_BOUND.md)
+strengthens the cubic selected-star bound to floor(n/22) and supplies a
+signed maximum-degree-three version. The older7n/146 certificate above
+remains valid; it is superseded for cubic graphs by that positive identity.

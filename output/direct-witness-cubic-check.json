@@ -1,0 +1,370 @@
+{
+  "arithmetic": {
+    "basis_identity_checks": 10,
+    "graph_sharpness_claim": false,
+    "large_integer_checks": 3,
+    "numerical_relaxation_point": [
+      [
+        2,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        4,
+        0,
+        6
+      ],
+      22
+    ]
+  },
+  "graph_controls": {
+    "ranges": {
+      "all_cubic_3": {
+        "actual_exchange_sets": 22,
+        "allocations": 11,
+        "cubic_allocations": 11,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 11,
+        "graph_inputs": 1,
+        "negative_boundary_differences": 0,
+        "one_part_subsets": 8,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 64,
+        "strict_improvements_over_leaf_only": 0,
+        "subcubic_boundary_allocations": 11,
+        "witness_conflict_allocations": 0
+      },
+      "all_cubic_4": {
+        "actual_exchange_sets": 1536,
+        "allocations": 768,
+        "cubic_allocations": 768,
+        "direct_only_allocations": 576,
+        "eligible_minimal_selections": 768,
+        "graph_inputs": 24,
+        "negative_boundary_differences": 0,
+        "one_part_subsets": 384,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 6144,
+        "strict_improvements_over_leaf_only": 576,
+        "subcubic_boundary_allocations": 768,
+        "witness_conflict_allocations": 576
+      },
+      "all_parts_1_through_3": {
+        "actual_exchange_sets": 6502,
+        "allocations": 3251,
+        "cubic_allocations": 11,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 3251,
+        "graph_inputs": 682,
+        "negative_boundary_differences": 339,
+        "one_part_subsets": 3937,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 37448,
+        "strict_improvements_over_leaf_only": 0,
+        "subcubic_boundary_allocations": 3251,
+        "witness_conflict_allocations": 0
+      },
+      "all_quartic_4": {
+        "actual_exchange_sets": 36,
+        "allocations": 18,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 18,
+        "graph_inputs": 1,
+        "one_part_subsets": 16,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 256,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 0
+      },
+      "all_quartic_5": {
+        "actual_exchange_sets": 31680,
+        "allocations": 15840,
+        "direct_only_allocations": 14400,
+        "eligible_minimal_selections": 8640,
+        "graph_inputs": 120,
+        "one_part_subsets": 3840,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 122880,
+        "strict_improvements_over_leaf_only": 14400,
+        "witness_conflict_allocations": 14400
+      },
+      "complete_degree5": {
+        "actual_exchange_sets": 54,
+        "allocations": 27,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 27,
+        "graph_inputs": 1,
+        "one_part_subsets": 32,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 1024,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 0
+      },
+      "complete_nonregular_3_4": {
+        "actual_exchange_sets": 28,
+        "allocations": 14,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 14,
+        "graph_inputs": 1,
+        "one_part_subsets": 8,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 128,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 0
+      },
+      "complete_nonregular_3_5": {
+        "actual_exchange_sets": 34,
+        "allocations": 17,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 17,
+        "graph_inputs": 1,
+        "one_part_subsets": 8,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 256,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 0
+      },
+      "complete_nonregular_4_5": {
+        "actual_exchange_sets": 44,
+        "allocations": 22,
+        "direct_only_allocations": 0,
+        "eligible_minimal_selections": 22,
+        "graph_inputs": 1,
+        "one_part_subsets": 16,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 512,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 0
+      },
+      "seeded_nonregular": {
+        "actual_exchange_sets": 2236,
+        "allocations": 1118,
+        "direct_only_allocations": 682,
+        "eligible_minimal_selections": 636,
+        "graph_inputs": 12,
+        "one_part_subsets": 384,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 12288,
+        "strict_improvements_over_leaf_only": 682,
+        "witness_conflict_allocations": 656
+      },
+      "seeded_regular_5_3": {
+        "actual_exchange_sets": 1168,
+        "allocations": 584,
+        "cubic_allocations": 584,
+        "direct_only_allocations": 80,
+        "eligible_minimal_selections": 584,
+        "graph_inputs": 12,
+        "negative_boundary_differences": 0,
+        "one_part_subsets": 384,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 12288,
+        "strict_improvements_over_leaf_only": 80,
+        "subcubic_boundary_allocations": 584,
+        "witness_conflict_allocations": 80
+      },
+      "seeded_regular_6_3": {
+        "actual_exchange_sets": 2276,
+        "allocations": 1138,
+        "cubic_allocations": 1138,
+        "direct_only_allocations": 82,
+        "eligible_minimal_selections": 1138,
+        "graph_inputs": 12,
+        "negative_boundary_differences": 0,
+        "one_part_subsets": 768,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 49152,
+        "strict_improvements_over_leaf_only": 82,
+        "subcubic_boundary_allocations": 1138,
+        "witness_conflict_allocations": 82
+      },
+      "seeded_regular_6_4": {
+        "actual_exchange_sets": 1382,
+        "allocations": 691,
+        "direct_only_allocations": 112,
+        "eligible_minimal_selections": 635,
+        "graph_inputs": 8,
+        "one_part_subsets": 512,
+        "positive_gap_allocations": 0,
+        "selected_subsets": 32768,
+        "strict_improvements_over_leaf_only": 112,
+        "witness_conflict_allocations": 112
+      }
+    },
+    "scope": "All labelled fixed-part graphs with each part1..3; previous explicitly labelled regular/nonregular finite models. Inputs, not necessarily distinct adjacency lists.",
+    "totals": {
+      "actual_exchange_sets": 46998,
+      "allocations": 23499,
+      "cubic_allocations": 2512,
+      "direct_only_allocations": 15932,
+      "eligible_minimal_selections": 15761,
+      "graph_inputs": 876,
+      "negative_boundary_differences": 339,
+      "one_part_subsets": 10297,
+      "positive_gap_allocations": 0,
+      "selected_subsets": 275208,
+      "strict_improvements_over_leaf_only": 15932,
+      "subcubic_boundary_allocations": 5752,
+      "witness_conflict_allocations": 15906
+    }
+  },
+  "scope": "Finite literal controls; the complete general proof supplies all-graph conclusions.",
+  "status": "PASS",
+  "targeted": [
+    {
+      "beta": 9,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 1,
+        "positive_gap_allocations": 0,
+        "strict_improvements_over_leaf_only": 1,
+        "witness_conflict_allocations": 1
+      },
+      "name": "direct_parallel",
+      "one_part_subsets": 128,
+      "order": 14,
+      "selected": 8
+    },
+    {
+      "beta": 12,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 1,
+        "positive_gap_allocations": 0,
+        "strict_improvements_over_leaf_only": 1,
+        "witness_conflict_allocations": 1
+      },
+      "name": "direct_large_helper",
+      "one_part_subsets": 512,
+      "order": 18,
+      "selected": 10
+    },
+    {
+      "beta": 10,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 1,
+        "positive_gap_allocations": 0,
+        "strict_improvements_over_leaf_only": 1,
+        "witness_conflict_allocations": 1
+      },
+      "name": "mixed_clean_direct",
+      "one_part_subsets": 128,
+      "order": 15,
+      "selected": 9
+    },
+    {
+      "beta": 14,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 0,
+        "positive_gap_allocations": 0,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 1
+      },
+      "name": "surplus_and_extras",
+      "one_part_subsets": 512,
+      "order": 19,
+      "selected": 12
+    },
+    {
+      "beta": 11,
+      "checks": {
+        "actual_exchange_sets": 32,
+        "allocations": 16,
+        "direct_only_allocations": 16,
+        "positive_gap_allocations": 0,
+        "strict_improvements_over_leaf_only": 16,
+        "witness_conflict_allocations": 16
+      },
+      "name": "multiple_witness_choices",
+      "one_part_subsets": 512,
+      "order": 18,
+      "selected": 8
+    },
+    {
+      "beta": 12,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 1,
+        "negative_boundary_differences": 0,
+        "positive_gap_allocations": 0,
+        "strict_improvements_over_leaf_only": 1,
+        "subcubic_boundary_allocations": 1,
+        "witness_conflict_allocations": 1
+      },
+      "name": "shared_helper_centres",
+      "one_part_subsets": 256,
+      "order": 19,
+      "selected": 11
+    },
+    {
+      "beta": 14,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 0,
+        "positive_gap_allocations": 1,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 1
+      },
+      "name": "sharp_universal_selected_star",
+      "one_part_subsets": 4096,
+      "order": 24,
+      "selected": 16
+    },
+    {
+      "beta": 14,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 0,
+        "positive_gap_allocations": 1,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 1
+      },
+      "name": "padding_correction_tight",
+      "one_part_subsets": 16384,
+      "order": 28,
+      "selected": 16
+    },
+    {
+      "beta": 11,
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 0,
+        "positive_gap_allocations": 1,
+        "strict_improvements_over_leaf_only": 0,
+        "witness_conflict_allocations": 1
+      },
+      "name": "oracle22_counterexample",
+      "one_part_subsets": 2048,
+      "order": 22,
+      "selected": 12
+    },
+    {
+      "beta": 32,
+      "beta_method": "accepted beta(G_(3,3))=21 plus independent one-part optimum on the other disjoint component",
+      "checks": {
+        "actual_exchange_sets": 2,
+        "allocations": 1,
+        "direct_only_allocations": 1,
+        "positive_gap_allocations": 1,
+        "strict_improvements_over_leaf_only": 1,
+        "witness_conflict_allocations": 1
+      },
+      "component_one_part_subsets": 256,
+      "name": "positive_gap_with_direct_centres",
+      "order": 52,
+      "selected": 34
+    }
+  ]
+}

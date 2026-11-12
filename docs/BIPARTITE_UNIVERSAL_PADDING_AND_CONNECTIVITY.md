@@ -181,5 +181,10 @@ failures; their exact beta and connectivity use the general proofs.
 The all-parameter
 statements above rely on the case proof, the established (6), and the
 connectivity argument. No finite enumeration replaces those proofs.
-Independent review is pending. No regular-family, grid equality, exact
+Independent proof-only review returned **ACCEPT**, including an independently
+derived version of (5a). The first final execution task ended in terminal
+browser infrastructure failure without a mathematical response. A fresh
+integrated exact-source execution audit is pending; no external checker
+execution is claimed here. Full responses and scope are in
+`output/bipartite-universal-padding-review.json`. No regular-family, grid equality, exact
 SF_2, historical-priority or Lean claim is implied.
