@@ -1,5 +1,14 @@
 # Current continuation
 
+The [dense-witness construction](docs/DENSE_WITNESS_DEGREE_THRESHOLD.md)
+attains the threshold `Delta=4delta-7` and selected gap `n/14` for EVERY
+`delta>=4`, even two-connected and at all cyclic scales. With p=delta-1,
+its order is `14pk`, specified minimal selection `8pk`, and true unrestricted
+`beta_2=7pk`. This adds the small pairs `(4,9)` and `(5,13)` to the prior
+balanced-omission threshold. Both have full combinatorial proofs; a separate
+exact-source ACCEPT reproduced the unchanged checker's complete report.
+
+
 The [balanced-omission extension](docs/BALANCED_OMISSION_DEGREE_SHARPNESS.md)
 attains `Delta*n/(12Delta+8delta-14)` for all `t>=2,p>=max(t,5),t|3p`,
 where `delta=t+1,Delta=(4t-3)p/t`, at every cyclic scale. In particular,

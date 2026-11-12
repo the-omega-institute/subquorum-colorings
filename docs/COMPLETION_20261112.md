@@ -1,5 +1,16 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Dense witnesses and the small equality thresholds
+
+The [dense-witness construction](DENSE_WITNESS_DEGREE_THRESHOLD.md)
+attains the threshold `Delta=4delta-7` and selected gap `n/14` for EVERY
+`delta>=4`, even two-connected and at all cyclic scales. With p=delta-1,
+its order is `14pk`, specified minimal selection `8pk`, and true unrestricted
+`beta_2=7pk`. This adds the small pairs `(4,9)` and `(5,13)` to the prior
+balanced-omission threshold. Both have full combinatorial proofs; a separate
+exact-source ACCEPT reproduced the unchanged checker's complete report.
+
+
 ## Balanced omissions and the equality threshold
 
 The [balanced-omission extension](BALANCED_OMISSION_DEGREE_SHARPNESS.md)
@@ -949,7 +960,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
 | Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
-| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The balanced-omission extension also reaches Delta=4delta-7 for every delta>=6 and finer parameter steps; remaining intervening degree parameters, maximum degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
+| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The dense construction reaches Delta=4delta-7 for every delta>=4; balanced omissions give further parameter steps; remaining intervening degree parameters, maximum degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
