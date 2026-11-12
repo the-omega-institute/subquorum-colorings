@@ -1693,3 +1693,34 @@ unbudgeted primary hardness. Universal8b/3, unit5/6, compatible physical
 multi-Hall routing, remaining sharp degree parameters and arbitrary-width
 grid triple equality remain OPEN in the full ACTIVE goal. October manuscript
 unchanged; no weighted TH or formal-kernel claim.
+
+
+## Candidate component forests and cycle rank (13 November)
+
+[The component-message theorem](COMPONENT_CYCLE_RANK_FRONTIER.md) solves the
+whole fixed-list operation-budget frontier in O(2^k N(q+1)^2) arithmetic
+transitions, with polynomial bit and witness overhead. The multigraph has
+one vertex per complete ambient auxiliary component and one candidate edge;
+k=q-c+d counts loops and parallel cycles. Every residual candidate is
+charged once in its child message; fixed nonforest bits are counted once
+globally. Closed path/even-cycle traces evaluate high-arity component factors
+without enumerating their incident bit assignments. Forestk0 is polynomial.
+
+For every evenq>=2, a two-connected bipartite physical graph of order10q,
+min2/max3, minimum square omissions and q permitted distinct-owner swaps has
+candidate graph a star, yet its minimum complete-component pair width is
+exactlyq/2. No bound for arbitrary interleaved vertex traversals is claimed.
+For q4r/type0011 the exact frontier is max(2r-floor(t/2),r,t-2r), first
+minimumr at2r operations; the actual dissociation certificate has size23r
+on40r vertices. This is fixed-list optimality, not unrestricted betaexactness.
+
+The direct implementation supports general loops, parallel edges, candidate
+permutations and nested iterator inputs. Independent literal matching and
+candidate subset checks, actual physical certificates and width controls
+pass. General and all-size conclusions rely on complete proofs. Standard
+tree-factor/conditioning methods are acknowledged without priority claims.
+Original checker passes; independent ACCEPT reproduced the complete report byte-for-byte. Preliminary audit tool timeouts and the successful unchanged execution are distinguished in the receipt.
+
+Universal8b/3, remaining sharp degree/regularity coefficients, compatible
+physical multi-Hall routing, unit5/6 and arbitrary-width grid triple equality
+remain OPEN in the full ACTIVE goal. October submitted manuscript preserved.

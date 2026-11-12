@@ -1,0 +1,111 @@
+{
+  "at_recorded": "2026-11-12T22:56:44.091607+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "594fc5eb-153b-4837-8c79-c9b7a0e284b3",
+    "conversation_id": "conv_af6b9cfc2ec886c4",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af641f7-c744-83ec-8a97-c88c813cbe14",
+    "usage_estimated": true
+  },
+  "attached_manifest": [
+    {
+      "path": "develop/component_cycle_frontier.py",
+      "bytes": 9705,
+      "sha256": "fdec78f21ec15f76349ace9290778e7ff6d7a5b01584d02374bc8184660560f9"
+    },
+    {
+      "path": "develop/mixed_isolated_cover_repair.py",
+      "bytes": 10069,
+      "sha256": "509d36497fd894f97d8e32db099cbae3b4a3d4a17fb9d19f504e8a1efe1c30a7"
+    },
+    {
+      "path": "develop/nonisolated_exchange_frontier.py",
+      "bytes": 9214,
+      "sha256": "3c6c7067ceed6e39ef9106c985efd2a0198edc98dbcf6ffb42db132452418abd"
+    },
+    {
+      "path": "develop/odd_path_neutral_budget.py",
+      "bytes": 11221,
+      "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "docs/COMPONENT_CYCLE_RANK_FRONTIER.md",
+      "bytes": 14048,
+      "sha256": "bd4a2372a152a24c8c694afe532b4e303b68df167c70041afc648f82ba8c6fbe"
+    },
+    {
+      "path": "docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md",
+      "bytes": 16208,
+      "sha256": "b6e02c2ef58cf5fe3b5d2285bb1fd7660bc9d98c728834b11149f97660e55259"
+    },
+    {
+      "path": "output/component-cycle-frontier-check.json",
+      "bytes": 11293,
+      "sha256": "f2b504aeb196122bf49d9d6445045e067927f94b4a15c30c3bbd1880d0d3ef51"
+    },
+    {
+      "path": "scripts/check_component_cycle_frontier.py",
+      "bytes": 14357,
+      "sha256": "c60de6b1dcfa7a94338f17cd790e0c3b46ff578c07434fe9404418570faf5a3e"
+    }
+  ],
+  "reviewer_reported_successful_execution": {
+    "command": "python3 -B scripts/check_component_cycle_frontier.py --output /tmp/component-cycle-frontier-regenerated-timed.json",
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "wall_seconds": 43.98,
+    "user_cpu_seconds": 44.0,
+    "system_cpu_seconds": 0.31,
+    "max_rss_as_reported": "105356KB",
+    "environment": "Python3.13.5;Linux x86_64 kernel6.18.57",
+    "execution_mode": "Detached timed execution after preliminary foreground observation/tool timeouts.",
+    "stdout": "Successful counter JSON supplied in full response; exact stdout byte count not supplied. The response reformats its JSON, so it is not used as an exact stdout-byte artifact.",
+    "stderr": "Reviewer reports timing-wrapper text only: TIME real=43.98 user=44.00 sys=0.31 maxrss=105356KB exit=0. Exact byte count not supplied; do not describe combined stderr as empty.",
+    "report_bytes": 11293,
+    "report_sha256": "f2b504aeb196122bf49d9d6445045e067927f94b4a15c30c3bbd1880d0d3ef51",
+    "full_byte_comparison_equal": true,
+    "all9payloads_verified_before_and_after": true,
+    "original_checker_sha256": "c60de6b1dcfa7a94338f17cd790e0c3b46ff578c07434fe9404418570faf5a3e"
+  },
+  "preliminary_execution_limits": {
+    "description": "Reviewer reports initial foreground tool timeouts, including one300-second timeout with no captured stdout,stderr or completed regenerated report. Exact number of preliminary attempts not supplied. These are not passing executions or reported checker failures.",
+    "successful_execution_separately_recorded": true
+  },
+  "verified_count_clarification": {
+    "source_unchanged": true,
+    "periodic_family_scales_counter": 8,
+    "meaning": "Eight periodic model runs at seven DISTINCT q values; q4 occurs once among all type patterns and once as appended periodic control.",
+    "distinct_q": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      512
+    ],
+    "reviewer_phrase_eight_scales_is_imprecise": true,
+    "mathematical_or_implementation_change": false,
+    "reexecution_required": false
+  },
+  "scope": "Exact full unit matching-cost frontier for all subsets of a fixed distinct replacement list on a finite simple bipartite degree2 AMBIENT graph, parameterized by the candidate multigraph cycle rank, including loops/parallel edges. Physical wrapper requires individually permitted swaps on distinct owners. All-size physical star has minimum COMPLETE-COMPONENT widthq/2 and rank0; periodic frontier formula and actual23r certificate on40r vertices. No arbitrary interleaved-vertex width lower bound, unrestricted omission optimum, universal graph coefficient or grid embedding.",
+  "limitations": [
+    "Frozen attachment identity verified, not independent remote Git provenance.",
+    "No Lean,formal-kernel,literature-priority or external publication audit.",
+    "All-size results rely on full proofs, not finite extrapolation.",
+    "Supplementary primary-hardness derivation/prototype in local run was outside the frozen9-file snapshot and is NOT accepted by this audit.",
+    "Expected full comparison digest and report hashes are reproducibility evidence, not general proofs."
+  ],
+  "mathematical_or_source_corrections_required": false,
+  "complete_response": "Audit status9/9 manifest payloads verified Checker execution pendingThe uploaded ZIP was extracted into an isolated directory:/tmp/component-cycle-frontier-auditAll nine payloads match their declared manifest byte sizes and SHA-256 hashes. This includes the complete mathematical note, implementation, dependency modules, original checker, and frozen expected JSON.The expected report independently matches the supplied target metadata:Size: 11,293 bytesSHA-256: f2b504aeb196122bf49d9d6445045e067927f94b4a15c30c3bbd1880d0d3ef51The first attempt to run the original checker unchanged reached the execution environment's 300-second timeout. It produced no captured stdout, stderr, or completed regenerated report. This is not a checker failure or a passing result; I will distinguish execution evidence from the mathematical assessment.Final verdict: ACCEPTThe exact-source milestone passes my mathematical, domain, implementation and reproduction audit. I found no substantive proof gap or counterexample within the stated fixed-list domain.1. Exact execution and byte verificationOriginal checkerPASSExit code: 0Python: 3.13.5OS: Linux, x86_64, kernel 6.18.57Runtime: 43.98 secondsUser CPU: 44.00 secondsSystem CPU: 0.31 secondsMaximum RSS: 105,356 KBAssertions: enabled (__debug__ == True)Regenerated JSONBytes: 11,293SHA-256: f2b504aeb196122bf49d9d6445045e067927f94b4a15c30c3bbd1880d0d3ef51Full byte comparison identicalThe executed command was:Bashpython3 -B scripts/check_component_cycle_frontier.py \\\n  --output /tmp/component-cycle-frontier-regenerated-timed.jsonThis was the original checker, not a rewritten or shortened version.The captured stdout was:JSON{\"actual_dissociation_certificates\":1992,\"at_most_budget_optima\":14031,\"balanced_order_width_controls\":52,\"candidate_permutation_models\":180,\"cycle_presence_subsets\":1360,\"cyclic_forest_rejections\":1665,\"exact_budget_rows\":9083,\"exhaustive_ambient_graphs\":48,\"explicit_cycle_rank_cases\":3,\"forest_models\":3283,\"generic_frontiers\":4948,\"invalid_input_rejections\":4,\"literal_candidate_subsets\":21255,\"one_shot_generic_controls\":48,\"one_shot_physical_controls\":21,\"pair_width_solver_comparisons\":4948,\"periodic_exact_budget_rows\":776,\"periodic_family_scales\":8,\"physical_connectivity_deletions\":2016,\"physical_star_models\":52,\"random_component_forests\":220,\"traversal_invariance_pairs\":180,\"width_order_direction_rotation_controls\":3936}Stderr contained only the timing report:Plain textTIME real=43.98 user=44.00 sys=0.31 maxrss=105356KB exit=0The regenerated JSON and frozen expected JSON have identical SHA-256 and pass a complete byte-for-byte cmp.Manifest verification: all nine payloads passed before execution and again afterward. No payload changed. The checker itself retains SHA-256:c60de6b1dcfa7a94338f17cd790e0c3b46ff578c07434fe9404418570faf5a3eThe initial foreground attempts encountered execution-tool timeouts; the subsequent detached, timed execution completed successfully. The time and exit figures above come from that completed execution, not the timed-out attempts.2. Mathematical auditTheorem 1 — Forest messagesACCEPTThe message definition is correct:\n$$M_C(s,t)=\n\\min\\{\\text{summed component matching cost}\\}$$\nwith the parent candidate fixed to  $s$ , and all selected candidate edges in the subtree counted exactly once.I checked the important potential failure modes.Parent-edge accounting: the parent bit is initialized into the message budget and mask. Its endpoint membership is imposed without another charge.Child-edge accounting: each child message contributes its connecting edge once. The parent component does not count it again.High-degree factors: processing child endpoints sequentially avoids enumerating all incident candidate assignments simultaneously.Safe state merging: in a forest, completed child subtrees cannot introduce hidden equality constraints with other processed or future subtrees. Their influence on the remainder is captured by the current budget and parity state.Cycle closure: both starting parity possibilities are retained, with terminal parity required to equal the starting parity.The last point is particularly important. The method handles fully present even cycles rather than assuming an absent vertex exists to break the cycle into paths.The induction over child subtrees and component scan positions establishes exhaustive extension and safe minimization.The resulting transition bound is:\n$$O\\bigl(N(q+1)^2\\bigr)$$\narithmetic transitions, with polynomial bit and witness overhead.This is not a constant-word-cost or constant-memory claim.Theorem 2 — General cycle rankACCEPTThe DSU construction correctly chooses a spanning forest of the candidate component multigraph.The number of feedback variables is exactly\n$$k=q-c+d.$$\nThis includes:loops;additional parallel edges;ordinary graph-cycle edges.Conditioning these  $k$  variables fixes both endpoint memberships. The residual graph is a forest, so Theorem 1 applies.The crucial accounting distinction is correct:\n$$\\text{pinned selected count}\n+\n\\text{residual selected count}.$$\nPinned edges enter the global mask and budget once. Residual edges enter their child messages once. The two sets are disjoint.Every candidate subset belongs to exactly one conditioning branch. Taking the minimum for each exact budget therefore gives the complete frontier:\n$$\\boxed{O(2^kN(q+1)^2)}$$\narithmetic transitions, with polynomial bit and witness overhead.I found no issue with the handling of disconnected candidate multigraphs or isolated vertices.The forest_only restriction also behaves correctly: positive cycle rank is rejected before the exponential conditioning stage.Theorem 3 — Physical star separationACCEPTThe physical construction withstands the adversarial checks.For every even  $q\\geq2$ :the physical graph has  $10q$  vertices;it is bipartite;minimum degree is two;maximum degree is three;the owner squares have minimum-cardinality initial omissions;every individual replacement is permitted;distinct owners make all subsets and prefixes permitted;the candidate component multigraph is a star.Its cycle rank is\n$$k=q-(q+1)+1=0.$$\nFor the traversal lower bound, let  $a$  leaves appear before the central cycle.The cuts immediately before and after that cycle have respectively  $a$  and  $q-a$  live candidate pairs. Hence\n$$w\\geq\\max(a,q-a)\\geq q/2.$$\nThe proposed ordering, with half the leaves before and half after the central cycle, attains this bound.Thus:\n$$\\boxed{k=0,\\qquad w_{\\min}=q/2.}$$\nThe important qualification is respected: this is a lower bound over complete-component traversals, not arbitrary interleaved vertex orders.The two parameters therefore measure genuinely different structural features.Corollary 4 — Periodic exact frontierACCEPTFor  $q=4r$ , with the repeated type pattern  $0011$ , the eight-case local path table is consistent.The independent fourth variable contributes its own unit leaf cost. The resulting tile frontier is\n$$(2,2,1,1,2).$$\nThe three lower bounds\n$$F(t)\\geq r,$$\n\n$$F(t)\\geq 2r-\\lfloor t/2\\rfloor,$$\nand\n$$F(t)\\geq t-2r$$\nare valid.The proposed allocations attain all three simultaneously, giving\n$$\\boxed{\nF(t)=\n\\max\\left(\n2r-\\left\\lfloor\\frac t2\\right\\rfloor,\\,\nr,\\,\nt-2r\n\\right)\n}$$\nfor  $0\\leq t\\leq4r$ .The minimum  $r$  is first attained at  $2r$  operations.The certificate size calculation also checks:\n$$3b-r=3(8r)-r=23r.$$\nThis is a fixed-list optimality theorem, not an unrestricted omission optimization.3. Domain and source auditI checked the implementation against the precise mathematical contract.RequirementFindingFinite simple bipartite ambient graphCorrectly validatedMaximum degree twoCorrectly validatedDistinct removal endpointsCorrectly validatedDistinct addition endpointsCorrectly validatedAll candidate subsetsEnumerated by the mathematical recurrenceSame-component candidatesCorrectly treated as loopsParallel candidate edgesCorrectly treatedExact operation countsEvery budget returnedActual matching and cover witnessesReconstructedPhysical owner restrictionsIndividually checkedDistinct-owner restrictionEnforcedThe physical wrapper correctly checks the owner-complement degree condition before accepting the initial omission. It then checks each proposed replacement in its own owner component.Because different operations belong to distinct owner components, these local checks imply permission for every subset. This implication is valid and does not require an additional final-isolation assumption.The dependency chain is also coherent:component_cycle_frontier.py implements the new recurrence.nonisolated_exchange_frontier.py supplies the earlier exact matching and cover machinery.mixed_isolated_cover_repair.py supplies path/cycle certificates.odd_path_neutral_budget.py supplies component decomposition.owner_matching_certificate.py supplies physical owner preparation.I found no circular dependence on the earlier traversal-width optimizer in the new forest-message proof.4. What the checker establishes — and does not establishThe strongest independent evidence is the combination of:21,255 literal candidate-subset comparisons;4,948 generic frontier models;4,948 comparisons with the previous pair-width algorithm;220 genuine random component forests;explicit loop, parallel-edge and triangle cycle-rank cases;1,360 even-cycle presence subsets;180 candidate permutations and traversal-invariance pairs;52 physical star models;1,992 actual dissociation certificates;2,016 physical vertex-deletion connectivity checks;776 periodic exact-budget rows across eight scales, up to  $q=512$ .The generic checker independently computes literal maximum matching numbers on small graphs. This is important: its principal comparison does not merely compare the new recurrence against itself.There are nevertheless clear limits:Finite controls do not establish the all-size physical connectivity theorem; that theorem relies on the structural proof.The algorithm is exponential in cycle rank. It does not establish unrestricted polynomial-time optimization.The two parameters, cycle rank and complete-component traversal width, are not interchangeable.The periodic family does not establish a universal new coefficient or unrestricted beta-optimality.No weighted matching, universal graph theorem, or rectangular-grid embedding follows.No Lean kernel acceptance or external publication-priority conclusion follows from this audit.These limitations are properly acknowledged in the source.5. Final assessmentThe reference frame is the complete fixed-list matching frontier on finite simple bipartite maximum-degree-two ambient graphs.The main mathematical contribution is a valid structural parameterization:\n$$\\boxed{\n\\text{candidate component cycle rank }k\n\\quad\\Longrightarrow\\quad\n2^k\\text{-conditioned forest dynamic programming}.\n}$$\nThe forest recurrence is exact, the cycle conditioning is complete, and the physical separation example demonstrates why this parameter can be useful even when complete-component traversal width is necessarily large.The proof, implementation, frozen checker and expected output agree.ACCEPT.This acceptance applies exclusively to the supplied frozen snapshot based on scientific4605435bc75a0b5a0faf5f6beb39597834d7385a. The supplied base commit is provenance information, not independent remote-history verification. I have not treated the deliberately post-review receipt as prior acceptance evidence.No repository changes, Lean builds, external submissions, or broader research-goal completion are claimed.\n"
+}

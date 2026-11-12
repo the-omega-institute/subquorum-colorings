@@ -1,5 +1,18 @@
 # Current continuation
 
+[Candidate component forests and cycle rank](docs/COMPONENT_CYCLE_RANK_FRONTIER.md)
+compute all exact operation-budget optima in O(2^k N(q+1)^2) arithmetic
+transitions, where k is the cycle rank of the candidate multigraph on
+complete ambient components. A forest gives a polynomial algorithm even
+with arbitrarily high-degree component factors. A two-connected bipartite
+min2/max3 physical star family has k=0 and minimum complete-component pair
+width q/2, so it adds an unbounded-width class. Its periodic q=4r subfamily
+has F(t)=max(2r-floor(t/2),r,t-2r), first optimumr at2r operations, and an
+actual23r certificate on40r vertices. These are fixed-list unit matching
+results; full geometric multi-Hall and universal graph bounds remain open.
+Original checker passes; independent ACCEPT reproduced the complete report byte-for-byte. Preliminary audit tool timeouts and the successful unchanged execution are distinguished in the receipt.
+
+
 [Nonisolated exchange budget frontiers](docs/NONISOLATED_EXCHANGE_BUDGET_FRONTIER.md)
 compute the exact minimum matching cost at every operation count, allowing
 mixed removals and arbitrary addition adjacencies. A two-state run-parity
