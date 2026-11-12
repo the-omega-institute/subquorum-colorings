@@ -1,5 +1,41 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## All odd quotient cycles: current unrestricted bound19/192
+
+The [stronger partial-template proof](ODD_AUXILIARY_CYCLE_COMPENSATION.md)
+proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal
+two-star-forming set in every finite simple bipartite graph of maximum
+degree at most three. No connectivity, minimum-degree or selected-component
+restriction. The previous11/111 coefficient is superseded; the new bound
+improves it by1/7104 and1/10 by1/960. Optimality is open.
+
+The template estimate is now `beta_2>=ceil(31b/12)`. Every odd quotient
+cycle has two owner phase classes of order2 modulo4. An intact class has
+an isolated non-C4 cycle; a broken class has at least two internal
+low-degree vertices. Their separate credits do not overlap. Exact
+conditional expectation constructs a phase certificate with gain o/4,
+while the complementary one-side certificate has gain b/4-o/2.
+Taking a convex combination of their guaranteed cardinalities cancels o;
+the actual certificates are alternatives, never united. Simultaneous
+retention and the exact nonnegative identity complete the global proof.
+
+Independent fixed11-file review returned ACCEPT, including the faithful
+manuscript integration. The reviewer ran the original full command
+`python3 -B scripts/check_odd_cycle_compensation.py`, exit0 in19.3236s,
+and reproduced the1389-byte report exactly. The unrelated Python startup
+spreadsheet-runtime warning is preserved as received, with the full
+response and manifest in `output/odd-cycle-compensation-review.json`.
+Locally, the unchanged checker ran in7.9933s with empty stderr. It checks
+43,623 minimal selections;5,200 exact partial templates;19,668 phases;
+17,732 independent residual recurrences;14,054 conditional-expectation
+comparisons;56 targeted all-phase models;and9 larger certificate-only
+models, up to order760. General proof and finite checks have distinct roles.
+The full18-page working manuscript was compiled and visually inspected.
+No Lean, graph-sharpness, cubic specified-class existence or new grid result.
+
+The earlier cubic existence task ended `response_timeout` without a
+mathematical answer; it is not an active result or a nonexistence proof.
+
 ## Uniform subcubic improvement without selected-component restrictions
 
 The [new partial-template proof](UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md)
@@ -1075,7 +1111,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(11n/111), without connectivity, minimum-degree or selected-component restrictions. The partial-template proof extends the earlier equality obstruction; the optimal coefficient remains open |
+| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(19n/192), without connectivity, minimum-degree or selected-component restrictions. The partial-template proof extends the earlier equality obstruction; the optimal coefficient remains open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:

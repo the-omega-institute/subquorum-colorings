@@ -1,0 +1,118 @@
+{
+  "verdict": "ACCEPT",
+  "at": "2026-11-12T08:34:18.996804+00:00",
+  "oracle": {
+    "task_id": "ce255510-0884-4d47-9f1c-719dbdafa382",
+    "conversation_id": "conv_dd02b9db0253d190",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af577f1-ab34-83ec-accb-84c11f30cee9",
+    "usage_estimated": true
+  },
+  "reviewed_files": [
+    {
+      "path": "docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md",
+      "bytes": 8352,
+      "sha256": "f66f5636c3fbe230078bcfbc54a1dd83b817c391821416cd8c5b47a38b50f993"
+    },
+    {
+      "path": "develop/subcubic_odd_cycle_compensation.py",
+      "bytes": 4465,
+      "sha256": "8af9fcf1f0e8054472b28c8fb97d751cfc47f43f5020e2729c455745c91c2cf1"
+    },
+    {
+      "path": "scripts/check_odd_cycle_compensation.py",
+      "bytes": 13794,
+      "sha256": "7eeb632f8e878741deb9f16fa17437668cd605015a208a38fef5119192f80650"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    {
+      "path": "scripts/check_unrestricted_subcubic_gap.py",
+      "bytes": 9574,
+      "sha256": "73d6b2d8966fdf9c5555f4d8a4c4bc95f785d7aa8a475061390797b2463a6e1c"
+    },
+    {
+      "path": "scripts/check_subcubic_intrinsic_obstruction.py",
+      "bytes": 9946,
+      "sha256": "d9cf2cb89d693a29721ac6abab982204d220afa043595319a7f0fcce5fee1f6c"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "output/odd-cycle-compensation-check.json",
+      "bytes": 1389,
+      "sha256": "3c80aa7554e72be28096d0dcff2fcbb640c6bbb91a3335e8ae7f8cc872d8c561"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 63485,
+      "sha256": "4da8d780f1995b604b7e1d3f5292e77a44b9c55716e8765ce290dacd8492bb47"
+    }
+  ],
+  "mathematics": "New all-odd-cycle partial-template31b/12 lemma, unrestricted19n/192 theorem, prerequisite witness exchanges, simultaneous lifting, exact nonnegative identity and faithful manuscript integration; no mathematical corrections requested.",
+  "execution": {
+    "command": "python3 -B scripts/check_odd_cycle_compensation.py",
+    "source_modified": false,
+    "assertions_enabled": true,
+    "expected_report_moved_out_before_execution": true,
+    "exit_code": 0,
+    "runtime_seconds": 19.3236,
+    "fresh_report_bytes": 1389,
+    "fresh_report_sha256": "3c80aa7554e72be28096d0dcff2fcbb640c6bbb91a3335e8ae7f8cc872d8c561",
+    "direct_byte_comparison": true,
+    "all_other_source_hashes_unchanged": true,
+    "stderr_empty": false,
+    "warning": "Python startup spreadsheet-runtime warmup failure; reviewer supplied an abbreviated warning in its response, not the complete raw stderr. No checker-generated warning or assertion failure.",
+    "warning_as_received": "Spreadsheet runtime warmup failed during python startup\n...\nartifact_tool.rpc.client.RemoteError:\nElement ordering requires an owning element collection."
+  },
+  "local_execution": {
+    "command": "python3 -B scripts/check_odd_cycle_compensation.py",
+    "exit_code": 0,
+    "runtime_seconds": 7.993323958944529,
+    "stderr_bytes": 0
+  },
+  "local_manuscript_validation": {
+    "source_sha256": "4da8d780f1995b604b7e1d3f5292e77a44b9c55716e8765ce290dacd8492bb47",
+    "pdf_sha256": "a8031472e4de210495f6c4b9cb67584a476c0e5cda1784b5b6b7fb29d044175c",
+    "pages": 18,
+    "bytes": 322850,
+    "compiler_exit_code": 0,
+    "undefined_references": false,
+    "overfull_boxes": false,
+    "underfull_boxes": 1,
+    "underfull_location": "unchanged paragraph at source lines1301-1305",
+    "all18pages_rendered": true,
+    "visual_inspection": "all3 six-page contact sheets and full size changed pages9,10,11; no clipped text, overlap or illegible formulas",
+    "october_paper_sha256": "8e7531fc9de758aca4856b58311e221305ec408214bbba63827b02e336d64825",
+    "submission_or_mail": false
+  },
+  "scope_limits": [
+    "No graph-sharpness or new Lean validation",
+    "No cubic selected-star existence solution or new grid theorem",
+    "One distinguished minimal selection per exact partial template; all minimal selections in the general graph controls",
+    "Large models verify constructed physical certificates, not exact unrestricted optima",
+    "Imported older checker main suites were not executed",
+    "Review is of stated new proof and manuscript dependencies, not a new audit of all historical results or literature",
+    "Only response text was returned by broker; no supplemental reviewer file archive or complete raw warning was transferred"
+  ],
+  "response": "本轮审查以附件中的 11 个文件为唯一固定输入，不把此前接受的  $11/111$  证明视为新证明的正确性依据。初步文件清点： JSON 确实包含 11 个文件，覆盖独立证明、完整旧证明依赖、三个 Python 实现模块、三个 checker 相关文件、旧报告和完整 LaTeX 稿件。新命题的目标是\n$$|S|-\\beta_2(G)\\le \\left\\lfloor\\frac{19n}{192}\\right\\rfloor,$$\n而不是仅证明某个特殊模板的改进。我会分别判断数学证明、物理证书实现、有限控制的覆盖范围和稿件整合；四者不能相互替代。ACCEPT The mathematical proof is correct, including the new odd-cycle compensation and its global lifting, on the stated hypotheses. I found no counterexample or failed inference in the new argument. The manuscript integration is faithful. The requested unchanged checker also exits successfully.This is a mathematical referee conclusion, not a claim of graph sharpness, Lean formalization, or independent repository CI acceptance.1. Manifest reconstruction and integrityAll 11 files were reconstructed from their exact UTF-8 contents into a fresh temporary directory.11 / 11 verifiedFor every file:Reconstructed byte count equals the manifest.Reconstructed SHA256 equals the manifest.No encoding conversion or line-ending normalization was applied.The files include the new standalone note, implementation, full checker, both prior proof dependencies, the previous checker modules, previous manuscript, and expected report. All 11 manifest entries passed. odd-cycle-compensation-source.json2. Mathematical referee findings2.1 First construction: the one-side compensationAccepted.The important point is that the auxiliary matching  $P$  is not an edge set of the original graph. It pairs the two  $X$ -neighbours of each isolate and preserves their original bipartition class.Since  $P$  is perfect and  $Q$  is a partial matching, their union has exactly the stated alternating components:cycles of order  $4\\ell$ ;paths of order  $2h$ , beginning and ending with  $P$ -edges.The quotient argument is valid, including its degenerate cases.Auxiliary componentQuotient structureMaximum gainCycle,  $\\ell=1$ One vertex with a loop0Cycle,  $\\ell=2$ Two vertices with parallel edges1Cycle,  $\\ell\\ge3$ Ordinary cycle $\\lfloor\\ell/2\\rfloor$ PathOrdinary path $\\lceil r'/2\\rceil$ For a cycle, the gain is the number of selected runs: a proper selected subset contributes one per cyclic run, while selecting the whole cycle incurs the full internal-edge penalty. Alternating selections attain the maximum.For paths, the analogous argument gives the independent-set maximum of the quotient path. Missing endpoint  $Q$ -edges contribute no penalty.The unbalanced base calculation is also correct. If the two original sides contain  $r,s$  isolates, the two orientation constructions have base sizes\n$$3r+2s,\\qquad 2r+3s.$$\nTheir sum is  $5b$ , without requiring balanced bipartition sides.Thus, writing  $o$  for the number of odd- $\\ell$  auxiliary cycles,\n$$\\boxed{\\beta_2(H)\\ge \\frac{5b}{2}+\\frac b4-\\frac o2.}\n\\tag{1}$$\nIn particular, the odd-cycle penalty is exactly accounted for, not estimated by a regularity assumption.2.2 Owner phase classes and broken-class parityAccepted.For an odd- $\\ell$  auxiliary cycle, each phase class contains  $2\\ell$  owners:\n$$|U_j|=2\\ell\\equiv2\\pmod4.$$\nAn owner class is either entirely retained or entirely omitted. This follows because the phase is chosen once per auxiliary component.The broken-class lemma is sound.Suppose exactly one vertex of  $U_j$  has internal degree at most one in  $F[U_j]$ .It cannot have degree one, because a finite graph has an even number of odd-degree vertices.If it is isolated, every other vertex has degree two and belongs to an even cycle.The total order would then be odd, contradicting  $|U_j|=2\\ell$ .Therefore\n$$\\boxed{|B_j|\\ge2.}$$\nThis argument uses the actual finite graph and the maximum-degree-two hypothesis; it does not require connectedness of  $F[U_j]$ .2.3 Conditional probabilities with dependent neighboursAccepted.This is one of the most important points in the new proof.For  $v\\in B_j$ , retention has probability  $1/2$ .If its full core degree is at most one, the low-degree conclusion is automatic.Otherwise its full core degree is two. At least one core neighbour is outside  $U_j$ . There are two possibilities:The neighbour belongs to the same auxiliary component. It must lie in the opposite phase class, and is omitted whenever  $v$  is retained.The neighbour belongs to another auxiliary component. Its phase is independent, so it is omitted with conditional probability  $1/2$ .In either case,\n$$\\Pr\\left(v\\in R_C,\\ \n\\deg_{F[R_C]}(v)\\le1\\right)\\ge\\frac14.$$\nImportantly, the proof does not assume independence between the two core neighbours. It needs only one guaranteed omitted neighbour.Assigning credit  $1/4$  to each retained low-degree vertex gives expected credit at least  $1/16$  per defective vertex. Since a broken class has at least two defective vertices, its expected credit is at least\n$$\\frac18.$$\n2.4 Intact classes and the isolated-cycle creditAccepted.If every vertex of  $U_j$  has internal degree two, maximum degree two in the entire core implies that all its core neighbours are internal.Consequently,  $F[U_j]$  is a disjoint union of isolated even cycles. Since\n$$|U_j|\\equiv2\\pmod4,$$\nnot all these cycles can be  $C_4$ .At least one cycle has length at least six. Its contribution to\n$$\\Phi=\\beta_2(F[R_C])-\\frac b2$$\nis at least one when the class is retained.The retention probability is  $1/2$ , giving expected credit  $1/2$ .The no-duplication argument is valid:Broken classes charge distinct vertices in the global low-degree count.Intact classes charge cycle components containing no low-degree vertices.Different intact classes have disjoint owner sets and cannot claim the same isolated cycle.The path/cycle component estimates therefore justify the pointwise inequality between  $\\Phi$  and the assigned credits, not merely an expectation-level heuristic.Summing over the  $2o$  classes yields\n$$\\boxed{\\mathbb E[\\Phi]\\ge\\frac o4}$$\nand hence\n$$\\boxed{\\beta_2(H)\\ge\\frac{5b}{2}+\\frac o4.}\n\\tag{2}$$\n2.5 Conditional expectation and residual optimizationAccepted.The exact score is the sum of: $1/4$  for each retained low-degree vertex in a broken class;one for a retained intact class.Each vertex event depends on at most three auxiliary-component bits: its own component and those of at most two core neighbours. An intact-class event depends on one bit.Thus at most eight local assignments suffice to evaluate each conditional expectation exactly.Fixing successive phase bits to a value that does not decrease the expectation is legitimate. After the phases are fixed, optimizing the residual paths and cycles supplies an actual dissociation set attaining at least the credited score.The implementation's use of rational arithmetic is consistent with this argument.2.6 Maximization versus combining incompatible certificatesAccepted.The two constructions are alternatives, not a single union of vertex sets.The first gives (1), and the second gives (2). Since the maximum of two lower bounds is at least every convex combination of them,\n$$\\begin{aligned}\n\\beta_2(H)\n&\\ge \\frac{5b}{2}\n +\\frac13\\left(\\frac b4-\\frac o2\\right)\n +\\frac23\\left(\\frac o4\\right)\\\\\n&=\\frac{5b}{2}+\\frac b{12}\\\\\n&=\\boxed{\\frac{31b}{12}}.\n\\end{aligned}$$\nIntegrality gives the claimed ceiling.The implementation's selection of the largest of the three physical certificates (two one-side certificates and one phased certificate) is consistent with this proof.No cycle credit is improperly added to the first construction.3. Global extraction and liftingAccepted.The extraction relies on the earlier deletion-witness classification, which is supplied in full in the attached dependency.The decomposition distinguishes: $R$ : selected vertices in components of order one or two; $I$ : selected isolates; $p$ : disjoint chosen triples; $u$ : remaining owner–witness pairs.The identity\n$$|S|=|R|+2p+u$$\nis consistent with the removal of both triple centres and chosen leaves.The  $h(i)$  accounting is also correct. Since every pair witness has at most one isolate helper and the original maximum degree is three,\n$$u\\ge a+2b+b_3.$$\nConsequently  $e-b_3\\ge0$ .The crucial induced template is constructed from:\n$$I_0=\\{i:h(i)=2\\},\\quad\nX_0=\\{\\text{its two pair witnesses per isolate}\\},$$\nand their distinct owners  $C_0$ .Every vertex of  $I_0$  has exactly two neighbours in  $X_0$ ; these pairs partition  $X_0$ . The owner matching is perfect. Each owner has at most two remaining core neighbours, and each witness has at most one additional interface neighbour.Thus every hypothesis of the stronger partial-template lemma is satisfied.Simultaneous retentionI specifically checked the potentially dangerous cross-edge argument.The sets retained in addition to the template certificate are\n$$R\\setminus I_0\n\\quad\\text{and}\\quad\n\\{\\ell_c:\\text{chosen triple leaves}\\}.$$\nThey are mutually disjoint and compatible with the template certificate. $R\\setminus I_0$  induces only isolated vertices and edges.It has no edges to  $C_0$ , by the original selected-component decomposition.It has no edges to  $X_0$ , because each  $X_0$  witness has exactly its owner and isolate as selected neighbours.A chosen leaf has its unique selected neighbour at its omitted triple centre.Consequently it has no edge to the retained selected vertices or to  $X_0$ .This establishes all required cross-edge exclusions. It does not silently assume that the original selected components are independent.Therefore\n$$\\boxed{\n\\beta_2(G)\\ge |R|-b'+p+\\frac{31b'}{12}.\n}$$\nFinal identityI independently checked the substitutions and coefficients.With\n$$\\begin{gathered}\nm=\\min(a,p),\\quad\n\\alpha=a-m,\\quad \\pi=p-m,\\\\\n\\tau=m+b-2d,\\quad\ne=u-a-2b,\\quad r=|R|-a-b,\\\\\nq=n-|S|-p-u,\n\\end{gathered}$$\nthe exact ledger is\n$$n-10d=r+m+3\\alpha+3\\pi+2e+q+5\\tau.\n\\tag{4}$$\nThe template inequality gives\n$$2d+Z\n=19m+12\\alpha+12\\pi+5\\tau+12e+19b_3,\n\\tag{5}$$\nwhere  $Z\\ge0$ .Subtracting (5) from nineteen times (4) gives exactly\n$$\\boxed{\n\\begin{aligned}\n19n-192d={}&Z+19r+45\\alpha+45\\pi+7e\\\\\n&+19(e-b_3)+19q+90\\tau.\n\\end{aligned}}$$\nEvery term is nonnegative under the established witness counts and exchanges.In particular, the coefficient  $19$  on  $e-b_3$ , the coefficient  $7$  on  $e$ , and the coefficient  $90$  on  $\\tau$  are correct.This proves the claimed integer bound for each arbitrary inclusion-minimal  $S$ , and therefore for the maximum over such sets.4. Full checker executionPASS · exit 0I executed the exact requested command, unchanged:Bashpython3 -B scripts/check_odd_cycle_compensation.pyWorking directory: freshly reconstructed source root.The expected report was moved out of the output location before execution.Execution resultsMeasurementResultTerminal exit0Runtime19.3236 secondsAssertionsEnabledNew report bytes1,389New report SHA2563c80aa7554e72be28096d0dcff2fcbb640c6bbb91a3335e8ae7f8cc872d8c561Byte-for-byte expected report comparisonIdenticalOther source-file hash changes0stdoutThe complete stdout was:JSON{\"status\": \"PASS\", \"counts\": {\"minimal_selections\": 43623, \"graphs\": 5063, \"literal_subsets\": 717767, \"exact_templates\": 5200, \"phase_assignments\": 19668, \"independent_residual_recurrences\": 17732, \"conditional_expectation_comparisons\": 14054, \"templates\": 5265}, \"features\": {\"p_positive\": 7206, \"a_positive\": 5368, \"b3_positive\": 29, \"r_positive\": 38787, \"q_positive\": 41735, \"e_positive\": 3714, \"retained_leaf\": 7206, \"nonempty_extracted_template\": 3615, \"positive_gap\": 28, \"selected_degree_two\": 11844, \"intact_classes\": 86, \"long_odd_cycles\": 160, \"partial_interface\": 5198, \"unbalanced_template\": 5114, \"fractional_initial_score\": 1041, \"broken_classes\": 2762, \"exactly_two_internal_defects\": 2614}, \"exhaustive_graph_models\": 4973, \"exhaustive_partial_templates\": 5200, \"all_phase_targeted_templates\": 56, \"heawood_minimal_selections\": 345, \"exact_control_digest\": \"f1e5602dfa731dbfd3891c28eec6d7bcde6f6df65281fc1a94ecb064557dc9a1\", \"scope\": \"Written general proof. Exhaustive templates check one distinguished minimal set each; general graph controls check all minimal sets. All-phase comparisons use independent residual component formulas and local-event expectations. Larger templates check physical certificates, not unrestricted optima. No Lean or graph-sharpness.\", \"report_bytes\": 1389, \"sha256\": \"3c80aa7554e72be28096d0dcff2fcbb640c6bbb91a3335e8ae7f8cc872d8c561\"}stderr and warningsThere was one Python startup warning:Plain textSpreadsheet runtime warmup failed during python startup\n...\nartifact_tool.rpc.client.RemoteError:\nElement ordering requires an owning element collection.This originates in the environment's spreadsheet-runtime warmup, not the checker. It did not interrupt execution or change the terminal exit status.There were no checker assertion failures or checker-generated warnings.Source integrity after executionAll original source hashes remained unchanged. The generated report was byte-for-byte identical to the original expected report:Length: 1,389 bytes.SHA256: 3c80aa7554e72be28096d0dcff2fcbb640c6bbb91a3335e8ae7f8cc872d8c561.Direct byte comparison: True.The expected report was not merely used as an execution input; it was moved away before running the checker.5. What the finite controls establishThe different control classes must not be conflated.ControlResultWhat it establishesExhaustive labelled bipartite graph models4,973All minimal selections checked in these small modelsRandom graph controls90Additional physical extraction controlsHeawood graph345 minimal selectionsAll minimal selections checkedLiteral subset counts717,767Small graph enumeration coverageExhaustive partial templates5,200Exact unrestricted optimization and physical certificatesAll-phase targeted templates56Independent phase-score and conditional-expectation comparisonsPhase assignments19,668Actual assignments examinedIndependent residual recurrences17,732Independent residual optimum comparisonsConditional-expectation comparisons14,054Every recorded successive fixing comparedLarger physical-certificate templates9Physical certificates without unrestricted optimum claimsTwo distinctions matter:The exhaustive partial-template controls use exact unrestricted optimization, but only at the enumerated small sizes.The larger templates test actual constructed dissociation certificates, not unrestricted optimality.The imported checker modules' main() functions were not executed. Their definitions and helper routines were imported and used; their separate historical verification runs are not counted as part of this execution.These controls support the implementation and expose many potential local errors. They do not prove the all-order theorem. That conclusion comes from the written argument above.6. Manuscript integrationFaithful integrationThe manuscript's subsection 5.1, “An unrestricted subcubic improvement,” correctly incorporates the new argument.I checked the dependency chain into Section 2:The definitions of  $R,C,I$  and the deletion-witness types are consistent.The chosen triples and remaining pair witnesses have the required disjointness.The new  $b_3$  refinement is introduced without changing the old witness classification.The partial template is extracted from precisely the  $h=2$  isolates.The new simultaneous-retention argument preserves the original selected leaves and the remaining  $R$ -vertices.The final slack identity is reproduced with the correct coefficients.The standalone note and manuscript agree on the mathematical content. The manuscript does not accidentally import the old  $11/111$  conclusion as a premise for the new theorem. It also does not claim that the finite tests prove the general statement. odd-cycle-compensation-source.json7. Scope and final referee dispositionThe following remain explicitly outside this acceptance:Graph sharpness of  $19/192$ .A cubic selected-star existence theorem.A new rectangular-grid theorem.Lean formalization.Any claim that the finite checker establishes the all-order result.Unrelated historical manuscript results.Final disposition: ACCEPT.The new odd-auxiliary-cycle compensation is a genuine improvement of the partial-template bound. The intact/broken class split, probability estimate, credit separation, derandomization, alternative-certificate combination, global extraction, simultaneous retention, and final nonnegative identity all withstand the adversarial checks.I found no mathematical reason to revise the theorem or its proof. The startup warning should be recorded as an environment warning, not treated as a checker failure."
+}

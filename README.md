@@ -1,5 +1,38 @@
 # Current continuation
 
+The [odd-auxiliary-cycle compensation theorem](docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md)
+proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal
+two-star-forming S in every finite simple bipartite graph of maximum degree
+at most three. No connectivity, minimum-degree or selected-component
+restriction is required. This improves the preceding11/111 coefficient
+by1/7104 and the general1/10 by1/960. Graph sharpness remains open.
+
+The stronger partial-template lemma gives `beta_2>=ceil(31b/12)` with
+unbalanced sides, a core of maximum degree two and a partial witness
+matching. Broken odd-cycle owner classes supply low-degree credits;
+intact classes supply isolated non-C4 cycle credits. These resources are
+disjoint. The proof compares alternative physical certificates by their
+maximum, then lifts one certificate while retaining all required R vertices
+and chosen triple leaves simultaneously. Its exact final identity is
+
+    19n-192d=Z+19r+45alpha+45pi+7e+19(e-b3)+19q+90tau>=0.
+
+The complete proof is integrated in `manuscript/starforming-gap.tex`.
+Independent exact11-file mathematical and manuscript review returned
+ACCEPT, with no required mathematical change. The reviewer executed the
+original unchanged complete checker, exit0, and reproduced the1389-byte
+report byte-for-byte. An unrelated spreadsheet-runtime startup warning
+was preserved in the review receipt; reviewer stderr was not empty.
+The implementation check covers43,623 minimal selections,5,200 exact
+partial templates,19,668 phases and14,054 conditional-expectation
+comparisons, with separate large physical-certificate controls.
+Exact scopes and manifests are in `output/odd-cycle-compensation-review.json`;
+the fresh report is `output/odd-cycle-compensation-check.json`.
+
+The preceding11/111 theorem and18b/7 template lemma below remain as
+independently verified historical steps; their coefficients are superseded
+by19/192 and31b/12, respectively.
+
 The [unrestricted subcubic theorem](docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md)
 proves `|S|-beta_2(G)<=floor(11n/111)` for every inclusion-minimal
 two-star-forming S in a bipartite graph of maximum degree at most three.

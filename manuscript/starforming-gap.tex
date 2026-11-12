@@ -22,7 +22,7 @@ in every bipartite graph of order $n$. The coefficient is sharp even for
 two-connected graphs of minimum degree two and maximum degree four. The
 proof constructs two dissociation sets from disjoint deletion witnesses.
 For maximum degree at most three we improve the bound uniformly to
-$\lfloor11n/111\rfloor$, with no restriction on the components induced
+$\lfloor19n/192\rfloor$, with no restriction on the components induced
 by a minimal forming set.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
@@ -682,7 +682,7 @@ and arbitrary selected components are allowed.
 If $G$ is bipartite of order $n$ and maximum degree at most three,
 then every inclusion-minimal two-star-forming set $S$ satisfies
 \[
- |S|-\diss(G)\le\left\lfloor\frac{11n}{111}\right\rfloor.
+ |S|-\diss(G)\le\left\lfloor\frac{19n}{192}\right\rfloor.
 \]
 In particular the same bound holds for $\SF(G)-\diss(G)$.
 \end{theorem}
@@ -696,7 +696,7 @@ $b,2b,2b$. Each vertex of $I$ has two neighbours in $X$, and these
 neighbour pairs partition $X$. The edges between $C$ and $X$ form a
 perfect matching. All remaining edges form a graph $F=H[C]$ of maximum
 degree at most two and a possibly partial matching $Q=H[X]$.
-Then $\diss(H)\ge\lceil18b/7\rceil$.
+Then $\diss(H)\ge\lceil31b/12\rceil$.
 \end{lemma}
 \begin{proof}
 The assertion is immediate for $b=0$. Write $c(x)$ for the owner in $C$
@@ -704,9 +704,8 @@ of $x\in X$. Pair the two neighbours of each $i\in I$ by an auxiliary
 edge, giving a perfect matching $P$ on $X$. These are not edges of $H$:
 they join vertices in the same original bipartition class. The components
 of $P\cup Q$ are alternating cycles of order $4\ell$, or alternating
-paths of order $2h$ beginning and ending with $P$ edges. Let $b_0$ count
-the $P$-pairs in all components of order four, including paths, and
-put $t_0=b-b_0$.
+paths of order $2h$ beginning and ending with $P$ edges.
+Let $o$ count the cycles for which $\ell$ is odd, including $\ell=1$.
 
 Select all $C_A$ and none of $C_B$. Choose some $P$-pairs $J$ in $X_B$,
 and write $T$ for their union. Keep $T$, omit their centres in $I_A$
@@ -719,7 +718,7 @@ only with its $I_B$ centre. Thus this is a dissociation set, of size
  |A(H)|+|J|-z(J),
 \]
 where $z(J)$ counts the opposite $P$-pairs wholly in $N_Q(T)$.
-Indeed, if $|I_A|=r$ and $|I_B|=s$, its base size is $3r+2s$.
+If $|I_A|=r$ and $|I_B|=s$, its base size is $3r+2s$.
 Reversing the sides gives base $2r+3s$; the two bases sum to $5b$.
 
 On a cycle, the quotient on either side's $P$-pairs is an $\ell$-cycle,
@@ -730,13 +729,12 @@ attain the maximum. On a path, the quotient on $r'$ same-side pairs is
 a path and the maximum is $\lceil r'/2\rceil$. Opposite endpoint pairs
 with a missing $Q$ edge contribute no penalty; counting selected runs
 proves the upper bound and alternating choices attain it.
-Let $\delta_A,\delta_B$ be the total gains for the two orientations.
-A cycle with $2\ell>2$ pairs contributes
-$2\lfloor\ell/2\rfloor\ge2\ell/3$, and a path with $h$ pairs contributes
-at least $h/2$. Discarding the nonnegative short-component gains gives
+Averaging the two orientations, a cycle contributes
+$\lfloor\ell/2\rfloor=(2\ell)/4-\frac12\mathbf1_{\ell\ {\rm odd}}$
+to the gain, and a path with $h$ pairs contributes at least $h/4$.
+Consequently
 \begin{equation}\label{eq:partial-one-side}
- \diss(H)\ge\frac{5b}{2}+\frac{\delta_A+\delta_B}{2}
-          \ge\frac{5b}{2}+\frac{t_0}{6}.
+ \diss(H)\ge\frac{5b}{2}+\frac b4-\frac o2.
 \end{equation}
 
 For a second construction, independently choose one proper two-colouring
@@ -745,38 +743,75 @@ be their union. Every component has even order, so $|Y|=b$, and $Y$
 contains one endpoint of every $P$ and $Q$ edge.
 Put $R_C=C\setminus\{c(x):x\in Y\}$, of order $b$.
 If $Z_C$ is a dissociation set of $F[R_C]$, then $I\cup Y\cup Z_C$
-is dissociation in $H$.
+is dissociation in $H$. Write $\Phi=\diss(F[R_C])-b/2$.
 
-Let $L_C$ count the vertices of degree at most one in $F[R_C]$.
-For a path of order $m$, $\diss(P_m)=\lceil2m/3\rceil$; its contribution
-to $L_C$ is one for $m=1$ and two otherwise. The cases $m=1,2$
-check directly, and $2m/3\ge m/2+1/2$ for $m\ge3$.
-Every even cycle has dissociation number at least half its order.
-Consequently
+A path component of order $m$ contributes at least $L/4$ to $\Phi$,
+where $L$ counts its vertices of degree at most one. For $m=1,2$
+this is direct; for $m\ge3$ use
+$\diss(P_m)=\lceil2m/3\rceil\ge m/2+1/2$.
+Every even cycle contributes nonnegatively, and each even cycle other
+than $C_4$ contributes at least one, since
+$\lfloor2m/3\rfloor-m/2\ge1$ for even $m\ge6$.
+
+Fix one of the $o$ auxiliary cycles of order $4\ell$ with $\ell$ odd.
+Its owners split into two auxiliary phase classes $U_0,U_1$, each of
+order $2\ell\equiv2\pmod4$. A class is either wholly retained in $R_C$
+or wholly omitted. Call it intact if every vertex has degree two in
+$F[U_j]$. All its core degree is then internal, so its even cycle
+components are isolated in $F$, and remain isolated in $F[R_C]$ when
+retained. They cannot all be $C_4$ because their total order is $2$
+modulo $4$. Assign one credit to an intact class when it is retained,
+using one of its non-$C_4$ components. Its expected credit is $1/2$.
+
+For a non-intact class put
+$B_j=\{v\in U_j:\deg_{F[U_j]}(v)\le1\}$.
+There are at least two such vertices. Otherwise a unique low-degree
+vertex cannot have degree one by the parity of odd-degree vertices;
+if it is isolated, every other vertex lies in an even cycle, contrary
+to the even order of $U_j$.
+For each $v\in B_j$,
 \[
- \diss(F[R_C])\ge b/2+L_C/4.
+ \Pr\bigl(v\in R_C,\ \deg_{F[R_C]}(v)\le1\bigr)\ge\frac14.
 \]
-Each short auxiliary component contains one $P$-pair on each original
-side. Conditional on an owner $v$ from this component remaining in $R_C$,
-exactly one owner on each side in the component remains.
-If $v$ has fewer than two core neighbours, it has residual degree at
-most one. If its two distinct core neighbours lie in its own component,
-they cannot both remain. Otherwise at least one neighbour belongs to an
-independently phased component and is absent with probability one half.
-Thus each such owner has probability at least $1/4$ of remaining with
-residual degree at most one.
-There are $2b_0$ such owners, giving $\mathbb E L_C\ge b_0/2$ and hence
-\begin{equation}\label{eq:partial-phase}
- \diss(H)\ge5b/2+b_0/8.
-\end{equation}
-This also yields a polynomial construction by conditional expectations:
-each low-degree indicator involves at most three component phase bits.
-The residual paths and cycles can be optimized explicitly.
+Indeed, $v$ is retained with probability $1/2$. If its core degree is
+at most one, it is automatically low degree. Otherwise one of its
+two core neighbours is outside $U_j$. A neighbour in the same auxiliary
+component belongs to the opposite phase class and is absent when $v$
+is retained. A neighbour in another component is absent with conditional
+probability $1/2$, by independent component phases. This suffices
+regardless of the other neighbour.
+Give each retained low-degree vertex in $B_j$ credit $1/4$. Its expected
+credit is at least $1/16$, so a non-intact class has expected credit
+at least $1/8$.
 
-The two bounds are alternatives. If $M=\max(t_0/6,b_0/8)$, then
-$b=t_0+b_0\le14M$. Taking the maximum of
+No two credits use the same resource. The non-intact classes use
+distinct vertices in the global low-degree count. Intact classes use
+isolated cycle components within disjoint owner classes; these
+components contain no low-degree vertices. Different intact classes
+cannot use the same cycle. The component bounds above therefore imply
+that $\Phi$ is at least the total assigned credit for every phase
+assignment. Each of the $2o$ classes has expected credit at least $1/8$.
+Thus
+\begin{equation}\label{eq:partial-phase}
+ \diss(H)\ge5b/2+\mathbb E\Phi\ge5b/2+o/4.
+\end{equation}
+Conditional expectations give a polynomial construction: each low-degree
+indicator uses at most three component phase bits, and an intact-class
+indicator uses one. At most eight local completions suffice per term.
+Fix successive phase bits without decreasing the expected credit,
+then optimize the residual paths and cycles.
+
+The two constructions are alternatives. Their maximum is at least
+their convex combination with coefficients $1/3,2/3$. Using
 \eqref{eq:partial-one-side} and \eqref{eq:partial-phase} gives
-$\diss(H)\ge5b/2+b/14=18b/7$, as required.
+\[
+ \diss(H)\ge\frac{5b}{2}
+       +\frac13\left(\frac b4-\frac o2\right)
+       +\frac23\frac o4
+       =\frac{31b}{12}.
+\]
+This compares cardinality guarantees; it does not combine the vertex
+sets. Integrality completes the proof.
 \end{proof}
 
 \begin{proof}[Proof of Theorem~\ref{thm:subcubic}]
@@ -812,26 +847,29 @@ $R\setminus I_0$ and by all $p$ chosen triple leaves $\ell_c$.
 The former induce only edges and isolates, meet no $C_0$ vertex,
 and meet no $X_0$ vertex by the exact selected neighbourhood condition.
 A chosen leaf has its unique selected neighbour at its omitted triple
-centre, and so meets neither $C_0$ nor $R\setminus I_0$ nor another
-chosen leaf. It meets no $X_0$ vertex by that same exact neighbourhood
-condition. The two retained sets are disjoint. Therefore
+centre, and so meets neither $C_0$ nor $I_0$ nor $R\setminus I_0$ nor
+another chosen leaf. It meets no $X_0$ vertex by that same exact
+neighbourhood condition. The two retained sets are disjoint. Therefore
 \[
- \diss(G)\ge |R|-b'+p+18b'/7.
+ \diss(G)\ge |R|-b'+p+31b'/12.
 \]
 Define the nonnegative slack
-$Z=7\diss(G)-7(|R|-b'+p)-18b'$.
+$Z=12\diss(G)-12(|R|-b'+p)-31b'$.
 Substitution of \eqref{eq:partition} and $b=2d-m+\tau$ yields
 \[
- d+Z=11m+7\alpha+7\pi+3\tau+7e+11b_3.
+ 2d+Z=19m+12\alpha+12\pi+5\tau+12e+19b_3.
 \]
-Subtracting this from eleven times \eqref{eq:subcubic-ledger} gives
+Subtracting this from nineteen times \eqref{eq:subcubic-ledger} gives
 \[
- \boxed{11n-111d
- =Z+11r+26\alpha+26\pi+4e+11(e-b_3)+11q+52\tau\ge0.}
+ \boxed{19n-192d
+ =Z+19r+45\alpha+45\pi+7e+19(e-b_3)+19q+90\tau\ge0.}
 \]
 Integrality proves the assertion for $S$, and maximizing over $S$
 proves the bound for $\SF$.
 \end{proof}
+
+\subsection{Minimum-degree asymptotic sharpness}
+
 
 A fixed minimum degree alone has a different answer from exact equality.
 
