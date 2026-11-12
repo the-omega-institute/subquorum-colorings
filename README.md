@@ -1,5 +1,25 @@
 # Current continuation
 
+The [alternating-interface theorem](docs/SUBCUBIC_INTRINSIC_EQUALITY_OBSTRUCTION.md)
+excludes positive unrounded n/10 equality for every nonempty bipartite graph
+of maximum degree at most three, with no connectivity or selected-component
+restriction: `SF_2-beta_2<=ceil(n/10)-1`. The intrinsic equality layers would
+force a two-regular core and a matching interface. In that entire 10k-point
+template, two constructive dissociation certificates give
+`beta_2>=5k+max(delta,ceil(k0/4))>=5k+ceil(k/7)`, where k0 counts the short
+alternating interface cycles and delta is the sum of floor(ell/2) over
+cycles of length4ell. The certificates are alternatives, with no double
+charging. Conditional expectations derandomize the phase construction.
+The standalone checker exhausts 2,162 templates at k=1,2, with independent
+exact optima, and checks larger physical certificates through 2,560 vertices.
+The improvement for arbitrary subcubic graphs removes exact equality at
+orders divisible by ten; it does not lower their universal asymptotic
+coefficient. Code, report and review are under the corresponding
+`subcubic_intrinsic_obstruction` / `subcubic-intrinsic-obstruction` names.
+Independent exact-source review returned ACCEPT, ran the complete unchanged
+checker and reproduced its report byte-for-byte. It also independently
+enumerated all 2^20 subsets of the displayed twenty-vertex control.
+
 The [regular-completion theorem and gap-loss obstruction](docs/REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md)
 separate two properties needed when building bounded-degree examples. If all
 old unselected vertices already have target degree r>=2, the graph can be
