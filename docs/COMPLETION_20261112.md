@@ -64,6 +64,17 @@ reviewed the complete proof, reconstructed all five files with matching
 hashes, ran the original checker unchanged with assertions to completion,
 and reproduced the report byte-for-byte.
 
+The [regular equality-interface theorem](REGULAR_SELECTED_STAR_EQUALITY_INTERFACE.md) further shows that
+positive equality `n=(12k-14)d` requires exactly d P3 centres in each
+bipartition class and a witness interface with d vertices of degree k-1
+and d of degree k-2 in each part. Thus `d>=floor(k/2)`: equality at
+order34 in degree4, or order46 in degree5, is impossible. The necessary
+witness interface is explicitly realized for every admissible k,d; this
+is not a whole extremal graph construction. The same resource theorem
+gives `d<=floor((h+w)/4)` in a full rectangle when S has no selected
+edge components. Independent proof review returned ACCEPT; its scope
+contains no new code-execution claim.
+
 ## Exact clean-witness port composition
 
 For any finite simple interface graph R, orient its edges arbitrarily and

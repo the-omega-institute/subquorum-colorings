@@ -259,3 +259,8 @@ checker unchanged with assertions enabled to terminal completion, and
 reproduced its complete report byte-for-byte. The complete response and
 actual scope are recorded in `output/full-degree-capacity-review.json`. No
 Lean verification, historical-priority or graph-sharpness claim is made.
+
+The separate [equality-interface note](REGULAR_SELECTED_STAR_EQUALITY_INTERFACE.md)
+classifies necessary regular equality resources, excludes the smallest
+numerical equality candidates, and records the perimeter-only bound for
+rectangular selections without edge components.
