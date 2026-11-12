@@ -1,5 +1,21 @@
 # Current continuation
 
+The [regular-completion theorem and gap-loss obstruction](docs/REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md)
+separate two properties needed when building bounded-degree examples. If all
+old unselected vertices already have target degree r>=2, the graph can be
+completed to a simple r-regular bipartite graph while preserving minimality
+of its selected set, adding only selected edge components and new unselected
+vertices. A cyclic deficit allocation proves existence for all r.
+However, this does not preserve a positive selected gap: for every k>=1
+an explicit connected graph has n48k, selected32k, beta_2=31k, while its
+completion is two-connected cubic with n68k, selected36k and an actual
+dissociation set of size38k. Thus its completed selected gap is at most-2k.
+The fixed coordinates and all-k proof are supplied; no exact completed
+beta_2 or cubic selected-class nonexistence theorem is claimed. The
+standalone checker and exact review are in
+`scripts/check_cubic_completion_gap_loss.py` and
+`output/cubic-completion-gap-loss-review.json`.
+
 The [two-colour repair theorem](docs/SUBCUBIC_TWO_COLOUR_REPAIR_BOUND.md)
 gives three stronger bounds for a specified inclusion-minimal two-star-forming
 set S whose induced components are stars, edges or isolates, with

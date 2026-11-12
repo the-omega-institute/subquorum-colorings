@@ -1,5 +1,27 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Completing degrees preserves minimality, but need not preserve a gap
+
+The [regular-completion lemma](REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md)
+works for every target degree r>=2 and any minimal two-star-forming set
+whose old unselected vertices already have degree r. Appropriate new
+selected edge components and unselected vertices fill every remaining
+selected degree deficit. A cyclic incidence construction proves simple
+completion exists; each old deletion failure and every new endpoint's
+deletion failure remain valid. No selected-component hypothesis is needed.
+
+The same note proves an all-k obstruction to gap preservation. The original
+connected subcubic G_k has n48k, selected32k and true beta_2=31k. Its
+completion K_k is two-connected cubic with n68k and selected36k, yet has
+an explicit dissociation set of size38k. Its selected gap is at most-2k.
+Thus this completion is safe for minimality while failing the desired
+gap invariant. It does not decide the existence of positive cubic gaps
+within the selected-star/edge/isolate class, or any unrestricted SF_2 value.
+The all-scale argument uses one explicit fixed38-set and the old core cap,
+not extrapolation from sampled completions. Exact-source review and
+physical validation are in `output/cubic-completion-gap-loss-review.json`
+and `output/cubic-completion-gap-loss-check.json`.
+
 ## Two-colour repairs: current subcubic upper bounds
 
 The [two-colour repair theorem](SUBCUBIC_TWO_COLOUR_REPAIR_BOUND.md) proves

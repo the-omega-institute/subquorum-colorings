@@ -1,0 +1,89 @@
+{
+  "status": "ACCEPT",
+  "claims": [
+    "For every integer target degree r>=2, selected-deficit completion preserves arbitrary inclusion-minimal two-star-forming sets when every old outsider already has degree r.",
+    "For all k>=1, a connected48k-vertex old graph has selected32k and exact beta31k; its two-connected cubic68k-vertex completion has selected36k and an explicit38k dissociation set, so completed selected gap<=-2k. For k>=2 completed connectivity exactly2."
+  ],
+  "exact_source_manifest": {
+    "docs/REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md": {
+      "bytes": 10613,
+      "sha256": "44f76247182599db1706afa16044b8d188b77d82a0788e3b65287beddc8b38f6"
+    },
+    "develop/cubic_completion_gap_loss.py": {
+      "bytes": 3371,
+      "sha256": "5601a899c36af753a6512bc2d1ab5eaa4c78aa7b09306ab1e12270f110ad7637"
+    },
+    "develop/fixtures/cubic-completion-gap-loss.json": {
+      "bytes": 5895,
+      "sha256": "929c9381cf4b87f4ca69542a1b2c4b02b3a72cea97411a8a5ad2d2490a9f80db"
+    },
+    "scripts/check_cubic_completion_gap_loss.py": {
+      "bytes": 6958,
+      "sha256": "d48012ba420026d0f88edf534db4bd0551a50ef3695b2bcbe1f2eb76ad8ea38b"
+    },
+    "output/cubic-completion-gap-loss-check.json": {
+      "bytes": 2522,
+      "sha256": "6ea5b30d9a61749957046adcedaf8235c9ae0d83581bdfc2b77cb394e33aaed7"
+    },
+    "develop/compact_subcubic_selected_stars.py": {
+      "bytes": 3338,
+      "sha256": "e36d86a708602ae41a357baf9c3a115faf01cf250977fa409cc4d078026c0190"
+    },
+    "scripts/check_compact_subcubic_selected_stars.py": {
+      "bytes": 8851,
+      "sha256": "fb91060affa1b5459d4c4cb76b3bcde9c353ba0f475355d17b1735215f1cfdf9"
+    },
+    "docs/COMPACT_SUBCUBIC_SELECTED_STAR_GAPS.md": {
+      "bytes": 11521,
+      "sha256": "919198fcdc1a798f3d196b6d8bf5f840d855c0d5d43d89013cadcb8a1616912e"
+    }
+  },
+  "provenance": {
+    "old_core_and_port_cap": "COMPACT_SUBCUBIC_SELECTED_STAR_GAPS.md, existing independent research/proof/execution records in output/compact-subcubic-and-stability-review.json",
+    "new_derivation": "General degree-deficit construction and all-k gap-loss deduction, using one literal fixed38-set and the previously proved core cap.",
+    "original_cubic_positive_gap_existence_question": "Still pending in a separate live research request; not part of this ACCEPT claim and not replaced by this obstruction."
+  },
+  "review": {
+    "oracle": {
+      "task_id": "12887baf-236a-4cc3-87ab-83ded51419d3",
+      "conversation_id": "conv_ea2ac22aa334b1ac",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af55eac-3494-83ec-9580-3784d37f1c99",
+      "usage_estimated": true
+    },
+    "response": "ACCEPT. The regular-completion lemma holds for every integer  $r\\ge 2$ . For every  $k\\ge 1$ , the specified old selection has gap exactly  $k$ , and its extension in the completed cubic graph has gap at most  $-2k$ . The completed bound uses an explicit dissociation set of size  $38k$ . The proof requires no exact value of the completed dissociation number.The exact checker ran to completion with exit code 0. Its freshly generated report matches the supplied report byte-for-byte. cubic-completion-gap-loss-check.json · regular-completion-source.zipExecution and byte verificationI reconstructed all eight files at their supplied relative paths. Reconstruction created output/. After verifying the supplied report, I moved it outside the reconstructed tree so the checker had to create its output file afresh. From the reconstruction root I ran exactlyBashpython3 -B scripts/check_cubic_completion_gap_loss.pyPython was 3.12.14, with __debug__ == True and optimization level 0. Stdout was 544 bytes and reported PASS. Raw stderr was empty, 0 bytes, with no startup warnings. The generated report was 2,522 bytes, and cmp found it identical to the saved original. No source was edited. After execution the tree again contained exactly the eight supplied files, each byte-identical to the attachment.Relative pathBytesVerified SHA-256docs/REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md10,61344f76247182599db1706afa16044b8d188b77d82a0788e3b65287beddc8b38f6develop/cubic_completion_gap_loss.py3,3715601a899c36af753a6512bc2d1ab5eaa4c78aa7b09306ab1e12270f110ad7637develop/fixtures/cubic-completion-gap-loss.json5,895929c9381cf4b87f4ca69542a1b2c4b02b3a72cea97411a8a5ad2d2490a9f80dbscripts/check_cubic_completion_gap_loss.py6,958d48012ba420026d0f88edf534db4bd0551a50ef3695b2bcbe1f2eb76ad8ea38boutput/cubic-completion-gap-loss-check.json2,5226ea5b30d9a61749957046adcedaf8235c9ae0d83581bdfc2b77cb394e33aaed7develop/compact_subcubic_selected_stars.py3,338e36d86a708602ae41a357baf9c3a115faf01cf250977fa409cc4d078026c0190scripts/check_compact_subcubic_selected_stars.py8,851fb91060affa1b5459d4c4cb76b3bcde9c353ba0f475355d17b1735215f1cfdf9docs/COMPACT_SUBCUBIC_SELECTED_STAR_GAPS.md11,521919198fcdc1a798f3d196b6d8bf5f840d855c0d5d43d89013cadcb8a1616912eActual execution scope. The checker optimized the two old 48-vertex cores, obtaining 31 with the port present in 500 memoized states and 31 with it removed in 289 states. It checked the old and completed families at  $k=1,2,3,4,8,16$ , including the witnesses, single-deletion failures, selected components and old-edge embeddings. It tested every single-vertex connectivity deletion on the completed family for  $k\\le4$ , every vertex pair on the 68-vertex base (zero separating pairs), and the specified port pair at every tested  $k\\ge2$ . The generic controls covered 606 labelled bipartite graph inputs and 285 eligible cubic completions. Additional prescribed- $p$  cubic controls gave 7 degree-only successes and 13 rejections. The single-matching controls at target degrees 2 through 6 gave 17 successes and 43 rejections. The invocation imported the earlier checker's exact solver. Its standalone suite and the 240 discovery samples were outside this run.General regular-completion proofWrite  $m=|E(G)|$ . Every old outsider already has degree  $r$ , so the selected deficits exhaust the deficits on each side:\n$$D_A=r|A|-m,\\qquad D_B=r|B|-m.$$\nConsequently both integrality conditions reduce to  $p\\equiv D_A\\equiv D_B\\pmod r$ . A uniform legal choice is  $p=p_0+2r$ , with  $p_0$  the least nonnegative residue. Both opposite-side supplies are then at least  $2(r-1)\\ge r$ , enough for every old deficit and every new endpoint deficit  $r-1$ . This includes  $r=2$ .For a prescribed admissible  $p$ , take one side with deficits  $d_i$  and  $u$  new opposite-colour vertices. The necessary simple-edge capacity is  $d_i\\le u$ . It is sufficient because  $\\sum_i d_i=ru$ : give successive rows consecutive strings of  $d_i$  positions in  $0,\\ldots,ru-1$ , reduced modulo  $u$ . No row repeats a neighbour, and each column occurs exactly  $r$  times. If  $u=0$ , every deficit on that side is zero. Applying the construction on both sides gives the required simple  $r$ -regular graph.For an outsider  $z$ , coverage depends exactly on whether it has two selected neighbours or has a selected neighbour incident to a selected edge. After deleting any old selected vertex  $v$ , every old witness retains its old selected neighbourhood, and each of those neighbours retains its old selected adjacencies. This includes a failure witnessed by  $v$  itself. Every new outsider is initially covered by its  $r$  selected neighbours. Deleting a new selected endpoint leaves it with just its mate as a selected neighbour, and the mate has no remaining selected neighbour. Thus every single deletion fails. Formation is upward closed, proving inclusion-minimality for arbitrary old selected-component structure.Old cap, fixed witness and cyclic familyBoth old caps are 31. Each of the eight  $P_6$  blocks contributes at most four vertices, since each of two disjoint consecutive triples contributes at most two. At total size 32 every block is full. Its six possible four-sets, in positions  $0,\\ldots,5$ , are 0134, 0135, 0145, 0235, 0245, 1245. Replacing any pattern containing  $a$  by  $A=0235$ , and retaining  $B=1245$  otherwise, introduces no interface vertex and does not increase the internal degree of any retained interface vertex. Simultaneous normalization therefore preserves dissociation. A chain edge forbids  $A_jB_{j+1}$ , since  $b_{j+1}$  in state  $B$  is already paired with  $i_{j+1}$ . An  $A$  root forces its whole group to  $A$ , giving its terminal  $a$  two distinct retained neighbours. Both roots must then be  $B$ , and the root bridge joins two already paired  $b$ 's. This proves the cap with the port removed. Taking  $A$  in the first group and  $B$  in the second, then omitting  $a_3$ , attains 31 and omits port 30. The same set attains the cap with the port present.The fixed 38-set is an actual witness. Reconstructing the eight paths, the special edges and the 16 incidence rows from the note gives exactly the fixture's 102 edges. Each colour has old deficit 20. With  $p=2$ , the construction adds eight outsiders of each colour and fills every deficit. The 36 selected vertices induce eight  $P_3$ 's, eight isolates and two edges. Directly restricting the coordinate edge list to the displayed  $D$  gives the following 16 edges:\n$$\\begin{gathered}\n(1,2),(4,5),(7,8),(15,16),(18,19),(22,23),(24,25),(29,53),\\\\\n(30,31),(33,60),(35,62),(36,46),(38,39),(43,44),(48,54),(51,66).\n\\end{gathered}$$\nThe remaining six vertices are isolates  $10,13,27,41,58,63$ . Thus all 38 vertices have induced degree at most one, and  $6\\notin D$ .Switching preserves the required data for every  $k$ . The map  $48j+t\\mapsto68j+t$  identifies the switched old graph with the induced graph on the old vertices of the completion. Each replacement edge  $30_j6_{j+1}$  joins opposite-colour outsiders. For  $k=1$  it restores the original edge. For  $k=2$  the two cross-copy edges have distinct endpoint pairs. All old deletion witnesses survive switching, as do the new matching-endpoint witnesses. In the old core the failures after deleting  $x_j,c_j,y_j,i_j$  occur respectively at  $a_j,a_j,b_j,i_j$ .Any old dissociation set restricts to at most 31 vertices per deleted-port copy. The 31-set omits port 30, so its copywise union attains  $31k$ . The completed 38-set omits the other port, 6, so its copywise union likewise gains no induced edge. This gives\n$$|S_k|-\\beta_2(G_k)=32k-31k=k,\\qquad\n|T_k|-\\beta_2(K_k)\\le36k-38k=-2k.$$\nConnectivity holds for all  $k$ . Each deleted-port old piece is connected through its root bridge. In the completion every new outsider touches the old core and every new matching endpoint attaches through such an outsider. The cyclic links therefore connect the completed graph. If deleting a vertex  $v$  of colour  $A$  leaves components  $C$ , the number of edges from  $v$  to each  $C$  is\n$$t_C=r\\bigl(|C\\cap B|-|C\\cap A|\\bigr)>0.$$\nThese positive multiples of  $r$  sum to  $r$ , so there is only one component. This proves two-connectivity. For every  $k\\ge2$ , deleting vertices 6 and 30 in one copy removes all its links to the other copies, separating its 66 remaining vertices from them. Hence  $\\kappa(K_k)=2$  throughout the claimed range.",
+    "stream_bytes": 10078,
+    "stream_sha256": "738135a12f6a89eb6bcc034dd9d7ba02c0c3867d733f262d60681af765480f69",
+    "transport_stderr": ""
+  },
+  "execution": {
+    "command": "python3 -B scripts/check_cubic_completion_gap_loss.py",
+    "source_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "reviewer_python": "3.12.14",
+    "reviewer_optimization_level": 0,
+    "reviewer_stdout_bytes": 544,
+    "reviewer_stderr_bytes": 0,
+    "reviewer_reported_startup_warnings": false,
+    "report": {
+      "bytes": 2522,
+      "sha256": "6ea5b30d9a61749957046adcedaf8235c9ae0d83581bdfc2b77cb394e33aaed7"
+    },
+    "report_byte_identical": true,
+    "reviewer_setup": "Reconstruction created output/. Reviewer moved the supplied report outside the reconstructed tree before execution, then compared the newly created report with cmp.",
+    "local_stdout": "{\"status\": \"PASS\", \"base_core_exact_controls\": [{\"deleted_port\": false, \"beta\": 31, \"states\": 500}, {\"deleted_port\": true, \"beta\": 31, \"states\": 289}], \"generic_completion_controls\": {\"actual_cubic_completions\": 285, \"degree2to6_regular_completions\": 17, \"eligible_minimal_selections\": 285, \"extra_degree_only_controls\": 7, \"invalid_p_rejections\": 13, \"labelled_graph_inputs\": 606, \"new_selected_edges\": 586, \"new_unused_vertices\": 1487, \"regular_invalid_p_rejections\": 43}, \"family_models\": 6, \"base_two_vertex_cuts\": 0, \"report_bytes\": 2522}\n",
+    "local_stderr": ""
+  },
+  "independent_coordinate_check": "Reviewer rebuilt the102edge base, found16induced matching edges and6isolates in the actual38-set, and verified both port omissions and all-k switching.",
+  "scope_limits": [
+    "No exact completed beta or unrestrictedSF2 value.",
+    "No positive cubic selected-star gap or nonexistence theorem.",
+    "240seeded completions and interrupted68-point exact search are outside the independent checker invocation; interrupted search gives no exact result.",
+    "General all-r/all-k claims rely on written proofs; finite executions are controls.",
+    "No new Lean, mail or submission."
+  ]
+}

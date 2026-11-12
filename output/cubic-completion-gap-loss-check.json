@@ -1,0 +1,98 @@
+{
+  "base_completed_n": 68,
+  "base_completed_two_vertex_cuts": [],
+  "base_core_exact_controls": [
+    {
+      "beta": 31,
+      "deleted_port": false,
+      "states": 500
+    },
+    {
+      "beta": 31,
+      "deleted_port": true,
+      "states": 289
+    }
+  ],
+  "base_dissociation_witness": 38,
+  "base_selected": 36,
+  "family_controls": [
+    {
+      "k": 1,
+      "new_dissociation_witness": 38,
+      "new_gap_upper": -2,
+      "new_n": 68,
+      "new_selected": 36,
+      "old_edges_preserved": true,
+      "old_exact_beta_by_theorem": 31,
+      "old_n": 48,
+      "old_selected": 32
+    },
+    {
+      "k": 2,
+      "new_dissociation_witness": 76,
+      "new_gap_upper": -4,
+      "new_n": 136,
+      "new_selected": 72,
+      "old_edges_preserved": true,
+      "old_exact_beta_by_theorem": 62,
+      "old_n": 96,
+      "old_selected": 64
+    },
+    {
+      "k": 3,
+      "new_dissociation_witness": 114,
+      "new_gap_upper": -6,
+      "new_n": 204,
+      "new_selected": 108,
+      "old_edges_preserved": true,
+      "old_exact_beta_by_theorem": 93,
+      "old_n": 144,
+      "old_selected": 96
+    },
+    {
+      "k": 4,
+      "new_dissociation_witness": 152,
+      "new_gap_upper": -8,
+      "new_n": 272,
+      "new_selected": 144,
+      "old_edges_preserved": true,
+      "old_exact_beta_by_theorem": 124,
+      "old_n": 192,
+      "old_selected": 128
+    },
+    {
+      "k": 8,
+      "new_dissociation_witness": 304,
+      "new_gap_upper": -16,
+      "new_n": 544,
+      "new_selected": 288,
+      "old_edges_preserved": true,
+      "old_exact_beta_by_theorem": 248,
+      "old_n": 384,
+      "old_selected": 256
+    },
+    {
+      "k": 16,
+      "new_dissociation_witness": 608,
+      "new_gap_upper": -32,
+      "new_n": 1088,
+      "new_selected": 576,
+      "old_edges_preserved": true,
+      "old_exact_beta_by_theorem": 496,
+      "old_n": 768,
+      "old_selected": 512
+    }
+  ],
+  "generic_completion_controls": {
+    "actual_cubic_completions": 285,
+    "degree2to6_regular_completions": 17,
+    "eligible_minimal_selections": 285,
+    "extra_degree_only_controls": 7,
+    "invalid_p_rejections": 13,
+    "labelled_graph_inputs": 606,
+    "new_selected_edges": 586,
+    "new_unused_vertices": 1487,
+    "regular_invalid_p_rejections": 43
+  },
+  "scope": "All-k proof uses exact old-core cap and one explicit new38-set; no exact beta for a completed graph, no positive cubic selected-star gap and no universal nonexistence claim. Small controls validate minimality and degree completion only."
+}
