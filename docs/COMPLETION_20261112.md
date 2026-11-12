@@ -1,5 +1,36 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Uniform subcubic improvement without selected-component restrictions
+
+The [new partial-template proof](UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md)
+gives `|S|-beta_2(G)<=floor(11n/111)` for every minimal two-star-forming S
+in every finite simple bipartite graph with maximum degree at most three.
+There is no connectivity, minimum-degree or selected-component restriction.
+It strengthens the previous equality-only exclusion to a uniform smaller
+coefficient. Its template permits unbalanced sides, core maximum degree two
+and partial witness matchings. Retaining all chosen selected triple leaves
+simultaneously with R minus I0 yields the final nonnegative identity.
+The complete argument is also in the working joint manuscript. Graph sharpness
+remains open. Independent exact-source review and the final manuscript-consistency review
+both returned ACCEPT. The final original checker ran unchanged with assertions,
+exit0 and empty stderr, and reproduced the1070-byte report exactly. A minor
+diagnostic label was corrected; the proof and algorithms required no change.
+See `output/unrestricted-subcubic-gap-review.json` for both exact-source scopes.
+
+The local original checker passes 43,623 minimal-selection checks. It checks
+all minimal sets of 4,973 labelled graphs through order seven and 90 seeded
+graphs at orders eight through twelve, the distinguished minimal set of each
+of 5,200 exhaustively generated partial templates, and all 345 minimal sets
+of the Heawood graph. There are 48 larger template certificate controls. The actual
+report is `output/unrestricted-subcubic-gap-check.json`; finite tests support
+the implementation, while the all-order theorem follows from the written proof.
+
+The separate [integer boundary proof](CUBIC_SELECTED_STAR_SMALL_ORDER_OBSTRUCTION.md)
+excludes every positive cubic specified-star/edge/isolate gap at orders below26.
+Its two-source proof-only audit returned ACCEPT, with the established ledger
+as premise. It does not exclude all n=24d equality cases or settle existence;
+see `output/cubic-selected-star-small-order-review.json`.
+
 ## Completing degrees preserves minimality, but need not preserve a gap
 
 The [regular-completion lemma](REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md)
@@ -1044,7 +1075,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Positive unrounded n/10 equality at maximum degree three | Excluded for every nonempty bipartite graph, without connectivity assumptions: SF_2-beta_2<=ceil(n/10)-1. The forced degree-three intrinsic template has constructive beta_2>=5k+ceil(k/7), so cannot be an equality graph. This removes equality at orders divisible by ten; no smaller general subcubic asymptotic coefficient is claimed |
+| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(11n/111), without connectivity, minimum-degree or selected-component restrictions. The partial-template proof extends the earlier equality obstruction; the optimal coefficient remains open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:

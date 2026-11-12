@@ -1,24 +1,44 @@
 # Current continuation
 
-The [alternating-interface theorem](docs/SUBCUBIC_INTRINSIC_EQUALITY_OBSTRUCTION.md)
-excludes positive unrounded n/10 equality for every nonempty bipartite graph
-of maximum degree at most three, with no connectivity or selected-component
-restriction: `SF_2-beta_2<=ceil(n/10)-1`. The intrinsic equality layers would
-force a two-regular core and a matching interface. In that entire 10k-point
-template, two constructive dissociation certificates give
-`beta_2>=5k+max(delta,ceil(k0/4))>=5k+ceil(k/7)`, where k0 counts the short
-alternating interface cycles and delta is the sum of floor(ell/2) over
-cycles of length4ell. The certificates are alternatives, with no double
-charging. Conditional expectations derandomize the phase construction.
-The standalone checker exhausts 2,162 templates at k=1,2, with independent
-exact optima, and checks larger physical certificates through 2,560 vertices.
-The improvement for arbitrary subcubic graphs removes exact equality at
-orders divisible by ten; it does not lower their universal asymptotic
-coefficient. Code, report and review are under the corresponding
-`subcubic_intrinsic_obstruction` / `subcubic-intrinsic-obstruction` names.
-Independent exact-source review returned ACCEPT, ran the complete unchanged
-checker and reproduced its report byte-for-byte. It also independently
-enumerated all 2^20 subsets of the displayed twenty-vertex control.
+The [unrestricted subcubic theorem](docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md)
+proves `|S|-beta_2(G)<=floor(11n/111)` for every inclusion-minimal
+two-star-forming S in a bipartite graph of maximum degree at most three.
+There is no connectivity, minimum-degree or selected-component hypothesis.
+This lowers the universal coefficient from 1/10. The partial-template lemma
+allows unbalanced sides, a core of maximum degree two and a partial witness
+matching, proving `beta_2>=ceil(18b/7)`. Both the retained R vertices and
+all chosen triple leaves lift its certificates to the original graph.
+The proof ends with an exact nonnegative witness identity; alternative
+constructions are maximized, never added. The coefficient is not asserted
+sharp. The full proof is integrated in `manuscript/starforming-gap.tex`.
+
+The standalone checker `scripts/check_unrestricted_subcubic_gap.py` checks
+43,623 minimal selections. It exhausts all minimal sets in 4,973 small
+labelled graphs and 90 seeded graphs, checks the distinguished minimal set
+in each of 5,200 exact small templates, and checks all 345 minimal sets of
+the Heawood graph. Another 48 larger templates test physical certificates only.
+Independent exact-source review returned ACCEPT. The final follow-up also
+verified the manuscript integration, ran the final original full checker, and
+reproduced its1070-byte report byte-for-byte, with exit0 and empty stderr.
+The diagnostic field selected_cycle was corrected to selected_degree_two;
+only its label changed. Exact versions and review scopes are recorded in
+`output/unrestricted-subcubic-gap-review.json`.
+The report is `output/unrestricted-subcubic-gap-check.json`.
+
+The [small-order cubic obstruction](docs/CUBIC_SELECTED_STAR_SMALL_ORDER_OBSTRUCTION.md)
+shows that a positive gap in the specified selected-star/edge/isolate class
+requires at least26 vertices. Equality in the existing n>=24d certificate
+at n24,d1 would force an odd number of selected vertices in edge components.
+Independent proof-only review returned ACCEPT; its exact premise and scope
+are recorded in `output/cubic-selected-star-small-order-review.json`.
+It does not exclude all n=24d equality cases or decide positive-gap existence.
+
+The preceding [alternating-interface theorem](docs/SUBCUBIC_INTRINSIC_EQUALITY_OBSTRUCTION.md)
+excluded positive unrounded n/10 equality and gave a constructive gain in
+its forced two-regular-core/perfect-interface template. Its independent
+ACCEPT and unchanged-checker execution remain scoped to that earlier source.
+The new partial-template argument extends those constructions and yields a
+uniform improvement for arbitrary subcubic graphs.
 
 The [regular-completion theorem and gap-loss obstruction](docs/REGULAR_COMPLETION_CAN_DESTROY_SELECTED_GAPS.md)
 separate two properties needed when building bounded-degree examples. If all

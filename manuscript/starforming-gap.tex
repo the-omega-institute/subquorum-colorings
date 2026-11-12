@@ -10,7 +10,7 @@
 \newcommand{\NS}{N_S}
 \title{A sharp gap bound for two-star-forming sets in bipartite graphs}
 \author{}
-\date{Working manuscript, 11 November 2026}
+\date{Working manuscript, 12 November 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -21,6 +21,9 @@ difference from the dissociation number is at most $\lfloor n/10\rfloor$
 in every bipartite graph of order $n$. The coefficient is sharp even for
 two-connected graphs of minimum degree two and maximum degree four. The
 proof constructs two dissociation sets from disjoint deletion witnesses.
+For maximum degree at most three we improve the bound uniformly to
+$\lfloor11n/111\rfloor$, with no restriction on the components induced
+by a minimal forming set.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -87,7 +90,8 @@ Section~\ref{sec:bound}. Section~\ref{sec:attainment} supplies the exact
 composition theorem and the attaining graphs. Section~\ref{sec:equality}
 determines the intrinsic equality structure and gives equality graphs
 without a spanning $H$-factor. Section~\ref{sec:degree} proves degree
-refinements and minimum-degree asymptotic sharpness. The appendices treat
+refinements, the unrestricted subcubic improvement, and minimum-degree
+asymptotic sharpness. The appendices treat
 a separate matching question arising from the proposed rectangular-grid
 equalities: how shared compensation and several exterior entrances can
 be made compatible on a full board.
@@ -668,8 +672,168 @@ which proves the second assertion.
 \end{proof}
 
 These estimates are refinements of the universal bound, without a claim
-of sharpness for every fixed degree range. A fixed minimum degree alone
-has a different answer from exact equality.
+of sharpness for every fixed degree range. At maximum degree three,
+the next argument lowers the coefficient even when pendant vertices
+and arbitrary selected components are allowed.
+
+\subsection{An unrestricted subcubic improvement}
+
+\begin{theorem}\label{thm:subcubic}
+If $G$ is bipartite of order $n$ and maximum degree at most three,
+then every inclusion-minimal two-star-forming set $S$ satisfies
+\[
+ |S|-\diss(G)\le\left\lfloor\frac{11n}{111}\right\rfloor.
+\]
+In particular the same bound holds for $\SF(G)-\diss(G)$.
+\end{theorem}
+
+We first prove a dissociation estimate for the induced graph that will
+be extracted from the deletion witnesses. Its sides need not be balanced.
+
+\begin{lemma}\label{lem:partial-template}
+Let a bipartite graph $H$ have disjoint vertex layers $I,C,X$ of orders
+$b,2b,2b$. Each vertex of $I$ has two neighbours in $X$, and these
+neighbour pairs partition $X$. The edges between $C$ and $X$ form a
+perfect matching. All remaining edges form a graph $F=H[C]$ of maximum
+degree at most two and a possibly partial matching $Q=H[X]$.
+Then $\diss(H)\ge\lceil18b/7\rceil$.
+\end{lemma}
+\begin{proof}
+The assertion is immediate for $b=0$. Write $c(x)$ for the owner in $C$
+of $x\in X$. Pair the two neighbours of each $i\in I$ by an auxiliary
+edge, giving a perfect matching $P$ on $X$. These are not edges of $H$:
+they join vertices in the same original bipartition class. The components
+of $P\cup Q$ are alternating cycles of order $4\ell$, or alternating
+paths of order $2h$ beginning and ending with $P$ edges. Let $b_0$ count
+the $P$-pairs in all components of order four, including paths, and
+put $t_0=b-b_0$.
+
+Select all $C_A$ and none of $C_B$. Choose some $P$-pairs $J$ in $X_B$,
+and write $T$ for their union. Keep $T$, omit their centres in $I_A$
+and the vertices of $N_Q(T)$, and keep every other $I_A$ centre.
+From each $I_B$-centred pair keep its centre and one witness outside
+$N_Q(T)$, or just its centre if neither witness remains. Each vertex
+of $T$ is paired only with its owner, and each chosen $X_A$ vertex
+only with its $I_B$ centre. Thus this is a dissociation set, of size
+\[
+ |A(H)|+|J|-z(J),
+\]
+where $z(J)$ counts the opposite $P$-pairs wholly in $N_Q(T)$.
+Indeed, if $|I_A|=r$ and $|I_B|=s$, its base size is $3r+2s$.
+Reversing the sides gives base $2r+3s$; the two bases sum to $5b$.
+
+On a cycle, the quotient on either side's $P$-pairs is an $\ell$-cycle,
+with a loop for $\ell=1$ and parallel edges for $\ell=2$.
+The maximum of $|J|-z(J)$ is $\lfloor\ell/2\rfloor$: a proper selected
+subset contributes its number of cyclic runs, and alternating choices
+attain the maximum. On a path, the quotient on $r'$ same-side pairs is
+a path and the maximum is $\lceil r'/2\rceil$. Opposite endpoint pairs
+with a missing $Q$ edge contribute no penalty; counting selected runs
+proves the upper bound and alternating choices attain it.
+Let $\delta_A,\delta_B$ be the total gains for the two orientations.
+A cycle with $2\ell>2$ pairs contributes
+$2\lfloor\ell/2\rfloor\ge2\ell/3$, and a path with $h$ pairs contributes
+at least $h/2$. Discarding the nonnegative short-component gains gives
+\begin{equation}\label{eq:partial-one-side}
+ \diss(H)\ge\frac{5b}{2}+\frac{\delta_A+\delta_B}{2}
+          \ge\frac{5b}{2}+\frac{t_0}{6}.
+\end{equation}
+
+For a second construction, independently choose one proper two-colouring
+class of each auxiliary component with equal probabilities, and let $Y$
+be their union. Every component has even order, so $|Y|=b$, and $Y$
+contains one endpoint of every $P$ and $Q$ edge.
+Put $R_C=C\setminus\{c(x):x\in Y\}$, of order $b$.
+If $Z_C$ is a dissociation set of $F[R_C]$, then $I\cup Y\cup Z_C$
+is dissociation in $H$.
+
+Let $L_C$ count the vertices of degree at most one in $F[R_C]$.
+For a path of order $m$, $\diss(P_m)=\lceil2m/3\rceil$; its contribution
+to $L_C$ is one for $m=1$ and two otherwise. The cases $m=1,2$
+check directly, and $2m/3\ge m/2+1/2$ for $m\ge3$.
+Every even cycle has dissociation number at least half its order.
+Consequently
+\[
+ \diss(F[R_C])\ge b/2+L_C/4.
+\]
+Each short auxiliary component contains one $P$-pair on each original
+side. Conditional on an owner $v$ from this component remaining in $R_C$,
+exactly one owner on each side in the component remains.
+If $v$ has fewer than two core neighbours, it has residual degree at
+most one. If its two distinct core neighbours lie in its own component,
+they cannot both remain. Otherwise at least one neighbour belongs to an
+independently phased component and is absent with probability one half.
+Thus each such owner has probability at least $1/4$ of remaining with
+residual degree at most one.
+There are $2b_0$ such owners, giving $\mathbb E L_C\ge b_0/2$ and hence
+\begin{equation}\label{eq:partial-phase}
+ \diss(H)\ge5b/2+b_0/8.
+\end{equation}
+This also yields a polynomial construction by conditional expectations:
+each low-degree indicator involves at most three component phase bits.
+The residual paths and cycles can be optimized explicitly.
+
+The two bounds are alternatives. If $M=\max(t_0/6,b_0/8)$, then
+$b=t_0+b_0\le14M$. Taking the maximum of
+\eqref{eq:partial-one-side} and \eqref{eq:partial-phase} gives
+$\diss(H)\ge5b/2+b/14=18b/7$, as required.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:subcubic}]
+Use the witnesses and notation of Section~\ref{sec:bound}, for the fixed
+minimal set $S$, and put $d=|S|-\diss(G)$.
+Let $b_3$ count the isolates with $h(i)=3$; larger values are impossible.
+Set
+\[
+\begin{gathered}
+ m=\min(a,p),\quad e=u-a-2b,\quad r=|R|-a-b,\quad
+ q=n-|S|-p-u,\\
+ \tau=m+b-2d,\qquad \alpha=a-m,\qquad \pi=p-m.
+\end{gathered}
+\]
+All quantities are nonnegative by the disjoint witnesses and the
+exchanges \eqref{eq:first}--\eqref{eq:second}. Each pair witness
+has at most one isolate helper, so $u\ge a+2b+b_3$ and $e-b_3\ge0$.
+Exact counting gives
+\begin{equation}\label{eq:subcubic-ledger}
+ n-10d=r+m+3\alpha+3\pi+2e+q+5\tau.
+\end{equation}
+
+Let $I_0=\{i:h(i)=2\}$ and $b'=b-b_3=|I_0|$.
+Their $2b'$ chosen pair witnesses $X_0$ and distinct owners $C_0$
+induce the graph of Lemma~\ref{lem:partial-template}.
+The selected neighbourhood of each witness is exactly its owner and
+helper. Each owner spends one degree on that witness, leaving core
+degree at most two; each witness spends two degrees on owner and helper,
+leaving interface degree at most one. There are no $I_0$--$C_0$ edges.
+
+Any dissociation set in this template can be enlarged by all of
+$R\setminus I_0$ and by all $p$ chosen triple leaves $\ell_c$.
+The former induce only edges and isolates, meet no $C_0$ vertex,
+and meet no $X_0$ vertex by the exact selected neighbourhood condition.
+A chosen leaf has its unique selected neighbour at its omitted triple
+centre, and so meets neither $C_0$ nor $R\setminus I_0$ nor another
+chosen leaf. It meets no $X_0$ vertex by that same exact neighbourhood
+condition. The two retained sets are disjoint. Therefore
+\[
+ \diss(G)\ge |R|-b'+p+18b'/7.
+\]
+Define the nonnegative slack
+$Z=7\diss(G)-7(|R|-b'+p)-18b'$.
+Substitution of \eqref{eq:partition} and $b=2d-m+\tau$ yields
+\[
+ d+Z=11m+7\alpha+7\pi+3\tau+7e+11b_3.
+\]
+Subtracting this from eleven times \eqref{eq:subcubic-ledger} gives
+\[
+ \boxed{11n-111d
+ =Z+11r+26\alpha+26\pi+4e+11(e-b_3)+11q+52\tau\ge0.}
+\]
+Integrality proves the assertion for $S$, and maximizing over $S$
+proves the bound for $\SF$.
+\end{proof}
+
+A fixed minimum degree alone has a different answer from exact equality.
 
 \begin{theorem}\label{thm:mindegree}
 For every fixed integer $d\ge3$, there are two-connected bipartite graphs with
