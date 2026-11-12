@@ -1,5 +1,25 @@
 # Current continuation
 
+The [square-core construction](docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md)
+proves `beta_2(H)>=3b-floor(2t/3)>=ceil(8b/3)` when the owner core consists
+of P1, P2 and C4 components, with t core squares. An auxiliary simple
+triangle-free graph of maximum degree three encodes simultaneous witness
+conflicts and owner omissions. A polynomial one-for-two exchange supplies
+the compatible independent set; P/R duplicates count as one adjacency.
+
+For a minimal two-star-forming set whose actual extracted core meets that
+condition, the new exact ledger proves `51(|S|-beta_2(G))<=5n`.
+The condition is checked after extraction; it is not hereditary under owner
+deletion. The unrestricted maximum-degree-three bound remains7/71 below,
+and the general-template8b/3 question remains open.
+
+The checker covers1,369 templates, with1,332 unrestricted exact optima and
+61 literal subset comparisons. It checks4,227 minimal selections on879small
+graphs, plus109 nonempty square-template/exterior lifts, including five
+retained-triple-leaf cases. Larger actual certificates reach512helpers.
+The working manuscript has a complete new subsection and28pages.
+Independent review status is recorded in `output/square-core-review.json`.
+
 The [balanced-side theorem](docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md)
 proves `71(|S|-beta_2(G)) <= 7n` for every minimal two-star-forming set
 in every finite simple bipartite maximum-degree-three graph, including the

@@ -1,5 +1,29 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Square owner cores: compatible8b/3 template and conditional5/51 graph bounds
+
+The [complete proof](SQUARE_CORE_TEMPLATE_COMPENSATION.md) proves
+beta_2(H)>=3b-floor(2t/3)>=ceil(8b/3) when the extracted owner core has
+only P1,P2,C4 components. The auxiliary graph uses witness P/Q conflicts
+and transported same-colour opposite-owner pairs R from each C4. It is
+simple, triangle-free, maximumdegree3; one-for-two independent-set exchanges
+are polynomial and give all witness/helper/core choices simultaneously.
+The retained extension then proves the exact nonnegative5n-51d certificate,
+with structural correctionZ>=b'-2t+3ceil(4t/3)-4t. This is a condition on the
+actual extraction, not on an arbitrary prior presentation. Eleven canonical
+selected sets in finite template controls fail the later extraction condition
+and are recorded rather than assigned this bound.
+
+The new complete checker covers1,369templates/1,332exactoptima/61literaloptima,
+4,227minimalsets in879smallgraphs,109nonemptytemplate+exteriorlifts including
+five retainedtriple-leafcases,270generaltrianglefreeauxiliarygraphs and through
+512helpers actualconstructions. It tests applicable and nonapplicable cases
+separately. General-template8b/3 and graphsharpness remainopen. The unrestricted
+7/71 bound is preserved; no new grid or Lean claim. Current28pageworkingmanuscript
+compiledtwice,allpagesrenderedandvisuallyinspected. No email,submission,MacStudio
+or Octoberpaperchange. Fullcollaborationgoal ACTIVE.
+
+
 ## Current unrestricted subcubic bound7/71: balanced witness marginals
 
 The [complete proof](BALANCED_SIDE_AND_SUBCUBIC_BOUND.md) proves71d<=7n for

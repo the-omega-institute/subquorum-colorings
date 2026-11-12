@@ -26,7 +26,11 @@ $\lfloor7n/71\rfloor$, with no restriction on the components induced
 by a minimal forming set. Paired phase-class margins and endpoint-event
 credits strengthen the phase bound. Balanced witness marginals lower the
 witness charge in the one-side construction, whose potential is compared
-with the phase bound.
+with the phase bound. For maximum degree at most three, if a
+maximum-cardinality minimal two-star-forming set admits a fixed disjoint
+witness extraction whose actual owner core consists of four-cycles,
+isolated edges and isolated vertices, a compatible witness construction
+improves the gap bound to $\lfloor5n/51\rfloor$.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1557,6 +1561,100 @@ Division by two proves the theorem, including the empty graph.
 \end{proof}
 
 The sharp coefficient under a maximum-degree-three restriction remains open.
+
+\subsection{A stronger bound for square owner cores}
+
+A different compatible witness choice improves the bound when the extracted
+owner core has a restricted component structure. The auxiliary graph in the
+following proof couples witness conflicts to the choices inside core squares.
+
+\begin{lemma}\label{lem:square-core-template}
+Let $H$ be a partial template with $b$ helpers, and suppose every component
+of its owner core is an isolated vertex, an isolated edge or a four-cycle.
+If there are $t$ core four-cycles, then a dissociation set of size at least
+\[
+ 3b-\left\lfloor\frac{2t}{3}\right\rfloor
+       \ge\left\lceil\frac{8b}{3}\right\rceil
+\]
+can be constructed in polynomial time.
+\end{lemma}
+\begin{proof}
+In each core square pair the two owners on each physical bipartition side,
+and transport these pairs to their witnesses, giving a matching $R$ on
+$4t$ witnesses. Let $J$ be the simple auxiliary graph on these witnesses
+whose edges are those of $R$ and the restrictions of $P$ and $Q$.
+An edge appearing in both $P$ and $R$ gives one adjacency. Each vertex has
+at most one incident edge of each type, so $\Delta(J)\le3$.
+A triangle crossing physical colours would have two $Q$ edges at one vertex,
+impossible since $Q$ is a matching. A monochromatic triangle would lie in
+the union of the two matchings $P$ and $R$, whose components are paths or
+even cycles. Thus $J$ is triangle-free.
+
+For clarity, an elementary local exchange gives an independent set $Y$ in
+any such $J$ with $3|Y|\ge|V(J)|$. Extend an independent set greedily until
+it is maximal. If two outside vertices have the same unique neighbour $y$
+in the set, replace $y$ by those two vertices and extend greedily again.
+The two new vertices are nonadjacent by triangle-freeness, and the set grows.
+At termination let $B=V(J)\setminus Y$, and let $B_1$ be the vertices with
+one neighbour in $Y$. Maximality gives at least one $Y$-neighbour to each
+vertex of $B$, and the exchange condition gives $|B_1|\le|Y|$. Hence
+\[
+ 2|B|\le e(Y,B)+|B_1|\le3|Y|+|Y|=4|Y|.
+\]
+This proves $|Y|\ge\lceil4t/3\rceil$. There are at most $|V(J)|$ exchanges;
+recomputing the neighbourhoods at each step is polynomial.
+
+Independence in $R$ allows the owners of $Y$ to be extended to a set $Z$
+containing exactly one owner from each $R$-pair. Thus $|Z|=2t$.
+Keep all helpers, all owners outside $Z$, and the witnesses in $Y$.
+In each square the retained owners form one edge, while other core
+components are single vertices or edges. A selected witness has its owner
+omitted, has no selected $Q$-mate, and pairs with its helper.
+Independence in $P$ ensures at most one selected witness per helper.
+The resulting set is therefore dissociation, of size at least
+\[
+ b+2b-2t+\left\lceil\frac{4t}{3}\right\rceil
+       =3b-\left\lfloor\frac{2t}{3}\right\rfloor.
+\]
+Since $2t\le b$, the last assertion follows, including $b=0$.
+\end{proof}
+
+\begin{corollary}\label{cor:square-core-gap}
+Let $S$ be a minimal two-star-forming set in a bipartite graph $G$ of
+maximum degree three. If a fixed disjoint witness extraction has an owner
+core with only isolated vertices, isolated edges and four-cycles, then
+\[
+ 51\bigl(|S|-\diss(G)\bigr)\le5|V(G)|.
+\]
+The same bound holds for $\SF-\diss$ if a maximum-cardinality minimal set
+has such an extraction.
+\end{corollary}
+\begin{proof}
+Use the fixed-extraction notation above, with $b'=b-b_3$ template helpers,
+$L=|R|-b'+p$ retained vertices and $t$ extracted core squares. The retained
+vertices have no edges to the template, so Lemma~\ref{lem:square-core-template}
+gives
+\[
+ Z_\square:=3\diss(G)-3L-8b'
+ \ge b'-2t+3\left\lceil\frac{4t}{3}\right\rceil-4t\ge0.
+\]
+The witness identities yield
+\begin{align*}
+ n&=10d+m+r+3(\alpha+\pi)+2e+q+5\tau,\\
+ d+Z_\square&=5m+3(\alpha+\pi)+3e+5b_3+\tau.
+\end{align*}
+Consequently
+\[
+ 5n-51d=Z_\square+5r+12(\alpha+\pi)+24\tau
+                   +7(e-b_3)+2b_3+5q\ge0.
+\]
+Each summand is nonnegative by the extraction and the lemma.
+\end{proof}
+
+The hypothesis concerns the actual extracted core. Removing one owner from
+a four-cycle can leave a three-vertex path, so the hypothesis need not pass
+to a later extraction. The general partial-template bound
+$\diss(H)\ge\lceil8b/3\rceil$ remains an open question.
 
 \subsection{Minimum-degree asymptotic sharpness}
 

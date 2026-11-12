@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T12:48:39.913764+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "0dc84c56-9e69-46c1-a463-29865cc0e5c3",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af5b421-2410-83ec-9302-f35ec92e61a3",
+    "usage_estimated": true
+  },
+  "source_manifest": [
+    {
+      "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+      "bytes": 7359,
+      "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+    },
+    {
+      "path": "develop/subcubic_square_core.py",
+      "bytes": 4968,
+      "sha256": "5e9c446db0ac980053e58aad38d64930f9938ed86eac62b24c5f110e1f67a273"
+    },
+    {
+      "path": "scripts/check_square_core_template.py",
+      "bytes": 10857,
+      "sha256": "1f9488770c436a21d841cf590fd9cd9645f2b087c794136add9b2810e53ed68d"
+    },
+    {
+      "path": "output/square-core-check.json",
+      "bytes": 1364,
+      "sha256": "cbde56a62000caaf3fc6c006aff70b32ec993bc613ccbbb650035d66eb73f345"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 100818,
+      "sha256": "bc6b59f6ad3b0700dfcf499403246da694389bd505de505209ef2e2d9a05f4c2"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    }
+  ],
+  "full_response": "FINAL ACCEPTAll four requested corrections are correctly applied in the attached   square-core-final.json. All nine files pass exact byte-length and SHA-256 verification, and none contains a CR byte. The original supplied checker ran successfully, unchanged and with assertions enabled; its regenerated report is byte-for-byte identical to the attached reference.I found no remaining required correction to this square-core contribution’s proof, stated hypotheses, instrumentation, or novelty wording.1. Resolution of C1–C4CorrectionFindingResultC1: maximizing-set qualificationThe abstract explicitly requires a “maximum-cardinality minimal two-star-forming set” admitting the specified fixed extraction. The corollary and note consistently distinguish the fixed- $S$  conclusion from the  $\\operatorname{SF}_2-\\beta_2$  consequence.ResolvedC2: closing floor commandThe actual TeX bytes contain $\\lfloor5n/51\\rfloor$. There is no embedded CR or broken command at this location.ResolvedC3: genuine  $P/R$  duplicationThe predicate now requires the two owners to share two neighbours inside the owner core, in addition to the common-helper condition. On the permitted core family, this tests an actual  $P\\cap R$  edge. The fresh run reports 334.ResolvedC4: raw-byte manifest integrityEncoding each supplied content string as UTF-8, without newline normalization, reproduces every declared byte count and SHA-256 hash, including the manuscript.ResolvedWhy the revised C3 predicate is sufficientThe added condition is:Pythonlen(g[m['owner'][v]] & g[m['owner'][u]] & m['C']) == 2Within the prescribed family, every owner-core component is  $P_1$ ,  $P_2$ , or  $C_4$ . Two distinct owners have two common core neighbours if and only if they are the same-side pair of one actual  $C_4$ . Thus this condition establishes membership in  $R$ . The existing common-helper test establishes membership in  $P$ .Consequently, the corrected feature counts tested template instances containing at least one actual  $P/R$  duplicate. It is not a count of duplicate edges or nonisomorphic graphs.The earlier two-square countermodel is now excluded: owners in different square components have no common core neighbours. Genuine duplicates within one square remain detected. This is a source-level justification of the predicate; the numerical value 334 was also reproduced by the original checker.2. Exact byte and hash integrityI preserved separate reference copies before execution and extracted each file using its supplied UTF-8 bytes. The following checks passed both before and after the checker ran:Snapshot entryBytesDeclared SHA-256CR bytesdocs/SQUARE_CORE_TEMPLATE_COMPENSATION.md7,359Matches0develop/subcubic_square_core.py4,968Matches0scripts/check_square_core_template.py10,857Matches0output/square-core-check.json1,364Matches0manuscript/starforming-gap.tex100,818Matches0docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md10,302Matches0docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md7,439Matches0develop/subcubic_partial_template.py5,720Matches0develop/subcubic_intrinsic_obstruction.py6,461Matches0The nine file contents total 155,288 bytes.For exact identification, the relevant SHA-256 values are:Plain textAttached square-core-final.json container — 162,612 bytes\n3de18e5163f020dcca661294b8ce31a4099626ac451836a576011cb98284a8ef\n\nmanuscript/starforming-gap.tex — 100,818 bytes\nbc6b59f6ad3b0700dfcf499403246da694389bd505de505209ef2e2d9a05f4c2\n\nscripts/check_square_core_template.py — 10,857 bytes\n1f9488770c436a21d841cf590fd9cd9645f2b087c794136add9b2810e53ed68d\n\noutput/square-core-check.json — 1,364 bytes\ncbde56a62000caaf3fc6c006aff70b32ec993bc613ccbbb650035d66eb73f345After execution, all nine extracted files still matched the attached contents exactly, including the regenerated report.There is also a precise consistency check against the earlier review’s report hash: replacing only \"P_R_duplicate\": 334 by \"P_R_duplicate\": 381 in the final report, in memory, reproduces the earlier stated hash:Plain textc496d27c76173c0349736602afac920897a8b98c5976382c9afc6e003c84b85fThus the corrected report agrees with the earlier report fingerprint after reversing exactly that statistic change.3. Exactly what executedFrom the extracted snapshot root, I ran the supplied checker once, without editing it or its supporting modules:Bashenv -u PYTHONOPTIMIZE python3 -B scripts/check_square_core_template.pyExecution details:Interpreter: Python 3.12.14.Assertions: enabled. PYTHONOPTIMIZE was removed, no optimization flag was supplied, and the checker’s own not __debug__ guard remained intact.Process result: exit code 0.Report status: PASS.Fresh report versus preserved attached reference: complete byte-for-byte equality, not merely parsed JSON equality or agreement of an internal digest.Fresh and reference report sizes: both 1,364 bytes.Fresh and reference report SHA-256: both cbde56a62000caaf3fc6c006aff70b32ec993bc613ccbbb650035d66eb73f345.The internal construction digest remains:Plain text7fb929a26add1fb1677a4fe4f84af626d4eb3420d961124fcb6c9f63e12d38eeThat is the same construction digest recorded in the earlier review.The original checker was the only mathematical test harness executed. Other execution consisted of extraction, source inspection, byte/hash verification, and report comparison. I did not run an alternative graph harness, Lean, or a TeX compilation.Here, “unchanged” means that the FINAL9 checker and supplied supporting files were executed without edits. The earlier complete source snapshot was not supplied for a source-by-source historical diff.Coverage confirmed by this runThe source and fresh report agree on the following scopes; several rows overlap.FamilyScopeCountExhaustive prescribed templates $b=0,1,2,3$ , every helper-colour split, every permitted owner core, every partial cross-colour  $Q$ -matching1,197Seeded templates $b=4,5,6,8,16,64,256,512$ 172All template constructionsExhaustive and seeded families combined1,369Exact unrestricted dissociation optimaExhaustive templates plus the 135 seeded templates at  $b=4,5,6$ 1,332Literal all-subset template optimaExhaustive templates with  $b\\le2$ 61Small graph controlsPrescribed fixed bipartitions through  $n=6$ , maximum degree at most three879 graphs; 4,227 minimal selectionsNonempty square template with retained exteriorFixed square seed in disjoint union with sampled tails109Independent-set subroutine controlsSeeded triangle-free subcubic graphs of orders  $4,\\ldots,12$ 270The fresh report also confirms:1,321 successful canonical-extraction lifts and 11 nonapplicable canonical extractions.337 canonical lifts with a nonempty extracted template.334 template instances containing an actual  $P/R$  duplicate.46 exchanges in template independent-set calls and 73 in the separate subroutine controls.Rejection of two invalid auxiliary graphs and one  $P_3$  owner core.4. Proof and claim consistencyThe corrections preserve the construction and its stated mathematical consequences. The load-bearing arguments in the square-core note, lem:square-core-template, cor:square-core-gap, and the implementation remain consistent.The compatible template constructionOn the  $4t$  witnesses belonging to square owners,  $P$  and  $R$  preserve physical colour, while  $Q$  reverses it. Each is a matching. Collapsing a  $P/R$  duplicate therefore leaves a simple graph  $J$  with maximum degree at most three.The triangle-freeness proof remains valid: a triangle using both physical colours would require two  $Q$ -edges at one vertex, while a monochromatic triangle would lie in the union of the two matchings  $P$  and  $R$ . Neither is possible.The one-for-two exchange routine produces an independent set satisfying\n$$|Y|\\ge \\left\\lceil\\frac{4t}{3}\\right\\rceil.$$\nExtending its owners to a deletion set  $Z_C$  containing exactly one owner from each same-side square pair gives  $|Z_C|=2t$ . The actual physical set\n$$D_H=I\\cup(C\\setminus Z_C)\\cup Y$$\nis a dissociation set: each square retains one owner edge; each selected witness has its owner omitted and no selected  $Q$ -mate; and  $P$ -independence permits at most one selected witness per helper. Consequently,\n$$|D_H|\n\\ge 3b-\\left\\lfloor\\frac{2t}{3}\\right\\rfloor\n\\ge \\left\\lceil\\frac{8b}{3}\\right\\rceil.$$\nPartial  $Q$ , unbalanced physical bipartitions, duplicate  $P/R$  edges, and the empty template cause no exception.Exterior compatibility and structural surplusThe prerequisite extraction argument proves that the retained exterior set is anticomplete to all template vertices. It can therefore be adjoined to the square-core set. This establishes compatibility for the written all-size theorem, beyond the finite tested examples.With  $b'=b-b_3$ , retained-set size  $L$ , and  $t$  extracted squares, the lift yields\n$$\\beta_2(G)\\ge L+3b'-\\left\\lfloor\\frac{2t}{3}\\right\\rfloor.$$\nHence\n$$\\begin{aligned}\nZ_\\square\n&:=3\\beta_2(G)-3L-8b'\\\\\n&\\ge b'-3\\left\\lfloor\\frac{2t}{3}\\right\\rfloor\\\\\n&=b'-2t+\\bigl((-4t)\\bmod3\\bigr)\n\\ge0.\n\\end{aligned}$$\nThis agrees exactly with the implementation’s integer structural_surplus.For  $d=|S|-\\beta_2(G)$ , the fixed-extraction count identities still give\n$$\\boxed{\n5n-51d\n=\nZ_\\square+5r+12(\\alpha+\\pi)+24\\tau\n+7(e-b_3)+2b_3+5q.\n}$$\nEvery summand has the established nonnegative sign. No assumption  $d\\ge0$  is needed. Therefore the conclusion is correctly stated as\n$$|S|-\\beta_2(G)\\le\n\\left\\lfloor\\frac{5n}{51}\\right\\rfloor$$\nfor the qualifying fixed  $S$  and extraction, and as\n$$\\operatorname{SF}_2(G)-\\beta_2(G)\\le\n\\left\\lfloor\\frac{5n}{51}\\right\\rfloor$$\nwhen such an extraction exists for a maximum-cardinality minimal forming set.5. Novelty and retained scopeThe added prose correctly acknowledges that  $5/51$  already holds for acyclic extracted cores in the manuscript’s earlier thm:core-girth. The contribution is properly identified as:the compatible construction for owner cores with components  $P_1,P_2,C_4$ ;its explicit integer structural surplus;an additional sufficient condition for the  $5/51$  gap bound.The hypothesis concerns the actual extracted core. It does not follow merely from a larger square-core presentation, because removing an owner can leave a  $P_3$ . The supplied text preserves this distinction.The computational limits also remain as previously stated. The 4,227 small-graph minimal-selection controls have no nonempty extracted template. The 109 targeted exterior controls provide nonempty templates and retained exterior simultaneously, including five with retained triple leaves, but use disjoint unions. They do not test connected attachments. The written anticompleteness proof supplies the general compatibility argument. The 37 larger seeded templates check the construction without computing exact optima.The unrestricted partial-template  $\\lceil8b/3\\rceil$  assertion remains open in the supplied material. This acceptance establishes the corrected square-core contribution and its conditional corollary, with no sharpness, attainment, global partial-template, or new Lean claim.square-core-final.jsonCodeOpen file",
+  "independent_execution": {
+    "verdict": "ACCEPT",
+    "full_response_read": true,
+    "final_corrections_C1_C4_verified": true,
+    "exact9files_byte_and_hash_check": true,
+    "original_checker_actually_run": true,
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "independent_python": "3.12.14",
+    "exit_code": 0,
+    "report_bytes": 1364,
+    "report_sha256": "cbde56a62000caaf3fc6c006aff70b32ec993bc613ccbbb650035d66eb73f345",
+    "complete_byte_for_byte_report_comparison": true,
+    "mathematical_alternative_harness_run": false,
+    "manuscript_compiled_by_reviewer": false,
+    "Lean_run": false,
+    "coverage_limits": [
+      "Smallgraph4227minimalsets have emptytemplates",
+      "109targetednonemptytemplate+retainedcontrols aredisjointunions including5tripleleaves",
+      "Larger37models have noexactoptimumclaim"
+    ],
+    "accepted_source_manifest_sha256": "2698882da720ec3d836ba0e28e0143c0eb711afe26bc1ef392c5364247818d43"
+  },
+  "local_execution": {
+    "command": "python3 -B scripts/check_square_core_template.py",
+    "exit_code": 0,
+    "elapsed_seconds": 7.258900125045329,
+    "stderr_empty": true,
+    "report_sha256": "cbde56a62000caaf3fc6c006aff70b32ec993bc613ccbbb650035d66eb73f345",
+    "correction": "P_R_duplicate feature now explicitly requires both witness owners to share the two neighbours of the same C4, in addition to being a P pair; previous feature also counted P edges between different squares. No construction/proof change."
+  },
+  "mathematical_claims": [
+    "P1/P2/C4 core template beta>=3b-floor2t/3>=ceil8b/3",
+    "simple trianglefree maxdegree3 auxiliary graph with P/Rduplicates merged",
+    "polynomial one-for-two independent-set construction with physical owner/helper compatibility",
+    "actual retained extension and structural Z surplus",
+    "conditional51d<=5n with exact nonnegative seven-term identity"
+  ],
+  "limitations": [
+    "General template8b/3 remainsopen; unrestricted graph bound7/71 unchanged",
+    "5/51 coefficient previously known for acyclic cores; new compatible construction,structuralsurplus and additional sufficientcondition",
+    "Core condition applies to actual extraction and may fail after owner deletion",
+    "Larger model controls check actual sets,not unrestricted exactoptima",
+    "879smallgraph allminimalcontrols have emptyextractions;109targetednonemptyexteriorlifts aredisjointunions",
+    "No Lean, email,submission or Octoberpaperchange"
+  ],
+  "initial_audit": {
+    "oracle": {
+      "task_id": "d62a8410-25e1-4e86-b149-039908c5719f",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5b182-495c-83ec-8966-c31c436d7456",
+      "usage_estimated": true
+    },
+    "source_manifest": [
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7135,
+        "sha256": "7c12d779927ac89d31e22d88a6f08b92a28c43de6c484fbaa97a71983d936065"
+      },
+      {
+        "path": "develop/subcubic_square_core.py",
+        "bytes": 4968,
+        "sha256": "5e9c446db0ac980053e58aad38d64930f9938ed86eac62b24c5f110e1f67a273"
+      },
+      {
+        "path": "scripts/check_square_core_template.py",
+        "bytes": 10792,
+        "sha256": "d8825380a14b2719586f00b6d4abee4aaca4b8483b2440f5a4e7222b0e412ffd"
+      },
+      {
+        "path": "output/square-core-check.json",
+        "bytes": 1364,
+        "sha256": "c496d27c76173c0349736602afac920897a8b98c5976382c9afc6e003c84b85f"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 100714,
+        "sha256": "1b7afc2afc38dcfd0cc1011c9e40b50f5696f174a3756606539c08e666ec5a0e"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      }
+    ],
+    "full_response": "Verdict: NAMED CORRECTIONS — C1–C4The square-core construction and the conditional  $5/51$  corollary are mathematically sound under the stated partial-template and fixed-extraction hypotheses. The auxiliary triangle-freeness argument, local-exchange lemma, physical dissociation set, retained exterior compatibility, integer surplus, and seven-term identity all check out.The exact snapshot needs four corrections: the abstract must state the maximizing-set qualification; its closing floor notation is malformed; the checker’s P_R_duplicate statistic does not test what its name claims; and the manuscript’s manifest hash does not match the supplied content.Execution succeeded: I ran the original checker unchanged, once, with assertions enabled. It returned PASS, and its fresh report is byte-for-byte identical to the preserved attached report.1. Required correctionsC1. Make the abstract’s quantifier match the corollaryThe new sentence in the manuscript says:If a fixed witness extraction has an owner core consisting of four-cycles, edges and isolated vertices …In context, the abstract is discussing\n$$\\operatorname{SF}_2(G)-\\beta_2(G).$$\nFor that conclusion, the extraction must come from a maximum-cardinality minimal two-star-forming set. An extraction from an arbitrary minimal  $S$  proves the bound for  $|S|-\\beta_2(G)$ .This qualification has substantive mathematical content. Every maximum dissociation set  $D$  is itself a minimal two-star-forming set:For  $x\\notin D$ , maximality of  $D$  means  $D\\cup\\{x\\}$  contains a two-leaf star. Since  $G[D]$  has maximum degree at most one, that star contains  $x$ .After deleting any  $v\\in D$ , the newly outside vertex  $v$  cannot be covered: the relevant induced graph is  $G[D]$ , which contains no two-leaf star.For this minimal forming set  $D$ , all selected components have order at most two. Its extracted owner core is therefore empty and satisfies the square-core condition vacuously. Thus, existence of some minimal forming set with a qualifying extraction holds in every graph. It does not establish the stronger bound for the upper parameter.The formal corollary cor:square-core-gap already states the distinction correctly. The documentation also states it correctly under “Lifting to a minimal two-star-forming set.”A precise replacement for the abstract sentence is:LaTeXFor maximum degree at most three, if a maximum-cardinality minimal\ntwo-star-forming set admits a fixed disjoint witness extraction whose\nactual owner core consists of four-cycles, isolated edges and isolated\nvertices, a compatible witness construction improves the gap bound to\n$\\lfloor5n/51\\rfloor$.For maximum degree at most three, if a maximum-cardinality minimal\ntwo-star-forming set admits a fixed disjoint witness extraction whose\nactual owner core consists of four-cycles, isolated edges and isolated\nvertices, a compatible witness construction improves the gap bound to\n$\\lfloor5n/51\\rfloor$.C2. Repair the abstract’s closing floor notationThe supplied manuscript literally contains:LaTeX$\\lfloor5n/51\nfloor$.$\\lfloor5n/51\nfloor$.Replace this with:LaTeX$\\lfloor5n/51\\rfloor$.$\\lfloor5n/51\\rfloor$.This is a defect in the actual supplied source. I am not claiming that it necessarily prevents TeX compilation; it fails to typeset the stated integer floor correctly.C3. Correct or relabel P_R_duplicateIn   the checker, the feature predicate is:PythonFEATURES['P_R_duplicate'] += any(\n    m['owner'][v] in m['C'] and\n    any(g[i] & m['X'] == {v, u} for i in m['I'])\n    for v in J for u in J[v]\n    if m['graph_colour'][v] == m['graph_colour'][u]\n)This detects a retained  $P$ -edge in the auxiliary graph. It never establishes that the edge also belongs to  $R$ . The owner-membership test is automatic for these vertices, and every restricted  $P$ -edge is already an auxiliary edge with equal physical colours.Here is a concrete valid model demonstrating the distinction. Use the checker’s vertex convention with  $b=4$ ,  $r=2$ ,  $Q=\\varnothing$ , and two core squares\n$$\\{12,14,16,18\\},\\qquad \\{13,15,17,19\\},$$\neach inducing the appropriate  $K_{2,2}$ . Then\n$$\\begin{aligned}\nP&=\\{\\{4,5\\},\\{6,7\\},\\{8,9\\},\\{10,11\\}\\},\\\\\nR&=\\{\\{4,6\\},\\{5,7\\},\\{8,10\\},\\{9,11\\}\\}.\n\\end{aligned}$$\nThere is no  $P/R$  duplicate, yet the feature predicate is true.Consequently, P_R_duplicate: 381 is not a verified count of instances containing duplicate  $P/R$  edges. Either:test membership in both actual matchings; orrelabel the statistic to describe a nonempty restriction of  $P$ .An equivalent correct test would require the two witnesses to share a helper and their owners to belong to the same same-side pair of the same core square.This instrumentation defect does not invalidate duplicate-edge handling in the construction. The implementation stores adjacency in sets and correctly collapses duplicates. Actual duplicate cases are also present in the exhaustive run: for  $b=2,r=1$  with the owner core  $C_4$ , both  $P$ -edges equal the corresponding  $R$ -edges, for all seven partial  $Q$ -matchings.C4. Repair the manuscript’s snapshot integrity metadataAll nine supplied contents have the declared byte lengths. Eight have the declared SHA-256 hashes. The manuscript does not.For its supplied UTF-8 content:Plain textActual:\n844be3148c1621040b1e291fe864f5eb99d313ed5aff49cc75dcec8ed0e89152\n\nDeclared:\n1b7afc2afc38dcfd0cc1011c9e40b50f5696f174a3756606539c08e666ec5a0eI localized the discrepancy: changing the single LF between 5n/51 and floor to a CR, in memory, reproduces the declared hash exactly. This is consistent with a newline-normalization difference at the already malformed closing-floor command.The correction is to repair the TeX command and regenerate the manifest’s byte count and hash from the final bytes. My review applies to the supplied content; I did not silently substitute the CR variant or change any source file.2. Mathematical auditThe proof and implementation agree on the substantive construction. The principal sources are the    square-core note, lem:square-core-template and cor:square-core-gap in the manuscript, and   the construction module.2.1 The hypotheses are sufficient and are actually usedThe template has disjoint layers  $I,X,C$  of sizes  $b,2b,2b$ , with:the two witness-neighbours of each helper partitioning  $X$ ;a bijection  $c:X\\to C$ , whose edges are precisely the witness–owner edges;a possibly partial matching  $Q$  inside  $X$ ;an owner core  $F=H[C]$ ;no other template edges.For the new lemma, every component of  $F$  is  $P_1$ ,  $P_2$ , or  $C_4$ .No balance of the physical bipartition is needed. No completion of  $Q$  is needed. The auxiliary graph is not assumed to have the physical bipartition as a proper colouring.In the lift, the helpers are\n$$I_0=\\{i:h(i)=2\\},\\qquad b'=|I_0|=b-b_3.$$\nHere  $h(i)=2$  counts allocated pair witnesses. A helper may still have a third neighbour elsewhere in the full graph. Its degree inside the extracted template is exactly two. The proof uses this internal property correctly.2.2 Auxiliary triangle-freeness survives duplicates and partial  $Q$ Let  $U$  be the  $4t$  witnesses whose owners lie in square components.The three edge types have the required properties: $P|_U$  is a matching joining equal physical colours. $R$  is a matching joining equal physical colours. $Q|_U$  is a matching joining opposite physical colours.After collapsing a  $P/R$  duplicate to one adjacency, every vertex has at most three distinct neighbours.A triangle meeting both physical colours would have a vertex whose two triangle neighbours have the opposite colour. Both incident edges would have to be  $Q$ -edges, contradicting the matching property.A monochromatic triangle would lie in  $P\\cup R$ . The simple union of two matchings consists of paths and even cycles, so such a triangle is impossible. A duplicate edge causes no exception: it consumes the matching incidence at both endpoints and is represented by one edge.Partial  $Q$  causes no problem. In particular, a  $Q$ -edge from a square-owned witness to a nonsquare-owned witness may be omitted from  $J$ , because this construction selects witnesses only from  $U$ .Result:  $J$  is a finite simple triangle-free graph with  $\\Delta(J)\\le3$ , exactly as required.2.3 The one-for-two independent-set lemma is correct and polynomialStart from an independent set and greedily make it maximal. Suppose two outside vertices  $a,b$  have the same unique selected neighbour  $y$ .They cannot be adjacent, because  $a,y,b$  would form a triangle. Therefore\n$$(Y\\setminus\\{y\\})\\cup\\{a,b\\}$$\nis independent and has one more vertex than  $Y$ . Subsequent greedy extension preserves that increase. At most  $|V(J)|$  exchanges occur.At termination, put  $B=V(J)\\setminus Y$ , and let  $B_1$  consist of outside vertices with exactly one neighbour in  $Y$ . Maximality gives every vertex of  $B$  a selected neighbour, while exchange stability gives\n$$|B_1|\\le |Y|.$$\nCounting crossing edges gives\n$$e(Y,B)\\ge |B_1|+2(|B|-|B_1|)\n          =2|B|-|B_1|.$$\nSince  $\\Delta(J)\\le3$ ,\n$$2|B|\\le e(Y,B)+|B_1|\\le3|Y|+|Y|.$$\nThus\n$$|V(J)|\\le3|Y|,\n\\qquad\n|Y|\\ge\\left\\lceil\\frac{4t}{3}\\right\\rceil.$$\nThe implementation follows these operations. Repeated sorting and bounded-degree scans give a straightforward polynomial implementation;  $O(N^2\\log N)$  is a safe elementary bound for this local-exchange routine on  $N$  vertices. Neither the proof nor the routine needs an optimum independent set.The empty auxiliary graph is handled correctly.2.4 The physical template set is compatibleTo avoid confusing the owner-deletion set with the later numerical slack, call the deleted owners  $Z_C$ .Because  $Y$  is  $R$ -independent,  $c(Y)$  can be extended to  $Z_C$  containing exactly one owner from each same-side square pair. Hence\n$$|Z_C|=2t.$$\nConsider\n$$D_H=I\\cup(C\\setminus Z_C)\\cup Y.$$\nEvery possible selected incidence is controlled:Each square retains one owner on each physical side, inducing exactly one edge.Every nonsquare owner component is an isolated vertex or an isolated edge.Every selected witness has its owner omitted. $Q$ -independence excludes a selected witness–witness edge.Each selected witness retains its helper. $P$ -independence permits at most one selected witness at each helper.The template definition excludes other incidences.Therefore  $G[D_H]$  has maximum degree at most one, and\n$$\\begin{aligned}\n|D_H|\n&=b+(2b-2t)+|Y|\\\\\n&\\ge3b-2t+\\left\\lceil\\frac{4t}{3}\\right\\rceil\\\\\n&=3b-\\left\\lfloor\\frac{2t}{3}\\right\\rfloor.\n\\end{aligned}$$\nSince  $2t\\le b$ ,\n$$3b-\\left\\lfloor\\frac{2t}{3}\\right\\rfloor\n\\ge3b-\\left\\lfloor\\frac b3\\right\\rfloor\n=\\left\\lceil\\frac{8b}{3}\\right\\rceil.$$\nThere is no double use of a helper, owner, or square pair.2.5 The retained exterior vertices are compatible with the entire templateThe accepted extraction supplies\n$$T=(R\\setminus I_0)\\cup\\{\\ell_c:\\text{chosen triples}\\},\n\\qquad\n|T|=L=|R|-b'+p.$$\nThe prerequisite argument proves the stronger statement\n$$E_G\\bigl(T,I_0\\cup C_0\\cup X_0\\bigr)=\\varnothing.$$\nIndeed:Vertices of  $R\\setminus I_0$  belong to selected components of order one or two, so they have no selected edges to the extracted owners or helpers.Each retained triple leaf has its only selected neighbour at its omitted triple centre.Every extracted witness  $x\\in X_0$  has selected neighbourhood exactly its owner and helper. It therefore has no neighbour in  $T$ .The retained set itself induces only edges and isolates. It can be united with any dissociation set in the template, including the new square-core set.The code checks anticompleteness to the returned inner set and checks dissociation of the union. The proof establishes anticompleteness to all template vertices. Edges from template vertices to omitted exterior vertices do not affect the induced graph on the constructed set.2.6 The integer structural surplus is correctThe compatible lift gives\n$$\\beta_2(G)\\ge L+3b'-\\left\\lfloor\\frac{2t}{3}\\right\\rfloor.$$\nConsequently,\n$$Z_\\square:=3\\beta_2(G)-3L-8b'\n\\ge b'-3\\left\\lfloor\\frac{2t}{3}\\right\\rfloor.$$\nThis is exactly the displayed structural correction:\n$$\\begin{aligned}\nb'-3\\left\\lfloor\\frac{2t}{3}\\right\\rfloor\n&=b'-2t+\n  \\left(3\\left\\lceil\\frac{4t}{3}\\right\\rceil-4t\\right)\\\\\n&=b'-2t+((-4t)\\bmod3).\n\\end{aligned}$$\nThe remainder is  $0,2,1$  for  $t\\equiv0,1,2\\pmod3$ , respectively. Both terms are nonnegative because  $2t\\le b'$ .This matches the code’s structural_surplus expression exactly.2.7 The seven-term identity is exactWrite  $R_0=|R|$ . The disjoint witness counts give\n$$|S|=R_0+2p+u,\\qquad\nn=R_0+3p+2u+q.$$\nUsing\n$$\\begin{gathered}\na=m+\\alpha,\\quad p=m+\\pi,\\quad\nu=a+2b+e,\\quad R_0=a+b+r,\\\\\nb=2d-m+\\tau,\\qquad d=|S|-\\beta_2(G),\n\\end{gathered}$$\none obtains\n$$n=10d+m+r+3(\\alpha+\\pi)+2e+q+5\\tau.$$\nSeparately,\n$$\\begin{aligned}\nZ_\\square\n&=3(|S|-d)-3(R_0-b'+p)-8b'\\\\\n&=3p+3u-3d-5(b-b_3),\n\\end{aligned}$$\nand therefore\n$$d+Z_\\square\n=5m+3(\\alpha+\\pi)+3e+5b_3+\\tau.$$\nEliminating  $m$  gives exactly\n$$\\boxed{\n5n-51d\n=\nZ_\\square+5r+12(\\alpha+\\pi)+24\\tau\n+7(e-b_3)+2b_3+5q.\n}$$\nAll seven terms have established nonnegative signs:TermReason $Z_\\square$ Compatible square-core construction $r$ Remaining selected-resource count $\\alpha,\\pi$  $m=\\min(a,p)$  $\\tau$ Accepted inequalities  $2d\\le a+b$  and  $2d\\le p+b$  $e-b_3$  $u\\ge a+2b+b_3$  $b_3$ Count of three-witness helpers $q$ Unallocated outside-vertex countThe code’s terms array agrees. No assumption  $d\\ge0$  is needed.Thus the fixed- $S$  conclusion follows:\n$$|S|-\\beta_2(G)\\le\\left\\lfloor\\frac{5n}{51}\\right\\rfloor.$$\nThe upper-parameter conclusion follows under the maximizing-set qualification in C1.3. Exactly what ran and what it establishesI extracted all nine path/`content` entries, preserving their relative paths and supplied UTF-8 content. Before running the checker, I preserved separate reference copies, including the attached report.From the extracted root, I ran:Bashenv -u PYTHONOPTIMIZE python3 -B scripts/check_square_core_template.pyThe interpreter was Python 3.12.14. Removing PYTHONOPTIMIZE ensured optimization did not disable assertions; the checker also explicitly rejects not __debug__.The process exited successfully and returned PASS. The fresh   report and preserved reference are both 1,364 bytes, with SHA-256:Plain textc496d27c76173c0349736602afac920897a8b98c5976382c9afc6e003c84b85fTheir internal construction digest is:Plain text7fb929a26add1fb1677a4fe4f84af626d4eb3420d961124fcb6c9f63e12d38eeThe comparison used the complete bytes, not parsed JSON equality or only the internal digest. A post-run check confirmed that all nine extracted contents still match the supplied snapshot contents, including the regenerated report.The original checker was the only mathematical test harness executed. Other execution was extraction, source inspection, and byte/hash verification. I did not modify the checker, run an alternative graph harness, run Lean, or compile the manuscript.Coverage confirmed from the source and fresh reportThe rows below overlap where one family receives several checks.FamilyActual scopeCountExhaustive prescribed templates $b=0,1,2,3$ ; every helper-colour split; every permitted  $P_1/P_2/C_4$  owner core; every partial cross-colour  $Q$ -matching1,197Seeded templates $b=4,5,6,8,16,64,256,512$ 172All template constructionsExhaustive and seeded families combined1,369Exact unrestricted dissociation optimaAll 1,197 exhaustive templates plus 135 seeded templates at  $b=4,5,6$ 1,332Literal all-subset template optimaAll exhaustive templates with  $b\\le2$ 61Larger constructions without exact optimaSeeded  $b=8,16,64,256,512$ , reaching 2,560 vertices37Small unrestricted graph controlsAll graphs in the prescribed fixed bipartitions through  $n=6$ , filtered by maximum degree three879Minimal selections in those small graphsEvery minimal  $S$  in each graph4,227Nonempty square template plus retained exteriorFixed ten-vertex square seed, in disjoint union with sampled tails of orders  $1,\\ldots,6$ 109Independent-set subroutine controlsSeeded triangle-free subcubic graphs of orders  $4,\\ldots,12$ 270The exact optimizer is genuinely unrestricted over dissociation subsets of the physical graph. Its recurrence covers omitting a chosen vertex, retaining it isolated, or retaining it paired with each possible neighbour. It does not optimize only over sets produced by the proposed construction. The literal subset checks provide an additional independent crosscheck on the stated small cases.The report also records:1,321 successful canonical-extraction lifts and 11 nonapplicable canonical extractions;337 canonical lifts with a nonempty extracted template;46 exchanges in the template independent-set calls and 73 in the separate subroutine controls;rejection of two invalid auxiliary graphs and one  $P_3$  owner core.Limits that should remain explicit“All partial templates” means all templates in the prescribed square-core family. The enumeration filters out other owner-core components.The 4,227 all-minimal-selection controls havePlain textlift_nonempty_template: 0so these tests exercise the ledger and degenerate lift, without testing a nonempty square extraction.The 109 targeted controls supply a nonempty square extraction and a nonempty retained exterior simultaneously; five include retained triple leaves. They are disjoint-union controls. They do not exercise a connected attachment between the seed and tail. This limits their computational coverage; the written extraction argument supplies the general compatibility proof.The larger seeded constructions check actual sets, minimality, and the structural guarantee. Exact optimality is checked only in the smaller families.Finally, the fresh report reproduces P_R_duplicate: 381, but C3 prevents interpreting that number as a duplicate-edge coverage count.4. Scope and noveltyThe formal new subsection correctly limits the hypothesis to this actual extracted owner core. The warning about deleting one owner from a square and leaving  $P_3$  is correct and necessary. A square-core presentation elsewhere does not transfer the condition to a later extraction. The checker’s 11 nonapplicable canonical extractions are consistent with that distinction.The general partial-template assertion\n$$\\beta_2(H)\\ge\\left\\lceil\\frac{8b}{3}\\right\\rceil$$\nremains open in the supplied text. The proof establishes the  $P_1/P_2/C_4$  case.The novelty wording in the documentation is appropriately narrow: it calls the independent-set lemma elementary and identifies the contribution as the compatible template reduction and its fixed-extraction consequence. There is also an internal attribution point worth preserving: the coefficient  $5/51$  already appears earlier in the manuscript for acyclic extracted cores, in thm:core-girth. Its ledger uses\n$$2e+5(e-b_3)=7(e-b_3)+2b_3,$$\nthe same algebraic contribution appearing here.Accordingly, the new mathematical content is the square-core compatible construction, its explicit integer surplus, and the resulting additional sufficient condition for the  $5/51$  bound. The existing witness decomposition, general independence fact, and coefficient itself should retain their existing status. No sharpness, attainment, global  $8b/3$  theorem, or worldwide priority conclusion follows from this audit.starforming-gap.texFileOpen filecheck_square_core_template.pyCodeOpen file   SQUARE_CORE_TEMPLATE_COMPENSATION.mdDocumentOpen file2 more",
+    "execution_and_corrections": {
+      "verdict": "NAMED CORRECTIONS C1-C4",
+      "mathematics_valid_subject_to_abstract_scope_correction": true,
+      "full_response_read": true,
+      "original_checker_actually_run": true,
+      "assertions_enabled": true,
+      "independent_python": "3.12.14",
+      "report_bytes": 1364,
+      "report_sha256": "c496d27c76173c0349736602afac920897a8b98c5976382c9afc6e003c84b85f",
+      "byte_for_byte_comparison": true,
+      "constructed_digest": "7fb929a26add1fb1677a4fe4f84af626d4eb3420d961124fcb6c9f63e12d38ee",
+      "reviewer_did_not_compile_manuscript": true,
+      "corrections": [
+        "C1 explicitly maximizing minimal S for SF gap in abstract",
+        "C2 raw correct closing floor command",
+        "C3 actual same-square condition for P/R statistic, localcorrected381to334",
+        "C4 exact bytes rather than normalized text for snapshot integrity"
+      ],
+      "limits": [
+        "4227allminimalcontrols have emptyextraction;109nonemptyexteriorcontrols aredisjointunions",
+        "5/51coefficientalreadyexistsforacycliccores;newcompatibleconstructionandadditionalcondition"
+      ]
+    }
+  },
+  "applied_corrections": [
+    "Abstract requires maximum-cardinality minimalS for upperparameter",
+    "Correct raw closingfloor command",
+    "P/Rduplicate statistic actuallysameC4:381to334",
+    "Exact rawUTF8 hash manifest; noCR normalization",
+    "Explicitly credit prior acyclic5/51 condition"
+  ],
+  "working_manuscript_PDF": {
+    "pages": 28,
+    "all_pages_rendered": true,
+    "overfull": [],
+    "undefined": [],
+    "tex_sha256": "bc6b59f6ad3b0700dfcf499403246da694389bd505de505209ef2e2d9a05f4c2",
+    "pdf_sha256": "4f6349f49e126953c4d3c1781cc76f30c7e88303a9b90cf34c508b50dfb27974",
+    "all_28_pages_rendered": true,
+    "final_visual_inspection": "Initial all28page contact-sheet inspection; correctedabstract and affected pages1..6,19..28 reinspected afterfinalrebuild. No clipping/collisions, overfullboxes or undefinedreferences.",
+    "all_28_pages_rendered_and_visually_inspected": true
+  }
+}
