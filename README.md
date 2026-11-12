@@ -1,5 +1,15 @@
 # Current continuation
 
+[Matching-owned credit and zero-credit prerequisites](docs/MATCHING_CREDIT_AND_NEUTRAL_PREREQUISITES.md)
+reach cost zero on both preceding all-scale barriers. Matched removals outside
+a fixed initial cover retire distinct cover mates; unmatched removals can be
+necessary prerequisites. Exact dependencies and conflicts permit nonisolated
+additions, and a conflict-cover algorithm maximizes credit then minimizes
+operation count in `2^k` polynomial time. The rule fixes the initial pair and
+candidate list; a preserved physical example shows it can miss the actual
+fixed-list minimum. The original checker passes; the [independent ACCEPT](output/matching-credit-exchange-review.json)
+reproduced the complete report byte-for-byte.
+
 An [unbounded neutral-exchange plateau](docs/UNBOUNDED_NEUTRAL_EXCHANGE_PLATEAU.md)
 shows that a two-connected physical graph can start at matching cost $m$ with
 no improving legal single-owner swap, while its true all-helper cost is zero.

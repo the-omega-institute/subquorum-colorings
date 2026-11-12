@@ -1,5 +1,25 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Matching-owned credit and neutral prerequisites
+
+The [complementary transfer certificate](MATCHING_CREDIT_AND_NEUTRAL_PREREQUISITES.md)
+removes points outside a fixed tight initial cover. Each matched removal owns
+one initial matching edge and retires its cover mate; unmatched removals can
+enable other savings. The inherited cover and surviving matching certify exact
+final cost, including additions with retained-cover neighbours. Implications,
+blockers and conflicts characterize this condition exactly; old edges within
+the cover must also generate conflicts. An exact `2^k` polynomial algorithm
+uses a conflict vertex cover of size k, with `4^tau` default parameter bound,
+and minimizes operation count after maximizing nonnegative credit.
+
+This reaches zero on the full 20m-vertex plateau and even-r odd-path barriers,
+using m and one zero-credit prerequisites, respectively. It certifies endpoints,
+not a general nonincreasing schedule. All 180 physical fixed-list rule optima
+match enumeration; 14 still exceed the actual fixed-list minimum, and a full
+example is retained. Original assertion-enabled checker passes; [independent ACCEPT](../output/matching-credit-exchange-review.json)
+reproduced the complete report byte-for-byte. The full goal remains ACTIVE with all general bounds and grid
+objectives below still open.
+
 ## Coordinated cover exchanges, cover choice and neutral plateaux
 
 Four complementary results now have complete proofs, original checkers and
