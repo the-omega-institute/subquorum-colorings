@@ -1,0 +1,3080 @@
+{
+  "arithmetic": {
+    "basis_identity_controls": 11,
+    "large_integer_controls": 2,
+    "numerical_primal_points": [
+      {
+        "graph_realization_claim": false,
+        "kind": "general",
+        "order_per_gap": "57/4",
+        "parameters": [
+          "9/4",
+          "1/2",
+          "0",
+          "7/4",
+          "3/4",
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "graph_realization_claim": false,
+        "kind": "minimum2",
+        "order_per_gap": "121/8",
+        "parameters": [
+          "9/4",
+          "1/2",
+          "0",
+          "7/4",
+          "3/4",
+          "0",
+          "1/2",
+          "0",
+          "0",
+          "7/8"
+        ]
+      },
+      {
+        "graph_realization_claim": false,
+        "kind": "cubic",
+        "order_per_gap": "24",
+        "parameters": [
+          "9/4",
+          "0",
+          "1/2",
+          "9/4",
+          "1/4",
+          "0",
+          "0",
+          "13/4",
+          "0",
+          "6"
+        ]
+      }
+    ]
+  },
+  "scope": "General proof establishes all three coefficients. Small graphs enumerate all minimal eligible selections/allocations; targeted graphs independently optimize beta. Numerical primal points certify only the stated ledger relaxation, not graph sharpness. No Lean or exact SF2 claim.",
+  "small_graphs": {
+    "allocations": 29723,
+    "baseline_constructions": 29723,
+    "complementary_constructions": 59446,
+    "cubic_allocations": 11,
+    "graphs": 3981,
+    "helper_repair_vertices": 288,
+    "minimal_selected_sets": 28859,
+    "minimum2_allocations": 1129,
+    "positive_gaps": 0,
+    "private_repair_vertices": 0,
+    "selected_subsets": 467240,
+    "with_claws": 24,
+    "with_direct_centres": 288,
+    "with_h2_helpers": 288,
+    "with_h3_helpers": 0,
+    "with_helper_repairs": 288,
+    "with_private_repairs": 0,
+    "with_selected_edges": 22370,
+    "with_untouched_isolates": 21901
+  },
+  "target_counts": {
+    "allocations": 82,
+    "baseline_constructions": 82,
+    "complementary_constructions": 164,
+    "helper_repair_vertices": 96,
+    "minimum2_allocations": 5,
+    "positive_gaps": 2,
+    "private_repair_vertices": 55,
+    "with_claws": 56,
+    "with_direct_centres": 56,
+    "with_h2_helpers": 50,
+    "with_h3_helpers": 28,
+    "with_helper_repairs": 61,
+    "with_private_repairs": 37,
+    "with_selected_edges": 27,
+    "with_untouched_isolates": 17
+  },
+  "targets": [
+    {
+      "E": [
+        2
+      ],
+      "S": 11,
+      "beta": 13,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 16,
+      "parameters": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        10,
+        11
+      ]
+    },
+    {
+      "E": [],
+      "S": 10,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        [
+          7
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 16,
+      "parameters": [
+        2,
+        0,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        8,
+        9
+      ]
+    },
+    {
+      "E": [],
+      "S": 19,
+      "beta": 22,
+      "deleted_helpers": [
+        [
+          7
+        ],
+        [
+          3,
+          28
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 31,
+      "parameters": [
+        4,
+        1,
+        3,
+        1,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        16,
+        16
+      ]
+    },
+    {
+      "E": [
+        17
+      ],
+      "S": 18,
+      "beta": 19,
+      "deleted_helpers": [
+        [],
+        [
+          3,
+          14
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          17
+        ]
+      ],
+      "gap": -1,
+      "n": 29,
+      "parameters": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        17,
+        15
+      ]
+    },
+    {
+      "E": [],
+      "S": 9,
+      "beta": 11,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 15,
+      "parameters": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        7
+      ]
+    },
+    {
+      "E": [],
+      "S": 19,
+      "beta": 20,
+      "deleted_helpers": [
+        [
+          21
+        ],
+        [
+          3,
+          12
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 31,
+      "parameters": [
+        4,
+        2,
+        2,
+        1,
+        2,
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        17,
+        16
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 9,
+      "beta": 10,
+      "deleted_helpers": [
+        [],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 14,
+      "parameters": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        8
+      ]
+    },
+    {
+      "E": [
+        9,
+        15
+      ],
+      "S": 11,
+      "beta": 13,
+      "deleted_helpers": [
+        [
+          12
+        ],
+        []
+      ],
+      "deleted_private": [
+        [],
+        [
+          9
+        ]
+      ],
+      "gap": -2,
+      "n": 18,
+      "parameters": [
+        3,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        10
+      ]
+    },
+    {
+      "E": [
+        11
+      ],
+      "S": 9,
+      "beta": 10,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        [
+          11
+        ]
+      ],
+      "gap": -1,
+      "n": 14,
+      "parameters": [
+        2,
+        1,
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        8
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 19,
+      "beta": 20,
+      "deleted_helpers": [
+        [
+          12
+        ],
+        [
+          8
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 30,
+      "parameters": [
+        4,
+        1,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        17,
+        16
+      ]
+    },
+    {
+      "E": [
+        17
+      ],
+      "S": 13,
+      "beta": 14,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 21,
+      "parameters": [
+        3,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        13,
+        12
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 8,
+      "beta": 9,
+      "deleted_helpers": [
+        [],
+        [
+          8
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 13,
+      "parameters": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        8,
+        7
+      ]
+    },
+    {
+      "E": [
+        25
+      ],
+      "S": 19,
+      "beta": 22,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 30,
+      "parameters": [
+        4,
+        2,
+        1,
+        3,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        19,
+        17
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 17,
+      "beta": 20,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -3,
+      "n": 28,
+      "parameters": [
+        4,
+        0,
+        3,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        16
+      ]
+    },
+    {
+      "E": [
+        2,
+        7
+      ],
+      "S": 14,
+      "beta": 15,
+      "deleted_helpers": [
+        [
+          16
+        ],
+        []
+      ],
+      "deleted_private": [
+        [
+          2,
+          7
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 23,
+      "parameters": [
+        4,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        14
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 15,
+      "beta": 17,
+      "deleted_helpers": [
+        [
+          16
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -2,
+      "n": 23,
+      "parameters": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        14
+      ]
+    },
+    {
+      "E": [
+        16
+      ],
+      "S": 11,
+      "beta": 13,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [
+          16
+        ],
+        []
+      ],
+      "gap": -2,
+      "n": 19,
+      "parameters": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        10,
+        9
+      ]
+    },
+    {
+      "E": [
+        18
+      ],
+      "S": 16,
+      "beta": 18,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        [
+          7,
+          15
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          18
+        ]
+      ],
+      "gap": -2,
+      "n": 27,
+      "parameters": [
+        4,
+        2,
+        1,
+        0,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        13
+      ]
+    },
+    {
+      "E": [
+        17
+      ],
+      "S": 15,
+      "beta": 16,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        [
+          7
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 23,
+      "parameters": [
+        3,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        13,
+        14
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 7,
+      "beta": 8,
+      "deleted_helpers": [
+        [],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 12,
+      "parameters": [
+        2,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        6,
+        6
+      ]
+    },
+    {
+      "E": [
+        2,
+        8,
+        13
+      ],
+      "S": 12,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [
+          13
+        ],
+        []
+      ],
+      "gap": 0,
+      "n": 18,
+      "parameters": [
+        3,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        12
+      ]
+    },
+    {
+      "E": [],
+      "S": 11,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 17,
+      "parameters": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        10,
+        10
+      ]
+    },
+    {
+      "E": [
+        11
+      ],
+      "S": 10,
+      "beta": 10,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        [
+          11
+        ]
+      ],
+      "gap": 0,
+      "n": 15,
+      "parameters": [
+        2,
+        0,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        9
+      ]
+    },
+    {
+      "E": [
+        18
+      ],
+      "S": 13,
+      "beta": 14,
+      "deleted_helpers": [
+        [
+          12
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          18
+        ]
+      ],
+      "gap": -1,
+      "n": 21,
+      "parameters": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        11
+      ]
+    },
+    {
+      "E": [],
+      "S": 11,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        [
+          7
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 17,
+      "parameters": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        10,
+        10
+      ]
+    },
+    {
+      "E": [],
+      "S": 15,
+      "beta": 17,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 24,
+      "parameters": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        14
+      ]
+    },
+    {
+      "E": [
+        9
+      ],
+      "S": 12,
+      "beta": 14,
+      "deleted_helpers": [
+        [],
+        [
+          16
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          9
+        ]
+      ],
+      "gap": -2,
+      "n": 20,
+      "parameters": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        10
+      ]
+    },
+    {
+      "E": [],
+      "S": 12,
+      "beta": 14,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 18,
+      "parameters": [
+        2,
+        0,
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        11
+      ]
+    },
+    {
+      "E": [
+        25
+      ],
+      "S": 17,
+      "beta": 20,
+      "deleted_helpers": [
+        [
+          13
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 28,
+      "parameters": [
+        4,
+        0,
+        3,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        15
+      ]
+    },
+    {
+      "E": [
+        2,
+        8
+      ],
+      "S": 16,
+      "beta": 20,
+      "deleted_helpers": [
+        [],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -4,
+      "n": 26,
+      "parameters": [
+        4,
+        0,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        15
+      ]
+    },
+    {
+      "E": [
+        2,
+        7,
+        12
+      ],
+      "S": 18,
+      "beta": 19,
+      "deleted_helpers": [
+        [],
+        [
+          15
+        ]
+      ],
+      "deleted_private": [
+        [
+          12
+        ],
+        [
+          7
+        ]
+      ],
+      "gap": -1,
+      "n": 27,
+      "parameters": [
+        4,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        16,
+        16
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 7,
+      "beta": 8,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 12,
+      "parameters": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        6,
+        6
+      ]
+    },
+    {
+      "E": [
+        2,
+        15
+      ],
+      "S": 11,
+      "beta": 12,
+      "deleted_helpers": [
+        [
+          8
+        ],
+        []
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        [
+          15
+        ]
+      ],
+      "gap": -1,
+      "n": 18,
+      "parameters": [
+        3,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        10
+      ]
+    },
+    {
+      "E": [],
+      "S": 19,
+      "beta": 21,
+      "deleted_helpers": [
+        [
+          7
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 31,
+      "parameters": [
+        4,
+        2,
+        2,
+        0,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        17,
+        16
+      ]
+    },
+    {
+      "E": [
+        2,
+        15,
+        20
+      ],
+      "S": 15,
+      "beta": 17,
+      "deleted_helpers": [
+        [
+          9
+        ],
+        []
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        [
+          20
+        ]
+      ],
+      "gap": -2,
+      "n": 24,
+      "parameters": [
+        4,
+        1,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        13,
+        14
+      ]
+    },
+    {
+      "E": [
+        18
+      ],
+      "S": 14,
+      "beta": 16,
+      "deleted_helpers": [
+        [
+          8
+        ],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 22,
+      "parameters": [
+        3,
+        1,
+        1,
+        2,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        13,
+        13
+      ]
+    },
+    {
+      "E": [],
+      "S": 19,
+      "beta": 20,
+      "deleted_helpers": [
+        [
+          7,
+          13
+        ],
+        [
+          3,
+          21
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 31,
+      "parameters": [
+        4,
+        4,
+        0,
+        1,
+        1,
+        3,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        17,
+        17
+      ]
+    },
+    {
+      "E": [],
+      "S": 14,
+      "beta": 15,
+      "deleted_helpers": [
+        [
+          11,
+          14
+        ],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 23,
+      "parameters": [
+        3,
+        3,
+        0,
+        2,
+        2,
+        1,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        13
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 13,
+      "beta": 16,
+      "deleted_helpers": [
+        [],
+        [
+          12
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 21,
+      "parameters": [
+        3,
+        0,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        12
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 13,
+      "beta": 16,
+      "deleted_helpers": [
+        [],
+        [
+          15
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 21,
+      "parameters": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        12
+      ]
+    },
+    {
+      "E": [
+        9,
+        14,
+        19
+      ],
+      "S": 15,
+      "beta": 17,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          19
+        ]
+      ],
+      "gap": -2,
+      "n": 24,
+      "parameters": [
+        4,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        15,
+        13
+      ]
+    },
+    {
+      "E": [],
+      "S": 14,
+      "beta": 16,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 23,
+      "parameters": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        12
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 9,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 14,
+      "parameters": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        8,
+        9
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 8,
+      "beta": 8,
+      "deleted_helpers": [
+        [
+          9
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": 0,
+      "n": 13,
+      "parameters": [
+        2,
+        1,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        7,
+        7
+      ]
+    },
+    {
+      "E": [],
+      "S": 14,
+      "beta": 17,
+      "deleted_helpers": [
+        [
+          18
+        ],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 23,
+      "parameters": [
+        3,
+        1,
+        2,
+        2,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        14
+      ]
+    },
+    {
+      "E": [
+        2,
+        7
+      ],
+      "S": 9,
+      "beta": 9,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": 0,
+      "n": 13,
+      "parameters": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        9
+      ]
+    },
+    {
+      "E": [
+        10
+      ],
+      "S": 9,
+      "beta": 9,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        [
+          10
+        ]
+      ],
+      "gap": 0,
+      "n": 14,
+      "parameters": [
+        2,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        8,
+        8
+      ]
+    },
+    {
+      "E": [
+        2,
+        14
+      ],
+      "S": 10,
+      "beta": 11,
+      "deleted_helpers": [
+        [],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        [
+          14
+        ]
+      ],
+      "gap": -1,
+      "n": 17,
+      "parameters": [
+        3,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        8
+      ]
+    },
+    {
+      "E": [],
+      "S": 20,
+      "beta": 22,
+      "deleted_helpers": [
+        [
+          8
+        ],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 32,
+      "parameters": [
+        4,
+        2,
+        2,
+        3,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        18,
+        19
+      ]
+    },
+    {
+      "E": [],
+      "S": 10,
+      "beta": 10,
+      "deleted_helpers": [
+        [
+          7
+        ],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": 0,
+      "n": 16,
+      "parameters": [
+        2,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        8
+      ]
+    },
+    {
+      "E": [
+        10
+      ],
+      "S": 13,
+      "beta": 14,
+      "deleted_helpers": [
+        [
+          16
+        ],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [
+          10
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 21,
+      "parameters": [
+        3,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        12
+      ]
+    },
+    {
+      "E": [
+        9
+      ],
+      "S": 20,
+      "beta": 23,
+      "deleted_helpers": [
+        [
+          15
+        ],
+        []
+      ],
+      "deleted_private": [
+        [
+          9
+        ],
+        []
+      ],
+      "gap": -3,
+      "n": 31,
+      "parameters": [
+        4,
+        1,
+        2,
+        3,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        16,
+        20
+      ]
+    },
+    {
+      "E": [
+        10
+      ],
+      "S": 8,
+      "beta": 10,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 13,
+      "parameters": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        7,
+        8
+      ]
+    },
+    {
+      "E": [
+        2,
+        15
+      ],
+      "S": 15,
+      "beta": 17,
+      "deleted_helpers": [
+        [],
+        [
+          12
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        [
+          15
+        ]
+      ],
+      "gap": -2,
+      "n": 25,
+      "parameters": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        13,
+        13
+      ]
+    },
+    {
+      "E": [],
+      "S": 10,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 16,
+      "parameters": [
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        10,
+        8
+      ]
+    },
+    {
+      "E": [
+        2,
+        23
+      ],
+      "S": 17,
+      "beta": 19,
+      "deleted_helpers": [
+        [
+          20
+        ],
+        [
+          10
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          23
+        ]
+      ],
+      "gap": -2,
+      "n": 27,
+      "parameters": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        15,
+        15
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 8,
+      "beta": 10,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 13,
+      "parameters": [
+        2,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        7,
+        8
+      ]
+    },
+    {
+      "E": [],
+      "S": 20,
+      "beta": 22,
+      "deleted_helpers": [
+        [
+          7
+        ],
+        [
+          3,
+          20
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 32,
+      "parameters": [
+        4,
+        4,
+        0,
+        3,
+        2,
+        1,
+        2,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        19,
+        18
+      ]
+    },
+    {
+      "E": [
+        9
+      ],
+      "S": 7,
+      "beta": 10,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -3,
+      "n": 12,
+      "parameters": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        6,
+        7
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 13,
+      "beta": 15,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 21,
+      "parameters": [
+        3,
+        1,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        13
+      ]
+    },
+    {
+      "E": [
+        2,
+        8
+      ],
+      "S": 18,
+      "beta": 19,
+      "deleted_helpers": [
+        [
+          11,
+          21
+        ],
+        []
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        [
+          8
+        ]
+      ],
+      "gap": -1,
+      "n": 28,
+      "parameters": [
+        4,
+        2,
+        0,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        15,
+        17
+      ]
+    },
+    {
+      "E": [
+        18
+      ],
+      "S": 13,
+      "beta": 15,
+      "deleted_helpers": [
+        [],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 21,
+      "parameters": [
+        3,
+        0,
+        2,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        11
+      ]
+    },
+    {
+      "E": [
+        10
+      ],
+      "S": 16,
+      "beta": 17,
+      "deleted_helpers": [
+        [
+          7
+        ],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [
+          10
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 27,
+      "parameters": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        14
+      ]
+    },
+    {
+      "E": [],
+      "S": 10,
+      "beta": 12,
+      "deleted_helpers": [
+        [
+          7
+        ],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 16,
+      "parameters": [
+        2,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        9
+      ]
+    },
+    {
+      "E": [
+        9
+      ],
+      "S": 7,
+      "beta": 9,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        [
+          9
+        ]
+      ],
+      "gap": -2,
+      "n": 12,
+      "parameters": [
+        2,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        6,
+        6
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 9,
+      "beta": 9,
+      "deleted_helpers": [
+        [],
+        [
+          9
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": 0,
+      "n": 14,
+      "parameters": [
+        2,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        8
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 20,
+      "beta": 23,
+      "deleted_helpers": [
+        [],
+        [
+          8
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -3,
+      "n": 31,
+      "parameters": [
+        4,
+        2,
+        1,
+        4,
+        1,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        18,
+        19
+      ]
+    },
+    {
+      "E": [
+        17
+      ],
+      "S": 12,
+      "beta": 13,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          17
+        ]
+      ],
+      "gap": -1,
+      "n": 20,
+      "parameters": [
+        3,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        10,
+        10
+      ]
+    },
+    {
+      "E": [],
+      "S": 10,
+      "beta": 12,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 16,
+      "parameters": [
+        2,
+        1,
+        1,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        9,
+        10
+      ]
+    },
+    {
+      "E": [
+        2,
+        8
+      ],
+      "S": 14,
+      "beta": 15,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [
+          2,
+          8
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 21,
+      "parameters": [
+        3,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        12,
+        13
+      ]
+    },
+    {
+      "E": [
+        2,
+        7,
+        12
+      ],
+      "S": 11,
+      "beta": 13,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 17,
+      "parameters": [
+        3,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        11
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 9,
+      "beta": 9,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        []
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": 0,
+      "n": 14,
+      "parameters": [
+        2,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        7,
+        8
+      ]
+    },
+    {
+      "E": [],
+      "S": 21,
+      "beta": 23,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        [
+          16
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 33,
+      "parameters": [
+        4,
+        3,
+        1,
+        4,
+        1,
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        19,
+        20
+      ]
+    },
+    {
+      "E": [
+        10,
+        15
+      ],
+      "S": 11,
+      "beta": 13,
+      "deleted_helpers": [
+        [],
+        [
+          3
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 18,
+      "parameters": [
+        3,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        10
+      ]
+    },
+    {
+      "E": [
+        27
+      ],
+      "S": 20,
+      "beta": 21,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -1,
+      "n": 31,
+      "parameters": [
+        4,
+        1,
+        2,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        19,
+        19
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 17,
+      "beta": 18,
+      "deleted_helpers": [
+        [],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [
+          2
+        ],
+        []
+      ],
+      "gap": -1,
+      "n": 25,
+      "parameters": [
+        3,
+        2,
+        0,
+        4,
+        0,
+        1,
+        0,
+        2,
+        1,
+        0
+      ],
+      "repaired_sizes": [
+        16,
+        16
+      ]
+    },
+    {
+      "E": [
+        17,
+        22
+      ],
+      "S": 15,
+      "beta": 17,
+      "deleted_helpers": [
+        [
+          11
+        ],
+        []
+      ],
+      "deleted_private": [
+        [],
+        [
+          17
+        ]
+      ],
+      "gap": -2,
+      "n": 25,
+      "parameters": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        13,
+        14
+      ]
+    },
+    {
+      "E": [
+        18,
+        23
+      ],
+      "S": 16,
+      "beta": 18,
+      "deleted_helpers": [
+        [
+          15
+        ],
+        [
+          5
+        ]
+      ],
+      "deleted_private": [
+        [],
+        [
+          23
+        ]
+      ],
+      "gap": -2,
+      "n": 26,
+      "parameters": [
+        4,
+        1,
+        1,
+        1,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        14
+      ]
+    },
+    {
+      "E": [
+        2
+      ],
+      "S": 14,
+      "beta": 16,
+      "deleted_helpers": [
+        [],
+        [
+          8,
+          16
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 22,
+      "parameters": [
+        3,
+        2,
+        0,
+        1,
+        2,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        14,
+        12
+      ]
+    },
+    {
+      "E": [],
+      "S": 14,
+      "beta": 16,
+      "deleted_helpers": [
+        [
+          20
+        ],
+        [
+          7
+        ]
+      ],
+      "deleted_private": [
+        [],
+        []
+      ],
+      "gap": -2,
+      "n": 23,
+      "parameters": [
+        3,
+        0,
+        3,
+        0,
+        2,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        11,
+        12
+      ]
+    },
+    {
+      "E": [
+        0,
+        6,
+        12,
+        24,
+        30,
+        36
+      ],
+      "S": 32,
+      "beta": 31,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [
+          0,
+          12,
+          30
+        ],
+        [
+          6,
+          24,
+          36
+        ]
+      ],
+      "gap": 1,
+      "n": 48,
+      "name": "pendant48",
+      "parameters": [
+        8,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_sizes": [
+        29,
+        29
+      ]
+    },
+    {
+      "E": [
+        0,
+        6,
+        12,
+        24,
+        30,
+        36
+      ],
+      "S": 40,
+      "beta": 39,
+      "deleted_helpers": [
+        [],
+        []
+      ],
+      "deleted_private": [
+        [
+          0,
+          12,
+          30
+        ],
+        [
+          6,
+          24,
+          36
+        ]
+      ],
+      "gap": 1,
+      "n": 64,
+      "name": "minimum2_64",
+      "parameters": [
+        8,
+        0,
+        0,
+        8,
+        0,
+        0,
+        0,
+        0,
+        8,
+        8
+      ],
+      "repaired_sizes": [
+        37,
+        37
+      ]
+    }
+  ]
+}

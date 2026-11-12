@@ -1,5 +1,42 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Two-colour repairs: current subcubic upper bounds
+
+The [two-colour repair theorem](SUBCUBIC_TWO_COLOUR_REPAIR_BOUND.md) proves
+`d<=floor(4n/57)` at maximum degree three, `d<=floor(8n/121)` when the
+minimum degree is also at least two, and `d<=floor(n/24)` for cubic graphs.
+Here d=|S|-beta_2(G), with unrestricted beta_2, and S is a specified
+inclusion-minimal two-star-forming set inducing stars, edges or isolates.
+There is no connectivity assumption. The general maximum-degree bound
+allows pendant and isolated vertices. These improve the older upper
+certificates recorded below without changing their historical statements.
+
+The key exchange inequality is `3d<=c+s+b2+b3`: complementary colour
+constructions share one fixed witness assignment, and each necessary
+private-witness or selected-helper deletion is charged at most once across
+the two constructions. Explicit nonnegative identities supply all three
+coefficients. Their proofs do not depend on a numerical optimizer or on
+finite extrapolation. The checker covers degree-zero/one inputs, claws,
+direct centres, twice/triply shared helpers, and both repairs on physical
+graphs. Its full evidence and independent review are in
+`output/subcubic-colour-exchange-check.json` and
+`output/subcubic-colour-exchange-review.json`.
+
+The [compact two-connected family](COMPACT_SUBCUBIC_SELECTED_STAR_GAPS.md)
+has `n=64k, |S|=40k, beta_2=39k` for all k>=1, minimum degree and vertex
+connectivity two and maximum degree three. Thus the best asymptotic
+coefficient for this selected class, even restricting to two-connected
+minimum-degree-two graphs, lies between 1/64 and 8/121. Its exact value,
+cubic selected-class sharpness and low-degree-four/five sharpness remain
+open. These are distinct from unrestricted SF_2 questions.
+
+The full rectangular triple equality when both dimensions are at least
+six, simultaneous physical completion for multiple Hall regions, the
+universal unit-weight 5/6 improvement, and the simpler local incomplete-core
+criterion also remain open. The existing multi-region theorem counts
+endpoint budgets; it does not supply compatible geometric routes or a
+full auxiliary matching. The full collaboration objective remains active.
+
 ## Subcubic positive gaps and exclusion of every cubic equality point
 
 The [90-vertex subcubic construction](TWO_CONNECTED_SUBCUBIC_SELECTED_STAR_GAPS.md)
@@ -980,8 +1017,9 @@ retain their existing ACCEPT, scoped to their original input.
 | Arbitrary-width rectangular-grid SF_2=beta_2=psi_sq | Open; arbitrary-width cap/exchange criteria and selected-star boundary-deficit bound proved, not an unconditional equality |
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
-| Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
-| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
+| Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d; the new two-colour repair gives d<=floor(n/24), superseding the earlier n/22 certificate; graph sharpness open |
+| Two-colour subcubic selected-star repair bounds | Proved 4n/57 at maximum degree3, 8n/121 also at minimum degree2, and n/24 in cubic graphs; no connectivity assumption. Compact two-connected lower family has n64k,d=k. Graph-sharp coefficients remain open |
+| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |

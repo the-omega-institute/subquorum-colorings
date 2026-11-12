@@ -1,7 +1,31 @@
 # Current continuation
 
-The [quantitative subcubic bound](docs/QUANTITATIVE_SUBCUBIC_SELECTED_STAR_BOUND.md)
-improves the real coefficient for specified minimal selected-star/edge/isolate
+The [two-colour repair theorem](docs/SUBCUBIC_TWO_COLOUR_REPAIR_BOUND.md)
+gives three stronger bounds for a specified inclusion-minimal two-star-forming
+set S whose induced components are stars, edges or isolates, with
+`d=|S|-beta_2(G)` and unrestricted dissociation number beta_2:
+
+| Bipartite graph hypotheses | Bound |
+| --- | --- |
+| Maximum degree at most three, allowing pendant and isolated vertices | `d<=floor(4n/57)` |
+| Minimum degree at least two, maximum degree at most three | `d<=floor(8n/121)` |
+| Cubic | `d<=floor(n/24)` |
+
+A single fixed witness assignment supports two complementary exchanges.
+Private-witness and shared-helper conflicts are repaired across both sets
+with one charge per vertex, proving `3d<=c+s+b2+b3`. Three explicit
+nonnegative identities give the displayed coefficients. The standalone
+checker is `scripts/check_subcubic_colour_exchange.py`; exact-source review
+and actual execution scope are recorded in
+`output/subcubic-colour-exchange-review.json`. These bounds supersede the
+earlier selected-class upper coefficients below. With the compact
+two-connected family, the minimum-degree-two subcubic selected-class optimum
+is bracketed between 1/64 and 8/121. No graph-sharpness or bound for arbitrary
+minimal selections is asserted. In particular the separate unrestricted
+cubic theorem and its Heawood extremizers have different hypotheses.
+
+The preceding [quantitative subcubic bound](docs/QUANTITATIVE_SUBCUBIC_SELECTED_STAR_BOUND.md)
+improved the real coefficient for specified minimal selected-star/edge/isolate
 sets at minimum degree two and maximum degree three from 1/13 to 20/263:
 `|S|-beta_2<=floor(20n/263)`. It combines a single defect ledger with
 compatible exchanges on private C_4 components; it has no connectivity
@@ -10,14 +34,13 @@ has `n=64k, |S|=40k, beta_2=39k` for every k>=1, with minimum degree and
 vertex connectivity two and maximum degree three. Its selection induces
 8k P_3's and16k isolates. More generally the construction gives
 `n=16Lk, |S|=10Lk, beta_2=(10L-1)k` for every even L>=4.
-For the two-connected selected class, these results bracket the best
-asymptotic gap coefficient between 1/64 and20/263. The standalone checkers
+The earlier 20/263 coefficient is superseded by 8/121 above. The standalone checkers
 are `scripts/check_compact_subcubic_selected_stars.py` and
 `scripts/check_subcubic_star_stability.py`. Neither an exact unrestricted
 SF_2 value nor optimality of these coefficients is asserted.
 
-There are now two further degree results in the specified selected-star
-class. For every k>=1, the explicit
+Earlier degree results in the specified selected-star class remain available.
+For every k>=1, the explicit
 [two-connected subcubic family](docs/TWO_CONNECTED_SUBCUBIC_SELECTED_STAR_GAPS.md)
 has n=90k, selected size56k, unrestricted beta_2=55k, minimum degree2
 and maximum degree3. Its selection induces only P_3's and isolates.
