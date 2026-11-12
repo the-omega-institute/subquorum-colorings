@@ -1,0 +1,193 @@
+{
+  "counts": {
+    "beyond_K4_free_matching_criterion": 37,
+    "coincident square": 35,
+    "crossing owner edge": 12,
+    "exact_all_helper_controls": 241,
+    "literal_owner_subsets": 39840,
+    "newly_admitted_below_floor_two_thirds": 60,
+    "newly_admitted_residue_0": 30,
+    "newly_admitted_residue_2": 30,
+    "outside_auxiliary_criterion": 1,
+    "outside_owner_size_criterion": 210,
+    "physical_certificates": 1923,
+    "templates": 2133
+  },
+  "critical_examples": [
+    {
+      "certificate": {
+        "applicable": true,
+        "beta_I_lower": 23,
+        "exchange": {
+          "component": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "deleted_after": [
+            1,
+            3,
+            5,
+            8,
+            11,
+            14
+          ],
+          "deleted_before": [
+            0,
+            3,
+            5,
+            8,
+            11,
+            14
+          ],
+          "edge": [
+            0,
+            1
+          ],
+          "odd_squares": [
+            4,
+            2
+          ],
+          "type": "crossing owner edge"
+        },
+        "maximum_owner_set": [
+          1,
+          2,
+          4,
+          6,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15
+        ],
+        "owner_beta": 10,
+        "owners": [
+          1,
+          4,
+          7,
+          9,
+          10,
+          12,
+          13
+        ],
+        "required": 10,
+        "witnesses": [
+          2,
+          3,
+          5,
+          6,
+          8,
+          11,
+          14,
+          15
+        ]
+      },
+      "name": "critical C16 crossing"
+    },
+    {
+      "certificate": {
+        "applicable": true,
+        "beta_I_lower": 22,
+        "exchange": {
+          "component": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "type": "coincident square"
+        },
+        "maximum_owner_set": [
+          0,
+          1,
+          5,
+          6,
+          8,
+          9,
+          11,
+          12,
+          14,
+          15
+        ],
+        "owner_beta": 10,
+        "owners": [
+          0,
+          1,
+          5,
+          8,
+          11,
+          15
+        ],
+        "required": 10,
+        "witnesses": [
+          2,
+          3,
+          6,
+          7,
+          9,
+          12,
+          13,
+          14
+        ]
+      },
+      "name": "critical coincident C4 and two C6"
+    },
+    {
+      "certificate": {
+        "applicable": true,
+        "beta_I_lower": 22,
+        "exchange": null,
+        "maximum_owner_set": [
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          10,
+          12,
+          13,
+          15
+        ],
+        "owner_beta": 10,
+        "owners": [
+          1,
+          4,
+          5,
+          7,
+          9,
+          10
+        ],
+        "required": 10,
+        "witnesses": [
+          2,
+          3,
+          8,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "name": "two C8 with unsatisfiable prior K4 avoidance"
+    }
+  ],
+  "deterministic_sha256": "82366ea84563cef260c3aa843addac7d7ae71d6b6e2590f2eb3cd57277740998",
+  "scope": "Written all-size parity theorem and normalization; physical construction under the explicit owner-size criterion. Exact smaller owner/forced optima; larger cases are actual certificates only. Prior K4-free criterion and this criterion are sufficient, not necessary. No universal8b/3, unrestricted coefficient or new grid claim."
+}

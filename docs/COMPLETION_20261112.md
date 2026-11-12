@@ -1,5 +1,39 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Auxiliary-square parity criterion: a new positive class
+
+The [parity theorem](AUXILIARY_SQUARE_PARITY_CRITERION.md) proves all-helper8b/3
+when A is a union of auxiliary C4s on N=2b indices and the path/even-cycle
+owner graph satisfies beta_2(B)>=2ceil(N/3)-2. Exact normalization reduces the
+problem to an A-independent B-dissociation set. A prescribed-edge exchange in
+one owner cycle toggles parity in two auxiliary squares without changing the
+global owner optimum; a coincident C4 supplies the exceptional case. This also
+extends the sufficient class for the existing fixed-extraction5/51 bound.
+
+The construction/checker covers2,133 templates/1,923 physical certificates,
+241 exact forced optima,39,840 literal owner subsets and both parity repairs.
+There are37 smaller applicable cases beyond the previous K4-free matching test.
+Larger actual certificates reach64 helpers. General8b/3, the unrestricted
+coefficient interval[1/20,7/71] and all general grid problems remain open.
+
+## Sharp all-helper block and an odd-path coefficient refinement
+
+The [complete proof](SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md) gives
+a connected30vertex bipartite min2/max3 template with beta_I16 and beta_2=17.
+The all-helper8b/3 target is attained; the stronger11b/4 all-helper estimate
+is false. Disjoint copies give exact16r and17r, by additivity. The upper proofs
+use three charged-square cases and three ten-vertex physical blocks, respectively.
+This is distinct from the preceding beta_I17 construction-loss example.
+
+For an actual K4-free extraction with o odd-order owner paths and b' helpers,
+if o>=2gamma b',0<=gamma<=1, the new ledger gives the conditional graph gap
+floor((5+gamma)n/(51+12gamma)), interpolating5/51 to2/21. This is a structural
+corollary of the earlier odd-path bonus, not an unrestricted coefficient claim.
+Exact finite optima, local block properties and physical rational-ledger checks
+are in output/sharp-all-helper-check.json; independent review scope is in
+output/sharp-all-helper-review.json. Universal7/71 and all general grid questions
+are unchanged, and the full collaboration goal remains ACTIVE.
+
 ## Owner matching criterion for arbitrary even owner cycles
 
 The [owner matching theorem](OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md)

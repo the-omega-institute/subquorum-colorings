@@ -1,0 +1,130 @@
+\subsection{Auxiliary squares and a parity exchange}
+
+We next give a sufficient condition on the owner graph when all auxiliary
+components are four-cycles. The condition concerns the owner dissociation
+number, which has an explicit formula for paths and even cycles.
+
+\begin{lemma}\label{lem:auxiliary-square-normalization}
+Suppose $A=P\cup Q$ is a disjoint union of four-cycles on the index set $V$
+of a partial template, with $|V|=2b$. Then
+\[
+ \beta_I(H)=2b+
+ \max\{|S|:A[S]\text{ is edgeless and }B[S]\text{ is dissociation}\}.
+\]
+\end{lemma}
+\begin{proof}
+For a permitted deleted set $U$ in Theorem~\ref{thm:all-helper}, put
+$r_K=\nu(A[U\cap K])$ on each auxiliary square $K$.
+Its owner complement $K\setminus U$ contains an independent set of size
+$2-r_K$. If $r_K=0$, extend $U\cap K$ to an opposite pair and take the other
+pair. If $r_K=1$, the complement is nonempty and one vertex suffices.
+If $r_K=2$, the complement is empty. Their union $S$ is independent in $A$
+and lies in the dissociation set $V\setminus U$ of $B$, so it remains
+dissociation in $B$. Since there are $b/2$ squares,
+$|S|=b-\nu(A[U])$.
+
+Conversely, an $A$-independent set $S$ meets each square in zero, one or two
+opposite vertices. For $U=V\setminus S$ the matching cost there is exactly
+$2-|S\cap K|$. If $B[S]$ is dissociation this $U$ is permitted, and its total
+cost is $b-|S|$. Taking the two optima and substituting in
+Theorem~\ref{thm:all-helper} proves the identity.
+\end{proof}
+
+The next statement is purely combinatorial; it needs no compatibility with
+the physical bipartition of a template.
+
+\begin{theorem}\label{thm:auxiliary-square-parity}
+Let $A$ be a disjoint union of four-cycles on a set $V$ of size $N=4s$.
+Let $B$ be a finite simple graph on $V$ whose components are paths or even
+cycles. If $\diss(B)\ge2\lceil N/3\rceil-2$, then there is an $A$-independent
+set $S$ with $B[S]$ dissociation and $|S|\ge\lceil N/3\rceil$.
+Consequently every physical partial template with these auxiliary and owner
+graphs satisfies $\beta_I(H)\ge\lceil8b/3\rceil$.
+\end{theorem}
+\begin{proof}
+For a path or a cycle of order $m$,
+\[
+ \diss(P_m)=\lceil2m/3\rceil,\qquad
+ \diss(C_m)=\lfloor2m/3\rfloor.
+\]
+For paths, disjoint consecutive triples require $\lfloor m/3\rfloor$
+omissions, attained by deleting positions $3,6,\ldots$.
+For cycles, every omission meets at most three cyclic triples, so at least
+$\lceil m/3\rceil$ omissions are required. Cyclic gaps of size at most three
+between that many omissions attain the bound. These choices add over the
+components of $B$.
+
+We first record an exchange on an even cycle of length $m$ not divisible by
+three. For any prescribed consecutive vertices $x,y$, there are two maximum
+dissociation sets differing exactly on $\{x,y\}$.
+For $m=4$, any two vertices form a maximum set, so the assertion is immediate.
+For $m>4$, put $k=\lceil m/3\rceil$ and $\delta=3k-m\in\{1,2\}$.
+Choose a deleted set of size $k$ whose cyclic gaps immediately before and
+after $x$ are $2,3$, respectively. All remaining gaps are three, except for
+one additional gap two when $\delta=2$.
+Their sum is $3k-\delta=m$; there is space for the additional gap because
+$m>4$ gives $k\ge3$ when $\delta=1$, and $k\ge4$ when $\delta=2$.
+Replacing $x$ by its successor $y$ changes the two local gaps from $2,3$ to
+$3,2$. Both deleted sets still meet every consecutive triple and have minimum
+size $k$. Taking complements proves the exchange.
+
+Choose a maximum dissociation set $D$ of $B$. In each auxiliary square $K$,
+\[
+ \alpha(A[D\cap K])\ge\left\lceil\frac{|D\cap K|}{2}\right\rceil.
+\]
+Put $h=\lceil N/3\rceil$. If $|D|\ge2h-1$, these square inequalities
+already give an independent subset of size at least $h$.
+Otherwise the hypothesis forces $|D|=2h-2$, an even integer.
+For every nonzero $N$ divisible by four,
+\[
+ 2\lceil N/3\rceil-2<\lceil2N/3\rceil;
+\]
+this follows immediately in the residues $N=6t,6t+2,6t+4$.
+There is therefore an owner cycle whose length is not divisible by six.
+Otherwise every owner component has dissociation number at least two thirds
+of its order, giving $|D|\ge\lceil2N/3\rceil$, a contradiction.
+Choose such a cycle $C$.
+
+If $C$ spans two auxiliary squares, it has an edge $xy$ joining different
+squares. Apply the prescribed-edge exchange on $C$, keeping maximum choices
+in every other owner component. This gives two global maximum dissociation
+sets $D_0,D_1$ with symmetric difference $\{x,y\}$.
+If $D_0$ meets every square evenly, $D_1$ meets the two squares of $x,y$
+oddly. Otherwise $D_0$ already has at least two odd intersections, because
+its total order is even. For the resulting set $D_*$, the square inequalities
+therefore give
+\[
+ \alpha(A[D_*])\ge |D_*|/2+1=h.
+\]
+The intersections and the two rounding gains belong to distinct auxiliary
+components and are counted once.
+
+If $C$ lies in one auxiliary square, it has order four and fills that square.
+Choose an auxiliary opposite pair as its maximum owner dissociation set,
+and retain maximum choices in all other owner components. That square
+contributes two independent vertices instead of the half-cardinality bound
+one. This again gives $\alpha(A[D_*])\ge|D_*|/2+1$.
+
+In either case choose $S$ independent in $A[D_*]$. It remains dissociation
+in $B$ by restriction. Lemma~\ref{lem:auxiliary-square-normalization}, with
+$N=2b$, gives the template conclusion. The empty case is immediate.
+\end{proof}
+
+The owner condition can be checked from
+\[
+ \diss(B)=\sum_{P_m}\lceil2m/3\rceil+
+                  \sum_{C_m}\lfloor2m/3\rfloor.
+\]
+For example, it permits arbitrary paths and $6k$-cycles together with one
+$6k+4$-cycle, or with at most two $6k+2$-cycles, when their orders sum to $N$.
+The total deficit relative to $2N/3$ is at most $2/3$, which gives
+$\diss(B)\ge\lfloor2N/3\rfloor\ge2\lceil N/3\rceil-2$ by integrality. Simple even cycles here have order at least four; cycles of the
+form $6k+2$ therefore start at order eight.
+
+For a fixed witness extraction with these auxiliary squares and this owner
+condition, the separate retained set combines with the template as before.
+It gives $Z=3\diss(G)-3L-8b'\ge0$, hence $51(|S|-\diss(G))\le5|V(G)|$ by
+the existing ledger. To bound $\SF-\diss$, the condition must hold for an
+extraction of a maximum-cardinality minimal forming set.
+The owner-size criterion is sufficient, and may fail even for templates
+covered by the earlier square-owner theorem.

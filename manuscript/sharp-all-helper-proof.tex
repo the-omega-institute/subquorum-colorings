@@ -1,0 +1,152 @@
+\subsection{A sharp all-helper block and an odd-path refinement}
+
+The constant $8/3$ in the proposed all-helper template bound cannot be
+increased. We give a thirty-vertex block attaining it, and determine its
+unrestricted dissociation number by a separate block argument.
+
+Let $b=6$ and $V=\{0,\ldots,11\}$. Give indices $0,1,4,5,8,9$ colour zero
+and the other indices colour one. Define
+\begin{align*}
+ P={}&\{\{2j,2j+1\}:0\le j<6\},\\
+ Q={}&\{\{4j+1,4j+2\},\{4j+3,4j\}:0\le j<3\}.
+\end{align*}
+Let the owner graph $B$ be the disjoint union of the cycles
+\[
+ (0,10,1,3,9,2,0),\qquad(4,11,5,7,8,6,4).
+\]
+Write $H$ for the resulting physical template: helper $i$ is adjacent to
+witnesses $x_{2i},x_{2i+1}$, witness $x_v$ is adjacent to owner $c_v$,
+and the remaining edges are $Q$ on witnesses and $B$ on owners.
+
+\begin{theorem}\label{thm:sharp-all-helper}
+The graph $H$ is connected and bipartite, has minimum degree two and maximum
+degree three, and satisfies
+\[
+ \beta_I(H)=16=8b/3,\qquad \diss(H)=17.
+\]
+For $r$ disjoint copies these numbers are $16r$ and $17r$, respectively.
+Consequently a universal all-helper lower bound $\beta_I\ge11b/4$ is false,
+and forcing all helpers can lose an arbitrarily large number of vertices
+even with minimum degree two.
+\end{theorem}
+\begin{proof}
+The physical colours satisfy the template requirements. Every witness and
+owner has degree three, and every helper has degree two. The three
+helper--witness six-cycles are joined by the owner edges, proving connectedness.
+
+All helpers, owner indices
+$\{0,3,4,7,8,9,10,11\}$ and witness indices $\{2,6\}$ form a dissociation
+set of size sixteen. For the reverse inequality put $A=P\cup Q$; its square
+components are $K_j=\{4j,4j+1,4j+2,4j+3\}$, $0\le j<3$.
+By Theorem~\ref{thm:all-helper}, a set of size at least seventeen containing
+all helpers would give $U$ with $B[V\setminus U]$ dissociation and
+$\nu(A[U])\le1$.
+
+In a square, an independent set extends to an opposite pair, and a set
+of matching number one extends to a three-set. Thus $U$ can be enlarged to
+have three vertices in one square and an opposite pair in each other square.
+If its matching number was zero, choose any square to enlarge to a three-set.
+Enlarging $U$ preserves dissociation of its owner complement. Call the square
+containing three vertices of $U$ charged, and write $S=V\setminus U$.
+In an uncharged square $K_0$, $S$ is either $\{0,2\}$
+or $\{1,3\}$, both owner edges. Either vertex $9$ or $10$ extends either
+edge to an owner three-vertex path. Similarly the two choices in $K_1$ are
+the owner edges $\{4,6\},\{5,7\}$; either vertex $8$ or $11$ extends either
+edge to such a path. An opposite pair in $K_2$ contains one vertex of each
+of $\{9,10\}$ and $\{8,11\}$.
+
+If $K_0$ is charged, the uncharged $K_1,K_2$ already force a three-vertex
+owner path. If $K_1$ is charged, use $K_0,K_2$. If $K_2$ is charged, its
+single retained vertex extends the edge in $K_0$ or $K_1$ according to which
+of these two pairs contains it. Every case contradicts dissociation of
+$B[S]$. Hence $\beta_I(H)=16$.
+
+For the unrestricted upper bound divide the physical graph into three
+ten-vertex blocks $H_j$: the two helpers paired within $K_j$, the four
+witnesses indexed by $K_j$, and their four owners. Each helper--witness
+subgraph is a six-cycle. In $H_0,H_1$ the owner edges are the two opposite
+witness pairs transported to owners. Within the induced block $H_2$ the
+owners are four pendant vertices. An order-four dissociation set in a six-cycle
+consists of two
+edges and omits two opposite vertices.
+
+We first show that a dissociation set in $H_0$ or $H_1$ has order at most
+six, and every six-set contains an entire owner edge. If no owner edge is
+fully selected, at most two owners are selected. With at most one owner
+the total is at most five. With two owners, a total of six would require
+four six-cycle vertices. Each of those four vertices has a selected cycle
+neighbour, so the two owners require their witness vertices to be omitted.
+Those two omitted witnesses are opposite on the six-cycle and their owners
+are an owner edge, a contradiction. If an owner edge is fully selected,
+its two witnesses are omitted. Two selected owners give a total at most six.
+For three owners the four remaining cycle vertices cannot all be selected:
+they induce two edges, and the third owner's witness belongs to one of them.
+For four owners all witnesses are omitted and only the two helpers remain.
+These cases prove both assertions.
+
+The central block $H_2$ contributes at most seven vertices. Indeed with at
+most two owners its contribution is at most six. With at least three owners
+it cannot use four cycle vertices, since those would require all their
+selected witnesses' owners to be omitted, leaving at most two owners.
+Thus it uses at most three cycle vertices, proving the bound seven.
+With no owners its contribution is at most four.
+
+Each of $c_9,c_{10}$ has a neighbour on each owner edge of $H_0$:
+$c_{10}$ is adjacent to $c_0,c_1$, and $c_9$ to $c_2,c_3$.
+Consequently selecting either central owner precludes every six-set of
+$H_0$. Similarly selecting either $c_8$ or $c_{11}$ precludes every six-set
+of $H_1$. Let $q$ count how many of these two central pairs are met by a
+given dissociation set. For $q=0,1,2$ its total order is at most, respectively,
+\[
+ 6+6+4=16,\qquad 5+6+6=17,\qquad 5+5+7=17.
+\]
+This counts disjoint physical blocks and uses no resource twice.
+An explicit seventeen-set consists of helpers $\{0,1,2,3,5\}$,
+witness indices $\{0,2,4,6,8,9\}$ and owner indices
+$\{1,5,8,9,10,11\}$. Direct inspection gives maximum selected degree one,
+so $\diss(H)=17$. Both optima add over disjoint components, proving the
+all-$r$ statement. For $r>1$ these examples are disconnected.
+\end{proof}
+
+This block differs from the preceding thirty-vertex example, where
+$\beta_I=17$ and the loss concerns a further owner-matching restriction.
+Here the all-helper problem itself attains $8b/3$; the unrestricted optimum
+is larger. Thus it leaves the universal all-helper and unrestricted $8b/3$
+questions open.
+
+\paragraph{Using the odd-path surplus.}
+Theorem~\ref{thm:owner-matching} also yields a quantitative refinement of its
+fixed-extraction corollary. Retain its notation, and let $o$ count odd-order
+owner paths in the actual extracted template, which has $b'$ helpers.
+
+\begin{corollary}\label{cor:odd-path-refinement}
+Let $G$ be a finite simple bipartite graph of maximum degree at most three,
+and let $S$ be a minimal two-star-forming set. Suppose one fixed disjoint
+witness extraction of $S$ admits a $K_4$-free choice, has $b'$ helpers and
+$o$ odd-order owner paths, and satisfies $o\ge2\gamma b'$ for some real
+$0\le\gamma\le1$. Then
+\[
+ |S|-\diss(G)\le
+ \left\lfloor\frac{(5+\gamma)|V(G)|}{51+12\gamma}\right\rfloor.
+\]
+For $\gamma=0$ this is $5n/51$; for $\gamma=1$ it is $2n/21$.
+The statement bounds $\SF-\diss$ when such an extraction exists for a
+maximum-cardinality minimal forming set.
+\end{corollary}
+\begin{proof}
+The retained set of size $L$ is disjoint from the template and has no edges
+to it. The owner-matching theorem with $z=0$ therefore gives
+$Z=3\diss(G)-3L-8b'\ge o/2\ge\gamma b'$.
+Use the same nonnegative fixed-extraction variables as above and
+$b'=2d-m+\tau-b_3$, where $d=|S|-\diss(G)$. Substituting into the two exact
+witness identities gives
+\begin{align*}
+ (5+\gamma)n-(51+12\gamma)d
+ ={}&(Z-\gamma b')+(5+\gamma)(r+q)\\
+ &+(12+3\gamma)(\alpha+\pi)+(7+2\gamma)(e-b_3)\\
+ &+(2+\gamma)b_3+(24+6\gamma)\tau\ge0.
+\end{align*}
+Every summand is nonnegative. Division by $51+12\gamma>0$ and integrality
+prove the claim. The surplus is assigned once through $Z-\gamma b'$;
+it is not added again to either witness exchange.
+\end{proof}

@@ -40,6 +40,10 @@ also gives the conditional $5/51$ bound for path and $6k$-cycle owner cores.
 A further matching criterion permits arbitrary even owner cycles when the
 auxiliary graph has no four-cycle component, with exact Boolean obstruction
 certificates for the specified matching choices.
+A thirty-vertex template has all-helper optimum sixteen and unrestricted
+optimum seventeen, showing that any universal all-helper coefficient is at
+most $8/3$. The odd-owner-path surplus also refines the conditional gap bound.
+An auxiliary-square parity exchange yields another sufficient class for $8b/3$.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1750,6 +1754,10 @@ $6k$-cycles. It does not combine arbitrary longer paths with square cores.
 
 \input{manuscript/owner-matching-proof.tex}
 
+\input{manuscript/sharp-all-helper-proof.tex}
+
+\input{manuscript/auxiliary-square-proof.tex}
+
 \subsection{A robust subcubic block and a lower coefficient $1/20$}
 
 The unrestricted upper bound has a constructive lower counterpart. Define
@@ -2307,7 +2315,15 @@ including the loop and parallel-edge quotient cases and path endpoints.
 Larger template controls check the actual candidates and all phases. The supported-deletion controls check all $77,520$ thirteen-sets, the local
 case rules and arbitrary port extensions. The all-helper controls compare
 matching certificates with literal physical subset optima and the fixed
-extraction ledger. The new proofs are not included in the earlier Lean formalization of the two-attachment
+extraction ledger. The accompanying \texttt{check\_sharp\_all\_helper.py}
+supplement verifies the local blocks and unrestricted optimum of
+Theorem~\ref{thm:sharp-all-helper}, and the exact ledger of
+Corollary~\ref{cor:odd-path-refinement}; its fixture, report and local imports
+are identified in the repository's corresponding verification note.
+The \texttt{check\_auxiliary\_square\_parity.py} supplement checks the
+construction of Theorem~\ref{thm:auxiliary-square-parity}, including both
+parity corrections and templates outside its sufficient criterion.
+The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 
 \paragraph{AI use.}

@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T16:52:04.347158+00:00",
+  "verdict": "ACCEPT",
+  "scope_note": "Independent mathematical and exact-source computational reviews; no new Lean validation. Actual compilation and visual QA were local. Reviewer compilation failure due missing format was not reported as a successful compile.",
+  "working_manuscript_pdf": {
+    "pages": 42,
+    "all_pages_rendered": true,
+    "pdf_sha256": "f23acee111e78e3c69f6fa1b2b0b48772c13bf7aaee5fcdd7d5e58f44ee67eea",
+    "visual_inspection": "passed: final42pages reviewed in six contact sheets; final new threshold proof pages28\u201329 individually inspected",
+    "compilation_overfull": false,
+    "compilation_undefined_references": false,
+    "two_compiles_succeeded": true,
+    "new_pages_inspected": [
+      27,
+      28,
+      29
+    ]
+  },
+  "remaining_open": [
+    "General all-helper and unrestricted template8b/3.",
+    "Full-cycle matching-selection independence conjecture.",
+    "Sharp universal subcubic gap coefficient, current interval[1/20,7/71].",
+    "Physical multiple-Hall routing, universal unit5/6 improvement and arbitrary-width rectangular triple equality."
+  ],
+  "oracle": {
+    "task_id": "a87a0f6c-d03c-45d1-b215-7e0ea89b2cf8",
+    "conversation_id": "conv_7c977775c1faa98b",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af5de25-10d0-83ec-b9c5-817337e5e592",
+    "usage_estimated": true
+  },
+  "independent_response_full": "ACCEPTThe two new claims are correct under their stated\u2014and explicitly inherited\u2014hypotheses. The thirty-vertex construction has\n$$\\beta_I(H)=16,\\qquad \\beta_2(H)=17,$$\nand the odd-path refinement follows from the preceding owner-matching theorem and the exact fixed-extraction identities. I found no missing owner-count branch, invalid normalization, double-counted surplus, or unjustified passage from a fixed minimal forming set to the maximum parameter.The original checker ran successfully, with assertions enabled, and reproduced the supplied report byte-for-byte. The exposition would benefit from the small clarifications below, particularly qualifying \u201csharpness\u201d in the abstract. They do not require changing the mathematics.This verdict covers the new milestone in sharp-all-helper-proof.tex, its integration into starforming-gap.tex, and the earlier definitions, constructions, and identities actually used by these claims. Earlier unrelated results remain context.1. Source identity and actual executionExact-source reconstructionI decoded all 20 attached files, totaling 412,342 decoded bytes. Every file matched both its declared byte count and its declared SHA-256. After execution and the additional checks, all 20 files still matched: zero supplied files were modified.The attachment itself is 553,787 bytes, with SHA-256:Plain text03ffc34c18b43744e1033442241d124ef234f51a6acf76d53fea9628df070503The principal source identities are:FileBytesSHA-256manuscript/sharp-all-helper-proof.tex7,47676a331972f57255c06bc493823d446e792897963fcac499d90f66b931a1f3e2dmanuscript/starforming-gap.tex114,0521dc7dec944d2445f4f529bc3adc716cee9ed27a4f26a38800d75f764f2164726develop/fixtures/sharp-all-helper-thirty.json69428dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897scripts/check_sharp_all_helper.py10,877878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8I also checked the local import closure. It consists of the checker and the five supplied modules:sharp_all_helper.pyall_helper_optimization.pyowner_matching_certificate.pysubcubic_partial_template.pysubcubic_intrinsic_obstruction.pyThus the transitive local imports needed by the requested execution are present.Original checker executionWorking directory:Plain text/workspace/scratch/35a966ac7680/audit_exactActual command:Bashpython3 -B scripts/check_sharp_all_helper.py --output FRESH.jsonI ran this command directly and then repeated the same argument vector with stdout and stderr captured separately, so the stderr report is explicit rather than inferred.Execution itemObserved resultPython3.12.14AssertionsEnabled: __debug__ == True, optimization level 0PYTHONOPTIMIZEUnsetExit code0 on both runsCaptured stderrEmpty, 0 bytesCaptured stdout978 bytesFresh report1,068 bytesComparison with supplied reportByte-for-byte identicalSupplied source/report modificationsNoneEmulation or replacement of the checkerNoneSHA-256 of the actual fresh report:Plain text6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8The report\u2019s separate internal deterministic_sha256 field is:Plain text4a02a70a9efe4ed24a99820f1fbcf9d7aa18413d4be7ef26953316441d787f00These are different hashes with different meanings: the first hashes the complete report file; the second is the checker\u2019s accumulated digest.Reproduced coverageAll requested counts reproduced exactly:ControlCountFeasible literal owner/witness choices102,097Maximal matching-cost-one cases48Literal ten-vertex block subsets3,072Exact unrestricted passes on the thirty-vertex graph $2\\times32,768$ Small binary bipartite graphs689Literal physical subsets for small-graph optimum checks37,477Total one-part subset evaluations239,550Successful actual physical extractions3,340Physical exact-rational ledger comparisons16,663Extractions with positive odd-path count2Nonempty-template graph controls10Generated numerical ledger controls749Canonical forming-set single-deletion checks18The 749 numerical controls are not graph realizations. The two positive-odd-path extractions provide limited finite coverage of that feature; the general corollary rests on its proof.The separate preceding owner-matching checker is not among the attached files and was not executed in this audit. I checked the owner-matching theorem and the implications used here directly from its supplied proof. Statements in the historical notes about other executions are not included in this execution receipt.2. The thirty-vertex constructionPhysical graph and source distinctionThe manuscript and fixture agree on  $P,Q,B$ , the index colours, and both explicit witnesses. I additionally reconstructed the edges directly from the manuscript\u2019s displayed definitions, independently of its physical() function, and obtained the same fixture.There are:\n$$12\\text{ helper\u2013witness edges}\n+12\\text{ witness\u2013owner edges}\n+6\\text{ witness-matching edges}\n+12\\text{ owner edges}\n=42.$$\nThe six helpers have degree two; the twelve witnesses and twelve owners have degree three. The supplied colours produce a bipartition with fifteen vertices on each side.Each helper\u2013witness block is a connected six-cycle. The owner edges connect the first outer block to the central block and the second outer block to the central block. Thus the whole graph is connected.The distinction from the preceding example is substantive: the present owner graph is  $C_6\\sqcup C_6$ ; the preceding owner-matching obstruction has a single  $C_{12}$  owner graph. These constructions must not share an optimum claim merely because both have thirty physical vertices.Explicit sixteen-setThe stated set contains all six helpers, witnesses  $x_2,x_6$ , and owners\n$$c_0,c_3,c_4,c_7,c_8,c_9,c_{10},c_{11}.$$\nIts complete selected-edge list is\n$$h_1x_2,\\ h_3x_6,\\ c_0c_{10},\\ c_3c_9,\\ c_4c_{11},\\ c_7c_8.$$\nIts isolated vertices are  $h_0,h_2,h_4,h_5$ .Consequently its induced graph is exactly\n$$6K_2\\sqcup4K_1,$$\nwhich proves  $\\beta_I(H)\\ge16$ .All-helper upper bound: the normalization is validWith all helpers retained, witness indices  $T$  and owner indices  $S$  are feasible precisely when\n$$T\\text{ is independent in }A=P\\cup Q,\\qquad\nT\\cap S=\\varnothing,\\qquad\nB[S]\\text{ is dissociation}.$$\nThe reason is local and exact: a selected witness already has its helper as a selected neighbour, so its paired witness,  $Q$ -mate, and owner must all be absent. Conversely, these restrictions suffice at every selected vertex.Therefore the earlier formula applies:\n$$\\beta_I(H)=18-\n\\min_{\\substack{U\\subseteq V\\\\B[V\\setminus U]\\text{ dissociation}}}\n\\nu(A[U]).$$\nFor this particular  $A$ , the independence/matching identity can also be checked directly on each induced subgraph of a square.Suppose the minimum matching cost were at most one. Matching number adds across the three square components. Hence at most one square has positive matching cost.In a square, every independent set extends to an opposite pair.Every vertex set inducing matching number one extends to a three-set.If all three costs are zero, first extend to opposite pairs and then enlarge any one pair to a three-set.This gives the claimed  $3+2+2$  normal form for  $U$ . Enlarging  $U$  only deletes vertices from  $B[V\\setminus U]$ , so it preserves the required dissociation property. This monotonicity is the essential justification; it is present and correct.Write  $S=V\\setminus U$ . In the two uncharged squares,  $S$  is an opposite pair; in the charged square it is a singleton. The owner adjacencies give:Charged squareForced obstruction $K_0$ The owner edge retained in  $K_1$ , together with the retained member of  $\\{8,11\\}$  from  $K_2$ , forms an owner  $P_3$ . $K_1$ The owner edge retained in  $K_0$ , together with the retained member of  $\\{9,10\\}$  from  $K_2$ , forms an owner  $P_3$ . $K_2$ Its retained singleton lies in  $\\{9,10\\}$  or  $\\{8,11\\}$ , extending the retained edge in  $K_0$  or  $K_1$ , respectively.For example, the opposite pairs in  $K_0$  are the owner edges  $\\{0,2\\}$ ,  $\\{1,3\\}$ . Vertex  $9$  or  $10$  extends either choice to a three-vertex owner path. The analogous statement for  $K_1$  uses  $\\{4,6\\},\\{5,7\\}$  and vertices  $8,11$ .All three charged locations are covered. The normal forms number\n$$3\\cdot4\\cdot2^2=48,$$\nbut the written argument proves their obstruction structurally.Thus the matching cost is at least two. It is exactly two: the sixteen-set above has owner complement\n$$U=\\{1,2,5,6\\},$$\nwhose induced auxiliary graph consists of the two edges  $12$  and  $56$ . Hence\n$$\\boxed{\\beta_I(H)=16}.$$\n3. Unrestricted optimum: every structural branch checks outThe six-cycle factA dissociation set in a six-cycle has size at most four. If it has four vertices, the two omitted vertices divide the selected vertices into runs of length at most two. Both runs must therefore have length two.Accordingly:the omitted vertices are opposite;the selected graph consists of two disjoint edges;every selected cycle vertex already has one selected cycle neighbour.The last point is what excludes an additional selected owner adjacent to such a witness. The proof uses it correctly.Outer blocksEach outer ten-vertex block consists of a six-cycle, four owners attached to their corresponding witnesses, and two disjoint owner edges.The owner-count branches are:Selected ownersMaximum contributionReason04Six-cycle bound15Six-cycle bound plus one owner26Equality requires an entire owner edge36A full owner edge excludes its witnesses; selecting all four remaining cycle vertices would overload the third owner\u2019s witness46Every owner lies on a selected owner edge, so all four witnesses are excluded; only the two helpers remainThe critical two-owner branch is valid. If no owner edge is fully selected but the total were six, four cycle vertices would be selected. Their selected cycle neighbours force both selected owners\u2019 witnesses to be omitted. Those omitted witnesses must be opposite on the six-cycle, and their owners constitute an owner edge\u2014contradiction.With three owners, one owner edge is necessarily complete. Its two omitted witnesses leave four cycle vertices inducing two edges. The third owner\u2019s witness belongs to those four vertices, so all four cannot be selected.This proves both required assertions:\n$$\\beta_2(H_j)\\le6\\quad(j=0,1),$$\nand every outer six-set contains a full owner edge.Central blockWithin the induced central block, the four owners are pendant vertices attached to the six-cycle. Their full-graph degrees are still three.The corresponding bounds are:Selected central ownersMaximum central contribution0415263647For the last two rows, four selected cycle vertices would have selected cycle neighbours at every selected witness. Every selected owner would then require its witness to be omitted. Only two cycle vertices are omitted, so at most two owners could be selected. Thus three or four owners permit at most three cycle vertices.This establishes all three properties needed later:\n$$\\beta_2(H_2)\\le7,\\qquad\n\\text{owner-free contribution}\\le4,\\qquad\n\\text{at most two owners}\\Longrightarrow\\text{contribution}\\le6.$$\nAttachment penaltiesEach of  $c_9,c_{10}$  is adjacent to an endpoint of each outer owner edge in  $H_0$ . Selecting either therefore excludes every outer six-set: the fully selected owner edge guaranteed above would acquire a vertex of selected degree at least two.Likewise, selecting  $c_8$  or  $c_{11}$  lowers the cap of  $H_1$  to five.Let  $q$  count the attachment pairs met by the selected central owners. Then: $q$ Outer contributionsCentral contributionTotal0 $6+6$ 4161 $5+6$ 6172 $5+5$ 717For  $q=1$ , all selected central owners lie in one two-element pair, so using the central cap six is justified. The blocks partition the physical vertices, and these bounds count no vertex twice.Explicit seventeen-setThe stated unrestricted witness induces exactly the following eight edges:\n$$\\begin{gathered}\nh_0x_0,\\ h_1x_2,\\ h_2x_4,\\ h_3x_6,\\\\\nx_8c_8,\\ x_9c_9,\\ c_1c_{10},\\ c_5c_{11}.\n\\end{gathered}$$\nIts sole isolated vertex is  $h_5$ . Thus its induced graph is  $8K_2\\sqcup K_1$ , proving the matching lower bound:\n$$\\boxed{\\beta_2(H)=17}.$$\nWhy the executable unrestricted optimization is exactThe two  $32,768$ -subset passes enumerate one physical bipartition side, rather than all  $2^{30}$  physical subsets. Their exactness follows from the private-neighbour formula.Fix selected vertices  $U$  on the left side of a bipartite graph. On the right:every vertex having no neighbour in  $U$  can be included;a vertex having at least two neighbours in  $U$  cannot be included;among vertices whose selected neighbourhood is exactly  $\\{u\\}$ , at most one can be included for each  $u\\in U$ .Choosing all zero-neighbour vertices and one representative of each nonempty private-neighbour class simultaneously attains this upper bound. Hence maximizing over all  $U$  is an exact unrestricted optimization.The 689 small-graph comparisons check the implementation of this formula against literal subset enumeration; they are not the mathematical justification for extending it to thirty vertices.4. Odd-path corollary and every ledger hypothesisThe preceding odd-path theorem supplies the claimed surplusFor the actual extracted template with  $b'$  helpers, its owner graph has  $2b'$  vertices and consists of paths and even cycles. Let  $o$  count odd-order paths, including isolated vertices. Then\n$$o\\text{ is even},\\qquad 0\\le o\\le2b'.$$\nFor a permitted matching choice with  $K_4$ -free  $J_R$ , the preceding construction selects:all  $b'$  helpers; $(2b'+o)/2$  owners;at least  $\\lceil(2b'-o)/3\\rceil$  witnesses.The three-colouring step has the correct hypotheses. Brooks\u2019s original theorem applies to a graph of maximum degree at most three with no  $K_4$  component; no connectedness or cubic-regularity assumption is needed here. I checked the reproduced primary theorem and the publisher\u2019s bibliographic record. tu-ilmenau.de+1The owner selection is also valid: on paths and non-square cycles, deleting the chosen alternating matching leaves a matching; on a square, choosing one endpoint of each diagonal selects exactly two owners. Thus the selected owner graph has maximum degree at most one.The retained set has size\n$$L=|R|-b'+p.$$\nIts vertices induce a dissociation graph, are disjoint from the extracted template, and have no edges to it: $R\\setminus I_0$  consists of retained isolated vertices and isolated edges;each retained triple leaf has its unique selected neighbour at its omitted support;the exact selected neighbourhood of each extracted pair witness is its own owner and helper.Therefore\n$$\\beta_2(G)\\ge L+\\left\\lceil\\frac{8b'}3+\\frac{o}{6}\\right\\rceil,$$\nand consequently\n$$Z:=3\\beta_2(G)-3L-8b'\\ge\\frac{o}{2}.$$\nThis is precisely the existing odd-path surplus, used once.Reconstruction of the fixed-extraction identitiesThe deletion-witness classification, disjointness argument, and two exchanges used here are valid for a finite simple bipartite graph and an inclusion-minimal forming set. They give\n$$|S|=|R|+2p+u,$$\ntogether with\n$$2d\\le a+b,\\qquad 2d\\le p+b,\n\\qquad d=|S|-\\beta_2(G).$$\nSet\n$$\\begin{gathered}\nm=\\min(a,p),\\quad \\alpha=a-m,\\quad \\pi=p-m,\\\\\ne=u-a-2b,\\quad r=|R|-a-b,\\quad\nq=n-|S|-p-u,\\quad\n\\tau=m+b-2d.\n\\end{gathered}$$\nUnder maximum degree three,\n$$b'=b-b_3,\\qquad u\\ge a+2b+b_3.$$\nThe required signs have the following independent justifications:QuantityWhy it is nonnegative $r$ The  $a+b$  touched isolates are contained in  $R$  $q$ The  $p+u$  outside witnesses are distinct $\\alpha,\\pi$ Definition of  $m=\\min(a,p)$  $e-b_3$ Witness incidence count  $u\\ge a+2b+b_3$  $b_3$ It counts isolates with three allocated witnesses $\\tau$ The two exchanges give  $2d\\le m+b$  $Z-\\gamma b'$  $Z\\ge o/2\\ge\\gamma b'$ No assumption  $d\\ge0$  is necessary for an arbitrary fixed  $S$ .From these definitions,\n$$b'=2d-m+\\tau-b_3,$$\nand direct substitution gives the two identities\n$$n=10d+m+r+3(\\alpha+\\pi)+2e+q+5\\tau,$$\n\n$$d+Z=5m+3(\\alpha+\\pi)+3e+5b_3+\\tau.$$\nI reconstructed both identities and also checked them symbolically. The symbolic residuals were identically zero.The  $\\gamma$ -identity is exactThe displayed refinement is correct:\n$$\\begin{aligned}\n(5+\\gamma)n-(51+12\\gamma)d\n={}&(Z-\\gamma b')+(5+\\gamma)(r+q)\\\\\n&+(12+3\\gamma)(\\alpha+\\pi)\n +(7+2\\gamma)(e-b_3)\\\\\n&+(2+\\gamma)b_3+(24+6\\gamma)\\tau.\n\\end{aligned}$$\nA useful independent check is to subtract the known  $\\gamma=0$  identity. The remaining assertion is\n$$n-12d\n=-b'+r+q+3(\\alpha+\\pi)+2e-b_3+6\\tau,$$\nwhich follows immediately from the first witness identity and $b'=2d-m+\\tau-b_3$ .Thus the identity holds for every real  $\\gamma$ . Finite rational controls are not being used to infer the real-parameter statement.Under  $0\\le\\gamma\\le1$  and  $o\\ge2\\gamma b'$ , every displayed summand is nonnegative. Since  $51+12\\gamma>0$  and  $d$  is an integer,\n$$\\boxed{\nd\\le\n\\left\\lfloor\n\\frac{(5+\\gamma)n}{51+12\\gamma}\n\\right\\rfloor }.$$\nThe endpoint calculations are exact:\n$$\\gamma=0:\\frac5{51},\n\\qquad\n\\gamma=1:\\frac6{63}=\\frac2{21}.$$\nFor  $b'=0$ , necessarily  $o=0$ . The condition  $o\\ge2\\gamma b'$  then holds for every allowed  $\\gamma$ ; no division by  $b'$  occurs in the proof. The empty graph also causes no exception.Finally, the quantifier is correct: this bounds  $|S|-\\beta_2(G)$  for the fixed  $S$ . It bounds  $\\mathrm{SF}_2(G)-\\beta_2(G)$  when a maximum-cardinality inclusion-minimal forming set admits such an actual extraction. An extraction for an arbitrary smaller minimal set does not suffice.5. Journal-editor exposition and compilationThe new proof is readable and contains structural arguments for both upper bounds. I recommend these nonblocking edits:Qualify the abstract\u2019s \u201csharpness\u201d phrase.Replace \u201cproving sharpness of the proposed all-helper coefficient  $8/3$ \u201d with wording such as: \u201cshowing that any universal all-helper coefficient is at most  $8/3$ .\u201d This makes the unresolved universal lower bound unmistakable.Restate the corollary\u2019s ambient hypotheses.They are correctly inherited, but its statement would travel better if it explicitly named a finite simple bipartite graph of maximum degree at most three, a minimal forming set  $S$ , and one fixed disjoint witness extraction.Define \u201ccharged\u201d at its first use.A short sentence identifying the charged square as the one containing three vertices of  $U$  would remove a small reading interruption.Make the attachment sentence more precise.State that each of  $c_9,c_{10}$  has a neighbour on each outer owner edge. Also say that the central owners are pendant vertices \u201cwithin the induced block  $H_2$ ,\u201d preserving the distinction from their full-graph degree three.Identify the current verification supplement explicitly.The full manuscript\u2019s verification paragraph still points generally to the earlier dated archive. The final journal supplement should clearly identify this new checker, its five local imports, fixture, report, and exact source revision.Source-level checks found no duplicate labels or undefined \\ref/`\\eqref` targets across the main manuscript and its three included TeX files.I attempted the optional full build using:Bashpdflatex -interaction=nonstopmode -halt-on-error -file-line-error \\\n  -no-shell-escape -output-directory=../tmp/pdfs \\\n  manuscript/starforming-gap.texActual result: exit code 1, before source compilation, because the installed environment lacks pdflatex.fmt. The terminal diagnostic was:Plain textI can't find the format file `pdflatex.fmt'!I did not repair or install TeX components. Accordingly, this audit includes source-level exposition and reference checks, but no successful PDF compilation or rendered-layout assessment.6. Consequences and limits of the accepted milestoneThe established consequences are exactly these:Disjoint unions give exactly  $16r$  and  $17r$ , because both optimization problems add over components.The copies retain minimum degree two and maximum degree three, but are disconnected for  $r>1$ . This family does not establish unbounded forcing loss among connected graphs.The universal all-helper estimate  $11b/4$  is false: at  $b=6$ , it would require at least  $16.5$ , hence at least seventeen vertices.Any universal all-helper coefficient is at most  $8/3$ . The example establishes attainment of that proposed coefficient; universality remains to be proved.The unrestricted optimum seventeen exceeds  $8b/3=16$ , so this example does not refute the unrestricted  $8b/3$  proposal.The canonical eighteen-set is inclusion-minimal forming. Its witnesses prove formation; deleting a helper leaves that helper uncovered, and deleting an owner leaves its witness with only an isolated selected helper. This establishes the stated minimality, not an exact  $\\mathrm{SF}_2(H)$  optimum.The odd-path result is a conditional corollary. It supplies no new universal unrestricted coefficient and no proof that its conditional coefficients are optimal.The previously stated unrestricted subcubic interval  $[1/20,7/71]$  is unchanged by this milestone. No new grid result, submission, Lean acceptance, remote execution, or delegated audit is part of this verdict.sharp-all-helper-proof.texFileOpen filestarforming-gap.texFileOpen file",
+  "original_source_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 82712,
+      "sha256": "946b198c0d6a4b4587457da8bf0b2a64c25d3b32e63f780a53ca6c1459272329"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/fixtures/sharp-all-helper-thirty.json",
+      "bytes": 694,
+      "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/sharp_all_helper.py",
+      "bytes": 2187,
+      "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+      "bytes": 8906,
+      "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 89732,
+      "sha256": "f6f4d1faff119b7c2c108347e5110ad7cfc537e9a668b12149bae5512c8cc0d5"
+    },
+    {
+      "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+      "bytes": 7858,
+      "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+    },
+    {
+      "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+      "bytes": 5061,
+      "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+      "bytes": 7359,
+      "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "manuscript/owner-matching-proof.tex",
+      "bytes": 8523,
+      "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+    },
+    {
+      "path": "manuscript/sharp-all-helper-proof.tex",
+      "bytes": 7476,
+      "sha256": "76a331972f57255c06bc493823d446e792897963fcac499d90f66b931a1f3e2d"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 114052,
+      "sha256": "1dc7dec944d2445f4f529bc3adc716cee9ed27a4f26a38800d75f764f2164726"
+    },
+    {
+      "path": "manuscript/twenty-supported-proof.tex",
+      "bytes": 20318,
+      "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+    },
+    {
+      "path": "output/sharp-all-helper-check.json",
+      "bytes": 1068,
+      "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+    },
+    {
+      "path": "scripts/check_sharp_all_helper.py",
+      "bytes": 10877,
+      "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+    }
+  ],
+  "editorial_followup": {
+    "oracle": {
+      "task_id": "ffde23ec-2234-453b-9750-09cd72150864",
+      "conversation_id": "conv_7c977775c1faa98b",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5de25-10d0-83ec-b9c5-817337e5e592",
+      "usage_estimated": true
+    },
+    "response_full": "ACCEPTThis follow-up to audit a87a0f6c-d03c-45d1-b215-7e0ea89b2cf8 passes. I reconstructed both final TeX files from the original decoded sources, applied only the supplied unified diffs, and verified the exact final byte counts and SHA-256 values. The revisions resolve the editorial suggestions while preserving the accepted mathematical claims and their scope.Exact-source verificationBoth original files matched the supplied before_sha256 values. Both patches applied successfully with zero fuzz, no reported offsets, exit code 0, and empty stderr.Reconstructed fileFinal bytesFinal SHA-256Resultsharp-all-helper-proof.tex7,740a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441Exact matchstarforming-gap.tex114,3837ca5f00ba7ec9287228f1240d38016e39336ac0102d0711896d7e5a24bd5ac1eExact matchI also rehashed the other 18 original files against the original manifest: all remain unchanged, including every supplied executable file. The reconstructions contain exactly the four supplied changed regions in the proof file and the two supplied changed regions in the main manuscript.Editorial and mathematical verificationAll requested clarifications are resolved:RevisionFindingAbstract coefficient wording\u201cAny universal all-helper coefficient is at most  $8/3$ \u201d correctly states the obstruction supplied by the example. It does not assert a universal  $8b/3$  lower bound.Definition of \u201ccharged\u201dThe definition now explicitly identifies the square containing three vertices of  $U$ . It agrees with the accepted  $3+2+2$  normalization and all three subsequent cases.Central pendant vertices\u201cWithin the induced block  $H_2$ \u201d correctly distinguishes the owners\u2019 local degree one from their full-graph degree three.Central-owner attachments\u201cEach of  $c_9,c_{10}$  has a neighbour on each owner edge of  $H_0$ \u201d states exactly the property needed to exclude every outer six-set. The listed adjacencies support it.Corollary hypothesesThe statement now explicitly specifies a finite simple bipartite graph of maximum degree at most three, a minimal two-star-forming set, and one fixed disjoint extraction satisfying the matching and odd-path conditions. These make the previously inherited hypotheses explicit without changing the result.Current verification supplementThe manuscript now names check_sharp_all_helper.py, connects it to the correct theorem and corollary, and identifies where its fixture, report, and local imports are documented.The corollary retains the necessary qualification that the bound applies to  $\\mathrm{SF}_2-\\beta_2$  when such an extraction exists for a maximum-cardinality minimal forming set. Its formula, real- $\\gamma$  range, floor, endpoint coefficients, and proof identity are unchanged.The construction likewise retains\n$$\\beta_I(H)=16,\\qquad \\beta_2(H)=17,$$\nthe exact  $16r/17r$  disjoint-union statement, the explicit disconnectedness qualification for  $r>1$ , and the distinction from the preceding owner-matching obstruction.Open-problem scope and verification limitsThe final text still explicitly states:Thus it leaves the universal all-helper and unrestricted  $8b/3$  questions open.Together with the corrected abstract, this clearly separates the upper limit on a possible universal coefficient from the unresolved universal lower-bound assertions. The edits introduce no unrestricted gap-coefficient improvement or new optimality claim.Source-level checks across the reconstructed main manuscript and its included files found no duplicate labels or undefined \\ref/`\\eqref` targets; the new proof remains included exactly once.As requested, I did not rerun the unchanged checker or retry TeX. The earlier executable receipt remains applicable to the unchanged executable sources; this follow-up verifies the two editorially revised source files. No outstanding issues were found in the supplied patches.sharp-all-helper-proof.texFileOpen filestarforming-gap.texFileOpen file",
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 82712,
+        "sha256": "946b198c0d6a4b4587457da8bf0b2a64c25d3b32e63f780a53ca6c1459272329"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/fixtures/sharp-all-helper-thirty.json",
+        "bytes": 694,
+        "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "develop/sharp_all_helper.py",
+        "bytes": 2187,
+        "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 89732,
+        "sha256": "f6f4d1faff119b7c2c108347e5110ad7cfc537e9a668b12149bae5512c8cc0d5"
+      },
+      {
+        "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      {
+        "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+        "bytes": 5061,
+        "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/owner-matching-proof.tex",
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      {
+        "path": "manuscript/sharp-all-helper-proof.tex",
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 114383,
+        "sha256": "7ca5f00ba7ec9287228f1240d38016e39336ac0102d0711896d7e5a24bd5ac1e"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/sharp-all-helper-check.json",
+        "bytes": 1068,
+        "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+      },
+      {
+        "path": "scripts/check_sharp_all_helper.py",
+        "bytes": 10877,
+        "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+      }
+    ],
+    "scope": "Reconstructed exact TeX patches and checked hashes; unchanged checker not rerun in editorial follow-up."
+  },
+  "final_integrated_audit": {
+    "oracle": {
+      "task_id": "e975b367-5a4b-48f1-9dab-fc57e46e4de2",
+      "conversation_id": "conv_fdea284ca37799de",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5e4be-79ac-83ec-80ef-bf1893c18228",
+      "usage_estimated": true
+    },
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 83113,
+        "sha256": "ef99935304794c739fd0ca49652e4def8b645380ee081b067627f9c7135c6e44"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/auxiliary_square_parity.py",
+        "bytes": 3574,
+        "sha256": "8c6cb30b3f593eef5088982408391954ffa30f79861aad46f378f08d33b0157b"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-parity.json",
+        "bytes": 4694,
+        "sha256": "4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638f"
+      },
+      {
+        "path": "develop/fixtures/sharp-all-helper-thirty.json",
+        "bytes": 694,
+        "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "develop/sharp_all_helper.py",
+        "bytes": 2187,
+        "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/AUXILIARY_SQUARE_PARITY_CRITERION.md",
+        "bytes": 4888,
+        "sha256": "624db9ce5d880d09d5951ba26492af8abbb00f8ac63a791b08152c8e1c40a481"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 90719,
+        "sha256": "bb48c2dd8cb5b1d6ffbef92f3941751adda4bf1849fd3ed505d33d8126fe1119"
+      },
+      {
+        "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      {
+        "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+        "bytes": 5061,
+        "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/auxiliary-square-proof.tex",
+        "bytes": 6410,
+        "sha256": "9cdacbc4b83f3326077f5c5a4384d70f8987ce541b8594a11b68882fb74f9f35"
+      },
+      {
+        "path": "manuscript/owner-matching-proof.tex",
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      {
+        "path": "manuscript/sharp-all-helper-proof.tex",
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 114722,
+        "sha256": "e4fca78bbefbb4012b5ea8c98a594d36da6007c772e29c8a0c4b712d9e0ba5eb"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/auxiliary-square-parity-check.json",
+        "bytes": 3638,
+        "sha256": "e1924e7e3b37d6ff070daac541f9b63027ee31213cd448a2454e612482c3a9d0"
+      },
+      {
+        "path": "output/sharp-all-helper-check.json",
+        "bytes": 1068,
+        "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_parity.py",
+        "bytes": 4468,
+        "sha256": "4d079d5c09c97f6cb22e2ad98ff26cbd87aec03d5f06a36480efa9f94bc3ac76"
+      },
+      {
+        "path": "scripts/check_sharp_all_helper.py",
+        "bytes": 10877,
+        "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+      }
+    ],
+    "response_full": "ACCEPTThis verdict is bound to auxiliary-square-parity-exact-source.json and its 26 embedded files. The new parity theorem, its physical construction, the fixed-extraction consequence, and the listed sharp-block exposition clarifications are correct. Both requested original checkers executed successfully and reproduced their attached reports byte for byte.I found no mathematical or source-exposition gap requiring revision. Rendered-layout review remains unavailable because the installed TeX engine lacks its format file; the precise compilation outcome is recorded below.1. Exact-source binding and original executionAll 26 files decoded successfully. Every decoded byte count and SHA-256 matched the attachment\u2019s manifest. All local checker imports are supplied by those files; the remaining imports are Python standard-library modules. A second hash pass after execution confirmed that every supplied file remained unchanged.The attachment\u2019s SHA-256 is:Plain texta6a3bd65450080ca6522674d8a9a7b632606e3e7a32a7d1f7437616af3715b4cKey source hashes are:FileSHA-256manuscript/auxiliary-square-proof.tex9cdacbc4b83f3326077f5c5a4384d70f8987ce541b8594a11b68882fb74f9f35develop/auxiliary_square_parity.py8c6cb30b3f593eef5088982408391954ffa30f79861aad46f378f08d33b0157bscripts/check_auxiliary_square_parity.py4d079d5c09c97f6cb22e2ad98ff26cbd87aec03d5f06a36480efa9f94bc3ac76develop/fixtures/auxiliary-square-parity.json4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638fmanuscript/sharp-all-helper-proof.texa68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441manuscript/starforming-gap.texe4fca78bbefbb4012b5ea8c98a594d36da6007c772e29c8a0c4b712d9e0ba5ebRequired commandsFrom the decoded source root, I executed:Bashpython3 -B scripts/check_auxiliary_square_parity.py --output PARITY-FRESH.json\npython3 -B scripts/check_sharp_all_helper.py --output SHARP-FRESH.jsonStandard output and standard error were captured separately. The runtime was Python 3.12.14, with __debug__ == True, optimization level 0, and PYTHONOPTIMIZE unset.ExecutionExit codeStderrFresh report sizeByte comparison with attached reportAuxiliary-square parity checker0Empty, 0 bytes3,638 bytesIdenticalSharp all-helper checker0Empty, 0 bytes1,068 bytesIdenticalFresh parity report SHA-256:Plain texte1924e7e3b37d6ff070daac541f9b63027ee31213cd448a2454e612482c3a9d0Its internal deterministic_sha256 is:Plain text397b83e1e70646e21240f0af70e5824d0df18d6a3fdb099a47408a1f8f51438aFresh sharp report SHA-256:Plain text6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8This exactly reproduces the earlier report hash supplied in your request. Its internal deterministic_sha256 is:Plain text4a02a70a9efe4ed24a99820f1fbcf9d7aa18413d4be7ef26953316441d787f00Original-source modifications: none. Emulation or substituted implementations in the two required runs: none. Supplementary independent checks used separate temporary audit code.The parity run reproduced every advertised count:ControlObserved countTemplate instances2,133Applicable physical certificates1,863Exact all-helper comparisons211Literal owner-subset evaluations32,160Crossing-owner-edge corrections7Coincident-square corrections35Smaller applicable instances beyond the earlier  $K_4$ -free criterion37Owner-size criterion failures270Additional auxiliary-eight-cycle failure1The auxiliary-eight-cycle control is additional to the 2,133 template instances. The largest generated cases have 64 helpers, 128 index vertices, and 320 physical vertices. Their checks establish the validity and cardinality of the returned physical sets. Exact optimization has the smaller scope described in the checker and report.2. Mathematical audit of the new theoremThe argument in auxiliary-square-proof.tex is complete. Its principal steps withstand the requested boundary and compatibility checks.Exact normalization on auxiliary squaresLet\n$$M=\\max\\{|S|:A[S]\\text{ is edgeless and }B[S]\\text{ is dissociation}\\}.$$\nFor each auxiliary square  $K$ , the local relationship used in the proof is valid: $\\nu(A[U\\cap K])$ Available independent-set size in  $K\\setminus U$ 021120When the matching number is zero,  $U\\cap K$  lies in an opposite pair. When it is one, the complement contains a vertex. Matching number two requires all four square vertices.Taking the indicated independent subsets over the disjoint squares produces a subset of the owner dissociation set  $V\\setminus U$ , so its owner dissociation property survives restriction. Its size is\n$$b-\\nu(A[U]).$$\nConversely, an  $A$ -independent  $S$  meets each square in zero, one, or two opposite vertices, and\n$$\\nu(A[K\\setminus S])=2-|S\\cap K|.$$\nThus the total matching cost is  $b-|S|$ . Substitution in the existing exact all-helper formula gives both inequalities needed for\n$$\\boxed{\\beta_I(H)=2b+M}.$$\nThis establishes the claimed equality, including the empty template.Owner dissociation numbers and small pathsFor paths,\n$$\\beta_2(P_m)=\\left\\lceil\\frac{2m}{3}\\right\\rceil.$$\nDisjoint consecutive triples give the omission lower bound, and deleting positions  $3,6,\\ldots$  attains it. This includes  $P_1$  and  $P_2$ , whose values are respectively  $1$  and  $2$ .For a simple cycle,\n$$\\beta_2(C_m)=\\left\\lfloor\\frac{2m}{3}\\right\\rfloor.$$\nEvery cyclic triple must contain an omitted vertex; one omission covers at most three such triples. A minimum deletion set with cyclic gaps at most three attains the bound.The componentwise sum is therefore exact:\n$$\\beta_2(B)=\n\\sum_{P_m}\\left\\lceil\\frac{2m}{3}\\right\\rceil+\n\\sum_{C_m}\\left\\lfloor\\frac{2m}{3}\\right\\rfloor.$$\nThe rounding obstruction is exactly the stated critical caseFor a maximum owner dissociation set  $D$ ,\n$$\\alpha(A[D])\n\\ge\n\\sum_K\\left\\lceil\\frac{|D\\cap K|}{2}\\right\\rceil\n\\ge\n\\left\\lceil\\frac{|D|}{2}\\right\\rceil.$$\nThe residue calculation is:|  $N$  | Minimum  $|D|$  under the hypothesis | Half-cardinality bound | Required size ||---|---:|---:|---:||  $6t$  |  $4t$  |  $2t$  |  $2t$  ||  $6t+2$  |  $4t+1$  |  $2t+1$  |  $2t+1$  ||  $6t+4$  |  $4t+2$  |  $2t+1$  |  $2t+2$  |In the last row,  $|D|\\ge4t+3$  already suffices. Consequently the only unresolved case is exactly\n$$N=6t+4,\\qquad |D|=4t+2.$$\nThe existence of a non- $6$ -divisible owner cycle follows correctly: paths and  $6k$ -cycles each contribute at least two thirds of their order. If every owner component had that property, integrality would give\n$$|D|\\ge\\left\\lceil\\frac{2N}{3}\\right\\rceil=4t+3,$$\ncontradicting the critical value.The prescribed-edge exchange is validFor an even cycle of length  $m>4$  with  $3\\nmid m$ , set\n$$k=\\lceil m/3\\rceil,\\qquad \\delta=3k-m\\in\\{1,2\\}.$$\nThe construction chooses a minimum deletion set with local gaps  $2,3$  around the prescribed deleted vertex  $x$ , and replaces  $x$  by its successor  $y$ . The local gaps become  $3,2$ . The remaining gaps are three, with one additional gap two when  $\\delta=2$ .The capacity statements are correct: $\\delta=1$ : the smallest permitted even length above four is  $m=8$ , giving  $k=3$ . $\\delta=2$ : the smallest such length is  $m=10$ , giving  $k=4$ .Thus the additional gap in the second case fits outside the two prescribed local gaps.The proof uses particular admissible minimum deletion sets. The initial construction in the implementation can also use a gap of one; that is valid because every gap remains at most three.The smallest exchange cases check explicitly. Using  $x=0,y=1$ :CycleDeleted set  $U_0$ Deleted set  $U_1$ Maximum retained size $C_4$  $\\{0,2\\}$  $\\{1,2\\}$ 2 $C_8$  $\\{0,3,6\\}$  $\\{1,3,6\\}$ 5 $C_{10}$  $\\{0,3,5,8\\}$  $\\{1,3,5,8\\}$ 6My supplementary executable controls checked every prescribed oriented edge at these three lengths against literal cycle optima.Both parity corrections supply the required unitFor a crossing edge  $xy$ , the two constructed global maximum owner sets differ exactly on  $\\{x,y\\}$ . Every other owner component keeps the same maximum choice.Because their total size is even, the number of odd square intersections is even. Either the first candidate already has at least two odd intersections, or the exchange produces two in the distinct squares containing  $x$  and  $y$ . Therefore\n$$\\alpha(A[D_*])\\ge |D_*|/2+1.$$\nThe two half-unit gains belong to distinct auxiliary squares and are counted once.For a non- $6$ -divisible owner cycle contained in one auxiliary square, simplicity and evenness force a  $C_4$  occupying that square. Every two-vertex subset is a maximum owner dissociation set on this  $C_4$ . Choosing an auxiliary opposite pair contributes two independent vertices against the half-cardinality contribution one. This supplies the same required unit.These arguments establish\n$$|S|\\ge\\left\\lceil\\frac N3\\right\\rceil$$\nthroughout the stated class. The combinatorial proof uses the auxiliary squares and owner path/cycle structure; a physical colouring enters only when realizing the template consequence.The mixed-component examples satisfy the criterionRelative to  $2m/3$ , paths have nonnegative surplus. Owner cycles have deficits:\n$$\\begin{array}{c|ccc}\nm\\bmod6&0&2&4\\\\ \\hline\n2m/3-\\beta_2(C_m)&0&1/3&2/3.\n\\end{array}$$\nAccordingly, arbitrary paths and  $6k$ -cycles together with one  $6k+4$ -cycle, or with at most two  $6k+2$ -cycles, have total deficit at most  $2/3$ . Integrality then yields\n$$\\beta_2(B)\\ge\\lfloor2N/3\\rfloor.$$\nThe stated total-order restriction is retained, and simple  $6k+2$ -cycles correctly begin at order eight.3. Algorithm audit and independent physical reconstructionThe implementation in   auxiliary_square_parity.py follows the proof correctly.Its three sets have distinct roles:SetMeaning $D$ An intermediate maximum owner dissociation set, of size owner_beta $S$ The actually selected owner indices, chosen independently in  $A[D]$  $T$ The actually selected witness indices, chosen independently in  $A[V\\setminus S]$ The physical certificate uses\n$$I\\cup\\{c_v:v\\in S\\}\\cup\\{x_v:v\\in T\\}.$$\nOn each square, the routine independent chooses the larger intersection with its two opposite pairs. Since a square is  $K_{2,2}$ , this computes a maximum independent subset of the specified square intersection.Once  $S$  is auxiliary-independent, its complement contains a full opposite pair in every square. Hence\n$$|T|=b,\\qquad S\\cap T=\\varnothing,$$\nand the returned cardinality is\n$$b+|S|+|T|=2b+|S|.$$\nPhysical compatibility follows at every vertex:  $P$ -independence permits at most one selected witness per helper;  $Q$ -independence excludes selected witness neighbours;  $S\\cap T=\\varnothing$  excludes a selected witness\u2019s owner; and the selected owners induce maximum degree one.Independent reconstruction of all applicable certificatesI rebuilt the physical graphs directly from the raw inputs, using separately tagged helper, witness, and owner vertices and these edge families:\n$$h_jx_v\\quad(v\\in P_j),\\qquad\nx_vc_v,\\qquad\nx_ux_v\\quad(uv\\in Q),\\qquad\nc_uc_v\\quad(uv\\in B).$$\nThese checks used an independent adjacency construction. They covered all 1,863 applicable certificates, checked the selected degrees directly, checked  $S\\subseteq D$ , checked the maximum-owner cardinality, and reproduced the original deterministic certificate digest.The three fixed inputsAll three fixed inputs have eight helpers, 40 physical vertices, 56 physical edges, and owner dissociation number ten. Their required physical lower bound is  $\\lceil64/3\\rceil=22$ .| Fixed input | Correction used |  $|D|$  | Selected owners  $|S|$  | Selected witnesses  $|T|$  | Returned physical size | Independently computed exact  $\\beta_I$  ||---|---|---:|---:|---:|---:|---:|| Critical  $C_{16}$  crossing | Crossing edge | 10 | 7 | 8 | 23 | 24 || Coincident  $C_4$  with two  $C_6$ \u2019s | Coincident square | 10 | 6 | 8 | 22 | 24 || Two  $C_8$ \u2019s | Initial selection suffices | 10 | 6 | 8 | 22 | 23 |Every returned physical set has maximum selected degree one.The supplementary exact all-helper calculations enumerated all 65,536 owner masks and all 6,561 helper witness-choice vectors per fixed input. A subset-maximum table over valid literal owner masks supplied the exact permitted owner optimum for each witness choice. Explicit attaining physical sets were also checked. These additional exact calculations concern these three fixed instances.The different values in the last two columns confirm the intended meaning of beta_I_lower: it records the returned certificate\u2019s cardinality. The construction retains the freedom to return a valid set below the all-helper optimum.For the crossing  $C_{16}$  fixture, the two candidate maximum owner sets have four and two odd square intersections. The algorithm selects the candidate giving seven independent owners, exceeding the theorem\u2019s required six. In the coincident-square fixture, the final maximum owner set has zero odd square intersections; the local opposite-pair contribution supplies the unit.The earlier matching-family failure is independently confirmedFor the two- $C_8$  fixture, I enumerated its four owner perfect-matching combinations directly and rebuilt  $P\\cup Q\\cup R$ . Every combination has a  $K_4$  component:Cycle phases $K_4$  components $00$  $\\{0,1,2,3\\}$  $01$  $\\{0,1,2,3\\}$ ,  $\\{9,10,11,12\\}$  $10$  $\\{5,6,14,15\\}$  $11$  $\\{9,10,11,12\\}$ This independently verifies the fixed input\u2019s claimed extension beyond the earlier sufficient matching criterion.Applicability failures have the correct scopeThe implementation first validates the physical-template assumptions through prepare. Within that domain, the two applicability failures identify:An auxiliary graph outside the union-of-squares class.An owner dissociation number below the stated threshold.Their meaning is failure of this sufficient criterion. For example,  $B=C_4\\sqcup C_4$  on eight indices has owner dissociation number four, below  $\\lfloor16/3\\rfloor=5$ , while the earlier square-owner construction remains applicable.The abstract theorem has the broader colour-free formulation. The executable API implements its physical-template consequence and therefore takes and validates physical colours.Supplementary boundary controls also passed for the empty template, isolated owner vertices, isolated owner edges, mixtures of  $P_1/P_2$ , and the separate excluded auxiliary  $C_8$ .4. Fixed-extraction consequence and surplus accountingThe graph consequence uses the correct physical extension. The retained set has size\n$$L=|R|-b'+p,$$\nis dissociation, and has no edges to the extracted template. Thus the new template certificate gives\n$$\\beta_2(G)\\ge L+\\left\\lceil\\frac{8b'}3\\right\\rceil,\n\\qquad\nZ=3\\beta_2(G)-3L-8b'\\ge0.$$\nThe existing fixed-extraction identities then yield\n$$\\boxed{\n5n-51d\n=\nZ+5r+12(\\alpha+\\pi)+24\\tau\n+7(e-b_3)+2b_3+5q\n\\ge0,\n}$$\nwhere  $d=|S|-\\beta_2(G)$ .The quantifiers are correct: the auxiliary-square and owner-size conditions must hold for the actual extracted template. The conclusion applies to that minimal forming set. Applying it to  $\\mathrm{SF}_2(G)-\\beta_2(G)$  requires a qualifying extraction from a maximum-cardinality minimal forming set.The odd-path refinement continues to use its stated  $K_4$ -free extraction hypothesis. Its surplus enters once through\n$$Z-\\gamma b',$$\nin the identity\n$$\\begin{aligned}\n(5+\\gamma)n-(51+12\\gamma)d\n={}&(Z-\\gamma b')+(5+\\gamma)(r+q)\\\\\n&+(12+3\\gamma)(\\alpha+\\pi)\n +(7+2\\gamma)(e-b_3)\\\\\n&+(2+\\gamma)b_3+(24+6\\gamma)\\tau.\n\\end{aligned}$$\nThe parity theorem supplies  $Z\\ge0$ ; the stronger  $o/2$  credit belongs to the separate owner-matching theorem under its own hypotheses. The integrated deductions preserve this accounting.5. Sharp-block clarifications and journal expositionI checked the present sharp-all-helper-proof.tex, including the stated clarifications.Ambient hypotheses: the odd-path corollary explicitly specifies a finite simple bipartite graph of maximum degree at most three, a minimal two-star-forming set, and one fixed qualifying extraction. Its final sentence correctly gives the maximum-cardinality requirement for the  $\\mathrm{SF}_2$  conclusion.\u201cCharged\u201d square: the proof defines it as the unique square containing three vertices of the enlarged deleted set  $U$ . The enlargement preserves dissociation of the owner complement. The three charged-location arguments correctly cover the 48 maximal configurations.Induced pendants and attachments: the four central owners are pendant vertices within the induced block  $H_2$ . Their external owner edges have exactly the attachment pattern stated. Each selected owner from  $\\{c_9,c_{10}\\}$  excludes every outer six-set of  $H_0$ ; each selected owner from  $\\{c_8,c_{11}\\}$  does the same for  $H_1$ . The disjoint-block totals  $16,17,17$  follow correctly.Abstract and verification wording: the abstract states the upper restriction on any universal all-helper coefficient. The sharp block supplies the ratio  $16/6=8/3$ . The verification paragraph separately identifies the sharp-block and parity supplements and accurately describes their roles.The fresh sharp checker reproduced the reported exact values\n$$\\beta_I(H)=16,\\qquad \\beta_2(H)=17,$$\ntogether with its literal local-block controls, 102,097 owner/witness choices, 3,340 physical extractions, and 16,663 physical odd-path ledger checks. The separate physical reconstruction also returned exact all-helper optimum sixteen for this block.The new summaries preserve the intended open scope: general all-helper and unrestricted  $8b/3$ , the sharp unrestricted subcubic coefficient within  $[1/20,7/71]$ , universal unit  $5/6$ , and the general grid questions remain open.6. Integrated-source and compilation scopeThe integrated manuscript inputs the new proof in the intended location. All four included TeX files are present. A source-level check of the expanded manuscript found:75 labels and 91 cross-references;all referenced labels and bibliography keys defined;unique labels and balanced begin/`end` environments.I attempted the full compilation with:Bashpdflatex -interaction=nonstopmode -halt-on-error -file-line-error \\\n  -output-directory=/workspace/scratch/959a488200ae/audit_work/latex \\\n  manuscript/starforming-gap.texExit code: 1. The engine reported:Plain textI can't find the format file `pdflatex.fmt'!Stderr recorded the kpathsea/`mktexfmt` lookup and the absence of a pdflatex format entry. The attempt stopped before manuscript compilation. I made no infrastructure repair; the exposition verdict covers the source, mathematical presentation, and integration checks.Accept this exact milestone as an additional sufficient class. Retain the owner-size hypothesis and actual-extraction requirements in subsequent summaries, together with the stated open status of the universal bounds.auxiliary-square-proof.texFileOpen fileauxiliary_square_parity.pyCodeOpen filesharp-all-helper-proof.texFileOpen filestarforming-gap.texFileOpen file",
+    "scope": "Later integrated source includes parity theorem; both original checkers executed in this audit."
+  },
+  "final_threshold_followup": {
+    "oracle": {
+      "task_id": "149fd28f-c251-4865-8f36-f551a3a3d3fe",
+      "conversation_id": "conv_fdea284ca37799de",
+      "chatgpt_url": "https://chatgpt.com/c/6af5e4be-79ac-83ec-80ef-bf1893c18228",
+      "pool": "chrono-chatgpt-pro-pool",
+      "source": "Recovered completed original task after local stream handle disappeared; no redispatch",
+      "completed_at": "2026-11-12T16:32:20.484+00:00",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro"
+    },
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 83114,
+        "sha256": "1a954195d5f26090e1ec11ded09d3b1508071905de21d0f7bb234dfc5bc7fdd2"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/auxiliary_square_parity.py",
+        "bytes": 3587,
+        "sha256": "985f1181d61feb02100aa1eb554b88d7174b6d797782d8bbf39d72acb569f064"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-parity.json",
+        "bytes": 4694,
+        "sha256": "4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638f"
+      },
+      {
+        "path": "develop/fixtures/sharp-all-helper-thirty.json",
+        "bytes": 694,
+        "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "develop/sharp_all_helper.py",
+        "bytes": 2187,
+        "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/AUXILIARY_SQUARE_PARITY_CRITERION.md",
+        "bytes": 5097,
+        "sha256": "d85c038e7b6502240399d230e87f3e6eadcdfd9e8bdabe04366b2453ff327cbb"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 90720,
+        "sha256": "78870d27df9c4f47b6388591d290c7a8576c481cc163f0138703ff46a2d57e93"
+      },
+      {
+        "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      {
+        "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+        "bytes": 5061,
+        "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/auxiliary-square-proof.tex",
+        "bytes": 6405,
+        "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+      },
+      {
+        "path": "manuscript/owner-matching-proof.tex",
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      {
+        "path": "manuscript/sharp-all-helper-proof.tex",
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 114722,
+        "sha256": "e4fca78bbefbb4012b5ea8c98a594d36da6007c772e29c8a0c4b712d9e0ba5eb"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/auxiliary-square-parity-check.json",
+        "bytes": 3760,
+        "sha256": "9a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25"
+      },
+      {
+        "path": "output/sharp-all-helper-check.json",
+        "bytes": 1068,
+        "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_parity.py",
+        "bytes": 4733,
+        "sha256": "60f16a744c41482c8c2524ca8b59d44a0d71a1e63391d6be077e8e468c6c9ac1"
+      },
+      {
+        "path": "scripts/check_sharp_all_helper.py",
+        "bytes": 10877,
+        "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+      }
+    ],
+    "response_full": "ACCEPTThis verdict applies to the final 26-file source reconstructed from your seven supplied diffs and verified against your complete final manifest. The weaker threshold\n$$\\boxed{\\beta_2(B)\\ge 2\\left\\lceil N/3\\right\\rceil-2}$$\nis sufficient under the stated auxiliary-square and owner-component hypotheses. The revised proof and algorithm handle the additional residue classes correctly.Both reconstructed original checkers exited successfully, with assertions enabled and empty stderr, and reproduced their expected reports byte for byte.1. Exact reconstruction and source verificationI verified the previously decoded 26 files against the original attachment\u2019s byte counts and SHA-256 hashes, then applied the seven supplied unified diffs in a separate source directory using:Plain textpatch --batch --fuzz=0 -p1 --input seven-supplied-diffs.patchThe patch command exited 0, with empty stderr. All hunks applied without offsets, fuzz, or rejected hunks.All seven supplied before_sha256 values matched. After applying the diffs, all 26 final byte counts and SHA-256 hashes matched your final manifest. Exactly seven scientific files changed; the other nineteen remained byte-identical.Changed fileBefore \u2192 final bytesVerified final SHA-256README.md83,113 \u2192 83,1141a954195d5f26090e1ec11ded09d3b1508071905de21d0f7bb234dfc5bc7fdd2develop/auxiliary_square_parity.py3,574 \u2192 3,587985f1181d61feb02100aa1eb554b88d7174b6d797782d8bbf39d72acb569f064docs/AUXILIARY_SQUARE_PARITY_CRITERION.md4,888 \u2192 5,097d85c038e7b6502240399d230e87f3e6eadcdfd9e8bdabe04366b2453ff327cbbdocs/COMPLETION_20261112.md90,719 \u2192 90,72078870d27df9c4f47b6388591d290c7a8576c481cc163f0138703ff46a2d57e93manuscript/auxiliary-square-proof.tex6,410 \u2192 6,40564b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ceoutput/auxiliary-square-parity-check.json3,638 \u2192 3,7609a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25scripts/check_auxiliary_square_parity.py4,468 \u2192 4,73360f16a744c41482c8c2524ca8b59d44a0d71a1e63391d6be077e8e468c6c9ac1A second complete verification after execution confirmed all 26 final hashes and byte counts again. The prior 26-file source was preserved unchanged.2. Actual original-checker executionWorking directory:Plain text/workspace/scratch/959a488200ae/audit_finalExecuted program commands:Bashpython3 -B scripts/check_auxiliary_square_parity.py --output PARITY-FRESH.json\npython3 -B scripts/check_sharp_all_helper.py --output SHARP-FRESH.jsonI captured stdout and stderr separately. The runtime was Python 3.12.14, with __debug__ == True, optimization level 0, and PYTHONOPTIMIZE unset.CheckerExit codeStderrFresh report bytesComparison with final expected reportAuxiliary-square parity0Empty, 0 bytes3,760Byte-identicalSharp all-helper0Empty, 0 bytes1,068Byte-identicalThe reconstructed source was executed directly. Execution-time source modifications: none. Emulation or substituted checker implementations: none. Supplementary checks used separate temporary audit code.Parity reportFresh report SHA-256:Plain text9a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25Internal deterministic_sha256:Plain text82366ea84563cef260c3aa843addac7d7ae71d6b6e2590f2eb3cd57277740998Every expected count was reproduced:Report fieldObserved valuetemplates2,133physical_certificates1,923exact_all_helper_controls241literal_owner_subsets39,840crossing owner edge12coincident square35newly_admitted_below_floor_two_thirds60newly_admitted_residue_030newly_admitted_residue_230outside_owner_size_criterion210outside_auxiliary_criterion1beyond_K4_free_matching_criterion37The empty-template assertion executes separately from the 2,133 counted template instances. The auxiliary-eight-cycle exclusion is also a separate control. The three fixed critical-example certificate records remain identical to the previous report.Sharp reportFresh report SHA-256:Plain text6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8Internal deterministic_sha256:Plain text4a02a70a9efe4ed24a99820f1fbcf9d7aa18413d4be7ef26953316441d787f00Its complete count dictionary was reproduced:JSON{\n  \"analytic_maximal_cost_one_cases\": 48,\n  \"literal_canonical_deletions\": 18,\n  \"literal_owner_witness_choices\": 102097,\n  \"literal_small_graph_subsets\": 37477,\n  \"literal_ten_vertex_subsets\": 3072,\n  \"nonempty_template_graphs\": 10,\n  \"one_part_subsets\": 239550,\n  \"physical_extractions\": 3340,\n  \"physical_odd_path_ledger_checks\": 16663,\n  \"positive_odd_path_extractions\": 2,\n  \"rational_ledger_controls\": 749,\n  \"small_bipartite_graphs\": 689\n}Thus the unchanged sharp checker again reproduces the previously accepted report exactly.3. Mathematical audit of the stronger theoremI read the reconstructed theorem and proof line by line. The change correctly isolates the one-unit deficit without imposing the former  $N\\equiv4\\pmod6$  restriction.The revised threshold and critical caseWrite\n$$h=\\left\\lceil N/3\\right\\rceil,\\qquad d=\\beta_2(B),$$\nand choose a maximum owner dissociation set  $D$ .The unchanged square estimate gives\n$$\\alpha(A[D])\n\\ge\n\\sum_K\\left\\lceil\\frac{|D\\cap K|}{2}\\right\\rceil\n\\ge\n\\left\\lceil\\frac d2\\right\\rceil.$$\nTherefore  $d\\ge2h-1$  already supplies  $h$  independent vertices. Under the new hypothesis  $d\\ge2h-2$ , the remaining case is exactly\n$$d=2h-2.$$\nThis cardinality is even, and its half-cardinality contribution is  $h-1$ . One additional unit suffices.The complete residue calculation is: $N$  $h$ New threshold  $2h-2$ Previous threshold  $\\lfloor2N/3\\rfloor$  $\\lceil2N/3\\rceil$  $6t$  $2t$  $4t-2$  $4t$  $4t$  $6t+2$  $2t+1$  $4t$  $4t+1$  $4t+2$  $6t+4$  $2t+2$  $4t+2$  $4t+2$  $4t+3$ The hypothesis is weaker by two in residue zero, by one in residue two, and agrees with the previous hypothesis in residue four. In every nonempty permitted case,\n$$2h-2<\\left\\lceil2N/3\\right\\rceil.$$\nA suitable owner cycle still existsEvery path satisfies\n$$\\beta_2(P_m)=\\lceil2m/3\\rceil\\ge2m/3,$$\nand every  $6k$ -cycle contributes exactly two thirds of its order.Consequently, if all owner cycles had lengths divisible by six, additivity over owner components would give\n$$d\\ge\\left\\lceil2N/3\\right\\rceil.$$\nThis contradicts the critical equality  $d=2h-2$ . The proof therefore obtains an even owner cycle of length indivisible by six in all three residue classes.This is the key justification for the updated algorithm\u2019s cycle search.The prescribed-edge exchange retains its full validityThe manuscript correctly defines\n$$k=\\lceil m/3\\rceil,\\qquad \\delta=3k-m\\in\\{1,2\\}.$$\nFor  $m>4$ , it constructs particular minimum deletion sets with local cyclic gaps  $2,3$ , changing to  $3,2$  when the prescribed deleted vertex moves to its successor. An additional gap two supplies the second unit of deficit when  $\\delta=2$ .The smallest relevant lengths remain valid: $m=8$ :  $k=3,\\delta=1$ , with gaps  $3,3,2$ . $m=10$ :  $k=4,\\delta=2$ , with gaps  $3,2,3,2$ . $m=4$ : the separate argument uses the fact that every two-vertex subset is a maximum dissociation set.These are admissible constructions within the family of minimum deletion sets. Minimum covers containing a gap one remain allowed. In particular, the implementation\u2019s initial owner-set construction and the prescribed-edge exchange are consistent with each other.The same parity gain closes every new critical caseIf the chosen cycle crosses auxiliary squares, choose an owner edge  $xy$  whose endpoints lie in different squares. The exchange constructs two global maximum owner sets  $D_0,D_1$  with\n$$D_0\\triangle D_1=\\{x,y\\}.$$\nTheir common cardinality  $2h-2$  is even. Thus:A candidate with any odd square intersections has at least two.If one candidate has only even intersections, the exchange makes the two endpoint squares odd.For a suitable candidate  $D_*$ ,\n$$\\alpha(A[D_*])\n\\ge \\frac{|D_*|}{2}+1\n=h.$$\nThe two half-unit gains belong to distinct squares.If the cycle lies in one auxiliary square, it is a  $C_4$  filling that square. Choosing an auxiliary opposite pair gives two independent vertices from two selected owners, contributing one unit above their half-cardinality contribution. Again,\n$$\\alpha(A[D_*])\\ge h.$$\nAll other owner components retain maximum choices. Taking an auxiliary-independent subset preserves owner dissociation. The stronger theorem follows.Empty case and physical conclusionFor  $N=0$ ,  $h=0$ , and the empty set supplies the conclusion directly. The implementation returns:JSON{\n  \"applicable\": true,\n  \"beta_I_lower\": 0,\n  \"exchange\": null,\n  \"maximum_owner_set\": [],\n  \"owner_beta\": 0,\n  \"owners\": [],\n  \"required\": -2,\n  \"witnesses\": []\n}The value required: -2 is the literal value of the new threshold at zero. The exchange branch is bypassed.The unchanged exact normalization gives\n$$\\beta_I(H)=2b+\n\\max\\{|S|:A[S]\\text{ edgeless},\\ B[S]\\text{ dissociation}\\}.$$\nWith  $N=2b$ , the stronger theorem therefore yields\n$$\\beta_I(H)\\ge2b+\\left\\lceil\\frac{2b}{3}\\right\\rceil\n=\\left\\lceil\\frac{8b}{3}\\right\\rceil.$$\n4. Independent checks of the newly admitted boundary casesI independently rebuilt physical edges from the raw  $P,Q,B$  inputs and checked all 1,923 applicable returned certificates, including all 60 newly admitted instances. This reconstruction reproduced the final deterministic digest.For every applicable instance I checked:The intermediate  $D$  has the exact owner dissociation number and induces maximum owner degree one.The actually selected owners satisfy  $S\\subseteq D$ .The selected witnesses satisfy  $|T|=b$ ,  $S\\cap T=\\varnothing$ , and auxiliary independence.The complete physical set has the reported size and maximum selected degree at most one.The 60 newly admitted instances consist of:Index orderOwner componentsExact owner numberPrevious thresholdNew thresholdInstances $N=8$  $C_4\\sqcup C_4$ 45430 $N=12$  $C_4\\sqcup C_4\\sqcup C_4$ 68630For these 60 instances, supplementary exact all-helper controls used 130,560 literal owner masks and 24,300 helper witness-choice vectors. Every returned certificate was at most the independently computed exact all-helper optimum.The exact optimum distributions were: $N=8$ : eight instances with  $\\beta_I=11$ , twenty-two with  $\\beta_I=12$ . $N=12$ : ten instances with  $\\beta_I=17$ , twenty with  $\\beta_I=18$ .These exact computations concern the newly admitted 20- and 30-vertex physical graphs. The larger generated models retain certificate-only verification.A concrete newly admitted crossing caseOne  $N=8$  instance has\n$$\\begin{aligned}\nP&=\\{(0,6),(7,1),(4,2),(5,3)\\},\\\\\nQ&=\\{(0,7),(6,1),(4,5),(2,3)\\},\n\\end{aligned}$$\nwith owner cycles\n$$(0,3,4,7,0),\\qquad(1,2,5,6,1).$$\nIts owner dissociation number is four, exactly the new threshold. The prescribed-edge construction on  $0,3$  produces candidates with two and zero odd square intersections. The returned sets are\n$$S=\\{2,5,7\\},\\qquad T=\\{0,1,3,4\\}.$$\nTogether with four helpers they give an actual physical dissociation set of size\n$$4+3+4=11=\\left\\lceil\\frac{32}{3}\\right\\rceil.$$\nThe independent exact all-helper calculation also gives eleven.Additional boundary controlsSeparately constructed examples exercised the following cases:CaseOwner numberNew thresholdObserved behavior $N=8$ , two coincident owner squares44Coincident-square correction gives ( $N=12$ , three coincident owner squares66Coincident-square correction gives ( $N=12$ ,  $C_4\\sqcup C_8$ 76Half-rounding directly gives ( $N=20$ , five owner squares1012Correct owner-size exclusionThe  $C_4\\sqcup C_8$  example checks the newly admitted odd value  $2h-1$  in residue zero. The coincident-square examples exercise that correction at the newly admitted critical cardinalities.5. Algorithm, documentation, and scopeThe updated assertion is logically correct:Pythonassert owner_beta == 2*((n+2)//3)-2 and owner_beta % 2 == 0It is reached only when the initial auxiliary-independent selection has size below target. Half-rounding then forces the exact boundary cardinality. The proof guarantees a suitable owner cycle for the following next(...) search. Removing the former n % 6 == 4 condition is necessary and correct.The threshold is updated consistently in the applicability test and in both returned required fields. The maximum-owner set and final selected owners/witnesses remain distinct, correctly used objects.The checker\u2019s count increases are consistent with its execution paths. The additional thirty  $N=8$  admissions account for the increase from 211 to 241 exact all-helper comparisons and for\n$$30\\cdot2^8=7{,}680$$\nadditional literal owner-subset evaluations:\n$$32{,}160+7{,}680=39{,}840.$$\nThe README, theorem note, and current completion entry all state the new threshold and final counts consistently. The older mixed-component examples remain valid because their argument gives\n$$\\beta_2(B)\\ge\\lfloor2N/3\\rfloor\n\\ge2\\lceil N/3\\rceil-2.$$\nThe final text preserves the required scope:The abstract combinatorial theorem assumes auxiliary squares and owner paths/even cycles.The physical construction proves the all-helper bound under that sufficient condition.The  $5/51$  consequence requires the actual extracted template to satisfy the condition.The  $\\mathrm{SF}_2-\\beta_2$  conclusion requires a qualifying extraction from a maximum-cardinality minimal forming set.General  $8b/3$ , the unrestricted subcubic sharp coefficient, and the general grid questions retain their stated open status.PDF compilation and visual inspection remain for your separate local check.Accept this reconstructed final milestone with the threshold  $2\\lceil N/3\\rceil-2$  and the actual-extraction hypotheses retained explicitly in its theorem summaries."
+  },
+  "local_execution": {
+    "command": "python3 -B scripts/check_sharp_all_helper.py --output FRESH.json",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 2.1398262499133125,
+    "report_sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8",
+    "report_byte_identical": true,
+    "unchanged_previous_checker_report_byte_identical": true
+  },
+  "proved": [
+    "Connected bipartite30vertex min2/max3 template beta_I16=8b/3 and unrestricted beta_2=17, with disjoint-copy optima16r/17r.",
+    "All-helper11b/4 candidate false; any universal all-helper coefficient at most8/3.",
+    "Conditional odd-owner-path coefficient(5+gamma)/(51+12gamma), derived algebraically from previous matching/witness theorems, under stated fixed-extraction and maximum-cardinality qualifications."
+  ],
+  "not_claimed": [
+    "Exact SF optimum of new30vertex block.",
+    "Connectedness of multiple disjoint copies.",
+    "New unrestricted subcubic coefficient."
+  ]
+}

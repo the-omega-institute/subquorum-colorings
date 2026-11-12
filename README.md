@@ -1,5 +1,17 @@
 # Current continuation
 
+New sufficient class: [auxiliary squares and an owner-size parity criterion](docs/AUXILIARY_SQUARE_PARITY_CRITERION.md).
+For A a union of C4s on N=2b indices, paths/even-cycle owners with
+beta_2(B)>=2ceil(N/3)-2 admit an actual all-helper8b/3 construction. A single
+owner-cycle exchange supplies the missing parity gain. This includes mixed
+owner cycles beyond the earlier K4-free matching criterion.
+
+New result: [a sharp all-helper block and the odd-path refinement](docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md).
+A connected minimum-degree-two30vertex template has beta_I16 and beta_2=17;
+disjoint copies attain8b/3 and give unbounded all-helper forcing loss.
+An actual K4-free extraction with odd-path ratio o>=2gamma b' has conditional
+gap coefficient(5+gamma)/(51+12gamma). The unrestricted7/71 bound is unchanged.
+
 New development: [owner matching certificates and exact four-cycle obstructions](docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md).
 Arbitrary even owner cycles are permitted under the new auxiliary criterion;
 the universal8b/3 problem remains open.
