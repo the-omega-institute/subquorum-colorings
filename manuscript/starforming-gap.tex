@@ -22,17 +22,18 @@ in every bipartite graph of order $n$. The coefficient is sharp even for
 two-connected graphs of minimum degree two and maximum degree four. The
 proof constructs two dissociation sets from disjoint deletion witnesses.
 For maximum degree at most three we improve the bound uniformly to
-$\lfloor15n/152\rfloor$, with no restriction on the components induced
+$\lfloor51n/517\rfloor$, with no restriction on the components induced
 by a minimal forming set. Paired phase-class margins, endpoint-event credits
-on good physical core paths, and template boundary edges yield this improvement.
+on good physical core paths, and boundary penalties in the phase expectation
+yield this improvement.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
 the unique maximum-cardinality minimal forming set, and give an exact
 neighbourhood recognition criterion. For complete cores with at least
 four vertices in each part this reduces to paired witness-neighbourhood
-inequalities; the ten-vertex case is classified separately. We also prove that the asymptotic
-coefficient remains sharp under every fixed minimum-degree constraint.
+inequalities; the ten-vertex case is classified separately. The general coefficient
+$1/10$ remains asymptotically sharp under every fixed minimum-degree constraint.
 \end{abstract}
 
 \section{Introduction}
@@ -913,10 +914,10 @@ Substitution of \eqref{eq:partition} and $b=2d-m+\tau$ yields
  d+Z=8m+5\alpha+5\pi+2\tau+5e+8b_3.
 \]
 Subtracting this from eight times \eqref{eq:subcubic-ledger} gives
-\[
+\begin{equation}\label{eq:subcubic-cycle-ledger}
  \boxed{8n-81d
  =Z+8r+19\alpha+19\pi+3e+8(e-b_3)+8q+38\tau\ge0.}
-\]
+\end{equation}
 Integrality proves the assertion for $S$, and maximizing over $S$
 proves the bound for $\SF$.
 \end{proof}
@@ -1383,79 +1384,118 @@ Compare this with $11b/4-o/2$, taking weights $3/5$ and $2/5$.
 Their maximum proves~\eqref{eq:joint-template}.
 \end{proof}
 
+\begin{lemma}\label{lem:vertex-penalties}
+Give the vertices of a partial template nonnegative costs $w_v$. Put
+$w(K)=\sum_{v\in K}w_v$ and $\Phi(D)=|D|-w(D)$.
+There is an actual dissociation set $D$ satisfying
+\[
+ \Phi(D)\ge\frac{13b}{5}+\frac{3\sigma}{5}+\frac{t_g}{10}
+                   -w(I)-\frac{w(C)}2-\frac{7w(X)}{10}.
+\]
+\end{lemma}
+\begin{proof}
+Use all auxiliary phases, without replacing good components. For a phase
+let $Y$ be its $b$ witnesses and $A$ its $b$ retained owners. The pointwise
+cycle and endpoint score $s$ of the preceding lemma satisfies
+$\diss(H[A])\ge2b/3+s$, with $\mathbb Es\ge-\rho+t_g/6$.
+If $Z\subseteq A$ is a residual optimum, nonnegative costs give
+\[
+ \Phi(I\cup Y\cup Z)\ge\frac{8b}{3}+s-w(I)-w(Y)-w(A).
+\]
+Each owner and witness is retained with probability $1/2$, even when its
+bit is shared with other vertices. Thus some phase set has potential
+at least
+\[
+ F=\frac{5b}{2}+\frac o3+\sigma+\frac{t_g}{6}
+                   -w(I)-\frac{w(C)+w(X)}2.
+\]
+Conditional expectation on $s-w(Y)-w(A)$ finds such a phase; its penalties
+are one-bit events. The unweighted residual optimum then satisfies the
+same pointwise inequality.
+
+The two one-side sets have total size at least $11b/2-o$.
+Each owner belongs to exactly one of them, while helpers and witnesses
+belong to at most two. Their average potential is therefore at least
+\[
+ O=\frac{11b}{4}-\frac o2-w(I)-\frac{w(C)}2-w(X).
+\]
+The largest potential among the phase set and these two actual sets
+is at least $(3F+2O)/5$, giving the assertion.
+\end{proof}
+
 \begin{theorem}\label{thm:joint-subcubic}
 Every bipartite graph of order $n$ and maximum degree at most three,
 and every minimal two-star-forming set $S$, satisfy
 \[
- 152\bigl(|S|-\diss(G)\bigr)\le15n.
+ 517\bigl(|S|-\diss(G)\bigr)\le51n.
 \]
 In particular,
 \[
- \boxed{\SF(G)-\diss(G)\le\left\lfloor\frac{15n}{152}\right\rfloor.}
+ \boxed{\SF(G)-\diss(G)\le\left\lfloor\frac{51n}{517}\right\rfloor.}
 \]
 \end{theorem}
 \begin{proof}
 Use the fixed witnesses and nonnegative slacks of
 Theorem~\ref{thm:subcubic}; put $\beta=\diss(G)$ and $d=|S|-\beta$.
-The extracted template has $b'=b-b_3$ helpers. Every template set
+The extracted template $H$ has $b'=b-b_3$ helpers. Every template set
 extends by the same retained set of size $L=|R|-b'+p$. Thus
 \begin{equation}\label{eq:joint-Z}
  Z=5\beta-5L-13b'\ge3\sigma+\frac{3b_G+2t_g}{4}.
 \end{equation}
 
-Let $B$ count physical edges leaving the template. Its owners have
-one internal witness edge, so their remaining slots give at most
-$2(t_g+t_b)$ boundary edges. Its witnesses have an owner and a helper;
-only unmatched interface slots, two per auxiliary path, can leave,
-giving at most $2(s_g+s_b)$ edges. A helper is isolated in $S$. A triple
-witness cannot meet it, and every allocated pair witness meeting it is
-already one of its two assigned template witnesses. Thus any extra
-helper neighbour is among the $q$ unallocated outside vertices, giving
-at most $3q$ such edges. Consequently
-\[
- B\le2(t_g+t_b)+2(s_g+s_b)+3q.
-\]
-For the actual set $D$ of~\eqref{eq:joint-template}, remove its neighbours
-from each exterior bipartition side. Each remaining side is independent
-and compatible with $D$; their sizes sum to at least $n-5b'-B$.
-Taking the larger side, using $4s_g\le b_G$, gives
-\begin{equation}\label{eq:joint-exterior}
- \beta\ge\frac n2+\frac{b'}{10}+\frac{3\sigma}{5}
-       -\frac{18t_g+2b_G}{20}-t_b-s_b-\frac{3q}{2}.
-\end{equation}
-This is an alternative full-graph candidate to the retained-set extension;
-the exterior choices are not combined with that retained set.
+Let $B_I,B_C,B_X$ count the physical edges leaving each template layer.
+An owner has one internal witness edge; its unused core slots give
+$B_C\le2(t_g+t_b)$. Each witness has an owner and a helper, so only
+unmatched interface slots can leave, giving $B_X\le2(s_g+s_b)$.
+An extra helper neighbour is among the $q$ unallocated outside vertices:
+a triple witness has only its selected leaf as selected neighbour,
+and an allocated pair witness meeting this helper already belongs to
+its template. Hence $B_I\le3q$.
 
-The exact witness identities give
+Assign $w_v=|N_G(v)\setminus V(H)|/2$ and choose the set $D$ of
+Lemma~\ref{lem:vertex-penalties}. After removing the exterior neighbours
+of $D$, the two exterior independent sides have total size at least
+$n-5b'-2w(D)$. Repeated exterior neighbours only reduce the deletion count.
+Choosing the larger surviving side gives a full-graph set of size at least
+$n/2-5b'/2+\Phi(D)$. Therefore
+\begin{align}
+ \beta&\ge\frac n2+\frac{b'}{10}+\frac{3\sigma}{5}+\frac{t_g}{10}
+              -\frac{B_I}{2}-\frac{B_C}{4}-\frac{7B_X}{20}\notag\\
+ &\ge\frac n2+\frac{b'}{10}+\frac{3\sigma}{5}
+              -\frac{2t_g}{5}-\frac{t_b}{2}
+              -\frac{7(s_g+s_b)}{10}-\frac{3q}{2}.
+ \label{eq:joint-exterior}
+\end{align}
+This exterior extension and the retained-set extension are separate
+full-graph candidates; their vertex sets are not united.
+
+Write $T=2m+\alpha+\pi+2e+3b_3$. The exact witness identities give
 \[
- 2\beta-n-\frac{b'}5
- =-2m-\alpha-\pi+r-2e-3b_3-q+\frac{2Z}{5}.
+ 2\beta-n-\frac{b'}5=-T+r-q+\frac{2Z}{5}.
 \]
-Rearranging~\eqref{eq:joint-exterior}, using the shared budget and then
-$18/5$ times~\eqref{eq:joint-Z}, proves
+Rearranging~\eqref{eq:joint-exterior} and using
+$t_b+s_b\le6\sigma$ and $4s_g\le b_G$ yields
 \begin{align*}
- 2m+\alpha+\pi+2e+3b_3
- &\le r+2q+\frac{2Z}{5}+\frac{18t_g+2b_G}{10}
-                       +2t_b+2s_b-\frac{6\sigma}{5}\\
- &\le r+2q+\frac{2Z}{5}+\frac{9t_g}{5}
-                       +\frac{b_G}{5}+\frac{54\sigma}{5}\\
- &\le r+2q+4Z.
+ T&\le r+2q+\frac{2Z}{5}+\frac{4t_g}{5}+t_b
+                +\frac{7(s_g+s_b)}5-\frac{6\sigma}{5}\\
+  &\le r+2q+\frac{2Z}{5}+\frac{4t_g}{5}
+                +\frac{36\sigma}{5}+\frac{7b_G}{20}\\
+  &\le r+2q+\frac{14Z}{5}.
 \end{align*}
-In the last step the $\sigma,t_g$ coefficients are exact and the available
-$b_G$ coefficient $27/10$ exceeds $1/5$.
-Thus $W_4=r+2q+4Z-(2m+\alpha+\pi+2e+3b_3)$ is a nonnegative integer.
-Direct substitution in~\eqref{eq:subcubic-ledger} yields
-\[
- 30n-304d=W_4+29r+71(\alpha+\pi)+42(e-b_3)+13b_3+28q+142\tau\ge0.
-\]
-All the slacks, including $e-b_3$ and $\tau$, were nonnegative before
-this argument. This proves the theorem, including the empty graph.
+For the last step, $12/5$ times~\eqref{eq:joint-Z} supplies
+$36\sigma/5+6t_g/5+9b_G/5$, at least the required coefficients.
+Thus $W=5r+10q+14Z-5T$ is a nonnegative integer.
+Taking fourteen times~\eqref{eq:subcubic-cycle-ledger} minus ten times
+$n-10d=m+r+3(\alpha+\pi)+2e+q+5\tau$ gives
+\begin{align*}
+ 102n-1034d={}&W+97r+241(\alpha+\pi)+144(e-b_3)\\
+             &+47b_3+92q+482\tau\ge0.
+\end{align*}
+All these slacks, including $e-b_3$ and $\tau$, are nonnegative.
+Division by two proves the theorem, including the empty graph.
 \end{proof}
 
-The coefficient improves $8/81$ by exactly $1/12312$. Its sharp value
-remains open. Two endpoint scores and paired class margins are both
-needed for this improvement; their physical supports, the actual
-extensions and the general budget are proved above.
+The sharp coefficient under a maximum-degree-three restriction remains open.
 
 \subsection{Minimum-degree asymptotic sharpness}
 
@@ -1860,7 +1900,12 @@ for the simultaneous Hall budget, positive Hall slack, and several exterior entr
 models, 5,200 exact small templates and every phase of larger prescribed
 templates, including loss and path supports in the same owner class. All signed literal words through path order six are classified; every phase
 of each good word is checked for the pointwise endpoint-score inequality.
-The new proofs are not included in the earlier Lean formalization of the two-attachment
+The vertex-penalty controls additionally check actual weighted candidates and
+physical exterior extensions on 43,684 minimal-selection instances, 28,635
+cost assignments and 103,470 phase assignments; independent weighted optima
+are checked in 580 weighted instances arising from 116 template models of
+order at most ten; ten instances also receive literal subset crosschecks. Larger template controls
+check the actual candidates and all phases. The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 
 \paragraph{AI use.}

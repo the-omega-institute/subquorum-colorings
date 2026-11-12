@@ -1,10 +1,38 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
-## Current unrestricted subcubic bound15/152: two endpoints and paired margins
+## Current unrestricted subcubic bound 51/517: vertex penalties and exterior extension
+
+The [boundary-expectation theorem](BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md)
+proves `517(|S|-beta_2(G)) <= 51n` for every minimal forming S in every finite
+simple bipartite maximum-degree-three graph, including empty graphs. Hence
+`SF_2-beta_2 <= floor(51n/517)`. Gain over 15/152 is exactly 3/78584;
+sharpness and attainment remain open. There are no connectivity, minimum-degree,
+side-balance or selected-component restrictions.
+
+A general nonnegative vertex-penalty lemma controls potential and cardinality
+together. Half the external degree as cost incorporates boundary loss into
+conditional expectation. The chosen core solver remains unweighted; it charges
+the retained superset using cost nonnegativity. Actual exterior and retained
+extensions are compared separately. The paired-margin budget yields the exact
+nonnegative ledger `102n-1034d=W+97r+241(alpha+pi)+144(e-b3)+47b3+92q+482tau`.
+
+Exact 30-file independent audit ACCEPT, with original full checker execution
+and fresh report comparison; see `output/boundary-expectation-review.json`.
+Local checks: 43,684 minimal sets, 5,200 exact small templates, 28,635 cost
+assignments, 103,470 weighted physical phases, 76,545 conditional controls,
+580 weighted instances on 116 exact template models (order<=10) and ten literal crosschecks. Larger
+templates check actual sets and all phases. The algorithm improves 472 full
+candidates, choosing a smaller inner set on 680 instances. Costs include zero
+and rationals with 401-bit numerators. The 26-page working manuscript was
+compiled twice and rendered/visually inspected. No Lean, email, submission,
+Mac Studio or change to October's submitted paper. Full goal remains ACTIVE.
+
+
+## Earlier unrestricted subcubic bound15/152: two endpoints and paired margins
 
 The [two-endpoint theorem](TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md) proves
 `152(|S|-beta_2(G))<=15n` for every minimal S in every finite simple bipartite
-maximum-degree-three graph. The current integer bound isfloor15n/152,
+maximum-degree-three graph. Its integer bound was floor15n/152,
 including the emptygraph andwithout connectivity, positive minimumdegree,
 sidebalance orselectedcomponent conditions. Gain over31/314 is1/23864;
 gain over8/81 is1/12312. Optimality andattainment remain open.
@@ -1270,7 +1298,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(15n/152), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. Paired class margins and two endpoint scores prove the exact30n-304d certificate; sharpness andattainment remain open |
+| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(51n/517), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. Vertex penalties, paired margins and exterior extension prove the exact102n-1034d certificate; sharpness andattainment remain open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:

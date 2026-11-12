@@ -1,9 +1,37 @@
 # Current continuation
 
-The [two-endpoint and paired-margin theorem](docs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md)
-now proves `152(|S|-beta_2(G))<=15n` for EVERY minimal two-star-forming S
+The [vertex-penalty theorem](docs/BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md)
+proves `517(|S|-beta_2(G)) <= 51n` for every minimal two-star-forming set
+in every finite simple bipartite graph of maximum degree at most three.
+The current unrestricted bound is `SF_2-beta_2 <= floor(51n/517)`, including
+empty graphs, without connectivity, minimum-degree, balance or selected-component
+conditions. Its gain over 15/152 is 3/78584; sharpness and attainment remain open.
+
+The new lemma optimizes `|D|-w(D)` for arbitrary nonnegative vertex costs.
+Each owner and witness has phase marginal 1/2. Combining a phase construction
+with the two one-side sets gives
+`Phi(D) >= 13b/5+3sigma/5+tg/10-w(I)-w(C)/2-7w(X)/10`.
+With half the external degree as cost, the same phase choice controls boundary
+loss and yields an actual exterior extension. The retained-set extension is
+a separate full-graph alternative. The shared margin budget then proves
+`102n-1034d = W+97r+241(alpha+pi)+144(e-b3)+47b3+92q+482tau >= 0`.
+
+An independent exact 30-file audit returned ACCEPT; its full response and
+actual execution scope are in `output/boundary-expectation-review.json`.
+The original local checker passed with empty separately captured stderr.
+It checks 43,684 minimal selections, 5,200 exact small templates, 28,635
+cost assignments, 103,470 physical phases and 76,545 conditional expectations.
+Independent weighted optima cover 580 weighted instances on 116 template
+models of order at most ten;
+larger templates check actual candidates and every phase. The new construction
+improves the old full candidate on 472 controls and chooses a smaller inner
+set on 680. The 26-page working manuscript includes the complete new proof,
+compiled twice and rendered for visual inspection. October's paper is unchanged.
+
+The earlier [two-endpoint and paired-margin theorem](docs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md)
+proved `152(|S|-beta_2(G))<=15n` for EVERY minimal two-star-forming S
 in EVERY finite simple bipartite graph of maximum degree at most three.
-Consequently the current unrestricted bound is
+Its unrestricted bound was
 `SF_2(G)-beta_2(G)<=floor(15n/152)`. Empty graphs are included; no connectivity,
 minimum-degree, side-balance or selected-component condition. This improves
 31/314 by1/23864 and8/81 by1/12312. Sharpness and attainment remain open.
@@ -162,7 +190,7 @@ checkers and is disclosed separately; the earlier denominator clarification
 was explicitly resolved.
 
 The preceding19/192 and31b/12 arguments below remain historical milestones;
-the current unrestricted coefficients are15/152 for the graph gap and13/5 for the standalone-template lower bound, respectively.
+the current unrestricted coefficients are51/517 for the graph gap and13/5 for the standalone-template lower bound, respectively.
 
 The [odd-auxiliary-cycle compensation theorem](docs/ODD_AUXILIARY_CYCLE_COMPENSATION.md)
 proves `|S|-beta_2(G)<=floor(19n/192)` for every inclusion-minimal
