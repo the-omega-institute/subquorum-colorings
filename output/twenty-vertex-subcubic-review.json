@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T13:26:43.944546+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "0c95be2f-b6cb-418a-b6d1-10d2ad41a2e4",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af5bdb8-66d0-83ec-bb9c-c43bfa9c9659",
+    "usage_estimated": true
+  },
+  "source_manifest": [
+    {
+      "path": "docs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md",
+      "bytes": 8408,
+      "sha256": "46f447ad63f207c2e8aa16087eb587e5b7b1af686795b240e225c7bf25bd7d07"
+    },
+    {
+      "path": "develop/fixtures/twenty-vertex-subcubic-core.json",
+      "bytes": 2365,
+      "sha256": "35126a8771c526cfcbdcb75ea4db2a191bd5b48efd8de219994ca7792661418f"
+    },
+    {
+      "path": "develop/twenty_vertex_subcubic.py",
+      "bytes": 1239,
+      "sha256": "c3cd7ee4b08b74c2d7f1884768bae2a182e0dba5bbb08998a8a003dc01a66182"
+    },
+    {
+      "path": "scripts/check_twenty_vertex_subcubic.py",
+      "bytes": 8987,
+      "sha256": "8290f81d552b9849448fa3be0f07e1153ad18f7cf78bcd946f308fc9cde3d9eb"
+    },
+    {
+      "path": "output/twenty-vertex-subcubic-check.json",
+      "bytes": 2477,
+      "sha256": "866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860"
+    },
+    {
+      "path": "README.md",
+      "bytes": 81203,
+      "sha256": "086217bb294d2fca3390ef696751d29bb50143c36250954fe49f9eb5d4cea4b9"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 86523,
+      "sha256": "e2119bed03e4e89556dc69681bac43a161330836a66e60727fb5ab4a3d53293a"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 105934,
+      "sha256": "c3ad09ba18e0a3aae922da03138ed476dd97078f4b2016dbed2ff98d4e012b1a"
+    }
+  ],
+  "full_response": "ACCEPT. The corrected Proposition 3 and the manuscript’s composition passage hold at their full stated strength. The required exterior hypothesis is explicit in both, the README and completion prefaces match it, and the four supplied diffs account for every change from the prior snapshot.Mathematical scope. Write  $A$  for the exterior graph ( $Q$  in the manuscript). The construction now requires  $G[V(A)]=A$ . Restricting any dissociation set of  $G$  to each original block gives at most eleven vertices per block, including when its port edge is restored. Restriction to  $A$  gives at most  $\\beta_2(A)$  more. For equality, choose the displayed eleven-vertex set  $D$  in every block and an optimum in  $A$ . The fixed-exterior hypothesis ensures that every added edge meets a block, and the port rule ensures that it meets an unselected port. The chosen union therefore induces a graph of maximum degree at most one. This proves\n$$\\beta_2(G)=11r+\\beta_2(A)$$\nfor every  $r\\ge 0$ , including empty  $A$ , simultaneous attachments sharing a port or exterior vertex, and restoration of any within-block port edges.The manuscript’s “first and last rows” clarification is exact. Witness  $4$  is selected in precisely those rows, so deleting  $4\\!-\\!12$  makes owner  $12$  available there. In the middle row,  $4$  is already absent. For the cyclic family, the exterior is empty and the accepted conclusion remains  $\\beta_2(G_r)=11r$  and  $\\mathrm{SF}_2(G_r)\\ge 12r$ , giving a gap of at least  $|V(G_r)|/20$  for every  $r\\ge1$ .Exact-source verification. I decoded all eight files and independently computed their raw byte counts and SHA-256 hashes. All matched the final manifest. For each changed file, reversing the supplied diff also recovered the prior manifest’s exact byte count and hash.FileBytesVerified SHA-256Against prior manifestdocs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md8,40846f447ad63f207c2e8aa16087eb587e5b7b1af686795b240e225c7bf25bd7d07Diff verifieddevelop/fixtures/twenty-vertex-subcubic-core.json2,36535126a8771c526cfcbdcb75ea4db2a191bd5b48efd8de219994ca7792661418fUnchangeddevelop/twenty_vertex_subcubic.py1,239c3cd7ee4b08b74c2d7f1884768bae2a182e0dba5bbb08998a8a003dc01a66182Unchangedscripts/check_twenty_vertex_subcubic.py8,9878290f81d552b9849448fa3be0f07e1153ad18f7cf78bcd946f308fc9cde3d9ebUnchangedoutput/twenty-vertex-subcubic-check.json2,477866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860UnchangedREADME.md81,203086217bb294d2fca3390ef696751d29bb50143c36250954fe49f9eb5d4cea4b9Diff verifieddocs/COMPLETION_20261112.md86,523e2119bed03e4e89556dc69681bac43a161330836a66e60727fb5ab4a3d53293aDiff verifiedmanuscript/starforming-gap.tex105,934c3ad09ba18e0a3aae922da03138ed476dd97078f4b2016dbed2ff98d4e012b1aDiff verifiedChecker execution. I did not rerun the checker. The attached prior audit 5cf76f23 records one execution of the original checker with assertions enabled, exit code 0, and a byte-identical 2,477-byte report. This audit independently verified the file identities and the corrected mathematics.\n",
+  "initial_audit": {
+    "oracle": {
+      "task_id": "5cf76f23-266e-4b57-9909-a27a3f896757",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5bbbf-5c24-83ec-a170-bdacd79ce7f0",
+      "usage_estimated": true
+    },
+    "source_manifest": [
+      {
+        "path": "docs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md",
+        "bytes": 8368,
+        "sha256": "037ec8ec945616e69f6d71684350c41132a55d2858bb11dc4fc1450e32df441f"
+      },
+      {
+        "path": "develop/fixtures/twenty-vertex-subcubic-core.json",
+        "bytes": 2365,
+        "sha256": "35126a8771c526cfcbdcb75ea4db2a191bd5b48efd8de219994ca7792661418f"
+      },
+      {
+        "path": "develop/twenty_vertex_subcubic.py",
+        "bytes": 1239,
+        "sha256": "c3cd7ee4b08b74c2d7f1884768bae2a182e0dba5bbb08998a8a003dc01a66182"
+      },
+      {
+        "path": "scripts/check_twenty_vertex_subcubic.py",
+        "bytes": 8987,
+        "sha256": "8290f81d552b9849448fa3be0f07e1153ad18f7cf78bcd946f308fc9cde3d9eb"
+      },
+      {
+        "path": "output/twenty-vertex-subcubic-check.json",
+        "bytes": 2477,
+        "sha256": "866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860"
+      },
+      {
+        "path": "README.md",
+        "bytes": 81164,
+        "sha256": "4172e85c643755f3b6d2d844879edec8643d0e2f9fedb62bb6282b1722c5fc92"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 86484,
+        "sha256": "be22acb493cbaab4a7d1403f49c85c85e975d36defdab287b5789490b4abaa86"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 105878,
+        "sha256": "6c3335c178232ea6d53fa5eea3fcbc43f60c5f7709ae4330c25224aae4807c76"
+      }
+    ],
+    "full_response": "FIXABLE_GAPSThe twenty-vertex block and the complete cyclic-family theorem are mathematically sound. One hypothesis must be made explicit in the general attachment proposition: the exterior graph must remain unchanged. As currently quantified, that proposition allows additional edges entirely inside the exterior, which can invalidate its formula.The computational audit passed: all eight files match their declared raw-byte lengths and SHA-256 hashes; the original checker ran unchanged, with assertions enabled, and reproduced the reference report byte-for-byte. There was one checker execution, no failed execution or retry, and no report mismatch.1. Required correction: preserve the exterior induced graphIn Proposition 3 of the dedicated note, the construction permits “any collection of new edges” subject to the restriction that endpoints lying in a copy of  $F$  must be ports. That restriction does not forbid an added edge whose two endpoints lie in the exterior graph  $A$ .The proof subsequently assumes that no such edges were added, stating that the induced exterior graph is  $A$  “by definition.” This does not follow from the proposition’s stated hypotheses.Explicit counterexample to the literal wordingThis failure occurs even with one block and a connected resulting graph.Take:One copy of  $F$ , with ports  $4,12$ .An exterior  $A$  consisting of three isolated vertices  $a,b,c$ , so  $\\beta_2(A)=3$ .New edges  $ab,bc,4a$ .Every new endpoint lying in  $F$  is its permitted port  $4$ . Thus the construction satisfies the written endpoint restriction.However, the exterior induced graph has become  $P_3$ . Any dissociation set uses at most eleven block vertices and at most two exterior vertices, giving\n$$\\beta_2(G)\\le 11+2=13.$$\nThe displayed port-avoiding optimum  $D$ , together with  $\\{a,c\\}$ , attains thirteen:  $4\\notin D$ , so the attachment edge  $4a$  causes no selected adjacency. Consequently\n$$\\beta_2(G)=13\\ne 11+\\beta_2(A)=14.$$\nExact repairAdd the hypothesis\n$$\\boxed{G[V(A)]=A.}$$\nEquivalently, replace the edge-addition condition by:Every added edge has at least one endpoint in a copy of  $F$ , and every endpoint lying in such a copy is one of that copy’s two ports. Adding the edge between the two ports within a copy is permitted.Under this hypothesis, the existing restriction-and-union proof is complete.The manuscript’s wording—blocks “joined to each other and to” a disjoint graph  $Q$ —more naturally expresses the intended operation. Nevertheless, explicitly adding  $G[V(Q)]=Q$  there would align the two statements and remove the ambiguity. The README’s “arbitrary port attachments” should be understood with this same fixed-exterior condition.This correction does not affect the cyclic family: its exterior is empty, and every specified new edge is a permitted port-to-port edge.2. Independent mathematical auditThe three eight-of-twelve cases are exhaustive and correctThe graph induced on  $I\\cup X$  is exactly the twelve-cycle\n$$(0,4,11,3,10,7,1,6,8,2,9,5).$$\nThere are no additional edges within this vertex set.A dissociation set cannot contain three consecutive cycle vertices. It therefore contains at most eight cycle vertices. Each of the two disjoint core squares contributes at most two vertices, so an overall twelve-set would have to contain exactly eight cycle vertices and four core vertices.With eight selected cycle vertices, there are four omissions. Each cyclic distance between consecutive omissions is at most three edges; otherwise three consecutive selected vertices occur. These four distances sum to twelve, so every distance equals three. This proves, without enumeration, that exactly the three listed residue patterns are possible.Selected cycle verticesAvailable core vertices in  $F$ Induced available coreMaximum core contribution $X$  $\\{12\\}$ One isolated vertex $1$  $I\\cup\\{5,7,8,11\\}$  $\\{12,14,17,18\\}$ Isolate  $12$ , plus  $17-14-18$  $3$  $I\\cup\\{4,6,9,10\\}$  $\\{12,13,15,16,19\\}$ Square on  $\\{12,13,16,19\\}$ , plus isolate  $15$  $3$ In each pattern, every selected witness already has one selected cycle neighbor. Selecting an adjacent owner would give that witness a second selected neighbor. The deleted edge  $4\\,12$  is correctly accounted for in the table.Thus none of the three patterns permits four selected core vertices, and\n$$\\beta_2(F)\\le 11.$$\nOne minor prose clarification is available in the manuscript: the deletion of  $4\\,12$  makes owner  $12$  available in both rows where  $4$  is selected—the first and third rows. The table is already correct; the sentence mentioning “the last row” can say “the first and last rows.” This is editorial, not another mathematical gap.The port-avoiding optimum is validThe displayed set\n$$D=\\{0,2,3,6,7,9,11,13,14,15,16\\}$$\ninduces exactly\n$$2\\,9,\\quad3\\,11,\\quad6\\,14,\\quad7\\,15,\\quad13\\,16,$$\ntogether with isolated vertex  $0$ . These are five disjoint edges and one isolate, so  $D$  is a dissociation set of size eleven.It avoids both ports  $4,12$ , and therefore remains valid after restoring  $4\\,12$ . Since adding an edge cannot increase the dissociation number,\n$$11\\le\\beta_2(H)\\le\\beta_2(F)\\le11.$$\nHence\n$$\\boxed{\\beta_2(F)=\\beta_2(H)=11.}$$\nExact composition holds with the repaired hypothesisFor disjoint copies  $F_1,\\ldots,F_r$  and an unchanged exterior  $A$ , restriction of a dissociation set to each block and to  $A$  gives\n$$\\beta_2(G)\\le 11r+\\beta_2(A).$$\nConversely, choose  $D$  in each block and an optimum in  $A$ . Every added edge has an endpoint at an unselected block port. Thus no added edge changes the induced graph on the chosen union, and\n$$\\beta_2(G)\\ge11r+\\beta_2(A).$$\nThis proves exact addition without degree, connectivity, or bipartiteness assumptions on the permitted attachment graph. It does not prove analogous SF additivity.Two-connectivity holds for every  $r$ , including  $1,2$ The displayed Hamilton cycle of  $F$ ,\n$$(4,0,5,13,19,12,16,8,2,9,17,15,18,14,6,1,7,10,3,11),$$\nuses every vertex once. Every consecutive pair, including the closing pair  $11\\,4$ , is an actual edge of  $F$ . It does not use the deleted edge  $4\\,12$ .Therefore  $F-v$  contains a spanning path for every vertex  $v$ .For the cyclic construction: $r=1$ : adding  $4_0\\,12_0$  restores  $H$ . Its spanning subgraph  $F$  already contains the Hamilton cycle. $r=2$ : the joining edges  $4_0\\,12_1$  and  $4_1\\,12_0$  are distinct edges of a simple graph. Parallel edges appear only after contracting the blocks. $r\\ge2$ : after deleting one vertex, each surviving block remains connected. Each port belongs to exactly one joining edge, and the two ports in each block are distinct. Hence at most one joining edge disappears. The quotient is a cycle with at most one edge removed, including the two-edge quotient when  $r=2$ , and remains connected.This is a complete all- $r$  proof, independent of the finite connectivity checks.Degrees, coloring, owner reassignment, and minimality are correctThe supplied bipartition is valid, and each joining edge connects opposite colors. After joining, each block contributes four degree-two helpers and sixteen degree-three vertices. Thus\n$$|V(G_r)|=20r,\\qquad |E(G_r)|=28r,\\qquad\n\\delta(G_r)=2,\\qquad\\Delta(G_r)=3.$$\nFor\n$$S=\\bigcup_i(I_i\\cup C_i),$$\nthe witness-to-owner assignment is\n$$4_i\\longmapsto12_{i+1},\n\\qquad\nx_i\\longmapsto(x+8)_i\\quad(5\\le x\\le11).$$\nThis is a bijection for every positive integer  $r$ .Every outside witness has its helper and assigned owner selected, so  $S$  forms the required two-leaf stars.Every selected vertex is essential:Deleting a helper leaves that newly outside helper with no selected neighbor.Deleting an owner leaves its assigned witness with only its helper selected. That helper remains isolated in the selected graph, so the witness cannot belong to a two-leaf star with two selected vertices.These single-deletion failures establish inclusion minimality: two-star formation is upward monotone, so no proper subset of  $S$  can form if every  $S\\setminus\\{v\\}$  fails.Consequently,\n$$|S|=12r,\\qquad\n\\beta_2(G_r)=11r,\\qquad\n\\boxed{\\mathrm{SF}_2(G_r)-\\beta_2(G_r)\\ge r=\\frac{|V(G_r)|}{20}.}$$\nUsing the previously proved upper bound only for the permitted  $r=1$  conclusion gives\n$$\\mathrm{SF}_2(H)-11\n\\le \\left\\lfloor\\frac{140}{71}\\right\\rfloor=1.$$\nTogether with the twelve-vertex minimal forming set, this yields\n$$\\boxed{\\mathrm{SF}_2(H)=12.}$$\n3. Raw-byte integrity of the eight-file snapshotI decoded the attachment’s base64 fields directly into a fresh temporary source directory, without newline normalization. All eight decoded files matched both their stated byte counts and their stated SHA-256 hashes. All had zero carriage-return bytes.After the checker execution, I compared all eight source files against the original decoded payload again. All remained unchanged.FileBytesVerified SHA-256   docs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md8,368037ec8ec945616e69f6d71684350c41132a55d2858bb11dc4fc1450e32df441f  develop/fixtures/twenty-vertex-subcubic-core.json2,36535126a8771c526cfcbdcb75ea4db2a191bd5b48efd8de219994ca7792661418f  develop/twenty_vertex_subcubic.py1,239c3cd7ee4b08b74c2d7f1884768bae2a182e0dba5bbb08998a8a003dc01a66182  scripts/check_twenty_vertex_subcubic.py8,9878290f81d552b9849448fa3be0f07e1153ad18f7cf78bcd946f308fc9cde3d9eb  output/twenty-vertex-subcubic-check.json2,477866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860   README.md81,1644172e85c643755f3b6d2d844879edec8643d0e2f9fedb62bb6282b1722c5fc92   docs/COMPLETION_20261112.md86,484be22acb493cbaab4a7d1403f49c85c85e975d36defdab287b5789490b4abaa86manuscript/starforming-gap.tex105,8786c3335c178232ea6d53fa5eea3fcbc43f60c5f7709ae4330c25224aae4807c76Total decoded source size: 296,962 bytes.4. Actual original-checker executionI executed the supplied checker once, without changing its source, using Python 3.12.14. From the decoded source directory, the command was:Bashenv -u PYTHONOPTIMIZE python3 -B scripts/check_twenty_vertex_subcubic.py \\\n  --output /workspace/scratch/9872765313c3/twenty-vertex-audit-51pju7s6/fresh/twenty-vertex-subcubic-check.jsonRemoving PYTHONOPTIMIZE and omitting optimization flags ensured assertions were enabled. The checker also contains its own __debug__ guard.Execution resultObserved valueOriginal-checker execution attempts1Successful executions1Failed executions / retries0 / 0Exit code0Reported assertion failures or execution errors0Fresh report size2,477 bytesReference report size2,477 bytesByte-for-byte comparisonIdenticalMismatched byte positions0Fresh and reference report SHA-256866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860Executed counts and their precise meaningsReport counterCountScopeliteral_subsets_checked2,097,152Every one of the  $2^{20}$  subsets of  $F$ , and every one of the  $2^{20}$  subsets of  $H$ cycle_eight_set_candidates495All  $\\binom{12}{8}$  cycle selectionscycle_eight_set_survivors3The three valid saturated cycle patternsexact_arbitrary_attachment_optima56Eight one-block/exterior comparisons at each exterior order  $0,\\ldots,6$ nonbipartite_exteriors13Specifically, thirteen sampled exteriors containing triangles; this counter uses triangle detectioncyclic_family_certificates20 $r=1,\\ldots,16,32,64,128,256$ family_vertices_checked12,320Total vertices across those twenty family instancesdeletion_failure_certificates7,392Explicit failure witnesses for every selected-vertex deletion across those instancesliteral_family_minimal_sets4Physical-star tests for the family instances  $r=1,2,3,4$ , including their selected-vertex deletionsvertex_deletion_connectivity_checks2,720Every vertex deletion for  $r=1,\\ldots,16$ arbitrary_multiport_certificates20Four port-interface samples at each  $r=2,3,5,9,32$ ; dissociation witnesses, not unrestricted exact optimizationinvalid_inputs_rejected4 $0,-1,1.5,\\mathrm{True}$ The block enumerations found 82,438 valid dissociation subsets of  $F$  and 73,249 of  $H$ , with maximum cardinality eleven in each.For further precision, the executed source also performs:Three small residual-core exact solves and two recursive base-block exact solves.Two top-level exact() calls per attachment comparison, making 117 top-level exact() calls overall. Internal memoized recursion calls are not counted in the report.An initial literal minimality check of  $H$ , separately from the four counted family-loop checks.Sixteen connectivity checks without a deleted vertex, separately from the 2,720 vertex-deletion checks.I inspected the subset recurrence, exact optimizer, and physical-star predicate. Their logic correctly implements the stated mathematical properties. The larger examples certify the displayed sets; they do not compute exact general- $r$  SF values.5. Claim scopeThe new abstract passage, manuscript subsection, README, and completion preface consistently claim an explicit inclusion-minimal forming set of size  $12r$ , giving\n$$\\mathrm{SF}_2(G_r)\\ge12r.$$\nThey do not claim that this selected set has maximum cardinality for general  $r$ . The exact general- $r$  SF value is explicitly left open.The comparison with the earlier internal coefficient is correctly a lower-family improvement:\n$$\\frac1{20}>\\frac1{22}.$$\nI have not extended this audit to the earlier family, the universal upper-bound proof, or other results in the manuscript. No new global-priority or sharp-class-coefficient claim is needed for the audited theorem.The referenced output/twenty-vertex-subcubic-review.json is not among the eight supplied files. I did not use that reference as evidence of a prior review.Required change for acceptance of the complete stated source set: explicitly preserve the exterior induced graph in Proposition 3 and align the manuscript’s composition statement. The block proof, cyclic construction for every  $r\\ge1$ , minimality proof, generator, and successful exact-report reproduction require no mathematical or algorithmic correction.   ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.mdDocumentOpen filetwenty-vertex-subcubic-core.jsonCodeOpen filetwenty_vertex_subcubic.pyCodeOpen file5 more\n",
+    "verdict": "FIXABLE_GAPS: exterior-induced-graph hypothesis missing; core and all-r cyclic proofs accepted"
+  },
+  "independent_execution": {
+    "performed_by_initial_reviewer": true,
+    "original_checker_executions": 1,
+    "exit_code": 0,
+    "unchanged_original_checker": true,
+    "report_byte_identical": true,
+    "report_bytes": 2477,
+    "report_sha256": "866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860",
+    "final_prose_correction_preserves_fixture_generator_checker_report_bytes": true,
+    "final_reviewer_execution_scope": "See full_response; no fresh checker execution assumed."
+  },
+  "local_execution": {
+    "at": "2026-11-12T13:16:20.996344+00:00",
+    "command": "python3 scripts/check_twenty_vertex_subcubic.py --output output/twenty-vertex-subcubic-check.json",
+    "exit_code": 0,
+    "report_sha256": "866d7dd507e8cf6a26227eb682d5f0a173f2925ab7669161626aeed9283bf860",
+    "counts": {
+      "arbitrary_multiport_certificates": 20,
+      "cycle_eight_set_candidates": 495,
+      "cycle_eight_set_survivors": 3,
+      "cyclic_family_certificates": 20,
+      "deletion_failure_certificates": 7392,
+      "exact_arbitrary_attachment_optima": 56,
+      "family_vertices_checked": 12320,
+      "invalid_inputs_rejected": 4,
+      "literal_family_minimal_sets": 4,
+      "literal_subsets_checked": 2097152,
+      "nonbipartite_exteriors": 13,
+      "vertex_deletion_connectivity_checks": 2720
+    },
+    "full_run_completed": true,
+    "no_Lean_execution": true
+  },
+  "working_manuscript_PDF": {
+    "pages": 29,
+    "all_pages_rendered": true,
+    "new_section_pages": [
+      22,
+      23
+    ],
+    "contact_sheets": [
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/subcubic-core-extensions-20261112/contact-1.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/subcubic-core-extensions-20261112/contact-2.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/subcubic-core-extensions-20261112/contact-3.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/subcubic-core-extensions-20261112/contact-4.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/subcubic-core-extensions-20261112/contact-5.png"
+    ],
+    "pdf_sha256": "c971c3d187bbb418ac947d4dd0530c0c835f9bdf05d17d5730953f80b070c96b",
+    "text_has_new_result": true,
+    "visual_inspection": "passed; all latest contact sheets and changed page22 inspected; no clipping/overlap",
+    "all_29_pages_visually_inspected": true,
+    "new_pages_22_23_inspected_at_full_resolution": true,
+    "compile_passes": 2
+  },
+  "applied_corrections": [
+    "Explicit unchanged induced exterior in general attachment proposition and manuscript",
+    "README/completion prefaces carry the fixed exterior condition",
+    "Explain port-edge omission permits owner12 in the first and last rows"
+  ],
+  "proved_claims": [
+    "beta(F)=beta(H)=11 via exhaustive structural three-case cycle argument",
+    "port-avoiding11set and Hamiltoncycle ofF",
+    "exact11r+beta(A) for arbitrary port attachments with unchanged induced exterior",
+    "allr>=1 two-connected bipartite family n20r,m28r,delta2,Delta3,beta11r,canonical minimalS12r",
+    "allr gap>=n/20; r1 SF12 via existinguniversalupper"
+  ],
+  "open": [
+    "exactSF(G_r) for generalr",
+    "sharp unrestricted and two-connected subcubic coefficients",
+    "generalpartialtemplate8b/3",
+    "restricted regular selected-star sharpness",
+    "simultaneousphysicalmultiHall, unit5/6, arbitrary-width gridtripleequality"
+  ],
+  "scope": [
+    "Improves earlier INTERNAL n/22lowerfamily; no globalpriority or sharpness assertion",
+    "Elementary restriction-and-union principle; explicit robust block is the construction",
+    "Larger instances are actual certificates, not exact generalSF optimizations",
+    "No Lean, email, MacStudio, submission or Octoberpaperchange"
+  ]
+}

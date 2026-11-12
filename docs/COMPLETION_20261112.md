@@ -1,5 +1,21 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Two-connected subcubic gap at least order/20, with exact dissociation composition
+
+The [twenty-vertex block](ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md) yields,
+for every r>=1, a two-connected bipartite graph of minimum degree2 and maximum
+degree3 with n=20r, beta_2=11r and an explicit inclusion-minimal star-forming
+set of size12r. Thus the gap is at least n/20, improving the lower coefficient
+of our earlier exact n/22 family. A structural twelve-cycle/two-square argument
+proves beta_2=11 per block. An optimum avoids both ports, so arbitrary port
+attachments preserve exact dissociation addition, including an arbitrary
+outside graph whose induced subgraph stays unchanged. A Hamilton cycle proves the block's two-connectivity.
+Exact SF for generalr and the sharp class coefficient remain open; the
+unrestricted upper bound stays7/71. See the working manuscript, the standalone
+`scripts/check_twenty_vertex_subcubic.py`, and the exact review scope in
+`output/twenty-vertex-subcubic-review.json`.
+
+
 ## Square owner cores: compatible8b/3 template and conditional5/51 graph bounds
 
 The [complete proof](SQUARE_CORE_TEMPLATE_COMPENSATION.md) proves

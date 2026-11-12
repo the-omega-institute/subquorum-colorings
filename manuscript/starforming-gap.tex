@@ -31,6 +31,9 @@ maximum-cardinality minimal two-star-forming set admits a fixed disjoint
 witness extraction whose actual owner core consists of four-cycles,
 isolated edges and isolated vertices, a compatible witness construction
 improves the gap bound to $\lfloor5n/51\rfloor$.
+A robust twenty-vertex block gives two-connected bipartite graphs of
+minimum degree two and maximum degree three with exact dissociation number
+$11r$ and a minimal forming set of size $12r$, hence gap at least $n/20$.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1655,6 +1658,107 @@ The hypothesis concerns the actual extracted core. Removing one owner from
 a four-cycle can leave a three-vertex path, so the hypothesis need not pass
 to a later extraction. The general partial-template bound
 $\diss(H)\ge\lceil8b/3\rceil$ remains an open question.
+
+\subsection{A robust subcubic block and a lower coefficient $1/20$}
+
+The unrestricted upper bound has a constructive lower counterpart. Define
+$H_{20}$ on the layers $I=\{0,1,2,3\}$, $X=\{4,\ldots,11\}$ and
+$C=\{12,\ldots,19\}$. Each $i\in I$ is adjacent to $4+2i,5+2i$, and
+each $x\in X$ is adjacent to $x+8$. Add the matching
+$\{4\,11,5\,9,6\,8,7\,10\}$ and the complete bipartite squares
+$\{12,13\}\times\{16,19\}$ and $\{14,15\}\times\{17,18\}$.
+There are no other edges. The set
+\[
+ A=\{0,1,8,9,10,11,12,13,14,15\}
+\]
+is one bipartition class. Put $F_{20}=H_{20}-4\,12$ and designate
+$4,12$ as its ports.
+
+\begin{lemma}\label{lem:twenty-block}
+The graphs $F_{20}$ and $H_{20}$ have dissociation number eleven, attained by
+\[
+ D=\{0,2,3,6,7,9,11,13,14,15,16\},
+\]
+which avoids both ports. The graph $F_{20}$ is two-connected.
+\end{lemma}
+\begin{proof}
+The graph on $I\cup X$ is the twelve-cycle
+$(0,4,11,3,10,7,1,6,8,2,9,5)$. Every three consecutive cycle vertices
+contain an omission from a dissociation set, so at most eight cycle
+vertices can be selected. Each core square contributes at most two.
+A twelve-set would therefore use eight cycle vertices and four core vertices.
+With four omissions on the cycle, every gap between successive omissions
+has at most three edges and the gaps sum to twelve. All gaps equal three,
+so the omissions form one residue class modulo three. The three selected
+cycle patterns and their possible core vertices are
+\[
+\begin{array}{c|c|c}
+\text{cycle selection}&\text{available core}&\text{core upper bound}\\\hline
+X&\{12\}&1\\
+I\cup\{5,7,8,11\}&\{12,14,17,18\}&3\\
+I\cup\{4,6,9,10\}&\{12,13,15,16,19\}&3.
+\end{array}
+\]
+In the first row each witness is paired with its witness neighbour;
+in the other rows every selected witness is paired with its helper.
+Its owner is therefore forbidden, except that the removed edge allows
+owner $12$ in the first and last rows. The middle available core is an isolate and
+a three-vertex path; the last is a square and an isolate. This excludes
+a twelve-set. The displayed $D$ induces the five edges
+$2\,9,3\,11,6\,14,7\,15,13\,16$ and the isolate $0$.
+It remains valid after restoring $4\,12$, proving both exact values.
+Finally $F_{20}$ has the Hamilton cycle
+\[
+ (4,0,5,13,19,12,16,8,2,9,17,15,18,14,6,1,7,10,3,11).
+\]
+Deleting one vertex leaves a connected spanning path, proving two-connectivity.
+\end{proof}
+
+The port-avoiding optimum gives an exact composition rule. If $r$ disjoint
+copies of $F_{20}$ are joined to each other and to an arbitrary disjoint
+graph $Q$, with all new endpoints inside a block restricted to its two
+ports, and with the induced graph on $Q$ unchanged, the resulting graph has
+dissociation number $11r+\diss(Q)$.
+Restoring a port edge within a block is also permitted. Indeed, restrictions
+of any dissociation set give the upper bound; copies of $D$ and an optimum
+of $Q$ attain it, since every new edge meeting a block has an unselected
+endpoint. This rule imposes no degree or bipartiteness condition on $Q$.
+It does not assert additivity of $\SF$ under the same arbitrary attachments.
+
+\begin{theorem}\label{thm:twenty-cycle}
+For every integer $r\ge1$ there is a two-connected bipartite graph $G_r$
+of minimum degree two and maximum degree three such that
+\[
+ |V(G_r)|=20r,\qquad \diss(G_r)=11r,\qquad
+ \SF(G_r)\ge12r,\qquad \SF(G_r)-\diss(G_r)\ge |V(G_r)|/20.
+\]
+\end{theorem}
+\begin{proof}
+Take copies $F_i$ indexed modulo $r$ and add $4_i\,12_{i+1}$.
+For $r=1$ this restores the deleted edge; for $r=2$ the two joining edges
+are distinct. The inherited bipartition has classes of size $10r$.
+Each block has four degree-two helpers and sixteen degree-three vertices
+after joining, giving $28r$ edges. The composition rule gives $\diss=11r$.
+
+For $r\ge2$, each block remains connected after any single vertex deletion,
+and at most one joining edge is lost, since the ports are distinct.
+Contracting the surviving blocks gives a cycle with at most one edge
+removed, with two parallel quotient edges when $r=2$. It remains connected.
+For $r=1$, the spanning Hamilton cycle from the lemma suffices.
+
+Select all helpers and owners. Every outside witness has its helper and
+owner selected, the owner of $4_i$ now being $12_{i+1}$. Deleting a helper
+leaves that vertex with no selected neighbour. The witness-to-owner map
+is still bijective; deleting any owner leaves its witness with only an
+isolated selected helper. Thus every deletion destroys formation.
+This is a minimal forming set of size $12r$, proving the gap bound.
+\end{proof}
+
+For $r=1$, Theorem~\ref{thm:subcubic} gives $\SF(H_{20})=12$.
+The exact value of $\SF(G_r)$ for general $r$ is not established here.
+Together with the unrestricted upper bound, these constructions place the
+asymptotic extremal coefficient for two-connected bipartite graphs of
+minimum degree two and maximum degree three between $1/20$ and $7/71$.
 
 \subsection{Minimum-degree asymptotic sharpness}
 

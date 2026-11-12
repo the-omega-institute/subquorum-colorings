@@ -1,0 +1,114 @@
+{
+  "counts": {
+    "arbitrary_multiport_certificates": 20,
+    "cycle_eight_set_candidates": 495,
+    "cycle_eight_set_survivors": 3,
+    "cyclic_family_certificates": 20,
+    "deletion_failure_certificates": 7392,
+    "exact_arbitrary_attachment_optima": 56,
+    "family_vertices_checked": 12320,
+    "invalid_inputs_rejected": 4,
+    "literal_family_minimal_sets": 4,
+    "literal_subsets_checked": 2097152,
+    "nonbipartite_exteriors": 13,
+    "vertex_deletion_connectivity_checks": 2720
+  },
+  "cycle_cases": [
+    {
+      "available_core": [
+        12,
+        13,
+        15,
+        16,
+        19
+      ],
+      "core_beta": 3,
+      "selected_cycle": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        9,
+        10
+      ]
+    },
+    {
+      "available_core": [
+        12,
+        14,
+        17,
+        18
+      ],
+      "core_beta": 3,
+      "selected_cycle": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        11
+      ]
+    },
+    {
+      "available_core": [
+        12
+      ],
+      "core_beta": 1,
+      "selected_cycle": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "deterministic_certificate_sha256": "4b5e33574391f8f103a38fc978e920edd002856758c9c8c018365a37d1eff806",
+  "literal_block_enumeration": {
+    "F": {
+      "beta": 11,
+      "port_profiles": {
+        "(0, 0)": 11,
+        "(0, 1)": 11,
+        "(0, 2)": 11,
+        "(1, 0)": 11,
+        "(1, 1)": 11,
+        "(1, 2)": 11,
+        "(2, 0)": 11,
+        "(2, 1)": 11,
+        "(2, 2)": 11
+      },
+      "valid_subsets": 82438
+    },
+    "H": {
+      "beta": 11,
+      "port_profiles": {
+        "(0, 0)": 11,
+        "(0, 1)": 11,
+        "(0, 2)": 11,
+        "(1, 0)": 11,
+        "(1, 1)": -1,
+        "(1, 2)": -1,
+        "(2, 0)": 11,
+        "(2, 1)": -1,
+        "(2, 2)": 11
+      },
+      "valid_subsets": 73249
+    }
+  },
+  "schema_version": 1,
+  "scope": {
+    "exact_optima": "Two literal2^20 block enumerations and56 one-block/exterior exact recursion comparisons.",
+    "general_proofs": "Note proves beta(F)=11, arbitrary port composition, and all-r topology/minimality/gap.",
+    "larger_models": "Actual dissociation and minimal-set certificates; no large exact SF optimisation.",
+    "no_Lean_or_submission": true,
+    "open": "Exact SF(G_r) for generalr, sharp subcubic coefficient, general8b/3 template and arbitrary grid equality."
+  }
+}
