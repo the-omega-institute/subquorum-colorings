@@ -1,5 +1,33 @@
 # Current continuation
 
+The [exact phase-budget classification and construction ceiling](docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md)
+now refine the unrestricted result to
+`SF_2(G)-beta_2(G)<=floor(8n/81)-1_{n=81 mod162}` for every nonempty
+bipartite graph of maximum degree at most three. The real coefficient stays
+8/81. The fixed-extraction budget has exact zero-set conditions and
+`sigma>=N_O/12+N_D/6`, giving
+`81d<=8n-3sigma<=8n-(N_O+2N_D)/4`. Positive unrounded equality would require
+`n=162k,d=16k`; existence of such graphs remains open.
+
+A connected50-vertex template has exact maximum26 in each of the two
+one-core-side QUOTIENT families and in every auxiliary phase with optimal
+residual core, while a separate unrestricted dissociation witness has27.
+Thus optimizing these three families, including componentwise optimization,
+cannot improve their universal13b/5 guarantee. This is a limit of the stated
+families; no unrestricted optimum or graph-sharpness is claimed.
+
+Exact20-file independent review returned ACCEPT, including manuscript
+subsection5.3. The original full new checker ran independently, exit0 in16.115s;
+its1462-byte report was byte-identical and all19 non-report source hashes
+were unchanged. The reviewer reported an abbreviated unrelated Python-startup
+warning; the receipt preserves the exact response and its evidence limits.
+Locally the checker ran exit0 in11.3837s with empty stderr:43,803 minimal
+selections,5,200 exact templates,30,990 phases,614 physical class patterns,
+64 quotient subsets and8 exact50-vertex residual controls. Larger unions
+check certificates. See `output/phase-budget-equality-review.json` and
+`output/phase-budget-equality-check.json`. The working manuscript contains
+complete proofs; the October submitted manuscript remains unchanged.
+
 The [sharp odd-cycle phase compensation lemma](docs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.md)
 proves the unrestricted bound `|S|-beta_2(G)<=floor(8n/81)` for every
 inclusion-minimal two-star-forming S in every finite simple bipartite graph

@@ -1,5 +1,44 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Exact budget equality, integer refinement and a construction ceiling
+
+The [exact owner-budget theorem](PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md)
+classifies sigma=0: ordinary phase classes are unions of whole monochromatic
+core C4 components; each distinguished class has such components plus exactly
+two remaining vertices. The two vertices need not be adjacent. Violating
+classes contribute at least1/12 and1/6, respectively. Thus
+`sigma>=N_O/12+N_D/6` and the same constructions give
+`5beta_2(template)>=13b+3sigma`, yielding
+`81d<=8n-3sigma<=8n-(N_O+2N_D)/4` for the original fixed extraction.
+These are budget equalities and quantitative witness constraints, not
+an equality-graph classification or vertex-edit stability theorem.
+
+Positive unrounded equality81d=8n forces
+`n162k,d16k,a=p=2k,b30k,b3=0,u62k,R32k,S98k,beta82k` for k>=1.
+The parity proof yields the unconditional refinement
+`SF_2-beta_2<=floor(8n/81)-1_{n=81 mod162}` for every nonempty
+bipartite maximum-degree-three graph. The asymptotic8/81 coefficient
+has not changed, and equality-graph existence remains open.
+
+A connected50-vertex template has exact value26 within each of the two
+specified one-core-side QUOTIENT construction families and every full
+auxiliary phase with exact residual optimization, but an explicit
+unrestricted dissociation set has27. Its sigma is zero. Disjoint unions
+extend this precise method obstruction to all scales; no connected50t
+claim for t>1, unrestricted beta50 value or arbitrary one-core-side
+optimization claim is made.
+
+Independent exact20-file review ACCEPT includes the final manuscript
+subsection5.3. The unchanged full new checker ran with assertions, exit0
+in16.115s; its fresh1462-byte report was byte-identical and19 non-report
+source files were unchanged. The reviewer response abbreviates an unrelated
+spreadsheet-startup stderr warning; that limitation is explicit in
+`output/phase-budget-equality-review.json`, which retains the full response.
+Local checker exit0 in11.3837s, empty stderr. The21-page manuscript was
+compiled twice and visually checked. No Lean, email or submission.
+All outstanding collaboration problems listed below remain tracked.
+
+
 ## Current unrestricted bound8/81 and sharp phase coefficient1/3
 
 The complete [cycle-event pairing proof](SHARP_ODD_CYCLE_PHASE_COMPENSATION.md)

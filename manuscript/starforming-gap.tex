@@ -1040,6 +1040,144 @@ the extracted core is induced, so its cycles obey the same girth
 restriction for every minimal $S$.
 \end{proof}
 
+\subsection{Equality in the phase budget and a construction limit}
+
+Keep the cycle losses $\rho$ from Lemma~\ref{lem:partial-template} and,
+for its template helper count $b'$, put
+$\sigma=b'/6-o/3-\rho\ge0$. A class is ordinary if it is not one of
+the $2o$ distinguished classes. Let $N_O$ count ordinary classes that
+are not partitioned into whole monochromatic core squares. Let $N_D$
+count distinguished classes that do not consist of such squares and
+exactly two other vertices.
+
+\begin{lemma}\label{lem:phase-slack}
+For this fixed allocation,
+\[
+ \sigma\ge\frac{N_O}{12}+\frac{N_D}{6},\qquad
+ \sigma=0\ \Longleftrightarrow\ N_O=N_D=0.
+\]
+The two remaining vertices in a distinguished class need not be adjacent.
+Moreover,
+\[
+ 81(|S|-\diss(G))\le8n-3\sigma
+                   \le8n-\frac{N_O+2N_D}{4}.
+\]
+\end{lemma}
+\begin{proof}
+For a class $U$, remove its monochromatic core cycles, leaving $r_U$
+vertices, and let $q_U$ mixed losses be assigned to it. The disjoint
+supports give $q_U\le\lfloor r_U/3\rfloor$. A monochromatic cycle $K$
+has slack $|K|/12-\operatorname{loss}(K)$ equal to zero for a square
+and at least $1/2$ otherwise. Each mixed loss is at most $1/12$.
+For an ordinary class its budget margin is therefore at least
+\[
+ \sum_{K\subseteq U}
+   \bigl(|K|/12-\operatorname{loss}(K)\bigr)
+   +(r_U-q_U)/12,
+\]
+where the sum is over its monochromatic core cycles. If any non-square
+occurs this is at least $1/2$. Otherwise it is zero exactly when $r_U=0$;
+for $r_U\ge1$ it is at least $1/12$.
+A distinguished class has the same margin minus $1/6$. A non-square
+then gives at least $1/3$. If all removed cycles are squares, then
+$r_U\equiv2\pmod4$. For $r_U=2$ there is no mixed support and the margin
+is zero. For $r_U\ge6$ it is at least
+$(r_U-\lfloor r_U/3\rfloor-2)/12\ge1/6$.
+Summing the margins gives exactly $\sigma$, proving both assertions.
+
+The cycle score actually gives a phase set of size at least
+$5b'/2+o/3+\sigma$. Its convex comparison with the one-side construction
+therefore yields a template set of size at least $(13b'+3\sigma)/5$.
+Thus $Z_\sigma=5\diss(G)-5L-13b'-3\sigma\ge0$, and the exact identity
+from Theorem~\ref{thm:subcubic} becomes
+\[
+ 8n-81d=Z_\sigma+3\sigma+8r+19\alpha+19\pi+3e
+                  +8(e-b_3)+8q+38\tau.
+\]
+Every term is nonnegative. This proves the final inequality.
+\end{proof}
+
+\begin{corollary}\label{cor:subcubic-parity}
+For every nonempty bipartite graph of maximum degree at most three,
+\[
+ \SF(G)-\diss(G)\le
+ \left\lfloor\frac{8n}{81}\right\rfloor
+       -\mathbf1_{\{n\equiv81\pmod{162}\}}.
+\]
+Positive unrounded equality $81(|S|-\diss(G))=8n$ requires an integer
+$k\ge1$ with
+\[
+\begin{gathered}
+ n=162k,\quad d=16k,\quad a=p=2k,\quad b=30k,\quad b_3=0,\\
+ u=62k,\quad |R|=32k,\quad |S|=98k,\quad \diss(G)=82k.
+\end{gathered}
+\]
+These are necessary conditions.
+\end{corollary}
+\begin{proof}
+Equality in the last identity forces
+$\sigma=Z_\sigma=r=\alpha=\pi=e=q=\tau=b_3=0$.
+Hence $a=p=m$, and the previous identity $d+Z=8m+5\alpha+5\pi+
+2\tau+5e+8b_3$ gives $d=8m$. The vertex ledger yields
+$b=15m$, $u=31m$, $|R|=16m$, $|S|=49m$, $\diss(G)=41m$ and $n=81m$.
+Since $\sigma=0$, every ordinary class has order divisible by four.
+An auxiliary path with $h$ helper pairs has phase classes of order $h$,
+so $h$ is divisible by four. Every auxiliary cycle contributes an even
+number $2\ell$ of helpers. Therefore $b'=b$ is even, so $m=2k$.
+This proves the necessary conditions. Equality is consequently impossible
+when $n\equiv81\pmod{162}$, and integrality proves the improvement.
+\end{proof}
+
+\begin{theorem}\label{thm:construction-ceiling}
+There is a connected template on $50$ vertices with $b=10,o=3$ such
+that both optimized one-core-side quotient constructions have maximum
+$26$, every auxiliary-phase construction with an optimal residual core
+set has $26$, and an unrestricted dissociation set has size $27$.
+The same construction limit holds at every scale under disjoint union,
+even if these families are optimized separately by connected component.
+\end{theorem}
+\begin{proof}
+Start with the explicit $30$-vertex template following
+Lemma~\ref{lem:partial-template}. Delete the interface edge $(6,9)$.
+Add witnesses $30,\ldots,37$, owners $38,\ldots,45$ and helpers
+$46,\ldots,49$. Join $30+j$ to $38+j$ and to $46+\lfloor j/2\rfloor$
+for $0\le j\le7$. Add interface edges
+\[
+ (9,30),(31,32),(33,34),(35,36),(37,6),
+\]
+and core squares $(38,40,42,44)$ and $(39,41,43,45)$.
+Give $30+j$ colour $\lfloor j/2\rfloor\bmod2$, its owner the opposite
+colour, and its helper the colour opposite its witnesses. This extends
+the old bipartition and preserves the template. The old graph remains
+connected through the replacement path, and every new vertex connects
+to it. Helper degrees are two and all other degrees are three.
+The auxiliary cycle lengths are now $12,4,4$.
+
+Each one-core-side quotient construction has base $25$ and quotient
+lengths $3,1,1$. The cyclic-run calculation gives optimized gains
+$1,0,0$, respectively, so its exact maximum is $26$ on either side.
+Every phase leaves the old $2P_3$, of dissociation number four, and
+exactly one new square, of dissociation number two. It therefore gives
+$10+10+6=26$ for every phase.
+
+Take the old explicit $17$-set and add
+\[
+ \{30,32,34,36,39,41,46,47,48,49\}.
+\]
+The new part induces four helper--witness edges and the edge $(39,41)$.
+The only old--new boundary edges are $(9,30)$ and $(6,37)$; vertices
+$9$ and $37$ are omitted. Thus the union is dissociation and has size
+$27$. Taking $t$ disjoint copies gives construction maximum $26t$ and
+an explicit $27t$-set for every $t\ge1$. No unrestricted optimum or
+connected $50t$-vertex family for $t>1$ is asserted.
+\end{proof}
+
+In this graph $\sigma=0$: each phase class of the elongated odd cycle
+contains one square and two other vertices, and each other distinguished
+class has its two vertices. Thus equality of the class budgets leaves
+room for gains outside the three construction families. The sharp graph
+coefficient and the optimal partial-template coefficient remain open.
+
 \subsection{Minimum-degree asymptotic sharpness}
 
 
