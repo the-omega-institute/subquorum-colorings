@@ -1,9 +1,35 @@
 # Current continuation
 
-The [vertex-penalty theorem](docs/BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md)
+The [balanced-side theorem](docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md)
+proves `71(|S|-beta_2(G)) <= 7n` for every minimal two-star-forming set
+in every finite simple bipartite maximum-degree-three graph, including the
+empty graph. Thus the current unrestricted bound is `SF_2-beta_2<=floor(7n/71)`.
+It improves51/517 by2/36707; sharpness and attainment remain open.
+
+A distribution of actual one-side sets has mean size11b/4-o/2 and gives every
+owner and witness marginal at most1/2. Path parity classes, cycle rotations
+and a matched-first endpoint rule cover quotient loops and parallel edges.
+Optimizing component options separately for each physical side gives a
+polynomial construction. Its improved vertex-cost lemma charges w(X)/2
+and leads to the exact nonnegative14n-142d ledger. The phase and side sets
+are compared; exterior and retained extensions remain separate candidates.
+
+Independent exact36-file audit ACCEPT and actual original two-checker
+execution are recorded in `output/balanced-side-review.json`.
+Local full checker:43,756 minimal-selection instances, including5,200 canonical
+template selections;28,635 costs,103,470 physical phases,76,545 conditional
+controls,580 exactweightedinstances on116smallmodels. Larger models check
+actual sets/allphases. Separate marginal controls:96shapes,1,312supports.
+There are0 new fullsetimprovements over51/517 in these finite controls;
+472 controls improve the older two-endpoint algorithm. The coefficient gain
+comes from the general proof. The26-page working manuscript has complete
+proofs and has been compiled twice, rendered and visually checked.
+October's submitted paper is unchanged. Full collaboration goal remains ACTIVE.
+
+The preceding [vertex-penalty theorem](docs/BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md)
 proves `517(|S|-beta_2(G)) <= 51n` for every minimal two-star-forming set
 in every finite simple bipartite graph of maximum degree at most three.
-The current unrestricted bound is `SF_2-beta_2 <= floor(51n/517)`, including
+That bound was `SF_2-beta_2 <= floor(51n/517)`, including
 empty graphs, without connectivity, minimum-degree, balance or selected-component
 conditions. Its gain over 15/152 is 3/78584; sharpness and attainment remain open.
 

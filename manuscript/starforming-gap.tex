@@ -22,10 +22,11 @@ in every bipartite graph of order $n$. The coefficient is sharp even for
 two-connected graphs of minimum degree two and maximum degree four. The
 proof constructs two dissociation sets from disjoint deletion witnesses.
 For maximum degree at most three we improve the bound uniformly to
-$\lfloor51n/517\rfloor$, with no restriction on the components induced
-by a minimal forming set. Paired phase-class margins, endpoint-event credits
-on good physical core paths, and boundary penalties in the phase expectation
-yield this improvement.
+$\lfloor7n/71\rfloor$, with no restriction on the components induced
+by a minimal forming set. Paired phase-class margins and endpoint-event
+credits strengthen the phase bound. Balanced witness marginals lower the
+witness charge in the one-side construction, whose potential is compared
+with the phase bound.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1384,19 +1385,72 @@ Compare this with $11b/4-o/2$, taking weights $3/5$ and $2/5$.
 Their maximum proves~\eqref{eq:joint-template}.
 \end{proof}
 
+\begin{lemma}\label{lem:balanced-side}
+There is a distribution on actual one-side dissociation sets of a partial
+ template with expected size $11b/4-o/2$. Each owner and each witness has
+ inclusion probability at most $1/2$; each helper has probability at most one.
+\end{lemma}
+\begin{proof}
+Choose a physical bipartition side fairly, and call its helpers eligible.
+Their order along an auxiliary component gives a path or cycle quotient:
+consecutive eligible helpers have one intervening opposite-side helper.
+For an auxiliary path choose either parity class $J$ of its eligible
+helpers fairly. For a cycle with $\ell$ eligible helpers, choose a uniformly
+rotated independent set of size $\lfloor\ell/2\rfloor$, retaining repeated
+rotations in the distribution. For $\ell=1$ the quotient has a loop and
+$J$ is empty; for $\ell=2$ it has parallel edges and either singleton
+is allowed. An eligible path helper has $J$-probability $1/2$; on a cycle
+this probability is $p=\lfloor\ell/2\rfloor/\ell\le1/2$.
+
+Include all owners on the chosen physical side, both witnesses of each
+helper in $J$, and all helpers outside $J$. At each opposite-side helper
+include one witness whose interface mate was not double-selected.
+At least one is available, since consecutive eligible helpers cannot
+both lie in $J$. At a path endpoint with one unmatched witness, choose
+the matched witness whenever available, otherwise the unmatched one.
+For an isolated helper choose fairly. On a cycle choose fairly when
+both witnesses are available; interior path helpers have only one choice.
+
+These are dissociation sets. Owners on one physical side have no core
+edges between them. A double-selected witness meets its owner and has
+its helper omitted. A singleton witness meets its helper and has its
+owner omitted. No interface edge has both endpoints selected. An included
+eligible helper has no selected witness. These observations also prove
+compatibility between auxiliary components, even when core edges join
+their owners.
+
+An owner has marginal $1/2$. Conditional on its helper being eligible,
+a witness is included with probability at most $1/2$. Conditional on
+the other side, an interior path helper's two eligible neighbours are
+in opposite parity classes, so each witness is forced with probability
+$1/2$. At a path endpoint the matched-first rule also gives both
+witnesses probability $1/2$; an isolated helper is fair. On a cycle
+with $\ell\ge2$, the two neighbouring membership events are disjoint
+and have probability $p$. A given witness is forced with probability
+$p$ and otherwise chosen fairly with probability $(1-2p)/2$, totalling
+$1/2$. For $\ell=1$, $J$ is empty and the choice is fair. Thus every
+witness has unconditional marginal at most $1/2$.
+
+In a component with $h$ helpers, $k$ eligible, the size is
+$3k+2(h-k)+|J|$. Averaging the physical side gives $5h/2$ for the
+first two terms. A path contributes $\mathbb E|J|=h/4$; a cycle
+contributes $\lfloor h/4\rfloor$, losing $1/2$ exactly when $h/2$
+is odd. Summing proves the expected size $11b/4-o/2$.
+\end{proof}
+
 \begin{lemma}\label{lem:vertex-penalties}
 Give the vertices of a partial template nonnegative costs $w_v$. Put
 $w(K)=\sum_{v\in K}w_v$ and $\Phi(D)=|D|-w(D)$.
 There is an actual dissociation set $D$ satisfying
 \[
  \Phi(D)\ge\frac{13b}{5}+\frac{3\sigma}{5}+\frac{t_g}{10}
-                   -w(I)-\frac{w(C)}2-\frac{7w(X)}{10}.
+                   -w(I)-\frac{w(C)+w(X)}2.
 \]
 \end{lemma}
 \begin{proof}
 Use all auxiliary phases, without replacing good components. For a phase
 let $Y$ be its $b$ witnesses and $A$ its $b$ retained owners. The pointwise
-cycle and endpoint score $s$ of the preceding lemma satisfies
+cycle and endpoint score $s$ from the proof of Lemma~\ref{lem:joint-margin} satisfies
 $\diss(H[A])\ge2b/3+s$, with $\mathbb Es\ge-\rho+t_g/6$.
 If $Z\subseteq A$ is a residual optimum, nonnegative costs give
 \[
@@ -1413,25 +1467,32 @@ Conditional expectation on $s-w(Y)-w(A)$ finds such a phase; its penalties
 are one-bit events. The unweighted residual optimum then satisfies the
 same pointwise inequality.
 
-The two one-side sets have total size at least $11b/2-o$.
-Each owner belongs to exactly one of them, while helpers and witnesses
-belong to at most two. Their average potential is therefore at least
+By Lemma~\ref{lem:balanced-side}, the one-side distribution has expected
+potential at least
 \[
- O=\frac{11b}{4}-\frac o2-w(I)-\frac{w(C)}2-w(X).
+ O=\frac{11b}{4}-\frac o2-w(I)-\frac{w(C)+w(X)}2.
 \]
+It has a deterministic choice with at least this potential. For each
+physical side, enumerate the two path parity classes or all cycle
+rotations separately in each auxiliary component. For fixed $J$ choose
+a cheapest available singleton witness; this dominates the random rule.
+Choose the best component options and unite them. Their owners all lie
+on one physical side, so the union is compatible and potentials add.
+Comparing the two global sides gives the expected-potential guarantee
+without enumerating a Cartesian product of component choices.
 The largest potential among the phase set and these two actual sets
-is at least $(3F+2O)/5$, giving the assertion.
+is at least $(3F+2O)/5$, proving the assertion.
 \end{proof}
 
 \begin{theorem}\label{thm:joint-subcubic}
 Every bipartite graph of order $n$ and maximum degree at most three,
 and every minimal two-star-forming set $S$, satisfy
 \[
- 517\bigl(|S|-\diss(G)\bigr)\le51n.
+ 71\bigl(|S|-\diss(G)\bigr)\le7n.
 \]
 In particular,
 \[
- \boxed{\SF(G)-\diss(G)\le\left\lfloor\frac{51n}{517}\right\rfloor.}
+ \boxed{\SF(G)-\diss(G)\le\left\lfloor\frac{7n}{71}\right\rfloor.}
 \]
 \end{theorem}
 \begin{proof}
@@ -1460,10 +1521,10 @@ Choosing the larger surviving side gives a full-graph set of size at least
 $n/2-5b'/2+\Phi(D)$. Therefore
 \begin{align}
  \beta&\ge\frac n2+\frac{b'}{10}+\frac{3\sigma}{5}+\frac{t_g}{10}
-              -\frac{B_I}{2}-\frac{B_C}{4}-\frac{7B_X}{20}\notag\\
+              -\frac{B_I}{2}-\frac{B_C+B_X}{4}\notag\\
  &\ge\frac n2+\frac{b'}{10}+\frac{3\sigma}{5}
               -\frac{2t_g}{5}-\frac{t_b}{2}
-              -\frac{7(s_g+s_b)}{10}-\frac{3q}{2}.
+              -\frac{s_g+s_b}{2}-\frac{3q}{2}.
  \label{eq:joint-exterior}
 \end{align}
 This exterior extension and the retained-set extension are separate
@@ -1477,20 +1538,20 @@ Rearranging~\eqref{eq:joint-exterior} and using
 $t_b+s_b\le6\sigma$ and $4s_g\le b_G$ yields
 \begin{align*}
  T&\le r+2q+\frac{2Z}{5}+\frac{4t_g}{5}+t_b
-                +\frac{7(s_g+s_b)}5-\frac{6\sigma}{5}\\
+                +s_g+s_b-\frac{6\sigma}{5}\\
   &\le r+2q+\frac{2Z}{5}+\frac{4t_g}{5}
-                +\frac{36\sigma}{5}+\frac{7b_G}{20}\\
-  &\le r+2q+\frac{14Z}{5}.
+                +\frac{24\sigma}{5}+\frac{b_G}{4}\\
+  &\le r+2q+2Z.
 \end{align*}
-For the last step, $12/5$ times~\eqref{eq:joint-Z} supplies
-$36\sigma/5+6t_g/5+9b_G/5$, at least the required coefficients.
-Thus $W=5r+10q+14Z-5T$ is a nonnegative integer.
-Taking fourteen times~\eqref{eq:subcubic-cycle-ledger} minus ten times
-$n-10d=m+r+3(\alpha+\pi)+2e+q+5\tau$ gives
-\begin{align*}
- 102n-1034d={}&W+97r+241(\alpha+\pi)+144(e-b_3)\\
-             &+47b_3+92q+482\tau\ge0.
-\end{align*}
+For the last step, $8/5$ times~\eqref{eq:joint-Z} supplies
+$24\sigma/5+4t_g/5+6b_G/5$, at least the required coefficients.
+Thus $W_2=r+2q+2Z-T$ is a nonnegative integer.
+Taking twice~\eqref{eq:subcubic-cycle-ledger} minus twice
+\eqref{eq:subcubic-ledger} gives
+\[
+ 14n-142d=W_2+13r+33(\alpha+\pi)+20(e-b_3)
+             +7b_3+12q+66\tau\ge0.
+\]
 All these slacks, including $e-b_3$ and $\tau$, are nonnegative.
 Division by two proves the theorem, including the empty graph.
 \end{proof}
@@ -1901,17 +1962,19 @@ models, 5,200 exact small templates and every phase of larger prescribed
 templates, including loss and path supports in the same owner class. All signed literal words through path order six are classified; every phase
 of each good word is checked for the pointwise endpoint-score inequality.
 The vertex-penalty controls additionally check actual weighted candidates and
-physical exterior extensions on 43,684 minimal-selection instances, 28,635
+physical exterior extensions on 43,756 minimal-selection instances, 28,635
 cost assignments and 103,470 phase assignments; independent weighted optima
 are checked in 580 weighted instances arising from 116 template models of
-order at most ten; ten instances also receive literal subset crosschecks. Larger template controls
-check the actual candidates and all phases. The new proofs are not included in the earlier Lean formalization of the two-attachment
+order at most ten; ten instances also receive literal subset crosschecks. The total selections comprise all minimal sets in the graph controls and
+one canonical set in each of the 5,200 small templates. Separate balanced
+marginal controls check 96 auxiliary path/cycle shapes through 64 helpers,
+including the loop and parallel-edge quotient cases and path endpoints.
+Larger template controls check the actual candidates and all phases. The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 
 \paragraph{AI use.}
 Haobo Ma and Wenlin Zhang used AI tools for search, double-checking and proofreading.
 
-\clearpage
 \begingroup
 \small
 \begin{thebibliography}{9}

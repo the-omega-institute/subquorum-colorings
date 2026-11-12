@@ -1,0 +1,529 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T12:10:03.230580+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "372d5edf-6af3-422d-9cd4-a1dd27678159",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af5abfb-1788-83ec-b427-aaf95659eac0",
+    "usage_estimated": true
+  },
+  "source_manifest": [
+    {
+      "path": "docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md",
+      "bytes": 7964,
+      "sha256": "a4b2d62b341aa379ed937bf669e98f6bdc7e399a46c78ef91d619f665d8416c6"
+    },
+    {
+      "path": "docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md",
+      "bytes": 10027,
+      "sha256": "11bc037d367154f493bc219a72799a5c1376271ede39fac9664661ebcb0482fa"
+    },
+    {
+      "path": "docs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.md",
+      "bytes": 9478,
+      "sha256": "af97118185ebee2975943d7bb7a916aa090d73ec602ac9bfe53951dd86a59b58"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "develop/subcubic_zero_budget_repair.py",
+      "bytes": 4116,
+      "sha256": "306c9aa1192f6a34ab87b082cabe0d4f9d77aa13ecaa310afa4e36289b5470df"
+    },
+    {
+      "path": "develop/subcubic_phase_pairing.py",
+      "bytes": 5808,
+      "sha256": "5fb0351c8d4c8c44a8843e8367e88fe441f8c57116fb747c6ecb4a55de98cf7a"
+    },
+    {
+      "path": "develop/subcubic_phase_slack.py",
+      "bytes": 1790,
+      "sha256": "8d66f3cbeb03b1887bc4279438d757c4d1c86c76bf757ab4fea997dd14ea3e70"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    {
+      "path": "develop/subcubic_core_cycles.py",
+      "bytes": 3680,
+      "sha256": "eb5a055ade4830dc80cc64c58af1dfaadb7db1a968e8d7c7e11793a5e2acbff2"
+    },
+    {
+      "path": "develop/subcubic_odd_cycle_compensation.py",
+      "bytes": 4465,
+      "sha256": "8af9fcf1f0e8054472b28c8fb97d751cfc47f43f5020e2729c455745c91c2cf1"
+    },
+    {
+      "path": "scripts/check_zero_budget_repair.py",
+      "bytes": 10048,
+      "sha256": "e77142ef71255788d3ac3b8e8ccdf7097671ac678606749300d378c8a039ba96"
+    },
+    {
+      "path": "scripts/check_unrestricted_subcubic_gap.py",
+      "bytes": 9574,
+      "sha256": "73d6b2d8966fdf9c5555f4d8a4c4bc95f785d7aa8a475061390797b2463a6e1c"
+    },
+    {
+      "path": "scripts/check_subcubic_intrinsic_obstruction.py",
+      "bytes": 9946,
+      "sha256": "d9cf2cb89d693a29721ac6abab982204d220afa043595319a7f0fcce5fee1f6c"
+    },
+    {
+      "path": "scripts/check_odd_cycle_compensation.py",
+      "bytes": 13794,
+      "sha256": "7eeb632f8e878741deb9f16fa17437668cd605015a208a38fef5119192f80650"
+    },
+    {
+      "path": "develop/fixtures/three-cycle-phase-ceiling.json",
+      "bytes": 5292,
+      "sha256": "8242f12b98163f798fe0e9c69135eef54d8d8ddbc30e1ab5141c3944a345f53a"
+    },
+    {
+      "path": "develop/fixtures/three-construction-ceiling.json",
+      "bytes": 4339,
+      "sha256": "fd4a32e2917a4c98f1bbd0bc3959c89049bfacbd99e0dbd4d96dac4ea45ad389"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 96278,
+      "sha256": "06c173a227c1bc123551dd2a1b61b96ebe8915c01b2cec8d198222077535e5e2"
+    },
+    {
+      "path": "docs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md",
+      "bytes": 12732,
+      "sha256": "473bd0341e8d27281c92f4bcbd5e9a5d163237a03378e38fa3d87e34246eb431"
+    },
+    {
+      "path": "develop/subcubic_joint_margin.py",
+      "bytes": 8413,
+      "sha256": "f876b3e8e60769bdcf11401281105f74b3ebdee06472142b4baa554a8f8410bc"
+    },
+    {
+      "path": "scripts/check_joint_margin.py",
+      "bytes": 10783,
+      "sha256": "d54287d05a61d94a4b93058b2ca30c3c8b7cf417d47bce76e15be914e7f835bd"
+    },
+    {
+      "path": "docs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md",
+      "bytes": 13509,
+      "sha256": "12dcc4d590f0ce0bfe4d35d3e0de971a6ac3b1f49985c3c723547a4619c200ce"
+    },
+    {
+      "path": "develop/subcubic_two_endpoint.py",
+      "bytes": 9275,
+      "sha256": "4ebb7dcff535c03409380657cf2d65bcb2d28e73edd742c9aeb23dee690d3dde"
+    },
+    {
+      "path": "scripts/check_two_endpoint.py",
+      "bytes": 13624,
+      "sha256": "18f7de56340320c27ae8fe1c02e78fc07747e76175fb04941b72ffe85e7b3f4d"
+    },
+    {
+      "path": "output/two-endpoint-check.json",
+      "bytes": 2520,
+      "sha256": "1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096"
+    },
+    {
+      "path": "develop/subcubic_boundary_expectation.py",
+      "bytes": 4952,
+      "sha256": "2181cb806d2e22070a2d5ac62ab1d2e234dc3fab554a06725728c1fd594f1811"
+    },
+    {
+      "path": "scripts/check_boundary_expectation.py",
+      "bytes": 9812,
+      "sha256": "5a38361d2c472554153c7e01120509c4788bdb01d7b753ea03c60b1c127b5e50"
+    },
+    {
+      "path": "docs/BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md",
+      "bytes": 9819,
+      "sha256": "1628725b814185ac07d18fbb6f99a013fb4f5f1c026318c17b542ba266b14beb"
+    },
+    {
+      "path": "output/boundary-expectation-check.json",
+      "bytes": 1649,
+      "sha256": "3f5806edc8ac02fb125523cbed6c6b9ecb8af28d954dc505d8c5777d85da2e0b"
+    },
+    {
+      "path": "develop/subcubic_balanced_side.py",
+      "bytes": 4538,
+      "sha256": "9d90427cf88e95c7a48979740ff18b66dc1f599b5c5f19d42d90bbdf8279250e"
+    },
+    {
+      "path": "scripts/check_balanced_side.py",
+      "bytes": 9987,
+      "sha256": "2e819fa097b43f8187142699100abcff759f978dadae77be2c3cf1efc91c48ed"
+    },
+    {
+      "path": "scripts/check_balanced_marginals.py",
+      "bytes": 3115,
+      "sha256": "e4cb17a5df4a321873381b51c800a210da55597fd9291ef16fd8f2e63ab4e31d"
+    },
+    {
+      "path": "docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md",
+      "bytes": 10747,
+      "sha256": "a6fabf398110a62cafdec32e18f6c60dae791b3bc07148640fbbce5fc128857c"
+    },
+    {
+      "path": "output/balanced-side-check.json",
+      "bytes": 1743,
+      "sha256": "9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781"
+    },
+    {
+      "path": "output/balanced-marginals-check.json",
+      "bytes": 14726,
+      "sha256": "309273a573dfd3df582069e2979984736b0cc6d1d13dbf1b523a5f426e4efea6"
+    }
+  ],
+  "review_source_sha256": "750c37bdaa93da1d57ec59295a583c30a820df90c1ab1cba3382d69976bb623b",
+  "review_source_bytes": 426543,
+  "full_response": "FINAL ACCEPTThe editorial correction round is accepted. All three requested clarifications are correctly implemented, with no newly introduced defect.1. Exact 36-file snapshot auditI independently recomputed UTF-8 byte lengths and SHA-256 hashes for all 36 files in the supplied corrected snapshot and compared them with the initial manifest.36/36 files match their declared current snapshot metadata.ComparisonResultFiles in initial manifest36Files in corrected snapshot36Files changed2Files unchanged34Unexpected changes0Hash/byte discrepancies0The only changes are:FileInitial bytesCurrent bytesmanuscript/starforming-gap.tex96,22896,278docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md10,70710,747Both current hashes match the corrected manifest and the supplied exact diff's after-hashes.2. Three editorial correctionsCorrection 1 — Abstract attribution: PASSThe revised abstract now correctly separates the contributions:Paired phase-class margins and endpoint-event credits strengthen the phase bound.Balanced witness marginals lower the witness charge in the one-side construction.The potential of that construction is compared with the phase bound.This accurately reflects the proof architecture. The balanced marginal argument is not incorrectly attributed to the phase expectation.Correction 2 — Even-order paths: PASSThe standalone note now explicitly states:The graph P union Q consists of paths of even order and cycles of order divisible by four.This removes the previous ambiguity between even path order and even path length.Correction 3 — Parallel-edge quotient: PASSThe corrected text now states:the two maximum independent sets in the parallel-edge case are the singletons.This correctly distinguishes the two maximum independent sets from the empty set, which is independent but not maximum.3. Scope and execution provenanceThe supplied exact diff confirms that these are prose-only changes.No mathematical theorem or proof was changed.No algorithm or implementation was changed.No checker was changed.Neither generated report was changed.The universal  $71d\\le 7n$  claim, its hypotheses, empty-graph coverage, and open sharpness limitations remain unchanged.Execution distinction: The two-checker execution belongs to the initial audit, not this editorial round. The supplied initial audit records:CheckerExitRuntimeStderrcheck_balanced_side.py062.843965989 s0 bytescheck_balanced_marginals.py00.354758608 s0 bytesBoth fresh reports were byte-identical to their expected reports (1,743 and 14,726 bytes respectively).I did not rerun either unchanged checker. This final ACCEPT makes no new execution claim.Final disposition: ACCEPT.The corrected 36-file snapshot satisfies the requested editorial audit. Exactly two files changed, all 34 other files remain identical to the initial manifest, and all three clarifications are closed without changing the mathematics or implementation.\n",
+  "independent_execution": {
+    "verdict": "ACCEPT",
+    "full_response_read": true,
+    "oracle": {
+      "task_id": "69eb94dc-06f6-46c1-ba3d-6eb27988a2c7",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5aa50-9088-83ec-8e09-be0cc01be088",
+      "usage_estimated": true
+    },
+    "evidence_basis": "Full initial independent response; raw remote execution archive not downloaded. Final round is text-only and does not rerun unchanged checkers.",
+    "all36_files_reconstructed_and_hashed_reported": true,
+    "expected_both_reports_moved_and_paths_absent_reported": true,
+    "cwd": "/workspace/scratch/74112644f6a9/audit-source",
+    "assertions_enabled_reported": true,
+    "executions": [
+      {
+        "command": "python3 -B scripts/check_balanced_side.py",
+        "exit_code": 0,
+        "elapsed_seconds": 62.843965989000026,
+        "stderr": "",
+        "stderr_bytes": 0,
+        "stdout": "{\"status\": \"PASS\", \"bytes\": 1743, \"sha256\": \"9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781\"}\n",
+        "fresh_report_bytes": 1743,
+        "fresh_report_sha256": "9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781",
+        "direct_byte_comparison_reported_equal": true
+      },
+      {
+        "command": "python3 -B scripts/check_balanced_marginals.py",
+        "exit_code": 0,
+        "elapsed_seconds": 0.3547586080003384,
+        "stderr": "",
+        "stderr_bytes": 0,
+        "stdout": "{\"status\": \"PASS\", \"models\": 96, \"support_cases\": 1312, \"scope\": \"96 local auxiliary path/cycle shapes,1312physical-side/support cases through64helpers; exact witness marginals and mean cardinalities, including quotientloops/parallelcases and endpoints. General proof is separate; no all-template or large-optimum claim.\"}\n",
+        "fresh_report_bytes": 14726,
+        "fresh_report_sha256": "309273a573dfd3df582069e2979984736b0cc6d1d13dbf1b523a5f426e4efea6",
+        "direct_byte_comparison_reported_equal": true
+      }
+    ],
+    "other34_files_unchanged_after_execution_reported": true,
+    "code_checkers_reports_unchanged_by_editorial_corrections_locally_verified": true,
+    "editorial_only_changed_paths": [
+      "manuscript/starforming-gap.tex",
+      "docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md"
+    ],
+    "initial_full_response_sha256": "e772e37b4bcfc41db465a968a9545e8d5de1987bf64bae28b119841fb5f76b92",
+    "remote_execution_archive_downloaded": false,
+    "final_editorial_review_pending": false,
+    "at": "2026-11-12T12:10:03.186225+00:00",
+    "final_editorial_review": {
+      "verdict": "ACCEPT",
+      "oracle": {
+        "task_id": "372d5edf-6af3-422d-9cd4-a1dd27678159",
+        "conversation_id": null,
+        "pool": "chrono-chatgpt-pro-pool",
+        "model_label": "chatgpt-6-pro",
+        "observed_model_switcher": "gpt_6",
+        "observed_model_effort": "pro",
+        "chatgpt_url": "https://chatgpt.com/c/6af5abfb-1788-83ec-b427-aaf95659eac0",
+        "usage_estimated": true
+      },
+      "full_response_read": true,
+      "current36files_verified_reported": true,
+      "only_two_expected_text_files_changed_reported": true,
+      "other34_unchanged_reported": true,
+      "new_execution": false,
+      "response_sha256": "c45b301daa164de5b70245891a7b53df0dde5ebb39a203a92829005850af2900"
+    }
+  },
+  "local_executions": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_balanced_side.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 36.87124358303845,
+      "stdout": "{\"status\": \"PASS\", \"bytes\": 1743, \"sha256\": \"9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "scripts/check_balanced_marginals.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.25929212500341237,
+      "stdout": "{\"status\": \"PASS\", \"models\": 96, \"support_cases\": 1312, \"scope\": \"96 local auxiliary path/cycle shapes,1312physical-side/support cases through64helpers; exact witness marginals and mean cardinalities, including quotientloops/parallelcases and endpoints. General proof is separate; no all-template or large-optimum claim.\"}\n",
+      "stderr": ""
+    }
+  ],
+  "accepted_claims": [
+    "balanced physical-side distribution, witness and owner marginals<=1/2, expectedsize11b/4-o/2",
+    "polynomial component optimization without a Cartesian product or crosscomponent conflict",
+    "nonnegative potential>=13b/5+3sigma/5+tg/10-wI-(wC+wX)/2",
+    "physical exterior extension and retained extension remain separate full-graph candidates",
+    "W2>=0 and exact14n-142d nonnegative ledger",
+    "universal71(|S|-beta2(G))<=7n including empty graphs",
+    "current working manuscript Lemma23balanced/Lemma24penalties/Theorem25"
+  ],
+  "limitations": [
+    "sharp coefficient and attainment open",
+    "580weightedinstances on116smallmodels; larger actualsets/allphases only",
+    "finitecontrols show0 fullsetimprovements over51/517boundaryalgorithm;472overoldertwoendpointalgorithm",
+    "no newLean,cubicexistence orunitgridresult"
+  ],
+  "initial_mathematical_and_execution_audit": {
+    "oracle": {
+      "task_id": "69eb94dc-06f6-46c1-ba3d-6eb27988a2c7",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5aa50-9088-83ec-8e09-be0cc01be088",
+      "usage_estimated": true
+    },
+    "source_manifest": [
+      {
+        "path": "docs/ZERO_BUDGET_REPAIR_AND_STRICT_SUBCUBIC_BOUND.md",
+        "bytes": 7964,
+        "sha256": "a4b2d62b341aa379ed937bf669e98f6bdc7e399a46c78ef91d619f665d8416c6"
+      },
+      {
+        "path": "docs/PHASE_BUDGET_EQUALITY_AND_METHOD_CEILING.md",
+        "bytes": 10027,
+        "sha256": "11bc037d367154f493bc219a72799a5c1376271ede39fac9664661ebcb0482fa"
+      },
+      {
+        "path": "docs/SHARP_ODD_CYCLE_PHASE_COMPENSATION.md",
+        "bytes": 9478,
+        "sha256": "af97118185ebee2975943d7bb7a916aa090d73ec602ac9bfe53951dd86a59b58"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "develop/subcubic_zero_budget_repair.py",
+        "bytes": 4116,
+        "sha256": "306c9aa1192f6a34ab87b082cabe0d4f9d77aa13ecaa310afa4e36289b5470df"
+      },
+      {
+        "path": "develop/subcubic_phase_pairing.py",
+        "bytes": 5808,
+        "sha256": "5fb0351c8d4c8c44a8843e8367e88fe441f8c57116fb747c6ecb4a55de98cf7a"
+      },
+      {
+        "path": "develop/subcubic_phase_slack.py",
+        "bytes": 1790,
+        "sha256": "8d66f3cbeb03b1887bc4279438d757c4d1c86c76bf757ab4fea997dd14ea3e70"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_core_cycles.py",
+        "bytes": 3680,
+        "sha256": "eb5a055ade4830dc80cc64c58af1dfaadb7db1a968e8d7c7e11793a5e2acbff2"
+      },
+      {
+        "path": "develop/subcubic_odd_cycle_compensation.py",
+        "bytes": 4465,
+        "sha256": "8af9fcf1f0e8054472b28c8fb97d751cfc47f43f5020e2729c455745c91c2cf1"
+      },
+      {
+        "path": "scripts/check_zero_budget_repair.py",
+        "bytes": 10048,
+        "sha256": "e77142ef71255788d3ac3b8e8ccdf7097671ac678606749300d378c8a039ba96"
+      },
+      {
+        "path": "scripts/check_unrestricted_subcubic_gap.py",
+        "bytes": 9574,
+        "sha256": "73d6b2d8966fdf9c5555f4d8a4c4bc95f785d7aa8a475061390797b2463a6e1c"
+      },
+      {
+        "path": "scripts/check_subcubic_intrinsic_obstruction.py",
+        "bytes": 9946,
+        "sha256": "d9cf2cb89d693a29721ac6abab982204d220afa043595319a7f0fcce5fee1f6c"
+      },
+      {
+        "path": "scripts/check_odd_cycle_compensation.py",
+        "bytes": 13794,
+        "sha256": "7eeb632f8e878741deb9f16fa17437668cd605015a208a38fef5119192f80650"
+      },
+      {
+        "path": "develop/fixtures/three-cycle-phase-ceiling.json",
+        "bytes": 5292,
+        "sha256": "8242f12b98163f798fe0e9c69135eef54d8d8ddbc30e1ab5141c3944a345f53a"
+      },
+      {
+        "path": "develop/fixtures/three-construction-ceiling.json",
+        "bytes": 4339,
+        "sha256": "fd4a32e2917a4c98f1bbd0bc3959c89049bfacbd99e0dbd4d96dac4ea45ad389"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 96228,
+        "sha256": "7baf628ea84c64b6dac3db0fd4489565b3985d741fa78d77ea52762a51c6cf60"
+      },
+      {
+        "path": "docs/JOINT_MARGIN_AND_UNIFORM_SUBCUBIC_BOUND.md",
+        "bytes": 12732,
+        "sha256": "473bd0341e8d27281c92f4bcbd5e9a5d163237a03378e38fa3d87e34246eb431"
+      },
+      {
+        "path": "develop/subcubic_joint_margin.py",
+        "bytes": 8413,
+        "sha256": "f876b3e8e60769bdcf11401281105f74b3ebdee06472142b4baa554a8f8410bc"
+      },
+      {
+        "path": "scripts/check_joint_margin.py",
+        "bytes": 10783,
+        "sha256": "d54287d05a61d94a4b93058b2ca30c3c8b7cf417d47bce76e15be914e7f835bd"
+      },
+      {
+        "path": "docs/TWO_ENDPOINT_MARGIN_AND_SUBCUBIC_BOUND.md",
+        "bytes": 13509,
+        "sha256": "12dcc4d590f0ce0bfe4d35d3e0de971a6ac3b1f49985c3c723547a4619c200ce"
+      },
+      {
+        "path": "develop/subcubic_two_endpoint.py",
+        "bytes": 9275,
+        "sha256": "4ebb7dcff535c03409380657cf2d65bcb2d28e73edd742c9aeb23dee690d3dde"
+      },
+      {
+        "path": "scripts/check_two_endpoint.py",
+        "bytes": 13624,
+        "sha256": "18f7de56340320c27ae8fe1c02e78fc07747e76175fb04941b72ffe85e7b3f4d"
+      },
+      {
+        "path": "output/two-endpoint-check.json",
+        "bytes": 2520,
+        "sha256": "1903560a450799ba4e89a16e52e4bb07e779f4bfa10544c0bd9a793e362e4096"
+      },
+      {
+        "path": "develop/subcubic_boundary_expectation.py",
+        "bytes": 4952,
+        "sha256": "2181cb806d2e22070a2d5ac62ab1d2e234dc3fab554a06725728c1fd594f1811"
+      },
+      {
+        "path": "scripts/check_boundary_expectation.py",
+        "bytes": 9812,
+        "sha256": "5a38361d2c472554153c7e01120509c4788bdb01d7b753ea03c60b1c127b5e50"
+      },
+      {
+        "path": "docs/BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md",
+        "bytes": 9819,
+        "sha256": "1628725b814185ac07d18fbb6f99a013fb4f5f1c026318c17b542ba266b14beb"
+      },
+      {
+        "path": "output/boundary-expectation-check.json",
+        "bytes": 1649,
+        "sha256": "3f5806edc8ac02fb125523cbed6c6b9ecb8af28d954dc505d8c5777d85da2e0b"
+      },
+      {
+        "path": "develop/subcubic_balanced_side.py",
+        "bytes": 4538,
+        "sha256": "9d90427cf88e95c7a48979740ff18b66dc1f599b5c5f19d42d90bbdf8279250e"
+      },
+      {
+        "path": "scripts/check_balanced_side.py",
+        "bytes": 9987,
+        "sha256": "2e819fa097b43f8187142699100abcff759f978dadae77be2c3cf1efc91c48ed"
+      },
+      {
+        "path": "scripts/check_balanced_marginals.py",
+        "bytes": 3115,
+        "sha256": "e4cb17a5df4a321873381b51c800a210da55597fd9291ef16fd8f2e63ab4e31d"
+      },
+      {
+        "path": "docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md",
+        "bytes": 10707,
+        "sha256": "6eea9f86f8dd21a26e7a324dc3e6ec61c7c9ce1110b51f320017924dd87882da"
+      },
+      {
+        "path": "output/balanced-side-check.json",
+        "bytes": 1743,
+        "sha256": "9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781"
+      },
+      {
+        "path": "output/balanced-marginals-check.json",
+        "bytes": 14726,
+        "sha256": "309273a573dfd3df582069e2979984736b0cc6d1d13dbf1b523a5f426e4efea6"
+      }
+    ],
+    "full_response": "ACCEPT. Manuscript Lemmas 23 and 24 and Theorem 25 hold under the stated hypotheses. For every inclusion-minimal two-star-forming set  $S$  in every finite simple bipartite graph  $G$  of maximum degree at most three,\n$$71\\bigl(|S|-\\beta_2(G)\\bigr)\\le 7|V(G)|.$$\nHere  $\\beta_2$  is the unrestricted dissociation number. The proof covers the empty graph and imposes no condition on the components of  $G[S]$ . Both unchanged checkers exited 0, and both freshly generated reports matched their moved expected files byte for byte. I found one wording issue in the abstract and two minor clarifications in the standalone note. None changes the proof or the implementation.Fresh execution evidenceI reconstructed all 36 files at their declared relative paths and verified each file’s UTF-8 bytes, length, and SHA-256 against the supplied manifest. The files totaled 368,375 bytes. The uploaded balanced-exact-source.json had SHA-256 9731dac7b5add169e3e0b07c7bd50f05637efc18da86768d1fb14dd7f2bfa723.I moved both expected reports outside the reconstructed tree and confirmed both original paths were absent before starting either checker. Both commands ran with Python 3.12.14, assertions enabled, in /workspace/scratch/74112644f6a9/audit-source. Wall times below are from this execution.CommandExitWall time (s)Fresh report bytesComplete comparison with moved expectedpython3 -B scripts/check_balanced_side.py062.8439659890000261,743Equal, cmp exit 0python3 -B scripts/check_balanced_marginals.py00.354758608000338414,726Equal, cmp exit 0Fresh reportSHA-256output/balanced-side-check.json9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781output/balanced-marginals-check.json309273a573dfd3df582069e2979984736b0cc6d1d13dbf1b523a5f426e4efea6Full checker stdout was the following single line, terminated by LF, 112 bytes in total.Plain text{\"status\": \"PASS\", \"bytes\": 1743, \"sha256\": \"9ac20c13d4fc6494c1bea577d2788024f77862f046a5eb239612062cfa44c781\"}Marginals checker stdout was the following single line, terminated by LF, 323 bytes in total.Plain text{\"status\": \"PASS\", \"models\": 96, \"support_cases\": 1312, \"scope\": \"96 local auxiliary path/cycle shapes,1312physical-side/support cases through64helpers; exact witness marginals and mean cardinalities, including quotientloops/parallelcases and endpoints. General proof is separate; no all-template or large-optimum claim.\"}Full stderr, including startup, was b'' (0 bytes) for each command. After both runs, I compared all files again. The other 34 files, totaling 351,906 bytes, were unchanged. The reconstructed tree contained exactly the 36 manifest paths.Mathematical auditLemma 23 — balanced physical-side marginals (manuscript lines 1387–1438). The fixed extraction gives an induced partial template. Each witness has exactly its helper and its distinct owner as selected neighbours. The other template edges are the owner core and the partial matching  $Q$  on witnesses. Along an auxiliary component, successive helpers have opposite physical colours. Thus a cycle with  $2\\ell$  helpers has  $\\ell$  eligible helpers on either global side. At  $\\ell=1$  the quotient loop forces  $J=\\varnothing$ . At  $\\ell=2$  the two rotations select the two possible singletons.The opposite-side witness calculation checks in every case. At an interior path helper, exactly one of the two eligible neighbours lies in the chosen parity class, so each witness is forced half the time. At a nonisolated endpoint the matched witness is available exactly when the neighbouring eligible helper is outside  $J$ . The matched-first rule therefore selects each endpoint witness with probability  $1/2$ . An isolated helper uses a fair choice. On a cycle with  $\\ell\\ge2$ , the two adjacent membership events are disjoint, each of probability  $p=\\lfloor\\ell/2\\rfloor/\\ell$ . A specified witness is forced with probability  $p$  and receives half the probability of the unblocked case, giving\n$$p+\\frac{1-2p}{2}=\\frac12.$$\nThe loop case gives  $1/2$  directly. Conditional on its helper being eligible, the witness has probability  $1/2$  on a path and  $p\\le1/2$  on a cycle. Hence every witness has unconditional marginal at most  $1/2$ . Each owner has marginal exactly  $1/2$ , and each helper has marginal at most one.For a component with  $h$  helpers,  $k$  eligible, every realized set has size  $3k+2(h-k)+|J|$ . The first two terms average to  $5h/2$  over the global side. The mean of  $|J|$  is  $h/4$  on paths and  $\\lfloor h/4\\rfloor$  on cycles. The latter loses  $1/2$  exactly when  $h/2$  is odd. This proves the claimed mean actual size  $11b/4-o/2$ .Lemma 24 — arbitrary nonnegative costs (lines 1440–1484). For fixed side and  $J$ , replacing a random available singleton by a cheapest available one preserves cardinality and can only improve potential. All singleton witnesses have the same physical colour, and mates of doubles have been excluded. Across auxiliary components, the only possible interfering edges are core edges, whose selected owners also have one common physical colour. Component potentials therefore add. The implementation maximizes over the two parity choices or the cycle rotations within each component, then compares the two global sides. The marginal bounds are properties of the random construction. The deterministic choice inherits its potential guarantee.In the phase construction,  $Z_A\\subseteq A$  and  $w\\ge0$  give  $w(Z_A)\\le w(A)$ . This is precisely what permits an unweighted residual optimum after conditional expectation on  $s-w(Y)-w(A)$ . The phase and one-side guarantees charge the same  $w(I)+(w(C)+w(X))/2$ . Taking  $3/5$  of the former and  $2/5$  of the latter cancels  $o$  and yields an actual candidate satisfying\n$$\\Phi(D)\\ge \\frac{13b}{5}+\\frac{3\\sigma}{5}+\\frac{t_g}{10}\n-w(I)-\\frac{w(C)+w(X)}2.$$\nTheorem 25 — exterior extension and final identity (lines 1486–1555). For the extracted template with  $b'=b-b_3$  helpers, the exterior construction deletes the vertex union  $N_G(D)\\setminus V(H)$ . Its cardinality is at most  $2w(D)$ , including when several incidences reach the same neighbour. The larger surviving exterior colour class extends  $D$ . The retained-set construction separately gives\n$$Z=5\\beta_2(G)-5L-13b'\\ge3\\sigma+\\frac{3b_G+2t_g}{4}.$$\nBoth lower bounds apply to the same unrestricted  $\\beta_2(G)$ .The physical incidence bounds apply with the established path definitions. The owner core contributes at most two unused degree slots per physical path, the witness interface at most two per auxiliary path, and any extra helper neighbour belongs to the  $q$  unallocated outside vertices. Substitution into the exterior bound and one use of  $t_b+s_b\\le6\\sigma$ , together with  $4s_g\\le b_G$ , give\n$$T\\le r+2q+\\frac{2Z}{5}+\\frac{4t_g}{5}+\\frac{24\\sigma}{5}+\\frac{b_G}{4}.$$\nThe retained bound supplies\n$$\\frac{8Z}{5}\\ge \\frac{24\\sigma}{5}+\\frac{4t_g}{5}+\\frac{6b_G}{5}.$$\nThis covers the required terms with  $19b_G/20$  to spare, proving  $W_2=r+2q+2Z-T\\ge0$ .I checked the final coefficients by expanding twice the  $8n-81d$  identity minus twice the  $n-10d$  identity. The result is exactly\n$$14n-142d\n=W_2+13r+33(\\alpha+\\pi)+20(e-b_3)+7b_3+12q+66\\tau.$$\nIn particular,  $e-b_3\\ge0$  follows because each allocated pair witness meets at most one isolate helper, and  $\\tau\\ge0$  follows from the two fixed exchanges  $2d\\le\\min(a+b,p+b)$ . All terms are nonnegative. Division by two proves the fixed- $S$  claim. Maximization and integrality give  $\\mathrm{SF}_2(G)-\\beta_2(G)\\le\\lfloor7n/71\\rfloor$ .Finite scope and wordingControlVerified scopeFull-graph selections43,756 total = 38,556 all-minimal graph-control selections + 5,200 canonical  $S=I\\cup C$  template selections. All 5,200 used exact unrestricted unweighted  $\\beta_2$ .Weighted template controls28,635 cost assignments on 5,727 models, 103,470 physical phase checks, and 76,545 conditional-expectation controls.Unrestricted weighted optimization580 instances on 116 models of order at most ten. 10 instances on two five-vertex models also received literal subset checks. Larger prescribed templates were checked for actual candidates and all phases. The large rational cost was  $2^{400}/3$ , whose numerator has 401 bits.Local marginal controls96 shapes through 64 helpers. The 64 paths contributed 256 side/support cases and the 32 cycles contributed 1,056, totaling 1,312 with rotation multiplicity.Full-set cardinality improvements472 over the older  $15/152$  two-endpoint construction. 0 over the  $51/517$  boundary algorithm on these controls. The real-coefficient improvement  $51/517-7/71=2/36707$  follows from the general proof.The abstract at manuscript lines 26–28 places the balanced witness marginals “in the phase expectation.” The improved charge belongs to the one-side expectation. A precise replacement is “Balanced witness marginals lower the witness charge in the one-side construction, whose potential is compared with the phase bound.” In §1 of the standalone note, “paths of even order” specifies the intended parity, and “the two maximum independent sets are the singletons” specifies the parallel-edge case. The empty set is also independent there.Sharpness and positive-order equality in the unrounded  $7/71$  bound remain open. The specified cubic graph served as a finite control. This audit ran the two requested checker entry points only and makes no new cubic-existence, grid, or Lean claim.\n",
+    "editorial_corrections": {
+      "initial_verdict": "ACCEPT",
+      "changes": [
+        {
+          "path": "manuscript/starforming-gap.tex",
+          "before_sha256": "7baf628ea84c64b6dac3db0fd4489565b3985d741fa78d77ea52762a51c6cf60",
+          "after_sha256": "06c173a227c1bc123551dd2a1b61b96ebe8915c01b2cec8d198222077535e5e2",
+          "diff": "--- manuscript/starforming-gap.tex before\n+++ manuscript/starforming-gap.tex after\n@@ -23,9 +23,10 @@\n proof constructs two dissociation sets from disjoint deletion witnesses.\n For maximum degree at most three we improve the bound uniformly to\n $\\lfloor7n/71\\rfloor$, with no restriction on the components induced\n-by a minimal forming set. Paired phase-class margins, endpoint-event credits\n-on good physical core paths, and balanced witness marginals control\n-boundary penalties in the phase expectation.\n+by a minimal forming set. Paired phase-class margins and endpoint-event\n+credits strengthen the phase bound. Balanced witness marginals lower the\n+witness charge in the one-side construction, whose potential is compared\n+with the phase bound.\n We also prove that both parameters are additive over copies of a ten-vertex\n graph under permitted bipartite interconnections through four specified vertices.\n For graphs with gap $n/10>0$, we determine the intrinsic layers and\n"
+        },
+        {
+          "path": "docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md",
+          "before_sha256": "6eea9f86f8dd21a26e7a324dc3e6ec61c7c9ce1110b51f320017924dd87882da",
+          "after_sha256": "a6fabf398110a62cafdec32e18f6c60dae791b3bc07148640fbbce5fc128857c",
+          "diff": "--- docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md before\n+++ docs/BALANCED_SIDE_AND_SUBCUBIC_BOUND.md after\n@@ -26,7 +26,7 @@\n in X, each with its own distinct owner in C. These are all helper/witness and\n owner/witness incidences within the template. The core on C has maximum degree\n two; physical edges on X form a partial matching Q. Pair the two witnesses of\n-each helper by an auxiliary edge P. The graph P union Q consists of even paths\n+each helper by an auxiliary edge P. The graph P union Q consists of paths of even order\n and cycles of order divisible by four. Alternating helper colours along a\n component mean that any cyclic component has an even number of helpers.\n \n@@ -36,8 +36,8 @@\n are the neighbours of a helper on the opposite side. Thus the eligible-helper\n quotient is a path or cycle. With only one eligible helper on a cycle it has a\n loop; with two, its two edges are parallel. Our independent-set convention\n-for these cases gives only the empty set for a loop and either singleton\n-for the parallel-edge case.\n+for these cases gives only the empty set for a loop; the two maximum\n+independent sets in the parallel-edge case are the singletons.\n \n Choose the physical side fairly. Conditional on that side, choose J as follows,\n independently across auxiliary components:\n"
+        }
+      ],
+      "mathematical_proof_algorithm_checker_and_report_bytes_changed": false
+    }
+  },
+  "final_round_scope": "Editorial corrections only; actual original checker executions belong to initial audit and code/report bytes are unchanged.",
+  "preceding_accepted_milestone": {
+    "revision": "fb357d07ce66ac4a3364232a20c6be6b7e0e27af",
+    "review_task": "2f4b0f29-c23e-47f9-9d29-e5fbbeab11ba"
+  }
+}

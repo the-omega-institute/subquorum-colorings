@@ -1,6 +1,28 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
-## Current unrestricted subcubic bound 51/517: vertex penalties and exterior extension
+## Current unrestricted subcubic bound7/71: balanced witness marginals
+
+The [complete proof](BALANCED_SIDE_AND_SUBCUBIC_BOUND.md) proves71d<=7n for
+every minimal forming S in every finite simple bipartite maxdegree3graph,
+emptyincluded. Current integerbound floor7n/71; no connectivity/mindegree/
+balance/selectedcomponentcondition. Sharpness and attainment remain open.
+Balanced physical-side distributions give owner/witness marginal<=1/2 and
+mean cardinality11b/4-o/2. Componentwise optimization is compatible, avoiding
+a Cartesian product. The penalty lemma charges both C and X with1/2;
+physical exterior extension and paired margins yield14n-142d nonnegative.
+
+Exact36-file independent audit ACCEPT; both original fullcheckers actually
+run, freshreports compared. Local fullchecker43,756totalminimalinstances
+includes5,200canonicaltemplates;580weightedinstances on116models(order<=10).
+Larger prescribed templates check actualcandidates/allphases. Separate96local
+auxiliaryshapes/1,312supports check exact marginals/cardinality. No newinteger
+fullsetgain over51/517 in these controls;472gains are overolder15/152algorithm.
+The general coefficient improvement is2/36707. Current26-page workingmanuscript
+contains complete proofs; twicecompiled, allpagesrendered/visuallychecked.
+No newLean, email, MacStudio, submission or Octoberpaperchange. Full goalACTIVE.
+
+
+## Earlier unrestricted subcubic bound51/517: vertex penalties and exterior extension
 
 The [boundary-expectation theorem](BOUNDARY_EXPECTATION_AND_SUBCUBIC_BOUND.md)
 proves `517(|S|-beta_2(G)) <= 51n` for every minimal forming S in every finite
@@ -1298,7 +1320,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The four-selected-leaf-port and dense multiport constructions together reach Delta=4delta-7 and kappa=delta for every delta>=3. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34, minimum-degree-two subcubic lower1/64/upper8/121 and cubic upper1/24 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
-| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(51n/517), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. Vertex penalties, paired margins and exterior extension prove the exact102n-1034d certificate; sharpness andattainment remain open |
+| Unrestricted gap at maximum degree three | Uniform improvement proved: every minimal S satisfies |S|-beta_2<=floor(7n/71), including empty graphs, without connectivity, minimum-degree or selected-component restrictions. Balanced witness marginals, paired margins and exterior extension prove the exact14n-142d certificate; sharpness andattainment remain open |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
 
 The new structural theorem does not extend automatically to wider grids:
