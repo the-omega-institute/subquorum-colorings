@@ -131,7 +131,33 @@ def _select(square_ids, owner_ids, squares, owners, chosen):
 
 
 def certificate(b,P,Q,B,colour):
-    data=prepare(b,P,Q,B,colour);n=2*b;V=set(range(n));A=sorted(set(data['P']+data['Q']))
+    return _square_certificate(prepare(b,P,Q,B,colour))
+
+
+def abstract_certificate(n,A,B):
+    """Colour-free square theorem; owner paths/even cycles, no physical API claim."""
+    if not isinstance(n,int) or isinstance(n,bool) or n<0 or n%4:
+        raise ValueError('Nonnegative order divisible by four required')
+    graphs=[]
+    for edges in (A,B):
+        E=sorted({tuple(sorted(e)) for e in edges})
+        if any(len(e)!=2 or e[0]==e[1] or any(not isinstance(v,int) or isinstance(v,bool) or v not in range(n) for v in e) for e in E):
+            raise ValueError('Simple indexed graph required')
+        if any(sum(v in e for e in E)>2 for v in range(n)):
+            raise ValueError('Maximum degree two required')
+        graphs.append(E)
+    A,B=graphs;aux=components(n,A);owners=components(n,B)
+    if any(not cyclic or len(K)!=4 for K,cyclic in aux):
+        raise ValueError('Auxiliary squares required')
+    if any(cyclic and len(K)%2 for K,cyclic in owners):
+        raise ValueError('Owner paths/even cycles required')
+    P=[(K[0],K[1]) for K,_ in aux]+[(K[2],K[3]) for K,_ in aux]
+    Pset={tuple(sorted(e)) for e in P};Q=[e for e in A if tuple(e) not in Pset]
+    return _square_certificate(dict(b=n//2,P=P,Q=Q,B=B,owner_components=owners))
+
+
+def _square_certificate(data):
+    n=2*data['b'];b=data['b'];V=set(range(n));A=sorted(set(data['P']+data['Q']))
     aux=components(n,A)
     if any(not cyclic or len(K)!=4 for K,cyclic in aux):
         return {'applicable':False,'reason':'auxiliary graph is not a union of squares'}
@@ -169,6 +195,8 @@ def certificate(b,P,Q,B,colour):
     T=set()
     for K in squares:T|=max((set(K[0::2])-S,set(K[1::2])-S),key=len)
     assert len(T)==b and not S&T and len(S)>=(n+2)//3
+    path_remainder=sum(len(K)%3 for K,cyclic in owners if not cyclic)
+    assert 6*len(S)>=2*n+path_remainder
     assert all(not ({a,c}<=S or {a,c}<=T) for a,c in A)
     assert all(sum(v in e and set(e)<=S for e in data['B'])<=1 for v in S)
     assert all(sum(v in e and set(e)<=D for e in data['B'])<=1 for v in D)

@@ -1,0 +1,127 @@
+{
+  "recorded_at": "2026-11-12T23:45:01.583084+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "7740e774-562c-4769-bca0-ddf554f3cc8c",
+    "conversation_id": "conv_4debf7c3182f2624",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af64dae-9fbc-83ec-8784-2d928fcf3a2b",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/all_helper_optimization.py": {
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    "develop/auxiliary_square_forest.py": {
+      "bytes": 9700,
+      "sha256": "021b832e226ee1837fea82af08ddc9b73ef7c84d6e06ff3dd8ddd2f2967e3ec4"
+    },
+    "develop/auxiliary_square_parity.py": {
+      "bytes": 3587,
+      "sha256": "985f1181d61feb02100aa1eb554b88d7174b6d797782d8bbf39d72acb569f064"
+    },
+    "develop/fixtures/auxiliary-square-forest.json": {
+      "bytes": 3776,
+      "sha256": "6ab84b7fdd7dba36ec031f8ec1d12d422cf477b330720f0bdcd5e25c7ccc75e8"
+    },
+    "develop/fixtures/auxiliary-square-parity.json": {
+      "bytes": 4694,
+      "sha256": "4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638f"
+    },
+    "develop/fixtures/short-auxiliary-completion.json": {
+      "bytes": 6011,
+      "sha256": "9b8f61b6cca860749cd00dad495942082627cd266cebc01f57c1ee6809b21233"
+    },
+    "develop/mixed_owner_bridges.py": {
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    "develop/short_auxiliary_completion.py": {
+      "bytes": 3846,
+      "sha256": "7021b2aaa1e5cbc942c0661f198a35aa7c3420f701d470a0824df6cdef02ddf1"
+    },
+    "docs/ALL_HELPER_EXACT_OPTIMIZATION.md": {
+      "bytes": 8906,
+      "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+    },
+    "docs/ALL_OWNER_AUXILIARY_SQUARES.md": {
+      "bytes": 5833,
+      "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+    },
+    "docs/SHORT_AUXILIARY_COMPLETION_AND_PATH_SURPLUS.md": {
+      "bytes": 9196,
+      "sha256": "d59eeb0fdceac4b6676f27c4876407662338eca75c1cdc7c56581a004a34653e"
+    },
+    "manuscript/auxiliary-square-forest-proof.tex": {
+      "bytes": 8465,
+      "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+    },
+    "manuscript/auxiliary-square-proof.tex": {
+      "bytes": 6405,
+      "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+    },
+    "output/auxiliary-square-forest-check.json": {
+      "bytes": 14043,
+      "sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c"
+    },
+    "output/short-auxiliary-completion-check.json": {
+      "bytes": 24914,
+      "sha256": "d42c3014adf9291b297c6abd5e4bcdfe9c718114293b743fd04055b1b014ac16"
+    },
+    "scripts/check_auxiliary_square_forest.py": {
+      "bytes": 9106,
+      "sha256": "3f7daec55d96b4c42c4ea4b64bd3dd45fdda5425da221b329a38de0fa81a829f"
+    },
+    "scripts/check_short_auxiliary_completion.py": {
+      "bytes": 8752,
+      "sha256": "e233fe9282900747b63328cf1af6b1d2abfb3e39dedfe6078fce27b5837bc299"
+    }
+  },
+  "all_frozen_files_unchanged_locally": true,
+  "corrections_required": false,
+  "reviewer_reported_execution": {
+    "original_checkers_unchanged": true,
+    "assertions_enabled": true,
+    "environment": "Python3.13.5; Linux x86_64 glibc2.41",
+    "commands": [
+      {
+        "command": "python3 -B scripts/check_short_auxiliary_completion.py --output /tmp/short-aux-regenerated.json",
+        "exit_code": 0,
+        "wall_seconds": 6.057,
+        "report": {
+          "bytes": 24914,
+          "sha256": "d42c3014adf9291b297c6abd5e4bcdfe9c718114293b743fd04055b1b014ac16"
+        }
+      },
+      {
+        "command": "python3 -B scripts/check_auxiliary_square_forest.py --output /tmp/square-forest-regenerated.json",
+        "exit_code": 0,
+        "wall_seconds": 11.023,
+        "report": {
+          "bytes": 14043,
+          "sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c"
+        }
+      }
+    ],
+    "full_report_byte_equality": true,
+    "all18payloads_checked_before_and_after": true,
+    "stderr": "Both emitted a Python-startup artifact_tool spreadsheet warmup traceback ending: Element ordering requires an owning element collection. Full literal stderr not supplied; both exited0.",
+    "stdout": "Successful report counters described in full response; exact stdout bytes not supplied."
+  },
+  "scope": "Colour-free P2/P4/C4 auxiliary completion, all owner paths/even cycles, path-remainder refinement and original physical certificates; 200-vertex connected fixture is a valid111-set, not an exact optimum.",
+  "limitations": [
+    "Longer auxiliary components not solved by this milestone.",
+    "No universal sharp subcubic gap, geometric multiHall, grid5/6 or triple equality conclusion.",
+    "No Lean/kernel or priority audit; attached identities not remote Git provenance.",
+    "The later cyclic reduction has a separate audit."
+  ],
+  "complete_response": "Independent audit: short-auxiliary completionMathematical assessment: ACCEPT, subject to the two original checker executions and final integrity comparison below.The central argument is sound. In particular, the odd- $P_2$  completion correctly uses two isolated owner vertices to pay for the additional auxiliary pair. It does not require artificial edges to respect the physical bipartition.I verified the ZIP contains exactly 18 payload files plus MANIFEST.json. All 18 payloads match their declared byte counts and SHA-256 hashes on initial extraction.1. Proof auditThe key inequality is the path-surplus refinement\n$$\\beta_2(B)=\\frac{2M}{3}+\\frac{R(B)}3-d,$$\non the residual square instance, where  $d$  is the total exceptional-cycle deficit.For owner paths, the contribution is exactly\n$$\\left\\lceil\\frac{2m}{3}\\right\\rceil\n=\\frac{2m}{3}+\\frac{m\\bmod3}{3}.$$\nFor even owner cycles, the deficit is  $0,\\frac13,\\frac23$ , according as their lengths are  $0,2,4\\pmod6$ . The removed closed  $C_4$  and paired- $C_4$  components contain no paths, so removing them does not lose any of the  $R(B)$  credit.The rainbow-forest rank argument pays for the exceptional-cycle deficits simultaneously. The subset rank inequality, including its one- and two-cycle exceptional cases, is essential: it prevents counting overlapping cycle contributions independently. The leaf-to-root parity switches then obtain at least  $r$  odd auxiliary-square intersections, giving\n$$|S|\\ge\n\\left\\lceil\\frac{\\beta_2(B)+r}{2}\\right\\rceil\n\\ge\n\\left\\lceil\\frac M3+\\frac{R(B)}6\\right\\rceil.$$\nI find no missing path-surplus term or duplicate rounding credit in this argument.2. Completion and rounding auditThe completion construction passes the important edge cases.Even number of  $P_2$  components. Pairing two  $P_2$ 's with two cross-edges produces a  $C_4$ . Closing each  $P_4$  produces another  $C_4$ . All original edges remain present.Odd number of  $P_2$  components. One artificial  $P_2$  and two isolated owner vertices give\n$$M=N+2,\\qquad R(B^+)=R(B)+2.$$\nConsequently,\n$$\\begin{aligned}\n\\nu(A^+[U^+])\n&=\\frac M2-|S^+|\\\\\n&\\le \\left\\lfloor\\frac{M-R(B^+)}6\\right\\rfloor\\\\\n&=\\left\\lfloor\\frac{N-R(B)}6\\right\\rfloor.\n\\end{aligned}$$\nThis is one global integer calculation. There is no separate rounding allowance to lose and no double-counting of the two isolated vertices.Restriction to the original graph. This is also correct:\n$$U=U^+\\cap V.$$\nOwner dissociation is hereditary under restriction. $A[U]$  is a subgraph of  $A^+[U^+]$ .Removing artificial edges cannot increase matching number.Thus the original graph inherits the matching-cost bound.The implementation additionally computes its witness independent set and maximum matching on the original  $A[U]$ , not on the completed graph. Its matching/independent-set routine uses bipartiteness and K\u00f6nig's theorem; the original short-component domain guarantees bipartiteness.I specifically checked the potentially problematic distinction between artificial and physical edges. The abstract square theorem has no physical-colouring requirement. The final physical certificate reconstructs only the original helper, witness, owner,  $P,Q,B$  edges. This is the correct separation.3. Both original checkers executedBoth passedChecker 1 \u2014 short auxiliary completionEXIT 06.057 secondsCommand executed unchanged:Bashpython3 -B scripts/check_short_auxiliary_completion.py \\\n  --output /tmp/short-aux-regenerated.jsonResults:Test categoryCountAbstract certificates1,209Complete small graph pairs669Exact small optimum controls822Literal permitted omission models19,148Physical certificates548Odd- $P_2$  ghost models131Nonphysical completion-edge controls990Positive path-remainder models1,128Independent matching controls891Connected mixed fixture controls1Checker 2 \u2014 inherited auxiliary-square forestEXIT 011.023 secondsCommand executed unchanged:Bashpython3 -B scripts/check_auxiliary_square_forest.py \\\n  --output /tmp/square-forest-regenerated.jsonResults:Test categoryCountPhysical certificates2,644Literal abstract independent subsets252,000Literal owner subsets47,520Literal coloured edge subsets81,197Literal Rado rank subsets5,016Physical subset-rank inequalities37,934Dual rank cuts2,644Exact all-helper controls273Closed four-vertex components73Closed eight-vertex components29Runtime and environmentPython: 3.13.5.Environment: Linux x86_64, glibc 2.41.Assertions enabled: both scripts explicitly check __debug__.-B used as requested.Combined checker execution: approximately 17.08 seconds.Both processes emitted a Python-startup artifact_tool spreadsheet warmup traceback on stderr, ending in Element ordering requires an owning element collection. This was an unrelated environment warmup warning: both checkers completed, returned exit code zero, and produced their expected reports. I have not suppressed or misrepresented that stderr output.4. Full output comparisonExact byte equality: both reportsReportGenerated bytesSHA-256Short completion24,914d42c3014adf9291b297c6abd5e4bcdfe9c718114293b743fd04055b1b014ac16Square forest14,04300c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9cFor each report, I compared the complete generated file bytes against the corresponding attached expected report. Both comparisons returned True.No shortened checker, modified harness, or replacement implementation was used.5. Connected mixed fixtureThe fixture's coordinates and structural properties were also inspected.Original physical certificate verifiedPropertyResultHelpers40Witnesses80Owners80Total physical vertices200Auxiliary components18  $C_4$ , 2  $P_4$ Owner components8  $C_8$ , 1  $C_{16}$ Physical graph connectedYesPhysical minimum degree2Physical maximum degree3Owner matching phases checked512Minimum  $K_4$  count across phases2Original matching cost9Returned all-helper certificate111The target is\n$$\\left\\lceil\\frac{8(40)}3\\right\\rceil=107.$$\nThe returned certificate exceeds it by four.The preceding minimum-omission construction has 30 omissions, giving 15 matching-cost units before its possible one-unit saving. That saving still leaves 14, whereas the target cost is 13. The checker confirms the old cardinality bridge is inapplicable and all 512 specified owner phases have at least two  $K_4$ 's.This demonstrates a genuinely mixed connected application, not a claimed global optimum.6. Final integrity and limitations18/18 payload hashes unchangedI recomputed all 18 payload byte counts and SHA-256 hashes after both executions. Every entry still matches the original manifest and the initial extraction.The proof and checker evidence support the following conclusions:The arbitrary-path remainder  $R(B)$  is correctly incorporated.The exceptional-cycle rainbow-rank argument is inherited with its full subset inequalities.The artificial completion is validated as an abstract square construction.The original matching and independent witnesses are recovered without artificial edges.The physical colouring and degree requirements are checked on the original graph.The  $8/3$  coefficient sharpness is inherited from the existing 30-vertex example, not asserted for connected strictly mixed subclasses.Explicitly not established: universal  $8b/3$  for longer auxiliary  $P_6,P_8,C_8$  components, a global sharp-gap theorem, multi-Hall/grid extensions, or unrestricted all-helper optimization hardness.Final verdictACCEPTI found no mathematical gap requiring correction in this milestone. Both original assertion-enabled checkers passed, both generated reports matched their frozen expected outputs byte-for-byte, and all payload hashes remained intact.The acceptance is for the precise mixed  $P_2/P_4/C_4$  auxiliary theorem and its path-surplus certificate, not for the explicitly excluded broader problems.No Lean verification, repository mutation, PR submission, email, or priority audit was performed.\n"
+}

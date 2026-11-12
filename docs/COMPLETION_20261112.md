@@ -1,5 +1,30 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## 13 November: actual short mixtures and cyclic reduction
+
+
+[Short auxiliary mixtures and owner-path surplus](SHORT_AUXILIARY_COMPLETION_AND_PATH_SURPLUS.md)
+prove beta_I>=ceil(8b/3+R(B)/6) for arbitrary owner paths/even cycles when
+A has only P2/P4/C4 components; R sums owner path orders modulo3. One
+rainbow-forest budget retains the path surplus, which pays exactly for an
+odd-P2 ghost completion. Final physical certificates use original edges.
+A connected200-vertex mixed example returns111 selected vertices (target107),
+without claiming its exact optimum. Independent ACCEPT ran both the new and
+inherited original checkers and reproduced their complete reports byte-for-byte;
+the review receipt records its Python startup stderr warning.
+
+[Physical cyclic reductions](CYCLIC_AUXILIARY_REDUCTION.md) complete two
+copies to Q perfect, or four copies to Q perfect and owner B2-regular.
+The sum of original-copy matching costs is bounded by the one completed
+matching cost, and exact nested floors return a target original certificate
+whenever the completed target is supplied. Thus universal8b/3 is equivalent
+to the cyclic restriction; a failure can be localized to connected A unionB
+containing both C4 and longer C4k auxiliary cycles, with cyclic owners.
+This is a reduction, not a proof of that remaining case. Original checker
+passes; independent ACCEPT executed that checker unchanged and reproduced the
+complete report byte-for-byte. The remaining mixed cyclic target stays open.
+
+
 ## Primary complexity and tractable boundaries
 
 [Unbudgeted primary fixed-list hardness](docs/UNBUDGETED_PRIMARY_EXCHANGE_HARDNESS.md)
