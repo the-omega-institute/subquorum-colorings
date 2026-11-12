@@ -1,5 +1,19 @@
 # Current continuation
 
+The [higher-minimum-degree sharpness family](docs/SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) attains the new
+selected-star upper coefficient for EVERY integer delta>=3 along
+`Delta=(4delta-7)r`, r>=3, even with two-connectivity. Put t=delta-1,p=tr.
+For every k>=1, the explicit graph has n=(12p+2t)k, selected size8pk,
+true unrestricted beta_2=7pk, minimum degree delta and maximum degree
+Delta. Its gap pk equals `Delta*n/(12Delta+8delta-14)` exactly. The proof
+counts one total neighbour capacity per chosen connector, retains the
+fixed safe-edge deletion and handles both one-connector orientations.
+The independent final exact-source audit returned ACCEPT, ran the
+unchanged checker to exit0 and reproduced its complete9,808-byte report.
+The separate degree-three four-connector proof also received its own
+ACCEPT and8,090-byte report reproduction. These are infinite-parameter
+combinatorial proofs, not extrapolations from the physical controls.
+
 The [combined centre/leaf degree cuts](docs/COMBINED_CENTRE_LEAF_DEGREE_BOUNDS.md) strengthen the selected-star
 bound at minimum degree at least3. Every specified minimal selection in
 the stated class satisfies both
@@ -10,8 +24,8 @@ all counted selected types; no capacity is allocated independently per type.
 The independent final exact-source audit returned ACCEPT, ran the original
 checker to exit0 and reproduced its complete22,210-byte report exactly.
 Other whole-cut/regular/cubic certificates remain applicable and should
-be combined by taking their minimum. Graph-sharpness at delta>=3 is a
-separate question from these upper bounds.
+be combined by taking their minimum. Sharpness now follows on the higher-degree parameter subfamily above;
+other degree parameters remain separate questions.
 
 The [sharp minimum-degree-two theorem](docs/SHARP_MINIMUM_TWO_DEGREE_BOUND.md)
 closes the optimal coefficient for every maximum-degree allowance Delta>=6,
@@ -31,9 +45,9 @@ all9 source files, ran the original checker unchanged to exit0, and reproduced
 the complete331,532-byte report exactly. The earlier fixed-base source
 also received its own separately recorded ACCEPT. These claims concern
 specified minimal selections inducing stars/edges/isolates; exact SF
-values, minimum degree>=3 sharpness, maximum degree3..5 sharpness in this
-class, regular selected-star sharpness and general rectangular-grid equality
-remain separate questions. The maximum-degree2/minimum-degree2 case is
+values, sharpness at degree parameters outside the new subfamily,
+maximum degree3..5 sharpness in this class, regular selected-star sharpness
+and general rectangular-grid equality remain separate questions. The maximum-degree2/minimum-degree2 case is
 already settled by the earlier cycle theorem in SUBCUBIC_STAR_FORMING_GAPS.md.
 
 The [free-unused-vertex refinement](docs/FREE_UNUSED_VERTICES_AND_DEGREE_REFINEMENT.md)

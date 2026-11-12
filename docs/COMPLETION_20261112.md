@@ -1,5 +1,21 @@
 # Structural equality and source-dependent completion: 12 November 2026
 
+## Sharpness at every higher minimum degree
+
+The [higher-minimum-degree sharpness family](SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) attains the new
+selected-star upper coefficient for EVERY integer delta>=3 along
+`Delta=(4delta-7)r`, r>=3, even with two-connectivity. Put t=delta-1,p=tr.
+For every k>=1, the explicit graph has n=(12p+2t)k, selected size8pk,
+true unrestricted beta_2=7pk, minimum degree delta and maximum degree
+Delta. Its gap pk equals `Delta*n/(12Delta+8delta-14)` exactly. The proof
+counts one total neighbour capacity per chosen connector, retains the
+fixed safe-edge deletion and handles both one-connector orientations.
+The independent final exact-source audit returned ACCEPT, ran the
+unchanged checker to exit0 and reproduced its complete9,808-byte report.
+The separate degree-three four-connector proof also received its own
+ACCEPT and8,090-byte report reproduction. These are infinite-parameter
+combinatorial proofs, not extrapolations from the physical controls.
+
 ## Stronger shared degree cuts
 
 The [combined centre/leaf degree cuts](COMBINED_CENTRE_LEAF_DEGREE_BOUNDS.md) strengthen the selected-star
@@ -12,8 +28,8 @@ all counted selected types; no capacity is allocated independently per type.
 The independent final exact-source audit returned ACCEPT, ran the original
 checker to exit0 and reproduced its complete22,210-byte report exactly.
 Other whole-cut/regular/cubic certificates remain applicable and should
-be combined by taking their minimum. Graph-sharpness at delta>=3 is a
-separate question from these upper bounds.
+be combined by taking their minimum. Sharpness now follows on the higher-degree parameter subfamily above;
+other degree parameters remain separate questions.
 
 ## Sharp coefficients at minimum degree two, for all maximum degrees>=6
 
@@ -35,9 +51,9 @@ all9 source files, ran the original checker unchanged to exit0, and reproduced
 the complete331,532-byte report exactly. The earlier fixed-base source
 also received its own separately recorded ACCEPT. These claims concern
 specified minimal selections inducing stars/edges/isolates; exact SF
-values, minimum degree>=3 sharpness, maximum degree3..5 sharpness in this
-class, regular selected-star sharpness and general rectangular-grid equality
-remain separate questions. The maximum-degree2/minimum-degree2 case is
+values, sharpness at degree parameters outside the new subfamily,
+maximum degree3..5 sharpness in this class, regular selected-star sharpness
+and general rectangular-grid equality remain separate questions. The maximum-degree2/minimum-degree2 case is
 already settled by the earlier cycle theorem in SUBCUBIC_STAR_FORMING_GAPS.md.
 
 ## Free-unused-vertex refinement and bounded-degree lower families
@@ -921,7 +937,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
 | Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
-| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. Minimum degree>=3, maximum degree<=5 and regular graph sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
+| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. Intervening degree parameters, maximum degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |
