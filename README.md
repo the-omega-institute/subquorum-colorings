@@ -1,5 +1,16 @@
 # Current continuation
 
+Simultaneous exchanges: [a parity budget for disjoint auxiliary supports](docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md).
+For any permitted omission set U*, let m=|U*| and let o count auxiliary
+components with odd omission counts. A packing of t exceptional owner cycles,
+each minimum-omitted and using disjoint sets of initially even auxiliary
+components, gives cost<=(m-o)/2-t. Cycles may cross auxiliary components;
+their full supports are consumed together. A connected50r-vertex min2/max3
+family passes the new certificate while the previous global tests fail for
+r>=2; its actual beta_I is30r. A shared-support all-r obstruction excludes
+independent per-cycle credit. The existential one-K4 test now has an exact
+2SAT search wrapper. Universal8b/3 and the general grid goals remain open.
+
 Mixed auxiliary components: [three physical bridge theorems and an exact normalization obstruction](docs/MIXED_OWNER_BRIDGES.md).
 The all-helper8b/3 target now holds when a specified owner matching has at
 most one K4, when all owner cycles are C4 or6k, or when at most one owner

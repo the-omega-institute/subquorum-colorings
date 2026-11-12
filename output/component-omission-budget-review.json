@@ -1,0 +1,101 @@
+{
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "dfc44039-e81d-4fe6-af8f-004569fa4662",
+    "conversation_id": "conv_f68f722b86c842a7",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af6098d-f7f0-83ec-bdfa-8642b32c0db7",
+    "usage_estimated": true
+  },
+  "source_files": 13,
+  "all_hashes_verified": true,
+  "actually_executed_original_checker": true,
+  "report_byte_identical": true,
+  "report_sha256": "47d98fb998d2b9592de515b3e7ef26f8d3e67001e78cf820396918a2852765e1",
+  "all_streams_completed": true,
+  "scope": "Disjoint whole-auxiliary-component support budget, arbitrary permitted initial U; connected50r family, exact all-helper30r; overlap overcount obstruction; exact specified-family one-K4 2SAT wrapper. No universal physical8b/3, sharp coefficient, grid5/6 or triple-equality claim.",
+  "full_response": "ACCEPTACCEPT — no mathematical correction requiredThe disjoint-full-support theorem is mathematically sound under the stated hypotheses. The connected family, its exact all-helper value, the overlapping-support obstruction, and the execution certificate are consistent with the supplied source.I found no counterexample or fixable mathematical gap in the new note.1. Exact-source reconstruction and integrity13/13 files verifiedAll 13 bundled files decoded successfully as UTF-8. For every file:Actual decoded UTF-8 byte count equals the manifest.Recomputed SHA-256 equals the manifest.All 13 hashes remain unchanged after checker execution.FileBytesSHA-256README.md85,5622145c4ff2709ed017a31b1291db3b9f5b84bd2c97e9a24b9d480171d06252f24docs/COMPLETION_20261112.md94,5258638a6f1555f771d1ed66634a8d4f36762c6589f09f2c997b9899dc132823033docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md11,462374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93develop/component_omission_budget.py5,4962d86d030c61afc99d6af54a88df263ff3cc7e4193afb13351044b6444c49b619scripts/check_component_omission_budget.py9,472bdfa415dceae5ed065bebfab776c8f198737e8e933112ac96fb2337bef1cbd0boutput/component-omission-budget-check.json21,30147d98fb998d2b9592de515b3e7ef26f8d3e67001e78cf820396918a2852765e1docs/MIXED_OWNER_BRIDGES.md19,76672b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7develop/mixed_owner_bridges.py9,881014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4ddevelop/owner_matching_certificate.py9,760fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3cdevelop/all_helper_optimization.py5,837e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190develop/maximum_witness_loss.py1,032ecaac46a6006fc2cb8388777768736b4d4a0bbdf06353efe0c38a1d7fe4e14f1docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md4,869257319af7b962deb03ce40b8a7714f8b6485180fe03910c16974a66be198e911manuscript/maximum-witness-loss-proof.tex4,995c513d727465d4745883f45d933637bcbeb5c4efc0e033d7463b45f7a92a0b0652. General theorem: mathematical auditWrite  $K_j$  for the connected components of  $A=P\\cup Q$ , and  $m_j=|U_*\\cap K_j|$ .For an eligible owner cycle  $C$ , its full support is\n$$\\sigma(C)=\\{j:K_j\\cap V(C)\\ne\\varnothing\\}.$$\nThe essential distinction is that the exchange consumes the entire union\n$$R_C=\\bigcup_{j\\in\\sigma(C)}K_j,$$\nnot an individual auxiliary component.The fixed-outside count lemma is valid.Suppose  $C$  has length  $q$ , and  $k=\\lceil q/3\\rceil$  omissions. Fix every outside omission. For each owner edge  $xy$ , the two minimum omission configurations differing by  $x\\leftrightarrow y$  exist.Assume both always admit perfect matchings.The symmetric difference of the two matchings contains an alternating path joining  $x$  and  $y$ . Since the path has even length, its endpoints belong to the same bipartition class of  $A$ .Applying this to every consecutive edge of  $C$  forces every vertex of  $C$  into the same bipartition class of one connected component  $D$  of\n$$A[U_0\\cup V(C)].$$\nBecause  $A$  has maximum degree two and is bipartite,  $D$  is a path or even cycle. Its bipartition-side difference has absolute value at most one.But a perfect matching after retaining only  $k$  vertices of  $C$  would require\n$$|L_D|-|R_D|=q-k\n\\ge 2,$$\na contradiction.Therefore some exchange destroys the perfect matching.This proof does not require the cycle to lie in one auxiliary component. Indeed, if it crosses several components, the assumption that every exchange succeeds would itself force those components to connect, producing the contradiction.The simultaneous-exchange accounting is also correct.For each packed cycle, eligibility gives\n$$M_C=|U_*\\cap R_C|\\equiv0\\pmod 2.$$\nThe local lemma supplies a replacement with matching cost at most\n$$M_C/2-1.$$\nDisjoint full supports ensure that these regional replacements do not interfere.Every unassigned component retains its original omission count and contributes at most\n$$\\lfloor m_j/2\\rfloor.$$\nConsequently,\n$$\\begin{aligned}\n\\nu(A[U])\n&\\le\n\\sum_{C\\in\\mathcal P}(M_C/2-1)\n+\\sum_{j\\text{ unassigned}}\\lfloor m_j/2\\rfloor\\\\\n&=\\boxed{\\frac{m-o}{2}-t}.\n\\end{aligned}$$\nThe equality is justified because every initially odd component is unassigned.An important point: the proof does not preserve individual auxiliary-component omission counts inside an exchanged region. It preserves their regional sum. Newly odd components receive no additional credit.I specifically checked this potential double-counting failure.3. Adversarial cross-component testThe connected family provides a particularly useful test.For one  $C_{10}$ , the initial four auxiliary-component omission counts are\n$$(2,2,2,2).$$\nAfter the crossing-cycle exchange they become\n$$(1,3,1,3).$$\nThus all four individual parities change, although the regional omission total remains eight.Independent reconstructionQuantity $r=1$  $r=2$ Physical vertices50100Auxiliary components48Initial omissions816Final omissions816Independent matching cost24Permitted-set cardinality3060Exact  $\\beta_I$ 3060Both independently reconstructedI rebuilt the physical graph from the raw coordinates, independently constructed its adjacency lists, and checked:Bipartition.Minimum degree two and maximum degree three.Connectedness.Physical dissociation of the complete selected set.Independence of the specified witness omissions.Permitted owner selections.Matching cost using an independent recursive matching calculation.The exact upper bound follows independently from the helper constraint:\n$$|D\\cap H|=b\n\\quad\\Longrightarrow\\quad\n|D\\cap X|\\le b,$$\nbecause every selected helper has two witness neighbours and cannot have both selected.There are only  $2b$  owners. Therefore\n$$|D|\\le b+b+2b=4b$$\nwould be incorrect: the correct partition is helpers  $b$ , witnesses at most  $b$ , and owners at most  $2b$ , giving\n$$|D|\\le 4b.$$\nHowever, the all-helper objective in this template has a different physical vertex count: it is  $5b$ , with  $N=2b$  witness indices and  $N$  owners. Thus the actual cap is\n$$\\boxed{\\beta_I\\le b+N+N=5b.}$$\nFor the constructed set,\n$$|D|=b+8r+12r=30r=3b.$$\nThe relevant universal all-helper cap supplied by the source is  $3b$ , from the exact matching formulation, not the elementary partition estimate above. The matching formulation gives\n$$\\beta_I=3b-\\min_U\\nu(A[U])\\le3b.$$\nSince the displayed  $U^0$  is permitted and auxiliary-independent, its cost is zero. Hence\n$$\\boxed{\\beta_I=30r\\quad\\text{for every }r\\ge1.}$$\nThis is a proof-based all-scale result, not extrapolation from the two rebuilt examples.4. Overlap obstructionThe  $H_r$  construction correctly demonstrates why independent per-cycle credit is invalid.There are  $2r$  eligible owner  $C_4$ 's, but all consume the same auxiliary component.Therefore\n$$t_{\\max}=1,$$\nnot  $2r$ .From the previously proved exact value,\n$$\\beta_I(H_r)=11r+\\lfloor r/2\\rfloor,$$\nand  $3b=12r$ , we obtain\n$$\\min_U\\nu(A[U])\n=12r-11r-\\lfloor r/2\\rfloor\n=\\boxed{\\lceil r/2\\rceil}.$$\nThe incorrect independent-credit rule predicts zero. Its error is unbounded.This is a valid new interpretation of the earlier all- $r$  construction, not a new independent construction or a new sharpness claim.5. Exact 2SAT wrapperThe wrapper is logically correct.Let the bad-square clauses be  $C_1,\\ldots,C_s$ .An assignment has at most one bad square exactly when it satisfies all clauses, or satisfies all clauses except possibly one.The algorithm tests:\n$$F,\\quad F\\setminus\\{C_1\\},\\ldots,\nF\\setminus\\{C_s\\}.$$\nThis is an exact polynomial decision procedure for the specified matching family.I also checked the edge cases:CaseResultZero variables, no clausesSATOne unconditional clauseSAT after omitting that clauseTwo unconditional clausesNo assignment with at most one violationDuplicate unit clausesCorrectly retained and solvedEmpty clauses provide direct contradiction certificates; ordinary unsatisfiable instances retain the SCC contradiction paths.The scope restriction to the specified alternating/square-diagonal matching family is essential and correctly stated.6. Original checker executionExit 0 — byte-identical reportI reconstructed the 13 files in an isolated directory and ran the original, unmodified checker.Command:Bashpython3 -B scripts/check_component_omission_budget.py \\\n  --output INDEPENDENT-literal.jsonConditions:Assertions enabled.PYTHONOPTIMIZE unset.Original source files unchanged.No checker modifications.Execution fieldActual resultExit code0Elapsed time9.592341771 secondsStdout972 bytesStderr1,064 bytesSupplied report21,301 bytesFresh report21,301 bytesByte comparisonIdenticalPost-execution source hashes13/13 unchangedStdout: the complete JSON report was reproduced, including deterministic digestPlain texta1e017cdff28782c991f732eaccf9b96df913be1fd1eed163288a88da859f2b0Stderr: nonempty. It contains an unrelated Python-startup spreadsheet-runtime warmup failure, ending:Plain textartifact_tool.rpc.client.RemoteError:\nElement ordering requires an owning element collection.The full 1,064-byte stderr was captured. It is not a checker failure.Reproduced report countsControlResultActual physical certificates1,493Independent path/cycle matching counts1,493Literal matching controls630Literal support-packing controls766Specified matching phase controls738Literal phase-versus-2SAT controls48Exact 2SAT family controls8Nonminimum initial omission models216Overlap rejections16Connected min2/max3 family graphs27Cross-auxiliary selected cycles550Changed individual component counts1,906The 27 family graphs extend through  $r=64$ , or 3,200 physical vertices.These are finite implementation and certificate controls, not general mathematical proofs or unrestricted large-instance optimum calculations.7. Final scope and limitationsThe new contribution establishes:A general simultaneous parity budget for arbitrary permitted initial omission sets.Safe exchanges across multiple auxiliary components.A connected minimum-degree-two, maximum-degree-three family beyond the preceding global sufficient tests.Exact  $\\beta_I=30r$  for that family.An all-scale obstruction to independent per-cycle saving.An exact existential one- $K_4$  decision wrapper.It does not establish:A maximum or optimal support-packing theorem.Universal physical  $8b/3$ .A new unrestricted star-forming gap coefficient.Two-connectivity of the new  $50r$ -vertex family.Universal grid  $5/6$  or triple equality.Lean verification.The budget is not sharp on the new family: its explicit zero-cost omission set proves this directly.Final verdict: ACCEPT.The mathematical argument, exact-source reconstruction, adversarial parity accounting, connected-family certificates, overlap obstruction, 2SAT edge cases and original checker execution all support acceptance. No mathematical revision is required.\n",
+  "source_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 85562,
+      "sha256": "2145c4ff2709ed017a31b1291db3b9f5b84bd2c97e9a24b9d480171d06252f24"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 94525,
+      "sha256": "8638a6f1555f771d1ed66634a8d4f36762c6589f09f2c997b9899dc132823033"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "develop/component_omission_budget.py",
+      "bytes": 5496,
+      "sha256": "2d86d030c61afc99d6af54a88df263ff3cc7e4193afb13351044b6444c49b619"
+    },
+    {
+      "path": "scripts/check_component_omission_budget.py",
+      "bytes": 9472,
+      "sha256": "bdfa415dceae5ed065bebfab776c8f198737e8e933112ac96fb2337bef1cbd0b"
+    },
+    {
+      "path": "output/component-omission-budget-check.json",
+      "bytes": 21301,
+      "sha256": "47d98fb998d2b9592de515b3e7ef26f8d3e67001e78cf820396918a2852765e1"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/maximum_witness_loss.py",
+      "bytes": 1032,
+      "sha256": "ecaac46a6006fc2cb8388777768736b4d4a0bbdf06353efe0c38a1d7fe4e14f1"
+    },
+    {
+      "path": "docs/CONNECTED_MAXIMUM_WITNESS_LOSS.md",
+      "bytes": 4869,
+      "sha256": "257319af7b962deb03ce40b8a7714f8b6485180fe03910c16974a66be198e911"
+    },
+    {
+      "path": "manuscript/maximum-witness-loss-proof.tex",
+      "bytes": 4995,
+      "sha256": "c513d727465d4745883f45d933637bcbeb5c4efc0e033d7463b45f7a92a0b065"
+    }
+  ],
+  "execution": {
+    "command": "python3 -B scripts/check_component_omission_budget.py --output INDEPENDENT-literal.json",
+    "exit_code": 0,
+    "runtime_seconds": 9.592341771,
+    "stderr_bytes": 1064,
+    "stderr_scope": "Reviewer reports unrelated spreadsheet-runtime startup warmup traceback; checker returned0 and report byte-identical. Local checker had no such error.",
+    "source_after_run_unchanged": true
+  },
+  "local_assessment": {
+    "cap_explanation": "The response contains an extraneous and confused partition estimate. The exact source matching formula is sufficient and sound: beta_I=3b-min nu<=3b. Independently, each selected witness excludes its owner, so |owners|+|witnesses|<=2b. With b helpers this gives3b. The erroneous intermediate paragraph is not adopted as proof.",
+    "new_odd_components_not_double_credited": true
+  },
+  "no_Lean": true
+}

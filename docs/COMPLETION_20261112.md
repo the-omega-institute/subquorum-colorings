@@ -1,5 +1,22 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Disjoint supports: simultaneous owner exchanges
+
+The [new general support budget](DISJOINT_AUXILIARY_SUPPORT_BUDGET.md) proves
+cost<=(m-o)/2-t for any permitted omission set with a packing of t eligible
+exceptional owner cycles. Eligibility requires minimum omission on the cycle
+and even initial counts in every auxiliary component it touches. Supports
+are pairwise disjoint, so each component's capacity is spent once. Individual
+component parities may change inside a chosen region and are not credited again.
+
+The connected50r-vertex physical min2/max3 family has exact beta_I30r and
+provides a genuinely crossing-cycle certificate beyond the previous global
+tests for r>=2. The earlier two-connected20r family gives exact overlap-rule
+overstatementceil(r/2), proving no independent saving per eligible cycle.
+An exact2SAT wrapper decides whether some specified owner matching has<=1K4.
+This is additional support for general8b/3, not a proof of it or a new sharp
+SF coefficient. All general grid objectives remain in the ACTIVE full goal.
+
 ## Mixed owner bridges: 13 November continuation
 
 The [complete standalone proof](MIXED_OWNER_BRIDGES.md) establishes the
