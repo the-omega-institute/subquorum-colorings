@@ -1,43 +1,41 @@
-# Structural equality and source-dependent completion: 12 November 2026
+# Degree thresholds and source-dependent completion: 12 November 2026
 
-## Dense witnesses and the small equality thresholds
+The degree-bound equality threshold is now attained for **every integer
+minimum degree delta>=3**, at Delta=4delta-7 and every cyclic scale.
+For delta>=4 the examples also have **kappa=delta**, the largest possible
+vertex connectivity at that minimum degree. These statements concern a
+specified inclusion-minimal forming selection S inducing P_3's and isolates;
+beta_2 is the true unrestricted dissociation number.
 
-The [dense-witness construction](DENSE_WITNESS_DEGREE_THRESHOLD.md)
-attains the threshold `Delta=4delta-7` and selected gap `n/14` for EVERY
-`delta>=4`, even two-connected and at all cyclic scales. With p=delta-1,
-its order is `14pk`, specified minimal selection `8pk`, and true unrestricted
-`beta_2=7pk`. This adds the small pairs `(4,9)` and `(5,13)` to the prior
-balanced-omission threshold. Both have full combinatorial proofs; a separate
-exact-source ACCEPT reproduced the unchanged checker's complete report.
+| Construction | Parameters, k>=1 | Exact conclusion |
+| --- | --- | --- |
+| [Selected-leaf port](DEGREE_THREE_THRESHOLD_AND_SELECTED_PORT.md) | delta3, Delta5; n28k, selected16k, beta14k | Gap n/14, two-connected |
+| [Dense multiport witnesses](MAXIMALLY_CONNECTED_DEGREE_THRESHOLD.md) | p>=3, delta=p+1, Delta4p-3; n14pk, selected8pk, beta7pk | Gap n/14, kappa=delta |
+| [Balanced omissions](BALANCED_OMISSION_DEGREE_SHARPNESS.md) | t>=2, p>=max(t,5), t divides3p; delta=t+1, Delta=(4t-3)p/t | Gap pk=Delta*n/(12Delta+8delta-14), two-connected; includes (delta,Delta)=(4,15) |
+| [Earlier uniform omissions](SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) | delta>=3, Delta=(4delta-7)r, r>=3 | Same exact coefficient, two-connected |
 
+Each result has a complete arbitrary-set cap and an all-scale composition
+proof. The dense multiport proof traces the surviving kernel after simultaneous
+edge deletion; its vertex-attachment argument and disjoint bundles preserve
+maximum possible connectivity. The degree-three case uses a selected-to-outside
+port: every outside-to-outside base edge is unsafe. These are general proofs;
+finite optima are implementation controls. No exact unrestricted SF_2 value is
+inferred from a theorem for this selected-component class.
 
-## Balanced omissions and the equality threshold
+Separate final Oracle audits accepted the balanced, dense, degree-three and
+maximal-connectivity sources and ran the unchanged original checkers. Their
+complete reports were reproduced byte-for-byte. The maximal-connectivity run
+exited0 but captured1,064bytes of unrelated Python-startup spreadsheet-runtime
+stderr; the full warning is preserved in its review record. The other three
+runs reported empty stderr. The degree-three version2 audit is distinct from
+the earlier non-accepted review; the revision replaces the disputed residual
+paragraph with a direct incidence inequality. Exact manifests and full responses
+are in the corresponding output/*-review.json files.
 
-The [balanced-omission extension](BALANCED_OMISSION_DEGREE_SHARPNESS.md)
-attains `Delta*n/(12Delta+8delta-14)` for all `t>=2,p>=max(t,5),t|3p`,
-where `delta=t+1,Delta=(4t-3)p/t`, at every cyclic scale. In particular,
-for every `delta>=6` it attains the necessary threshold `Delta=4delta-7`
-with gap `n/14`, even two-connected; it also covers `(delta,Delta)=(4,15)`.
-The true unrestricted dissociation number is `7pk`, and the specified
-minimal P3/isolate selection has size `8pk`. Independent exact-source
-ACCEPT includes unchanged checker execution and complete report reproduction.
-
-
-## Sharpness at every higher minimum degree
-
-The [higher-minimum-degree sharpness family](SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) attains the new
-selected-star upper coefficient for EVERY integer delta>=3 along
-`Delta=(4delta-7)r`, r>=3, even with two-connectivity. Put t=delta-1,p=tr.
-For every k>=1, the explicit graph has n=(12p+2t)k, selected size8pk,
-true unrestricted beta_2=7pk, minimum degree delta and maximum degree
-Delta. Its gap pk equals `Delta*n/(12Delta+8delta-14)` exactly. The proof
-counts one total neighbour capacity per chosen connector, retains the
-fixed safe-edge deletion and handles both one-connector orientations.
-The independent final exact-source audit returned ACCEPT, ran the
-unchanged checker to exit0 and reproduced its complete9,808-byte report.
-The separate degree-three four-connector proof also received its own
-ACCEPT and8,090-byte report reproduction. These are infinite-parameter
-combinatorial proofs, not extrapolations from the physical controls.
+The [dense single-port proof](DENSE_WITNESS_DEGREE_THRESHOLD.md)
+remains as an intermediate theorem. Other degree pairs, regular sharpness,
+wide rectangular equality, compatible multi-Hall routing and a universal
+unit-weight5/6 improvement remain separate problems.
 
 ## Stronger shared degree cuts
 
@@ -75,7 +73,7 @@ the complete331,532-byte report exactly. The earlier fixed-base source
 also received its own separately recorded ACCEPT. These claims concern
 specified minimal selections inducing stars/edges/isolates; exact SF
 values, sharpness at degree parameters outside the new subfamily,
-maximum degree3..5 sharpness in this class, regular selected-star sharpness
+minimum-degree-two maximum-degree3..5 sharpness in this class, regular selected-star sharpness
 and general rectangular-grid equality remain separate questions. The maximum-degree2/minimum-degree2 case is
 already settled by the earlier cycle theorem in SUBCUBIC_STAR_FORMING_GAPS.md.
 
@@ -960,7 +958,7 @@ retain their existing ACCEPT, scoped to their original input.
 | Improvement of the universal mixed-direction 5/6 coefficient | Open |
 | Sharp selected-star coefficient under fixed minimum-degree and connectivity lower bounds | Resolved asymptotically: the exact padding family tends to1/12 for every fixed pair of lower bounds; maximum degree grows |
 | Stronger direct-centre witness exchange and cubic selected-star bound | Proved t-s-q>=2d and d<=floor(n/22), improving the previous7n/146 certificate; graph sharpness open |
-| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The dense construction reaches Delta=4delta-7 for every delta>=4; balanced omissions give further parameter steps; remaining intervening degree parameters, maximum degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
+| Sharp selected-star gap with bounded maximum degree or regularity | Minimum degree2 and every maximum-degree allowance Delta>=6 now have exact sharp coefficient(Delta-1)/(12(Delta-1)+2), attained two-connected. For every minimum degree delta>=3 the coefficient Delta/[12Delta+8delta-14] is now sharp along Delta=(4delta-7)r,r>=3, also two-connected. The selected-leaf construction and dense multiport construction together reach Delta=4delta-7 for every delta>=3; the latter has kappa=delta at every delta>=4. Balanced omissions give further parameter steps. Remaining intervening degree parameters, minimum-degree-two maximum-degree3..5 and regular selected-star sharpness remain open; quartic regular lower1/68/upper1/34 and cubic upper1/22 retain their separate scopes |
 | Candidate strengthening4beta_2>=2|S|+n for general bipartite selected-star minimal sets | False: P_(r,r) has beta_2=n/2, selected size8r, order14r and connectivity r+1; no selected edge components |
 | Intrinsic recognition of positive sharp n/10 equality in bipartite graphs | Proved by intrinsic layers and the exact all-subsets neighbourhood criterion; separate from E(H) |
 | Replacing the incomplete-core all-subsets criterion by local conditions | Open simplification question; the exact recognition theorem is already proved |

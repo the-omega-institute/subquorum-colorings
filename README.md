@@ -1,37 +1,41 @@
 # Current continuation
 
-The [dense-witness construction](docs/DENSE_WITNESS_DEGREE_THRESHOLD.md)
-attains the threshold `Delta=4delta-7` and selected gap `n/14` for EVERY
-`delta>=4`, even two-connected and at all cyclic scales. With p=delta-1,
-its order is `14pk`, specified minimal selection `8pk`, and true unrestricted
-`beta_2=7pk`. This adds the small pairs `(4,9)` and `(5,13)` to the prior
-balanced-omission threshold. Both have full combinatorial proofs; a separate
-exact-source ACCEPT reproduced the unchanged checker's complete report.
+The degree-bound equality threshold is now attained for **every integer
+minimum degree delta>=3**, at Delta=4delta-7 and every cyclic scale.
+For delta>=4 the examples also have **kappa=delta**, the largest possible
+vertex connectivity at that minimum degree. These statements concern a
+specified inclusion-minimal forming selection S inducing P_3's and isolates;
+beta_2 is the true unrestricted dissociation number.
 
+| Construction | Parameters, k>=1 | Exact conclusion |
+| --- | --- | --- |
+| [Selected-leaf port](docs/DEGREE_THREE_THRESHOLD_AND_SELECTED_PORT.md) | delta3, Delta5; n28k, selected16k, beta14k | Gap n/14, two-connected |
+| [Dense multiport witnesses](docs/MAXIMALLY_CONNECTED_DEGREE_THRESHOLD.md) | p>=3, delta=p+1, Delta4p-3; n14pk, selected8pk, beta7pk | Gap n/14, kappa=delta |
+| [Balanced omissions](docs/BALANCED_OMISSION_DEGREE_SHARPNESS.md) | t>=2, p>=max(t,5), t divides3p; delta=t+1, Delta=(4t-3)p/t | Gap pk=Delta*n/(12Delta+8delta-14), two-connected; includes (delta,Delta)=(4,15) |
+| [Earlier uniform omissions](docs/SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) | delta>=3, Delta=(4delta-7)r, r>=3 | Same exact coefficient, two-connected |
 
-The [balanced-omission extension](docs/BALANCED_OMISSION_DEGREE_SHARPNESS.md)
-attains `Delta*n/(12Delta+8delta-14)` for all `t>=2,p>=max(t,5),t|3p`,
-where `delta=t+1,Delta=(4t-3)p/t`, at every cyclic scale. In particular,
-for every `delta>=6` it attains the necessary threshold `Delta=4delta-7`
-with gap `n/14`, even two-connected; it also covers `(delta,Delta)=(4,15)`.
-The true unrestricted dissociation number is `7pk`, and the specified
-minimal P3/isolate selection has size `8pk`. Independent exact-source
-ACCEPT includes unchanged checker execution and complete report reproduction.
+Each result has a complete arbitrary-set cap and an all-scale composition
+proof. The dense multiport proof traces the surviving kernel after simultaneous
+edge deletion; its vertex-attachment argument and disjoint bundles preserve
+maximum possible connectivity. The degree-three case uses a selected-to-outside
+port: every outside-to-outside base edge is unsafe. These are general proofs;
+finite optima are implementation controls. No exact unrestricted SF_2 value is
+inferred from a theorem for this selected-component class.
 
+Separate final Oracle audits accepted the balanced, dense, degree-three and
+maximal-connectivity sources and ran the unchanged original checkers. Their
+complete reports were reproduced byte-for-byte. The maximal-connectivity run
+exited0 but captured1,064bytes of unrelated Python-startup spreadsheet-runtime
+stderr; the full warning is preserved in its review record. The other three
+runs reported empty stderr. The degree-three version2 audit is distinct from
+the earlier non-accepted review; the revision replaces the disputed residual
+paragraph with a direct incidence inequality. Exact manifests and full responses
+are in the corresponding output/*-review.json files.
 
-The [higher-minimum-degree sharpness family](docs/SHARP_HIGHER_MINIMUM_DEGREE_SUBFAMILY.md) attains the new
-selected-star upper coefficient for EVERY integer delta>=3 along
-`Delta=(4delta-7)r`, r>=3, even with two-connectivity. Put t=delta-1,p=tr.
-For every k>=1, the explicit graph has n=(12p+2t)k, selected size8pk,
-true unrestricted beta_2=7pk, minimum degree delta and maximum degree
-Delta. Its gap pk equals `Delta*n/(12Delta+8delta-14)` exactly. The proof
-counts one total neighbour capacity per chosen connector, retains the
-fixed safe-edge deletion and handles both one-connector orientations.
-The independent final exact-source audit returned ACCEPT, ran the
-unchanged checker to exit0 and reproduced its complete9,808-byte report.
-The separate degree-three four-connector proof also received its own
-ACCEPT and8,090-byte report reproduction. These are infinite-parameter
-combinatorial proofs, not extrapolations from the physical controls.
+The [dense single-port proof](docs/DENSE_WITNESS_DEGREE_THRESHOLD.md)
+remains as an intermediate theorem. Other degree pairs, regular sharpness,
+wide rectangular equality, compatible multi-Hall routing and a universal
+unit-weight5/6 improvement remain separate problems.
 
 The [combined centre/leaf degree cuts](docs/COMBINED_CENTRE_LEAF_DEGREE_BOUNDS.md) strengthen the selected-star
 bound at minimum degree at least3. Every specified minimal selection in
@@ -65,7 +69,7 @@ the complete331,532-byte report exactly. The earlier fixed-base source
 also received its own separately recorded ACCEPT. These claims concern
 specified minimal selections inducing stars/edges/isolates; exact SF
 values, sharpness at degree parameters outside the new subfamily,
-maximum degree3..5 sharpness in this class, regular selected-star sharpness
+minimum-degree-two maximum-degree3..5 sharpness in this class, regular selected-star sharpness
 and general rectangular-grid equality remain separate questions. The maximum-degree2/minimum-degree2 case is
 already settled by the earlier cycle theorem in SUBCUBIC_STAR_FORMING_GAPS.md.
 
