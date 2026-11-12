@@ -1,0 +1,397 @@
+\section{Supported deletion in the twenty-vertex block}\label{app:twenty-support}
+
+We give the local case proof used to determine the upper star-forming number
+of the cyclic family. In this appendix $F=F_{20}$, with ports $4,12$.
+A selected vertex is \emph{active} if it has a selected neighbour in $F$.
+For $C\subseteq V(F)$, a vertex $v$ is \emph{supported} if
+\begin{enumerate}
+\item $v\in C\setminus\{4,12\}$ and $N_F(v)\cap C\ne\varnothing$;
+\item every $u\in N_F(v)\cap C$ has a neighbour in $C\setminus\{v\}$;
+\item every $x\in N_F(v)\setminus C$ has at least three neighbours in $C$,
+ or exactly two, with the other selected neighbour different from $v$ active.
+\end{enumerate}
+These are the conditions of Lemma~\ref{lem:supported-deletion}.
+
+\begin{lemma}\label{lem:twenty-support}
+Every subset of $V(F)$ of size at least thirteen contains a supported vertex.
+\end{lemma}
+\begin{proof}
+Supportedness is upward closed by Lemma~\ref{lem:supported-deletion}, so assume
+$|C|=13$. Suppose no supported vertex exists. Write
+\[
+ H=\{0,1,2,3\},\quad X=\{4,\ldots,11\},\quad
+ A=\{12,13,16,19\},\quad B=\{14,15,17,18\}.
+\]
+The square sides are $\{12,13\}\mid\{16,19\}$ and
+$\{14,15\}\mid\{17,18\}$. Let $s(x)$ be the companion witness at the same
+helper and $m(x)$ its witness-matching mate:
+\[
+ s=(4\,5)(6\,7)(8\,9)(10\,11),\qquad
+ m=(4\,11)(5\,9)(6\,8)(7\,10).
+\]
+For $x\ge5$, $N_F(x)=\{h(x),m(x),x+8\}$, where
+$h(x)=\lfloor(x-4)/2\rfloor$, whereas $N_F(4)=\{0,11\}$.
+Put $h=|C\cap H|$, $k=|C\cap(A\cup B)|$, $D=X\setminus C$ and $p=|D|$.
+Counting selected vertices gives
+\begin{equation}\label{eq:twenty-budget}
+ p=h+k-5.
+\end{equation}
+
+\paragraph{Local owner rules.}
+Call a nonport owner \emph{ready} if its square is fully selected, or it is
+an endpoint of the selected three-vertex path in a square with three
+selected vertices. Its square-neighbour tests are automatic. In the
+three-vertex case the selected square neighbour retains the other endpoint,
+and the omitted square neighbour retains that active endpoint.
+A ready owner can therefore fail only at its witness. The possibilities are
+\[
+\begin{array}{c|c}
+\text{square selection}&\text{ready owners}\\\hline
+A\text{ full}&13,16,19\\
+A\text{ omits }12\text{ or }13&16,19\\
+A\text{ omits }16\text{ or }19&13\\
+B\text{ full}&14,15,17,18\\
+B\text{ omits }14\text{ or }15&17,18\\
+B\text{ omits }17\text{ or }18&14,15
+\end{array}
+\]
+A witness-matching pair incident to $t$ ready owners requires at least $t$
+omitted witnesses. For $t=1$, selecting both witnesses makes the owner safe.
+For $t=2$, if only one witness is omitted, its selected mate is active through
+its own selected owner, again making the first owner safe. The pairs are
+disjoint, so
+\begin{equation}\label{eq:twenty-ready}
+ p\ge\#\{\text{ready owners}\}.
+\end{equation}
+If $x+8$ is ready and exactly one of $x,m(x)$ is omitted, then $h(x)$ must
+be omitted. Otherwise a selected $x$ retains its helper, or an omitted $x$
+has three selected neighbours. If $x$ is the omitted one, its selected mate
+must also be inactive.
+
+When a square has exactly two selected vertices, every omitted owner is a
+safe outside neighbour of its selected witness: either both core neighbours
+are selected, giving three selected neighbours including that witness, or
+one core neighbour is selected and active through the other selected owner.
+Also, a selected owner whose same-side opposite is omitted has a selected
+core neighbour. We will use these two-owner rules below.
+
+\paragraph{Local helper rule.}
+The witness matching gives the helper cycle $0-2-1-3-0$. Represent an
+omitted witness by an arrow from its helper to the helper of its mate.
+An active selected helper is supported using the twelve-cycle alone if
+neither matching mate of its witnesses is omitted and each omitted witness
+at that helper has its mate at a selected helper. Indeed, selected witnesses
+retain their matching mates, while an omitted witness retains its active
+mate after helper deletion. Thus a failed active helper must receive an
+omission arrow, or emit one to an omitted helper. An arrow accounts for at
+most one active selected helper: its target when selected, otherwise its
+source. Consequently
+\begin{equation}\label{eq:twenty-helpers}
+ \#\{\text{active selected helpers}\}\le p.
+\end{equation}
+An isolated selected helper requires two omitted witnesses. Hence $h=2,3$
+require $p\ge2$, and $h=4$ requires $p\ge3$. If $h=3,p=2$, one selected
+helper is isolated and its two arrows target the other selected helpers.
+The omitted helper is opposite it, leaving exactly
+\begin{equation}\label{eq:twenty-h3-p2}
+\begin{array}{c|cccc}
+\text{omitted helper}&0&1&2&3\\\hline
+D&\{6,7\}&\{4,5\}&\{10,11\}&\{8,9\}.
+\end{array}
+\end{equation}
+
+We also record one reusable finish. If $1,2,5,6,7,10$ are selected,
+$9,14$ omitted, and exactly two of $15,17,18$ selected, choose $18$ when
+selected and otherwise $17$. The three checks are
+\[
+\begin{array}{c|c|l}
+\text{omitted}&v&\text{remaining neighbour checks}\\\hline
+15&18&10\text{ retains }7;\ 14,15\text{ each have three selected neighbours}\\
+17&18&10,15\text{ retain }7;\ 14\text{ retains }6\text{ active through }1\\
+18&17&15\text{ retains }7;\ 14\text{ retains active }6;\ 9\text{ has }2,5,17.
+\end{array}
+\]
+All choices are active nonports.
+
+\paragraph{At most one selected helper.}
+If $h=0$, the possible values $k=5,6,7,8$ give $p=0,1,2,3$ and at least
+$1,3,5,7$ ready owners, contradicting~\eqref{eq:twenty-ready}.
+If $h=1$ and $p=0$, the selected helper is supported. Otherwise the same
+count leaves only $k=5,p=1$: square $A$ has three selected owners, omitting
+$16$ or $19$, and $B$ has two. Ready owner $13$ forces the omitted witness
+to be $5$ or $9$. A selected helper outside $\{0,2\}$ is supported.
+For the four remaining possibilities the supported choices are
+\[
+\begin{array}{c|c|c|l}
+D&\text{helper}&v&\text{check}\\\hline
+\{5\}&0&13&5\text{ has }0,9,13\\
+\{5\}&2&13&5\text{ retains }9\text{ active through }2\\
+\{9\}&0&0&4,5\text{ retain }11,13\\
+\{9\}&2&2&8\text{ retains }6;\ 9\text{ retains }5\text{ active through }13.
+\end{array}
+\]
+
+\paragraph{Two selected helpers.}
+Equations~\eqref{eq:twenty-budget}--\eqref{eq:twenty-helpers} leave only
+$(k,p)=(6,3)$ or $(5,2)$. For $(6,3)$, a full $A$ and two-owner $B$ force
+one omission in each of $\{5,9\},\{6,8\},\{4,11\}$.
+The single-omission rule would omit helpers $0,2,3$. A full $B$ has four
+ready owners and is impossible. Otherwise both squares have three selected
+owners, and the ready count forces $A$ to omit $16$ or $19$, with ready
+owner $13$. If $B$ has ready owners $14,15$, the three omission pairs are
+$\{5,9\},\{6,8\},\{7,10\}$. Helpers $0,1$ are omitted and $2,3$
+selected. If $10$ is selected, owner $15$ is supported through that active
+mate of omitted $7$. If $10$ is omitted, helper $3$ is supported: $11$
+retains $4$, and $10$ retains $7$ active through $15$.
+If $B$ has ready owners $17,18$, both $5,9$ are omitted, with one further
+omission in $\{7,10\}$, and helper $3$ is omitted. Each of helpers $0,2$
+would be supported when selected, since its omitted witness retains its
+active ready owner $13$ or $17$. Only helper $1$ could be selected.
+
+For $(k,p)=(5,2)$ the square occupancies are $3+2$. If $A$ omits $12$ or
+$13$, ready owners $16,19$ force omissions in $\{6,8\}$ and $\{4,11\}$;
+helpers $2,3$ are omitted and $0,1$ selected. Omitted $4$ makes helper $0$
+supported through $11$ active at $19$; omitted $11$ makes owner $19$
+supported through $4$ active at helper $0$.
+If $B$ has ready owners $14,15$, its two omission pairs are
+$\{6,8\},\{7,10\}$. Helper $1$ is omitted; helper $0$ would be supported,
+so $2,3$ are selected. Omitted $8$ makes helper $2$ supported through $6$
+active at $14$; omitted $6$ makes owner $14$ supported through $8$ active
+at helper $2$. If $B$ has ready owners $17,18$, helpers $2,3$ are omitted,
+$0,1$ selected, and omissions lie in $\{5,9\},\{7,10\}$. Omitted $7$
+makes helper $1$ supported through active $10$; omitted $10$ makes owner
+$18$ supported through active $7$.
+
+It remains that $A$ omits $16$ or $19$, $B$ has two selected owners and
+$13$ is ready. In particular $13$ is selected and active. At least one of
+$5,9$ belongs to $D$. If both belong to $D$, each of helpers $0,1,3$ is
+supported whenever selected. For helper $0$, selected $4$ retains $11$ and
+outside $5$ retains the active owner $13$; helpers $1,3$ have both witness
+mates selected. This would leave at most one selected helper. Hence exactly
+one of $5,9$ is omitted, and the single-omission rule gives $0\notin C$.
+
+We first exclude the alternative $5\in D$, $9\in C$. Failure to support
+owner $13$ forces $9$ inactive, since outside $5$ has just $13,9$ selected.
+Thus $2,17\notin C$ and, because $h=2$, helpers $1,3$ are selected.
+Write $D=\{5,z\}$, with $z\in\{4,6,7,8,10,11\}$. The following choices
+contradict the absence of a supported helper:
+\[
+\begin{array}{c|c|l}
+z&v&\text{checks on its witnesses after deleting }v\\\hline
+4,11&1&6,7\text{ retain their selected mates }8,10\\
+6,8&3&10,11\text{ retain their selected mates }7,4\\
+7&1&6\text{ retains }8;\ \text{outside }7\text{ retains }10
+       \text{ active through helper }3\\
+10&3&11\text{ retains }4;\ \text{outside }10\text{ retains }7
+       \text{ active through helper }1.
+\end{array}
+\]
+The newly outside helper retains an active witness in every row. An omitted
+witness with a selected owner has three selected neighbours; otherwise the
+displayed active mate verifies its two-neighbour test. This discharges the
+entire alternative $5\in D$.
+
+We therefore have $9\in D$ and $5\in C$. Write $D=\{9,z\}$ with the same
+six possibilities for $z$. If $2\notin C$, helpers $1,3$ are again selected,
+and the preceding table applies unchanged: none of its checks uses the status
+of $5$ or $9$. Hence $2\in C$. Outside $9$ retains selected $5$, active
+through selected owner $13$, when helper $2$ is deleted. If
+$z\notin\{6,8\}$, selected witness $8$ retains selected mate $6$ as well,
+so helper $2$ is supported. Only $z=6,8$ remain.
+
+If $z=6$, failure of helper $2$ forces $16\notin C$, since otherwise
+selected $8$ retains owner $16$. Helper $3$, if selected, is supported:
+its selected witnesses $10,11$ retain selected mates $7,4$.
+Thus $3\notin C$, and the two selected helpers are exactly $1,2$.
+Deleting helper $1$ is safe: outside $6$ retains selected $8$ active through
+helper $2$, and selected $7$ retains selected $10$. A selected owner $14$
+would only add a third selected neighbour to outside $6$.
+This excludes $z=6$.
+
+If $z=8$, the same check at helper $3$ again gives $3\notin C$, so
+$C\cap H=\{1,2\}$. Selected witness $6$ has omitted mate $8$; failure
+of helper $1$ therefore forces $14\notin C$, since selected $7$ already
+retains $10$. We now have $1,2,5,6,7,10\in C$, $9,14\notin C$, and exactly
+two of $15,17,18$ selected. The reusable finish gives a supported owner.
+
+\paragraph{Three selected helpers.}
+Let $j$ be the omitted helper; now $p=k-2$. For a ready owner $x+8$, put
+$T_x=\{x,s(x),m(x)\}$. The seven sets are
+\[
+\begin{array}{c|c@{\qquad}c|c}
+x&T_x&x&T_x\\\hline
+5&\{4,5,9\}&6&\{6,7,8\}\\
+7&\{6,7,10\}&8&\{6,8,9\}\\
+9&\{5,8,9\}&10&\{7,10,11\}\\
+11&\{4,10,11\}&&
+\end{array}
+\]
+Absence of a supported ready owner is equivalent to
+\begin{equation}\label{eq:twenty-obstruction}
+ U_j(x+8)\subseteq D,\qquad
+ U_j(x+8)=\begin{cases}\{m(x)\},&h(x)=j,\\T_x,&h(x)\ne j.\end{cases}
+\end{equation}
+If the helper is selected, selected $x$ is safe through the helper, and
+omitted $x$ is safe if its mate is selected or its helper is active through
+$s(x)$. If the helper is omitted, a selected mate is active through its own
+selected helper, whereas omission of both witnesses leaves only the owner.
+This proves the equivalence, including the pair $\{4,11\}$.
+
+The case $k=8$ has seven ready owners but $p=6$. For a full $A$, the unions
+of the sets in~\eqref{eq:twenty-obstruction} have sizes $6,7,6,5$ as
+$j=0,1,2,3$; for a full $B$ they have sizes $7,6,6,6$. Thus $B$ cannot be
+full. Full $A$ could survive only at $k=7,j=3$, forcing
+$D=\{4,5,6,8,9\}$; the three selected owners of $B$ additionally force $7$
+omitted. If both squares have three selected owners, $p=4$. Write $A_L$
+for omission of $12$ or $13$, $A_R$ for omission of $16$ or $19$, and
+analogously $B_L,B_R$. Their forced-union sizes are
+\[
+\begin{array}{c|rrrr}
+&j=0&j=1&j=2&j=3\\\hline
+A_L,B_L&8&8&6&6\\
+A_L,B_R&7&6&6&6\\
+A_R,B_L&6&7&6&5\\
+A_R,B_R&5&5&7&7
+\end{array}
+\]
+Each entry is the union of the explicitly displayed sets, and exceeds four.
+Therefore $k\le5$; the helper rule gives $k\ge4$.
+
+For $k=4,p=2$, use~\eqref{eq:twenty-h3-p2}. No ready owner's obstruction
+fits $D$, so both squares have two selected owners. Failure of the active
+helpers gives the following forced omissions and choices:
+\[
+\begin{array}{c|c|c|l}
+j&D&\text{omitted owners}&\text{supported choice}\\\hline
+0&\{6,7\}&16,18&\text{as below}\\
+1&\{4,5\}&17,19&8\text{ if }14\in C,\text{ otherwise }10\\
+2&\{10,11\}&15&6\text{ if }16\in C;\ 7\text{ if }18\in C;\text{ otherwise }9\\
+3&\{8,9\}&13,14&5\text{ if }17\in C,\text{ otherwise }7.
+\end{array}
+\]
+For row one, if $17$ is selected, choose the other selected owner of $B$,
+either $14$ or $15$. Its outside witness has three selected neighbours,
+and its omitted square neighbour retains an active selected witness.
+Otherwise $B\cap C=\{14,15\}$. If $A\cap C=\{12,13\}$, choose $13$:
+outside $16,19$ each have three selected neighbours. For the other possible
+pairs $\{12,19\},\{13,19\}$ choose $5$: outside $0$ retains $4$ active
+at $11$, selected $9$ retains helper $2$, and owner $13$ passes the
+two-owner rule or retains $19$.
+For row two, $8$'s mate $6$ retains selected $14$, and owner $16$ is safe
+by the two-owner rule since its same-side opposite $19$ is omitted. If $14$
+is omitted, $B\cap C=\{15,18\}$ gives the analogous check for $10$.
+For row three, selected $16$ makes $8$ safe for deleting $6$. Otherwise,
+selected $18$ gives outside $10$ three selected neighbours for deleting $7$.
+If both $16,18$ are omitted, $B\cap C=\{14,17\}$: choice $9$ has outside
+helper $2$ retaining $8$ active at $6$, selected $5$ retaining helper $0$,
+and selected $17$ retaining $14$. In row four, selected $17$ gives outside
+$9$ three selected neighbours for deleting $5$; omitted $13$ is safe by the
+two-owner rule. Otherwise $B\cap C=\{15,18\}$ makes $7$ supported.
+
+For $k=5,p=3$, the square occupancies are $3+2$. The obstruction sets show
+that a three-owner $A$ must omit $16$ or $19$; its ready owner $13$ forces
+$9\in D$ if $j=0$, and $D=\{4,5,9\}$ otherwise. A three-owner $B$ is
+possible only at $j=1$, omitting $17$ or $18$, and forces $\{8,10\}\subseteq D$.
+The other types force at least four omissions. If $j=2$ or $3$, the first
+alternative makes helper $1$ supported, since $6,7,8,10$ are selected.
+If $j=1$ and $A$ has three selected owners, choose $6$ unless
+$B\cap C=\{14,15\}$: outside helper $1$ retains $7$ active at $10$,
+selected $8$ retains helper $2$, and $14$ is safe by the two-owner rule
+except in that same-side pair. In that exception choose $14$: $6$ retains
+$8$, outside $17$ retains $15$ active at $7$, and outside $18$ has $14,15,10$.
+If $j=1$ and $B$ has three selected owners, its selected owners include
+$14,15$, and $D=\{8,10,z\}$.
+For $z\in\{4,7,11\}$, delete helper $2$: selected $9$ retains selected
+$5$, and outside $8$ retains selected $6$, active through selected owner
+$14$. If owner $16$ is selected, outside $8$ instead has three selected
+neighbours. For $z\in\{5,6,9\}$, delete helper $3$: selected $11$ retains
+selected $4$, and outside $10$ retains selected $7$, active through selected
+owner $15$. If owner $18$ is selected, outside $10$ has three selected
+neighbours. In both groups the newly outside helper retains the first
+selected witness, whose displayed mate remains selected.
+
+It remains that $j=0$, $A$ omits $a\in\{16,19\}$, $B$ has two selected
+owners, $|D|=3$ and $9\in D$. Owner $13$ is selected and active.
+If $a=16$, failure of helper $2$ requires an omission in $\{5,6,8\}$.
+The $11$-side of helper $3$ is safe through $19$. Failure of $3$ requires
+either both $10,11$ omitted, which would make helper $2$ supported, or $7$
+omitted. Thus $D=\{7,9,t\}$ with $t\in\{5,6,8\}$.
+For $t=5$ helper $1$ is supported; for $t=6$ witness $5$ is supported.
+For $t=8$, failure of helpers $1,3$ forces $14,18$ omitted, so $17$ is
+selected and witness $5$ is again supported.
+If $a=19$, failure of helper $2$ requires $5$ or $8$ omitted. If $5$ is
+omitted but $8$ selected, helper $1$ is supported unless the last omission
+is $10$, when helper $3$ is supported. Thus $D=\{8,9,t\}$.
+Failure of helper $3$ forces $t\in\{4,7,11\}$, and failure of helper $1$
+forces $14$ omitted. For $t=4,11$ the reusable finish applies. For $t=7$,
+failure of helper $3$ additionally forces $18$ omitted, so $17$ is selected
+and witness $5$ is supported. All these uses of witness $5$ have
+$4,5,11,13$ selected, $0,9$ omitted, $13$ with a selected core neighbour,
+and either $17$ or $8$ selected. Outside $0$ retains $4$ active at $11$;
+outside $9$ either has three selected neighbours, or retains helper $2$
+active at $8$. This supplies the required activity checks.
+
+\paragraph{Four selected helpers.}
+Write $W=X\cap C$, $w=|W|$. Then $w+k=9$, and the helper rule gives
+$p\ge3$, hence $w\le5$, $k\ge4$. A ready owner $x+8$ is safe exactly
+when $W\cap T_x\ne\varnothing$. A full $A$ forces $W\subseteq\{7\}$,
+so $w+k=9$ would give $w=1,k=8$; but a full $B$ forces
+$W\subseteq\{4\}$, a contradiction. Starting with full $B$ gives the same
+conclusion. Thus $k\le6$. A three-owner $A$ cannot omit $12$ or $13$,
+which would force $w\le2$; it omits $16$ or $19$, forcing
+\begin{equation}\label{eq:twenty-WA}
+ W\subseteq\{6,7,8,10,11\}.
+\end{equation}
+A three-owner $B$ must omit $17$ or $18$, forcing
+\begin{equation}\label{eq:twenty-WB}
+ W\subseteq\{4,5,9,11\}.
+\end{equation}
+For $k=6$, both apply and $W\subseteq\{11\}$, contradicting $w=3$.
+For $k=5$, a three-owner $B$ gives $W=\{4,5,9,11\}$, making helper $0$
+supported. Otherwise $W$ is four of the five vertices
+in~\eqref{eq:twenty-WA}. If the missing one is $6,7$ or $11$, helper $1$
+is supported. For $W=\{6,7,10,11\}$, failure of helper $1$ forces $14$
+omitted; witness $7$ is supported, since its helper retains $6$, its mate
+$10$ retains helper $3$, and its owner is safe by the two-owner rule.
+For $W=\{6,7,8,11\}$, failure of helper $1$ forces $15$ omitted and
+witness $6$ passes the corresponding checks.
+
+For $k=4$, both squares have two selected vertices. Indeed a three-owner
+$B$ forces $w\le4$, while a three-owner $A$ forces
+$W=\{6,7,8,10,11\}$ and makes helper $1$ supported. Exactly three
+witnesses are omitted. By the helper rule exactly one helper is isolated;
+its two omissions block its neighbouring helpers in the helper cycle, and
+the third omission must block the opposite helper. This leaves eight cases.
+For each active helper its unique blocking witness is selected, so that
+witness's owner must be omitted, except that witness $4$ has no owner edge.
+The forced omissions and supported choices are
+\[
+\begin{array}{c|c|c}
+D&\text{omitted owners}&v\\\hline
+\{4,5,8\}&19,17,14&7\\
+\{4,5,10\}&19,17,15&6\\
+\{6,7,11\}&16,18&9\\
+\{6,7,9\}&16,18,13&11\\
+\{8,9,7\}&14,13,18&5\\
+\{8,9,4\}&14,13,19&7\\
+\{10,11,6\}&15,16&8\\
+\{10,11,5\}&15,17&6
+\end{array}
+\]
+In rows $1,2,4,8$ the selected core pair relevant to the chosen witness is,
+respectively,
+\[
+ \{15,18\},\quad\{14,18\},\quad\{12,19\},\quad\{14,18\}.
+\]
+The companion and mate of the chosen witness are selected and its owner
+retains the other vertex of that pair. In row $3$, witness $9$ has companion
+$8$ and mate $5$ selected; owner $17$ is safe by the two-owner rule because
+$18$ is omitted. In row $6$, witness $7$ has companion $6$ and mate $10$
+selected; owner $15$ is safe because $14$ is omitted.
+In row $5$, witness $5$'s helper retains $4$, outside mate $9$ has $2,5,17$
+selected since $B\cap C=\{15,17\}$, and omitted $13$ is safe by the
+two-owner rule. In row $7$, witness $8$'s helper retains $9$, outside mate
+$6$ retains helper $1$ active at $7$, and omitted $16$ is safe by the
+two-owner rule. Every choice is an active selected nonport.
+All possibilities have contradicted the absence of a supported vertex.
+\end{proof}

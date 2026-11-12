@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T14:30:57.054309+00:00",
+  "verdict": "ACCEPT",
+  "final_audit": {
+    "oracle": {
+      "task_id": "95940e37-b603-4c20-a2b6-4967a734b3e0",
+      "conversation_id": "conv_7f1eac5fa6e04ae4",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5cbba-f954-83ec-bc8d-8db6878d71cf",
+      "usage_estimated": true
+    },
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 82029,
+        "sha256": "37f478c99b51556a922a3e4091706a928effd9f844a9e622bb0aa3b017470f83"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/fixtures/twenty-vertex-subcubic-core.json",
+        "bytes": 2365,
+        "sha256": "35126a8771c526cfcbdcb75ea4db2a191bd5b48efd8de219994ca7792661418f"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "develop/supported_local_deletion.py",
+        "bytes": 604,
+        "sha256": "50b6bda354fffdc77dda105ae20fb49b0477e7776067044186a52c8d5e307818"
+      },
+      {
+        "path": "develop/twenty_supported_deletion.py",
+        "bytes": 2499,
+        "sha256": "9aaed4985d72a40b999f4baa7fd0ba3a7eaeb579257f435ca00b6236faf0f9b1"
+      },
+      {
+        "path": "develop/twenty_vertex_subcubic.py",
+        "bytes": 1284,
+        "sha256": "c7a40759b17345d8353966bffe43cd37ee90881d77365e6cdc6701ba76d746b1"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 87344,
+        "sha256": "fcef2c77f0293b38316a12ed1e4f5783f2d02d077ebb6faace9cd887c00bfe18"
+      },
+      {
+        "path": "docs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md",
+        "bytes": 8639,
+        "sha256": "0477697212362e3c8785927339863bd9f716571881a47fb4e4610db24e4a08a9"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/TWENTY_VERTEX_SUPPORTED_DELETION.md",
+        "bytes": 4823,
+        "sha256": "2565b89e455c35c0770872d3b1b2990d26d4408c2207bf689dcd9804b201d093"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 113309,
+        "sha256": "1ac7def6a9080353da0459660a883ff0ae2c58a0fef11b68c0f94059132c241b"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/all-helper-optimization-check.json",
+        "bytes": 678,
+        "sha256": "c7e67a20a51d9064b990589dc5ad99059fed4a28b0c59a806cf9413bc451665d"
+      },
+      {
+        "path": "output/path-six-owner-lift-check.json",
+        "bytes": 842,
+        "sha256": "4ae7df301ceaddc26b1d6111b153ebc5ba48e5735615911dfd4699248636d982"
+      },
+      {
+        "path": "output/twenty-supported-deletion-check.json",
+        "bytes": 1185,
+        "sha256": "c7c6b7243bb8a0d99fcb7c2db037c09d78191c55a88c8588929f92b81b200a01"
+      },
+      {
+        "path": "scripts/check_all_helper_optimization.py",
+        "bytes": 4880,
+        "sha256": "5305fd3d635c77f9fdb7a7c59b7993530ef7505a947721cc8efcc9fe75ddb2c0"
+      },
+      {
+        "path": "scripts/check_path_six_owner_lift.py",
+        "bytes": 6456,
+        "sha256": "494cbf0561029ae62da4819c709943bcb52a54720671ccf0cf3740b7fc6ece1b"
+      },
+      {
+        "path": "scripts/check_twenty_supported_deletion.py",
+        "bytes": 7031,
+        "sha256": "14244d9e6c23dbb6b62b02ff5431a6c7b30df678f6be0bf8a135ddcc36d7a560"
+      }
+    ],
+    "full_response": "ACCEPT. Both proof gaps identified in the earlier review are resolved. The corrected manuscript proves analytically that every 13-subset of  $F_{20}$  has an internally supported nonport deletion. The ambient deletion lemma then bounds every inclusion-minimal forming set by twelve vertices per block. The cyclic family attains that bound, giving, for every  $r\\ge1$ ,\n$$|V(G_r)|=20r,\\qquad \\mathrm{SF}_2(G_r)=12r,\\qquad\n\\beta_2(G_r)=11r,\\qquad \\mathrm{SF}_2(G_r)-\\beta_2(G_r)=|V(G_r)|/20.$$\nAll three original checkers ran to completion and reproduced their attached reports byte-for-byte.Source integrity and executionI decoded all 23 files, totaling 396,310 bytes, at their supplied relative paths. Every byte count and SHA-256 matched. For each of the four supplied diffs, I reconstructed the previous bytes, matched the old and new hashes, and regenerated the supplied unified diff exactly. All 23 source hashes still matched after execution.I ran the unmodified scripts with Python 3.12.14, assertions enabled, using python3 -B scripts/<checker>.py --output <fresh-path>. Each printed one Python dictionary to stdout whose parsed value equaled the JSON report. The byte comparisons below were performed on the fresh report files. All three stderr streams were empty in this run.Original checkerExitStdout bytesReport bytesFresh report SHA-256Byte matchcheck_twenty_supported_deletion.py01,0831,185c7c6b7243bb8a0d99fcb7c2db037c09d78191c55a88c8588929f92b81b200a01Exactcheck_all_helper_optimization.py0634678c7e67a20a51d9064b990589dc5ad99059fed4a28b0c59a806cf9413bc451665dExactcheck_path_six_owner_lift.py07908424ae7df301ceaddc26b1d6111b153ebc5ba48e5735615911dfd4699248636d982ExactThe corrected twenty-vertex checker exercised all 192 expanded implications under their local hypotheses, 120 in the two-helper case and 72 in the three-helper case. It also checked all 77,520 thirteen-sets, 906,984 individual supportedness tests, 542,640 single additions for the chosen vertices, and 24 forced-union entries. Of 3,000 seeded port extensions, 2,176 satisfied the initial forming hypothesis and exercised the literal deletion assertion. The 20 cyclic controls checked the selected-set sizes and 616 block neighbourhoods. The all-helper checker tested 3,014,785 physical subsets across 686 models. The lift checker covered 12,351 induced owner subgraphs, 4,227 minimal-set lifts on 879 small graphs, 42 physical templates, and 18 exact template optima.The analytic thirteen-set proofI checked the case split for every  $h=0,\\ldots,4$  against the block adjacencies. The budget  $p=h+k-5$ , the omission count for ready owners, and the arrow count for active helpers give the stated reductions. For three helpers, the singleton and triple obstruction sets give the displayed union sizes. I also checked the four  $h=3,k=4$  rows, the residual  $j=0$  cases at  $k=5$ , and the eight final four-helper rows, including the exception that witness  $4$  has no owner edge in  $F_{20}$ .Two helpers,  $k=5$ . In the disputed branch, owner  $13$  is selected and active. If both  $5,9$  are omitted, each of helpers  $0,1,3$  is supported whenever selected, leaving room for at most one selected helper. With exactly one omitted, the single-omission rule excludes helper  $0$ .If  $5$  is omitted and  $9$  selected, failure at  $13$  forces  $9$  inactive. Thus  $2,17$  are absent and helpers  $1,3$  are selected. For second omission  $z=4,7,11$ , helper  $1$  is supported. For  $z=6,8,10$ , helper  $3$  is supported. The two cases that require an activity check are explicit: outside  $7$  retains  $10$  active through helper  $3$ , and outside  $10$  retains  $7$  active through helper  $1$ .Only then does the proof take  $9$  omitted and  $5$  selected. The same six-value table excludes helper  $2$  being absent. Outside  $9$  now retains  $5$ , active through  $13$ . Helper  $2$  works unless  $z=6$  or  $8$ . For  $z=6$ , helper  $1$  works because outside  $6$  retains  $8$  active through  $2$ , and selected  $7$  retains  $10$ . For  $z=8$ , failure at helper  $1$  forces  $14$  absent, and the three-row finish supplies owner  $18$  when selected and owner  $17$  otherwise.Three helpers,  $k=5$ . In the repaired  $j=1$  branch, owners  $14,15$  are selected. For  $z\\in\\{4,7,11\\}$ , deleting helper  $2$  leaves selected  $9$  adjacent to  $5$ , while outside  $8$  retains  $6$  active through  $14$ . For  $z\\in\\{5,6,9\\}$ , deleting helper  $3$  leaves selected  $11$  adjacent to  $4$ , while outside  $10$  retains  $7$  active through  $15$ . Selecting the additional owner  $16$  or  $18$ , respectively, supplies the third selected neighbour. These checks also cover the newly outside helper. The written classification establishes the lemma independently of enumeration.Ambient scope and the exact familySupportedness is upward closed even when a formerly outside neighbour becomes selected, because its original test supplies a selected neighbour distinct from the deletion vertex. The remote case also works. If an exterior vertex loses a star whose selected leaf was the deleted nonport  $v$ , its selected centre is an internal neighbour of  $v$  and has a replacement selected leaf. This covers shared exterior neighbours and restored or added port-to-port edges.Consequently the cap for  $r$  disjoint blocks and an exterior of order  $q$  is  $12r+q$ . Attainment in the cyclic family follows separately: deleting a canonical selected helper uncovers that helper, and deleting a selected owner leaves its assigned witness with only an isolated helper. The period-three argument on the internal twelve-cycle gives core caps  $1,3,3$  in its three extremal phases, excluding a twelve-vertex dissociation set. The displayed port-avoiding eleven-set attains the block optimum and gives the additive dissociation formula when the induced exterior is kept fixed. The Hamilton cycle and distinct joining ports cover two-connectivity at  $r=1,2$  as well as larger  $r$ . The degrees are two and three as claimed.All-helper optimization and the  $5/51$  ledgerThe gathered hypotheses suffice. The auxiliary graph  $J=P\\cup Q$  is bipartite, with duplicate edges identified, and the physical owner graph  $B$  may be arbitrary and simple. Once all helpers are selected, feasible witness indices form an independent set in  $J$  disjoint from the selected owner indices. The bipartite matching identity therefore gives exactly\n$$\\beta_I=3b-\\min_{U:\\,B[V\\setminus U]\\text{ is dissociation}}\\nu(J[U]).$$\nAn unrestricted optimum uses at most  $2b$  vertices from the helper–witness triples. Keeping its owners and taking all helpers loses at most  $b$ . The  $b$  disjoint  $P_5$  components attain  $4b$  unrestricted and  $3b$  forced, proving sharpness at the stated scope.The endpoint  $110$  pattern gives  $\\lceil2\\ell/3\\rceil$  on each path and  $4k$  on each  $6k$ -cycle. Proper induced subgraphs of those cycles are unions of paths. The larger colour class on the remaining witness indices gives the claimed rounding to  $\\beta_I\\ge\\lceil8b/3\\rceil$ . For the actual fixed extraction, the retained vertices form a dissociation set disjoint from and nonadjacent to the template. I obtain the manuscript’s identity\n$$5n-51d\n=Z+5r+12(\\alpha+\\pi)+24\\tau+7(e-b_3)+2b_3+5q\\ge0.$$\nIt applies to the particular minimal  $S$  admitting that extraction. To conclude the bound for  $\\mathrm{SF}_2(G)-\\beta_2(G)$ , one maximum-cardinality inclusion-minimal  $S$  must admit such an extraction. The manuscript states that quantifier correctly.Editorial dispositionThe displayed four-pair list preserves its entries and order. I typeset the unmodified manuscript to 36 pages using a local TeX format and font map. The final pass reported no overfull box. Its two hyperref warnings concern math delimiters in a subsection bookmark.Two optional wording changes would sharpen the scope: use “twelve vertices per block” for the abstract’s “upper value” under arbitrary attachments, and repeat “bipartite subcubic partial templates” when the all-helper note returns from arbitrary  $B$  to the open  $8b/3$  question. Neither requires a theorem change. No substantive mathematical or executable issue remains in this milestone. The general physical-template  $8b/3$  question, the sharp subcubic coefficient with current upper bound  $7/71$ , and the general grid questions remain open.\n",
+    "execution_scope": "Exactly as reported in the final response; no unreported rerun or clean-stderr claim."
+  },
+  "initial_audit": {
+    "oracle": {
+      "task_id": "71c901ac-e2d3-42c6-9536-8879e3b52f17",
+      "conversation_id": "conv_f1a6d2d582d98833",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5c94f-eb88-83ec-823d-31cd22e6c0e6",
+      "usage_estimated": true
+    },
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 82029,
+        "sha256": "37f478c99b51556a922a3e4091706a928effd9f844a9e622bb0aa3b017470f83"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/fixtures/twenty-vertex-subcubic-core.json",
+        "bytes": 2365,
+        "sha256": "35126a8771c526cfcbdcb75ea4db2a191bd5b48efd8de219994ca7792661418f"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "develop/supported_local_deletion.py",
+        "bytes": 604,
+        "sha256": "50b6bda354fffdc77dda105ae20fb49b0477e7776067044186a52c8d5e307818"
+      },
+      {
+        "path": "develop/twenty_supported_deletion.py",
+        "bytes": 2499,
+        "sha256": "9aaed4985d72a40b999f4baa7fd0ba3a7eaeb579257f435ca00b6236faf0f9b1"
+      },
+      {
+        "path": "develop/twenty_vertex_subcubic.py",
+        "bytes": 1284,
+        "sha256": "c7a40759b17345d8353966bffe43cd37ee90881d77365e6cdc6701ba76d746b1"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 87344,
+        "sha256": "fcef2c77f0293b38316a12ed1e4f5783f2d02d077ebb6faace9cd887c00bfe18"
+      },
+      {
+        "path": "docs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md",
+        "bytes": 8639,
+        "sha256": "0477697212362e3c8785927339863bd9f716571881a47fb4e4610db24e4a08a9"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/TWENTY_VERTEX_SUPPORTED_DELETION.md",
+        "bytes": 4823,
+        "sha256": "2565b89e455c35c0770872d3b1b2990d26d4408c2207bf689dcd9804b201d093"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 113132,
+        "sha256": "fae8c6c19fb9d36919fe928cc5e2362a096eaf5419c3dd8dfd1ae4710a86949e"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 18082,
+        "sha256": "fdb32b1e65c04acdbb31f72ab88debbb78403790ee7249d1de45d01328f8e20b"
+      },
+      {
+        "path": "output/all-helper-optimization-check.json",
+        "bytes": 678,
+        "sha256": "c7e67a20a51d9064b990589dc5ad99059fed4a28b0c59a806cf9413bc451665d"
+      },
+      {
+        "path": "output/path-six-owner-lift-check.json",
+        "bytes": 842,
+        "sha256": "4ae7df301ceaddc26b1d6111b153ebc5ba48e5735615911dfd4699248636d982"
+      },
+      {
+        "path": "output/twenty-supported-deletion-check.json",
+        "bytes": 1139,
+        "sha256": "fbbcc46f8ad174e98eba6ada52b9be5a6e7ac654235e266afe37526bdf0d6e6c"
+      },
+      {
+        "path": "scripts/check_all_helper_optimization.py",
+        "bytes": 4880,
+        "sha256": "5305fd3d635c77f9fdb7a7c59b7993530ef7505a947721cc8efcc9fe75ddb2c0"
+      },
+      {
+        "path": "scripts/check_path_six_owner_lift.py",
+        "bytes": 6456,
+        "sha256": "494cbf0561029ae62da4819c709943bcb52a54720671ccf0cf3740b7fc6ece1b"
+      },
+      {
+        "path": "scripts/check_twenty_supported_deletion.py",
+        "bytes": 5870,
+        "sha256": "07c620c9d710cc41b49868636b7761e532f336624d5875f807c2be5f40e51d66"
+      }
+    ],
+    "verdict": "FIXABLE_GAPS",
+    "full_response": "Verdict: FIXABLE_GAPSNot yet acceptable as a complete analytic milestoneThe computational/executable portion passes all three requested reproductions. The general supported-deletion lemma is mathematically sound, the all-helper optimization is correct under its stated hypotheses, and the path/ $6k$ -cycle construction and conditional  $5/51$  arithmetic are consistent.There is, however, a concrete unresolved presentation/proof gap in the purported complete analytic classification of the 13-subsets of  $F_{20}$ . Because that classification is essential to the all- $r$  exact star-forming theorem, I would not issue ACCEPT on the complete milestone.1. Source integrity and actual execution23/23 source files verifiedI decoded the supplied JSON snapshot into a separate working directory, preserving the original relative paths.For every file I independently checked:\n$$\\operatorname{bytes}(\\text{decoded file})\n=\\text{manifest byte count}$$\nand\n$$\\operatorname{SHA256}(\\text{decoded file})\n=\\text{manifest SHA256}.$$\nResults:Files decoded: 23.Byte-count mismatches: 0.SHA256 mismatches: 0.Original checker source modifications: none.Emulated or rewritten checker implementations: none.I then executed the three original scripts, each against a fresh output path.Actual executionsOriginal scriptExitFresh reportByte-for-byte matchcheck_twenty_supported_deletion.py01,139 bytesYescheck_all_helper_optimization.py0678 bytesYescheck_path_six_owner_lift.py0842 bytesYesThe actual command pattern was:Bashpython /tmp/audit_milestone/scripts/check_twenty_supported_deletion.py \\\n  --output /tmp/audit_milestone/fresh/twenty-supported-deletion-check.json\n\npython /tmp/audit_milestone/scripts/check_all_helper_optimization.py \\\n  --output /tmp/audit_milestone/fresh/all-helper-optimization-check.json\n\npython /tmp/audit_milestone/scripts/check_path_six_owner_lift.py \\\n  --output /tmp/audit_milestone/fresh/path-six-owner-lift-check.jsonAll three returned exit code zero. All three fresh reports matched their attached reports exactly.Environment qualification: Python startup emitted an unrelated spreadsheet-runtime warmup warning to stderr in all three executions. It did not prevent execution, change the return codes, or affect report reproduction. I have not suppressed that warning or represented stderr as empty.Actual checker coverageCheckerIndependently reproduced countsTwenty-vertex thirteen-sets77,520Independent supportedness tests906,984Seeded arbitrary ambient models3,000Literal ambient safe deletions2,176Forced-union table entries24Cyclic-family certificates20All-helper physical models686Literal physical subsets3,014,785Models containing duplicate P/Q edges202Models with owner degree exceeding two243Path/ $6k$ -cycle certificates64Induced owner subgraphs12,351Small minimal-set lifts4,227Physical templates42Exact template optima18Retained exterior-template lifts4These are actual execution results, not figures copied from the attached reports.2. Supported deletion: general lemmaMathematically soundI checked the three distinct mechanisms in the manuscript's supported-deletion lemma.Write  $C=S\\cap V(K)$ , and let  $v$  be supported.First: upward closure.Suppose  $C\\subseteq C'$ .The only new difficulty is a newly selected neighbour  $u$  of  $v$ .Previously  $u$  was an outside neighbour satisfying one of two alternatives:it had at least three selected neighbours;it had exactly two selected neighbours, one being  $v$ , and the other was active.In the first case, after adding  $u$ , it retains at least two selected neighbours other than  $v$ .In the second case, the other selected neighbour remains active, and  $u$  has that neighbour after deletion of  $v$ .Thus the newly selected neighbour satisfies the required replacement condition.All previously selected neighbours retain their alternatives, and outside-neighbour counts cannot decrease.Second: outside vertices adjacent to  $v$ .The outside-neighbour condition ensures that they retain either two selected neighbours or one active selected neighbour.When the latter neighbour is adjacent to  $v$ , the second supportedness condition supplies its replacement after deletion.Third: outside vertices not adjacent to  $v$ .This is the important part of the lemma.An outside vertex  $x$  can lose its star only if  $v$  was the selected leaf of a selected centre  $u$ .Because  $v$  is a nonport,  $u$  belongs to  $K$ . The second supportedness condition supplies another selected neighbour of  $u$ , different from  $v$ .Therefore  $u$  remains active and  $x$  retains its star.This explicitly handles the case that could invalidate an overly local deletion argument.The proof also correctly handles arbitrary additional port edges and shared exterior neighbours: the replacement certificates are internal to  $K$ , and no deletion changes an edge between two vertices outside the deleted vertex.Conclusion: the generic lemma does not require a bipartite extension, a unique exterior attachment, or a prohibition on restoring the port edge.Its ambient scope is appropriately stated.3. The twenty-vertex local classificationOne analytic proof gap requires repairI checked the displayed neighbourhood definitions, the helper cycle, the witness matching, the ready-owner classification, the obstruction sets, and the forced-union tables against the supplied fixture and actual block construction.The basic bookkeeping is correct.In particular,\n$$p=h+k-5$$\nfollows directly from the thirteen selected vertices, and the obstruction sets\n$$T_x=\\{x,s(x),m(x)\\}$$\nare consistent with the supplied matching and companion maps.The four-by-four forced-union table also agrees with the explicit obstruction-set construction.The problem is in the final subcase of the paragraph Two selected helpers, specifically  $h=2,k=5,p=2$ .The manuscript defines\n$$D=X\\setminus C$$\nas the omitted witnesses.It then states:If  $5$  is omitted, selected  $9$  must be inactive, so helper  $2$  is omitted and  $1,3$  selected.The argument subsequently concludes:Thus  $9$  is omitted.It then sets\n$$D=\\{9,z\\}$$\nand uses the fact that outside vertex  $9$  retains selected vertex  $5$ , active at owner  $13$ .These statements do not currently form a coherent case argument.In particular:If  $5\\in D$ , it cannot subsequently serve as the selected neighbour retained by outside vertex  $9$ .If  $5\\notin D$ , the preceding branch needs to explain what is meant by the asserted omission of  $5$ .The transition to  $D=\\{9,z\\}$  does not explicitly discharge the alternative involving  $5$ .This is not evidence that the theorem is false. The checker successfully finds supported vertices for every thirteen-set, and the intended final configuration is consistent with its explicit choices.But the exhaustive checker does not repair this missing analytic implication.There is also an exposition issue in the  $k=5$  three-helper case: the statement that the remaining values of  $z$  make helper  $3$  supported using the listed vertices in the corresponding roles should give the actual neighbour checks rather than leave the correspondence implicit.Required repair: rewrite the  $h=2,k=5$  branch with explicit membership statements for  $D$ , the selected helpers, the selected witnesses, and the relevant owner vertices. Then list the two outside-neighbour activity checks for each surviving possibility.This is the principal reason for FIXABLE_GAPS.What the checker nevertheless establishesThe actual run confirms:all 77,520 thirteen-subsets receive a supported choice;all 906,984 literal vertex tests agree with the supportedness implementation;all 24 forced-union entries agree;all 3,000 seeded ambient extensions preserve the tested stars after the chosen deletion.That is strong executable corroboration, but it is not a substitute for the requested complete analytic proof.4. Exact all-helper optimizationMathematically soundThe central identity is correct.Let  $I$  be the forced helpers,  $V$  the  $2b$  witness indices,  $P$  the helper-pair matching,  $Q$  the witness matching, and  $B$  the owner graph.Let  $S\\subseteq V$  be the selected owners and  $U=V\\setminus S$ .Selecting an owner forces its assigned witness to be omitted. The remaining possible selected witnesses belong to  $U$ .Since every selected witness already has its helper as a selected neighbour, it cannot have another selected witness neighbour. Thus the selected witnesses must form an independent set in\n$$A[U],\\qquad A=P\\cup Q.$$\nConversely, every such independent set, together with the selected helpers and a dissociation set in  $B[S]$ , gives a valid dissociation set.Consequently,\n$$\\boxed{\n\\beta_I\n=b+\\max_{\\substack{S\\subseteq V\\\\\\Delta(B[S])\\le1}}\n\\left(|S|+\\alpha(A[V\\setminus S])\\right).\n}$$\nEquivalently,\n$$\\boxed{\n\\beta_I=3b-\\min_{\\substack{U\\subseteq V\\\\B[V\\setminus U]\\text{ dissociation}}}\n\\nu(A[U]).\n}$$\nHere the matching identity uses bipartiteness of  $A$ , not bipartiteness of the owner graph  $B$ .That distinction is important, and the manuscript handles it correctly.Duplicate P/Q edgesIf an edge belongs to both matchings, it represents one adjacency in the union graph.The implementation uses adjacency sets, so the duplicate is counted once.The mathematical proof likewise concerns the simple union graph, not a multigraph with parallel copies counted as separate restrictions.The matching interpretation therefore remains valid.Arbitrary owner graphsThe optimization permits arbitrary finite simple owner graphs, including nonbipartite ones.The only bipartiteness needed for the matching calculation is that of the union of the two witness matchings.This is automatic.The arbitrary-owner scope should be retained in the theorem statement.Sharp forcing lossThe inequality\n$$0\\le \\beta_2-\\beta_I\\le b$$\nis correct.For the upper bound, restrict an unrestricted maximum dissociation set to the helpers, witnesses and owners. Each forced helper can account for at most one unit of loss.The disjoint  $P_5$  examples attain loss  $b$ , including the physical realization with  $Q=\\varnothing$ .The script additionally reproduces the large sharp-loss certificates.5. Path/ $6k$ -cycle owner classConstruction and rounding verifiedFor a path of order  $l$ , the repeated pattern\n$$110110\\cdots$$\nfrom an endpoint produces a dissociation set of size\n$$\\left\\lceil\\frac{2l}{3}\\right\\rceil.$$\nFor a cycle of length  $6k$ , the same pattern closes consistently and gives exactly  $4k$  selected vertices.Every induced subgraph of a path or a  $6k$ -cycle is a disjoint union of paths and cycles of length divisible by six.This proves the required hereditary property.For an owner graph in this class, the construction therefore gives\n$$|S_{\\rm owner}|\\ge \\left\\lceil\\frac{4b}{3}\\right\\rceil.$$\nThe remaining witness graph  $A[U]$  is bipartite. Its independence number satisfies\n$$\\alpha(A[U])\\ge \\left\\lceil\\frac{|U|}{2}\\right\\rceil.$$\nCombining the two inequalities gives\n$$\\boxed{\\beta_I\\ge\\left\\lceil\\frac{8b}{3}\\right\\rceil.}$$\nThe integer rounding in the manuscript and implementation is consistent.The important qualification is also correct: this establishes a sufficient hereditary class, not the unrestricted  $8b/3$  conjecture.6. The fixed-extraction  $5/51$  ledgerArithmetic and quantifiers consistentThe extraction condition is correctly applied to the actual extracted owner graph.It is not enough that some larger owner presentation belongs to the path/ $6k$ -cycle class; the induced extracted subgraph must satisfy the condition.The hereditary property justifies the stated larger-presentation sufficient condition.For the ledger, the definitions are\n$$d=|S|-\\beta_2(G),\\qquad\nm=\\min(a,p),$$\n\n$$\\alpha=a-m,\\quad \\pi=p-m,\\quad\ne=u-a-2b,\\quad r=|R|-a-b,$$\n\n$$q=n-|S|-p-u,\\qquad\n\\tau=m+b-2d.$$\nWith\n$$L=|R|-b'+p,\\qquad\nZ=3\\beta_2(G)-3L-8b',$$\nthe construction yields  $Z\\ge0$ .The exact ledger identities are\n$$n=10d+m+r+3(\\alpha+\\pi)+2e+q+5\\tau,$$\nand\n$$d+Z=5m+3(\\alpha+\\pi)+3e+5b_3+\\tau.$$\nSubtracting gives\n$$\\boxed{\n5n-51d\n=\nZ+5r+12(\\alpha+\\pi)+24\\tau\n+7(e-b_3)+2b_3+5q\n\\ge0.\n}$$\nEvery term is nonnegative under the extraction conditions.Thus\n$$51(|S|-\\beta_2(G))\\le5|V(G)|.$$\nFor the desired upper star-forming number,  $S$  must be chosen as a maximum-cardinality inclusion-minimal forming set. The manuscript states this qualification correctly.It does not assert that every arbitrary minimal forming set realizes the maximum difference.The retained-set compatibility is also correctly enforced: the retained vertices are disjoint from the extracted template, have no edges into it, and their union is a dissociation set.The implementation checks these conditions explicitly.The  $5/51$  coefficient is not new as a coefficient: the contribution here is the extension of its sufficient owner-core class to  $6k$ -cycles.7. Journal-editor assessmentThe mathematical scope is generally handled responsibly. In particular, the manuscript distinguishes:exact finite-family results;unrestricted general bounds;sufficient owner-core hypotheses;computational controls;unresolved sharpness questions.I recommend the following editorial repairs before acceptance.Repair the two-helper case. This is mandatory, not optional copyediting.Expand the compressed three-helper activity checks. Make each surviving configuration independently readable.Define the owner graph explicitly. Distinguish it from the physical graph and from the auxiliary witness graph  $P\\cup Q$ .State the all-helper optimization hypotheses together. Include the perfect matching  $P$ , matching  $Q$ , and arbitrary simple owner graph  $B$ .Keep the actual-extraction qualification prominent. Do not let the  $5/51$  statement read as a universal subcubic theorem.Keep the sharpness claims separate. The  $5/51$  coefficient, the unrestricted  $7/71$  upper bound, and the open  $8b/3$  question are distinct results.The abstract's current separation of the  $1/20$  family, unrestricted  $7/71$  bound and conditional  $5/51$  result is appropriate.8. Final acceptance matrixMilestone claimAudit resultGeneral supported-deletion lemmaPassUpward closurePassPreservation of remote outside starsPassArbitrary shared exterior port neighboursPassFixed  $F_{20}$  neighbourhood dataPassComplete analytic thirteen-set proofRepair requiredExact  $SF(G_r)=12r$  deductionConditional on repaired analytic proofAll-helper matching identityPassArbitrary/nonbipartite owner graph scopePassDuplicate P/Q edge handlingPassSharp forcing lossPassHereditary path/ $6k$ -cycle classPassInteger rounding to  $8b/3$ PassFixed-extraction  $5/51$  ledgerPassRetained-vertex compatibilityPassThree original checker executionsPassThree attached report comparisonsPassFinal decision: FIXABLE_GAPS.The milestone has substantial mathematical and executable content. I found no reason to reject the all-helper optimization or its conditional  $5/51$  application. The outstanding issue is concentrated in the analytic proof that supplies the thirteen-set classification, rather than in the checker execution or the general ambient deletion mechanism.I would request the targeted proof correction and a fresh review of that corrected appendix before upgrading the complete milestone to ACCEPT.The unrestricted sharp subcubic coefficient and the general  $8b/3$  question remain open; neither is accidentally settled by these additions.\n",
+    "actual_original_checker_executions": 3,
+    "all_reports_byte_identical": true,
+    "stderr_qualification": "Reviewer reported an unrelated spreadsheet-runtime startup warning, not empty stderr."
+  },
+  "initial_case_argument_provenance": {
+    "task_id": "48c814ea-2f6d-4a45-bb08-cd7a6be56951",
+    "role": "Structural proof suggestion; independently rewritten, checked, and reviewed before publication."
+  },
+  "local_execution_initial": {
+    "all_helper_optimization": {
+      "script": "scripts/check_all_helper_optimization.py",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 0.638104125042446,
+      "report_sha256": "c7e67a20a51d9064b990589dc5ad99059fed4a28b0c59a806cf9413bc451665d",
+      "report_byte_identical": true
+    },
+    "path_six_owner_lift": {
+      "script": "scripts/check_path_six_owner_lift.py",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 2.013892791001126,
+      "report_sha256": "4ae7df301ceaddc26b1d6111b153ebc5ba48e5735615911dfd4699248636d982",
+      "report_byte_identical": true
+    },
+    "twenty_supported_deletion": {
+      "script": "scripts/check_twenty_supported_deletion.py",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 3.899193916004151,
+      "report_sha256": "fbbcc46f8ad174e98eba6ada52b9be5a6e7ac654235e266afe37526bdf0d6e6c",
+      "report_byte_identical": true
+    }
+  },
+  "local_corrected_checker": {
+    "script": "scripts/check_twenty_supported_deletion.py",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "report_byte_identical": true,
+    "report_bytes": 1185,
+    "report_sha256": "c7c6b7243bb8a0d99fcb7c2db037c09d78191c55a88c8588929f92b81b200a01",
+    "seconds": 3.949797041947022
+  },
+  "applied_corrections": [
+    "Explicit mutually exclusive D={5,z} and D={9,z} cases, with all six z values and selected-helper memberships",
+    "Full activity and surviving-neighbour checks in the three-helper5owner case",
+    "Gather perfectP, matchingQ, transported simpleB and complete edge-list hypotheses",
+    "Move unchanged four-pair list into display math to remove overflow"
+  ],
+  "working_manuscript_pdf": {
+    "pages": 36,
+    "all_pages_rendered": true,
+    "new_section_pages": [
+      1,
+      22,
+      24,
+      25,
+      30
+    ],
+    "contact_sheets": [
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/twenty-local-cap-20261112/contact-1.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/twenty-local-cap-20261112/contact-2.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/twenty-local-cap-20261112/contact-3.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/twenty-local-cap-20261112/contact-4.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/twenty-local-cap-20261112/contact-5.png",
+      "/Users/lexa/Desktop/lexa/omega/mail/rafik-sahbi/local-runs/twenty-local-cap-20261112/contact-6.png"
+    ],
+    "pdf_sha256": "0de6b5e1077c7d7955063e7266738deeb4f5ea2830cd2e3cdb40e6b1b90983a3",
+    "visual_inspection": "All36pages inspected in six contact sheets; changed34/35inspected at100dpi after moving the overfull list to display math; no remaining overfull boxes or undefined references.",
+    "final_rendered_pages_30_to_36": true,
+    "all_36_pages_visually_inspected": true,
+    "corrected_source_all_pages_rendered": true,
+    "corrected_source_visual_inspection": "All36pages rendered; pages1--18 unchanged and previously inspected, pages19--36 reinspected in final three contact sheets. No clipping/overlap or overfull boxes; proof tables and all references readable.",
+    "overfull_boxes": 0,
+    "undefined_references": 0
+  },
+  "proved": [
+    "General supported-deletion/upward-closure for arbitrary finite simple port extensions, including remote outside stars",
+    "Structural13set lemma for F20; cap12 per block in all port extensions",
+    "Exact SF(G_r)=12r and beta11r, n20r, gap n/20 for everyr>=1",
+    "Exact all-helper matching optimization for arbitrary simple owner graphs",
+    "Sharp loss0<=beta2-beta_I<=b, attained by disjointP5 at everyb",
+    "Hereditary path/6k-cycle owner class gives8b/3 and actual-extraction conditional5/51 graph bound"
+  ],
+  "open": [
+    "Generalpartialtemplate8b/3",
+    "Sharp unrestricted subcubic and two-connected/minimumdegree2 coefficients, current interval[1/20,7/71]",
+    "Selected-star/regular restrictions and optimal broader composition",
+    "PhysicalsimultaneousmultiHall, universalunit5/6 and arbitrary-widthgridtripleequality"
+  ],
+  "scope": [
+    "Conditional5/51 coefficient already established in the acyclic class; new owner class allows6kcycles",
+    "No globalpriority or fullclasssharpness claim",
+    "Finite enumeration checks implementation and explicit local implications; structural proof supplies all-order theorem",
+    "No Lean, email, MacStudio, submission or Octoberpaperedit"
+  ]
+}

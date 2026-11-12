@@ -1,19 +1,35 @@
 # Current continuation
 
-## Two-connected subcubic gap at least order/20, with exact dissociation composition
+## Exact subcubic gap order/20 and all-helper optimization
 
-The [twenty-vertex block](docs/ROBUST_TWENTY_VERTEX_SUBCUBIC_GAPS.md) yields,
-for every r>=1, a two-connected bipartite graph of minimum degree2 and maximum
-degree3 with n=20r, beta_2=11r and an explicit inclusion-minimal star-forming
-set of size12r. Thus the gap is at least n/20, improving the lower coefficient
-of our earlier exact n/22 family. A structural twelve-cycle/two-square argument
-proves beta_2=11 per block. An optimum avoids both ports, so arbitrary port
-attachments preserve exact dissociation addition, including an arbitrary
-outside graph whose induced subgraph stays unchanged. A Hamilton cycle proves the block's two-connectivity.
-Exact SF for generalr and the sharp class coefficient remain open; the
-unrestricted upper bound stays7/71. See the working manuscript, the standalone
-`scripts/check_twenty_vertex_subcubic.py`, and the exact review scope in
-`output/twenty-vertex-subcubic-review.json`.
+The [supported-deletion theorem](docs/TWENTY_VERTEX_SUPPORTED_DELETION.md)
+proves exact SF_2(G_r)=12r for every r>=1 in the two-connected bipartite
+20r-vertex family, with minimum degree2, maximum degree3 and beta_2=11r.
+Thus its gap is exactly n/20. A complete local classification proves that
+every13-set in the open block has an internally supported nonport deletion.
+The generic lemma gives an all-ambient cap12 under arbitrary port attachments;
+canonical minimality supplies attainment in the cyclic family. The earlier
+port-avoiding dissociation composition and topology proofs are retained.
+
+The [all-helper theorem](docs/ALL_HELPER_EXACT_OPTIMIZATION.md) gives an exact
+matching expression for beta_I, the optimum with every helper retained, and
+proves the sharp loss0<=beta_2-beta_I<=b. Paths and6k-cycle owner cores form a
+hereditary sufficient class for beta_I>=ceil(8b/3), yielding the conditional
+5/51 graph gap bound for an actual fixed extraction. The coefficient was
+already known for acyclic extracted cores; the added owner class allows6k-cycles.
+
+Independent controls check77,520 thirteen-sets, explicit local branches and
+3,000 arbitrary ambient models;686 exact all-helper models receive3,014,785
+literal physical subset checks. The hereditary/lifting checker additionally
+checks12,351 induced owner subgraphs,4,227 minimal selections on879 small
+graphs and42 physical templates. Complete arguments are in the working
+manuscript. Exact independent review scope is recorded in
+`output/twenty-supported-and-all-helper-review.json`.
+
+The sharp subcubic coefficient remains in[1/20,7/71]; the unrestricted
+7/71 upper bound and the general8b/3 template question are unchanged.
+The full cooperation goal, including general grid questions, remains ACTIVE.
+
 
 
 The [square-core construction](docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md)

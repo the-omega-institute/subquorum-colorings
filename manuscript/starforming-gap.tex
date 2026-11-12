@@ -32,8 +32,11 @@ witness extraction whose actual owner core consists of four-cycles,
 isolated edges and isolated vertices, a compatible witness construction
 improves the gap bound to $\lfloor5n/51\rfloor$.
 A robust twenty-vertex block gives two-connected bipartite graphs of
-minimum degree two and maximum degree three with exact dissociation number
-$11r$ and a minimal forming set of size $12r$, hence gap at least $n/20$.
+minimum degree two and maximum degree three with exact parameter values
+$\diss=11r$, $\SF=12r$ and gap $n/20$. A supported-deletion argument
+proves the upper value uniformly under arbitrary port attachments.
+An exact matching formula for dissociation sets containing all helpers
+also gives the conditional $5/51$ bound for path and $6k$-cycle owner cores.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1659,6 +1662,89 @@ a four-cycle can leave a three-vertex path, so the hypothesis need not pass
 to a later extraction. The general partial-template bound
 $\diss(H)\ge\lceil8b/3\rceil$ remains an open question.
 
+\subsection{Exact optimization with all helpers retained}
+
+A partial template need not have an optimum dissociation set containing all
+helpers. The restricted optimum nevertheless admits an exact matching formula.
+Use the owner bijection to index $X$ and $C$ by a set $V$ of size $2b$.
+Let $P$ be the perfect matching pairing the two witnesses of each helper,
+let $Q$ be the possibly partial witness matching, and put $J=P\cup Q$.
+Let $B$ be the physical owner graph $H[C]$ transported to $V$ by the owner
+bijection. There are no further template edges beyond helper--witness edges,
+the owner bijection, $Q$ and $B$.
+Duplicate edges in $P,Q$ are identified. The simple graph $J$ is bipartite,
+as a union of two matchings. Write $\beta_I(H)$ for the largest dissociation
+set containing all $b$ helpers. For this statement the owner graph can be
+arbitrary, and the physical template need not be bipartite.
+
+\begin{theorem}\label{thm:all-helper}
+With $\alpha$ and $\nu$ denoting independence and matching numbers,
+\begin{align*}
+ \beta_I(H)&=b+\max_{B[S]\text{ dissociation}}
+          \bigl(|S|+\alpha(J[V\setminus S])\bigr)\\
+ &=3b-\min_{B[V\setminus U]\text{ dissociation}}\nu(J[U]).
+\end{align*}
+Moreover $0\le\diss(H)-\beta_I(H)\le b$, and the loss $b$ is attained by
+partial subcubic bipartite templates for every integer $b\ge0$.
+\end{theorem}
+\begin{proof}
+With all helpers retained, selected witness indices $T$ and owner indices $S$
+are feasible exactly when $T$ is independent in $J$, $T\cap S=\varnothing$,
+and $B[S]$ is dissociation. Each witness is already paired with its helper,
+so its companion, matching mate and owner must be omitted. Conversely these
+conditions give degree at most one at every selected vertex. Maximizing over
+$T$ gives the first equality. The bipartite matching/vertex-cover identity
+$\alpha(J[U])=|U|-\nu(J[U])$ gives the second.
+
+For an unrestricted optimum $D$, each helper and its two witnesses contribute
+at most two vertices, so $|D\cap(I\cup X)|\le2b$. The set
+$I\cup(D\cap C)$ is dissociation and has size at least $|D|-b$.
+This proves the loss bound. For attainment take $b$ disjoint paths
+$C_1-X_1-I-X_2-C_2$, with no other edges. Each has dissociation number four,
+attained by its noncentral vertices; with its helper required the optimum
+is three, attained by the helper and both owners. Disjoint unions add the
+optima. These examples have pendant vertices and are disconnected for $b>1$.
+\end{proof}
+
+Thus $\beta_I(H)\ge\lceil8b/3\rceil$ is equivalent to the existence of
+$U$ with $B[V\setminus U]$ dissociation and
+$\nu(J[U])\le\lfloor b/3\rfloor$. This is a sufficient condition for the
+unrestricted template bound, not a necessary condition proved for that bound.
+The formula does not assert polynomial optimization over all $U$.
+
+\begin{corollary}\label{cor:path-six-core}
+If every owner component is a path or a cycle of length divisible by six,
+then $\beta_I(H)\ge\lceil8b/3\rceil$, with a polynomial construction.
+For a minimal two-star-forming set $S$ in a bipartite graph $G$ of maximum
+degree three, if its actual fixed witness extraction has such an owner core,
+then $51(|S|-\diss(G))\le5|V(G)|$. This also bounds $\SF-\diss$ when a
+maximum-cardinality minimal set admits such an extraction.
+\end{corollary}
+\begin{proof}
+On a path of order $\ell$, the pattern $110$ from an endpoint selects
+$\lceil2\ell/3\rceil$ vertices and induces only edges and isolates.
+The cyclic pattern selects $2\ell/3$ on a cycle of length $6k$.
+Thus the owner graph has a dissociation set $S_C$ of size at least
+$\lceil4b/3\rceil$. A larger bipartition class of $J[V\setminus S_C]$
+has at least $\lceil(2b-|S_C|)/2\rceil$ vertices and is independent.
+Together with all helpers and these owners it gives
+\[
+ \beta_I(H)\ge2b+\lceil|S_C|/2\rceil\ge\lceil8b/3\rceil.
+\]
+For the extracted template use $b'=b-b_3$ helpers and the retained set of size
+$L=|R|-b'+p$, which has no edge to the template. Therefore
+$Z=3\diss(G)-3L-8b'\ge0$. The same exact witness ledger as in
+Corollary~\ref{cor:square-core-gap} gives
+\[
+ 5n-51d=Z+5r+12(\alpha+\pi)+24\tau+7(e-b_3)+2b_3+5q\ge0.
+\]
+All terms are nonnegative by the fixed extraction. This proves the claim.
+\end{proof}
+The owner class in this corollary is hereditary under induced vertex deletion:
+an intact cycle keeps its length, and a proper induced subgraph is a union of
+paths. The corollary extends the earlier acyclic sufficient condition to
+$6k$-cycles. It does not combine arbitrary longer paths with square cores.
+
 \subsection{A robust subcubic block and a lower coefficient $1/20$}
 
 The unrestricted upper bound has a constructive lower counterpart. Define
@@ -1725,12 +1811,52 @@ of $Q$ attain it, since every new edge meeting a block has an unselected
 endpoint. This rule imposes no degree or bipartiteness condition on $Q$.
 It does not assert additivity of $\SF$ under the same arbitrary attachments.
 
+\begin{lemma}\label{lem:supported-deletion}
+Let $K$ be a finite simple graph with ports $P$, and let $G$ be any finite
+simple extension in which only ports acquire additional neighbours or edges.
+For $C\subseteq V(K)$, call $v$ supported when $v\in C\setminus P$ has a
+neighbour in $C$, every selected neighbour of $v$ has a neighbour in
+$C\setminus\{v\}$, and every outside neighbour of $v$ has at least three
+neighbours in $C$, or exactly two with the other selected neighbour active
+in $K[C]$. Supportedness for fixed $v$ is upward closed in $C$.
+If $S$ is star-forming in $G$ and $C=S\cap V(K)$, deleting a supported $v$
+preserves star formation. Consequently, if every $k$-set in $K$ has a
+supported vertex, every minimal star-forming set in any such extension meets
+$K$ in at most $k-1$ vertices.
+\end{lemma}
+\begin{proof}
+For upward closure, an originally selected neighbour retains its alternative.
+A newly selected neighbour was an outside neighbour with at least one selected
+neighbour other than $v$, so its test also holds. Outside neighbour counts
+cannot decrease, and an original second selected neighbour remains active.
+
+For deletion, the newly outside $v$ retains an active selected neighbour,
+whose activity after deletion is ensured by the second condition. An old
+outside neighbour of $v$ either keeps two selected neighbours or retains one
+active selected neighbour; if that neighbour was adjacent to $v$, the second
+condition supplies its replacement. An old outside vertex not adjacent to
+$v$ can lose a witnessing star only when $v$ was the selected leaf of its
+selected centre $u$. Since $v$ is a nonport, $u$ is inside $K$, and its
+alternative selected neighbour from the second condition replaces $v$.
+Thus every outside vertex remains covered. All tests use internal neighbours;
+additional port-to-port edges cause no loss. Finally, any larger selected
+intersection contains a $k$-set and hence a supported vertex by upward closure,
+contradicting minimality.
+\end{proof}
+
+Lemma~\ref{lem:twenty-support}, proved by local cases in
+Appendix~\ref{app:twenty-support}, shows that every thirteen-set in $F_{20}$
+has a supported vertex, with both ports excluded as deletion choices.
+Thus every minimal forming set in any port extension meets each block
+in at most twelve vertices. For disjoint blocks and a fixed exterior $Q$
+this yields $\SF\le12r+|V(Q)|$. Attainment requires separate hypotheses.
+
 \begin{theorem}\label{thm:twenty-cycle}
 For every integer $r\ge1$ there is a two-connected bipartite graph $G_r$
 of minimum degree two and maximum degree three such that
 \[
  |V(G_r)|=20r,\qquad \diss(G_r)=11r,\qquad
- \SF(G_r)\ge12r,\qquad \SF(G_r)-\diss(G_r)\ge |V(G_r)|/20.
+ \SF(G_r)=12r,\qquad \SF(G_r)-\diss(G_r)= |V(G_r)|/20.
 \]
 \end{theorem}
 \begin{proof}
@@ -1751,11 +1877,11 @@ owner selected, the owner of $4_i$ now being $12_{i+1}$. Deleting a helper
 leaves that vertex with no selected neighbour. The witness-to-owner map
 is still bijective; deleting any owner leaves its witness with only an
 isolated selected helper. Thus every deletion destroys formation.
-This is a minimal forming set of size $12r$, proving the gap bound.
+This is a minimal forming set of size $12r$. The supported-deletion bound
+limits every minimal set to twelve vertices per block, proving the exact
+value and gap.
 \end{proof}
 
-For $r=1$, Theorem~\ref{thm:subcubic} gives $\SF(H_{20})=12$.
-The exact value of $\SF(G_r)$ for general $r$ is not established here.
 Together with the unrestricted upper bound, these constructions place the
 asymptotic extremal coefficient for two-connected bipartite graphs of
 minimum degree two and maximum degree three between $1/20$ and $7/71$.
@@ -2148,6 +2274,8 @@ of Sahbi's version~2, distinct from Conjecture~8.4 asking $\diss=\SF$
 on all rectangular grids.
 
 
+\input{manuscript/twenty-supported-proof.tex}
+
 \paragraph{Verification.}
 The results have the general proofs above. Independent finite controls
 reconstruct both exchanges for every minimal set in all binary bipartite
@@ -2171,7 +2299,10 @@ order at most ten; ten instances also receive literal subset crosschecks. The to
 one canonical set in each of the 5,200 small templates. Separate balanced
 marginal controls check 96 auxiliary path/cycle shapes through 64 helpers,
 including the loop and parallel-edge quotient cases and path endpoints.
-Larger template controls check the actual candidates and all phases. The new proofs are not included in the earlier Lean formalization of the two-attachment
+Larger template controls check the actual candidates and all phases. The supported-deletion controls check all $77,520$ thirteen-sets, the local
+case rules and arbitrary port extensions. The all-helper controls compare
+matching certificates with literal physical subset optima and the fixed
+extraction ledger. The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 
 \paragraph{AI use.}

@@ -27,4 +27,5 @@ def cyclic_family(r):
     return {'g':g,'selected':{20*i+v for i in range(r) for v in S},
             'dissociation':{20*i+v for i in range(r) for v in D},
             'colour':col*r,'order':20*r,'proved_beta':11*r,
-            'proved_SF_lower':12*r,'proved_gap_lower':r}
+            'proved_SF_lower':12*r,'proved_gap_lower':r,
+            'proved_SF':12*r,'proved_gap':r}

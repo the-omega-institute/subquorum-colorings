@@ -155,8 +155,11 @@ therefore has no two-leaf star. Every selected vertex is essential, proving
 inclusion-minimality. Subtract the exact beta value to obtain the gap. QED.
 
 For r=1, the known bound SF_2-beta_2<=floor(7n/71)=1 gives SF_2(H)=12.
-For general r we do not assert SF_2(G_r)=12r. The universal bound and this
-family place the asymptotic extremal coefficient for two-connected bipartite
+The subsequent supported-deletion theorem in
+[TWENTY_VERTEX_SUPPORTED_DELETION.md](TWENTY_VERTEX_SUPPORTED_DELETION.md)
+proves SF_2(G_r)=12r for every r. The earlier independent review linked below
+covers the lower-bound/composition stage; the new theorem has its own receipt.
+The universal bound and this family place the asymptotic extremal coefficient for two-connected bipartite
 graphs of minimum degree2 and maximum degree3 in [1/20,7/71]. Whether this
 interval can be narrowed is open.
 
