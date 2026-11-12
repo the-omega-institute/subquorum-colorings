@@ -1,0 +1,92 @@
+{
+  "counts": {
+    "family_scales": 27,
+    "legal_single_owner_nonimprovements": 4192,
+    "literal_owner_outcomes": 16275,
+    "literal_rule_and_actual_optima": 3,
+    "persistent_addition_blockers": 2096,
+    "physical_point_deletion_connectivity": 720,
+    "physical_zero_cost_certificates": 27,
+    "route_orders": 986,
+    "route_prefixes": 14780
+  },
+  "digest": "f7eadb472f0c583cf506b13b3a97b397729c592f0708b07de6eaddc0216f301a",
+  "examples": [
+    {
+      "actual_best": 0,
+      "best_exact_deletion_cost": 1,
+      "initial_cost": 1,
+      "m": 1,
+      "route": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "zero_outcomes": 2
+    },
+    {
+      "actual_best": 0,
+      "best_exact_deletion_cost": 2,
+      "initial_cost": 2,
+      "m": 2,
+      "route": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          11,
+          12
+        ]
+      ],
+      "zero_outcomes": 2
+    },
+    {
+      "actual_best": 0,
+      "best_exact_deletion_cost": 3,
+      "initial_cost": 3,
+      "m": 3,
+      "route": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          17,
+          16
+        ],
+        [
+          19,
+          20
+        ]
+      ],
+      "zero_outcomes": 2
+    }
+  ],
+  "scope": "Standalone standard library. Every local owner outcome at m1,2,3; every route permutation there, all single-owner swaps and explicit physical certificates throughm128, point-deletion connectivity throughm8. General proof distinguishes nonincreasing from arbitrary routes."
+}

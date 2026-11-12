@@ -1,5 +1,34 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Coordinated cover exchanges, cover choice and neutral plateaux
+
+Four complementary results now have complete proofs, original checkers and
+independent ACCEPT verdicts, with byte-identical report regeneration:
+
+* [Cover saturation and dependency closure](COVER_SATURATED_COORDINATED_EXCHANGES.md):
+  a minimum cover assigns each removal a different initial matching edge.
+  Final-isolated additions allow shared components and closed cyclic dependencies.
+  The largest fixed-cover batch is the complement of the predecessors of blockers.
+* [Exact choice among all minimum covers](MINIMUM_COVER_CHOICE_FOR_COORDINATED_EXCHANGES.md):
+  paths and even cycles have a complete cover catalogue. Enumerating it and
+  recomputing filtered dependency closures optimizes the specified candidate rule.
+  The total enumeration can be exponential.
+* [A sharp exact-deletion barrier](EXACT_DELETION_CERTIFICATE_BARRIER.md):
+  the best one-batch certificate has cost one while actual cost is zero;
+  every order of a displayed shortest route has exactly one neutral step.
+  Longer routes allowing increases may avoid neutral steps.
+* [An unbounded local plateau](UNBOUNDED_NEUTRAL_EXCHANGE_PLATEAU.md):
+  a two-connected $20m$-vertex bipartite minimum-degree-two, maximum-degree-three
+  family starts at cost $m$ with no improving legal single-owner swap.
+  No nonempty final-isolating exact-deletion batch exists, but actual all-helper
+  cost is zero. Nonincreasing single-swap routes need at least $m$ neutral steps;
+  an explicit route attains this in every order.
+
+These are scoped certificate and method results. In both obstruction families,
+the initial or certified cost already meets the $8b/3$ threshold; neither is a
+counterexample to that target. General $8b/3$, the sharp unrestricted subcubic
+coefficient and all general grid objectives remain open in the full ACTIVE goal.
+
 ## Pair conflicts and the exact activation-budget optimum
 
 For fixed U*, the [conflict-graph theorem](PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md)

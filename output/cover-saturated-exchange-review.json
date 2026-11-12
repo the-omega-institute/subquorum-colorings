@@ -1,0 +1,98 @@
+{
+  "verdict": "ACCEPT",
+  "at_recorded": "2026-11-12T20:26:15.717283+00:00",
+  "oracle": {
+    "task_id": "4c81ecee-c972-4d45-a1ef-b14efe87abc0",
+    "conversation_id": "conv_0b694188e962bd3c",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af61b34-c874-83ec-aa15-d4d0ec0fe0da",
+    "usage_estimated": true
+  },
+  "attached_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 87545,
+      "sha256": "d15fafcbaa56574559c662ad31bf4f5239312ce1b6c585560a5d5b485cdfff87"
+    },
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    {
+      "path": "develop/cover_saturated_exchange.py",
+      "bytes": 8770,
+      "sha256": "f8b52899d447d16374cd7d91f05e03125bddacfe26bbef3cf82346bf2202907b"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4773,
+      "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 10240,
+      "sha256": "6449feee6e37952dce02915ea69bdb067a338c8fdd20c2227ad771cd96846d35"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 97575,
+      "sha256": "8798072842f6c016f57a6500d831280105d4fae9d719b034efd165f2c82bc053"
+    },
+    {
+      "path": "docs/COVER_SATURATED_COORDINATED_EXCHANGES.md",
+      "bytes": 14800,
+      "sha256": "f53f2cf44a870627d7eeef9d5c4bd582ae01f2636fe05edafbbc00b25af7c5a5"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md",
+      "bytes": 13967,
+      "sha256": "3bd3d3c0102ef3a78f4b0858784862dcf2d4bdf067395a2f4e29762b0ef7c3f0"
+    },
+    {
+      "path": "output/cover-saturated-exchange-check.json",
+      "bytes": 20755,
+      "sha256": "2a5819b4a180f8abca80f39da9f8310cb8e03baad74c00c2ffff50a3c503e12e"
+    },
+    {
+      "path": "scripts/check_cover_saturated_exchange.py",
+      "bytes": 12423,
+      "sha256": "d0a69b4fcab4a1989fea69b23f06c585d10981a6f884700af96e3297afa03fbd"
+    }
+  ],
+  "reviewer_reported_execution": {
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "report_bytes": 20755,
+    "report_sha256": "2a5819b4a180f8abca80f39da9f8310cb8e03baad74c00c2ffff50a3c503e12e",
+    "byte_identical": true,
+    "runtime_seconds": 90.0
+  },
+  "source_mathematical_changes_required": false,
+  "complete_response": "独立数学审查：cover-saturated coordinated exchanges当前初步结论：源文件完整性通过；数学结论尚不予接受。已成功解压用户提供的 ZIP，并逐一核对 MANIFEST.json 中的全部 14 个文件：14/14 文件的字节数一致。14/14 文件的 SHA-256 一致。ZIP 中除 MANIFEST.json 自身外，没有未列入清单的文件。原始预期输出文件确实为 20,755 bytes，SHA-256 与指定值一致：\n2a5819b4a180f8abca80f39da9f8310cb8e03baad74c00c2ffff50a3c503e12e。这只证明收到的快照与其清单一致，不证明数学命题或 checker 正确。**执行状态：**首次启动原始 checker 后，执行环境在约 60 秒处自动中断。尚未取得退出码、完整 stdout/stderr，也没有取得重新生成文件与原输出的逐字节比较结果。因此不能宣称原始 checker 通过。ACCEPT The mathematical milestone is sound within its explicitly stated scope.The original checker eventually completed successfully. The second execution was performed in the extracted source root, without modifying the checker or implementation.1. Mathematical auditRequirementVerdictReason(1) Bipartite cover-deletion equivalencePassBoth implications are valid applications of König's theorem.(2) Arbitrary maximum matching and distinct chargesPassEvery minimum-cover vertex is saturated by every maximum matching, with exactly one cover endpoint per matching edge.(3) Simultaneous physical permittednessPassDistinct owner components have no cross-component owner edges.(4) Fixed-cover dependency closurePassReverse reachability computes the unique greatest feasible batch.(5) Cyclic family for every r ≥ 3PassConstruction, cyclic dependencies, two-connectivity and exact all-helper optimum are consistent.(6) Shared odd-path family for every even r ≥ 4PassAll r−2 removals are valid and charge distinct matching edges.A. Cover-saturated deletion lemmaThe central equivalence is correct:\n$$\\nu(G-X)=\\nu(G)-|X|\n\\iff\nX\\subseteq C$$\nfor some minimum vertex cover  $C$  of a finite bipartite graph.The reverse implication is particularly important: a minimum cover  $C'$  of  $G-X$  gives a cover  $C'\\cup X$  of  $G$ , whose cardinality is exactly  $\\nu(G)$ .The implementation's forced_minimum_cover reconstructs such a cover from the maximum independent set of the remaining bipartite graph.There is no hidden requirement that  $X$  lie on one bipartition side.The arbitrary-maximum-matching refinement is also correct. Since\n$$|M|=|C|=\\nu(G),$$\nevery matching edge must use exactly one cover vertex, and every cover vertex must be saturated. Thus the charges are distinct, independently of which maximum matching the algorithm returns.This is a standard matching-duality consequence, not a standalone novelty claim.B. Physical replacement certificateThe proof correctly separates three issues:Matching savings are paid for by removed vertices in the initial cover.Added vertices become isolated only after the complete batch.Owner permittedness is preserved because each operation acts in a distinct owner component.The final matching and cover are explicitly\n$$M'=M\\setminus\\{\\text{charged edges}\\},\n\\qquad C'=C-X.$$\nBoth have cardinality\n$$\\nu(A[U])-|X|.$$\nThey certify exact equality, not merely an upper bound.The physical dissociation construction is also sound. The selected witnesses are  $T'=U'\\setminus C'$ , an independent set; the selected owners are outside  $U'$ ; and the helper/witness incidences are controlled by the perfect matching  $P$ .I found no double-counting of matching savings.Importantly, the document correctly treats distinct owner components and final isolation as sufficient conditions for this certificate, not necessary conditions for every possible physical exchange.C. Dependency-closure algorithmPASS Exact algorithm and optimality proof.For each candidate addition  $y_i$ :A neighbor outside the candidate removal set is a permanent blocker.A neighbor  $x_j$  in the removal set creates the dependency  $i\\to j$ .Every candidate that can reach a permanent blocker must be excluded.The surviving set is therefore\n$$S_{\\max}=V_{\\rm candidates}\\setminus R,$$\nwhere  $R$  is the reverse-reachable closure of the blockers.The proof establishes more than maximum cardinality:\n$$\\boxed{\\forall S\\text{ feasible},\\quad S\\subseteq S_{\\max}.}$$\nThus the algorithm returns the unique greatest feasible batch, not merely one maximum-sized batch.Directed cycles without paths to blockers are correctly retained in their entirety.The implementation's dependency_batch follows this argument faithfully. Its reverse adjacency propagation has the correct orientation.The theorem is appropriately restricted to a fixed cover and candidate list with pairwise independent additions. It does not claim to optimize over all covers or arbitrary replacements.2. The two physical familiesFamily I: cyclic coordinated exchangesFor every  $r\\geq3$ : $N=4r$ ,  $b=2r$ . $A=C_{4r}$ .There are  $r$  owner squares.The initial auxiliary matching has size  $r$ .The minimum cover consists of the  $x_i$ .The operations  $x_i\\mapsto y_{i+1}$  form exactly one directed cycle.The dependency direction is correct: addition  $y_{i+1}$  requires removal of  $x_{i+1}$ .The only closed subsets of this directed cycle are the empty set and the full set. Consequently, no nonempty proper subbatch satisfies the final-isolation rule.The complete batch gives\n$$U'=\\{0,2,\\ldots,4r-2\\},\n\\qquad\n\\nu(A[U'])=0.$$\nTherefore,\n$$\\boxed{\\beta_I=3b=6r.}$$\nThis is an exact all-helper optimum, since zero is the global lower bound on matching cardinality in the objective.The physical two-connectivity argument is sound: the witness/helper core is a subdivided cycle, and every owner square has four attachments to that core. Removing a core vertex leaves a connected core path with the remaining attachments; removing an owner leaves a connected owner path with three attachments.The old conflict-graph comparison is also correct:\n$$\\Gamma_0=C_r^2,\n\\qquad\n\\alpha(C_r^2)=\\lfloor r/3\\rfloor.$$\nHence the old numerical support budget is\n$$r-\\lfloor r/3\\rfloor\n=\\boxed{\\lceil2r/3\\rceil}.$$\nThe distinction between that support budget and the actual coordinated physical cost is maintained correctly.Family II: shared odd-path exchangesFor every even  $r\\geq4$ , the initial auxiliary graph consists of:An odd path on  $1,\\ldots,2r-1$ .One isolated vertex  $2r+2$ .Its matching number is  $r-1$ , with minimum cover\n$$C=\\{2,4,\\ldots,2r-2\\}.$$\nThe operations\n$$2j\\longmapsto 2r+2(j\\mathbin{\\mathrm{xor}}1),\n\\qquad 2\\leq j\\leq r-1$$\nare on distinct owner squares.The additions are mutually nonadjacent and have no initial neighbor in  $U_1$ . Every removal belongs to the stated minimum cover.Thus all  $r-2$  removals charge distinct matching edges, giving\n$$\\boxed{\\nu(A[U'])=1.}$$\nThe previous activation-support method has no good candidates for this initial omission set, so its numerical budget remains  $r-1$ .The document makes the necessary qualification: cost one is the cost of the displayed batch, not the unrestricted optimum. The underlying physical family has a separate cost-zero omission set.I verified that the reference implementation shared_even_path_family explicitly supplies that separate zero-cost omission set.3. Necessity examples and enumeration scopeThe adversarial examples correctly distinguish failure of a sufficient rule from failure of the physical objective:A path example demonstrates deletion that does not save the expected number of matching edges.A nonbipartite triangle demonstrates why bipartiteness matters.The eight-cycle owner example demonstrates that individually permitted exchanges need not be jointly permitted.The four-vertex auxiliary path demonstrates that final isolation is essential to the stated replacement certificate.The checker also tests the dependency algorithm against exhaustive feasible-subset comparisons.Its actual enumeration scope is:CheckCountBipartite induced-set models2,859Cover/deletion equivalences49,746Final-isolation replacements4,779Cyclic family scales35Literal cyclic batch subsets2,040Permanent-blocker propagation tests525Cycle-square conflict models32Literal cycle-square independence optima10Shared odd-path family scales33Shared odd-path prefix cost checks1,245Literal dependency feasible subsets510Largest-batch comparisons240Physical primal/dual certificates343Physical vertex-deletion connectivity checks5,250The general bipartite enumeration is specifically over fixed bipartitions: all crossing-edge graphs for  $n\\leq5$ , and all 512 crossing-edge graphs for  $n=6$ , with  $U=V$  in the latter case.The randomized controls use a fixed seed and exhaustively compare candidate subsets only for the first eight candidates.These are meaningful finite checks, but they are not exhaustive proofs over arbitrary physical graphs.4. Exact execution and hash recordORIGINAL CHECKER PASSEDThe successful execution was:Bashpython3 -B scripts/check_cover_saturated_exchange.py \\\n  --output /tmp/cover-exchange-regenerated.jsonWorking directory: extracted ZIP root.Original checker: unchanged.Assertions: enabled (-B does not disable assertions).Exit code: 0.stderr: empty.Regenerated output: 20,755 bytes.SHA-256 comparisonFileSHA-256Regenerated output2a5819b4a180f8abca80f39da9f8310cb8e03baad74c00c2ffff50a3c503e12eFrozen expected output2a5819b4a180f8abca80f39da9f8310cb8e03baad74c00c2ffff50a3c503e12eBYTE-FOR-BYTE IDENTICALcmp returned zero.The first foreground execution was interrupted by the Python execution environment's 60-second limit. I subsequently launched the same original command unchanged in the extracted root, allowed it to finish, and verified its exit code and output. The completed run took approximately 90 seconds.No source modifications were made. The regenerated output was written outside the extracted source tree.No Lean execution, network access, or shortened checker implementation was used as evidence.5. Boundaries of acceptanceThis acceptance establishes the following:The cover-saturated deletion characterization.The coordinated matching/cover replacement certificate.The fixed-cover dependency-closure algorithm and its exact optimality within the specified candidate rule.Both all-parameter physical constructions and their stated comparisons.The frozen checker results and reproducibility.It does not establish:The universal physical  $8b/3$  inequality.The grid  $5/6$  conjecture.Triple-equality or arbitrary-width rectangular-grid completion.An unrestricted physical optimum from the two displayed batch certificates.A global optimization algorithm over all covers and all possible exchanges.These exclusions are mathematically important and are correctly respected by the manuscript.Final verdict: ACCEPT.I found no demonstrated mathematical error, no implementation defect affecting the stated claims, and no discrepancy in the frozen checker output. The milestone is suitable for acceptance as a closed, scoped mathematical and computational result.\n",
+  "reviewer_reported_initial_interruption": "First foreground run interrupted around60s by execution environment; the same original checker was launched again unchanged, completed in about90s, exit0, byte-identical report. Preliminary text in full response is superseded by its final ACCEPT."
+}

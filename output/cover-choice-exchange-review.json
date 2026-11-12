@@ -1,0 +1,119 @@
+{
+  "verdict": "ACCEPT",
+  "at_recorded": "2026-11-12T20:26:15.718562+00:00",
+  "oracle": {
+    "task_id": "4e32be51-f69a-4553-826f-05b419a9a41f",
+    "conversation_id": "conv_a99eb71c0dc3183c",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af61ca1-5598-83ec-8a52-f01bdd8ba4d8",
+    "usage_estimated": true
+  },
+  "attached_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 87917,
+      "sha256": "f187c7ff0b14260ad16b91cb67eb87a96787564f95ca5fe152425b9b0f965697"
+    },
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    {
+      "path": "develop/cover_choice_exchange.py",
+      "bytes": 3801,
+      "sha256": "11b4131a559e1f9347871c6fccc3d23dd0b1233ac3507d13125d61a796222bb1"
+    },
+    {
+      "path": "develop/cover_saturated_exchange.py",
+      "bytes": 8770,
+      "sha256": "f8b52899d447d16374cd7d91f05e03125bddacfe26bbef3cf82346bf2202907b"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4773,
+      "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 10240,
+      "sha256": "6449feee6e37952dce02915ea69bdb067a338c8fdd20c2227ad771cd96846d35"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 98396,
+      "sha256": "ba752f0c7c540c5b51c5dc7f990325072d55a5d5287c6734ed5f8db922020843"
+    },
+    {
+      "path": "docs/COVER_SATURATED_COORDINATED_EXCHANGES.md",
+      "bytes": 14800,
+      "sha256": "f53f2cf44a870627d7eeef9d5c4bd582ae01f2636fe05edafbbc00b25af7c5a5"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "docs/MINIMUM_COVER_CHOICE_FOR_COORDINATED_EXCHANGES.md",
+      "bytes": 7902,
+      "sha256": "189d7d184a96e08ae4c6d01d44d94641ce388fe68c62fc4c5fd761896356722c"
+    },
+    {
+      "path": "docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md",
+      "bytes": 13967,
+      "sha256": "3bd3d3c0102ef3a78f4b0858784862dcf2d4bdf067395a2f4e29762b0ef7c3f0"
+    },
+    {
+      "path": "output/cover-choice-exchange-check.json",
+      "bytes": 27269,
+      "sha256": "c63c7fe78177e0a45318b43e442531e22040ef54b9f8de3778e1e9079d520045"
+    },
+    {
+      "path": "output/cover-saturated-exchange-check.json",
+      "bytes": 20755,
+      "sha256": "2a5819b4a180f8abca80f39da9f8310cb8e03baad74c00c2ffff50a3c503e12e"
+    },
+    {
+      "path": "scripts/check_cover_choice_exchange.py",
+      "bytes": 6667,
+      "sha256": "b3f83241385efb3bac208e05a7266f9eda39405afcbf80cceebc10fd45671e2a"
+    },
+    {
+      "path": "scripts/check_cover_saturated_exchange.py",
+      "bytes": 12423,
+      "sha256": "d0a69b4fcab4a1989fea69b23f06c585d10981a6f884700af96e3297afa03fbd"
+    }
+  ],
+  "reviewer_reported_execution": {
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "report_bytes": 27269,
+    "report_sha256": "c63c7fe78177e0a45318b43e442531e22040ef54b9f8de3778e1e9079d520045",
+    "byte_identical": true,
+    "runtime_seconds": 4.78
+  },
+  "source_mathematical_changes_required": false,
+  "complete_response": "本次审查以 ZIP 内的 18 项 MANIFEST 清单文件为唯一执行快照，不把此前的固定 cover 定理或其独立审计状态混入本次结论。首先完成了逐文件完整性核对：清单文件数：18。文件字节数：全部与 MANIFEST 一致。SHA-256：18 项全部匹配。不存在已发现的文件哈希或长度偏差。审查重点将严格区分三个命题：对指定冲突图，是否完整枚举所有最小顶点覆盖。在每个覆盖中筛选指定 owner operations，再重新计算依赖闭包，是否得到所有合法 final-isolating 交换批次。得到的最优值是否只是该有限证书模型的最优值，而不是所有物理可行交换方案的全局最优值。这三个命题不能相互替代。1. Original checker executionPASS — unchanged source实际执行的命令：Bashpython3 -B scripts/check_cover_choice_exchange.py \\\n  --output /tmp/cover-choice-regenerated.json工作目录为 ZIP 解压后的快照根目录。没有修改 checker、实现文件或输入文件。Exit code0Elapsed time4.78 sOriginal output27,269 bytesByte comparisonIDENTICALSHA-256c63c7fe78177e0a45318b43e442531e22040ef54b9f8de3778e1e9079d520045Matches supplied hash and all 27,269 bytes原始输出文件与重新生成文件逐字节相等：PythonRunoriginal == regenerated  # True执行期间 Python 启动环境的 spreadsheet warmup 打印了一条与元素排序有关的异常 traceback，但 checker 本身正常结束，返回码为 0，报告成功生成且完全一致。该环境警告不应被误报为 checker 失败，也不应隐瞒。本次没有执行旧的慢速 checker，没有修改任何源文件，没有运行 Lean。2. 最小顶点覆盖目录：数学正确性PASS令  $H$  为有限简单二分图，最大度不超过 2。每个连通分量只能是：路径；偶环；单独顶点（长度为 1 的路径）。因此目录是完备的。奇数阶路径对路径  $v_0,\\ldots,v_{2k}$ ，最小覆盖唯一：\n$$C=\\{v_1,v_3,\\ldots,v_{2k-1}\\}.$$\n证明中的关键是匹配：\n$$\\{v_1v_2,v_3v_4,\\ldots,v_{2k-1}v_{2k}\\}.$$\n它包含  $k$  条互不相交的边。如果覆盖包含  $v_0$ ，还必须覆盖这些匹配边，至少需要  $k+1$  个顶点。因此最小覆盖不含  $v_0$ ，从而必须含  $v_1$ 。删除前两个顶点后归纳即可。 $k=0$  时，孤立顶点的唯一最小覆盖为空集。这个边界没有遗漏。偶数阶路径对  $2k$  个顶点，完美匹配迫使每一对\n$$(v_{2j},v_{2j+1})$$\n恰好选择一个端点。将选择编码成二进制串，0 表示选择偶数下标端点，1 表示选择奇数下标端点。中间边排除  $01$ ，所以所有可行串恰为\n$$1^t0^{k-t},\\qquad 0\\le t\\le k.$$\n因此恰有\n$$\\boxed{k+1}$$\n个最小覆盖，且公式 (1) 完整列出，没有重复。偶环匹配边仍迫使每对选择一个端点。环的闭合边进一步排除循环中的相位变化，因此只能选择两个交错侧之一：\n$$\\boxed{2\\text{ 个最小覆盖}}.$$\n不同连通分量的选择独立，所以总数确实为\n$$\\boxed{L=2^c\\prod_{j=1}^{p}(k_j+1)}.$$\n空图对应一个空覆盖。实现与目录的一致性我特别检查了 minimum_covers：连通分量遍历；路径端点选择；环的闭合遍历；奇数环拒绝；三度顶点拒绝；偶数路径的全部阈值选择；多分量笛卡尔积；空分量列表和孤立顶点。没有发现漏枚举、重复枚举或边界错误。实现使用 itertools.product 惰性枚举全局覆盖，而不是一次性存储所有覆盖。各分量的局部选择列表仍会保存在内存中，但其总大小为多项式级别。对于图顶点数  $n$ ，每个偶路径分量的选择数至多  $O(n)$ ，分量数量至多  $O(n)$ ，因此局部选择存储为  $O(n^2)$ 。单个覆盖的构造也是多项式时间。所以：多项式工作空间：成立。多项式延迟：成立。全覆盖数量多项式有界：没有声称，也不成立于一般输入。这一部分的复杂度描述准确。3. 固定 cover 的底层删除判据这是新定理依赖的关键数学桥梁，我没有把它仅仅当成旧实现的既有结论。设  $G=A[U]$  是二分图， $X\\subseteq U$ 。要证明：\n$$\\nu(G-X)=\\nu(G)-|X|$$\n当且仅当存在一个最小顶点覆盖  $C$ ，使得\n$$X\\subseteq C.$$\n正向。设  $T_0$  是  $G-X$  的最大独立集。由 König 定理：\n$$|U-X|-|T_0|=\\nu(G-X).$$\n定义\n$$C=X\\cup((U-X)\\setminus T_0).$$\n因为  $X$  覆盖所有涉及  $X$  的边，而独立集  $T_0$  不包含  $G-X$  内部的边的两个端点，所以  $C$  是  $G$  的顶点覆盖。其大小为\n$$\\begin{aligned}\n|C|\n&=|X|+\\nu(G-X)\\\\\n&=\\nu(G).\n\\end{aligned}$$\n由 König 定理， $C$  是最小覆盖，且包含  $X$ 。反向。若  $C$  是包含  $X$  的最小覆盖，则\n$$C-X$$\n覆盖  $G-X$ ，故\n$$\\nu(G-X)\\le |C-X|=\\nu(G)-|X|.$$\n另一方面，二分图存在饱和最小覆盖的最大匹配。删除  $X$  中每个顶点对应的不同匹配边，至少保留  $\\nu(G)-|X|$  条匹配边。因此\n$$\\nu(G-X)\\ge\\nu(G)-|X|.$$\n两侧合并得到等式。结论：这个充要判据正确。 它是全覆盖优化证明中不可缺少的桥梁，而且没有把一般非二分图的 König 性质错误地推广进来。4. 全覆盖优化定理：核心审查PASS — 一般性证明成立这是本次最重要的部分。令指定候选操作为\n$$(K_i,x_i,y_i),$$\n其中  $x_i$  是删除点， $y_i$  是加入点。对批次  $S$ ，定义\n$$X_S=\\{x_i:i\\in S\\},\\qquad\nY_S=\\{y_i:i\\in S\\}.$$\n要求：每个操作属于不同的 owner component；每个单独替换均 permitted；全部候选 additions 两两独立；最终 additions 在新诱导图中全部 isolated；删除后匹配数恰好减少  $|S|$ 。我重点检查了「先枚举 cover、过滤候选操作、再重新计算 dependency closure」的顺序。4.1 为什么必须先过滤、再计算闭包给定最小覆盖  $C$ ，只能保留满足\n$$x_i\\in C$$\n的候选操作。对保留的候选操作  $i$ ，定义依赖关系：\n$$i\\longrightarrow j$$\n当且仅当加入点  $y_i$  的一个初始邻居是候选  $j$  的删除点  $x_j$ 。如果  $y_i$  有一个初始邻居  $v\\in U$ ，但  $v$  不属于任何保留操作的删除集合，那么  $v$  永远无法消除。这就是 permanent blocker。设初始阻塞候选集合为  $B_0$ 。随后反向传播：\n$$B_{m+1}\n=\nB_m\\cup\n\\{i:\\exists j\\in B_m,\\ i\\to j\\}.$$\n最终排除集合是最小不动点：\n$$B_*=\\bigcup_{m\\ge0}B_m.$$\n剩余集合\n$$S_*=I\\setminus B_*$$\n就是最大可行闭包。证明最大性：任何可行批次都不能包含  $B_0$  中的候选，因为其加入点存在不可消除的初始邻居。如果批次包含一个依赖于已排除候选的操作，也不可能满足最终 isolation。因此所有可行批次都必须避开整个  $B_*$ 。反过来， $S_*$  对依赖关系闭合，而且不存在 permanent blocker。所有加入点两两独立，所以每个加入点在最终诱导图中没有邻居。因此  $S_*$  本身可行，并包含所有可行批次。这证明了固定 cover 下的唯一最大候选集合（按包含关系），也证明了其最大基数。4.2 全覆盖定理的完备性现在设  $S$  是任意一个满足上述证书规则的可行批次。由前面的删除判据：\n$$\\nu(A[U-X_S])\n=\n\\nu(A[U])-|S|$$\n必然存在某个最小覆盖  $C$ ，使\n$$X_S\\subseteq C.$$\n该  $C$  一定在完整目录中出现。在这一轮枚举中， $S$  的所有候选都不会被过滤掉。由于  $S$  已经满足最终 isolation，它也不会被重新计算的 dependency closure 排除。所以这一轮返回的最大闭包至少包含  $S$ 。因此，对于任意可行  $S$ ，全覆盖算法必定找到一个不小于它的批次。反方向，算法返回的每个批次都满足固定 cover 定理的条件，因而也是可行批次。于是：\n$$\\boxed{\n\\max_{C\\text{ minimum cover}}\n|S_C|\n=\n\\max_{S\\text{ admissible}}|S|\n}$$\n并且：\n$$\\boxed{\n\\nu_{\\rm final}\n=\n\\nu(A[U])-\\max_S|S|\n}$$\n这里没有循环论证：覆盖目录负责提供所有可能的删除集合证书，dependency closure 负责在每个覆盖下求最大可行批次。4.3 实现是否忠实于证明best_cover_batch 的执行顺序正确：验证初始  $U$  permitted；验证候选 owner 不重复；验证删除点属于  $U$  且加入点属于对应 owner 的  $K_i\\setminus U$ ；验证单独替换 permitted；验证全部 additions 两两独立；枚举全部 minimum covers；对每个 cover 重新计算候选索引 ids；过滤掉删除点不在 cover 中的候选；对过滤后的列表重新调用 dependency_batch；比较实际返回批次的基数。特别是第 7–9 步，我没有发现将旧闭包错误复用于新 cover 的问题。这也解决了一个很容易遗漏的情况：某候选操作被过滤后，它原本可能是另一个 addition 的邻居删除操作。此时该邻居应变成 permanent blocker，并且所有依赖该操作的前驱也应排除。实现确实重新计算了这一过程，而不是简单地对旧结果取子集。5. 物理证书与优化范围5.1 物理假设我核对了 prepare、best_cover_batch 和 coordinated_exchange 的条件。物理模型包括： $2b$  个索引顶点； $P$  是覆盖全部顶点的完美匹配； $Q$  是顶点不相交的匹配； $P$  的边连接同色顶点； $Q$  和 owner graph  $B$  的边连接异色顶点； $B$  的最大度不超过 2；初始 omission 集  $U$  满足 owner permittedness；候选操作每个 owner component 至多一个；每个候选替换单独 permitted；加入点对  $A=P\\cup Q$  独立。其中  $A$  的二分性来自给定的二色结构，而不是仅由最大度不超过 2 推断。在这个模型中，不同 owner component 的替换不会相互破坏  $B$ -permittedness，因为  $B$  没有跨 component 的边。最终证书仍会实际检查 _permitted，没有仅依赖这个推论。5.2 最终物理证书固定 cover  $C$  饱和于最大匹配。对每个删除点  $x\\in X$ ，有一条不同的匹配边负责收费。删除后：\n$$C'=C-X$$\n是最终图的顶点覆盖，而保留下来的匹配边仍然饱和  $C'$ 。最终新增点 isolated，因此它们不会改变匹配数。于是最终 matching、cover 和 witness 集可以共同构成证书，而不必重新执行一个独立的最终匹配优化器。我核对了证书中的以下关系：\n$$|M'|=|C'|=\\nu(A[U])-|X|.$$\n以及\n$$|W|=|U'|-|M'|.$$\n其中  $W$  是最终独立 witness 集。程序还检查了 matching 边的端点不重复、匹配边来自原始  $P\\cup Q$ 、cover 覆盖全部最终边，以及最终 owner set 满足 dissociation 条件。没有发现物理证书的构造与数学论证不一致。5.3 必须保留的范围限制这个定理优化的是：固定初始  $U$ 、固定候选 owner operations、独立 additions、最终 isolation、精确删除匹配代价规则下的最大证书批次。它不优化：如何产生候选操作；如何在同一 owner 中选择多个替换；additions 相互冲突的候选族；不满足最终 isolation、但仍能降低匹配代价的交换；所有可能的物理 omission 集及其全局最优值。因此它不能被表述为 unrestricted physical exchange optimum。文档明确保留了这些限制，我认为非常重要，而且数学上正确。6. 边界与反例审查项目审查结论空图正确产生唯一空 cover孤立顶点正确产生空覆盖贡献多个独立分量笛卡尔积完整奇数路径唯一最小覆盖偶数路径 $k+1$  个覆盖偶数环两个覆盖奇数环明确拒绝三度顶点明确拒绝空候选列表能返回零 saving 的空批次多个候选互相依赖反向闭包正确被过滤候选产生的阻塞重新计算后正确处理P4 的 matroid augmentation 失败这个反例成立。对路径：\n$$0-1-2-3$$\n三个最小覆盖是：\n$$\\{0,2\\},\\quad\\{1,2\\},\\quad\\{1,3\\}.$$\n令\n$$I=\\{0\\},\\qquad J=\\{1,3\\}.$$\n两者都分别包含于某个最小覆盖，但\n$$I\\cup\\{1\\},\\qquad I\\cup\\{3\\}$$\n都不包含于任何最小覆盖。因此该 hereditary family 不满足 matroid augmentation。这个反例准确说明了为什么不能不加证明地使用 matroid greedy，也没有错误地推断出全覆盖枚举本身存在问题。7. 数值改进与 checker 独立对照PASS — 实际执行结果一致原 checker 输出的计数如下：测试项目实际结果字面最小覆盖目录对照18,827物理固定候选模型120实际测试的最小覆盖总数289字面可行候选子集164物理证书重建120严格优于默认 cover 的模型15必要性控制320 顶点改进案例指定物理实例：\n$$b=4,\\qquad U=\\{0,2,3,6,7\\}.$$\n候选操作：\n$$2\\mapsto1,\\qquad 6\\mapsto4.$$\n初始匹配代价为 2。默认 cover：\n$$C_0=\\{0,3\\}$$\n不包含任何候选删除点，因此：\n$$\\operatorname{saving}(C_0)=0.$$\n另一个最小覆盖：\n$$C_1=\\{2,3\\}$$\n允许操作  $2\\mapsto1$ ，并且加入点 1 在最终图中 isolated。因此：\n$$\\operatorname{saving}(C_1)=1.$$\n第二个操作  $6\\mapsto4$  无法再带来额外 saving，因为 6 是初始孤立点，不属于任何最小覆盖。最终：\n$$\\nu_{\\rm final}=1,\\qquad\n\\beta_I^{\\rm lower}=3b-1=11.$$\n这不是仅仅根据程序输出作出的判断：checker 同时枚举全部候选子集，独立使用字面匹配递归计算匹配数，并与全覆盖结果比较。15/120 个实例严格优于默认 cover，说明改进不是单一固定样例的偶然现象。测试覆盖范围的准确解释18,827 项测试覆盖：顶点数 0 至 6；固定平衡二分划分；所有允许的跨侧边集合；最大度不超过 2 的图；每个图的全部诱导子集；与字面顶点覆盖枚举比较。120 项物理测试使用固定随机种子 13112609，分别覆盖  $b=4,6,8$ ，比较全覆盖优化与全部候选子集的字面最优值。这里的 18,827 和 120 都是有限实现验证，不是一般性定理的替代品。一般性结论来自前面给出的覆盖完备性与依赖闭包证明。8. 非阻断性实现注意事项有两点值得在后续维护时保留：prepare 的部分物理输入验证采用 Python assert。正常执行本次 checker 时这些检查有效，但 python -O 会关闭断言。因此若未来把该实现作为外部不可信输入接口，建议将必要的输入契约改为显式异常检查。全覆盖枚举的复杂度是  $L$  倍多项式，而不是多项式总时间。偶数路径的组合数会使  $L$  指数增长。文档对此没有作不实承诺。这两点不破坏当前数学定理，也不影响本次实际执行结果。9. 最终裁决ACCEPT通过接受对象docs/MINIMUM_COVER_CHOICE_FOR_COORDINATED_EXCHANGES.mddevelop/cover_choice_exchange.pyscripts/check_cover_choice_exchange.py接受依据18 项来源文件全部通过哈希和字节长度验证。原始完整 checker 未修改执行，退出码为 0。重新生成报告与原始报告逐字节一致。奇数路径、偶数路径、偶环的最小覆盖目录完备且证明正确。全覆盖枚举、候选过滤、依赖闭包重新计算的优化定理成立。删除匹配代价与最小覆盖包含删除点之间的充要判据成立。物理证书构造、20 顶点改进案例及 P4 matroid 反例均通过审查。没有将证书优化错误扩大为 unrestricted physical optimum。审计边界声明：ACCEPT 仅针对本次新增的 minimum-cover-choice milestone。没有宣称早先固定-cover 定理的独立 live audit 已通过。没有运行旧的慢速 checker。没有进行 Lean 验证。没有修改、发布或发送任何内容。最终判断： 这不是单纯增加一个 cover 搜索器，而是完成了从「固定 cover 下的最优交换批次」到「指定候选操作集合上、对所有最小 cover 全局取最优」的严格数学提升。最关键的完整性论证成立，代码也忠实执行了这个论证。\n",
+  "reviewer_reported_environment_warning": "Reviewer notes spreadsheet warmup emitted an environment traceback; checker exit0 and byte comparison succeeded. We do not relabel that as checker stderr or silently omit it.",
+  "interpretation_note": "A is bipartite because P and Q are matchings and every cycle alternates them; the physical colour is not generally an A-bipartition. The background proof states this explicitly. A reviewer sentence about the two-colour structure is not used to replace this argument."
+}

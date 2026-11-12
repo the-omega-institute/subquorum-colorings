@@ -1,5 +1,31 @@
 # Current continuation
 
+An [unbounded neutral-exchange plateau](docs/UNBOUNDED_NEUTRAL_EXCHANGE_PLATEAU.md)
+shows that a two-connected physical graph can start at matching cost $m$ with
+no improving legal single-owner swap, while its true all-helper cost is zero.
+At least $m$ neutral steps are necessary on a nonincreasing single-swap route;
+an explicit route attains that number in every operation order. Its standalone
+checker and [independent review](output/neutral-exchange-plateau-review.json) pass.
+
+[Cover-saturated coordinated exchanges](docs/COVER_SATURATED_COORDINATED_EXCHANGES.md)
+charge different initial matching edges through a minimum vertex cover. Final
+isolation permits shared components and cyclic dependencies; reverse reachability
+returns the unique largest batch for a fixed cover and compatible candidate list.
+The original checker was independently run and its report reproduced exactly;
+[full review](output/cover-saturated-exchange-review.json).
+
+[Choosing among all minimum covers](docs/MINIMUM_COVER_CHOICE_FOR_COORDINATED_EXCHANGES.md)
+optimizes this certificate exactly for specified operations. The path/even-cycle
+catalogue may have exponentially many covers. The separate checker and
+[independent review](output/cover-choice-exchange-review.json) pass.
+
+The [sharp cost-one barrier](docs/EXACT_DELETION_CERTIFICATE_BARRIER.md) explains
+why exact one-edge-per-deletion batches can miss cost zero even after cover
+choice is optimized; its displayed shortest route has exactly one neutral step.
+The original standalone checker and [independent review](output/exact-deletion-barrier-review.json)
+pass. All four conclusions have general proofs; the universal physical bound,
+sharp subcubic coefficient and general grid questions remain open.
+
 Pair conflicts: [the exact optimum of the activation-support budget](docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md).
 For fixed initial U*, pair conflicts exactly characterize simultaneous
 minimal activation supports. The best numerical budget over every allowed

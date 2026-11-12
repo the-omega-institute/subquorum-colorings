@@ -1,0 +1,99 @@
+{
+  "counts": {
+    "family_scales": 33,
+    "literal_certificate_optima": 2,
+    "literal_independent_cycle_optima": 1,
+    "literal_maximum_cardinality_subsets": 12870,
+    "literal_owner_batch_outcomes": 16250,
+    "neutral_schedule_prefix_checks": 17096,
+    "neutral_schedules": 1054
+  },
+  "digest": "a4e7951a239bbfd1cdd58e8b306ee6339a92b909137324c0b6823ebf44f79775",
+  "examples": [
+    {
+      "exact_rule_cost": 1,
+      "initial_U": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10
+      ],
+      "initial_cost": 3,
+      "r": 4,
+      "route": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          7,
+          12
+        ]
+      ],
+      "unrestricted_cost": 0,
+      "valid_rule_outcomes": 8,
+      "zero_cost_outcomes": 2
+    },
+    {
+      "exact_rule_cost": 1,
+      "initial_U": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14
+      ],
+      "initial_cost": 5,
+      "r": 6,
+      "route": [
+        [
+          1,
+          0
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          5,
+          18
+        ],
+        [
+          7,
+          16
+        ],
+        [
+          9,
+          22
+        ],
+        [
+          11,
+          20
+        ]
+      ],
+      "unrestricted_cost": 0,
+      "valid_rule_outcomes": 55,
+      "zero_cost_outcomes": 2
+    }
+  ],
+  "scope": "Standard-library coordinate audit; all five local outcomes per owner at r4,6, all route permutations at those scales, literal maximum-cardinality subsets of C16, explicit primal/dual certificates and random larger route orders. General proof, not extrapolated finite enumeration."
+}
