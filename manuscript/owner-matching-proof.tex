@@ -1,0 +1,176 @@
+\subsection{Owner matchings and four-cycle obstructions}
+
+Return to a physical bipartite partial template, and identify witnesses and
+owners with $V$, $|V|=2b$. Thus $P$ joins equal physical colours, while $Q$
+and the owner graph $B$ join opposite colours; $\Delta(B)\le2$.
+The components of $B$ are paths and even cycles. Let $o$ be the number of
+odd-order path components, including isolated vertices. Since $|V|$ is even,
+$o$ is even.
+
+Choose a matching $R$ on $V$ as follows. On an even-order path use its
+perfect matching. On an odd-order path use either alternating matching that
+leaves an endpoint uncovered. On a four-cycle pair the opposite vertices.
+On every other even cycle use either perfect matching. These choices lie
+inside their respective owner components. Let $W$ be the covered vertices,
+so $|W|=2b-o$, and put $J_R=(P\cup Q\cup R)[W]$, with repeated edges
+identified.
+
+\begin{theorem}\label{thm:owner-matching}
+If $J_R$ has $z$ components isomorphic to $K_4$, then
+\[
+ \beta_I(H)\ge
+ b+\frac{2b+o}{2}+z+
+       \left\lceil\frac{2b-o-4z}{3}\right\rceil
+ =\left\lceil\frac{8b}{3}+\frac{o-2z}{6}\right\rceil.
+\]
+In particular, if some choice has $z=0$, then
+$\beta_I(H)\ge\lceil8b/3+o/6\rceil$.
+Such a choice always exists if $P\cup Q$ has no four-cycle component,
+regardless of the lengths of the owner paths and even cycles.
+\end{theorem}
+\begin{proof}
+The graph $J_R$ has maximum degree three. Every $K_4$ is an entire component,
+since its vertices already have degree three. All its incident matching types
+are distinct, so deleting its $R$ matching leaves a four-cycle in $P\cup Q$.
+This four-cycle is a whole component even before restriction to $W$, because
+both $P$ and $Q$ degrees are exhausted. Thus no such $K_4$ is possible when
+$P\cup Q$ has no four-cycle component.
+
+Every component other than $K_4$ is three-colourable by Brooks's theorem
+\cite{brooks}; odd cycles also admit three colours, and lower-degree
+components cause no exception. Take one witness index in each $K_4$ and a
+largest colour class in their complement. The resulting independent set $T$
+of $J_R$ has size at least
+$z+\lceil(2b-o-4z)/3\rceil$.
+
+Select all owners indexed by $V\setminus W$, and one endpoint outside $T$
+from every edge of $R$, obtaining $S_C$. Then
+$|S_C|=(2b+o)/2$ and $S_C\cap T=\varnothing$.
+On every owner path and every non-square cycle, $B-R$ is a matching;
+no $R$ edge has both endpoints in $S_C$. On each square exactly two owners
+are chosen, so their induced graph also has maximum degree at most one.
+There are no owner edges between components. Hence $B[S_C]$ is dissociation.
+Also $T$ is independent in $P\cup Q$. All helpers, these owners and these
+witnesses therefore form a dissociation set, by Theorem~\ref{thm:all-helper}.
+Adding their cardinalities proves the bound. The rounding identity follows
+because $o$ is even. Every matching edge, uncovered endpoint and helper is
+used once.
+\end{proof}
+
+The three-colouring is an existence argument with the usual constructive
+Brooks theorem available. The verification implementation uses a colouring
+search and makes no polynomial runtime claim for that search.
+The theorem covers, for example, owner eight-cycles and ten-cycles, including
+mixtures with paths and squares, whenever the auxiliary four-cycle obstruction
+is absent. It imposes a condition on the actual template, rather than on an
+owner presentation alone.
+
+\begin{corollary}\label{cor:owner-matching-gap}
+If the actual fixed witness extraction of a minimal forming set $S$ in a
+bipartite graph of maximum degree three admits a $K_4$-free choice above, then
+$51(|S|-\diss(G))\le5|V(G)|$.
+\end{corollary}
+\begin{proof}
+The template has $b'=b-b_3$ helpers. The retained set of size $L$ is disjoint
+from it and has no edge to it. The theorem gives
+$Z=3\diss(G)-3L-8b'\ge0$. Substitution in the same fixed-extraction identity
+as in Corollary~\ref{cor:path-six-core} gives
+\[
+ 5n-51d=Z+5r+12(\alpha+\pi)+24\tau+7(e-b_3)+2b_3+5q\ge0.
+\]
+\end{proof}
+This also bounds $\SF-\diss$ if a maximum-cardinality minimal forming set
+has such an extraction. The coefficient is the existing conditional $5/51$;
+the new point is the additional class of templates.
+
+\paragraph{An exact Boolean test for the specified choices.}
+Assign one Boolean variable to each non-square cycle and each odd-order path
+of order at least three, choosing its alternating matching. The even-order
+paths and square diagonals are fixed. For each auxiliary four-cycle, consider
+its two missing diagonals. It becomes a $K_4$ exactly when both diagonals
+belong to the chosen $R$. Each diagonal is absent from all choices, fixed,
+or present in exactly one phase of one variable. Thus the forbidden event
+is impossible, unconditional, a single literal, or a conjunction of two
+literals. Opposite literals of one variable give an impossible event.
+Negating the remaining events produces clauses of length at most two,
+including an empty clause for an unconditional obstruction. The conjunction
+is satisfiable if and only if this specified matching family contains a
+$K_4$-free choice. The implication-graph test decides this in polynomial time
+and returns either phases or contradictory directed paths. The two diagonals
+may belong to different owner components; both variables must then be kept.
+
+Failure of this test does not rule out the cardinality bound, other owner
+matchings on paths, a different all-helper construction, or an unrestricted
+dissociation set. The following connected template makes the distinction
+explicit even when every owner perfect matching is included in the test.
+
+\paragraph{A twelve-index obstruction with exact restricted optima.}
+Let $V=\{0,\ldots,11\}$, with physical colours $0$ on $0,\ldots,5$ and $1$
+on $6,\ldots,11$. Put
+\begin{align*}
+ P={}&\{01,23,45,67,89,(10)(11)\},\\
+ Q={}&\{08,19,2(11),3(10),46,57\},
+\end{align*}
+where a juxtaposition denotes an unordered edge and parenthesized numbers
+separate multi-digit endpoints. Let $B$ be the cycle in the order
+\[
+ 0,7,4,8,3,11,2,10,1,6,5,9,0.
+\]
+Its two perfect matchings are the alternate edges $R_0,R_1$ in this order.
+The physical template has thirty vertices, is connected and bipartite, and
+has minimum degree two and maximum degree three: every witness and owner
+has degree three, and every helper has degree two.
+
+For $R_0$, $J_R$ has the $K_4$ component $\{2,3,10,11\}$; its other eight
+vertices have the spanning cycle
+\[
+ 0,1,6,4,8,9,5,7,0.
+\]
+For $R_1$, the $K_4$ is $\{4,5,6,7\}$, and the other cycle is
+\[
+ 0,1,10,11,2,3,8,9,0.
+\]
+In each eight-cycle, the edges $08$ and $19$ block its two alternating
+four-sets. An independent four-set in an eight-cycle must be alternating,
+so the independence number of either eight-vertex remainder is at most
+three. The independent sets $\{0,2,4,9\}$ and $\{0,2,4,10\}$ respectively
+show that
+\[
+ \alpha(J_{R_0})=\alpha(J_{R_1})=4.
+\]
+Thus neither choice is $K_4$-free, although both satisfy the proposed
+independence threshold $\lceil|V|/3\rceil=4$.
+
+The larger all-helper family has exact optimum seventeen. A witness is given
+by owner indices $\{3,4,6,7,9,10,11\}$ and witness indices $\{1,2,5,8\}$,
+together with all six helpers. For the upper bound, Theorem~\ref{thm:all-helper}
+gives $\beta_I\le18$. Equality would require $U$ independent in $P\cup Q$
+and $B[V\setminus U]$ dissociation. Enlarge $U$ to a maximal independent
+set; this preserves the latter condition. The auxiliary graph consists of
+three four-cycles, whose opposite-pair choices are
+\[
+ (\{0,9\},\{1,8\}),\quad
+ (\{2,10\},\{3,11\}),\quad
+ (\{4,7\},\{5,6\}).
+\]
+Every maximal independent set chooses one pair per component. In each case
+below, its owner complement contains the displayed three-vertex path:
+\[
+\begin{array}{c|c@{\qquad}c|c}
+000&8,3,11&001&8,3,11\\
+010&6,1,10&011&7,4,8\\
+100&6,5,9&101&7,0,9\\
+110&6,5,9&111&7,0,9
+\end{array}
+\]
+The middle entry of each triple is its centre. None of the eight complements
+is dissociation, excluding eighteen and proving $\beta_I=17$.
+
+For $r$ disjoint copies, all owner perfect-matching choices therefore have
+independence number $4r$, and the construction retaining exactly one owner
+per matching edge has optimum $16r$, whereas $\beta_I=17r$.
+This family is disconnected for $r>1$. It proves an unbounded additive loss
+for that construction, with all helpers still retained in the better set.
+It refutes neither the full-cycle matching-selection conjecture nor the
+general $8b/3$ bound. Both remain open, as does the sharp unrestricted
+subcubic coefficient.

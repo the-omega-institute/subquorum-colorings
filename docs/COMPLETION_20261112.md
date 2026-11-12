@@ -1,5 +1,26 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Owner matching criterion for arbitrary even owner cycles
+
+The [owner matching theorem](OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md)
+proves beta_I>=ceil(8b/3+(o-2z)/6), where o counts odd owner paths and z counts
+K4 components for the specified alternating/square-diagonal matching choice.
+No auxiliary P/Q four-cycle implies z=0, allowing arbitrary even owner cycles
+and mixtures with paths and squares. Exact2SAT characterizes K4 avoidance for
+that family, with contradictory-path certificates and two-component clauses.
+This extends the sufficient class for the existing conditional5/51 graph bound;
+the unrestricted7/71 coefficient is unchanged.
+
+A connected30vertex physical template has beta_I17, while both owner perfect
+matchings have auxiliary independence number4 and the one-owner-per-edge
+construction has optimum16. Disjoint copies give an additive loss r. The
+full-cycle independence conjecture is satisfied in this example, not refuted.
+The complete proof includes two eight-cycle independence bounds and an eight-row
+all-helper upper classification. General8b/3 and the full collaboration goal
+remain open/ACTIVE. Checker scope and exact independent audit are in the linked
+note and output/owner-matching-review.json.
+
+
 ## Exact subcubic gap order/20 and all-helper optimization
 
 The [supported-deletion theorem](TWENTY_VERTEX_SUPPORTED_DELETION.md)

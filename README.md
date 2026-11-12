@@ -1,5 +1,10 @@
 # Current continuation
 
+New development: [owner matching certificates and exact four-cycle obstructions](docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md).
+Arbitrary even owner cycles are permitted under the new auxiliary criterion;
+the universal8b/3 problem remains open.
+
+
 ## Exact subcubic gap order/20 and all-helper optimization
 
 The [supported-deletion theorem](docs/TWENTY_VERTEX_SUPPORTED_DELETION.md)

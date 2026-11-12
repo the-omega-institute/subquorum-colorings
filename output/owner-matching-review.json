@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T15:16:50.973168+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "f0d675ff-2d40-45c5-b560-8f9178f377d3",
+    "conversation_id": "conv_57e8b77250a2457f",
+    "model": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af5d55d-127c-83ec-a632-dbd3dba422f7",
+    "status": "completed",
+    "recovered_from_original_task_after_stream_EOF": true
+  },
+  "source_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 82282,
+      "sha256": "bf4c20364032955485c87b190da47f9bf4b829c14f06a5a6aa3a62c2fb823a0e"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    },
+    {
+      "path": "develop/fixtures/owner-matching-obstruction.json",
+      "bytes": 3579,
+      "sha256": "eedfdfa18fd19e854be73394117067ee1e5adddd038a21bae7a51e50a36b8fe5"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/subcubic_intrinsic_obstruction.py",
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    {
+      "path": "develop/subcubic_partial_template.py",
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    {
+      "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+      "bytes": 8906,
+      "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 88584,
+      "sha256": "165bbdaa85b844e3f7f3c7c939ee784168bba5a9fdd6e2aedfa083a1bd3bf486"
+    },
+    {
+      "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+      "bytes": 7858,
+      "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+    },
+    {
+      "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    {
+      "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+      "bytes": 7359,
+      "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+    },
+    {
+      "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    {
+      "path": "manuscript/owner-matching-proof.tex",
+      "bytes": 8523,
+      "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+    },
+    {
+      "path": "manuscript/starforming-gap.tex",
+      "bytes": 113782,
+      "sha256": "a1636a06b89986a68fccaa4176847e1fceb83e4c7a18cb06900108611e4883ee"
+    },
+    {
+      "path": "manuscript/twenty-supported-proof.tex",
+      "bytes": 20318,
+      "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+    },
+    {
+      "path": "output/owner-matching-certificate-check.json",
+      "bytes": 1144,
+      "sha256": "b7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84"
+    },
+    {
+      "path": "scripts/check_owner_matching_certificate.py",
+      "bytes": 11101,
+      "sha256": "4919a438bef16e331add6265e8f3c923ebb3656ff7b5cf92656913318718cff0"
+    }
+  ],
+  "independent_response_full": "ACCEPTThe supplied owner-matching theorem is correct, including the bound with positive  $z$ , the rounding identity, and the physical dissociation construction. The fixed-extraction consequence, the specified-family 2SAT equivalence, and the thirty-vertex obstruction\u2019s exact restricted optima also check out.The original, unmodified checker executed successfully with assertions enabled. Its fresh report is byte-for-byte identical to the attached report, and stderr is empty. All 17 decoded files matched their declared lengths and SHA-256 hashes, both before execution and after the audit.This verdict covers the new milestone in the exact-source bundle, together with the precise extraction ledger it invokes. Earlier results serve as the checked context permitted in the request.1. Actual execution and reproduced countsThe execution directory was:Plain text/workspace/scratch/2d010aa61f17/owner-matching-auditI ran these commands:Bashpython3 -B scripts/check_owner_matching_certificate.py --output FRESH.json > checker.stdout.txt 2> checker.stderr.txt\ncmp FRESH.json output/owner-matching-certificate-check.jsonBoth exited with status 0. The interpreter was CPython 3.12.14 on Linux. A separate interpreter check reported:Plain textassertions_enabled=True\noptimization_level=0The checker also contains its own __debug__ guard.Report itemFresh resultTemplates548Independent phase/ $K_4$  checks1,040Exhaustive small 2SAT models522Exact all-helper optima268Literal physical subsets493,633Literal optimum comparisons237Physical certificates535Matching-family unsatisfiable instances13Binary  $K_4$  clauses1Positive odd-path bonuses192Certificates with no auxiliary  $C_4$ 48Nonempty-template lifts12Small minimal-set lifts4,227Small graph instances879Checked contradictory-path certificates163Analytic all-helper obstruction rows8Exact obstruction independence phases2The 879 count refers to the checker\u2019s enumerated graph instances; its enumeration uses specified bipartitions and does not perform isomorphism reduction.The fresh and attached reports both have 1,144 bytes and SHA-256:Plain textb7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84Their internal deterministic certificate digest is:Plain text7c1aa3e7190fe058047740a84db72af61bf68bd3200bda4c7073d88fe32d1023checker.stderr.txt has 0 bytes. The JSON printed to stdout also agrees with the fresh report.Execution method: native CPython. Source modifications: zero. Emulation: none. Supplemental checks described below ran separately and left the supplied checker and its imports unchanged.The advertised finite scope is accurate. In particular, the larger cases supply actual physical certificates, reaching  $b=128$ , hence 640 physical vertices. The all-order conclusions rest on the written proofs.2. General owner-matching theoremThe argument in bundle member manuscript/owner-matching-proof.tex, Theorem thm:owner-matching, proves the stated inequality for every matching  $R$  in the specified family.Matching size and uncovered verticesEvery odd-order path contributes exactly one uncovered endpoint, including an isolated vertex. Every other owner component is completely covered. Consequently,\n$$|W|=2b-o,\\qquad |R|=\\frac{2b-o}{2}.$$\nThe parity of the total owner order gives  $o\\equiv0\\pmod2$ .An independent set  $T\\subseteq W$  of  $J_R$  contains at most one endpoint of each  $R$ -edge. Thus one can select an endpoint outside  $T$  from every matching edge and add every uncovered owner. The resulting owner set  $S_C$  satisfies\n$$|S_C|\n=o+\\frac{2b-o}{2}\n=\\frac{2b+o}{2},\n\\qquad S_C\\cap T=\\varnothing.$$\nThis accounts correctly for the moving uncovered endpoints of odd paths.Owner feasibility, including squaresOn an even-order path, an endpoint-leaving odd-order path, or a non-square even cycle, the complement  $B-R$  is a matching. Since  $S_C$  contains exactly one endpoint of each  $R$ -edge, every edge of  $B[S_C]$  belongs to that complementary matching. Hence  $\\Delta(B[S_C])\\le1$ .On an owner square,  $R$  consists of its two diagonals. Selecting one endpoint from each diagonal selects exactly two owners; their induced graph has maximum degree at most one. These diagonal pairs are auxiliary pairs between owners of the same physical colour, exactly as required.The endpoint restriction on odd paths is substantive and correctly retained throughout the manuscript and implementation. For example, the maximum matching\n$$\\{v_0v_1,v_3v_4\\}$$\nof the path  $v_0v_1v_2v_3v_4$  leaves the interior vertex  $v_2$  uncovered. Its complementary edges  $v_1v_2,v_2v_3$  share a vertex. The specified endpoint-leaving family has the complementary-matching property used in the proof. $K_4$  components and Brooks\u2019s theoremThe simple graph  $J_R$  is a union of three matchings, so  $\\Delta(J_R)\\le3$ . Repeated  $P/R$  or  $Q/R$  edges contribute one adjacency.A  $K_4$  in  $J_R$  is an entire component. At each of its vertices, three distinct neighbours exhaust the three matching types. Therefore its  $R$ -edges form a perfect matching, and deleting those edges leaves a  $P/Q$  four-cycle.That four-cycle is also an entire component of the original  $P\\cup Q$ : every vertex already has its incident  $P$ -edge and  $Q$ -edge inside the four vertices. Restricting to  $W$  therefore creates no additional kind of  $K_4$  obstruction.After removing the  $z$  copies of  $K_4$ , the remaining graph is three-colourable. Brooks applies to connected components of maximum degree three; paths, lower-degree components, and odd cycles admit at most three colours directly. Taking a largest colour class on the remainder and one vertex from each  $K_4$  gives\n$$|T|\\ge z+\\left\\lceil\\frac{2b-o-4z}{3}\\right\\rceil.$$\nThe quantity inside this last ceiling has a nonnegative numerator because the  $K_4$  components are disjoint subsets of  $W$ .Physical compatibility and countingThe selected physical set consists of:all  $b$  helpers;owners indexed by  $S_C$ ;witnesses indexed by  $T$ .Independence in  $P$  gives each helper at most one selected witness. Independence in  $Q$  removes selected witness\u2013witness conflicts. The condition  $S_C\\cap T=\\varnothing$  removes selected owner\u2013witness conflicts. The remaining selected owner edges lie in  $B[S_C]$ , whose maximum degree is at most one.These three layers are disjoint. Each uncovered owner and each matching edge contributes exactly once. Thus\n$$\\beta_I(H)\\ge\nb+\\frac{2b+o}{2}+z+\n\\left\\lceil\\frac{2b-o-4z}{3}\\right\\rceil.$$\nSince  $b+(2b+o)/2+z$  is an integer,\n$$\\begin{aligned}\nb+\\frac{2b+o}{2}+z+\n\\left\\lceil\\frac{2b-o-4z}{3}\\right\\rceil\n&=\n\\left\\lceil\n2b+\\frac o2+z+\\frac{2b-o-4z}{3}\n\\right\\rceil\\\\\n&=\n\\left\\lceil\\frac{8b}{3}+\\frac{o-2z}{6}\\right\\rceil.\n\\end{aligned}$$\nThe rounding identity is exact. The argument includes  $b=0$ , isolated owner vertices, empty  $W$ , and positive  $z$ .The absence of an auxiliary  $P/Q$  four-cycle actually gives  $z=0$  for every specified choice of  $R$ . The manuscript\u2019s existential conclusion follows immediately.3. Fixed-extraction ledger and the  $5/51$  consequenceI checked the deletion-witness definitions in the integrated manuscript and their implementation in decompose, then independently rederived the identity used by the new corollary.To distinguish the two uses of  $R$ , write  $R_{\\rm sel}$  here for the selected vertices lying in components of  $G[S]$  of order one or two.The fixed extraction gives\n$$|S|=|R_{\\rm sel}|+2p+u,\n\\qquad\nn=|S|+p+u+q.$$\nEach chosen pair witness has exactly one owner and at most one selected isolate helper. Under maximum degree three,\n$$u\\ge a+2b+b_3.$$\nThus, with\n$$\\begin{gathered}\nm=\\min(a,p),\\quad\n\\alpha=a-m,\\quad \\pi=p-m,\\\\\ne=u-a-2b,\\quad\nr=|R_{\\rm sel}|-a-b,\\quad\nq=n-|S|-p-u,\\\\\nd=|S|-\\beta_2(G),\\qquad\n\\tau=m+b-2d,\n\\end{gathered}$$\nthe quantities\n$$r,q,\\alpha,\\pi,\\tau,b_3,e-b_3$$\nare all nonnegative. The two earlier exchanges give $2d\\le\\min(a+b,p+b)=m+b$ , which supplies the required sign of  $\\tau$ .The actual template and retained verticesThe helpers with exactly two assigned pair witnesses form  $I_0$ , with\n$$b'=|I_0|=b-b_3.$$\nTheir witnesses and distinct owners form the actual induced template. The precise selected neighbourhood of every extracted witness is its owner together with its helper. This establishes both its template degree restrictions and its separation from the retained vertices.The retained set is\n$$(R_{\\rm sel}\\setminus I_0)\n\\;\\cup\\;\n\\{\\ell_c:\\text{chosen triple}\\},\n\\qquad\nL=|R_{\\rm sel}|-b'+p.$$\nIts two parts are disjoint. The first part consists of selected edges and isolates. Each chosen triple leaf has its unique selected neighbour at its omitted triple centre. The exact selected neighbourhoods of extracted witnesses exclude edges from those witnesses to either retained part. Consequently the retained set is dissociation and has no edge to the extracted template.This verifies the extension needed for\n$$Z=3\\beta_2(G)-3L-8b'\\ge0$$\nwhenever that actual template admits the stated  $K_4$ -free choice.Exact algebraThe extraction identities give\n$$n=10d+m+r+3(\\alpha+\\pi)+2e+q+5\\tau$$\nand\n$$d+Z=5m+3(\\alpha+\\pi)+3e+5b_3+\\tau.$$\nSubtracting the second identity from five times the first identity after removing  $50d$  yields\n$$\\boxed{\n5n-51d\n=\nZ+5r+12(\\alpha+\\pi)+24\\tau\n+7(e-b_3)+2b_3+5q.\n}$$\nEvery term on the right is nonnegative. The coefficients, including the separate  $7(e-b_3)$  and  $2b_3$ , are correct.The corollary\u2019s quantifiers are also correct: it applies to the fixed minimal set and its actual extraction. Applying it to a maximum-cardinality minimal forming set gives the stated  $\\mathrm{SF}_2-\\beta_2$  consequence. This extends the sufficient template class for the existing conditional coefficient  $5/51$ .4. Exact 2SAT criterion and implementationThe Boolean formulation is exact for the declared family:one phase variable per non-square even cycle;one phase variable per odd-order path of order at least three;fixed choices on even-order paths and owner squares;the unique empty choice on isolated owner vertices.For an auxiliary four-cycle, the forbidden event is that both missing diagonals occur in  $R$ . Each diagonal is unavailable, fixed, or controlled by one phase of one variable. The possible events therefore have zero, one, or two phase requirements.The implementation handles the cases correctly:An unavailable diagonal eliminates the obstruction.Conflicting requirements for the same variable eliminate the obstruction.Repeated equal requirements collapse to one requirement.Requirements belonging to different owner components retain both variables.Two fixed diagonals produce an empty forbidden-event clause.In prepare, the set of requirements is collected from both diagonals. There is no restriction that the diagonals lie in one owner component.Dynamic  $W$ The formula correctly accommodates phase-dependent uncovered endpoints. If both missing diagonals occur in  $R$ , all four vertices are automatically covered and belong to  $W$ . Conversely, a  $K_4$  in the restricted graph forces both diagonals to occur in  $R$ . Additional coverage literals are therefore unnecessary.I exercised this point with a separate valid physical example:\n$$\\begin{aligned}\nP&=\\{01,23,45,67\\},\\\\\nQ&=\\{04,15\\},\\\\\nB&=\\{05,52,14,43\\},\n\\end{aligned}$$\nwith colours  $0$  on  $0,1,2,3$  and  $1$  on  $4,5,6,7$ .Its two nontrivial owner components are odd paths, and the generated clause forbids\n$$(x_0=0)\\land(x_1=0).$$\nThe actual phase results were:PhasesCovered set  $W$  $z$ Theorem bound $00$  $\\{0,1,4,5\\}$ 111 $01$  $\\{0,3,4,5\\}$ 012 $10$  $\\{1,2,4,5\\}$ 012 $11$  $\\{2,3,4,5\\}$ 012This directly checks a two-component clause together with changing  $W$ .SCC solver and contradiction certificatesA node  $2v+p$  represents the requirement  $x_v=p$ . Forbidding requirements  $a,b$  creates the implications\n$$a\\longrightarrow\\neg b,\n\\qquad\nb\\longrightarrow\\neg a.$$\nThe implementation uses these implications, an iterative two-pass SCC computation, and complementary-node SCC comparison. Its satisfying assignment chooses the phase whose SCC has the later label in the resulting order. The final clause assertion checks that assignment directly.For unsatisfiability, _path returns actual directed paths in the contradictory SCC. The checker independently verifies their endpoints and every implication edge. Empty-clause certificates are checked directly.The 522 exhaustive models have the expected decomposition:\n$$2+8+512=522$$\nfor zero, one, and two Boolean variables under the checker\u2019s clause pool.The API scope is accurately stated: certificate constructs certificates for the  $K_4$ -free case. The written theorem additionally treats positive  $z$ . The implementation\u2019s three-colouring stage is a search, with its runtime scope expressly stated in the manuscript.5. Thirty-vertex obstruction and exact restricted optimaThe supplied fixture and manuscript agree on  $P,Q,B$ , both phases, both exterior cycles, and all eight maximal- $U$  rows.Physical graphDirect reconstruction gave:\n$$|V(H)|=30,\\qquad |E(H)|=42,$$\nwith one connected component, bipartition sizes  $15,15$ , six vertices of degree two, and twenty-four vertices of degree three. The degree-two vertices are precisely the helpers.Both auxiliary independence numbers equal fourFor  $R_0$ , the  $K_4$  is  $\\{2,3,10,11\\}$ , and the remaining vertices have the stated spanning cycle\n$$0,1,6,4,8,9,5,7,0.$$\nFor  $R_1$ , the  $K_4$  is  $\\{4,5,6,7\\}$ , with remaining spanning cycle\n$$0,1,10,11,2,3,8,9,0.$$\nEvery listed cycle edge occurs in the actual simple union.In each spanning  $C_8$ , the edges  $08$  and  $19$  lie within the two respective alternating four-sets. An independent four-set of  $C_8$  must alternate, so these chords exclude every independent four-set in the remainder. Each remainder therefore contributes at most three vertices; its  $K_4$  contributes at most one.The listed sets\n$$\\{0,2,4,9\\},\n\\qquad\n\\{0,2,4,10\\}$$\nare independent in their respective full auxiliary graphs. Hence\n$$\\alpha(J_{R_0})=\\alpha(J_{R_1})=4.$$\nThe returned SAT contradiction is also concrete:Plain textvariable: 0\nzero_to_one: [0, 1]\none_to_zero: [1, 0]Explicit seventeen-setThe specified owner and witness sets are feasible:\n$$S_C=\\{3,4,6,7,9,10,11\\},\n\\qquad\nT=\\{1,2,5,8\\}.$$\nTheir owner-induced edges are exactly  $3\\,11$  and  $4\\,7$ . The witness set is independent in  $P\\cup Q$ , and  $S_C\\cap T=\\varnothing$ .Together with all six helpers, this gives seventeen vertices. In the checker\u2019s physical numbering, I directly checked the set\n$$\\{0,1,2,3,4,5,7,8,11,14,21,22,24,25,27,28,29\\}.$$\nExhaustive upper bound of seventeenThe all-helper formula gives  $\\beta_I\\le3b=18$ . Equality would require an independent  $U$  in  $P\\cup Q$  whose owner complement is dissociation.Enlarging  $U$  to a maximal independent set preserves the latter condition by vertex deletion. The auxiliary graph consists of the stated three four-cycles; every maximal independent set chooses one of the two opposite pairs in each component. Thus the eight rows exhaust the possibilities.All displayed triples lie in the corresponding owner complement and have the two claimed owner edges:ChoiceOwner path in the complement000 $8-3-11$ 001 $8-3-11$ 010 $6-1-10$ 011 $7-4-8$ 100 $6-5-9$ 101 $7-0-9$ 110 $6-5-9$ 111 $7-0-9$ Each complement therefore has a vertex of induced degree at least two. This excludes eighteen and proves\n$$\\boxed{\\beta_I(H)=17.}$$\nDisjoint copies and construction lossFor a fixed perfect matching  $R$ , selecting exactly one owner per matching edge gives six selected owners. Feasible witnesses for this construction are precisely independent sets of  $J_R$ . Thus its optimum is\n$$6+6+4=16.$$\nFor  $r$  disjoint copies, additivity gives\n$$\\text{construction optimum}=16r,\n\\qquad\n\\beta_I=17r.$$\nAll  $2^r$  owner perfect-matching choices are covered. The family is disconnected for  $r>1$ . The exact optimum established here is the all-helper optimum  $\\beta_I$ ; the manuscript keeps that scope throughout.6. Supplemental checks and journal expositionSeparate targeted checks covered:a two-variable obstruction from different odd owner components, with dynamic  $W$ ;owner-square diagonals coinciding with  $P$ ;owner-path matching edges coinciding with  $Q$ ;auxiliary graphs containing triangles;both phases of the published obstruction, including positive  $z$ .These checked 9 phase instances and 16 compatible owner selections, including their physical induced degrees and the general rounded bound.The integrated exposition preserves the relevant distinctions: $K_4$ -avoidance is a sufficient cardinality criterion.The Boolean equivalence concerns the specified matching family.Odd-path choices leave endpoints uncovered.The conditional graph coefficient remains  $5/51$ .The unrestricted upper coefficient remains  $7/71$ .General  $8b/3$ , the full-cycle matching-independence conjecture, and the sharp unrestricted subcubic coefficient remain open.The milestone establishes no grid result.The Brooks reference\u2019s author, title, volume, year, pages, and DOI agree with the publisher\u2019s record: R. L. Brooks, On colouring the nodes of a network, volume 37, issue 2, April 1941, pages 194\u2013197, DOI 10.1017/S030500410002168X. Cambridge CoreLaTeX compilation statusI attempted the unmodified main source with:Bashpdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape -output-directory=compile manuscript/starforming-gap.tex > compile/pass1.stdout.txt 2> compile/pass1.stderr.txtIt exited with status 1, before processing the manuscript, because the installed TeX environment lacks its format:Plain textI can't find the format file `pdflatex.fmt'!Compilation is therefore environment-blocked. PDF layout remains unverified. I performed no package installation or format-repair workaround.Static integration checks found 71 distinct labels, 83 reference occurrences, eight bibliography keys, zero unresolved references or citations, and both included manuscript files present.7. Complete decoded-file integrity recordAll 17 files, totalling 398,955 decoded bytes, matched this manifest and remained unchanged after execution.Bundle memberBytesVerified SHA-256README.md82,282bf4c20364032955485c87b190da47f9bf4b829c14f06a5a6aa3a62c2fb823a0edevelop/all_helper_optimization.py5,837e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190develop/fixtures/owner-matching-obstruction.json3,579eedfdfa18fd19e854be73394117067ee1e5adddd038a21bae7a51e50a36b8fe5develop/owner_matching_certificate.py9,760fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3cdevelop/subcubic_intrinsic_obstruction.py6,4615bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7develop/subcubic_partial_template.py5,720e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7docs/ALL_HELPER_EXACT_OPTIMIZATION.md8,9064ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdacdocs/COMPLETION_20261112.md88,584165bbdaa85b844e3f7f3c7c939ee784168bba5a9fdd6e2aedfa083a1bd3bf486docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md7,858675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md7,439f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md7,35948ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md10,3021854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478abmanuscript/owner-matching-proof.tex8,523b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19amanuscript/starforming-gap.tex113,782a1636a06b89986a68fccaa4176847e1fceb83e4c7a18cb06900108611e4883eemanuscript/twenty-supported-proof.tex20,318272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8eoutput/owner-matching-certificate-check.json1,144b7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84scripts/check_owner_matching_certificate.py11,1014919a438bef16e331add6265e8f3c923ebb3656ff7b5cf92656913318718cff0Accept this exact-source milestone with its stated theorem, conditional extraction consequence, and restricted-optimum scope; record the optional LaTeX build as environment-blocked.",
+  "execution_scope": "See complete independent response: reviewer-reported reconstruction and original checker execution are distinguished from the separately measured local run.",
+  "local_execution": {
+    "command": "python3 -B scripts/check_owner_matching_certificate.py --output FRESH.json",
+    "exit_code": 0,
+    "stderr_bytes": 0,
+    "seconds": 2.9344194170553237,
+    "report_sha256": "b7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84",
+    "report_byte_identical": true
+  },
+  "working_manuscript_pdf": {
+    "pages": 38,
+    "all_pages_rendered": true,
+    "pdf_sha256": "6ec8cc35c3a5e256ddadfd45be303bf8d598ec1ab5e08902384458b481561735",
+    "visual_inspection": "All38pages inspected in five contact sheets; newpages23,24,25 inspected individually at full rendered resolution. No clipping, overlap or missing symbols observed.",
+    "compilation_overfull": false,
+    "new_pages": [
+      23,
+      24,
+      25
+    ],
+    "overfull_boxes": 0,
+    "undefined_references": 0,
+    "hyperref_warnings": "Two bookmark math-shift warnings on the pre-existing robust-block title; typeset text unaffected."
+  },
+  "research_suggestion": {
+    "oracle": {
+      "task_id": "9434feb9-28f6-4791-abf0-7ba82089f445",
+      "conversation_id": "conv_bdc2ab54a6555fc6",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5d111-618c-83ec-b9f9-4f3d1c2a2ee7",
+      "usage_estimated": true
+    },
+    "scope": "Earlier matching-selection question unresolved. The present explicit physical obstruction was independently discovered locally; its exact all-helper value and all-r construction loss were then proved with the complete eight-case classification."
+  },
+  "proved": [
+    "Owner-matching bound ceil(8b/3+(o-2z)/6) for the specified physical partial template and matching family.",
+    "No auxiliary P/Q four-cycle implies8b/3 for arbitrary even owner cycles and paths.",
+    "Exact2SAT criterion for K4 avoidance in that matching family.",
+    "Connected30vertex physical template beta_I17 and both owner-matching graph independence numbers4; r disjoint copies give route16r vs beta_I17r.",
+    "Conditional5/51 fixed-extraction graph bound for the additional class."
+  ],
+  "open": [
+    "General all-helper and unrestricted template8b/3.",
+    "Full-cycle matching-selection independence conjecture.",
+    "Sharp unrestricted/degree/connectivity subcubic coefficient; current interval[1/20,7/71].",
+    "Physical multiple-Hall routing, universal unit5/6 and arbitrary-width rectangular triple equality."
+  ],
+  "scope": "No new universal graph coefficient, unrestricted30vertex beta optimum, Lean validation, or new grid result. The original review task was recovered after a stream EOF; no duplicate audit request."
+}
