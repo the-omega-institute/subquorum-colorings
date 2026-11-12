@@ -1,5 +1,22 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## All-owner auxiliary-square theorem: owner-size condition removed
+
+The [new theorem](ALL_OWNER_AUXILIARY_SQUARES.md) proves beta_I>=ceil(8b/3)
+for every physical template whose auxiliary graph is a union of squares,
+with arbitrary owner paths and even cycles. A rainbow forest assigns one
+exchange per owner cycle and pays every square rounding gain once. All-subset
+rank inequalities follow from square capacity after removing two closed types.
+The30vertex block attains equality. Rado's classical rank formula is included
+with proof and attribution. The abstract theorem needs no physical colouring.
+
+Construction/checker:2,644 physical certificates,331 beyond the previous
+owner-size criterion,273 exact small forced optima,420 independently enumerated
+coloured multigraphs and360 abstract colour-free controls. Rank cuts and physical
+sets are independently checked. The general all-auxiliary8b/3 problem, sharp
+subcubic interval[1/20,7/71] and general grid questions remain open.
+
+
 ## Auxiliary-square parity criterion: a new positive class
 
 The [parity theorem](AUXILIARY_SQUARE_PARITY_CRITERION.md) proves all-helper8b/3

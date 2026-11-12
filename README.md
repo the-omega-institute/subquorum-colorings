@@ -1,5 +1,13 @@
 # Current continuation
 
+New all-owner theorem: [auxiliary squares for arbitrary owner paths/even cycles](docs/ALL_OWNER_AUXILIARY_SQUARES.md).
+A rainbow-forest rank argument removes the owner-size hypothesis entirely:
+if every auxiliary component is a C4, beta_I>=ceil(8b/3) for all allowed owner
+paths/even cycles. The30vertex block attains equality. The theorem includes
+an actual construction, closed-component repairs and one global rank budget.
+The earlier owner-size parity criterion below is superseded within this class.
+
+
 New sufficient class: [auxiliary squares and an owner-size parity criterion](docs/AUXILIARY_SQUARE_PARITY_CRITERION.md).
 For A a union of C4s on N=2b indices, paths/even-cycle owners with
 beta_2(B)>=2ceil(N/3)-2 admit an actual all-helper8b/3 construction. A single

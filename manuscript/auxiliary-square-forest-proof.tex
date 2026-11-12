@@ -1,0 +1,172 @@
+\subsection{All owner paths and even cycles on auxiliary squares}
+
+The owner-size hypothesis in Theorem~\ref{thm:auxiliary-square-parity} can be
+removed. We arrange exchanges from different owner cycles simultaneously and
+use a forest rank to pay for their combined deficit.
+
+\begin{lemma}\label{lem:square-exchange-forest}
+Let $A$ be a union of squares on $V$, and let $B$ have paths and even cycles
+as components. Choose at most one edge from each owner cycle whose order is
+not divisible by six, with its ends in different auxiliary squares.
+Suppose their projections onto the auxiliary squares form a forest with
+$r$ edges. There is an $A$-independent $B$-dissociation set of size at least
+$\lceil(\diss(B)+r)/2\rceil$.
+\end{lemma}
+\begin{proof}
+For each chosen edge, the prescribed-edge construction in the proof of
+Theorem~\ref{thm:auxiliary-square-parity} gives two maximum dissociation sets
+of its owner cycle differing exactly at the edge's ends. Keep maximum choices
+in all other owner components. The binary choices are independent because
+no two chosen edges use the same owner component.
+
+For a resulting maximum owner set $D$, switching one choice toggles the
+intersection parities in exactly the two endpoint squares. In a tree on $v$
+squares, such edge toggles realize every parity vector with the same total
+parity: prescribe the target, and decide the edge at each leaf before removing
+that leaf. The remaining root equation holds because the total parity agrees.
+Choose all $v$ parities odd when allowed, and otherwise choose $v-1$ odd.
+Summing over the trees gives at least $r$ odd square intersections.
+
+In each auxiliary square $K$ choose an independent subset of $D\cap K$ of
+size at least $\lceil|D\cap K|/2\rceil$. The union remains dissociation in $B$
+by restriction. Its size is at least $(\diss(B)+r)/2$, and integrality gives
+the asserted ceiling. Each square's rounding contribution is used once.
+\end{proof}
+
+We use the graphic form of the independent representatives theorem of
+Rado~\cite{Rado42}, with its proof included. Parallel edges and loops are
+allowed. For an edge set $E$, its graphic rank is the largest size of a forest
+in $E$, equivalently the number of vertices minus the number of components
+in the spanning subgraph with edges $E$.
+
+\begin{lemma}\label{lem:rainbow-forest-rank}
+Let $E_1,\ldots,E_c$ be edge families of a finite multigraph. The largest
+number $r$ of distinct representatives from different families which form a
+forest satisfies
+\[
+ r=\min_{J\subseteq[c]}
+ \left(c-|J|+\operatorname{rank}\left(\bigcup_{i\in J}E_i\right)\right).
+\]
+\end{lemma}
+\begin{proof}
+First, full independent representatives exist if and only if
+$\operatorname{rank}(E_J)\ge|J|$ for every $J$, where
+$E_J=\bigcup_{i\in J}E_i$. Necessity follows by restriction.
+For sufficiency induct on $c$; the cases $c=0,1$ are immediate.
+If a nonempty proper $J$ is tight, apply induction to its families.
+Their representatives form a forest of size $|J|$ spanning $E_J$.
+Contract this forest. For any set $K$ of remaining families, their rank in
+the contracted graph is
+\[
+ \operatorname{rank}(E_K\cup E_J)-|J|\ge |K|.
+\]
+Induction in that graph supplies the other representatives; lifting and
+uniting with the contracted forest preserves independence.
+If no nonempty proper $J$ is tight, choose a nonloop edge in $E_c$ and
+contract it. Every nonempty $K\subseteq[c-1]$ had rank at least $|K|+1$,
+and contraction lowers rank by at most one. Induction again applies.
+
+For partial representatives put
+$k=\max_J(|J|-\operatorname{rank}(E_J))$, including $J=\varnothing$.
+Adjoin $k$ disjoint new edges on new vertices and put all of them in every
+family. The full-representative inequalities now hold: every nonempty union
+has gained rank $k$. At most $k$ representatives use new edges, leaving at
+least $c-k$ original representatives. Conversely every partial system has
+at most $c-|J|+\operatorname{rank}(E_J)$ members for each $J$.
+These two bounds give the formula.
+\end{proof}
+
+\begin{theorem}\label{thm:all-owner-auxiliary-squares}
+Let $A$ be a disjoint union of four-cycles on $N=4s$ vertices, and let $B$
+be any finite simple graph on the same vertices whose components are paths
+or even cycles. There is a set $S$ such that
+\[
+ A[S]\text{ is edgeless},\qquad \Delta(B[S])\le1,\qquad
+ |S|\ge\lceil N/3\rceil.
+\]
+Consequently every physical partial template whose auxiliary graph is a
+union of squares satisfies
+\[
+ \beta_I(H)\ge\lceil8b/3\rceil.
+\]
+The coefficient $8/3$ is attained by the thirty-vertex template in
+Theorem~\ref{thm:sharp-all-helper}.
+\end{theorem}
+\begin{proof}
+First remove every connected component of $A\cup B$ consisting of one owner
+four-cycle on one auxiliary square, or two owner four-cycles on two auxiliary
+squares. The owner cycle and auxiliary square in the first type share their four-vertex
+support; their edge sets need not coincide. An auxiliary opposite pair gives two compatible
+vertices. In the second type each owner cycle crosses the two squares:
+a cycle contained in one square would fill it and disconnect that square.
+Choose one crossing owner edge. Lemma~\ref{lem:square-exchange-forest}, with
+$\diss(B)=4$ and $r=1$, gives three compatible vertices. These components
+are closed for both graphs, so their selections can later be united with a
+selection on the residual vertices. It suffices to prove the bound on the
+residual instance; in what follows $N$ denotes its order.
+
+Call an owner cycle exceptional if its order is not divisible by six.
+There are $c$ exceptional cycles. Give a cycle $C_i$ weight
+\[
+ d_i=\begin{cases}2/3,&|C_i|\equiv4\pmod6,\\
+                   1/3,&|C_i|\equiv2\pmod6.\end{cases}
+\]
+Its order is at least four in the first case and at least eight in the second.
+For each $i$, let $E_i$ contain every owner edge of $C_i$ joining different
+auxiliary squares, projected onto those squares. Retain physical owner edges
+as distinct ground elements, so parallel projected edges remain distinct.
+Every residual $E_i$ is nonempty: an owner cycle supported on one square
+would be a removed owner four-cycle. The support of one projected owner
+cycle is connected, so each label in a subset $J$ lies wholly in one
+component of its projected union.
+
+Fix any subset $J$ of exceptional cycles. In a connected component of the
+projected union $E_J$, let $x,y$ count the two types and let $v$ count its
+auxiliary squares. The owner cycles are disjoint, so their distinct indices
+and the capacity of a square give
+\[
+ 4v\ge4x+8y,\qquad v\ge x+2y.
+\]
+Its graphic rank is $v-1$. If $x+5y\ge3$, then
+\[
+ v-1\ge x+2y-1\ge(2x+y)/3.
+\]
+The remaining cases have $y=0$ and $x=1$ or $2$. For $x=1$, $v=1$ would
+force a single owner four-cycle filling its auxiliary square, already removed;
+otherwise $v-1\ge1\ge2/3$. For $x=2$, $v=2$ would force two owner four-cycles
+filling two auxiliary squares. There are no remaining indices there for
+another owner component, so this is again a removed closed component;
+otherwise $v-1\ge2\ge4/3$.
+Thus, for every $J$,
+\[
+ \operatorname{rank}(E_J)\ge\sum_{i\in J}d_i.
+\]
+No exceptional cycle has empty support: that would be a coincident owner
+four-cycle, one of the removed components.
+
+Lemma~\ref{lem:rainbow-forest-rank} now supplies a forest with at most one
+edge from each exceptional owner cycle and size
+\[
+ r\ge\min_J\left(c-|J|+\sum_{i\in J}d_i\right)
+ \ge\sum_{i=1}^c d_i=:d,
+\]
+since $d_i\le1$. Paths and cycles of order divisible by six have nonnegative
+surplus relative to two thirds of their order. The exceptional cycles have
+precisely the deficits $d_i$, so
+\[
+ \diss(B)\ge2N/3-d,\qquad \diss(B)+r\ge2N/3.
+\]
+Lemma~\ref{lem:square-exchange-forest} gives the residual compatible set of
+size at least $\lceil N/3\rceil$. Unite with the two- and three-vertex sets
+on the removed four- and eight-vertex components. The sum of these rounded
+bounds is at least the ceiling for the total order. Empty instances are
+immediate. The physical conclusion follows from
+Lemma~\ref{lem:auxiliary-square-normalization}, where $N=2b$; sharpness follows from
+Theorem~\ref{thm:sharp-all-helper}.
+\end{proof}
+
+For an actual disjoint witness extraction with auxiliary squares, the separate
+retained set therefore supplies $Z\ge0$ without an owner-size condition.
+The existing ledger gives $51(|S|-\diss(G))\le5|V(G)|$ for that minimal
+forming set. As before, a bound on $\SF-\diss$ requires such an extraction
+from a maximum-cardinality minimal forming set.

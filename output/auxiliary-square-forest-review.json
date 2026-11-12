@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "at": "2026-11-12T17:25:23.807922+00:00",
+  "verdict": "ACCEPT",
+  "theorem": "All-owner auxiliary squares: A is a union of C4s on N=4s; B is any union of paths and even cycles; an A-independent B-dissociation set has size at least ceil(N/3). No physical colouring needed for the abstract theorem.",
+  "physical_normalization": "N=2b; beta_I=2b+max|S|, hence beta_I>=ceil(8b/3). Sharp coefficient from unchanged30vertex block.",
+  "proof_audit": {
+    "oracle": {
+      "task_id": "bb65dde8-6077-4d57-8a42-736acdfc1566",
+      "conversation_id": "conv_2f33acab1cd73c67",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5f0d2-27e4-83ec-8893-f439270d7215",
+      "usage_estimated": true
+    },
+    "response_full": "Verdict: ACCEPTThe argument proves the stated all-size graph theorem under the actual hypotheses. I find no failing mathematical step in the all-subsets rank inequality, the two removed component types, the simultaneous exchange choices, or the rounding.The decisive point is that the two potentially deficient quotient components saturate their supporting squares. That forces them to be closed components of  $A\\cup B$ , even when they arise from an arbitrary proper subset of exceptional-cycle labels. The removals therefore justify the full family of rank inequalities needed for a single rainbow forest.Here is the detailed audit.1. The all-subsets rank inequality is validLet  $Q_1,\\ldots,Q_s$  denote the  $A$ -squares, and work after the stated removals.Every residual  $E_i$  is nonempty and connected on its supportThe sequence of squares visited by an owner cycle gives a connected projected walk. Discarding loop edges preserves connectivity between distinct supporting squares.If an owner cycle occupies only one square, it has at most four vertices. Since  $B$  is simple and its cycles are even, that cycle must be a  $C_4$  occupying all four vertices of the square. Its vertices have no  $B$ -edges leaving the cycle, and the square has no  $A$ -edges leaving it. Thus it is a closed four-vertex component of  $A\\cup B$ , already removed.Consequently every residual exceptional cycle has a nonempty  $E_i$ , connected on its entire square support. For every label subset  $J$ , each label in  $J$  therefore belongs wholly to one connected component of\n$$E_J=\\bigcup_{i\\in J}E_i.$$\nThis observation makes the componentwise counting legitimate. Ambient isolated quotient vertices carrying no label contribute zero rank and require no estimate.The capacity estimate uses the actual hypotheses correctlyConsider a connected component of  $E_J$ , containing  $x$  cycles of order  $4\\bmod 6$ ,  $y$  cycles of order  $2\\bmod 6$ , and  $v$  supporting squares.The corresponding owner cycles are distinct components of  $B$ , so their vertex sets are disjoint. They use at least\n$$4x+8y$$\nvertices, all lying in these  $v$  squares. Hence\n$$4v\\ge 4x+8y,\\qquad v\\ge x+2y.$$\nThe lower bound of eight for a  $2\\bmod 6$  cycle is justified: simplicity excludes a two-vertex cycle.Since the projected component is connected, its graphic rank is  $v-1$ , including when it has parallel edges. The proposed comparison is\n$$x+2y-1-\\frac{2x+y}{3}\n=\\frac{x+5y-3}{3}.$$\nThus it holds whenever  $x+5y\\ge3$ . For a component carrying at least one label, the only remaining possibilities are\n$$(x,y)=(1,0),\\qquad (x,y)=(2,0).$$\nThe two exceptions are closed even for arbitrary  $J$ For  $(x,y)=(1,0)$ , the only troublesome value is  $v=1$ . The preceding argument shows that this is precisely a removed four-vertex component. Thus a residual component of this type has\n$$v\\ge2,\\qquad v-1\\ge1\\ge\\frac23.$$\nFor  $(x,y)=(2,0)$ , the only troublesome value is  $v=2$ . In that case the two owner cycles have at least eight vertices, while the two squares have exactly eight available vertices. Equality is forced throughout:Both owner cycles are  $C_4$ 's.Together they occupy every vertex of the two squares.No other owner component has a vertex in either square.No  $B$ -edge leaves these vertices, because the two cycles are components of  $B$ .No  $A$ -edge leaves them, because they are the union of two complete  $A$ -squares.Moreover, connectivity of the projected component implies connectivity of the union of these two squares and their owner edges. They therefore constitute exactly a closed eight-vertex connected component of the removed type.This is the crucial all-subsets check. Labels omitted from  $J$  cannot create an external connection in this exceptional case, because the selected cycles already occupy every vertex of the supporting squares.Thus, in the residual, a component with  $(x,y)=(2,0)$  has\n$$v\\ge3,\\qquad v-1\\ge2\\ge\\frac43.$$\nAdding these valid estimates over all components of  $E_J$  gives\n$$\\operatorname{rank}(E_J)\n\\ge \\sum_{i\\in J}d_i$$\nfor every  $J$ , including  $J=\\varnothing$ .There is no unsupported passage from a full-label estimate to an all-subsets estimate.2. The rainbow-rank formula and its use are soundThe self-contained proof of the independent-representative criterion has the needed contraction properties.Tight-subset branchSuppose a nonempty proper label subset  $J$  is tight, and let  $I$  be its independent representatives. Then\n$$|I|=|J|=\\operatorname{rank}(E_J),$$\nso  $I$  spans  $E_J$ .For a subset  $K$  of the remaining labels, the rank in the contracted matroid is\n$$\\begin{aligned}\n\\operatorname{rank}_{M/I}(E_K\\setminus I)\n&=\\operatorname{rank}_M(E_K\\cup I)-|I|\\\\\n&=\\operatorname{rank}_M(E_K\\cup E_J)-|J|\\\\\n&\\ge |K|.\n\\end{aligned}$$\nThe middle equality follows precisely because  $I$  spans  $E_J$ . This supplies the induction hypothesis for all remaining label subsets.No-tight-subset branchIf no nonempty proper subset is tight, every such subset has integer rank at least its cardinality plus one. Choose a nonloop representative for the last label and contract it. Each relevant rank decreases by at most one, leaving all required inequalities intact. The one-label case is immediate.Thus the full-representative criterion is proved.Dummy elementsFor complete precision, the dummy construction can be written as follows: take the direct sum of the original matroid with a free matroid on a new  $k$ -element set  $Z$ , and replace each  $E_i$  by  $E_i\\cup Z$ .Then, for nonempty  $J$ ,\n$$\\operatorname{rank}(E_J\\cup Z)\n=\\operatorname{rank}(E_J)+k\n\\ge |J|.$$\nA full independent representative family uses at most  $k$  dummy elements, so it supplies at least  $c-k$  original representatives. Combined with the immediate upper bounds, this proves\n$$r=\\min_{J\\subseteq[c]}\n\\left(c-|J|+\\operatorname{rank}(E_J)\\right).$$\nFinally, writing  $d=\\sum_i d_i$ , every expression in this minimum satisfies\n$$\\begin{aligned}\nc-|J|+\\operatorname{rank}(E_J)\n&\\ge c-|J|+\\sum_{i\\in J}d_i\\\\\n&=d+\\sum_{i\\notin J}(1-d_i)\\\\\n&\\ge d.\n\\end{aligned}$$\nTherefore\n$$r\\ge\\lceil d\\rceil.$$\nThis yields one simultaneously realizable rainbow forest of the required size.3. The exchanges can be constructed, and their choices are independentThe prescribed-edge exchange can also be checked directly, so the graph theorem need not depend on an unstated construction.Number a cycle’s vertices  $0,\\ldots,n-1$ , taking the prescribed edge to be  $01$ . A binary word records the selected vertices.For  $n=3m+1$ , use\n$$10(101)^{m-1}10,\n\\qquad\n01(101)^{m-1}10.$$\nBoth words have length  $n$ , weight  $2m$ , and no cyclic occurrence of  $111$ . They differ exactly at positions  $0,1$ .For  $n=3m+2$ , use\n$$10(101)^m,\n\\qquad\n01(101)^m.$$\nThese have length  $n$ , weight  $2m+1$ , and the same two properties.On a cycle of length at least four, a selected set is dissociated exactly when no three cyclically consecutive vertices are all selected. Summing that constraint over all cyclic triples gives\n$$3|D|\\le2n.$$\nThe displayed words attain  $\\lfloor2n/3\\rfloor$ , so they are maximum dissociation sets. They cover both exceptional residue classes, including the  $C_4$  case.Now take a rainbow forest. Its selected edges have distinct owner-cycle labels, hence lie in distinct components of  $B$ . Choosing either maximum set in each selected cycle preserves the total maximum owner size.A selected cycle may touch squares beyond the two endpoint squares of its chosen edge. That causes no coupling: its two maximum sets agree at every vertex except those endpoints. Each switch therefore toggles exactly the two endpoint-square parities.The choices are genuinely independent because they act on disjoint owner components. Several switches may affect one square, but their parity changes simply add modulo two.4. The forest parity argument and square rounding are correctFix initial choices of maximum owner sets. On a tree  $T$  of the chosen forest, the available parity changes are the image of its incidence matrix over  $\\mathbb F_2$ .For a tree, this image consists exactly of the vectors with even coordinate sum. Equivalently, the reachable square-parity vectors are precisely those with the same total parity as the initial vector. The claimed leaf-to-root procedure realizes any such target.For a tree on  $v$  squares:If the all-one vector has the required parity, all  $v$  intersections can be made odd.Otherwise, a vector with exactly one zero has the required parity, giving  $v-1$  odd intersections.Summing over tree components gives at least\n$$\\sum_T(|V(T)|-1)=r$$\nodd square intersections.For the resulting maximum owner set  $D$ , let\n$$k_Q=|D\\cap Q|,\n\\qquad\no=\\#\\{Q:k_Q\\text{ is odd}\\}.$$\nEach  $A$ -square has two independent opposite-vertex classes. Taking the larger class within  $D\\cap Q$  gives at least  $\\lceil k_Q/2\\rceil$  vertices. These choices combine across the disjoint squares, and the resulting set remains  $B$ -dissociated because it is a subset of  $D$ .Consequently\n$$\\begin{aligned}\n|S|\n&\\ge \\sum_Q\\left\\lceil\\frac{k_Q}{2}\\right\\rceil\\\\\n&=\\frac{\\beta_2(B)+o}{2}\\\\\n&\\ge \\left\\lceil\\frac{\\beta_2(B)+r}{2}\\right\\rceil.\n\\end{aligned}$$\nThe last step is valid even when  $\\beta_2(B)+r$  is odd. The middle expression is an integer, since\n$$o\\equiv \\sum_Q k_Q=\\beta_2(B)\\pmod2,$$\nand  $o\\ge r$ .Thus there is no duplicated square gain, parity inconsistency, or unsupported rounding step.5. Both removed component types have the claimed selectionsFour verticesThe owner  $C_4$  and the  $A$ -square need only have the same four-vertex support; their edge sets may differ.Any  $A$ -opposite pair is  $A$ -independent. Every two-vertex set induces a simple graph of maximum degree at most one, so the pair is also  $B$ -dissociated. The claimed selection of size two is valid.Eight verticesConsider a connected component comprising two  $A$ -squares and two owner  $C_4$ 's.If either owner cycle were contained in one square, it would occupy all four vertices of that square and make the square a separate closed component. This contradicts connectivity of the eight-vertex component. Hence both owner cycles cross the two squares, and a crossing owner edge exists.There is also a direct check of the claimed size-three construction. A maximum owner set has total size four. Therefore its two square-intersection parities agree: they are either both even or both odd. Switching across the chosen crossing edge toggles both parities, so one exchange choice makes both odd.The intersection sizes must then be  $1$  and  $3$ . They supply independent subsets of sizes  $1$  and  $2$ , respectively, producing three compatible vertices.Because the removed pieces are whole components of  $A\\cup B$ , their selections can be united with each other and with the residual selection.6. The deficit count and final ceilings are validFor a path on  $n$  vertices,\n$$\\beta_2(P_n)=\\left\\lceil\\frac{2n}{3}\\right\\rceil.$$\nOne obtains the upper bound by partitioning into consecutive triples, with a possible final block of one or two vertices; the repeating pattern  $110$ , followed by the appropriate prefix, attains it.For a cycle,\n$$\\beta_2(C_n)=\\left\\lfloor\\frac{2n}{3}\\right\\rfloor,$$\nas checked above for the exceptional cases, with repeating  $110$  attaining the bound when  $3\\mid n$ .Thus the relevant contributions are:Owner componentContribution relative to  $2n/3$ PathNonnegative surplusCycle of order  $0\\bmod6$  $0$ Cycle of order  $4\\bmod6$ Deficit  $2/3$ Cycle of order  $2\\bmod6$ Deficit  $1/3$ Let  $N_0$  be the residual vertex count. Then\n$$\\beta_2(B_{\\mathrm{res}})\\ge\\frac{2N_0}{3}-d,\n\\qquad\nr\\ge\\lceil d\\rceil\\ge d.$$\nHence\n$$\\beta_2(B_{\\mathrm{res}})+r\\ge\\frac{2N_0}{3},$$\nand the forest lemma gives\n$$|S_{\\mathrm{res}}|\n\\ge\n\\left\\lceil\\frac{\\beta_2(B_{\\mathrm{res}})+r}{2}\\right\\rceil\n\\ge\n\\left\\lceil\\frac{N_0}{3}\\right\\rceil.$$\nSuppose  $a$  four-vertex components and  $h$  eight-vertex components were removed. The total selection has size at least\n$$\\left\\lceil\\frac{N_0}{3}\\right\\rceil+2a+3h.$$\nThis integer is at least\n$$\\frac{N_0}{3}+\\frac{4a}{3}+\\frac{8h}{3}\n=\\frac{N}{3},$$\nso it is at least  $\\lceil N/3\\rceil$ .The empty-label, empty-residual, and empty-graph cases are consistent with these bounds.Publication clarifications and scopeI would make three conventions explicit in the written proof:“Coincident  $C_4$ ” means the same four-vertex support; identical  $A$ - and  $B$ -edge sets are unnecessary.Every residual exceptional  $E_i$  is nonempty, so each label lies wholly in one component of  $E_J$ .The dummy extension is the direct sum with a free matroid on the  $k$  new dummy elements.These clarifications do not change the argument.The proof also supplies an actual construction: the representative induction supplies the rainbow forest, the displayed binary words supply the exchange pairs, leaf-to-root toggles realize the target parities, and choosing the larger opposite class in each square supplies  $S$ .Accordingly, the abstract theorem removes the owner-size hypothesis for auxiliary graphs that are disjoint unions of squares. With the stipulated exact square normalization identifying  $N=8b$ , its physical consequence is\n$$\\boxed{\\beta_I\\ge\\left\\lceil\\frac{8b}{3}\\right\\rceil.}$$\nThe earlier sharp-template assertion is separate from, and unused in, this proof.",
+    "scope": "All-size theorem, all-subsets capacity rank inequality, simultaneous forest parity exchanges and closed components.",
+    "reviewer_typo_correction": "Final response sentence says N=8b; actual candidate, proof and established square normalization consistently use N=2b. The accepted combinatorial argument uses N index vertices."
+  },
+  "final_exact_source_audit": {
+    "oracle": {
+      "task_id": "7e825af7-f56c-4bb9-9264-3d38eaf62c10",
+      "conversation_id": "conv_72c1fb5d06d7280d",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af5f401-3668-83ec-a163-31833d55d7bd",
+      "usage_estimated": true
+    },
+    "response_full": "Independent milestone audit32/32 source files decoded and hash-verified Both original checkers executed, exit 0The complete supplied JSON archive contains exactly 32 files. I independently decoded every Base64 payload and checked both its declared byte count and SHA-256 digest.All 32 files match both supplied values. No missing files or source-integrity discrepancies were found.1. Actual checker executionI executed the two requested, unmodified commands from the reconstructed source tree:CheckerExitRuntimeFresh reportcheck_auxiliary_square_forest.py018.261 s14,043 bytescheck_auxiliary_square_parity.py09.123 s3,760 bytesBoth fresh reports are byte-for-byte identical to their embedded counterparts, including their SHA-256 digests.One qualification: both Python processes emitted the same unrelated spreadsheet-runtime startup traceback on stderr. The checker processes nevertheless completed successfully with exit code zero. I have preserved this distinction rather than describing stderr as empty.The forest checker reports 2,644 physical certificates, 47,520 literal owner subsets, 81,197 coloured-edge subsets, 37,934 physical rank inequalities, 360 abstract colour-free controls and 252,000 literal independent subsets. Its 420 coloured multigraph controls include 5,016 Rado-subset comparisons.The execution establishes the supplied finite-checker results, not an all-size theorem by computation.2. Independent mathematical proof auditACCEPT — central theoremI independently checked the new manuscript proof rather than relying on the previous audit.A. Simultaneous exchange lemmaThe key lemma is correct.For every selected exceptional owner cycle, the prescribed-edge exchange supplies two maximum dissociation sets differing precisely at the endpoints of its selected edge.Because the rainbow forest uses at most one edge per owner cycle, these binary choices are independent.For a tree on  $v$  auxiliary squares, its edge switches realize precisely the parity changes whose total parity is even. Consequently, one can arrange either:all  $v$  square intersections odd; orexactly  $v-1$  odd intersections.Summing over forest components gives at least  $r$  odd intersections.For each square, the larger of its two opposite-pair intersections supplies an independent subset of size at least\n$$\\left\\lceil\\frac{|D\\cap K|}{2}\\right\\rceil.$$\nThe odd-square contributions are counted once each. Restricting a dissociation set preserves the dissociation property.Thus\n$$\\boxed{|S|\\ge\n\\left\\lceil\\frac{\\beta_2(B)+r}{2}\\right\\rceil.}$$\nI found no hidden requirement that the other owner components be divisible by six or satisfy an additional size condition.B. Rado rank formulaThe manuscript's self-contained proof is sound.I checked both induction branches:A proper nonempty tight family permits contraction of its spanning representative forest.When no proper nonempty family is tight, a nonloop edge can be selected and contracted; the strict rank inequalities retain sufficient slack.The partial-representative argument using  $k$  disjoint dummy edges establishes the stated min-max formula. The converse upper bound follows by splitting representatives inside and outside an arbitrary family subset.Parallel edges and loops are handled correctly by graphic rank.The formula is\n$$r=\\min_{J\\subseteq[c]}\n\\left(c-|J|+\\operatorname{rank}(E_J)\\right).$$\nRado's classical result is attributed in the manuscript bibliography. The new mathematical contribution is its application to the square-capacity inequalities, not a claim of discovering Rado's theorem.C. The two closed exceptionsBoth exceptions justifiedThis is an important part of the proof, and I checked it for arbitrary subsets  $J$ , not merely for the full collection of exceptional cycles.For a connected projected component with  $x$  cycles of order  $4\\bmod 6$ ,  $y$  cycles of order  $2\\bmod 6$ , and  $v$  auxiliary squares, vertex-disjointness and square capacity give\n$$4v\\ge4x+8y,\n\\qquad v\\ge x+2y.$$\nIts graphic rank is  $v-1$ . When  $x+5y\\ge3$ ,\n$$v-1\\ge x+2y-1\n\\ge\\frac{2x+y}{3}.$$\nThe only remaining possibilities are: $x=1,y=0$ ; $x=2,y=0$ .In the first case, equality at  $v=1$  fills the entire auxiliary square with one owner C4. In the second, equality at  $v=2$  fills both squares with two owner C4s.These are genuinely closed components of  $A\\cup B$ : no other owner component can attach because all their vertices have already been consumed, and auxiliary edges cannot leave their squares.This argument applies equally to a proper subset of owner labels. It does not assume that omitted labels are absent from the original graph.The closed components can therefore be removed without losing any residual connections. Their contributions are exactly two and three selected vertices, respectively, and their rounded bounds add correctly to the residual ceiling.D. Global rank budgetAfter removing the closed components, every exceptional owner cycle has nonempty projected support.For every subset  $J$ , the componentwise capacity argument gives\n$$\\operatorname{rank}(E_J)\\ge\\sum_{i\\in J}d_i,$$\nwhere\n$$d_i=\n\\begin{cases}\n2/3,& |C_i|\\equiv4\\pmod6,\\\\\n1/3,& |C_i|\\equiv2\\pmod6.\n\\end{cases}$$\nSince  $d_i\\le1$ , Rado's formula supplies a simultaneous rainbow forest with\n$$r\\ge\\sum_i d_i.$$\nThe owner dissociation deficit is exactly the sum of these exceptional-cycle deficits. Paths and cycles divisible by six contribute no negative deficit.Therefore\n$$\\beta_2(B)+r\\ge\\frac{2N}{3},$$\nand the exchange lemma proves\n$$\\boxed{|S|\\ge\\left\\lceil\\frac N3\\right\\rceil.}$$\nNo cycle is charged twice, and the same forest pays for all exceptional deficits.I found no missing parity case, unaccounted owner component, or illicit reuse of a square's rounding contribution.3. Normalization and sharpnessCorrect normalizationThe actual manuscript, README, and integration consistently use\n$$\\boxed{N=2b}$$\nfor the physical partial template with  $b$  helpers.The previously established normalization is\n$$\\beta_I(H)=2b+\\max |S|.$$\nConsequently,\n$$\\begin{aligned}\n\\beta_I(H)\n&\\ge 2b+\\left\\lceil\\frac{2b}{3}\\right\\rceil\\\\\n&=\\boxed{\\left\\lceil\\frac{8b}{3}\\right\\rceil}.\n\\end{aligned}$$\nThere is no  $N=8b$  normalization in the supplied source.I also independently reran the exact all-helper optimizer on the earlier 30-vertex fixture:Sharpness fixtureQuantityResultPhysical vertices30Helpers  $b$ 6Exact all-helper optimum16Unrestricted dissociation optimum17 $8b/3$ 16Sharp coefficient confirmedThe new theorem proves a lower bound, not equality for every template. The 30-vertex example establishes sharpness of the coefficient.4. Implementation and adversarial controlsI inspected the actual implementations, including rainbow_forest, _select, the owner-cycle exchange, parity flips and dual certificate construction.The augmenting algorithm has the correct alternating exchange structure:graphic-addable edges are sources;unused owner labels are sinks;partition exchanges and graphic exchanges alternate;augmentation increases the common independent set by one;failure produces the rank upper cut.The returned dual certificate checks\n$$\\operatorname{rank}(E_{\\rm unreachable})\n+\n|\\{\\text{reachable owner labels}\\}|\n=|I|.$$\nThis gives an independent upper bound matching the constructed forest size.The parity-flip reconstruction also correctly propagates the required changes from leaves toward the root. The physical selections are checked separately for auxiliary independence, owner dissociation, disjointness and selected degree.Honest coverage assessmentControlWhat it establishes420 coloured multigraphsExhaustive comparison of coloured-forest optima81,197 edge subsetsLiteral independent-set comparisons5,016 Rado subsetsExhaustive rank-formula comparisons37,934 physical inequalitiesFinite checks of square-capacity inequalities360 abstract modelsColour-free controls252,000 independent subsetsExhaustive subset comparisons within those models2,644 physical certificatesActual constructed selections73 closed C4 and 29 closed C8 componentsExplicit closed-component handlingOne qualification matters: the 273 exact all-helper controls call the exponential optimizer, which computes the exact optimum over all helper subsets. The checker asserts that this optimum is at least the constructed certificate size. It does not assert equality with the certificate size. These are exact optimizer comparisons, not proofs of optimality for the constructed sets.Likewise, larger instances certify actual feasible sets, not exact unrestricted optima.The abstract colour-free controls are particularly useful: they do not impose the physical colouring compatibility used by the construction API. They provide independent finite tests of the underlying combinatorial statement.These are meaningful controls, but the all-size theorem rests on the written proof, not on extrapolating the finite tests.5. Connected 100-vertex adversarial fixtureIndependent reconstruction succeededI rebuilt the fixture from its supplied raw  $P,Q,B$  data, without using the stored physical certificate as the construction input.Input properties100Physical vertices20Helpers40Index vertices5Owner C8 componentsOwner dissociation number: 25.Previous sufficient threshold: 26.Previous K4-free matching criterion: fails.Three original obstructing auxiliary squares remain in the fixture.Actual reconstructed certificate56Selected physical vertices5Rainbow forest edges16 selected owners.20 selected witnesses.All 20 helpers retained.Maximum selected induced degree: 1.Forest rank: 5.Dual graphic rank: 0.Five distinct reachable owner labels.Additional independent structural checks:PropertyResultFull physical graph connectedPassBipartitePassMinimum degree2Maximum degree3All selected vertices have degree at most one in selected subgraphPassFive forest edges are distinct-owner and acyclicPassI also enumerated all\n$$2^5=32$$\nowner-perfect-matching phase assignments and independently enumerated actual K4s in their resulting matched graphs.All 32 assignments contain at least one K4. Each has one or two actual K4 obstructions. Thus the old matching criterion really does fail, independently of the three additional owner-phase choices.The new 56-vertex selection is a genuine construction. It is not an exact 100-vertex optimum claim.6. Manuscript integration and remaining scopeThe new proof is integrated through \\input{manuscript/auxiliary-square-forest-proof.tex} after the earlier auxiliary-square parity proof.I checked:The definitions and normalization are introduced before their new use.The complete graphic Rado proof is present.The new theorem is explicitly colour-free.The physical application is separately qualified.The earlier 30-vertex sharpness example is retained.The conditional  $5/51$  deduction concerns an actual fixed disjoint witness extraction whose auxiliary graph consists of squares.The claim for  $\\SF-\\diss$  still requires an appropriate extraction for a maximum-cardinality minimal forming set.No general auxiliary-path or longer-even-cycle theorem is claimed.No universal unrestricted  $8b/3$  template result is claimed.The unrestricted subcubic interval  $[1/20,7/71]$  and the outstanding grid questions remain open.The manuscript explicitly distinguishes these new proofs from the earlier Lean formalization.The separate October-submitted paper is not included among the 32 supplied files, so I cannot independently byte-compare that external manuscript against an earlier version. The supplied source does not claim that this new theorem was Lean-formalized.TeX compilation was not necessary for this audit; no shared infrastructure was changed.Final verdictACCEPTThe supplied final milestone passes the independent mathematical, executable and exposition audit within the supplied source scope.32/32 files: exact bytes and hashes.Both original unmodified checkers: actual exit 0.Both fresh reports: byte-identical to embedded reports.Central all-owner theorem: complete proof.Closed exceptions: valid, including proper-subset cases.Rainbow forest and dual rank certificates: consistent.Connected 100-vertex fixture: independently reconstructed.Normalization:  $N=2b$ , not  $8b$ .Sharp  $8/3$  coefficient: confirmed.Execution qualification: both checker runs emitted the unrelated spreadsheet-runtime startup traceback on stderr, despite completing successfully. This is disclosed, not silently treated as an empty stderr.I found no mathematical defect requiring correction and no reason to downgrade the milestone to FIXABLE_GAPS or WRONG.\n",
+    "source_manifest": [
+      {
+        "path": "README.md",
+        "bytes": 83621,
+        "sha256": "accf966f09e57834c08f06e833f9e3c631d8ecd9bb4433e4b3f82ffac932d090"
+      },
+      {
+        "path": "develop/all_helper_optimization.py",
+        "bytes": 5837,
+        "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+      },
+      {
+        "path": "develop/auxiliary_square_forest.py",
+        "bytes": 8305,
+        "sha256": "b90c7a0031479eae425464fca24a4f9d592cb2a1163ddbfba30688c2476d5b80"
+      },
+      {
+        "path": "develop/auxiliary_square_parity.py",
+        "bytes": 3587,
+        "sha256": "985f1181d61feb02100aa1eb554b88d7174b6d797782d8bbf39d72acb569f064"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-forest.json",
+        "bytes": 3776,
+        "sha256": "6ab84b7fdd7dba36ec031f8ec1d12d422cf477b330720f0bdcd5e25c7ccc75e8"
+      },
+      {
+        "path": "develop/fixtures/auxiliary-square-parity.json",
+        "bytes": 4694,
+        "sha256": "4b3f9dc3b95faa245ec16f97164aeab9f9ff46b8f0abf52c00c6e22f40b6638f"
+      },
+      {
+        "path": "develop/fixtures/sharp-all-helper-thirty.json",
+        "bytes": 694,
+        "sha256": "28dddd433614aab34ebbeba59eeb0722af33c1623e824956b98a0265e7fb5897"
+      },
+      {
+        "path": "develop/owner_matching_certificate.py",
+        "bytes": 9760,
+        "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+      },
+      {
+        "path": "develop/sharp_all_helper.py",
+        "bytes": 2187,
+        "sha256": "05d0b30c02cf67a9fb1b356ac721f120cf7b02ee11317e9339884a745c81d266"
+      },
+      {
+        "path": "develop/subcubic_intrinsic_obstruction.py",
+        "bytes": 6461,
+        "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+      },
+      {
+        "path": "develop/subcubic_partial_template.py",
+        "bytes": 5720,
+        "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+      },
+      {
+        "path": "docs/ALL_HELPER_EXACT_OPTIMIZATION.md",
+        "bytes": 8906,
+        "sha256": "4ecd4c5fd54141c07ad0ef147b51477b17136515e19d1042c955c46a0edcbdac"
+      },
+      {
+        "path": "docs/ALL_OWNER_AUXILIARY_SQUARES.md",
+        "bytes": 5833,
+        "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+      },
+      {
+        "path": "docs/AUXILIARY_SQUARE_PARITY_CRITERION.md",
+        "bytes": 5097,
+        "sha256": "d85c038e7b6502240399d230e87f3e6eadcdfd9e8bdabe04366b2453ff327cbb"
+      },
+      {
+        "path": "docs/COMPLETION_20261112.md",
+        "bytes": 91708,
+        "sha256": "9f5368dbdc9bb22569699091ef487e289d469d4b372d15987e67214fdbb91d9e"
+      },
+      {
+        "path": "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md",
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      {
+        "path": "docs/SHARP_ALL_HELPER_BLOCK_AND_ODD_PATH_REFINEMENT.md",
+        "bytes": 5061,
+        "sha256": "7359001f9f14a232ea2022cecc2b79772329dc3d93c8bbb23e0e3cfa56366677"
+      },
+      {
+        "path": "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md",
+        "bytes": 7439,
+        "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+      },
+      {
+        "path": "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md",
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      {
+        "path": "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md",
+        "bytes": 10302,
+        "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+      },
+      {
+        "path": "manuscript/auxiliary-square-forest-proof.tex",
+        "bytes": 8465,
+        "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+      },
+      {
+        "path": "manuscript/auxiliary-square-proof.tex",
+        "bytes": 6405,
+        "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+      },
+      {
+        "path": "manuscript/owner-matching-proof.tex",
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      {
+        "path": "manuscript/sharp-all-helper-proof.tex",
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      {
+        "path": "manuscript/starforming-gap.tex",
+        "bytes": 115229,
+        "sha256": "26de03f5590b5b653ad54d9c94997469a85d651fa5cbea7fd74b0d77a9528e97"
+      },
+      {
+        "path": "manuscript/twenty-supported-proof.tex",
+        "bytes": 20318,
+        "sha256": "272d4514cf8afd3db1d315aa4ecdb3482b0add9c34c99f9b07e23f38ecfd7d8e"
+      },
+      {
+        "path": "output/auxiliary-square-forest-check.json",
+        "bytes": 14043,
+        "sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c"
+      },
+      {
+        "path": "output/auxiliary-square-parity-check.json",
+        "bytes": 3760,
+        "sha256": "9a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25"
+      },
+      {
+        "path": "output/sharp-all-helper-check.json",
+        "bytes": 1068,
+        "sha256": "6a73ee0a515add1c1c2e5f06de7883e4dbe2e4bf5b2bbb21dd7a8b104a9215e8"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_forest.py",
+        "bytes": 9106,
+        "sha256": "3f7daec55d96b4c42c4ea4b64bd3dd45fdda5425da221b329a38de0fa81a829f"
+      },
+      {
+        "path": "scripts/check_auxiliary_square_parity.py",
+        "bytes": 4733,
+        "sha256": "60f16a744c41482c8c2524ca8b59d44a0d71a1e63391d6be077e8e468c6c9ac1"
+      },
+      {
+        "path": "scripts/check_sharp_all_helper.py",
+        "bytes": 10877,
+        "sha256": "878fc4e5b742d2abd08de1c1650c684750bf3dc771c512177177b0364a2122c8"
+      }
+    ],
+    "scope": "Final32files; actual unmodified forest and prior parity checkers, report comparison and independent connected100vertex fixture reconstruction. Detailed execution limitations, if any, are in the complete response."
+  },
+  "final_audit_execution_qualification": {
+    "verdict": "ACCEPT",
+    "scope": "Final32source mathematical/executable/exposition audit.",
+    "actual_original_runs": true,
+    "fresh_reports_byte_identical": true,
+    "execution_qualification": "Both reviewer checker runs emitted an unrelated spreadsheet-runtime startup traceback on stderr, with exit0. Local executions had empty stderr.",
+    "reviewer_did_not_compile_TeX": true,
+    "October_manuscript_not_in_review_payload": "Local SHA256 check, not independent external-byte comparison by reviewer."
+  },
+  "local_execution": [
+    {
+      "command": "python3 -B scripts/check_auxiliary_square_forest.py --output FRESH.json",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 7.0553974579997885,
+      "report_sha256": "00c6721e4a2d5a14b8a3f6bf3b44417d8d16812f9ff1ff62b4d3d1de34a82a9c",
+      "report_byte_identical": true
+    },
+    {
+      "command": "python3 -B scripts/check_auxiliary_square_parity.py --output FRESH.json",
+      "exit_code": 0,
+      "stderr_bytes": 0,
+      "seconds": 1.8788844579999022,
+      "report_sha256": "9a523ec9a406a84c1f5a7df8406254a9cd5d2d42c61e47129789555fb066fc25",
+      "report_byte_identical": true
+    }
+  ],
+  "working_manuscript_pdf": {
+    "pages": 45,
+    "all_pages_rendered": true,
+    "pdf_sha256": "983ca496007332f4b206f5a121fb0cdf821cc9a97ed4ade992976fa911637053",
+    "visual_inspection": "passed: all45pages via six contact sheets, new proof pages29-31 individually inspected",
+    "compilation_overfull": false,
+    "compilation_undefined_references": false,
+    "two_compiles_succeeded": true,
+    "new_proof_pages_individually_checked": [
+      29,
+      30,
+      31
+    ]
+  },
+  "literature": {
+    "scope": "Focused extension of existing collaboration working manuscript.",
+    "new_deduction": "All-subsets square-capacity rank inequality, two closed exceptions, rainbow exchange forest and all-owner square theorem.",
+    "classical_result": "Rado independent representatives rank formula; explicitly attributed, complete graphic proof included.",
+    "bibliographic_verification": "rado-crossref.json: DOI10.1093/qmath/os-13.1.83, R.Rado1942, Q.J.Math13,83–89.",
+    "external_mathematical_premise": "None omitted: graphic representative criterion and partial rank formula proved in manuscript; previous exchange and exact normalization retained and cited internally.",
+    "proof_only_review_typo": "N=8b in its final sentence is a reviewer typo; source consistently N=2b.",
+    "unchanged_open_scope": [
+      "General auxiliary paths/longer even cycles",
+      "Universal subcubic sharp interval[1/20,7/71]",
+      "General grid compensation/unit5/6/triple equality"
+    ]
+  },
+  "new_connected_fixture": {
+    "physical_vertices": 100,
+    "helpers": 20,
+    "owner_components": "five C8s",
+    "owner_dissociation_number": 25,
+    "prior_owner_threshold": 26,
+    "prior_K4_free_owner_matching_test": "unsatisfiable for all32phases",
+    "returned_actual_set_size": 56,
+    "returned_forest_rank": 5,
+    "exact_optimum_claimed": false
+  },
+  "not_claimed": [
+    "Exact optimum for the100vertex example or larger physical controls.",
+    "New universal subcubic coefficient.",
+    "New Lean validation."
+  ],
+  "remaining_open": [
+    "General auxiliary paths and longer even cycles, general template8b/3.",
+    "Sharp unrestricted subcubic gap coefficient, retained interval[1/20,7/71].",
+    "General physical multiple-Hall routing, universal unit5/6 improvement and arbitrary-width rectangular triple equality."
+  ],
+  "submitted_October_manuscript_unchanged": true
+}

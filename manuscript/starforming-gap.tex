@@ -43,7 +43,8 @@ certificates for the specified matching choices.
 A thirty-vertex template has all-helper optimum sixteen and unrestricted
 optimum seventeen, showing that any universal all-helper coefficient is at
 most $8/3$. The odd-owner-path surplus also refines the conditional gap bound.
-An auxiliary-square parity exchange yields another sufficient class for $8b/3$.
+A rainbow forest of independent owner-cycle exchanges proves $8b/3$ whenever
+the auxiliary graph is a union of squares, for arbitrary owner paths and even cycles.
 We also prove that both parameters are additive over copies of a ten-vertex
 graph under permitted bipartite interconnections through four specified vertices.
 For graphs with gap $n/10>0$, we determine the intrinsic layers and
@@ -1758,6 +1759,8 @@ $6k$-cycles. It does not combine arbitrary longer paths with square cores.
 
 \input{manuscript/auxiliary-square-proof.tex}
 
+\input{manuscript/auxiliary-square-forest-proof.tex}
+
 \subsection{A robust subcubic block and a lower coefficient $1/20$}
 
 The unrestricted upper bound has a constructive lower counterpart. Define
@@ -2323,6 +2326,9 @@ are identified in the repository's corresponding verification note.
 The \texttt{check\_auxiliary\_square\_parity.py} supplement checks the
 construction of Theorem~\ref{thm:auxiliary-square-parity}, including both
 parity corrections and templates outside its sufficient criterion.
+The \texttt{check\_auxiliary\_square\_forest.py} supplement checks
+Theorem~\ref{thm:all-owner-auxiliary-squares}, including independent coloured
+forest optima, graphic rank upper certificates and physical selections.
 The new proofs are not included in the earlier Lean formalization of the two-attachment
 construction.
 
@@ -2364,6 +2370,9 @@ dissociation number},
 Transversals and matroid partition,
 \emph{J. Res. Nat. Bur. Standards Sect. B} \textbf{69B} (1965), 147--153,
 \href{https://nvlpubs.nist.gov/nistpubs/jres/69B/jresv69Bn3p147_A1b.pdf}{NBS primary text}.
+\bibitem{Rado42} R. Rado, A theorem on independence relations,
+\emph{Q. J. Math. Oxford Ser.} \textbf{13} (1942), 83--89.
+DOI: 10.1093/qmath/os-13.1.83.
 \end{thebibliography}
 \endgroup
 \end{document}
