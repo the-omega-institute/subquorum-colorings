@@ -1,0 +1,104 @@
+{
+  "at_recorded": "2026-11-12T21:41:32.881614+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "ca51b500-1526-45df-a4c4-0b30afb8f11d",
+    "conversation_id": "conv_291480590a584cea",
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af631af-3ad4-83ec-9661-791c3b632369",
+    "usage_estimated": true
+  },
+  "attached_manifest": [
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    {
+      "path": "develop/cover_choice_exchange.py",
+      "bytes": 3801,
+      "sha256": "11b4131a559e1f9347871c6fccc3d23dd0b1233ac3507d13125d61a796222bb1"
+    },
+    {
+      "path": "develop/cover_saturated_exchange.py",
+      "bytes": 8770,
+      "sha256": "f8b52899d447d16374cd7d91f05e03125bddacfe26bbef3cf82346bf2202907b"
+    },
+    {
+      "path": "develop/matching_choice_exchange.py",
+      "bytes": 7687,
+      "sha256": "aefbcb90c3d54c07d043be78be941f1604127fa042cebee34fbd7ef8e9397e45"
+    },
+    {
+      "path": "develop/matching_credit_exchange.py",
+      "bytes": 11007,
+      "sha256": "b171c9cf633dff4eb62b5397a0d2cabf3691d741e4ad25dfa01109faa6bcc56d"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/odd_path_neutral_budget.py",
+      "bytes": 11221,
+      "sha256": "0cadfa92a0cf612a6296fbb43e5b140c53ae30d4319edf23db4a55f386bc19e1"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4773,
+      "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "docs/INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.md",
+      "bytes": 16958,
+      "sha256": "bba8c9aab3242587a91ca6bd1cbc4e911be824b00e95de3e5056e5cda11482da"
+    },
+    {
+      "path": "docs/ODD_PATH_NEUTRAL_BUDGET_AND_COVER_REPAIR.md",
+      "bytes": 15787,
+      "sha256": "507b9ee30096494b9744f1c902d566699a5f57f24274e94f7c73594f8565b948"
+    },
+    {
+      "path": "output/odd-path-neutral-budget-check.json",
+      "bytes": 11686,
+      "sha256": "429af2f40c990c9d3fe57e154e4063adf1366c95ec399395733732961a33fcb4"
+    },
+    {
+      "path": "scripts/check_odd_path_neutral_budget.py",
+      "bytes": 13752,
+      "sha256": "02a468e5b0b38f65dbe7985b66d9483cf9dcd51fd3b549cae83b4e3b5cf92107"
+    }
+  ],
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_odd_path_neutral_budget.py --output /tmp/odd-path-neutral-regenerated.json",
+    "original_checker_unchanged": true,
+    "assertions_enabled": true,
+    "exit_code": 0,
+    "runtime_seconds": 13.812,
+    "report_bytes": 11686,
+    "report_sha256": "429af2f40c990c9d3fe57e154e4063adf1366c95ec399395733732961a33fcb4",
+    "full_byte_comparison_equal": true,
+    "manifest_entries_verified": 14,
+    "stdout": "Successful JSON count summary. Exact stdout byte count not supplied.",
+    "stderr": "Reviewer reports a nonfatal spreadsheet-runtime warmup traceback ending RemoteError: Element ordering requires an owning element collection. Exact stderr byte count and full traceback not supplied; full review response preserved below.",
+    "execution_environment": "Not specified by reviewer",
+    "execution_limitations": "Source snapshot only; no Lean, repository-wide provenance or priority audit."
+  },
+  "mathematical_or_source_changes_required": false,
+  "scope": "Exact endpoint formula for independent tight initial cover, arbitrary distinct removals OUTSIDE that cover, finally isolated additions; distinct-edge ledger; grouped optimizer; all-scale physical specified-start separation. Arbitrary mixed removals and nonisolated additions are not covered; one broad phrase in the review summary does not expand the theorem hypotheses. No universal bound improvement, unrestricted physical optimum or rectangular-grid embedding.",
+  "complete_response": "ACCEPTVerdict: ACCEPT — the mathematical milestone is supported by the supplied proofs, implementation, and successful reproduction.I found no demonstrated mathematical defect requiring correction. The important distinction between the endpoint theorem, conditional optimizer, and all-scale physical construction is preserved. The finite checker corroborates the implementation but is not being substituted for the general proofs.1. Frozen snapshot and original execution14/14 manifest entries verifiedVerificationActual resultZIP extractionSuccessMANIFEST entries14Byte lengthsAll matchSHA-256 hashesAll matchOriginal checkerExecuted unchangedPython assertionsEnabledExit code0Runtime13.812 secondsGenerated report11,686 bytesFull byte comparisonIdenticalThe exact executed command, from the extracted root, was:Bashpython3 -B scripts/check_odd_path_neutral_budget.py \\\n  --output /tmp/odd-path-neutral-regenerated.jsonExact SHA-256 matchPlain textExpected:\n429af2f40c990c9d3fe57e154e4063adf1366c95ec399395733732961a33fcb4\n\nRegenerated:\n429af2f40c990c9d3fe57e154e4063adf1366c95ec399395733732961a33fcb4\n\nBytes: 11686 == 11686\nComparison: IDENTICALStandard output: successful JSON summary, including:54,158 repaired batches;62,805 grouped optimizer systems;1,905 initial degree-two bipartite graphs;3,854 independent tight covers;3,337 isolation systems;12,931 isolation-subset checks;1,200 larger seeded grouped calls;1,905 graph cases with independent-cover analysis;385 physical dissociation certificates;120 random physical optima;17 family scales;248 family subsets;412 connectivity-deletion checks.Standard error: a nonfatal spreadsheet-runtime warmup traceback, ending in:Plain textRemoteError: Element ordering requires an owning element collection.It did not interrupt the checker, affect its exit status, or alter the regenerated report.This is the actual original-checker execution, not a shortened replacement.2. Theorem 1 — exact shared odd-path neutral budgetACCEPTThe formula is correct under the stated hypotheses.Let  $C$  be the independent tight cover and  $I=U\\setminus C$ . Since  $C$  is a vertex cover,  $I$  is independent as well. Thus every initial component is an alternating path or an even cycle.The initial tight matching excludes C-heavy odd paths: such a component would have more cover vertices than opposite-side vertices and could not have its cover side saturated.The deletion analysis is sound:Initial componentSelected removalsSavingBalanced path $t$  $t$ Even cycle $t$  $t$ I-heavy odd path $t=0$ 0I-heavy odd path $t\\geq1$  $t-1$ I-isolate0 or 10The essential detail is that the components are those remaining after the complete deletion set, not independently counted intervals between arbitrary pairs.Every surviving C-heavy odd component has exactly one more C-point than I-point. Replacing its cover side by its I-side saves exactly one. The other components retain their original cover sides.Consecutive pairing supplies a matching of exactly the resulting cover size. Isolated additions contribute neither matching edges nor cover points.Consequently,\n$$\\boxed{\\nu(A[U_S])=\\nu_0-|S|+O(S).}$$\nThe endpoint proof does not need an optimizer for the final graph.Corollary 2 — matching-edge ownershipAlso accepted.For every final C-heavy odd component  $R$ ,\n$$|C\\cap R|=|I\\cap R|+1.$$\nSince  $M_0$  saturates C, at least one C-point in  $R$  has its matching partner outside  $I\\cap R$ . That partner must be deleted: otherwise the matching edge would connect two vertices in the same surviving component.Choosing one such edge per repair region gives an injective assignment because the regions are disjoint and a matching edge has only one C-endpoint.Importantly, this establishes one distinct destroyed initial edge per unit of saving, not one unit of saving per destroyed edge.I also find the explicit warning about overlapping pair intervals mathematically necessary and correctly handled.3. Isolation compilation and grouped optimizationACCEPTIsolation implicationsThe three compiled conditions are necessary and sufficient:If  $y_i$  has an initial neighbour  $x_j$ , selecting  $i$  requires selecting  $j$ .An initial neighbour unavailable for removal blocks  $i$ .An edge between candidate additions creates a conflict.Every edge involving a selected new vertex is inspected by these conditions.No additional retirement constraint for old C-points is necessary: the final cover is allowed to change.The physical wrapper also distinguishes global initial validation from local candidate-owner checks. Distinct owners ensure that independently permitted replacements preserve permission for every prefix.None versus odd-component identifiersThe distinction is correct:None represents a balanced component;a shared identifier represents one initial odd component.In particular, two removals on the same odd path consume only one neutral unit.Theorem 3ACCEPTThe  $2^{|K|}\\operatorname{poly}$  algorithm is correctly justified.For each fixed intersection  $F=S\\cap K$ :Reject internal conflicts.Exclude blockers and  $K\\setminus F$ .Exclude conflict neighbours of  $F$ .Propagate exclusions backwards through implications.The remaining set  $L$  is the greatest feasible batch with that fixed intersection.Monotonicity of\n$$v(S)=|S|-\n|\\{g_i:i\\in S,\\ g_i\\ne\\mathrm{None}\\}|$$\nmakes  $L$  a maximum-value solution for that assignment.The minimum-operation tie-break is also proved, not merely implemented.Every balanced label must be selected in a maximum-value solution. Every label belonging to an odd group represented at least twice must also be selected: omitting even one would lose positive group contribution.Taking the forward implication closure of those mandatory roots produces a feasible minimum-operation maximizer. It is contained in every maximizer, establishing uniqueness for the fixed  $F$ .The argument handles:singleton odd groups;arbitrary implication cycles;arbitrary blockers;arbitrary conflicts covered by  $K$ ;zero-credit prerequisite labels.There is no unsupported claim of global uniqueness across different  $F$ .The default greedy maximal-matching construction gives\n$$|K|\\leq 2\\tau,$$\nhence  $4^\\tau\\operatorname{poly}$  time. The source correctly does not claim polynomial-time maximum independent set.4. Theorem 4 — all-scale physical separationACCEPTThis is the strongest part of the milestone.The construction works for every integer  $r\\geq3$ .20rPhysical vertices8rWitnesses4rHelpers / centres8rOwners11r+1Repaired certificateQuantityExact valueInitial cover $2r-2$ Inherited-cover optimum $2r-2$ Fixed-list repaired optimum $r-1$ Additive gap $r-1$ Candidate count $r$ Shared initial odd paths touched1Construction auditThe auxiliary graph is the even cycle  $C_{8r}$ , with\n$$P=\\{(0,1),(2,3),\\ldots\\},$$\nand complementary matching edges forming  $Q$ .The initial omission is\n$$U=\\{1,\\ldots,4r-3\\}\n\\cup\\{4r,4r+4,4r+8\\}.$$\nIts induced graph consists of one odd path and three isolates.The supplied cover and matching are\n$$C=\\{2,4,\\ldots,4r-4\\},$$\n\n$$M_0=\\{(1,2),(3,4),\\ldots,(4r-5,4r-4)\\}.$$\nBoth have size  $2r-2$ . The cover is unique.The candidate removals and additions are\n$$x_j=4j+1,\\qquad\ny_j=4r+2+4j,\\quad 0\\leq j<r.$$\nEvery addition is isolated in the final induced graph, even when all candidates are selected.The owner-square pairing construction has the correct color balance, uses all indices exactly once, and supplies distinct owners. Every square has exactly two initial omissions. Three remaining owner vertices necessarily induce a vertex of degree two in a square, whereas two omissions suffice.Thus the initial omission is minimum-cardinality permitted.Exact costAll candidates touch the same initial odd path.For every subset of  $t$  candidates,\n$$\\boxed{\n\\operatorname{cost}(t)\n=2r-2-\\max(t-1,0).\n}$$\nThis proves that the full list is optimal, with cost  $r-1$ .The surviving nontrivial components are precisely\n$$(4j+2,4j+3,4j+4),\n\\qquad 0\\leq j<r-1.$$\nThe proposed cover and matching are\n$$C'=\\{4j+3:0\\leq j<r-1\\},$$\n\n$$M'=\\{(4j+2,4j+3):0\\leq j<r-1\\}.$$\nBoth have size  $r-1$ . This independently establishes the exact fixed-list optimum.Inherited-cover barrierEvery original cover point retains a neighbour congruent to  $3\\pmod4$ , which is never removed.Therefore no initial cover point is forced to retire under the inherited-cover rule. Since the initial minimum cover is unique, changing the initial maximum matching cannot help.The inherited-cover cost remains  $2r-2$ , including the mixed-mode inherited certificates.The gap is therefore genuinely additive and unbounded:\n$$(2r-2)-(r-1)=r-1.$$\nThis is not a failure of the matching-edge ledger. It is a limitation of insisting on the inherited cover when the correct final cover requires changing sides.Physical graph conditionsThe physical realization is also valid:Bipartiteness follows from the assigned physical colors.The graph has minimum degree two and maximum degree three.The subdivided witness cycle remains connected after deletion of any one core vertex.Each owner square retains at least three attachments after deleting a core vertex.Deleting an owner leaves its remaining square path attached to the intact core.This proves two-connectivity at every scale, not merely for the checked examples.The certificate size follows exactly:\n$$3b-(r-1)=12r-r+1\n=\\boxed{11r+1}.$$\n5. Scope and limitationsI specifically checked the following possible overclaims.Potential overclaimAssessmentEndpoint formula implies monotone intermediate scheduleCorrectly excludedEvery destroyed matching edge earns a savingCorrectly excludedAll final-cover changes are handled by Theorem 1Not claimedGrouped optimizer is a general polynomial MIS solverNot claimedFixed-list result is unrestricted physical optimumNot claimedNew unrestricted all-square owner theoremNot claimedUniversal  $8b/3$  improvementNot claimedUniversal unit  $5/6$  improvementNot claimedRectangular-grid embeddingNot claimedThe previously established all-square owner-class result is properly distinguished from the stronger specified-starting-omission and specified-candidate-list certificate here.The remaining research gaps listed in the source are genuine boundaries of this milestone, not contradictions in its proof.6. Final audit determinationACCEPTThe following are accepted:Exact shared odd-path neutral budget.Arbitrary-deletion final-cover repair.Injective destroyed-edge ownership.Necessary-and-sufficient final-isolation compilation.Exact grouped optimization and fixed-intersection tie-break.Physical wrapper's owner and permission restrictions.Helper-cost dissociation certificate.Theorem 4's all-integer-scale physical separation.Exact numerical counts and full reproduction of the frozen report.Verification limits:The review concerns the supplied frozen snapshot, not a newer repository revision.The 14 manifest-listed files were hash-verified; this does not establish repository-wide provenance.The checker is executable evidence for its finite scopes, not a proof of arbitrary-size claims.No Lean verification, formal kernel acceptance, literature-priority audit, or independent publication acceptance is asserted.The nonfatal startup traceback is recorded rather than concealed.Bottom line: I accept this mathematical milestone as presented. The principal achievement is not simply an improved matching bound: it is the exact identification of a shared neutral resource, coupled with constructive final-cover repair and an all-scale physical example showing why inherited-cover certificates can miss an unbounded amount of achievable improvement.\n"
+}

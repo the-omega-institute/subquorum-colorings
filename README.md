@@ -1,5 +1,15 @@
 # Current continuation
 
+[Shared odd-path neutral budgets and final-cover repair](docs/ODD_PATH_NEUTRAL_BUDGET_AND_COVER_REPAIR.md)
+charge the first removal once per touched initial odd path. Under an independent
+tight initial cover, outside-cover removals and finally isolated additions,
+final cover flips give exact cost nu0-|S|+O(S), with distinct initial matching
+edges owning the savings. A conflict-cover algorithm optimizes the grouped
+budget then minimizes operations in 2^k polynomial time. A two-connected20r
+physical family has inherited best2r-2 but repaired fixed-list optimum r-1;
+this improves a specified-start certificate, not a universal bound. Original
+checker passes; independent ACCEPT reproduced the complete report byte-for-byte.
+
 [Initial matching choice and mixed removals](docs/INITIAL_MATCHING_CHOICE_AND_MIXED_REMOVALS.md)
 use one constrained initial matching test to certify a fixed batch, including
 removals on both cover sides. Each destroyed original edge is charged once.

@@ -1,0 +1,673 @@
+{
+  "counts": {
+    "grouped_optimizer_systems": 62805,
+    "initial_degree_two_bipartite_graphs": 1905,
+    "initial_independent_tight_covers": 3854,
+    "larger_seeded_grouped_models": 600,
+    "literal_isolated_candidate_optima": 3854,
+    "literal_isolation_subsets": 12931,
+    "literal_isolation_systems": 3337,
+    "literal_repaired_batches": 54158,
+    "physical_connectivity_deletions": 412,
+    "physical_dissociation_certificates": 385,
+    "random_physical_literal_feasible_batches": 734,
+    "random_physical_optima": 120,
+    "rejected_hypothesis_controls": 6,
+    "shared_path_family_scales": 17,
+    "shared_path_literal_subsets": 248
+  },
+  "digest": "95b3f560ac32c7a2cdabbde2e07831f20c11f3f421c8938d025547167c41af2d",
+  "examples": [
+    {
+      "inherited_best": {
+        "batch_cover_trials": 8,
+        "certificate": {
+          "U": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            12,
+            16,
+            20
+          ],
+          "actual_cost": 4,
+          "added": [],
+          "applicable": true,
+          "beta_I_lower": 32,
+          "charged_edges": [],
+          "cover": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "credit": 0,
+          "forced_retired": [],
+          "initial_U": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            12,
+            16,
+            20
+          ],
+          "initial_cost": 4,
+          "initial_cover": [
+            2,
+            4,
+            6,
+            8
+          ],
+          "initial_matching": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "matching": [
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              8,
+              7
+            ]
+          ],
+          "operations": [],
+          "owners": [
+            0,
+            10,
+            11,
+            13,
+            14,
+            15,
+            17,
+            18,
+            19,
+            21,
+            22,
+            23
+          ],
+          "removed": [],
+          "selected_candidates": [],
+          "witnesses": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            12,
+            16,
+            20
+          ]
+        },
+        "minimum_covers_tested": 1
+      },
+      "model": {
+        "B": [
+          [
+            1,
+            14
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            5,
+            18
+          ],
+          [
+            18,
+            8
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            11,
+            5
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            22,
+            12
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            15,
+            9
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            20,
+            23
+          ],
+          [
+            23,
+            16
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            13,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            17,
+            6
+          ],
+          [
+            6,
+            21
+          ],
+          [
+            21,
+            7
+          ],
+          [
+            7,
+            17
+          ]
+        ],
+        "P": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            22,
+            23
+          ]
+        ],
+        "Q": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            0
+          ]
+        ],
+        "b": 12,
+        "colour": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        "cover": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "initial_U": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          12,
+          16,
+          20
+        ],
+        "matching": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "operations": [
+          [
+            1,
+            1,
+            14
+          ],
+          [
+            2,
+            5,
+            18
+          ],
+          [
+            4,
+            9,
+            22
+          ]
+        ],
+        "r": 3,
+        "squares": [
+          [
+            1,
+            14,
+            4,
+            10
+          ],
+          [
+            5,
+            18,
+            8,
+            11
+          ],
+          [
+            9,
+            22,
+            12,
+            15
+          ],
+          [
+            16,
+            19,
+            20,
+            23
+          ],
+          [
+            0,
+            2,
+            13,
+            3
+          ],
+          [
+            17,
+            6,
+            21,
+            7
+          ]
+        ]
+      },
+      "result": {
+        "certificate": {
+          "U": [
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22
+          ],
+          "actual_cost": 2,
+          "added": [
+            14,
+            18,
+            22
+          ],
+          "beta_I_lower": 34,
+          "charged_edges": [
+            [
+              1,
+              2
+            ],
+            [
+              5,
+              6
+            ]
+          ],
+          "cover": [
+            3,
+            7
+          ],
+          "credit": 2,
+          "initial_cost": 4,
+          "matching": [
+            [
+              2,
+              3
+            ],
+            [
+              6,
+              7
+            ]
+          ],
+          "owners": [
+            0,
+            1,
+            5,
+            9,
+            10,
+            11,
+            13,
+            15,
+            17,
+            19,
+            21,
+            23
+          ],
+          "removed": [
+            1,
+            5,
+            9
+          ],
+          "repair_regions": [
+            {
+              "charged_initial_edge": [
+                1,
+                2
+              ],
+              "new_cover": [
+                3
+              ],
+              "old_cover": [
+                2,
+                4
+              ],
+              "vertices": [
+                2,
+                3,
+                4
+              ]
+            },
+            {
+              "charged_initial_edge": [
+                5,
+                6
+              ],
+              "new_cover": [
+                7
+              ],
+              "old_cover": [
+                6,
+                8
+              ],
+              "vertices": [
+                6,
+                7,
+                8
+              ]
+            }
+          ],
+          "selected_candidates": [
+            0,
+            1,
+            2
+          ],
+          "witnesses": [
+            2,
+            4,
+            6,
+            8,
+            12,
+            14,
+            16,
+            18,
+            20,
+            22
+          ]
+        },
+        "constraints": {
+          "blocked": [],
+          "blocker_evidence": [],
+          "conflicts": [],
+          "dependencies": [],
+          "groups": [
+            0,
+            0,
+            0
+          ],
+          "initial_components": [
+            {
+              "cyclic": false,
+              "odd": true,
+              "vertices": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ]
+            },
+            {
+              "cyclic": false,
+              "odd": true,
+              "vertices": [
+                12
+              ]
+            },
+            {
+              "cyclic": false,
+              "odd": true,
+              "vertices": [
+                16
+              ]
+            },
+            {
+              "cyclic": false,
+              "odd": true,
+              "vertices": [
+                20
+              ]
+            }
+          ],
+          "operations": [
+            [
+              1,
+              14
+            ],
+            [
+              5,
+              18
+            ],
+            [
+              9,
+              22
+            ]
+          ]
+        },
+        "optimization": {
+          "assignments": 1,
+          "chosen_cover_labels": [],
+          "credit": 2,
+          "feasible_assignments": 1,
+          "greatest_for_assignment": [
+            0,
+            1,
+            2
+          ],
+          "roots": [
+            0,
+            1,
+            2
+          ],
+          "selected": [
+            0,
+            1,
+            2
+          ],
+          "vertex_cover": []
+        }
+      }
+    }
+  ],
+  "scope": "Exact shared odd-path budget with independent tight cover, removals outside it and finally isolated additions. Literal degree-two bipartite graphs through6; full isolation systems through3 and2additions; exhaustive grouped dependency/conflict/blocker/canonical-group systems through3; larger seeded systems and physical optima. Uniform connected20r family has inherited best2r-2 vs repaired fixed-list optimum r-1. No unrestricted all-helper optimum, rectangular embedding, universal8b/3 or5/6 claim."
+}

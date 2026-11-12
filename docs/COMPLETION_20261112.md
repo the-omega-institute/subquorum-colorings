@@ -1612,3 +1612,27 @@ This rules out applying this particular structural criterion, without
 deciding the equality itself. No arbitrary-width polynomial claim is made.
 The sharp bipartite n/10 gap theorem and previous composition manuscript
 are preserved. No email, submission or submitted-version edit is implied.
+
+
+## Shared odd-path neutral budgets and final-cover repair (13 November)
+
+[Shared odd-path neutral budgets and final-cover repair](docs/ODD_PATH_NEUTRAL_BUDGET_AND_COVER_REPAIR.md)
+charge the first removal once per touched initial odd path. Under an independent
+tight initial cover, outside-cover removals and finally isolated additions,
+final cover flips give exact cost nu0-|S|+O(S), with distinct initial matching
+edges owning the savings. A conflict-cover algorithm optimizes the grouped
+budget then minimizes operations in 2^k polynomial time. A two-connected20r
+physical family has inherited best2r-2 but repaired fixed-list optimum r-1;
+this improves a specified-start certificate, not a universal bound. Original
+checker passes; independent ACCEPT reproduced the complete report byte-for-byte.
+
+The exact budget allows many operations on the same initial component;
+vertex-disjoint final repair regions own different initial matching edges.
+All implications, blockers and pair conflicts express final isolation only.
+The fixed-intersection optimizer has a unique smallest maximum-value batch;
+there is no global uniqueness or arbitrary-exchange polynomial claim.
+The physical all-square class was already settled by earlier unrestricted
+results. This application repairs the inherited-certificate barrier from
+one given U/list; universal8b/3, unit5/6, general physical multi-Hall routing,
+sharp remaining degree parameters and arbitrary-width grid equality remain
+OPEN in the full ACTIVE goal. October manuscript preserved.
