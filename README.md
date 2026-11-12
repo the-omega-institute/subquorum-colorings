@@ -1,5 +1,16 @@
 # Current continuation
 
+[Mixed isolated-addition repair and operation-count hardness](docs/MIXED_ISOLATED_REPAIR_AND_OPERATION_HARDNESS.md)
+allow removals on both initial cover sides. Odd-component counts give exact
+endpoint costs and explicit final covers/matchings. Maximum saving is exact
+in 2^k polynomial time for conflict-cover size k; the fewest-operation
+tie-break has an exact 2^s polynomial SCC enumeration. A self-contained
+Vertex Cover reduction proves its minimum-operation decision problem NP-complete even for two-connected
+bipartite min2/max3 physical graphs, all square owners, auxiliary P4/P2,
+minimum omission and no addition conflicts. Primary maximum saving is easy
+on these inputs; no unrestricted graph-parameter hardness is asserted.
+Original checker passes; independent ACCEPT reproduced the full original report byte-for-byte; explanation-only audit errata are preserved in the receipt.
+
 [Shared odd-path neutral budgets and final-cover repair](docs/ODD_PATH_NEUTRAL_BUDGET_AND_COVER_REPAIR.md)
 charge the first removal once per touched initial odd path. Under an independent
 tight initial cover, outside-cover removals and finally isolated additions,

@@ -1636,3 +1636,30 @@ results. This application repairs the inherited-certificate barrier from
 one given U/list; universal8b/3, unit5/6, general physical multi-Hall routing,
 sharp remaining degree parameters and arbitrary-width grid equality remain
 OPEN in the full ACTIVE goal. October manuscript preserved.
+
+
+## Mixed cover repair and minimum-operation complexity (13 November)
+
+[Mixed isolated-addition repair and operation-count hardness](docs/MIXED_ISOLATED_REPAIR_AND_OPERATION_HARDNESS.md)
+allow removals on both initial cover sides. Odd-component counts give exact
+endpoint costs and explicit final covers/matchings. Maximum saving is exact
+in 2^k polynomial time for conflict-cover size k; the fewest-operation
+tie-break has an exact 2^s polynomial SCC enumeration. A self-contained
+Vertex Cover reduction proves its minimum-operation decision problem NP-complete even for two-connected
+bipartite min2/max3 physical graphs, all square owners, auxiliary P4/P2,
+minimum omission and no addition conflicts. Primary maximum saving is easy
+on these inputs; no unrestricted graph-parameter hardness is asserted.
+Original checker passes; independent ACCEPT reproduced the full original report byte-for-byte; explanation-only audit errata are preserved in the receipt.
+
+The exact saving is (|X|+o(G-X)-o(G))/2; new isolated additions are
+excluded from o(G-X). The distinct destroyed-edge ledger is global, not
+ownership by individual repair regions. The mixed class has no unique
+smallest conditional maximizer even for one initial edge. The physical
+reduction makes zero cost reachable by selecting all operations, while the
+fewest such operations is D*tau(H); connected bridgeless normalization
+provides the two-connectivity restriction without a cited restricted-hardness
+assumption. This advances deletion/composition structure and computational
+boundaries, not a new universal numerical bound or rectangular-grid result.
+Mixed nonisolated additions, universal8b/3, compatible physical multi-Hall
+routing, unit5/6, remaining sharp degree parameters and arbitrary-width grid
+triple equality remain OPEN in the full ACTIVE goal. October manuscript intact.
