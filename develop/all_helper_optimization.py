@@ -19,10 +19,22 @@ def score(n, pairs, Q, U):
                 else:colour[u]=1-colour[v];todo.append(u)
     left={v for v in U if not colour[v]};mate={}
     def aug(v,seen):
-        for u in sorted(adj[v]):
+        # Explicit DFS frames preserve the recursive traversal order while
+        # allowing augmenting paths longer than Python's recursion limit.
+        stack=[(v,iter(sorted(adj[v])),None)]
+        while stack:
+            current,neighbours,incoming=stack[-1]
+            try:u=next(neighbours)
+            except StopIteration:
+                stack.pop();continue
             if u in seen:continue
             seen.add(u)
-            if u not in mate or aug(mate[u],seen):mate[u]=v;return True
+            if u in mate:
+                nxt=mate[u];stack.append((nxt,iter(sorted(adj[nxt])),u));continue
+            mate[u]=current
+            while len(stack)>1:
+                child=stack.pop();mate[child[2]]=stack[-1][0]
+            return True
         return False
     for v in sorted(left):aug(v,set())
     inverse={v:u for u,v in mate.items()}

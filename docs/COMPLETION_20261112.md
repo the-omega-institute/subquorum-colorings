@@ -1,5 +1,25 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Pair conflicts and the exact activation-budget optimum
+
+For fixed U*, the [conflict-graph theorem](PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md)
+proves exact compatibility using pairwise tests. Individually eligible
+cycles have even penalties d_C for odd components consumed from A[U*],
+and an independent family gives cost<=nu0-sum(1-d_C/2). The optimum
+numerical bound over ALL allowed activation sets W and candidate families
+is nu0-alpha(Gamma0), on candidates with zero odd penalty. Greedy colouring
+provides a polynomial sufficient construction and recovers the earlier
+mixed long-cycle budget automatically.
+
+A two-connected10r-vertex bipartite min2/max3 family for every evenr>=2
+has conflict graph K_r and exact best budgetr-1, while a coordinated
+independent omission set proves true cost0 and beta_I6r. Thus optimizing
+this support criterion for a fixed minimum U* can miss8b/3 for all evenr>=4.
+Changing U*, coordinated conflicting exchanges and iterative reconstruction
+are distinct possibilities. Universal8b/3, the sharp subcubic constant and
+all general grid objectives remain in the full ACTIVE goal.
+
+
 ## A common activation graph and inactive separators
 
 The [activation theorem](ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md) strengthens

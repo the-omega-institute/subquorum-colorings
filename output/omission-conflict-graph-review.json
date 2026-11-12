@@ -1,0 +1,226 @@
+{
+  "at": "2026-11-12T19:42:10.392137+00:00",
+  "verdict": "ACCEPT",
+  "scope": "Generic pair compatibility, parity penalty, exact activation numerical-budget optimization over allW/S at fixed initialU, polynomial greedy sufficient certificate; all-even-r two-connected clique-conflict obstruction. No unrestricted8b/3 or general grid theorem.",
+  "initial_audit": {
+    "verdict": "FIXABLE_GAPS",
+    "oracle": {
+      "task_id": "112e0c0f-f8c9-4e75-9cf0-7ae70854d491",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af612f1-591c-83ec-a023-93122f590e44",
+      "usage_estimated": true
+    },
+    "full_response": "FIXABLE_GAPS. The pair-conflict lemma, the parity bound (5), the exact fixed- $U_*$  optimum (6), and the all-even- $r$  obstruction are mathematically sound. The original checker reproduced its supplied report byte for byte. I found one false owner-adjacency statement in the proof and two reproducible implementation issues. None changes the claimed numerical optima.Findings that need correctionThe initial owner complement has zero edges per square. Lines 253–254 of docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md say it has one. Write (8) as  $C_i=(a,h,a+1,h+1)$ . The initial omissions are  $a,a+1$ , so the retained owners  $h,h+1$  are opposite vertices of the square. At  $r=2,i=0$ , the square is  $(0,6,1,7)$ , and  $6,7$  are nonadjacent. The correction is “its owner complement consists of two isolated vertices per square.” Permittedness follows, and two omissions are minimum because retaining any three vertices of a square leaves a degree-two vertex. The later one-edge assertion for  $U^0$  is correct: its retained owners are  $a+1,h+1$ .The greedy certificate can raise RecursionError on a valid physical input with a good candidate. I ran the public greedy_conflict_certificate entry point at  $b=1024$ , with  $A=P_{2048}$  in natural order, consecutive  $P$ -pairs starting at even indices, intervening  $Q$ -edges, colour  $\\lfloor v/2\\rfloor\\bmod2$ , owner square  $(0,2,1,3)$ , all other owners isolated, and  $U_*=\\{2,\\ldots,2047\\}$ . conflict_data correctly returned one good candidate and  $\\nu_0=1023$ . Certificate construction then exhausted Python’s default recursion limit of 1000 in develop/all_helper_optimization.py, line 25, during a local matching test. The predicted cost  $1022$  is attainable explicitly by replacing omissions  $\\{2,3\\}$  with  $\\{0,3\\}$ . An iterative augmenting-path search, or direct path/even-cycle matching with witness reconstruction, fixes this implementation gap.The generic pair test silently loses a one-pass edge iterable. With  $U_*=\\varnothing$ , candidates  $\\{0\\},\\{1\\}$ , and the single edge  $01$ , pair_conflicts returned [[0, 1]] for [(0, 1)] and [] for iter([(0, 1)]). Its validation pass consumes the iterator before region construction. Materializing edges once at function entry fixes it. The physical caller and supplied checker pass reusable edge collections.Exact-source executionI reconstructed all 13 UTF-8 files, totaling 300,197 bytes, and verified each file’s byte count and SHA-256 against the manifest both before and after execution. I ran the unmodified checker with Python 3.12.14, assertions enabled, and PYTHONOPTIMIZE unset.Bashpython3 -B scripts/check_omission_conflict_graph.py --output INDEPENDENT-conflict.jsonMeasurementObserved resultExit code0Measured wall time for the checker subprocess9.147184627 sstdout1,247 bytesstderr0 bytes, exactly b''Generated report14,662 bytesReport SHA-256e6eb8aed1fb9c02a4fdeb09cbcc7b0af6960aa4c5538815ed4936c3cb766450dDirect cmp with output/omission-conflict-graph-check.jsonExit 0, byte-identicalThe observed counts include 53,229 arbitrary graph/ $U_*$ /candidate-family models, 219,167 common-activation subset checks, 1,284 physical certificate checks, 23 exact all- $(\\mathcal S,W)$  budget controls, and 173 selected positive parity penalties. The 23 controls comprise 21 seeded small physical cases and two obstruction-family cases. The checker performed 5,120 vertex-deletion connectivity checks over 19 obstruction scales through 1,280 physical vertices. Its 19 earlier mixed-family scales reached 3,840 physical vertices. These counts describe the executed checks, including repeated certificates on the same model.The evidence archive contains the per-file sizes and hashes, exact generated report, raw stdout and stderr, and the independent reconstruction and implementation probes.    pair-conflicts-audit-evidence.zipMathematical auditPair conflicts. On a common-activation path meeting two selected sets, record the label of every vertex in a selected set, including vertices already in  $U_*$ . At the first change of label, the intervening vertices belong to  $U_*$ . This gives a two-candidate path. Conversely, every two-candidate path survives in the common graph. Under independence, a common component touching  $C$  therefore contains only vertices in  $U_*\\cup C$ . Inclusion in both directions identifies it with its individual component. This argument works component by component even when  $R_C$  is disconnected. For the implementation’s region test, a label change either crosses a direct edge or passes through a base component reached from both sides. Conversely, an intersection or an edge between the two regions joins vertices reachable from the respective candidates.Matching cost and the activation dependency. The two matchings  $P,Q$  give maximum degree two and alternate on every auxiliary cycle. Thus each base component  $L$  has matching number  $\\lfloor |L|/2\\rfloor$ , and  $\\nu_0=(m-o_0)/2$  is the actual initial matching cost. I also checked the local exchange argument underlying (5). If every tested minimum omission choice had a perfect regional matching, the two choices exchanging each consecutive pair  $x,y$  would give an even alternating path from  $x$  to  $y$  by symmetric difference. All vertices of the owner cycle would then lie on one side of one auxiliary component. A perfect choice would force that component’s side imbalance to be  $|C|-\\lceil |C|/3\\rceil\\ge2$ , impossible for a path or even cycle. The resulting local saving can be applied on disjoint regions while preserving owner permittedness and total cardinality.Parity and the arbitrary- $W$  lower bound. Every base component remains whole under activation. An individually eligible region has even total initial count, so its number  $d_C$  of odd base components is even. If  $d_C=0$ , each touched component separately has even initial count. In an independent family’s minimal activation, every added vertex belongs to an allocated region. Hence the unassigned components are unchanged and  $o_W=o_0-\\sum_C d_C$ , giving (5).For an arbitrary admissible larger  $W$ , let  $d'_C$  count the odd base components in the allocated region of  $C$ . Each  $d'_C$  is even. Every odd unassigned component contains at least one odd base component, and distinct unassigned components use distinct ones. This handles mergers of unassigned odd components and gives\n$$o_W\\le o_0-\\sum_C d'_C,\\qquad\n\\frac{m-o_W}{2}-|\\mathcal S|\n\\ge \\nu_0+\\sum_C(d'_C/2-1).$$\nOnly cycles with  $d'_C=0$  contribute a negative term. Their individual regions lie inside their allocated regions, so each is good. Their pair graphs lie inside  $A[W]$ , so they are independent. There are at most  $\\alpha(\\Gamma_0)$  of them. A maximum independent good family attains equality in its minimal activation, including the empty-family case. This proves the exact minimum of the stated numerical right side over all admissible  $(\\mathcal S,W)$  for fixed  $U_*$ . Greedy colouring gives the stated  $\\lceil q/(\\Delta+1)\\rceil$  sufficient saving and a constructive point-set certificate, subject to the implementation limit above.Earlier mixed family. The five two-vertex base components per block give  $\\nu_0=5r$ . The only within-block conflicts are  $XL,XR,GL,GR$ , and the inactive ports prevent cross-block conflicts. Thus  $\\Gamma_0=rC_4$ , its independence number is  $2r$ , and the documented greedy colouring selects  $2r$  cycles. The resulting  $3r$  budget rederives the earlier bound.Independent obstruction reconstructionI rebuilt the graphs directly from (8) at  $r=2,4,6$ , without importing the supplied modules. I checked colours, permittedness, physical degrees, every single-vertex deletion, and the full zero-cost physical point set. I enumerated all six minimum omission choices on every individual square, checked all eleven permitted local choices as well, and enumerated every candidate-family/common- $W$  pair with the required containment. $r$ Conflict edgesMinimum one-square choices testedMinimum cost on every single squareAdmissible / tested  $(\\mathcal S,W)$ Best budgetZero-cost physical setConnected deletions2112124 / 2511220 / 2046243512 / 62532440 / 4061536510,240 / 15,62553660 / 60There is a direct all-size witness for the one-square upper bound. Keep  $2i$ , remove  $2i+1$  from  $U_*$ , and add a vertex of that square’s high pair lying strictly between  $2r$  and  $4r-1$ . Such a vertex exists for every even  $r\\ge2$ . It is isolated in the new auxiliary omission graph. The other  $2r-1$  vertices support at most  $r-1$  matching edges, and the  $r-1$  unchanged low  $P$ -edges attain that value. The square still has exactly two omissions.For every allowed  $r$ , the shared even base path meets all candidates, giving  $\\Gamma_0=K_r$  and exact fixed-initial budget  $r-1$ . Omitting all even indices gives zero auxiliary cost. All helpers, the even-index witnesses, and the odd-index owners form a physical dissociation set of size  $6r=3b$ , attaining the all-helper cap. The subdivided auxiliary cycle is the physical core, and each owner square has four distinct attachments. Deleting a core vertex leaves a connected core path with at least three attachments per square. Deleting an owner leaves its three-vertex owner path attached to the intact core. This proves two-connectivity at every scale.For even  $r\\ge4$ ,  $r-1>\\lfloor2r/3\\rfloor$ , so this family refutes completeness of the fixed-initial- $U_*$  activation budget for reaching  $8b/3$ . The physical family itself exceeds the target. Changing  $U_*$ , iterating exchanges, and coordinating conflicting changes remain outside that obstruction. The universal physical inequality, unrestricted subcubic coefficient, general grid claims, and Lean verification remain outside this audit’s conclusions.\n",
+    "actually_executed_original_checker": true,
+    "exit_code": 0,
+    "runtime_seconds": 9.147184627,
+    "stdout_bytes": 1247,
+    "stderr_bytes": 0,
+    "report_bytes": 14662,
+    "report_sha256": "e6eb8aed1fb9c02a4fdeb09cbcc7b0af6960aa4c5538815ed4936c3cb766450d",
+    "report_byte_identical": true,
+    "corrections": [
+      "Initial owner complement is two isolated vertices per square.",
+      "Replace recursive augmentation by traversal-equivalent explicit DFS stack.",
+      "Materialize generic edge iterable once."
+    ]
+  },
+  "final_audit": {
+    "verdict": "ACCEPT",
+    "oracle": {
+      "task_id": "64602665-25bb-4f5d-8dc9-c8e91c3ec563",
+      "conversation_id": "conv_2596b0315e0282d6",
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af615b2-b290-83ec-898c-5911f9599168",
+      "usage_estimated": true
+    },
+    "source_files": 13,
+    "all_final_hashes_verified": true,
+    "all_streams_completed": true,
+    "actually_executed_original_checker": true,
+    "report_byte_identical": true,
+    "report_sha256": "716938bbc5c95581f4351b16b96596c33b22b13ee39c2827cf9c885a6d7d434d",
+    "previous_gaps_repaired": true,
+    "full_response": "FINAL ACCEPTACCEPT All three previously identified defects are corrected. I independently reconstructed the 13-file snapshot, verified its hashes before and after execution, and successfully ran the original, unmodified final checker with assertions enabled.1. Exact-source executionExit 0Actual command:Bashpython3 -B scripts/check_omission_conflict_graph.py --output FINAL-independent.jsonExecution environment:Python 3.13.5PYTHONOPTIMIZE unsetAssertions enabled (__debug__ == True)No checker modificationsNo shortened or substituted checkerACTUAL EXECUTION RESULTSMeasurementObservedExit code0Wall time12.27 secondsStdout1,333 bytesStderr0 bytesGenerated report14,756 bytesReport SHA-256716938bbc5c95581f4351b16b96596c33b22b13ee39c2827cf9c885a6d7d434dDirect byte comparisonIdenticalThe generated report compares byte-for-byte equal to the supplied output/omission-conflict-graph-check.json.The runtime differs from the earlier independent audit's 9.147 seconds; these are separate execution measurements, not a discrepancy in the report.2. Manifest verification13/13 passedAll 13 supplied source files were reconstructed from their exact UTF-8 contents.Before execution: all 13 byte counts and SHA-256 hashes matched.After execution: all 13 byte counts and SHA-256 hashes still matched.No source file was modified.The newly generated report was written separately as FINAL-independent.json.The supplied report itself remained unchanged.3. Adversarial verification of the three repairs(1) Initial owner adjacencyPASSFor each square\n$$C_i=(a,h,a+1,h+1),$$\nthe initial omission set contains  $a,a+1$ .Consequently, the two retained owner vertices are  $h,h+1$ , which are opposite vertices of the square, not adjacent.The corrected statement that there are two isolated owner vertices per square is mathematically correct.The minimum-cardinality argument also holds: retaining three vertices of a square necessarily induces a vertex of degree two.I separately reconstructed the physical owner squares at  $r=2,4,6,128$ :Initial  $U_*$ : two isolated retained owners per square.Later  $U^0$ : the two retained owners form exactly one edge per square.Thus the correction does not accidentally invalidate the later zero-cost construction.The all-even- $r$  obstruction remains intact:\n$$\\Gamma_0=K_r,\\qquad \\alpha(\\Gamma_0)=1,$$\nand therefore\n$$\\boxed{\\text{Best fixed-}U_*\\text{ activation budget}=r-1.}$$\nMeanwhile,\n$$\\boxed{\\min_U\\nu(A[U])=0,\\qquad \\beta_I=6r.}$$\nThe physical construction remains two-connected, bipartite, with minimum degree two and maximum degree three.For even  $r\\ge4$ ,\n$$r-1>\\left\\lfloor\\frac{N}{6}\\right\\rfloor\n=\\left\\lfloor\\frac{2r}{3}\\right\\rfloor.$$\nThis is a genuine obstruction to the completeness of the fixed-initial-omission activation method, not a counterexample to the physical  $8b/3$  target.(2) Iterative augmenting-path implementationPASSI inspected the explicit DFS-frame implementation and independently reproduced the long-path regression through the public greedy_conflict_certificate entry point.The exact  $b=1024$ ,  $n=2048$  input produces:QuantityResultInitial matching cost1023Good candidates1Certified cost upper bound1022Actual matching cost1022Reconstructed matching edges1022Reconstructed independent witnesses1024No recursion-limit modification was used.I additionally checked 2,080 randomly generated small bipartite instances against brute-force maximum-independent-set enumeration.All passed, including:Matching edge disjointness.Matching cardinality.Bipartition consistency.Independence of the reconstructed witness set.Exact maximum-independent-set cardinality.The explicit stack correctly reproduces recursive DFS traversal:Each frame retains its current left vertex and sorted neighbour iterator.The right-side seen set is shared throughout an augmentation.Successful child augmentations unwind by reassigning the incoming matched edge to the parent.Failed branches return to the parent's iterator without discarding the shared visited set.The final inverse matching and alternating-reachability reconstruction produce an actual independent-set witness.The original checker also independently exercises the 5,120-vertex physical certificate.(3) One-pass edge iterablesPASSI reproduced the exact  $n=2$  regression:PythonRunpair_conflicts(    2, [(0, 1)], set(), [{0}, {1}])pair_conflicts(    2, iter([(0, 1)]), set(), [{0}, {1}])Both now return:PythonRun{    'regions': [[0], [1]],    'edges': [[0, 1]]}The implementation materializes the iterable once before validation, preserving the edge set for subsequent region construction.The original checker additionally confirms equality between list and iterator inputs in all 1,005 applicable arbitrary-model controls.4. Original checker coverageThe actual execution reproduced the supplied counts:ControlActual countArbitrary graph models53,229Common-activation subsets219,167Actual physical certificates1,285Exact all- $(\\mathcal S,W)$  budget optima23Physical vertex-deletion connectivity checks5,120Long augmenting-path controls1One-pass iterable controls1,005Positive parity-penalty controls173Mixed-family automatic-selection controls19Clique-obstruction family controls19The 23 exact budget controls enumerate the specified candidate-family/common- $W$  possibilities on their declared small physical instances. They are not being presented as unrestricted large-instance optimization.5. Final mathematical scopeI accept the following contributions.Generic pair-conflict theorem. Pairwise conflicts exactly characterize whether selected candidates have disjoint common-activation supports.Parity theorem. For an independent family of individually eligible candidates,\n$$\\nu(A[U])\n\\le\n\\nu_0-\\sum_{C\\in\\mathcal S}\n\\left(1-\\frac{d_C}{2}\\right).$$\nExact fixed-initial-set optimization.\n$$\\boxed{\n\\min_{\\mathcal S,W}\n\\left\\{\n\\frac{m-o_W}{2}-|\\mathcal S|\n\\right\\}\n=\n\\nu_0-\\alpha(\\Gamma_0).\n}$$\nThis optimizes the specified activation-support budget, not the unrestricted physical omission problem.Constructive polynomial guarantee. Greedy colouring supplies a sufficient saving of\n$$\\left\\lceil\\frac{q}{\\Delta+1}\\right\\rceil.$$\nAll-even- $r$  obstruction. The two-connected physical family demonstrates an unbounded gap between the best fixed- $U_*$  activation budget and the actual optimum.The remaining boundaries are important:No polynomial maximum-independent-set solver is claimed.No universal  $8b/3$  theorem is established.No sharp unrestricted subcubic coefficient is established.No general grid or Lean result is claimed.Coordinated exchanges, changing  $U_*$ , and repeated reconstruction remain open directions.The written all-parameter proofs, rather than finite enumeration, establish the universal-in- $r$  conclusions.Final disposition: ACCEPT.All three previous defects are repaired, the corrected mathematical statements survive adversarial examination, the original complete checker passes, and the resulting report is byte-identical to the supplied final report.No TeX/PDF compilation was performed or required.\n",
+    "command": "python3 -B scripts/check_omission_conflict_graph.py --output FINAL-independent.json",
+    "exit_code": 0,
+    "runtime_seconds_reported": 12.27,
+    "stdout_bytes": 1333,
+    "stderr_bytes": 0,
+    "stderr": "",
+    "report_bytes": 14756,
+    "independent_extra_small_bipartite_MIS_controls_reported": 2080,
+    "independent_owner_adjacency_scales_reported": [
+      2,
+      4,
+      6,
+      128
+    ],
+    "long_path_public_api_reproduced": true
+  },
+  "initial_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 87114,
+      "sha256": "c4e306a99f4b7e77a8c6c2f02828eedef8c253d651f22fae93ed9c4b904390df"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 96685,
+      "sha256": "da85eabc4ac6894373affcccfd8de717b1d53b27f41960c5a899b9e1e58a1f9b"
+    },
+    {
+      "path": "docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md",
+      "bytes": 13884,
+      "sha256": "bac78295142ac4f796576c23bc84c92bf9d74ee77eeb68507c2a5ce8b49c9bae"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4751,
+      "sha256": "1fa9f75bae930872e6081b5029bb2a657edc51c73fb3dfa08b29c1564a756479"
+    },
+    {
+      "path": "scripts/check_omission_conflict_graph.py",
+      "bytes": 11424,
+      "sha256": "3e5aac636b580cd229620f670fea377eadb343876a42f0a1cac7d91c3e9f49a1"
+    },
+    {
+      "path": "output/omission-conflict-graph-check.json",
+      "bytes": 14662,
+      "sha256": "e6eb8aed1fb9c02a4fdeb09cbcc7b0af6960aa4c5538815ed4936c3cb766450d"
+    },
+    {
+      "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 10240,
+      "sha256": "6449feee6e37952dce02915ea69bdb067a338c8fdd20c2227ad771cd96846d35"
+    },
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 5837,
+      "sha256": "e5230e6c3b133851adc12846228147f2ba42d5908c0bba12407617df46c82190"
+    }
+  ],
+  "final_manifest": [
+    {
+      "path": "README.md",
+      "bytes": 87114,
+      "sha256": "c4e306a99f4b7e77a8c6c2f02828eedef8c253d651f22fae93ed9c4b904390df"
+    },
+    {
+      "path": "docs/COMPLETION_20261112.md",
+      "bytes": 96685,
+      "sha256": "da85eabc4ac6894373affcccfd8de717b1d53b27f41960c5a899b9e1e58a1f9b"
+    },
+    {
+      "path": "docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md",
+      "bytes": 13967,
+      "sha256": "3bd3d3c0102ef3a78f4b0858784862dcf2d4bdf067395a2f4e29762b0ef7c3f0"
+    },
+    {
+      "path": "develop/omission_conflict_graph.py",
+      "bytes": 4773,
+      "sha256": "91bf5a8928576a773e13f20fb2ca902cebda09a1e7d970d4efd58770c96af36e"
+    },
+    {
+      "path": "scripts/check_omission_conflict_graph.py",
+      "bytes": 12152,
+      "sha256": "43f766d7d52d9fbc94cb3302da00cfd7dc8cad3a0a9c5d6cfd18dbad3a757f34"
+    },
+    {
+      "path": "output/omission-conflict-graph-check.json",
+      "bytes": 14756,
+      "sha256": "716938bbc5c95581f4351b16b96596c33b22b13ee39c2827cf9c885a6d7d434d"
+    },
+    {
+      "path": "docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 10240,
+      "sha256": "6449feee6e37952dce02915ea69bdb067a338c8fdd20c2227ad771cd96846d35"
+    },
+    {
+      "path": "develop/activated_omission_budget.py",
+      "bytes": 4731,
+      "sha256": "c7dc96b87bde990b91e228725c837aae5c7c6ed1243c988e432219d6fa851780"
+    },
+    {
+      "path": "docs/DISJOINT_AUXILIARY_SUPPORT_BUDGET.md",
+      "bytes": 11462,
+      "sha256": "374f7c4efb57771a431020c4cacc7e14f3a8f5d25c109f7b6c29655b3bb5dd93"
+    },
+    {
+      "path": "docs/MIXED_OWNER_BRIDGES.md",
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    {
+      "path": "develop/mixed_owner_bridges.py",
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    {
+      "path": "develop/owner_matching_certificate.py",
+      "bytes": 9760,
+      "sha256": "fba622d5a489ae9cfb65f60ae9372451468ffb31ce5b0bcb87b564d328691e3c"
+    },
+    {
+      "path": "develop/all_helper_optimization.py",
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    }
+  ],
+  "changed_source_paths": [
+    "docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md",
+    "develop/omission_conflict_graph.py",
+    "scripts/check_omission_conflict_graph.py",
+    "output/omission-conflict-graph-check.json",
+    "develop/all_helper_optimization.py"
+  ],
+  "shared_score_local_regressions": {
+    "reason": "Recursive augmenting DFS replaced with traversal-equivalent explicit stack; unchanged earlier full checkers rerun because shared score dependency changed.",
+    "checks": [
+      {
+        "report": "component-regression.json",
+        "byte_identical_to_previous_source_report": true,
+        "sha256": "47d98fb998d2b9592de515b3e7ef26f8d3e67001e78cf820396918a2852765e1"
+      },
+      {
+        "report": "activation-regression.json",
+        "byte_identical_to_previous_source_report": true,
+        "sha256": "52478d62c70914fc988801089948d945088a61c272de1173593e84529c47f497"
+      }
+    ]
+  },
+  "next_odd_component_research": "Separately saved locally; not included in this audited contribution.",
+  "no_Lean": true
+}

@@ -1,5 +1,17 @@
 # Current continuation
 
+Pair conflicts: [the exact optimum of the activation-support budget](docs/PAIR_CONFLICTS_AND_ACTIVATION_BUDGET_OPTIMUM.md).
+For fixed initial U*, pair conflicts exactly characterize simultaneous
+minimal activation supports. The best numerical budget over every allowed
+common W and candidate subfamily is nu(A[U*])-alpha(Gamma0), where Gamma0
+retains candidates touching only even base components of A[U*]. A polynomial
+greedy-colouring certificate saves at leastceil(q/(Delta+1)); no polynomial
+maximum-independent-set solver is asserted. A two-connected10r physical
+min2/max3 family (evenr>=2) has Gamma0=K_r: its best budget isr-1 although
+an explicit independent omission set gives true cost0 and beta_I6r. This
+pinpoints why independent supports cannot finish the general8b/3 argument.
+
+
 Inactive separators: [one common activation graph for simultaneous exchanges](docs/ACTIVATED_AUXILIARY_SUPPORT_BUDGET.md).
 The support budget applies to components of A[W], where W contains the
 initial omissions and all chosen owner cycles. Fixed vertices outside W
