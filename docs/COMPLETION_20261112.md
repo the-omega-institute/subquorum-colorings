@@ -10,8 +10,11 @@ delta>=2 and maximum degree at most Delta,
 minimum-degree certificate for every feasible parameter pair. The proof
 uses one fixed unused-vertex partition in both the enlarged colour exchange
 and the degree-capacity count. Positive unrounded equality is impossible
-when delta>=3. The proof-only independent review returned ACCEPT; the
-integrated exact-source/execution audit is pending.
+when delta>=3. The proof-only review and the integrated exact-source/execution audit both
+returned ACCEPT. The final auditor reconstructed all10 exact files, ran
+both unchanged original checkers with assertions to exit0, and reproduced
+both complete reports byte-for-byte. The full record is in
+`output/degree-refinement-and-lower-family-review.json`.
 
 The [two-connected bounded-degree family](TWO_CONNECTED_BOUNDED_DEGREE_SELECTED_GAPS.md)
 has n=(12p+2)k, selected size8pk, true beta_2=7pk, minimum degree2 and

@@ -194,6 +194,12 @@ controls are explicitly separated in the report.
 The new general proof received independent proof-only ACCEPT, including the
 delta=2 boundary and the strict unrounded obstruction at delta>=3. That
 review made no code-execution claim. The final exact-source/execution
-review, also covering the new bounded-degree lower family, is pending.
+review, also covering the new bounded-degree lower family, returned ACCEPT.
+The reviewer reconstructed all10 files with matching byte counts and hashes,
+ran both original checker entry points unchanged with assertions enabled,
+and reproduced both complete reports byte-for-byte(24,963 and11,730 bytes).
+See `../output/degree-refinement-and-lower-family-review.json` for the frozen
+manifest, full response and actual execution scope. Imported helper modules
+were exercised; their separate main suites were not rerun.
 Finite controls support the implementation; the general proof is(4)-(11).
 No new Lean, graph-sharpness or historical-priority claim is made.
