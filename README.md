@@ -1,5 +1,25 @@
 # Current continuation
 
+There are now two further degree results in the specified selected-star
+class. For every k>=1, the explicit
+[two-connected subcubic family](docs/TWO_CONNECTED_SUBCUBIC_SELECTED_STAR_GAPS.md)
+has n=90k, selected size56k, unrestricted beta_2=55k, minimum degree2
+and maximum degree3. Its selection induces only P_3's and isolates.
+This proves a positive linear gap at the smallest possible maximum
+degree for such a family, while leaving the optimal coefficient open.
+The [cubic equality obstruction](docs/CUBIC_SELECTED_STAR_EQUALITY_OBSTRUCTION.md)
+excludes n=22d for every positive selected gap d, refining the previous
+cubic certificate to `d<=floor((n-2)/22)`. Its proof classifies the private
+witness graph and uses an Euler orientation to perform compatible
+local exchanges; it does not improve the asymptotic coefficient.
+The [exact proof and execution review](output/subcubic-selected-star-review.json)
+returned ACCEPT: all eight source files were verified and both original
+checkers reproduced their complete reports exactly. The receipt preserves
+the external startup warning, initial empty-output-directory setup and a
+reviewer S-versus-D prose erratum; the submitted proofs require no change. The full rectangular conjecture with
+both dimensions at least6 and compatible unit-weight multi-Hall routing
+remain open.
+
 For **every integer delta>=3 and k>=1**, there is a finite simple bipartite
 graph G with a specified inclusion-minimal two-star-forming selection S
 inducing P_3's and isolates, such that

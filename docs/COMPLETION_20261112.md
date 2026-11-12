@@ -1,5 +1,22 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
+## Subcubic positive gaps and exclusion of every cubic equality point
+
+The [90-vertex subcubic construction](TWO_CONNECTED_SUBCUBIC_SELECTED_STAR_GAPS.md)
+proves that, for every k>=1, n=90k, a specified minimal selected-star set
+has size56k and true beta_2=55k, with minimum degree2, maximum degree3
+and two-connectivity. The selection consists only of P_3's and isolates.
+The general proof uses a ten-P_6 normalization obstruction, disjoint
+attachment caps, a spanning ear certificate and cyclic safe-port gluing.
+The two local checkers also establish the
+[all-scale cubic equality obstruction](CUBIC_SELECTED_STAR_EQUALITY_OBSTRUCTION.md):
+`d<=floor((n-2)/22)` in the specified selected-star class. Equality in
+the previous n/22 certificate would force the private witness graph
+to be a union of C_4's and the helped witnesses to form a matching;
+balanced orientation of its quotient constructs a larger dissociation
+set and excludes equality. These results do not give exact SF values,
+an optimal subcubic coefficient, or a rectangular-grid theorem.
+
 For **every integer delta>=3 and k>=1**, there is a finite simple bipartite
 graph G with a specified inclusion-minimal two-star-forming selection S
 inducing P_3's and isolates, such that
