@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "Exact representative-pair transfer for P4 square Pn and the bottom-even-empty boundary condition; literal controls through width 3.",
+  "unrestricted_even": {
+    "kind": "free",
+    "first_length": 4,
+    "second_length": 6,
+    "translation_increment": 4,
+    "first_optimum": 8,
+    "second_optimum": 12,
+    "first_states": 1756,
+    "second_states": 1756,
+    "first_state_counts": [
+      85,
+      1515,
+      1756,
+      1756
+    ],
+    "second_state_counts": [
+      85,
+      1515,
+      1756,
+      1756,
+      1756,
+      1756
+    ],
+    "support_translates": true
+  },
+  "unrestricted_odd": {
+    "kind": "free",
+    "first_length": 5,
+    "second_length": 7,
+    "translation_increment": 4,
+    "first_optimum": 11,
+    "second_optimum": 15,
+    "first_states": 1756,
+    "second_states": 1756,
+    "first_state_counts": [
+      85,
+      1515,
+      1756,
+      1756,
+      1756
+    ],
+    "second_state_counts": [
+      85,
+      1515,
+      1756,
+      1756,
+      1756,
+      1756,
+      1756
+    ],
+    "support_translates": true
+  },
+  "boundary_even": {
+    "kind": "bottom-even-empty",
+    "first_length": 4,
+    "second_length": 6,
+    "translation_increment": 4,
+    "first_optimum": 8,
+    "second_optimum": 12,
+    "first_states": 834,
+    "second_states": 834,
+    "first_state_counts": [
+      29,
+      746,
+      556,
+      834
+    ],
+    "second_state_counts": [
+      29,
+      746,
+      556,
+      834,
+      556,
+      834
+    ],
+    "support_translates": true
+  },
+  "boundary_odd": {
+    "kind": "bottom-even-empty",
+    "first_length": 5,
+    "second_length": 7,
+    "translation_increment": 4,
+    "first_optimum": 10,
+    "second_optimum": 14,
+    "first_states": 556,
+    "second_states": 556,
+    "first_state_counts": [
+      29,
+      746,
+      556,
+      834,
+      556
+    ],
+    "second_state_counts": [
+      29,
+      746,
+      556,
+      834,
+      556,
+      834,
+      556
+    ],
+    "support_translates": true
+  },
+  "literal_controls": [
+    {
+      "width": 1,
+      "literal_free": 3,
+      "literal_boundary": 2,
+      "transfer_free": 3,
+      "transfer_boundary": 2
+    },
+    {
+      "width": 2,
+      "literal_free": 4,
+      "literal_boundary": 4,
+      "transfer_free": 4,
+      "transfer_boundary": 4
+    },
+    {
+      "width": 3,
+      "literal_free": 7,
+      "literal_boundary": 6,
+      "transfer_free": 7,
+      "transfer_boundary": 6
+    }
+  ],
+  "translation_period": 2,
+  "unrestricted_formula": "2*n + (n mod 2)",
+  "boundary_formula": "2*n",
+  "new_Lean": false
+}
