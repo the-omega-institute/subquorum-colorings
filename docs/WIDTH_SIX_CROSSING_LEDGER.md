@@ -15,6 +15,10 @@ Partition the rows into the three two-row bands
 Assume that `M` has no edge across either horizontal seam, between rows
 2 and 3 or between rows 4 and 5. Put
 
+Write `P=V(M)` and `B=V(G) minus (T union P)`. In the two-row notation,
+`TT` means that both vertices are in `T`, while `BB` means that both
+vertices are in `B`, so neither is selected nor is a matching endpoint.
+
 \[
  J_i=|T\cap B_i|+|M\cap E(G[B_i])|.
 \]
@@ -68,6 +72,24 @@ If at most one band is exceptional, the bound is immediately
 \]
 where the displayed values follow by substituting `m=6` in the known
 formula for `F(m,n)`.
+
+The bound is attained for every `n` by taking `M` empty and
+
+\[
+ T_0=\{(r,c):c\text{ odd and }r\in\{1,2,5,6\}\}
+     \cup\{(r,c):c\text{ even and }r\in\{3,4\}\}.
+\]
+
+Every selected vertex in `T_0` has its vertical partner as its only
+occupied neighbor. Hence `(T_0,\varnothing)` is feasible, and
+
+\[
+ |T_0|=4\left\lceil\frac n2\right\rceil
+      +2\left\lfloor\frac n2\right\rfloor
+ =\begin{cases}
+ 3n,&n\text{ even},\\
+ 3n+1,&n\text{ odd}.
+ \end{cases}
 \]
 
 The row-periodic dissociation constructions attain these values, so the
