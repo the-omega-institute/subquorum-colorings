@@ -1,0 +1,646 @@
+{
+  "recorded_at": "2026-11-13T02:54:55.779474+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "9f502845-da48-4deb-a449-8f56a5142913",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af6795b-aac8-83ec-b4b0-f3920137acb5",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/all_helper_optimization.py": {
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    "develop/auxiliary_square_forest.py": {
+      "bytes": 9700,
+      "sha256": "021b832e226ee1837fea82af08ddc9b73ef7c84d6e06ff3dd8ddd2f2967e3ec4"
+    },
+    "develop/balanced_boundary_matching_cut.py": {
+      "bytes": 3182,
+      "sha256": "105b749566870c555356d2247d098bbae5c7bf352b3ac192efe45d3e1800b1a1"
+    },
+    "develop/c16_regional_compensation.py": {
+      "bytes": 7806,
+      "sha256": "a094df63e4873ce7ec4d3a4546207d790f2d59592eb82777be4f7a1e437fc14e"
+    },
+    "develop/cyclic_rank_extensions.py": {
+      "bytes": 7106,
+      "sha256": "13c0ec8a6011b3a509db143c17d4cbca5e5e248208f6871cc97d71d001198ccc"
+    },
+    "develop/fixed_boundary_matching_cut.py": {
+      "bytes": 3524,
+      "sha256": "e51f576627412f6d552cfc489f085eab001f705e616973c4dfe94fff8eabab72"
+    },
+    "develop/fixtures/c16-rado-threshold-regression.json": {
+      "bytes": 2303,
+      "sha256": "af5ee83772d8da5c2e9c70127bed83d810906cb2118a3b55626dff87ecfa8f90"
+    },
+    "develop/fixtures/c16-reservation-examples.json": {
+      "bytes": 52331,
+      "sha256": "b541566347f10e9b7e414f7518136b4136238101bd4867a9dc6dd400d5a7ae81"
+    },
+    "develop/mixed_owner_bridges.py": {
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 10043,
+      "sha256": "c0eec60a1ed3401c0997a08f093a2ff1c65a460df2a6014a9c8a8f42bbbfb251"
+    },
+    "develop/reserved_owner_squares.py": {
+      "bytes": 9730,
+      "sha256": "3542d0525c4e3054ced05323b34acfc50c9a4831acb7db7a2a3939ebc5dc8757"
+    },
+    "develop/square_core_matching_cut.py": {
+      "bytes": 6239,
+      "sha256": "b45866309a211216235145158246a1f3b49c8d8ed0dbd36b700b0b0edaf9c359"
+    },
+    "develop/subcubic_square_core.py": {
+      "bytes": 4968,
+      "sha256": "5e9c446db0ac980053e58aad38d64930f9938ed86eac62b24c5f110e1f67a273"
+    },
+    "develop/unique_c16_compensation.py": {
+      "bytes": 9680,
+      "sha256": "9b4607cfadfc3d062ae19fd094d8fb3eb4b8f5049c50f42f0c85107dcdf42c94"
+    },
+    "docs/ALL_OWNER_AUXILIARY_SQUARES.md": {
+      "bytes": 5833,
+      "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+    },
+    "docs/BALANCED_BOUNDARY_MATCHING_CUT.md": {
+      "bytes": 5490,
+      "sha256": "34024713cf0dc79982b5db76f968168971da62ef438f6e2715e46000597b4c91"
+    },
+    "docs/CYCLIC_AUXILIARY_REDUCTION.md": {
+      "bytes": 9918,
+      "sha256": "f447051a6a026b0b30f103fe59c8b0ead3301b48e65b2034024f1f6ec7069eeb"
+    },
+    "docs/FIXED_FOUR_BOUNDARY_MATCHING_CUT.md": {
+      "bytes": 6757,
+      "sha256": "4d355f609459f823996c21a9857fb03c0045b257f8d02d6225096ca3e66209b3"
+    },
+    "docs/MIXED_OWNER_BRIDGES.md": {
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md": {
+      "bytes": 7858,
+      "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+    },
+    "docs/SQUARE_CORE_MATCHING_CUT_THEOREM.md": {
+      "bytes": 12816,
+      "sha256": "ed4570ff2c93bfd5fab8527c66c9298542e749b9bc62eacb68748d0b51e07cf5"
+    },
+    "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md": {
+      "bytes": 7359,
+      "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+    },
+    "docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md": {
+      "bytes": 17147,
+      "sha256": "16fb3113d3aa792ff0d4b57108eafa0796d168dd0c97e41a21e383a15afe2e84"
+    },
+    "docs/UNIQUE_C16_GLOBAL_COMPENSATION.md": {
+      "bytes": 20825,
+      "sha256": "369f10f17b58eec0cfc00b25440b1df2438e32fb5a130f0f6dbc44f7408b2b65"
+    },
+    "manuscript/auxiliary-square-forest-proof.tex": {
+      "bytes": 8465,
+      "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+    },
+    "manuscript/auxiliary-square-proof.tex": {
+      "bytes": 6405,
+      "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+    },
+    "manuscript/owner-matching-proof.tex": {
+      "bytes": 8523,
+      "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+    },
+    "manuscript/sharp-all-helper-proof.tex": {
+      "bytes": 7740,
+      "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+    },
+    "output/balanced-boundary-matching-cut-check.json": {
+      "bytes": 1224,
+      "sha256": "fe6aceb870b458232b8101bb850b71fbedd6246a4343ae199aaa1f85bed50743"
+    },
+    "output/unique-c16-compensation-check.json": {
+      "bytes": 5708,
+      "sha256": "46fb0a84fd8507898cc225f038213bf5d90092f2f170d0ab6228687c39b79de4"
+    },
+    "scripts/check_balanced_boundary_matching_cut.py": {
+      "bytes": 7419,
+      "sha256": "b32f94c6821d5e466b8ef56b46eafe35bcacc90048cf71fb89f3c00719fc84b4"
+    },
+    "scripts/check_unique_c16_compensation.py": {
+      "bytes": 13893,
+      "sha256": "5b82b17bc3d5378edf845000939a1a051c8c6759bcf8a737a13fb1f5a21f4cd9"
+    }
+  },
+  "final_frozen_payloads_unchanged_locally": true,
+  "local_inherited_supplier_identity": {
+    "base_revision": "fd3e7d82e3848e82de09104fe7a58319141f8f99",
+    "verified_unchanged_suppliers": {
+      "develop/all_helper_optimization.py": {
+        "bytes": 6358,
+        "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+      },
+      "develop/auxiliary_square_forest.py": {
+        "bytes": 9700,
+        "sha256": "021b832e226ee1837fea82af08ddc9b73ef7c84d6e06ff3dd8ddd2f2967e3ec4"
+      },
+      "develop/cyclic_rank_extensions.py": {
+        "bytes": 7106,
+        "sha256": "13c0ec8a6011b3a509db143c17d4cbca5e5e248208f6871cc97d71d001198ccc"
+      },
+      "develop/fixed_boundary_matching_cut.py": {
+        "bytes": 3524,
+        "sha256": "e51f576627412f6d552cfc489f085eab001f705e616973c4dfe94fff8eabab72"
+      },
+      "develop/mixed_owner_bridges.py": {
+        "bytes": 9881,
+        "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+      },
+      "develop/owner_matching_certificate.py": {
+        "bytes": 10043,
+        "sha256": "c0eec60a1ed3401c0997a08f093a2ff1c65a460df2a6014a9c8a8f42bbbfb251"
+      },
+      "develop/reserved_owner_squares.py": {
+        "bytes": 9730,
+        "sha256": "3542d0525c4e3054ced05323b34acfc50c9a4831acb7db7a2a3939ebc5dc8757"
+      },
+      "develop/square_core_matching_cut.py": {
+        "bytes": 6239,
+        "sha256": "b45866309a211216235145158246a1f3b49c8d8ed0dbd36b700b0b0edaf9c359"
+      },
+      "develop/subcubic_square_core.py": {
+        "bytes": 4968,
+        "sha256": "5e9c446db0ac980053e58aad38d64930f9938ed86eac62b24c5f110e1f67a273"
+      },
+      "docs/ALL_OWNER_AUXILIARY_SQUARES.md": {
+        "bytes": 5833,
+        "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+      },
+      "docs/CYCLIC_AUXILIARY_REDUCTION.md": {
+        "bytes": 9918,
+        "sha256": "f447051a6a026b0b30f103fe59c8b0ead3301b48e65b2034024f1f6ec7069eeb"
+      },
+      "docs/FIXED_FOUR_BOUNDARY_MATCHING_CUT.md": {
+        "bytes": 6757,
+        "sha256": "4d355f609459f823996c21a9857fb03c0045b257f8d02d6225096ca3e66209b3"
+      },
+      "docs/MIXED_OWNER_BRIDGES.md": {
+        "bytes": 19766,
+        "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+      },
+      "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md": {
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      "docs/SQUARE_CORE_MATCHING_CUT_THEOREM.md": {
+        "bytes": 12816,
+        "sha256": "ed4570ff2c93bfd5fab8527c66c9298542e749b9bc62eacb68748d0b51e07cf5"
+      },
+      "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md": {
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      "docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md": {
+        "bytes": 17147,
+        "sha256": "16fb3113d3aa792ff0d4b57108eafa0796d168dd0c97e41a21e383a15afe2e84"
+      },
+      "manuscript/auxiliary-square-forest-proof.tex": {
+        "bytes": 8465,
+        "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+      },
+      "manuscript/auxiliary-square-proof.tex": {
+        "bytes": 6405,
+        "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+      },
+      "manuscript/owner-matching-proof.tex": {
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      "manuscript/sharp-all-helper-proof.tex": {
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      }
+    },
+    "new_payloads": [
+      "develop/balanced_boundary_matching_cut.py",
+      "develop/c16_regional_compensation.py",
+      "develop/fixtures/c16-rado-threshold-regression.json",
+      "develop/fixtures/c16-reservation-examples.json",
+      "develop/unique_c16_compensation.py",
+      "docs/BALANCED_BOUNDARY_MATCHING_CUT.md",
+      "docs/UNIQUE_C16_GLOBAL_COMPENSATION.md",
+      "output/balanced-boundary-matching-cut-check.json",
+      "output/unique-c16-compensation-check.json",
+      "scripts/check_balanced_boundary_matching_cut.py",
+      "scripts/check_unique_c16_compensation.py"
+    ],
+    "method": "Local git object bytes at the verified base revision, compared to every inherited final audit payload. Separate from reviewer execution evidence."
+  },
+  "reviewer_reported_final_execution": {
+    "both_original_checkers_executed_unchanged": true,
+    "both_full_reports_byte_identical": true,
+    "all32payloads_hash_checked_before_after": true,
+    "environment": {
+      "python": "CPython3.12.14",
+      "build": "main,Aug25 2026,14:00:49,Clang22.1.3",
+      "platform": "Linux6.18.57 x86_64 glibc2.41",
+      "assertions_enabled": true,
+      "optimize": 0,
+      "PYTHONOPTIMIZE": "unset",
+      "bytecode_writing": false
+    },
+    "executions": [
+      {
+        "command": "python3 -B scripts/check_balanced_boundary_matching_cut.py --output /tmp/final-balanced-boundary.json",
+        "wall_seconds": 6.318220594,
+        "exit": 0,
+        "stdout_bytes": 1144,
+        "stderr_bytes": 0,
+        "report_bytes": 1224,
+        "report_sha256": "fe6aceb870b458232b8101bb850b71fbedd6246a4343ae199aaa1f85bed50743",
+        "full_report_byte_identical": true
+      },
+      {
+        "command": "python3 -B scripts/check_unique_c16_compensation.py --output /tmp/final-unique-c16.json",
+        "wall_seconds": 19.023390087,
+        "exit": 0,
+        "stdout_bytes": 5102,
+        "stderr_bytes": 0,
+        "report_bytes": 5708,
+        "report_sha256": "46fb0a84fd8507898cc225f038213bf5d90092f2f170d0ab6228687c39b79de4",
+        "full_report_byte_identical": true
+      }
+    ],
+    "captured_warnings": "None",
+    "sources_edited": false,
+    "case_trimming": false,
+    "uploaded_zip_sha256": "7aa4ea53870709a8da400de37d9a6b7fb9132884b4fa01397c68fe3f33b5b739",
+    "extracted_manifest_sha256": "00fc69988cea36dace3e63c5f8272f294fb476a23c4115bbc0b9366ab4c8b292",
+    "limits": [
+      "Exhaustive subset ranks checked only when remaining exceptional labels<=10.",
+      "Smalloptima enumerate omissions but share production matching engine.",
+      "Separate earlier reviewer cyclic-run exactoptima not rerun by final reviewer.",
+      "No supplemental localabsorptionhelper controls executed by final reviewer.",
+      "Evidencezip mentioned in response was not returned as a downloadable streamingartifact; complete response retained."
+    ]
+  },
+  "reports": {
+    "output/balanced-boundary-matching-cut-check.json": {
+      "counts": {
+        "complete_boundary_placements_h0": 44,
+        "complete_boundary_placements_h1": 48,
+        "complete_boundary_placements_h2": 75,
+        "complete_boundary_placements_h3": 1,
+        "fixed_boundary_controls": 24826,
+        "independent_base_physical_scores": 1164,
+        "literal_matching_comparisons": 39342,
+        "relabel_colour_flip_controls": 16,
+        "sampled_side_cardinality_pairs": 702
+      },
+      "deterministic_sha256": "2b144493f4dfb04adcb3155b31220c06117efe5793822282da3d56361a8f82f2",
+      "features": {
+        "both_side_counts_odd": 6167,
+        "eight_boundary_vertices": 19216,
+        "exactly_one_side_count_odd": 12387,
+        "forced_vertex": 18554,
+        "negative_raw_bound": 1585,
+        "nontrivial_positive_even_part": 15094
+      },
+      "scope": "All-size written matching-cut theorem for k actual C4 owners and4h balanced boundary vertices, every prescribed F0. Complete boundary subsets per stated seeded placement throughh3, not complete physical placements or nonisomorphicclassification; larger side-cardinality pairs one seeded support each. Independent literal matching and base actual10(k+h)vertexphysicalscoring. No fullC16/mixedcyclic/physicalgrid theorem or overlappingregionaladdition claim.",
+      "status": "PASS"
+    },
+    "output/unique-c16-compensation-check.json": {
+      "counts": {
+        "complete_C10_endpoint_contact_models": 225,
+        "complete_serious_rank_integer_types": 18,
+        "exact_small_all_helper_optima": 10,
+        "fixed_four_boundary_mixed_C8_controls": 944,
+        "fixed_two_boundary_C10_controls": 1796,
+        "frozen_branch_models": 17,
+        "independent_Rado_dual_support_controls": 13,
+        "independent_Rado_minmax_controls": 231,
+        "independent_regional_deficiencies": 44,
+        "independent_subset_rank_controls": 1757,
+        "literal_full_matching_comparisons": 90,
+        "literal_original_physical_scores": 280,
+        "physical_models": 280,
+        "relabel_reassembly_controls": 32,
+        "reviewer_total_rank_threshold_regressions": 1,
+        "subfamilies_requiring_omitted_label_surplus": 1
+      },
+      "deterministic_sha256": "11c381a8114323f053febeb196bf685cb176153168c0c32c041d9e35dd38a675",
+      "features": {
+        "C10_F_mate_position_0": 244,
+        "C10_F_mate_position_1": 228,
+        "C10_F_mate_position_10": 64,
+        "C10_F_mate_position_11": 92,
+        "C10_F_mate_position_110": 4,
+        "C10_F_mate_position_112": 4,
+        "C10_F_mate_position_113": 4,
+        "C10_F_mate_position_114": 4,
+        "C10_F_mate_position_12": 60,
+        "C10_F_mate_position_125": 4,
+        "C10_F_mate_position_13": 68,
+        "C10_F_mate_position_133": 4,
+        "C10_F_mate_position_139": 4,
+        "C10_F_mate_position_14": 32,
+        "C10_F_mate_position_140": 4,
+        "C10_F_mate_position_143": 4,
+        "C10_F_mate_position_146": 4,
+        "C10_F_mate_position_148": 4,
+        "C10_F_mate_position_15": 68,
+        "C10_F_mate_position_150": 4,
+        "C10_F_mate_position_151": 4,
+        "C10_F_mate_position_16": 56,
+        "C10_F_mate_position_17": 32,
+        "C10_F_mate_position_175": 4,
+        "C10_F_mate_position_176": 4,
+        "C10_F_mate_position_177": 4,
+        "C10_F_mate_position_18": 32,
+        "C10_F_mate_position_180": 4,
+        "C10_F_mate_position_184": 4,
+        "C10_F_mate_position_19": 48,
+        "C10_F_mate_position_199": 8,
+        "C10_F_mate_position_2": 240,
+        "C10_F_mate_position_20": 32,
+        "C10_F_mate_position_204": 4,
+        "C10_F_mate_position_209": 4,
+        "C10_F_mate_position_21": 36,
+        "C10_F_mate_position_215": 4,
+        "C10_F_mate_position_219": 4,
+        "C10_F_mate_position_22": 36,
+        "C10_F_mate_position_221": 4,
+        "C10_F_mate_position_227": 4,
+        "C10_F_mate_position_228": 4,
+        "C10_F_mate_position_23": 48,
+        "C10_F_mate_position_231": 12,
+        "C10_F_mate_position_232": 4,
+        "C10_F_mate_position_234": 4,
+        "C10_F_mate_position_238": 4,
+        "C10_F_mate_position_239": 8,
+        "C10_F_mate_position_24": 12,
+        "C10_F_mate_position_246": 4,
+        "C10_F_mate_position_25": 12,
+        "C10_F_mate_position_252": 4,
+        "C10_F_mate_position_253": 4,
+        "C10_F_mate_position_257": 4,
+        "C10_F_mate_position_26": 12,
+        "C10_F_mate_position_27": 12,
+        "C10_F_mate_position_28": 4,
+        "C10_F_mate_position_29": 8,
+        "C10_F_mate_position_3": 216,
+        "C10_F_mate_position_30": 12,
+        "C10_F_mate_position_31": 8,
+        "C10_F_mate_position_32": 8,
+        "C10_F_mate_position_33": 4,
+        "C10_F_mate_position_34": 4,
+        "C10_F_mate_position_35": 8,
+        "C10_F_mate_position_36": 20,
+        "C10_F_mate_position_37": 8,
+        "C10_F_mate_position_38": 12,
+        "C10_F_mate_position_39": 16,
+        "C10_F_mate_position_4": 248,
+        "C10_F_mate_position_40": 8,
+        "C10_F_mate_position_41": 4,
+        "C10_F_mate_position_42": 4,
+        "C10_F_mate_position_45": 4,
+        "C10_F_mate_position_46": 4,
+        "C10_F_mate_position_47": 4,
+        "C10_F_mate_position_48": 12,
+        "C10_F_mate_position_49": 8,
+        "C10_F_mate_position_5": 244,
+        "C10_F_mate_position_50": 4,
+        "C10_F_mate_position_51": 8,
+        "C10_F_mate_position_53": 4,
+        "C10_F_mate_position_54": 12,
+        "C10_F_mate_position_55": 4,
+        "C10_F_mate_position_56": 12,
+        "C10_F_mate_position_59": 8,
+        "C10_F_mate_position_6": 240,
+        "C10_F_mate_position_61": 16,
+        "C10_F_mate_position_63": 4,
+        "C10_F_mate_position_64": 8,
+        "C10_F_mate_position_67": 8,
+        "C10_F_mate_position_68": 8,
+        "C10_F_mate_position_69": 4,
+        "C10_F_mate_position_7": 240,
+        "C10_F_mate_position_70": 4,
+        "C10_F_mate_position_71": 4,
+        "C10_F_mate_position_72": 4,
+        "C10_F_mate_position_73": 4,
+        "C10_F_mate_position_75": 8,
+        "C10_F_mate_position_79": 4,
+        "C10_F_mate_position_8": 224,
+        "C10_F_mate_position_80": 4,
+        "C10_F_mate_position_81": 4,
+        "C10_F_mate_position_82": 4,
+        "C10_F_mate_position_86": 4,
+        "C10_F_mate_position_89": 4,
+        "C10_F_mate_position_9": 240,
+        "C10_F_mate_position_90": 4,
+        "C10_F_mate_position_93": 4,
+        "C10_F_mate_position_97": 4,
+        "C10_contact_((0, 1), (2, 3))": 1180,
+        "C10_contact_((0, 2), (1, 3))": 1224,
+        "C10_contact_((0, 3), (1, 2))": 1188
+      },
+      "methods": {
+        "at most one auxiliary square": 13,
+        "closed one C8 plus squares": 3,
+        "inherited sufficient class": 35,
+        "owner C4/6k": 33,
+        "unique C16 contained 10": 3,
+        "unique C16 contained 14": 3,
+        "unique C16 contained 4": 7,
+        "unique C16 contained 4,10": 3,
+        "unique C16 contained 4,4": 3,
+        "unique C16 contained 4,8": 3,
+        "unique C16 contained 8": 3,
+        "unique C16 mixed C10 two boundary": 3,
+        "unique C16 mixed C8 four boundary": 3,
+        "unique C16 ordinary rank": 190,
+        "unique C16 pure eight boundary": 3,
+        "unique C16 pure four boundary": 7
+      },
+      "scope": "All-size written uniqueC16 theorem, actualminimumowneromissions plus one finalcommonforest; matching/cover and original5bphysicalcertificates. MixedC10 allh and mixedC8crossinglocalcontrols. Finite labelled/seeds do not prove theorem; absorption proofalternatives may be preempted by strongerbase/ordinaryforest and are not claimed fully covered. Generalmixedcyclic and physicalgrid remainopen.",
+      "status": "PASS"
+    }
+  },
+  "first_review": {
+    "verdict": "FIXABLE_GAPS",
+    "oracle": {
+      "task_id": "36cf9b52-c27b-4913-b6be-30d688f126df",
+      "conversation_id": null,
+      "pool": "chrono-chatgpt-pro-pool",
+      "model_label": "chatgpt-6-pro",
+      "observed_model_switcher": "gpt_6",
+      "observed_model_effort": "pro",
+      "chatgpt_url": "https://chatgpt.com/c/6af67572-78c0-83ec-a80d-16d09ffba462",
+      "usage_estimated": true
+    },
+    "attached_manifest": {
+      "develop/all_helper_optimization.py": {
+        "bytes": 6358,
+        "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+      },
+      "develop/auxiliary_square_forest.py": {
+        "bytes": 9700,
+        "sha256": "021b832e226ee1837fea82af08ddc9b73ef7c84d6e06ff3dd8ddd2f2967e3ec4"
+      },
+      "develop/balanced_boundary_matching_cut.py": {
+        "bytes": 3182,
+        "sha256": "105b749566870c555356d2247d098bbae5c7bf352b3ac192efe45d3e1800b1a1"
+      },
+      "develop/c16_regional_compensation.py": {
+        "bytes": 7806,
+        "sha256": "a094df63e4873ce7ec4d3a4546207d790f2d59592eb82777be4f7a1e437fc14e"
+      },
+      "develop/cyclic_rank_extensions.py": {
+        "bytes": 7106,
+        "sha256": "13c0ec8a6011b3a509db143c17d4cbca5e5e248208f6871cc97d71d001198ccc"
+      },
+      "develop/fixed_boundary_matching_cut.py": {
+        "bytes": 3524,
+        "sha256": "e51f576627412f6d552cfc489f085eab001f705e616973c4dfe94fff8eabab72"
+      },
+      "develop/fixtures/c16-reservation-examples.json": {
+        "bytes": 52331,
+        "sha256": "b541566347f10e9b7e414f7518136b4136238101bd4867a9dc6dd400d5a7ae81"
+      },
+      "develop/mixed_owner_bridges.py": {
+        "bytes": 9881,
+        "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+      },
+      "develop/owner_matching_certificate.py": {
+        "bytes": 10043,
+        "sha256": "c0eec60a1ed3401c0997a08f093a2ff1c65a460df2a6014a9c8a8f42bbbfb251"
+      },
+      "develop/reserved_owner_squares.py": {
+        "bytes": 9730,
+        "sha256": "3542d0525c4e3054ced05323b34acfc50c9a4831acb7db7a2a3939ebc5dc8757"
+      },
+      "develop/square_core_matching_cut.py": {
+        "bytes": 6239,
+        "sha256": "b45866309a211216235145158246a1f3b49c8d8ed0dbd36b700b0b0edaf9c359"
+      },
+      "develop/subcubic_square_core.py": {
+        "bytes": 4968,
+        "sha256": "5e9c446db0ac980053e58aad38d64930f9938ed86eac62b24c5f110e1f67a273"
+      },
+      "develop/unique_c16_compensation.py": {
+        "bytes": 9680,
+        "sha256": "9b4607cfadfc3d062ae19fd094d8fb3eb4b8f5049c50f42f0c85107dcdf42c94"
+      },
+      "docs/ALL_OWNER_AUXILIARY_SQUARES.md": {
+        "bytes": 5833,
+        "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+      },
+      "docs/BALANCED_BOUNDARY_MATCHING_CUT.md": {
+        "bytes": 5489,
+        "sha256": "cba697b118eee04d0e84db83050b29d76e9d00a0fd76c1815b8d1d1a3b77b02a"
+      },
+      "docs/CYCLIC_AUXILIARY_REDUCTION.md": {
+        "bytes": 9918,
+        "sha256": "f447051a6a026b0b30f103fe59c8b0ead3301b48e65b2034024f1f6ec7069eeb"
+      },
+      "docs/FIXED_FOUR_BOUNDARY_MATCHING_CUT.md": {
+        "bytes": 6757,
+        "sha256": "4d355f609459f823996c21a9857fb03c0045b257f8d02d6225096ca3e66209b3"
+      },
+      "docs/MIXED_OWNER_BRIDGES.md": {
+        "bytes": 19766,
+        "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+      },
+      "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md": {
+        "bytes": 7858,
+        "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+      },
+      "docs/SQUARE_CORE_MATCHING_CUT_THEOREM.md": {
+        "bytes": 12816,
+        "sha256": "ed4570ff2c93bfd5fab8527c66c9298542e749b9bc62eacb68748d0b51e07cf5"
+      },
+      "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md": {
+        "bytes": 7359,
+        "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+      },
+      "docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md": {
+        "bytes": 17147,
+        "sha256": "16fb3113d3aa792ff0d4b57108eafa0796d168dd0c97e41a21e383a15afe2e84"
+      },
+      "docs/UNIQUE_C16_GLOBAL_COMPENSATION.md": {
+        "bytes": 20399,
+        "sha256": "eac19e62d223e54811bc611bf8e2453be0d9ba416f32497f1eef0e5c1ea62eb2"
+      },
+      "manuscript/auxiliary-square-forest-proof.tex": {
+        "bytes": 8465,
+        "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+      },
+      "manuscript/auxiliary-square-proof.tex": {
+        "bytes": 6405,
+        "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+      },
+      "manuscript/owner-matching-proof.tex": {
+        "bytes": 8523,
+        "sha256": "b216099dd2d9a215c4330e04f4e9660b2da9a07f19c0af2ec90dd4cfecacb19a"
+      },
+      "manuscript/sharp-all-helper-proof.tex": {
+        "bytes": 7740,
+        "sha256": "a68ec25fde3ad7a2e3aa187cde2dd21e084c25bf8fd5e8e4f2446ba2ffc46441"
+      },
+      "output/balanced-boundary-matching-cut-check.json": {
+        "bytes": 1223,
+        "sha256": "df8220f340a0ece3248195ea5163f0227383c35dde36bc6b299607df900b32f8"
+      },
+      "output/unique-c16-compensation-check.json": {
+        "bytes": 5602,
+        "sha256": "98471b87a4c1b8e8a84110b20976010e73004c633af153e0ac065f37b536fe73"
+      },
+      "scripts/check_balanced_boundary_matching_cut.py": {
+        "bytes": 7417,
+        "sha256": "f0ca2cf37581216afe036bb9b29762d0f878737f9b591887fc7baf57fbf9076d"
+      },
+      "scripts/check_unique_c16_compensation.py": {
+        "bytes": 12791,
+        "sha256": "5b2d0d056d4e19165d361c39a5cc8aa892e789b416d9f5fcc39712632fe2153a"
+      }
+    },
+    "findings": [
+      "Overstrong per-subfamily rank assertion could reject a valid total-threshold certificate.",
+      "Balanced temporary physical graph description said5(k+h) rather than10(k+h); allocation was correct."
+    ],
+    "mathematical_disposition": "Reviewer affirmed both all-size existence theorems and final-region/exact-membership compatibility.",
+    "original_checkers_executed_unchanged": true,
+    "both_full_reports_byte_identical": true,
+    "complete_response": "FIXABLE_GAPS. Both all-size existence theorems hold in the stated physical setting, including the requirement to preserve every unreserved owner\u2019s exact omission membership. Both original checkers exited 0 and reproduced their attached reports byte for byte. The substantive defect is a subset-rank assertion in the C16 checker that can reject a valid certificate. There is also a factor-of-two error in the balanced checker\u2019s description of the physical graphs it rebuilt.1. A valid input that the subset-rank assertion would rejectLine 65 of scripts/check_unique_c16_compensation.py tests\n$$\\rho(E_J)\\ge d(J)-\\epsilon$$\nfor every subfamily  $J$ . On an early-return branch, the constructor has established  $r\\ge d_{\\rm out}-\\epsilon$  for the total maximum rainbow forest. The subset inequality is stronger.Here is an exact example that also tests the wording of \u00a77. Use  $N=32$ , with auxiliary cycles on the consecutive blocks of lengths  $16,4,4,4,4$ . Within each block, take the natural even-starting consecutive pairs for  $P$  and the remaining cyclic edges for  $Q$ . Set  $c(v)=\\lfloor v/2\\rfloor\\bmod 2$ . Take the following cyclic owner orders.Plain text(0,2,1,3)\n(16,6,4,7)\n(17,10,5,11)\n(8,18,9,14)\n(12,15,20,22,13,19,21,23,24,26,25,27,28,30,29,31)These cycles partition the indices and every owner edge reverses physical colour. Only the first owner square is contained in the auxiliary  $C_{16}$ . The next three squares each project onto the same two nodes, the  $C_{16}$  and the first auxiliary square. Together those three labels have rank  $1$  and deficit  $2$ . The contained 4 allowance is  $\\epsilon=2/3$ , so line 65 would require  $1\\ge 2-2/3$ .The four exterior labels have total deficit  $8/3$ . A rainbow forest takes one of the three parallel square representatives and one representative from the final owner cycle, giving  $r=2=8/3-2/3$ . In a separate call to the unchanged constructor, I obtained the unique C16 contained 4 branch and\n$$U=\\{1,3,5,6,7,8,11,13,15,18,21,26,28,31\\}.$$\nIts matching cost is  $3$ , and its physical all-helper certificate has size  $45$ . I also recomputed the projected ranks directly. This extra input was separate from the two frozen checker executions.Precise correction. With  $\\ell$  exterior labels, the inequality justified for every  $J$  is\n$$\\ell-|J|+\\rho(E_J)\\ \\ge\\ d_{\\rm out}-\\epsilon.$$\nEquivalently, compute the Rado minimum independently, compare it with the reported forest size, and test its total deficit bound. Keep  $\\rho(E_J)\\ge |J|$  on branches that promise full representatives. In \u00a77, qualify the per-subfamily conclusion as applying to the proof route that eliminates the offending supports. The implemented constructor can stop earlier when its total rank already pays the deficit. That early return is sound.2. Executable receiptI ran the requested commands from the extracted archive root with PYTHONOPTIMIZE unset, __debug__ true, and optimization level zero.Bashpython3 -B scripts/check_balanced_boundary_matching_cut.py --output /tmp/independent-balanced-boundary.json\npython3 -B scripts/check_unique_c16_compensation.py --output /tmp/independent-unique-c16.jsonThe interpreter was CPython 3.12.14 on Linux 6.18.57, x86-64, glibc 2.41. The two processes ran concurrently. The times below are separately measured subprocess wall times. Neither run was shortened or timed out. Both stdout streams consisted of one JSON line containing the full report. Both stderr streams were empty, with no startup warnings.Original checkerWall timeExitStdoutStderrGenerated reportDirect comparisonBalanced boundary7.608312713 s01,143 bytes0 bytes1,223 bytesByte-identicalUnique C1620.751961584 s05,004 bytes0 bytes5,602 bytesByte-identicalObjectSHA-256Uploaded ZIP, 111,250 bytesc6a5ea9edf3f9f2822660a6f99135671e19a37577a924323e861b08bebd737faMANIFEST.json, 4,689 bytese7f2c77464eb5b12d5829858944a6e70b2bfd4412fb09950fa08a95906e38ff4Balanced report, generated and attacheddf8220f340a0ece3248195ea5163f0227383c35dde36bc6b299607df900b32f8Unique-C16 report, generated and attached98471b87a4c1b8e8a84110b20976010e73004c633af153e0ac065f37b536fe73Balanced stdoutb4da80f12418d8a9a8b430ccd920172f75a023fc1673a8c9e39b76b8b4653f36Unique-C16 stdout070274201d1cfadc935c0020310cd52912dba87d19e3ed1f506a382b6b0871b0All 31 manifested payloads, totaling 312,056 bytes, matched their declared lengths and SHA-256 hashes before and after execution. I also compared the extracted bytes with the ZIP members and checked the complete filename set. This establishes the identity of the supplied files across the audit. The attachment supplies no earlier snapshot for a historical supplier-version comparison. The receipt contains the per-file hashes, complete stdout and stderr, generated report contents, and counterexample.   balanced-c16-audit-receipt.json3. All-size proof auditBalanced boundary. Let  $a_0,a_1$  count the prescribed vertices on the two physical sides,  $f=a_0+a_1$ , and  $t=k+h$ . Pairing inside and outside  $F_0$  separately guarantees  $\\lfloor a_0/2\\rfloor+\\lfloor a_1/2\\rfloor$  prescribed endpoints in any transversal of the opposite pairs. If either count is odd, forcing one prescribed mixed-pair endpoint raises this to at least  $\\lceil f/2\\rceil$ , including when both counts are odd. The prescribed-vertex matching-cut lemma applies because each physical owner square alternates physical colour. It supplies an independent  $Y$  of size at least  $\\lceil3t/2\\rceil$ . Extending  $Y$  to a transversal  $Z$  of size  $2t$  makes  $Z\\setminus Y$  an edge cover in the vertex-cover sense for  $A[Z]$ . Thus  $\\nu(A[Z])\\le\\lfloor t/2\\rfloor$ . Replacing  $Z\\cap F$  by  $F_0$  adds at most  $\\lfloor f/2\\rfloor$  vertices. Since the final deficiency is nonnegative and has parity  $f$ , this proves exactly\n$$\\delta_W\\ge \\max\\{0,\\,2k-2\\lfloor(k+h)/2\\rfloor\\}+(f\\bmod2).$$\nIt also covers  $k=h=0$ . The virtual square conditions expire when the boundary is replaced.Mixed  $C_8$ . Under the stated crossing hypothesis, independently flipping the auxiliary bipartitions makes each of the three reserved cycles nonmonochromatic with probability at least  $1/2$ . Some orientation therefore makes at least two nonmonochromatic. On each of those two cycles a prescribed-edge exchange changes its left-side omission count by one. Their owner supports are disjoint, so the extreme signed imbalances are four apart with the third cycle and all of  $F_0$  fixed. One choice has absolute imbalance at least two, which lower-bounds the actual matching deficiency.Mixed  $C_{10}$ , every  $h\\ge0$ . The  $P$ -and-opposite-pair paths have odd length and pair the six free endpoints within each physical colour. After rotating the boundary mate to position 4, the three displayed bit strings split both contacts. Their sole equal-bit cyclic edges are respectively  $34,12,40$ . Thus each colour contributes one possible uncovered triple, uncovered in one of the four phases. The expected initial matching cost is  $(h+3)/2$ , since the induced edges form a submatching of  $Q$ . Repair costs at most  $1/2$  in expectation and adds at most one centre of either colour. At most four  $C_{10}$  vertices of either colour are then selected. For a minimal triple-hitting subset the cyclic gaps satisfy  $g_i\\le3$  and  $g_{i-1}+g_i\\ge4$ . Five omissions would force every adjacent sum to be four and hence, on an odd cycle of five gaps, every gap to be two. That would select five vertices of one colour. Pruning therefore leaves exactly four omissions. Installing the exact  $F_0$  costs at most  $f/2$  in expectation. One phase attains cost at most  $\\lfloor(h+4+f)/2\\rfloor$ , giving  $\\delta_W\\ge h$ .Contained exceptional cycle. It suffices to test the two exchanged minimum choices at each oriented owner edge. If all yielded perfect matchings at even regional cardinality, their symmetric differences would place the two ends of every such edge on the same side of a single fixed ambient bipartite component. Following the cycle places all of  $C$  there. Perfect balance after deleting  $|C|-\\lceil |C|/3\\rceil\\ge2$  vertices from that side is impossible in a path or even cycle whose original sides differ by at most one. Odd cardinality already gives deficiency at least one. This argument fixes every other anchor and uses the saving once.Rank classification and absorptions. Away from the contracted root,  $c$  labels on  $v$  auxiliary squares require  $v\\ge c$ . Equality would fill a closed component disjoint from the  $C_{16}$ , excluded by connectedness. Thus each such support pays its full label count. At the root the two inequalities  $4x+8y+6a\\le4q+16$  and  $2x+y\\ge3q+2$ , with  $q\\ge1$ , imply  $q+3y+3a\\le6$  and  $y+a\\le1$ . The resulting counts are: $(y,a)$ Integer typesSaturatedNonsaturated $(0,0)$ 1266 $(1,0)$ 431 $(0,1)$ 202Total1899The nine nonsaturated types are exactly the six pure-square rows,  $C_8+2C_4$ , and  $C_{10}+hC_4$  for  $h=2,3$ . Saturation closes the entire connected parent. For eight free vertices, failed full representation either absorbs  $q+1$  squares and leaves four free vertices, or closes an all-square or one- $C_8$ -plus-squares parent. In the four-anchor, eight-free case, the necessary extra  $1/3$  comes from an exterior exceptional label. The closed  $C_8+kC_4$  estimate  $\\lfloor k/2\\rfloor+2$  meets the target for every  $k\\ge3$ .The eight nonfilled contained collections are precisely  $C_4,2C_4,3C_4,C_8,C_8+C_4,C_{10},C_{10}+C_4,C_{14}$ . I checked their capacities and the tabulated  $\\gamma-\\epsilon\\ge d_I-1/3$  row by row. For  $C_4$  and  $2C_4$ , the only nonsaturated excess-loss cases absorb three and two squares respectively, both reaching four reserved squares with four free vertices. The excess-loss  $C_8$  case closes  $C_8+3C_4$ . At  $p=6$  the putative  $C_{10}$  violation would require both  $x\\le2$  and  $x\\ge3$ . At  $p=2$  capacity gives full representatives. These alternatives prove the required total rank bound.Rado extraction and compatibility. The dual construction takes  $J$  to be all exterior exceptional labels minus the reachable labels. This includes labels with empty crossing families. The rank of  $E_J$  is bounded by the unreachable graphic rank, and the dual equality together with the Rado bound forces  $\\ell-|J|+\\rho(E_J)=r$ . Since each omitted label has weight at most one and every nonroot support pays its labels, a failure of the total threshold yields a root witness. This is the direction needed by the constructor.After choosing the final region, the code rebuilds its forest, switches from leaves toward roots, and freezes both  $U\\setminus W$  and  $F_0$ . The local replacement changes only whole reserved owners. All  $r$  credited nonroot nodes are outside  $W$ , and no auxiliary edge crosses its boundary. Hence the exterior deficiency and the local deficiency coexist in the same  $U$ . Earlier forests contribute zero to this sum.Bases and physical conclusion. The all-auxiliary-square forest proof handles the closed four- and eight-index components before its residual rank estimate. The at-most-one-square base handles its possible  $K_4$  using the doubled-owner repair. The  $C_4/6k$  owner base uses one global expected matching budget bounded by  $N/6$ . Their target certificates suffice even when an inherited construction uses more than the minimum owner omissions. In the new branches  $M=N/3+d$  and  $\\delta\\ge d-1/3$  give  $\\nu\\le\\lfloor(N+1)/6\\rfloor=\\lfloor N/6\\rfloor$ . Component costs add. Selecting all helpers, owners outside  $U$ , and a maximum independent witness set in  $A[U]$  gives the claimed physical dissociation set. The exact identity is\n$$\\beta_I=3b-\\min_{U\\ {\\rm permitted}}\\nu(A[U]).$$\nIts scope is the all-helper optimum.4. Finite coverage and reporting correctionsObserved controlCountBalanced exact-boundary controls24,826Balanced literal matching comparisons39,342Balanced rebuilt temporary physical graphs1,164Unique-C16 physical models / original physical scores279 / 279Frozen branch inputs / small exact optima17 / 10Subset-rank / Rado-minimum / dual-support checks1,741 / 230 / 13Complete  $C_{10}$  endpoint-contact matchings225Exact two-free-vertex  $C_{10}$  controls1,796Exact four-free-vertex mixed  $C_8$  controls944I independently recomputed the 1,741 subset ranks, 230 Rado minima and 13 dual supports on the 279 inputs. All 13 recorded history stages were initial serious-rank cuts. The two enlargement alternatives therefore rely on the all-size proof for coverage. The  $C_{10}$  counts split as  $15^2=225$  contact matchings and  $4(225+7\\cdot32)=1,796$  exact memberships. The mixed  $C_8$  count is  $59\\cdot16=944$ .The frozen small-optimum search enumerates all omission masks and shares the production matching routine. As an additional independent check, I minimized cyclic-run matching costs over all inclusion-minimal owner triple-hitting sets. The ten all-helper optima in generation order were 24, 24, 24, 24, 24, 24, 24, 23, 30, 30.Finally, the balanced note at line 100, checker lines 48 and 126, and emitted scope string say  $5(k+h)$  physical vertices. There are  $4(k+h)$  indices, so  $b=2(k+h)$  and the rebuilt graph has  $5b=10(k+h)$  vertices. The implementation allocates the correct graph. Its 1,164 physical checks score the temporary base choices  $Y,Z$ ; the exact final boundary is checked separately. Correcting that description and the C16 rank predicate resolves the findings without changing either existence theorem."
+  },
+  "implemented_repairs": [
+    "Check ell-|J|+rho(E_J)>=d_out-epsilon for every subfamily, independent Rado minimum and total threshold; retain rho(E_J)>=|J| on full-representative branches.",
+    "Clarify contained-case proof route versus sound earlier total-threshold return.",
+    "Add actualN32 regression: old subset test fails, total forest2 valid, actualcost3, physicalset45.",
+    "Correct10(k+h)vertex physical graph description in note/checker/report."
+  ],
+  "scope": [
+    "Arbitrary balanced4h exact free membership, k actual owner squares.",
+    "Unique auxiliaryC16 plus arbitrary auxiliary squares and arbitrary physical even owner cycles.",
+    "All-h mixedC10/two-boundary and crossing mixedC8/two-square/four-boundary lemmas.",
+    "One final exterior forest and exact unreserved membership, not adding independent forest credits."
+  ],
+  "qualifications": [
+    "No general mixture of several long auxiliary components, unrestricted graph-gap or physical-grid theorem.",
+    "No Lean/formal-kernel, priority or journal-readiness claim.",
+    "Finite seeded/labelled inputs are implementation controls; all-size conclusions use written proofs.",
+    "Some absorption alternatives are preempted in full inputs. Supplemental local helper checks are not included in the two original frozen-checker executions.",
+    "Small all-helper optimum search shares production matching; separate reviewer cyclic-run audit is identified in its first response.",
+    "An attachment receipt mentioned in prose was not returned as a downloadable artifact by the streaming endpoint; complete responses and exact frozen sources are preserved."
+  ],
+  "complete_response": "ACCEPTI accept the two stated all-size physical theorems in the final frozen source, together with the three new modules, within the stated hypotheses. I found no remaining proof or implementation gap requiring FIXABLE_GAPS.Both complete original final checkers ran successfully with assertions enabled and PYTHONOPTIMIZE unset. Each entire generated report is byte-for-byte identical to its attached counterpart. All 32 manifested payloads matched the manifest before execution and remained unchanged afterward. No source file was edited, and no case loop was trimmed.The complete execution record\u2014including full stdout/stderr, both generated reports, Python/platform details, all 32 before/after hashes, and review findings\u2014is in    final-c16-audit-evidence.zip.1. Exact execution and source identityI executed these commands from the extracted frozen archive root:Bashpython3 -B scripts/check_balanced_boundary_matching_cut.py --output /tmp/final-balanced-boundary.json\npython3 -B scripts/check_unique_c16_compensation.py --output /tmp/final-unique-c16.jsonThese were the complete original scripts:   check_balanced_boundary_matching_cut.py and   check_unique_c16_compensation.py.Execution resultsItemBalanced boundaryUnique C16Measured wall runtime6.318220594 s19.023390087 sExit code00Report statusPASSPASSCaptured stdout1,144 bytes; one complete JSON line5,102 bytes; one complete JSON lineCaptured stderr0 bytes0 bytesWarnings emitted to captured streamsNoneNoneGenerated report size1,224 bytes5,708 bytesEntire report byte equalityTrueTrueThe comparisons used the complete file bytes, including formatting and the terminal newline. They were not comparisons of selected fields or parsed JSON objects.Execution environment:CPython 3.12.14, build main, Aug 25 2026, 14:00:49, Clang 22.1.3.Platform: Linux-6.18.57-x86_64-with-glibc2.41.sys.flags.optimize == 0.__debug__ == True.PYTHONOPTIMIZE absent from the checker environment.Bytecode writing disabled by -B.Report hashesThe generated and attached versions have the following identical SHA-256 hashes:ReportSHA-256Balanced boundaryfe6aceb870b458232b8101bb850b71fbedd6246a4343ae199aaa1f85bed50743Unique C1646fb0a84fd8507898cc225f038213bf5d90092f2f170d0ab6228687c39b79de4The uploaded archive\u2019s SHA-256 is:Plain text7aa4ea53870709a8da400de37d9a6b7fb9132884b4fa01397c68fe3f33b5b739The manifest\u2019s SHA-256 is:Plain text00fc69988cea36dace3e63c5f8272f294fb476a23c4115bbc0b9366ab4c8b292For every one of the 32 manifested payloads, both byte length and SHA-256 matched the manifest before execution and afterward. A further check after the source review also matched. The archive and manifest hashes remained unchanged, and the extracted source file inventory was unchanged.2. Both repairs are correct2.1 The total Rado predicate is exactly sufficientThe corrected condition is\n$$\\ell-|J|+\\rho(E_J)\\ge d_{\\mathrm{out}}-\\epsilon\n\\qquad\\text{for every }J.$$\nBy the Rado formula\n$$r=\\min_J\\bigl(\\ell-|J|+\\rho(E_J)\\bigr),$$\nthis is precisely equivalent to the total threshold\n$$r\\ge d_{\\mathrm{out}}-\\epsilon.$$\nThat is the threshold consumed by the global deficiency argument. A successful early return does not need the separate inequality\n$$\\rho(E_J)\\ge d(J)-\\epsilon$$\nfor every subfamily. Labels omitted from  $J$  can supply the missing contribution through the term  $\\ell-|J|$ .The final checker now does all three necessary checks:It checks the total expression for every enumerated  $J$ .It independently computes the minimum and checks that it equals the returned forest size.It checks that this minimum meets the total threshold.For branches promising full representatives, it separately retains\n$$\\rho(E_J)\\ge |J|.$$\nThus the repair preserves the necessary certification. It replaces an unnecessarily strong condition with the exact condition that the constructor\u2019s earlier return certifies. The relevant code is check_rank in   check_unique_c16_compensation.py.There is an execution-scope qualification: this exhaustive subset check runs when there are at most ten remaining exceptional labels. It checks every  $J$  in each eligible model; it does not enumerate every subset in every large model. Section 8 describes these as small-subfamily rank checks. The all-size conclusion comes from the written proof and the forest/dual argument.2.2 The regression genuinely separates the two conditionsI inspected the actual   c16-rado-threshold-regression.json.After reserving the contained  $C_4$ , there are four remaining exceptional labels: three squares and one  $C_{16}$ . The three square labels all connect the root to the same auxiliary square. For that three-label subfamily,\n$$|J|=3,\\qquad \\rho(E_J)=1,\\qquad d(J)=2.$$\nWith  $\\epsilon=2/3$ , the old condition would require\n$$1\\ge 2-\\frac23=\\frac43,$$\nwhich is false. The corrected condition instead gives\n$$\\ell-|J|+\\rho(E_J)\n=4-3+1\n=2\n=\\frac83-\\frac23\n=d_{\\mathrm{out}}-\\epsilon.$$\nThe maximum forest size is therefore two, and the total threshold is valid.The unchanged final checker actually exercised this fixture. It checked:the unique C16 contained 4 branch;matching cost 3;selected physical-set cardinality 45;an increase in the diagnostic counting subfamilies that fail the old stronger inference.The resulting report contains exactly one explicit reviewer regression and one subfamily requiring omitted-label surplus. Here  $N=32$ ,  $b=16$ , so the ambient physical graph has  $5b=80$  vertices; 45 is the size of the constructed dissociation set.2.3 Section 7 now distinguishes the two proof routes correctlyThe repaired paragraph in \u00a77 of    UNIQUE_C16_GLOBAL_COMPENSATION.md is compatible with the complete proof.The existence proof may eliminate offending weighted supports through absorption or closure, thereby establishing the stronger sufficient subfamily inequalities. The implementation may stop earlier once its maximum forest already satisfies the total threshold. Both routes feed the same valid conclusion:\n$$\\delta(U)\\ge r+\\gamma\n\\ge d_{\\mathrm{out}}-\\epsilon+\\gamma\n\\ge d-\\frac13.$$\nI found no later step that silently reinstates the stronger subfamily assertion after a successful total-threshold return.2.4 The temporary physical graph has  $10(k+h)$  verticesWriting  $t=k+h$ , the temporary balanced instance has\n$$4t\\text{ indices},\\qquad b=2t,$$\nand therefore\n$$b+4t+4t=5b=10t$$\nphysical vertices.The checker already allocates 5*b vertices with b=len(V)//2. The revised theorem note, checker comment, and report scope now agree with that allocation. This repair is correct in    BALANCED_BOUNDARY_MATCHING_CUT.md and the original balanced checker.3. Supporting theorem: all  $k,h$ , every exact  $F_0$ The balanced-boundary theorem is valid for arbitrary  $k,h\\ge0$ , including the empty instance. I checked the full proof, the prescribed-vertex matching-cut supplier, and   balanced_boundary_matching_cut.py.The three decisive steps are as follows.Adapted pairing gives the required intersection for every parity caseLet\n$$a_c=|F_0\\cap F_c|,\\qquad f=a_0+a_1,$$\nwhere each physical side  $F_c$  has  $2h$  free vertices.Pairing prescribed vertices together and nonprescribed vertices together leaves a mixed pair precisely when  $a_c$  is odd. Every transversal of these opposite pairs contains at least\n$$\\left\\lfloor\\frac{a_0}{2}\\right\\rfloor+\n\\left\\lfloor\\frac{a_1}{2}\\right\\rfloor$$\nprescribed vertices. If a mixed pair exists, forcing its prescribed endpoint into the independent set adds one to that guarantee.This gives\n$$|Z\\cap F_0|\\ge \\left\\lceil\\frac f2\\right\\rceil$$\nwhen neither side count is odd, when exactly one is odd, and when both are odd. The last case is handled correctly: the unforced lower bound is  $f/2-1$ , so one forced endpoint suffices.The independent set supplies a genuine matching coverFor  $t=k+h$ , the physical matching-cut argument yields an independent set  $Y$  in  $P\\cup Q\\cup R_{\\mathrm{op}}$  with\n$$|Y|\\ge \\left\\lceil\\frac{3t}{2}\\right\\rceil,$$\nincluding the specified endpoint when needed. Components of  $P\\cup R_{\\mathrm{op}}$  on each physical side have equal proper-class sizes; coincident matching edges cause no exception.Extend  $Y$  to a transversal  $Z$  of the opposite pairs. Then  $|Z|=2t$ , and  $Z\\setminus Y$  covers every edge of  $A[Z]$ . Consequently,\n$$\\nu(A[Z])\n\\le |Z|-|Y|\n\\le \\left\\lfloor\\frac t2\\right\\rfloor.$$\nReplacing the free part of  $Z$  by exactly  $F_0$  adds at most\n$$f-|Z\\cap F_0|\\le \\left\\lfloor\\frac f2\\right\\rfloor$$\nvertices after deletions. Hence\n$$\\nu(A[U])\n\\le\n\\left\\lfloor\\frac{k+h}{2}\\right\\rfloor+\n\\left\\lfloor\\frac f2\\right\\rfloor.$$\nThe clipped deficiency bound follows correctlyBecause  $|U|=2k+f$ ,\n$$\\delta(U)\\ge\n2k-2\\left\\lfloor\\frac{k+h}{2}\\right\\rfloor+(f\\bmod2).$$\nDeficiency is also nonnegative and has parity  $f$ . Combining these facts gives exactly\n$$\\boxed{\n\\delta(U)\\ge\n\\max\\!\\left(0,2k-2\\left\\lfloor\\frac{k+h}{2}\\right\\rfloor\\right)\n+(f\\bmod2).\n}$$\nEvery actual owner square retains exactly two omissions, and  $U\\cap F=F_0$ . The temporary squares impose no final constraint on the free boundary. The module follows these steps and computes its final matching using the original  $P,Q$ .4. Main theorem: full all-size proof and constructor compatibilityI checked the complete    UNIQUE_C16_GLOBAL_COMPENSATION.md, including its inherited base-case and forest dependencies, against   c16_regional_compensation.py and   unique_c16_compensation.py.One final region and one common exterior forestThis compatibility condition is satisfied both mathematically and in the code.Each selected forest edge uses a distinct exceptional owner label. Its prescribed-edge exchange preserves the owner\u2019s minimum omission count and changes membership only at the two edge endpoints. Leaf-to-root switches therefore produce at least  $r$  odd auxiliary nodes outside the reserved root.After the final region is chosen, the constructor rebuilds _project, computes the final parity omission set, and freezes both:fixed_exterior = U-region;the exact free-boundary subset F0 = U&F.Every local routine preserves localU&F == F0; the constructor also checks that the exterior is unchanged. Every unreserved vertex lies either outside the region or in its free set  $F$ . These conditions therefore freeze every unreserved membership, not merely boundary parity.Since the final region is a union of whole auxiliary components, no  $A$ -edge crosses its boundary. Thus the actual deficiencies satisfy\n$$\\delta(U)\\ge r+\\delta(U_W).$$\nEarlier forests determine which region to reserve or absorb. Their contributions are discarded. The final bound credits only the final forest and final local deficiency.Mixed  $C_8+2C_4$ , four fixed free verticesThe crossing hypothesis is essential and is supplied in the classified global branch.Independently orienting the auxiliary bipartitions makes each of the three reserved owner cycles nonmonochromatic with probability at least  $1/2$ . Therefore some orientation makes at least two nonmonochromatic.On each of those two disjoint owner cycles, an edge crossing auxiliary sides supplies a prescribed omission exchange. Their combined extreme left-side counts differ by two, so the corresponding side imbalances differ by four. One candidate has absolute imbalance at least two. Every auxiliary matching pairs opposite sides, giving\n$$\\delta_W\\ge2.$$\nThe third owner choice and every membership in  $F_0$  remain fixed. This pays the reserved deficit  $5/3$ . The implementation evaluates the exchanges justified by this argument and returns an actual matching deficiency.Mixed  $C_{10}+hC_4$ , two fixed free vertices: every  $h\\ge0$ The proof applies to all  $h$ , with no hidden finite-size assumption.The components of  $P\\cup R_{\\mathrm{op}}$  meeting  $C_{10}\\cup F$  are odd alternating paths beginning and ending with  $P$ . They pair the twelve free endpoints within physical colours. Per colour, the boundary vertex is paired with one of the five  $C_{10}$  vertices; the other four admit exactly the three listed contact pairings.Each prescribed bit pattern:assigns opposite bits to contact mates;has exactly one equal-bit edge in the cyclic distance-two  $C_5$ ;extends consistently along all contact paths.Choosing one bit independently in each physical colour produces four phase selections. Each selects exactly two omissions on each square and is  $P$ -independent. Thus the induced matching initially consists only of selected  $Q$ -edges, and\n$$\\mathbb E\\,\\nu(A[\\widehat U])=\\frac{h+3}{2}.$$\nOnly the two equal-bit distance-two edges can cause uncovered  $C_{10}$  triples. Each such triple is uncovered with probability  $1/4$ , so repairs cost at most  $1/2$  in expectation. There is at most one repair vertex of each physical colour.The pruning step is valid. For an inclusion-minimal triple-hitting set with cyclic gaps  $g_i$ ,\n$$g_i\\le3,\\qquad g_{i-1}+g_i\\ge4,\\qquad \\sum g_i=10.$$\nIts cardinality  $j$  satisfies  $4\\le j\\le5$ . If  $j=5$ , all adjacent gap sums equal four; the odd cycle of five gaps then forces every gap to equal two. That would select all five vertices of one physical colour, contradicting the repaired set\u2019s four-per-colour bound. Therefore pruning leaves exactly four omissions.Finally, imposing  $F_0$  costs at most  $f/2$  in expectation. One of the four actual candidates satisfies\n$$\\nu(A[U_W])\\le\n\\left\\lfloor\\frac{h+4+f}{2}\\right\\rfloor.$$\nSince  $|U_W|=2h+4+f$ , this gives  $\\delta_W\\ge h$ . The module implements these four candidates, repairs, pruning, exact boundary replacement, and actual matching comparison.All eighteen serious-rank types are exhaustedThe capacity and serious-loss inequalities are\n$$4x+8y+6a\\le4q+16,\\qquad 2x+y\\ge3q+2,\\qquad q\\ge1.$$\nTheir derived bounds exclude  $y+a\\ge2$ . I checked the arithmetic exhaustion:CaseAll possibilities $y=a=0$  $q=1:\\ x=3,4,5;\\ q=2:\\ x=4,5,6;\\ q=3:\\ x=6,7;\\ q=4:\\ x=7,8;\\ q=5:\\ x=9;\\ q=6:\\ x=10$  $y=1,a=0$  $(q,x)=(1,2),(1,3),(2,4),(3,5)$  $y=0,a=1$  $(q,x)=(1,3),(2,4)$ This gives 12 + 4 + 2 = 18 types: nine saturated closures and nine nonsaturated types.The nonsaturated types are exactly the six pure-square types, the  $C_8+2C_4$  type, and the two  $C_{10}$  types in the document. Saturation genuinely closes the region under both graphs: the reserved and support owner cycles fill every index of the union of whole auxiliary components, leaving no vertex through which another owner component could cross.All contained exceptional collections are coveredThe eight proper nonempty collections are exhaustive, and every budget satisfies the required inequality:Contained collection  $I$ Free capacity  $p$  $d_I$ Local  $\\gamma$ Exterior  $\\epsilon$  $C_4$ 12 $2/3$ 1 $2/3$  $2C_4$ 8 $4/3$ 10 $3C_4$ 4220 $C_8$ 8 $1/3$ 1 $2/3$  $C_8+C_4$ 4110 $C_{10}$ 6 $2/3$ 1 $1/3$  $C_{10}+C_4$ 2 $4/3$ 10 $C_{14}$ 2 $1/3$ 10In every row,\n$$\\gamma-\\epsilon\\ge d_I-\\frac13.$$\nThe contained-cycle saving is also valid with all other choices fixed. If all prescribed exchanged choices had perfect matchings, their symmetric differences would put consecutive owner vertices on the same auxiliary bipartition side of one component. The entire owner cycle would then lie on that side. A perfect matching after retaining only its minimum omissions would require side imbalance at least two, impossible in a path or even cycle.This argument needs only the prescribed exchange pairs enumerated by contained_exchange. It does not require enumeration of every minimum omission set, and it correctly uses the saving once.Both absorption alternatives have all-size proofsI checked both:the absorption arising from failure of full representatives with eight free vertices;the contained- $C_4$  or contained- $2C_4$  absorption.The nonsaturated cases absorb whole square owners and their auxiliary support, leaving four free vertices. The balanced-boundary guarantee then applies to the enlarged number of squares:\n$$2\\left\\lfloor\\frac{k}{2}\\right\\rfloor\\ge\\frac{2k}{3}\n\\qquad(k\\ge3).$$\nThe remaining alternatives are saturated closures handled by earlier cases. The exterior forest is constructed anew for the final region.These two alternatives are supported by the all-size proof; they are not claimed to have been executed by the main constructor on the frozen inputs.Physical conclusion and roundingFor the new cases, minimum omission counts give\n$$|U|=\\frac N3+d.$$\nWith  $\\delta(U)\\ge d-1/3$ ,\n$$2\\nu(A[U])=|U|-\\delta(U)\\le\\frac N3+\\frac13.$$\nBecause  $N$  is even,\n$$\\nu(A[U])\n\\le\\left\\lfloor\\frac{N+1}{6}\\right\\rfloor\n=\\left\\lfloor\\frac N6\\right\\rfloor.$$\nComponentwise costs combine correctly. The inherited base cases already supply their target certificates and need not satisfy the new cases\u2019 minimum-omission convention.Selecting all helpers, owners outside  $U$ , and a maximum independent witness set in  $A[U]$  yields an actual physical dissociation set of size\n$$3b-\\nu(A[U])\n\\ge 3b-\\left\\lfloor\\frac b3\\right\\rfloor\n=\\left\\lceil\\frac{8b}{3}\\right\\rceil.$$\n5. Executed coverage and independence limitsThe following counts come from the reports generated in this execution.Balanced-boundary checkerCheckExecuted countFixed-boundary controls24,826Literal matching comparisons39,342Independently rebuilt base physical scores1,164Complete boundary placements at  $h=0,1,2,3$ 44, 48, 75, 1Sampled larger side-cardinality pairs702Relabelling/colour-flip controls16The  $h=3$  placement includes all 4,096 prescribed boundary subsets. These are complete subsets within the specified placements, not an exhaustion of all physical placements.Unique-C16 checkerCheckExecuted countPhysical models / original physical scores280 / 280Explicit reviewer regression1Frozen branch models17Complete  $C_{10}$  endpoint-contact models225Fixed two-boundary  $C_{10}$  controls1,796Fixed four-boundary mixed- $C_8$  controls944Serious-rank integer types18Independent subset-rank controls1,757Independent Rado minimum comparisons231Independent Rado dual-support controls13Independent regional deficiencies44Literal full matching comparisons90Small all-helper optimum enumerations10Relabelling/reassembly controls32The 225 contact models exhaust the  $15\\times15$  endpoint matchings at  $h=0$ . The larger  $h$  controls use the stated values  $1,2,3,4,7,16,63$ . The claim for every  $h$  rests on the written argument reviewed above.Matching independence is limited exactly as statedThe ten small optimum enumerations call all_helper_optimization.solve, which in turn calls the same production score matching routine used by the constructor. Thus they independently enumerate omission sets, but do not use an independent matching engine. The relevant implementation is   all_helper_optimization.py.The original checker separately validates produced matching optima through equal matching/vertex-cover cardinalities, and uses its own literal recursive matching solver on the designated small inputs. Those are meaningful independent checks, but they do not change the implementation dependency of solve.The earlier independent cyclic-run optimum vector\n$$24,24,24,24,24,24,24,23,30,30$$\nis prior reviewer evidence supplied in your request. I did not rerun that separate cyclic-run enumeration here, and I have not counted it as present execution evidence. No additional local-helper controls were executed in this audit.The acceptance applies to the frozen source and the two specified all-size theorems. It carries no claim for arbitrary mixtures of long auxiliary cycles, physical grids, Lean verification, priority, or journal readiness.check_balanced_boundary_matching_cut.pyCodeOpen filecheck_unique_c16_compensation.pyCodeOpen filec16-rado-threshold-regression.jsonCodeOpen file6 more"
+}

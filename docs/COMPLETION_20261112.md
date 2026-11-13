@@ -1,6 +1,40 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
 
+## 13 November: one auxiliary sixteen-cycle, arbitrary physical owner cycles
+
+The [complete C16 theorem](UNIQUE_C16_GLOBAL_COMPENSATION.md)
+proves the actual all-helper target for any number of auxiliary C4s together
+with one C16, and arbitrary physical even owner cycles. On N=2b indices,
+there is a permitted omission U with nu(A[U]) <= floor(N/6). Thus the
+original 5b-vertex physical graph has an all-helper dissociation set of
+size at least ceil(8b/3). This extends the earlier unique-C12 sufficient
+class. It does not identify the unrestricted graph parameters with the
+all-helper optimization.
+
+The proof fixes the FINAL reserved region before building its single common
+exterior forest. It preserves the exact boundary subset, including owners
+crossing that boundary. Two local lemmas handle C8 with two owner squares
+and four free vertices, and C10 with any number of owner squares and two
+free vertices. The [balanced-boundary theorem](BALANCED_BOUNDARY_MATCHING_CUT.md)
+handles any k owner squares and 4h balanced free vertices, with actual
+deficiency at least max(0,2k-2floor((k+h)/2)) plus boundary parity.
+
+The [independent audit](../output/unique-c16-and-boundary-review.json)
+records its verdict, complete response and exact execution scope. Both
+original frozen checkers were run unchanged and their full reports compared
+byte for byte. Local controls include 24,826 fixed boundary assignments,
+39,342 literal matching comparisons, 280 original physical models, all 225
+C10 endpoint contact matchings, and the exact 18-type integer rank list.
+The written proof establishes arbitrary order; these computations check the
+constructor. Some absorption alternatives are preempted by stronger bases
+in full inputs, as explicitly recorded in the report.
+
+General mixtures of long auxiliary cycles, the unrestricted sharp gap under
+degree/connectivity restrictions, and physical multiple-Hall/unit-grid
+compensation remain open. The full research goal remains active.
+
+
 ## 13 November: sharp physical square cores and every fixed four-boundary pattern
 
 The [matching-cut theorem](SQUARE_CORE_MATCHING_CUT_THEOREM.md)
