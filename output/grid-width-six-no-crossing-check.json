@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "scope": "all feasible representative pairs on two-row ladders, exhaustive matching and T enumeration",
+  "maximum_ladder_length": 6,
+  "rows": [
+    {"n": 1, "closed_max": 2, "odd_column_BB_max": 0, "feasible_pairs": 5},
+    {"n": 2, "closed_max": 2, "odd_column_BB_max": 2, "feasible_pairs": 25},
+    {"n": 3, "closed_max": 4, "odd_column_BB_max": 2, "feasible_pairs": 116},
+    {"n": 4, "closed_max": 4, "odd_column_BB_max": 4, "feasible_pairs": 548},
+    {"n": 5, "closed_max": 6, "odd_column_BB_max": 4, "feasible_pairs": 2582},
+    {"n": 6, "closed_max": 6, "odd_column_BB_max": 6, "feasible_pairs": 12179}
+  ],
+  "general_claim": "For P_6 square P_n with no matching edge across rows 2-3 or 4-5, |T|+|M| <= F(6,n)."
+}

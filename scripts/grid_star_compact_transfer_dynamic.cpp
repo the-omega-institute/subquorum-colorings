@@ -19,7 +19,32 @@ using Word = std::uint64_t;
 using Mask = std::uint32_t;
 static unsigned key_bits;
 static Word key_mask;
+static unsigned grid_height;
 static constexpr std::size_t state_cap = 50000000;
+
+static Mask reflect_column(Mask column) {
+    Mask result = 0;
+    for (unsigned r = 0; r < grid_height; ++r)
+        if (column & (Mask(1) << r)) result |= Mask(1) << (grid_height - 1 - r);
+    return result;
+}
+
+static Word reflect_key(Word key) {
+    const Word column_mask = (Word(1) << grid_height) - 1;
+    Word result = 0;
+    for (unsigned c = 0; c < 4; ++c) {
+        Mask selected = Mask((key >> (c * grid_height)) & column_mask);
+        Mask flags = Mask((key >> (4 * grid_height + c * grid_height)) & column_mask);
+        result |= Word(reflect_column(selected)) << (c * grid_height);
+        result |= Word(reflect_column(flags)) << (4 * grid_height + c * grid_height);
+    }
+    return result;
+}
+
+static Word canonical_key(Word key) {
+    Word reflected = reflect_key(key);
+    return std::min(key, reflected);
+}
 
 struct Table {
     std::vector<Word> slots;
@@ -67,7 +92,9 @@ struct Table {
 };
 
 // Same optimized local rule as the original generator.  It is evaluated only
-// for a window that occurs in an exact transition.
+// for a window that occurs in an exact transition.  Vertical reflection is
+// an automorphism of the strip; canonicalizing after each transition keeps
+// both reflected states at one score-maximizing table entry.
 static Mask optimized_kernel(Mask selected, const std::vector<Mask>& adj, int h) {
     const Mask invalid = std::numeric_limits<Mask>::max();
     Mask flags = 0;
@@ -97,6 +124,7 @@ int main(int argc, char** argv) {
     int h = std::stoi(argv[1]), limit = std::stoi(argv[2]);
     if (h < 3 || h > 6 || limit < 6 || limit > 100)
         throw std::invalid_argument("require 3<=height<=6, 6<=limit<=100");
+    grid_height = unsigned(h);
     const int period = h == 4 ? 2 : 3, increment = h == 3 ? 5 : h == 4 ? 4 : 8;
     const unsigned retained = 4 * h, vertices = 5 * h;
     const Mask column_mask = (Mask(1) << h) - 1;
@@ -119,7 +147,7 @@ int main(int argc, char** argv) {
             if (flags == std::numeric_limits<Mask>::max()) return false;
         }
         if ((s & column_mask) != (flags & column_mask)) return false;
-        target = Word(s >> h) | (Word(flags >> h) << retained);
+        target = canonical_key(Word(s >> h) | (Word(flags >> h) << retained));
         return true;
     };
     auto closes = [&](Word key, int n) {
@@ -133,7 +161,7 @@ int main(int argc, char** argv) {
     std::filesystem::path out(argv[3]);
     if (std::filesystem::exists(out)) throw std::runtime_error("output directory must be fresh");
     std::filesystem::create_directories(out);
-    Table table; table.put(0, 0);
+    Table table; table.put(canonical_key(0), 0);
     std::vector<std::vector<Word>> history(period);
     std::vector<int> values;
     bool translated = false; int start = 0; std::size_t peak = 0;
@@ -178,6 +206,7 @@ int main(int argc, char** argv) {
     report << "{\n  \"status\": \"PASS\",\n  \"kernel\": \"on-demand-optimized\",\n  \"height\": " << h
            << ",\n  \"start\": " << start << ",\n  \"period\": " << period
            << ",\n  \"increment\": " << increment
+           << ",\n  \"quotient\": \"vertical-reflection\""
            << ",\n  \"states\": " << table.used << ",\n  \"peak_states\": " << peak
            << ",\n  \"state_cap\": " << state_cap << "\n}\n";
     if (!report) throw std::runtime_error("report write failed");

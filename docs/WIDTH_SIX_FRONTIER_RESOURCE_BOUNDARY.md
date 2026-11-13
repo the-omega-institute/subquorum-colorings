@@ -88,6 +88,14 @@ frontier. Merely increasing the local-kernel memory or the state cap does not
 provide that proof. The general width-six equality and the arbitrary
 width-six unit-weight improvement therefore remain open after this run.
 
+A first exact quotient is now recorded in
+[`WIDTH_SIX_SYMMETRY_QUOTIENT.md`](WIDTH_SIX_SYMMETRY_QUOTIENT.md). Vertical
+reflection reduces the height-three certificate from 14,726 to 7,661 states
+and the height-six length-four frontier from 7,506,432 to 3,754,512. It reaches
+the optimized height-six length-five value \(16=F(6,5)\), but the next layer
+still reaches the packed-table boundary. The quotient improves the resource
+diagnosis without supplying the missing periodic proof.
+
 ## Reproduction
 
 From the repository root:

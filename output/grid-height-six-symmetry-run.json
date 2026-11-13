@@ -1,0 +1,25 @@
+{
+  "status": "exploratory-resource-check",
+  "height": 6,
+  "quotient": "vertical reflection on selected and witness flags",
+  "prefixes": [
+    {"length": 1, "SF": 4, "reachable_states": 36},
+    {"length": 2, "SF": 6, "reachable_states": 2080},
+    {"length": 3, "SF": 10, "reachable_states": 68592},
+    {"length": 4, "SF": 12, "reachable_states": 3754512},
+    {"length": 5, "SF": 16, "reachable_states": 18519358}
+  ],
+  "height_three_regression": {
+    "original_states": 14726,
+    "canonical_states": 7661,
+    "period": 3,
+    "increment": 5,
+    "score_vector": [2, 4, 5, 7, 9, 10, 12, 14, 15, 17, 19, 20, 22, 24, 25],
+    "canonical_scores_match_both_reflections": true
+  },
+  "height_six_failure": {
+    "condition": "fixed 2^25-slot table limit at the next layer",
+    "peak_resident_bytes": 1058619392,
+    "mathematical_counterexample": false
+  }
+}
