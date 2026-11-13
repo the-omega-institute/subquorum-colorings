@@ -1,0 +1,127 @@
+{
+  "recorded_at": "2026-11-13T01:10:57.058684+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "32ce671d-4bf2-4bce-b39c-d36425dc3ea9",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af66057-c304-83ec-81e8-39b24a9b3cf1",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/all_helper_optimization.py": {
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    "develop/auxiliary_square_forest.py": {
+      "bytes": 9700,
+      "sha256": "021b832e226ee1837fea82af08ddc9b73ef7c84d6e06ff3dd8ddd2f2967e3ec4"
+    },
+    "develop/cyclic_rank_extensions.py": {
+      "bytes": 7106,
+      "sha256": "13c0ec8a6011b3a509db143c17d4cbca5e5e248208f6871cc97d71d001198ccc"
+    },
+    "develop/fixtures/c12-reservation-examples.json": {
+      "bytes": 22723,
+      "sha256": "55f5ed51c3b9bc9aa8df9033558428a595e0519659afbbb8396a3325fa726b58"
+    },
+    "develop/mixed_owner_bridges.py": {
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 10043,
+      "sha256": "c0eec60a1ed3401c0997a08f093a2ff1c65a460df2a6014a9c8a8f42bbbfb251"
+    },
+    "develop/reserved_owner_squares.py": {
+      "bytes": 9730,
+      "sha256": "3542d0525c4e3054ced05323b34acfc50c9a4831acb7db7a2a3939ebc5dc8757"
+    },
+    "docs/ALL_OWNER_AUXILIARY_SQUARES.md": {
+      "bytes": 5833,
+      "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+    },
+    "docs/CYCLIC_RANK_EXTENSIONS_AND_PARITY_OBSTRUCTION.md": {
+      "bytes": 15145,
+      "sha256": "21cacacd6f45061a9fc3c0b5bad763766c9ff49e3acbba2c2080c977b7135766"
+    },
+    "docs/MIXED_OWNER_BRIDGES.md": {
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md": {
+      "bytes": 7858,
+      "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+    },
+    "docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md": {
+      "bytes": 17147,
+      "sha256": "16fb3113d3aa792ff0d4b57108eafa0796d168dd0c97e41a21e383a15afe2e84"
+    },
+    "manuscript/auxiliary-square-forest-proof.tex": {
+      "bytes": 8465,
+      "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+    },
+    "manuscript/auxiliary-square-proof.tex": {
+      "bytes": 6405,
+      "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+    },
+    "output/reserved-owner-squares-check.json": {
+      "bytes": 1633,
+      "sha256": "97930756b166c70494ad3767b1dfbf18228bfbe7803f6740bfeb79bf8e5504d2"
+    },
+    "scripts/check_reserved_owner_squares.py": {
+      "bytes": 10949,
+      "sha256": "dc5fbf7b17f91eef0dcd6c0886df7419595fc83b4657bdc524b5b2a219244d00"
+    }
+  },
+  "all16frozen_files_unchanged_locally": true,
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_reserved_owner_squares.py --output /tmp/independent-c12.json",
+    "exit_code": 0,
+    "wall_runtime_seconds": 12.811735184,
+    "user_CPU_seconds": 12.752531,
+    "system_CPU_seconds": 0.035401,
+    "max_RSS_KiB": 13568,
+    "python": "CPython3.12.14",
+    "platform": "Linuxx86_64 glibc2.41",
+    "assertions_enabled": true,
+    "PYTHONOPTIMIZE": "unset",
+    "PYTHONHASHSEED": "unset",
+    "PYTHONWARNINGS": "unset",
+    "PYTHONPATH": "unset",
+    "LANG": "C.UTF-8",
+    "LC_ALL": "C.UTF-8",
+    "stdout_bytes": 1487,
+    "stderr_bytes": 0,
+    "stderr": "",
+    "warnings": "none",
+    "generated_report_bytes": 1633,
+    "full_report_byte_identical": true,
+    "original_checker_unchanged": true,
+    "case_trimming": false,
+    "all16payloads_hash_checked_before_after": true,
+    "manifest_and_payload_zip_member_bytes_equal_after": true
+  },
+  "reviewer_reported_extra_controls": {
+    "models": 48,
+    "scope": "Eight frozenfixtures timeszero/threeaddeddisconnectedsquares timesthree deterministicrelabelings, changededgeorientations/order; actualmatchingcover andphysicaladjacency",
+    "exit_code": 0,
+    "approx_script_seconds": 0.0753,
+    "separate_stderr_length": "unmeasured; combinedtooloutput"
+  },
+  "evidence_bundle_scope": "Reviewer described unique-c12-independent-audit.zip; this bundle was not retrieved locally. Complete review response retained here; execution facts attributed to reviewer. Local sourceZIP/report hashes independently match the quoted hashes.",
+  "scope": "All-size physical unique auxiliary C12, A=sC4+C12, perfectP/Q, arbitrary physical even ownercycles; actual all-helper certificates and retained prior sufficientclasses",
+  "coverage_qualifications": [
+    "MarkedC8/C10 loops exhaust supports/exteriorpatterns under SORTED ownercyclicorder, not allcyclicorders; writtenlemma proves arbitraryorder.",
+    "Each768localcontrols is48physicalplacements times16fixedboundarysubsets.",
+    "29exactallhelperoptimizations use inheritedsolve sharing score; independentliteralmatching and equalmatching/cover certify producedcosts.",
+    "Exactsubsetrank/Rado recomputation applies to<=10remainingexceptionalfamilies.",
+    "48extra controls are separate from542originalphysicalmodels.",
+    "No required proof repairs; no Lean/kernel, priority, journal-readiness or unrestricted graphoptimumclaim.",
+    "General mixedcyclic8b/3, physicalmultipleHall/unitgrid5/6/gridtriple and sharpgap remain open; fullgoalACTIVE."
+  ],
+  "complete_response": "ACCEPTThe exact supplied version establishes the stated physical unique- $C_{12}$  theorem. The constructor implements the proof\u2019s branches with actual matching and physical dissociation certificates. I found no load-bearing proof gap or implementation defect within the stated domain.The original unchanged checker completed successfully, its entire generated report is byte-for-byte identical to the supplied report, and all 16 payload files match the manifest before and after execution.This acceptance includes arbitrary placement of the owner cycles and arbitrary  $K_4$  contacts under the stated physical colouring hypotheses. The wider research goal remains ACTIVE.The complete rationale, raw execution streams, full hash records, generated report, separate extra controls, and original input archive are preserved in    unique-c12-independent-audit.zip.1. Exact-source identity and actual executionThe audited archive is unique-c12-proof-and-source.zip, containing 16 manifest-listed payload files totalling 168,742 bytes, plus MANIFEST.json.Archive SHA-256:Plain textd7f62bcf25cfb4d5b8df0dc3ff2345f7c8feec6ce402935f669cc81a326466a9I executed the requested command from the extracted source root:Bashpython3 -B scripts/check_reserved_owner_squares.py --output /tmp/independent-c12.jsonExecution itemActual resultExit code0Wall runtime12.811735184 secondsUser CPU time12.752531 secondsSystem CPU time0.035401 secondsMaximum resident memory13,568 KiBInterpreterCPython 3.12.14PlatformLinux x86-64, glibc 2.41AssertionsEnabled: __debug__ == True, optimization level 0PYTHONOPTIMIZEUnsetBytecode writingDisabled by -BPYTHONHASHSEED, PYTHONWARNINGS, PYTHONPATHUnsetLANG, LC_ALLC.UTF-8stdout1,487 bytes, one JSON line including its terminating newlinestderr0 bytes, exact content \"\"Emitted warningsNoneGenerated report1,633 bytesFull generated/supplied report byte comparisonEqualThe complete stdout is retained verbatim as execution.stdout in the evidence bundle. Its counts, method map and internal digest are reported below. The original checker ran to completion with its full case list.Source and report integrityEvery manifest entry passed both its byte-count check and SHA-256 check before execution and after execution. A final direct comparison also established that every payload file and MANIFEST.json remained byte-for-byte equal to the corresponding original ZIP member. The extracted source tree acquired no additional files.Key hashes:FileSHA-256docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md16fb3113d3aa792ff0d4b57108eafa0796d168dd0c97e41a21e383a15afe2e84develop/reserved_owner_squares.py3542d0525c4e3054ced05323b34acfc50c9a4831acb7db7a2a3939ebc5dc8757scripts/check_reserved_owner_squares.pydc5fbf7b17f91eef0dcd6c0886df7419595fc83b4657bdc524b5b2a219244d00Generated and supplied report97930756b166c70494ad3767b1dfbf18228bfbe7803f6740bfeb79bf8e5504d2The report\u2019s internal deterministic digest is:Plain text44ab6e41c7743688237bcecbc13b6f8e1b230293da745d0448b71737fc45d21bThat internal digest and the report-file SHA-256 serve different purposes. The report comparison used the complete byte strings.2. Normalization, minimum omissions and the common forestThe theorem\u2019s \u201cSetting and statement\u201d correctly establishes\n$$\\boxed{\\beta_I=3b-\\min_{U\\text{ permitted}}\\nu(A[U]).}$$\nFor a fixed permitted  $U$ , the selected owners are  $V\\setminus U$ . Selecting every helper forces the witness set  $T\\subseteq U$  to be independent in  $P\\cup Q$ : each selected witness already meets its helper, and each helper can meet at most one selected witness. These conditions, together with the permitted owner set, also suffice for physical dissociation.Since  $A[U]$  is bipartite,\n$$b+(N-|U|)+\\alpha(A[U])\n=b+N-\\nu(A[U])\n=3b-\\nu(A[U]).$$\nThe minimum omission count on an owner cycle of length  $m$  is  $\\lceil m/3\\rceil$ . Thus minimum choices have total cardinality\n$$|U|=\\frac N3+d,$$\nwith the stated weights  $2/3,1/3,0$  for lengths congruent to  $4,2,0\\pmod6$ . Every component of  $A[U]$  is a path or an even cycle, so\n$$\\delta(U)=|U|-2\\nu(A[U])$$\nis exactly the number of odd-order induced components.The prescribed-edge exchange construction works for every exceptional owner cycle. Its gaps sum to the owner length, and exchanging the first omitted vertex for its successor changes the first and final gaps while keeping each gap at most three. Both omission sets remain permitted and minimum.The supplied square-forest manuscript proves the exact Rado formula\n$$r=\\min_{J\\subseteq[h]}\\bigl(h-|J|+\\rho(E_J)\\bigr).$$\nIts contraction argument and dummy-edge construction cover empty families and parallel projected edges. The weighted consequence follows because each exceptional family has weight at most  $2/3$ , giving\n$$h-|J|\\ge d_{\\mathrm{all}\\setminus J}.$$\nReservation compatibilityThe reservation argument uses a union  $R$  of whole auxiliary components. After contraction, its node is chosen as the root of its forest tree. Leaf elimination supplies at least  $r$  odd original auxiliary components outside  $R$ .Every unreserved owner membership is then frozen, including membership on the free vertices inside  $R$ . The reserved choices occur entirely inside  $R$ . Consequently,\n$$\\delta(U)\\ge r+\\delta_R.$$\nThe exterior contribution and regional contribution concern disjoint auxiliary components. The regional contribution is counted once. This establishes the simultaneous compatibility required by the proof.3. The two local lemmasFixed-outside exceptional-cycle lemmaThe symmetric-difference argument in \u201cTwo local lemmas with fixed exterior choices\u201d is valid.Suppose the regional cardinality is even and all the prescribed-edge choices have perfect matchings. Two such choices differing only by  $x/y$  have matchings whose symmetric difference contains an alternating path from  $x$  to  $y$ . Its first and last edges belong to different matchings, so the path has even length.Therefore  $x,y$  occupy the same bipartition side of one component of\n$$H=A[F_0\\cup C].$$\nApplying this to every edge of the connected owner cycle puts all marked vertices of  $C$  on the same side of one component of  $H$ .All vertices of that component outside  $C$  belong to the fixed retained set. A perfect matching after retaining exactly  $\\lceil |C|/3\\rceil$  marked vertices would therefore require the original bipartition imbalance to be\n$$|C|-\\lceil |C|/3\\rceil\\ge2.$$\nEvery component of  $H$  is a path or an even cycle, with imbalance at most one. This contradiction establishes positive deficiency. Even cardinality then gives deficiency at least two; odd cardinality gives positive deficiency directly.The host graph throughout this argument contains the actual auxiliary edges.Four-boundary lemmaThe lemma holds for every prescribed  $F_0\\subseteq F$ , for both  $k=3$  and  $k=4$ .For even  $|F_0|$ , fixing two omissions on all but one reserved square leaves the final square eligible for the fixed-outside lemma. The regional omission cardinality is even, yielding\n$$\\delta_R\\ge2.$$\nFor odd  $|F_0|$ , the physical-colour balance is correct. The perfect matching  $Q[R]$  balances the colours on  $R$ , and each reserved owner square has two vertices of each physical colour. Thus the four free vertices also have two of each colour.The temporary alternating owner square supplies the opposite-pair matching  $D$ . The union  $P[R]\\cup D$  consists of alternating even cycles and shared single edges, so a proper second colouring  $t$  exists. The labels  $(c,t)$  then have the required properties:Every real or temporary square has all four labels.Each label occurs  $k+1$  times.Every actual  $A$ -edge has distinct endpoint labels.For a specified label  $\\lambda$ , the three label pairs containing  $\\lambda$  count exactly  $2(k+1)$  auxiliary edges. The three pairs avoiding  $\\lambda$  also count exactly  $2(k+1)$ . Hence either family contains a pair with at most\n$$h_k=\\left\\lfloor\\frac{2(k+1)}3\\right\\rfloor$$\ninduced edges.When  $|F_0|=1$ , deleting the unwanted free vertex cannot increase matching number. When  $|F_0|=3$ , adding the required free vertex increases matching number by at most one. Both calculations give\n$$\\delta_R\\ge2k+1-2h_k=3\n\\qquad(k=3,4).$$\nThe final choice restores  $F_0$  exactly and keeps exactly two omissions on each reserved owner square. The temporary square contributes labels only. The T4 proof uses the valid two-unit regional guarantee.4. Contained exceptional cycles and their rank boundsThe connected reductions match the supplied dependencies. After those reductions, the component containing  $L=C_{12}$  has at least two auxiliary squares and an exceptional owner cycle of length at least eight.The possible contained exceptional reservations and bounds are:Reserved cyclesReserved weightFree root capacityRequired forest bound $C_{10}$  $2/3$ 2 $r\\ge d_{\\rm other}$  $C_8$  $1/3$ 4 $r\\ge d_{\\rm other}$ Two  $C_4$ 's $4/3$ 4 $r\\ge d_{\\rm other}$ One  $C_4$  $2/3$ 8 $r\\ge d_{\\rm other}-1/3$ For capacity four, an occupied support with  $v$  nodes and exceptional counts  $x,y$  satisfies  $v\\ge x+2y$ . Its rank  $v-1$  pays  $(2x+y)/3$  whenever  $x+5y\\ge3$ . The remaining failures require one or two owner squares to saturate one or two capacities.The exclusions are sufficient:Away from the root, saturation closes an all-owner- $C_4$  component.Root capacity two excludes saturation in the  $C_{10}$  row.Restoring two reserved squares closes an all- $C_4$  component.Restoring a reserved  $C_8$  closes  $L$  alone or  $L$  plus one auxiliary square. These are exactly the earlier small base cases.The last point confirms that the at-most-one-auxiliary-square base case is genuinely needed for the  $C_8$  row.For one reserved  $C_4$ , serious rank loss implies\n$$x+5y+\\frac92a\\le4.$$\nThe resulting cases are\n$$(q,x)=(0,1),(0,2),(1,3),(2,4),\n\\qquad y=a=0.$$\nThey supply either another contained square or a saturated closed all- $C_4$  region. Thus the root support loses at most  $1/3$ .The four resulting deficiency bounds are, respectively,\n$$d+\\frac13,\\qquad d+\\frac23,\\qquad d-\\frac13,\\qquad d.$$\nEach reaches the required threshold. With two reserved squares, the argument fixes one before varying the other and takes one regional contribution.5. The seven-type classification and T3/T4With no exceptional cycle contained in  $L$ , serious root rank loss requires\n$$4x+8y+6a\\le4q+12,\\qquad\n2x+y\\ge3q+2,\\qquad q\\ge1.$$\nCombining them gives\n$$x+5y+\\frac92a\\le7.$$\nIf  $a\\ge1$ , then  $y=0$  and  $x\\le2$ , contradicting the second inequality. Therefore  $a=0$ . The complete list is: $(q,x,y)$ Result $(1,3,0)$ T3, four free vertices $(2,4,0)$ T4, four free vertices $(1,4,0)$ Saturated all- $C_4$  component $(2,5,0)$ Saturated all- $C_4$  component $(3,6,0)$ Saturated all- $C_4$  component $(4,7,0)$ Saturated all- $C_4$  component $(1,2,1)$ Saturated component with one auxiliary squareThe inequalities establish this classification at arbitrary size. The checker\u2019s seven integer controls agree with it.T3Contracting the region leaves four free root vertices. The capacity-four argument gives full rank for every remaining subfamily. Restoring the three reserved squares handles the small root-saturation cases.Thus\n$$r\\ge d_{\\rm other},\n\\qquad\n\\delta\\ge r+2\\ge d.$$\nT4For an occupied support,\n$$(v-1)-\\frac{2x+y}{3}\n\\ge\\frac{x+5y-3}{3}.$$\nThis is positive when  $x+5y\\ge4$ . Otherwise  $y=0$  and  $x\\in\\{1,2,3\\}$ . Failure of strictness forces  $v=x$ , all owner lengths equal to four, and saturation of every capacity.Away from the root this closes an all- $C_4$  region. At the root, restoring the four reserved squares gives the same contradiction. Occupied isolated supports from empty crossing families are included. Hence\n$$\\rho(E_J)>d_J$$\nfor every nonempty remaining exceptional subfamily.At least one remaining exceptional family exists: the earlier owner- $C_4/C_{6k}$  base case already handles instances lacking a longer exceptional cycle. In Rado\u2019s formula, the empty-subfamily term satisfies  $h>d_{\\rm other}$ , and every nonempty-subfamily term also exceeds  $d_{\\rm other}$ .Therefore\n$$r>d_{\\rm other},\n\\qquad\nr\\ge d_{\\rm other}+\\frac13.$$\nAdding the two regional units gives exactly\n$$\\delta\\ge d_{\\rm other}+\\frac73=d-\\frac13.$$\nInteger rounding and physical reconstructionFor minimum omissions,\n$$\\nu(A[U])\n=\\frac{N/3+d-\\delta(U)}2\n\\le\\frac{N+1}{6}.$$\nSince  $N$  is even,\n$$\\left\\lfloor\\frac{N+1}{6}\\right\\rfloor\n=\\left\\lfloor\\frac N6\\right\\rfloor.$$\nComponent costs add, and the sum of their floors is at most the global floor. Finally,\n$$\\beta_I\n\\ge3b-\\left\\lfloor\\frac N6\\right\\rfloor\n=\\left\\lceil\\frac{8b}{3}\\right\\rceil.$$\n6. Constructor and dependency auditThe implementation follows these proof obligations.Domain and decomposition. prepare checks the indexed matchings, physical colours, owner degree constraints and component types. The public constructor requires perfect  $Q$  and cyclic owner components. Physical colour agreement on  $P$  and disagreement on  $Q$  also force  $P\\cap Q=\\varnothing$ .certificate decomposes  $A\\cup B$ , relabels every component and its colours, and maps each returned omission set back to the original indices. Both endpoints of each filtered edge belong to the same component. Reassembly preserves owner permission and adds matching costs.Inherited classes. The supplied all-square theorem, one- $K_4$  repair, owner- $C_4/C_{6k}$  theorem, and cyclic-rank suppliers have the hypotheses required by their calls. In particular, an obstructing  $K_4$  requires an entire auxiliary square. The physical colouring prevents virtual owner- $C_4$  opposite pairs from supplying its obstructing diagonals.Branch order. The constructor retains its previous cyclic sufficient classes, then handles the at-most-one-square case. Contained reservations use precisely  $[4]$ ,  $[4,4]$ ,  $[8]$ , or  $[10]$ . In the uncontained case, T3/T4 are searched before the ordinary-rank branch is accepted.There is a precise implementation distinction here: _project computes an ordinary forest before the reservation search; the decision to return the ordinary-rank certificate occurs after that search. Thus the intended reservation branches are preferred even when ordinary rank could already suffice.Local compatibility. The constructor preserves U-R literally. T3/T4 also restore U & F == F0 literally. For two contained squares it varies one and fixes the other. The matching calculations use actual auxiliary edges. T4 checks the positive residual and strict forest bound before applying its local guarantee.Matching and cover. The constructor returns a maximum matching and an independent witness set. Its minimum vertex cover is encoded by\n$$\\text{cover}=U\\setminus\\texttt{witnesses}.$$\nThe checker derives and validates this cover. Equal matching and cover cardinalities certify the matching optimum. The returned physical cardinality is  $3b-|M|$ .The inherited three-colouring routine retains its declared potentially exponential feasibility-search scope.7. What the original checker establishedThe checker independently assembles the actual  $5b$ -vertex adjacency graph, includes every helper, checks physical bipartiteness and degrees, and verifies induced selected degree at most one.It also checks actual matching-edge membership, disjoint matching endpoints, the derived vertex cover, equality of matching and cover sizes, and actual odd induced-component counts. Small cases additionally use the literal subset-mask matching recurrence.The actual numerical results were:ControlCountMarked square supports and fixed exterior subsets on  $C_{12}$ 126,720Marked  $C_8$  supports and fixed exterior subsets7,920Marked  $C_{10}$  supports and fixed exterior subsets264Four-boundary controls,  $k=3$ 768Four-boundary controls,  $k=4$ 768Physical models / physical certificates / induced-deficiency checks542 eachIndependent reserved-region deficiency checks330Literal small matching controls29Exact small all-helper optimization comparisons29Individual subset-rank controls1,207Rado minimum comparisons346Frozen branch models8Disconnected reassembly models1Serious-rank integer types7Each seeded class\u2014random, internal4, internal44, internal8, internal10, T3 and T4\u2014contributed 72 models. Thus\n$$542=8+29+7\\cdot72+1.$$\nThe method counts were:MethodComponent recordsPrior cyclic class215At most one auxiliary square1Unique  $C_{12}$ , ordinary rank16Contained  $C_4$ 90Contained  $C_4+C_4$ 50Contained  $C_8$ 73Contained  $C_{10}$ 73T3 four boundary18T4 strict rank26These total 562 component records because the disconnected input contributes 21 components.Coverage qualificationsThese qualifications describe the actual finite controls and leave the theorem\u2019s proof intact:The  $C_8/C_{10}$  loops use the sorted support as the owner cyclic order. They exhaust supports and fixed exterior subsets under that convention. The paper\u2019s fixed-outside argument supplies arbitrary owner cyclic order.Each 768-case four-boundary set is 48 physical placements times all 16 boundary subsets. These counts describe controlled instances.The 29 exact optimizations enumerate all omission subsets through the inherited solve routine. That routine shares score with the constructor. The literal matching recurrence and matching/cover equality provide separate checks for the produced certificates. The comparison asserts that the exact optimum is at least the constructed lower bound.The full subset-rank/Rado recomputation applies to returned forest records with at most ten remaining exceptional families. Its treatment of the empty subset in the strict-rank branch is correct.8. Separate extra controls and final scopeA separate control exercised all eight frozen fixtures, each with zero or three added disconnected squares and three deterministic random relabelings. It also changed edge orientations and edge-list order.All 48 models passed applicability, the matching-cost floor, actual matching/cover equality, and separately assembled physical adjacency checks. These controls are recorded separately from the original checker\u2019s counts. Their process exited with code 0; the script reported approximately 0.0753 seconds. The extra control\u2019s tool output combined streams, so its separate stderr length was unmeasured. The original checker has the separate stdout/stderr capture reported above.Required proof repairs: none identified. The exact-source conclusion is the all-size physical theorem for  $A=sC_4\\sqcup C_{12}$ , together with the implemented certificate construction and its retained cyclic sufficient classes.General mixed auxiliary cycles, arbitrary multiple long auxiliary components, physical grid routing, and the unrestricted sharp star-forming gap remain separate research targets. Accept this exact archive as the local unique- $C_{12}$  milestone, retain the stated coverage qualifications in its audit record, and keep the wider goal ACTIVE."
+}

@@ -1,6 +1,22 @@
 # Current continuation
 
 
+[One auxiliary twelve-cycle](docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md) proves the actual all-helper target
+for A=sC4+C12 with arbitrary physical owner even cycles, without a contact
+condition. One common exterior exchange forest is followed by a reserved-region
+choice preserving every boundary membership. A four-boundary lemma and strict
+rank for the four-owner-square case give the exact integer bound
+nu(A[U])<=floor(N/6), hence beta_I>=ceil(8b/3).
+
+The [exact-source independent ACCEPT](output/unique-c12-review.json)
+ran the original checker unchanged and reproduced its complete report
+byte-for-byte. Controls include126720 marked-square fixed-exterior cases
+on C12,7920 C8 and264 C10 cases,1536 four-boundary literal matching controls,
+542 complete physical models,1207 subset-rank and346 Rado comparisons, and29
+exact small all-helper optima. Arbitrary sizes follow from the written proof.
+The general mixed cyclic bound and physical grid questions remain open.
+
+
 [Simultaneous K4 contact repair](docs/SIMULTANEOUS_K4_CONTACT_REPAIR.md)
 selects one owner pair per bad square through a sufficient 2-SAT criterion;
 a contact multigraph pseudoforest always permits it. Three actual all-helper
