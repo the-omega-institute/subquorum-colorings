@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "theorem": "Omega(P_6 square P_n)=3n for even n and 3n+1 for odd n",
+  "stable_state_count": 257792,
+  "seed_widths": [
+    4,
+    5
+  ],
+  "two_column_increment": 6,
+  "potential_iterations": [
+    3,
+    1,
+    1,
+    0
+  ],
+  "missing_transitions": 0,
+  "largest_final_potential_violation": 0,
+  "minimum_final_potential": 0,
+  "seed_constants": {
+    "width_4": 12,
+    "width_5": 16
+  },
+  "direct_prefixes": {
+    "widths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "maxima": [
+      4,
+      6,
+      10,
+      12,
+      16,
+      18,
+      22,
+      24,
+      28,
+      30
+    ],
+    "all_seam_flag_maxima_equal": true
+  },
+  "checks": {
+    "four_row_transfer": "PASS",
+    "width_six_no_crossing": "PASS",
+    "six_by_four_literal": "PASS",
+    "safe_boundary_composition": "PASS",
+    "multiple_hall_budget": "PASS",
+    "oracle": "ACCEPT"
+  },
+  "sha256": {
+    "docs/WIDTH_SIX_TWO_SEAM_REPRESENTATIVE_EQUALITY.md": "64ce9f0045d4c6eda4368fe535da96609cce66054fc1ab3ec0905b422b0aa8ad",
+    "scripts/explore_representative_height_six.cpp": "6d4fa2c4d9bcadab288597b35ce911ad42eb674216ee8cc6765f2c73b95250ef",
+    "output/representative-height-six-two-seam-potential.tsv": "6dae3891bf6948c03989c67b1746b87816b9c99c98f87410bc6009a674607419",
+    "output/representative-height-six-two-seam-final-potential.stdout": "8fe0d0ae328133a5817c248b3d6753fc81d5bd44d71c932eabbe74ca5788319c",
+    "output/representative-height-six-two-seam-final-potential.stderr": "afd51f5fcb1bb37b5f6621ff03fb85a1878cdfe2575b640660e7811597458d27",
+    "output/representative-height-six-two-seam-final-prefix.json": "64776f7b1c6b08319af5f4b70746a23d11c94587894bfcac62ea54634041bdcd",
+    "output/width-six-two-seam-oracle-review.json": "5173233f2ebeca14777172cb599bc366ac600f160edf73190451cafed04fde12"
+  },
+  "new_lean": false,
+  "scope": "Exact representative-pair theorem at height six; colouring equality uses prior beta formula and representative reduction."
+}
