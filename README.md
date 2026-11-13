@@ -1,6 +1,35 @@
 # Current continuation
 
 
+[Simultaneous K4 contact repair](docs/SIMULTANEOUS_K4_CONTACT_REPAIR.md)
+selects one owner pair per bad square through a sufficient 2-SAT criterion;
+a contact multigraph pseudoforest always permits it. Three actual all-helper
+sets sum to8b. A connected40r-vertex mixed family has A=3rC4+C4r, B=2rC8,
+at least r K4s for every owner phase, and exact all-helper optimum23r for
+every r>=2. Criterion failure alone does not refute the target.
+
+[New cyclic rank classes and a coarse-parity obstruction](docs/CYCLIC_RANK_EXTENSIONS_AND_PARITY_OBSTRUCTION.md)
+prove the actual8b/3 target for arbitrary auxiliary squares plus at most one
+C8, with arbitrary physical owner even cycles, and for arbitrary long cycles
+under a square-incidence condition on exceptional owner cycles. One common
+rainbow forest and a reserved owner-square internal-deficiency lemma handle
+the needed compatibility. An exact connected family has true cost0 but
+optimized whole-auxiliary parity cost9t+2 versus target8t+2: its unbounded
+t shortfall disproves only that method, not the target.
+
+The [final exact-source ACCEPT](output/mixed-cyclic-final-review.json)
+ran all three original checkers and reproduced all three complete reports
+byte-for-byte. A preliminary recursion-depth issue was fixed by iterative
+DSATUR; actual1200-index exterior controls and844 literal small-colouring
+controls pass, with the inherited owner report unchanged. An erroneous
+preliminary coordinate suggestion was independently rejected and the correct
+original coordinates retained; the receipt preserves both dispositions.
+No polynomial search runtime or Lean verification is claimed. The full goal
+remains ACTIVE: general mixed cyclic8b/3, sharp unrestricted graph gaps and
+physical multiple-Hall/unit-grid objectives remain open.
+
+
+
 [Short auxiliary mixtures and owner-path surplus](docs/SHORT_AUXILIARY_COMPLETION_AND_PATH_SURPLUS.md)
 prove beta_I>=ceil(8b/3+R(B)/6) for arbitrary owner paths/even cycles when
 A has only P2/P4/C4 components; R sums owner path orders modulo3. One

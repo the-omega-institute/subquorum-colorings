@@ -144,18 +144,24 @@ def three_colour(vertices, edges):
     adj = {v:set() for v in vertices}
     for a,b in edges: adj[a].add(b); adj[b].add(a)
     assigned = {}
-    def search():
-        if len(assigned) == len(adj): return True
+    # Explicit frames reproduce the recursive search order without a Python
+    # recursion-depth limit. Backtracking still has no polynomial bound.
+    stack = []
+    while len(assigned) < len(adj):
         v = max((v for v in adj if v not in assigned),
                 key=lambda v:(len({assigned[u] for u in adj[v] if u in assigned}),len(adj[v]),-v))
         unavailable = {assigned[u] for u in adj[v] if u in assigned}
-        for c in range(3):
-            if c not in unavailable:
-                assigned[v] = c
-                if search(): return True
-                del assigned[v]
-        return False
-    assert search(), 'Expected K4-free subcubic graph'
+        stack.append((v, iter([c for c in range(3) if c not in unavailable])))
+        while stack:
+            v, choices = stack[-1]
+            assigned.pop(v, None)
+            try:
+                assigned[v] = next(choices)
+                break
+            except StopIteration:
+                stack.pop()
+        else:
+            raise AssertionError('Expected K4-free subcubic graph')
     return assigned
 
 

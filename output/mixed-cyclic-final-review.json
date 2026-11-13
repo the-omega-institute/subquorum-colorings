@@ -1,0 +1,579 @@
+{
+  "recorded_at": "2026-11-13T00:34:42.747893+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "5b2d24be-84ae-4d37-bb2c-6901d10230b4",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af65a09-f134-83ec-8aa2-285aafba70ee",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/all_helper_optimization.py": {
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    "develop/auxiliary_square_forest.py": {
+      "bytes": 9700,
+      "sha256": "021b832e226ee1837fea82af08ddc9b73ef7c84d6e06ff3dd8ddd2f2967e3ec4"
+    },
+    "develop/cyclic_rank_extensions.py": {
+      "bytes": 7106,
+      "sha256": "13c0ec8a6011b3a509db143c17d4cbca5e5e248208f6871cc97d71d001198ccc"
+    },
+    "develop/fixtures/k4-contact-base.json": {
+      "bytes": 3011,
+      "sha256": "882a30646d55f30b179634af4cd802a2de753364735bc4a10da43f5522527061"
+    },
+    "develop/fixtures/owner-matching-obstruction.json": {
+      "bytes": 3579,
+      "sha256": "eedfdfa18fd19e854be73394117067ee1e5adddd038a21bae7a51e50a36b8fe5"
+    },
+    "develop/k4_contact_repair.py": {
+      "bytes": 9915,
+      "sha256": "70721b0cfdb32ed20b5df53353a910d177a2597f212e7fdc4a2ac1a8b94e81c3"
+    },
+    "develop/mixed_owner_bridges.py": {
+      "bytes": 9881,
+      "sha256": "014fd2f4ff5a2407b5f8e3768c18e31e3a501a63d3dc686728ac359adb511b4d"
+    },
+    "develop/owner_matching_certificate.py": {
+      "bytes": 10043,
+      "sha256": "c0eec60a1ed3401c0997a08f093a2ff1c65a460df2a6014a9c8a8f42bbbfb251"
+    },
+    "develop/subcubic_intrinsic_obstruction.py": {
+      "bytes": 6461,
+      "sha256": "5bd269d375ca57d0508cecadc8736ec87106cf5e1cf142f9e242f3bd38e9a6d7"
+    },
+    "develop/subcubic_partial_template.py": {
+      "bytes": 5720,
+      "sha256": "e7e499e8786b17778bee99a1ccdd73b463d4e5fbb9b0d7cdf8b2de9f9a9fd9d7"
+    },
+    "docs/ALL_OWNER_AUXILIARY_SQUARES.md": {
+      "bytes": 5833,
+      "sha256": "0d40d6692f0b6a6dfaaa314412ada8c673642e28994a191cff60e06e9ba3d82f"
+    },
+    "docs/CYCLIC_AUXILIARY_REDUCTION.md": {
+      "bytes": 9918,
+      "sha256": "f447051a6a026b0b30f103fe59c8b0ead3301b48e65b2034024f1f6ec7069eeb"
+    },
+    "docs/CYCLIC_RANK_EXTENSIONS_AND_PARITY_OBSTRUCTION.md": {
+      "bytes": 15145,
+      "sha256": "21cacacd6f45061a9fc3c0b5bad763766c9ff49e3acbba2c2080c977b7135766"
+    },
+    "docs/MIXED_OWNER_BRIDGES.md": {
+      "bytes": 19766,
+      "sha256": "72b5d3a4c289ff83b9bce547a710fc6d5365b9da8ebe10e31383fcd8a94c4db7"
+    },
+    "docs/OWNER_MATCHING_AND_FOUR_CYCLE_OBSTRUCTIONS.md": {
+      "bytes": 7858,
+      "sha256": "675a8fbb9a0395426c81be1b1312247fdd0e41b0034156b7561561da3b0166a3"
+    },
+    "docs/SIMULTANEOUS_K4_CONTACT_REPAIR.md": {
+      "bytes": 12557,
+      "sha256": "a0005a247870eb8a7372f4aac6008a26c30d894c1d558b5b7a33a5d794bfa9c0"
+    },
+    "manuscript/auxiliary-square-forest-proof.tex": {
+      "bytes": 8465,
+      "sha256": "dce0a43274168a93df0a7084dd395b4dbc42fb8604db87e2c8c8ce9a95bf9ab4"
+    },
+    "manuscript/auxiliary-square-proof.tex": {
+      "bytes": 6405,
+      "sha256": "64b63ba6409e5da4cf501d2bd061845df4e4f2b1715954dc4aa5962cf3f241ce"
+    },
+    "output/cyclic-rank-extensions-check.json": {
+      "bytes": 59973,
+      "sha256": "a0c48d26370ceda075e3528788a540dd69fa313e81bf46064701be9faa79310d"
+    },
+    "output/k4-contact-repair-check.json": {
+      "bytes": 33792,
+      "sha256": "bdddecf3f8cdda946bd326f71ed6d77a41ed3210435c78c8db56f01202bac353"
+    },
+    "output/owner-matching-certificate-check.json": {
+      "bytes": 1144,
+      "sha256": "b7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84"
+    },
+    "scripts/check_cyclic_rank_extensions.py": {
+      "bytes": 11170,
+      "sha256": "2095e78df95c1b9f80d1aaef518962c079533918de5a68796dfddefc83370bd8"
+    },
+    "scripts/check_k4_contact_repair.py": {
+      "bytes": 14894,
+      "sha256": "9f85ba7e4e84c53cf42ad13749f1b7ca01f322c9e621ab8952b239a08179ba5c"
+    },
+    "scripts/check_owner_matching_certificate.py": {
+      "bytes": 11101,
+      "sha256": "4919a438bef16e331add6265e8f3c923ebb3656ff7b5cf92656913318718cff0"
+    }
+  },
+  "all24frozen_files_unchanged_locally": true,
+  "reviewer_reported_execution": {
+    "operating_system": "Linux x86_64",
+    "python": "3.13.5",
+    "assertions_enabled": true,
+    "PYTHONOPTIMIZE": "unset",
+    "commands": [
+      {
+        "command": "python3 -B scripts/check_k4_contact_repair.py --output /tmp/k4-final.json",
+        "exit_code": 0,
+        "runtime_seconds": 2.62,
+        "expected": {
+          "bytes": 33792,
+          "sha256": "bdddecf3f8cdda946bd326f71ed6d77a41ed3210435c78c8db56f01202bac353"
+        }
+      },
+      {
+        "command": "python3 -B scripts/check_cyclic_rank_extensions.py --output /tmp/rank-final.json",
+        "exit_code": 0,
+        "runtime_seconds": 4.61,
+        "expected": {
+          "bytes": 59973,
+          "sha256": "a0c48d26370ceda075e3528788a540dd69fa313e81bf46064701be9faa79310d"
+        }
+      },
+      {
+        "command": "python3 -B scripts/check_owner_matching_certificate.py --output /tmp/owner-final.json",
+        "exit_code": 0,
+        "runtime_seconds": 3.3,
+        "expected": {
+          "bytes": 1144,
+          "sha256": "b7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84"
+        }
+      }
+    ],
+    "original_checkers_unchanged": true,
+    "case_trimming": false,
+    "all3full_reports_byte_identical": true,
+    "all24payloads_checked_before_after": true,
+    "checker_stdout": "JSON reports; exact byte counts not supplied",
+    "checker_stderr_warnings_or_errors": "none reported",
+    "timing_measurements_written_to_stderr": true,
+    "exact_stderr_bytes_not_supplied": true
+  },
+  "preliminary_history": [
+    {
+      "stem": "review",
+      "verdict": "FIXABLE_GAPS",
+      "oracle": {
+        "task_id": "3d186585-aa4f-4a45-9925-c71e1939a4cb",
+        "conversation_id": null,
+        "pool": "chrono-chatgpt-pro-pool",
+        "model_label": "chatgpt-6-pro",
+        "observed_model_switcher": "gpt_6",
+        "observed_model_effort": "pro",
+        "chatgpt_url": "https://chatgpt.com/c/6af657d5-d1d4-83ec-98b8-da65c2c473c6",
+        "usage_estimated": true
+      },
+      "math_accepted": true,
+      "issue": "Default recursive DSATUR may exceed Python recursion depth",
+      "resolution": "Replaced by explicit stack with per-frame materialized colour list, literal844subcubiccontrols and actual1200exteriorcontrols; final audit accepts backtracking and report preservation",
+      "original_execution_report_bytes": 33651,
+      "original_execution_report_sha256": "58bdb0b53878871765bdcd9c0d5195720fd07d7fd453fbada75028f9740e8a47",
+      "original_execution_stderr_bytes": 0
+    },
+    {
+      "stem": "rank-review",
+      "verdict": "FIXABLE_GAPS",
+      "oracle": {
+        "task_id": "fd6064a4-4514-4d91-be60-72588f69d6f0",
+        "conversation_id": null,
+        "pool": "chrono-chatgpt-pro-pool",
+        "model_label": "chatgpt-6-pro",
+        "observed_model_switcher": "gpt_6",
+        "observed_model_effort": "pro",
+        "chatgpt_url": "https://chatgpt.com/c/6af65932-90c4-83ec-9a3d-986f4a823858",
+        "usage_estimated": true
+      },
+      "math_accepted": true,
+      "issue": "Reviewer claimed original C16 omission positions should end14 rather than13",
+      "resolution": "Review suggestion is incorrect: independent literal coordinates prove original source correct. Retained original source; integrated final audit ACCEPT binds it.",
+      "coordinate_review_erratum": {
+        "original_source_correct": true,
+        "review_suggestion_incorrect": true,
+        "source_change_required": false,
+        "explanation": "Natural vertex14 occurs at zero-based position13; position14 contains vertex13, which is absent from displayedU0. Original positions/gaps retained. The trial wrong assertion failed as expected and was reverted before delivery.",
+        "independent_standard_library_only": true,
+        "controls": [
+          {
+            "t": 1,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 2,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 3,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 4,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 8,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 16,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 32,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          },
+          {
+            "t": 64,
+            "relative_order": [
+              0,
+              2,
+              1,
+              3,
+              4,
+              6,
+              5,
+              7,
+              8,
+              10,
+              9,
+              11,
+              12,
+              14,
+              13,
+              15
+            ],
+            "relative_chosen": [
+              0,
+              3,
+              5,
+              10,
+              12,
+              14
+            ],
+            "positions": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              13
+            ],
+            "gaps": [
+              3,
+              3,
+              3,
+              3,
+              1,
+              3
+            ]
+          }
+        ]
+      },
+      "original_execution_report_bytes": 59914,
+      "original_execution_report_sha256": "29283065698e8770a6a81975437d310752c329ef7875fa6043b0fd7d3879da9e",
+      "original_execution_stderr_bytes": 1064,
+      "original_execution_stderr": "Unrelated Python startup artifact_tool spreadsheet warmup warning; original checker exit0/full report identical"
+    }
+  ],
+  "scope": "Simultaneous K4 contact repair/pseudoforest sufficient rule, connected exact23r family; uniqueC8 and squareincidence sufficient cyclic classes; exact optimized wholecomponentparity obstruction; iterative exteriorcolouring repair",
+  "limitations": [
+    "General mixedcyclic8b/3 and sharp unrestricted graphgap remain open.",
+    "Physical multipleHall routing, unitgrid5/6 and grid triple equality remain open.",
+    "betaI optima require allhelpers; no unrestricted beta2/SF2 optimum from new families.",
+    "DSATUR remains a feasibility search with no polynomial runtime claim.",
+    "Finite checks support implementation; written proofs establish arbitrary parameters.",
+    "Attached byte identity is separate from remoteGit preservation.",
+    "No Lean/kernel, novelty/priority or publication claim."
+  ],
+  "complete_final_response": "Verdict: ACCEPTThe exact attached final snapshot passes the three requested original checkers, all 24 manifest entries verify before and after execution, and all three regenerated reports match their attached counterparts byte for byte.I found no mathematical defect requiring a counterexample or additional hypothesis in the stated theorems. The recursive-to-iterative DSATUR correction is sound: the explicit stack preserves the recursive search's backtracking semantics and deterministic candidate order.Acceptance is for the supplied mathematical/source milestone, not for the unrestricted continuing goal.1. Exact snapshot and execution24/24 manifest entries verifiedCheckResultInitial manifest verification24/24 passFinal manifest verification24/24 passK4 checkerExit 0Cyclic rank checkerExit 0Inherited owner checkerExit 0Full report byte comparisons3/3 identicalExecution environment:Python 3.13.5Linux x86_64PYTHONOPTIMIZE unsetOriginal commands executed with python3 -BAssertions enabledNo checker modificationsNo case trimmingOriginal checkerRuntimeExitcheck_k4_contact_repair.py2.62 s0check_cyclic_rank_extensions.py4.61 s0check_owner_matching_certificate.py3.30 s0Total10.53 s0The checkers emitted their JSON results on stdout. No warnings or errors appeared on stderr; the timing measurements were emitted there by /usr/bin/time.Exact report comparisonsReportBytesSHA-256ComparisonK433,792bdddecf3f8cdda946bd326f71ed6d77a41ed3210435c78c8db56f01202bac353IdenticalCyclic rank59,973a0c48d26370ceda075e3528788a540dd69fa313e81bf46064701be9faa79310dIdenticalOwner matching1,144b7433a61f3a703fbc317366c6107a5a1d7287d989e7024b2b2cf670ae0df4f84IdenticalThese are full-file byte comparisons, not merely matching parsed JSON values.The inherited owner-matching report is unchanged. This establishes consistency with the attached snapshot, not remote Git identity or an independently established repository commit.2. Iterative DSATUR: backtracking auditThe important correction is in develop/owner_matching_certificate.py, three_colour.The implementation uses frames of the form:(vertex, iterator(materialized_candidate_colours))I checked the relevant state transitions:A vertex is selected using the original deterministic DSATUR ordering: saturation degree, ordinary degree, then vertex-index tie-break.Its unavailable colours are computed from currently assigned neighbours.Its candidate colours are materialized into a list before the frame is pushed.On each frame revisit, the current assignment for that frame's vertex is removed before trying the next candidate.If a descendant exhausts its candidates, its frame is popped, and the parent resumes with its next candidate.If a candidate succeeds, the frame remains available for later backtracking if a deeper assignment eventually fails.The crucial detail is that a parent frame's candidate iterator is retained while descendants are explored. Descendant assignments do not mutate the parent's candidate list. When backtracking reaches the parent, the parent's old assignment is removed and its next candidate is tried.This reproduces the recursive depth-first search order. It does not merely implement a greedy colouring that happens to succeed on the supplied examples.The candidate list is genuinely materialized, rather than recomputed against a potentially changed assignment state.The checker also reports:An iterative search above the default Python recursion limit.844 complete small-colouring controls.Six uncolourable controls, including the relevant K4 cases.Backtracking correction acceptedThere is still no polynomial-time guarantee for this DSATUR feasibility search. That limitation is correctly stated. The separate binary contact problem is solved by 2-SAT.3. Simultaneous K4 repairI accept the central sufficient theorem.The proof correctly distinguishes the two types of diagonals:On an owner C4, R uses virtual opposite diagonals. Actual owner edges are excluded from F.On other owner components, R uses actual matching edges and F contains the remaining owner edges.This makes F a matching and prevents two R-nodes from acquiring parallel F-adjacencies outside the virtual-C4 convention.The resulting argument has the necessary physical distinctions:Bad K4 components contain auxiliary squares, not owner C4 vertices.Each bad component supplies two binary choices.Contacts are between different binary parts at H-distance one or two.Each contact forbids precisely one combination of binary choices.Satisfying the 2-SAT instance ensures selected active pairs have mutual distance at least three.The three-set physical certificate is sound. In particular, the bonus-colour argument accounts for both F-neighbours, while the distance-three condition prevents two active pairs from simultaneously demanding the same exterior R-pair endpoint.The proof also correctly handles the physical owner C4 edges: two selected vertices of an owner C4 induce maximum degree at most one, regardless of whether they are adjacent.The three-set accounting is:ContributionTotal across three setsHelpers3bExterior R-pairs5bBad K4 components10 per component, replacing 10 for their two pairsOverall8bConsequently at least one actual physical dissociation set has size at least  $\\lceil 8b/3\\rceil$ .The pseudoforest corollary is also correct. Importantly, the incidence-Hall argument retains parallel contact edges. Flattening those edges would invalidate the stated sufficient condition.K4 checker evidenceControlCountContact models4,454Literal binary assignments87,411Literal physical certificates1,251Successful physical models310Complete small-colouring controls844Exact family constructions10Physical pseudoforest models279The counts are distinct controls in their respective categories, not necessarily distinct underlying graphs.4. Connected exact K4 familyI accept the all-scale construction and its exact optimum.For every  $r\\geq2$ , the construction has\n$$A=3rC_4\\cup C_{4r},\\qquad B=2rC_8,$$\n\n$$b=8r,\\qquad |V_{\\rm physical}|=40r.$$\nThe cyclic splice preserves the matching and physical-colour conditions, and connects the blocks without introducing an unintended auxiliary component.The two-phase table correctly establishes at least  $r$  bad K4 components for every owner-phase assignment. The all-zero phase realizes exactly  $r$ , with no contacts between them.The exact optimum proof is particularly important. Its lower bound does not incorrectly charge the same matching edge multiple times: each block supplies a local matching after deleting its free Q-edge, and the resulting matchings are vertex-disjoint.Thus\n$$\\boxed{\\tau=r,\\qquad \\beta_I=23r.}$$\nThe repeated physical certificate attains the upper bound.The ten checker constructions are finite controls. The written two-case proof establishes the arbitrary- $r$  statement.5. Cyclic rank extensionsI accept Theorem A, Theorem B, and the coarse-parity obstruction within their stated domains.Theorem A: arbitrary auxiliary squares and at most one C8.The important proof steps are valid:Minimum omission exchanges preserve owner permission.One common rainbow forest is used rather than independently charging overlapping owner cycles.The graphic independent-representative formula handles every exceptional-owner subfamily.The no-owner-C4-in-L case correctly isolates the possible  $1/3$  rank deficit.Reserving an owner C4 inside L repairs that deficit through the fixed-outside matching lemma.The fixed-outside lemma is not merely a parity assertion. Its even case uses alternating paths between marked vertices and the impossibility of a path or even cycle having bipartition imbalance two. This supplies the additional deficiency needed for the reserved-cycle argument.The final integer rounding is correct. In particular, the proof does not improperly assume that a real upper bound automatically implies the desired floor inequality.Theorem B: arbitrary long auxiliary cycles under square incidence.The inequality\n$$4s\\geq 3x+2y$$\ncombined with\n$$\\operatorname{rank}=s+\\ell-1$$\nwhen a connected occupied projection contains at least one long component gives the required rank payment. The comparison\n$$\\frac{3x+2y}{4}\\geq\\frac{2x+y}{3}$$\nis valid for nonnegative  $x,y$ .The closed saturated-square components are explicitly separated, and the proof reconstructs actual physical certificates rather than stopping at an abstract matching inequality.Exact coarse-parity obstruction.I accept the distinction between the target and the insufficient statistic.For every  $t\\geq1$ , the construction establishes\n$$N=48t+16,\\qquad \\tau=0,$$\nwhile\n$$\\min_{\\text{permitted }U}q(U)=9t+2$$\nand the actual target is\n$$\\left\\lfloor N/6\\right\\rfloor=8t+2.$$\nThe shortfall is exactly  $t$ .This is an unbounded obstruction to the optimized whole-component parity estimate, not a counterexample to the dissociation-set target.Cyclic checker evidenceControlCountPhysical models1,141Successful models985Physical certificates993Subset-rank controls3,812Rado exact controls647Fixed-outside C8 controls1,120Exact small controls215Exact obstruction-family constructions8These controls support the implementations and finite instances. They do not replace the all-scale written proofs.6. Remaining scope and limitationsAcceptance does not close the continuing general objective.ObjectiveStatusSimultaneous separated K4 contact repairAcceptedPseudoforest multigraph sufficient criterionAcceptedConnected exact K4 familyAcceptedArbitrary squares plus at most one C8AcceptedSquare-incidence condition for arbitrary long cyclesAcceptedExact optimized coarse-parity obstructionAcceptedGeneral mixed cyclic  $8b/3$  theoremOpenSharp unrestricted graph-gap coefficientOpenPhysical multiple-Hall routingOpenUnit-grid 5/6 and grid triple equalityOpenThe provenance distinctions are also appropriate: Oracle proposals, local reconstruction, and independent audit are not conflated. No priority claim is established.Final decision: ACCEPT.This is an acceptance of the exact supplied final mathematical/source snapshot, including its three original execution checks and report identities. It is not a Lean/kernel verification, remote Git identity verification, unrestricted theorem completion, or publication/novelty determination."
+}
