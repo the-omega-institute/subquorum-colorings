@@ -1,0 +1,91 @@
+{
+  "recorded_at": "2026-11-13T01:54:06.511204+00:00",
+  "verdict": "ACCEPT",
+  "oracle": {
+    "task_id": "51146e8e-854e-4575-abb8-d834396430d5",
+    "conversation_id": null,
+    "pool": "chrono-chatgpt-pro-pool",
+    "model_label": "chatgpt-6-pro",
+    "observed_model_switcher": "gpt_6",
+    "observed_model_effort": "pro",
+    "chatgpt_url": "https://chatgpt.com/c/6af66cc1-9cd4-83ec-b0a4-c6091a5e4a8c",
+    "usage_estimated": true
+  },
+  "attached_manifest": {
+    "develop/all_helper_optimization.py": {
+      "bytes": 6358,
+      "sha256": "73f51fe2f705c725f448c0ccd4cfa526bbe64b1c88047704ec223fbfb683b9e5"
+    },
+    "develop/fixed_boundary_matching_cut.py": {
+      "bytes": 3524,
+      "sha256": "e51f576627412f6d552cfc489f085eab001f705e616973c4dfe94fff8eabab72"
+    },
+    "develop/square_core_matching_cut.py": {
+      "bytes": 6239,
+      "sha256": "b45866309a211216235145158246a1f3b49c8d8ed0dbd36b700b0b0edaf9c359"
+    },
+    "develop/subcubic_square_core.py": {
+      "bytes": 4968,
+      "sha256": "5e9c446db0ac980053e58aad38d64930f9938ed86eac62b24c5f110e1f67a273"
+    },
+    "docs/FIXED_FOUR_BOUNDARY_MATCHING_CUT.md": {
+      "bytes": 6757,
+      "sha256": "4d355f609459f823996c21a9857fb03c0045b257f8d02d6225096ca3e66209b3"
+    },
+    "docs/SHARP_BIPARTITE_STAR_FORMING_GAP.md": {
+      "bytes": 7439,
+      "sha256": "f20b01bfc8f20bd92727c2de5e2d4a7d3ecd2e5a288ba9c276b67d7921b7f532"
+    },
+    "docs/SQUARE_CORE_MATCHING_CUT_THEOREM.md": {
+      "bytes": 12816,
+      "sha256": "ed4570ff2c93bfd5fab8527c66c9298542e749b9bc62eacb68748d0b51e07cf5"
+    },
+    "docs/SQUARE_CORE_TEMPLATE_COMPENSATION.md": {
+      "bytes": 7359,
+      "sha256": "48ee1c119b9bcfb2ff1f24752949591c9cc4483a4f90a51aaaf58abdab68f5f7"
+    },
+    "docs/UNIQUE_C12_RESERVED_REGION_THEOREM.md": {
+      "bytes": 17147,
+      "sha256": "16fb3113d3aa792ff0d4b57108eafa0796d168dd0c97e41a21e383a15afe2e84"
+    },
+    "docs/UNRESTRICTED_SUBCUBIC_GAP_IMPROVEMENT.md": {
+      "bytes": 10302,
+      "sha256": "1854a69329bf666e23bedcc0d5eb533b4508eeefc8dc2e05b36d738a01f478ab"
+    },
+    "output/fixed-boundary-matching-cut-check.json": {
+      "bytes": 919,
+      "sha256": "7b295ddcc5034570d9250d034f5085ca04d1e4628c68baccd32f474a1b72fdae"
+    },
+    "scripts/check_fixed_boundary_matching_cut.py": {
+      "bytes": 4718,
+      "sha256": "6fb8d5bc012922f2cb73a8da45bbe7641f879e57b12d2ec23131fc2b61e08dac"
+    }
+  },
+  "all12frozen_payloads_unchanged_locally": true,
+  "reviewer_reported_execution": {
+    "command": "python3 -B scripts/check_fixed_boundary_matching_cut.py --output /tmp/independent-four-boundary.json",
+    "wall_runtime_seconds": 5.499,
+    "exit_code": 0,
+    "python": "Python3.13.5",
+    "platform": "Linux6.18.57 x86_64 glibc2.41",
+    "assertions_enabled": true,
+    "PYTHONOPTIMIZE": "unset",
+    "generated_report_bytes": 919,
+    "full_report_byte_identical": true,
+    "all12payloads_hash_checked_before_after": true,
+    "original_checker_unchanged": true,
+    "case_trimming": false,
+    "stderr_warning": "External Python startup spreadsheet-runtime warmup (artifact_tool), ending Element ordering requires an owning element collection. Checker exited zero and exact report bytes matched.",
+    "stderr_full_bytes": "Not specified in response; warning explicitly retained"
+  },
+  "scope": "Any k whole ownerC4s plus exactly4fixedboundaryvertices, twoeachphysicalcolour: actualdelta>=2floor(k/2)+boundaryparity, everyfixedF0, noexteriorchoicechanged",
+  "qualifications": [
+    "No fulluniqueC16/general mixedcyclic/physicalgrid theorem.",
+    "No adding overlapping regional savings without another compatibility argument.",
+    "First square-core checker was not rerun by this reviewer; it has its own independent exactsourceaudit.",
+    "No Lean/formalkernel, priority or journalreadiness claim.",
+    "72completeonesquareplacements plusseededlargerplacements are finitecontrols, notnonisomorphicclassification.",
+    "This audit by itself does not authenticate remote provenance."
+  ],
+  "complete_response": "ACCEPTIndependent audit: fixed four-boundary matching cutVerdict: ACCEPT. The all- $k$  theorem is mathematically valid under its stated hypotheses. The prescribed-vertex refinement, temporary-square construction, matching-cover estimate, and boundary replacement form a complete proof. I found no mathematical gap requiring revision.The original checker also executed successfully, and its regenerated report is byte-for-byte identical to the frozen expected report.1. Exact-source and execution audit12/12 payloads verified before and afterI extracted the supplied ZIP and checked every payload against MANIFEST.json.VerificationResultPayload files12SHA-256 and byte lengths before executionAll matchOriginal checker modifiedNoAssertions enabledYesPYTHONOPTIMIZEUnsetPython bytecode writingDisabled with -BChecker exit code0Execution time5.499 secondsPayload hashes after executionAll matchExecution environment:Python 3.13.5Linux 6.18.57 x86_64, glibc 2.41Standard-library-only checker dependencies.Executed command, from the extracted source root:Bashpython3 -B scripts/check_fixed_boundary_matching_cut.py \\\n  --output /tmp/independent-four-boundary.jsonFULL BYTE EQUALITYReportBytesSHA-256Frozen expected report9197b295ddcc5034570d9250d034f5085ca04d1e4628c68baccd32f474a1b72fdaeRegenerated report9197b295ddcc5034570d9250d034f5085ca04d1e4628c68baccd32f474a1b72fdaeThe complete byte comparison returned True.Environment warning: stderr contained a Python-startup warning from the environment's spreadsheet-runtime warmup (artifact_tool), ending in Element ordering requires an owning element collection. This was external to the checker. The checker itself exited zero, emitted its PASS report, and produced the exact expected bytes. No checker assertion was disabled.2. Mathematical auditWrite  $t=k+1$ , including the temporary square on the four boundary vertices.The construction uses three matchings: $P$ : matching preserving physical colour; $Q$ : matching reversing physical colour; $R_{\\mathrm{op}}$ : perfect opposite-vertex matching preserving physical colour.The auxiliary graph is\n$$J=P\\cup Q\\cup R_{\\mathrm{op}}.$$\nThe central argument establishes an independent set  $Y$  with\n$$|Y|\\geq \\left\\lceil\\frac{3t}{2}\\right\\rceil.$$\nI checked the following steps independently.A. Balanced-component argumentWithin either physical colour class, consider  $P\\cup R_{\\mathrm{op}}$ .Since  $R_{\\mathrm{op}}$  is perfect and  $P$  is a partial matching, every component is either:an isolated two-vertex component when the matching edges coincide;an alternating even path;an alternating even cycle.In each case the two bipartition classes have equal cardinality.This is important: the equal-class property is stronger than merely knowing that the auxiliary graph is bipartite.Choose one class from every component on the first physical side. Since that side has  $2t$  vertices, the selected set  $Y_0$  has exactly  $t$  vertices.Delete the  $Q$ -neighbours of  $Y_0$  on the opposite side.Because  $Q$  is a matching, at most  $t$  vertices are removed. At least  $t$  remain.The remaining induced  $P\\cup R_{\\mathrm{op}}$  graph is bipartite. Choosing the larger class in each component gives\n$$|Y_1|\\geq\\left\\lceil\\frac t2\\right\\rceil.$$\nThe resulting union\n$$Y=Y_0\\cup Y_1$$\nis independent in all three matching types, with\n$$|Y|\\geq t+\\left\\lceil\\frac t2\\right\\rceil\n=\\left\\lceil\\frac{3t}{2}\\right\\rceil.$$\nNo adjacency type is omitted.B. Prescribed-vertex lemmaThis is the essential strengthening, and I find it correct.For a specified vertex  $z$ , start with its physical colour side.In the component containing  $z$ , choose the proper bipartition class containing  $z$ . Choose either class in every other component.Because all components have equal class sizes, the first-side selection still has exactly  $t$  vertices.Consequently, the subsequent  $Q$ -neighbour deletion and second-side construction are unchanged.Thus\n$$z\\in Y,\\qquad\n|Y|\\geq\\left\\lceil\\frac{3t}{2}\\right\\rceil.$$\nThere is no loss in the cardinality guarantee from prescribing the vertex.I also checked the implementation's class orientation: its forced in b else a selection correctly handles either orientation returned by the bipartition routine.C. Extension to a complete opposite-pair selectionExtend  $Y$  to  $Z$  by choosing exactly one endpoint from every  $R_{\\mathrm{op}}$ -pair.This is possible because  $Y$  is independent in  $R_{\\mathrm{op}}$ .Therefore,\n$$|Z|=2t=2(k+1).$$\nSince  $Y\\subseteq Z$  is independent in  $A=P\\cup Q$ ,\n$$Z\\setminus Y$$\nis a vertex cover of  $A[Z]$ .Every matching edge has to meet this cover, so\n$$\\begin{aligned}\n\\nu(A[Z])\n&\\leq |Z|-|Y|\\\\\n&\\leq 2t-\\left\\lceil\\frac{3t}{2}\\right\\rceil\\\\\n&=\\left\\lfloor\\frac t2\\right\\rfloor\\\\\n&=\\left\\lfloor\\frac{k+1}{2}\\right\\rfloor.\n\\end{aligned}$$\nThis is an elementary vertex-cover argument. It does not require K\u00f6nig's theorem, nor does it incorrectly identify the vertex-cover number with the matching number.D. All five boundary-cardinality casesThis part is particularly important because the desired result prescribes the actual subset  $F_0$ , not merely its cardinality.Let  $f=|F_0|$ . $f$ PrescriptionMaximum number of additions0No forced vertex01Force its vertex into  $Y$ 02Force one vertex of  $F_0$  into  $Y$ 13Force the opposite partner of the missing vertex14No forced vertex2The  $f=3$  case deserves emphasis.If  $x$  is the missing boundary vertex, forcing its opposite-pair partner into  $Y$  forces that partner into  $Z$ . Since  $Z$  selects exactly one endpoint of the pair,  $x\\notin Z$ .There are exactly two selected boundary vertices in  $Z$ , so both belong to  $F_0$ . Only one additional vertex is needed.This is correct even though the temporary square is not part of the actual graph.E. Actual graph versus temporary graphThe temporary square is used exclusively to define  $R_{\\mathrm{op}}$ .It is discarded when forming the returned set\n$$U=(Z\\setminus F)\\cup F_0.$$\nThe actual matching calculation continues to use only the original  $P,Q$  edges.In particular:no artificial boundary edge enters  $A$ ;every actual reserved square retains exactly two omissions;the boundary membership is exactly  $F_0$ ;no unreserved owner choice is changed.This distinction is handled correctly in both the proof and constructor.F. Final deficiency calculationDeleting vertices cannot increase matching number.Adding one vertex can increase matching number by at most one, since at most one new matching edge can use that vertex.Thus\n$$\\nu(A[U])\n\\leq\n\\left\\lfloor\\frac{k+1}{2}\\right\\rfloor\n+\n\\left\\lfloor\\frac f2\\right\\rfloor.$$\nAlso,\n$$|U|=2k+f.$$\nConsequently,\n$$\\begin{aligned}\n|U|-2\\nu(A[U])\n&\\geq\n2k+f\n-2\\left\\lfloor\\frac{k+1}{2}\\right\\rfloor\n-2\\left\\lfloor\\frac f2\\right\\rfloor\\\\\n&=2\\left\\lfloor\\frac k2\\right\\rfloor+(f\\bmod 2).\n\\end{aligned}$$\nThis proves the exact stated inequality.The rounding is correct for both parities of  $k$  and all five boundary cases.3. Constructor auditFile: develop/fixed_boundary_matching_cut.pyThe implementation faithfully realizes the proof.OperationAuditBuild artificial opposite pairsCorrectSelect forced vertex for  $f=1,2,3$ CorrectConstruct prescribed independent setCorrectExtend to exactly one per opposite pairCorrectRemove artificial boundary requirementsCorrectPreserve exact  $F_0$ CorrectPreserve two omissions per actual squareCorrectCalculate actual matchingCorrectCheck final deficiencyCorrectOne implementation detail worth distinguishing: the constructor uses score to calculate an actual maximum matching and its associated independent set. This is computationally more expensive than the proof's vertex-cover estimate, but does not introduce an extra mathematical hypothesis.The proof itself remains polynomial and does not depend on the constructor's optimization routine.4. Dependency auditI separately examined the structural argument in square_core_matching_cut.py and its written theorem.The matching-cut dependency has the required form:\n$$|V|=4t,\\qquad |V_0|=|V_1|=2t,$$\nwith  $P,R_{\\mathrm{op}}$  preserving physical colour,  $Q$  reversing it, and  $R_{\\mathrm{op}}$  perfect.Its equal-class argument and matching-neighbour deletion supply precisely the independent-set estimate used by the new theorem.The prescribed-vertex refinement does not silently require a stronger dependency.I did not rerun the original square-core checker. Its separate audit remains separate; the present acceptance does not assert that its complete finite controls have been re-executed here.5. Finite-control results and limitationsOriginal checker: PASSThe checker reported:ControlCountPhysical placements340Fixed-boundary controls5,440Literal vertex-mask matching comparisons5,152Every possible forced-vertex controls84Complete one-square placements72Unique-C16 placements86The 5,440 fixed-boundary controls cover all 16 subsets of the four boundary vertices in each physical placement.The finite tests support implementation consistency, not the arbitrary-size theorem. The written argument, rather than finite enumeration, establishes all  $k$ .Explicit limitations:No classification of all nonisomorphic configurations.No full unique-C16 theorem.No general mixed-cyclic theorem.No physical-grid routing theorem.No overlapping-region additive-saving theorem.No unrestricted graph-gap improvement.No Lean or formal-kernel acceptance claim.No novelty or journal-readiness claim.6. Final dispositionACCEPTThe new theorem is stronger than the earlier  $k=3,4$  guarantee in exactly the stated sense.In particular, for even boundary size:\n$$\\begin{array}{c|cccccc}\nk&3&4&5&6&7&8\\\\\n\\hline\n\\text{guarantee}&2&4&4&6&6&8\n\\end{array}$$\nThe  $k=4$  improvement to four is genuinely established; the previous proof's weaker lower bound was not an obstruction to this stronger result.Acceptance basis:Complete arbitrary- $k$  mathematical proof.Valid prescribed-vertex strengthening.Correct treatment of all 16 fixed boundary subsets.No artificial edge contamination of the actual matching.Constructor consistent with the mathematical argument.Original checker executed unchanged with assertions enabled.Full expected-report byte equality.All frozen manifest payloads unchanged before and after.The acceptance applies to the exact supplied frozen source and the stated theorem only. It does not imply remote repository provenance or acceptance of any broader graph-theoretic claim."
+}

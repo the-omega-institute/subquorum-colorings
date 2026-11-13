@@ -1,6 +1,36 @@
 # Degree thresholds and source-dependent completion: 12 November 2026
 
 
+## 13 November: sharp physical square cores and every fixed four-boundary pattern
+
+The [matching-cut theorem](SQUARE_CORE_MATCHING_CUT_THEOREM.md)
+constructs an actual all-helper dissociation set of size3b-floor(t/2),
+hence at leastceil(11b/4), for owner cores with onlyP1,P2,C4. The refined
+bound is sharp for every b>=2t>=0 allowing disjoint components, with an
+explicit20vertex block. The same compatible extraction gives the conditional
+identity7n-72d=W+7r+17(alpha+pi)+10(e-b3)+3b3+7q+34tau>=0.
+The condition is on the fixed ACTUAL extracted core; this is not an
+unrestricted7/72 theorem or a graph-gap sharpness claim.
+
+A [prescribed-vertex refinement](FIXED_FOUR_BOUNDARY_MATCHING_CUT.md)
+proves, for ANY k reserved owner squares and every exact subsetF0 of the
+four remaining boundary vertices, actualregionaldeficiency
+>=2floor(k/2)+(|F0|mod2). The artificial boundary square supplies opposite
+pairs only; final matching uses original edges, and every exterior choice
+stays fixed. In particular k4 now gives four units for an even boundary.
+No overlapping-region addition or fulluniqueC16 theorem is inferred.
+
+Both have independent exact-source ACCEPT:
+[square-core audit](../output/square-core-matching-cut-review.json) and
+[fixed-boundary audit](../output/fixed-boundary-matching-cut-review.json).
+Each ran its original checker unchanged and reproduced the complete report
+byte-for-byte. Controls include21001auxiliarymodels,1379physicaltemplates,
+4227smallgraphminimallifts; separately5440fixedboundarycontrols and
+5152literal matching comparisons. General conclusions use the written proofs.
+The unrestrictedsharpcoefficient, generalmixedcyclictarget and physical
+multiple-Hall/unit-grid questions remain open; the full research goal is ACTIVE.
+
+
 [One auxiliary twelve-cycle](UNIQUE_C12_RESERVED_REGION_THEOREM.md) proves the actual all-helper target
 for A=sC4+C12 with arbitrary physical owner even cycles, without a contact
 condition. One common exterior exchange forest is followed by a reserved-region
