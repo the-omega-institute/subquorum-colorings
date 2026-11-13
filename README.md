@@ -1,5 +1,33 @@
 # Current continuation
 
+## 13 November: all-k boundary capacity and robust composition
+
+The [boundary-capacity theorem](docs/STAR_BOUNDARY_CAPACITY_AND_ROBUST_WITNESSES.md)
+extends the block interface analysis from two-star formation to every positive
+integer k. For an admissible selected block C with boundary P, a selection is
+realizable in an ambient forming graph exactly when every nonport is covered
+internally, or by a selected port. A selected vertex is indispensable in every
+ambient extension exactly when it has a protected internal failure witness.
+
+Under the explicit premise that C-D still forms internally, deleting selected
+nonports D is safe in every ambient extension exactly when every selected port
+preserves its truncated capacity
+`min(k-1,d_C(p))`. If a capacity drops, a counterextension with at most k-1
+new vertices is explicit, and this bound is sharp for every k>=2. The same
+criterion survives fixed bipartite extensions with at most 2k new vertices.
+The resulting finite cap predicate gives an exact heterogeneous block
+composition theorem. A finite checker independently enumerates literal stars
+and passes 84,665 admissibility, 119,470 universal-essentiality, 12,248
+internal-deletion, 70,684 arbitrary-exterior, and 17,525 sharpness controls.
+
+This result answers Rafik's request for a general safe-deletion and composition
+framework under the stated boundary hypotheses. It does not give the sharp
+unrestricted degree/connectivity gap, and it does not settle the rectangular
+grid triple equality or a unit-weight 5/6 improvement. The exact-source Oracle
+review request encountered an unexpected transport EOF before returning a
+verdict; the local checker and written all-k proofs are preserved, and no
+external ACCEPT is claimed.
+
 
 ## 13 November: one auxiliary sixteen-cycle, arbitrary physical owner cycles
 
