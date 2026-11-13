@@ -1,0 +1,9 @@
+Command:
+c++ -O3 -std=c++17 develop/check_two_c10_contact_pairs.cpp -o /tmp/two-c10-contact-pairs
+/tmp/two-c10-contact-pairs
+
+Result:
+PASS contact_matchings=945 exceptional=10 phase_pairs=893025
+
+The repair-cost table enforces the owner triple condition and at most four
+omissions of either physical colour on each C10.

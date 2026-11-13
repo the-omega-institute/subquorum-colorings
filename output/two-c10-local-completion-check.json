@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": {
+    "contact_matchings": 945,
+    "cross_edge_histogram": {
+      "1": 225,
+      "3": 600,
+      "5": 120
+    },
+    "exceptional_contact_matchings": 10,
+    "phase_pair_samples": 2500,
+    "maximum_sampled_four_state_average": 1.0,
+    "physical_controls": [
+      {
+        "k": 0,
+        "models_requested": 25,
+        "bipartite_models": 25,
+        "skipped_nonbipartite": 0,
+        "target": 3,
+        "maximum_observed_minimum": 1,
+        "minimum_observed_minimum": 0
+      },
+      {
+        "k": 1,
+        "models_requested": 25,
+        "bipartite_models": 25,
+        "skipped_nonbipartite": 0,
+        "target": 4,
+        "maximum_observed_minimum": 1,
+        "minimum_observed_minimum": 0
+      },
+      {
+        "k": 2,
+        "models_requested": 15,
+        "bipartite_models": 15,
+        "skipped_nonbipartite": 0,
+        "target": 4,
+        "maximum_observed_minimum": 1,
+        "minimum_observed_minimum": 0
+      },
+      {
+        "k": 3,
+        "models_requested": 8,
+        "bipartite_models": 8,
+        "skipped_nonbipartite": 0,
+        "target": 5,
+        "maximum_observed_minimum": 1,
+        "minimum_observed_minimum": 0
+      }
+    ]
+  },
+  "theorem_scope": "The written local lemma is general; physical controls are finite checks and do not audit the C20 global absorption argument."
+}
