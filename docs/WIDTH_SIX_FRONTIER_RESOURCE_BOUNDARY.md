@@ -88,13 +88,25 @@ frontier. Merely increasing the local-kernel memory or the state cap does not
 provide that proof. The general width-six equality and the arbitrary
 width-six unit-weight improvement therefore remain open after this run.
 
-A first exact quotient is now recorded in
+The first exact quotient is recorded in
 [`WIDTH_SIX_SYMMETRY_QUOTIENT.md`](WIDTH_SIX_SYMMETRY_QUOTIENT.md). Vertical
 reflection reduces the height-three certificate from 14,726 to 7,661 states
 and the height-six length-four frontier from 7,506,432 to 3,754,512. It reaches
 the optimized height-six length-five value \(16=F(6,5)\), but the next layer
-still reaches the packed-table boundary. The quotient improves the resource
-diagnosis without supplying the missing periodic proof.
+still reaches the packed-table boundary. A separate continuation run used the
+same exact transition rule with the state guard raised to 100,000,000 and the
+packed-table ceiling raised to \(2^{27}\). It reached
+
+```text
+height=6 length=6 SF=18 reachable=60792352
+```
+
+which is again \(F(6,6)\). Constructing the next frontier then reached the
+larger packed-table ceiling after 221.15 seconds, with a maximum resident set
+of 2,266,677,248 bytes. The continuation is recorded in
+[`grid-height-six-continuation-20261113.json`](../output/grid-height-six-continuation-20261113.json).
+It supplies a longer exact prefix and a measured representation boundary; it
+does not supply the missing periodic proof.
 
 ## Reproduction
 
